@@ -1,39 +1,39 @@
 ---
 title: Макросы и функции для управления библиотеками DLL
-ms.date: 03/27/2019
+description: Справочное руководство по макросам и функциям MFC для управления библиотеками DLL.
+ms.date: 11/30/2020
 helpviewer_keywords:
 - module macros in MFC
-ms.assetid: 303f4161-cb5e-4099-81ad-acdb11aa60fb
-ms.openlocfilehash: e4170ba95775fd3380837673a76a8adafc8ad011
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b70c4506d49f656e1570f2500cfaa39c28053291
+ms.sourcegitcommit: 432c24dde31c400437c4320e8432b1ddb232f844
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837187"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96440329"
 ---
 # <a name="macros-and-functions-for-managing-dlls"></a>Макросы и функции для управления библиотеками DLL
 
-|Имя|Описание|
-|-|-|
-|[AFX_EXT_CLASS](#afx_ext_class)]|Экспортирует классы.|
-|[AFX_MANAGE_STATE](#afx_manage_state)|Защита экспортированной функции в библиотеке DLL.|
-|[AfxOleInitModule](#afxoleinitmodule)|Обеспечивает поддержку OLE из обычной библиотеки DLL MFC, которая динамически связана с MFC.|
-|[AfxNetInitModule](#afxnetinitmodule)|Предоставляет поддержку сокетов MFC из обычной библиотеки DLL MFC, которая динамически связана с MFC.|
-|[AfxGetAmbientActCtx](#afxgetambientactctx)|Возвращает текущее состояние флага состояния каждого модуля.|
-|[AfxGetStaticModuleState](#afxgetstaticmodulestate)|Задает состояние модуля перед инициализацией и (или) восстановление предыдущего состояния модуля после очистки.|
-|[AfxInitExtensionModule](#afxinitextensionmodule)|Инициализирует библиотеку DLL.|
-|[AfxSetAmbientActCtx](#afxsetambientactctx)|Установите флаг состояния каждого модуля, который влияет на поведение WinSxS в MFC.|
-|[AfxTermExtensionModule](#afxtermextensionmodule)|Позволяет MFC очищать библиотеку DLL расширения MFC, когда каждый процесс отключается от библиотеки DLL.|
+| Название | Описание |
+|--|--|
+| [`AFX_EXT_CLASS`](#afx_ext_class)] | Экспортирует классы. |
+| [`AFX_MANAGE_STATE`](#afx_manage_state) | Защита экспортированной функции в библиотеке DLL. |
+| [`AfxOleInitModule`](#afxoleinitmodule) | Обеспечивает поддержку OLE из обычной библиотеки DLL MFC, которая динамически связана с MFC. |
+| [`AfxNetInitModule`](#afxnetinitmodule) | Предоставляет поддержку сокетов MFC из обычной библиотеки DLL MFC, которая динамически связана с MFC. |
+| [`AfxGetAmbientActCtx`](#afxgetambientactctx) | Возвращает текущее состояние флага состояния каждого модуля. |
+| [`AfxGetStaticModuleState`](#afxgetstaticmodulestate) | Задает состояние модуля перед инициализацией и восстанавливает предыдущее состояние модуля после очистки. |
+| [`AfxInitExtensionModule`](#afxinitextensionmodule) | Инициализирует библиотеку DLL. |
+| [`AfxSetAmbientActCtx`](#afxsetambientactctx) | Установите флаг состояния каждого модуля, который влияет на поведение WinSxS в MFC. |
+| [`AfxTermExtensionModule`](#afxtermextensionmodule) | Позволяет MFC очищать библиотеку DLL расширения MFC, когда каждый процесс отключается от библиотеки DLL. |
 
-## <a name="afx_ext_class"></a><a name="afx_ext_class"></a> AFX_EXT_CLASS
+## <a name="afx_ext_class"></a><a name="afx_ext_class"></a> `AFX_EXT_CLASS`
 
-[Библиотеки DLL расширения MFC](../../build/extension-dlls.md) используют макрос AFX_EXT_CLASS для экспорта классов; исполняемые файлы, которые связываются с библиотекой DLL расширения MFC, используют макрос для импорта классов.
+[Библиотеки DLL расширения MFC](../../build/extension-dlls.md) используют макрос `AFX_EXT_CLASS` для экспорта классов; исполняемые файлы, которые связываются с DLL расширения MFC, используют макрос для импорта классов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-С помощью макроса AFX_EXT_CLASS те же файлы заголовков, которые используются для сборки библиотеки DLL расширения MFC, можно использовать с исполняемыми файлами, которые связываются с библиотекой DLL.
+С помощью `AFX_EXT_CLASS` макроса те же файлы заголовков, которые используются для сборки библиотеки DLL расширения MFC, можно использовать с исполняемыми файлами, которые связаны с библиотекой DLL.
 
-В файле заголовка для библиотеки DLL добавьте ключевое слово AFX_EXT_CLASS в объявление класса следующим образом:
+В файле заголовка для библиотеки DLL добавьте `AFX_EXT_CLASS` ключевое слово в объявление класса следующим образом:
 
 ```cpp
 class AFX_EXT_CLASS CMyClass : public CDocument
@@ -42,50 +42,51 @@ class AFX_EXT_CLASS CMyClass : public CDocument
 };
 ```
 
-Дополнительные сведения см. в разделе [Экспорт и импорт с помощью AFX_EXT_CLASS](../../build/exporting-and-importing-using-afx-ext-class.md).
+Дополнительные сведения см. в разделе [Экспорт и импорт `AFX_EXT_CLASS` с помощью ](../../build/exporting-and-importing-using-afx-ext-class.md).
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFXV_DLL. h
+**Заголовок:**\<afxv_dll.h>
 
-## <a name="afx_manage_state"></a><a name="afx_manage_state"></a> AFX_MANAGE_STATE
+## <a name="afx_manage_state"></a><a name="afx_manage_state"></a> `AFX_MANAGE_STATE`
 
 Вызовите этот макрос, чтобы защитить экспортированную функцию в библиотеке DLL.
 
 ### <a name="syntax"></a>Синтаксис
 
-```
+```cpp
 AFX_MANAGE_STATE(AFX_MODULE_STATE* pModuleState )
 ```
 
 ### <a name="parameters"></a>Параметры
 
-*пмодулестате*<br/>
+*`pModuleState`*<br/>
 Указатель на `AFX_MODULE_STATE` структуру.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-При вызове этого макроса *пмодулестате* является эффективным состоянием модуля для оставшейся части немедленно содержащей его области. При выходе из этой области предыдущее действующее состояние модуля будет автоматически восстановлено.
+При вызове этого макроса *`pModuleState`* — это действующее состояние модуля для оставшейся части непосредственно содержащей его области. При выходе из этой области предыдущее действующее состояние модуля будет автоматически восстановлено.
+
 `AFX_MODULE_STATE`Структура содержит глобальные данные для модуля, то есть часть состояния модуля, которая помещается или извлекается.
 
-По умолчанию MFC использует для загрузки шаблона ресурса обработчик ресурсов основного приложения. Если в библиотеке DLL есть экспортированная функция, например, которая запускает диалоговое окно в библиотеке DLL, этот шаблон фактически хранится в модуле DLL. Необходимо переключить состояние модуля, чтобы использовать правильный маркер. Это можно сделать, добавив следующий код в начало функции:
+По умолчанию MFC использует для загрузки шаблона ресурса обработчик ресурсов основного приложения. Если в библиотеке DLL есть экспортированная функция, например, которая запускает диалоговое окно в библиотеке DLL, шаблон ресурса сохраняется в модуле DLL. Не забудьте переключить состояние модуля, чтобы использовать правильный маркер. Вы можете переключить состояние, добавив следующий код в начало функции:
 
 ```cpp
 AFX_MANAGE_STATE(AfxGetStaticModuleState( ));
 ```
 
-Это меняет местами текущее состояние модуля на состояние, возвращенное из [афксжетстатикмодулестате](#afxgetstaticmodulestate) , до конца текущей области.
+Этот макрос меняет местами текущее состояние модуля на состояние, возвращенное [`AfxGetStaticModuleState`](#afxgetstaticmodulestate) до конца текущей области.
 
-Дополнительные сведения о состояниях модулей и MFC см. в разделе "Управление данными о состоянии модулей MFC" статьи [Создание новых документов, окон и представлений](../creating-new-documents-windows-and-views.md) и [техническое примечание 58](../tn058-mfc-module-state-implementation.md).
+Дополнительные сведения о состояниях модулей и MFC см. [в разделе Управление данными о состоянии модулей MFC](../managing-the-state-data-of-mfc-modules.md) и [техническое примечание 58](../tn058-mfc-module-state-implementation.md).
 
 > [!NOTE]
-> Когда MFC создает контекст активации для сборки, он использует [афксвининит](application-information-and-management.md#afxwininit) для создания контекста и `AFX_MANAGE_STATE` его активации и деактивации. Обратите внимание, что `AFX_MANAGE_STATE` включено для статических библиотек MFC, а также библиотек DLL MFC, чтобы код MFC можно было выполнять в правильном контексте активации, выбранном в библиотеке DLL пользователя. Дополнительные сведения см. [в разделе Поддержка контекстов активации в состоянии модуля MFC](../support-for-activation-contexts-in-the-mfc-module-state.md).
+> Когда MFC создает контекст активации для сборки, он использует [`AfxWinInit`](application-information-and-management.md#afxwininit) для создания контекста и его `AFX_MANAGE_STATE` активации и деактивации. Обратите внимание, что `AFX_MANAGE_STATE` включено для статических библиотек MFC, а также библиотек DLL MFC, чтобы код MFC можно было выполнять в правильном контексте активации, выбранном в библиотеке DLL пользователя. Дополнительные сведения см. [в разделе Поддержка контекстов активации в состоянии модуля MFC](../support-for-activation-contexts-in-the-mfc-module-state.md).
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** afxstat_. h
+**Заголовок:**\<afxstat_.h>
 
-## <a name="a-nameafxoleinitmodule-afxoleinitmodule"></a><a name="afxoleinitmodule"><a/> афксолеинитмодуле
+## <a name="a-nameafxoleinitmodule-afxoleinitmodule"></a><a name="afxoleinitmodule"><a/> `AfxOleInitModule`
 
 Для поддержки OLE из обычной библиотеки DLL MFC, которая динамически связана с MFC, вызовите эту функцию в функции обычной библиотеки DLL MFC, `CWinApp::InitInstance` чтобы инициализировать БИБЛИОТЕКУ MFC OLE DLL.
 
@@ -95,17 +96,17 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ));
 void AFXAPI AfxOleInitModule( );
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 MFC OLE DLL — это библиотека DLL расширения MFC. чтобы библиотека DLL расширения MFC была подключена к `CDynLinkLibrary` цепочке, она должна создать `CDynLinkLibrary` объект в контексте каждого модуля, который будет его использовать. `AfxOleInitModule` создает `CDynLinkLibrary` объект в контексте обычной библиотеки DLL MFC, чтобы он был подключен в `CDynLinkLibrary` цепочке объектов обычной библиотеки DLL MFC.
 
-Если вы создаете элемент управления OLE и используете `COleControlModule` , не следует вызывать, `AfxOleInitModule` поскольку функция- `InitInstance` член для `COleControlModule` вызовов `AfxOleInitModule` .
+Если вы создаете элемент управления OLE и используете `COleControlModule` , то не следует вызывать, `AfxOleInitModule` поскольку `InitInstance` функция-член для `COleControlModule` вызовов `AfxOleInitModule` .
 
 ### <a name="requirements"></a>Требования
 
 **Заголовок**: \<afxdll_.h>
 
-## <a name="afxnetinitmodule"></a><a name="afxnetinitmodule"></a> афкснетинитмодуле
+## <a name="afxnetinitmodule"></a><a name="afxnetinitmodule"></a> `AfxNetInitModule`
 
 Для поддержки сокетов MFC из обычной библиотеки DLL MFC, которая динамически связана с MFC, добавьте вызов этой функции в функции обычной библиотеки DLL MFC `CWinApp::InitInstance` для инициализации DLL-библиотеки MFC.
 
@@ -115,7 +116,7 @@ MFC OLE DLL — это библиотека DLL расширения MFC. что
 void AFXAPI AfxNetInitModule( );
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Библиотека DLL MFC Sockets является библиотекой DLL расширения MFC. чтобы библиотека DLL расширения MFC была подключена к `CDynLinkLibrary` цепочке, она должна создать `CDynLinkLibrary` объект в контексте каждого модуля, который будет его использовать. `AfxNetInitModule` создает `CDynLinkLibrary` объект в контексте обычной библиотеки DLL MFC, чтобы он был подключен в `CDynLinkLibrary` цепочке объектов обычной библиотеки DLL MFC.
 
@@ -123,13 +124,13 @@ void AFXAPI AfxNetInitModule( );
 
 **Заголовок:**\<afxdll_.h>
 
-## <a name="afxgetambientactctx"></a><a name="afxgetambientactctx"></a> афксжетамбиентакткткс
+## <a name="afxgetambientactctx"></a><a name="afxgetambientactctx"></a> `AfxGetAmbientActCtx`
 
 Эта функция используется для получения текущего состояния флага состояния каждого модуля, что влияет на поведение WinSxS в MFC.
 
 ### <a name="syntax"></a>Синтаксис
 
-```
+```cpp
 BOOL AFXAPI AfxGetAmbientActCtx();
 ```
 
@@ -137,25 +138,25 @@ BOOL AFXAPI AfxGetAmbientActCtx();
 
 Текущее значение флага состояния модуля.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если установлен флаг (по умолчанию) и поток входит в модуль MFC (см. [AFX_MANAGE_STATE](#afx_manage_state)), то активируется контекст модуля.
+Если флаг установлен (по умолчанию) и поток входит в модуль MFC (см [`AFX_MANAGE_STATE`](#afx_manage_state) .), то контекст модуля активируется.
 
-Если флаг не установлен, то контекст модуля не активируется при входе.
+Если флаг не задан, контекст модуля не активируется в записи.
 
-Контекст модуля определяется из его манифеста, который обычно внедряется в ресурсы модуля.
+Контекст модуля определяется из его манифеста, который часто внедряется в ресурсы модуля.
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** afxcomctl32. h
+**Заголовок:**\<afxcomctl32.h>
 
-## <a name="afxgetstaticmodulestate"></a><a name="afxgetstaticmodulestate"></a> афксжетстатикмодулестате
+## <a name="afxgetstaticmodulestate"></a><a name="afxgetstaticmodulestate"></a> `AfxGetStaticModuleState`
 
-Вызывайте эту функцию, чтобы задать состояние модуля перед инициализацией и (или) восстановить предыдущее состояние модуля после очистки.
+Вызывайте эту функцию, чтобы задать состояние модуля перед инициализацией и восстановить предыдущее состояние модуля после очистки.
 
 ### <a name="syntax"></a>Синтаксис
 
-```
+```cpp
 AFX_MODULE_STATE* AFXAPI AfxGetStaticModuleState( );
 ```
 
@@ -163,52 +164,52 @@ AFX_MODULE_STATE* AFXAPI AfxGetStaticModuleState( );
 
 Указатель на `AFX_MODULE_STATE` структуру.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `AFX_MODULE_STATE`Структура содержит глобальные данные для модуля, то есть часть состояния модуля, которая помещается или извлекается.
 
-По умолчанию MFC использует для загрузки шаблона ресурса обработчик ресурсов основного приложения. Если в библиотеке DLL есть экспортированная функция, например, которая запускает диалоговое окно в библиотеке DLL, этот шаблон фактически хранится в модуле DLL. Необходимо переключить состояние модуля, чтобы использовать правильный маркер. Это можно сделать, добавив следующий код в начало функции:
+По умолчанию MFC использует для загрузки шаблона ресурса обработчик ресурсов основного приложения. Если в библиотеке DLL есть экспортированная функция, например, которая запускает диалоговое окно в библиотеке DLL, шаблон ресурса сохраняется в модуле DLL. Не забудьте переключить состояние модуля, чтобы использовать правильный маркер. Вы можете переключить состояние, добавив следующий код в начало функции:
 
 ```cpp
 AFX_MANAGE_STATE(AfxGetStaticModuleState( ));
 ```
 
-Это меняет местами текущее состояние модуля на состояние, возвращенное `AfxGetStaticModuleState` до конца текущей области.
+Этот макрос меняет местами текущее состояние модуля на состояние, возвращенное `AfxGetStaticModuleState` до конца текущей области.
 
-Дополнительные сведения о состояниях модулей и MFC см. в разделе "Управление данными о состоянии модулей MFC" статьи [Создание новых документов, окон и представлений](../creating-new-documents-windows-and-views.md) и [техническое примечание 58](../tn058-mfc-module-state-implementation.md).
+Дополнительные сведения о состояниях модулей и MFC см. [в разделе Управление данными о состоянии модулей MFC](../managing-the-state-data-of-mfc-modules.md) и [техническое примечание 58](../tn058-mfc-module-state-implementation.md).
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** afxstat_. h
+**Заголовок:**\<afxstat_.h>
 
-## <a name="afxinitextensionmodule"></a>AfxInitExtensionModule
+## <a name="afxinitextensionmodule"></a><a name="afxinitextensionmodule"></a> `AfxInitExtensionModule`
 
 Вызовите эту функцию в библиотеке DLL расширения MFC `DllMain` для инициализации библиотеки DLL.
 
 ### <a name="syntax"></a>Синтаксис
 
-```
+```cpp
 BOOL AFXAPI AfxInitExtensionModule( AFX_EXTENSION_MODULE& state,  HMODULE hModule );
 ```
 
 ### <a name="parameters"></a>Параметры
 
-*state*<br/>
-Ссылка на структуру [структуры AFX_EXTENSION_MODULE](afx-extension-module-structure.md) , которая будет содержать состояние модуля DLL расширения MFC после инициализации. Состояние включает копию объектов класса среды выполнения, которые были инициализированы библиотекой DLL расширения MFC как часть обычной конструкции статического объекта, выполняемой перед `DllMain` входом.
+*`state`*<br/>
+Ссылка на структуру [ `AFX_EXTENSION_MODULE` структуры](afx-extension-module-structure.md) , которая будет содержать состояние модуля DLL расширения MFC после инициализации. Состояние включает копию объектов класса среды выполнения, которые были инициализированы библиотекой DLL расширения MFC как часть обычной конструкции статического объекта, выполняемой перед `DllMain` входом.
 
-*хмодуле*<br/>
+*`hModule`*<br/>
 Маркер модуля DLL расширения MFC.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Значение TRUE, если библиотека DLL расширения MFC успешно инициализирована; в противном случае — значение FALSE.
+`TRUE` значение, если библиотека DLL расширения MFC успешно инициализирована. в противном случае — `FALSE` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Пример:
 
 ```cpp
-static AFX_EXTENSION_MODULE NVC_MFC_DLLDLL = { NULL, NULL };
+static AFX_EXTENSION_MODULE NVC_MFC_DLLDLL;
 extern "C" int APIENTRY
 DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 {
@@ -225,20 +226,20 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 ...
 ```
 
-`AfxInitExtensionModule` создает копию ХМОДУЛЕ библиотеки DLL и записывает классы среды выполнения (структуры) библиотеки DLL, а `CRuntimeClass` также фабрики объектов ( `COleObjectFactory` объекты) для дальнейшего использования при `CDynLinkLibrary` создании объекта.
+`AfxInitExtensionModule` создает копию ХМОДУЛЕ библиотеки DLL и записывает ее классы среды выполнения ( `CRuntimeClass` структуры) и фабрики объектов (объекты), которые будут `COleObjectFactory` использоваться позже при `CDynLinkLibrary` создании объекта.
 Библиотеки DLL расширения MFC должны выполнять два действия в своей `DllMain` функции:
 
-- Вызовите [афксинитекстенсионмодуле](#afxinitextensionmodule) и проверьте возвращаемое значение.
+- Вызовите [`AfxInitExtensionModule`](#afxinitextensionmodule) и проверьте возвращаемое значение.
 
-- Создайте `CDynLinkLibrary` объект, если библиотека DLL будет экспортировать объекты [структуры крунтимекласс](cruntimeclass-structure.md) или имеет собственные пользовательские ресурсы.
+- Создайте `CDynLinkLibrary` объект, если библиотека DLL будет экспортировать объекты [ `CRuntimeClass` структуры](cruntimeclass-structure.md) или имеет собственные пользовательские ресурсы.
 
-Можно вызвать `AfxTermExtensionModule` для очистки библиотеки DLL расширения MFC, когда каждый процесс отсоединяется от библиотеки DLL расширения MFC (которая происходит при завершении процесса или при выгрузке библиотеки DLL в результате `AfxFreeLibrary` вызова).
+Можно вызвать `AfxTermExtensionModule` для очистки библиотеки DLL расширения MFC, когда каждый процесс отключается от библиотеки DLL расширения MFC (которая происходит при завершении процесса или при выгрузке библиотеки DLL `AfxFreeLibrary` вызовом).
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFXDLL_. h
+**Заголовок:**\<afxdll_.h>
 
-## <a name="afxsetambientactctx"></a><a name="afxsetambientactctx"></a> афкссетамбиентакткткс
+## <a name="afxsetambientactctx"></a><a name="afxsetambientactctx"></a> `AfxSetAmbientActCtx`
 
 Эта функция используется для установки флага состояния каждого модуля, который влияет на поведение WinSxS в MFC.
 
@@ -250,14 +251,14 @@ void AFXAPI AfxSetAmbientActCtx(BOOL bSet);
 
 ### <a name="parameters"></a>Параметры
 
-*Управляемое bSet*<br/>
+*`bSet`*<br/>
 Новое значение флага состояния модуля.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если установлен флаг (по умолчанию) и поток входит в модуль MFC (см. [AFX_MANAGE_STATE](#afx_manage_state)), то активируется контекст модуля.
-Если флаг не установлен, то контекст модуля не активируется при входе.
-Контекст модуля определяется из его манифеста, который обычно внедряется в ресурсы модуля.
+Если флаг установлен (по умолчанию) и поток входит в модуль MFC (см [`AFX_MANAGE_STATE`](#afx_manage_state) .), то контекст модуля активируется.
+Если флаг не задан, контекст модуля не активируется в записи.
+Контекст модуля определяется из его манифеста, который часто внедряется в ресурсы модуля.
 
 ### <a name="example"></a>Пример
 
@@ -271,32 +272,32 @@ BOOL CMFCListViewApp::InitInstance()
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** afxcomctl32. h
+**Заголовок:**\<afxcomctl32.h>
 
-## <a name="afxtermextensionmodule"></a><a name="afxtermextensionmodule"></a> афкстермекстенсионмодуле
+## <a name="afxtermextensionmodule"></a><a name="afxtermextensionmodule"></a> `AfxTermExtensionModule`
 
-Вызывайте эту функцию, чтобы разрешить MFC очищать библиотеку DLL расширения MFC, когда каждый процесс отключается от библиотеки DLL (что происходит при завершении процесса или при выгрузке библиотеки DLL в результате `AfxFreeLibrary` вызова).
+Вызывайте эту функцию, чтобы разрешить MFC очищать библиотеку DLL расширения MFC, когда каждый процесс отключается от библиотеки DLL (что происходит при завершении процесса или при выгрузке библиотеки DLL `AfxFreeLibrary` вызовом).
 
 ### <a name="syntax"></a>Синтаксис
 
 ```cpp
-void AFXAPI AfxTermExtensionModule(  AFX_EXTENSION_MODULE& state,  BOOL bAll  = FALSE );
+void AFXAPI AfxTermExtensionModule( AFX_EXTENSION_MODULE& state, BOOL bAll = FALSE );
 ```
 
 ### <a name="parameters"></a>Параметры
 
-*state*<br/>
-Ссылка на структуру [AFX_EXTENSION_MODULE](afx-extension-module-structure.md) , которая содержит состояние модуля DLL расширения MFC.
+*`state`*<br/>
+Ссылка на [`AFX_EXTENSION_MODULE`](afx-extension-module-structure.md) структуру, которая содержит состояние модуля DLL расширения MFC.
 
-*Шара*<br/>
+*`bAll`*<br/>
 Если значение — TRUE, очистите все модули DLL расширения MFC. В противном случае очистите только текущий модуль DLL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `AfxTermExtensionModule` удалит все локальные хранилища, подключенные к модулю, и удалит все записи из кэша схемы сообщений. Пример:
 
 ```cpp
-static AFX_EXTENSION_MODULE NVC_MFC_DLLDLL = { NULL, NULL };
+static AFX_EXTENSION_MODULE NVC_MFC_DLLDLL;
 extern "C" int APIENTRY
 DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 {
@@ -325,16 +326,16 @@ DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 }
 ```
 
-Если приложение загружает и освобождает библиотеки DLL расширения MFC динамически, обязательно вызовите `AfxTermExtensionModule` . Так как большинство библиотек DLL расширения MFC не загружаются динамически (обычно они связаны с помощью библиотек импорта), вызов метода `AfxTermExtensionModule` обычно не требуется.
+Если приложение загружает и освобождает библиотеки DLL расширения MFC динамически, обязательно вызовите `AfxTermExtensionModule` . Так как большинство библиотек DLL расширения MFC не загружаются динамически (обычно они связаны с помощью библиотек импорта), вызов, `AfxTermExtensionModule` как правило, не требуется.
 
-Библиотеки DLL расширения MFC должны вызывать [афксинитекстенсионмодуле](#afxinitextensionmodule) в `DllMain` . Если библиотека DLL будет экспортировать объекты [крунтимекласс](cruntimeclass-structure.md) или имеет собственные пользовательские ресурсы, необходимо также создать `CDynLinkLibrary` объект в `DllMain` .
+Библиотеки DLL расширения MFC должны вызываться [`AfxInitExtensionModule`](#afxinitextensionmodule) в `DllMain` . Если библиотека DLL экспортирует [`CRuntimeClass`](cruntimeclass-structure.md) объекты или имеет собственные пользовательские ресурсы, необходимо также создать `CDynLinkLibrary` объект в `DllMain` .
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFXDLL_. h
+**Заголовок:**\<afxdll_.h>
 
 ## <a name="see-also"></a>См. также раздел
 
-[Макросы и глобальные объекты](mfc-macros-and-globals.md)<br/>
-[AfxMessageBox](cstring-formatting-and-message-box-display.md#afxmessagebox)<br/>
+[Макросы и глобальные](mfc-macros-and-globals.md)<br/>
+[`AfxMessageBox`](cstring-formatting-and-message-box-display.md#afxmessagebox)<br/>
 [Управление данными состояния модулей MFC](../managing-the-state-data-of-mfc-modules.md)<br/>

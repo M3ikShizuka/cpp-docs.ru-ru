@@ -1,8 +1,11 @@
 ---
 title: div, ldiv, lldiv
-ms.date: 04/05/2018
+description: Функции div, ldiv и lldiv библиотеки времени выполнения Microsoft C вычисляют частное и остаток от деления двух целых значений.
+ms.date: 11/21/2020
 api_name:
 - div
+- ldiv
+- lldiv
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -21,21 +24,22 @@ topic_type:
 - apiref
 f1_keywords:
 - div
+- ldiv
+- lldiv
 helpviewer_keywords:
 - div function
 - quotients, computing
 - quotients
 - dividing integers
 - remainder computing
-ms.assetid: 8ae80d97-54fd-499e-b14c-e30993b58119
-ms.openlocfilehash: e0c87ad44986363e871d68bccde757214f5e2c45
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: d87b2e3a84e389be8b14970a3aa611bb288cbec8
+ms.sourcegitcommit: 432c24dde31c400437c4320e8432b1ddb232f844
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509886"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96440290"
 ---
-# <a name="div-ldiv-lldiv"></a>div, ldiv, lldiv
+# <a name="div-ldiv-lldiv"></a>`div`, `ldiv`, `lldiv`
 
 Вычисляет частное и остаток от деления двух целочисленных значений.
 
@@ -69,27 +73,27 @@ lldiv_t div(
 
 ### <a name="parameters"></a>Параметры
 
-*число ключей*<br/>
+*`numer`*\
 Числитель.
 
-*деном*<br/>
+*`denom`*\
 Знаменатель.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-элемент **div** , вызываемый с помощью аргументов типа **`int`** , возвращает структуру типа **div_t**, которая состоит из частного и остатка. Возвращаемое значение с аргументами типа **`long`** **ldiv_t**, а возвращаемое значение с аргументами типа **`long long`** — **lldiv_t**. **div_t**, **ldiv_t**и **lldiv_t** определяются в \<stdlib.h> .
+**`div`** вызывается с помощью аргументов типа **`int`** возвращает структуру типа `div_t` , которая содержит частное и остаток. Возвращаемое значение с аргументами типа **`long`** — `ldiv_t` , а возвращаемое значение с аргументами типа **`long long`** — `lldiv_t` . `div_t`Типы, `ldiv_t` и `lldiv_t` определены в \<stdlib.h> .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функция **div** делит *число ключей* на *Деном* , тем самым вычисляя частное и остаток. Структура [div_t](../../c-runtime-library/standard-types.md) содержит частное, **quot**и остаток, **REM**. Знак частного является таким же, как и у математического частного. Его абсолютное значение представляет собой наибольшее целое число, которое меньше абсолютного значения математического частного. Если знаменатель равен 0, выполнение программы прекратится и появится сообщение об ошибке.
+**`div`** Функция делит на *`numer`* и выполняет *`denom`* Вычисление частного и остатка. [`div_t`](../../c-runtime-library/standard-types.md)Структура содержит частное, `quot` и остаток, `rem` . Знак частного имеет то же значение, что и знак математического частного. Его абсолютное значение — это самое большое целое число, которое меньше абсолютного значения математического частного. Если знаменатель равен 0, выполнение программы прекратится и появится сообщение об ошибке.
 
-Перегрузки **div** , принимающие аргументы типа **`long`** или **`long long`** , доступны только для кода C++. Возвращаемые типы [ldiv_t](../../c-runtime-library/standard-types.md) и [lldiv_t](../../c-runtime-library/standard-types.md) содержат элементы **quot** и **REM**, которые имеют те же значения, что и элементы **div_t**.
+Перегрузки **`div`** , принимающие аргументы типа **`long`** или **`long long`** , доступны только для кода C++. Возвращаемые типы [`ldiv_t`](../../c-runtime-library/standard-types.md) и [`lldiv_t`](../../c-runtime-library/standard-types.md) содержат члены `quot` и `rem` , которые имеют те же значения, что и члены `div_t` .
 
 ## <a name="requirements"></a>Требования
 
-|Подпрограмма|Обязательный заголовок|
-|-------------|---------------------|
-|**div**, **ldiv**, **lldiv**|\<stdlib.h>|
+| Подпрограмма | Обязательный заголовок |
+|--|--|
+| **`div`**, **`ldiv`**, **`lldiv`** | \<stdlib.h> |
 
 Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -133,6 +137,5 @@ The quotient is 67, and the remainder is 5
 
 ## <a name="see-also"></a>См. также раздел
 
-[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
-[ldiv, lldiv]()<br/>
-[imaxdiv](imaxdiv.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)\
+[`imaxdiv`](imaxdiv.md)
