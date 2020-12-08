@@ -1,6 +1,7 @@
 ---
-title: 'Оператор разрешения области: ::'
-ms.date: 11/04/2016
+title: 'Оператор разрешения области: `::`'
+description: Узнайте, как работает оператор разрешения области `::` в стандартном C++.
+ms.date: 12/06/2020
 f1_keywords:
 - '::'
 helpviewer_keywords:
@@ -8,33 +9,44 @@ helpviewer_keywords:
 - operators [C++], scope resolution
 - scope resolution operator
 - ':: operator'
-ms.assetid: fd5de9d3-c716-4e12-bae9-03a16fd79a50
-ms.openlocfilehash: 07c2884ed0ba114c22a0c71bbaf7268d6f6931a4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ff774d9fcca9f68cb2925af82c55ef438ab4d71a
+ms.sourcegitcommit: 7b131db4ed39bddb4a456ebea402f47c5cbd69d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80178890"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96776535"
 ---
-# <a name="scope-resolution-operator-"></a>Оператор разрешения области: ::
+# <a name="scope-resolution-operator-"></a>Оператор разрешения области: `::`
 
-Оператор разрешения области **::** используется для идентификации и устранения неоднозначности идентификаторов, используемых в разных областях. Дополнительные сведения об области действия см. в разделе [Scope](../cpp/scope-visual-cpp.md).
+Оператор разрешения области **`::`** используется для идентификации и устранения неоднозначности идентификаторов, используемых в разных областях. Дополнительные сведения об области действия см. в разделе [Scope](../cpp/scope-visual-cpp.md).
 
 ## <a name="syntax"></a>Синтаксис
 
-```
-:: identifier
-class-name :: identifier
-namespace :: identifier
-enum class :: identifier
-enum struct :: identifier
-```
+> *`qualified-id`*:\
+> &emsp; *`nested-name-specifier`* **`template`** <sub>необ.</sub> *`unqualified-id`*
 
-## <a name="remarks"></a>Remarks
+> *`nested-name-specifier`*:\
+> &emsp;**`::`**\
+> &emsp;*`type-name`* **`::`**\
+> &emsp;*`namespace-name`* **`::`**\
+> &emsp;*`decltype-specifier`* **`::`**\
+> &emsp;*`nested-name-specifier`* *`identifier`* **`::`**\
+> &emsp;*`nested-name-specifier`***`template`** <sub>неявное согласие</sub> *`simple-template-id`***`::`**
+
+> *`unqualified-id`*:\
+> &emsp;*`identifier`*\
+> &emsp;*`operator-function-id`*\
+> &emsp;*`conversion-function-id`*\
+> &emsp;*`literal-operator-id`*\
+> &emsp;**`~`** *`type-name`*\
+> &emsp;**`~`** *`decltype-specifier`*\
+> &emsp;*`template-id`*
+
+## <a name="remarks"></a>Комментарии
 
 `identifier` может быть переменной, функцией или значением перечисления.
 
-## <a name="with-classes-and-namespaces"></a>С классами и пространствами имен
+## <a name="use--for-classes-and-namespaces"></a>Использование `::` для классов и пространств имен
 
 В следующем примере показано, каким образом оператор разрешения области используется с пространствами имен и классами:
 
@@ -80,7 +92,7 @@ int main() {
 }
 ```
 
-Оператор разрешения области можно использовать для идентификации члена пространства имен или пространства имен, которое определяет пространство имен члена в директиве using. В примере ниже `NamespaceC` можно использовать для указания `ClassB`, даже если `ClassB` был объявлен в пространстве имен `NamespaceB`, поскольку `NamespaceB` было определено в `NamespaceC` с помощью директивы using.
+Оператор разрешения области можно использовать для определения члена **`namespace`** или для определения пространства имен, которое определяет пространство имен члена в **`using`** директиве. В приведенном ниже примере можно использовать `NamespaceC` для уточнения `ClassB` , даже если `ClassB` он был объявлен в пространстве имен `NamespaceB` , так как `NamespaceB` был назначен в `NamespaceC` **`using`** директиве.
 
 ```cpp
 namespace NamespaceB {
@@ -91,14 +103,15 @@ namespace NamespaceB {
 }
 
 namespace NamespaceC{
-    using namespace B;
+    using namespace NamespaceB;
 }
-int main() {
-    NamespaceB::ClassB c_b;
-    NamespaceC::ClassB c_c;
 
-    c_b.x = 3;
-    c_c.x = 4;
+int main() {
+    NamespaceB::ClassB b_b;
+    NamespaceC::ClassB c_b;
+
+    b_b.x = 3;
+    c_b.x = 4;
 }
 ```
 
@@ -128,7 +141,7 @@ int main() {
 }
 ```
 
-## <a name="with-static-members"></a>Со статическими членами
+## <a name="use--for-static-members"></a>Использовать `::` для статических членов
 
 Оператор разрешения области необходимо использовать для вызова статических членов класса.
 
@@ -148,7 +161,7 @@ int main() {
 }
 ```
 
-## <a name="with-scoped-enumerations"></a>С ограниченными перечислениями
+## <a name="use--for-scoped-enumerations"></a>Используется `::` для перечислений с заданной областью
 
 Оператор разрешения с заданной областью также используется со значениями [объявлений перечисления](../cpp/enumerations-cpp.md)в области перечисления, как показано в следующем примере:
 
@@ -166,5 +179,5 @@ int main() {
 
 ## <a name="see-also"></a>См. также раздел
 
-[Встроенные операторы C++, приоритет и ассоциативность](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[Встроенные операторы, приоритет и ассоциативность C++](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
 [Пространства имен](../cpp/namespaces-cpp.md)
