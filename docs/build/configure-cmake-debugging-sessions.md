@@ -1,15 +1,15 @@
 ---
 title: Настройка сеансов отладки CMake в Visual Studio
 description: Сведения о том, как использовать Visual Studio для настройки параметров отладчика CMake.
-ms.date: 04/02/2020
+ms.date: 12/07/2020
 helpviewer_keywords:
 - CMake debugging
-ms.openlocfilehash: 74be1f07b838cd77f4ee87f5e9d245410fe716de
-ms.sourcegitcommit: 432c24dde31c400437c4320e8432b1ddb232f844
+ms.openlocfilehash: b289acf8d0aa89cef1d2a72c988b41d99914f828
+ms.sourcegitcommit: 102bd6f7a878d85c8ceab8f28d0359f562850ea0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96440306"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862572"
 ---
 # <a name="configure-cmake-debugging-sessions"></a>Настройка сеансов отладки CMake
 
@@ -112,6 +112,8 @@ ms.locfileid: "96440306"
 #### <a name="additional-options-allowed-with-the-gdbserver-configuration-167-or-later"></a>Дополнительные параметры, поддерживаемые в конфигурации `gdbserver` (16.7 или последующая версия)
 
 - `program`. По умолчанию — `"${debugInfo.fullTargetPath}"`. Путь UNIX к приложению для отладки. Требуется только в том случае, если он отличается от целевого исполняемого файла в расположении сборки или развертывания.
+> [!TIP]
+> Развертывание пока не поддерживается для локальных сценариев перекрестной компиляции. При перекрестной компиляции в Windows (например, при использовании перекрестного компилятора в Windows для создания исполняемого файла Linux ARM) необходимо вручную скопировать двоичный файл в расположение, заданное `program` на удаленном компьютере ARM перед отладкой.
 - `remoteMachineName`.  По умолчанию — `"${debugInfo.remoteMachineName}"`. Имя удаленной системы, на которой находится программа для отладки. Требуется только в том случае, если оно отличается от системы сборки. Должна иметься существующая запись в [диспетчере подключений](../linux/connect-to-your-remote-linux-computer.md). Нажмите **CTRL + ПРОБЕЛ**, чтобы просмотреть список всех существующих удаленных подключений.
 - `cwd`. По умолчанию — `"${debugInfo.defaultWorkingDirectory}"`. Полный путь UNIX к каталогу в удаленной системе, в которой выполняется `program`. Этот каталог должен существовать.
 - `gdbPath`. По умолчанию — `${debugInfo.vsInstalledGdb}`. Полный путь Windows к `gdb`, используемому для отладки. По умолчанию используется `gdb`, установленный вместе с рабочей нагрузкой "Разработка приложений для Linux на C/C++".

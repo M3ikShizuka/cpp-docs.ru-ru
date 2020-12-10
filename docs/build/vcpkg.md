@@ -4,12 +4,12 @@ description: vcpkg — это диспетчер пакетов на базе �
 ms.date: 07/06/2020
 ms.technology: cpp-ide
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
-ms.openlocfilehash: 7131f301a22b2834b04ef932f3cee426b04dc7e5
-ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
+ms.openlocfilehash: ec908824c19099ad6eaa46a4d85c0187ef12b3fd
+ms.sourcegitcommit: 102bd6f7a878d85c8ceab8f28d0359f562850ea0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373636"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96862559"
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: диспетчер пакетов C++ для Windows, Linux и macOS
 
@@ -226,6 +226,8 @@ If you are sure you want to rebuild the above packages, run this command with th
 ## <a name="uninstall-vcpkg"></a>Удаление vcpkg
 
 Чтобы удалить vcpkg, просто удалите каталог vcpkg. При удалении этого каталога удаляется дистрибутив vcpkg и все библиотеки, установленные vcpkg.
+
+Однако если вы выполняли команду **`vcpkg integrate install`** , необходимо выполнить команду **`vcpkg integrate remove`** , чтобы убедиться, что интеграция очищена перед удалением папки.
 
 ## <a name="send-feedback-about-vcpkg"></a>Отправка отзыва о vcpkg
 
