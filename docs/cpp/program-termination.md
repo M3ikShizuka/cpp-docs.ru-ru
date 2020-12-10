@@ -1,52 +1,44 @@
 ---
 title: Завершение программы C++
-description: Описывает способы программирования на exit языке C++.
-ms.date: 01/15/2020
+description: Узнайте о стандартных способах выхода из программы на языке C++.
+ms.date: 12/07/2020
 helpviewer_keywords:
 - terminating execution
 - quitting applications
 - exiting applications
 - programs [C++], terminating
-ms.assetid: fa0ba9de-b5f1-4e7b-aa65-e7932068b48c
-no-loc:
-- exit
-- abort
-- return
-- main
-- atexit
-- void
-ms.openlocfilehash: fd0c7699ae032b5551f4fbc37eb3b7fa999a168f
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 15d31d8d454f6ac90e012d35ef14e6d6e0a9e29a
+ms.sourcegitcommit: 754df5278f795f661d4eeb0d4cacc908aa630159
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352925"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96933213"
 ---
 # <a name="c-program-termination"></a>Завершение программы C++
 
-В C++ вы можете выполнить exit программу следующими способами:
+В C++ можно выйти из программы следующими способами:
 
-- Вызовите [exit](../c-runtime-library/reference/exit-exit-exit.md) функцию.
-- Вызовите [abort](../c-runtime-library/reference/abort.md) функцию.
-- Выполните [return](return-statement-cpp.md) инструкцию из `main` .
+- Вызовите [`exit`](../c-runtime-library/reference/exit-exit-exit.md) функцию.
+- Вызовите [`abort`](../c-runtime-library/reference/abort.md) функцию.
+- Выполните [`return`](return-statement-cpp.md) инструкцию из `main` .
 
-## <a name="no-locexit-function"></a>Функция exit
+## <a name="exit-function"></a>Функция `exit`
 
-[exit](../c-runtime-library/reference/exit-exit-exit.md)Функция, объявленная в \<stdlib.h> , завершает программу на C++. Значение, передаваемое в качестве аргумента, `exit` восстановится в return операционной системе в виде return кода программы или exit кода. По соглашению return нулевой код означает, что программа выполнена успешно. Константы EXIT_FAILURE и EXIT_SUCCESS, также определенные в, можно использовать \<stdlib.h> для обозначения успеха или сбоя программы.
+[`exit`](../c-runtime-library/reference/exit-exit-exit.md)Функция, объявленная в \<stdlib.h> , завершает программу на C++. Значение, передаваемое в качестве аргумента, `exit` возвращается операционной системе в качестве кода возврата программы или кода выхода. Принято, чтобы нулевым кодом возврата обозначалось, что программа завершена успешно. Константы `EXIT_FAILURE` и `EXIT_SUCCESS` , также определенные в, можно использовать \<stdlib.h> для обозначения успеха или неудачи программы.
 
-Выдача **`return`** инструкции из `main` функции эквивалентна вызову `exit` функции со return значением в качестве аргумента.
+Выдача **`return`** инструкции из `main` функции эквивалентна вызову `exit` функции с возвращаемым значением в качестве аргумента.
 
-## <a name="no-locabort-function"></a>Функция abort
+## <a name="abort-function"></a>Функция `abort`
 
-[abort](../c-runtime-library/reference/abort.md)Функция, также объявленная в стандартном включаемом файле \<stdlib.h> , завершает программу на C++. Разница между `exit` и заключается в том `abort` , что `exit` позволяет выполнять обработку завершения выполнения C++ (будут вызываться деструкторы глобальных объектов), тогда как `abort` программа немедленно завершает выполнение программы. `abort`Функция обходит обычный процесс уничтожения инициализированных глобальных статических объектов. Он также обходит любую специальную обработку, указанную с помощью [atexit](../c-runtime-library/reference/atexit.md) функции.
+[`abort`](../c-runtime-library/reference/abort.md)Функция, также объявленная в стандартном включаемом файле \<stdlib.h> , завершает программу на C++. Разница между `exit` и заключается в том `abort` , что `exit` позволяет выполнять обработку завершения при завершении выполнения C++ (вызываются деструкторы глобальных объектов), но `abort` немедленно завершает программу. `abort`Функция обходит обычный процесс уничтожения инициализированных глобальных статических объектов. Он также обходит любую специальную обработку, указанную с помощью [`atexit`](../c-runtime-library/reference/atexit.md) функции.
 
-## <a name="no-locatexit-function"></a>Функция atexit
+## <a name="atexit-function"></a>Функция `atexit`
 
-Используйте [atexit](../c-runtime-library/reference/atexit.md) функцию, чтобы указать действия, выполняемые до завершения программы. Глобальные статические объекты, инициализированные до вызова метода **atexit** , не уничтожаются до выполнения exit функции обработки.
+Используйте [`atexit`](../c-runtime-library/reference/atexit.md) функцию, чтобы указать действия, которые выполняются до завершения программы. Глобальные статические объекты, инициализированные до уничтожения вызова `atexit` , не будут уничтожены до выполнения функции выхода.
 
-## <a name="no-locreturn-statement-in-no-locmain"></a>return в main
+## <a name="return-statement-in-main"></a>`return` в `main`
 
-Выдача [return](return-statement-cpp.md) инструкции из `main` функционально эквивалентна вызову `exit` функции. Рассмотрим следующий пример.
+Выдача [`return`](return-statement-cpp.md) инструкции из `main` функционально эквивалентна вызову `exit` функции. Рассмотрим следующий пример.
 
 ```cpp
 // return_statement.cpp
@@ -58,7 +50,7 @@ int main()
 }
 ```
 
-`exit`Операторы и **`return`** в предыдущем примере функционально идентичны. Однако для C++ требуются функции, которые имеют return типы, отличные от **`void`** return значений. **`return`** Оператор позволяет получить return значение из `main` .
+`exit`Операторы и **`return`** в предыдущем примере функционально идентичны. Как правило, для C++ требуются функции, которые возвращают типы, отличные от **`void`** возвращаемых значений. `main`Функция является исключением; она может завершаться без **`return`** оператора. В этом случае он возвращает зависящее от реализации значение для вызывающего процесса. **`return`** Оператор позволяет указать возвращаемое значение из `main` .
 
 ## <a name="destruction-of-static-objects"></a>Уничтожение статических объектов
 
@@ -108,7 +100,7 @@ int main() {
 
 ```cpp
 int main() {
-   ShowData sd1, sd2( "hello.dat" );
+   ShowData sd1( "CON" ), sd2( "hello.dat" );
 
    sd1.Disp( "hello to default device\n" );
    sd2.Disp( "hello to file hello.dat\n" );
@@ -117,4 +109,4 @@ int main() {
 
 ## <a name="see-also"></a>См. также раздел
 
-[main аргументы функции и командной строки](main-function-command-line-args.md)
+[`main` аргументы функции и командной строки](main-function-command-line-args.md)
