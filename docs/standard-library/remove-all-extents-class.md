@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: remove_all_extents классе'
 title: Класс remove_all_extents
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - remove_all_extents class
 - remove_all_extents
 ms.assetid: 548dc536-82e7-423a-b8c1-443d66d9632e
-ms.openlocfilehash: 0909da3f08cec62bcb915a65c353abdd33c96c9d
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: a6c798e1f128b10ef94061573c93c3bb9e3aa4f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451405"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159730"
 ---
-# <a name="removeallextents-class"></a>Класс remove_all_extents
+# <a name="remove_all_extents-class"></a>Класс remove_all_extents
 
 Создает из типа массива тип, не относящийся к массиву.
 
@@ -33,7 +34,7 @@ using remove_all_extents_t = typename remove_all_extents<T>::type;
 *T*\
 Тип для изменения.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Экземпляр `remove_all_extents<T>` содержит модифицированный тип, который является типом элемента типа *T* с удаленными измерениями массива, или *t* , если *t* не является типом массива.
 
@@ -61,11 +62,11 @@ int main()
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)\
 [Класс remove_extent](../standard-library/remove-extent-class.md)

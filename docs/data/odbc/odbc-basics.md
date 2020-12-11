@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье основы ODBC
 title: Основы ODBC
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - ODBC, about ODBC
 - ODBC, components
 ms.assetid: ec529702-0fb2-4754-b8de-d1efa8eca18f
-ms.openlocfilehash: 042b1ce6d12e4f4a2be57c0e2e8e01d9750f5357
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 94482abd046645e445ffae7f85f192514f4fff78
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213217"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161186"
 ---
 # <a name="odbc-basics"></a>Основы ODBC
 
@@ -45,7 +46,7 @@ ODBC — это часть базы данных в архитектуре Micro
 
 - Диспетчер драйверов ODBC
 
-   Библиотека динамической компоновки (библиотеками odbc32. dll), которая загружает драйверы ODBC для базы данных от имени приложения. Эта библиотека DLL прозрачна для приложения.
+   Библиотека динамической компоновки (Odbc32.dll), которая загружает драйверы базы данных ODBC от имени приложения. Эта библиотека DLL прозрачна для приложения.
 
 - Драйверы базы данных ODBC
 
@@ -53,7 +54,7 @@ ODBC — это часть базы данных в архитектуре Micro
 
 - [Библиотека курсоров ODBC](../../data/odbc/odbc-the-odbc-cursor-library.md)
 
-   Библиотека динамической компоновки (Odbccr32. dll), которая находится между диспетчером драйверов ODBC и драйверами и обрабатывает прокрутку данных.
+   Библиотека динамической компоновки (Odbccr32.dll), которая находится между диспетчером драйверов ODBC и драйверами и обрабатывает прокрутку данных.
 
 - [Администратор ODBC](../../data/odbc/odbc-administrator.md)
 
@@ -67,4 +68,4 @@ ODBC — это часть базы данных в архитектуре Micro
 
 ## <a name="see-also"></a>См. также раздел
 
-[Интерфейс ODBC](../../data/odbc/open-database-connectivity-odbc.md)
+[Открытие подключения к базе данных (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

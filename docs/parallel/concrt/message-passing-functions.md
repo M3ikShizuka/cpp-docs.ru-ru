@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: функции передачи сообщений'
 title: Функции передачи сообщений
 ms.date: 11/04/2016
 helpviewer_keywords:
 - message passing functions
 ms.assetid: 42477c9e-a8a6-4dc4-a98e-93c6dc8c4dd0
-ms.openlocfilehash: 3709e7b5280b96b2b77ec850a06ed15d0e42a7e5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 77e221f5d2116c1bfc2690d247161979af04ac06
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87194632"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159860"
 ---
 # <a name="message-passing-functions"></a>Функции передачи сообщений
 
@@ -17,7 +18,7 @@ ms.locfileid: "87194632"
 
 Эти функции передачи сообщений используются с различными типами блоков сообщений. Дополнительные сведения о типах блоков сообщений, определяемых среда выполнения с параллелизмом, см. в разделе [асинхронные блоки сообщений](../../parallel/concrt/asynchronous-message-blocks.md).
 
-## <a name="sections"></a><a name="top"></a>Священ
+## <a name="sections"></a><a name="top"></a> Священ
 
 В этом разделе описаны следующие функции передачи сообщений:
 
@@ -27,7 +28,7 @@ ms.locfileid: "87194632"
 
 - [Примеры](#examples)
 
-## <a name="send-and-asend"></a><a name="send"></a>Send и asend
+## <a name="send-and-asend"></a><a name="send"></a> Send и asend
 
 Функция [Concurrency:: send](reference/concurrency-namespace-functions.md#send) отправляет сообщение указанному целевому объекту синхронно, а функция [Concurrency:: asend](reference/concurrency-namespace-functions.md#asend) отправляет сообщение указанному целевому объекту асинхронно. Обе `send` функции и `asend` ожидают, пока целевой объект не обозначает, что в конечном итоге будет принимать или отклонять сообщение.
 
@@ -37,7 +38,7 @@ ms.locfileid: "87194632"
 
 [[Top](#top)]
 
-## <a name="receive-and-try_receive"></a><a name="receive"></a>получение и try_receive
+## <a name="receive-and-try_receive"></a><a name="receive"></a> получение и try_receive
 
 Функции [Concurrency:: Receive](reference/concurrency-namespace-functions.md#receive) и [concurrency:: try_receive](reference/concurrency-namespace-functions.md#try_receive) считывают данные из заданного источника. `receive`Функция ожидает, пока данные станут доступными, в то время как `try_receive` функция возвращает значение немедленно.
 
@@ -51,7 +52,7 @@ ms.locfileid: "87194632"
 
 - [Асинхронные блоки сообщений](../../parallel/concrt/asynchronous-message-blocks.md)
 
-- [Как реализовать различные шаблоны "производитель-получатель"](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)
+- [Практические рекомендации. Реализация различных шаблонов Producer-Consumer](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)
 
 - [Руководство. предоставление рабочих функций классам Call и transformer](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md)
 

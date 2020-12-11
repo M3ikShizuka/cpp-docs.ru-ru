@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: &lt; любые&gt;'
 title: '&lt;любой&gt;'
 ms.date: 04/04/2019
 f1_keywords:
 - <any>
 helpviewer_keywords:
 - <any>
-ms.openlocfilehash: 5039c1499e423af6eedbe26b0b20f57b316648b6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 314bc96b8cd64d51b728b7a2303b90732b822deb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844734"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163383"
 ---
 # <a name="ltanygt"></a>&lt;любой&gt;
 
@@ -22,7 +23,7 @@ ms.locfileid: "88844734"
 
 **Пространство имен:** std
 
-## <a name="members"></a>Элементы
+## <a name="members"></a>Члены
 
 ### <a name="functions"></a>Функции
 

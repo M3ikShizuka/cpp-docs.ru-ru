@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в разделе Пошаговое руководство. Добавление CTaskDialog в приложение.
 title: Пошаговое руководство. Добавление CTaskDialog в приложение
 ms.date: 04/25/2019
 helpviewer_keywords:
 - CTaskDialog, adding
 - walkthroughs [MFC], dialogs
 ms.assetid: 3a62abb8-2d86-4bec-bdb8-5784d5f9a9f8
-ms.openlocfilehash: 3a970df4911fed643045a1c6b59fcda1a853dbcf
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f7462551af785b85156f3f0b0f83b2ff3ddbf4c7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222775"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159899"
 ---
 # <a name="walkthrough-adding-a-ctaskdialog-to-an-application"></a>Пошаговое руководство. Добавление CTaskDialog в приложение
 
@@ -94,7 +95,7 @@ ms.locfileid: "87222775"
 
 ### <a name="to-add-functionality-to-the-ctaskdialog"></a>Добавление функциональных возможностей в CTaskDialog
 
-1. Перейдите в **представление ресурсов**. Если **представление ресурсов**не отображается, его можно открыть в меню **вид** .
+1. Перейдите в **представление ресурсов**. Если **представление ресурсов** не отображается, его можно открыть в меню **вид** .
 
 1. Разверните **представление ресурсов** , чтобы увидеть папку **Таблица строк** . Разверните папку и дважды щелкните запись **Таблица строк** .
 

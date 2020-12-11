@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: remove_cv классе'
 title: Класс remove_cv
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - remove_cv class
 - remove_cv
 ms.assetid: 8502602a-1c80-479c-84e0-33bd1d6496d6
-ms.openlocfilehash: dbe21d8e9f0ed0dc7c72a19584f24ee1bce0803c
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 2842c250ef46bf4fe1d36e6159bfaaf09b872034
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451328"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159691"
 ---
-# <a name="removecv-class"></a>Класс remove_cv
+# <a name="remove_cv-class"></a>Класс remove_cv
 
 Создает неконстантный/долговременный тип из типа.
 
@@ -33,9 +34,9 @@ using remove_cv_t = typename remove_cv<T>::type;
 *T*\
 Тип для изменения.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Экземпляр `remove_cv<T>` содержит модифицированный тип, который имеет `T1` значение, если *t* имеет форму `const T1`, `volatile T1`или `const volatile T1`, в противном случае *t*.
+Экземпляр `remove_cv<T>` содержит модифицированный тип, который имеет значение, `T1` Если *t* имеет форму `const T1` , `volatile T1` или `const volatile T1` , в противном случае *t*.
 
 ## <a name="example"></a>Пример
 
@@ -61,11 +62,11 @@ remove_cv_t<const volatile int> == int
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)\
 [Класс remove_const](../standard-library/remove-const-class.md)\

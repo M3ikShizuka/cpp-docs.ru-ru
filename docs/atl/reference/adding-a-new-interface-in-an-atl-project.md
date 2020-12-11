@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Добавление нового интерфейса в проект ATL'
 title: Добавление нового интерфейса в проект ATL
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - controls [ATL], interfaces
 - ATL projects, adding interfaces
 ms.assetid: 7d34b023-2c6b-4155-aca3-d47a40968063
-ms.openlocfilehash: 8bf0138f85929e06b67e9a2e294eda8a2f385e1a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 7db5cd5f613985caf22253736ae691f3af9240ad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499387"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159145"
 ---
 # <a name="adding-a-new-interface-in-an-atl-project"></a>Добавление нового интерфейса в проект ATL
 
@@ -44,6 +45,6 @@ ms.locfileid: "91499387"
 
 [Мастер проектов ATL](../../atl/reference/atl-project-wizard.md)<br/>
 [Типы проектов C++ в Visual Studio](../../build/reference/visual-cpp-project-types.md)<br/>
-[Программирование с помощью ATL и кода времени выполнения C](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
+[Программирование с помощью ATL и кода Run-Time C](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [Основы COM-объектов ATL](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Конфигурации проектов ATL по умолчанию](../../atl/reference/default-atl-project-configurations.md)

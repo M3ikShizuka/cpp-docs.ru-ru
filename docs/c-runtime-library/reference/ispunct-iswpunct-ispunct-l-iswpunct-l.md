@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: ispunct, исвпункт, _ispunct_l, _iswpunct_l'
 title: ispunct, iswpunct, _ispunct_l, _iswpunct_l
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - _iswpunct_l function
 - iswpunct_l function
 ms.assetid: 94403240-85c8-40a4-9c2b-e3e95c729c76
-ms.openlocfilehash: d0585e9a80919c63dd9aa650dc1544e95569bc8b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 84de5978d85d87d8e4d83263652c0d4bf2ce1648
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916677"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162343"
 ---
 # <a name="ispunct-iswpunct-_ispunct_l-_iswpunct_l"></a>ispunct, iswpunct, _ispunct_l, _iswpunct_l
 
@@ -71,7 +72,7 @@ int _iswpunct_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Проверяемое целое число.
 
 *locale*<br/>
@@ -91,7 +92,7 @@ int _iswpunct_l(
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_** **истпункт**|**ispunct**|[_ismbcpunct](ismbcgraph-functions.md)|**iswpunct**|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -109,5 +110,5 @@ int _iswpunct_l(
 ## <a name="see-also"></a>См. также раздел
 
 [Классификация символов](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Процедуры is, isw](../../c-runtime-library/is-isw-routines.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[является, подпрограммы isw](../../c-runtime-library/is-isw-routines.md)<br/>

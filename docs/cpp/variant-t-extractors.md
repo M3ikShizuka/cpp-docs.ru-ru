@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: _variant_t средства извлечения'
 title: Средства извлечения _variant_t
 ms.date: 11/04/2016
 f1_keywords:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - operator BYTE
 - operator IUnknown
 ms.assetid: 33c1782f-045a-4673-9619-1d750efc83a9
-ms.openlocfilehash: a1b7c713b5d82ff54250b622f2d4afe17abac468
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 55a02fdf422388b0e44a9aad77e86f7a76e80e3b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87185610"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161602"
 ---
 # <a name="_variant_t-extractors"></a>Средства извлечения _variant_t
 
@@ -107,9 +108,9 @@ operator unsigned __int64() const;
 
 - **оператор _bstr_t ()** Извлекает строку, инкапсулированную в `_bstr_t` объекте.
 
-- **оператор IDispatch \* ()** извлекает указатель disp-интерфейса из инкапсулированного `VARIANT` . `AddRef`метод вызывается для полученного указателя, поэтому его можно вызвать `Release` для освобождения.
+- **оператор IDispatch \* ()** извлекает указатель disp-интерфейса из инкапсулированного `VARIANT` . `AddRef` метод вызывается для полученного указателя, поэтому его можно вызвать `Release` для освобождения.
 
-- **оператор IUnknown \* ()** ИЗВЛЕКАЕТ указатель интерфейса COM из инкапсулированного объекта `VARIANT` . `AddRef`метод вызывается для полученного указателя, поэтому его можно вызвать `Release` для освобождения.
+- **оператор IUnknown \* ()** ИЗВЛЕКАЕТ указатель интерфейса COM из инкапсулированного объекта `VARIANT` . `AddRef` метод вызывается для полученного указателя, поэтому его можно вызвать `Release` для освобождения.
 
 **Завершение блока, относящегося только к системам Майкрософт**
 

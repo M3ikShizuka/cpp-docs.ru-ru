@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: Добавление потребителя OLE DB ATL'
 title: Добавление потребителя ATL OLE DB
 ms.date: 05/09/2019
 helpviewer_keywords:
 - ATL OLE DB consumers
 ms.assetid: f940a513-4e42-4148-b521-dd0d7dc89fa2
-ms.openlocfilehash: c298a841bf0d37f90bcd6b53bc0c6cdf501f4dd3
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: cfd88524e369781b239bb0246ab59fcf0080a144
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921156"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159106"
 ---
 # <a name="adding-an-atl-ole-db-consumer"></a>Добавление потребителя ATL OLE DB
 
@@ -28,9 +29,9 @@ ms.locfileid: "92921156"
 
 ## <a name="to-add-an-atl-ole-db-consumer-to-your-project"></a>Добавление потребителя ATL OLE DB в проект
 
-1. В разделе **Представление классов** щелкните проект правой кнопкой мыши. В контекстном меню выберите команду **Добавить** , а затем — **Добавить класс** .
+1. В разделе **Представление классов** щелкните проект правой кнопкой мыши. В контекстном меню выберите команду **Добавить**, а затем — **Добавить класс**.
 
-1. В папке Visual C++ дважды щелкните значок **ATL OLE DB Consumer** (Потребитель ATL OLE DB) или выберите его и нажмите кнопку **Открыть** .
+1. В папке Visual C++ дважды щелкните значок **ATL OLE DB Consumer** (Потребитель ATL OLE DB) или выберите его и нажмите кнопку **Открыть**.
 
    Откроется Мастер потребителя ATL OLE DB.
 
@@ -40,6 +41,6 @@ ms.locfileid: "92921156"
 
 ::: moniker-end
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Добавление функциональных возможностей с помощью мастеров кода](../../ide/adding-functionality-with-code-wizards-cpp.md)

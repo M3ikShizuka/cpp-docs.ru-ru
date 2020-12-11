@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: проверка типов (CRT)'
 title: Проверка типов (CRT)
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - variable argument functions
 - type checking
 ms.assetid: 1ba7590b-d1c0-4636-b6a0-e231395abdad
-ms.openlocfilehash: bb5aecc2b47aa8e88666f42d8022395bf99fd85e
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: cf27847bf2aeef278fb4699cea5a0cf74a961086
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747687"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162358"
 ---
 # <a name="type-checking-crt"></a>Проверка типов (CRT)
 
 Компилятор выполняет ограниченную проверку типов для функций, которые могут принимать переменное число аргументов, как указано ниже:
 
-|Вызов функции |Аргументы, для которых проверяется тип|
+|Вызов функции|Аргументы, для которых проверяется тип|
 |-------------------|-----------------------------|
 |`_cprintf_s`, `_cscanf_s`, `printf_s`, `scanf_s`|Первый аргумент (строка форматирования)|
 |`fprintf_s`, `fscanf_s`, `sprintf_s`, `sscanf_s`|Первые два аргумента (файл или буфер и строка форматирования)|
@@ -31,6 +32,6 @@ ms.locfileid: "57747687"
 
 Компилятор выполняет такую же ограниченную проверку типов для аналогов этих функций для расширенных символов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Функции библиотеки CRT](../c-runtime-library/crt-library-features.md)
+[Возможности библиотеки CRT](../c-runtime-library/crt-library-features.md)

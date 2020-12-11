@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: макросы агрегирования и фабрики классов'
 title: Макросы агрегирования и фабрики классов
 ms.date: 08/12/2020
 f1_keywords:
@@ -72,12 +73,12 @@ helpviewer_keywords:
 - ATL::DECLARE_PROTECT_FINAL_CONSTRUCT
 - ATL::DECLARE_VIEW_STATUS
 ms.assetid: d99d379a-0eec-481f-8daa-252dac18f163
-ms.openlocfilehash: 5fdf330cfc69ea68720666eae5952be356cad314
-ms.sourcegitcommit: 50db6d0a0d640155c9347c1914bc8859efaadd90
+ms.openlocfilehash: 7aa62bfe8e87b9e7923dfe1de1f28b6acdba595e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88197334"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158963"
 ---
 # <a name="aggregation-and-class-factory-macros"></a>Макросы агрегирования и фабрики классов
 
@@ -152,7 +153,7 @@ public CComObjectRootEx<CComGlobalsThreadModel>
 
 `CComClassFactory` реализует интерфейс [IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory) , который содержит методы для создания объекта определенного идентификатора CLSID, а также блокирует фабрику класса в памяти, чтобы новые объекты могли создаваться быстрее. `IClassFactory` должен быть реализован для каждого класса, регистрируемого в системном реестре и которому назначается идентификатор CLSID.
 
-Объекты ATL обычно получают фабрику классов путем наследования от [CComCoClass](../../atl/reference/ccomcoclass-class.md). Этот класс включает макрос [DECLARE_CLASSFACTORY](#declare_classfactory), который объявляет `CComClassFactory` фабрику классов по умолчанию. Чтобы переопределить это значение по умолчанию, укажите один из макросов DECLARE_CLASSFACTORY*xxx* в определении класса. Например, [DECLARE_CLASSFACTORY_EX](#declare_classfactory_ex) макрос использует указанный класс для фабрики класса:
+Объекты ATL обычно получают фабрику классов путем наследования от [CComCoClass](../../atl/reference/ccomcoclass-class.md). Этот класс включает макрос [DECLARE_CLASSFACTORY](#declare_classfactory), который объявляет `CComClassFactory` фабрику классов по умолчанию. Чтобы переопределить это значение по умолчанию, укажите один из макросов DECLARE_CLASSFACTORY *xxx* в определении класса. Например, [DECLARE_CLASSFACTORY_EX](#declare_classfactory_ex) макрос использует указанный класс для фабрики класса:
 
 [!code-cpp[NVC_ATL_COM#8](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_3.h)]
 
@@ -244,7 +245,7 @@ class  CComClassFactory2 : public IClassFactory2,
 
 [!code-cpp[NVC_ATL_COM#3](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_5.h)]
 
-`CComClassFactory2` является производным от `CComClassFactory2Base` *лицензии*и. `CComClassFactory2Base`, в свою очередь, является производным от `IClassFactory2` и ** \< CComGlobalsThreadModel > CComObjectRootEx**.
+`CComClassFactory2` является производным от `CComClassFactory2Base` *лицензии* и. `CComClassFactory2Base`, в свою очередь, является производным от `IClassFactory2` и **\< CComGlobalsThreadModel > CComObjectRootEx**.
 
 ## <a name="declare_classfactory_auto_thread"></a><a name="declare_classfactory_auto_thread"></a> DECLARE_CLASSFACTORY_AUTO_THREAD
 
@@ -390,7 +391,7 @@ DECLARE_ONLY_AGGREGATABLE вызывает ошибку (E_FAIL) при попы
 
 ## <a name="declare_poly_aggregatable"></a><a name="declare_poly_aggregatable"></a> DECLARE_POLY_AGGREGATABLE
 
-Указывает, что при создании объекта создается экземпляр **CComPolyObject \<** *x* **> ** .
+Указывает, что при создании объекта создается экземпляр **CComPolyObject \<** *x* **>** .
 
 ```cpp
 DECLARE_POLY_AGGREGATABLE( x )

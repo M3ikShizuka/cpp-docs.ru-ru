@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функциях vprintf
 title: Функции vprintf
 ms.date: 11/04/2016
 api_location:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - vprintf function
 - formatted text [C++]
 ms.assetid: 02ac7c51-eab1-4bf0-bf4c-77065e3fa744
-ms.openlocfilehash: 2455655404bd61c220ebe4e3d018bc81204fa51e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 54490518fd083826108da6a87e4a759fc2aa6227
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845371"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162116"
 ---
 # <a name="vprintf-functions"></a>Функции vprintf
 
@@ -42,7 +43,7 @@ ms.locfileid: "88845371"
 [_vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l](../c-runtime-library/reference/vsprintf-p-vsprintf-p-l-vswprintf-p-vswprintf-p-l.md)\
 [vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l](../c-runtime-library/reference/vsprintf-s-vsprintf-s-l-vswprintf-s-vswprintf-s-l.md)
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функции `vprintf` выполняют те же действия, что и перечисленные в следующей таблице аналоги. Но при этом каждая функция `vprintf` принимает указатель на список аргументов, а их аналоги — сам список аргументов.
 

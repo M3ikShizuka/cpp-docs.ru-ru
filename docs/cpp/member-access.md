@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: доступ к членам'
 title: Доступ к членам
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - smart pointers, definition
 - smart pointers
 ms.assetid: 8c7b2c43-eb92-4d42-9a8e-61aa37d71333
-ms.openlocfilehash: 12ea612625e21a8a13021b75e92f3752b0b5ce80
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c35eb2e7e24da9f8e8988b47ebfd8a59df815cee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179423"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97161719"
 ---
 # <a name="member-access"></a>Доступ к членам
 

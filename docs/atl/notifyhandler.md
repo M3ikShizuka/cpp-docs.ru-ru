@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: Нотифихандлер'
 title: NotifyHandler
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - NotifyHandler function
 ms.assetid: 5ff953ec-de35-42bc-8b3c-d384d636c139
-ms.openlocfilehash: 16fb330d2da83ddfd013e33a2d4b688b2711103b
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 1c08eaa91962fa9f6acf330de89334ad1224e582
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492302"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159379"
 ---
 # <a name="notifyhandler"></a>NotifyHandler
 
@@ -31,7 +32,7 @@ LRESULT NotifyHandler(
 Идентификатор элемента управления, отправляющего сообщение.
 
 *пнмх*<br/>
-Адрес структуры [NMHDR](/windows/win32/api/richedit/ns-richedit-nmhdr) , содержащей код уведомления и дополнительные сведения. Для некоторых сообщений с уведомлениями этот параметр указывает на большую структуру, в `NMHDR` которой структура является первым элементом.
+Адрес структуры [NMHDR](/windows/win32/api/richedit/ns-richedit-nmhdr) , содержащей код уведомления и дополнительные сведения. Для некоторых сообщений с уведомлениями этот параметр указывает на большую структуру, в которой `NMHDR` структура является первым элементом.
 
 *бхандлед*<br/>
 Схема сообщений устанавливает для *бхандлед* значение true перед вызовом *нотифихандлер* . Если *нотифихандлер* не обрабатывает сообщение полностью, ему следует присвоить параметру *бхандлед* значение **false** , чтобы указать, что сообщение требует дальнейшей обработки.
@@ -40,11 +41,11 @@ LRESULT NotifyHandler(
 
 Результат обработки сообщения. 0 в случае успеха.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Пример использования этого обработчика сообщений в схеме сообщений см. в разделе [NOTIFY_HANDLER](reference/message-map-macros-atl.md#notify_handler)).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Реализация окна](../atl/implementing-a-window.md)<br/>
 [Схемы сообщений](../atl/message-maps-atl.md)<br/>

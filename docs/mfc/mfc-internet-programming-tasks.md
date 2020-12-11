@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: задачи по программированию в Интернете MFC'
 title: Задачи программирования для интернет-решений MFC
 ms.date: 09/12/2018
 helpviewer_keywords:
 - Internet applications [MFC], getting started
 - Internet applications [MFC], first steps
 ms.assetid: 6377e9b8-07c4-4380-b63b-05f5a9061313
-ms.openlocfilehash: 6d8a542ada94bc52ee2000bc92ae0457ec87609c
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 26823dbd85222998ebf20947ac2af30a6b11e987
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617966"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159938"
 ---
 # <a name="mfc-internet-programming-tasks"></a>Задачи программирования для интернет-решений MFC
 
@@ -32,9 +33,9 @@ ms.locfileid: "84617966"
 
 Сведения о том, как приступить к работе, см. в следующих разделах:
 
-- [Решения, которые необходимо принять при разработке приложения](application-design-choices.md)
+- [Варианты разработки приложений](application-design-choices.md)
 
-- [Создание приложений MFC](writing-mfc-applications.md)
+- [Написание приложений MFC](writing-mfc-applications.md)
 
 - [Элементы управления ActiveX в Интернете](activex-controls-on-the-internet.md)
 
@@ -42,11 +43,11 @@ ms.locfileid: "84617966"
 
 - [Асинхронные моникеры в Интернете](asynchronous-monikers-on-the-internet.md)
 
-- [Тестирование интернет-приложений](testing-internet-applications.md)
+- [Тестирование Интернет приложений](testing-internet-applications.md)
 
 - [Интернет — безопасность](internet-security-cpp.md)
 
 ## <a name="see-also"></a>См. также раздел
 
 [Основные сведения о программировании Интернета MFC](mfc-internet-programming-basics.md)<br/>
-[Сведения о работе с Интернетом по задачам](internet-information-by-task.md)
+[Сведения о Интернете по задачам](internet-information-by-task.md)

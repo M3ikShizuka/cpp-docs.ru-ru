@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: мастер простых объектов ATL'
 title: Мастер простых объектов ATL
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - ATL projects, adding objects
 - ATL Simple Object Wizard
 ms.assetid: f7f85741-9aad-4543-a917-a29b996364da
-ms.openlocfilehash: 8bc611442e98e467a174ebd52ea3c540cf72975f
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: c19613e1b1b6bd746106ff57a87dcf0f7d3ad838
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352691"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158664"
 ---
 # <a name="atl-simple-object-wizard"></a>Мастер простых объектов ATL
 
@@ -45,7 +46,7 @@ ms.locfileid: "91352691"
 
    Мастер не перезаписывает файл. Если выбрать имя существующего файла, при нажатии кнопки **Готово** мастер предложит указать, нужно ли добавить объявление класса к содержимому файла. Чтобы добавить данные в файл, нажмите кнопку **Да**; чтобы вернуться в мастер и указать другое имя файла, нажмите кнопку **Нет**.
 
-- **Class**
+- **Класс**
 
    Задает имя создаваемого класса. Это имя основано на имени, указанном в поле **Короткое имя**, с предшествующей "С" — типичным префиксом для имени класса.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: определения типов ATL'
 title: Определения типов ATL
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - typedefs
 - ATL, typedefs
 ms.assetid: 7dd05baa-3efb-4e3b-af23-793c610f4560
-ms.openlocfilehash: 10d11b2b6e78220c1c562d100ee7886026a94b22
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: cb243ef3d16689a1a0ddeb81d3de0bb4ec234a9c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833872"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158651"
 ---
 # <a name="atl-typedefs"></a>Определения типов ATL
 
@@ -61,7 +62,7 @@ ms.locfileid: "88833872"
 typedef ATL::_ATL_BASE_MODULE70 _ATL_BASE_MODULE;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используется в каждом проекте ATL. На основе [_ATL_BASE_MODULE70](../../atl/reference/atl-base-module70-structure.md).
 
@@ -79,7 +80,7 @@ typedef ATL::_ATL_BASE_MODULE70 _ATL_BASE_MODULE;
 typedef ATL::_ATL_COM_MODULE70 _ATL_COM_MODULE;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используется проектами ATL, использующими функции COM. На основе [_ATL_COM_MODULE70](../../atl/reference/atl-com-module70-structure.md).
 
@@ -99,7 +100,7 @@ typedef ATL::_ATL_MODULE70 _ATL_MODULE;
 
 **Заголовок**
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 На основе [_ATL_MODULE70](../../atl/reference/atl-module70-structure.md).
 
@@ -111,7 +112,7 @@ typedef ATL::_ATL_MODULE70 _ATL_MODULE;
 typedef ATL::_ATL_WIN_MODULE70 _ATL_WIN_MODULE;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используется любыми проектами ATL, использующими функции для работы с окнами. На основе [_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md).
 
@@ -159,7 +160,7 @@ typedef CComMultiThreadModel CComGlobalsThreadModel;
 #endif
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В зависимости от модели потоков, используемой приложением, **`typedef`** имя `CComGlobalsThreadModel` ссылается либо на [ккомсинглесреадмодел](../../atl/reference/ccomsinglethreadmodel-class.md) , либо на [ккоммултисреадмодел](../../atl/reference/ccommultithreadmodel-class.md). Эти классы предоставляют дополнительные **`typedef`** имена для ссылки на класс критической секции.
 
@@ -199,7 +200,7 @@ typedef CComMultiThreadModel CComObjectThreadModel;
 #endif
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В зависимости от модели потоков, используемой приложением, **`typedef`** имя `CComObjectThreadModel` ссылается либо на [ккомсинглесреадмодел](../../atl/reference/ccomsinglethreadmodel-class.md) , либо на [ккоммултисреадмодел](../../atl/reference/ccommultithreadmodel-class.md). Эти классы предоставляют дополнительные **`typedef`** имена для ссылки на класс критической секции.
 
@@ -235,7 +236,7 @@ typedef CContainedWindowT<CWindow> CContainedWindow;
 
 **Заголовок:** atlwin. h
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `CContainedWindow` является специализацией [кконтаинедвиндовт](../../atl/reference/ccontainedwindowt-class.md). Если вы хотите изменить базовый класс или признаки, используйте `CContainedWindowT` напрямую.
 
@@ -283,7 +284,7 @@ typedef ATL::CPathT<CStringW> CPathW;
 #define CSimpleValArray CSimpleArray
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `CSimpleValArray` предоставляется для создания и управления массивами, содержащими простые типы данных. Это простой #define [ксимплеаррай](../../atl/reference/csimplearray-class.md).
 

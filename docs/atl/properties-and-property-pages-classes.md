@@ -1,5 +1,6 @@
 ---
-title: Свойства и классы страницы свойств (ATL)
+description: 'Дополнительные сведения: классы свойств и страниц свойств'
+title: Классы свойств и страниц свойств (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -7,38 +8,38 @@ helpviewer_keywords:
 - properties [ATL], classes
 - properties [ATL]
 ms.assetid: 31616f98-69f8-48b2-8d58-b8e7d1c2b2d8
-ms.openlocfilehash: 05c3a67e278389bb2ab1b07e9d6cf63cbe347c63
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1fddb9626afcab908ae6f7ffb085c263b7a84af7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62249630"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97159197"
 ---
-# <a name="properties-and-property-pages-classes"></a>Свойства и классы страниц свойств
+# <a name="properties-and-property-pages-classes"></a>Классы свойств и страниц свойств
 
-Следующие классы поддерживают свойства и страницы свойств:
+Следующие классы поддерживают свойства и страницы свойств.
 
-- [CComDispatchDriver](../atl/reference/atl-typedefs.md#ccomdispatchdriver) извлекает или задает свойства объекта с помощью `IDispatch` указатель.
+- [Ккомдиспатчдривер](../atl/reference/atl-typedefs.md#ccomdispatchdriver) Возвращает или задает свойства объекта с помощью `IDispatch` указателя.
 
-- [CStockPropImpl](../atl/reference/cstockpropimpl-class.md) реализует стандартных свойств, поддерживаемых ATL.
+- [Кстоккпропимпл](../atl/reference/cstockpropimpl-class.md) Реализует стандартные свойства, поддерживаемые библиотекой ATL.
 
-- [IPerPropertyBrowsingImpl](../atl/reference/iperpropertybrowsingimpl-class.md) обращается к сведениям на страницах свойств объекта.
+- [Иперпропертибровсингимпл](../atl/reference/iperpropertybrowsingimpl-class.md) Обращается к данным на страницах свойств объекта.
 
-- [IPersistPropertyBagImpl](../atl/reference/ipersistpropertybagimpl-class.md) хранит свойства объекта в контейнер свойств, предоставляемых клиентом.
+- [Иперсистпропертибагимпл](../atl/reference/ipersistpropertybagimpl-class.md) Сохраняет свойства объекта в контейнере свойств, предоставляемом клиентом.
 
-- [IPropertyPageImpl](../atl/reference/ipropertypageimpl-class.md) управляет заданной страницы свойств в окне свойств.
+- [Ипропертипажеимпл](../atl/reference/ipropertypageimpl-class.md) Управляет определенной страницей свойств в пределах страницы свойств.
 
-- [IPropertyPage2Impl](../atl/reference/ipropertypage2impl-class.md) аналогичен `IPropertyPageImpl`, но также позволяет клиенту выбора конкретного свойства в окне свойств.
+- [IPropertyPage2Impl](../atl/reference/ipropertypage2impl-class.md) Аналогично `IPropertyPageImpl` , но также позволяет клиенту выбирать конкретное свойство на странице свойств.
 
-- [ISpecifyPropertyPagesImpl](../atl/reference/ispecifypropertypagesimpl-class.md) получает CLSID для страниц свойств, поддерживаемых объектом.
+- [ИспеЦифипропертипажесимпл](../atl/reference/ispecifypropertypagesimpl-class.md) Получает идентификаторы CLSID для страниц свойств, поддерживаемых объектом.
 
-## <a name="related-articles"></a>Связанные статьи
+## <a name="related-articles"></a>Похожие статьи
 
 [Учебник по ATL](../atl/active-template-library-atl-tutorial.md)
 
-[Страницы свойств COM в ATL](../atl/atl-com-property-pages.md)
+[Страницы свойств ATL COM](../atl/atl-com-property-pages.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Общие сведения о классе](../atl/atl-class-overview.md)<br/>
-[Макросы сопоставления свойств](../atl/reference/property-map-macros.md)
+[Общие сведения о классах](../atl/atl-class-overview.md)<br/>
+[Макросы схемы свойств](../atl/reference/property-map-macros.md)
