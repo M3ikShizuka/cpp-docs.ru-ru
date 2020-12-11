@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Frame-Window классы'
 title: Классы окна фрейма
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - MDI [MFC], frame windows
 - classes [MFC], window
 ms.assetid: c27e43a7-8ad0-4759-b1b7-43f4725f4132
-ms.openlocfilehash: ffa5b966ee042120213896dc7ad9d81c048ef928
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 888fae71bef2dd2e30e10c645e78ab981a30c6af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625812"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154959"
 ---
 # <a name="frame-window-classes"></a>Классы окна фрейма
 
@@ -27,7 +28,7 @@ ms.locfileid: "84625812"
 
 Для приложения SDI существует одно окно фрейма, производное от класса [CFrameWnd](reference/cframewnd-class.md). Это окно является как основным, так и окном фрейма документа. Для приложения MDI основное окно фрейма является производным от класса [CMDIFrameWnd](reference/cmdiframewnd-class.md), а окна фрейма документа, которые являются дочерними окнами MDI, являются производными от класса [CMDIChildWnd](reference/cmdichildwnd-class.md).
 
-## <a name="use-the-frame-window-class-or-derive-from-it"></a>Используйте класс окна фрейма или производные от него
+## <a name="use-the-frame-window-class-or-derive-from-it"></a>Используйте класс Frame-Window или производный от него
 
 Эти классы предоставляют большую часть функциональных возможностей окна кадров, необходимых для приложений. При нормальных обстоятельствах поведение по умолчанию и внешний вид, которые они предоставляют, будут соответствовать вашим потребностям. Если требуются дополнительные функции, производные от этих классов.
 

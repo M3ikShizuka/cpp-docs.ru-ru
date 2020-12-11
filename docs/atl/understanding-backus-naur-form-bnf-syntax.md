@@ -1,18 +1,19 @@
 ---
+description: 'Подробнее: основные сведения о синтаксисе формы Backus-Naur Form (BNF)'
 title: Регистратор ATL и синтаксис формы Backus-Naur (BNF)
 ms.date: 05/14/2019
 helpviewer_keywords:
 - BNF notation
 - Backus-Naur form (BNF) syntax
 ms.assetid: 994bbef0-9077-4aa8-bdfe-b7e830af9acc
-ms.openlocfilehash: 0f07a39863b586d524d060dc3df7117e2c930b3e
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 7f392d442c4d43865faf9e788f8bf69288673398
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168713"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157351"
 ---
-# <a name="understanding-backus-naur-form-bnf-syntax"></a>Понимание синтаксиса формы Backus-Naur (BNF)
+# <a name="understanding-backus-naur-form-bnf-syntax"></a>Основные сведения о синтаксисе формы Бэкуса-Наура (BNF)
 
 В этом разделе описаны скрипты, используемые регистратором ATL с помощью синтаксиса BNF, который использует нотацию, как показано в следующей таблице.
 
@@ -32,11 +33,11 @@ ms.locfileid: "82168713"
 |**ForceRemove**|Полностью удаляет следующий ключ (если он существует), а затем повторно создает его.|
 |**NoRemove**|Не удаляет следующий ключ во время отмены регистрации.|
 |**Val**|Указывает, что `<Key Name>` является именованным значением.|
-|**Удаление**|Удаляет следующий ключ во время регистрации.|
-|**#d0**|Указывает, что следующее значение является строкой (REG_SZ).|
-|**четырехмерного**|Указывает, что следующее значение является DWORD (REG_DWORD).|
-|**Пн**|Указывает, что следующее значение является мультистрокой (REG_MULTI_SZ).|
-|**&**|Указывает, что следующее значение является двоичным значением (REG_BINARY).|
+|**Удалить**|Удаляет следующий ключ во время регистрации.|
+|**s**|Указывает, что следующее значение является строкой (REG_SZ).|
+|**d**|Указывает, что следующее значение является DWORD (REG_DWORD).|
+|**m**|Указывает, что следующее значение является мультистрокой (REG_MULTI_SZ).|
+|**b**|Указывает, что следующее значение является двоичным значением (REG_BINARY).|
 
 ## <a name="bnf-syntax-examples"></a>Примеры синтаксиса BNF
 
@@ -44,31 +45,31 @@ ms.locfileid: "82168713"
 
 ### <a name="syntax-example-1"></a>Пример синтаксиса 1
 
-> \<выражение реестра>:: = \<добавить ключ>
+> \<registry expression> ::= \<Add Key>
 
 указывает, что `registry expression` эквивалентен `Add Key`.
 
 ### <a name="syntax-example-2"></a>Пример синтаксиса 2
 
-> \<выражение реестра>:: = \<добавить ключ> | \<Удалить ключ>
+> \<registry expression> ::= \<Add Key> | \<Delete Key>
 
 указывает, что `registry expression` эквивалентен `Add Key` или `Delete Key`.
 
 ### <a name="syntax-example-3"></a>Пример синтаксиса 3
 
-> \<Имя ключа>:: = "\<буквенно-цифровой>+"
+> \<Key Name> ::= '\<AlphaNumeric>+'
 
-Указывает, `Key Name` что эквивалентно одному или нескольким `AlphaNumeric` значениям.
+Указывает, что `Key Name` эквивалентно одному или нескольким `AlphaNumeric` значениям.
 
 ### <a name="syntax-example-4"></a>Пример синтаксиса 4
 
-> \<Добавьте Key>:: = [**ForceRemove** | **Удаление** | **Val**]\<имя ключа>
+> \<Add Key>:: = [**ForceRemove**  |  **Удалить**  |  **Val**]\<Key Name>
 
 указывает, что `Add Key` эквивалентен `Key Name` и что строковые литералы, `ForceRemove`, `NoRemove` и `val`, являются необязательными.
 
 ### <a name="syntax-example-5"></a>Пример синтаксиса 5
 
-> \<Буквенно-цифровые>:: = *любой символ, не равный null, то есть ASCII 0*
+> \<AlphaNumeric> :: = *любой символ, не равный null, то есть ASCII 0*
 
 указывает, что `AlphaNumeric` является эквивалентом для любого ненулевого символа.
 
@@ -88,6 +89,6 @@ val 'testhex' = d '&H55'
 
 указывает, что имя ключа `testhex` — это значение DWORD, установленное на шестнадцатеричное значение 55 (десятичное значение 85). Обратите внимание, что этот формат соответствует нотации **&H**, описанной в спецификации Visual Basic.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Creating Registrar Scripts](../atl/creating-registrar-scripts.md)
+[Создание скриптов регистратора](../atl/creating-registrar-scripts.md)

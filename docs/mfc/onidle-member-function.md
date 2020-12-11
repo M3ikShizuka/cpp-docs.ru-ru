@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции члена OnIdle
 title: Функция-член OnIdle
 ms.date: 11/19/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - CWinApp class [MFC], OnIdle method [MFC]
 - message handling [MFC], OnIdle method [MFC]
 ms.assetid: 51adc874-0075-4f76-be1c-79283f46c10b
-ms.openlocfilehash: 17595713f942c7fe7784fa2a12adbcc583cad418
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a094b72f78db75d9f0f93ffa840d1d90cc96294c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619849"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97112262"
 ---
 # <a name="onidle-member-function"></a>Функция-член OnIdle
 
@@ -30,4 +31,4 @@ ms.locfileid: "84619849"
 
 ## <a name="see-also"></a>См. также раздел
 
-[CWinApp: класс приложений](cwinapp-the-application-class.md)
+[CWinApp: класс Application](cwinapp-the-application-class.md)

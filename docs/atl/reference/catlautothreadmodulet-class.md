@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Катлаутосреадмодулет Class'
 title: Класс Катлаутосреадмодулет
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlAutoThreadModuleT class
 ms.assetid: ae1667c6-3fb8-47bc-b35d-9ea5e9896d7f
-ms.openlocfilehash: 7308e3a51c531fbe942e2df326c03273eeb326e2
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: ad55c78488567c12477c427b99a527b8154ddd22
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168728"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158417"
 ---
 # <a name="catlautothreadmodulet-class"></a>Класс Катлаутосреадмодулет
 
@@ -42,15 +43,15 @@ class ATL_NO_VTABLE CAtlAutoThreadModuleT : public IAtlAutoThreadModule
 *двваит*<br/>
 Задает интервал времени ожидания в миллисекундах. Значение по умолчанию — INFINITE, что означает, что интервал времени ожидания метода никогда не истекает.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Катлаутосреадмодулет:: Жетдефаултсреадс](#getdefaultthreads)|Эта статическая функция динамически вычисляет и возвращает максимальное количество потоков для модуля EXE в зависимости от числа процессоров.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Класс [катлаутосреадмодуле](../../atl/reference/catlautothreadmodule-class.md) является производным от `CAtlAutoThreadModuleT` , чтобы реализовать COM-сервер модели подразделения в пуле потоков. Он заменяет устаревший класс [ккомаутосреадмодуле](../../atl/reference/ccomautothreadmodule-class.md).
 
@@ -67,7 +68,7 @@ class ATL_NO_VTABLE CAtlAutoThreadModuleT : public IAtlAutoThreadModule
 
 **Заголовок:** atlbase. h
 
-## <a name="catlautothreadmoduletgetdefaultthreads"></a><a name="getdefaultthreads"></a>Катлаутосреадмодулет:: Жетдефаултсреадс
+## <a name="catlautothreadmoduletgetdefaultthreads"></a><a name="getdefaultthreads"></a> Катлаутосреадмодулет:: Жетдефаултсреадс
 
 Эта статическая функция динамически вычисляет и возвращает максимальное количество потоков для модуля EXE в зависимости от числа процессоров.
 
@@ -79,11 +80,11 @@ static int GetDefaultThreads();
 
 Число потоков, создаваемых в модуле EXE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод, если вы хотите использовать другой метод для вычисления числа потоков. По умолчанию количество потоков зависит от количества процессоров.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Класс Иатлаутосреадмодуле](../../atl/reference/iatlautothreadmodule-class.md)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)<br/>

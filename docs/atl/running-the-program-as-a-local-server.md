@@ -1,21 +1,22 @@
 ---
-title: Запуск программы как локального сервера
+description: Дополнительные сведения о запуске программы в качестве локального сервера
+title: Запуск программы в качестве локального сервера
 ms.date: 11/04/2016
 helpviewer_keywords:
 - debugging [ATL], running services as local server
 - ATL services, running as local servers
 ms.assetid: eb9701e6-e2a8-4666-897f-0c893aec8ac7
-ms.openlocfilehash: a412814fc5f3900a248f779501e2720b72287e57
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1cdf3cef0773769318d68964b28bb60ca66666d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62196526"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157495"
 ---
-# <a name="running-the-program-as-a-local-server"></a>Запуск программы как локального сервера
+# <a name="running-the-program-as-a-local-server"></a>Запуск программы в качестве локального сервера
 
-Если неудобно, выполнение программы в качестве службы, можно временно изменить реестр так, что программа запускается как обычный локального сервера. Просто переименуйте `LocalService` значения в разделе вашей AppID для `_LocalService` и убедитесь, `LocalServer32` раздела вашего CLSID задано правильно. (Обратите внимание, что с помощью DCOMCNFG, чтобы указать, что приложения должны выполняться на другом компьютере переименовывает вашей `LocalServer32` ключа `_LocalServer32`.) Запустить программу, так как локальный сервер занимает несколько секунд при запуске, так как вызов `StartServiceCtrlDispatcher` в `CAtlServiceModuleT::Start` занимает несколько секунд, прежде чем он завершится ошибкой.
+Если запуск программы в качестве службы неудобен, можно временно изменить реестр таким образом, чтобы программа выполнялась как нормальный локальный сервер. Просто переименуйте `LocalService` значение под идентификатором AppID `_LocalService` и убедитесь, что `LocalServer32` ключ в идентификаторе CLSID задан правильно. (Обратите внимание, что использование DCOMCNFG позволяет указать, что приложение должно запускаться на другом компьютере `LocalServer32` `_LocalServer32` .) Запуск программы в качестве локального сервера занимает несколько секунд при запуске, так как вызов `StartServiceCtrlDispatcher` в в `CAtlServiceModuleT::Start` течение нескольких секунд завершается сбоем.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Советы по отладке](../atl/debugging-tips.md)

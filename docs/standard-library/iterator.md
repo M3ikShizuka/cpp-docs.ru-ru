@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о &lt; итераторе&gt;
 title: '&lt;iterator&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - iterator header
 ms.assetid: c61a3962-f3ed-411a-b5a3-e8b3c2b500bd
-ms.openlocfilehash: 08e2051db70ee1891c7b60860c7ea0b423855be5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9c40d46c5cde45baa66c8173d2b6d8f0186d1bc9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841926"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97112067"
 ---
 # <a name="ltiteratorgt"></a>&lt;iterator&gt;
 
@@ -24,7 +25,7 @@ ms.locfileid: "88841926"
 
 **Пространство имен:** std
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Итераторы представляют собой обобщение указателей, которое абстрагируется от их требований способом, предоставляющим программе C++ возможность применять однородные принципы обработки к разным структурам данных. Итераторы используются в качестве посредников между контейнерами и универсальными алгоритмами. Алгоритмы применяются не к определенным типам данных, а к диапазону, указанному типом итератора. К любой структуре данных, удовлетворяющей требованиям итератора, может применяться алгоритм. Существует пять типов, или категорий итераторов, каждая из которых обладает отдельным набором требований и соответствующими функциями:
 
@@ -42,7 +43,7 @@ ms.locfileid: "88841926"
 
 Visual Studio добавляет расширения к итераторам стандартной библиотеки C++, чтобы обеспечить поддержку различных ситуаций режима отладки для проверенных и непроверенных итераторов. Дополнительные сведения см. в разделе [Безопасные библиотеки: стандартная библиотека C++](../standard-library/safe-libraries-cpp-standard-library.md).
 
-## <a name="members"></a>Элементы
+## <a name="members"></a>Члены
 
 ### <a name="functions"></a>Функции
 
@@ -57,7 +58,7 @@ Visual Studio добавляет расширения к итераторам с
 |[crend](../standard-library/iterator-functions.md#crend)||
 |[data](../standard-library/iterator-functions.md#data)||
 |[distance](../standard-library/iterator-functions.md#distance)|Указывает количество приращений между позициями, которые адресуют два итератора.|
-|[конце](../standard-library/iterator-functions.md#end)|Извлекает итератор для элемента, следующего за последним элементом в указанном контейнере.|
+|[end](../standard-library/iterator-functions.md#end)|Извлекает итератор для элемента, следующего за последним элементом в указанном контейнере.|
 |[empty](../standard-library/iterator-functions.md#empty)||
 |[front_inserter](../standard-library/iterator-functions.md#front_inserter)|Создает итератор, может вставлять элементы с передней стороны указанного контейнера.|
 |[фрагментов](../standard-library/iterator-functions.md#inserter)|Адаптер итератора, добавляющий в контейнер новый элемент в указанной позиции.|
@@ -96,7 +97,7 @@ Visual Studio добавляет расширения к итераторам с
 |[insert_iterator](../standard-library/insert-iterator-class.md)|Шаблон класса описывает объект итератора вывода. Он вставляет элементы в контейнер типа `Container` , к которому он обращается через защищенный объект, который `pointer` хранится под названием Container. Он также хранит защищенный `iterator` объект класса с `Container::iterator` именем `iter` .|
 |[istream_iterator](../standard-library/istream-iterator-class.md)|Шаблон класса описывает объект итератора ввода. Он извлекает объекты класса `Ty` из входного потока, к которому он обращается через сохраненный объект, типа pointer `basic_istream` \<**Elem**, **Tr**> .|
 |[istreambuf_iterator](../standard-library/istreambuf-iterator-class.md)|Шаблон класса описывает объект итератора ввода. Он вставляет элементы класса `Elem` в буфер потока вывода, к которому он обращается через хранящийся в нем объект типа `pointer` `basic_streambuf` \<**Elem**, **Tr**> .|
-|[итераци](../standard-library/iterator-struct.md)|Шаблон класса используется в качестве базового типа для всех итераторов.|
+|[iterator](../standard-library/iterator-struct.md)|Шаблон класса используется в качестве базового типа для всех итераторов.|
 |[iterator_traits](../standard-library/iterator-traits-struct.md)|Вспомогательный класс шаблона, предоставляющий критические типы, связанные с разными типами итераторов, на которые они могут ссылаться аналогичным образом.|
 |[move_iterator](../standard-library/move-iterator-class.md)|Объект `move_iterator` содержит итератор произвольного доступа типа `RandomIterator`. Его поведение аналогично поведению итератора произвольного доступа, кроме случаев отмены ссылки. Результат `operator*` неявно приводится к `value_type&&:`, чтобы обеспечить `rvalue reference`.|
 |[ostream_iterator](../standard-library/ostream-iterator-class.md)|Шаблон класса описывает объект итератора вывода. Он вставляет объекты класса `Type` в выходной поток, к которому он обращается через хранящийся в нем объект, с типом `pointer` `basic_ostream` \<**Elem**, **Tr**> .|

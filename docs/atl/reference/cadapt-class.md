@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кадапт Class'
 title: Класс Кадапт
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - '& operator, address-of operator'
 - CAdapt class
 ms.assetid: 0bb695a5-72fe-43d1-8f39-7e4da6e34765
-ms.openlocfilehash: 2ea8fc8a26642abf593c7f4df3928ff90e66e2b3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6c6ec1c40d430c2de64defb5ea7394a47b1d7a6f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230004"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158508"
 ---
 # <a name="cadapt-class"></a>Класс Кадапт
 
@@ -59,11 +60,11 @@ class CAdapt
 |----------|-----------------|
 |[Кадапт:: m_T](#m_t)|Адаптируемые данные.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `CAdapt` представляет собой простой шаблон, который используется для создания оболочек классов, переопределяющих оператор взятия адреса (`operator &`), чтобы он возвращал нечто, отличное от адреса объекта. Примерами таких классов являются классы ATL `CComBSTR`, `CComPtr` и `CComQIPtr`, а также класс поддержки COM компилятора `_com_ptr_t`. Эти классы переопределяют оператор взятия адреса для получения адреса одного из их членов данных (BSTR в случае `CComBSTR` , и указателя интерфейса в случае других классов).
 
-`CAdapt`Основная роль заключается в скрытии оператора взятия адреса, определенного классом *T*, но сохраняя характеристики адаптированного класса. `CAdapt`выполняет эту роль, сохраняя открытый член, [m_T](#m_t), типа *T*и определяя операторы преобразования, операторы сравнения и конструктор копии, чтобы разрешить обрабатывать специализации `CAdapt` так, как если бы они были объектами типа *T*.
+`CAdapt`Основная роль заключается в скрытии оператора взятия адреса, определенного классом *T*, но сохраняя характеристики адаптированного класса. `CAdapt` выполняет эту роль, сохраняя открытый член, [m_T](#m_t), типа *T* и определяя операторы преобразования, операторы сравнения и конструктор копии, чтобы разрешить обрабатывать специализации `CAdapt` так, как если бы они были объектами типа *T*.
 
 Класс адаптера `CAdapt` полезен, поскольку для некоторых классов стиля контейнера ожидается, что они могут получать адреса содержащихся в них объектов с помощью оператора взятия адреса. Переопределение оператора взятия адреса может нарушать это требование, поскольку обычно вызывает ошибки компиляции и не позволяет использовать неадаптированный тип с классами, которые ожидают, что он "просто будет работать". `CAdapt` предоставляет способ обойти эти проблемы.
 
@@ -73,7 +74,7 @@ class CAdapt
 
 **Заголовок:** atlcomcli. h
 
-## <a name="cadaptcadapt"></a><a name="cadapt"></a>Кадапт:: Кадапт
+## <a name="cadaptcadapt"></a><a name="cadapt"></a> Кадапт:: Кадапт
 
 Конструкторы позволяют формировать объект адаптера по умолчанию, копировать из объекта адаптированного типа или копировать из другого объекта адаптера.
 
@@ -93,7 +94,7 @@ CAdapt(CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 *рсрка*<br/>
 Объект адаптера, содержащие данные которого должны быть скопированы (или перемещены) в созданный объект адаптера.
 
-## <a name="cadaptm_t"></a><a name="m_t"></a>Кадапт:: m_T
+## <a name="cadaptm_t"></a><a name="m_t"></a> Кадапт:: m_T
 
 Содержит данные, которые адаптируются.
 
@@ -101,11 +102,11 @@ CAdapt(CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 T m_T;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **`public`** Доступ к этому члену данных можно получить напрямую или косвенно с помощью [оператора const t&](#operator_const_t_amp) и [оператора t&](#operator_t_amp).
 
-## <a name="cadaptoperator-const-tamp"></a><a name="operator_const_t_amp"></a>Кадапт:: operator const T&amp;
+## <a name="cadaptoperator-const-tamp"></a><a name="operator_const_t_amp"></a> Кадапт:: operator const T&amp;
 
 Возвращает **`const`** ссылку на элемент [m_T](#m_t) , позволяя обрабатывать объект адаптера так, как будто он был объектом типа *T*.
 
@@ -117,7 +118,7 @@ operator const T&() const;
 
 **`const`** Ссылка на `m_T` .
 
-## <a name="cadaptoperator-tamp"></a><a name="operator_t_amp"></a>Кадапт:: operator T&amp;
+## <a name="cadaptoperator-tamp"></a><a name="operator_t_amp"></a> Кадапт:: operator T&amp;
 
 Возвращает ссылку на элемент [m_T](#m_t) , позволяя обрабатывать объект адаптера так, как будто он был объектом типа *T*.
 
@@ -129,7 +130,7 @@ operator T&();
 
 Ссылка на идентификатор `m_T`.
 
-## <a name="cadaptoperator-lt"></a><a name="operator_lt"></a>Кадапт:: operator&lt;
+## <a name="cadaptoperator-lt"></a><a name="operator_lt"></a> Кадапт:: operator &lt;
 
 Сравнивает объект адаптированного типа с [m_T](#m_t).
 
@@ -146,9 +147,9 @@ bool operator<(const T& rSrc) const;
 
 Результат сравнения между `m_T` и *rsrc*.
 
-## <a name="cadaptoperator-"></a><a name="operator_eq"></a>Кадапт:: operator =
+## <a name="cadaptoperator-"></a><a name="operator_eq"></a> Кадапт:: operator =
 
-Оператор присваивания присваивает аргумент *rsrc*элементу данных, [m_T](#m_t) и возвращает текущий объект адаптера.
+Оператор присваивания присваивает аргумент *rsrc* элементу данных, [m_T](#m_t) и возвращает текущий объект адаптера.
 
 ```cpp
 CAdapt& operator= (const T& rSrc);
@@ -168,7 +169,7 @@ CAdapt& operator= (CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 
 Ссылка на текущий объект.
 
-## <a name="cadaptoperator-"></a><a name="operator_eq_eq"></a>Кадапт:: operator = =
+## <a name="cadaptoperator-"></a><a name="operator_eq_eq"></a> Кадапт:: operator = =
 
 Сравнивает объект адаптированного типа с [m_T](#m_t).
 

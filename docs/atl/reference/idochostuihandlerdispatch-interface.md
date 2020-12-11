@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Идочостуихандлердиспатч'
 title: Интерфейс Идочостуихандлердиспатч
 ms.date: 07/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - IDocHostUIHandlerDispatch interface
 ms.assetid: 6963a301-601a-4ac3-8bef-f7b252ea2fc6
-ms.openlocfilehash: 4d80934a5768eda917c90345ddeeff017edf0eae
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 59f9975f48a7ae63d5820a9c05f9baa49b8a5f25
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835445"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158378"
 ---
 # <a name="idochostuihandlerdispatch-interface"></a>Интерфейс Идочостуихандлердиспатч
 
@@ -27,7 +28,7 @@ ms.locfileid: "88835445"
 interface IDocHostUIHandlerDispatch : IDispatch
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
@@ -52,7 +53,7 @@ interface IDocHostUIHandlerDispatch : IDispatch
 |[транслатеурл](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\))|Вызывается MSHTML, чтобы разрешить узлу изменять URL-адрес для загрузки.|
 |[упдатеуи](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753268\(v=vs.85\))|Уведомляет основное приложение об изменении состояния команды.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Узел может заменить меню, панели инструментов и контекстные меню, используемые модулем синтаксического анализа и визуализации Microsoft HTML (MSHTML), путем реализации этого интерфейса.
 

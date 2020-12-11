@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: OLE Background: компоновка и внедрение'
 title: Поддержка OLE. Связь и внедрение
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - embedded objects [MFC]
 - OLE items [MFC], types
 ms.assetid: 11107711-eb96-4099-8f5c-7910bb3ecb75
-ms.openlocfilehash: 6b6032d2e772728495d4ddb1dbfaa5daf7348b60
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 05bd51c11cadfc3220f23db9098db9f07703a814
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619889"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97112223"
 ---
 # <a name="ole-background-linking-and-embedding"></a>Поддержка OLE. Связь и внедрение
 
@@ -29,7 +30,7 @@ OLE предоставляет другой способ внедрения да
 
 ## <a name="see-also"></a>См. также раздел
 
-[Поддержка OLE](ole-background.md)<br/>
-[Поддержка OLE. Контейнеры и серверы](ole-background-containers-and-servers.md)<br/>
-[Контейнеры. Элементы клиентов](containers-client-items.md)<br/>
-[Серверы. Элементы сервера](servers-server-items.md)
+[Фон OLE](ole-background.md)<br/>
+[Фон OLE: контейнеры и серверы](ole-background-containers-and-servers.md)<br/>
+[Контейнеры: клиентские элементы](containers-client-items.md)<br/>
+[Серверы: элементы сервера](servers-server-items.md)

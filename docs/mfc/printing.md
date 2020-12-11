@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: печать'
 title: Печать
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - printing [MFC], from framework
 - printing [MFC]
 ms.assetid: be465e8d-b0c9-4fc5-9fa8-d10486064f76
-ms.openlocfilehash: 3d2ef494be66171cbcbf2b8b9e19c29c8bdc5c2f
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 0cb4455b2de27d7b609226099b00a37dc8175db6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619805"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154868"
 ---
 # <a name="printing"></a>Печать
 
 Microsoft Windows реализует аппаратно-независимые дисплеи. В MFC это означает, что одни и те же вызовы рисования в `OnDraw` функции члена класса представления отвечают за рисование на экране и на других устройствах, таких как принтеры. Для предварительного просмотра конечным устройством выводится имитация вывода на печать.
 
-## <a name="your-role-in-printing-vs-the-frameworks-role"></a><a name="_core_your_role_in_printing_vs.._the_framework.92.s_role"></a>Роль в печати и роли платформы
+## <a name="your-role-in-printing-vs-the-frameworks-role"></a><a name="_core_your_role_in_printing_vs.._the_framework.92.s_role"></a> Роль в печати и роли платформы
 
 Класс представления имеет следующие обязанности:
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: маршалирование глобальных функций'
 title: Маршалирование глобальных функций
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 - atlbase/ATL::AtlMarshalPtrInProc
 - atlbase/ATL::AtlUnmarshalPtr
 ms.assetid: 877100b5-6ad9-44c5-a2e0-09414f1720d0
-ms.openlocfilehash: 79b19b613fbae49c0f8338dcadd2225e092fb371
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5652ccf89090ba1d0f00c03472e29da9158b781e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835328"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157949"
 ---
 # <a name="marshaling-global-functions"></a>Маршалирование глобальных функций
 
@@ -73,7 +74,7 @@ HRESULT AtlMarshalPtrInProc(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Флаг MSHLFLAGS_TABLESTRONG установлен таким образом, чтобы можно было маршалировать указатель на несколько потоков. Указатель также можно распаковать несколько раз.
 

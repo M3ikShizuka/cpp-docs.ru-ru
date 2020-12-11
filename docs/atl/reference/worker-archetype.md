@@ -1,60 +1,61 @@
 ---
-title: Рабочий архетип
+description: 'Дополнительные сведения: Worker архетипа'
+title: Архетипа рабочей роли
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Worker archetype
 ms.assetid: 834145cd-09d3-4149-bc99-620e1871cbfb
-ms.openlocfilehash: c9ed9b30b94a8debe133bc213c12063750bfb15a
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 8cb8c2b281bbdc074bb700b77a856f4d26c26cf6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81747342"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157572"
 ---
-# <a name="worker-archetype"></a>Рабочий архетип
+# <a name="worker-archetype"></a>Архетипа рабочей роли
 
-Классы, соответствующие архетипу *рабочего,* предоставляют код для обработки рабочих элементов, выстраиваемых в очередь в пуле потоков.
+Классы, которые соответствуют *рабочей* архетипа, предоставляют код для обработки рабочих элементов, помещенных в очередь пула потоков.
 
 **Реализация**
 
-Для реализации класса, соответствующего этому архетипу, класс должен предоставить следующие функции:
+Чтобы реализовать класс, который соответствует этому архетипа, класс должен предоставить следующие возможности:
 
 |Метод|Описание|
 |------------|-----------------|
-|[Initialize](#initialize)|Вызывается для инициализации объекта работника до того, как любые запросы будут переданы в [выполнение.](#execute)|
+|[Инициализация](#initialize)|Вызывается для инициализации рабочего объекта перед передачей [выполнения](#execute)любых запросов.|
 |[Execute](#execute)|Вызывается для обработки рабочего элемента.|
-|[Завершить](#terminate)|Вызывается для отсоединения объекта работы после того, как все запросы были переданы для [выполнения.](#execute)|
+|[Завершение](#terminate)|Вызывается для деинициализации рабочего объекта после того, как все запросы были переданы для [выполнения](#execute).|
 
 |Typedef|Описание|
 |-------------|-----------------|
-|[ЗапросType](#requesttype)|Typedef для типа рабочего элемента, который может быть обработан классом работника.|
+|[RequestType](#requesttype)|Определение типа рабочего элемента, которое может быть обработано рабочим классом.|
 
-Типичный класс *работников* выглядит следующим образом:
+Типичный *Рабочий* класс выглядит следующим образом:
 
 [!code-cpp[NVC_ATL_Utilities#137](../../atl/codesnippet/cpp/worker-archetype_1.cpp)]
 
 **Существующие реализации**
 
-Эти классы соответствуют этому архетипу:
+Эти классы соответствуют этому архетипа:
 
-|Class|Описание|
+|Класс|Описание|
 |-----------|-----------------|
-|[CNonStatelessWorker](../../atl/reference/cnonstatelessworker-class.md)|Получает запросы из пула потоков и передает их объекту рабочего, который создается и уничтожается для каждого запроса.|
+|[кнонстателессворкер](../../atl/reference/cnonstatelessworker-class.md)|Получает запросы из пула потоков и передает их в рабочий объект, который создается и уничтожается для каждого запроса.|
 
-**Использовать**
+**Использование**
 
-Эти параметры шаблона ожидают, что класс будет соответствовать этому архетипу:
+Эти параметры шаблона предполагают, что класс должен соответствовать этому архетипа:
 
 |Имя параметра|Где используется|
 |--------------------|-------------|
-|*Работник*|[CThreadPool](../../atl/reference/cthreadpool-class.md)|
-|*Работник*|[CNonStatelessWorker](../../atl/reference/cnonstatelessworker-class.md)|
+|*Рабочий узел*|[CThreadPool](../../atl/reference/cthreadpool-class.md)|
+|*Рабочий узел*|[кнонстателессворкер](../../atl/reference/cnonstatelessworker-class.md)|
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlutil.h
+**Заголовок:** файлов atlutil. h
 
-## <a name="workerarchetypeexecute"></a><a name="execute"></a>РабочийАрхетип::Выполнение
+## <a name="workerarchetypeexecute"></a><a name="execute"></a> Воркерарчетипе:: Execute
 
 Вызывается для обработки рабочего элемента.
 
@@ -68,17 +69,17 @@ void Execute(
 #### <a name="parameters"></a>Параметры
 
 *request*<br/>
-Рабочий элемент, который будет обработан. Элемент работы имеет тот `RequestType`же тип, что и .
+Рабочий элемент для обработки. Рабочий элемент имеет тот же тип, что и `RequestType` .
 
-*pvWorkerParam*<br/>
-Пользовательский параметр, понятный классу рабочих. Также перешли `WorkerArchetype::Initialize` `Terminate`к и .
+*пвворкерпарам*<br/>
+Пользовательский параметр, понятный рабочему классу. Также передается в `WorkerArchetype::Initialize` и `Terminate` .
 
-*pOverlapped*<br/>
-Указатель на структуру [OVERLAPPED,](/windows/win32/api/minwinbase/ns-minwinbase-overlapped) используемый для создания очереди, в которой стояли рабочие элементы в очереди.
+*поверлаппед*<br/>
+Указатель на структуру [OVERLAPPED](/windows/win32/api/minwinbase/ns-minwinbase-overlapped) , используемую для создания очереди, в которой были поставлены рабочие элементы.
 
-## <a name="workerarchetypeinitialize"></a><a name="initialize"></a>РабочийАрхетип::Инициализация
+## <a name="workerarchetypeinitialize"></a><a name="initialize"></a> Воркерарчетипе:: Initialize
 
-Вызывается для инициализации объекта `WorkerArchetype::Execute`работника до того, как будут переданы запросы.
+Вызывается для инициализации рабочего объекта перед передачей запросов `WorkerArchetype::Execute` .
 
 ```
 BOOL Initialize(void* pvParam) throw();
@@ -86,28 +87,28 @@ BOOL Initialize(void* pvParam) throw();
 
 #### <a name="parameters"></a>Параметры
 
-*pvParam*<br/>
-Пользовательский параметр, понятный классу рабочих. Также перешли `WorkerArchetype::Terminate` `WorkerArchetype::Execute`к и .
+*пвпарам*<br/>
+Пользовательский параметр, понятный рабочему классу. Также передается в `WorkerArchetype::Terminate` и `WorkerArchetype::Execute` .
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Вернуться TRUE на успех, FALSE на провал.
+Возврат значения TRUE при успешном выполнении, FALSE при сбое.
 
-## <a name="workerarchetyperequesttype"></a><a name="requesttype"></a>РабочийАрхетип:ЗапросТип
+## <a name="workerarchetyperequesttype"></a><a name="requesttype"></a> Воркерарчетипе:: RequestType
 
-Typedef для типа рабочего элемента, который может быть обработан классом работника.
+Определение типа рабочего элемента, которое может быть обработано рабочим классом.
 
 ```
 typedef MyRequestType RequestType;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот тип должен использоваться в `WorkerArchetype::Execute` качестве первого параметра и должен быть способен быть отлиты в и из ULONG_PTR.
+Этот тип должен использоваться в качестве первого параметра `WorkerArchetype::Execute` и должен поддерживать приведение к ULONG_PTR и из него.
 
-## <a name="workerarchetypeterminate"></a><a name="terminate"></a>РабочийАрхетип::Прекращение
+## <a name="workerarchetypeterminate"></a><a name="terminate"></a> Воркерарчетипе:: Terminate
 
-Вызывается для отunимитивизации объекта `WorkerArchetype::Execute`работника после того, как все запросы были переданы).
+Вызывается для деинициализации рабочего объекта после передачи всех запросов в `WorkerArchetype::Execute` ).
 
 ```cpp
 void Terminate(void* pvParam) throw();
@@ -115,8 +116,8 @@ void Terminate(void* pvParam) throw();
 
 #### <a name="parameters"></a>Параметры
 
-*pvParam*<br/>
-Пользовательский параметр, понятный классу рабочих. Также перешли `WorkerArchetype::Initialize` `WorkerArchetype::Execute`к и .
+*пвпарам*<br/>
+Пользовательский параметр, понятный рабочему классу. Также передается в `WorkerArchetype::Initialize` и `WorkerArchetype::Execute` .
 
 ## <a name="see-also"></a>См. также раздел
 

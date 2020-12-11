@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье поддержка MFC в проектах ATL.
 title: Поддержка MFC в проектах ATL
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - ATL projects, MFC support
 ms.assetid: f90b4276-cb98-4c11-902c-9ebcfe6f954b
-ms.openlocfilehash: 0aece6805f1de987b0164f405e50b99fd706fef4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8614bfdd5320e0ecdf34cc96251fa8a20f2dede9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62275429"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157923"
 ---
 # <a name="mfc-support-in-atl-projects"></a>Поддержка MFC в проектах ATL
 
-При выборе **поддержки MFC** в мастер проектов ATL, проект объявляет приложение как объект приложения MFC (класс). Проект инициализирует библиотеку MFC и создает класс (класс *ProjName*), производный от [CWinApp](../../mfc/reference/cwinapp-class.md).
+При выборе **поддержки MFC** в мастере проектов ATL проект объявляет приложение как объект приложения MFC (класс). Проект инициализирует библиотеку MFC и создает экземпляр класса (класс *ProjName*), производный от [CWinApp](../../mfc/reference/cwinapp-class.md).
 
-Этот параметр доступен без атрибутов ATL DLL только для проектов.
+Этот параметр доступен только для проектов ATL DLL без атрибутов.
 
 ```
 class CProjNameApp : public CWinApp
@@ -48,9 +49,9 @@ int CProjNameApp::ExitInstance()
 }
 ```
 
-Можно просмотреть класс объекта приложения и его `InitInstance` и `ExitInstance` функций в представлении классов.
+Можно просмотреть класс объекта приложения и его `InitInstance` `ExitInstance` функции и в представление классов.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Добавление класса](../../ide/adding-a-class-visual-cpp.md)<br/>
 [Создание проекта ATL](../../atl/reference/creating-an-atl-project.md)<br/>

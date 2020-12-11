@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: использование CTreeCtrl'
 title: Использование CTreeCtrl
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CTreeCtrl class [MFC], about CTreeCtrl
 - tree controls [MFC], using
 ms.assetid: 6a262f2c-3540-43e5-b03f-e4b6f9cb0325
-ms.openlocfilehash: 443ad948e7d48eaefbb74165a0072966b22439b9
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 3a8c3b9b9365faf5f2d0e4b100a1239311c5d57d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79442189"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154582"
 ---
 # <a name="using-ctreectrl"></a>Использование CTreeCtrl
 
@@ -18,33 +19,33 @@ ms.locfileid: "79442189"
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Что вы хотите узнать подробнее
 
-- [CTreeCtrl и CTreeView](../mfc/ctreectrl-vs-ctreeview.md)
+- [CTreeCtrl или CTreeView](../mfc/ctreectrl-vs-ctreeview.md)
 
-- [Использование элементов управления древовидного типа](../mfc/using-tree-controls.md)
+- [Использование элементов управления "дерево"](../mfc/using-tree-controls.md)
 
-- [Установка связи с древовидным элементом управления](../mfc/communicating-with-a-tree-control.md)
+- [Взаимодействие с элементом управления "дерево"](../mfc/communicating-with-a-tree-control.md)
 
-- [Стили древовидного элемента управления](../mfc/tree-control-styles.md)
+- [Стили элемента управления "дерево"](../mfc/tree-control-styles.md)
 
-- [Родительские и дочерние элементы древовидного элемента управления](../mfc/tree-control-parent-and-child-items.md)
+- [Родительский и дочерний элементы элемента управления "дерево"](../mfc/tree-control-parent-and-child-items.md)
 
-- [Положение элемента древовидного элемента управления](../mfc/tree-control-item-position.md)
+- [Позиция элемента управления дерева](../mfc/tree-control-item-position.md)
 
-- [Метки элементов древовидного элемента управления](../mfc/tree-control-item-labels.md)
+- [Метки элементов управления дерева](../mfc/tree-control-item-labels.md)
 
-- [Редактирование меток древовидного элемента управления](../mfc/tree-control-label-editing.md)
+- [Изменение метки элемента управления деревом](../mfc/tree-control-label-editing.md)
 
-- [Общие сведения о состояниях элемента древовидного элемента управления](../mfc/tree-control-item-states-overview.md)
+- [Общие сведения о состояниях элементов управления дерева](../mfc/tree-control-item-states-overview.md)
 
-- [Списки изображений древовидного элемента управления](../mfc/tree-control-image-lists.md)
+- [Списки древовидных изображений элементов управления](../mfc/tree-control-image-lists.md)
 
-- [Выбор элемента древовидного элемента управления](../mfc/tree-control-item-selection.md)
+- [Выбор элемента элемента управления "дерево"](../mfc/tree-control-item-selection.md)
 
-- [Операции перетаскивания древовидного элемента управления](../mfc/tree-control-drag-and-drop-operations.md)
+- [Операции перетаскивания элементов дерева](../mfc/tree-control-drag-and-drop-operations.md)
 
-- [Сведения об элементе древовидного элемента управления](../mfc/tree-control-item-information.md)
+- [Сведения об элементе управления "дерево"](../mfc/tree-control-item-information.md)
 
-- [Уведомляющие сообщения древовидного элемента управления](../mfc/tree-control-notification-messages.md)
+- [Сообщения с уведомлениями элемента управления деревом](../mfc/tree-control-notification-messages.md)
 
 ## <a name="see-also"></a>См. также раздел
 

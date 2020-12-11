@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Иворкерсреадклиент'
 title: Интерфейс Иворкерсреадклиент
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - IWorkerThreadClient interface
 ms.assetid: 56f4a2f5-007e-4a33-9e20-05187629f715
-ms.openlocfilehash: aa72f090a006d6936339582a919b0faf5cab6b03
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fb9113c9380453dad9f647fa2f5a2095ff12cea7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835354"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157988"
 ---
 # <a name="iworkerthreadclient-interface"></a>Интерфейс Иворкерсреадклиент
 
@@ -29,7 +30,7 @@ ms.locfileid: "88835354"
 __interface IWorkerThreadClient
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="methods"></a>Методы
 
@@ -38,7 +39,7 @@ __interface IWorkerThreadClient
 |[CloseHandle](#closehandle)|Реализуйте этот метод, чтобы закрыть маркер, связанный с этим объектом.|
 |[Execute](#execute)|Реализуйте этот метод для выполнения кода, когда дескриптор, связанный с этим объектом, получает сигнал.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Реализуйте этот интерфейс, если у вас есть код, который должен выполняться в рабочем потоке в ответ на то, что дескриптор становится сигнальным.
 
@@ -63,7 +64,7 @@ HRESULT CloseHandle(HANDLE  hHandle);
 
 Возвращает S_OK об успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Маркер, переданный этому методу, был ранее связан с этим объектом посредством вызова [кворкерсреад:: аддхандле](../../atl/reference/cworkerthread-class.md#addhandle).
 
@@ -93,7 +94,7 @@ HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
 
 Возвращает S_OK об успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Маркер и DWORD или указатель, переданный этому методу, ранее были связаны с этим объектом посредством вызова [кворкерсреад:: аддхандле](../../atl/reference/cworkerthread-class.md#addhandle).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: кпринтф'
 title: cprintf
 ms.date: 12/16/2019
 api_name:
@@ -23,16 +24,16 @@ f1_keywords:
 helpviewer_keywords:
 - cprintf function
 ms.assetid: 573e6634-d7e5-4856-8c01-627dcfbd5fc8
-ms.openlocfilehash: 1f61043b1cf59ad31107bcfc333338a7493767cf
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: c42a02afaaa820e58f32b251ad760cf3bee825ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75299901"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155908"
 ---
 # <a name="cprintf"></a>cprintf
 
-Имя функции, определяемой корпорацией Майкрософт `cprintf`, является устаревшим псевдонимом для функции [_cprintf](cprintf-cprintf-l-cwprintf-cwprintf-l.md) . По умолчанию он создает [Предупреждение компилятора (уровень 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). Имя является устаревшим, так как оно не соответствует стандартным правилам C для имен, зависящих от реализации. Однако функция по-прежнему поддерживается.
+Имя функции, определяемой корпорацией Майкрософт, `cprintf` является устаревшим псевдонимом для функции [_cprintf](cprintf-cprintf-l-cwprintf-cwprintf-l.md) . По умолчанию он создает [Предупреждение компилятора (уровень 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). Имя является устаревшим, так как оно не соответствует стандартным правилам C для имен, зависящих от реализации. Однако функция по-прежнему поддерживается.
 
 Вместо этого рекомендуется использовать функцию [_cprintf](cprintf-cprintf-l-cwprintf-cwprintf-l.md) или повышенную безопасность [_cprintf_s](cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md) . Вы также можете продолжить использовать это имя функции и отключить предупреждение. Дополнительные сведения см. [в разделе Отключение](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) [имен функций](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)Warning и POSIX.
 

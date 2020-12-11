@@ -1,13 +1,14 @@
 ---
-title: Список примеров документов и представлений
+description: 'Дополнительные сведения: список образцов документов и представлений'
+title: Document-View список примеров
 ms.date: 11/04/2016
 ms.assetid: 6f087ce8-2f46-433c-b674-4c110743b289
-ms.openlocfilehash: 89098381e20e91d3e1653d01a4f4ee749442cd0d
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: da7eb7f46c9921ab6a784efedd107e666afa47db
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624747"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155076"
 ---
 # <a name="documentview-sample-list"></a>Список примеров документов и представлений
 
@@ -15,7 +16,7 @@ ms.locfileid: "84624747"
 
 *Варианты документов и представлений*
 
-- [ИНТЕРФЕЙСА](../overview/visual-cpp-samples.md)
+- [MDI](../overview/visual-cpp-samples.md)
 
 - [SCRIBBLE](../overview/visual-cpp-samples.md)
 

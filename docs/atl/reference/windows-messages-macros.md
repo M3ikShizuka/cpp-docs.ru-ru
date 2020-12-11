@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: макросы сообщений Windows'
 title: Макросы сообщений Windows
 ms.date: 11/04/2016
 f1_keywords:
 - atlbase/ATL::WM_FORWARDMSG
 ms.assetid: 63abd22c-372d-4148-bb04-c605950ae64f
-ms.openlocfilehash: b4cd3c2eea24449eb17050b147d9c59560d8358f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: be5913c5eaa88ca0020a978f2b3f6686a6756715
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834444"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157585"
 ---
 # <a name="windows-messages-macros"></a>Макросы сообщений Windows
 
@@ -35,7 +36,7 @@ WM_FORWARDMSG
 
 Ненулевое значение, если сообщение было обработано, ноль, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте WM_FORWARDMSG для пересылки сообщения, полученного окном, в другое окно для обработки. Параметры LPARAM и WPARAM используются следующим образом:
 

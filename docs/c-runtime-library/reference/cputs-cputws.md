@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _cputs, _cputws'
 title: _cputs, _cputws
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - console, sending strings to
 - cputws function
 ms.assetid: ec418484-0f8d-43ec-8d8b-198a556c659e
-ms.openlocfilehash: 469b39e4e08f13af8d8ac3e679ed55c7afb240d2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 7a519064b2a4318b5064074fbe9a0f09a3708d01
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917605"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155921"
 ---
 # <a name="_cputs-_cputws"></a>_cputs, _cputws
 
@@ -70,7 +71,7 @@ int _cputws(
 
 В случае успеха **_cputs** возвращает 0. Если функция завершается с ошибкой, возвращается ненулевое значение.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_cputs** записывает строку с завершающим нулем, на которую указывает *str* , непосредственно в консоль. Сочетание символов возврата каретки и перевода строки (CR-LF) не добавляется к такой строке автоматически.
 

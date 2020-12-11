@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о итераторах
 title: Iterators
 ms.date: 11/04/2016
 helpviewer_keywords:
 - iterator conventions
 - C++ Standard Library, iterator conventions
 ms.assetid: 2f746be7-b37d-4bfc-bf05-be4336ca982f
-ms.openlocfilehash: c3bb2825ec6ad98f523fa4c3a616d0807eac50a8
-ms.sourcegitcommit: 5ef9697b4cb1947bec9669be57bc920d2c4d82a6
+ms.openlocfilehash: 98263f69c49e0d645106e1ce29e6bb1a4330acea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87870156"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97112249"
 ---
 # <a name="iterators"></a>Iterators
 
@@ -88,7 +89,7 @@ for (auto num : vec)
 
 Теперь Microsoft C++ предлагает проверенные итераторы и отладочные итераторы, чтобы не перезаписать границы контейнера. Дополнительные сведения см. в разделах [Проверяемые итераторы](../standard-library/checked-iterators.md) и [Поддержка отладочных итераторов](../standard-library/debug-iterator-support.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по стандартной библиотеке C++](../standard-library/cpp-standard-library-reference.md)\
 [Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)

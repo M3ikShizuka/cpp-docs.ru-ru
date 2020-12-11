@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения об обработке сообщений уведомлений в элементе управления "Главная панель"
 title: Обработка уведомляющих сообщений в элементах управления главной панели
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - RBN_ notification messages [MFC]
 - notifications [MFC], CReBarCtrl
 ms.assetid: 40f43a60-0c18-4d8d-8fab-213a095624f9
-ms.openlocfilehash: e1e1aaa5056b43f0dd23976fead94bc800163613
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 6255f10068072f75f556cf1c8576008ab821ed27
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625193"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154842"
 ---
 # <a name="processing-notification-messages-in-a-rebar-control"></a>Обработка уведомляющих сообщений в элементах управления главной панели
 

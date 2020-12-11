@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_trivially_destructible классе'
 title: Класс is_trivially_destructible
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - is_trivially_destructible
 ms.assetid: 3f7a787d-2448-40c5-ac51-a228318e02ce
-ms.openlocfilehash: 6a978b7cc32e6de3d4b1d811b9aa6f52cf0370d7
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 41f36c027175cbf67049eed986b9188ba1532048
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68459639"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154361"
 ---
-# <a name="istriviallydestructible-class"></a>Класс is_trivially_destructible
+# <a name="is_trivially_destructible-class"></a>Класс is_trivially_destructible
 
 Проверяет, можно ли уничтожить тип.
 
@@ -29,16 +30,16 @@ struct is_trivially_destructible;
 *T*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *T* является типом можно уничтожить, и деструктор известен компилятору для использования нетривиальных операций. В противном случае — значение false.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)

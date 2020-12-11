@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: кпутс'
 title: cputs
 ms.date: 12/16/2019
 api_name:
@@ -23,16 +24,16 @@ f1_keywords:
 helpviewer_keywords:
 - cputs function
 ms.assetid: 0c2a7d4e-623a-4cb2-a0f9-1900c05bac08
-ms.openlocfilehash: 31f7de886f1bf947fdcfb61e33894d52fd00c3bf
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 4d39fde67830fc92c2ff31c8fa6529817d2e5b86
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75299888"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97155934"
 ---
 # <a name="cputs"></a>cputs
 
-Имя функции, определяемой корпорацией Майкрософт `cputs`, является устаревшим псевдонимом для функции [_cputs](cputs-cputws.md) . По умолчанию он создает [Предупреждение компилятора (уровень 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). Имя является устаревшим, так как оно не соответствует стандартным правилам C для имен, зависящих от реализации. Однако функция по-прежнему поддерживается.
+Имя функции, определяемой корпорацией Майкрософт, `cputs` является устаревшим псевдонимом для функции [_cputs](cputs-cputws.md) . По умолчанию он создает [Предупреждение компилятора (уровень 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). Имя является устаревшим, так как оно не соответствует стандартным правилам C для имен, зависящих от реализации. Однако функция по-прежнему поддерживается.
 
 Вместо этого рекомендуется использовать [_cputs](cputs-cputws.md) . Вы также можете продолжить использовать это имя функции и отключить предупреждение. Дополнительные сведения см. [в разделе Отключение](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) [имен функций](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)Warning и POSIX.
 

@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: использование IDispEventImpl'
 title: Использование IDispEventImpl (ATL)
 ms.date: 08/19/2019
 helpviewer_keywords:
 - IDispEventImpl class, using
 ms.assetid: 82d53b61-9d0d-45c5-aff9-2fafa468a9ca
-ms.openlocfilehash: 9684781ba99d96e2c58d450ee0ff892374e33aef
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: 4ddab52eeac3c409b32393e8b8b07a85019143c3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630600"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157182"
 ---
 # <a name="using-idispeventimpl"></a>Использование IDispEventImpl
 
@@ -27,7 +28,7 @@ ms.locfileid: "69630600"
 
 ## <a name="example"></a>Пример
 
-В приведенном ниже примере показано, `DocumentChange` как обработано событие, инициированное объектом **приложения** Word. Это событие определяется как метод в `ApplicationEvents` DISP-интерфейсе.
+В приведенном ниже примере показано, как обработано `DocumentChange` событие, инициированное объектом **приложения** Word. Это событие определяется как метод в `ApplicationEvents` DISP-интерфейсе.
 
 Пример приведен в примере [атлевенсандлинг](../overview/visual-cpp-samples.md).
 
@@ -47,7 +48,7 @@ methods:
 };
 ```
 
-В примере используется `#import` для создания необходимых файлов заголовков из библиотеки типов Word. Если вы хотите использовать этот пример с другими версиями Word, необходимо указать правильный DLL-файл Mso. Например, в Office 2000 есть MSO9. dll, а Оффицексп — MSO. dll. Этот код упрощен из *PCH. h* (*stdafx. h* в Visual Studio 2017 и более ранних версиях):
+В примере используется `#import` для создания необходимых файлов заголовков из библиотеки типов Word. Если вы хотите использовать этот пример с другими версиями Word, необходимо указать правильный DLL-файл Mso. Например, Office 2000 предоставляет mso.dll mso9.dll и Оффицексп. Этот код упрощен из *PCH. h* (*stdafx. h* в Visual Studio 2017 и более ранних версиях):
 
 [!code-cpp[NVC_ATL_EventHandlingSample#1](../atl/codesnippet/cpp/using-idispeventimpl_1.h)]
 
@@ -55,7 +56,7 @@ methods:
 
 [!code-cpp[NVC_ATL_EventHandlingSample#2](../atl/codesnippet/cpp/using-idispeventimpl_2.h)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Обработка событий](../atl/event-handling-and-atl.md)<br/>
 [Пример Атлевенсандлинг](../overview/visual-cpp-samples.md)

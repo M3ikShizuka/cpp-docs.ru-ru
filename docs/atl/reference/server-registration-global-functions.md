@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: глобальные функции регистрации сервера'
 title: Глобальные функции регистрации сервера
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 - atlbase/ATL::AtlComModuleRevokeClassObjects
 - atlbase/ATL::AtlComModuleGetClassObject
 ms.assetid: c2f0a35d-857c-4538-a44d-c4ea0db63b06
-ms.openlocfilehash: 4a84c311e34f1bc37b2f51e2152b6fcf2e46e2a3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7841c162c2c7c0c93cd8edcd8fd6d78ae4bb2b1e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835224"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157741"
 ---
 # <a name="server-registration-global-functions"></a>Глобальные функции регистрации сервера
 
@@ -60,7 +61,7 @@ ATLINLINE ATLAPI AtlComModuleRegisterServer(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `AtlComModuleRegisterServer` просматривает автоматически сформированную карту объектов ATL и регистрирует каждый объект на карте. Если *пклсид* не равен null, регистрируется только объект, на который ссылается *пклсид* . в противном случае регистрируются все объекты.
 
@@ -92,7 +93,7 @@ ATLINLINE ATLAPI AtlComModuleUnregisterServer(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `AtlComModuleUnregisterServer` проходит по карте объектов ATL и отменяет регистрацию каждого объекта в сопоставлении. Если *пклсид* не равно null, то отменяется только объект, на который ссылается *пклсид* . в противном случае отменяется регистрация всех объектов.
 
@@ -124,7 +125,7 @@ ATLINLINE ATLAPI AtlComModuleRegisterClassObjects(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта вспомогательная функция используется [CComModule:: регистерклассобжектс](ccommodule-class.md#registerclassobjects) (устарела в ATL 7,0) и [CAtlExeModuleT:: регистерклассобжектс](catlexemodulet-class.md#registerclassobjects).
 
@@ -145,7 +146,7 @@ ATLINLINE ATLAPI AtlComModuleRevokeClassObjects(_ATL_COM_MODULE* pComModule);
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта вспомогательная функция используется [CComModule:: ревокеклассобжектс](ccommodule-class.md#revokeclassobjects) (устарела в ATL 7,0) и [CAtlExeModuleT:: ревокеклассобжектс](catlexemodulet-class.md#revokeclassobjects).
 
@@ -179,7 +180,7 @@ IID запрашиваемого интерфейса.
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта вспомогательная функция используется [CComModule:: жетклассобжект](ccommodule-class.md#getclassobject) (устарела в ATL 7,0) и [CAtlDllModuleT:: жетклассобжект](catldllmodulet-class.md#getclassobject).
 

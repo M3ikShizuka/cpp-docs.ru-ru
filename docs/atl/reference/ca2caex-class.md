@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CA2CAEX Class'
 title: Класс CA2CAEX
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - CA2CAEX class
 ms.assetid: 388e7c1d-a144-474c-a182-b15f69a74bd8
-ms.openlocfilehash: 505c1e369bc5949fea291a2172c16d5e52c75567
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 89709280e94e07c549d179dc9a9863bd4bf2cbaa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168518"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97158599"
 ---
 # <a name="ca2caex-class"></a>Класс CA2CAEX
 
@@ -35,11 +36,11 @@ class CA2CAEX
 *t_nBufferLength*<br/>
 Размер буфера, используемого в процессе перевода. Длина по умолчанию составляет 128 байт.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CA2CAEX::CA2CAEX](#ca2caex)|Конструктор.|
 |[CA2CAEX:: ~ CA2CAEX](#dtor)|Деструктор|
@@ -56,7 +57,7 @@ class CA2CAEX
 |----------|-----------------|
 |[CA2CAEX:: m_psz](#m_psz)|Элемент данных, в котором хранится исходная строка.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Если не требуется дополнительных функций, используйте CA2CTEX, CT2CAEX или CA2CA в своем коде.
 
@@ -82,7 +83,7 @@ class CA2CAEX
 
 **Заголовок:** атлконв. h
 
-## <a name="ca2caexca2caex"></a><a name="ca2caex"></a>CA2CAEX::CA2CAEX
+## <a name="ca2caexca2caex"></a><a name="ca2caex"></a> CA2CAEX::CA2CAEX
 
 Конструктор.
 
@@ -99,11 +100,11 @@ CA2CAEX(LPCSTR psz) throw(...);
 *нкодепаже*<br/>
 Не используется в этом классе.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Создает буфер, необходимый для перевода.
 
-## <a name="ca2caexca2caex"></a><a name="dtor"></a>CA2CAEX:: ~ CA2CAEX
+## <a name="ca2caexca2caex"></a><a name="dtor"></a> CA2CAEX:: ~ CA2CAEX
 
 Деструктор
 
@@ -111,11 +112,11 @@ CA2CAEX(LPCSTR psz) throw(...);
 ~CA2CAEX() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Освобождает выделенный буфер.
 
-## <a name="ca2caexm_psz"></a><a name="m_psz"></a>CA2CAEX:: m_psz
+## <a name="ca2caexm_psz"></a><a name="m_psz"></a> CA2CAEX:: m_psz
 
 Элемент данных, в котором хранится исходная строка.
 
@@ -123,7 +124,7 @@ CA2CAEX(LPCSTR psz) throw(...);
 LPCSTR m_psz;
 ```
 
-## <a name="ca2caexoperator-lpcstr"></a><a name="operator_lpcstr"></a>CA2CAEX:: operator LPCSTR
+## <a name="ca2caexoperator-lpcstr"></a><a name="operator_lpcstr"></a> CA2CAEX:: operator LPCSTR
 
 Оператор преобразования.
 
@@ -135,7 +136,7 @@ operator LPCSTR() const throw();
 
 Возвращает текстовую строку как тип LPCSTR.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Класс CA2AEX](../../atl/reference/ca2aex-class.md)<br/>
 [Класс CA2WEX](../../atl/reference/ca2wex-class.md)<br/>

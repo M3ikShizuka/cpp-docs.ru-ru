@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: `/Zc:externConstexpr` (Включение внешних переменных constexpr)'
 title: /Zc:externConstexpr (включение внешних переменных constexpr)
 ms.date: 02/28/2018
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - -Zc:externConstexpr compiler option (C++)
 - extern constexpr variables (C++)
 ms.assetid: 4da5e33a-2e4d-4ed2-8616-bd8f43265c27
-ms.openlocfilehash: db5a8892bcc11538c3ff883a0e9a3a27db0ee14f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5f3120ba467c70cde2d0deb6932e408a2cd688c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502808"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156129"
 ---
 # <a name="zcexternconstexpr-enable-extern-constexpr-variables"></a>`/Zc:externConstexpr` (Включить внешние переменные constexpr)
 
@@ -22,7 +23,7 @@ ms.locfileid: "91502808"
 
 > **`/Zc:externConstexpr`**[**`-`**]
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **`/Zc:externConstexpr`** Параметр компилятора заставляет компилятор применить внешнюю компоновку к переменным, объявленным с помощью `extern constexpr` . В более ранних версиях Visual Studio и по умолчанию или при **`/Zc:externConstexpr-`** указании Visual Studio применяет внутреннюю компоновку к **`constexpr`** переменным, даже если **`extern`** используется ключевое слово. **`/Zc:externConstexpr`** Параметр доступен начиная с Visual Studio 2017 с обновлением 15,6. и по умолчанию отключен. [`/permissive-`](permissive-standards-conformance.md)Параметр не включается **`/Zc:externConstexpr`** .
 

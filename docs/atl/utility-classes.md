@@ -1,35 +1,36 @@
 ---
-title: Служебные классы (ATL)
+description: 'Дополнительные сведения: служебные классы'
+title: Классы служебных программ (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - utility classes
 ms.assetid: 33d5da9d-89a5-49f9-a873-a26499299d17
-ms.openlocfilehash: 2de899d6c70bde4f9f9ec7241d3c923f77ff8248
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 95fbc6a557080175682f9f54a3ac6b9b7d0efdc6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274845"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157156"
 ---
 # <a name="utility-classes"></a>Служебные классы
 
-Предоставляются следующие служебные классы независимый от MFC:
+Предоставляются следующие классы служебных программ, независимые от MFC:
 
-- [CImage](../atl-mfc-shared/reference/cimage-class.md) предоставляет улучшенную поддержку растровых изображений, включая возможность загрузки и сохранения изображений в формате JPEG, GIF, BMP, и форматирует Portable Network Graphics (PNG).
+- [CImage](../atl-mfc-shared/reference/cimage-class.md) Обеспечивает улучшенную поддержку точечных рисунков, включая возможность загрузки и сохранения изображений в форматах JPEG, GIF, BMP и PNG.
 
-- [CPoint](../atl-mfc-shared/reference/cpoint-class.md) предоставляет реализацию для хранения пары координат (x, y).
+- [CPoint](../atl-mfc-shared/reference/cpoint-class.md) Предоставляет реализацию для хранения пар координат (x, y).
 
-- [CRect](../atl-mfc-shared/reference/crect-class.md) предоставляет реализацию для хранения координат прямоугольной области.
+- [Крект](../atl-mfc-shared/reference/crect-class.md) Предоставляет реализацию для хранения координат прямоугольных областей.
 
-- [CSize](../atl-mfc-shared/reference/csize-class.md) предоставляет реализацию для хранения расстояние, относительные позиции или пар значений.
+- [Ксизе](../atl-mfc-shared/reference/csize-class.md) Предоставляет реализацию для хранения расстояния, относительного положения или парных значений.
 
-- [CString](../atl-mfc-shared/reference/cstringt-class.md) предоставляет реализацию для хранения символьных строк.
+- [CString](../atl-mfc-shared/reference/cstringt-class.md) Предоставляет реализацию для хранения символьных строк.
 
-- [CAdapt](../atl/reference/cadapt-class.md) простого шаблона, используемого для создания оболочек классов, переопределяющих оператор взятия адреса.
+- [Кадапт](../atl/reference/cadapt-class.md) Простой шаблон, используемый для упаковки классов, которые переопределяют оператор взятия адреса.
 
-- [_U_RECT](../atl/reference/u-rect-class.md) аргумент класс адаптера, который позволяет либо `RECT` указатели или ссылки, должны быть переданы функции, которая реализуется в терминах указатели.
+- [_U_RECT](../atl/reference/u-rect-class.md) Класс адаптера аргумента, который позволяет `RECT` передавать указатели или ссылки в функцию, которая реализуется в терминах указателей.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Общие сведения о классе](../atl/atl-class-overview.md)
+[Общие сведения о классах](../atl/atl-class-overview.md)
