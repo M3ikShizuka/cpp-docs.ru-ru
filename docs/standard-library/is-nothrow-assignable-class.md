@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_nothrow_assignable классе'
 title: Класс is_nothrow_assignable
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - is_nothrow_assignable
 ms.assetid: aa3aca92-308b-4b1d-b3f3-c54216c48fe7
-ms.openlocfilehash: 7130079ff58820ec5a8893fd248c5b98fc10c93c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2d63c0f29b398cb8cd9eaef5e3e9e637c0b4eb16
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222372"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230826"
 ---
 # <a name="is_nothrow_assignable-class"></a>Класс is_nothrow_assignable
 
@@ -32,7 +33,7 @@ struct is_nothrow_assignable;
 *От*\
 Тип объекта, который предоставляет значение.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Выражение `declval<To>() = declval<From>()` должно иметь правильный формат и быть известно компилятору как не вызывающее исключений. И *от* , и *до* должны быть полными типами, **`void`** или массивами с неизвестной границей.
 

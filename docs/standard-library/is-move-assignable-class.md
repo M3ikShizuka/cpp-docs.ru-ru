@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_move_assignable классе'
 title: Класс is_move_assignable
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - is_move_assignable
 ms.assetid: f33137f2-0639-4912-8745-bc0f9fd18d28
-ms.openlocfilehash: 8563db51eeb1988697b3e07a1a8673a777783e38
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: ccca3eb1da646bad9e55222a23b5ae8d511d3bb3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456121"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230865"
 ---
-# <a name="ismoveassignable-class"></a>Класс is_move_assignable
+# <a name="is_move_assignable-class"></a>Класс is_move_assignable
 
 Проверяет, является ли тип присваиваемым при перемещении.
 
@@ -29,16 +30,16 @@ struct is_move_assignable;
 *T*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Тип является тип присваиваемым при перемещении, если ссылку rvalue на тип можно присвоить ссылке на тип. Предикат типа эквивалентен `is_assignable<T&, T&&>`. Присваиваемые при перемещении типы включают ссылочные скалярные типы и типы классов, в которых есть созданные компилятором или определяемые пользователем операторы присваивания перемещением.
+Тип является тип присваиваемым при перемещении, если ссылку rvalue на тип можно присвоить ссылке на тип. Предикат типа эквивалентен `is_assignable<T&, T&&>`. Перемещаемые при присваивании типы включают ссылочные скалярные типы и типы классов, в которых есть созданные компилятором или определяемые пользователем операторы присваивания.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)

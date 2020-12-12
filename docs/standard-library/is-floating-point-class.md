@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_floating_point классе'
 title: Класс is_floating_point
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - is_floating_point class
 - is_floating_point
 ms.assetid: 070679c1-115b-4ee4-8ab7-f52e5d9e157f
-ms.openlocfilehash: 8da613bca165f68ef2e15e2be6291485a89222de
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e1ace01a88c103646e9daa6ece82b9c3c3c2978a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222398"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230982"
 ---
 # <a name="is_floating_point-class"></a>Класс is_floating_point
 
@@ -30,7 +31,7 @@ struct is_floating_point;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* является типом с плавающей запятой или `cv-qualified` формой типа с плавающей запятой, в противном случае — значение false.
 

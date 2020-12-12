@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_fundamental классе'
 title: Класс is_fundamental
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - is_fundamental class
 - is_fundamental
 ms.assetid: b84eee84-2fb2-4611-beaf-b384074d8b6a
-ms.openlocfilehash: 99d712d11fd47f694477029bc5c2b23fe732eb04
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 83af1491eb92f111a36e89f1511a71b48d784c73
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233123"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230956"
 ---
 # <a name="is_fundamental-class"></a>Класс is_fundamental
 
@@ -30,7 +31,7 @@ struct is_fundamental;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* является фундаментальным типом, то есть, **`void`** целочисленным типом, типом с плавающей запятой или `cv-qualified` формой одного из них, в противном случае — значение false.
 
@@ -75,7 +76,7 @@ is_fundamental<void> == true
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)\
 [Класс is_compound](../standard-library/is-compound-class.md)

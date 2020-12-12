@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_member_object_pointer классе'
 title: Класс is_member_object_pointer
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_member_object_pointer class
 - is_member_object_pointer
 ms.assetid: 64f9cdf3-4621-4310-a076-a7bc986926b9
-ms.openlocfilehash: 37d836c3626b492750ffa28c378413757119c9d3
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: bf98bfa4017730a212f99849bde552ceb67625b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456168"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230940"
 ---
-# <a name="ismemberobjectpointer-class"></a>Класс is_member_object_pointer
+# <a name="is_member_object_pointer-class"></a>Класс is_member_object_pointer
 
 Проверяет, является ли тип указателем на объект члена.
 
@@ -30,9 +31,9 @@ struct is_member_object_pointer;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Экземпляр предиката типа содержит значение true, если тип *Ty* является указателем на объект-член или `cv-qualified` указатель на объект-член, в противном случае — значение false. Обратите `is_member_object_pointer` внимание, что содержит значение false, если *Ty* является указателем на функцию-член.
+Экземпляр предиката типа содержит значение true, если тип *Ty* является указателем на объект-член или `cv-qualified` указатель на объект-член, в противном случае — значение false. Обратите внимание, что `is_member_object_pointer` содержит значение false, если *Ty* является указателем на функцию-член.
 
 ## <a name="example"></a>Пример
 
@@ -79,11 +80,11 @@ is_member_object_pointer<int (functional::*)()> == false
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)\
 [Класс is_member_pointer](../standard-library/is-member-pointer-class.md)
