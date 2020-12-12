@@ -1,5 +1,6 @@
 ---
-title: ICollectionOnSTLImpl класса
+description: 'Дополнительные сведения о: Иколлектиононстлимпл Class'
+title: Класс Иколлектиононстлимпл
 ms.date: 11/04/2016
 f1_keywords:
 - ICollectionOnSTLImpl
@@ -11,14 +12,14 @@ f1_keywords:
 helpviewer_keywords:
 - ICollectionOnSTLImpl class
 ms.assetid: 683c88b0-0d97-4779-a762-e493334ba7f9
-ms.openlocfilehash: a8ccab08b89da8c1b8ef56c8932e27a6c74e62aa
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 089fc0fbd8f410d740646e2a653b076d32448647
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81329908"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139611"
 ---
-# <a name="icollectiononstlimpl-class"></a>ICollectionOnSTLImpl класса
+# <a name="icollectiononstlimpl-class"></a>Класс Иколлектиононстлимпл
 
 Этот класс предоставляет методы, используемые классом коллекции.
 
@@ -34,52 +35,52 @@ class ICollectionOnSTLImpl : public T
 *T*<br/>
 Интерфейс коллекции COM.
 
-*CollType*<br/>
-Класс контейнеров Стандартной библиотеки СЗ.
+*коллтипе*<br/>
+Класс контейнера стандартной библиотеки C++.
 
-*Itemtype*<br/>
-Тип элемента, выставленного интерфейсом контейнера.
+*ItemType*<br/>
+Тип элемента, предоставляемого интерфейсом контейнера.
 
 *CopyItem*<br/>
 [Класс политики копирования](../../atl/atl-copy-policy-classes.md).
 
 *EnumType*<br/>
-[Класс CComEnumOnSTL,](../../atl/reference/ccomenumonstl-class.md)совместимый с перечислением.
+Класс перечислителя, совместимый с [ккоменумонстл](../../atl/reference/ccomenumonstl-class.md).
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[ICollectionOnSTLImpl::get__NewEnum](#newenum)|Возвращает объект регистратора для коллекции.|
-|[ICollectionOnSTLImpl::getcount](#get_count)|Возвращает количество элементов в коллекции.|
-|[ICollectionOnSTLImpl::get_Item](#get_item)|Возвращает запрошенный товар из коллекции.|
+|[Иколлектиононстлимпл:: get__NewEnum](#newenum)|Возвращает объект перечислителя для коллекции.|
+|[Иколлектиононстлимпл:: NOCOUNT](#get_count)|Возвращает количество элементов в коллекции.|
+|[Иколлектиононстлимпл:: get_Item](#get_item)|Возвращает запрошенный элемент из коллекции.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[ICollectionOnSTLImpl::m_coll](#m_coll)|Коллекция.|
+|[Иколлектиононстлимпл:: m_coll](#m_coll)|Коллекция.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот класс обеспечивает реализацию для трех методов интерфейса сбора: [getcount,](#get_count) [get_Item](#get_item)и [get__NewEnum.](#newenum)
+Этот класс предоставляет реализацию для трех методов интерфейса коллекции: [NOCOUNT](#get_count), [get_Item](#get_item)и [get__NewEnum](#newenum).
 
-Для использования этого класса:
+Чтобы использовать этот класс, сделайте следующее:
 
-- Определите (или одолжите) интерфейс сбора, который вы хотите реализовать.
+- Определите (или создайте) интерфейс коллекции, который вы хотите реализовать.
 
-- Выизвуйте свой `ICollectionOnSTLImpl` класс из специализации на основе интерфейса этой коллекции.
+- Создайте класс, производный от специализации, `ICollectionOnSTLImpl` на основе этого интерфейса коллекции.
 
-- Используйте свой производный класс для реализации любых `ICollectionOnSTLImpl`методов из интерфейса сбора, не обрабатываемых .
+- Используйте производный класс для реализации любых методов из интерфейса коллекции, который не обрабатывается `ICollectionOnSTLImpl` .
 
 > [!NOTE]
-> Если интерфейс коллекции является двойным интерфейсом, вывешйте свой класс из [IDispatchImpl,](../../atl/reference/idispatchimpl-class.md)передав `ICollectionOnSTLImpl` `IDispatch` специализацию в качестве первого параметра шаблона, если вы хотите, чтобы ATL обеспечивала реализацию методов.
+> Если интерфейс коллекции является сдвоенным интерфейсом, создайте класс, производный от [IDispatchImpl](../../atl/reference/idispatchimpl-class.md), передав `ICollectionOnSTLImpl` специализацию в качестве первого параметра шаблона, если вы хотите, чтобы ATL предоставил реализацию `IDispatch` методов.
 
-- Добавьте элементы [в](#m_coll) m_coll для заполнения коллекции.
+- Добавьте элементы в элемент [m_coll](#m_coll) , чтобы заполнить коллекцию.
 
-Для получения дополнительной информации и примеров [см.](../../atl/atl-collections-and-enumerators.md)
+Дополнительные сведения и примеры см. в разделе [коллекции и перечислители ATL](../../atl/atl-collections-and-enumerators.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -89,9 +90,9 @@ class ICollectionOnSTLImpl : public T
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlcom.h
+**Заголовок:** атлком. h
 
-## <a name="icollectiononstlimplgetcount"></a><a name="get_count"></a>ICollectionOnSTLImpl::getcount
+## <a name="icollectiononstlimplgetcount"></a><a name="get_count"></a> Иколлектиононстлимпл:: NOCOUNT
 
 Этот метод возвращает количество элементов в коллекции.
 
@@ -102,13 +103,13 @@ STDMETHOD(getcount)(long* pcount);
 ### <a name="parameters"></a>Параметры
 
 *pcount*<br/>
-(ваут) Количество элементов в коллекции.
+заполняет Число элементов в коллекции.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Стандартное значение HRESULT.
 
-## <a name="icollectiononstlimplget_item"></a><a name="get_item"></a>ICollectionOnSTLImpl::get_Item
+## <a name="icollectiononstlimplget_item"></a><a name="get_item"></a> Иколлектиононстлимпл:: get_Item
 
 Этот метод возвращает указанный элемент из коллекции.
 
@@ -118,23 +119,23 @@ STDMETHOD(get_Item)(long Index, ItemType* pvar);
 
 ### <a name="parameters"></a>Параметры
 
-*Индекс*<br/>
-(в) 1-основанный индекс элемента в коллекции.
+*Index*<br/>
+окне Отсчитываемый от 1 индекс элемента в коллекции.
 
-*pvar*<br/>
-(ваут) Элемент, соответствующий *индексу*.
+*пвар*<br/>
+заполняет Элемент, соответствующий *индексу*.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Элемент получен путем копирования данных в указанном положении в [m_coll](#m_coll) используя метод копирования `ICollectionOnSTLImpl` класса [политики копирования,](../../atl/atl-copy-policy-classes.md) переданный в качестве аргумента шаблона в специализации.
+Элемент получается путем копирования данных в указанной позиции в [m_coll](#m_coll) с помощью метода Copy [класса политики копирования](../../atl/atl-copy-policy-classes.md) , переданного в качестве аргумента шаблона в `ICollectionOnSTLImpl` специализации.
 
-## <a name="icollectiononstlimplget__newenum"></a><a name="newenum"></a>ICollectionOnSTLImpl::get__NewEnum
+## <a name="icollectiononstlimplget__newenum"></a><a name="newenum"></a> Иколлектиононстлимпл:: get__NewEnum
 
-Возвращает объект регистратора для коллекции.
+Возвращает объект перечислителя для коллекции.
 
 ```
 STDMETHOD(get__NewEnum)(IUnknown** ppUnk);
@@ -142,20 +143,20 @@ STDMETHOD(get__NewEnum)(IUnknown** ppUnk);
 
 ### <a name="parameters"></a>Параметры
 
-*ppUnk*<br/>
-(ваут) **Инеизвестный** указатель недавно созданного объекта экумератора.
+*ппунк*<br/>
+заполняет Указатель **IUnknown** созданного объекта перечислителя.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вновь созданный регистратор поддерживает итератор в оригинальной коллекции `m_coll`(так что копия не производится) и содержит ссылку COM на объект коллекции, чтобы убедиться, что коллекция остается в живых, пока есть выдающиеся регистраторы.
+Созданный перечислитель поддерживает итератор исходной коллекции, `m_coll` (поэтому копирование не выполняется) и содержит ссылку COM на объект коллекции, чтобы гарантировать, что коллекция остается в активном состоянии при наличии необработанных перечислителей.
 
-## <a name="icollectiononstlimplm_coll"></a><a name="m_coll"></a>ICollectionOnSTLImpl::m_coll
+## <a name="icollectiononstlimplm_coll"></a><a name="m_coll"></a> Иколлектиононстлимпл:: m_coll
 
-Этот участник содержит элементы, представленные коллекцией.
+Этот элемент содержит элементы, представленные коллекцией.
 
 ```
 CollType m_coll;
@@ -163,5 +164,5 @@ CollType m_coll;
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пример ATLCollections](../../overview/visual-cpp-samples.md)<br/>
+[Пример Атлколлектионс](../../overview/visual-cpp-samples.md)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)

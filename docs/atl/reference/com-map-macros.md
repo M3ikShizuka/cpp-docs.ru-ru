@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: макросы для карт COM'
 title: Макросы схемы COM
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - COM interfaces, COM map macros
 ms.assetid: 0f33656d-321f-4996-90cc-9a7f21ab73c3
-ms.openlocfilehash: 100402e17ca1bee5f338c37f2315fbc4898a713e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 076a13418a48147654862c2b5a26688b195d5252
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833586"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141327"
 ---
 # <a name="com-map-macros"></a>Макросы схемы COM
 
@@ -40,7 +41,7 @@ BEGIN_COM_MAP(x)
 *x*<br/>
 окне Имя объекта класса, на котором вы предоставляете интерфейсы.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 [CComObjectRootEx:: интерналкуеринтерфаце](ccomobjectrootex-class.md#internalqueryinterface) Возвращает указатели только для интерфейсов в сопоставлении com. Запустите карту интерфейса с помощью макроса BEGIN_COM_MAP, добавьте записи для каждого интерфейса с помощью макроса [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) или одного из его вариантов и завершите карту с помощью макроса [END_COM_MAP](#end_com_map) .
 

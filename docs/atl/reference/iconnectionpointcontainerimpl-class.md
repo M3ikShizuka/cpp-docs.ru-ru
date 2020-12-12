@@ -1,5 +1,6 @@
 ---
-title: IConnectionPointContainerImpl класс
+description: 'Дополнительные сведения о: Иконнектионпоинтконтаинеримпл Class'
+title: Класс Иконнектионпоинтконтаинеримпл
 ms.date: 11/04/2016
 f1_keywords:
 - IConnectionPointContainerImpl
@@ -11,16 +12,16 @@ helpviewer_keywords:
 - connection points [C++], container
 - IConnectionPointContainerImpl class
 ms.assetid: 10db5a8d-8be9-4d9d-8a82-8ab9ffe3e9d6
-ms.openlocfilehash: f6009a1341d6715d6d2f170d3ff2aa1aa4ffcb96
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 77499954f65b5a447d2f5773c0b4c1dbdbfc5c22
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81329868"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139598"
 ---
-# <a name="iconnectionpointcontainerimpl-class"></a>IConnectionPointContainerImpl класс
+# <a name="iconnectionpointcontainerimpl-class"></a>Класс Иконнектионпоинтконтаинеримпл
 
-Этот класс реализует контейнер точки соединения для управления коллекцией объектов [IConnectionPointImpl.](../../atl/reference/iconnectionpointimpl-class.md)
+Этот класс реализует контейнер точек соединения для управления коллекцией объектов [иконнектионпоинтимпл](../../atl/reference/iconnectionpointimpl-class.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,26 +34,26 @@ class ATL_NO_VTABLE IConnectionPointContainerImpl
 #### <a name="parameters"></a>Параметры
 
 *T*<br/>
-Ваш класс, полученный из `IConnectionPointContainerImpl`.
+Класс, производный от `IConnectionPointContainerImpl` .
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[IConnectionPointContainerImpl::EnumConnectionPoints](#enumconnectionpoints)|Создает регистратор для итерата через точки соединения, поддерживаемые в подключаемом объекте.|
-|[IConnectionPointContainerImpl::FindConnectionPoint](#findconnectionpoint)|Извлекает указатель интерфейса в точку соединения, поддерживающую указанное IID.|
+|[Иконнектионпоинтконтаинеримпл:: Енумконнектионпоинтс](#enumconnectionpoints)|Создает перечислитель для прохода по точкам соединения, поддерживаемым в подключаемом объекте.|
+|[Иконнектионпоинтконтаинеримпл:: Финдконнектионпоинт](#findconnectionpoint)|Извлекает указатель интерфейса на точку соединения, которая поддерживает указанный IID.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`IConnectionPointContainerImpl`реализует контейнер точки соединения для управления коллекцией объектов [IConnectionPointImpl.](../../atl/reference/iconnectionpointimpl-class.md) `IConnectionPointContainerImpl`предоставляет два метода, которые клиент может вызвать для получения дополнительной информации о подключаемых объекта:
+`IConnectionPointContainerImpl` реализует контейнер точек соединения для управления коллекцией объектов [иконнектионпоинтимпл](../../atl/reference/iconnectionpointimpl-class.md) . `IConnectionPointContainerImpl` предоставляет два метода, которые клиент может вызвать для получения дополнительных сведений о подключаемом объекте:
 
-- `EnumConnectionPoints`позволяет клиенту определить, какие исходящие интерфейсы поддерживает объект.
+- `EnumConnectionPoints` позволяет клиенту определить, какие исходящие интерфейсы поддерживаются объектом.
 
-- `FindConnectionPoint`позволяет клиенту определить, поддерживает ли объект определенный исходящий интерфейс.
+- `FindConnectionPoint` позволяет клиенту определить, поддерживает ли объект определенный исходящий интерфейс.
 
-Для получения информации об использовании точек соединения в ATL, [см.](../../atl/atl-connection-points.md)
+Сведения об использовании точек подключения в ATL см. в статье [точки подключения](../../atl/atl-connection-points.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -62,31 +63,31 @@ class ATL_NO_VTABLE IConnectionPointContainerImpl
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlcom.h
+**Заголовок:** атлком. h
 
-## <a name="iconnectionpointcontainerimplenumconnectionpoints"></a><a name="enumconnectionpoints"></a>IConnectionPointContainerImpl::EnumConnectionPoints
+## <a name="iconnectionpointcontainerimplenumconnectionpoints"></a><a name="enumconnectionpoints"></a> Иконнектионпоинтконтаинеримпл:: Енумконнектионпоинтс
 
-Создает регистратор для итерата через точки соединения, поддерживаемые в подключаемом объекте.
+Создает перечислитель для прохода по точкам соединения, поддерживаемым в подключаемом объекте.
 
 ```
 STDMETHOD(EnumConnectionPoints)(IEnumConnectionPoints** ppEnum);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Смотрите [IConnectionPointContainer::EnumConnectionPoints](/windows/win32/api/ocidl/nf-ocidl-iconnectionpointcontainer-enumconnectionpoints) в Windows SDK.
+См. раздел [IConnectionPointContainer:: енумконнектионпоинтс](/windows/win32/api/ocidl/nf-ocidl-iconnectionpointcontainer-enumconnectionpoints) в Windows SDK.
 
-## <a name="iconnectionpointcontainerimplfindconnectionpoint"></a><a name="findconnectionpoint"></a>IConnectionPointContainerImpl::FindConnectionPoint
+## <a name="iconnectionpointcontainerimplfindconnectionpoint"></a><a name="findconnectionpoint"></a> Иконнектионпоинтконтаинеримпл:: Финдконнектионпоинт
 
-Извлекает указатель интерфейса в точку соединения, поддерживающую указанное IID.
+Извлекает указатель интерфейса на точку соединения, которая поддерживает указанный IID.
 
 ```
 STDMETHOD(FindConnectionPoint)(REFIID riid, IConnectionPoint** ppCP);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Смотрите [IConnectionPointContainer::FindConnectionPoint](/windows/win32/api/ocidl/nf-ocidl-iconnectionpointcontainer-findconnectionpoint) в Windows SDK.
+См. раздел [IConnectionPointContainer:: финдконнектионпоинт](/windows/win32/api/ocidl/nf-ocidl-iconnectionpointcontainer-findconnectionpoint) в Windows SDK.
 
 ## <a name="see-also"></a>См. также раздел
 

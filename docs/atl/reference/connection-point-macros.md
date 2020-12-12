@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: макросы точек подключения'
 title: Макросы точек подключения
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - connection points [C++], macros
 ms.assetid: cc3a6dd3-5538-45df-b027-1f34963c31e5
-ms.openlocfilehash: 6c716ad85ecb458b4be418a7e8554687dd19f3d8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: bcb021abe128e15a598f485ab0c0a32a01f90327
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833521"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141132"
 ---
 # <a name="connection-point-macros"></a>Макросы точек подключения
 
@@ -42,7 +43,7 @@ BEGIN_CONNECTION_POINT_MAP(x)
 *x*<br/>
 окне Имя класса, содержащего точки соединения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Запустите карту точек подключения с помощью макроса BEGIN_CONNECTION_POINT_MAP, добавьте записи для каждой точки подключения с помощью макроса [CONNECTION_POINT_ENTRY](#connection_point_entry) и завершите карту с помощью макроса [END_CONNECTION_POINT_MAP](#end_connection_point_map) .
 
@@ -69,7 +70,7 @@ CONNECTION_POINT_ENTRY_P(piid) // (Visual Studio 2017)
 *пиид*<br/>
 окне Указатель на идентификатор GUID Адде интерфейса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Записи точек подключения в карте используются [иконнектионпоинтконтаинеримпл](../../atl/reference/iconnectionpointcontainerimpl-class.md). Класс, содержащий карту точек подключения, должен наследовать от `IConnectionPointContainerImpl` .
 
@@ -89,7 +90,7 @@ CONNECTION_POINT_ENTRY_P(piid) // (Visual Studio 2017)
 END_CONNECTION_POINT_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Запустите карту точек подключения с помощью макроса [BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map) , добавьте записи для каждой точки подключения с помощью макроса [CONNECTION_POINT_ENTRY](#connection_point_entry) и завершите карту с помощью макроса END_CONNECTION_POINT_MAP.
 

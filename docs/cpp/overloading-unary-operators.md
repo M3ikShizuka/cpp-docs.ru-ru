@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: перегрузка унарных операторов'
 title: Перегрузка унарных операторов
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,32 +12,32 @@ helpviewer_keywords:
 - pointer dereference operator overloading
 - plus operator
 ms.assetid: 7683ef08-42a4-4283-928f-d3dd4f3ab4c0
-ms.openlocfilehash: a21c62549f02dddda951c79a06617671ccfe2526
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2e0a2d2b902403ee5ed34a95b6d282d7c2199795
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227222"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146059"
 ---
 # <a name="overloading-unary-operators"></a>Перегрузка унарных операторов
 
 Перегрузке могут быть подвергнуты следующие унарные операторы.
 
-1. `!`([логическое не](../cpp/logical-negation-operator-exclpt.md))
+1. `!` ([логическое не](../cpp/logical-negation-operator-exclpt.md))
 
-1. `&`([адрес](../cpp/address-of-operator-amp.md))
+1. `&` ([адрес](../cpp/address-of-operator-amp.md))
 
-1. `~`([дополнение одного](../cpp/one-s-complement-operator-tilde.md))
+1. `~` ([дополнение одного](../cpp/one-s-complement-operator-tilde.md))
 
-1. `*`([разыменование указателя](../cpp/indirection-operator-star.md))
+1. `*` ([разыменование указателя](../cpp/indirection-operator-star.md))
 
-1. `+`([унарный плюс](../cpp/additive-operators-plus-and.md))
+1. `+` ([унарный плюс](../cpp/additive-operators-plus-and.md))
 
-1. `-`([унарное отрицание](../cpp/additive-operators-plus-and.md))
+1. `-` ([унарное отрицание](../cpp/additive-operators-plus-and.md))
 
-1. `++`([приращение](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))
+1. `++` ([приращение](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))
 
-1. `--`([декремента](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))
+1. `--` ([декремента](../cpp/prefix-increment-and-decrement-operators-increment-and-decrement.md))
 
 1. операторы преобразования
 
@@ -59,6 +60,6 @@ ms.locfileid: "87227222"
 > [!NOTE]
 > Не существует ограничения на типы возвращаемого значения унарных операторов. Например, логическому НЕ (`!`) имеет смысл возвращать целочисленное значение, однако это не реализовано принудительно.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Перегрузка операторов](../cpp/operator-overloading.md)

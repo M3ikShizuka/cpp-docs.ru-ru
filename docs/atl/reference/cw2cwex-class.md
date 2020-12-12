@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CW2CWEX Class'
 title: Класс CW2CWEX
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,19 +10,19 @@ f1_keywords:
 helpviewer_keywords:
 - CW2CWEX class
 ms.assetid: d654b22b-05a6-410f-a0ec-9a2cbbb4cca7
-ms.openlocfilehash: 07dd0319586054403d8ed0c8efc813b4061e355a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 769dcedf1a9dc15129b09e3305330de33242562e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81330436"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140235"
 ---
 # <a name="cw2cwex-class"></a>Класс CW2CWEX
 
-Этот класс используется макросами преобразования строкc CW2CTEX и CT2CWEX, а также typedef CW2W.
+Этот класс используется макросами преобразования строк CW2CTEX и CT2CWEX, а также typedef CW2W.
 
 > [!IMPORTANT]
-> Этот класс и его члены не могут быть использованы в приложениях, выполняемых в Windows Runtime.
+> Этот класс и его члены не могут использоваться в приложениях, выполняемых в среда выполнения Windows.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,34 +34,34 @@ class CW2CWEX
 #### <a name="parameters"></a>Параметры
 
 *t_nBufferLength*<br/>
-Размер буфера, используемого в процессе перевода. Длина по умолчанию составляет 128 байтов.
+Размер буфера, используемого в процессе перевода. Длина по умолчанию составляет 128 байт.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CW2CWEX::CW2CWEX](#cw2cwex)|Конструктор.|
-|[CW2CWEX:: »CW2CWEX](#dtor)|Деструктор|
+|[CW2CWEX:: ~ CW2CWEX](#dtor)|Деструктор|
 
 ### <a name="public-operators"></a>Открытые операторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CW2CWEX:Оператор LPCWSTR](#operator_lpcwstr)|Оператор конверсии.|
+|[CW2CWEX:: operator ЛПКВСТР](#operator_lpcwstr)|Оператор преобразования.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CW2CWEX::m_psz](#m_psz)|Член данных, который хранит строку исходного кода.|
+|[CW2CWEX:: m_psz](#m_psz)|Элемент данных, в котором хранится исходная строка.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Если не требуется дополнительная функциональность, используйте CW2CTEX, CT2CWEX или CW2W в коде.
+Если не требуется дополнительных функций, используйте в коде CW2CTEX, CT2CWEX или CW2W.
 
-Этот класс безопасен для использования в циклах и не будет переполнять стек. По умолчанию классы и макросы конверсии ATL используют для преобразования страницу кода ANSI текущего потока.
+Этот класс можно использовать в циклах и не будет переполнен стеком. По умолчанию классы и макросы преобразования ATL используют для преобразования кодовую страницу ANSI текущего потока.
 
 Следующие макросы основаны на этом классе:
 
@@ -68,21 +69,21 @@ class CW2CWEX
 
 - CT2CWEX
 
-Следующий тип основан на этом классе:
+Следующий typedef основан на этом классе:
 
 - CW2W
 
-Для обсуждения этих макросов преобразования текста [см.](string-conversion-macros.md)
+Обсуждение этих макросов преобразования текста см. в разделе [ATL и макросы преобразования строк MFC](string-conversion-macros.md).
 
 ## <a name="example"></a>Пример
 
-Например, с помощью этих макросов преобразования строк можно ознакомиться на [atL и MFC String Conversion Macros.](string-conversion-macros.md)
+Пример использования этих макросов преобразования строк см. в разделе [ATL и макросы преобразования строк MFC](string-conversion-macros.md) .
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlconv.h
+**Заголовок:** атлконв. h
 
-## <a name="cw2cwexcw2cwex"></a><a name="cw2cwex"></a>CW2CWEX::CW2CWEX
+## <a name="cw2cwexcw2cwex"></a><a name="cw2cwex"></a> CW2CWEX::CW2CWEX
 
 Конструктор.
 
@@ -93,17 +94,17 @@ CW2CWEX(LPCWSTR psz) throw(...);
 
 ### <a name="parameters"></a>Параметры
 
-*Psz*<br/>
-Текстовая строка, которая будет преобразована.
+*псз*<br/>
+Текстовая строка для преобразования.
 
-*nCodePage*<br/>
+*нкодепаже*<br/>
 Кодовая страница. Не используется в этом классе.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Выделяет буфер, используемый в процессе перевода.
 
-## <a name="cw2cwexcw2cwex"></a><a name="dtor"></a>CW2CWEX:: »CW2CWEX
+## <a name="cw2cwexcw2cwex"></a><a name="dtor"></a> CW2CWEX:: ~ CW2CWEX
 
 Деструктор
 
@@ -111,21 +112,21 @@ CW2CWEX(LPCWSTR psz) throw(...);
 ~CW2CWEX() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Освобождает выделенный буфер.
 
-## <a name="cw2cwexm_psz"></a><a name="m_psz"></a>CW2CWEX::m_psz
+## <a name="cw2cwexm_psz"></a><a name="m_psz"></a> CW2CWEX:: m_psz
 
-Член данных, который хранит строку исходного кода.
+Элемент данных, в котором хранится исходная строка.
 
 ```
 LPCWSTR m_psz;
 ```
 
-## <a name="cw2cwexoperator-lpcwstr"></a><a name="operator_lpcwstr"></a>CW2CWEX:Оператор LPCWSTR
+## <a name="cw2cwexoperator-lpcwstr"></a><a name="operator_lpcwstr"></a> CW2CWEX:: operator ЛПКВСТР
 
-Оператор конверсии.
+Оператор преобразования.
 
 ```
 operator LPCWSTR() const throw();
@@ -133,7 +134,7 @@ operator LPCWSTR() const throw();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает строку текста по типу LPCWSTR.
+Возвращает текстовую строку как тип ЛПКВСТР.
 
 ## <a name="see-also"></a>См. также раздел
 

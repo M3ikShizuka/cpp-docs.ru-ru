@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ккомкомпоситеконтрол Class'
 title: Класс Ккомкомпоситеконтрол
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - CComCompositeControl class
 - composite controls, CComCompositeControl class
 ms.assetid: 1304b931-27e8-4fbc-be8e-bb226ad887fb
-ms.openlocfilehash: a37386c40f119c855dcb8584a72ce85c48a66381
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5c4d5b3e04855d570cab3a85bfe3a4c59482d990
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834743"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146826"
 ---
 # <a name="ccomcompositecontrol-class"></a>Класс Ккомкомпоситеконтрол
 
@@ -68,7 +69,7 @@ class CComCompositeControl : public CComControl<T,CAxDialogImpl<T>>
 |[Ккомкомпоситеконтрол:: m_hbrBackground](#m_hbrbackground)|Кисть фона.|
 |[Ккомкомпоситеконтрол:: m_hWndFocus](#m_hwndfocus)|Маркер окна, на котором в данный момент находится фокус.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Классы, производные от класса `CComCompositeControl` , наследуют функциональные возможности составного элемента управления ActiveX. Элементы управления ActiveX, производные от `CComCompositeControl` , размещаются в стандартном диалоговом окне. Эти типы элементов управления называются составными элементами управления, так как они могут размещать другие элементы управления (собственные элементы управления Windows и элементы управления ActiveX).
 
@@ -126,7 +127,7 @@ HRESULT AdviseSinkMap(bool bAdvise);
 | `CONNECT_E_CANNOTCONNECT` | Приемник не поддерживает интерфейс, необходимый для этой точки подключения. |
 | `CONNECT_E_NOCONNECTION` | Значение cookie не представляет допустимое соединение. Эта ошибка обычно указывает на проблему с записью в сопоставлении приемника событий элемента управления или на проблему с аргументом шаблона, используемым в `IDispEventImpl` `IDispEventSimpleImpl` базовом классе или. |
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Базовая реализация этого метода выполняет поиск по записям в карте приемника событий. Затем он рекомендует или отменяет уведомления точек соединения с COM-объектами, описанными в записи приемника схемы событий. Этот метод-член также зависит от того факта, что производный класс наследует от одного экземпляра `IDispEventImpl` для каждого элемента управления в карте приемника, который должен быть рекомендованным или не рекомендованным.
 
@@ -147,7 +148,7 @@ BOOL CalcExtent(SIZE& size);
 
 Значение TRUE, если элемент управления размещается в диалоговом окне; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Размер возвращается в параметре *size* .
 
@@ -177,7 +178,7 @@ HWND Create(
 
 Описатель для вновь созданного диалогового окна составного элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод обычно вызывается во время активации элемента управления на месте.
 
@@ -189,7 +190,7 @@ HWND Create(
 CComCompositeControl();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Инициализирует элементы данных [ккомкомпоситеконтрол:: m_hbrBackground](#m_hbrbackground) и [ккомкомпоситеконтрол:: m_hWndFocus](#m_hwndfocus) значением NULL.
 
@@ -201,7 +202,7 @@ CComCompositeControl();
 ~CComCompositeControl();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Удаляет фоновый объект, если он существует.
 
@@ -227,7 +228,7 @@ virtual HWND CreateControlWindow(
 
 Возвращает маркер для вновь созданного диалогового окна составного элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывает [ккомкомпоситеконтрол:: Create](#create) и [Ккомкомпоситеконтрол:: адвисесинкмап](#advisesinkmap).
 

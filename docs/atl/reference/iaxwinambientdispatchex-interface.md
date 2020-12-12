@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Иаксвинамбиентдиспатчекс'
 title: Интерфейс Иаксвинамбиентдиспатчекс
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinAmbientDispatchEx interface
 ms.assetid: 2c25e079-6128-4278-bc72-b2c6195ba7ef
-ms.openlocfilehash: 3359c17996eb78c3249abc83ff2d439381f209fe
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: c26ce7fb4f41273a498e3b28e9d6e15d4c89f9ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352990"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139728"
 ---
 # <a name="iaxwinambientdispatchex-interface"></a>Интерфейс Иаксвинамбиентдиспатчекс
 
@@ -28,7 +29,7 @@ ms.locfileid: "91352990"
 MIDL_INTERFACE("B2D0778B - AC99 - 4c58 - A5C8 - E7724E5316B5") IAxWinAmbientDispatchEx : public IAxWinAmbientDispatch
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="methods"></a>Методы
 
@@ -40,7 +41,7 @@ MIDL_INTERFACE("B2D0778B - AC99 - 4c58 - A5C8 - E7724E5316B5") IAxWinAmbientDisp
 
 Включите этот интерфейс в приложения ATL, статически связываемые с ATL и ведущими элементами управления ActiveX, особенно элементы управления ActiveX, имеющие внешние свойства. Не включая этот интерфейс, создаст это утверждение: "возможно, вы забыли передать LIBID в CComModule:: init"
 
-Этот интерфейс предоставляется объектами управления ActiveX ATL. Производный [IAxWinAmbientDispatch](../../atl/reference/iaxwinambientdispatch-interface.md)от иаксвинамбиентдиспатч `IAxWinAmbientDispatchEx` добавляет метод, который позволяет дополнять интерфейс внешних свойств, предоставляемый библиотекой ATL, одним из собственных.
+Этот интерфейс предоставляется объектами управления ActiveX ATL. Производный [](../../atl/reference/iaxwinambientdispatch-interface.md)от иаксвинамбиентдиспатч `IAxWinAmbientDispatchEx` добавляет метод, который позволяет дополнять интерфейс внешних свойств, предоставляемый библиотекой ATL, одним из собственных.
 
 <xref:System.Windows.Forms.AxHost> попытается загрузить сведения о типе `IAxWinAmbientDispatch` `IAxWinAmbientDispatchEx` из библиотеки типов, содержащей код, и из нее.
 

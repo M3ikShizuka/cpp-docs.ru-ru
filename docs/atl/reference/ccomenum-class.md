@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ккоменум Class'
 title: Класс Ккоменум
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComEnum class
 ms.assetid: bff7dd7b-eb6e-4d6e-96ed-2706e66c8b3b
-ms.openlocfilehash: 7241d903e44329eb8fd50155059355a470fb7b90
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0cee4129c0bc5129313b92e144c22de9d161c9cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226624"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146696"
 ---
 # <a name="ccomenum-class"></a>Класс Ккоменум
 
@@ -46,9 +47,9 @@ public CComObjectRootEx<ThreadModel>
 *среадмодел*<br/>
 Потоковая модель класса. По умолчанию для этого параметра используется модель потоков глобальных объектов, используемая в проекте.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CComEnum`Определяет объект перечислителя COM на основе массива. Этот класс аналогичен [ккоменумонстл](../../atl/reference/ccomenumonstl-class.md) , который реализует перечислитель на основе контейнера стандартной библиотеки C++. Ниже приведены типичные действия по использованию этого класса. Дополнительные сведения см. в разделе [коллекции и перечислители ATL](../../atl/atl-collections-and-enumerators.md).
+`CComEnum` Определяет объект перечислителя COM на основе массива. Этот класс аналогичен [ккоменумонстл](../../atl/reference/ccomenumonstl-class.md) , который реализует перечислитель на основе контейнера стандартной библиотеки C++. Ниже приведены типичные действия по использованию этого класса. Дополнительные сведения см. в разделе [коллекции и перечислители ATL](../../atl/atl-collections-and-enumerators.md).
 
 ## <a name="to-use-this-class"></a>Чтобы использовать этот класс, сделайте следующее:
 
@@ -90,7 +91,7 @@ public CComObjectRootEx<ThreadModel>
 
 Этот код создает объект **`typedef`** для `CComEnum` , предоставляющий вектор вариантов через `IEnumVariant` интерфейс. `CVariantArrayCollection`Класс просто специализируется `CreateEnumerator` на работе с объектами перечислителя этого типа и передает необходимые аргументы.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Общие сведения о классах](../../atl/atl-class-overview.md)<br/>
 [ккомобжектсреадмодел](atl-typedefs.md#ccomobjectthreadmodel)<br/>

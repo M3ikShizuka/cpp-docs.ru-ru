@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о меню и ресурсах (OLE)
 title: Меню и ресурсы (OLE)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - containers [MFC], OLE container applications
 - OLE menus and resources [MFC]
 ms.assetid: 52bfa086-7d3d-466f-94c7-c7061f3bdb3a
-ms.openlocfilehash: e705f28476df7b594f9648aee8317759211c66c9
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a6ec4f2750a99935cb0113a3ad607be8a80d4bfe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626212"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97133150"
 ---
 # <a name="menus-and-resources-ole"></a>Меню и ресурсы (OLE)
 
@@ -54,11 +55,11 @@ ms.locfileid: "84626212"
 
 В следующих статьях рассматриваются темы, связанные с контейнерами, серверами и объединением меню, необходимым для реализации встроенной активации.
 
-- [Меню и ресурсы. Добавление контейнеров](menus-and-resources-container-additions.md)
+- [Меню и ресурсы: добавления контейнеров](menus-and-resources-container-additions.md)
 
-- [Меню и ресурсы. Добавление серверов](menus-and-resources-server-additions.md)
+- [Меню и ресурсы: дополнения сервера](menus-and-resources-server-additions.md)
 
-- [Меню и ресурсы. Слияние меню](menus-and-resources-menu-merging.md)
+- [Меню и ресурсы: слияние меню](menus-and-resources-menu-merging.md)
 
 ## <a name="see-also"></a>См. также раздел
 

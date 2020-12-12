@@ -1,18 +1,19 @@
 ---
+description: 'Дополнительные сведения о: Пимпл для инкапсуляции Compile-Time (современный C++)'
 title: Pimpl для инкапсуляции времени компиляции (современный C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3e8a90a-b328-4990-82bb-e1b147f76e07
-ms.openlocfilehash: f1eb06ad3a52be486f085babf699677951b1ee71
-ms.sourcegitcommit: 654aecaeb5d3e3fe6bc926bafd6d5ace0d20a80e
+ms.openlocfilehash: 95d1ca4f377cc911e862885e86f846d8536d3b1f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74245177"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145890"
 ---
 # <a name="pimpl-for-compile-time-encapsulation-modern-c"></a>Pimpl для инкапсуляции времени компиляции (современный C++)
 
-*Идиома Пимпл* — это современный C++ метод скрытия реализации, для минимального связывания и разделения интерфейсов. Пимпл является коротким для "указателя на реализацию". Возможно, вы уже знакомы с концепцией, но знаете ее по другим именам, таким как Чешир Cat или идиома брандмауэра компилятора.
+*Идиома Пимпл* является современной методикой C++ для скрытия реализации, для сворачивания связывания и разделения интерфейсов. Пимпл является коротким для "указателя на реализацию". Возможно, вы уже знакомы с концепцией, но знаете ее по другим именам, таким как Чешир Cat или идиома брандмауэра компилятора.
 
 ## <a name="why-use-pimpl"></a>Зачем использовать Пимпл?
 
@@ -22,7 +23,7 @@ ms.locfileid: "74245177"
 
 - Разделение интерфейса и реализации.
 
-- Компакт.
+- Мобильность.
 
 ## <a name="pimpl-header"></a>Заголовок Пимпл
 
@@ -39,7 +40,7 @@ private:
 
 ## <a name="pimpl-implementation"></a>Реализация Пимпл
 
-Определите класс `impl` в cpp – файле.
+Определите `impl` класс в cpp – файле.
 
 ```cpp
 // my_class.cpp
@@ -57,8 +58,8 @@ my_class::my_class(): pimpl( new impl )
 
 Рассмотрите возможность добавления поддержки для специализации, не создающей исключение.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Добро пожаловать обратно вC++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Возвращение к C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [Справочник по языку C++](../cpp/cpp-language-reference.md)<br/>
 [Стандартная библиотека C++](../standard-library/cpp-standard-library-reference.md)

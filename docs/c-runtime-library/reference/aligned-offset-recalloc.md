@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _aligned_offset_recalloc'
 title: _aligned_offset_recalloc
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - aligned_offset_recalloc function
 - _aligned_offset_recalloc function
 ms.assetid: a258f54e-eeb4-4853-96fc-007d710f98e9
-ms.openlocfilehash: 4c71bc701beaabe179676656b331fcce966d1db1
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: ce24dd0394d8bde67811bc0a175bbbfbb45dc67a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917170"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135763"
 ---
 # <a name="_aligned_offset_recalloc"></a>_aligned_offset_recalloc
 
@@ -62,7 +63,7 @@ void * _aligned_offset_recalloc(
 *size*<br/>
 Длина каждого элемента в байтах.
 
-*выравнивание*<br/>
+*Выравнивание*<br/>
 Значение выравнивания, которое должно быть целой степенью числа 2.
 
 *offset*<br/>
@@ -72,15 +73,15 @@ void * _aligned_offset_recalloc(
 
 **_aligned_offset_recalloc** возвращает указатель void на перераспределенный (и, возможно, перемещенный) блок памяти. Возвращаемое значение равно **null** , если размер равен нулю, а аргумент буфера не равен **null**, или если недостаточно памяти для расширения блока до заданного размера. В первом случае исходный блок освобождается. Во втором случае исходный блок не изменяется. Возвращаемое значение указывает на пространство хранилища, которое гарантированно будет соответственно выровнено для хранения объектов любого типа. Чтобы получить указатель на тип, отличающийся от void, используйте приведение типа для возвращаемого значения.
 
-**_aligned_offset_recalloc** `__declspec(noalias)` помечается `__declspec(restrict)`и, что означает, что функция гарантированно не изменяет глобальные переменные и что возвращаемый указатель не имеет псевдонима. Дополнительные сведения см. в разделах [noalias](../../cpp/noalias.md) и [restrict](../../cpp/restrict.md).
+**_aligned_offset_recalloc** помечается `__declspec(noalias)` и `__declspec(restrict)` , что означает, что функция гарантированно не изменяет глобальные переменные и что возвращаемый указатель не имеет псевдонима. Дополнительные сведения см. в разделах [noalias](../../cpp/noalias.md) и [restrict](../../cpp/restrict.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Как и [_aligned_offset_malloc](aligned-offset-malloc.md), **_aligned_offset_recalloc** позволяет выстроить структуру по смещению в пределах структуры.
 
-**_aligned_offset_recalloc** основан на **malloc**. Дополнительные сведения об использовании **_aligned_offset_malloc**см. в разделе [malloc](malloc.md). Если *мемблокк* имеет **значение NULL**, функция вызывает **_aligned_offset_malloc** внутренне.
+**_aligned_offset_recalloc** основан на **malloc**. Дополнительные сведения об использовании **_aligned_offset_malloc** см. в разделе [malloc](malloc.md). Если *мемблокк* имеет **значение NULL**, функция вызывает **_aligned_offset_malloc** внутренне.
 
-Эта **функция устанавливает значение** **еномем** , если выделение памяти завершилось ошибкой или если запрошенный размер (*Размер**номера* * ) превышает **_HEAP_MAXREQ**. Дополнительные **сведения об этом см. в разделе** [пере_doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Кроме того, **_aligned_offset_recalloc** проверяет свои параметры. Если параметр *alignment* не является степенью 2 или *смещение* больше или равно запрошенному размеру и не равно нулю, эта функция вызывает обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эта функция возвращает **значение NULL** **и устанавливает для** **еинвал**.
+Эта **функция устанавливает значение** **еномем** , если выделение памяти завершилось ошибкой или если запрошенный размер(  *  *Размер* номера) превышает **_HEAP_MAXREQ**. Дополнительные **сведения об этом см. в разделе** [пере_doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Кроме того, **_aligned_offset_recalloc** проверяет свои параметры. Если параметр *alignment* не является степенью 2 или *смещение* больше или равно запрошенному размеру и не равно нулю, эта функция вызывает обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эта функция возвращает **значение NULL** **и устанавливает для** **еинвал**.
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

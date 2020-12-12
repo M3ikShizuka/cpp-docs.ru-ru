@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: типы выражений'
 title: Типы выражений
 ms.custom: index-page
 ms.date: 11/04/2016
 helpviewer_keywords:
 - expressions [C++], types
 ms.assetid: 1e7540b0-8fdb-49ab-b3e1-6ec439ff473a
-ms.openlocfilehash: 587715cd1fd38bf6481ba833b1532f5e492d4803
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c68f89ac981d8918c60e2d67418d3f00778ca664
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160662"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145786"
 ---
 # <a name="types-of-expressions"></a>Типы выражений
 

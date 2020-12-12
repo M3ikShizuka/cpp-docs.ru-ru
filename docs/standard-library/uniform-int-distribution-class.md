@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: uniform_int_distribution классе'
 title: Класс uniform_int_distribution
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::uniform_int_distribution [C++], param_type
 - std::uniform_int_distribution [C++], param_type
 ms.assetid: a1867dcd-3bd9-4787-afe3-4b62692c1d04
-ms.openlocfilehash: 3d9bb3cf9c4e34916dad3e435c7f4040dcc5f373
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 96e5782c04ce77f8d705f60002ef8316b26793e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831415"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132695"
 ---
 # <a name="uniform_int_distribution-class"></a>Класс uniform_int_distribution
 
@@ -74,7 +75,7 @@ public:
 *инттипе*\
 Целочисленный тип результата, по умолчанию — **`int`** . Возможные типы см. в разделе [\<random>](../standard-library/random.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса описывает инклюзивное инклюзивное распределение, которое создает значения указанного пользователем целочисленного типа с распределением, так что каждое значение одинаково возможно. В следующей таблице представлены ссылки на статьи об отдельных членах.
 
@@ -198,7 +199,7 @@ explicit uniform_int_distribution(const param_type& parm);
 *ParM*\
 Структура `param_type`, используемая для формирования распределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительное условие:**`a ≤ b`
 
@@ -234,7 +235,7 @@ struct param_type {
 *Правильно*\
 Объект `param_type`, который требуется сравнить с данным объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительное условие:**`a ≤ b`
 

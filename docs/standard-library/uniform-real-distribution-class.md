@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: uniform_real_distribution классе'
 title: Класс uniform_real_distribution
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::uniform_real_distribution [C++], param_type
 - std::uniform_real_distribution [C++], param_type
 ms.assetid: 5cf906fd-0319-4984-b21b-98425cd7532d
-ms.openlocfilehash: ba2ec419e524ca571120fe82c7cbf63c1a97eaaa
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ae272955cb7586342d403e332b981ca8a1005256
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839599"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132682"
 ---
 # <a name="uniform_real_distribution-class"></a>Класс uniform_real_distribution
 
@@ -74,7 +75,7 @@ public:
 *реалтипе*\
 Тип результата операции с плавающей запятой, по умолчанию — **`double`** . Возможные типы см. в разделе [\<random>](../standard-library/random.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса описывает инклюзивное эксклюзивное распределение, которое создает значения заданного пользователем целочисленного типа с плавающей запятой с распределением таким образом, что каждое значение одинаково возможно. В следующей таблице представлены ссылки на статьи об отдельных членах.
 
@@ -196,7 +197,7 @@ explicit uniform_real_distribution(const param_type& parm);
 *ParM*\
 Структура `param_type`, используемая для формирования распределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительное условие:**`a < b`
 
@@ -231,7 +232,7 @@ struct param_type {
 *Правильно*\
 Объект `param_type`, который требуется сравнить с данным объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительное условие:**`a < b`
 

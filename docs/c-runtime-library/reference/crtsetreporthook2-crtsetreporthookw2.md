@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _CrtSetReportHook2, _CrtSetReportHookW2'
 title: _CrtSetReportHook2, _CrtSetReportHookW2
 ms.date: 11/04/2016
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - _CrtSetReportHookW2 function
 - CrtSetReportHookW2 function
 ms.assetid: 12e5f68d-c8a7-4b1a-9a75-72ba4a8592d0
-ms.openlocfilehash: 37ec0cea3fb558a5926e6f9c707e0e5033a17222
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: eab1ad4da90d5a86b821c374aae0aeceb97d7518
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942217"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135724"
 ---
 # <a name="_crtsetreporthook2-_crtsetreporthookw2"></a>_CrtSetReportHook2, _CrtSetReportHookW2
 
@@ -66,13 +67,13 @@ int _CrtSetReportHookW2(
 
 -1, если обнаружена ошибка, с набором **еинвал** или **еномем** ; в противном случае возвращает счетчик ссылок *пфнневхук* после вызова.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-**_CrtSetReportHook2** и **_CrtSetReportHookW2** позволяют подключать или отменять ловушки функции, тогда как [_CrtSetReportHook](crtsetreporthook.md) позволяет только привязать функцию.
+**_CrtSetReportHook2** и **_CrtSetReportHookW2** позволяют подключать или отключать функцию, в то время как [_CrtSetReportHook](crtsetreporthook.md) позволяет только привязать функцию.
 
 **_CrtSetReportHook2** или **_CrtSetReportHookW2** следует использовать вместо **_CrtSetReportHook** при вызове обработчика в библиотеке DLL, а также при загрузке нескольких библиотек DLL и задании собственных функций-ловушек. В таком случае библиотеки DLL могут быть выгружены не в том порядке, в котором они были загружены, а функция-обработчик может продолжать указывать на выгруженную библиотеку DLL. Любой отладочный вывод аварийно завершает процесс, если функции-обработчики были добавлены с помощью **_CrtSetReportHook**.
 
-Любые функции-обработчики, добавленные с помощью **_CrtSetReportHook** , вызываются, если с **_CrtSetReportHook2** или **_CrtSetReportHookW2** не добавлены функции-обработчики или если все функции-обработчики добавлены с помощью **_CrtSetReportHook2** и **_ CrtSetReportHookW2** возвращает **значение false**.
+Любые функции-обработчики, добавленные с **_CrtSetReportHook** , вызываются, если с **_CrtSetReportHook2** или **_CrtSetReportHookW2** не добавлены функции-обработчики или если все функции-обработчики добавлены с **_CrtSetReportHook2** и **_CrtSetReportHookW2** возвращают **значение false**.
 
 Доступна версия этой функции для расширенных символов. Функции-обработчики отчетов принимают строку, тип которой (расширенные или обычные символы) должен соответствовать версии используемой функции. Используйте следующий прототип функции для обработчиков отчетов, используемых с версией этой функции для расширенных символов:
 
@@ -98,7 +99,7 @@ int YourReportHook( int reportType, char *message, int *returnValue );
 |**_CrtSetReportHook2**|\<crtdbg.h>|\<errno.h>|
 |**_CrtSetReportHookW2**|\<crtdbg.h>|\<errno.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Библиотеки
 
@@ -254,4 +255,4 @@ _CrtSetReportHook2(_CRT_RPTHOOK_REMOVE, TestHook1) returned 0
 
 ## <a name="see-also"></a>См. также
 
-[Процедуры отладки](../../c-runtime-library/debug-routines.md)<br/>
+[Отладочные подпрограммы](../../c-runtime-library/debug-routines.md)<br/>

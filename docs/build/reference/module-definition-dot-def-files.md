@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Module-Definition (. DEF-файлы)'
 title: Файлы определения модуля (DEF)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,42 +7,42 @@ helpviewer_keywords:
 - module definition files
 - .def files
 ms.assetid: 08c0bc28-c5d2-47aa-9624-7fc68bcaa4d8
-ms.openlocfilehash: 0047f24722644cd9a68bbbf827ced26ad085d4c1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d52141a2917b2c82616597b2d070a84b96d1a653
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62321232"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137817"
 ---
 # <a name="module-definition-def-files"></a>Файлы определения модуля (DEF)
 
-Файлы определения модуля (DEF) предоставляют сведения о экспортов, атрибуты и другие сведения о программе для связывания для компоновщика. DEF-файл наиболее полезна в случаях, когда построение библиотеки DLL. Так как существуют [параметры компоновщика MSVC](linker-options.md) , можно использовать вместо операторов определения модуля, DEF-файлы обычно не требуются. Можно также использовать [__declspec(dllexport)](../exporting-from-a-dll-using-declspec-dllexport.md) как способ указать экспортируемые функции.
+Файлы определения модуля (DEF) предоставляют компоновщику сведения о экспорте, атрибутах и другие сведения о программе, которую необходимо связать. DEF-файл наиболее удобен при создании библиотеки DLL. Так как существуют [компилятором MSVC параметры компоновщика](linker-options.md) , которые можно использовать вместо операторов определения модуля, DEF-файлы обычно не требуются. Можно также использовать [__declspec (dllexport)](../exporting-from-a-dll-using-declspec-dllexport.md) в качестве способа указания экспортированных функций.
 
-DEF-файл можно вызывать во время на фазе компоновщика с [/DEF (указание файла определения модуля)](def-specify-module-definition-file.md) параметр компоновщика.
+DEF-файл можно вызвать на этапе компоновщика с помощью параметра компоновщика [/DEF (укажите Module-Definition файл)](def-specify-module-definition-file.md) .
 
-Если вы создаете файл .exe, не имеющего экспортов, с помощью DEF-файла сделает Загрузка файла в выходных данных большего размера и медленнее.
+Если вы создаете exe-файл, который не содержит экспорты, то использование файла. def приведет к увеличению и более медленной загрузке выходного файла.
 
-Например, см. в разделе [Экспорт из DLL с использованием DEF-файлы](../exporting-from-a-dll-using-def-files.md).
+Пример см. в разделе [Экспорт из библиотеки DLL с использованием DEF-файлов](../exporting-from-a-dll-using-def-files.md).
 
-См. Дополнительные сведения в следующих разделах:
+Дополнительные сведения см. в следующих разделах.
 
-- [Правила для операторов определения модуля](rules-for-module-definition-statements.md)
+- [Правила для Module-Definitionных инструкций](rules-for-module-definition-statements.md)
 
-- [EXPORTS](exports.md)
+- [ЭКСПОРТ](exports.md)
 
 - [HEAPSIZE](heapsize.md)
 
-- [LIBRARY](library.md)
+- [Библиотечная](library.md)
 
 - [ИМЯ](name-c-cpp.md)
 
-- [РАЗДЕЛЫ](sections-c-cpp.md)
+- [СВЯЩЕН](sections-c-cpp.md)
 
 - [STACKSIZE](stacksize.md)
 
-- [STUB](stub.md)
+- [ЛОВУШЕК](stub.md)
 
-- [ВЕРСИЯ](version-c-cpp.md)
+- [VERSION](version-c-cpp.md)
 
 - [Зарезервированные слова](reserved-words.md)
 

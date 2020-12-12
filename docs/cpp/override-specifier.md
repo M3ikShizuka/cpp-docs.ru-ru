@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: спецификатор переопределения'
 title: Спецификатор override
 ms.date: 11/04/2016
 helpviewer_keywords:
 - override Identifier
 ms.assetid: b286fb46-9374-4ad8-b2e7-4607119b6133
-ms.openlocfilehash: 82837ae34ab786e607df54038493b14350574a15
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: da29c5c37ff834513736bda02745d031fe3d92aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188484"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146007"
 ---
 # <a name="override-specifier"></a>Спецификатор override
 
@@ -51,7 +52,7 @@ class DerivedClass: public BaseClass
 };
 ```
 
-При использовании **переопределения**компилятор создает ошибки вместо автоматического создания новых функций элементов.
+При использовании **переопределения** компилятор создает ошибки вместо автоматического создания новых функций элементов.
 
 ```cpp
 class BaseClass
@@ -82,5 +83,5 @@ class DerivedClass: public BaseClass
 
 ## <a name="see-also"></a>См. также раздел
 
-[Описатель final](../cpp/final-specifier.md)<br/>
+[Окончательный описатель](../cpp/final-specifier.md)<br/>
 [Ключевые слова](../cpp/keywords-cpp.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Platform::D состояния:: IPrintable Interface'
 title: Интерфейс Platform::Details::IPrintable
 ms.date: 12/30/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Details::IPrintable Interface
 ms.assetid: b863a872-2563-4d90-88e0-c5a0bdde83f4
-ms.openlocfilehash: d6de13e05ffe6144fd6db0ba5e79f92c0a708dbb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 52a5645ab8108f28e5ef8e2d632a729d9d9e259d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330418"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145697"
 ---
 # <a name="platformdetailsiprintable-interface"></a>Интерфейс Platform::Details::IPrintable
 
@@ -24,7 +25,7 @@ ms.locfileid: "62330418"
 interface class IPrintable;
 ```
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Remarks
 
 Этот интерфейс предоставляется исключительно для полноты информации, поскольку его данные можно изучить с помощью браузеров.
 
@@ -34,10 +35,10 @@ interface class IPrintable;
 
 ### <a name="requirements"></a>Требования
 
-**Метаданные:** platform.winmd
+**Метаданные:** Platform. winmd
 
 **Пространство имен:** Platform::Details
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Platform](platform-namespace-c-cx.md)
+[Пространство имен платформы](platform-namespace-c-cx.md)

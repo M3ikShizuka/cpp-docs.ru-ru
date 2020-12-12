@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кстоккпропимпл Class'
 title: Класс Кстоккпропимпл
 ms.date: 05/06/2019
 f1_keywords:
@@ -64,12 +65,12 @@ helpviewer_keywords:
 - controls [ATL], stock properties
 - stock properties, ATL controls
 ms.assetid: 45f11d7d-6580-4a0e-872d-3bc8b836cfda
-ms.openlocfilehash: 9d54e4e5c49e73a12fc5d360c3963c2bcf5b2b38
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d2d71b4b318daeb6590e36d30f71e37a5d2b52b9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835588"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140522"
 ---
 # <a name="cstockpropimpl-class"></a>Класс Кстоккпропимпл
 
@@ -178,7 +179,7 @@ class ATL_NO_VTABLE CStockPropImpl :
 |[putref_MouseIcon](#putref_mouseicon)|Вызовите этот метод, чтобы задать свойства рисунка (значок, точечный рисунок или метафайл), отображаемые при наведении указателя мыши на элемент управления со счетчиком ссылок.|
 |[putref_Picture](#putref_picture)|Вызовите этот метод, чтобы задать отображение свойств рисунка (значка, точечного рисунка или метафайла) со счетчиком ссылок.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `CStockPropImpl` предоставляет методы **размещения** и **получения** для каждого стандартного свойства. Эти методы предоставляют код, необходимый для задания или получения элемента данных, связанного с каждым свойством, а также для уведомления и синхронизации с контейнером при изменении любого свойства.
 
@@ -192,7 +193,7 @@ Visual Studio обеспечивает поддержку стандартных
 
 - маусеикон
 
-- Рисунок
+- Picture
 
 Те же три стандартных свойства должны иметь соответствующие элементы данных типа `CComPtr` или другого класса, обеспечивающего правильный подсчет ссылок на интерфейс с помощью оператора присваивания.
 
@@ -956,7 +957,7 @@ HRESULT STDMETHODCALLTYPE put_HWND(LONG_PTR /* hWnd */);
 
 Возвращает E_FAIL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Маркер окна является значением только для чтения.
 
@@ -1096,7 +1097,7 @@ HRESULT STDMETHODCALLTYPE put_Window(LONG_PTR hWnd);
 
 Возвращает E_FAIL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Маркер окна является значением только для чтения.
 
@@ -1117,7 +1118,7 @@ HRESULT STDMETHODCALLTYPE putref_Font(IFontDisp* pFont);
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 То же, что и [кстоккпропимпл::p ut_Font](#put_font), но со счетчиком ссылок.
 
@@ -1138,7 +1139,7 @@ HRESULT STDMETHODCALLTYPE putref_MouseIcon(IPictureDisp* pPicture);
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 То же, что и [кстоккпропимпл::p ut_MouseIcon](#put_mouseicon), но со счетчиком ссылок.
 
@@ -1159,7 +1160,7 @@ HRESULT STDMETHODCALLTYPE putref_Picture(IPictureDisp* pPicture);
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 То же, что и [кстоккпропимпл::p ut_Picture](#put_picture), но со счетчиком ссылок.
 

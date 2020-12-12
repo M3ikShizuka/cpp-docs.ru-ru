@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: классы точек подключения'
 title: Классы точек подключения (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - classes [C++], connection points
 - connection points classes
 ms.assetid: 076365fa-299a-4dce-84c3-a5dff0e0da1f
-ms.openlocfilehash: 0dba06b072e1e9ca545ccbea196fcfe371b02157
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 28d41f15aeafd98c8c9bcac27fde25d0b2037765
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492442"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148243"
 ---
 # <a name="connection-points-classes"></a>Классы точек подключения
 
@@ -33,14 +34,14 @@ ms.locfileid: "69492442"
 
 - [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) Работает в сочетании с картой приемника событий в классе для маршрутизации событий в соответствующую функцию обработчика.
 
-## <a name="related-articles"></a>Связанные статьи
+## <a name="related-articles"></a>Похожие статьи
 
 [Точки подключения](../atl/atl-connection-points.md)
 
 [Обработка событий и ATL](../atl/event-handling-and-atl.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Обзор класса](../atl/atl-class-overview.md)<br/>
-[Макросы для работы с точками подключения](../atl/reference/connection-point-macros.md)<br/>
+[Общие сведения о классах](../atl/atl-class-overview.md)<br/>
+[Макросы точек подключения](../atl/reference/connection-point-macros.md)<br/>
 [Глобальные функции точек подключения](../atl/reference/connection-point-global-functions.md)

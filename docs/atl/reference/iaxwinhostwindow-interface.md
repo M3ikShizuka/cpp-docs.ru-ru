@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Иаксвинхоствиндов'
 title: Интерфейс Иаксвинхоствиндов
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinHostWindow interface
 ms.assetid: 9821c035-cd52-4c46-b58a-9278064f09b4
-ms.openlocfilehash: 44681b94e0bd1dfd757ebfa19f83074785dd95f5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 86cccd2b9ae19d5020cd1cf7ff2f0aff8759060e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833378"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139715"
 ---
 # <a name="iaxwinhostwindow-interface"></a>Интерфейс Иаксвинхоствиндов
 
@@ -33,7 +34,7 @@ ms.locfileid: "88833378"
 interface IAxWinHostWindow : IUnknown
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="methods"></a>Методы
 
@@ -46,7 +47,7 @@ interface IAxWinHostWindow : IUnknown
 |[сетекстерналдиспатч](#setexternaldispatch)|Задает внешний `IDispatch` интерфейс.|
 |[сетекстерналуихандлер](#setexternaluihandler)|Задает внешний `IDocHostUIHandlerDispatch` интерфейс.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Этот интерфейс предоставляется объектами управления ActiveX ATL. Вызывайте методы этого интерфейса, чтобы создать и/или присоединить элемент управления к объекту узла, получить интерфейс из размещенного элемента управления или задать внешний диспетчерский интерфейс или обработчик пользовательского интерфейса для использования при размещении веб-браузера.
 
@@ -105,7 +106,7 @@ STDMETHOD(CreateControl)(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это окно будет подклассировать объектом размещения, который предоставляет этот интерфейс, чтобы сообщения могли быть отражены в элементе управления, а другие функции контейнера будут работать.
 
@@ -151,7 +152,7 @@ STDMETHOD(CreateControlEx)(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В отличие от `CreateControl` метода, `CreateControlEx` также позволяет получить указатель интерфейса на только что созданном элементе управления и настроить приемник событий для получения событий, инициированных элементом управления.
 
@@ -213,7 +214,7 @@ STDMETHOD(SetExternalUIHandler)(IDocHostUIHandlerDispatch* pDisp);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция используется элементами управления (например, элементом управления веб-браузера), которые запрашивают интерфейс узла узла `IDocHostUIHandlerDispatch` .
 

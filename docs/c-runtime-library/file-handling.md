@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: обработка файлов'
 title: Обработка файлов
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - files [C++], opening
 - files [C++], manipulating
 ms.assetid: 48119e2e-e94f-4602-b08b-b72440f731d8
-ms.openlocfilehash: 2a5c6ec3a70a85bf81f00b104d0c505677f609ac
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
-ms.translationtype: HT
+ms.openlocfilehash: 5727f2c4f1d0d79a471b8ec5a76ed719380e2d83
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70740056"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135776"
 ---
 # <a name="file-handling"></a>Обработка файлов
 
@@ -25,7 +26,7 @@ ms.locfileid: "70740056"
 
 Эти подпрограммы работают с файлами, идентифицируемыми дескрипторами файлов.
 
-|Подпрограмма|Для изменения этого значения используйте функцию|
+|Подпрограмма|Использовать|
 |-------------|---------|
 |[_chsize](../c-runtime-library/reference/chsize.md),[_chsize_s](../c-runtime-library/reference/chsize-s.md)|Изменяет размер файла|
 |[_filelength, _filelengthi64](../c-runtime-library/reference/filelength-filelengthi64.md)|Получает длину файла|
@@ -48,7 +49,7 @@ ms.locfileid: "70740056"
 |[_makepath, _wmakepath](../c-runtime-library/reference/makepath-wmakepath.md), [_makepath_s, _wmakepath_s](../c-runtime-library/reference/makepath-s-wmakepath-s.md)|Объединяет компоненты пути в один полный путь|
 |[_mktemp, _wmktemp](../c-runtime-library/reference/mktemp-wmktemp.md), [_mktemp_s, _wmktemp_s](../c-runtime-library/reference/mktemp-s-wmktemp-s.md)|Создает уникальное имя файла|
 |[remove, _wremove](../c-runtime-library/reference/remove-wremove.md)|Удалить файл|
-|[rename, _wrename](../c-runtime-library/reference/rename-wrename.md)|Переименовывает файл|
+|[rename, _wrename](../c-runtime-library/reference/rename-wrename.md)|Переименовать файл|
 |[_splitpath, _wsplitpath](../c-runtime-library/reference/splitpath-wsplitpath.md), [_splitpath_s, _wsplitpath_s](../c-runtime-library/reference/splitpath-s-wsplitpath-s.md)|Разбирает путь на компоненты|
 |[_stat, _stat64, _stati64, _wstat, _wstat64, _wstati64](../c-runtime-library/reference/stat-functions.md)|Получает сведения о состоянии файла по имени|
 |[_umask](../c-runtime-library/reference/umask.md), [_umask_s](../c-runtime-library/reference/umask-s.md)|Задает маску разрешений по умолчанию для новых файлов, создаваемых программой|
@@ -84,8 +85,8 @@ ms.locfileid: "70740056"
 
 - [CreateNamedPipe](/windows/win32/api/winbase/nf-winbase-createnamedpipea)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Универсальные подпрограммы среды выполнения C по категориям](../c-runtime-library/run-time-routines-by-category.md)<br/>
-[Управление каталогами](../c-runtime-library/directory-control.md)<br/>
+[Подпрограммы универсальной среды выполнения C по категориям](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Управление каталогом](../c-runtime-library/directory-control.md)<br/>
 [Системные вызовы](../c-runtime-library/system-calls.md)<br/>

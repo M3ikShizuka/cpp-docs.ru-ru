@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ксреадпул Class'
 title: Класс Ксреадпул
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - CThreadPool class
 ms.assetid: 06683718-01b9-413c-9481-2dc1734ec70f
-ms.openlocfilehash: 12b28cd4f54fa426bb6ad2b2710d62b426ada2b6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 445b32ccff2df2456687e9b9ae34950c91c00613
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226546"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140365"
 ---
 # <a name="cthreadpool-class"></a>Класс Ксреадпул
 
@@ -40,7 +41,7 @@ class CThreadPool : public IThreadPoolConfig
 
 #### <a name="parameters"></a>Параметры
 
-*Работников*<br/>
+*Рабочий узел*<br/>
 Класс, которому соответствует [Рабочая роль, архетипа](../../atl/reference/worker-archetype.md) предоставление кода, используемого для обработки рабочих элементов, поставленных в очередь пула потоков.
 
 *среадтраитс*<br/>
@@ -50,14 +51,14 @@ class CThreadPool : public IThreadPoolConfig
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[Ксреадпул:: Ксреадпул](#cthreadpool)|Конструктор для пула потоков.|
 |[Ксреадпул:: ~ Ксреадпул](#dtor)|Деструктор для пула потоков.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[Ксреадпул:: AddRef](#addref)|Реализация метода `IUnknown::AddRef`.|
 |[Ксреадпул:: Жетнумсреадс](#getnumthreads)|Вызовите этот метод, чтобы получить количество потоков в пуле.|
@@ -72,7 +73,7 @@ class CThreadPool : public IThreadPoolConfig
 |[Ксреадпул:: SetTimeout](#settimeout)|Вызовите этот метод, чтобы задать максимальное время в миллисекундах, в течение которого пул потоков будет ожидать завершения работы потока.|
 |[Ксреадпул:: Shutdown](#shutdown)|Вызовите этот метод, чтобы завершить работу пула потоков.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Потоки в пуле создаются и уничтожаются при инициализации пула, изменении их размера или завершении работы. Экземпляр класса *Worker* будет создан в стеке каждого рабочего потока в пуле. Каждый экземпляр будет находиться в течение времени существования потока.
 
@@ -96,7 +97,7 @@ class CThreadPool : public IThreadPoolConfig
 
 **Заголовок:** файлов atlutil. h
 
-## <a name="cthreadpooladdref"></a><a name="addref"></a>Ксреадпул:: AddRef
+## <a name="cthreadpooladdref"></a><a name="addref"></a> Ксреадпул:: AddRef
 
 Реализация метода `IUnknown::AddRef`.
 
@@ -108,11 +109,11 @@ ULONG STDMETHODCALLTYPE AddRef() throw();
 
 Всегда возвращает 1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот класс не реализует контроль времени существования с помощью подсчета ссылок.
 
-## <a name="cthreadpoolcthreadpool"></a><a name="cthreadpool"></a>Ксреадпул:: Ксреадпул
+## <a name="cthreadpoolcthreadpool"></a><a name="cthreadpool"></a> Ксреадпул:: Ксреадпул
 
 Конструктор для пула потоков.
 
@@ -120,11 +121,11 @@ ULONG STDMETHODCALLTYPE AddRef() throw();
 CThreadPool() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Инициализирует значение времени ожидания для ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT. Время по умолчанию — 36 секунд. При необходимости можно определить собственное положительное целочисленное значение для этого символа, прежде чем включать файлов atlutil. h.
 
-## <a name="cthreadpoolcthreadpool"></a><a name="dtor"></a>Ксреадпул:: ~ Ксреадпул
+## <a name="cthreadpoolcthreadpool"></a><a name="dtor"></a> Ксреадпул:: ~ Ксреадпул
 
 Деструктор для пула потоков.
 
@@ -132,11 +133,11 @@ CThreadPool() throw();
 ~CThreadPool() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызывает [ксреадпул:: Shutdown](#shutdown).
 
-## <a name="cthreadpoolgetnumthreads"></a><a name="getnumthreads"></a>Ксреадпул:: Жетнумсреадс
+## <a name="cthreadpoolgetnumthreads"></a><a name="getnumthreads"></a> Ксреадпул:: Жетнумсреадс
 
 Вызовите этот метод, чтобы получить количество потоков в пуле.
 
@@ -148,7 +149,7 @@ int GetNumThreads() throw();
 
 Возвращает число потоков в пуле.
 
-## <a name="cthreadpoolgetqueuehandle"></a><a name="getqueuehandle"></a>Ксреадпул:: Жеткуеуехандле
+## <a name="cthreadpoolgetqueuehandle"></a><a name="getqueuehandle"></a> Ксреадпул:: Жеткуеуехандле
 
 Вызовите этот метод, чтобы получить маркер порта завершения ввода-вывода, используемого для очереди рабочих элементов.
 
@@ -160,7 +161,7 @@ HANDLE GetQueueHandle() throw();
 
 Возвращает маркер очереди или значение NULL, если пул потоков не был инициализирован.
 
-## <a name="cthreadpoolgetsize"></a><a name="getsize"></a>Ксреадпул:: DataSize
+## <a name="cthreadpoolgetsize"></a><a name="getsize"></a> Ксреадпул:: DataSize
 
 Вызовите этот метод, чтобы получить количество потоков в пуле.
 
@@ -177,7 +178,7 @@ HRESULT STDMETHODCALLTYPE GetSize(int* pnNumThreads) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-## <a name="cthreadpoolgettimeout"></a><a name="gettimeout"></a>Ксреадпул:: не истечение времени
+## <a name="cthreadpoolgettimeout"></a><a name="gettimeout"></a> Ксреадпул:: не истечение времени
 
 Вызовите этот метод, чтобы получить максимальное время в миллисекундах, в течение которого пул потоков будет ожидать завершения работы потока.
 
@@ -194,11 +195,11 @@ HRESULT STDMETHODCALLTYPE GetTimeout(DWORD* pdwMaxWait) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это значение времени ожидания используется [ксреадпул:: Shutdown](#shutdown) , если для этого метода не указано другое значение.
 
-## <a name="cthreadpoolinitialize"></a><a name="initialize"></a>Ксреадпул:: Initialize
+## <a name="cthreadpoolinitialize"></a><a name="initialize"></a> Ксреадпул:: Initialize
 
 Вызовите этот метод, чтобы инициализировать пул потоков.
 
@@ -232,7 +233,7 @@ HRESULT Initialize(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-## <a name="cthreadpoolqueryinterface"></a><a name="queryinterface"></a>Ксреадпул:: QueryInterface
+## <a name="cthreadpoolqueryinterface"></a><a name="queryinterface"></a> Ксреадпул:: QueryInterface
 
 Реализация метода `IUnknown::QueryInterface`.
 
@@ -240,11 +241,11 @@ HRESULT Initialize(
 HRESULT STDMETHODCALLTYPE QueryInterface(REFIID riid, void** ppv) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Объекты этого класса могут быть успешно запрошены для `IUnknown` интерфейсов и [исреадпулконфиг](../../atl/reference/ithreadpoolconfig-interface.md) .
 
-## <a name="cthreadpoolqueuerequest"></a><a name="queuerequest"></a>Ксреадпул:: Куеуерекуест
+## <a name="cthreadpoolqueuerequest"></a><a name="queuerequest"></a> Ксреадпул:: Куеуерекуест
 
 Вызовите этот метод, чтобы поставить в очередь рабочий элемент, который будет обрабатываться потоком в пуле.
 
@@ -261,11 +262,11 @@ BOOL QueueRequest(Worker::RequestType request) throw();
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод добавляет рабочий элемент в очередь. Потоки в пуле выбирают элементы за пределами очереди в порядке их получения.
 
-## <a name="cthreadpoolrelease"></a><a name="release"></a>Ксреадпул:: Release
+## <a name="cthreadpoolrelease"></a><a name="release"></a> Ксреадпул:: Release
 
 Реализация метода `IUnknown::Release`.
 
@@ -277,11 +278,11 @@ ULONG STDMETHODCALLTYPE Release() throw();
 
 Всегда возвращает 1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот класс не реализует контроль времени существования с помощью подсчета ссылок.
 
-## <a name="cthreadpoolsetsize"></a><a name="setsize"></a>Ксреадпул:: SetSize
+## <a name="cthreadpoolsetsize"></a><a name="setsize"></a> Ксреадпул:: SetSize
 
 Вызовите этот метод, чтобы задать количество потоков в пуле.
 
@@ -302,11 +303,11 @@ HRESULT STDMETHODCALLTYPE SetSizeint nNumThreads) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если указанное число потоков меньше, чем число потоков в пуле, объект помещает сообщение о завершении работы в очередь для появления ожидающего потока. Когда ожидающий поток извлекает сообщение из очереди, он уведомляет пул потоков и завершает процедуру потока. Этот процесс повторяется до тех пор, пока количество потоков в пуле не достигнет указанного числа или пока ни один поток не завершит работу в течение периода, [указанного параметром](#gettimeout) /  [setTimeout](#settimeout). В этом случае метод возвратит значение HRESULT, соответствующее WAIT_TIMEOUT, а ожидающее сообщение о завершении работы отменяется.
 
-## <a name="cthreadpoolsettimeout"></a><a name="settimeout"></a>Ксреадпул:: SetTimeout
+## <a name="cthreadpoolsettimeout"></a><a name="settimeout"></a> Ксреадпул:: SetTimeout
 
 Вызовите этот метод, чтобы задать максимальное время в миллисекундах, в течение которого пул потоков будет ожидать завершения работы потока.
 
@@ -323,13 +324,13 @@ HRESULT STDMETHODCALLTYPE SetTimeout(DWORD dwMaxWait) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Время ожидания инициализируется для ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT. Время по умолчанию — 36 секунд. При необходимости можно определить собственное положительное целочисленное значение для этого символа, прежде чем включать файлов atlutil. h.
 
 Обратите внимание, что *двмаксваит* — это время, в течение которого пул будет ожидать завершения работы одного потока. Максимальное время, которое можно предпринять для удаления нескольких потоков из пула, может быть немного меньше *двмаксваит* , умноженное на число потоков.
 
-## <a name="cthreadpoolshutdown"></a><a name="shutdown"></a>Ксреадпул:: Shutdown
+## <a name="cthreadpoolshutdown"></a><a name="shutdown"></a> Ксреадпул:: Shutdown
 
 Вызовите этот метод, чтобы завершить работу пула потоков.
 
@@ -342,11 +343,11 @@ void Shutdown(DWORD dwMaxWait = 0) throw();
 *двмаксваит*<br/>
 Запрошенное максимальное время в миллисекундах, в течение которого пул потоков будет ожидать завершения работы потока. Если значение равно 0 или не указано, этот метод будет использовать время ожидания, установленное [ксреадпул:: setTimeout](#settimeout).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет запрос на завершение работы во все потоки в пуле. Если время ожидания истекает, этот метод вызывает [TerminateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-terminatethread) для любого потока, который не завершил работу. Этот метод вызывается автоматически из деструктора класса.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Интерфейс Исреадпулконфиг](../../atl/reference/ithreadpoolconfig-interface.md)<br/>
 [дефаултсреадтраитс](atl-typedefs.md#defaultthreadtraits)<br/>

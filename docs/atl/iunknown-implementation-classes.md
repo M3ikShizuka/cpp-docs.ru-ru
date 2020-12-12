@@ -1,50 +1,51 @@
 ---
-title: Классы для реализации IUnknown (ATL)
+description: 'Дополнительные сведения: классы реализации IUnknown'
+title: Классы реализации IUnknown (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IUnknown implementation classes
 ms.assetid: 47b69bb5-69d8-4a9c-84a8-329bdde2bb3f
-ms.openlocfilehash: 26751c013d65142393377394006a9833e6c8f7bb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a28bd14be86501fd6566b8038b73a51efcc1c18d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261895"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147658"
 ---
-# <a name="iunknown-implementation-classes"></a>Классы для реализации IUnknown
+# <a name="iunknown-implementation-classes"></a>Классы реализации IUnknown
 
-Следующие классы реализуют `IUnknown` и связанными методами:
+Следующие классы реализуют `IUnknown` и взаимосвязанные методы:
 
-- [CComObjectRootEx](../atl/reference/ccomobjectrootex-class.md) управляет подсчетом ссылок для статистическим и неагрегированные объектов. Позволяет указать потоковую модель.
+- [CComObjectRootEx](../atl/reference/ccomobjectrootex-class.md) Управляет подсчетом ссылок как для агрегированных, так и для неагрегированных объектов. Позволяет указать потоковую модель.
 
-- [CComObjectRoot](../atl/reference/ccomobjectroot-class.md) управляет подсчетом ссылок для статистическим и неагрегированные объектов. Использует потоковую модель сервера по умолчанию.
+- [CComObjectRoot](../atl/reference/ccomobjectroot-class.md) Управляет подсчетом ссылок как для агрегированных, так и для неагрегированных объектов. Использует модель потоков по умолчанию сервера.
 
-- [CComAggObject](../atl/reference/ccomaggobject-class.md) реализует `IUnknown` для объединенного объекта.
+- [CComAggObject](../atl/reference/ccomaggobject-class.md) Реализует `IUnknown` для агрегированного объекта.
 
-- [CComObject](../atl/reference/ccomobject-class.md) реализует `IUnknown` неагрегированные объекта.
+- [CComObject](../atl/reference/ccomobject-class.md) Реализует `IUnknown` для неагрегированного объекта.
 
-- [CComPolyObject](../atl/reference/ccompolyobject-class.md) реализует `IUnknown` для статистически обработанные и неагрегированные объектов. С помощью `CComPolyObject` избавляет от необходимости оба `CComAggObject` и `CComObject` в модуле. Один `CComPolyObject` объект обрабатывает случаи, статистические и неагрегированные.
+- [CComPolyObject](../atl/reference/ccompolyobject-class.md) Реализует `IUnknown` для агрегированных и неагрегированных объектов. `CComPolyObject`При использовании не следует использовать `CComAggObject` и `CComObject` в модуле. Один `CComPolyObject` объект обрабатывает как агрегированные, так и неагрегированные варианты.
 
-- [CComObjectNoLock](../atl/reference/ccomobjectnolock-class.md) реализует `IUnknown` неагрегированные объекта, не изменяя счетчик блокировки модуля.
+- [Ккомобжектнолокк](../atl/reference/ccomobjectnolock-class.md) Реализует `IUnknown` для неагрегированного объекта без изменения счетчика блокировок модуля.
 
-- [CComTearOffObject](../atl/reference/ccomtearoffobject-class.md) реализует `IUnknown` для перемещаемой интерфейса.
+- [Ккомтеароффобжект](../atl/reference/ccomtearoffobject-class.md) Реализует `IUnknown` интерфейс для разрыва.
 
-- [CComCachedTearOffObject](../atl/reference/ccomcachedtearoffobject-class.md) реализует `IUnknown` для интерфейса «кешированные» перемещаемой.
+- [Ккомкачедтеароффобжект](../atl/reference/ccomcachedtearoffobject-class.md) Реализует `IUnknown` для "кэшированного" интерфейса разрыва.
 
-- [CComContainedObject](../atl/reference/ccomcontainedobject-class.md) реализует `IUnknown` для внутреннего объекта агрегата или интерфейсом перемещаемой.
+- [Ккомконтаинедобжект](../atl/reference/ccomcontainedobject-class.md) Реализует `IUnknown` для внутреннего объекта агрегата или интерфейса разрыва.
 
-- [CComObjectGlobal](../atl/reference/ccomobjectglobal-class.md) управляет, счетчик ссылок в модуле, чтобы обеспечить объект не будет удален.
+- [Ккомобжектглобал](../atl/reference/ccomobjectglobal-class.md) Управляет счетчиком ссылок на модуль, чтобы объект не был удален.
 
-- [CComObjectStack](../atl/reference/ccomobjectstack-class.md) создает временный объект COM, с помощью базовой реализации `IUnknown`.
+- [Ккомобжектстакк](../atl/reference/ccomobjectstack-class.md) Создает временный COM-объект с помощью реализации скелетообразных `IUnknown` .
 
-## <a name="related-articles"></a>Связанные статьи
+## <a name="related-articles"></a>Похожие статьи
 
 [Основы COM-объектов ATL](../atl/fundamentals-of-atl-com-objects.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Общие сведения о классе](../atl/atl-class-overview.md)<br/>
-[Макросы агрегирования и фабрик классов](../atl/reference/aggregation-and-class-factory-macros.md)<br/>
-[Макросы сопоставления COM](../atl/reference/com-map-macros.md)<br/>
-[Глобальные функции сопоставления COM](../atl/reference/com-map-global-functions.md)
+[Общие сведения о классах](../atl/atl-class-overview.md)<br/>
+[Макросы агрегирования и фабрики классов](../atl/reference/aggregation-and-class-factory-macros.md)<br/>
+[Макросы схемы COM](../atl/reference/com-map-macros.md)<br/>
+[Глобальные функции схемы COM](../atl/reference/com-map-global-functions.md)

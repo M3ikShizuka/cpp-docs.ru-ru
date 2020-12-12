@@ -1,5 +1,6 @@
 ---
-title: IDispatchImpl класс
+description: 'Дополнительные сведения о: IDispatchImpl Class'
+title: Класс IDispatchImpl
 ms.date: 11/04/2016
 f1_keywords:
 - IDispatchImpl
@@ -14,19 +15,19 @@ helpviewer_keywords:
 - IDispatchImpl class
 - IDispatch class support in ATL
 ms.assetid: 8108eb36-1228-4127-a203-3ab5ba488892
-ms.openlocfilehash: 3b3899a0c4a49aa7fb1bd82af330f5f1cc7329c4
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 709b703bf610776191b2587d11a0c5be651c4938
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81329796"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139559"
 ---
-# <a name="idispatchimpl-class"></a>IDispatchImpl класс
+# <a name="idispatchimpl-class"></a>Класс IDispatchImpl
 
-Обеспечивает реализацию по `IDispatch` умолчанию для части двойного интерфейса.
+Предоставляет реализацию по умолчанию для `IDispatch` части сдвоенного интерфейса.
 
 > [!IMPORTANT]
-> Этот класс и его члены не могут быть использованы в приложениях, выполняемых в Windows Runtime.
+> Этот класс и его члены не могут использоваться в приложениях, выполняемых в среда выполнения Windows.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,51 +44,51 @@ class ATL_NO_VTABLE IDispatchImpl : public T
 #### <a name="parameters"></a>Параметры
 
 *T*<br/>
-(в) Двойной интерфейс.
+окне Сдвоенный интерфейс.
 
 *пиид*<br/>
-(в) Указатель на IID *T*.
+окне Указатель на идентификатор IID объекта *T*.
 
 *плибид*<br/>
-(в) Указатель на LIBID библиотеки типов, содержащей информацию об интерфейсе. По умолчанию библиотека типа сервера передается.
+окне Указатель на идентификатор LIBID библиотеки типов, который содержит сведения об интерфейсе. По умолчанию передается библиотека типов на уровне сервера.
 
-*wMajor*<br/>
-(в) Основная версия библиотеки типов. По умолчанию значение 1.
+*вмажор*<br/>
+окне Основной номер версии библиотеки типов. Значение по умолчанию — 1.
 
-*wMinor*<br/>
-(в) Незначительная версия библиотеки типов. По умолчанию значение составляет 0.
+*вминор*<br/>
+окне Дополнительный номер версии библиотеки типов. По умолчанию значение равно 0.
 
-*tihclass*<br/>
-(в) Класс используется для управления информацией типа для *T.* По умолчанию значение `CComTypeInfoHolder`находится .
+*тихкласс*<br/>
+окне Класс, используемый для управления сведениями о типе для *T*. По умолчанию используется значение `CComTypeInfoHolder` .
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[IDispatchImpl::IDispatchImpl](#idispatchimpl)|Конструктор. Вызовы `AddRef` на защищенную переменную члена, которая управляет информацией типа для двойного интерфейса. Деструктор вызывает `Release`.|
+|[IDispatchImpl:: IDispatchImpl](#idispatchimpl)|Конструктор. Вызывает `AddRef` в защищенной переменной члена, которая управляет сведениями о типе для сдвоенного интерфейса. Деструктор вызывает `Release`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[IDispatchImpl::GetIDsOfNames](#getidsofnames)|Сопоставляет набор имен соответствующему набору идентификаторов диспетчеризации.|
-|[IDispatchImpl::GetTypeInfo](#gettypeinfo)|Извлекает информацию о типе для двойного интерфейса.|
-|[IDispatchImpl::GetTypeInfoCount](#gettypeinfocount)|Определяет, есть ли информация типа, доступная для двойного интерфейса.|
-|[IDispatchImpl::Invoke](#invoke)|Обеспечивает доступ к методам и свойствам, подверженным двойному интерфейсу.|
+|[IDispatchImpl:: GetIDsOfNames](#getidsofnames)|Сопоставляет набор имен соответствующему набору идентификаторов диспетчеризации.|
+|[IDispatchImpl:: GetTypeInfo](#gettypeinfo)|Извлекает сведения о типе для сдвоенного интерфейса.|
+|[IDispatchImpl:: Жеттипеинфокаунт](#gettypeinfocount)|Определяет, доступны ли сведения о типе для сдвоенного интерфейса.|
+|[IDispatchImpl:: Invoke](#invoke)|Предоставляет доступ к методам и свойствам, предоставляемым сдвоенным интерфейсом.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`IDispatchImpl`обеспечивает реализацию по `IDispatch` умолчанию для части любого двойного интерфейса на объекте. Двойной интерфейс происходит `IDispatch` от и использует только типы, совместимые с автоматизацией. Как и dispinterface, двойной интерфейс поддерживает раннюю привязку и поздняя привязка; однако, двойной интерфейс также поддерживает vtable привязки.
+`IDispatchImpl` предоставляет реализацию по умолчанию для `IDispatch` части любого сдвоенного интерфейса в объекте. Сдвоенный интерфейс является производным от `IDispatch` и использует только типы, совместимые с автоматизацией. Как и диспетчерский интерфейс, сдвоенный интерфейс поддерживает раннее связывание и позднее связывание. Однако сдвоенный интерфейс также поддерживает привязку vtable.
 
-Следующий пример показывает типичную реализацию `IDispatchImpl`.
+В следующем примере показана типичная реализация `IDispatchImpl` .
 
 [!code-cpp[NVC_ATL_COM#47](../../atl/codesnippet/cpp/idispatchimpl-class_1.h)]
 
-По умолчанию `IDispatchImpl` класс просматривает информацию о типе *для T* в реестре. Для реализации незарегистрированного интерфейса `IDispatchImpl` можно использовать класс без доступа к реестру, используя заранее определенный номер версии. Если вы `IDispatchImpl` создаете объект, который имеет 0xFFFF как значение для *wMajor* и `IDispatchImpl` 0xFFFF как значение для *wMinor,* класс извлекает библиотеку типа из файла .dll вместо реестра.
+По умолчанию `IDispatchImpl` класс ищет в реестре сведения о типе для *T* . Для реализации незарегистрированного интерфейса можно использовать `IDispatchImpl` класс без доступа к реестру с помощью предопределенного номера версии. При создании `IDispatchImpl` объекта с 0xFFFF в качестве значения для *Вмажор* и 0xFFFF в качестве значения для *вминор* `IDispatchImpl` класс получает библиотеку типов из DLL-файла, а не из реестра.
 
-`IDispatchImpl`содержит статический член `CComTypeInfoHolder` типа, который управляет информацией типа для двойного интерфейса. Если у вас есть несколько объектов, которые `CComTypeInfoHolder` реализуют один и тот же двойной интерфейс, используется только один экземпляр.
+`IDispatchImpl` содержит статический элемент типа `CComTypeInfoHolder` , который управляет сведениями о типе для сдвоенного интерфейса. При наличии нескольких объектов, реализующих один и тот же сдвоенный интерфейс, используется только один экземпляр `CComTypeInfoHolder` .
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -97,9 +98,9 @@ class ATL_NO_VTABLE IDispatchImpl : public T
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlcom.h
+**Заголовок:** атлком. h
 
-## <a name="idispatchimplgetidsofnames"></a><a name="getidsofnames"></a>IDispatchImpl::GetIDsOfNames
+## <a name="idispatchimplgetidsofnames"></a><a name="getidsofnames"></a> IDispatchImpl:: GetIDsOfNames
 
 Сопоставляет набор имен соответствующему набору идентификаторов диспетчеризации.
 
@@ -112,13 +113,13 @@ STDMETHOD(GetIDsOfNames)(
     DISPID* rgdispid);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Смотрите [IDispatch::GetIDsOfNames](/windows/win32/api/oaidl/nf-oaidl-idispatch-getidsofnames) в Windows SDK.
+См. раздел [IDispatch:: GetIdsOfNames](/windows/win32/api/oaidl/nf-oaidl-idispatch-getidsofnames) в Windows SDK.
 
-## <a name="idispatchimplgettypeinfo"></a><a name="gettypeinfo"></a>IDispatchImpl::GetTypeInfo
+## <a name="idispatchimplgettypeinfo"></a><a name="gettypeinfo"></a> IDispatchImpl:: GetTypeInfo
 
-Извлекает информацию о типе для двойного интерфейса.
+Извлекает сведения о типе для сдвоенного интерфейса.
 
 ```
 STDMETHOD(GetTypeInfo)(
@@ -127,33 +128,33 @@ STDMETHOD(GetTypeInfo)(
     ITypeInfo** pptinfo);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Смотрите [IDispatch::GetTypeInfo](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfo) в Windows SDK.
+См. раздел [IDispatch:: GetTypeInfo](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfo) в Windows SDK.
 
-## <a name="idispatchimplgettypeinfocount"></a><a name="gettypeinfocount"></a>IDispatchImpl::GetTypeInfoCount
+## <a name="idispatchimplgettypeinfocount"></a><a name="gettypeinfocount"></a> IDispatchImpl:: Жеттипеинфокаунт
 
-Определяет, есть ли информация типа, доступная для двойного интерфейса.
+Определяет, доступны ли сведения о типе для сдвоенного интерфейса.
 
 ```
 STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Смотрите `IDispatch::GetTypeInfoCount` в Windows SDK.
+См `IDispatch::GetTypeInfoCount` . раздел Windows SDK.
 
-## <a name="idispatchimplidispatchimpl"></a><a name="idispatchimpl"></a>IDispatchImpl::IDispatchImpl
+## <a name="idispatchimplidispatchimpl"></a><a name="idispatchimpl"></a> IDispatchImpl:: IDispatchImpl
 
-Конструктор. Вызовы `AddRef` на защищенную переменную члена, которая управляет информацией типа для двойного интерфейса. Деструктор вызывает `Release`.
+Конструктор. Вызывает `AddRef` в защищенной переменной члена, которая управляет сведениями о типе для сдвоенного интерфейса. Деструктор вызывает `Release`.
 
 ```
 IDispatchImpl();
 ```
 
-## <a name="idispatchimplinvoke"></a><a name="invoke"></a>IDispatchImpl::Invoke
+## <a name="idispatchimplinvoke"></a><a name="invoke"></a> IDispatchImpl:: Invoke
 
-Обеспечивает доступ к методам и свойствам, подверженным двойному интерфейсу.
+Предоставляет доступ к методам и свойствам, предоставляемым сдвоенным интерфейсом.
 
 ```
 STDMETHOD(Invoke)(
@@ -167,9 +168,9 @@ STDMETHOD(Invoke)(
     UINT* puArgErr);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Смотрите [IDispatch::Вызвать](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) в Windows SDK.
+См. раздел [IDispatch:: Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) в Windows SDK.
 
 ## <a name="see-also"></a>См. также раздел
 
