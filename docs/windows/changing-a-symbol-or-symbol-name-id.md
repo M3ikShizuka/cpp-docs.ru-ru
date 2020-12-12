@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как управлять символами.
 title: Руководство. Управление символами
 ms.date: 02/14/2019
 f1_keywords:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - calculated symbols
 - shared symbols
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
-ms.openlocfilehash: 67a5c801c13038e7215473edecc2d41a8f7086e0
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2a7bdc6994bfcdadc9b7d1d5b98350fcd47ad6fe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505718"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118229"
 ---
 # <a name="how-to-manage-symbols"></a>Руководство. Управление символами
 
@@ -200,7 +201,7 @@ ms.locfileid: "91505718"
 
    Символы в файлах, включенных таким образом, оцениваются каждый раз при открытии файла ресурсов, но не заменяются на диске при сохранении файла.
 
-1. Щелкните **ОК**.
+1. Нажмите кнопку **OK**.
 
 ### <a name="to-change-the-name-of-the-resource-symbol-header-file"></a>Изменение имени файла символов заголовков ресурсов
 

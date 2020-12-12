@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: reader_writer_lock классе'
 title: Класс reader_writer_lock
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - reader_writer_lock class
 ms.assetid: 91a59cd2-ca05-4b74-8398-d826d9f86736
-ms.openlocfilehash: e4c38a6e1f1a1c6f4beda43ff2c055b6070258b8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 68f42fbce607f05ceb489967d2b13cd08068d0cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222671"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115226"
 ---
 # <a name="reader_writer_lock-class"></a>Класс reader_writer_lock
 
@@ -32,7 +33,7 @@ ms.locfileid: "87222671"
 class reader_writer_lock;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-classes"></a>Открытые классы
 
@@ -43,7 +44,7 @@ class reader_writer_lock;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[reader_writer_lock](#ctor)|Создает новый объект `reader_writer_lock`.|
 |[Деструктор ~ reader_writer_lock](#dtor)|Уничтожает `reader_writer_lock` объект.|
@@ -58,7 +59,7 @@ class reader_writer_lock;
 |[try_lock_read](#try_lock_read)|Пытается получить блокировку чтения-записи в качестве читателя без блокировки.|
 |[блокирован](#unlock)|Разблокирует блокировку чтения-записи в зависимости от того, кто ее блокировал, читатель или модуль записи.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [структуры данных синхронизации](../../../parallel/concrt/synchronization-data-structures.md).
 
@@ -72,7 +73,7 @@ class reader_writer_lock;
 
 **Пространство имен:** параллелизм
 
-## <a name="lock"></a><a name="lock"></a>скрыть
+## <a name="lock"></a><a name="lock"></a> скрыть
 
 Получает блокировку чтения-записи в качестве модуля записи.
 
@@ -80,7 +81,7 @@ class reader_writer_lock;
 void lock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Часто бывает безопаснее использовать конструкцию [scoped_lock](#scoped_lock_class) для получения и освобождения `reader_writer_lock` объекта в качестве модуля записи в безопасном виде исключения.
 
@@ -90,7 +91,7 @@ void lock();
 
 Если блокировка уже удерживается вызывающим контекстом, будет выдано исключение [improper_lock](improper-lock-class.md) .
 
-## <a name="lock_read"></a><a name="lock_read"></a>lock_read
+## <a name="lock_read"></a><a name="lock_read"></a> lock_read
 
 Получает блокировку чтения-записи в качестве читателя. При наличии модулей записи активные модули чтения должны подождать, пока они не будут выполнены. Читатель просто регистрирует интерес в блокировке и ждет, пока модули записи его освобождают.
 
@@ -98,13 +99,13 @@ void lock();
 void lock_read();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Часто безопаснее использовать конструкцию [scoped_lock_read](#scoped_lock_read_class) для получения и освобождения `reader_writer_lock` объекта в качестве читателя в безопасном для исключения виде.
 
 Если имеются модули записи, ожидающие блокировки, модуль чтения будет ожидать, пока все модули записи в строке не будут получены и освобождены. Эта блокировка перемещается на модули записи и может существенно замедлить считывание данных при непрерывной нагрузке модулей записи.
 
-## <a name="reader_writer_lock"></a><a name="ctor"></a>reader_writer_lock
+## <a name="reader_writer_lock"></a><a name="ctor"></a> reader_writer_lock
 
 Создает новый объект `reader_writer_lock`.
 
@@ -112,7 +113,7 @@ void lock_read();
 reader_writer_lock();
 ```
 
-## <a name="reader_writer_lock"></a><a name="dtor"></a>~ reader_writer_lock
+## <a name="reader_writer_lock"></a><a name="dtor"></a> ~ reader_writer_lock
 
 Уничтожает `reader_writer_lock` объект.
 
@@ -120,11 +121,11 @@ reader_writer_lock();
 ~reader_writer_lock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Ожидается, что блокировка больше не удерживается при выполнении деструктора. Разрешение блокировки записи чтения на уничтожения с блокировкой по-прежнему приводит к неопределенному поведению.
 
-## <a name="reader_writer_lockscoped_lock-class"></a><a name="scoped_lock_class"></a>Класс reader_writer_lock:: scoped_lock
+## <a name="reader_writer_lockscoped_lock-class"></a><a name="scoped_lock_class"></a> Класс reader_writer_lock:: scoped_lock
 
 Потокобезопасная оболочка RAII, которую можно использовать для получения `reader_writer_lock` объектов блокировки в качестве модуля записи.
 
@@ -132,7 +133,7 @@ reader_writer_lock();
 class scoped_lock;
 ```
 
-## <a name="scoped_lockscoped_lock"></a><a name="scoped_lock_ctor"></a>scoped_lock:: scoped_lock
+## <a name="scoped_lockscoped_lock"></a><a name="scoped_lock_ctor"></a> scoped_lock:: scoped_lock
 
 Создает `scoped_lock` объект и получает `reader_writer_lock` объект, переданный в `_Reader_writer_lock` параметре, в качестве модуля записи. Если блокировка удерживается другим потоком, этот вызов блокируется.
 
@@ -145,7 +146,7 @@ explicit _CRTIMP scoped_lock(reader_writer_lock& _Reader_writer_lock);
 *_Reader_writer_lock*<br/>
 `reader_writer_lock`Объект, который требуется получить в качестве модуля записи.
 
-## <a name="scoped_lockscoped_lock"></a><a name="scoped_lock_dtor"></a>scoped_lock:: ~ scoped_lock
+## <a name="scoped_lockscoped_lock"></a><a name="scoped_lock_dtor"></a> scoped_lock:: ~ scoped_lock
 
 Уничтожает `reader_writer_lock` объект и освобождает блокировку, заданную в его конструкторе.
 
@@ -153,7 +154,7 @@ explicit _CRTIMP scoped_lock(reader_writer_lock& _Reader_writer_lock);
 ~scoped_lock();
 ```
 
-## <a name="reader_writer_lockscoped_lock_read-class"></a><a name="scoped_lock_read_class"></a>Класс reader_writer_lock:: scoped_lock_read
+## <a name="reader_writer_lockscoped_lock_read-class"></a><a name="scoped_lock_read_class"></a> Класс reader_writer_lock:: scoped_lock_read
 
 Потокобезопасная оболочка RAII, которую можно использовать для получения `reader_writer_lock` объектов блокировки в качестве читателя.
 
@@ -161,7 +162,7 @@ explicit _CRTIMP scoped_lock(reader_writer_lock& _Reader_writer_lock);
 class scoped_lock_read;
 ```
 
-## <a name="scoped_lock_readscoped_lock_read"></a><a name="scoped_lock_read_ctor"></a>scoped_lock_read:: scoped_lock_read
+## <a name="scoped_lock_readscoped_lock_read"></a><a name="scoped_lock_read_ctor"></a> scoped_lock_read:: scoped_lock_read
 
 Создает `scoped_lock_read` объект и получает `reader_writer_lock` объект, переданный в `_Reader_writer_lock` параметре, в качестве средства чтения. Если блокировка удерживается другим потоком в качестве модуля записи или ожидающих модулей записи, этот вызов блокируется.
 
@@ -174,7 +175,7 @@ explicit _CRTIMP scoped_lock_read(reader_writer_lock& _Reader_writer_lock);
 *_Reader_writer_lock*<br/>
 `reader_writer_lock`Объект, который требуется получить как средство чтения.
 
-## <a name="a-namescoped_lock_read_dtor--reader_writer_lockscoped_lock_readscoped_lock_read-destructor"></a><a name="scoped_lock_read_dtor">Деструктор reader_writer_lock:: scoped_lock_read:: ~ scoped_lock_read
+## <a name="a-namescoped_lock_read_dtor--reader_writer_lockscoped_lock_readscoped_lock_read-destructor"></a><a name="scoped_lock_read_dtor">  Деструктор reader_writer_lock:: scoped_lock_read:: ~ scoped_lock_read
 
 Уничтожает `scoped_lock_read` объект и освобождает блокировку, заданную в его конструкторе.
 
@@ -182,7 +183,7 @@ explicit _CRTIMP scoped_lock_read(reader_writer_lock& _Reader_writer_lock);
 ~scoped_lock_read();
 ```
 
-## <a name="try_lock"></a><a name="try_lock"></a>try_lock
+## <a name="try_lock"></a><a name="try_lock"></a> try_lock
 
 Пытается получить блокировку чтения-записи в качестве модуля записи без блокировки.
 
@@ -196,7 +197,7 @@ bool try_lock();
 
 Значение, если блокировка была получена; в **`true`** противном случае — значение **`false`** .
 
-## <a name="try_lock_read"></a><a name="try_lock_read"></a>try_lock_read
+## <a name="try_lock_read"></a><a name="try_lock_read"></a> try_lock_read
 
 Пытается получить блокировку чтения-записи в качестве читателя без блокировки.
 
@@ -208,7 +209,7 @@ bool try_lock_read();
 
 Значение, если блокировка была получена; в **`true`** противном случае — значение **`false`** .
 
-## <a name="unlock"></a><a name="unlock"></a>блокирован
+## <a name="unlock"></a><a name="unlock"></a> блокирован
 
 Разблокирует блокировку чтения-записи в зависимости от того, кто ее блокировал, читатель или модуль записи.
 
@@ -216,7 +217,7 @@ bool try_lock_read();
 void unlock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если имеются модули записи, ожидающие блокировки, выпуск блокировки всегда будет переключаться к следующему модулю записи в порядке FIFO. Эта блокировка перемещается на модули записи и может существенно замедлить считывание данных при непрерывной нагрузке модулей записи.
 

@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения о классах и структурах (C++)
 title: Классы и структуры (C++)
 ms.date: 05/07/2019
 helpviewer_keywords:
 - C++, classes and structs
 ms.assetid: 516dd496-13fb-4f17-845a-e9ca45437873
-ms.openlocfilehash: d593f6575fec64aa0eb14c7aa0fcbb5c4eb66691
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9d845cf130c2cbf06e182a49f3d83c78745864d8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220604"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114069"
 ---
 # <a name="classes-and-structs-c"></a>Классы и структуры (C++)
 
@@ -37,7 +38,7 @@ ms.locfileid: "87220604"
 
 - [Объявления вложенных классов](../cpp/nested-class-declarations.md)
 
-- [Анонимные типы классов](../cpp/anonymous-class-types.md)
+- [Типы анонимных классов](../cpp/anonymous-class-types.md)
 
 - [Указатели на члены](../cpp/pointers-to-members.md)
 
@@ -53,7 +54,7 @@ ms.locfileid: "87220604"
 
 |Структуры|Классы|Объединения|
 |----------------|-------------|------------|
-|ключ класса**`struct`**|ключ класса**`class`**|ключ класса**`union`**|
+|ключ класса **`struct`**|ключ класса **`class`**|ключ класса **`union`**|
 |Доступ по умолчанию: public (открытый).|Доступ по умолчанию: private (закрытый).|Доступ по умолчанию: public (открытый).|
 |Нет ограничений на использование|Нет ограничений на использование|Используется только один член за один раз|
 

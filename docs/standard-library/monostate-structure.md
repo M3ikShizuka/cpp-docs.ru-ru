@@ -1,20 +1,21 @@
 ---
-title: monostate структуры
+description: 'Дополнительные сведения о: нештатная структура'
+title: Структура с нештатным состоянием
 ms.date: 04/04/2019
 f1_keywords:
 - variant/std::monostate
 helpviewer_keywords:
 - monostate struct
-ms.openlocfilehash: f083b5f4abd6e9fc482007744683342f7ab92fc0
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 93b21f399761970129a495590e0821aa911a0408
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68269336"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115161"
 ---
-# <a name="monostate-struct"></a>monostate структуры
+# <a name="monostate-struct"></a>Структура с нештатным состоянием
 
-Класс monostate служит в качестве альтернативного типа для типа variant делает конструируемым по умолчанию тип variant.
+Этот класс выступает в качестве альтернативного типа для варианта, чтобы сделать тип варианта по умолчанию конструируемым.
 
 ## <a name="syntax"></a>Синтаксис
 

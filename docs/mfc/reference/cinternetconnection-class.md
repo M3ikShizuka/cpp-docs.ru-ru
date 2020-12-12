@@ -1,5 +1,6 @@
 ---
-title: Класс CInternetConnection
+description: 'Дополнительные сведения о: Цинтернетконнектион Class'
+title: Класс Цинтернетконнектион
 ms.date: 11/04/2016
 f1_keywords:
 - CInternetConnection
@@ -14,14 +15,14 @@ helpviewer_keywords:
 - CInternetConnection [MFC], GetServerName
 - CInternetConnection [MFC], GetSession
 ms.assetid: 62a5d1c3-8471-4e36-a064-48831829b2a7
-ms.openlocfilehash: 6649986f279e010a833b31157922cb4fd1ea8613
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2ae869e8cbf3bbfb3ce19e78088a465ae1d6aa65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81372427"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97143550"
 ---
-# <a name="cinternetconnection-class"></a>Класс CInternetConnection
+# <a name="cinternetconnection-class"></a>Класс Цинтернетконнектион
 
 Управление подключением к интернет-серверу.
 
@@ -31,35 +32,35 @@ ms.locfileid: "81372427"
 class CInternetConnection : public CObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CInternetConnection::CInternetConnection](#cinternetconnection)|Формирует объект `CInternetConnection`.|
+|[Цинтернетконнектион:: Цинтернетконнектион](#cinternetconnection)|Формирует объект `CInternetConnection`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CInternetConnection::GetContext](#getcontext)|Получает идентификатор контекста для этого объекта соединения.|
-|[CInternetConnection::GetServerName](#getservername)|Получает имя сервера, связанного с соединением.|
-|[CInternetConnection::GetSession](#getsession)|Получает указатель на объект [CInternetSession,](../../mfc/reference/cinternetsession-class.md) связанный с соединением.|
+|[Цинтернетконнектион:: SPContext](#getcontext)|Возвращает идентификатор контекста для данного объекта соединения.|
+|[Цинтернетконнектион::/имя_сервера](#getservername)|Возвращает имя сервера, связанного с соединением.|
+|[Цинтернетконнектион::/Session](#getsession)|Возвращает указатель на объект [Цинтернетсессион](../../mfc/reference/cinternetsession-class.md) , связанный с соединением.|
 
 ### <a name="public-operators"></a>Открытые операторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CInternetConnection::оператор HINTERNET](#operator_hinternet)|Ручка для сеанса Интернета.|
+|[Цинтернетконнектион:: operator ХИНТЕРНЕТ](#operator_hinternet)|Маркер сеанса Интернета.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Это базовый класс для классов MFC [CFtpConnection](../../mfc/reference/cftpconnection-class.md), [CHttpConnection](../../mfc/reference/chttpconnection-class.md)и [CGopherConnection.](../../mfc/reference/cgopherconnection-class.md) Каждый из этих классов предоставляет дополнительную функциональность для общения с соответствующим сервером FTP, HTTP или суслик.
+Это базовый класс для классов MFC [кфтпконнектион](../../mfc/reference/cftpconnection-class.md), [чттпконнектион](../../mfc/reference/chttpconnection-class.md)и [кгоферконнектион](../../mfc/reference/cgopherconnection-class.md). Каждый из этих классов предоставляет дополнительные функциональные возможности для взаимодействия с соответствующим FTP-, HTTP-или сервером Gopher.
 
-Чтобы напрямую общаться с интернет-сервером, необходимо `CInternetConnection` иметь объект [CInternetSession](../../mfc/reference/cinternetsession-class.md) и объект.
+Чтобы напрямую взаимодействовать с Интернет-сервером, необходимо иметь объект [Цинтернетсессион](../../mfc/reference/cinternetsession-class.md) и `CInternetConnection` объект.
 
-Чтобы узнать больше о том, как работают классы WinInet, смотрите статью [Интернет Программирование с WinInet](../../mfc/win32-internet-extensions-wininet.md).
+Дополнительные сведения о работе классов WinInet см. в статье [Интернет – программирование с помощью WinInet](../../mfc/win32-internet-extensions-wininet.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -69,11 +70,11 @@ class CInternetConnection : public CObject
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxinet.h
+**Заголовок:** афксинет. h
 
-## <a name="cinternetconnectioncinternetconnection"></a><a name="cinternetconnection"></a>CInternetConnection::CInternetConnection
+## <a name="cinternetconnectioncinternetconnection"></a><a name="cinternetconnection"></a> Цинтернетконнектион:: Цинтернетконнектион
 
-Эта функция члена вызывается при создании `CInternetConnection` объекта.
+Эта функция-член вызывается при `CInternetConnection` создании объекта.
 
 ```
 CInternetConnection(
@@ -85,33 +86,33 @@ CInternetConnection(
 
 ### <a name="parameters"></a>Параметры
 
-*pСессия*<br/>
-Указатель на объект [CInternetSession.](../../mfc/reference/cinternetsession-class.md)
+*псессион*<br/>
+Указатель на объект [Цинтернетсессион](../../mfc/reference/cinternetsession-class.md) .
 
-*pstrServer*<br/>
+*пстрсервер*<br/>
 Указатель на строку, содержащую имя сервера.
 
-*nПорт*<br/>
-Номер, идентифицирует интернет-порт для этого соединения.
+*Nпорт*<br/>
+Номер, определяющий порт Интернета для данного соединения.
 
-*Dwcontext*<br/>
-Идентификатор `CInternetConnection` контекста для объекта. Смотрите **Замечания** для получения дополнительной информации о *dwContext*.
+*двконтекст*<br/>
+Идентификатор контекста для `CInternetConnection` объекта. Дополнительные сведения о *двконтекст* см. в разделе **Примечания** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вы никогда не называете `CInternetConnection` себя; вместо этого позвоните в функцию участника [CInternetSession](../../mfc/reference/cinternetsession-class.md) для типа соединения, который вы хотите установить:
+Вы никогда не вызываете `CInternetConnection` себя самостоятельно; вместо этого вызовите функцию члена [Цинтернетсессион](../../mfc/reference/cinternetsession-class.md) для типа соединения, которое нужно установить:
 
-- [CInternetSession::GetFtpConnection](../../mfc/reference/cinternetsession-class.md#getftpconnection)
+- [Цинтернетсессион:: Жетфтпконнектион](../../mfc/reference/cinternetsession-class.md#getftpconnection)
 
-- [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection)
+- [Цинтернетсессион:: Жесттпконнектион](../../mfc/reference/cinternetsession-class.md#gethttpconnection)
 
-- [CInternetSession::GetGopherConnection](../../mfc/reference/cinternetsession-class.md#getgopherconnection)
+- [Цинтернетсессион:: Жетгоферконнектион](../../mfc/reference/cinternetsession-class.md#getgopherconnection)
 
-Значение по умолчанию для *dwContext* отправляется MFC `CInternetConnection`объекту, полученному из объекта [CInternetSession,](../../mfc/reference/cinternetsession-class.md) создавого объект **InternetConnection,** полученный в узе. Значение по умолчанию устанавливается на 1; однако можно явно назначить определенный идентификатор контекста в конструкторе [CInternetSession](../../mfc/reference/cinternetsession-class.md#cinternetsession) для соединения. Объект и любая работа, которую он выполняет, будут связаны с идентификатором контекста. Идентификатор контекста возвращается [в CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) для предоставления статуса объекта, с помощью которого он идентифицируется. Для получения дополнительной информации об идентификаторе контекста смотрите статью [Internet First Steps: WinInet.](../../mfc/wininet-basics.md)
+Значение по умолчанию для *двконтекст* ОТПРАВЛЯЕТся библиотекой MFC `CInternetConnection` производному объекту из объекта [Цинтернетсессион](../../mfc/reference/cinternetsession-class.md) , который создал производный **интернетконнектион** объект. Значение по умолчанию — 1; Однако для соединения можно явно назначить конкретный идентификатор контекста в конструкторе [Цинтернетсессион](../../mfc/reference/cinternetsession-class.md#cinternetsession) . Объект и все его работа будут связаны с ИДЕНТИФИКАТОРом контекста. Идентификатор контекста возвращается в [Цинтернетсессион:: онстатускаллбакк](../../mfc/reference/cinternetsession-class.md#onstatuscallback) , чтобы предоставить состояние для объекта, с которым он определен. Дополнительные сведения об идентификаторе контекста см. в статье [первые шаги в Интернете: WinInet](../../mfc/wininet-basics.md) .
 
-## <a name="cinternetconnectiongetcontext"></a><a name="getcontext"></a>CInternetConnection::GetContext
+## <a name="cinternetconnectiongetcontext"></a><a name="getcontext"></a> Цинтернетконнектион:: SPContext
 
-Вызовите эту функцию участника, чтобы получить идентификатор контекста для этой сессии.
+Вызовите эту функцию члена, чтобы получить идентификатор контекста для этого сеанса.
 
 ```
 DWORD_PTR GetContext() const;
@@ -119,17 +120,17 @@ DWORD_PTR GetContext() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Идентификатор контекста, назначенный приложением.
+Идентификатор контекста, назначенный приложению.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Идентификатор контекста первоначально указан в `CInternetConnection` [CInternetSession](../../mfc/reference/cinternetsession-class.md) и распространяется на - и [CInternetFile](../../mfc/reference/cinternetfile-class.md)- производные классы, если не указано по-разному в вызове к функции, которая открывает соединение. Идентификатор контекста связан с любой операцией данного объекта и идентифицирует информацию о состоянии операции, возвращенную [CInternetSession:OnStatusCallback.](../../mfc/reference/cinternetsession-class.md#onstatuscallback)
+Идентификатор контекста изначально указывается в [Цинтернетсессион](../../mfc/reference/cinternetsession-class.md) и распространяет на `CInternetConnection` классы, производные от [Цинтернетфиле](../../mfc/reference/cinternetfile-class.md), если не указано иное в вызове функции, открывающей соединение. Идентификатор контекста связан с любой операцией заданного объекта и определяет сведения о состоянии операции, возвращаемые [Цинтернетсессион:: онстатускаллбакк](../../mfc/reference/cinternetsession-class.md#onstatuscallback).
 
-Для получения дополнительной `GetContext` информации о том, как работает с другими классами WinInet, чтобы дать информацию о статусе пользователя, смотрите статью [Интернет Первые шаги: WinInet](../../mfc/wininet-basics.md) для получения дополнительной информации об идентификаторе контекста.
+Дополнительные сведения о том `GetContext` , как работает с другими классами WinInet для предоставления сведений о состоянии пользователя, см. в статье [первые шаги в Интернете: WinInet](../../mfc/wininet-basics.md) для получения дополнительных сведений об идентификаторе контекста.
 
-## <a name="cinternetconnectiongetservername"></a><a name="getservername"></a>CInternetConnection::GetServerName
+## <a name="cinternetconnectiongetservername"></a><a name="getservername"></a> Цинтернетконнектион::/имя_сервера
 
-Вызовите эту функцию участника, чтобы получить имя сервера, связанного с этим подключением к Интернету.
+Вызовите эту функцию члена, чтобы получить имя сервера, связанного с этим подключением к Интернету.
 
 ```
 CString GetServerName() const;
@@ -137,11 +138,11 @@ CString GetServerName() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-С именем сервера работает объект соединения.
+Имя сервера, с которым работает этот объект соединения.
 
-## <a name="cinternetconnectiongetsession"></a><a name="getsession"></a>CInternetConnection::GetSession
+## <a name="cinternetconnectiongetsession"></a><a name="getsession"></a> Цинтернетконнектион::/Session
 
-Вызовите эту функцию участника, `CInternetSession` чтобы получить указатель на объект, связанный с этим соединением.
+Вызовите эту функцию-член, чтобы получить указатель на `CInternetSession` объект, связанный с этим соединением.
 
 ```
 CInternetSession* GetSession() const;
@@ -149,11 +150,11 @@ CInternetSession* GetSession() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на объект [CInternetSession,](../../mfc/reference/cinternetsession-class.md) связанный с этим объектом подключения КИнтернет.
+Указатель на объект [Цинтернетсессион](../../mfc/reference/cinternetsession-class.md) , связанный с этим объектом подключения к Интернету.
 
-## <a name="cinternetconnectionoperator-hinternet"></a><a name="operator_hinternet"></a>CInternetConnection::оператор HINTERNET
+## <a name="cinternetconnectionoperator-hinternet"></a><a name="operator_hinternet"></a> Цинтернетконнектион:: operator ХИНТЕРНЕТ
 
-Используйте этот оператор, чтобы получить ручку уровня API для текущей сессии Интернета.
+Используйте этот оператор, чтобы получить маркер уровня API для текущего сеанса Интернета.
 
 ```
 operator HINTERNET() const;
@@ -161,5 +162,5 @@ operator HINTERNET() const;
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс CObject](../../mfc/reference/cobject-class.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)
+[CObject, класс](../../mfc/reference/cobject-class.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)

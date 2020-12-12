@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: технологий'
 title: SWORD
 ms.date: 12/17/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - SWORD directive
 ms.assetid: 99228a2a-4ed1-4343-a317-e59302620a55
-ms.openlocfilehash: dc34061a14b41220252bbb75537d2ccefa601afe
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: d24bae41e856acc56910216702e1b38b2317bc7a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75318401"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97125298"
 ---
 # <a name="sword"></a>SWORD
 
@@ -19,10 +20,10 @@ ms.locfileid: "75318401"
 
 ## <a name="syntax"></a>Синтаксис
 
-> *Name* **технологий** *инициализатор* ⟦ __,__ *initializer* ... ⟧
+> *Name* **технологий** *инициализатор* ⟦__,__ *initializer* ... ⟧
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по директивам](directives-reference.md)\
-\ [Word](word.md)
+[СЛОВАМ](word.md)\
 [Грамматика MASM BNF](masm-bnf-grammar.md)

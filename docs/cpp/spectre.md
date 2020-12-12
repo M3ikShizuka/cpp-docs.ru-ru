@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: устранением рисков Spectre'
 title: spectre
 ms.date: 01/23/2018
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - __declspec keyword (C++), spectre
 - spectre __declspec keyword
-ms.openlocfilehash: 40eee25dec867ae3fce7a6b2d4715f0be81bfe76
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: fc1f56a59dea1eaa3596a6f7a7c0347ab822e302
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70926370"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113822"
 ---
 # <a name="spectre"></a>spectre
 
@@ -23,9 +24,9 @@ ms.locfileid: "70926370"
 
 ## <a name="syntax"></a>Синтаксис
 
-> **__declspec (устранением рисков Spectre (неустранение рисков))**
+> **__declspec (устранением рисков Spectre (смягчение))**
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Параметр компилятора [/Qspectre](../build/reference/qspectre.md) указывает компилятору на необходимость вставки гипотетических инструкций по барьеру выполнения. Они вставляются, когда анализ указывает на наличие уязвимости устранением рисков Spectre с вариантом 1. Определенные инструкции зависят от процессора. Хотя эти инструкции должны оказать минимальное влияние на размер или производительность кода, возможны случаи, когда код не подвержен воздействию уязвимости и требует максимальной производительности.
 

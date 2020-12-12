@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: ошибки CVTRES и предупреждения (Квткскскскс)'
 title: Ошибки и предупреждения CVTRES
 ms.date: 04/16/2019
 f1_keywords:
@@ -11,20 +12,20 @@ f1_keywords:
 - CVT1109
 - CVT1110
 ms.assetid: ac94d0fb-0da3-4327-b3d9-ceaeb3fc2e4d
-ms.openlocfilehash: 81dbac6b0408a7cf1cc319c1eed90bad5f742890
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 5c95dfddf7f691b3a9475ce21a7c4360872847e7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64855933"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119779"
 ---
 # <a name="cvtres-errors-and-warnings-cvtxxxx"></a>Ошибки и предупреждения CVTRES (CVTxxxx)
 
-Этот раздел представляет собой справочник по ошибкам и предупреждения, формируемые CVTRES инструмент сборки. CVTRES создает сообщения в формате CVT*xxxx*, где *xxxx* состоит из четырех цифр.
+Этот раздел представляет собой ссылку на ошибки и предупреждения, создаваемые инструментом сборки CVTRES. CVTRES создает сообщения в форме CVT *XXXX*, где *XXXX* — это четырехзначный номер.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
-## <a name="fatal-error-messages"></a>Неустранимая ошибка сообщений
+## <a name="fatal-error-messages"></a>Неустранимые сообщения об ошибках
 
 [Неустранимая ошибка CVTRES CVT1100](cvtres-fatal-error-cvt1100.md) \
 [Неустранимая ошибка CVTRES CVT1103](cvtres-fatal-error-cvt1103.md) \
@@ -32,8 +33,8 @@ ms.locfileid: "64855933"
 
 ## <a name="warning-messages"></a>Предупреждающие сообщения
 
-[CVTRES CVT4001 предупреждение](cvtres-warning-cvt4001.md)
+[Предупреждение CVTRES CVT4001](cvtres-warning-cvt4001.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[C /C++ ошибки и предупреждения средств компиляции и построения](../compiler-errors-1/c-cpp-build-errors.md)
+[Ошибки и предупреждения компилятора и средств сборки C/C++](../compiler-errors-1/c-cpp-build-errors.md)

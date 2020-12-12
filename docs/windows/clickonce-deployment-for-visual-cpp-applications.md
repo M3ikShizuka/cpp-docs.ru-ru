@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: развертывание ClickOnce для приложений Visual C++'
 title: Развертывание с помощью технологии ClickOnce для приложений Visual C++
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - application deployment [C++], ClickOnce
 - ClickOnce deployment [C++], C++ applications
 ms.assetid: 9988c546-0936-452c-932f-9c76daa42157
-ms.openlocfilehash: 4726fda8c5eca70ce7acde19f141a7c096395e95
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: eb888e9236eec16ba82c82c11a23428163679e97
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81316612"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118216"
 ---
 # <a name="clickonce-deployment-for-visual-c-applications"></a>Развертывание с помощью технологии ClickOnce для приложений Visual C++
 
@@ -19,10 +20,10 @@ Visual Studio предоставляет две различных технол�
 
 ## <a name="clickonce-deployment-in-c"></a>Развертывание с помощью технологии ClickOnce в C++
 
-Среда разработки Visual C' не поддерживает непосредственно развертывание проектов Visual Studio СЗ с помощью ClickOnce, но доступны инструменты для его использования.
+Среда разработки Visual C++ не поддерживает развертывание проектов Visual Studio C++ с помощью ClickOnce напрямую, но для его использования доступны средства.
 
 > [!NOTE]
-> Visual Studio поддерживает ClickOnce в средах развертывания Visual C# и Visual Basic. Если проект Visual Studio C', зависит от проекта Visual C, вы можете опубликовать приложение (включая его зависимости) с помощью развертывания ClickOnce из среды разработки Visual C.
+> Visual Studio поддерживает ClickOnce в средах развертывания Visual C# и Visual Basic. Если проект Visual Studio C++ является зависимостью проекта Visual C#, можно опубликовать приложение (включая его зависимости) с помощью развертывания ClickOnce из среды разработки Visual C#.
 
 Для развертывания приложения Visual C++ с помощью ClickOnce сначала нужно создать [Манифест приложения ClickOnce](/visualstudio/deployment/clickonce-application-manifest) и [Манифест развертывания ClickOnce](/visualstudio/deployment/clickonce-deployment-manifest) с помощью [Mage.exe](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) (Инструмент создания и изменения манифестов) или его версий для графического пользовательского интерфейса (сведения см. в разделе [MageUI.exe (средство создания и редактирования манифестов, графический клиент)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)).
 
@@ -40,12 +41,12 @@ Visual Studio предоставляет две различных технол�
 
 ## <a name="see-also"></a>См. также раздел
 
-[Mage.exe (Manifest Поколения и Редактирование инструмент)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)<br>
-[MageUI.exe (Manifest Поколения и Редактирование инструмент, графический клиент)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)<br>
+[Mage.exe (средство создания и редактирования манифеста)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)<br>
+[MageUI.exe (средство создания и редактирования манифестов, графический клиент)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)<br>
 [Makecert.exe (средство создания сертификатов)](/windows/win32/SecCrypto/makecert)<br>
 [Развертывание классических приложений](deploying-native-desktop-applications-visual-cpp.md)<br>
 [Развертывание приложений, служб и компонентов](/visualstudio/deployment/deploying-applications-services-and-components)<br>
-[ClickOnce безопасности и развертывания](/visualstudio/deployment/clickonce-security-and-deployment)<br>
+[Развертывание и безопасность технологии ClickOnce](/visualstudio/deployment/clickonce-security-and-deployment)<br>
 [Создание пакетов загрузчика](/visualstudio/deployment/creating-bootstrapper-packages)<br>
 [Программирование .NET с использованием C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br>
-[Взаимосвязь между коренными жителями и .NET](../dotnet/native-and-dotnet-interoperability.md)
+[Взаимодействие машинного кода и .NET](../dotnet/native-and-dotnet-interoperability.md)

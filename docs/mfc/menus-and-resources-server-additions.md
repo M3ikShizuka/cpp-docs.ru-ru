@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о меню и ресурсах: дополнения сервера'
 title: Меню и ресурсы. Добавление серверов
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - server applications [MFC], OLE menus and resources
 - OLE initialization failure [MFC]
 ms.assetid: 56ce9e8d-8f41-4db8-8dee-e8b0702d057c
-ms.openlocfilehash: f67212dc7d4e2ab90421c7b2eee48acae4745940
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: e53031fd030efa498bd80bdb191f76f66f63d343
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626186"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122880"
 ---
 # <a name="menus-and-resources-server-additions"></a>Меню и ресурсы. Добавление серверов
 
@@ -38,7 +39,7 @@ ms.locfileid: "84626186"
 
 - [Дополнения минисервер](#_core_mini.2d.server_additions)
 
-## <a name="server-menu-additions"></a><a name="_core_server_menu_additions"></a>Добавления меню "сервер"
+## <a name="server-menu-additions"></a><a name="_core_server_menu_additions"></a> Добавления меню "сервер"
 
 Для поддержки визуального редактирования OLE-приложений в приложениях сервера (компонента) должны быть добавлены ресурсы меню. Меню, используемые при запуске приложения в автономном режиме, не нужно изменять, но перед созданием приложения необходимо добавить два новых ресурса меню: один для поддержки встроенной активации, а другой для поддержки полностью открытого сервера. Оба ресурса меню используются приложениями Full-and минисервер.
 
@@ -48,7 +49,7 @@ ms.locfileid: "84626186"
 
 В дополнение к изменениям, перечисленным в этой статье, файл ресурсов должен включать АФКСОЛЕСВ. Версия-кандидат, необходимый для реализации библиотека Microsoft Foundation Class. Этот файл находится в подкаталоге Мфк\инклуде.
 
-## <a name="server-application-accelerator-table-additions"></a><a name="_core_server_application_accelerator_table_additions"></a>Добавление таблицы Server Application Accelerator
+## <a name="server-application-accelerator-table-additions"></a><a name="_core_server_application_accelerator_table_additions"></a> Добавление таблицы Server Application Accelerator
 
 В серверные приложения необходимо добавить два новых ресурса таблицы ускорителя. они непосредственно соответствуют новым ресурсам меню, описанным выше. Первая таблица сочетаний клавиш используется, когда серверное приложение активировано на месте. Он состоит из всех записей в таблице сочетаний клавиш представления, за исключением тех, которые привязаны к меню файл и окно.
 
@@ -56,7 +57,7 @@ ms.locfileid: "84626186"
 
 Чтобы получить пример этих изменений в таблице сочетаний клавиш, Сравните IDR_HIERSVRTYPE_SRVR_IP и IDR_HIERSVRTYPE_SRVR_EMB таблицы сочетаний клавиш с IDR_MAINFRAME в HIERSVR. RC-файл, который входит в пример MFC OLE для примера [HIERSVR](../overview/visual-cpp-samples.md). Ускорители файлов и окон отсутствуют в таблице на месте, и их точные копии находятся во внедренной таблице.
 
-## <a name="string-table-additions-for-server-applications"></a><a name="_core_string_table_additions_for_server_applications"></a>Добавление строк таблицы для серверных приложений
+## <a name="string-table-additions-for-server-applications"></a><a name="_core_string_table_additions_for_server_applications"></a> Добавление строк таблицы для серверных приложений
 
 В серверном приложении требуется только одно добавление строковых таблиц — строка, означающая, что инициализация OLE не удалась. Ниже приведен пример записи в таблице строк, создаваемой мастером приложений.
 
@@ -64,11 +65,11 @@ ms.locfileid: "84626186"
 |--------|------------|
 |IDP_OLE_INIT_FAILED|Не удалось инициализировать OLE. Убедитесь, что используются правильные версии библиотек OLE.|
 
-## <a name="miniserver-additions"></a><a name="_core_mini.2d.server_additions"></a>Дополнения минисервер
+## <a name="miniserver-additions"></a><a name="_core_mini.2d.server_additions"></a> Дополнения минисервер
 
 Одни и те же дополнения применяются для минисерверс, как описано выше для полных серверов. Так как минисервер не может быть запущен в изолированном режиме, его главное меню намного меньше. Главное меню, созданное мастером приложений, содержит только меню файл, в котором содержатся только элементы выход и о программе. Встроенные и встроенные меню и ускорители для минисерверс одинаковы для всех серверов.
 
 ## <a name="see-also"></a>См. также раздел
 
 [Меню и ресурсы (OLE)](menus-and-resources-ole.md)<br/>
-[Меню и ресурсы. Слияние меню](menus-and-resources-menu-merging.md)
+[Меню и ресурсы: слияние меню](menus-and-resources-menu-merging.md)

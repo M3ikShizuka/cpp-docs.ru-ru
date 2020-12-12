@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: WeakReference Class'
 title: Класс WeakReference
 ms.date: 09/24/2018
 ms.topic: reference
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::WeakReference::~WeakReference, destructor
 - Microsoft::WRL::Details::WeakReference::WeakReference, constructor
 ms.assetid: 3f4c956b-dbbd-49b1-8cfa-9509a9956c97
-ms.openlocfilehash: 9a367a61a029abe1be599b1e262e279402149ccd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 743a705fae93d015d190df24d2534de62613e542
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220461"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116553"
 ---
 # <a name="weakreference-class"></a>Класс WeakReference
 
@@ -50,7 +51,7 @@ class WeakReference;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-Имя                                                  | Описание
+name                                                  | Описание
 ----------------------------------------------------- | ---------------------------------------------------------------------------
 [WeakReference:: WeakReference](#weakreference)        | Инициализирует новый экземпляр класса `WeakReference`.
 [WeakReference:: ~ WeakReference](#tilde-weakreference) | Выполняет деинициализацию (уничтожает) текущий экземпляр `WeakReference` класса.
@@ -74,7 +75,7 @@ name                                                                 | Опис�
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 
-## <a name="weakreferenceweakreference"></a><a name="tilde-weakreference"></a>WeakReference:: ~ WeakReference
+## <a name="weakreferenceweakreference"></a><a name="tilde-weakreference"></a> WeakReference:: ~ WeakReference
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -84,11 +85,11 @@ virtual ~WeakReference();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Выполняет деинициализацию текущего экземпляра `WeakReference` класса.
 
-## <a name="weakreferencedecrementstrongreference"></a><a name="decrementstrongreference"></a>WeakReference::D Екрементстронгреференце
+## <a name="weakreferencedecrementstrongreference"></a><a name="decrementstrongreference"></a> WeakReference::D Екрементстронгреференце
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -96,7 +97,7 @@ virtual ~WeakReference();
 ULONG DecrementStrongReference();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Уменьшает значение счетчика строгой ссылки текущего `WeakReference` объекта.
 
@@ -106,7 +107,7 @@ ULONG DecrementStrongReference();
 
 Число уменьшения строгой ссылки.
 
-## <a name="weakreferenceincrementstrongreference"></a><a name="incrementstrongreference"></a>WeakReference:: Инкрементстронгреференце
+## <a name="weakreferenceincrementstrongreference"></a><a name="incrementstrongreference"></a> WeakReference:: Инкрементстронгреференце
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -118,11 +119,11 @@ ULONG IncrementStrongReference();
 
 Увеличенный счетчик ссылок со строгим значением.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Увеличивает значение счетчика строгой ссылки текущего `WeakReference` объекта.
 
-## <a name="weakreferenceresolve"></a><a name="resolve"></a>WeakReference:: Resolve
+## <a name="weakreferenceresolve"></a><a name="resolve"></a> WeakReference:: Resolve
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -149,11 +150,11 @@ STDMETHOD(Resolve)
 
 - В противном случае возвращается значение HRESULT, указывающее причину сбоя операции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Устанавливает указанный указатель на текущее значение строгой ссылки, если число строгих ссылок не равно нулю.
 
-## <a name="weakreferencesetunknown"></a><a name="setunknown"></a>WeakReference:: Сетункновн
+## <a name="weakreferencesetunknown"></a><a name="setunknown"></a> WeakReference:: Сетункновн
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -168,11 +169,11 @@ void SetUnknown(
 *унк*<br/>
 Указатель на `IUnknown` интерфейс объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Устанавливает строгую ссылку текущего `WeakReference` объекта на указанный указатель интерфейса.
 
-## <a name="weakreferenceweakreference"></a><a name="weakreference"></a>WeakReference:: WeakReference
+## <a name="weakreferenceweakreference"></a><a name="weakreference"></a> WeakReference:: WeakReference
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -180,7 +181,7 @@ void SetUnknown(
 WeakReference();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Инициализирует новый экземпляр класса `WeakReference`.
 

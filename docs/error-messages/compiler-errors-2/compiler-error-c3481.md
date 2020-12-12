@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C3481'
 title: Ошибка компилятора C3481
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3481
 ms.assetid: 5d09375a-5ed3-4b61-86ed-45e91fd734c7
-ms.openlocfilehash: 1719e9f1d3328be083f745498e6f4ad772b0b52a
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 31f13b56a2b5df66a5765ee63313ffe265c15fe4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755243"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113406"
 ---
 # <a name="compiler-error-c3481"></a>Ошибка компилятора C3481
 
@@ -36,6 +37,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 [Лямбда-выражения](../../cpp/lambda-expressions-in-cpp.md)

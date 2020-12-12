@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: макросы отладки и отчетов об ошибках'
 title: Макросы отладки и отчетов об ошибках
 ms.date: 05/06/2019
 f1_keywords:
@@ -11,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - macros, error reporting
 ms.assetid: 4da9b87f-ec5c-4a32-ab93-637780909b9d
-ms.openlocfilehash: 6b969cfb841a9a95d695eacc0a25f9dd378379ac
-ms.sourcegitcommit: ced5ff1431ffbd25b20d106901955532723bd188
+ms.openlocfilehash: 573c3f341ff9f9df58337b75e1080dde960d232c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92135545"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139949"
 ---
 # <a name="debugging-and-error-reporting-macros"></a>Макросы отладки и отчетов об ошибках
 
@@ -283,7 +284,7 @@ ATLTRACE и ATLTRACE2 имеют одинаковое поведение, ATLTRA
 
 [!code-cpp[NVC_ATL_Utilities#111](../../atl/codesnippet/cpp/debugging-and-error-reporting-macros_5.cpp)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Макросы](../../atl/reference/atl-macros.md)<br/>
 [Глобальные функции отладки и отчетов об ошибках](../../atl/reference/debugging-and-error-reporting-global-functions.md)

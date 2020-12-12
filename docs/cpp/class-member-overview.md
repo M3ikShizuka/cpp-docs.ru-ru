@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: обзор членов класса'
 title: Обзор членов класса
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - class members [C++], types of
 - class members
 ms.assetid: 8802cfa9-705d-4f37-acde-245d6838010c
-ms.openlocfilehash: 02c5593d9fb5e72ee6b398c9637397ab26c9f3f2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6059fc589d7065863c37f03a6e40882e1039b17c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229068"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114121"
 ---
 # <a name="class-member-overview"></a>Обзор членов класса
 
@@ -102,7 +103,7 @@ int TestRun::_instances{ 0 };
 
 Специальные функции-члены — это функции, которые автоматически создаются компилятором, если не указаны в исходном коде.
 
-1. Конструктор по умолчанию.
+1. Конструктор по умолчанию
 
 1. Конструктор копии
 
@@ -170,6 +171,6 @@ int CanInit2::j = i;
 > [!NOTE]
 > Имя класса, `CanInit2`, должно предшествовать `i`, чтобы указать, что `i` определяется как член класса `CanInit2`.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 [Классы и структуры](../cpp/classes-and-structs-cpp.md)

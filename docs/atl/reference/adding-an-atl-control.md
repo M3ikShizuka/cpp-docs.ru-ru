@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: Добавление элемента управления ATL'
 title: Добавление элемента управления ATL
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ATL projects, adding controls
 - controls [ATL], adding to projects
 ms.assetid: 10223e7e-fdb7-4163-80c6-44aeafa8e6ce
-ms.openlocfilehash: fac1efeb3d373a8324828a8b10f0570f253f6103
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 91fe393a1e93deb2173ac95a42b7ab9cca339535
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499298"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165710"
 ---
 # <a name="adding-an-atl-control"></a>Добавление элемента управления ATL
 
@@ -24,7 +25,7 @@ ms.locfileid: "91499298"
 
 1. В диалоговом окне [Добавление класса](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) в области Шаблоны щелкните **элемент Управление ATL**, а затем нажмите кнопку **Добавить** , чтобы открыть [Мастер элементов управления ATL](../../atl/reference/atl-control-wizard.md).
 
-С помощью **мастера элементов управления ATL**можно создать один из трех типов элементов управления:
+С помощью **мастера элементов управления ATL** можно создать один из трех типов элементов управления:
 
 - Стандартный элемент управления
 

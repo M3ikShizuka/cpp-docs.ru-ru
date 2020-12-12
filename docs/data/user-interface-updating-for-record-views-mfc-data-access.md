@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: User-Interface обновлении представлений записей (доступ к данным MFC)'
 title: Обновление пользовательского интерфейса для представлений записей (доступ к данным MFC)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - menus, updating as context changes
 - record views, user interface
 ms.assetid: 2c7914b6-2dc3-40c3-b2f2-8371da2a4063
-ms.openlocfilehash: 9bfb907d21c928c605b304c595acb834d0046e35
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3a199faa3e606260257ece0fff9a7d1de3095d18
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209057"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116448"
 ---
 # <a name="user-interface-updating-for-record-views--mfc-data-access"></a>Обновление пользовательского интерфейса для представлений записей (доступ к данным MFC)
 

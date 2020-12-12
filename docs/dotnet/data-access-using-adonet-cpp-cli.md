@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье доступ к данным с помощью ADO.NET (C++/CLI).
 title: Доступ к данным с помощью ADO.NET (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - SAFEARRAY, marshaling
 - ADO.NET [C++], marshaling SAFEARRAY types
 ms.assetid: b0cd987d-1ea7-4f76-ba01-cbd52503d06d
-ms.openlocfilehash: 3f3980c98890382e77d9d89db2944bebf7b12319
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 93af8a8a2dc4ebc8d9fe6073b9f3a70f4868bee8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211064"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124271"
 ---
 # <a name="data-access-using-adonet-ccli"></a>Доступ к данным с помощью ADO.NET (C++/CLI)
 
@@ -35,7 +36,7 @@ ADO.NET — это .NET Framework API для доступа к данным и �
 
 ADO.NET выполняется в среде CLR. Таким образом, любое приложение, взаимодействующее с ADO.NET, должно также ориентироваться на среду CLR. Однако это не означает, что собственные приложения не могут использовать ADO.NET. В этих примерах показано, как взаимодействовать с базой данных ADO.NET из машинного кода.
 
-## <a name="marshal-ansi-strings-for-adonet"></a><a name="marshal_ansi"></a>Маршалирование строк ANSI для ADO.NET
+## <a name="marshal-ansi-strings-for-adonet"></a><a name="marshal_ansi"></a> Маршалирование строк ANSI для ADO.NET
 
 Демонстрирует, как добавить собственную строку ( `char *` ) в базу данных и как маршалировать <xref:System.String?displayProperty=fullName> из базы данных в собственную строку.
 
@@ -161,7 +162,7 @@ StringCol: This is string 2.
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_string_native.cpp
     ```
 
-## <a name="marshal-bstr-strings-for-adonet"></a><a name="marshal_bstr"></a>Маршалирование строк BSTR для ADO.NET
+## <a name="marshal-bstr-strings-for-adonet"></a><a name="marshal_bstr"></a> Маршалирование строк BSTR для ADO.NET
 
 Демонстрирует, как добавить в базу данных строку COM ( `BSTR` ) и как маршалировать <xref:System.String?displayProperty=fullName> из базы данных в `BSTR` .
 
@@ -295,7 +296,7 @@ StringCol: This is string 2.
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_string_native.cpp
     ```
 
-## <a name="marshal-unicode-strings-for-adonet"></a><a name="marshal_unicode"></a>Маршалирование строк Юникода для ADO.NET
+## <a name="marshal-unicode-strings-for-adonet"></a><a name="marshal_unicode"></a> Маршалирование строк Юникода для ADO.NET
 
 Демонстрирует добавление собственной строки Юникода ( `wchar_t *` ) в базу данных и способ маршалирования <xref:System.String?displayProperty=fullName> из базы данных в собственную строку в Юникоде.
 
@@ -421,7 +422,7 @@ StringCol: This is string 2.
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_string_wide.cpp
     ```
 
-## <a name="marshal-a-variant-for-adonet"></a><a name="marshal_variant"></a>Маршалирование VARIANT для ADO.NET
+## <a name="marshal-a-variant-for-adonet"></a><a name="marshal_variant"></a> Маршалирование VARIANT для ADO.NET
 
 Демонстрирует, как добавить собственный объект `VARIANT` в базу данных и как маршалировать <xref:System.Object?displayProperty=fullName> из базы данных в машинный код `VARIANT` .
 
@@ -562,7 +563,7 @@ ObjectCol: 42
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_variant.cpp
     ```
 
-## <a name="marshal-a-safearray-for-adonet"></a><a name="marshal_safearray"></a>Маршалирование SAFEARRAY для ADO.NET
+## <a name="marshal-a-safearray-for-adonet"></a><a name="marshal_safearray"></a> Маршалирование SAFEARRAY для ADO.NET
 
 Демонстрирует, как добавить собственный объект `SAFEARRAY` в базу данных и как маршалировать управляемый массив из базы данных в машинный код `SAFEARRAY` .
 
@@ -715,7 +716,7 @@ int main()
     cl /clr /FU System.dll /FU System.Data.dll /FU System.Xml.dll adonet_marshal_safearray.cpp
     ```
 
-## <a name="net-framework-security"></a>Безопасность .NET Framework
+## <a name="net-framework-security"></a>Безопасность платформы .NET Framework
 
 Сведения о проблемах безопасности, связанных с ADO.NET, см. в разделе [Защита приложений ADO.NET](/dotnet/framework/data/adonet/securing-ado-net-applications).
 

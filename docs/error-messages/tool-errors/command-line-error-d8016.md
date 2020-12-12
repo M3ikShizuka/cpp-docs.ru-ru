@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Command-Line Error D8016'
 title: Ошибка командной строки D8016
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - D8016
 ms.assetid: eec51312-7471-4f92-94b2-d517cafc8ef5
-ms.openlocfilehash: 1bdef16b14488be86aff880db7c049f4bcddcdb5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2f340cb7574177536310343dc9761058b7b9bc08
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80196967"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115720"
 ---
 # <a name="command-line-error-d8016"></a>Ошибка командной строки D8016
 
@@ -21,7 +22,7 @@ ms.locfileid: "80196967"
 
 Для спецификаций параметров проверьте переменные среды, такие как CL.
 
-параметр **/CLR** подразумевает **/EHa**, и нельзя указывать другие параметры компилятора **/EH** с параметром **/CLR**. Дополнительные сведения см. в разделе [/clr (компиляция CLR)](../../build/reference/clr-common-language-runtime-compilation.md).
+параметр **/CLR** подразумевает **/EHa**, и нельзя указывать другие параметры компилятора **/EH** с параметром **/CLR**. Дополнительные сведения см. в разделе [/CLR (компиляция среды CLR)](../../build/reference/clr-common-language-runtime-compilation.md).
 
 Вы можете получить D8016 после обновления проекта Visual C++ 6,0: в процессе работы мастера обновления проекта можно включить **/RTC** для каждого файла исходного кода в проекте, который переопределяет параметр **/RTC** для проекта.  Чтобы устранить эту проблему, измените параметр **/RTC** для каждого файла исходного кода в проекте на значение по умолчанию, что означает, что параметр проекта для **/RTC** будет действовать для каждого файла.
 

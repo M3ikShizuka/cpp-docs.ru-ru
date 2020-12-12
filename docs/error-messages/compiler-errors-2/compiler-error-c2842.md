@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C2842'
 title: Ошибка компилятора C2842
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - C2842
 ms.assetid: 8674f08d-9f50-46ad-9229-abc6b74fa0e5
-ms.openlocfilehash: 99b2c86d1e914c9425c2664d4e858bba6cb99486
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f086c6c5fcfa451f320d96470615e4f5f4d5674a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62382948"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119987"
 ---
 # <a name="compiler-error-c2842"></a>Ошибка компилятора C2842
 
-> "*класс*": управляемый или тип WinRT не может определять свой собственный «operator new» или «operator delete»
+> "*класс*": тип управляемого или WinRT не может определять собственный оператор "operator new" или "operator delete"
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Можно определить собственные **оператор new** или **оператор delete** для управления выделением памяти в неуправляемой куче. Однако эти операторы не могут быть определены в ссылочных классах , так как только они выделяются в управляемой куче.
+Для управления выделением памяти в собственной куче можно определить собственный **оператор New** или **оператор DELETE** . Однако эти операторы не могут быть определены в ссылочных классах , так как только они выделяются в управляемой куче.
 
-Дополнительные сведения см. в разделе [определяемые пользователем операторы (C++выполняет)](../../dotnet/user-defined-operators-cpp-cli.md).
+Дополнительные сведения см. в разделе [определяемые пользователем операторы (C++/CLI)](../../dotnet/user-defined-operators-cpp-cli.md).
 
 ## <a name="example"></a>Пример
 

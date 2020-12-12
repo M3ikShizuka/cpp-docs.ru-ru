@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: fsetpos'
 title: fsetpos
 ms.date: 4/2/2020
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - streams, setting position indicators
 - fsetpos function
 ms.assetid: 6d19ff48-1a2b-47b3-9f23-ed0a47b5a46e
-ms.openlocfilehash: 8fa6ec1f37703ce51e0c9c565d766c56cf164322
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e8259bcf4dba951bf6603fb5d4984db6ece0e266
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910177"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114225"
 ---
 # <a name="fsetpos"></a>fsetpos
 
@@ -61,9 +62,9 @@ int fsetpos(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функция **fsetpos** задает для *потока* значение индикатора положения *файла, которое*получается при предыдущем вызове метода **fgetpos** для *потока*. Функция очищает индикатор конца файла и отменяет любые эффекты [ungetc](ungetc-ungetwc.md) в *потоке*. После вызова **fsetpos**следующая операция с *потоком* может быть либо входными, либо выходными.
+Функция **fsetpos** задает для *потока* значение индикатора положения *файла, которое* получается при предыдущем вызове метода **fgetpos** для *потока*. Функция очищает индикатор конца файла и отменяет любые эффекты [ungetc](ungetc-ungetwc.md) в *потоке*. После вызова **fsetpos** следующая операция с *потоком* может быть либо входными, либо выходными.
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

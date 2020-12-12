@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: сокеты Windows: использование класса CAsyncSocket'
 title: Сокеты Windows. Использование класса CAsyncSocket
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - sockets [MFC], asynchronous operation
 - Windows Sockets [MFC], converting Unicode and MBCS strings
 ms.assetid: 825dae17-7c1b-4b86-8d6c-da7f1afb5d8d
-ms.openlocfilehash: 6a3b3469b908eaf6f8062b8db7fc4287606b7f02
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9fbf385a2e327588685fdcb996465386628e5e4d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228509"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118606"
 ---
 # <a name="windows-sockets-using-class-casyncsocket"></a>Сокеты Windows. Использование класса CAsyncSocket
 
-В этой статье объясняется, как использовать класс [CAsyncSocket](../mfc/reference/casyncsocket-class.md). Имейте в виду, что этот класс инкапсулирует API Windows Sockets на очень низком уровне. `CAsyncSocket`предназначен для использования программистами, которые узнают о сетевом взаимодействии, но хотят использовать обратные вызовы для уведомления о сетевых событиях. Основываясь на этом предположении, в этой статье содержится только основная инструкция. Вы, вероятно, рассмотрите возможность использования, `CAsyncSocket` Если вы хотите, чтобы использование сокетов Windows было удобным для работы с несколькими сетевыми протоколами в приложении MFC, но не хотите пожертвовать гибкостью. Кроме того, вы можете получить лучшую эффективность благодаря более эффективному программированию взаимодействия, чем использовать более общую альтернативную модель класса `CSocket` .
+В этой статье объясняется, как использовать класс [CAsyncSocket](../mfc/reference/casyncsocket-class.md). Имейте в виду, что этот класс инкапсулирует API Windows Sockets на очень низком уровне. `CAsyncSocket` предназначен для использования программистами, которые узнают о сетевом взаимодействии, но хотят использовать обратные вызовы для уведомления о сетевых событиях. Основываясь на этом предположении, в этой статье содержится только основная инструкция. Вы, вероятно, рассмотрите возможность использования, `CAsyncSocket` Если вы хотите, чтобы использование сокетов Windows было удобным для работы с несколькими сетевыми протоколами в приложении MFC, но не хотите пожертвовать гибкостью. Кроме того, вы можете получить лучшую эффективность благодаря более эффективному программированию взаимодействия, чем использовать более общую альтернативную модель класса `CSocket` .
 
-`CAsyncSocket`описывается в *справочнике по MFC*. Visual C++ также предоставляет спецификацию сокетов Windows, расположенную в Windows SDK. Сведения отправляются по левому краю. Visual C++ не предоставляет пример приложения для `CAsyncSocket` .
+`CAsyncSocket` описывается в *справочнике по MFC*. Visual C++ также предоставляет спецификацию сокетов Windows, расположенную в Windows SDK. Сведения отправляются по левому краю. Visual C++ не предоставляет пример приложения для `CAsyncSocket` .
 
 Если вы не обладаете широкими знаниями о сетевых подключениях и хотите использовать простое решение, используйте класс [CSocket](../mfc/reference/csocket-class.md) с `CArchive` объектом. Дополнительные сведения см. в разделе [сокеты Windows: Использование сокетов с архивами](../mfc/windows-sockets-using-sockets-with-archives.md) .
 
@@ -30,7 +31,7 @@ ms.locfileid: "87228509"
 
 - [Ваши обязанности с CAsyncSocket](#_core_your_responsibilities_with_casyncsocket).
 
-## <a name="creating-and-using-a-casyncsocket-object"></a><a name="_core_creating_and_using_a_casyncsocket_object"></a>Создание и использование объекта CAsyncSocket
+## <a name="creating-and-using-a-casyncsocket-object"></a><a name="_core_creating_and_using_a_casyncsocket_object"></a> Создание и использование объекта CAsyncSocket
 
 #### <a name="to-use-casyncsocket"></a>Использование CAsyncSocket
 
@@ -85,9 +86,9 @@ ms.locfileid: "87228509"
 
 Пример этой последовательности в коде (на самом деле для `CSocket` объекта) см. в разделе [сокеты Windows: последовательность операций](../mfc/windows-sockets-sequence-of-operations.md).
 
-## <a name="your-responsibilities-with-casyncsocket"></a><a name="_core_your_responsibilities_with_casyncsocket"></a>Ваши обязанности с CAsyncSocket
+## <a name="your-responsibilities-with-casyncsocket"></a><a name="_core_your_responsibilities_with_casyncsocket"></a> Ваши обязанности с CAsyncSocket
 
-При создании объекта класса [CAsyncSocket](../mfc/reference/casyncsocket-class.md)объект инкапсулирует маркер Windows **Socket** и предоставляет операции с этим маркером. При использовании вы `CAsyncSocket` должны иметь дело со всеми проблемами, которые могут возникнуть при непосредственном использовании API. Например:
+При создании объекта класса [CAsyncSocket](../mfc/reference/casyncsocket-class.md)объект инкапсулирует маркер Windows **Socket** и предоставляет операции с этим маркером. При использовании вы `CAsyncSocket` должны иметь дело со всеми проблемами, которые могут возникнуть при непосредственном использовании API. Пример:
 
 - Сценарии блокировки.
 
@@ -97,7 +98,7 @@ ms.locfileid: "87228509"
 
 Определения этих терминов и дополнительные сведения см. в статьях [сокеты Windows: Блокировка](../mfc/windows-sockets-blocking.md), [сокеты Windows: порядок байтов](../mfc/windows-sockets-byte-ordering.md), [сокеты Windows: преобразование строк](../mfc/windows-sockets-converting-strings.md).
 
-Несмотря на эти проблемы, класс `CAsycnSocket` может быть правильным выбором, если ваше приложение требует всей гибкости и управления, которые можно получить. Если нет, вместо этого следует использовать класс `CSocket` . `CSocket`скрывает от вас много деталей: он переносит сообщения Windows во время блокирующих вызовов и предоставляет вам доступ к `CArchive` , который управляет различиями порядка байтов и преобразованием строк.
+Несмотря на эти проблемы, класс `CAsycnSocket` может быть правильным выбором, если ваше приложение требует всей гибкости и управления, которые можно получить. Если нет, вместо этого следует использовать класс `CSocket` . `CSocket` скрывает от вас много деталей: он переносит сообщения Windows во время блокирующих вызовов и предоставляет вам доступ к `CArchive` , который управляет различиями порядка байтов и преобразованием строк.
 
 Дополнительные сведения см. в разделе:
 
@@ -107,6 +108,6 @@ ms.locfileid: "87228509"
 
 - [Сокеты Windows: сокеты датаграммы](../mfc/windows-sockets-datagram-sockets.md)
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Сокеты Windows в MFC](../mfc/windows-sockets-in-mfc.md)

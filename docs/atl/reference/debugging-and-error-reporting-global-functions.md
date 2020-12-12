@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Отладка и глобальные функции отчетов об ошибках'
 title: Глобальные функции отладки и отчетов об ошибках
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - functions [ATL], error reporting
 ms.assetid: 11339c02-98cd-428d-b3b9-7deeb155a6a3
-ms.openlocfilehash: 10aca6862f6989c126981a9f6437c61f1c07bdae
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 3c729a7d8e870ce7b104ca53cd83bf8c41112dea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742792"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139988"
 ---
 # <a name="debugging-and-error-reporting-global-functions"></a>Глобальные функции отладки и отчетов об ошибках
 
@@ -35,7 +36,7 @@ ms.locfileid: "90742792"
 HRESULT AtlHresultFromLastError();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `AtlHresultFromLastError` вызывает метод `GetLastError` для получения последней ошибки и возвращает ошибку после ее преобразования в значение HRESULT с помощью макроса HRESULT_FROM_WIN32.
 
@@ -56,7 +57,7 @@ AtlHresultFromWin32(DWORD error);
 *error*<br/>
 Значение ошибки для преобразования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Преобразует код ошибки Win32 в значение HRESULT с помощью макроса HRESULT_FROM_WIN32.
 
@@ -147,7 +148,7 @@ HRESULT WINAPI AtlReportError(
 
 Если параметр *хрес* не равен нулю, возвращает значение *хрес*. Если *хрес* равен нулю, то первые четыре версии `AtlReportError` возвращают DISP_E_EXCEPTION. Последние две версии возвращают результат макроса **MAKE_HRESULT (1, FACILITY_ITF,** `nID` **)**.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Строка *лпсздеск* используется в качестве текстового описания ошибки. Когда клиент получает *хрес* , возвращаемый из `AtlReportError` , клиент может получить доступ к `IErrorInfo` структуре для получения сведений об ошибке.
 
@@ -175,7 +176,7 @@ __declspec(noreturn) inline void AtlThrow(HRESULT hr);
 *ч*<br/>
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция используется в коде ATL и MFC в случае возникновения ошибки. Его также можно вызывать из собственного кода. Реализация по умолчанию этой функции зависит от определения символа _ATL_NO_EXCEPTIONS и от типа проекта, MFC или ATL.
 
@@ -207,7 +208,7 @@ __declspec(noreturn) inline void AtlThrow(HRESULT hr);
 inline void AtlThrowLastWin32();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция отслеживает результат `GetLastError` в отладчике.
 

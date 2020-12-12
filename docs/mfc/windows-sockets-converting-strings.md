@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: сокеты Windows: преобразование строк'
 title: Сокеты Windows. Преобразование строк
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,35 +7,35 @@ helpviewer_keywords:
 - sockets [MFC], multibyte character string conversion issues
 - string conversion, multibyte character strings
 ms.assetid: 9df522b5-6b23-41e0-bb96-e4e623baf141
-ms.openlocfilehash: eaf278fc2689f0afa9ab6ff30f1294c36de5d7ac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe8607647192fadc7f0d5d32d7716c222ff9206f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62217395"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118632"
 ---
 # <a name="windows-sockets-converting-strings"></a>Сокеты Windows. Преобразование строк
 
-В этой статье и в двух других статьях приведены некоторые проблемы в программировании сокетов Windows. В этой статье рассматриваются преобразования строк. Другие проблемы рассматриваются в [сокеты Windows: Блокировка](../mfc/windows-sockets-blocking.md) и [сокеты Windows: Порядок байтов](../mfc/windows-sockets-byte-ordering.md).
+В этой статье и двух сопутствующих статьях объясняются некоторые проблемы, связанные с программированием Windows Sockets. В этой статье рассматривается преобразование строк. Другие проблемы описаны в разделе [сокеты Windows: Блокировка](../mfc/windows-sockets-blocking.md) и [сокеты Windows: упорядочение байтов](../mfc/windows-sockets-byte-ordering.md).
 
-Если вы используете или являются производными от класса [CAsyncSocket](../mfc/reference/casyncsocket-class.md), вам потребуется самостоятельно управлять эти проблемы. Если вы используете или являются производными от класса [CSocket](../mfc/reference/csocket-class.md), MFC автоматически управляет ими.
+Если вы используете или наследуете от класса [CAsyncSocket](../mfc/reference/casyncsocket-class.md), вам придется самостоятельно управлять этими проблемами. Если вы используете или наследуете от класса [CSocket](../mfc/reference/csocket-class.md), MFC управляет ими.
 
 ## <a name="converting-strings"></a>Преобразование строк
 
-Если вы обмениваться данными между приложений, использующих строк, которые хранятся в разных форматах расширенных символов, таких как Юникода и многобайтовой кодировки (MBCS), или один из них и приложения с помощью строки символов ANSI, необходимо управлять преобразования самостоятельно под `CAsyncSocket`. `CArchive` Объект, используемый с `CSocket` управляет такое преобразование посредством возможности класса [CString](../atl-mfc-shared/reference/cstringt-class.md). Дополнительные сведения см. в спецификации Windows Sockets, расположенный в пакете Windows SDK.
+При обмене данными между приложениями, которые используют строки, хранящиеся в разных форматах расширенных символов, таких как Юникод или многобайтовые кодировки (MBCS), или между одним из них и приложением, использующими строки символов ANSI, необходимо самостоятельно управлять преобразованиями в `CAsyncSocket` . `CArchive`Объект, используемый с `CSocket` объектом, управляет этим преобразованием с помощью возможностей класса [CString](../atl-mfc-shared/reference/cstringt-class.md). Дополнительные сведения см. в описании спецификации сокетов Windows, расположенной в Windows SDK.
 
-Дополнительные сведения:
+Дополнительные сведения см. в разделе:
 
-- [Сокеты Windows. Использование класса CAsyncSocket](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Сокеты Windows: использование класса CAsyncSocket](../mfc/windows-sockets-using-class-casyncsocket.md)
 
-- [Сокеты Windows. Использование сокетов с архивами](../mfc/windows-sockets-using-sockets-with-archives.md)
+- [Сокеты Windows: Использование сокетов с архивами](../mfc/windows-sockets-using-sockets-with-archives.md)
 
 - [Сокеты Windows. Фон](../mfc/windows-sockets-background.md)
 
-- [Сокеты Windows. Сокеты потоков](../mfc/windows-sockets-stream-sockets.md)
+- [Сокеты Windows: сокеты потоков](../mfc/windows-sockets-stream-sockets.md)
 
-- [Сокеты Windows. Сокеты датаграмм](../mfc/windows-sockets-datagram-sockets.md)
+- [Сокеты Windows: сокеты датаграммы](../mfc/windows-sockets-datagram-sockets.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Сокеты Windows в MFC](../mfc/windows-sockets-in-mfc.md)

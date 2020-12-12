@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: фераисиксцепт'
 title: feraiseexcept
 ms.date: 04/05/2018
 api_name:
@@ -22,12 +23,12 @@ f1_keywords:
 helpviewer_keywords:
 - feraiseexcept function
 ms.assetid: 87e89151-83c2-4563-9a9a-45666245d437
-ms.openlocfilehash: e98c402169ed0f35ab1bdf0b8221a2248f252f21
-ms.sourcegitcommit: ba4180a2d79d7e391f2f705797505d4aedbc2a5e
+ms.openlocfilehash: 8e7a06006cfdc768fdaa306bc293857f1c375b90
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76972209"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124947"
 ---
 # <a name="feraiseexcept"></a>feraiseexcept
 
@@ -50,9 +51,9 @@ int feraiseexcept(
 
 Если все заданные исключения вызваны успешно, возвращается 0.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
-Функция **фераисиксцепт** пытается вызвать исключения с плавающей запятой, заданные параметром *except*.   Функция **фераисиксцепт** поддерживает эти макросы исключений, определенные в > \<fenv. h:
+Функция **фераисиксцепт** пытается вызвать исключения с плавающей запятой, заданные параметром *except*.   Функция **фераисиксцепт** поддерживает эти макросы исключений, определенные в \<fenv.h> :
 
 |Макрос исключения|Описание|
 |---------------------|-----------------|
@@ -75,11 +76,11 @@ int feraiseexcept(
 |--------------|--------------|------------------|
 |*feraiseexcept*|\<fenv.h>|\<cfenv>|
 
-Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Алфавитный указатель функций](crt-alphabetical-function-reference.md)<br/>
+[Алфавитный справочник по функциям](crt-alphabetical-function-reference.md)<br/>
 [fesetexceptflag](fesetexceptflag2.md)<br/>
 [feholdexcept](feholdexcept2.md)<br/>
 [fetestexcept](fetestexcept1.md)<br/>

@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье обзор возможных проблем с обновлением (Visual C++).
 title: Общие сведения о возможных проблемах, возникающих при обновлении (Visual C++)
 ms.date: 05/03/2019
 ms.assetid: 2c99a8cb-098f-4a9d-bf2c-b80fd06ace43
-ms.openlocfilehash: d62bccfb3e508145773c01b26976f46dbcb6490f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 42060fc7bd1aeedebf6cdfc7f645ad8eea38153c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839677"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115213"
 ---
 # <a name="overview-of-potential-upgrade-issues-visual-c"></a>Общие сведения о возможных проблемах, возникающих при обновлении (Visual C++)
 
@@ -88,7 +89,7 @@ dumpbin.exe /LINKERMEMBER somelibrary.lib
 
 ### <a name="zcwchar_t-wchar_t-is-native-type"></a>/Zc:wchar_t (wchar_t – это собственный тип)
 
-(В Microsoft Visual C++ 6,0 и более ранних версий **`wchar_t`** не был реализован как встроенный тип, но был объявлен в WCHAR. h как typedef для неподписанного короткого имени.) Стандарт C++ требует наличия **`wchar_t`** встроенного типа. Использование версии определения типа может вызывать проблемы переносимости. При обновлении с более ранних версий Visual Studio и обнаружении ошибки компилятора C2664, поскольку код пытается неявно преобразовать **`wchar_t`** в в **`unsigned short`** , рекомендуется изменить код, чтобы исправить ошибку, а не задать `/Zc:wchar_t-` . Дополнительные сведения см. в разделе [/Zc:wchar_t (wchar_t — это собственный тип)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
+(В Microsoft Visual C++ 6,0 и более ранних версий **`wchar_t`** не был реализован как встроенный тип, но был объявлен в WCHAR. h как typedef для неподписанного короткого имени.) Стандарт C++ требует наличия **`wchar_t`** встроенного типа. Использование версии определения типа может вызывать проблемы переносимости. При обновлении с более ранних версий Visual Studio и обнаружении ошибки компилятора C2664, поскольку код пытается неявно преобразовать **`wchar_t`** в в **`unsigned short`** , рекомендуется изменить код, чтобы исправить ошибку, а не задать `/Zc:wchar_t-` . Дополнительные сведения см. в разделе [/Zc: wchar_t (wchar_t является собственным типом)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md).
 
 ### <a name="upgrading-with-the-linker-options-nodefaultlib-entry-and-noentry"></a>Обновление при использовании параметров компоновщика /NODEFAULTLIB, /ENTRY и /NOENTRY
 

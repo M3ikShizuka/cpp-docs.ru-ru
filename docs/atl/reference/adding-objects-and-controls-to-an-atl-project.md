@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Добавление объектов и элементов управления в проект ATL'
 title: Добавление объектов и элементов управления в проект ATL
 ms.date: 05/09/2019
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - objects [C++], adding to ATL projects
 - ATL Control Wizard
 ms.assetid: c0adcbd0-07fe-4c55-a8fd-8c2c65ecdaad
-ms.openlocfilehash: 6acd60d430f13906d11e9a9b3e7c5655ee94badb
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 979e15a6fe27599e68841e82ef03a457d66d3bf0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91499299"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165593"
 ---
 # <a name="adding-objects-and-controls-to-an-atl-project"></a>Добавление объектов и элементов управления в проект ATL
 
@@ -32,7 +33,7 @@ ms.locfileid: "91499299"
 - [ASP-компонент библиотеки ATL](../../atl/reference/atl-active-server-page-component-wizard.md)
 - [Adding an ATL OLE DB Consumer](../../atl/reference/atl-ole-db-consumer-wizard.md) (Добавление объекта-получателя ATL OLE DB)
 - [Добавление в MFC поддержки ATL](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)
-- [Мастер компонентов ATL COM+ 1.0](../../atl/reference/atl-com-plus-1-0-component-wizard.md)
+- [Мастер компонентов ATL COM+ 1,0](../../atl/reference/atl-com-plus-1-0-component-wizard.md)
 - [Поставщик ATL OLE DB](../../atl/reference/atl-ole-db-provider-wizard.md)
 
 > [!NOTE]
@@ -56,5 +57,5 @@ ms.locfileid: "91499299"
 [Мастер проектов ATL](../../atl/reference/atl-project-wizard.md)<br/>
 [Типы проектов C++ в Visual Studio](../../build/reference/visual-cpp-project-types.md)<br/>
 [Основы COM-объектов ATL](../../atl/fundamentals-of-atl-com-objects.md)<br/>
-[Программирование с помощью ATL и кода времени выполнения C](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
+[Программирование с помощью ATL и кода Run-Time C](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [Конфигурации проектов ATL по умолчанию](../../atl/reference/default-atl-project-configurations.md)

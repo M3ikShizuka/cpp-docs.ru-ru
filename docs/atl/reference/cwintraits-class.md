@@ -1,5 +1,6 @@
 ---
-title: Класс CWinTraits
+description: 'Дополнительные сведения о: Квинтраитс Class'
+title: Класс Квинтраитс
 ms.date: 11/04/2016
 f1_keywords:
 - CWinTraits
@@ -13,19 +14,19 @@ helpviewer_keywords:
 - CFrameWinTraits class
 - CControlWinTraits class
 ms.assetid: f78f486e-6d9c-42c6-8e86-371e05aa7e59
-ms.openlocfilehash: fd73f733e4eff21da92937d1e1b0cce21552a48c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3f23342cae58d70a602ebce1dcbe7efcddf36781
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81330303"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140092"
 ---
-# <a name="cwintraits-class"></a>Класс CWinTraits
+# <a name="cwintraits-class"></a>Класс Квинтраитс
 
-Этот класс предоставляет метод стандартизации стилей, используемых при создании объекта окна.
+Этот класс предоставляет метод для стандартизации стилей, используемых при создании объекта Window.
 
 > [!IMPORTANT]
-> Этот класс и его члены не могут быть использованы в приложениях, выполняемых в Windows Runtime.
+> Этот класс и его члены не могут использоваться в приложениях, выполняемых в среда выполнения Windows.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,49 +37,49 @@ template <DWORD t_dwStyle = 0, DWORD t_dwExStyle = 0>  class CWinTraits
 #### <a name="parameters"></a>Параметры
 
 *t_dwStyle*<br/>
-Стандартное окно по умолчанию стилей.
+Стандартные стили окна по умолчанию.
 
 *t_dwExStyle*<br/>
-Стили расширенных окон по умолчанию.
+Расширенные стили окна по умолчанию.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CWinTraits::GetWndExStyle](#getwndexstyle)|(Статик) Извлекает расширенные стили `CWinTraits` для объекта.|
-|[CWinTraits::GetwndStyle](#getwndstyle)|(Статик) Извлекает стандартные стили `CWinTraits` для объекта.|
+|[Квинтраитс:: Жетвндексстиле](#getwndexstyle)|Статически Извлекает расширенные стили для `CWinTraits` объекта.|
+|[Квинтраитс:: Жетвндстиле](#getwndstyle)|Статически Возвращает стандартные стили для `CWinTraits` объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот класс [черт оконов](../../atl/understanding-window-traits.md) предоставляет простой метод стандартизации стилей, используемых для создания объекта окна ATL. Используйте специализацию этого класса в качестве параметра шаблона для [CWindowImpl](../../atl/reference/cwindowimpl-class.md) или другого из оконных классов ATL, чтобы указать стандарт по умолчанию и расширенные стили, используемые для экземпляров этого класса окон.
+Этот класс признаков [окон](../../atl/understanding-window-traits.md) предоставляет простой метод стандартизации стилей, используемых для создания объекта окна ATL. Используйте специализацию этого класса в качестве параметра шаблона для [квиндовимпл](../../atl/reference/cwindowimpl-class.md) или другого класса окна ATL, чтобы указать стандартные и расширенные стили, используемые для экземпляров этого класса окон.
 
-Используйте этот шаблон, когда вы хотите предоставить стили окна по умолчанию, которые будут использоваться только тогда, когда в вызове [cWindowImpl не](../../atl/reference/cwindowimpl-class.md#create)указаны другие стили: :Создать .
+Используйте этот шаблон, если требуется предоставить стили окна по умолчанию, которые будут использоваться только в том случае, если в вызове [квиндовимпл:: Create](../../atl/reference/cwindowimpl-class.md#create)не указаны другие стили.
 
-ATL предоставляет три предопределенные специализации этого шаблона для широко используемых комбинаций оконных стилей:
+ATL предоставляет три предопределенные специализации этого шаблона для часто используемых сочетаний стилей окон:
 
 - `CControlWinTraits`
 
-   Предназначен для стандартного окна управления. Используются следующие стандартные стили: WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN и WS_CLIPSIBLINGS. Нет расширенных стилей.
+   Предназначен для стандартного окна управления. Используются следующие стандартные стили: WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN и WS_CLIPSIBLINGS. Расширенные стили отсутствуют.
 
 - `CFrameWinTraits`
 
-   Предназначен для стандартного окна рамы. Используемые стандартные стили включают: WS_OVERLAPPEDWINDOW, WS_CLIPCHILDREN и WS_CLIPSIBLINGS. Используемые расширенные стили включают: WS_EX_APPWINDOW и WS_EX_WINDOWEDGE.
+   Предназначен для стандартного окна фрейма. К стандартным стилям относятся: WS_OVERLAPPEDWINDOW, WS_CLIPCHILDREN и WS_CLIPSIBLINGS. В число используемых расширенных стилей входят: WS_EX_APPWINDOW и WS_EX_WINDOWEDGE.
 
 - `CMDIChildWinTraits`
 
-   Предназначен для стандартного детского окна MDI. Используемые стандартные стили включают: WS_OVERLAPPEDWINDOW, WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN и WS_CLIPSIBLINGS. Используемые расширенные стили включают: WS_EX_MDICHILD.
+   Предназначен для стандартного дочернего окна MDI. К стандартным стилям относятся: WS_OVERLAPPEDWINDOW, WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN и WS_CLIPSIBLINGS. В число используемых расширенных стилей входят: WS_EX_MDICHILD.
 
-Если вы хотите убедиться, что определенные стили настроены для всех экземпляров класса окон, позволяя при этом устанавливать другие стили на основе экземпляра, используйте [CWinTraitsOR](../../atl/reference/cwintraitsor-class.md) вместо этого.
+Если необходимо убедиться, что определенные стили заданы для всех экземпляров класса Window, при этом другие стили могут быть заданы для каждого экземпляра, используйте вместо него [квинтраитсор](../../atl/reference/cwintraitsor-class.md) .
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin.h
+**Заголовок:** atlwin. h
 
-## <a name="cwintraitsgetwndstyle"></a><a name="getwndstyle"></a>CWinTraits::GetwndStyle
+## <a name="cwintraitsgetwndstyle"></a><a name="getwndstyle"></a> Квинтраитс:: Жетвндстиле
 
-Вызовите эту функцию, чтобы `CWinTraits` получить стандартные стили объекта.
+Вызовите эту функцию, чтобы получить стандартные стили `CWinTraits` объекта.
 
 ```
 static DWORD GetWndStyle(DWORD dwStyle);
@@ -86,16 +87,16 @@ static DWORD GetWndStyle(DWORD dwStyle);
 
 ### <a name="parameters"></a>Параметры
 
-*dwStyle*<br/>
-Стандартные стили, используемые для создания окна. Если *dwStyle* раста 0, значения`t_dwStyle`стиля шаблона () возвращаются. Если *dwStyle* незеро, *dwStyle* возвращается.
+*двстиле*<br/>
+Стандартные стили, используемые для создания окна. Если *двстиле* имеет значение 0, возвращаются значения стиля шаблона ( `t_dwStyle` ). Если *двстиле* имеет ненулевое значение, возвращается *двстиле* .
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Стандартные стили окна объекта.
 
-## <a name="cwintraitsgetwndexstyle"></a><a name="getwndexstyle"></a>CWinTraits::GetWndExStyle
+## <a name="cwintraitsgetwndexstyle"></a><a name="getwndexstyle"></a> Квинтраитс:: Жетвндексстиле
 
-Вызовите эту функцию, чтобы `CWinTraits` получить расширенные стили объекта.
+Вызовите эту функцию, чтобы получить расширенные стили `CWinTraits` объекта.
 
 ```
 static DWORD GetWndExStyle(DWORD dwExStyle);
@@ -103,8 +104,8 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
 
 ### <a name="parameters"></a>Параметры
 
-*dwExStyle*<br/>
-Расширенные стили, используемые для создания окна. Если *dwExStyle* раста 0, значения`t_dwExStyle`стиля шаблона () возвращаются. Если *dwExStyle* является ненулевым, *dwExStyle* возвращается.
+*двексстиле*<br/>
+Расширенные стили, используемые для создания окна. Если *двексстиле* имеет значение 0, возвращаются значения стиля шаблона ( `t_dwExStyle` ). Если *двексстиле* имеет ненулевое значение, возвращается *двексстиле* .
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -113,4 +114,4 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
 ## <a name="see-also"></a>См. также раздел
 
 [Общие сведения о классах](../../atl/atl-class-overview.md)<br/>
-[Понимание оконных трасс](../../atl/understanding-window-traits.md)
+[Основные сведения о характеристиках окна](../../atl/understanding-window-traits.md)

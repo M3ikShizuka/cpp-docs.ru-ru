@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _fseek_nolock, _fseeki64_nolock'
 title: _fseek_nolock, _fseeki64_nolock
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - _fseeki64_nolock function
 - seek file pointers
 ms.assetid: 2dd4022e-b715-462b-b935-837561605a02
-ms.openlocfilehash: c09f9964416785131c0c928c214a0de5ec6dd859
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3a8701dcb7380bee31d1d04aa92209169682e54d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910161"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114265"
 ---
 # <a name="_fseek_nolock-_fseeki64_nolock"></a>_fseek_nolock, _fseeki64_nolock
 
@@ -77,7 +78,7 @@ int _fseeki64_nolock(
 
 То же, что и [fseek](fseek-fseeki64.md) и [_fseeki64](fseek-fseeki64.md)соответственно.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эти функции представляют собой неблокирующие версии [fseek](fseek-fseeki64.md) и [_fseeki64](fseek-fseeki64.md)соответственно. Они идентичны [fseek](fseek-fseeki64.md) и [_fseeki64](fseek-fseeki64.md) за исключением того, что они не защищены от помех в других потоках. Они могут выполняться быстрее, так как не создают дополнительную нагрузку, связанную с блокировкой работы других потоков. Используйте эти функции только в потокобезопасных контекстах, например в однопоточных приложениях или если вызываемая область уже обрабатывает изоляцию потоков.
 
