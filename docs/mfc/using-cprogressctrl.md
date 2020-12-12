@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: использование CProgressCtrl'
 title: Использование CProgressCtrl
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - progress controls [MFC], CProgressCtrl
 - progress controls [MFC], using
 ms.assetid: 61473270-196b-41ab-bf2b-467f46673539
-ms.openlocfilehash: a575a766650a77b0908f0fa3016139239b23dc56
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 652349a62d62652db32fbe002cdc714ac7ca1420
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441903"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271633"
 ---
 # <a name="using-cprogressctrl"></a>Использование CProgressCtrl
 
@@ -24,11 +25,11 @@ ms.locfileid: "79441903"
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Что вы хотите узнать подробнее
 
-- [Стили для элемента управления "Индикатор выполнения"](../mfc/styles-for-the-progress-control.md)
+- [Стили для элемента управления progress](../mfc/styles-for-the-progress-control.md)
 
-- [Параметры элемента управления "Индикатор выполнения"](../mfc/settings-for-the-progress-control.md)
+- [Параметры для элемента управления "ход выполнения"](../mfc/settings-for-the-progress-control.md)
 
-- [Управление элементом управления "Индикатор выполнения"](../mfc/manipulating-the-progress-control.md)
+- [Управление ходом выполнения](../mfc/manipulating-the-progress-control.md)
 
 ## <a name="see-also"></a>См. также раздел
 

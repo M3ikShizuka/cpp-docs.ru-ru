@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: SafeInt Class'
 title: Класс SafeInt
 ms.date: 10/22/2018
 ms.topic: reference
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - SafeInt class
 - SafeInt class, constructor
 ms.assetid: 27a8f087-2511-46f9-8d76-2aeb66ca272f
-ms.openlocfilehash: d61ce20a8644ca64d37c0eca605d52fb308c0863
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: b5ee9147347f2c01ff05fd93b8b22ea3ce30ee37
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560967"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271334"
 ---
 # <a name="safeint-class"></a>Класс SafeInt
 
@@ -168,7 +169,7 @@ class SafeInt;
 | &#124;=  |  `template<typename U>`<br /><br /> `SafeInt<T,E>& operator&#124;= (U rhs) throw()` |
 | &#124;=  |  `template<typename U>`<br /><br /> `SafeInt<T,E>& operator&#124;= (SafeInt<U, E> rhs) throw()` |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Класс `SafeInt` защищает от переполнения целого числа в математических операциях. Например, добавьте два 8-битовых целых числа: одно из них со значением 200, а второе со значением 100. Правильной математической операцией будет 200 + 100 = 300. Тем не менее из-за ограничения 8-битового целого числа верхний бит будет утерян и компилятор вернет 44 (300-2<sup>8</sup>) в качестве результата. Любая операция, которая зависит от этого математического уравнения, создаст непредвиденное поведение.
 
@@ -285,7 +286,7 @@ SafeInt (const U& i)
 
 `U` Тип данных, хранящихся в `SafeInt` . Это может быть логический тип, тип символа или целочисленный тип. Если это целочисленный тип, его можно подписать или без знака и иметь длину от 8 до 64 бит.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Входной параметр для конструктора, *i* или *u*, должен быть логическим типом, типом символа или целочисленным типом. Если это другой тип параметра, `SafeInt` класс вызывает [static_assert](../cpp/static-assert.md) , чтобы указать недопустимый входной параметр.
 

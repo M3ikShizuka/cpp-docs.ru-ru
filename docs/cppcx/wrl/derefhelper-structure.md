@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура Дерефхелпер'
 title: DerefHelper - структура
 ms.date: 10/03/2018
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - DerefHelper structure
 ms.assetid: 86ded58b-c3ee-4a4f-bb86-4f67b895d427
-ms.openlocfilehash: 43453d3162de697fa1cfcf0581953c91bbe3934f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8605e3923d8d3099a080be22f9d8e70ee9187ef9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214049"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272920"
 ---
 # <a name="derefhelper-structure"></a>DerefHelper - структура
 
@@ -33,17 +34,17 @@ struct DerefHelper<T*>;
 *T*<br/>
 Параметр шаблона.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Представляет разыменованный указатель на параметр шаблона `T*`.
 
-**Дерефхелпер** используется в выражении, например: `ComPtr<Details::DerefHelper<ProgressTraits::Arg1Type>::DerefType> operationInterface;`.
+**Дерефхелпер** используется в выражении, например: `ComPtr<Details::DerefHelper<ProgressTraits::Arg1Type>::DerefType> operationInterface;` .
 
-## <a name="members"></a>Члены
+## <a name="members"></a>Элементы
 
-### <a name="public-typedefs"></a>Открытые определения типов
+### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`DerefType`|Идентификатор для разыменованного параметра шаблона `T*`.|
 
@@ -59,4 +60,4 @@ struct DerefHelper<T*>;
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Microsoft::WRL::Details](microsoft-wrl-details-namespace.md)
+[Пространство имен Microsoft:: WRL::D состояния](microsoft-wrl-details-namespace.md)

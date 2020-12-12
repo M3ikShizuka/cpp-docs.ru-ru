@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о выражениях с бинарными операторами
 title: Выражения с бинарными операторами
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - binary operators [C++]
 - expressions [C++], binary operators
 ms.assetid: 6dea3df4-a4bd-42c3-9807-4a27c120ac9a
-ms.openlocfilehash: a5c9127db4714575cdf037147cc97601a4523e93
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 753b7f22658d843ad2388b38a2dc636e7190a278
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81360851"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273349"
 ---
 # <a name="expressions-with-binary-operators"></a>Выражения с бинарными операторами
 
@@ -33,17 +34,17 @@ ms.locfileid: "81360851"
 
 - [Операторы сдвига](../cpp/left-shift-and-right-shift-operators-input-and-output.md)
 
-  - Правая смена (>>)
+  - Сдвиг вправо (>>)
 
-  - Левая смена (<<)
+  - Сдвиг влево (<<)
 
-- [Реляционные операторы и операторы по вопросам равенства](../cpp/relational-operators-equal-and-equal.md)
+- [Операторы отношения и равенства](../cpp/relational-operators-equal-and-equal.md)
 
   - Знак "меньше" (\<)
 
   - Знак «больше» >)
 
-  - Меньше или равняться (к\<й)
+  - Меньше или равно ( \< =)
 
   - Больше или равно (>=)
 
@@ -51,27 +52,27 @@ ms.locfileid: "81360851"
 
   - Не равно (!=)
 
-- Побитовые операторы
+- битовые операторы;
 
-  - [Биттейс И (&)](../cpp/bitwise-and-operator-amp.md)
+  - [Побитовое и (&)](../cpp/bitwise-and-operator-amp.md)
 
-  - [Битгом эксклюзивные ИЛИ (я)](../cpp/bitwise-exclusive-or-operator-hat.md)
+  - [Побитовое исключающее или (^)](../cpp/bitwise-exclusive-or-operator-hat.md)
 
-  - [Биттейкс инклюзивная ИЛИ (&#124;)](../cpp/bitwise-inclusive-or-operator-pipe.md)
+  - [Побитовое инклюзивное или (&#124;)](../cpp/bitwise-inclusive-or-operator-pipe.md)
 
 - Логические операторы
 
-  - [Логические и (&&)](../cpp/logical-and-operator-amp-amp.md)
+  - [Логическое и (&&)](../cpp/logical-and-operator-amp-amp.md)
 
-  - [Логические или (&#124;&#124;)](../cpp/logical-or-operator-pipe-pipe.md)
+  - [Логическое или (&#124;&#124;)](../cpp/logical-or-operator-pipe-pipe.md)
 
-- [Операторы присваивания](../cpp/assignment-operators.md)
+- [операторы присваивания;](../cpp/assignment-operators.md)
 
   - Присваивание (=)
 
   - Присваивание сложения (+=)
 
-  - Задание вычитания (-к)
+  - Присваивание вычитания (-=)
 
   - Присваивание умножения (*=)
 
@@ -79,17 +80,17 @@ ms.locfileid: "81360851"
 
   - Присваивание остатка (%=)
 
-  - Назначение левой смены \<(<)
+  - Присваивание сдвига влево (<\< =)
 
-  - Назначение в правой смене (>>)
+  - Присваивание сдвига вправо (>>=)
 
-  - Bitwise И назначение (&)
+  - Присваивание побитового и (&=)
 
   - Присваивание побитового исключающего ИЛИ (^=)
 
-  - Bitwise инклюзивного или назначения (&#124;)
+  - Побитовое инклюзивное или присваивание (&#124;=)
 
-- [Оператор запятой](../cpp/comma-operator.md) (,)
+- [Оператор "запятая](../cpp/comma-operator.md) " (,)
 
 ## <a name="see-also"></a>См. также раздел
 

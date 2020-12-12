@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Неустранимая ошибка NMAKE U1033'
 title: Неустранимая ошибка NMAKE U1033
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - U1033
 ms.assetid: c146f7b5-7d5c-4329-a522-28a648546016
-ms.openlocfilehash: 4511b15c84479c3531a3bea85964e2768de0181f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e616e98a21c92137fab4b167318a9305a2175bb2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80173391"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272140"
 ---
 # <a name="nmake-fatal-error-u1033"></a>Неустранимая ошибка NMAKE U1033
 
@@ -33,7 +34,7 @@ ms.locfileid: "80173391"
     syntax error : '=' unexpected
     ```
 
-1. Если точка с запятой ( **;** ) в строке комментария в инструментах. INI не находится в начале строки, возникает следующая ошибка:
+1. Если точка с запятой (**;**) в строке комментария в TOOLS.INI не находится в начале строки, возникает следующая ошибка:
 
     ```
     syntax error : ';' unexpected

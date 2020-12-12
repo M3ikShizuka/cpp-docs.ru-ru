@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: использование CObject'
 title: Использование CObject
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - MFC, base class
 - CObject class [MFC]
 ms.assetid: d0cd19bb-2856-4b41-abbc-620fd64cb223
-ms.openlocfilehash: b5399f02819407a529fd5ec66d4f5acbb16ca002
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 203e2a498f787f23de21db4469e5cdd7c5543761
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441920"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271646"
 ---
 # <a name="using-cobject"></a>Использование CObject
 
-[CObject](../mfc/reference/cobject-class.md) — это корневой базовый класс для большинства Библиотека Microsoft Foundation Class (MFC). Класс `CObject` содержит множество полезных функций, которые может потребоваться включить в собственные объекты программы, включая поддержку сериализации, сведения о классе времени выполнения и данные диагностики объектов. Если класс является производным от `CObject`, класс может использовать эти `CObject` функции.
+[CObject](../mfc/reference/cobject-class.md) — это корневой базовый класс для большинства Библиотека Microsoft Foundation Class (MFC). `CObject`Класс содержит множество полезных функций, которые может потребоваться включить в собственные объекты программы, включая поддержку сериализации, сведения о классе времени выполнения и результаты диагностики объектов. Если класс является производным от `CObject` , класс может использовать эти `CObject` функции.
 
 ## <a name="what-do-you-want-to-do"></a>Что Вы хотите делать
 
@@ -41,6 +42,6 @@ ms.locfileid: "79441920"
 
 [Основные понятия](../mfc/mfc-concepts.md)<br/>
 [Общие разделы по MFC](../mfc/general-mfc-topics.md)<br/>
-[Структура CRuntimeClass](../mfc/reference/cruntimeclass-structure.md)<br/>
+[Структура Крунтимекласс](../mfc/reference/cruntimeclass-structure.md)<br/>
 [Файлы](../mfc/files-in-mfc.md)<br/>
 [Сериализация](../mfc/serialization-in-mfc.md)

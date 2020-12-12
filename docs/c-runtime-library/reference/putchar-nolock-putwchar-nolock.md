@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _putchar_nolock, _putwchar_nolock'
 title: _putchar_nolock, _putwchar_nolock
 ms.date: 11/04/2016
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - _putwchar_nolock function
 - puttchar_nolock function
 ms.assetid: 9ac68092-bfc3-4352-b486-c3e780220575
-ms.openlocfilehash: 4dba6537c5fb7ec66a812f2c34831b1b908fc3e4
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 2ee4981ce05ab233c387bdbd56fa90edbd5b0af1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949947"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271035"
 ---
 # <a name="_putchar_nolock-_putwchar_nolock"></a>_putchar_nolock, _putwchar_nolock
 
@@ -66,11 +67,11 @@ wint_t _putwchar_nolock(
 
 См. описание функций **putchar, putwchar**.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 **putchar_nolock** и **_putwchar_nolock** идентичны версиям без суффикса **_nolock** , за исключением того, что они не защищены от помех в других потоках. Они могут выполняться быстрее, поскольку не создают дополнительную нагрузку, связанную с блокировкой работы других потоков. Используйте эти функции только в потокобезопасных контекстах, например в однопоточных приложениях или если вызываемая область уже обрабатывает изоляцию потоков.
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Процедура Tchar.h|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -83,7 +84,7 @@ wint_t _putwchar_nolock(
 |**_putchar_nolock**|\<stdio.h>|
 |**_putwchar_nolock**|\<stdio.h> или \<wchar.h>|
 
-Консоль не поддерживается в приложениях универсальная платформа Windows (UWP). Стандартные дескрипторы потока, связанные с консолью, **stdin**, **stdout**и **stderr**, должны быть перенаправляться до того, как функции времени выполнения C смогут использовать их в приложениях UWP. Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Консоль не поддерживается в приложениях универсальная платформа Windows (UWP). Стандартные дескрипторы потока, связанные с консолью, **stdin**, **stdout** и **stderr**, должны быть перенаправляться до того, как функции времени выполнения C смогут использовать их в приложениях UWP. Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Библиотеки
 

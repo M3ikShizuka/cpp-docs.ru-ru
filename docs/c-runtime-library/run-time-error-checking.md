@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: Run-Time проверка ошибок'
 title: Проверка ошибок во время выполнения
 ms.date: 11/04/2016
 helpviewer_keywords:
 - run-time error checking
 - run-time errors, checking
 ms.assetid: c965dd01-57ad-4a3c-b1d6-5aa04f920501
-ms.openlocfilehash: cf707cbd53e2285684d53d3f440db0f618343598
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: aff00bc66cd118b891e902328eb6ae85bd6fc14c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444832"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273609"
 ---
 # <a name="run-time-error-checking"></a>Проверка ошибок во время выполнения
 
@@ -20,7 +21,7 @@ ms.locfileid: "79444832"
 
 ## <a name="run-time-error-checking-functions"></a>Функции проверки на ошибки во время выполнения
 
-|Компонент|Использование|
+|Функция|Использовать|
 |--------------|---------|
 |[_RTC_GetErrDesc](../c-runtime-library/reference/rtc-geterrdesc.md)|Возвращает краткое описание типа проверки на ошибки во время выполнения.|
 |[_RTC_NumErrors](../c-runtime-library/reference/rtc-numerrors.md)|Возвращает общее количество ошибок, которые могут быть обнаружены путем проверки во время выполнения.|
@@ -29,7 +30,7 @@ ms.locfileid: "79444832"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Универсальные подпрограммы среды выполнения C по категориям](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Подпрограммы универсальной среды выполнения C по категориям](../c-runtime-library/run-time-routines-by-category.md)<br/>
 [/RTC (проверки ошибок во время выполнения)](../build/reference/rtc-run-time-error-checks.md)<br/>
 [runtime_checks](../preprocessor/runtime-checks.md)<br/>
-[Процедуры отладки](../c-runtime-library/debug-routines.md)<br/>
+[Отладочные подпрограммы](../c-runtime-library/debug-routines.md)<br/>

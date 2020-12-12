@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о клиентах автоматизации: использование библиотек типов'
 title: Клиенты автоматизации. Использование библиотек типов
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - MkTypLib tool
 - .odl files
 ms.assetid: d405bc47-118d-4786-b371-920d035b2047
-ms.openlocfilehash: e5f9ffcebc3725851c599e7b21369f45d0029d81
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: c50425da1327f97fe410723df1e21136f1bd6f98
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626093"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274012"
 ---
 # <a name="automation-clients-using-type-libraries"></a>Клиенты автоматизации. Использование библиотек типов
 
@@ -60,4 +61,4 @@ Visual C++ автоматически поддерживает этот файл
 
 ## <a name="see-also"></a>См. также раздел
 
-[Automation Clients](automation-clients.md)
+[Клиенты автоматизации](automation-clients.md)

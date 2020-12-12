@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о:/Zc: throwingNew (предположим, что оператор New Throw)'
 title: /Zc:throwingNew (новые исключения оператора assume)
 ms.date: 03/01/2018
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 20ff0101-9677-4d83-8c7b-8ec9ca49f04f
-ms.openlocfilehash: 7593107a280995145d252efa76e0a88bddbd2275
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 83a78c62328853bdaf9515b55bef72503d166b58
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211870"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271204"
 ---
 # <a name="zcthrowingnew-assume-operator-new-throws"></a>/Zc:throwingNew (новые исключения оператора assume)
 
@@ -26,7 +27,7 @@ ms.locfileid: "87211870"
 
 > **/Zc: throwingNew**[ **-** ]
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 С ISO C++ 98 стандартом задано, что оператор по умолчанию [New](../../standard-library/new-operators.md#op_new) вызывает исключение `std::bad_alloc` при сбое выделения памяти. Версии Visual C++ до Visual Studio 6,0 вернули пустой указатель на ошибку выделения. Начиная с Visual Studio 2002, `operator new` соответствует стандарту и вызывает ошибку. Для поддержки кода, использующего старый стиль выделения, Visual Studio предоставляет возможность компоновки `operator new` в носровнев. obj, которая возвращает указатель null при сбое. По умолчанию компилятор также создает защищенные проверки NULL, чтобы предотвратить немедленный сбой в работе распределительов старых версий. Параметр **/Zc: throwingNew** предписывает компилятору оставлять эти проверки значений NULL, предполагая, что все связанные распределительы памяти соответствуют стандарту. Это не относится к явным невызывающим `operator new` перегрузкам, которые объявляются с помощью дополнительного параметра типа `std::nothrow_t` и имеют явную **`noexcept`** спецификацию.
 
@@ -55,7 +56,7 @@ ms.locfileid: "87211870"
 ## <a name="see-also"></a>См. также раздел
 
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)<br/>
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)<br/>
 [/Zc (соответствие)](zc-conformance.md)<br/>
 [noexcept (C++)](../../cpp/noexcept-cpp.md)<br/>
 [Спецификации исключений (throw) (C++)](../../cpp/exception-specifications-throw-cpp.md)<br/>

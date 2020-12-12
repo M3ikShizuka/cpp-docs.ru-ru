@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _mbsbtype, _mbsbtype_l'
 title: _mbsbtype, _mbsbtype_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - _mbsbtype_l function
 - mbsbtype_l function
 ms.assetid: 0d5dd91a-d32d-4f98-ac57-98dfc9e98eac
-ms.openlocfilehash: c1431a2d0886ffd3d16b43abf82b7342c166273a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a1d17a947d830281b05291601c74ee944cebdb10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909472"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271061"
 ---
 # <a name="_mbsbtype-_mbsbtype_l"></a>_mbsbtype, _mbsbtype_l
 
@@ -84,7 +85,7 @@ int _mbsbtype_l(
 |**_MBC_TRAIL** (2)|Младший байт многобайтового символа. Например, в кодовой странице 932 **_mbsbtype** возвращает 2, если указанный байт находится в диапазоне 0X40-0x7E или 0X80-0xFC.|
 |**_MBC_ILLEGAL** (-1)|Строка **со значением NULL** , недопустимый символ или значение null, обнаруженное до байта *со значением смещения в* *мбстр*.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_mbsbtype** определяет тип байта в строке многобайтовых символов. Функция проверяет только байт со *значением* смещения в *мбстр*, игнорируя недопустимые символы перед указанным байтом.
 

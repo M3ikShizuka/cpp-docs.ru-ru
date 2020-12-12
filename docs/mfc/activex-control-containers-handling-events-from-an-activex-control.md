@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения см. в статье контейнеры элементов управления ActiveX: обработка событий из элемента управления ActiveX.'
 title: Контейнеры элементов управления ActiveX. Обработка событий из элемента управления ActiveX
 ms.date: 09/12/2018
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - events [MFC], ActiveX controls
 - BEGIN_EVENTSINK_MAP macro
 ms.assetid: f9c106db-052f-4e32-82ad-750646aa760b
-ms.openlocfilehash: 4b7bc78a2937c010a4d2f1fb000ae0fe8ca2416c
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 451061467b87df82b8bca141684ea70f222edcac
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625128"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271880"
 ---
 # <a name="activex-control-containers-handling-events-from-an-activex-control"></a>Контейнеры элементов управления ActiveX. Обработка событий из элемента управления ActiveX
 
@@ -32,7 +33,7 @@ ms.locfileid: "84625128"
 
 Дополнительные сведения о картах приемников событий см. в разделе [карты приемников событий](reference/event-sink-maps.md) в *справочнике по библиотеке классов*.
 
-## <a name="event-handler-modifications-to-the-project"></a><a name="_core_event_handler_modifications_to_the_project"></a>Изменения обработчика событий в проекте
+## <a name="event-handler-modifications-to-the-project"></a><a name="_core_event_handler_modifications_to_the_project"></a> Изменения обработчика событий в проекте
 
 При использовании окна **Свойства** для добавления обработчиков событий в проекте объявляется и определяется схема приемника событий. В элемент управления добавляются следующие инструкции. CPP-файл при первом добавлении обработчика событий. Этот код объявляет карту приемника событий для класса диалогового окна (в данном случае `CContainerDlg` ):
 
@@ -63,7 +64,7 @@ ms.locfileid: "84625128"
 
 1. Выберите событие, которое должен быть обрабатываем классом диалогового окна. В этом примере выберите **Click**(выбрать).
 
-1. В раскрывающемся списке справа выберите ** \<Add> ClickCircctrl1**.
+1. В раскрывающемся списке справа выберите **\<Add> ClickCircctrl1**.
 
 1. Дважды щелкните новую функцию обработчика из представление классов, чтобы перейти к коду обработчика событий в реализации (. CPP) файла `CContainerDlg` .
 

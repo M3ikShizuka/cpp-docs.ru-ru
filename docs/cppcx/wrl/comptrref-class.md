@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: ComPtrRef Class'
 title: ComPtrRef - класс
 ms.date: 10/03/2018
 ms.topic: reference
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::ComPtrRef::operator void** operator
 - Microsoft::WRL::Details::ComPtrRef::ReleaseAndGetAddressOf method
 ms.assetid: d6bdfd20-e977-45b4-9ac1-1b8efbdb77de
-ms.openlocfilehash: f92a3e14018cf8c02dec40b664b72a0956f6220e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 42a0698c8eb393c84422b52ee112013b91fe39e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220539"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273154"
 ---
 # <a name="comptrref-class"></a>ComPtrRef - класс
 
@@ -48,7 +49,7 @@ class ComPtrRef : public ComPtrRefBase<T>;
 *T*<br/>
 Тип [ComPtr \<T> ](comptr-class.md) или производный от него тип, а не просто интерфейс, представленный `ComPtr` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Представляет ссылку на объект типа `ComPtr<T>` .
 
@@ -56,7 +57,7 @@ class ComPtrRef : public ComPtrRefBase<T>;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-Имя                               | Описание
+name                               | Описание
 ---------------------------------- | -------------------------------------------------------------------------------------------------------------
 [ComPtrRef:: ComPtrRef](#comptrref) | Инициализирует новый экземпляр `ComPtrRef` класса из указанного указателя на другой `ComPtrRef` объект.
 
@@ -90,7 +91,7 @@ name                                                         | Описание
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 
-## <a name="comptrrefcomptrref"></a><a name="comptrref"></a>ComPtrRef:: ComPtrRef
+## <a name="comptrrefcomptrref"></a><a name="comptrref"></a> ComPtrRef:: ComPtrRef
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -105,11 +106,11 @@ ComPtrRef(
 *ptr*<br/>
 Базовое значение другого `ComPtrRef` объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Инициализирует новый экземпляр `ComPtrRef` класса из указанного указателя на другой `ComPtrRef` объект.
 
-## <a name="comptrrefgetaddressof"></a><a name="getaddressof"></a>ComPtrRef:: GetAddressOf
+## <a name="comptrrefgetaddressof"></a><a name="getaddressof"></a> ComPtrRef:: GetAddressOf
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -121,11 +122,11 @@ InterfaceType* const * GetAddressOf() const;
 
 Адрес указателя на интерфейс, представленный текущим `ComPtrRef` объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Извлекает адрес указателя на интерфейс, представленный текущим `ComPtrRef` объектом.
 
-## <a name="comptrrefoperator"></a><a name="operator-equality"></a>ComPtrRef:: operator = =
+## <a name="comptrrefoperator"></a><a name="operator-equality"></a> ComPtrRef:: operator = =
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -161,7 +162,7 @@ bool operator==(
 *конкретного*<br/>
 Ссылка на объект `ComPtrRef`.
 
-*&*<br/>
+*b*<br/>
 Ссылка на другой `ComPtrRef` объект или указатель на анонимный тип ( **`void*`** ).
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -172,11 +173,11 @@ bool operator==(
 
 Четвертый и пятый операторы выдают **`true`** , если объект *a* равен объекту *b*; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Определение равенства двух объектов `ComPtrRef`.
 
-## <a name="comptrrefoperator"></a><a name="operator-inequality"></a>ComPtrRef:: operator! =
+## <a name="comptrrefoperator"></a><a name="operator-inequality"></a> ComPtrRef:: operator! =
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -212,7 +213,7 @@ bool operator!=(
 *конкретного*<br/>
 Ссылка на объект `ComPtrRef`.
 
-*&*<br/>
+*b*<br/>
 Ссылка на другой `ComPtrRef` объект или указатель на анонимный объект ( **`void*`** ).
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -223,11 +224,11 @@ bool operator!=(
 
 Четвертый и пятый операторы выдают **`true`** , если объект *a* не равен объекту *b*; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Определяет неравенство двух объектов `ComPtrRef`.
 
-## <a name="comptrrefoperator-interfacetype"></a><a name="operator-interfacetype-star-star"></a>ComPtrRef:: operator InterfaceType\*\*
+## <a name="comptrrefoperator-interfacetype"></a><a name="operator-interfacetype-star-star"></a> ComPtrRef:: operator InterfaceType\*\*
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -235,11 +236,11 @@ bool operator!=(
 operator InterfaceType**();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Удаляет текущий `ComPtrRef` объект и возвращает указатель на указатель на интерфейс, представленный `ComPtrRef` объектом.
 
-## <a name="comptrrefoperator"></a><a name="operator-star"></a>ComPtrRef:: operator *
+## <a name="comptrrefoperator"></a><a name="operator-star"></a> ComPtrRef:: operator *
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -251,11 +252,11 @@ InterfaceType* operator *();
 
 Указатель на интерфейс, представленный текущим `ComPtrRef` объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Получает указатель на интерфейс, представленный текущим `ComPtrRef` объектом.
 
-## <a name="comptrrefoperator-t"></a><a name="operator-t-star"></a>ComPtrRef:: operator T *
+## <a name="comptrrefoperator-t"></a><a name="operator-t-star"></a> ComPtrRef:: operator T *
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -263,11 +264,11 @@ InterfaceType* operator *();
 operator T*();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает значение элемента данных [ptr_](comptrrefbase-class.md#ptr) текущего `ComPtrRef` объекта.
 
-## <a name="comptrrefoperator-void"></a><a name="operator-void-star-star"></a>ComPtrRef:: operator void\*\*
+## <a name="comptrrefoperator-void"></a><a name="operator-void-star-star"></a> ComPtrRef:: operator void\*\*
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -275,11 +276,11 @@ operator T*();
 operator void**() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Удаляет текущий `ComPtrRef` объект, приводит указатель к интерфейсу, представленному объектом, в `ComPtrRef` качестве указателя на указатель **`void`** , а затем возвращает указатель приведения.
 
-## <a name="comptrrefreleaseandgetaddressof"></a><a name="releaseandgetaddressof"></a>ComPtrRef:: ReleaseAndGetAddressOf
+## <a name="comptrrefreleaseandgetaddressof"></a><a name="releaseandgetaddressof"></a> ComPtrRef:: ReleaseAndGetAddressOf
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -291,6 +292,6 @@ InterfaceType** ReleaseAndGetAddressOf();
 
 Указатель на интерфейс, представленный удаленным `ComPtrRef` объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Удаляет текущий `ComPtrRef` объект и возвращает указатель на указатель на интерфейс, представленный `ComPtrRef` объектом.

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Неустранимая ошибка NMAKE U1051'
 title: Неустранимая ошибка NMAKE U1051
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - U1051
 ms.assetid: fede5cd5-dac3-47b7-b86d-e1acfb78699f
-ms.openlocfilehash: 9c6b939c97f993e42049677292374377d825d474
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c7d465eaf34adb69e41f523006fb0740eea722ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80193684"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272114"
 ---
 # <a name="nmake-fatal-error-u1051"></a>Неустранимая ошибка NMAKE U1051
 
@@ -25,4 +26,4 @@ ms.locfileid: "80193684"
 
 1. Увеличьте размер файла подкачки Windows NT или файла подкачки Windows.
 
-1. Если используется только часть файла makefile, Разделите файл makefile на отдельные файлы или используйте **.** Значение, если директивы предварительной обработки позволяют ограничить объем обработки, которую должен ОБРАБОТАТЬ NMAKE. **! Если** директивы if включают **! Если**, `!IFDEF`, **! IFNDEF**, **! ELSE IF**, **! ELSE** `IFDEF`и **! ИНАЧЕ** `IFNDEF`.
+1. Если используется только часть файла makefile, Разделите файл makefile на отдельные файлы или используйте **.** Значение, если директивы предварительной обработки позволяют ограничить объем обработки, которую должен ОБРАБОТАТЬ NMAKE. **! Если** директивы if включают **! Если**, `!IFDEF` , **! IFNDEF**, **! ELSE IF**, **! ELSE** `IFDEF` и **! ELSE** `IFNDEF` .

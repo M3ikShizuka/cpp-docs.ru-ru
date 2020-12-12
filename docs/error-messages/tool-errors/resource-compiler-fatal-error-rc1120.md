@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Неустранимая ошибка компилятора ресурсов КОМПИЛЯТОРА ресурсов RC1120'
 title: Неустранимая ошибка компилятора ресурсов RC1120
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RC1120
 ms.assetid: 4e462931-e42e-42e3-8bfc-847677194286
-ms.openlocfilehash: 855a76ff63145695a7063944701d7acc684e0084
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bc0c90bf5d8dd4290ab20369235c53fcd2c80182
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80173014"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272036"
 ---
 # <a name="resource-compiler-fatal-error-rc1120"></a>Неустранимая ошибка компилятора ресурсов RC1120
 
@@ -23,7 +24,7 @@ ms.locfileid: "80173014"
 
 1. Увеличьте размер файла подкачки Windows. Дополнительные сведения о увеличении места в файле подкачки см. в разделе "Виртуальная память" в справке Windows.
 
-1. Исключите ненужные включаемые файлы, особенно ненужные `#define`s и прототипы функций.
+1. Исключите ненужные включаемые файлы, особенно ненужные `#define` s и прототипы функций.
 
 1. Разделите текущий файл на два или более файлов и скомпилируйте их отдельно.
 

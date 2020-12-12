@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CriticalSection Class'
 title: CriticalSection - класс
 ms.date: 09/24/2018
 ms.topic: reference
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::CriticalSection::CriticalSection, constructor
 - Microsoft::WRL::Wrappers::CriticalSection::TryLock method
 ms.assetid: f2e0a024-71a3-4f6b-99ea-d93a4a608ac4
-ms.openlocfilehash: b95e512f89ee1ff32ca9f1bea51bce643d185a2e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e570dfaef8fcf16084792d205fc3e322cf8be908
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220526"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273037"
 ---
 # <a name="criticalsection-class"></a>CriticalSection - класс
 
@@ -36,7 +37,7 @@ ms.locfileid: "87220526"
 class CriticalSection;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="constructor"></a>Конструктор
 
@@ -69,7 +70,7 @@ name                                 | Описание
 
 **Пространство имен:** Программы Microsoft:: WRL:: оболочки
 
-## <a name="criticalsectioncriticalsection"></a><a name="tilde-criticalsection"></a>CriticalSection:: ~ CriticalSection
+## <a name="criticalsectioncriticalsection"></a><a name="tilde-criticalsection"></a> CriticalSection:: ~ CriticalSection
 
 Выполняет деинициализацию и уничтожает текущий `CriticalSection` объект.
 
@@ -77,7 +78,7 @@ name                                 | Описание
 WRL_NOTHROW ~CriticalSection();
 ```
 
-## <a name="criticalsectioncriticalsection"></a><a name="criticalsection"></a>CriticalSection:: CriticalSection
+## <a name="criticalsectioncriticalsection"></a><a name="criticalsection"></a> CriticalSection:: CriticalSection
 
 Инициализирует объект синхронизации, похожий на объект Mutex, но может использоваться только потоками одного процесса.
 
@@ -92,11 +93,11 @@ explicit CriticalSection(
 *спинкаунт*<br/>
 Счетчик прокруток для объекта критической секции. Значение по умолчанию — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о критических разделах и спинкаунтс см. в описании `InitializeCriticalSectionAndSpinCount` функции в `Synchronization` разделе документации по Windows API.
 
-## <a name="criticalsectioncs_"></a><a name="cs"></a>CriticalSection:: cs_
+## <a name="criticalsectioncs_"></a><a name="cs"></a> CriticalSection:: cs_
 
 Объявляет критически важный элемент данных секции.
 
@@ -104,11 +105,11 @@ explicit CriticalSection(
 CRITICAL_SECTION cs_;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эти данные-член защищены.
 
-## <a name="criticalsectionisvalid"></a><a name="isvalid"></a>CriticalSection:: IsValid
+## <a name="criticalsectionisvalid"></a><a name="isvalid"></a> CriticalSection:: IsValid
 
 Указывает, допустима ли текущая критическая секция.
 
@@ -120,7 +121,7 @@ bool IsValid() const;
 
 По умолчанию всегда возвращает **`true`** .
 
-## <a name="criticalsectionlock"></a><a name="lock"></a>CriticalSection:: Lock
+## <a name="criticalsectionlock"></a><a name="lock"></a> CriticalSection:: Lock
 
 Ожидает владение заданным объектом критического раздела. Функция возвращает, когда вызывающему потоку предоставляется владение.
 
@@ -141,11 +142,11 @@ SyncLock Lock();
 
 Объект блокировки, который можно использовать, чтобы разблокировать текущую критическую секцию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция `Lock` влияет на текущий объект критической секции. Вторая функция `Lock` влияет на указанную пользователем критическую секцию.
 
-## <a name="criticalsectiontrylock"></a><a name="trylock"></a>CriticalSection:: TryLock
+## <a name="criticalsectiontrylock"></a><a name="trylock"></a> CriticalSection:: TryLock
 
 Пытается войти в критическую секцию без блокировки. Если вызов выполнен успешно, вызывающий поток принимает владение критическим разделом.
 
@@ -166,6 +167,6 @@ static SyncLock TryLock(
 
 Ненулевое значение, если критический раздел успешно указан или текущий поток уже владеет критическим разделом. Нуль, если другой поток уже владеет критическим разделом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция `TryLock` влияет на текущий объект критической секции. Вторая функция `TryLock` влияет на указанную пользователем критическую секцию.

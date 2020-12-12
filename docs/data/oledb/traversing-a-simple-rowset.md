@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: обход простого набора строк'
 title: Перебор простого набора строк
 ms.date: 10/19/2018
 helpviewer_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - OLE DB consumers [C++], database attributes
 - accessors [C++], rowsets
 ms.assetid: b45acf16-4029-429d-ab8d-b7fba98b9740
-ms.openlocfilehash: a6b2ebf918f42e274c372d1dda1e277f7fd49cd5
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f2e0c1f9647e168d8de2a10eaea6425bf9ad5a88
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209473"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272634"
 ---
 # <a name="traversing-a-simple-rowset"></a>Перебор простого набора строк
 
-В следующем примере показан быстрый и простой доступ к базе данных, который не затрагивает команды. Следующий код потребителя в проекте ATL извлекает записи из таблицы с именем « *исполнители* » в базе данных Microsoft Access с помощью поставщика Microsoft OLE DB для ODBC. Код создает объект таблицы [CTable](../../data/oledb/ctable-class.md) с методом доступа на основе класса записей пользователя `CArtists`. Он открывает подключение, открывает сеанс для соединения и открывает таблицу в сеансе.
+В следующем примере показан быстрый и простой доступ к базе данных, который не затрагивает команды. Следующий код потребителя в проекте ATL извлекает записи из таблицы с именем « *исполнители* » в базе данных Microsoft Access с помощью поставщика Microsoft OLE DB для ODBC. Код создает объект таблицы [CTable](../../data/oledb/ctable-class.md) с методом доступа на основе класса записей пользователя `CArtists` . Он открывает подключение, открывает сеанс для соединения и открывает таблицу в сеансе.
 
 ```cpp
 #include <atldbcli.h>
@@ -54,7 +55,7 @@ int main()
 }
 ```
 
-Запись пользователя `CArtists`выглядит, как показано в следующем примере:
+Запись пользователя выглядит, `CArtists` как в следующем примере:
 
 ```cpp
 class CArtists
@@ -76,4 +77,4 @@ END_COLUMN_MAP()
 
 ## <a name="see-also"></a>См. также раздел
 
-[Работа с шаблонами объекта-получателя OLE DB](../../data/oledb/working-with-ole-db-consumer-templates.md)
+[Работа с шаблонами потребителей OLE DB](../../data/oledb/working-with-ole-db-consumer-templates.md)

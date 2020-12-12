@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура метод criticalsectiontraits'
 title: CriticalSectionTraits - структура
 ms.date: 09/26/2018
 ms.topic: reference
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits::GetInvalidValue method
 - Microsoft::WRL::Wrappers::HandleTraits::CriticalSectionTraits::Unlock method
 ms.assetid: c515a1b5-4eb0-40bc-9035-c4d9352c9de7
-ms.openlocfilehash: 3573cad21734a97629cbc12b76d73b99024cbc2f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 20e4b7dd47acf6f632c888c9bfdedeb3f4e60270
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220513"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272946"
 ---
 # <a name="criticalsectiontraits-structure"></a>CriticalSectionTraits - структура
 
@@ -28,7 +29,7 @@ ms.locfileid: "87220513"
 struct CriticalSectionTraits;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
@@ -53,7 +54,7 @@ name                                                       | Описание
 
 **Пространство имен:** Microsoft:: WRL:: оболочки:: метод HandleTraits
 
-## <a name="criticalsectiontraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a>Метод criticalsectiontraits:: GetInvalidValue
+## <a name="criticalsectiontraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a> Метод criticalsectiontraits:: GetInvalidValue
 
 Специализирует `CriticalSection` шаблон так, чтобы шаблон всегда был недействительным.
 
@@ -65,11 +66,11 @@ inline static Type GetInvalidValue();
 
 Всегда возвращает указатель на недопустимую критическую секцию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Модификатор `Type` определен как `typedef CRITICAL_SECTION* Type;`.
 
-## <a name="criticalsectiontraitsunlock"></a><a name="unlock"></a>Метод criticalsectiontraits:: Unlock
+## <a name="criticalsectiontraitsunlock"></a><a name="unlock"></a> Метод criticalsectiontraits:: Unlock
 
 Специализирует `CriticalSection` шаблон таким образом, чтобы он поддерживал владение заданным объектом критического раздела.
 
@@ -84,7 +85,7 @@ inline static void Unlock(
 *сложных*<br/>
 Указатель на объект критической секции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Модификатор `Type` определен как `typedef CRITICAL_SECTION* Type;`.
 

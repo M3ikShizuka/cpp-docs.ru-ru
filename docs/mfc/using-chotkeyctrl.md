@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: использование CHotKeyCtrl'
 title: Использование CHotKeyCtrl
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - CHotKeyCtrl class [MFC], using
 - hot key controls
 ms.assetid: 9b207117-d848-4224-8888-c3d197bb0c95
-ms.openlocfilehash: e2002d96a1eba913e260fa92281f730355a83ca5
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 7f17063a4fb3732a9b121e2b93f5d55e51d5654a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447238"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271685"
 ---
 # <a name="using-chotkeyctrl"></a>Использование CHotKeyCtrl
 
@@ -21,13 +22,13 @@ ms.locfileid: "79447238"
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Что вы хотите узнать подробнее
 
-- [Использование элемента управления "Сочетание клавиш"](../mfc/using-a-hot-key-control.md)
+- [Использование элемента управления горячими ключами](../mfc/using-a-hot-key-control.md)
 
-- [Задание сочетания клавиш](../mfc/setting-a-hot-key.md)
+- [Установка сочетания клавиш](../mfc/setting-a-hot-key.md)
 
-- [Глобальные сочетания клавиш](../mfc/global-hot-keys.md)
+- [Глобальные горячие клавиши](../mfc/global-hot-keys.md)
 
-- [Сочетания клавиш для определенного потока](../mfc/thread-specific-hot-keys.md)
+- [Горячие клавиши для конкретного потока](../mfc/thread-specific-hot-keys.md)
 
 ## <a name="see-also"></a>См. также раздел
 

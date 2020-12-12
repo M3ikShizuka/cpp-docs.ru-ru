@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: `/Zc:ternary` (принудительное применение правил условного оператора)'
 title: /Zc:ternary (принудительное применение правил для условного оператора)
 ms.date: 09/12/2019
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - /Zc:ternary
 - Zc:ternary
 - -Zc:ternary
-ms.openlocfilehash: 04bd0c49528d86ddd4d1e6c77804cf64278db188
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ea1cf57aa1633e08095dfd01964a2255cb0b3c70
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211883"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97271321"
 ---
-# <a name="zcternary-enforce-conditional-operator-rules"></a>`/Zc:ternary`(Принудительное применение правил условного оператора)
+# <a name="zcternary-enforce-conditional-operator-rules"></a>`/Zc:ternary` (Принудительное применение правил условного оператора)
 
 Включить применение стандартных правил C++ для типов, а также квалификаторов const или volatile (ОПС) второго и третьего операндов в выражении условного оператора.
 
@@ -22,7 +23,7 @@ ms.locfileid: "87211883"
 
 > **`/Zc:ternary`**[**`-`**]
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Начиная с Visual Studio 2017, компилятор поддерживает поведение стандартного *условного оператора* C++ ( **`?:`** ). Он также называется *оператором ternary*. Стандарт C++ требует, чтобы операнды ternary удовлетворяли одному из трех условий: операнды должны быть одного типа и **`const`** или **`volatile`** квалификации (ОПС-квалификация), либо только один операнд должен однозначно преобразовываться в один и тот же тип и ОПС-квалификация. Или один или оба операнда должны быть выражением Throw. В версиях до Visual Studio 2017 версии 15,5 компилятор разрешил преобразования, которые считаются неоднозначными по стандарту.
 
@@ -161,4 +162,4 @@ int main(int argc, char**) {
 
 ## <a name="see-also"></a>См. также раздел
 
-[`/Zc`Соответствия](zc-conformance.md)
+[`/Zc` Соответствия](zc-conformance.md)

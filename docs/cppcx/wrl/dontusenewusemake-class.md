@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: DontUseNewUseMake Class'
 title: DontUseNewUseMake - класс
 ms.date: 09/21/2018
 ms.topic: reference
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::DontUseNewUseMake class
 - Microsoft::WRL::Details::DontUseNewUseMake::operator new operator
 ms.assetid: 8b38d07b-fc14-4cea-afb9-4c1a7dde0093
-ms.openlocfilehash: ae67373b4f2f2d4a199b939b06e6f526f1365446
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f6b6740e472123e59565e3bad16e4a535a4e17fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371553"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97272907"
 ---
 # <a name="dontusenewusemake-class"></a>DontUseNewUseMake - класс
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,15 +29,15 @@ class DontUseNewUseMake;
 
 ## <a name="remarks"></a>Remarks
 
-Предотвращает использование `new` оператора `RuntimeClass`в . Следовательно, вместо этого необходимо использовать [функцию Make.](make-function.md)
+Предотвращает использование оператора `new` в `RuntimeClass` . Следовательно, вместо этого следует использовать [функцию make](make-function.md) .
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-operators"></a>Открытые операторы
 
 Имя                                             | Описание
 ------------------------------------------------ | ---------------------------------------------------------------------------
-[DontUseNewUseMake::оператор новый](#operator-new) | Перегружает `new` оператора и предотвращает его `RuntimeClass`использования в.
+[DontUseNewUseMake:: оператор New](#operator-new) | Перегружает оператор `new` и предотвращает его использование в `RuntimeClass` .
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -44,13 +45,13 @@ class DontUseNewUseMake;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** implements.h
+**Заголовок:** Implements. h
 
-**Пространство имен:** Microsoft:WRL::Details
+**Пространство имен:** Microsoft:: WRL::D состояния
 
-## <a name="dontusenewusemakeoperator-new"></a><a name="operator-new"></a>DontUseNewUseMake::оператор новый
+## <a name="dontusenewusemakeoperator-new"></a><a name="operator-new"></a> DontUseNewUseMake:: оператор New
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ```cpp
 void* operator new(
@@ -64,13 +65,13 @@ void* operator new(
 *__unnamed0*<br/>
 Неименованный параметр, который определяет количество байт памяти для выделения.
 
-*Размещения*<br/>
+*размещаем*<br/>
 Выделяемый тип.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Предоставляет способ передачи дополнительных аргументов при перегрузке оператора `new`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Перегружает `new` оператора и предотвращает его `RuntimeClass`использования в.
+Перегружает оператор `new` и предотвращает его использование в `RuntimeClass` .

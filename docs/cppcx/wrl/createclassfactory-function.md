@@ -1,5 +1,6 @@
 ---
-title: Функция CreateClassFactory
+description: Дополнительные сведения о функции Createclassfactory-
+title: CreateClassFactory - функция
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +8,14 @@ f1_keywords:
 helpviewer_keywords:
 - CreateClassFactory function
 ms.assetid: 772d5d1b-8872-4745-81ca-521a39564713
-ms.openlocfilehash: 0467a9a1341e29a61a3b32d999769b01385f641f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 99565ee732843f57426f10375ffabc7680ef3c62
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214062"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273063"
 ---
-# <a name="createclassfactory-function"></a>Функция CreateClassFactory
+# <a name="createclassfactory-function"></a>CreateClassFactory - функция
 
 Создает фабрику, которая создает экземпляры указанного класса.
 
@@ -35,7 +36,7 @@ inline HRESULT STDMETHODCALLTYPE CreateClassFactory(
 *flags*<br/>
 Сочетание одного или нескольких значений перечисления [RuntimeClassType](runtimeclasstype-enumeration.md) .
 
-*entry*<br/>
+*операции*<br/>
 Указатель на [CreatorMap](creatormap-structure.md) , содержащий сведения об инициализации и регистрации параметра *riid*.
 
 *riid*<br/>
@@ -48,9 +49,9 @@ inline HRESULT STDMETHODCALLTYPE CreateClassFactory(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Если *фабрика* параметров шаблона не является производной от интерфейса `IClassFactory`, генерируется ошибка Assert.
+Если *фабрика* параметров шаблона не является производной от интерфейса, генерируется ошибка Assert `IClassFactory` .
 
 ## <a name="requirements"></a>Требования
 
@@ -60,4 +61,4 @@ inline HRESULT STDMETHODCALLTYPE CreateClassFactory(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Microsoft::WRL::Wrappers::Details](microsoft-wrl-wrappers-details-namespace.md)
+[Microsoft:: WRL:: оболочки::D пространство имен состояния](microsoft-wrl-wrappers-details-namespace.md)
