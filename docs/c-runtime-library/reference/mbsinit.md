@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: мбсинит'
 title: mbsinit
 ms.date: 11/04/2016
 api_name:
@@ -23,12 +24,12 @@ f1_keywords:
 helpviewer_keywords:
 - mbsinit function
 ms.assetid: 4618555b-baaa-4d04-93fa-36abae411034
-ms.openlocfilehash: e3b1eecc252a2bee83997aa6f2f6f47a96d3321a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 48edb74e47549cb9e1a97757d4922bc0bd8b6c24
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70952366"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178606"
 ---
 # <a name="mbsinit"></a>mbsinit
 
@@ -44,16 +45,16 @@ int mbsinit(
 
 ### <a name="parameters"></a>Параметры
 
-*PS*<br/>
+*ps*<br/>
 Указатель на переменную [mbstate_t](../../c-runtime-library/standard-types.md).
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Ненулевое значение, если *PS* равно **null** или если не находится в середине преобразования.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-При использовании одной из функций ANSI, принимающих указатель **mbstate_t** , передача адреса **mbstate_t** будет возвращать сведения о том, был ли преобразован последний байт в буфере.
+При использовании одной из функций ANSI, принимающих указатель **mbstate_t** , передача адреса **mbstate_t** возвратит сведения о том, был ли преобразован последний байт в буфере.
 
 Для поддержки многобайтовых символов должна быть установлена соответствующая кодовая страница.
 
@@ -151,7 +152,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-### <a name="sample-output"></a>Пример результатов выполнения
+### <a name="sample-output"></a>Пример выходных данных
 
 ```Output
 Locale set to: "Japanese_Japan.932"
@@ -163,6 +164,6 @@ MB String: AaBbCcxXyYzZ
 WC String: AaBbCcxXyYzZ
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Классификация байтов](../../c-runtime-library/byte-classification.md)<br/>

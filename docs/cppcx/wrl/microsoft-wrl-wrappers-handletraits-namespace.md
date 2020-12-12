@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Microsoft:: WRL:: оболочки:: метод HandleTraits Namespace'
 title: Пространство имен Microsoft::WRL::Wrappers::HandleTraits
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - HandleTraits namespace
 ms.assetid: 2fb5c6d1-bfc2-4e09-91eb-31705064ffb3
-ms.openlocfilehash: b19cc426fc7c1b4fc6ec0638730d59998f8c108a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 4bbc970a6d3445e8acda752be1a2030ee99759a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213737"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178060"
 ---
 # <a name="microsoftwrlwrappershandletraits-namespace"></a>Пространство имен Microsoft::WRL::Wrappers::HandleTraits
 
@@ -28,17 +29,17 @@ namespace Microsoft::WRL::Wrappers::HandleTraits;
 
 ### <a name="structures"></a>Структуры
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
-|[Структура CriticalSectionTraits](criticalsectiontraits-structure.md)|Специализирует объект `CriticalSection` для поддержки недопустимого критического раздела или функции для освобождения критического раздела.|
-|[Структура EventTraits](eventtraits-structure.md)|Определяет характеристики `Event`ного обработчика класса.|
-|[Структура FileHandleTraits](filehandletraits-structure.md)|Определяет характеристики маркера файла.|
-|[Структура HANDLENullTraits](handlenulltraits-structure.md)|Определяет общие характеристики неинициализированного маркера.|
-|[Структура HANDLETraits](handletraits-structure.md)|Определяет общие характеристики дескриптора.|
-|[Структура MutexTraits](mutextraits-structure.md)|Определяет общие характеристики класса [мьютекса](mutex-class.md) .|
-|[Структура SemaphoreTraits](semaphoretraits-structure.md)|Определяет общие характеристики объекта семафора.|
-|[Структура SRWLockExclusiveTraits](srwlockexclusivetraits-structure.md)|Описывает общие характеристики класса `SRWLock` в режиме монопольной блокировки.|
-|[Структура SRWLockSharedTraits](srwlocksharedtraits-structure.md)|Описывает общие характеристики класса `SRWLock` в режиме общей блокировки.|
+|[CriticalSectionTraits - структура](criticalsectiontraits-structure.md)|Специализирует `CriticalSection` объект для поддержки недопустимого критического раздела или функции для освобождения критического раздела.|
+|[EventTraits - структура](eventtraits-structure.md)|Определяет характеристики `Event` обработчика класса.|
+|[FileHandleTraits - структура](filehandletraits-structure.md)|Определяет характеристики маркера файла.|
+|[HANDLENullTraits - структура](handlenulltraits-structure.md)|Определяет общие характеристики неинициализированного маркера.|
+|[HANDLETraits - структура](handletraits-structure.md)|Определяет общие характеристики дескриптора.|
+|[MutexTraits - структура](mutextraits-structure.md)|Определяет общие характеристики класса [мьютекса](mutex-class.md) .|
+|[SemaphoreTraits - структура](semaphoretraits-structure.md)|Определяет общие характеристики объекта семафора.|
+|[SRWLockExclusiveTraits - структура](srwlockexclusivetraits-structure.md)|Описывает общие характеристики `SRWLock` класса в режиме монопольной блокировки.|
+|[SRWLockSharedTraits - структура](srwlocksharedtraits-structure.md)|Описывает общие характеристики `SRWLock` класса в режиме общей блокировки.|
 
 ## <a name="requirements"></a>Требования
 
@@ -48,4 +49,4 @@ namespace Microsoft::WRL::Wrappers::HandleTraits;
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Microsoft::WRL::Wrappers](microsoft-wrl-wrappers-namespace.md)
+[Пространство имен Microsoft:: WRL:: оберток](microsoft-wrl-wrappers-namespace.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l'
 title: _fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l
 ms.date: 11/04/2016
 api_name:
@@ -44,12 +45,12 @@ helpviewer_keywords:
 - ftprintf_p_l function
 - fwprintf_p_l function
 ms.assetid: 46b082e1-45ba-4383-9ee4-97015aa50bc6
-ms.openlocfilehash: 6509aba4097b3b37443443b533ebd9fb92c923a1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 543589a864c19e1c1fddde0c6837f680903666cf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957004"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178632"
 ---
 # <a name="_fprintf_p-_fprintf_p_l-_fwprintf_p-_fwprintf_p_l"></a>_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l
 
@@ -90,7 +91,7 @@ int _fwprintf_p_l(
 *format*<br/>
 Строка управления форматом.
 
-*параметр*<br/>
+*argument*<br/>
 Необязательные аргументы.
 
 *locale*<br/>
@@ -100,20 +101,20 @@ int _fwprintf_p_l(
 
 **_fprintf_p** и **_fwprintf_p** возвращают число записанных символов или возвращают отрицательное значение при возникновении ошибки вывода.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-**_fprintf_p** форматирует и выводит последовательность символов и значений в *поток*вывода. Каждый *аргумент* функции (если таковой имеется) преобразуется и выводится в соответствии с соответствующей спецификацией формата в *формате*. Для **_fprintf_p**аргумент *Format* имеет тот же синтаксис и использует его в **_printf_p**. Эти функции поддерживают позиционные параметры, это означает, что можно изменить порядок параметров, используемых в строке формата. Дополнительные сведения см. в разделе [Позиционные параметры printf_p](../../c-runtime-library/printf-p-positional-parameters.md).
+**_fprintf_p** форматирует и выводит последовательность символов и значений в *поток* вывода. Каждый *аргумент* функции (если таковой имеется) преобразуется и выводится в соответствии с соответствующей спецификацией формата в *формате*. Для **_fprintf_p** аргумент *формата* имеет тот же синтаксис и использует его в **_printf_p**. Эти функции поддерживают позиционные параметры, это означает, что можно изменить порядок параметров, используемых в строке формата. Дополнительные сведения см. в разделе [Позиционные параметры printf_p](../../c-runtime-library/printf-p-positional-parameters.md).
 
-**_fwprintf_p** — это версия **_fprintf_p**для расширенных символов; в **_fwprintf_p** *Format* является строкой расширенных символов. Эти функции ведут себя одинаково, если поток открыт в режиме ANSI. **_fprintf_p** в настоящее время не поддерживает вывод в поток Юникода.
+**_fwprintf_p** — это версия **_fprintf_p** для расширенных символов; в **_fwprintf_p** *Format* — строка расширенных символов. Эти функции ведут себя одинаково, если поток открыт в режиме ANSI. **_fprintf_p** в настоящее время не поддерживает вывод в поток Юникода.
 
 Версии этих функций с суффиксом **_l** идентичны за исключением того, что они используют переданный параметр языкового стандарта вместо текущего языкового стандарта.
 
 > [!IMPORTANT]
 > Убедитесь, что *format* не является строкой, определяемой пользователем.
 
-Как и небезопасные версии (см. [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)), эти функции проверяют свои параметры и вызывают обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md), если один из *потоков* или  *Format* является пустым указателем или неизвестными или неправильно сформированными описателями форматирования. Если выполнение может быть продолжено, функции возвращают значение-1 и **задают значение** **еинвал**.
+Как и небезопасные версии (см. раздел [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)), эти функции проверяют свои параметры и вызывают обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md), если *поток* или *Формат* является пустым указателем или если присутствуют неизвестные или неправильно сформированные описатели форматирования. Если выполнение может быть продолжено, функции возвращают значение-1 и **задают значение** **еинвал**.
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Процедура Tchar.h|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -129,7 +130,7 @@ int _fwprintf_p_l(
 |**_fprintf_p**, **_fprintf_p_l**|\<stdio.h>|
 |**_fwprintf_p**, **_fwprintf_p_l**|\<stdio.h> или \<wchar.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -175,14 +176,14 @@ this is a string
 1.500000
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Потоковый ввод-вывод](../../c-runtime-library/stream-i-o.md)<br/>
 [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
 [fscanf, _fscanf_l, fwscanf, _fwscanf_l](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[Позиционные параметры printf_p](../../c-runtime-library/printf-p-positional-parameters.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[printf_p позиционированные параметры](../../c-runtime-library/printf-p-positional-parameters.md)<br/>
 [_cprintf_p, _cprintf_p_l, _cwprintf_p, _cwprintf_p_l](cprintf-p-cprintf-p-l-cwprintf-p-cwprintf-p-l.md)<br/>
 [_cprintf_s, _cprintf_s_l, _cwprintf_s, _cwprintf_s_l](cprintf-s-cprintf-s-l-cwprintf-s-cwprintf-s-l.md)<br/>
-[Позиционные параметры printf_p](../../c-runtime-library/printf-p-positional-parameters.md)<br/>
+[printf_p позиционированные параметры](../../c-runtime-library/printf-p-positional-parameters.md)<br/>
 [fscanf_s, _fscanf_s_l, fwscanf_s, _fwscanf_s_l](fscanf-s-fscanf-s-l-fwscanf-s-fwscanf-s-l.md)<br/>

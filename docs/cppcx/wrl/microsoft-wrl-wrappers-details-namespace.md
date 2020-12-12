@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Microsoft:: WRL:: оболочки::D состояния Namespace'
 title: Пространство имен Microsoft::WRL::Wrappers::Details
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - Details namespace
 ms.assetid: 6d3f04ac-9b53-4a82-a188-a85309ec34a4
-ms.openlocfilehash: 005fa79d413708f630b0a6aebbc06782086c81b3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 03d2ac9877355e6b6af38eea8256bbd8ef43ee3e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213763"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178047"
 ---
 # <a name="microsoftwrlwrappersdetails-namespace"></a>Пространство имен Microsoft::WRL::Wrappers::Details
 
@@ -34,16 +35,16 @@ namespace Microsoft::WRL::Wrappers::Details;
 
 ### <a name="classes"></a>Классы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[Класс SyncLockT](synclockt-class.md)|Представляет тип, который может принимать монопольное или совместное владение ресурсом.|
 |[Класс SyncLockWithStatusT](synclockwithstatust-class.md)|Представляет тип, который может принимать монопольное или совместное владение ресурсом.|
 
 ### <a name="methods"></a>Методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
-|[Метод CompareStringOrdinal](comparestringordinal-method.md)|Сравнивает два указанных объекта `HSTRING` и возвращает целое число, которое показывает их относительное расположение в порядке сортировки.|
+|[Метод CompareStringOrdinal](comparestringordinal-method.md)|Сравнивает два указанных `HSTRING` объекта и возвращает целое число, которое указывает их относительное расположение в порядке сортировки.|
 
 ## <a name="requirements"></a>Требования
 
@@ -53,4 +54,4 @@ namespace Microsoft::WRL::Wrappers::Details;
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Microsoft::WRL::Wrappers](microsoft-wrl-wrappers-namespace.md)
+[Пространство имен Microsoft:: WRL:: оберток](microsoft-wrl-wrappers-namespace.md)

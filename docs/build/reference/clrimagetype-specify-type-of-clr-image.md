@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/CLRIMAGETYPE (определение типа образа среды CLR)
 title: /CLRIMAGETYPE (указание типа образа среды CLR)
 ms.date: 05/16/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /CLRIMAGETYPE linker option
 - -CLRIMAGETYPE linker option
 ms.assetid: 04c60ee6-9dd7-4391-bc03-6926ad0fa116
-ms.openlocfilehash: ee2e2ce359a4b877551adf9af71e0187b42cfd42
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: 7c499eeddcacd674a9dfc2134e059fd8b3b9a6b6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837486"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179152"
 ---
 # <a name="clrimagetype-specify-type-of-clr-image"></a>/CLRIMAGETYPE (указание типа образа среды CLR)
 
@@ -21,9 +22,9 @@ ms.locfileid: "65837486"
 
 ## <a name="syntax"></a>Синтаксис
 
-> **/CLRIMAGETYPE:** {**IJW**|**PURE**|**SAFE**|**SAFE32BITPREFERRED**}
+> **/CLRIMAGETYPE:**{**IJW**|**PURE**|**SAFE**|**SAFE32BITPREFERRED**}
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Компоновщик принимает объекты в машинном коде, а также объекты MSIL, скомпилированные с параметром [/clr](clr-common-language-runtime-compilation.md). Параметры компилятора **/clr:pure** и **/clr:safe** не рекомендуется использовать в Visual Studio 2015 и они не поддерживаются в Visual Studio 2017 и более поздних версий. При передаче сочетания объектов разных типов в одной сборке проверяемость итогового выходного файла по умолчанию соответствует самому низкому уровню проверяемости входных модулей. Например, при передаче образа в машинном коде и образа в смешанном режиме (скомпилированного с параметром **/clr**) итоговый образ будет образом в смешанном режиме.
 
@@ -47,7 +48,7 @@ ms.locfileid: "65837486"
 
 1. См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.CLRImageType%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по компоновщику MSVC](linking.md)
 - [Параметры компоновщика MSVC](linker-options.md)

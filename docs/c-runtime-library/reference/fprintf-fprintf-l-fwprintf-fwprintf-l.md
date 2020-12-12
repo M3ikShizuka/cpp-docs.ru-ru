@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: fprintf, _fprintf_l, fwprintf, _fwprintf_l'
 title: fprintf, _fprintf_l, fwprintf, _fwprintf_l
 ms.date: 11/04/2016
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - print formatted data to streams
 - fwprintf_l function
 ms.assetid: 34a87e1c-6e4d-4d48-a611-58314dd4dc4b
-ms.openlocfilehash: 1a296b8ac97a7f20a3834814c1ca3b7319720148
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 05896f56ac7058be1618833d6f50a8935a61a14f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70956985"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178684"
 ---
 # <a name="fprintf-_fprintf_l-fwprintf-_fwprintf_l"></a>fprintf, _fprintf_l, fwprintf, _fwprintf_l
 
@@ -84,7 +85,7 @@ int _fwprintf_l(
 *format*<br/>
 Строка управления форматом.
 
-*параметр*<br/>
+*argument*<br/>
 Необязательные аргументы.
 
 *locale*<br/>
@@ -96,18 +97,18 @@ int _fwprintf_l(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-**fprintf** форматирует и выводит последовательность символов и значений в *поток*вывода. Каждый *аргумент* функции (если таковой имеется) преобразуется и выводится в соответствии с соответствующей спецификацией формата в *формате*. Для **fprintf**аргумент *Format* имеет тот же синтаксис и использует его в **printf**.
+**fprintf** форматирует и выводит последовательность символов и значений в *поток* вывода. Каждый *аргумент* функции (если таковой имеется) преобразуется и выводится в соответствии с соответствующей спецификацией формата в *формате*. Для **fprintf** аргумент *Format* имеет тот же синтаксис и использует его в **printf**.
 
-**fwprintf** — это версия **fprintf**для расширенных символов; в **fwprintf** *Format* является строкой расширенных символов. Эти функции ведут себя одинаково, если поток открыт в режиме ANSI. **fprintf** в настоящее время не поддерживает вывод в поток Юникода.
+**fwprintf** — это версия **fprintf** для расширенных символов; в **fwprintf** *Format* является строкой расширенных символов. Эти функции ведут себя одинаково, если поток открыт в режиме ANSI. **fprintf** в настоящее время не поддерживает вывод в поток Юникода.
 
 Версии этих функций с суффиксом **_l** идентичны за исключением того, что они используют переданный параметр языкового стандарта вместо локали текущего потока.
 
 > [!IMPORTANT]
 > Убедитесь, что *format* не является строкой, определяемой пользователем.
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Подпрограмма TCHAR.H|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -123,7 +124,7 @@ int _fwprintf_l(
 |**fprintf**, **_fprintf_l**|\<stdio.h>|
 |**fwprintf**, **_fwprintf_l**|\<stdio.h> или \<wchar.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -162,10 +163,10 @@ this is a string
 1.500000
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Потоковый ввод-вывод](../../c-runtime-library/stream-i-o.md)<br/>
 [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
 [fscanf, _fscanf_l, fwscanf, _fwscanf_l](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
-[Синтаксис описания формата: функции printf и wprintf](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[Синтаксис спецификации формата: функции printf и wprintf](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
