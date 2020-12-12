@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функциях обмена данными диалоговых окон для элементов управления OLE
 title: Функции обмена данными диалоговых окон для элементов управления OLE
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - OLE controls [MFC], DDX functions
 - DDX (dialog data exchange), OLE support
 ms.assetid: 7ef1f288-ff65-40d4-aad2-5497bc00bb27
-ms.openlocfilehash: 9133c30dd1ac069145862d4bf61ba0bc0d504838
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ed2a3c36655ce5fccf482c0a7dedad0a4c67baa5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837363"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219958"
 ---
 # <a name="dialog-data-exchange-functions-for-ole-controls"></a>Функции обмена данными диалоговых окон для элементов управления OLE
 
@@ -72,7 +73,7 @@ void AFXAPI DDX_OCBool(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -106,7 +107,7 @@ void AFXAPI DDX_OCBoolRO(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -140,7 +141,7 @@ void AFXAPI DDX_OCColor(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -174,7 +175,7 @@ void AFXAPI DDX_OCColorRO(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -214,7 +215,7 @@ void AFXAPI DDX_OCFloat(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -254,7 +255,7 @@ void AFXAPI DDX_OCFloatRO(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -294,7 +295,7 @@ void AFXAPI DDX_OCInt(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -334,7 +335,7 @@ void AFXAPI DDX_OCIntRO(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -368,7 +369,7 @@ void AFXAPI DDX_OCShort(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -402,7 +403,7 @@ void AFXAPI DDX_OCShortRO(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -436,7 +437,7 @@ void AFXAPI DDX_OCText(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -470,7 +471,7 @@ void AFXAPI DDX_OCTextRO(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 

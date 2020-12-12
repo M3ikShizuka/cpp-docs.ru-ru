@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CType Class'
 title: Класс ctype
 ms.date: 11/04/2016
 f1_keywords:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - std::ctype [C++], toupper
 - std::ctype [C++], widen
 ms.assetid: 3627154c-49d9-47b5-b28f-5bbedee38e3b
-ms.openlocfilehash: a0e3aad99c335f1a907189ee84e55a38e41b62e1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9ef23707aa08e0fb3ad7edcff07bd2c6a4ae3814
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222515"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233088"
 ---
 # <a name="ctype-class"></a>Класс ctype
 
@@ -59,7 +60,7 @@ class ctype : public ctype_base;
 *CharType*\
 Тип, используемый внутри программы для кодирования символов.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Как и в случае любого другого аспекта языкового стандарта, начальное сохраненное значение статического идентификатора объекта равно нулю. Первая попытка получить доступ к сохраненному значению сохранит уникальное положительное значение в `id`. Критерии классификации получают вложенный тип битовой маски в базовом классе ctype_base.
 
@@ -114,7 +115,7 @@ class ctype : public ctype_base;
 
 **Пространство имен:** std
 
-## <a name="ctypechar_type"></a><a name="char_type"></a>CType:: char_type
+## <a name="ctypechar_type"></a><a name="char_type"></a> CType:: char_type
 
 Тип, который описывает символ, используемый языковым стандартом.
 
@@ -122,7 +123,7 @@ class ctype : public ctype_base;
 typedef CharType char_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип является синонимом для параметра-шаблона *Chartype*.
 
@@ -130,7 +131,7 @@ typedef CharType char_type;
 
 Пример, в котором `char_type` используется в качестве возвращаемого значения, см. в описании функции-члена [widen](#widen).
 
-## <a name="ctypectype"></a><a name="ctype"></a>CType:: CType
+## <a name="ctypectype"></a><a name="ctype"></a> CType:: CType
 
 Конструктор для объектов класса ctype, которые служат в качестве аспектов языкового стандарта для символов.
 
@@ -143,7 +144,7 @@ explicit ctype(size_t _Refs = 0);
 *_Refs*\
 Целочисленное значение, используемое для указания типа управления памятью для объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возможные значения параметра *_Refs* и их значимость:
 
@@ -151,13 +152,13 @@ explicit ctype(size_t _Refs = 0);
 
 - 1: время существования объекта должно управляться вручную.
 
-- \>1: эти значения не определены.
+- \> 1: эти значения не определены.
 
 Прямые примеры привести нельзя, так как деструктор защищен.
 
 Конструктор инициализирует свой базовый объект `locale::facet` с **locale::**[facet](../standard-library/locale-class.md#facet_class)(`_Refs`).
 
-## <a name="ctypedo_is"></a><a name="do_is"></a>CType::d o_is
+## <a name="ctypedo_is"></a><a name="do_is"></a> CType::d o_is
 
 Виртуальная функция, вызываемая для проверки того, есть ли у отдельного символа определенный атрибут, или для классификации атрибутов каждого символа в диапазоне и сохранения их в массиве.
 
@@ -195,7 +196,7 @@ virtual const CharType *do_is(
 
 Вторая функция-член возвращает массив, содержащий значения маски, характеризующие атрибуты каждого символа в диапазоне.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Значения маски, классифицирующие атрибуты символов, предоставляются классом [ctype_base](../standard-library/ctype-base-class.md), от которого производится класс ctype. Первая функция-член может принимать для своего первого параметра выражения, которые называются битовыми масками и формируются из сочетания значений маски логическими побитовыми операторами (&#124;, &, ^, ~).
 
@@ -203,7 +204,7 @@ virtual const CharType *do_is(
 
 См. пример для [is](#is), в котором вызывается `do_is`.
 
-## <a name="ctypedo_narrow"></a><a name="do_narrow"></a>CType::d o_narrow
+## <a name="ctypedo_narrow"></a><a name="do_narrow"></a> CType::d o_narrow
 
 Виртуальная функция, вызываемая для преобразования символа типа `CharType` , используемого локальным языком, в соответствующий символ типа **`char`** в собственной кодировке.
 
@@ -242,7 +243,7 @@ virtual const CharType* do_narrow(
 
 Вторая защищенная функция-член возвращает указатель на целевой диапазон собственных символов, преобразованных из символов типа `CharType`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вторая Защищенная функция шаблона элемента сохраняет в `dest` [ `I` ] значение `do_narrow` ( `first` [ `I` ], `default` ) для `I` в интервале [0, `last`  -  `first` ).
 
@@ -250,7 +251,7 @@ virtual const CharType* do_narrow(
 
 См. пример для [narrow](#narrow), в котором вызывается `do_narrow`.
 
-## <a name="ctypedo_scan_is"></a><a name="do_scan_is"></a>CType::d o_scan_is
+## <a name="ctypedo_scan_is"></a><a name="do_scan_is"></a> CType::d o_scan_is
 
 Виртуальная функция, вызываемая для обнаружения первого символа, соответствующего указанной маске, в диапазоне.
 
@@ -276,7 +277,7 @@ virtual const CharType *do_scan_is(
 
 Указатель на первый символ в диапазоне, соответствующий указанной маске. Если такого значения не существует, функция возвращает *Last*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Защищенная функция-член возвращает наименьший указатель `ptr` в диапазоне [ `first` , `last` ), для которого [do_is](#do_is)( `maskVal` , \* `ptr` ) имеет значение true.
 
@@ -284,7 +285,7 @@ virtual const CharType *do_scan_is(
 
 См. пример для [scan_is](#scan_is), в котором вызывается `do_scan_is`.
 
-## <a name="ctypedo_scan_not"></a><a name="do_scan_not"></a>CType::d o_scan_not
+## <a name="ctypedo_scan_not"></a><a name="do_scan_not"></a> CType::d o_scan_not
 
 Виртуальная функция, вызываемая для обнаружения первого символа, не соответствующего указанной маске, в диапазоне.
 
@@ -310,7 +311,7 @@ virtual const CharType *do_scan_not(
 
 Указатель на первый символ в диапазоне, не соответствующий указанной маске. Если такого значения не существует, функция возвращает *Last*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Защищенная функция-член возвращает наименьший указатель `ptr` в диапазоне [ `first` , `last` ), для которого [do_is](#do_is)( `maskVal` , \* `ptr` ) имеет значение false.
 
@@ -318,7 +319,7 @@ virtual const CharType *do_scan_not(
 
 См. пример для [scan_not](#scan_not), в котором вызывается `do_scan_not`.
 
-## <a name="ctypedo_tolower"></a><a name="do_tolower"></a>CType::d o_tolower
+## <a name="ctypedo_tolower"></a><a name="do_tolower"></a> CType::d o_tolower
 
 Виртуальная функция, вызываемая для преобразования символа или диапазона символов в нижний регистр.
 
@@ -345,7 +346,7 @@ virtual const CharType *do_tolower(
 
 Первая Защищенная функция Member возвращает строчную форму параметра *CH*. Если форма нижнего регистра не существует, она возвращает *CH*. Вторая Защищенная функция Member возвращает *Last*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вторая Защищенная функция-шаблон элемента заменяет каждый элемент `first` [ `I` ] для `I` в интервале [0, `last`  -  `first` ) на `do_tolower` ( `first` [ `I` ]).
 
@@ -353,7 +354,7 @@ virtual const CharType *do_tolower(
 
 См. пример для [tolower](#tolower), в котором вызывается `do_tolower`.
 
-## <a name="ctypedo_toupper"></a><a name="do_toupper"></a>CType::d o_toupper
+## <a name="ctypedo_toupper"></a><a name="do_toupper"></a> CType::d o_toupper
 
 Виртуальная функция, вызываемая для преобразования символа или диапазона символов в верхний регистр.
 
@@ -380,7 +381,7 @@ virtual const CharType *do_toupper(
 
 Первая Защищенная функция Member возвращает прописную форму параметра *CH*. Если форма в верхнем регистре не существует, она возвращает *CH*. Вторая Защищенная функция Member возвращает *Last*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вторая Защищенная функция-шаблон элемента заменяет каждый элемент `first` [ `I` ] для `I` в интервале [0, `last`  -  `first` ) на `do_toupper` ( `first` [ `I` ]).
 
@@ -388,7 +389,7 @@ virtual const CharType *do_toupper(
 
 См. пример для [toupper](#toupper), в котором вызывается `do_toupper`.
 
-## <a name="ctypedo_widen"></a><a name="do_widen"></a>CType::d o_widen
+## <a name="ctypedo_widen"></a><a name="do_widen"></a> CType::d o_widen
 
 Виртуальная функция, вызываемая для преобразования символа типа **`char`** в собственной кодировке в соответствующий символ типа `CharType` , используемый языковым стандартом.
 
@@ -421,7 +422,7 @@ virtual const char *do_widen(
 
 Вторая Защищенная функция-член возвращает указатель на целевой диапазон символов типа `CharType` , используемого языковым стандартом, преобразованных из машинных символов типа **`char`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вторая защищенная функция-член шаблона сохраняет в `dest`[`I`] значение `do_widen`(`first`[`I`]) для `I` в диапазоне [0, `last` - `first`).
 
@@ -429,7 +430,7 @@ virtual const char *do_widen(
 
 См. пример для [widen](#widen), в котором вызывается `do_widen`.
 
-## <a name="ctypeis"></a><a name="is"></a>CType:: является
+## <a name="ctypeis"></a><a name="is"></a> CType:: является
 
 Проверяет, есть ли у отдельного символа определенный атрибут, или классифицирует атрибуты каждого символа в диапазоне и сохраняет их в массиве.
 
@@ -465,7 +466,7 @@ const CharType *is(
 
 Вторая функция-член возвращает указатель на последний символ в диапазоне, атрибуты которого должны классифицироваться.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Значения маски, классифицирующие атрибуты символов, предоставляются классом [ctype_base](../standard-library/ctype-base-class.md), от которого производится класс ctype. Первая функция-член может принимать для своего первого параметра выражения, которые называются битовыми масками и формируются из сочетания значений маски логическими побитовыми операторами (&#124;, &, ^, ~).
 
@@ -508,7 +509,7 @@ int main() {
 }
 ```
 
-## <a name="ctypenarrow"></a><a name="narrow"></a>CType:: Narrow
+## <a name="ctypenarrow"></a><a name="narrow"></a> CType:: Narrow
 
 Преобразует символы типа `CharType` , используемые локальными языками, в соответствующие символы типа **`char`** в собственной кодировке.
 
@@ -545,7 +546,7 @@ const CharType* narrow(
 
 Вторая функция-член возвращает указатель на целевой диапазон собственных символов, преобразованных из символов типа `CharType`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция-член возвращает [do_narrow](#do_narrow)( `ch` , `default` ). Вторая функция-член возвращает [do_narrow](#do_narrow) ( `first` , `last` , `default` , `dest` ). Только основные исходные символы всегда имеют уникальный прообраз `CharType` в `narrow`. Для этих базовых исходных символов хранится следующий инвариант: `narrow` ([widen](#widen) (**c**), 0) == **c**.
 
@@ -575,7 +576,7 @@ int main( )
 Xhello everyone
 ```
 
-## <a name="ctypescan_is"></a><a name="scan_is"></a>CType:: scan_is
+## <a name="ctypescan_is"></a><a name="scan_is"></a> CType:: scan_is
 
 Обнаруживает первый символ, соответствующий указанной маске, в диапазоне.
 
@@ -601,7 +602,7 @@ const CharType *scan_is(
 
 Указатель на первый символ в диапазоне, соответствующий указанной маске. Если такого значения не существует, функция возвращает *Last*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает [do_scan_is](#do_scan_is)( `maskVal` , `first` , `last` ).
 
@@ -631,7 +632,7 @@ int main( )
 The first punctuation is "," at position: 5
 ```
 
-## <a name="ctypescan_not"></a><a name="scan_not"></a>CType:: scan_not
+## <a name="ctypescan_not"></a><a name="scan_not"></a> CType:: scan_not
 
 Обнаруживает первый символ, несоответствующий указанной маске, в диапазоне.
 
@@ -657,7 +658,7 @@ const CharType *scan_not(
 
 Указатель на первый символ в диапазоне, не соответствующий указанной маске. Если такого значения не существует, функция возвращает *Last*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает [do_scan_not](#do_scan_not)( `maskVal` , `first` , `last` ).
 
@@ -687,7 +688,7 @@ int main( )
 First nonalpha character is "," at position: 5
 ```
 
-## <a name="ctypetolower"></a><a name="tolower"></a>CType:: ToLower
+## <a name="ctypetolower"></a><a name="tolower"></a> CType:: ToLower
 
 Преобразует символ или диапазон символов в нижний регистр.
 
@@ -714,7 +715,7 @@ const CharType *tolower(CharType* first, const CharType* last) const;
 
 Вторая функция – член возвращает *Last*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция-член возвращает [do_tolower](#do_tolower)( `ch` ). Вторая функция-член возвращает [do_tolower](#do_tolower)( `first` , `last` ).
 
@@ -743,7 +744,7 @@ int main( )
 The lowercase string is: hello, my name is john
 ```
 
-## <a name="ctypetoupper"></a><a name="toupper"></a>CType:: ToUpper
+## <a name="ctypetoupper"></a><a name="toupper"></a> CType:: ToUpper
 
 Преобразует символ или диапазон символов в верхний регистр.
 
@@ -769,7 +770,7 @@ const CharType *toupper(CharType* first, const CharType* last) const;
 
 Вторая функция – член возвращает *Last*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция-член возвращает [do_toupper](#do_toupper)( `ch` ). Вторая функция-член возвращает [do_toupper](#do_toupper)( `first` , `last` ).
 
@@ -798,7 +799,7 @@ int main( )
 The uppercase string is: HELLO, MY NAME IS JOHN
 ```
 
-## <a name="ctypewiden"></a><a name="widen"></a>CType:: Widening
+## <a name="ctypewiden"></a><a name="widen"></a> CType:: Widening
 
 Преобразует символ типа **`char`** в собственной кодировке в соответствующий символ типа `CharType` , используемый языковым стандартом.
 
@@ -827,7 +828,7 @@ const char *widen(const char* first, const char* last, CharType* dest) const;
 
 Вторая функция-член возвращает указатель на целевой диапазон символов типа `CharType` , используемого языковым стандартом, преобразованных из машинных символов типа **`char`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция-член возвращает [do_widen](#do_widen)( `byte` ). Вторая функция-член возвращает [do_widen](#do_widen)( `first` , `last` , `dest` ).
 

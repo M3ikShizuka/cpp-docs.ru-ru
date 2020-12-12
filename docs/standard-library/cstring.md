@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: &lt; CString&gt;'
 title: '&lt;cstring&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - <cstring> header
 - cstring header
 ms.assetid: d665429f-5d39-4712-9c0a-68c8abcc3536
-ms.openlocfilehash: 0aa92bc366e6f669c01932c2b44413cfc587c16d
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f357ca9606b3ba76aacd7322c019156ffb15cb35
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449338"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233192"
 ---
 # <a name="ltcstringgt"></a>&lt;cstring&gt;
 
-Включает заголовок \<string.h> стандартной библиотеки C и добавляет связанные имена в пространство имен `std`.
+Включает заголовок стандартной библиотеки C \<string.h> и добавляет связанные имена в `std` пространство имен.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -24,7 +25,7 @@ ms.locfileid: "68449338"
 #include <cstring>
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Включение этого заголовка гарантирует, что имена, объявленные с помощью внешней компоновки в заголовке стандартной библиотеки C, объявляются в пространстве имен `std`.
 
@@ -70,8 +71,8 @@ char* strerror(int errnum);
 size_t strlen(const char* s);
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по файлам заголовков](../standard-library/cpp-standard-library-header-files.md)\
 [Общие сведения о стандартной библиотеке C++](../standard-library/cpp-standard-library-overview.md)\
-[Потокобезопасность в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)

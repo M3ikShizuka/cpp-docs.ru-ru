@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: предупреждение компилятора (уровень 4) C4706'
 title: Предупреждение компилятора (уровень 4) C4706
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4706
 ms.assetid: 89cd3f4f-812c-4a4b-9426-65a5a6d1b99c
-ms.openlocfilehash: 2ff8794dcf29539b492f53bfdf6f0810988c0f72
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: ca614d0ca55dcfa22ec31df78ebe2be904ffd9e7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74989903"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97208532"
 ---
 # <a name="compiler-warning-level-4-c4706"></a>Предупреждение компилятора (уровень 4) C4706
 
@@ -49,7 +50,7 @@ int main()
 }
 ```
 
-Если вы хотите протестировать отношение, а не выполнять назначение, используйте оператор `==`. Например, следующая строка проверяет, равны ли значения a и b:
+Если ваша цель заключается в проверке связи, а не для создания назначения, используйте `==` оператор. Например, следующая строка проверяет, равны ли значения a и b:
 
 ```cpp
 // C4706c.cpp

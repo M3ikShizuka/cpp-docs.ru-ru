@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _filelength, _filelengthi64'
 title: _filelength, _filelengthi64
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - files [C++], length
 - _filelengthi64 function
 ms.assetid: 3ab83d5a-543c-4079-b9d9-0abfc7da0275
-ms.openlocfilehash: 5fea019591fc5a90aab07f0347aa3f02fe0d43f3
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 21004112e731827240b66c343b69cc00133aa6ab
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910219"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329286"
 ---
 # <a name="_filelength-_filelengthi64"></a>_filelength, _filelengthi64
 
@@ -64,9 +65,9 @@ __int64 _filelengthi64(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Как **_filelength** , так и **_filelengthi64** возвращают длину файла в байтах целевого файла, связанного с *демоном*к памяти. Если *демон демона* является недопустимым дескриптором файла, эта функция вызывает обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, обе функции возвращают-1L **, чтобы указать** ошибку, и присвойте параметру значение **значение EBADF**.
+Как **_filelength** , так и **_filelengthi64** возвращают длину файла в байтах целевого файла, связанного с *демоном* к памяти. Если *демон демона* является недопустимым дескриптором файла, эта функция вызывает обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, обе функции возвращают-1L **, чтобы указать** ошибку, и присвойте параметру значение **значение EBADF**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CException Class'
 title: Класс CException
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - CException [MFC], Delete
 - CException [MFC], ReportError
 ms.assetid: cfacf14d-bfe4-4666-a5c7-38b800512920
-ms.openlocfilehash: e27802e05c832d28d848d9eb1235d6ef5980b306
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 39d3266817ee1be20acde0b01c7c5d1aa90313cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841562"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184664"
 ---
 # <a name="cexception-class"></a>Класс CException
 
@@ -29,7 +30,7 @@ ms.locfileid: "88841562"
 class AFX_NOVTABLE CException : public CObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -44,7 +45,7 @@ class AFX_NOVTABLE CException : public CObject
 |[CException::D удалить](#delete)|Удаляет `CException` объект.|
 |[CException:: ReportError](#reporterror)|Сообщает пользователю сообщение об ошибке в окне сообщения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Поскольку `CException` является абстрактным базовым классом, нельзя создавать `CException` объекты напрямую; необходимо создавать объекты производных классов. Если необходимо создать собственный `CException` класс, используйте один из производных классов, перечисленных выше, в качестве модели. Убедитесь, что производный класс также использует `IMPLEMENT_DYNAMIC` .
 
@@ -97,7 +98,7 @@ explicit CException(BOOL bAutoDelete);
 *b_AutoDelete*<br/>
 Укажите значение TRUE, если память для `CException` объекта была выделена в куче. Это приведет к `CException` удалению объекта при `Delete` вызове функции-члена для удаления исключения. Укажите значение FALSE, если `CException` объект находится в стеке или является глобальным объектом. В этом случае `CException` объект не будет удален при `Delete` вызове функции-члена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Обычно вызывать этот конструктор напрямую не требуется. Функция, вызывающая исключение, должна создать экземпляр `CException` производного класса и вызвать его конструктор или использовать одну из функций Throw MFC, например [афкссровфиликсцептион](exception-processing.md#afxthrowfileexception), для создания предопределенного типа. Эта документация предоставляется только для полноты.
 
@@ -109,7 +110,7 @@ explicit CException(BOOL bAutoDelete);
 void Delete();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 При удалении `CException` объекта используйте `Delete` функцию-член для удаления исключения. Не используйте **`delete`** оператор напрямую, так как `CException` объект может быть глобальным объектом или создан в стеке.
 

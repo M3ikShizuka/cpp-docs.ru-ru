@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: объекты данных и источники данных: манипуляции'
 title: Объекты и источники данных. Манипуляция
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - delayed rendering [MFC]
 - OLE [MFC], data sources
 ms.assetid: f7f27e77-bb5d-4131-b819-d71bf929ebaf
-ms.openlocfilehash: f1a83511edbf240d9a05d6d489f6cda9453ccea9
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a9611fefc94e8437f9e0e5361e0d95972f867984
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620404"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291237"
 ---
 # <a name="data-objects-and-data-sources-manipulation"></a>Объекты и источники данных. Манипуляция
 
@@ -29,7 +30,7 @@ ms.locfileid: "84620404"
 
 - [Получение данных из объекта данных](#_core_retrieving_data_from_a_data_object)
 
-## <a name="inserting-data-into-a-data-source"></a><a name="_core_inserting_data_into_a_data_source"></a>Вставка данных в источник данных
+## <a name="inserting-data-into-a-data-source"></a><a name="_core_inserting_data_into_a_data_source"></a> Вставка данных в источник данных
 
 Способ вставки данных в источник данных зависит от того, передаются данные сразу или по требованию, и в какой среднем они передаются. Возможные варианты:
 
@@ -51,7 +52,7 @@ ms.locfileid: "84620404"
 
 - Если `CFile` для передачи данных используется объект, вызовите `COleDataSource::DelayRenderFileData` вместо `COleDataSource::DelayRenderData` в предыдущем параметре. При запросе данных платформа вызывает метод `COleDataSource::OnRenderFileData` , который необходимо переопределить.
 
-## <a name="determining-the-formats-available-in-a-data-object"></a><a name="_core_determining_the_formats_available_in_a_data_object"></a>Определение форматов, доступных в объекте данных
+## <a name="determining-the-formats-available-in-a-data-object"></a><a name="_core_determining_the_formats_available_in_a_data_object"></a> Определение форматов, доступных в объекте данных
 
 Прежде чем приложение сможет вставить в него данные, необходимо выяснить, есть ли в буфере обмена форматы, которые он может обменяться. Для этого приложение должно выполнить следующие действия:
 
@@ -69,7 +70,7 @@ ms.locfileid: "84620404"
 
 Если вы используете **ON_UPDATE_COMMAND_UI**, теперь можно включить вставку и, возможно, вставку специальных элементов в меню Правка. Для этого вызовите либо `CMenu::EnableMenuItem` или `CCmdUI::Enable` . Дополнительные сведения о том, какие приложения контейнера должны выполнять с элементами меню и когда, см. в разделе [меню и ресурсы: Добавление контейнеров](menus-and-resources-container-additions.md).
 
-## <a name="retrieving-data-from-a-data-object"></a><a name="_core_retrieving_data_from_a_data_object"></a>Получение данных из объекта данных
+## <a name="retrieving-data-from-a-data-object"></a><a name="_core_retrieving_data_from_a_data_object"></a> Получение данных из объекта данных
 
 Когда вы решили использовать формат данных, остается только извлечь данные из объекта данных. Для этого пользователь решает, куда разместить данные, и приложение вызывает соответствующую функцию. Данные будут доступны на одном из следующих носителей:
 
@@ -93,6 +94,6 @@ ms.locfileid: "84620404"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Объекты и источники данных (OLE)](data-objects-and-data-sources-ole.md)<br/>
+[Объекты данных и источники данных (OLE)](data-objects-and-data-sources-ole.md)<br/>
 [Класс Коледатаобжект](reference/coledataobject-class.md)<br/>
 [Класс COleDataSource](reference/coledatasource-class.md)

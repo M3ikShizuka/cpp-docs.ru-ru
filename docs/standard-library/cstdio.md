@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: &lt; cstdio&gt;'
 title: '&lt;cstdio&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - cstdio header
 ms.assetid: 838ca50b-dea5-4ee3-a39c-e7c23a6ee016
-ms.openlocfilehash: b5896bdc79c7f494fa83a4c741df0260ae4f6b61
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 2ddb7f4e56042432fdc8237b8f888d04226e06b5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68447435"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233244"
 ---
 # <a name="ltcstdiogt"></a>&lt;cstdio&gt;
 
-Включает заголовок \<stdio.h> стандартной библиотеки C и добавляет связанные имена в пространство имен `std`.
+Включает заголовок стандартной библиотеки C \<stdio.h> и добавляет связанные имена в `std` пространство имен.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -23,12 +24,12 @@ ms.locfileid: "68447435"
 #include <cstdio>
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Включение этого заголовка гарантирует, что имена, объявленные с помощью внешней компоновки в заголовке стандартной библиотеки C, объявляются в пространстве имен `std`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по файлам заголовков](../standard-library/cpp-standard-library-header-files.md)\
 [Общие сведения о стандартной библиотеке C++](../standard-library/cpp-standard-library-overview.md)\
-[Потокобезопасность в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)

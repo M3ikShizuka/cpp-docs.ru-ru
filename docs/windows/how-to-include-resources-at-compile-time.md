@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Включение ресурсов во время компиляции (C++)'
 title: Руководство. Включение ресурсов во время компиляции (C++)
 ms.date: 02/14/2019
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - symbols [C++], finding
 - resources [C++], searching for symbols
 ms.assetid: 357e93c2-0a29-42f9-806f-882f688b8924
-ms.openlocfilehash: 5ac4cba4e8ad8a08fa1010758c5a343501d3af2c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 18c391351c3a97a8adbbd79691f9c0e3ec07abae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504415"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329350"
 ---
 # <a name="how-to-include-resources-at-compile-time-c"></a>Руководство. Включение ресурсов во время компиляции (C++)
 

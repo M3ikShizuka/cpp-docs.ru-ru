@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _get_dstbias'
 title: _get_dstbias
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - get_dstbias function
 - _get_dstbias function
 ms.assetid: e751358c-1ecc-411b-ae2c-81b2ec54ea45
-ms.openlocfilehash: 845310928ec4707afe15bccc7ff5b979e7da69b6
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 00c5cef0e7c1e5e79cbcc2ce37a13e3f56d27029
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919365"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341455"
 ---
 # <a name="_get_dstbias"></a>_get_dstbias
 
@@ -52,14 +53,14 @@ error_t _get_dstbias( int* seconds );
 
 ### <a name="parameters"></a>Параметры
 
-*несколько*<br/>
+*секунд*<br/>
 Смещение перехода на зимнее время в секундах.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Нуль в случае успеха или **значение** пересчета при возникновении ошибки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_get_dstbias** извлекает количество секунд в формате летнего времени в виде целого числа. Если действует переход на зимнее время, смещение по умолчанию составляет 3600 секунд. Это число соответствует одному часу (хотя в некоторых регионах может применяться смещение на два часа).
 
@@ -80,7 +81,7 @@ error_t _get_dstbias( int* seconds );
 ## <a name="see-also"></a>См. также раздел
 
 [Операции управления временем](../../c-runtime-library/time-management.md)<br/>
-[errno, _doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>
+[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>
 [_get_daylight](get-daylight.md)<br/>
 [_get_timezone](get-timezone.md)<br/>
 [_get_tzname](get-tzname.md)<br/>

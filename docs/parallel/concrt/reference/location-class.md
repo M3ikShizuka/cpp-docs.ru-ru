@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о классе Location
 title: Класс location
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - location class
 ms.assetid: c3289f51-5bf1-4dff-a18d-d0dab8e5d9c7
-ms.openlocfilehash: 848be3131e23ff53f2dec16364b132ee7c218195
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ae6ce0ac58d504f1fb99f5c38db04bb402dc31c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87182698"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335797"
 ---
 # <a name="location-class"></a>Класс location
 
@@ -27,11 +28,11 @@ ms.locfileid: "87182698"
 class location;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[расположение](#ctor)|Перегружен. Формирует объект `location`.|
 |[Деструктор ~ Location](#dtor)|Уничтожает объект `location` .|
@@ -61,7 +62,7 @@ class location;
 
 **Пространство имен:** параллелизм
 
-## <a name="location"></a><a name="dtor"></a>расположение ~
+## <a name="location"></a><a name="dtor"></a> расположение ~
 
 Уничтожает объект `location` .
 
@@ -69,7 +70,7 @@ class location;
 ~location();
 ```
 
-## <a name="current"></a><a name="current"></a>данном
+## <a name="current"></a><a name="current"></a> данном
 
 Возвращает объект `location`, представляющий наиболее определенное расположение, выполняемое вызывающим потоком.
 
@@ -81,7 +82,7 @@ static location __cdecl current();
 
 Расположение, представляющее наиболее определенное место, выполняемое вызывающим потоком.
 
-## <a name="from_numa_node"></a><a name="from_numa_node"></a>from_numa_node
+## <a name="from_numa_node"></a><a name="from_numa_node"></a> from_numa_node
 
 Возвращает объект `location`, представляющий заданный узел NUMA.
 
@@ -98,7 +99,7 @@ static location __cdecl from_numa_node(unsigned short _NumaNodeNumber);
 
 Расположение, представляющее узел NUMA, указывается с помощью параметра `_NumaNodeNumber`.
 
-## <a name="location"></a><a name="ctor"></a>места
+## <a name="location"></a><a name="ctor"></a> места
 
 Формирует объект `location`.
 
@@ -128,11 +129,11 @@ location(
 *_PBinding*<br/>
 Используемых Указатель привязки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Созданное расположение по умолчанию представляет систему в целом.
 
-## <a name="operator"></a><a name="operator_neq"></a>operator! =
+## <a name="operator"></a><a name="operator_neq"></a> operator! =
 
 Определяет, представляют ли два объекта `location` различные расположения.
 
@@ -149,7 +150,7 @@ bool operator!= (const location& _Rhs) const;
 
 **`true`** значение, если два расположения различаются; **`false`** в противном случае —.
 
-## <a name="operator"></a><a name="operator_eq"></a>Оператор =
+## <a name="operator"></a><a name="operator_eq"></a> Оператор =
 
 Назначает содержимое другого объекта `location` данному.
 
@@ -164,7 +165,7 @@ location& operator= (const location& _Rhs);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-## <a name="operator"></a><a name="operator_eq_eq"></a>Оператор = =
+## <a name="operator"></a><a name="operator_eq_eq"></a> Оператор = =
 
 Определяет `location` , представляют ли два объекта одно и то же расположение.
 

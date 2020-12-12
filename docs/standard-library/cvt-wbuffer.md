@@ -1,5 +1,6 @@
 ---
-title: '&lt;cvt вбуффер &gt;'
+description: 'Дополнительные сведения о: &lt; CVT/вбуффер&gt;'
+title: '&lt;CVT — вбуффер&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - stdext.cvt.<cvt/wbuffer>
@@ -8,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - cvt/wbuffer header
 ms.assetid: 6e6eb44c-1bc4-4d8c-a4bd-b39c753ce725
-ms.openlocfilehash: a360b9cd0b163615bed71ee4b070f8d97848fa66
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: afc88236d744e3556fd0eb3563da4db1f6d57dd4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688141"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233036"
 ---
 # <a name="ltcvtwbuffergt"></a>&lt;cvt/wbuffer&gt;
 
-Заголовок `<cvt/wstring>` в предыдущих версиях Visual Studio определил класс шаблона класса [wbuffer_convert](../standard-library/wbuffer-convert-class.md) в пространстве имен stdext:: CVT. Заголовок сохраняется для обеспечения обратной совместимости. В новом коде следует использовать версию класса, определенную в параметре [\<locale>](../standard-library/locale.md) в пространстве имен `std`.
+Заголовок `<cvt/wstring>` в предыдущих версиях Visual Studio определил шаблон класса [wbuffer_convert класс](../standard-library/wbuffer-convert-class.md) в пространстве имен stdext:: CVT. Заголовок сохраняется для обеспечения обратной совместимости. Новый код должен использовать версию класса, которая определена в [\<locale>](../standard-library/locale.md) `std` пространстве имен.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -25,6 +26,6 @@ ms.locfileid: "72688141"
 #include <cvt/wbuffer>
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по файлам заголовков](../standard-library/cpp-standard-library-header-files.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _gcvt'
 title: _gcvt
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - strings [C++], converting from floating point
 - CVTBUFSIZE
 ms.assetid: 5761411e-c06b-409a-912f-810fe7f4bcb5
-ms.openlocfilehash: d13ae6cee293036f0454b23e0349cabb2869be30
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 942f233e3b0e4c1ac3bc96d1fa64fd46cdccbcc2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919413"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341507"
 ---
 # <a name="_gcvt"></a>_gcvt
 
@@ -69,7 +70,7 @@ char *_gcvt(
 
 **_gcvt** возвращает указатель на строку цифр.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_gcvt** преобразует *значение* с плавающей запятой в символьную строку (которая включает десятичную запятую и возможный байт знака) и сохраняет строку в *буфер*. *Буфер* должен быть достаточно большим, чтобы разместить преобразованное значение, а также завершающий нуль-символ, который добавляется автоматически. Если используется размер буфера *цифр* + 1, функция перезаписывает конец буфера. Это связано с тем, что преобразованная строка включает символ десятичной запятой и может содержать данные о знаке и степени. Ситуация переполнения не обрабатывается. **_gcvt** пытается *выдавать цифры* в десятичном формате. Если это невозможно, в экспоненциальном формате создаются цифры *цифр* . Нули в конце могут исключаться из преобразования.
 
@@ -146,7 +147,7 @@ buffer: '-1.23456789012e-002' (19 chars)
 ## <a name="see-also"></a>См. также раздел
 
 [Преобразование данных](../../c-runtime-library/data-conversion.md)<br/>
-[Поддержка чисел с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
 [atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
 [_ecvt](ecvt.md)<br/>
 [_fcvt](fcvt.md)<br/>

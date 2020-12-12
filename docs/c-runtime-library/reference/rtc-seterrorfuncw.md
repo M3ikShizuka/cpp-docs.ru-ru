@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _RTC_SetErrorFuncW'
 title: _RTC_SetErrorFuncW
 ms.date: 11/04/2016
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - _RTC_SetErrorFuncW function
 - RTC_error_fnW typedef
 ms.assetid: b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a
-ms.openlocfilehash: 0d45e5c857e917ca23b62482c64a06314565226e
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: e1f92b791f986c7881f0c65a22c24432c03160e5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948964"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341429"
 ---
 # <a name="_rtc_seterrorfuncw"></a>_RTC_SetErrorFuncW
 
@@ -56,13 +57,13 @@ _RTC_error_fnW _RTC_SetErrorFuncW(
 
 Ранее определенная функция ERROR; или **значение NULL** , если ранее определенная функция отсутствует.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-В новом коде используйте только **_RTC_SetErrorFuncW**. **_RTC_SetErrorFunc** включается в библиотеку только для обеспечения обратной совместимости.
+В новом коде используйте только **_RTC_SetErrorFuncW**. **_RTC_SetErrorFunc** входит в библиотеку только для обеспечения обратной совместимости.
 
 Обратный вызов **_RTC_SetErrorFuncW** применяется только к компоненту, с которым он был связан, но не глобально.
 
-Убедитесь, что адрес, который вы передали в **_RTC_SetErrorFuncW** , является допустимой функцией обработки ошибок.
+Убедитесь, что адрес, который вы передали **_RTC_SetErrorFuncW** , является допустимой функцией обработки ошибок.
 
 Если ошибке был присвоен тип-1 с помощью [_RTC_SetErrorType](rtc-seterrortype.md), функция обработки ошибок не вызывается.
 
@@ -80,7 +81,7 @@ typedef int (__cdecl * _RTC_error_fnW)(
     ... );
 ```
 
-где:
+Где:
 
 *errorType*<br/>
 Тип ошибки, указанной [_RTC_SetErrorType](rtc-seterrortype.md).
@@ -88,10 +89,10 @@ typedef int (__cdecl * _RTC_error_fnW)(
 *filename*<br/>
 Исходный файл, где произошел сбой, или значение NULL, если информация об отладке недоступна.
 
-*linenumber*<br/>
+*LineNumber*<br/>
 Строка *filename* , где произошел сбой, или 0, если информация об отладке недоступна.
 
-*имя модуля*<br/>
+*moduleName*<br/>
 Библиотека DLL или имя исполняемого файла, где произошел сбой.
 
 *format*<br/>
@@ -111,7 +112,7 @@ typedef int (__cdecl * _RTC_error_fnW)(
 
 Все версии [библиотек времени выполнения языка C](../../c-runtime-library/crt-library-features.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [_CrtDbgReport, _CrtDbgReportW](crtdbgreport-crtdbgreportw.md)<br/>
 [Проверка ошибок во время выполнения](../../c-runtime-library/run-time-error-checking.md)<br/>

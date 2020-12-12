@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __crtLCMapStringW'
 title: __crtLCMapStringW
 ms.date: 11/04/2016
 api_name:
@@ -20,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - __crtLCMapStringW
 ms.assetid: 45b4ac0e-438c-4fa3-b4d1-34195f4467d9
-ms.openlocfilehash: f239d95c0dfd50f765b6f23d7874f01dce085054
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 57b3f7e961de94d8a3dbd045a1fa1d74681cbfdc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170999"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246767"
 ---
 # <a name="__crtlcmapstringw"></a>__crtLCMapStringW
 
@@ -73,7 +74,7 @@ int __crtLCMapStringW(
 
 Нулевое значение означает сбой. Чтобы получить расширенные сведения об ошибке, следует вызвать функцию `GetLastError` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Если значение `cchSrc` больше нуля и параметр `lpSrcStr` представляет собой строку, завершающуюся нуль-символом, то функция `__crtLCMapStringW` устанавливает для параметра `cchSrc` значение, равное длине строки. Затем функция `__crtLCMapStringW` вызывает версию для расширенных символов (Юникод) функции `LCMapString` с указанными параметрами. Дополнительные сведения о параметрах и значениях, возвращаемых этой функцией, см. в разделе о функции [LCMapString](/windows/win32/api/winnls/nf-winnls-lcmapstringw).
 

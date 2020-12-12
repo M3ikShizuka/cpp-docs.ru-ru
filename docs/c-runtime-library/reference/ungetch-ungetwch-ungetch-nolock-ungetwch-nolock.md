@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock'
 title: _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
 ms.date: 4/2/2020
 api_name:
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - ungetwch_nolock function
 - _ungetwch function
 ms.assetid: 70ae71c6-228c-4883-a57d-de6d5f873825
-ms.openlocfilehash: 2a7b3b2a71b633eac64ad5ebc5203d70f31626ed
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d7491f80f5c8a619d6382f5811c0ff2fccc00125
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909298"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341403"
 ---
 # <a name="_ungetch-_ungetwch-_ungetch_nolock-_ungetwch_nolock"></a>_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
 
@@ -84,14 +85,14 @@ wint_t _ungetwch_nolock(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Символ, который требуется поместить обратно.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Обе функции возвращают символ *c* в случае успеха. Если возникает ошибка, **_ungetch** возвращает значение **EOF** , а **_ungetwch** возвращает **WEOF**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эти функции отправляют символ *c* обратно в консоль, что приводит к тому, что *c* будет считаться следующим символом **_getch** или **_getche** (или **_getwch** или **_getwche**). **_ungetch** и **_ungetwch** завершаются ошибкой, если они вызываются более одного раза перед следующим чтением. Аргумент *c* не может быть **EOF** (или **WEOF**).
 

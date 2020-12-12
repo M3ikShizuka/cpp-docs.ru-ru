@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: объекты данных и источники данных (OLE)'
 title: Объекты и источники данных (OLE)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - OLE [MFC], data objects
 - OLE [MFC], data sources
 ms.assetid: 8f68eed8-0ce8-4489-a4cc-f95554f89090
-ms.openlocfilehash: dfe400dddfecce3e52337f7f449e975dff2ca83e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 719053e2a75b18fbf54440403351198acc66b9d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616223"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291211"
 ---
 # <a name="data-objects-and-data-sources-ole"></a>Объекты и источники данных (OLE)
 
@@ -27,11 +28,11 @@ ms.locfileid: "84616223"
 
 В следующих статьях объясняется, как использовать объекты данных и источники данных в приложениях. Эти сведения применяются как к контейнерным, так и к серверным приложениям, так как они могут быть вызваны для копирования и вставки данных.
 
-- [Объекты и источники данных. Создание и уничтожение](data-objects-and-data-sources-creation-and-destruction.md)
+- [Объекты данных и источники данных: создание и уничтожение](data-objects-and-data-sources-creation-and-destruction.md)
 
-- [Объекты и источники данных. Манипуляция](data-objects-and-data-sources-manipulation.md)
+- [Объекты данных и источники данных: манипуляции](data-objects-and-data-sources-manipulation.md)
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 
 [Перетаскивание](drag-and-drop-ole.md)
 

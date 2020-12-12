@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье об отправке карт
 title: Схемы подготовки к отправке
 ms.date: 06/20/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - dispatch maps [MFC]
 - dispatch map macros [MFC]
 ms.assetid: bef9d08b-ad35-4c3a-99d8-04150c7c04e2
-ms.openlocfilehash: 24921f2da404a2e5103d9a3cd2abba03109f0681
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3b160040af52e8346cbcbb09cc05c301f607052b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222814"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219971"
 ---
 # <a name="dispatch-maps"></a>Схемы подготовки к отправке
 
@@ -29,7 +30,7 @@ OLE Automation предоставляет способы вызова метод
 |[DISP_PROPERTY_PARAM](#disp_property_param)|Определяет свойство OLE Automation, которое принимает параметры и называет функции Get и Set.|
 |[DISP_DEFVALUE](#disp_defvalue)|Делает существующее свойство значением по умолчанию для объекта.|
 
-## <a name="declare_dispatch_map"></a><a name="declare_dispatch_map"></a>DECLARE_DISPATCH_MAP
+## <a name="declare_dispatch_map"></a><a name="declare_dispatch_map"></a> DECLARE_DISPATCH_MAP
 
 Если `CCmdTarget` класс, производный от, в программе поддерживает OLE-автоматизацию, этот класс должен предоставлять карту диспетчеризации для предоставления своих методов и свойств.
 
@@ -37,7 +38,7 @@ OLE Automation предоставляет способы вызова метод
 DECLARE_DISPATCH_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте макрос DECLARE_DISPATCH_MAP в конце объявления класса. Затем в. CPP файл, который определяет функции элементов для класса, используйте макрос BEGIN_DISPATCH_MAP. Затем включите записи макросов для каждого из предоставленных методов класса и свойств (DISP_FUNCTION, DISP_PROPERTY и т. д.). Наконец, используйте макрос END_DISPATCH_MAP.
 
@@ -54,7 +55,7 @@ DECLARE_DISPATCH_MAP()
 
 **Заголовок:** afxwin.h
 
-## <a name="begin_dispatch_map"></a><a name="begin_dispatch_map"></a>BEGIN_DISPATCH_MAP
+## <a name="begin_dispatch_map"></a><a name="begin_dispatch_map"></a> BEGIN_DISPATCH_MAP
 
 Объявляет определение схемы диспетчеризации.
 
@@ -70,7 +71,7 @@ BEGIN_DISPATCH_MAP(theClass, baseClass)
 *baseClass*<br/>
 Указывает имя базового класса для *секласс*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В файле реализации (. cpp), который определяет функции-члены для класса, запустите карту диспетчеризации с помощью макроса BEGIN_DISPATCH_MAP, добавьте записи макросов для каждой из функций и свойств диспетчеризации и завершите карту диспетчеризации с помощью макроса END_DISPATCH_MAP.
 
@@ -78,7 +79,7 @@ BEGIN_DISPATCH_MAP(theClass, baseClass)
 
 **Заголовок:** afxdisp.h
 
-## <a name="end_dispatch_map"></a><a name="end_dispatch_map"></a>END_DISPATCH_MAP
+## <a name="end_dispatch_map"></a><a name="end_dispatch_map"></a> END_DISPATCH_MAP
 
 Завершает определение схемы диспетчеризации.
 
@@ -86,7 +87,7 @@ BEGIN_DISPATCH_MAP(theClass, baseClass)
 END_DISPATCH_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Его необходимо использовать в сочетании с BEGIN_DISPATCH_MAP.
 
@@ -94,7 +95,7 @@ END_DISPATCH_MAP()
 
 **Заголовок:** afxdisp.h
 
-## <a name="disp_function"></a><a name="disp_function"></a>DISP_FUNCTION
+## <a name="disp_function"></a><a name="disp_function"></a> DISP_FUNCTION
 
 Определяет функцию OLE-автоматизации в сопоставлении диспетчеризации.
 
@@ -124,7 +125,7 @@ DISP_FUNCTION(
 *втспарамс*<br/>
 Список с разделителями-пробелами одной или нескольких констант, указывающих список параметров функции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Аргумент *втретвал* имеет тип VarType. Следующие возможные значения для этого аргумента взяты из `VARENUM` перечисления:
 
@@ -169,7 +170,7 @@ DISP_FUNCTION(
 |VTS_PI2|__short\*__|
 |VTS_PI4|__long\*__|
 |VTS_PR4|__сделать\*__|
-|VTS_PR8|__Дважды\*__|
+|VTS_PR8|__double\*__|
 |VTS_PCY|`CY*`|
 |VTS_PDATE|`DATE*`|
 |VTS_PBSTR|`BSTR*`|
@@ -184,7 +185,7 @@ DISP_FUNCTION(
 
 **Заголовок:** afxdisp.h
 
-## <a name="disp_property"></a><a name="disp_property"></a>DISP_PROPERTY
+## <a name="disp_property"></a><a name="disp_property"></a> DISP_PROPERTY
 
 Определяет свойство OLE-автоматизации в сопоставлении диспетчеризации.
 
@@ -210,7 +211,7 @@ DISP_PROPERTY(
 *втпроптипе*<br/>
 Значение типа, указывающее тип свойства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Аргумент *втпроптипе* имеет тип **VarType**. Возможные значения этого аргумента взяты из перечисления VARENUM:
 
@@ -235,7 +236,7 @@ DISP_PROPERTY(
 
 **Заголовок:** afxdisp.h
 
-## <a name="disp_property_ex"></a><a name="disp_property_ex"></a>DISP_PROPERTY_EX
+## <a name="disp_property_ex"></a><a name="disp_property_ex"></a> DISP_PROPERTY_EX
 
 Определяет свойство OLE-автоматизации и присваивает имя функциям, используемым для получения и задания значения свойства в сопоставлении диспетчеризации.
 
@@ -265,7 +266,7 @@ DISP_PROPERTY_EX(
 *втпроптипе*<br/>
 Значение типа, указывающее тип свойства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функции *мембержет* и *member* имеют сигнатуры, определяемые аргументом *втпроптипе* . Функция *мембержет* не принимает аргументы и возвращает значение типа, заданного параметром *втпроптипе*. Функция *набора элементов* принимает аргумент типа, указанного параметром *втпроптипе* , и не возвращает ничего.
 
@@ -275,7 +276,7 @@ DISP_PROPERTY_EX(
 
 **Заголовок:** afxdisp.h
 
-## <a name="disp_property_notify"></a><a name="disp_property_notify"></a>DISP_PROPERTY_NOTIFY
+## <a name="disp_property_notify"></a><a name="disp_property_notify"></a> DISP_PROPERTY_NOTIFY
 
 Определяет свойство OLE-автоматизации с уведомлением в сопоставлении диспетчеризации.
 
@@ -305,7 +306,7 @@ DISP_PROPERTY_NOTIFY(
 *втпроптипе*<br/>
 Значение типа, указывающее тип свойства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В отличие от свойств, определенных с помощью DISP_PROPERTY, свойство, определенное с помощью DISP_PROPERTY_NOTIFY, будет автоматически вызывать функцию, заданную функцией *пфнафтерсет* при изменении свойства.
 
@@ -330,7 +331,7 @@ DISP_PROPERTY_NOTIFY(
 
 **Заголовок:** afxdisp.h
 
-## <a name="disp_property_param"></a><a name="disp_property_param"></a>DISP_PROPERTY_PARAM
+## <a name="disp_property_param"></a><a name="disp_property_param"></a> DISP_PROPERTY_PARAM
 
 Определяет свойство, доступ к которому осуществляется с помощью отдельных `Get` `Set` функций-членов и.
 
@@ -364,7 +365,7 @@ DISP_PROPERTY_PARAM(
 *втспарамс*<br/>
 Строка `VTS_*` типов параметров типа Variant, разделенных пробелами, по одному для каждого параметра.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В отличие от макроса DISP_PROPERTY_EX, этот макрос позволяет указать список параметров для свойства. Это полезно для реализации индексированных или параметризованных свойств.
 
@@ -390,7 +391,7 @@ DISP_PROPERTY_PARAM(
 
 **Заголовок:** afxdisp.h
 
-## <a name="disp_defvalue"></a><a name="disp_defvalue"></a>DISP_DEFVALUE
+## <a name="disp_defvalue"></a><a name="disp_defvalue"></a> DISP_DEFVALUE
 
 Делает существующее свойство значением по умолчанию для объекта.
 
@@ -406,7 +407,7 @@ DISP_DEFVALUE(theClass, pszName)
 *pszName*<br/>
 Внешнее имя свойства, представляющего "значение" объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Использование значения по умолчанию может упростить программирование объекта автоматизации для Visual Basic приложений.
 

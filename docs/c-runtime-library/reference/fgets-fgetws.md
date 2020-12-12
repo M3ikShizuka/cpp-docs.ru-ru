@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: fgets, fgetws'
 title: fgets, fgetws
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - fgetws function
 - fgetts function
 ms.assetid: ad549bb5-df98-4ccd-a53f-95114e60c4fc
-ms.openlocfilehash: 5c1d63eea6561af6ab7f51c147c92e184d3d11f8
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 21c360f621ed19f076af129f618e80aa27102e86
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912069"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329299"
 ---
 # <a name="fgets-fgetws"></a>fgets, fgetws
 
@@ -78,11 +79,11 @@ wchar_t *fgetws(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **fgets** считывает строку из аргумента входного *потока* и сохраняет ее в *str*. **fgets** считывает символы из текущей позиции в потоке в, включая первый символ новой строки, в конец потока или до тех пор, пока количество считываемых символов не будет равно *numChars* -1, в зависимости от того, что происходит первым. Результат, сохраненный в *str* , добавляется с нулевым символом. Считываемый символ новой строки (если такой есть) включается в строку.
 
-**fgetws** — это версия **fgets**для расширенных символов.
+**fgetws** — это версия **fgets** для расширенных символов.
 
 **fgetws** считывает строку аргумента расширенных *символов в виде* строки многобайтовых символов или строки расширенных символов в зависимости от того, открыт ли *поток* в текстовом или двоичном режиме соответственно. Дополнительные сведения об использовании текстового и двоичного режима в Юникоде и многобайтовом потоковом вводе-выводе см. в разделах [Файловый ввод-вывод в текстовом и двоичном режиме](../../c-runtime-library/text-and-binary-mode-file-i-o.md) и [Ввод-вывод в поток в кодировке Юникод в текстовом и двоичном режиме](../../c-runtime-library/unicode-stream-i-o-in-text-and-binary-modes.md).
 

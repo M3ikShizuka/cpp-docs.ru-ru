@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: поддержка Юникода'
 title: Поддержка Юникода
 ms.date: 01/09/2018
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - character sets [C++], Unicode
 - localization [C++], character sets
 - Unicode [C++], installing support
-ms.openlocfilehash: 90c07874b61656a8bec0f9ef373f2ee8f339e994
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3226f488afc8d9899777ac0b717dd012fec2cc3d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215378"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335763"
 ---
 # <a name="support-for-unicode"></a>Поддержка Юникода
 
@@ -33,12 +34,12 @@ ms.locfileid: "87215378"
 |Непереносимый тип данных|Макрос, которым он заменяется|
 |-----------------------------|----------------------------|
 |**`char`**, **`wchar_t`**|`_TCHAR`|
-|**`char*`**, `LPSTR` (Тип данных Win32),`LPWSTR`|`LPTSTR`|
-|`const char*`, `LPCSTR` (Тип данных Win32),`LPCWSTR`|`LPCTSTR`|
+|**`char*`**, `LPSTR` (Тип данных Win32), `LPWSTR`|`LPTSTR`|
+|`const char*`, `LPCSTR` (Тип данных Win32), `LPCWSTR`|`LPCTSTR`|
 
 Класс `CString` использует `_TCHAR` в качестве базового и предоставляет конструкторы и операторы для простоты преобразований. Большинство операций со строками Юникода может быть написано с помощью средств, которые используются для обработки кодировки Windows ANSI. Единственным отличием является то, что основной единицей операции является шестнадцатибитный символ, а не восьмибитный. В отличие от многобайтовых кодировок нет необходимости (и не следует) обрабатывать символы Юникода как два отдельных байта. Однако необходимо иметь дело с возможностью использования одного символа, представленного суррогатной парой расширенных символов. Как правило, не следует писать код, который предполагает, что длина строки совпадает с количеством символов, будь то узкие или широкие, которые она содержит.
 
-## <a name="what-do-you-want-to-do"></a>Выбор действия
+## <a name="what-do-you-want-to-do"></a>Выберите действие
 
 - [Использовать Юникод и поддержку многобайтовой кодировки (MBCS) в MFC](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _get_daylight'
 title: _get_daylight
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - daylight saving time offset
 - _get_daylight function
 ms.assetid: f85a6ba3-e187-4ca7-aed7-ffc694c8ac4c
-ms.openlocfilehash: 226242c5dd6c3c204d2449bd14ee7dee4f5fe7b5
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: dcb4ffb80ea79d89cad84617d4c8e4dceb1735c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919400"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341481"
 ---
 # <a name="_get_daylight"></a>_get_daylight
 
@@ -57,7 +58,7 @@ error_t _get_daylight( int* hours );
 
 Нуль в случае успеха или **значение** пересчета при возникновении ошибки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_get_daylight** извлекает количество часов в летнем времени в виде целого числа. Если действует переход на зимнее время, смещение по умолчанию составляет один час (хотя в некоторых регионах может применяться смещение на два часа).
 
@@ -78,7 +79,7 @@ error_t _get_daylight( int* hours );
 ## <a name="see-also"></a>См. также раздел
 
 [Операции управления временем](../../c-runtime-library/time-management.md)<br/>
-[errno, _doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>
+[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>
 [_get_dstbias](get-dstbias.md)<br/>
 [_get_timezone](get-timezone.md)<br/>
 [_get_tzname](get-tzname.md)<br/>
