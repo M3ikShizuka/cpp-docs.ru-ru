@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения:. Txt в качестве входных файлов компоновщика
 title: TXT-файлы в качестве входных файлов компоновщика
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - text files, linker input
 - txt files, linker input
 ms.assetid: 220b5a59-8b78-43f6-a8c3-f3134ccddf9e
-ms.openlocfilehash: 900faec3ed875b1c048a2068086e9eecce6b6a37
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 00e789849e4292208b04455ea90be398668d46c7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62293333"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201135"
 ---
 # <a name="txt-files-as-linker-input"></a>TXT-файлы в качестве входных файлов компоновщика
 
-ССЫЛКА ожидает различных текстовых файлов в качестве дополнительных входных данных. [Командный файл](linking.md) описатель (**\@**) и [базовый адрес](base-base-address.md) (/ BASE), [/DEF](def-specify-module-definition-file.md), и [/Order](order-put-functions-in-order.md) всех параметров укажите текстовых файлов. Эти файлы могут иметь любое разрешение, не только файлами .txt.
+Для ссылки требуются различные текстовые файлы в качестве дополнительных входных данных. Спецификаторы [командного файла](linking.md) ( **\@** ) и [базовый адрес](base-base-address.md) (/Base), [/DEF](def-specify-module-definition-file.md)и параметр [/Order](order-put-functions-in-order.md) задают текстовые файлы. Эти файлы могут иметь любое расширение, а не только TXT.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Входные LINK-файлы](link-input-files.md)<br/>
+[Входные файлы ссылок](link-input-files.md)<br/>
 [Параметры компоновщика MSVC](linker-options.md)

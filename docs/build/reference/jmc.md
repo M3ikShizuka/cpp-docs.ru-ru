@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/ЖМК (Отладка Только мой код)
 title: /JMC (отладка "Только мой код")
 ms.date: 08/20/2018
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - -JMC compiler option [C++]
 - User code, debugging
 - JMC compiler option [C++]
-ms.openlocfilehash: 7b22a754f9f49564cd7f76c7d1989cd562f70874
-ms.sourcegitcommit: 31a443c9998cf5cfbaff00fcf815b133f55b2426
+ms.openlocfilehash: 03a4cbc9bb9a992f2ed53e4f1239532923b32d0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "86373883"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199692"
 ---
 # <a name="jmc-just-my-code-debugging"></a>/JMC (отладка "Только мой код")
 
@@ -24,7 +25,7 @@ ms.locfileid: "86373883"
 
 > **/Жмк** \[ **-** ]
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Параметры [только мой код](/visualstudio/debugger/just-my-code) Visual Studio указывают, будут ли отладчики Visual Studio пошаговыми методами системы, платформ, библиотек и других вызовов, не являющихся пользователями. Параметр компилятора **/жмк** обеспечивает поддержку отладки только мой код в собственном коде C++. Когда **/жмк** включен, компилятор вставляет вызовы в вспомогательную функцию, `__CheckForDebuggerJustMyCode` в прологе функции. Вспомогательная функция предоставляет обработчики, поддерживающие отладчик Visual Studio Только мой код пошаговые операции. Чтобы включить только мой код в отладчике Visual Studio, в строке меню выберите **Сервис**  >  **Параметры**, а затем установите параметр **Отладка**  >  **Общие**  >  **Включение только мой код**.
 
@@ -49,4 +50,4 @@ ms.locfileid: "86373883"
 ## <a name="see-also"></a>См. также раздел
 
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)<br/>
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)<br/>

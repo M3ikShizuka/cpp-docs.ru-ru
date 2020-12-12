@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье обработка и сопоставление сообщений.
 title: Обработка и сопоставление сообщений
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - message handling [MFC]
 - message maps [MFC]
 ms.assetid: 62fe2a1b-944c-449d-a0f0-63c11ee0a3cb
-ms.openlocfilehash: a27f8220055630873b02dd7ff975c04744ad9e8e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 50a55f4718b47054690325e882177fa9acad2f46
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622407"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203202"
 ---
 # <a name="message-handling-and-mapping"></a>Обработка и сопоставление сообщений
 
@@ -31,7 +32,7 @@ WM_COMMAND сообщения, обычно создаваемые меню, к�
 
 - [Вызов обработчика сообщений платформой](how-the-framework-calls-a-handler.md)
 
-- [Выполнение платформой поиска по схемам сообщений](how-the-framework-searches-message-maps.md)
+- [Поиск в картах сообщений в инфраструктуре](how-the-framework-searches-message-maps.md)
 
 - [Объявление функций обработчика сообщений](declaring-message-handler-functions.md)
 
@@ -41,11 +42,11 @@ WM_COMMAND сообщения, обычно создаваемые меню, к�
 
 - [Динамическое обновление объектов пользовательского интерфейса](how-to-update-user-interface-objects.md)
 
-- [Практическое руководство. Создание виртуальной схемы сообщений для класса шаблона](how-to-create-a-message-map-for-a-template-class.md)
+- [Как создать схему сообщений для класса шаблона](how-to-create-a-message-map-for-a-template-class.md)
 
 ## <a name="see-also"></a>См. также раздел
 
-[Концепции](mfc-concepts.md)<br/>
+[Основные понятия](mfc-concepts.md)<br/>
 [Общие разделы по MFC](general-mfc-topics.md)<br/>
 [CWnd, класс](reference/cwnd-class.md)<br/>
 [Класс от CCmdTarget](reference/ccmdtarget-class.md)

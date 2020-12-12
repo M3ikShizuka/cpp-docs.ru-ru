@@ -1,22 +1,23 @@
 ---
+description: Дополнительные сведения:. Файлы exe в качестве входных файлов компоновщика
 title: EXE-файлы в качестве входных файлов компоновщика
 ms.date: 11/04/2016
 helpviewer_keywords:
 - executable files, as linker output
 - .exe files
 ms.assetid: 73714c30-6f03-4e72-881e-090e5240ba93
-ms.openlocfilehash: 855847067fb726816a1b23ac8e54afc0b9d7927f
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: e9ed95ce14eabfef445c0ddcb0994cfa5311f658
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342831"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201278"
 ---
 # <a name="exe-files-as-linker-input"></a>EXE-файлы в качестве входных файлов компоновщика
 
-[Имя файла заглушки MS-DOS](stub-ms-dos-stub-file-name.md) (/ STUB) параметр задает имя файла .exe, который выполняется с помощью MS-DOS. LINK проверяет указанный файл, чтобы убедиться, что это допустимый программа MS-DOS.
+Параметр [имя файла заглушки MS-DOS](stub-ms-dos-stub-file-name.md) (/stub прилагает) задает имя EXE-файла, работающего с MS-DOS. LINK проверяет указанный файл на наличие допустимой программы MS-DOS.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Входные LINK-файлы](link-input-files.md)<br/>
+[Входные файлы ссылок](link-input-files.md)<br/>
 [Параметры компоновщика MSVC](linker-options.md)

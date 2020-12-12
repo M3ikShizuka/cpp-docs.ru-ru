@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: отправка и получение сообщений'
 title: Отправка и получение сообщений
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - MFC, messages
 - messages [MFC], sending
 ms.assetid: 9ce189cb-b259-4c3b-b6f2-9cfbed18b98b
-ms.openlocfilehash: 4da2fce68c1b6fd3827bc8b5d2a40dea5e5f117c
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 3a61346c51ce035f6fd5a53b8c329ef81154b089
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626176"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203215"
 ---
 # <a name="message-sending-and-receiving"></a>Отправка и получение сообщений
 
@@ -34,4 +35,4 @@ ms.locfileid: "84626176"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Вызовы обработчика со стороны платформы](how-the-framework-calls-a-handler.md)
+[Как платформа вызывает обработчик](how-the-framework-calls-a-handler.md)

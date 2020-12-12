@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/DELAYSIGN (частичное подписание сборки)
 title: /DELAYSIGN (частичное подписание сборки)
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - DELAYSIGN linker option
 - -DELAYSIGN linker option
 ms.assetid: 15244d30-3ecb-492f-a408-ffe81f38de20
-ms.openlocfilehash: 65585b856627ad9fda5a8f8bfad6ad81fef0f81c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 40eeaef958b6a188fd4739fcdc0f5ef5123b220a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62293840"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201486"
 ---
 # <a name="delaysign-partially-sign-an-assembly"></a>/DELAYSIGN (частичное подписание сборки)
 
@@ -24,22 +25,22 @@ ms.locfileid: "62293840"
 
 ## <a name="arguments"></a>Аргументы
 
-**НЕТ**<br/>
-Указывает, что сборка должна быть не подписана частично.
+**NO**<br/>
+Указывает, что сборка не должна быть частично подписана.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Используйте **/delaysign** Если требуется только поместить открытый ключ в сборку. По умолчанию используется **/DELAYSIGN:NO**.
+Используйте параметр **/delaysign** , если хотите поместить только открытый ключ в сборку. Значение по умолчанию — **/delaysign: No**.
 
-**/Delaysign** никак не действует, за исключением применения с [/keyfile](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md) или [/keycontainer](keycontainer-specify-a-key-container-to-sign-an-assembly.md).
+Параметр **/delaysign** не действует, если не используется с [/keyfile](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md) или [/keycontainer](keycontainer-specify-a-key-container-to-sign-an-assembly.md).
 
-При запросе полностью подписанной сборки компилятор хэширует файл, содержащий манифест (метаданные сборки), и подписывает хэш закрытым ключом. Итоговая цифровая подпись хранится в файле, содержащем манифест. При отложенной подписи сборки, компоновщик не вычисляет и не сохраняет подпись, а резервирует место в файле для последующего добавления подписи.
+При запросе полностью подписанной сборки компилятор хэширует файл, содержащий манифест (метаданные сборки), и подписывает хэш закрытым ключом. Итоговая цифровая подпись хранится в файле, содержащем манифест. Если сборка имеет отложенную подпись, компоновщик не выполняет вычисление и сохранение подписи, но резервирует место в файле, чтобы подпись можно было добавить позже.
 
-Например, с помощью **/delaysign** чтобы поместить сборку в глобальный кэш. После тестирования можно полностью подписать сборку, поместив закрытый ключ в сборку.
+Например, использование **/delaysign** позволяет инженеру-тестировщику разместить сборку в глобальном кэше. После тестирования можно полностью подписать сборку, поместив закрытый ключ в сборку.
 
-См. в разделе [сборки со строгими именами (подписывание сборок) (C++выполняет)](../../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md) и [отложенная подпись сборки](/dotnet/framework/app-domains/delay-sign-assembly) Дополнительные сведения о подписи сборки.
+Дополнительные сведения о подписывании сборки см. в разделе [сборки со строгими именами (подписывание сборок) (C++/CLI](../../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md) ) и [Отложенная подпись сборки](/dotnet/framework/app-domains/delay-sign-assembly) .
 
-Доступны следующие параметры компоновщика, которые влияют на создание сборки.
+Другие параметры компоновщика, влияющие на создание сборки:
 
 - [/ASSEMBLYDEBUG](assemblydebug-add-debuggableattribute.md)
 
@@ -53,19 +54,19 @@ ms.locfileid: "62293840"
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Задание данного параметра компоновщика в среде разработки Visual Studio
 
-1. Откройте диалоговое окно **Страницы свойств** проекта. Дополнительные сведения см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
-1. Нажмите кнопку **компоновщика** папки.
+1. Выберите папку **компоновщика**.
 
 1. Выберите страницу свойств **Командная строка** .
 
-1. Введите параметр в **Дополнительные параметры** поле.
+1. Введите параметр в поле **Дополнительные параметры** .
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Задание данного параметра компоновщика программным способом
 
 - См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по компоновщику MSVC](linking.md)<br/>
 [Параметры компоновщика MSVC](linker-options.md)

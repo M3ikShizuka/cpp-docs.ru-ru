@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: правила вывода'
 title: Правила вывода
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - rules, inference
 - NMAKE program, inference rules
 ms.assetid: caff320f-fb07-4eea-80c3-a6a2133a8492
-ms.openlocfilehash: d3d7ca41d96d3845237b445edefff05044dacdc2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: fc063f71ff88442ce6f7fc02c5b22f015ce0010c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170518"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199757"
 ---
 # <a name="inference-rules"></a>Правила вывода
 
@@ -25,12 +26,12 @@ ms.locfileid: "80170518"
 
 [Правила пакетного режима](batch-mode-rules.md)
 
-[Предопределенные правила](predefined-rules.md)
+[Предварительно определенные правила](predefined-rules.md)
 
 [Выводимые зависимости и правила](inferred-dependents-and-rules.md)
 
-[Приоритет в правилах вывода](precedence-in-inference-rules.md)
+[Приоритет правил зависимости](precedence-in-inference-rules.md)
 
 ## <a name="see-also"></a>См. также раздел
 
-[Справочник по программе NMAKE](nmake-reference.md)
+[Справочник по NMAKE](nmake-reference.md)

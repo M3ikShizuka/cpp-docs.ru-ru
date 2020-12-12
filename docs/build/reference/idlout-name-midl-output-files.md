@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/IDLOUT (Name MIDL Output files)
 title: /IDLOUT (присвоение имен выходным файлам MIDL)
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - -IDLOUT linker option
 - IDLOUT linker option
 ms.assetid: 10d00a6a-85b4-4de1-8732-e422c6931509
-ms.openlocfilehash: 8dc26a0564a979c918d1eb1eb85e63e9c73caba0
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 9835721d3e9b376feca51d87d375efa79dc43df7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506924"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199848"
 ---
 # <a name="idlout-name-midl-output-files"></a>/IDLOUT (присвоение имен выходным файлам MIDL)
 
@@ -34,7 +35,7 @@ ms.locfileid: "91506924"
 *filename*<br/>
 Указывает имя IDL-файла, созданного компилятором MIDL. Расширение файла не предполагается. Укажите *filename*. idl, если требуется расширение IDL.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Параметр/IDLOUT задает имя и расширение IDL-файла.
 
@@ -44,9 +45,9 @@ ms.locfileid: "91506924"
 
 - *filename*. tlb
 
-- *имя файла*_p. c
+- *имя файла* _p. c
 
-- *имя файла*_i. c
+- *имя файла* _i. c
 
 - *filename*. h
 

@@ -1,21 +1,22 @@
 ---
+description: 'Подробнее: общие рекомендации в среда выполнения с параллелизмом'
 title: Общие рекомендации в среде выполнения с параллелизмом
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Concurrency Runtime, general best practices
 ms.assetid: ce5c784c-051e-44a6-be84-8b3e1139c18b
-ms.openlocfilehash: 77ca8acbd3dedc28aaa6c330c3e91ed09046d162
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a0de8d9a0070bfc0691aeb9484c755cbfcbb40b1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228457"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197430"
 ---
 # <a name="general-best-practices-in-the-concurrency-runtime"></a>Общие рекомендации в среде выполнения с параллелизмом
 
 В этом документе описываются рекомендации, применяемые к нескольким областям среда выполнения с параллелизмом.
 
-## <a name="sections"></a><a name="top"></a>Священ
+## <a name="sections"></a><a name="top"></a> Священ
 
 Этот документ содержит следующие разделы.
 
@@ -33,13 +34,13 @@ ms.locfileid: "87228457"
 
 - [Не используйте объекты параллелизма в общих сегментах данных](#shared-data)
 
-## <a name="use-cooperative-synchronization-constructs-when-possible"></a><a name="synchronization"></a>Использовать конструкции совместной синхронизации по возможности
+## <a name="use-cooperative-synchronization-constructs-when-possible"></a><a name="synchronization"></a> Использовать конструкции совместной синхронизации по возможности
 
 Среда выполнения с параллелизмом предоставляет множество одновременных конструкций, не требующих внешнего объекта синхронизации. Например, класс [Concurrency:: concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) предоставляет одновременные операции добавления и доступа к элементам. В данном случае, безопасность с параллелизмом означает, что указатели или итераторы всегда действительны. Не гарантируется инициализация элементов или определенный порядок обхода. Однако в случаях, когда требуется эксклюзивный доступ к ресурсу, среда выполнения предоставляет классы [Concurrency:: critical_section](../../parallel/concrt/reference/critical-section-class.md), [concurrency:: reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md)и [Concurrency:: Event](../../parallel/concrt/reference/event-class.md) . Эти типы работают совместно. Таким образом, планировщик заданий может перераспределить ресурсы обработки в другой контекст, так как первая задача ожидает данные. По возможности используйте эти типы синхронизации вместо других механизмов синхронизации, например, предоставляемых Windows API, которые не работают совместно. Дополнительные сведения об этих типах синхронизации и пример кода см. в разделе [структуры данных синхронизации](../../parallel/concrt/synchronization-data-structures.md) и [Сравнение структур данных синхронизации с API Windows](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md).
 
 [[Top](#top)]
 
-## <a name="avoid-lengthy-tasks-that-do-not-yield"></a><a name="yield"></a>Избегайте длительных задач, которые не дают
+## <a name="avoid-lengthy-tasks-that-do-not-yield"></a><a name="yield"></a> Избегайте длительных задач, которые не дают
 
 Поскольку планировщик заданий работает совместно, он не обеспечивает равноправие между задачами. Таким образом, задача может препятствовать запуску других задач. Хотя это приемлемо в некоторых случаях, в других случаях это может вызвать взаимоблокировку или нехватку ресурсов.
 
@@ -74,7 +75,7 @@ ms.locfileid: "87228457"
 
 [[Top](#top)]
 
-## <a name="use-oversubscription-to-offset-operations-that-block-or-have-high-latency"></a><a name="oversubscription"></a>Использование превышения лимита подписки для сдвига операций, которые блокируют или имеют высокую задержку
+## <a name="use-oversubscription-to-offset-operations-that-block-or-have-high-latency"></a><a name="oversubscription"></a> Использование превышения лимита подписки для сдвига операций, которые блокируют или имеют высокую задержку
 
 Среда выполнения с параллелизмом предоставляет примитивы синхронизации, такие как [Concurrency:: critical_section](../../parallel/concrt/reference/critical-section-class.md), которые позволяют задачам совместно блокироваться и возвращать друг другу. Когда одна задача совместно блокирует или выдает, планировщик задач может перераспределить ресурсы обработки в другой контекст, так как первая задача ожидает данные.
 
@@ -88,7 +89,7 @@ ms.locfileid: "87228457"
 
 [[Top](#top)]
 
-## <a name="use-concurrent-memory-management-functions-when-possible"></a><a name="memory"></a>Используйте функции параллельного управления памятью, когда это возможно
+## <a name="use-concurrent-memory-management-functions-when-possible"></a><a name="memory"></a> Используйте функции параллельного управления памятью, когда это возможно
 
 Используйте функции управления памятью [Concurrency:: Alloc](reference/concurrency-namespace-functions.md#alloc) и [Concurrency:: Free](reference/concurrency-namespace-functions.md#free), если у вас есть детализированные задачи, которые часто распределяют небольшие объекты с относительно коротким временем существования. Среда выполнения с параллелизмом содержит отдельный кэш памяти для каждого выполняющегося потока. `Alloc`Функции и `Free` выделяют и освобождают память из этих кэшей без использования блокировок или барьеров памяти.
 
@@ -96,7 +97,7 @@ ms.locfileid: "87228457"
 
 [[Top](#top)]
 
-## <a name="use-raii-to-manage-the-lifetime-of-concurrency-objects"></a><a name="raii"></a>Используйте RAII для управления временем существования объектов параллелизма
+## <a name="use-raii-to-manage-the-lifetime-of-concurrency-objects"></a><a name="raii"></a> Используйте RAII для управления временем существования объектов параллелизма
 
 Среда выполнения с параллелизмом использует обработку исключений для реализации таких функций, как отмена. Поэтому при вызове среды выполнения или вызове другой библиотеки, которая вызывается в среде выполнения, следует писать код, защищенный с помощью исключений.
 
@@ -124,11 +125,11 @@ Error details:
     negative balance: -76
 ```
 
-Дополнительные примеры использования шаблона RAII для управления временем существования объектов параллелизма см. в разделе [Пошаговое руководство. Удаление работы из потока пользовательского интерфейса](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md), [Практическое руководство. Использование класса Context для реализации параллельного семафора](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)и [Практическое руководство. Использование превышения лимита подписки для смещения задержки](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md).
+Дополнительные примеры использования шаблона RAII для управления временем существования объектов параллелизма см. в разделе [Пошаговое руководство. Удаление работы из User-Interface потока](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md), [Практическое руководство. Использование класса Context для реализации параллельного семафора](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)и [Практическое руководство. Использование превышения лимита подписки для смещения задержки](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md).
 
 [[Top](#top)]
 
-## <a name="do-not-create-concurrency-objects-at-global-scope"></a><a name="global-scope"></a>Не создавать объекты параллелизма в глобальной области
+## <a name="do-not-create-concurrency-objects-at-global-scope"></a><a name="global-scope"></a> Не создавать объекты параллелизма в глобальной области
 
 При создании объекта параллелизма в глобальной области в приложении могут возникнуть такие проблемы, как взаимоблокировка или нарушение прав доступа к памяти.
 
@@ -142,23 +143,23 @@ Error details:
 
 [[Top](#top)]
 
-## <a name="do-not-use-concurrency-objects-in-shared-data-segments"></a><a name="shared-data"></a>Не используйте объекты параллелизма в общих сегментах данных
+## <a name="do-not-use-concurrency-objects-in-shared-data-segments"></a><a name="shared-data"></a> Не используйте объекты параллелизма в общих сегментах данных
 
-Среда выполнения с параллелизмом не поддерживает использование объектов параллелизма в разделе общих данных, например раздел данных, созданный [data_seg](../../preprocessor/data-seg.md) `#pragma` директивой data_seg. Объект параллелизма, совместно используемый в границах процесса, может перевести среду выполнения в несогласованное или недопустимое состояние.
+Среда выполнения с параллелизмом не поддерживает использование объектов параллелизма в разделе общих данных, например раздел данных, созданный [](../../preprocessor/data-seg.md) `#pragma` директивой data_seg. Объект параллелизма, совместно используемый в границах процесса, может перевести среду выполнения в несогласованное или недопустимое состояние.
 
 [[Top](#top)]
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Рекомендации по среда выполнения с параллелизмом](../../parallel/concrt/concurrency-runtime-best-practices.md)<br/>
 [Библиотека параллельных шаблонов](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>
 [библиотеку асинхронных агентов](../../parallel/concrt/asynchronous-agents-library.md)<br/>
-[планировщик задач](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
+[Планировщик заданий](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Структуры данных синхронизации](../../parallel/concrt/synchronization-data-structures.md)<br/>
 [Сравнение структур данных синхронизации с API Windows](../../parallel/concrt/comparing-synchronization-data-structures-to-the-windows-api.md)<br/>
 [Как использовать Alloc и Free для повышения производительности памяти](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)<br/>
 [Как использовать превышение лимита подписки для смещения задержки](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md)<br/>
 [Как использовать класс контекста для реализации параллельного семафора](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)<br/>
-[Пошаговое руководство. Удаление работы из потока пользовательского интерфейса](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)<br/>
+[Пошаговое руководство. Удаление работы из потока User-Interface](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)<br/>
 [Рекомендации в библиотеке параллельных шаблонов](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md)<br/>
 [Рекомендации в библиотеке асинхронных агентов](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)

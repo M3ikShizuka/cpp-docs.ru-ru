@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: элементы управления ActiveX в MFC: Расширенная реализация свойств'
 title: Элементы управления ActiveX в MFC. Реализация расширенных свойств
 ms.date: 09/12/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - properties [MFC], ActiveX controls
 - MFC ActiveX controls [MFC], properties
 ms.assetid: ec2e6759-5a8e-41d8-a275-99af8ff6f32e
-ms.openlocfilehash: 017959c5809d324af6ab13247fd093a6df280dab
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3cdd4353348d4c233b71dd25d2950adaac2ef06f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502200"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202838"
 ---
 # <a name="mfc-activex-controls-advanced-property-implementation"></a>Элементы управления ActiveX в MFC. Реализация расширенных свойств
 
@@ -24,7 +25,7 @@ ms.locfileid: "91502200"
 
 - [Возвращение кодов ошибок из свойства](#_core_returning_error_codes_from_a_property)
 
-## <a name="read-only-and-write-only-properties"></a><a name="_core_read2donly_and_write2donly_properties"></a> Свойства только для чтения и только для записи
+## <a name="read-only-and-write-only-properties"></a><a name="_core_read2donly_and_write2donly_properties"></a> Свойства Read-Only и Write-Only
 
 Мастер добавления свойств предоставляет быстрый и простой способ реализации свойств элемента управления только для чтения или только для записи.
 
@@ -42,7 +43,7 @@ ms.locfileid: "91502200"
 
 1. В поле **имя свойства** введите имя свойства.
 
-1. В поле **Тип реализации**выберите **Методы Get/Set**.
+1. В поле **Тип реализации** выберите **Методы Get/Set**.
 
 1. В поле **тип свойства** выберите правильный тип для свойства.
 
@@ -71,7 +72,7 @@ ms.locfileid: "91502200"
 
 Дополнительные сведения о сообщениях об исключениях в других областях кода см. в разделах [COleControl:: фириррор](reference/colecontrol-class.md#fireerror) и [Обработка ошибок в элементе управления ActiveX](mfc-activex-controls-advanced-topics.md) статьи элементы управления ActiveX: дополнительные разделы.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Элементы управления ActiveX в MFC](mfc-activex-controls.md)<br/>
 [Элементы управления ActiveX в MFC: свойства](mfc-activex-controls-properties.md)<br/>

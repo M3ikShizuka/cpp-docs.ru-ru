@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/MANIFESTDEPENDENCY (указание зависимостей манифеста)
 title: /MANIFESTDEPENDENCY (Указать зависимости манифеста)
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /MANIFESTDEPENDENCY linker option
 - -MANIFESTDEPENDENCY linker option
 ms.assetid: e4b68313-33a2-4c3e-908e-ac2b9f7d6a73
-ms.openlocfilehash: 43239efe70cc555d1a7e03c5d67e99e40ccd480e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 129dc84818b0bda9b2106c0d07dca5b605dc6f96
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492709"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199171"
 ---
 # <a name="manifestdependency-specify-manifest-dependencies"></a>/MANIFESTDEPENDENCY (Указать зависимости манифеста)
 
@@ -21,13 +22,13 @@ ms.locfileid: "69492709"
 /MANIFESTDEPENDENCY:manifest_dependency
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-/MANIFESTDEPENDENCY позволяет указать атрибуты, которые будут помещены в \<раздел > зависимостей файла манифеста.
+/MANIFESTDEPENDENCY позволяет указать атрибуты, которые будут помещены в \<dependency> раздел файла манифеста.
 
 Сведения о создании файла манифеста см. в разделе [/manifest (создание манифеста параллельной сборки)](manifest-create-side-by-side-assembly-manifest.md) .
 
-Дополнительные сведения \<о > зависимостей в файле манифеста см. в разделе [файлы конфигурации издателя](/windows/win32/SbsCs/publisher-configuration-files).
+Дополнительные сведения о \<dependency> разделах файла манифеста см. в разделе [файлы конфигурации издателя](/windows/win32/SbsCs/publisher-configuration-files).
 
 Сведения о/MANIFESTDEPENDENCY могут передаваться компоновщику одним из двух способов:
 
@@ -63,7 +64,7 @@ ms.locfileid: "69492709"
 
 1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
-1. Откройте страницу свойств**файл манифеста** **компоновщика** >  **свойств** > конфигурации.
+1. Откройте   >    >  страницу свойств **файл манифеста** компоновщика свойств конфигурации.
 
 1. Измените свойство **Дополнительные зависимости манифеста** .
 
@@ -71,7 +72,7 @@ ms.locfileid: "69492709"
 
 1. См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalManifestDependencies%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по компоновщику MSVC](linking.md)<br/>
 [Параметры компоновщика MSVC](linker-options.md)

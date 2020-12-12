@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье как указать конкретные политики планировщика.
 title: Практическое руководство. Задание определенных политик планировщика
 ms.date: 11/04/2016
 helpviewer_keywords:
 - specifying scheduler policies [Concurrency Runtime]
 - scheduler policies, specifying [Concurrency Runtime]
 ms.assetid: 9c5149f9-ac34-4ff3-9e79-0bad103e4e6b
-ms.openlocfilehash: bd5edfbdf6b0fda9c7e327dab9538bbf6b5e4b12
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: c4aeeea04d69613ef3eb80f36863b16530e18e37
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142452"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197261"
 ---
 # <a name="how-to-specify-specific-scheduler-policies"></a>Практическое руководство. Задание определенных политик планировщика
 
@@ -45,12 +46,12 @@ Scheduler that has a custom policy:
 
 ## <a name="compiling-the-code"></a>Компиляция кода
 
-Скопируйте пример кода и вставьте его в проект Visual Studio или вставьте в файл с именем `scheduler-policy.cpp`, а затем выполните следующую команду в окне командной строки Visual Studio.
+Скопируйте пример кода и вставьте его в проект Visual Studio или вставьте в файл с именем, `scheduler-policy.cpp` а затем выполните следующую команду в окне командной строки Visual Studio.
 
-> **CL. exe/EHsc счедулер-Полици. cpp**
+> **cl.exe/EHsc счедулер-Полици. cpp**
 
 ## <a name="see-also"></a>См. также раздел
 
 [Политики планировщика](../../parallel/concrt/scheduler-policies.md)<br/>
-[Практическое руководство. Управление экземпляром планировщика](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)<br/>
-[Практическое руководство. Создание агентов, использующих определенные политики планировщика](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md)
+[Руководство. Управление экземпляром планировщика](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)<br/>
+[Как создавать агенты, использующие определенные политики планировщика](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md)
