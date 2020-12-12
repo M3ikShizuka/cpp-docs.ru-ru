@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее: Общие сведения о константах'
 title: Совместное использование констант
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - _SH_DENYNO constant
 - SH_COMPAT constant
 ms.assetid: 95fadc3a-55dc-473d-98b5-e8211900465d
-ms.openlocfilehash: dc27b3af0d430aedb8159b4591004f46d197ccd5
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 7cda55d16a9b59c30e9fdbce47c565552839e792
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751548"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176175"
 ---
 # <a name="sharing-constants"></a>Совместное использование констант
 
@@ -37,7 +38,7 @@ ms.locfileid: "57751548"
 #include <share.h>
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Аргумент *shflag* определяет режим общего доступа и состоит из одной или нескольких констант манифеста. Их можно использовать в сочетании с аргументами *oflag* (см. [Константы файлов](../c-runtime-library/file-constants.md)).
 
@@ -51,7 +52,7 @@ ms.locfileid: "57751548"
 |`_SH_DENYNO`|Разрешает доступ для чтения и записи|
 |`_SH_SECURE`|Устанавливает безопасный режим (совместный доступ для чтения, монопольный доступ для записи)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md)<br/>
 [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md)<br/>

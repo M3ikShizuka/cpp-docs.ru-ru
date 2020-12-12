@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Context-Sensitive ключевые слова (C++/CLI и C++/CX)'
 title: Контекстно-зависимые ключевые слова (C++/CLI и C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - context-sensitive keywords
 ms.assetid: e33da089-f434-44e9-8cce-4668d05a8939
-ms.openlocfilehash: 82bf4c3f0deed788b7b1e50f1d8d82e63dc27f6f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7c005b1a6149f010b9729db5459fa3951bc50521
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219746"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176864"
 ---
 # <a name="context-sensitive-keywords--ccli-and-ccx"></a>Контекстно-зависимые ключевые слова (C++/CLI и C++/CX)
 
@@ -20,7 +21,7 @@ ms.locfileid: "87219746"
 
 ## <a name="all-runtimes"></a>Все среды выполнения
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Ниже приведен список контекстно-зависимых ключевых слов:
 
@@ -38,7 +39,7 @@ ms.locfileid: "87219746"
 
 - `internal`
 
-- [литерал](literal-cpp-component-extensions.md)
+- [literal](literal-cpp-component-extensions.md)
 
 - [override](override-cpp-component-extensions.md)
 
@@ -52,7 +53,7 @@ ms.locfileid: "87219746"
 
 ## <a name="windows-runtime"></a>Среда выполнения Windows
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 (Отсутствуют комментарии для данной возможности в рамках этой платформы).
 
@@ -62,7 +63,7 @@ ms.locfileid: "87219746"
 
 ## <a name="common-language-runtime"></a>Среда CLR
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 (Отсутствуют комментарии для данной возможности в рамках этой платформы).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о классе Platform:: COMException'
 title: Класс Platform::COMException
 ms.date: 12/30/2016
 ms.topic: reference
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::COMException Class
 ms.assetid: 44fda4e5-574f-4d12-ab5f-4ff3f277448d
-ms.openlocfilehash: 1d0d36ec16303d6bdaa5f2344cd5d48fba03c8bf
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 71f6c3fa6d29a884627f2bf5aae07fbc0349ec9b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444298"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176123"
 ---
 # <a name="platformcomexception-class"></a>Класс Platform::COMException
 
@@ -34,7 +35,7 @@ public ref class COMException : Exception,    IException,    IPrintable,    IEqu
 
 **Конструкторы**
 
-|Участник|Description|
+|Член|Описание|
 |------------|-----------------|
 |[COMException](#ctor)|Инициализирует новый экземпляр класса COMException.|
 
@@ -46,7 +47,7 @@ public ref class COMException : Exception,    IException,    IPrintable,    IEqu
 
 Класс COMException имеет следующие свойства.
 
-|Участник|Description|
+|Член|Описание|
 |------------|-----------------|
 |[Exception:: HResult](#hresult)|Значение HRESULT, соответствующее исключению.|
 |[Исключение:: Message](#message)|Сообщение с описанием исключения.|
@@ -55,16 +56,16 @@ public ref class COMException : Exception,    IException,    IPrintable,    IEqu
 
 Следующие предопределенные исключения наследуются от класса COMException. Они отличаются от класса COMException только своими именами, именами своих конструкторов и значениями HRESULT.
 
-|Имя|Значение HRESULT|Description|
+|Имя|Значение HRESULT|Описание|
 |----------|------------------------|-----------------|
 |COMException|*Определяемое пользователем значение hresult*|Возникает при возвращении неизвестного значения HRESULT после вызова метода COM.|
 |AccessDeniedException|E_ACCESSDENIED|Возникает при запрете доступа к ресурсу или функции.|
 |ChangedStateException|E_CHANGED_STATE|Возникает, если метод итератора коллекции или представления коллекции вызван после изменения родительской коллекции, что делает результаты метода недействительными.|
 |ClassNotRegisteredException|REGDB_E_CLASSNOTREG|Возникает, если COM-класс не зарегистрирован.|
 |DisconnectedException|RPC_E_DISCONNECTED|Возникает, если объект отключен от своих клиентов.|
-|FailureException|E_FAIL|Возникает при сбое операции.|
+|FailureException|E_FAIL|Возникает, если операция завершается неудачно.|
 |InvalidArgumentException|E_INVALIDARG|Вызывается, если один из передаваемых методу аргументов является недопустимым.|
-|InvalidCastException|E_NOINTERFACE|Возникает, если тип не удается привести тип к другому типу.|
+|InvalidCastException|E_NOINTERFACE|Возникает, если тип не удается привести к другому типу.|
 |NotImplementedException|E_NOTIMPL|Возникает, если метод интерфейса не реализован в классе.|
 |NullReferenceException|E_POINTER|Возникает при попытке разыменовать ссылку на объект NULL.|
 |OperationCanceledException|E_ABORT|Возникает при отмене операции.|
@@ -79,9 +80,9 @@ public ref class COMException : Exception,    IException,    IPrintable,    IEqu
 
 **Пространство имен:** Platform
 
-**Метаданные:** platform.winmd
+**Метаданные:** Platform. winmd
 
-## <a name="ctor"></a>Конструктор COMException:: COMException
+## <a name="comexceptioncomexception-constructor"></a><a name="ctor"></a> Конструктор COMException:: COMException
 
 Инициализирует новый экземпляр класса COMException.
 
@@ -93,10 +94,10 @@ COMException( int hresult )
 
 ### <a name="parameters"></a>Параметры
 
-*hresult*<br/>
+*состав*<br/>
 HRESULT ошибки, представляемый этим исключением.
 
-## <a name="hresult"></a>Свойство COMException:: HResult
+## <a name="comexceptionhresult-property"></a><a name="hresult"></a> Свойство COMException:: HResult
 
 Значение HRESULT, соответствующее исключению.
 
@@ -111,11 +112,11 @@ public:
 
 Значение HRESULT, задающее ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о том, как интерпретировать значение HRESULT, см. в разделе [структура кодов ошибок COM](/windows/win32/com/structure-of-com-error-codes).
 
-## <a name="message"></a>Свойство COMException:: Message
+## <a name="comexceptionmessage-property"></a><a name="message"></a> Свойство COMException:: Message
 
 Сообщение с описанием исключения.
 

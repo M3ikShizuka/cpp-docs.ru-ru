@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C2584'
 title: Ошибка компилятора C2584
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2584
 ms.assetid: 836e2c0a-86c0-4742-b432-beb0191ad20e
-ms.openlocfilehash: 2c3b10ecd6808ccd864ecf877fe9f1d0e9f30a3a
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 7820019c3ec49928f59980adbd9ec814d67c3499
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74748636"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177683"
 ---
 # <a name="compiler-error-c2584"></a>Ошибка компилятора C2584
 
 "Класс": прямой базовый "Base2" недоступен; уже является основанием "баз данных"
 
-`Class` уже наследуется непосредственно от `Base1`. `Base2` также является производным от `Base1`. `Class` не может быть производным от `Base2`, так как это означает наследование (косвенно) от `Base1` снова, что не является допустимым, так как `Base1` уже является прямым базовым классом.
+`Class` уже является производным от `Base1` . `Base2` также является производным от `Base1` . `Class` не может быть производным от `Base2` , так как это означает наследование (косвенно) от `Base1` повторного, что не является допустимым, поскольку `Base1` уже является прямым базовым классом.
 
 ## <a name="example"></a>Пример
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l'
 title: strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l
 ms.date: 5/28/2020
 api_name:
@@ -45,12 +46,12 @@ helpviewer_keywords:
 - tcscpy_s function
 - wcscpy_s function
 ms.assetid: 611326f3-7929-4a5d-a465-a4683af3b053
-ms.openlocfilehash: b2957490dbf045b9a3258a72b6bda0aaf1a38c0f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a20f16971ccc7d1f85fe92c5d2d14386e7e55022
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229302"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176201"
 ---
 # <a name="strcpy_s-wcscpy_s-_mbscpy_s-_mbscpy_s_l"></a>strcpy_s, wcscpy_s, _mbscpy_s, _mbscpy_s_l
 
@@ -136,11 +137,11 @@ errno_t _mbscpy_s_l(
 |any|any|**NULL**|**еинвал**|*dest*[0] имеет значение 0|
 |any|0 или слишком мал|any|**ERANGE**|*dest*[0] имеет значение 0|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **strcpy_s** копирует содержимое в адресе *src*, включая завершающий символ null, в расположение, указанное в параметре *dest*. Строка назначения должна быть достаточно велика для сохранения исходной строки и завершающего нуля. Поведение **strcpy_s** не определено, если строки источника и назначения перекрываются.
 
-**wcscpy_s** — это версия **strcpy_s**для расширенных символов, а **_mbscpy_s** — версия многобайтовых символов. Аргументы **wcscpy_s** являются строками расширенных символов; **_mbscpy_s** и **_mbscpy_s_l** являются строками многобайтовых символов. В остальном эти функции ведут себя одинаково. **_mbscpy_s_l** идентичен **_mbscpy_s** за исключением того, что он использует переданный параметр языкового стандарта вместо текущего языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
+**wcscpy_s** — это версия **strcpy_s** для расширенных символов, а **_mbscpy_s** — версия многобайтовых символов. Аргументы **wcscpy_s** являются строками расширенных символов; **_mbscpy_s** и **_mbscpy_s_l** являются строками многобайтовых символов. В остальном эти функции ведут себя одинаково. **_mbscpy_s_l** идентичен **_mbscpy_s** за исключением того, что он использует переданный параметр языкового стандарта вместо текущего языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
 Если *dest* или *src* является пустым указателем или если размер строки назначения *dest_size* слишком мал, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции возвращают **еинвал** и **присвойте параметру «** **еинвал** », если *dest* или *src* является пустым указателем, и возвращают **ERANGE** и задали **значение** **ERANGE** , если строка назначения слишком мала.
 
@@ -231,7 +232,7 @@ int main(void)
 String = Hello world from wcscpy_s and wcscat_s!
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md) <br/>
 [strcat, wcscat, _mbscat, _mbscat_l](strcat-wcscat-mbscat.md) <br/>

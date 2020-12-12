@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: классы поддержки приложений и потоков'
 title: Классы поддержки приложений и потоков
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - synchronization classes [MFC], multithreading
 - application support classes [MFC]
 ms.assetid: 3c1d14fd-c35c-48f1-86ce-1e0f9a32c36d
-ms.openlocfilehash: 7e64cc50a121f457b7e32e0ed549db2fa9950843
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 89ab6e324a777c272dcbcfabc746c03cb6731589
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619438"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176747"
 ---
 # <a name="application-and-thread-support-classes"></a>Классы поддержки приложений и потоков
 
@@ -24,7 +25,7 @@ ms.locfileid: "84619438"
 
 Библиотека Microsoft Foundation Class (MFC) поддерживает несколько потоков выполнения в приложении. Все приложения должны иметь по крайней мере один поток; поток, используемый `CWinApp` объектом, является основным потоком.
 
-`CWinThread`Инкапсулирует часть возможностей потоковой обработки в операционной системе. Чтобы упростить использование нескольких потоков, MFC также предоставляет классы объектов синхронизации для предоставления интерфейса C++ для объектов синхронизации Win32.
+`CWinThread` Инкапсулирует часть возможностей потоковой обработки в операционной системе. Чтобы упростить использование нескольких потоков, MFC также предоставляет классы объектов синхронизации для предоставления интерфейса C++ для объектов синхронизации Win32.
 
 ## <a name="application-and-thread-classes"></a>Классы приложений и потоков
 

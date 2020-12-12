@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Общие сведения о библиотеке классов'
 title: Общие сведения о библиотеке классов
 ms.date: 09/17/2019
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - class libraries, MFC
 - class libraries
 ms.assetid: 9b0e3152-ac39-4f52-91b4-f20aa3a674aa
-ms.openlocfilehash: bf30f1b0aa83ef002337b76601f04c7103963441
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 458fc06aa8e13a2f2f7024c11a822496bccefbea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620746"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176695"
 ---
 # <a name="class-library-overview"></a>Общие сведения о библиотеке классов
 
@@ -25,7 +26,7 @@ ms.locfileid: "84620746"
 
 - [Корневой класс: CObject](root-class-cobject.md)
 
-- [Классы архитектуры приложения MFC](mfc-application-architecture-classes.md)
+- [Классы архитектуры приложений MFC](mfc-application-architecture-classes.md)
 
   - [Классы поддержки приложений и потоков](application-and-thread-support-classes.md)
 
@@ -33,9 +34,9 @@ ms.locfileid: "84620746"
 
   - [Классы документов](document-classes.md)
 
-  - [Классы представления (архитектура)](view-classes-architecture.md)
+  - [Классы представлений (архитектура)](view-classes-architecture.md)
 
-  - [Классы окна фрейма (архитектура)](frame-window-classes-architecture.md)
+  - [Классы окон фрейма (архитектура)](frame-window-classes-architecture.md)
 
   - [Классы шаблонов документов](document-template-classes.md)
 
@@ -55,23 +56,23 @@ ms.locfileid: "84620746"
 
   - [Классы вывода (контекст устройства)](output-device-context-classes.md)
 
-  - [Классы инструмента рисования](drawing-tool-classes.md)
+  - [Классы инструментов рисования](drawing-tool-classes.md)
 
 - [Классы простых типов данных](simple-data-type-classes.md)
 
-- [Классы массивов, списков и схем](array-list-and-map-classes.md)
+- [Классы Array, List и Map](array-list-and-map-classes.md)
 
   - [Классы шаблонов для массивов, списков и сопоставлений](template-classes-for-arrays-lists-and-maps.md)
 
   - [Готовые к использованию классы массивов](ready-to-use-array-classes.md)
 
-  - [Готовые классы списков](ready-to-use-list-classes.md)
+  - [Готовые к использованию классы списков](ready-to-use-list-classes.md)
 
   - [Готовые к использованию классы карт](ready-to-use-map-classes.md)
 
 - [Классы файлов и баз данных](file-and-database-classes.md)
 
-  - [Классов ввода-вывода файлов](file-i-o-classes.md)
+  - [Классы файлового ввода-вывода](file-i-o-classes.md)
 
   - [Классы DAO](dao-classes.md)
 
@@ -87,15 +88,15 @@ ms.locfileid: "84620746"
 
 - [Классы OLE](ole-classes.md)
 
-  - [Классы контейнера OLE](ole-container-classes.md)
+  - [Классы контейнеров OLE](ole-container-classes.md)
 
-  - [Серверные классы OLE](ole-server-classes.md)
+  - [Классы OLE Server](ole-server-classes.md)
 
   - [Классы перетаскивания и Передача данных классов OLE](ole-drag-and-drop-and-data-transfer-classes.md)
 
   - [Классы общих диалоговых окон OLE](ole-common-dialog-classes.md)
 
-  - [Классы автоматизации OLE](ole-automation-classes.md)
+  - [Классы OLE Automation](ole-automation-classes.md)
 
   - [Классы элементов управления OLE](ole-control-classes.md)
 
@@ -119,4 +120,4 @@ ms.locfileid: "84620746"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Приложения MFC для рабочего стола](mfc-desktop-applications.md)
+[Классические приложения MFC](mfc-desktop-applications.md)

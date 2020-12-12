@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура константа ArgTraits'
 title: ArgTraits - структура
 ms.date: 10/03/2018
 ms.topic: reference
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::ArgTraits structure
 - Microsoft::WRL::Details::ArgTraits::args constant
 ms.assetid: 58ae4115-c1bc-48c8-b01b-e60554841c30
-ms.openlocfilehash: 16c44d861ebbbc98fa1bffb62a00d1989c0c803c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b44cd1ff8d5aa4355385629cc08321dfe353e24c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81377161"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175915"
 ---
 # <a name="argtraits-structure"></a>ArgTraits - структура
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -129,10 +130,10 @@ struct ArgTraits<
 
 ### <a name="parameters"></a>Параметры
 
-*TMemberFunction*<br/>
-Параметр тигимен для структуры ArgTraits, который не может соответствовать ни одной `Invoke` подписи метода.
+*тмемберфунктион*<br/>
+Параметр TypeName для структуры константа ArgTraits, который не может соответствовать `Invoke` сигнатуре метода.
 
-*TDelegateИнтерфейс*<br/>
+*тделегатеинтерфаце*<br/>
 Интерфейс делегата.
 
 *TArg1*<br/>
@@ -162,11 +163,11 @@ struct ArgTraits<
 *TArg9*<br/>
 Тип девятого аргумента `Invoke` метода.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Структура `ArgTraits` объявляет указанный интерфейс делегата и анонимную функцию-член, которая принимает указанное число параметров.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
@@ -186,7 +187,7 @@ struct ArgTraits<
 
 Имя                     | Описание
 ------------------------ | ---------------------------------------------------------------------------------------
-[ArgTraits::args](#args) | Ведется подсчет количества параметров `Invoke` на методе интерфейса делегата.
+[Константа ArgTraits:: args](#args) | Сохраняет количество параметров в `Invoke` методе интерфейса делегата.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -194,18 +195,18 @@ struct ArgTraits<
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** event.h
+**Заголовок:** Event. h
 
-**Пространство имен:** Microsoft:WRL::Details
+**Пространство имен:** Microsoft:: WRL::D состояния
 
-## <a name="argtraitsargs"></a><a name="args"></a>ArgTraits::args
+## <a name="argtraitsargs"></a><a name="args"></a> Константа ArgTraits:: args
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ```cpp
 static const int args = -1;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Ведется подсчет количества параметров `Invoke` на методе интерфейса делегата. Когда `args` равен -1, не может `Invoke` быть соответствия для подписи метода.
+Сохраняет количество параметров в `Invoke` методе интерфейса делегата. Если `args` Equals равно-1, для сигнатуры метода не может быть совпадения `Invoke` .

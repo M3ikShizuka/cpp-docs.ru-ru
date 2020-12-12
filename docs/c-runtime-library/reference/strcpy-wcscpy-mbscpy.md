@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: strcpy, wcscpy, _mbscpy'
 title: strcpy, wcscpy, _mbscpy
 ms.date: 4/2/2020
 api_name:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - _ftcscpy function
 - _mbscpy function
 ms.assetid: f97a4f81-e9ee-4f15-888a-0fa5d7094c5a
-ms.openlocfilehash: cb63dfc9ee817458393b7b544d04683b0d17918e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8417fa8cf473552dcc509272a2ce660b4be7a68d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915256"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176188"
 ---
 # <a name="strcpy-wcscpy-_mbscpy"></a>strcpy, wcscpy, _mbscpy
 
@@ -101,7 +102,7 @@ unsigned char *_mbscpy(
 
 Каждая из этих функций возвращает строку назначения. Нет зарезервированных возвращаемых значений для указания ошибки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **strcpy** копирует *стрсаурце*, включая завершающий символ null, в расположение, указанное в *стрдестинатион*. Поведение **strcpy** не определено, если исходная и Целевая строки перекрываются.
 

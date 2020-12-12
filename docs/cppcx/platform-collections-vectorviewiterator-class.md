@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Platform:: Collections:: VectorViewIterator Class'
 title: Класс Platform::Collections::VectorViewIterator
 ms.date: 03/27/2019
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - VectorViewIterator Class
 ms.assetid: be3aa1ae-e6ba-4a06-8d6b-86d8128026f7
-ms.openlocfilehash: 3fed25b975eefe33f9eb7014ca91a52ba419c936
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f10d6c31e60c4f8deac2ba924ec5f9de6faec30c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211571"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176136"
 ---
 # <a name="platformcollectionsvectorviewiterator-class"></a>Класс Platform::Collections::VectorViewIterator
 
@@ -96,7 +97,7 @@ Detail::ArrowProxy<T> operator->() const;
 
 Тип возвращаемого значения является неуказанным внутренним типом, необходимым для реализации этого оператора.
 
-## <a name="vectorviewiteratoroperator---operator"></a><a name="operator-decrement"></a>Оператор VectorViewIterator:: operator--
+## <a name="vectorviewiteratoroperator---operator"></a><a name="operator-decrement"></a> Оператор VectorViewIterator:: operator--
 
 Выполняет уменьшение текущего итератора VectorViewIterator.
 
@@ -111,7 +112,7 @@ VectorViewIterator operator--(int);
 
 Первый синтаксис выполняет уменьшение текущего итератора VectorViewIterator и возвращает его. Второй синтаксис возвращает копию текущего итератора VectorViewIterator, а затем выполняет уменьшение текущего итератора VectorViewIterator.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый синтаксис выполняет уменьшение текущего итератора VectorViewIterator перед его использованием.
 
@@ -131,7 +132,7 @@ reference operator*() const;
 
 Элемент, указанный текущим итератором VectorIterator.
 
-## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-equality"></a>Оператор VectorViewIterator:: operator = =
+## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-equality"></a> Оператор VectorViewIterator:: operator = =
 
 Указывает, равен ли текущий объект VectorViewIterator указанному объекту VectorViewIterator.
 
@@ -148,7 +149,7 @@ bool operator==(const VectorViewIterator& other) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-**`true`**, если текущий объект `VectorViewIterator` равен *другому*; в противном случае — **`false`** .
+**`true`** , если текущий объект `VectorViewIterator` равен *другому*; в противном случае — **`false`** .
 
 ## <a name="vectorviewiteratoroperatorgt-operator"></a><a name="operator-greater-than"></a>Оператор VectorViewIterator:: operator &gt;
 
@@ -170,7 +171,7 @@ bool operator>(const VectorViewIterator& other) const;
 
 **`true`** значение, если текущий VectorViewIterator больше *другого*; в противном случае — **`false`** .
 
-## <a name="vectorviewiteratoroperatorgt-operator"></a><a name="operator-greater-than-or-equals"></a>Оператор VectorViewIterator:: operator &gt; =
+## <a name="vectorviewiteratoroperatorgt-operator"></a><a name="operator-greater-than-or-equals"></a> Оператор VectorViewIterator:: operator &gt; =
 
 Указывает, что текущий объект `VectorViewIterator` больше или равен указанному `VectorViewIterator` .
 
@@ -188,9 +189,9 @@ bool operator>=(const VectorViewIterator& other) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-**`true`**, если текущий объект `VectorViewIterator` больше или равен *другому*; в противном случае — **`false`** .
+**`true`** , если текущий объект `VectorViewIterator` больше или равен *другому*; в противном случае — **`false`** .
 
-## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-increment"></a>Оператор VectorViewIterator:: operator + +
+## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-increment"></a> Оператор VectorViewIterator:: operator + +
 
 Выполняет приращение текущего итератора VectorViewIterator.
 
@@ -206,13 +207,13 @@ VectorViewIterator operator++(int);
 
 Первый синтаксис выполняет приращение текущего итератора VectorViewIterator и возвращает его. Второй синтаксис возвращает копию текущего итератора VectorViewIterator, а затем выполняет приращение текущего итератора VectorViewIterator.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый синтаксис выполняет приращение текущего итератора VectorViewIterator перед его использованием.
 
 Второй синтаксис выполняет приращение текущего итератора VectorViewIterator после его использования. **`int`** Тип во втором синтаксисе указывает на операцию после приращения, а не на фактический целочисленный операнд.
 
-## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-inequality"></a>Оператор VectorViewIterator:: operator! =
+## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-inequality"></a> Оператор VectorViewIterator:: operator! =
 
 Указывает, отличен ли текущий объект VectorViewIterator от указанного объекта VectorViewIterator.
 
@@ -229,7 +230,7 @@ bool operator!=(const VectorViewIterator& other) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-**`true`**, если текущий `VectorViewIterator` не равен *другому*; в противном случае — **`false`** .
+**`true`** , если текущий `VectorViewIterator` не равен *другому*; в противном случае — **`false`** .
 
 ## <a name="vectorviewiteratoroperatorlt-operator"></a><a name="operator-less-than"></a>Оператор VectorViewIterator:: operator &lt;
 
@@ -248,9 +249,9 @@ bool operator<(const VectorViewIterator& other) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-**`true`**, если текущий объект `VectorIterator` меньше *другого*; в противном случае — **`false`** .
+**`true`** , если текущий объект `VectorIterator` меньше *другого*; в противном случае — **`false`** .
 
-## <a name="vectorviewiteratoroperatorlt-operator"></a><a name="operator-less-than-or-equals"></a>Оператор VectorViewIterator:: operator &lt; =
+## <a name="vectorviewiteratoroperatorlt-operator"></a><a name="operator-less-than-or-equals"></a> Оператор VectorViewIterator:: operator &lt; =
 
 Указывает, является ли текущий объект `VectorIterator` меньшим или равным указанному `VectorIterator` .
 
@@ -268,9 +269,9 @@ bool operator<=(const VectorViewIterator& other) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-**`true`**, если текущий объект `VectorIterator` меньше или равен *другому*; в противном случае — **`false`** .
+**`true`** , если текущий объект `VectorIterator` меньше или равен *другому*; в противном случае — **`false`** .
 
-## <a name="vectorviewiteratoroperator--operator"></a><a name="operator-minus"></a>Оператор VectorViewIterator:: operator-
+## <a name="vectorviewiteratoroperator--operator"></a><a name="operator-minus"></a> Оператор VectorViewIterator:: operator-
 
 Вычитает указанное количество элементов из текущего итератора, возвращая новый итератор, или вычитает указанный итератор из текущего итератора, возвращая количество элементов между итераторами.
 
@@ -295,7 +296,7 @@ difference_type operator-(const VectorViewIterator& other) const;
 
 Синтаксис первого оператора возвращает объект VectorViewIterator, количество элементов которого меньше, чем у текущего объекта VectorViewIterator, на `n`. Синтаксис второго оператора возвращает количество элементов между текущим объектом VectorViewIterator и другим объектом VectorViewIterator, заданным параметром `other`.
 
-## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-plus-equals"></a>Оператор VectorViewIterator:: operator + =
+## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-plus-equals"></a> Оператор VectorViewIterator:: operator + =
 
 Увеличивает текущий итератор VectorViewIterator на указанную величину смещения.
 
@@ -314,7 +315,7 @@ VectorViewIterator& operator+=(difference_type n);
 
 Обновленный VectorViewIterator.
 
-## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-plus"></a>Оператор VectorViewIterator:: operator +
+## <a name="vectorviewiteratoroperator-operator"></a><a name="operator-plus"></a> Оператор VectorViewIterator:: operator +
 
 Возвращает объект VectorViewIterator, указывающий на элемент с заданным смещением от указанного объекта VectorViewIterator.
 
@@ -347,7 +348,7 @@ inline VectorViewIterator<T> operator+
 
 Во втором синтаксисе — объект VectorViewIterator, указывающий на элемент с заданным смещением от начала `i` параметра.
 
-## <a name="vectorviewiteratoroperator--operator"></a><a name="operator-minus-assign"></a>Оператор VectorViewIterator:: operator-=
+## <a name="vectorviewiteratoroperator--operator"></a><a name="operator-minus-assign"></a> Оператор VectorViewIterator:: operator-=
 
 Уменьшает текущий итератор VectorIterator на указанную величину смещения.
 
@@ -366,7 +367,7 @@ VectorViewIterator& operator-=(difference_type n);
 
 Обновленный VectorIterator.
 
-## <a name="vectorviewiteratoroperator"></a><a name="operator-at"></a>VectorViewIterator:: operator\[\]
+## <a name="vectorviewiteratoroperator"></a><a name="operator-at"></a> VectorViewIterator:: operator\[\]
 
 Извлекает ссылку на элемент, удаленный от текущего итератора VectorViewIterator на указанную величину смещения.
 
@@ -385,7 +386,7 @@ reference operator[](difference_type n) const;
 
 Элемент, удаленный от текущего итератора VectorViewIterator на `n`.
 
-## <a name="vectorviewiteratorvectorviewiterator-constructor"></a><a name="ctor"></a>Конструктор VectorViewIterator:: VectorViewIterator
+## <a name="vectorviewiteratorvectorviewiterator-constructor"></a><a name="ctor"></a> Конструктор VectorViewIterator:: VectorViewIterator
 
 Инициализирует новый экземпляр класса VectorViewIterator.
 
@@ -402,10 +403,10 @@ explicit VectorViewIterator(
 
 ### <a name="parameters"></a>Параметры
 
-*3,3*<br/>
+*v*<br/>
 Объект IVectorView \<T> .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый пример синтаксиса является конструктором по умолчанию. Вторым примером синтаксиса является явный конструктор, который используется для создания VectorViewIterator из \<T> объекта IVectorView.
 

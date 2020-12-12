@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: стркспн, вкскспн, _mbscspn, _mbscspn_l'
 title: strcspn, wcscspn, _mbscspn, _mbscspn_l
 ms.date: 4/2/2020
 api_name:
@@ -45,12 +46,12 @@ helpviewer_keywords:
 - mbscspn function
 - _tcscspn function
 ms.assetid: f73f51dd-b533-4e46-ba29-d05c553708a6
-ms.openlocfilehash: 8fb3e0fe7590dac9fc3ce107b3c1b2a5800c867b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a453d14541bb6e74b63d869c4d9dcc5d6d4f49e2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915255"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176162"
 ---
 # <a name="strcspn-wcscspn-_mbscspn-_mbscspn_l"></a>strcspn, wcscspn, _mbscspn, _mbscspn_l
 
@@ -98,11 +99,11 @@ size_t _mbscspn_l(
 
 Нет зарезервированных возвращаемых значений для указания ошибки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-**вкскспн** и **_mbscspn** — это версии **стркспн**для расширенных символов и многобайтовых символов. Аргументы **вкскспн** — это строки расширенных символов; **_mbscspn** являются строками многобайтовых символов.
+**вкскспн** и **_mbscspn** — это версии **стркспн** для расширенных символов и многобайтовых символов. Аргументы **вкскспн** — это строки расширенных символов; **_mbscspn** являются строками многобайтовых символов.
 
-**_mbscspn** проверяет свои параметры. Если *str* или *стрчарсет* является пустым указателем, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, функция возвращает 0 **и устанавливает для** **еинвал**значение. **стркспн** и **вкскспн** не проверяют свои параметры. В остальном эти три функции ведут себя идентично.
+**_mbscspn** проверяет свои параметры. Если *str* или *стрчарсет* является пустым указателем, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, функция возвращает 0 **и устанавливает для** **еинвал** значение. **стркспн** и **вкскспн** не проверяют свои параметры. В остальном эти три функции ведут себя идентично.
 
 Выходное значение зависит от настройки категории **LC_CTYPE** языкового стандарта; дополнительные сведения см. в разделе [setlocale](setlocale-wsetlocale.md). Версии этих функций без суффикса **_l** используют текущий языковой стандарт для данного поведения, зависящего от языкового стандарта; версии с суффиксом **_l** идентичны, за исключением того, что они используют переданный параметр языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
@@ -113,7 +114,7 @@ size_t _mbscspn_l(
 |Подпрограмма TCHAR.H|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcscspn**|**strcspn**|**_mbscspn**|**wcscspn**|
-|н/д|н/д|**_mbscspn_l**|н/д|
+|Н/Д|Н/Д|**_mbscspn_l**|н/д|
 
 ## <a name="requirements"></a>Требования
 
@@ -162,8 +163,8 @@ strcspn( "", "" ) = 0
 ## <a name="see-also"></a>См. также раздел
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
 [strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>

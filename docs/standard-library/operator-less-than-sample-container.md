@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения об операторе: operator &lt; ( &lt; образец контейнера &gt; )'
 title: оператор&lt; (&lt;образец контейнера&gt;)
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,19 +15,19 @@ helpviewer_keywords:
 - < operator
 - operator <, valarrays
 ms.assetid: 31027dd6-53be-428b-b950-1dcb25393597
-ms.openlocfilehash: 6ef43fb762c4da71062fc846048f21c0112bfafc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e7bba9be33a2dc4dea6257b159966c867bb33929
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80215271"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176487"
 ---
 # <a name="operatorlt-ltsample-containergt"></a>оператор&lt; (&lt;образец контейнера&gt;)
 
 > [!NOTE]
-> Этот раздел находится в документации Майкрософт C++ как нефункциональный пример контейнеров, C++ используемых в стандартной библиотеке. Дополнительные сведения см. в разделе [Контейнеры стандартной библиотеки C++](../standard-library/stl-containers.md).
+> Эта статья содержится в документации по Microsoft C++ как нефункциональный пример контейнеров, используемых в стандартной библиотеке C++. Дополнительные сведения см. в разделе [Контейнеры стандартной библиотеки C++](../standard-library/stl-containers.md).
 
-Перегрузка **оператора <** для сравнения двух объектов [контейнера](../standard-library/sample-container-class.md)шаблона класса.
+Перегрузка **оператора<** для сравнения двух объектов [контейнера](../standard-library/sample-container-class.md)шаблона класса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,6 +44,6 @@ bool operator<(
 
 ## <a name="see-also"></a>См. также раздел
 
-[\<образец контейнера>](../standard-library/sample-container.md)\
-[начать](../standard-library/container-class-begin.md)\
+[\<sample container>](../standard-library/sample-container.md)\
+[начале](../standard-library/container-class-begin.md)\
 [end](../standard-library/container-class-end.md)

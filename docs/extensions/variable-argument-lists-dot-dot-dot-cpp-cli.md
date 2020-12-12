@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье списки аргументов переменных (...) (C++/CLI)
 title: Списки аргументов переменных (...) (C++/CLI)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -6,19 +7,19 @@ helpviewer_keywords:
 - variable argument lists
 - parameter arrays
 ms.assetid: db1a27f4-02a8-4318-8690-1f2893f52b38
-ms.openlocfilehash: 8ea4d71bf9a22fc96c794a92ba43bed6548cf5d1
-ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
+ms.openlocfilehash: fec05a2ce397a0991a4bfd0a5aeb6a8b16d986ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82032308"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176851"
 ---
 # <a name="variable-argument-lists--ccli"></a>Списки аргументов переменных (...) (C++/CLI)
 
 В этом примере показано, как можно использовать синтаксис `...` в C++/CLI для реализации функций с переменным числом аргументов.
 
 > [!NOTE]
-> Этот раздел относится к C++/CLI. Для получения информации об использовании `...` в ISO Стандарт СЗ см. [Ellipsis и вариативные шаблоны](../cpp/ellipses-and-variadic-templates.md) и Ellipsis и аргументы по умолчанию в [выражениях Postfix](../cpp/postfix-expressions.md).
+> Этот раздел относится к C++/CLI. Сведения об использовании `...` в стандартном коде ISO C++ см. в разделе [шаблоны Variadic](../cpp/ellipses-and-variadic-templates.md) и многоточия, а также аргументы по умолчанию в [постфиксных выражениях](../cpp/postfix-expressions.md).
 
 Параметр, который использует `...`, должен быть последним параметром в списке.
 
@@ -101,6 +102,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Массивы](arrays-cpp-component-extensions.md)

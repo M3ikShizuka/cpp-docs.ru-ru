@@ -1,5 +1,6 @@
 ---
-title: Перечисление AsyncResultType
+description: Дополнительные сведения о перечислении Асинкресулттипе
+title: AsyncResultType - перечисление
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - AsyncResultType enumeration
 ms.assetid: 4195d234-3f3f-4363-9118-6ad2a7551cf2
-ms.openlocfilehash: b8a2a9ec803fba1be0012fcb58bf3b42e78f9071
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 431c0cabf98b3636bbae02b2f05a14d11d122740
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214166"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175824"
 ---
-# <a name="asyncresulttype-enumeration"></a>Перечисление AsyncResultType
+# <a name="asyncresulttype-enumeration"></a>AsyncResultType - перечисление
 
-Задает тип результата, возвращаемого методом `GetResults()`.
+Указывает тип результата, возвращаемого `GetResults()` методом.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,10 +29,10 @@ enum AsyncResultType;
 
 ### <a name="values"></a>Значения
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
-|`MultipleResults`|Набор из нескольких результатов, которые отображаются последовательно между состоянием `Start` и до вызова `Close()`.|
-|`SingleResult`|Один результат, представленный после возникновения события `Complete`.|
+|`MultipleResults`|Набор из нескольких результатов, которые представляются последовательно между `Start` состоянием и перед `Close()` вызовом.|
+|`SingleResult`|Один результат, представленный после `Complete` возникновения события.|
 
 ## <a name="requirements"></a>Требования
 
@@ -41,4 +42,4 @@ enum AsyncResultType;
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Microsoft::WRL](microsoft-wrl-namespace.md)
+[Пространство имен Microsoft:: WRL](microsoft-wrl-namespace.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Неустранимая ошибка C1311'
 title: Неустранимая ошибка C1311
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1311
 ms.assetid: 6590a06c-ce9d-4f17-8f62-c809343143b8
-ms.openlocfilehash: e57e4e0899a5f9d81e87a203b1b699cef0884f0d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d6049bfedd01be02e8b3f26163fe062e9023bd78
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80203272"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177748"
 ---
 # <a name="fatal-error-c1311"></a>Неустранимая ошибка C1311
 
@@ -19,7 +20,7 @@ ms.locfileid: "80203272"
 
 Адрес, значение которого неизвестно во время компиляции, не может быть статически назначен переменной, тип которой имеет размер хранения менее четырех байт.
 
-Эта ошибка может возникать в коде, который в C++противном случае является допустимым.
+Эта ошибка может возникать в коде, который в противном случае является допустимым для C++.
 
 В следующем примере показано одно условие, которое может вызвать C1311.
 

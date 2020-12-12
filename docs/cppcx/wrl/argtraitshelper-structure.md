@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура константа argtraitshelper'
 title: ArgTraitsHelper - структура
 ms.date: 09/21/2018
 ms.topic: reference
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::ArgTraitsHelper structure
 - Microsoft::WRL::Details::ArgTraitsHelper::args constant
 ms.assetid: e3f798da-0aef-4a57-95d3-d38c34c47d72
-ms.openlocfilehash: 4acbd9fa660f29bbaf209282ff0e90f43621574d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a749c48c72c837eb0898d32ddd08410b87918871
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81360769"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97175863"
 ---
 # <a name="argtraitshelper-structure"></a>ArgTraitsHelper - структура
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,14 +30,14 @@ struct ArgTraitsHelper;
 
 ### <a name="parameters"></a>Параметры
 
-*TDelegateИнтерфейс*<br/>
+*тделегатеинтерфаце*<br/>
 Интерфейс делегата.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Помогает определить общие характеристики аргументов делегатов.
+Помогает определить общие характеристики аргументов делегата.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
@@ -49,7 +50,7 @@ struct ArgTraitsHelper;
 
 Имя                           | Описание
 ------------------------------ | ---------------------------------------------------------------------------------------------------------------------
-[ArgTraitsHelper::args](#args) | Помогает [ArgTraits::args](#args) держать подсчет количества параметров `Invoke` на метод еликделегата интерфейса.
+[Константа argtraitshelper:: args](#args) | Помогает [константа ArgTraits:: args](#args) отображать число параметров в `Invoke` методе интерфейса делегата.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -57,18 +58,18 @@ struct ArgTraitsHelper;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** event.h
+**Заголовок:** Event. h
 
-**Пространство имен:** Microsoft:WRL::Details
+**Пространство имен:** Microsoft:: WRL::D состояния
 
-## <a name="argtraitshelperargs"></a><a name="args"></a>ArgTraitsHelper::args
+## <a name="argtraitshelperargs"></a><a name="args"></a> Константа argtraitshelper:: args
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ```cpp
 static const int args = Traits::args;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Помогает `ArgTraitsHelper::args` вести подсчет количества параметров `Invoke` на методе интерфейса делегата.
+Помогает `ArgTraitsHelper::args` синхронизировать количество параметров в `Invoke` методе интерфейса делегата.
