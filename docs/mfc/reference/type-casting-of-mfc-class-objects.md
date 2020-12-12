@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: приведение типов объектов классов MFC'
 title: Приведение типов объектов классов MFC
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - casting types [MFC]
 - macros [MFC], casting pointers
 ms.assetid: e138465e-c35f-4e84-b788-bd200ccf2f0e
-ms.openlocfilehash: e3702ced83021e42ac6bf71a78efc51fa07b8be9
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: bec49afc0050aa32c6e5436e5efca9b0dab30709
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840496"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218676"
 ---
 # <a name="type-casting-of-mfc-class-objects"></a>Приведение типов объектов классов MFC
 
@@ -44,7 +45,7 @@ DYNAMIC_DOWNCAST(class, pointer)
 *вид*<br/>
 Указатель, приведенный к указателю на объект типа *Class*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Макрос преобразует параметр *указателя* в указатель на объект типа параметра *класса* .
 
@@ -66,7 +67,7 @@ STATIC_DOWNCAST(class_name, pobject)
 *объект*<br/>
 Указатель, который должен быть приведен к указателю на объект *class_name* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 *объект* должен иметь значение null или указывать на объект класса, который прямо или косвенно является производным от *class_name*. В сборках приложения с определенным символом препроцессора _DEBUG макрос будет утверждать, если *объект* не равен null, или если он указывает на объект, который не является "типом" класса, указанного в параметре *class_name* (см. [CObject:: IsKindOf](../../mfc/reference/cobject-class.md#iskindof)). В сборках, не связанных с **_DEBUG** , макрос выполняет приведение без проверки типа.
 
