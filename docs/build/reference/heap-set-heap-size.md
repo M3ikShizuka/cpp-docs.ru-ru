@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/HEAP (установка размера кучи)
 title: /HEAP (Установка размера кучи)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - /HEAP linker option
 - HEAP linker option
 ms.assetid: a3f71927-7f1d-492c-9fdb-dfccb1a043da
-ms.openlocfilehash: f155ad56ec1a90479b402e38e7ec7f3e3d80e470
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 9831180925d5d669c799982d021d75ea31a2dae5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79439523"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191671"
 ---
 # <a name="heap-set-heap-size"></a>/HEAP (Установка размера кучи)
 
@@ -23,15 +24,15 @@ ms.locfileid: "79439523"
 /HEAP:reserve[,commit]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Параметр/HEAP задает размер кучи в байтах. Этот параметр используется только при сборке EXE-файла.
 
 Аргумент *Reserve* задает общее выделение кучи в виртуальной памяти. Размер кучи по умолчанию — 1 МБ. Компоновщик Округляет указанное значение до ближайших 4 байт.
 
-Необязательный аргумент `commit` указывает объем физической памяти, выделяемой за раз. Выделенная виртуальная память приводит к тому, что пространство резервируется в файле подкачки. Более высокое значение `commit` экономит время, когда приложению требуется больше пространства в куче, но увеличивает требования к памяти и, возможно, время запуска.
+Необязательный `commit` аргумент указывает объем физической памяти, выделяемой за раз. Выделенная виртуальная память приводит к тому, что пространство резервируется в файле подкачки. Более высокое `commit` значение экономит время, когда приложению требуется больше пространства кучи, но увеличивает требования к памяти и, возможно, время запуска.
 
-Укажите значения *Reserve* и `commit` в формате десятичной или C-языковой нотации.
+Укажите *резерв* и `commit` значения в десятичной или C-языковой нотации.
 
 Эта функция также доступна через файл определения модуля с [хеапсизе](heapsize.md).
 
@@ -47,7 +48,7 @@ ms.locfileid: "79439523"
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Задание данного параметра компоновщика программным способом
 
-- Ознакомьтесь с разделами <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.HeapReserveSize%2A> и <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.HeapCommitSize%2A>.
+- См. разделы <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.HeapReserveSize%2A> и <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.HeapCommitSize%2A>.
 
 ## <a name="see-also"></a>См. также раздел
 

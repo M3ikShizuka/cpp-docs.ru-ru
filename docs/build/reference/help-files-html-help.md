@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: файлы справки (Справка HTML)'
 title: Файлы справки (справка HTML)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - file types [C++], HTML Help files
 ms.assetid: d30a1b1b-318f-4a78-8b60-93da53a224a8
-ms.openlocfilehash: 2b856defdac51c978aa07cd13ef8df153c9c3f5f
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
-ms.translationtype: HT
+ms.openlocfilehash: 0a2b92300683fcc4f0ced365a6750f6e73da10f8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707024"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191606"
 ---
 # <a name="help-files-html-help"></a>Файлы справки (справка HTML)
 
@@ -20,11 +21,11 @@ ms.locfileid: "65707024"
 |*Имя_проекта*.hhp|*Имя_проекта*\hlp|файлы справки HTML|Файл проекта справки. Он содержит данные, необходимые для компиляции файлов справки в файл HXS или CHM.|
 |*Имя_проекта*.hhk|*Имя_проекта*\hlp|файлы справки HTML|Содержит индекс разделов справки.|
 |*Имя_проекта*.hhc|*Имя_проекта*\hlp|файлы справки HTML|Содержимое проекта справки.|
-|Makehtmlhelp.bat|*Имя_проекта*|Исходные файлы|Используется системой для сборки проекта справки при компиляции проекта.|
+|Makehtmlhelp.bat|*ProjName*|Исходные файлы|Используется системой для сборки проекта справки при компиляции проекта.|
 |Afxcore.htm|*Имя_проекта*\hlp|Разделы справки HTML|Содержит стандартные разделы справки для обычных команд MFC и объектов экрана. Добавьте собственные разделы справки в этот файл.|
 |Afxprint.htm|*Имя_проекта*\hlp|Разделы справки HTML|Содержит разделы справки для команд печати.|
 |*.jpg; \*.gif|*Имя_проекта*\hlp\Images|Файлы ресурсов|Содержат изображения для различных формируемых разделов в файлах справки.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Типы файлов, создаваемых для проектов Visual Studio C++](file-types-created-for-visual-cpp-projects.md)

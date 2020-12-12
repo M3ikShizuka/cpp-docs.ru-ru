@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: `/Fi` (Предварительная обработка имени выходного файла)'
 title: /Fi (предварительная обработка имени выходного файла)
 ms.date: 08/12/2020
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - /Fi compiler option (C++)
 - preprocessing output files, file name
 ms.assetid: 6d0ba983-a8b7-41ec-84f5-b4688ef8efee
-ms.openlocfilehash: 82bf09a8f01f656f90ad9971530b05f108fc95a4
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: c598730b19b843aa312df71d745ed363d082cc43
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561093"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192230"
 ---
 # <a name="fi-preprocess-output-file-name"></a>`/Fi` (Предварительная обработка имени выходного файла)
 
@@ -29,7 +30,7 @@ ms.locfileid: "88561093"
 *`pathname`*\
 Относительный или абсолютный путь и имя файла выходных данных, создаваемых **`/P`** параметром компилятора. Или путь к каталогу для *`.i`* выходных файлов, если указано более одного входного файла. Не ставьте пробел между **`/Fi`** параметром и *`pathname`* .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Используйте **`/Fi`** параметр компилятора в сочетании с **`/P`** параметром компилятора. Если **`/P`** не указано, **`/Fi`** вызывается Предупреждение командной строки D9007.
 
@@ -53,9 +54,9 @@ CL /P /Fi".\\preprocessed\\" main.cpp helper.cpp
 
 1. Откройте исходный файл или диалоговое окно **страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
-1. Выберите **Configuration Properties**  >  страницу свойств препроцессора свойства конфигурации**C/C++**  >  **Preprocessor** .
+1. Выберите   >  страницу свойств препроцессора свойства конфигурации **C/C++**  >   .
 
-1. Установите значение **Да**для параметра **Предварительная обработка в качестве** значения свойства файла.
+1. Установите значение **Да** для параметра **Предварительная обработка в качестве** значения свойства файла.
 
 1. Выберите страницу свойств **Свойства конфигурации**  >  **C/C++**  >  **Командная строка** .
 
@@ -65,7 +66,7 @@ CL /P /Fi".\\preprocessed\\" main.cpp helper.cpp
 
 - См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Параметры компилятора MSVC](compiler-options.md)<br/>
 [`/P` (Предварительная обработка в файле)](p-preprocess-to-a-file.md)<br/>

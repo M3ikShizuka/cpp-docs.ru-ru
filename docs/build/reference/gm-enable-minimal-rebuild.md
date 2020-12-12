@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/GM (включение минимального перестроения)
 title: /Gm (включение минимального перепостроения)
 ms.date: 11/12/2018
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - Gm compiler option [C++]
 - -Gm compiler option [C++]
 ms.assetid: d8869ce0-d2ea-40eb-8dae-6d2cdb61dd59
-ms.openlocfilehash: 9b928f3add0a2ec10257bf63fe61a824336c19b8
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 2e0035f4fc50f16ce1c381dd707a2411b29bdb6c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79439640"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191892"
 ---
 # <a name="gm-enable-minimal-rebuild"></a>/Gm (включение минимального перепостроения)
 
@@ -44,7 +45,7 @@ ms.locfileid: "79439640"
 
 1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
-1. Выберите **Свойства конфигурации** > странице свойств **создания кода** **C++ C/**  > .
+1. Выберите страницу свойств **Свойства "**  >  Создание кода **C/C++**"  >   .
 
 1. Измените свойство **включить минимальное перестроение** .
 
@@ -55,4 +56,4 @@ ms.locfileid: "79439640"
 ## <a name="see-also"></a>См. также раздел
 
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора MSVC](compiler-command-line-syntax.md)
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)

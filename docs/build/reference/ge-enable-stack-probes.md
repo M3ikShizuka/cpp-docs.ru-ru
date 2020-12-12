@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/GE (Включение проверок стека)
 title: /Ge (включить проверку стека)
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,16 +13,16 @@ helpviewer_keywords:
 - stack checking calls
 - Ge compiler option [C++]
 ms.assetid: 4b54deae-4e3c-4bfa-95f3-ba23590f7258
-ms.openlocfilehash: a785ec041370e0bcbb2ce8b698bfba89235a0a0c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: db996deb1c5b964661e5465fe72cfb0fab93df56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292189"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192022"
 ---
 # <a name="ge-enable-stack-probes"></a>/Ge (включить проверку стека)
 
-Включает стековые зонды для каждого вызова функции, в которой требуется хранилище для локальных переменных.
+Активирует зонды стека для каждого вызова функции, для которого требуется хранилище локальных переменных.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,17 +30,17 @@ ms.locfileid: "62292189"
 /Ge
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Этот механизм полезен в том случае, если перезаписи функций проверки стека. Рекомендуется использовать [/Gh (Включение _penter функции-ловушки)](gh-enable-penter-hook-function.md) вместо перезаписи проверки стека.
+Этот механизм полезен при перезаписи функций проверки стека. Рекомендуется использовать [/GH (включить функцию-обработчик _penter)](gh-enable-penter-hook-function.md) вместо перезаписи проверки стека.
 
-[/ GS (элемент управления стека проверки вызывает)](gs-control-stack-checking-calls.md) имеет тот же эффект.
+[/GS (управление вызовами проверки стека)](gs-control-stack-checking-calls.md) действует одинаково.
 
-**/GE** является устаревшим, начиная с Visual Studio 2005, компилятор автоматически создает проверка стека. Список параметров компилятора, см. в разделе **нерекомендуемые и удаленные параметры компилятора** в [параметры компилятора, упорядоченные по категориям](compiler-options-listed-by-category.md).
+**/GE** является устаревшим; начиная с Visual Studio 2005, компилятор автоматически создает проверку стека. Список устаревших параметров компилятора см. в разделе **устаревшие и удаленные параметры** компилятора в [параметрах компилятора, перечисленных по категориям](compiler-options-listed-by-category.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Установка данного параметра компилятора в среде разработки Visual Studio
 
-1. Откройте диалоговое окно **Страницы свойств** проекта. Дополнительные сведения см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
 1. Откройте папку **C/C++** .
 
@@ -51,7 +52,7 @@ ms.locfileid: "62292189"
 
 - См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора MSVC](compiler-command-line-syntax.md)
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)

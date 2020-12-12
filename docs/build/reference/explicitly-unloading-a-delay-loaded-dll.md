@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Явная выгрузка библиотеки DLL Delay-Loaded'
 title: Явная выгрузка библиотеки DLL, загруженной с задержкой
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - __FUnloadDelayLoadedDLL2
 - delayed loading of DLLs, unloading
 ms.assetid: 1c4c5172-fd06-45d3-9e4f-f12343176b3c
-ms.openlocfilehash: 9909a3e179aa6c0af3a622c7bf1b545326f90bbd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 03df08487acc1be05226021d6b7c1593eb0f031b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62293463"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192386"
 ---
 # <a name="explicitly-unloading-a-delay-loaded-dll"></a>Явная выгрузка библиотеки DLL, загруженной с задержкой
 
-[/Delay](delay-delay-load-import-settings.md): unload-параметр компоновщика позволяет выгружать библиотеку DLL, загруженную с задержкой. По умолчанию, когда ваш код выгружает библиотеку DLL (с помощью/DELAY: unload и **__FUnloadDelayLoadedDLL2**), импорты, загружаемые с задержкой остаются в таблице адресов импорта (IAT). Тем не менее при использовании/DELAY: unload в командной строке компоновщика, вспомогательная функция будет поддерживать явную выгрузку DLL-библиотеки, сброс IAT в своем первоначальном виде; указатели становится неправильным будут перезаписаны. Поле является IAT [ImgDelayDescr](calling-conventions-parameters-and-return-type.md) , содержащий адрес копии оригинальной IAT (если он существует).
+Параметр компоновщика [/delay](delay-delay-load-import-settings.md): unload позволяет выгрузить библиотеку DLL, которая была загружена с задержкой. По умолчанию, когда код выгружает библиотеку DLL (с использованием/Delay: Load и **__FUnloadDelayLoadedDLL2**), импортированные с задержкой импорты остаются в таблице адресов импорта (IAT). Однако при использовании параметра/delay: unload в командной строке компоновщика вспомогательная функция будет поддерживать явную выгрузку библиотеки DLL, перестроив IAT на исходную форму. Теперь недопустимые указатели будут перезаписаны. IAT — это поле в [имгделайдескр](calling-conventions-parameters-and-return-type.md) , содержащее адрес копии исходной IAT (если она существует).
 
 ## <a name="example"></a>Пример
 
@@ -49,14 +50,14 @@ int main()
 
 ### <a name="comments"></a>Комментарии
 
-Важные примечания на выгрузка библиотеки DLL с отложенной загрузкой.
+Важные примечания по выгрузке библиотеки DLL с отложенной загрузкой:
 
-- Можно найти реализацию **__FUnloadDelayLoadedDLL2** функции в файле \VC7\INCLUDE\DELAYHLP. CPP.
+- Реализацию функции **__FUnloadDelayLoadedDLL2** можно найти в файле \VC7\INCLUDE\DELAYHLP. CPP.
 
-- Имя параметра **__FUnloadDelayLoadedDLL2** функции должно точно соответствовать (включая регистр) Библиотека импорта содержимое (которая также присутствует строка в таблице импорта на рисунке). Можно просмотреть содержимое библиотеки импорта с [DUMPBIN/DEPENDENTS](dependents.md). Если требуется соответствие строк без учета регистра, можно обновить **__FUnloadDelayLoadedDLL2** для использования одного из строковых функций CRT или вызов Windows API.
+- Параметр Name функции **__FUnloadDelayLoadedDLL2** должен точно совпадать (включая регистр), что содержится в библиотеке импорта (эта строка также находится в таблице импорта на изображении). Содержимое библиотеки импорта можно просмотреть с помощью [dumpbin/депендентс](dependents.md). Если требуется совпадение строк без учета регистра, можно обновить **__FUnloadDelayLoadedDLL2** , чтобы использовать одну из СТРОКОВЫХ функций CRT или вызов Windows API.
 
-См. в разделе [выгрузка библиотеки DLL с Delay-Loaded](unloading-a-delay-loaded-dll.md) Дополнительные сведения.
+Дополнительные сведения см. [в разделе Выгрузка Delay-Loaded DLL](unloading-a-delay-loaded-dll.md) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Поддержка компоновщика для библиотек DLL с отложенной загрузкой](linker-support-for-delay-loaded-dlls.md)
+[Поддержка компоновщика для Delay-Loadedных библиотек DLL](linker-support-for-delay-loaded-dlls.md)
