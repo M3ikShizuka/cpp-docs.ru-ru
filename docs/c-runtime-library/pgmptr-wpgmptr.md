@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _pgmptr, _wpgmptr'
 title: _pgmptr, _wpgmptr
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - _pgmptr function
 - pgmptr function
 ms.assetid: 4d44b515-0eff-4136-8bc4-684195f218f5
-ms.openlocfilehash: beff0401d0aa2aa21819e58618ef4c02795d4393
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 70902be4f1c9686839a958439116fc3e28a2a315
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75300161"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213446"
 ---
 # <a name="_pgmptr-_wpgmptr"></a>_pgmptr, _wpgmptr
 
@@ -30,7 +31,7 @@ extern char *_pgmptr;
 extern wchar_t *_wpgmptr;
 ```
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
 Когда программа выполняется из интерпретатора команд (Cmd.exe), `_pgmptr` автоматически инициализируется полным путем к исполняемому файлу. Например, если Hello.exe находится в C:\BIN и C:\BIN содержится в пути, для переменной `_pgmptr` устанавливается значение "C:\BIN\Hello.exe" при выполнении команды:
 
@@ -75,6 +76,6 @@ int main( void )
 
 Можно использовать переменную `_wpgmptr`, изменив `%Fs` на `%S` и `main` на `wmain`.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Глобальные переменные](../c-runtime-library/global-variables.md)

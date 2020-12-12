@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: ограничения для полей пути'
 title: Пределы поля "Путь"
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - MAX_DIR constant
 - MAX_EXT constant
 ms.assetid: 2b5d0e43-1347-45b4-8397-24a8a45c444e
-ms.openlocfilehash: 8db9961bd2d5b5b3ea9d3addad3c26737b4f5199
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 41698d946e45a78f9b89f40fdd3c7c58af5d4354
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171402"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213485"
 ---
 # <a name="path-field-limits"></a>Пределы поля "Путь"
 
@@ -39,7 +40,7 @@ ms.locfileid: "80171402"
 
 Эти константы определяют максимальную длину пути и отдельных полей в пути.
 
-|Постоянно|Значение|
+|Константа|Значение|
 |--------------|-------------|
 |`_MAX_DIR`|Максимальная длина компонента каталога|
 |`_MAX_DRIVE`|Максимальная длина компонента диска|
