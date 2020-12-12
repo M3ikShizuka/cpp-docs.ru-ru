@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кмфкколорбуттон Class'
 title: Класс Кмфкколорбуттон
 ms.date: 11/04/2016
 f1_keywords:
@@ -44,12 +45,12 @@ helpviewer_keywords:
 - CMFCColorButton [MFC], UpdateColor
 - CMFCColorButton [MFC], m_bEnabledInCustomizeMode
 ms.assetid: 9fdf34ae-4cc5-4c5e-9d89-1c50e8a73699
-ms.openlocfilehash: 7abe37969799d7fcd78d525a5ec1c6faa9d876ee
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: b3f3e40f1e52c1a387563fde2aa1027046d557f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561002"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327704"
 ---
 # <a name="cmfccolorbutton-class"></a>Класс Кмфкколорбуттон
 
@@ -61,7 +62,7 @@ ms.locfileid: "88561002"
 class CMFCColorButton : public CMFCButton
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -114,11 +115,11 @@ class CMFCColorButton : public CMFCButton
 |`m_strDocColorsText`|Строка. Метка кнопки в меню выбора цвета, в котором отображаются цвета документа.|
 |`m_strOtherText`|Строка. Метка кнопки "другое" в меню выбора цвета.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию `CMFCColorButton` класс ведет себя как кнопка, открывающая диалоговое окно выбора цвета. Диалоговое окно Палитра цветов содержит массив мелких цветных кнопок и кнопку "другой", которая отображает настраиваемую палитру цветов. (Стандартная системная кнопка "Other" помечена **дополнительными цветами**.) Когда пользователь выбирает новый цвет, `CMFCColorButton` объект отражает изменение и отображает выбранный цвет.
 
-Создайте элемент управления "Кнопка цвета" непосредственно в коде либо с помощью средства **ClassWizard** и шаблона диалогового окна. При непосредственном создании элемента управления "Кнопка цвета" добавьте в `CMFCColorButton` приложение переменную, а затем вызовите конструктор и `Create` методы `CMFCColorButton` объекта. При использовании **ClassWizard**добавьте `CButton` переменную в приложение, а затем измените тип переменной с `CButton` на `CMFCColorButton` .
+Создайте элемент управления "Кнопка цвета" непосредственно в коде либо с помощью средства **ClassWizard** и шаблона диалогового окна. При непосредственном создании элемента управления "Кнопка цвета" добавьте в `CMFCColorButton` приложение переменную, а затем вызовите конструктор и `Create` методы `CMFCColorButton` объекта. При использовании **ClassWizard** добавьте `CButton` переменную в приложение, а затем измените тип переменной с `CButton` на `CMFCColorButton` .
 
 Диалоговое окно Палитра цветов ( [класс кмфкколорбар](../../mfc/reference/cmfccolorbar-class.md)) отображается методом [Кмфкколорбуттон:: оншовколорпопуп](#onshowcolorpopup) , когда платформа вызывает `OnLButtonDown` обработчик событий. Метод [кмфкколорбуттон:: оншовколорпопуп](#onshowcolorpopup) можно переопределить для поддержки выбора пользовательского цвета.
 
@@ -165,7 +166,7 @@ void EnableAutomaticButton(
 *bEnable*<br/>
 окне Указывает, включена ли автоматическая кнопка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfccolorbuttonenableotherbutton"></a><a name="enableotherbutton"></a> Кмфкколорбуттон:: Енаблеосербуттон
 
@@ -189,7 +190,7 @@ void EnableOtherButton(
 *bEnable*<br/>
 окне Указывает, включена ли или отключена кнопка "другие".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Нажмите кнопку "другие", чтобы отобразить диалоговое окно цвета. Если параметр *балтколордлг* имеет значение true, то отображается [класс кмфкколордиалог](../../mfc/reference/cmfccolordialog-class.md) . в противном случае отображается диалоговое окно системный цвет.
 
@@ -205,7 +206,7 @@ COLORREF GetAutomaticColor() const;
 
 Значение RGB, представляющее текущий автоматический цвет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Текущий автоматический цвет задается методом [кмфкколорбуттон:: енаблеаутоматикбуттон](#enableautomaticbutton) .
 
@@ -221,7 +222,7 @@ COLORREF GetColor() const;
 
 Значение RGB.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfccolorbuttonisdrawxptheme"></a><a name="isdrawxptheme"></a> Кмфкколорбуттон:: Исдравкспсеме
 
@@ -243,7 +244,7 @@ BOOL IsDrawXPTheme() const;
 BOOL m_bEnabledInCustomizeMode;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если необходимо добавить кнопку цвета на страницу диалогового окна настройки (или разрешить пользователю выбирать другой цвет во время настройки), включите эту кнопку, установив `m_bEnabledInCustomizeMode` для элемента значение true. По умолчанию для этого элемента задано значение FALSE.
 
@@ -269,7 +270,7 @@ virtual void OnDraw(
 *уистате*<br/>
 окне Задает визуальное состояние кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод, чтобы настроить процесс отрисовки.
 
@@ -295,7 +296,7 @@ virtual void OnDrawBorder(
 *уистате*<br/>
 окне Задает визуальное состояние кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите эту функцию, чтобы настроить внешний вид цветовой границы кнопки цвета.
 
@@ -317,7 +318,7 @@ virtual void OnDrawFocusRect(
 *ректклиент*<br/>
 окне Прямоугольник в контексте устройства, определяемый параметром *PDC* , который определяет границы кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод, чтобы настроить внешний вид прямоугольника фокуса.
 
@@ -329,7 +330,7 @@ virtual void OnDrawFocusRect(
 virtual void OnShowColorPopup();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfccolorbuttonrebuildpalette"></a><a name="rebuildpalette"></a> Кмфкколорбуттон:: Ребуилдпалетте
 
@@ -357,7 +358,7 @@ void SetColor(COLORREF color);
 *color*<br/>
 окне Значение RGB.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfccolorbuttonsetcolorname"></a><a name="setcolorname"></a> Кмфкколорбуттон:: Сетколорнаме
 
@@ -377,7 +378,7 @@ static void SetColorName(
 *strName*<br/>
 окне Имя цвета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Список имен цветов является глобальным для каждого приложения. Следовательно, этот метод передает свои параметры в [кмфкколорбар:: сетколорнаме](../../mfc/reference/cmfccolorbar-class.md#setcolorname).
 
@@ -394,7 +395,7 @@ void SetColumnsNumber(int nColumns);
 *nColumns*<br/>
 окне Указывает количество столбцов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Пользователь может выбрать цвет из всплывающей цветовой панели, которая отображает таблицу предопределенных цветов. Этот метод используется для определения количества столбцов в таблице.
 
@@ -416,7 +417,7 @@ void SetDocumentColors(
 *лстколорс*<br/>
 окне Ссылка на список значений RGB.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `CMFCColorButton`Объект содержит список значений RGB, которые передаются в объект [класса кмфкколорбар](../../mfc/reference/cmfccolorbar-class.md) . При отображении цветовой панели эти цвета отображаются в специальном разделе, метка которого указана параметром *лпсзлабел* .
 
@@ -433,7 +434,7 @@ void SetPalette(CPalette* pPalette);
 *ппалетте*<br/>
 окне Указатель на цветовую палитру.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfccolorbuttonsizetocontent"></a><a name="sizetocontent"></a> Кмфкколорбуттон:: SizeToContent
 
@@ -452,7 +453,7 @@ virtual CSize SizeToContent(BOOL bCalcOnly=FALSE);
 
 `CSize`Объект, указывающий новый размер элемента управления "Кнопка".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfccolorbuttonupdatecolor"></a><a name="updatecolor"></a> Кмфкколорбуттон:: Упдатеколор
 
@@ -467,11 +468,11 @@ virtual void UpdateColor(COLORREF color);
 *color*<br/>
 окне Цвет, выбранный пользователем.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `UpdateColor`Функция изменяет цвет выбранной в данный момент кнопки и уведомляет ее родителя, отправляя WM_COMMAND сообщение с BN_CLICKED стандартным уведомлением. Чтобы получить выбранный цвет, используйте метод [кмфкколорбуттон::](#getcolor) WebMethod.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>

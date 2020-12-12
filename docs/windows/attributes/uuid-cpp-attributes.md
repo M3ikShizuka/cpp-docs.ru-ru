@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: UUID (атрибуты C++)'
 title: uuid (атрибуты C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - uuid attribute
 ms.assetid: 90562a94-5e28-451b-a4b0-cadda7f66efe
-ms.openlocfilehash: 9ff8888c26945d7f118e71002e3b3290217b463c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 25c84b435fe86af1e56b17568301752a4795a0ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843044"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327230"
 ---
 # <a name="uuid-c-attributes"></a>uuid (атрибуты C++)
 
@@ -28,7 +29,7 @@ ms.locfileid: "88843044"
 *uuid*<br/>
 128-разрядный уникальный идентификатор.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Если в определении интерфейса или класса не указан `uuid` Атрибут C++, компилятор Microsoft C++ предоставит его. При указании `uuid` необходимо включить кавычки.
 
@@ -36,7 +37,7 @@ ms.locfileid: "88843044"
 
 Для создания собственных уникальных идентификаторов можно использовать Uuidgen.exe или Guidgen.exe. (Чтобы запустить любой из этих средств, нажмите кнопку **Пуск** и выберите пункт **выполнить** в меню. Затем введите имя требуемого инструмента.)
 
-При использовании в проекте, который не использует ATL, указание атрибута аналогично `uuid` указанию [uuid](../../cpp/uuid-cpp.md) **`__declspec`** модификатора UUID. Чтобы получить `uuid` класс, можно использовать [__uuidof](../../cpp/uuidof-operator.md)
+При использовании в проекте, который не использует ATL, указание атрибута аналогично `uuid` указанию [](../../cpp/uuid-cpp.md) **`__declspec`** модификатора UUID. Чтобы получить `uuid` класс, можно использовать [__uuidof](../../cpp/uuidof-operator.md)
 
 ## <a name="example"></a>Пример
 

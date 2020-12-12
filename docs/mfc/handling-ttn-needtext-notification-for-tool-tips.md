@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье обработка уведомлений TTN_NEEDTEXT для подсказок
 title: Обработка уведомления TTN_NEEDTEXT для всплывающих подсказок
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - notifications [MFC], tool tips
 - tool tips [MFC], notifications
 ms.assetid: d0370a65-21ba-4676-bcc5-8cf851bbb15c
-ms.openlocfilehash: 75850dbf92587cf654d4f7a39ea54af1fd9dd5bd
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 793f6c42e0e43c341884b999e5e1aed0be448b00
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620085"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326422"
 ---
 # <a name="handling-ttn_needtext-notification-for-tool-tips"></a>Обработка уведомления TTN_NEEDTEXT для всплывающих подсказок
 
@@ -32,7 +33,7 @@ ms.locfileid: "84620085"
 
 Ниже перечислены параметры с курсивом.
 
-*идентификатор*<br/>
+*id*<br/>
 Идентификатор элемента управления, отправившего уведомление. Не используется. Идентификатор элемента управления берется из структуры **NMHDR** .
 
 *пнмхдр*<br/>
@@ -51,4 +52,4 @@ ms.locfileid: "84620085"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Всплывающие подсказки в Windows, не являющиеся производными CFrameWnd](tool-tips-in-windows-not-derived-from-cframewnd.md)
+[Всплывающие подсказки в Windows, не являющиеся производными от CFrameWnd](tool-tips-in-windows-not-derived-from-cframewnd.md)

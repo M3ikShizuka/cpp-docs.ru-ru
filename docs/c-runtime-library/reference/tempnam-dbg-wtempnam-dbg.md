@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _tempnam_dbg, _wtempnam_dbg'
 title: _tempnam_dbg, _wtempnam_dbg
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - _tempnam_dbg function
 - _wtempnam_dbg function
 ms.assetid: e3760bb4-bb01-4808-b689-2c45af56a170
-ms.openlocfilehash: 73642730995ac5c0b47519fac64b30400d47767c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 0f8788eb00d6cfd19f5675824838ce37e905b8ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70946251"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326214"
 ---
 # <a name="_tempnam_dbg-_wtempnam_dbg"></a>_tempnam_dbg, _wtempnam_dbg
 
@@ -65,11 +66,11 @@ wchar_t *_wtempnam_dbg(
 
 ### <a name="parameters"></a>Параметры
 
-*команды*<br/>
+*dir*<br/>
 Путь, используемый в имени файла, если переменная среды TMP отсутствует или TMP не является допустимым каталогом.
 
 *prefix*<br/>
-Строка, которая будет предваряться именами, возвращаемыми функцией **_tempnam**.
+Строка, которая будет предваряться именами, возвращаемыми **_tempnam**.
 
 *blockType*<br/>
 Запрошенный тип блока памяти: **_CLIENT_BLOCK** или **_NORMAL_BLOCK**.
@@ -77,7 +78,7 @@ wchar_t *_wtempnam_dbg(
 *filename*<br/>
 Указатель на имя исходного файла, который запросил операцию выделения, или **значение NULL**.
 
-*linenumber*<br/>
+*LineNumber*<br/>
 Номер строки в исходном файле, где была запрошена операция выделения, или **значение NULL**.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -85,15 +86,15 @@ wchar_t *_wtempnam_dbg(
 Каждая функция возвращает указатель на созданное имя или **значение NULL** в случае сбоя. Сбой может произойти, если в переменной среды TMP и в параметре *dir* указано недопустимое имя каталога.
 
 > [!NOTE]
-> **бесплатный** (или **free_dbg**) необходимо вызывать для указателей, выделенных **_tempnam_dbg** и **_wtempnam_dbg**.
+> для указателей, выделенных **_tempnam_dbg** и **_wtempnam_dbg**, необходимо вызывать **Free** (или **free_dbg**).
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Функции **_tempnam_dbg** и **_wtempnam_dbg** идентичны **_tempnam** и **_wtempnam** , за исключением того, что при определении **_DEBUG** эти функции используют отладочную версию функций **malloc** и **_malloc_dbg**, для выделить память, если **значение NULL** передается как первый параметр. Дополнительные сведения см. в разделе [_malloc_dbg](malloc-dbg.md).
+Функции **_tempnam_dbg** и **_wtempnam_dbg** идентичны **_tempnam** и **_wtempnam** за исключением того, что при определении **_DEBUG** эти функции используют отладочную версию **malloc** и **_malloc_dbg**, чтобы выделить память, если **значение NULL** передается как первый параметр. Дополнительные сведения см. в разделе [_malloc_dbg](malloc-dbg.md).
 
-Как правило, явно вызывать эти функции не требуется. Вместо этого можно определить флаг **_CRTDBG_MAP_ALLOC**. Если определен **_CRTDBG_MAP_ALLOC** , вызовы методов **_tempnam** и **_wtempnam** пересопоставляются с **_tempnam_dbg** и **_wtempnam_dbg**соответственно, а *блокктипе* устанавливается в **_NORMAL_BLOCK**. Таким образом, не нужно явно вызывать эти функции, если не нужно помечать блоки кучи как **_CLIENT_BLOCK**. Дополнительные сведения см. в разделе [Типы блоков в отладочной куче](/visualstudio/debugger/crt-debug-heap-details).
+Как правило, явно вызывать эти функции не требуется. Вместо этого можно определить флаг **_CRTDBG_MAP_ALLOC**. Если определено **_CRTDBG_MAP_ALLOC** , вызовы **_tempnam** и **_wtempnam** пересопоставляются с **_tempnam_dbg** и **_wtempnam_dbg** соответственно, с *блокктипе* , для которого задано значение **_NORMAL_BLOCK**. Таким образом, не нужно явно вызывать эти функции, если не нужно помечать блоки кучи как **_CLIENT_BLOCK**. Дополнительные сведения см. в разделе [Типы блоков в отладочной куче](/visualstudio/debugger/crt-debug-heap-details).
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Подпрограмма TCHAR.H|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -105,9 +106,9 @@ wchar_t *_wtempnam_dbg(
 |-------------|---------------------|
 |**_tempnam_dbg**, **_wtempnam_dbg**|\<crtdbg.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [_tempnam, _wtempnam, tmpnam, _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md)<br/>
 [Потоковый ввод-вывод](../../c-runtime-library/stream-i-o.md)<br/>

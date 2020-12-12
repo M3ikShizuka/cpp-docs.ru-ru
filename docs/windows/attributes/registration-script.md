@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: registration_script'
 title: registration_script (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - registration_script attribute
 ms.assetid: 786f8072-9187-4163-a979-7a604dd4c888
-ms.openlocfilehash: 8a57f0b3d0925d1e1096a31734fa4c9d666c5743
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3722a799818c8ad76d710e4c570bc5fdd6b2e10c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846086"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327337"
 ---
 # <a name="registration_script"></a>registration_script
 
@@ -28,7 +29,7 @@ ms.locfileid: "88846086"
 *script*<br/>
 Полный путь к файлу пользовательского скрипта регистрации (RGS). Значение **None**, например `script = "none"` , указывает, что компонент coclass не имеет требований регистрации.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Атрибут **registration_script** C++ выполняет пользовательский скрипт регистрации, указанный в *скрипте*. Если этот атрибут не указан, используется стандартный RGS-файл (содержащий сведения для регистрации компонента). Дополнительные сведения о RGS-файлах см. [в разделе "компонент реестра ATL" (регистратор)](../../atl/atl-registry-component-registrar.md).
 

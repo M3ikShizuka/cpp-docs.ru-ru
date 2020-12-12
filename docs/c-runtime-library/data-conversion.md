@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о преобразовании данных
 title: Преобразование данных
 ms.date: 03/21/2018
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - data conversion routines [C++]
 - converting data
 ms.assetid: b15b5268-7467-49f1-bf95-5299b598f94c
-ms.openlocfilehash: 94e6a8182e12ecd74f9d2cd5dddaa84a1e3eb847
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4ce9a7e04ed8d7e561e256929b8b8625e34d2620
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218771"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327052"
 ---
 # <a name="data-conversion"></a>Преобразование данных
 
@@ -20,13 +21,13 @@ ms.locfileid: "87218771"
 
 ## <a name="data-conversion-routines"></a>Подпрограммы преобразования данных
 
-|Подпрограмма|Используйте|
+|Подпрограмма|Использовать|
 |-------------|---------|
 |[просто](../c-runtime-library/reference/abs-labs-llabs-abs64.md)|Находит абсолютное значение целого числа|
-|[atof, _atof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Преобразовать строку в**`float`**|
-|[atoi, _atoi_l](../c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l.md)|Преобразовать строку в**`int`**|
-|[_atoi64, _atoi64_l](../c-runtime-library/reference/atoi64-atoi64-l-wtoi64-wtoi64-l.md)|Преобразовать строку в **`__int64`** или**`long long`**|
-|[atol, _atol_l](../c-runtime-library/reference/atol-atol-l-wtol-wtol-l.md)|Преобразовать строку в**`long`**|
+|[atof, _atof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Преобразовать строку в **`float`**|
+|[atoi, _atoi_l](../c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l.md)|Преобразовать строку в **`int`**|
+|[_atoi64, _atoi64_l](../c-runtime-library/reference/atoi64-atoi64-l-wtoi64-wtoi64-l.md)|Преобразовать строку в **`__int64`** или **`long long`**|
+|[atol, _atol_l](../c-runtime-library/reference/atol-atol-l-wtol-wtol-l.md)|Преобразовать строку в **`long`**|
 |[c16rtomb, c32rtomb](../c-runtime-library/reference/c16rtomb-c32rtomb1.md)|Преобразуют символ UTF-16 или UTF-32 в эквивалентный многобайтовый символ|
 |[_ecvt](../c-runtime-library/reference/ecvt.md), [_ecvt_s](../c-runtime-library/reference/ecvt-s.md)|Преобразовать **`double`** в строку указанной длины|
 |[_fcvt](../c-runtime-library/reference/fcvt.md), [_fcvt_s](../c-runtime-library/reference/fcvt-s.md)|Преобразовать **`double`** в строку с указанным числом цифр после десятичной запятой|
@@ -43,7 +44,7 @@ ms.locfileid: "87218771"
 |[mbrtoc16, mbrtoc32](../c-runtime-library/reference/mbrtoc16-mbrtoc323.md)|Преобразуют многобайтовый символ в эквивалентный символ UTF-16 или UTF-32|
 |[mbstowcs, _mbstowcs_l](../c-runtime-library/reference/mbstowcs-mbstowcs-l.md), [mbstowcs_s, _mbstowcs_s_l](../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md)|Преобразовать последовательность многобайтовых символов в соответствующую последовательность расширенных символов.|
 |[mbtowc, _mbtowc_l](../c-runtime-library/reference/mbtowc-mbtowc-l.md)|Преобразовать многобайтовый символ в соответствующий расширенный символ.|
-|[strtod, _strtod_l, wcstod, _wcstod_l](../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md)|Преобразовать строку в**`double`**|
+|[strtod, _strtod_l, wcstod, _wcstod_l](../c-runtime-library/reference/strtod-strtod-l-wcstod-wcstod-l.md)|Преобразовать строку в **`double`**|
 |[strtol, wcstol, _strtol_l, _wcstol_l](../c-runtime-library/reference/strtol-wcstol-strtol-l-wcstol-l.md)|Преобразовать строку в **`long`** целое число|
 |[strtoul, _strtoul_l, wcstoul, _wcstoul_l](../c-runtime-library/reference/strtoul-strtoul-l-wcstoul-wcstoul-l.md)|Преобразовать строку в **`unsigned long`** целое число|
 |[strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](../c-runtime-library/reference/strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)|Преобразуют строку в упорядоченную форму, основываясь на данных языкового стандарта|
@@ -54,10 +55,10 @@ ms.locfileid: "87218771"
 |[toupper, _toupper, towupper, _toupper_l, _towupper_l](../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md)|Преобразуют символ в верхний регистр без дополнительных условий|
 |[wcstombs, _wcstombs_l](../c-runtime-library/reference/wcstombs-wcstombs-l.md), [wcstombs_s, _wcstombs_s_l](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)|Преобразовать последовательность расширенных символов в соответствующую последовательность многобайтовых символов|
 |[wctomb, _wctomb_l](../c-runtime-library/reference/wctomb-wctomb-l.md), [wctomb_s, _wctomb_s_l](../c-runtime-library/reference/wctomb-s-wctomb-s-l.md)|Преобразовать расширенный символ в соответствующий многобайтовый символ|
-|[_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Преобразование строки расширенных символов в**`double`**|
-|[_wtoi, _wtoi_l](../c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l.md)|Преобразовать строку расширенных символов в**`int`**|
-|[_wtoi64, _wtoi64_l](../c-runtime-library/reference/atoi64-atoi64-l-wtoi64-wtoi64-l.md)|Преобразовать строку расширенных символов в **`__int64`** или**`long long`**|
-|[_wtol, _wtol_l](../c-runtime-library/reference/atol-atol-l-wtol-wtol-l.md)|Преобразовать строку расширенных символов в**`long`**|
+|[_wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Преобразование строки расширенных символов в **`double`**|
+|[_wtoi, _wtoi_l](../c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l.md)|Преобразовать строку расширенных символов в **`int`**|
+|[_wtoi64, _wtoi64_l](../c-runtime-library/reference/atoi64-atoi64-l-wtoi64-wtoi64-l.md)|Преобразовать строку расширенных символов в **`__int64`** или **`long long`**|
+|[_wtol, _wtol_l](../c-runtime-library/reference/atol-atol-l-wtol-wtol-l.md)|Преобразовать строку расширенных символов в **`long`**|
 
 ## <a name="see-also"></a>См. также раздел
 

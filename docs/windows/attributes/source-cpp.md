@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: источник (C++)'
 title: Источник (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - source attribute
 ms.assetid: 1878d05d-7709-4e97-b114-c62f38f5140e
-ms.openlocfilehash: f9a1f576e26805c5dd84c2d83cdf3615d0661af3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 493795f41571fd9c940147eda3b8dd6dd543f18a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842771"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327288"
 ---
 # <a name="source-c"></a>source (C++)
 
@@ -28,7 +29,7 @@ ms.locfileid: "88842771"
 *interfaces*;<br/>
 Один или несколько интерфейсов, которые указываются при применении атрибута Source к классу. Этот параметр не используется, если источник применяется к свойству или методу.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **Исходный** атрибут C++ имеет те же функциональные возможности, что и [Исходный](/windows/win32/Midl/source) атрибут MIDL.
 

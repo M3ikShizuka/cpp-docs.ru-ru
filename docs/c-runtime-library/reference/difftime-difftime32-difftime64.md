@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: difftime, _difftime32 _difftime64'
 title: difftime, _difftime32, _difftime64
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - _difftime64 function
 - difftime32 function
 ms.assetid: 4cc0ac2b-fc7b-42c0-8283-8c9d10c566d0
-ms.openlocfilehash: e8d9ed3e33935c8e6c788380c02b9ae179dd06e8
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3f2c4f713f5e4dd667bd4e0a557170e9d23e6700
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914780"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327024"
 ---
 # <a name="difftime-_difftime32-_difftime64"></a>difftime, _difftime32, _difftime64
 
@@ -69,7 +70,7 @@ double _difftime64( __time64_t timeEnd, __time64_t timeStart );
 
 **difftime** возвращает затраченное время в секундах с *значению TimeStart* на *тиминд*. Возвращаемое значение представляет собой число двойной точности с плавающей запятой. Возвращаемое значение может быть равно 0, что указывает на ошибку.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **difftime** вычислит разницу между двумя указанными значениями времени *значению TimeStart* и *тиминд*.
 
@@ -77,7 +78,7 @@ double _difftime64( __time64_t timeEnd, __time64_t timeStart );
 
 **difftime** — это встроенная функция, которая вычисляет либо **_difftime32** , либо **_difftime64** в зависимости от того, определен ли **_USE_32BIT_TIME_T** . _difftime32 и _difftime64 можно использовать для принудительного применения определенного размера типа времени.
 
-Эти функции проверяют свои параметры. Если один из параметров имеет нулевое или отрицательное значение, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции возвращают 0 **errno** и применяют значение **еинвал**.
+Эти функции проверяют свои параметры. Если один из параметров имеет нулевое или отрицательное значение, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции возвращают 0  и применяют значение **еинвал**.
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -149,6 +150,6 @@ Program takes      3 seconds.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Поддержка чисел с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
 [Операции управления временем](../../c-runtime-library/time-management.md)<br/>
 [time, _time32, _time64](time-time32-time64.md)<br/>

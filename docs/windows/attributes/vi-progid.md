@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: vi_progid'
 title: vi_progid (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - vi_progid attribute
 ms.assetid: a52449be-b93e-4111-b883-44bb8da53261
-ms.openlocfilehash: b27a9a2f5a05535bd11b8091059e5be277b9692c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 766ebcee636b3fb0bcdb1aeabd53ee0e977ca790
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832923"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327191"
 ---
 # <a name="vi_progid"></a>vi_progid
 
@@ -30,7 +31,7 @@ ms.locfileid: "88832923"
 
 Идентификаторы ProgID представляют собой удобочитаемую для человека версию идентификатора класса (CLSID), используемую для идентификации объектов COM/ActiveX.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Атрибут **vi_progid** C++ позволяет указать независимый от версии идентификатор ProgID для COM-объекта. Идентификатор ProgID имеет форму *name1. имя2. Version*. Идентификатор ProgID, не зависящий от версии, не имеет *версии*. В можно указать `progid` и атрибут, и **vi_progid** `coclass` . Если не указать **vi_progid**, идентификатор ProgID, не зависящий от версии, является значением, заданным в атрибуте [ProgID](progid.md) .
 
@@ -42,7 +43,7 @@ ms.locfileid: "88832923"
 
 ## <a name="example"></a>Пример
 
-Пример использования **vi_progid**см. в примере [компонентного класса](coclass.md) .
+Пример использования **vi_progid** см. в примере [компонентного класса](coclass.md) .
 
 ## <a name="requirements"></a>Требования
 

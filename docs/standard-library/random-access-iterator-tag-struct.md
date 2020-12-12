@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: random_access_iterator_tag struct'
 title: Структура random_access_iterator_tag
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - random_access_iterator_tag class
 - random_access_iterator_tag struct
 ms.assetid: 59f5b741-c5b4-459c-ad0a-3b67cddeea23
-ms.openlocfilehash: edbd7ad33b2487060840ec690b363d7b934fec27
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 0186f451d5fbd98b8eebcd30fe469e75577954d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458305"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327551"
 ---
-# <a name="randomaccessiteratortag-struct"></a>Структура random_access_iterator_tag
+# <a name="random_access_iterator_tag-struct"></a>Структура random_access_iterator_tag
 
 Класс, предоставляющий тип возвращаемого значения для `iterator_category` функции, представляющей итератор произвольного доступа.
 
@@ -24,11 +25,11 @@ ms.locfileid: "68458305"
 struct random_access_iterator_tag    : public bidirectional_iterator_tag {};
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Классы категории тегов используются как теги компиляции для выбора алгоритма. Функция шаблона должна найти наиболее точно определенную категорию своего аргумента итератора, чтобы можно было использовать наиболее эффективный алгоритм во время компиляции. Для каждого итератора типа `Iterator` `iterator_traits`< `Iterator`>  **::iterator_category** должна быть определена до наиболее точного тега категории, который описывает поведение итератора.
+Классы категории тегов используются как теги компиляции для выбора алгоритма. Функция шаблона должна найти наиболее точно определенную категорию своего аргумента итератора, чтобы можно было использовать наиболее эффективный алгоритм во время компиляции. Для каждого итератора типа `Iterator` категория `iterator_traits`< `Iterator`> **::iterator_category** должна быть определена как наиболее точный тег категории, который описывает поведение итератора.
 
-Тип совпадает с **итератором** \< **iter**>  **:: iterator_category** , когда `Iter` описывает объект, который может служить итератором произвольного доступа.
+Этот тип совпадает с **итератором** : \< **Iter**> **iterator_category** `Iter` , когда описывает объект, который может служить итератором произвольного доступа.
 
 ## <a name="example"></a>Пример
 
@@ -79,7 +80,7 @@ int main( )
 }
 ```
 
-## <a name="sample-output"></a>Пример результатов выполнения
+## <a name="sample-output"></a>Пример выходных данных
 
 Следующие результаты — для платформы x86.
 
@@ -98,12 +99,12 @@ The iterators are not the same.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<iterator>
+**Заголовок:**\<iterator>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Структура bidirectional_iterator_tag](../standard-library/bidirectional-iterator-tag-struct.md)\
-[Потокобезопасность в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [Справочник по стандартной библиотеке C++](../standard-library/cpp-standard-library-reference.md)

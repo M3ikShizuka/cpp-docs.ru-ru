@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения см. в разделе Пошаговое руководство. развертывание Visual C++ приложения с помощью распространяемого пакета Visual C++
 title: Развертывание приложения с помощью распространяемого пакета (C++)
 ms.date: 04/23/2019
 helpviewer_keywords:
 - walkthrough, deploying a Visual C++ application by using the redistributable package
 ms.assetid: e59becbf-b8c6-4c8e-bab3-b69cc1ed3e5e
-ms.openlocfilehash: d2bd0794a67cf70b9da0499e3d2cafa553531fe1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d14de3bf7400af9580570f783dc16ed4082bf1b4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370255"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327106"
 ---
 # <a name="walkthrough-deploying-a-visual-c-application-by-using-the-visual-c-redistributable-package"></a>Пошаговое руководство. Развертывание приложения Visual C++ с помощью распространяемого пакета Visual C++
 
@@ -54,7 +55,7 @@ ms.locfileid: "81370255"
 
       - Ваше приложение MFC (файл EXE).
 
-      - vcredist_x86.exe. В Visual Studio 2015, этот файл находится в *%VCINSTALLDIR%redist\\1033\\*. В Visual Studio 2017 и Visual Studio 2019, этот файл находится в *%VCToolsRedistDir%*. Вы также можете [скачать последний поддерживаемый файл redist от Microsoft](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
+      - vcredist_x86.exe. В Visual Studio 2015 этот файл находится в папке *% вЦинсталлдир% redist \\ 1033 \\*. В Visual Studio 2017 и Visual Studio 2019 этот файл находится в папке *% вктулсредистдир%*. Вы также можете [скачать последнюю поддерживаемую версию распространяемого файла от корпорации Майкрософт](https://support.microsoft.com/help/2977003/the-latest-supported-visual-c-downloads).
 
       - Файл setup.bat, созданный на предыдущем шаге.
 
@@ -83,7 +84,7 @@ ms.locfileid: "81370255"
       Самоизвлекающийся файл установки устанавливает приложение MFC, которое находится в папке, указанной в шаге 2. Приложение выполняется успешно, так как в самоизвлекающийся файл установки включен установщик распространяемого пакета Visual C++.
 
       > [!IMPORTANT]
-      > Чтобы определить, какая версия времени выполнения установлена, установщик\\проверяет\\\\ключ \\\\реестра HKLM SOFTWARE Microsoft VisualStudio_версии_\\\\VC Runtimes\\_платформы_\\version. Если установленная сейчас версия новее чем та, которую пытается установить установщик, последний сообщает об успешной операции без установки более ранней версии и оставляет дополнительную запись на странице установленных программ в панели управления.
+      > Чтобы определить, какая версия среды выполнения установлена, установщик проверяет раздел реестра \\ HKLM \\ Software \\ Microsoft \\ VisualStudio \\ _версия_ \\ \\ среды выполнения VC \\  \\ версии. Если установленная сейчас версия новее чем та, которую пытается установить установщик, последний сообщает об успешной операции без установки более ранней версии и оставляет дополнительную запись на странице установленных программ в панели управления.
 
 ## <a name="see-also"></a>См. также раздел
 

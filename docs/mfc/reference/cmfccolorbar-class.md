@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кмфкколорбар Class'
 title: Класс Кмфкколорбар
 ms.date: 11/04/2016
 f1_keywords:
@@ -74,12 +75,12 @@ helpviewer_keywords:
 - CMFCColorBar [MFC], SetPropList
 - CMFCColorBar [MFC], ShowCommandMessageString
 ms.assetid: 4756ee40-25a5-4cee-af7f-acab7993d1c7
-ms.openlocfilehash: ca28f8a07938e787fcf2d91d714c9dc82092194f
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 5a2935c71a5579dddb2133f2ac6589a6bd447ef6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561041"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327718"
 ---
 # <a name="cmfccolorbar-class"></a>Класс Кмфкколорбар
 
@@ -91,7 +92,7 @@ ms.locfileid: "88561041"
 class CMFCColorBar : public CMFCPopupMenuBar
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="protected-constructors"></a>Защищенные конструкторы
 
@@ -174,7 +175,7 @@ class CMFCColorBar : public CMFCPopupMenuBar
 |`m_strDocColors`|Значение [CString](../../atl-mfc-shared/reference/cstringt-class.md) , которое представляет собой текст, отображаемый на кнопке цвета документа. Дополнительные сведения см. в разделе [кмфкколорбар:: сетдокументколорс](#setdocumentcolors).|
 |`m_strOtherColor`|Значение [CString](../../atl-mfc-shared/reference/cstringt-class.md) , которое является текстом, отображаемым на *другой* кнопке. Дополнительные сведения см. в разделе [кмфкколорбар:: енаблеосербуттон](#enableotherbutton).|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Как правило, объект напрямую не создается `CMFCColorBar` . Вместо этого [класс кмфкколорменубуттон](../../mfc/reference/cmfccolormenubutton-class.md) (используемый в меню и панелях инструментов) или [класс кмфкколорбуттон](../../mfc/reference/cmfccolorbutton-class.md) создает `CMFCColorBar` объект.
 
@@ -239,7 +240,7 @@ class CMFCColorBar : public CMFCPopupMenuBar
 virtual void AdjustLocations();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывается платформой во время WM_SIZE обработки сообщения.
 
@@ -394,7 +395,7 @@ void ContextToSize(
 *бцентербуттонс*\
 окне Значение TRUE, чтобы указать, что содержимое на кнопке элемента управления "Цветовая шкала" выравнивается по центру; в противном случае — значение FALSE. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfccolorbarcreate"></a><a name="create"></a> Кмфкколорбар:: Create
 
@@ -438,7 +439,7 @@ virtual BOOL Create(
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Чтобы создать `CMFCColorBar` объект, вызовите конструктор класса, а затем — этот метод. `Create`Метод создает элемент управления Windows и инициализирует список цветов.
 
@@ -476,9 +477,9 @@ virtual BOOL CreateControl(
 
 Значение TRUE, если этот метод завершился с ошибкой; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод использует параметры *Rect*, *нколумнс*и *ппалетте* для вычисления соответствующего числа, строк и столбцов в элементе управления "полоса цветов", а затем вызывает метод [кмфкколорбар:: Create](#create) .
+Этот метод использует параметры *Rect*, *нколумнс* и *ппалетте* для вычисления соответствующего числа, строк и столбцов в элементе управления "полоса цветов", а затем вызывает метод [кмфкколорбар:: Create](#create) .
 
 ## <a name="cmfccolorbarcreatepalette"></a><a name="createpalette"></a> Кмфкколорбар:: Креатепалетте
 
@@ -526,7 +527,7 @@ void EnableAutomaticButton(
 *bEnable*<br/>
 окне Значение TRUE, чтобы включить автоматическую кнопку; Значение FALSE, чтобы отключить автоматическую кнопку. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Текстовая метка автоматической кнопки удаляется, если параметр *лпсзлабел* имеет значение null или параметр *бенабле* имеет значение false.
 
@@ -595,7 +596,7 @@ UINT GetCommandID() const;
 
 Идентификатор команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Когда пользователь выбирает новый цвет, платформа отправляет идентификатор команды в WM_COMMAND сообщение, чтобы уведомить родителя `CMFCColorBar` объекта.
 
@@ -628,7 +629,7 @@ COLORREF GetHighlightedColor() const;
 
 Значение RGB.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfccolorbargethorzmargin"></a><a name="gethorzmargin"></a> Кмфкколорбар:: Жесорзмаргин
 
@@ -688,7 +689,7 @@ BOOL IsTearOff() const;
 
 Значение TRUE, если текущий элемент управления "Цветовая шкала" является закрепляемым; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если элемент управления "цветовая панель" является закрепляемым, он может быть отсоединен от панели управления и закрепляется в другом месте.
 
@@ -744,7 +745,7 @@ virtual void OnUpdateCmdUI(
 *бдисаблеифнохндлер*<br/>
 окне Значение TRUE, чтобы отключить элемент пользовательского интерфейса, если в схеме сообщения не определен обработчик. в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Когда пользователь приложения щелкает элемент пользовательского интерфейса, элемент должен определить, должен ли он отображаться как включенный или отключенный. Целевой объект командного сообщения предоставляет эти сведения путем реализации обработчика команд ON_UPDATE_COMMAND_UI. Используйте этот метод, чтобы помочь обработать команду. Дополнительные сведения см. в разделе [класс поддержка CCmdUI](../../mfc/reference/ccmdui-class.md).
 
@@ -770,7 +771,7 @@ virtual BOOL OpenColorDialog(
 
 Значение TRUE, если пользователь выбрал цвет; Значение FALSE, если пользователь отменил диалоговое окно "цвет".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfccolorbarrebuild"></a><a name="rebuild"></a> Кмфкколорбар:: Rebuild
 
@@ -828,7 +829,7 @@ static void SetColorName(
 *strName*<br/>
 окне Новое имя для указанного цвета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод изменяет имя указанного цвета во всех `CMFCColorBar` объектах приложения.
 
@@ -845,7 +846,7 @@ void SetCommandID(UINT nCommandID);
 *нкоммандид*<br/>
 окне Идентификатор команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите этот метод, чтобы изменить идентификатор команды элемента управления "Цветовая шкала" и уведомить родительское окно элемента управления об изменении идентификатора.
 
@@ -871,7 +872,7 @@ void SetDocumentColors(
 *бшоввхендоккед*<br/>
 окне Значение TRUE, чтобы отображать цвета документа, когда элемент управления "цветовая панель" закреплен; в противном случае — значение FALSE. Значение по умолчанию — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 *Цвета документа* — это цвета, которые в настоящий момент используются в документе. Платформа автоматически сохраняет список цветов документа, но этот метод можно использовать для изменения списка.
 
@@ -888,7 +889,7 @@ void SetHorzMargin(int nHorzMargin);
 *нхорзмаргин*<br/>
 окне Горизонтальное поле (в пикселях).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию конструктор [кмфкколорбар:: кмфкколорбар](#cmfccolorbar) устанавливает горизонтальное поле равным 4 пикселям.
 
@@ -918,7 +919,7 @@ void SetVertMargin(int nVertMargin);
 *нвертмаргин*<br/>
 окне Вертикальное поле (в пикселях).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию конструктор [кмфкколорбар:: кмфкколорбар](#cmfccolorbar) устанавливает вертикальное поле равным 4 пикселям.
 
@@ -935,11 +936,11 @@ virtual void ShowCommandMessageString(UINT uiCmdId);
 *уикмдид*<br/>
 окне Идентификатор команды. (Этот параметр игнорируется.)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет WM_SETMESSAGESTRING сообщение владельцу элемента управления "Цветовая шкала".
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)

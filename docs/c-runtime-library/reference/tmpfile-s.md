@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: tmpfile_s'
 title: tmpfile_s
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - tmpfile_s function
 - temporary files, creating
 ms.assetid: 50879c69-215e-425a-a2a3-8b5467121eae
-ms.openlocfilehash: 48c599887a8a903d52c7dcd46b98046119c9d3ad
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 1b5830375644cdcdd3d0c400d00735319b3af671
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919934"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326144"
 ---
 # <a name="tmpfile_s"></a>tmpfile_s
 
@@ -60,11 +61,11 @@ errno_t tmpfile_s(
 
 |*пфилептр*|**Возвращаемое значение**|**Содержимое**  *пфилептр*|
 |----------------|----------------------|---------------------------------|
-|**ЗАКАНЧИВАЮЩ**|**еинвал**|не изменено|
+|**NULL**|**еинвал**|не изменено|
 
 Если возникает ошибка проверки приведенного выше параметра, вызывается обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено **, для** параметра **еинвал** устанавливается значение, а для возвращаемого значения — **еинвал**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **tmpfile_s** создает временный файл и помещает указатель на этот поток в аргумент *пфилептр* . Временный файл создается в корневом каталоге. Чтобы создать временный файл в каталоге, отличном от корневого, используйте [tmpnam_s](tmpnam-s-wtmpnam-s.md) или [tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md) в сочетании с [fopen](fopen-wfopen.md).
 

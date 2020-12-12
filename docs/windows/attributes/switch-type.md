@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: switch_type'
 title: switch_type (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - switch_type attribute
 ms.assetid: e24544dc-b3bc-48ae-b249-f967db49271e
-ms.openlocfilehash: 0c39aa442c9d4eaf3a482e411cda762fe0cc34b3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e291524d00afff89aa17634307426ef62cd40f4b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838533"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327264"
 ---
 # <a name="switch_type"></a>switch_type
 
@@ -30,7 +31,7 @@ type
 *type*<br/>
 Тип переключателя может быть целым числом, символом, логическим значением или типом перечисления.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Атрибут **switch_type** C++ имеет те же функциональные возможности, что и атрибут [switch_type](/windows/win32/Midl/switch-type) MIDL.
 
@@ -55,7 +56,7 @@ struct SizedValue2 {
 
 ## <a name="example"></a>Пример
 
-Пример использования **switch_type**см. в примере [варианта](case-cpp.md) .
+Пример использования **switch_type** см. в примере [варианта](case-cpp.md) .
 
 ## <a name="requirements"></a>Требования
 

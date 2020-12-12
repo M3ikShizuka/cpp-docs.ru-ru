@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l'
 title: _ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l
 ms.date: 4/2/2020
 api_name:
@@ -56,12 +57,12 @@ helpviewer_keywords:
 - ismbcalnum_l function
 - ismbcalpha_l function
 ms.assetid: 12d57925-aebe-46e0-80b0-82b84c4c31ec
-ms.openlocfilehash: 6e650c15ca2b7d3b448d5480a6b1f09769100171
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 5a8a985224a1b54fb774cad8ba8848fda1c7e7ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918556"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326313"
 ---
 # <a name="_ismbcalnum-_ismbcalnum_l-_ismbcalpha-_ismbcalpha_l-_ismbcdigit-_ismbcdigit_l"></a>_ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l
 
@@ -104,7 +105,7 @@ int _ismbcdigit_l
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Символ, который требуется проверить.
 
 *locale*<br/>
@@ -114,7 +115,7 @@ int _ismbcdigit_l
 
 Каждая из этих процедур возвращает ненулевое значение, если символ удовлетворяет условию теста, или 0, если не удовлетворяет. Если *c*<= 255 и имеется соответствующая **_ismbbая** под (например, **_ismbcalnum** соответствует **_ismbbalnum**), результатом является возвращаемое значение соответствующей подпрограммы **_ismbb** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Каждая из этих подпрограмм проверяет определенный многобайтовый символ на соответствие заданному условию.
 
@@ -141,6 +142,6 @@ int _ismbcdigit_l
 ## <a name="see-also"></a>См. также раздел
 
 [Классификация символов](../../c-runtime-library/character-classification.md)<br/>
-[Процедуры _ismbc](../../c-runtime-library/ismbc-routines.md)<br/>
-[Процедуры is, isw](../../c-runtime-library/is-isw-routines.md)<br/>
+[подпрограммы _ismbc](../../c-runtime-library/ismbc-routines.md)<br/>
+[является, подпрограммы isw](../../c-runtime-library/is-isw-routines.md)<br/>
 [подпрограммы _ismbb](../../c-runtime-library/ismbb-routines.md)<br/>

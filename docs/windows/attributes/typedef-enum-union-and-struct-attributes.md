@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: typedef, enum, Union и атрибуты структуры'
 title: Атрибуты typedef, enum, Union и struct (C++ COM)
 ms.date: 10/02/2018
 helpviewer_keywords:
 - union attributes
 - attributes [C++/CLI], reference topics
 ms.assetid: f8a4fe94-dc02-4aed-bc31-3e500d42f4c7
-ms.openlocfilehash: 5e9eccd5e4464e92757d6dd78dd0f5187372ea3e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9f72f5ff45709287d31aa4da05b2569a0b37baff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222112"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327243"
 ---
 # <a name="typedef-enum-union-and-struct-attributes"></a>Атрибуты Typedef, Enum, Union и Struct
 
@@ -18,7 +19,7 @@ ms.locfileid: "87222112"
 
 ### <a name="typedef"></a>typedef
 
-|attribute|Описание|
+|Атрибут|Описание|
 |---------------|-----------------|
 |[case](case-cpp.md)|Используется с атрибутом [switch_type](switch-type.md) в **`union`** .|
 |[настройки](custom-cpp.md)|Позволяет определить собственный атрибут.|
@@ -38,7 +39,7 @@ ms.locfileid: "87222112"
 
 ### <a name="enum"></a>enum
 
-|attribute|Описание|
+|Атрибут|Описание|
 |---------------|-----------------|
 |[настройки](custom-cpp.md)|Позволяет определить собственный атрибут.|
 |[программе](export.md)|Приводит к размещению структуры данных в IDL-файле.|
@@ -47,7 +48,7 @@ ms.locfileid: "87222112"
 
 ### <a name="union"></a>union
 
-|attribute|Описание|
+|Атрибут|Описание|
 |---------------|-----------------|
 |[настройки](custom-cpp.md)|Позволяет определить собственный атрибут.|
 |[программе](export.md)|Приводит к размещению структуры данных в IDL-файле.|
@@ -61,14 +62,14 @@ ms.locfileid: "87222112"
 
 ### <a name="nonencapsulated-union"></a>Неинкапсулированное объединение
 
-|attribute|Описание|
+|Атрибут|Описание|
 |---------------|-----------------|
 |[ms_union](ms-union.md)|Управляет выравниванием представления данных сети для неинкапсулированных объединений.|
 |[no_injected_text](no-injected-text.md)|Не позволяет компилятору внедрять код в результате использования атрибута.|
 
 ### <a name="struct"></a>struct
 
-|attribute|Описание|
+|Атрибут|Описание|
 |---------------|-----------------|
 |[aggregatable](aggregatable.md)|Указывает, что класс поддерживает агрегирование.|
 |[статистические выражения](aggregates.md)|Указывает, что элемент управления выполняет статистическую обработку целевого класса.|

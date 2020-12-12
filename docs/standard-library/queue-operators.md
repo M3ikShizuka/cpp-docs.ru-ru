@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; операторы очереди &gt;'
 title: Операторы &lt;queue&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,16 +17,16 @@ helpviewer_keywords:
 - std::operator&lt; (queue)
 - std::operator&lt;= (queue)
 - std::operator== (queue)
-ms.openlocfilehash: 8c02e79e6a300f23ac31ea876c9d4576cfe5e9a8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6d6280ca4fe1e1277a79862a5016d55dfbecc425
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232928"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327582"
 ---
 # <a name="ltqueuegt-operators"></a>Операторы &lt;queue&gt;
 
-## <a name="operator"></a><a name="op_neq"></a>operator! =
+## <a name="operator"></a><a name="op_neq"></a> operator! =
 
 Проверяет неравенство объекта queue слева от оператора объекту queue справа от оператора.
 
@@ -45,7 +46,7 @@ bool operator!=(const queue <Type, Container>& left, const queue <Type, Containe
 
 **`true`** значение, если очереди не равны; значение **`false`** , если очереди равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение объектов-очередей основывается на попарном сравнении их элементов. Две очереди равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -92,7 +93,7 @@ The queues q1 and q2 are not equal.
 The queues q1 and q3 are equal.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt"></a>станции&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> станции&lt;
 
 Проверяет, меньше ли объект queue слева от оператора, чем объект queue справа от оператора.
 
@@ -112,7 +113,7 @@ bool operator<(const queue <Type, Container>& left, const queue <Type, Container
 
 **`true`** Если очередь в левой части оператора меньше и не равна очереди в правой части оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение объектов-очередей основывается на попарном сравнении их элементов. Отношение "меньше" между двумя объектами-очередями основывается на сравнении первой пары неравных элементов.
 
@@ -155,7 +156,7 @@ The queue q1 is less than the queue q2.
 The queue q1 is not less than the queue q3.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>станции&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> станции&lt;=
 
 Проверяет, меньше ли объект queue слева от оператора, чем объект queue справа от оператора, или равен ему.
 
@@ -175,7 +176,7 @@ bool operator<=(const queue <Type, Container>& left, const queue <Type, Containe
 
 **`true`** Если очередь в левой части оператора строго меньше очереди с правой стороны оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение объектов-очередей основывается на попарном сравнении их элементов. Отношение "меньше или равно" между двумя объектами-очередями основывается на сравнении первой пары неравных элементов.
 
@@ -220,7 +221,7 @@ The queue q1 is greater than the queue q2.
 The queue q1 is less than or equal to the queue q3.
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>Оператор = =
+## <a name="operator"></a><a name="op_eq_eq"></a> Оператор = =
 
 Проверяет равенство объекта-очереди слева от оператора объекту-очереди справа от оператора.
 
@@ -240,7 +241,7 @@ bool operator==(const queue <Type, Container>& left, const queue <Type, Containe
 
 **`true`** значение, если очереди не равны; значение **`false`** , если очереди равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение объектов-очередей основывается на попарном сравнении их элементов. Две очереди равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -286,7 +287,7 @@ The queues q1 and q2 are not equal.
 The queues q1 and q3 are equal.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt"></a>станции&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> станции&gt;
 
 Проверяет, больше ли объект queue слева от оператора, чем объект queue справа от оператора.
 
@@ -306,7 +307,7 @@ bool operator>(const queue <Type, Container>& left, const queue <Type, Container
 
 **`true`** Если очередь в левой части оператора строго меньше очереди с правой стороны оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение объектов-очередей основывается на попарном сравнении их элементов. Отношение "больше" между двумя объектам-очередями основывается на сравнении первой пары неравных элементов.
 
@@ -352,7 +353,7 @@ The queue q1 is not greater than the queue q2.
 The queue q1 is greater than the queue q3.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>станции&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> станции&gt;=
 
 Проверяет, больше ли объект queue слева от оператора, чем объект queue справа от оператора, или равен ему.
 
@@ -372,7 +373,7 @@ bool operator>=(const queue <Type, Container>& left, const queue <Type, Containe
 
 **`true`** Если очередь в левой части оператора строго меньше очереди с правой стороны оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение объектов-очередей основывается на попарном сравнении их элементов. Две очереди равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 

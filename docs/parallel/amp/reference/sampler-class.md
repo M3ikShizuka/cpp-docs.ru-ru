@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: класс образца'
 title: Класс sampler
 ms.date: 06/28/2018
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 - AMP_GRAPHICS/concurrency::sampler::graphics::border_color
 - AMP_GRAPHICS/concurrency::sampler::graphics::filter_mode
 ms.assetid: 9a6a9807-497d-402d-b092-8c4d86275b80
-ms.openlocfilehash: 8f47bf6e9b88dba1e94e9e2ed2b93c8d2d3f9b8c
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 61292cccb9e28ca76dc4ecaa1aaca849d9219ffc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126360"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327618"
 ---
 # <a name="sampler-class"></a>Класс sampler
 
@@ -33,31 +34,31 @@ class sampler;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[Конструктор образцов](#ctor)|Перегружен. Конструирует экземпляр образца.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
-|[get_address_mode](#get_address_mode)|Возвращает `address_mode`, связанный с объектом образца.|
+|[get_address_mode](#get_address_mode)|Возвращает `address_mode` объект, связанный с объектом образца.|
 |[get_border_color](#get_border_color)|Возвращает цвет границы, связанный с объектом образца.|
-|[get_filter_mode](#get_filter_mode)|Возвращает `filter_mode`, связанный с объектом образца.|
+|[get_filter_mode](#get_filter_mode)|Возвращает `filter_mode` объект, связанный с объектом образца.|
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
-|[оператор=](#operator_eq)|Перегружен. Оператор присвоения.|
+|[Оператор =](#operator_eq)|Перегружен. Оператор присвоения.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
-|[address_mode](#address_mode)|Возвращает режим адреса объекта `sampler`.|
-|[border_color](#border_color)|Возвращает цвет границы для объекта `sampler`.|
-|[filter_mode](#filter_mode)|Возвращает режим фильтрации объекта `sampler`.|
+|[address_mode](#address_mode)|Возвращает режим адреса `sampler` объекта.|
+|[border_color](#border_color)|Возвращает цвет границы `sampler` объекта.|
+|[filter_mode](#filter_mode)|Возвращает режим фильтрации `sampler` объекта.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -69,7 +70,7 @@ class sampler;
 
 **Пространство имен:** Concurrency:: Graphics
 
-## <a name="ctor"></a>образец
+## <a name="sampler"></a><a name="ctor"></a> образец
 
 Конструирует экземпляр [класса образца](sampler-class.md).
 
@@ -115,37 +116,37 @@ sampler(                    // [6] move constructor
 Цвет границы, используемый, если используется режим адреса address_border. Значение по умолчанию — `float_4(0.0f, 0.0f, 0.0f, 0.0f)`.
 
 *_Other*<br/>
-[5] конструктор копий объект `sampler` для копирования в новый экземпляр `sampler`.
+[5] конструктор копий `sampler` объект, который необходимо скопировать в новый `sampler` экземпляр.
 
-[6] конструктор Move объект `sampler`, который необходимо переместить в новый экземпляр `sampler`.
+[6] Переместите конструктор `sampler` объекта, который необходимо переместить в новый `sampler` экземпляр.
 
-## <a name="address_mode"></a>address_mode
+## <a name="address_mode"></a><a name="address_mode"></a> address_mode
 
-Возвращает режим адреса объекта `sampler`.
+Возвращает режим адреса `sampler` объекта.
 
 ```cpp
 __declspec(property(get= get_address_mode)) Concurrency::graphics::address_mode address_mode;
 ```
 
-## <a name="border_color"></a>border_color
+## <a name="border_color"></a><a name="border_color"></a> border_color
 
-Возвращает цвет границы для объекта `sampler`.
+Возвращает цвет границы `sampler` объекта.
 
 ```cpp
 __declspec(property(get= get_border_color)) Concurrency::graphics::float_4 border_color;
 ```
 
-## <a name="filter_mode"></a>filter_mode
+## <a name="filter_mode"></a><a name="filter_mode"></a> filter_mode
 
-Возвращает режим фильтрации объекта `sampler`.
+Возвращает режим фильтрации `sampler` объекта.
 
 ```cpp
 __declspec(property(get= get_filter_mode)) Concurrency::graphics::filter_mode filter_mode;
 ```
 
-## <a name="get_address_mode"></a>get_address_mode
+## <a name="get_address_mode"></a><a name="get_address_mode"></a> get_address_mode
 
-Возвращает режим фильтрации, настроенный для этого `sampler`.
+Возвращает режим фильтрации, настроенный для этого `sampler` .
 
 ```cpp
 Concurrency::graphics::address_mode get_address_mode() const __GPU;
@@ -155,9 +156,9 @@ Concurrency::graphics::address_mode get_address_mode() const __GPU;
 
 Режим адресации, настроенный для образца.
 
-## <a name="get_border_color"></a>get_border_color
+## <a name="get_border_color"></a><a name="get_border_color"></a> get_border_color
 
-Возвращает цвет границы, настроенный для этого `sampler`.
+Возвращает цвет границы, настроенный для этого объекта `sampler` .
 
 ```cpp
 Concurrency::graphics::float_4 get_border_color() const restrict(amp, cpu);
@@ -167,9 +168,9 @@ Concurrency::graphics::float_4 get_border_color() const restrict(amp, cpu);
 
 Float_4, содержащий цвет границы.
 
-## <a name="get_filter_mode"></a>get_filter_mode
+## <a name="get_filter_mode"></a><a name="get_filter_mode"></a> get_filter_mode
 
-Возвращает режим фильтрации, настроенный для этого `sampler`.
+Возвращает режим фильтрации, настроенный для этого `sampler` .
 
 ```cpp
 Concurrency::graphics::filter_mode get_filter_mode() const restrict(amp, cpu);
@@ -179,7 +180,7 @@ Concurrency::graphics::filter_mode get_filter_mode() const restrict(amp, cpu);
 
 Режим фильтрации, настроенный для образца.
 
-## <a name="operator_eq"></a>Оператор =
+## <a name="operator"></a><a name="operator_eq"></a> Оператор =
 
 Присваивает значение другого объекта выборки существующему образцу.
 
@@ -194,9 +195,9 @@ sampler& operator= (    // [2] move assignment operator
 ### <a name="parameters"></a>Параметры
 
 *_Other*<br/>
-[1] оператор назначения копирования объект `sampler`, который необходимо скопировать в этот `sampler`.
+[1] оператор присваивания копирования, в который `sampler` копируется объект `sampler` .
 
-[2] оператор присваивания перемещения объект `sampler`, который необходимо переместить в `sampler`.
+[2] оператор присваивания move объект, в который `sampler` следует переместиться `sampler` .
 
 ### <a name="return-value"></a>Возвращаемое значение
 

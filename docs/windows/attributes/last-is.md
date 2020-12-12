@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: last_is'
 title: last_is (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - last_is attribute
 ms.assetid: 9e045ac0-fa38-4249-af55-67bde5d0a58c
-ms.openlocfilehash: ad82a5a9688dfbc6c5eb59883be00e8dc39e1942
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 41f436d1cd4317385d702d8763d69e6df7d07849
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840886"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327541"
 ---
 # <a name="last_is"></a>last_is
 
@@ -28,7 +29,7 @@ ms.locfileid: "88840886"
 *expression*<br/>
 Одно или несколько выражений языка C. Пустые слоты аргументов разрешены.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Атрибут **last_is** C++ имеет те же функциональные возможности, что и атрибут [last_is](/windows/win32/Midl/last-is) MIDL.
 

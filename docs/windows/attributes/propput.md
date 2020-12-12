@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: propput'
 title: propput (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - propput attribute
 ms.assetid: 1f84dda9-9cce-4e16-aaf0-b2c5219827f2
-ms.openlocfilehash: 11f216dd183f3977aee9af90c6579d01cad45fdf
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f7b33996c4575de6b94fc3127c33a88c6f791aed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839950"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327386"
 ---
 # <a name="propput"></a>propput
 
@@ -29,7 +30,7 @@ ms.locfileid: "88839950"
 
 ## <a name="example"></a>Пример
 
-Пример использования параметра **propput**см. в примере для [привязки](bindable.md) .
+Пример использования параметра **propput** см. в примере для [привязки](bindable.md) .
 
 ## <a name="requirements"></a>Требования
 

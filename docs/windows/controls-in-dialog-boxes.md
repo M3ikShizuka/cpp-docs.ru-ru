@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о элементах управления диалоговых окон (C++)
 title: Элементы управления "диалоговое окно" (C++) | Документация Майкрософт
 ms.date: 02/15/2019
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - dialog box controls [C++], custom (user) controls
 - Dialog Editor [C++], custom controls
 ms.assetid: e216c4f9-2fd4-429d-889a-8ebce7bad177
-ms.openlocfilehash: 449e60e968916f7741422ca2766375ad29afd062
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: e68547ebd550797d4ad195c6bef4c3f2a71e769e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505713"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327152"
 ---
 # <a name="dialog-box-controls-c"></a>Элементы управления "диалоговое окно" (C++)
 
@@ -30,7 +31,7 @@ ms.locfileid: "91505713"
 
 После добавления элемента управления в диалоговое окно можно изменить свойства, такие как заголовок, в [окне Свойства](/visualstudio/ide/reference/properties-window). Можно также выбрать несколько элементов управления и изменить их свойства одновременно.
 
-Дополнительные сведения о **редакторе диалоговых окон**см. в статьях [Добавление, изменение и удаление элементов управления](adding-editing-or-deleting-controls.md), [элементов управления макетом](../windows/arrangement-of-controls-on-dialog-boxes.md)и [Определение доступа и значений](../windows/defining-mnemonics-access-keys.md).
+Дополнительные сведения о **редакторе диалоговых окон** см. в статьях [Добавление, изменение и удаление элементов управления](adding-editing-or-deleting-controls.md), [элементов управления макетом](../windows/arrangement-of-controls-on-dialog-boxes.md)и [Определение доступа и значений](../windows/defining-mnemonics-access-keys.md).
 
 Дополнительные сведения о элементах управления и диалоговых окнах см. в разделе [классы элементов управления](../mfc/control-classes.md), [классы диалоговых окон](../mfc/dialog-box-classes.md)и [стили полосы прокрутки](../mfc/reference/styles-used-by-mfc.md#scroll-bar-styles).
 

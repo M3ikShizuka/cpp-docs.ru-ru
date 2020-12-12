@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: support_error_info'
 title: support_error_info (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - support_error_info attribute
 ms.assetid: 20a2b55c-4738-4b35-a71d-e5e9c3a7e3bc
-ms.openlocfilehash: cf02af793b97c55de4c52280ad2795a460a98d9f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3d707179511dadda0f24a2d13e95a32de3705f62
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832182"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327277"
 ---
 # <a name="support_error_info"></a>support_error_info
 
@@ -28,7 +29,7 @@ ms.locfileid: "88832182"
 *error_interface*<br/>
 Идентификатор интерфейса, реализующего интерфейс `IErrorInfo` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Атрибут **support_error_info** языка C++ реализует поддержку для возвращения на клиент подробных контекстных ошибок, обнаруженных для целевого объекта. Чтобы объект поддерживал ошибки, методы `IErrorInfo` интерфейса должны быть реализованы объектом. Дополнительные сведения см. в разделе [Supporting IDispatch and IErrorInfo](../../atl/supporting-idispatch-and-ierrorinfo.md)(Поддержка IDispatch и IErrorInfo).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CMFCCmdUsageCount Class'
 title: Класс CMFCCmdUsageCount
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CMFCCmdUsageCount [MFC], Serialize
 - CMFCCmdUsageCount [MFC], SetOptions
 ms.assetid: 9c33b783-37c0-43ea-9f31-3c75e246c841
-ms.openlocfilehash: 95dca548856510cd8b06914932cc46435c28399d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 40d09e96672cafb022baab98787fe10b1258048b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834281"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327723"
 ---
 # <a name="cmfccmdusagecount-class"></a>Класс CMFCCmdUsageCount
 
@@ -37,7 +38,7 @@ ms.locfileid: "88834281"
 class CMFCCmdUsageCount : public CObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -67,7 +68,7 @@ class CMFCCmdUsageCount : public CObject
 |`m_nStartCount`|Счетчик запуска, используемый для определения того, был ли этот объект собрал минимальный объем данных отслеживания.|
 |`m_nTotalUsage`|Число всех отслеживаний команд.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `CMFCCmdUsageCount`Класс сопоставляет каждый числовой идентификатор сообщения Windows с счетчиком 32-разрядных целых чисел без знака. `CMFCToolBar` использует этот класс для вывода часто используемых элементов панели инструментов. Дополнительные сведения о см `CMFCToolBar` . в разделе [Класс CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md).
 
@@ -96,7 +97,7 @@ void AddCmd(UINT uiCmd);
 *уикмд*\
 окне Указывает счетчик команд для увеличения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод добавляет новую запись в структуру Map счетчика команд, `m_CmdUsage` Если запись еще не существует.
 
@@ -137,7 +138,7 @@ BOOL HasEnoughInformation() const;
 
 Ненулевое значение, если этот объект получил минимальный объем данных отслеживания; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод возвращает ненулевое значение, если общее число `m_nTotalUsage` всех записанных команд равно значению начального счетчика или превышает его `m_nStartCount` . По умолчанию платформа устанавливает начальное значение счетчика 0. Это значение можно переопределить с помощью метода [CMFCCmdUsageCount:: сетоптионс](#setoptions) .
 
@@ -160,7 +161,7 @@ BOOL IsFreqeuntlyUsedCmd(UINT uiCmd) const;
 
 Ненулевое значение, если команда часто используется; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод возвращает 0, если общее использование команды `m_nTotalUsage` равно 0. В противном случае этот метод возвращает ненулевое значение, если процент, в котором используется указанная команда, больше, чем минимальный процент, `m_nMinUsagePercentage` . По умолчанию платформа устанавливает для минимального значения в процентах значение 5. Это значение можно переопределить с помощью метода [CMFCCmdUsageCount:: сетоптионс](#setoptions) . Если минимальный процент равен 0, этот метод возвращает ненулевое значение, если указанное число команд больше 0.
 
@@ -174,7 +175,7 @@ BOOL IsFreqeuntlyUsedCmd(UINT uiCmd) const;
 void Reset();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите этот метод, чтобы очистить все записи из структуры карт для счетчика команд, `m_CmdUsage` и, чтобы сбросить общее использование команды, `m_nTotalUsage` , счетчик — 0.
 
@@ -191,7 +192,7 @@ virtual void Serialize(CArchive& ar);
 *AR*\
 окне `CArchive` Объект для сериализации из или в.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод сериализует структуру отображения счетчиков команд, `m_CmdUsage` и общее использование команды, `m_nTotalUsage` , счетчик из или в указанный архив.
 
@@ -219,9 +220,9 @@ static BOOL __stdcall SetOptions(
 
 Значение TRUE, если метод выполняется, значение FALSE, если значение параметра *нминусажеперцентаже* больше или равно 100.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод задает `CMFCCmdUsageCount` члены данных общего класса `m_nStartCount` , а `m_nMinUsagePercentage` также *нстарткаунт* и *нминусажеперцентаже*соответственно. `m_nStartCount` используется методом [CMFCCmdUsageCount:: хасенаугхинформатион](#hasenoughinformation) , чтобы определить, собрал ли этот объект минимальный объем данных отслеживания. `m_nMinUsagePercentage` используется методом [CMFCCmdUsageCount:: исфрекеунтлюседкмд](#isfreqeuntlyusedcmd) , чтобы определить, используется ли данная команда часто.
+Этот метод задает `CMFCCmdUsageCount` члены данных общего класса `m_nStartCount` , а `m_nMinUsagePercentage` также *нстарткаунт* и *нминусажеперцентаже* соответственно. `m_nStartCount` используется методом [CMFCCmdUsageCount:: хасенаугхинформатион](#hasenoughinformation) , чтобы определить, собрал ли этот объект минимальный объем данных отслеживания. `m_nMinUsagePercentage` используется методом [CMFCCmdUsageCount:: исфрекеунтлюседкмд](#isfreqeuntlyusedcmd) , чтобы определить, используется ли данная команда часто.
 
 В отладочных сборках этот метод создает ошибку утверждения, если параметр *нминусажеперцентаже* больше или равен 100.
 

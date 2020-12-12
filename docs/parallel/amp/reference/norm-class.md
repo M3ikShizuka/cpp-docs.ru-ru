@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о классе норм.
 title: Класс norm
 ms.date: 11/04/2016
 f1_keywords:
 - AMP_SHORT_VECTORS/norm
 - AMP_SHORT_VECTORS/Concurrency::graphics::norm Constructor
 ms.assetid: 73002f3d-c25e-4119-bcd3-4c46c9b6abf1
-ms.openlocfilehash: b5740f33dea6aad79770f77f179803023432248a
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 29e376e5e42212c87ae244c7a606a38d6a07ddf1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447524"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327648"
 ---
 # <a name="norm-class"></a>Класс norm
 
@@ -26,13 +27,13 @@ class norm;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[норма, конструктор](#ctor)|Перегружен. Конструктор по умолчанию. Инициализируйте до 0,0 f.|
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |норма:: operator-||
 |норма:: operator--||
@@ -54,7 +55,7 @@ class norm;
 
 **Пространство имен:** Concurrency:: Graphics
 
-## <a name="ctor"></a>норма
+## <a name="norm"></a><a name="ctor"></a> норма
 
 Конструктор по умолчанию. Инициализируйте до 0,0 f.
 
