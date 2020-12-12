@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/DISASM
 title: /DISASM
 ms.date: 01/17/2018
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - -DISASM dumpbin option
 - DISASM dumpbin option
 - /DISASM dumpbin option
-ms.openlocfilehash: fb394b2266470e77c50ce5398aea961c37ac34fb
-ms.sourcegitcommit: effb516760c0f956c6308eeded48851accc96b92
+ms.openlocfilehash: 764754e017958a57afd53236b7fc1ffb6217d850
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70927725"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192906"
 ---
 # <a name="disasm"></a>/DISASM
 
@@ -20,17 +21,17 @@ ms.locfileid: "70927725"
 
 ## <a name="syntax"></a>Синтаксис
 
-> **/DISASM** { **:** \[БАЙТОВВ|БАЙТАХ **]}**
+> **/DISASM**{**:** байтов в байтах \[  | ]}
 
 ### <a name="arguments"></a>Аргументы
 
 **БАЙТ**<br/>
-Включает байты инструкций вместе с интерпретируемыми кодом операций и аргументами в выходных данных дизассемблированного кода. Этот параметр используется по умолчанию.
+Включает байты инструкций вместе с интерпретируемыми кодом операций и аргументами в выходных данных дизассемблированного кода. Это параметр по умолчанию.
 
-**ЧИСЛО БАЙТОВ**<br/>
+**Число байтов**<br/>
 Не включает байты инструкций в выходных данных дизассемблированного кода.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Параметр **/DISASM** отображает Дизассемблированный код разделов кода в файле. Он использует отладочные символы, если они есть в файле.
 
@@ -38,6 +39,6 @@ ms.locfileid: "70927725"
 
 Для использования в файлах, создаваемых параметром компилятора [/GL (оптимизация всей программы)](gl-whole-program-optimization.md) [, доступен только параметр DUMPBIN.](headers.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Параметры DUMPBIN](dumpbin-options.md)

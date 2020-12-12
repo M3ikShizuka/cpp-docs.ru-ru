@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в справочнике по ERRLOOK.
 title: Справочник ERRLOOK
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ErrLook tool
 - Error lookup tool
 ms.assetid: 6040ffc1-2355-4a45-8998-84cbcba4ca91
-ms.openlocfilehash: 8d005f37af0c406c45ef2da52fce2b578c6e864a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d516afb0edf8c46f633583788c6c1511e456542b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169036"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192503"
 ---
 # <a name="errlook-reference"></a>Справочник ERRLOOK
 
@@ -20,19 +21,19 @@ ms.locfileid: "80169036"
 
 ## <a name="in-this-section"></a>в этом разделе
 
-[Элемент управления "Поле ввода значений"](value-edit-control.md)<br/>
+[Элемент управления "изменение значения"](value-edit-control.md)<br/>
 Описание элемента управления изменением значения в ERRLOOK.
 
-[Элемент управления "Редактирование сообщений об ошибке"](error-message-edit-control.md)<br/>
+[Элемент управления "изменение сообщения об ошибке"](error-message-edit-control.md)<br/>
 Описание элемента управления "изменение сообщения об ошибке" в ERRLOOK.
 
-[Кнопка "Модули"](modules-button.md)<br/>
+[Кнопка "модули"](modules-button.md)<br/>
 Описание кнопки модули в ERRLOOK.
 
-[Кнопка "Найти"](look-up-button.md)<br/>
+[Кнопка "Поиск"](look-up-button.md)<br/>
 Описание кнопки "Поиск" в ERRLOOK.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 
-[Дополнительные инструменты сборки MSVC](c-cpp-build-tools.md)<br/>
-Содержит ссылки на разделы, посвященныеC++ средствам C/Build C++, представленным в Visual.
+[Дополнительные средства сборки КОМПИЛЯТОРОМ MSVC](c-cpp-build-tools.md)<br/>
+Содержит ссылки на разделы, посвященные средствам сборки C/C++, предоставляемым в Visual C++.

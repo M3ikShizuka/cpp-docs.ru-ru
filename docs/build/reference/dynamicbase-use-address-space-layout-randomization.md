@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/DYNAMICBASE (использование случайного расположения макета адресного пространства)
 title: /DYNAMICBASE (использование технологии Address Space Layout Randomization (ASRL))
 ms.date: 06/12/2018
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /DYNAMICBASE linker option
 - DYNAMICBASE linker option
 ms.assetid: 6c0ced8e-fe9c-4b63-b956-eb8a55fbceb2
-ms.openlocfilehash: 9af502d65dd81efdedc6b80951f11d68f766cb31
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 481194b0da1a64d8170104344911223bf6ca6f6d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842628"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97192619"
 ---
 # <a name="dynamicbase-use-address-space-layout-randomization"></a>/DYNAMICBASE (использование технологии Address Space Layout Randomization (ASRL))
 
@@ -23,7 +24,7 @@ ms.locfileid: "88842628"
 
 > **/DynamicBase**[**: нет**]
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Параметр **/DynamicBase** изменяет заголовок *исполняемого образа*, DLL или EXE-файла, чтобы указать, должно ли приложение случайным образом перераспределяться во время загрузки, и разрешает случайное выделение виртуальных адресов, что влияет на расположение кучи, стеки и другие выделения операционных систем. Параметр **/DynamicBase** применяется как для 32-разрядных, так и для 64-разрядных изображений. ASLR поддерживается в операционных системах Windows Vista и более поздних версий. Этот параметр не учитывается в более ранних операционных системах.
 

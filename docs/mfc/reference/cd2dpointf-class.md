@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CD2DPointF Class'
 title: Класс CD2DPointF
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CD2DPointF [MFC], CD2DPointF
 ms.assetid: 30f72083-1c8a-4f50-adb2-72dbbe3522d4
-ms.openlocfilehash: 5d66c31289f9e17df99df4681cff1d5cf6a0ec86
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0f63aa35acb33504c96316b67ecc4f885f4f0247
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369157"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193361"
 ---
 # <a name="cd2dpointf-class"></a>Класс CD2DPointF
 
@@ -25,19 +26,19 @@ ms.locfileid: "81369157"
 class CD2DPointF : public D2D1_POINT_2F;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CD2DPointF:CD2DPointF](#cd2dpointf)|Перегружен. Строит `CD2DPointF` объект из `D2D1_POINT_2F` объекта.|
+|[CD2DPointF::CD2DPointF](#cd2dpointf)|Перегружен. Конструирует `CD2DPointF` объект из `D2D1_POINT_2F` объекта.|
 
 ### <a name="public-operators"></a>Открытые операторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CD2DPointF:оператор CPoint](#operator_cpoint)|`CD2DPointF` Преобразуется `CPoint` в объект.|
+|[CD2DPointF:: operator CPoint](#operator_cpoint)|Преобразует `CD2DPointF` в `CPoint` объект.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -47,11 +48,11 @@ class CD2DPointF : public D2D1_POINT_2F;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxrendertarget.h
+**Заголовок:** афксрендертаржет. h
 
-## <a name="cd2dpointfcd2dpointf"></a><a name="cd2dpointf"></a>CD2DPointF:CD2DPointF
+## <a name="cd2dpointfcd2dpointf"></a><a name="cd2dpointf"></a> CD2DPointF::CD2DPointF
 
-Строит объект CD2DPointF с объекта CPoint.
+Конструирует объект CD2DPointF из объекта CPoint.
 
 ```
 CD2DPointF(const CPoint& pt);
@@ -63,15 +64,15 @@ CD2DPointF(FLOAT fX = 0., FLOAT fY = 0.);
 ### <a name="parameters"></a>Параметры
 
 *пт*<br/>
-источник точки
+Исходная точка
 
-*Fx*<br/>
-источник X
+*fX*<br/>
+Источник X
 
-*Fy*<br/>
-источник Y
+*Обозначения*<br/>
+Источник Y
 
-## <a name="cd2dpointfoperator-cpoint"></a><a name="operator_cpoint"></a>CD2DPointF:оператор CPoint
+## <a name="cd2dpointfoperator-cpoint"></a><a name="operator_cpoint"></a> CD2DPointF:: operator CPoint
 
 Преобразует CD2DPointF в объект CPoint.
 

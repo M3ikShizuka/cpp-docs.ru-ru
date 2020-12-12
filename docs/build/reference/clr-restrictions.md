@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: ограничения/CLR'
 title: Ограничения /clr
 ms.date: 11/04/2016
 helpviewer_keywords:
 - /clr compiler option [C++], restrictions
 ms.assetid: 385f6462-2c68-46d6-810e-469553ead447
-ms.openlocfilehash: 641e83cb85b6282e8c4c82dfed8c4b44fc4a7e8f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: eb74aea8f1d6fcae4738f17f5fae2a4761350341
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223906"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193010"
 ---
 # <a name="clr-restrictions"></a>Ограничения /clr
 
@@ -55,7 +56,7 @@ ms.locfileid: "87223906"
 
 - Использование **/ZI** с **/clr** влияет на производительность. Дополнительные сведения см. в разделе [/Zi](z7-zi-zi-debug-information-format.md).
 
-- Передача расширенного символа в под.NET Framework вывода без указания параметра [/Zc: wchar_t](zc-wchar-t-wchar-t-is-native-type.md) или без приведения символа в **`__wchar_t`** вызов приводит к отображению выходных данных в виде `unsigned short int` . Например:
+- Передача расширенного символа в под.NET Framework вывода без указания параметра [/Zc: wchar_t](zc-wchar-t-wchar-t-is-native-type.md) или без приведения символа в **`__wchar_t`** вызов приводит к отображению выходных данных в виде `unsigned short int` . Пример:
 
     ```cpp
     Console::WriteLine(L' ')              // Will output 32.
@@ -86,6 +87,6 @@ ms.locfileid: "87223906"
 
   - Функция, которая содержит ссылки на выровненные типы, то есть типы, объявленные с помощью `__declspec(align(...))`.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [/clr (компиляция среды выполнения)](clr-common-language-runtime-compilation.md)

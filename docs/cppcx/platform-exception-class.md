@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о классе Platform:: Exception'
 title: Класс Platform::Exception
 ms.date: 12/30/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Exception Class
 ms.assetid: ca1d5a67-3a5a-48fe-8099-f9c38a2d2dce
-ms.openlocfilehash: bfdd8b3df720073e6b4a19cdb5b34db23e659fd0
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 1b6ad35e04ae239d90dbfceecaaf72223ae6a7ce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90741974"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195220"
 ---
 # <a name="platformexception-class"></a>Класс Platform::Exception
 
@@ -27,7 +28,7 @@ ms.locfileid: "90741974"
 public ref class Exception : Object,    IException,    IPrintable,    IEquatable
 ```
 
-### <a name="members"></a>Участники
+### <a name="members"></a>Члены
 
 Класс `Exception` наследуется от класса `Object` и интерфейсов `IException`, `IPrintable`и `IEquatable` .
 
@@ -89,7 +90,7 @@ Exception^ CreateException(int32 hr, Platform::String^ message);
 
 Исключение, представляющее HRESULT ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот метод для создания исключения из значения HRESULT, возвращаемого, например, из вызова интерфейса COM. Можно использовать перегруженный метод, принимающий параметр String^, чтобы предоставить пользовательское сообщение.
 
@@ -129,7 +130,7 @@ public:
 
 Значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Большинство исключений создаются как ошибки модели COM, которые возвращаются в виде значений HRESULT. C++/CX преобразует эти значения в объекты Platform::Exception^, и это свойство сохраняет значение исходного кода ошибки.
 
@@ -147,10 +148,10 @@ public:property String^ Message;
 
 В исключениях, создаваемых в среде выполнения Windows, это предоставляемое системой описание ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В Windows 8 это свойство доступно только для чтения, так как исключения в этой версии среда выполнения Windows передаются по интерфейсу ABI только как HRESULTs. В Windows 8.1 через интерфейс ABI передается более подробная информация об исключениях, и можно задать пользовательское сообщение, к которому другие компоненты могут обращаться программным образом. Дополнительные сведения см. в разделе [исключения (C++/CX)](../cppcx/exceptions-c-cx.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Пространство имен Platform](../cppcx/platform-namespace-c-cx.md)

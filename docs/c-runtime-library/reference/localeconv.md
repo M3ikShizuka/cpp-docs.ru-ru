@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: localeconv'
 title: localeconv
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - localeconv function
 - locales, getting information on
 ms.assetid: 7ecdb1f2-88f5-4037-a0e7-c754ab003660
-ms.openlocfilehash: c4e1820ac412a0447c5059ecc92375275f7b2701
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 488a6e9dbc913f1102be3a53685dc68b38fb833b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218641"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195675"
 ---
 # <a name="localeconv"></a>localeconv
 
@@ -47,9 +48,9 @@ struct lconv *localeconv( void );
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-**localeconv** возвращает указатель на заполненный объект типа [struct lconv](../../c-runtime-library/standard-types.md). Значения, содержащиеся в объекте, копируются из параметров языкового стандарта в локальном хранилище потока и могут быть перезаписаны при последующих вызовах **localeconv**. Изменения, внесенные в значения в этом объекте, не изменяют параметры языкового стандарта. Вызовы [setlocale](setlocale-wsetlocale.md) со значениями *категории* **LC_ALL**, **LC_MONETARY**или **LC_NUMERIC** перезаписать содержимое структуры.
+**localeconv** возвращает указатель на заполненный объект типа [struct lconv](../../c-runtime-library/standard-types.md). Значения, содержащиеся в объекте, копируются из параметров языкового стандарта в локальном хранилище потока и могут быть перезаписаны при последующих вызовах **localeconv**. Изменения, внесенные в значения в этом объекте, не изменяют параметры языкового стандарта. Вызовы [setlocale](setlocale-wsetlocale.md) со значениями *категории* **LC_ALL**, **LC_MONETARY** или **LC_NUMERIC** перезаписать содержимое структуры.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **localeconv** получает подробные сведения о форматировании чисел для текущего языкового стандарта. Эти сведения хранятся в структуре типа **lconv**. Структура **lconv**, определенная в LOCALE.H, содержит следующие члены:
 

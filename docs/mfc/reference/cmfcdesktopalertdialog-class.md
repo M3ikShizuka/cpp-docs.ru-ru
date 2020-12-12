@@ -1,5 +1,6 @@
 ---
-title: Класс CMFCDesktopAlertDialog
+description: 'Дополнительные сведения о: Кмфкдесктопалертдиалог Class'
+title: Класс Кмфкдесктопалертдиалог
 ms.date: 10/18/2018
 f1_keywords:
 - CMFCDesktopAlertDialog
@@ -14,18 +15,18 @@ helpviewer_keywords:
 - CMFCDesktopAlertDialog [MFC], HasFocus
 - CMFCDesktopAlertDialog [MFC], PreTranslateMessage
 ms.assetid: a53c60aa-9607-485b-b826-ec64962075f6
-ms.openlocfilehash: 479959e9b021255e309caf6fee02588a8cd8f1d1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 327ec72b1e58d90e768f51c083ff9545f24f6f0b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367655"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193192"
 ---
-# <a name="cmfcdesktopalertdialog-class"></a>Класс CMFCDesktopAlertDialog
+# <a name="cmfcdesktopalertdialog-class"></a>Класс Кмфкдесктопалертдиалог
 
-Класс `CMFCDesktopAlertDialog` используется вместе с [классом CMFCDesktopAlertWnd](../../mfc/reference/cmfcdesktopalertwnd-class.md) для отображения пользовательского диалога в всплывающем окне.
+`CMFCDesktopAlertDialog`Класс используется вместе с [классом CMFCDesktopAlertWnd](../../mfc/reference/cmfcdesktopalertwnd-class.md) для вывода пользовательского диалогового окна во всплывающем окне.
 
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,18 +34,18 @@ ms.locfileid: "81367655"
 class CMFCDesktopAlertDialog : public CDialogEx
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CMFCDesktopAlertDialog::CreateFromParams](#createfromparams)||
 |[CMFCDesktopAlertDialog::GetDlgSize](#getdlgsize)||
 |[CMFCDesktopAlertDialog::HasFocus](#hasfocus)||
 |[CMFCDesktopAlertDialog::PreTranslateMessage](#pretranslatemessage)|(Переопределяет `CDialogEx::PreTranslateMessage`.)|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Чтобы отобразить настраиваемое диалоговое окно во всплывающем окне, выполните следующие действия:
 
@@ -52,7 +53,7 @@ class CMFCDesktopAlertDialog : public CDialogEx
 
 1. Создайте в ресурсах проекта шаблон дочернего диалогового окна.
 
-1. Позвоните [CMFCDesktopAlertWnd::Создание](../../mfc/reference/cmfcdesktopalertwnd-class.md#create) с идентификатором ресурсов шаблона диалогов и указателем на информацию класса времени выполнения производного класса в качестве параметров.
+1. Вызовите [CMFCDesktopAlertWnd:: Create](../../mfc/reference/cmfcdesktopalertwnd-class.md#create) с идентификатором ресурса шаблона диалогового окна и указателем на сведения о классе среды выполнения производного класса в качестве параметров.
 
 1. Создайте настраиваемое диалоговое окно для обработки всех уведомлений, поступающих от размещенных элементов управления, или размещенные элементы управления для обработки этих уведомлений напрямую.
 
@@ -72,9 +73,9 @@ class CMFCDesktopAlertDialog : public CDialogEx
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxDesktopAlertDialog.h
+**Заголовок:** афксдесктопалертдиалог. h
 
-## <a name="cmfcdesktopalertdialogcreatefromparams"></a><a name="createfromparams"></a>CMFCDesktopAlertDialog::CreateFromParams
+## <a name="cmfcdesktopalertdialogcreatefromparams"></a><a name="createfromparams"></a> Кмфкдесктопалертдиалог:: Креатефромпарамс
 
 ```
 BOOL CreateFromParams(
@@ -84,15 +85,15 @@ BOOL CreateFromParams(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *парамы*<br/>
+окне *Параметры*<br/>
 
-(в) *pРодитель*<br/>
+окне *ппарент*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcdesktopalertdialoggetdlgsize"></a><a name="getdlgsize"></a>CMFCDesktopAlertDialog::GetDlgSize
+## <a name="cmfcdesktopalertdialoggetdlgsize"></a><a name="getdlgsize"></a> Кмфкдесктопалертдиалог:: Жетдлгсизе
 
 ```
 CSize GetDlgSize();
@@ -100,9 +101,9 @@ CSize GetDlgSize();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcdesktopalertdialoghasfocus"></a><a name="hasfocus"></a>CMFCDesktopAlertDialog::HasFocus
+## <a name="cmfcdesktopalertdialoghasfocus"></a><a name="hasfocus"></a> Кмфкдесктопалертдиалог:: Хасфокус
 
 ```
 BOOL HasFocus() const;
@@ -110,9 +111,9 @@ BOOL HasFocus() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcdesktopalertdialogpretranslatemessage"></a><a name="pretranslatemessage"></a>CMFCDesktopAlertDialog::PreTranslateMessage
+## <a name="cmfcdesktopalertdialogpretranslatemessage"></a><a name="pretranslatemessage"></a> Кмфкдесктопалертдиалог::P Ретранслатемессаже
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -124,12 +125,12 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCDesktopAlertWnd Class](../../mfc/reference/cmfcdesktopalertwnd-class.md)<br/>
-[CmFCDesktopAlertWndInfo класс](../../mfc/reference/cmfcdesktopalertwndinfo-class.md)<br/>
-[Класс CDialogEx](../../mfc/reference/cdialogex-class.md)
+[Класс CMFCDesktopAlertWnd](../../mfc/reference/cmfcdesktopalertwnd-class.md)<br/>
+[Класс Кмфкдесктопалертвндинфо](../../mfc/reference/cmfcdesktopalertwndinfo-class.md)<br/>
+[Класс Кдиаложекс](../../mfc/reference/cdialogex-class.md)
