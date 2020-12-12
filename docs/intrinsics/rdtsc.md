@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __rdtsc'
 title: __rdtsc
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - rdtsc instruction
 - Read Time Stamp Counter instruction
 ms.assetid: e31d0e51-c9bb-42ca-bbe9-a81ffe662387
-ms.openlocfilehash: 837b68ca6ac63587cd43a7e8828777221c677e3c
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 930c8fbd0ae762c8674a85e379899bc4fe4d3394
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217146"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257515"
 ---
 # <a name="__rdtsc"></a>__rdtsc
 
 **Блок, относящийся только к системам Microsoft**
 
-`rdtsc` Формирует инструкцию, которая возвращает метку времени процессора. В метке времени процессора записывается число циклов часов с момента последнего сброса.
+Формирует `rdtsc` инструкцию, которая возвращает метку времени процессора. В метке времени процессора записывается число циклов часов с момента последнего сброса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,13 +34,13 @@ unsigned __int64 __rdtsc();
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__rdtsc`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эта подпрограммы доступна только в качестве встроенной функции.
 

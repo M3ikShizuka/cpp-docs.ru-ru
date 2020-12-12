@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _getdcwd_dbg, _wgetdcwd_dbg'
 title: _getdcwd_dbg, _wgetdcwd_dbg
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - _wgetdcwd_dbg function
 - directories [C++], current working
 ms.assetid: 266bf6f0-0417-497f-963d-2e0f306d9385
-ms.openlocfilehash: a31617445ccb0640042be41ee4f710e528b9ceb7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b46847662aca04c07d6bdae42490d8a7d2ffe2cc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229458"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256592"
 ---
 # <a name="_getdcwd_dbg-_wgetdcwd_dbg"></a>_getdcwd_dbg, _wgetdcwd_dbg
 
@@ -89,11 +90,11 @@ wchar_t *_wgetdcwd_dbg(
 
 Возвращает указатель на *буфер*. Возвращаемое значение **null** указывает на ошибку, а параметру " **No** @" — на " **еномем** *",* что свидетельствует о нехватке памяти для выделения *maxlen* байт (если аргумент равен **null** ) или значение **ERANGE**, указывающее, что путь длиннее *maxlen* символов. Дополнительные сведения см. в разделе [errno, _doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функции **_getdcwd_dbg** и **_wgetdcwd_dbg** идентичны **_getdcwd** и **_wgetdcwd** за исключением того, что при определении **_DEBUG** эти функции используют отладочную версию **malloc** и **_malloc_dbg** для выделения памяти, если **значение NULL** передается как параметр *buffer* . Дополнительные сведения см. в разделе [_malloc_dbg](malloc-dbg.md).
 
-Как правило, явно вызывать эти функции не требуется. Вместо этого можно определить флаг **_CRTDBG_MAP_ALLOC** . Если определено **_CRTDBG_MAP_ALLOC** , вызовы **_getdcwd** и **_wgetdcwd** пересопоставляются с **_getdcwd_dbg** и **_wgetdcwd_dbg**соответственно, с *блокктипе* , для которого задано значение **_NORMAL_BLOCK**. Таким образом, не нужно явно вызывать эти функции, если не нужно помечать блоки кучи как **_CLIENT_BLOCK**. Дополнительные сведения см. в разделе [типы блоков в отладочной куче](/visualstudio/debugger/crt-debug-heap-details).
+Как правило, явно вызывать эти функции не требуется. Вместо этого можно определить флаг **_CRTDBG_MAP_ALLOC** . Если определено **_CRTDBG_MAP_ALLOC** , вызовы **_getdcwd** и **_wgetdcwd** пересопоставляются с **_getdcwd_dbg** и **_wgetdcwd_dbg** соответственно, с *блокктипе* , для которого задано значение **_NORMAL_BLOCK**. Таким образом, не нужно явно вызывать эти функции, если не нужно помечать блоки кучи как **_CLIENT_BLOCK**. Дополнительные сведения см. в разделе [типы блоков в отладочной куче](/visualstudio/debugger/crt-debug-heap-details).
 
 ### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
@@ -110,7 +111,7 @@ wchar_t *_wgetdcwd_dbg(
 
 Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)<br/>
 [Управление каталогом](../../c-runtime-library/directory-control.md)<br/>

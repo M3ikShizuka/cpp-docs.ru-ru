@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: макрос offsetof'
 title: Макрос offsetof
 ms.date: 11/04/2016
 api_location:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - structure members, offset
 - offsetof macro
 ms.assetid: f3b4eb16-a882-4d38-afc9-eebd976a7352
-ms.openlocfilehash: ee6d5e56bb9f41a842e53984f754c7c07d58a125
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 055bda67bae178143561acd91b517c431f77cac0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213506"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256275"
 ---
 # <a name="offsetof-macro"></a>Макрос offsetof
 
@@ -54,7 +55,7 @@ size_t offsetof(
 
 **offsetof** возвращает смещение в байтах указанного элемента от начала родительской структуры данных. Для битовых полей оно будет неопределенным.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Макрос **offsetof** возвращает смещение в байтах от имени *MemberName* с начала структуры, заданной параметром *структнаме* , в качестве значения типа **size_t**. Можно указать типы с помощью **`struct`** ключевого слова.
 

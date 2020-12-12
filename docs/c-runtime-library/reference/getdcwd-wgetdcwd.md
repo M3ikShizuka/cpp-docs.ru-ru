@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _getdcwd, _wgetdcwd'
 title: _getdcwd, _wgetdcwd
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - current working directory
 - directories [C++], current working
 ms.assetid: 184152f5-c7b0-495b-918d-f9a6adc178bd
-ms.openlocfilehash: c9ae07c5880cb86b0aafb0dc66a7c1ce3edcc9d8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 47681e78cb010af2b495091419dec01e40f703a1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218667"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256553"
 ---
 # <a name="_getdcwd-_wgetdcwd"></a>_getdcwd, _wgetdcwd
 
@@ -89,11 +90,11 @@ wchar_t *_wgetdcwd(
 
 Если для параметра *buffer* задано **значение NULL** и недостаточно памяти для выделения *maxlen* символов, возникает ошибка **, а для** свойства "переводится" значение **еномем**. Если длина пути, в том числе завершающего нуль-символа, превышает *maxlen*, возникает ошибка, а **параметру** "ключ вывода" присваивается значение **ERANGE**. Дополнительные сведения об этих кодах ошибки см. в разделе [errno, _doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_getdcwd** возвращает полный путь к текущему рабочему каталогу на указанном диске и сохраняет его в *буфере*. Если текущей рабочей папкой является корневой каталог, строка заканчивается обратной косой чертой (\\). Если текущая рабочая папка находится в каталоге, отличном от корневого, строка заканчивается именем каталога, а не обратной косой чертой.
 
-**_wgetdcwd** является версией **_getdcwd**для расширенных символов, ее параметр *буфера* и возвращаемое значение являются строками расширенных символов. В противном случае **_wgetdcwd** и **_getdcwd** ведут себя одинаково.
+**_wgetdcwd** является версией **_getdcwd** для расширенных символов, ее параметр *буфера* и возвращаемое значение являются строками расширенных символов. В противном случае **_wgetdcwd** и **_getdcwd** ведут себя одинаково.
 
 Эта функция потокобезопасна, даже если она зависит от функции **GetFullPathName**, которая сама не потокобезопасна. Однако можно нарушить потокобезопасность, если многопоточное приложение вызывает и эту функцию, и функцию [GetFullPathName](/windows/win32/api/fileapi/nf-fileapi-getfullpathnamew).
 

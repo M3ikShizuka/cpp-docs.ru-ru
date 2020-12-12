@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __outword'
 title: Встроенная функция __outword
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - __outword intrinsic
 - out instruction
 ms.assetid: 995f8834-0f50-4b4f-a7a2-af0e7c371cda
-ms.openlocfilehash: 766f6adff5ea0212f48ff8727024ac7a5729c944
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 07136a5ae293f7e23a1cf6b0baa2b3a0f0cc54d8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221403"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257580"
 ---
 # <a name="__outword"></a>Встроенная функция __outword
 
 **Блок, относящийся только к системам Microsoft**
 
-Формирует инструкцию, которая отправляет слово с *данными* о порте ввода-вывода, указанном портом. `out`
+Формирует `out` инструкцию, которая отправляет слово с *данными* о порте ввода-вывода, указанном *портом*.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,18 +35,18 @@ void __outword(
 *Порту*\
 окне Порт, в который отправляются данные.
 
-*Data*\
+*Данные*\
 окне Данные для отправки.
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__outword`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эта процедура доступна только как встроенная функция.
 

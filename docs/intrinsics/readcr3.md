@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __readcr3'
 title: __readcr3
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __readcr3 intrinsic
 ms.assetid: e24392c3-cad7-4788-8f31-94bf2e9e0053
-ms.openlocfilehash: b03ff46fabc99839d9c0bbd5c72e1b76d25814c0
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: f430694af6a54dde4839292a10a5267c000ccb86
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221266"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257346"
 ---
 # <a name="__readcr3"></a>__readcr3
 
@@ -31,13 +32,13 @@ unsigned __int64 __readcr3(void);
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__readcr3`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Встроенная функция доступна только в режиме ядра, и подпрограммы доступны только в качестве встроенных.
 

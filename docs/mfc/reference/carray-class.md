@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CArray Class'
 title: Класс CArray
 ms.date: 11/04/2016
 f1_keywords:
@@ -42,12 +43,12 @@ helpviewer_keywords:
 - CArray [MFC], SetAtGrow
 - CArray [MFC], SetSize
 ms.assetid: fead8b00-4cfd-4625-ad0e-251df62ba92f
-ms.openlocfilehash: f73666f3a20488d14a82b7c56d682f3f5b2386df
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2aea88178347fd146720a8205974049e4baf039f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87195178"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259647"
 ---
 # <a name="carray-class"></a>Класс CArray
 
@@ -72,7 +73,7 @@ class CArray : public CObject
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CArray:: CArray](#carray)|Создает пустой массив.|
 
@@ -104,7 +105,7 @@ class CArray : public CObject
 |----------|-----------------|
 |[оператор&#91;&#93;](#operator_at)|Получает или задает элемент с указанным индексом.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Индексы массивов всегда начинаются в позиции 0. Вы можете решить, следует ли исправить верхнюю границу или разрешить массиву расширять при добавлении элементов после текущей границы. Память выделяется непрерывно с верхней границей, даже если некоторые элементы имеют значение null.
 
@@ -134,7 +135,7 @@ class CArray : public CObject
 
 **Заголовок:** afxtempl.h
 
-## <a name="carrayadd"></a><a name="add"></a>CArray:: Add
+## <a name="carrayadd"></a><a name="add"></a> CArray:: Add
 
 Добавляет новый элемент в конец массива, увеличивая массив на 1.
 
@@ -154,7 +155,7 @@ INT_PTR Add(ARG_TYPE newElement);
 
 Индекс добавленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если параметр [SetSize](#setsize) был использован со `nGrowBy` значением больше 1, может быть выделен дополнительный объем памяти. Однако верхняя граница будет увеличена только до 1.
 
@@ -162,7 +163,7 @@ INT_PTR Add(ARG_TYPE newElement);
 
 [!code-cpp[NVC_MFCCollections#22](../../mfc/codesnippet/cpp/carray-class_1.cpp)]
 
-## <a name="carrayappend"></a><a name="append"></a>CArray:: Append
+## <a name="carrayappend"></a><a name="append"></a> CArray:: Append
 
 Вызовите эту функцию члена, чтобы добавить содержимое одного массива в конец другого.
 
@@ -179,7 +180,7 @@ INT_PTR Append(const CArray& src);
 
 Индекс первого добавленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Массивы должны быть одного типа.
 
@@ -189,7 +190,7 @@ INT_PTR Append(const CArray& src);
 
 [!code-cpp[NVC_MFCCollections#23](../../mfc/codesnippet/cpp/carray-class_2.cpp)]
 
-## <a name="carraycarray"></a><a name="carray"></a>CArray:: CArray
+## <a name="carraycarray"></a><a name="carray"></a> CArray:: CArray
 
 Создает пустой массив.
 
@@ -197,7 +198,7 @@ INT_PTR Append(const CArray& src);
 CArray();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Массив растет по одному элементу за раз.
 
@@ -205,7 +206,7 @@ CArray();
 
 [!code-cpp[NVC_MFCCollections#24](../../mfc/codesnippet/cpp/carray-class_3.cpp)]
 
-## <a name="carraycopy"></a><a name="copy"></a>CArray:: Copy
+## <a name="carraycopy"></a><a name="copy"></a> CArray:: Copy
 
 Используйте эту функцию члена, чтобы скопировать элементы одного массива в другой.
 
@@ -218,17 +219,17 @@ void Copy(const CArray& src);
 *src*<br/>
 Источник элементов, копируемых в массив.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите эту функцию члена, чтобы перезаписать элементы одного массива элементами другого массива.
 
-`Copy`не освобождает память; Однако при необходимости `Copy` может выделить дополнительный объем памяти для размещения элементов, копируемых в массив.
+`Copy` не освобождает память; Однако при необходимости `Copy` может выделить дополнительный объем памяти для размещения элементов, копируемых в массив.
 
 ### <a name="example"></a>Пример
 
 [!code-cpp[NVC_MFCCollections#25](../../mfc/codesnippet/cpp/carray-class_4.cpp)]
 
-## <a name="carrayelementat"></a><a name="elementat"></a>CArray:: ElementAt
+## <a name="carrayelementat"></a><a name="elementat"></a> CArray:: ElementAt
 
 Возвращает временную ссылку на указанный элемент в массиве.
 
@@ -246,7 +247,7 @@ const TYPE& ElementAt(INT_PTR nIndex) const;
 
 Ссылка на элемент массива.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Он используется для реализации оператора присваивания слева для массивов.
 
@@ -254,7 +255,7 @@ const TYPE& ElementAt(INT_PTR nIndex) const;
 
   См. пример для к параметру " [DataSize](#getsize)".
 
-## <a name="carrayfreeextra"></a><a name="freeextra"></a>CArray:: Фриекстра
+## <a name="carrayfreeextra"></a><a name="freeextra"></a> CArray:: Фриекстра
 
 Освобождает все дополнительные памяти, которые были выделены, пока массив был увеличен.
 
@@ -262,7 +263,7 @@ const TYPE& ElementAt(INT_PTR nIndex) const;
 void FreeExtra();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция не влияет на размер или верхнюю границу массива.
 
@@ -270,7 +271,7 @@ void FreeExtra();
 
   См. пример для [GetData](#getdata).
 
-## <a name="carraygetat"></a><a name="getat"></a>CArray:: GetAt
+## <a name="carraygetat"></a><a name="getat"></a> CArray:: GetAt
 
 Возвращает элемент массива по указанному индексу.
 
@@ -291,7 +292,7 @@ const TYPE& GetAt(INT_PTR nIndex) const;
 
 Элемент массива в данный момент по этому индексу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Передача отрицательного значения или значения, превышающего значение, возвращенное, `GetUpperBound` приведет к неудачному утверждению.
 
@@ -299,7 +300,7 @@ const TYPE& GetAt(INT_PTR nIndex) const;
 
 [!code-cpp[NVC_MFCCollections#26](../../mfc/codesnippet/cpp/carray-class_5.cpp)]
 
-## <a name="carraygetcount"></a><a name="getcount"></a>CArray:: NOCOUNT
+## <a name="carraygetcount"></a><a name="getcount"></a> CArray:: NOCOUNT
 
 Возвращает число элементов массива.
 
@@ -311,7 +312,7 @@ INT_PTR GetCount() const;
 
 Количество элементов в массиве.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите этот метод, чтобы получить количество элементов в массиве. Поскольку индексы отсчитываются от нуля, размер равен 1 больше, чем самый крупный индекс. Вызов этого метода приведет к формированию того же результата, что и метод [CArray:: resize](#getsize) .
 
@@ -319,7 +320,7 @@ INT_PTR GetCount() const;
 
 [!code-cpp[NVC_MFCCollections#27](../../mfc/codesnippet/cpp/carray-class_6.cpp)]
 
-## <a name="carraygetdata"></a><a name="getdata"></a>CArray:: GetData
+## <a name="carraygetdata"></a><a name="getdata"></a> CArray:: GetData
 
 Используйте эту функцию члена для получения прямого доступа к элементам в массиве.
 
@@ -337,7 +338,7 @@ TYPE* GetData();
 
 Указатель на элемент массива.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если нет доступных элементов, `GetData` возвращает значение null.
 
@@ -347,7 +348,7 @@ TYPE* GetData();
 
 [!code-cpp[NVC_MFCCollections#28](../../mfc/codesnippet/cpp/carray-class_7.cpp)]
 
-## <a name="carraygetsize"></a><a name="getsize"></a>CArray:: DataSize
+## <a name="carraygetsize"></a><a name="getsize"></a> CArray:: DataSize
 
 Возвращает размер массива.
 
@@ -355,7 +356,7 @@ TYPE* GetData();
 INT_PTR GetSize() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Поскольку индексы отсчитываются от нуля, размер равен 1 больше, чем самый крупный индекс. Вызов этого метода приведет к формированию того же результата, что и метод [CArray:: NOCOUNT](#getcount) .
 
@@ -363,7 +364,7 @@ INT_PTR GetSize() const;
 
 [!code-cpp[NVC_MFCCollections#29](../../mfc/codesnippet/cpp/carray-class_8.cpp)]
 
-## <a name="carraygetupperbound"></a><a name="getupperbound"></a>CArray:: GetUpperBound
+## <a name="carraygetupperbound"></a><a name="getupperbound"></a> CArray:: GetUpperBound
 
 Возвращает текущую верхнюю границу данного массива.
 
@@ -371,7 +372,7 @@ INT_PTR GetSize() const;
 INT_PTR GetUpperBound() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Поскольку индексы массива отсчитываются от нуля, эта функция возвращает значение 1, меньшее `GetSize` .
 
@@ -381,7 +382,7 @@ INT_PTR GetUpperBound() const;
 
   См. пример для [CArray:: GetAt](#getat).
 
-## <a name="carrayinsertat"></a><a name="insertat"></a>CArray:: Инсертат
+## <a name="carrayinsertat"></a><a name="insertat"></a> CArray:: Инсертат
 
 Первая версия `InsertAt` вставляет один элемент (или несколько копий элемента) по указанному индексу в массиве.
 
@@ -416,7 +417,7 @@ void InsertAt(
 *пневаррай*<br/>
 Другой массив, содержащий элементы для добавления в этот массив.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В процессе он смещается (путем увеличения индекса) существующего элемента в этом индексе и сдвигает все элементы над ним.
 
@@ -428,7 +429,7 @@ void InsertAt(
 
 [!code-cpp[NVC_MFCCollections#30](../../mfc/codesnippet/cpp/carray-class_9.cpp)]
 
-## <a name="carrayisempty"></a><a name="isempty"></a>CArray:: IsEmpty
+## <a name="carrayisempty"></a><a name="isempty"></a> CArray:: IsEmpty
 
 Определяет, является ли массив пустым.
 
@@ -440,7 +441,7 @@ BOOL IsEmpty() const;
 
 Ненулевое значение, если массив не содержит элементов; в противном случае — 0.
 
-## <a name="carrayoperator-"></a><a name="operator_at"></a>CArray:: operator\[\]
+## <a name="carrayoperator-"></a><a name="operator_at"></a> CArray:: operator \[\]
 
 Эти операторы подстрочных индексов являются удобным заменой для функций [SetAt](#setat) и [GetAt](#getat) .
 
@@ -457,7 +458,7 @@ const TYPE& operator[](int_ptr nindex) const;
 *ниндекс*<br/>
 Индекс элемента, к которому осуществляется доступ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый оператор, вызываемый для массивов, не являющихся **`const`** , может использоваться либо справа (r-Value), либо слева (l-значение) оператора присваивания. Второй метод, который вызывается для **`const`** массивов, может использоваться только справа.
 
@@ -467,7 +468,7 @@ const TYPE& operator[](int_ptr nindex) const;
 
 [!code-cpp[NVC_MFCCollections#34](../../mfc/codesnippet/cpp/carray-class_10.cpp)]
 
-## <a name="carrayrelocateelements"></a><a name="relocateelements"></a>CArray:: Релокатилементс
+## <a name="carrayrelocateelements"></a><a name="relocateelements"></a> CArray:: Релокатилементс
 
 Перемещает данные в новый буфер, когда массив должен увеличиваться или сжиматься.
 
@@ -490,7 +491,7 @@ AFX_INLINE void CArray<TYPE, ARG_TYPE>::RelocateElements(
 *нкаунт*<br/>
 Число элементов в старом массиве.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 *пневдата* всегда достаточно велик, чтобы вместить все элементы *pData* .
 
@@ -498,7 +499,7 @@ AFX_INLINE void CArray<TYPE, ARG_TYPE>::RelocateElements(
 
 Для массивов, в которых элемент содержит указатель на один из своих собственных элементов, или другая структура содержит указатель на один из элементов массива, указатели не обновляются в виде обычного копирования. В этом случае можно исправить указатели, реализовав специализацию `RelocateElements` с соответствующими типами. Вы также отвечаете за копирование данных.
 
-## <a name="carrayremoveall"></a><a name="removeall"></a>CArray:: RemoveAll
+## <a name="carrayremoveall"></a><a name="removeall"></a> CArray:: RemoveAll
 
 Удаляет все элементы из этого массива.
 
@@ -506,7 +507,7 @@ AFX_INLINE void CArray<TYPE, ARG_TYPE>::RelocateElements(
 void RemoveAll();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если массив уже пуст, функция продолжает работать.
 
@@ -514,7 +515,7 @@ void RemoveAll();
 
 [!code-cpp[NVC_MFCCollections#31](../../mfc/codesnippet/cpp/carray-class_11.cpp)]
 
-## <a name="carrayremoveat"></a><a name="removeat"></a>CArray:: RemoveAt
+## <a name="carrayremoveat"></a><a name="removeat"></a> CArray:: RemoveAt
 
 Удаляет один или несколько элементов, начиная с указанного индекса в массиве.
 
@@ -532,7 +533,7 @@ void RemoveAt(
 *нкаунт*<br/>
 Число удаляемых элементов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В процессе он сдвигает все элементы над удаленными элементами. Он уменьшает верхнюю границу массива, но не освобождает память.
 
@@ -542,7 +543,7 @@ void RemoveAt(
 
 [!code-cpp[NVC_MFCCollections#32](../../mfc/codesnippet/cpp/carray-class_12.cpp)]
 
-## <a name="carraysetat"></a><a name="setat"></a>CArray:: SetAt
+## <a name="carraysetat"></a><a name="setat"></a> CArray:: SetAt
 
 Задает элемент массива по указанному индексу.
 
@@ -561,9 +562,9 @@ void SetAt(INT_PTR nIndex, ARG_TYPE newElement);
 *невелемент*<br/>
 Новое значение элемента, которое должно храниться в указанной позиции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`SetAt`не приведет к увеличению размера массива. Используйте [сетатгров](#setatgrow) , если требуется, чтобы массив был автоматически расти.
+`SetAt` не приведет к увеличению размера массива. Используйте [сетатгров](#setatgrow) , если требуется, чтобы массив был автоматически расти.
 
 Необходимо убедиться, что значение индекса соответствует допустимой позиции в массиве. Если он выходит за пределы допустимого диапазона, отладочная версия библиотеки утверждает.
 
@@ -571,7 +572,7 @@ void SetAt(INT_PTR nIndex, ARG_TYPE newElement);
 
   См. пример для [GetAt](#getat).
 
-## <a name="carraysetatgrow"></a><a name="setatgrow"></a>CArray:: Сетатгров
+## <a name="carraysetatgrow"></a><a name="setatgrow"></a> CArray:: Сетатгров
 
 Задает элемент массива по указанному индексу.
 
@@ -590,7 +591,7 @@ void SetAtGrow(INT_PTR nIndex, ARG_TYPE newElement);
 *невелемент*<br/>
 Элемент, добавляемый в этот массив. Разрешено значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 При необходимости массив автоматически растет (то есть верхняя граница корректируется для размещения нового элемента).
 
@@ -598,7 +599,7 @@ void SetAtGrow(INT_PTR nIndex, ARG_TYPE newElement);
 
 [!code-cpp[NVC_MFCCollections#33](../../mfc/codesnippet/cpp/carray-class_13.cpp)]
 
-## <a name="carraysetsize"></a><a name="setsize"></a>CArray:: SetSize
+## <a name="carraysetsize"></a><a name="setsize"></a> CArray:: SetSize
 
 Устанавливает размер пустого или существующего массива. При необходимости выделяет память.
 
@@ -611,12 +612,12 @@ void SetSize(
 ### <a name="parameters"></a>Параметры
 
 *нневсизе*<br/>
-Новый размер массива (число элементов). Должна быть не ниже 0.
+Новый размер массива (число элементов). Должно быть больше или равно 0.
 
 *нгровби*<br/>
 Минимальное число слотов элементов для выделения при необходимости увеличения размера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если новый размер меньше старого, массив усекается и освобождается вся неиспользуемая память.
 

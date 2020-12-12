@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __vmx_vmwrite'
 title: __vmx_vmwrite
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - __vmx_vmwrite intrinsic
 - VMWRITE instruction
 ms.assetid: 88139792-fd3f-4210-97ca-9d84f43a0252
-ms.openlocfilehash: cdc5590858f160db24bf75ef11c8f20b204a3152
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: d8902d51b05fa96faf22cbb6d80400e1f67c5f3e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219396"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257307"
 ---
 # <a name="__vmx_vmwrite"></a>__vmx_vmwrite
 
@@ -39,26 +40,26 @@ unsigned char __vmx_vmwrite(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-0\
+0,0
 Операция успешно выполнена.
 
-1\
+одного
 Не удалось выполнить операцию; расширенные сведения о состоянии доступны в `VM-instruction error field` текущей структуре VMCS.
 
-2\
+открыт
 Сбой операции без сведений о состоянии.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Функция `__vmx_vmwrite` эквивалентна инструкции компьютера `VMWRITE` . Значением `Field` параметра является индекс поля в кодировке, описанный в документации Intel. Для получения дополнительной информации выполните поиск приложения C из раздела "Техническая спецификация виртуализации Intel для архитектуры IA-32" на сайте корпорации [Intel](https://software.intel.com/articles/intel-sdm) .
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__vmx_vmwrite`|X64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
 **Завершение блока, относящегося только к системам Майкрософт**
 

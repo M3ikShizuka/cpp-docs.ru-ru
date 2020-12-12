@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _getdcwd_nolock, _wgetdcwd_nolock'
 title: _getdcwd_nolock, _wgetdcwd_nolock
 ms.date: 11/04/2016
 api_name:
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - _wgetdcwd_nolock function
 - directories [C++], current working
 ms.assetid: d9bdf712-43f8-4173-8f9a-844e82beaa97
-ms.openlocfilehash: c07c52e0dcfe84c5f00a9a0b67d872a860941c6f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d40bd7a3cf8d666ad7ba108fc71e443ea262c13f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229445"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256566"
 ---
 # <a name="_getdcwd_nolock-_wgetdcwd_nolock"></a>_getdcwd_nolock, _wgetdcwd_nolock
 
@@ -81,9 +82,9 @@ wchar_t *_wgetdcwd_nolock(
 
 См. раздел [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-**_getdcwd_nolock** и **_wgetdcwd_nolock** идентичны **_getdcwd** и **_wgetdcwd**соответственно, за исключением того, что они не защищены от помех в других потоках. Они могут выполняться быстрее, поскольку не создают дополнительную нагрузку, связанную с блокировкой работы других потоков. Используйте эти функции только в потокобезопасных контекстах, например в однопоточных приложениях или если вызываемая область уже обрабатывает изоляцию потоков.
+**_getdcwd_nolock** и **_wgetdcwd_nolock** идентичны **_getdcwd** и **_wgetdcwd** соответственно, за исключением того, что они не защищены от помех в других потоках. Они могут выполняться быстрее, поскольку не создают дополнительную нагрузку, связанную с блокировкой работы других потоков. Используйте эти функции только в потокобезопасных контекстах, например в однопоточных приложениях или если вызываемая область уже обрабатывает изоляцию потоков.
 
 ### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
@@ -100,7 +101,7 @@ wchar_t *_wgetdcwd_nolock(
 
 Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Управление каталогом](../../c-runtime-library/directory-control.md)<br/>
 [_chdir, _wchdir](chdir-wchdir.md)<br/>
