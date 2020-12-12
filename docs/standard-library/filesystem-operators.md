@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; Операторы FileSystem &gt;'
 title: Операторы &lt;filesystem&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,20 +13,20 @@ f1_keywords:
 - FILESYSTEM/std::experimental::filesystem::operator<<
 - FILESYSTEM/std::experimental::filesystem::operator>>
 ms.assetid: 102c4833-aa3b-41a8-8998-f5003c546bfd
-ms.openlocfilehash: 819c91e707e50a190aa58eda62f8e07f3451b033
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 140ef553cbfd17fe2b1cfc41bedba397506da817
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240730"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232475"
 ---
 # <a name="ltfilesystemgt-operators"></a>Операторы &lt;filesystem&gt;
 
-Операторы выполняют лексическое сравнение двух путей как строк. Используйте `equivalent` функцию, чтобы определить, ссылаются ли два пути (например, относительный путь и абсолютный путь) на один и тот же файл или каталог на диске.
+Операторы выполняют лексическое сравнение двух путей как строк. Используйте `equivalent` функцию, чтобы определить, ссылаются ли два пути (например, относительный путь и абсолютный путь) на один файл или каталог на диске.
 
 Дополнительные сведения см. в разделе [Навигация по файловой системе (C++)](../standard-library/file-system-navigation.md).
 
-## <a name="operator"></a>operator==
+## <a name="operator"></a>оператор ==
 
 ```cpp
 bool operator==(const path& left, const path& right) noexcept;
@@ -94,7 +95,7 @@ template <class Elem, class Traits>
 basic_ostream<Elem, Traits>& operator<<(basic_ostream<Elem, Traits>& os, const path& pval);
 ```
 
-Функция возвращает << pval.string\<Elem, Traits>().
+Функция возвращает ОС << Pval. String \<Elem, Traits> ().
 
 ## <a name="operator"></a>operator>>
 

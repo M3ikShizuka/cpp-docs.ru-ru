@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: проверенные итераторы'
 title: Checked Iterators
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,18 +11,18 @@ helpviewer_keywords:
 - iterators, checked
 - checked iterators
 ms.assetid: cfc87df8-e3d9-403b-ab78-e9483247d940
-ms.openlocfilehash: 2327638208f30908cd3429ae656ce569f5821195
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: affa280bf967727a08449cc4f488c3a984e32b0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684907"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234284"
 ---
 # <a name="checked-iterators"></a>Checked Iterators
 
 Проверенные итераторы гарантируют отсутствие перезаписи границ контейнера. Проверенные итераторы применяются и к сборкам выпуска, и к сборкам отладки. Дополнительные сведения об использовании итераторов отладки при компиляции в режиме отладки см. в статье [Поддержка итераторов отладки](../standard-library/debug-iterator-support.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об отключении предупреждений, создаваемых проверенными итераторами, см. в разделе [_SCL_SECURE_NO_WARNINGS](../standard-library/scl-secure-no-warnings.md).
 
@@ -228,7 +229,7 @@ a7: 0 7 14 21 28 35 42 49 56 63 70 77 84 91 98 105
 a8: 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Общие сведения о стандартной библиотеке C++](../standard-library/cpp-standard-library-overview.md)\
 [Поддержка итератора отладки](../standard-library/debug-iterator-support.md)

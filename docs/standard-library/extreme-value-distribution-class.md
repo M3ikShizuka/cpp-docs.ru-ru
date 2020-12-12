@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: extreme_value_distribution классе'
 title: Класс extreme_value_distribution
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::extreme_value_distribution [C++], param_type
 - std::extreme_value_distribution [C++], param_type
 ms.assetid: a0cd8370-0a54-4e26-9388-8b9678fb57da
-ms.openlocfilehash: b086638d02afb929d18daad76716a12704585108
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d4abd89ae7fee6ab170f5d827281146d703a6f97
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835900"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232490"
 ---
 # <a name="extreme_value_distribution-class"></a>Класс extreme_value_distribution
 
@@ -77,7 +78,7 @@ public:
 *РГСЧ*\
 Модуль генератора случайных чисел. Возможные типы см. в разделе [\<random>](../standard-library/random.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса описывает распределение, которое создает значения указанного пользователем типа с плавающей запятой или тип **`double`** , если он не указан, распределен в соответствии с экстремальным распределением значений. В следующей таблице представлены ссылки на статьи об отдельных членах.
 
@@ -199,7 +200,7 @@ explicit extreme_value_distribution(const param_type& parm);
 *ParM*\
 Структура `param_type`, используемая для формирования распределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительное условие:**`0.0 < b`
 
@@ -234,7 +235,7 @@ struct param_type {
 *Правильно*\
 Объект `param_type`, который требуется сравнить с данным объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительное условие:**`0.0 < b`
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: error_category классе'
 title: Класс error_category
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - std::error_category::message
 - std::error_category::name
 ms.assetid: e0a71e14-852d-4905-acd6-5f8ed426706d
-ms.openlocfilehash: 218596ff5b81e99f4787efe2582fdc2752533cec
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 25ad7f6acfe50cdcc0c4b9df44fb3b8b6244f569
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840171"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232659"
 ---
 # <a name="error_category-class"></a>Класс error_category
 
@@ -86,7 +87,7 @@ virtual error_condition default_error_condition(int _Errval) const;
 
 Возвращает `error_condition(_Errval, *this)`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ### <a name="equivalent"></a>Эквивалент <a name="equivalent"></a>
 
@@ -115,7 +116,7 @@ virtual bool equivalent(const error_code& _Code,
 
 **`true`** , если категория и значение равны; в противном случае — **`false`** .
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Первая функция-член возвращает значение `*this == _Cond.category() && _Cond.value() == _Errval`.
 
@@ -144,7 +145,7 @@ virtual string message(error_code::value_type val) const = 0;
 
 Возвращает описательное имя кода ошибки *Val* для категории. Если код ошибки не распознан, возвращает `"unknown error"` .
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 ### <a name="name"></a>Имя в <a name="name"></a>
 
@@ -181,7 +182,7 @@ bool operator==(const error_category& right) const;
 
 **`true`** значение, если объекты равны; **`false`** значение, если объекты не равны.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Этот оператор-член возвращает `this == &right`.
 
@@ -202,7 +203,7 @@ bool operator!=(const error_category& right) const;
 
 **`true`** значение, если `error_category` объект не равен объекту, `error_category` переданному по *правому краю*; в противном случае — **`false`** .
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Оператор-член возвращает `(!*this == right)`.
 
@@ -223,7 +224,7 @@ bool operator<(const error_category& right) const;
 
 **`true`** значение, если `error_category` объект меньше, чем `error_category` объект, переданный для сравнения; В противном случае — **`false`** .
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Оператор-член возвращает `this < &right`.
 
@@ -241,6 +242,6 @@ const error_category& system_category();
 typedef int value_type;
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Это определение типа является синонимом для **`int`** .

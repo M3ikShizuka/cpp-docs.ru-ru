@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: общие разделы по MFC'
 title: Общие разделы по MFC
 ms.date: 09/17/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - class libraries [MFC], MFC
 - MFC, application development
 ms.assetid: 617e9945-9bb3-471d-a3ba-e235fcfb55d1
-ms.openlocfilehash: effab556277b3cd9ca072798bea3a77dbde58620
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a0e19a205e29297bf6808d6d979b9e27366b3e4d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618766"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234362"
 ---
 # <a name="general-mfc-topics"></a>Общие разделы по MFC
 
@@ -21,19 +22,19 @@ ms.locfileid: "84618766"
 
 Платформа MFC — это мощная система, позволяющая выполнять задачи построения на основе разработок опытных программистов для Windows. MFC сокращает время разработки, делает код более мобильным, обеспечивает масштабную поддержку с сохранением свободы и гибкости программирования и предоставляет простой доступ к тяжело программируемым элементам пользовательского интерфейса и технологиям, таким как технология Active, OLE и интернет-программирование. Более того, MFC упрощает программирование баз данных с помощью объектов DAO (теперь устарело) и программного программирования (ODBC) и сетевых средств через сокеты Windows. MFC упрощает программирование таких компонентов, как страницы свойств («диалоговые окна с вкладками»), окна предварительного просмотра перед печатью и плавающие настраиваемые панели инструментов.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 
 [Примеры MFC](../overview/visual-cpp-samples.md#mfc-samples)
 
-[Использование файлов с исходным кодом MFC](using-the-mfc-source-files.md)
+[Использование исходных файлов MFC](using-the-mfc-source-files.md)
 
-[Версии библиотек MFC](mfc-library-versions.md)
+[Версии библиотеки MFC](mfc-library-versions.md)
 
-[Использование классов для создания приложений для Windows](using-the-classes-to-write-applications-for-windows.md)
+[Использование классов для написания приложений для Windows](using-the-classes-to-write-applications-for-windows.md)
 
 [Сборка на платформе](building-on-the-framework.md)
 
-[CWinApp: класс приложений](cwinapp-the-application-class.md)
+[CWinApp: класс Application](cwinapp-the-application-class.md)
 
 [Шаблоны документов и процесс создания документа/представления](document-templates-and-the-document-view-creation-process.md)
 
@@ -45,9 +46,9 @@ ms.locfileid: "84618766"
 
 [Изоляция библиотеки общих элементов управления MFC](isolation-of-the-mfc-common-controls-library.md)
 
-[Требования к сборке для использования стандартных элементов управления в Windows Vista](build-requirements-for-windows-vista-common-controls.md)
+[Требования к сборке для стандартных элементов управления Windows Vista](build-requirements-for-windows-vista-common-controls.md)
 
-[Практическое руководство. Добавление поддержки диспетчера перезапуска](how-to-add-restart-manager-support.md)
+[Как добавить поддержку диспетчера перезапуска](how-to-add-restart-manager-support.md)
 
 [Динамический макет](dynamic-layout.md)
 

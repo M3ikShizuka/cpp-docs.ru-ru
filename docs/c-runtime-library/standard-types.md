@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: стандартные типы'
 title: Стандартные типы
 ms.date: 11/04/2016
 f1_keywords:
@@ -160,12 +161,12 @@ helpviewer_keywords:
 - CRT_REPORT_HOOK type
 - _finddata_t type
 ms.assetid: 23312dd2-4a6a-4d70-9b48-2a5d0d8c9f28
-ms.openlocfilehash: 376c29371fb9213ed46435b41bea1666058c7b4e
-ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
+ms.openlocfilehash: 49a8e877987af97e961bb32f47bd857b4eceddfc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91765313"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235753"
 ---
 # <a name="standard-types"></a>Стандартные типы
 
@@ -255,4 +256,4 @@ ms.locfileid: "91765313"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Справочник по библиотеке времени выполнения C](../c-runtime-library/c-run-time-library-reference.md)
+[Справочник по библиотеке C Run-Time](../c-runtime-library/c-run-time-library-reference.md)

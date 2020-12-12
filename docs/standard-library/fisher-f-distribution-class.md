@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: fisher_f_distribution классе'
 title: Класс fisher_f_distribution
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::fisher_f_distribution [C++], param_type
 - std::fisher_f_distribution [C++], param_type
 ms.assetid: 9513b6ce-3309-4be1-829b-f504bca35bbf
-ms.openlocfilehash: 6f8c60b5f4523caf19e432ff853d49ad57fd277a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3020faef2ada6254fde940c89a60630816109863
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835809"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232474"
 ---
 # <a name="fisher_f_distribution-class"></a>Класс fisher_f_distribution
 
@@ -75,7 +76,7 @@ public:
 *РГСЧ*\
 Единый механизм генератора случайных чисел. Возможные типы см. в разделе [\<random>](../standard-library/random.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса описывает распределение, которое создает значения заданного пользователем типа с плавающей запятой или тип **`double`** , если он не указан, распределяется в соответствии с F-распределением Фишера. В следующей таблице представлены ссылки на статьи об отдельных членах.
 
@@ -255,7 +256,7 @@ explicit fisher_f_distribution(const param_type& parm);
 *ParM*\
 Структура `param_type`, используемая для формирования распределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительные условия:** `0.0 < m` и `0.0 < n`
 
@@ -290,7 +291,7 @@ struct param_type {
 *Правильно*\
 Объект `param_type`, который требуется сравнить с данным объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительные условия:** `0.0 < m` и `0.0 < n`
 

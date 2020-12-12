@@ -1,16 +1,17 @@
 ---
-title: Потоки ввода-вывода
+description: 'Дополнительные сведения: потоки ввода-вывода'
+title: Input-Outputные потоки
 ms.date: 11/04/2016
 helpviewer_keywords:
 - I/O [C++], stream
 - stream I/O
 ms.assetid: 21a97566-91a7-42d6-b2f8-a4c16bc926f1
-ms.openlocfilehash: 54b53f96d487e466106fe92a01affa7bd3e55c16
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fd261bfdac5b9ce95b04430e9d77c6bd1df56c7d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228262"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231645"
 ---
 # <a name="inputoutput-streams"></a>Потоки ввода/вывода
 
@@ -29,7 +30,7 @@ ms.locfileid: "87228262"
 
 Шаблон класса `basic_stringstream` и его общая специализация `stringstream` часто используются для работы с объектами потока ввода-вывода для вставки и извлечения символьных данных. Дополнительные сведения см. в разделе [Класс basic_stringstream](../standard-library/basic-stringstream-class.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [StringStream](../standard-library/basic-stringstream-class.md)\
 [Класс basic_stringstream](../standard-library/basic-stringstream-class.md)\

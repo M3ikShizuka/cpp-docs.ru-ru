@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: потоковая операция ввода-вывода'
 title: Потоковый ввод-вывод
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - I/O [CRT], stream
 - stream I/O
 ms.assetid: dc7874d3-a91b-456a-9015-4748bb358217
-ms.openlocfilehash: 8bff3cd74dfe4b1e3aa749ec28a361dd4a09c2f7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a787d83390239679ad48c2ca09b41f567a0a8c95
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231251"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235675"
 ---
 # <a name="stream-io"></a>Потоковый ввод-вывод
 
@@ -19,7 +20,7 @@ ms.locfileid: "87231251"
 
 ## <a name="stream-io-routines"></a>Потоковые подпрограммы ввода-вывода
 
-|Подпрограмма|Используйте|
+|Подпрограмма|Использовать|
 |-------------|---------|
 |[clearerr](../c-runtime-library/reference/clearerr.md), [clearerr_s](../c-runtime-library/reference/clearerr-s.md)|Очистка индикатора ошибки для потока|
 |[fclose](../c-runtime-library/reference/fclose-fcloseall.md)|Закрытие потока|

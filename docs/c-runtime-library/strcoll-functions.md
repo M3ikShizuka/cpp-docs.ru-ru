@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функциях strcoll
 title: Функции strcoll
 ms.date: 11/04/2016
 api_location:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - strcoll functions
 - strings [C++], comparing by code page
 ms.assetid: c09eeff3-8aba-4cfb-a524-752436d85573
-ms.openlocfilehash: c63a130cee6913006fff2ed5568c41cc4fdeac3c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
-ms.translationtype: HT
+ms.openlocfilehash: 8a0b146bff2eab8927733923367b0ae49ecea4c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944896"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235688"
 ---
 # <a name="strcoll-functions"></a>Функции strcoll
 
@@ -33,14 +34,14 @@ ms.locfileid: "70944896"
 
 ### <a name="strcoll-functions"></a>Функции strcoll
 
-|однобайтовая кодировка|Юникод|MBCS|ОПИСАНИЕ|
+|SBCS (single-byte character set, однобайтовый набор символов)|Юникод|MBCS|Описание|
 |----------|-------------|----------|-----------------|
 |[strcoll](../c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md)|[wcscoll](../c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md)|[_mbscoll](../c-runtime-library/reference/strcoll-wcscoll-mbscoll-strcoll-l-wcscoll-l-mbscoll-l.md)|Сопоставить две строки|
 |[_stricoll](../c-runtime-library/reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md)|[_wcsicoll](../c-runtime-library/reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md)|[_mbsicoll](../c-runtime-library/reference/stricoll-wcsicoll-mbsicoll-stricoll-l-wcsicoll-l-mbsicoll-l.md)|Сопоставить две строки (регистр не учитывается)|
 |[_strncoll](../c-runtime-library/reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|[_wcsncoll](../c-runtime-library/reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|[_mbsncoll](../c-runtime-library/reference/strncoll-wcsncoll-mbsncoll-strncoll-l-wcsncoll-l-mbsncoll-l.md)|Сопоставить первые `count` символов двух строк|
 |[_strnicoll](../c-runtime-library/reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|[_wcsnicoll](../c-runtime-library/reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|[_mbsnicoll](../c-runtime-library/reference/strnicoll-wcsnicoll-mbsnicoll-strnicoll-l-wcsnicoll-l-mbsnicoll-l.md)|Сопоставить первые `count` символов двух строк (регистр не учитывается)|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Версии этих функций для однобайтовых символов (SBCS) (`strcoll`, `stricoll`, `_strncoll` и `_strnicoll`) сравнивают `string1` и `string2` согласно параметру категории `LC_COLLATE` текущего языкового стандарта. Эти функции отличаются от соответствующих функций `strcmp` тем, что функции `strcoll` используют сведения кодовой страницы языкового стандарта, предоставляющие последовательности сопоставления. Для сравнения строк в языковых стандартах, где порядок символов в наборе отличается от лексикографического порядка, функции `strcoll` необходимо использовать вместо соответствующих функций `strcmp`. Дополнительные сведения по `LC_COLLATE` см. в разделе [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md).
 
@@ -50,10 +51,10 @@ ms.locfileid: "70944896"
 
 Поскольку функции `coll` сопоставляют строки для лексикографического сравнения, тогда как функции `cmp` просто проверяют на равенство строк, функции `coll` гораздо медленнее, чем соответствующие версии `cmp`. Таким образом, функции `coll` следует использовать только в том случае, когда есть различие между порядком символов в наборе и лексикографическим порядке символов в текущей кодовой странице и данное различие представляет интерес во время сравнения строк.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Языковой стандарт](../c-runtime-library/locale.md)<br/>
-[Операции со строками](../c-runtime-library/string-manipulation-crt.md)<br/>
+[Локаль](../c-runtime-library/locale.md)<br/>
+[Управление строками](../c-runtime-library/string-manipulation-crt.md)<br/>
 [localeconv](../c-runtime-library/reference/localeconv.md)<br/>
 [_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l](../c-runtime-library/reference/mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)<br/>
 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>

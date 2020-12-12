@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _stat структура st_mode константы полей'
 title: Константы поля st_mode структуры _stat
 ms.date: 11/04/2016
 f1_keywords:
@@ -35,14 +36,14 @@ helpviewer_keywords:
 - _S_IREAD constant
 - _S_IFCHR constant
 ms.assetid: fd462004-7563-4766-8443-30b0a86174b6
-ms.openlocfilehash: ff2b6ac806b774ae3fe80f9b3cf4b3d2e82a2a9c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: bd304119c705196981342caf5a257cc113fed923
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57744688"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235740"
 ---
-# <a name="stat-structure-stmode-field-constants"></a>Константы поля st_mode структуры _stat
+# <a name="_stat-structure-st_mode-field-constants"></a>Константы поля st_mode структуры _stat
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -50,7 +51,7 @@ ms.locfileid: "57744688"
 #include <sys/stat.h>
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Эти константы помогают указать тип файла в поле **st_mode** структуры [_stat](../c-runtime-library/standard-types.md).
 
@@ -61,14 +62,14 @@ ms.locfileid: "57744688"
 |`_S_IFMT`|Маска типа файла|
 |`_S_IFDIR`|Каталог|
 |`_S_IFCHR`|Специальный символ (если задана, указывает устройство)|
-|`_S_IFREG`|Регулярное|
+|`_S_IFREG`|Обычный|
 |`_S_IREAD`|Разрешение на чтение, владелец|
 |`_S_IWRITE`|Разрешение на запись, владелец|
 |`_S_IEXEC`|Разрешение на выполнение или поиск, владелец|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[_stat, _wstat Functions](../c-runtime-library/reference/stat-functions.md)<br/>
+[Функции _stat, _wstat](../c-runtime-library/reference/stat-functions.md)<br/>
 [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
 [Стандартные типы](../c-runtime-library/standard-types.md)<br/>
 [Глобальные константы](../c-runtime-library/global-constants.md)

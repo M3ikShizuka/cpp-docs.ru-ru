@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о классе Duration
 title: Класс duration
 ms.date: 03/27/2016
 f1_keywords:
@@ -11,12 +12,12 @@ f1_keywords:
 ms.assetid: 06b863b3-65be-4ded-a72e-6e1eb1531077
 helpviewer_keywords:
 - std::chrono [C++], duration
-ms.openlocfilehash: 454c03aeb1a4666543a28759d02405a512453ffc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9a37d3682e70f840c6c32eed55eb52ce133ab6f7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217796"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232737"
 ---
 # <a name="duration-class"></a>Класс duration
 
@@ -48,7 +49,7 @@ class duration <duration<Rep, Period1>, Period2>;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[duration](#duration)|Формирует объект `duration`.|
 
@@ -81,7 +82,7 @@ class duration <duration<Rep, Period1>, Period2>;
 
 **Пространство имен:** std::chrono
 
-## <a name="durationcount"></a><a name="count"></a>Длительность:: число
+## <a name="durationcount"></a><a name="count"></a> Длительность:: число
 
 Получает количество тактов в интервале времени.
 
@@ -93,7 +94,7 @@ constexpr Rep count() const;
 
 Количество тактов в интервале времени.
 
-## <a name="durationduration-constructor"></a><a name="duration"></a>Длительность::d конструктор фигурации
+## <a name="durationduration-constructor"></a><a name="duration"></a> Длительность::d конструктор фигурации
 
 Формирует объект `duration`.
 
@@ -121,7 +122,7 @@ constexpr duration(const duration<Rep2, Period2>& Dur);
 *Ожидаем*\
 Число тактов периода, заданного параметром *Period2*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конструктор по умолчанию создает объект, который не инициализирован. Инициализация значения с помощью пустых фигурных скобок инициализирует объект, представляющий интервал времени нулевых тактов.
 
@@ -135,7 +136,7 @@ constexpr duration(const duration<Rep2, Period2>& Dur);
 
 Если второй конструктор не участвует в разрешении перегрузки и `treat_as_floating_point<rep>`*не содержит значение true* или оба `ratio_divide<Period2, period>::den` не равны 1 и `treat_as_floating_point<Rep2>`*не содержит значение false*, третий конструктор не участвует в разрешении перегрузки. Дополнительные сведения см. в разделе [<type_traits>](../standard-library/type-traits.md).
 
-## <a name="durationmax"></a><a name="max"></a>Duration:: Max
+## <a name="durationmax"></a><a name="max"></a> Duration:: Max
 
 Статический метод, который возвращает верхнюю границу значений типа параметра-шаблона `Ref`.
 
@@ -147,7 +148,7 @@ static constexpr duration max();
 
 Фактически возвращает `duration(duration_values<rep>::max())`.
 
-## <a name="durationmin"></a><a name="min"></a>Длительность:: минимум
+## <a name="durationmin"></a><a name="min"></a> Длительность:: минимум
 
 Статический метод, который возвращает нижнюю границу значений типа параметра-шаблона `Ref`.
 
@@ -159,7 +160,7 @@ static constexpr duration min();
 
 Фактически возвращает `duration(duration_values<rep>::min())`.
 
-## <a name="durationoperator-"></a><a name="operator-"></a>Длительность:: оператор-
+## <a name="durationoperator-"></a><a name="operator-"></a> Длительность:: оператор-
 
 Возвращает копию объекта `duration` вместе с отрицательным счетчиком тактов.
 
@@ -167,7 +168,7 @@ static constexpr duration min();
 constexpr duration operator-() const;
 ```
 
-## <a name="durationoperator--"></a><a name="operator--"></a>Duration:: оператор--
+## <a name="durationoperator--"></a><a name="operator--"></a> Duration:: оператор--
 
 Уменьшает на единицу накопленный счетчик тактов.
 
@@ -183,7 +184,7 @@ duration operator--(int);
 
 Второй метод возвращает копию **`*this`** , созданную до уменьшения.
 
-## <a name="durationoperator"></a><a name="op_eq"></a>Длительность:: оператор =
+## <a name="durationoperator"></a><a name="op_eq"></a> Длительность:: оператор =
 
 Уменьшает накопленный счетчик тактов по модулю на указанное значение.
 
@@ -202,7 +203,7 @@ duration& operator%=(const duration& Div);
 
 Объект `duration` после выполнения операции по модулю.
 
-## <a name="durationoperator"></a><a name="op_star_eq"></a>Duration:: оператор * =
+## <a name="durationoperator"></a><a name="op_star_eq"></a> Duration:: оператор * =
 
 Умножает накопленный счетчик тактов на указанное значение.
 
@@ -219,7 +220,7 @@ duration& operator*=(const rep& Mult);
 
 Объект `duration` после выполнения умножения.
 
-## <a name="durationoperator"></a><a name="op_div_eq"></a>Длительность:: оператор/=
+## <a name="durationoperator"></a><a name="op_div_eq"></a> Длительность:: оператор/=
 
 Делит накопленный счетчик тактов на указанное значение.
 
@@ -236,7 +237,7 @@ duration& operator/=(const rep& Div);
 
 Объект `duration` после выполнения деления.
 
-## <a name="durationoperator"></a><a name="op_add"></a>Длительность:: operator +
+## <a name="durationoperator"></a><a name="op_add"></a> Длительность:: operator +
 
 Возвращает **`*this`** .
 
@@ -244,7 +245,7 @@ duration& operator/=(const rep& Div);
 constexpr duration operator+() const;
 ```
 
-## <a name="durationoperator"></a><a name="op_add_add"></a>Длительность:: operator + +
+## <a name="durationoperator"></a><a name="op_add_add"></a> Длительность:: operator + +
 
 Увеличивает на единицу накопленный счетчик тактов.
 
@@ -260,7 +261,7 @@ duration operator++(int);
 
 Второй метод возвращает копию **`*this`** , созданную до приращения.
 
-## <a name="durationoperator"></a><a name="op_add_eq"></a>Длительность:: operator + =
+## <a name="durationoperator"></a><a name="op_add_eq"></a> Длительность:: operator + =
 
 Добавляет счетчик тактов указанного объекта `duration` к накопленному счетчику тактов.
 
@@ -277,7 +278,7 @@ duration& operator+=(const duration& Dur);
 
 Объект `duration` после добавления.
 
-## <a name="durationoperator-"></a><a name="operator-_eq"></a>Длительность:: оператор-=
+## <a name="durationoperator-"></a><a name="operator-_eq"></a> Длительность:: оператор-=
 
 Вычитает счетчик тактов указанного объекта `duration` из накопленного счетчика тактов.
 
@@ -294,7 +295,7 @@ duration& operator-=(const duration& Dur);
 
 Объект `duration` после вычитания.
 
-## <a name="durationzero"></a><a name="zero"></a>Длительность:: ноль
+## <a name="durationzero"></a><a name="zero"></a> Длительность:: ноль
 
 Возвращает `duration(duration_values<rep>::zero())`.
 
@@ -302,7 +303,7 @@ duration& operator-=(const duration& Dur);
 static constexpr duration zero();
 ```
 
-## <a name="durationoperator-mod"></a><a name="op_mod_eq"></a>Duration:: оператор Mod =
+## <a name="durationoperator-mod"></a><a name="op_mod_eq"></a> Duration:: оператор Mod =
 
 Уменьшает накопленный счетчик тактов по модулю на Div или Div.count().
 
@@ -315,7 +316,7 @@ duration& operator%=(const rep& Div);duration& operator%=(const duration& Div);
 *Div*\
 Делитель, который является либо объектом длительности, либо значением, представляющим значение счетчика тактов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция-член уменьшает накопленный счетчик тактов по модулю на Div и возвращает *this. Вторая функция-член уменьшает накопленный счетчик тактов по модулю на Div.count() и возвращает \*this.
 

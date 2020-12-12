@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: insert_iterator классе'
 title: Класс insert_iterator
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - std::insert_iterator [C++], container_type
 - std::insert_iterator [C++], reference
 ms.assetid: d5d86405-872e-4e3b-9e68-c69a2b7e8221
-ms.openlocfilehash: 530168f5e259934f7d614b305e6ac1092ba68f4d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d9089e0ab592ed6c8289570cc422aa6183444d55
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233162"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231580"
 ---
 # <a name="insert_iterator-class"></a>Класс insert_iterator
 
@@ -33,13 +34,13 @@ class insert_iterator;
 *Контейнера*\
 Тип контейнера, в который итератор `insert_iterator` вставит элементы.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Контейнер типа `Container` должен удовлетворять требованиям к контейнеру переменного размера и иметь функцию-член вставки с двумя аргументами, где параметры имеют тип `Container::iterator` и `Container::value_type` и возвращают тип `Container::iterator` . Последовательности из стандартной библиотеки С++ и упорядоченные ассоциативные контейнеры удовлетворяют данным требованиям и могут быть адаптированы к использованию в сочетании с `insert_iterator`s. Для ассоциативных контейнеров аргумент позиции обрабатывается как подсказка, которая потенциально может увеличить или снизить производительность в зависимости от эффективности подсказки. Итератор `insert_iterator` всегда необходимо инициализировать с его контейнером.
 
 ### <a name="constructors"></a>Конструкторы
 
-|Конструктор|Описание:|
+|Конструктор|Описание|
 |-|-|
 |[insert_iterator](#insert_iterator)|Создает итератор `insert_iterator`, добавляющий элемент в указанную позицию в контейнере.|
 
@@ -52,7 +53,7 @@ class insert_iterator;
 
 ### <a name="operators"></a>Операторы
 
-|Оператор|Описание:|
+|Оператор|Описание|
 |-|-|
 |[станции](#op_star)|Оператор разыменования используется для реализации выражения итератора вывода * `i` = `x` для вставки общего типа.|
 |[operator + +](#op_add_add)|Увеличивает `insert_iterator` до следующего местоположения, в котором можно сохранить значение.|
@@ -60,11 +61,11 @@ class insert_iterator;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок**:\<iterator>
+**Заголовок**: \<iterator>
 
 **Пространство имен:** std
 
-## <a name="insert_iteratorcontainer_type"></a><a name="container_type"></a>insert_iterator:: container_type
+## <a name="insert_iteratorcontainer_type"></a><a name="container_type"></a> insert_iterator:: container_type
 
 Тип, представляющий контейнер, в который будет осуществляться вставка общего типа.
 
@@ -72,7 +73,7 @@ class insert_iterator;
 typedef Container container_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом для параметра-шаблона *Container*.
 
@@ -106,7 +107,7 @@ The list L2 is: ( 40 20 10 ).
 */
 ```
 
-## <a name="insert_iteratorinsert_iterator"></a><a name="insert_iterator"></a>insert_iterator:: insert_iterator
+## <a name="insert_iteratorinsert_iterator"></a><a name="insert_iterator"></a> insert_iterator:: insert_iterator
 
 Создает итератор `insert_iterator`, добавляющий элемент в указанную позицию в контейнере.
 
@@ -122,7 +123,7 @@ insert_iterator(Container& _Cont, typename Container::iterator _It);
 *_It*\
 Позиция для вставки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Все контейнеры имеют функцию-член вставки, которая вызывается `insert_iterator`. Для ассоциативных контейнеров параметр позиции — это просто предложение. Функция вставки предоставляет удобный способ вставки значений.
 
@@ -172,7 +173,7 @@ After the insertions, the list L is:
 */
 ```
 
-## <a name="insert_iteratoroperator"></a><a name="op_star"></a>insert_iterator:: operator *
+## <a name="insert_iteratoroperator"></a><a name="op_star"></a> insert_iterator:: operator *
 
 Разыменовывает итератор вставки и возвращает адреса элемента.
 
@@ -184,9 +185,9 @@ insert_iterator<Container>& operator*();
 
 Функция-член возвращает значение адресованного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используется для реализации значения ** \* iter**выражения итератора вывода  =  **value**. Если `Iter` является итератором, который обращается к элементу последовательности, то значение ** \* iter**  =  **value** заменяет этот элемент значением и не изменяет общее число элементов в последовательности.
+Используется для реализации значения **\* iter** выражения итератора вывода  =  . Если `Iter` является итератором, который обращается к элементу последовательности, то значение **\* iter**  =   заменяет этот элемент значением и не изменяет общее число элементов в последовательности.
 
 ### <a name="example"></a>Пример
 
@@ -232,7 +233,7 @@ After the insertions, the list L is:
 */
 ```
 
-## <a name="insert_iteratoroperator"></a><a name="op_add_add"></a>insert_iterator:: operator + +
+## <a name="insert_iteratoroperator"></a><a name="op_add_add"></a> insert_iterator:: operator + +
 
 Увеличивает `insert_iterator` до следующего местоположения, в котором можно сохранить значение.
 
@@ -246,7 +247,7 @@ insert_iterator<Container> operator++(int);
 
 `insert_iterator`, адресующий следующее местоположение, в котором можно сохранить значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Операторы preincrementation и postincrementation возвращают одинаковый результат.
 
@@ -296,7 +297,7 @@ After the insertions, the vector vec becomes:
 */
 ```
 
-## <a name="insert_iteratoroperator"></a><a name="op_eq"></a>insert_iterator:: operator =
+## <a name="insert_iteratoroperator"></a><a name="op_eq"></a> insert_iterator:: operator =
 
 Вставляет значение в контейнер и возвращает итератор, который обновлен и указывает на новый элемент.
 
@@ -317,7 +318,7 @@ insert_iterator<Container>& operator=(
 
 Ссылка на элемент, вставленный в контейнер.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый оператор-член вычисляет
 
@@ -379,7 +380,7 @@ After the insertions, the list L is:
 */
 ```
 
-## <a name="insert_iteratorreference"></a><a name="reference"></a>insert_iterator:: Reference
+## <a name="insert_iteratorreference"></a><a name="reference"></a> insert_iterator:: Reference
 
 Тип, который предоставляет ссылку на элемент последовательности под управлением связанного контейнера.
 
@@ -387,7 +388,7 @@ After the insertions, the list L is:
 typedef typename Container::reference reference;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип, который описывает ссылку на элемент последовательности под управлением связанного контейнера.
 

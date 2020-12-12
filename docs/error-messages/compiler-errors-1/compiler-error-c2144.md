@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C2144'
 title: Ошибка компилятора C2144
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2144
 ms.assetid: 49f3959b-324f-4c06-9588-c0ecef5dc5b3
-ms.openlocfilehash: b917c0a2c15aeb70222c948bce9a6fb275c91068
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 172ccb897937008aa305616eea19f234dfc6a3bd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80207250"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235506"
 ---
 # <a name="compiler-error-c2144"></a>Ошибка компилятора C2144
 
@@ -23,7 +24,7 @@ ms.locfileid: "80207250"
 
 C2144 также может возникнуть при попытке создать макрос из ключевого слова CLR, содержащего символ пробела.
 
-Если вы пытаетесь выполнить перенаправление, можно также увидеть C2144. Дополнительные сведения см. в разделе [Переадресация типов (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md) .
+Если вы пытаетесь выполнить перенаправление, можно также увидеть C2144. Дополнительные сведения см. в разделе [Пересылка типов (C++/CLI)](../../extensions/type-forwarding-cpp-cli.md) .
 
 ## <a name="examples"></a>Примеры
 

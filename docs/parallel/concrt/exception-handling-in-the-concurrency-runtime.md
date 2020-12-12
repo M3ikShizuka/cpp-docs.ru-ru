@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье обработка исключений в среда выполнения с параллелизмом
 title: Обработка исключений в среде выполнения с параллелизмом
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - agents, exception handling [Concurrency Runtime]
 - task groups, exception handling [Concurrency Runtime]
 ms.assetid: 4d1494fb-3089-4f4b-8cfb-712aa67d7a7a
-ms.openlocfilehash: f85bf5c96ef31944e84473f1fedb077123801153
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4613c2b11102c3468bfb3fa5976f8aeeeeb73be3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230406"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234310"
 ---
 # <a name="exception-handling-in-the-concurrency-runtime"></a>Обработка исключений в среде выполнения с параллелизмом
 
@@ -33,7 +34,7 @@ ms.locfileid: "87230406"
 
 - Среда выполнения не управляет исключениями для легковесных задач и агентов.
 
-## <a name="in-this-document"></a><a name="top"></a>В этом документе
+## <a name="in-this-document"></a><a name="top"></a> В этом документе
 
 - [Задачи и продолжения](#tasks)
 
@@ -49,7 +50,7 @@ ms.locfileid: "87230406"
 
 - [Асинхронные агенты](#agents)
 
-## <a name="tasks-and-continuations"></a><a name="tasks"></a>Задачи и продолжения
+## <a name="tasks-and-continuations"></a><a name="tasks"></a> Задачи и продолжения
 
 В этом разделе описывается, как среда выполнения обрабатывает исключения, вызываемые объектами [Concurrency:: Task](../../parallel/concrt/reference/task-class.md) и их продолжениями. Дополнительные сведения о модели задач и продолжения см. в разделе [параллелизм задач](../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
@@ -81,7 +82,7 @@ ms.locfileid: "87230406"
 
 [[Top](#top)]
 
-## <a name="task-groups-and-parallel-algorithms"></a><a name="task_groups"></a>Группы задач и параллельные алгоритмы
+## <a name="task-groups-and-parallel-algorithms"></a><a name="task_groups"></a> Группы задач и параллельные алгоритмы
 
 В этом разделе описывается, как среда выполнения обрабатывает исключения, создаваемые группами задач. Этот раздел также применяется к параллельным алгоритмам, таким как [Concurrency::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for), так как эти алгоритмы создаются в группах задач.
 
@@ -106,7 +107,7 @@ X = 15, Y = 30Caught exception: point is NULL.
 
 [[Top](#top)]
 
-## <a name="exceptions-thrown-by-the-runtime"></a><a name="runtime"></a>Исключения, вызываемые средой выполнения
+## <a name="exceptions-thrown-by-the-runtime"></a><a name="runtime"></a> Исключения, вызываемые средой выполнения
 
 Исключение может быть результатом вызова среды выполнения. Большинство типов исключений, за исключением [Concurrency:: task_canceled](../../parallel/concrt/reference/task-canceled-class.md) и [concurrency:: operation_timed_out](../../parallel/concrt/reference/operation-timed-out-class.md), указывают на ошибку программирования. Эти ошибки обычно невосстанавливаемы, поэтому их не следует перехватывать или обрабатывать с помощью кода приложения. Рекомендуется перехватывать или справляться с неустранимыми ошибками в коде приложения, если требуется диагностировать ошибки программирования. Однако понимание типов исключений, определенных средой выполнения, может помочь в диагностике ошибок программирования.
 
@@ -126,7 +127,7 @@ The operation timed out.
 
 [[Top](#top)]
 
-## <a name="multiple-exceptions"></a><a name="multiple"></a>Несколько исключений
+## <a name="multiple-exceptions"></a><a name="multiple"></a> Несколько исключений
 
 Если задача или параллельный алгоритм получает несколько исключений, среда выполнения маршалирует только одно из этих исключений в вызывающий контекст. Среда выполнения не гарантирует, какое исключение оно маршалирует.
 
@@ -142,19 +143,19 @@ The operation timed out.
 
 [[Top](#top)]
 
-## <a name="cancellation"></a><a name="cancellation"></a>Уведомление
+## <a name="cancellation"></a><a name="cancellation"></a> Уведомление
 
 Не все исключения указывают на ошибку. Например, алгоритм поиска может использовать обработку исключений для отмены связанной задачи при обнаружении результата. Дополнительные сведения об использовании механизмов отмены в коде см. [в разделе Отмена в библиотеке PPL](../../parallel/concrt/cancellation-in-the-ppl.md).
 
 [[Top](#top)]
 
-## <a name="lightweight-tasks"></a><a name="lwts"></a>Упрощенные задачи
+## <a name="lightweight-tasks"></a><a name="lwts"></a> Упрощенные задачи
 
 Упрощенная задача — это задача, запланированная непосредственно из объекта [Concurrency:: Scheduler](../../parallel/concrt/reference/scheduler-class.md) . Упрощенные задачи наносят меньше ресурсов, чем обычные задачи. Однако среда выполнения не перехватывает исключения, создаваемые упрощенными задачами. Вместо этого исключение перехватывается обработчиком необработанных исключений, который по умолчанию завершает процесс. Поэтому используйте в приложении подходящий механизм обработки ошибок. Дополнительные сведения о упрощенных задачах см. в разделе [планировщик задач](../../parallel/concrt/task-scheduler-concurrency-runtime.md).
 
 [[Top](#top)]
 
-## <a name="asynchronous-agents"></a><a name="agents"></a>Асинхронные агенты
+## <a name="asynchronous-agents"></a><a name="agents"></a> Асинхронные агенты
 
 Как и в случае с упрощенными задачами, среда выполнения не управляет исключениями, создаваемыми асинхронными агентами.
 
@@ -185,11 +186,11 @@ the status of the agent is: done
 
 [[Top](#top)]
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Среда выполнения с параллелизмом](../../parallel/concrt/concurrency-runtime.md)<br/>
 [Параллельное выполнение задач](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
 [Параллельные алгоритмы](../../parallel/concrt/parallel-algorithms.md)<br/>
 [Отмена в библиотеке параллельных шаблонов](cancellation-in-the-ppl.md)<br/>
-[планировщик задач](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
+[Планировщик заданий](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Асинхронные агенты](../../parallel/concrt/asynchronous-agents.md)

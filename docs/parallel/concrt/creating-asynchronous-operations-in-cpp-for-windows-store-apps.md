@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: Создание асинхронных операций в C++ для приложений UWP'
 title: Создание асинхронных операций в C++ для приложений UWP
 ms.date: 11/19/2018
 helpviewer_keywords:
 - Windows 8.x apps, creating C++ async operations
 - Creating C++ async operations
 ms.assetid: a57cecf4-394a-4391-a957-1d52ed2e5494
-ms.openlocfilehash: 0361da761b9b05e75233711df9e826c15aa14e28
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2c7ec1a6fc469bf56faa746f11b52547cbf9ac8f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213935"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234504"
 ---
 # <a name="creating-asynchronous-operations-in-c-for-uwp-apps"></a>Создание асинхронных операций в C++ для приложений UWP
 
@@ -43,7 +44,7 @@ ms.locfileid: "87213935"
 
 - [Пример. Управление выполнением в приложении среда выполнения Windows с помощью C++ и XAML](#example-app)
 
-## <a name="creating-asynchronous-operations"></a><a name="create-async"></a>Создание асинхронных операций
+## <a name="creating-asynchronous-operations"></a><a name="create-async"></a> Создание асинхронных операций
 
 Можно использовать задачу и модель продолжения в библиотеке параллельных шаблонов (PPL) для определения фоновых задач, а также и дополнительных задач, выполняемых по завершении предыдущей задачи. Эта функциональность предоставляется классом [concurrency::task](../../parallel/concrt/reference/task-class.md) . Дополнительные сведения об этой модели и классе `task` см. в разделе [Task Parallelism](../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
@@ -79,8 +80,8 @@ ms.locfileid: "87213935"
 
 |Создание этого интерфейса среда выполнения Windows|Верните этот тип из `create_async`|Передайте эти типы параметров рабочей функции для использования неявного токена отмены|Передайте эти типы параметров рабочей функции для использования явного токена отмены|
 |----------------------------------------------------------------------------------|------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-|`IAsyncAction`|**`void`** ни`task<void>`|(нет)|(`cancellation_token`)|
-|`IAsyncActionWithProgress<TProgress>`|**`void`** ни`task<void>`|(`progress_reporter`)|(`progress_reporter`, `cancellation_token`)|
+|`IAsyncAction`|**`void`** ни `task<void>`|(нет)|(`cancellation_token`)|
+|`IAsyncActionWithProgress<TProgress>`|**`void`** ни `task<void>`|(`progress_reporter`)|(`progress_reporter`, `cancellation_token`)|
 |`IAsyncOperation<TResult>`|`T` или `task<T>`|(нет)|(`cancellation_token`)|
 |`IAsyncActionOperationWithProgress<TProgress, TProgress>`|`T` или `task<T>`|(`progress_reporter`)|(`progress_reporter`, `cancellation_token`)|
 
@@ -90,7 +91,7 @@ ms.locfileid: "87213935"
 
 [!code-cpp[concrt-windowsstore-primes#100](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_1.cpp)]
 
-## <a name="example-creating-a-c-windows-runtime-component-and-consuming-it-from-c"></a><a name="example-component"></a>Пример. Создание компонента среда выполнения Windows C++ и его использование из C\#
+## <a name="example-creating-a-c-windows-runtime-component-and-consuming-it-from-c"></a><a name="example-component"></a> Пример. Создание компонента среда выполнения Windows C++ и его использование из C\#
 
 Рассмотрим приложение, которое использует XAML и C# для определения пользовательского интерфейса и компонента среда выполнения Windows C++ для выполнения операций, интенсивно использующих вычислительные операции. В этом примере компонент C++ обнаруживает простые числа в заданном диапазоне. Чтобы продемонстрировать различия между четырьмя среда выполнения Windows интерфейсами асинхронных задач, запустите в Visual Studio, создав **пустое решение** и назначайте ему имя `Primes` . Затем добавьте в решение проект **Компонент среды выполнения Windows** и назовите его `PrimesLibrary`. Добавьте следующий код в создаваемый файл заголовка C++ (в примере Class1.h переименовывается в Primes.h). Каждый **`public`** метод определяет один из четырех асинхронных интерфейсов. Методы, возвращающие значение, возвращают объект [Windows:: Foundation:: Collections \<int> :: IVector](/uwp/api/windows.foundation.collections.ivector-1) . Методы, сообщающие о ходе выполнения **`double`** , формируют значения, определяющие процент общей работы, которая была завершена.
 
@@ -128,7 +129,7 @@ ms.locfileid: "87213935"
 
 Пример, в котором используется `create_async` для создания асинхронных задач, которые могут использоваться другими языками, см [. в разделе Использование C++ в примере оптимизатора повторов Bing Maps](/previous-versions/windows/apps/hh699891(v=vs.140)).
 
-## <a name="controlling-the-execution-thread"></a><a name="exethread"></a>Управление потоком выполнения
+## <a name="controlling-the-execution-thread"></a><a name="exethread"></a> Управление потоком выполнения
 
 В среда выполнения Windows используется COM-потоковая модель. В этой модели объекты размещаются в различных подразделениях в зависимости от того, как они обрабатывают свою синхронизацию. Потокобезопасные объекты размещаются в многопотоковых подразделениях (MTA). Объекты, которые должны быть доступны из одного потока, размещаются в однопотоковых подразделениях (STA).
 
@@ -153,7 +154,7 @@ ms.locfileid: "87213935"
 > [!IMPORTANT]
 > Не вызывайте [concurrency::task::wait](reference/task-class.md#wait) в теле продолжения, выполняемого в STA. В противном случае среда выполнения создает [concurrency::invalid_operation](../../parallel/concrt/reference/invalid-operation-class.md) так как этот метод блокирует текущий поток и может вызвать зависание приложения. Тем не менее можно вызвать метод [concurrency::task::get](reference/task-class.md#get) для получения результата из предшествующей задачи в потоке задач.
 
-## <a name="example-controlling-execution-in-a-windows-runtime-app-with-c-and-xaml"></a><a name="example-app"></a>Пример. Управление выполнением в приложении среда выполнения Windows с помощью C++ и XAML
+## <a name="example-controlling-execution-in-a-windows-runtime-app-with-c-and-xaml"></a><a name="example-app"></a> Пример. Управление выполнением в приложении среда выполнения Windows с помощью C++ и XAML
 
 Рассмотрим приложение C++ XAML, которое считывает файл с диска, находит наиболее распространенные слова в этом файле, а затем отображает результаты в пользовательском интерфейсе. Чтобы создать это приложение, запустите в Visual Studio, создав **пустой проект приложения (универсальное приложение для Windows)** и назвав его имя `CommonWords` . В манифесте приложения укажите возможность **Библиотека документов** , которая позволяет приложению обращаться к папке "Документы". Также добавьте текстовый тип файла (TXT) в раздел объявлений манифеста приложения. Дополнительные сведения о возможностях и объявлениях приложений см. в статье [Упаковка, развертывание и запрос приложений Windows](/windows/win32/appxpkg/appx-portal).
 
