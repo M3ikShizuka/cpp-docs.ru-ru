@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __ll_rshift'
 title: __ll_rshift
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - __ll_rshift intrinsic
 - ll_rshift intrinsic
 ms.assetid: ef13b732-d122-44a0-add9-f5544a2c4ab2
-ms.openlocfilehash: 6ae750f1a8825096ee30adb01768d5603ab23a01
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 567228431104bdde34cc0a5c5f41f0217515a337
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219668"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167751"
 ---
 # <a name="__ll_rshift"></a>__ll_rshift
 
@@ -44,13 +45,13 @@ __int64 __ll_rshift(
 
 ## <a name="requirements"></a>Требования
 
-|Intrinsic|Architecture|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__ll_rshift`|x86, x64|
 
 **Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Если второй параметр больше 64 в x64 (32 на x86), то это число берется по модулю 64 (32 на x86), чтобы определить число битов для сдвига. `ll`Префикс указывает, что это операция над **`long long`** , еще одно имя для **`__int64`** , 64-разрядного целочисленного типа со знаком.
 

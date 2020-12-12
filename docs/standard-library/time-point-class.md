@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: time_point классе'
 title: Класс time_point
 ms.date: 03/27/2019
 f1_keywords:
@@ -10,12 +11,12 @@ f1_keywords:
 ms.assetid: 18be1e52-57b9-489a-8a9b-f58894f0aaad
 helpviewer_keywords:
 - std::chrono [C++], time_point
-ms.openlocfilehash: e1de674d4a13ba465100923bffe6cba76e61ab4a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f9818c6ec3817608864fac0108d73666a0ef3bf9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368031"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167283"
 ---
 # <a name="time_point-class"></a>Класс time_point
 
@@ -29,7 +30,7 @@ template <class Clock,
 class time_point;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
@@ -42,32 +43,32 @@ class time_point;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[time_point](#time_point)|Формирует объект `time_point`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[Макс](#max)|Указывает верхний предел для значения типа `time_point::ref`.|
-|[Мин](#min)|Указывает нижний предел для значения типа `time_point::ref`.|
+|[max](#max)|Указывает верхний предел для значения типа `time_point::ref`.|
+|[min](#min)|Указывает нижний предел для значения типа `time_point::ref`.|
 |[time_since_epoch](#time_since_epoch)|Возвращает сохраненное значение `duration`.|
 
 ### <a name="public-operators"></a>Открытые операторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[time_point::оператор](#op_add_eq)|Добавляет указанное значение к хранимой длительности.|
+|[time_point:: operator + =](#op_add_eq)|Добавляет указанное значение к хранимой длительности.|
 |[time_point::operator-=](#operator-_eq)|Вычитает заданное значение из хранимой длительности.|
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<хроно>
+**Заголовок:**\<chrono>
 
 **Пространство имен:** std::chrono
 
-## <a name="time_pointmax"></a><a name="max"></a>time_point::max
+## <a name="time_pointmax"></a><a name="max"></a> time_point:: Max
 
 Статический метод, который возвращает верхнюю границу значений типа `time_point::ref`.
 
@@ -79,7 +80,7 @@ static constexpr time_point max();
 
 Фактически возвращает `time_point(duration::max())`.
 
-## <a name="time_pointmin"></a><a name="min"></a>time_point:мин
+## <a name="time_pointmin"></a><a name="min"></a> time_point:: min
 
 Статический метод, который возвращает нижнюю границу для значений типа `time_point::ref`.
 
@@ -91,7 +92,7 @@ static constexpr time_point min();
 
 Фактически возвращает `time_point(duration::min())`.
 
-## <a name="time_pointoperator"></a><a name="op_add_eq"></a>time_point::оператор
+## <a name="time_pointoperator"></a><a name="op_add_eq"></a> time_point:: operator + =
 
 Добавляет указанное значение к хранимому значению [duration](../standard-library/duration-class.md).
 
@@ -101,14 +102,14 @@ time_point& operator+=(const duration& Dur);
 
 ### <a name="parameters"></a>Параметры
 
-*Dur*\
-Объект `duration` .
+*Ожидаем*\
+Объект `duration`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Объект `time_point` после добавления.
 
-## <a name="time_pointoperator-"></a><a name="operator-_eq"></a>time_point:оператор-я
+## <a name="time_pointoperator-"></a><a name="operator-_eq"></a> time_point:: operator-=
 
 Вычитает заданное значение из хранимого значения [duration](../standard-library/duration-class.md).
 
@@ -118,14 +119,14 @@ time_point& operator-=(const duration& Dur);
 
 ### <a name="parameters"></a>Параметры
 
-*Dur*\
-Объект `duration` .
+*Ожидаем*\
+Объект `duration`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Объект `time_point` после вычитания.
 
-## <a name="time_pointtime_point-constructor"></a><a name="time_point"></a>time_point::time_point Конструктор
+## <a name="time_pointtime_point-constructor"></a><a name="time_point"></a> Конструктор time_point:: time_point
 
 Формирует объект `time_point`.
 
@@ -140,21 +141,21 @@ constexpr time_point(const time_point<clock, Duration2>& Tp);
 
 ### <a name="parameters"></a>Параметры
 
-*Dur*\
+*Ожидаем*\
 Объект [duration](../standard-library/duration-class.md).
 
-*Tp*\
-Объект `time_point` .
+*Пи*\
+Объект `time_point`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый конструктор создает объект, хранимое значение `duration` которого равно [duration::zero](../standard-library/duration-class.md#zero).
 
-Второй конструктор строит объект, значение хранящейся продолжительности которого равно *Dur.* Если `is_convertible<Duration2, duration>` это не так, второй конструктор не участвует в разрешении перегрузок. Дополнительные сведения см. в разделе [<type_traits>](../standard-library/type-traits.md).
+Второй конструктор конструирует объект, сохраненное значение длительности *которого равно Duration.* Если не имеет `is_convertible<Duration2, duration>` значение true, второй конструктор не участвует в разрешении перегрузки. Дополнительные сведения см. в разделе [<type_traits>](../standard-library/type-traits.md).
 
 Третий конструктор инициализирует свое значение `duration`, используя `Tp.time_since_epoch()`.
 
-## <a name="time_pointtime_since_epoch"></a><a name="time_since_epoch"></a>time_point:::time_since_epoch
+## <a name="time_pointtime_since_epoch"></a><a name="time_since_epoch"></a> time_point:: time_since_epoch
 
 Извлекает хранимое значение [duration](../standard-library/duration-class.md).
 
@@ -164,5 +165,5 @@ constexpr duration time_since_epoch() const;
 
 ## <a name="see-also"></a>См. также раздел
 
-[Справка по файлам заголовка](../standard-library/cpp-standard-library-header-files.md)\
-[\<хроно>](../standard-library/chrono.md)
+[Справочник по файлам заголовков](../standard-library/cpp-standard-library-header-files.md)\
+[\<chrono>](../standard-library/chrono.md)

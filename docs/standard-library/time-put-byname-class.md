@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: time_put_byname классе'
 title: Класс time_put_byname
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - time_put_byname class
 ms.assetid: e08c2348-64d2-4ace-98b1-1496e14c7b1a
-ms.openlocfilehash: 4471c0df352a4d40d863ac36f0245cf8194f588c
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: b519b28b7af8f5b54f9150d1d84f68cd6695bc49
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72685465"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167257"
 ---
 # <a name="time_put_byname-class"></a>Класс time_put_byname
 
-Шаблон производного класса описывает объект, который может служить в качестве аспекта языкового стандарта типа `time_put` \< CharType, OutputIterator >.
+Шаблон производного класса описывает объект, который может выступать в качестве аспекта языкового стандарта типа `time_put` \< CharType, OutputIterator > .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,22 +41,22 @@ protected:
 
 ### <a name="parameters"></a>Параметры
 
-*_Locname* \
+*_Locname*\
 Имя языкового стандарта.
 
-*_Refs* \
+*_Refs*\
 Начальное значение счетчика ссылок.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
-Его поведение определяется с помощью [именованного](../standard-library/locale-class.md#name) языкового стандарта *_Locname*. Каждый конструктор инициализирует свой базовый объект с помощью [time_put](../standard-library/time-put-class.md#time_put) \<CharType, OutputIterator > (`_Refs`).
+Его поведение определяется с помощью [именованного](../standard-library/locale-class.md#name) языкового стандарта *_Locname*. Каждый конструктор инициализирует свой базовый объект с помощью [time_put](../standard-library/time-put-class.md#time_put) \<CharType, OutputIterator> ( `_Refs` ).
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<locale>
+**Заголовок:**\<locale>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Потокобезопасность в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)

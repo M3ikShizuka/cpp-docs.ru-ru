@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __ll_lshift'
 title: __ll_lshift
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - ll_lshift intrinsic
 - __ll_lshift intrinsic
 ms.assetid: fe98f733-426d-44b3-8f24-5d0d6d44bd94
-ms.openlocfilehash: 988284b81c9f04ee5d7f09f8a2f173a689f9fb55
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 324286a0f7ca28eaa7259f05f629f87e763aac0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230523"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167764"
 ---
 # <a name="__ll_lshift"></a>__ll_lshift
 
@@ -44,13 +45,13 @@ unsigned __int64 __ll_lshift(
 
 ## <a name="requirements"></a>Требования
 
-|Intrinsic|Architecture|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__ll_lshift`|x86, x64|
 
 **Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Если вы компилируете программу для 64-разрядной архитектуры и `nBit` превышает 63, число битов для сдвига — остаток от деления по `nBit` модулю 64. Если вы компилируете программу для 32-разрядной архитектуры и `nBit` превышает 31, число битов для сдвига является `nBit` остатком по модулю 32.
 

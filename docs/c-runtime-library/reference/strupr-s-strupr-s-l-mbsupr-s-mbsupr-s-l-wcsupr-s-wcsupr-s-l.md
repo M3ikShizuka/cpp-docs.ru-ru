@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l'
 title: _strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l
 ms.date: 4/2/2020
 api_name:
@@ -70,12 +71,12 @@ helpviewer_keywords:
 - _strupr_s function
 - wcsupr_s function
 ms.assetid: 82d3a273-9f6f-4a26-9560-919d891e4581
-ms.openlocfilehash: e2e32a42e945b350a0a9b28ccd4ef9cb16668605
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: ce4c55aac91f9537febde1bfb2eb196cc0dba501
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912358"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97117241"
 ---
 # <a name="_strupr_s-_strupr_s_l-_mbsupr_s-_mbsupr_s_l-_wcsupr_s-_wcsupr_s_l"></a>_strupr_s, _strupr_s_l, _mbsupr_s, _mbsupr_s_l, _wcsupr_s, _wcsupr_s_l
 
@@ -160,11 +161,11 @@ errno_t _mbsupr_s_l(
 
 Эти функции проверяют свои параметры. Если *str* является **пустым** указателем, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md) . Если выполнение может быть продолжено, функции возвращают **еинвал** и **присвойте** параметру перестройку значение **еинвал**. Если *numberOfElements* меньше длины строки, функции возвращают **ERANGE** и присвойте параметру « **ERANGE**» **значение «назад** ».
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функция **_strupr_s** преобразует, на месте, каждую строчную букву в *str* в верхний регистр. **_wcsupr_s** — это версия **_strupr_s**для расширенных символов. **_mbsupr_s** — версия многобайтовых символов **_strupr_s**.
+Функция **_strupr_s** преобразует, на месте, каждую строчную букву в *str* в верхний регистр. **_wcsupr_s** — это версия **_strupr_s** для расширенных символов. **_mbsupr_s** — версия многобайтовых символов **_strupr_s**.
 
-Преобразование определяется параметром категории **LC_CTYPE** языкового стандарта. Другие символы не изменяются. Дополнительные сведения о **LC_CTYPE**см. в разделе [setlocale](setlocale-wsetlocale.md). Версии этих функций без суффикса **_l** используют текущий языковой стандарт. концепции с суффиксом **_l** идентичны, за исключением того, что они используют переданный языковой стандарт. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
+Преобразование определяется параметром категории **LC_CTYPE** языкового стандарта. Другие символы не изменяются. Дополнительные сведения о **LC_CTYPE** см. в разделе [setlocale](setlocale-wsetlocale.md). Версии этих функций без суффикса **_l** используют текущий языковой стандарт. концепции с суффиксом **_l** идентичны, за исключением того, что они используют переданный языковой стандарт. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
 В C++ использование данных функций упрощено наличием шаблонных перегрузок; перегруженные методы могут автоматически определять длину буфера (что исключает необходимость указания аргумента с размером буфера), а также они могут автоматически заменять более старые, незащищенные функции их новыми безопасными аналогами. Дополнительные сведения см. в разделе [Безопасные перегрузки шаблонов](../../c-runtime-library/secure-template-overloads.md).
 
@@ -194,7 +195,7 @@ errno_t _mbsupr_s_l(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l](strlwr-s-strlwr-s-l-mbslwr-s-mbslwr-s-l-wcslwr-s-wcslwr-s-l.md)<br/>

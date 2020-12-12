@@ -1,27 +1,28 @@
 ---
-title: high_property_prefixes, атрибут импорта
+description: 'Дополнительные сведения: high_property_prefixes атрибута импорта'
+title: high_property_prefixes атрибут импорта
 ms.date: 08/29/2019
 f1_keywords:
 - high_property_prefixes
 helpviewer_keywords:
 - high_property_prefixes attribute
 ms.assetid: 91c6cc2b-19b6-4aba-8831-d9e5cccb58b5
-ms.openlocfilehash: 9e44f6f1afae479f803f4c6d866ef3ee38744561
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: af6835f5835c23dceadbb5152e36b0dabcbb8c98
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219003"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167478"
 ---
-# <a name="high_property_prefixes-import-attribute"></a>high_property_prefixes, атрибут импорта
+# <a name="high_property_prefixes-import-attribute"></a>high_property_prefixes атрибут импорта
 
-**C++Зависящ**
+**Блок, относящийся только к языку C++**
 
 Задает другие префиксы для трех методов свойств.
 
 ## <a name="syntax"></a>Синтаксис
 
-> **#import** *Библиотека типов* **high_property_prefixes (** "*префикс*" **,** "*путпрефикс*" **,** "*путрефпрефикс*" **)**
+> **#import** *Type-Library* **high_property_prefixes (** "*префикс*" **,** "*путпрефикс*" **,** "*путрефпрефикс*" **)**
 
 ### <a name="parameters"></a>Параметры
 
@@ -34,13 +35,13 @@ ms.locfileid: "70219003"
 *путрефпрефикс*\
 Префикс, который будет использоваться для `propputref` методов.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-По умолчанию высокоуровневые `propget`методы обработки ошибок, `propput`и `propputref` предоставляются функциями-членами с префиксами `Get`, `Put`и `PutRef`соответственно.
+По умолчанию высокоуровневые методы обработки ошибок `propget` , `propput` и `propputref` предоставляются функциями-членами с префиксами `Get` , `Put` и `PutRef` соответственно.
 
-**КОНЕЦ C++ конкретного**
+**Завершение блока, относящегося только к языку C++**
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [атрибуты #import](../preprocessor/hash-import-attributes-cpp.md)\
-[Директива #import](../preprocessor/hash-import-directive-cpp.md)
+[#import - директива](../preprocessor/hash-import-directive-cpp.md)

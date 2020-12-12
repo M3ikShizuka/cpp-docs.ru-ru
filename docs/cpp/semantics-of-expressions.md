@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о семантике выражений
 title: Семантика выражений
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - expression evaluation
 - expression evaluation, about expression evaluation
 ms.assetid: 4a792154-533b-48b9-8709-31bfc170f0a7
-ms.openlocfilehash: 43bcd98e0dbf14dada2643c0b731d3f6bae863e6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f5e038d8ea6de55463a60d7b21104c2e71accec1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223607"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116994"
 ---
 # <a name="semantics-of-expressions"></a>Семантика выражений
 
 Выражения оцениваются по приоритетности и группировке операторов. ([Приоритет операторов и ассоциативность](../cpp/cpp-built-in-operators-precedence-and-associativity.md) в [лексических соглашениях](../cpp/lexical-conventions.md)показывает связи, которые операторы C++ накладывают на выражения.)
 
-## <a name="order-of-evaluation"></a>Порядок оценки
+## <a name="order-of-evaluation"></a>Порядок вычислений
 
 Рассмотрим следующий пример.
 
@@ -78,7 +79,7 @@ int main()
 
 ## <a name="ambiguous-expressions"></a>Неоднозначные выражения
 
-Значение некоторых выражений неоднозначно. Такие выражения чаще всего встречаются, если значение объекта несколько раз изменяется в одном выражении. Подобные выражения зависят от конкретного порядка вычисления, когда этот порядок не определяется языком. Рассмотрим следующий пример:
+Значение некоторых выражений неоднозначно. Такие выражения чаще всего встречаются, если значение объекта несколько раз изменяется в одном выражении. Подобные выражения зависят от конкретного порядка вычисления, когда этот порядок не определяется языком. Рассмотрим следующий пример.
 
 ```
 int i = 7;
@@ -116,6 +117,6 @@ func( i, ++i );
 
 - Выражение в операторе return. До возврата управления в вызывающую функцию полностью вычисляется выражение и учитываются все побочные эффекты.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Выражения](../cpp/expressions-cpp.md)

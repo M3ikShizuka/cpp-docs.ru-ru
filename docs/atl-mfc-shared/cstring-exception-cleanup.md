@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: Очистка исключений CString'
 title: Очистка исключений CString
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CString objects, exceptions
 - exception handling, cleanup code
 ms.assetid: 28b9ce70-be63-4a0d-92a8-44bbfbc95e83
-ms.openlocfilehash: 48c8f1c0040236a4f7bf27a2d5ad985ae343c03a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9c77c9bf5d3f123315c126ce2361be63230c173b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222060"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167153"
 ---
 # <a name="cstring-exception-cleanup"></a>Очистка исключений CString
 

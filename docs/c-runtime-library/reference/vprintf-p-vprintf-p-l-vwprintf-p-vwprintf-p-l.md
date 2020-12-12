@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _vprintf_p, _vprintf_p_l, _vwprintf_p, _vwprintf_p_l'
 title: _vprintf_p, _vprintf_p_l, _vwprintf_p, _vwprintf_p_l
 ms.date: 11/04/2016
 api_name:
@@ -47,12 +48,12 @@ helpviewer_keywords:
 - vwprintf_p_l function
 - formatted text [C++]
 ms.assetid: 3f99bde3-c891-493d-908f-30559c421058
-ms.openlocfilehash: 4fa8b6c4909e45d6d4278dc14e3a2947285fe3ed
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 20bee781aa139335dbdbb2feac299e0dde8da8c6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70945711"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120647"
 ---
 # <a name="_vprintf_p-_vprintf_p_l-_vwprintf_p-_vwprintf_p_l"></a>_vprintf_p, _vprintf_p_l, _vwprintf_p, _vwprintf_p_l
 
@@ -98,11 +99,11 @@ int _vwprintf_p_l(
 
 **_vprintf_p** и **_vwprintf_p** возвращают число записанных символов, не включая завершающий нуль-символ, или отрицательное значение, если возникает ошибка вывода.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Каждая из этих функций принимает указатель на список аргументов, затем форматирует и записывает указанные данные в **stdout**. Эти функции отличаются от **vprintf_s** и **vwprintf_s** только тем, что они поддерживают возможность указания порядка, в котором используются аргументы. Дополнительные сведения см. в разделе [Позиционные параметры printf_p](../../c-runtime-library/printf-p-positional-parameters.md).
 
-**_vwprintf_p** — это версия **_vprintf_p**для расширенных символов; Эти две функции ведут себя одинаково, если поток открыт в режиме ANSI. **_vprintf_p** в настоящее время не поддерживает вывод в поток Юникода.
+**_vwprintf_p** — это версия **_vprintf_p** для расширенных символов; Эти две функции ведут себя одинаково, если поток открыт в режиме ANSI. **_vprintf_p** в настоящее время не поддерживает вывод в поток Юникода.
 
 Версии этих функций с суффиксом **_l** идентичны за исключением того, что они используют переданный параметр языкового стандарта вместо локали текущего потока.
 
@@ -111,7 +112,7 @@ int _vwprintf_p_l(
 
 Если параметр *Format* является пустым указателем или строка формата содержит недопустимые символы форматирования, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, функции возвращают значение-1 и **задают значение** **еинвал**.
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Подпрограмма TCHAR.H|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -123,13 +124,13 @@ int _vwprintf_p_l(
 |Подпрограмма|Обязательный заголовок|Необязательные заголовки|
 |-------------|---------------------|----------------------|
 |**_vprintf_p**, **_vprintf_p_l**|\<stdio.h> и \<stdarg.h>|\<varargs.h>*|
-|**_vwprintf_p**, **_vwprintf_p_l**|\<stdio.h> или \<wchar.h> и \<stdarg.h>|\<varargs.h>*|
+|**_vwprintf_p**, **_vwprintf_p_l**|\<stdio.h> или \<wchar.h> , и \<stdarg.h>|\<varargs.h>*|
 
 \* Требуется для совместимости с UNIX V.
 
-Консоль не поддерживается в приложениях универсальная платформа Windows (UWP). Стандартные дескрипторы потока, связанные с консолью, **stdin**, **stdout**и **stderr**, должны быть перенаправляться до того, как функции времени выполнения C смогут использовать их в приложениях UWP. Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Консоль не поддерживается в приложениях универсальная платформа Windows (UWP). Стандартные дескрипторы потока, связанные с консолью, **stdin**, **stdout** и **stderr**, должны быть перенаправляться до того, как функции времени выполнения C смогут использовать их в приложениях UWP. Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Потоковый ввод-вывод](../../c-runtime-library/stream-i-o.md)<br/>
 [Функции vprintf](../../c-runtime-library/vprintf-functions.md)<br/>
@@ -140,4 +141,4 @@ int _vwprintf_p_l(
 [va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)<br/>
 [_vfprintf_p, _vfprintf_p_l, _vfwprintf_p, _vfwprintf_p_l](vfprintf-p-vfprintf-p-l-vfwprintf-p-vfwprintf-p-l.md)<br/>
 [_printf_p, _printf_p_l, _wprintf_p, _wprintf_p_l](printf-p-printf-p-l-wprintf-p-wprintf-p-l.md)<br/>
-[Позиционные параметры printf_p](../../c-runtime-library/printf-p-positional-parameters.md)<br/>
+[printf_p позиционированные параметры](../../c-runtime-library/printf-p-positional-parameters.md)<br/>

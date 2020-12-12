@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о операциях CString, связанных с строками в стиле C.
 title: Операции CString, связанные со строками в стиле C
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 - strings [C++], class CString
 - casting CString objects
 ms.assetid: 5048de8a-5298-4891-b8a0-c554b5a3ac1b
-ms.openlocfilehash: bbf483703b04c26c9462e4fe6adb08b614e440f7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a9f34ad1a7e38197b4714b073bdb47db046a394c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222047"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167140"
 ---
 # <a name="cstring-operations-relating-to-c-style-strings"></a>Операции CString, связанные со строками в стиле C
 
-Объект [CString](../atl-mfc-shared/using-cstring.md) содержит символьные данные строки. `CString`наследует набор [методов и операторов](../atl-mfc-shared/reference/cstringt-class.md) , определенных в шаблоне класса [CStringT](../atl-mfc-shared/reference/cstringt-class.md) для работы с строковыми данными. ( `CString` — это **`typedef`** , специализирующаяся `CStringT` на работе с типом символьных данных, `CString` поддерживаемых.)
+Объект [CString](../atl-mfc-shared/using-cstring.md) содержит символьные данные строки. `CString` наследует набор [методов и операторов](../atl-mfc-shared/reference/cstringt-class.md) , определенных в шаблоне класса [CStringT](../atl-mfc-shared/reference/cstringt-class.md) для работы с строковыми данными. ( `CString` — это **`typedef`** , специализирующаяся `CStringT` на работе с типом символьных данных, `CString` поддерживаемых.)
 
 `CString` не обеспечивает внутреннее хранение символьных данных как строка с завершающим нулевым байтом в стиле C. Вместо этого `CString` отслеживает длину символьных данных, чтобы безопаснее контролировать эти данные и требуемое им место.
 
@@ -40,7 +41,7 @@ ms.locfileid: "87222047"
 
 - [Указание формальных параметров CString](#_core_specifying_cstring_formal_parameters)
 
-## <a name="using-cstring-as-a-c-style-null-terminated-string"></a><a name="_core_using_cstring_as_a_c.2d.style_null.2d.terminated_string"></a>Использование CString в качестве строки с завершающим нулем в стиле C
+## <a name="using-cstring-as-a-c-style-null-terminated-string"></a><a name="_core_using_cstring_as_a_c.2d.style_null.2d.terminated_string"></a> Использование CString в качестве строки Null-Terminated в стиле C
 
 Чтобы использовать `CString` объект в качестве строки в стиле C, приведите объект к LPCTSTR. В следующем примере `CString` возвращает указатель на строку с завершающим нулевым байтом в стиле C, доступную только для чтения. Функция `strcpy` помещает копию строки в стиле C в переменную `myString`.
 
@@ -59,13 +60,13 @@ strcpy(myString, (LPCTSTR)aCString);
 > [!NOTE]
 > Третьим аргументом `strcpy_s` (или Юникода/MBCS-portable `_tcscpy_s` ) является либо `const wchar_t*` (Unicode), либо a `const char*` (ANSI). Приведенный выше пример передает `CString` для этого аргумента. Компилятор C++ автоматически применяет функцию преобразования, определенную для класса `CString`, который преобразует `CString` в `LPCTSTR`. Возможность определения операций приведения от одного типа к другому — это одна из самых полезных особенностей C++.
 
-## <a name="working-with-standard-run-time-library-string-functions"></a><a name="_core_working_with_standard_run.2d.time_library_string_functions"></a>Работа со стандартными строковыми функциями библиотеки времени выполнения
+## <a name="working-with-standard-run-time-library-string-functions"></a><a name="_core_working_with_standard_run.2d.time_library_string_functions"></a> Работа с строковыми функциями стандартной Run-Time библиотеки
 
 Вы должны иметь возможность найти метод `CString` для выполнения строковой операции, для которой может потребоваться использование стандартных строковых функций библиотеки времени выполнения, таких как `strcmp` (или переносимой между Юникодом и многобайтовой кодировкой `_tcscmp`).
 
 Если необходимо использовать строковые функции времени выполнения C, можно использовать методы, описанные в _core_using_cstring_as_a_c. 2D. style_null. 2D. terminated_string. Вы можете скопировать объект `CString` в эквивалентный строковый буфер в стиле C, выполнить операции в этом буфере, а затем снова назначить полученную строку в стиле C объекту `CString`.
 
-## <a name="modifying-cstring-contents-directly"></a><a name="_core_modifying_cstring_contents_directly"></a>Непосредственное изменение содержимого CString
+## <a name="modifying-cstring-contents-directly"></a><a name="_core_modifying_cstring_contents_directly"></a> Непосредственное изменение содержимого CString
 
 В большинстве ситуаций для изменения содержимого объекта `CString` или для преобразования `CString` в символьную строку в стиле C следует использовать функции-члены `CString`.
 
@@ -81,7 +82,7 @@ strcpy(myString, (LPCTSTR)aCString);
 
 1. Вызовите `ReleaseBuffer` для объекта `CString`, чтобы обновить все внутренние сведения о состоянии `CString`, например длину строки. После непосредственного изменения содержимого объекта `CString` необходимо вызвать `ReleaseBuffer` до вызова любых других функций-членов `CString`.
 
-## <a name="using-cstring-objects-with-variable-argument-functions"></a><a name="_core_using_cstring_objects_with_variable_argument_functions"></a>Использование объектов CString с переменными функциями аргументов
+## <a name="using-cstring-objects-with-variable-argument-functions"></a><a name="_core_using_cstring_objects_with_variable_argument_functions"></a> Использование объектов CString с переменными функциями аргументов
 
 Некоторые функции C принимают переменное число аргументов. Ярким примером этого является `printf_s`. Из-за способа объявления этого вида функции компилятор не может быть уверен в типе аргументов и не может определить, какую операцию преобразования требуется выполнить для каждого аргумента. Таким образом, вам важно использовать явное приведение типа при передаче объекта `CString` в функцию, которая принимает переменное число аргументов.
 
@@ -89,7 +90,7 @@ strcpy(myString, (LPCTSTR)aCString);
 
 [!code-cpp[NVC_ATLMFC_Utilities#190](../atl-mfc-shared/codesnippet/cpp/cstring-operations-relating-to-c-style-strings_2.cpp)]
 
-## <a name="specifying-cstring-formal-parameters"></a><a name="_core_specifying_cstring_formal_parameters"></a>Указание формальных параметров CString
+## <a name="specifying-cstring-formal-parameters"></a><a name="_core_specifying_cstring_formal_parameters"></a> Указание формальных параметров CString
 
 Для большинства функций, которым требуется строковый аргумент, лучше всего указать формальный параметр в прототипе функции в качестве **`const`** указателя на символ ( `LPCTSTR` ) вместо `CString` . Если формальный параметр указан в качестве **`const`** указателя на символ, можно передать либо указатель на массив TCHAR, либо литеральную строку [ `"hi there"` ], либо `CString` объект. `CString`Объект будет автоматически преобразован в LPCTSTR. В любом месте, где можно использовать LPCTSTR, можно также использовать `CString` объект.
 

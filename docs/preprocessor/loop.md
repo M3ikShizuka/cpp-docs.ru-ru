@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: Loop pragma'
 title: Прагма loop
 ms.date: 08/29/2019
 f1_keywords:
 - loop_CPP
 - vc-pragma.loop
 ms.assetid: 6d5bb428-cead-47e7-941d-7513bbb162c7
-ms.openlocfilehash: 83dc8753392f9177f810746fce641437ed0ffec8
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: b54d62a6c9a29a4688453992ad9647d9bc21afd1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520633"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167465"
 ---
 # <a name="loop-pragma"></a>Прагма loop
 
@@ -35,11 +36,11 @@ ms.locfileid: "87520633"
 **ивдеп**\
 Указание компилятору игнорировать векторные зависимости для этого цикла.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Чтобы использовать директиву pragma **Loop** , поместите ее непосредственно перед, а не в, определение цикла. Директива pragma вступит в силу для области цикла, который следует за ним. Можно применить к циклу несколько директив pragma в любой последовательности, однако каждую из них необходимо определить в отдельном операторе pragma.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Автомасштабирование и автовектор](../parallel/auto-parallelization-and-auto-vectorization.md)\
 [Директивы pragma и ключевое слово __pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

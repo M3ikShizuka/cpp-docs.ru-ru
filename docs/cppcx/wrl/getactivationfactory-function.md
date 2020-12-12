@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции GetActivationFactory
 title: GetActivationFactory - функция
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - GetActivationFactory function
 ms.assetid: 5736d285-6beb-42aa-8788-e261c0010afe
-ms.openlocfilehash: 430b4ed3f6a02fd3db2bcab05fbb7f21f5367b5c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ae2384e0620282723c6f10090a0028347408b271
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213984"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124635"
 ---
 # <a name="getactivationfactory-function"></a>GetActivationFactory - функция
 
@@ -38,7 +39,7 @@ inline HRESULT GetActivationFactory(
 *Запись*<br/>
 Имя класса, который может создать фабрика активации.
 
-*установлен*<br/>
+*фабрика*<br/>
 По завершении этой операции — ссылка на фабрику активации для типа *T*.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -53,4 +54,4 @@ inline HRESULT GetActivationFactory(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Windows::Foundation](windows-foundation-namespace.md)
+[Пространство имен Windows:: Foundation](windows-foundation-namespace.md)

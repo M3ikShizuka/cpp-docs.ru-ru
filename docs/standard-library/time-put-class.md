@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: time_put классе'
 title: Класс time_put
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - std::time_put [C++], do_put
 - std::time_put [C++], put
 ms.assetid: df79493e-3331-48d2-97c3-ac3a745f0791
-ms.openlocfilehash: 4f7b609493e16d3d1c0a9ab6274ed6f5bfd7b033
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 135bd8c619907b789f448e41e742fcc256d9b6eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212115"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167270"
 ---
 # <a name="time_put-class"></a>Класс time_put
 
@@ -41,7 +42,7 @@ class time_put : public locale::facet;
 *OutputIterator*\
 Тип итератора, в который функции записи времени записывают свои выходные данные.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Как и в случае любого другого аспекта языкового стандарта, начальное сохраненное значение статического идентификатора объекта равно нулю. Первая попытка получить доступ к сохраненному значению сохранит уникальное положительное значение в **id.**
 
@@ -71,7 +72,7 @@ class time_put : public locale::facet;
 
 **Пространство имен:** std
 
-## <a name="time_putchar_type"></a><a name="char_type"></a>time_put:: char_type
+## <a name="time_putchar_type"></a><a name="char_type"></a> time_put:: char_type
 
 Тип, используемый для описания символа, используемого языковым стандартом.
 
@@ -79,11 +80,11 @@ class time_put : public locale::facet;
 typedef CharType char_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом для параметра шаблона `CharType`.
 
-## <a name="time_putdo_put"></a><a name="do_put"></a>time_put::d o_put
+## <a name="time_putdo_put"></a><a name="do_put"></a> time_put::d o_put
 
 Виртуальная функция, выводящая информацию о времени и дате в виде последовательности `CharType`.
 
@@ -117,17 +118,17 @@ virtual iter_type do_put(
 
 Итератор для первой позиции после последнего вставленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Виртуальная Защищенная функция Member создает последовательные элементы `next` , начиная с значений времени, хранящихся в объекте \* `_Pt` , типа `tm` . Функция возвращает итератор, обозначающий следующую позицию для вставки элемента после сформированного вывода.
 
-Выходные данные создаются теми же правилами, которые используются с `strftime` последним аргументом *_Pt*для создания последовательности **`char`** элементов в массиве. **`char`** Предполагается, что каждый такой элемент сопоставлен с эквивалентным элементом типа `CharType` с помощью простого сопоставления «один к одному». Если *_Mod* равно нулю, эффективный формат — "% F", где F заменяется *_Fmt*. В противном случае эффективный формат — "% MF", где M заменяется *_Mod*.
+Выходные данные создаются теми же правилами, которые используются с `strftime` последним аргументом *_Pt* для создания последовательности **`char`** элементов в массиве. **`char`** Предполагается, что каждый такой элемент сопоставлен с эквивалентным элементом типа `CharType` с помощью простого сопоставления «один к одному». Если *_Mod* равно нулю, эффективный формат — "% F", где F заменяется *_Fmt*. В противном случае эффективный формат — "% MF", где M заменяется *_Mod*.
 
 ### <a name="example"></a>Пример
 
 См. пример для [put](#put), который вызывает `do_put`.
 
-## <a name="time_putiter_type"></a><a name="iter_type"></a>time_put:: iter_type
+## <a name="time_putiter_type"></a><a name="iter_type"></a> time_put:: iter_type
 
 Тип, который описывает итератор вывода.
 
@@ -135,11 +136,11 @@ virtual iter_type do_put(
 typedef OutputIterator iter_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом для параметра шаблона `OutputIterator`.
 
-## <a name="time_putput"></a><a name="put"></a>time_put::p UT
+## <a name="time_putput"></a><a name="put"></a> time_put::p UT
 
 Выводит информацию о времени и дате в виде последовательности `CharType`.
 
@@ -189,7 +190,7 @@ iter_type put(iter_type next,
 
 Итератор для первой позиции после последнего вставленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция-член возвращает [do_put](#do_put)( `next` , `_Iosbase` , `_Fill` , `_Pt` , `_Fmt` , `_Mod` ). Вторая функция-член копирует в \* `next` + + любой элемент в интервале [ `first` , `last` ), отличный от процента (%). Для процента, за которым следует символ *C* в интервале [ `first` , `last` ), функция вместо этого вычисляет `next`  =  `do_put` ( `next` , `_Iosbase` ,, `_Fill` `_Pt` , *C*, 0) и пропускается за знаком *c*. Однако, если *C* является символом-квалификатором из набора EOQ #, за которым следует символ `C2` в интервале [ `first` , `last` ), то функция вместо этого вычисляет `next`  =  `do_put` ( `next` , `_Iosbase` ,,, `_Fill` `_Pt` `C2` , *C*) и пропускается назад `C2` .
 
@@ -237,7 +238,7 @@ num_put( ) = x: 05:30:40 07/04/00
 strftime( ) = x: 05:30:40 07/04/00
 ```
 
-## <a name="time_puttime_put"></a><a name="time_put"></a>time_put:: time_put
+## <a name="time_puttime_put"></a><a name="time_put"></a> time_put:: time_put
 
 Конструктор для объектов типа `time_put`.
 
@@ -250,7 +251,7 @@ explicit time_put(size_t _Refs = 0);
 *_Refs*\
 Целочисленное значение, используемое для указания типа управления памятью для объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возможные значения параметра *_Refs* и их значимость:
 
@@ -258,7 +259,7 @@ explicit time_put(size_t _Refs = 0);
 
 - 1: время существования объекта должно управляться вручную.
 
-- \>1: эти значения не определены.
+- \> 1: эти значения не определены.
 
 Конструктор инициализирует свой базовый объект с [языковым стандартом:: Facet](../standard-library/locale-class.md#facet_class)(*_Refs*).
 

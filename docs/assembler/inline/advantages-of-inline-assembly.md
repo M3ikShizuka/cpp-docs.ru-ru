@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: преимущества встроенной сборки'
 title: Преимущества встроенного кода на ассемблере
 ms.date: 08/30/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - inline assembly [C++], about inline assembly
 - inline assembly [C++], using
 ms.assetid: 94364d97-faa7-4bdf-8473-570956986c51
-ms.openlocfilehash: 7e634f78eca753487cf122ac95df55828bb64625
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 066824a4ad63641f33712219dd8364b0edf7259b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169660"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118073"
 ---
 # <a name="advantages-of-inline-assembly"></a>Преимущества встроенного кода на ассемблере
 
@@ -33,6 +34,6 @@ ms.locfileid: "80169660"
 
 **Завершение блока, относящегося только к системам Майкрософт**
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-[Встроенный сборщик](../../assembler/inline/inline-assembler.md)<br/>
+[Встроенный ассемблер](../../assembler/inline/inline-assembler.md)<br/>

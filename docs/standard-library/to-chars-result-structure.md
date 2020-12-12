@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: to_chars_result struct'
 title: Структура to_chars_result
 ms.date: 07/22/2020
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - to_chars_result class
 - to_chars_result structure
-ms.openlocfilehash: 4e46d1cc9d0b6a02d731ad25c2e85c99300d7234
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: fb043ba928f086549aea326419ec3a2d673723ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509656"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167192"
 ---
 # <a name="to_chars_result-struct"></a>Структура to_chars_result
 
@@ -24,9 +25,9 @@ struct to_chars_result {
 };
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
-|Участник|Описание|
+|Член|Описание|
 |--|--|
 |`ptr`| Если `ec` значение равно `errc{}` , преобразование прошло успешно и `ptr` является указателем на один конец записанных символов. В противном случае `ptr` имеет значение `to_chars()` параметра `last` , а содержимое диапазона \[ First (Last)) не указано.|
 |`ec` | Код ошибки преобразования. Конкретные коды ошибок см. в разделе [`errc`](system-error-enums.md#errc) .|

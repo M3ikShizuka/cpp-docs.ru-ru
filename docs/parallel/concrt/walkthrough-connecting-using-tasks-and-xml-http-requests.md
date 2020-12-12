@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в разделе Пошаговое руководство. подключение с помощью задач и HTTP-запросов XML
 title: Пошаговое руководство. Подключение с использованием задач и HTTP-запросов XML
 ms.date: 04/25/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - IXMLHTTPRequest2 and tasks, example
 - IXHR2 and tasks, example
 ms.assetid: e8e12d46-604c-42a7-abfd-b1d1bb2ed6b3
-ms.openlocfilehash: cdcdd4747e7f32d1d4c0e91959f4b49a45721269
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 88f58639b09c1b996922261c889c4844f1da4963
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224907"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167569"
 ---
 # <a name="walkthrough-connecting-using-tasks-and-xml-http-requests"></a>Пошаговое руководство. Подключение с использованием задач и HTTP-запросов XML
 
@@ -27,7 +28,7 @@ ms.locfileid: "87224907"
 Пример, в котором используется `IXMLHTTPRequest2` , но не использует задачи, см. в разделе [Краткое руководство. подключение с использованием XML-запроса HTTP (IXMLHTTPRequest2)](/previous-versions/windows/apps/hh770550\(v=win.10\)).
 
 > [!TIP]
-> `IXMLHTTPRequest2`и `IXMLHTTPRequest2Callback` — это интерфейсы, которые рекомендуется использовать в приложении UWP. Можно также адаптировать этот пример для использования в приложении для настольных систем.
+> `IXMLHTTPRequest2` и `IXMLHTTPRequest2Callback` — это интерфейсы, которые рекомендуется использовать в приложении UWP. Можно также адаптировать этот пример для использования в приложении для настольных систем.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -106,11 +107,11 @@ ms.locfileid: "87224907"
 
 ![Выполняемое приложение среда выполнения Windows](../../parallel/concrt/media/concrt_usingixhr2.png "Выполняемое приложение среда выполнения Windows")
 
-## <a name="next-steps"></a>Дальнейшие шаги
+## <a name="next-steps"></a>Next Steps
 
 [среда выполнения с параллелизмом пошаговые руководства](../../parallel/concrt/concurrency-runtime-walkthroughs.md)
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Параллельное выполнение задач](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
 [Отмена в библиотеке параллельных шаблонов](cancellation-in-the-ppl.md)<br/>

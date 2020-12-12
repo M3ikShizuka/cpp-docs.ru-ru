@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: timed_mutex классе'
 title: Класс timed_mutex
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - std::timed_mutex [C++], try_lock_for
 - std::timed_mutex [C++], try_lock_until
 - std::timed_mutex [C++], unlock
-ms.openlocfilehash: 3329c46f0760a13693507de18a09b974b6b646e2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: af701a8f1f3777fb7f760c3eed561bd3dae5f21f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212102"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167231"
 ---
 # <a name="timed_mutex-class"></a>Класс timed_mutex
 
@@ -35,11 +36,11 @@ ms.locfileid: "87212102"
 class timed_mutex;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[timed_mutex](#timed_mutex)|Создает объект `timed_mutex`, который не заблокирован.|
 |[Деструктор timed_mutex:: ~ timed_mutex](#dtortimed_mutex_destructor)|Освобождает все ресурсы, используемые объектом `timed_mutex`.|
@@ -60,7 +61,7 @@ class timed_mutex;
 
 **Пространство имен:** std
 
-## <a name="timed_mutexlock"></a><a name="lock"></a>timed_mutex:: Lock
+## <a name="timed_mutexlock"></a><a name="lock"></a> timed_mutex:: Lock
 
 Блокирует вызывающий поток до тех пор, пока этот поток не получит права владельца объекта `mutex`.
 
@@ -68,11 +69,11 @@ class timed_mutex;
 void lock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вызывающий поток уже является владельцем `mutex`, поведение не определено.
 
-## <a name="timed_mutextimed_mutex-constructor"></a><a name="timed_mutex"></a>Конструктор timed_mutex:: timed_mutex
+## <a name="timed_mutextimed_mutex-constructor"></a><a name="timed_mutex"></a> Конструктор timed_mutex:: timed_mutex
 
 Создает объект `timed_mutex`, который не заблокирован.
 
@@ -80,7 +81,7 @@ void lock();
 timed_mutex();
 ```
 
-## <a name="timed_mutextimed_mutex-destructor"></a><a name="dtortimed_mutex_destructor"></a>Деструктор timed_mutex:: ~ timed_mutex
+## <a name="timed_mutextimed_mutex-destructor"></a><a name="dtortimed_mutex_destructor"></a> Деструктор timed_mutex:: ~ timed_mutex
 
 Освобождает все ресурсы, используемые объектом `mutex`.
 
@@ -88,11 +89,11 @@ timed_mutex();
 ~timed_mutex();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если при выполнении деструктора объект заблокирован, поведение не определено.
 
-## <a name="timed_mutextry_lock"></a><a name="try_lock"></a>timed_mutex:: try_lock
+## <a name="timed_mutextry_lock"></a><a name="try_lock"></a> timed_mutex:: try_lock
 
 Попытки получить права владельца объекта `mutex` без блокировки.
 
@@ -104,11 +105,11 @@ bool try_lock();
 
 **`true`** значение, если метод успешно получает владение `mutex` ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вызывающий поток уже является владельцем `mutex`, поведение не определено.
 
-## <a name="timed_mutextry_lock_for"></a><a name="try_lock_for"></a>timed_mutex:: try_lock_for
+## <a name="timed_mutextry_lock_for"></a><a name="try_lock_for"></a> timed_mutex:: try_lock_for
 
 Попытки получить права владельца объекта `mutex` без блокировки.
 
@@ -126,11 +127,11 @@ bool try_lock_for(const chrono::duration<Rep, Period>& Rel_time);
 
 **`true`** значение, если метод успешно получает владение `mutex` ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вызывающий поток уже является владельцем `mutex`, поведение не определено.
 
-## <a name="timed_mutextry_lock_until"></a><a name="try_lock_until"></a>timed_mutex:: try_lock_until
+## <a name="timed_mutextry_lock_until"></a><a name="try_lock_until"></a> timed_mutex:: try_lock_until
 
 Попытки получить права владельца объекта `mutex` без блокировки.
 
@@ -150,11 +151,11 @@ bool try_lock_until(const xtime* Abs_time);
 
 **`true`** значение, если метод успешно получает владение `mutex` ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вызывающий поток уже является владельцем `mutex`, поведение не определено.
 
-## <a name="timed_mutexunlock"></a><a name="unlock"></a>timed_mutex:: Unlock
+## <a name="timed_mutexunlock"></a><a name="unlock"></a> timed_mutex:: Unlock
 
 Освобождает права владения объектом `mutex`.
 
@@ -162,7 +163,7 @@ bool try_lock_until(const xtime* Abs_time);
 void unlock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вызывающий поток не является владельцем `mutex`, поведение не определено.
 

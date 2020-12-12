@@ -1,40 +1,41 @@
 ---
-title: high_method_prefix, атрибут импорта
+description: 'Дополнительные сведения: high_method_prefix атрибута импорта'
+title: high_method_prefix атрибут импорта
 ms.date: 08/29/2019
 f1_keywords:
 - high_method_prefix
 helpviewer_keywords:
 - high_method_prefix attribute
 ms.assetid: cacebf09-12f5-4919-ad40-939e206e340c
-ms.openlocfilehash: 357ac528a921a9f864f0f7e30252281a4d10e33c
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 0ebf73892ad1ea544f3deee726695bb8e209cb2c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219020"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167491"
 ---
-# <a name="high_method_prefix-import-attribute"></a>high_method_prefix, атрибут импорта
+# <a name="high_method_prefix-import-attribute"></a>high_method_prefix атрибут импорта
 
-**C++Зависящ**
+**Блок, относящийся только к языку C++**
 
 Задает префикс, используемый при именовании высокоуровневых свойств и методов.
 
 ## <a name="syntax"></a>Синтаксис
 
-> **#import** *Библиотека типов* **high_method_prefix (** "*префикс*" **)**
+> **#import** high_method_prefix *типа-Library* **(** "*префикс*" **)**
 
 ### <a name="parameters"></a>Параметры
 
 *Prefix*\
 Префикс, который следует использовать.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 По умолчанию высокоуровневые свойства и методы обработки ошибок предоставляются функциями-членами с именами без префикса. Это имена из библиотеки типов.
 
-**КОНЕЦ C++ конкретного**
+**Завершение блока, относящегося только к языку C++**
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [атрибуты #import](../preprocessor/hash-import-attributes-cpp.md)\
-[Директива #import](../preprocessor/hash-import-directive-cpp.md)
+[#import - директива](../preprocessor/hash-import-directive-cpp.md)

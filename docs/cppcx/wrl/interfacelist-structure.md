@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура Интерфацелист'
 title: InterfaceList - структура
 ms.date: 10/03/2018
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - InterfaceList structure
 ms.assetid: 6ec3228d-eb3e-4b7e-aef1-7dcf17bdf61a
-ms.openlocfilehash: 7fd06f71bc4d8097366dc0e87d7ff92c5a12a790
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 660ae5137b7ff41129ce3866f0d289045f7dee9c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213867"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124583"
 ---
 # <a name="interfacelist-structure"></a>InterfaceList - структура
 
@@ -33,15 +34,15 @@ struct InterfaceList;
 *U*<br/>
 Имя интерфейса; остальные интерфейсы в рекурсивном списке.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Используется для создания рекурсивного списка интерфейсов.
 
-## <a name="members"></a>Члены
+## <a name="members"></a>Элементы
 
-### <a name="public-typedefs"></a>Открытые определения типов
+### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`FirstT`|Синоним для параметра шаблона *T*.|
 |`RestT`|Синоним для параметра шаблона *U*.|
@@ -58,4 +59,4 @@ struct InterfaceList;
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Microsoft::WRL::Details](microsoft-wrl-details-namespace.md)
+[Пространство имен Microsoft:: WRL::D состояния](microsoft-wrl-details-namespace.md)

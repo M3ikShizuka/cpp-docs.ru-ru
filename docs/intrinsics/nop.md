@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __nop'
 title: __nop
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - nop instruction
 - __nop intrinsic
 ms.assetid: 7a2a938b-87e0-476d-a348-03ea7635b6b9
-ms.openlocfilehash: 4561bcb84063f3707825c8ca164867d41500e2db
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 55759e8324511b6ddaa2774bdfdc3554c0032c2e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221675"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118931"
 ---
 # <a name="__nop"></a>__nop
 
@@ -28,19 +29,19 @@ void __nop();
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__nop`|x86, ARM, x64, ARM64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
 **Завершение блока, относящегося только к системам Майкрософт**
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Функция `__nop` эквивалентна инструкции компьютера `NOP` . Дополнительные сведения об архитектуре x86 и x64 см. в документе "Руководство разработчика по архитектуры Intel, том 2: Справочник по набору инструкций "на сайте корпорации [Intel](https://software.intel.com/articles/intel-sdm) .
+Функция `__nop` эквивалентна инструкции компьютера `NOP` . Дополнительные сведения об архитектуре x86 и x64 см. в документе "Руководство разработчика по архитектуры Intel, том 2: Справочник по набору инструкций" на сайте корпорации [Intel](https://software.intel.com/articles/intel-sdm) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Встроенные функции компилятора](../intrinsics/compiler-intrinsics.md)\
 [__noop](../intrinsics/noop.md)
