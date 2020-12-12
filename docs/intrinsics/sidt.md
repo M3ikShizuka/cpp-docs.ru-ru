@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __sidt'
 title: __sidt
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - sidt instruction
 - __sidt intrinsic
 ms.assetid: 01e83d14-6e63-4dea-8f64-5a0339d69641
-ms.openlocfilehash: d6b685da0e02373307a3149c5b7b28213f37ad40
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 075351bc10981dd8453381e9ce9393a046dfd884
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222322"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306967"
 ---
 # <a name="__sidt"></a>__sidt
 
@@ -33,15 +34,15 @@ void __sidt(void * Destination);
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__sidt`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Функция `__sidt` эквивалентна инструкции компьютера `SIDT` . Дополнительные сведения см. в документе "Руководство разработчика по архитектуры Intel, том 2: Справочник по набору инструкций "на сайте корпорации [Intel](https://software.intel.com/articles/intel-sdm) .
+Функция `__sidt` эквивалентна инструкции компьютера `SIDT` . Дополнительные сведения см. в документе "Руководство разработчика по архитектуры Intel, том 2. Справочник по набору инструкций" на сайте корпорации [Intel](https://software.intel.com/articles/intel-sdm) .
 
 **Завершение блока, относящегося только к системам Майкрософт**
 

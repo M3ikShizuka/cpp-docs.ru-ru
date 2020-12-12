@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l'
 title: _strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
 ms.date: 4/2/2020
 api_name:
@@ -63,12 +64,12 @@ helpviewer_keywords:
 - strnset_s function
 - _wcsnset_s function
 ms.assetid: 9cf1b321-b5cb-4469-b285-4c07cfbd8813
-ms.openlocfilehash: 123f8c4945d98ccf3dd94a48dbbb0fef3b35a8e5
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 388d0ed82b811187f10d68fed7e48b954fdb3e2b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911222"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305914"
 ---
 # <a name="_strnset_s-_strnset_s_l-_wcsnset_s-_wcsnset_s_l-_mbsnset_s-_mbsnset_s_l"></a>_strnset_s, _strnset_s_l, _wcsnset_s, _wcsnset_s_l, _mbsnset_s, _mbsnset_s_l
 
@@ -129,7 +130,7 @@ errno_t _mbsnset_s_l(
 *numberOfElements*<br/>
 Размер буфера *str* .
 
-*ц*<br/>
+*c*<br/>
 Параметр символов.
 
 *count*<br/>
@@ -144,11 +145,11 @@ errno_t _mbsnset_s_l(
 
 Эти функции проверяют свои аргументы. Если *str* не является допустимой строкой, завершающейся нулем, или аргумент size меньше или равен 0, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции возвращают код ошибки и **устанавливают код** ошибки. Код ошибки по умолчанию — **еинвал** , если более конкретное значение не применяется.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Эти функции не задаются первыми символами *подсчета* *str* в *c*. Если параметр *Count* больше размера *str*, вместо *Count*используется размер *str* . Если параметр *Count* больше *numberOfElements* и оба этих параметра больше размера *str*, возникает ошибка.
+Эти функции не задаются первыми символами *подсчета* *str* в *c*. Если параметр *Count* больше размера *str*, вместо *Count* используется размер *str* . Если параметр *Count* больше *numberOfElements* и оба этих параметра больше размера *str*, возникает ошибка.
 
-**_wcsnset_s** и **_mbsnset_s** — это версии **_strnset_s**для расширенных символов и многобайтовых символов. Строковый аргумент **_wcsnset_s** является строкой расширенных символов; **_mbsnset_s** является строкой многобайтовых-character. В остальном эти три функции ведут себя идентично.
+**_wcsnset_s** и **_mbsnset_s** — это версии **_strnset_s** для расширенных символов и многобайтовых символов. Строковый аргумент **_wcsnset_s** является строкой расширенных символов; **_mbsnset_s** является строкой многобайтовых-character. В остальном эти три функции ведут себя идентично.
 
 Выходное значение зависит от настройки категории **LC_CTYPE** языкового стандарта; дополнительные сведения см. в разделе [setlocale](setlocale-wsetlocale.md). Версии этих функций без суффикса **_l** используют текущий языковой стандарт для данного поведения, зависящего от языкового стандарта; версии с суффиксом **_l** идентичны, за исключением того, что они используют переданный параметр языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
@@ -200,8 +201,8 @@ After:  **** is a test
 ## <a name="see-also"></a>См. также раздел
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
 [strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>

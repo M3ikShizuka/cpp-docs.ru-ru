@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CMFCStatusBar Class'
 title: Класс CMFCStatusBar
 ms.date: 11/19/2018
 f1_keywords:
@@ -72,12 +73,12 @@ helpviewer_keywords:
 - CMFCStatusBar [MFC], SetTipText
 - CMFCStatusBar [MFC], OnDrawPane
 ms.assetid: f2960d1d-f4ed-41e8-bd99-0382b2f8d88e
-ms.openlocfilehash: 004873ef2696eb9504cdd4df77e700c4a145e886
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 79ba7c749a73406893173d7486fd5df208a37b83
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686578"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307084"
 ---
 # <a name="cmfcstatusbar-class"></a>Класс CMFCStatusBar
 
@@ -91,7 +92,7 @@ ms.locfileid: "90686578"
 class CMFCStatusBar : public CPane
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
@@ -136,7 +137,7 @@ class CMFCStatusBar : public CPane
 |----------|-----------------|
 |[CMFCStatusBar:: Ондравпане](#ondrawpane)|Вызывается структурой при перерисовки панели строки состояния.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 На следующей диаграмме показана строка состояния из [демонстрационного примера приложения в строке состояния](../../overview/visual-cpp-samples.md) .
 
@@ -195,7 +196,7 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbarcommandtoindex"></a><a name="commandtoindex"></a> CMFCStatusBar:: Коммандтоиндекс
 
@@ -209,7 +210,7 @@ int CommandToIndex(UINT nIDFind) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbarcreate"></a><a name="create"></a> CMFCStatusBar:: Create
 
@@ -228,7 +229,7 @@ BOOL Create(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbarcreateex"></a><a name="createex"></a> CMFCStatusBar:: Креатикс
 
@@ -249,7 +250,7 @@ BOOL CreateEx(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbardoesallowdyninsertbefore"></a><a name="doesallowdyninsertbefore"></a> CMFCStatusBar::D Оесалловдининсертбефоре
 
@@ -259,7 +260,7 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbarenablepanedoubleclick"></a><a name="enablepanedoubleclick"></a> CMFCStatusBar:: Енаблепанедаублекликк
 
@@ -274,7 +275,7 @@ void EnablePaneDoubleClick(BOOL bEnable=TRUE);
 *bEnable*<br/>
 окне Если значение — TRUE, необходимо включить обработку двойного щелчка мыши. В противном случае отключите обработку двойного щелчка мышью.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если строка состояния включена для обработки двойных щелчков, Windows отправляет уведомление WM_COMMAND вместе с ИДЕНТИФИКАТОРом ресурса владельцу строки состояния каждый раз, когда пользователь дважды щелкает панель строки состояния.
 
@@ -312,7 +313,7 @@ void EnablePaneProgressBar(
 *clrProgressText*<br/>
 окне Задает цвет текста индикатора выполнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если необходимо отключить вызов индикатора выполнения с параметром `EnablePaneProgressBar` *нтотал* , равным-1. По умолчанию *нтотал* имеет значение 100. Поэтому для показа хода выполнения в процентах не требуется никаких дополнительных вычислений.
 
@@ -340,7 +341,7 @@ BOOL GetDrawExtendedArea() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbargetextendedarea"></a><a name="getextendedarea"></a> CMFCStatusBar:: Жетекстендедареа
 
@@ -354,7 +355,7 @@ virtual BOOL GetExtendedArea(CRect& rect) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbargetitemid"></a><a name="getitemid"></a> CMFCStatusBar:: Жетитемид
 
@@ -368,7 +369,7 @@ UINT GetItemID(int nIndex) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbargetitemrect"></a><a name="getitemrect"></a> CMFCStatusBar:: Жетитемрект
 
@@ -383,7 +384,7 @@ void GetItemRect(
 окне *ниндекс*<br/>
 окне *лпрект*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbargetpaneinfo"></a><a name="getpaneinfo"></a> CMFCStatusBar:: Жетпанеинфо
 
@@ -402,7 +403,7 @@ void GetPaneInfo(
 окне *нстиле*<br/>
 окне *кксвидс*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbargetpaneprogress"></a><a name="getpaneprogress"></a> CMFCStatusBar:: Жетпанепрогресс
 
@@ -416,7 +417,7 @@ long GetPaneProgress(int nIndex) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbargetpanestyle"></a><a name="getpanestyle"></a> CMFCStatusBar:: Жетпанестиле
 
@@ -430,7 +431,7 @@ UINT GetPaneStyle(int nIndex) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbargetpanetext"></a><a name="getpanetext"></a> CMFCStatusBar:: Жетпанетекст
 
@@ -449,7 +450,7 @@ CString GetPaneText(int nIndex) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbargetpanewidth"></a><a name="getpanewidth"></a> CMFCStatusBar:: Жетпаневидс
 
@@ -498,7 +499,7 @@ void InvalidatePaneContent(int nIndex);
 *ниндекс*<br/>
 окне Указывает индекс области, содержимое которой должно быть недействительным и перерисовано.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Когда строка состояния становится недействительной, она помечается для перерисовки. Windows перерисовывает его, когда `UpdateWindow` метод отправляет в метод сообщение WM_PAINT `OnPaint` .
 
@@ -520,7 +521,7 @@ virtual void OnDrawPane(
 *ппане*<br/>
 окне Указатель на `CMFCStatusBarPaneInfo` структуру, содержащую сведения о перерисуемой области.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию `OnDrawPane` перерисовывает панель с помощью контекста устройства *основной контроллер домена* в соответствии со стилем и содержимым панели.
 
@@ -538,7 +539,7 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbarsetdrawextendedarea"></a><a name="setdrawextendedarea"></a> CMFCStatusBar:: Сетдравекстендедареа
 
@@ -550,7 +551,7 @@ void SetDrawExtendedArea(BOOL bSet = TRUE);
 
 окне *управляемое bSet*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbarsetindicators"></a><a name="setindicators"></a> CMFCStatusBar:: Сетиндикаторс
 
@@ -567,7 +568,7 @@ BOOL SetIndicators(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbarsetpaneanimation"></a><a name="setpaneanimation"></a> CMFCStatusBar:: Сетпанеаниматион
 
@@ -595,7 +596,7 @@ void SetPaneAnimation(
 *бупдате*<br/>
 окне Если значение — TRUE, немедленно обновите содержимое панели. В противном случае содержимое панели обновляется, когда оно становится недействительным.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вы хотите отключить текущую анимацию, вызовите `SetPaneAnimation` с параметром с параметром, равным `hImageList` null.
 
@@ -655,7 +656,7 @@ void SetPaneIcon(
 *клртранспарент*<br/>
 окне Задает прозрачный цвет точечного рисунка, который указывает *хбмп* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Можно передать либо ХИКОН, либо ХБИТМАП вместе с прозрачным цветом, чтобы задать изображение панели. Если больше не нужно отображать изображение, передайте значение NULL в качестве маркера изображения.
 
@@ -678,7 +679,7 @@ void SetPaneInfo(
 окне *нстиле*<br/>
 окне *кксвидс*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbarsetpaneprogress"></a><a name="setpaneprogress"></a> CMFCStatusBar:: Сетпанепрогресс
 
@@ -702,7 +703,7 @@ void SetPaneProgress(
 *бупдате*<br/>
 окне Указывает, следует ли немедленно обновить область.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод следует вызывать, если необходимо обновить индикатор хода выполнения для индикатора выполнения в указанной области.
 
@@ -721,7 +722,7 @@ void SetPaneStyle(
 окне *ниндекс*<br/>
 окне *нстиле*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbarsetpanetext"></a><a name="setpanetext"></a> CMFCStatusBar:: Сетпанетекст
 
@@ -740,7 +741,7 @@ virtual BOOL SetPaneText(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcstatusbarsetpanetextcolor"></a><a name="setpanetextcolor"></a> CMFCStatusBar:: Сетпанетекстколор
 
@@ -800,7 +801,7 @@ void SetTipText(
 *псзтиптекст*<br/>
 окне Новый текст подсказки.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>

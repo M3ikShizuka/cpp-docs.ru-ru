@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __segmentlimit'
 title: __segmentlimit
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - __segmentlimit intrinsic
 - lsl instruction
 ms.assetid: d0bc3630-90cb-4185-8667-686fd41e23d4
-ms.openlocfilehash: 9239d8de8ce2065d09ee7975301a2cb41832ba89
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 49f8688918e07e143615af7b184a784daa0eaaa1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217996"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307006"
 ---
 # <a name="__segmentlimit"></a>__segmentlimit
 
 **Блок, относящийся только к системам Microsoft**
 
-Создает инструкцию `lsl` (ограничение загрузки сегментов).
+Создает `lsl` инструкцию (ограничение загрузки сегментов).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,17 +36,17 @@ unsigned long __segmentlimit(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Ограничение сегмента для селектора сегмента, заданноепараметром, если селектор является допустимым и видимым на текущем уровне разрешений.
+Ограничение сегмента для селектора сегмента, заданное *параметром*, если селектор является допустимым и видимым на текущем уровне разрешений.
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__segmentlimit`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Если ограничение сегмента не может быть получено, эта инструкция завершается ошибкой. При сбое эта инструкция очищает флаг ЗФ, и возвращаемое значение не определено.
 

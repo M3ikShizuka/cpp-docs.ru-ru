@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _get_FMA3_enable, _set_FMA3_enable'
 title: _get_FMA3_enable, _set_FMA3_enable
 ms.date: 04/05/2018
 api_name:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - _get_FMA3_enable
 - _set_FMA3_enable
 ms.assetid: 4c1dc4bc-e86b-451b-9211-5a2ba6c98ee4
-ms.openlocfilehash: dee75bf5b16b5fe5b619444f7f2736010bb42a84
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: d43b5e4e6db652c87bcddf9dd3c91371dc038f33
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857817"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303678"
 ---
 # <a name="_get_fma3_enable-_set_fma3_enable"></a>_get_FMA3_enable, _set_FMA3_enable
 
@@ -49,7 +50,7 @@ int _get_FMA3_enable();
 
 Ненулевое значение, если включены реализации FMA3 трансцендентных математических функций библиотеки с плавающей запятой. В противном случае — нуль.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
 Используйте функцию **_set_FMA3_enable** , чтобы включить или отключить использование инструкций FMA3 в трансцендентных математических функциях с плавающей запятой в библиотеке CRT. Возвращаемое значение отражает реализацию, используемую после изменения. Если ЦП не поддерживает инструкции FMA3, эта функция не может включить их в библиотеке, а возвращаемое значение равно нулю. Используйте **_get_FMA3_enable** , чтобы получить текущее состояние библиотеки. По умолчанию на платформах x64 код запуска CRT определяет, поддерживает ли ЦП инструкции FMA3, а также включает или отключает реализации FMA3 в библиотеке.
 
@@ -61,11 +62,11 @@ int _get_FMA3_enable();
 
 |Подпрограмма|Обязательный заголовок|
 |-------------|---------------------|
-|**_set_FMA3_enable**, **_get_FMA3_enable**| C: \<math.h><br />C++: \<cmath > или \<Math. h >|
+|**_set_FMA3_enable**, **_get_FMA3_enable**| Ц \<math.h><br />C++: \<cmath> или \<math.h>|
 
-Функции **_set_FMA3_enable** и **_get_FMA3_enable** являются специфичными для Microsoft. Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Функции **_set_FMA3_enable** и **_get_FMA3_enable** являются специфичными для Microsoft. Сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
+[Поддержка чисел с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
 [Проблемы при миграции с плавающей запятой](../../porting/floating-point-migration-issues.md)<br/>

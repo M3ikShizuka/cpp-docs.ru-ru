@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: strcoll, вксколл, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l'
 title: strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l
 ms.date: 4/2/2020
 api_name:
@@ -53,12 +54,12 @@ helpviewer_keywords:
 - strcoll functions
 - strings [C++], comparing by code page
 ms.assetid: 900a7540-c7ec-4c2f-b292-7a85f63e3fe8
-ms.openlocfilehash: f75bf4bb28a2dc34a233374314e6bc170793d77e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: f3d826a14bb1cc77f6265806cc24ef5e9cd92b6a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920370"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306148"
 ---
 # <a name="strcoll-wcscoll-_mbscoll-_strcoll_l-_wcscoll_l-_mbscoll_l"></a>strcoll, wcscoll, _mbscoll, _strcoll_l, _wcscoll_l, _mbscoll_l
 
@@ -117,9 +118,9 @@ int _mbscoll_l(
 |0|*строка1* совпадает с *строка2*|
 |> 0|*строка1* больше, чем *строка2*|
 
-Каждая из этих функций возвращает **_NLSCMPERROR** при возникновении ошибки. Чтобы использовать **_NLSCMPERROR**, включите либо строку. H или MBSTRING. Высоты. **вксколл** может завершиться ошибкой, если *строка1* или *строка2* имеют **значение NULL** или содержат коды расширенных символов вне области последовательности сортировки. При возникновении ошибки **вксколл** может установить значение " **No** @ @" для **еинвал**. Чтобы проверить наличие ошибки в вызове **вксколл** **, задайте значение** 0, а затем проверьте право **после вызова** **вксколл**.
+Каждая из этих функций возвращает **_NLSCMPERROR** при возникновении ошибки. Чтобы использовать **_NLSCMPERROR**, включите либо строку. H или MBSTRING. H. **вксколл** может завершиться ошибкой, если *строка1* или *строка2* имеют **значение NULL** или содержат коды расширенных символов вне области последовательности сортировки. При возникновении ошибки **вксколл** может установить значение " **No** @ @" для **еинвал**. Чтобы проверить наличие ошибки в вызове **вксколл** **, задайте значение** 0, а затем проверьте право **после вызова** **вксколл**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Каждая из этих функций выполняет сравнение строк *строка1* и *строка2* с учетом регистра в соответствии с используемой в настоящий момент кодовой страницей. Эти функции следует использовать только в том случае, когда есть различие между порядком символов в наборе и лексикографическим порядком символов в текущей кодовой странице и данное различие представляет интерес во время сравнения строк.
 
@@ -149,9 +150,9 @@ int _mbscoll_l(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Locale](../../c-runtime-library/locale.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
+[Функции strcoll](../../c-runtime-library/strcoll-functions.md)<br/>
 [localeconv](localeconv.md)<br/>
 [_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l](mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>

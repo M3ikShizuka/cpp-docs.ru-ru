@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l'
 title: strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l
 ms.date: 4/2/2020
 api_name:
@@ -68,12 +69,12 @@ helpviewer_keywords:
 - tcsncpy function
 - _strncpy_l function
 ms.assetid: ac4345a1-a129-4f2f-bb8a-373ec58ab8b0
-ms.openlocfilehash: 1a21d9cb06b9459a7f015cd8f2a8fee75a1ab979
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 28d3998ccfe1e7460fa628d462732f233c553b10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919282"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306109"
 ---
 # <a name="strncpy-_strncpy_l-wcsncpy-_wcsncpy_l-_mbsncpy-_mbsncpy_l"></a>strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l
 
@@ -177,16 +178,16 @@ unsigned char *_mbsncpy_l(
 
 Возвращает *стрдест*. Нет зарезервированных возвращаемых значений для указания ошибки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **strncpy** копирует символы начального *числа* *Стрсаурце* в *стрдест* и возвращает *стрдест*. Если параметр *Count* меньше или равен длине *стрсаурце*, то символ NULL не добавляется автоматически в скопированную строку. Если *Count* больше, чем длина *стрсаурце*, строка назначения дополняется символами NULL вплоть до *длины.* Поведение **strncpy** не определено, если исходная и Целевая строки перекрываются.
 
 > [!IMPORTANT]
-> **strncpy** не проверяет наличие достаточного места в *стрдест*; Это делает ее потенциальной причиной переполнения буфера. Аргумент *Count* ограничивает количество копируемых символов. Он не является ограничением размера *стрдест*. См. указанный ниже пример. Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
+> **strncpy** не проверяет наличие достаточного места в *стрдест*; Это делает ее потенциальной причиной переполнения буфера. Аргумент *Count* ограничивает количество копируемых символов. Он не является ограничением размера *стрдест*. См. следующий пример. Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-Если *стрдест* или *стрсаурце* является пустым указателем или **значение** *Count* меньше или равно нулю, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции возвращают-1 **и устанавливают для** **еинвал**значение.
+Если *стрдест* или *стрсаурце* является пустым указателем или **значение** *Count* меньше или равно нулю, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции возвращают-1 **и устанавливают для** **еинвал** значение.
 
-**wcsncpy** и **_mbsncpy** — это версии **strncpy**для расширенных символов и многобайтовых символов. Аргументы и возвращаемые значения **wcsncpy** и **_mbsncpy** различаются соответственно. В остальном эти шесть функций ведут себя идентично.
+**wcsncpy** и **_mbsncpy** — это версии **strncpy** для расширенных символов и многобайтовых символов. Аргументы и возвращаемые значения **wcsncpy** и **_mbsncpy** различаются соответственно. В остальном эти шесть функций ведут себя идентично.
 
 Версии этих функций с суффиксом **_l** идентичны за исключением того, что они используют переданный языковой стандарт вместо текущего языкового стандарта для поведения, зависящего от языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
@@ -286,8 +287,8 @@ Buffer overrun: s = 'ars.' (should be 'test')
 ## <a name="see-also"></a>См. также раздел
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbcpy, _mbsnbcpy_l](mbsnbcpy-mbsnbcpy-l.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>

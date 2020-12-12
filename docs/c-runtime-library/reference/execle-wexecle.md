@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _execle, _wexecle'
 title: _execle, _wexecle
 ms.date: 11/04/2016
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - _wexecle function
 - _execle function
 ms.assetid: 75efa9c5-96b7-4e23-acab-06258901f63a
-ms.openlocfilehash: 3480b2220c71984dcc30cec54d00deac1f4dfbc7
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 28e05222d0ee91f44f96717056117a67afe5c0b4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70937380"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304900"
 ---
 # <a name="_execle-_wexecle"></a>_execle, _wexecle
 
@@ -81,16 +82,16 @@ intptr_t _wexecle(
 |**значение по** значению|Описание|
 |-------------------|-----------------|
 |**E2BIG**|Пространство, требуемое для аргументов и параметров среды, превышает 32 КБ.|
-|**EACCES**|Указанный файл имеет нарушение блокировки или общего доступа.|
-|**EINVAL**|Недопустимый параметр.|
+|**еакцес**|Указанный файл имеет нарушение блокировки или общего доступа.|
+|**еинвал**|Недопустимый параметр.|
 |**EMFILE**|Слишком много открытых файлов. (Указанный файл необходимо открыть и определить, является ли он исполняемым.)|
-|**ENOENT**|Файл или путь не найден.|
+|**еноент**|Файл или путь не найден.|
 |**ENOEXEC**|Указанный файл не является исполняемым или имеет недопустимый формат исполняемого файла.|
-|**ENOMEM**|Недостаточно доступной памяти для выполнения нового процесса; либо доступная память повреждена, либо существует недопустимый блок, что указывает на неправильное выделение памяти для процесса, который выполняет вызов.|
+|**еномем**|Недостаточно доступной памяти для выполнения нового процесса; либо доступная память повреждена, либо существует недопустимый блок, что указывает на неправильное выделение памяти для процесса, который выполняет вызов.|
 
 Дополнительные сведения об этих кодах возврата см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Каждая из этих функций загружает и выполняет новый процесс и передает каждый аргумент командной строки как отдельный параметр, а также передает массив указателей на параметры среды.
 
@@ -109,13 +110,13 @@ intptr_t _wexecle(
 
 См. пример в разделе [Функции _exec, _wexec](../../c-runtime-library/exec-wexec-functions.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Управление процессами и средой](../../c-runtime-library/process-and-environment-control.md)<br/>
-[Функции _exec, _wexec](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[abort](abort.md)<br/>
+[_exec, функции _wexec](../../c-runtime-library/exec-wexec-functions.md)<br/>
+[рвал](abort.md)<br/>
 [atexit](atexit.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>
 [_onexit, _onexit_m](onexit-onexit-m.md)<br/>
-[Функции _spawn, _wspawn](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[_spawn, функции _wspawn](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
 [system, _wsystem](system-wsystem.md)<br/>

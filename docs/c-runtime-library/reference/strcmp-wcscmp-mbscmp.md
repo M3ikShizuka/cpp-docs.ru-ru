@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: strcmp, wcscmp, _mbscmp, _mbscmp_l'
 title: strcmp, wcscmp, _mbscmp, _mbscmp_l
 ms.date: 4/2/2020
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - _ftcscmp function
 - ftcscmp function
 ms.assetid: 5d216b57-7a5c-4cb3-abf0-0f4facf4396d
-ms.openlocfilehash: 805e355fe12cb2f7ead6180edd45ad0748570141
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 0c611b92b39d04e455bbd31f22f98898723ff7c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920378"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306161"
 ---
 # <a name="strcmp-wcscmp-_mbscmp-_mbscmp_l"></a>strcmp, wcscmp, _mbscmp, _mbscmp_l
 
@@ -96,15 +97,15 @@ int _mbscmp_l(
 
 Возвращаемое значение для каждой из этих функций Указывает порядковое отношение *строка1* к *строка2*.
 
-|Применение|Отношение string1 к string2|
+|Значение|Отношение string1 к string2|
 |-----------|----------------------------------------|
 |< 0|*строка1* меньше, чем *строка2*|
 |0|*строка1* совпадает с *строка2*|
 |> 0|*строка1* больше, чем *строка2*|
 
-При ошибке проверки параметров **_mbscmp** и **_mbscmp_l** возвращают **_NLSCMPERROR**, которые определены в \<> String. h> и \<mbstring. h.
+При ошибке проверки параметров **_mbscmp** и **_mbscmp_l** возвращают **_NLSCMPERROR**, который определен в \<string.h> и \<mbstring.h> .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **strcmp** выполняет порядковое сравнение строк *строка1* и *строка2* и возвращает значение, указывающее их связь. **wcscmp** и **_mbscmp** — это версии **strcmp**, соответственно, расширенных символов и многобайтовых символов. **_mbscmp** распознает последовательности многобайтовых символов в соответствии с текущей многобайтовой кодовой страницей и возвращает **_NLSCMPERROR** об ошибке. **_mbscmp_l** имеет то же поведение, но использует переданный параметр языкового стандарта вместо текущего языкового стандарта. Дополнительные сведения см. в разделе [Кодовые страницы](../../c-runtime-library/code-pages.md). Кроме того, если *строка1* или *строка_замены* является пустым указателем, **_mbscmp** вызывает обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, **_mbscmp** и **_mbscmp_l** возвращают **_NLSCMPERROR** **и установите значение** **еинвал**. **strcmp** и **wcscmp** не проверяют свои параметры. В остальном эти функции ведут себя одинаково.
 
@@ -122,7 +123,7 @@ int _mbscmp_l(
 
 В языковых стандартах, для которых кодировка и порядок символов лексикографическим порядком различаются, можно использовать **strcoll** вместо **strcmp** для лексикографическим порядком сравнения строк. Кроме того, можно использовать **стрксфрм** для исходных строк, а затем использовать **strcmp** в результирующих строках.
 
-В функциях **strcmp** учитывается регистр. стрикмп, ** \_вксикмп**и ** \_мбсикмп** сравнивают строки, сначала преобразуя их в их формы в нижнем регистре. ** \_** Две строки, содержащие символы, расположенные между "Z" и "a" в таблице ASCII ("[", "\\", "]", "^", "_" и "\`"), сравниваются по-разному в зависимости от их регистра. Например, две строки "ABCD" и "ABCD ^" сравнивают один из них, если сравнение является строчным ("ABCDE" > "abcd ^"), а другой способ ("ABCD" < "ABCD ^"), если сравнение является прописным.
+В функциях **strcmp** учитывается регистр. **\_ стрикмп**, **\_ вксикмп** и **\_ мбсикмп** сравнивают строки, сначала преобразуя их в их формы в нижнем регистре. Две строки, содержащие символы, расположенные между "Z" и "a" в таблице ASCII ("[", " \\ ", "]", "^", "_" и " \` "), сравниваются по-разному в зависимости от их регистра. Например, две строки "ABCD" и "ABCD ^" сравнивают один из них, если сравнение является строчным ("ABCDE" > "abcd ^"), а другой способ ("ABCD" < "ABCD ^"), если сравнение является прописным.
 
 ## <a name="requirements"></a>Требования
 
@@ -192,7 +193,7 @@ Compare strings:
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
 [_memicmp, _memicmp_l](memicmp-memicmp-l.md)<br/>
-[strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
+[Функции strcoll](../../c-runtime-library/strcoll-functions.md)<br/>
 [_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l](stricmp-wcsicmp-mbsicmp-stricmp-l-wcsicmp-l-mbsicmp-l.md)<br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l'
 title: _mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l
 ms.date: 4/2/2020
 api_name:
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - _tcsncoll_l function
 - _tcsnicoll_l function
 ms.assetid: d139ed63-ccba-4458-baa2-61cbcef03e94
-ms.openlocfilehash: 491a652f19e9e1895aa62092c5c890923008f6e1
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 97dc0c8664b16b775529184c93b155f8746b3d7c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911912"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304718"
 ---
 # <a name="_mbsnbcoll-_mbsnbcoll_l-_mbsnbicoll-_mbsnbicoll_l"></a>_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l
 
@@ -110,9 +111,9 @@ int _mbsnbicoll_l(
 
 Если *строка1* или *строка2* **равны NULL** или *Count* больше **INT_MAX**, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции возвращают **_NLSCMPERROR** и присвойте параметру " **еинвал**" значение **No** . Чтобы использовать **_NLSCMPERROR**, включите String. h или mbstring. h.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Каждая из этих функций по сравнению с первым *числом* байтов в *строка1* и *строка2* и возвращает значение, указывающее связь между результирующими подстроками *строка1* и *строка2*. Если последний байт в подстроке *строка1* или *строка2* является старшим байтом, он не включается в сравнение. Эти функции сравнивают только полные символы в подстроках. **_mbsnbicoll** — это версия **_mbsnbcoll**без учета регистра. Как и [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) и [_mbsnbicmp](mbsnbicmp-mbsnbicmp-l.md), **_mbsnbcoll** и **_mbsnbicoll** параметры сортировки двух многобайтовых символов в соответствии с порядком лексикографическим порядком, заданным в используемой в данный момент многобайтовой [кодовой страницей](../../c-runtime-library/code-pages.md) .
+Каждая из этих функций по сравнению с первым *числом* байтов в *строка1* и *строка2* и возвращает значение, указывающее связь между результирующими подстроками *строка1* и *строка2*. Если последний байт в подстроке *строка1* или *строка2* является старшим байтом, он не включается в сравнение. Эти функции сравнивают только полные символы в подстроках. **_mbsnbicoll** — это версия **_mbsnbcoll** без учета регистра. Как и [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) и [_mbsnbicmp](mbsnbicmp-mbsnbicmp-l.md), **_mbsnbcoll** и **_mbsnbicoll** параметры сортировки двух многобайтовых символов в соответствии с порядком лексикографическим порядком, заданным в используемой в данный момент многобайтовой [кодовой страницей](../../c-runtime-library/code-pages.md) .
 
 Для некоторых кодовых страниц и соответствующих наборов символов порядок символов в наборе может отличаться от лексикографического порядка символов. Языковой стандарт "C" не входит в их число: порядок символов в кодировке ASCII совпадает с лексикографическим порядком символов. Однако, в некоторых европейских языковых стандартах, например, символ "a" (значение 0x61) предшествует символу "ä" (значение 0xE4) в кодировке, но "ä" предшествует символу "a" лексикографически. Чтобы выполнить лексикографическим порядком сравнение строк по байтам в таком экземпляре, используйте **_mbsnbcoll** , а не **_mbsnbcmp**. чтобы проверить только равенство строк, используйте **_mbsnbcmp**.
 
@@ -148,6 +149,6 @@ int _mbsnbicoll_l(
 [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>
 [_mbsnbcmp, _mbsnbcmp_l](mbsnbcmp-mbsnbcmp-l.md)<br/>
 [_mbsnbicmp, _mbsnbicmp_l](mbsnbicmp-mbsnbicmp-l.md)<br/>
-[strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
+[Функции strcoll](../../c-runtime-library/strcoll-functions.md)<br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CAccessorRowset Class'
 title: Класс CAccessorRowset
 ms.date: 11/04/2016
 f1_keywords:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - FreeRecordMemory method
 - GetColumnInfo method
 ms.assetid: bd4f58ed-cebf-4d43-8985-1e5fcbf06953
-ms.openlocfilehash: d9dd2eec3948896487b5b977d1107db1f4a1046b
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: c93580fa41967004947b075e82e00bdcb745ad4e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91498715"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307578"
 ---
 # <a name="caccessorrowset-class"></a>Класс CAccessorRowset
 
@@ -70,7 +71,7 @@ class CAccessorRowset : public TAccessor, public TRowset<TAccessor>
 | [фрирекордмемори](#freerecordmemory) | Освобождает все столбцы в текущей записи, которые необходимо освободить. |
 | [GetColumnInfo](#getcolumninfo) | Реализует [IColumnsInfo:: GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)). |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Класс `TAccessor` управляет методом доступа. Класс *тровсет* управляет набором строк.
 
@@ -145,7 +146,7 @@ HRESULT GetColumnInfo(DBORDINAL* pColumns,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Пользователь должен освободить информацию о возвращаемом столбце и буфере строк. Используйте вторую версию этого метода при использовании [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) и необходимости переопределения привязок.
 

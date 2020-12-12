@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _access, _waccess'
 title: _access, _waccess
 ms.date: 4/2/2020
 api_name:
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - _waccess function
 - taccess function
 ms.assetid: ba34f745-85c3-49e5-a7d4-3590bd249dd3
-ms.openlocfilehash: fdada7f02115f44aa6a7e3c5e9bdfdf5e65f8b2f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d8cb62050482f29be0bef2b8433a65c2730de2fe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846593"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303743"
 ---
 # <a name="_access-_waccess"></a>_access, _waccess
 
@@ -81,7 +82,7 @@ int _waccess(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 При использовании с файлами Функция **_access** определяет, существует ли указанный файл или каталог, и содержит атрибуты, заданные в параметре *mode*. При использовании с каталогами **_access** определяет, существует ли указанный каталог. в операционных системах Windows 2000 и более поздних версий все каталоги имеют доступ на чтение и запись.
 
@@ -94,7 +95,7 @@ int _waccess(
 
 Эта функция проверяет только то, является ли файл или каталог доступным только для чтения; параметры безопасности файловой системы не проверяются. Для этого требуется токен доступа. Дополнительные сведения о безопасности файловой системы см. в разделе [Токены доступа](/windows/win32/SecAuthZ/access-tokens). Для использования этой функции предназначен класс ATL, см. раздел [Класс CAccessToken](../../atl/reference/caccesstoken-class.md).
 
-**_waccess** — это версия **_access**для расширенных символов; Аргумент *пути* к **_waccess** является строкой расширенных символов. в противном случае **_waccess** и **_access** ведут себя одинаково.
+**_waccess** — это версия **_access** для расширенных символов; Аргумент *пути* к **_waccess** является строкой расширенных символов. в противном случае **_waccess** и **_access** ведут себя одинаково.
 
 Эта функция проверяет свои параметры. Если параметр *path* имеет значение null или *режим* не указывает допустимый режим, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, функция устанавливает параметр `errno` в значение `EINVAL` и возвращает –1.
 

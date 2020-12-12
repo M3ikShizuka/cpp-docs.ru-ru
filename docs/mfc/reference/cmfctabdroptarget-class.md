@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кмфктабдроптаржет Class'
 title: Класс Кмфктабдроптаржет
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - CMFCTabDropTarget [MFC], OnDropEx
 - CMFCTabDropTarget [MFC], Register
 ms.assetid: 9777b7b6-10da-4c4b-b1d1-7ea795b0f1cb
-ms.openlocfilehash: 9160cfd847977f98ac22eecd72632822c751a3aa
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2a12d171a934912993a61ba4ae915d9e1f3a5cf6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834236"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306785"
 ---
 # <a name="cmfctabdroptarget-class"></a>Класс Кмфктабдроптаржет
 
@@ -33,7 +34,7 @@ ms.locfileid: "88834236"
 class CMFCTabDropTarget : public COleDropTarget
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -51,7 +52,7 @@ class CMFCTabDropTarget : public COleDropTarget
 |[Кмфктабдроптаржет:: Ондропекс](#ondropex)|Вызывается платформой, когда пользователь отпускает кнопку мыши в конце операции перетаскивания. (Переопределяет [коледроптаржет:: ондропекс](../../mfc/reference/coledroptarget-class.md#ondropex).)|
 |[Кмфктабдроптаржет:: Register](#register)|Регистрирует элемент управления как объект, который может быть целевым объектом операции перетаскивания OLE.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот класс обеспечивает поддержку перетаскивания для `CMFCBaseTabCtrl` класса. Если приложение инициализирует библиотеки OLE с помощью функции [афксолеинит](ole-initialization.md#afxoleinit) , `CMFCBaseTabCtrl` объекты регистрируются для операций перетаскивания.
 
@@ -117,7 +118,7 @@ virtual DROPEFFECT OnDragEnter(
 
 - DROPEFFECT_SCROLL
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод возвращает DROPEFFECT_NONE, если платформа панели инструментов не находится в режиме настройки или если формат данных буфера обмена недоступен. В противном случае возвращается результат вызова `CMFCBaseTabCtrl::OnDragEnter` с предоставленными параметрами.
 
@@ -136,7 +137,7 @@ virtual void OnDragLeave(CWnd* pWnd);
 *Приводится*\
 [in] Не используется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывает `CMFCBaseTabCtrl::OnDragLeave` метод для выполнения операции перетаскивания.
 
@@ -180,7 +181,7 @@ virtual DROPEFFECT OnDragOver(
 
 - DROPEFFECT_SCROLL
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод делает вкладку, расположенную под курсором, когда операция перетаскивания выполняется активно. Он возвращает DROPEFFECT_NONE, если платформа панели инструментов не находится в режиме настройки или если формат данных буфера обмена недоступен. В противном случае возвращается результат вызова `CMFCBaseTabCtrl::OnDragOver` с предоставленными параметрами.
 
@@ -230,7 +231,7 @@ virtual DROPEFFECT OnDropEx(
 
 - DROPEFFECT_SCROLL
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывает, `CMFCBaseTabCtrl::OnDrop` Если платформа панели инструментов находится в режиме настройки и доступен формат данных буфера обмена. Если вызов `CMFCBaseTabCtrl::OnDrop` возвращает ненулевое значение, этот метод возвращает результат перетаскивания по умолчанию, заданный параметром *дропеффект*. В противном случае этот метод возвращает DROPEFFECT_NONE. Дополнительные сведения об эффектах перетаскивания см. в разделе [коледроптаржет:: ондропекс](../../mfc/reference/coledroptarget-class.md#ondropex).
 
@@ -253,7 +254,7 @@ BOOL Register(CMFCBaseTabCtrl *pOwner);
 
 Ненулевое значение, если регистрация прошла успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывает [коледроптаржет:: Register](../../mfc/reference/coledroptarget-class.md#register) для регистрации элемента управления для операций перетаскивания.
 

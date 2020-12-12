@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: создание обработчика завершения'
 title: Написание обработчика завершения
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - exception handling [C++], termination handlers
 - try-catch keyword [C++], termination handlers
 ms.assetid: 52aa1f8f-f8dd-44b8-be94-5e2fc88d44fb
-ms.openlocfilehash: 8a243281e0d984a42cd4b4d9f249d867812d8bca
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a203cab7d61be66c5fe919aefe1895aa0928c5d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80187314"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302989"
 ---
 # <a name="writing-a-termination-handler"></a>Написание обработчика завершения
 
@@ -28,12 +29,12 @@ ms.locfileid: "80187314"
 
 - [Оператор try-finally](../cpp/try-finally-statement.md)
 
-- [Очистка ресурсов](../cpp/cleaning-up-resources.md)
+- [Освобождение ресурсов](../cpp/cleaning-up-resources.md)
 
-- [Время выполнения действий в обработке исключений](../cpp/timing-of-exception-handling-a-summary.md)
+- [Время действий в обработке исключений](../cpp/timing-of-exception-handling-a-summary.md)
 
 - [Ограничения обработчиков завершения](../cpp/restrictions-on-termination-handlers.md)
 
 ## <a name="see-also"></a>См. также раздел
 
-[Структурированная обработка исключений (C/C++)](../cpp/structured-exception-handling-c-cpp.md)
+[Structured Exception Handling (C/C++)](../cpp/structured-exception-handling-c-cpp.md)

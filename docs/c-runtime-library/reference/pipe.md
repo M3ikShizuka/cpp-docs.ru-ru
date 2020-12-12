@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _pipe'
 title: _pipe
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - pipes
 - pipe function
 ms.assetid: 8d3e9800-4041-44b5-9e93-2df0b0354a75
-ms.openlocfilehash: 692a891549e0c84d6297b108918d9d7c58495ef7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5daf02262b9fecd0594ec25dd91d141c3fc52b71
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234046"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304679"
 ---
 # <a name="_pipe"></a>_pipe
 
@@ -77,7 +78,7 @@ int _pipe(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе переввод [, _doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_pipe** создает *канал*, который представляет собой искусственный канал ввода-вывода, который используется программой для передачи информации в другие программы. Канал похож на файл, поскольку он имеет файловый указатель или дескриптор файла (или и то, и другое), и в него можно записывать и из него можно считывать данные с помощью стандартных библиотечных функций ввода и вывода. Однако канал не представляет конкретный файл или устройство. Вместо этого он представляет временное хранилище в памяти, которое не зависит от собственной памяти программы и полностью контролируется операционной системой.
 
@@ -347,7 +348,7 @@ This is speaker beep number 9...
 This is speaker beep number 10...
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Управление процессами и средой](../../c-runtime-library/process-and-environment-control.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>

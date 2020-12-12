@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: элементы управления ActiveX в MFC. Рисование элемента управления ActiveX'
 title: Элементы управления ActiveX в MFC. Закраска элементов управления ActiveX
 ms.date: 09/12/2018
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], painting
 - MFC ActiveX controls [MFC], optimizing
 ms.assetid: 25fff9c0-4dab-4704-aaae-8dfb1065dee3
-ms.openlocfilehash: a01a66402471b295a6e57af8af265c50685b4a1f
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: d9e6fb23deb701e32f1af6ff4bf4d79c7d9df085
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618225"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305277"
 ---
 # <a name="mfc-activex-controls-painting-an-activex-control"></a>Элементы управления ActiveX в MFC. Закраска элементов управления ActiveX
 
@@ -29,7 +30,7 @@ ms.locfileid: "84618225"
 
 - [Рисование элемента управления с помощью метафайлов](#_core_painting_your_control_using_metafiles)
 
-## <a name="the-painting-process-of-an-activex-control"></a><a name="_core_the_painting_process_of_an_activex_control"></a>Процесс рисования элемента управления ActiveX
+## <a name="the-painting-process-of-an-activex-control"></a><a name="_core_the_painting_process_of_an_activex_control"></a> Процесс рисования элемента управления ActiveX
 
 Когда элементы управления ActiveX изначально отображаются или перерисовывается, они следуют процессу рисования, аналогичному другим приложениям, разработанным с помощью MFC, с одним важным различием: элементы управления ActiveX могут находиться в активном или неактивном состоянии.
 
@@ -53,7 +54,7 @@ ms.locfileid: "84618225"
 > [!NOTE]
 > При рисовании элемента управления не следует делать предположения о состоянии контекста устройства, переданного функции в качестве параметра *основного контроллера домена* `OnDraw` . Иногда контекст устройства предоставляется приложением-контейнером и не обязательно будет инициализирован в состояние по умолчанию. В частности, явно выберите перья, кисти, цвета, шрифты и другие ресурсы, от которых зависит код рисования.
 
-## <a name="optimizing-your-paint-code"></a><a name="_core_optimizing_your_paint_code"></a>Оптимизация кода Paint
+## <a name="optimizing-your-paint-code"></a><a name="_core_optimizing_your_paint_code"></a> Оптимизация кода Paint
 
 После успешного рисования элемента управления необходимо оптимизировать `OnDraw` функцию.
 
@@ -61,7 +62,7 @@ ms.locfileid: "84618225"
 
 `OnDraw`Функция обеспечивает простой метод оптимизации путем передачи *рЦинвалид*, прямоугольной области элемента управления, для которой требуется перерисовка. Используйте эту область, как правило, меньше, чем вся область элемента управления, чтобы ускорить процесс рисования.
 
-## <a name="painting-your-control-using-metafiles"></a><a name="_core_painting_your_control_using_metafiles"></a>Рисование элемента управления с помощью метафайлов
+## <a name="painting-your-control-using-metafiles"></a><a name="_core_painting_your_control_using_metafiles"></a> Рисование элемента управления с помощью метафайлов
 
 В большинстве случаев параметр *PDC* для `OnDraw` функции указывает на контекст устройства экрана (DC). Однако при печати изображений элемента управления или во время сеанса предварительного просмотра контроллер домена, полученный для подготовки к просмотру, является специальным типом, называемым "метафайл DC". В отличие от контроллера экрана, который немедленно обрабатывает отправленные им запросы, метафайл DC сохраняет запросы, которые будут воспроизводиться позже. Некоторые приложения-контейнеры также могут отображать образ элемента управления с помощью метафайла DC в режиме конструктора.
 
@@ -110,4 +111,4 @@ ms.locfileid: "84618225"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Элементы ActiveX библиотеки MFC](mfc-activex-controls.md)
+[Элементы управления ActiveX в MFC](mfc-activex-controls.md)

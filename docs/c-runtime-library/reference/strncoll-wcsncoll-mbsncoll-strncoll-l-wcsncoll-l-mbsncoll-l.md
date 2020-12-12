@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _strncoll, _wcsncoll, _mbsncoll, _strncoll_l, _wcsncoll_l, _mbsncoll_l'
 title: _strncoll, _wcsncoll, _mbsncoll, _strncoll_l, _wcsncoll_l, _mbsncoll_l
 ms.date: 4/2/2020
 api_name:
@@ -70,12 +71,12 @@ helpviewer_keywords:
 - ftcsnccoll function
 - _wcsncoll_l function
 ms.assetid: e659a5a4-8afe-4033-8e72-17ffd4bdd8e9
-ms.openlocfilehash: c7abe5ce96d0fa3d198834f6923724321d60d666
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 71f37511ab531def178926d77e61978190fce817
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919304"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306122"
 ---
 # <a name="_strncoll-_wcsncoll-_mbsncoll-_strncoll_l-_wcsncoll_l-_mbsncoll_l"></a>_strncoll, _wcsncoll, _mbsncoll, _strncoll_l, _wcsncoll_l, _mbsncoll_l
 
@@ -145,9 +146,9 @@ int _mbsncoll_l(
 
 Каждая из этих функций возвращает **_NLSCMPERROR**. Чтобы использовать **_NLSCMPERROR**, включите String. h или MBSTRING. h. **_wcsncoll** может завершиться ошибкой, если *строка1* или *строка_замены* содержат коды расширенных символов, находящиеся за пределами домена в последовательности сортировки. При возникновении ошибки **_wcsncoll** **может установить значение** **еинвал**. Чтобы проверить наличие ошибки в вызове **_wcsncoll**, установите значение "0", а затем **Проверьте значение "** **после** вызова **_wcsncoll**".
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Каждая из этих функций учитывает *регистр первых символов* в строках *строка1* и *строка2*в соответствии с кодовой страницей, используемой в данный момент. Используйте эти функции для сравнения строк только в том случае, если есть различие между порядком символов в наборе и лексикографическим порядком символов в текущей кодовой странице и это различие представляет интерес при сравнении строк. Порядок символов в наборе зависит от языкового стандарта. Версии этих функций, у которых нет суффикса **_l** , используют текущий языковой стандарт, но версии с суффиксом **_l** используют переданный языковой стандарт. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
+Каждая из этих функций учитывает *регистр первых символов* в строках *строка1* и *строка2* в соответствии с кодовой страницей, используемой в данный момент. Используйте эти функции для сравнения строк только в том случае, если есть различие между порядком символов в наборе и лексикографическим порядком символов в текущей кодовой странице и это различие представляет интерес при сравнении строк. Порядок символов в наборе зависит от языкового стандарта. Версии этих функций, у которых нет суффикса **_l** , используют текущий языковой стандарт, но версии с суффиксом **_l** используют переданный языковой стандарт. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
 Все эти функции проверяют свои параметры. Если либо *строка1* , либо *строка2* являются пустым указателем, или *Count* больше **INT_MAX**, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции возвращают **_NLSCMPERROR** и присвойте параметру " **еинвал**" значение **No** .
 
@@ -172,9 +173,9 @@ int _mbsncoll_l(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Locale](../../c-runtime-library/locale.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
+[Функции strcoll](../../c-runtime-library/strcoll-functions.md)<br/>
 [localeconv](localeconv.md)<br/>
 [_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l](mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>

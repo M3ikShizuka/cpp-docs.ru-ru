@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _access_s, _waccess_s'
 title: _access_s, _waccess_s
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - _access_s function
 - _waccess_s function
 ms.assetid: fb3004fc-dcd3-4569-8b27-d817546e947e
-ms.openlocfilehash: c3893b3d78a2c142ffc9e10eb6bbf299c5fddb9b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: cf46f3996005584a8f17b25baac60b9c5683ed19
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916896"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303847"
 ---
 # <a name="_access_s-_waccess_s"></a>_access_s, _waccess_s
 
@@ -62,7 +63,7 @@ errno_t _waccess_s(
 
 ### <a name="parameters"></a>Параметры
 
-*path*<br/>
+*путь*<br/>
 Путь к файлу или каталогу.
 
 *mode*<br/>
@@ -80,7 +81,7 @@ errno_t _waccess_s(
 
 Дополнительные сведения см. в разделе [errno, _doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 При использовании с файлами Функция **_access_s** определяет, существует ли указанный файл, и доступ к нему можно получить, как указано в параметре *mode*. При использовании с каталогами **_access_s** определяет, существует ли указанный каталог. В операционных системах Windows 2000 и более поздних версий все каталоги имеют доступ на чтение и запись.
 
@@ -93,7 +94,7 @@ errno_t _waccess_s(
 
 Сами по себе разрешения на чтение или запись файла не обеспечивают возможность открывать файл. Например, если файл заблокирован другим процессом, он может быть недоступен, хотя **_access_s** возвращает 0.
 
-**_waccess_s** — это версия **_access_s**для расширенных символов, где аргумент *пути* к **_waccess_s** является строкой расширенных символов. В противном случае **_waccess_s** и **_access_s** ведут себя одинаково.
+**_waccess_s** — это версия **_access_s** для расширенных символов, где аргумент *пути* к **_waccess_s** является строкой расширенных символов. В противном случае **_waccess_s** и **_access_s** ведут себя одинаково.
 
 Эти функции проверяют свои параметры. Если параметр *path* имеет значение null или *режим* не указывает допустимый режим, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции устанавливают параметр `errno` в значение `EINVAL` и возвращают значение `EINVAL`.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CMFCTabCtrl Class'
 title: CMFCTabCtrl Class
 ms.date: 08/28/2019
 f1_keywords:
@@ -104,16 +105,16 @@ helpviewer_keywords:
 - CMFCTabCtrl [MFC], SynchronizeScrollBar
 - CMFCTabCtrl [MFC], m_bEnableActivate
 ms.assetid: d441385d-2c72-4203-96fa-deae2273da35
-ms.openlocfilehash: da871679665376342a6d23369a1e34c9a7060ce7
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: a7e584262ca14420ce6b62bf210c33d87d44e824
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753461"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306811"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl Class
 
-Класс `CMFCTabCtrl` предоставляет функциональность для управления вкладками. Элемент управления "вкладка" отображает закрепляемое окно с плоскими или трехмерными вкладками в верхней или нижней части. Вкладки могут отображать текст и изображение и могут изменять цвет, когда активны.
+`CMFCTabCtrl`Класс предоставляет функциональные возможности для элемента управления "Вкладка". Элемент управления "вкладка" отображает закрепляемое окно с плоскими или трехмерными вкладками в верхней или нижней части. Вкладки могут отображать текст и изображение и могут изменять цвет, когда активны.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -121,113 +122,113 @@ ms.locfileid: "81753461"
 class CMFCTabCtrl : public CMFCBaseTabCtrl
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |`CMFCTabCtrl::CMFCTabCtrl`|Конструктор по умолчанию.|
 |`CMFCTabCtrl::~CMFCTabCtrl`|Деструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMFCTabCtrl::ActivateMDITab](#activatemditab)|Отображает указанную вкладку текущего элемента управления вкладкой и устанавливает фокус на этой вкладке.|
-|[CMFCTabCtrl::AllowDestroyEmptyTabbedPane](#allowdestroyemptytabbedpane)||
-|[CMFCTabCtrl::AutoSizeWindow](#autosizewindow)|Уточняется, является ли фреймворк изменением размера клиентской области всех окон управления вкладками при изменении элемента пользовательского интерфейса управления вкладками.|
-|[CMFCTabCtrl::CalcRectEdit](#calcrectedit)|Дефлирует размер указанной области вкладки. (Переопределяет `CMFCBaseTabCtrl::CalcRectEdit`.)|
-|[CMFCTabCtrl::Создание](#create)|Создает элементуправления вкладки и `CMFCTabCtrl` прикрепляет его к объекту.|
+|[CMFCTabCtrl:: Активатемдитаб](#activatemditab)|Отображает указанную вкладку текущего элемента управления "Вкладка" и устанавливает фокус на этой вкладке.|
+|[CMFCTabCtrl:: Алловдестройемптитаббедпане](#allowdestroyemptytabbedpane)||
+|[CMFCTabCtrl:: Аутосизевиндов](#autosizewindow)|Указывает, должна ли платформа изменять размер клиентской области всех окон элементов управления вкладки при изменении элемента пользовательского интерфейса элемента управления "Вкладка".|
+|[CMFCTabCtrl:: Калкректедит](#calcrectedit)|Уменьшает размер указанной области вкладки. (Переопределяет `CMFCBaseTabCtrl::CalcRectEdit`.)|
+|[CMFCTabCtrl:: Create](#create)|Создает элемент управления "Вкладка" и присоединяет его к `CMFCTabCtrl` объекту.|
 |`CMFCTabCtrl::CreateObject`|Используется платформой для создания динамического экземпляра этого типа класса.|
-|[CMFCTabCtrl:EnableActiveTabCloseButton](#enableactivetabclosebutton)|Отображает или скрывает кнопку «Закрыть» **(X)** на активной вкладке.|
-|[CMFCTabCtrl:EnableInPlaceEdit](#enableinplaceedit)|Позволяет или отсваивал реверсируемые метки вкладок. (Переопределяет [CMFCBaseTabCtrl::EnableInPlaceEdit](../../mfc/reference/cmfcbasetabctrl-class.md#enableinplaceedit).)|
-|[CMFCTabCtrl::EnableTabDocumentsMenu](#enabletabdocumentsmenu)|Заменяет две кнопки, которые прокручивают вкладки окна с помощью кнопки, которая открывает меню окон с вкладками.|
-|[CMFCTabCtrl::ОбеспечениеВидимого](#ensurevisible)|Гарантирует, что вкладка видна.|
-|[CMFCTabCtrl:GetDocumentIcon](#getdocumenticon)|Извлекает символ, связанный со вкладкой, в всплывающем меню окон с вкладками.|
-|[CMFCTabCtrl::GetFirstVisibleTabNum](#getfirstvisibletabnum)|Извлекает индекс первой вкладки, видимый в текущем элементе управления вкладки.|
-|[CMFCTabCtrl:GetResizemode](#getresizemode)|Извлекает значение, очеркивавкоторое, как можно переоценить текущий элемент управления вкладками.|
-|[CMFCTabCtrl:GetScrollBar](#getscrollbar)|Извлекает указатель на объект панели прокрутки, связанный с управлением вкладками.|
-|[CMFCTabCtrl:GetTabArea](#gettabarea)|Извлекает прямоугольник области вкладки в верхней или нижней части управления вкладки. (Отменяет [CMFCBaseTabCtrl::GetTabArea](../../mfc/reference/cmfcbasetabctrl-class.md#gettabarea).)|
-|`CMFCTabCtrl::GetTabFromPoint`|Извлекает вкладку, содержащую указанную точку. (Оверлет [CMFCBaseTabCtrl::GetTabFromPoint](../../mfc/reference/cmfcbasetabctrl-class.md#gettabfrompoint).)|
-|[CMFCTabCtrl:GetTabMaxWidth](#gettabmaxwidth)|Извлекает максимальную ширину вкладки.|
-|[CMFCTabCtrl:GetTabsHeight](#gettabsheight)|Извлекает высоту области вкладки текущего элемента управления вкладкой.|
-|[CMFCTabCtrl:GetTabsRect](#gettabsrect)|Извлекает прямоугольник, который связывает область вкладки текущего элемента управления вкладками. (Оверлет [CMFCBaseTabCtrl::GetTabsRect](../../mfc/reference/cmfcbasetabctrl-class.md#gettabsrect).)|
-|`CMFCTabCtrl::GetThisClass`|Используется фректором для получения указателя на объект [CRuntimeClass,](../../mfc/reference/cruntimeclass-structure.md) связанный с этим типом класса.|
-|[CMFCTabCtrl:GetWndArea](#getwndarea)|Извлекает границу области клиента текущего элемента управления вкладки.|
-|[CMFCTabCtrl::HideActiveWindowHorzScrollBar](#hideactivewindowhorzscrollbar)|Скрывает горизонтальную панель прокрутки, если таковые имеется, активного окна.|
-|[CMFCTabCtrl:HideInactiveWindow](#hideinactivewindow)|Уточняется, является ли фреймворк для отображения неактивных окон управления вкладками.|
-|[CMFCTabCtrl:HideNoTabs](#hidenotabs)|Позволяет или отводит чертеж области вкладок, если нет видимых вкладок.|
-|[CMFCTabCtrl::HideSingleTab](#hidesingletab)|Позволяет или отводит рисунок вкладки, когда есть одно окно вкладки. (Отменяет [CMFCBaseTabCtrl::HideSingleTab](../../mfc/reference/cmfcbasetabctrl-class.md#hidesingletab).)|
-|[CMFCTabCtrl::IsActiveInMDItabGroup](#isactiveinmditabgroup)|Указывает, является ли текущая вкладка управления вкладкой активной вкладкой в группе вкладок интерфейса несколько документов.|
-|[CMFCTabCtrl::IsActiveTabBoldFont](#isactivetabboldfont)|Указывает, отображается ли текст активной вкладки жирным шрифтом.|
-|[CMFCTabCtrl::IsActiveTabCloseButton](#isactivetabclosebutton)|Указывает, отображается ли кнопка «Закрыть» **(X)** на активной вкладке или в правом верхнем углу области вкладки.|
-|[CMFCTabCtrl::IsdrawFrame](#isdrawframe)|Указывает, рисует ли окно вкладок прямоугольник кадра вокруг встроенных стекол.|
-|[CMFCTabCtrl::IsFlatFrame](#isflatframe)|Указывает, является ли рамка вокруг области вкладки плоской или 3D.|
-|[CMFCTabCtrl::IsFlatTab](#isflattab)|Указывает, является ли внешний вид вкладок в текущем элементе управления вкладками плоским или нет.|
-|[CMFCTabCtrl::IsLeftRightRounded](#isleftrightrounded)|Указывает, округляется ли внешний вид левой и правой стороны вкладки в текущем элементе управления вкладкой.|
-|[CMFCTabCtrl::IsMDITabGroup](#ismditabgroup)|Указывает, содержится ли текущее управление вкладками в клиентской области окна интерфейса с несколькими документами.|
-|[CMFCTabCtrl::IsoneNoteStyle](#isonenotestyle)|Указывается, отображается ли текущее управление вкладками в стиле Microsoft OneNote.|
-|`CMFCTabCtrl::IsPtInTabArea`|Определяет, находится ли точка внутри области вкладок. (Переопределяет [CMFCBasetabctrl::Isptintabarea](../../mfc/reference/cmfcbasetabctrl-class.md#isptintabarea).)|
-|[CMFCTabCtrl::IsSharedScroll](#issharedscroll)|Указывает, имеет ли текущий элемент управления вкладками панель прокрутки, которая может прокручивать свои вкладки в группе.|
-|[CMFCTabCtrl::IstabDocumentsMenu](#istabdocumentsmenu)|Указывает, отображает ли управление вкладкой кнопки прокрутки или кнопку, отображая меню окон с вкладками.|
-|[CMFCTabCtrl::IsVS2005Стиль](#isvs2005style)|Указывает, отображаются ли вкладки в стиле Visual Studio .NET 2005.|
-|[CMFCTabCtrl::ModifyTabStyle](#modifytabstyle)|Определяет внешний вид вкладок в текущем управлении вкладками.|
-|`CMFCTabCtrl::MoveTab`|Перемещает вкладку в другое положение вкладок. (Оверлет [CMFCBaseTabCtrl::MoveTab](../../mfc/reference/cmfcbasetabctrl-class.md#movetab).)|
-|[CMFCTabCtrl:OndragEnter](#ondragenter)|Вызывается по фрейму, когда курсор сначала втягивается в окно управления вкладками.|
-|[CMFCTabCtrl::Ондраговер](#ondragover)|Вызывается фреймворком во время операции перетаскивания, когда мышь перемещается через окно целевой выпадения. (Оверлет [CMFCBasetabCtrl::Ondragover](../../mfc/reference/cmfcbasetabctrl-class.md#ondragover).)|
-|[CMFCTabCtrl::OnshowtabDocumentsMenu](#onshowtabdocumentsmenu)|Отображает всплывающее меню окон с вкладками, ждет, пока пользователь выберет вкладку, и делает выбранную вкладку активной вкладкой.|
-|`CMFCTabCtrl::PreTranslateMessage`|Переводит оконные сообщения перед отправкой на функции [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) и [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows. (Оверлет [CMFCBaseTabCtrl::PreTranslateMessage](../../mfc/reference/cmfcbasetabctrl-class.md#pretranslatemessage).)|
-|`CMFCTabCtrl::RecalcLayout`|Повторно вычисляет внутренний макет набора вкладок. (Оверлет [CMFCBaseTabCtrl::RecalcLayout](../../mfc/reference/cmfcbasetabctrl-class.md#recalclayout).)|
-|[CMFCTabCtrl::SetActiveInMDItabGroup](#setactiveinmditabgroup)|Устанавливает текущую вкладку управления вкладкой в качестве активной вкладки в группе вкладок интерфейса документа.|
-|[CMFCTabCtrl::SetActiveTab](#setactivetab)|Активирует вкладку. (Переопределяет [CMFCBaseTabCtrl::SetActiveTab](../../mfc/reference/cmfcbasetabctrl-class.md#setactivetab).)|
-|[CMFCTabCtrl::SetActiveTabBoldFont](#setactivetabboldfont)|Позволяет или отдает возможности использования смелого шрифта на активных вкладок.|
-|[CMFCTabCtrl::SetDrawFrame](#setdrawframe)|Позволяет или отводит рисунок прямоугольника кадра вокруг встроенной панели.|
-|[CMFCTabCtrl::SetFlatFrame](#setflatframe)|Определяет, следует ли рисовать плоский или 3D-рамку вокруг области вкладки.|
-|[CMFCTabCtrl:SetImageList](#setimagelist)|Определяет список изображений. (Отменяет [CMFCBaseTabCtrl::SetImageList](../../mfc/reference/cmfcbasetabctrl-class.md#setimagelist).)|
-|[CMFCTabCtrl:SetResizeMode](#setresizemode)|Определяет, как можно переопрошать текущий элемент управления вкладками, а затем повторно отображать элемент управления.|
-|[CMFCTabCtrl::SetTabMaxWidth](#settabmaxwidth)|Уфикует максимальную ширину вкладок в окне вкладок.|
-|[CMFCTabCtrl:СтопРесс](#stopresize)|Прекращает текущую операцию повторного размера на элементе управления вкладки.|
-|`CMFCTabCtrl::SwapTabs`|Свопы пара вкладок. (Переопределяет [CMFCBaseTabCtrl:SwapTabs](../../mfc/reference/cmfcbasetabctrl-class.md#swaptabs).)|
-|[CMFCTabCtrl::SynchronizeScrollBar](#synchronizescrollbar)|Рисует горизонтальную панель прокрутки на элементе управления вкладками, которая отображает плоские вкладки.|
+|[CMFCTabCtrl:: Енаблеактиветабклосебуттон](#enableactivetabclosebutton)|Показывает или скрывает кнопку закрытия ( **X**) на активной вкладке.|
+|[CMFCTabCtrl:: Енаблеинплацеедит](#enableinplaceedit)|Включает или отключает редактируемые метки вкладок. (Переопределяет [CMFCBaseTabCtrl:: енаблеинплацеедит](../../mfc/reference/cmfcbasetabctrl-class.md#enableinplaceedit).)|
+|[CMFCTabCtrl:: Енаблетабдокументсмену](#enabletabdocumentsmenu)|Заменяет две кнопки, прокрутки на вкладки окна с помощью кнопки, открывающей меню окон с вкладками.|
+|[CMFCTabCtrl:: Енсуревисибле](#ensurevisible)|Обеспечивает видимость вкладки.|
+|[CMFCTabCtrl:: Жетдокументикон](#getdocumenticon)|Извлекает символ, связанный с вкладкой, во всплывающем меню окон с вкладками.|
+|[CMFCTabCtrl:: Жетфирствисиблетабнум](#getfirstvisibletabnum)|Извлекает индекс первой вкладки, видимой в текущем элементе управления "Вкладка".|
+|[CMFCTabCtrl:: Жетресиземоде](#getresizemode)|Извлекает значение, указывающее, как можно изменить размер текущего элемента управления "Вкладка".|
+|[CMFCTabCtrl:: ScrollBar](#getscrollbar)|Получает указатель на объект полосы прокрутки, связанный с элементом управления "Вкладка".|
+|[CMFCTabCtrl:: Жеттабареа](#gettabarea)|Извлекает ограничивающий прямоугольник области метки вкладки в верхней или нижней части элемента управления "Вкладка". (Переопределяет [CMFCBaseTabCtrl:: жеттабареа](../../mfc/reference/cmfcbasetabctrl-class.md#gettabarea).)|
+|`CMFCTabCtrl::GetTabFromPoint`|Извлекает вкладку, содержащую указанную точку. (Переопределяет [CMFCBaseTabCtrl:: жеттабфромпоинт](../../mfc/reference/cmfcbasetabctrl-class.md#gettabfrompoint).)|
+|[CMFCTabCtrl:: Жеттабмаксвидс](#gettabmaxwidth)|Возвращает максимальную ширину вкладки.|
+|[CMFCTabCtrl:: Жеттабшеигхт](#gettabsheight)|Получает высоту области вкладок текущего элемента управления "Вкладка".|
+|[CMFCTabCtrl:: Жеттабсрект](#gettabsrect)|Извлекает прямоугольник, ограничивающий область вкладок текущего элемента управления "Вкладка". (Переопределяет [CMFCBaseTabCtrl:: жеттабсрект](../../mfc/reference/cmfcbasetabctrl-class.md#gettabsrect).)|
+|`CMFCTabCtrl::GetThisClass`|Используется платформой для получения указателя на объект [крунтимекласс](../../mfc/reference/cruntimeclass-structure.md) , связанный с этим типом класса.|
+|[CMFCTabCtrl:: Жетвндареа](#getwndarea)|Извлекает границу клиентской области текущего элемента управления "Вкладка".|
+|[CMFCTabCtrl:: Хидеактивевиндовхорзскроллбар](#hideactivewindowhorzscrollbar)|Скрывает горизонтальную полосу прокрутки (если она есть) активного окна.|
+|[CMFCTabCtrl:: Хидеинактивевиндов](#hideinactivewindow)|Указывает, должна ли платформа отображать неактивные окна элементов управления "Вкладка".|
+|[CMFCTabCtrl:: Хиденотабс](#hidenotabs)|Включает или отключает прорисовку области вкладки, если нет видимых вкладок.|
+|[CMFCTabCtrl:: Хидесинглетаб](#hidesingletab)|Включает или отключает отображение вкладки при наличии одного окна с вкладками. (Переопределяет [CMFCBaseTabCtrl:: хидесинглетаб](../../mfc/reference/cmfcbasetabctrl-class.md#hidesingletab).)|
+|[CMFCTabCtrl:: Исактивеинмдитабграуп](#isactiveinmditabgroup)|Указывает, является ли текущая вкладка элемента управления "Вкладка" активной вкладкой в группе вкладок многодокументного интерфейса.|
+|[CMFCTabCtrl:: Исактиветабболдфонт](#isactivetabboldfont)|Указывает, отображается ли текст активной вкладки с полужирным шрифтом.|
+|[CMFCTabCtrl:: Исактиветабклосебуттон](#isactivetabclosebutton)|Указывает, отображается ли кнопка закрытия ( **X**) на активной вкладке или в правом верхнем углу области вкладки.|
+|[CMFCTabCtrl:: Исдравфраме](#isdrawframe)|Указывает, рисует ли окно с вкладками прямоугольник фрейма вокруг встроенных панелей.|
+|[CMFCTabCtrl:: Исфлатфраме](#isflatframe)|Указывает, является ли рамка вокруг области табуляции плоской или трехмерной.|
+|[CMFCTabCtrl:: Исфлаттаб](#isflattab)|Указывает, является ли внешний вид вкладок в текущем элементе управления "плоский".|
+|[CMFCTabCtrl:: Ислефтригхтраундед](#isleftrightrounded)|Указывает, округлен ли вид левой и правой части вкладки в текущем элементе управления "Вкладка".|
+|[CMFCTabCtrl:: Исмдитабграуп](#ismditabgroup)|Указывает, содержится ли текущий элемент управления "Вкладка" в клиентской области окна интерфейса с несколькими документами.|
+|[CMFCTabCtrl:: Исоненотестиле](#isonenotestyle)|Указывает, отображается ли текущий элемент управления "Вкладка" в стиле Microsoft OneNote.|
+|`CMFCTabCtrl::IsPtInTabArea`|Определяет, находится ли точка внутри области вкладок. (Переопределяет [CMFCBaseTabCtrl:: исптинтабареа](../../mfc/reference/cmfcbasetabctrl-class.md#isptintabarea).)|
+|[CMFCTabCtrl:: Исшаредскролл](#issharedscroll)|Указывает, есть ли у текущего элемента управления "Вкладка" полоса прокрутки, которая может прокручивать ее вкладки как группу.|
+|[CMFCTabCtrl:: Истабдокументсмену](#istabdocumentsmenu)|Указывает, отображает ли элемент управления "Вкладка" кнопки прокрутки или кнопку, отображающую меню окон с вкладками.|
+|[CMFCTabCtrl:: IsVS2005Style](#isvs2005style)|Указывает, отображаются ли вкладки в стиле Visual Studio .NET 2005.|
+|[CMFCTabCtrl:: Модифитабстиле](#modifytabstyle)|Задает внешний вид вкладок в текущем элементе управления "Вкладка".|
+|`CMFCTabCtrl::MoveTab`|Перемещает вкладку на другую позицию табуляции. (Переопределяет [CMFCBaseTabCtrl:: моветаб](../../mfc/reference/cmfcbasetabctrl-class.md#movetab).)|
+|[CMFCTabCtrl:: OnDragEnter](#ondragenter)|Вызывается структурой при первом перетаскивании курсора в окно элемента управления "Вкладка".|
+|[CMFCTabCtrl:: OnDragOver](#ondragover)|Вызывается платформой во время операции перетаскивания при перемещении мыши по конечному окну перетаскивания. (Переопределяет [CMFCBaseTabCtrl:: OnDragOver](../../mfc/reference/cmfcbasetabctrl-class.md#ondragover).)|
+|[CMFCTabCtrl:: Оншовтабдокументсмену](#onshowtabdocumentsmenu)|Отображает всплывающее меню окон с вкладками, ждет, пока пользователь не выберет вкладку, и сделает выбранную вкладку активной вкладкой.|
+|`CMFCTabCtrl::PreTranslateMessage`|Преобразует сообщения окна до их отправки в функции Windows [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) и [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) . (Переопределяет [CMFCBaseTabCtrl::P ретранслатемессаже](../../mfc/reference/cmfcbasetabctrl-class.md#pretranslatemessage).)|
+|`CMFCTabCtrl::RecalcLayout`|Повторно вычисляет внутренний макет набора вкладок. (Переопределяет [CMFCBaseTabCtrl:: RecalcLayout](../../mfc/reference/cmfcbasetabctrl-class.md#recalclayout).)|
+|[CMFCTabCtrl:: Сетактивеинмдитабграуп](#setactiveinmditabgroup)|Устанавливает текущую вкладку элемента управления "Вкладка" как активную вкладку в группе вкладок многодокументного интерфейса.|
+|[CMFCTabCtrl:: Сетактиветаб](#setactivetab)|Активирует вкладку. (переопределяет [CMFCBaseTabCtrl:: сетактиветаб](../../mfc/reference/cmfcbasetabctrl-class.md#setactivetab).)|
+|[CMFCTabCtrl:: Сетактиветабболдфонт](#setactivetabboldfont)|Включает или отключает использование полужирного шрифта на активных вкладках.|
+|[CMFCTabCtrl:: Сетдравфраме](#setdrawframe)|Включает или отключает рисование прямоугольника фрейма вокруг встроенной панели.|
+|[CMFCTabCtrl:: Сетфлатфраме](#setflatframe)|Указывает, следует ли нарисовать плоский или трехмерный фрейм вокруг области вкладки.|
+|[CMFCTabCtrl:: Сетимажелист](#setimagelist)|Задает список изображений. (Переопределяет [CMFCBaseTabCtrl:: сетимажелист](../../mfc/reference/cmfcbasetabctrl-class.md#setimagelist).)|
+|[CMFCTabCtrl:: Сетресиземоде](#setresizemode)|Указывает, как можно изменить размер текущего элемента управления "Вкладка", а затем повторно отобразить элемент управления.|
+|[CMFCTabCtrl:: Сеттабмаксвидс](#settabmaxwidth)|Задает максимальную ширину табуляции в окне с вкладками.|
+|[CMFCTabCtrl:: Стопресизе](#stopresize)|Завершает текущую операцию изменения размера для элемента управления "Вкладка".|
+|`CMFCTabCtrl::SwapTabs`|Меняет местами пару вкладок. (Переопределяет [CMFCBaseTabCtrl:: сваптабс](../../mfc/reference/cmfcbasetabctrl-class.md#swaptabs).)|
+|[CMFCTabCtrl:: Синчронизескроллбар](#synchronizescrollbar)|Рисует горизонтальную полосу прокрутки на элементе управления "Вкладка", который отображает плоские вкладки.|
 
 ### <a name="data-members"></a>Элементы данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CMFCTabCtrl::m_bEnableActivate](#m_benableactivate)|Предотвращает потерю фокуса активного представления при вставке и включении новой вкладки.|
+|[CMFCTabCtrl:: m_bEnableActivate](#m_benableactivate)|Предотвращает потерю фокуса в активном представлении при вставке и включении новой вкладки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Класс `CMFCTabCtrl` поддерживает:
+`CMFCTabCtrl`Класс поддерживает:
 
-- Стили управления вкладками, которые включают 3D, плоский и плоский с общим горизонтальным баром прокрутки.
+- Стили элементов управления вкладки, включающие трехмерные, плоские и плоские с общей горизонтальной полосой прокрутки.
 
 - Вкладки, расположенные в верхней или нижней части окна.
 
-- Вкладки, отображающие текст, изображения или текст и изображения.
+- Вкладки, отображающие текст, изображения, текст и изображения.
 
-- Вкладки, которые меняют цвет, когда вкладка активна.
+- Вкладки, изменяющие цвет при активной вкладке.
 
-- Размер границы изменяется для регулируемых вкладок.
+- Изменение размера границы для настраиваемых вкладок.
 
-- Съемные окна с вкладками.
+- Окна с присоединяемыми вкладками.
 
-Класс `CMFCTabCtrl` может использоваться с диалоговым окном, но предназначен для приложений, которые используют стыковочные панели управления, такие как Microsoft Excel и Visual Studio. Для получения дополнительной [CDockablePane Class](../../mfc/reference/cdockablepane-class.md)информации см.
+`CMFCTabCtrl`Класс можно использовать с диалоговым окном, но предназначен для приложений, использующих закрепляемые панели управления, такие как Microsoft Excel и Visual Studio. Дополнительные сведения см. в разделе [класс CDockablePane](../../mfc/reference/cdockablepane-class.md).
 
-Выполните следующие действия, чтобы добавить в приложение решаемый элемент управления стыковки:
+Чтобы добавить в приложение элемент управления "вкладка с возможностью изменения размера", выполните следующие действия:
 
-1. Создайте экземпляр [класса CTabbedPane.](../../mfc/reference/ctabbedpane-class.md)
+1. Создайте экземпляр [класса ктаббедпане](../../mfc/reference/ctabbedpane-class.md).
 
-1. Вызов [CDockablePane::Создание](../../mfc/reference/cdockablepane-class.md#create).
+1. Вызовите [CDockablePane:: Create](../../mfc/reference/cdockablepane-class.md#create).
 
-1. Используйте [CBaseTabbedPane::AddTab](../../mfc/reference/cbasetabbedpane-class.md#addtab) или [CMFCBaseTabCtrl::InsertTab](../../mfc/reference/cmfcbasetabctrl-class.md#inserttab) для добавления новых вкладок.
+1. Для добавления новых вкладок используйте [CBaseTabbedPane:: аддтаб](../../mfc/reference/cbasetabbedpane-class.md#addtab) или [CMFCBaseTabCtrl:: инсерттаб](../../mfc/reference/cmfcbasetabctrl-class.md#inserttab) .
 
-1. Вызов [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking) так, что текущее управление вкладкой стыковки может стыковки в главном окне кадра.
+1. Вызовите [CBasePane:: енабледоккинг](../../mfc/reference/cbasepane-class.md#enabledocking) , чтобы текущий элемент управления вкладки закрепления можно было закрепить в главном окне фрейма.
 
-1. Вызов [CFrameWndEx::DockPane,](../../mfc/reference/cframewndex-class.md#dockpane) чтобы состыковать окно вкладок в главном кадре.
+1. Вызовите [CFrameWndEx::D оккпане](../../mfc/reference/cframewndex-class.md#dockpane) , чтобы закрепить окно с вкладками в главном фрейме.
 
-Например, как создать окно вкладок в качестве панели управления стыковки, [см.](../../mfc/reference/ctabbedpane-class.md) Чтобы `CMFCTabCtrl` использовать в качестве элемента управления `CMFCTabCtrl` без докинга, создайте объект, а затем позвоните [в CMFCTabCtrl::Create](#create).
+Пример создания окна с вкладками в качестве закрепляемой панели управления см. в разделе [класс ктаббедпане](../../mfc/reference/ctabbedpane-class.md). Чтобы использовать в `CMFCTabCtrl` качестве элемента управления без стыковки, создайте `CMFCTabCtrl` объект и вызовите метод [CMFCTabCtrl:: Create](#create).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -243,18 +244,18 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано, как использовать `CMFCTabCtrl` различные методы в классе для настройки `CMFCTabCtrl` объекта. В примере объясняется, как добавить вкладку, показать кнопку «Закрыть» на активной вкладке, включить отображаемые метки вкладок и отобразить всплывающее меню меток окна с вкладками. Этот пример является частью [образца Государственной коллекции.](../../overview/visual-cpp-samples.md)
+В следующем примере показано, как использовать различные методы в `CMFCTabCtrl` классе для настройки `CMFCTabCtrl` объекта. В примере показано, как добавить вкладку, Показать кнопку Закрыть на вкладке активная, включить редактируемые метки вкладок и отобразить всплывающее меню меток окон с вкладками. Этот пример является частью [примера сбора](../../overview/visual-cpp-samples.md)данных о состоянии.
 
 [!code-cpp[NVC_MFC_StateCollection#1](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_1.h)]
 [!code-cpp[NVC_MFC_StateCollection#3](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_2.cpp)]
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxtabctrl.h
+**Заголовок:** афкстабктрл. h
 
-## <a name="cmfctabctrlactivatemditab"></a><a name="activatemditab"></a>CMFCTabCtrl::ActivateMDITab
+## <a name="cmfctabctrlactivatemditab"></a><a name="activatemditab"></a> CMFCTabCtrl:: Активатемдитаб
 
-Отображает указанную вкладку текущего элемента управления вкладкой и устанавливает фокус на этой вкладке.
+Отображает указанную вкладку текущего элемента управления "Вкладка" и устанавливает фокус на этой вкладке.
 
 ```cpp
 void ActivateMDITab(int nTab = -1);
@@ -262,12 +263,12 @@ void ActivateMDITab(int nTab = -1);
 
 ### <a name="parameters"></a>Параметры
 
-*nTab*<br/>
-(в) Индекс на нулевой основе вкладки для отображения или -1 для указания активной вкладки.
+*нтаб*<br/>
+окне Отсчитываемый от нуля индекс вкладки для вывода или значение-1, чтобы указать текущую активную вкладку.
 
-## <a name="cmfctabctrlallowdestroyemptytabbedpane"></a><a name="allowdestroyemptytabbedpane"></a>CMFCTabCtrl::AllowDestroyEmptyTabbedPane
+## <a name="cmfctabctrlallowdestroyemptytabbedpane"></a><a name="allowdestroyemptytabbedpane"></a> CMFCTabCtrl:: Алловдестройемптитаббедпане
 
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ```
 virtual BOOL AllowDestroyEmptyTabbedPane() const;
@@ -279,9 +280,9 @@ virtual BOOL AllowDestroyEmptyTabbedPane() const;
 
 ### <a name="remarks"></a>Remarks
 
-## <a name="cmfctabctrlautosizewindow"></a><a name="autosizewindow"></a>CMFCTabCtrl::AutoSizeWindow
+## <a name="cmfctabctrlautosizewindow"></a><a name="autosizewindow"></a> CMFCTabCtrl:: Аутосизевиндов
 
-Уточняется, является ли фреймворк изменением размера клиентской области всех окон управления вкладками при изменении элемента пользовательского интерфейса управления вкладками.
+Указывает, должна ли платформа изменять размер клиентской области всех окон элементов управления вкладки при изменении элемента пользовательского интерфейса элемента управления "Вкладка".
 
 ```cpp
 void AutoSizeWindow(BOOL bAutoSize = TRUE);
@@ -289,14 +290,14 @@ void AutoSizeWindow(BOOL bAutoSize = TRUE);
 
 ### <a name="parameters"></a>Параметры
 
-*bAutoSize*<br/>
-(в) TRUE для автоматического изобьет размер окон управления вкладками; в противном случае, FALSE. Значение по умолчанию — TRUE.
+*баутосизе*<br/>
+окне Значение TRUE, чтобы автоматически изменять размер окон элементов управления вкладки; в противном случае — значение FALSE. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctabctrlcreate"></a><a name="create"></a>CMFCTabCtrl::Создание
+## <a name="cmfctabctrlcreate"></a><a name="create"></a> CMFCTabCtrl:: Create
 
-Создает элементуправления вкладки и `CMFCTabCtrl` прикрепляет его к объекту.
+Создает элемент управления "Вкладка" и присоединяет его к `CMFCTabCtrl` объекту.
 
 ```
 BOOL Create(
@@ -311,58 +312,58 @@ BOOL Create(
 ### <a name="parameters"></a>Параметры
 
 *style*<br/>
-(в) Стиль управления вкладками. Дополнительные сведения см. в подразделе "Примечания".
+окне Стиль элемента управления "Вкладка". Дополнительные сведения см. в подразделе "Примечания".
 
 *rect*<br/>
-(в) Прямоугольник, который граничит с управлением вкладки.
+окне Прямоугольник, ограничивающий элемент управления "Вкладка".
 
-*pParentWnd*<br/>
-(в) Указатель на родительское окно. Не должно быть NULL.
+*ппарентвнд*<br/>
+окне Указатель на родительское окно. Не может иметь значение NULL.
 
 *nID*<br/>
-(в) Идентификатор управления вкладкой.
+окне Идентификатор элемента управления "Вкладка".
 
 *расположение*<br/>
-(в) Расположение вкладок. Значение по умолчанию является LOCATION_BOTTOM. Дополнительные сведения см. в подразделе "Примечания".
+окне Расположение вкладок. Значение по умолчанию — LOCATION_BOTTOM. Дополнительные сведения см. в подразделе "Примечания".
 
-*bCloseBtn*<br/>
-(в) TRUE для отображения кнопки закрытия на вкладке; в противном случае, FALSE. Значение по умолчанию — FALSE.
+*бклосебтн*<br/>
+окне Значение TRUE, если на вкладке отображается кнопка Закрыть; в противном случае — значение FALSE. Значение по умолчанию — FALSE.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE в случае успеха; в противном случае, FALSE.
+Значение TRUE в случае успешного выполнения; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-В следующей таблице описаны значения, которые можно указать для параметра *стиля.*
+В следующей таблице описаны значения, которые можно указать для параметра *Style* .
 
 |Стиль|Описание|
 |-----------|-----------------|
-|STYLE_3D|Создает управление вкладками с трехмерным внешним видом.|
-|STYLE_FLAT|Создает управление вкладками с плоскими вкладками.|
-|STYLE_FLAT_SHARED_HORZ_SCROLL|Создает управление вкладками с плоскими вкладками и баром прокрутки, который может прокручивать вкладки, если они обрезаны родительским окном.|
-|STYLE_3D_ONENOTE|Создает элементуправления вкладок в стиле Microsoft OneNote.|
-|STYLE_3D_VS2005|Создает управление вкладками в стиле Microsoft Visual Studio 2005.|
-|STYLE_3D_ROUNDED|Создает управление вкладками с закругленные вкладки в стиле Microsoft Visual Studio 2005.|
-|STYLE_3D_ROUNDED_SCROLL|Создает управление вкладками с закругленные вкладки и кнопки прокрутки в стиле Microsoft Visual Studio 2005.|
+|STYLE_3D|Создает элемент управления "Вкладка" с трехмерным видом.|
+|STYLE_FLAT|Создает элемент управления "Вкладка" с плоскими вкладками.|
+|STYLE_FLAT_SHARED_HORZ_SCROLL|Создает элемент управления "Вкладка" с плоскими вкладками и полосой прокрутки, которая может прокручивать вкладки, если они обрезаются родительским окном.|
+|STYLE_3D_ONENOTE|Создает элемент управления "Вкладка" в стиле Microsoft OneNote.|
+|STYLE_3D_VS2005|Создает элемент управления "Вкладка" в стиле Microsoft Visual Studio 2005.|
+|STYLE_3D_ROUNDED|Создает элемент управления "Вкладка" со скругленными вкладками в стиле Microsoft Visual Studio 2005.|
+|STYLE_3D_ROUNDED_SCROLL|Создает элемент управления "Вкладка" со скругленными вкладками и кнопками прокрутки в стиле Microsoft Visual Studio 2005.|
 
-В следующей таблице перечислены значения, которые можно указать для параметра *местоположения.*
+В следующей таблице перечислены значения, которые можно указать для параметра *Location* .
 
-|Местоположение|Описание|
+|Расположение|Описание|
 |--------------|-----------------|
-|LOCATION_BOTTOM|Вкладки расположены в нижней части элемента управления вкладками.|
-|LOCATION_TOP|Вкладки расположены в верхней части элемента управления вкладками.|
+|LOCATION_BOTTOM|Вкладки расположены в нижней части элемента управления "Вкладка".|
+|LOCATION_TOP|Вкладки расположены в верхней части элемента управления "Вкладка".|
 
 ### <a name="example"></a>Пример
 
-В следующем примере показано, `Create` как `CMFCTabCtrl` использовать метод в классе. Этот пример является частью [образца Государственной коллекции.](../../overview/visual-cpp-samples.md)
+В следующем примере показано, как использовать `Create` метод в `CMFCTabCtrl` классе. Этот пример является частью [примера сбора](../../overview/visual-cpp-samples.md)данных о состоянии.
 
 [!code-cpp[NVC_MFC_StateCollection#1](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_1.h)]
 [!code-cpp[NVC_MFC_StateCollection#2](../../mfc/reference/codesnippet/cpp/cmfctabctrl-class_3.cpp)]
 
-## <a name="cmfctabctrlcalcrectedit"></a><a name="calcrectedit"></a>CMFCTabCtrl::CalcRectEdit
+## <a name="cmfctabctrlcalcrectedit"></a><a name="calcrectedit"></a> CMFCTabCtrl:: Калкректедит
 
-Дефлирует размер указанной области вкладки.
+Уменьшает размер указанной области вкладки.
 
 ```
 virtual void CalcRectEdit(CRect& rectEdit);
@@ -370,16 +371,16 @@ virtual void CalcRectEdit(CRect& rectEdit);
 
 ### <a name="parameters"></a>Параметры
 
-*rectEdit*<br/>
-(в) Прямоугольник, опоедая область вкладки.
+*ректедит*<br/>
+окне Прямоугольник, указывающий область вкладки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод вызывается при изменении метки вкладки. Этот метод сдувает левую и правую стороны указанного прямоугольника на половину текущей высоты вкладки и сдувает верхнюю и нижнюю части на одну единицу.
+Этот метод вызывается при изменении метки вкладки. Этот метод уменьшает левую и правую части указанного прямоугольника на одну половину текущей высоты табуляции и уменьшает верхнюю и нижнюю на одну единицу.
 
-## <a name="cmfctabctrlenableactivetabclosebutton"></a><a name="enableactivetabclosebutton"></a>CMFCTabCtrl:EnableActiveTabCloseButton
+## <a name="cmfctabctrlenableactivetabclosebutton"></a><a name="enableactivetabclosebutton"></a> CMFCTabCtrl:: Енаблеактиветабклосебуттон
 
-Отображает или скрывает кнопку «Закрыть» **(X)** на активной вкладке.
+Показывает или скрывает кнопку закрытия ( **X**) на активной вкладке.
 
 ```cpp
 void EnableActiveTabCloseButton(BOOL bEnable=TRUE);
@@ -388,11 +389,11 @@ void EnableActiveTabCloseButton(BOOL bEnable=TRUE);
 ### <a name="parameters"></a>Параметры
 
 *bEnable*<br/>
-(в) TRUE для отображения кнопки "Закрыть" на активной вкладке; FALSE для отображения кнопки «Закрыть» в правом верхнем углу области вкладки. Значение по умолчанию — TRUE.
+окне Значение TRUE для вывода кнопки Закрыть на активной вкладке; Значение FALSE, чтобы отобразить кнопку Закрыть в правом верхнем углу области вкладки. Значение по умолчанию — TRUE.
 
-## <a name="cmfctabctrlenableinplaceedit"></a><a name="enableinplaceedit"></a>CMFCTabCtrl:EnableInPlaceEdit
+## <a name="cmfctabctrlenableinplaceedit"></a><a name="enableinplaceedit"></a> CMFCTabCtrl:: Енаблеинплацеедит
 
-Позволяет или отсваивал реверсируемые метки вкладок.
+Включает или отключает редактируемые метки вкладок.
 
 ```
 virtual void EnableInPlaceEdit(BOOL bEnable);
@@ -401,13 +402,13 @@ virtual void EnableInPlaceEdit(BOOL bEnable);
 ### <a name="parameters"></a>Параметры
 
 *bEnable*<br/>
-(в) TRUE для включения отсылки к меткетам; FALSE для оттачивания отсылки к регитируемым меткетам.
+окне Значение TRUE, чтобы включить редактируемые метки вкладок; Значение FALSE, чтобы отключить редактируемые метки вкладок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctabctrlenabletabdocumentsmenu"></a><a name="enabletabdocumentsmenu"></a>CMFCTabCtrl::EnableTabDocumentsMenu
+## <a name="cmfctabctrlenabletabdocumentsmenu"></a><a name="enabletabdocumentsmenu"></a> CMFCTabCtrl:: Енаблетабдокументсмену
 
-Переключается между пользовательским интерфейсом, который использует две кнопки для прокрутки оконных вкладок, и интерфейсом, отображающим всплывающее меню окон с вкладками.
+Переключает между пользовательским интерфейсом, который использует две кнопки для прокрутки вкладок окна, и интерфейс, отображающий всплывающее меню окон с вкладками.
 
 ```cpp
 void EnableTabDocumentsMenu(BOOL bEnable=TRUE);
@@ -416,15 +417,15 @@ void EnableTabDocumentsMenu(BOOL bEnable=TRUE);
 ### <a name="parameters"></a>Параметры
 
 *bEnable*<br/>
-(в) TRUE для отображения всплывающее меню таблеток оконного метки; FALSE для отображения вперед и назад прокрутки кнопок. Значение по умолчанию — TRUE.
+окне Значение TRUE для отображения всплывающего меню меток окон с вкладками; FALSE для отображения кнопок прямого и обратной прокрутки. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Когда пользователь нажимает на метку вкладок, фреймворк отображает соответствующее окно вкладок. Если метка вкладок видна, окно вкладок открывается без изменения его положения. Если пользователь выбирает документ из всплывающем меню и соответствующее окно вкладки находится за кадром, окно вкладок становится первой вкладкой.
+Когда пользователь щелкает метку вкладки, платформа отображает соответствующее окно с вкладками. Если отображается метка вкладки, окно с вкладками открывается без изменения его позиции. Если пользователь выбирает документ во всплывающем меню, а соответствующее окно с вкладками находится не на экране, окно с вкладками становится первой вкладкой.
 
-## <a name="cmfctabctrlensurevisible"></a><a name="ensurevisible"></a>CMFCTabCtrl::ОбеспечениеВидимого
+## <a name="cmfctabctrlensurevisible"></a><a name="ensurevisible"></a> CMFCTabCtrl:: Енсуревисибле
 
-Гарантирует, что вкладка видна.
+Обеспечивает видимость вкладки.
 
 ```
 virtual BOOL EnsureVisible(int iTab);
@@ -437,15 +438,15 @@ virtual BOOL EnsureVisible(int iTab);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если он успешно; FALSE, если индекс параметра *iTab* недействителен.
+Значение TRUE, если оно прошло успешно; Значение FALSE, если индекс параметра *Итаб* является недопустимым.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте этот метод, чтобы гарантировать, что указанная вкладка видна. Управление вкладками будет прокручиваться, если это необходимо.
+Используйте этот метод, чтобы гарантировать видимость указанной вкладки. Элемент управления "Вкладка" прокручивается, если это необходимо.
 
-## <a name="cmfctabctrlgetdocumenticon"></a><a name="getdocumenticon"></a>CMFCTabCtrl:GetDocumentIcon
+## <a name="cmfctabctrlgetdocumenticon"></a><a name="getdocumenticon"></a> CMFCTabCtrl:: Жетдокументикон
 
-Извлекает изображение, связанное со вкладкой, во всплывающем меню окон с вкладками.
+Извлекает изображение, связанное с вкладкой, во всплывающем меню окон с вкладками.
 
 ```
 static HICON __stdcall GetDocumentIcon(UINT nCmdID);
@@ -453,16 +454,16 @@ static HICON __stdcall GetDocumentIcon(UINT nCmdID);
 
 ### <a name="parameters"></a>Параметры
 
-*nCmdID*<br/>
-(в) Идентификатор команды вкладки во всплывающем меню окон с вкладками.
+*нкмдид*<br/>
+окне Идентификатор команды вкладки во всплывающем меню окон с вкладками.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Ручка изображения биткарты.
+Маркер растрового изображения.
 
-## <a name="cmfctabctrlgetfirstvisibletabnum"></a><a name="getfirstvisibletabnum"></a>CMFCTabCtrl::GetFirstVisibleTabNum
+## <a name="cmfctabctrlgetfirstvisibletabnum"></a><a name="getfirstvisibletabnum"></a> CMFCTabCtrl:: Жетфирствисиблетабнум
 
-Извлекает индекс первой вкладки, видимый в текущем элементе управления вкладки.
+Извлекает индекс первой вкладки, видимой в текущем элементе управления "Вкладка".
 
 ```
 virtual int GetFirstVisibleTabNum() const;
@@ -470,15 +471,15 @@ virtual int GetFirstVisibleTabNum() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Индекс на нулевой основе вкладки в управлении вкладкой.
+Отсчитываемый от нуля индекс вкладки в элементе управления "Вкладка".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте этот метод только тогда, когда элемент управления вкладками отображается в стиле Microsoft OneNote. Для определения стиля используйте метод [CMFCTabCtrl::IsOneNoteStyle.](#isonenotestyle)
+Используйте этот метод только в том случае, если элемент управления "Вкладка" отображается в стиле Microsoft OneNote. Чтобы определить стиль, используйте метод [CMFCTabCtrl:: исоненотестиле](#isonenotestyle) .
 
-## <a name="cmfctabctrlgetresizemode"></a><a name="getresizemode"></a>CMFCTabCtrl:GetResizemode
+## <a name="cmfctabctrlgetresizemode"></a><a name="getresizemode"></a> CMFCTabCtrl:: Жетресиземоде
 
-Извлекает значение, очеркивавкоторое, как можно переоценить текущий элемент управления вкладками.
+Извлекает значение, указывающее, как можно изменить размер текущего элемента управления "Вкладка".
 
 ```
 ResizeMode GetResizeMode() const;
@@ -486,11 +487,11 @@ ResizeMode GetResizeMode() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Одно из `CMFCTabCtrl::ResizeMode` значений перечисления, которое определяет, как можно переоценить элементуправления вкладок. Список возможных значений можно узнать в разделе Замечания [cmFCTabCtrl::SetResizeMode.](#setresizemode)
+Одно из `CMFCTabCtrl::ResizeMode` значений перечисления, указывающее, как можно изменить размер элемента управления "Вкладка". Список возможных значений см. в разделе "Примечания" метода [CMFCTabCtrl:: сетресиземоде](#setresizemode) .
 
-## <a name="cmfctabctrlgetscrollbar"></a><a name="getscrollbar"></a>CMFCTabCtrl:GetScrollBar
+## <a name="cmfctabctrlgetscrollbar"></a><a name="getscrollbar"></a> CMFCTabCtrl:: ScrollBar
 
-Извлекает указатель на объект панели прокрутки, связанный с управлением вкладками.
+Получает указатель на объект полосы прокрутки, связанный с элементом управления "Вкладка".
 
 ```
 CScrollBar* GetScrollBar();
@@ -498,15 +499,15 @@ CScrollBar* GetScrollBar();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на объект прокрутки или NULL, если управление вкладками не было создано с помощью STYLE_FLAT_SHARED_HORZ_SCROLL стиля.
+Указатель на объект ScrollBar или значение NULL, если элемент управления "Вкладка" не был создан с помощью стиля STYLE_FLAT_SHARED_HORZ_SCROLL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте этот метод для доступа к встроенной панели управления прокрутки. Объект панели прокрутки создается только тогда, когда элемент управления вкладками имеет STYLE_FLAT_SHARED_HORZ_SCROLL стиль.
+Используйте этот метод для доступа к внедренной полосе прокрутки элемента управления вкладки. Объект полосы прокрутки создается только в том случае, если элемент управления "Вкладка" имеет стиль STYLE_FLAT_SHARED_HORZ_SCROLL.
 
-## <a name="cmfctabctrlgettabarea"></a><a name="gettabarea"></a>CMFCTabCtrl:GetTabArea
+## <a name="cmfctabctrlgettabarea"></a><a name="gettabarea"></a> CMFCTabCtrl:: Жеттабареа
 
-Извлекает прямоугольник области вкладки в верхней или нижней части управления вкладки.
+Извлекает ограничивающий прямоугольник области метки вкладки в верхней или нижней части элемента управления "Вкладка".
 
 ```cpp
 void GetTabArea(
@@ -517,18 +518,18 @@ void GetTabArea(
 ### <a name="parameters"></a>Параметры
 
 *rectTabAreaTop*<br/>
-(ваут) Когда этот метод возвращается, эта ссылка содержит прямоугольник, который граничит с верхней областью метки вкладки. Прямоугольник находится в координатах клиента. Эта ссылка пуста, если в верхней части элемента управления вкладки не существует область метки вкладок.
+заполняет При возврате из этого метода эта ссылка содержит прямоугольник, ограничивающий область подписи верхней вкладки. Прямоугольник находится в клиентских координатах. Эта ссылка пуста, если в верхней части элемента управления "Вкладка" не существует области меток табуляции.
 
 *rectTabAreaBottom*<br/>
-(ваут) Когда этот метод возвращается, эта ссылка содержит прямоугольник, который граничит с областью нижней метки вкладки. Прямоугольник находится в координатах клиента. Эта ссылка пуста, если в нижней части элемента управления вкладки не существует область метки вкладок.
+заполняет При возврате из этого метода эта ссылка содержит прямоугольник, ограничивающий нижнюю область подписи вкладки. Прямоугольник находится в клиентских координатах. Эта ссылка пуста, если в нижней части элемента управления "Вкладка" не существует области меток табуляции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте этот метод для определения размера и положения области вкладки в окне вкладки.
+Этот метод используется для определения размера и расположения области вкладки в окне с вкладками.
 
-## <a name="cmfctabctrlgettabmaxwidth"></a><a name="gettabmaxwidth"></a>CMFCTabCtrl:GetTabMaxWidth
+## <a name="cmfctabctrlgettabmaxwidth"></a><a name="gettabmaxwidth"></a> CMFCTabCtrl:: Жеттабмаксвидс
 
-Извлекает максимальную ширину вкладки.
+Возвращает максимальную ширину вкладки.
 
 ```
 int GetTabMaxWidth() const;
@@ -536,15 +537,15 @@ int GetTabMaxWidth() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Максимальная ширина вкладки, в пикселях. Если значение возврата 0, ширина вкладки не ограничена.
+Максимальная ширина вкладки в пикселях. Если возвращаемое значение равно 0, то ширина табуляции не ограничена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте метод [CMFCTabCtrl::SetTabMaxWidth](#settabmaxwidth) для установки максимальной ширины вкладок.
+Чтобы задать максимальную ширину табуляции, используйте метод [CMFCTabCtrl:: сеттабмаксвидс](#settabmaxwidth) .
 
-## <a name="cmfctabctrlgettabsheight"></a><a name="gettabsheight"></a>CMFCTabCtrl:GetTabsHeight
+## <a name="cmfctabctrlgettabsheight"></a><a name="gettabsheight"></a> CMFCTabCtrl:: Жеттабшеигхт
 
-Извлекает высоту области вкладки текущего элемента управления вкладкой.
+Получает высоту области вкладок текущего элемента управления "Вкладка".
 
 ```
 virtual int GetTabsHeight() const;
@@ -552,11 +553,11 @@ virtual int GetTabsHeight() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Высота области вкладки, если какая-либо вкладка видна, или равна нулю, если не видна вкладка.
+Высота области вкладки, если видна какая-либо вкладка, или ноль, если вкладка не видна.
 
-## <a name="cmfctabctrlgettabsrect"></a><a name="gettabsrect"></a>CMFCTabCtrl:GetTabsRect
+## <a name="cmfctabctrlgettabsrect"></a><a name="gettabsrect"></a> CMFCTabCtrl:: Жеттабсрект
 
-Извлекает прямоугольник, который связывает область вкладки текущего элемента управления вкладками.
+Извлекает прямоугольник, ограничивающий область вкладок текущего элемента управления "Вкладка".
 
 ```
 virtual void GetTabsRect(CRect& rect) const;
@@ -565,11 +566,11 @@ virtual void GetTabsRect(CRect& rect) const;
 ### <a name="parameters"></a>Параметры
 
 *rect*<br/>
-(ваут) При возвращении этого метода параметр *прямой кишке* содержит прямоугольник, который связывает область вкладки.
+заполняет При возврате из этого метода параметр *Rect* содержит прямоугольник, ограничивающий область вкладки.
 
-## <a name="cmfctabctrlgetwndarea"></a><a name="getwndarea"></a>CMFCTabCtrl:GetWndArea
+## <a name="cmfctabctrlgetwndarea"></a><a name="getwndarea"></a> CMFCTabCtrl:: Жетвндареа
 
-Извлекает границу области клиента текущего элемента управления вкладки.
+Извлекает границу клиентской области текущего элемента управления "Вкладка".
 
 ```cpp
 void GetWndArea(CRect& rect) const;
@@ -578,25 +579,25 @@ void GetWndArea(CRect& rect) const;
 ### <a name="parameters"></a>Параметры
 
 *rect*<br/>
-(в, вне) При возврате этого метода этот параметр содержит прямоугольник, который связывает текущий элемент управления вкладки.
+[вход, выход] При возврате из этого метода этот параметр содержит прямоугольник, ограничивающий текущий элемент управления "Вкладка".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctabctrlhideactivewindowhorzscrollbar"></a><a name="hideactivewindowhorzscrollbar"></a>CMFCTabCtrl::HideActiveWindowHorzScrollBar
+## <a name="cmfctabctrlhideactivewindowhorzscrollbar"></a><a name="hideactivewindowhorzscrollbar"></a> CMFCTabCtrl:: Хидеактивевиндовхорзскроллбар
 
-Прячет горизонтальную панель прокрутки, если таковые имеется, в активном окне.
+Скрывает горизонтальную полосу прокрутки (если она есть) в активном окне.
 
 ```cpp
 void HideActiveWindowHorzScrollBar();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте этот метод, чтобы предотвратить мигание управления вкладками при переключении между страницами управления вкладками.
+Используйте этот метод, чтобы предотвратить мигание элемента управления "Вкладка" при переключении пользователя между страницами элементов управления "Вкладка".
 
-## <a name="cmfctabctrlhideinactivewindow"></a><a name="hideinactivewindow"></a>CMFCTabCtrl:HideInactiveWindow
+## <a name="cmfctabctrlhideinactivewindow"></a><a name="hideinactivewindow"></a> CMFCTabCtrl:: Хидеинактивевиндов
 
-Определяет, отображает ли фреймворк неактивные окна управления вкладками.
+Указывает, отображаются ли в платформе неактивные окна управления вкладки.
 
 ```cpp
 void HideInactiveWindow(BOOL bHide = TRUE);
@@ -605,13 +606,13 @@ void HideInactiveWindow(BOOL bHide = TRUE);
 ### <a name="parameters"></a>Параметры
 
 *bHide*<br/>
-(в) TRUE не отображать неактивное окно; FALSE для отображения неактивного окна. Значение по умолчанию — TRUE.
+окне Значение TRUE, чтобы не отображать неактивное окно; Значение FALSE для вывода неактивного окна. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctabctrlhidenotabs"></a><a name="hidenotabs"></a>CMFCTabCtrl:HideNoTabs
+## <a name="cmfctabctrlhidenotabs"></a><a name="hidenotabs"></a> CMFCTabCtrl:: Хиденотабс
 
-Позволяет или отводит рисунок области вкладок, если нет видимых вкладок.
+Включает или отключает рисование области вкладки, если нет видимых вкладок.
 
 ```cpp
 void HideNoTabs(BOOL bHide=TRUE);
@@ -620,13 +621,13 @@ void HideNoTabs(BOOL bHide=TRUE);
 ### <a name="parameters"></a>Параметры
 
 *bHide*<br/>
-(в) TRUE для включения в область вкладки; FALSE отключить рисунок. Значение по умолчанию — TRUE.
+окне Значение TRUE, чтобы включить прорисовку области вкладок; Значение FALSE, чтобы отключить рисование. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctabctrlhidesingletab"></a><a name="hidesingletab"></a>CMFCTabCtrl::HideSingleTab
+## <a name="cmfctabctrlhidesingletab"></a><a name="hidesingletab"></a> CMFCTabCtrl:: Хидесинглетаб
 
-Позволяет или отводит рисунок вкладки, если есть одно окно вкладки.
+Включает или отключает Рисование вкладок при наличии одного окна с вкладками.
 
 ```
 virtual void HideSingleTab(BOOL bHide=TRUE);
@@ -635,13 +636,13 @@ virtual void HideSingleTab(BOOL bHide=TRUE);
 ### <a name="parameters"></a>Параметры
 
 *bHide*<br/>
-(в) TRUE, чтобы не рисовать вкладку для одного окна вкладки; FALSE нарисовать одну вкладку. Значение по умолчанию является правдой.
+окне Значение TRUE, чтобы не нарисовать вкладку для одного окна с вкладками; Значение FALSE, чтобы нарисовать одну вкладку. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctabctrlisactiveinmditabgroup"></a><a name="isactiveinmditabgroup"></a>CMFCTabCtrl::IsActiveInMDItabGroup
+## <a name="cmfctabctrlisactiveinmditabgroup"></a><a name="isactiveinmditabgroup"></a> CMFCTabCtrl:: Исактивеинмдитабграуп
 
-Указывает, является ли текущая вкладка управления вкладкой активной вкладкой в группе вкладок интерфейса несколько документов.
+Указывает, является ли текущая вкладка элемента управления "Вкладка" активной вкладкой в группе вкладок многодокументного интерфейса.
 
 ```
 BOOL IsActiveInMDITabGroup() const;
@@ -649,15 +650,15 @@ BOOL IsActiveInMDITabGroup() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если текущая вкладка управления вкладкой является активной вкладкой в группе вкладок MDI; в противном случае, FALSE.
+Значение TRUE, если текущая вкладка элемента управления "Вкладка" является активной вкладкой в группе вкладок MDI. в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Можно организовать несколько окон документов в вертикальные или горизонтальные группы вкладок и легко перетасовать документы из одной группы вкладок в другую.
+Можно организовать несколько окон документов в вертикальную или горизонтальную группу вкладок и легко переносить документы из одной группы вкладок в другую.
 
-## <a name="cmfctabctrlisactivetabboldfont"></a><a name="isactivetabboldfont"></a>CMFCTabCtrl::IsActiveTabBoldFont
+## <a name="cmfctabctrlisactivetabboldfont"></a><a name="isactivetabboldfont"></a> CMFCTabCtrl:: Исактиветабболдфонт
 
-Указывает, отображается ли текст активной вкладки жирным шрифтом.
+Указывает, отображается ли текст активной вкладки с полужирным шрифтом.
 
 ```
 BOOL IsActiveTabBoldFont() const;
@@ -665,15 +666,15 @@ BOOL IsActiveTabBoldFont() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если активная вкладка отображается с помощью жирного шрифта; в противном случае, FALSE.
+Значение TRUE, если активная вкладка отображается с использованием полужирного шрифта; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте метод [CMFCTabCtrl::SetActiveTabBoldFont](#setactivetabboldfont) для изменения активного шрифта вкладок.
+Чтобы изменить шрифт активной вкладки, используйте метод [CMFCTabCtrl:: сетактиветабболдфонт](#setactivetabboldfont) .
 
-## <a name="cmfctabctrlisactivetabclosebutton"></a><a name="isactivetabclosebutton"></a>CMFCTabCtrl::IsActiveTabCloseButton
+## <a name="cmfctabctrlisactivetabclosebutton"></a><a name="isactivetabclosebutton"></a> CMFCTabCtrl:: Исактиветабклосебуттон
 
-Указывает, отображается ли кнопка «Закрыть» **(X)** на активной вкладке или в правом верхнем углу области вкладки.
+Указывает, отображается ли кнопка закрытия ( **X**) на активной вкладке или в правом верхнем углу области вкладки.
 
 ```
 virtual BOOL IsActiveTabCloseButton() const;
@@ -681,13 +682,13 @@ virtual BOOL IsActiveTabCloseButton() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если кнопка "Закрыть" отображается на активной вкладке; FALSE, если кнопка "Закрыть" отображается в верхнем правом углу области вкладки.
+Значение TRUE, если кнопка Закрыть отображается на активной вкладке; Значение FALSE, если кнопка Закрыть отображается в правом верхнем углу области вкладки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctabctrlisdrawframe"></a><a name="isdrawframe"></a>CMFCTabCtrl::IsdrawFrame
+## <a name="cmfctabctrlisdrawframe"></a><a name="isdrawframe"></a> CMFCTabCtrl:: Исдравфраме
 
-Указывает, рисует ли окно вкладок прямоугольник кадра вокруг встроенных стекол.
+Указывает, рисует ли окно с вкладками прямоугольник фрейма вокруг встроенных панелей.
 
 ```
 BOOL IsDrawFrame() const;
@@ -695,15 +696,15 @@ BOOL IsDrawFrame() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если прямоугольник кадра нарисован; в противном случае, FALSE.
+Значение TRUE, если рисуется прямоугольник фрейма; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте метод [CMFCTabCtrl::SetDrawFrame](#setdrawframe) для включения или отключать рисунок прямоугольника кадра.
+Используйте метод [CMFCTabCtrl:: сетдравфраме](#setdrawframe) , чтобы включить или отключить рисование прямоугольника фрейма.
 
-## <a name="cmfctabctrlisflatframe"></a><a name="isflatframe"></a>CMFCTabCtrl::IsFlatFrame
+## <a name="cmfctabctrlisflatframe"></a><a name="isflatframe"></a> CMFCTabCtrl:: Исфлатфраме
 
-Указывает, является ли рамка вокруг области вкладки плоской или 3D.
+Указывает, является ли рамка вокруг области табуляции плоской или трехмерной.
 
 ```
 BOOL IsFlatFrame() const;
@@ -711,15 +712,15 @@ BOOL IsFlatFrame() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если рамка вокруг вкладки области плоская; FALSE, если рамка трехмерная.
+Значение TRUE, если рамка вокруг области вкладки является плоской; Значение FALSE, если кадр является трехмерным.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте метод [CMFCTabCtrl::SetFlatFrame,](#setflatframe) чтобы изменить способ рисовать кадр.
+Чтобы изменить способ прорисовки кадра, используйте метод [CMFCTabCtrl:: сетфлатфраме](#setflatframe) .
 
-## <a name="cmfctabctrlisflattab"></a><a name="isflattab"></a>CMFCTabCtrl::IsFlatTab
+## <a name="cmfctabctrlisflattab"></a><a name="isflattab"></a> CMFCTabCtrl:: Исфлаттаб
 
-Указывает, является ли внешний вид вкладок в текущем элементе управления вкладками плоским или нет.
+Указывает, является ли внешний вид вкладок в текущем элементе управления "плоский".
 
 ```
 virtual BOOL IsFlatTab() const;
@@ -727,11 +728,11 @@ virtual BOOL IsFlatTab() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если внешний вид вкладок в текущем управлении вкладке является плоской; в противном случае, FALSE.
+Значение TRUE, если внешний вид вкладок в текущем элементе управления "Вкладка" является плоским; в противном случае — значение FALSE.
 
-## <a name="cmfctabctrlisleftrightrounded"></a><a name="isleftrightrounded"></a>CMFCTabCtrl::IsLeftRightRounded
+## <a name="cmfctabctrlisleftrightrounded"></a><a name="isleftrightrounded"></a> CMFCTabCtrl:: Ислефтригхтраундед
 
-Указывает, округляется ли внешний вид левой и правой стороны вкладки в текущем элементе управления вкладкой.
+Указывает, округлен ли вид левой и правой части вкладки в текущем элементе управления "Вкладка".
 
 ```
 virtual BOOL IsLeftRightRounded() const;
@@ -739,11 +740,11 @@ virtual BOOL IsLeftRightRounded() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если стороны каждой вкладки округлены; в противном случае, FALSE.
+Значение TRUE, если стороны каждой вкладки округляются; в противном случае — значение FALSE.
 
-## <a name="cmfctabctrlismditabgroup"></a><a name="ismditabgroup"></a>CMFCTabCtrl::IsMDITabGroup
+## <a name="cmfctabctrlismditabgroup"></a><a name="ismditabgroup"></a> CMFCTabCtrl:: Исмдитабграуп
 
-Указывает, содержится ли текущее управление вкладками в клиентской области окна интерфейса с несколькими документами.
+Указывает, содержится ли текущий элемент управления "Вкладка" в клиентской области окна интерфейса с несколькими документами.
 
 ```
 virtual BOOL IsMDITabGroup() const;
@@ -751,11 +752,11 @@ virtual BOOL IsMDITabGroup() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если текущий контроль вкладок находится в окне клиентской области MDI; в противном случае, FALSE.
+Значение TRUE, если текущий элемент управления "Вкладка" находится в окне клиентской области MDI; в противном случае — значение FALSE.
 
-## <a name="cmfctabctrlisonenotestyle"></a><a name="isonenotestyle"></a>CMFCTabCtrl::IsoneNoteStyle
+## <a name="cmfctabctrlisonenotestyle"></a><a name="isonenotestyle"></a> CMFCTabCtrl:: Исоненотестиле
 
-Указывается, отображается ли текущее управление вкладками в стиле Microsoft OneNote.
+Указывает, отображается ли текущий элемент управления "Вкладка" в стиле Microsoft OneNote.
 
 ```
 virtual BOOL IsOneNoteStyle() const;
@@ -763,11 +764,11 @@ virtual BOOL IsOneNoteStyle() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если управление вкладками отображается в стиле Microsoft OneNote; в противном случае, FALSE.
+Значение TRUE, если элемент управления "Вкладка" отображается в стиле Microsoft OneNote; в противном случае — значение FALSE.
 
-## <a name="cmfctabctrlissharedscroll"></a><a name="issharedscroll"></a>CMFCTabCtrl::IsSharedScroll
+## <a name="cmfctabctrlissharedscroll"></a><a name="issharedscroll"></a> CMFCTabCtrl:: Исшаредскролл
 
-Указывает, имеет ли текущий элемент управления вкладками панель прокрутки, которая может прокручивать свои вкладки в группе.
+Указывает, есть ли у текущего элемента управления "Вкладка" полоса прокрутки, которая может прокручивать ее вкладки как группу.
 
 ```
 BOOL IsSharedScroll() const;
@@ -775,15 +776,15 @@ BOOL IsSharedScroll() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если управление вкладками имеет общую панель прокрутки; в противном случае, FALSE.
+Значение TRUE, если элемент управления "Вкладка" имеет общую полосу прокрутки; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод возвращает TRUE, если параметр *стиля* [CMFCTabCtrl::Создание](#create) метода является STYLE_FLAT_SHARED_HORZ_SCROLL.
+Этот метод возвращает значение TRUE, если параметр *Style* метода [CMFCTabCtrl:: Create](#create) является STYLE_FLAT_SHARED_HORZ_SCROLL.
 
-## <a name="cmfctabctrlistabdocumentsmenu"></a><a name="istabdocumentsmenu"></a>CMFCTabCtrl::IstabDocumentsMenu
+## <a name="cmfctabctrlistabdocumentsmenu"></a><a name="istabdocumentsmenu"></a> CMFCTabCtrl:: Истабдокументсмену
 
-Указывает, отображает ли управление вкладкой кнопки прокрутки или кнопку, отображая меню окон с вкладками.
+Указывает, отображает ли элемент управления "Вкладка" кнопки прокрутки или кнопку, отображающую меню окон с вкладками.
 
 ```
 BOOL IsTabDocumentsMenu() const;
@@ -791,15 +792,15 @@ BOOL IsTabDocumentsMenu() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если окна вкладок прокручиваются с помощью всплывающее меню таблеток оконного метки; FALSE, если окна вкладок прокручиваются с помощью кнопки прокрутки вперед и назад.
+TRUE, если окна с вкладками прокручивается с помощью всплывающего меню меток окон с вкладками; Значение FALSE, если окна с вкладками прокручивается с помощью кнопок вперед и назад.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте метод [CMFCTabCtrl::EnableTabDocumentsMenu](#enabletabdocumentsmenu) для определения метода прокрутки табловых окон.
+Используйте метод [CMFCTabCtrl:: енаблетабдокументсмену](#enabletabdocumentsmenu) , чтобы указать метод прокрутки окон с вкладками.
 
-## <a name="cmfctabctrlisvs2005style"></a><a name="isvs2005style"></a>CMFCTabCtrl::IsVS2005Стиль
+## <a name="cmfctabctrlisvs2005style"></a><a name="isvs2005style"></a> CMFCTabCtrl:: IsVS2005Style
 
-Указывает, нарисованы ли вкладки по стилю Visual Studio 2005.
+Указывает, рисуются ли вкладки с использованием стиля Visual Studio 2005.
 
 ```
 virtual BOOL IsVS2005Style() const;
@@ -807,27 +808,27 @@ virtual BOOL IsVS2005Style() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если вкладки нарисованы с использованием стиля Visual Studio 2005; в противном случае, FALSE.
+TRUE, если вкладки рисуются с использованием стиля Visual Studio 2005; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте параметр *стиля* [CMFCTabCtrl::Создание метода,](#create) чтобы указать, как нарисованы вкладки.
+Используйте параметр *Style* метода [CMFCTabCtrl:: Create](#create) , чтобы указать способ рисования вкладок.
 
-## <a name="cmfctabctrlm_benableactivate"></a><a name="m_benableactivate"></a>CMFCTabCtrl::m_bEnableActivate
+## <a name="cmfctabctrlm_benableactivate"></a><a name="m_benableactivate"></a> CMFCTabCtrl:: m_bEnableActivate
 
-Предотвращает потерю фокуса активного представления при вставке и включении новой вкладки.
+Предотвращает потерю фокуса в активном представлении при вставке и включении новой вкладки.
 
 ```
 static BOOL m_bEnableActivate;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Фокус обычно принимается новым окном вкладок, когда вкладка вставляется и становится активной. Установите `CMFCTabCtrl::m_bEnableActivate` переменную участника в FALSE, чтобы сохранить исходный фокус. Значение по умолчанию — TRUE.
+Фокус обычно принимается новым окном с вкладками, когда вкладка вставлена и становится активной. Задайте `CMFCTabCtrl::m_bEnableActivate` для переменной члена значение false, чтобы сохранился исходный фокус. Значение по умолчанию — TRUE.
 
-## <a name="cmfctabctrlmodifytabstyle"></a><a name="modifytabstyle"></a>CMFCTabCtrl::ModifyTabStyle
+## <a name="cmfctabctrlmodifytabstyle"></a><a name="modifytabstyle"></a> CMFCTabCtrl:: Модифитабстиле
 
-Определяет внешний вид вкладок в текущем управлении вкладками.
+Задает внешний вид вкладок в текущем элементе управления "Вкладка".
 
 ```
 BOOL ModifyTabStyle(Style style);
@@ -836,7 +837,7 @@ BOOL ModifyTabStyle(Style style);
 ### <a name="parameters"></a>Параметры
 
 *style*<br/>
-(в) Одно из значений перечисления, которое определяет внешний вид управления вкладками. Для получения дополнительной информации смотрите таблицу в Замечаниях.
+окне Одно из значений перечисления, определяющее внешний вид элемента управления "Вкладка". Дополнительные сведения см. в таблице в разделе "Примечания".
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -844,22 +845,22 @@ BOOL ModifyTabStyle(Style style);
 
 ### <a name="remarks"></a>Remarks
 
-Значение параметра *стиля* может быть одним `CMFCTabCtrl::Style` из следующих перечислений.
+Значением параметра *Style* может быть одно из следующих `CMFCTabCtrl::Style` перечислений.
 
 |Имя|Описание|
 |----------|-----------------|
-|STYLE_3D|Отображает трехмерные прямоугольные вкладки с круглыми углами.|
-|STYLE_3D_ONENOTE|Отображает трехмерные вкладки, которые имеют одну вертикальную сторону и одну наклонную сторону и имеют закругленные углы.|
-|STYLE_3D_ROUNDED|Отображает трехмерные вкладки с наклонными сторонами и закругленные углы.|
-|STYLE_3D_ROUNDED_SCROLL|Отображает трехмерные вкладки с наклонными сторонами и закругленные углы. Если вкладок больше, чем может отображаться одновременно, в фреймворке отображается стрелка выпадения и меню вкладок, чтобы сделать их активными.|
-|STYLE_3D_SCROLLED|Отображает трехмерные прямоугольные вкладки. Если вкладок больше, чем может отображаться одновременно, в фреймворке отображается стрелка выпадения и меню вкладок, чтобы сделать их активными.|
-|STYLE_3D_VS2005|Отображает трехмерные, округлые вкладки, которые имеют одну наклонную сторону и одну вертикальную сторону.|
-|STYLE_FLAT|Отображает двухмерные вкладки, наклонные в левой и правой сторонах.|
-|STYLE_FLAT_SHARED_HORZ_SCROLL|Отображает двухмерные вкладки. Если вкладок больше, чем может отображаться одновременно, фреймворк отображает стрелки прокрутки на концах области вкладки.|
+|STYLE_3D|Отображает трехмерные прямоугольные вкладки, имеющие скругленные углы.|
+|STYLE_3D_ONENOTE|Отображает трехмерные вкладки с одной вертикальной и одной наклонной стороной и скругленными углами.|
+|STYLE_3D_ROUNDED|Отображает трехмерные вкладки с наклонными и скругленными углами.|
+|STYLE_3D_ROUNDED_SCROLL|Отображает трехмерные вкладки с наклонными и скругленными углами. Если количество вкладок больше, чем может быть отображено одновременно, платформа выводит стрелку раскрывающегося списка и меню вкладок, чтобы сделать активными.|
+|STYLE_3D_SCROLLED|Отображает трехмерные прямоугольные вкладки. Если количество вкладок больше, чем может быть отображено одновременно, платформа выводит стрелку раскрывающегося списка и меню вкладок, чтобы сделать активными.|
+|STYLE_3D_VS2005|Отображает трехмерные скругленные вкладки с одной наклонной стороной и одной вертикальной стороной.|
+|STYLE_FLAT|Отображает двухмерные вкладки с наклоном левой и правой частей.|
+|STYLE_FLAT_SHARED_HORZ_SCROLL|Отображает двумерные вкладки. Если количество вкладок больше, чем может быть отображено одновременно, платформа отображает стрелки прокрутки в конце области вкладки.|
 
-## <a name="cmfctabctrlondragenter"></a><a name="ondragenter"></a>CMFCTabCtrl:OndragEnter
+## <a name="cmfctabctrlondragenter"></a><a name="ondragenter"></a> CMFCTabCtrl:: OnDragEnter
 
-Вызывается фреймворком во время операции перетаскивания и падения, когда курсор впервые входит в окно текущего элемента управления вкладки.
+Вызывается платформой во время операции перетаскивания, когда курсор впервые входит в окно текущего элемента управления "Вкладка".
 
 ```
 virtual DROPEFFECT OnDragEnter(
@@ -871,27 +872,27 @@ virtual DROPEFFECT OnDragEnter(
 ### <a name="parameters"></a>Параметры
 
 *pDataObject*<br/>
-(в) Указывает на объект данных, содержащий данные, перетаскивающие пользователем.
+окне Указывает на объект данных, который содержит данные, перетаскиваемые пользователем.
 
-*dwKeyState*<br/>
-(в) Содержит состояние ключей модификатора. Этот параметр представляет собой необоснованную комбинацию (ИЛИ) следующих значений: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON и MK_RBUTTON. Для получения дополнительной **информации** смотрите раздел Параметры сообщений [о входе мыши](/windows/win32/inputdev/about-mouse-input).
+*двкэйстате*<br/>
+окне Содержит состояние клавиш модификатора. Этот параметр является побитовым сочетанием (или) следующих значений: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON и MK_RBUTTON. Дополнительные сведения см. в разделе **Параметры сообщения** статьи [о вводе](/windows/win32/inputdev/about-mouse-input)с помощью мыши.
 
-*Точки*<br/>
-(в) Содержит текущее местоположение курсора в координатах клиента.
+*точки*<br/>
+окне Содержит текущее расположение курсора в координатах клиента.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Всегда DROPEFFECT_NONE, что означает, что цель падения не может принимать данные.
+Всегда DROPEFFECT_NONE, что означает, что цель перетаскивания не может принимать данные.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте этот метод для поддержки операции перетаскивания. Переопределить этот метод для реализации собственного пользовательского поведения.
+Используйте этот метод для поддержки операции перетаскивания. Переопределите этот метод, чтобы реализовать пользовательское поведение.
 
-По умолчанию этот `CMFCTabCtrl::OnDragOver`метод вызывает только вызовы, которые всегда возвращаются DROPEFFECT_NONE.
+По умолчанию этот метод вызывает только `CMFCTabCtrl::OnDragOver` , который всегда возвращает DROPEFFECT_NONE.
 
-## <a name="cmfctabctrlondragover"></a><a name="ondragover"></a>CMFCTabCtrl::Ондраговер
+## <a name="cmfctabctrlondragover"></a><a name="ondragover"></a> CMFCTabCtrl:: OnDragOver
 
-Вызывается фреймворком во время операции перетаскивания, когда мышь перемещается через окно целевой выпадения.
+Вызывается платформой во время операции перетаскивания при перемещении мыши по конечному окну перетаскивания.
 
 ```
 virtual DROPEFFECT OnDragOver(
@@ -903,25 +904,25 @@ virtual DROPEFFECT OnDragOver(
 ### <a name="parameters"></a>Параметры
 
 *pDataObject*<br/>
-(в) Указатель на объект [COleDataObject,](../../mfc/reference/coledataobject-class.md) который перетаскивается по целевой цели падения.
+окне Указатель на объект [коледатаобжект](../../mfc/reference/coledataobject-class.md) , который перетаскивается на целевой объект перетаскивания.
 
-*dwKeyState*<br/>
-(в) Состояние клавиш модификатора, которое представляет собой битную комбинацию (ИЛИ) MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON и MK_RBUTTON. Для получения дополнительной информации см. [About Mouse Input](/windows/win32/inputdev/about-mouse-input)
+*двкэйстате*<br/>
+окне Состояние клавиш-модификаторов, которое является побитовым сочетанием (или) MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON и MK_RBUTTON. Дополнительные сведения см. в разделе "Параметры сообщения" статьи [о вводе](/windows/win32/inputdev/about-mouse-input)с помощью мыши.
 
-*Точки*<br/>
-(в) Текущее положение мыши.
+*точки*<br/>
+окне Текущее расположение мыши.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Всегда DROPEFFECT_NONE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переопределить этот метод с пользовательской реализации. Для получения дополнительной [информации](../../mfc/reference/cview-class.md#ondragover) см.
+Переопределите этот метод собственной реализацией. Дополнительные сведения см. в описании метода [CView:: OnDragOver](../../mfc/reference/cview-class.md#ondragover) .
 
-## <a name="cmfctabctrlonshowtabdocumentsmenu"></a><a name="onshowtabdocumentsmenu"></a>CMFCTabCtrl::OnshowtabDocumentsMenu
+## <a name="cmfctabctrlonshowtabdocumentsmenu"></a><a name="onshowtabdocumentsmenu"></a> CMFCTabCtrl:: Оншовтабдокументсмену
 
-Отображает всплывающее меню окон с вкладками, ждет, пока пользователь выберет вкладку, и делает выбранную вкладку активной вкладкой.
+Отображает всплывающее меню окон с вкладками, ожидает, пока пользователь не выберет вкладку, и сделает выбранную вкладку активной.
 
 ```
 virtual void OnShowTabDocumentsMenu(CPoint point);
@@ -929,14 +930,14 @@ virtual void OnShowTabDocumentsMenu(CPoint point);
 
 ### <a name="parameters"></a>Параметры
 
-*Точки*<br/>
-(в) Координаты, где отобразить всплывающее меню.
+*точки*<br/>
+окне Координаты места отображения всплывающего меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctabctrlsetactiveinmditabgroup"></a><a name="setactiveinmditabgroup"></a>CMFCTabCtrl::SetActiveInMDItabGroup
+## <a name="cmfctabctrlsetactiveinmditabgroup"></a><a name="setactiveinmditabgroup"></a> CMFCTabCtrl:: Сетактивеинмдитабграуп
 
-Устанавливает текущую вкладку управления вкладкой в качестве активной вкладки в группе вкладок интерфейса документа.
+Устанавливает текущую вкладку элемента управления "Вкладка" как активную вкладку в группе вкладок многодокументного интерфейса.
 
 ```cpp
 void SetActiveInMDITabGroup(BOOL bActive);
@@ -944,14 +945,14 @@ void SetActiveInMDITabGroup(BOOL bActive);
 
 ### <a name="parameters"></a>Параметры
 
-*bАктивный*<br/>
-(в) TRUE, чтобы сделать текущую вкладку активной вкладкой; FALSE, чтобы сделать текущую вкладку неактивной.
+*бактиве*<br/>
+окне Значение TRUE, чтобы сделать текущую вкладку активной. Значение FALSE, чтобы сделать текущую вкладку неактивной.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Можно организовать несколько окон документов в вертикальные или горизонтальные группы вкладок и легко перетасовать документы из одной группы вкладок в другую.
+Можно организовать несколько окон документов в вертикальную или горизонтальную группу вкладок и легко переносить документы из одной группы вкладок в другую.
 
-## <a name="cmfctabctrlsetactivetab"></a><a name="setactivetab"></a>CMFCTabCtrl::SetActiveTab
+## <a name="cmfctabctrlsetactivetab"></a><a name="setactivetab"></a> CMFCTabCtrl:: Сетактиветаб
 
 Активирует вкладку.
 
@@ -962,21 +963,21 @@ virtual BOOL SetActiveTab(int iTab);
 ### <a name="parameters"></a>Параметры
 
 *iTab*<br/>
-(в) Уфиксирует нулевой индекс вкладки для активации.
+окне Указывает начинающийся с нуля индекс вкладки для активации.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если указанная вкладка была активна; FALSE, если указанное значение параметра *iTab* является недействительным.
+Значение TRUE, если указанная вкладка сделана активной; FALSE, если указанное значение параметра *Итаб* недопустимо.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Это отправляет `AFX_WM_CHANGE_ACTIVE_TAB` уведомление в родительское окно и в родительский кадр управления вкладками.
+Это уведомление отправляется `AFX_WM_CHANGE_ACTIVE_TAB` родительскому окну и родительской рамке элемента управления "Вкладка".
 
-Метод `SetActiveTab` автоматически вызывает метод [CMFCTabCtrl::HideActiveWindowHorzScrollBar](#hideactivewindowhorzscrollbar) метод для предотвращения мигания экрана.
+`SetActiveTab`Метод автоматически вызывает метод [CMFCTabCtrl:: хидеактивевиндовхорзскроллбар](#hideactivewindowhorzscrollbar) , чтобы предотвратить мерцание экрана.
 
-## <a name="cmfctabctrlsetactivetabboldfont"></a><a name="setactivetabboldfont"></a>CMFCTabCtrl::SetActiveTabBoldFont
+## <a name="cmfctabctrlsetactivetabboldfont"></a><a name="setactivetabboldfont"></a> CMFCTabCtrl:: Сетактиветабболдфонт
 
-Позволяет или отдает возможности использования смелого шрифта на активных вкладок.
+Включает или отключает использование полужирного шрифта на активных вкладках.
 
 ```cpp
 void SetActiveTabBoldFont(BOOL bIsBold=TRUE);
@@ -984,14 +985,14 @@ void SetActiveTabBoldFont(BOOL bIsBold=TRUE);
 
 ### <a name="parameters"></a>Параметры
 
-*bIsBold*<br/>
-(в) TRUE использовать жирный шрифт для отображения этикетки активной вкладки; FALSE использовать стандартный шрифт для отображения этикетки. Значение по умолчанию — TRUE.
+*бисболд*<br/>
+окне Значение TRUE, чтобы использовать полужирный шрифт для вывода метки активной вкладки; Значение FALSE, чтобы использовать стандартный шрифт для вывода метки. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctabctrlsetdrawframe"></a><a name="setdrawframe"></a>CMFCTabCtrl::SetDrawFrame
+## <a name="cmfctabctrlsetdrawframe"></a><a name="setdrawframe"></a> CMFCTabCtrl:: Сетдравфраме
 
-Определяет, нарисован ли прямоугольник кадра вокруг встроенной панели.
+Указывает, отображается ли прямоугольник фрейма вокруг встроенной панели.
 
 ```cpp
 void SetDrawFrame(BOOL bDraw=TRUE);
@@ -999,14 +1000,14 @@ void SetDrawFrame(BOOL bDraw=TRUE);
 
 ### <a name="parameters"></a>Параметры
 
-*bDraw*<br/>
-(в) TRUE для отображения прямоугольника кадра вокруг встроенного бара; в противном случае, FALSE. Значение по умолчанию — TRUE.
+*бдрав*<br/>
+окне Значение TRUE для вывода прямоугольника фрейма вокруг встроенной панели; в противном случае — значение FALSE. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctabctrlsetflatframe"></a><a name="setflatframe"></a>CMFCTabCtrl::SetFlatFrame
+## <a name="cmfctabctrlsetflatframe"></a><a name="setflatframe"></a> CMFCTabCtrl:: Сетфлатфраме
 
-Определяет, следует ли рисовать плоский или 3D-рамку вокруг области вкладки.
+Указывает, следует ли нарисовать плоский или трехмерный фрейм вокруг области вкладки.
 
 ```cpp
 void SetFlatFrame(
@@ -1016,17 +1017,17 @@ void SetFlatFrame(
 
 ### <a name="parameters"></a>Параметры
 
-*bFlat*<br/>
-(в) TRUE, чтобы нарисовать плоский (2D) кадр вокруг вкладки области; FALSE нарисовать трехмерную (3D) рамку. Значение по умолчанию — TRUE.
+*бфлат*<br/>
+окне Значение TRUE для рисования плоского (2D) кадра вокруг области вкладок; Значение FALSE для рисования трехмерного (трехмерного) кадра. Значение по умолчанию — TRUE.
 
 *bRepaint*<br/>
-(в) TRUE перерисовать окно немедленно; в противном случае, FALSE. Значение по умолчанию — TRUE.
+окне Значение TRUE для немедленного перерисовки окна; в противном случае — значение FALSE. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctabctrlsetimagelist"></a><a name="setimagelist"></a>CMFCTabCtrl:SetImageList
+## <a name="cmfctabctrlsetimagelist"></a><a name="setimagelist"></a> CMFCTabCtrl:: Сетимажелист
 
-Определяет список изображений.
+Задает список изображений.
 
 ```
 virtual BOOL SetImageList(
@@ -1040,30 +1041,30 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
 ### <a name="parameters"></a>Параметры
 
 *uiID*<br/>
-(в) Идентификатор ресурса bitmap, содержащего список изображений.
+окне Идентификатор ресурса точечного рисунка, содержащего список изображений.
 
-*Cx*<br/>
-(в) Ширина каждого изображения, в пикселях. Значение по умолчанию — 15.
+*/CX*<br/>
+окне Ширина каждого изображения в пикселях. Значение по умолчанию — 15.
 
 *clrTransp*<br/>
-(в) Прозрачный цвет изображения. Части изображения, которые этого цвета будут прозрачными. Значение по умолчанию является пурпурный цвет, RGB (255,0,255).
+окне Цвет прозрачного изображения. Части изображения, имеющие этот цвет, будут прозрачными. Значением по умолчанию является пурпурный цвет, RGB (255, 0255).
 
 *hImageList*<br/>
 [in] Дескриптор списка предварительно загруженных изображений.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если этот метод является успешным. FALSE, если управление вкладками создается с помощью плоского стиля или если перегрузка первого метода не может загрузить битную карту, указанную парабитом *uiID.*
+Значение TRUE, если этот метод успешно выполнен. Значение FALSE, если элемент управления "Вкладка" создается с помощью плоского стиля, или если перегрузка первого метода не может загрузить точечный рисунок, указанный параметром *уиид* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте этот метод для настройки списка изображений для управления вкладками. Изображения из списка изображений отображаются рядом с меткой вкладок. Этот метод пересчитывает высоту вкладки таким образом, чтобы размер вкладки содержал как изображение, так и текст.
+Этот метод используется для задания списка изображений для элемента управления "Вкладка". Изображения из списка изображений отображаются рядом с меткой вкладки. Этот метод повторно вычисляет высоту вкладки, чтобы размер вкладки был таким, чтобы вместить как изображение, так и текст.
 
-Используйте метод [CMFCBaseTabCtrl::AddTab,](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) который наследуется элементом управления вкладками, чтобы указать индекс изображения для отображения.
+Используйте метод [CMFCBaseTabCtrl:: аддтаб](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) , наследуемый элементом управления "Вкладка", чтобы указать индекс изображения для вывода.
 
-## <a name="cmfctabctrlsetresizemode"></a><a name="setresizemode"></a>CMFCTabCtrl:SetResizeMode
+## <a name="cmfctabctrlsetresizemode"></a><a name="setresizemode"></a> CMFCTabCtrl:: Сетресиземоде
 
-Определяет, как можно переопрошать текущий элемент управления вкладками, а затем повторно отображать элемент управления.
+Указывает, как можно изменить размер текущего элемента управления "Вкладка", а затем повторно отобразить элемент управления.
 
 ```cpp
 void SetResizeMode(ResizeMode resizeMode);
@@ -1072,21 +1073,21 @@ void SetResizeMode(ResizeMode resizeMode);
 ### <a name="parameters"></a>Параметры
 
 *resizeMode*<br/>
-(в) Одно из `CMFCTabCtrl::ResizeMode` значений перечисления, которое определяет, как можно переоценить элементуправления вкладок. Список возможных значений можно узнать в таблице Remarks.
+окне Одно из `CMFCTabCtrl::ResizeMode` значений перечисления, указывающее, как можно изменить размер элемента управления "Вкладка". Список возможных значений см. в таблице в разделе "Примечания".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Параметр *resizeMode* может быть `ResizeMode` одним из следующих значений перечисления.
+Параметр *resizeMode* может принимать одно из следующих `ResizeMode` значений перечисления.
 
 |Имя|Описание|
 |----------|-----------------|
-|RESIZE_NO|Элемент управления вкладками не может быть уменьшен.|
-|RESIZE_VERT|Управление вкладками можно переуправлять по вертикали, но не по горизонтали.|
-|RESIZE_HORIZ|Управление вкладками можно переоизменять горизонтально, но не вертикально.|
+|RESIZE_NO|Размер элемента управления "Вкладка" изменить нельзя.|
+|RESIZE_VERT|Размер элемента управления "Вкладка" можно изменять по вертикали, но не по горизонтали.|
+|RESIZE_HORIZ|Размер элемента управления "Вкладка" можно изменять по горизонтали, но не по вертикали.|
 
-## <a name="cmfctabctrlsettabmaxwidth"></a><a name="settabmaxwidth"></a>CMFCTabCtrl::SetTabMaxWidth
+## <a name="cmfctabctrlsettabmaxwidth"></a><a name="settabmaxwidth"></a> CMFCTabCtrl:: Сеттабмаксвидс
 
-Уфикует максимальную ширину вкладок в окне вкладок.
+Задает максимальную ширину табуляции в окне с вкладками.
 
 ```cpp
 void SetTabMaxWidth(int nTabMaxWidth);
@@ -1094,16 +1095,16 @@ void SetTabMaxWidth(int nTabMaxWidth);
 
 ### <a name="parameters"></a>Параметры
 
-*nTabMaxWidth*<br/>
-(в) Максимальная ширина вкладки в пикселях.
+*нтабмаксвидс*<br/>
+окне Максимальная ширина табуляции в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте этот метод, чтобы ограничить ширину каждой вкладки в окне вкладок. Этот метод полезен, если вкладки имеют очень длинные метки. Конструктор класса [CMFCTabCtrl](../../mfc/reference/cmfctabctrl-class.md) инициализирует максимальную ширину вкладки до 0, что фактически означает, что ширина не ограничена.
+Используйте этот метод, чтобы ограничить ширину каждой вкладки в окне с вкладками. Этот метод полезен, если знаки табуляции имеют очень длинные метки. Конструктор класса [CMFCTabCtrl](../../mfc/reference/cmfctabctrl-class.md) инициализирует максимальную ширину табуляции равным 0, что фактически означает, что ширина не ограничена.
 
-## <a name="cmfctabctrlstopresize"></a><a name="stopresize"></a>CMFCTabCtrl:СтопРесс
+## <a name="cmfctabctrlstopresize"></a><a name="stopresize"></a> CMFCTabCtrl:: Стопресизе
 
-Прекращает текущую операцию повторного размера на элементе управления вкладки.
+Завершает текущую операцию изменения размера для элемента управления "Вкладка".
 
 ```cpp
 void StopResize(BOOL bCancel);
@@ -1111,12 +1112,12 @@ void StopResize(BOOL bCancel);
 
 ### <a name="parameters"></a>Параметры
 
-*bОтмен*<br/>
-(в) TRUE отказаться от текущей операции восстановления размера; FALSE для завершения текущей операции повторного размера. В любом случае фреймворк перестает рисовать прямоугольник повторного размера.
+*бканцел*<br/>
+окне Значение TRUE, чтобы отменить текущую операцию изменения размера; Значение FALSE для завершения текущей операции изменения размера. В любом случае инфраструктура прекращает рисование прямоугольника изменения размера.
 
-## <a name="cmfctabctrlsynchronizescrollbar"></a><a name="synchronizescrollbar"></a>CMFCTabCtrl::SynchronizeScrollBar
+## <a name="cmfctabctrlsynchronizescrollbar"></a><a name="synchronizescrollbar"></a> CMFCTabCtrl:: Синчронизескроллбар
 
-Рисует горизонтальную панель прокрутки на элементе управления вкладками, которая отображает плоские вкладки.
+Рисует горизонтальную полосу прокрутки на элементе управления "Вкладка", который отображает плоские вкладки.
 
 ```
 BOOL SynchronizeScrollBar(SCROLLINFO* pScrollInfo = NULL);
@@ -1124,20 +1125,20 @@ BOOL SynchronizeScrollBar(SCROLLINFO* pScrollInfo = NULL);
 
 ### <a name="parameters"></a>Параметры
 
-*pScrollInfo*<br/>
-(ваут) Указатель на структуру [SCROLLINFO](/windows/win32/api/winuser/ns-winuser-scrollinfo) или NULL. Когда этот метод возвращается, и если этот параметр не является NULL, структура содержит все параметры панели прокрутки. Значение по умолчанию — NULL.
+*пскроллинфо*<br/>
+заполняет Указатель на структуру [скроллинфо](/windows/win32/api/winuser/ns-winuser-scrollinfo) или значение null. Когда этот метод возвращает значение, а если этот параметр не равен NULL, структура содержит все параметры полосы прокрутки. Значение по умолчанию — NULL.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если этот метод удается; в противном случае, FALSE.
+Значение TRUE, если этот метод завершился с ошибкой; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод влияет только на элемент управления вкладками, который отображает плоские вкладки. Панель прокрутки влияет на все вкладки одновременно.
+Этот метод влияет только на элемент управления "Вкладка", отображающий плоские вкладки. Полоса прокрутки влияет на все вкладки одновременно.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
-[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
-[CMFCBaseTabCtrl Class](../../mfc/reference/cmfcbasetabctrl-class.md)
+[Класс CDockablePane](../../mfc/reference/cdockablepane-class.md)<br/>
+[Класс CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md)

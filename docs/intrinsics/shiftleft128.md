@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __shiftleft128'
 title: __shiftleft128
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __shiftleft128 intrinsic
 ms.assetid: 557b846a-8fb0-469d-91ac-1b1fad80dc2a
-ms.openlocfilehash: 5da9ac81cedbdd24e10eb438892f88510c32ca24
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: e0e1402660c2ddb6f5993e5186302ff489ed864f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218005"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306993"
 ---
 # <a name="__shiftleft128"></a>__shiftleft128
 
@@ -46,15 +47,15 @@ unsigned __int64 __shiftleft128(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__shiftleft128`|X64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Значение *сдвига* всегда равно модулю 64, поэтому, например, при вызове `__shiftleft128(1, 0, 64)`функция переместит `0` младшие биты `0` влево и возвратит большую часть, а не `1` так, как может быть в противном случае.
+Значение *сдвига* всегда равно модулю 64, поэтому, например, при вызове функция переместит `__shiftleft128(1, 0, 64)` младшие `0` биты влево и возвратит большую часть `0` , а не `1` так, как может быть в противном случае.
 
 ## <a name="example"></a>Пример
 
@@ -99,4 +100,4 @@ int main()
 ## <a name="see-also"></a>См. также
 
 [__shiftright128](../intrinsics/shiftright128.md)\
-[Встроенные функции компилятора](../intrinsics/compiler-intrinsics.md)
+[Встроенные объекты компилятора](../intrinsics/compiler-intrinsics.md)
