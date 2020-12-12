@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _close'
 title: _close
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - close function
 - files [C++], closing
 ms.assetid: 4708a329-8acf-4cd9-b7b0-a952e1897247
-ms.openlocfilehash: c642820bf1bc2e2afbd14e17832fb3fdb6f865b8
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d65d65cea5d379cad11e45e63efc725ee056ea91
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919856"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260739"
 ---
 # <a name="_close"></a>_close
 
@@ -56,7 +57,7 @@ int _close(
 
 **_close** возвращает 0, если файл был успешно закрыт. Возвращаемое значение, равное-1, указывает на ошибку.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_close** закрывает файл, связанный с *демоном*.
 
@@ -80,9 +81,9 @@ int _close(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Низкоуровневый ввод-вывод](../../c-runtime-library/low-level-i-o.md)<br/>
+[Низкоуровневые операции ввода-вывода](../../c-runtime-library/low-level-i-o.md)<br/>
 [_chsize](chsize.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
+[Функция _creat, _wcreat](creat-wcreat.md)<br/>
 [_dup, _dup2](dup-dup2.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>
 [_unlink, _wunlink](unlink-wunlink.md)<br/>

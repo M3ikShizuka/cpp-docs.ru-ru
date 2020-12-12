@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: fp_contract pragma'
 title: Прагма fp_contract
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - pragmas, fp_contract
 - fp_contract pragma
 ms.assetid: 15b97338-6680-4287-ba2a-2dccc5b2ccf5
-ms.openlocfilehash: 833d8e7f4b8c9da18901610e52afed619468c5c3
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: cefcf0519f08b3fd68a0f8b464938ea7cdbda6d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218563"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261181"
 ---
 # <a name="fp_contract-pragma"></a>Прагма fp_contract
 
@@ -21,13 +22,13 @@ ms.locfileid: "70218563"
 
 ## <a name="syntax"></a>Синтаксис
 
-> **#pragma fp_contract (** { **On** | **Off** } **)**
+> **fp_contract #pragma (** { **On**  |  **Off** } **)**
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 По умолчанию **fp_contract** имеет значение **On**. Это указывает компилятору использовать инструкции по контракту с плавающей запятой, где это возможно. Задайте для параметра **fp_contract** значение **Off** , чтобы сохранить отдельные инструкции с плавающей запятой.
 
-Дополнительные сведения о поведении чисел с плавающей запятой см. в разделе [/FP (определение поведения с плавающей запятой)](../build/reference/fp-specify-floating-point-behavior.md).
+Дополнительные сведения о поведении чисел с плавающей запятой см. в разделе [/FP (определение поведения Floating-Point)](../build/reference/fp-specify-floating-point-behavior.md).
 
 Другие типы директив pragma для значений с плавающей запятой:
 
@@ -37,7 +38,7 @@ ms.locfileid: "70218563"
 
 ## <a name="example"></a>Пример
 
-Код, созданный в этом примере, не использует инструкцию-умножение с предохранителем, даже если она доступна на целевом процессоре. Если вы закомментируем комментарий `#pragma fp_contract (off)`, в созданном коде может использоваться инструкция с предохранителем-умножение, если она доступна.
+Код, созданный в этом примере, не использует инструкцию-умножение с предохранителем, даже если она доступна на целевом процессоре. Если вы закомментируем комментарий `#pragma fp_contract (off)` , в созданном коде может использоваться инструкция с предохранителем-умножение, если она доступна.
 
 ```cpp
 // pragma_directive_fp_contract.cpp
@@ -75,6 +76,6 @@ out = 3.629600000000000e+03
 out = 4.587525000000000e+03
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Директивы pragma и ключевое слово __pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

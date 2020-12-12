@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: `/X` (игнорировать стандартные пути включаемых файлов)'
 title: /X (игнорирование стандартных путей включения)
 ms.date: 07/31/2020
 f1_keywords:
@@ -14,14 +15,14 @@ helpviewer_keywords:
 - X compiler option
 - Ignore Standard Include Paths compiler option
 ms.assetid: 16bdf2cc-c8dc-46e4-bdcc-f3caeba5e1ef
-ms.openlocfilehash: 652feeb200b7106aaca1ed7264f1e25c088a3dab
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 69936b80893de2c45622ec9973a218a94e8029a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520412"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261012"
 ---
-# <a name="x-ignore-standard-include-paths"></a>`/X`(Игнорировать стандартные пути включаемых файлов)
+# <a name="x-ignore-standard-include-paths"></a>`/X` (Игнорировать стандартные пути включаемых файлов)
 
 Предотвращает Поиск включаемых файлов в каталогах, указанных в переменных среды PATH и INCLUDE, компилятором.
 
@@ -29,7 +30,7 @@ ms.locfileid: "87520412"
 
 > **`/X`**
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Этот параметр можно использовать с параметром [ `/I` (дополнительные каталоги включения)](i-additional-include-directories.md) , чтобы указать альтернативный путь к стандартным включаемым файлам.
 
@@ -37,7 +38,7 @@ ms.locfileid: "87520412"
 
 1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
-1. Выберите **Configuration Properties**  >  страницу свойств препроцессора свойства конфигурации**C/C++**  >  **Preprocessor** .
+1. Выберите   >  страницу свойств препроцессора свойства конфигурации **C/C++**  >   .
 
 1. Измените свойство " **игнорировать стандартные включаемые пути** ".
 
@@ -53,7 +54,7 @@ ms.locfileid: "87520412"
 CL /X /I \ALT\INCLUDE MAIN.C
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Параметры компилятора КОМПИЛЯТОРОМ MSVC](compiler-options.md)<br/>
+[Параметры компилятора MSVC](compiler-options.md)<br/>
 [Синтаксис командной строки компилятора MSVC](compiler-command-line-syntax.md)

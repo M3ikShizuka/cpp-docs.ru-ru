@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CHtmlEditView Class'
 title: Класс CHtmlEditView
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CHtmlEditView [MFC], GetDHtmlDocument
 - CHtmlEditView [MFC], GetStartDocument
 ms.assetid: 166c8ba8-3fb5-4dd7-a9ea-5bca662d00f6
-ms.openlocfilehash: 20d4586c1ae45e5f3f56c0adbb1ecb1757084fd7
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 9ab998ca16a26fd4ef7a23e4dc58c6542ec330b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81752320"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261324"
 ---
 # <a name="chtmleditview-class"></a>Класс CHtmlEditView
 
@@ -31,21 +32,21 @@ ms.locfileid: "81752320"
 class CHtmlEditView : public CHtmlView, public CHtmlEditCtrlBase<CHtmlEditView>
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CHtmlEditView::HtmlEditView](#chtmleditview)|Формирует объект `CHtmlEditView`.|
+|[CHtmlEditView:: CHtmlEditView](#chtmleditview)|Формирует объект `CHtmlEditView`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CHtmlEditView::Создание](#create)|Создает новый объект окна.|
-|[CHtmlEditView::GetDHtmlДокумент](#getdhtmldocument)|Возвращает `IHTMLDocument2` интерфейс в текущем документе.|
-|[CHtmlEditView::GetStartDocument](#getstartdocument)|Извлекает имя документа по умолчанию для этого представления.|
+|[CHtmlEditView:: Create](#create)|Создает новый объект Window.|
+|[CHtmlEditView:: Жетдхтмлдокумент](#getdhtmldocument)|Возвращает `IHTMLDocument2` интерфейс текущего документа.|
+|[CHtmlEditView:: Жетстартдокумент](#getstartdocument)|Возвращает имя документа по умолчанию для этого представления.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -71,7 +72,7 @@ class CHtmlEditView : public CHtmlView, public CHtmlEditCtrlBase<CHtmlEditView>
 
 **Заголовок:** afxhtml.h
 
-## <a name="chtmleditviewchtmleditview"></a><a name="chtmleditview"></a>CHtmlEditView::HtmlEditView
+## <a name="chtmleditviewchtmleditview"></a><a name="chtmleditview"></a> CHtmlEditView:: CHtmlEditView
 
 Формирует объект `CHtmlEditView`.
 
@@ -79,9 +80,9 @@ class CHtmlEditView : public CHtmlView, public CHtmlEditCtrlBase<CHtmlEditView>
 CHtmlEditView();
 ```
 
-## <a name="chtmleditviewcreate"></a><a name="create"></a>CHtmlEditView::Создание
+## <a name="chtmleditviewcreate"></a><a name="create"></a> CHtmlEditView:: Create
 
-Создает новый объект окна.
+Создает новый объект Window.
 
 ```
 virtual BOOL Create(
@@ -96,34 +97,34 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Параметры
 
-*lpszClassName*<br/>
-Указывает на строку символов с нулевым завершением, которая называет класс Windows. Имя класса может быть любым именем, зарегистрированным в глобальной функции [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) или функции `RegisterClass` Windows. Если NULL, использует предопределенные атрибуты [CFrameWnd](../../mfc/reference/cframewnd-class.md) по умолчанию.
+*лпсзкласснаме*<br/>
+Указывает на строку символов, завершающуюся нулем, которая именует класс Windows. Именем класса может быть любое имя, зарегистрированное с помощью глобальной функции [афксрегистервндкласс](application-information-and-management.md#afxregisterwndclass) или `RegisterClass` функции Windows. Если значение равно NULL, использует стандартные атрибуты [CFrameWnd](../../mfc/reference/cframewnd-class.md) по умолчанию.
 
-*lpszWindowName*<br/>
-Указывает на строку символов с нулевым завершением, представляющую имя окна.
+*лпсзвиндовнаме*<br/>
+Указывает на строку символов, завершающуюся нулем, которая представляет имя окна.
 
-*dwStyle*<br/>
-Определяет атрибуты стиля окна. По умолчанию установлены стили WS_VISIBLE и WS_CHILD Windows.
+*двстиле*<br/>
+Задает атрибуты стиля окна. По умолчанию устанавливаются стили WS_VISIBLE и WS_CHILD Windows.
 
 *rect*<br/>
-Ссылка на структуру [RECT](/windows/win32/api/windef/ns-windef-rect) с указанием размера и положения окна. Значение *rectDefault* позволяет Windows указать размер и положение нового окна.
+Ссылка на структуру [Rect](/windows/win32/api/windef/ns-windef-rect) , указывающую размер и расположение окна. Значение *ректдефаулт* позволяет Windows указать размер и расположение нового окна.
 
-*pParentWnd*<br/>
+*ппарентвнд*<br/>
 Указатель на родительское окно элемента управления.
 
 *nID*<br/>
-Идентификационный номер представления. По умолчанию, установлен на AFX_IDW_PANE_FIRST.
+ИДЕНТИФИКАЦИОНный номер представления. По умолчанию задайте для значение AFX_IDW_PANE_FIRST.
 
 *pContext*<br/>
-Указатель на [CCreateContext](../../mfc/reference/ccreatecontext-structure.md). NULL по умолчанию.
+Указатель на [ккреатеконтекст](../../mfc/reference/ccreatecontext-structure.md). По умолчанию имеет значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод также вызовет `Navigate` содержащийся метод WebBrowser для загрузки документа по умолчанию (см. [CHtmlEditView::GetStartDocument).](#getstartdocument)
+Этот метод также вызывает метод автономного WebBrowser `Navigate` для загрузки документа по умолчанию (см. [CHtmlEditView:: жетстартдокумент](#getstartdocument)).
 
-## <a name="chtmleditviewgetdhtmldocument"></a><a name="getdhtmldocument"></a>CHtmlEditView::GetDHtmlДокумент
+## <a name="chtmleditviewgetdhtmldocument"></a><a name="getdhtmldocument"></a> CHtmlEditView:: Жетдхтмлдокумент
 
-Возвращает `IHTMLDocument2` интерфейс в текущем документе.
+Возвращает `IHTMLDocument2` интерфейс текущего документа.
 
 ```
 BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
@@ -131,12 +132,12 @@ BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
 
 ### <a name="parameters"></a>Параметры
 
-*ppДокумент*<br/>
-Интерфейс [IHTMLDocument2.](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\))
+*ппдокумент*<br/>
+Интерфейс [IHTMLDocument2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\)) .
 
-## <a name="chtmleditviewgetstartdocument"></a><a name="getstartdocument"></a>CHtmlEditView::GetStartDocument
+## <a name="chtmleditviewgetstartdocument"></a><a name="getstartdocument"></a> CHtmlEditView:: Жетстартдокумент
 
-Извлекает имя документа по умолчанию для этого представления.
+Возвращает имя документа по умолчанию для этого представления.
 
 ```
 virtual LPCTSTR GetStartDocument();
@@ -144,5 +145,5 @@ virtual LPCTSTR GetStartDocument();
 
 ## <a name="see-also"></a>См. также раздел
 
-[Образец HTMLEdit](../../overview/visual-cpp-samples.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)
+[Пример Хтмледит](../../overview/visual-cpp-samples.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)

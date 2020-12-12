@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Предупреждение средств компоновщика LNK4237'
 title: Предупреждение средств компоновщика LNK4237
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4237
 ms.assetid: 87bfec39-5241-464f-9feb-517b49f352ea
-ms.openlocfilehash: aaa26393f1ce76d3e1bc40e5ba4978d1bcdb4fc9
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9f8af2d6f0fa2d1153af749e327e95b863ed6914
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80193762"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259998"
 ---
 # <a name="linker-tools-warning-lnk4237"></a>Предупреждение средств компоновщика LNK4237
 
@@ -25,6 +26,6 @@ ms.locfileid: "80193762"
 
 - user32.dll
 
-- Одна из библиотек MSVCRT\*.
+- Одна из \* библиотек DLL MSVCRT.
 
 Устраните это предупреждение, не указывая **/SUBSYSTEM: Native**.

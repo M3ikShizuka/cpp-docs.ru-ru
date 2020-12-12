@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _mbsnbcmp, _mbsnbcmp_l'
 title: _mbsnbcmp, _mbsnbcmp_l
 ms.date: 4/2/2020
 api_name:
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - _tcsncmp function
 - _mbsnbcmp function
 ms.assetid: dbc99e50-cf85-4e57-a13f-067591f18ac8
-ms.openlocfilehash: edba674a0873b1f0a5f37457235c0dc1a8210ded
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: b382843f9b9519cef0589d22f33afa971bb88c20
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911977"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260622"
 ---
 # <a name="_mbsnbcmp-_mbsnbcmp_l"></a>_mbsnbcmp, _mbsnbcmp_l
 
@@ -88,9 +89,9 @@ int _mbsnbcmp_l(
 |0|Строка *строка1* совпадает с подстрокой *строка_замены* .|
 |> 0|Строка *строка1* больше, чем *строка2* подстроки.|
 
-При ошибке проверки параметров **_mbsnbcmp** и **_mbsnbcmp_l** возвращают **_NLSCMPERROR**, которые определены в \<> String. h> и \<mbstring. h.
+При ошибке проверки параметров **_mbsnbcmp** и **_mbsnbcmp_l** возвращают **_NLSCMPERROR**, который определен в \<string.h> и \<mbstring.h> .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функции **_mbsnbcmp** сравнивают не более первого *числа* байтов в строках *строка1* и *строка2* и возвращают значение, указывающее связь между подстроками. **_mbsnbcmp** — это зависящая от регистра версия **_mbsnbicmp**. В отличие от **_mbsnbcoll**, на **_mbsnbcmp** не влияет порядок сортировки языкового стандарта. **_mbsnbcmp** распознает последовательности многобайтовых символов в соответствии с текущей многобайтовой [кодовой страницей](../../c-runtime-library/code-pages.md).
 
@@ -176,5 +177,5 @@ Result:   String 1 is equal to string 2
 [_mbsnbicmp, _mbsnbicmp_l](mbsnbicmp-mbsnbicmp-l.md)<br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

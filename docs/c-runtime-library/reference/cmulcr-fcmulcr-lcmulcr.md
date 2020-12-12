@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _Cmulcr, _FCmulcr, _LCmulcr'
 title: _Cmulcr, _FCmulcr, _LCmulcr
 ms.date: 03/30/2018
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - _Cmulcr function
 - _FCmulcr function
 - _LCmulcr function
-ms.openlocfilehash: cbff1c2cb0e66da77b6fdc8127b78fb475aa5080
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: ea1dbbcea6890246b1e318da238fb8cc2ee3abb0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942889"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260726"
 ---
 # <a name="_cmulcr-_fcmulcr-_lcmulcr"></a>_Cmulcr, _FCmulcr, _LCmulcr
 
@@ -61,23 +62,23 @@ _Lcomplex _LCmulcr( _Lcomplex x, long double y );
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Структура **_Dcomplex**, **_Fcomplex**или **_Lcomplex** , представляющая комплексное произведение комплексного числа *x* и флаотинг-Point Number *y*.
+Структура **_Dcomplex**, **_Fcomplex** или **_Lcomplex** , представляющая комплексное произведение комплексного числа *x* и флаотинг-Point с номером *y*.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Поскольку встроенные арифметические операторы не работают в реализации сложных типов в Майкрософт, функции **_Cmulcr**, **_FCmulcr**и **_LCmulcr** упрощают умножение сложных типов на типы с плавающей запятой.
+Поскольку встроенные арифметические операторы не работают в реализации сложных типов Майкрософт, функции **_Cmulcr**, **_FCmulcr** и **_LCmulcr** упрощают умножение сложных типов на типы с плавающей запятой.
 
 ## <a name="requirements"></a>Требования
 
 |Подпрограмма|Заголовок C|Заголовок C++|
 |-------------|--------------|------------------|
-|**_Cmulcr**, **_FCmulcr**, **_LCmulcr**|\<complex.h>|\<complex.h>|
+|**_Cmulcr**, **_FCmulcr** **_LCmulcr**|\<complex.h>|\<complex.h>|
 
-Эти функции относятся только к Microsoft. Типы **_Dcomplex**, **_Fcomplex**и **_Lcomplex** являются эквивалентами, специфичными для Microsoft, для нереализованных C99 машинных типов **Double _Complex**, **float _Complex**и **long double _Complex**соответственно. Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Эти функции относятся только к Microsoft. Типы **_Dcomplex**, **_Fcomplex** и **_Lcomplex** являются эквивалентами, специфичными для Microsoft, для нереализованных C99 машинных типов **Double _Complex**, **float _Complex** и **long double _Complex** соответственно. Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Алфавитный указатель функций](crt-alphabetical-function-reference.md)<br/>
+[Алфавитный справочник по функциям](crt-alphabetical-function-reference.md)<br/>
 [_Cbuild, _FCbuild, _LCbuild](cbuild-fcbuild-lcbuild.md)<br/>
 [_Cmulcc, _FCmulcc, _LCmulcc](cmulcc-fcmulcc-lcmulcc.md)<br/>
 [norm, normf, norml](norm-normf-norml1.md)<br/>

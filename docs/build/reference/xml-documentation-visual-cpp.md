@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в документации по XML (Visual C++)
 title: Документация XML (Visual C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - comments, C++ source code files
 - /// delimiter for C++ documentation
 ms.assetid: a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506
-ms.openlocfilehash: c25c54e81bb9c10fc871a2abc178f57e661ae4e6
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 762380d08483292866cb96b34be4d85f7a2f510a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81335733"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260947"
 ---
 # <a name="xml-documentation-visual-c"></a>Документация XML (Visual C++)
 
@@ -34,10 +35,10 @@ ms.locfileid: "81335733"
 |Сведения о|См.|
 |---------------------------|---------|
 |Используемые параметры компилятора|[/doc](doc-process-documentation-comments-c-cpp.md)|
-|Теги, позволяющие реализовать часто используемые функции в документации|[Рекомендуемые теги для комментариев к документации](recommended-tags-for-documentation-comments-visual-cpp.md)|
-|Строки идентификаторов, создаваемые компилятором для идентификации конструкций в коде|[Обработка файла .xml](dot-xml-file-processing.md)|
+|Теги, позволяющие реализовать часто используемые функции в документации|[Рекомендуемые теги для комментариев документации](recommended-tags-for-documentation-comments-visual-cpp.md)|
+|Строки идентификаторов, создаваемые компилятором для идентификации конструкций в коде|[Обработка XML-файла](dot-xml-file-processing.md)|
 |Разделение тегов документации|[Разделители для тегов документации Visual C++](delimiters-for-visual-cpp-documentation-tags.md)|
-|Создание XML-файла из одного или нескольких XDC-файлов.|[Ссылка XDCMake](xdcmake-reference.md)|
+|Создание XML-файла из одного или нескольких XDC-файлов.|[Справочник по программе XDCMake](xdcmake-reference.md)|
 |Ссылки на сведения об XML, посвященные связи с областями компонентов Visual Studio|[XML в Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)|
 
 Если вам нужно поместить специальные символы XML в текст комментария документации, следует использовать сущности XML или раздел CDATA.
