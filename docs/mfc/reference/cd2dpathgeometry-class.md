@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CD2DPathGeometry Class'
 title: Класс CD2DPathGeometry
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,16 +27,16 @@ helpviewer_keywords:
 - CD2DPathGeometry [MFC], Stream
 - CD2DPathGeometry [MFC], m_pPathGeometry
 ms.assetid: 686216eb-5080-4242-ace5-8fa1ce96307c
-ms.openlocfilehash: 91460e3435130530ecc57bdcc09d1c7301333a3b
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: eb33d498436c887eb038b3312e2b98ca04d6620b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753075"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280538"
 ---
 # <a name="cd2dpathgeometry-class"></a>Класс CD2DPathGeometry
 
-Обертка для ID2D1PathGeometry.
+Оболочка для ID2D1PathGeometry.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,50 +44,50 @@ ms.locfileid: "81753075"
 class CD2DPathGeometry : public CD2DGeometry;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CD2DPathGeometry::CD2DPathGeometry](#cd2dpathgeometry)|Строит объект CD2DPathGeometry.|
+|[CD2DPathGeometry::CD2DPathGeometry](#cd2dpathgeometry)|Конструирует объект CD2DPathGeometry.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CD2DPathGeometry::Attach](#attach)|Прикрепляет существующий интерфейс ресурса к объекту|
-|[CD2DPathGeometry::Создание](#create)|Создает CD2DPathGeometry. (Переопределяет [CD2DРесурс::Создание](../../mfc/reference/cd2dresource-class.md#create).)|
-|[CD2DPathGeometry::Destroy](#destroy)|Уничтожает объект CD2DPathGeometry. (Переопределяет [CD2DGeometry::Destroy](../../mfc/reference/cd2dgeometry-class.md#destroy).)|
-|[CD2DPathGeometry: :Detach](#detach)|Открепите интерфейс ресурса с объекта|
-|[CD2DPathGeometry::GetFigureCount](#getfigurecount)|Извлекает количество фигур в геометрии пути.|
-|[CD2DPathGeometry::GetSegmentCount](#getsegmentcount)|Извлекает количество сегментов в геометрии пути.|
-|[CD2DPathGeometry::Открыто](#open)|Извлекает раковину геометрии, которая используется для заполнения геометрии пути цифрами и сегментами.|
-|[CD2DPathGeometry::Stream](#stream)|Копирует содержимое геометрии пути на указанный ID2D1GeometrySink.|
+|[CD2DPathGeometry:: Attach](#attach)|Присоединяет существующий интерфейс ресурсов к объекту|
+|[CD2DPathGeometry:: Create](#create)|Создает CD2DPathGeometry. (Переопределяет [CD2DResource:: Create](../../mfc/reference/cd2dresource-class.md#create).)|
+|[CD2DPathGeometry::D естрой](#destroy)|Уничтожает объект CD2DPathGeometry. (Переопределяет [CD2DGeometry::D естрой](../../mfc/reference/cd2dgeometry-class.md#destroy).)|
+|[CD2DPathGeometry::D етач](#detach)|Отсоединяет интерфейс ресурса от объекта|
+|[CD2DPathGeometry:: Жетфигурекаунт](#getfigurecount)|Извлекает количество фигур в геометрии пути.|
+|[CD2DPathGeometry:: Жетсегменткаунт](#getsegmentcount)|Возвращает количество сегментов в геометрии пути.|
+|[CD2DPathGeometry:: Open](#open)|Извлекает геометрический приемник, используемый для заполнения геометрии контура рисунками и сегментами.|
+|[CD2DPathGeometry:: Stream](#stream)|Копирует содержимое геометрии пути в указанный ID2D1GeometrySink.|
 
 ### <a name="protected-data-members"></a>Защищенные члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CD2DPathGeometry::m_pPathGeometry](#m_ppathgeometry)|Указатель на ID2D1PathGeometry.|
+|[CD2DPathGeometry:: m_pPathGeometry](#m_ppathgeometry)|Указатель на ID2D1PathGeometry.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
 [CObject](../../mfc/reference/cobject-class.md)
 
-[CD2DРесурс](../../mfc/reference/cd2dresource-class.md)
+[CD2DResource](../../mfc/reference/cd2dresource-class.md)
 
-[CD2DГеометрия](../../mfc/reference/cd2dgeometry-class.md)
+[CD2DGeometry](../../mfc/reference/cd2dgeometry-class.md)
 
 `CD2DPathGeometry`
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxrendertarget.h
+**Заголовок:** афксрендертаржет. h
 
-## <a name="cd2dpathgeometryattach"></a><a name="attach"></a>CD2DPathGeometry::Attach
+## <a name="cd2dpathgeometryattach"></a><a name="attach"></a> CD2DPathGeometry:: Attach
 
-Прикрепляет существующий интерфейс ресурса к объекту
+Присоединяет существующий интерфейс ресурсов к объекту
 
 ```cpp
 void Attach(ID2D1PathGeometry* pResource);
@@ -94,12 +95,12 @@ void Attach(ID2D1PathGeometry* pResource);
 
 ### <a name="parameters"></a>Параметры
 
-*pResource*<br/>
-Существующий интерфейс ресурса. Не может быть NULL
+*исходный код*<br/>
+Существующий интерфейс ресурсов. Не может иметь значение NULL
 
-## <a name="cd2dpathgeometrycd2dpathgeometry"></a><a name="cd2dpathgeometry"></a>CD2DPathGeometry::CD2DPathGeometry
+## <a name="cd2dpathgeometrycd2dpathgeometry"></a><a name="cd2dpathgeometry"></a> CD2DPathGeometry::CD2DPathGeometry
 
-Строит объект CD2DPathGeometry.
+Конструирует объект CD2DPathGeometry.
 
 ```
 CD2DPathGeometry(
@@ -109,13 +110,13 @@ CD2DPathGeometry(
 
 ### <a name="parameters"></a>Параметры
 
-*pParentTarget*<br/>
-Указатель на цель рендера.
+*ппаренттаржет*<br/>
+Указатель на целевой объект прорисовки.
 
-*bAutoDestroy*<br/>
-Означает, что объект будет уничтожен владельцем (pParentTarget).
+*баутодестрой*<br/>
+Указывает, что объект будет уничтожен владельцем (Ппаренттаржет).
 
-## <a name="cd2dpathgeometrycreate"></a><a name="create"></a>CD2DPathGeometry::Создание
+## <a name="cd2dpathgeometrycreate"></a><a name="create"></a> CD2DPathGeometry:: Create
 
 Создает CD2DPathGeometry.
 
@@ -125,14 +126,14 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 
 ### <a name="parameters"></a>Параметры
 
-*pRenderTarget*<br/>
-Указатель на цель рендера.
+*прендертаржет*<br/>
+Указатель на целевой объект прорисовки.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод завершается успешно, возвращает значение S_OK. В противном случае он возвращает код ошибки HRESULT.
+Если метод завершается успешно, возвращает значение S_OK. В противном случае возвращается код ошибки HRESULT.
 
-## <a name="cd2dpathgeometrydestroy"></a><a name="destroy"></a>CD2DPathGeometry::Destroy
+## <a name="cd2dpathgeometrydestroy"></a><a name="destroy"></a> CD2DPathGeometry::D естрой
 
 Уничтожает объект CD2DPathGeometry.
 
@@ -140,9 +141,9 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 virtual void Destroy();
 ```
 
-## <a name="cd2dpathgeometrydetach"></a><a name="detach"></a>CD2DPathGeometry: :Detach
+## <a name="cd2dpathgeometrydetach"></a><a name="detach"></a> CD2DPathGeometry::D етач
 
-Открепите интерфейс ресурса с объекта
+Отсоединяет интерфейс ресурса от объекта
 
 ```
 ID2D1PathGeometry* Detach();
@@ -150,9 +151,9 @@ ID2D1PathGeometry* Detach();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на отдельный интерфейс ресурса.
+Указатель на отсоединенный интерфейс ресурсов.
 
-## <a name="cd2dpathgeometrygetfigurecount"></a><a name="getfigurecount"></a>CD2DPathGeometry::GetFigureCount
+## <a name="cd2dpathgeometrygetfigurecount"></a><a name="getfigurecount"></a> CD2DPathGeometry:: Жетфигурекаунт
 
 Извлекает количество фигур в геометрии пути.
 
@@ -162,11 +163,11 @@ int GetFigureCount() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает количество фигур в геометрии пути.
+Возвращает число цифр в геометрии пути.
 
-## <a name="cd2dpathgeometrygetsegmentcount"></a><a name="getsegmentcount"></a>CD2DPathGeometry::GetSegmentCount
+## <a name="cd2dpathgeometrygetsegmentcount"></a><a name="getsegmentcount"></a> CD2DPathGeometry:: Жетсегменткаунт
 
-Извлекает количество сегментов в геометрии пути.
+Возвращает количество сегментов в геометрии пути.
 
 ```
 int GetSegmentCount() const;
@@ -176,7 +177,7 @@ int GetSegmentCount() const;
 
 Возвращает количество сегментов в геометрии пути.
 
-## <a name="cd2dpathgeometrym_ppathgeometry"></a><a name="m_ppathgeometry"></a>CD2DPathGeometry::m_pPathGeometry
+## <a name="cd2dpathgeometrym_ppathgeometry"></a><a name="m_ppathgeometry"></a> CD2DPathGeometry:: m_pPathGeometry
 
 Указатель на ID2D1PathGeometry.
 
@@ -184,9 +185,9 @@ int GetSegmentCount() const;
 ID2D1PathGeometry* m_pPathGeometry;
 ```
 
-## <a name="cd2dpathgeometryopen"></a><a name="open"></a>CD2DPathGeometry::Открыто
+## <a name="cd2dpathgeometryopen"></a><a name="open"></a> CD2DPathGeometry:: Open
 
-Извлекает раковину геометрии, которая используется для заполнения геометрии пути цифрами и сегментами.
+Извлекает геометрический приемник, используемый для заполнения геометрии контура рисунками и сегментами.
 
 ```
 ID2D1GeometrySink* Open();
@@ -194,11 +195,11 @@ ID2D1GeometrySink* Open();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на ID2D1GeometrySink, который используется для заполнения геометрии пути цифрами и сегментами.
+Указатель на ID2D1GeometrySink, используемый для заполнения геометрии контура рисунками и сегментами.
 
-## <a name="cd2dpathgeometrystream"></a><a name="stream"></a>CD2DPathGeometry::Stream
+## <a name="cd2dpathgeometrystream"></a><a name="stream"></a> CD2DPathGeometry:: Stream
 
-Копирует содержимое геометрии пути на указанный ID2D1GeometrySink.
+Копирует содержимое геометрии пути в указанный ID2D1GeometrySink.
 
 ```
 BOOL Stream(ID2D1GeometrySink* geometrySink);
@@ -206,12 +207,12 @@ BOOL Stream(ID2D1GeometrySink* geometrySink);
 
 ### <a name="parameters"></a>Параметры
 
-*геометрияСинк*<br/>
-Раковина, к которой копируется содержимое геометрии пути. Изменение этой раковины не изменяет содержимое геометрии этого пути.
+*жеометрисинк*<br/>
+Приемник, в который копируются содержимое геометрии пути. Изменение этого приемника не приводит к изменению содержимого этой геометрии пути.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод удается, он возвращает TRUE. В противном случае, он возвращает FALSE.
+Если метод завершается с ошибкой, возвращается значение TRUE. В противном случае возвращается значение FALSE.
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: vector &lt; bool &gt; :: Reference:: operator ='
 title: vector&lt;bool&gt;::reference::operator=
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - = operator, with specific C++ Standard Library objects
 - reference::operator=
 ms.assetid: eed20d81-36b9-40b2-a3b6-340ed0bb4f34
-ms.openlocfilehash: 738f86bd6163a827b43d78f29c6e3a7124400fb7
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: eb6efe7d0e5d59d1135430a3dc8b544dcee3678f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452160"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280369"
 ---
 # <a name="vectorltboolgtreferenceoperator"></a>vector&lt;bool&gt;::reference::operator=
 
@@ -95,7 +96,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Вывод
+## <a name="output"></a>Выходные данные
 
 ```Output
 The vector is: true false false true true
@@ -112,11 +113,11 @@ The original value of the 3rd element still stored in a bool: false
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<vector>
+**Заголовок:**\<vector>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-Класс [vector\<bool>::reference](../standard-library/vector-bool-reference-class.md)\
+[\<bool>класс Vector:: Reference](../standard-library/vector-bool-reference-class.md)\
 [Справочник по стандартной библиотеке C++](../standard-library/cpp-standard-library-reference.md)

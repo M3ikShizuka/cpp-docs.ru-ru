@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: класс Vector &lt; bool &gt; :: Reference'
 title: Класс vector&lt;bool&gt;::reference
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - vector<bool> reference class
 ms.assetid: f27854f9-0ef0-4e7e-ad2e-cd53b6cb3334
-ms.openlocfilehash: 3dde17522c05a05bda04c338682b4b3f9920a972
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4e9e4700f8af269f02f038c37d55460bae3a2a96
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228106"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280486"
 ---
 # <a name="vectorltboolgtreference-class"></a>Класс vector&lt;bool&gt;::reference
 
 `vector<bool>::reference`Класс является прокси-классом, предоставляемым [ \<bool> классом Vector](../standard-library/vector-bool-class.md) для имитации `bool&` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Необходима смоделированная ссылка, поскольку C++ изначально не допускает прямых ссылок на биты. `vector<bool>` использует только один бит на элемент, ссылку на который можно создать с помощью данного класса прокси. Однако моделирование ссылки является незавершенным, поскольку определенные назначения не являются допустимыми. Например, поскольку адрес `vector<bool>::reference` объекта не может быть получен, следующий код, который пытается использовать, `vector<bool>::operator&` является неправильным:
 
@@ -38,11 +39,11 @@ bool& refb = vb[1];   // conversion error - do not use
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок**:\<vector>
+**Заголовок**: \<vector>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [\<vector>](../standard-library/vector.md)\
 [Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
