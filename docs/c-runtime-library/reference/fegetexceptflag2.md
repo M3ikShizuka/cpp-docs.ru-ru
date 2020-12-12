@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: фежетексцептфлаг'
 title: fegetexceptflag
 ms.date: 04/05/2018
 api_name:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - fegetexceptflag function
 ms.assetid: 2d28f0ca-70c9-4cff-be8b-3d876eacde71
-ms.openlocfilehash: b840408ce704ad5519fbf233de41c8d5422006ad
-ms.sourcegitcommit: ba4180a2d79d7e391f2f705797505d4aedbc2a5e
+ms.openlocfilehash: 9690263168c9eef46b5a8b684fa00dfd9d6f8715
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76972180"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322567"
 ---
 # <a name="fegetexceptflag"></a>fegetexceptflag
 
@@ -57,9 +58,9 @@ int fegetexceptflag(
 
 При успешном выполнении возвращается 0. В противном случае возвращается ненулевое значение.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
-Функция **фежетексцептфлаг** сохраняет текущее состояние флагов состояния исключения с плавающей запятой, заданных параметром, *за исключением* объекта **fexcept_t** , на который указывает *пстатус*.  *пстатус* должен указывать на допустимый объект **fexcept_t** , или последующее поведение не определено. Функция **фежетексцептфлаг** поддерживает эти макросы исключений, определенные в > \<fenv. h:
+Функция **фежетексцептфлаг** сохраняет текущее состояние флагов состояния исключения с плавающей запятой, заданных параметром, *за исключением* объекта **fexcept_t** , на который указывает *пстатус*.  *пстатус* должен указывать на допустимый объект **fexcept_t** , или последующее поведение не определено. Функция **фежетексцептфлаг** поддерживает эти макросы исключений, определенные в \<fenv.h> :
 
 |Макрос исключения|Описание|
 |---------------------|-----------------|
@@ -80,9 +81,9 @@ int fegetexceptflag(
 |--------------|--------------|------------------|
 |**fegetexceptflag**|\<fenv.h>|\<cfenv>|
 
-Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Алфавитный указатель функций](crt-alphabetical-function-reference.md)<br/>
+[Алфавитный справочник по функциям](crt-alphabetical-function-reference.md)<br/>
 [fesetexceptflag](fesetexceptflag2.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: feof'
 title: feof
 ms.date: 4/2/2020
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - end of file, testing for
 - feof function
 ms.assetid: 09081eee-7c4b-4189-861f-2fad95d3ec6d
-ms.openlocfilehash: 2b3a8d35491272409ecf911fe2f98ca60b2b2b38
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 6bfa0382878cef2843f3a6a6e2ba6e6d8c5bed8a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920159"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322541"
 ---
 # <a name="feof"></a>feof
 
@@ -57,7 +58,7 @@ int feof(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Подпрограммы **feof** (реализованные как функция и как макрос) определяют, был ли передан конец *потока* . После передачи конца файла операции чтения возвращают индикатор конца файла до закрытия потока или до тех пор, пока не будет закрыт поток или [пока не](rewind.md)будут вызваны **fsetpos**, [fseek](fseek-fseeki64.md)или **клеарерр** .
 

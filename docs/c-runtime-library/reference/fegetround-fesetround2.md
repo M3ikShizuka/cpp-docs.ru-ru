@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: fegetround, fesetround'
 title: fegetround, fesetround
 ms.date: 04/05/2018
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - fegetround function
 - fesetround function
 ms.assetid: 596af00b-be2f-4f57-b2f5-460485f9ff0b
-ms.openlocfilehash: b210dbce3104820f667d4ad0b4421277567b279f
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f3c112efc1c380ac4ce4495f4365e2a47a1d8fd2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941200"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322554"
 ---
 # <a name="fegetround-fesetround"></a>fegetround, fesetround
 
@@ -61,9 +62,9 @@ int fesetround(
 
 При успешном выполнении **fesetround** возвращает 0. В противном случае возвращается ненулевое значение.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Операции с плавающей запятой могут использовать один из нескольких режимов округления. Они управляют направлением, в котором округляются результаты операций с плавающей запятой при сохранении. Это имена и поведение округляющего макроса с плавающей запятой, заданного в \<fenv.h>:
+Операции с плавающей запятой могут использовать один из нескольких режимов округления. Они управляют направлением, в котором округляются результаты операций с плавающей запятой при сохранении. Это имена и поведение макросов округления с плавающей запятой, определенных в \<fenv.h> :
 
 |Макрос|Описание|
 |-----------|-----------------|
@@ -86,7 +87,7 @@ int fesetround(
 
 Текущий режим округления не затрагивает следующие операции.
 
-- Функции библиотеки **TRUNC**, **ceil**, **Floor**и **лраунд** .
+- Функции библиотеки **TRUNC**, **ceil**, **Floor** и **лраунд** .
 
 - Приведения и преобразования с плавающей запятой, которые всегда округляются в сторону нуля.
 
@@ -100,11 +101,11 @@ int fesetround(
 |--------------|--------------|------------------|
 |**fegetround**, **fesetround**|\<fenv.h>|\<cfenv>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Алфавитный указатель функций](crt-alphabetical-function-reference.md)<br/>
+[Алфавитный справочник по функциям](crt-alphabetical-function-reference.md)<br/>
 [nearbyint, nearbyintf, nearbyintl](nearbyint-nearbyintf-nearbyintl1.md)<br/>
 [rint, rintf, rintl](rint-rintf-rintl.md)<br/>
 [lrint, lrintf, lrintl, llrint, llrintf, llrintl](lrint-lrintf-lrintl-llrint-llrintf-llrintl.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: феклеарексцепт'
 title: feclearexcept1
 ms.date: 04/05/2018
 api_name:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - feclearexcept function
 ms.assetid: ef419da3-c248-4432-b53c-8e7a475d9533
-ms.openlocfilehash: 9899d7068a289e7d5f71cb42a8373869d60c3070
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 09eb34ddb781a40418152ec8cc6893074c58a617
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941272"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322593"
 ---
 # <a name="feclearexcept"></a>feclearexcept
 
@@ -53,7 +54,7 @@ int feclearexcept(
 
 Возвращает нуль, если *except* равен нулю, или значение, если все указанные исключения были успешно удалены. В противном случае возвращается ненулевое значение.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Функция **феклеарексцепт** пытается очистить флаги состояния исключения с плавающей запятой, заданные параметром *except*. Эта функция поддерживает макросы исключений, определенные в fenv.h:
 
@@ -74,9 +75,9 @@ int feclearexcept(
 |--------------|--------------|------------------|
 |**feclearexcept**|\<fenv.h>|\<cfenv>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Алфавитный указатель функций](crt-alphabetical-function-reference.md)<br/>
+[Алфавитный справочник по функциям](crt-alphabetical-function-reference.md)<br/>
 [fetestexcept](fetestexcept1.md)<br/>

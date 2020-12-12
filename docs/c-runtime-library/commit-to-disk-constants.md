@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: константы фиксации на диск'
 title: Константы фиксации на диске
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - commit-to-disk constants
 ms.assetid: 0b903b23-b4fa-431e-a937-51d95f695ecf
-ms.openlocfilehash: c02b18e5a4a731957a7c74cc45e6e181fe23fad8
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 416729f4b3b7bfdfdcb0ba11193f6c2a52691e6e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750615"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322650"
 ---
 # <a name="commit-to-disk-constants"></a>Константы фиксации на диске
 
@@ -23,7 +24,7 @@ ms.locfileid: "57750615"
 #include <stdio.h>
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Эти константы, используемые корпорацией Майкрософт, определяют, куда сохраняется связанный с открытым файлом буфер: в буферы операционной системы или на диск. Режим содержится в строке, указывающей тип доступа на чтение или запись (**"r"**, **"w"**, **"a"**, **"r+"**, **"w+"**, **"a+"**).
 
