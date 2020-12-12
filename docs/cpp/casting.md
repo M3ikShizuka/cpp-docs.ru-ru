@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о приведении
 title: Приведение
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - polymorphic classes [C++]
 - classes [C++], polymorphism
 ms.assetid: 3dbeb06e-2f4b-4693-832d-624bc8ec95de
-ms.openlocfilehash: bb06db3af6aee031b6cb2d69b38a9404304420fc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0850b20db0e3f951414ba2b1d480cdcf43fb971f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80190144"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308644"
 ---
 # <a name="casting"></a>Приведение
 
@@ -28,7 +29,7 @@ ms.locfileid: "80190144"
 
 Объект типа `C` может быть визуализирован, как показано на следующем рисунке.
 
-![Класс C с вспомогательными&#45;объектами B и](../cpp/media/vc38zz2.gif "Класс C с вспомогательными&#45;объектами B и") <br/>
+![Класс C с до&#45;ными объектами B и A](../cpp/media/vc38zz2.gif "Класс C с до&#45;ными объектами B и A") <br/>
 Класс C с подобъектами B и A
 
 Для экземпляра класса `C` имеются подчиненный объект `B` и подчиненный объект `A`. Экземпляр `C`, содержащий подчиненные объекты `A` и `B`, является "полным объектом".

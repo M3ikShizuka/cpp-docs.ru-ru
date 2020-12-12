@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о пространстве имен Platform:: Metadata.'
 title: Пространство имен Platform::Metadata
 ms.date: 12/30/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Metadata Namespace
 ms.assetid: e3e114d8-a4b0-47f0-865a-9ce9d7212e86
-ms.openlocfilehash: 9626b3a9d28d28fd52a0d2295af8fda8855cd90c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5dd699c0136c4ee37462dd22f9ee27bec345e8b5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387608"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308397"
 ---
 # <a name="platformmetadata-namespace"></a>Пространство имен Platform::Metadata
 
@@ -26,14 +27,14 @@ namespace Platform {
 }}
 ```
 
-### <a name="members"></a>Участники
+### <a name="members"></a>Члены
 
 Хотя это пространство имен предназначено для внутреннего использования, следующие его члены могут отображаться в браузерах.
 
-|name|Примечание|
+|Имя|Комментарий|
 |----------|------------|
 |Атрибут|Базовый класс для атрибутов.|
-|[Атрибут Platform::Metadata::DefaultMemberAttribute](../cppcx/platform-metadata-defaultmemberattribute-attribute.md)|Указывает предпочтительную вызываемую функцию из нескольких возможных перегруженных функций.|
+|[Platform:: Metadata::D атрибут Ефаултмембераттрибуте](../cppcx/platform-metadata-defaultmemberattribute-attribute.md)|Указывает предпочтительную вызываемую функцию из нескольких возможных перегруженных функций.|
 |[Атрибут Platform::Metadata::FlagsAttribute](../cppcx/platform-metadata-flagsattribute-attribute.md)|Объявляет перечисление как перечисление битовых полей.<br /><br /> В следующем примере показано применение атрибута `Flags` к перечислению.<br /><br /> `[Flags] enum class MyEnumeration { enumA = 1, enumB = 2, enumC = 3}`|
 |[Platform::Metadata::RuntimeClassNameAttribute](../cppcx/platform-metadata-runtimeclassname.md)|Проверяет, что закрытому классу ссылки присвоено допустимое имя класса среды выполнения.|
 
@@ -43,10 +44,10 @@ namespace Platform {
 
 ### <a name="requirements"></a>Требования
 
-**Метаданные:** platform.winmd
+**Метаданные:** Platform. winmd
 
 **Пространство имен:** Platform::Metadata
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Platform](platform-namespace-c-cx.md)
+[Пространство имен платформы](platform-namespace-c-cx.md)

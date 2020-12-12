@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о классе Platform:: Object.'
 title: Класс Platform::Object
 ms.date: 12/30/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - Object class
 ms.assetid: 709e84a8-0bff-471b-bc14-63e424080b5a
-ms.openlocfilehash: dded4602eda9653f50d26ef1b4aae86af96a262b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a190d5a56bb27fb95ac2c2c8bd2ba0e0d0572427
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213038"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308254"
 ---
 # <a name="platformobject-class"></a>Класс Platform::Object
 
@@ -29,11 +30,11 @@ ms.locfileid: "87213038"
 public ref class Object : Object
 ```
 
-### <a name="members"></a>Участники
+### <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Object::Object](#ctor)|Инициализирует новый экземпляр класса Object.|
 
@@ -59,7 +60,7 @@ public ref class Object : Object
 
 **Пространство имен:** Platform
 
-## <a name="objectequals-method"></a><a name="equals"></a>Метод Object:: Equals
+## <a name="objectequals-method"></a><a name="equals"></a> Метод Object:: Equals
 
 Определяет, равен ли указанный объект текущему объекту.
 
@@ -80,7 +81,7 @@ bool Equals(
 
 **`true`** значение, если объекты равны; в противном случае — **`false`** .
 
-## <a name="objectgethashcode-method"></a><a name="gethashcode"></a>Метод Object:: GetHashCode
+## <a name="objectgethashcode-method"></a><a name="gethashcode"></a> Метод Object:: GetHashCode
 
 Возвращает значение идентификатора `IUnknown`* для этого экземпляра, если это COM-объект, или вычисляемое хэш-значение, если это не COM-объект.
 
@@ -94,11 +95,11 @@ public:int GetHashCode();
 
 Числовое значение, которое однозначно идентифицирует этот объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Можно использовать GetHashCode для создание ключей объектов в сопоставлениях. Сравнить хэш-коды можно с помощью [Object:: Equals](#equals). Если эта ветвь выполнения кода очень важна, а `GetHashCode` и `Equals` работают недостаточно быстро, можно перейти вниз на соответствующий уровень COM и выполнять сравнение указателей `IUnknown` в неуправляемом коде.
 
-## <a name="objectgettype-method"></a><a name="gettype"></a>Метод Object:: GetType
+## <a name="objectgettype-method"></a><a name="gettype"></a> Метод Object:: GetType
 
 Возвращает объект [Platform:: Type](../cppcx/platform-type-class.md) , описывающий тип объекта во время выполнения.
 
@@ -112,7 +113,7 @@ Object::GetType();
 
 Объект [Platform:: Type](../cppcx/platform-type-class.md) , описывающий тип объекта во время выполнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Статический [Тип:: GetTypeCode](../cppcx/platform-type-class.md#gettypecode) можно использовать для получения значения [перечисления Platform:: TypeCode](../cppcx/platform-typecode-enumeration.md) , представляющего текущий тип. Это наиболее полезно для встроенных типов. Код типа для любого класса ссылки помимо [Platform:: String](../cppcx/platform-string-class.md) — Object (1).
 
@@ -124,7 +125,7 @@ Object::GetType();
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
 ```
 
-## <a name="objectobject-constructor"></a><a name="ctor"></a>Конструктор объекта:: Object
+## <a name="objectobject-constructor"></a><a name="ctor"></a> Конструктор объекта:: Object
 
 Инициализирует новый экземпляр класса Object.
 
@@ -134,7 +135,7 @@ rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
 public:Object();
 ```
 
-## <a name="objectreferenceequals-method"></a><a name="referenceequals"></a>Метод Object:: ReferenceEquals
+## <a name="objectreferenceequals-method"></a><a name="referenceequals"></a> Метод Object:: ReferenceEquals
 
 Определяет, являются ли указанные экземпляры класса Object одним и тем же экземпляром.
 
@@ -147,16 +148,16 @@ public:static bool ReferenceEquals(  Object^ obj1,   Object^ obj2);
 ### <a name="parameters"></a>Параметры
 
 *obj1*<br/>
-Первый объект для сравнения.
+Первый из сравниваемых объектов.
 
 *obj2*<br/>
-Второй объект для сравнения.
+Второй из сравниваемых объектов.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если два объекта одинаковы; в противном случае — **`false`** .
 
-## <a name="objecttostring-method-ccx"></a><a name="tostring"></a>Метод Object:: ToString (C++/CX)
+## <a name="objecttostring-method-ccx"></a><a name="tostring"></a> Метод Object:: ToString (C++/CX)
 
 Возвращает строку, представляющую текущий объект.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о классе Platform:: OutOfMemoryException'
 title: Класс Platform::OutOfMemoryException
 ms.date: 12/30/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::OutOfMemoryException
 ms.assetid: 49c19f6b-f66c-4448-b861-91dcbf32de2c
-ms.openlocfilehash: ae2a097bad5986805d6c796ebbcbaa8d9020241c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 88908715395863cf034916146255942902a839ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62330357"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308085"
 ---
 # <a name="platformoutofmemoryexception-class"></a>Класс Platform::OutOfMemoryException
 
@@ -25,7 +26,7 @@ ms.locfileid: "62330357"
 public ref class OutOfMemoryException : COMException,    IException,    IPrintable,    IEquatable
 ```
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Remarks
 
 Дополнительные сведения см. в описании класса [COMException](../cppcx/platform-comexception-class.md) .
 
@@ -37,8 +38,8 @@ public ref class OutOfMemoryException : COMException,    IException,    IPrintab
 
 **Пространство имен:** Platform
 
-**Метаданные:** platform.winmd
+**Метаданные:** Platform. winmd
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Класс Platform::COMException](../cppcx/platform-comexception-class.md)
+[Класс Platform:: COMException](../cppcx/platform-comexception-class.md)

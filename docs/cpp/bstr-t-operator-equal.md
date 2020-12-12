@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _bstr_t:: operator ='
 title: _bstr_t::operator =
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - operator = [C++], bstr
 - operator= [C++], bstr
 ms.assetid: fb31bb1b-ce29-4388-b5fd-8dac830cf18a
-ms.openlocfilehash: 5b7f499dd84a67020232aab84966647378daadad
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 78447048a45567df603acf3af0bc51cefbdb187d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181074"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308787"
 ---
 # <a name="_bstr_toperator-"></a>_bstr_t::operator =
 
@@ -34,7 +35,7 @@ _bstr_t& operator=(const _variant_t& var);
 *s1*<br/>
 Объект `_bstr_t`, который требуется присвоить существующему объекту `_bstr_t`.
 
-*s2*<br/>
+*S2*<br/>
 Многобайтовая строка, которую требуется присвоить существующему объекту `_bstr_t`.
 
 *S3*<br/>
@@ -51,4 +52,4 @@ _bstr_t& operator=(const _variant_t& var);
 
 ## <a name="see-also"></a>См. также раздел
 
-[_bstr_t Class](../cpp/bstr-t-class.md)
+[Класс _bstr_t](../cpp/bstr-t-class.md)

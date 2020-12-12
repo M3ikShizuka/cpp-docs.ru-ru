@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о классе Platform:: StringReference'
 title: Класс Platform::StringReference
 ms.date: 12/30/2016
 ms.topic: reference
@@ -9,12 +10,12 @@ f1_keywords:
 - VCCORLIB/Platform::StringReference::GetHSTRING
 - VCCORLIB/Platform::StringReference::GetString
 ms.assetid: 2d09c7ec-0f16-458e-83ed-7225a1b9221e
-ms.openlocfilehash: 4748eecdf67ae5a60ddf97783a934a05e80b406c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5c211776bccbd3ba2fedaf769502f7dad71b6eb6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374664"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307955"
 ---
 # <a name="platformstringreference-class"></a>Класс Platform::StringReference
 
@@ -28,29 +29,29 @@ class StringReference
 
 ### <a name="remarks"></a>Remarks
 
-### <a name="members"></a>Участники
+### <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[СтрокаСправка::StringСправка](#ctor)|Два конструктора для создания экземпляров `StringReference`.|
+|[StringReference:: StringReference](#ctor)|Два конструктора для создания экземпляров `StringReference`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[StringReference::Data](#data)|Возвращает строковые данные как массив значений char16.|
-|[СтрокаСправка::Длина](#length)|Возвращает число символов в строке.|
-|[СтрокаСправка::GetHSTRING](#gethstring)|Возвращает строковые данные как HSTRING.|
-|[СтрокаСправка::GetString](#getstring)|Возвращает строковые данные как `Platform::String^`.|
+|[StringReference::D ATA](#data)|Возвращает строковые данные как массив значений char16.|
+|[StringReference:: Length](#length)|Возвращает число символов в строке.|
+|[StringReference:: Жесстринг](#gethstring)|Возвращает строковые данные как HSTRING.|
+|[StringReference:: GetString](#getstring)|Возвращает строковые данные как `Platform::String^`.|
 
 ### <a name="public-operators"></a>Открытые операторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[СтрокаСправка::оператор](#operator-assign)|Присваивает `StringReference` новому экземпляру `StringReference` .|
-|[StringReference::operator()](#operator-call)|Преобразует `StringReference` в `Platform::String^`.|
+|[StringReference:: operator =](#operator-assign)|Присваивает `StringReference` новому экземпляру `StringReference` .|
+|[StringReference:: operator ()](#operator-call)|Преобразует `StringReference` в `Platform::String^`.|
 
 ### <a name="requirements"></a>Требования
 
@@ -62,7 +63,7 @@ class StringReference
 
 **Заголовок:** vccorlib.h
 
-## <a name="stringreferencedata-method"></a><a name="data"></a>StringReference::Data Метод
+## <a name="stringreferencedata-method"></a><a name="data"></a> StringReference::D метод ATA
 
 Возвращает содержимое этой строки `StringReference` как массив значений char16.
 
@@ -76,7 +77,7 @@ const ::default::char16 * Data() const;
 
 Массив текстовых символов ЮНИКОДА char16.
 
-## <a name="stringreferencegethstring-method"></a><a name="gethstring"></a>StringReference::GetHSTRING Метод
+## <a name="stringreferencegethstring-method"></a><a name="gethstring"></a> Метод StringReference:: Жесстринг
 
 Возвращает содержимое строки как `__abi_HSTRING`.
 
@@ -90,9 +91,9 @@ __abi_HSTRING GetHSTRING() const;
 
 Объект `__abi_HSTRING`, который содержит строковые данные.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="stringreferencegetstring-method"></a><a name="getstring"></a>StringReference::GetString Метод
+## <a name="stringreferencegetstring-method"></a><a name="getstring"></a> Метод StringReference:: GetString
 
 Возвращает содержимое строки как `Platform::String^`.
 
@@ -107,7 +108,7 @@ __declspec(no_release_return) __declspec(no_refcount)
 
 Объект `Platform::String^`, который содержит строковые данные.
 
-## <a name="stringreferencelength-method"></a><a name="length"></a>СтрокаСправка::Метод длины
+## <a name="stringreferencelength-method"></a><a name="length"></a> Метод StringReference:: Length
 
 Возвращает число символов в строке.
 
@@ -121,9 +122,9 @@ unsigned int Length() const;
 
 Целое число без знака, указывающее число символов в строке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="stringreferenceoperator-operator"></a><a name="operator-assign"></a>СтрокаСправка::Оператор» Оператор
+## <a name="stringreferenceoperator-operator"></a><a name="operator-assign"></a> Оператор StringReference:: operator =
 
 Присваивает указанный объект текущему объекту `StringReference`.
 
@@ -146,11 +147,11 @@ StringReference& operator=(const ::default::char16* __strArg);
 
 Ссылка на объект типа `StringReference`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Поскольку `StringReference` это стандартный класс C, а не класс рефери, он не отображается в **браузере объектов**.
+Поскольку `StringReference` является стандартным классом C++, а не классом ссылки, он не отображается в **обозревателе объектов**.
 
-## <a name="stringreferenceoperator--operator"></a><a name="operator-call"></a>StringReference::Оператор() Оператор
+## <a name="stringreferenceoperator--operator"></a><a name="operator-call"></a> Оператор StringReference:: operator ()
 
 Преобразует объект `StringReference` в объект `Platform::String^`.
 
@@ -165,7 +166,7 @@ __declspec(no_release_return) __declspec(no_refcount)
 
 Дескриптор для объекта типа `Platform::String`.
 
-## <a name="stringreferencestringreference-constructor"></a><a name="ctor"></a>StringReference::StringReference Конструктор
+## <a name="stringreferencestringreference-constructor"></a><a name="ctor"></a> Конструктор StringReference:: StringReference
 
 Инициализирует новый экземпляр класса `StringReference`.
 
@@ -189,10 +190,10 @@ StringReference(const ::default::char16* __strArg, size_t __lenArg);
 *__lenArg*<br/>
 Число элементов в `__strArg`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая версия этого конструктора является конструктором по умолчанию. Вторая версия инициализирует новый экземпляра класса `StringReference` из объекта, заданного параметром `__fstrArg`. Третья и четвертая перегрузки инициализируют новый экземпляр класса `StringReference` из массива значений char16. char16 представляет 16-разрядный текстовый символ ЮНИКОДА.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс Platform::StringReference](../cppcx/platform-stringreference-class.md)
+[Класс Platform:: StringReference](../cppcx/platform-stringreference-class.md)

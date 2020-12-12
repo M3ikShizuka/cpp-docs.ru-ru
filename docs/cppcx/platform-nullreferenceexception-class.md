@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о классе Platform:: NullReferenceException'
 title: Класс Platform::NullReferenceException
 ms.date: 12/30/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::NullReferenceException
 ms.assetid: be202577-d898-4716-83cd-e3556fe8a241
-ms.openlocfilehash: f513331757031c6f2f1231bb2c5fcb573d1645b2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 181162163fa2fa1ef2fdc97f3c55db060ef54c2d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62183260"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308267"
 ---
 # <a name="platformnullreferenceexception-class"></a>Класс Platform::NullReferenceException
 
@@ -25,7 +26,7 @@ ms.locfileid: "62183260"
 public ref class NullReferenceException : COMException,    IException,    IPrintable,    IEquatable
 ```
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Remarks
 
 Дополнительные сведения см. в описании класса [COMException](../cppcx/platform-comexception-class.md) .
 
@@ -37,8 +38,8 @@ public ref class NullReferenceException : COMException,    IException,    IPrint
 
 **Пространство имен:** Platform
 
-**Метаданные:** platform.winmd
+**Метаданные:** Platform. winmd
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Класс Platform::COMException](../cppcx/platform-comexception-class.md)
+[Класс Platform:: COMException](../cppcx/platform-comexception-class.md)

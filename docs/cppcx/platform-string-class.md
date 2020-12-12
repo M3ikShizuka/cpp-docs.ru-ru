@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о классе Platform:: String.'
 title: Класс Platform::String
 ms.date: 10/16/2019
 ms.topic: reference
@@ -19,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::String
 ms.assetid: 72dd04a4-a694-40d3-b899-eaa0b503eab8
-ms.openlocfilehash: f8b5888ee2d28a3d870b5f0eeab143b189c88180
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 66e545b529ccd229b3c76395e265a006331d8652
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87185259"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307981"
 ---
 # <a name="platformstring-class"></a>Класс Platform::String
 
@@ -102,7 +103,7 @@ public ref class String sealed : Object,
 
 **Заголовок** vccorlib.h (включается по умолчанию)
 
-## <a name="stringbegin-method"></a><a name="begin"></a>Метод String:: Begin
+## <a name="stringbegin-method"></a><a name="begin"></a> Метод String:: Begin
 
 Возвращает указатель на начало текущей строки.
 
@@ -116,7 +117,7 @@ char16* Begin();
 
 Указатель на начало текущей строки.
 
-## <a name="stringcompareordinal-method"></a><a name="compareordinal"></a>Метод String:: CompareOrdinal
+## <a name="stringcompareordinal-method"></a><a name="compareordinal"></a> Метод String:: CompareOrdinal
 
 Статический метод, сравнивающий два `String` объекта, оценивая числовые значения соответствующих символов в двух строковых значениях, представленных объектами.
 
@@ -144,7 +145,7 @@ static int CompareOrdinal( String^ str1, String^ str2 );
 |0|Значение `str1` равно значению `str2`.|
 |1|Значение `str1` больше значения `str2`.|
 
-## <a name="stringconcat-method"></a><a name="concat"></a>Метод String:: Concat
+## <a name="stringconcat-method"></a><a name="concat"></a> Метод String:: Concat
 
 Объединяет значения двух объектов String.
 
@@ -168,7 +169,7 @@ String^ Concat( String^ str1, String^ str2);
 
 Если `str1` имеет значение `null`, а `str2` — значение, отличное от null, возвращается значение `str1`. Если `str2` имеет значение `null`, а `str1` — значение, отличное от null, возвращается значение `str2`. Если оба параметра `str1` и `str2` имеют значение `null`, возвращается пустая строка (L"").
 
-## <a name="stringdata-method"></a><a name="data"></a>Строка::D метод ATA
+## <a name="stringdata-method"></a><a name="data"></a> Строка::D метод ATA
 
 Возвращает указатель на начало буфера данных объекта в виде массива `char16` элементов () в стиле C **`wchar_t`** .
 
@@ -182,11 +183,11 @@ const char16* Data();
 
 Указатель на начало `const char16` массива символов Юникода ( `char16` является typedef для **`wchar_t`** ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот метод для преобразования из `Platform::String^` в `wchar_t*`. Когда объект `String` выходит за пределы области, указатель Data больше не является гарантированно допустимым. Чтобы сохранить данные за пределами времени существования исходного `String` объекта, используйте [wcscpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) , чтобы скопировать массив в память, выделенную самому себе.
 
-## <a name="stringdispose-method"></a><a name="dispose"></a>String::D метод Dispose
+## <a name="stringdispose-method"></a><a name="dispose"></a> String::D метод Dispose
 
 Высвобождает ресурсы.
 
@@ -196,7 +197,7 @@ const char16* Data();
 virtual override void Dispose();
 ```
 
-## <a name="stringend-method"></a><a name="end"></a>Метод String:: end
+## <a name="stringend-method"></a><a name="end"></a> Метод String:: end
 
 Возвращает указатель на позицию после конца текущей строки.
 
@@ -210,11 +211,11 @@ char16* End();
 
 Указатель на позицию после конца текущей строки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 End () возвращает значение начала () + length.
 
-## <a name="stringequals-method"></a><a name="equals"></a>Метод String:: Equals
+## <a name="stringequals-method"></a><a name="equals"></a> Метод String:: Equals
 
 Указывает, совпадает ли значение заданного объекта String со значением текущего объекта.
 
@@ -234,11 +235,11 @@ bool String::Equals(String^ str);
 
 **`true`**`str`значение, если значение равно текущему объекту; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод эквивалентен статической строке: [: CompareOrdinal](#compareordinal). В первой перегрузке предполагается, что параметр `str` может быть приведен к объекту String^.
 
-## <a name="stringgethashcode-method"></a><a name="gethashcode"></a>Метод String:: GetHashCode
+## <a name="stringgethashcode-method"></a><a name="gethashcode"></a> Метод String:: GetHashCode
 
 Возвращает хэш-код данного экземпляра.
 
@@ -252,7 +253,7 @@ virtual override int GetHashCode();
 
 Хэш-код данного экземпляра.
 
-## <a name="stringisempty-method"></a><a name="isempty"></a>Метод String:: IsEmpty
+## <a name="stringisempty-method"></a><a name="isempty"></a> Метод String:: IsEmpty
 
 Указывает, является ли объект String пустым.
 
@@ -266,7 +267,7 @@ bool IsEmpty();
 
 **`true`**`String`значение, если текущий объект равен **null** или является пустой строкой (L ""); в противном случае — значение **`false`** .
 
-## <a name="stringisfastpass-method"></a><a name="isfastpass"></a>Метод String:: IsFastPass
+## <a name="stringisfastpass-method"></a><a name="isfastpass"></a> Метод String:: IsFastPass
 
 Указывает, участвует ли текущий объект строки в операции *быстрой передачи* . В операции быстрой передачи подсчет ссылок приостанавливается.
 
@@ -280,11 +281,11 @@ bool IsFastPass();
 
 **`true`**`String`значение, если текущий объект является быстрым, в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 При вызове функции, где в качестве параметра используется объект с подсчетом ссылок и вызываемая функция обращается к этому объекту только для чтения, компилятор может безопасно приостановить подсчет ссылок, чтобы повысить производительность вызова. Это свойство не дает никакой дополнительной пользы для вашего кода. Система обрабатывает все сведения.
 
-## <a name="stringlength-method"></a><a name="length"></a>Метод String:: Length
+## <a name="stringlength-method"></a><a name="length"></a> Метод String:: Length
 
 Извлекает количество символов в текущем `String` объекте.
 
@@ -298,7 +299,7 @@ unsigned int Length();
 
 Количество символов в текущем `String` объекте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Длина объекта String без символов равна нулю. Длина следующего объекта String равна 5.
 
@@ -309,7 +310,7 @@ int len = str->Length(); //len = 5
 
 Массив символов, возвращаемый [строкой::D ATA](#data) имеет один дополнительный символ, который является завершающим нулем или "\ 0". Этот символ также имеет длину 2 байта.
 
-## <a name="stringoperator-operator"></a><a name="operator-plus"></a>Оператор string:: operator +
+## <a name="stringoperator-operator"></a><a name="operator-plus"></a> Оператор string:: operator +
 
 Сцепляет два [строковых](../cppcx/platform-string-class.md) объекта в новый [строковый](../cppcx/platform-string-class.md) объект.
 
@@ -331,11 +332,11 @@ bool String::operator+( String^ str1, String^ str2);
 
 **`true`** Если *str1* равен *str2*; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот оператор создает объект `String^`, содержащий данные из двух операндов. Используйте его для удобства, если производительность не играет решающей роли. Несколько вызовов "`+`" в функции, скорее всего, не будут иметь последствий, но если вы имеете дело с большими объектами или текстовыми данными в сложном цикле, используйте стандартные механизмы и типы C++.
 
-## <a name="stringoperator-operator"></a><a name="operator-equality"></a>Оператор string:: operator = =
+## <a name="stringoperator-operator"></a><a name="operator-equality"></a> Оператор string:: operator = =
 
 Указывает, равны ли текстовые значения двух указанных объектов String.
 
@@ -348,7 +349,7 @@ bool String::operator==( String^ str1, String^ str2);
 ### <a name="parameters"></a>Параметры
 
 *str1*<br/>
-Первый сравниваемый объект `String`.
+Первый из сравниваемых объектов `String`.
 
 *str2*<br/>
 Второй сравниваемый объект `String`.
@@ -357,11 +358,11 @@ bool String::operator==( String^ str1, String^ str2);
 
 **`true`** значение, если содержимое `str1` равно `str2` ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот оператор эквивалентен [String:: CompareOrdinal](#compareordinal).
 
-## <a name="stringoperatorgt"></a><a name="operator-greater-than"></a>String:: оператор&gt;
+## <a name="stringoperatorgt"></a><a name="operator-greater-than"></a> String:: оператор&gt;
 
 Указывает, превышает ли значение одного `String` объекта значение второго `String` объекта.
 
@@ -381,13 +382,13 @@ bool String::operator>( String^ str1, String^ str2);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-**`true`**, если значение `str1` больше значения `str2` ; в противном случае — **`false`** .
+**`true`** , если значение `str1` больше значения `str2` ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот оператор эквивалентен явному вызову [String:: CompareOrdinal](#compareordinal) и получению результата больше нуля.
 
-## <a name="stringoperatorgt"></a><a name="operator-greater-than-or-equals"></a>String:: оператор&gt;=
+## <a name="stringoperatorgt"></a><a name="operator-greater-than-or-equals"></a> String:: оператор&gt;=
 
 Указывает, является ли значение одного `String` объекта большим или равным значению второго `String` объекта.
 
@@ -407,9 +408,9 @@ bool String::operator>=( String^ str1, String^ str2);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-**`true`**, если значение `str1` больше или равно значению `str2` ; в противном случае — **`false`** .
+**`true`** , если значение `str1` больше или равно значению `str2` ; в противном случае — **`false`** .
 
-## <a name="stringoperator"></a><a name="operator-inequality"></a>String:: operator! =
+## <a name="stringoperator"></a><a name="operator-inequality"></a> String:: operator! =
 
 Указывает, имеют ли два указанных `String` объекта разные значения.
 
@@ -422,7 +423,7 @@ bool String::operator!=( String^ str1, String^ str2);
 ### <a name="parameters"></a>Параметры
 
 *str1*<br/>
-Первый сравниваемый объект `String`.
+Первый из сравниваемых объектов `String`.
 
 *str2*<br/>
 Второй сравниваемый объект `String`.
@@ -431,7 +432,7 @@ bool String::operator!=( String^ str1, String^ str2);
 
 **`true`**`str1`, если не равно `str2` ; в противном **`false`** случае —.
 
-## <a name="stringoperatorlt"></a><a name="operator-less-than"></a>String:: оператор&lt;
+## <a name="stringoperatorlt"></a><a name="operator-less-than"></a> String:: оператор&lt;
 
 Указывает, меньше ли значение одного `String` объекта, чем значение второго `String` объекта.
 
@@ -453,7 +454,7 @@ bool String::operator<( String^ str1, String^ str2);
 
 **`true`** Если значение *str1* меньше значения *str2*; в противном случае — **`false`** .
 
-## <a name="stringstring-constructor"></a><a name="ctor"></a>Конструктор строк:: String
+## <a name="stringstring-constructor"></a><a name="ctor"></a> Конструктор строк:: String
 
 Инициализирует новый экземпляр `String` класса с копией входных строковых данных.
 
@@ -467,13 +468,13 @@ String(char16* s, unsigned int n);
 
 ### <a name="parameters"></a>Параметры
 
-*#d0*<br/>
+*s*<br/>
 Серия расширенных символов, инициализирующих строку.  char16
 
 *n*<br/>
 Число, указывающее длину строки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если важна производительность и вы управляете временем существования исходной строки, можно использовать [Platform:: StringReference](../cppcx/platform-stringreference-class.md) вместо String.
 
@@ -483,7 +484,7 @@ String(char16* s, unsigned int n);
 String^ s = L"Hello!";
 ```
 
-## <a name="stringtostring"></a><a name="tostring"></a>String:: ToString
+## <a name="stringtostring"></a><a name="tostring"></a> String:: ToString
 
 Возвращает объект, значение которого совпадает с `String` текущей строкой.
 

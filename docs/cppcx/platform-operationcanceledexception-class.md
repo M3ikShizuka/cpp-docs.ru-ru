@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о классе Platform:: OperationCanceledException'
 title: Класс Platform::OperationCanceledException
 ms.date: 12/30/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::OperationCanceledException
 ms.assetid: 5351bc20-5408-423a-8169-f09acc8a3fbb
-ms.openlocfilehash: f129c49077a5c6bde54c5afb0ede2cfd9adf9db2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0197a0979fa68dfb43800a009673fc36f575b8d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62184084"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97308228"
 ---
 # <a name="platformoperationcanceledexception-class"></a>Класс Platform::OperationCanceledException
 
@@ -25,7 +26,7 @@ ms.locfileid: "62184084"
 public ref class OperationCanceledException : COMException,    IException,    IPrintable,    IEquatable
 ```
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Remarks
 
 Дополнительные сведения см. в описании класса [COMException](../cppcx/platform-comexception-class.md) .
 
@@ -37,8 +38,8 @@ public ref class OperationCanceledException : COMException,    IException,    IP
 
 **Пространство имен:** Platform
 
-**Метаданные:** platform.winmd
+**Метаданные:** Platform. winmd
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Класс Platform::COMException](../cppcx/platform-comexception-class.md)
+[Класс Platform:: COMException](../cppcx/platform-comexception-class.md)
