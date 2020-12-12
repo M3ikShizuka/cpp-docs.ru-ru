@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: `/Zc:auto` (вывод типа переменной)'
 title: /Zc:auto (выведение типа переменной)
 ms.date: 02/28/2018
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: 5f5bc102-44c3-4688-bbe1-080594dcee5c
-ms.openlocfilehash: 6bb1c8f2b14c483cbd46ecb6534a33db020e23e0
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: d20f377fc653e9c3cceb5c3e81b5e5e8a815bcad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502834"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114719"
 ---
 # <a name="zcauto-deduce-variable-type"></a>`/Zc:auto` (Вывод типа переменной)
 
@@ -24,7 +25,7 @@ ms.locfileid: "91502834"
 
 > **`/Zc:auto`**[**`-`**]
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Стандарт C++ определяет исходное и измененное значение **`auto`** ключевого слова. До Visual Studio 2010 ключевое слово объявляет переменную в автоматическом классе хранения. то есть переменная с локальным временем существования. Начиная с Visual Studio 2010, ключевое слово выводит тип переменной из выражения инициализации объявления. Используйте **`/Zc:auto`** параметр компилятора, чтобы сообщить компилятору об использовании измененного значения **`auto`** ключевого слова. Параметр включен по **`/Zc:auto`** умолчанию. [`/permissive-`](permissive-standards-conformance.md)Параметр не изменяет значение по умолчанию для **`/Zc:auto`** .
 

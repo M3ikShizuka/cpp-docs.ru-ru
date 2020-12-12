@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: использование CString'
 title: Использование CString
 ms.date: 06/18/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - CString objects, reference counting
 - CString class (Visual C++)
 ms.assetid: ed018aaf-8b10-46f9-828c-f9c092dc7609
-ms.openlocfilehash: 8ebf3441c7d8856fe412e2efed4c717b01ced362
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f0afea345f2a01d66cbb541aa2a6c958c28365a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219018"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166399"
 ---
 # <a name="using-cstring"></a>Использование CString
 
@@ -23,7 +24,7 @@ ms.locfileid: "87219018"
 
 `CStringW`Объект содержит **`wchar_t`** тип и поддерживает строки в Юникоде. `CStringA`Объект содержит **`char`** тип и поддерживает однобайтовые и многобайтовые (MBCS) строки. `CString`Объект поддерживает либо **`char`** тип, либо тип в **`wchar_t`** зависимости от того, ОПРЕДЕЛЕН ли символ MBCS или символ Юникода во время компиляции.
 
-Объект `CString` хранит символьные данные в объекте `CStringData`. `CString`принимает строки в стиле C, заканчивающиеся нулем. `CString`отслеживает длину строки для повышения производительности, но также оставляет символ NULL в хранимых символьных данных для поддержки преобразования в ЛПКВСТР. `CString`включает признак конца null при экспорте строки в стиле C. Можно вставить значение NULL в другие расположения в `CString` , но это может привести к непредвиденным результатам.
+Объект `CString` хранит символьные данные в объекте `CStringData`. `CString` принимает строки в стиле C, заканчивающиеся нулем. `CString` отслеживает длину строки для повышения производительности, но также оставляет символ NULL в хранимых символьных данных для поддержки преобразования в ЛПКВСТР. `CString` включает признак конца null при экспорте строки в стиле C. Можно вставить значение NULL в другие расположения в `CString` , но это может привести к непредвиденным результатам.
 
 Следующий набор строковых классов можно использовать без привязки библиотеки MFC, как с поддержкой CRT, так и без нее: `CAtlString`, `CAtlStringA` и `CAtlStringW`.
 
@@ -68,7 +69,7 @@ int main() {
 [Поддержка Юникода и многобайтовой кодировки (MBCS)](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)<br/>
 Описывает реализацию поддержки Юникода и многобайтовой кодировки в MFC.
 
-## <a name="reference"></a>Справочник
+## <a name="reference"></a>Ссылка
 
 [CStringT](../atl-mfc-shared/reference/cstringt-class.md)<br/>
 Содержит справочные сведения о классе `CStringT`.

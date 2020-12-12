@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ктимеспан Class'
 title: Класс Ктимеспан
 ms.date: 10/18/2018
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - shared classes, CTimeSpan
 - time, elapsed
 ms.assetid: ee1e42f6-1839-477a-8435-fb26ad475140
-ms.openlocfilehash: 0c13aa0d8f6c46db3b018283ab2a408a3f9531e1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b15fa247baaa4de77c5caab12d584a80321b9420
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832026"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166581"
 ---
 # <a name="ctimespan-class"></a>Класс Ктимеспан
 
@@ -40,7 +41,7 @@ ms.locfileid: "88832026"
 class CTimeSpan
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -71,7 +72,7 @@ class CTimeSpan
 |[operator + =-=](#operator_add_eq_-_eq)|Добавляет и вычитает `CTimeSpan` объект из этого объекта `CTimeSpan` .|
 |[operator = = < и т. д.](#ctimespan_comparison_operators)|Сравнивает два значения относительного времени.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `CTimeSpan` не имеет базового класса.
 
@@ -141,7 +142,7 @@ CTimeSpan(
 *лдайс*, *нхаурс*, *нминс*, *нсекс*<br/>
 Дни, часы, минуты и секунды соответственно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Все эти конструкторы создают новый `CTimeSpan` объект, инициализируемый с указанным относительное время. Каждый конструктор описан ниже.
 
@@ -198,7 +199,7 @@ CString Format(UINT nID) const;
 
 `CString`Объект, содержащий отформатированное время.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Отладочная версия библиотеки проверяет коды форматирования и утверждает, если код отсутствует в списке выше.
 
@@ -218,7 +219,7 @@ LONGLONG GetDays() const throw();
 
 Возвращает число полных 24-часовых дней в интервале времени. Это значение может быть отрицательным, если временной диапазон является отрицательным.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Обратите внимание, что переход на летнее время может привести `GetDays` к возврату потенциально неудивительного результата. Например, если действует ЛЕТНее время, `GetDays` выводится число дней между 1 апреля и 1 мая как 29, а не 30, поскольку один день в апреле сокращается на час и поэтому не считается полным днем.
 
@@ -352,7 +353,7 @@ CTimeSpan operator-(CTimeSpan span) const throw();
 
 `CTimeSpan`Объект, представляющий результат операции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эти два оператора позволяют добавлять и вычитать `CTimeSpan` объекты друг за другом.
 
@@ -378,7 +379,7 @@ CTimeSpan& operator-=(CTimeSpan span) throw();
 
 Обновленный `CTimeSpan` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эти операторы позволяют добавлять и вычитать `CTimeSpan` объект из этого объекта `CTimeSpan` .
 
@@ -399,7 +400,7 @@ CArchive& Serialize64(CArchive& ar);
 
 ### <a name="parameters"></a>Параметры
 
-*AR*<br/>
+*ar*<br/>
 `CArchive`Объект, который требуется обновить.
 
 ### <a name="return-value"></a>Возвращаемое значение

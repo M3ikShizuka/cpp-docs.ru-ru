@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кстрбуфт Class'
 title: Класс Кстрбуфт
 ms.date: 10/18/2018
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - CStrBufT class
 - shared classes, CStrBufT
 ms.assetid: 6b50fa8f-87e8-4ed4-a229-157ce128710f
-ms.openlocfilehash: 4d9d0b403e572d6fdea65355702467c89587cc3a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4cc38f13d740b7def65c6f958d53af7b367adcb6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219083"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166620"
 ---
 # <a name="cstrbuft-class"></a>Класс Кстрбуфт
 
@@ -36,9 +37,9 @@ class CStrBufT
 *тчартипе*<br/>
 Символьный тип `CStrBufT` класса. Может применяться один из перечисленных ниже типов.
 
-- **`char`**(для строк символов ANSI)
+- **`char`** (для строк символов ANSI)
 
-- **`wchar_t`**(для символьных строк Юникода)
+- **`wchar_t`** (для символьных строк Юникода)
 
 - TCHAR (для символьных строк ANSI и Unicode)
 
@@ -54,7 +55,7 @@ class CStrBufT
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Кстрбуфт:: Кстрбуфт](#cstrbuft)|Конструктор для объекта строкового буфера.|
 
@@ -78,9 +79,9 @@ class CStrBufT
 |[Кстрбуфт:: AUTO_LENGTH](#auto_length)|Автоматически определять новую длину строки в выпуске.|
 |[Кстрбуфт:: SET_LENGTH](#set_length)|Установка длины строкового объекта во время выполнения в буфере|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот класс используется в качестве класса-оболочки для замены вызовов функций [GetBuffer](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) [релеасебуффер](../../atl-mfc-shared/reference/csimplestringt-class.md#releasebuffer), [жетбуфферсетленгс](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffersetlength) и `ReleaseBuffer` .
+Этот класс используется в качестве класса-оболочки для замены вызовов функций [](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) [релеасебуффер](../../atl-mfc-shared/reference/csimplestringt-class.md#releasebuffer), [жетбуфферсетленгс](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffersetlength) и `ReleaseBuffer` .
 
 В основном разработан в качестве вспомогательного класса, `CStrBufT` предоставляет разработчику удобный способ работы с символьным буфером объекта String, не беспокоясь о том, как или когда вызывать `ReleaseBuffer` . Это возможно потому, что объект-оболочка выходит за пределы области действия в случае исключения или нескольких путей выхода из кода. вызов его деструктора для освобождения строкового ресурса.
 
@@ -88,7 +89,7 @@ class CStrBufT
 
 **Заголовок:** атлсимпстр. h
 
-## <a name="cstrbuftauto_length"></a><a name="auto_length"></a>Кстрбуфт:: AUTO_LENGTH
+## <a name="cstrbuftauto_length"></a><a name="auto_length"></a> Кстрбуфт:: AUTO_LENGTH
 
 Автоматически определять новую длину строки в выпуске.
 
@@ -96,11 +97,11 @@ class CStrBufT
 static const DWORD AUTO_LENGTH = 0x01;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Автоматически определять новую длину строки в выпуске. Строка должна завершаться нулем.
 
-## <a name="cstrbuftcstrbuft"></a><a name="cstrbuft"></a>Кстрбуфт:: Кстрбуфт
+## <a name="cstrbuftcstrbuft"></a><a name="cstrbuft"></a> Кстрбуфт:: Кстрбуфт
 
 Конструирует объект buffer.
 
@@ -124,13 +125,13 @@ explicit CStrBufT(StringType& str) throw(...);
 
 - SET_LENGTH длина строки задается при вызове [ксимплестрингт::](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) GetString.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Создает строковый буфер для связанного строкового объекта. Во время создания вызывается [ксимплестрингт::-buffer](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) или [Ксимплестрингт:: жетбуфферсетленгс](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffersetlength) .
 
 Обратите внимание, что конструктор копий имеет значение **`private`** .
 
-## <a name="cstrbuftoperator-pcxstr"></a><a name="operator_pcxstr"></a>Кстрбуфт:: operator ПККССТР
+## <a name="cstrbuftoperator-pcxstr"></a><a name="operator_pcxstr"></a> Кстрбуфт:: operator ПККССТР
 
 Прямой доступ к символам, хранящимся в связанном строковом объекте, в виде строки в стиле C.
 
@@ -142,11 +143,11 @@ operator PCXSTR() const throw();
 
 Указатель символа на данные строки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите эту функцию, чтобы вернуть указатель на символьный буфер строкового объекта. Содержимое объекта String не может быть изменено с помощью этого указателя.
 
-## <a name="cstrbuftoperator-pxstr"></a><a name="operator_pxstr"></a>Кстрбуфт:: operator ПКССТР
+## <a name="cstrbuftoperator-pxstr"></a><a name="operator_pxstr"></a> Кстрбуфт:: operator ПКССТР
 
 Прямой доступ к символам, хранящимся в связанном строковом объекте, в виде строки в стиле C.
 
@@ -158,11 +159,11 @@ operator PXSTR() throw();
 
 Указатель символа на данные строки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите эту функцию, чтобы вернуть указатель на символьный буфер строкового объекта. Разработчик может изменить содержимое строкового объекта с помощью этого указателя.
 
-## <a name="cstrbuftpcxstr"></a><a name="pcxstr"></a>Кстрбуфт::P ККССТР
+## <a name="cstrbuftpcxstr"></a><a name="pcxstr"></a> Кстрбуфт::P ККССТР
 
 Указатель на константную строку.
 
@@ -170,7 +171,7 @@ operator PXSTR() throw();
 typedef CSimpleStringT<TCharType>::PCXSTR PCXSTR;
 ```
 
-## <a name="cstrbuftpxstr"></a><a name="pxstr"></a>Кстрбуфт::P КССТР
+## <a name="cstrbuftpxstr"></a><a name="pxstr"></a> Кстрбуфт::P КССТР
 
 Указатель на строку.
 
@@ -178,7 +179,7 @@ typedef CSimpleStringT<TCharType>::PCXSTR PCXSTR;
 typedef CSimpleStringT<TCharType>::PXSTR PXSTR;
 ```
 
-## <a name="cstrbuftset_length"></a><a name="set_length"></a>Кстрбуфт:: SET_LENGTH
+## <a name="cstrbuftset_length"></a><a name="set_length"></a> Кстрбуфт:: SET_LENGTH
 
 Задает длину объекта строки в `GetBuffer` момент времени.
 
@@ -186,13 +187,13 @@ typedef CSimpleStringT<TCharType>::PXSTR PXSTR;
 static const DWORD SET_LENGTH = 0x02;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Задание длины строкового объекта во время выполнения в буфере.
 
 Определяет, вызываются ли [ксимплестрингт::](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) GetString и [Ксимплестрингт:: жетбуфферсетленгс](../../atl-mfc-shared/reference/csimplestringt-class.md#getbuffersetlength) при создании объекта строкового буфера.
 
-## <a name="cstrbuftsetlength"></a><a name="setlength"></a>Кстрбуфт:: SetLength
+## <a name="cstrbuftsetlength"></a><a name="setlength"></a> Кстрбуфт:: SetLength
 
 Задает длину символьного буфера.
 
@@ -208,11 +209,11 @@ void SetLength(int nLength);
 > [!NOTE]
 > Значение должно быть меньше или равно минимальной длине буфера, указанной в конструкторе `CStrBufT` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите эту функцию, чтобы задать длину строки, представленной объектом buffer.
 
-## <a name="cstrbuftstringtype"></a><a name="stringtype"></a>Кстрбуфт:: Стрингтипе
+## <a name="cstrbuftstringtype"></a><a name="stringtype"></a> Кстрбуфт:: Стрингтипе
 
 Строковый тип, буфер которого должен управляться специализациями этого шаблона класса.
 
@@ -220,9 +221,9 @@ void SetLength(int nLength);
 typedef CSimpleStringT<TCharType> StringType;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`TCharType`символьный тип, используемый для специализации шаблона класса.
+`TCharType` символьный тип, используемый для специализации шаблона класса.
 
 ## <a name="see-also"></a>См. также раздел
 

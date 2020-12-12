@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: поддержка Юникода и многобайтовой кодировки (MBCS)'
 title: Поддержка Юникода и многобайтовой кодировки
 ms.date: 01/09/2017
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Unicode [C++], string objects
 - strings [C++], Unicode
 - strings [C++], character set support
-ms.openlocfilehash: efa90acd169aeb8739b0bf97a5ab27026cc80cc6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9e9a09777e835872a5c8bc6613460478acf9be9b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831987"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166412"
 ---
 # <a name="unicode-and-multibyte-character-set-mbcs-support"></a>Поддержка Юникода и многобайтовой кодировки
 
@@ -25,7 +26,7 @@ ms.locfileid: "88831987"
 
 - Многобайтовые [кодировки (MBCS)](#mfc-support-for-mbcs-strings), **`char`** основанные на одиночных или двухбайтовых символах и строки, закодированные в кодировке, зависящей от языкового стандарта.
 
-Корпорация Майкрософт рекомендует использовать библиотеки Юникода MFC для всех новых сред разработки, а библиотеки MBCS не рекомендуются в Visual Studio 2013 и Visual Studio 2015. Этот режим больше не используется. Предупреждения об устаревании многобайтовых кодировок были удалены в Visual Studio 2017.
+Корпорация Майкрософт рекомендует использовать библиотеки Юникода MFC для всех новых сред разработки, а библиотеки MBCS не рекомендуются в Visual Studio 2013 и Visual Studio 2015. Это больше не требуется. Предупреждения об устаревании многобайтовых кодировок были удалены в Visual Studio 2017.
 
 ## <a name="mfc-support-for-unicode-strings"></a>Поддержка MFC для строк в Юникоде
 
@@ -35,30 +36,30 @@ ms.locfileid: "88831987"
 
 :::row:::
    :::column span="":::
-      MFC*версии*U. lib \
-      MFC*версии*обновления. LIB
-      МФКМ*версия*U. lib \
-      МФКМ*версия*обновления. LIB
-      МФКС*версия*U. lib \
-      МФКС*версия*обновления. LIB
+      MFC *версии* U. lib \
+      MFC *версии* обновления. LIB
+      МФКМ *версия* U. lib \
+      МФКМ *версия* обновления. LIB
+      МФКС *версия* U. lib \
+      МФКС *версия* обновления. LIB
       УАФКСКВ. LIB
       УАФКСКВД. LIB
    :::column-end:::
    :::column span="":::
-      Библиотека MFC*версии*U. pdb \
-      MFC*версии*обновления. Файле
-      МФКМ*версия*U. pdb \
-      МФКМ*версия*обновления. Файле
-      МФКС*версия*U. pdb \
-      МФКС*версия*обновления. Файле
+      Библиотека MFC *версии* U. pdb \
+      MFC *версии* обновления. Файле
+      МФКМ *версия* U. pdb \
+      МФКМ *версия* обновления. Файле
+      МФКС *версия* U. pdb \
+      МФКС *версия* обновления. Файле
       УАФКСКВ. Файле
       УАФКСКВД. ФАЙЛЕ
    :::column-end:::
    :::column span="":::
-      MFC*версии*U.DLL \
-      MFC*версии*UD.DLL \
-      МФКМ*версия*U.DLL \
-      UD.DLL*версии* мфкм
+      MFC *версии* U.DLL \
+      MFC *версии* UD.DLL \
+      МФКМ *версия* U.DLL \
+      UD.DLL *версии* мфкм
    :::column-end:::
 :::row-end:::
 
@@ -110,7 +111,7 @@ ms.locfileid: "88831987"
 > [!NOTE]
 > Символы _MBCS и _UNICODE являются взаимоисключающими.
 
-Сопоставления универсальных текстовых функций для всех подпрограмм обработки строк во время выполнения обсуждаются в [справочнике по библиотеке времени выполнения C](../c-runtime-library/c-run-time-library-reference.md). Список см. в разделе [интернационализации](../c-runtime-library/internationalization.md).
+Сопоставления универсальных текстовых функций для всех подпрограмм обработки строк во время выполнения обсуждаются в [справочнике по библиотеке C Run-Time](../c-runtime-library/c-run-time-library-reference.md). Список см. в разделе [интернационализации](../c-runtime-library/internationalization.md).
 
 Аналогичным образом, `CString` методы реализуются с помощью универсальных сопоставлений типов данных. Чтобы включить многобайтовую кодировку и Юникод, MFC использует TCHAR для **`char`** OR **`wchar_t`** , LPTSTR для **`char`** <strong>\*</strong> или `wchar_t*` и LPCTSTR для **const char** <strong>\*</strong> или `const wchar_t*` . Они обеспечивают правильное сопоставление для MBCS или Юникода.
 

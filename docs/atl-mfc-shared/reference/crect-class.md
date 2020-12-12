@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Крект Class'
 title: Класс Крект
 ms.date: 11/06/2018
 f1_keywords:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - LPRECT operator
 - RECT structure
 ms.assetid: dee4e752-15d6-4db4-b68f-1ad65b2ed6ca
-ms.openlocfilehash: f45090971e8dbb89ae281b408cc3a14e102ffe17
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 229ec3b54f1b128641034bc763d2a62c0a6fe0a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502885"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166685"
 ---
 # <a name="crect-class"></a>Класс Крект
 
@@ -51,7 +52,7 @@ ms.locfileid: "91502885"
 class CRect : public tagRECT
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -89,7 +90,7 @@ class CRect : public tagRECT
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Название|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Крект:: operator —](#operator_-)|Вычитает заданные смещения из `CRect` или Deflate `CRect` и возвращает результирующий объект `CRect` .|
 |[Крект:: operator ЛПКРЕКТ](#operator_lpcrect)|Преобразует `CRect` в `LPCRECT`.|
@@ -105,7 +106,7 @@ class CRect : public tagRECT
 |[Крект:: operator-=](#operator_-_eq)|Вычитает заданные смещения из `CRect` или Deflate `CRect` .|
 |[Крект:: operator = =](#operator_eq_eq)|Определяет `CRect` , равен ли прямоугольник.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `CRect` также включает функции элементов для работы с `CRect` объектами и `RECT` структурами Windows.
 
@@ -145,7 +146,7 @@ const CPoint& BottomRight() const throw();
 
 Координаты правого нижнего угла прямоугольника.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эту функцию можно использовать для получения или установки правого нижнего угла прямоугольника. Задайте угол, используя эту функцию в левой части оператора присваивания.
 
@@ -249,7 +250,7 @@ void CopyRect(LPCRECT lpSrcRect) throw();
 ### <a name="parameters"></a>Параметры
 
 *лпсркрект*<br/>
-Указывает на структуру [RECT](/windows/win32/api/windef/ns-windef-rect) или объект Rect `CRect` , который необходимо скопировать.
+Указывает на структуру [](/windows/win32/api/windef/ns-windef-rect) или объект Rect `CRect` , который необходимо скопировать.
 
 ### <a name="example"></a>Пример
 
@@ -318,7 +319,7 @@ CRect(POINT topLeft, POINT bottomRight) throw();
 *bottomRight*<br/>
 Задает нижний правый индекс `CRect` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если аргументы не заданы, `left` члены,, `top` `right` и `bottom` имеют значение 0.
 
@@ -399,7 +400,7 @@ void DeflateRect(int l, int t, int r, int b) throw();
 *b*<br/>
 Указывает число единиц, которое будет сведено к концу `CRect` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Для этого `DeflateRect` добавляет единицы измерения слева и сверху и вычитает единицы из правой и нижней части. Параметры — это `DeflateRect` значения со знаком; положительные значения преобразуются в неструктурированные `CRect` и отрицательные.
 
@@ -431,7 +432,7 @@ BOOL EqualRect(LPCRECT lpRect) const throw();
 ### <a name="parameters"></a>Параметры
 
 *лпрект*<br/>
-Указывает на структуру [RECT](/windows/win32/api/windef/ns-windef-rect) или объект Rect `CRect` , который содержит координаты прямоугольника в верхнем левом и нижнем правом углу.
+Указывает на структуру [](/windows/win32/api/windef/ns-windef-rect) или объект Rect `CRect` , который содержит координаты прямоугольника в верхнем левом и нижнем правом углу.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -471,7 +472,7 @@ int Height() const throw();
 
 Высота `CRect` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Результирующее значение может быть отрицательным.
 
@@ -525,7 +526,7 @@ void InflateRect(int l, int t, int r,  int b) throw();
 *b*<br/>
 Задает число единиц, которое будет изменяться снизу `CRect` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Для этого `InflateRect` вычитает единицы слева и сверху и добавляет единицы вправо и вниз. Параметры `InflateRect` имеют значения со знаком; положительные значения преобразуются в неровные `CRect` , а отрицательные — в неизменном виде.
 
@@ -552,7 +553,7 @@ BOOL IntersectRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
 ### <a name="parameters"></a>Параметры
 
 *lpRect1*<br/>
-Указывает на структуру [RECT](/windows/win32/api/windef/ns-windef-rect) или объект Rect `CRect` , который содержит исходный прямоугольник.
+Указывает на структуру [](/windows/win32/api/windef/ns-windef-rect) или объект Rect `CRect` , который содержит исходный прямоугольник.
 
 *lpRect2*<br/>
 Указывает на `RECT` структуру или `CRect` объект, который содержит исходный прямоугольник.
@@ -561,7 +562,7 @@ BOOL IntersectRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
 
 Ненулевое значение, если пересечение не пусто; 0, если пересечение пусто.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Пересечением является самый крупный прямоугольник, содержащийся в обоих существующих прямоугольниках.
 
@@ -596,7 +597,7 @@ BOOL IsRectEmpty() const throw();
 
 Ненулевое `CRect` значение, если пусто; 0 `CRect` , если не пусто.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Прямоугольник пуст, если ширина и (или) Высота равны 0 или минус. Отличается от `IsRectNull` , который определяет, равны ли все координаты прямоугольника нулю.
 
@@ -626,7 +627,7 @@ BOOL IsRectNull() const throw();
 
 Ненулевое значение, если `CRect` значения верхнего, левого, нижнего и правого равны 0; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Отличается от `IsRectEmpty` , который определяет, является ли прямоугольник пустым.
 
@@ -725,7 +726,7 @@ ASSERT(rect == CRect(0, 10, 100, 110));
 void NormalizeRect() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Прямоугольник нормализован для позиционирования четвертого квадранта, который Windows обычно использует для координат. `NormalizeRect` Сравнивает верхнее и нижнее значения и меняет местами, если верхняя часть больше нижней. Аналогичным образом он меняет местами левые и правые значения, если левое значение больше правого. Эта функция полезна при работе с различными режимами сопоставления и инвертированными прямоугольниками.
 
@@ -766,7 +767,7 @@ void OffsetRect(SIZE size) throw();
 *size*<br/>
 Содержит структуру [размера](/windows/win32/api/windef/ns-windef-size) или объект [ксизе](csize-class.md) , указывающий оба измерения для перемещения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Перемещает `CRect` *x* единиц вдоль осей x и *y* вдоль оси y. Параметры *x* и *y* — это значения со знаком, поэтому их `CRect` можно перемещать влево или вправо, а также вверх или вниз.
 
@@ -786,7 +787,7 @@ ASSERT(rect == CRect(230, 230, 265, 265));
 operator LPCRECT() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 При использовании этой функции не требуется оператор address-of ( **&** ). Этот оператор будет автоматически использоваться при передаче `CRect` объекта в функцию, ожидающую `LPCRECT` .
 
@@ -798,7 +799,7 @@ operator LPCRECT() const throw();
 operator LPRECT() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 При использовании этой функции не требуется оператор address-of ( **&** ). Этот оператор будет автоматически использоваться при передаче `CRect` объекта в функцию, ожидающую `LPRECT` .
 
@@ -846,7 +847,7 @@ BOOL operator==(const RECT& rect) const throw();
 
 Ненулевое значение, если равно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 > [!NOTE]
 > Оба прямоугольника должны быть нормализованы, или эта функция может завершиться ошибкой. Можно вызвать [нормализерект](#normalizerect) для нормализации прямоугольников перед вызовом этой функции.
@@ -886,7 +887,7 @@ BOOL operator!=(const RECT& rect) const throw();
 
 Ненулевое значение, если не равно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 > [!NOTE]
 > Оба прямоугольника должны быть нормализованы, или эта функция может завершиться ошибкой. Можно вызвать [нормализерект](#normalizerect) для нормализации прямоугольников перед вызовом этой функции.
@@ -928,9 +929,9 @@ void operator+=(LPCRECT lpRect) throw();
 Структура [размера](/windows/win32/api/windef/ns-windef-size) или объект [ксизе](csize-class.md) , указывающий количество единиц перемещения прямоугольника.
 
 *лпрект*<br/>
-Указывает на структуру [RECT](/windows/win32/api/windef/ns-windef-rect) или объект Rect `CRect` , который содержит число единиц, которые нужно увеличить с каждой стороны `CRect` .
+Указывает на структуру [](/windows/win32/api/windef/ns-windef-rect) или объект Rect `CRect` , который содержит число единиц, которые нужно увеличить с каждой стороны `CRect` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Значения *x* и *y* (или `cx` и `cy` ) для параметра добавляются в `CRect` .
 
@@ -966,9 +967,9 @@ void operator-=(LPCRECT lpRect) throw();
 Структура [размера](/windows/win32/api/windef/ns-windef-size) или объект [ксизе](csize-class.md) , указывающий количество единиц перемещения прямоугольника.
 
 *лпрект*<br/>
-Указывает на структуру [RECT](/windows/win32/api/windef/ns-windef-rect) или объект Rect `CRect` , который содержит число единиц, которые должны быть сведены каждый из сторон `CRect` .
+Указывает на структуру [](/windows/win32/api/windef/ns-windef-rect) или объект Rect `CRect` , который содержит число единиц, которые должны быть сведены каждый из сторон `CRect` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Значения *x* и *y* (или и) для параметра `cx` `cy` вычитаются из `CRect` .
 
@@ -998,7 +999,7 @@ void operator&=(const RECT& rect) throw();
 *rect*<br/>
 Содержит [Rect](/windows/win32/api/windef/ns-windef-rect) или `CRect` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Пересечением является самый крупный прямоугольник, содержащийся в обоих прямоугольниках.
 
@@ -1022,7 +1023,7 @@ void operator|=(const RECT& rect) throw();
 *rect*<br/>
 Содержит `CRect` [прямоугольник](/windows/win32/api/windef/ns-windef-rect)или.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Объединение — это самый маленький прямоугольник, содержащий оба исходных прямоугольника.
 
@@ -1059,13 +1060,13 @@ CRect operator+(SIZE size) const throw();
 Структура [размера](/windows/win32/api/windef/ns-windef-size) или объект [ксизе](csize-class.md) , указывающий количество единиц для перемещения возвращаемого значения.
 
 *лпрект*<br/>
-Указывает на структуру [RECT](/windows/win32/api/windef/ns-windef-rect) или объект Rect `CRect` , который содержит число единиц, которые нужно увеличить с каждой стороны возвращаемого значения.
+Указывает на структуру [](/windows/win32/api/windef/ns-windef-rect) или объект Rect `CRect` , который содержит число единиц, которые нужно увеличить с каждой стороны возвращаемого значения.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 `CRect`Результат, полученный при перемещении или переходе `CRect` к количеству единиц, указанных в параметре.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Значения параметров *x* и *y* (или `cx` и `cy` ) добавляются в `CRect` расположение.
 
@@ -1102,13 +1103,13 @@ CRect operator-(LPCRECT lpRect) const throw();
 Структура [размера](/windows/win32/api/windef/ns-windef-size) или `CSize` объект, указывающий количество единиц для перемещения возвращаемого значения.
 
 *лпрект*<br/>
-Указывает на структуру [RECT](/windows/win32/api/windef/ns-windef-rect) или объект Rect `CRect` , который содержит число единиц, которые должны быть сведены по каждой стороне возвращаемого значения.
+Указывает на структуру [](/windows/win32/api/windef/ns-windef-rect) или объект Rect `CRect` , который содержит число единиц, которые должны быть сведены по каждой стороне возвращаемого значения.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Объект, `CRect` полученный в результате перемещения или деспрямления `CRect` по количеству единиц, указанных в параметре.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Значения параметров *x* и *y* (или `cx` и `cy` ) вычитаются из `CRect` расположения.
 
@@ -1143,7 +1144,7 @@ CRect operator&(const RECT& rect2) const throw();
 
 Объект `CRect` , представляющий собой пересечение `CRect` и *rect2*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Пересечением является самый крупный прямоугольник, содержащийся в обоих прямоугольниках.
 
@@ -1180,7 +1181,7 @@ rect2) const throw();
 
 Объект `CRect` , который является объединением `CRect` и *rect2*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Объединение — это наименьший прямоугольник, который содержит оба прямоугольника.
 
@@ -1216,7 +1217,7 @@ BOOL PtInRect(POINT point) const throw();
 
 Ненулевое значение, если точка находится внутри `CRect` ; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Точка находится в пределах, `CRect` если она находится на левой или верхней стороне или находится внутри всех четырех сторон. Точка с правой или нижней стороны находится вне `CRect` .
 
@@ -1311,7 +1312,7 @@ CSize Size() const throw();
 
 Объект [ксизе](csize-class.md) , который содержит размер `CRect` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Либо высота, либо ширина могут быть отрицательными.
 
@@ -1346,7 +1347,7 @@ BOOL SubtractRect(LPCRECT lpRectSrc1, LPCRECT lpRectSrc2) throw();
 
 Ненулевое значение, если функция выполнена успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вычитание является наименьшим прямоугольником, содержащим все точки в *lpRectScr1* , которые не находятся в пересечении *lpRectScr1* и *lpRectScr2*.
 
@@ -1406,7 +1407,7 @@ const CPoint& TopLeft() const throw();
 
 Координаты верхнего левого угла прямоугольника.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 С помощью этой функции можно получить или задать левый верхний угол прямоугольника. Задайте угол, используя эту функцию в левой части оператора присваивания.
 
@@ -1434,7 +1435,7 @@ BOOL UnionRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
 
 Ненулевое значение, если объединение не пусто; 0, если объединение пусто.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Объединение — это самый маленький прямоугольник, содержащий оба исходных прямоугольника.
 
@@ -1467,7 +1468,7 @@ int Width() const throw();
 
 Ширина `CRect` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Ширина может быть отрицательной.
 

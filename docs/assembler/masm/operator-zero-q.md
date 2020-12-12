@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее: оператор ZERO?'
 title: Оператор ZERO?
 ms.date: 12/17/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - ZERO? operator
 - operator ZERO?
 ms.assetid: c7629c0b-3254-4f50-9bd6-31be762eb03b
-ms.openlocfilehash: 4da82cb6837a683c259c29591b4bf512e4954c17
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: f65e33ee2275e3e4235012cc598893385039f157
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75318778"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97126299"
 ---
 # <a name="operator-zero"></a>Оператор ZERO?
 
@@ -23,7 +24,7 @@ ms.locfileid: "75318778"
 
 > **НУЛЬ?**
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по операторам](operators-reference.md)\
 [Грамматика MASM BNF](masm-bnf-grammar.md)

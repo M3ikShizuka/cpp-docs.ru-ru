@@ -1,32 +1,33 @@
 ---
-title: Классы коллекций ATL и перечислителей
+description: 'Дополнительные сведения: классы коллекций и перечислителей ATL'
+title: Классы коллекций и перечислителей ATL
 ms.date: 11/04/2016
 helpviewer_keywords:
 - enumerators, ATL classes
 - collection classes, ATL
 ms.assetid: 6818db73-7094-48d8-a0ca-18147beec362
-ms.openlocfilehash: b1ab9a160b01ea278d162a515e5121054bf398f7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b1f30aabb4908b0299a927f92a6d5ee4e9370a09
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62252329"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166048"
 ---
-# <a name="atl-collection-and-enumerator-classes"></a>Классы коллекций ATL и перечислителей
+# <a name="atl-collection-and-enumerator-classes"></a>Классы коллекций и перечислителей ATL
 
-Библиотека ATL предоставляет следующие классы для реализации коллекции и перечислители.
+ATL предоставляет следующие классы, помогающие реализовать коллекции и перечислители.
 
 |Класс|Описание|
 |-----------|-----------------|
-|[ICollectionOnSTLImpl](../atl/reference/icollectiononstlimpl-class.md)|Реализация интерфейса коллекции|
-|[IEnumOnSTLImpl](../atl/reference/ienumonstlimpl-class.md)|Реализация интерфейса перечислителя (предполагается, что данные, хранящиеся в контейнере совместимые библиотеки C++ Standard)|
-|[CComEnumImpl](../atl/reference/ccomenumimpl-class.md)|Реализация интерфейса перечислителя (предполагается, что данные, хранящиеся в массив)|
-|[CComEnumOnSTL](../atl/reference/ccomenumonstl-class.md)|Реализация объекта перечислителя (использует `IEnumOnSTLImpl`)|
-|[CComEnum](../atl/reference/ccomenum-class.md)|Реализация объекта перечислителя (использует `CComEnumImpl`)|
-|[_Copy](../atl/atl-copy-policy-classes.md)|Класс политики копирования|
-|[_CopyInterface](../atl/atl-copy-policy-classes.md)|Класс политики копирования|
-|[CAdapt](../atl/reference/cadapt-class.md)|Класс адаптера (скрывает **оператор &** позволяя `CComPtr`, `CComQIPtr`, и `CComBSTR` для сохранения в контейнеры стандартной библиотеки C++)|
+|[иколлектиононстлимпл](../atl/reference/icollectiononstlimpl-class.md)|Реализация интерфейса коллекции|
+|[иенумонстлимпл](../atl/reference/ienumonstlimpl-class.md)|Реализация интерфейса перечислителя (предполагается, что данные хранятся в контейнере, совместимом с стандартной библиотекой C++)|
+|[ккоменумимпл](../atl/reference/ccomenumimpl-class.md)|Реализация интерфейса перечислителя (предполагается, что данные хранятся в массиве)|
+|[ккоменумонстл](../atl/reference/ccomenumonstl-class.md)|Реализация объекта Enumerator (использует `IEnumOnSTLImpl` )|
+|[ккоменум](../atl/reference/ccomenum-class.md)|Реализация объекта Enumerator (использует `CComEnumImpl` )|
+|[_Copy](../atl/atl-copy-policy-classes.md)|Копирование класса политики|
+|[_CopyInterface](../atl/atl-copy-policy-classes.md)|Копирование класса политики|
+|[кадапт](../atl/reference/cadapt-class.md)|Класс адаптера (скрывает **оператор, &** позволяющий `CComPtr` `CComQIPtr` сохранять, и `CComBSTR` хранить в контейнерах стандартной библиотеки C++)|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Коллекции и перечислители](../atl/atl-collections-and-enumerators.md)

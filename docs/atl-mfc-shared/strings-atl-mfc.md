@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: строки (ATL и MFC)'
 title: Строки (ATL-MFC)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -21,33 +22,33 @@ helpviewer_keywords:
 - strings [C++], class CString
 - literal strings [C++], class CStringT
 ms.assetid: 3b33125b-1684-4542-a3a7-b00de7d0419e
-ms.openlocfilehash: f4d300bccb6387c510dc16d55eda17de20b4b134
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a63f69373f230d87880f0b3f2d016ce3263d3513
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62199028"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166490"
 ---
-# <a name="strings-atlmfc"></a>Строки (ATL/MFC)
+# <a name="strings-atlmfc"></a>Строки (ATL и MFC)
 
-Практически все программы работы со строковыми данными. Visual C++ предоставляет несколько способов управления этот строковых данных.
+Почти все программы работают с строковыми данными. Visual C++ предоставляет несколько способов управления этими строковыми данными.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 
 [Использование CStringT](../atl-mfc-shared/using-cstringt.md)<br/>
-Сведения о программировании, с помощью CStringT шаблона класса.
+Описывает программирование с помощью класса Template CStringT.
 
 [Использование CString](../atl-mfc-shared/using-cstring.md)<br/>
-Описывает программирование с использованием CString, реализация по умолчанию CStringT.
+Описывает программирование с использованием CString, реализации CStringT по умолчанию.
 
 ## <a name="related-sections"></a>Связанные разделы
 
-[Общие сведения о CStringT](../atl-mfc-shared/reference/cstringt-class.md)<br/>
-Содержит справочные сведения об общей `CStringT` класса.
+[Обзор CStringT](../atl-mfc-shared/reference/cstringt-class.md)<br/>
+Содержит справочные сведения об общем `CStringT` классе.
 
 [Основные понятия MFC](../mfc/mfc-concepts.md)<br/>
-Предоставляет на основе задач и концептуальные разделы, чтобы программировать с использованием библиотеки MFC.
+Содержит концептуальные разделы и статьи на основе задач, которые помогут программировать работу с библиотекой MFC.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Общие классы ATL и MFC](../atl-mfc-shared/atl-mfc-shared-classes.md)

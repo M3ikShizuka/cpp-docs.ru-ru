@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: основные понятия библиотеки шаблонов Active Template (ATL)'
 title: Основные понятия активной библиотеки шаблонных классов (ATL)
 ms.date: 05/06/2019
 helpviewer_keywords:
 - ATL, about ATL
 ms.assetid: a3960991-4d76-4da5-9568-3fa7fde53ff4
-ms.openlocfilehash: c87eedff5b6ce7d906c05ac0678425af575f0af8
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5437f381ea145d5474dcdba25673d4e41c60c54b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504276"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166321"
 ---
 # <a name="active-template-library-atl-concepts"></a>Основные понятия активной библиотеки шаблонных классов (ATL)
 
@@ -70,7 +71,7 @@ ms.locfileid: "91504276"
 [Компонент реестра ATL (регистратор)](atl-registry-component-registrar.md)<br/>
 Описывает синтаксис и заменяемые параметры в скрипте ATL. Также описывает настройку статической ссылки на регистратор.
 
-[Программирование с помощью ATL и кода времени выполнения C](programming-with-atl-and-c-run-time-code.md)<br/>
+[Программирование с помощью ATL и кода Run-Time C](programming-with-atl-and-c-run-time-code.md)<br/>
 Описывает преимущества статического или динамического связывания в библиотеке среды выполнения C (CRT).
 
 [Программирование с использованием CComBSTR](programming-with-ccombstr-atl.md)<br/>
@@ -82,7 +83,7 @@ ms.locfileid: "91504276"
 [Справочник по служебным программам](atl-utilities-reference.md)<br/>
 Предоставляет код для управления путями и URL-адресами в форме [CPathT](reference/cpatht-class.md) и [CUrl](reference/curl-class.md). Пул потоков [CThreadPool](reference/cthreadpool-class.md) можно использовать в собственных приложениях. Этот код можно найти в файлах atlpath.h и atlutil.h.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 
 [Учебник по ATL](active-template-library-atl-tutorial.md)<br/>
 Описывает создание элементов управления и демонстрирует некоторые основные сведения об ATL в процессе.

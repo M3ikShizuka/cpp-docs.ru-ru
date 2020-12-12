@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CMFCVisualManagerOfficeXP Class'
 title: Класс CMFCVisualManagerOfficeXP
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCVisualManagerOfficeXP class [MFC]
 ms.assetid: 46b6f854-37c2-4836-8f56-5cb6ff63c9af
-ms.openlocfilehash: c975a2b7ae7de12c154954e44470e7af9feeaa1d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b248158b963de67e3b40c0e664ee9020091d25ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62337808"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97143407"
 ---
 # <a name="cmfcvisualmanagerofficexp-class"></a>Класс CMFCVisualManagerOfficeXP
 
-`CMFCVisualManagerOfficeXP` Придает приложению внешний вид Microsoft Office XP.
+`CMFCVisualManagerOfficeXP`Предоставляет приложению представление Microsoft Office XP.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -23,17 +24,17 @@ ms.locfileid: "62337808"
 class CMFCVisualManagerOfficeXP : public CMFCVisualManager
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
-Все члены этого класса являются виртуальных функций, которые являются производными от предка этого класса [класс CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md).
+Все члены этого класса являются виртуальными функциями, производными от предка этого класса, [класса CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md).
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Использовании `CMFCVisualManagerOfficeXP` классе, чтобы изменить внешний вид приложения, аналогично Microsoft Office XP.
+Используйте класс, `CMFCVisualManagerOfficeXP` чтобы изменить внешний вид приложения так же, как Microsoft Office XP.
 
 ## <a name="example"></a>Пример
 
-Следующий пример демонстрирует, как использовать `CMFCVisualManagerOfficeXP`. Этот фрагмент кода является частью [Desktop оповещения демонстрационного](../../overview/visual-cpp-samples.md).
+В следующем примере показано, как использовать `CMFCVisualManagerOfficeXP` . Этот фрагмент кода является частью [демонстрационного примера оповещения Desktop](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#8](../../mfc/reference/codesnippet/cpp/cmfcvisualmanagerofficexp-class_1.cpp)]
 
@@ -41,7 +42,7 @@ class CMFCVisualManagerOfficeXP : public CMFCVisualManager
 
 [CObject](../../mfc/reference/cobject-class.md)
 
-[CMFCBaseVisualManager](../../mfc/reference/cmfcbasevisualmanager-class.md)
+[кмфкбасевисуалманажер](../../mfc/reference/cmfcbasevisualmanager-class.md)
 
 [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md)
 
@@ -49,10 +50,10 @@ class CMFCVisualManagerOfficeXP : public CMFCVisualManager
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxvisualmanagerofficexp.h
+**Заголовок:** афксвисуалманажероффицексп. h
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
 [Класс CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md)

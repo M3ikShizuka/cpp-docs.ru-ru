@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Иатлстрингмгр Class'
 title: Класс Иатлстрингмгр
 ms.date: 10/18/2018
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - memory, managing
 - IAtlStringMgr class
 ms.assetid: 722f0346-a770-4aa7-8f94-177be8dba823
-ms.openlocfilehash: a617ba829999e9e5778bd7f0091cfb0d624dce71
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7b3aa9d8984639d42e673e96b5fcf25308a757bb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832013"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166529"
 ---
 # <a name="iatlstringmgr-class"></a>Класс Иатлстрингмгр
 
@@ -31,7 +32,7 @@ ms.locfileid: "88832013"
 __interface IAtlStringMgr
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="methods"></a>Методы
 
@@ -43,7 +44,7 @@ __interface IAtlStringMgr
 |[жетнилстринг](#getnilstring)|Возвращает указатель на `CStringData` объект, используемый пустыми строковыми объектами.|
 |[Перераспределения](#reallocate)|Вызовите этот метод, чтобы перераспределить структуру строковых данных.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Этот интерфейс управляет памятью, используемой независимыми от MFC строковыми классами; например [ксимплестрингт](../../atl-mfc-shared/reference/csimplestringt-class.md), [CStringT](../../atl-mfc-shared/reference/cstringt-class.md)и [CFixedStringT](../../atl-mfc-shared/reference/cfixedstringt-class.md).
 
@@ -76,7 +77,7 @@ CStringData* Allocate(int nAllocLength,int nCharSize) throw();
 > [!NOTE]
 > Не сообщайте о сбое выделения, вызывая исключение. Вместо этого необходимо получить сигнал о неудачном выделении, возвращая значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите метод [иатлстрингмгр:: Free](#free) или [иатлстрингмгр:: reallocate](#reallocate) , чтобы освободить память, выделенную этим методом.
 
@@ -95,7 +96,7 @@ IAtlStringMgr* Clone() throw();
 
 Возвращает копию объекта `IAtlStringMgr`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Обычно вызывается платформой, когда для новой строки требуется диспетчер строк. В большинстве случаев **`this`** возвращается указатель.
 
@@ -117,7 +118,7 @@ void Free(CStringData* pData) throw();
 *pData*<br/>
 Указатель на блок памяти, который должен быть освобожден.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Освобождает указанный блок памяти, выделенный ранее путем [выделения](#allocate) или [перераспределения](../../atl/reference/iatlmemmgr-class.md#reallocate).
 
@@ -136,7 +137,7 @@ CStringData* GetNilString() throw();
 
 Указатель на объект, `CStringData` используемый для представления пустой строки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите эту функцию, чтобы вернуть представление пустой строки.
 
@@ -172,7 +173,7 @@ CStringData* Reallocate(
 
 Возвращает указатель на начало выделенного блока памяти.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите эту функцию, чтобы изменить размер существующего блока памяти, заданного в *pData*.
 

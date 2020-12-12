@@ -1,18 +1,19 @@
 ---
-title: Статистическая обработка
+description: 'Дополнительные сведения: агрегирование'
+title: Агрегирование
 ms.date: 11/04/2016
 helpviewer_keywords:
 - aggregation [C++]
 - aggregate objects [C++]
 ms.assetid: 7125bb8e-b269-4b50-9bba-295b467a54cc
-ms.openlocfilehash: 288af427bd6a8d9baf572dfad8e4a25452694ad9
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: fb02dd399020f8768fcdb3cc86687578e51cb3ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69491973"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166100"
 ---
-# <a name="aggregation"></a>Статистическая обработка
+# <a name="aggregation"></a>Агрегирование
 
 Бывают случаи, когда разработчику объекта хотелось бы воспользоваться преимуществами служб, предлагаемых другим готовым объектом. Более того, этот второй объект будет выглядеть как естественная часть первого. COM обеспечивает обе эти цели с помощью включения и агрегирования.
 
@@ -20,7 +21,7 @@ ms.locfileid: "69491973"
 
 В основном все `IUnknown` вызовы методов для вложенного объекта должны быть делегированы в содержащий его объект.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Введение в модель COM](../atl/introduction-to-com.md)<br/>
 [Повторное использование объектов](/windows/win32/com/reusing-objects)

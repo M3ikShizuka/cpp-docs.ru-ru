@@ -1,27 +1,28 @@
 ---
+description: Дополнительные сведения о компонентах ATL COM для настольных систем
 title: Компоненты ATL COM Desktop
 ms.date: 10/19/2018
 helpviewer_keywords:
 - ATL, reference
 - ATL, about ATL
 ms.assetid: 291f38d1-d2de-4687-86a9-99b4fd35706c
-ms.openlocfilehash: dab865215a357a29be2ff1cd187ceb1c44af897c
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 7cf03f129c1358a0407ebc6c1413c5a8a2aef7b1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69491892"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166022"
 ---
 # <a name="atl-com-desktop-components"></a>Компоненты ATL COM Desktop
 
-Справочник по библиотеке ATL — это набор классов, основанных на C++ шаблонах, которые упрощают программирование объектов модели COM. COM — это двоичная спецификация для создания и использования программных компонентов в Windows. Чтобы полностью воспользоваться преимуществами ATL, настоятельно рекомендуется ознакомиться с работой с COM. Дополнительные сведения о модели COM см. в разделе [компонентная объектная модель (com)](/windows/win32/com/component-object-model--com--portal).
+Справочник по библиотеке ATL — это набор классов C++, основанных на шаблонах, которые упрощают программирование объектов модели COM. COM — это двоичная спецификация для создания и использования программных компонентов в Windows. Чтобы полностью воспользоваться преимуществами ATL, настоятельно рекомендуется ознакомиться с работой с COM. Дополнительные сведения о модели COM см. в разделе [компонентная объектная модель (com)](/windows/win32/com/component-object-model--com--portal).
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 
-[Общие сведения о классах ATL](../atl/atl-class-overview.md)<br/>
+[Общие сведения о классе ATL](../atl/atl-class-overview.md)<br/>
 Содержит ссылки на и краткое описание классов ATL, упорядоченных по категориям.
 
-[Классы и структуры библиотеки ATL](../atl/reference/atl-classes.md)<br/>
+[Классы и структуры ATL](../atl/reference/atl-classes.md)<br/>
 Содержит справочные материалы по классам и структурам, упорядоченным в алфавитном порядке.
 
 [Функции ATL](../atl/reference/atl-functions.md)<br/>
@@ -36,18 +37,18 @@ ms.locfileid: "69491892"
 [Определения типов ATL](../atl/reference/atl-typedefs.md)<br/>
 Справочные материалы по определениям типов, упорядоченным в алфавитном порядке
 
-[Рабочий архетип](../atl/reference/worker-archetype.md)<br/>
+[Архетипа рабочей роли](../atl/reference/worker-archetype.md)<br/>
 Ссылки на архетипа рабочей роли ATL.
 
 ## <a name="related-sections"></a>Связанные разделы
 
-[ШАБЛОН](../atl/active-template-library-atl-concepts.md)<br/>
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Содержит разделы, посвященные программированию с помощью библиотеки активных шаблонов (ATL).
 
 [Учебник по ATL](../atl/active-template-library-atl-tutorial.md)<br/>
 Описывает создание элементов управления и демонстрирует некоторые основные сведения об ATL в процессе.
 
-[Примеры библиотек ATL](../overview/visual-cpp-samples.md)<br/>
+[Примеры ATL](../overview/visual-cpp-samples.md)<br/>
 Пример кода, демонстрирующий использование ATL для записи COM-объектов.
 
 [Шаблоны OLE DB](../data/oledb/ole-db-templates.md)<br/>

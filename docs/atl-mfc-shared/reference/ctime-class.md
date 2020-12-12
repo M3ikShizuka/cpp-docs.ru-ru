@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CTime Class'
 title: Класс CTime
 ms.date: 10/18/2018
 f1_keywords:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - CTime class
 - shared classes, CTime
 ms.assetid: 0a299544-485b-48dc-9d3c-fdc30f57d612
-ms.openlocfilehash: d551698a81921227dd0d7b7d80436bba960ed176
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3768423a4d3bf873e9161b846e21fda4beffdc9c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832039"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166607"
 ---
 # <a name="ctime-class"></a>Класс CTime
 
@@ -41,7 +42,7 @@ ms.locfileid: "88832039"
 class CTime
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -79,7 +80,7 @@ class CTime
 |[Оператор =](#operator_eq)|Оператор присваивания.|
 |[operator = =, < и т. д.](#ctime_comparison_operators)|Операторы сравнения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `CTime` не имеет базового класса.
 
@@ -94,7 +95,7 @@ class CTime
 > [!NOTE]
 > Верхний предел для даты равен 12/31/3000. Нижний предел — 1/1/1970 12:00:00 AM по ГРИНВИЧу.
 
-Дополнительные сведения об использовании см `CTime` . в статьях [Дата и время](../../atl-mfc-shared/date-and-time.md), а также [Управление временем](../../c-runtime-library/time-management.md) в справочнике по библиотеке времени выполнения.
+Дополнительные сведения об использовании см `CTime` . в статьях [Дата и время](../../atl-mfc-shared/date-and-time.md), а также [Управление временем](../../c-runtime-library/time-management.md) в справочнике по библиотеке Run-Time.
 
 > [!NOTE]
 > `CTime`Структура изменилась с mfc 7,1 на mfc 8,0. Если Вы сериализуете `CTime` структуру с помощью **оператора <<** в MFC 8,0 или более поздней версии, полученный файл не будет доступен для чтения в более старых версиях MFC.
@@ -176,7 +177,7 @@ CTime(const DBTIMESTAMP& dbts, int nDST = -1) throw();
 *DBTS*<br/>
 Ссылка на структуру DBTIMESTAMP, содержащую текущее местное время.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Каждый конструктор описан ниже.
 
@@ -235,7 +236,7 @@ CString Format(UINT nFormatID) const;
 
 Значение [CString](../../atl-mfc-shared/reference/cstringt-class.md) , содержащее отформатированное время.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если состояние этого `CTime` объекта равно null, то возвращаемое значение является пустой строкой.
 
@@ -266,7 +267,7 @@ CString FormatGmt(UINT nFormatID) const;
 
 Значение [CString](../../atl-mfc-shared/reference/cstringt-class.md) , содержащее отформатированное время.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Значение времени не преобразуется, поэтому оно отражает время в формате UTC.
 
@@ -293,7 +294,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сохраняет полученное время в структуре *DBTS* , на которую указывает ссылка. `DBTIMESTAMP`Для структуры данных, инициализированной этой функцией, член будет иметь `fraction` значение 0.
 
@@ -318,7 +319,7 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
 
 Значение TRUE, если успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `GetAsSystemTime` сохраняет результирующее время в указанной *тимедест* структуре. `SYSTEMTIME`Для структуры данных, инициализированной этой функцией, член будет иметь `wMilliseconds` значение 0.
 
@@ -334,7 +335,7 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
 static CTime WINAPI GetCurrentTime() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает текущую системную дату и время в формате UTC.
 
@@ -354,7 +355,7 @@ int GetDay() const throw();
 
 Возвращает день месяца, основанный на местном времени, в диапазоне от 1 до 31.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция вызывает метод `GetLocalTm` , который использует внутренний, статически выделенный буфер. Данные в этом буфере перезаписываются из-за вызовов других `CTime` функций-членов.
 
@@ -374,7 +375,7 @@ int GetDayOfWeek() const throw();
 
 Возвращает день недели, основанный на местном времени; 1 = воскресенье, 2 = понедельник, 7 = суббота.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция вызывает метод `GetLocalTm` , который использует внутренний статически выделенный буфер. Данные в этом буфере перезаписываются из-за вызовов других `CTime` функций-членов.
 
@@ -397,9 +398,9 @@ struct tm* GetGmtTm(struct tm* ptm) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на заполненную **структуру TM** , как определено во время включения файла. Высоты. Сведения о структуре структуры см. в разделе [gmtime, _gmtime32 _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) .
+Указатель на заполненную **структуру TM** , как определено в включаемом файле Time. H. Сведения о структуре структуры см. в разделе [gmtime, _gmtime32 _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `GetGmtTm` Возвращает время в формате UTC.
 
@@ -421,7 +422,7 @@ int GetHour() const throw();
 
 Возвращает час, основанный на местном времени, в диапазоне от 0 до 23.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция вызывает метод `GetLocalTm` , который использует внутренний статически выделенный буфер. Данные в этом буфере перезаписываются из-за вызовов других `CTime` функций-членов.
 
@@ -444,9 +445,9 @@ struct tm* GetLocalTm(struct tm* ptm) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на заполненную **структуру TM** , как определено во время включения файла. Высоты. Сведения о структуре структуры см. в разделе [gmtime, _gmtime32 _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) .
+Указатель на заполненную **структуру TM** , как определено в включаемом файле Time. H. Сведения о структуре структуры см. в разделе [gmtime, _gmtime32 _gmtime64](../../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `GetLocalTm` Возвращает местное время.
 
@@ -468,7 +469,7 @@ int GetMinute() const throw();
 
 Возвращает минуты в диапазоне от 0 до 59 в зависимости от местного времени.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция вызывает метод `GetLocalTm` , который использует внутренний статически выделенный буфер. Данные в этом буфере перезаписываются из-за вызовов других `CTime` функций-членов.
 
@@ -488,7 +489,7 @@ int GetMonth() const throw();
 
 Возвращает месяц, основанный на местном времени, в диапазоне от 1 до 12 (1 = Январь).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция вызывает метод `GetLocalTm` , который использует внутренний статически выделенный буфер. Данные в этом буфере перезаписываются из-за вызовов других `CTime` функций-членов.
 
@@ -508,7 +509,7 @@ int GetSecond() const throw();
 
 Возвращает второй объект, основанный на местном времени, в диапазоне от 0 до 59.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция вызывает метод `GetLocalTm` , который использует внутренний статически выделенный буфер. Данные в этом буфере перезаписываются из-за вызовов других `CTime` функций-членов.
 
@@ -544,7 +545,7 @@ int GetYear();
 
 Возвращает год, основанный на местном времени, в диапазоне от 1 января 1970 г. до 18 января 2038 (включительно).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция вызывает метод `GetLocalTm` , который использует внутренний статически выделенный буфер. Данные в этом буфере перезаписываются из-за вызовов других `CTime` функций-членов.
 
@@ -569,7 +570,7 @@ CTime& operator=(__time64_t time) throw();
 
 Обновленный `CTime` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот перегруженный оператор присваивания копирует время источника в этот `CTime` объект. Внутреннее хранилище времени в `CTime` объекте не зависит от часового пояса. Во время назначения Преобразование часового пояса не требуется.
 
@@ -595,7 +596,7 @@ CTimeSpan operator-(CTime time) const throw();
 
 `CTime`Объект или, `CTimeSpan` представляющий результат операции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `CTime` объекты представляют собой абсолютное время, а `CTimeSpan` объекты представляют относительное время. Первые два оператора позволяют добавлять и вычитать `CTimeSpan` объекты в объектах и из `CTime` них. Третий оператор позволяет вычесть один `CTime` объект из другого, чтобы получить `CTimeSpan` объект.
 
@@ -621,7 +622,7 @@ CTime& operator-=(CTimeSpan span) throw();
 
 Обновленный `CTime` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эти операторы позволяют добавлять и вычитать `CTimeSpan` объект в этом объекте и из него `CTime` .
 
@@ -642,7 +643,7 @@ CArchive& Serialize64(CArchive& ar);
 
 ### <a name="parameters"></a>Параметры
 
-*AR*<br/>
+*ar*<br/>
 `CArchive`Объект, который требуется обновить.
 
 ### <a name="return-value"></a>Возвращаемое значение

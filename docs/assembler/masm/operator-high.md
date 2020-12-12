@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: оператор HIGH'
 title: Оператор HIGH
 ms.date: 12/17/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - operator HIGH
 - HIGH operator
 ms.assetid: 1deea1af-5cba-4477-aab9-21891250cdfc
-ms.openlocfilehash: 60dd459758001c87200a0735a076e5aac19b68c0
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: b3d7c964cebd482664956399e368d902b3f83760
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75311537"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97127716"
 ---
 # <a name="operator-high"></a>Оператор HIGH
 
@@ -23,7 +24,7 @@ ms.locfileid: "75311537"
 
 > **Высокое** *выражение*
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по операторам](operators-reference.md)\
 [Грамматика MASM BNF](masm-bnf-grammar.md)

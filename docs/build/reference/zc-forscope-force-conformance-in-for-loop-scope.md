@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о:/Zc: forScope (принудительное соответствие в области действия цикла)'
 title: /Zc:forScope (принудительное обеспечение соответствия в области видимости оператора for)
 ms.date: 03/06/2018
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: 3031f02d-3b14-4ad0-869e-22b0110c3aed
-ms.openlocfilehash: b1173ad609a1b2c95d6cf118f4e2d5defeec5b9c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7124bba6608facfea546974cfa40ef9556ff713a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234345"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114667"
 ---
 # <a name="zcforscope-force-conformance-in-for-loop-scope"></a>/Zc:forScope (принудительное обеспечение соответствия в области видимости оператора for)
 
@@ -26,7 +27,7 @@ ms.locfileid: "87234345"
 
 > **/Zc: forScope**[ **-** ]
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Стандартное поведение заключается в том, чтобы **`for`** инициализатор цикла выйдет за пределы области действия после **`for`** цикла. В разделе **/Zc: forScope-** and [/Ze](za-ze-disable-language-extensions.md) **`for`** инициализатор цикла остается в области видимости, пока не завершится локальная область.
 
@@ -63,7 +64,7 @@ int main() {
 
 1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
-1. Перейдите на **Configuration Properties**  >  страницу свойств языка**C/C++**  >  **Language** .
+1. Перейдите на   >  страницу свойств языка **C/C++**  >  **Language** .
 
 1. Измените свойство **Обеспечение согласования видимости переменных, объявленных в заголовке оператора for** .
 
@@ -71,7 +72,7 @@ int main() {
 
 - См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ForceConformanceInForLoopScope%2A>.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [/Zc (соответствие)](zc-conformance.md)<br/>
 [/ZA,/Ze (Отключение расширений языка)](za-ze-disable-language-extensions.md)<br/>

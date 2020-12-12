@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C3519'
 title: Ошибка компилятора C3519
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - C3519
 ms.assetid: ca24b2bc-7e90-4448-ae84-3fedddf9bca7
-ms.openlocfilehash: 7e56ff814b1a2dd6ec3cb41db2cbcc21d7dcf2d9
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f8eb90620894627beab450275c6725d665d837e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74750173"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113095"
 ---
 # <a name="compiler-error-c3519"></a>Ошибка компилятора C3519
 
 "invalid_param": недопустимый параметр для embedded_idl атрибута
 
-Параметр был передан атрибуту `embedded_idl` [#import](../../preprocessor/hash-import-directive-cpp.md), но компилятор не распознал параметр.
+Параметр был передан `embedded_idl` атрибуту [#import](../../preprocessor/hash-import-directive-cpp.md), но компилятор не распознал параметр.
 
-Единственными параметрами, разрешенными для `embedded_idl`, являются `emitidl` и `no_emitidl`.
+Единственными допустимыми параметрами для `embedded_idl` являются `emitidl` и `no_emitidl` .
 
 Следующий пример приводит к возникновению ошибки C3519:
 

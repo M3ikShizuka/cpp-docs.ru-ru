@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Коледатетимеспан Class'
 title: Класс Коледатетимеспан
 ms.date: 03/27/2019
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - Date data type, MFC encapsulation of
 - COleDateTimeSpan class
 ms.assetid: 7441526d-a30a-4019-8fb3-3fee6f897cbe
-ms.openlocfilehash: 5934a456b519d14def14018f966c7bff8206c3c4
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 51632f8c179ea0e256c39052e924d296b89aefd0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500132"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166776"
 ---
 # <a name="coledatetimespan-class"></a>Класс Коледатетимеспан
 
@@ -43,7 +44,7 @@ ms.locfileid: "91500132"
 class COleDateTimeSpan
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -70,7 +71,7 @@ class COleDateTimeSpan
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Название|Описание|
+|Имя|Описание|
 |-|-|
 |[operator +,-](#operator_add_-)|Добавление, вычитание и изменение знака для `COleDateTimeSpan` значений.|
 |[operator + =,-=](#operator_add_eq_-_eq)|Добавьте и вычтите `COleDateTimeSpan` значение из этого `COleDateTimeSpan` значения.|
@@ -80,12 +81,12 @@ class COleDateTimeSpan
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Название|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Коледатетимеспан:: m_span](#m_span)|Содержит базовый **`double`** для этого `COleDateTimeSpan` объекта.|
 |[Коледатетимеспан:: m_status](#m_status)|Содержит состояние этого `COleDateTimeSpan` объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `COleDateTimeSpan` не имеет базового класса.
 
@@ -121,7 +122,7 @@ bool operator>=(const COleDateTimeSpan& dateSpan) const throw();
 
 Эти операторы сравнивают два значения даты и времени и возвращают значение TRUE, если условие истинно. в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 > [!NOTE]
 > Если один из операндов является недопустимым, возникнет исключение АТЛАССЕРТ.
@@ -150,7 +151,7 @@ COleDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 *лдайс*, *нхаурс*, *нминс*, *нсекс*<br/>
 Укажите значения дня и времени, которые должны быть скопированы в новый `COleDateTimeSpan` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Все эти конструкторы создают новые `COleDateTimeSpan` объекты, инициализированные с указанным значением. Ниже приведено краткое описание каждого из этих конструкторов.
 
@@ -201,7 +202,7 @@ CString Format(UINT nID) const;
 
 Объект `CString` , содержащий форматированное значение даты и времени.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызывайте эти функции, чтобы создать форматированное представление значения интервала времени. Если состояние этого `COleDateTimeSpan` объекта равно null, то возвращаемое значение является пустой строкой. Если состояние является недопустимым, возвращаемая строка указывается строковым ресурсом IDS_INVALID_DATETIMESPAN.
 
@@ -229,7 +230,7 @@ LONG GetDays() const throw();
 
 Часть дня этого значения даты и времени.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращаемые значения из этой функции находятся в диапазоне от приблизительно 3 615 000 до 3 615 000.
 
@@ -265,7 +266,7 @@ LONG GetHours() const throw();
 
 Часть часов в этом значении даты и времени.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращаемые значения из этой функции находятся в диапазоне от-23 до 23.
 
@@ -301,7 +302,7 @@ LONG GetMinutes() const throw();
 
 Часть минуты этого значения даты и времени.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращаемые значения из этой функции находятся в диапазоне от-59 до 59.
 
@@ -337,7 +338,7 @@ LONG GetSeconds() const throw();
 
 Часть секунд этого значения даты и времени.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращаемые значения из этой функции находятся в диапазоне от-59 до 59.
 
@@ -373,7 +374,7 @@ DateTimeSpanStatus GetStatus() const throw();
 
 Состояние этого `COleDateTimeSpan` значения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращаемое значение определяется `DateTimeSpanStatus` перечисляемым типом, который определен в `COleDateTimeSpan` классе.
 
@@ -417,7 +418,7 @@ double GetTotalDays() const throw();
 
 Это значение даты и времени, выраженное в днях. Хотя эта функция является прототипом для возврата Double, она всегда будет возвращать целочисленное значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращаемые значения из этой функции находятся в диапазоне от приблизительно-3.65 E6 до 3.65 E6.
 
@@ -453,7 +454,7 @@ double GetTotalHours() const throw();
 
 Это значение даты и времени, выраженное в часах. Хотя эта функция является прототипом для возврата Double, она всегда будет возвращать целочисленное значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращаемые значения из этой функции находятся в диапазоне от приблизительно-8.77 E7 до 8.77 E7.
 
@@ -489,7 +490,7 @@ double GetTotalMinutes() const throw();
 
 Это значение даты и времени, выраженное в минутах. Хотя эта функция является прототипом для возврата Double, она всегда будет возвращать целочисленное значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращаемые значения из этой функции находятся в диапазоне от приблизительно-5.26 E9 до 5.26 E9.
 
@@ -525,7 +526,7 @@ double GetTotalSeconds() const throw();
 
 Это значение даты и времени, выраженное в секундах. Хотя эта функция является прототипом для возврата Double, она всегда будет возвращать целочисленное значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращаемые значения из этой функции находятся в диапазоне от приблизительно-3.16 E11 до 3.16 E11.
 
@@ -557,7 +558,7 @@ double GetTotalSeconds() const throw();
 double m_span;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это значение выражает дату и время в днях.
 
@@ -572,7 +573,7 @@ double m_span;
 DateTimeSpanStatus m_status;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ```
 enum DateTimeSpanStatus{
@@ -613,7 +614,7 @@ enum DateTimeSpanStatus{
 COleDateTimeSpan& operator=(double dblSpanSrc) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот перегруженный оператор присваивания копирует значение даты и времени исходного диапазона в этот `COleDateTimeSpan` объект.
 
@@ -627,7 +628,7 @@ COleDateTimeSpan operator-(const COleDateTimeSpan& dateSpan) const throw();
 COleDateTimeSpan operator-() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первые два оператора позволяют добавлять и вычитать значения даты и времени. Третья позволяет изменить знак значения даты и времени.
 
@@ -650,7 +651,7 @@ COleDateTimeSpan& operator+=(const COleDateTimeSpan dateSpan) throw();
 COleDateTimeSpan& operator-=(const COleDateTimeSpan dateSpan) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эти операторы позволяют добавлять и вычитать значения даты и времени из этого `COleDateTimeSpan` объекта. Если любой из операндов имеет значение null, состояние результирующего `COleDateTimeSpan` значения равно null.
 
@@ -670,7 +671,7 @@ COleDateTimeSpan& operator-=(const COleDateTimeSpan dateSpan) throw();
 operator double() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот оператор возвращает значение этого `COleDateTimeSpan` значения в виде числа дней с плавающей запятой.
 
@@ -687,7 +688,7 @@ void SetDateTimeSpan(LONG lDays, int nHours, int nMins, int nSecs) throw();
 *лдайс*, *нхаурс*, *нминс*, *нсекс*<br/>
 Укажите значения диапазона даты и времени, которые должны быть скопированы в этот `COleDateTimeSpan` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сведения о функциях, которые запрашивают значение `COleDateTimeSpan` объекта, см. в следующих функциях-членах:
 
@@ -724,7 +725,7 @@ void SetStatus(DateTimeSpanStatus status) throw();
 *status*<br/>
 Новое значение состояния для этого `COleDateTimeSpan` объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Значение параметра *Status* определяется `DateTimeSpanStatus` перечисляемым типом, который определен в `COleDateTimeSpan` классе.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кстрингдата Class'
 title: Класс Кстрингдата
 ms.date: 11/04/2016
 f1_keywords:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - CStringData class
 - shared classes, CStringData
 ms.assetid: 4e31b5ca-3dbe-4fd5-b692-8211fbfb2593
-ms.openlocfilehash: 140836f45ed2f4088bc0baed67676f93cb268d01
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 74bf3563cb5dca506498ceef05ddc84f13c44f41
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832117"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97166594"
 ---
 # <a name="cstringdata-class"></a>Класс Кстрингдата
 
@@ -36,7 +37,7 @@ ms.locfileid: "88832117"
 struct CStringData
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="methods"></a>Методы
 
@@ -48,7 +49,7 @@ struct CStringData
 |[IsShared](#isshared)|Определяет, является ли буфер связанного строкового объекта в данный момент общим.|
 |[Блокировка](#lock)|Блокирует буфер связанного строкового объекта.|
 |[Релиз](#release)|Освобождает указанный строковый объект.|
-|[Блокирован](#unlock)|Разблокирует буфер связанного строкового объекта.|
+|[Unlock](#unlock)|Разблокирует буфер связанного строкового объекта.|
 
 ### <a name="data-members"></a>Элементы данных
 
@@ -59,7 +60,7 @@ struct CStringData
 |[нрефс](#nrefs)|Текущее число ссылок объекта.|
 |[пстрингмгр](#pstringmgr)|Указатель на Диспетчер строк этого объекта строки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Этот класс должен использоваться только разработчиками, реализующими пользовательские диспетчеры строк. Дополнительные сведения о настраиваемых диспетчерах строк см. в разделе [Управление памятью и CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md) .
 
@@ -95,7 +96,7 @@ struct CStringData
 void AddRef() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Увеличивает значение счетчика ссылок объекта String.
 
@@ -114,7 +115,7 @@ void* data() throw();
 
 Указатель на символьный буфер строкового объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите эту функцию, чтобы вернуть текущий буфер символов связанного строкового объекта.
 
@@ -133,7 +134,7 @@ bool IsLocked() const throw();
 
 Возвращает значение TRUE, если буфер заблокирован. в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите эту функцию, чтобы определить, заблокирован ли в настоящий момент буфер символов строкового объекта.
 
@@ -149,7 +150,7 @@ bool IsShared() const throw();
 
 Возвращает значение TRUE, если буфер является общим; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызывайте эту функцию, чтобы определить, является ли буфер символьного объекта строковых данных в настоящее время общим для нескольких строковых объектов.
 
@@ -161,7 +162,7 @@ bool IsShared() const throw();
 void Lock() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите эту функцию, чтобы заблокировать символьный буфер объекта строковых данных. Блокировка и разблокировка используется, когда разработчику требуется прямой доступ к символьному буферу. Хороший пример блокировки демонстрируется с помощью методов [локкбуффер](../../atl-mfc-shared/reference/csimplestringt-class.md#lockbuffer) и [унлоккбуффер](../../atl-mfc-shared/reference/csimplestringt-class.md#unlockbuffer) `CSimpleStringT` .
 
@@ -176,7 +177,7 @@ void Lock() throw();
 int nAllocLength;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Хранит длину выделенного буфера данных в `XCHAR` s (не включая завершающее значение null).
 
@@ -188,7 +189,7 @@ int nAllocLength;
 int nDataLength;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Хранит длину используемых в данный момент данных в `XCHAR` s (не включая завершающий символ null).
 
@@ -200,7 +201,7 @@ int nDataLength;
 long nRefs;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Хранит счетчик ссылок для объекта строковых данных. Это число указывает количество более высоких строковых объектов, связанных с объектом строкового данных. Отрицательное значение указывает, что строковый объект данных в настоящий момент заблокирован.
 
@@ -212,7 +213,7 @@ long nRefs;
 IAtlStringMgr* pStringMgr;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Хранит диспетчер памяти для связанного строкового объекта. Дополнительные сведения о диспетчерах памяти и строках см. в разделе [Управление памятью и CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
@@ -224,7 +225,7 @@ IAtlStringMgr* pStringMgr;
 void Release() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызывайте эту функцию для уменьшения счетчика ссылок, освобождая `CStringData` структуру, если число ссылок равно нулю. Это обычно делается при удалении строкового объекта и, следовательно, больше не требуется ссылаться на объект строковых данных.
 
@@ -240,7 +241,7 @@ void Release() throw();
 void Unlock() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите эту функцию, чтобы разблокировать символьный буфер объекта строковых данных. После того как буфер разблокирован, он становится общим и может подсчитываться ссылками.
 

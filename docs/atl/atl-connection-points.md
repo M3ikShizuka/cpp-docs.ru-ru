@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье точки подключения ATL.
 title: Точки подключения ATL
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - ATL, connection points
 - connection points [C++], about connection points
 ms.assetid: 17d76165-5f83-4f95-b36d-483821c247a1
-ms.openlocfilehash: df69496a6d245702a9598d684b25122ca55b1e6d
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 60b9018185bea2af26407ee9d7a203148c8dc477
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69491811"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165827"
 ---
 # <a name="atl-connection-points"></a>Точки подключения ATL
 
@@ -21,12 +22,12 @@ ms.locfileid: "69491811"
 
 Каждая точка подключения поддерживает интерфейс [IConnectionPoint](/windows/win32/api/ocidl/nn-ocidl-iconnectionpoint) . Подключаемый объект предоставляет клиенту точки подключения через интерфейс [IConnectionPointContainer](/windows/win32/api/ocidl/nn-ocidl-iconnectionpointcontainer) .
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 
-[Классы точки подключения библиотеки ATL](../atl/atl-connection-point-classes.md)<br/>
+[Классы точек подключения ATL](../atl/atl-connection-point-classes.md)<br/>
 Краткое описание классов ATL, поддерживающих точки подключения.
 
-[Добавление точек подключения к объектам](../atl/adding-connection-points-to-an-object.md)<br/>
+[Добавление точек подключения к объекту](../atl/adding-connection-points-to-an-object.md)<br/>
 Описываются действия для добавления точек подключения к объекту.
 
 [Пример точки подключения ATL](../atl/atl-connection-point-example.md)<br/>
@@ -34,9 +35,9 @@ ms.locfileid: "69491811"
 
 ## <a name="related-sections"></a>Связанные разделы
 
-[ШАБЛОН](../atl/active-template-library-atl-concepts.md)<br/>
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Ссылки на разделы о программировании с использованием библиотеки ATL.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Основные понятия](../atl/active-template-library-atl-concepts.md)

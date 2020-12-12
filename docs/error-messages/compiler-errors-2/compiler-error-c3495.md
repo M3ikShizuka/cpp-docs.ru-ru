@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C3495'
 title: Ошибка компилятора C3495
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3495
 ms.assetid: 1fd40cb8-8373-403d-b8a8-f08424a50807
-ms.openlocfilehash: a67d4d859e3a9dd2241f14a476492df0fd3e6b8d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3c04c80182dad32b539e09224fd9e303b3325578
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223425"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113172"
 ---
 # <a name="compiler-error-c3495"></a>Ошибка компилятора C3495
 
@@ -37,6 +38,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 [Лямбда-выражения](../../cpp/lambda-expressions-in-cpp.md)

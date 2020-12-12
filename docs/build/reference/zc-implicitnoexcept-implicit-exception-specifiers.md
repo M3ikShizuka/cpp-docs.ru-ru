@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о:/Zc: implicitNoexcept (неявные описатели исключений)'
 title: /Zc:implicitNoexcept (неявные спецификаторы исключений)
 ms.date: 03/06/2018
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Zc:implicitNoexcept
 - -Zc:implicitNoexcept
 ms.assetid: 71807652-6f9d-436b-899e-f52daa6f500b
-ms.openlocfilehash: bb1a632ffe684ac0777d0089a2edfd514bf66d0b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8c6aabe2878282b42ad0f2ce1e205ac387bd9a96
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223802"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114641"
 ---
 # <a name="zcimplicitnoexcept-implicit-exception-specifiers"></a>/Zc:implicitNoexcept (неявные спецификаторы исключений)
 
@@ -23,7 +24,7 @@ ms.locfileid: "87223802"
 
 > **/Zc: implicitNoexcept**[ **-** ]
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **/Zc: implicitNoexcept** указывает компилятору следовать разделу 15,4 стандарта ISO c++ 11. Он неявно добавляет **`noexcept`** описатель исключения к каждой явно объявленной или явно заданной по умолчанию специальной функции-члену (конструктор по умолчанию, конструктор копирования, конструктор перемещения, деструктор, оператор присваивания копирования или оператор присваивания перемещения), а также каждый определяемый пользователем деструктор или функцию дераспределения. Определяемый пользователем метод освобождения содержит неявный описатель исключения `noexcept(true)`. Для пользовательских деструкторов неявный описатель исключение — `noexcept(true)`, если во внутреннем классе члена или базовом классе нет деструктора, отличного от типа `noexcept(true)`. Если для созданных компилятором специальных функций-членов любая функция, вызываемая напрямую этой функцией, фактически является `noexcept(false)`, а неявный описатель исключения — `noexcept(false)`. Иначе неявный описатель исключение — `noexcept(true)`.
 
@@ -109,7 +110,7 @@ int main()
 }
 ```
 
-При компиляции с использованием параметра **/Zc: implicitNoexcept**по умолчанию пример создает следующий результат:
+При компиляции с использованием параметра **/Zc: implicitNoexcept** по умолчанию пример создает следующий результат:
 
 ```Output
 ~B Exception caught
@@ -135,7 +136,7 @@ Exit returning EXIT_SUCCESS
 
 1. Измените свойство **Дополнительные параметры** , чтобы включить **/Zc: implicitNoexcept** или **/Zc: ImplicitNoexcept-** и нажмите кнопку **ОК**.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [/Zc (соответствие)](zc-conformance.md)<br/>
 [noexcept](../../cpp/noexcept-cpp.md)<br/>
