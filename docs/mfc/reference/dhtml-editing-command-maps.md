@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье редактирование сопоставлений команд DHTML.
 title: Схемы команд редактирования DHTML
 ms.date: 11/04/2016
 ms.assetid: c1b49876-039e-4a26-bb24-ea98ccf254a1
-ms.openlocfilehash: f4bbfb500e8de9594bbaa334b4e227caeaa845da
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: da50d9b58e5294622da0685450e01ad0acabad3f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837415"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220114"
 ---
 # <a name="dhtml-editing-command-maps"></a>Схемы команд редактирования DHTML
 
@@ -38,7 +39,7 @@ DECLARE_DHTMLEDITING_CMDMAP(className)
 *className*<br/>
 Имя класса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот макрос используется в определении классов, производных от [CHtmlEditView](../../mfc/reference/chtmleditview-class.md).
 
@@ -65,7 +66,7 @@ BEGIN_DHTMLEDITING_CMDMAP(className)
 *className*<br/>
 Имя класса, содержащего карту команд редактирования DHTML. Этот класс должен прямо или косвенно наследовать от [CHtmlEditView](../../mfc/reference/chtmleditview-class.md) и включать макрос [DECLARE_DHTMLEDITING_CMDMAP](#declare_dhtmlediting_cmdmap) в его определение класса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Добавьте в класс карту команды редактирования DHTML, чтобы сопоставлять команды пользовательского интерфейса с командами редактирования HTML.
 
@@ -83,7 +84,7 @@ BEGIN_DHTMLEDITING_CMDMAP(className)
 END_DHTMLEDITING_CMDMAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте в сочетании с [BEGIN_DHTMLEDITING_CMDMAP](#begin_dhtmlediting_cmdmap).
 

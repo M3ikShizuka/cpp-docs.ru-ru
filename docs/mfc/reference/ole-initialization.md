@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: инициализация OLE'
 title: Инициализация OLE
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - OLE initialization
 ms.assetid: aa8a54a7-24c3-4344-b2c6-dbcf6084fa31
-ms.openlocfilehash: 13c267df492ab86606e893df4c13e5510e6e546a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0efed4fefe62b720852905b6eed44501d4369efa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843694"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218996"
 ---
 # <a name="ole-initialization"></a>Инициализация OLE
 
@@ -55,7 +56,7 @@ BOOL AFXAPI AfxOleInit();
 
 Ненулевое значение в случае успешного выполнения; 0, если инициализация не удалась, возможно, установлены неверные версии системных библиотек OLE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите эту функцию, чтобы инициализировать поддержку OLE для приложения MFC. При вызове этой функции выполняются следующие действия.
 

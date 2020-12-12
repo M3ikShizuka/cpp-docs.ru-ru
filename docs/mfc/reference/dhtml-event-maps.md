@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье о сопоставлении событий DHTML.
 title: Схемы событий DHTML
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - DHTML events [MFC], event map
 - DHTML events [MFC]
 ms.assetid: 9a2c8ae7-7216-4a5e-bc60-6b98695be0c6
-ms.openlocfilehash: 099a08298357d99a3d09ed6fc1209d463f6a4526
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b9df8f1aa59472de033943efd28f5c688c61e706
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837428"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220127"
 ---
 # <a name="dhtml-event-maps"></a>Схемы событий DHTML
 
@@ -96,7 +97,7 @@ BEGIN_DHTML_EVENT_MAP(className)
 *className*<br/>
 Имя класса, содержащего таблицу событий DHTML. Этот класс должен прямо или косвенно наследовать от [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md) и включать макрос [DECLARE_DHTML_EVENT_MAP](#declare_dhtml_event_map) в его определение класса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Добавьте в класс таблицу сопоставлений DHTML, чтобы предоставить сведения `CDHtmlDialog` , которые можно использовать для маршрутизации событий, инициированных ЭЛЕМЕНТАМИ HTML или элементами управления ActiveX на веб-странице, в функции обработчика в классе.
 
@@ -121,7 +122,7 @@ BEGIN_DHTML_EVENT_MAP_INLINE(className)
 *className*<br/>
 Имя класса, содержащего таблицу событий DHTML. Этот класс должен прямо или косвенно наследовать от [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md) и включать макрос [DECLARE_DHTML_EVENT_MAP](#declare_dhtml_event_map) в его определение класса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Добавьте в класс таблицу сопоставлений DHTML, чтобы предоставить сведения `CDHtmlDialog` , которые можно использовать для маршрутизации событий, инициированных ЭЛЕМЕНТАМИ HTML или элементами управления ActiveX на веб-странице, в функции обработчика в классе.
 
@@ -141,7 +142,7 @@ BEGIN_DHTML_EVENT_MAP_INLINE(className)
 DECLARE_DHTML_EVENT_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот макрос используется в определении классов, производных от [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md).
 
@@ -174,7 +175,7 @@ DHTML_EVENT(dispid, elemName,  memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -201,7 +202,7 @@ DHTML_EVENT_AXCONTROL(dispid, controlName,  memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -228,7 +229,7 @@ DHTML_EVENT_CLASS(dispid, elemName,  memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -255,7 +256,7 @@ DHTML_EVENT_ELEMENT(dispid, elemName,  memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -283,7 +284,7 @@ DHTML_EVENT_ONAFTERUPDATE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -307,7 +308,7 @@ DHTML_EVENT_ONBEFOREUPDATE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -331,7 +332,7 @@ DHTML_EVENT_ONBLUR(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -355,7 +356,7 @@ DHTML_EVENT_ONCHANGE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -379,7 +380,7 @@ DHTML_EVENT_ONCLICK(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -403,7 +404,7 @@ DHTML_EVENT_ONDATAAVAILABLE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -427,7 +428,7 @@ DHTML_EVENT_ONDATASETCHANGED(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -451,7 +452,7 @@ DHTML_EVENT_ONDATASETCOMPLETE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -475,7 +476,7 @@ DHTML_EVENT_ONDBLCLICK(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -499,7 +500,7 @@ DHTML_EVENT_ONDRAGSTART(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -523,7 +524,7 @@ DHTML_EVENT_ONERRORUPDATE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -547,7 +548,7 @@ DHTML_EVENT_ONFILTERCHANGE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -571,7 +572,7 @@ DHTML_EVENT_ONFOCUS(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -595,7 +596,7 @@ DHTML_EVENT_ONHELP(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -619,7 +620,7 @@ DHTML_EVENT_ONKEYDOWN(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -643,7 +644,7 @@ DHTML_EVENT_ONKEYPRESS(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -667,7 +668,7 @@ DHTML_EVENT_ONKEYUP(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -691,7 +692,7 @@ DHTML_EVENT_ONMOUSEDOWN(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -715,7 +716,7 @@ DHTML_EVENT_ONMOUSEMOVE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -739,7 +740,7 @@ DHTML_EVENT_ONMOUSEOUT(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -763,7 +764,7 @@ DHTML_EVENT_ONMOUSEOVER(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -787,7 +788,7 @@ DHTML_EVENT_ONMOUSEUP(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -811,7 +812,7 @@ DHTML_EVENT_ONRESIZE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -835,7 +836,7 @@ DHTML_EVENT_ONROWENTER(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -859,7 +860,7 @@ DHTML_EVENT_ONROWEXIT(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -883,7 +884,7 @@ DHTML_EVENT_ONSELECTSTART(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -910,7 +911,7 @@ DHTML_EVENT_TAG(dispid, elemName,  memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -926,7 +927,7 @@ DHTML_EVENT_TAG(dispid, elemName,  memberFxn)
 END_DHTML_EVENT_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Должен использоваться в сочетании с [BEGIN_DHTML_EVENT_MAP](#begin_dhtml_event_map).
 
@@ -942,7 +943,7 @@ END_DHTML_EVENT_MAP()
 BEGIN_DHTML_URL_EVENT_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Поставьте BEGIN_DHTML_URL_EVENT_MAP в файл реализации класса, производного от [кмултипажедхтмлдиалог](../../mfc/reference/cmultipagedhtmldialog-class.md). Используйте [встроенные сопоставления событий DHTML](#begin_embed_dhtml_event_map) и [записи URL-адресов](#begin_url_entries), а затем закройте его с помощью [END_DHTML_URL_EVENT_MAP](#end_dhtml_url_event_map). Включите макрос [DECLARE_DHTML_URL_EVENT_MAP](#declare_dhtml_url_event_map) в определение класса.
 
@@ -970,7 +971,7 @@ BEGIN_EMBED_DHTML_EVENT_MAP(className, mapName)
 *мапнаме*<br/>
 Указывает страницу, в которой сопоставлены события. Это соответствует *мапнаме* в макросе [URL_EVENT_ENTRY](#url_event_entry) , который фактически определяет URL-адрес или HTML-ресурс.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Поскольку многостраничное диалоговое окно DHTML состоит из нескольких HTML-страниц, каждая из которых может вызывать события DHTML, встроенные карты событий используются для сопоставления событий с обработчиками на каждой странице.
 
@@ -999,7 +1000,7 @@ BEGIN_URL_ENTRIES(className)
 *className*<br/>
 Имя класса, содержащего карту входа события URL-адреса. Этот класс должен быть прямо или косвенно производным от [кмултипажедхтмлдиалог](../../mfc/reference/cmultipagedhtmldialog-class.md). Схема записи события URL-адреса должна находиться в [таблице событий DHTML и URL-адреса](#begin_dhtml_url_event_map).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Поскольку многостраничное диалоговое окно DHTML состоит из нескольких страниц HTML, для сопоставления URL-адресов или ресурсов HTML с соответствующими [внедренными картами событий DHTML](#begin_embed_dhtml_event_map)используются записи событий URL-адресов. Помещайте URL_EVENT_ENTRY макросы между BEGIN_URL_ENTRIES и [END_URL_ENTRIES](#end_url_entries) макросами.
 
@@ -1019,7 +1020,7 @@ BEGIN_URL_ENTRIES(className)
 DECLARE_DHTML_URL_EVENT_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот макрос используется в определении классов, производных от [кмултипажедхтмлдиалог](../../mfc/reference/cmultipagedhtmldialog-class.md).
 
@@ -1101,7 +1102,7 @@ URL-адрес или ресурс HTML для страницы.
 *мапнаме*<br/>
 Указывает страницу, URL-адрес которой является *URL*. Это соответствует *мапнаме* в макросе [BEGIN_EMBED_DHTML_EVENT_MAP](#begin_embed_dhtml_event_map) , который сопоставляет события на этой странице.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если страница является ресурсом HTML, *URL-адрес* должен представлять собой строковое представление идентификационного номера ресурса (то есть "123", а не 123 или ID_HTMLRES1).
 

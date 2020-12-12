@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: изменение обработчиков элементов управления'
 title: Обработчики элемента управления "Изменение"
 ms.date: 11/04/2016
 f1_keywords:
@@ -21,28 +22,28 @@ helpviewer_keywords:
 - ON_EN_KILLFOCUS macro [MFC]
 - edit controls [MFC], edit control handlers
 ms.assetid: 55b88b5e-12b5-4422-b03e-c8c2f27d095c
-ms.openlocfilehash: 53586de574fca6ab88b93444c9d571c62354cef2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ee73dac1ae0c304c4a233532b1470cc696b8e00d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62322388"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219893"
 ---
 # <a name="edit-control-handlers"></a>Обработчики элемента управления "Изменение"
 
-Следующие записи карты соответствуют прототип функции.
+Следующие записи Map соответствуют прототипу функции.
 
-|Запись сопоставления|Прототип функции|
+|Запись Map|Прототип функции|
 |---------------|------------------------|
-|ON_EN_CHANGE ( \<идентификатор >, \<memberFxn >)|afx_msg void memberFxn( );|
-|ON_EN_ERRSPACE ( \<идентификатор >, \<memberFxn >)|afx_msg void memberFxn( );|
-|ON_EN_HSCROLL ( \<идентификатор >, \<memberFxn >)|afx_msg void memberFxn( );|
-|ON_EN_KILLFOCUS ( \<идентификатор >, \<memberFxn >)|afx_msg void memberFxn( );|
-|ON_EN_MAXTEXT( \<id>, \<memberFxn> )|afx_msg void memberFxn( );|
-|ON_EN_SETFOCUS ( \<идентификатор >, \<memberFxn >)|afx_msg void memberFxn( );|
-|ON_EN_UPDATE ( \<идентификатор >, \<memberFxn >)|afx_msg void memberFxn( );|
-|ON_EN_VSCROLL ( \<идентификатор >, \<memberFxn >)|afx_msg void memberFxn( );|
+|ON_EN_CHANGE ( \<id> , \<memberFxn> )|afx_msg void Мемберфксн ();|
+|ON_EN_ERRSPACE ( \<id> , \<memberFxn> )|afx_msg void Мемберфксн ();|
+|ON_EN_HSCROLL ( \<id> , \<memberFxn> )|afx_msg void Мемберфксн ();|
+|ON_EN_KILLFOCUS ( \<id> , \<memberFxn> )|afx_msg void Мемберфксн ();|
+|ON_EN_MAXTEXT ( \<id> , \<memberFxn> )|afx_msg void Мемберфксн ();|
+|ON_EN_SETFOCUS ( \<id> , \<memberFxn> )|afx_msg void Мемберфксн ();|
+|ON_EN_UPDATE ( \<id> , \<memberFxn> )|afx_msg void Мемберфксн ();|
+|ON_EN_VSCROLL ( \<id> , \<memberFxn> )|afx_msg void Мемберфксн ();|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Схемы сообщений](../../mfc/reference/message-maps-mfc.md)

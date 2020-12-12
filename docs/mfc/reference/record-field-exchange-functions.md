@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функциях обмена полями записи
 title: Функции обмена данными полями записей
 ms.date: 09/17/2019
 f1_keywords:
@@ -45,12 +46,12 @@ helpviewer_keywords:
 - RFX (record field exchange), data exchange functions [MFC]
 - RFX (record field exchange)
 ms.assetid: 6e4c5c1c-acb7-4c18-bf51-bf7959a696cd
-ms.openlocfilehash: 9bb1b7bcbce16bba8029fcfbbeea7552b1d4a0ba
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2ba3a83bdda21f91913d7eda435a845b0977e8a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843603"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218957"
 ---
 # <a name="record-field-exchange-functions"></a>Функции обмена данными полями записей
 
@@ -143,7 +144,7 @@ void RFX_Binary(
 *нмаксленгс*<br/>
 Максимально допустимая длина передаваемой строки или массива. Значение по умолчанию для *нмаксленгс* — 255. Допустимые значения: от 1 до INT_MAX. Платформа выделяет этот объем пространства для данных. Для лучшей производительности передайте значение, достаточное для размещения самого большого элемента данных.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Данные в источнике данных этих типов сопоставляются с типом `CByteArray` в наборе записей и из него.
 
@@ -257,7 +258,7 @@ void RFX_Date(
 
 Вторая версия функции принимает ссылку на `TIMESTAMP_STRUCT` структуру. Эту структуру необходимо настроить перед вызовом. Для этой версии не предусмотрена поддержка обмена данными диалоговых окон (DDX) и мастера кода. Третья версия функции работает аналогично первой версии, за исключением того, что она принимает ссылку на объект [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `CTime`Версия функции накладывает дополнительную нагрузку на промежуточную обработку и имеет несколько ограниченный диапазон. Если вы обнаружите, что одно из этих факторов слишком ограничено, используйте вторую версию функции. Но обратите внимание на отсутствие мастера кода и поддержку DDX, а также о необходимости самостоятельной настройки структуры.
 
@@ -466,7 +467,7 @@ void RFX_Text(
 *нскале*<br/>
 Задает масштаб для значений типа ODBC SQL_DECIMAL или SQL_NUMERIC. *нскале* полезен только при задании значений параметров. Дополнительные сведения см. в разделе "точность, масштаб, Длина и размер дисплея" в приложении г из *справочника по программированию для ODBC SDK*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Данные в источнике данных всех этих типов сопоставляются с `CString` набором записей и из него.
 
@@ -528,7 +529,7 @@ void RFX_Binary_Bulk(
 *нмаксленгс*<br/>
 Максимально допустимая длина значений, хранящихся в массиве, на который указывает *пргбитевалс*. Чтобы гарантировать, что данные не будут обрезаны, передайте значение, достаточное для размещения самого большого элемента данных.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Столбец источника данных может иметь тип ODBC SQL_BINARY, SQL_VARBINARY или SQL_LONGVARBINARY. Набор записей должен определять элемент данных поля типа pointer на BYTE.
 
@@ -575,7 +576,7 @@ void RFX_Bool_Bulk(
 *пргленгсс*<br/>
 Указатель на массив длинных целых чисел. Этот массив будет хранить длину в байтах каждого значения в массиве, на которое указывает *пргбулвалс*. Обратите внимание, что значение SQL_NULL_DATA будет сохранено, если соответствующий элемент данных содержит значение null. Дополнительные сведения см. в описании функции ODBC API `SQLBindCol` в *справочнике программиста по ПАКЕТу SDK для ODBC*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Столбец источника данных должен иметь тип ODBC SQL_BIT. Набор записей должен определять элемент данных поля типа pointer на BOOL.
 
@@ -622,7 +623,7 @@ void RFX_Byte_Bulk(
 *пргленгсс*<br/>
 Указатель на массив длинных целых чисел. Этот массив будет хранить длину в байтах каждого значения в массиве, на которое указывает *пргбитевалс*. Обратите внимание, что значение SQL_NULL_DATA будет сохранено, если соответствующий элемент данных содержит значение null. Дополнительные сведения см. в описании функции ODBC API `SQLBindCol` в *справочнике программиста по ПАКЕТу SDK для ODBC*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Столбец источника данных должен иметь тип ODBC SQL_TINYINT. Набор записей должен определять элемент данных поля типа pointer на BYTE.
 
@@ -669,7 +670,7 @@ void RFX_Date_Bulk(
 *пргленгсс*<br/>
 Указатель на массив длинных целых чисел. Этот массив будет хранить длину в байтах каждого значения в массиве, на которое указывает *пргтсвалс*. Обратите внимание, что значение SQL_NULL_DATA будет сохранено, если соответствующий элемент данных содержит значение null. Дополнительные сведения см. в описании функции ODBC API `SQLBindCol` в *справочнике программиста по ПАКЕТу SDK для ODBC*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Столбец источника данных может иметь тип ODBC SQL_DATE, SQL_TIME или SQL_TIMESTAMP. Набор записей должен определять элемент данных поля типа pointer на TIMESTAMP_STRUCT.
 
@@ -716,7 +717,7 @@ void RFX_Double_Bulk(
 *пргленгсс*<br/>
 Указатель на массив длинных целых чисел. Этот массив будет хранить длину в байтах каждого значения в массиве, на которое указывает *пргдблвалс*. Обратите внимание, что значение SQL_NULL_DATA будет сохранено, если соответствующий элемент данных содержит значение null. Дополнительные сведения см. в описании функции ODBC API `SQLBindCol` в *справочнике программиста по ПАКЕТу SDK для ODBC*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Столбец источника данных должен иметь тип ODBC SQL_DOUBLE. Набор записей должен определять элемент данных поля типа pointer **`double`** .
 
@@ -795,7 +796,7 @@ void RFX_Long_Bulk(
 *пргленгсс*<br/>
 Указатель на массив длинных целых чисел. Этот массив будет хранить длину в байтах каждого значения в массиве, на которое указывает *прглонгвалс*. Обратите внимание, что значение SQL_NULL_DATA будет сохранено, если соответствующий элемент данных содержит значение null. Дополнительные сведения см. в описании функции ODBC API `SQLBindCol` в *справочнике программиста по ПАКЕТу SDK для ODBC*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Столбец источника данных должен иметь тип ODBC SQL_INTEGER. Набор записей должен определять элемент данных поля типа pointer **`long`** .
 
@@ -842,7 +843,7 @@ void RFX_Single_Bulk(
 *пргленгсс*<br/>
 Указатель на массив длинных целых чисел. Этот массив будет хранить длину в байтах каждого значения в массиве, на которое указывает *пргфлтвалс*. Обратите внимание, что значение SQL_NULL_DATA будет сохранено, если соответствующий элемент данных содержит значение null. Дополнительные сведения см. в описании функции ODBC API `SQLBindCol` в *справочнике программиста по ПАКЕТу SDK для ODBC*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Столбец источника данных должен иметь тип ODBC SQL_REAL. Набор записей должен определять элемент данных поля типа pointer **`float`** .
 
@@ -893,7 +894,7 @@ void RFX_Text_Bulk(
 *нмаксленгс*<br/>
 Максимально допустимая длина значений, хранящихся в массиве, на который указывает *пргстрвалс*, включая завершающий символ null. Чтобы гарантировать, что данные не будут обрезаны, передайте значение, достаточное для размещения самого большого элемента данных.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Столбец источника данных может иметь тип ODBC SQL_LONGVARCHAR, SQL_CHAR, SQL_VARCHAR, SQL_DECIMAL или SQL_NUMERIC. Набор записей должен определять элемент данных поля типа LPSTR.
 
@@ -962,7 +963,7 @@ void AFXAPI DFX_Binary(
 > [!NOTE]
 > Вы можете управлять двойным буфером данных для всех полей по умолчанию, установив [CDaoRecordset:: m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Данные сопоставляются между типом DAO_BYTES в DAO и тип [CByteArray](cbytearray-class.md) в наборе записей.
 
@@ -1005,7 +1006,7 @@ void AFXAPI DFX_Bool(
 > [!NOTE]
 > Вы можете управлять двойным буферизацией данных по умолчанию, настроив [CDaoRecordset:: m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Данные сопоставляются между типом DAO_BOOL в DAO и типа BOOL в наборе записей.
 
@@ -1048,7 +1049,7 @@ void AFXAPI DFX_Byte(
 > [!NOTE]
 > Вы можете управлять двойным буферизацией данных по умолчанию, настроив [CDaoRecordset:: m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Данные сопоставляются между типом DAO_BYTES в DAO и типом BYTE в наборе записей.
 
@@ -1091,7 +1092,7 @@ void AFXAPI DFX_Currency(
 > [!NOTE]
 > Вы можете управлять двойным буферизацией данных по умолчанию, настроив [CDaoRecordset:: m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Данные сопоставляются между типом DAO_CURRENCY в DAO и Type [COleCurrency](colecurrency-class.md) в наборе записей.
 
@@ -1134,7 +1135,7 @@ void AFXAPI DFX_DateTime(
 > [!NOTE]
 > Вы можете управлять двойным буферизацией данных по умолчанию, настроив [CDaoRecordset:: m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Данные сопоставляются между типом DAO_DATE в DAO и Type [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) в наборе записей.
 
@@ -1180,7 +1181,7 @@ void AFXAPI DFX_Double(
 > [!NOTE]
 > Вы можете управлять двойным буферизацией данных по умолчанию, настроив [CDaoRecordset:: m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Данные сопоставляются между типом DAO_R8 в DAO и тип **Double float** в наборе записей.
 
@@ -1223,7 +1224,7 @@ void AFXAPI DFX_Long(
 > [!NOTE]
 > Вы можете управлять двойным буферизацией данных по умолчанию, настроив [CDaoRecordset:: m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Данные сопоставляются между типом DAO_I4 в DAO и типом **`long`** в наборе записей.
 
@@ -1270,7 +1271,7 @@ void AFXAPI DFX_LongBinary(
 > [!NOTE]
 > Вы можете управлять двойным буферизацией данных по умолчанию, настроив [CDaoRecordset:: m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `DFX_LongBinary` предоставляется для обеспечения совместимости с классами ODBC MFC. Функция `DFX_LongBinary` передает данные большого двоичного объекта (BLOB) с помощью класса `CLongBinary` между элементами данных поля объекта [CDaoRecordset](cdaorecordset-class.md) и столбцами записи в источнике данных. Данные сопоставляются между типом DAO_BYTES в DAO и Type [CLongBinary](clongbinary-class.md) в наборе записей.
 
@@ -1313,7 +1314,7 @@ void AFXAPI DFX_Short(
 > [!NOTE]
 > Вы можете управлять двойным буферизацией данных по умолчанию, настроив [CDaoRecordset:: m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Данные сопоставляются между типом DAO_I2 в DAO и типом **`short`** в наборе записей.
 
@@ -1359,7 +1360,7 @@ void AFXAPI DFX_Single(
 > [!NOTE]
 > Вы можете управлять двойным буферизацией данных по умолчанию, настроив [CDaoRecordset:: m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Данные сопоставляются между типом DAO_R4 в DAO и типом **`float`** в наборе записей.
 
@@ -1406,7 +1407,7 @@ void AFXAPI DFX_Text(
 > [!NOTE]
 > Вы можете управлять двойным буферизацией данных по умолчанию, настроив [CDaoRecordset:: m_bCheckCacheForDirtyFields](cdaorecordset-class.md#m_bcheckcachefordirtyfields).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Данные сопоставляются между типом DAO_CHAR в DAO (или, если определен символ _UNICODE, DAO_WCHAR) и тип [CString](../../atl-mfc-shared/reference/cstringt-class.md) в наборе записей.  n
 
