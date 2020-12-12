@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: преобразования User-Defined (C++/CLI)'
 title: заданные пользователем преобразования (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - user-defined conversions [C++]
 ms.assetid: 8010fd59-2775-4e9a-a6ed-58055032d66f
-ms.openlocfilehash: bb7a30382bc586f4d324d47ef6e6757fac83f5ae
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 0b07ab3201bfd379a17922f020486d0b17a59558
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "79545135"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97204268"
 ---
 # <a name="user-defined-conversions-ccli"></a>заданные пользователем преобразования (C++/CLI)
 
@@ -80,7 +81,7 @@ in N::N
 
 Операторы Convert-from создают объект класса, в котором оператор определен из объекта какого-либо другого класса.
 
-Standard C++ не поддерживает операторы Convert-from; для C++ этой цели в стандарте используются конструкторы. Однако при использовании типов CLR Visual C++ предоставляет синтаксическую поддержку для вызова операторов Convert-from.
+Стандартный C++ не поддерживает операторы Convert-from; для этой цели в стандартном C++ используются конструкторы. Однако при использовании типов CLR Visual C++ предоставить синтаксическую поддержку для вызова операторов Convert-from.
 
 Чтобы обеспечить взаимодействие с другими CLS-совместимыми языками, может потребоваться заключить каждый определенный пользователем унарный конструктор для заданного класса с помощью соответствующего оператора Convert-from.
 
@@ -319,6 +320,6 @@ int main() {
 2000
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 [Классы и структуры](../extensions/classes-and-structs-cpp-component-extensions.md)

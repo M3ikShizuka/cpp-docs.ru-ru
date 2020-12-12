@@ -1,22 +1,23 @@
 ---
+description: Дополнительные сведения см. в статье как использовать класс Context для реализации параллельного семафора.
 title: Практическое руководство. Использование класса Context для реализации семафора, поддерживающего параллельный доступ
 ms.date: 11/04/2016
 helpviewer_keywords:
 - cooperative semaphore implementing
 - context class
 ms.assetid: 22f4b9c0-ca22-4a68-90ba-39e99ea76696
-ms.openlocfilehash: 77cf33288761c75d056649ebe27f9d74c6fa62dc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d80d364a9dcd27ee7012da5f710d38208c7a9e1c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230393"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205659"
 ---
 # <a name="how-to-use-the-context-class-to-implement-a-cooperative-semaphore"></a>Практическое руководство. Использование класса Context для реализации семафора, поддерживающего параллельный доступ
 
 В этом разделе показано, как использовать класс Concurrency:: Context для реализации класса семафора с совместным использованием.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `Context`Класс позволяет блокировать или выдавать текущий контекст выполнения. Блокировка или выработка текущего контекста полезна, если текущий контекст не может быть продолжен, так как ресурс недоступен. *Семафор* — это пример одной ситуации, в которой текущий контекст выполнения должен ждать, пока ресурс станет доступным. Семафор, как и объект критической секции, является объектом синхронизации, который позволяет коду в одном контексте иметь монопольный доступ к ресурсу. Однако, в отличие от объекта критической секции, семафор позволяет параллельно обращаться к ресурсу более чем в одном контексте. Если максимальное число контекстов содержит блокировку семафора, каждый дополнительный контекст должен ожидать освобождения блокировки другим контекстом.
 
@@ -88,7 +89,7 @@ In loop iteration 4...
 
 [!code-cpp[concrt-cooperative-semaphore#8](../../parallel/concrt/codesnippet/cpp/how-to-use-the-context-class-to-implement-a-cooperative-semaphore_8.cpp)]
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Контексты](../../parallel/concrt/contexts.md)<br/>
 [Параллельные контейнеры и объекты](../../parallel/concrt/parallel-containers-and-objects.md)

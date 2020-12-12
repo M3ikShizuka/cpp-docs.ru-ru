@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как использовать преобразователь в конвейере данных.
 title: Практическое руководство. Использование преобразователя в конвейере данных
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - data pipelines, using transformer [Concurrency Runtime]
 - using transformer in data pipelines [Concurrency Runtime]
 ms.assetid: ca49cb3f-4dab-4b09-a9c9-d3a109ae4c29
-ms.openlocfilehash: 4eb490ecf51abea324f20395279bff2d74b7af77
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 97b0af16a3ce89b940952117bb8639d281363a23
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215859"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205620"
 ---
 # <a name="how-to-use-transformer-in-a-data-pipeline"></a>Практическое руководство. Использование преобразователя в конвейере данных
 
-Этот раздел содержит простой пример, демонстрирующий использование класса [Concurrency:: transformer](../../parallel/concrt/reference/transformer-class.md) в конвейере данных. Более полный пример использования конвейера данных для обработки изображений см. в разделе [Пошаговое руководство. Создание сети обработки изображений](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
+Этот раздел содержит простой пример, демонстрирующий использование класса [Concurrency:: transformer](../../parallel/concrt/reference/transformer-class.md) в конвейере данных. Более полный пример использования конвейера данных для обработки изображений см. в разделе [Пошаговое руководство. создание Image-Processing сети](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
 
 *Конвейер данных* — это распространенный шаблон в параллельном программировании. Конвейер данных состоит из последовательности этапов, где каждый этап выполняет работу, а затем передает результат этой работы на следующий этап. `transformer`Класс является ключевым компонентом в конвейерах данных, поскольку он получает входное значение, выполняет работу над этим значением, а затем создает результат для использования другим компонентом.
 
@@ -58,4 +59,4 @@ The result is -42.
 
 [библиотеку асинхронных агентов](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [Асинхронные блоки сообщений](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
-[Пошаговое руководство. Создание сети обработки изображений](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)
+[Пошаговое руководство. Создание Image-Processing сети](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)

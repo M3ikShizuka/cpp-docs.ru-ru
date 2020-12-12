@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: советы по программированию многобайтовых кодировок'
 title: Советы по программированию многобайтовой кодировки
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,31 +8,31 @@ helpviewer_keywords:
 - MBCS [C++], programming
 - multibyte characters [C++]
 ms.assetid: d8ad36b8-917f-474e-8adb-69462adecd17
-ms.openlocfilehash: 420e376d3a66c8f8115732692089f4254847bc0d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 76890f3ecbee6938433bcd2d3fa99023d69e039c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62410597"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207193"
 ---
 # <a name="mbcs-programming-tips"></a>Советы по программированию многобайтовой кодировки
 
-В новых разработках следует использовать кодировку Юникод для всех строк, которые конечные пользователи могут столкнуться возможно. MBCS — это устаревшая технология, который был замещен стандартом Юникода. В этом разделе содержатся советы для разработчиков, которые необходимо поддерживать существующие программы, которые используют MBCS и где нецелесообразно для преобразования в Юникод. Совет относится к MFC-приложения и приложения, созданные без использования MFC. Ниже приведен список разделов.
+В новой разработке следует использовать кодировку символов Юникода для всех строк, которые могут быть доступны конечным пользователям. MBCS — это устаревшая технология, которая заменена Юникодом. В этом разделе приводятся советы для разработчиков, которые должны поддерживать существующие программы, использующие MBCS и непрактичные для преобразования в Юникод. Советы применимы к приложениям и приложениям MFC, написанным без MFC. Будут рассмотрены следующие задачи:
 
-- [Общие советы по программированию многобайтовой кодировки](../text/general-mbcs-programming-advice.md)
+- [Общие рекомендации по программированию многобайтовых кодировок](../text/general-mbcs-programming-advice.md)
 
-- [Увеличение и уменьшение значений указателей](../text/incrementing-and-decrementing-pointers.md)
+- [Увеличение и уменьшение указателей](../text/incrementing-and-decrementing-pointers.md)
 
 - [Индексы байтов](../text/byte-indices.md)
 
 - [Последний символ в строке](../text/last-character-in-a-string.md)
 
-- [Присваивание символов](../text/character-assignment.md)
+- [Назначение символов](../text/character-assignment.md)
 
-- [Сравнение знаков](../text/character-comparison.md)
+- [Сравнение символов](../text/character-comparison.md)
 
 - [Переполнение буфера](../text/buffer-overflow.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Поддержка многобайтовых кодировок](../text/support-for-multibyte-character-sets-mbcss.md)
+[Поддержка многобайтовых кодировок (MBCS)](../text/support-for-multibyte-character-sets-mbcss.md)

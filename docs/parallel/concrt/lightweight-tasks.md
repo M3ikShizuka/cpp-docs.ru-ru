@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения: упрощенные задачи'
 title: Упрощенные задачи
 ms.date: 11/04/2016
 helpviewer_keywords:
 - lightweight tasks
 ms.assetid: b6dcfc7a-9fa9-4144-96a6-2845ea272017
-ms.openlocfilehash: be417052ffab19c1bc2d2ba6f35094f98e315812
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 328d556eacb2e33bdf3077b722defa81669a525c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77141849"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205568"
 ---
 # <a name="lightweight-tasks"></a>Упрощенные задачи
 
-В этом документе описывается роль упрощенных задач в среда выполнения с параллелизмом. *Упрощенная задача* — это задача, которая планируется непосредственно из `concurrency::Scheduler` или `concurrency::ScheduleGroup` объекта. Упрощенная задача напоминает функцию, которую вы предоставляете функции Windows API [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) . Поэтому упрощенные задачи полезны при адаптации существующего кода к использованию функций планирования среда выполнения с параллелизмом. Среда выполнения с параллелизмом сам использует упрощенные задачи для планирования асинхронных агентов и отправки сообщений между асинхронными блоками сообщений.
+В этом документе описывается роль упрощенных задач в среда выполнения с параллелизмом. *Упрощенная задача* — это задача, которая планируется непосредственно из `concurrency::Scheduler` `concurrency::ScheduleGroup` объекта или. Упрощенная задача напоминает функцию, которую вы предоставляете функции Windows API [CreateThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread) . Поэтому упрощенные задачи полезны при адаптации существующего кода к использованию функций планирования среда выполнения с параллелизмом. Среда выполнения с параллелизмом сам использует упрощенные задачи для планирования асинхронных агентов и отправки сообщений между асинхронными блоками сообщений.
 
 > [!TIP]
 > Среда выполнения с параллелизмом предоставляет планировщик по умолчанию, и таким образом не требуется создавать планировщик в приложении. Поскольку планировщик задач помогает точно настроить производительность приложений, рекомендуется начать с [библиотеки параллельных шаблонов (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) или [библиотеки асинхронных агентов](../../parallel/concrt/asynchronous-agents-library.md) , если вы не знакомы с среда выполнения с параллелизмом.
@@ -31,4 +32,4 @@ ms.locfileid: "77141849"
 ## <a name="see-also"></a>См. также раздел
 
 [Планировщик заданий](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
-[Пошаговое руководство. Адаптация существующего кода для использования упрощенных задач](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md)
+[Пошаговое руководство. адаптация существующего кода к использованию упрощенных задач](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md)

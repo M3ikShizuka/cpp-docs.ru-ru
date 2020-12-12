@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: категории сообщений'
 title: Категории сообщений
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - messages [MFC], Windows
 - message handling [MFC], message types
 ms.assetid: 68e1db75-9da6-4a4d-b2c2-dc4d59f8d87b
-ms.openlocfilehash: 3875a6931b4380f0531e4c1786de6dddfccb76ca
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 66635101a8727e560d21d44546e2e12ace6f33ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625470"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203384"
 ---
 # <a name="message-categories"></a>Категории сообщений
 
@@ -35,11 +36,11 @@ ms.locfileid: "84625470"
 
    К ним относятся WM_COMMAND сообщения уведомления от объектов пользовательского интерфейса: меню, кнопки панели инструментов и сочетания клавиш. Платформа обрабатывает команды, отличающиеся от других сообщений, и может обрабатываться другими типами объектов, как описано в разделах [цели команды](command-targets.md).
 
-## <a name="windows-messages-and-control-notification-messages"></a><a name="_core_windows_messages_and_control.2d.notification_messages"></a>Сообщения Windows и уведомления об управлении
+## <a name="windows-messages-and-control-notification-messages"></a><a name="_core_windows_messages_and_control.2d.notification_messages"></a> Сообщения Windows и сообщения Control-Notification
 
 Сообщения в категориях 1 и 2 — сообщения Windows и уведомления об управлении — обрабатываются Windows: объекты классов, производных от класса `CWnd` . Сюда входят `CFrameWnd` , `CMDIFrameWnd` ,,, `CMDIChildWnd` `CView` `CDialog` и собственные классы, производные от этих базовых классов. Такие объекты инкапсулируют обработчик `HWND` в окно Windows.
 
-## <a name="command-messages"></a><a name="_core_command_messages"></a>Сообщения команды
+## <a name="command-messages"></a><a name="_core_command_messages"></a> Сообщения команды
 
 Сообщения в категории 3 — команды — могут обрабатываться с помощью более широкого спектра объектов: документов, шаблонов документов и самого объекта приложения в дополнение к окнам и представлениям. Если команда непосредственно влияет на определенный объект, имеет смысл, чтобы этот объект обрабатывал команду. Например, команда Открыть в меню файл логически связана с приложением: приложение открывает указанный документ при получении команды. Таким образом, обработчик команды Open является функцией-членом класса Application. Дополнительные сведения о командах и способах их маршрутизации к объектам см. [в разделе как платформа вызывает обработчик](how-the-framework-calls-a-handler.md).
 

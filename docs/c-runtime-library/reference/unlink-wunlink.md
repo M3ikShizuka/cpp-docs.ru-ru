@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _unlink, _wunlink'
 title: _unlink, _wunlink
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - files [C++], removing
 - _tunlink function
 ms.assetid: 5e4f5f1b-1e99-4391-9b18-9ac63c32fae8
-ms.openlocfilehash: af6fd6c7065529b43f5e275ce1d745d0031ddfb7
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 742df45211b6e19314a3b3f89880d7f2cd83fb2f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909279"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205152"
 ---
 # <a name="_unlink-_wunlink"></a>_unlink, _wunlink
 
@@ -62,7 +63,7 @@ int _wunlink(
 
 ### <a name="parameters"></a>Параметры
 
-*файлов*<br/>
+*filename*<br/>
 Имя удаляемого файла.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -71,9 +72,9 @@ int _wunlink(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функция **_unlink** удаляет файл, указанный параметром *filename*. **_wunlink** — это версия **_unlink**для расширенных символов; Аргумент *filename* для **_wunlink** является строкой расширенных символов. В остальном эти функции ведут себя одинаково.
+Функция **_unlink** удаляет файл, указанный параметром *filename*. **_wunlink** — это версия **_unlink** для расширенных символов; Аргумент *filename* для **_wunlink** является строкой расширенных символов. В остальном эти функции ведут себя одинаково.
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

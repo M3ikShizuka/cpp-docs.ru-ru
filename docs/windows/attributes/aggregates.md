@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: статистические выражения'
 title: статистические выражения (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - aggregate objects [C++], aggregates attribute
 - aggregates [C++]
 ms.assetid: 67a084c9-941f-474b-a029-9c93b38ebe9a
-ms.openlocfilehash: e745cae5710bbf8df1314ec20a4a0b72545c0591
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c108b18f957047a6a5dbb33538a23de6c3469783
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836365"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205477"
 ---
 # <a name="aggregates"></a>статистические выражения
 
@@ -34,7 +35,7 @@ ms.locfileid: "88836365"
 *variable_name*<br/>
 Имя переменной для вставки. Эта переменная содержит `IUnknown` коллекцию объектов, для которых выполняется статистическая обработка.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 При применении к объекту атрибут **aggregates** языка C++ реализует внешнюю программу-оболочку статистически вычисляемого объекта (указан в `clsid`).
 
@@ -93,6 +94,6 @@ struct CObject : IObject
 [Атрибуты COM](com-attributes.md)<br/>
 [Атрибуты класса](class-attributes.md)<br/>
 [Атрибуты typedef, enum, Union и struct](typedef-enum-union-and-struct-attributes.md)<br/>
-[Статистической обработки](/windows/win32/com/aggregation)<br/>
+[Агрегирование](/windows/win32/com/aggregation)<br/>
 [Статистически](/windows/win32/Midl/aggregatable)<br/>
 [COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](../../atl/reference/com-interface-entry-macros.md#com_interface_entry_autoaggregate_blind)

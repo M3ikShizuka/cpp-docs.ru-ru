@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как использовать parallel_invoke для написания параллельной инструкции по сортировке
 title: Практическое руководство. Использование функции parallel_invoke для написания программы параллельной сортировки
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - structured_task_group class, example
 - improving parallel performance with task groups [Concurrency Runtime]
 ms.assetid: 53979a2a-525d-4437-8952-f1ff85b37673
-ms.openlocfilehash: 9d84cdbecb7cc6d39cb30077780c558db85888c0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4146bed939e265f611d79c465681c10ef28a1ebe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222723"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205672"
 ---
 # <a name="how-to-use-parallel_invoke-to-write-a-parallel-sort-routine"></a>Практическое руководство. Использование функции parallel_invoke для написания программы параллельной сортировки
 
@@ -24,7 +25,7 @@ ms.locfileid: "87222723"
 > [!NOTE]
 > В этом примере для демонстрации используется параллельная подпрограмма сортировки. Можно также использовать встроенные алгоритмы сортировки, предоставляемые PPL: [Concurrency::p arallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [concurrency::p arallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort)и [Concurrency::p arallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort). Дополнительные сведения см. в разделе [Параллельные алгоритмы](../../parallel/concrt/parallel-algorithms.md).
 
-## <a name="sections"></a><a name="top"></a>Священ
+## <a name="sections"></a><a name="top"></a> Священ
 
 В этом документе описаны следующие задачи.
 
@@ -32,7 +33,7 @@ ms.locfileid: "87222723"
 
 - [Использование parallel_invoke для выполнения битонной сортировки в параллельном режиме](#parallel)
 
-## <a name="performing-bitonic-sort-serially"></a><a name="serial"></a>Последовательный порядок выполнения битонной сортировки
+## <a name="performing-bitonic-sort-serially"></a><a name="serial"></a> Последовательный порядок выполнения битонной сортировки
 
 В следующем примере показана последовательная версия алгоритма битонной сортировки. `bitonic_sort`Функция разделяет последовательность на две секции, сортирует эти секции в противоположных направлениях, а затем объединяет результаты. Эта функция вызывает два раза рекурсивно для сортировки каждой секции.
 
@@ -40,7 +41,7 @@ ms.locfileid: "87222723"
 
 [[Top](#top)]
 
-## <a name="using-parallel_invoke-to-perform-bitonic-sort-in-parallel"></a><a name="parallel"></a>Использование parallel_invoke для выполнения битонной сортировки в параллельном режиме
+## <a name="using-parallel_invoke-to-perform-bitonic-sort-in-parallel"></a><a name="parallel"></a> Использование parallel_invoke для выполнения битонной сортировки в параллельном режиме
 
 В этом разделе описывается использование `parallel_invoke` алгоритма для параллельного выполнения алгоритма битонной сортировки.
 

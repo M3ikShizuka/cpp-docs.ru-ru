@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Агиливентсаурце Class'
 title: Класс Агиливентсаурце
 ms.date: 10/03/2018
 ms.topic: reference
@@ -6,12 +7,12 @@ f1_keywords:
 - event/Microsoft::WRL::AgileEventSource
 helpviewer_keywords:
 - AgileEventSource class
-ms.openlocfilehash: 71a70f783d8f8967d755bb788f4aae4861340d64
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d2e48d59d8706eb65828bc5b77ffaf9d4158bc1f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214192"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97204580"
 ---
 # <a name="agileeventsource-class"></a>Класс Агиливентсаурце
 
@@ -35,11 +36,11 @@ class AgileEventSource :
 Интерфейс к делегату, который представляет обработчик событий.
 
 *тевентсаурцеоптионс*<br/>
-Структура [инвокемодеоптионс](invokemodeoptions-structure.md) , для которой в поле инвокемоде задано значение `InvokeMode::StopOnFirstError` или `InvokeMode::FireAll`.
+Структура [инвокемодеоптионс](invokemodeoptions-structure.md) , для которой в поле инвокемоде задано значение `InvokeMode::StopOnFirstError` или `InvokeMode::FireAll` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Подавляющее большинство компонентов в среда выполнения Windows являются гибкими компонентами. Дополнительные сведения см. в разделе Работа [с потоками иC++маршалирование (/CX)](../../cppcx/threading-and-marshaling-c-cx.md).
+Подавляющее большинство компонентов в среда выполнения Windows являются гибкими компонентами. Дополнительные сведения см. в разделе Работа [с потоками и маршалирование (C++/CX)](../../cppcx/threading-and-marshaling-c-cx.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -53,15 +54,15 @@ class AgileEventSource :
 
 **Пространство имен:** Microsoft::WRL
 
-## <a name="members"></a>Члены
+## <a name="members"></a>Элементы
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[Метод Агиливентсаурце:: Add](#add)|Добавляет в набор обработчиков событий для текущего объекта **агиливентсаурце** обработчик событий Agile, представленный указанным интерфейсом делегата.|
 
-## <a name="agileeventsourceadd-method"></a><a name="add"></a>Метод Агиливентсаурце:: Add
+## <a name="agileeventsourceadd-method"></a><a name="add"></a> Метод Агиливентсаурце:: Add
 
 Добавляет обработчик событий, представленный указанным интерфейсом делегата, к набору обработчиков событий для текущего объекта [EventSource](eventsource-class.md) .
 
@@ -80,7 +81,7 @@ HRESULT Add(
 Интерфейс для объекта делегата, который представляет обработчик событий.
 
 *token*<br/>
-После завершения операции представляет дескриптор события. Используйте этот маркер в качестве параметра метода `Remove()` для отмены обработчика событий.
+После завершения операции представляет дескриптор события. Используйте этот токен в качестве параметра `Remove()` метода для отмены обработчика событий.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -88,4 +89,4 @@ HRESULT Add(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Microsoft::WRL](microsoft-wrl-namespace.md)
+[Пространство имен Microsoft:: WRL](microsoft-wrl-namespace.md)

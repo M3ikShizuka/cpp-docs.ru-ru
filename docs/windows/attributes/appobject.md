@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: аппобжект'
 title: аппобжект (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - appobject attribute
 ms.assetid: 8ce30b73-e945-403e-a755-6bc78078a695
-ms.openlocfilehash: 6562702a93273e4fc24ba138a1eb20b1ab6b076e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b371b9726e3a750ef5d40ebe5abae219b473bb02
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836352"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205464"
 ---
 # <a name="appobject"></a>appobject
 
