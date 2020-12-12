@@ -1,44 +1,45 @@
 ---
+description: 'Дополнительные сведения о: контейнерные элементы управления и полосы'
 title: Элементы управления и зоны главной панели
 ms.date: 11/04/2016
 helpviewer_keywords:
 - rebar controls [MFC], working with bands in
 - bands, in rebar controls
 ms.assetid: b647e7a5-9ea7-48b1-8e5f-096d104748f0
-ms.openlocfilehash: 4bb7b4aeab1478138aa2b52649f41ca943b5daa4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 27ada3633a560ad8b5852b05bdd6330a0936fb99
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62378172"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248571"
 ---
 # <a name="rebar-controls-and-bands"></a>Элементы управления и зоны главной панели
 
-Основная цель элемент управления "Главная панель" — в качестве контейнера для дочерних окон, стандартные элементы управления диалогового окна, меню, панелей инструментов и т. д. Это вложение поддерживается концепция «полосы». Каждый аппаратного контроллера управления "Главная панель" может содержать любое сочетание полосу захвата, битовая карта, текстовую метку и дочернего окна.
+Главным назначением элемента управления "Главная панель" является работа в качестве контейнера для дочерних окон, общих элементов управления диалогового окна, меню, панелей инструментов и т. д. Это включение поддерживается понятием "полоса". Каждая полоса главных панелей может содержать любое сочетание полосы захвата, точечного рисунка, метки текста и дочернего окна.
 
-Класс `CReBarCtrl` имеет многие функции-члены, можно использовать для получения и обрабатывать, эти данные для конкретных главной:
+Класс `CReBarCtrl` содержит множество функций-членов, которые можно использовать для получения и управления данными для конкретной панели главной группы:
 
-- [GetBandCount](../mfc/reference/crebarctrl-class.md#getbandcount) возвращает номер текущего полосами в элементе управления "Главная панель".
+- [Жетбандкаунт](../mfc/reference/crebarctrl-class.md#getbandcount) Возвращает количество текущих полос в элементе управления "Главная панель".
 
-- [GetBandInfo](../mfc/reference/crebarctrl-class.md#getbandinfo) инициализирует **REBARBANDINFO** структуру с данными из указанного диапазона. Есть соответствующая [SetBandInfo](../mfc/reference/crebarctrl-class.md#setbandinfo) функция-член.
+- [Жетбандинфо](../mfc/reference/crebarctrl-class.md#getbandinfo) Инициализирует структуру **ребарбандинфо** со сведениями из указанного диапазона. Имеется соответствующая функция-член [сетбандинфо](../mfc/reference/crebarctrl-class.md#setbandinfo) .
 
-- [GetRect](../mfc/reference/crebarctrl-class.md#getrect) Извлекает ограничивающий прямоугольник указанный аппаратного контроллера управления.
+- [Коrect](../mfc/reference/crebarctrl-class.md#getrect) Извлекает ограничивающий прямоугольник указанной полосы.
 
-- [GetRowCount](../mfc/reference/crebarctrl-class.md#getrowcount) возвращает число строк аппаратного контроллера управления в элементе управления "Главная панель".
+- Число [строк](../mfc/reference/crebarctrl-class.md#getrowcount) Возвращает количество строк полос в элементе управления "Главная панель".
 
-- [IDToIndex](../mfc/reference/crebarctrl-class.md#idtoindex) Извлекает индекс указанного диапазона.
+- [Идтоиндекс](../mfc/reference/crebarctrl-class.md#idtoindex) Извлекает индекс указанного диапазона.
 
-- [GetBandBorders](../mfc/reference/crebarctrl-class.md#getbandborders) извлекает границы диапазона.
+- [Жетбандбордерс](../mfc/reference/crebarctrl-class.md#getbandborders) Извлекает границы полосы.
 
-В дополнение к манипуляции предоставляются несколько функций-членов, которые позволяют работать с лентами определенной главной панели.
+Помимо манипуляций предоставляется несколько функций, позволяющих работать с конкретными полосами главной панели.
 
-[InsertBand](../mfc/reference/crebarctrl-class.md#insertband) и [DeleteBand](../mfc/reference/crebarctrl-class.md#deleteband) добавлять и удалять лентами главной панели. [MinimizeBand](../mfc/reference/crebarctrl-class.md#minimizeband) и [MaximizeBand](../mfc/reference/crebarctrl-class.md#maximizeband) влияют на текущий размер зону определенной главной панели. [MoveBand](../mfc/reference/crebarctrl-class.md#moveband) изменяет индекс определенной главной. [ShowBand](../mfc/reference/crebarctrl-class.md#showband) показывает или скрывает от пользователя зону главной панели.
+[Инсертбанд](../mfc/reference/crebarctrl-class.md#insertband) и [делетебанд](../mfc/reference/crebarctrl-class.md#deleteband) Добавление и удаление полос главной панели. [Минимизебанд](../mfc/reference/crebarctrl-class.md#minimizeband) и [максимизебанд](../mfc/reference/crebarctrl-class.md#maximizeband) влияют на текущий размер заданной области главной панели. [Мовебанд](../mfc/reference/crebarctrl-class.md#moveband) изменяет индекс определенной полосы главной панели. [Шовбанд](../mfc/reference/crebarctrl-class.md#showband) показывает или скрывает полосу элементов главной панели от пользователя.
 
-В следующем примере показано добавление панель инструментов (*m_wndToolBar*) для существующего элемента управления "Главная панель" (*m_wndReBar*). Диапазон описываемых инициализация `rbi` структуры и последующего вызова `InsertBand` функция-член:
+В следующем примере демонстрируется добавление панели инструментов (*m_wndToolBar*) к существующему элементу управления главной панели (*m_wndReBar*). Диапазон описан путем инициализации `rbi` структуры и последующего вызова `InsertBand` функции-члена:
 
 [!code-cpp[NVC_MFCControlLadenDialog#27](../mfc/codesnippet/cpp/rebar-controls-and-bands_1.cpp)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Использование CReBarCtrl](../mfc/using-crebarctrl.md)<br/>
 [Элементы управления](../mfc/controls-mfc.md)
