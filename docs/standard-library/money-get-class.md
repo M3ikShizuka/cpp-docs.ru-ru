@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: money_get классе'
 title: Класс money_get
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - std::money_get [C++], do_get
 - std::money_get [C++], get
 ms.assetid: 692d3374-3fe7-4b46-8aeb-f8d91ed66b2e
-ms.openlocfilehash: ab49dad1a24e57eb33834cc651d9ccdb50abe68c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6dfab2347799c78b89e2da9e00ebdb71af0c22d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224764"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277509"
 ---
 # <a name="money_get-class"></a>Класс money_get
 
@@ -42,13 +43,13 @@ class money_get : public locale::facet;
 *InputIterator*\
 Тип итератора, из которого функции получения считывают своих входные данные.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Как и в случае любого другого аспекта языкового стандарта, начальное сохраненное значение статического идентификатора объекта равно нулю. Первая попытка получить доступ к сохраненному значению сохранит уникальное положительное значение в **id.**
 
 ### <a name="constructors"></a>Конструкторы
 
-|Конструктор|Описание:|
+|Конструктор|Описание|
 |-|-|
 |[money_get](#money_get)|Конструктор для объектов типа `money_get`, используемых для извлечения числовых значений из последовательностей, представляющих денежные значения.|
 
@@ -73,7 +74,7 @@ class money_get : public locale::facet;
 
 **Пространство имен:** std
 
-## <a name="money_getchar_type"></a><a name="char_type"></a>money_get:: char_type
+## <a name="money_getchar_type"></a><a name="char_type"></a> money_get:: char_type
 
 Тип, используемый для описания символа, используемого языковым стандартом.
 
@@ -81,11 +82,11 @@ class money_get : public locale::facet;
 typedef CharType char_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип является синонимом для параметра-шаблона *Chartype*.
 
-## <a name="money_getdo_get"></a><a name="do_get"></a>money_get::d o_get
+## <a name="money_getdo_get"></a><a name="do_get"></a> money_get::d o_get
 
 Виртуальная функция, которая вызывается для извлечения числового значения из последовательности символов, которая представляет денежное значение.
 
@@ -127,7 +128,7 @@ virtual iter_type do_get(iter_type first,
 
 Входной итератор, адресующий первый элемент после денежного поля ввода.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая защищенная виртуальная функция-член пытается сопоставить последовательные элементы, начиная с первого в последовательности [ `first`, `last`), пока не распознает полное, непустое денежное поле ввода. В случае успеха оно преобразует это поле в последовательность из одной или нескольких десятичных цифр, при необходимости перед знаком минуса ( `-` ), чтобы представить сумму и сохранить результат в [string_type](#string_type) объект *Val*. Она возвращает итератор, обозначающий первый элемент после денежного поля ввода. В противном случае функция сохраняет пустую последовательность в *Val* и задает `ios_base::failbit` в *состоянии*. Она возвращает итератор, обозначающий первый элемент после любого префикса допустимого денежного поля ввода. В любом случае, если возвращаемое значение равно `last`, функция устанавливает `ios_base::eofbit` в `State`.
 
@@ -135,7 +136,7 @@ virtual iter_type do_get(iter_type first,
 
 Формат поля денежного ввода определяется с помощью [аспекта locale](../standard-library/locale-class.md#facet_class)**fac** , возвращаемого эффективным вызовом [use_facet](../standard-library/locale-functions.md#use_facet)  <  [moneypunct](../standard-library/moneypunct-class.md) \< **CharType**, **intl**>> ( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)).
 
-В частности, внесены следующие изменения.
+В частности:
 
 - **fac**. [neg_format](../standard-library/moneypunct-class.md#neg_format) определяет порядок, в котором будут расположены компоненты поля.
 
@@ -165,7 +166,7 @@ virtual iter_type do_get(iter_type first,
 
 См. пример для [get](#get), в котором вызывается `do_get`.
 
-## <a name="money_getget"></a><a name="get"></a>money_get:: Get
+## <a name="money_getget"></a><a name="get"></a> money_get:: Get
 
 Извлекает числовое значение из последовательности символов, представляющей денежное значение.
 
@@ -209,7 +210,7 @@ iter_type get(iter_type first,
 
 Входной итератор, адресующий первый элемент после денежного поля ввода.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Обе функции элементов возвращают [do_get](#do_get) `(first, last, Intl, Iosbase, State, val)` .
 
@@ -262,7 +263,7 @@ int main( )
 };
 ```
 
-## <a name="money_getiter_type"></a><a name="iter_type"></a>money_get:: iter_type
+## <a name="money_getiter_type"></a><a name="iter_type"></a> money_get:: iter_type
 
 Тип, который описывает итератор ввода.
 
@@ -270,11 +271,11 @@ int main( )
 typedef InputIterator iter_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом для параметра-шаблона **InputIterator**.
 
-## <a name="money_getmoney_get"></a><a name="money_get"></a>money_get:: money_get
+## <a name="money_getmoney_get"></a><a name="money_get"></a> money_get:: money_get
 
 Конструктор для объектов типа `money_get`, используемых для извлечения числовых значений из последовательностей, представляющих денежные значения.
 
@@ -287,7 +288,7 @@ explicit money_get(size_t _Refs = 0);
 *_Refs*\
 Целочисленное значение, используемое для указания типа управления памятью для объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возможные значения параметра *_Refs* и их значимость:
 
@@ -295,13 +296,13 @@ explicit money_get(size_t _Refs = 0);
 
 - 1: время существования объекта должно управляться вручную.
 
-- \>1: эти значения не определены.
+- \> 1: эти значения не определены.
 
 Прямые примеры привести нельзя, так как деструктор защищен.
 
 Конструктор инициализирует свой базовый объект с **языковым стандартом::**[Facet](../standard-library/locale-class.md#facet_class)(*_Refs*).
 
-## <a name="money_getstring_type"></a><a name="string_type"></a>money_get:: string_type
+## <a name="money_getstring_type"></a><a name="string_type"></a> money_get:: string_type
 
 Тип, который описывает строку символов типа **CharType**.
 
@@ -309,11 +310,11 @@ explicit money_get(size_t _Refs = 0);
 typedef basic_string<CharType, Traits, Allocator> string_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип описывает специализацию шаблона класса [basic_string](../standard-library/basic-string-class.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [\<locale>](../standard-library/locale.md)\
 [Класс аспекта](../standard-library/locale-class.md#facet_class)\

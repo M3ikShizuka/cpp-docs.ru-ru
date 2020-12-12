@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о: &lt; языковой стандарт&gt;'
 title: '&lt;locale&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - locale header
 ms.assetid: ca56f9d2-7128-44da-8df1-f4c78c17fbf2
-ms.openlocfilehash: ae008ef45e8a6bb57505432f2c931a768d4c8ea4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dce8cb130269450e1b7996b61504e59dc372e3b7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224803"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277808"
 ---
 # <a name="ltlocalegt"></a>&lt;locale&gt;
 
@@ -47,7 +48,7 @@ ms.locfileid: "87224803"
 
 ### <a name="classes"></a>Классы
 
-|Class|Описание:|
+|Класс|Описание|
 |-|-|
 |[codecvt](../standard-library/codecvt-class.md)|Шаблон класса, предоставляющий аспект, используемый для преобразования между внутренними и внешними кодировками символов.|
 |[codecvt_base](../standard-library/codecvt-base-class.md)|Базовый класс для класса codecvt, который используется для определения типа перечисления, который называется `result` , используется в качестве возвращаемого типа для функций-членов аспекта для указания результата преобразования.|
@@ -79,7 +80,7 @@ ms.locfileid: "87224803"
 |[Класс wbuffer_convert](../standard-library/wbuffer-convert-class.md)|Описывает буфер потока, который управляет передачей элементов в буфер потока байтов и из него.|
 |[Класс wstring_convert](../standard-library/wstring-convert-class.md)|Шаблон класса, который выполняет преобразования между широкой строкой и строкой байтов.|
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Кодовые страницы](../c-runtime-library/code-pages.md)\
 [Имена языковых стандартов, языки и строки страны или региона](../c-runtime-library/locale-names-languages-and-country-region-strings.md)\

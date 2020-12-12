@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: lognormal_distribution классе'
 title: Класс lognormal_distribution
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::lognormal_distribution [C++], param_type
 - std::lognormal_distribution [C++], param_type
 ms.assetid: f2d6a431-6c3a-4370-b12e-4adb4ddf6cc4
-ms.openlocfilehash: 28ecadfce3e52d9541358d8aa9f68b2e0857661b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e0d927d300cad3c26e8ffeaf2c4223caaa6d80af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839612"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277600"
 ---
 # <a name="lognormal_distribution-class"></a>Класс lognormal_distribution
 
@@ -71,7 +72,7 @@ public:
 *реалтипе*\
 Тип результата операции с плавающей запятой, по умолчанию — **`double`** . Возможные типы см. в разделе [\<random>](../standard-library/random.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса описывает распределение, которое создает значения указанного пользователем целочисленного типа или тип **`double`** , если он не указан, распределен в соответствии с нормальным распределением журнала. В следующей таблице представлены ссылки на статьи об отдельных членах.
 
@@ -202,7 +203,7 @@ explicit lognormal_distribution(const param_type& parm);
 *ParM*\
 Структура `param_type`, используемая для формирования распределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительное условие:**`0.0 < s`
 
@@ -237,7 +238,7 @@ struct param_type {
 *Правильно*\
 Структура `param_type`, используемая для сравнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительное условие:**`0.0 < s`
 

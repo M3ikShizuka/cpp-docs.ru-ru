@@ -1,5 +1,6 @@
 ---
-title: logical_not - структура
+description: 'Дополнительные сведения о: logical_not struct'
+title: Структура logical_not
 ms.date: 11/04/2016
 f1_keywords:
 - functional/std::logical_not
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - logical_not class
 - logical_not struct
 ms.assetid: 892db678-31da-4540-974b-17b05efc0849
-ms.openlocfilehash: 731b99faed6515268b93ec3a1a43c96796e49dd3
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: dc89a5a764d9f3182609b47c5f05eb8b3e167cec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246469"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277691"
 ---
-# <a name="logicalnot-struct"></a>logical_not - структура
+# <a name="logical_not-struct"></a>Структура logical_not
 
-Стандартный объект функции, выполняющий логическую операцию не (`operator!`) над своими аргументами.
+Стандартный объект функции, выполняющий логическую операцию NOT ( `operator!` ) для своего аргумента.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -43,11 +44,11 @@ struct logical_not<void>
 Любой тип, поддерживающий `operator!`, принимающий операнды указанного или выводимого типа.
 
 *Слева*\
-Операнд операции логического отрицания. Неспециализированный шаблон принимает ссылочный аргумент lvalue типа *Type*. Специализированный шаблон выполняет точную пересылку lvalue и rvalue ссылочных аргументов выводимого типа *тип*.
+Операнд операции логического отрицания. Неспециализированный шаблон принимает ссылочный аргумент lvalue типа *Type*. Специализированный шаблон выполняет точную пересылку ссылочных аргументов lvalue и rvalue для выводимого *типа*.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Результат `!Left`. Специализированный шаблон выполняет точную передачу результата типа, возвращаемого `operator!`.
+Результат `!Left`. Специализированный шаблон выполняет точную пересылку результата типа, возвращаемого `operator!`.
 
 ## <a name="example"></a>Пример
 

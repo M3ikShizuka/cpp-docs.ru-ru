@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения о: &lt; &gt; Операторы IStream'
 title: Операторы &lt;istream&gt;
 ms.date: 11/04/2016
 f1_keywords:
 - istream/std::operator&gt;&gt;
 ms.assetid: 7174da41-f301-4a34-b631-0ab918b188d2
-ms.openlocfilehash: 3b9521fde1b5a03389bfc1ad3e35fa407d9d6ac0
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 68bf59480af68248533f55ef32de4525a4d900d5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81363037"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277886"
 ---
 # <a name="ltistreamgt-operators"></a>Операторы &lt;istream&gt;
 
-## <a name="operatorgtgt"></a><a name="op_gt_gt"></a>Оператор&gt;&gt;
+## <a name="operatorgtgt"></a><a name="op_gt_gt"></a> станции&gt;&gt;
 
 Извлекает символы и строки из потока.
 
@@ -56,23 +57,23 @@ basic_istream<Elem, Tr>& operator>>(
 
 ### <a name="parameters"></a>Параметры
 
-*Ch*\
+*Канал*\
 Символ.
 
-*Истр*\
+*ISTR*\
 Поток.
 
-*Ул*\
+*str*\
 Строка.
 
-*Валь*\
+*Val*\
 Тип.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Поток.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Класс `basic_istream` также определяет несколько операторов извлечения. Дополнительные сведения см. в разделе [basic_istream::operator>>](../standard-library/basic-istream-class.md#op_gt_gt).
 
@@ -84,9 +85,9 @@ basic_istream<Elem, Tr>& operator>>(
     basic_istream<Elem, Tr>& Istr, Elem* str);
 ```
 
-извлекает до `N - 1` элементов и хранит их в массиве, начиная с *str.* Если `Istr.` [ширина](../standard-library/ios-base-class.md#width) больше нуля, `Istr.width` *N* ; в противном случае, это размер `Elem` самого большого массива, который может быть объявлен. Функция всегда хранит `Elem()` значение после любых извлеченных элементов, которые она хранит. Извлечение останавливается рано в конце `Elem(0)` файла, на символе со значением (который не извлечен), или на любом элементе (который не извлечен), который будет отброшен [ws.](../standard-library/istream-functions.md#ws) Если функция не извлекает элементов, она вызывает `Istr.` [`setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)`. В любом случае, `Istr.width(0)` он вызывает и возвращает *Istr*.
+Извлекает до `N - 1` элементов и сохраняет их в массив, начиная с *str*. Если значение `Istr.` [Width](../standard-library/ios-base-class.md#width) больше нуля, *N* имеет значение `Istr.width` ; в противном случае — размер самого крупного массива `Elem` , который может быть объявлен. Функция всегда сохраняет значение `Elem()` после извлеченных элементов, которые он хранит. Извлечение останавливается на раннем конце файла, на символ со значением `Elem(0)` (который не извлекается) или на любом элементе (который не извлекается), который будет отклонен [WS](../standard-library/istream-functions.md#ws). Если функция не извлекает ни одного элемента, она вызывает `Istr.` [`setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)` . В любом случае он вызывает `Istr.width(0)` и возвращает *ISTR*.
 
-**Примечание безопасности** Нулевая строка, извлеченная из входного потока, не должна превышать размер *строки*буфера назначения. Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
+**Примечание по безопасности** Строка, завершающаяся нулем, извлекаемая из входного потока, не должна превышать размер строки *целевого буфера.* Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 Шаблон функции:
 
@@ -96,7 +97,7 @@ basic_istream<Elem, Tr>& operator>>(
     basic_istream<Elem, Tr>& Istr, Elem& Ch);
 ```
 
-извлекает элемент, если это возможно, и хранит его в *Ch*. В противном `is.` [`setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)`случае, он вызывает . В любом случае, он возвращает *Istr*.
+Извлекает элемент, если это возможно, и сохраняет его в *CH*. В противном случае он вызывает `is.` [`setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)` . В любом случае возвращается *ISTR*.
 
 Шаблон функции:
 
@@ -147,7 +148,7 @@ basic_istream<Elem, Tr>& operator>>(
     Type& val);
 ```
 
-возвращает `Istr >> val` (и преобразует ссылку `Istr` на rvalue к lvalue в процессе).
+Возвращает `Istr >> val` (и преобразует ссылку rvalue в `Istr` значение lvalue в процессе).
 
 ### <a name="example"></a>Пример
 

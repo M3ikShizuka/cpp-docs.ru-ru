@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: money_put классе'
 title: Класс money_put
 ms.date: 11/01/2018
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - std::money_put [C++], do_put
 - std::money_put [C++], put
 ms.assetid: f439fd56-c9b1-414c-95e1-66c918c6eee6
-ms.openlocfilehash: d15667f4e30561dbba024f877530c4ff0f824f64
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d7e35e870d4a065948123e9d21339095d36c4579
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224751"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277483"
 ---
 # <a name="money_put-class"></a>Класс money_put
 
@@ -43,13 +44,13 @@ class money_put : public locale::facet;
 *OutputIterator*\
 Тип итератора, куда функции записи денежных значений записывают свои выходные данные.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Как и в случае любого другого аспекта языкового стандарта, начальное сохраненное значение статического идентификатора объекта равно нулю. Первая попытка получить доступ к сохраненному значению сохранит уникальное положительное значение в **id.**
 
 ### <a name="constructors"></a>Конструкторы
 
-|Конструктор|Описание:|
+|Конструктор|Описание|
 |-|-|
 |[money_put](#money_put)|Конструктор для объектов типа `money_put`.|
 
@@ -74,7 +75,7 @@ class money_put : public locale::facet;
 
 **Пространство имен:** std
 
-## <a name="money_putchar_type"></a><a name="char_type"></a>money_put:: char_type
+## <a name="money_putchar_type"></a><a name="char_type"></a> money_put:: char_type
 
 Тип, используемый для описания символа, используемого языковым стандартом.
 
@@ -82,11 +83,11 @@ class money_put : public locale::facet;
 typedef CharType char_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип является синонимом для параметра-шаблона **Chartype**.
 
-## <a name="money_putdo_put"></a><a name="do_put"></a>money_put::d o_put
+## <a name="money_putdo_put"></a><a name="do_put"></a> money_put::d o_put
 
 Виртуальная функция, вызываемая для преобразования числа или строки в последовательность символов, представляющую денежное значение.
 
@@ -127,7 +128,7 @@ virtual iter_type do_put(
 
 Итератор вывода, который адресует позицию после последнего сформированного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая виртуальная Защищенная функция-член создает последовательные элементы, начиная с *следующего* , чтобы получить поле денежного вывода из [string_type](#string_type) объекта *Val*. Последовательность, управляемая аргументом *Val* , должна начинаться с одной или нескольких десятичных цифр, при необходимости предшествует знаку минус (-), представляющему сумму. Функция возвращает итератор, обозначающий первый элемент за пределами созданного выходного денежного поля.
 
@@ -135,7 +136,7 @@ virtual iter_type do_put(
 
 Формат поля денежного вывода определяется [аспектом locale](../standard-library/locale-class.md#facet_class) fac, возвращаемым (эффективным) вызовом [use_facet](../standard-library/locale-functions.md#use_facet)  <  [moneypunct](../standard-library/moneypunct-class.md) \< **CharType**, **intl**> > ( **iosbase**. [getloc](../standard-library/ios-base-class.md#getloc)).
 
-В частности, внесены следующие изменения.
+В частности:
 
 - **fac**. [pos_format](../standard-library/moneypunct-class.md#pos_format) определяет порядок, в котором компоненты поля создаются для неотрицательного значения.
 
@@ -169,7 +170,7 @@ virtual iter_type do_put(
 
 См. пример для [put](#put), где виртуальная функция-член вызывается из **put**.
 
-## <a name="money_putiter_type"></a><a name="iter_type"></a>money_put:: iter_type
+## <a name="money_putiter_type"></a><a name="iter_type"></a> money_put:: iter_type
 
 Тип, который описывает итератор вывода.
 
@@ -177,11 +178,11 @@ virtual iter_type do_put(
 typedef OutputIterator iter_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип является синонимом параметра-шаблона **OutputIterator.**
 
-## <a name="money_putmoney_put"></a><a name="money_put"></a>money_put:: money_put
+## <a name="money_putmoney_put"></a><a name="money_put"></a> money_put:: money_put
 
 Конструктор для объектов типа `money_put`.
 
@@ -194,7 +195,7 @@ explicit money_put(size_t _Refs = 0);
 *_Refs*\
 Целочисленное значение, используемое для указания типа управления памятью для объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возможные значения параметра *_Refs* и их значимость:
 
@@ -202,13 +203,13 @@ explicit money_put(size_t _Refs = 0);
 
 - 1: время существования объекта должно управляться вручную.
 
-- \>1: эти значения не определены.
+- \> 1: эти значения не определены.
 
 Прямые примеры привести нельзя, так как деструктор защищен.
 
 Конструктор инициализирует свой базовый объект с **локальным::**[Facet](../standard-library/locale-class.md#facet_class)( `_Refs` ).
 
-## <a name="money_putput"></a><a name="put"></a>money_put::p UT
+## <a name="money_putput"></a><a name="put"></a> money_put::p UT
 
 Преобразует число или строку в последовательность символов, представляющую денежное значение.
 
@@ -249,7 +250,7 @@ iter_type put(
 
 Итератор вывода, который адресует позицию после последнего сформированного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Обе функции-члены возвращают [do_put](#do_put)( `next` , `_Intl` , `_Iosbase` , `_Fill` , `val` ).
 
@@ -281,7 +282,7 @@ int main()
 money_put() = "EUR1.000,12"
 ```
 
-## <a name="money_putstring_type"></a><a name="string_type"></a>money_put:: string_type
+## <a name="money_putstring_type"></a><a name="string_type"></a> money_put:: string_type
 
 Тип, описывающий строку, содержащую символы типа `CharType`.
 
@@ -289,11 +290,11 @@ money_put() = "EUR1.000,12"
 typedef basic_string<CharType, Traits, Allocator> string_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип описывает специализацию шаблона класса [basic_string](../standard-library/basic-string-class.md) , объекты которой могут хранить последовательности элементов из исходной последовательности.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [\<locale>](../standard-library/locale.md)\
 [Класс аспекта](../standard-library/locale-class.md#facet_class)\

@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: lock_guard классе'
 title: Класс lock_guard
 ms.date: 11/04/2016
 f1_keywords:
 - mutex/std::lock_guard
 - mutex/std::lock_guard::lock_guard
 ms.assetid: 57121f0d-9c50-481c-b971-54e64df864e0
-ms.openlocfilehash: 989c1e368e95fc0009f0c3f1c71af0bdba20609d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d8965f1e781d99f0b84c58dcc3288a4532e4351c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81351719"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277730"
 ---
 # <a name="lock_guard-class"></a>Класс lock_guard
 
@@ -27,7 +28,7 @@ class lock_guard;
 
 В аргументе шаблона `Mutex` должно быть указано имя *типа мьютекс*.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
@@ -37,18 +38,18 @@ class lock_guard;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[lock_guard](#lock_guard)|Формирует объект `lock_guard`.|
 |[Деструктор lock_guard::~lock_guard](#dtorlock_guard_destructor)|Снимает блокировку `mutex`, переданного в конструктор.|
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<mutex>
+**Заголовок:**\<mutex>
 
 **Пространство имен:** std
 
-## <a name="lock_guardlock_guard-constructor"></a><a name="lock_guard"></a>lock_guard::lock_guard конструктор
+## <a name="lock_guardlock_guard-constructor"></a><a name="lock_guard"></a> Конструктор lock_guard:: lock_guard
 
 Формирует объект `lock_guard`.
 
@@ -60,16 +61,16 @@ lock_guard(mutex_type& Mtx, adopt_lock_t);
 
 ### <a name="parameters"></a>Параметры
 
-*Mtx*\
+*MTX*\
 Объект *типа мьютекс*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Первый конструктор строит объект типа `lock_guard` и блокирует *Mtx.* Если *Mtx* не является рекурсивным mutex, он должен быть разблокирован, когда этот конструктор называется.
+Первый конструктор конструирует объект типа `lock_guard` и блокирует *MTX*. Если *MTX* не является рекурсивным мьютексом, он должен быть разблокирован при вызове этого конструктора.
 
-Второй конструктор не блокирует *Mtx.* *Mtx* должен быть заблокирован, когда этот конструктор называется. Конструктор не выдает никаких исключений.
+Второй конструктор не блокирует *MTX*. *MTX* должен быть заблокирован при вызове этого конструктора. Конструктор не выдает никаких исключений.
 
-## <a name="lock_guardlock_guard-destructor"></a><a name="dtorlock_guard_destructor"></a>lock_guard::lock_guard деструктор
+## <a name="lock_guardlock_guard-destructor"></a><a name="dtorlock_guard_destructor"></a> Деструктор lock_guard:: ~ lock_guard
 
 Снимает блокировку `mutex`, переданного в конструктор.
 
@@ -77,11 +78,11 @@ lock_guard(mutex_type& Mtx, adopt_lock_t);
 ~lock_guard() noexcept;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если `mutex` не существует при выполнении деструктора, поведение не определено.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Справка по файлам заголовка](../standard-library/cpp-standard-library-header-files.md)\
+[Справочник по файлам заголовков](../standard-library/cpp-standard-library-header-files.md)\
 [\<mutex>](../standard-library/mutex.md)

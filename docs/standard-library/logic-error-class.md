@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: logic_error классе'
 title: Класс logic_error
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - logic_error class
 ms.assetid: b290d73d-94e1-4288-af86-2bb5d71f677a
-ms.openlocfilehash: b94f7f4c2482f0317e37c6f4bf3618b91a175147
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: b4b592d268a29a1bf1c095beb79904789d695e64
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87521191"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277717"
 ---
 # <a name="logic_error-class"></a>Класс logic_error
 
@@ -29,7 +30,7 @@ public:
 };
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Значение, возвращаемое, `what()` является копией `message.data()` . Дополнительные сведения см. в разделах [`what`](../standard-library/exception-class.md) и [`data`](../standard-library/basic-string-class.md#data).
 
@@ -66,7 +67,7 @@ Type: class std::logic_error
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Класс Exception](../standard-library/exception-class.md)\
 [Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)

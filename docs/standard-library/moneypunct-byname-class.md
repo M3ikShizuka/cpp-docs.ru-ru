@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: moneypunct_byname классе'
 title: Класс moneypunct_byname
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - moneypunct_byname class
 ms.assetid: e8a544d2-6aee-420d-b513-deb385c9b416
-ms.openlocfilehash: c687bc870e4d78cfe9174eb04ea09c34d6a9c955
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: b20293ac6788156f25f95878a5ab0098c178edec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687658"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277470"
 ---
 # <a name="moneypunct_byname-class"></a>Класс moneypunct_byname
 
-Шаблон производного класса, описывающий объект, который можно использовать в качестве `moneypunct` аспекта данного языкового стандарта, включая поля форматирования денежного ввода или денежного вывода.
+Шаблон производного класса, описывающий объект, который можно использовать в качестве `moneypunct` аспекта заданного языкового стандарта, включая поля форматирования денежного ввода или денежного вывода.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -38,16 +39,16 @@ protected:
 };
 ```
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
-Его поведение определяется именованным языковым стандартом `_Locname`. Каждый конструктор инициализирует свой базовый объект с [moneypunct](../standard-library/moneypunct-class.md#moneypunct)\<CharType, Intl>( `_Refs`).
+Его поведение определяется именованным языковым стандартом `_Locname`. Каждый конструктор инициализирует свой базовый объект с помощью [moneypunct](../standard-library/moneypunct-class.md#moneypunct) \<CharType, Intl> ( `_Refs` ).
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<locale>
+**Заголовок:**\<locale>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Потокобезопасность в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)
