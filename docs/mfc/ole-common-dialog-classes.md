@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: классы общих диалоговых окон OLE'
 title: Классы общих диалоговых окон OLE
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,19 +8,19 @@ helpviewer_keywords:
 - OLE common dialog classes [MFC]
 - common dialog classes [MFC]
 ms.assetid: 706526ae-f94f-4909-a0f8-6b5fe954fd97
-ms.openlocfilehash: 1854d19c540f5e3e64b47786f465a05213eced86
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: c30871c8f49be608f5ceeea3d84c86d483e20a81
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617795"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222285"
 ---
 # <a name="ole-common-dialog-classes"></a>Классы общих диалоговых окон OLE
 
 Эти классы обрабатывали общие задачи OLE, реализуя ряд стандартных диалоговых окон OLE. Они также предоставляют единообразный пользовательский интерфейс для функций OLE.
 
 [COleDialog](reference/coledialog-class.md)<br/>
-Используется платформой для хранения общих реализаций для всех диалоговых окон OLE. Все классы диалоговых окон в категории пользовательского интерфейса являются производными от этого базового класса. `COleDialog`не может использоваться напрямую.
+Используется платформой для хранения общих реализаций для всех диалоговых окон OLE. Все классы диалоговых окон в категории пользовательского интерфейса являются производными от этого базового класса. `COleDialog` не может использоваться напрямую.
 
 [COleInsertDialog](reference/coleinsertdialog-class.md)<br/>
 Отображает диалоговое окно Вставка объекта — стандартный пользовательский интерфейс для вставки новых связанных или внедренных элементов OLE.

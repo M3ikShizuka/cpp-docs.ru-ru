@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: обработчики сообщений уведомлений дочернего окна'
 title: Обработчики для уведомляющих сообщений дочернего окна
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,25 +11,25 @@ helpviewer_keywords:
 - windows [MFC], message handlers
 - child windows [MFC], messages
 ms.assetid: fddfdd08-8ecf-4f84-8b45-5a84616aaa8d
-ms.openlocfilehash: 06b13a7af2e73d6dc2758a342dae5beeca828ae4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 341fdcdf1f6f45a084380eedbe866d4f43462e10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62391150"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220452"
 ---
 # <a name="child-window-notification-message-handlers"></a>Обработчики для уведомляющих сообщений дочернего окна
 
-Существует пять категорий уведомляющих сообщений дочернего окна.
+Существует пять категорий сообщений с уведомлениями дочерних окон:
 
 |Категория|Описание|
 |--------------|-----------------|
-|[Обработчик универсального элемента управления](../../mfc/reference/generic-control-handler.md)|Обработчик универсального элемента управления коды уведомления.|
-|[Обработчики пользовательских кнопок](../../mfc/reference/user-button-handlers.md)|Обработчики для коды уведомления пользователя.|
-|[Обработчики полей со списками](../../mfc/reference/combo-box-handlers.md)|Обработчики для кодов уведомлений поле со списком.|
-|[Обработчики элемента управления редактированием](../../mfc/reference/edit-control-handlers.md)|Обработчики для кодов уведомление элемента управления edit.|
-|[Обработчики списков](../../mfc/reference/list-box-handlers.md)|Обработчики для кодов уведомлений поле списка.|
+|[Универсальный обработчик элементов управления](../../mfc/reference/generic-control-handler.md)|Обработчик для кодов уведомления универсального элемента управления.|
+|[Обработчики кнопок пользователей](../../mfc/reference/user-button-handlers.md)|Обработчики для кодов уведомлений пользовательской кнопки.|
+|[Обработчики полей со списками](../../mfc/reference/combo-box-handlers.md)|Обработчики для кодов уведомления для полей со списком.|
+|[Изменение обработчиков элементов управления](../../mfc/reference/edit-control-handlers.md)|Обработчики для кодов уведомлений элемента управления Edit.|
+|[Обработчики списков](../../mfc/reference/list-box-handlers.md)|Обработчики для кодов уведомления списка.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Схемы сообщений](../../mfc/reference/message-maps-mfc.md)

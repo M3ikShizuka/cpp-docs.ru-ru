@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __outdword'
 title: __outdword
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - outdword instruction
 - __outdword intrinsic
 ms.assetid: ed1e4994-a84b-4759-8bf9-cd48fb073f4d
-ms.openlocfilehash: ce1358e7cef0136ccf7d314038d06d271916e0bc
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: e1d5f79231675ca64a340138ebda24a56e485ab1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221653"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222350"
 ---
 # <a name="__outdword"></a>__outdword
 
 **Блок, относящийся только к системам Microsoft**
 
-Создает инструкцию для отправки даублеворд *данных* через порт порта. `out`
+Создает `out` инструкцию для отправки Даублеворд *данных* через *порт* порта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,18 +36,18 @@ void __outdword(
 *Порту*\
 окне Порт, в который отправляются данные.
 
-*Data*\
+*Данные*\
 окне Даублеворд для отправки.
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__outdword`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эта процедура доступна только как встроенная функция.
 

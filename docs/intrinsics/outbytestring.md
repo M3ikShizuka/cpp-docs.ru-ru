@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __outbytestring'
 title: __outbytestring
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - __outbytestring intrinsic
 - outsb instruction
 ms.assetid: c9150661-9c18-427f-bae8-710bba6ed78c
-ms.openlocfilehash: 31caf17db5d56efccd6b30200994b1080356b4c1
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: feadb0b4275e370de88bfc04c8a10f90c41d0844
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217169"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222428"
 ---
 # <a name="__outbytestring"></a>__outbytestring
 
 **Блок, относящийся только к системам Microsoft**
 
-Формирует инструкцию, которая отправляет первые `Count` байты данных, на которые указывает `Buffer` , на порт, указанный `Port`параметром. `rep outsb`
+Формирует `rep outsb` инструкцию, которая отправляет первые `Count` байты данных, на которые указывает, `Buffer` на порт, указанный параметром `Port` .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,13 +45,13 @@ void __outbytestring(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__outbytestring`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эта процедура доступна только как встроенная функция.
 

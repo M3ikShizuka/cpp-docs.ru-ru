@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: обработка буфера'
 title: Операции с буфером
 ms.date: 04/04/2018
 helpviewer_keywords:
 - buffers, manipulation routines
 - buffers
 ms.assetid: 164f4860-ce66-412c-8291-396fbd70f03e
-ms.openlocfilehash: a79bfdb33d2bff5e18c916a2e116ab03251afdf1
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 8389faf1e2e3de44507784755c7b4831952b9ffe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79443599"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221739"
 ---
 # <a name="buffer-manipulation"></a>Операции с буфером
 
@@ -18,7 +19,7 @@ ms.locfileid: "79443599"
 
 ## <a name="buffer-manipulation-routines"></a>Подпрограммы для операций с буфером
 
-|Подпрограмма|Использование|
+|Подпрограмма|Использовать|
 |-------------|---------|
 |[_memccpy](../c-runtime-library/reference/memccpy.md)|Копирование символов из одного буфера в другой, пока указанный символ или заданное число символов не будут скопированы|
 |[memchr, wmemchr](../c-runtime-library/reference/memchr-wmemchr.md)|Возвращение указателя к первому вхождению указанного символа в буфере в пределах указанного числа символов|
@@ -33,4 +34,4 @@ ms.locfileid: "79443599"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Универсальные подпрограммы среды выполнения C по категориям](../c-runtime-library/run-time-routines-by-category.md)
+[Подпрограммы универсальной среды выполнения C по категориям](../c-runtime-library/run-time-routines-by-category.md)

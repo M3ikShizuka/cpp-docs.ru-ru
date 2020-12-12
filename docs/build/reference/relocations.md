@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/РЕЛОКАТИОНС
 title: /RELOCATIONS
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /RELOCATIONS dumpbin option
 - -RELOCATIONS dumpbin option
 ms.assetid: 535eba3a-781a-4809-bf33-f67d3060b02c
-ms.openlocfilehash: b8671d61d1157be2d126fc71c46e76d6a4ba94b7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fd971e29e716d16814c1129821ad580eb76c767e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318944"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225236"
 ---
 # <a name="relocations"></a>/RELOCATIONS
 
@@ -21,12 +22,12 @@ ms.locfileid: "62318944"
 /RELOCATIONS
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Этот параметр отображает все перемещения в объекте или изображения.
+Этот параметр отображает все перемещения в объекте или изображении.
 
-Только [/Headers](headers.md) параметр (программа DUMPBIN) доступен для использования в файлах, созданных с помощью [/GL](gl-whole-program-optimization.md) параметр компилятора.
+С файлами, созданными с использованием параметра компилятора [/GL](gl-whole-program-optimization.md), можно использовать только параметр DUMPBIN [/HEADERS](headers.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Параметры DUMPBIN](dumpbin-options.md)

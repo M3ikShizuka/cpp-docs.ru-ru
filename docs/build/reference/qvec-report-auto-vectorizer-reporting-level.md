@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о:/Qvec-report (уровень отчетов Auto-векторизатора)
 title: /Qvec-report (уровень отчетности автоматического векторизатора)
 ms.date: 11/04/2016
 ms.assetid: 4778c9a3-0692-4085-9b05-1bfeadf4c74a
-ms.openlocfilehash: 2007e80db0ee0aec362869315767505ec06ab109
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 734dabffa3bf19ecaba42d35d208eb27ec7b2968
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836872"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225470"
 ---
 # <a name="qvec-report-auto-vectorizer-reporting-level"></a>/Qvec-report (уровень отчетности автоматического векторизатора)
 
@@ -31,7 +32,7 @@ ms.locfileid: "88836872"
 
 ### <a name="to-set-the-qvec-report-compiler-option-in-visual-studio"></a>Установка параметра компилятора/Qvec-report в Visual Studio
 
-1. В области **Обозреватель решений**откройте контекстное меню для проекта и выберите пункт **Свойства**.
+1. В области **Обозреватель решений** откройте контекстное меню для проекта и выберите пункт **Свойства**.
 
 1. В диалоговом окне **страницы свойств** в разделе **C/C++** выберите пункт **Командная строка**.
 
@@ -45,5 +46,5 @@ ms.locfileid: "88836872"
 
 [Параметры/q (низкоуровневые операции)](q-options-low-level-operations.md)<br/>
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)<br/>
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)<br/>
 [Вектор машинного кода в Visual Studio](/archive/blogs/nativeconcurrency/auto-vectorizer-in-visual-studio-2012-overview)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье объявление переменной на основе нового класса элемента управления
 title: Объявление переменной на основании нового класса элемента управления
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - control classes [MFC], variables
 - classes [MFC], declaring variables based on
 ms.assetid: 5722dc38-c0eb-40bd-93da-67a808140d03
-ms.openlocfilehash: a828351a9e789228143d43d4c0a756abda879989
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: aa38a38b3113e4c4826756b020860d79e03ef16b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506679"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220231"
 ---
 # <a name="declaring-a-variable-based-on-your-new-control-class"></a>Объявление переменной на основании нового класса элемента управления
 
@@ -35,7 +36,7 @@ ms.locfileid: "91506679"
 
 1. В поле **имя переменной** введите имя.
 
-1. В разделе **Категория**выберите **элемент Управление**.
+1. В разделе **Категория** выберите **элемент Управление**.
 
 1. В списке **идентификатор элемента управления** выберите добавленный элемент управления. В списке **тип переменной** должен отображаться правильный тип переменной, а в поле **тип элемента управления** должен отображаться правильный тип элемента управления.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: зарезервированные слова'
 title: Зарезервированные слова
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - linker [C++], reserved words
 - reserved words [C++]
 ms.assetid: 9b9f49e5-0739-45ab-a37e-81e3915ceb25
-ms.openlocfilehash: 62893d4af1633bc2c89d2d6a0fa71309a0411ad5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6d5c5971d8d01dffa1dcd1e7f6a5228fb239d4dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836846"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225197"
 ---
 # <a name="reserved-words"></a>Зарезервированные слова
 
@@ -47,16 +48,16 @@ ms.locfileid: "88836846"
       **`FIXED`** <sup>1</sup>
    :::column-end:::
    :::column span="":::
-      **`FUNCTIONS`**<sup>открыт</sup>\
+      **`FUNCTIONS`** <sup>2</sup>\
       **`HEAPSIZE`**\
       **`IMPORTS`**\
       **`IMPURE`**<sup>одного</sup>\
-      **`INCLUDE`**<sup>открыт</sup>\
-      **`INITINSTANCE`**<sup>открыт</sup>\
+      **`INCLUDE`** <sup>2</sup>\
+      **`INITINSTANCE`** <sup>2</sup>\
       **`IOPL`**\
       **`LIBRARY`**<sup>одного</sup>\
       **`LOADONCALL`**<sup>одного</sup>\
-      **`LONGNAMES`**<sup>открыт</sup>\
+      **`LONGNAMES`** <sup>2</sup>\
       **`MOVABLE`**<sup>одного</sup>\
       **`MOVEABLE`**<sup>одного</sup>\
       **`MULTIPLE`**\
@@ -76,7 +77,7 @@ ms.locfileid: "88836846"
       **`OLD`**<sup>одного</sup>\
       **`PRELOAD`**\
       **`PRIVATE`**\
-      **`PROTMODE`**<sup>открыт</sup>\
+      **`PROTMODE`** <sup>2</sup>\
       **`PURE`**<sup>одного</sup>\
       **`READONLY`**
    :::column-end:::

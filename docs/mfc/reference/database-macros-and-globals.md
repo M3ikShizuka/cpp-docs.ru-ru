@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: макросы базы данных и глобальные'
 title: Макросы и глобальные объекты баз данных
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - global functions [MFC], database functions
 - macros [MFC], MFC database
 ms.assetid: 5b9b9e61-1cf9-4345-9f29-3807dd466488
-ms.openlocfilehash: 0dc53bce8b43677e7fe0aa1787d1adcc16a560c4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1dd6501c8ea37478a7b75341467e1c77819aa3f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837531"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220322"
 ---
 # <a name="database-macros-and-globals"></a>Макросы и глобальные объекты баз данных
 
@@ -72,7 +73,7 @@ AFX_ODBC_CALL(SQLFunc)
 *склфунк*<br/>
 Функция API ODBC. Дополнительные сведения о функциях API ODBC см. в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `AFX_ODBC_CALL` многократно вызывает функцию, пока она больше не возвращает значение `SQL_STILL_EXECUTING` .
 
@@ -100,13 +101,13 @@ AFX_SQL_ASYNC(prs, SQLFunc)
 
 ### <a name="parameters"></a>Параметры
 
-*Вытягивание*<br/>
+*prs*<br/>
 Указатель на `CRecordset` объект или `CDatabase` объект. Начиная с MFC 4,2, значение этого параметра игнорируется.
 
 *склфунк*<br/>
 Функция API ODBC. Дополнительные сведения о функциях API ODBC см. в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `AFX_SQL_ASYNC` просто вызывает макрос [AFX_ODBC_CALL](#afx_odbc_call) и игнорирует параметр *вытягивание* . В версиях MFC до 4,2 использовался `AFX_SQL_ASYNC` для вызова функций API ODBC, которые могут возвращать `SQL_STILL_EXECUTING` . Если функция API ODBC возвращала `SQL_STILL_EXECUTING` , `AFX_SQL_ASYNC` вызовите `prs->OnWaitForDataSource` .
 
@@ -130,7 +131,7 @@ AFX_SQL_SYNC(SQLFunc)
 *склфунк*<br/>
 Функция API ODBC. Дополнительные сведения об этих функциях см. в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос для вызова функций ODBC API, которые не будут возвращать `SQL_STILL_EXECUTING` .
 
