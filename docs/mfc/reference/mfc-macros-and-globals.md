@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: макросы и глобальные библиотеки MFC'
 title: Макросы и глобальные объекты MFC
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,98 +12,98 @@ helpviewer_keywords:
 - Afx naming convention
 - macros
 ms.assetid: add4e33f-0e62-4d27-be14-896cb8675d22
-ms.openlocfilehash: ed45fc7014bda18887be6dc8fbcdff8ba9a9c5f1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9e3d3acd74d1cf6db5856432cdefd632e36185f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373045"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219152"
 ---
 # <a name="mfc-macros-and-globals"></a>Макросы и глобальные объекты MFC
 
-Библиотека класса Фонда Майкрософт может быть разделена на два основных раздела: (1) классы MFC и (2) макросы и глобальные. Если функция или переменная не является членом класса, это глобальная функция или переменная.
+Библиотека Microsoft Foundation Class можно разделить на два основных раздела: (1) классы MFC и (2) макросы и глобальные. Если функция или переменная не является членом класса, это глобальная функция или переменная.
 
-Библиотека MFC и Библиотека Active Template Library (ATL) делятся макросами преобразования строк. Для получения дополнительной информации смотрите в документации ATL [строки преобразования.](../../atl/reference/string-conversion-macros.md)
+Библиотека MFC и макросы преобразования строк общего ресурса библиотеки ATL. Дополнительные сведения см. в разделе [макросы преобразования строк](../../atl/reference/string-conversion-macros.md) в документации ATL.
 
-Макросы и глобалы MFC предлагают функциональность в следующих категориях.
+Макросы и глобальные классы MFC предоставляют функциональные возможности в следующих категориях.
 
-## <a name="general-mfc"></a>Генеральный МФЦ
+## <a name="general-mfc"></a>Общие классы MFC
 
 - [Типы данных](data-types-mfc.md)
 
-- [Тип литья объектов класса МФЦ](type-casting-of-mfc-class-objects.md)
+- [Приведение типов объектов классов MFC](type-casting-of-mfc-class-objects.md)
 
-- [Услуги модели объектов времени в течение выполнения](run-time-object-model-services.md)
+- [Службы модели объекта во время выполнения](run-time-object-model-services.md)
 
-- [Диагностические услуги](diagnostic-services.md)
+- [Службы диагностики](diagnostic-services.md)
 
 - [Обработка исключений](exception-processing.md)
 
 - [Форматирование CString и отображение окна сообщения](cstring-formatting-and-message-box-display.md)
 
-- [Карты сообщений](message-map-macros-mfc.md)
+- [Схемы сообщений](message-map-macros-mfc.md)
 
-- [Карты делегатов и интерфейсов](delegate-and-interface-maps.md)
+- [Сопоставление делегатов и интерфейсов](delegate-and-interface-maps.md)
 
 - [Модули и библиотеки DLL](extension-dll-macros.md)
 
-- [Информация о применении и управление](application-information-and-management.md)
+- [Сведения о приложении и управление им](application-information-and-management.md)
 
 - [Стандартная команда и идентификаторы окон](standard-command-and-window-ids.md)
 
-- [Помощники класса коллекции](collection-class-helpers.md)
+- [Вспомогательные функции классов коллекции](collection-class-helpers.md)
 
 - [Функции серого цвета и сглаживания точечного рисунка](gray-and-dithered-bitmap-functions.md)
 
-- [Стандартный диалоговый обмен данными (DDX)](standard-dialog-data-exchange-routines.md)
+- [Стандартные подпрограммы обмена данными в диалоговых окнах (DDX)](standard-dialog-data-exchange-routines.md)
 
-- [Стандартная проверка данных диалогов (DDV)](standard-dialog-data-validation-routines.md)
+- [Стандартные подпрограммы проверки данных в диалоговых окнах (DDV)](standard-dialog-data-validation-routines.md)
 
 - [Сообщения AFX](afx-messages.md)
 
-- [Стили управления панели инструментов](toolbar-control-styles.md)
+- [Стили элементов управления панели инструментов](toolbar-control-styles.md)
 
-- [Перечисление CMFCImagePaintArea::IMAGE_EDIT_MODE](cmfcimagepaintarea-image-edit-mode-enumeration.md)
+- [Перечисление перечисление CMFCImagePaintArea:: IMAGE_EDIT_MODE](cmfcimagepaintarea-image-edit-mode-enumeration.md)
 
 ## <a name="database"></a>База данных
 
-- [Функции биржи звукозаписи (RFX)](record-field-exchange-functions.md) и [массовая биржа полевых данных (bulk RFX)](record-field-exchange-functions.md) для классов MFC ODBC
+- [Функции обмена полями записей (RFX)](record-field-exchange-functions.md) и [функции Многоблочного обмена полями записей (массовых RFX)](record-field-exchange-functions.md) для классов ODBC MFC
 
 - [Функции обмена полями записи (DFX)](record-field-exchange-functions.md) для классов MFC DAO
 
-- [Диалог обмена данными (DDX) функции для CRecordView и CDaoRecordView](dialog-data-exchange-functions-for-crecordview-and-cdaorecordview.md) (MFC ODBC и DAO классов)
+- [Функции обмена данными диалоговых окон (DDX) для CRecordView и CDaoRecordView](dialog-data-exchange-functions-for-crecordview-and-cdaorecordview.md) (классы MFC ODBC и DAO)
 
-- [Диалог обмена данными (DDX) функции для управления OLE](dialog-data-exchange-functions-for-ole-controls.md)
+- [Функции обмена данными диалоговых окон (DDX) для элементов управления OLE](dialog-data-exchange-functions-for-ole-controls.md)
 
-- [Макрос и глобальные, чтобы помочь в вызове Open Database Connectivity (ODBC) API функции непосредственно](database-macros-and-globals.md)
+- [Макросы и глобальные возможности для непосредственного вызова функций API ODBC](database-macros-and-globals.md)
 
-- [Инициализация и прекращение работы движка базы данных DAO](dao-database-engine-initialization-and-termination.md)
+- [Инициализация и прекращение работы ядра СУБД DAO](dao-database-engine-initialization-and-termination.md)
 
 ## <a name="internet"></a>Интернет
 
-- [Интернет URL разбора глобалов](internet-url-parsing-globals.md)
+- [Глобальные объекты анализа URL-адресов](internet-url-parsing-globals.md)
 
-## <a name="dhtml--dhtml-event-maps"></a>DHTML / DHTML Карты событий
+## <a name="dhtml--dhtml-event-maps"></a>Сопоставления событий DHTML и DHTML
 
-- [Обмен данными диалогов DHTML (DDX)](ddx-dhtml-helper-macros.md)
+- [Вспомогательные макросы обмена диалоговыми данными DHTML (DDX)](ddx-dhtml-helper-macros.md)
 
-- [Карты событий DHTML](dhtml-event-maps.md)
+- [Схемы событий DHTML](dhtml-event-maps.md)
 
 ## <a name="ole"></a>OLE
 
 - [Инициализация OLE](ole-initialization.md)
 
-- [управление приложениями;](application-control.md)
+- [управление приложениями](application-control.md);
 
 - [Схемы подготовки к отправке](dispatch-maps.md)
 
-Кроме того, MFC предоставляет функцию под названием [AfxEnableControlContainer,](ole-initialization.md#afxenablecontrolcontainer) которая позволяет любому контейнеру OLE, разработанной с MFC 4.0, полностью поддерживать встроенные элементы управления OLE.
+Кроме того, MFC предоставляет функцию с именем [афксенаблеконтролконтаинер](ole-initialization.md#afxenablecontrolcontainer) , которая позволяет любому контейнеру OLE, разработанному с помощью MFC 4,0, полностью поддерживать внедренные элементы управления OLE.
 
 ## <a name="ole-controls"></a>Элементы управления OLE
 
-- [Константы типа параметра варианта](variant-parameter-type-constants.md)
+- [Константы типа параметра Variant](variant-parameter-type-constants.md)
 
-- [Введите доступ к библиотеке](type-library-access.md)
+- [Доступ к библиотеке типов](type-library-access.md)
 
 - [Страницы свойств](property-pages-mfc.md)
 
@@ -110,7 +111,7 @@ ms.locfileid: "81373045"
 
 - [Схемы приемников событий](event-sink-maps.md)
 
-- [Карты подключения](connection-maps.md)
+- [Схемы подключения](connection-maps.md)
 
 - [Регистрация элементов управления OLE](registering-ole-controls.md)
 
@@ -118,10 +119,10 @@ ms.locfileid: "81373045"
 
 - [Сохраняемость элементов управления OLE](persistence-of-ole-controls.md)
 
-В первой части этого раздела кратко рассматриваются каждая из предыдущих категорий и перечислены глобальные и макросы в категории, а также краткое описание функциональности. Ниже приведены описания глобальных функций, глобальных переменных и макросов в библиотеке MFC.
+В первой части этого раздела кратко рассматриваются все предыдущие категории и перечислены глобальные и макросы в категории, а также краткие описания функций. Далее приведены описания глобальных функций, глобальных переменных и макросов в библиотеке MFC.
 
 > [!NOTE]
-> Многие глобальные функции начинаются с приставки "Afx", но некоторые, например, функции обмена диалоговыми данными (DDX) и многие функции базы данных не соответствуют этой конвенции. Все глобальные переменные начинаются с "afx" в качестве префикса. Макрос ы не начинаются с какой-либо конкретной префикс, но они написаны буквами верхнего регистра.
+> Многие глобальные функции начинаются с префикса «AFX», но некоторые, например, функции обмена данными диалоговых окон (DDX) и многие функции базы данных, не соответствуют этому соглашению. Все глобальные переменные начинаются с "AFX" в качестве префикса. Макросы не начинаются с какого бы то ни было определенного префикса, но записываются прописными буквами.
 
 ## <a name="see-also"></a>См. также раздел
 
