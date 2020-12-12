@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: предупреждение компилятора (уровень 2) C4412'
 title: Предупреждение компилятора (уровень 2) C4412
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4412
 ms.assetid: f28dc531-1a98-497b-a366-0a13e1bc81c7
-ms.openlocfilehash: 79b4ac95fbac344ff86922b84870e01c6681ed69
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 9b7ce857d5b0545ac620e94bda9655dde0f63489
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684997"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97208636"
 ---
 # <a name="compiler-warning-level-2-c4412"></a>Предупреждение компилятора (уровень 2) C4412
 
 > "*функция*": сигнатура функции содержит тип "*тип*"; Объекты C++ небезопасный для передачи между чистым и смешанным или машинным кодом.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Параметр компилятора **/clr: pure** является устаревшим в visual Studio 2015 и не поддерживается в visual Studio 2017. Если у вас есть код, который должен быть чистым, рекомендуется перенести его на C#.
 

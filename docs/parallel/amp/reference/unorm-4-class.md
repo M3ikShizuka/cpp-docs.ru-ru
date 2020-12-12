@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: unorm_4 классе'
 title: Класс unorm_4
 ms.date: 11/04/2016
 f1_keywords:
@@ -268,12 +269,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::unorm_4::rb
 - amp_short_vectors/Concurrency::graphics::unorm_4::get_wzyx
 ms.assetid: dd216a9d-95f7-4978-8e78-6cb9c781a7e9
-ms.openlocfilehash: 0164f595ba44999718895f5221250f12bd6b7344
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 3dd18f46c1202eb8ae5720f05cad778d02317c8e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142939"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314546"
 ---
 # <a name="unorm_4-class"></a>Класс unorm_4
 
@@ -289,160 +290,160 @@ class unorm_4;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[Конструктор unorm_4](#ctor)|Перегружен. Конструктор по умолчанию инициализирует все элементы значением 0.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
-|unorm_4::get_w||
-|unorm_4::get_wx||
-|unorm_4::get_wxy||
-|unorm_4::get_wxyz||
-|unorm_4::get_wxz||
-|unorm_4::get_wxzy||
-|unorm_4::get_wy||
-|unorm_4::get_wyx||
-|unorm_4::get_wyxz||
-|unorm_4::get_wyz||
-|unorm_4::get_wyzx||
-|unorm_4::get_wz||
-|unorm_4::get_wzx||
-|unorm_4::get_wzxy||
-|unorm_4::get_wzy||
-|unorm_4::get_wzyx||
-|unorm_4::get_x||
-|unorm_4::get_xw||
-|unorm_4::get_xwy||
-|unorm_4::get_xwyz||
-|unorm_4::get_xwz||
-|unorm_4::get_xwzy||
-|unorm_4::get_xy||
-|unorm_4::get_xyw||
-|unorm_4::get_xywz||
-|unorm_4::get_xyz||
-|unorm_4::get_xyzw||
-|unorm_4::get_xz||
-|unorm_4::get_xzw||
-|unorm_4::get_xzwy||
-|unorm_4::get_xzy||
-|unorm_4::get_xzyw||
+|unorm_4:: get_w||
+|unorm_4:: get_wx||
+|unorm_4:: get_wxy||
+|unorm_4:: get_wxyz||
+|unorm_4:: get_wxz||
+|unorm_4:: get_wxzy||
+|unorm_4:: get_wy||
+|unorm_4:: get_wyx||
+|unorm_4:: get_wyxz||
+|unorm_4:: get_wyz||
+|unorm_4:: get_wyzx||
+|unorm_4:: get_wz||
+|unorm_4:: get_wzx||
+|unorm_4:: get_wzxy||
+|unorm_4:: get_wzy||
+|unorm_4:: get_wzyx||
+|unorm_4:: get_x||
+|unorm_4:: get_xw||
+|unorm_4:: get_xwy||
+|unorm_4:: get_xwyz||
+|unorm_4:: get_xwz||
+|unorm_4:: get_xwzy||
+|unorm_4:: get_xy||
+|unorm_4:: get_xyw||
+|unorm_4:: get_xywz||
+|unorm_4:: get_xyz||
+|unorm_4:: get_xyzw||
+|unorm_4:: get_xz||
+|unorm_4:: get_xzw||
+|unorm_4:: get_xzwy||
+|unorm_4:: get_xzy||
+|unorm_4:: get_xzyw||
 |unorm_4:: get_y||
-|unorm_4::get_yw||
-|unorm_4::get_ywx||
-|unorm_4::get_ywxz||
-|unorm_4::get_ywz||
-|unorm_4::get_ywzx||
-|unorm_4::get_yx||
-|unorm_4::get_yxw||
-|unorm_4::get_yxwz||
-|unorm_4::get_yxz||
-|unorm_4::get_yxzw||
-|unorm_4::get_yz||
-|unorm_4::get_yzw||
-|unorm_4::get_yzwx||
-|unorm_4::get_yzx||
-|unorm_4::get_yzxw||
-|unorm_4::get_z||
-|unorm_4::get_zw||
-|unorm_4::get_zwx||
-|unorm_4::get_zwxy||
-|unorm_4::get_zwy||
-|unorm_4::get_zwyx||
-|unorm_4::get_zx||
-|unorm_4::get_zxw||
+|unorm_4:: get_yw||
+|unorm_4:: get_ywx||
+|unorm_4:: get_ywxz||
+|unorm_4:: get_ywz||
+|unorm_4:: get_ywzx||
+|unorm_4:: get_yx||
+|unorm_4:: get_yxw||
+|unorm_4:: get_yxwz||
+|unorm_4:: get_yxz||
+|unorm_4:: get_yxzw||
+|unorm_4:: get_yz||
+|unorm_4:: get_yzw||
+|unorm_4:: get_yzwx||
+|unorm_4:: get_yzx||
+|unorm_4:: get_yzxw||
+|unorm_4:: get_z||
+|unorm_4:: get_zw||
+|unorm_4:: get_zwx||
+|unorm_4:: get_zwxy||
+|unorm_4:: get_zwy||
+|unorm_4:: get_zwyx||
+|unorm_4:: get_zx||
+|unorm_4:: get_zxw||
 |unorm_4:: get_zxwy||
-|unorm_4::get_zxy||
-|unorm_4::get_zxyw||
-|unorm_4::get_zy||
-|unorm_4::get_zyw||
-|unorm_4::get_zywx||
-|unorm_4::get_zyx||
-|unorm_4::get_zyxw||
-|unorm_4::ref_a||
+|unorm_4:: get_zxy||
+|unorm_4:: get_zxyw||
+|unorm_4:: get_zy||
+|unorm_4:: get_zyw||
+|unorm_4:: get_zywx||
+|unorm_4:: get_zyx||
+|unorm_4:: get_zyxw||
+|unorm_4:: ref_a||
 |unorm_4:: ref_b||
-|unorm_4::ref_g||
+|unorm_4:: ref_g||
 |unorm_4:: ref_r||
-|unorm_4::ref_w||
-|unorm_4::ref_x||
+|unorm_4:: ref_w||
+|unorm_4:: ref_x||
 |unorm_4:: ref_y||
-|unorm_4::ref_z||
-|unorm_4::set_w||
-|unorm_4::set_wx||
-|unorm_4::set_wxy||
-|unorm_4::set_wxyz||
-|unorm_4::set_wxz||
-|unorm_4::set_wxzy||
-|unorm_4::set_wy||
-|unorm_4::set_wyx||
-|unorm_4::set_wyxz||
-|unorm_4::set_wyz||
-|unorm_4::set_wyzx||
-|unorm_4::set_wz||
-|unorm_4::set_wzx||
-|unorm_4::set_wzxy||
-|unorm_4::set_wzy||
-|unorm_4::set_wzyx||
-|unorm_4::set_x||
-|unorm_4::set_xw||
-|unorm_4::set_xwy||
-|unorm_4::set_xwyz||
-|unorm_4::set_xwz||
-|unorm_4::set_xwzy||
-|unorm_4::set_xy||
-|unorm_4::set_xyw||
-|unorm_4::set_xywz||
-|unorm_4::set_xyz||
-|unorm_4::set_xyzw||
-|unorm_4::set_xz||
-|unorm_4::set_xzw||
-|unorm_4::set_xzwy||
-|unorm_4::set_xzy||
-|unorm_4::set_xzyw||
+|unorm_4:: ref_z||
+|unorm_4:: set_w||
+|unorm_4:: set_wx||
+|unorm_4:: set_wxy||
+|unorm_4:: set_wxyz||
+|unorm_4:: set_wxz||
+|unorm_4:: set_wxzy||
+|unorm_4:: set_wy||
+|unorm_4:: set_wyx||
+|unorm_4:: set_wyxz||
+|unorm_4:: set_wyz||
+|unorm_4:: set_wyzx||
+|unorm_4:: set_wz||
+|unorm_4:: set_wzx||
+|unorm_4:: set_wzxy||
+|unorm_4:: set_wzy||
+|unorm_4:: set_wzyx||
+|unorm_4:: set_x||
+|unorm_4:: set_xw||
+|unorm_4:: set_xwy||
+|unorm_4:: set_xwyz||
+|unorm_4:: set_xwz||
+|unorm_4:: set_xwzy||
+|unorm_4:: set_xy||
+|unorm_4:: set_xyw||
+|unorm_4:: set_xywz||
+|unorm_4:: set_xyz||
+|unorm_4:: set_xyzw||
+|unorm_4:: set_xz||
+|unorm_4:: set_xzw||
+|unorm_4:: set_xzwy||
+|unorm_4:: set_xzy||
+|unorm_4:: set_xzyw||
 |unorm_4:: set_y||
-|unorm_4::set_yw||
-|unorm_4::set_ywx||
-|unorm_4::set_ywxz||
-|unorm_4::set_ywz||
-|unorm_4::set_ywzx||
-|unorm_4::set_yx||
-|unorm_4::set_yxw||
-|unorm_4::set_yxwz||
-|unorm_4::set_yxz||
-|unorm_4::set_yxzw||
-|unorm_4::set_yz||
-|unorm_4::set_yzw||
-|unorm_4::set_yzwx||
-|unorm_4::set_yzx||
-|unorm_4::set_yzxw||
-|unorm_4::set_z||
-|unorm_4::set_zw||
-|unorm_4::set_zwx||
-|unorm_4::set_zwxy||
-|unorm_4::set_zwy||
-|unorm_4::set_zwyx||
-|unorm_4::set_zx||
-|unorm_4::set_zxw||
-|unorm_4::set_zxwy||
-|unorm_4::set_zxy||
-|unorm_4::set_zxyw||
-|unorm_4::set_zy||
-|unorm_4::set_zyw||
-|unorm_4::set_zywx||
-|unorm_4::set_zyx||
-|unorm_4::set_zyxw||
+|unorm_4:: set_yw||
+|unorm_4:: set_ywx||
+|unorm_4:: set_ywxz||
+|unorm_4:: set_ywz||
+|unorm_4:: set_ywzx||
+|unorm_4:: set_yx||
+|unorm_4:: set_yxw||
+|unorm_4:: set_yxwz||
+|unorm_4:: set_yxz||
+|unorm_4:: set_yxzw||
+|unorm_4:: set_yz||
+|unorm_4:: set_yzw||
+|unorm_4:: set_yzwx||
+|unorm_4:: set_yzx||
+|unorm_4:: set_yzxw||
+|unorm_4:: set_z||
+|unorm_4:: set_zw||
+|unorm_4:: set_zwx||
+|unorm_4:: set_zwxy||
+|unorm_4:: set_zwy||
+|unorm_4:: set_zwyx||
+|unorm_4:: set_zx||
+|unorm_4:: set_zxw||
+|unorm_4:: set_zxwy||
+|unorm_4:: set_zxy||
+|unorm_4:: set_zxyw||
+|unorm_4:: set_zy||
+|unorm_4:: set_zyw||
+|unorm_4:: set_zywx||
+|unorm_4:: set_zyx||
+|unorm_4:: set_zyxw||
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |unorm_4:: operator —||
 |unorm_4:: operator--||
@@ -455,25 +456,25 @@ class unorm_4;
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа размера](#unorm_4__size)||
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |unorm_4:: a||
-|unorm_4::ab||
-|unorm_4::abg||
-|unorm_4::abgr||
-|unorm_4::abr||
-|unorm_4::abrg||
+|unorm_4:: AB||
+|unorm_4:: ABG||
+|unorm_4:: абгр||
+|unorm_4:: Граничный маршрутизатор||
+|unorm_4:: абрг||
 |unorm_4:: AG||
 |unorm_4:: АГБ||
-|unorm_4::agbr||
+|unorm_4:: агбр||
 |unorm_4:: принимаю||
-|unorm_4::agrb||
+|unorm_4:: агрб||
 |unorm_4:: AR||
 |unorm_4:: АРБ||
 |unorm_4:: арбг||
@@ -497,14 +498,14 @@ class unorm_4;
 |unorm_4:: брга||
 |unorm_4:: g||
 |unorm_4:: GA||
-|unorm_4::gab||
-|unorm_4::gabr||
+|unorm_4:: ГАБ||
+|unorm_4:: Габр||
 |unorm_4:: Гар||
 |unorm_4:: нечитаемость||
 |unorm_4:: ГБ||
 |unorm_4:: Гба||
 |unorm_4:: ГБАР||
-|unorm_4::gbr||
+|unorm_4:: ГБР||
 |unorm_4:: гбра||
 |unorm_4:: GR||
 |unorm_4:: гра||
@@ -514,7 +515,7 @@ class unorm_4;
 |unorm_4:: r||
 |unorm_4:: RA||
 |unorm_4:: раб||
-|unorm_4::rabg||
+|unorm_4:: рабг||
 |unorm_4:: перетаскивание||
 |unorm_4:: рагб||
 |unorm_4:: RB||
@@ -530,27 +531,27 @@ class unorm_4;
 |unorm_4:: w||
 |unorm_4:: WX||
 |unorm_4:: вкси||
-|unorm_4::wxyz||
-|unorm_4::wxz||
+|unorm_4:: вксиз||
+|unorm_4:: вксз||
 |unorm_4:: вксзи||
-|unorm_4::wy||
+|unorm_4:: WY||
 |unorm_4:: Викс||
 |unorm_4:: виксз||
 |unorm_4:: виз||
 |unorm_4:: визкс||
-|unorm_4::wz||
-|unorm_4::wzx||
+|unorm_4:: WZ||
+|unorm_4:: взкс||
 |unorm_4:: взкси||
-|unorm_4::wzy||
-|unorm_4::wzyx||
+|unorm_4:: ВЗИ||
+|unorm_4:: взикс||
 |unorm_4:: x||
 |unorm_4:: КСВ||
 |unorm_4:: ксви||
 |unorm_4:: ксвиз||
-|unorm_4::xwz||
+|unorm_4:: ксвз||
 |unorm_4:: ксвзи||
 |unorm_4:: XY||
-|unorm_4::xyw||
+|unorm_4:: ксив||
 |unorm_4:: ксивз||
 |unorm_4:: XYZ||
 |unorm_4:: ксизв||
@@ -558,39 +559,39 @@ class unorm_4;
 |unorm_4:: ксзв||
 |unorm_4:: ксзви||
 |unorm_4:: XZY||
-|unorm_4::xzyw||
+|unorm_4:: ксзив||
 |unorm_4:: y||
-|unorm_4::yw||
-|unorm_4::ywx||
-|unorm_4::ywxz||
-|unorm_4::ywz||
-|unorm_4::ywzx||
+|unorm_4:: Ив||
+|unorm_4:: ивкс||
+|unorm_4:: ивксз||
+|unorm_4:: ИВЗ||
+|unorm_4:: ивзкс||
 |unorm_4:: Икс||
 |unorm_4:: ИКСВ||
-|unorm_4::yxwz||
-|unorm_4::yxz||
+|unorm_4:: иксвз||
+|unorm_4:: иксз||
 |unorm_4:: иксзв||
 |unorm_4:: из||
-|unorm_4::yzw||
-|unorm_4::yzwx||
+|unorm_4:: ИЗВ||
+|unorm_4:: извкс||
 |unorm_4:: изкс||
 |unorm_4:: изксв||
 |unorm_4:: z||
-|unorm_4::zw||
-|unorm_4::zwx||
-|unorm_4::zwxy||
-|unorm_4::zwy||
-|unorm_4::zwyx||
+|unorm_4:: ZW||
+|unorm_4:: звкс||
+|unorm_4:: звкси||
+|unorm_4:: Зви||
+|unorm_4:: звикс||
 |unorm_4:: ЗКС||
 |unorm_4:: зксв||
-|unorm_4::zxwy||
+|unorm_4:: зксви||
 |unorm_4:: зкси||
-|unorm_4::zxyw||
-|unorm_4::zy||
-|unorm_4::zyw||
-|unorm_4::zywx||
-|unorm_4::zyx||
-|unorm_4::zyxw||
+|unorm_4:: зксив||
+|unorm_4:: зи||
+|unorm_4:: Зив||
+|unorm_4:: зивкс||
+|unorm_4:: зикс||
+|unorm_4:: зиксв||
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -602,7 +603,7 @@ class unorm_4;
 
 **Пространство имен:** Concurrency:: Graphics
 
-## <a name="ctor"></a>unorm_4
+## <a name="unorm_4"></a><a name="ctor"></a> unorm_4
 
 Конструктор по умолчанию инициализирует все элементы значением 0.
 
@@ -677,7 +678,7 @@ explicit inline unorm_4(
 *_Other*<br/>
 Объект, используемый для инициализации.
 
-## <a name="unorm_4__size"></a>изменять
+## <a name="size"></a><a name="unorm_4__size"></a> изменять
 
 ```cpp
 static const int size = 4;

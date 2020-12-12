@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: SyncLockWithStatusT Class'
 title: Класс SyncLockWithStatusT
 ms.date: 10/03/2018
 ms.topic: reference
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::status_ data member
 - Microsoft::WRL::Wrappers::Details::SyncLockWithStatusT::SyncLockWithStatusT, constructor
 ms.assetid: 4832fd93-0ac8-4168-9404-b43fefea7476
-ms.openlocfilehash: 4b7dbe8ae1648e4185a9eb1e1142df4a3869aa2f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6a19ae22253fddd48c7baaf29e4b88a4863b89bc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216548"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186159"
 ---
 # <a name="synclockwithstatust-class"></a>Класс SyncLockWithStatusT
 
@@ -38,7 +39,7 @@ class SyncLockWithStatusT : public SyncLockT<SyncTraits>;
 *синктраитс*<br/>
 Тип, который может принимать монопольное или совместное владение ресурсом.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Представляет тип, который может принимать монопольное или совместное владение ресурсом.
 
@@ -48,7 +49,7 @@ class SyncLockWithStatusT : public SyncLockT<SyncTraits>;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-Имя                                                             | Описание
+name                                                             | Описание
 ---------------------------------------------------------------- | --------------------------------------------------------------
 [SyncLockWithStatusT:: SyncLockWithStatusT](#synclockwithstatust) | Инициализирует новый экземпляр класса `SyncLockWithStatusT`.
 
@@ -83,7 +84,7 @@ name                                         | Описание
 
 **Пространство имен:** Microsoft:: WRL:: оболочки::D состояния
 
-## <a name="synclockwithstatustgetstatus"></a><a name="getstatus"></a>SyncLockWithStatusT::/Status
+## <a name="synclockwithstatustgetstatus"></a><a name="getstatus"></a> SyncLockWithStatusT::/Status
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -95,13 +96,13 @@ DWORD GetStatus() const;
 
 Результат операции ожидания для объекта, основанного на `SyncLockWithStatusT` классе, например [мьютекса](mutex-class.md) или [семафора](semaphore-class.md). Ноль (0) указывает, что операция ожидания вернула сигнальное состояние; в противном случае произошло другое состояние, например прошло значение времени ожидания.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает состояние ожидания текущего `SyncLockWithStatusT` объекта.
 
 Функция Status () получает значение базового элемента данных [status_](#status) . Когда объект, основанный на `SyncLockWithStatusT` классе, выполняет операцию блокировки, объект сначала ждет, пока объект станет доступным. Результат этой операции ожидания сохраняется в элементе `status_` данных. Возможными значениями `status_` элемента данных являются возвращаемые значения операции ожидания. Дополнительные сведения см. в разделе возвращаемые значения [`WaitForSingleObjectEx`](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobjectex) функции.
 
-## <a name="synclockwithstatustislocked"></a><a name="islocked"></a>SyncLockWithStatusT:: NOLOCK
+## <a name="synclockwithstatustislocked"></a><a name="islocked"></a> SyncLockWithStatusT:: NOLOCK
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -109,7 +110,7 @@ DWORD GetStatus() const;
 bool IsLocked() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Указывает `SyncLockWithStatusT` , владеет ли текущий объект ресурсом, т `SyncLockWithStatusT` . е. объект *заблокирован*.
 
@@ -117,7 +118,7 @@ bool IsLocked() const;
 
 **`true`**`SyncLockWithStatusT`значение, если объект заблокирован; в противном случае — **`false`** .
 
-## <a name="synclockwithstatuststatus_"></a><a name="status"></a>SyncLockWithStatusT:: status_
+## <a name="synclockwithstatuststatus_"></a><a name="status"></a> SyncLockWithStatusT:: status_
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -125,11 +126,11 @@ bool IsLocked() const;
 DWORD status_;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Содержит результат базовой операции ожидания после операции блокировки объекта на основе текущего `SyncLockWithStatusT` объекта.
 
-## <a name="synclockwithstatustsynclockwithstatust"></a><a name="synclockwithstatust"></a>SyncLockWithStatusT:: SyncLockWithStatusT
+## <a name="synclockwithstatustsynclockwithstatust"></a><a name="synclockwithstatust"></a> SyncLockWithStatusT:: SyncLockWithStatusT
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -155,7 +156,7 @@ explicit SyncLockWithStatusT(
 *status*<br/>
 Значение элемента данных [status_](#status) *другого* параметра или параметра *синхронизации* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Инициализирует новый экземпляр класса `SyncLockWithStatusT`.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C2910'
 title: Ошибка компилятора C2910
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2910
 ms.assetid: 09c50e6a-e099-42f6-8ed6-d80e292a7a36
-ms.openlocfilehash: 0061a7171dd08440ec5d8c8b8cadb77303ff8f41
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d4bb87b054f28e0eab5bc1eef815fd1770d45809
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74761119"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97270632"
 ---
 # <a name="compiler-error-c2910"></a>Ошибка компилятора C2910
 
@@ -56,7 +57,7 @@ template <> A<void>::A(void* p){}   // C2910
 
 Эта ошибка также будет сформирована в результате действий по согласованности компилятора, выполненных в Visual Studio .NET 2003:.
 
-Для кода будет допустимым в версиях Visual Studio .NET 2003 и Visual Studio .NET визуального элемента C++, удалите `template <>`.
+Для кода будет допустимым в версиях Visual Studio .NET 2003 и Visual Studio .NET Visual C++, удалите `template <>` .
 
 Следующий пример приводит к возникновению ошибки C2910:
 

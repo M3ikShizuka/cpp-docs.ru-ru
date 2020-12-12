@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура метод mutextraits'
 title: MutexTraits - структура
 ms.date: 09/27/2018
 ms.topic: reference
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::MutexTraits structure
 - Microsoft::WRL::Wrappers::HandleTraits::MutexTraits::Unlock method
 ms.assetid: 6582df80-b9ba-4892-948f-d572a3b23d54
-ms.openlocfilehash: 6d4ba08ab1884e8584b0e98e931d2d63cdac5aec
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e3dfcee1251794734ed5cf787096361403d80c7f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371253"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330810"
 ---
 # <a name="mutextraits-structure"></a>MutexTraits - структура
 
-Определяет общие характеристики класса [Mutex.](mutex-class.md)
+Определяет общие характеристики класса [мьютекса](mutex-class.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -26,13 +27,13 @@ ms.locfileid: "81371253"
 struct MutexTraits : HANDLENullTraits;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-Имя                           | Описание
+name                           | Описание
 ------------------------------ | ------------------------------------------------
-[MutexTraits::Разблокировать](#unlock) | Выпускает эксклюзивный контроль общего ресурса.
+[Метод mutextraits:: Unlock](#unlock) | Освобождает монопольный контроль над общим ресурсом.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -42,13 +43,13 @@ struct MutexTraits : HANDLENullTraits;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** corewrappers.h
+**Заголовок:** кореврапперс. h
 
-**Пространство имен:** Microsoft::WRL::Wrappers:: HandleTraits
+**Пространство имен:** Microsoft:: WRL:: оболочки:: метод HandleTraits
 
-## <a name="mutextraitsunlock-method"></a><a name="unlock"></a>MutexTraits::Метод разблокировки
+## <a name="mutextraitsunlock-method"></a><a name="unlock"></a> Метод метод mutextraits:: Unlock
 
-Выпускает эксклюзивный контроль общего ресурса.
+Освобождает монопольный контроль над общим ресурсом.
 
 ```cpp
 inline static void Unlock(
@@ -58,5 +59,5 @@ inline static void Unlock(
 
 ### <a name="parameters"></a>Параметры
 
-*H*<br/>
-Обработка к объекту mutex.
+*h*<br/>
+Обработчик объекта мьютекса.

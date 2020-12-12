@@ -1,4 +1,5 @@
 ---
+description: См. Дополнительные сведения о функции элемента InitInstance
 title: Функция-член InitInstance
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - MFC, initializing
 - initializing MFC applications
 ms.assetid: 4ef09267-ff7f-4c39-91a0-57454a264f83
-ms.openlocfilehash: 0a458f19f956bb1092cc76acd587bc467f25325e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b55c5dbd665b45c74e5990b7d40a63fcd9098a9b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625587"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97220621"
 ---
 # <a name="initinstance-member-function"></a>Функция-член InitInstance
 
-Операционная система Windows позволяет запускать несколько копий одного и того же приложения. `WinMain`вызывает [InitInstance](reference/cwinapp-class.md#initinstance) при каждом запуске нового экземпляра приложения.
+Операционная система Windows позволяет запускать несколько копий одного и того же приложения. `WinMain` вызывает [InitInstance](reference/cwinapp-class.md#initinstance) при каждом запуске нового экземпляра приложения.
 
 Стандартная `InitInstance` реализация, созданная мастером приложений MFC, выполняет следующие задачи:
 
@@ -39,4 +40,4 @@ ms.locfileid: "84625587"
 
 ## <a name="see-also"></a>См. также раздел
 
-[CWinApp: класс приложений](cwinapp-the-application-class.md)
+[CWinApp: класс Application](cwinapp-the-application-class.md)

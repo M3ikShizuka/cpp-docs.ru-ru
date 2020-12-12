@@ -1,16 +1,17 @@
 ---
+description: 'См. Дополнительные сведения о операторе operator = = (Microsoft:: WRL)'
 title: Оператор operator== (Microsoft::WRL)
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::operator==
 ms.assetid: 94f383a5-17a9-40c7-9d9c-778acdc54b27
-ms.openlocfilehash: 4774d4801f917691610a457105fc6690ab030a44
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 36d178dc948a6d580fc0a0dab43c36e734a319c3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226910"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330804"
 ---
 # <a name="operator-operator-microsoftwrl"></a>Оператор operator== (Microsoft::WRL)
 
@@ -58,7 +59,7 @@ WRL_NOTHROW bool operator==(
 *конкретного*<br/>
 Левый объект.
 
-*&*<br/>
+*b*<br/>
 Правый объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -71,6 +72,6 @@ WRL_NOTHROW bool operator==(
 
 **Пространство имен:** Microsoft::WRL
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Пространство имен Microsoft:: WRL](microsoft-wrl-namespace.md)

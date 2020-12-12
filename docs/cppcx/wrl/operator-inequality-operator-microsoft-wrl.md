@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о операторе: operator! = (Microsoft:: WRL)'
 title: Оператор operator!= (Microsoft::WRL)
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::operator!=
 ms.assetid: 785435da-87a6-4454-9bce-9d288a96dc26
-ms.openlocfilehash: af7088348cd3f52b38f0277fb7d0a973a1ca0e4b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 69385c81ee401e7fdd47077b21fbc5342eaa091a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226897"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330791"
 ---
 # <a name="operator-operator-microsoftwrl"></a>Оператор operator!= (Microsoft::WRL)
 
@@ -58,7 +59,7 @@ WRL_NOTHROW bool operator!=(
 *конкретного*<br/>
 Левый объект.
 
-*&*<br/>
+*b*<br/>
 Правый объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -71,6 +72,6 @@ WRL_NOTHROW bool operator!=(
 
 **Пространство имен:** Microsoft::WRL
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Пространство имен Microsoft:: WRL](microsoft-wrl-namespace.md)

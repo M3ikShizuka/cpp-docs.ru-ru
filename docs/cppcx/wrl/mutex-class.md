@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о классе семафора
 title: Класс Mutex
 ms.date: 10/03/2018
 ms.topic: reference
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Mutex::Mutex, constructor
 - Microsoft::WRL::Wrappers::Mutex::operator= operator
 ms.assetid: 682a0963-721c-46a2-8871-000e9997505b
-ms.openlocfilehash: 36466bd00c5b100f20ee87173e68fdef4131ec23
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f69c14014a2283fe56ef8e7f705bebe5a5f6dc9d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371236"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330841"
 ---
 # <a name="mutex-class"></a>Класс Mutex
 
@@ -30,7 +31,7 @@ ms.locfileid: "81371236"
 class Mutex : public HandleT<HandleTraits::MutexTraits>;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
@@ -38,23 +39,23 @@ class Mutex : public HandleT<HandleTraits::MutexTraits>;
 ---------- | ------------------------------------------------------
 `SyncLock` | Синоним для класса, поддерживающего синхронные блокировки.
 
-### <a name="public-constructor"></a>Общественный конструктор
+### <a name="public-constructor"></a>Открытый конструктор
 
 Имя                   | Описание
 ---------------------- | ------------------------------------------------
-[Mutex::Mutex](#mutex) | Инициализирует новый экземпляр класса `Mutex`.
+[Мьютекс:: Mutex](#mutex) | Инициализирует новый экземпляр класса `Mutex`.
 
-### <a name="public-members"></a>Общественные члены
+### <a name="public-members"></a>Открытые члены
 
 Имя                 | Описание
 -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------
-[Mutex::Lock](#lock) | Ожидание, пока текущий `Mutex` объект или объект, связанный с указанной ручкой, не выпустит mutex или указанный интервал тайм-аута.
+[Мьютекс:: Lock](#lock) | Ожидает, пока текущий объект или `Mutex` объект, связанный с указанным дескриптором, не истечет из-за истечения мьютекса или указанного интервала времени ожидания.
 
-### <a name="public-operator"></a>Оператор
+### <a name="public-operator"></a>Public, оператор
 
 Имя                                 | Описание
 ------------------------------------ | ---------------------------------------------------------------------------
-[Mutex::оператор](#operator-assign) | Присваивает (перемещает) указанный `Mutex` объект текущему `Mutex` объекту.
+[Мьютекс:: operator =](#operator-assign) | Присваивает указанный `Mutex` объект текущему объекту (перемещает) `Mutex` .
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -62,13 +63,13 @@ class Mutex : public HandleT<HandleTraits::MutexTraits>;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** corewrappers.h
+**Заголовок:** кореврапперс. h
 
-**Пространство имен:** Microsoft:WRL::Wrappers
+**Пространство имен:** Программы Microsoft:: WRL:: оболочки
 
-## <a name="mutexlock"></a><a name="lock"></a>Mutex::Lock
+## <a name="mutexlock"></a><a name="lock"></a> Мьютекс:: Lock
 
-Ожидание, пока текущий `Mutex` объект или объект, связанный с указанной ручкой, не выпустит mutex или указанный интервал тайм-аута.
+Ожидает, пока текущий объект или `Mutex` объект, связанный с указанным дескриптором, не истечет из-за истечения мьютекса или указанного интервала времени ожидания.
 
 ```cpp
 SyncLock Lock(
@@ -83,15 +84,15 @@ static SyncLock Lock(
 
 ### <a name="parameters"></a>Параметры
 
-*Миллисекунд*<br/>
+*milliseconds*<br/>
 Интервал времени ожидания в миллисекундах. Значение по умолчанию равно INFINITE, что означает неограниченное время ожидания.
 
-*H*<br/>
-Ручка `Mutex` объекта.
+*h*<br/>
+Маркер `Mutex` объекта.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-## <a name="mutexmutex"></a><a name="mutex"></a>Mutex::Mutex
+## <a name="mutexmutex"></a><a name="mutex"></a> Мьютекс:: Mutex
 
 Инициализирует новый экземпляр класса `Mutex`.
 
@@ -107,16 +108,16 @@ Mutex(
 
 ### <a name="parameters"></a>Параметры
 
-*H*<br/>
-Ручка, или rvalue-ссылка на ручку, к объекту. `Mutex`
+*h*<br/>
+Маркер или ссылка rvalue на указатель на `Mutex` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Первый конструктор инициализирует `Mutex` объект из указанной ручки. Второй конструктор инициализирует `Mutex` объект из указанной ручки, а затем `Mutex` перемещает право собственности на mutex к текущему объекту.
+Первый конструктор инициализирует `Mutex` объект из указанного маркера. Второй конструктор инициализирует `Mutex` объект из указанного маркера, а затем перемещает владение мьютексом на текущий `Mutex` объект.
 
-## <a name="mutexoperator"></a><a name="operator-assign"></a>Mutex::оператор
+## <a name="mutexoperator"></a><a name="operator-assign"></a> Мьютекс:: operator =
 
-Присваивает (перемещает) указанный `Mutex` объект текущему `Mutex` объекту.
+Присваивает указанный `Mutex` объект текущему объекту (перемещает) `Mutex` .
 
 ```cpp
 Mutex& operator=(
@@ -126,13 +127,13 @@ Mutex& operator=(
 
 ### <a name="parameters"></a>Параметры
 
-*H*<br/>
-Rvalue-ссылка на `Mutex` объект.
+*h*<br/>
+Ссылка rvalue на `Mutex` объект.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Ссылка на `Mutex` текущий объект.
+Ссылка на текущий `Mutex` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Для получения дополнительной информации, **см. Переместить Семантика** раздел [Rvalue Справочник Декларатор:  &&](../../cpp/rvalue-reference-declarator-amp-amp.md).
+Дополнительные сведения см. в разделе **семантика перемещения** в [деклараторе ссылки rvalue:  &&](../../cpp/rvalue-reference-declarator-amp-amp.md).

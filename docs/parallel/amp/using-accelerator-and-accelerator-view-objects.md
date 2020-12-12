@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Использование ускорителей и объектов accelerator_view'
 title: Использование объектов accelerator и accelerator_view
 ms.date: 11/04/2016
 ms.assetid: 18f0dc66-8236-4420-9f46-1a14f2c3fba1
-ms.openlocfilehash: 7807f0c1c572b2e7c3224cf0366233e2a28dbe07
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 270b517764b8060efbaea9d00c20e24aa1746818
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215898"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314494"
 ---
 # <a name="using-accelerator-and-accelerator_view-objects"></a>Использование объектов accelerator и accelerator_view
 

@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения об &lt; операторе: operator (Microsoft:: WRL)'
 title: '&lt;оператор operator (Microsoft:: WRL)'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - client/Microsoft::WRL::operator<
 ms.assetid: bfae0e1c-1648-482b-99c2-3217d62aba46
-ms.openlocfilehash: b438f823814e21e2da43f698471d782c88626628
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1edbb8218ef07355040bd05ab99db8f97be1cb59
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226884"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330773"
 ---
 # <a name="operatorlt-operator-microsoftwrl"></a>&lt;оператор operator (Microsoft:: WRL)
 
@@ -30,7 +31,7 @@ bool operator<(const Details::ComPtrRef<ComPtr<T>>& a, const Details::ComPtrRef<
 *конкретного*<br/>
 Левый объект.
 
-*&*<br/>
+*b*<br/>
 Правый объект.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -43,6 +44,6 @@ bool operator<(const Details::ComPtrRef<ComPtr<T>>& a, const Details::ComPtrRef<
 
 **Пространство имен:** Microsoft::WRL
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Пространство имен Microsoft:: WRL](microsoft-wrl-namespace.md)

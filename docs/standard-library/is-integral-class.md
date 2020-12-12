@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_integral классе'
 title: Класс is_integral
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - is_integral class
 - is_integral
 ms.assetid: fe9279d0-4495-4e88-bf23-153cc6602397
-ms.openlocfilehash: a3d618b77d69f5d80736ac20304c9184c5963b25
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: db586054614b9a5ef49ffe9fe8b643b35c65a217
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217770"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323705"
 ---
 # <a name="is_integral-class"></a>Класс is_integral
 
@@ -30,7 +31,7 @@ struct is_integral;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* является одним из целочисленных типов или `cv-qualified` формой одного из целочисленных типов, в противном случае — значение false.
 

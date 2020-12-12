@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _BitScanForward, _BitScanForward64'
 title: _BitScanForward, _BitScanForward64
 ms.date: 09/02/2019
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - bsf instruction
 - BitScanForward intrinsic
 ms.assetid: 405e60fb-0815-42a7-9b02-6fc035122203
-ms.openlocfilehash: 91f43d19259419b78d1910a00a154d2d4f0adfc7
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 182f22b5350fcad7c3da9a0d6f6df36c0871a3e7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222213"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337230"
 ---
 # <a name="_bitscanforward-_bitscanforward64"></a>_BitScanForward, _BitScanForward64
 
@@ -49,18 +50,18 @@ unsigned char _BitScanForward64(
 
 0, если маска равна нулю; ненулевое значение в противном случае.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Если найден значащий разряд, положение разряда первого найденного значащего разряда возвращается в качестве первого параметра. Если значащий разряд не найден, возвращается 0; в противном случае возвращается 1.
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`_BitScanForward`|x86, ARM, x64, ARM64|
 |`_BitScanForward64`|ARM64, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
 ## <a name="example"></a>Пример
 

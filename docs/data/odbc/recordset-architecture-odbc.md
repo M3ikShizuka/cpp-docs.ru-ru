@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: набор записей: архитектура (ODBC)'
 title: Набор записей. Архитектура (ODBC)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - m_nParams data member
 - m_nFields data member, recordsets
 ms.assetid: 47555ddb-11be-4b9e-9b9a-f2931764d298
-ms.openlocfilehash: 3ed6a862cda769769cd07d2dcd72007292068dc3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0a7be1104cf16f9cc11effac1cd4151749167436
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367089"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186133"
 ---
 # <a name="recordset-architecture-odbc"></a>Набор записей. Архитектура (ODBC)
 
@@ -33,7 +34,7 @@ ms.locfileid: "81367089"
 - [Использование элементов данных m_nFields и m_nParams](#_core_using_m_nfields_and_m_nparams)
 
 > [!NOTE]
-> Этот раздел относится к объектам, производным от `CRecordset`, в которых пакетное получение строк не реализовано. Если пакетное получение строк реализовано, архитектура будет схожей. Чтобы понять различия, [см.](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)
+> Этот раздел относится к объектам, производным от `CRecordset`, в которых пакетное получение строк не реализовано. Если пакетное получение строк реализовано, архитектура будет схожей. Сведения о различиях см. в разделе [набор записей: незначительная выборка записей (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).
 
 ## <a name="sample-class"></a><a name="_core_a_sample_class"></a> Пример класса
 
@@ -56,7 +57,7 @@ public:
 
 В начале класса мастер записывает набор [элементов данных полей](#_core_field_data_members). При создании класса необходимо указать один или несколько элементов данных полей. Если класс является параметризованным, как класс в примере (с элементом данных `m_strIDParam`), необходимо вручную добавить [элементы данных параметров](#_core_parameter_data_members). Мастер не поддерживает добавление параметров в класс.
 
-## <a name="field-data-members"></a><a name="_core_field_data_members"></a>Члены полевых данных
+## <a name="field-data-members"></a><a name="_core_field_data_members"></a> Элементы данных поля
 
 Наиболее важные элементы класса в классе набора записей — это элементы данных полей. Для каждого столбца, выбранного из источника данных, этот класс содержит элемент данных соответствующего типа данных для этого столбца. Например, [пример класса](#_core_a_sample_class), показанный в начале этого раздела, содержит два элемента данных полей типа `CString`, которые называются `m_strCourseID` и `m_strCourseTitle`.
 
@@ -64,7 +65,7 @@ public:
 
 При переходе пользователя к новой записи платформа использует элементы данных полей для представления текущей записи. Платформа обновляет элементы данных полей, заменяя значения предыдущей записи. Элементы данных полей также используются для обновления текущей записи и добавления новых записей. В рамках процесса обновления записи вы указываете новые значения путем присвоения значений непосредственно соответствующим элементам данных полей.
 
-## <a name="parameter-data-members"></a><a name="_core_parameter_data_members"></a>Члены параметрных данных
+## <a name="parameter-data-members"></a><a name="_core_parameter_data_members"></a> Элементы данных параметров
 
 Если класс является параметризованным, он имеет один или несколько элементов данных параметров. Параметризованный класс позволяет делать запрос к набору записей на основе данных, полученных или рассчитанных во время выполнения.
 
@@ -86,16 +87,16 @@ SELECT CourseID, CourseTitle FROM Course WHERE CourseID = MATH101
 > Библиотека MFC сама ничего не делает с параметрами — в частности, она не выполняет подстановки текста. Вместо этого MFC сообщает ODBC, где получить параметр, а ODBC извлекает данные и выполняет необходимую параметризацию.
 
 > [!NOTE]
-> Порядок параметров важен. Для получения информации об этом и [Recordset: Parameterizing a Recordset (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)более подробной информации о параметрах см.
+> Порядок параметров важен. Дополнительные сведения об этих и дополнительных сведениях о параметрах см. [в разделе набор записей. Параметризация набора записей (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).
 
 ## <a name="using-m_nfields-and-m_nparams"></a><a name="_core_using_m_nfields_and_m_nparams"></a> Использование m_nFields и m_nParams
 
 Когда мастер создает конструктор для класса, он также инициализирует элемент данных [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields), который указывает количество [элементов данных полей](#_core_field_data_members) в классе. Если вы добавляете [параметры](#_core_parameter_data_members) в класс, необходимо также добавить инициализацию для элемента данных [m_nParams](../../mfc/reference/crecordset-class.md#m_nparams), который указывает число элементов данных параметров. Платформа использует эти значения для работы с элементами данных.
 
-Для получения дополнительной информации и примеров [см.](../../data/odbc/record-field-exchange-using-rfx.md)
+Дополнительные сведения и примеры см. [в разделе Обмен полями записи. Использование RFX](../../data/odbc/record-field-exchange-using-rfx.md).
 
 ## <a name="see-also"></a>См. также раздел
 
 [Набор записей (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Набор записей. Объявление класса таблицы (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
-[Рекордная полевая биржа (RFX)](../../data/odbc/record-field-exchange-rfx.md)
+[Набор записей. объявление класса для таблицы (ODBC)](../../data/odbc/recordset-declaring-a-class-for-a-table-odbc.md)<br/>
+[Обмен полями записей (RFX)](../../data/odbc/record-field-exchange-rfx.md)
