@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: bsearch'
 title: bsearch
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - arrays [CRT], binary search
 - bsearch function
 ms.assetid: e0ad2f47-e7dd-49ed-8288-870457a14a2c
-ms.openlocfilehash: 3a6083f39e12182ae512f5327b5f7d8d89deb2a2
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 5afdd00576392b4e464880ec88772357e3ae2135
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90039551"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171781"
 ---
 # <a name="bsearch"></a>bsearch
 
@@ -82,7 +83,7 @@ void *bsearch(
 |`0`|Ключ равен элементу массива.|
 |`> 0`|Ключ больше, чем элемент массива.|
 
-Эта функция проверяет свои параметры. Если параметр *Compare*, *ключ* или *число* имеет **значение NULL**или *Если Base* имеет **значение NULL** , а *Number* имеет ненулевое значение или если *Width* равно нулю, функция вызывает обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено **,** параметру переводится значение, `EINVAL` а функция возвращает **значение NULL**.
+Эта функция проверяет свои параметры. Если параметр *Compare*, *ключ* или *число* имеет **значение NULL** или *Если Base* имеет **значение NULL** , а *Number* имеет ненулевое значение или если *Width* равно нулю, функция вызывает обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено **,** параметру переводится значение, `EINVAL` а функция возвращает **значение NULL**.
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

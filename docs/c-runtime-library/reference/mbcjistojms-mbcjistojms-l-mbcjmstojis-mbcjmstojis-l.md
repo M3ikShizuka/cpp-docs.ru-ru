@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l'
 title: _mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l
 ms.date: 4/2/2020
 api_name:
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - mbcjmstojis_l function
 - mbcjistojms_l function
 ms.assetid: dece5127-b337-40a4-aa10-53320a2c9432
-ms.openlocfilehash: fc4df04274c33fa14af0762dc62f20ed09f23cd9
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 6c7d19ce59c381d4f4a60fb2d1ddbed41fe43ba3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918435"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171521"
 ---
 # <a name="_mbcjistojms-_mbcjistojms_l-_mbcjmstojis-_mbcjmstojis_l"></a>_mbcjistojms, _mbcjistojms_l, _mbcjmstojis, _mbcjmstojis_l
 
@@ -81,7 +82,7 @@ unsigned int _mbcjmstojis_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Символ для преобразования.
 
 *locale*<br/>
@@ -91,7 +92,7 @@ unsigned int _mbcjmstojis_l(
 
 Для японского языкового стандарта эти функции возвращают преобразованный символ или 0, если преобразование невозможно. Для других языковых стандартов эти функции возвращают переданный символ.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_mbcjistojms** преобразует символ в Японии отраслевого стандарта (JIS) в символ Microsoft кандзи (Shift JIS). Символ преобразуется только в том случае, если ведущий и младший байт находятся в диапазоне 0x21-0x7E. Если старший или пробный байт находится за пределами этого **диапазона, то для параметра «** **еилсек**» устанавливается значение. Дополнительные сведения об этих и других кодах ошибок см. в разделе [errno, _doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -101,7 +102,7 @@ unsigned int _mbcjmstojis_l(
 
 Выходное значение зависит от настройки категории **LC_CTYPE** языкового стандарта; дополнительные сведения см. в разделе [setlocale](setlocale-wsetlocale.md). Версии этих функций без суффикса **_l** используют текущий языковой стандарт для данного поведения, зависящего от языкового стандарта; версии с суффиксом **_l** идентичны, за исключением того, что они используют переданный параметр языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
-В более ранних версиях **_mbcjistojms** и **_mbcjmstojis** назывались **жистожмс** и **жмстожис**соответственно. Вместо этого следует использовать **_mbcjistojms**, **_mbcjistojms_l**, **_mbcjmstojis** и **_mbcjmstojis_l** .
+В более ранних версиях **_mbcjistojms** и **_mbcjmstojis** назывались **жистожмс** и **жмстожис** соответственно. Вместо этого следует использовать **_mbcjistojms**, **_mbcjistojms_l**, **_mbcjmstojis** и **_mbcjmstojis_l** .
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

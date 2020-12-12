@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: clearerr_s'
 title: clearerr_s
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - resetting stream error indicator
 - clearerr_s function
 ms.assetid: b74d014d-b7a8-494a-a330-e5ffd5614772
-ms.openlocfilehash: 3e300562a52029fe835ebd4fe34e9a7ef247a76a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: cbc9ac5122b5754b43f6fb93c4301afd6e449568
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917212"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171534"
 ---
 # <a name="clearerr_s"></a>clearerr_s
 
@@ -56,9 +57,9 @@ errno_t clearerr_s(
 
 Нуль в случае успеха; **Еинвал** , если *Stream* имеет **значение NULL**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функция **clearerr_s** сбрасывает индикатор ошибки и индикатор конца файла для *Stream*. Индикаторы ошибок не очищаются автоматически; После того как индикатор ошибки для указанного потока установлен, операции в этом потоке продолжают возвращать значение ошибки до тех пор, пока не будут вызваны **clearerr_s**, **клеарерр**, [fseek](fseek-fseeki64.md), **fsetpos**или [Rewind](rewind.md) .
+Функция **clearerr_s** сбрасывает индикатор ошибки и индикатор конца файла для *Stream*. Индикаторы ошибок не очищаются автоматически; После того как индикатор ошибки для указанного потока установлен, операции в этом потоке продолжают возвращать значение ошибки до тех пор, пока не будут вызваны **clearerr_s**, **клеарерр**, [fseek](fseek-fseeki64.md), **fsetpos** или [Rewind](rewind.md) .
 
 Если *Stream* имеет **значение NULL**, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эта функция **устанавливает** **Еинвал** и возвращает **еинвал**.
 

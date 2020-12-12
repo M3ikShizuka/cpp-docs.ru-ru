@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: Пересылка типов (C++/CLI)'
 title: Перенаправление типов (C++/CLI)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - type forwarding, C++
 ms.assetid: ae730b69-0c27-41cc-84e1-3132783866ea
-ms.openlocfilehash: 0803ecc2ffb2da2748b1ef063481aa2571f27f50
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 360ca624103c8021c17300f897b1091c13e898a3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171935"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172886"
 ---
 # <a name="type-forwarding-ccli"></a>Перенаправление типов (C++/CLI)
 
@@ -33,13 +34,13 @@ ms.locfileid: "80171935"
 
 ### <a name="parameters"></a>Параметры
 
-*новую*<br/>
+*new*<br/>
 Сборка, в которую перемещается определение типа.
 
 *type*<br/>
 Тип, определение которого перемещается в другую сборку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 После поставки компонента (сборки) и его использования клиентскими приложениями можно применить перенаправление типа, чтобы переместить тип из этого компонента (сборки) в другую сборку. После поставки обновленного компонента (и всех необходимых дополнительных сборок) клиентские приложения будут работать без повторной компиляции.
 
@@ -59,7 +60,7 @@ ms.locfileid: "80171935"
 
 - перечисления
 
-- интерфейсы
+- interfaces
 
 Перечисленные ниже типы переадресовывать нельзя:
 

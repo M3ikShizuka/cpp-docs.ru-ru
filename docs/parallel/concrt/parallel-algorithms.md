@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: параллельные алгоритмы'
 title: Параллельные алгоритмы
 ms.date: 11/19/2018
 helpviewer_keywords:
 - parallel algorithms [Concurrency Runtime]
 ms.assetid: 045dca7b-4d73-4558-a44c-383b88a28473
-ms.openlocfilehash: 2c9fd5bd51bfeeaa17ac6f1118798f51b93938d6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9e1762167277654334b3dcb4e26d3a5c8fbe1a5c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87194502"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172483"
 ---
 # <a name="parallel-algorithms"></a>Параллельные алгоритмы
 
@@ -17,7 +18,7 @@ ms.locfileid: "87194502"
 
 Параллельные алгоритмы состоят из существующих функциональных возможностей в среда выполнения с параллелизмом. Например, алгоритм [параллелизма::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) использует объект [concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) для выполнения итераций параллельного цикла. `parallel_for`Алгоритмные секции работают оптимальным образом при наличии доступного количества вычислительных ресурсов.
 
-## <a name="sections"></a><a name="top"></a>Священ
+## <a name="sections"></a><a name="top"></a> Священ
 
 - [Алгоритм parallel_for](#parallel_for)
 
@@ -39,7 +40,7 @@ ms.locfileid: "87194502"
 
   - [Выбор алгоритма сортировки](#choose_sort)
 
-## <a name="the-parallel_for-algorithm"></a><a name="parallel_for"></a>Алгоритм parallel_for
+## <a name="the-parallel_for-algorithm"></a><a name="parallel_for"></a> Алгоритм parallel_for
 
 Алгоритм [arallel_for Concurrency::p](reference/concurrency-namespace-functions.md#parallel_for) многократно выполняет одну и ту же задачу параллельно. Каждая из этих задач параметризована значением итерации. Этот алгоритм полезен при наличии тела цикла, который не использует ресурсы совместно между итерациями этого цикла.
 
@@ -82,7 +83,7 @@ ms.locfileid: "87194502"
 
 [[Top](#top)]
 
-## <a name="the-parallel_for_each-algorithm"></a><a name="parallel_for_each"></a>Алгоритм parallel_for_each
+## <a name="the-parallel_for_each-algorithm"></a><a name="parallel_for_each"></a> Алгоритм parallel_for_each
 
 Алгоритм [arallel_for_each Concurrency::p](reference/concurrency-namespace-functions.md#parallel_for_each) выполняет задачи в итеративном контейнере, например в параллельном режиме, который предоставляется стандартной библиотекой C++. Он использует ту же логику секционирования, которую `parallel_for` использует алгоритм.
 
@@ -108,7 +109,7 @@ ms.locfileid: "87194502"
 
 [[Top](#top)]
 
-## <a name="the-parallel_invoke-algorithm"></a><a name="parallel_invoke"></a>Алгоритм parallel_invoke
+## <a name="the-parallel_invoke-algorithm"></a><a name="parallel_invoke"></a> Алгоритм parallel_invoke
 
 Алгоритм [arallel_invoke Concurrency::p](reference/concurrency-namespace-functions.md#parallel_invoke) параллельно выполняет набор задач. Она не возвращает результат, пока не завершится каждая задача. Этот алгоритм полезен при наличии нескольких независимых задач, которые необходимо выполнить одновременно.
 
@@ -132,16 +133,16 @@ ms.locfileid: "87194502"
 
 [[Top](#top)]
 
-## <a name="the-parallel_transform-and-parallel_reduce-algorithms"></a><a name="parallel_transform_reduce"></a>Алгоритмы parallel_transform и parallel_reduce
+## <a name="the-parallel_transform-and-parallel_reduce-algorithms"></a><a name="parallel_transform_reduce"></a> Алгоритмы parallel_transform и parallel_reduce
 
 Алгоритмы [параллелизма::p arallel_transform](reference/concurrency-namespace-functions.md#parallel_transform) и [concurrency::p arallel_reduce](reference/concurrency-namespace-functions.md#parallel_reduce) — это параллельные версии алгоритмов стандартной библиотеки C++ [std:: Transform](../../standard-library/algorithm-functions.md#transform) и [std:: accumulate](../../standard-library/numeric-functions.md#accumulate)соответственно. Среда выполнения с параллелизмом версии ведут себя как версии стандартной библиотеки C++, за исключением того, что порядок операций не определяется, так как они выполняются параллельно. Используйте эти алгоритмы при работе с набором, который достаточно велик для получения выигрыша в производительности и масштабируемости при параллельной обработке.
 
 > [!IMPORTANT]
 > Алгоритмы `parallel_transform` и `parallel_reduce` поддерживают только итераторы произвольного доступа, двунаправленные и прямые итераторы, поскольку эти итераторы создают стабильные адреса памяти. Кроме того, эти итераторы должны формировать **`const`** значения, отличные от l.
 
-### <a name="the-parallel_transform-algorithm"></a><a name="parallel_transform"></a>Алгоритм parallel_transform
+### <a name="the-parallel_transform-algorithm"></a><a name="parallel_transform"></a> Алгоритм parallel_transform
 
-Алгоритм `parallel transform` можно использовать для выполнения множества операций параллелизации данных. Например, вы можете:
+Алгоритм `parallel transform` можно использовать для выполнения множества операций параллелизации данных. Например, администратор может сделать следующее:
 
 - Настройка яркости изображения и другие операции обработки изображений.
 
@@ -163,7 +164,7 @@ ms.locfileid: "87194502"
 > [!IMPORTANT]
 > Итератор, предоставляемый для выходных данных алгоритма `parallel_transform`, должен полностью перекрывать итератор входных данных или не перекрывать его вообще. Если итераторы входных и выходных данных перекрываются частично, поведение этого алгоритма будет неопределенным.
 
-### <a name="the-parallel_reduce-algorithm"></a><a name="parallel_reduce"></a>Алгоритм parallel_reduce
+### <a name="the-parallel_reduce-algorithm"></a><a name="parallel_reduce"></a> Алгоритм parallel_reduce
 
 Алгоритм `parallel_reduce` эффективен при наличии последовательности операций, обладающих свойством ассоциативности. (Для этого алгоритма не требуется свойство коммутативной.) Ниже приведены некоторые операции, которые можно выполнить с помощью `parallel_reduce` .
 
@@ -181,7 +182,7 @@ ms.locfileid: "87194502"
 
 Во многих случаях можно представить себе `parallel_reduce` сокращение использования `parallel_for_each` алгоритма вместе с классом [Concurrency:: combinable](../../parallel/concrt/reference/combinable-class.md) .
 
-### <a name="example-performing-map-and-reduce-in-parallel"></a><a name="map_reduce_example"></a>Пример. Параллельное выполнение операций Map и reduce
+### <a name="example-performing-map-and-reduce-in-parallel"></a><a name="map_reduce_example"></a> Пример. Параллельное выполнение операций Map и reduce
 
 Операция *Map* применяет функцию к каждому значению в последовательности. Операция *сокращения* объединяет элементы последовательности в одно значение. Вы можете использовать функции стандартной библиотеки C++ [std:: Transform](../../standard-library/algorithm-functions.md#transform) и [std:: accumulate](../../standard-library/numeric-functions.md#accumulate) для выполнения операций Map и reduce. Однако для многих задач можно использовать алгоритм `parallel_transform` для параллельного выполнения операции сопоставления и алгоритм `parallel_reduce` для параллельного выполнения операции редукции.
 
@@ -193,7 +194,7 @@ ms.locfileid: "87194502"
 
 [[Top](#top)]
 
-## <a name="partitioning-work"></a><a name="partitions"></a>Работа по секционированию
+## <a name="partitioning-work"></a><a name="partitions"></a> Работа по секционированию
 
 Для параллелизации операции в источнике данных необходимо *секционировать* источник на несколько разделов, к которым можно получить доступ одновременно из нескольких потоков. Разделитель определяет, как параллельный алгоритм должен разделять диапазоны между потоками. Как описано ранее в этом документе, PPL использует механизм секционирования по умолчанию, создающий начальную рабочую нагрузку, а затем применяет алгоритм переноса нагрузки и переноса диапазона для распределения нагрузки этих разделов при ее несбалансированности. Например, когда одна итерация цикла завершает ряд итераций, среда выполнения перераспределяет в этот поток нагрузку с других потоков. Однако в некоторых сценариях может потребоваться указать другой механизм секционирования, который лучше подходит для конкретной задачи.
 
@@ -229,7 +230,7 @@ ms.locfileid: "87194502"
 
 [[Top](#top)]
 
-## <a name="parallel-sorting"></a><a name="parallel_sorting"></a>Параллельная сортировка
+## <a name="parallel-sorting"></a><a name="parallel_sorting"></a> Параллельная сортировка
 
 PPL предоставляет три алгоритма сортировки: [Concurrency::p arallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [concurrency::p arallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort)и [Concurrency::p arallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort). Они эффективны при наличии набора данных, который выгоднее сортировать параллельно. В частности, параллельная сортировка эффективна при наличии большого набора данных и использовании операций сравнения, потребляющих много вычислительных ресурсов. Каждый из этих алгоритмов сортирует элементы на месте.
 
@@ -276,7 +277,7 @@ PPL предоставляет три алгоритма сортировки: [
 
 Хэш-функция должна возвращать целочисленный тип ([std:: is_integral:: value](../../standard-library/is-integral-class.md) должен быть **`true`** ). Этот целочисленный тип должен быть преобразуем в тип `size_t`.
 
-### <a name="choosing-a-sorting-algorithm"></a><a name="choose_sort"></a>Выбор алгоритма сортировки
+### <a name="choosing-a-sorting-algorithm"></a><a name="choose_sort"></a> Выбор алгоритма сортировки
 
 Во многих случаях алгоритм `parallel_sort` обеспечивает оптимальный баланс производительности памяти и быстродействия. Однако с увеличением размера набора данных, количества доступных процессоров и сложности функции сравнения алгоритм `parallel_buffered_sort` или `parallel_radixsort` может работать эффективнее. Лучший способ определения наиболее подходящего алгоритма сортировки в любом заданном сценарии — проведение экспериментов и измерение длительности выполнения сортировки типовых данных при типичных конфигурациях компьютера. Ниже приведены рекомендации по выбору стратегии сортировки.
 
@@ -292,7 +293,7 @@ PPL предоставляет три алгоритма сортировки: [
 
 Использовать параллельную сортировку небольшого набора данных может оказаться невыгодно даже при наличии большого количества вычислительных ресурсов или выполнении функцией сравнения или хэш-функцией относительно большого объема работы. Для сортировки небольших наборов данных можно использовать функцию [std:: Sort](../../standard-library/algorithm-functions.md#sort) . ( `parallel_sort` и `parallel_buffered_sort` вызываются `sort` при указании размера фрагмента, который больше, чем набор данных, однако ему пришлось `parallel_buffered_sort` бы выделить O (N) пространство, которое может занять дополнительное время из-за конфликта блокировки или выделения памяти.)
 
-Если необходимо сэкономить ресурсы памяти или распределитель памяти подвержен конфликтам при блокировках, то для сортировки набора данных среднего размера следует использовать алгоритм `parallel_sort`. `parallel_sort`не требует дополнительного пространства; другие алгоритмы нуждаются в пространстве O (N).
+Если необходимо сэкономить ресурсы памяти или распределитель памяти подвержен конфликтам при блокировках, то для сортировки набора данных среднего размера следует использовать алгоритм `parallel_sort`. `parallel_sort` не требует дополнительного пространства; другие алгоритмы нуждаются в пространстве O (N).
 
 Используйте `parallel_buffered_sort` для сортировки наборов данных среднего размера и, если приложение соответствует требованиям к дополнительному свободному пространству (N). Алгоритм `parallel_buffered_sort` особенно эффективен при большом количестве вычислительных ресурсов и ресурсоемкой функции сравнения или хэш-функции.
 
@@ -322,7 +323,7 @@ PPL предоставляет три алгоритма сортировки: [
 |[Отмена в библиотеке параллельных шаблонов](cancellation-in-the-ppl.md)|Описание роли отмены в PPL, отмены параллельной работы и способа определения времени отмены группы задач.|
 |[Обработка исключений](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)|Объясняет роль обработки исключений в среда выполнения с параллелизмом.|
 
-## <a name="reference"></a>Справочник
+## <a name="reference"></a>Ссылка
 
 [Функция parallel_for](reference/concurrency-namespace-functions.md#parallel_for)
 

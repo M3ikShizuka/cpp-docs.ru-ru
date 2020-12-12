@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: _STATIC_ASSERT макросе'
 title: Макрос _STATIC_ASSERT
 ms.date: 11/04/2016
 api_location:
@@ -21,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - _STATIC_ASSERT macro
 ms.assetid: 89b0350c-2c2f-4be6-9786-8b1f0780a5da
-ms.openlocfilehash: 78544424b727797158109fa3000ee2ebf8066cf7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bbdb615cccfb245868d4c282acf86c9228ea574b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229328"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171203"
 ---
 # <a name="_static_assert-macro"></a>Макрос _STATIC_ASSERT
 
@@ -43,9 +44,9 @@ _STATIC_ASSERT(
 ### <a name="parameters"></a>Параметры
 
 *булеанекспрессион*<br/>
-Выражение (включая указатели), результатом вычисления которого является ненулевое**значение (true**) или 0 (**false**).
+Выражение (включая указатели), результатом вычисления которого является ненулевое **значение (true**) или 0 (**false**).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Этот макрос напоминает [_ASSERT и _ASSERTE макросы](assert-asserte-assert-expr-macros.md), за исключением того, что *булеанекспрессион* вычисляется во время компиляции, а не в среде выполнения. Если *булеанекспрессион* принимает **значение false** (0), создается [Ошибка компилятора C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) .
 
@@ -71,13 +72,13 @@ int main()
 }
 ```
 
-## <a name="requirements"></a>Требования
+## <a name="requirements"></a>Requirements (Требования)
 
 |Макрос|Обязательный заголовок|
 |-----------|---------------------|
 |**_STATIC_ASSERT**|\<crtdbg.h>|
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Алфавитный справочник по функциям](crt-alphabetical-function-reference.md)<br/>
 [Макросы _ASSERT, _ASSERTE и _ASSERT_EXPR](assert-asserte-assert-expr-macros.md)<br/>

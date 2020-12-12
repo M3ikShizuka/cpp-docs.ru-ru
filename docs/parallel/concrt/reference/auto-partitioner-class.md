@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: auto_partitioner классе'
 title: Класс auto_partitioner
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - auto_partitioner class
 ms.assetid: 7cc08e5d-20b4-47a4-b4b5-c214a78f5a9e
-ms.openlocfilehash: 4d1d8f19069412240de8e9d69cdcfb34618f2796
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: d8e099c7a3132ce89f81df65d7e18a5c6c673697
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142864"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172262"
 ---
 # <a name="auto_partitioner-class"></a>Класс auto_partitioner
 
@@ -29,10 +30,10 @@ class auto_partitioner;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[auto_partitioner](#ctor)|Формирует объект `auto_partitioner`.|
-|[Деструктор ~ auto_partitioner](#dtor)|Уничтожает объект `auto_partitioner`.|
+|[Деструктор ~ auto_partitioner](#dtor)|Уничтожает объект `auto_partitioner` .|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -42,17 +43,17 @@ class auto_partitioner;
 
 **Заголовок:** PPL. h
 
-**Пространство имен:** concurrency
+**Пространство имен:** параллелизм
 
-## <a name="dtor"></a>~ auto_partitioner
+## <a name="auto_partitioner"></a><a name="dtor"></a> ~ auto_partitioner
 
-Уничтожает объект `auto_partitioner`.
+Уничтожает объект `auto_partitioner` .
 
 ```cpp
 ~auto_partitioner();
 ```
 
-## <a name="ctor"></a>auto_partitioner
+## <a name="auto_partitioner"></a><a name="ctor"></a> auto_partitioner
 
 Формирует объект `auto_partitioner`.
 
@@ -62,4 +63,4 @@ auto_partitioner();
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен concurrency](concurrency-namespace.md)
+[Пространство имен Concurrency](concurrency-namespace.md)

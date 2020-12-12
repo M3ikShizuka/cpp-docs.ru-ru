@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: safe_cast (C++/CLI и C++/CX)'
 title: Операция safe_cast (C++/CLI и C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - safe_cast keyword [C++]
 ms.assetid: 4fa688bf-a8ec-49bc-a4c5-f48134efa4f7
-ms.openlocfilehash: 2eb09680ef6e7d1ee90b62eee8c8971fb4963212
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7753af357fd782a513ce941b42ad0433ca24b0dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225128"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172951"
 ---
 # <a name="safe_cast-ccli-and-ccx"></a>Операция safe_cast (C++/CLI и C++/CX)
 
@@ -48,7 +49,7 @@ ms.locfileid: "87225128"
 *expression*<br/>
 Выражение, которое оценивается в дескрипторе ссылки или типа значения, типе значения или отслеживаемой ссылке на ссылку или тип значения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **safe_cast** создает исключение, `InvalidCastException` если не может преобразовать *выражение* в тип, указанный параметром *Type-ID*. Для перехвата `InvalidCastException` укажите параметр компилятора [/EH (модель обработки исключений)](../build/reference/eh-exception-handling-model.md) и используйте инструкцию **try/catch** .
 
@@ -108,9 +109,9 @@ Caught expected exception: InvalidCastException
 *expression*<br/>
 Выражение, которое оценивается в дескрипторе ссылки или типа значения, типе значения или отслеживаемой ссылке на ссылку или тип значения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Выражение `safe_cast<` *типа Type-ID* `>(` *expression* `)` преобразует *выражение* операнда в объект типа *Type-ID*.
+Выражение `safe_cast<` *типа Type-ID* `>(`  `)` преобразует *выражение* операнда в объект типа *Type-ID*.
 
 Компилятор будет принимать [static_cast](../cpp/static-cast-operator.md) в большинстве мест, где будет принимать **safe_cast**.  Однако **safe_cast** гарантирует создание проверяемого MSIL, где, как **`static_cast`** может создать непроверяемый код MSIL.  Дополнительные сведения о проверяемом коде см. в статьях [Чистый и проверяемый код (C++/CLI)](../dotnet/pure-and-verifiable-code-cpp-cli.md) и [Peverify.exe (средство PEVerify)](/dotnet/framework/tools/peverify-exe-peverify-tool).
 
@@ -164,6 +165,6 @@ int main() {
 Caught expected exception
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Расширения компонентов для .NET и UWP](component-extensions-for-runtime-platforms.md)

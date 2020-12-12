@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: bsearch_s'
 title: bsearch_s
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - arrays [CRT], binary search
 - bsearch_s function
 ms.assetid: d5690d5e-6be3-4f1d-aa0b-5ca6dbded276
-ms.openlocfilehash: 348638b2a6b5a97491d9929b22a983b43794da9a
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: a38868d9093a4da4338fb0fddb99a6a0ed53ef5a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041631"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171794"
 ---
 # <a name="bsearch_s"></a>bsearch_s
 

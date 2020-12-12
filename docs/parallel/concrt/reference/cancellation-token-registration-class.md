@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: cancellation_token_registration классе'
 title: Класс cancellation_token_registration
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - cancellation_token_registration class
 ms.assetid: 823d63f4-7233-4d65-8976-6152ccf12d0e
-ms.openlocfilehash: 9342841e207c93b66521c2fc742c1b1114682f78
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 1901e5132a9bad6849b1b00a6be63caf9afc9170
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142240"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172145"
 ---
 # <a name="cancellation_token_registration-class"></a>Класс cancellation_token_registration
 
@@ -29,18 +30,18 @@ class cancellation_token_registration;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[cancellation_token_registration](#ctor)||
 |[Деструктор ~ cancellation_token_registration](#dtor)||
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
-|[operator!=](#operator_neq)||
-|[оператор=](#operator_eq)||
-|[operator==](#operator_eq_eq)||
+|[operator! =](#operator_neq)||
+|[Оператор =](#operator_eq)||
+|[Оператор = =](#operator_eq_eq)||
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -50,15 +51,15 @@ class cancellation_token_registration;
 
 **Заголовок:** pplcancellation_token. h
 
-**Пространство имен:** concurrency
+**Пространство имен:** параллелизм
 
-## <a name="dtor"></a>~ cancellation_token_registration
+## <a name="cancellation_token_registration"></a><a name="dtor"></a> ~ cancellation_token_registration
 
 ```cpp
 ~cancellation_token_registration();
 ```
 
-## <a name="ctor"></a>cancellation_token_registration
+## <a name="cancellation_token_registration"></a><a name="ctor"></a> cancellation_token_registration
 
 ```cpp
 cancellation_token_registration();
@@ -71,9 +72,9 @@ cancellation_token_registration(cancellation_token_registration&& _Src);
 ### <a name="parameters"></a>Параметры
 
 *_Src*<br/>
-`cancellation_token_registration` для копирования или перемещения.
+`cancellation_token_registration`Копируемый или перемещаемый объект.
 
-## <a name="operator_neq"></a>operator! =
+## <a name="operator"></a><a name="operator_neq"></a> operator! =
 
 ```cpp
 bool operator!= (const cancellation_token_registration& _Rhs) const;
@@ -82,11 +83,11 @@ bool operator!= (const cancellation_token_registration& _Rhs) const;
 ### <a name="parameters"></a>Параметры
 
 *_Rhs*<br/>
-Объект `cancellation_token_registration` для сравнения.
+Сравниваемый шаблон `cancellation_token_registration`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-## <a name="operator_eq"></a>Оператор =
+## <a name="operator"></a><a name="operator_eq"></a> Оператор =
 
 ```cpp
 cancellation_token_registration& operator= (const cancellation_token_registration& _Src);
@@ -97,11 +98,11 @@ cancellation_token_registration& operator= (cancellation_token_registration&& _S
 ### <a name="parameters"></a>Параметры
 
 *_Src*<br/>
-`cancellation_token_registration` для назначения.
+Объект `cancellation_token_registration` для назначения.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-## <a name="operator_eq_eq"></a>Оператор = =
+## <a name="operator"></a><a name="operator_eq_eq"></a> Оператор = =
 
 ```cpp
 bool operator== (const cancellation_token_registration& _Rhs) const;
@@ -110,10 +111,10 @@ bool operator== (const cancellation_token_registration& _Rhs) const;
 ### <a name="parameters"></a>Параметры
 
 *_Rhs*<br/>
-Объект `cancellation_token_registration` для сравнения.
+Сравниваемый шаблон `cancellation_token_registration`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен concurrency](concurrency-namespace.md)
+[Пространство имен Concurrency](concurrency-namespace.md)

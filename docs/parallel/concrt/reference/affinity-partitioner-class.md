@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: affinity_partitioner классе'
 title: Класс affinity_partitioner
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - affinity_partitioner class
 ms.assetid: 31bf7bb1-bd01-491c-9760-d9d60edfccad
-ms.openlocfilehash: 0ae6bbee49d1b8873190a7054e55f65b40b31b13
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 44aa693d5007507e33f062a673713d1ddbda3172
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142873"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172327"
 ---
 # <a name="affinity_partitioner-class"></a>Класс affinity_partitioner
 
@@ -29,10 +30,10 @@ class affinity_partitioner;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[affinity_partitioner](#ctor)|Создает объект `affinity_partitioner`.|
-|[Деструктор ~ affinity_partitioner](#dtor)|Уничтожает объект `affinity_partitioner`.|
+|[Деструктор ~ affinity_partitioner](#dtor)|Уничтожает `affinity_partitioner` объект.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -42,17 +43,17 @@ class affinity_partitioner;
 
 **Заголовок:** PPL. h
 
-**Пространство имен:** concurrency
+**Пространство имен:** параллелизм
 
-## <a name="dtor"></a>~ affinity_partitioner
+## <a name="affinity_partitioner"></a><a name="dtor"></a> ~ affinity_partitioner
 
-Уничтожает объект `affinity_partitioner`.
+Уничтожает `affinity_partitioner` объект.
 
 ```cpp
 ~affinity_partitioner();
 ```
 
-## <a name="ctor"></a>affinity_partitioner
+## <a name="affinity_partitioner"></a><a name="ctor"></a> affinity_partitioner
 
 Создает объект `affinity_partitioner`.
 
@@ -62,4 +63,4 @@ affinity_partitioner();
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен concurrency](concurrency-namespace.md)
+[Пространство имен Concurrency](concurrency-namespace.md)

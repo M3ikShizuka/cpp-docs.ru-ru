@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: перечисления (C++)'
 title: Перечисления (C++)
 ms.date: 06/01/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - named constants, enumeration declarations
 - declaring enumerations
 ms.assetid: 081829db-5dca-411e-a53c-bffef315bcb3
-ms.openlocfilehash: d4511ed7d09ff280d01214a2a177148956580ee5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c612628b141e60c02ac4d6d80506e77f7ef35761
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221618"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171066"
 ---
 # <a name="enumerations-c"></a>Перечисления (C++)
 
@@ -143,7 +144,7 @@ namespace ScopedEnumConversions
 
 Обратите внимание, что в строке `hand = account_num;` по-прежнему содержится ошибка, которая происходит при использовании неограниченных перечислений, как показано выше. Эта ошибка устраняется с помощью явного приведения. Однако при использовании ограниченных перечислений попытка преобразования в следующем операторе — `account_num = Suit::Hearts;` — больше не будет разрешена без явного приведения.
 
-## <a name="enums-with-no-enumerators"></a><a name="no_enumerators"></a>Перечисления без перечислителей
+## <a name="enums-with-no-enumerators"></a><a name="no_enumerators"></a> Перечисления без перечислителей
 
 **Visual Studio 2017 версии 15,3 и более поздних версий** (доступно с помощью [/std: c++ 17](../build/reference/std-specify-language-standard-version.md)): путем определения перечисления (Regular или с областью видимости) с явным базовым типом и без перечислителей, вы можете использовать новый целочисленный тип, который не имеет неявного преобразования в любой другой тип. Используя этот тип вместо встроенного базового типа, можно исключить потенциальные ошибки для незначительных ошибок, вызванных случайными неявными преобразованиями.
 

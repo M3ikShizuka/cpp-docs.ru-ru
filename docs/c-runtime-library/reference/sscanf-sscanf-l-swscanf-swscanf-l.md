@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: sscanf, _sscanf_l, swscanf, _swscanf_l'
 title: sscanf, _sscanf_l, swscanf, _swscanf_l
 ms.date: 08/29/2019
 api_name:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - sscanf_l function
 - stscanf_l function
 ms.assetid: c2dcf0d2-9798-499f-a4a8-06f7e2b9a80c
-ms.openlocfilehash: e3b453166278fff4c3230cb51895c487319e33d9
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f5681e1f8e122c6f24151ae5e8d37186d8bd066e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70958229"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171274"
 ---
 # <a name="sscanf-_sscanf_l-swscanf-_swscanf_l"></a>sscanf, _sscanf_l, swscanf, _swscanf_l
 
@@ -83,13 +84,13 @@ int _swscanf_l(
 
 ### <a name="parameters"></a>Параметры
 
-*buffer*<br/>
+*двойной*<br/>
 Сохраненные данные
 
 *format*<br/>
 Строка управления форматом. Дополнительные сведения см. в разделе [Спецификации формата](../../c-runtime-library/format-specification-fields-scanf-and-wscanf-functions.md).
 
-*параметр*<br/>
+*argument*<br/>
 Необязательные аргументы
 
 *locale*<br/>
@@ -99,24 +100,24 @@ int _swscanf_l(
 
 Каждая из этих функций возвращает количество полей, которые были успешно преобразованы и присвоены; возвращаемое значение не включает поля, которые были считаны, но не были присвоены. Возвращаемое значение 0 указывает, что поля не были назначены. Возвращаемое значение — **EOF** для ошибки или, если конец строки достигнут перед первым преобразованием.
 
-Если *buffer* или *Format* является **пустым** указателем, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции возвращают-1 **и устанавливают для** **еинвал**значение.
+Если *buffer* или *Format* является **пустым** указателем, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции возвращают-1 **и устанавливают для** **еинвал** значение.
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Функция **sscanf** считывает данные из *буфера* в расположение, заданное каждым *аргументом*. Каждый *аргумент* должен быть указателем на переменную с типом, который соответствует спецификатору типа в *формате*. Аргумент *Format* управляет интерпретацией полей ввода и имеет ту же форму и функцию, что и аргумент *Format* для функции **scanf** . Если копирование производится между перекрывающимися строками, поведение не определено.
 
 Дополнительные сведения об символах поля типа scanf см. в разделе [символы поля типа scanf](../scanf-type-field-characters.md). Сведения о полях спецификации формата scanf см. в разделе [поля спецификации формата](../format-specification-fields-scanf-and-wscanf-functions.md).
 
 > [!IMPORTANT]
-> При чтении строки с помощью **sscanf**всегда указывайте ширину для формата **% s** (например, **"% 32"** вместо **"% s"** ); в противном случае входные данные неправильного формата могут легко вызвать переполнение буфера.
+> При чтении строки с помощью **sscanf** всегда указывайте ширину для формата **% s** (например, **"%32"** вместо **"% s"**); в противном случае входные данные неправильного формата могут легко вызвать переполнение буфера.
 
-**swscanf** — это версия **sscanf**для расширенных символов; аргументы для **swscanf** являются строками расширенных символов. **sscanf** не обрабатывает многобайтовые шестнадцатеричные символы. **swscanf** не обрабатывает символы в формате полной ширины в Юникоде или "зоны совместимости". В противном случае поведение **swscanf** и **sscanf** работает одинаково.
+**swscanf** — это версия **sscanf** для расширенных символов; аргументы для **swscanf** являются строками расширенных символов. **sscanf** не обрабатывает многобайтовые шестнадцатеричные символы. **swscanf** не обрабатывает символы в формате полной ширины в Юникоде или "зоны совместимости". В противном случае поведение **swscanf** и **sscanf** работает одинаково.
 
 Версии этих функций с суффиксом **_l** идентичны за исключением того, что они используют переданный параметр языкового стандарта вместо локали текущего потока.
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Подпрограмма TCHAR.H|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -130,7 +131,7 @@ int _swscanf_l(
 |**sscanf**, **_sscanf_l**|\<stdio.h>|
 |**swscanf**, **_swscanf_l**|\<stdio.h> или \<wchar.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -173,10 +174,10 @@ Integer:  = 15
 Real:     = 15.000000
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Потоковый ввод-вывод](../../c-runtime-library/stream-i-o.md)<br/>
 [fscanf, _fscanf_l, fwscanf, _fwscanf_l](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [snprintf, _snprintf, _snprintf_l, _snwprintf, _snwprintf_l](snprintf-snprintf-snprintf-l-snwprintf-snwprintf-l.md)<br/>

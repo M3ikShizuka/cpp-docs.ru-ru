@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: класс Call'
 title: Класс call
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - call class
 ms.assetid: 1521970a-1e9c-4b0c-a681-d18e40976f49
-ms.openlocfilehash: d3dc730e19aaadfed171816e92837ba2766883cb
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d1d489063d7eb301bbfdb923f6b2f3c351d01f5f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213883"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97172223"
 ---
 # <a name="call-class"></a>Класс call
 
@@ -58,7 +59,7 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
 |[send_message](#send_message)|Синхронно передает сообщение из `ISource` блока в этот `call` блок обмена сообщениями. Он вызывается `send` методом при вызове из исходного блока.|
 |[supports_anonymous_source](#supports_anonymous_source)|Переопределяет метод `supports_anonymous_source`, чтобы указать, что данный блок может принимать сообщения, предоставляемые ему несвязанным источником. (Переопределяет метод [ITarget:: supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [асинхронные блоки сообщений](../../../parallel/concrt/asynchronous-message-blocks.md).
 
@@ -76,7 +77,7 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
 
 **Пространство имен:** параллелизм
 
-## <a name="call"></a><a name="ctor"></a>обращение
+## <a name="call"></a><a name="ctor"></a> обращение
 
 Создает блок обмена сообщениями `call` .
 
@@ -121,7 +122,7 @@ call(
 *_PScheduleGroup*<br/>
 Объект `ScheduleGroup` , в котором запланирована задача распространения для блока обмена сообщениями `call` . Используемый объект `Scheduler` подразумевается группой расписаний.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Среда выполнения использует планировщик по умолчанию, если вы не указали параметры `_PScheduler` или `_PScheduleGroup` .
 
@@ -129,7 +130,7 @@ call(
 
 Тип `filter_method` — это функтор с сигнатурой, `bool (T const &)` которая вызывается этим `call` блоком обмена сообщениями для определения того, следует ли принимать предложенное сообщение.
 
-## <a name="call"></a><a name="dtor"></a>~ Call
+## <a name="call"></a><a name="dtor"></a> ~ Call
 
 Уничтожает `call` блок обмена сообщениями.
 
@@ -137,7 +138,7 @@ call(
 ~call();
 ```
 
-## <a name="process_input_messages"></a><a name="process_input_messages"></a>process_input_messages
+## <a name="process_input_messages"></a><a name="process_input_messages"></a> process_input_messages
 
 Выполняет функцию Call для входных сообщений.
 
@@ -150,7 +151,7 @@ virtual void process_input_messages(_Inout_ message<T>* _PMessage);
 *_PMessage*<br/>
 Указатель на сообщение, которое должно быть обработано.
 
-## <a name="process_message"></a><a name="process_message"></a>process_message
+## <a name="process_message"></a><a name="process_message"></a> process_message
 
 Обрабатывает сообщение, которое было принято этим `call` блоком обмена сообщениями.
 
@@ -163,7 +164,7 @@ virtual void process_message(_Inout_ message<T>* _PMessage);
 *_PMessage*<br/>
 Указатель на сообщение, которое должно быть обработано.
 
-## <a name="propagate_message"></a><a name="propagate_message"></a>propagate_message
+## <a name="propagate_message"></a><a name="propagate_message"></a> propagate_message
 
 Асинхронно передает сообщение из `ISource` блока в этот `call` блок обмена сообщениями. Он вызывается `propagate` методом при вызове из исходного блока.
 
@@ -185,7 +186,7 @@ virtual message_status propagate_message(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-## <a name="send_message"></a><a name="send_message"></a>send_message
+## <a name="send_message"></a><a name="send_message"></a> send_message
 
 Синхронно передает сообщение из `ISource` блока в этот `call` блок обмена сообщениями. Он вызывается `send` методом при вызове из исходного блока.
 
@@ -207,7 +208,7 @@ virtual message_status send_message(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-## <a name="supports_anonymous_source"></a><a name="supports_anonymous_source"></a>supports_anonymous_source
+## <a name="supports_anonymous_source"></a><a name="supports_anonymous_source"></a> supports_anonymous_source
 
 Переопределяет метод `supports_anonymous_source`, чтобы указать, что данный блок может принимать сообщения, предоставляемые ему несвязанным источником.
 

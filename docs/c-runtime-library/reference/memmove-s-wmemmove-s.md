@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: memmove_s, wmemmove_s'
 title: memmove_s, wmemmove_s
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - wmemmove_s function
 - memmove_s function
 ms.assetid: a17619e4-1307-4bb0-98c6-77f8c68dab2d
-ms.openlocfilehash: 04f920543c4f6a3d433e6426a96d617a3608a270
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: faa68f073949c9c1bcd3d96bb48472484adc312c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914093"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97171404"
 ---
 # <a name="memmove_s-wmemmove_s"></a>memmove_s, wmemmove_s
 
@@ -80,11 +81,11 @@ errno_t wmemmove_s(
 
 |*dest*|*numberOfElements*|*src*|Возвращаемое значение|Содержимое конечного *объекта*|
 |------------|------------------------|-----------|------------------|------------------------|
-|**ЗАКАНЧИВАЮЩ**|any|any|**еинвал**|не изменено|
-|any|any|**ЗАКАНЧИВАЮЩ**|**еинвал**|не изменено|
+|**NULL**|any|any|**еинвал**|не изменено|
+|any|any|**NULL**|**еинвал**|не изменено|
 |any|< *расчета*|any|**ERANGE**|не изменено|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Копирует *число* байтов символов из *src* в *dest*. Если некоторые регионы исходной области и назначения перекрываются, **memmove_s** гарантирует, что исходные байты в перекрывающейся области будут скопированы перед перезаписью.
 
@@ -139,7 +140,7 @@ After: 0012345789
 
 ## <a name="see-also"></a>См. также
 
-[Манипуляция буфером](../../c-runtime-library/buffer-manipulation.md)<br/>
+[Обработка буфера](../../c-runtime-library/buffer-manipulation.md)<br/>
 [_memccpy](memccpy.md)<br/>
 [memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>
 [strcpy_s, wcscpy_s, _mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md)<br/>
