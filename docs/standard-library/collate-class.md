@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: COLLATE Class'
 title: Класс collate
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - std::collate [C++], hash
 - std::collate [C++], transform
 ms.assetid: 92168798-9628-4a2e-be6e-fa62dcd4d6a6
-ms.openlocfilehash: ccdf05a7a41fc7f646852e7d326832b86c41dde8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cef6d30167aa61c674913ac7844f6eb021a82529
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230108"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325066"
 ---
 # <a name="collate-class"></a>Класс collate
 
@@ -45,7 +46,7 @@ class collate : public locale::facet;
 *CharType*\
 Тип, используемый внутри программы для кодирования символов.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Как и в случае любого другого аспекта языкового стандарта, начальное сохраненное значение статического идентификатора объекта равно нулю. Первая попытка получить доступ к сохраненному значению сохранит уникальное положительное значение в `id`. В одних языка символы группируются и обрабатываются как один символ, в других отдельные символы обрабатываются так, как если бы каждый из них представлял собой два символа. Службы упорядочивания, предоставленные классом collate, обеспечивают способ сортировки в таких случаях.
 
@@ -79,7 +80,7 @@ class collate : public locale::facet;
 
 **Пространство имен:** std
 
-## <a name="collatechar_type"></a><a name="char_type"></a>COLLATE:: char_type
+## <a name="collatechar_type"></a><a name="char_type"></a> COLLATE:: char_type
 
 Тип, описывающий символ типа `CharType`.
 
@@ -87,11 +88,11 @@ class collate : public locale::facet;
 typedef CharType char_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом для параметра шаблона `CharType`.
 
-## <a name="collatecollate"></a><a name="collate"></a>COLLATE:: COLLATE
+## <a name="collatecollate"></a><a name="collate"></a> COLLATE:: COLLATE
 
 Конструктор для объектов класса collate, который служит в качестве аспекта языкового стандарта для обработки преобразований сортировки строк.
 
@@ -114,7 +115,7 @@ const char* _Locname,
 *_Locname*\
 Имя языкового стандарта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возможные значения параметра *_Refs* и их значимость:
 
@@ -122,11 +123,11 @@ const char* _Locname,
 
 - 1: время существования объекта должно управляться вручную.
 
-- \>1: эти значения не определены.
+- \> 1: эти значения не определены.
 
 Конструктор инициализирует свой базовый объект с **локальным::**[Facet](../standard-library/locale-class.md#facet_class)( `_Refs` ).
 
-## <a name="collatecompare"></a><a name="compare"></a>COLLATE:: Compare
+## <a name="collatecompare"></a><a name="compare"></a> COLLATE:: Compare
 
 Проверяет две последовательности символов на равенство или неравенство в соответствии с правилами для конкретных аспектов.
 
@@ -161,7 +162,7 @@ int compare(const CharType* first1,
 
 - 0, если последовательности являются эквивалентными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая последовательность оценивается как меньшая, если в ней находится меньший элемент в первой неравной паре значений последовательностей или если неравные пары отсутствуют, но первая последовательность короче.
 
@@ -192,7 +193,7 @@ int main() {
 }
 ```
 
-## <a name="collatedo_compare"></a><a name="do_compare"></a>COLLATE::d o_compare
+## <a name="collatedo_compare"></a><a name="do_compare"></a> COLLATE::d o_compare
 
 Виртуальная функция, вызываемая для проверки двух последовательностей символов на равенство или неравенство в соответствии с правилами для конкретных аспектов.
 
@@ -227,7 +228,7 @@ virtual int do_compare(const CharType* first1,
 
 - 0, если последовательности являются эквивалентными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Защищенная виртуальная функция-член сравнивает последовательность в [* first1, last1) * с последовательностью в *[first2, last2*). Он сравнивает значения, применяя `operator<` между парами соответствующих элементов типа `CharType` . Первая последовательность оценивается как меньшая, если в ней находится меньший элемент в первой неравной паре значений последовательностей или если неравные пары отсутствуют, но первая последовательность короче.
 
@@ -235,7 +236,7 @@ virtual int do_compare(const CharType* first1,
 
 См. пример для [collate::compare](#compare), в котором вызывается метод `do_compare`.
 
-## <a name="collatedo_hash"></a><a name="do_hash"></a>COLLATE::d o_hash
+## <a name="collatedo_hash"></a><a name="do_hash"></a> COLLATE::d o_hash
 
 Виртуальная функция, вызываемая для определения хэш-значения последовательностей в соответствии с правилами для конкретных аспектов.
 
@@ -255,7 +256,7 @@ virtual long do_hash(const CharType* first, const CharType* last) const;
 
 Хэш-значение типа **`long`** для последовательности.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Хэш-значение может быть полезно, например при псевдослучайном распределении последовательностей по массиву списков.
 
@@ -263,7 +264,7 @@ virtual long do_hash(const CharType* first, const CharType* last) const;
 
 См. пример для [hash](#hash), в котором вызывается `do_hash`.
 
-## <a name="collatedo_transform"></a><a name="do_transform"></a>COLLATE::d o_transform
+## <a name="collatedo_transform"></a><a name="do_transform"></a> COLLATE::d o_transform
 
 Виртуальная функция, вызываемая для преобразования последовательности символов из языкового стандарта в строку, которая может быть использована для лексикографического сравнения с другими последовательностями символов, аналогичным образом преобразованными из того же языкового стандарта.
 
@@ -283,7 +284,7 @@ virtual string_type do_transform(const CharType* first, const CharType* last) co
 
 Строка, представляющая преобразованную последовательность символов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Защищенная виртуальная функция-член возвращает объект класса [string_type](#string_type) , управляемой последовательностью которого является копия последовательности [ `first` , `last` ). Если класс, производный от COLLATE \< **CharType**> , переопределяет [do_compare](#do_compare), он также должен переопределяться `do_transform` на Match. При передаче в `collate::compare` две преобразованные строки должны дать тот же результат, который был бы получен при передаче непреобразованных строк для сравнения в производном классе.
 
@@ -291,7 +292,7 @@ virtual string_type do_transform(const CharType* first, const CharType* last) co
 
 См. пример для [transform](#transform), в котором вызывается `do_transform`.
 
-## <a name="collatehash"></a><a name="hash"></a>COLLATE:: hash
+## <a name="collatehash"></a><a name="hash"></a> COLLATE:: hash
 
 Определяет хэш-значение последовательности в соответствии с правилами для конкретных аспектов.
 
@@ -311,7 +312,7 @@ long hash(const CharType* first, const CharType* last) const;
 
 Хэш-значение типа **`long`** для последовательности.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает [do_hash](#do_hash)( `first` , `last` ).
 
@@ -345,7 +346,7 @@ int main( )
 541187293 551279837
 ```
 
-## <a name="collatestring_type"></a><a name="string_type"></a>COLLATE:: string_type
+## <a name="collatestring_type"></a><a name="string_type"></a> COLLATE:: string_type
 
 Тип, описывающий строку типа `basic_string`, содержащую символы типа `CharType`.
 
@@ -353,7 +354,7 @@ int main( )
 typedef basic_string<CharType> string_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип описывает специализацию шаблона класса [basic_string](../standard-library/basic-string-class.md) , объекты которой могут хранить копии исходной последовательности.
 
@@ -361,7 +362,7 @@ typedef basic_string<CharType> string_type;
 
 См. пример объявления и использования `string_type` в разделе [transform](#transform).
 
-## <a name="collatetransform"></a><a name="transform"></a>COLLATE:: Transform
+## <a name="collatetransform"></a><a name="transform"></a> COLLATE:: Transform
 
 Преобразует последовательность символов из языкового стандарта в строку, которая может быть использована для лексикографического сравнения с другими последовательностями символов, аналогичным образом преобразованными из того же языкового стандарта.
 
@@ -381,7 +382,7 @@ string_type transform(const CharType* first, const CharType* last) const;
 
 Строка, содержащая преобразованную последовательность символов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает [do_transform](#do_transform)( `first` , `last` ).
 

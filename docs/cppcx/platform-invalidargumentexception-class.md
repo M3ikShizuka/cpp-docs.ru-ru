@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о классе Platform:: InvalidArgumentException'
 title: Класс Platform::InvalidArgumentException
 ms.date: 12/30/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::InvalidArgumentException
 ms.assetid: 1a8d860b-3bcb-41a9-9346-6610616a0b46
-ms.openlocfilehash: 1cc4b87ded26807066c81e5da6935548d1a5ad26
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 04d20a1e119aa4ffab0da498a9532c9acd4433b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384963"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295254"
 ---
 # <a name="platforminvalidargumentexception-class"></a>Класс Platform::InvalidArgumentException
 
@@ -25,7 +26,7 @@ ms.locfileid: "62384963"
 public ref class InvalidArgumentException : COMException,    IException,    IPrintable,    IEquatable
 ```
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Remarks
 
 Дополнительные сведения см. в описании класса [COMException](../cppcx/platform-comexception-class.md) .
 
@@ -37,8 +38,8 @@ public ref class InvalidArgumentException : COMException,    IException,    IPri
 
 **Пространство имен:** Platform
 
-**Метаданные:** platform.winmd
+**Метаданные:** Platform. winmd
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Класс Platform::COMException](../cppcx/platform-comexception-class.md)
+[Класс Platform:: COMException](../cppcx/platform-comexception-class.md)

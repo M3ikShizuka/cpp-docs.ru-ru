@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ismbbalnum, _ismbbalnum_l'
 title: _ismbbalnum, _ismbbalnum_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - ismbbalnum_l function
 - _ismbbalnum function
 ms.assetid: 8025de50-a871-49fd-9ae6-f437b47aa987
-ms.openlocfilehash: abbc664170c274929875ef2e4b7af70bc5812a94
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e4caf523d788cba4466d3d21beb6470d80b9aefd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917545"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306336"
 ---
 # <a name="_ismbbalnum-_ismbbalnum_l"></a>_ismbbalnum, _ismbbalnum_l
 
@@ -58,7 +59,7 @@ int _ismbbalnum_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Целое число, которое требуется проверить.
 
 *locale*<br/>
@@ -70,11 +71,11 @@ int _ismbbalnum_l(
 
 `isalnum(c) || _ismbbkalnum(c)`
 
-параметр имеет ненулевое значение для *языка c*или значение 0, если нет.
+параметр имеет ненулевое значение для *языка c* или значение 0, если нет.
 
 Версия этой функции с суффиксом **_l** идентична за исключением того, что использует переданный языковой стандарт вместо текущего языкового стандарта для поведения, зависящего от языкового стандарта.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

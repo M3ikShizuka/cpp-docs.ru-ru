@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: статические элементы (C++)'
 title: Статические члены (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - instance constructors, shared members
 - class instances [C++], static members
 ms.assetid: 9cc8cf0f-d74c-46f2-8e83-42d4e42c8370
-ms.openlocfilehash: b79b65ab3cbf4565f31ad6717f8163c678697c9c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2aad7c5ef70f319a976704ef36664459ca9ab252
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213194"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317952"
 ---
 # <a name="static-members-c"></a>Статические члены (C++)
 
@@ -77,6 +78,6 @@ long nBytes = Console.bytecount;
 
 Тип статического члена не квалифицируется его именем класса. Таким образом, типом `BufferedOutput::bytecount` является **`long`** .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Классы и структуры](../cpp/classes-and-structs-cpp.md)

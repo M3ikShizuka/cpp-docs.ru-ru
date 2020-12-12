@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о функции MakeAndInitialize
 title: Функция MakeAndInitialize
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::Details::MakeAndInitialize
 ms.assetid: 71ceeb12-d2a2-4317-b010-3dcde1b39467
-ms.openlocfilehash: 28d9e586a766a131e7ab6280859845810c1d9814
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 108da1f19d6956527f06e5239f5ce2e14716d664
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213802"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317926"
 ---
 # <a name="makeandinitialize-function"></a>Функция MakeAndInitialize
 
@@ -107,7 +108,7 @@ HRESULT MakeAndInitialize(
 
 Значение HRESULT.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 См. раздел [как напрямую создавать экземпляры компонентов WRL](how-to-instantiate-wrl-components-directly.md) , чтобы узнать о различиях между этой функцией и [Microsoft:: WRL:: make](make-function.md), а также в качестве примера.
 
@@ -119,4 +120,4 @@ HRESULT MakeAndInitialize(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Microsoft::WRL::Details](microsoft-wrl-details-namespace.md)
+[Пространство имен Microsoft:: WRL::D состояния](microsoft-wrl-details-namespace.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: static_assert'
 title: static_assert
 ms.date: 07/29/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - assertions [C++], static_assert
 - static_assert
 ms.assetid: 28dd3668-e78c-4de8-ba68-552084743426
-ms.openlocfilehash: bf796b853d21d33d97e25c05101b7486e1eb112f
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 76383aacf67f0e8bcc12880674afa17f9fce3603
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008858"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317991"
 ---
 # <a name="static_assert"></a>static_assert
 
@@ -28,10 +29,10 @@ static_assert( constant-expression ); // C++17 (Visual Studio 2017 and later)
 
 ### <a name="parameters"></a>Параметры
 
-*константное выражение*\
+*Константное выражение*\
 Целочисленное константное выражение, которое можно преобразовать в логическое значение. Если вычисленное выражение равно нулю (false), то отображается параметр *строкового литерала* и компиляция завершается ошибкой. Если выражение не равно нулю (true), **`static_assert`** объявление не оказывает никакого влияния.
 
-*строковый литерал*\
+*Строковый литерал*\
 Сообщение, которое отображается, если параметр *константного выражения* равен нулю. Сообщение представляет собой строку символов в [базовой кодировке](../c-language/ascii-character-set.md) компилятора; то есть не [многобайтовые или расширенные символы](../c-language/multibyte-and-wide-characters.md).
 
 ## <a name="remarks"></a>Комментарии
@@ -104,7 +105,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Утверждение и сообщения об ошибках, предоставленные пользователем (C++)](../cpp/assertion-and-user-supplied-messages-cpp.md)<br/>
 [Директива #error (C/C++)](../preprocessor/hash-error-directive-c-cpp.md)<br/>

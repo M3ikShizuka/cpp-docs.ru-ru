@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: codecvt_base классе'
 title: Класс codecvt_base
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - codecvt_base class
 ms.assetid: 7e95c083-91b4-4b3f-8918-0d4ea244a040
-ms.openlocfilehash: 6fca9b2130407b165a7a7bfb1fb2a9ec81774e20
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: d0fb5a56a163ba80cee89eb6f37200243e6c08e5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689892"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325105"
 ---
 # <a name="codecvt_base-class"></a>Класс codecvt_base
 
-Базовый класс для класса codecvt, который используется для определения типа перечисления, называемого `result`, используемого в качестве возвращаемого типа для функций-членов аспекта для указания результата преобразования.
+Базовый класс для класса codecvt, который используется для определения типа перечисления, который называется `result` , используется в качестве возвращаемого типа для функций-членов аспекта для указания результата преобразования.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,24 +37,24 @@ protected:
 };
 ```
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
 Класс описывает перечисление, общее для всех специализаций шаблона класса [codecvt](../standard-library/codecvt-class.md). Результат перечисления описывает возможные возвращаемые значения из [do_in](../standard-library/codecvt-class.md#do_in) или [do_out](../standard-library/codecvt-class.md#do_out):
 
-- `ok`, если преобразование между внутренними и внешними кодировками символов выполнено.
+- `ok` Если преобразование между внутренними и внешними кодировками символов выполнено.
 
-- `partial`, если назначение недостаточно велико для успешности преобразования.
+- `partial` значение, если назначение недостаточно велико для успешности преобразования.
 
-- `error`, если исходная последовательность сформирована неправильно.
+- `error` значение, если исходная последовательность сформирована неправильно.
 
 - `noconv`, если функция не выполняет преобразование;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<locale>
+**Заголовок:**\<locale>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Потокобезопасность в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)

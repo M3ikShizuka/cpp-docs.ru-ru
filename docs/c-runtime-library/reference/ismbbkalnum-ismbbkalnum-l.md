@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ismbbkalnum, _ismbbkalnum_l'
 title: _ismbbkalnum, _ismbbkalnum_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - _ismbbkalnum function
 - ismbbkalnum function
 ms.assetid: e1d70e7b-29d0-469c-9d93-442b99de22ac
-ms.openlocfilehash: 25ce3420ec3fb92701c4ed7cd596c2103c33ac54
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c9f18a80882b9f0bc703b0fbf5caace9746a486e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909516"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306317"
 ---
 # <a name="_ismbbkalnum-_ismbbkalnum_l"></a>_ismbbkalnum, _ismbbkalnum_l
 
@@ -59,7 +60,7 @@ int _ismbbkalnum_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Целое число, которое требуется проверить.
 
 *locale*<br/>
@@ -69,7 +70,7 @@ int _ismbbkalnum_l(
 
 **_ismbbkalnum** возвращает ненулевое значение, если целое число *c* не является текстовым символом, отличным от знаков препинания, или 0 в противном случае. **_ismbbkalnum** использует текущий языковой стандарт для сведений о символах, зависящих от языкового стандарта. **_ismbbkalnum_l** идентичен **_ismbbkalnum** за исключением того, что в качестве параметра используется языковой стандарт. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ismbbgraph, _ismbbgraph_l'
 title: _ismbbgraph, _ismbbgraph_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - _ismbbgraph function
 - ismbbgraph function
 ms.assetid: b60db718-134f-4796-acc1-592d0b9efbb7
-ms.openlocfilehash: 60b8a974ab27878a379e3a9ad2596a23ed31757f
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 093d7d2ca9b9bde427078f390f2036866529d8da
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909508"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306356"
 ---
 # <a name="_ismbbgraph-_ismbbgraph_l"></a>_ismbbgraph, _ismbbgraph_l
 
@@ -59,7 +60,7 @@ int _ismbbgraph_l (
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Целое число, которое требуется проверить.
 
 *locale*<br/>
@@ -71,9 +72,9 @@ int _ismbbgraph_l (
 
 `isctype(c, ( _PUNCT | _UPPER | _LOWER | _DIGIT )) || _ismbbkprint(c)`
 
-параметр имеет ненулевое значение для *языка c*или значение 0, если нет. **_ismbbgraph** использует текущий языковой стандарт для любого поведения, зависящего от языкового стандарта. **_ismbbgraph_l** является идентичным, за исключением того, что использует переданный языковой стандарт. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
+параметр имеет ненулевое значение для *языка c* или значение 0, если нет. **_ismbbgraph** использует текущий языковой стандарт для любого поведения, зависящего от языкового стандарта. **_ismbbgraph_l** является идентичным, за исключением того, что использует переданный языковой стандарт. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

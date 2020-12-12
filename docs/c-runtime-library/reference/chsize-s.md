@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _chsize_s'
 title: _chsize_s
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - chsize_s function
 - _chsize_s function
 ms.assetid: d88d2e94-6e3b-42a5-8631-16ac4d82fa38
-ms.openlocfilehash: faed95bfeb6fad88f502101e166ec6124b6e591d
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: b3fa28923b558dc9b396cffc3418ff679349000d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910417"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253095"
 ---
 # <a name="_chsize_s"></a>_chsize_s
 
@@ -63,7 +64,7 @@ errno_t _chsize_s(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_chsize_s** расширяет или усекает файл, связанный с *демоном* , до длины, указанной в параметре *size*. Файл должен быть открыт в режиме, позволяющем выполнять запись. Если файл доступен для расширения, к нему добавляются нули ('\0'). Если файл усекается, все данные в конце сокращенного файла усекаются до длины исходного файла.
 
@@ -86,5 +87,5 @@ errno_t _chsize_s(
 [Обработка файлов](../../c-runtime-library/file-handling.md)<br/>
 [_chsize](chsize.md)<br/>
 [_close](close.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
+[Функция _creat, _wcreat](creat-wcreat.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>

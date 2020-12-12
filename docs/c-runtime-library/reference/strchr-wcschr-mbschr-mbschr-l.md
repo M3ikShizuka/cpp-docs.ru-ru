@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: strchr, вксчр, _mbschr, _mbschr_l'
 title: strchr, wcschr, _mbschr, _mbschr_l
 ms.date: 4/2/2020
 api_name:
@@ -47,12 +48,12 @@ helpviewer_keywords:
 - tcschr function
 - mbschr_l function
 ms.assetid: 2639905d-e983-43b7-b885-abef32cfac43
-ms.openlocfilehash: a7cea0b2c640b7cb87d7097cea7bdf94a73abfb8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8971022e529a03199a890d769843fd77ec44c5af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229315"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306226"
 ---
 # <a name="strchr-wcschr-_mbschr-_mbschr_l"></a>strchr, wcschr, _mbschr, _mbschr_l
 
@@ -122,7 +123,7 @@ const unsigned char *_mbschr_l(
 *str*<br/>
 Исходная строка, завершающаяся символом NULL.
 
-*ц*<br/>
+*c*<br/>
 Символ, который требуется найти.
 
 *locale*<br/>
@@ -130,11 +131,11 @@ const unsigned char *_mbschr_l(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Каждая из этих функций возвращает указатель на первое вхождение *c* в *str*или значение null, если *c* не найдено.
+Каждая из этих функций возвращает указатель на первое вхождение *c* в *str* или значение null, если *c* не найдено.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`strchr`Функция находит первое вхождение *c* в *str*или возвращает значение null, если *c* не найден. Область поиска включает завершающий символ NULL.
+`strchr`Функция находит первое вхождение *c* в *str* или возвращает значение null, если *c* не найден. Область поиска включает завершающий символ NULL.
 
 Функции `wcschr`, `_mbschr` и `_mbschr_l` являются версиями функции `strchr` для расширенных и многобайтовых символов. Аргументы и возвращаемое значение `wcschr` представляют собой двухбайтовые строки; аргументы и возвращаемое значение `_mbschr` представляют собой многобайтовые строки. `_mbschr` распознает последовательности многобайтовых символов. Кроме того, если строка является пустым указателем, функция `_mbschr` вызывает обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, `_mbschr` возвращает значение NULL и задает `errno` для еинвал. Функции `strchr` и `wcschr` не проверяют свои параметры. В остальном эти три функции ведут себя идентично.
 
@@ -222,7 +223,7 @@ Result:   last r found at position 30
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Локаль](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
