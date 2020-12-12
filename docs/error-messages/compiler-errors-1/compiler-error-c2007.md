@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C2007'
 title: Ошибка компилятора C2007
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2007
 ms.assetid: ecd09d99-5036-408b-9e46-bc15488f049e
-ms.openlocfilehash: 15ac3f76e99b3d101788fdcfd6760f6f9b284f34
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: fa2ad780269079ef081f22d2c222e106443200e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756543"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298491"
 ---
 # <a name="compiler-error-c2007"></a>Ошибка компилятора C2007
 
-синтаксис определения \#
+\#определение синтаксиса
 
-После `#define`идентификатор не отображается. Чтобы устранить эту ошибку, используйте идентификатор.
+Идентификатор не отображается после a `#define` . Чтобы устранить эту ошибку, используйте идентификатор.
 
 Следующий пример приводит к возникновению ошибки C2007:
 
@@ -26,7 +27,7 @@ ms.locfileid: "74756543"
 #define   // C2007
 ```
 
-Возможное решение
+Возможное решение:
 
 ```cpp
 // C2007b.cpp
