@@ -1,40 +1,41 @@
 ---
-title: inject_statement, атрибут импорта
+description: 'Дополнительные сведения: inject_statement атрибута импорта'
+title: inject_statement атрибут импорта
 ms.date: 08/29/2019
 f1_keywords:
 - inject_statement
 helpviewer_keywords:
 - inject_statement attribute
 ms.assetid: 07d6f0f4-d9fb-4e18-aa62-f235f142ff5e
-ms.openlocfilehash: 25dee621ff8af2c9a39e605b9da2c29d80f9570a
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: b7ab8059e95ed3799857fe1b899ef2efff729ffb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70220990"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236429"
 ---
-# <a name="inject_statement-import-attribute"></a>inject_statement, атрибут импорта
+# <a name="inject_statement-import-attribute"></a>inject_statement атрибут импорта
 
-**C++Зависящ**
+**Блок, относящийся только к языку C++**
 
 Вставляет свой аргумент как исходный текст в заголовок библиотеки типов.
 
 ## <a name="syntax"></a>Синтаксис
 
-> **#import** *Библиотека типов* **inject_statement (** "*Исходный текст*" **)**
+> inject_statement типа **#import** *-Library* **(** "*Исходный текст*" **)**
 
 ### <a name="parameters"></a>Параметры
 
 *исходный текст*\
 Исходный текст, вставляемый в файл заголовка библиотеки типов.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Текст помещается в начало объявления пространства имен, которое служит оболочкой для содержимого *библиотеки типов* в файле заголовка.
 
-**КОНЕЦ C++ конкретного**
+**Завершение блока, относящегося только к языку C++**
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [атрибуты #import](../preprocessor/hash-import-attributes-cpp.md)\
-[Директива #import](../preprocessor/hash-import-directive-cpp.md)
+[#import - директива](../preprocessor/hash-import-directive-cpp.md)

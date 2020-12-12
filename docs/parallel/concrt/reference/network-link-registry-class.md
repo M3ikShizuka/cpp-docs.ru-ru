@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: network_link_registry классе'
 title: Класс network_link_registry
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - network_link_registry class
 ms.assetid: 3e7b4097-09f1-4252-964e-b15b8f7f7fc6
-ms.openlocfilehash: 18fabd0e741c144201f299271cdd01eb9ac55fac
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d14ec5758b399d46d5a5f04200b9422b030305f8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222684"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236598"
 ---
 # <a name="network_link_registry-class"></a>Класс network_link_registry
 
@@ -56,7 +57,7 @@ class network_link_registry;
 |[count](#count)|При переопределении в производном классе возвращает число элементов в `network_link_registry` объекте.|
 |[remove](#remove)|При переопределении в производном классе удаляет указанный блок из `network_link_registry` объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `network link registry`Не является надежным для параллельного доступа.
 
@@ -70,7 +71,7 @@ class network_link_registry;
 
 **Пространство имен:** параллелизм
 
-## <a name="add"></a><a name="add"></a>включить
+## <a name="add"></a><a name="add"></a> включить
 
 При переопределении в производном классе добавляет ссылку на `network_link_registry` объект.
 
@@ -83,7 +84,7 @@ virtual void add(_EType _Link) = 0;
 *_Link*<br/>
 Указатель на добавляемый блок.
 
-## <a name="begin"></a><a name="begin"></a>начале
+## <a name="begin"></a><a name="begin"></a> begin
 
 При переопределении в производном классе возвращает итератор на первый элемент в `network_link_registry` объекте.
 
@@ -95,11 +96,11 @@ virtual iterator begin() = 0;
 
 Итератор, обращающийся к первому элементу в `network_link_registry` объекте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конечное состояние итератора обозначается `NULL` ссылкой.
 
-## <a name="contains"></a><a name="contains"></a>содержащих
+## <a name="contains"></a><a name="contains"></a> содержащих
 
 При переопределении в производном классе ищет `network_link_registry` указанный блок в объекте.
 
@@ -116,7 +117,7 @@ virtual bool contains(_EType _Link) = 0;
 
 **`true`** значение, если блок найден; **`false`** в противном случае —.
 
-## <a name="count"></a><a name="count"></a>расчета
+## <a name="count"></a><a name="count"></a> расчета
 
 При переопределении в производном классе возвращает число элементов в `network_link_registry` объекте.
 
@@ -128,7 +129,7 @@ virtual size_t count() = 0;
 
 Число элементов в объекте `network_link_registry`.
 
-## <a name="remove"></a><a name="remove"></a>отменит
+## <a name="remove"></a><a name="remove"></a> отменит
 
 При переопределении в производном классе удаляет указанный блок из `network_link_registry` объекта.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: include () импортировать атрибут'
 title: включить () импортировать атрибут
 ms.date: 08/29/2019
 f1_keywords:
@@ -6,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - include() attribute
 ms.assetid: 86c9dcb2-d9e0-4fd5-97d7-0bb3e23d6ecc
-ms.openlocfilehash: 39ab63525b2b83781cbcaf86a61742c5fb767b72
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: e1164526f95bf1b916cd684a892fbef35027f984
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218878"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236481"
 ---
 # <a name="include-import-attribute"></a>включить () импортировать атрибут
 
-**C++Зависящ**
+**Блок, относящийся только к языку C++**
 
 Отключает автоматическое исключение.
 
 ## <a name="syntax"></a>Синтаксис
 
-> **#import** *Библиотека типов* **include ("** _name1_ **"** [ __, "__ *имя2* __"__ ...] __)__
+> **#import** *Type-Library* **: ("**_name1_**"** [__, "__*имя2*__"__ ...] __)__
 
 ### <a name="parameters"></a>Параметры
 
@@ -31,13 +32,13 @@ ms.locfileid: "70218878"
 *Name2*\
 Второй элемент для принудительного включения (при необходимости).
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Библиотеки типов могут содержать определения элементов, которые определены в системных заголовочных файлах или других библиотеках типов. Директива `#import` пытается предотвратить ошибки об использовании нескольких определений, автоматически исключая такие элементы. Если некоторые элементы не должны исключаться автоматически, может отобразиться [Предупреждение компилятора (уровень 3) C4192](../error-messages/compiler-warnings/compiler-warning-level-3-c4192.md). С помощью этого атрибута можно отключить автоматическое исключение. Этот атрибут может принимать любое количество аргументов, по одному для каждого имени включаемого элемента библиотеки типов.
 
-**КОНЕЦ C++ конкретного**
+**Завершение блока, относящегося только к языку C++**
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [атрибуты #import](../preprocessor/hash-import-attributes-cpp.md)\
-[Директива #import](../preprocessor/hash-import-directive-cpp.md)
+[#import - директива](../preprocessor/hash-import-directive-cpp.md)
