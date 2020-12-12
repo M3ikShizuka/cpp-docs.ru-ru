@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: WM_ сообщения: P-R'
 title: Сообщения WM_ P — R
 ms.date: 11/04/2016
 f1_keywords:
@@ -33,36 +34,36 @@ helpviewer_keywords:
 - ON_WM_QUERYENDSESSION [MFC]
 - WM_ messages
 ms.assetid: f46962e5-8329-4f1f-9b4d-fdad2a5ce1f8
-ms.openlocfilehash: 283e7aa52008d76067249978d667ce641020a3bb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d1e3ad4ca65bcf9f4b1b0901a6fe1dbf441595e5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62309074"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218307"
 ---
-# <a name="wm-messages-p---r"></a>Сообщения WM_ P — R
+# <a name="wm_-messages-p---r"></a>Сообщения WM_ P — R
 
-Следующие записи карты соответствуют прототипов функций:
+Следующие записи Map соответствуют прототипам функций:
 
-|Запись сопоставления|Прототип функции|
+|Запись Map|Прототип функции|
 |---------------|------------------------|
-|ON_WM_PAINT()|afx_msg void [OnPaint](../../mfc/reference/cwnd-class.md#onpaint)();|
-|ON_WM_PAINTCLIPBOARD()|afx_msg void [OnPaintClipboard](../../mfc/reference/cwnd-class.md#onpaintclipboard)(CWnd *, ДЕСКРИПТОР);|
-|ON_WM_PALETTECHANGED()|afx_msg void [OnPaletteChanged](../../mfc/reference/cwnd-class.md#onpalettechanged)(CWnd *);|
-|ON_WM_PALETTEISCHANGING()|afx_msg void [OnPaletteIsChanging](../../mfc/reference/cwnd-class.md#onpaletteischanging)( CWnd* );|
-|ON_WM_PARENTNOTIFY()|afx_msg void [OnParentNotify](../../mfc/reference/cwnd-class.md#onparentnotify)( UINT, LONG );|
-|ON_WM_POWERBROADCAST()|целое число без знака afx_msg [OnPowerBroadcast](../../mfc/reference/cwnd-class.md#onpowerbroadcast)(целое число без знака, целое число без знака);|
-|ON_WM_QUERYDRAGICON()|afx_msg HCURSOR [OnQueryDragIcon](../../mfc/reference/cwnd-class.md#onquerydragicon)() ();|
-|ON_WM_QUERYENDSESSION()|afx_msg BOOL [OnQueryEndSession](../../mfc/reference/cwnd-class.md#onqueryendsession)()();|
-|ON_WM_QUERYNEWPALETTE()|afx_msg BOOL [OnQueryNewPalette](../../mfc/reference/cwnd-class.md#onquerynewpalette)() ();|
-|ON_WM_QUERYOPEN()|afx_msg BOOL [OnQueryOpen](../../mfc/reference/cwnd-class.md#onqueryopen)()();|
-|ON_WM_RBUTTONDBLCLK()|afx_msg void [OnRButtonDblClk](../../mfc/reference/cwnd-class.md#onrbuttondblclk)(целое число без знака, CPoint);|
-|ON_WM_RBUTTONDOWN()|afx_msg void [OnRButtonDown](../../mfc/reference/cwnd-class.md#onrbuttondown)(целое число без знака, CPoint);|
-|ON_WM_RBUTTONUP()|afx_msg void [OnRButtonUp](../../mfc/reference/cwnd-class.md#onrbuttonup)(целое число без знака, CPoint);|
-|ON_WM_RENDERALLFORMATS()|afx_msg void [OnRenderAllFormats](../../mfc/reference/cwnd-class.md#onrenderallformats)();|
-|ON_WM_RENDERFORMAT()|afx_msg void [OnRenderFormat](../../mfc/reference/cwnd-class.md#onrenderformat)( UINT );|
+|ON_WM_PAINT ()|afx_msg void [onpain](../../mfc/reference/cwnd-class.md#onpaint)();|
+|ON_WM_PAINTCLIPBOARD ()|afx_msg void [онпаинтклипбоард](../../mfc/reference/cwnd-class.md#onpaintclipboard)(CWnd *, Handle);|
+|ON_WM_PALETTECHANGED ()|afx_msg void [онпалеттечанжед](../../mfc/reference/cwnd-class.md#onpalettechanged)(CWnd *);|
+|ON_WM_PALETTEISCHANGING ()|afx_msg void [онпалеттеисчангинг](../../mfc/reference/cwnd-class.md#onpaletteischanging)(CWnd *);|
+|ON_WM_PARENTNOTIFY ()|afx_msg void [онпарентнотифи](../../mfc/reference/cwnd-class.md#onparentnotify)(uint, Long);|
+|ON_WM_POWERBROADCAST ()|afx_msg UINT [онповерброадкаст](../../mfc/reference/cwnd-class.md#onpowerbroadcast)(UINT, uint);|
+|ON_WM_QUERYDRAGICON ()|afx_msg ХКУРСОР [онкуеридрагикон](../../mfc/reference/cwnd-class.md#onquerydragicon)() ();|
+|ON_WM_QUERYENDSESSION ()|afx_msg BOOL [онкуерендсессион](../../mfc/reference/cwnd-class.md#onqueryendsession)() ();|
+|ON_WM_QUERYNEWPALETTE ()|afx_msg BOOL [онкуериневпалетте](../../mfc/reference/cwnd-class.md#onquerynewpalette)() ();|
+|ON_WM_QUERYOPEN ()|afx_msg BOOL [онкуерйопен](../../mfc/reference/cwnd-class.md#onqueryopen)() ();|
+|ON_WM_RBUTTONDBLCLK ()|afx_msg void [онрбуттондблклк](../../mfc/reference/cwnd-class.md#onrbuttondblclk)(uint, CPoint);|
+|ON_WM_RBUTTONDOWN ()|afx_msg void [онрбуттондовн](../../mfc/reference/cwnd-class.md#onrbuttondown)(uint, CPoint);|
+|ON_WM_RBUTTONUP ()|afx_msg void [онрбуттонуп](../../mfc/reference/cwnd-class.md#onrbuttonup)(uint, CPoint);|
+|ON_WM_RENDERALLFORMATS ()|afx_msg void [онрендераллформатс](../../mfc/reference/cwnd-class.md#onrenderallformats)();|
+|ON_WM_RENDERFORMAT ()|afx_msg void [онрендерформат](../../mfc/reference/cwnd-class.md#onrenderformat)(UINT);|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Схемы сообщений](../../mfc/reference/message-maps-mfc.md)<br/>
 [Обработчики для сообщений WM_](../../mfc/reference/handlers-for-wm-messages.md)

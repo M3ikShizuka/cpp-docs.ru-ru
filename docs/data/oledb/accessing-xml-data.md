@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: доступ к XML-данным'
 title: Доступ к данным XML
 ms.date: 10/18/2018
 helpviewer_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - rowsets [C++], retrieving XML data
 - CStreamRowset class, retrieving XML data
 ms.assetid: 6b693d55-a554-4846-8118-e8773b79b572
-ms.openlocfilehash: 437f1d103420ec5727294894c02587c68cffbdda
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: f229dc4567247ea95ebf00a5dbc9316be8aeac1b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509132"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246088"
 ---
 # <a name="accessing-xml-data"></a>Доступ к данным XML
 
 Существует два отдельных метода получения XML-данных из источника данных: один использует [CStreamRowset](../../data/oledb/cstreamrowset-class.md) , а другой использует [CXMLAccessor](../../data/oledb/cxmlaccessor-class.md).
 
-|Функциональность|CStreamRowset|CXMLAccessor|
+|функциональное назначение;|CStreamRowset|CXMLAccessor|
 |-------------------|-------------------|------------------|
 |Объем передаваемых данных|Извлекает данные из всех столбцов и строк за один раз.|Извлекает данные из всех столбцов, но только по одной строке за раз. Необходимо перемещаться по строкам с помощью таких методов, как `MoveNext` .|
 |Форматирование строки|SQL Server форматирует XML-строку и отправляет ее потребителю.|Извлекает данные набора строк в собственном формате (запрос, который поставщик отправляет в виде строк в Юникоде), а затем создает строку, содержащую данные в формате XML.|

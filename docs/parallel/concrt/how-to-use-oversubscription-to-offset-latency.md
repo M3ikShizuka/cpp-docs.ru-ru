@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: как использовать превышение лимита подписки для смещения задержки'
 title: Практическое руководство. Использование лимита подписки для устранения задержек
 ms.date: 11/04/2016
 helpviewer_keywords:
 - oversubscription, using [Concurrency Runtime]
 - using oversubscription [Concurrency Runtime]
 ms.assetid: a1011329-2f0a-4afb-b599-dd4043009a10
-ms.openlocfilehash: f5d48b68d03adc25cd5f87122591b52e37da700a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ec7b96703da2cbbe8a4d3caac3bfb1a1ff6f602a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219603"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341572"
 ---
 # <a name="how-to-use-oversubscription-to-offset-latency"></a>Практическое руководство. Использование лимита подписки для устранения задержек
 

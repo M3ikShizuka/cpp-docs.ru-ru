@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Rubber-Banding и средства мониторинга'
 title: Эластичные соединения и средства отслеживания
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - rubber banding [MFC]
 - WM_LBUTTONDOWN [MFC]
 ms.assetid: 0d0fa64c-6418-4baf-ab7f-2d16ca039230
-ms.openlocfilehash: 095f3c15546466c6a495f6aa348990ed69b04a9e
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 5d641e7553a2891e0319484558f025c6998f9693
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127370"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97217839"
 ---
 # <a name="rubber-banding-and-trackers"></a>Эластичные соединения и средства отслеживания
 
@@ -31,5 +32,5 @@ ms.locfileid: "77127370"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Средства отслеживания. Реализация средств отслеживания в приложении OLE](../mfc/trackers-implementing-trackers-in-your-ole-application.md)<br/>
-[Класс CRectTracker](../mfc/reference/crecttracker-class.md)
+[Инспекторы: реализация инспекторов в приложении OLE](../mfc/trackers-implementing-trackers-in-your-ole-application.md)<br/>
+[Класс Кректтраккер](../mfc/reference/crecttracker-class.md)

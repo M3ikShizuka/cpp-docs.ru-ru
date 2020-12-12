@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: реагировании на платформа динамических данных Exchange (DDE)'
 title: Реакция на динамический обмен данными (DDE)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,17 +12,17 @@ helpviewer_keywords:
 - responding to dynamic data exchange (DDE)
 - frame windows [MFC], shell registration
 ms.assetid: 4db838d5-62cf-4123-915a-66e514155c0c
-ms.openlocfilehash: f6ca50b95e35ea4d7a6c29c6dd6919e02c9bdc7a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3dc9a3881b78f95a8571143aceace50836ab8fa0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62308918"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218034"
 ---
 # <a name="responding-to-dynamic-data-exchange-dde"></a>Реакция на динамический обмен данными (DDE)
 
-Фрейм окна может отвечать на запросы exchange (DDE) платформы динамических данных для открытия файлов, из диспетчера файлов (если расширение файла регистрации и связанные с приложением). См. в разделе [оболочки регистрации](../mfc/special-cwinapp-services.md).
+Окно фрейма может реагировать на запросы динамического обмена данными (DDE) на открытие файлов из диспетчера файлов (если расширение зарегистрировано или связано с приложением). См. раздел [Регистрация оболочки](../mfc/special-cwinapp-services.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Использование окон фрейма](../mfc/using-frame-windows.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: WM_ сообщения: S'
 title: Сообщения WM_ S
 ms.date: 11/04/2016
 f1_keywords:
@@ -37,37 +38,37 @@ helpviewer_keywords:
 - ON_WM_SYSKEYDOWN [MFC]
 - WM_ messages
 ms.assetid: 4b9aec79-a98f-4aa0-a3d9-110941b6dcbc
-ms.openlocfilehash: 2f8bfb00172f2f4e2791374079c7eb3bb0559a76
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6fc1f193569d912e438b19646cd1bb4573855346
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62309113"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218294"
 ---
-# <a name="wm-messages-s"></a>Сообщения WM_ S
+# <a name="wm_-messages-s"></a>Сообщения WM_ S
 
-Прототипы функции соответствуют следующие записи карты.
+Следующие записи Map соответствуют прототипам функций.
 
-|Запись сопоставления|Прототип функции|
+|Запись Map|Прототип функции|
 |---------------|------------------------|
-|ON_WM_SETCURSOR( )|afx_msg BOOL [OnSetCursor](../../mfc/reference/cwnd-class.md#onsetcursor)(CWnd *, UINT, целое число без знака);|
-|ON_WM_SETFOCUS( )|afx_msg void [OnSetFocus](../../mfc/reference/cwnd-class.md#onsetfocus)( CWnd* );|
-|ON_WM_SETTINGCHANGE( )|afx_msg void [OnSettingChange](../../mfc/reference/cwnd-class.md#onsettingchange)( UINT uFlags, LPCTSTR lpszSection );|
-|(ON_WM_SHOWWINDOW)|afx_msg void [OnShowWindow](../../mfc/reference/cwnd-class.md#onshowwindow)( BOOL, UINT );|
-|(ON_WM_SIZE)|afx_msg void [OnSize](../../mfc/reference/cwnd-class.md#onsize)(целое число без знака, int, int);|
-|(ON_WM_SIZECLIPBOARD)|afx_msg void [OnSizeClipboard](../../mfc/reference/cwnd-class.md#onsizeclipboard)(CWnd *, ДЕСКРИПТОР);|
-|ON_WM_SIZING( )|afx_msg void [OnSizing](../../mfc/reference/cwnd-class.md#onsizing)(целое число без знака, LPRECT);|
-|(ON_WM_SPOOLERSTATUS)|afx_msg void [OnSpoolerStatus](../../mfc/reference/cwnd-class.md#onspoolerstatus)(целое число без знака, целое число без знака);|
-|(ON_WM_STYLECHANGED)|afx_msg void [OnStyleChanged](../../mfc/reference/cwnd-class.md#onstylechanged)(int, LPSTYLESTRUCT);|
-|(ON_WM_STYLECHANGING)|afx_msg void [OnStyleChanging](../../mfc/reference/cwnd-class.md#onstylechanging)(int, LPSTYLESTRUCT);|
-|ON_WM_SYSCHAR( )|afx_msg void [OnSysChar](../../mfc/reference/cwnd-class.md#onsyschar)( UINT, UINT, UINT );|
-|(ON_WM_SYSCOLORCHANGE)|afx_msg void [OnSysColorChange](../../mfc/reference/cwnd-class.md#onsyscolorchange)( );|
-|ON_WM_SYSCOMMAND( )|afx_msg void [OnSysCommand](../../mfc/reference/cwnd-class.md#onsyscommand)( UINT, LONG );|
-|(ON_WM_SYSDEADCHAR)|afx_msg void [OnSysDeadChar](../../mfc/reference/cwnd-class.md#onsysdeadchar)( UINT, UINT, UINT );|
-|(ON_WM_SYSKEYDOWN)|afx_msg void [OnSysKeyDown](../../mfc/reference/cwnd-class.md#onsyskeydown)(целое число без знака, целое число без знака, целое число без знака);|
-|(ON_WM_SYSKEYUP)|afx_msg void [OnSysKeyUp](../../mfc/reference/cwnd-class.md#onsyskeyup)( UINT, UINT, UINT );|
+|ON_WM_SETCURSOR ()|afx_msg BOOL [онсеткурсор](../../mfc/reference/cwnd-class.md#onsetcursor)(CWnd *, UINT, uint);|
+|ON_WM_SETFOCUS ()|afx_msg void [OnSetFocus](../../mfc/reference/cwnd-class.md#onsetfocus)(CWnd *);|
+|ON_WM_SETTINGCHANGE ()|afx_msg void [онсеттингчанже](../../mfc/reference/cwnd-class.md#onsettingchange)(uint УФЛАГС, LPCTSTR лпсзсектион);|
+|ON_WM_SHOWWINDOW ()|afx_msg void [оншоввиндов](../../mfc/reference/cwnd-class.md#onshowwindow)(bool, uint);|
+|ON_WM_SIZE ()|afx_msg void [OnSize](../../mfc/reference/cwnd-class.md#onsize)(uint, int, int);|
+|ON_WM_SIZECLIPBOARD ()|afx_msg void [последнем OnSizeClipboard](../../mfc/reference/cwnd-class.md#onsizeclipboard)(CWnd *, Handle);|
+|ON_WM_SIZING ()|afx_msg void [onsizing](../../mfc/reference/cwnd-class.md#onsizing)(uint, лпрект);|
+|ON_WM_SPOOLERSTATUS ()|afx_msg void [онспулерстатус](../../mfc/reference/cwnd-class.md#onspoolerstatus)(UINT, uint);|
+|ON_WM_STYLECHANGED ()|afx_msg void [онстилечанжед](../../mfc/reference/cwnd-class.md#onstylechanged)(int, лпстилеструкт);|
+|ON_WM_STYLECHANGING ()|afx_msg void [онстилечангинг](../../mfc/reference/cwnd-class.md#onstylechanging)(int, лпстилеструкт);|
+|ON_WM_SYSCHAR ()|afx_msg void [онсисчар](../../mfc/reference/cwnd-class.md#onsyschar)(UINT, UINT, uint);|
+|ON_WM_SYSCOLORCHANGE ()|afx_msg void [онсисколорчанже](../../mfc/reference/cwnd-class.md#onsyscolorchange)();|
+|ON_WM_SYSCOMMAND ()|afx_msg void [онсискомманд](../../mfc/reference/cwnd-class.md#onsyscommand)(uint, Long);|
+|ON_WM_SYSDEADCHAR ()|afx_msg void [онсисдеадчар](../../mfc/reference/cwnd-class.md#onsysdeadchar)(UINT, UINT, uint);|
+|ON_WM_SYSKEYDOWN ()|afx_msg void [онсискэйдовн](../../mfc/reference/cwnd-class.md#onsyskeydown)(UINT, UINT, uint);|
+|ON_WM_SYSKEYUP ()|afx_msg void [онсискэйуп](../../mfc/reference/cwnd-class.md#onsyskeyup)(UINT, UINT, uint);|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Схемы сообщений](../../mfc/reference/message-maps-mfc.md)<br/>
 [Обработчики для сообщений WM_](../../mfc/reference/handlers-for-wm-messages.md)

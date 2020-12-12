@@ -1,18 +1,19 @@
 ---
-title: Исправление зависимостей от C++ внутренних компонентов библиотеки
+description: 'Дополнительные сведения о: Исправление зависимостей от внутренних компонентов библиотеки C++'
+title: Исправление зависимостей от внутренних компонентов библиотеки C++
 ms.date: 05/24/2017
 helpviewer_keywords:
 - library internals in an upgraded Visual Studio C++ project
 - _Hash_seq in an upgraded Visual Studio C++ project
 ms.assetid: 493e0452-6ecb-4edc-ae20-b6fce2d7d3c5
-ms.openlocfilehash: b101234c582d8730b1a8fb62e8182df68554b18c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 5d9cbcdd039786c3f1bb637e6a59bcfce43bc883
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214998"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341546"
 ---
-# <a name="fix-your-dependencies-on-c-library-internals"></a>Исправление зависимостей от C++ внутренних компонентов библиотеки
+# <a name="fix-your-dependencies-on-c-library-internals"></a>Исправление зависимостей от внутренних компонентов библиотеки C++
 
 Корпорация Майкрософт опубликовала исходный код для стандартной библиотеки, большей части библиотеки времени выполнения C и других библиотек Майкрософт в целом ряде версий Visual Studio. Мы сделали это для того, чтобы вы могли лучше понимать работу библиотеки и эффективнее отлаживать свой код. Одним из побочных эффектов публикации исходного кода библиотеки является то, что вам предоставляются некоторые внутренние значения, структуры данных и функции, которые не являются частью интерфейса библиотеки. Их имена обычно начинаются с двух символов подчеркивания или символа подчеркивания и прописной буквы, и они являются в стандарте C++ зарезервированными. Эти значения, структуры и функции используются в реализации библиотек и по мере развития библиотек могут изменяться, поэтому настоятельно рекомендуется не создавать от них зависимостей. В противном случае вы рискуете получить непереносимый код и проблемы при переводе кода на новые версии библиотек.
 
@@ -76,6 +77,6 @@ inline size_t fnv1a_hash_bytes(const unsigned char * first, size_t count) {
 
 ## <a name="see-also"></a>См. также раздел
 
-[Обновление проектов с более ранних версий VisualC++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
+[Обновление проектов с более ранних версий Visual C++](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
 [Общие сведения о возможных проблемах, возникающих при обновлении (Visual C++)](overview-of-potential-upgrade-issues-visual-cpp.md)<br/>
 [Обновление кода для универсальной среды выполнения](upgrade-your-code-to-the-universal-crt.md)

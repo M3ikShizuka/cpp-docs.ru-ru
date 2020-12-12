@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о том, как использовать параллельные контейнеры для повышения эффективности.
 title: Практическое руководство. Использование параллельных контейнеров для повышения эффективности
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - concurrent_queue class, examples
 - concurrent_vector class, examples
 ms.assetid: bd00046d-e9b6-4ae1-b661-3995f671b867
-ms.openlocfilehash: 361e0e32efb45468ba108ee975879f990ac98395
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 6e416da7b1cdcbe1a9b3073569cf4dda6434ceea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008327"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341559"
 ---
 # <a name="how-to-use-parallel-containers-to-increase-efficiency"></a>Практическое руководство. Использование параллельных контейнеров для повышения эффективности
 
@@ -69,7 +70,7 @@ Prime factors of 1050985 are: 5 13 19 23 37.
 
 > **cl.exe/EHsc кармичаел-примес. cpp**
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Параллельные контейнеры и объекты](../../parallel/concrt/parallel-containers-and-objects.md)<br/>
 [Параллельное выполнение задач](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>

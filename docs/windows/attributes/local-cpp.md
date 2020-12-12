@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: local (C++)'
 title: Local (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - local attribute
 ms.assetid: 35cdd668-bd8e-492a-b7b8-263e7b662437
-ms.openlocfilehash: dea62653478e451af00fa47b72984f3b580aadc0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7fa1366b78576224f8fcc0d91392fe1fc6cb8af9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834093"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327514"
 ---
 # <a name="local-c"></a>local (C++)
 
@@ -29,7 +30,7 @@ ms.locfileid: "88834093"
 
 ## <a name="example"></a>Пример
 
-Пример использования **локального**объекта см. в разделе [call_as](call-as.md) .
+Пример использования **локального** объекта см. в разделе [call_as](call-as.md) .
 
 ## <a name="requirements"></a>Требования
 

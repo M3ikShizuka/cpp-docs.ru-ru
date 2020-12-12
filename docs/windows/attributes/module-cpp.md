@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о модуле: module (C++)'
 title: Module (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - module attributes
 ms.assetid: 02223b2a-62b5-4262-832f-564b1e11e58e
-ms.openlocfilehash: b6cde0baaae9901258e90ededf05c60cb13a7dc1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1780ebcb89e7d19f3f3a4c2656d383725d85657a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833976"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327488"
 ---
 # <a name="module-c"></a>module (C++)
 
@@ -85,7 +86,7 @@ ms.locfileid: "88833976"
 > [!NOTE]
 > Как RGS-файл, так и строка с именем службы должны содержать одинаковое числовое значение.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Если не указать параметр *restricted* для [emitidl](emitidl.md), **module** требуется в любой программе, использующей атрибуты C++.
 

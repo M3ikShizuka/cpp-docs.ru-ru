@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _create_locale, _wcreate_locale'
 title: _create_locale, _wcreate_locale
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - create_locale function
 - __create_locale function
 ms.assetid: ca362464-9f4a-4ec6-ab03-316c55c5be81
-ms.openlocfilehash: 31bde3d032bdb47d63db5730ba53016de573332c
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: feb2fee7befbaf3f798dc36466674eaa4aec55fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912090"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341530"
 ---
 # <a name="_create_locale-_wcreate_locale"></a>_create_locale, _wcreate_locale
 
@@ -70,19 +71,19 @@ _locale_t _wcreate_locale(
 
 Если *заданы* допустимые *язык и региональные стандарты* , возвращает указанные параметры языкового стандарта в виде объекта **_locale_t** . Текущие параметры языкового стандарта программы не изменяются.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_create_locale** позволяет создать объект, представляющий определенные параметры определенного региона, для использования в версиях многих функций CRT, зависящих от локали (функции с суффиксом **_l** ). Поведение аналогично **setlocale**, за исключением того, что вместо применения указанных параметров языкового стандарта к текущей среде параметры сохраняются в возвращаемой структуре **_locale_t** . Структура **_locale_t** должна быть освобождена с помощью [_free_locale](free-locale.md) , если она больше не нужна.
 
-**_wcreate_locale** — это версия **_create_locale**для расширенных символов; Аргумент *locale* для **_wcreate_locale** является строкой расширенных символов. в противном случае **_wcreate_locale** и **_create_locale** ведут себя одинаково.
+**_wcreate_locale** — это версия **_create_locale** для расширенных символов; Аргумент *locale* для **_wcreate_locale** является строкой расширенных символов. в противном случае **_wcreate_locale** и **_create_locale** ведут себя одинаково.
 
 Аргумент *Category* указывает, какие части поведения зависит от языкового стандарта. Флаги, используемые для *категории* и частей программы, на которые они влияют, представлены в следующей таблице:
 
 | флаг *категории* | Область применения |
 |-----------------|---------|
 | **LC_ALL** |Все категории, перечисленные ниже. |
-| **LC_COLLATE** |Функции **strcoll**, **_stricoll**, **вксколл**, **_wcsicoll**, **стрксфрм**, **_strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll**и **вксксфрм** . |
-| **LC_CTYPE** | Функции обработки символов (кроме **знаков** **isxdigit**, **функции mbstowcs**и **mbtowc**, которые не затрагиваются). |
+| **LC_COLLATE** |Функции **strcoll**, **_stricoll**, **вксколл**, **_wcsicoll**, **стрксфрм**, **_strncoll**, **_strnicoll**, **_wcsncoll**, **_wcsnicoll** и **вксксфрм** . |
+| **LC_CTYPE** | Функции обработки символов (кроме **знаков** **isxdigit**, **функции mbstowcs** и **mbtowc**, которые не затрагиваются). |
 | **LC_MONETARY** | Сведения о денежном форматировании, возвращаемые функцией **localeconv** . |
 | **LC_NUMERIC** | Символ десятичной запятой для отформатированных выходных подпрограмм (например, **printf**), для подпрограмм преобразования данных и для сведений о неденежном форматировании, возвращаемых функцией **localeconv**. В дополнение к символу десятичной запятой, **LC_NUMERIC** задает разделитель групп разрядов и строку управления группированием, возвращаемую функцией [localeconv](localeconv.md). |
 | **LC_TIME** | Функции **strftime** и **wcsftime** . |
@@ -173,12 +174,12 @@ In 'C' locale, _strftime_l returns 'Saturday, February 09, 2002'
 ## <a name="see-also"></a>См. также раздел
 
 [Имена языковых стандартов, языки и строки страны или региона](../../c-runtime-library/locale-names-languages-and-country-region-strings.md)<br/>
-[Language Strings](../../c-runtime-library/language-strings.md)<br/>
-[строки страны и региона](../../c-runtime-library/country-region-strings.md)<br/>
+[Строки языка](../../c-runtime-library/language-strings.md)<br/>
+[Строки страны или региона](../../c-runtime-library/country-region-strings.md)<br/>
 [_free_locale](free-locale.md)<br/>
 [_configthreadlocale](configthreadlocale.md)<br/>
 [setlocale](../../preprocessor/setlocale.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
 [localeconv](localeconv.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
 [strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md)<br/>
@@ -186,7 +187,7 @@ In 'C' locale, _strftime_l returns 'Saturday, February 09, 2002'
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
 [_setmbcp](setmbcp.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
-[strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
+[Функции strcoll](../../c-runtime-library/strcoll-functions.md)<br/>
 [strftime, wcsftime, _strftime_l, _wcsftime_l](strftime-wcsftime-strftime-l-wcsftime-l.md)<br/>
 [strxfrm, wcsxfrm, _strxfrm_l, _wcsxfrm_l](strxfrm-wcsxfrm-strxfrm-l-wcsxfrm-l.md)<br/>
 [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>

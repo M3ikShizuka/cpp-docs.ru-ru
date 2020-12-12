@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: WM_ обработчики сообщений: F-K'
 title: Обработчики сообщений WM_ F — K
 ms.date: 11/27/2018
 f1_keywords:
@@ -29,38 +30,38 @@ helpviewer_keywords:
 - WM_ messages [MFC]
 - ON_WM_KEYDOWN [MFC]
 ms.assetid: 0e7de191-1499-499f-859c-62742797808e
-ms.openlocfilehash: fcb343994498f65fb58be3a499ac3e0fdc2166aa
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 91fb2448862dd70a852191f021244571813b0102
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62309282"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218346"
 ---
-# <a name="wm-message-handlers-f---k"></a>Обработчики сообщений WM_ F — K
+# <a name="wm_-message-handlers-f---k"></a>Обработчики сообщений WM_ F — K
 
-Следующие записи карты слева соответствуют прототипы справа:
+Следующие записи карт слева соответствуют прототипам функций справа:
 
-|Запись сопоставления|Прототип функции|
+|Запись Map|Прототип функции|
 |---------------|------------------------|
-|ON_WM_FONTCHANGE()|afx_msg void [OnFontChange](../../mfc/reference/cwnd-class.md#onfontchange)();|
-|ON_WM_GETDLGCODE()|afx_msg UINT [OnGetDlgCode](../../mfc/reference/cwnd-class.md#ongetdlgcode)();|
-|ON_WM_GETMINMAXINFO()|afx_msg void [OnGetMinMaxInfo](../../mfc/reference/cwnd-class.md#ongetminmaxinfo)(MINMAXINFO *);|
-|ON_WM_HELPINFO()|afx_msg BOOL [OnHelpInfo](../../mfc/reference/cwnd-class.md#onhelpinfo)(HELPINFO *);|
-|ON_WM_HOTKEY()|afx_msg void [OnHotKey](../../mfc/reference/cwnd-class.md#onhotkey)(UINT, UINT, UINT);|
-|ON_WM_HSCROLL()|afx_msg void [OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll)(целое число без знака, целое число без знака, CWnd *);|
-|ON_WM_HSCROLLCLIPBOARD()|afx_msg void [OnHScrollClipboard](../../mfc/reference/cwnd-class.md#onhscrollclipboard)(CWnd *, UINT, целое число без знака);|
-|ON_WM_ICONERASEBKGND()|afx_msg void [OnIconEraseBkgnd](../../mfc/reference/cwnd-class.md#oniconerasebkgnd)(CDC*);|
-|ON_WM_INITMENU()|afx_msg void [OnInitMenu](../../mfc/reference/cwnd-class.md#oninitmenu)(CMenu *);|
-|ON_WM_INITMENUPOPUP()|afx_msg void [OnInitMenuPopup](../../mfc/reference/cwnd-class.md#oninitmenupopup)(CMenu *, UINT, логическое значение);|
-|ON_WM_INPUT()|afx_msg void [OnRawInput](../../mfc/reference/cwnd-class.md#onrawinput)(целое число без знака, HRAWINPUT);|
-|ON_WM_INPUT_DEVICE_CHANGE()|afx_msg void [OnInputDeviceChange](../../mfc/reference/cwnd-class.md#oninputdevicechange)(short без знака);|
-|ON_WM_INPUTLANGCHANGE()|afx_msg void [OnInputLangChange](../../mfc/reference/cwnd-class.md#oninputlangchange)(BYTE, целое число без знака);|
-|ON_WM_INPUTLANGCHANGEREQUEST()|afx_msg void [OnInputLangChangeRequest](../../mfc/reference/cwnd-class.md#oninputlangchangerequest)(целое число без знака, HKL);|
-|ON_WM_KEYDOWN()|afx_msg void [OnKeyDown](../../mfc/reference/cwnd-class.md#onkeydown)(целое число без знака, целое число без знака, целое число без знака);|
-|ON_WM_KEYUP()|afx_msg void [OnKeyUp](../../mfc/reference/cwnd-class.md#onkeyup)(целое число без знака, целое число без знака, целое число без знака);|
-|ON_WM_KILLFOCUS()|afx_msg void [OnKillFocus](../../mfc/reference/cwnd-class.md#onkillfocus)(CWnd*);|
+|ON_WM_FONTCHANGE ()|afx_msg void [онфонтчанже](../../mfc/reference/cwnd-class.md#onfontchange)();|
+|ON_WM_GETDLGCODE ()|afx_msg UINT [онжетдлгкоде](../../mfc/reference/cwnd-class.md#ongetdlgcode)();|
+|ON_WM_GETMINMAXINFO ()|afx_msg void [онжетминмаксинфо](../../mfc/reference/cwnd-class.md#ongetminmaxinfo)(минмаксинфо *);|
+|ON_WM_HELPINFO ()|afx_msg BOOL [онхелпинфо](../../mfc/reference/cwnd-class.md#onhelpinfo)(HELPINFO *);|
+|ON_WM_HOTKEY ()|afx_msg void [onhotkey](../../mfc/reference/cwnd-class.md#onhotkey)(UINT, UINT, uint);|
+|ON_WM_HSCROLL ()|afx_msg void [онхскролл](../../mfc/reference/cwnd-class.md#onhscroll)(UINT, uint, CWnd *);|
+|ON_WM_HSCROLLCLIPBOARD ()|afx_msg void [онхскроллклипбоард](../../mfc/reference/cwnd-class.md#onhscrollclipboard)(CWnd *, UINT, uint);|
+|ON_WM_ICONERASEBKGND ()|afx_msg void [ониконерасебкгнд](../../mfc/reference/cwnd-class.md#oniconerasebkgnd)(CDC *);|
+|ON_WM_INITMENU ()|afx_msg void [онинитмену](../../mfc/reference/cwnd-class.md#oninitmenu)(кмену *);|
+|ON_WM_INITMENUPOPUP ()|afx_msg void [онинитменупопуп](../../mfc/reference/cwnd-class.md#oninitmenupopup)(кмену *, uint, bool);|
+|ON_WM_INPUT ()|afx_msg void [онравинпут](../../mfc/reference/cwnd-class.md#onrawinput)(uint, хравинпут);|
+|ON_WM_INPUT_DEVICE_CHANGE ()|afx_msg void [онинпутдевицечанже](../../mfc/reference/cwnd-class.md#oninputdevicechange)(неподписанный короткий);|
+|ON_WM_INPUTLANGCHANGE ()|afx_msg void [онинпутлангчанже](../../mfc/reference/cwnd-class.md#oninputlangchange)(Byte, uint);|
+|ON_WM_INPUTLANGCHANGEREQUEST ()|afx_msg void [онинпутлангчанжерекуест](../../mfc/reference/cwnd-class.md#oninputlangchangerequest)(uint, HKL);|
+|ON_WM_KEYDOWN ()|afx_msg void [OnKeyDown](../../mfc/reference/cwnd-class.md#onkeydown)(UINT, UINT, uint);|
+|ON_WM_KEYUP ()|afx_msg void [онкэйуп](../../mfc/reference/cwnd-class.md#onkeyup)(UINT, UINT, uint);|
+|ON_WM_KILLFOCUS ()|afx_msg void [онкиллфокус](../../mfc/reference/cwnd-class.md#onkillfocus)(CWnd *);|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Схемы сообщений](../../mfc/reference/message-maps-mfc.md)<br/>
 [Обработчики для сообщений WM_](../../mfc/reference/handlers-for-wm-messages.md)
