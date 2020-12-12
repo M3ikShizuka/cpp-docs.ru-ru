@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: потоковые операции в элементах управления Rich Edit'
 title: Потоковые операции с использованием элементов управления "Rich Edit"
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - stream operations in CRichEditCtrl
 - stream storage and CRichEditCtrl
 ms.assetid: 110b4684-1e76-4ca6-9ef0-5bc8b2d93c78
-ms.openlocfilehash: 73277f59dc0ad4dfe21d481d0b893903ed407ea9
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 3f9dcfb837d9a4f26454a597507712293d3d895c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69512950"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216487"
 ---
 # <a name="stream-operations-in-rich-edit-controls"></a>Потоковые операции с использованием элементов управления "Rich Edit"
 
@@ -22,9 +23,9 @@ ms.locfileid: "69512950"
 
 Для чтения данных в элементе управления Rich Edit (т. е. потоковая передача данных в) используется функция-член [Stream](../mfc/reference/cricheditctrl-class.md#streamin) . Элемент управления вызывает функцию обратного вызова, определяемую приложением, которая каждый раз передает часть данных в буфер.
 
-Чтобы сохранить содержимое элемента управления Rich Edit (то есть потоковая передача данных), можно использовать функцию-член [StreamOut](../mfc/reference/cricheditctrl-class.md#streamout). Элемент управления многократно записывает данные в буфер, а затем вызывает функцию обратного вызова, определенную приложением. Для каждого вызова функция обратного вызова сохраняет содержимое буфера.
+Чтобы сохранить содержимое элемента управления Rich Edit (то есть потоковая передача данных), можно использовать функцию-член [Streaming](../mfc/reference/cricheditctrl-class.md#streamout) . Элемент управления многократно записывает данные в буфер, а затем вызывает функцию обратного вызова, определенную приложением. Для каждого вызова функция обратного вызова сохраняет содержимое буфера.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Использование CRichEditCtrl](../mfc/using-cricheditctrl.md)<br/>
 [Элементы управления](../mfc/controls-mfc.md)

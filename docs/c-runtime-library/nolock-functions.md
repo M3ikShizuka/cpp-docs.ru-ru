@@ -1,18 +1,19 @@
 ---
+description: 'Дополнительные сведения: функции _nolock'
 title: Функции _nolock
 ms.date: 11/04/2016
 helpviewer_keywords:
 - _nolock functions
 - nolock functions
 ms.assetid: 7d651d87-38d2-4303-9897-fdb5f7a3e899
-ms.openlocfilehash: 7bd0592fb8dc43307a902714723d1b1e43207d1c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: f4326f873ab16a368624b28dd70a8d39cb9a9ac9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746413"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213654"
 ---
-# <a name="nolock-functions"></a>Функции _nolock
+# <a name="_nolock-functions"></a>Функции _nolock
 
 Эти функции не выполняют никаких блокировок. Они предназначены для пользователей, которым требуется максимальная производительность. Подробнее см. [Производительность многопоточных библиотек](../c-runtime-library/multithreaded-libraries-performance.md).
 
@@ -54,7 +55,7 @@ ms.locfileid: "57746413"
 
 [_ungetch_nolock, _ungetwch_nolock](../c-runtime-library/reference/ungetch-ungetwch-ungetch-nolock-ungetwch-nolock.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Ввод и вывод](../c-runtime-library/input-and-output.md)<br/>
-[Универсальные подпрограммы среды выполнения C по категориям](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Входные и выходные данные](../c-runtime-library/input-and-output.md)<br/>
+[Подпрограммы универсальной среды выполнения C по категориям](../c-runtime-library/run-time-routines-by-category.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/OD (Disable (Отладка))
 title: /Od (Выключение (отладчика))
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - -Od compiler option [C++]
 - disable (debug) compiler option [C++]
 ms.assetid: b1ac31b7-e086-4eeb-be5e-488f7513f5f5
-ms.openlocfilehash: 83ece0865eb74a4e9e292b78733df9d24602fe1d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9d425244a1790a9bb74e1c92db88f32bb0372ab2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320686"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214309"
 ---
 # <a name="od-disable-debug"></a>/Od (Выключение (отладчика))
 
@@ -29,27 +30,27 @@ ms.locfileid: "62320686"
 /Od
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Этот параметр используется по умолчанию. Так как **/Od** отключает перемещение кода, это упрощает процесс отладки. Дополнительные сведения о параметрах компилятора для отладки см. в разделе [/Z7, / Zi, /ZI (формат отладочной информации)](z7-zi-zi-debug-information-format.md).
+Это значение по умолчанию. Поскольку **/OD** подавляет перемещение кода, это упрощает процесс отладки. Дополнительные сведения о параметрах компилятора для отладки см. в разделе [/Z7,/Zi,/Zi (формат отладочной информации)](z7-zi-zi-debug-information-format.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Установка данного параметра компилятора в среде разработки Visual Studio
 
-1. Откройте диалоговое окно **Страницы свойств** проекта. Дополнительные сведения см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
 1. Откройте папку **C/C++** .
 
-1. Нажмите кнопку **оптимизации** страницу свойств.
+1. Перейдите на страницу свойств **Оптимизация** .
 
-1. Изменить **оптимизации** свойство.
+1. Измените свойство **Оптимизация** .
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Установка данного параметра компилятора программным способом
 
 - См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Optimization%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Параметры /O (оптимизация кода)](o-options-optimize-code.md)<br/>
+[Параметры/o (оптимизация кода)](o-options-optimize-code.md)<br/>
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора MSVC](compiler-command-line-syntax.md)<br/>
-[/Z7, /Zi, /ZI (формат отладочной информации)](z7-zi-zi-debug-information-format.md)
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)<br/>
+[/Z7,/Zi,/ZI (формат отладочной информации)](z7-zi-zi-debug-information-format.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __p__commode'
 title: __p__commode
 ms.date: 4/2/2020
 api_name:
@@ -23,12 +24,12 @@ f1_keywords:
 helpviewer_keywords:
 - __p__commode
 ms.assetid: 4380acb8-e3e4-409c-a60f-6205ac5189ce
-ms.openlocfilehash: 057a0146aed87a50fc2e8c444b97a8b7b51eada1
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: f3f779196b650d05bb16c0da652d47946fc2a10d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919504"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213628"
 ---
 # <a name="__p__commode"></a>__p__commode
 
@@ -45,7 +46,7 @@ int * __p__commode(
 
 Указатель на глобальную переменную `_commode`.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция `__p__commode` предназначена только для внутреннего пользования и не должна вызываться из кода пользователя.
 
