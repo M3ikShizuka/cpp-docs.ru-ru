@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кдбпропсет Class'
 title: Класс CDBPropSet
 ms.date: 11/04/2016
 f1_keywords:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - SetGUID method
 - AddProperty method
 ms.assetid: 54190149-c277-4679-b81a-ef484d4d1c00
-ms.openlocfilehash: 45772896cac520eba35ec475f8b6ae7bd2993045
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3c1695e16f050866c2df5725cec4a716c04b3093
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502466"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170819"
 ---
 # <a name="cdbpropset-class"></a>Класс CDBPropSet
 
@@ -65,11 +66,11 @@ class CDBPropSet : public tagDBPROPSET
 
 ### <a name="operators"></a>Операторы
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[Оператор =](#op_equal)|Присваивает содержимому одного свойства значение другого.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Поставщики OLE DB и потребители используют `DBPROPSET` структуры для передачи массивов `DBPROP` структур. Каждая `DBPROP` структура представляет одно свойство, которое можно задать.
 
@@ -161,7 +162,7 @@ void SetGUID(const GUID& guid) throw();
 *guid*<br/>
 окне Идентификатор GUID, используемый для задания `guidPropertySet` поля структуры [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это поле также может быть задано [конструктором](#cdbpropset) .
 

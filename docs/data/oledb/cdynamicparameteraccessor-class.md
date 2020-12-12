@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CDynamicParameterAccessor Class'
 title: Класс CDynamicParameterAccessor
 ms.date: 02/14/2018
 f1_keywords:
@@ -90,12 +91,12 @@ helpviewer_keywords:
 - SetParamStatus method
 - SetParamString method
 ms.assetid: 5f22626e-e80d-491f-8b3b-cedc50331960
-ms.openlocfilehash: 4596f5181dd197b16786ee4d4d16cf06721b13b6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5470ced8b4479124f0db3878fe2562a658547f9f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91498656"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170780"
 ---
 # <a name="cdynamicparameteraccessor-class"></a>Класс CDynamicParameterAccessor
 
@@ -131,7 +132,7 @@ class CDynamicParameterAccessor : public CDynamicAccessor
 |[SetParamStatus](#setparamstatus)|Задает состояние указанного параметра, сохраненного в буфере.|
 |[SetParamString](#setparamstring)|Задает строковые данные указанного параметра, сохраненного в буфере.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Для использования этого класса поставщик должен поддерживать интерфейс `ICommandWithParameters` для потребителя.
 
@@ -161,7 +162,7 @@ CDynamicParameterAccessor(
 *нблобсизе*<br/>
 Максимальный размер большого двоичного объекта в байтах; данные столбца по этому значению рассматриваются как большой двоичный объект. Значение по умолчанию — 8 000. Дополнительные сведения см. в разделе [CDynamicAccessor:: сетблобсизелимит](./cdynamicaccessor-class.md#setblobsizelimit) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об обработке больших двоичных объектов см. в описании конструктора [CDynamicAccessor:: CDynamicAccessor](./cdynamicaccessor-class.md#cdynamicaccessor) .
 
@@ -271,7 +272,7 @@ DBLENGTH* GetParamLength(DBORDINAL nParam) const throw();
 *пленгс*<br/>
 заполняет Указатель на переменную, содержащую длину указанного параметра в байтах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первое переопределение возвращает значение **`true`** On Success или **`false`** On failure. Второе переопределение указывает на память, содержащую длину параметра.
 
@@ -313,9 +314,9 @@ DBSTATUS* GetParamStatus(DBORDINAL nParam) const throw();
 окне Номер параметра (смещение от 1). Параметр 0 зарезервирован для возвращаемых значений. Номер параметра — это индекс параметра в зависимости от его порядка в SQL или вызове хранимой процедуры. Пример см. в разделе [сетпарам](#setparam) .
 
 *пстатус*<br/>
-заполняет Указатель на переменную, содержащую состояние ДБСТАТУС указанного параметра. Сведения о значениях ДБСТАТУС см. в разделе [состояние](/previous-versions/windows/desktop/ms722617(v=vs.85)) в *справочнике программиста OLE DB*или выполните поиск дбстатус в OLEDB. h.
+заполняет Указатель на переменную, содержащую состояние ДБСТАТУС указанного параметра. Сведения о значениях ДБСТАТУС см. в разделе [состояние](/previous-versions/windows/desktop/ms722617(v=vs.85)) в *справочнике программиста OLE DB* или выполните поиск дбстатус в OLEDB. h.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первое переопределение возвращает значение **`true`** On Success или **`false`** On failure. Второе переопределение указывает на память, содержащую состояние указанного параметра.
 
@@ -357,7 +358,7 @@ bool GetParamString(DBORDINAL nParam,
 *пмакслен*<br/>
 заполняет Указатель на размер буфера, на который указывает *pBuffer* (в символах, включая ЗАВЕРШАЮЩЕЕ значение null).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает значение **`true`** On Success или **`false`** On failure.
 
@@ -425,7 +426,7 @@ bool SetParam(TCHAR* pParamName,
 окне Указатель на память, содержащую данные, записываемые в буфер.
 
 *status*<br/>
-окне Состояние столбца ДБСТАТУС. Сведения о значениях ДБСТАТУС см. в разделе [состояние](/previous-versions/windows/desktop/ms722617(v=vs.85)) в *справочнике программиста OLE DB*или выполните поиск дбстатус в OLEDB. h.
+окне Состояние столбца ДБСТАТУС. Сведения о значениях ДБСТАТУС см. в разделе [состояние](/previous-versions/windows/desktop/ms722617(v=vs.85)) в *справочнике программиста OLE DB* или выполните поиск дбстатус в OLEDB. h.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -452,7 +453,7 @@ bool SetParamLength(DBORDINAL nParam,
 *length*<br/>
 окне Длина указанного параметра в байтах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает значение **`true`** On Success или **`false`** On failure.
 
@@ -473,9 +474,9 @@ bool SetParamStatus(DBORDINAL nParam,
 окне Номер параметра (смещение от 1). Параметр 0 зарезервирован для возвращаемых значений. Номер параметра — это индекс параметра в зависимости от его порядка в SQL или вызове хранимой процедуры. Пример см. в разделе [сетпарам](#setparam) .
 
 *status*<br/>
-окне Состояние ДБСТАТУС указанного параметра. Сведения о значениях ДБСТАТУС см. в разделе [состояние](/previous-versions/windows/desktop/ms722617(v=vs.85)) в *справочнике программиста OLE DB*или выполните поиск дбстатус в OLEDB. h.
+окне Состояние ДБСТАТУС указанного параметра. Сведения о значениях ДБСТАТУС см. в разделе [состояние](/previous-versions/windows/desktop/ms722617(v=vs.85)) в *справочнике программиста OLE DB* или выполните поиск дбстатус в OLEDB. h.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает значение **`true`** On Success или **`false`** On failure.
 
@@ -502,9 +503,9 @@ bool SetParamString(DBORDINAL nParam,
 окне Указатель на строковое значение ANSI (**char**) или Unicode (**WCHAR**) указанного параметра. См. раздел ДБСТАТУС в OLEDB. h.
 
 *status*<br/>
-окне Состояние ДБСТАТУС указанного параметра. Сведения о значениях ДБСТАТУС см. в разделе [состояние](/previous-versions/windows/desktop/ms722617(v=vs.85)) в *справочнике программиста OLE DB*или выполните поиск дбстатус в OLEDB. h.
+окне Состояние ДБСТАТУС указанного параметра. Сведения о значениях ДБСТАТУС см. в разделе [состояние](/previous-versions/windows/desktop/ms722617(v=vs.85)) в *справочнике программиста OLE DB* или выполните поиск дбстатус в OLEDB. h.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает значение **`true`** On Success или **`false`** On failure.
 

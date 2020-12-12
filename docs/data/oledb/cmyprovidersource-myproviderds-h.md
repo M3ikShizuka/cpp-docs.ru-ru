@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ккустомсаурце (Кустомдс. h)'
 title: CCustomSource (CustomDS.H)
 ms.date: 10/22/2018
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - CMyProviderSource class in MyProviderDS.H
 - CCustomSource class in CustomDS.H
 ms.assetid: c143d48e-59c8-4f67-9141-3aab51859b92
-ms.openlocfilehash: 8e92c30e8d62ade095167880917ad70da8e59b36
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 6fbb9fe0676521b01caa3bba5f5bb2be03d0fe6f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742922"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170442"
 ---
 # <a name="ccustomsource-customdsh"></a>Ккустомсаурце (Кустомдс. h)
 
@@ -153,7 +154,7 @@ struct UPROPINFO
 
 Если вы хотите определить собственный набор свойств, его можно добавить, выполнив дополнительную комбинацию BEGIN_PROPSET_MAP и END_PROPSET_MAP. Определите идентификатор GUID для набора свойств, а затем определите собственные свойства. Если у вас есть свойства, зависящие от поставщика, добавьте их в новый набор свойств вместо использования существующего. Это позволяет избежать проблем в более поздних версиях OLE DB.
 
-## <a name="user-defined-property-sets"></a>Определяемые пользователем наборы свойств
+## <a name="user-defined-property-sets"></a>Наборы свойств User-Defined
 
 Visual C++ поддерживает наборы определяемых пользователем свойств. Нет необходимости переопределять `GetProperties` или `GetPropertyInfo` . Вместо этого шаблоны обнаруживают набор определяемых пользователем свойств и добавляют его к соответствующему объекту.
 
@@ -165,6 +166,6 @@ BEGIN_PROPERTY_SET_EX(DBPROPSET_MYPROPSET, UPROPSET_USERINIT)
 END_PROPERTY_SET_EX(DBPROPSET_MYPROPSET)
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Файлы, созданные мастером поставщика](../../data/oledb/provider-wizard-generated-files.md)<br/>
+[Файлы Wizard-Generated поставщика](../../data/oledb/provider-wizard-generated-files.md)<br/>

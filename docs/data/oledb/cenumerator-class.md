@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CEnumerator Class'
 title: Класс CEnumerator
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - GetMoniker method
 - Open method
 ms.assetid: 25805f1b-26e3-402f-af83-1b5fe5ddebf7
-ms.openlocfilehash: dfc358c06179d50cbf6442863fd2ed2c533cd00a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 1d66afad29bd9fd785f5bc4e75a72605232af41c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91498533"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170650"
 ---
 # <a name="cenumerator-class"></a>Класс CEnumerator
 
@@ -54,7 +55,7 @@ class CEnumerator :
 |[Моникер](#getmoniker)|Извлекает `IMoniker` интерфейс для текущей записи.|
 |[Открыть](#open)|Открывает перечислитель.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Данные можно извлекать `ISourcesRowset` косвенно из этого класса.
 
@@ -77,7 +78,7 @@ bool Find(TCHAR* szSearchName) throw();
 
 **`true`** значение, если имя было найдено. В противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это имя сопоставляется с `SOURCES_NAME` членом интерфейса [ISourcesRowset](/previous-versions/windows/desktop/ms715969(v=vs.85)) .
 

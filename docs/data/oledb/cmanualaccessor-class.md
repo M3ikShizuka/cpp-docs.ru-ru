@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CManualAccessor Class'
 title: Класс CManualAccessor
 ms.date: 11/04/2016
 f1_keywords:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - CreateAccessor method
 - CreateParameterAccessor method
 ms.assetid: a0088074-7135-465c-b228-69097a50b8cc
-ms.openlocfilehash: 24938812ea254fe0150cbabf58dd72bf45ebd0a1
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3d625a9a02431445cc1505c6a3f7e9673a04201d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504103"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170559"
 ---
 # <a name="cmanualaccessor-class"></a>Класс CManualAccessor
 
@@ -62,7 +63,7 @@ class CManualAccessor : public CAccessorBase
 |[CreateAccessor](#createaccessor)|Выделяет память для структур привязки столбца и инициализирует элементы данных столбца.|
 |[креатепараметеракцессор](#createparameteraccessor)|Выделяет память для параметров структуры привязки и инициализирует элементы данных параметров.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 С помощью `CManualAccessor` можно указать параметры и привязку выходного столбца с помощью вызовов функций времени выполнения.
 
@@ -102,7 +103,7 @@ void AddBindEntry(DBORDINAL nOrdinal,
 *пстатус*<br/>
 окне Указатель на переменную, которая должна быть привязана к состоянию столбца, если это необходимо.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Чтобы использовать эту функцию, необходимо сначала вызвать [CreateAccessor](#createaccessor). Нельзя добавить больше записей, чем количество столбцов, указанное в `CreateAccessor` .
 
@@ -146,7 +147,7 @@ void AddParameterEntry(DBORDINAL nOrdinal,
 *епарамио*<br/>
 окне Указывает, является ли параметр, с которым связана привязка, входным, входным или выходным параметром.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Чтобы использовать эту функцию, необходимо сначала вызвать [креатепараметеракцессор](#createparameteraccessor).
 
@@ -177,7 +178,7 @@ HRESULT CreateAccessor(int nBindEntries,
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите эту функцию перед вызовом `CManualAccessor::AddBindEntry` функции.
 
@@ -208,7 +209,7 @@ HRESULT CreateParameterAccessor(int nBindEntries,
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эту функцию необходимо вызвать перед вызовом [аддпараметерентри](#addparameterentry).
 

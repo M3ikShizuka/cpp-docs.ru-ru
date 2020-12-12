@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: заполнение списка из второго набора записей (доступ к данным MFC)'
 title: Заполнение списка из второго набора записей (доступ к данным MFC)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - combo boxes [C++], filling from second recordset
 - CListCtrl class, filling from second recordset
 ms.assetid: 360c0834-da6b-4dc0-bcea-80e9acd611f0
-ms.openlocfilehash: 8664e98c6668568918cc0e6504a38119d2e71428
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b912511512b42e15e98a35836758ba37bf4cb989
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81336924"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170910"
 ---
 # <a name="filling-a-list-box-from-a-second-recordset--mfc-data-access"></a>Заполнение списка из второго набора записей (доступ к данным MFC)
 
@@ -28,13 +29,13 @@ ms.locfileid: "81336924"
 
 #### <a name="to-fill-a-combo-box-or-list-box-from-a-second-recordset"></a>Чтобы заполнить поле со списком или список из второго набора записей
 
-1. Создайте объект рекорда[(CRecordset](../mfc/reference/crecordset-class.md).
+1. Создайте объект Recordset ([CRecordset](../mfc/reference/crecordset-class.md).
 
-1. Получите указатель на объект [CComboBox](../mfc/reference/ccombobox-class.md) для управления комбо-коробкой.
+1. Получите указатель на объект [CComboBox](../mfc/reference/ccombobox-class.md) для элемента управления "поле со списком".
 
 1. Очистите поле со списком от любого предыдущего содержимого.
 
-1. Перемещение через все записи в наборе рекордов, вызывая [CComboBox::AddString](../mfc/reference/ccombobox-class.md#addstring) для каждой строки из текущей записи, которые вы хотите добавить в комбо-бокс.
+1. Переместите все записи из набора записей, вызвав [CComboBox:: AddString](../mfc/reference/ccombobox-class.md#addstring) для каждой строки из текущей записи, которую необходимо добавить в поле со списком.
 
 1. Инициализируйте выбор элементов в поле со списком.
 
@@ -71,4 +72,4 @@ void CSectionForm::OnInitialUpdate()
 ## <a name="see-also"></a>См. также раздел
 
 [Представления записей (доступ к данным MFC)](../data/record-views-mfc-data-access.md)<br/>
-[Список водителей ODBC](../data/odbc/odbc-driver-list.md)
+[Список драйверов ODBC](../data/odbc/odbc-driver-list.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CRestrictions Class'
 title: Класс CRestrictions
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - CRestrictions class
 - Open method
 ms.assetid: 0aaa2364-641c-4318-b110-7446aada4b4f
-ms.openlocfilehash: a380f1ba00dcc444099f186071b7d55c9db71291
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 28eee2ea8d7e3b28edaab745c48426c878cc2f2d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844968"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170286"
 ---
 # <a name="crestrictions-class"></a>Класс CRestrictions
 
@@ -88,7 +89,7 @@ HRESULT Open(const CSession& session,
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В наборе строк схемы можно указать не более семи ограничений.
 

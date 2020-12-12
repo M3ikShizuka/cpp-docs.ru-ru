@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CDBErrorInfo Class'
 title: Класс CDBErrorInfo
 ms.date: 11/04/2016
 f1_keywords:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - GetErrorParameters method
 - GetErrorRecords method
 ms.assetid: 9a5c18a2-ee3e-40f5-ab4c-581288d7f737
-ms.openlocfilehash: d8fa41b3a06acb8f28334658f2494295593b99be
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: fe57963e5964403c6b17b6b41dc7ae5f77063f50
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502516"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170858"
 ---
 # <a name="cdberrorinfo-class"></a>Класс CDBErrorInfo
 
@@ -72,7 +73,7 @@ class CDBErrorInfo
 |[GetErrorParameters](#geterrorparameters)|Вызывает [IErrorRecords:: жетеррорпараметерс](/previous-versions/windows/desktop/ms715793(v=vs.85)) для возврата параметров ошибки.|
 |[жетерроррекордс](#geterrorrecords)|Возвращает записи об ошибках для указанного объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Этот интерфейс возвращает пользователю одну или несколько записей об ошибках. Сначала вызовите метод [CDBErrorInfo:: жетерроррекордс](#geterrorrecords) , чтобы получить количество записей об ошибках. Затем вызовите одну из функций доступа, например [CDBErrorInfo:: жеталлерроринфо](#getallerrorinfo), чтобы получить сведения об ошибке для каждой записи.
 
@@ -118,7 +119,7 @@ HRESULT GetAllErrorInfo(ULONG ulRecordNum,
 
 Значение S_OK, если операция завершилась успешно. Другие возвращаемые значения см. в разделе [IErrorRecords:: жетерроринфо](/previous-versions/windows/desktop/ms711230(v=vs.85)) в *справочнике программиста OLE DB* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Выходное значение *пбстрдескриптион* получается внутренне путем вызова метода `IErrorInfo::GetDescription` , который задает значение null, если языковой стандарт не поддерживается, или если выполняются оба следующих условия.
 
@@ -231,7 +232,7 @@ HRESULT GetErrorRecords(ULONG* pcRecords) throw();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если необходимо проверить интерфейс, из которого нужно получить сведения об ошибке, используйте первую форму функции. В противном случае используйте вторую форму.
 

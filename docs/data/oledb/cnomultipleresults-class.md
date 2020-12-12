@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CNoMultipleResults Class'
 title: Класс CNoMultipleResults
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CNoMultipleResults class
 ms.assetid: 343e77c4-b319-476e-b592-901ab9b2f34e
-ms.openlocfilehash: 793b820264d001fbfbf7920fd322a55b98e90f0d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1fd2ddfb19ed8fb4ba4fa3f957a77a2cc8312e1d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80211722"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170351"
 ---
 # <a name="cnomultipleresults-class"></a>Класс CNoMultipleResults
 
@@ -36,4 +37,4 @@ class CNoMultipleResults
 ## <a name="see-also"></a>См. также раздел
 
 [Шаблоны объекта-получателя OLE DB](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[Ссылка на шаблоны объекта-получателя OLE DB](../../data/oledb/ole-db-consumer-templates-reference.md)
+[Справочник по шаблонам потребителей OLE DB](../../data/oledb/ole-db-consumer-templates-reference.md)

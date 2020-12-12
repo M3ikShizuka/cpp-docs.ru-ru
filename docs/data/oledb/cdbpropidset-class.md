@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кдбпропидсет Class'
 title: Класс CDBPropIDSet
 ms.date: 11/04/2016
 f1_keywords:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - operator=, property sets
 - SetGUID method
 ms.assetid: 52bb806c-9581-494d-9af7-50d8a4834805
-ms.openlocfilehash: 4de218188326dad434c5b0d355a3a15d39bb576c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 6f0c3ea19daeef2b262f6ac1ad76599160baf266
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502499"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170832"
 ---
 # <a name="cdbpropidset-class"></a>Класс CDBPropIDSet
 
@@ -64,11 +65,11 @@ class CDBPropIDSet : public tagDBPROPIDSET
 
 ### <a name="operators"></a>Операторы
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[Оператор =](#op_equal)|Присваивает содержимому одного идентификатора свойства другое значение.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 OLE DB потребители используют `DBPROPIDSET` структуры для передачи массива идентификаторов свойств, для которых потребитель хочет получить сведения о свойстве. Свойства, определенные в одной структуре [дбпропидсет](/previous-versions/windows/desktop/ms717981(v=vs.85)) , принадлежат одному набору свойств.
 
@@ -124,7 +125,7 @@ void SetGUID(const GUID& guid) throw();
 *guid*<br/>
 окне Идентификатор GUID, используемый для задания `guidPropertySet` поля структуры [дбпропидсет](/previous-versions/windows/desktop/ms717981(v=vs.85)) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это поле также может быть задано [конструктором](#cdbpropidset) . Вызывайте эту функцию, если для этого класса используется конструктор по умолчанию.
 

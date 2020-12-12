@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CDynamicStringAccessor Class'
 title: Класс CDynamicStringAccessor
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - GetString method
 - SetString method
 ms.assetid: 138dc4de-c7c3-478c-863e-431e48249027
-ms.openlocfilehash: 891c80a7c21fd046fba393b494ed6d84f731db6f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 89ad306242c5fa0a01b0f14673382fade8df128c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91498663"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97170715"
 ---
 # <a name="cdynamicstringaccessor-class"></a>Класс CDynamicStringAccessor
 
@@ -43,7 +44,7 @@ class CDynamicStringAccessorT : public CDynamicAccessor
 |[GetString](#getstring)|Извлекает указанные данные столбца в виде строки.|
 |[SetString](#setstring)|Задает указанные данные столбца в виде строки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Хотя [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) запрашивает данные в собственном формате, сообщаемом поставщиком, `CDynamicStringAccessor` запрашивает получение поставщиком всех данных, доступ к которым осуществляется из хранилища данных, в виде строковых данных. Это особенно полезно для простых задач, которые не нуждаются в вычислении значений в хранилище данных, например при отображении или печати содержимого хранилища данных.
 
@@ -81,7 +82,7 @@ BaseType* GetString(const WCHAR* pColumnName) const throw();
 
 Указатель на строковое значение, полученное из указанного столбца. Значение имеет тип `BaseType` , который будет **char** или **WCHAR** в зависимости от того, определено _UNICODE или нет. Возвращает значение NULL, если указанный столбец не найден.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вторая форма переопределения принимает имя столбца в виде строки ANSI. Третья форма переопределения принимает имя столбца в виде строки в Юникоде.
 
@@ -117,7 +118,7 @@ HRESULT SetString(const WCHAR* pColumnName,
 
 Указатель на строковое значение, в которое задается указанный столбец. Значение имеет тип `BaseType` , который будет **char** или **WCHAR** в зависимости от того, определено _UNICODE или нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вторая форма переопределения принимает имя столбца в виде строки ANSI, а третья форма переопределения принимает имя столбца в виде строки в Юникоде.
 
