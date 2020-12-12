@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: operator-'
 title: Оператор -
 ms.date: 12/17/2019
 f1_keywords:
@@ -9,24 +10,24 @@ helpviewer_keywords:
 - operators [MASM], subtraction
 - arithmetic operators [C++], subtraction
 ms.assetid: 474607cb-e48d-4c91-bef6-91ff0971d5cf
-ms.openlocfilehash: 7d8556e0f95be1988dac4dc011259ed5b81876ba
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 1c8be02183edf668e7d8346c3da4b498adbe65be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75318843"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97126403"
 ---
 # <a name="operator--"></a>Оператор -
 
-Возвращает значение *expression1* минус *выражение2*. Второй оператор меняет знак *выражения*на противоположный.
+Возвращает значение *expression1* минус *выражение2*. Второй оператор меняет знак *выражения* на противоположный.
 
 ## <a name="syntax"></a>Синтаксис
 
-> *expression1* **-** *выражение2*
+> *expression1* **-** *expression2*
 >
-> *выражение*-
+> __-__*выражение*
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по операторам](operators-reference.md)\
 [Грамматика MASM BNF](masm-bnf-grammar.md)

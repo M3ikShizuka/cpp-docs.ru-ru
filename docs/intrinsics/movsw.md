@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __movsw'
 title: __movsw
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - rep movsw instruction
 - __movsw intrinsic
 ms.assetid: db402ad5-7f0e-449a-b0b0-eea9928d6435
-ms.openlocfilehash: 67eef7fe0a5b9803650f345740a8c40262cd2014
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 500a2bc3af83887cdd5d65501695c9db60ef60f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221720"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119034"
 ---
 # <a name="__movsw"></a>__movsw
 
 **Блок, относящийся только к системам Microsoft**
 
-Создает инструкцию перемещения строки`rep movsw`().
+Создает инструкцию перемещения строки ( `rep movsw` ).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,7 +37,7 @@ void __movsw(
 *Местоназначение*\
 заполняет Назначение операции.
 
-*Source*\
+*Источника*\
 окне Источник операции.
 
 *Расчета*\
@@ -44,15 +45,15 @@ void __movsw(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__movsw`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-В результате первые слова *Count* , на которые указывает *источник* , копируются в целевую строку.
+В результате первые слова *Count* , на которые указывает *источник* , копируются в *целевую* строку.
 
 Эта процедура доступна только как встроенная функция.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: operator/'
 title: Оператор /
 ms.date: 12/17/2019
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - division operator, syntax
 - / operator, syntax
 ms.assetid: 76db4c26-59c0-495f-8e3b-66c644da02a3
-ms.openlocfilehash: fa326850f57c435c46ef049af1558bb947ae2e13
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 95a92aa560f37052a87edc1c61055117b4aba147
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75318856"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97126416"
 ---
 # <a name="operator-"></a>Оператор /
 
@@ -24,9 +25,9 @@ ms.locfileid: "75318856"
 
 ## <a name="syntax"></a>Синтаксис
 
-> *expression1* __/__ *выражение2*
+> *expression1* __/__ *expression2*
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по операторам](operators-reference.md)\
 [Грамматика MASM BNF](masm-bnf-grammar.md)

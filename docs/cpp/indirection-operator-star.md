@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: оператор косвенного обращения: *'
 title: 'Оператор косвенного обращения: *'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - operators [C++], indirection
 - indirection operator [C++], syntax
 ms.assetid: c50309e1-6c02-4184-9fcb-2e13c1f4ac03
-ms.openlocfilehash: 8f27cfd943455d52b04c41ef2d2d83e6e03a84c0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d82e65676178fcfc9a62b10a780360c0c69d0d2b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80178286"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97113913"
 ---
 # <a name="indirection-operator-"></a>Оператор косвенного обращения: *
 
@@ -24,7 +25,7 @@ ms.locfileid: "80178286"
 
 ## <a name="remarks"></a>Remarks
 
-Унарный оператор косвенного обращения (<strong>\*</strong>) отменяет ссылку на указатель; то есть преобразует значение указателя в l-значение. Операнд косвенного оператора должен быть указателем на тип. Результат косвенного выражения — тип, производным которого является тип указателя. Использование оператора <strong>\*</strong> в этом контексте отличается от его значения бинарным оператором, что является умножением.
+Унарный оператор косвенного обращения ( <strong>\*</strong> ) отменяет ссылку на указатель, то есть преобразует значение указателя в l-значение. Операнд косвенного оператора должен быть указателем на тип. Результат косвенного выражения — тип, производным которого является тип указателя. Использование <strong>\*</strong> оператора в этом контексте отличается от его значения бинарным оператором, который является умножением.
 
 Если операнд указывает на функцию, результатом является указатель функции. Если он указывает на место хранения, результатом является l-значение, указывающее на место хранения.
 
@@ -60,9 +61,9 @@ int main() {
 
 - Указатель определяет адрес, который не используется выполняемой программой.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Выражения с унарными операторами](../cpp/expressions-with-unary-operators.md)<br/>
-[Встроенные операторы C++, приоритет и ассоциативность](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[Операторы C++, приоритет и ассоциативность](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
 [Оператор address-of: &](../cpp/address-of-operator-amp.md)<br/>
-[Операторы косвенного обращения и адреса операнда](../c-language/indirection-and-address-of-operators.md)
+[Операторы косвенного обращения и адреса](../c-language/indirection-and-address-of-operators.md)

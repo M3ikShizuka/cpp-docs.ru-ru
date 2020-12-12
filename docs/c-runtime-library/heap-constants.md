@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: константы кучи'
 title: Константы кучи
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - _HEAPBADPTR constants
 - heap constants
 ms.assetid: 3f751bb9-2dc4-486f-b5f5-9061c96d3754
-ms.openlocfilehash: 44c7a280ebffd0073f1dfb3a0a3cbdbd2efee0fb
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: da90be1855f9a4714bc2d441651ac721ede84c1f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57745363"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97120699"
 ---
 # <a name="heap-constants"></a>Константы кучи
 
@@ -38,7 +39,7 @@ ms.locfileid: "57745363"
 #include <malloc.h>
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Эти константы предоставляют возвращаемое значение, отображающее состояние кучи.
 
@@ -51,7 +52,7 @@ ms.locfileid: "57745363"
 |`_HEAPEND`|Конец кучи успешно достигнут (только для подпрограммы `_heapwalk`).|
 |`_HEAPOK`|Куча согласована (только для подпрограмм `_heapset` и `_heapchk`). Пока без ошибок: структура **_HEAPINFO** содержит сведения о следующей записи (только для подпрограммы `_heapwalk`).|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [_heapchk](../c-runtime-library/reference/heapchk.md)<br/>
 [_heapset](../c-runtime-library/heapset.md)<br/>

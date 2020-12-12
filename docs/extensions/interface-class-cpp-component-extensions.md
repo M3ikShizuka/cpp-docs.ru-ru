@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье класс интерфейса (C++/CLI и C++/CX).
 title: interface class (C++/CLI и C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - interface class keyword
 - interface struct keyword
 ms.assetid: 3ccea701-f50b-4da7-ad6b-f0ee1203e2b9
-ms.openlocfilehash: 8a637332110fa18a7a5803d7512c643e29d66eab
-ms.sourcegitcommit: 68ae6f9ea17f32734b32bb06ffeec12d8d33f0fe
+ms.openlocfilehash: 8d6fd1eda0ddaaf6ab995e09ad1d84f78fcc91be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87807749"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119028"
 ---
 # <a name="interface-class--ccli-and-ccx"></a>interface class (C++/CLI и C++/CX)
 
@@ -42,7 +43,7 @@ interface_access interface struct name : inherit_access base_interface {};
 *base_interface*<br/>
 (Необязательно) Базовый интерфейс для *имени* интерфейса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **interface struct** — это эквивалент **interface class**.
 
@@ -52,7 +53,7 @@ interface_access interface struct name : inherit_access base_interface {};
 
 Класс или структура, которые является производными от интерфейса, должны реализовывать все элементы интерфейса. При реализации *имени* интерфейса необходимо также реализовать интерфейсы из списка `base_interface`.
 
-Дополнительные сведения можно найти в разделе
+Дополнительные сведения см. в разделе:
 
 - [Практическое руководство. Определение статического конструктора интерфейса (C++выполняет)](../dotnet/how-to-define-an-interface-static-constructor-cpp-cli.md)
 
@@ -66,7 +67,7 @@ interface_access interface struct name : inherit_access base_interface {};
 
 ## <a name="windows-runtime"></a>Среда выполнения Windows
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 (Отсутствуют комментарии для этой возможности языка, которая применяется только в среде выполнения Windows).
 
@@ -76,7 +77,7 @@ interface_access interface struct name : inherit_access base_interface {};
 
 ## <a name="common-language-runtime"></a>Среда CLR
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 (Отсутствуют комментарии для этой возможности языка, которая применяется только в среде CLR).
 
@@ -217,6 +218,6 @@ ref struct R : I, J {
 };
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Расширения компонентов для .NET и UWP](component-extensions-for-runtime-platforms.md)

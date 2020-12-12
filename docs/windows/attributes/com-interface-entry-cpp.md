@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: com_interface_entry (C++)'
 title: com_interface_entry (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - com_interface_entry attribute
 ms.assetid: 10368f81-b99b-4a0f-ba4f-a142e6911a5c
-ms.openlocfilehash: 8339afb97df57f5080629dfed08823c5c091c5a3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2f182149eeac887292391cbb06f625aff261e91f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844123"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114889"
 ---
 # <a name="com_interface_entry-c"></a>com_interface_entry (C++)
 
@@ -29,7 +30,7 @@ ms.locfileid: "88844123"
 *com_interface_entry*<br/>
 Строка, содержащая фактический текст записи. Список возможных значений см. в разделе [COM_INTERFACE_ENTRY Macros](../../atl/reference/com-interface-entry-macros.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Атрибут **COM_INTERFACE_ENTRY** C++ вставляет содержимое унабриджед строки символов в карту COM-интерфейса целевого объекта. Если атрибут применяется к целевому объекту один раз, запись вставляется в начало существующей карты интерфейса. Если атрибут применяется к тому же целевому объекту многократно, записи вставляются в начало карты интерфейса в том порядке, в котором они были получены.
 

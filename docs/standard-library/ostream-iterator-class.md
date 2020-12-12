@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: ostream_iterator классе'
 title: Класс ostream_iterator
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - std::ostream_iterator [C++], ostream_type
 - std::ostream_iterator [C++], traits_type
 ms.assetid: 24d842d3-9f45-4bf6-a697-62f5968f5a03
-ms.openlocfilehash: 97367c19d0b1bdb4b9c16d5d12621210c8562485
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2123c2a9addb5024877364a1906800b244b91edb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224673"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97118372"
 ---
 # <a name="ostream_iterator-class"></a>Класс ostream_iterator
 
@@ -45,7 +46,7 @@ class ostream_iterator
 
 ### <a name="constructors"></a>Конструкторы
 
-|Конструктор|Описание:|
+|Конструктор|Описание|
 |-|-|
 |[ostream_iterator](#ostream_iterator)|Создает `ostream_iterator`, инициализированный и разделенный для записи в поток вывода.|
 
@@ -59,7 +60,7 @@ class ostream_iterator
 
 ### <a name="operators"></a>Операторы
 
-|Оператор|Описание:|
+|Оператор|Описание|
 |-|-|
 |[станции](#op_star)|Оператор разыменования, используемый для реализации выражения итератора вывода \* `i`  =  `x` .|
 |[operator + +](#op_add_add)|Нефункциональный оператор инкремента, возвращающий `ostream_iterator`, обращающийся к тому же объекту, к которому он обращался до вызова операции.|
@@ -71,7 +72,7 @@ class ostream_iterator
 
 **Пространство имен:** std
 
-## <a name="ostream_iteratorchar_type"></a><a name="char_type"></a>ostream_iterator:: char_type
+## <a name="ostream_iteratorchar_type"></a><a name="char_type"></a> ostream_iterator:: char_type
 
 Тип, обеспечивающий тип символа для итератора.
 
@@ -79,7 +80,7 @@ class ostream_iterator
 typedef CharType char_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом для параметра шаблона `CharType`.
 
@@ -120,7 +121,7 @@ by intOut are:
 */
 ```
 
-## <a name="ostream_iteratoroperator"></a><a name="op_star"></a>ostream_iterator:: operator *
+## <a name="ostream_iteratoroperator"></a><a name="op_star"></a> ostream_iterator:: operator *
 
 Оператор разыменования, используемый для реализации выражения итератора вывода \* *II*  =  *x*.
 
@@ -132,9 +133,9 @@ ostream_iterator<Type, CharType, Traits>& operator*();
 
 Ссылка на `ostream_iterator`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Требования к выходному итератору, который `ostream_iterator` должен удовлетворять, должны быть допустимыми только для выражения \* *II*  =  *t* и ничего не говорит о **`operator`** `operator=` себе или. Оператор Member в этой реализации возвращает ** \* this**.
+Требования к выходному итератору, который `ostream_iterator` должен удовлетворять, должны быть допустимыми только для выражения \* *II*  =  *t* и ничего не говорит о **`operator`** `operator=` себе или. Оператор Member в этой реализации возвращает **\* this**.
 
 ### <a name="example"></a>Пример
 
@@ -169,7 +170,7 @@ Elements written to output stream:
 */
 ```
 
-## <a name="ostream_iteratoroperator"></a><a name="op_add_add"></a>ostream_iterator:: operator + +
+## <a name="ostream_iteratoroperator"></a><a name="op_add_add"></a> ostream_iterator:: operator + +
 
 Нефункциональный оператор инкремента, возвращающий `ostream_iterator`, обращающийся к тому же объекту, к которому он обращался до вызова операции.
 
@@ -182,9 +183,9 @@ ostream_iterator<Type, CharType, Traits> operator++(int);
 
 Ссылка на `ostream_iterator`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Эти операторы членов возвращают ** \* this**.
+Эти операторы членов возвращают **\* this**.
 
 ### <a name="example"></a>Пример
 
@@ -219,7 +220,7 @@ Elements written to output stream:
 */
 ```
 
-## <a name="ostream_iteratoroperator"></a><a name="op_eq"></a>ostream_iterator:: operator =
+## <a name="ostream_iteratoroperator"></a><a name="op_eq"></a> ostream_iterator:: operator =
 
 Оператор присваивания, используемый для реализации output_iterator выражения \* `i`  =  `x` для записи в выходной поток.
 
@@ -236,7 +237,7 @@ ostream_iterator<Type, CharType, Traits>& operator=(const Type& val);
 
 Оператор вставляет значение *Val* в поток вывода, связанный с объектом, за которым следует разделитель, указанный в [конструкторе ostream_iterator](#ostream_iterator) (если он есть), а затем возвращается ссылка на `ostream_iterator` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Требования для итератора вывода, который `ostream_iterator` должен удовлетворять, должны \* `ii`  =  `t` быть допустимыми только для выражения и не указывает оператору или оператору значение по своему усмотрению. Этот оператор члена возвращает **`*this`** .
 
@@ -273,7 +274,7 @@ Elements written to output stream:
 */
 ```
 
-## <a name="ostream_iteratorostream_iterator"></a><a name="ostream_iterator"></a>ostream_iterator:: ostream_iterator
+## <a name="ostream_iteratorostream_iterator"></a><a name="ostream_iterator"></a> ostream_iterator:: ostream_iterator
 
 Создает `ostream_iterator`, инициализированный и разделенный для записи в поток вывода.
 
@@ -294,7 +295,7 @@ ostream_iterator(
 *_Delimiter*\
 Разделитель, который вставляется в поток вывода между значениями.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый конструктор инициализирует указатель потока вывода значением `&_Ostr`. Указатель на строку разделителя обозначает пустую строку.
 
@@ -347,7 +348,7 @@ Elements output with delimiter: 1 : 2 : 3 : 4 : 5 : 6 :
 */
 ```
 
-## <a name="ostream_iteratorostream_type"></a><a name="ostream_type"></a>ostream_iterator:: ostream_type
+## <a name="ostream_iteratorostream_type"></a><a name="ostream_type"></a> ostream_iterator:: ostream_type
 
 Тип, обеспечивающий тип потока для итератора.
 
@@ -355,7 +356,7 @@ Elements output with delimiter: 1 : 2 : 3 : 4 : 5 : 6 :
 typedef basic_ostream<CharType, Traits> ostream_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом для [basic_ostream](../standard-library/basic-ostream-class.md) <  `CharType` , `Traits`>, класса потока в иерархии iostream, определяющего объекты, которые можно использовать для записи.
 
@@ -363,7 +364,7 @@ typedef basic_ostream<CharType, Traits> ostream_type;
 
 См. раздел [ostream_iterator](#ostream_iterator) с примером объявления и использования `ostream_type`.
 
-## <a name="ostream_iteratortraits_type"></a><a name="traits_type"></a>ostream_iterator:: traits_type
+## <a name="ostream_iteratortraits_type"></a><a name="traits_type"></a> ostream_iterator:: traits_type
 
 Тип, обеспечивающий тип признаков символа итератора.
 
@@ -371,7 +372,7 @@ typedef basic_ostream<CharType, Traits> ostream_type;
 typedef Traits traits_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом для параметра шаблона `Traits`.
 

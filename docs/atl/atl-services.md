@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: службы ATL'
 title: Службы ATL
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,43 +8,43 @@ helpviewer_keywords:
 - services, ATL
 - ATL services
 ms.assetid: 8c09d1a8-7548-4d2c-947c-9d795a81659b
-ms.openlocfilehash: 052169154a62cbd07a82f08087fc2c2db8ae46c5
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 1cb1f526434cefe57dc4675d592f836e04a6cdb6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62251919"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148607"
 ---
 # <a name="atl-services"></a>Службы ATL
 
-Для создания объекта ATL COM, таким образом, чтобы он работает в службе, просто выберите из списка параметров для сервера в мастере проектов ATL службы (EXE). Мастер создаст класс, производный от `CAtlServiceModuleT` для реализации службы.
+Чтобы создать COM-объект ATL, чтобы он выполнялся в службе, просто выберите Служба (EXE) в списке параметров сервера в мастере проектов ATL. Затем мастер создаст класс, производный от `CAtlServiceModuleT` , для реализации службы.
 
-При построении объекта ATL COM как услуга, оно будет зарегистрировано только как локальный сервер и она не будет отображаться в списке служб на панели управления. Это, так как это упрощает отладку службы, как локальный сервер чем как услуга. Чтобы установить его в качестве службы, выполните следующее в командной строке:
+Если COM-объект ATL создан как служба, он будет зарегистрирован только как локальный сервер и не будет отображаться в списке служб на панели управления. Это объясняется тем, что проще отлаживать службу как локальный сервер, чем служба. Чтобы установить его как службу, выполните в командной строке следующую команду:
 
 `YourEXE` `.exe /Service`
 
-Чтобы удалить его, используйте следующую команду:
+Чтобы удалить его, выполните следующую команду:
 
 `YourEXE` `.exe /UnregServer`
 
-Первые четыре в этом разделе рассматриваются действия, которые происходят при выполнении `CAtlServiceModuleT` функций-членов. Эти разделы отображаются в той же последовательности, как функции обычно вызываются. Чтобы лучше понять эти разделы, рекомендуется использовать исходный код, созданный мастером проектов ATL как ссылка. Эти первые четыре относятся следующие.
+В первых четырех подразделах этого раздела обсуждаются действия, происходящие во время выполнения `CAtlServiceModuleT` функций элементов. Эти разделы отображаются в той же последовательности, что и функции, которые обычно называются. Чтобы улучшить понимание этих разделов, рекомендуется использовать исходный код, созданный мастером проектов ATL, в качестве ссылки. Вот эти первые четыре раздела:
 
-- [Функция CAtlServiceModuleT::Start](../atl/reference/catlservicemodulet-class.md#start)
+- [Функция функция CAtlServiceModuleT:: Start](../atl/reference/catlservicemodulet-class.md#start)
 
-- [Функция CAtlServiceModuleT::ServiceMain](../atl/reference/catlservicemodulet-class.md#servicemain)
+- [Функция функция CAtlServiceModuleT:: ServiceMain](../atl/reference/catlservicemodulet-class.md#servicemain)
 
-- [Функция CAtlServiceModuleT::Run](../atl/reference/catlservicemodulet-class.md#run)
+- [Функция функция CAtlServiceModuleT:: Run](../atl/reference/catlservicemodulet-class.md#run)
 
-- [Функция CAtlServiceModuleT::Handler](../atl/reference/catlservicemodulet-class.md#handler)
+- [Функция функция CAtlServiceModuleT:: Handler](../atl/reference/catlservicemodulet-class.md#handler)
 
-Последние три рассматриваются основные понятия, связанные с разработкой службы:
+В последних трех разделах обсуждаются основные понятия, связанные с разработкой службы.
 
-- [Записи реестра](../atl/registry-entries.md) для службы ATL
+- [Записи реестра](../atl/registry-entries.md) для служб ATL
 
 - [DCOMCNFG](../atl/dcomcnfg.md)
 
-- [Советы по отладке](../atl/debugging-tips.md) для службы ATL
+- [Советы по отладке](../atl/debugging-tips.md) для служб ATL
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Основные понятия](../atl/active-template-library-atl-concepts.md)

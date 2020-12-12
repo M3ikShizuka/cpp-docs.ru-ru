@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кбитмапбуттон Class'
 title: Класс Кбитмапбуттон
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CBitmapButton [MFC], LoadBitmaps
 - CBitmapButton [MFC], SizeToContent
 ms.assetid: 9ad6cb45-c3c4-4fb1-96d3-1fe3df7bbcfc
-ms.openlocfilehash: 0cf4554f86f4a9275e4d96b3db519fde7fb05b22
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 93d114dce87aba4643af427f3726a5ffab004b77
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231875"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122711"
 ---
 # <a name="cbitmapbutton-class"></a>Класс Кбитмапбуттон
 
@@ -31,11 +32,11 @@ ms.locfileid: "87231875"
 class CBitmapButton : public CButton
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Кбитмапбуттон:: Кбитмапбуттон](#cbitmapbutton)|Формирует объект `CBitmapButton`.|
 
@@ -47,9 +48,9 @@ class CBitmapButton : public CButton
 |[Кбитмапбуттон:: Лоадбитмапс](#loadbitmaps)|Инициализирует объект, загружая один или несколько именованных ресурсов точечного рисунка из файла ресурсов приложения и присоединяя растровые изображения к объекту.|
 |[Кбитмапбуттон:: SizeToContent](#sizetocontent)|Изменяет размер кнопки для размещения точечного рисунка.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CBitmapButton`объекты содержат до четырех точечных рисунков, которые содержат изображения для различных состояний. кнопка может принимать следующие предположения: Up (или обычная), Down (или Selected), Focused и Disabled. Требуется только первое растровое изображение; другие являются необязательными.
+`CBitmapButton` объекты содержат до четырех точечных рисунков, которые содержат изображения для различных состояний. кнопка может принимать следующие предположения: Up (или обычная), Down (или Selected), Focused и Disabled. Требуется только первое растровое изображение; другие являются необязательными.
 
 Изображения растровой кнопки включают границы вокруг изображения, а также само изображение. Эта граница обычно играет ту же часть, отображая состояние кнопки. Например, точечный рисунок для состояния «с упором» обычно имеет состояние «вверх», но с штриховым пунктирным прямоугольником от границы или толстой сплошной линией на границе. Битовая карта отключенного состояния обычно напоминает состояние "вверх", но имеет меньшую контрастность (например, затемненный или серый выбор меню).
 
@@ -57,7 +58,7 @@ class CBitmapButton : public CButton
 
 Различные приложения требуют различных сочетаний растровых изображений:
 
-|Up|Down|Focused|Выключено|Развертывание|
+|Up|Down|Focused|Выключено|Приложение|
 |--------|----------|-------------|--------------|-----------------|
 |×||||Bitmap|
 |×|×|||Кнопка без стиля WS_TABSTOP|
@@ -112,7 +113,7 @@ class CBitmapButton : public CButton
 
 **Заголовок:** афксекст. h
 
-## <a name="cbitmapbuttonautoload"></a><a name="autoload"></a>Кбитмапбуттон:: автозагрузки
+## <a name="cbitmapbuttonautoload"></a><a name="autoload"></a> Кбитмапбуттон:: автозагрузки
 
 Связывает кнопку в диалоговом окне с объектом `CBitmapButton` класса, загружает растровые изображения по имени и изменяет размер кнопки в соответствии с точечным рисунком.
 
@@ -134,7 +135,7 @@ BOOL AutoLoad(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте `AutoLoad` функцию для инициализации кнопки рисования владельцем в диалоговом окне в виде растровой кнопки. Инструкции по использованию этой функции приведены в комментариях к `CBitmapButton` классу.
 
@@ -142,7 +143,7 @@ BOOL AutoLoad(
 
 [!code-cpp[NVC_MFCControlLadenDialog#75](../../mfc/codesnippet/cpp/cbitmapbutton-class_1.cpp)]
 
-## <a name="cbitmapbuttoncbitmapbutton"></a><a name="cbitmapbutton"></a>Кбитмапбуттон:: Кбитмапбуттон
+## <a name="cbitmapbuttoncbitmapbutton"></a><a name="cbitmapbutton"></a> Кбитмапбуттон:: Кбитмапбуттон
 
 Создает объект `CBitmapButton`.
 
@@ -150,7 +151,7 @@ BOOL AutoLoad(
 CBitmapButton();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 После создания объекта C++ `CBitmapButton` вызовите метод [кбуттон:: Create](../../mfc/reference/cbutton-class.md#create) , чтобы создать элемент управления "кнопка Windows" и присоединить его к `CBitmapButton` объекту.
 
@@ -158,7 +159,7 @@ CBitmapButton();
 
 [!code-cpp[NVC_MFCControlLadenDialog#57](../../mfc/codesnippet/cpp/cbitmapbutton-class_2.cpp)]
 
-## <a name="cbitmapbuttonloadbitmaps"></a><a name="loadbitmaps"></a>Кбитмапбуттон:: Лоадбитмапс
+## <a name="cbitmapbuttonloadbitmaps"></a><a name="loadbitmaps"></a> Кбитмапбуттон:: Лоадбитмапс
 
 Эта функция используется, если требуется загрузить растровые изображения, идентифицируемые по именам ресурсов или ИДЕНТИФИКАЦИОНным номерам, или если `AutoLoad` функцию нельзя использовать, например, при создании кнопки точечного рисунка, которая не является частью диалогового окна.
 
@@ -210,7 +211,7 @@ BOOL LoadBitmaps(
 
 [!code-cpp[NVC_MFCControlLadenDialog#58](../../mfc/codesnippet/cpp/cbitmapbutton-class_3.cpp)]
 
-## <a name="cbitmapbuttonsizetocontent"></a><a name="sizetocontent"></a>Кбитмапбуттон:: SizeToContent
+## <a name="cbitmapbuttonsizetocontent"></a><a name="sizetocontent"></a> Кбитмапбуттон:: SizeToContent
 
 Вызовите эту функцию, чтобы изменить размер растровой кнопки до размера точечного рисунка.
 

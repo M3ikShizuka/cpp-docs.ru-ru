@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как объявить закрепленные указатели и типы значений.
 title: Практическое руководство. Объявление закрепляющих указателей и типов значений
 ms.date: 10/12/2018
 ms.topic: reference
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - value types, declaring
 - pinning pointers
 ms.assetid: 57c5ec8a-f85a-48c4-ba8b-a81268bcede0
-ms.openlocfilehash: 88ef7e82161703a272a571392fd66e6055371c61
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: abbb085a9d85870d43ad00687b30e0f395186ba2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181971"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97119295"
 ---
 # <a name="how-to-declare-pinning-pointers-and-value-types"></a>Практическое руководство. Объявление закрепляющих указателей и типов значений
 
@@ -45,6 +46,6 @@ int main() {
 7
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [pin_ptr (C++/CLI)](pin-ptr-cpp-cli.md)

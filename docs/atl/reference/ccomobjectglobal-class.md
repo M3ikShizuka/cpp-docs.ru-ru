@@ -1,5 +1,6 @@
 ---
-title: Класс CComObjectGlobal
+description: 'Дополнительные сведения о: Ккомобжектглобал Class'
+title: Класс Ккомобжектглобал
 ms.date: 11/04/2016
 f1_keywords:
 - CComObjectGlobal
@@ -12,16 +13,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComObjectGlobal class
 ms.assetid: 79bdee55-66e4-4536-b5b3-bdf09f78b9a6
-ms.openlocfilehash: 9a784584179186cdf1e63c1ec43cad4d59391ec3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0f79acb0fdbb43f9456e08f26875d45eec9904c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81327625"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151987"
 ---
-# <a name="ccomobjectglobal-class"></a>Класс CComObjectGlobal
+# <a name="ccomobjectglobal-class"></a>Класс Ккомобжектглобал
 
-Этот класс управляет подсчетом ссылок `Base` на модуль, содержащий объект.
+Этот класс управляет счетчиком ссылок для модуля, содержащего ваш `Base` объект.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,37 +33,37 @@ class CComObjectGlobal : public Base
 
 #### <a name="parameters"></a>Параметры
 
-*Базы*<br/>
-Ваш класс, полученный из [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) или [CComObjectRootEx,](../../atl/reference/ccomobjectrootex-class.md)а также из любого другого интерфейса, который вы хотите поддерживать на объекте.
+*Из*<br/>
+Класс, производный от [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) или [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), а также от любого другого интерфейса, который требуется поддерживать для объекта.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CComObjectGlobal::CComObjectGlobal](#ccomobjectglobal)|Конструктор.|
-|[CComObjectGlobal:::](#dtor)|Деструктор|
+|[Ккомобжектглобал:: Ккомобжектглобал](#ccomobjectglobal)|Конструктор.|
+|[Ккомобжектглобал:: ~ Ккомобжектглобал](#dtor)|Деструктор|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CComObjectGlobal:AddRef](#addref)|Реализует глобальную. `AddRef`|
-|[CComObjectGlobal::QueryInterface](#queryinterface)|Реализует глобальную. `QueryInterface`|
-|[CComObjectGlobal::Release](#release)|Реализует глобальную. `Release`|
+|[Ккомобжектглобал:: AddRef](#addref)|Реализует глобальную `AddRef` .|
+|[Ккомобжектглобал:: QueryInterface](#queryinterface)|Реализует глобальную `QueryInterface` .|
+|[Ккомобжектглобал:: Release](#release)|Реализует глобальную `Release` .|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CComObjectGlobal::m_hResFinalConstruct](#m_hresfinalconstruct)|Содержит HRESULT, возвращенный `CComObjectGlobal` во время строительства объекта.|
+|[Ккомобжектглобал:: m_hResFinalConstruct](#m_hresfinalconstruct)|Содержит значение HRESULT, возвращаемое во время создания `CComObjectGlobal` объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CComObjectGlobal`управляет подсчетом ссылок на `Base` модуль, содержащий объект. `CComObjectGlobal`гарантирует, что ваш объект не будет удален до тех пор, пока модуль не будет выпущен. Объект будет удален только тогда, когда подсчет ссылок на весь модуль достигнет нуля.
+`CComObjectGlobal` управляет счетчиком ссылок на модуль, содержащий `Base` объект. `CComObjectGlobal` гарантирует, что объект не будет удален при условии, что модуль не был освобожден. Объект будет удален только в том случае, если счетчик ссылок во всем модуле становится нулевым.
 
-Например, `CComObjectGlobal`использование фабрики класса может содержать общий глобальный объект, который является общим для всех своих клиентов.
+Например, `CComObjectGlobal` фабрика класса может содержать общий глобальный объект, совместно используемый всеми его клиентами.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -72,11 +73,11 @@ class CComObjectGlobal : public Base
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlcom.h
+**Заголовок:** атлком. h
 
-## <a name="ccomobjectglobaladdref"></a><a name="addref"></a>CComObjectGlobal:AddRef
+## <a name="ccomobjectglobaladdref"></a><a name="addref"></a> Ккомобжектглобал:: AddRef
 
-Приращения эталонного количества объекта по 1.
+Увеличивает значение счетчика ссылок объекта на 1.
 
 ```
 STDMETHOD_(ULONG, AddRef)();
@@ -86,23 +87,23 @@ STDMETHOD_(ULONG, AddRef)();
 
 Значение, которое может быть полезно для диагностики и тестирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-По умолчанию, `AddRef` звонки `_Module::Lock`, где `_Module` глобальный экземпляр [CComModule](../../atl/reference/ccommodule-class.md) или класс, полученный от него.
+По умолчанию `AddRef` вызывает `_Module::Lock` , где `_Module` — это глобальный экземпляр [CComModule](../../atl/reference/ccommodule-class.md) или производный от него класс.
 
-## <a name="ccomobjectglobalccomobjectglobal"></a><a name="ccomobjectglobal"></a>CComObjectGlobal::CComObjectGlobal
+## <a name="ccomobjectglobalccomobjectglobal"></a><a name="ccomobjectglobal"></a> Ккомобжектглобал:: Ккомобжектглобал
 
-Конструктор. Звонки, `FinalConstruct` а затем `HRESULT` устанавливает `FinalConstruct` [m_hResFinalConstruct](#m_hresfinalconstruct) к возвращенному .
+Конструктор. Вызывает, `FinalConstruct` а затем задает [m_hResFinalConstruct](#m_hresfinalconstruct) , `HRESULT` возвращаемое методом `FinalConstruct` .
 
 ```
 CComObjectGlobal(void* = NULL));
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если вы не получили свой базовый класс от [CComObjectRoot,](../../atl/reference/ccomobjectroot-class.md)вы должны предоставить свой собственный `FinalConstruct` метод. Деструктор вызывает `FinalRelease`.
+Если базовый класс не был производным от [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md), необходимо указать собственный `FinalConstruct` метод. Деструктор вызывает `FinalRelease`.
 
-## <a name="ccomobjectglobalccomobjectglobal"></a><a name="dtor"></a>CComObjectGlobal:::
+## <a name="ccomobjectglobalccomobjectglobal"></a><a name="dtor"></a> Ккомобжектглобал:: ~ Ккомобжектглобал
 
 Деструктор
 
@@ -110,21 +111,21 @@ CComObjectGlobal(void* = NULL));
 CComObjectGlobal();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Освобождает все выделенные ресурсы и вызывает [FinalRelease](ccomobjectrootex-class.md#finalrelease).
+Освобождает все выделенные ресурсы и вызывает [финалрелеасе](ccomobjectrootex-class.md#finalrelease).
 
-## <a name="ccomobjectglobalm_hresfinalconstruct"></a><a name="m_hresfinalconstruct"></a>CComObjectGlobal::m_hResFinalConstruct
+## <a name="ccomobjectglobalm_hresfinalconstruct"></a><a name="m_hresfinalconstruct"></a> Ккомобжектглобал:: m_hResFinalConstruct
 
-Содержит HRESULT от `FinalConstruct` вызова во `CComObjectGlobal` время строительства объекта.
+Содержит значение HRESULT из вызова `FinalConstruct` во время создания `CComObjectGlobal` объекта.
 
 ```
 HRESULT m_hResFinalConstruct;
 ```
 
-## <a name="ccomobjectglobalqueryinterface"></a><a name="queryinterface"></a>CComObjectGlobal::QueryInterface
+## <a name="ccomobjectglobalqueryinterface"></a><a name="queryinterface"></a> Ккомобжектглобал:: QueryInterface
 
-Извлекает указатель на запрашиваемый указатель интерфейса.
+Извлекает указатель на запрошенный указатель интерфейса.
 
 ```
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
@@ -132,23 +133,23 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 ### <a name="parameters"></a>Параметры
 
-*Iid*<br/>
-(в) GUID запрашиваемого интерфейса.
+*IID*<br/>
+окне Идентификатор GUID запрашиваемого интерфейса.
 
-*ppvObject*<br/>
-(ваут) Указатель на указатель интерфейса, идентифицированный iid, или NULL, если интерфейс не найден.
+*ппвобжект*<br/>
+заполняет Указатель на указатель интерфейса, идентифицируемый по IID, или значение NULL, если интерфейс не найден.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `QueryInterface` обрабатывает интерфейсы только в таблице сопоставлений COM.
 
-## <a name="ccomobjectglobalrelease"></a><a name="release"></a>CComObjectGlobal::Release
+## <a name="ccomobjectglobalrelease"></a><a name="release"></a> Ккомобжектглобал:: Release
 
-Декретирует количество ссылок объекта на 1.
+Уменьшает значение счетчика ссылок объекта на 1.
 
 ```
 STDMETHOD_(ULONG, Release)();
@@ -156,15 +157,15 @@ STDMETHOD_(ULONG, Release)();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-В сборках отладки возвращается значение, `Release` которое может быть полезно для диагностики и тестирования. В неотлибуговых `Release` сборках всегда возвращается 0.
+В отладочных сборках `Release` возвращает значение, которое может быть полезно для диагностики и тестирования. В сборках, не относящихся к отладке, `Release` всегда возвращает 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-По умолчанию, `Release` звонки `_Module::Unlock`, где `_Module` глобальный экземпляр [CComModule](../../atl/reference/ccommodule-class.md) или класс, полученный от него.
+По умолчанию `Release` вызывает `_Module::Unlock` , где `_Module` — это глобальный экземпляр [CComModule](../../atl/reference/ccommodule-class.md) или производный от него класс.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс CComObjectStack](../../atl/reference/ccomobjectstack-class.md)<br/>
+[Класс Ккомобжектстакк](../../atl/reference/ccomobjectstack-class.md)<br/>
 [Класс CComAggObject](../../atl/reference/ccomaggobject-class.md)<br/>
 [Класс CComObject](../../atl/reference/ccomobject-class.md)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)

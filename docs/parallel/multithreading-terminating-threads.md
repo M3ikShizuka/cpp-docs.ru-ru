@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о многопоточности: прекращение потоков в MFC'
 title: Многопоточность. Завершение потоков в MFC
 ms.date: 08/27/2018
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - stopping threads
 - AfxEndThread method
 ms.assetid: 4c0a8c6d-c02f-456d-bd02-0a8c8d006ecb
-ms.openlocfilehash: 0625be0a628a6ae991acd2fa1f7118a4deabccda
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dc353bc0edf14d718ee11e140fca11e4c0545588
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217874"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149881"
 ---
 # <a name="multithreading-terminating-threads-in-mfc"></a>Многопоточность. Завершение потоков в MFC
 
@@ -28,19 +29,19 @@ ms.locfileid: "87217874"
 
 - [Получение кода выхода потока](#_core_retrieving_the_exit_code_of_a_thread)
 
-## <a name="normal-thread-termination"></a><a name="_core_normal_thread_termination"></a>Нормальное завершение потока
+## <a name="normal-thread-termination"></a><a name="_core_normal_thread_termination"></a> Нормальное завершение потока
 
 Для рабочего потока простое завершение потока является простым: выход из функции управления и возврат значения, обозначающего причину завершения. Можно использовать либо функцию [афксендсреад](../mfc/reference/application-information-and-management.md#afxendthread) , либо **`return`** инструкцию. Как правило, 0 означает успешное завершение, но это не так.
 
 Для потока пользовательского интерфейса процесс выполняется так же просто: из потока пользовательского интерфейса вызовите [посткуитмессаже](/windows/win32/api/winuser/nf-winuser-postquitmessage) в Windows SDK. Единственным параметром, который `PostQuitMessage` принимает, является код выхода потока. Как и для рабочих потоков, 0 обычно означает успешное завершение.
 
-## <a name="premature-thread-termination"></a><a name="_core_premature_thread_termination"></a>Преждевременное завершение потока
+## <a name="premature-thread-termination"></a><a name="_core_premature_thread_termination"></a> Преждевременное завершение потока
 
 Преждевременное завершение потока почти так же просто: вызовите [афксендсреад](../mfc/reference/application-information-and-management.md#afxendthread) из потока. Передайте нужный код выхода в качестве единственного параметра. Это останавливает выполнение потока, освобождает стек потока, отсоединяет все библиотеки DLL, подключенные к потоку, и удаляет объект потока из памяти.
 
-`AfxEndThread`должен вызываться из потока для завершения. Если вы хотите завершить поток из другого потока, необходимо настроить метод связи между двумя потоками.
+`AfxEndThread` должен вызываться из потока для завершения. Если вы хотите завершить поток из другого потока, необходимо настроить метод связи между двумя потоками.
 
-## <a name="retrieving-the-exit-code-of-a-thread"></a><a name="_core_retrieving_the_exit_code_of_a_thread"></a>Получение кода выхода потока
+## <a name="retrieving-the-exit-code-of-a-thread"></a><a name="_core_retrieving_the_exit_code_of_a_thread"></a> Получение кода выхода потока
 
 Чтобы получить код выхода рабочего процесса или потока пользовательского интерфейса, вызовите функцию [жетекситкодесреад](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getexitcodethread) . Дополнительные сведения об этой функции см. в Windows SDK. Эта функция принимает маркер в поток (хранящийся в элементе `m_hThread` данных `CWinThread` объектов) и адрес DWORD.
 

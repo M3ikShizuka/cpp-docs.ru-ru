@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: atexit'
 title: atexit
 ms.date: 11/04/2016
 api_name:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - processing, at exit
 - atexit function
 ms.assetid: 92c156d2-8052-4e58-96dc-00128baac6f9
-ms.openlocfilehash: b91e6dad81f006b0b94ac17a940e840386f6d2b1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 82c0bbfdb9af62faff9239781b5db340183e25fa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939660"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97117540"
 ---
 # <a name="atexit"></a>atexit
 
@@ -52,9 +53,9 @@ int atexit(
 
 **atexit** возвращает 0 в случае успеха или ненулевое значение при возникновении ошибки.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Функции **atexit** передается адрес функции *Func* , которая вызывается, когда программа завершается нормально. Последовательные вызовы **atexit** создают регистр функций, которые выполняются в порядке "последним по, первым обслужен" (ЛИФО). Функции, передаваемые в **atexit** , не могут принимать параметры. **atexit** и **_onexit** используют кучу для хранения регистра функций. В связи с этим количество функций, которое можно зарегистрировать, ограничивается только памятью кучи.
+Функции **atexit** передается адрес функции *Func* , которая вызывается, когда программа завершается нормально. Последовательные вызовы **atexit** создают регистр функций, которые выполняются в порядке "последним по, первым обслужен" (ЛИФО). Функции, передаваемые в **atexit** , не могут принимать параметры. **atexit** и **_onexit** использовать кучу для хранения регистра функций. В связи с этим количество функций, которое можно зарегистрировать, ограничивается только памятью кучи.
 
 Код функции **atexit** не должен содержать зависимости от любой библиотеки DLL, которая могла быть уже выгружена при вызове функции **atexit** .
 
@@ -112,9 +113,9 @@ This is executed first.
 This is executed next.
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Управление процессами и средой](../../c-runtime-library/process-and-environment-control.md)<br/>
-[abort](abort.md)<br/>
+[рвал](abort.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>
 [_onexit, _onexit_m](onexit-onexit-m.md)<br/>

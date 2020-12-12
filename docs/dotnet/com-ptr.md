@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: com::p TR'
 title: com::ptr
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - com::ptr
 ms.assetid: ee302e3c-8fed-4875-a372-2e55003718d3
-ms.openlocfilehash: 993511142b72bd769fe8582b2650e5d020bd6ce2
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: bbfc38f10afc7d80a87e1bed0bc94716c83b75f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79545861"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97124375"
 ---
 # <a name="comptr"></a>com::ptr
 
@@ -24,10 +25,10 @@ ms.locfileid: "79545861"
 #include <msclr\com\ptr.h>
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-[com::P класс TR](../dotnet/com-ptr-class.md) определен в файле \<мсклр\ком\птр.х >.
+[com::P класс TR](../dotnet/com-ptr-class.md) определен в \<msclr\com\ptr.h> файле.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Библиотека поддержки C++](../dotnet/cpp-support-library.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: размер оператора'
 title: Оператор SIZE
 ms.date: 12/17/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - operator SIZE
 - SIZE operator
 ms.assetid: 2e380289-3ad7-4bf0-8b1c-75211f59e5c4
-ms.openlocfilehash: 9a1906e4a8771df24d352d73bfa870ea71705444
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: a0d8c47fbfbfdc84d351ea65d8cb87ffe3ae43c3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75318882"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97126507"
 ---
 # <a name="operator-size"></a>Оператор SIZE
 
@@ -21,9 +22,9 @@ ms.locfileid: "75318882"
 
 ## <a name="syntax"></a>Синтаксис
 
-> *Переменная* размера
+>  *Переменная* размера
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по операторам](operators-reference.md)\
 [Грамматика MASM BNF](masm-bnf-grammar.md)
