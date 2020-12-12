@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: классы файлов и баз данных'
 title: Классы файлов и баз данных
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - database classes [MFC]
 - file classes [MFC]
 ms.assetid: 580b169c-e26e-4395-b128-5408d08c98fe
-ms.openlocfilehash: 8874b9f99d3a5756b4ce66e2f5732f856bdd7078
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ced377a1a23625f16ad3e42149859af220c7d7e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622632"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189292"
 ---
 # <a name="file-and-database-classes"></a>Классы файлов и баз данных
 
@@ -19,7 +20,7 @@ ms.locfileid: "84622632"
 
 Следующие категории классов поддерживают сохраняемость данных.
 
-- [Классов ввода-вывода файлов](file-i-o-classes.md)
+- [Классы файлового ввода-вывода](file-i-o-classes.md)
 
 - [Классы OLE DB](ole-db-classes.md)
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: &lt; cerrno&gt;'
 title: '&lt;cerrno&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - cerrno header
 ms.assetid: c618f95c-ad4b-4a6f-825b-8727322ec77a
-ms.openlocfilehash: 1186a1e3c58c34de53f7a9835eaf9fd188593301
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 07f853f132c6ee3eed83fe67c9e451138f0ab301
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455499"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325306"
 ---
 # <a name="ltcerrnogt"></a>&lt;cerrno&gt;
 
-Включает заголовок \<стандартной библиотеки C/н. h > и добавляет связанные имена `std` в пространство имен. Включение этого заголовка гарантирует, что имена, объявленные с помощью внешней компоновки в заголовке стандартной библиотеки C `std` , объявляются в пространстве имен.
+Включает заголовок стандартной библиотеки C \<errno.h> и добавляет связанные имена в `std` пространство имен. Включение этого заголовка гарантирует, что имена, объявленные с помощью внешней компоновки в заголовке стандартной библиотеки C, объявляются в `std` пространстве имен.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -107,12 +108,12 @@ ms.locfileid: "68455499"
 #define EXDEV
 ```
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Комментарии
 
 Здесь макросы определяются стандартом POSIX.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по файлам заголовков](../standard-library/cpp-standard-library-header-files.md)\
 [Общие сведения о стандартной библиотеке C++](../standard-library/cpp-standard-library-overview.md)\
-[Потокобезопасность в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -1,17 +1,18 @@
 ---
+description: 'Дополнительные сведения о: &lt; cfenv&gt;'
 title: '&lt;cfenv&gt;'
 ms.date: 11/04/2016
 ms.assetid: 6a17ad51-2182-4e91-8108-65997382acd3
-ms.openlocfilehash: b1ae987d49c95b781cb255a4d7e3a9a04ab6043a
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: e01a74b9df3431ed257cb015260d0775320a88ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449876"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325293"
 ---
 # <a name="ltcfenvgt"></a>&lt;cfenv&gt;
 
-Включает заголовок \<fenv.h> стандартной библиотеки C и добавляет связанные имена в пространство имен `std`.
+Включает заголовок стандартной библиотеки C \<fenv.h> и добавляет связанные имена в `std` пространство имен.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -19,7 +20,7 @@ ms.locfileid: "68449876"
 #include <cfenv>
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Включение этого заголовка гарантирует, что имена, объявленные с помощью внешней компоновки в заголовке стандартной библиотеки C, объявляются в пространстве имен `std`.
 
@@ -60,8 +61,8 @@ int fesetenv(const fenv_t* penv);
 int feupdateenv(const fenv_t* penv);
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по файлам заголовков](../standard-library/cpp-standard-library-header-files.md)\
 [Общие сведения о стандартной библиотеке C++](../standard-library/cpp-standard-library-overview.md)\
-[Потокобезопасность в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)

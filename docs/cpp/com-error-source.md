@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _com_error:: Source'
 title: _com_error::Source
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Source method [C++]
 ms.assetid: 55353741-fabc-4b0c-9787-b5a69bb189f2
-ms.openlocfilehash: 43dd21297ddd54863d535402dddd59243d589eec
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3b6cf35420454e8285d3d8b4deee3df8fe8771e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80180528"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295774"
 ---
 # <a name="_com_errorsource"></a>_com_error::Source
 
@@ -27,14 +28,14 @@ _bstr_t Source() const;
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Возвращает результат `IErrorInfo::GetSource` для объекта `IErrorInfo`, записанного в объекте `_com_error`. Результирующая функция `BSTR` инкапсулируется в объект `_bstr_t`. Если `IErrorInfo` не записано, возвращается пустая `_bstr_t`.
+Возвращает результат `IErrorInfo::GetSource` для `IErrorInfo` объекта, записанного в `_com_error` объекте. Результирующая функция `BSTR` инкапсулируется в объект `_bstr_t`. Если `IErrorInfo` запись не записана, возвращается пустое значение `_bstr_t` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Любой сбой при вызове метода `IErrorInfo::GetSource` игнорируется.
+Любой сбой при вызове `IErrorInfo::GetSource` метода игнорируется.
 
 **Завершение блока, относящегося только к системам Майкрософт**
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Класс _com_error](../cpp/com-error-class.md)
