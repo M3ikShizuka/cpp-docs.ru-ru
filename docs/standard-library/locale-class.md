@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: класс языкового стандарта'
 title: Класс locale
 ms.date: 07/20/2020
 f1_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - std::locale [C++], facet
 - std::locale [C++], id
 ms.assetid: 7dd6d271-472d-4750-8fb5-ea8f55fbef62
-ms.openlocfilehash: 55aeaf27b1c31ef0dba68d0ead3633590777cbdf
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: e934a2e892f0b68926369c8e4a4128162345dd83
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040605"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284633"
 ---
 # <a name="locale-class"></a>Класс locale
 
@@ -175,9 +176,9 @@ cout.imbue(loc);
 
 ### <a name="classes"></a>Классы
 
-|Class|Описание|
+|Класс|Описание|
 |-|-|
-|[устанавливают](#facet_class)|Класс, используемый как базовый класс для всех аспектов языкового стандарта.|
+|[facet](#facet_class)|Класс, используемый как базовый класс для всех аспектов языкового стандарта.|
 |[`id`](#id_class)|Класс члена содержит уникальный идентификатор аспекта, применяемый в качестве индекса для поиска аспектов в языковом стандарте.|
 
 ## <a name="requirements"></a>Требования
@@ -297,7 +298,7 @@ locale combine(const locale& source_locale) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Функция-член возвращает объект языкового стандарта, который заменяет или добавляет к ** \* этому** аспекту, `Facet` указанному в *source_locale*.
+Функция-член возвращает объект языкового стандарта, который заменяет или добавляет к **\* этому** аспекту, `Facet` указанному в *source_locale*.
 
 ### <a name="example"></a>Пример
 

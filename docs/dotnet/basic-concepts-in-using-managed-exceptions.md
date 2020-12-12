@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: основные понятия в использовании управляемых исключений'
 title: Основные принципы использования управляемых исключений
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - throwing exceptions, managed exceptions
 - Visual C++, handling managed exceptions
 ms.assetid: 40ce8931-1ecc-491a-815f-733b23fcba35
-ms.openlocfilehash: 4eeec5db00ceca5429f4a3a270e1b249a8955249
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1c6e405de2a82e32375092007dcc1f0fd8f654c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230926"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282605"
 ---
 # <a name="basic-concepts-in-using-managed-exceptions"></a>Основные принципы использования управляемых исключений
 
@@ -27,7 +28,7 @@ ms.locfileid: "87230926"
 
 - [Блоки try/catch для расширений среды CLR](#vcconbasicconceptsinusingmanagedexceptionsanchor2)
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 При компиляции с параметром **/CLR** можно ОБРАБАТЫВАТЬ исключения CLR, а также стандартный <xref:System.Exception> класс предоставляет множество полезных методов для обработки исключений CLR и рекомендуется в качестве базового класса для определяемых пользователем классов исключений.
 
@@ -35,7 +36,7 @@ ms.locfileid: "87230926"
 
 Дополнительные сведения о различиях в обработке исключений в управляемых и неуправляемых приложениях см. в [разделе различия в поведении обработки исключений в управляемые расширения для C++](../dotnet/differences-in-exception-handling-behavior-under-clr.md).
 
-## <a name="throwing-exceptions-under-clr"></a><a name="vcconbasicconceptsinusingmanagedexceptionsanchor1"></a>Создание исключений в/CLR
+## <a name="throwing-exceptions-under-clr"></a><a name="vcconbasicconceptsinusingmanagedexceptionsanchor1"></a> Создание исключений в/CLR
 
 Выражение выдачи C++ расширяется для создания обработчика типа CLR. В следующем примере создается пользовательский тип исключения, а затем создается экземпляр этого типа:
 
@@ -68,7 +69,7 @@ void GlobalFunction() {
 }
 ```
 
-## <a name="trycatch-blocks-for-clr-extensions"></a><a name="vcconbasicconceptsinusingmanagedexceptionsanchor2"></a>Блоки try/catch для расширений среды CLR
+## <a name="trycatch-blocks-for-clr-extensions"></a><a name="vcconbasicconceptsinusingmanagedexceptionsanchor2"></a> Блоки try/catch для расширений среды CLR
 
 Одну и ту же **`try`** / **`catch`** структуру блока можно использовать для перехвата исключений CLR и машинного кода:
 
@@ -164,7 +165,7 @@ catch(...)
 
 При вызове или перехвате неуправляемых исключений рекомендуется использовать параметр компилятора [/EHsc](../build/reference/eh-exception-handling-model.md) вместо параметра **/EHs** или **/EHa**.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Обработка исключений](../extensions/exception-handling-cpp-component-extensions.md)<br/>
 [safe_cast](../extensions/safe-cast-cpp-component-extensions.md)<br/>

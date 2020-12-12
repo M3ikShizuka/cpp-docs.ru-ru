@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Platform:: Collections:: BackInsertIterator Class'
 title: Класс Platform::Collections::BackInsertIterator
 ms.date: 03/27/2019
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - BackInsertIterator Class
 ms.assetid: aecee1ff-100d-4129-b84b-1966f0923dbf
-ms.openlocfilehash: f5c82a776a537d469d42a16bd4f425e7bb2c13aa
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: d4130db388470b5e29b545b66b06ee85b2cbb608
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742935"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283996"
 ---
 # <a name="platformcollectionsbackinsertiterator-class"></a>Класс Platform::Collections::BackInsertIterator
 
@@ -31,11 +32,11 @@ public ::std::iterator<::std::output_iterator_tag, void, void, void, void>;
 *T*<br/>
 Тип элемента в текущей коллекции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Класс BackInsertIterator реализует правила, необходимые для [back_insert_iterator Class](../standard-library/back-insert-iterator-class.md).
 
-### <a name="members"></a>Члены
+### <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -74,10 +75,10 @@ explicit BackInsertIterator(
 
 #### <a name="parameters"></a>Параметры
 
-*3,3*<br/>
+*v*<br/>
 Объект IVector \<T> .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `BackInsertIterator` вставляет элементы после последнего элемента объекта, указанного параметром `v`.
 
@@ -114,7 +115,7 @@ BackInsertIterator& operator*();
 
 Ссылка на текущий объект BackInsertIterator.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот оператор возвращает ссылку на текущий BackInsertIterator, а не на любой элемент в текущей коллекции.
 
@@ -134,12 +135,12 @@ BackInsertIterator operator++(int);
 
 Ссылка на текущий объект BackInsertIterator.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Выражение в первом примере синтаксиса увеличивает значение текущего элемента BackInsertIterator перед его использованием, а во втором — после его использования. **`int`** Тип во втором синтаксисе указывает на операцию после приращения, а не на фактический целочисленный операнд.
 
 Впрочем, этот оператор не изменяет объект BackInsertIterator. Вместо этого он возвращает ссылку на текущий итератор, остающийся неизменным. Это то же поведение, что и [оператор *](#operator-dereference).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Пространство имен платформы](platform-namespace-c-cx.md)

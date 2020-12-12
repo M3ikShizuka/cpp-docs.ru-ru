@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: коллекции'
 title: Коллекции
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - collection classes [MFC], lists
 - collection classes [MFC], shapes
 ms.assetid: 02586e4c-851d-41d0-a722-feb11c17c74c
-ms.openlocfilehash: f2cd03afbb09dff38298454658c3d3dc2dfa6a8a
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 63bc61b73a9ba654fd22ecf3a238f8ef89734221
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619349"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283476"
 ---
 # <a name="collections"></a>Коллекции
 
@@ -35,7 +36,7 @@ ms.locfileid: "84619349"
 > [!NOTE]
 > Если в коде уже используются классы коллекций, не являющиеся шаблонами, их можно продолжать использовать. При написании новых классов строго типизированных коллекций для собственных типов данных рекомендуется использовать новые классы на основе шаблонов.
 
-## <a name="collection-shapes"></a><a name="_core_collection_shapes"></a>Фигуры коллекций
+## <a name="collection-shapes"></a><a name="_core_collection_shapes"></a> Фигуры коллекций
 
 Класс коллекции характеризуется его «Shape» и типами его элементов. Фигура обозначает способ упорядочения объектов и их хранения в коллекции. MFC предоставляет три основные фигуры коллекций: списки, массивы и карты (также известные как словари). Вы можете выбрать фигуру коллекции, которая наиболее подходит для конкретной задачи программирования.
 
@@ -45,7 +46,7 @@ ms.locfileid: "84619349"
 
    Класс List предоставляет упорядоченный неиндексированный список элементов, реализованный в виде двунаправленного связанного списка. Список содержит «Head» и «хвост», а также добавление или удаление элементов из головного или заключительного фрагмента, а также вставка или удаление элементов в середине — очень быстро.
 
-- Array
+- Массив
 
    Класс Array предоставляет динамически изменяемый, упорядоченный и целочисленный индексируемый массив объектов.
 
@@ -53,7 +54,7 @@ ms.locfileid: "84619349"
 
    Сопоставление — это коллекция, которая связывает объект ключа с объектом значения.
 
-## <a name="the-template-based-collection-classes"></a><a name="_core_the_template_based_collection_classes"></a>Классы коллекций на основе шаблонов
+## <a name="the-template-based-collection-classes"></a><a name="_core_the_template_based_collection_classes"></a> Классы коллекций Template-Based
 
 Самым простым способом реализации строго типизированной коллекции, содержащей объекты любого типа, является использование одного из классов на основе шаблона MFC. Примеры этих классов см. в разделе [Получение](../overview/visual-cpp-samples.md)образца MFC.
 
@@ -66,7 +67,7 @@ ms.locfileid: "84619349"
 |Коллекции объектов любого типа|`CArray`|`CList`|`CMap`|
 |Коллекции указателей на объекты любого типа|`CTypedPtrArray`|`CTypedPtrList`|`CTypedPtrMap`|
 
-## <a name="the-collection-classes-not-based-on-templates"></a><a name="_core_the_collection_classes_not_based_on_templates"></a>Классы коллекций не основаны на шаблонах
+## <a name="the-collection-classes-not-based-on-templates"></a><a name="_core_the_collection_classes_not_based_on_templates"></a> Классы коллекций не основаны на шаблонах
 
 Если в приложении уже используются классы нешаблонных классов MFC, их можно продолжать использовать. Однако для новых коллекций рекомендуется использовать классы на основе шаблонов. В следующей таблице перечислены классы коллекций MFC, которые не основаны на шаблонах.
 
@@ -94,17 +95,17 @@ ms.locfileid: "84619349"
 
 ### <a name="what-do-you-want-to-do"></a>Что Вы хотите делать
 
-#### <a name="general-collection-class-tasks"></a>Общие задачи класса коллекции
+#### <a name="general-collection-class-tasks"></a>Общие задачи Collection-Class
 
 - [Рекомендации по выбору класса коллекции](recommendations-for-choosing-a-collection-class.md)
 
-- [Практическое руководство. Создание типобезопасных коллекций](how-to-make-a-type-safe-collection.md)
+- [Руководство. Создание коллекции Type-Safe](how-to-make-a-type-safe-collection.md)
 
 - [Создание коллекций стеков и очередей](creating-stack-and-queue-collections.md)
 
 - [CArray:: Add](reference/carray-class.md#add)
 
-#### <a name="template-based-collection-class-tasks"></a>Задачи класса коллекции на основе шаблона
+#### <a name="template-based-collection-class-tasks"></a>Задачи Collection-Class Template-Based
 
 - [Классы на основе шаблонов](template-based-classes.md)
 
@@ -112,9 +113,9 @@ ms.locfileid: "84619349"
 
 - [Доступ ко всем элементам коллекции](accessing-all-members-of-a-collection.md)
 
-- [удаление всех объектов из коллекции CObject](deleting-all-objects-in-a-cobject-collection.md)
+- [Удаление всех объектов в коллекции CObject](deleting-all-objects-in-a-cobject-collection.md)
 
 ## <a name="see-also"></a>См. также раздел
 
-[Концепции](mfc-concepts.md)<br/>
+[Основные понятия](mfc-concepts.md)<br/>
 [Общие разделы по MFC](general-mfc-topics.md)

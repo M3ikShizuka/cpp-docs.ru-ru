@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: priority_queue (STL/CLR)'
 title: priority_queue (STL/CLR)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - value_compare member [STL/CLR]
 - value_type member [STL/CLR]
 ms.assetid: 4d0000d3-68ff-4c4b-8157-7060540136f5
-ms.openlocfilehash: fd87c39db279fb70d5c5b5f20e583251dc519755
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 666efbc634ae962836fce4fa12ca762ab7085d92
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502404"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282501"
 ---
 # <a name="priority_queue-stlclr"></a>priority_queue (STL/CLR)
 
@@ -131,7 +132,7 @@ template<typename Value,
 |<xref:System.ICloneable>|Дублировать объект.|
 |иприоритикуеуе\<Value, Container>|Поддерживать универсальный адаптер контейнера.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Объект выделяет и освобождает хранилище для последовательности, которая управляется через базовый контейнер типа `Container` , который хранит `Value` элементы и растет по запросу. Последовательность упорядочивается в виде кучи, при этом элемент с наивысшим приоритетом (верхний элемент) легко становится доступным и съемным. Объект предоставляет доступ к отправке новых элементов и выталкивания только элемента с самым высоким приоритетом, реализуя очередь приоритетов.
 
@@ -176,7 +177,7 @@ void assign(priority_queue<Value, Container>% right);
 *Правильно*<br/>
 Вставляемый адаптер контейнера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция члена присваивает `right.get_container()` базовому контейнеру. Он используется для изменения всего содержимого очереди.
 
@@ -590,7 +591,7 @@ priority_queue <Value, Container>% operator=(priority_queue <Value, Container>% 
 *Правильно*<br/>
 Копируемый адаптер контейнера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Оператор члена копирует *прямо* в объект, а затем возвращает **`*this`** . Он используется для замены управляемой последовательности копией управляемой последовательности в *правой части*.
 
@@ -716,7 +717,7 @@ template<typename InIt>
 *Правильно*<br/>
 Объект или диапазон для вставки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конструктор:
 
@@ -746,7 +747,7 @@ template<typename InIt>
 
 `priority_queue(value_compare^ pred, container_type cont);`
 
-создает пустой упакованный контейнер *с предикатом*упорядочения, а затем помещает все элементы из *продолжения* , чтобы указать начальную управляемую последовательность из существующего контейнера с указанным предикатом упорядочения.
+создает пустой упакованный контейнер *с предикатом* упорядочения, а затем помещает все элементы из *продолжения* , чтобы указать начальную управляемую последовательность из существующего контейнера с указанным предикатом упорядочения.
 
 Конструктор:
 
@@ -1335,7 +1336,7 @@ typedef Value value_type;
 
 ### <a name="remarks"></a>Remarks
 
-Тип является синонимом для *значения*параметра шаблона.
+Тип является синонимом для *значения* параметра шаблона.
 
 ### <a name="example"></a>Пример
 

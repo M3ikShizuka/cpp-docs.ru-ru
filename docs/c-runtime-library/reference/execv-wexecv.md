@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _execv, _wexecv'
 title: _execv, _wexecv
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - wexecv function
 - execv function
 ms.assetid: 8dbaf7bc-9040-4316-a0c1-db7e866b52af
-ms.openlocfilehash: 2c92321ebf31cf3dd1e446246674a437919e347b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 62bb8d92acf99d9db091dbe7e3be9dffe1fbb439
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919693"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283086"
 ---
 # <a name="_execv-_wexecv"></a>_execv, _wexecv
 
@@ -84,7 +85,7 @@ intptr_t _wexecv(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Каждая из этих функций загружает и выполняет новый процесс, передавая ему массив указателей на аргументы командной строки.
 
@@ -113,5 +114,5 @@ intptr_t _wexecv(
 [atexit](atexit.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>
 [_onexit, _onexit_m](onexit-onexit-m.md)<br/>
-[Функции _spawn, _wspawn](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[_spawn, функции _wspawn](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
 [system, _wsystem](system-wsystem.md)<br/>

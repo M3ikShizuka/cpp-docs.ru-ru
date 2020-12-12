@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: out_of_range классе'
 title: Класс out_of_range
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - out_of_range class
 ms.assetid: d0e14dc0-065e-4666-9ac9-51e52223c503
-ms.openlocfilehash: 3bbbc48aa2020782594606c6a53a34f7b937fc58
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 28d0982f711dba8d7a7bb069c4ae79e267b902df
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87521282"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283281"
 ---
 # <a name="out_of_range-class"></a>Класс out_of_range
 
@@ -29,7 +30,7 @@ public:
 };
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Значение, возвращаемое, `what()` является копией `message.data()` . Дополнительные сведения см. в разделах [`what`](../standard-library/exception-class.md) и [`data`](../standard-library/basic-string-class.md#data).
 
@@ -57,7 +58,7 @@ int main() {
 }
 ```
 
-## <a name="output"></a>Вывод
+## <a name="output"></a>Выходные данные
 
 ```cpp
 Caught: invalid string position
@@ -69,7 +70,7 @@ Caught: invalid string position
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Класс logic_error](../standard-library/logic-error-class.md)\
 [Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)

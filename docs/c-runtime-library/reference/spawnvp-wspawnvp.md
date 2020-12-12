@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _spawnvp, _wspawnvp'
 title: _spawnvp, _wspawnvp
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - process creation
 - _spawnvp function
 ms.assetid: 8d8774ec-6ad4-4680-a5aa-440cde1e0249
-ms.openlocfilehash: 2cd1c0e464fe7efb1cce5ba969b34d040b099efa
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c0cb9ea9808266772528751e6c10dfa22aee77c7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831337"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282930"
 ---
 # <a name="_spawnvp-_wspawnvp"></a>_spawnvp, _wspawnvp
 
@@ -90,11 +91,11 @@ intptr_t _wspawnvp(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе [errno, _doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Каждая из этих функций создает новый процесс и выполняет его, а также передает массив указателей в аргументы командной строки и использует переменную среды **path** для поиска файла для выполнения.
 
-Эти функции проверяют свои параметры. Если либо *кмднаме* , либо *argv* является пустым указателем, или если *argv* указывает на указатель null или *argv*[0] является пустой строкой, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции **устанавливают** значение **еинвал**и возвращают-1. Нет порожденных новых процессов.
+Эти функции проверяют свои параметры. Если либо *кмднаме* , либо *argv* является пустым указателем, или если *argv* указывает на указатель null или *argv*[0] является пустой строкой, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции **устанавливают** значение **еинвал** и возвращают-1. Нет порожденных новых процессов.
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения см. в статье класс Platform:: Array.'
 title: Класс Platform::Array
 ms.date: 12/30/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Array Class
 ms.assetid: 7815ab40-88c5-42b0-83b8-081cef0cda31
-ms.openlocfilehash: 4903c18f981c87c418a6ab08595816ce22a7413c
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 76e8329cdc324bc7a8de338725d48188b79ac9f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742948"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284204"
 ---
 # <a name="platformarray-class"></a>Класс Platform::Array
 
@@ -28,7 +29,7 @@ private ref class Array<TArg, 1> :
     public IBoxArray<TArg>
 ```
 
-### <a name="members"></a>Участники
+### <a name="members"></a>Члены
 
 Platform:: Array наследует все его методы от [класса Platform:: WriteOnlyArray](../cppcx/platform-writeonlyarray-class.md) и реализует `Value` свойство [интерфейса Platform:: IBoxArray](../cppcx/platform-iboxarray-interface.md).
 
@@ -48,7 +49,7 @@ Platform:: Array наследует все его методы от [класс�
 |--|--|
 | [Массив:: значение](#value) | Получает дескриптор текущего массива. |
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Класс Array является запечатанным и наследовать его нельзя.
 
@@ -84,7 +85,7 @@ Array(T* data, unsigned int size);
 *data*<br/>
 Указатель на массив данных типа `T`, используемый для инициализации данного объекта Array.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о создании экземпляров Platform:: Array см. в разделе [Array и WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).
 
@@ -121,7 +122,7 @@ property Array^ Value;
 
 Дескриптор текущего массива.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Пространство имен Platform](../cppcx/platform-namespace-c-cx.md)<br/>
 [Классы Array и WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md)

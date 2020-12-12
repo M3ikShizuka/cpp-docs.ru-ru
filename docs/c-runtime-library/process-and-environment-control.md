@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье Управление процессами и средой.
 title: Управление процессами и средой
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - environment control routines
 - process control routines
 ms.assetid: 7fde74c3-c2a6-4d15-84b8-092160d60c3e
-ms.openlocfilehash: ed8d15181a171b4b6a436a3e410a99b48232bc6e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7ba9c81aff87f6cfdf253da6a5d4504bcc59dce5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217029"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284569"
 ---
 # <a name="process-and-environment-control"></a>Управление процессами и средой
 
@@ -24,9 +25,9 @@ ms.locfileid: "87217029"
 
 ## <a name="process-and-environment-control-functions"></a>Функции управления процессами и средой
 
-|Подпрограмма|Используйте|
+|Подпрограмма|Использовать|
 |-------------|---------|
-|[abort](../c-runtime-library/reference/abort.md)|Прерывает процесс без очистки буферов или вызова функций, зарегистрированных с помощью **atexit** и **_onexit**.|
+|[рвал](../c-runtime-library/reference/abort.md)|Прерывает процесс без очистки буферов или вызова функций, зарегистрированных с помощью **atexit** и **_onexit**.|
 |[утверждающе](../c-runtime-library/reference/assert-macro-assert-wassert.md)|Проверяет на наличие логических ошибок.|
 |Макросы [_ASSERT, _ASSERTE](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)|Подобны **assert**, но доступны только в отладочных версиях библиотек времени выполнения.|
 |[atexit](../c-runtime-library/reference/atexit.md)|Подпрограммы расписания для выполнения при завершении программы.|
@@ -47,7 +48,7 @@ ms.locfileid: "87217029"
 |[_exit](../c-runtime-library/reference/exit-exit-exit.md)|Завершает процесс немедленно без вызова **atexit** или **_onexit** либо очистки буферов.|
 |[getenv, _wgetenv](../c-runtime-library/reference/getenv-wgetenv.md), [getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md)|Получает значение переменной среды.|
 |[_getpid](../c-runtime-library/reference/getpid.md)|Получает идентификатор процесса.|
-|[longjmp](../c-runtime-library/reference/longjmp.md)|Восстановление сохраненной среды стека; Используйте его для выполнения нелокальной**`goto`**|
+|[longjmp](../c-runtime-library/reference/longjmp.md)|Восстановление сохраненной среды стека; Используйте его для выполнения нелокальной **`goto`**|
 |[_onexit](../c-runtime-library/reference/onexit-onexit-m.md)|Подпрограммы расписания, которые следует выполнять при завершении программы. Используются для обеспечения совместимости с Microsoft C/C++ версии 7.0 и более ранними версиями.|
 |[_pclose](../c-runtime-library/reference/pclose.md)|Ожидает новый обработчик команд и закрывает поток по связанному каналу.|
 |[perror, _wperror](../c-runtime-library/reference/perror-wperror.md)|Сообщение об ошибке печати.|
@@ -55,7 +56,7 @@ ms.locfileid: "87217029"
 |[_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md)|Создает канал и выполняет команду.|
 |[_putenv, _wputenv](../c-runtime-library/reference/putenv-wputenv.md), [_putenv_s, _wputenv_s](../c-runtime-library/reference/putenv-s-wputenv-s.md)|Получает или изменяет значения переменной среды.|
 |[raise](../c-runtime-library/reference/raise.md)|Отправляет сигнал для вызывающего процесса.|
-|[setjmp](../c-runtime-library/reference/setjmp.md)|Сохранение среды стека; использовать для выполнения не локальной**`goto`**|
+|[setjmp](../c-runtime-library/reference/setjmp.md)|Сохранение среды стека; использовать для выполнения не локальной **`goto`**|
 |[signal](../c-runtime-library/reference/signal.md);|Обрабатывает сигнал прерывания.|
 |[_spawnl, _wspawnl](../c-runtime-library/reference/spawnl-wspawnl.md)|Создает процесс и выполняет его с указанным списком аргументов.|
 |[_spawnle, _wspawnle](../c-runtime-library/reference/spawnle-wspawnle.md)|Создает процесс и выполняет его с указанным списком аргументов и средой.|

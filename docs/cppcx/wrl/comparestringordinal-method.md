@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о методе CompareStringOrdinal
 title: Метод CompareStringOrdinal
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - corewrappers/Microsoft::WRL::Wrappers::Details::CompareStringOrdinal
 ms.assetid: ffa997fd-8cd7-40a5-b9e7-f55d40b072f4
-ms.openlocfilehash: 1291084395b02602b7a3de9013df6720d2e237fc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1994d0f3ec4104e27094de10255194a911ae2945
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214101"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97282852"
 ---
 # <a name="comparestringordinal-method"></a>Метод CompareStringOrdinal
 
@@ -40,7 +41,7 @@ inline INT32 CompareStringOrdinal(
 |0|*LHS* равняется *RHS*.|
 |1|*LHS* больше, чем *RHS*.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Сравнивает два указанных объекта HSTRING и возвращает целое число, которое указывает их относительное расположение в порядке сортировки.
 
@@ -52,4 +53,4 @@ inline INT32 CompareStringOrdinal(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Microsoft::WRL::Wrappers::Details](microsoft-wrl-wrappers-details-namespace.md)
+[Microsoft:: WRL:: оболочки::D пространство имен состояния](microsoft-wrl-wrappers-details-namespace.md)

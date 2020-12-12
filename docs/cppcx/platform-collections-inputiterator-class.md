@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Platform:: Collections:: InputIterator Class'
 title: Класс Platform::Collections::InputIterator
 ms.date: 03/27/2019
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - InputIterator Class
 ms.assetid: ef72eea4-32a9-42b9-8119-ce87dbdcd3be
-ms.openlocfilehash: 4aeef07a34c04bd1ab47acf808026024faada567
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7345435c57c75c04f0eb30d9773d655d713853de
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218433"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283963"
 ---
 # <a name="platformcollectionsinputiterator-class"></a>Класс Platform::Collections::InputIterator
 
@@ -68,7 +69,7 @@ class InputIterator;
 
 **Пространство имен:** Platform::Collections
 
-## <a name="inputiteratorinputiterator-constructor"></a><a name="ctor"></a>Конструктор InputIterator:: InputIterator
+## <a name="inputiteratorinputiterator-constructor"></a><a name="ctor"></a> Конструктор InputIterator:: InputIterator
 
 Инициализирует новый экземпляр класса InputIterator.
 
@@ -81,7 +82,7 @@ explicit InputIterator(Windows::Foundation::Collections<X>^ iterator);
 
 ### <a name="parameters"></a>Параметры
 
-*итераци*<br/>
+*iterator*<br/>
 Объект итератора.
 
 ## <a name="inputiteratoroperator-gt-operator"></a><a name="operator-arrow"></a>Оператор InputIterator:: operator- &gt;
@@ -112,7 +113,7 @@ reference operator*() const;
 
 Элемент, указанный текущим итератором InputIterator.
 
-## <a name="inputiteratoroperator-operator"></a><a name="operator-equality"></a>Оператор InputIterator:: operator = =
+## <a name="inputiteratoroperator-operator"></a><a name="operator-equality"></a> Оператор InputIterator:: operator = =
 
 Указывает, равен ли текущий объект InputIterator указанному объекту InputIterator.
 
@@ -131,7 +132,7 @@ bool operator== (const InputIterator& other) const;
 
 **`true`** значение, если текущий InputIterator равен *другому*; в противном случае — **`false`** .
 
-## <a name="inputiteratoroperator-operator"></a><a name="operator-increment"></a>Оператор InputIterator:: operator + +
+## <a name="inputiteratoroperator-operator"></a><a name="operator-increment"></a> Оператор InputIterator:: operator + +
 
 Выполняет приращение текущего итератора InputIterator.
 
@@ -146,13 +147,13 @@ InputIterator operator++(int);
 
 Первый синтаксис выполняет приращение текущего итератора InputIterator и возвращает его. Второй синтаксис возвращает копию текущего итератора InputIterator, а затем выполняет приращение текущего итератора InputIterator.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый синтаксис InputIterator выполняет приращение текущего итератора InputIterator перед его использованием.
 
 Второй синтаксис выполняет приращение текущего итератора InputIterator после его использования. **`int`** Тип во втором синтаксисе указывает на операцию после приращения, а не на фактический целочисленный операнд.
 
-## <a name="inputiteratoroperator-operator"></a><a name="operator-inequality"></a>Оператор InputIterator:: operator! =
+## <a name="inputiteratoroperator-operator"></a><a name="operator-inequality"></a> Оператор InputIterator:: operator! =
 
 Указывает, отличен ли текущий объект InputIterator от указанного объекта InputIterator.
 

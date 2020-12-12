@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Рисование изображений из списка изображений'
 title: Рисование изображений из списка изображений
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - image lists [MFC], drawing images from
 - images [MFC], drawing
 ms.assetid: 2f6063fb-1c28-45f8-a333-008c064db11c
-ms.openlocfilehash: 55c16ce5bff102d670e46867e121b0a0a2f304ac
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 2c413092e1e7568488a091acd2b0db175d03dab9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622854"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97283463"
 ---
 # <a name="drawing-images-from-an-image-list"></a>Рисование изображений из списка изображений
 
@@ -28,7 +29,7 @@ ms.locfileid: "84622854"
 
 Немаскированное изображение копируется в контекст целевого устройства с помощью `SRCCOPY` операции растрового изображения. Цвета изображения отображаются одинаково независимо от цвета фона контекста устройства. Стили рисования, заданные в, `Draw` также не влияют на внешний вид немаскированного изображения.
 
-Помимо функции рисования, другая функция, [дравиндирект](reference/cimagelist-class.md#drawindirect), расширяет возможность отрисовки изображения. `DrawIndirect`принимает в качестве параметра структуру [имажелистдравпарамс](/windows/win32/api/commctrl/ns-commctrl-imagelistdrawparams) . Эта структура может использоваться для настройки отрисовки текущего изображения, включая использование кодов растровой операции (верхнем). Дополнительные сведения о кодах верхнем см. в разделе [растровые коды операций](/windows/win32/gdi/raster-operation-codes) и [растровые изображения в качестве кистей](/windows/win32/gdi/bitmaps-as-brushes) в Windows SDK.
+Помимо функции рисования, другая функция, [дравиндирект](reference/cimagelist-class.md#drawindirect), расширяет возможность отрисовки изображения. `DrawIndirect` принимает в качестве параметра структуру [имажелистдравпарамс](/windows/win32/api/commctrl/ns-commctrl-imagelistdrawparams) . Эта структура может использоваться для настройки отрисовки текущего изображения, включая использование кодов растровой операции (верхнем). Дополнительные сведения о кодах верхнем см. в разделе [растровые коды операций](/windows/win32/gdi/raster-operation-codes) и [растровые изображения в качестве кистей](/windows/win32/gdi/bitmaps-as-brushes) в Windows SDK.
 
 ## <a name="see-also"></a>См. также раздел
 
