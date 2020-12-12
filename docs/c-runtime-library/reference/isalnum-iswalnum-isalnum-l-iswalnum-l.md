@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: isAlnum, исвалнум, _isalnum_l, _iswalnum_l'
 title: isalnum, iswalnum, _isalnum_l, _iswalnum_l
 ms.date: 4/2/2020
 api_name:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - _istalnum_l function
 - _iswalnum_l function
 ms.assetid: 0dc51306-ade8-4944-af27-e4176fc89093
-ms.openlocfilehash: e32cdd2ad13ead282840e192e572757d759110f7
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: fbd1b686a02938317f36d7a9ec0e61c3fc2ae73f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919817"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296385"
 ---
 # <a name="isalnum-iswalnum-_isalnum_l-_iswalnum_l"></a>isalnum, iswalnum, _isalnum_l, _iswalnum_l
 
@@ -65,7 +66,7 @@ int _iswalnum_l( wint_t c, _locale_t locale );
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Проверяемое целое число.
 
 *locale*<br/>
@@ -86,7 +87,7 @@ int _iswalnum_l( wint_t c, _locale_t locale );
 |**_istalnum**|**isalnum**|[_ismbcalnum](ismbcalnum-functions.md)|**исвалнум**|
 |**_istalnum_l**|**_isalnum_l**|**_ismbcalnum_l**|**_iswalnum_l**|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -104,5 +105,5 @@ int _iswalnum_l( wint_t c, _locale_t locale );
 ## <a name="see-also"></a>См. также раздел
 
 [Классификация символов](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Процедуры is, isw](../../c-runtime-library/is-isw-routines.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[является, подпрограммы isw](../../c-runtime-library/is-isw-routines.md)<br/>

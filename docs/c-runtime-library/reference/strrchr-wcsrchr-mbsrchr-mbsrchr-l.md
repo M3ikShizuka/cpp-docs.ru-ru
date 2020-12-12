@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: strrchr, wcsrchr, _mbsrchr, _mbsrchr_l'
 title: strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
 ms.date: 4/2/2020
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - _ftcsrchr function
 - _mbsrchr_l function
 ms.assetid: 75cf2664-758e-49bb-bf6b-8a139cd474d2
-ms.openlocfilehash: d1350cf14df0c87d57a87ad3aced35e3887b6676
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6931358132372a03ca56e1ce99b62a7a84807b59
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231303"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296229"
 ---
 # <a name="strrchr-wcsrchr-_mbsrchr-_mbsrchr_l"></a>strrchr, wcsrchr, _mbsrchr, _mbsrchr_l
 
@@ -123,7 +124,7 @@ const unsigned char *_mbsrchr_l(
 *str*<br/>
 Строка для поиска, завершающаяся символом NULL.
 
-*ц*<br/>
+*c*<br/>
 Символ, который требуется найти.
 
 *locale*<br/>
@@ -131,9 +132,9 @@ const unsigned char *_mbsrchr_l(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Возвращает указатель на последнее вхождение *c* в *str*или значение null, если *c* не найден.
+Возвращает указатель на последнее вхождение *c* в *str* или значение null, если *c* не найден.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `strrchr`Функция находит последнее вхождение *c* (преобразованное в **`char`** ) в *str*. Поиск включает завершающие нуль-символы.
 
@@ -172,7 +173,7 @@ const unsigned char *_mbsrchr_l(
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Локаль](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strchr, wcschr, _mbschr, _mbschr_l](strchr-wcschr-mbschr-mbschr-l.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>

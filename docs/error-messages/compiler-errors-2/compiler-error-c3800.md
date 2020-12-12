@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C3800'
 title: Ошибка компилятора C3800
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - C3800
 ms.assetid: c653240a-b6db-4437-8d65-fa58f0e6fcf4
-ms.openlocfilehash: a33ecaa2ef8d366230e81b53334318caf4c6cd8c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 65951ae0ce565c7e3f3b9a34f7710fbd790dc47c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62400114"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291614"
 ---
 # <a name="compiler-error-c3800"></a>Ошибка компилятора C3800
 
-«объявление»: нельзя смешивать свойства и события
+"объявление": невозможно смешивать свойства и события
 
-Нельзя объявлять это конструкция, свойства и события.
+Нельзя объявить конструкцию как для свойства, так и для события.
 
-C3800 доступен только с помощью параметра компилятора устаревшие **/CLR: oldSyntax**.
+C3800 доступен только при использовании устаревшего параметра компилятора **/clr: oldSyntax**.

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: элементы управления ActiveX в MFC: оптимизация'
 title: Элементы управления ActiveX в MFC. Оптимизация
 ms.date: 09/12/2018
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], active/inactive state
 - optimizing performance, ActiveX controls
 ms.assetid: 8b11f26a-190d-469b-b594-5336094a0109
-ms.openlocfilehash: b4e12889ca1bb5f4bb423a1f1ede1c396f8d60b5
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: db7fc1f1bdcdc3a3ffbf3b14d1809806389f0862
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615403"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97294110"
 ---
 # <a name="mfc-activex-controls-optimization"></a>Элементы управления ActiveX в MFC. Оптимизация
 
@@ -43,13 +44,13 @@ ms.locfileid: "84615403"
 |Флажок " **активировать при видимости** "|Clear|[Отключение параметра активировать при отображении](turning-off-the-activate-when-visible-option.md)|
 |Флажок **Безоконная активация**|Выберите пункт|[Предоставление безоконной активации](providing-windowless-activation.md)|
 |Флажок " **необрезанное устройство** "|Выберите пункт|[Использование необрезанного контекста устройства](using-an-unclipped-device-context.md)|
-|Флажок **активации без мерцания**|Выберите пункт|[Обеспечение активации без мерцания](providing-flicker-free-activation.md)|
-|Флажок **уведомления указателя мыши при неактивном** флажке|Выберите пункт|[Обеспечение взаимодействия с мышью в неактивном режиме](providing-mouse-interaction-while-inactive.md)|
+|Флажок **активации без мерцания**|Выберите пункт|[Предоставление активации Flicker-Free](providing-flicker-free-activation.md)|
+|Флажок **уведомления указателя мыши при неактивном** флажке|Выберите пункт|[Предоставление взаимодействия с мышью в неактивном режиме](providing-mouse-interaction-while-inactive.md)|
 |Флажок " **оптимизированный код рисунка** "|Выберите пункт|[Оптимизация рисования элемента управления](optimizing-control-drawing.md)|
 
 Подробные сведения о функциях элементов, которые реализуют эти оптимизации, см. в разделе [COleControl](reference/colecontrol-class.md).
 
-Дополнительные сведения можно найти в разделе
+Дополнительные сведения см. в разделе:
 
 - [Оптимизация сохранения и инициализации](optimizing-persistence-and-initialization.md)
 
@@ -57,9 +58,9 @@ ms.locfileid: "84615403"
 
 - [Отключение параметра активировать при отображении](turning-off-the-activate-when-visible-option.md)
 
-- [Обеспечение взаимодействия с мышью в неактивном режиме](providing-mouse-interaction-while-inactive.md)
+- [Предоставление взаимодействия с мышью в неактивном режиме](providing-mouse-interaction-while-inactive.md)
 
-- [Обеспечение активации без мерцания](providing-flicker-free-activation.md)
+- [Предоставление активации Flicker-Free](providing-flicker-free-activation.md)
 
 - [Использование необрезанного контекста устройства](using-an-unclipped-device-context.md)
 
@@ -67,4 +68,4 @@ ms.locfileid: "84615403"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Элементы ActiveX библиотеки MFC](mfc-activex-controls.md)
+[Элементы управления ActiveX в MFC](mfc-activex-controls.md)

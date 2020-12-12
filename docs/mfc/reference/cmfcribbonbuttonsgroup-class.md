@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CMFCRibbonButtonsGroup Class'
 title: Класс CMFCRibbonButtonsGroup
 ms.date: 11/04/2016
 f1_keywords:
@@ -30,16 +31,16 @@ helpviewer_keywords:
 - CMFCRibbonButtonsGroup [MFC], SetImages
 - CMFCRibbonButtonsGroup [MFC], SetParentCategory
 ms.assetid: b993d93e-fc1a-472f-a87f-1d7b7b499845
-ms.openlocfilehash: d690e8bf306234e7b742a4c6a0917e5430d92d10
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 0b86ce6ff21bd36daaac9d68ce511ae395141170
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754100"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293836"
 ---
 # <a name="cmfcribbonbuttonsgroup-class"></a>Класс CMFCRibbonButtonsGroup
 
-Класс `CMFCRibbonButtonsGroup` позволяет организовать набор лентки кнопки в группу. Все кнопки в группе располагаются непосредственно рядом с друг с другом по горизонтали и заключены в границу.
+`CMFCRibbonButtonsGroup`Класс позволяет организовать набор кнопок ленты в группу. Все кнопки в группе располагаются непосредственно рядом с друг с другом по горизонтали и заключены в границу.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,37 +48,37 @@ ms.locfileid: "81754100"
 class CMFCRibbonButtonsGroup : public CMFCRibbonBaseElement
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup](#cmfcribbonbuttonsgroup)|Формирует объект `CMFCRibbonButtonsGroup`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMFCRibbonButtonsGroup::Добавить кнопку](#addbutton)|Добавляет кнопку в группу.|
-|[CMFCRibbonButtonsGroup::Добавить кнопки](#addbuttons)|Добавляет список кнопок в группу.|
-|[CMFCRibbonButtonsGroup:GetButton](#getbutton)|Возвращает указатель на кнопку, расположенную в указанном индексе.|
-|[CMFCRibbonButtonsGroup::GetCount](#getcount)|Возвращает количество кнопок в группе.|
-|[CMFCRibbonButtonsGroup::GetImageSize](#getimagesize)|Возвращает размер изображения нормальных изображений в группе лент (переопределяет [CMFCRibbonBaseElement::GetImageSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getimagesize).)|
-|[CMFCRibbonButtonsGroup::GetRegularSize](#getregularsize)|Возвращает регулярный размер элемента ленты (переопределяет [CMFCRibbonBaseElement::GetRegularSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getregularsize).)|
+|[CMFCRibbonButtonsGroup:: AddButton](#addbutton)|Добавляет кнопку в группу.|
+|[CMFCRibbonButtonsGroup:: Аддбуттонс](#addbuttons)|Добавляет список кнопок в группу.|
+|[CMFCRibbonButtonsGroup:: "Кнопка"](#getbutton)|Возвращает указатель на кнопку, расположенную по указанному индексу.|
+|[CMFCRibbonButtonsGroup:: NOCOUNT](#getcount)|Возвращает число кнопок в группе.|
+|[CMFCRibbonButtonsGroup::GetImageSize](#getimagesize)|Возвращает размер изображения обычных изображений в группе ленты (переопределяет [метод CMFCRibbonBaseElement:: жетимажесизе](../../mfc/reference/cmfcribbonbaseelement-class.md#getimagesize).)|
+|[CMFCRibbonButtonsGroup::GetRegularSize](#getregularsize)|Возвращает обычный размер элемента ленты (переопределяет [метод CMFCRibbonBaseElement:: жетрегуларсизе](../../mfc/reference/cmfcribbonbaseelement-class.md#getregularsize).)|
 |[CMFCRibbonButtonsGroup::HasImages](#hasimages)|Сообщает, `CMFCRibbonButtonsGroup` содержит ли объект изображения панели инструментов.|
-|[CMFCRibbonButtonsGroup::OnDrawImage](#ondrawimage)|Рисует соответствующее изображение для указанной кнопки, в зависимости от того, является ли кнопка нормальной, выделенной или отключенной.|
-|[CMFCRibbonButtonsGroup::RemoveAll](#removeall)|Удаляет все кнопки `CMFCRibbonButtonsGroup` с объекта.|
-|[CMFCRibbonButtonsGroup::SetImages](#setimages)|Присваивает изображения группе.|
-|[CMFCRibbonButtonsGroup::SetParentCategory](#setparentcategory)|Устанавливает родительский `CMFCRibbonCategory` `CMFCRibbonButtonsGroup` элемент объекта и все кнопки внутри него (переопределяет [CMFCRibbonBaseElement::SetParentCategory](../../mfc/reference/cmfcribbonbaseelement-class.md#setparentcategory).)|
+|[CMFCRibbonButtonsGroup::OnDrawImage](#ondrawimage)|Рисует соответствующий рисунок для указанной кнопки в зависимости от того, является ли кнопка нормальной, выделенной или отключенной.|
+|[CMFCRibbonButtonsGroup::RemoveAll](#removeall)|Удаляет все кнопки из `CMFCRibbonButtonsGroup` объекта.|
+|[CMFCRibbonButtonsGroup:: Сетимажес](#setimages)|Назначает образы группе.|
+|[CMFCRibbonButtonsGroup::SetParentCategory](#setparentcategory)|Задает родительский `CMFCRibbonCategory` объект для `CMFCRibbonButtonsGroup` объекта и все кнопки внутри него (переопределяет [метод CMFCRibbonBaseElement:: сетпаренткатегори](../../mfc/reference/cmfcribbonbaseelement-class.md#setparentcategory).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Группа является производной от [CMFCBaseRibbonи](../../mfc/reference/cmfcribbonbaseelement-class.md) и может манипулировать как единое целое. Вы можете расположить группу на любой панели или всплывающем меню.
+Группа является производной от [кмфкбасериббонелемент](../../mfc/reference/cmfcribbonbaseelement-class.md) и может управляться как единая сущность. Группу можно разместить на любой панели или в контекстном меню.
 
 ## <a name="example"></a>Пример
 
-В приведенном ниже примере демонстрируется использование различных методов класса `CMFCRibbonButtonsGroup` . На примере показано, `CMFCRibbonButtonsGroup` как построить объект, назначить изображения группе лентки и добавить кнопку в группу ленточных кнопок. Этот фрагмент кода входит в состав [примера Draw Client](../../overview/visual-cpp-samples.md).
+В приведенном ниже примере демонстрируется использование различных методов класса `CMFCRibbonButtonsGroup` . В примере показано, как создать `CMFCRibbonButtonsGroup` объект, назначить изображения группе кнопок ленты и добавить кнопку в группу кнопок ленты. Этот фрагмент кода входит в состав [примера Draw Client](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DrawClient#2](../../mfc/reference/codesnippet/cpp/cmfcribbonbuttonsgroup-class_1.cpp)]
 
@@ -91,9 +92,9 @@ class CMFCRibbonButtonsGroup : public CMFCRibbonBaseElement
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxribbonbuttonsgroup.h
+**Заголовок:** афксриббонбуттонсграуп. h
 
-## <a name="cmfcribbonbuttonsgroupaddbutton"></a><a name="addbutton"></a>CMFCRibbonButtonsGroup::Добавить кнопку
+## <a name="cmfcribbonbuttonsgroupaddbutton"></a><a name="addbutton"></a> CMFCRibbonButtonsGroup:: AddButton
 
 Добавляет кнопку в группу.
 
@@ -103,10 +104,10 @@ void AddButton(CMFCRibbonBaseElement* pButton);
 
 ### <a name="parameters"></a>Параметры
 
-*pButton*<br/>
-(в) Указатель на кнопку для добавления.
+*пбуттон*<br/>
+окне Указатель на добавляемую кнопку.
 
-## <a name="cmfcribbonbuttonsgroupaddbuttons"></a><a name="addbuttons"></a>CMFCRibbonButtonsGroup::Добавить кнопки
+## <a name="cmfcribbonbuttonsgroupaddbuttons"></a><a name="addbuttons"></a> CMFCRibbonButtonsGroup:: Аддбуттонс
 
 Добавляет список кнопок в группу.
 
@@ -117,10 +118,10 @@ void AddButtons(
 
 ### <a name="parameters"></a>Параметры
 
-*lstButtons*<br/>
-(в) Список указателей на кнопки, которые вы хотите добавить.
+*лстбуттонс*<br/>
+окне Список указателей на кнопки, которые требуется добавить.
 
-## <a name="cmfcribbonbuttonsgroupcmfcribbonbuttonsgroup"></a><a name="cmfcribbonbuttonsgroup"></a>CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup
+## <a name="cmfcribbonbuttonsgroupcmfcribbonbuttonsgroup"></a><a name="cmfcribbonbuttonsgroup"></a> CMFCRibbonButtonsGroup:: CMFCRibbonButtonsGroup
 
 Формирует объект `CMFCRibbonButtonsGroup`.
 
@@ -131,16 +132,16 @@ CMFCRibbonButtonsGroup(CMFCRibbonBaseElement* pButton);
 
 ### <a name="parameters"></a>Параметры
 
-*pButton*<br/>
-(в) Уфиксируйте кнопку для `CMFCRibbonButtonsGroup` добавления к вновь созданному объекту.
+*пбуттон*<br/>
+окне Задает кнопку, добавляемую к вновь созданному `CMFCRibbonButtonsGroup` объекту.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonbuttonsgroupgetbutton"></a><a name="getbutton"></a>CMFCRibbonButtonsGroup:GetButton
+## <a name="cmfcribbonbuttonsgroupgetbutton"></a><a name="getbutton"></a> CMFCRibbonButtonsGroup:: "Кнопка"
 
-Возвращает указатель на кнопку, расположенную в указанном индексе.
+Возвращает указатель на кнопку, расположенную по указанному индексу.
 
 ```
 CMFCRibbonBaseElement* GetButton(int i) const;
@@ -148,18 +149,18 @@ CMFCRibbonBaseElement* GetButton(int i) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Я*<br/>
-(в) Нулевой индекс кнопки для возврата.
+*i*<br/>
+окне Отсчитываемый от нуля индекс возвращаемой кнопки.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на кнопку, расположенную в указанном индексе. NULL, если указанный индекс находится вне диапазона.
+Указатель на кнопку, расположенную по указанному индексу. Значение NULL, если указанный индекс выходит за пределы допустимого диапазона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonbuttonsgroupgetcount"></a><a name="getcount"></a>CMFCRibbonButtonsGroup::GetCount
+## <a name="cmfcribbonbuttonsgroupgetcount"></a><a name="getcount"></a> CMFCRibbonButtonsGroup:: NOCOUNT
 
-Возвращает количество кнопок в группе.
+Возвращает число кнопок в группе.
 
 ```
 int GetCount() const;
@@ -167,11 +168,11 @@ int GetCount() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Количество кнопок в группе.
+Число кнопок в группе.
 
-## <a name="cmfcribbonbuttonsgroupgetimagesize"></a><a name="getimagesize"></a>CMFCRibbonButtonsGroup::GetImageSize
+## <a name="cmfcribbonbuttonsgroupgetimagesize"></a><a name="getimagesize"></a> CMFCRibbonButtonsGroup:: Жетимажесизе
 
-Извлекает размер исходного изображения `CMFCToolBarImages` `m_Images`защищенного члена.
+Извлекает размер исходного изображения защищенного `CMFCToolBarImages` элемента `m_Images` .
 
 ```
 const CSize GetImageSize() const;
@@ -179,13 +180,13 @@ const CSize GetImageSize() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает размер исходного изображения изображений панели инструментов, `CSize` если таковые имеются, или нулевой, если нет.
+Возвращает размер исходного изображения для изображений панели инструментов, если таковые имеются, или нуль, `CSize` Если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonbuttonsgroupgetregularsize"></a><a name="getregularsize"></a>CMFCRibbonButtonsGroup::GetRegularSize
+## <a name="cmfcribbonbuttonsgroupgetregularsize"></a><a name="getregularsize"></a> CMFCRibbonButtonsGroup:: Жетрегуларсизе
 
-Извлекает максимально возможный размер элемента ленточной группы.
+Возвращает максимальный возможный размер элемента группы ленты.
 
 ```
 virtual CSize GetRegularSize(CDC* pDC);
@@ -193,14 +194,14 @@ virtual CSize GetRegularSize(CDC* pDC);
 
 ### <a name="parameters"></a>Параметры
 
-*pDC*<br/>
-(в) Указатель на контекст устройства ленточной группы.
+*Хозяин*<br/>
+окне Указатель на контекст устройства группы лент.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonbuttonsgrouphasimages"></a><a name="hasimages"></a>CMFCRibbonButtonsGroup::HasImages
+## <a name="cmfcribbonbuttonsgrouphasimages"></a><a name="hasimages"></a> CMFCRibbonButtonsGroup:: Хасимажес
 
 Сообщает, `CMFCRibbonButtonsGroup` содержит ли объект изображения панели инструментов.
 
@@ -210,13 +211,13 @@ BOOL HasImages() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает TRUE, `CMFCToolBarImages` если `m_Images` защищенный член содержит какие-либо изображения, или FALSE, если нет.
+Возвращает значение TRUE, если защищенный `CMFCToolBarImages` элемент `m_Images` содержит изображения, или значение false в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonbuttonsgroupondrawimage"></a><a name="ondrawimage"></a>CMFCRibbonButtonsGroup::OnDrawImage
+## <a name="cmfcribbonbuttonsgroupondrawimage"></a><a name="ondrawimage"></a> CMFCRibbonButtonsGroup:: Ондравимаже
 
-Рисует соответствующее изображение для указанной кнопки, в зависимости от того, является ли кнопка нормальной, выделенной или отключенной.
+Рисует соответствующий рисунок для указанной кнопки в зависимости от того, является ли кнопка нормальной, выделенной или отключенной.
 
 ```
 virtual void OnDrawImage(
@@ -228,33 +229,33 @@ virtual void OnDrawImage(
 
 ### <a name="parameters"></a>Параметры
 
-*pDC*<br/>
-(в) Указатель на контекст устройства `CMFCRibbonButtonsGroup` объекта.
+*Хозяин*<br/>
+окне Указатель на контекст устройства `CMFCRibbonButtonsGroup` объекта.
 
-*rectImage*<br/>
-(в) Прямоугольник, внутри которого можно нарисовать изображение.
+*ректимаже*<br/>
+окне Прямоугольник, в котором рисуется изображение.
 
-*pButton*<br/>
-(в) Кнопка, для которой можно нарисовать изображение.
+*пбуттон*<br/>
+окне Кнопка, для которой нарисовывается изображение.
 
-*nImageIndex*<br/>
-(в) Индекс изображения нарисовать на кнопке (в одном из трех массивов изображений для обычных, выделенных или отключенных кнопок).
+*нимажеиндекс*<br/>
+окне Индекс изображения, которое будет нарисовано на кнопке (в одном из трех массивов изображений для обычных, выделенных или отключенных кнопок).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonbuttonsgroupremoveall"></a><a name="removeall"></a>CMFCRibbonButtonsGroup::RemoveAll
+## <a name="cmfcribbonbuttonsgroupremoveall"></a><a name="removeall"></a> CMFCRibbonButtonsGroup:: RemoveAll
 
-Удаляет все кнопки `CMFCRibbonButtonsGroup` с объекта.
+Удаляет все кнопки из `CMFCRibbonButtonsGroup` объекта.
 
 ```cpp
 void RemoveAll();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonbuttonsgroupsetimages"></a><a name="setimages"></a>CMFCRibbonButtonsGroup::SetImages
+## <a name="cmfcribbonbuttonsgroupsetimages"></a><a name="setimages"></a> CMFCRibbonButtonsGroup:: Сетимажес
 
-Присваивает изображения группе лентовых кнопок.
+Назначает изображения группе кнопок ленты.
 
 ```cpp
 void SetImages(
@@ -265,25 +266,25 @@ void SetImages(
 
 ### <a name="parameters"></a>Параметры
 
-*pImages*<br/>
-(в) Регулярные изображения.
+*пимажес*<br/>
+окне Обычные образы.
 
-*pHotImages*<br/>
-(в) Горячие изображения.
+*фотимажес*<br/>
+окне Горячие образы.
 
-*pDisabledImages*<br/>
-(в) Изображения инвалидов.
+*пдисабледимажес*<br/>
+окне Отключенные образы.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Позвоните `SetImages` перед добавлением кнопок в группу. Количество изображений должно быть больше или равно количеству кнопок, которые будут добавлены в группу.
+Вызовите, `SetImages` прежде чем добавлять кнопки в группу. Число образов должно быть больше или равно числу кнопок, добавляемых в группу.
 
 > [!NOTE]
-> Горячие изображения изображения, которые отображаются, когда пользователь парит над кнопкой. Изображения инвалидов — это изображения, отображаемые при отключении кнопки.
+> Горячие образы — это изображения, которые отображаются, когда пользователь наводит указатель мыши на кнопку. Отключенные изображения — это изображения, отображаемые при отключенной кнопке.
 
-## <a name="cmfcribbonbuttonsgroupsetparentcategory"></a><a name="setparentcategory"></a>CMFCRibbonButtonsGroup::SetParentCategory
+## <a name="cmfcribbonbuttonsgroupsetparentcategory"></a><a name="setparentcategory"></a> CMFCRibbonButtonsGroup:: Сетпаренткатегори
 
-Устанавливает родительский `CMFCRibbonCategory` `CMFCRibbonButtonsGroup` объект и все кнопки внутри него.
+Задает родительский `CMFCRibbonCategory` объект для `CMFCRibbonButtonsGroup` объекта и все кнопки внутри него.
 
 ```
 virtual void SetParentCategory(CMFCRibbonCategory* pCategory);
@@ -291,12 +292,12 @@ virtual void SetParentCategory(CMFCRibbonCategory* pCategory);
 
 ### <a name="parameters"></a>Параметры
 
-*pКатегория*<br/>
-(в) Указатель на родительскую категорию для установки (группы вкладок в элементаре управления лентой называются категориями).
+*пкатегори*<br/>
+окне Указатель на родительскую категорию для установки (группы с вкладками в элементах управления ленты называются категориями).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)

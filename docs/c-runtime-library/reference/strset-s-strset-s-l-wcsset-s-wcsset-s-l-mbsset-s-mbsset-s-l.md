@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l'
 title: _strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l
 ms.date: 4/2/2020
 api_name:
@@ -66,12 +67,12 @@ helpviewer_keywords:
 - _tcsset_s function
 - mbsset_s function
 ms.assetid: dceb2909-6b41-4792-acb7-888e45bb8b35
-ms.openlocfilehash: 520e272955884b6701f12576e2f5d5c86fe25684
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: aa45a8d693c9f2eb8a1484397b85b8aa89993862
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216717"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296151"
 ---
 # <a name="_strset_s-_strset_s_l-_wcsset_s-_wcsset_s_l-_mbsset_s-_mbsset_s_l"></a>_strset_s, _strset_s_l, _wcsset_s, _wcsset_s_l, _mbsset_s, _mbsset_s_l
 
@@ -126,7 +127,7 @@ errno_t _mbsset_s_l(
 *numberOfElements*<br/>
 Размер буфера *str* .
 
-*ц*<br/>
+*c*<br/>
 Параметр символов.
 
 *locale*<br/>
@@ -138,9 +139,9 @@ errno_t _mbsset_s_l(
 
 Эти функции проверяют свои аргументы. Если *str* является пустым указателем или аргумент *numberOfElements* меньше или равен 0 или переданный блок не завершается нулем, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции возвращают **еинвал** и применяют **значение "** **еинвал**".
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функция **_strset_s** устанавливает все символы *str* в *c* (преобразованные в **`char`** ), за исключением завершающего нуль-символа. **_wcsset_s** и **_mbsset_s** — это версии **_strset_s**для расширенных символов и многобайтовых символов. Типы данных аргументов и возвращаемых значений изменяются соответствующим образом. В остальном эти функции ведут себя одинаково.
+Функция **_strset_s** устанавливает все символы *str* в *c* (преобразованные в **`char`** ), за исключением завершающего нуль-символа. **_wcsset_s** и **_mbsset_s** — это версии **_strset_s** для расширенных символов и многобайтовых символов. Типы данных аргументов и возвращаемых значений изменяются соответствующим образом. В остальном эти функции ведут себя одинаково.
 
 Выходное значение зависит от настройки категории **LC_CTYPE** языкового стандарта; дополнительные сведения см. в разделе [setlocale](setlocale-wsetlocale.md). Версии этих функций без суффикса **_l** используют текущий языковой стандарт для данного поведения, зависящего от языкового стандарта; версии с суффиксом **_l** идентичны, за исключением того, что они используют переданный параметр языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
@@ -193,7 +194,7 @@ After:  *******************************
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Локаль](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbset, _mbsnbset_l](mbsnbset-mbsnbset-l.md)<br/>
 [memset, wmemset](memset-wmemset.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>

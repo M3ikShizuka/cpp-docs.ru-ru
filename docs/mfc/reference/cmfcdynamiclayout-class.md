@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CMFCDynamicLayout Class'
 title: Класс CMFCDynamicLayout
 ms.date: 08/29/2019
 f1_keywords:
@@ -15,12 +16,12 @@ f1_keywords:
 - AFXLAYOUT/CMFCDynamicLayout::LoadResource
 - AFXLAYOUT/CMFCDynamicLayout::SetMinSize
 ms.assetid: c2df2976-f049-47fc-9cf0-abe3e01948bc
-ms.openlocfilehash: 1c5d73897f7028768476c82824f8c0b6d530aea2
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 56979cce8ff20224cae444dab038bae29deeb39b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90742909"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293915"
 ---
 # <a name="cmfcdynamiclayout-class"></a>Класс CMFCDynamicLayout
 
@@ -32,7 +33,7 @@ ms.locfileid: "90742909"
 class CMFCDynamicLayout : public CObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -71,7 +72,7 @@ class CMFCDynamicLayout : public CObject
 |[Структура CMFCDynamicLayout::MoveSettings](#movesettings_structure)|Инкапсулирует данные перемещения для элементов управления в динамическом макете.|
 |[Структура CMFCDynamicLayout::SizeSettings](#sizesettings_structure)|Инкапсулирует данные об изменении размера элементов управления в динамическом макете.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -115,7 +116,7 @@ BOOL AddItem(
 
 Значение TRUE, если элемент был успешно добавлен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Положение и размер дочернего элемента управления динамически меняются при изменении размера главного окна.
 
@@ -127,7 +128,7 @@ BOOL AddItem(
 void Adjust();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Положение и размер дочернего элемента управления динамически меняются при изменении размера главного окна.
 
@@ -148,7 +149,7 @@ BOOL Create(CWnd* pHostWnd);
 
 Значение TRUE, если создание прошло успешно; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcdynamiclayoutgethostwnd"></a><a name="gethostwnd"></a> CMFCDynamicLayout:: Жесоствнд
 
@@ -162,7 +163,7 @@ CWnd* GetHostWnd();
 
 Указатель на главное окно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию положения всех дочерних элементов управления пересчитываются относительно этого окна. 
 
@@ -178,7 +179,7 @@ CSize GetMinSize();
 
 Минимальный размер окна для макета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Положение и размер дочернего элемента управления динамически меняются при изменении размера главного окна, однако существует минимальный допустимый размер для макета. Пользователь может сделать окно меньше этого значения, но тогда определенные части окна будут скрыты.
 
@@ -195,7 +196,7 @@ void GetHostWndRect(CRect& rect,);
 *rect*<br/>
 После возвращения функцией этот параметр содержит ограничивающий прямоугольник области макета. Это выходной параметр. Входное значение перезаписывается.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcdynamiclayouthasitem"></a><a name="hasitem"></a> CMFCDynamicLayout:: Хаситем
 
@@ -214,7 +215,7 @@ BOOL HasItem(HWND hwnd);
 
 Значение TRUE, если макет уже содержит данный элемент; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcdynamiclayoutisempty"></a><a name="isempty"></a> CMFCDynamicLayout:: IsEmpty
 
@@ -228,7 +229,7 @@ BOOL IsEmpty();
 
 Значение TRUE, если макет не содержит элементов; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcdynamiclayoutloadresource"></a><a name="loadresource"></a> CMFCDynamicLayout:: Лоадресаурце
 
@@ -255,7 +256,7 @@ static BOOL LoadResource(CWnd* pHostWnd,
 
 Значение TRUE, если ресурс загружен и применен для главного окна; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcdynamiclayoutmovehorizontal"></a><a name="movehorizontal"></a> CMFCDynamicLayout:: Мовехоризонтал
 
@@ -274,7 +275,7 @@ static MoveSettings MoveHorizontal(int nRatio);
 
 Значение [MoveSettings](#movesettings_structure) , которое инкапсулирует запрошенный коэффициент перемещения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcdynamiclayoutmovehorizontalandvertical"></a><a name="movehorizontalandvertical"></a> CMFCDynamicLayout:: Мовехоризонталандвертикал
 
@@ -296,7 +297,7 @@ static MoveSettings MoveHorizontalAndVertical(int nXRatio int nYRatio);
 
 Значение [MoveSettings](#movesettings_structure) , которое инкапсулирует запрошенный коэффициент перемещения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcdynamiclayoutmovenone"></a><a name="movenone"></a> CMFCDynamicLayout:: Мовеноне
 
@@ -310,7 +311,7 @@ static MoveSettings MoveNone();
 
 Значение [MoveSettings](#movesettings_structure) , которое исправляет элемент управления на месте, чтобы оно не перемещается при изменении пользователем размера главного окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcdynamiclayoutmovesettings-structure"></a><a name="movesettings_structure"></a> Структура CMFCDynamicLayout:: MoveSettings
 
@@ -320,7 +321,7 @@ static MoveSettings MoveNone();
 struct CMFCDynamicLayout::MoveSettings;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот класс является вложенным в `CMFCDynamicLayout`.
 
@@ -377,7 +378,7 @@ static MoveSettings MoveVertical(int nRatio);
 
 Значение [MoveSettings](#movesettings_structure) , которое инкапсулирует запрошенный коэффициент перемещения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcdynamiclayoutsetminsize"></a><a name="setminsize"></a> CMFCDynamicLayout:: Сетминсизе
 
@@ -392,7 +393,7 @@ void SetMinSize(const CSize& size);
 *size*<br/>
 Необходимый минимальный размер макета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Положение и размер дочернего элемента управления динамически меняются при изменении размера главного окна, однако существует минимальный допустимый размер для макета. Пользователь может сделать окно меньше этого значения, но тогда определенные части окна будут скрыты.
 
@@ -413,7 +414,7 @@ static SizeSettings SizeHorizontal(int nRatio);
 
 Значение [SizeSettings](#sizesettings_structure) , которое инкапсулирует требуемый коэффициент размера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcdynamiclayoutsizehorizontalandvertical"></a><a name="sizehorizontalandvertical"></a> CMFCDynamicLayout:: Сизехоризонталандвертикал
 
@@ -435,7 +436,7 @@ static SizeSettings SizeHorizontalAndVertical(int nXRatio int nYRatio);
 
 Значение [SizeSettings](#sizesettings_structure) , которое инкапсулирует требуемый коэффициент размера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcdynamiclayoutsizenone"></a><a name="sizenone"></a> CMFCDynamicLayout:: Сизеноне
 
@@ -449,7 +450,7 @@ static SizeSettings SizeNone();
 
 Значение [SizeSettings](#sizesettings_structure) , которое устраняет элемент управления в определенном размере, поэтому он не изменяет размер при изменении пользователем размеров главного окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcdynamiclayoutsizesettings-structure"></a><a name="sizesettings_structure"></a> Структура CMFCDynamicLayout:: SizeSettings
 
@@ -459,7 +460,7 @@ static SizeSettings SizeNone();
 struct CMFCDynamicLayout::SizeSettings;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот класс является вложенным в `CMFCDynamicLayout`.
 
@@ -516,9 +517,9 @@ static SizeSettings SizeVertical(int nRatio);
 
 Значение [SizeSettings](#sizesettings_structure) , которое инкапсулирует требуемый коэффициент размера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)

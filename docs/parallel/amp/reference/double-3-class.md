@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: double_3 классе'
 title: Класс double_3
 ms.date: 11/04/2016
 f1_keywords:
@@ -72,12 +73,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::double_3::rbg
 - amp_short_vectors/Concurrency::graphics::double_3::get_yxz
 ms.assetid: baeb3ff0-2862-4c81-857e-b1a4c085be25
-ms.openlocfilehash: 981b3026e1efb6c3b4e06457a0eb1f986cdcaafa
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: ddda1c0e1d28a97f7e5fd5662a414a5c2d40909f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126699"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297113"
 ---
 # <a name="double_3-class"></a>Класс double_3
 
@@ -93,60 +94,60 @@ class double_3;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |value_type||
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[Конструктор double_3](#ctor)|Перегружен. Конструктор по умолчанию инициализирует все элементы значением 0.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
-|double_3::get_x||
-|double_3::get_xy||
-|double_3::get_xyz||
-|double_3::get_xz||
-|double_3::get_xzy||
+|double_3:: get_x||
+|double_3:: get_xy||
+|double_3:: get_xyz||
+|double_3:: get_xz||
+|double_3:: get_xzy||
 |double_3:: get_y||
 |double_3:: get_yx||
-|double_3::get_yxz||
-|double_3::get_yz||
-|double_3::get_yzx||
-|double_3::get_z||
-|double_3::get_zx||
-|double_3::get_zxy||
-|double_3::get_zy||
-|double_3::get_zyx||
+|double_3:: get_yxz||
+|double_3:: get_yz||
+|double_3:: get_yzx||
+|double_3:: get_z||
+|double_3:: get_zx||
+|double_3:: get_zxy||
+|double_3:: get_zy||
+|double_3:: get_zyx||
 |double_3:: ref_b||
 |double_3:: ref_g||
 |double_3:: ref_r||
 |double_3:: ref_x||
 |double_3:: ref_y||
-|double_3::ref_z||
-|double_3::set_x||
-|double_3::set_xy||
-|double_3::set_xyz||
-|double_3::set_xz||
-|double_3::set_xzy||
+|double_3:: ref_z||
+|double_3:: set_x||
+|double_3:: set_xy||
+|double_3:: set_xyz||
+|double_3:: set_xz||
+|double_3:: set_xzy||
 |double_3:: set_y||
-|double_3::set_yx||
-|double_3::set_yxz||
-|double_3::set_yz||
-|double_3::set_yzx||
-|double_3::set_z||
-|double_3::set_zx||
-|double_3::set_zxy||
-|double_3::set_zy||
-|double_3::set_zyx||
+|double_3:: set_yx||
+|double_3:: set_yxz||
+|double_3:: set_yz||
+|double_3:: set_yzx||
+|double_3:: set_z||
+|double_3:: set_zx||
+|double_3:: set_zxy||
+|double_3:: set_zy||
+|double_3:: set_zyx||
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |double_3:: operator —||
 |double_3:: operator--||
@@ -159,13 +160,13 @@ class double_3;
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа размера](#double_3__size)||
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |double_3:: b||
 |double_3:: BG||
@@ -208,7 +209,7 @@ class double_3;
 
 **Пространство имен:** Concurrency:: Graphics
 
-## <a name="ctor"></a>double_3
+## <a name="double_3"></a><a name="ctor"></a> double_3
 
 Конструктор по умолчанию инициализирует все элементы значением 0.
 
@@ -268,7 +269,7 @@ explicit inline double_3(
 *_Other*<br/>
 Объект, используемый для инициализации.
 
-## <a name="double_3__size"></a>изменять
+## <a name="size"></a><a name="double_3__size"></a> изменять
 
 ```cpp
 static const int size = 3;

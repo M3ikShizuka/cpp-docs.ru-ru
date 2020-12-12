@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: strcat, wcscat, _mbscat'
 title: strcat, wcscat, _mbscat
 ms.date: 11/04/2016
 api_name:
@@ -43,19 +44,19 @@ helpviewer_keywords:
 - appending strings
 - wcscat function
 ms.assetid: c89c4ef1-817a-44ff-a229-fe22d06ba78a
-ms.openlocfilehash: 973c54c18e941b29526cb3e9b1cadb98f6582c4a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 12ec6f6e0e9f940ef72d0aec742137843238c534
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70958277"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292160"
 ---
 # <a name="strcat-wcscat-_mbscat"></a>strcat, wcscat, _mbscat
 
 Дополняет строку. Существуют более безопасные версии этих функций; см. раздел [strcat_s, wcscat_s, _mbscat_s](strcat-s-wcscat-s-mbscat-s.md).
 
 > [!IMPORTANT]
-> **_mbscat_s** нельзя использовать в приложениях, выполняемых в среда выполнения Windows. Дополнительные сведения: [Функции CRT, которые не поддерживаются в приложениях универсальной платформы Windows](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscat_s** нельзя использовать в приложениях, которые выполняются в среда выполнения Windows. Дополнительные сведения: [Функции CRT, которые не поддерживаются в приложениях универсальной платформы Windows](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -101,18 +102,18 @@ unsigned char *_mbscat(
 
 Каждая из этих функций возвращает строку назначения (*стрдестинатион*). Нет зарезервированных возвращаемых значений для указания ошибки.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Функция **strcat** добавляет *стрсаурце* в *стрдестинатион* и завершает результирующую строку символом NULL. Начальный символ *стрсаурце* перезаписывает завершающий нуль символ *стрдестинатион*. Поведение **strcat** не определено, если исходная и Целевая строки перекрываются.
 
 > [!IMPORTANT]
 > Так как **strcat** не проверяет наличие достаточного места в *стрдестинатион* перед добавлением *стрсаурце*, это может стать причиной переполнения буфера. Рекомендуется использовать вместо нее функцию [strncat](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md).
 
-**wcscat** и **_mbscat** — это версии **strcat**для расширенных символов и многобайтовых символов. Аргументы и возвращаемое значение **wcscat** являются строками расширенных символов. **_mbscat** являются строками многобайтовых символов. В остальном эти три функции ведут себя идентично.
+**wcscat** и **_mbscat** — это версии **strcat** для расширенных символов и многобайтовых символов. Аргументы и возвращаемое значение **wcscat** являются строками расширенных символов. **_mbscat** являются строками многобайтовых символов. В остальном эти три функции ведут себя идентично.
 
-В C++ эти функции имеют шаблонные перегрузки, которые вызывают более новые и безопасные аналоги этих функций. Дополнительные сведения см. в разделе [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+В C++ эти функции имеют шаблонные перегрузки, которые вызывают более новые и безопасные аналоги этих функций. Дополнительные сведения см. в разделе [Безопасные перегрузки шаблонов](../../c-runtime-library/secure-template-overloads.md).
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Подпрограмма TCHAR.H|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -126,15 +127,15 @@ unsigned char *_mbscat(
 |**wcscat**|\<string.h> или \<wchar.h>|
 |**_mbscat**|\<mbstring.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
 См. пример для [strcpy](strcpy-wcscpy-mbscpy.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Операции со строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
+[Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
 [strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>

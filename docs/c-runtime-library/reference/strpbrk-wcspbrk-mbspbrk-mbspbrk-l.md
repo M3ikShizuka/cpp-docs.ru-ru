@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: стрпбрк, вкспбрк, _mbspbrk, _mbspbrk_l'
 title: strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
 ms.date: 4/2/2020
 api_name:
@@ -50,12 +51,12 @@ helpviewer_keywords:
 - _mbspbrk function
 - mbspbrk_l function
 ms.assetid: 80b504f7-a167-4dde-97ad-4ae3000dc810
-ms.openlocfilehash: fbde746cba02605be7fa42e941a30bfa02d0561a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2dd5da437ef0b6f9f319f3ba7a9543f7922bfd9c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231316"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296255"
 ---
 # <a name="strpbrk-wcspbrk-_mbspbrk-_mbspbrk_l"></a>strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l
 
@@ -133,9 +134,9 @@ const unsigned char *_mbspbrk_l(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Возвращает указатель на первое вхождение любого символа из *стрчарсет* в *str*или указатель null, если два строковых аргумента не имеют общих символов.
+Возвращает указатель на первое вхождение любого символа из *стрчарсет* в *str* или указатель null, если два строковых аргумента не имеют общих символов.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `strpbrk`Функция возвращает указатель на первое вхождение символа в *str* , который принадлежит набору символов в *стрчарсет*. Поиск не включает завершающие нуль-символы.
 
@@ -206,7 +207,7 @@ int main( void )
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Локаль](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [strchr, wcschr, _mbschr, _mbschr_l](strchr-wcschr-mbschr-mbschr-l.md)<br/>
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>

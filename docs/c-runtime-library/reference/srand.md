@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: srand'
 title: srand
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - pseudorandom numbers
 - starting points, setting random
 - starting points
-ms.openlocfilehash: 3f6f97ad9a3bd0d7e4e88ad1797d369f012bbe5e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: bea91841b549fae09faa4345767fc22cf4d6208e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913595"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292174"
 ---
 # <a name="srand"></a>srand
 
@@ -58,7 +59,7 @@ void srand(
 *seed*<br/>
 Начальное значение для создания псевдослучайных чисел
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **srand** задает начальную точку для создания последовательности целых чисел псевдослучайное в текущем потоке. Чтобы повторно инициализировать генератор для создания той же последовательности результатов, вызовите функцию **srand** и снова используйте один и тот же аргумент *начального значения* . Любое другое значение *начального* значения задает генератору другую начальную точку в последовательности псевдослучайное. **Rand** извлекает созданные номера псевдослучайное. Вызов **функции RAND** перед любым вызовом **srand** создает ту же последовательность, что и вызов **srand** с *начальным* значением, переданным как 1.
 
@@ -78,5 +79,5 @@ void srand(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Поддержка чисел с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
-[Функция](rand.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
+[rand](rand.md)<br/>

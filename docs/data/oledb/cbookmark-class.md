@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CBookmark Class'
 title: Класс CBookmark
 ms.date: 11/04/2016
 f1_keywords:
@@ -66,12 +67,12 @@ helpviewer_keywords:
 - operator =, bookmarks
 - operator=, bookmarks
 ms.assetid: bc942f95-6f93-41d9-bb6e-bcdae4ae0b7a
-ms.openlocfilehash: 4013e40c364593676ebb099804304ffb2adb42c1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7c138776e282c287eb7e7e09b93196ac0792f7ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838481"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295072"
 ---
 # <a name="cbookmark-class"></a>Класс CBookmark
 
@@ -113,7 +114,7 @@ class CBookmark< 0 > : public CBookmarkBase
 |-|-|
 |[Оператор =](#operator)|Назначает один `CBookmark` класс другому.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `CBookmark<0>` является специализацией шаблона `CBookmark` ; ее буфер динамически создается во время выполнения.
 
@@ -133,7 +134,7 @@ CBookmark(DBLENGTH nSize);
 *нсизе*<br/>
 окне Размер буфера закладки в байтах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция устанавливает буфер в значение NULL, а размер буфера — в 0. Вторая функция задает размер буфера равным *нсизе*, а буфер — массиву байтов *нсизе* байт.
 
@@ -190,7 +191,7 @@ HRESULT SetBookmark(DBLENGTH nSize, BYTE* pBuffer) throw();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция доступна только в `CBookmark<0>` .
 

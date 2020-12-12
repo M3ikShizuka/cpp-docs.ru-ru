@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: подключение к источнику данных'
 title: Подключение к источнику данных
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - ODBC data sources [C++], connections
 - database connections [C++], MFC ODBC classes
 ms.assetid: ef6c8c98-5979-43a8-9fb5-5bb06fc59f36
-ms.openlocfilehash: 712910aca2622f2678b8b9d06b18a2fdbf9157e4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3bc5436a678d39682b89d82dd7f3ab90eb6f5bb5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213347"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295124"
 ---
 # <a name="connecting-to-a-data-source"></a>Подключение к источнику данных
 
@@ -31,7 +32,7 @@ ms.locfileid: "80213347"
 
 - Выполнение инструкций [SQL](../../data/odbc/sql.md) напрямую.
 
-После завершения работы с подключением к источнику данных необходимо закрыть объект `CDatabase` и либо уничтожить его, либо повторно использовать для нового подключения. Дополнительные сведения о подключениях к источникам данных см. в разделе [Data Source (ODBC)](../../data/odbc/data-source-odbc.md).
+После завершения работы с подключением к источнику данных необходимо закрыть `CDatabase` объект и либо уничтожить его, либо повторно использовать для нового подключения. Дополнительные сведения о подключениях к источникам данных см. в разделе [Data Source (ODBC)](../../data/odbc/data-source-odbc.md).
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кмфкриббонкустомизепропертипаже Class'
 title: Класс Кмфкриббонкустомизепропертипаже
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - CMFCRibbonCustomizePropertyPage [MFC], AddCustomCategory
 - CMFCRibbonCustomizePropertyPage [MFC], OnOK
 ms.assetid: ea32a99a-dfbe-401e-8975-aa191552532f
-ms.openlocfilehash: 92408e91b41b474da3a2da6ad0646feb3a6b8fc2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 93792858cec9d07a73bfec56a282b8d672249cf6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831844"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293603"
 ---
 # <a name="cmfcribboncustomizepropertypage-class"></a>Класс Кмфкриббонкустомизепропертипаже
 
@@ -29,7 +30,7 @@ ms.locfileid: "88831844"
 class CMFCRibbonCustomizePropertyPage: public CMFCPropertyPage
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -47,7 +48,7 @@ class CMFCRibbonCustomizePropertyPage: public CMFCPropertyPage
 |`CMFCRibbonCustomizePropertyPage::GetThisClass`|Используется платформой для получения указателя на объект [крунтимекласс](../../mfc/reference/cruntimeclass-structure.md) , связанный с этим типом класса.|
 |[Кмфкриббонкустомизепропертипаже:: ОНОК](#onok)|Вызывается системой, когда пользователь нажимает кнопку " **ОК** " в диалоговом окне " **Настройка** ".|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Если необходимо добавить пользовательские команды в диалоговое окно **Настройка** , необходимо выполнить обработку сообщения AFX_WM_ON_RIBBON_CUSTOMIZE. В обработчике сообщений создайте экземпляр `CMFCRibbonCustomizePropertyPage` объекта в стеке. Создайте список настраиваемых команд, а затем вызовите, `AddCustomCategory` чтобы добавить новую страницу в диалоговое окно " **Настройка** ".
 
@@ -95,7 +96,7 @@ void AddCustomCategory(
 *лстидс*\
 окне Содержит идентификаторы команд ленты, которые должны отображаться в пользовательской категории.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод добавляет категорию с именем *лпсзнаме* в поле со списком **команд** . Когда пользователь выбирает категорию, команды, указанные в *лстидс* , отображаются в списке команд.
 
@@ -120,7 +121,7 @@ CMFCRibbonCustomizePropertyPage(CMFCRibbonBar* pRibbonBar = NULL);
 virtual void OnOK();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию применяет параметры, выбранные в диалоговом окне **Настройка** , к панели быстрого доступа.
 

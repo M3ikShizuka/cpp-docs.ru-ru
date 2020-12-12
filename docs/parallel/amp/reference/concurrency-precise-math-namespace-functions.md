@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Concurrency::p recise_math Namespace.
 title: Функции пространства имен Concurrency::precise_math
 ms.date: 11/04/2016
 f1_keywords:
@@ -90,12 +91,12 @@ f1_keywords:
 - amp_math/Concurrency::precise_math::trunc
 - amp_math/Concurrency::precise_math::truncf
 ms.assetid: fae53ab4-d1c5-45bb-a6a0-a74258e9aea3
-ms.openlocfilehash: 770946769c60f3dd689f5cd2defd6d4c6f6ed6b5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2b96c059e919e9085aa2c26d57042d4dc3188417
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836924"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297165"
 ---
 # <a name="concurrencyprecise_math-namespace-functions"></a>Функции пространства имен Concurrency::precise_math
 
@@ -1901,7 +1902,7 @@ inline double nan(int _X) restrict(amp);
 ### <a name="parameters"></a>Параметры
 
 *_X*<br/>
-Целочисленное значение
+Целое значение
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -1918,7 +1919,7 @@ inline float nanf(int _X) restrict(amp);
 ### <a name="parameters"></a>Параметры
 
 *_X*<br/>
-Целочисленное значение
+Целое значение
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -2405,7 +2406,7 @@ inline double scalbn(
 Значение с плавающей запятой
 
 *_Y*<br/>
-Целочисленное значение
+Целое значение
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -2427,7 +2428,7 @@ inline float scalbnf(
 Значение с плавающей запятой
 
 *_Y*<br/>
-Целочисленное значение
+Целое значение
 
 ### <a name="return-value"></a>Возвращаемое значение
 

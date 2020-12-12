@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: оператор&gt;='
 title: оператор&gt;=
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,19 +14,19 @@ helpviewer_keywords:
 - operator >=
 - operator>=
 ms.assetid: 14fbebf5-8b75-4afa-a51b-3112d31c07cf
-ms.openlocfilehash: 08c73602d87cbfc31364148d9565071da7b732c4
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 1821647ebb281020cef1798cf056fbf816aa855c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687365"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297074"
 ---
 # <a name="operatorgt"></a>оператор&gt;=
 
 > [!NOTE]
-> Этот раздел находится в документации Майкрософт C++ как нефункциональный пример контейнеров, C++ используемых в стандартной библиотеке. Дополнительные сведения см. в разделе [Контейнеры стандартной библиотеки C++](../standard-library/stl-containers.md).
+> Эта статья содержится в документации по Microsoft C++ как нефункциональный пример контейнеров, используемых в стандартной библиотеке C++. Дополнительные сведения см. в разделе [Контейнеры стандартной библиотеки C++](../standard-library/stl-containers.md).
 
-Перегрузка **оператора > =** для сравнения двух объектов [контейнера](../standard-library/sample-container-class.md)шаблона класса.
+Перегрузка **оператора>=** для сравнения двух объектов [контейнера](../standard-library/sample-container-class.md)шаблона класса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -40,6 +41,6 @@ bool operator>=(
 
 Возвращает `!(left < right)`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[\<образец контейнера>](../standard-library/sample-container.md)
+[\<sample container>](../standard-library/sample-container.md)

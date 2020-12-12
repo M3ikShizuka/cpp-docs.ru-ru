@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: double_2 классе'
 title: Класс double_2
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,12 +29,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::double_2::g
 - amp_short_vectors/Concurrency::graphics::double_2::set_y
 ms.assetid: c19c2d21-3cbf-4ce5-b460-3b8253688f82
-ms.openlocfilehash: 73656415d1b8774fe8304d674872524e76ee301d
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 104fef0c035487570a23360c312684ef176f69ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126712"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97297133"
 ---
 # <a name="double_2-class"></a>Класс double_2
 
@@ -49,36 +50,36 @@ class double_2;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[Конструктор double_2](#ctor)|Перегружен. Конструктор по умолчанию инициализирует все элементы значением 0.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
-|double_2::get_x||
-|double_2::get_xy||
-|double_2::get_y||
-|double_2::get_yx||
-|double_2::ref_g||
-|double_2::ref_r||
-|double_2::ref_x||
-|double_2::ref_y||
-|double_2::set_x||
-|double_2::set_xy||
-|double_2::set_y||
-|double_2::set_yx||
+|double_2:: get_x||
+|double_2:: get_xy||
+|double_2:: get_y||
+|double_2:: get_yx||
+|double_2:: ref_g||
+|double_2:: ref_r||
+|double_2:: ref_x||
+|double_2:: ref_y||
+|double_2:: set_x||
+|double_2:: set_xy||
+|double_2:: set_y||
+|double_2:: set_yx||
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |double_2:: operator —||
 |double_2:: operator--||
@@ -91,18 +92,18 @@ class double_2;
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |Константа double_2::size||
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |double_2:: g||
 |double_2:: GR||
 |double_2:: r||
-|double_2::rg||
+|double_2:: RG||
 |double_2:: x||
 |double_2:: XY||
 |double_2:: y||
@@ -118,7 +119,7 @@ class double_2;
 
 **Пространство имен:** Concurrency:: Graphics
 
-## <a name="ctor"></a>double_2
+## <a name="double_2"></a><a name="ctor"></a> double_2
 
 Конструктор по умолчанию инициализирует все элементы значением 0.
 
@@ -174,7 +175,7 @@ explicit inline double_2(
 *_Other*<br/>
 Объект, используемый для инициализации.
 
-## <a name="double_2__size"></a>изменять
+## <a name="size"></a><a name="double_2__size"></a> изменять
 
 ```cpp
 static const int size = 2;

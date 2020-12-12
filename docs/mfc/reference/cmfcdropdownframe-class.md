@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кмфкдропдовнфраме Class'
 title: Класс Кмфкдропдовнфраме
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - CMFCDropDownFrame [MFC], RecalcLayout
 - CMFCDropDownFrame [MFC], SetAutoDestroy
 ms.assetid: 09ff81a9-de00-43ec-9df9-b626f7728c4b
-ms.openlocfilehash: 62bab0fbde364406f35edb959abb6e55a9125504
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9ab5cbaf600fe7970bdff229b43d34fd04c8fbb9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840743"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97294045"
 ---
 # <a name="cmfcdropdownframe-class"></a>Класс Кмфкдропдовнфраме
 
@@ -33,7 +34,7 @@ ms.locfileid: "88840743"
 class CMFCDropDownFrame : public CMiniFrameWnd
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -54,7 +55,7 @@ class CMFCDropDownFrame : public CMiniFrameWnd
 |[Кмфкдропдовнфраме:: RecalcLayout](#recalclayout)|Перемещает раскрывающийся кадр.|
 |[Кмфкдропдовнфраме:: Сетаутодестрой](#setautodestroy)|Задает, будет ли дочернее окно панели инструментов уничтожено автоматически.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Данный класс не предназначен для непосредственного использования в коде.
 
@@ -114,7 +115,7 @@ virtual BOOL Create(
 
 Значение TRUE, если раскрывающийся список успешно создан; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывает базовый метод [кминифрамевнд:: креатикс](../../mfc/reference/cminiframewnd-class.md#createex) для создания раскрывающегося окна с рамкой с WS_POPUP стилем. Раскрывающееся окно с рамками отображается в заданных координатах экрана. Этот метод завершается ошибкой, если метод [кминифрамевнд:: креатикс](../../mfc/reference/cminiframewnd-class.md#createex) возвращает значение false.
 
@@ -132,7 +133,7 @@ CMFCMenuBar* GetParentMenuBar() const;
 
 Указатель на родительскую строку меню раскрывающегося окна или значение NULL, если у фрейма нет родителя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод извлекает родительскую строку меню из родительской кнопки. Этот метод возвращает значение NULL, если у раскрывающегося окна нет родительской кнопки, или родительская кнопка не имеет родительской строки меню.
 
@@ -148,7 +149,7 @@ CMFCDropDownFrame* GetParentPopupMenu() const;
 
 Указатель на родительское раскрывающееся меню раскрывающегося окна или значение NULL, если у фрейма нет родителя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод извлекает родительское меню из родительской кнопки. Этот метод возвращает значение NULL, если у раскрывающегося окна нет родительской кнопки, или родительская кнопка не имеет родительского меню.
 
@@ -165,7 +166,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 *бнотифи*\
 [in] Не используется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Платформа вызывает этот метод при создании раскрывающейся рамки или изменении размера родительского окна. Этот метод вычисляет расположение и размер раскрывающегося фрейма с помощью расположения и размера родительского окна.
 
@@ -182,7 +183,7 @@ void SetAutoDestroy(BOOL bAutoDestroy = TRUE);
 *баутодестрой*<br/>
 окне Значение TRUE, чтобы автоматически удалить связанное раскрывающееся окно панели инструментов; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если *баутодестрой* имеет значение true, `CMFCDropDownFrame` деструктор уничтожает связанное раскрывающееся окно панели инструментов. Значение по умолчанию — TRUE.
 

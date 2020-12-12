@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: исвспаце, ",", "_isspace_l" _iswspace_l'
 title: isspace, iswspace, _isspace_l, _iswspace_l
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - _istspace function
 - istspace function
 ms.assetid: b851e0c0-36bb-4dac-a1a3-533540939035
-ms.openlocfilehash: 3e03d97f2e6ca82671c74f551ab8c23a11af63c2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: b55c8000bde9197d81919d663de1c6f52517596f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916617"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97292602"
 ---
 # <a name="isspace-iswspace-_isspace_l-_iswspace_l"></a>isspace, iswspace, _isspace_l, _iswspace_l
 
@@ -72,7 +73,7 @@ int _iswspace_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Проверяемое целое число.
 
 *locale*<br/>
@@ -92,7 +93,7 @@ int _iswspace_l(
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_** **истспаце**|**isspace**|[_ismbcspace](ismbcgraph-functions.md)|**исвспаце**|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -110,5 +111,5 @@ int _iswspace_l(
 ## <a name="see-also"></a>См. также раздел
 
 [Классификация символов](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Процедуры is, isw](../../c-runtime-library/is-isw-routines.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[является, подпрограммы isw](../../c-runtime-library/is-isw-routines.md)<br/>

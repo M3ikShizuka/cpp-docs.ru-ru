@@ -1,22 +1,23 @@
 ---
-title: CMFCDragFrameImpИмпл класс
+description: 'Дополнительные сведения о: Кмфкдрагфрамеимпл Class'
+title: Класс Кмфкдрагфрамеимпл
 ms.date: 10/18/2018
 f1_keywords:
 - CMFCDragFrameImpl
 helpviewer_keywords:
 - CMFCDragFrameImpl class [MFC]
 ms.assetid: 500cd824-8188-43c2-8754-b7bb46b5648a
-ms.openlocfilehash: 527fd089962e05c44a7e47b1ae52345116da4470
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 9885b750ace86d11ca573f23c7ee1c03d8926921
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81752439"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97294058"
 ---
-# <a name="cmfcdragframeimpl-class"></a>CMFCDragFrameImpИмпл класс
+# <a name="cmfcdragframeimpl-class"></a>Класс Кмфкдрагфрамеимпл
 
-Класс `CMFCDragFrameImpl` рисует прямоугольник перетаскивания, который появляется, когда пользователь перетаскивает панель в стандартном режиме док.
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+`CMFCDragFrameImpl`Класс рисует прямоугольник перетаскивания, который появляется, когда пользователь перетаскивает панель в стандартном режиме закрепления.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -26,9 +27,9 @@ class CMFCDragFrameImpl
 
 ## <a name="remarks"></a>Remarks
 
-Объект этого класса встраивается в каждый объект [класса CPane.](../../mfc/reference/cpane-class.md) Таким образом, каждая `CanFloat` панель, используюая метод, отображает прямоугольник перетаскивания, когда пользователь перетаскивает его.
+Объект этого класса внедряется в каждый объект [класса CPane](../../mfc/reference/cpane-class.md) . Таким способом, каждая панель, использующая `CanFloat` метод, отображает прямоугольник перетаскивания, когда пользователь перетаскивает его.
 
-Вы можете контролировать толщину прямоугольника перетаскивания, используя [AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat](afx-global-data-structure.md#m_ndragframethicknessfloat) и [AFX_GLOBAL_DATA::m_nDragFrameThicknessDock](afx-global-data-structure.md#m_ndragframethicknessdock).
+Толщиной прямоугольника перетаскивания можно управлять с помощью [AFX_GLOBAL_DATA:: m_nDragFrameThicknessFloat](afx-global-data-structure.md#m_ndragframethicknessfloat) и [AFX_GLOBAL_DATA:: m_nDragFrameThicknessDock](afx-global-data-structure.md#m_ndragframethicknessdock).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -36,9 +37,9 @@ class CMFCDragFrameImpl
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxdragframeimpl.h
+**Заголовок:** афксдрагфрамеимпл. h
 
-## <a name="cmfcdragframeimplenddrawdragframe"></a><a name="enddrawdragframe"></a>CMFCDragFrameImpl::EndDrawDragFrame
+## <a name="cmfcdragframeimplenddrawdragframe"></a><a name="enddrawdragframe"></a> Кмфкдрагфрамеимпл:: Енддравдрагфраме
 
 ```cpp
 void EndDrawDragFrame(BOOL bClearInternalRects = TRUE);
@@ -46,11 +47,11 @@ void EndDrawDragFrame(BOOL bClearInternalRects = TRUE);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *bClearInternalRects*<br/>
+окне *бклеаринтерналректс*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcdragframeimplinit"></a><a name="init"></a>CMFCDragFrameImpl::Init
+## <a name="cmfcdragframeimplinit"></a><a name="init"></a> Кмфкдрагфрамеимпл:: init
 
 ```cpp
 void Init(CWnd* pDraggedWnd);
@@ -58,11 +59,11 @@ void Init(CWnd* pDraggedWnd);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDraggedWnd*<br/>
+окне *пдрагжедвнд*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcdragframeimplmovedragframe"></a><a name="movedragframe"></a>CMFCDragFrameImpl::MoveDragFrame
+## <a name="cmfcdragframeimplmovedragframe"></a><a name="movedragframe"></a> Кмфкдрагфрамеимпл:: Моведрагфраме
 
 ```cpp
 void MoveDragFrame(BOOL bForceMove = FALSE);
@@ -70,11 +71,11 @@ void MoveDragFrame(BOOL bForceMove = FALSE);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *bForceMove*<br/>
+окне *бфорцемове*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcdragframeimplplacetabpredocking"></a><a name="placetabpredocking"></a>CMFCDragFrameImpl::PлейтакТабДокинг
+## <a name="cmfcdragframeimplplacetabpredocking"></a><a name="placetabpredocking"></a> Кмфкдрагфрамеимпл::P Лацетабпредоккинг
 
 ```cpp
 void PlaceTabPreDocking(
@@ -86,15 +87,15 @@ void PlaceTabPreDocking(CWnd* pCBarToPlaceOn);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pTabbedBar*<br/>
+окне *птаббедбар*<br/>
 
-(в) *bFirstTime*<br/>
+окне *бфирсттиме*<br/>
 
-(в) *pCbartoplaceon*<br/>
+окне *пкбартоплацеон*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcdragframeimplremovetabpredocking"></a><a name="removetabpredocking"></a>CMFCDragFrameImpl::RemoveTabPreDocking
+## <a name="cmfcdragframeimplremovetabpredocking"></a><a name="removetabpredocking"></a> Кмфкдрагфрамеимпл:: Ремоветабпредоккинг
 
 ```cpp
 void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
@@ -102,20 +103,20 @@ void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pOldTargetBar*<br/>
+окне *полдтаржетбар*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcdragframeimplresetstate"></a><a name="resetstate"></a>CMFCDragFrameImpl::Resetstate
+## <a name="cmfcdragframeimplresetstate"></a><a name="resetstate"></a> Кмфкдрагфрамеимпл:: ResetState
 
 ```cpp
 void ResetState();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
-[CPane Class](../../mfc/reference/cpane-class.md)
+[Класс CPane](../../mfc/reference/cpane-class.md)
