@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CAnimateCtrl Class'
 title: Класс CAnimateCtrl
 ms.date: 11/04/2016
 f1_keywords:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - CAnimateCtrl [MFC], Seek
 - CAnimateCtrl [MFC], Stop
 ms.assetid: 5e8eb1bd-96b7-47b8-8de2-6bcbb3cc299b
-ms.openlocfilehash: 651b5775886374f3fcc95ab6b2cb3d892d9d77e8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fe63e30ae53e6f5b3d308c8e09f0bfbaad76b2ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87183387"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322750"
 ---
 # <a name="canimatectrl-class"></a>Класс CAnimateCtrl
 
@@ -41,11 +42,11 @@ ms.locfileid: "87183387"
 class CAnimateCtrl : public CWnd
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CAnimateCtrl:: CAnimateCtrl](#canimatectrl)|Формирует объект `CAnimateCtrl`.|
 
@@ -56,13 +57,13 @@ class CAnimateCtrl : public CWnd
 |[CAnimateCtrl:: Close](#close)|Закрывает ролик AVI.|
 |[CAnimateCtrl:: Create](#create)|Создает элемент управления анимации и прикрепляет его к `CAnimateCtrl` объекту.|
 |[CAnimateCtrl:: Креатикс](#createex)|Создает элемент управления анимации с заданными расширенными стилями Windows и прикрепляет его к `CAnimateCtrl` объекту.|
-|[CAnimateCtrl:: воспроизвести](#isplaying)|Указывает, воспроизводится ли музыкальный ролик (AVI).|
+|[CAnimateCtrl:: воспроизвести](#isplaying)|Указывает, воспроизводится ли ролик с чередованием Audio-Video (AVI).|
 |[CAnimateCtrl:: Open](#open)|Открывает ролик AVI из файла или ресурса и отображает первый кадр.|
 |[CAnimateCtrl::Pный макет](#play)|Воспроизводит ролик AVI без звука.|
 |[CAnimateCtrl:: Seek](#seek)|Отображает выделенный один кадр из AVI-клипа.|
 |[CAnimateCtrl:: останавливаться](#stop)|Останавливает воспроизведение клипа AVI.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Этот элемент управления (и, следовательно, `CAnimateCtrl` класс) доступен только для программ, работающих под управлением windows 95, windows 98 и Windows NT версии 3,51 и более поздних версий.
 
@@ -102,7 +103,7 @@ class CAnimateCtrl : public CWnd
 
 **Заголовок:** afxcmn.h
 
-## <a name="canimatectrlcanimatectrl"></a><a name="canimatectrl"></a>CAnimateCtrl:: CAnimateCtrl
+## <a name="canimatectrlcanimatectrl"></a><a name="canimatectrl"></a> CAnimateCtrl:: CAnimateCtrl
 
 Формирует объект `CAnimateCtrl`.
 
@@ -110,7 +111,7 @@ class CAnimateCtrl : public CWnd
 CAnimateCtrl();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Перед выполнением любых других операций с созданным объектом необходимо вызвать функцию [создания](#create) члена.
 
@@ -118,7 +119,7 @@ CAnimateCtrl();
 
 [!code-cpp[NVC_MFCControlLadenDialog#56](../../mfc/codesnippet/cpp/canimatectrl-class_1.cpp)]
 
-## <a name="canimatectrlclose"></a><a name="close"></a>CAnimateCtrl:: Close
+## <a name="canimatectrlclose"></a><a name="close"></a> CAnimateCtrl:: Close
 
 Закрывает ролик AVI, который был ранее открыт в элементе управления Animation (при его наличии), и удаляет его из памяти.
 
@@ -134,7 +135,7 @@ BOOL Close();
 
   См. пример для [CAnimateCtrl:: CAnimateCtrl](#canimatectrl).
 
-## <a name="canimatectrlcreate"></a><a name="create"></a>CAnimateCtrl:: Create
+## <a name="canimatectrlcreate"></a><a name="create"></a> CAnimateCtrl:: Create
 
 Создает элемент управления анимации и прикрепляет его к `CAnimateCtrl` объекту.
 
@@ -164,7 +165,7 @@ virtual BOOL Create(
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Построение создается `CAnimateCtrl` в два этапа. Сначала вызовите конструктор, а затем вызовите метод `Create` , который создает элемент управления анимации и присоединяет его к `CAnimateCtrl` объекту.
 
@@ -184,7 +185,7 @@ virtual BOOL Create(
 
   См. пример для [CAnimateCtrl:: CAnimateCtrl](#canimatectrl).
 
-## <a name="canimatectrlcreateex"></a><a name="createex"></a>CAnimateCtrl:: Креатикс
+## <a name="canimatectrlcreateex"></a><a name="createex"></a> CAnimateCtrl:: Креатикс
 
 Создает элемент управления (дочернее окно) и связывает его с `CAnimateCtrl` объектом.
 
@@ -218,13 +219,13 @@ virtual BOOL CreateEx(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте `CreateEx` вместо [CREATE](#create) , чтобы применить расширенные стили Windows, заданные **WS_EX_** в расширенном стиле Windows.
 
-## <a name="canimatectrlisplaying"></a><a name="isplaying"></a>CAnimateCtrl:: воспроизвести
+## <a name="canimatectrlisplaying"></a><a name="isplaying"></a> CAnimateCtrl:: воспроизвести
 
-Указывает, воспроизводится ли музыкальный ролик (AVI).
+Указывает, воспроизводится ли ролик с чередованием Audio-Video (AVI).
 
 ```
 BOOL IsPlaying() const;
@@ -234,11 +235,11 @@ BOOL IsPlaying() const;
 
 Значение TRUE, если воспроизводится ролик AVI; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [ACM_ISPLAYING](/windows/win32/Controls/acm-isplaying) сообщение, описанное в Windows SDK.
 
-## <a name="canimatectrlopen"></a><a name="open"></a>CAnimateCtrl:: Open
+## <a name="canimatectrlopen"></a><a name="open"></a> CAnimateCtrl:: Open
 
 Вызовите эту функцию, чтобы открыть ролик AVI и отобразить его первый кадр.
 
@@ -259,11 +260,11 @@ BOOL Open(UINT nID);
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Ресурс AVI загружается из модуля, который создал элемент управления Animation.
 
-`Open`не поддерживает звук в ролике AVI; можно открывать только автоматические клипы AVI.
+`Open` не поддерживает звук в ролике AVI; можно открывать только автоматические клипы AVI.
 
 Если элемент управления "анимация" имеет `ACS_AUTOPLAY` стиль, элемент управления "анимация" автоматически начнет воспроизведение клипа сразу после его открытия. Он будет продолжать воспроизводить клип в фоновом режиме, пока поток продолжает выполняться. После завершения воспроизведения клип будет автоматически повторяться.
 
@@ -275,7 +276,7 @@ BOOL Open(UINT nID);
 
   См. пример для [CAnimateCtrl:: CAnimateCtrl](#canimatectrl).
 
-## <a name="canimatectrlplay"></a><a name="play"></a>CAnimateCtrl::Pный макет
+## <a name="canimatectrlplay"></a><a name="play"></a> CAnimateCtrl::Pный макет
 
 Вызывайте эту функцию для воспроизведения клипа AVI в элементе управления анимации.
 
@@ -301,7 +302,7 @@ BOOL Play(
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Элемент управления "анимация" будет воспроизводить клип в фоновом режиме, пока поток продолжит выполнение. Если элемент управления "анимация" имеет `ACS_TRANSPARENT` стиль, ролик AVI будет воспроизводиться с использованием прозрачного фона, а не цвета фона, заданного в анимированном фрагменте.
 
@@ -309,7 +310,7 @@ BOOL Play(
 
   См. пример для [CAnimateCtrl:: CAnimateCtrl](#canimatectrl).
 
-## <a name="canimatectrlseek"></a><a name="seek"></a>CAnimateCtrl:: Seek
+## <a name="canimatectrlseek"></a><a name="seek"></a> CAnimateCtrl:: Seek
 
 Вызовите эту функцию, чтобы статически отображать один кадр фрагмента AVI.
 
@@ -326,7 +327,7 @@ BOOL Seek(UINT nTo);
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если элемент управления "анимация" имеет `ACS_TRANSPARENT` стиль, ролик AVI будет отображаться с использованием прозрачного фона, а не цвета фона, заданного в анимированном фрагменте.
 
@@ -334,7 +335,7 @@ BOOL Seek(UINT nTo);
 
 См. пример для [CAnimateCtrl:: CAnimateCtrl](#canimatectrl).
 
-## <a name="canimatectrlstop"></a><a name="stop"></a>CAnimateCtrl:: останавливаться
+## <a name="canimatectrlstop"></a><a name="stop"></a> CAnimateCtrl:: останавливаться
 
 Вызовите эту функцию, чтобы не воспроизводить ролик AVI в элементе управления анимации.
 

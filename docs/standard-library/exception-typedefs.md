@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; &gt; определения типов исключений'
 title: Определения типов &lt;exception&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 - exception/std::terminate_handler
 - exception/std::unexpected_handler
 ms.assetid: 2a338480-35e2-46f7-b223-52d4e84a5768
-ms.openlocfilehash: f71c03e0c0a2e7ea4f37a85e85628ccf630ea317
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5df3f49a66cced171d96c2dedad7b239535519a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368728"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324533"
 ---
 # <a name="ltexceptiongt-typedefs"></a>Определения типов &lt;exception&gt;
 
-## <a name="exception_ptr"></a><a name="exception_ptr"></a>Exception_ptr
+## <a name="exception_ptr"></a><a name="exception_ptr"></a> exception_ptr
 
 Тип, который описывает указатель на исключение.
 
@@ -23,7 +24,7 @@ ms.locfileid: "81368728"
 typedef unspecified exception_ptr;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Неуказанный внутренний класс, используемый для реализации типа `exception_ptr`.
 
@@ -31,15 +32,15 @@ typedef unspecified exception_ptr;
 
 При объявлении переменной `exception_ptr` эта переменная не связана ни с одним исключением. То есть в поле ссылки на исключение находится значение NULL. Такой объект `exception_ptr` называется *exception_ptr null*.
 
-Используйте функцию `current_exception` или `make_exception_ptr` для назначения исключения объекту `exception_ptr`. При назначении исключения переменной `exception_ptr` поле ссылки на исключение переменной указывает на копию исключения. При нехватке памяти для копирования исключения поле ссылки на исключение указывает на копию исключения [std::bad_alloc](../standard-library/bad-alloc-class.md). Если `current_exception` функция `make_exception_ptr` не может скопировать исключение по какой-либо другой причине, функция вызывает функцию `terminate` CRT для выхода из текущего процесса.
+Используйте функцию `current_exception` или `make_exception_ptr` для назначения исключения объекту `exception_ptr`. При назначении исключения переменной `exception_ptr` поле ссылки на исключение переменной указывает на копию исключения. При нехватке памяти для копирования исключения поле ссылки на исключение указывает на копию исключения [std::bad_alloc](../standard-library/bad-alloc-class.md). Если `current_exception` функция или `make_exception_ptr` не может скопировать исключение по какой-либо другой причине, функция вызывает `terminate` функцию CRT для выхода из текущего процесса.
 
 Несмотря на свое имя, объект `exception_ptr` не является указателем. Он не повинуется семантике указателя и не может использоваться с операторами доступа к членам указателей (`->`) или косвенного обращения (*). Объект `exception_ptr` не имеет открытых данных-членов и функций-членов.
 
-**Сравнения:**
+**Сравнения**
 
 Можно использовать операторы равенства (`==`) и неравенства (`!=`) для сравнения двух объектов `exception_ptr`. Эти операторы не сравнивают бинарное значение (битовый шаблон) структур `EXCEPTION_RECORD`, которые представляют исключения. Вместо этого операторы сравнивают адреса в поле ссылки на исключение объектов `exception_ptr`. Поэтому `exception_ptr` со значением null и значение NULL при сравнении считаются равными.
 
-## <a name="terminate_handler"></a><a name="terminate_handler"></a>terminate_handler
+## <a name="terminate_handler"></a><a name="terminate_handler"></a> terminate_handler
 
 Тип, который описывает указатель на функцию, подходящую для использования в качестве `terminate_handler`.
 
@@ -47,7 +48,7 @@ typedef unspecified exception_ptr;
 typedef void (*terminate_handler)();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип, который описывает указатель на функцию, подходящую для использования в качестве обработчика завершения.
 
@@ -55,7 +56,7 @@ typedef void (*terminate_handler)();
 
 См. [set_terminate](../standard-library/exception-functions.md#set_terminate), чтобы ознакомиться с примером использования `terminate_handler`.
 
-## <a name="unexpected_handler"></a><a name="unexpected_handler"></a>unexpected_handler
+## <a name="unexpected_handler"></a><a name="unexpected_handler"></a> unexpected_handler
 
 Тип, который описывает указатель на функцию, подходящую для использования в качестве `unexpected_handler`.
 

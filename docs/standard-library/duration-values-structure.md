@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура duration_values'
 title: Структура duration_values
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 - chrono/std::chrono::duration_values::min
 - chrono/std::chrono::duration_values::zero
 ms.assetid: 7f66d2e3-1faf-47c3-b47e-08f2a87f20e8
-ms.openlocfilehash: e2c03b4540ea5f89843562d1310b71635b3bc259
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9bf784b0976a06c6d395498084508251d9ebd4bb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368744"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324479"
 ---
 # <a name="duration_values-structure"></a>Структура duration_values
 
@@ -25,23 +26,23 @@ template <class Rep>
 struct duration_values;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[Макс](#max)|Статический. Указывает верхний предел для значения типа `Rep`.|
-|[Мин](#min)|Статический. Указывает нижний предел для значения типа `Rep`.|
-|[Нуля](#zero)|Статический. Возвращает `Rep(0)`.|
+|[max](#max)|Статический. Указывает верхний предел для значения типа `Rep`.|
+|[min](#min)|Статический. Указывает нижний предел для значения типа `Rep`.|
+|[нуль](#zero)|Статический. Возвращает `Rep(0)`.|
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<хроно>
+**Заголовок:**\<chrono>
 
 **Пространство имен:** std::chrono
 
-## <a name="duration_valuesmax"></a><a name="max"></a>duration_values::max
+## <a name="duration_valuesmax"></a><a name="max"></a> duration_values:: Max
 
 Статический метод, который возвращает верхнюю границу значений типа `Ref`.
 
@@ -53,11 +54,11 @@ static constexpr Rep max();
 
 Фактически возвращает `numeric_limits<Rep>::max()`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если `Rep` является пользовательским типом, возвращаемое значение должно быть больше [duration_values::zero](#zero).
 
-## <a name="duration_valuesmin"></a><a name="min"></a>duration_values::мин
+## <a name="duration_valuesmin"></a><a name="min"></a> duration_values:: min
 
 Статический метод, который возвращает нижнюю границу для значений типа `Ref`.
 
@@ -69,11 +70,11 @@ static constexpr Rep min();
 
 Фактически возвращает `numeric_limits<Rep>::lowest()`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если `Rep` является пользовательским типом, возвращаемое значение должно быть меньше или равно [duration_values::zero](#zero).
 
-## <a name="duration_valueszero"></a><a name="zero"></a>duration_values::нулевой
+## <a name="duration_valueszero"></a><a name="zero"></a> duration_values:: Zero
 
 Возвращает `Rep(0)`.
 
@@ -81,11 +82,11 @@ static constexpr Rep min();
 static constexpr Rep zero();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если `Rep` является пользовательским типом, возвращаемое значение должно представлять аддитивную бесконечность.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Справка по файлам заголовка](../standard-library/cpp-standard-library-header-files.md)\
-[\<хроно>](../standard-library/chrono.md)
+[Справочник по файлам заголовков](../standard-library/cpp-standard-library-header-files.md)\
+[\<chrono>](../standard-library/chrono.md)

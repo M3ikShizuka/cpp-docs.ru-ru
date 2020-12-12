@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: binary_negate классе'
 title: Класс binary_negate
 ms.date: 02/21/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - binary_negate class
 ms.assetid: 7b86f02c-af7e-4c7f-9df1-08addae4dd65
-ms.openlocfilehash: 01396384cbd551cca5682c7ffd1b31d89e6d1dc2
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: f97b1ec31623ece91c76b1195c87f75e8cdfd2eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688402"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325536"
 ---
 # <a name="binary_negate-class"></a>Класс binary_negate
 
@@ -33,22 +34,22 @@ class binary_negate
 
 ### <a name="parameters"></a>Параметры
 
-@No__t_1 *Func*
+*Функцию*\
 Бинарная функция, которая должна быть инвертирована.
 
-*left* \
+*слева*\
 Левый операнд бинарной функции, которая должна быть инвертирована.
 
-*справа* \
+*Правильно*\
 Правый операнд бинарной функции, которая должна быть инвертирована.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Отрицание бинарной функции.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
-Шаблон класса хранит копию объекта бинарной функции *Func*. Он определяет свою функцию члена `operator()` как возвращаемый `!Func(left, right)`.
+Шаблон класса хранит копию объекта бинарной функции *Func*. Он определяет свою функцию члена `operator()` как возвращающую `!Func(left, right)` .
 
 Конструктор `binary_negate` редко используется напрямую. Вспомогательная функция [not2](../standard-library/functional-functions.md#not2) обычно выбирается для объявления и использования предиката адаптера **binary_negator**.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: классе экстента (C++ AMP)'
 title: Касс extent (C++ AMP)
 ms.date: 03/27/2019
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - extent structure
 ms.assetid: edb5de3d-3935-4dbb-8365-4cc6c4fb0269
-ms.openlocfilehash: b9fd0ffb0c3ac6e0b80823e9f31c3615a045262b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fb355d0ab0676256df42a880722ebaac33eb3cb5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222736"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325867"
 ---
 # <a name="extent-class-c-amp"></a>Касс extent (C++ AMP)
 
@@ -45,7 +46,7 @@ class extent;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Конструктор экстента](#ctor)|Инициализирует новый экземпляр класса `extent`.|
 
@@ -55,7 +56,7 @@ class extent;
 |----------|-----------------|
 |[contains](#contains)|Проверяет, имеет ли указанный `extent` объект указанный ранг.|
 |[size](#size)|Возвращает общий линейный размер экстента (в единицах элементов).|
-|[tile](#tile)|Создает `tiled_extent` объект с экстентами мозаики, заданными заданными измерениями.|
+|[Tile](#tile)|Создает `tiled_extent` объект с экстентами мозаики, заданными заданными измерениями.|
 
 ### <a name="public-operators"></a>Открытые операторы
 
@@ -83,7 +84,7 @@ class extent;
 
 `extent`
 
-## <a name="contains"></a><a name="contains"></a>содержащих
+## <a name="contains"></a><a name="contains"></a> содержащих
 
 Указывает, содержится ли указанное значение [индекса](index-class.md) в объекте "экстент".
 
@@ -100,9 +101,9 @@ bool contains(const index<rank>& _Index) const restrict(amp,cpu);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-**`true`**, если указанное значение *индекса* содержится в `extent` объекте; в противном случае — **`false`** .
+**`true`** , если указанное значение *индекса* содержится в `extent` объекте; в противном случае — **`false`** .
 
-## <a name="extent"></a><a name="ctor"></a>экстент
+## <a name="extent"></a><a name="ctor"></a> экстент
 
 Инициализирует новый экземпляр класса "экстент".
 
@@ -137,13 +138,13 @@ explicit extent(const int _Array[_Rank])restrict(amp,cpu);
 *_Other*<br/>
 `extent`Объект, на котором основан новый `extent` объект.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Конструктор по умолчанию инициализирует `extent` объект с рангом 3.
 
 Если массив используется для создания `extent` объекта, длина массива должна совпадать с рангом `extent` объекта.
 
-## <a name="operator"></a><a name="operator_mod_eq"></a>Оператор% =
+## <a name="operator"></a><a name="operator_mod_eq"></a> Оператор% =
 
 Вычисляет остаток от деления каждого элемента в экстенте, если этот элемент делится на число.
 
@@ -162,7 +163,7 @@ extent<_Rank>& operator%=(int _Rhs) restrict(cpu, direct3d);
 
 Объект `extent`.
 
-## <a name="operator"></a><a name="operator_star_eq"></a>operator * =
+## <a name="operator"></a><a name="operator_star_eq"></a> operator * =
 
 Умножает каждый элемент в объекте "экстент" на указанное число.
 
@@ -181,7 +182,7 @@ extent<_Rank>& operator*=(int _Rhs) restrict(amp,cpu);
 
 Объект `extent`.
 
-## <a name="operator"></a><a name="operator_add"></a>operator +
+## <a name="operator"></a><a name="operator_add"></a> operator +
 
 Возвращает новый `extent` объект, созданный путем добавления соответствующих `index` элементов и `extent` .
 
@@ -200,7 +201,7 @@ extent<_Rank> operator+(const index<_Rank>& _Rhs) restrict(amp,cpu);
 
 Новый объект `extent`.
 
-## <a name="operator"></a><a name="operator_add_add"></a>operator + +
+## <a name="operator"></a><a name="operator_add_add"></a> operator + +
 
 Увеличивает каждый элемент объекта "экстент".
 
@@ -215,7 +216,7 @@ extent<_Rank> operator++(int)restrict(amp,cpu);
 
 Для оператора префикса — `extent` объект ( **`*this`** ). Для оператора суффикса — новый `extent` объект.
 
-## <a name="operator"></a><a name="operator_add_eq"></a>operator + =
+## <a name="operator"></a><a name="operator_add_eq"></a> operator + =
 
 Добавляет указанный номер к каждому элементу объекта "экстент".
 
@@ -236,7 +237,7 @@ extent<_Rank>& operator+=(int _Rhs) restrict(amp,cpu);
 
 Результирующий объект `extent`.
 
-## <a name="operator-"></a><a name="operator_min"></a>станции
+## <a name="operator-"></a><a name="operator_min"></a> станции
 
 Создает новый `extent` объект путем вычитания каждого элемента указанного `index` объекта из соответствующего элемента в этом `extent` объекте.
 
@@ -255,7 +256,7 @@ extent<_Rank> operator-(const index<_Rank>& _Rhs) restrict(amp,cpu);
 
 Новый объект `extent`.
 
-## <a name="operator--"></a><a name="operator_min_min"></a>Оператор--
+## <a name="operator--"></a><a name="operator_min_min"></a> Оператор--
 
 Уменьшает каждый элемент в объекте "экстент".
 
@@ -270,7 +271,7 @@ extent<_Rank> operator--(int)restrict(amp,cpu);
 
 Для оператора префикса — `extent` объект ( **`*this`** ). Для оператора суффикса — новый `extent` объект.
 
-## <a name="operator"></a><a name="operator_div_eq"></a>Оператор/=
+## <a name="operator"></a><a name="operator_div_eq"></a> Оператор/=
 
 Делит каждый элемент в объекте "экстент" на указанное число.
 
@@ -289,7 +290,7 @@ extent<_Rank>& operator/=(int _Rhs) restrict(amp,cpu);
 
 Объект `extent`.
 
-## <a name="operator-"></a><a name="operator_min_eq"></a>Оператор-=
+## <a name="operator-"></a><a name="operator_min_eq"></a> Оператор-=
 
 Вычитает указанное число из каждого элемента объекта "экстент".
 
@@ -310,7 +311,7 @@ extent<_Rank>& operator-=(int _Rhs) restrict(amp,cpu);
 
 Результирующий объект `extent`.
 
-## <a name="operator"></a><a name="operator_eq"></a>Оператор =
+## <a name="operator"></a><a name="operator_eq"></a> Оператор =
 
 Копирует содержимое другого объекта "расширение" в этот объект.
 
@@ -329,7 +330,7 @@ extent<_Rank>& operator=(const extent<_Rank>& _Other) restrict(amp,cpu);
 
 Ссылка на этот `extent` объект.
 
-## <a name="extentoperator-"></a><a name="operator_at"></a>оператор "экстент::"\[\]
+## <a name="extentoperator-"></a><a name="operator_at"></a> оператор "экстент::" \[\]
 
 Возвращает элемент, расположенный по указанному индексу.
 
@@ -349,7 +350,7 @@ int& operator[](unsigned int _Index) restrict(amp,cpu);
 
 Элемент, расположенный по указанному индексу.
 
-## <a name="rank"></a><a name="rank_constant"></a>Рейтинг
+## <a name="rank"></a><a name="rank_constant"></a> Рейтинг
 
 Хранит ранг объекта "экстент".
 
@@ -359,7 +360,7 @@ int& operator[](unsigned int _Index) restrict(amp,cpu);
 static const int rank = _Rank;
 ```
 
-## <a name="size"></a><a name="size"></a>изменять
+## <a name="size"></a><a name="size"></a> изменять
 
 Возвращает общий линейный размер `extent` объекта (в единицах элементов).
 
@@ -369,7 +370,7 @@ static const int rank = _Rank;
 unsigned int size() const restrict(amp,cpu);
 ```
 
-## <a name="tile"></a><a name="tile"></a>Tile
+## <a name="tile"></a><a name="tile"></a> Tile
 
 Создает объект tiled_extent с указанными измерениями плитки.
 

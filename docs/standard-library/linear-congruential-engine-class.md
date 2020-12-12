@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: linear_congruential_engine классе'
 title: Класс linear_congruential_engine
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - linear_congruential_engine class
 ms.assetid: 30e00ca6-1933-4701-9561-54f3e810a5a1
-ms.openlocfilehash: 8701570787275e853543e723f6461b8ad460f96f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b2171623190180cabc46dd760debabdefb9afd77
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845449"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323542"
 ---
 # <a name="linear_congruential_engine-class"></a>Класс linear_congruential_engine
 
@@ -49,13 +50,13 @@ class linear_congruential_engine{
 Беззнаковый целочисленный тип результата. Возможные типы см. в разделе [\<random>](../standard-library/random.md) .
 
 *Конкретного*\
-**Множитель**. **Предварительные условия **: см. раздел "Примечания".
+**Множитель**. **Предварительные условия**: см. раздел "Примечания".
 
 *Ц*\
-**Шаг приращения**. **Предварительные условия **: см. раздел "Примечания".
+**Шаг приращения**. **Предварительные условия**: см. раздел "Примечания".
 
 *Пн*\
-**Модуль**. **Предварительные условия **: см. раздел "Примечания".
+**Модуль**. **Предварительные условия**: см. раздел "Примечания".
 
 ## <a name="members"></a>Элементы
 
@@ -70,7 +71,7 @@ class linear_congruential_engine{
 
 Дополнительные сведения о членах подсистемы см [\<random>](../standard-library/random.md) . в разделе.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `linear_congruential_engine`Шаблон класса является простейшим механизмом генератора, но не самым быстрым или самым высоким качеством. Улучшением этого механизма является [substract_with_carry_engine](../standard-library/subtract-with-carry-engine-class.md). Ни один из этих механизмов не обеспечивает такую же скорость и качество результатов, как [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md).
 

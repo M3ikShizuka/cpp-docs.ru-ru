@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; Операторы deque &gt;'
 title: Операторы &lt;deque&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,16 +17,16 @@ helpviewer_keywords:
 - std::operator&lt; (deque)
 - std::operator&lt;= (deque)
 - std::operator== (deque)
-ms.openlocfilehash: d91fe64e7d06a80402a0a540be8f63d98ea96d37
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f162a234aec66982e274755e7898cbbc1c63ab22
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222489"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324565"
 ---
 # <a name="ltdequegt-operators"></a>Операторы &lt;deque&gt;
 
-## <a name="operator"></a><a name="op_neq"></a>operator! =
+## <a name="operator"></a><a name="op_neq"></a> operator! =
 
 Проверяет неравенство объекта deque слева от оператора объекту deque справа от оператора.
 
@@ -45,7 +46,7 @@ bool operator!=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 **`true`** значение, если объекты deque не равны; **`false`** значение, если объекты deque равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами deque основывается на попарном сравнении элементов этих списков. Два объекта deque, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -76,7 +77,7 @@ int main( )
 The deques are not equal.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt"></a>станции&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> станции&lt;
 
 Проверяет, меньше ли объект deque слева от оператора объекта deque справа от оператора.
 
@@ -96,7 +97,7 @@ bool operator<(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
 
 **`true`** значение, если deque слева от оператора меньше и не равно deque с правой стороны оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами deque основывается на попарном сравнении элементов этих списков. Отношение «меньше» между двумя объектами основывается на сравнении первой пары неравных элементов.
 
@@ -131,7 +132,7 @@ int main( )
 Deque c1 is less than deque c2.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>станции&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> станции&lt;=
 
 Проверяет, меньше или равен объект deque слева от оператора объекту deque справа от оператора.
 
@@ -151,7 +152,7 @@ bool operator<=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 **`true`** Если deque слева от оператора меньше или равен значению deque в правой части оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами deque основывается на попарном сравнении элементов этих списков. Отношение «меньше или равно» между двумя объектами основывается на сравнении первой пары неравных элементов.
 
@@ -186,7 +187,7 @@ int main( )
 Deque c1 is less than or equal to deque c2.
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>Оператор = =
+## <a name="operator"></a><a name="op_eq_eq"></a> Оператор = =
 
 Проверяет равенство объекта deque слева от оператора объекту deque справа от оператора.
 
@@ -206,7 +207,7 @@ bool operator==(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 **`true`** значение, если deque слева от оператора равно deque справа от оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами deque основывается на попарном сравнении элементов этих списков. Два объекта deque равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -244,7 +245,7 @@ The deques are equal.
 The deques are not equal.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt"></a>станции&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> станции&gt;
 
 Проверяет, больше ли объект deque слева от оператора объекта deque справа от оператора.
 
@@ -264,7 +265,7 @@ bool operator>(const deque<Type, Allocator>& left, const deque<Type, Allocator>&
 
 **`true`** Если deque в левой части оператора больше, чем deque справа от оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами deque основывается на попарном сравнении элементов этих списков. Отношение «больше» между двумя объектами основывается на сравнении первой пары неравных элементов.
 
@@ -300,7 +301,7 @@ int main( )
 Deque c1 is greater than deque c2.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>станции&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> станции&gt;=
 
 Проверяет, больше или равен ли объект deque слева от оператора объекту deque справа от оператора.
 
@@ -320,7 +321,7 @@ bool operator>=(const deque<Type, Allocator>& left, const deque<Type, Allocator>
 
 **`true`** Если deque слева от оператора больше или равен значению deque в правой части оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами deque основывается на попарном сравнении элементов этих списков. Отношение «больше или равно» между двумя объектами основывается на сравнении первой пары неравных элементов.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: запуск и завершение программы C++'
 title: Запуск и завершение программ C++
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - startup code, and C++ program termination
 - main function, program startup
 ms.assetid: f72c8f76-f507-4ddd-a270-7b60f4fed625
-ms.openlocfilehash: e59e8852172a998e4bf4f42f9f919dc29c2ded85
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 644be6d4392f8e41b1d1cf7d45b484ed9903d463
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450649"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324791"
 ---
 # <a name="c-program-startup-and-termination"></a>Запуск и завершение программ C++
 
@@ -34,7 +35,7 @@ ms.locfileid: "68450649"
 
 Как и в C, возврат из `main` или вызов `exit` вызывает все функции, зарегистрированные с `atexit`, в обратном порядке из реестра. Исключение, созданное такой зарегистрированной функцией, вызывает `terminate`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Общие сведения о стандартной библиотеке C++](../standard-library/cpp-standard-library-overview.md)\
-[Потокобезопасность в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: &lt; cstdlib&gt;'
 title: '&lt;cstdlib&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,23 +7,23 @@ f1_keywords:
 helpviewer_keywords:
 - cstdlib header
 ms.assetid: 0a6aaebf-84e9-4b60-ae90-17e11981cf54
-ms.openlocfilehash: 1b20e13a43c5d223332af70a91e096cedc284a43
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8ab3ecc7a2db1d1cf90c69230c34a301587fc1e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230056"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324726"
 ---
 # <a name="ltcstdlibgt"></a>&lt;cstdlib&gt;
 
 Включает заголовок стандартной библиотеки C \<stdlib.h> и добавляет связанные имена в `std` пространство имен. Включение этого заголовка гарантирует, что имена, объявленные с помощью внешней компоновки в заголовке стандартной библиотеки C, объявляются в `std` пространстве имен.
 
 > [!NOTE]
-> \<stdlib.h>не включает тип **`wchar_t`** .
+> \<stdlib.h> не включает тип **`wchar_t`** .
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок**:\<cstdlib>
+**Заголовок**: \<cstdlib>
 
 **Пространство имен:** std
 
@@ -54,10 +55,10 @@ extern "C++" using compare-pred = int(const void*, const void*);
 
 ## <a name="start-and-termination-functions"></a>Функции запуска и завершения
 
-|Компонент|Описание|
+|Функция|Описание|
 |-|-|
 |[_Exit](#_exit)|Завершает программу без использования деструкторов или зарегистрированных функций.|
-|[abort](#abort)|Завершает программу без использования деструкторов.|
+|[рвал](#abort)|Завершает программу без использования деструкторов.|
 |[atexit](#atexit)|Регистрирует функцию для завершения программы.|
 |[exit](#exit)|Уничтожает объекты с потоком и статическим хранилищем, а затем возвращает управление.|
 |[at_quick_exit](#at_quick_exit)|Регистрирует функцию без аргументов для завершения программы.|
@@ -65,27 +66,27 @@ extern "C++" using compare-pred = int(const void*, const void*);
 |[getenv](#getenv)|См. Справочник по стандартной библиотеке C.|
 |[система](#system)|См. Справочник по стандартной библиотеке C.|
 
-### <a name="_exit"></a><a name="_exit"></a>_Exit
+### <a name="_exit"></a><a name="_exit"></a> _Exit
 
 ```cpp
 [[noreturn]] void _Exit(int status) noexcept;
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Программа завершается без выполнения деструкторов для объектов автоматической, потоковой или статической длительности хранения и без вызова функций, переданных в `atexit()` . Функция `_Exit` является сигнальной.
 
-### <a name="abort"></a><a name="abort"></a>рвал
+### <a name="abort"></a><a name="abort"></a> рвал
 
 ```cpp
 [[noreturn]] void abort() noexcept;
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Программа завершается без выполнения деструкторов для объектов автоматической, потоковой или статической длительности хранения и без вызова функций, переданных в `atexit()` . Функция `abort` является сигнальной.
 
-### <a name="at_quick_exit"></a><a name="at_quick_exit"></a>at_quick_exit
+### <a name="at_quick_exit"></a><a name="at_quick_exit"></a> at_quick_exit
 
 ```cpp
 int at_quick_exit(c-atexit-handler * func) noexcept;
@@ -96,18 +97,18 @@ int at_quick_exit(atexit-handler * func) noexcept;
 
 Нуль, если регистрация завершается успешно, а не равна нулю в случае сбоя.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 `at_quick_exit()`Функции регистрируют функцию *Func*, которая вызывается без аргументов при `quick_exit` вызове метода. Вызов этого метода `at_quick_exit()` не происходит до тех пор, пока `quick_exit` не будут выполнены все вызовы. `at_quick_exit()`Функции не представляют состязание за данные. Порядок регистрации может быть неопределенным, если `at_quick_exit` был вызван из более чем одного потока. Поскольку `at_quick_exit` регистрации отличаются от `atexit` регистраций, приложениям может потребоваться вызывать обе функции регистрации, используя один и тот же аргумент. КОМПИЛЯТОРОМ MSVC поддерживает регистрацию по крайней мере 32 функций.
 
-### <a name="atexit"></a><a name="atexit"></a>atexit
+### <a name="atexit"></a><a name="atexit"></a> atexit
 
 ```cpp
 int atexit(c-atexit-handler * func) noexcept;
 int atexit(atexit-handler * func) noexcept;
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 `atexit()`Функции регистрируют функцию, на которую указывает функция *Func* для вызова без аргументов при нормальном завершении программы. Вызов `atexit()` , который не происходит перед вызовом метода, может быть невозможен `exit()` . `atexit()`Функции не представляют состязание за данные.
 
@@ -115,13 +116,13 @@ int atexit(atexit-handler * func) noexcept;
 
 Возвращает нуль, если регистрация завершается успешно, ненулевое значение в случае сбоя.
 
-### <a name="exit"></a><a name="exit"></a>выполняет
+### <a name="exit"></a><a name="exit"></a> выполняет
 
 ```cpp
 [[noreturn]] void exit(int status);
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Сначала уничтожаются объекты с длительностью хранилища потоков и связанные с текущим потоком.
 
@@ -131,23 +132,23 @@ int atexit(atexit-handler * func) noexcept;
 
 Наконец, управление возвращается в среду узла. Если *Status* имеет значение 0 или EXIT_SUCCESS, возвращается форма, определенная реализацией состояния "успешно завершено". КОМПИЛЯТОРОМ MSVC возвращает нулевое значение. Если *состояние* — EXIT_FAILURE, компилятором MSVC возвращает значение 3. В противном случае КОМПИЛЯТОРОМ MSVC возвращает значение параметра *Status* .
 
-### <a name="getenv"></a><a name="getenv"></a>getenv
+### <a name="getenv"></a><a name="getenv"></a> getenv
 
 ```cpp
 char* getenv(const char* name);
 ```
 
-### <a name="quick_exit"></a><a name="quick_exit"></a>quick_exit
+### <a name="quick_exit"></a><a name="quick_exit"></a> quick_exit
 
 ```cpp
 [[noreturn]] void quick_exit(int status) noexcept;
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Как правило, функции, регистрируемые с помощью вызовов `at_quick_exit` , вызываются в порядке их регистрации в обратную. Этот порядок не применяется к функциям, зарегистрированным после того, как уже вызваны другие зарегистрированные функции. При вызове объекты не уничтожаются `quick_exit` . Если элемент управления оставляет зарегистрированную функцию с именем, `quick_exit` поскольку она не предоставляет обработчик для вызываемого исключения, `std::terminate()` вызывается. Функция, зарегистрированная `at_quick_exit` с помощью, вызывается потоком, который вызывает метод `quick_exit` , который может отличаться от потока, который его зарегистрировал. Это означает, что зарегистрированные функции не должны полагаться на удостоверение объектов с длительностью хранения потока. После вызова зарегистрированных функций `quick_exit` вызывает `_Exit(status)` . Стандартные буферы файлов не сбрасываются. Функция `quick_exit` является сигнальной, если функции, зарегистрированные в `at_quick_exit` , имеют значение.
 
-### <a name="system"></a><a name="system"></a>системой
+### <a name="system"></a><a name="system"></a> системой
 
 ```cpp
 int system(const char* string);
@@ -163,7 +164,7 @@ void* malloc(size_t size);
 void* realloc(void* ptr, size_t size);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эти функции имеют семантику, указанную в стандартной библиотеке C. КОМПИЛЯТОРОМ MSVC не поддерживает `aligned_alloc` функцию. C11 задается `aligned_alloc()` способом, который несовместим с реализацией Майкрософт `free()` , а именно, которая `free()` должна иметь возможность обрабатывать строго согласованные выделения.
 
@@ -183,7 +184,7 @@ unsigned long int strtoul(const char* nptr, char** endptr, int base);
 unsigned long long int strtoull(const char* nptr, char** endptr, int base);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эти функции имеют семантику, указанную в стандартной библиотеке C.
 
@@ -197,7 +198,7 @@ size_t mbstowcs(wchar_t* pwcs, const char* s, size_t n);
 size_t wcstombs(char* s, const wchar_t* pwcs, size_t n);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эти функции имеют семантику, указанную в стандартной библиотеке C.
 
@@ -210,7 +211,7 @@ void qsort(void* base, size_t nmemb, size_t size, c-compare-pred * compar);
 void qsort(void* base, size_t nmemb, size_t size, compare-pred * compar);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эти функции имеют семантику, указанную в стандартной библиотеке C.
 
@@ -221,7 +222,7 @@ int rand();
 void srand(unsigned int seed);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эти функции имеют семантику, указанную в стандартной библиотеке C.
 
@@ -238,7 +239,7 @@ long int labs(long int j);
 long long int llabs(long long int j);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эти функции имеют семантику, указанную в стандартной библиотеке C.
 
@@ -252,7 +253,7 @@ ldiv_t ldiv(long int numer, long int denom);
 lldiv_t lldiv(long long int numer, long long int denom);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эти функции имеют семантику, указанную в стандартной библиотеке C.
 

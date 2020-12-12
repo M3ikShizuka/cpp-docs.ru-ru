@@ -1,19 +1,20 @@
 ---
-title: Варианты ввода-вывода
+description: Дополнительные сведения о вариантах ввода-вывода
+title: Input-Output альтернативные варианты
 ms.date: 05/07/2019
 helpviewer_keywords:
 - I/O [C++], alternatives
 ms.assetid: 9f8401c7-d90d-4285-8918-63573df74a80
-ms.openlocfilehash: b46ff242fc263be5069eb691dd0ea9e8fb00b0f9
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: a6df022dd38bc23eaaaad49620067aca408b2df2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455288"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324006"
 ---
 # <a name="inputoutput-alternatives"></a>Альтернативные варианты ввода и вывода
 
-Компилятор Майкрософт C++ предоставляет несколько альтернативных вариантов программирования ввода-вывода:
+Компилятор Microsoft C++ предоставляет несколько альтернативных вариантов программирования ввода-вывода:
 
 - Прямой ввод-вывод без буферизации на основе библиотеки времени выполнения С.
 
@@ -29,6 +30,6 @@ ms.locfileid: "68455288"
 
 Классы iostream можно использовать с операционной системой Microsoft Windows. Потоки строк и файлов работают без ограничений, но объекты потока символьного режима `cin`, `cout`, `cerr`, и `clog` не совместимы с графическим интерфейсом пользователя Windows. Также можно получать производные пользовательские классы потоков, которые взаимодействуют непосредственно со средой Windows.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Что такое поток](../standard-library/what-a-stream-is.md)

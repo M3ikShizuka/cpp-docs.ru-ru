@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: basic_istringstream классе'
 title: Класс basic_istringstream
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - std::basic_istringstream [C++], str
 - std::basic_istringstream [C++], swap
 ms.assetid: 1d5bb4b5-793d-4833-98e5-14676c451915
-ms.openlocfilehash: fd2ab79466c01343cbdadbcb649e3b05eee3c2a0
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 34073c660b5ede3d7df54e9e067ef5c3963671f4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561782"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325684"
 ---
 # <a name="basic_istringstream-class"></a>Класс basic_istringstream
 
@@ -43,9 +44,9 @@ class basic_istringstream : public basic_istream<Elem, Tr>
 *ТС*\
 Признаки символа, соответствующие основному элементу строки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Шаблон класса описывает объект, управляющий извлечением элементов и закодированных объектов из буфера потока класса [basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  **elem**, **tr** `Alloc`>, с элементами типа *elem*, признаки символов которых определяются классом *tr*, а элементы выделяются распределителем *выделения*класса. Этот объект сохраняет объект класса basic_stringbuf< **Elem**, **Tr**, `Alloc`>.
+Шаблон класса описывает объект, управляющий извлечением элементов и закодированных объектов из буфера потока класса [basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  **elem**, **tr** `Alloc`>, с элементами типа *elem*, признаки символов которых определяются классом *tr*, а элементы выделяются распределителем *выделения* класса. Этот объект сохраняет объект класса basic_stringbuf< **Elem**, **Tr**, `Alloc`>.
 
 ### <a name="constructors"></a>Конструкторы
 
@@ -114,7 +115,7 @@ basic_istringstream(
 *Правильно*\
 Ссылка rvalue на объект `basic_istringstream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый конструктор инициализирует базовый класс путем вызова [basic_istream](../standard-library/basic-istream-class.md)( `sb` ), где `sb` — это сохраненный объект класса [basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  `Elem` , `Tr` `Alloc`>. Он также инициализирует `sb` путем вызова `basic_stringbuf`< `Elem`, `Tr`, `Alloc`>( `_Mode` &#124; `ios_base::in`).
 
@@ -135,7 +136,7 @@ basic_istringstream& operator=(basic_istringstream&& right);
 *Правильно*\
 Ссылка rvalue на объект `basic_istringstream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Оператор Member заменяет содержимое объекта содержимым *right*, которое рассматривается как присваивание перемещения ссылки rvalue.
 
@@ -173,9 +174,9 @@ void str(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает объект класса [basic_string](../standard-library/basic-string-class.md) <  **elem**, **tr** `Alloc`>, управляемой последовательностью которого является копия последовательности, управляемой ** \* этим**объектом.
+Возвращает объект класса [basic_string](../standard-library/basic-string-class.md) <  **elem**, **tr** `Alloc`>, управляемой последовательностью которого является копия последовательности, управляемой **\* этим** объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция – член возвращает [rdbuf](#rdbuf)  ->  [str](../standard-library/basic-stringbuf-class.md#str). Вторая функция-член вызывает `rdbuf`  ->  **str**( `_Newstr` ).
 
@@ -196,11 +197,11 @@ void swap(basic_istringstream& right);
 *Правильно*\
 Ссылка lvalue на объект `basic_istringstream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция элемента меняет местами значения этого объекта и значения *right*.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [Программирование iostream](../standard-library/iostream-programming.md)\

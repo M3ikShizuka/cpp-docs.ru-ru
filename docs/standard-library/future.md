@@ -1,15 +1,16 @@
 ---
+description: 'Подробнее о: &lt; будущее&gt;'
 title: '&lt;future&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <future>
 ms.assetid: 2f5830fc-455d-44f9-9e3d-94ea051596a2
-ms.openlocfilehash: b5f18de772ea2221ecbd4098b94e0b4f14c0484c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 67c204f636ee9249e9c714df87a02ff6c6ff3149
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220929"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324204"
 ---
 # <a name="ltfuturegt"></a>&lt;future&gt;
 
@@ -77,7 +78,7 @@ ms.locfileid: "87220929"
 |----------|-----------------|
 |[future_errc](../standard-library/future-enums.md#future_errc)|Предоставляет символические имена для всех ошибок, о которых сообщает класс `future_error`.|
 |[future_status](../standard-library/future-enums.md#future_status)|Предоставляет символические имена по причинам, которые может возвращать привязанная по времени функция wait.|
-|[перехода](../standard-library/future-enums.md#launch)|Представляет тип битовой маски, который описывает возможные режимы для функции-шаблона `async`.|
+|[запуск](../standard-library/future-enums.md#launch)|Представляет тип битовой маски, который описывает возможные режимы для функции-шаблона `async`.|
 
 ## <a name="see-also"></a>См. также раздел
 

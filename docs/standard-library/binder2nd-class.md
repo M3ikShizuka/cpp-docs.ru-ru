@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: binder2nd Class'
 title: Класс binder2nd
 ms.date: 02/21/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - binder2nd class
 ms.assetid: b2a9c1d1-dfc4-4ca9-a10e-ae84e195a62d
-ms.openlocfilehash: 297f91dd9283b9f004247d2d1814b30a17e7ffa2
-ms.sourcegitcommit: 4b0928a1a497648d0d327579c8262f25ed20d02e
+ms.openlocfilehash: a3c76fcea22045ee7e723ad3ad51390c39f602ef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72890092"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325496"
 ---
 # <a name="binder2nd-class"></a>Класс binder2nd
 
@@ -38,24 +39,24 @@ class binder2nd
 
 ### <a name="parameters"></a>Параметры
 
-\ *Func*
+*функцию*\
 Объект бинарной функции, который необходимо преобразовать в объект унарной функции.
 
-*справа* \
+*Правильно*\
 Значение, к которому необходимо привязать второй аргумент объекта бинарной функции.
 
-*left* \
+*слева*\
 Значение аргумента, которое адаптированный объект бинарной функции сравнивает с фиксированным значением второго аргумента.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Объект унарной функции, полученный в результате привязки второго аргумента объекта бинарной функции к значению *right*.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
-Шаблон класса сохраняет копию объекта бинарной функции *Func* в `op`и копию *справа* в `value`. Он определяет свою функцию члена `operator()` как возвращаемый `op(left, value)`.
+Шаблон класса сохраняет копию объекта бинарной функции *Func* в `op` и копию *справа* в `value` . Он определяет свою функцию члена `operator()` как возвращающую `op(left, value)` .
 
-Если *Func* является объектом типа `Operation` и c является константой, то [bind2nd](../standard-library/functional-functions.md#bind2nd)`(func, c)` эквивалентен конструктору `binder2nd` класса `binder2nd<Operation>(func, c)`и более удобным.
+Если *Func* является объектом типа, `Operation` а c — константой, то [bind2nd](../standard-library/functional-functions.md#bind2nd) `(func, c)` эквивалентен `binder2nd` конструктору класса и является `binder2nd<Operation>(func, c)` более удобным.
 
 ## <a name="example"></a>Пример
 

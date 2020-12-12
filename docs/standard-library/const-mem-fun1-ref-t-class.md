@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: const_mem_fun1_ref_t классе'
 title: Класс const_mem_fun1_ref_t
 ms.date: 02/21/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - const_mem_fun1_ref_t class
 ms.assetid: 8220d373-fa1c-44be-a21d-96d49b3ea6bb
-ms.openlocfilehash: f9f426b7280872846695e204f2c9843d2622fe19
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f2d8b96c3888e3b7b07b5cccef8ce58cdedb6732
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228340"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324949"
 ---
 # <a name="const_mem_fun1_ref_t-class"></a>Класс const_mem_fun1_ref_t
 
@@ -44,7 +45,7 @@ template <class Result, class Type, class Arg>
 
 Адаптируемая бинарная функция.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса сохраняет копию *PM*, которая должна быть указателем на функцию-член класса `Type` в закрытом объекте-члене. Он определяет свою функцию `operator()` -член как возвращающую ( `left` . \* *PM*) ( `right` ) **`const`** .
 

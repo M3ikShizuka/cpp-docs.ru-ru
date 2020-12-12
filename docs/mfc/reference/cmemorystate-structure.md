@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура CMemoryState'
 title: Структура CMemoryState
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - memory leaks [MFC], detecting
 - detecting memory leaks [MFC]
 ms.assetid: 229d9de7-a6f3-4cc6-805b-5a9d9b1bfe1d
-ms.openlocfilehash: 823d424620e205d14f247a147bbf7dcb40a626b9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fc480c986a62391561ed541de070672f3681d885
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222918"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325896"
 ---
 # <a name="cmemorystate-structure"></a>Структура CMemoryState
 
@@ -25,26 +26,26 @@ ms.locfileid: "87222918"
 struct CMemoryState
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[CMemoryState:: CMemoryState](#cmemorystate)|Создает структуру, похожую на класс, которая управляет контрольными точками памяти.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[CMemoryState:: Checkpoint](#checkpoint)|Получает моментальный снимок (контрольная точка) текущего состояния памяти.|
 |[CMemoryState::D ифференце](#difference)|Вычисление разницы между двумя объектами типа `CMemoryState` .|
 |[CMemoryState::D Умпаллобжектссинце](#dumpallobjectssince)|Выводит сводку всех объектов, выделенных в данный момент с момента создания предыдущей контрольной точки.|
 |[CMemoryState::D Умпстатистикс](#dumpstatistics)|Печать статистики выделения памяти для `CMemoryState` объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CMemoryState`является структурой и не имеет базового класса.
+`CMemoryState` является структурой и не имеет базового класса.
 
 «Утечка памяти» возникает, когда память для объекта выделяется в куче, но не освобождается, если она больше не нужна. Такие утечки памяти могут в конечном итоге привести к ошибкам нехватки памяти. Существует несколько способов выделения и освобождения памяти в программе.
 
@@ -60,7 +61,7 @@ struct CMemoryState
 
 Если предполагается, что программа имеет утечку памяти, можно использовать `Checkpoint` функции, `Difference` и, `DumpStatistics` чтобы узнать разницу между состоянием памяти (выделенными объектами) в двух разных точках выполнения программы. Эти сведения могут быть полезны при определении того, очищается ли функция от всех объектов, которые она выделяет.
 
-Если просто узнать, где происходит дисбаланс при выделении и освобождении, не предоставляет достаточно информации, можно использовать `DumpAllObjectsSince` функцию для дампа всех объектов, выделенных с момента предыдущего вызова `Checkpoint` . Этот дамп показывает порядок выделения, исходный файл и строку, в которой был выделен объект (если используется DEBUG_NEW для выделения) и наследование объекта, его адрес и размер. `DumpAllObjectsSince`также вызывает функцию каждого объекта `Dump` , чтобы предоставить сведения о его текущем состоянии.
+Если просто узнать, где происходит дисбаланс при выделении и освобождении, не предоставляет достаточно информации, можно использовать `DumpAllObjectsSince` функцию для дампа всех объектов, выделенных с момента предыдущего вызова `Checkpoint` . Этот дамп показывает порядок выделения, исходный файл и строку, в которой был выделен объект (если используется DEBUG_NEW для выделения) и наследование объекта, его адрес и размер. `DumpAllObjectsSince` также вызывает функцию каждого объекта `Dump` , чтобы предоставить сведения о его текущем состоянии.
 
 Дополнительные сведения об использовании `CMemoryState` и других диагностических данных см. в разделе [Отладка приложений MFC](/visualstudio/debugger/mfc-debugging-techniques).
 
@@ -75,7 +76,7 @@ struct CMemoryState
 
 **Заголовок:** AFX. h
 
-## <a name="cmemorystatecheckpoint"></a><a name="checkpoint"></a>CMemoryState:: Checkpoint
+## <a name="cmemorystatecheckpoint"></a><a name="checkpoint"></a> CMemoryState:: Checkpoint
 
 Создает сводку по снимкам памяти и сохраняет ее в этом `CMemoryState` объекте.
 
@@ -83,7 +84,7 @@ struct CMemoryState
 void Checkpoint();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `CMemoryState`Функции элементов [различаются](#difference) и [DumpAllObjectsSince](#dumpallobjectssince) использовать эти данные моментального снимка.
 
@@ -91,7 +92,7 @@ void Checkpoint();
 
   См. пример для конструктора [CMemoryState](#cmemorystate) .
 
-## <a name="cmemorystatecmemorystate"></a><a name="cmemorystate"></a>CMemoryState:: CMemoryState
+## <a name="cmemorystatecmemorystate"></a><a name="cmemorystate"></a> CMemoryState:: CMemoryState
 
 Создает пустой `CMemoryState` объект, который должен быть заполнен с помощью функции члена [контрольной точки](#checkpoint) или [разности](#difference) .
 
@@ -103,7 +104,7 @@ CMemoryState();
 
 [!code-cpp[NVC_MFC_Utilities#18](../../mfc/codesnippet/cpp/cmemorystate-structure_1.cpp)]
 
-## <a name="cmemorystatedifference"></a><a name="difference"></a>CMemoryState::D ифференце
+## <a name="cmemorystatedifference"></a><a name="difference"></a> CMemoryState::D ифференце
 
 Сравнивает два `CMemoryState` объекта, а затем сохраняет разность в этом `CMemoryState` объекте.
 
@@ -125,7 +126,7 @@ BOOL Difference(
 
 Ненулевое значение, если два состояния памяти различаются; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Для каждого из двух параметров состояния памяти должна быть вызвана [контрольная точка](#checkpoint) .
 
@@ -133,7 +134,7 @@ BOOL Difference(
 
   См. пример для конструктора [CMemoryState](#cmemorystate) .
 
-## <a name="cmemorystatedumpallobjectssince"></a><a name="dumpallobjectssince"></a>CMemoryState::D Умпаллобжектссинце
+## <a name="cmemorystatedumpallobjectssince"></a><a name="dumpallobjectssince"></a> CMemoryState::D Умпаллобжектссинце
 
 Вызывает `Dump` функцию для всех объектов типа, производных от класса `CObject` , которые были выделены (и по-прежнему выделены) с момента последнего вызова [контрольной точки](#checkpoint) для этого `CMemoryState` объекта.
 
@@ -141,7 +142,7 @@ BOOL Difference(
 void DumpAllObjectsSince() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызов `DumpAllObjectsSince` с неинициализированным `CMemoryState` объектом приведет к дампу всех объектов, находящихся в памяти в данный момент.
 
@@ -149,7 +150,7 @@ void DumpAllObjectsSince() const;
 
   См. пример для конструктора [CMemoryState](#cmemorystate) .
 
-## <a name="cmemorystatedumpstatistics"></a><a name="dumpstatistics"></a>CMemoryState::D Умпстатистикс
+## <a name="cmemorystatedumpstatistics"></a><a name="dumpstatistics"></a> CMemoryState::D Умпстатистикс
 
 Выводит отчет о краткой статистике памяти из `CMemoryState` объекта, который заполняется функцией-членом [разности](#difference) .
 
@@ -157,7 +158,7 @@ void DumpAllObjectsSince() const;
 void DumpStatistics() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Отчет, который печатается на устройстве [афксдумп](diagnostic-services.md#afxdump) , содержит следующие сведения:
 
@@ -195,6 +196,6 @@ void DumpStatistics() const;
 
 Теперь можно запустить программу в режиме отладки, чтобы увидеть выходные данные `DumpStatistics` функции.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Decay Class'
 title: Класс decay
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - decay class
 ms.assetid: 96baa2fd-c8e0-49af-be91-ba375ba7f9dc
-ms.openlocfilehash: 3b22dfecb1162ce67a0d648197465115acb044ba
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 6f6a1ebd31af44a48eaf400f9dccefdbd8ca3d01
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688117"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324605"
 ---
 # <a name="decay-class"></a>Класс decay
 
-Создает тип, как передано по значению. Создает тип, не являющийся ссылочным, константным, временным, или создает указатель на тип из функции или типа массива.
+Создает тип в качестве передаваемого значения. Создает тип, не являющийся ссылочным, константным, временным, или создает указатель на тип из функции или типа массива.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,10 +30,10 @@ using decay_t = typename decay<T>::type;
 
 ### <a name="parameters"></a>Параметры
 
-*T* \
+*T*\
 Тип для изменения.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
 Используйте шаблон decay для создания результирующего типа, как если бы тип был передан по значению в качестве аргумента. Typedef члена шаблона класса `type` содержит измененный тип, который определен на следующих этапах:
 
@@ -46,10 +47,10 @@ using decay_t = typename decay<T>::type;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)

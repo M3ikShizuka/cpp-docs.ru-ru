@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: входные потоки'
 title: Потоки ввода
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - input streams
 - input stream objects
 ms.assetid: f14d8954-8f8c-4c3c-8b99-14ddb3683f94
-ms.openlocfilehash: 5dc3fa0af76f73897fe1181d944eb34c8d05bc64
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: f7e6d41b904b2d28893637681e3c751d24aef441
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449327"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323966"
 ---
 # <a name="input-streams"></a>Потоки ввода
 
@@ -24,20 +25,20 @@ ms.locfileid: "68449327"
 
 Подобно функции библиотеки `sscanf_s`, класс `istringstream` поддерживает ввод из строк в памяти. Для извлечения данных из массива символов, который имеет завершающий нуль-символ, выделите и инициализируйте строку, а затем создайте объект класса `istringstream`.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 
-[Построение объектов потока ввода](../standard-library/constructing-input-stream-objects.md)
+[Построение объектов входного потока](../standard-library/constructing-input-stream-objects.md)
 
 [Использование операторов извлечения](../standard-library/using-extraction-operators.md)
 
 [Проверка на наличие ошибок извлечения](../standard-library/testing-for-extraction-errors.md)
 
-[Манипуляторы входных потоков](../standard-library/input-stream-manipulators.md)
+[Манипуляторы входного потока](../standard-library/input-stream-manipulators.md)
 
-[Функции-члены входного потока](../standard-library/input-stream-member-functions.md)
+[Функции элементов входного потока](../standard-library/input-stream-member-functions.md)
 
 [Перегрузка оператора >> для собственных классов](../standard-library/overloading-the-input-operator-for-your-own-classes.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Программирование iostream](../standard-library/iostream-programming.md)

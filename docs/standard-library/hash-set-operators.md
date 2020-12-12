@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: &lt; операторы hash_set &gt;'
 title: Операторы &lt;hash_set&gt;
 ms.date: 03/27/2019
 f1_keywords:
 - hash_set/std::operator!=
 - hash_set/std::operator==
 ms.assetid: 403d8e4e-0b3f-43fb-bc5a-8100c4f331c5
-ms.openlocfilehash: 04b662ea260ca650fc51b17c804594fe25434f61
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a52c749df2bdd690fcd936c9a361251728696ccd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845799"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324087"
 ---
 # <a name="lthash_setgt-operators"></a>Операторы &lt;hash_set&gt;
 
@@ -42,7 +43,7 @@ bool operator!=(const hash_set <Key, Traits, Allocator>& left, const hash_set <K
 
 **`true`** Если hash_sets не равны; **`false`** если Hash_sets равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами hash_set основывается на попарном сравнении их элементов. Два объекта hash_set равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -110,7 +111,7 @@ bool operator!==(const hash_set <Key, Traits, Allocator>& left, const hash_set <
 
 **`true`** значение, если hash_set слева от оператора равно hash_set с правой стороны оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами hash_set основывается на попарном сравнении их элементов. Два объекта hash_set равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -176,7 +177,7 @@ bool operator!=(const hash_multiset <Key, Traits, Allocator>& left, const hash_m
 
 **`true`** Если hash_multisets не равны; **`false`** если Hash_multisets равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами hash_multiset основывается на попарном сравнении их элементов. Два объекта hash_multiset равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -242,7 +243,7 @@ bool operator!==(const hash_multiset <Key, Traits, Allocator>& left, const hash_
 
 **`true`** значение, если hash_multiset слева от оператора равно hash_multiset с правой стороны оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами hash_multiset основывается на попарном сравнении их элементов. Два объекта hash_multiset равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 

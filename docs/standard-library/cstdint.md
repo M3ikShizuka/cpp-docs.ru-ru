@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения о: &lt; cstdint&gt;'
 title: '&lt;cstdint&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <cstdint>
 ms.assetid: 87afafb2-c630-4383-a2fc-a6b47c639e21
-ms.openlocfilehash: 142ea2b341dad307dea98d1406803a1e7eca5e78
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 3edaadf3a5f10e379d943460d24c75fbb0eb091e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076631"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324713"
 ---
 # <a name="ltcstdintgt"></a>&lt;cstdint&gt;
 
-Включает заголовок \<stdint.h> стандартной библиотеки C и добавляет связанные имена в пространство имен `std`. Включение этого заголовка гарантирует, что имена, объявленные с помощью внешней компоновки в заголовке стандартной библиотеки C, объявляются в пространстве имен `std`.
+Включает заголовок стандартной библиотеки C \<stdint.h> и добавляет связанные имена в `std` пространство имен. Включение этого заголовка гарантирует, что имена, объявленные с помощью внешней компоновки в заголовке стандартной библиотеки C, объявляются в пространстве имен `std`.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -69,7 +70,7 @@ SIZE_MAX
 [U]INT{8 16 32 64 MAX}_C
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по файлам заголовков](../standard-library/cpp-standard-library-header-files.md)\
 [Общие сведения о стандартной библиотеке C++](../standard-library/cpp-standard-library-overview.md)

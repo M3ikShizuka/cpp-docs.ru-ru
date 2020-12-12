@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_nothrow_constructible классе'
 title: Класс is_nothrow_constructible
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - is_nothrow_constructible
 ms.assetid: 8be3f927-283e-4d67-95a5-8bf5dc4e7a3d
-ms.openlocfilehash: e52b16965d849f992731c4ff4254fd218b944269
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0bb822a42d149a552f18ff4d1b1c723ef9b88172
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217757"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323587"
 ---
 # <a name="is_nothrow_constructible-class"></a>Класс is_nothrow_constructible
 
@@ -32,7 +33,7 @@ struct is_nothrow_constructible;
 *Args*\
 Типы аргументов для сопоставления в конструкторе *T*.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *T* является конструируемым с помощью типов аргументов в аргументах *args*, и конструктору известно, что компилятор не создает исключение. в противном случае он содержит значение false. Тип *T* — конструируемым, если определение переменной `T t(std::declval<Args>()...);` имеет правильный формат. *T* и все типы в аргументах *args* должны быть полными типами, **`void`** или массивами с неизвестной границей.
 

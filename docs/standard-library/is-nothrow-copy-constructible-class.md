@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_nothrow_copy_constructible классе'
 title: Класс is_nothrow_copy_constructible
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - is_nothrow_copy_constructible
 ms.assetid: f13a0bea-63b1-492a-9a45-d445df35c282
-ms.openlocfilehash: ff88eacc8b692436bc5c7dfa3a01340527862809
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b238b86a5780d12dd6c1e62e0b2d79b9fbc139dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222359"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323607"
 ---
 # <a name="is_nothrow_copy_constructible-class"></a>Класс is_nothrow_copy_constructible
 
@@ -29,7 +30,7 @@ struct is_nothrow_copy_constructible;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* имеет конструктор копий, в противном случае — значение false.
 

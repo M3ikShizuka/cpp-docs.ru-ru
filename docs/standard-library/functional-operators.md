@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; функциональные &gt; операторы'
 title: Операторы &lt;functional&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - functional operators
 ms.assetid: d4b3c760-f3e2-4b65-bdaa-d42e8dd6f5e1
-ms.openlocfilehash: b396e5c692129821c0deb9aef9469a5c54e600b0
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: a22e9203e89c041d5ed1925d55d1cd3aa6d61ba3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79424767"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324243"
 ---
 # <a name="ltfunctionalgt-operators"></a>Операторы &lt;functional&gt;
 
-## <a name="op_eq_eq"></a>Оператор = =
+## <a name="operator"></a><a name="op_eq_eq"></a> Оператор = =
 
 Проверяет, является ли вызываемый объект пустым.
 
@@ -30,16 +31,16 @@ template <class Fty>
 
 ### <a name="parameters"></a>Параметры
 
-*Фти*\
+*фти*\
 Тип функции для заключения в оболочку.
 
-\ *f*
+*ж*\
 Объект функции
 
 *нпк*\
 Указатель null
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Операторы принимают аргумент, являющийся ссылкой на объект `function`, и аргумент, являющийся константой указателя null. В обоих случаях возвращается значение true только в том случае, если объект `function` пуст.
 
@@ -75,7 +76,7 @@ empty == true
 empty == false
 ```
 
-## <a name="op_neq"></a>operator! =
+## <a name="operator"></a><a name="op_neq"></a> operator! =
 
 Проверяет, является ли вызываемый объект не пустым.
 
@@ -89,16 +90,16 @@ template <class Fty>
 
 ### <a name="parameters"></a>Параметры
 
-*Фти*\
+*фти*\
 Тип функции для заключения в оболочку.
 
-\ *f*
+*ж*\
 Объект функции
 
 *нпк*\
 Указатель null
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Операторы принимают аргумент, являющийся ссылкой на объект `function`, и аргумент, являющийся константой указателя null. В обоих случаях возвращается значение true только в том случае, если объект `function` не пуст.
 

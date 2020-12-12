@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_abstract классе'
 title: Класс is_abstract
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_abstract class
 - is_abstract
 ms.assetid: 8867f660-3434-404c-ba90-c26607a5e0d2
-ms.openlocfilehash: 57b2413e673f92e5258bee5711db2870e2b58a11
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 9b2fe31d2f4e742381c4e2e76a668d4e68e76b75
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68448987"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323891"
 ---
-# <a name="isabstract-class"></a>Класс is_abstract
+# <a name="is_abstract-class"></a>Класс is_abstract
 
 Проверяет, является ли тип абстрактным классом.
 
@@ -30,7 +31,7 @@ struct is_abstract;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* является классом, имеющим по крайней мере одну чисто виртуальную функцию, в противном случае — значение false.
 
@@ -70,11 +71,11 @@ is_abstract<abstract> == true
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)\
-Класс [is_polymorphic](../standard-library/is-polymorphic-class.md)
+[Класс is_polymorphic](../standard-library/is-polymorphic-class.md)

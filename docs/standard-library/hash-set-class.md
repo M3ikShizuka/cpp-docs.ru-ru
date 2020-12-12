@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: hash_set классе'
 title: Класс hash_set
 ms.date: 11/04/2016
 f1_keywords:
@@ -86,12 +87,12 @@ helpviewer_keywords:
 - stdext::hash_set::upper_bound
 - stdext::hash_set::value_comp
 ms.assetid: c765c06e-cbb6-48c2-93ca-d15468eb28d7
-ms.openlocfilehash: 01076d29a18a2b051695955e9409d8b77d22c313
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 36bcb0e1f35fd8012ad1398a481bdae17b6d1424
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561184"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324100"
 ---
 # <a name="hash_set-class"></a>Класс hash_set
 
@@ -120,7 +121,7 @@ class hash_set
 *Выделен*\
 Тип, представляющий сохраненный объект распределителя, который инкапсулирует сведения о выделении и освобождении памяти для hash_set. Этот аргумент является необязательным, и в качестве значения по умолчанию используется `allocator<Key>`.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 hash_set это:
 
@@ -164,7 +165,7 @@ Hash_set упорядочивает последовательность, кот
 |[const_reference](#const_reference)|Тип, предоставляющий ссылку на **`const`** элемент, хранящийся в, `hash_set` для чтения и выполнения **`const`** операций.|
 |[const_reverse_iterator](#const_reverse_iterator)|Тип, предоставляющий двунаправленный итератор, который может читать любой **`const`** элемент в `hash_set` .|
 |[difference_type](#difference_type)|Тип целого числа со знаком, пригодный для представления количества элементов в контейнере `hash_set` в диапазоне между элементами, на которые указывают итераторы.|
-|[итераци](#iterator)|Тип, предоставляющий двунаправленный итератор, который может считывать или изменять любой элемент в `hash_set`.|
+|[iterator](#iterator)|Тип, предоставляющий двунаправленный итератор, который может считывать или изменять любой элемент в `hash_set`.|
 |[key_compare](#key_compare)|Тип, предоставляющий объект функции, который может сравнить два ключа сортировки для определения относительного порядка двух элементов в контейнере `hash_set`.|
 |[key_type](#key_type)|Тип, описывающий объект, сохраненный как элемент `hash_set` в смысле его возможностей, присущих ключу сортировки.|
 |[вид](#pointer)|Тип, предоставляющий указатель на элемент в `hash_set`.|
@@ -181,14 +182,14 @@ Hash_set упорядочивает последовательность, кот
 |[начале](#begin)|Возвращает итератор, обращающийся к первому элементу в `hash_set`.|
 |[cbegin](#cbegin)|Возвращает итератор const, обращающийся к первому элементу в `hash_set`.|
 |[cend](#cend)|Возвращает итератор const, который обращается к месту, следующему за последним элементом в `hash_set`.|
-|[открытым](#clear)|Стирает все элементы в `hash_set`.|
+|[пусто](#clear)|Стирает все элементы в `hash_set`.|
 |[count](#count)|Возвращает число элементов в контейнере `hash_set`, ключи которых соответствуют ключу, заданному параметром.|
 |[crbegin](#crbegin)|Возвращает итератор const, который обращается к первому элементу в обращенном контейнере `hash_set`.|
 |[crend](#crend)|Возвращает итератор const, который обращается к месту, следующему за последним элементом в обращенном контейнере `hash_set`.|
 |[emplace](#emplace)|Вставляет созданный на месте элемент в `hash_set`.|
 |[emplace_hint](#emplace_hint)|Вставляет созданный на месте элемент в `hash_set` с подсказкой о размещении.|
 |[empty](#empty)|Проверяет, пуст ли `hash_set`.|
-|[конце](#end)|Возвращает итератор, который обращается к месту, следующему за последним элементом в контейнере `hash_set`.|
+|[end](#end)|Возвращает итератор, который обращается к месту, следующему за последним элементом в контейнере `hash_set`.|
 |[equal_range](#equal_range)|Возвращает пару итераторов соответственно на первый элемент в `hash_set` с ключом, который больше, чем указанный ключ, и на первый элемент в `hash_set` с ключом, который больше или равен данному ключу.|
 |[erase](#erase)|Удаляет элемент или диапазон элементов в `hash_set` с заданных позиций или удаляет элементы, соответствующие заданному ключу.|
 |[find](#find)|Возвращает итератор, адресующий расположение элемента в наборе `hash_set` с ключом, эквивалентным указанному ключу.|
@@ -227,11 +228,11 @@ Hash_set упорядочивает последовательность, кот
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::allocator_type allocator_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`allocator_type` является синонимом для *распределителя*параметров шаблона.
+`allocator_type` является синонимом для *распределителя* параметров шаблона.
 
-Дополнительные сведения о *распределителя*см. в подразделе "Примечания" раздела [hash_set Class](../standard-library/hash-set-class.md) .
+Дополнительные сведения о *распределителя* см. в подразделе "Примечания" раздела [hash_set Class](../standard-library/hash-set-class.md) .
 
 ### <a name="example"></a>Пример
 
@@ -254,7 +255,7 @@ iterator begin();
 
 Двунаправленный итератор, адресующий первый элемент в hash_set или положение после пустого hash_set.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если возвращаемое значение `begin` присваивается `const_iterator` , то элементы в объекте hash_set не могут быть изменены. Если возвращаемое значение `begin` присваивается `iterator` , то элементы в объекте hash_set могут быть изменены.
 
@@ -313,7 +314,7 @@ const_iterator cbegin() const;
 
 Константный двунаправленный итератор, адресующий первый элемент в [hash_set](../standard-library/hash-set-class.md) или положение после пустого `hash_set`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если возвращенное значение — `cbegin`, элементы в объекте `hash_set` изменить нельзя.
 
@@ -360,7 +361,7 @@ const_iterator cend() const;
 
 Константный двунаправленный итератор, адресующий положение после последнего элемента в [hash_set](../standard-library/hash-set-class.md). Если `hash_set` пуст, то `hash_set::cend == hash_set::begin`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `cend` используется для проверки, достиг ли итератор конца своего `hash_set`. Значение, возвращаемое `cend`, не должно быть подвергнуто удалению ссылки.
 
@@ -448,7 +449,7 @@ The size of the hash_set after clearing is 0.
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_iterator const_iterator;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип `const_iterator`нельзя использовать для изменения значения элемента.
 
@@ -467,7 +468,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_pointer const_pointer;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип `const_pointer`нельзя использовать для изменения значения элемента.
 
@@ -531,7 +532,7 @@ The first element in the hash_set is 10.
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_reverse_iterator const_reverse_iterator;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип `const_reverse_iterator` не может изменять значение элемента и используется для перебора hash_set в обратном порядке.
 
@@ -561,7 +562,7 @@ size_type count(const Key& key) const;
 
 0, если объект hash_set не содержит ни одного элемента с совпадающим ключом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает число элементов в следующем диапазоне:
 
@@ -618,7 +619,7 @@ const_reverse_iterator crbegin() const;
 
 Константный обратный двунаправленный итератор, адресующий первый элемент в обратном [hash_set](../standard-library/hash-set-class.md) или элемент, который был последним элементом в `hash_set` до изменения его порядка на противоположный.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `crbegin` используется с обратным hash_set так же, как [hash_set::begin](#begin) используется с обычным hash_set.
 
@@ -670,7 +671,7 @@ const_reverse_iterator crend() const;
 
 Константный обратный двунаправленный итератор, адресующий положение после последнего элемента в обратном [hash_set](../standard-library/hash-set-class.md) (положение перед первым элементом в `hash_set` до изменения его порядка на противоположный).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `crend` используется с обратным `hash_set` так же, как [hash_set::end](#end) используется с обычным `hash_set`.
 
@@ -719,7 +720,7 @@ The last element in the reversed hash_set is 10.
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::difference_type difference_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `difference_type` — тип, возвращаемый при вычитании или приращении через итераторы контейнера. `difference_type` обычно используется для представления количества элементов в диапазоне [`first`, `last`) между итераторами `first` и `last`, включает элемент, на который указывает `first`, и диапазон элементов до элемента (не включая этот элемент), на который указывает `last`.
 
@@ -862,7 +863,7 @@ iterator emplace(
 
 Функция-член [hash_set::emplace](#emplace) возвращает итератор, указывающий на позицию вставки нового элемента в `hash_set` или на позицию, где находится существующий элемент с эквивалентным порядком.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вставка может происходить в постоянном времени, а не в виде логарифмического времени, если точка вставки сразу следует за *_Where*.
 
@@ -958,7 +959,7 @@ iterator end();
 
 Двунаправленный итератор, адресующий положение после последнего элемента в hash_set. Если hash_set пуст, то hash_set::end == hash_set::begin.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `end` используется для проверки того, достиг ли итератор конца hash_set. Значение, возвращаемое `end`, не должно быть подвергнуто удалению ссылки.
 
@@ -1122,7 +1123,7 @@ size_type erase(const key_type& key);
 
 Для первых двух функций-членов двунаправленный итератор, указывающий на первый элемент, оставшийся после удаления элементов, или на указатель конца объекта hash_set, если такого элемента не существует. Для третьей функции-члена число элементов, удаленных из объекта hash_set.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функции-члены не создают исключений.
 
@@ -1231,7 +1232,7 @@ const_iterator find(const Key& key) const;
 
 Объект `iterator` или `const_iterator` , который обращается к расположению элемента, эквивалентному указанному ключу, или, который обращается к расположению, следующему за последним элементом в hash_set, если совпадение для ключа не найдено.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает итератор, который обращается к элементу в hash_set, ключ сортировки которого является `equivalent` ключом аргумента в бинарном предикате, который вызывает упорядочивание на основе отношения сравнения "меньше чем".
 
@@ -1300,11 +1301,11 @@ Allocator get_allocator() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Распределитель, используемый hash_set для управления памятью, которая является *распределителем*параметров шаблона.
+Распределитель, используемый hash_set для управления памятью, которая является *распределителем* параметров шаблона.
 
-Дополнительные сведения о *распределителя*см. в подразделе "Примечания" раздела [hash_set Class](../standard-library/hash-set-class.md) .
+Дополнительные сведения о *распределителя* см. в подразделе "Примечания" раздела [hash_set Class](../standard-library/hash-set-class.md) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Распределители для класса hash_set определяют, как класс управляет памятью. Распределителей по умолчанию в классах контейнеров стандартной библиотеки C++ достаточно для большинства задач программирования. Написание и использование собственного класса распределителя требует расширенных навыков работы с C++.
 
@@ -1434,7 +1435,7 @@ hash_set(
 *Последняя*\
 Положение первого элемента после диапазона копируемых элементов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Все конструкторы хранят тип объекта-распределителя, управляющего памятью для `hash_set`. Позже этот объект можно получить путем вызова [hash_set::get_allocator](#get_allocator). Параметр-распределитель часто не указывается в объявлениях класса и в макросах предварительной обработки, используемых для замены альтернативных распределителей.
 
@@ -1502,7 +1503,7 @@ void insert(
 
 Вторая функция-член `insert` возвращает итератор, указывающий на позицию, где новый элемент был вставлен в `hash_set`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Третья функция-член вставляет элементы из объекта initializer_list.
 
@@ -1519,7 +1520,7 @@ void insert(
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::iterator iterator;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип `iterator` можно использовать для изменения значения элемента.
 
@@ -1540,11 +1541,11 @@ key_compare key_comp() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает объект-функцию, которую hash_set использует для упорядочивания своих элементов, что является *характеристиками*параметров шаблона.
+Возвращает объект-функцию, которую hash_set использует для упорядочивания своих элементов, что является *характеристиками* параметров шаблона.
 
 Дополнительные сведения о *характеристиках* см. в разделе [hash_set Class](../standard-library/hash-set-class.md) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сохраненный объект определяет функцию-член:
 
@@ -1614,13 +1615,13 @@ int main( )
 typedef Traits key_compare;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`key_compare` является синонимом для *характеристик*параметра шаблона.
+`key_compare` является синонимом для *характеристик* параметра шаблона.
 
 Дополнительные сведения о *характеристиках* см. в разделе [hash_set Class](../standard-library/hash-set-class.md) .
 
-Обратите внимание, что `key_compare` и, и [value_compare](#value_compare) являются синонимами *Traits*для признаков параметра шаблона. Оба типа предоставляются для классов set и multiset, где они идентичны, для совместимости с классами map и multimap, где они различаются.
+Обратите внимание, что `key_compare` и, и [value_compare](#value_compare) являются синонимами для признаков параметра шаблона. Оба типа предоставляются для классов set и multiset, где они идентичны, для совместимости с классами map и multimap, где они различаются.
 
 ### <a name="example"></a>Пример
 
@@ -1637,11 +1638,11 @@ typedef Traits key_compare;
 typedef Key key_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`key_type` является синонимом для *ключа*параметра шаблона.
+`key_type` является синонимом для *ключа* параметра шаблона.
 
-Дополнительные сведения о *ключе*см. в подразделе "Примечания" раздела [hash_set Class](../standard-library/hash-set-class.md) .
+Дополнительные сведения о *ключе* см. в подразделе "Примечания" раздела [hash_set Class](../standard-library/hash-set-class.md) .
 
 Обратите внимание, что и `key_type`, и [value_type](#value_type) — синонимы для параметра-шаблона *Key*. Оба типа предоставляются для классов hash_set и hash_multiset, где они идентичны, для совместимости с классами hash_map и hash_multimap, где они различаются.
 
@@ -1779,7 +1780,7 @@ hash_set& operator=(hash_set&& right);
 *Правильно*\
 [Hash_set](../standard-library/hash-set-class.md), который будет копироваться в `hash_set`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 После стирания любых существующих элементов в `hash_set` , `operator=` копирует или перемещает содержимое *непосредственно* в `hash_set` .
 
@@ -1832,7 +1833,7 @@ int main( )
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::pointer pointer;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип `pointer` можно использовать для изменения значения элемента.
 
@@ -1855,7 +1856,7 @@ reverse_iterator rbegin();
 
 Обратный двунаправленный итератор, адресующий первый элемент в обратном hash_set или элемент, который был последним элементов в hash_set до изменения его порядка на противоположный.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `rbegin` используется с обратным hash_set так же, как [begin](#begin) используется с обычным hash_set.
 
@@ -1988,7 +1989,7 @@ reverse_iterator rend();
 
 Обратный двунаправленный итератор, адресующий положение после последнего элемента в обратном hash_set (положение перед первым элементом hash_set до изменения его порядка на противоположный).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `rend` используется с обратным hash_set так же, как [end](#end) используется с обычным hash_set.
 
@@ -2068,7 +2069,7 @@ After the erasure, the last element in the reversed hash_set is 20.
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::reverse_iterator reverse_iterator;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип `reverse_iterator` используется для перебора hash_set в обратном порядке.
 
@@ -2156,7 +2157,7 @@ void swap(hash_set& right);
 *Правильно*\
 Объект-аргумент hash_set, содержащий элементы, которые нужно поменять местами с объектами в целевом объекте hash_set.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член не делает недействительными никакие ссылки, указатели или итераторы, обозначающие элементы в двух объектах hash_set, которые меняются элементами.
 
@@ -2303,9 +2304,9 @@ value_compare value_comp() const;
 
 Возвращает объект-функцию, которую hash_set использует для упорядочивания своих элементов, что является параметром шаблона *Compare*.
 
-Дополнительные сведения о *сравнении*см. в подразделе "Примечания" раздела [hash_set Class](../standard-library/hash-set-class.md) .
+Дополнительные сведения о *сравнении* см. в подразделе "Примечания" раздела [hash_set Class](../standard-library/hash-set-class.md) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сохраненный объект определяет функцию-член:
 
@@ -2375,13 +2376,13 @@ int main( )
 typedef key_compare value_compare;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`value_compare` является синонимом для *характеристик*параметра шаблона.
+`value_compare` является синонимом для *характеристик* параметра шаблона.
 
 Дополнительные сведения о *характеристиках* см. в разделе [hash_set Class](../standard-library/hash-set-class.md) .
 
-Обратите внимание, что оба [key_compare](#key_compare) и `value_compare` являются синонимами для *Traits*признаков параметра шаблона. Оба типа предоставляются для классов hash_set и hash_multiset, где они идентичны, для совместимости с классами hash_map и hash_multimap, где они различаются.
+Обратите внимание, что оба [key_compare](#key_compare) и `value_compare` являются синонимами для признаков параметра шаблона. Оба типа предоставляются для классов hash_set и hash_multiset, где они идентичны, для совместимости с классами hash_map и hash_multimap, где они различаются.
 
 ### <a name="example"></a>Пример
 
@@ -2434,7 +2435,7 @@ int main( )
 The hash_set has elements: 10 20.
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [Справочник по стандартной библиотеке C++](../standard-library/cpp-standard-library-reference.md)

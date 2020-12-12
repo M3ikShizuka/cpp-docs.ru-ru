@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: &lt; FStream&gt;'
 title: '&lt;fstream&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - fstream header
 ms.assetid: 660de351-0489-41df-b239-40e0cdcab46b
-ms.openlocfilehash: 46f65f746179740f2d67dd1ada2f96ab3fb6aaf6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 98fe18306d50a9d6f1f8a360d4d29b6e865f6328
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87203238"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324269"
 ---
 # <a name="ltfstreamgt"></a>&lt;fstream&gt;
 
@@ -38,7 +39,7 @@ ms.locfileid: "87203238"
 
 ### <a name="classes"></a>Классы
 
-|Class|Описание|
+|Класс|Описание|
 |-|-|
 |[basic_filebuf](../standard-library/basic-filebuf-class.md)|Шаблон класса описывает буфер потока, который управляет передачей элементов типа `Elem` , признаки символов которых определяются классом `Tr` , в последовательность элементов, хранящуюся во внешнем файле, и из нее.|
 |[basic_fstream](../standard-library/basic-fstream-class.md)|Шаблон класса описывает объект, управляющий вставкой и извлечением элементов и закодированных объектов с помощью буфера потока класса [basic_filebuf](../standard-library/basic-filebuf-class.md) \<**Elem**, **Tr**> с элементами типа `Elem` , признаки символов которых определяются классом `Tr` .|

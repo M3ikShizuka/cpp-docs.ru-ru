@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: file_status классе'
 title: Класс file_status
 ms.date: 09/10/2018
 f1_keywords:
@@ -12,14 +13,14 @@ helpviewer_keywords:
 - std::experimental::filesystem::file_status::operator=
 - std::experimental::filesystem::file_status::type
 - std::experimental::filesystem::file_status::permissions
-ms.openlocfilehash: 60ced1f60c811f585928f47c6cfd5e695d0c4085
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 8bc789d97f9b90b18214407fadab19e9644012a1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457750"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324371"
 ---
-# <a name="filestatus-class"></a>Класс file_status
+# <a name="file_status-class"></a>Класс file_status
 
 Создает оболочку для [file_type](../standard-library/filesystem-enumerations.md#file_type) и [perms](../standard-library/filesystem-enumerations.md#perms).
 
@@ -33,30 +34,30 @@ class file_status;
 
 |Конструктор|Описание|
 |-|-|
-|[file_status](#file_status)|Конструирует оболочку для [file_type](../standard-library/filesystem-enumerations.md#file_type) и [разрешений](../standard-library/filesystem-enumerations.md#perms)на файлы.|
+|[file_status](#file_status)|Конструирует оболочку для [file_type](../standard-library/filesystem-enumerations.md#file_type) и [разрешений](../standard-library/filesystem-enumerations.md#perms)файлов.|
 
-### <a name="member-functions"></a>Функции-члены
+### <a name="member-functions"></a>Функции элементов
 
-|Функция Member|Описание|
+|Функция-член|Описание|
 |-|-|
 |[type](#type)|Возвращает или задает класс `file_type`.|
-|[permissions](#permissions)|Возвращает или задает разрешения для файла.|
+|[разрешения](#permissions)|Возвращает или задает разрешения для файла.|
 
 ### <a name="operators"></a>Операторы
 
 |Оператор|Описание|
 |-|-|
-|[оператор=](#op_as)|Операторы-члены присваивания по умолчанию работают корректно.|
+|[Оператор =](#op_as)|Операторы-члены присваивания по умолчанию работают корректно.|
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<> FileSystem
+**Заголовок:**\<filesystem>
 
 **Пространство имен:** std:: экспериментальный:: FileSystem, std:: экспериментальный:: FileSystem
 
-## <a name="file_status"></a> file_status::file_status
+## <a name="file_statusfile_status"></a><a name="file_status"></a> file_status:: file_status
 
-Конструирует оболочку для [file_type](../standard-library/filesystem-enumerations.md#file_type) и [разрешений](../standard-library/filesystem-enumerations.md#perms)на файлы.
+Конструирует оболочку для [file_type](../standard-library/filesystem-enumerations.md#file_type) и [разрешений](../standard-library/filesystem-enumerations.md#perms)файлов.
 
 ```cpp
 explicit file_status(
@@ -73,15 +74,15 @@ file_status(file_status&&) noexcept = default;
 ### <a name="parameters"></a>Параметры
 
 *Ftype*\
-По `file_type`умолчанию задано `file_type::none`значение.
+`file_type`По умолчанию задано значение `file_type::none` .
 
 *виде*\
-Указанный файл `perms`по умолчанию имеет `perms::unknown`значение.
+Указанный файл `perms` по умолчанию имеет значение `perms::unknown` .
 
 *file_status*\
 Сохраненный объект.
 
-## <a name="op_as"></a>file_status:: operator =
+## <a name="file_statusoperator"></a><a name="op_as"></a> file_status:: operator =
 
 Операторы-члены присваивания по умолчанию работают корректно.
 
@@ -93,9 +94,9 @@ file_status& operator=(file_status&&) nexcept = default;
 ### <a name="parameters"></a>Параметры
 
 *file_status*\
-[File_status](../standard-library/file-status-class.md) копируется `file_status`в.
+[File_status](../standard-library/file-status-class.md) , копируемый в `file_status` .
 
-## <a name="type"></a>Тип
+## <a name="type"></a>Тип <a name="type"></a>
 
 Возвращает или задает класс `file_type`.
 
@@ -109,11 +110,11 @@ void type(file_type ftype) noexcept
 *Ftype*\
 Задается следующим образом: `file_type`.
 
-## <a name="permissions"></a>чтение
+## <a name="permissions"></a><a name="permissions"></a> чтение
 
 Возвращает или задает разрешения для файла.
 
-Используйте метод задания, чтобы создать файл `readonly` или `readonly` удалить атрибут.
+Используйте метод задания, чтобы создать файл `readonly` или удалить `readonly` атрибут.
 
 ```cpp
 perms permissions() const noexcept
@@ -125,7 +126,7 @@ void permissions(perms mask) noexcept
 *виде*\
 Задается следующим образом: `perms`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по файлам заголовков](../standard-library/cpp-standard-library-header-files.md)\
 [Класс Path](../standard-library/path-class.md)\

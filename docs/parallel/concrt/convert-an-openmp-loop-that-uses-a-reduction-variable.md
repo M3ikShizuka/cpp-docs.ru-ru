@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье как преобразовать цикл OpenMP, использующий переменную сокращения, для использования среда выполнения с параллелизмом
 title: Практическое руководство. Преобразование цикла OpenMP, использующего переменную сокращения для использования среды выполнения с параллелизмом
 ms.date: 11/04/2016
 helpviewer_keywords:
 - converting from OpenMP to the Concurrency Runtime, reduction variables
 - reduction variables, converting from OpenMP to the Concurrency Runtime
 ms.assetid: 96623f36-5e57-4d3f-8c13-669e6cd535b1
-ms.openlocfilehash: 06418bc1a331a5c77653087434a5cc621f92e7d7
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 131585caf3e06a11ed45bda4b58efa541272006f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91498547"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325762"
 ---
 # <a name="how-to-convert-an-openmp-loop-that-uses-a-reduction-variable-to-use-the-concurrency-runtime"></a>Практическое руководство. Преобразование цикла OpenMP, использующего переменную сокращения для использования среды выполнения с параллелизмом
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: среда выполнения с параллелизмом'
 title: Среда выполнения с параллелизмом
 ms.date: 07/20/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - ConcRT (see Concurrency Runtime)
 - Concurrency Runtime
 ms.assetid: 874bc58f-8dce-483e-a3a1-4dcc9e52ed2c
-ms.openlocfilehash: ce75d7a78fec69922c08479f6c130c6b6ccec566
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1bc161e8c70f98fe469feffa1c472ecaf6a7f161
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845514"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325788"
 ---
 # <a name="concurrency-runtime"></a>Среда выполнения с параллелизмом
 
@@ -39,7 +40,7 @@ ms.locfileid: "88845514"
 |-|-|
 |[Параллельное выполнение задач](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br /><br /> [Как использовать parallel_invoke для написания параллельной подпрограммы сортировки](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)<br /><br /> [Инструкции. Использование parallel_invoke для выполнения параллельных операций](../../parallel/concrt/how-to-use-parallel-invoke-to-execute-parallel-operations.md)<br /><br /> [Как создать задачу, которая завершается после задержки](../../parallel/concrt/how-to-create-a-task-that-completes-after-a-delay.md)|Содержит описание задач и групп задач, которые могут помочь в создании асинхронного кода и декомпозиции параллельной работы на меньшие части.|
 |[Пошаговое руководство. Реализация фьючерсов](../../parallel/concrt/walkthrough-implementing-futures.md)|Здесь показано, как объединить возможности исполняющей среды с параллелизмом для выполнения более объемной задачи.|
-|[Пошаговое руководство. Удаление работы из потока пользовательского интерфейса](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)|Здесь показано, как переместить работу, выполняемую потоком ИП, в рабочий поток в приложении MFC.|
+|[Пошаговое руководство. Удаление работы из потока User-Interface](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)|Здесь показано, как переместить работу, выполняемую потоком ИП, в рабочий поток в приложении MFC.|
 |[Рекомендации в библиотеке параллельных шаблонов](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md)<br /><br /> [Общие рекомендации в среда выполнения с параллелизмом](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)|Рекомендации по работе с PPL.|
 
 ## <a name="data-parallelism-in-the-ppl"></a>Параллелизм данных в PPL
@@ -69,9 +70,9 @@ ms.locfileid: "88845514"
 
 |Статья|Описание|
 |-|-|
-|[Асинхронные агенты](../../parallel/concrt/asynchronous-agents.md)<br /><br /> [Асинхронные блоки сообщений](../../parallel/concrt/asynchronous-message-blocks.md)<br /><br /> [Функции передачи сообщений](../../parallel/concrt/message-passing-functions.md)<br /><br /> [Как реализовать различные шаблоны "производитель-получатель"](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)<br /><br /> [Руководство. предоставление рабочих функций классам Call и transformer](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md)<br /><br /> [Как использовать преобразователь в конвейере данных](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)<br /><br /> [Практические руководства. Выбор между завершенными задачами](../../parallel/concrt/how-to-select-among-completed-tasks.md)<br /><br /> [Как отправить сообщение с постоянным интервалом](../../parallel/concrt/how-to-send-a-message-at-a-regular-interval.md)<br /><br /> [Как использовать фильтр блоков сообщений](../../parallel/concrt/how-to-use-a-message-block-filter.md)|Здесь описываются асинхронные агенты, блоки сообщений и функции передачи сообщений, которые являются стандартными сборочными блоками для выполнения операций с потоками данных в исполняющей среде с параллелизмом.|
-|[Пошаговое руководство. Создание приложения на основе агента](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)<br /><br /> [Пошаговое руководство. Создание агента потока данных](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)|Здесь демонстрируется создание простого приложения на основе агентов.|
-|[Пошаговое руководство. Создание сети обработки изображений](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)|Здесь показано, как создавать сеть асинхронных блоков сообщений, выполняющих обработку изображений.|
+|[Асинхронные агенты](../../parallel/concrt/asynchronous-agents.md)<br /><br /> [Асинхронные блоки сообщений](../../parallel/concrt/asynchronous-message-blocks.md)<br /><br /> [Функции передачи сообщений](../../parallel/concrt/message-passing-functions.md)<br /><br /> [Практические рекомендации. Реализация различных шаблонов Producer-Consumer](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)<br /><br /> [Руководство. предоставление рабочих функций классам Call и transformer](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md)<br /><br /> [Как использовать преобразователь в конвейере данных](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)<br /><br /> [Практические руководства. Выбор между завершенными задачами](../../parallel/concrt/how-to-select-among-completed-tasks.md)<br /><br /> [Как отправить сообщение с постоянным интервалом](../../parallel/concrt/how-to-send-a-message-at-a-regular-interval.md)<br /><br /> [Как использовать фильтр блоков сообщений](../../parallel/concrt/how-to-use-a-message-block-filter.md)|Здесь описываются асинхронные агенты, блоки сообщений и функции передачи сообщений, которые являются стандартными сборочными блоками для выполнения операций с потоками данных в исполняющей среде с параллелизмом.|
+|[Пошаговое руководство. Создание приложения Agent-Based](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)<br /><br /> [Пошаговое руководство. Создание агента потока данных](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)|Здесь демонстрируется создание простого приложения на основе агентов.|
+|[Пошаговое руководство. Создание Image-Processing сети](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)|Здесь показано, как создавать сеть асинхронных блоков сообщений, выполняющих обработку изображений.|
 |[Пошаговое руководство. использование Join для предотвращения взаимоблокировок](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md)|На примере проблемы обедающих философов показано использование исполняющей среды с параллелизмом для недопущения взаимоблокировок в приложении.|
 |[Пошаговое руководство. Создание пользовательского блока сообщений](../../parallel/concrt/walkthrough-creating-a-custom-message-block.md)|Здесь описано, как создать пользовательский тип блока сообщений, сортирующий входящие сообщения по приоритету.|
 |[Рекомендации в библиотеке асинхронных агентов](../../parallel/concrt/best-practices-in-the-asynchronous-agents-library.md)<br /><br /> [Общие рекомендации в среда выполнения с параллелизмом](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)|Рекомендации по работе с агентами.|

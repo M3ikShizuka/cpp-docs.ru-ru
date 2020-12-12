@@ -1,19 +1,20 @@
 ---
+description: 'Подробнее о: контекстах'
 title: Контексты
 ms.date: 11/04/2016
 helpviewer_keywords:
 - contexts [Concurrency Runtime]
 ms.assetid: 10c1d861-8fbb-4ba0-b2ec-61876b11176e
-ms.openlocfilehash: 7df75ae7c1ac2b1d8c0b73ff1f1e3f2800d559b9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 70c97b74afaaa755a85532c7bc08a3a5c5fe3e17
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87194879"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325775"
 ---
 # <a name="contexts"></a>Контексты
 
-В этом документе описывается роль контекстов в среда выполнения с параллелизмом. Поток, присоединенный к планировщику, называется *контекстом выполнения*или просто *контекстом*. Функция [Concurrency:: wait](reference/concurrency-namespace-functions.md#wait) и класс Concurrency::[context](../../parallel/concrt/reference/context-class.md) позволяют управлять поведением контекстов. Используйте `wait` функцию, чтобы приостановить текущий контекст в течение заданного времени. Используйте `Context` класс, если требуется больший контроль над тем, когда контексты блокируют, разблокируются и выдают, или когда требуется переписывать текущий контекст.
+В этом документе описывается роль контекстов в среда выполнения с параллелизмом. Поток, присоединенный к планировщику, называется *контекстом выполнения* или просто *контекстом*. Функция [Concurrency:: wait](reference/concurrency-namespace-functions.md#wait) и класс Concurrency::[context](../../parallel/concrt/reference/context-class.md) позволяют управлять поведением контекстов. Используйте `wait` функцию, чтобы приостановить текущий контекст в течение заданного времени. Используйте `Context` класс, если требуется больший контроль над тем, когда контексты блокируют, разблокируются и выдают, или когда требуется переписывать текущий контекст.
 
 > [!TIP]
 > Среда выполнения с параллелизмом предоставляет планировщик по умолчанию, и таким образом не требуется создавать планировщик в приложении. Поскольку планировщик задач помогает точно настроить производительность приложений, рекомендуется начать с [библиотеки параллельных шаблонов (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) или [библиотеки асинхронных агентов](../../parallel/concrt/asynchronous-agents-library.md) , если вы не знакомы с среда выполнения с параллелизмом.
@@ -70,7 +71,7 @@ ms.locfileid: "87194879"
 
 ## <a name="see-also"></a>См. также раздел
 
-[планировщик задач](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
+[Планировщик заданий](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [Как использовать группы расписаний для влияния на порядок выполнения](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md)<br/>
 [Как использовать класс контекста для реализации параллельного семафора](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)<br/>
 [Как использовать превышение лимита подписки для смещения задержки](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md)

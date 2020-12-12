@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: invalid_argument классе'
 title: Класс invalid_argument
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_argument class
 ms.assetid: af6c227d-ad7c-4e63-9dee-67af81d83506
-ms.openlocfilehash: 4fb15785cbff18daa1bfa9a1198a64d018383764
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 58eee3a5e56932bcd045a7e66e59e105b8921813
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87521204"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323947"
 ---
 # <a name="invalid_argument-class"></a>Класс invalid_argument
 
@@ -29,7 +30,7 @@ public:
 };
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Значение, возвращаемое, `what()` является копией `message.data()` . Дополнительные сведения см. в разделах [`what`](../standard-library/exception-class.md) и [`data`](../standard-library/basic-string-class.md#data).
 
@@ -67,7 +68,7 @@ Type class std::invalid_argument
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Класс logic_error](../standard-library/logic-error-class.md)\
 [Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)

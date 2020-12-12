@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: basic_regex классе'
 title: Класс basic_regex
 ms.date: 03/27/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - basic_regex class
 ms.assetid: 8a18c6b4-f22a-4cfd-bc16-b4267867ebc3
-ms.openlocfilehash: 4348941e065680a54f9bd0c9f5b7ab2ff1af5e56
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 450f3945faeb088c975bb1657d69496bcf078ccd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219226"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325630"
 ---
 # <a name="basic_regex-class"></a>Класс basic_regex
 
@@ -32,7 +33,7 @@ class basic_regex
 *ркстраитс*\
 Класс характеристик для элементов.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса описывает объект, содержащий регулярное выражение. Объекты этого шаблона класса могут передаваться в функции шаблонов [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search)и [regex_replace](../standard-library/regex-functions.md#regex_replace), а также подходящие аргументы текстовой строки для поиска текста, соответствующего регулярному выражению. Существует две специализации этого шаблона класса с [регулярным выражением](../standard-library/regex-typedefs.md#regex) определений типов для элементов типа **`char`** и [wregex](../standard-library/regex-typedefs.md#wregex) для элементов типа **`wchar_t`** .
 
@@ -40,7 +41,7 @@ class basic_regex
 
 Некоторые функции принимают последовательность операндов, определяющую регулярное выражение. Такую последовательность операндов можно задать несколькими способами:
 
-`ptr`— Завершающая последовательность, заканчивающаяся нулем (например, строка C для *elem* типа **`char`** ), начиная с `ptr` (которая не должна быть пустым указателем), где завершающий элемент является значением `value_type()` и не является частью последовательности операндов
+`ptr` — Завершающая последовательность, заканчивающаяся нулем (например, строка C для *elem* типа **`char`** ), начиная с `ptr` (которая не должна быть пустым указателем), где завершающий элемент является значением `value_type()` и не является частью последовательности операндов
 
 `ptr`, `count` -- последовательность элементов `count`, начиная с `ptr` (это должен быть не пустой указатель)
 
@@ -196,7 +197,7 @@ getloc == imbued == true
 match("abc") == true
 ```
 
-## <a name="basic_regexassign"></a><a name="assign"></a>basic_regex:: Assign
+## <a name="basic_regexassign"></a><a name="assign"></a> basic_regex:: Assign
 
 Присваивает значение объекту регулярного выражения.
 
@@ -263,11 +264,11 @@ basic_regex& assign(
 *Интерфейс*\
 Копируемый initializer_list.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Все функции элементов заменяют регулярное выражение, содержащееся в, на **`*this`** регулярное выражение, описываемое последовательностью операндов, а затем возвращает **`*this`** .
 
-## <a name="basic_regexbasic_regex"></a><a name="basic_regex"></a>basic_regex:: basic_regex
+## <a name="basic_regexbasic_regex"></a><a name="basic_regex"></a> basic_regex:: basic_regex
 
 Конструирует объект регулярного выражения.
 
@@ -337,7 +338,7 @@ explicit basic_regex(
 *Интерфейс*\
 Копируемый initializer_list.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Все последовательности хранят объект типа `RXtraits`, сконструированный по умолчанию.
 
@@ -345,7 +346,7 @@ explicit basic_regex(
 
 Пустой `basic_regex` объект не соответствует ни одной последовательности символов при передаче в [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search)или [regex_replace](../standard-library/regex-functions.md#regex_replace).
 
-## <a name="basic_regexflag_type"></a><a name="flag_type"></a>basic_regex:: flag_type
+## <a name="basic_regexflag_type"></a><a name="flag_type"></a> basic_regex:: flag_type
 
 Тип флагов параметров синтаксиса.
 
@@ -353,11 +354,11 @@ explicit basic_regex(
 typedef regex_constants::syntax_option_type flag_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом [regex_constants::syntax_option_type](../standard-library/regex-constants-class.md#syntax_option_type).
 
-## <a name="basic_regexflags"></a><a name="flags"></a>basic_regex:: flags
+## <a name="basic_regexflags"></a><a name="flags"></a> basic_regex:: flags
 
 Возвращает флаги параметров синтаксиса.
 
@@ -365,11 +366,11 @@ typedef regex_constants::syntax_option_type flag_type;
 flag_type flags() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член возвращает значение аргумента `flag_type`, переданного в последний вызов одной из функций-членов [basic_regex::assign](#assign), или, если вызовы не выполнялись, возвращает значение, переданное в конструктор.
 
-## <a name="basic_regexgetloc"></a><a name="getloc"></a>basic_regex:: getloc
+## <a name="basic_regexgetloc"></a><a name="getloc"></a> basic_regex:: getloc
 
 Возвращает сохраненный объект языкового стандарта.
 
@@ -377,11 +378,11 @@ flag_type flags() const;
 locale_type getloc() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция – член возвращает `traits.` [regex_traits:: getloc](../standard-library/regex-traits-class.md#getloc) `()` .
 
-## <a name="basic_regeximbue"></a><a name="imbue"></a>basic_regex:: imbue
+## <a name="basic_regeximbue"></a><a name="imbue"></a> basic_regex:: imbue
 
 Изменяет сохраненный объект языкового стандарта.
 
@@ -394,11 +395,11 @@ locale_type imbue(locale_type loc);
 *Loc*\
 Объект языкового стандарта, который необходимо сохранить.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция члена удаляет **`*this`** и возвращает `traits.` [regex_traits:: imbue](../standard-library/regex-traits-class.md#imbue) `(loc)` .
 
-## <a name="basic_regexlocale_type"></a><a name="locale_type"></a>basic_regex:: locale_type
+## <a name="basic_regexlocale_type"></a><a name="locale_type"></a> basic_regex:: locale_type
 
 Тип сохраненного объекта языкового стандарта.
 
@@ -406,11 +407,11 @@ locale_type imbue(locale_type loc);
 typedef typename RXtraits::locale_type locale_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом [regex_traits::locale_type](../standard-library/regex-traits-class.md#locale_type).
 
-## <a name="basic_regexmark_count"></a><a name="mark_count"></a>basic_regex:: mark_count
+## <a name="basic_regexmark_count"></a><a name="mark_count"></a> basic_regex:: mark_count
 
 Возвращает число сопоставленных частей выражения.
 
@@ -418,11 +419,11 @@ typedef typename RXtraits::locale_type locale_type;
 unsigned mark_count() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает число групп записи в регулярном выражении.
 
-## <a name="basic_regexoperator"></a><a name="op_eq"></a>basic_regex:: operator =
+## <a name="basic_regexoperator"></a><a name="op_eq"></a> basic_regex:: operator =
 
 Присваивает значение объекту регулярного выражения.
 
@@ -449,11 +450,11 @@ basic_regex& operator=(const basic_string<Elem, STtraits, STalloc>& str);
 *str*\
 Копируемая строка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Операторы каждый заменяют регулярное выражение, содержащееся в, на **`*this`** регулярное выражение, описываемое последовательностью операндов, а затем возвращает **`*this`** .
 
-## <a name="basic_regexswap"></a><a name="swap"></a>basic_regex:: swap
+## <a name="basic_regexswap"></a><a name="swap"></a> basic_regex:: swap
 
 Меняет местами два объекта регулярного выражения.
 
@@ -466,11 +467,11 @@ void swap(basic_regex& right) throw();
 *Правильно*\
 Объект регулярного выражения для замены.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция – член меняет местами регулярные выражения между **`*this`** и *right*. Она делает это в константном времени и не создает исключений.
 
-## <a name="basic_regexvalue_type"></a><a name="value_type"></a>basic_regex:: value_type
+## <a name="basic_regexvalue_type"></a><a name="value_type"></a> basic_regex:: value_type
 
 Тип элемента.
 
@@ -478,7 +479,7 @@ void swap(basic_regex& right) throw();
 typedef Elem value_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип является синонимом для параметра-шаблона *elem*.
 

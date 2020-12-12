@@ -1,22 +1,23 @@
 ---
+description: 'Дополнительные сведения о: предупреждение компилятора C4984'
 title: Предупреждение компилятора C4984
 ms.date: 08/19/2019
 f1_keywords:
 - C4984
 helpviewer_keywords:
 - C4984
-ms.openlocfilehash: 91ae30018c7de633d8ba23d538b301ad4bbac984
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: 5a6708a1063baf8fa4b5feece65eabd93df7bbeb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69632908"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97326004"
 ---
 # <a name="compiler-warning-c4984"></a>Предупреждение компилятора C4984
 
 > "If constexpr" — расширение языка C++ 17
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Компилятор обнаружил `if constexpr` выражение в коде, скомпилированном с использованием стандарта c++ 14 Standard по умолчанию. Это выражение указывается начиная с стандарта C++ 17. Если требуется совместимость с C++ 11 или C++ 14, это выражение не является переносимым.
 

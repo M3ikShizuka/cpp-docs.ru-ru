@@ -1,4 +1,5 @@
 ---
+description: Подробнее о следующем классе
 title: Класс future
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - std::future [C++], wait
 - std::future [C++], wait_for
 - std::future [C++], wait_until
-ms.openlocfilehash: ac52429919f83a90a87141399952e248e18e0862
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ca73a3d0273014c4f22e8e807c2bf7c3d6e43320
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220942"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324230"
 ---
 # <a name="future-class"></a>Класс future
 
@@ -46,7 +47,7 @@ class future;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[будущем](#future)|Формирует объект `future`.|
 
@@ -73,7 +74,7 @@ class future;
 
 **Пространство имен:** std
 
-## <a name="futurefuture-constructor"></a><a name="future"></a>Конструктор future.: Future
+## <a name="futurefuture-constructor"></a><a name="future"></a> Конструктор future.: Future
 
 Формирует объект `future`.
 
@@ -87,13 +88,13 @@ future(future&& Other) noexcept;
 *Иной*\
 Объект `future`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый конструктор создает объект `future`, который не имеет связанного асинхронного состояния.
 
 Второй конструктор конструирует `future` объект и передает связанное асинхронное состояние из *другого*. *Другие* больше не имеют связанного асинхронного состояния.
 
-## <a name="futureget"></a><a name="get"></a>будущее:: Get
+## <a name="futureget"></a><a name="get"></a> будущее:: Get
 
 Получает результат, который хранится в связанном асинхронном состоянии.
 
@@ -105,7 +106,7 @@ Ty get();
 
 Если результат — исключение, метод создает его повторно. В противном случае результат будет возвращен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 До получения результата данный метод блокирует текущий поток, пока не будет готово связанное асинхронное состояние.
 
@@ -115,7 +116,7 @@ Ty get();
 
 В других специализациях метод перемещает свое возвращаемое значение из сохраненного значения. Таким образом, этот метод следует вызывать только один раз.
 
-## <a name="futureoperator"></a><a name="op_eq"></a>Фьючерс:: operator =
+## <a name="futureoperator"></a><a name="op_eq"></a> Фьючерс:: operator =
 
 Передает связанное асинхронное состояние из указанного объекта.
 
@@ -132,11 +133,11 @@ future& operator=(future&& Right) noexcept;
 
 `*this`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 После перемещения *право* больше не имеет связанного асинхронного состояния.
 
-## <a name="futureshare"></a><a name="share"></a>будущее:: поделиться
+## <a name="futureshare"></a><a name="share"></a> будущее:: поделиться
 
 Преобразует объект в объект [shared_future](../standard-library/shared-future-class.md).
 
@@ -148,7 +149,7 @@ shared_future<Ty> share();
 
 `shared_future(move(*this))`
 
-## <a name="futurevalid"></a><a name="valid"></a>будущее:: допустимое
+## <a name="futurevalid"></a><a name="valid"></a> будущее:: допустимое
 
 Указывает, имеет ли объект связанное асинхронное состояние.
 
@@ -160,7 +161,7 @@ bool valid() noexcept;
 
 **`true`** значение, если объект имеет связанное асинхронное состояние. в противном случае — **`false`** .
 
-## <a name="futurewait"></a><a name="wait"></a>будущее:: wait
+## <a name="futurewait"></a><a name="wait"></a> будущее:: wait
 
 Блокирует текущий поток, пока связанное асинхронное состояние не получит значение *ready*.
 
@@ -168,11 +169,11 @@ bool valid() noexcept;
 void wait() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Связанное асинхронное состояние *Готово* , только если его асинхронный поставщик сохранил возвращаемое значение или не сохранил исключение.
 
-## <a name="futurewait_for"></a><a name="wait_for"></a>будущее:: wait_for
+## <a name="futurewait_for"></a><a name="wait_for"></a> будущее:: wait_for
 
 Блокирует текущий поток, пока связанное асинхронное состояние не получит значение *ready* или не истечет указанный период времени.
 
@@ -190,11 +191,11 @@ future_status wait_for(const chrono::duration<Rep, Period>& Rel_time) const;
 
 Состояние [future_status](../standard-library/future-enums.md#future_status), которое указывает причину возврата.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Связанное асинхронное состояние имеет значение "ready", только если его асинхронный поставщик сохранил возвращаемое значение или исключение.
 
-## <a name="futurewait_until"></a><a name="wait_until"></a>будущее:: wait_until
+## <a name="futurewait_until"></a><a name="wait_until"></a> будущее:: wait_until
 
 Блокирует текущий поток, пока связанное асинхронное состояние не получит значение *ready* или не наступит указанный момент времени.
 
@@ -212,7 +213,7 @@ future_status wait_until(const chrono::time_point<Clock, Duration>& Abs_time) co
 
 Состояние [future_status](../standard-library/future-enums.md#future_status), которое указывает причину возврата.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Связанное асинхронное состояние *Готово* , только если его асинхронный поставщик сохранил возвращаемое значение или не сохранил исключение.
 

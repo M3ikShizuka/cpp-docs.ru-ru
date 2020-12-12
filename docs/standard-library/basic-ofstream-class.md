@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: basic_ofstream классе'
 title: Класс basic_ofstream
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - std::basic_ofstream [C++], rdbuf
 - std::basic_ofstream [C++], swap
 ms.assetid: 3bcc9c51-6dfc-4844-8fcc-22ef57c9dff1
-ms.openlocfilehash: d825dbbe278325e755af6fdffe01a34ac0a4080d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 10bb7ee14ea6b126ee907cbb8b56b3b3c31188a6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219265"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325671"
 ---
 # <a name="basic_ofstream-class"></a>Класс basic_ofstream
 
@@ -42,7 +43,7 @@ class basic_ofstream : public basic_ostream<Elem, Tr>
 *ТС*\
 Признаки базового элемента буфера файла (обычно `char_traits`< `Elem`>).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 При записи **`wchar_t`** специализации `basic_ofstream` в файл, если файл открыт в текстовом режиме, будет записана последовательность MBCS. Внутреннее представление будет использовать буфер **`wchar_t`** символов.
 
@@ -80,7 +81,7 @@ int main(int argc, char **argv)
 
 |Функция-член|Описание|
 |-|-|
-|[выхода](#close)|Закрывает файл.|
+|[close](#close)|Закрывает файл.|
 |[is_open](#is_open)|Определяет, открыт ли файл.|
 |[open](#open)|Открывает файл.|
 |[rdbuf](#rdbuf)|Возвращает адрес сохраненного буфера потока.|
@@ -98,7 +99,7 @@ int main(int argc, char **argv)
 
 **Пространство имен:** std
 
-## <a name="basic_ofstreambasic_ofstream"></a><a name="basic_ofstream"></a>basic_ofstream:: basic_ofstream
+## <a name="basic_ofstreambasic_ofstream"></a><a name="basic_ofstream"></a> basic_ofstream:: basic_ofstream
 
 Создает объект типа `basic_ofstream`.
 
@@ -133,7 +134,7 @@ basic_ofstream(
 *Правильно*\
 Ссылка rvalue на объект `basic_ofstream`, используемый для инициализации этого объекта `basic_ofstream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый конструктор инициализирует базовый класс путем вызова [basic_ostream](../standard-library/basic-ostream-class.md)( `sb` ), где `sb` — это сохраненный объект класса [basic_filebuf](../standard-library/basic-filebuf-class.md) <  `Elem` , `Tr`>. Он также инициализирует `sb` путем вызова `basic_filebuf`< `Elem`, `Tr`>.
 
@@ -163,7 +164,7 @@ int main(int argc, char **argv)
 }
 ```
 
-## <a name="basic_ofstreamclose"></a><a name="close"></a>basic_ofstream:: Close
+## <a name="basic_ofstreamclose"></a><a name="close"></a> basic_ofstream:: Close
 
 Закрывает файл.
 
@@ -171,7 +172,7 @@ int main(int argc, char **argv)
 void close();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция члена вызывает [rdbuf](../standard-library/basic-ifstream-class.md#rdbuf) **->** [Close](../standard-library/basic-filebuf-class.md#close).
 
@@ -179,7 +180,7 @@ void close();
 
 Пример, в котором используется `close`, см. в разделе [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close).
 
-## <a name="basic_ofstreamis_open"></a><a name="is_open"></a>basic_ofstream:: is_open
+## <a name="basic_ofstreamis_open"></a><a name="is_open"></a> basic_ofstream:: is_open
 
 Указывает, открыт ли файл.
 
@@ -191,7 +192,7 @@ bool is_open() const;
 
 **`true`** значение, если файл открыт; **`false`** в противном случае —.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция члена возвращает [rdbuf](#rdbuf) **->** [is_open](../standard-library/basic-filebuf-class.md#is_open).
 
@@ -217,7 +218,7 @@ int main( )
 }
 ```
 
-## <a name="basic_ofstreamopen"></a><a name="open"></a>basic_ofstream:: Open
+## <a name="basic_ofstreamopen"></a><a name="open"></a> basic_ofstream:: Open
 
 Открывает файл.
 
@@ -252,7 +253,7 @@ void open(
 *_Prot*\
 Защита открытия файла по умолчанию, эквивалент параметра `shflag` в [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член вызывает [rdbuf](#rdbuf) **->** [Open](../standard-library/basic-filebuf-class.md#open)(_ *filename*, `_Mode` &#124; `ios_base::out` ). Если эта функция возвращает пустой указатель, функция вызывает [SetState](../standard-library/basic-ios-class.md#setstate)( `failbit` ).
 
@@ -260,7 +261,7 @@ void open(
 
 Пример, в котором используется, см. в разделе [basic_filebuf:: Open](../standard-library/basic-filebuf-class.md#open) `open` .
 
-## <a name="basic_ofstreamoperator"></a><a name="op_eq"></a>basic_ofstream:: operator =
+## <a name="basic_ofstreamoperator"></a><a name="op_eq"></a> basic_ofstream:: operator =
 
 Назначает содержимое этого объекта потока. Это назначение перемещения, включающее `rvalue reference`, которое не оставляет копию.
 
@@ -277,11 +278,11 @@ basic_ofstream& operator=(basic_ofstream&& right);
 
 Возвращает **`*this`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Оператор Member заменяет содержимое объекта с помощью содержимого *right*, которое рассматривается как ссылка rvalue.
 
-## <a name="basic_ofstreamrdbuf"></a><a name="rdbuf"></a>basic_ofstream:: rdbuf
+## <a name="basic_ofstreamrdbuf"></a><a name="rdbuf"></a> basic_ofstream:: rdbuf
 
 Возвращает адрес сохраненного буфера потока.
 
@@ -297,7 +298,7 @@ basic_filebuf<Elem, Tr> *rdbuf() const
 
 Пример, в котором используется `rdbuf`, см. в разделе [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close).
 
-## <a name="basic_ofstreamswap"></a><a name="swap"></a>basic_ofstream:: swap
+## <a name="basic_ofstreamswap"></a><a name="swap"></a> basic_ofstream:: swap
 
 Меняет местами содержимое двух объектов `basic_ofstream`.
 
@@ -310,7 +311,7 @@ void swap(basic_ofstream& right);
 *Правильно*\
 Ссылка `lvalue` на другой объект `basic_ofstream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция элемента меняет местами содержимое этого объекта на содержимое, находящееся *справа*.
 

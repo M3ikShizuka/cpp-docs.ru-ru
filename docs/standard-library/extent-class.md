@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: классе экстента'
 title: Класс extent
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - extent class
 - extent
 ms.assetid: 6d16263d-90b2-4330-9ec7-b59ed898792d
-ms.openlocfilehash: 0cd53ba8537e706a68ffdcf08df998108266ad20
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: d3db49db99d2cb7a241ca3b69c48fa6bcf2cb490
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68457793"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324390"
 ---
 # <a name="extent-class"></a>Класс extent
 
@@ -30,12 +31,12 @@ struct extent;
 *Ty*\
 Запрашиваемый тип.
 
-*СОХРАНЕНИИ*\
+*Сохранении*\
 Массив, привязанный к запросу.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Если *Ty* является типом массива, имеющего по крайней мере *i* единицу измерения, то запрос типа содержит количество элементов в измерении, заданном параметром *i*. Если *Ty* не является типом массива или его ранг меньше *I*, или если *i* равен нулю и *Ty* имеет `U`тип "массив с неизвестной границей", запрос типа содержит значение 0.
+Если *Ty* является типом массива, имеющего по крайней мере *i* единицу измерения, то запрос типа содержит количество элементов в измерении, заданном параметром *i*. Если *Ty* не является типом массива или его ранг меньше *I*, или если *i* равен нулю и *Ty* имеет тип "массив с неизвестной границей `U` ", запрос типа содержит значение 0.
 
 ## <a name="example"></a>Пример
 
@@ -63,11 +64,11 @@ extent 1 == 10
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)\
 [Класс remove_all_extents](../standard-library/remove-all-extents-class.md)\

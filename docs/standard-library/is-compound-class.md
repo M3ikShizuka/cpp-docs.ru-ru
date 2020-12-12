@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_compound классе'
 title: Класс is_compound
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - is_compound class
 - is_compound
 ms.assetid: bdad1167-cf3f-4f37-8321-62a5df159ead
-ms.openlocfilehash: ae2e3c66b3abf22bbefbcb0fcd3292f0a3dbdbe2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0bdd1b2f8c7ab827d9bed1025e30140244381c3a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215716"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323834"
 ---
 # <a name="is_compound-class"></a>Класс is_compound
 
@@ -30,7 +31,7 @@ struct is_compound;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение, **`false`** Если тип *Ty* является фундаментальным (то есть, если [is_fundamental](../standard-library/is-fundamental-class.md) \<Ty> содержит **`true`** ). в противном случае он содержит **`true`** . Таким же предикат имеет значение, **`true`** Если *Ty* является типом массива, типом функции, указателем на **`void`** объект или функцию, ссылкой, классом, объединением, перечислением или указателем на нестатический член класса или с *указанием* одного из этих элементов.
 

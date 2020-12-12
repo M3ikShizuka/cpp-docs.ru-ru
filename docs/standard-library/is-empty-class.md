@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_empty классе'
 title: Класс is_empty
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_empty class
 - is_empty
 ms.assetid: 44a6fc92-7e55-4fbe-9a24-2a0ce2dccba0
-ms.openlocfilehash: 6300107ecf9c4ea1e237a60bf18f26b6416f7fba
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 130f1919e3553bb2757a5c1e71c829586b63c8aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452710"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323773"
 ---
-# <a name="isempty-class"></a>Класс is_empty
+# <a name="is_empty-class"></a>Класс is_empty
 
 Проверяет, является ли тип пустым классом.
 
@@ -30,7 +31,7 @@ struct is_empty;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* является пустым классом, в противном случае — значение false.
 
@@ -72,10 +73,10 @@ is_empty<int> == false
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)

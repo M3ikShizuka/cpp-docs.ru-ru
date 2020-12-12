@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: binder1st Class'
 title: Класс binder1st
 ms.date: 02/21/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - binder1st class
 ms.assetid: 6b8ee343-c82f-48f8-867d-06f9d1d324c0
-ms.openlocfilehash: 15b704134d47b7bf7d8857bf380c756b0b03a1b0
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 1311d598c8300f3bba4d27acdaab879cbd054696
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72688390"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325509"
 ---
 # <a name="binder1st-class"></a>Класс binder1st
 
@@ -43,24 +44,24 @@ protected:
 
 ### <a name="parameters"></a>Параметры
 
-*binary_fn* \
+*binary_fn*\
 Объект бинарной функции, который необходимо преобразовать в объект унарной функции.
 
-*left* \
+*слева*\
 Значение, к которому необходимо привязать первый аргумент объекта бинарной функции.
 
-*справа* \
+*Правильно*\
 Значение аргумента, которое адаптированный объект бинарной функции сравнивает с фиксированным значением второго аргумента.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Объект унарной функции, полученный в результате привязки первого аргумента объекта бинарной функции к значению *Left*.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
-Шаблон класса сохраняет копию объекта бинарной функции, *binary_fn* в `op`, и копию *Left* в `value`. Он определяет свою функцию члена `operator()` как возвращаемый `op(value, right)`.
+Шаблон класса хранит копию объекта бинарной функции, *binary_fn* в `op` , и копию *Left* в `value` . Он определяет свою функцию члена `operator()` как возвращающую `op(value, right)` .
 
-Если *binary_fn* является объектом типа `Operation` и `c` является константой, `bind1st(binary_fn, c)` является более удобным эквивалентом `binder1st<Operation>(binary_fn, c)`. Дополнительные сведения см. в разделе [bind1st](../standard-library/functional-functions.md#bind1st).
+Если *binary_fn* является объектом типа `Operation` и `c` является константой, то `bind1st(binary_fn, c)` является более удобным эквивалентом `binder1st<Operation>(binary_fn, c)` . Дополнительные сведения см. в разделе [bind1st](../standard-library/functional-functions.md#bind1st).
 
 ## <a name="example"></a>Пример
 

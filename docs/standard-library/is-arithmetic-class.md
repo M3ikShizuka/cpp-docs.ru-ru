@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_arithmetic классе'
 title: Класс is_arithmetic
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_arithmetic class
 - is_arithmetic
 ms.assetid: ea427b7e-0141-4a04-848f-561054c53001
-ms.openlocfilehash: e2c148b7cb58cf38e5f73d4e3d2297eac099ef7e
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 75673950a162b34815db297a3012fa7152e61375
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456686"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323877"
 ---
-# <a name="isarithmetic-class"></a>Класс is_arithmetic
+# <a name="is_arithmetic-class"></a>Класс is_arithmetic
 
 Проверяет, является ли тип арифметическим.
 
@@ -30,7 +31,7 @@ struct is_arithmetic;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* является арифметическим типом, то есть целочисленным типом или типом с плавающей запятой или `cv-qualified` формой одного из них, в противном случае — значение false.
 
@@ -68,12 +69,12 @@ is_arithmetic<float> == true
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)\
-Класс [is_floating_point](../standard-library/is-floating-point-class.md)\
-Класс [is_integral](../standard-library/is-integral-class.md)
+[Класс is_floating_point](../standard-library/is-floating-point-class.md)\
+[Класс is_integral](../standard-library/is-integral-class.md)

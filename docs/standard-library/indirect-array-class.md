@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: indirect_array классе'
 title: Класс indirect_array
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - indirect_array class
 ms.assetid: 10e1eaea-ba5a-405c-a25e-7bdd3eee7fc7
-ms.openlocfilehash: 6be0c5153cbc94d09b414fc9e14fa498c7a4cfa7
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 47c9a0e604fd9873d7705f70624e67d9b3a22a7a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687920"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324045"
 ---
 # <a name="indirect_array-class"></a>Класс indirect_array
 
@@ -19,13 +20,13 @@ ms.locfileid: "72687920"
 
 ## <a name="syntax"></a>Синтаксис
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
-Класс описывает объект, хранящий ссылку на объект `va` класса [valarray](../standard-library/valarray-class.md)  **\<Type >** , а также объект `xa` класса `valarray<size_t>`, который описывает последовательность элементов для выбора из объекта `valarray<Type>`.
+Класс описывает объект, хранящий ссылку на объект `va` класса [valarray](../standard-library/valarray-class.md) **\<Type>** , а также объект `xa` класса `valarray<size_t>` , который описывает последовательность элементов для выбора из `valarray<Type>` объекта.
 
-Объект `indirect_array<Type>` создается только путем написания выражения формы `va[xa]`. Функции-члены класса indirect_array ведут себя так же, как и соответствующие сигнатуры функций, определенные для `valarray<Type>`, за исключением того, что затрагивается только последовательность выбранных элементов.
+`indirect_array<Type>`Объект создается только путем написания выражения формы `va[xa]` . Функции-члены класса indirect_array ведут себя как соответствующие сигнатуры функций, определенные для `valarray<Type>` , за исключением того, что затрагивается только последовательность выбранных элементов.
 
-Последовательность состоит из **XA.** [Размер](../standard-library/valarray-class.md#size) элементов, где элемент `I` преобразуется в индекс **XA**[`I`] внутри `va`.
+Последовательность состоит из **XA.** [Размер](../standard-library/valarray-class.md#size) элементов, элемент Where `I` преобразуется в индекс **XA**[ `I` ] в `va` .
 
 ## <a name="example"></a>Пример
 
@@ -66,7 +67,7 @@ int main( )
 }
 ```
 
-### <a name="output"></a>Вывод
+### <a name="output"></a>Выходные данные
 
 ```cpp
 The initial operand valarray is:  (0 -1 2 -1 4 -1 6 -1 8 -1).
@@ -75,10 +76,10 @@ The modified operand valarray is:  (0 -1 10 -1 10 -1 10 -1 8 -1).
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<valarray>
+**Заголовок:**\<valarray>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Потокобезопасность в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)

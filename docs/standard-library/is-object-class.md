@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_object классе'
 title: Класс is_object
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_object class
 - is_object
 ms.assetid: b452ceea-5676-488f-925b-ab881126c387
-ms.openlocfilehash: 521c3fe1053f53e5d30edf39a41cb840522575a2
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 0f361d58676527e25887ad71097943a8b2b6c93a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455850"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323568"
 ---
-# <a name="isobject-class"></a>Класс is_object
+# <a name="is_object-class"></a>Класс is_object
 
 Проверяет, является ли тип типом объекта.
 
@@ -30,7 +31,7 @@ struct is_object;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение false, если тип *Ty* является ссылочным типом, типом функции или void или `cv-qualified` формой одного из них, в противном случае содержит значение true.
 
@@ -79,11 +80,11 @@ is_object<void> == false
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)\
 [Класс is_function](../standard-library/is-function-class.md)

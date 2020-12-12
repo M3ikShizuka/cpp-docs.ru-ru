@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_polymorphic классе'
 title: Класс is_polymorphic
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_polymorphic class
 - is_polymorphic
 ms.assetid: 4e1704db-d6f9-4154-a100-0ba02a373f20
-ms.openlocfilehash: 662d68d13e076733e9923d0fad7e9272cd01b559
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 983c27e0e314a5a4e9b3e71a3be8824e7de12512
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68455722"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323529"
 ---
-# <a name="ispolymorphic-class"></a>Класс is_polymorphic
+# <a name="is_polymorphic-class"></a>Класс is_polymorphic
 
 Проверяет, есть ли у типа виртуальная функция.
 
@@ -30,7 +31,7 @@ struct is_polymorphic;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* является классом, который объявляет или наследует виртуальную функцию, в противном случае — значение false.
 
@@ -86,11 +87,11 @@ is_polymorphic<throws> == true
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)\
 [Класс is_abstract](../standard-library/is-abstract-class.md)

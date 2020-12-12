@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о &lt; &gt; функциях iomanip
 title: Функции &lt;iomanip&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::setiosflags [C++]
 - std::setprecision [C++]
 - std::setw [C++]
-ms.openlocfilehash: f540b311cafd59935a9cf1e521d3dbd558f59673
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d9ddcea6b524c0413bc1c68c2b75ec910b529d22
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845761"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323932"
 ---
 # <a name="ltiomanipgt-functions"></a>Функции &lt;iomanip&gt;
 
@@ -64,7 +65,7 @@ T7 get_money(Money& amount, bool use_intl);
 *use_intl*\
 Если **`true`** используется международный формат, Значение по умолчанию — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Манипулятор возвращает объект, который при извлечении из потока `str` ведет себя как объект `formatted input function` , который вызывает функцию-член `get` для аспекта языкового стандарта `money_get` , связанного с `str` , используя *use_intl* для указания международного формата. В случае успеха вызов сохраняет в *сумме* извлеченное денежное значение. Затем манипулятор возвращает `str`.
 
@@ -87,7 +88,7 @@ T10 put_time(struct tm *time_ptr, const Elem *time_format);
 *time_format*\
 Требуемый формат для получения значения времени.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Манипулятор возвращает объект, который при извлечении из потока `str` ведет себя как `formatted input function`, вызывающий функцию-член `get` для ограничения языкового стандарта `time_get`, связанного с `str`, с использованием `tptr` для указания структуры времени и `fmt` для указания начала строки формата, завершающейся нулем. В случае успешного выполнения вызов хранит в структуре времени значения, связанные с полями извлеченного времени. Затем манипулятор возвращает `str`.
 
@@ -112,7 +113,7 @@ T8 put_money(const Money& amount, bool use_intl);
 
 Возвращает `str`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Манипулятор возвращает объект, который при вставке в поток `str` ведет себя как форматированная выходная функция, вызывающая функцию-член `put` для ограничения языкового стандарта `money_put`, связанного с `str`. В случае успеха вызов вставляется `amount` соответствующим образом, используя *use_intl* для обозначения международного формата и в `str.fill()` качестве элемента Fill. Затем манипулятор возвращает `str`.
 
@@ -135,7 +136,7 @@ T10 put_time(struct tm* time_ptr, const Elem* time_format);
 *time_format*\
 Требуемый формат для записи значения времени.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Манипулятор возвращает объект, который при вставке в поток `str` ведет себя как `formatted output function`. Функция вывода вызывает функцию-член `put` для ограничения языкового стандарта `time_put`, связанного с `str`. Функция Output использует *time_ptr* , чтобы указать структуру времени и *time_format* , чтобы указать начало строки формата, завершающейся нулем. В случае успешного выполнения вызов вставляет текст из строки формата и преобразованные значения из структуры времени. Затем манипулятор возвращает `str`.
 
@@ -161,7 +162,7 @@ quoted(const char* str, char delimiter, char escape) // or wide versions
 *выполняет*\
 Указанный пользователем символ или двухбайтовый символ для использования в качестве escape-символа для escape-последовательностей в строке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 См. раздел [Использование операторов вставки и управление форматом](../standard-library/using-insertion-operators-and-controlling-format.md).
 
@@ -437,7 +438,7 @@ T6 setw(streamsize Wide);
 
 Манипулятор возвращает объект, который при извлечении из потока или его вставке в поток `str` вызывает `str.` [Width](../standard-library/ios-base-class.md#width) `(Wide)` , а затем возвращает `str` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Setw задает ширину только для следующего элемента в потоке и должен вставляться перед каждым элементом, ширину которого нужно задать.
 

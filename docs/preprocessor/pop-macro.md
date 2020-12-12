@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: pop_macro pragma'
 title: Прагма pop_macro
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - pop_macro pragma
 - pragmas, pop_macro
 ms.assetid: 3b5489d0-69ba-4c66-b572-2748af0f12bb
-ms.openlocfilehash: f9e097d139e1df5c9ba09ad9ca99f0cfe6bbbfb3
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 395e107586b9534b2e9db616f30ddd88b15b93ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218294"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325710"
 ---
 # <a name="pop_macro-pragma"></a>Прагма pop_macro
 
@@ -23,9 +24,9 @@ ms.locfileid: "70218294"
 
 > **#pragma pop_macro (** "*Macro-Name*" **)**
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Перед тем как вы сможете выполнить **pop_macro**, необходимо выполнить [push_macro](../preprocessor/push-macro.md) для *макроопределения-Name* .
+Прежде чем выполнять **pop_macro**, необходимо выдать [push_macro](../preprocessor/push-macro.md) для *макроопределения-Name* .
 
 ## <a name="example"></a>Пример
 
@@ -61,6 +62,6 @@ int main() {
 3
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Директивы pragma и ключевое слово __pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

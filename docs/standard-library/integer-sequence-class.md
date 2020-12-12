@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: integer_sequence классе'
 title: Класс integer_sequence
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - std::make_integer_sequence
 - std::index_sequence_for
 ms.assetid: 2cfdddee-819d-478e-bb78-c8a9c2696803
-ms.openlocfilehash: 4d927be4fdd41ab75ca78a0e0e7ab0282e4fbf6a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 321e41c2c3bfaa1f89c05f799dedc4f4250f0a2d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843876"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97323979"
 ---
 # <a name="integer_sequence-class"></a>Класс integer_sequence
 
@@ -40,14 +41,14 @@ struct integer_sequence
 *валс*\
 Пакет параметров, не являющихся типами, представляющий последовательность значений целочисленного типа T.
 
-## <a name="members"></a>Элементы
+## <a name="members"></a>Члены
 
 |Имя|Описание|
 |-|-|
 |`static size_t size() noexcept`|Число элементов в последовательности.|
 |`typedef T value_type`|Тип каждого элемента последовательности. Должен быть целочисленным типом.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Пакет параметров, который передается непосредственно в функцию, может быть распакован без использования специальных вспомогательных методов библиотеки. Когда пакет параметров входит в тип, передаваемый в функцию, и вам необходимы индексы для доступа к элементам, то самым простым способом распаковать его будет использование `integer_sequence` и связанных с ним псевдонимов типа `make_integer_sequence`, `index_sequence`, `make_index_sequence` и `index_sequence_for`.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: basic_istream классе'
 title: Класс basic_istream
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - std::basic_istream [C++], tellg
 - std::basic_istream [C++], unget
 ms.assetid: c7c27111-de6d-42b4-95a3-a7e65259bf17
-ms.openlocfilehash: da53db594e057449f2d227f57c902d26396000b7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 103777c5a4a590fbbfac95e690329b621497d087
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219252"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325697"
 ---
 # <a name="basic_istream-class"></a>Класс basic_istream
 
@@ -150,7 +151,7 @@ setstate(state);
 |[Просмотр](#read)|Считывает указанное количество символов из потока и сохраняет их в массиве.|
 |[readsome](#readsome)|Чтение только из буфера.|
 |[seekg](#seekg)|Перемещает позицию чтения в потоке.|
-|[sentry](#sentry)|Вложенный класс описывает объект, объявление которого структурирует форматированные и неформатированные входные функции.|
+|[визуаль](#sentry)|Вложенный класс описывает объект, объявление которого структурирует форматированные и неформатированные входные функции.|
 |[позиции](#swap)|Меняет местами этот объект `basic_istream` с указанным параметром объекта `basic_istream`.|
 |[nosync](#sync)|Синхронизирует устройство ввода, связанное с потоком, с буфером потока.|
 |[tellg](#tellg)|Сообщает текущую позицию чтения в потоке.|
@@ -169,7 +170,7 @@ setstate(state);
 
 **Пространство имен:** std
 
-## <a name="basic_istreambasic_istream"></a><a name="basic_istream"></a>basic_istream:: basic_istream
+## <a name="basic_istreambasic_istream"></a><a name="basic_istream"></a> basic_istream:: basic_istream
 
 Создает объект типа `basic_istream`.
 
@@ -192,7 +193,7 @@ basic_istream(basic_istream&& right);
 *Правильно*\
 Объект `basic_istream` для копирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый конструктор инициализирует базовый класс путем вызова [`init`](../standard-library/basic-ios-class.md#init) `(strbuf)` . Он также хранит нуль в счетчике извлечений. Дополнительные сведения об этом счетчике извлечений см. в подразделе "Примечания" раздела Общие сведения о [классе basic_istream](../standard-library/basic-istream-class.md) .
 
@@ -202,7 +203,7 @@ basic_istream(basic_istream&& right);
 
 Дополнительные сведения о входных потоках см. в примере для [класса basic_ifstream](../standard-library/basic-ifstream-class.md#basic_ifstream).
 
-## <a name="basic_istreamgcount"></a><a name="gcount"></a>basic_istream:: гкаунт
+## <a name="basic_istreamgcount"></a><a name="gcount"></a> basic_istream:: гкаунт
 
 Возвращает число символов, считанных во время последнего неформатированного ввода.
 
@@ -214,7 +215,7 @@ streamsize gcount() const;
 
 Счетчик извлечений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте [basic_istream::get](#get) для чтения символов без форматирования.
 
@@ -249,7 +250,7 @@ Type the letter 'a': a
 1
 ```
 
-## <a name="basic_istreamget"></a><a name="get"></a>basic_istream:: Get
+## <a name="basic_istreamget"></a><a name="get"></a> basic_istream:: Get
 
 Считывает один или несколько символов из входного потока.
 
@@ -285,7 +286,7 @@ basic_istream<Char_T, Tr>& get(basic_streambuf<Char_T, Tr>& strbuf, Char_T delim
 
 Форма get без параметров возвращает чтение элементов как целое число либо конец файла. Остальные формы возвращают поток (* **`this`** ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая неформатированная входная функция извлекает элемент, если это возможно, как если бы возвратить `rdbuf->sbumpc` . В противном случае возвращается значение `traits_type::` [`eof`](../standard-library/char-traits-struct.md#eof) . Если функция не извлекает элемент, она вызывает [`setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)` .
 
@@ -332,7 +333,7 @@ int main( )
 1111
 ```
 
-## <a name="basic_istreamgetline"></a><a name="getline"></a>basic_istream:: Inline
+## <a name="basic_istreamgetline"></a><a name="getline"></a> basic_istream:: Inline
 
 Получает строку из входного потока.
 
@@ -362,7 +363,7 @@ basic_istream<Char_T, Tr>& getline(
 
 Поток (__* this__).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая из этих неформатированных входных функций возвращает `getline(str, count, widen('\n'))` .
 
@@ -397,7 +398,7 @@ int main( )
 121
 ```
 
-## <a name="basic_istreamignore"></a><a name="ignore"></a>basic_istream:: ignore
+## <a name="basic_istreamignore"></a><a name="ignore"></a> basic_istream:: ignore
 
 Пропускает несколько элементов после текущей позиции чтения.
 
@@ -419,7 +420,7 @@ basic_istream<Char_T, Tr>& ignore(
 
 Поток (__* this__).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Неформатированная входная функция извлекает до *подсчета* элементов и отклоняет их. Однако если значение *Count* равно `numeric_limits<int>::max` , оно принимается как произвольное большое. Извлечение останавливается на раннем конце файла или на элементе `Ch` , который `traits_type::` [`to_int_type`](../standard-library/char-traits-struct.md#to_int_type) `(Ch)` сравнивает значение, равное *разделителю* (который также извлекается). Функция возвращает __* this__.
 
@@ -445,7 +446,7 @@ Type 'abcdef': abcdef
 def
 ```
 
-## <a name="basic_istreamoperator"></a><a name="op_gt_gt"></a>Базовый \_ оператор IStream:: operator>>
+## <a name="basic_istreamoperator"></a><a name="op_gt_gt"></a> Базовый \_ оператор IStream:: operator>>
 
 Вызывает функцию для входного потока или считывает форматированные данные из входного потока.
 
@@ -484,7 +485,7 @@ basic_istream& operator>>(long double& val);
 
 Поток (__* this__).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Заголовок \<istream> также определяет несколько глобальных операторов извлечения. Дополнительные сведения см. в разделе [operator>>  ( \<istream> )](../standard-library/istream-operators.md#op_gt_gt).
 
@@ -574,7 +575,7 @@ int main( )
 }
 ```
 
-## <a name="basic_istreamoperator"></a><a name="op_eq"></a>basic_istream:: operator =
+## <a name="basic_istreamoperator"></a><a name="op_eq"></a> basic_istream:: operator =
 
 Назначает `basic_istream` справа от оператора этому объекту. Это назначение перемещения, включающее `rvalue` ссылку, которая не оставляет копии.
 
@@ -591,11 +592,11 @@ basic_istream& operator=(basic_istream&& right);
 
 Возвращает __* this__.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Оператор члена вызывает `swap(right)` .
 
-## <a name="basic_istreampeek"></a><a name="peek"></a>basic_istream::p EEK
+## <a name="basic_istreampeek"></a><a name="peek"></a> basic_istream::p EEK
 
 Возвращает следующий символ для чтения.
 
@@ -607,7 +608,7 @@ int_type peek();
 
 Следующий символ для чтения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Неформатированная входная функция извлекает элемент, если это возможно, как если бы возвратить `rdbuf->` [`sgetc`](../standard-library/basic-streambuf-class.md#sgetc) . В противном случае возвращается значение `traits_type::` [`eof`](../standard-library/char-traits-struct.md#eof) .
 
@@ -640,7 +641,7 @@ Type 'abcde': abcde
 a abcde
 ```
 
-## <a name="basic_istreamputback"></a><a name="putback"></a>basic_istream::p утбакк
+## <a name="basic_istreamputback"></a><a name="putback"></a> basic_istream::p утбакк
 
 Помещает указанный символ в поток.
 
@@ -658,9 +659,9 @@ basic_istream<Char_T, Tr>& putback(
 
 Поток (__* this__).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-[Неформатированная входная функция](../standard-library/basic-istream-class.md) по возможности возвращает *канал, как*если бы это можно было сделать, вызвав [`rdbuf`](../standard-library/basic-ios-class.md#rdbuf) `->` [`sputbackc`](../standard-library/basic-streambuf-class.md#sputbackc) . Если `rdbuf` является пустым указателем или вызов метода `sputbackc` возвращает `traits_type::` [`eof`](../standard-library/char-traits-struct.md#eof) , функция вызывает [`setstate`](../standard-library/basic-ios-class.md#setstate) `(badbit)` . В любом случае возвращается __* this__.
+[Неформатированная входная функция](../standard-library/basic-istream-class.md) по возможности возвращает *канал, как* если бы это можно было сделать, вызвав [`rdbuf`](../standard-library/basic-ios-class.md#rdbuf) `->` [`sputbackc`](../standard-library/basic-streambuf-class.md#sputbackc) . Если `rdbuf` является пустым указателем или вызов метода `sputbackc` возвращает `traits_type::` [`eof`](../standard-library/char-traits-struct.md#eof) , функция вызывает [`setstate`](../standard-library/basic-ios-class.md#setstate) `(badbit)` . В любом случае возвращается __* this__.
 
 ### <a name="example"></a>Пример
 
@@ -686,7 +687,7 @@ int main( )
 qwq
 ```
 
-## <a name="basic_istreamread"></a><a name="read"></a>basic_istream:: Read
+## <a name="basic_istreamread"></a><a name="read"></a> basic_istream:: Read
 
 Считывает указанное количество символов из потока и сохраняет их в массиве.
 
@@ -704,13 +705,13 @@ basic_istream<Char_T, Tr>& read(
 Массив, из которого должны считываться символы.
 
 *расчета*\
-Число символов для чтения.
+Количество символов, которые необходимо считать.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Поток ( **`*this`** ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Неформатированная входная функция извлекает до *подсчета* элементов и сохраняет их в массиве, начиная с *str*. Извлечение останавливается на раннем конце файла, в этом случае функция вызывает [`setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)` . В любом случае возвращается __* this__.
 
@@ -747,7 +748,7 @@ Type 'abcde': abcde
 abcde
 ```
 
-## <a name="basic_istreamreadsome"></a><a name="readsome"></a>basic_istream:: реадсоме
+## <a name="basic_istreamreadsome"></a><a name="readsome"></a> basic_istream:: реадсоме
 
 Считывает указанное число значений символов.
 
@@ -765,15 +766,15 @@ streamsize readsome(
 Массив, в котором `readsome` сохраняет символы, которые считывает.
 
 *расчета*\
-Число символов для чтения.
+Количество символов, которые необходимо считать.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Число фактически считанных символов, [`gcount`](#gcount) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Эта неформатированная входная функция извлекается до *подсчета* элементов из входного потока и сохраняет их в *str*массива.
+Эта неформатированная входная функция извлекается до *подсчета* элементов из входного потока и сохраняет их в *str* массива.
 
 Эта функция не ожидает входных данных. Она считывает все доступные данные.
 
@@ -806,7 +807,7 @@ int main( )
 }
 ```
 
-## <a name="basic_istreamseekg"></a><a name="seekg"></a>basic_istream:: функции seekg
+## <a name="basic_istreamseekg"></a><a name="seekg"></a> basic_istream:: функции seekg
 
 Перемещает позицию чтения в потоке.
 
@@ -831,7 +832,7 @@ basic_istream<Char_T, Tr>& seekg(off_type off, ios_base::seekdir way);
 
 Поток (__* this__).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция-член выполняет как абсолютный поиск, вторая функция-член выполняет относительный поиск.
 
@@ -863,7 +864,7 @@ int main ( )
 }
 ```
 
-## <a name="basic_istreamsentry"></a><a name="sentry"></a>basic_istream:: Sentry
+## <a name="basic_istreamsentry"></a><a name="sentry"></a> basic_istream:: Sentry
 
 Вложенный класс описывает объект, объявление которого структурирует форматированные и неформатированные входные функции.
 
@@ -877,7 +878,7 @@ class sentry {
    };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если `_Istr.` [`good`](../standard-library/basic-ios-class.md#good) имеет значение true, конструктор:
 
@@ -887,7 +888,7 @@ class sentry {
 
 Если после любой такой подготовки `_Istr.good` значение равно false, конструктор вызывает `_Istr.` [`setstate`](../standard-library/basic-ios-class.md#setstate) `(failbit)` . В любом случае конструктор сохраняет значение, возвращаемое `_Istr.good` в `status` . Последующий вызов метода для `operator bool` доставки этого сохраненного значения.
 
-## <a name="basic_istreamswap"></a><a name="swap"></a>basic_istream:: swap
+## <a name="basic_istreamswap"></a><a name="swap"></a> basic_istream:: swap
 
 Меняет местами содержимое двух объектов `basic_istream`.
 
@@ -900,11 +901,11 @@ void swap(basic_istream& right);
 *Правильно*\
 Ссылка lvalue на объект `basic_istream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция члена вызывает [`basic_ios::swap`](../standard-library/basic-ios-class.md#swap) `(right)` . Он также обменивается счетчиком извлечения с числом извлечений *справа*.
 
-## <a name="basic_istreamsync"></a><a name="sync"></a>basic_istream:: Sync
+## <a name="basic_istreamsync"></a><a name="sync"></a> basic_istream:: Sync
 
 Синхронизирует устройство ввода, связанное с потоком, с буфером потока.
 
@@ -916,7 +917,7 @@ int sync();
 
 Если [`rdbuf`](../standard-library/basic-ios-class.md#rdbuf) является пустым указателем, функция возвращает значение-1. В противном случае он вызывает `rdbuf->` [`pubsync`](../standard-library/basic-streambuf-class.md#pubsync) . Если этот вызов возвращает значение-1, функция вызывает метод [`setstate`](../standard-library/basic-ios-class.md#setstate) `(badbit)` и возвращает значение-1. В противном случае функция возвращает нуль.
 
-## <a name="basic_istreamtellg"></a><a name="tellg"></a>basic_istream:: tellg
+## <a name="basic_istreamtellg"></a><a name="tellg"></a> basic_istream:: tellg
 
 Сообщает текущую позицию чтения в потоке.
 
@@ -928,7 +929,7 @@ pos_type tellg();
 
 Текущая позиция в потоке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если [`fail`](../standard-library/basic-ios-class.md#fail) имеет значение false, функция-член возвращает [`rdbuf`](../standard-library/basic-ios-class.md#rdbuf) `->` [`pubseekoff`](../standard-library/basic-streambuf-class.md#pubseekoff) `(0, cur, in)` . В противном случае возвращается значение `pos_type(-1)`.
 
@@ -958,7 +959,7 @@ int main()
 }
 ```
 
-## <a name="basic_istreamunget"></a><a name="unget"></a>basic_istream:: унжет
+## <a name="basic_istreamunget"></a><a name="unget"></a> basic_istream:: унжет
 
 Помещает самый последний считанный символ обратно в поток.
 
@@ -970,7 +971,7 @@ basic_istream<Char_T, Tr>& unget();
 
 Поток (__* this__).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 [Неформатированная входная функция](../standard-library/basic-istream-class.md) возвращает предыдущий элемент в потоке, если это возможно, как при вызове метода `rdbuf->` [`sungetc`](../standard-library/basic-streambuf-class.md#sungetc) . Если [`rdbuf`](../standard-library/basic-ios-class.md#rdbuf) является пустым указателем или вызов метода `sungetc` возвращает `traits_type::` [`eof`](../standard-library/basic-ios-class.md#eof) , функция вызывает [`setstate`](../standard-library/basic-ios-class.md#setstate) `(badbit)` . В любом случае возвращается __* this__.
 

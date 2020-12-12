@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: double_4 классе'
 title: Класс double_4
 ms.date: 11/04/2016
 f1_keywords:
@@ -268,12 +269,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::double_4::bag
 - amp_short_vectors/Concurrency::graphics::double_4::zwy
 ms.assetid: a81c1595-24c6-4b3f-9574-d5942275e5e8
-ms.openlocfilehash: a9ca413573ebd741ea2a9a813a25ec2679aff5b7
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: bb423c01a048ec8ce78abd79fe16d32635473471
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77139358"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325882"
 ---
 # <a name="double_4-class"></a>Класс double_4
 
@@ -289,160 +290,160 @@ class double_4;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[Конструктор double_4](#ctor)|Перегружен. Конструктор по умолчанию инициализирует все элементы значением 0.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
-|double_4::get_w||
-|double_4::get_wx||
-|double_4::get_wxy||
-|double_4::get_wxyz||
-|double_4::get_wxz||
-|double_4::get_wxzy||
-|double_4::get_wy||
-|double_4::get_wyx||
-|double_4::get_wyxz||
-|double_4::get_wyz||
-|double_4::get_wyzx||
-|double_4::get_wz||
-|double_4::get_wzx||
-|double_4::get_wzxy||
-|double_4::get_wzy||
-|double_4::get_wzyx||
-|double_4::get_x||
-|double_4::get_xw||
-|double_4::get_xwy||
-|double_4::get_xwyz||
-|double_4::get_xwz||
-|double_4::get_xwzy||
-|double_4::get_xy||
-|double_4::get_xyw||
-|double_4::get_xywz||
-|double_4::get_xyz||
-|double_4::get_xyzw||
-|double_4::get_xz||
-|double_4::get_xzw||
-|double_4::get_xzwy||
-|double_4::get_xzy||
-|double_4::get_xzyw||
+|double_4:: get_w||
+|double_4:: get_wx||
+|double_4:: get_wxy||
+|double_4:: get_wxyz||
+|double_4:: get_wxz||
+|double_4:: get_wxzy||
+|double_4:: get_wy||
+|double_4:: get_wyx||
+|double_4:: get_wyxz||
+|double_4:: get_wyz||
+|double_4:: get_wyzx||
+|double_4:: get_wz||
+|double_4:: get_wzx||
+|double_4:: get_wzxy||
+|double_4:: get_wzy||
+|double_4:: get_wzyx||
+|double_4:: get_x||
+|double_4:: get_xw||
+|double_4:: get_xwy||
+|double_4:: get_xwyz||
+|double_4:: get_xwz||
+|double_4:: get_xwzy||
+|double_4:: get_xy||
+|double_4:: get_xyw||
+|double_4:: get_xywz||
+|double_4:: get_xyz||
+|double_4:: get_xyzw||
+|double_4:: get_xz||
+|double_4:: get_xzw||
+|double_4:: get_xzwy||
+|double_4:: get_xzy||
+|double_4:: get_xzyw||
 |double_4:: get_y||
-|double_4::get_yw||
-|double_4::get_ywx||
-|double_4::get_ywxz||
-|double_4::get_ywz||
-|double_4::get_ywzx||
-|double_4::get_yx||
-|double_4::get_yxw||
-|double_4::get_yxwz||
-|double_4::get_yxz||
-|double_4::get_yxzw||
-|double_4::get_yz||
-|double_4::get_yzw||
-|double_4::get_yzwx||
-|double_4::get_yzx||
-|double_4::get_yzxw||
-|double_4::get_z||
-|double_4::get_zw||
-|double_4::get_zwx||
-|double_4::get_zwxy||
-|double_4::get_zwy||
-|double_4::get_zwyx||
-|double_4::get_zx||
-|double_4::get_zxw||
-|double_4::get_zxwy||
-|double_4::get_zxy||
-|double_4::get_zxyw||
-|double_4::get_zy||
-|double_4::get_zyw||
-|double_4::get_zywx||
-|double_4::get_zyx||
-|double_4::get_zyxw||
-|double_4::ref_a||
+|double_4:: get_yw||
+|double_4:: get_ywx||
+|double_4:: get_ywxz||
+|double_4:: get_ywz||
+|double_4:: get_ywzx||
+|double_4:: get_yx||
+|double_4:: get_yxw||
+|double_4:: get_yxwz||
+|double_4:: get_yxz||
+|double_4:: get_yxzw||
+|double_4:: get_yz||
+|double_4:: get_yzw||
+|double_4:: get_yzwx||
+|double_4:: get_yzx||
+|double_4:: get_yzxw||
+|double_4:: get_z||
+|double_4:: get_zw||
+|double_4:: get_zwx||
+|double_4:: get_zwxy||
+|double_4:: get_zwy||
+|double_4:: get_zwyx||
+|double_4:: get_zx||
+|double_4:: get_zxw||
+|double_4:: get_zxwy||
+|double_4:: get_zxy||
+|double_4:: get_zxyw||
+|double_4:: get_zy||
+|double_4:: get_zyw||
+|double_4:: get_zywx||
+|double_4:: get_zyx||
+|double_4:: get_zyxw||
+|double_4:: ref_a||
 |double_4:: ref_b||
-|double_4::ref_g||
+|double_4:: ref_g||
 |double_4:: ref_r||
-|double_4::ref_w||
-|double_4::ref_x||
+|double_4:: ref_w||
+|double_4:: ref_x||
 |double_4:: ref_y||
-|double_4::ref_z||
-|double_4::set_w||
-|double_4::set_wx||
-|double_4::set_wxy||
-|double_4::set_wxyz||
-|double_4::set_wxz||
-|double_4::set_wxzy||
-|double_4::set_wy||
-|double_4::set_wyx||
-|double_4::set_wyxz||
-|double_4::set_wyz||
-|double_4::set_wyzx||
-|double_4::set_wz||
-|double_4::set_wzx||
-|double_4::set_wzxy||
-|double_4::set_wzy||
-|double_4::set_wzyx||
-|double_4::set_x||
-|double_4::set_xw||
-|double_4::set_xwy||
-|double_4::set_xwyz||
-|double_4::set_xwz||
-|double_4::set_xwzy||
-|double_4::set_xy||
-|double_4::set_xyw||
-|double_4::set_xywz||
-|double_4::set_xyz||
-|double_4::set_xyzw||
-|double_4::set_xz||
-|double_4::set_xzw||
-|double_4::set_xzwy||
-|double_4::set_xzy||
-|double_4::set_xzyw||
-|double_4::set_y||
-|double_4::set_yw||
-|double_4::set_ywx||
-|double_4::set_ywxz||
-|double_4::set_ywz||
-|double_4::set_ywzx||
-|double_4::set_yx||
-|double_4::set_yxw||
-|double_4::set_yxwz||
-|double_4::set_yxz||
-|double_4::set_yxzw||
-|double_4::set_yz||
-|double_4::set_yzw||
-|double_4::set_yzwx||
-|double_4::set_yzx||
-|double_4::set_yzxw||
-|double_4::set_z||
-|double_4::set_zw||
-|double_4::set_zwx||
-|double_4::set_zwxy||
-|double_4::set_zwy||
-|double_4::set_zwyx||
-|double_4::set_zx||
-|double_4::set_zxw||
-|double_4::set_zxwy||
-|double_4::set_zxy||
-|double_4::set_zxyw||
-|double_4::set_zy||
-|double_4::set_zyw||
-|double_4::set_zywx||
-|double_4::set_zyx||
-|double_4::set_zyxw||
+|double_4:: ref_z||
+|double_4:: set_w||
+|double_4:: set_wx||
+|double_4:: set_wxy||
+|double_4:: set_wxyz||
+|double_4:: set_wxz||
+|double_4:: set_wxzy||
+|double_4:: set_wy||
+|double_4:: set_wyx||
+|double_4:: set_wyxz||
+|double_4:: set_wyz||
+|double_4:: set_wyzx||
+|double_4:: set_wz||
+|double_4:: set_wzx||
+|double_4:: set_wzxy||
+|double_4:: set_wzy||
+|double_4:: set_wzyx||
+|double_4:: set_x||
+|double_4:: set_xw||
+|double_4:: set_xwy||
+|double_4:: set_xwyz||
+|double_4:: set_xwz||
+|double_4:: set_xwzy||
+|double_4:: set_xy||
+|double_4:: set_xyw||
+|double_4:: set_xywz||
+|double_4:: set_xyz||
+|double_4:: set_xyzw||
+|double_4:: set_xz||
+|double_4:: set_xzw||
+|double_4:: set_xzwy||
+|double_4:: set_xzy||
+|double_4:: set_xzyw||
+|double_4:: set_y||
+|double_4:: set_yw||
+|double_4:: set_ywx||
+|double_4:: set_ywxz||
+|double_4:: set_ywz||
+|double_4:: set_ywzx||
+|double_4:: set_yx||
+|double_4:: set_yxw||
+|double_4:: set_yxwz||
+|double_4:: set_yxz||
+|double_4:: set_yxzw||
+|double_4:: set_yz||
+|double_4:: set_yzw||
+|double_4:: set_yzwx||
+|double_4:: set_yzx||
+|double_4:: set_yzxw||
+|double_4:: set_z||
+|double_4:: set_zw||
+|double_4:: set_zwx||
+|double_4:: set_zwxy||
+|double_4:: set_zwy||
+|double_4:: set_zwyx||
+|double_4:: set_zx||
+|double_4:: set_zxw||
+|double_4:: set_zxwy||
+|double_4:: set_zxy||
+|double_4:: set_zxyw||
+|double_4:: set_zy||
+|double_4:: set_zyw||
+|double_4:: set_zywx||
+|double_4:: set_zyx||
+|double_4:: set_zyxw||
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |double_4:: operator —||
 |double_4:: operator--||
@@ -455,13 +456,13 @@ class double_4;
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа размера](#double_4__size)||
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |double_4:: a||
 |double_4:: AB||
@@ -471,7 +472,7 @@ class double_4;
 |double_4:: абрг||
 |double_4:: AG||
 |double_4:: АГБ||
-|double_4::agbr||
+|double_4:: агбр||
 |double_4:: принимаю||
 |double_4:: агрб||
 |double_4:: AR||
@@ -498,13 +499,13 @@ class double_4;
 |double_4:: g||
 |double_4:: GA||
 |double_4:: ГАБ||
-|double_4::gabr||
+|double_4:: Габр||
 |double_4:: Гар||
 |double_4:: нечитаемость||
 |double_4:: ГБ||
 |double_4:: Гба||
 |double_4:: ГБАР||
-|double_4::gbr||
+|double_4:: ГБР||
 |double_4:: гбра||
 |double_4:: GR||
 |double_4:: гра||
@@ -526,71 +527,71 @@ class double_4;
 |double_4:: РГА||
 |double_4:: ргаб||
 |double_4:: RGB||
-|double_4::rgba||
+|double_4:: RGBA||
 |double_4:: w||
-|double_4::wx||
+|double_4:: WX||
 |double_4:: вкси||
-|double_4::wxyz||
-|double_4::wxz||
-|double_4::wxzy||
+|double_4:: вксиз||
+|double_4:: вксз||
+|double_4:: вксзи||
 |double_4:: WY||
 |double_4:: Викс||
-|double_4::wyxz||
+|double_4:: виксз||
 |double_4:: виз||
-|double_4::wyzx||
-|double_4::wz||
-|double_4::wzx||
-|double_4::wzxy||
-|double_4::wzy||
-|double_4::wzyx||
+|double_4:: визкс||
+|double_4:: WZ||
+|double_4:: взкс||
+|double_4:: взкси||
+|double_4:: ВЗИ||
+|double_4:: взикс||
 |double_4:: x||
 |double_4:: КСВ||
 |double_4:: ксви||
-|double_4::xwyz||
-|double_4::xwz||
-|double_4::xwzy||
+|double_4:: ксвиз||
+|double_4:: ксвз||
+|double_4:: ксвзи||
 |double_4:: XY||
 |double_4:: ксив||
-|double_4::xywz||
-|double_4::xyz||
+|double_4:: ксивз||
+|double_4:: XYZ||
 |double_4:: ксизв||
-|double_4::xz||
-|double_4::xzw||
-|double_4::xzwy||
+|double_4:: КСЗ||
+|double_4:: ксзв||
+|double_4:: ксзви||
 |double_4:: XZY||
-|double_4::xzyw||
+|double_4:: ксзив||
 |double_4:: y||
-|double_4::yw||
-|double_4::ywx||
-|double_4::ywxz||
-|double_4::ywz||
-|double_4::ywzx||
+|double_4:: Ив||
+|double_4:: ивкс||
+|double_4:: ивксз||
+|double_4:: ИВЗ||
+|double_4:: ивзкс||
 |double_4:: Икс||
 |double_4:: ИКСВ||
-|double_4::yxwz||
-|double_4::yxz||
-|double_4::yxzw||
+|double_4:: иксвз||
+|double_4:: иксз||
+|double_4:: иксзв||
 |double_4:: из||
 |double_4:: ИЗВ||
-|double_4::yzwx||
-|double_4::yzx||
+|double_4:: извкс||
+|double_4:: изкс||
 |double_4:: изксв||
 |double_4:: z||
 |double_4:: ZW||
-|double_4::zwx||
-|double_4::zwxy||
-|double_4::zwy||
-|double_4::zwyx||
+|double_4:: звкс||
+|double_4:: звкси||
+|double_4:: Зви||
+|double_4:: звикс||
 |double_4:: ЗКС||
 |double_4:: зксв||
 |double_4:: зксви||
-|double_4::zxy||
+|double_4:: зкси||
 |double_4:: зксив||
 |double_4:: зи||
-|double_4::zyw||
-|double_4::zywx||
-|double_4::zyx||
-|double_4::zyxw||
+|double_4:: Зив||
+|double_4:: зивкс||
+|double_4:: зикс||
+|double_4:: зиксв||
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -602,7 +603,7 @@ class double_4;
 
 **Пространство имен:** Concurrency:: Graphics
 
-## <a name="ctor"></a>double_4
+## <a name="double_4"></a><a name="ctor"></a> double_4
 
 Конструктор по умолчанию инициализирует все элементы значением 0.
 
@@ -666,7 +667,7 @@ explicit inline double_4(
 *_Other*<br/>
 Объект, используемый для инициализации.
 
-## <a name="double_4__size"></a>изменять
+## <a name="size"></a><a name="double_4__size"></a> изменять
 
 ```cpp
 static const int size = 4;

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: binomial_distribution классе'
 title: Класс binomial_distribution
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::binomial_distribution [C++], param_type
 - std::binomial_distribution [C++], param_type
 ms.assetid: b7c8a26a-da8c-45a5-a3a8-208f7a3609ce
-ms.openlocfilehash: 3054a29bd1bc82861461851d4403a7095ac1fcbd
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2cdb55fe312cd19c944ee6279286fe48e515b8a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846515"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325482"
 ---
 # <a name="binomial_distribution-class"></a>Класс binomial_distribution
 
@@ -77,7 +78,7 @@ public:
 *РГСЧ*\
 Единый механизм генератора случайных чисел. Возможные типы см. в разделе [\<random>](../standard-library/random.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса описывает распределение, которое формирует значения указанного пользователем целочисленного типа, или тип **`int`** , если он не указан, распределяется в соответствии с дискретным распределением по функциям вероятности. В следующей таблице представлены ссылки на статьи об отдельных членах.
 
@@ -249,7 +250,7 @@ explicit binomial_distribution(const param_type& parm);
 *ParM*\
 Структура `param_type`, используемая для формирования распределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительные условия:** `0 ≤ t` и `0.0 ≤ p ≤ 1.0`
 
@@ -284,7 +285,7 @@ struct param_type {
 *Правильно*\
 Объект `param_type`, который требуется сравнить с данным объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительные условия:** `0 ≤ t` и `0.0 ≤ p ≤ 1.0`
 

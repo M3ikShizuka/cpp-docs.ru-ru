@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье Использование страниц свойств в приложении.
 title: Использование вкладок свойств в приложении
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - Create method [MFC], property sheets
 - CPropertyPage class [MFC], styles
 ms.assetid: 240654d4-152b-4e3f-af7b-44234339206e
-ms.openlocfilehash: 789764c9af988135219bd710d4f8aec1cda9143a
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3bc1e21d99eb4a1688247524749b44028762892d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504654"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322690"
 ---
 # <a name="using-property-sheets-in-your-application"></a>Использование вкладок свойств в приложении
 
@@ -30,7 +31,7 @@ ms.locfileid: "91504654"
 
    - Задайте в поле ввода **заголовка** на странице **Общие** текст, который должен отображаться на вкладке этой страницы.
 
-   - Задайте **дочерний**список **стилей** на странице **стили** .
+   - Задайте **дочерний** список **стилей** на странице **стили** .
 
    - Задайте для поля список **границ** на странице **стили** значение **тонкий**.
 

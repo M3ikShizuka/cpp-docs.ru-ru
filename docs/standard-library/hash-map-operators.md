@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: &lt; операторы hash_map &gt;'
 title: Операторы &lt;hash_map&gt;
 ms.date: 11/04/2016
 f1_keywords:
 - hash_map/std::operator!=
 - hash_map/std::operator==
 ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
-ms.openlocfilehash: b0884cacb11299f96d539c8c83a1fc9fa2840d16
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f3374ee86a989a90add86e85d6a9bf15959e26b4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844396"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324126"
 ---
 # <a name="lthash_mapgt-operators"></a>Операторы &lt;hash_map&gt;
 
@@ -42,7 +43,7 @@ bool operator!=(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 
 **`true`** Если hash_maps не равны; **`false`** если hash_maps равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами hash_map основывается на попарном сравнении их элементов. Два объекта hash_map равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -111,7 +112,7 @@ bool operator==(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 
 **`true`** значение, если hash_map слева от оператора равно hash_map с правой стороны оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами hash_map основывается на попарном сравнении их элементов. Два объекта hash_map равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -178,7 +179,7 @@ bool operator!=(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
 
 **`true`** Если hash_multimaps не равны; **`false`** если hash_multimaps равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами hash_multimap основывается на попарном сравнении их элементов. Два объекта hash_multimap равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -245,7 +246,7 @@ bool operator==(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
 
 **`true`** значение, если hash_multimap слева от оператора равно hash_multimap с правой стороны оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами hash_multimap основывается на попарном сравнении их элементов. Два объекта hash_multimap равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 

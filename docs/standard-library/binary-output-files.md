@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о двоичных выходных файлах
 title: Двоичные выходные файлы
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - files [C++], binary output files
 - binary data, binary output files
 ms.assetid: 180954af-8cd6-444b-9a76-2f630a3389d8
-ms.openlocfilehash: 4562f5c1167aeadc6689313e73545ed1ad9bbcf8
-ms.sourcegitcommit: 878a164fe6d550ca81ab87d8425c8d3cd52fe384
+ms.openlocfilehash: acbefe8eb7f091bf3d323f25ff00464068d9b1f3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68376328"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325522"
 ---
 # <a name="binary-output-files"></a>Двоичные выходные файлы
 
@@ -30,7 +31,7 @@ int main( )
 }
 ```
 
-Можно предположить, что эта программа будет выводить байтовую последовательность {99, 0, 10, 0}; вместо этого она выводит {99, 0, 13, 10, 0}, что приводит к проблемам в программе, ожидающей ввод двоичных данных. Если требуется истинный двоичный вывод, в котором символы записываются без преобразования, можно указать двоичный выход с помощью аргумента `openmode` конструктора [ofstream](../standard-library/basic-ofstream-class.md#basic_ofstream):
+Можно предположить, что эта программа будет выводить байтовую последовательность {99, 0, 10, 0}; вместо этого она выводит {99, 0, 13, 10, 0}, что приводит к проблемам в программе, ожидающей ввод двоичных данных. Если требуется истинный двоичный вывод, в котором символы записываются без преобразования, можно указать двоичный выход с помощью [](../standard-library/basic-ofstream-class.md#basic_ofstream) `openmode` аргумента конструктора ofstream:
 
 ```cpp
 // binary_output_files2.cpp
@@ -48,6 +49,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Потоки вывода](../standard-library/output-streams.md)
+[Выходные потоки](../standard-library/output-streams.md)

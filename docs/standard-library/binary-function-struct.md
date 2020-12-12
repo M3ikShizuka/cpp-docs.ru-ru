@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: binary_function struct'
 title: Структура binary_function
 ms.date: 02/21/2019
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - binary_function class
 ms.assetid: 79b6d53d-644c-4add-b0ba-3a5f40f69c60
-ms.openlocfilehash: acbcb7496b7e6b37af61c5eb7a113c77855e6928
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 3a38579cc5026903dc7c3b7743afd81773b895b7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68243392"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325549"
 ---
-# <a name="binaryfunction-struct"></a>Структура binary_function
+# <a name="binary_function-struct"></a>Структура binary_function
 
-Пустая базовая структура, определяющая типы, которые могут наследоваться производными классами, предоставляющими объект бинарной функции. Рекомендуется использовать в C ++ 11, удалено в C ++ 17.
+Пустая базовая структура, определяющая типы, которые могут наследоваться производными классами, предоставляющими объект бинарной функции. Не рекомендуется использовать в C++ 11, удалено в C++ 17.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -27,11 +28,11 @@ struct binary_function {
 };
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Структура шаблона выступает в качестве основы для классов, в которых определяются функции-члены в виде:
 
-> *result_type* ** operator() (const ** <em>first_argument_type</em> **&, const** <em>second_argument_type</em> **&) const**
+> *result_type* * * operator () (const * * <em>first_argument_type</em> **&, const** <em>second_argument_type</em> **&) const**
 
 Все такие бинарные функции могут ссылаться на тип своего первого аргумента как *first_argument_type*, тип второго аргумента как *second_argument_type* и возвращаемый тип как *result_type*.
 
