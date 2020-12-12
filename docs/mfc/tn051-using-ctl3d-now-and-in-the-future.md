@@ -1,23 +1,24 @@
 ---
-title: 'TN051: Использование CTL3D сегодня и в будущем'
+description: 'Дополнительные сведения о: TN051: использование CTL3D сегодня Now и в будущем'
+title: TN051. Использование CTL3D сегодня и в будущем
 ms.date: 11/04/2016
 helpviewer_keywords:
 - TN051
 - CTL3D.DLL
 - 3D effect
 ms.assetid: ab517a13-a137-4a60-8039-be92a632b76b
-ms.openlocfilehash: 96d6596d548a02dd20b7a25c72f24615ed97f925
-ms.sourcegitcommit: 934cb53fa4cb59fea611bfeb9db110d8d6f7d165
+ms.openlocfilehash: defb8284c33a260f38f9c3e4c1e82bfd02cc5b4b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65611059"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215044"
 ---
-# <a name="tn051-using-ctl3d-now-and-in-the-future"></a>TN051: Использование CTL3D сегодня и в будущем
+# <a name="tn051-using-ctl3d-now-and-in-the-future"></a>TN051. Использование CTL3D сегодня и в будущем
 
-Этот технический нота, каковой говорилось выше CTL3D и MFC, теперь является устаревшим. Трехмерные эффекты для элементов управления MFC автоматически реализуется.
+Это техническое примечание, которое ранее обсуждало CTL3D сегодня и MFC, теперь устарело. Трехмерный эффект для элементов управления автоматически реализуется с помощью MFC.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Технические примечания по номеру](../mfc/technical-notes-by-number.md)<br/>
-[Технические примечания по категории](../mfc/technical-notes-by-category.md)
+[Технические примечания по категориям](../mfc/technical-notes-by-category.md)
