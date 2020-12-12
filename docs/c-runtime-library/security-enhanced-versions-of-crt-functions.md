@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Security-Enhanced версии функций CRT'
 title: Версии функций CRT повышенной безопасности
 ms.date: 03/21/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - security-enhanced CRT
 - CRT, security enhancements
 ms.assetid: f87e5a01-4cb2-4379-9e8f-d4693828c55a
-ms.openlocfilehash: 9cc44caa047e087b2f3de9b5af142d1ea868e893
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 95e94eb7790ef589fee3287b6cee8997faac7ab6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232382"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277210"
 ---
 # <a name="security-enhanced-versions-of-crt-functions"></a>Версии функций CRT повышенной безопасности
 
@@ -19,7 +20,7 @@ ms.locfileid: "87232382"
 
 ## <a name="secure-functions"></a>Безопасные функции
 
-|Функция CRT|Функция с усиленной безопасностью|Используйте|
+|Функция CRT|Функция с усиленной безопасностью|Использовать|
 |------------------|--------------------------------|---------|
 |[_access, _waccess](../c-runtime-library/reference/access-waccess.md)|[_access_s, _waccess_s](../c-runtime-library/reference/access-s-waccess-s.md)|Определяют разрешения на доступ к файлам|
 |[_alloca](../c-runtime-library/reference/alloca.md)|[_malloca](../c-runtime-library/reference/malloca.md)|Выделение памяти в стеке|

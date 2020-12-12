@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _alloca'
 title: _alloca
 ms.date: 11/04/2016
 api_name:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - alloca function
 - _alloca function
 ms.assetid: 74488eb1-b71f-4515-88e1-cdd03b6f8225
-ms.openlocfilehash: 159f474927b4aaf364ad6972450edbe513a3c0b0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 959478afac06c22181a595c00969690babbe6ade
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218745"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275195"
 ---
 # <a name="_alloca"></a>_alloca
 
@@ -56,15 +57,15 @@ void *_alloca(
 
 Если выделить место в памяти невозможно, создается исключение переполнения стека. Исключение переполнения стека не является исключением C++; это структурированное исключение. Вместо использования обработки исключений C++ необходимо использовать [структурированную обработку исключений](../../cpp/structured-exception-handling-c-cpp.md) (SEH).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **_alloca** выделяет байты *размера* из стека программы. Выделенное пространство автоматически освобождается при выходе из вызывающей функции (а не в том случае, если распределение просто выходит за пределы области). Поэтому не следует передавать значение указателя, возвращаемое **_alloca** , в качестве аргумента для [освобождения](free.md).
 
 Существуют ограничения на явный вызов **_alloca** в обработчике исключений (EH). Подпрограммы обработки исключений, выполняющиеся на процессорах класса x86, работают в своем собственном кадре памяти: они выполняют задачи в области памяти, не основанной на текущем положении указателя стека внешней функции. Наиболее распространенные реализации включают выражения структурной обработки исключений (SEH) Windows NT и выражения catch языка C++. Таким образом, явный вызов **_alloca** в любом из следующих сценариев приводит к сбою программы во время возврата в вызывающую подпрограмму EH:
 
-- Выражение фильтра исключений SEH Windows NT:`__except ( _alloca() )`
+- Выражение фильтра исключений SEH Windows NT: `__except ( _alloca() )`
 
-- Завершающий обработчик исключений Windows NT SEH:`__finally { _alloca() }`
+- Завершающий обработчик исключений Windows NT SEH: `__finally { _alloca() }`
 
 - Выражение catch обработки исключений языка C++
 
@@ -73,7 +74,7 @@ void *_alloca(
 > [!IMPORTANT]
 > В Windows XP, если **_alloca** вызывается внутри блока try/catch, необходимо вызвать [_resetstkoflw](resetstkoflw.md) в блоке catch.
 
-В дополнение к указанным выше ограничениям при использовании параметра[/CLR (компиляция среды CLR)](../../build/reference/clr-common-language-runtime-compilation.md) **_alloca** нельзя использовать в **`__except`** блоках. Для получения дополнительной информации см. [/clr Restrictions](../../build/reference/clr-restrictions.md).
+В дополнение к указанным выше ограничениям при использовании параметра [/CLR (компиляция среды CLR)](../../build/reference/clr-common-language-runtime-compilation.md) **_alloca** нельзя использовать в **`__except`** блоках. Для получения дополнительной информации см. [/clr Restrictions](../../build/reference/clr-restrictions.md).
 
 ## <a name="requirements"></a>Требования
 

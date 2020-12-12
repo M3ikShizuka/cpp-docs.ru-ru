@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _scprintf, _scprintf_l, _scwprintf, _scwprintf_l'
 title: _scprintf, _scprintf_l, _scwprintf, _scwprintf_l
 ms.date: 11/04/2016
 api_name:
@@ -47,12 +48,12 @@ helpviewer_keywords:
 - _scprintf function
 - scwprintf function
 ms.assetid: ecbb0ba6-5f4c-4ce6-a64b-144ad8b5fe92
-ms.openlocfilehash: 8d7f682156d37538f6ac152e6d93814877631a5c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8082c2281069b2350cecf032d6378baff7b93557
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948806"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277236"
 ---
 # <a name="_scprintf-_scprintf_l-_scwprintf-_scwprintf_l"></a>_scprintf, _scprintf_l, _scwprintf, _scwprintf_l
 
@@ -86,7 +87,7 @@ int _scwprintf_l(
 *format*<br/>
 Строка управления форматом.
 
-*параметр*<br/>
+*argument*<br/>
 Необязательные аргументы.
 
 *locale*<br/>
@@ -98,20 +99,20 @@ int _scwprintf_l(
 
 Возвращает число символов, которые были бы созданы, если строка была бы напечатана либо отправлена в файл или буфер с помощью указанных кодов форматирования. Возвращаемое значение не включает завершающий нуль-символ. **_scwprintf** выполняет ту же функцию для расширенных символов.
 
-Если параметр *Format* является **пустым** указателем, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции возвращают-1 **и устанавливают для** **еинвал**значение.
+Если параметр *Format* является **пустым** указателем, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции возвращают-1 **и устанавливают для** **еинвал** значение.
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Каждый *аргумент* (при его наличии) преобразуется в соответствии с соответствующей спецификацией формата в *формате*. Формат состоит из обычных символов и имеет ту же форму и функциональные возможности, что и аргумент *format* для [printf](printf-printf-l-wprintf-wprintf-l.md).
+Каждый *аргумент* (при его наличии) преобразуется в соответствии с соответствующей спецификацией формата в *формате*. Формат состоит из обычных символов и имеет ту же форму и функцию, что и аргумент *Format* для [printf](printf-printf-l-wprintf-wprintf-l.md).
 
 Версии этих функций с суффиксом **_l** идентичны за исключением того, что они используют переданный параметр языкового стандарта вместо локали текущего потока.
 
 > [!IMPORTANT]
 > Убедитесь, что *format* не является строкой, определяемой пользователем.
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Процедура Tchar.h|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -125,7 +126,7 @@ int _scwprintf_l(
 |**_scprintf**, **_scprintf_l**|\<stdio.h>|
 |**_scwprintf**, **_scwprintf_l**|\<stdio.h> или \<wchar.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -162,7 +163,7 @@ The length of the following string will be 46.
 The value of Pi is calculated to be 3.141593.
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Потоковый ввод-вывод](../../c-runtime-library/stream-i-o.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>

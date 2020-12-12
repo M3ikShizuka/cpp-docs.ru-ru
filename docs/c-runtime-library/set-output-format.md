@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _set_output_format'
 title: _set_output_format
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - _set_output_format function
 - set_output_format function
 ms.assetid: 1cb48df8-44b4-4400-bd27-287831d6b3ff
-ms.openlocfilehash: c855df4c29a53fd898b920f6446afe4e568ba5bb
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d0e45f4f7ce2a6837bce1e583ec3afd5a70f108a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81360918"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277184"
 ---
 # <a name="_set_output_format"></a>_set_output_format
 
@@ -49,14 +50,14 @@ unsigned int _set_output_format(
 
 #### <a name="parameters"></a>Параметры
 
-*Формат*<br/>
+*format*<br/>
 [in] Значение, представляющее используемый формат.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Предыдущий формат вывода.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `_set_output_format` используется для настройки вывода форматированных функций ввода-вывода, таких как [printf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md). В настоящее время единственное соглашение о форматировании, которое эта функция может изменить, — число цифр показателя степени в числах с плавающей запятой.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: clog10, clog10f, clog10l'
 title: clog10, clog10f, clog10l
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - clog10f function
 - clog10l function
 ms.assetid: 2ddae00d-ef93-4441-add3-f4d58358401b
-ms.openlocfilehash: a840494caf3c34f09d8c90970988e847be712cb4
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8f3112cec5d7f0d75435c1f47c8a28c9d3c93d69
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70939113"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97277249"
 ---
 # <a name="clog10-clog10f-clog10l"></a>clog10, clog10f, clog10l
 
@@ -59,7 +60,7 @@ _Lcomplex clog10( _Lcomplex z );  // C++ only
 
 ### <a name="parameters"></a>Параметры
 
-*z*<br/>
+*з*<br/>
 Основание логарифма.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -70,25 +71,25 @@ _Lcomplex clog10( _Lcomplex z );  // C++ only
 |-----------------|------------------|
 |Положительное число|Десятичный логарифм z|
 |Нуль|- ∞|
-|Отрицательное число|NaN|
-|NaN|NaN|
+|Отрицательное число|Не число|
+|Не число|Не число|
 |+ ∞|+ ∞|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Поскольку C++ допускает перегрузку, можно вызывать перегрузки **clog10** , которые принимают и возвращают значения **_Fcomplex** и **_Lcomplex** . В программе на языке C **clog10** всегда принимает и возвращает значение **_Dcomplex** .
+Поскольку C++ допускает перегрузку, можно вызывать перегрузки **clog10** , которые принимают и возвращают **_Fcomplex** и **_Lcomplex** значения. В программе на языке C **clog10** всегда принимает и возвращает значение **_Dcomplex** .
 
 ## <a name="requirements"></a>Требования
 
 |Подпрограмма|Заголовок C|Заголовок C++|
 |-------------|--------------|------------------|
-|**clog10**, **clog10f**, **клогл**|\<complex.h>|\<ccomplex>|
+|**clog10**,               **clog10f**, **клогл**|\<complex.h>|\<ccomplex>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Алфавитный указатель функций](crt-alphabetical-function-reference.md)<br/>
+[Алфавитный справочник по функциям](crt-alphabetical-function-reference.md)<br/>
 [cexp, cexpf, cexpl](cexp-cexpf-cexpl.md)<br/>
 [cpow, cpowf, cpowl](cpow-cpowf-cpowl.md)<br/>
 [clog, clogf, clogl](clog-clogf-clogl.md)<br/>
