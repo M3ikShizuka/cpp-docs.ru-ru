@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ITERATOR_DEBUG_LEVEL'
 title: _ITERATOR_DEBUG_LEVEL
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - _ITERATOR_DEBUG_LEVEL
 ms.assetid: 718549cd-a9a9-4ab3-867b-aac00b321e67
-ms.openlocfilehash: 7b573127518969accdfdcc4a25a50269dd6aa002
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 769b7f3a8eecd3c994ee82b67385f080f0945f33
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456398"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306642"
 ---
 # <a name="_iterator_debug_level"></a>_ITERATOR_DEBUG_LEVEL
 
-Макрос _ITERATOR_DEBUG_LEVEL определяет, включены ли [проверенные итераторы](../standard-library/checked-iterators.md) и [Поддержка итератора отладки](../standard-library/debug-iterator-support.md) . Этот макрос заменяет и объединяет функциональные возможности старых макросов _SECURE_SCL и _HAS_ITERATOR_DEBUGGING.
+Макрос _ITERATOR_DEBUG_LEVEL определяет, включены ли [проверенные итераторы](../standard-library/checked-iterators.md) и [Поддержка итераторов отладки](../standard-library/debug-iterator-support.md) . Этот макрос заменяет и объединяет функциональные возможности старых _SECURE_SCL и _HAS_ITERATOR_DEBUGGING макросов.
 
 ## <a name="macro-values"></a>Значение макроса
 
@@ -33,11 +34,11 @@ ms.locfileid: "68456398"
 
 В режиме выпуска компилятор выдает ошибку, если указать _ITERATOR_DEBUG_LEVEL как 2.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Макрос _ITERATOR_DEBUG_LEVEL определяет, включены ли [проверенные итераторы](../standard-library/checked-iterators.md) , а также в режиме отладки, включена ли [Поддержка итераторов отладки](../standard-library/debug-iterator-support.md) . Если _ITERATOR_DEBUG_LEVEL определен как 1 или 2, проверяемые итераторы гарантируют, что границы контейнеров не перезаписываются. Если значение _ITERATOR_DEBUG_LEVEL равно 0, то итераторы не проверяются. Если _ITERATOR_DEBUG_LEVEL определен как 1, любое ненадежное использование итератора вызывает ошибку времени выполнения и программа завершается. Если _ITERATOR_DEBUG_LEVEL определен как 2, ненадежное использование итератора приводит к появлению диалогового окна "Assert" и "Error Runtime", которое позволяет переключиться на отладчик.
+Макрос _ITERATOR_DEBUG_LEVEL определяет, включены ли [проверенные итераторы](../standard-library/checked-iterators.md) , а также в режиме отладки, включена ли [Поддержка итераторов отладки](../standard-library/debug-iterator-support.md) . Если _ITERATOR_DEBUG_LEVEL определен как 1 или 2, проверяемые итераторы гарантируют, что границы контейнеров не перезаписываются. Если значение _ITERATOR_DEBUG_LEVEL равно 0, то итераторы не проверяются. Если _ITERATOR_DEBUG_LEVEL определен как 1, любое ненадежное использование итератора вызывает ошибку времени выполнения и программа завершается. Если значение _ITERATOR_DEBUG_LEVEL определено как 2, ненадежное использование итератора приводит к появлению диалогового окна "утверждение" и "ошибка времени выполнения", которое позволяет переключиться на отладчик.
 
-Так как макрос _ITERATOR_DEBUG_LEVEL поддерживает аналогичные функции для макросов _SECURE_SCL и _HAS_ITERATOR_DEBUGGING, возможно, вы не уверены, какое значение макроса и макроса использовать в конкретной ситуации. Чтобы избежать путаницы, рекомендуется использовать только макрос _ITERATOR_DEBUG_LEVEL. В этой таблице описывается эквивалентное значение макроса _ITERATOR_DEBUG_LEVEL, используемое для различных значений _SECURE_SCL и _HAS_ITERATOR_DEBUGGING в существующем коде.
+Поскольку макрос _ITERATOR_DEBUG_LEVEL поддерживает аналогичные функции для _SECURE_SCL и _HAS_ITERATOR_DEBUGGING макросов, возможно, вы не уверены, какое значение макросов и макросов использовать в конкретной ситуации. Чтобы избежать путаницы, рекомендуется использовать только макрос _ITERATOR_DEBUG_LEVEL. В этой таблице описывается эквивалентное _ITERATOR_DEBUG_LEVEL значение макроса, которое используется для различных значений _SECURE_SCL и _HAS_ITERATOR_DEBUGGING в существующем коде.
 
 |**_ITERATOR_DEBUG_LEVEL** |**_SECURE_SCL** |**_HAS_ITERATOR_DEBUGGING**|
 |---|---|---|
@@ -45,11 +46,11 @@ ms.locfileid: "68456398"
 |1|1 (включено)|0 (отключено)|
 |2 (значение по умолчанию для отладки)|(неприменимо)|1 (включено в режиме отладки)|
 
-Сведения о том, как отключить предупреждения о проверенных итераторах, см. в разделе [_SCL_SECURE_NO_WARNINGS](../standard-library/scl-secure-no-warnings.md).
+Сведения о том, как отключить предупреждения о проверяемых итераторах, см. в разделе [_SCL_SECURE_NO_WARNINGS](../standard-library/scl-secure-no-warnings.md).
 
 ### <a name="example"></a>Пример
 
-Чтобы указать значение для макроса _ITERATOR_DEBUG_LEVEL, используйте параметр компилятора [/d](../build/reference/d-preprocessor-definitions.md) для определения его в командной строке или используйте `#define` перед включением заголовков C++ стандартной библиотеки в исходные файлы. Например, чтобы скомпилировать *Sample. cpp* в режиме отладки и использовать поддержку итератора отладки, в командной строке можно указать определение макроса _ITERATOR_DEBUG_LEVEL:
+Чтобы указать значение для макроса _ITERATOR_DEBUG_LEVEL, используйте параметр компилятора [/d](../build/reference/d-preprocessor-definitions.md) для определения его в командной строке или используйте `#define` перед добавлением заголовков стандартной библиотеки C++ в исходные файлы. Например, чтобы скомпилировать *Sample. cpp* в режиме отладки и использовать поддержку итератора отладки, в командной строке можно указать _ITERATOR_DEBUG_LEVEL определение макроса:
 
 `cl /EHsc /Zi /MDd /D_ITERATOR_DEBUG_LEVEL=1 sample.cpp`
 
@@ -65,8 +66,8 @@ ms.locfileid: "68456398"
 // ...
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Проверяемые итераторы](../standard-library/checked-iterators.md)\
-[Поддержка итераторов отладки](../standard-library/debug-iterator-support.md)\
-[Безопасные библиотеки: стандартная библиотека C++](../standard-library/safe-libraries-cpp-standard-library.md)
+[Проверенные итераторы](../standard-library/checked-iterators.md)\
+[Поддержка итератора отладки](../standard-library/debug-iterator-support.md)\
+[Надежные библиотеки: Стандартная библиотека C++](../standard-library/safe-libraries-cpp-standard-library.md)

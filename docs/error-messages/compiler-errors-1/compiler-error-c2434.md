@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C2434'
 title: Ошибка компилятора C2434
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2434
 ms.assetid: 01329e26-7c74-4219-b74f-69e3a40c9738
-ms.openlocfilehash: 869db3b49075fa477860e045e59306e22a381ca4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e24eb3fdf2ae60dadc270bed1bdda251acfc70a3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80205469"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189968"
 ---
 # <a name="compiler-error-c2434"></a>Ошибка компилятора C2434
 
 > "*символ*": символ, объявленный с __declspec (Process), не может быть динамически инициализирован в режиме/clr: pure
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Параметры компилятора **/clr: pure** и **/clr: Сейф** являются устаревшими в Visual Studio 2015 и не поддерживаются в Visual Studio 2017.
 
@@ -25,7 +26,7 @@ ms.locfileid: "80205469"
 
 ## <a name="example"></a>Пример
 
-Следующий пример приводит к возникновению ошибки C2434. Чтобы устранить эту проблему, используйте константы для инициализации переменных `process`.
+Следующий пример приводит к возникновению ошибки C2434. Чтобы устранить эту проблему, используйте константы для инициализации `process` переменных.
 
 ```cpp
 // C2434.cpp

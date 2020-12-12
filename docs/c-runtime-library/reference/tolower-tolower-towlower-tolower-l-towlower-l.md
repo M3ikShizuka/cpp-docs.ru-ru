@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: ToLower, _tolower, товловер, _tolower_l, _towlower_l'
 title: tolower, _tolower, towlower, _tolower_l, _towlower_l
 ms.date: 4/2/2020
 api_name:
@@ -52,12 +53,12 @@ helpviewer_keywords:
 - characters, converting
 - _towlower_l function
 ms.assetid: 86e0fc02-94ae-4472-9631-bf8e96f67b92
-ms.openlocfilehash: c8b27c4cc618d34d9da9b5884c6db2f525fd2388
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 5b686d9b511fe4864724f85be78ac511a6351ef7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910015"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318329"
 ---
 # <a name="tolower-_tolower-towlower-_tolower_l-_towlower_l"></a>tolower, _tolower, towlower, _tolower_l, _towlower_l
 
@@ -87,7 +88,7 @@ int _towlower_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Символ для преобразования.
 
 *locale*<br/>
@@ -97,7 +98,7 @@ int _towlower_l(
 
 Каждая из этих подпрограмм преобразует копию *c* в нижний регистр, если преобразование возможно, и возвращает результат. Возвращаемое значение для указания ошибки не зарезервировано.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Каждая из этих подпрограмм преобразует указанную прописную букву в строчную, если это возможно и уместно. Преобразование регистра **товловер** зависит от языкового стандарта. Изменяются только символы, соответствующие текущему языковому стандарту. Функции без суффикса **_l** используют текущую национальную настройку. Версии этих функций с суффиксом **_l** принимают языковой стандарт в качестве параметра и используют его вместо текущего языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
@@ -132,7 +133,7 @@ int _towlower_l(
 ## <a name="see-also"></a>См. также раздел
 
 [Преобразование данных](../../c-runtime-library/data-conversion.md)<br/>
-[Процедуры is, isw](../../c-runtime-library/is-isw-routines.md)<br/>
-[Функции to](../../c-runtime-library/to-functions.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[является, подпрограммы isw](../../c-runtime-library/is-isw-routines.md)<br/>
+[в функции](../../c-runtime-library/to-functions.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

@@ -1,20 +1,21 @@
 ---
+description: 'Дополнительные сведения о: boyer_moore_searcher классе'
 title: класс boyer_moore_searcher
 ms.date: 08/03/2019
 f1_keywords:
 - functional/std::boyer_moore_searcher
 helpviewer_keywords:
 - std::boyer_moore_searcher [C++]
-ms.openlocfilehash: d6fa4dd203336107614ca3431f38846f0c3c89af
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 7d8efe145870847aae8e961dad1b4a92fec8bd57
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90039823"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325415"
 ---
 # <a name="boyer_moore_searcher-class"></a>класс boyer_moore_searcher
 
-`boyer_moore_searcher`Класс является типом объекта функции, который использует алгоритм Бойера-Мура для поиска последовательности, указанной в конструкторе объекта. Поиск выполняется в другой последовательности, предоставленной оператору вызова функции объекта. Этот класс передается в качестве параметра в одну из перегрузок [std:: Search](algorithm-functions.md#search).
+`boyer_moore_searcher`Класс является типом объекта функции, который использует алгоритм Boyer-Moore для поиска последовательности, указанной в конструкторе объекта. Поиск выполняется в другой последовательности, предоставленной оператору вызова функции объекта. Этот класс передается в качестве параметра в одну из перегрузок [std:: Search](algorithm-functions.md#search).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -38,9 +39,9 @@ class boyer_moore_searcher
 };
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
-| Участник | Описание |
+| Член | Описание |
 | - | - |
 | **Конструктор** | |
 | [boyer_moore_searcher](#boyer-moore-searcher-constructor) | Конструирует экземпляр службы поиска. |
@@ -75,7 +76,7 @@ boyer_moore_searcher(
 
 ### <a name="remarks"></a>Комментарии
 
-Создает исключение, созданное конструктором копий типов *бинарипредикате*, *hash*или *Рандомакцесситератор* , или оператор Call *бинарипредикате* или *hash*.
+Создает исключение, созданное конструктором копий типов *бинарипредикате*, *hash* или *Рандомакцесситератор* , или оператор Call *бинарипредикате* или *hash*.
 
 Этот класс впервые появились в C++ 17.
 
@@ -100,7 +101,7 @@ pair<RandomAccessIterator2, RandomAccessIterator2> operator()(
 
 ### <a name="remarks"></a>Комментарии
 
-Если шаблон поиска `[pat_first, pat_last)` пуст, возвращает значение `make_pair(first, first)` . Если шаблон поиска не найден, возвращает `make_pair(last, last)` . В противном случае возвращает пару итераторов в начало и конец последовательности в таком же порядке, что и в соответствии с допустимым `[first, last)` `[pat_first, pat_last)` предикатом. *pred*
+Если шаблон поиска `[pat_first, pat_last)` пуст, возвращает значение `make_pair(first, first)` . Если шаблон поиска не найден, возвращает `make_pair(last, last)` . В противном случае возвращает пару итераторов в начало и конец последовательности в таком же порядке, что и в соответствии с допустимым `[first, last)` `[pat_first, pat_last)` предикатом. 
 
 Этот класс впервые появились в C++ 17.
 

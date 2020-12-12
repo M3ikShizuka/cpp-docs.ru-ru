@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: istrstream Class'
 title: Класс istrstream
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - istrstream class
 ms.assetid: c2d41c75-bd2c-4437-bd77-5939ce1b97af
-ms.openlocfilehash: 37118772f7cefd6f380ceb01908da55500ee7ab5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 45e60878c63c30daca85924a9d0091e202387b55
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228236"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306655"
 ---
 # <a name="istrstream-class"></a>Класс istrstream
 
@@ -33,7 +34,7 @@ class istrstream : public istream
 
 ### <a name="constructors"></a>Конструкторы
 
-|Конструктор|Описание:|
+|Конструктор|Описание|
 |-|-|
 |[istrstream](#istrstream)|Создает объект типа `istrstream`.|
 
@@ -50,7 +51,7 @@ class istrstream : public istream
 
 **Пространство имен:** std
 
-## <a name="istrstreamistrstream"></a><a name="istrstream"></a>istrstream:: istrstream
+## <a name="istrstreamistrstream"></a><a name="istrstream"></a> istrstream:: istrstream
 
 Создает объект типа `istrstream`.
 
@@ -78,11 +79,11 @@ istrstream(
 *указатель*\
 Содержимое, с которым инициализируется буфер.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Все конструкторы инициализируют базовый класс путем вызова [IStream](../standard-library/istream-typedefs.md#istream)(**SB**), где `sb` — это хранимый объект класса [strstreambuf](../standard-library/strstreambuf-class.md). Первые два конструктора также инициализируются `sb` путем вызова `strstreambuf( ( const char *) ptr, 0 )` . Остальные два конструктора вместо этого вызывают `strstreambuf( ( const char *) ptr, count )` .
 
-## <a name="istrstreamrdbuf"></a><a name="rdbuf"></a>istrstream:: rdbuf
+## <a name="istrstreamrdbuf"></a><a name="rdbuf"></a> istrstream:: rdbuf
 
 Возвращает указатель на объект strstreambuf, связанный с потоком.
 
@@ -94,7 +95,7 @@ strstreambuf *rdbuf() const
 
 Указатель на объект strstreambuf, связанный с потоком.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает адрес хранимого буфера потока типа pointer, указывающий на [strstreambuf](../standard-library/strstreambuf-class.md).
 
@@ -102,7 +103,7 @@ strstreambuf *rdbuf() const
 
 См. пример использования `rdbuf` в разделе [strstreambuf::pcount](../standard-library/strstreambuf-class.md#pcount).
 
-## <a name="istrstreamstr"></a><a name="str"></a>istrstream:: str
+## <a name="istrstreamstr"></a><a name="str"></a> istrstream:: str
 
 Вызывает [freeze](../standard-library/strstreambuf-class.md#freeze), затем возвращает указатель на начало управляемой последовательности.
 
@@ -114,7 +115,7 @@ char *str();
 
 Указатель на начало управляемой последовательности.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция – член возвращает [rdbuf](#rdbuf)  ->  [str](../standard-library/strstreambuf-class.md#str).
 
@@ -122,7 +123,7 @@ char *str();
 
 Пример, в котором используется, см. в разделе [strstream:: str](../standard-library/strstreambuf-class.md#str) `str` .
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [IStream](../standard-library/istream-typedefs.md#istream)\
 [Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
