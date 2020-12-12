@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: диалоговое CFindReplaceDialog Class'
 title: Класс диалоговое CFindReplaceDialog
 ms.date: 11/04/2016
 f1_keywords:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - CFindReplaceDialog [MFC], SearchDown
 - CFindReplaceDialog [MFC], m_fr
 ms.assetid: 610f0b5d-b398-4ef6-8c05-e9d6641e50a8
-ms.openlocfilehash: 92429bc17301d6615c87de958f38a717528e9544
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3deeb485a9048ba986f548ed66329b66bd039c08
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212440"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184482"
 ---
 # <a name="cfindreplacedialog-class"></a>Класс диалоговое CFindReplaceDialog
 
@@ -49,11 +50,11 @@ ms.locfileid: "87212440"
 class CFindReplaceDialog : public CCommonDialog
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Диалоговое CFindReplaceDialog:: диалоговое CFindReplaceDialog](#cfindreplacedialog)|Вызовите эту функцию для создания `CFindReplaceDialog` объекта.|
 
@@ -79,7 +80,7 @@ class CFindReplaceDialog : public CCommonDialog
 |----------|-----------------|
 |[Диалоговое CFindReplaceDialog:: m_fr](#m_fr)|Структура, используемая для настройки `CFindReplaceDialog` объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 В отличие от других общих диалоговых окон Windows, `CFindReplaceDialog` объекты являются немодальными, что позволяет пользователям взаимодействовать с другими окнами, когда они находятся на экране. Существует два вида `CFindReplaceDialog` объектов: диалоговое окно Поиск и замена. Хотя диалоговые окна позволяют пользователю вводить и искать, и заменять строки, они не выполняют функции поиска и замены. Их необходимо добавить в приложение.
 
@@ -93,7 +94,7 @@ class CFindReplaceDialog : public CCommonDialog
 
 Можно определить, решил ли пользователь закрыть диалоговое окно с помощью `IsTerminating` функции члена.
 
-`CFindReplaceDialog`зависит от файла COMMDLG.DLL, поставляемого с Windows версии 3,1 и более поздних версий.
+`CFindReplaceDialog` зависит от файла COMMDLG.DLL, поставляемого с Windows версии 3,1 и более поздних версий.
 
 Чтобы настроить диалоговое окно, создайте производный класс от `CFindReplaceDialog` , предоставьте пользовательский шаблон диалогового окна и добавьте карту сообщений для обработки сообщений уведомлений из расширенных элементов управления. Все необработанные сообщения должны передаваться в базовый класс.
 
@@ -119,7 +120,7 @@ class CFindReplaceDialog : public CCommonDialog
 
 **Заголовок:** афксдлгс. h
 
-## <a name="cfindreplacedialogcfindreplacedialog"></a><a name="cfindreplacedialog"></a>Диалоговое CFindReplaceDialog:: диалоговое CFindReplaceDialog
+## <a name="cfindreplacedialogcfindreplacedialog"></a><a name="cfindreplacedialog"></a> Диалоговое CFindReplaceDialog:: диалоговое CFindReplaceDialog
 
 Формирует объект `CFindReplaceDialog`.
 
@@ -127,7 +128,7 @@ class CFindReplaceDialog : public CCommonDialog
 CFindReplaceDialog();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Поскольку `CFindReplaceDialog` объект является немодальным диалоговым окном, его необходимо создать в куче с помощью **`new`** оператора.
 
@@ -139,7 +140,7 @@ CFindReplaceDialog();
 
 [!code-cpp[NVC_MFCDocView#170](../../mfc/codesnippet/cpp/cfindreplacedialog-class_1.cpp)]
 
-## <a name="cfindreplacedialogcreate"></a><a name="create"></a>Диалоговое CFindReplaceDialog:: Create
+## <a name="cfindreplacedialogcreate"></a><a name="create"></a> Диалоговое CFindReplaceDialog:: Create
 
 Создает и отображает объект диалогового окна найти или найти/заменить в зависимости от значения `bFindDialogOnly` .
 
@@ -173,7 +174,7 @@ virtual BOOL Create(
 
 Ненулевое значение, если объект диалогового окна был успешно создан; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Чтобы родительское окно было уведомлено о запросах Find/Replace, необходимо использовать функцию Windows [регистервиндовмессаже](/windows/win32/api/winuser/nf-winuser-registerwindowmessagew) , возвращаемое значение которой является номером сообщения, уникальным для экземпляра приложения. В окне фрейма должна быть запись схемы сообщений, объявляющая функцию обратного вызова ( `OnFindReplace` в следующем примере), которая обрабатывает это зарегистрированное сообщение. В следующем фрагменте кода приведен пример того, как это сделать для класса окна фрейма с именем `CMyRichEditView` :
 
@@ -189,7 +190,7 @@ virtual BOOL Create(
 
   См. пример для [диалоговое CFindReplaceDialog:: диалоговое CFindReplaceDialog](#cfindreplacedialog).
 
-## <a name="cfindreplacedialogfindnext"></a><a name="findnext"></a>Диалоговое CFindReplaceDialog:: FindNext
+## <a name="cfindreplacedialogfindnext"></a><a name="findnext"></a> Диалоговое CFindReplaceDialog:: FindNext
 
 Вызовите эту функцию из функции обратного вызова, чтобы определить, нужно ли пользователю найти следующее вхождение строки поиска.
 
@@ -201,7 +202,7 @@ BOOL FindNext() const;
 
 Ненулевое значение, если пользователь хочет найти следующее вхождение строки поиска; в противном случае — 0.
 
-## <a name="cfindreplacedialoggetfindstring"></a><a name="getfindstring"></a>Диалоговое CFindReplaceDialog:: Жетфиндстринг
+## <a name="cfindreplacedialoggetfindstring"></a><a name="getfindstring"></a> Диалоговое CFindReplaceDialog:: Жетфиндстринг
 
 Вызовите эту функцию из функции обратного вызова, чтобы получить строку по умолчанию для поиска.
 
@@ -217,7 +218,7 @@ CString GetFindString() const;
 
 [!code-cpp[NVC_MFCDocView#69](../../mfc/codesnippet/cpp/cfindreplacedialog-class_5.cpp)]
 
-## <a name="cfindreplacedialoggetnotifier"></a><a name="getnotifier"></a>Диалоговое CFindReplaceDialog:: "уведомление"
+## <a name="cfindreplacedialoggetnotifier"></a><a name="getnotifier"></a> Диалоговое CFindReplaceDialog:: "уведомление"
 
 Вызовите эту функцию, чтобы получить указатель на текущее диалоговое окно найти замену.
 
@@ -234,7 +235,7 @@ static CFindReplaceDialog* PASCAL GetNotifier(LPARAM lParam);
 
 Указатель на текущее диалоговое окно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Он должен использоваться в функции обратного вызова для доступа к текущему диалоговому окну, вызова его функций члена и доступа к `m_fr` структуре.
 
@@ -244,7 +245,7 @@ static CFindReplaceDialog* PASCAL GetNotifier(LPARAM lParam);
 
 [!code-cpp[NVC_MFCDocView#69](../../mfc/codesnippet/cpp/cfindreplacedialog-class_5.cpp)]
 
-## <a name="cfindreplacedialoggetreplacestring"></a><a name="getreplacestring"></a>Диалоговое CFindReplaceDialog:: Жетреплацестринг
+## <a name="cfindreplacedialoggetreplacestring"></a><a name="getreplacestring"></a> Диалоговое CFindReplaceDialog:: Жетреплацестринг
 
 Вызовите эту функцию, чтобы получить текущую строку замены.
 
@@ -260,7 +261,7 @@ CString GetReplaceString() const;
 
   См. пример для [диалоговое CFindReplaceDialog:: жетфиндстринг](#getfindstring).
 
-## <a name="cfindreplacedialogisterminating"></a><a name="isterminating"></a>Диалоговое CFindReplaceDialog:: завершения
+## <a name="cfindreplacedialogisterminating"></a><a name="isterminating"></a> Диалоговое CFindReplaceDialog:: завершения
 
 Вызовите эту функцию в функции обратного вызова, чтобы определить, решил ли пользователь закрыть диалоговое окно.
 
@@ -272,7 +273,7 @@ BOOL IsTerminating() const;
 
 Ненулевое значение, если пользователь решил закрыть диалоговое окно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если эта функция возвращает ненулевое значение, следует вызвать `DestroyWindow` функцию члена текущего диалогового окна и установить для любой переменной указателя диалогового окна значение null. При необходимости можно также сохранить последний введенный текст в поле Найти/заменить и использовать его для инициализации следующего диалогового окна Найти/заменить.
 
@@ -280,7 +281,7 @@ BOOL IsTerminating() const;
 
   См. пример для [диалоговое CFindReplaceDialog:: жетфиндстринг](#getfindstring).
 
-## <a name="cfindreplacedialogm_fr"></a><a name="m_fr"></a>Диалоговое CFindReplaceDialog:: m_fr
+## <a name="cfindreplacedialogm_fr"></a><a name="m_fr"></a> Диалоговое CFindReplaceDialog:: m_fr
 
 Используется для настройки `CFindReplaceDialog` объекта.
 
@@ -288,9 +289,9 @@ BOOL IsTerminating() const;
 FINDREPLACE m_fr;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`m_fr`представляет собой структуру типа [финдреплаце](/windows/win32/api/commdlg/ns-commdlg-findreplacew). Его члены хранят характеристики объекта диалогового окна. После создания `CFindReplaceDialog` объекта можно использовать `m_fr` для изменения различных значений в диалоговом окне.
+`m_fr` представляет собой структуру типа [финдреплаце](/windows/win32/api/commdlg/ns-commdlg-findreplacew). Его члены хранят характеристики объекта диалогового окна. После создания `CFindReplaceDialog` объекта можно использовать `m_fr` для изменения различных значений в диалоговом окне.
 
 Дополнительные сведения об этой структуре см. в описании `FINDREPLACE` структуры в Windows SDK.
 
@@ -298,7 +299,7 @@ FINDREPLACE m_fr;
 
   См. пример для [диалоговое CFindReplaceDialog:: диалоговое CFindReplaceDialog](#cfindreplacedialog).
 
-## <a name="cfindreplacedialogmatchcase"></a><a name="matchcase"></a>Диалоговое CFindReplaceDialog:: Матчкасе
+## <a name="cfindreplacedialogmatchcase"></a><a name="matchcase"></a> Диалоговое CFindReplaceDialog:: Матчкасе
 
 Вызовите эту функцию, чтобы определить, нужно ли точно сопоставить регистр поиска строки find.
 
@@ -310,7 +311,7 @@ BOOL MatchCase() const;
 
 Ненулевое значение, если пользователь хочет найти вхождения строки поиска, которая точно соответствует регистру строки поиска; в противном случае — 0.
 
-## <a name="cfindreplacedialogmatchwholeword"></a><a name="matchwholeword"></a>Диалоговое CFindReplaceDialog:: Матчвхолеворд
+## <a name="cfindreplacedialogmatchwholeword"></a><a name="matchwholeword"></a> Диалоговое CFindReplaceDialog:: Матчвхолеворд
 
 Вызовите эту функцию, чтобы определить, желаете ли пользователь сопоставлять только целые слова.
 
@@ -322,7 +323,7 @@ BOOL MatchWholeWord() const;
 
 Ненулевое значение, если пользователь хочет сопоставить только целые слова строки поиска. в противном случае — 0.
 
-## <a name="cfindreplacedialogreplaceall"></a><a name="replaceall"></a>Диалоговое CFindReplaceDialog:: ReplaceAll
+## <a name="cfindreplacedialogreplaceall"></a><a name="replaceall"></a> Диалоговое CFindReplaceDialog:: ReplaceAll
 
 Вызовите эту функцию, чтобы определить, хочет ли пользователь заменять все вхождения строки.
 
@@ -334,7 +335,7 @@ BOOL ReplaceAll() const;
 
 Ненулевое значение, если пользователь запросил, чтобы все строки, соответствующие строке замены, были заменены. в противном случае — 0.
 
-## <a name="cfindreplacedialogreplacecurrent"></a><a name="replacecurrent"></a>Диалоговое CFindReplaceDialog:: Реплацекуррент
+## <a name="cfindreplacedialogreplacecurrent"></a><a name="replacecurrent"></a> Диалоговое CFindReplaceDialog:: Реплацекуррент
 
 Вызовите эту функцию, чтобы определить, хочет ли пользователь заменить текущее слово.
 
@@ -346,7 +347,7 @@ BOOL ReplaceCurrent() const;
 
 Ненулевое значение, если пользователь запросил, чтобы строка, выбранная в текущий момент, была заменена строкой замены. в противном случае — 0.
 
-## <a name="cfindreplacedialogsearchdown"></a><a name="searchdown"></a>Диалоговое CFindReplaceDialog:: Сеарчдовн
+## <a name="cfindreplacedialogsearchdown"></a><a name="searchdown"></a> Диалоговое CFindReplaceDialog:: Сеарчдовн
 
 Вызовите эту функцию, чтобы определить, должен ли пользователь искать переходы в направлении вниз.
 

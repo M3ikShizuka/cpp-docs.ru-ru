@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кгдиобжект Class'
 title: Класс Кгдиобжект
 ms.date: 11/04/2016
 f1_keywords:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - CGdiObject [MFC], UnrealizeObject
 - CGdiObject [MFC], m_hObject
 ms.assetid: 1cba3ba5-3d49-4e43-8293-209299f2f6f4
-ms.openlocfilehash: 759b25a8f77bb4e6b372431b637b4a97aca8e149
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a6a3d783dbfb7c25c63739330045151670208ebb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212414"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184170"
 ---
 # <a name="cgdiobject-class"></a>Класс Кгдиобжект
 
@@ -47,11 +48,11 @@ ms.locfileid: "87212414"
 class CGdiObject : public CObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Кгдиобжект:: Кгдиобжект](#cgdiobject)|Формирует объект `CGdiObject`.|
 
@@ -84,7 +85,7 @@ class CGdiObject : public CObject
 |----------|-----------------|
 |[Кгдиобжект:: m_hObject](#m_hobject)|МАРКЕР, содержащий ХБИТМАП, ХПАЛЕТТЕ, ХРГН, ХБРУШ, ХПЕН или ХФОНТ, прикрепленный к этому объекту.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Вы никогда не создаете `CGdiObject` напрямую. Вместо этого создается объект из одного из производных от него классов, например `CPen` или `CBrush` .
 
@@ -100,7 +101,7 @@ class CGdiObject : public CObject
 
 **Заголовок:** afxwin.h
 
-## <a name="cgdiobjectattach"></a><a name="attach"></a>Кгдиобжект:: Attach
+## <a name="cgdiobjectattach"></a><a name="attach"></a> Кгдиобжект:: Attach
 
 Присоединяет объект Windows GDI к `CGdiObject` объекту.
 
@@ -117,7 +118,7 @@ BOOL Attach(HGDIOBJ hObject);
 
 Ненулевое значение, если вложение выполнено успешно; в противном случае — 0.
 
-## <a name="cgdiobjectcgdiobject"></a><a name="cgdiobject"></a>Кгдиобжект:: Кгдиобжект
+## <a name="cgdiobjectcgdiobject"></a><a name="cgdiobject"></a> Кгдиобжект:: Кгдиобжект
 
 Формирует объект `CGdiObject`.
 
@@ -125,11 +126,11 @@ BOOL Attach(HGDIOBJ hObject);
 CGdiObject();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вы никогда не создаете `CGdiObject` напрямую. Вместо этого создается объект из одного из производных от него классов, например `CPen` или `Cbrush` .
 
-## <a name="cgdiobjectcreatestockobject"></a><a name="createstockobject"></a>Кгдиобжект:: Креатестоккобжект
+## <a name="cgdiobjectcreatestockobject"></a><a name="createstockobject"></a> Кгдиобжект:: Креатестоккобжект
 
 Извлекает маркер одного из стандартных геопера, кистей и шрифтов GDI Windows и присоединяет объект GDI к `CGdiObject` объекту.
 
@@ -146,11 +147,11 @@ BOOL CreateStockObject(int nIndex);
 
 Ненулевое значение, если функция выполнена успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите эту функцию с одним из производных классов, которые соответствуют типу объекта Windows GDI, например `CPen` для фондовой биржи.
 
-## <a name="cgdiobjectdeleteobject"></a><a name="deleteobject"></a>Кгдиобжект::D Елетеобжект
+## <a name="cgdiobjectdeleteobject"></a><a name="deleteobject"></a> Кгдиобжект::D Елетеобжект
 
 Удаляет присоединенный объект Windows GDI из памяти, освобождая все системное хранилище, связанное с объектом Windows GDI.
 
@@ -162,13 +163,13 @@ BOOL DeleteObject();
 
 Ненулевое значение, если объект GDI был успешно удален; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот вызов не влияет на хранилище, связанное с `CGdiObject` объектом. Приложение не должно вызываться `DeleteObject` для `CGdiObject` объекта, выбранного в данный момент в контексте устройства.
 
 При удалении узорной кисти растровое изображение, связанное с кистью, не удаляется. Растровое изображение необходимо удалить независимо друг от друга.
 
-## <a name="cgdiobjectdeletetempmap"></a><a name="deletetempmap"></a>Кгдиобжект::D Елететемпмап
+## <a name="cgdiobjectdeletetempmap"></a><a name="deletetempmap"></a> Кгдиобжект::D Елететемпмап
 
 Вызывается автоматически `CWinApp` обработчиком времени простоя, `DeleteTempMap` удаляет все временные `CGdiObject` объекты, созданные `FromHandle` .
 
@@ -176,15 +177,15 @@ BOOL DeleteObject();
 static void PASCAL DeleteTempMap();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`DeleteTempMap`Отсоединяет объект Windows GDI, присоединенный к временному `CGdiObject` объекту, перед удалением `CGdiObject` объекта.
+`DeleteTempMap` Отсоединяет объект Windows GDI, присоединенный к временному `CGdiObject` объекту, перед удалением `CGdiObject` объекта.
 
 ### <a name="example"></a>Пример
 
 [!code-cpp[NVC_MFCDocView#175](../../mfc/codesnippet/cpp/cgdiobject-class_1.cpp)]
 
-## <a name="cgdiobjectdetach"></a><a name="detach"></a>Кгдиобжект::D етач
+## <a name="cgdiobjectdetach"></a><a name="detach"></a> Кгдиобжект::D етач
 
 Отсоединяет объект Windows GDI от `CGdiObject` объекта и возвращает маркер для объекта Windows GDI.
 
@@ -196,7 +197,7 @@ HGDIOBJ Detach();
 
 `HANDLE`Объект для отсоединенного объекта Windows GDI; в противном случае — значение null, если объект GDI не присоединен.
 
-## <a name="cgdiobjectfromhandle"></a><a name="fromhandle"></a>Кгдиобжект:: FromHandle
+## <a name="cgdiobjectfromhandle"></a><a name="fromhandle"></a> Кгдиобжект:: FromHandle
 
 Возвращает указатель на объект, `CGdiObject` заданный маркером для объекта Windows GDI.
 
@@ -213,13 +214,13 @@ static CGdiObject* PASCAL FromHandle(HGDIOBJ hObject);
 
 Указатель на объект `CGdiObject` , который может быть временным или постоянным.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если `CGdiObject` объект еще не присоединен к объекту Windows GDI, `CGdiObject` создается и прикрепляется временный объект.
 
 Этот временный `CGdiObject` объект действителен до тех пор, пока приложение не найдет время простоя в цикле событий, во время которого все временные графические объекты будут удалены. Другой способ сказать, что временный объект допустим только во время обработки одного сообщения окна.
 
-## <a name="cgdiobjectgetobject"></a><a name="getobject"></a>Кгдиобжект:: GetObject
+## <a name="cgdiobjectgetobject"></a><a name="getobject"></a> Кгдиобжект:: GetObject
 
 Заполняет буфер данными, определяющими указанный объект.
 
@@ -241,7 +242,7 @@ int GetObject(
 
 Число извлеченных байтов; в противном случае — 0, если возникает ошибка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция получает структуру данных, тип которой зависит от типа графического объекта, как показано в следующем списке:
 
@@ -258,7 +259,7 @@ int GetObject(
 
 Если объект является `CPalette` объектом, `GetObject` извлекает слово, указывающее количество записей в палитре. Функция не получает структуру [логпалетте](/windows/win32/api/wingdi/ns-wingdi-logpalette) , определяющую палитру. Приложение может получать сведения о записях палитры путем вызова [кпалетте:: жетпалеттинтриес](../../mfc/reference/cpalette-class.md#getpaletteentries).
 
-## <a name="cgdiobjectgetobjecttype"></a><a name="getobjecttype"></a>Кгдиобжект:: Жетобжекттипе
+## <a name="cgdiobjectgetobjecttype"></a><a name="getobjecttype"></a> Кгдиобжект:: Жетобжекттипе
 
 Извлекает тип объекта GDI.
 
@@ -296,7 +297,7 @@ UINT GetObjectType() const;
 
 - OBJ_ENHMETADC контекст устройства расширенного метафайла
 
-## <a name="cgdiobjectgetsafehandle"></a><a name="getsafehandle"></a>Кгдиобжект:: Жетсафехандле
+## <a name="cgdiobjectgetsafehandle"></a><a name="getsafehandle"></a> Кгдиобжект:: Жетсафехандле
 
 Возвращает `m_hObject` **`this`** , если не равно null, в этом случае возвращается значение null.
 
@@ -308,7 +309,7 @@ HGDIOBJ GetSafeHandle() const;
 
 МАРКЕР присоединенного объекта Windows GDI; в противном случае значение NULL, если объект не присоединен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это является частью парадигмы интерфейса общего обработчика и полезна, когда NULL является допустимым или специальным значением для маркера.
 
@@ -316,7 +317,7 @@ HGDIOBJ GetSafeHandle() const;
 
   См. пример для [CWnd:: исвиндовенаблед](../../mfc/reference/cwnd-class.md#iswindowenabled).
 
-## <a name="cgdiobjectm_hobject"></a><a name="m_hobject"></a>Кгдиобжект:: m_hObject
+## <a name="cgdiobjectm_hobject"></a><a name="m_hobject"></a> Кгдиобжект:: m_hObject
 
 МАРКЕР, содержащий ХБИТМАП, ХРГН, ХБРУШ, ХПЕН, ХПАЛЕТТЕ или ХФОНТ, прикрепленный к этому объекту.
 
@@ -324,7 +325,7 @@ HGDIOBJ GetSafeHandle() const;
 HGDIOBJ m_hObject;
 ```
 
-## <a name="cgdiobjectoperator-"></a><a name="operator_neq"></a>Кгдиобжект:: operator! =
+## <a name="cgdiobjectoperator-"></a><a name="operator_neq"></a> Кгдиобжект:: operator! =
 
 Определяет, логически не равны два объекта GDI.
 
@@ -337,11 +338,11 @@ BOOL operator!=(const CGdiObject& obj) const;
 *obj*<br/>
 Указатель на существующий объект `CGdiObject` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Определяет, не равен ли объект GDI в левой части объекта GDI в правой части.
 
-## <a name="cgdiobjectoperator-"></a><a name="operator_eq_eq"></a>Кгдиобжект:: operator = =
+## <a name="cgdiobjectoperator-"></a><a name="operator_eq_eq"></a> Кгдиобжект:: operator = =
 
 Определяет, логически ли равны два объекта GDI.
 
@@ -354,11 +355,11 @@ BOOL operator==(const CGdiObject& obj) const;
 *obj*<br/>
 Ссылка на существующий объект `CGdiObject` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Определяет, равен ли объект GDI в левой части объекту GDI справа.
 
-## <a name="cgdiobjectoperator-hgdiobj"></a><a name="operator_hgdiobj"></a>Кгдиобжект:: operator ХГДИОБЖ
+## <a name="cgdiobjectoperator-hgdiobj"></a><a name="operator_hgdiobj"></a> Кгдиобжект:: operator ХГДИОБЖ
 
 Извлекает маркер присоединенного объекта Windows GDI; в противном случае значение NULL, если объект не присоединен.
 
@@ -366,7 +367,7 @@ BOOL operator==(const CGdiObject& obj) const;
 operator HGDIOBJ() const;
 ```
 
-## <a name="cgdiobjectunrealizeobject"></a><a name="unrealizeobject"></a>Кгдиобжект:: Унреализеобжект
+## <a name="cgdiobjectunrealizeobject"></a><a name="unrealizeobject"></a> Кгдиобжект:: Унреализеобжект
 
 Сбрасывает источник кисти или сбрасывает логическую палитру.
 
@@ -378,7 +379,7 @@ BOOL UnrealizeObject();
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Хотя `UnrealizeObject` является функцией-членом `CGdiObject` класса, она должна вызываться только для `CBrush` `CPalette` объектов или.
 

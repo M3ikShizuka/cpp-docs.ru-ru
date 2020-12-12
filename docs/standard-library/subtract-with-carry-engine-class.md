@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: subtract_with_carry_engine классе'
 title: Класс subtract_with_carry_engine
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - std::subtract_with_carry_engine [C++], max
 - std::subtract_with_carry_engine [C++], seed
 ms.assetid: 94a055f2-a620-4a22-ac34-c156924bab31
-ms.openlocfilehash: cf82c4ca3ce995fa9a53dbea21293dc8515ff491
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9d2c082f2c7b8405cf8cd25bce6a77d263fd8f64
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840912"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183390"
 ---
 # <a name="subtract_with_carry_engine-class"></a>Класс subtract_with_carry_engine
 
@@ -61,7 +62,7 @@ class subtract_with_carry_engine;
 
 Дополнительные сведения о членах подсистемы см [\<random>](../standard-library/random.md) . в разделе.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `substract_with_carry_engine`Шаблон класса является улучшением по сравнению с [linear_congruential_engine](../standard-library/linear-congruential-engine-class.md). Ни один из этих механизмов не обеспечивает такую же скорость и качество результатов, как механизм [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md).
 

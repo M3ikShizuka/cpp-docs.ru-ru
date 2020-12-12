@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; string_view &gt; typedefs'
 title: '&lt;&gt;определения типов string_view'
 ms.date: 04/19/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 - xstring/std::u16string_view
 - xstring/std::u32string_view
 - xstring/std::wstring_view
-ms.openlocfilehash: 2afaaea466cc3b1ca46d2acdf0ceb5a42c597743
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8bef37a85469dbc076c3488b1c70b394e5c63915
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836134"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183650"
 ---
 # <a name="ltstring_viewgt-typedefs"></a>&lt;&gt;определения типов string_view
 
@@ -28,7 +29,7 @@ ms.locfileid: "88836134"
 typedef basic_string_view<char, char_traits<char>> string_view;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Следующие объявления являются равнозначными:
 
@@ -48,7 +49,7 @@ basic_string_view<char> str("Hello");
 typedef basic_string_view<char16_t, char_traits<char16_t>> u16string_view;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Список конструкторов строк см. в разделе [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
 
@@ -60,7 +61,7 @@ typedef basic_string_view<char16_t, char_traits<char16_t>> u16string_view;
 typedef basic_string_view<char32_t, char_traits<char32_t>> u32string_view;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Список конструкторов строк см. в разделе [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
 
@@ -72,7 +73,7 @@ typedef basic_string_view<char32_t, char_traits<char32_t>> u32string_view;
 typedef basic_string_view<wchar_t, char_traits<wchar_t>> wstring_view;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Следующие объявления являются равнозначными:
 

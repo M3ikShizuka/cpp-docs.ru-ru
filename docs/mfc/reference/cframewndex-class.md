@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CFrameWndEx Class'
 title: Класс CFrameWndEx
 ms.date: 11/04/2016
 f1_keywords:
@@ -178,12 +179,12 @@ helpviewer_keywords:
 - CFrameWndEx [MFC], UpdateCaption
 - CFrameWndEx [MFC], WinHelp
 ms.assetid: 5830aca8-4a21-4f31-91f1-dd5477ffcc8d
-ms.openlocfilehash: 5aeffddcaa62732d2cba731f897f543e660cbab2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 81774a3f2c11504f3e3022faf4a109cb1bafdc29
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832770"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184274"
 ---
 # <a name="cframewndex-class"></a>Класс CFrameWndEx
 
@@ -195,7 +196,7 @@ ms.locfileid: "88832770"
 class CFrameWndEx : public CFrameWnd
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
@@ -320,7 +321,7 @@ class CFrameWndEx : public CFrameWnd
 void ActiveItemRecalcLayout();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexaddpane"></a><a name="addpane"></a> CFrameWndEx:: Аддпане
 
@@ -357,7 +358,7 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 *хдвп*<br/>
 Маркер структуры, содержащей позиции нескольких окон. .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Структура хдвп инициализируется методом [бегиндефервиндовпос](/windows/win32/api/winuser/nf-winuser-begindeferwindowpos) .
 
@@ -374,7 +375,7 @@ virtual void DelayUpdateFrameMenu(HMENU hMenuAlt);
 *хменуалт*<br/>
 окне Обработчик в альтернативном меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexdockpane"></a><a name="dockpane"></a> CFrameWndEx::D Оккпане
 
@@ -398,7 +399,7 @@ void DockPane(
 *лпрект*<br/>
 окне Указатель на структуру константного Rect, указывающую расположение и размер экрана окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Параметр *ндоккбарид* может иметь одно из следующих значений:
 
@@ -432,7 +433,7 @@ BOOL DockPaneLeftOf(
 
 Значение TRUE, если *пбар* закреплен успешно. В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Метод принимает панель инструментов, указанную параметром *пбар* , и закрепляет ее в левой части панели инструментов, заданной параметром *плефтоф* .
 
@@ -453,7 +454,7 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 
 Значение TRUE, если панель строк успешно закреплена на стороне окна фрейма, заданной параметром *двдоккстиле*, и false в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 *двдоккстиле* может иметь одно из следующих значений:
 
@@ -482,7 +483,7 @@ BOOL EnableDocking(DWORD dwDockStyle);
 
 Значение TRUE, если панель строк может быть успешно закреплена с указанной стороны. В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Параметр *двдоккстиле* может иметь одно из следующих значений:
 
@@ -520,7 +521,7 @@ void EnableFullScreenMode(UINT uiFullScreenCmd);
 *уифуллскринкмд*<br/>
 окне Идентификатор команды, которая включает и отключает полноэкранный режим.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В полноэкранном режиме все закрепленные панели управления, панели инструментов и меню скрыты, и размер активного представления изменяется, чтобы занимать весь экран.
 
@@ -611,7 +612,7 @@ CDockingManager* GetDockingManager();
 
 Указатель на [класс кдоккингманажер](../../mfc/reference/cdockingmanager-class.md).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Окно фрейма создает и использует объект [класса кдоккингманажер](../../mfc/reference/cdockingmanager-class.md) для управления закреплением дочернего окна.
 
@@ -656,7 +657,7 @@ CMFCRibbonBar* GetRibbonBar();
 
 Указатель на [класс CMFCRibbonBar](../../mfc/reference/cmfcribbonbar-class.md) для рамки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexgettearoffbars"></a><a name="gettearoffbars"></a> CFrameWndEx:: Жеттеароффбарс
 
@@ -692,7 +693,7 @@ virtual BOOL GetToolbarButtonToolTipText(
 
 Значение TRUE, если подсказка отображается. В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию этот метод не выполняет никаких действий. Переопределите этот метод, если нужно отобразить подсказку для кнопки панели инструментов.
 
@@ -722,7 +723,7 @@ BOOL InsertPane(
 
 Значение TRUE, если панель управления успешно вставлена и зарегистрирована; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Каждую панель элементов управления, которая должна использоваться в макете закрепления, нужно зарегистрировать с помощью [CDockingManager Class](../../mfc/reference/cdockingmanager-class.md) .
 
@@ -738,7 +739,7 @@ BOOL IsFullScreen() const;
 
 Значение TRUE, если окно фрейма находится в полноэкранном режиме; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Можно задать полноэкранный режим, вызвав метод [CFrameWndEx:: енаблефуллскринмоде](#enablefullscreenmode) .
 
@@ -780,7 +781,7 @@ BOOL IsPointNearDockSite(
 
 Значение TRUE, если точка расположена в зоне выравнивания; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В следующей таблице перечислены возможные значения для параметра *двбаралигнмент* .
 
@@ -803,7 +804,7 @@ BOOL IsPrintPreview();
 
 Значение TRUE, если окно фрейма находится в режиме предварительного просмотра. в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexloadframe"></a><a name="loadframe"></a> CFrameWndEx:: Лоадфраме
 
@@ -835,7 +836,7 @@ virtual BOOL LoadFrame(
 
 Значение TRUE, если метод выполнен успешно; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexnegotiateborderspace"></a><a name="negotiateborderspace"></a> CFrameWndEx:: Неготиатебордерспаце
 
@@ -859,7 +860,7 @@ virtual BOOL NegotiateBorderSpace(
 
 Значение TRUE, если необходимо повторно вычислить макет. в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В следующей таблице перечислены возможные значения для параметра *нбордеркмд* .
 
@@ -894,7 +895,7 @@ afx_msg void OnActivate(
 *бминимизед*<br/>
 окне Минимальное состояние кадра. Значение TRUE, если кадр является сведенным; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В следующей таблице перечислены возможные значения для параметра *nсведения* .
 
@@ -922,7 +923,7 @@ afx_msg void OnActivateApp(
 *двсреадид*<br/>
 окне Этот параметр не используется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonchangevisualmanager"></a><a name="onchangevisualmanager"></a> CFrameWndEx:: Ончанжевисуалманажер
 
@@ -946,7 +947,7 @@ afx_msg LRESULT OnChangeVisualManager(
 
 Всегда возвращает 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonclose"></a><a name="onclose"></a> CFrameWndEx:: OnClose
 
@@ -956,7 +957,7 @@ afx_msg LRESULT OnChangeVisualManager(
 afx_msg void OnClose();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если кадр находится в режиме предварительного просмотра, он отправляет сообщение Windows, чтобы закрыть предварительный просмотр. в противном случае, если в кадре размещен OLE-клиент, клиент деактивируется.
 
@@ -972,7 +973,7 @@ virtual BOOL OnCloseDockingPane(CDockablePane* pPane);
 
 Значение TRUE, если закрепляемую строку можно закрыть. FALSE в противном случае
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию не выполняет никаких действий. Переопределите этот метод, если требуется обойти скрытие закрепляемой панели.
 
@@ -988,7 +989,7 @@ virtual BOOL OnCloseMiniFrame(CPaneFrameWnd* pWnd);
 
 Значение TRUE, если плавающее окно может быть закрыто. В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию не выполняет никаких действий. Переопределите этот метод, если нужно обработать скрытие плавающего окна мини-фрейма.
 
@@ -1005,7 +1006,7 @@ virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
 *пменупопуп*<br/>
 Указатель на всплывающее меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Платформа отправляет WM_DESTROY сообщение, когда закрывает окно. Переопределите этот метод, если требуется обрабатывать уведомления от `CMFCPopupMenu` объектов, принадлежащих окну фрейма, когда `CMFCPopupMenu` объект обрабатывает сообщение WM_DESTROY, отправленное платформой при закрытии окна.
 
@@ -1039,7 +1040,7 @@ virtual BOOL OnCmdMsg(
 
 Значение TRUE, если командное сообщение было обработано; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexoncontexthelp"></a><a name="oncontexthelp"></a> CFrameWndEx:: Онконтексселп
 
@@ -1049,7 +1050,7 @@ virtual BOOL OnCmdMsg(
 afx_msg void OnContextHelp();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexoncreate"></a><a name="oncreate"></a> CFrameWndEx:: OnCreate
 
@@ -1068,7 +1069,7 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 
 0, чтобы продолжить создание кадра; значение-1, чтобы уничтожить кадр.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexondestroy"></a><a name="ondestroy"></a> CFrameWndEx:: OnDestroy
 
@@ -1078,7 +1079,7 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 afx_msg void OnDestroy();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Таблица сочетаний клавиш и все окна уничтожаются.
 
@@ -1108,7 +1109,7 @@ virtual BOOL OnDrawMenuImage(
 
 Значение TRUE, если платформа успешно подготавливает к просмотру образ; В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод, если требуется настроить отрисовку изображения для пунктов меню, принадлежащих к строке меню, принадлежащей `CFrameWndEx` производному объекту.
 
@@ -1134,7 +1135,7 @@ virtual void OnDrawMenuLogo(
 *ректлого*<br/>
 окне Ссылка на константную `CRect` структуру, указывающую расположение экрана и размер эмблемы меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите эту функцию, если нужно отобразить эмблему во всплывающем меню, принадлежащем строке меню, принадлежащей `CFrameWndEx` производному объекту.
 
@@ -1160,7 +1161,7 @@ afx_msg LRESULT OnDWMCompositionChanged(
 
 Всегда возвращает 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonexitsizemove"></a><a name="onexitsizemove"></a> CFrameWndEx:: Онекситсиземове
 
@@ -1184,7 +1185,7 @@ LRESULT OnExitSizeMove(
 
 Всегда возвращает 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexongetminmaxinfo"></a><a name="ongetminmaxinfo"></a> CFrameWndEx:: Онжетминмаксинфо
 
@@ -1199,7 +1200,7 @@ afx_msg void OnGetMinMaxInfo(MINMAXINFO FAR* lpMMI);
 *лпмми*<br/>
 окне Указатель на структуру [минмаксинфо](/windows/win32/api/winuser/ns-winuser-minmaxinfo) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonidleupdatecmdui"></a><a name="onidleupdatecmdui"></a> CFrameWndEx:: Онидлеупдатекмдуи
 
@@ -1223,7 +1224,7 @@ afx_msg LRESULT OnIdleUpdateCmdUI(
 
 Всегда возвращает 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonlbuttondown"></a><a name="onlbuttondown"></a> CFrameWndEx:: Онлбуттондовн
 
@@ -1243,7 +1244,7 @@ afx_msg void OnLButtonDown(
 *точки*<br/>
 окне Задает координаты x и y указателя, относительно левого верхнего угла окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonlbuttonup"></a><a name="onlbuttonup"></a> CFrameWndEx:: Онлбуттонуп
 
@@ -1263,7 +1264,7 @@ afx_msg void OnLButtonUp(
 *точки*<br/>
 окне Задает координаты x и y указателя, относительно левого верхнего угла окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonmenubuttontoolhittest"></a><a name="onmenubuttontoolhittest"></a> CFrameWndEx:: Онменубуттонтулхиттест
 
@@ -1287,7 +1288,7 @@ virtual BOOL OnMenuButtonToolHitTest(
 
 Значение TRUE, если приложение заполняет параметр *Пти* . В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод, если требуется предоставить сведения о конкретном элементе меню в подсказке.
 
@@ -1341,7 +1342,7 @@ afx_msg void OnMouseMove(
 *точки*<br/>
 окне Задает координаты x и y указателя относительно левого верхнего угла окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonmoveminiframe"></a><a name="onmoveminiframe"></a> CFrameWndEx:: Онмовеминифраме
 
@@ -1360,7 +1361,7 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 
 Значение TRUE, если окно панели не закреплено; Значение FALSE, если окно панели было закреплено.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonncactivate"></a><a name="onncactivate"></a> CFrameWndEx:: Оннкактивате
 
@@ -1379,7 +1380,7 @@ afx_msg BOOL OnNcActivate(BOOL bActive);
 
 Ненулевое значение для продолжения обработки по умолчанию; 0, чтобы предотвратить деактивацию неклиентской области.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonnccalcsize"></a><a name="onnccalcsize"></a> CFrameWndEx:: Оннккалксизе
 
@@ -1399,7 +1400,7 @@ afx_msg void OnNcCalcSize(
 *лпнксп*<br/>
 окне Указатель на `NCCALCSIZE_PARAMS` структуру, содержащую изменения измерения кадра.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonnchittest"></a><a name="onnchittest"></a> CFrameWndEx:: Оннчиттест
 
@@ -1418,7 +1419,7 @@ afx_msg LRESULT OnNcHitTest(CPoint point);
 
 Значение, перечисленное при нажатии указателя. Список возможных значений см. в разделе [уведомление WM_NCHITTEST](/windows/win32/inputdev/wm-nchittest).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonncmousemove"></a><a name="onncmousemove"></a> CFrameWndEx:: Оннкмаусемове
 
@@ -1438,7 +1439,7 @@ afx_msg void OnNcMouseMove(
 *точки*<br/>
 окне Расположение указателя в экранных координатах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonncpaint"></a><a name="onncpaint"></a> CFrameWndEx:: Оннкпаинт
 
@@ -1448,7 +1449,7 @@ afx_msg void OnNcMouseMove(
 afx_msg void OnNcPaint();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonpanecheck"></a><a name="onpanecheck"></a> CFrameWndEx:: Онпанечекк
 
@@ -1467,7 +1468,7 @@ afx_msg BOOL OnPaneCheck(UINT nID);
 
 Значение TRUE, если команда была обработана; Значение FALSE, чтобы продолжить обработку команд.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonpostpreviewframe"></a><a name="onpostpreviewframe"></a> CFrameWndEx:: Онпостпревиевфраме
 
@@ -1491,7 +1492,7 @@ afx_msg LRESULT OnPostPreviewFrame(
 
 Всегда возвращает 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonpowerbroadcast"></a><a name="onpowerbroadcast"></a> CFrameWndEx:: Онповерброадкаст
 
@@ -1515,7 +1516,7 @@ afx_msg LRESULT OnPowerBroadcast(
 
 Результат вызова процедуры окна по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonsetmenu"></a><a name="onsetmenu"></a> CFrameWndEx:: Онсетмену
 
@@ -1546,7 +1547,7 @@ LRESULT является результатом вызова процедуры 
 
 Логическое значение TRUE, если событие было обработано; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonsetpreviewmode"></a><a name="onsetpreviewmode"></a> CFrameWndEx:: Онсетпревиевмоде
 
@@ -1566,7 +1567,7 @@ virtual void OnSetPreviewMode(
 *пстате*<br/>
 окне Указатель на `CPrintPreviewState` структуру состояния кадра.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonsettext"></a><a name="onsettext"></a> CFrameWndEx:: Онсеттекст
 
@@ -1590,7 +1591,7 @@ afx_msg LRESULT OnSetText(
 
 Возвращаемое значение из вызова [дефвиндовпрок](/windows/win32/api/winuser/nf-winuser-defwindowprocw).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonshowcustomizepane"></a><a name="onshowcustomizepane"></a> CFrameWndEx:: Оншовкустомизепане
 
@@ -1614,7 +1615,7 @@ virtual BOOL OnShowCustomizePane(
 
 Этот метод всегда возвращает значение TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Меню быстрой настройки — это всплывающее меню, которое появляется при нажатии кнопки Настройка на панели инструментов.
 
@@ -1635,7 +1636,7 @@ virtual BOOL OnShowPanes(BOOL bShow);
 
 Этот метод всегда возвращает значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию показывает панели, если *бшов* имеет значение true и панели скрыты или если *БШОВ* имеет значение false и панели видимы.
 
@@ -1660,7 +1661,7 @@ virtual BOOL OnShowPopupMenu(CMFCPopupMenu* pMenu);
 
 Значение TRUE, если всплывающее меню видимое; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном классе для выполнения пользовательского кода, когда платформа отображает всплывающее меню. Например, Переопределите этот метод, чтобы изменить цвет фона команд во всплывающем меню.
 
@@ -1686,7 +1687,7 @@ afx_msg void OnSize(
 *CY*<br/>
 окне Новая высота кадра (в пикселях).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonsizing"></a><a name="onsizing"></a> CFrameWndEx:: onsizing
 
@@ -1706,7 +1707,7 @@ afx_msg void OnSizing(
 *прект*<br/>
 [вход, выход] Указатель на структуру [крект](../../atl-mfc-shared/reference/crect-class.md) или [Rect](/windows/win32/api/windef/ns-windef-rect) , содержащую координаты кадра.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonsyscolorchange"></a><a name="onsyscolorchange"></a> CFrameWndEx:: Онсисколорчанже
 
@@ -1716,7 +1717,7 @@ afx_msg void OnSizing(
 void OnSysColorChange();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexontearoffmenu"></a><a name="ontearoffmenu"></a> CFrameWndEx:: Онтеароффмену
 
@@ -1740,7 +1741,7 @@ virtual BOOL OnTearOffMenu(
 
 Значение TRUE, если всплывающее меню с панелью отрыва включено. в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном классе для выполнения пользовательского кода, когда платформа отображает панель элементов управления.
 
@@ -1768,7 +1769,7 @@ afx_msg LRESULT OnToolbarContextMenu(
 
 Всегда возвращает 1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexontoolbarcreatenew"></a><a name="ontoolbarcreatenew"></a> CFrameWndEx:: Онтулбаркреатенев
 
@@ -1792,7 +1793,7 @@ afx_msg LRESULT OnToolbarCreateNew(
 
 Указатель на новую панель инструментов; или значение NULL, если панель инструментов не была создана.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexontoolbardelete"></a><a name="ontoolbardelete"></a> CFrameWndEx:: Онтулбарделете
 
@@ -1816,7 +1817,7 @@ afx_msg LRESULT OnToolbarDelete(
 
 Значение TRUE, если панель инструментов была удалена; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonupdateframemenu"></a><a name="onupdateframemenu"></a> CFrameWndEx:: Онупдатефрамемену
 
@@ -1831,7 +1832,7 @@ virtual void OnUpdateFrameMenu(HMENU hMenuAlt);
 *хменуалт*<br/>
 окне Обработайте с альтернативным меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonupdateframetitle"></a><a name="onupdateframetitle"></a> CFrameWndEx:: Онупдатефраметитле
 
@@ -1846,7 +1847,7 @@ virtual void OnUpdateFrameTitle(BOOL bAddToTitle);
 *баддтотитле*<br/>
 окне Значение TRUE, чтобы добавить заголовок активного документа в заголовок окна фрейма; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonupdatepanemenu"></a><a name="onupdatepanemenu"></a> CFrameWndEx:: Онупдатепанемену
 
@@ -1861,7 +1862,7 @@ afx_msg void OnUpdatePaneMenu(CCmdUI* pCmdUI);
 *пкмдуи*<br/>
 окне Указатель на объект пользовательского интерфейса панели.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexonwindowposchanged"></a><a name="onwindowposchanged"></a> CFrameWndEx:: Онвиндовпосчанжед
 
@@ -1876,7 +1877,7 @@ afx_msg void OnWindowPosChanged(WINDOWPOS FAR* lpwndpos);
 *лпвндпос*<br/>
 окне Указатель на структуру [WINDOWPOS](/windows/win32/api/winuser/ns-winuser-windowpos) , которая содержит новый размер и расположение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexpanefrompoint"></a><a name="panefrompoint"></a> CFrameWndEx::P Анефромпоинт
 
@@ -1917,9 +1918,9 @@ CBasePane* PaneFromPoint(
 
 Указатель на панель элементов управления, содержащую *точку*; Значение NULL, если элемент управления не найден.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод выполняет поиск *точки*во всех панелях управления в приложении.
+Этот метод выполняет поиск *точки* во всех панелях управления в приложении.
 
 Используйте *нсенситивити* , чтобы увеличить размер области поиска. Используйте *прткбартипе* , чтобы ограничить типы панелей элементов управления, которые выполняет поиск метода.
 
@@ -1940,7 +1941,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 Ненулевое значение, если сообщение было обработано и не должно быть отправлено. 0, если сообщение не было обработано и должно быть отправлено.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexrecalclayout"></a><a name="recalclayout"></a> CFrameWndEx:: RecalcLayout
 
@@ -1955,7 +1956,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 *бнотифи*<br/>
 окне Указывает, следует ли уведомлять элемент клиента OLE об изменении макета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывается при изменении размера фрейма окна или при отображении или скрытии панелей управления.
 
@@ -1989,7 +1990,7 @@ void RemovePaneFromDockManager(
 *пбарреплацемент*<br/>
 окне Указатель на панель, которая заменяет удаленную панель.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод используется для удаления панели элементов управления из макета закрепления окна фрейма.
 
@@ -2021,7 +2022,7 @@ void SetPrintPreviewFrame(CFrameWnd* pWnd);
 *Приводится*<br/>
 окне Указатель на окно предварительного просмотра фрейма.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexsetuptoolbarmenu"></a><a name="setuptoolbarmenu"></a> CFrameWndEx:: Сетуптулбармену
 
@@ -2045,7 +2046,7 @@ void SetupToolbarMenu(
 *уивиевусертулбаркмдласт*<br/>
 окне Последняя определяемая пользователем команда.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Платформа сохраняет определяемые пользователем команды в списке. Используйте *уивиевусертулбаркмдфирст* и *уивиевусертулбаркмдлист* , чтобы указать индексы команд для вставки.
 
@@ -2091,7 +2092,7 @@ void ShowPane(
 void UpdateCaption();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cframewndexwinhelp"></a><a name="winhelp"></a> CFrameWndEx:: WinHelp
 
@@ -2111,7 +2112,7 @@ virtual void WinHelp(
 *нкмд*<br/>
 Команда Help. Список возможных значений см. в разделе [WinHelp](/windows/win32/api/winuser/nf-winuser-winhelpw).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="see-also"></a>См. также раздел
 

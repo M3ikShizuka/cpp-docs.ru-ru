@@ -1,5 +1,6 @@
 ---
-title: Класс CFontHolder
+description: 'Дополнительные сведения о: Кфонсолдер Class'
+title: Класс Кфонсолдер
 ms.date: 11/04/2016
 f1_keywords:
 - CFontHolder
@@ -26,14 +27,14 @@ helpviewer_keywords:
 - CFontHolder [MFC], SetFont
 - CFontHolder [MFC], m_pFont
 ms.assetid: 728ab472-0c97-440d-889f-1324c6e1b6b8
-ms.openlocfilehash: 36fbebc39101c5534bd52d4f79fee5286487a6e0
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 1670bd9a00c5b6f7990c15ba31d7256afb8d4031
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754995"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184300"
 ---
-# <a name="cfontholder-class"></a>Класс CFontHolder
+# <a name="cfontholder-class"></a>Класс Кфонсолдер
 
 Реализует свойство Font и инкапсулирует функциональность объекта шрифта Windows и интерфейса `IFont` .
 
@@ -43,38 +44,38 @@ ms.locfileid: "81754995"
 class CFontHolder
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CFontHolder::CFontHolder](#cfontholder)|Формирует объект `CFontHolder`.|
+|[Кфонсолдер:: Кфонсолдер](#cfontholder)|Формирует объект `CFontHolder`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CFontHolder::GetDisplayString](#getdisplaystring)|Извлекает строку, отображаемую в браузере свойств контейнера.|
-|[CFontHolder::GetFontDispatch](#getfontdispatch)|Возвращает интерфейс шрифта. `IDispatch`|
-|[CFontHolder::GetFontHandle](#getfonthandle)|Возвращает ручку шрифту Windows.|
-|[CFontHolder::InitializeFont](#initializefont)|Инициализирует объект `CFontHolder`.|
-|[CFontHolder::QueryTextMetrics](#querytextmetrics)|Извлекает информацию для связанного шрифта.|
-|[CFontHolder::ReleaseFont](#releasefont)|Отключает `CFontHolder` объект от `IFont` интерфейсов и `IFontNotification` интерфейсов.|
-|[CFontHolder::Выбрать](#select)|Выберите ресурс шрифта в контексте устройства.|
-|[CFontHolder::SetFont](#setfont)|Подключает `CFontHolder` объект `IFont` к интерфейсу.|
+|[Кфонсолдер:: Жетдисплайстринг](#getdisplaystring)|Извлекает строку, отображаемую в обозревателе свойств контейнера.|
+|[Кфонсолдер:: Жетфонтдиспатч](#getfontdispatch)|Возвращает `IDispatch` интерфейс шрифта.|
+|[Кфонсолдер:: Жетфонсандле](#getfonthandle)|Возвращает маркер для шрифта Windows.|
+|[Кфонсолдер:: Инитиализефонт](#initializefont)|Инициализирует объект `CFontHolder`.|
+|[Кфонсолдер:: Куеритекстметрикс](#querytextmetrics)|Получает сведения для связанного шрифта.|
+|[Кфонсолдер:: Релеасефонт](#releasefont)|Отключает `CFontHolder` объект от `IFont` `IFontNotification` интерфейсов и.|
+|[Кфонсолдер:: SELECT](#select)|Выбирает ресурс шрифта в контексте устройства.|
+|[Кфонсолдер:: Сетфонт](#setfont)|Подключает `CFontHolder` объект к `IFont` интерфейсу.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CFontHolder:::m_pFont](#m_pfont)|Указатель `IFont` на `CFontHolder` интерфейс объекта.|
+|[Кфонсолдер:: m_pFont](#m_pfont)|Указатель на `CFontHolder` `IFont` интерфейс объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CFontHolder`не имеет базового класса.
+`CFontHolder` не имеет базового класса.
 
-Используйте этот класс для реализации пользовательских свойств шрифта для управления. Для получения информации о создании [ActiveX Controls: Using Fonts](../../mfc/mfc-activex-controls-using-fonts.md)таких свойств см.
+Этот класс используется для реализации настраиваемых свойств шрифта для элемента управления. Сведения о создании таких свойств см. в статье [элементы управления ActiveX: использование шрифтов](../../mfc/mfc-activex-controls-using-fonts.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -82,9 +83,9 @@ class CFontHolder
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxctl.h
+**Заголовок:** afxctl. h
 
-## <a name="cfontholdercfontholder"></a><a name="cfontholder"></a>CFontHolder::CFontHolder
+## <a name="cfontholdercfontholder"></a><a name="cfontholder"></a> Кфонсолдер:: Кфонсолдер
 
 Формирует объект `CFontHolder`.
 
@@ -94,16 +95,16 @@ explicit CFontHolder(LPPROPERTYNOTIFYSINK pNotify);
 
 ### <a name="parameters"></a>Параметры
 
-*pNotify*<br/>
-Указатель на интерфейс `IPropertyNotifySink` шрифта.
+*пнотифи*<br/>
+Указатель на `IPropertyNotifySink` интерфейс шрифта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Перед его `InitializeFont` использованием необходимо позвонить, чтобы инициализировать полученный объект.
+Необходимо вызвать метод `InitializeFont` , чтобы инициализировать полученный объект перед его использованием.
 
-## <a name="cfontholdergetdisplaystring"></a><a name="getdisplaystring"></a>CFontHolder::GetDisplayString
+## <a name="cfontholdergetdisplaystring"></a><a name="getdisplaystring"></a> Кфонсолдер:: Жетдисплайстринг
 
-Извлекает строку, которая может отображаться в браузере свойств контейнера.
+Извлекает строку, которая может быть отображена в браузере свойств контейнера.
 
 ```
 BOOL GetDisplayString(CString& strValue);
@@ -112,15 +113,15 @@ BOOL GetDisplayString(CString& strValue);
 ### <a name="parameters"></a>Параметры
 
 *strValue*<br/>
-Ссылка на [CString,](../../atl-mfc-shared/reference/cstringt-class.md) которая должна удерживать строку дисплея.
+Ссылка на [CString](../../atl-mfc-shared/reference/cstringt-class.md) , который будет содержать отображаемую строку.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если строка успешно извлечена; в противном случае 0.
+Ненулевое значение, если строка успешно получена; в противном случае — 0.
 
-## <a name="cfontholdergetfontdispatch"></a><a name="getfontdispatch"></a>CFontHolder::GetFontDispatch
+## <a name="cfontholdergetfontdispatch"></a><a name="getfontdispatch"></a> Кфонсолдер:: Жетфонтдиспатч
 
-Вызов исправьте эту функцию, чтобы получить указатель на интерфейс отправки шрифта.
+Вызовите эту функцию, чтобы получить указатель на интерфейс диспетчеризации шрифта.
 
 ```
 LPFONTDISP GetFontDispatch();
@@ -128,15 +129,15 @@ LPFONTDISP GetFontDispatch();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель `IFontDisp` на `CFontHolder` интерфейс объекта. Обратите внимание, что `GetFontDispatch` функция, вызываемый вызовами, должна вызывать `IUnknown::Release` этот указатель интерфейса, когда она будет сделана с ней.
+Указатель на `CFontHolder` `IFontDisp` интерфейс объекта. Обратите внимание, что функция, которая вызывает метод, `GetFontDispatch` должна вызывать `IUnknown::Release` для этого указателя интерфейса, когда это делается с ним.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Позвоните `InitializeFont` `GetFontDispatch`перед вызовом .
+Вызов `InitializeFont` перед вызовом `GetFontDispatch` .
 
-## <a name="cfontholdergetfonthandle"></a><a name="getfonthandle"></a>CFontHolder::GetFontHandle
+## <a name="cfontholdergetfonthandle"></a><a name="getfonthandle"></a> Кфонсолдер:: Жетфонсандле
 
-Вызовите эту функцию, чтобы получить ручку для шрифта Windows.
+Вызовите эту функцию, чтобы получить маркер для шрифта Windows.
 
 ```
 HFONT GetFontHandle();
@@ -148,25 +149,25 @@ HFONT GetFontHandle(
 
 ### <a name="parameters"></a>Параметры
 
-*cyLogical*<br/>
-Высота, в логических единицах, прямоугольника, в котором элемент управления обращается.
+*цилогикал*<br/>
+Высота прямоугольника, в котором рисуется элемент управления, в логических единицах.
 
-*цихиметрические*<br/>
-Высота, в MM_HIMETRIC единицах, управления.
+*цихиметрик*<br/>
+Высота элемента управления в MM_HIMETRIC единицах.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Ручка к объекту шрифта; в противном случае NULL.
+Маркер объекта Font; в противном случае — NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Соотношение *cyLogical* и *cyHimetric* используется для расчета правильного размера дисплея, в логических единицах, для размера точки шрифта, выраженного в MM_HIMETRIC единиц:
+Отношение *цилогикал* и *цихиметрик* используется для вычисления правильного размера отображения в логических единицах для размера кегля шрифта, выраженного в единицах MM_HIMETRIC:
 
-Размер дисплея - *(цилогический* / *цихиметрический*) размер шрифта X
+Размер дисплея = ( *цилогикал*  /  *цихиметрик*) X размер шрифта
 
-Версия без параметров возвращает ручку шрифту размером правильно для экрана.
+Версия без параметров возвращает маркер для правильного размера шрифта на экране.
 
-## <a name="cfontholderinitializefont"></a><a name="initializefont"></a>CFontHolder::InitializeFont
+## <a name="cfontholderinitializefont"></a><a name="initializefont"></a> Кфонсолдер:: Инитиализефонт
 
 Инициализирует объект `CFontHolder`.
 
@@ -178,31 +179,31 @@ void InitializeFont(
 
 ### <a name="parameters"></a>Параметры
 
-*pFontDesc*<br/>
-Указатель на структуру описания шрифта [(FONTDESC),](/windows/win32/api/olectl/ns-olectl-fontdesc)которая определяет характеристики шрифта.
+*пфонтдеск*<br/>
+Указатель на структуру описания шрифта ( [фонтдеск](/windows/win32/api/olectl/ns-olectl-fontdesc)), указывающую характеристики шрифта.
 
-*pFontDispАмбent*<br/>
-Указатель на свойство окружающего шрифта контейнера.
+*пфонтдиспамбиент*<br/>
+Указатель на свойство внешнего шрифта контейнера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если *pFontDispAmbient* не является `CFontHolder` NULL, объект подключен к `IFont` клону интерфейса, используемого свойством окружающего шрифта контейнера.
+Если *пфонтдиспамбиент* не равно null, `CFontHolder` объект подключается к клону интерфейса, `IFont` используемого свойством Font внешнего шрифта контейнера.
 
-Если *pFontDispAmbient* является NULL, новый объект шрифта создается либо из описания шрифта, на который указывает *pFontDesc,* либо, если *pFontDesc* является NULL, из описания по умолчанию.
+Если *пфонтдиспамбиент* имеет значение null, создается новый объект Font либо из описания шрифта, на которое указывает *пфонтдеск* , либо, если *пфонтдеск* имеет значение null, из описания по умолчанию.
 
-Вызовите эту функцию после построения `CFontHolder` объекта.
+Вызовите эту функцию после создания `CFontHolder` объекта.
 
-## <a name="cfontholderm_pfont"></a><a name="m_pfont"></a>CFontHolder:::m_pFont
+## <a name="cfontholderm_pfont"></a><a name="m_pfont"></a> Кфонсолдер:: m_pFont
 
-Указатель `IFont` на `CFontHolder` интерфейс объекта.
+Указатель на `CFontHolder` `IFont` интерфейс объекта.
 
 ```
 LPFONT m_pFont;
 ```
 
-## <a name="cfontholderquerytextmetrics"></a><a name="querytextmetrics"></a>CFontHolder::QueryTextMetrics
+## <a name="cfontholderquerytextmetrics"></a><a name="querytextmetrics"></a> Кфонсолдер:: Куеритекстметрикс
 
-Извлекает информацию о физическом `CFontHolder` шрифте, представленном объектом.
+Получает сведения о физическом шрифте, представленном `CFontHolder` объектом.
 
 ```cpp
 void QueryTextMetrics(LPTEXTMETRIC lptm);
@@ -210,18 +211,18 @@ void QueryTextMetrics(LPTEXTMETRIC lptm);
 
 ### <a name="parameters"></a>Параметры
 
-*lptm*<br/>
-Указатель на структуру [TEXTMETRIC,](/windows/win32/api/wingdi/ns-wingdi-textmetricw) которая будет получать информацию.
+*лптм*<br/>
+Указатель на структуру [текстметрик](/windows/win32/api/wingdi/ns-wingdi-textmetricw) , которая будет принимать сведения.
 
-## <a name="cfontholderreleasefont"></a><a name="releasefont"></a>CFontHolder::ReleaseFont
+## <a name="cfontholderreleasefont"></a><a name="releasefont"></a> Кфонсолдер:: Релеасефонт
 
-Эта функция отключает `CFontHolder` объект `IFont` от интерфейса.
+Эта функция отключает `CFontHolder` объект от своего `IFont` интерфейса.
 
 ```cpp
 void ReleaseFont();
 ```
 
-## <a name="cfontholderselect"></a><a name="select"></a>CFontHolder::Выбрать
+## <a name="cfontholderselect"></a><a name="select"></a> Кфонсолдер:: SELECT
 
 Вызовите эту функцию, чтобы выбрать шрифт элемента управления в указанном контексте устройства.
 
@@ -234,26 +235,26 @@ CFont* Select(
 
 ### <a name="parameters"></a>Параметры
 
-*pDC*<br/>
-Контекст устройства, в который выбран шрифт.
+*Хозяин*<br/>
+Контекст устройства, в котором выбран шрифт.
 
-*cyLogical*<br/>
-Высота, в логических единицах, прямоугольника, в котором элемент управления обращается.
+*цилогикал*<br/>
+Высота прямоугольника, в котором рисуется элемент управления, в логических единицах.
 
-*цихиметрические*<br/>
-Высота, в MM_HIMETRIC единицах, управления.
+*цихиметрик*<br/>
+Высота элемента управления в MM_HIMETRIC единицах.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Указатель на заменяемый шрифт.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Смотрите [GetFontHandle](#getfonthandle) для обсуждения *циклических* и *цихиметрических* параметров.
+Описание параметров *цилогикал* и *цихиметрик* см. в разделе [жетфонсандле](#getfonthandle) .
 
-## <a name="cfontholdersetfont"></a><a name="setfont"></a>CFontHolder::SetFont
+## <a name="cfontholdersetfont"></a><a name="setfont"></a> Кфонсолдер:: Сетфонт
 
-Выпускает любой существующий `CFontHolder` шрифт и `IFont` соединяет объект с интерфейсом.
+Освобождает существующий шрифт и подключает `CFontHolder` объект к `IFont` интерфейсу.
 
 ```cpp
 void SetFont(LPFONT pNewFont);
@@ -261,10 +262,10 @@ void SetFont(LPFONT pNewFont);
 
 ### <a name="parameters"></a>Параметры
 
-*pNewFont*<br/>
-Указатель на `IFont` новый интерфейс.
+*пневфонт*<br/>
+Указатель на новый `IFont` интерфейс.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
-[Класс CPropExchange](../../mfc/reference/cpropexchange-class.md)
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
+[Класс Кпропексчанже](../../mfc/reference/cpropexchange-class.md)

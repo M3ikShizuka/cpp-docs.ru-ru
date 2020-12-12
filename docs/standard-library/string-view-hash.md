@@ -1,18 +1,19 @@
 ---
-title: string_view&gt;&lt;хэширования
+description: 'Дополнительные сведения: специализация хэш- &lt; string_view &gt;'
+title: Специализация хэш- &lt; string_view &gt;
 ms.date: 04/19/2019
 f1_keywords:
 - xstring/basic_string_view::hash
 helpviewer_keywords:
 - std::basic_string_view::hash
-ms.openlocfilehash: c7bddd5fcf9008b958854fd4d7b72ea2e94cba47
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: cf4012752bbd8b3531920e78d612e78479de4b3d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214959"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183689"
 ---
-# <a name="hashltstring_viewgt-specialization"></a>string_view&gt;&lt;хэширования
+# <a name="hashltstring_viewgt-specialization"></a>Специализация хэш- &lt; string_view &gt;
 
 Специализация шаблона, создающая хэш-значение с учетом string_view.
 
@@ -28,7 +29,7 @@ struct hash<basic_string_view<CharType, Traits>>
 };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Хэш string_view равен хэшу базового строкового объекта.
 

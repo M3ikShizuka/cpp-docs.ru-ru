@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: sync_none классе'
 title: Класс sync_none
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - stdext::sync_none [C++], deallocate
 - stdext::sync_none [C++], equals
 ms.assetid: f7473cee-14f3-4fe1-88bc-68cd085e59e1
-ms.openlocfilehash: dac4dc1182de32af485d37a00ff96370ea8d8943
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 34c4f42962b1dc8b8dc58f07cd54384e049789a6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562120"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183351"
 ---
 # <a name="sync_none-class"></a>Класс sync_none
 
@@ -62,7 +63,7 @@ void *allocate(std::size_t count);
 *расчета*\
 Число выделяемых элементов в массиве.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает `cache.allocate(count)`, где `cache` — объект кэша.
 
@@ -82,7 +83,7 @@ void deallocate(void* ptr, std::size_t count);
 *расчета*\
 Количество объектов для освобождения из хранилища.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член вызывает `cache.deallocate(ptr, count)`, где `cache` представляет объект кэша.
 
@@ -106,8 +107,8 @@ bool equals(const sync<Cache>& Other) const;
 
 Функция – член всегда возвращает значение **`true`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [\<allocators>](../standard-library/allocators-header.md)

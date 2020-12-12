@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кфиле Class'
 title: Класс Кфиле
 ms.date: 06/12/2018
 f1_keywords:
@@ -60,12 +61,12 @@ helpviewer_keywords:
 - CFile [MFC], m_hFile
 - CFile [MFC], m_pTM
 ms.assetid: b2eb5757-d499-4e67-b044-dd7d1abaa0f8
-ms.openlocfilehash: 5be6a578fdd1d4e329c5b55d307d924a6c539e3d
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: edccd571edf3594d36679a6c4ed6e52df878a705
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042086"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184547"
 ---
 # <a name="cfile-class"></a>Класс Кфиле
 
@@ -77,7 +78,7 @@ ms.locfileid: "90042086"
 class CFile : public CObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -600,9 +601,9 @@ virtual BOOL Open(
 
 | `pError` | Произошла ошибка | Возвращаемое значение | Кфиликсцептион содержимое |
 |--|--|--|--|
-| NULL | Нет | true | Н/Д |
+| NULL | Нет | true | н/д |
 | PTR для `CFileException` | Нет | true | без изменений |
-| NULL | Да | FALSE | Н/Д |
+| NULL | Да | FALSE | н/д |
 | PTR для `CFileException` | Да | FALSE | инициализировано для описания ошибки |
 
 ### <a name="example"></a>Пример
@@ -757,7 +758,7 @@ void SeekToBegin();
 
 ### <a name="remarks"></a>Комментарии
 
-`SeekToBegin()` эквивалентно правилу `Seek( 0L, CFile::begin )`.
+`SeekToBegin()` равно `Seek( 0L, CFile::begin )`.
 
 ### <a name="example"></a>Пример
 
@@ -777,7 +778,7 @@ ULONGLONG SeekToEnd();
 
 ### <a name="remarks"></a>Комментарии
 
-`SeekToEnd()` эквивалентно правилу `CFile::Seek( 0L, CFile::end )`.
+`SeekToEnd()` равно `CFile::Seek( 0L, CFile::end )`.
 
 ### <a name="example"></a>Пример
 
@@ -844,7 +845,7 @@ static void PASCAL SetStatus(
 Строка, которая является путем к требуемому файлу. Путь может быть относительным или абсолютным и может содержать сетевое имя.
 
 *status*<br/>
-Буфер, содержащий новые сведения о состоянии. Вызовите `GetStatus` функцию члена для предзаполнения `CFileStatus` структуры текущими значениями, а затем внесите необходимые изменения. Если значение равно 0, соответствующий элемент состояния не обновляется. Описание структуры [GetStatus](#getstatus) см. в функции-члене-состоянии `CFileStatus` .
+Буфер, содержащий новые сведения о состоянии. Вызовите `GetStatus` функцию члена для предзаполнения `CFileStatus` структуры текущими значениями, а затем внесите необходимые изменения. Если значение равно 0, соответствующий элемент состояния не обновляется. Описание структуры [](#getstatus) см. в функции-члене-состоянии `CFileStatus` .
 
 *pTM*<br/>
 Указатель на объект CAtlTransactionManager.

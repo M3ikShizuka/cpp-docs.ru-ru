@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: sub_match классе'
 title: Класс sub_match
 ms.date: 09/10/2018
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - std::sub_match [C++], iterator
 - std::sub_match [C++], value_type
 ms.assetid: 804e2b9e-d16a-4c4c-ac60-024e0b2dd0e8
-ms.openlocfilehash: 57aa4ec366588f71f41a747a2dc5127f87ea2e2e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 683b0bc6cf73a44ce426d5dcab3cdf13221be66b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222203"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183403"
 ---
 # <a name="sub_match-class"></a>Класс sub_match
 
@@ -44,7 +45,7 @@ class sub_match
 *Двунаправленный*\
 Тип итератора для подстрок соответствия.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса описывает объект, обозначающий последовательность символов, соответствующих группе захвата в вызове [regex_match](../standard-library/regex-functions.md#regex_match) или для [regex_search](../standard-library/regex-functions.md#regex_search). Объекты типа [Класс match_results](../standard-library/match-results-class.md) содержат массив таких объектов, по одному для каждой группы записи в регулярном выражении, которое использовалось при поиске.
 
@@ -61,7 +62,7 @@ class sub_match
 |Имя типа|Описание|
 |-|-|
 |[difference_type](#difference_type)|Тип разницы итератора.|
-|[итераци](#iterator)|Тип итератора.|
+|[iterator](#iterator)|Тип итератора.|
 |[value_type](#value_type)|Тип элемента.|
 
 ### <a name="member-functions"></a>Функции элементов
@@ -137,7 +138,7 @@ compare(sub) == 0
 
 **Пространство имен:** std
 
-## <a name="sub_matchcompare"></a><a name="compare"></a>sub_match:: Compare
+## <a name="sub_matchcompare"></a><a name="compare"></a> sub_match:: Compare
 
 Сравнение подстроки и последовательности.
 
@@ -158,7 +159,7 @@ int compare(const value_type *ptr) const;
 *указатель*\
 Последовательность, оканчивающаяся нулевым символом, для сравнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция-член сравнивает совпадающую последовательность `[first, second)` с совпадающей последовательностью `[right.first, right.second)`. Вторая функция-член сравнивает совпадающую последовательность `[first, second)` с последовательностью символов `[right.begin(), right.end())`. Третья функция-член сравнивает совпадающую последовательность `[first, second)` с последовательностью символов `[right, right + std::char_traits<value_type>::length(right))`.
 
@@ -170,7 +171,7 @@ int compare(const value_type *ptr) const;
 
 в противном случае — положительное значение.
 
-## <a name="sub_matchdifference_type"></a><a name="difference_type"></a>sub_match::d ifference_type
+## <a name="sub_matchdifference_type"></a><a name="difference_type"></a> sub_match::d ifference_type
 
 Тип разницы итератора.
 
@@ -178,11 +179,11 @@ int compare(const value_type *ptr) const;
 typedef typename iterator_traits<BidIt>::difference_type difference_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Typedef является синонимом `iterator_traits<BidIt>::difference_type`.
 
-## <a name="sub_matchiterator"></a><a name="iterator"></a>sub_match:: итератор
+## <a name="sub_matchiterator"></a><a name="iterator"></a> sub_match:: итератор
 
 Тип итератора.
 
@@ -190,11 +191,11 @@ Typedef является синонимом `iterator_traits<BidIt>::difference_
 typedef BidIt iterator;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Typedef является синонимом параметра шаблона `Bidit`.
 
-## <a name="sub_matchlength"></a><a name="length"></a>sub_match:: Length
+## <a name="sub_matchlength"></a><a name="length"></a> sub_match:: Length
 
 Возвращает длину частичного совпадения.
 
@@ -202,11 +203,11 @@ Typedef является синонимом параметра шаблона `B
 difference_type length() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает длину совпадающей последовательности либо нуль, если последовательность не совпадает.
 
-## <a name="sub_matchmatched"></a><a name="matched"></a>sub_match:: сопоставлено
+## <a name="sub_matchmatched"></a><a name="matched"></a> sub_match:: сопоставлено
 
 Указывает, успешно ли выполнено сопоставление.
 
@@ -214,11 +215,11 @@ difference_type length() const;
 bool matched;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Элемент хранится только в том **`true`** случае, если группа захвата, связанная с **`*this`** , является частью сопоставления регулярного выражения.
 
-## <a name="sub_matchoperator-basic_stringltvalue_typegt"></a><a name="op_basic_string_lt_value_type_gt"></a>sub_match:: operator basic_string &lt; value_type&gt;
+## <a name="sub_matchoperator-basic_stringltvalue_typegt"></a><a name="op_basic_string_lt_value_type_gt"></a> sub_match:: operator basic_string &lt; value_type&gt;
 
 Приводит подстроку соответствия к строке.
 
@@ -226,11 +227,11 @@ bool matched;
 operator basic_string<value_type>() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Оператор-член возвращает `str()`.
 
-## <a name="sub_matchstr"></a><a name="str"></a>sub_match:: str
+## <a name="sub_matchstr"></a><a name="str"></a> sub_match:: str
 
 Преобразует подстроку в строку.
 
@@ -238,11 +239,11 @@ operator basic_string<value_type>() const;
 basic_string<value_type> str() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает значение `basic_string<value_type>(first, second)`.
 
-## <a name="sub_matchvalue_type"></a><a name="value_type"></a>sub_match:: value_type
+## <a name="sub_matchvalue_type"></a><a name="value_type"></a> sub_match:: value_type
 
 Тип элемента.
 
@@ -250,7 +251,7 @@ basic_string<value_type> str() const;
 typedef typename iterator_traits<BidIt>::value_type value_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Typedef является синонимом `iterator_traits<BidIt>::value_type`.
 
