@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кдаофиелдексчанже Class'
 title: Класс Кдаофиелдексчанже
 ms.date: 09/17/2019
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CDaoFieldExchange [MFC], m_nOperation
 - CDaoFieldExchange [MFC], m_prs
 ms.assetid: 350a663e-92ff-44ab-ad53-d94efa2e5823
-ms.openlocfilehash: 62e9d1917e2d1eea19b9e8db4b6c56b6ad25d9e9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 41389ca9f1f9321abc828f9625f1fef3e745054d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231836"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250911"
 ---
 # <a name="cdaofieldexchange-class"></a>Класс Кдаофиелдексчанже
 
@@ -33,25 +34,25 @@ DAO поддерживается в Office 2013. Версия DAO 3,6 являе
 class CDaoFieldExchange
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[Кдаофиелдексчанже:: Исвалидоператион](#isvalidoperation)|Возвращает ненулевое значение, если текущая операция подходит для типа обновляемого поля.|
 |[Кдаофиелдексчанже:: Сетфиелдтипе](#setfieldtype)|Указывает тип элемента данных набора записей — столбец или параметр, представленный всеми последовательными вызовами функций DFX до следующего вызова `SetFieldType` .|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Кдаофиелдексчанже:: m_nOperation](#m_noperation)|Операция DFX, выполняемая текущим вызовом `DoFieldExchange` функции члена набора записей.|
 |[Кдаофиелдексчанже:: m_prs](#m_prs)|Указатель на набор записей, для которого выполняются операции DFX.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CDaoFieldExchange`не имеет базового класса.
+`CDaoFieldExchange` не имеет базового класса.
 
 Этот класс используется при написании подпрограмм обмена данными для пользовательских типов данных. в противном случае вы не будете использовать этот класс напрямую. DFX обменивается данными между элементами данных поля объекта [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) и соответствующими полями текущей записи в источнике данных. DFX управляет обменом в обоих направлениях: от источника данных до источника данных. Сведения о написании пользовательских подпрограмм с DFX см. в [техническом примечании 53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md) .
 
@@ -61,11 +62,11 @@ class CDaoFieldExchange
 > [!NOTE]
 > Обмен полями записей DAO очень похож на обмен полями записи (RFX) в MFC-основанных на ODBC классах баз данных ( `CDatabase` , `CRecordset` ). Если вы понимаете RFX, вы сможете легко использовать DFX.
 
-`CDaoFieldExchange`Объект предоставляет сведения о контексте, необходимые для обмена полями записей DAO. `CDaoFieldExchange`объекты поддерживают ряд операций, включая параметры привязки и элементы данных полей, а также задание различных флагов для полей текущей записи. Неdfx операции выполняются с членами данных класса набора записей типов, определенных **`enum`** **FieldType** в `CDaoFieldExchange` . Возможные значения **FieldType** :
+`CDaoFieldExchange`Объект предоставляет сведения о контексте, необходимые для обмена полями записей DAO. `CDaoFieldExchange` объекты поддерживают ряд операций, включая параметры привязки и элементы данных полей, а также задание различных флагов для полей текущей записи. Неdfx операции выполняются с членами данных класса набора записей типов, определенных **`enum`** **FieldType** в `CDaoFieldExchange` . Возможные значения **FieldType** :
 
-- `CDaoFieldExchange::outputColumn`для элементов данных полей.
+- `CDaoFieldExchange::outputColumn` для элементов данных полей.
 
-- `CDaoFieldExchange::param`для элементов данных параметров.
+- `CDaoFieldExchange::param` для элементов данных параметров.
 
 Функция-член [исвалидоператион](#isvalidoperation) предназначена для написания собственных пользовательских подпрограмм DFX. Часто вы будете использовать [сетфиелдтипе](#setfieldtype) в функциях [CDaoRecordset::D офиелдексчанже](../../mfc/reference/cdaorecordset-class.md#dofieldexchange) . Дополнительные сведения о неdfx глобальных функциях см. в статье [функции обмена полями записи](../../mfc/reference/record-field-exchange-functions.md). Дополнительные сведения о написании настраиваемых подпрограмм DFX для собственных типов данных см. в [техническом примечании 53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md).
 
@@ -77,7 +78,7 @@ class CDaoFieldExchange
 
 **Заголовок:** афксдао. h
 
-## <a name="cdaofieldexchangeisvalidoperation"></a><a name="isvalidoperation"></a>Кдаофиелдексчанже:: Исвалидоператион
+## <a name="cdaofieldexchangeisvalidoperation"></a><a name="isvalidoperation"></a> Кдаофиелдексчанже:: Исвалидоператион
 
 При написании собственной функции DFX вызовите `IsValidOperation` в начале функции, чтобы определить, может ли текущая операция выполняться над определенным типом элемента данных поля ( `CDaoFieldExchange::outputColumn` или `CDaoFieldExchange::param` ).
 
@@ -89,17 +90,17 @@ BOOL IsValidOperation();
 
 Ненулевое значение, если текущая операция подходит для типа обновляемого поля.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Некоторые операции, выполняемые методом DFX, применяются только к одному из возможных типов полей. Используйте модель существующих функций DFX.
 
 Дополнительные сведения о написании пользовательских подпрограмм DFX см. в [техническом примечании 53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md).
 
-## <a name="cdaofieldexchangem_noperation"></a><a name="m_noperation"></a>Кдаофиелдексчанже:: m_nOperation
+## <a name="cdaofieldexchangem_noperation"></a><a name="m_noperation"></a> Кдаофиелдексчанже:: m_nOperation
 
 Определяет операцию, которая должна быть выполнена с объектом [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) , связанным с объектом поля обмена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `CDaoFieldExchange`Объект предоставляет контекст для нескольких различных операций DFX в наборе записей.
 
@@ -126,13 +127,13 @@ BOOL IsValidOperation();
 |`DumpField`|Выводит содержимое поля (только для отладки).|
 |`MaxDFXOperation`|Используется для проверки входных данных.|
 
-## <a name="cdaofieldexchangem_prs"></a><a name="m_prs"></a>Кдаофиелдексчанже:: m_prs
+## <a name="cdaofieldexchangem_prs"></a><a name="m_prs"></a> Кдаофиелдексчанже:: m_prs
 
 Содержит указатель на объект [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) , связанный с `CDaoFieldExchange` объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cdaofieldexchangesetfieldtype"></a><a name="setfieldtype"></a>Кдаофиелдексчанже:: Сетфиелдтипе
+## <a name="cdaofieldexchangesetfieldtype"></a><a name="setfieldtype"></a> Кдаофиелдексчанже:: Сетфиелдтипе
 
 Вызовите метод `SetFieldType` в `CDaoRecordset` `DoFieldExchange` переопределении класса.
 
@@ -149,7 +150,7 @@ void SetFieldType(UINT nFieldType);
 
 - `CDaoFieldExchange::param`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Обычно ClassWizard записывает этот вызов. Если вы напишете собственную функцию и используете мастер для написания `DoFieldExchange` функции, добавьте вызовы собственной функции за пределами таблицы полей. Если мастер не используется, таблица полей не будет сопоставлена. Вызов предшествует вызовам DFX функций, по одному для каждого элемента данных поля класса, и определяет тип поля как `CDaoFieldExchange::outputColumn` .
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура Кдаоиндексфиелдинфо'
 title: Структура CDaoIndexFieldInfo
 ms.date: 09/17/2019
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - CDaoIndexFieldInfo structure [MFC]
 - DAO (Data Access Objects), Index Fields collection
 ms.assetid: 097ee8a6-83b1-4db7-8f05-d62a2deefe19
-ms.openlocfilehash: 10c786ef4fed9ecb3bbbb93526cd68a11e18d58c
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: fe2d6bef3ce44e7418474b7f2c004942935968c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74303626"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250794"
 ---
 # <a name="cdaoindexfieldinfo-structure"></a>Структура CDaoIndexFieldInfo
 
-Структура `CDaoIndexFieldInfo` содержит сведения об объекте поля индекса, определенном для объектов доступа к данным (DAO).
+`CDaoIndexFieldInfo`Структура содержит сведения об объекте поля индекса, определенном для объектов доступа к данным (DAO).
 
 DAO поддерживается в Office 2013. Версия DAO 3,6 является окончательной и считается устаревшей.
 
@@ -38,19 +39,19 @@ struct CDaoIndexFieldInfo
 *m_bDescending*<br/>
 Указывает порядок индексов, определенный объектом index. Значение TRUE, если порядок сортировки по убыванию.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Объект индекса может иметь несколько полей, указывающих, в каких полях будет индексироваться объект tabledef (или набор записей, основанный на таблице). Ссылки на основные выше сведения указывают, как данные возвращаются в `m_pFieldInfos` члене объекта [кдаоиндексинфо](../../mfc/reference/cdaoindexinfo-structure.md) , полученного путем вызова функции-члена `GetIndexInfo` класса [кдаотабледеф](../../mfc/reference/cdaotabledef-class.md#getindexinfo) или [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md#getindexinfo).
+Объект индекса может иметь несколько полей, указывающих, в каких полях будет индексироваться объект tabledef (или набор записей, основанный на таблице). Ссылки на приведенный выше источник указывают, как данные возвращаются в элементе `m_pFieldInfos` объекта [кдаоиндексинфо](../../mfc/reference/cdaoindexinfo-structure.md) , полученного путем вызова функции- `GetIndexInfo` члена класса [кдаотабледеф](../../mfc/reference/cdaotabledef-class.md#getindexinfo) или [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md#getindexinfo).
 
-Объекты индекса и объекты полей индекса не представлены классом MFC. Вместо этого объекты DAO базовых объектов MFC класса [кдаотабледеф](../../mfc/reference/cdaotabledef-class.md) или [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) содержат коллекцию объектов index, называемую коллекцией индексов. Каждый объект индекса, в свою очередь, содержит коллекцию объектов Field. Эти классы предоставляют функции-члены для доступа к отдельным элементам сведений об индексах или к ним можно обращаться сразу с помощью объекта `CDaoIndexInfo`, вызывая функцию-член `GetIndexInfo` содержащего объекта. Объект `CDaoIndexInfo`, затем содержит элемент данных `m_pFieldInfos`, указывающий на массив объектов `CDaoIndexFieldInfo`.
+Объекты индекса и объекты полей индекса не представлены классом MFC. Вместо этого объекты DAO базовых объектов MFC класса [кдаотабледеф](../../mfc/reference/cdaotabledef-class.md) или [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) содержат коллекцию объектов index, называемую коллекцией индексов. Каждый объект индекса, в свою очередь, содержит коллекцию объектов Field. Эти классы предоставляют функции-члены для доступа к отдельным элементам сведений об индексах или для доступа к ним с помощью `CDaoIndexInfo` объекта путем вызова функции- `GetIndexInfo` члена содержащего его объекта. `CDaoIndexInfo`Затем объект содержит элемент данных, `m_pFieldInfos` указывающий на массив `CDaoIndexFieldInfo` объектов.
 
-Вызовите функцию-член `GetIndexInfo` содержащего объекта tabledef или Recordset, в коллекции индексов которого хранится объект индекса, который вас интересует. Затем перейдите к элементу `m_pFieldInfos` объекта [кдаоиндексинфо](../../mfc/reference/cdaoindexinfo-structure.md) . Длина массива `m_pFieldInfos` хранится в `m_nFields`. `CDaoIndexFieldInfo` также определяет функцию-член `Dump` в отладочных сборках. Для дампа содержимого объекта `CDaoIndexFieldInfo` можно использовать `Dump`.
+Вызовите `GetIndexInfo` функцию-член содержащего объекта tabledef или Recordset, в коллекции индексов которого хранится объект индекса, который вас интересует. Затем получите доступ к `m_pFieldInfos` члену объекта [кдаоиндексинфо](../../mfc/reference/cdaoindexinfo-structure.md) . Длина `m_pFieldInfos` массива хранится в `m_nFields` . `CDaoIndexFieldInfo` также определяет `Dump` функцию-член в отладочных сборках. Можно использовать `Dump` для дампа содержимого `CDaoIndexFieldInfo` объекта.
 
 ## <a name="requirements"></a>Требования
 
 **Заголовок:** афксдао. h
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Структуры, стили, обратные вызовы и схемы сообщений](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [Кдаотабледеф:: Жетиндексинфо](../../mfc/reference/cdaotabledef-class.md#getindexinfo)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: HStringReference Class'
 title: Класс HStringReference
 ms.date: 07/15/2019
 ms.topic: reference
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HStringReference::operator!= operator
 - Microsoft::WRL::Wrappers::HStringReference::operator< operator
 ms.assetid: 9bf823b1-17eb-4ac4-8c5d-27d27c7a4150
-ms.openlocfilehash: 871696f4a970b1ef9d1f5d36d2e17184b93c9e8b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d1a45eadd258ba6e17c26cc86aa362011d08ab8f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212986"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249845"
 ---
 # <a name="hstringreference-class"></a>Класс HStringReference
 
@@ -47,7 +48,7 @@ class HStringReference;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-name                                                    | Описание:
+name                                                    | Описание
 ------------------------------------------------------- | -----------------------------------------------------------
 [HStringReference:: HStringReference](#hstringreference) | Инициализирует новый экземпляр класса `HStringReference`.
 
@@ -61,7 +62,7 @@ name                                                    | Описание:
 
 ### <a name="public-operators"></a>Открытые операторы
 
-Имя                                                  | Описание:
+Имя                                                  | Описание
 ----------------------------------------------------- | ----------------------------------------------------------------------------------------------
 [HStringReference:: operator =](#operator-assign)       | Перемещает значение другого `HStringReference` объекта в текущий `HStringReference` объект.
 [HStringReference:: operator = =](#operator-equality)    | Указывает, равны ли два параметра.
@@ -78,7 +79,7 @@ name                                                    | Описание:
 
 **Пространство имен:** Программы Microsoft:: WRL:: оболочки
 
-## <a name="hstringreferencecopyto"></a><a name="copyto"></a>HStringReference:: CopyTo
+## <a name="hstringreferencecopyto"></a><a name="copyto"></a> HStringReference:: CopyTo
 
 Копирует текущий `HStringReference` объект в объект HString.
 
@@ -93,11 +94,11 @@ HRESULT CopyTo(
 *str*<br/>
 HSTRING, который получает копию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывает функцию [виндовсдупликатестринг](/windows/win32/api/winstring/nf-winstring-windowsduplicatestring) .
 
-## <a name="hstringreferenceget"></a><a name="get"></a>HStringReference:: Get
+## <a name="hstringreferenceget"></a><a name="get"></a> HStringReference:: Get
 
 Получает значение базового маркера HSTRING.
 
@@ -109,7 +110,7 @@ HSTRING Get() const throw()
 
 Значение базового дескриптора HSTRING.
 
-## <a name="hstringreferencegetrawbuffer"></a><a name="getrawbuffer"></a>HStringReference:: Жетравбуффер
+## <a name="hstringreferencegetrawbuffer"></a><a name="getrawbuffer"></a> HStringReference:: Жетравбуффер
 
 Извлекает указатель на базовые строковые данные.
 
@@ -125,7 +126,7 @@ const wchar_t* GetRawBuffer(unsigned int* length) const;
 
 **`const`** Указатель на базовые строковые данные.
 
-## <a name="hstringreferencehstringreference"></a><a name="hstringreference"></a>HStringReference:: HStringReference
+## <a name="hstringreferencehstringreference"></a><a name="hstringreference"></a> HStringReference:: HStringReference
 
 Инициализирует новый экземпляр класса `HStringReference`.
 
@@ -154,15 +155,15 @@ HStringReference(HStringReference&& other) throw();
 *иной*<br/>
 Другой `HStringReference` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Первый конструктор инициализирует новый объект того `HStringReference` же размера, что и *str*параметра.
+Первый конструктор инициализирует новый объект того `HStringReference` же размера, что и *str* параметра.
 
 Второй конструктор инициализирует новый `HStringReference` объект, размер которого спеЦифеид параметром *Len*.
 
 Третий конструктор инициализирует новый `HStringReference` объект значением *другого* параметра, а затем уничтожает *другой* параметр.
 
-## <a name="hstringreferenceoperator"></a><a name="operator-assign"></a>HStringReference:: operator =
+## <a name="hstringreferenceoperator"></a><a name="operator-assign"></a> HStringReference:: operator =
 
 Перемещает значение другого `HStringReference` объекта в текущий `HStringReference` объект.
 
@@ -175,11 +176,11 @@ HStringReference& operator=(HStringReference&& other) throw()
 *иной*<br/>
 Существующий объект `HStringReference`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Значение *существующего объекта* копируется в текущий `HStringReference` объект, а затем удаляется *другой* объект.
 
-## <a name="hstringreferenceoperator"></a><a name="operator-equality"></a>HStringReference:: operator = =
+## <a name="hstringreferenceoperator"></a><a name="operator-equality"></a> HStringReference:: operator = =
 
 Указывает, равны ли два параметра.
 
@@ -209,7 +210,7 @@ inline bool operator==(
 
 **`true`** значение, если параметры *LHS* и *RHS* равны; в противном случае — **`false`** .
 
-## <a name="hstringreferenceoperator"></a><a name="operator-inequality"></a>HStringReference:: operator! =
+## <a name="hstringreferenceoperator"></a><a name="operator-inequality"></a> HStringReference:: operator! =
 
 Указывает, являются ли два параметра неравными.
 
@@ -239,7 +240,7 @@ inline bool operator!=(
 
 **`true`** значение, если параметры *LHS* и *RHS* не равны; в противном случае — **`false`** .
 
-## <a name="hstringreferenceoperatorlt"></a><a name="operator-less-than"></a>HStringReference:: operator&lt;
+## <a name="hstringreferenceoperatorlt"></a><a name="operator-less-than"></a> HStringReference:: operator&lt;
 
 Указывает, меньше ли первый параметр второго параметра.
 

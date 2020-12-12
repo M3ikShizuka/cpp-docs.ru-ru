@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о классе обработчика
 title: HandleT - класс
 ms.date: 10/03/2018
 ms.topic: reference
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleT::operator= operator
 - Microsoft::WRL::Wrappers::HandleT::~HandleT, destructor
 ms.assetid: 3822b32a-a426-4d94-a54d-919d4df60ee2
-ms.openlocfilehash: 661d3cb92b20fc929a9bae3cad7bb55740e5e096
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 608433193729e3d9be5b9490c469bf0b04d3531c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213012"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250014"
 ---
 # <a name="handlet-class"></a>HandleT - класс
 
@@ -60,7 +61,7 @@ class HandleT;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-Имя                                | Описание
+name                                | Описание
 ----------------------------------- | --------------------------------------------------
 [Handleing:: Handle](#handlet)        | Инициализирует новый экземпляр класса `HandleT`.
 [Handleing:: ~ Handle](#tilde-handlet) | Выполняет деинициализацию экземпляра `HandleT` класса.
@@ -103,7 +104,7 @@ name                         | Описание
 
 **Пространство имен:** Программы Microsoft:: WRL:: оболочки
 
-## <a name="handlethandlet"></a><a name="tilde-handlet"></a>Handleing:: ~ Handle
+## <a name="handlethandlet"></a><a name="tilde-handlet"></a> Handleing:: ~ Handle
 
 Выполняет деинициализацию экземпляра `HandleT` класса.
 
@@ -111,7 +112,7 @@ name                         | Описание
 ~HandleT();
 ```
 
-## <a name="handletattach"></a><a name="attach"></a>Handle:: Attach
+## <a name="handletattach"></a><a name="attach"></a> Handle:: Attach
 
 Связывает указанный маркер с текущим `HandleT` объектом.
 
@@ -126,7 +127,7 @@ void Attach(
 *h*<br/>
 Дескриптор.
 
-## <a name="handletclose"></a><a name="close"></a>Handle:: Close
+## <a name="handletclose"></a><a name="close"></a> Handle:: Close
 
 Закрывает текущий объект `HandleT`.
 
@@ -134,13 +135,13 @@ void Attach(
 void Close();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Маркер, лежащий в данный момент, `HandleT` закрыт, а `HandleT` для задается недопустимое состояние.
 
 Если дескриптор не закрывается правильно, возникает исключение в вызывающем потоке.
 
-## <a name="handletdetach"></a><a name="detach"></a>Handle::D етач
+## <a name="handletdetach"></a><a name="detach"></a> Handle::D етач
 
 Отменяет связь текущего `HandleT` объекта с его базовым маркером.
 
@@ -152,11 +153,11 @@ typename HandleTraits::Type Detach();
 
 Базовый маркер.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По завершении этой операции текущим `HandleT` задается недопустимое состояние.
 
-## <a name="handletget"></a><a name="get"></a>Handle:: Get
+## <a name="handletget"></a><a name="get"></a> Handle:: Get
 
 Возвращает значение базового маркера.
 
@@ -168,7 +169,7 @@ typename HandleTraits::Type Get() const;
 
 Дескриптор.
 
-## <a name="handlethandle_"></a><a name="handle"></a>Handle:: handle_
+## <a name="handlethandle_"></a><a name="handle"></a> Handle:: handle_
 
 Содержит маркер, представленный `HandleT` объектом.
 
@@ -176,7 +177,7 @@ typename HandleTraits::Type Get() const;
 typename HandleTraits::Type handle_;
 ```
 
-## <a name="handlethandlet"></a><a name="handlet"></a>Handleing:: Handle
+## <a name="handlethandlet"></a><a name="handlet"></a> Handleing:: Handle
 
 Инициализирует новый экземпляр класса `HandleT`.
 
@@ -196,11 +197,11 @@ HandleT(
 *h*<br/>
 Дескриптор.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый конструктор инициализирует `HandleT` объект, который не является допустимым маркером объекта. Второй конструктор создает новый `HandleT` объект на основе параметра *h*.
 
-## <a name="handletinternalclose"></a><a name="internalclose"></a>Handle:: InternalClose
+## <a name="handletinternalclose"></a><a name="internalclose"></a> Handle:: InternalClose
 
 Закрывает текущий объект `HandleT`.
 
@@ -212,11 +213,11 @@ virtual bool InternalClose();
 
 **`true`**`HandleT`значение, если текущий закрытый успешно завершен; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`InternalClose()`имеет **`protected`** .
+`InternalClose()` имеет **`protected`** .
 
-## <a name="handletisvalid"></a><a name="isvalid"></a>Handle:: IsValid
+## <a name="handletisvalid"></a><a name="isvalid"></a> Handle:: IsValid
 
 Указывает, представляет ли текущий `HandleT` объект маркер.
 
@@ -228,7 +229,7 @@ bool IsValid() const;
 
 **`true`** значение, если объект `HandleT` представляет обработчик; в противном случае — **`false`** .
 
-## <a name="handletoperator"></a><a name="operator-assign"></a>Handle:: operator =
+## <a name="handletoperator"></a><a name="operator-assign"></a> Handle:: operator =
 
 Перемещает значение указанного `HandleT` объекта в текущий `HandleT` объект.
 
@@ -247,6 +248,6 @@ HandleT& operator=(
 
 Ссылка на текущий `HandleT` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта операция делает недействительным `HandleT` объект, указанный параметром *h*.

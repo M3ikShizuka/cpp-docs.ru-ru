@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: regex_error классе'
 title: Класс regex_error
 ms.date: 09/10/2018
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - regex_error class
 ms.assetid: 3333a1a3-ca6f-4612-84b2-1b4c7e3db5a4
-ms.openlocfilehash: f8f3c88c1b203ed7fcea148843fa99590e27b888
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a6e2ace44c7463cbe43d000d3dabb9cf9f7d6676
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81331870"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250508"
 ---
 # <a name="regex_error-class"></a>Класс regex_error
 
@@ -39,11 +40,11 @@ class regex_error
 
 |Функция-член|Описание|
 |-|-|
-|[Код](#code)|Возвращает код ошибки.|
+|[code](#code)|Возвращает код ошибки.|
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<regex>
+**Заголовок:**\<regex>
 
 **Пространство имен:** std
 
@@ -82,7 +83,7 @@ int main()
 regex error: unbalanced parentheses
 ```
 
-## <a name="regex_errorcode"></a><a name="code"></a>regex_error::Код
+## <a name="regex_errorcode"></a><a name="code"></a> regex_error:: Code
 
 Возвращает код ошибки.
 
@@ -90,11 +91,11 @@ regex error: unbalanced parentheses
 regex_constants::error_code code() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает значение, которое было передано в конструктор объекта.
 
-## <a name="regex_errorregex_error"></a><a name="regex_error"></a>regex_error:regex_error
+## <a name="regex_errorregex_error"></a><a name="regex_error"></a> regex_error:: regex_error
 
 Создает объект.
 
@@ -104,20 +105,20 @@ regex_error(regex_constants::error_code error);
 
 ### <a name="parameters"></a>Параметры
 
-*Ошибка*\
+*план*\
 Код ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Конструктор строит объект, который удерживает *ошибку*значения.
+Конструктор конструирует объект, содержащий *ошибку* значения.
 
 ## <a name="see-also"></a>См. также раздел
 
 [\<regex>](../standard-library/regex.md)\
-[класс regex_constants](../standard-library/regex-constants-class.md)\
-[\<функции regex>](../standard-library/regex-functions.md)\
-[класс regex_iterator](../standard-library/regex-iterator-class.md)\
-[\<операторы regex>](../standard-library/regex-operators.md)\
-[класс regex_token_iterator](../standard-library/regex-token-iterator-class.md)\
-[класс regex_traits](../standard-library/regex-traits-class.md)\
-[\<regex> typedefs](../standard-library/regex-typedefs.md)
+[Класс regex_constants](../standard-library/regex-constants-class.md)\
+[\<regex> функции](../standard-library/regex-functions.md)\
+[Класс regex_iterator](../standard-library/regex-iterator-class.md)\
+[\<regex> операторы](../standard-library/regex-operators.md)\
+[Класс regex_token_iterator](../standard-library/regex-token-iterator-class.md)\
+[Класс regex_traits](../standard-library/regex-traits-class.md)\
+[\<regex> определения типов](../standard-library/regex-typedefs.md)

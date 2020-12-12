@@ -1,5 +1,6 @@
 ---
-title: write (запись)
+description: 'Дополнительные сведения: запись'
+title: запись
 ms.date: 12/16/2019
 api_name:
 - write
@@ -23,15 +24,15 @@ f1_keywords:
 helpviewer_keywords:
 - write function
 ms.assetid: 1cbf112e-b9ef-4df6-993a-83abd4213acd
-ms.openlocfilehash: 2892bb5f342f3bec26e82da069d013e76f877b03
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 911527bb4caef959021800e1edf333f234706bdd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75300785"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252874"
 ---
-# <a name="write"></a>write (запись)
+# <a name="write"></a>запись
 
-Имя функции POSIX, реализуемой корпорацией Майкрософт `write` является устаревшим псевдонимом для функции [_write](write.md) . По умолчанию он создает [Предупреждение компилятора (уровень 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). Имя является устаревшим, так как оно не соответствует стандартным правилам C для имен, зависящих от реализации. Однако функция по-прежнему поддерживается.
+Имя функции, реализованной корпорацией Майкрософт, `write` является устаревшим псевдонимом для функции [_write](write.md) . По умолчанию он создает [Предупреждение компилятора (уровень 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). Имя является устаревшим, так как оно не соответствует стандартным правилам C для имен, зависящих от реализации. Однако функция по-прежнему поддерживается.
 
 Вместо этого рекомендуется использовать [_write](write.md) . Вы также можете продолжить использовать это имя функции и отключить предупреждение. Дополнительные сведения см. [в разделе Отключение](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) [имен функций](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)Warning и POSIX.

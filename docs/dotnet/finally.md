@@ -1,25 +1,26 @@
 ---
+description: 'Дополнительные сведения: наконец'
 title: finally
 ms.date: 11/04/2016
 helpviewer_keywords:
 - finally keyword [C++]
 ms.assetid: b55f3c8e-1af0-43e8-bcfb-99c3685d2578
-ms.openlocfilehash: b3331c17fc2313cbd6146db3beb015cd8d8c1eeb
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 039c3fab7854d045c9b4917d2a0bc9f01fdc61a3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221462"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252159"
 ---
 # <a name="finally"></a>finally
 
 Помимо **`try`** **`catch`** предложений и, обработка исключений CLR поддерживает **`finally`** предложение. Семантика идентична **`__finally`** блоку в структурированной обработке исключений (SEH). **`__finally`** Блок может следовать за **`try`** **`catch`** блоком или.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Целью этого **`finally`** блока является очистка всех ресурсов, оставшихся после возникновения исключения. Обратите внимание, что **`finally`** блок всегда выполняется, даже если исключение не было создано. **`catch`** Блок выполняется только в том случае, если управляемое исключение создается в связанном **`try`** блоке.
 
-`finally`контекстно-зависимое ключевое слово; Дополнительные сведения см. в разделе [контекстно-зависимые ключевые слова](../extensions/context-sensitive-keywords-cpp-component-extensions.md) .
+`finally` контекстно-зависимое ключевое слово; Дополнительные сведения см. в разделе [контекстно-зависимые ключевые слова](../extensions/context-sensitive-keywords-cpp-component-extensions.md) .
 
 ## <a name="example"></a>Пример
 

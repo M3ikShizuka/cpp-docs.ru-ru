@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кдаоексцептион Class'
 title: Класс Кдаоексцептион
 ms.date: 09/17/2019
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - CDaoException [MFC], m_pErrorInfo
 - CDaoException [MFC], m_scode
 ms.assetid: b2b01fa9-7ce2-42a1-842e-40f13dc50da4
-ms.openlocfilehash: fcbd88e8a9ef632b61096ac2577d7a1a7094d4b5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: eb7da6746d2ce539a2ee7b0b28a9a4e9c6c6de64
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231849"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250898"
 ---
 # <a name="cdaoexception-class"></a>Класс Кдаоексцептион
 
@@ -35,32 +36,32 @@ ms.locfileid: "87231849"
 class CDaoException : public CException
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[Кдаоексцептион:: Кдаоексцептион](#cdaoexception)|Формирует объект `CDaoException`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[CDaoException::GetErrorCount](#geterrorcount)|Возвращает количество ошибок в коллекции ошибок ядра СУБД.|
 |[Кдаоексцептион:: Жетерроринфо](#geterrorinfo)|Возвращает сведения об ошибке для конкретного объекта Error в коллекции Errors.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Кдаоексцептион:: m_nAfxDaoError](#m_nafxdaoerror)|Содержит расширенный код ошибки для любой ошибки в классах MFC DAO.|
 |[Кдаоексцептион:: m_pErrorInfo](#m_perrorinfo)|Указатель на объект [CDaoErrorInfo](../../mfc/reference/cdaoerrorinfo-structure.md) , содержащий сведения об одном ОБЪЕКТЕ ошибки DAO.|
 |[Кдаоексцептион:: m_scode](#m_scode)|Значение [SCODE](#m_scode) , связанное с ошибкой.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Класс содержит открытые члены данных, которые можно использовать для определения причины исключения. `CDaoException`объекты создаются и создаются функциями членов классов базы данных DAO.
+Класс содержит открытые члены данных, которые можно использовать для определения причины исключения. `CDaoException` объекты создаются и создаются функциями членов классов базы данных DAO.
 
 > [!NOTE]
 > Классы базы данных DAO отличаются от классов баз данных MFC, основанных на открытом подключении к базам данных (ODBC). Все имена классов баз данных DAO имеют префикс "Кдао". Вы по-прежнему можете обращаться к источникам данных ODBC с помощью классов DAO. Как правило, классы MFC, основанные на DAO, более поддерживаются, чем классы MFC, основанные на ODBC; классы на основе DAO могут обращаться к данным, включая драйверы ODBC, через собственное ядро СУБД. Классы на основе DAO также поддерживают операции языка DDL, такие как добавление таблиц через классы, без необходимости непосредственного вызова DAO. Сведения об исключениях, создаваемых классами ODBC, см. в разделе [кдбексцептион](../../mfc/reference/cdbexception-class.md).
@@ -69,7 +70,7 @@ class CDaoException : public CException
 
 В MFC все ошибки DAO выражаются как исключения типа `CDaoException` . При перехвате исключения этого типа можно использовать `CDaoException` функции элементов для получения сведений из любых объектов ошибок DAO, хранящихся в коллекции ошибок компонента Database Engine. При возникновении каждой ошибки в коллекцию Errors помещается один или несколько объектов ошибок. (Обычно коллекция содержит только один объект Error; если используется источник данных ODBC, скорее всего, будет получено несколько объектов ошибок.) Если другая операция DAO создает ошибку, коллекция Errors удаляется, а новый объект ошибки помещается в коллекцию Errors. Операции DAO, не создающие ошибку, не влияют на сбор ошибок.
 
-Коды ошибок DAO см. в файле ДАОЕРР. Высоты. Дополнительные сведения см. в разделе "ошибки доступа к обрабатываемым данным" справки DAO.
+Коды ошибок DAO см. в файле ДАОЕРР. H. Дополнительные сведения см. в разделе "ошибки доступа к обрабатываемым данным" справки DAO.
 
 Дополнительные сведения об обработке исключений в целом и об `CDaoException` объектах см. в статьях [обработка исключений (MFC)](../../mfc/exception-handling-in-mfc.md) и [исключения: исключения базы данных](../../mfc/exceptions-database-exceptions.md). Во второй статье содержится пример кода, иллюстрирующий обработку исключений в DAO.
 
@@ -85,7 +86,7 @@ class CDaoException : public CException
 
 **Заголовок:** афксдао. h
 
-## <a name="cdaoexceptioncdaoexception"></a><a name="cdaoexception"></a>Кдаоексцептион:: Кдаоексцептион
+## <a name="cdaoexceptioncdaoexception"></a><a name="cdaoexception"></a> Кдаоексцептион:: Кдаоексцептион
 
 Формирует объект `CDaoException`.
 
@@ -93,7 +94,7 @@ class CDaoException : public CException
 CDaoException();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Как правило, платформа создает объекты исключений, когда его код создает исключение. Вам редко приходится создавать объект исключения явным образом. Если вы хотите создать исключение `CDaoException` из собственного кода, вызовите глобальную функцию [афкссровдаоексцептион](../../mfc/reference/exception-processing.md#afxthrowdaoexception).
 
@@ -115,7 +116,7 @@ CDaoException();
 
 Дополнительные сведения об обработке ошибок в классах MFC DAO см. в статье [исключения базы данных](../../mfc/exceptions-database-exceptions.md).
 
-## <a name="cdaoexceptiongeterrorcount"></a><a name="geterrorcount"></a>Кдаоексцептион:: Жетерроркаунт
+## <a name="cdaoexceptiongeterrorcount"></a><a name="geterrorcount"></a> Кдаоексцептион:: Жетерроркаунт
 
 Вызовите эту функцию члена, чтобы получить количество объектов ошибок DAO в коллекции ошибок ядра СУБД.
 
@@ -127,14 +128,14 @@ short GetErrorCount();
 
 Количество объектов ошибок DAO в коллекции ошибок ядра СУБД.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта информация полезна при переборе коллекции Errors для получения каждого из одного или нескольких объектов ошибок DAO в коллекции. Чтобы получить объект ошибки по индексу или по номеру ошибки DAO, вызовите функцию члена [жетерроринфо](#geterrorinfo) .
 
 > [!NOTE]
 > Обычно в коллекции Errors присутствует только один объект Error. Однако при работе с источником данных ODBC может существовать более одного.
 
-## <a name="cdaoexceptiongeterrorinfo"></a><a name="geterrorinfo"></a>Кдаоексцептион:: Жетерроринфо
+## <a name="cdaoexceptiongeterrorinfo"></a><a name="geterrorinfo"></a> Кдаоексцептион:: Жетерроринфо
 
 Возвращает сведения об ошибке для конкретного объекта Error в коллекции Errors.
 
@@ -147,7 +148,7 @@ void GetErrorInfo(int nIndex);
 *ниндекс*<br/>
 Индекс сведений об ошибке в коллекции ошибок ядра СУБД для поиска по индексу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите эту функцию члена, чтобы получить следующие сведения об исключении:
 
@@ -161,15 +162,15 @@ void GetErrorInfo(int nIndex);
 
 - Контекст справки
 
-`GetErrorInfo`хранит сведения в элементе данных объекта исключения `m_pErrorInfo` . Краткое описание возвращаемых сведений см. в разделе [m_pErrorInfo](#m_perrorinfo). Если перехватить исключение типа `CDaoException` , созданного MFC, `m_pErrorInfo` элемент будет уже заполнен. Если вы решили напрямую вызывать DAO, необходимо `GetErrorInfo` самостоятельно вызвать функцию члена объекта Exception для заполнения `m_pErrorInfo` . Более подробное описание см. в разделе Структура [CDaoErrorInfo](../../mfc/reference/cdaoerrorinfo-structure.md) .
+`GetErrorInfo` хранит сведения в элементе данных объекта исключения `m_pErrorInfo` . Краткое описание возвращаемых сведений см. в разделе [m_pErrorInfo](#m_perrorinfo). Если перехватить исключение типа `CDaoException` , созданного MFC, `m_pErrorInfo` элемент будет уже заполнен. Если вы решили напрямую вызывать DAO, необходимо `GetErrorInfo` самостоятельно вызвать функцию члена объекта Exception для заполнения `m_pErrorInfo` . Более подробное описание см. в разделе Структура [CDaoErrorInfo](../../mfc/reference/cdaoerrorinfo-structure.md) .
 
 Сведения об исключениях DAO и примеры кода см. в статье [исключения базы данных](../../mfc/exceptions-database-exceptions.md).
 
-## <a name="cdaoexceptionm_nafxdaoerror"></a><a name="m_nafxdaoerror"></a>Кдаоексцептион:: m_nAfxDaoError
+## <a name="cdaoexceptionm_nafxdaoerror"></a><a name="m_nafxdaoerror"></a> Кдаоексцептион:: m_nAfxDaoError
 
 Содержит расширенный код ошибки MFC.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот код предоставляется в случаях, когда конкретный компонент классов DAO MFC имеет выдвигают.
 
@@ -183,15 +184,15 @@ void GetErrorInfo(int nIndex);
 
 - AFX_DAO_ERROR_OBJECT_NOT_OPEN попытке открыть набор записей, основанный на объекте QueryDef или объект tabledef, который не находится в открытом состоянии.
 
-## <a name="cdaoexceptionm_perrorinfo"></a><a name="m_perrorinfo"></a>Кдаоексцептион:: m_pErrorInfo
+## <a name="cdaoexceptionm_perrorinfo"></a><a name="m_perrorinfo"></a> Кдаоексцептион:: m_pErrorInfo
 
 Содержит указатель на `CDaoErrorInfo` структуру, которая предоставляет сведения об объекте ошибки DAO, полученном последним путем вызова [жетерроринфо](#geterrorinfo).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот объект содержит следующие сведения:
 
-|CDaoErrorInfo, элемент|Сведения|Значение|
+|CDaoErrorInfo, элемент|Данные|Значение|
 |--------------------------|-----------------|-------------|
 |`m_lErrorCode`|Код ошибки|Код ошибки DAO|
 |`m_strSource`|Источник|Имя объекта или приложения, первоначально вызвавшего ошибку|
@@ -201,11 +202,11 @@ void GetErrorInfo(int nIndex);
 
 Полные сведения о данных, содержащихся в `CDaoErrorInfo` объекте, см. в разделе Структура [CDaoErrorInfo](../../mfc/reference/cdaoerrorinfo-structure.md) .
 
-## <a name="cdaoexceptionm_scode"></a><a name="m_scode"></a>Кдаоексцептион:: m_scode
+## <a name="cdaoexceptionm_scode"></a><a name="m_scode"></a> Кдаоексцептион:: m_scode
 
 Содержит значение типа `SCODE` , описывающее ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это код OLE. Это значение редко необходимо использовать, поскольку в большинстве случаев более конкретные сведения об ошибках MFC или DAO доступны в других `CDaoException` элементах данных.
 

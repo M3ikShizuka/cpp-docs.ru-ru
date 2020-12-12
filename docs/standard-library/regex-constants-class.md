@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: regex_constants пространстве имен'
 title: Класс regex_constants
 ms.date: 09/10/2018
 f1_keywords:
@@ -82,12 +83,12 @@ helpviewer_keywords:
 - std::regex_constants [C++], optimize
 - std::regex_constants [C++], collate
 ms.assetid: 4a69c0ba-c46d-46e4-bd29-6f4efb805f26
-ms.openlocfilehash: 422d29f16220ae2c2db93c9f84410316bf08f5e7
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d33f9d45023453281714e5585ab6ab33ee1f7857
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845059"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250521"
 ---
 # <a name="regex_constants-namespace"></a>Пространство имен regex_constants
 
@@ -144,7 +145,7 @@ enum error_type
     };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип представляет собой перечисляемый тип, описывающий объект, который может содержать флаги ошибок. Ниже перечислены значения различных флагов.
 
@@ -204,7 +205,7 @@ enum match_flag_type
     };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип является типом битовой маски, описывающим параметры для использования при сопоставлении текстовой последовательности с регулярным выражением и флаги формата для использования при замене текста. Параметры можно использовать вместе с `|`.
 
@@ -260,7 +261,7 @@ enum syntax_option_type
     };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип — это тип битовой маски, описывающий описатели языка и модификаторы синтаксиса, используемые при компиляции регулярного выражения. Параметры можно использовать вместе с `|`. Одновременно можно использовать только один описатель языка.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура метод HandleTraits'
 title: HANDLETraits - структура
 ms.date: 09/27/2018
 ms.topic: reference
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits::Close method
 - Microsoft::WRL::Wrappers::HandleTraits::HANDLETraits::GetInvalidValue method
 ms.assetid: 22963e88-d857-4624-9182-7c986daff722
-ms.openlocfilehash: c04e53789fd737b12ca10ef2c279a05fb43f5925
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c3eef03c724b1ba868ba67ed251acdb310d8b66f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212999"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250027"
 ---
 # <a name="handletraits-structure"></a>HANDLETraits - структура
 
@@ -28,7 +29,7 @@ ms.locfileid: "87212999"
 struct HANDLETraits;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
@@ -53,7 +54,7 @@ name                                              | Описание
 
 **Пространство имен:** Microsoft:: WRL:: оболочки:: метод HandleTraits
 
-## <a name="handletraitsclose"></a><a name="close"></a>Метод HandleTraits:: Close
+## <a name="handletraitsclose"></a><a name="close"></a> Метод HandleTraits:: Close
 
 Закрывает указанный маркер.
 
@@ -72,7 +73,7 @@ inline static bool Close(
 
 **`true`** значение, если Handles *h* успешно закрыто. в противном случае — **`false`** .
 
-## <a name="handletraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a>Метод HandleTraits:: GetInvalidValue
+## <a name="handletraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a> Метод HandleTraits:: GetInvalidValue
 
 Представляет недопустимый Handle.
 

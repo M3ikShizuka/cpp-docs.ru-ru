@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о графике (C++ AMP)
 title: Графика (C++ AMP)
 ms.date: 11/04/2016
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
-ms.openlocfilehash: 97fd433387aac809053ea6dd8ac59a56207a4fc8
-ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
+ms.openlocfilehash: 79e908ac673fb8fcc5ac370d6900697b3274585c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344726"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97254551"
 ---
 # <a name="graphics-c-amp"></a>Графика (C++ AMP)
 
@@ -30,7 +31,7 @@ C++ AMP содержит несколько интерфейсов API в про
 |Тип|Длина 2|Длина 3|Длина 4|
 |-|--------------|--------------|--------------|
 |double|double_2<br /><br /> double2|double_3<br /><br /> double3|double_4<br /><br /> double4|
-|float|float_2<br /><br /> float2|float_3<br /><br /> float3|float_4<br /><br /> float4|
+|FLOAT|float_2<br /><br /> float2|float_3<br /><br /> float3|float_4<br /><br /> float4|
 |INT|int_2<br /><br /> int2|int_3<br /><br /> int3|int_4<br /><br /> int4|
 |norm|norm_2<br /><br /> norm2|norm_3<br /><br /> norm3|norm_4<br /><br /> norm4|
 |uint|uint_2<br /><br /> uint2|uint_3<br /><br /> uint3|uint_4<br /><br /> uint4|
@@ -57,7 +58,7 @@ C++ AMP содержит несколько интерфейсов API в про
 
 ### <a name="swizzling-expressions"></a>Группирующие выражения
 
-Библиотека коротких векторов поддерживает конструкции метода доступа вида `vector_type.identifier` для обращения к компонентам короткого вектора. `identifier`, Который называется *выражением группирующие* , задает компоненты вектора. Выражение может быть l-значением или r-значением. Отдельные символы в идентификаторе могут быть: x, y, z и w; или r, g, b и a. «x» и «r» означают нуль-й компонент, «y» и «g» означают первый компонент и т. д. (Обратите внимание, что "x" и "r" не могут использоваться в одном и том же идентификаторе.) Таким образом, "RGBA" и "ксизв" возвращают один и тот же результат. Методы доступа из одного компонента, такие как "x" и "y", являются скалярными типами значений. Многокомпонентные методы доступа — типы короткого вектора. Например, если есть вектор `int_4` с именем `fourInts` и значениями 2, 4, 6 и 8, то `fourInts.y` возвращает целое число 4, а `fourInts.rg` — объект `int_2` со значениями 2 и 4.
+Библиотека коротких векторов поддерживает конструкции метода доступа вида `vector_type.identifier` для обращения к компонентам короткого вектора. `identifier`, Который называется *выражением группирующие*, задает компоненты вектора. Выражение может быть l-значением или r-значением. Отдельные символы в идентификаторе могут быть: x, y, z и w; или r, g, b и a. «x» и «r» означают нуль-й компонент, «y» и «g» означают первый компонент и т. д. (Обратите внимание, что "x" и "r" не могут использоваться в одном и том же идентификаторе.) Таким образом, "RGBA" и "ксизв" возвращают один и тот же результат. Методы доступа из одного компонента, такие как "x" и "y", являются скалярными типами значений. Многокомпонентные методы доступа — типы короткого вектора. Например, если есть вектор `int_4` с именем `fourInts` и значениями 2, 4, 6 и 8, то `fourInts.y` возвращает целое число 4, а `fourInts.rg` — объект `int_2` со значениями 2 и 4.
 
 ## <a name="texture-classes"></a>Классы текстуры
 
@@ -402,11 +403,11 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
 });
 ```
 
-## <a name="interoperability"></a>Взаимодействие
+## <a name="interoperability"></a>Совместимость
 
 Среда выполнения C++ AMP поддерживает взаимодействие между `texture<T,1>` и [интерфейсом ID3D11Texture1D](/windows/win32/api/d3d11/nn-d3d11-id3d11texture1d), между и интерфейсом `texture<T,2>` [ID3D11Texture2D](/windows/win32/api/d3d11/nn-d3d11-id3d11texture2d), а также между `texture<T,3>` и [интерфейсом ID3D11Texture3D](/windows/win32/api/d3d11/nn-d3d11-id3d11texture3d). Метод [get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) принимает `texture` объект и возвращает `IUnknown` интерфейс. Метод [make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) принимает `IUnknown` интерфейс и `accelerator_view` объект и возвращает `texture` объект.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Класс double_2](../../parallel/amp/reference/double-2-class.md)<br/>
 [Класс double_3](../../parallel/amp/reference/double-3-class.md)<br/>

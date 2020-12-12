@@ -1,14 +1,15 @@
 ---
+description: 'Дополнительные сведения: &lt; примеры &gt; специализированных функций шаблонов контейнера'
 title: '&lt;образец контейнера&gt; Специализированные функции шаблона'
 ms.date: 11/04/2016
 ms.assetid: 853d4b30-167a-471b-8325-86a868943568
-ms.openlocfilehash: e5c5643baf8067fc26a7881b0a4a71b28e4934b1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 24d91b217b22dbc97fbf66ceefba6991a5795034
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62348345"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250443"
 ---
 # <a name="ltsample-containergt-specialized-template-functions"></a>&lt;образец контейнера&gt; Специализированные функции шаблона
 
-Дополнительные сведения о специализированных функциях шаблона в классе \<образец контейнера> см. в разделе [\<образец контейнера>](../standard-library/sample-container.md).
+Дополнительные сведения о специализированных функциях шаблонов в \<sample container> см. в разделе [\<sample container>](../standard-library/sample-container.md) .
