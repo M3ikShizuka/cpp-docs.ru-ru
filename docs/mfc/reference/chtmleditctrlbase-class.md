@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Чтмледитктрлбасе Class'
 title: Класс Чтмледитктрлбасе
 ms.date: 11/04/2016
 f1_keywords:
@@ -220,12 +221,12 @@ helpviewer_keywords:
 - CHtmlEditCtrlBase [MFC], Unlink
 - CHtmlEditCtrlBase [MFC], UnorderList
 ms.assetid: e0cc74b4-8320-4570-b673-16c03d2ae266
-ms.openlocfilehash: 74df35a82342bad59e9065ef593581add6d3d734
-ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
+ms.openlocfilehash: 2dfe61dfce86230f87f7e4883f6800e897c3770b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344739"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115421"
 ---
 # <a name="chtmleditctrlbase-class"></a>Класс Чтмледитктрлбасе
 
@@ -237,7 +238,7 @@ ms.locfileid: "93344739"
 template <class T> class CHtmlEditCtrlBase
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
@@ -366,7 +367,7 @@ template <class T> class CHtmlEditCtrlBase
 
 `CHtmlEditCtrlBase`
 
-## <a name="requirements"></a>Requirements (Требования)
+## <a name="requirements"></a>Требования
 
 **Заголовок:** afxhtml.h
 
@@ -1704,7 +1705,7 @@ long QueryStatus(long cmdID) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает значение типа [OLECMDF](/windows/win32/api/docobj/ne-docobj-olecmdf) , указывающее состояние для *cmdID* , или значение 0 в случае сбоя.
+Возвращает значение типа [OLECMDF](/windows/win32/api/docobj/ne-docobj-olecmdf) , указывающее состояние для *cmdID*, или значение 0 в случае сбоя.
 
 ## <a name="chtmleditctrlbaseradiobutton"></a><a name="radiobutton"></a> Чтмледитктрлбасе:: RadioButton
 
@@ -2562,7 +2563,7 @@ HRESULT UnorderList(LPCTSTR szId = NULL) const;
 
 Этот метод отправляет [IDM_UNORDERLIST идентификатор команды](/previous-versions/aa769987\(v=vs.85\)) элементу управления WebBrowser.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Пример Хтмледит](../../overview/visual-cpp-samples.md)

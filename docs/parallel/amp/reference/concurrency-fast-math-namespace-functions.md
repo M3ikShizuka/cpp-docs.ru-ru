@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о функциях пространства имен Concurrency:: fast_math'
 title: Функции пространства имен Concurrency::fast_math
 ms.date: 11/04/2016
 f1_keywords:
@@ -46,12 +47,12 @@ f1_keywords:
 - amp_math/Concurrency::fast_math::tanhf
 - amp_math/Concurrency::fast_math::trunc
 ms.assetid: f5763d62-795b-4de6-a7a5-c7115f158708
-ms.openlocfilehash: ff919016449723ad67e029a249ec222ccf1fe6a4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: aef9b660b0f707baeb0b7b87da520a0510f89cc2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831064"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122438"
 ---
 # <a name="concurrencyfast_math-namespace-functions"></a>Функции пространства имен Concurrency::fast_math
 
@@ -458,7 +459,7 @@ inline float fabs(float _X) restrict(amp);
 ### <a name="parameters"></a>Параметры
 
 *_X*<br/>
-Целочисленное значение
+Целое значение
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -528,10 +529,10 @@ inline float max(
 ### <a name="parameters"></a>Параметры
 
 *_X*<br/>
-Целочисленное значение
+Целое значение
 
 *_Y*<br/>
-Целочисленное значение
+Целое значение
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -572,10 +573,10 @@ inline float min(
 ### <a name="parameters"></a>Параметры
 
 *_X*<br/>
-Целочисленное значение
+Целое значение
 
 *_Y*<br/>
-Целочисленное значение
+Целое значение
 
 ### <a name="return-value"></a>Возвращаемое значение
 

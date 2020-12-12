@@ -1,5 +1,6 @@
 ---
-title: Класс CClientDC
+description: 'Дополнительные сведения о: Кклиентдк Class'
+title: Класс Кклиентдк
 ms.date: 11/04/2016
 f1_keywords:
 - CClientDC
@@ -10,16 +11,16 @@ helpviewer_keywords:
 - CClientDC [MFC], CClientDC
 - CClientDC [MFC], m_hWnd
 ms.assetid: 8a871d6b-06f8-496e-9fa3-9a5780848369
-ms.openlocfilehash: abe8a3220fd37a0375fcf37504c715edf4c6962e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 27735929734388ccb25eaf178e49d63884beed0d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81352297"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122464"
 ---
-# <a name="cclientdc-class"></a>Класс CClientDC
+# <a name="cclientdc-class"></a>Класс Кклиентдк
 
-Заботится о вызове функций Windows [GetDC](/windows/win32/api/winuser/nf-winuser-getdc) во время строительства и [ReleaseDC](/windows/win32/api/winuser/nf-winuser-releasedc) во время разрушения.
+Позаботится о вызове функций Windows, [GetDC](/windows/win32/api/winuser/nf-winuser-getdc) во время создания и [релеаседк](/windows/win32/api/winuser/nf-winuser-releasedc) в момент уничтожения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -27,25 +28,25 @@ ms.locfileid: "81352297"
 class CClientDC : public CDC
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CClientDC::CClientDC](#cclientdc)|Строит объект, `CClientDC` подключенный `CWnd`к .|
+|[Кклиентдк:: Кклиентдк](#cclientdc)|Конструирует `CClientDC` объект, подключенный к `CWnd` .|
 
 ### <a name="protected-data-members"></a>Защищенные члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CClientDC::m_hWnd](#m_hwnd)|HWND окна, для которого это `CClientDC` действительно.|
+|[Кклиентдк:: m_hWnd](#m_hwnd)|HWND окна, для которого это `CClientDC` допустимо.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Это означает, что контекст `CClientDC` устройства, связанный с объектом, является областью клиента окна.
+Это означает, что контекст устройства, связанный с `CClientDC` объектом, является клиентской областью окна.
 
-Для получения `CClientDC`дополнительной [информации](../../mfc/device-contexts.md)о, см.
+Дополнительные сведения о см `CClientDC` . в разделе [контексты устройств](../../mfc/device-contexts.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -59,9 +60,9 @@ class CClientDC : public CDC
 
 **Заголовок:** afxwin.h
 
-## <a name="cclientdccclientdc"></a><a name="cclientdc"></a>CClientDC::CClientDC
+## <a name="cclientdccclientdc"></a><a name="cclientdc"></a> Кклиентдк:: Кклиентдк
 
-Строит `CClientDC` объект, который получает доступ к клиентской области [CWnd,](../../mfc/reference/cwnd-class.md) на который указывает *pWnd.*
+Конструирует `CClientDC` объект, обращающийся к клиентской области [CWnd](../../mfc/reference/cwnd-class.md) , на которую указывает *приводится*.
 
 ```
 explicit CClientDC(CWnd* pWnd);
@@ -69,38 +70,38 @@ explicit CClientDC(CWnd* pWnd);
 
 ### <a name="parameters"></a>Параметры
 
-*pWnd*<br/>
-Окно, к которой будет доступ клиентский объект контекста устройства.
+*Приводится*<br/>
+Окно, в клиентской области которого будет доступ объект контекста устройства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Конструктор вызывает функцию Windows [GetDC.](/windows/win32/api/winuser/nf-winuser-getdc)
+Конструктор вызывает функцию Windows [GetDC](/windows/win32/api/winuser/nf-winuser-getdc).
 
-Исключение (типа) `CResourceException`брошено, если `GetDC` вызов Windows не удается. Контекст устройства может быть недоступен, если Windows уже выделила все доступные контексты устройства. Ваше приложение конкурирует за пять общих контекстов отображения, доступных в любой момент времени под Windows.
+Исключение (типа `CResourceException` ) создается при `GetDC` сбое вызова Windows. Контекст устройства может быть недоступен, если в Windows уже выделены все доступные контексты устройств. Приложение будет конкурировать за пять распространенных контекстов вывода, доступных в любой момент в Windows.
 
 ### <a name="example"></a>Пример
 
 [!code-cpp[NVC_MFCDocView#42](../../mfc/codesnippet/cpp/cclientdc-class_1.cpp)]
 
-## <a name="cclientdcm_hwnd"></a><a name="m_hwnd"></a>CClientDC::m_hWnd
+## <a name="cclientdcm_hwnd"></a><a name="m_hwnd"></a> Кклиентдк:: m_hWnd
 
-`HWND` Указатель, `CWnd` используемый для `CClientDC` построения объекта.
+Объект `HWND` указателя, `CWnd` используемый для создания `CClientDC` объекта.
 
 ```
 HWND m_hWnd;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 *m_hWnd* является защищенной переменной.
 
 ### <a name="example"></a>Пример
 
-  Смотрите пример [cClientDC::CClientDC](#cclientdc).
+  См. пример для [кклиентдк:: кклиентдк](#cclientdc).
 
 ## <a name="see-also"></a>См. также раздел
 
-[MFC Образец MDI](../../overview/visual-cpp-samples.md)<br/>
-[Класс CDC](../../mfc/reference/cdc-class.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
-[Класс CDC](../../mfc/reference/cdc-class.md)
+[Образец MDI-формы MFC](../../overview/visual-cpp-samples.md)<br/>
+[CDC, класс](../../mfc/reference/cdc-class.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
+[CDC, класс](../../mfc/reference/cdc-class.md)

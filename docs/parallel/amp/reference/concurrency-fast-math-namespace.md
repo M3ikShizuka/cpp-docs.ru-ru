@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: Concurrency:: fast_math Namespace'
 title: Пространство имен Concurrency::fast_math
 ms.date: 11/04/2016
 f1_keywords:
 - amp_math/Concurrency::fast_math
 ms.assetid: 54fed939-9902-49db-9f29-e98fd9821508
-ms.openlocfilehash: 6ed8dcfa2faff49e8811769b76aad9df15b2fe7b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 99638e3d8b0a452774d1e92d408ce3edddfa861c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226754"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122373"
 ---
 # <a name="concurrencyfast_math-namespace"></a>Пространство имен Concurrency::fast_math
 
@@ -21,11 +22,11 @@ ms.locfileid: "87226754"
 namespace fast_math;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="functions"></a>Функции
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[COS](concurrency-fast-math-namespace-functions.md#cos)|Вычисляет арккосинус аргумента|
 |[cosf](concurrency-fast-math-namespace-functions.md#cosf)|Вычисляет арккосинус аргумента|
@@ -53,12 +54,12 @@ namespace fast_math;
 |[fmaxf](concurrency-fast-math-namespace-functions.md#fmaxf)|Определение максимального числового значения аргументов|
 |[fmin](concurrency-fast-math-namespace-functions.md#fmin)|Определение минимального числового значения аргументов|
 |[fminf](concurrency-fast-math-namespace-functions.md#fminf)|Определение минимального числового значения аргументов|
-|[fmod](concurrency-fast-math-namespace-functions.md#fmod)|Вычисляет остаток числа с плавающей запятой _X/_Y|
+|[FMOD](concurrency-fast-math-namespace-functions.md#fmod)|Вычисляет остаток числа с плавающей запятой _X/_Y|
 |[fmodf](concurrency-fast-math-namespace-functions.md#fmodf)|Вычисляет остаток числа с плавающей запятой _X/_Y|
 |[frexp](concurrency-fast-math-namespace-functions.md#frexp)|Возвращает мантисса и показатель степени _X|
 |[фрекспф](concurrency-fast-math-namespace-functions.md#frexpf)|Возвращает мантисса и показатель степени _X|
 |[isFinite](concurrency-fast-math-namespace-functions.md#isfinite)|Определяет, имеет ли аргумент конечное значение|
-|[isinf](concurrency-fast-math-namespace-functions.md#isinf)|Определяет, является ли аргумент бесконечной|
+|[исинф](concurrency-fast-math-namespace-functions.md#isinf)|Определяет, является ли аргумент бесконечной|
 |[IsNaN](concurrency-fast-math-namespace-functions.md#isnan)|Определяет, является ли аргумент нечисловым|
 |[ldexp](concurrency-fast-math-namespace-functions.md#ldexp)|Вычисляет вещественное число из мантиссаа и экспоненты|
 |[лдекспф](concurrency-fast-math-namespace-functions.md#ldexpf)|Вычисляет вещественное число из мантиссаа и экспоненты|
@@ -99,6 +100,6 @@ namespace fast_math;
 
 **Пространство имен:** Concurrency:: fast_math
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Пространство имен Concurrency (C++ AMP)](concurrency-namespace-cpp-amp.md)
