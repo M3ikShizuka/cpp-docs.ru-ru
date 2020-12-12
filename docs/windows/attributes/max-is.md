@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: max_is'
 title: max_is (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - max_is attribute
 ms.assetid: 7c851f5c-6649-4d77-a792-247c37d8f560
-ms.openlocfilehash: 409211bc59d9df8a82a9f452efeff6b6db0fde39
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 305acba3a2831448cf677eb16810c567b3561b3b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837116"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329802"
 ---
 # <a name="max_is"></a>max_is
 
@@ -28,7 +29,7 @@ ms.locfileid: "88837116"
 *expression*<br/>
 Одно или несколько выражений языка C. Пустые слоты аргументов разрешены.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Атрибут **max_is** C++ имеет те же функциональные возможности, что и атрибут [max_is](/windows/win32/Midl/max-is) MIDL.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CMFCCaptionBar Class'
 title: Класс CMFCCaptionBar
 ms.date: 11/04/2016
 f1_keywords:
@@ -66,16 +67,16 @@ helpviewer_keywords:
 - CMFCCaptionBar [MFC], m_clrBarBorder
 - CMFCCaptionBar [MFC], m_clrBarText
 ms.assetid: acb54d5f-14ff-4c96-aeb3-7717cf566d9a
-ms.openlocfilehash: c42b1ccb51a3c290e0887717d900543b8d5b277a
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: a5dd5f968c52268935b6176115e8723a9d82e8a1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81752625"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327743"
 ---
 # <a name="cmfccaptionbar-class"></a>Класс CMFCCaptionBar
 
-Объект `CMFCCaptionBar` представляет собой панель управления, которая может отображать три элемента: кнопку, текстовую метку и битную карту. Она может содержать только один элемент каждого типа одновременно. Можно выровнять каждый элемент по левому или правому краю элемента управления или по центру. Также можно применить плоский или трехмерный стиль к верхним и нижним границам заголовка окна.
+`CMFCCaptionBar`Объект — это панель элементов управления, которая может отображать три элемента: кнопку, метку текста и точечный рисунок. Она может содержать только один элемент каждого типа одновременно. Можно выровнять каждый элемент по левому или правому краю элемента управления или по центру. Также можно применить плоский или трехмерный стиль к верхним и нижним границам заголовка окна.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -83,72 +84,72 @@ ms.locfileid: "81752625"
 class CMFCCaptionBar : public CPane
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMFCCaptionBar::Создание](#create)|Создает управление заголовком и прикрепляет его к объекту. `CMFCCaptionBar`|
-|[CMFCCaptionBar::DoesAllowDynInsertBefore](#doesallowdyninsertbefore)|Указывает, можно ли динамически вставить другую панель панели подписей и родительский кадр. (Переопределяет [CBasePane::DoesAllowDynInsertBefore](../../mfc/reference/cbasepane-class.md#doesallowdyninsertbefore).)|
-|[CMFCCaptionBar::EnableButton](#enablebutton)|Включает или отсваивает кнопку на панели подписей.|
-|[CMFCCaptionBar::GetAlignment](#getalignment)|Возвращает выравнивание указанного элемента.|
-|[CMFCCaptionBar::GetBorderSize](#getbordersize)|Возвращает размер границы панели подписи.|
-|[CMFCCaptionBar::GetButtonRect](#getbuttonrect)|Извлекает прямоугольник кнопки на панели заголовков.|
-|[CMFCCaptionBar::GetMargin](#getmargin)|Возвращает расстояние между краем элементов панели подписи и краем управления панели подписи.|
-|[CMFCCaptionBar::IsMessageBarMode](#ismessagebarmode)|Определяет, находится ли панель подписей в режиме панели сообщений.|
-|[CMFCCaptionBar::RemoveBitmap](#removebitmap)|Удаляет изображение биткарты из панели заголовков.|
-|[CMFCCaptionBar::Удалить кнопку](#removebutton)|Удаляет кнопку из панели заголовков.|
-|[CMFCCaptionBar::RemoveIcon](#removeicon)|Удаляет значок из панели подписей.|
-|[CMFCCaptionBar::RemoveText](#removetext)|Удаляет текстовую метку из панели заголовков.|
-|[CMFCCaptionBar::SetBitmap](#setbitmap)|Устанавливает изображение биткарты для панели подписей.|
-|[CMFCCaptionBar::SetBorderSize](#setbordersize)|Устанавливает размер границы панели подписи.|
-|[CMFCCaptionBar::SetButton](#setbutton)|Устанавливает кнопку для панели подписей.|
-|[CMFCCaptionBar::SetButton](#setbuttonpressed)|Определяет, остается ли кнопка нажатой.|
-|[CMFCCaptionBar::SetButtonToolTip](#setbuttontooltip)|Устанавливает набор инструментов для кнопки.|
-|[CMFCCaptionBar::SetFlatBorder](#setflatborder)|Устанавливает пограничный стиль панели подписей.|
-|[CMFCCaptionBar::SetIcon](#seticon)|Устанавливает значок для панели подписей.|
-|[CMFCCaptionBar::SetImageToolTip](#setimagetooltip)|Устанавливает набор инструментов для изображения для панели подписей.|
-|[CMFCCaptionBar::SetMargin](#setmargin)|Устанавливает расстояние между краем элемента панели подписи и краем управления панели подписи.|
-|[CMFCCaptionBar::SetText](#settext)|Устанавливает текстовую метку для панели подписей.|
+|[CMFCCaptionBar:: Create](#create)|Создает элемент управления "заголовок заголовка" и прикрепляет его к `CMFCCaptionBar` объекту.|
+|[CMFCCaptionBar::DoesAllowDynInsertBefore](#doesallowdyninsertbefore)|Указывает, можно ли динамически вставлять другую панель между заголовком и ее родительским фреймом. (Переопределяет [CBasePane::D оесалловдининсертбефоре](../../mfc/reference/cbasepane-class.md#doesallowdyninsertbefore).)|
+|[CMFCCaptionBar:: Енаблебуттон](#enablebutton)|Включает или отключает кнопку в строке заголовка.|
+|[CMFCCaptionBar:: Alignment](#getalignment)|Возвращает выравнивание указанного элемента.|
+|[CMFCCaptionBar:: Жетбордерсизе](#getbordersize)|Возвращает размер границы заголовка.|
+|[CMFCCaptionBar:: Жетбуттонрект](#getbuttonrect)|Извлекает ограничивающий прямоугольник кнопки в строке заголовка.|
+|[CMFCCaptionBar:: Margin](#getmargin)|Возвращает расстояние между границей элементов строки заголовка и границей элемента управления "заголовок".|
+|[CMFCCaptionBar:: Исмессажебармоде](#ismessagebarmode)|Указывает, находится ли строка заголовка в режиме панели сообщений.|
+|[CMFCCaptionBar:: Ремовебитмап](#removebitmap)|Удаляет растровое изображение из строки заголовка.|
+|[CMFCCaptionBar:: Ремовебуттон](#removebutton)|Удаляет кнопку из строки заголовка.|
+|[CMFCCaptionBar:: Ремовеикон](#removeicon)|Удаляет значок из строки заголовка.|
+|[CMFCCaptionBar:: Ремоветекст](#removetext)|Удаляет текстовую метку из строки заголовка.|
+|[CMFCCaptionBar:: Сетбитмап](#setbitmap)|Задает точечный рисунок для заголовка.|
+|[CMFCCaptionBar:: Сетбордерсизе](#setbordersize)|Задает размер границы заголовка.|
+|[CMFCCaptionBar:: Сетбуттон](#setbutton)|Задает кнопку для строки заголовка.|
+|[CMFCCaptionBar:: Сетбуттонпрессед](#setbuttonpressed)|Указывает, оставалась ли нажата кнопка.|
+|[CMFCCaptionBar:: Сетбуттонтултип](#setbuttontooltip)|Задает подсказку для кнопки.|
+|[CMFCCaptionBar:: Сетфлатбордер](#setflatborder)|Задает стиль границы заголовка.|
+|[CMFCCaptionBar:: Сетикон](#seticon)|Задает значок для строки заголовка.|
+|[CMFCCaptionBar:: Сетимажетултип](#setimagetooltip)|Задает подсказку для изображения в строке заголовка.|
+|[CMFCCaptionBar:: Сетмаргин](#setmargin)|Задает расстояние между границей элемента заголовка и границей элемента управления "заголовок".|
+|[CMFCCaptionBar:: SetText](#settext)|Задает текстовую метку для строки заголовка.|
 
 ### <a name="protected-methods"></a>Защищенные методы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CMFCCaptionBar::Ondrawbackground](#ondrawbackground)|Вызывается рамки для заполнения фона подписи бар.|
-|[CMFCCaptionBar::OndrawBorder](#ondrawborder)|Вызывается рамки, чтобы нарисовать границу подписи бар.|
-|[CMFCCaptionBar::OndrawButton](#ondrawbutton)|Вызывается по фреймворку, чтобы нарисовать кнопку заголовок бар.|
-|[CMFCCaptionBar::OndrawImage](#ondrawimage)|Вызывается рамки, чтобы нарисовать изображение заголовка бара.|
-|[CMFCCaptionBar::OndrawText](#ondrawtext)|Вызывается по фреймворку, чтобы нарисовать текст заголовка бара.|
+|[CMFCCaptionBar:: Ондравбаккграунд](#ondrawbackground)|Вызывается платформой для заполнения фона строки заголовка.|
+|[CMFCCaptionBar:: Ондравбордер](#ondrawborder)|Вызывается платформой для отрисовки границы заголовка.|
+|[CMFCCaptionBar:: Ондравбуттон](#ondrawbutton)|Вызывается структурой для рисования кнопки строки заголовка.|
+|[CMFCCaptionBar:: Ондравимаже](#ondrawimage)|Вызывается структурой для отрисовки изображения в строке заголовка.|
+|[CMFCCaptionBar:: Ондравтекст](#ondrawtext)|Вызывается платформой для рисования текста строки заголовка.|
 
 ### <a name="data-members"></a>Элементы данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CMFCCaptionBar::m_clrBarBackground](#m_clrbarbackground)|Цвет фона панели заголовка.|
-|[CMFCCaptionBar::m_clrBarBorder](#m_clrbarborder)|Цвет границы панели подписи.|
-|[CMFCCaptionBar::m_clrBarText](#m_clrbartext)|Цвет текста заголовка бара.|
+|[CMFCCaptionBar:: m_clrBarBackground](#m_clrbarbackground)|Цвет фона строки заголовка.|
+|[CMFCCaptionBar:: m_clrBarBorder](#m_clrbarborder)|Цвет границы заголовка.|
+|[CMFCCaptionBar:: m_clrBarText](#m_clrbartext)|Цвет текста заголовка.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Чтобы создать панель подписей, выполните следующие действия:
+Чтобы создать заголовок, выполните следующие действия.
 
-1. Постройте `CMFCCaptionBar` объект. Как правило, панель заголовков добавляется в класс окна кадра.
+1. Создайте `CMFCCaptionBar` объект. Как правило, строка заголовка добавляется в класс окна фрейма.
 
-1. Позвоните в [CMFCCaptionBar::Создать](#create) метод для создания управления `CMFCCaptionBar` заголовком и прикрепить его к объекту.
+1. Вызовите метод [CMFCCaptionBar:: Create](#create) , чтобы создать элемент управления "заголовок заголовка" и присоединить его к `CMFCCaptionBar` объекту.
 
-1. Позвоните [CMFCCaptionBar::SetButton](#setbutton), [CMFCCaptionBar::SetText](#settext), [CMFCCaptionBar::SetIcon](#seticon), и [CMFCCaptionBar::SetBitmap](#setbitmap) установить элементы подписи бар.
+1. Вызовите [CMFCCaptionBar:: сетбуттон](#setbutton), [CMFCCaptionBar:: SetText](#settext), [CMFCCaptionBar:: Сетикон](#seticon)и [CMFCCaptionBar:: сетбитмап](#setbitmap) , чтобы задать элементы строки заголовка.
 
-При установке элемента кнопки необходимо назначить кнопку идентификатор команды. Когда пользователь нажимает на кнопку, панель подписей направляет WM_COMMAND сообщений, которые имеют этот идентификатор, в окно родительской рамы.
+При задании элемента Button необходимо назначить кнопке идентификатор команды. Когда пользователь нажимает кнопку, строка заголовка направляет WM_COMMAND сообщения с этим ИДЕНТИФИКАТОРом в родительское окно фрейма.
 
-Панель подписей также может работать в режиме панели сообщений, которая эмулирует панель сообщений, которая отображается в приложениях Microsoft Office 2007. В режиме панели сообщений панель подписей отображает битную карту, сообщение и кнопку (которая обычно открывает диалоговое окно). Вы можете назначить набор инструментов для бит-карты.
+Панель заголовка может также работать в режиме панели сообщений, который эмулирует панель сообщений, отображаемую в Microsoft Office приложениях 2007. В режиме панели сообщений в строке заголовка отображается точечный рисунок, сообщение и кнопка (обычно открывается диалоговое окно). К точечному рисунку можно назначить подсказку.
 
-Чтобы включить режим панели сообщений, позвоните [cmFCCaptionBar::Создайте](#create) и установите четвертый параметр (bIsMessageBarMode) в TRUE.
+Чтобы включить режим панели сообщений, вызовите метод [CMFCCaptionBar:: Create](#create) и установите для четвертого параметра (бисмессажебармоде) значение true.
 
 ## <a name="example"></a>Пример
 
-В приведенном ниже примере демонстрируется использование различных методов класса `CMFCCaptionBar` . На примере показано, как создать контроль панели подписей, установить 3D-границу панели подписей, установить расстояние, в пикселях, между краем элементов панели заголовка и краем управления заголовком, установить кнопку для панели подписи, установить набор инструментов для кнопки, установить текстовую метку для панели подписи, установить изображение биткарты для панели подписи , и установить набор инструментов для изображения в подписи бар. Этот фрагмент кода является частью [образца MS Office 2007 Demo.](../../overview/visual-cpp-samples.md)
+В приведенном ниже примере демонстрируется использование различных методов класса `CMFCCaptionBar` . В этом примере показано, как создать элемент управления "заголовок заголовка", задать трехмерную границу строки заголовка, задать расстояние в пикселях между границей элементов строки заголовка и краем элемента управления "заголовок заголовка", установить кнопку для строки заголовка, задать всплывающую подсказку для кнопки, задать текстовую метку для строки заголовка, установить точечный рисунок и задайте подсказку для изображения в строке заголовка. Этот фрагмент кода является частью [демонстрационного примера MS Office 2007](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#1](../../mfc/reference/codesnippet/cpp/cmfccaptionbar-class_1.h)]
 [!code-cpp[NVC_MFC_MSOffice2007Demo#2](../../mfc/reference/codesnippet/cpp/cmfccaptionbar-class_2.cpp)]
@@ -169,11 +170,11 @@ class CMFCCaptionBar : public CPane
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxcaptionbar.h
+**Заголовок:** афкскаптионбар. h
 
-## <a name="cmfccaptionbarcreate"></a><a name="create"></a>CMFCCaptionBar::Создание
+## <a name="cmfccaptionbarcreate"></a><a name="create"></a> CMFCCaptionBar:: Create
 
-Создает управление заголовком и прикрепляет его к объекту. `CMFCCaptionBar`
+Создает элемент управления "заголовок заголовка" и прикрепляет его к `CMFCCaptionBar` объекту.
 
 ```
 BOOL Create(
@@ -186,32 +187,32 @@ BOOL Create(
 
 ### <a name="parameters"></a>Параметры
 
-*dwStyle*<br/>
-Логическое или сочетание стилей заголовка.
+*двстиле*<br/>
+Логическое или сочетание стилей заголовков.
 
-*pParentWnd*<br/>
-Родительское окно управления заголовком.
+*ппарентвнд*<br/>
+Родительское окно элемента управления "заголовок" заголовка.
 
-*Uid*<br/>
-Id управления заголовком.
+*Такой*<br/>
+Идентификатор элемента управления "заголовок" заголовка.
 
-*nВысота*<br/>
-Высота, в пикселях, управления заголовком. Если это -1, высота рассчитывается в зависимости от высоты значка, текста и кнопки, что управление заголовком подписи отображает.
+*нхеигхт*<br/>
+Высота элемента управления "заголовок" в пикселях. Если значение равно-1, то высота вычисляется в соответствии с высотой значка, текстом и кнопкой, отображаемой в элементе управления "заголовок" заголовка.
 
-*bIsMessageBarMode*<br/>
-TRUE, если панель подписей находится в режиме панели сообщений; FALSE в противном случае.
+*бисмессажебармоде*<br/>
+Значение TRUE, если строка заголовка находится в режиме панели сообщений; В противном случае — значение FALSE.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если контроль подписи бар создан успешно; FALSE в противном случае.
+Значение TRUE, если элемент управления "заголовок заголовка" успешно создан; В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вы строите `CMFCCaptionBar` объект в два этапа. Сначала вы вызываете конструктор, а `Create` затем вызываете метод, который создает управление `CMFCCaptionBar` Windows и прикрепляет его к объекту.
+`CMFCCaptionBar`Объект создается в два этапа. Сначала вызывается конструктор, а затем вызывается `Create` метод, который создает элемент управления Windows и прикрепляет его к `CMFCCaptionBar` объекту.
 
-## <a name="cmfccaptionbardoesallowdyninsertbefore"></a><a name="doesallowdyninsertbefore"></a>CMFCCaptionBar: :DoesAllowDynInsertBefore
+## <a name="cmfccaptionbardoesallowdyninsertbefore"></a><a name="doesallowdyninsertbefore"></a> CMFCCaptionBar::D Оесалловдининсертбефоре
 
-Указывает, можно ли динамически вставить другую панель панели подписей и родительский кадр.
+Указывает, можно ли динамически вставлять другую панель между заголовком и ее родительским фреймом.
 
 ```
 virtual BOOL DoesAllowDynInsertBefore() const;
@@ -219,13 +220,13 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает FALSE, если не переопределена.
+Возвращает значение FALSE, если не переопределено.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfccaptionbarenablebutton"></a><a name="enablebutton"></a>CMFCCaptionBar::EnableButton
+## <a name="cmfccaptionbarenablebutton"></a><a name="enablebutton"></a> CMFCCaptionBar:: Енаблебуттон
 
-Включает или отсваивает кнопку на панели подписей.
+Включает или отключает кнопку в строке заголовка.
 
 ```cpp
 void EnableButton(BOOL bEnable=TRUE);
@@ -234,9 +235,9 @@ void EnableButton(BOOL bEnable=TRUE);
 ### <a name="parameters"></a>Параметры
 
 *bEnable*<br/>
-(в) ПРАВДА, чтобы включить кнопку, FALSE отключить кнопку.
+окне Значение TRUE, чтобы включить кнопку; значение FALSE, чтобы отключить кнопку.
 
-## <a name="cmfccaptionbargetalignment"></a><a name="getalignment"></a>CMFCCaptionBar::GetAlignment
+## <a name="cmfccaptionbargetalignment"></a><a name="getalignment"></a> CMFCCaptionBar:: Alignment
 
 Возвращает выравнивание указанного элемента.
 
@@ -247,15 +248,15 @@ BarElementAlignment GetAlignment(BarElement elem);
 ### <a name="parameters"></a>Параметры
 
 *Elem*<br/>
-(в) Элемент заголовка, для которого можно получить выравнивание.
+окне Элемент заголовка заголовка, для которого необходимо получить выравнивание.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Выравнивание элемента, например кнопки, битовой карты, текста или значка.
+Выравнивание элемента, например кнопки, точечного рисунка, текста или значка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Выравнивание элемента может быть одним из следующих значений:
+Выравнивание элемента может иметь одно из следующих значений:
 
 - ALIGN_INVALID
 
@@ -265,9 +266,9 @@ BarElementAlignment GetAlignment(BarElement elem);
 
 - ALIGN_CENTER
 
-## <a name="cmfccaptionbargetbordersize"></a><a name="getbordersize"></a>CMFCCaptionBar::GetBorderSize
+## <a name="cmfccaptionbargetbordersize"></a><a name="getbordersize"></a> CMFCCaptionBar:: Жетбордерсизе
 
-Возвращает размер границы панели подписи.
+Возвращает размер границы заголовка.
 
 ```
 int GetBorderSize() const;
@@ -275,11 +276,11 @@ int GetBorderSize() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Размер границы, в пикселях.
+Размер границы в пикселях.
 
-## <a name="cmfccaptionbargetbuttonrect"></a><a name="getbuttonrect"></a>CMFCCaptionBar::GetButtonRect
+## <a name="cmfccaptionbargetbuttonrect"></a><a name="getbuttonrect"></a> CMFCCaptionBar:: Жетбуттонрект
 
-Извлекает прямоугольник кнопки на панели заголовков.
+Извлекает ограничивающий прямоугольник кнопки в строке заголовка.
 
 ```
 CRect GetButtonRect() const;
@@ -287,11 +288,11 @@ CRect GetButtonRect() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Объект, `CRect` содержащий координаты связующего прямоугольника кнопки на панели заголовков.
+`CRect`Объект, содержащий координаты ограничивающего прямоугольника кнопки в строке заголовка.
 
-## <a name="cmfccaptionbargetmargin"></a><a name="getmargin"></a>CMFCCaptionBar::GetMargin
+## <a name="cmfccaptionbargetmargin"></a><a name="getmargin"></a> CMFCCaptionBar:: Margin
 
-Возвращает расстояние между краем элементов панели подписи и краем управления панели подписи.
+Возвращает расстояние между границей элементов строки заголовка и границей элемента управления "заголовок".
 
 ```
 int GetMargin() const;
@@ -299,11 +300,11 @@ int GetMargin() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Расстояние, в пикселях, между краем элементов панели подписи и краем управления панели подписи.
+Расстояние (в пикселях) между границей элементов строки заголовка и границей элемента управления "заголовок".
 
-## <a name="cmfccaptionbarismessagebarmode"></a><a name="ismessagebarmode"></a>CMFCCaptionBar::IsMessageBarMode
+## <a name="cmfccaptionbarismessagebarmode"></a><a name="ismessagebarmode"></a> CMFCCaptionBar:: Исмессажебармоде
 
-Определяет, находится ли панель подписей в режиме панели сообщений.
+Указывает, находится ли строка заголовка в режиме панели сообщений.
 
 ```
 BOOL IsMessageBarMode() const;
@@ -311,39 +312,39 @@ BOOL IsMessageBarMode() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если панель подписей находится в режиме панели сообщений; FALSE в противном случае.
+Значение TRUE, если строка заголовка находится в режиме панели сообщений; В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-В режиме панели сообщений панель подписей отображает изображение с набором инструментов, текстом сообщения и кнопкой.
+В режиме панели сообщений в строке заголовка отображается изображение с подсказкой, текстом сообщения и кнопкой.
 
-## <a name="cmfccaptionbarm_clrbarbackground"></a><a name="m_clrbarbackground"></a>CMFCCaptionBar::m_clrBarBackground
+## <a name="cmfccaptionbarm_clrbarbackground"></a><a name="m_clrbarbackground"></a> CMFCCaptionBar:: m_clrBarBackground
 
-Цвет фона панели заголовка.
+Цвет фона строки заголовка.
 
 ```
 COLORREF m_clrBarBackground
 ```
 
-## <a name="cmfccaptionbarm_clrbarborder"></a><a name="m_clrbarborder"></a>CMFCCaptionBar::m_clrBarBorder
+## <a name="cmfccaptionbarm_clrbarborder"></a><a name="m_clrbarborder"></a> CMFCCaptionBar:: m_clrBarBorder
 
-Цвет границы панели подписи.
+Цвет границы заголовка.
 
 ```
 COLORREF m_clrBarBorder
 ```
 
-## <a name="cmfccaptionbarm_clrbartext"></a><a name="m_clrbartext"></a>CMFCCaptionBar::m_clrBarText
+## <a name="cmfccaptionbarm_clrbartext"></a><a name="m_clrbartext"></a> CMFCCaptionBar:: m_clrBarText
 
-Цвет текста заголовка бара.
+Цвет текста заголовка.
 
 ```
 COLORREF m_clrBarText
 ```
 
-## <a name="cmfccaptionbarondrawbackground"></a><a name="ondrawbackground"></a>CMFCCaptionBar::Ondrawbackground
+## <a name="cmfccaptionbarondrawbackground"></a><a name="ondrawbackground"></a> CMFCCaptionBar:: Ондравбаккграунд
 
-Вызывается рамки для заполнения фона подписи бар.
+Вызывается платформой для заполнения фона строки заголовка.
 
 ```
 virtual void OnDrawBackground(
@@ -353,21 +354,21 @@ virtual void OnDrawBackground(
 
 ### <a name="parameters"></a>Параметры
 
-*pDC*<br/>
-(в) Указатель на контекст устройства панели подписей.
+*Хозяин*<br/>
+окне Указатель на контекст устройства в строке заголовка.
 
 *rect*<br/>
-(в) Ограничивающий прямоугольник для заполнения.
+окне Ограничивающий прямоугольник для заполнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Метод `OnDrawBackground` вызывается, когда фон панели подписей вот-вот будет заполнен. Реализация по умолчанию заполняет фон с помощью [CMFCCaptionBar::m_clrBarBackground](#m_clrbarbackground) цвет.
+`OnDrawBackground`Метод вызывается при заполнении фона строки заголовка. Реализация по умолчанию заполняет фон с помощью цвета [CMFCCaptionBar:: m_clrBarBackground](#m_clrbarbackground) .
 
-Переопределить этот метод `CMFCCaptionBar` в производном классе, чтобы настроить внешний вид панели подписей.
+Переопределите этот метод в `CMFCCaptionBar` производном классе, чтобы настроить внешний вид строки заголовка.
 
-## <a name="cmfccaptionbarondrawborder"></a><a name="ondrawborder"></a>CMFCCaptionBar::OndrawBorder
+## <a name="cmfccaptionbarondrawborder"></a><a name="ondrawborder"></a> CMFCCaptionBar:: Ондравбордер
 
-Вызывается рамки, чтобы нарисовать границу подписи бар.
+Вызывается платформой для отрисовки границы заголовка.
 
 ```
 virtual void OnDrawBorder(
@@ -377,21 +378,21 @@ virtual void OnDrawBorder(
 
 ### <a name="parameters"></a>Параметры
 
-*pDC*<br/>
-(в) Контекст устройства, используемый для отображения границ.
+*Хозяин*<br/>
+окне Контекст устройства, используемый для отображения границ.
 
 *rect*<br/>
-(в) Ограничивающий прямоугольник.
+окне Ограничивающий прямоугольник.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию границы имеют плоский стиль.
 
-Переопределить этот метод `CMFCCaptionBar` в производном классе, чтобы настроить внешний вид границ панели подписей.
+Переопределите этот метод в `CMFCCaptionBar` производном классе, чтобы настроить внешний вид границ в строке заголовка.
 
-## <a name="cmfccaptionbarondrawbutton"></a><a name="ondrawbutton"></a>CMFCCaptionBar::OndrawButton
+## <a name="cmfccaptionbarondrawbutton"></a><a name="ondrawbutton"></a> CMFCCaptionBar:: Ондравбуттон
 
-Вызывается по фреймворку, чтобы нарисовать кнопку заголовок бар.
+Вызывается структурой для рисования кнопки строки заголовка.
 
 ```
 virtual void OnDrawButton(
@@ -403,25 +404,25 @@ virtual void OnDrawButton(
 
 ### <a name="parameters"></a>Параметры
 
-*pDC*<br/>
-(в) Указатель на контекст устройства, который используется для отображения кнопки.
+*Хозяин*<br/>
+окне Указатель на контекст устройства, используемый для вывода кнопки.
 
 *rect*<br/>
-(в) Ограничивающий прямоугольник кнопки.
+окне Ограничивающий прямоугольник кнопки.
 
-*strButton*<br/>
-(в) Текстовая метка кнопки.
+*стрбуттон*<br/>
+окне Текстовая метка кнопки.
 
-*bВСтои*<br/>
-(в) TRUE, если кнопка включена; FALSE в противном случае.
+*бенаблед*<br/>
+окне Значение TRUE, если кнопка включена; В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переопределить этот метод `CMFCCaptionBar` в производном классе, чтобы настроить внешний вид кнопки заголовка.
+Переопределите этот метод в `CMFCCaptionBar` производном классе, чтобы настроить внешний вид кнопки в строке заголовка.
 
-## <a name="cmfccaptionbarondrawimage"></a><a name="ondrawimage"></a>CMFCCaptionBar::OndrawImage
+## <a name="cmfccaptionbarondrawimage"></a><a name="ondrawimage"></a> CMFCCaptionBar:: Ондравимаже
 
-Вызывается рамки, чтобы нарисовать изображение заголовка бара.
+Вызывается структурой для отрисовки изображения в строке заголовка.
 
 ```
 virtual void OnDrawImage(
@@ -431,19 +432,19 @@ virtual void OnDrawImage(
 
 ### <a name="parameters"></a>Параметры
 
-*pDC*<br/>
-(в) Указатель на контекст устройства, используемый для отображения изображения.
+*Хозяин*<br/>
+окне Указатель на контекст устройства, используемый для вывода изображения.
 
 *rect*<br/>
-(в) Определяет ограничивающий прямоугольник изображения.
+окне Задает ограничивающий прямоугольник изображения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переопределить этот метод `CMFCCaptionBar` в производном классе, чтобы настроить внешний вид изображения.
+Переопределите этот метод в `CMFCCaptionBar` производном классе, чтобы настроить внешний вид изображения.
 
-## <a name="cmfccaptionbarondrawtext"></a><a name="ondrawtext"></a>CMFCCaptionBar::OndrawText
+## <a name="cmfccaptionbarondrawtext"></a><a name="ondrawtext"></a> CMFCCaptionBar:: Ондравтекст
 
-Вызывается по фреймворку, чтобы нарисовать текст заголовка бара.
+Вызывается платформой для рисования текста строки заголовка.
 
 ```
 virtual void OnDrawText(
@@ -454,60 +455,60 @@ virtual void OnDrawText(
 
 ### <a name="parameters"></a>Параметры
 
-*pDC*<br/>
-(в) Указатель на контекст устройства, который используется для отображения кнопки.
+*Хозяин*<br/>
+окне Указатель на контекст устройства, используемый для вывода кнопки.
 
 *rect*<br/>
-(в) Ограничивающий прямоугольник текста.
+окне Ограничивающий прямоугольник текста.
 
-*strText*<br/>
-(в) Текстовая строка для отображения.
+*стртекст*<br/>
+окне Отображаемая текстовая строка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Реализация по умолчанию отображает `CDC::DrawText` текст с помощью и [CMFCCaptionBar::m_clrBarText](#m_clrbartext) цвет.
+Реализация по умолчанию отображает текст с помощью `CDC::DrawText` и [CMFCCaptionBar:: m_clrBarText](#m_clrbartext) Color.
 
-Переопределить этот метод `CMFCCaptionBar` в производном классе, чтобы настроить внешний вид текста панели подписей.
+Переопределите этот метод в `CMFCCaptionBar` производном классе, чтобы настроить внешний вид текста в строке заголовка.
 
-## <a name="cmfccaptionbarremovebitmap"></a><a name="removebitmap"></a>CMFCCaptionBar::RemoveBitmap
+## <a name="cmfccaptionbarremovebitmap"></a><a name="removebitmap"></a> CMFCCaptionBar:: Ремовебитмап
 
-Удаляет изображение биткарты из панели заголовков.
+Удаляет растровое изображение из строки заголовка.
 
 ```cpp
 void RemoveBitmap();
 ```
 
-## <a name="cmfccaptionbarremovebutton"></a><a name="removebutton"></a>CMFCCaptionBar::Удалить кнопку
+## <a name="cmfccaptionbarremovebutton"></a><a name="removebutton"></a> CMFCCaptionBar:: Ремовебуттон
 
-Удаляет кнопку из панели заголовков.
+Удаляет кнопку из строки заголовка.
 
 ```cpp
 void RemoveButton();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Расположение элементов панели подписей корректируется автоматически.
+Макет элементов строки заголовка корректируется автоматически.
 
-## <a name="cmfccaptionbarremoveicon"></a><a name="removeicon"></a>CMFCCaptionBar::RemoveIcon
+## <a name="cmfccaptionbarremoveicon"></a><a name="removeicon"></a> CMFCCaptionBar:: Ремовеикон
 
-Удаляет значок из панели подписей.
+Удаляет значок из строки заголовка.
 
 ```cpp
 void RemoveIcon();
 ```
 
-## <a name="cmfccaptionbarremovetext"></a><a name="removetext"></a>CMFCCaptionBar::RemoveText
+## <a name="cmfccaptionbarremovetext"></a><a name="removetext"></a> CMFCCaptionBar:: Ремоветекст
 
-Удаляет текстовую метку из панели заголовков.
+Удаляет текстовую метку из строки заголовка.
 
 ```cpp
 void RemoveText();
 ```
 
-## <a name="cmfccaptionbarsetbitmap"></a><a name="setbitmap"></a>CMFCCaptionBar::SetBitmap
+## <a name="cmfccaptionbarsetbitmap"></a><a name="setbitmap"></a> CMFCCaptionBar:: Сетбитмап
 
-Устанавливает изображение биткарты для панели подписей.
+Задает точечный рисунок для заголовка.
 
 ```cpp
 void SetBitmap(
@@ -525,25 +526,25 @@ void SetBitmap(
 
 ### <a name="parameters"></a>Параметры
 
-*hBitmap*<br/>
-(в) Ручка к биткарте для установки.
+*хбитмап*<br/>
+окне Заданный для изображения маркер.
 
-*clrПрозрачный*<br/>
-(в) Значение RGB, которое определяет прозрачный цвет битной карты.
+*клртранспарент*<br/>
+окне Значение RGB, указывающее прозрачный цвет точечного рисунка.
 
-*bStretch*<br/>
-(в) Если true, бит-карта растягивается, если она не подходит для прямоугольника, ограничивающего изображение. В противном случае биткарта не растягивается.
+*бстретч*<br/>
+окне Если значение — TRUE, точечный рисунок растягивается, если он не умещается в прямоугольнике, ограничивающем изображение. В противном случае точечный рисунок не растягивается.
 
-*bmpВыравнива*<br/>
-(в) Выравнивание бит-карты.
+*бмпалигнмент*<br/>
+окне Выравнивание растрового изображения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте этот метод, чтобы установить битную карту на панели заголовков.
+Используйте этот метод, чтобы задать точечный рисунок в строке заголовка.
 
-Предыдущая битовая карта уничтожается автоматически. Если в подписи бар отображается значок, потому что вы называете [CMFCCaptionBar::SetIcon](#seticon) метод, bitmap не будет отображаться, если вы удалите значок, позвонив [CMFCCaptionBar::RemoveIcon](#removeicon).
+Предыдущее растровое изображение уничтожается автоматически. Если в строке заголовка отображается значок, так как вы вызвали метод [CMFCCaptionBar:: сетикон](#seticon) , битовая карта не будет отображаться, если не удалить значок путем вызова [CMFCCaptionBar:: ремовеикон](#removeicon).
 
-Битовая карта выравнивается в соответствии с параметром *bmpAlignment.*  Этот параметр может принимать одно из следующих значений `BarElementAlignment`:
+Битовая карта выстраивается, как указано параметром *бмпалигнмент* .  Этот параметр может принимать одно из следующих значений `BarElementAlignment`:
 
 - ALIGN_INVALID
 
@@ -553,9 +554,9 @@ void SetBitmap(
 
 - ALIGN_CENTER
 
-## <a name="cmfccaptionbarsetbordersize"></a><a name="setbordersize"></a>CMFCCaptionBar::SetBorderSize
+## <a name="cmfccaptionbarsetbordersize"></a><a name="setbordersize"></a> CMFCCaptionBar:: Сетбордерсизе
 
-Устанавливает размер границы панели подписи.
+Задает размер границы заголовка.
 
 ```cpp
 void SetBorderSize(int nSize);
@@ -563,12 +564,12 @@ void SetBorderSize(int nSize);
 
 ### <a name="parameters"></a>Параметры
 
-*Nsize*<br/>
-(в) Новый размер, в пикселях, границы панели заголовка.
+*нсизе*<br/>
+окне Новый размер границы заголовка в пикселях.
 
-## <a name="cmfccaptionbarsetbutton"></a><a name="setbutton"></a>CMFCCaptionBar::SetButton
+## <a name="cmfccaptionbarsetbutton"></a><a name="setbutton"></a> CMFCCaptionBar:: Сетбуттон
 
-Устанавливает кнопку для панели подписей.
+Задает кнопку для строки заголовка.
 
 ```cpp
 void SetButton(
@@ -580,21 +581,21 @@ void SetButton(
 
 ### <a name="parameters"></a>Параметры
 
-*lpszLabel*<br/>
+*лпсзлабел*<br/>
 Метка команды кнопки.
 
-*uiCmdUI*<br/>
+*уикмдуи*<br/>
 Идентификатор команды кнопки.
 
-*btnAlignmnet*<br/>
+*бтналигнмнет*<br/>
 Выравнивание кнопки.
 
-*bHasDropDownArrow*<br/>
-ПРАВДА, если кнопка отображает падение вниз стрелка, FALSE в противном случае.
+*бхасдропдовнарров*<br/>
+Значение TRUE, если кнопка отображает стрелку раскрывающегося списка; в противном случае — значение FALSE.
 
-## <a name="cmfccaptionbarsetbuttonpressed"></a><a name="setbuttonpressed"></a>CMFCCaptionBar::SetButton
+## <a name="cmfccaptionbarsetbuttonpressed"></a><a name="setbuttonpressed"></a> CMFCCaptionBar:: Сетбуттонпрессед
 
-Определяет, остается ли кнопка нажатой.
+Указывает, оставалась ли нажата кнопка.
 
 ```cpp
 void SetButtonPressed(BOOL bPresed=TRUE);
@@ -602,12 +603,12 @@ void SetButtonPressed(BOOL bPresed=TRUE);
 
 ### <a name="parameters"></a>Параметры
 
-*bPresed*<br/>
-ПРАВДА, если кнопка сохраняет свое нажатое состояние, FALSE в противном случае.
+*бпресед*<br/>
+Значение TRUE, если кнопка сохраняет нажатое состояние, и FALSE в противном случае.
 
-## <a name="cmfccaptionbarsetbuttontooltip"></a><a name="setbuttontooltip"></a>CMFCCaptionBar::SetButtonToolTip
+## <a name="cmfccaptionbarsetbuttontooltip"></a><a name="setbuttontooltip"></a> CMFCCaptionBar:: Сетбуттонтултип
 
-Устанавливает набор инструментов для кнопки.
+Задает подсказку для кнопки.
 
 ```cpp
 void SetButtonToolTip(
@@ -618,14 +619,14 @@ void SetButtonToolTip(
 ### <a name="parameters"></a>Параметры
 
 *lpszToolTip*<br/>
-(в) Подпись к инструменту.
+окне Заголовок подсказки.
 
-*lpszОписание*<br/>
-(в) Описание инструментария.
+*лпсздескриптион*<br/>
+окне Описание подсказки.
 
-## <a name="cmfccaptionbarsetflatborder"></a><a name="setflatborder"></a>CMFCCaptionBar::SetFlatBorder
+## <a name="cmfccaptionbarsetflatborder"></a><a name="setflatborder"></a> CMFCCaptionBar:: Сетфлатбордер
 
-Устанавливает пограничный стиль панели подписей.
+Задает стиль границы заголовка.
 
 ```cpp
 void SetFlatBorder(BOOL bFlat=TRUE);
@@ -633,12 +634,12 @@ void SetFlatBorder(BOOL bFlat=TRUE);
 
 ### <a name="parameters"></a>Параметры
 
-*bFlat*<br/>
-(в) ПРАВДА, если граница подписи бар плоский. FALSE, если граница 3D.
+*бфлат*<br/>
+окне Значение TRUE, если граница строки заголовка плоская. Значение FALSE, если граница является трехмерной.
 
-## <a name="cmfccaptionbarseticon"></a><a name="seticon"></a>CMFCCaptionBar::SetIcon
+## <a name="cmfccaptionbarseticon"></a><a name="seticon"></a> CMFCCaptionBar:: Сетикон
 
-Устанавливает значок для панели подписей.
+Задает значок для строки заголовка.
 
 ```cpp
 void SetIcon(
@@ -649,16 +650,16 @@ void SetIcon(
 ### <a name="parameters"></a>Параметры
 
 *hIcon*<br/>
-(в) Ручка к значку для установки.
+окне Описатель для задания значка.
 
-*iconAlignment*<br/>
-(в) Выравнивание значка.
+*иконалигнмент*<br/>
+окне Выравнивание значка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Подписи бары могут отображать либо значки или bitmaps. Смотрите [CMFCCaptionBar::SetBitmap,](#setbitmap) чтобы узнать, как отобразить бит-карту. Если вы установите иконку и битную карту, значок всегда отображается. Позвоните [CMFCCaptionBar::RemoveIcon,](#removeicon) чтобы удалить значок из панели подписей.
+В панелях заголовка могут отображаться значки или растровые изображения. Сведения о том, как отобразить точечный рисунок, см. в разделе [CMFCCaptionBar:: сетбитмап](#setbitmap) . Если заданы как значок, так и точечный рисунок, значок всегда отображается. Вызовите [CMFCCaptionBar:: ремовеикон](#removeicon) , чтобы удалить значок из строки заголовка.
 
-Значок выровнен в соответствии с параметром *iconAlignment.* Это может быть одно `BarElementAlignment` из следующих значений:
+Значок выстраивается в соответствии с параметром *иконалигнмент* . Может принимать одно из следующих `BarElementAlignment` значений:
 
 - ALIGN_INVALID
 
@@ -668,9 +669,9 @@ void SetIcon(
 
 - ALIGN_CENTER
 
-## <a name="cmfccaptionbarsetimagetooltip"></a><a name="setimagetooltip"></a>CMFCCaptionBar::SetImageToolTip
+## <a name="cmfccaptionbarsetimagetooltip"></a><a name="setimagetooltip"></a> CMFCCaptionBar:: Сетимажетултип
 
-Устанавливает набор инструментов для изображения в панели заголовков.
+Задает подсказку для изображения в строке заголовка.
 
 ```cpp
 void SetImageToolTip(
@@ -681,14 +682,14 @@ void SetImageToolTip(
 ### <a name="parameters"></a>Параметры
 
 *lpszToolTip*<br/>
-(в) Текст инструментария.
+окне Текст подсказки.
 
-*lpszОписание*<br/>
-(в) Описание инструментария.
+*лпсздескриптион*<br/>
+окне Описание подсказки.
 
-## <a name="cmfccaptionbarsetmargin"></a><a name="setmargin"></a>CMFCCaptionBar::SetMargin
+## <a name="cmfccaptionbarsetmargin"></a><a name="setmargin"></a> CMFCCaptionBar:: Сетмаргин
 
-Устанавливает расстояние между краем элемента панели подписи и краем управления панели подписи.
+Задает расстояние между границей элемента заголовка и границей элемента управления "заголовок".
 
 ```cpp
 void SetMargin(int nMargin);
@@ -696,12 +697,12 @@ void SetMargin(int nMargin);
 
 ### <a name="parameters"></a>Параметры
 
-*nМаржа*<br/>
-(в) Расстояние, в пикселях, между краем элементов панели подписи и краем управления панели подписи.
+*нмаргин*<br/>
+окне Расстояние (в пикселях) между границей элементов строки заголовка и границей элемента управления "заголовок".
 
-## <a name="cmfccaptionbarsettext"></a><a name="settext"></a>CMFCCaptionBar::SetText
+## <a name="cmfccaptionbarsettext"></a><a name="settext"></a> CMFCCaptionBar:: SetText
 
-Устанавливает текстовую метку для панели подписей.
+Задает текстовую метку для строки заголовка.
 
 ```cpp
 void SetText(
@@ -711,15 +712,15 @@ void SetText(
 
 ### <a name="parameters"></a>Параметры
 
-*strText*<br/>
-(в) Текст строки для установки.
+*стртекст*<br/>
+окне Текстовая строка, которую необходимо задать.
 
 *textAlignment*<br/>
-(в) Выравнивание текста.
+окне Выравнивание текста.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Текстовая метка выравнивается по параметру *textAlignment.* Это может быть одно `BarElementAlignment` из следующих значений:
+Текстовая метка выстраивается по указанному параметру *TextAlignment* . Может принимать одно из следующих `BarElementAlignment` значений:
 
 - ALIGN_INVALID
 
@@ -731,5 +732,5 @@ void SetText(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)

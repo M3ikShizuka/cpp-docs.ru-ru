@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: out (C++)'
 title: out (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - out attribute
 ms.assetid: 5051b1bf-4949-4bf1-b82f-35e14f0f244b
-ms.openlocfilehash: b99e520a11c2e8110d2e63fa85ddb1dd444e56e6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1984d3bc539c5ad390cc1e507f2c8e3144d96ca2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837103"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329701"
 ---
 # <a name="out-c"></a>out (C++)
 
@@ -47,4 +48,4 @@ ms.locfileid: "88837103"
 [Атрибуты IDL](idl-attributes.md)<br/>
 [Атрибуты параметра](parameter-attributes.md)<br/>
 [максимально](defaultvalue.md)<br/>
-[идентификатор](id.md)
+[id](id.md)

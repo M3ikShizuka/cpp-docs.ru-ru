@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: получение указателей на буферы данных (C++/CX)'
 title: Получение указателей на буферы данных (C++/CX)
 ms.date: 11/19/2018
 ms.assetid: db4f9370-dd95-4896-b5b8-4b202284f579
-ms.openlocfilehash: 0b5163dd111adfe5c745a1ad3bbcdc06a675c52c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d4fc883d7a7d0bae5d72c6aabd42446c74162c42
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87185545"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328933"
 ---
 # <a name="obtaining-pointers-to-data-buffers-ccx"></a>Получение указателей на буферы данных (C++/CX)
 
@@ -49,7 +50,7 @@ byte* Class1::GetPointerToPixelData(IBuffer^ pixelBuffer, unsigned int *length)
 }
 ```
 
-## <a name="complete-example"></a>Пример целиком
+## <a name="complete-example"></a>Полный пример
 
 Ниже показано, как создать приложение универсальная платформа Windows C#, которое передает в `WriteableBitmap` библиотеку DLL компонента C++ среда выполнения Windows. Код C++ получает указатель на буфер пикселя, выполняющий простое изменение изображения на месте. В качестве альтернативы можно создать клиентское приложение на языке Visual Basic, JavaScript или C++, а не на C#. При использовании C++ нет необходимости в компоненте DLL; можно просто добавить эти методы непосредственно в класс MainPage или в какие-либо другие классы.
 

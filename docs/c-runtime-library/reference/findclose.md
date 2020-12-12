@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _findclose'
 title: _findclose
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - _findclose function
 - findclose function
 ms.assetid: 9216c573-0878-444c-b5d7-cdaf16fb9163
-ms.openlocfilehash: dffe2ff71f1eecaec78c75867ebb7e34a963ee3a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 389a8aaf55605a1d9e3193c86ce500bf313fd631
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911799"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329196"
 ---
 # <a name="_findclose"></a>_findclose
 
@@ -56,7 +57,7 @@ int _findclose(
 
 В случае успеха **_findclose** возвращает 0. В противном случае возвращается значение-1 **и устанавливается значение** **еноент**, указывающее, что больше не удалось найти соответствующие файлы.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -71,4 +72,4 @@ int _findclose(
 ## <a name="see-also"></a>См. также раздел
 
 [Системные вызовы](../../c-runtime-library/system-calls.md)<br/>
-[Функции поиска имени файла](../../c-runtime-library/filename-search-functions.md)<br/>
+[Функции поиска имен файлов](../../c-runtime-library/filename-search-functions.md)<br/>

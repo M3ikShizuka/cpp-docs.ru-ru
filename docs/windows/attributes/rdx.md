@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о: RDX'
 title: RDX (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - rdx attribute
 ms.assetid: ff8e4312-c1ad-4934-bdaa-86f54409651e
-ms.openlocfilehash: f61eaf535102c8885e828176434acf221dfe2457
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7d31e33bcc1883bfb787b21ec8f5c1f8bed60208
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836885"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329641"
 ---
 # <a name="rdx"></a>rdx
 
@@ -34,7 +35,7 @@ ms.locfileid: "88836885"
 *регтипе*<br/>
 Тип добавляемого раздела реестра. Может быть одним из следующих: `text` , `dword` , `binary` или `CString` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Атрибут **RDX** C++ создает или изменяет существующий раздел реестра для COM-компонента. Атрибут добавляет BEGIN_RDX_MAPный макрос к объекту, реализующему целевой элемент. `RegistryDataExchange`, функция, вставленная в результате макроса BEGIN_RDX_MAP, может использоваться для перемещения данных между реестром и элементами данных.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CDataConnection Class'
 title: Класс CDataConnection
 ms.date: 03/27/2019
 f1_keywords:
@@ -61,12 +62,12 @@ helpviewer_keywords:
 - operator CSession*
 - CSession* operator
 ms.assetid: 77432d85-4e20-49ec-a0b0-142137828471
-ms.openlocfilehash: c456f4bf5891f550fcd9523fa376333d66e079a6
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 7cdcb681c40d1ef4e93baee5dc4e4395e6ea9c5e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509106"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328802"
 ---
 # <a name="cdataconnection-class"></a>Класс CDataConnection
 
@@ -95,7 +96,7 @@ class CDataConnection
 
 ### <a name="operators"></a>Операторы
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[BOOL, оператор](#op_bool)|Определяет, открыт ли текущий сеанс.|
 |[bool, оператор](#op_bool_ole)|Определяет, открыт ли текущий сеанс.|
@@ -104,7 +105,7 @@ class CDataConnection
 |[Оператор CSession&](#op_csession_amp)|Возвращает ссылку на содержащийся `CSession` объект.|
 |[оператор CSession*](#op_csession_star)|Возвращает указатель на содержащийся `CSession` объект.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `CDataConnection` — Это полезный класс для создания клиентов, поскольку он инкапсулирует необходимые объекты (источник данных и сеанс) и часть работы, которую необходимо выполнить при подключении к источнику данных.
 
@@ -131,7 +132,7 @@ CDataConnection(const CDataConnection &ds);
 *DS*<br/>
 окне Ссылка на существующее подключение к данным.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первое переопределение создает новый `CDataConnection` объект с параметрами по умолчанию.
 
@@ -186,7 +187,7 @@ HRESULT OpenNewSession(CSession & session) throw();
 *сессии*<br/>
 [вход/выход] Ссылка на новый объект Session.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В новом сеансе в качестве родительского объекта используется объект источника данных текущего соединения, который может получить доступ ко всем тем же данным, что и источник данных.
 

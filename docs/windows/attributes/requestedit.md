@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: рекуестедит'
 title: рекуестедит (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - requestedit attribute
 ms.assetid: b3c24790-3c4a-4646-8722-03d7b51172ee
-ms.openlocfilehash: d5cf2bb8fab75c64d74a2f28964b3019200dad51
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4511777077d573831c7cd04623b010cae5e0e108
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846021"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329637"
 ---
 # <a name="requestedit"></a>requestedit
 
@@ -29,7 +30,7 @@ ms.locfileid: "88846021"
 
 ## <a name="example"></a>Пример
 
-Пример использования **рекуестедит**см. в примере для [привязки](bindable.md) .
+Пример использования **рекуестедит** см. в примере для [привязки](bindable.md) .
 
 ## <a name="requirements"></a>Требования
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: работа с диалоговыми окнами в MFC'
 title: Работа с диалоговыми окнами в MFC
 ms.date: 09/27/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], life cycle
 - life cycle of dialog boxes [MFC]
 ms.assetid: e16fd78e-238d-4f31-8c9d-8564f3953bd9
-ms.openlocfilehash: d365be21ef19a6779df649e9368fdc0cda4851df
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 5e88d34ab26f8abd24923aacafa02c3c62ec7f06
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621446"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327789"
 ---
 # <a name="working-with-dialog-boxes-in-mfc"></a>Работа с диалоговыми окнами в MFC
 
@@ -37,7 +38,7 @@ ms.locfileid: "84621446"
 
 - [Инициализация диалогового окна](initializing-the-dialog-box.md)
 
-- [Обработка сообщений Windows в диалоговом окне](handling-windows-messages-in-your-dialog-box.md)
+- [Обработка сообщений Windows для диалогового окна](handling-windows-messages-in-your-dialog-box.md)
 
 - [Извлечение данных из объекта диалогового окна](retrieving-data-from-the-dialog-object.md)
 

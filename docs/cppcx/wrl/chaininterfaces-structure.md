@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура метод ChainInterfaces'
 title: ChainInterfaces - структура
 ms.date: 10/03/2018
 ms.topic: reference
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - Microsoft::WRL::ChainInterfaces::IidCount constant
 - Microsoft::WRL::ChainInterfaces::Verify method
 ms.assetid: d7415b59-5468-4bef-a3fd-8d82b12f0e9c
-ms.openlocfilehash: 48b663f2042ff0095466d83fe872ef6196112f76
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cc943b16d587a3b542e49d72e6bdc24ba2546e16
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211545"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97328875"
 ---
 # <a name="chaininterfaces-structure"></a>ChainInterfaces - структура
 
@@ -138,7 +139,7 @@ struct ChainInterfaces<
 
 **Пространство имен:** Microsoft::WRL
 
-## <a name="chaininterfacescancastto"></a><a name="cancastto"></a>Метод ChainInterfaces:: CanCastTo
+## <a name="chaininterfacescancastto"></a><a name="cancastto"></a> Метод ChainInterfaces:: CanCastTo
 
 Указывает, можно ли привести указанный идентификатор интерфейса к каждой специализации, определенной параметрами шаблона, отличными от параметров по умолчанию.
 
@@ -161,7 +162,7 @@ __forceinline bool CanCastTo(
 
 **`true`** значение, если все операции приведения выполняются удачно. в противном случае — **`false`** .
 
-## <a name="chaininterfacescasttounknown"></a><a name="casttounknown"></a>Метод ChainInterfaces:: CastToUnknown
+## <a name="chaininterfacescasttounknown"></a><a name="casttounknown"></a> Метод ChainInterfaces:: CastToUnknown
 
 Приводит указатель интерфейса к типу, определенному параметром шаблона *I0* , в указатель на `IUnknown` .
 
@@ -173,7 +174,7 @@ __forceinline IUnknown* CastToUnknown();
 
 Указатель на объект `IUnknown`.
 
-## <a name="chaininterfacesfillarraywithiid"></a><a name="fillarraywithiid"></a>Метод ChainInterfaces:: FillArrayWithIid
+## <a name="chaininterfacesfillarraywithiid"></a><a name="fillarraywithiid"></a> Метод ChainInterfaces:: FillArrayWithIid
 
 Хранит идентификатор интерфейса, определенный параметром шаблона *I0* , в указанное расположение в указанном массиве идентификаторов интерфейсов.
 
@@ -186,13 +187,13 @@ __forceinline static void FillArrayWithIid(
 
 ### <a name="parameters"></a>Параметры
 
-*номер*<br/>
+*index*<br/>
 Указатель на значение индекса в массиве *идентификаторов IID* .
 
 *идентификаторов IID*<br/>
 Массив идентификаторов интерфейсов.
 
-## <a name="chaininterfacesiidcount"></a><a name="iidcount"></a>Метод ChainInterfaces:: IidCount
+## <a name="chaininterfacesiidcount"></a><a name="iidcount"></a> Метод ChainInterfaces:: IidCount
 
 Общее число идентификаторов интерфейсов, содержащихся в интерфейсах, указанных в параметрах шаблона *I0* через *i9*.
 
@@ -204,11 +205,11 @@ static const unsigned long IidCount = Details::InterfaceTraits<I0>::IidCount + D
 
 Общее число идентификаторов интерфейсов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Параметры шаблона *I0* и *I1* являются обязательными, а параметры *I2* – *i9* являются необязательными. Число IID каждого интерфейса обычно равно 1.
 
-## <a name="chaininterfacesverify"></a><a name="verify"></a>Метод ChainInterfaces:: Verify
+## <a name="chaininterfacesverify"></a><a name="verify"></a> Метод ChainInterfaces:: Verify
 
 Проверяет, что каждый интерфейс, определенный параметрами шаблона *I0* через *i9* , наследует от класса `IUnknown` и/или `IInspectable` и что *I0* наследует от *I1* до *i9*.
 
@@ -216,7 +217,7 @@ static const unsigned long IidCount = Details::InterfaceTraits<I0>::IidCount + D
 WRL_NOTHROW __forceinline static void Verify();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если операция проверки завершается неудачно, **`static_assert`** выдает сообщение об ошибке с описанием сбоя.
 

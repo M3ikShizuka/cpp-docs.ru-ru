@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о развертывании собственных классических приложений (Visual C++)
 title: Развертывание классических приложений неуправляемого кода (Visual C++)
 ms.date: 05/11/2018
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - distributing applications [C++]
 ms.assetid: 37f1691e-d67c-41e4-926e-528a237a9bac
 ms.topic: overview
-ms.openlocfilehash: e9ae5db05c0835bb65a65cdccf58ab7f7d1b789f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c3da460266eb630e7ac243f523fa6e89a79fa1f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160194"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329448"
 ---
 # <a name="deploying-native-desktop-applications-visual-c"></a>Развертывание классических приложений неуправляемого кода (Visual C++)
 
@@ -41,7 +42,7 @@ Visual Studio предоставляет различные технологии
 
 - [Выбор метода развертывания](choosing-a-deployment-method.md)
 
-- [Развертывание универсальной библиотеки CRT](universal-crt-deployment.md)
+- [Развертывание универсальной CRT](universal-crt-deployment.md).
 
 - [Распространение файлов Visual C++](redistributing-visual-cpp-files.md)
 
@@ -49,14 +50,14 @@ Visual Studio предоставляет различные технологии
 
 - [Распространение клиентских веб-приложений](redistributing-web-client-applications.md)
 
-- [ClickOnce Deployment for Visual C++ Applications](clickonce-deployment-for-visual-cpp-applications.md)
+- [Развертывание ClickOnce для приложений Visual C++](clickonce-deployment-for-visual-cpp-applications.md)
 
 - [Выполнение приложения C++ с параметром /clr в более ранней версии среды выполнения](running-a-cpp-clr-application-on-a-previous-runtime-version.md)
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 
 - [Создание изолированных приложений и параллельных сборок C/C++](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
 
-- [Deployment](/dotnet/framework/deployment/index)
+- [Развертывание](/dotnet/framework/deployment/index)
 
 - [Устранение неполадок в изолированных приложениях и параллельных сборках на C/C++](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

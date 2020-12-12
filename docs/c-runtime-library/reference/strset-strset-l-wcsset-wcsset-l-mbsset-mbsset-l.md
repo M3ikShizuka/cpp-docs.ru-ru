@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l'
 title: _strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l
 ms.date: 4/2/2020
 api_name:
@@ -67,12 +68,12 @@ helpviewer_keywords:
 - fstrset function
 - _tcsset_l function
 ms.assetid: c42ded42-2ed9-4f06-a0a9-247ba305473a
-ms.openlocfilehash: 99cf969714115effcfd7f8f82b2247556d5dd110
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4f8c3e0d9f6cb9cdb372ad5eac9a0f5d2c6d8cd8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234007"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329167"
 ---
 # <a name="_strset-_strset_l-_wcsset-_wcsset_l-_mbsset-_mbsset_l"></a>_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l
 
@@ -118,7 +119,7 @@ unsigned char *_mbsset_l(
 *str*<br/>
 Строка для изменения, завершающаяся символом NULL.
 
-*ц*<br/>
+*c*<br/>
 Параметр символов.
 
 *locale*<br/>
@@ -128,9 +129,9 @@ unsigned char *_mbsset_l(
 
 Возвращает указатель на измененную строку.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функция **_strset** задает все символы (кроме завершающего нуль-символа) для *str* в *c*, которые преобразуются в **`char`** . **_wcsset** и **_mbsset_l** являются версиями **_strset**для расширенных символов и многобайтовых символов, а типы данных аргументов и возвращаемых значений различаются соответствующим образом. В остальном эти функции ведут себя одинаково.
+Функция **_strset** задает все символы (кроме завершающего нуль-символа) для *str* в *c*, которые преобразуются в **`char`** . **_wcsset** и **_mbsset_l** являются версиями **_strset** для расширенных символов и многобайтовых символов, а типы данных аргументов и возвращаемых значений различаются соответствующим образом. В остальном эти функции ведут себя одинаково.
 
 **_mbsset** проверяет свои параметры. Если *str* является пустым указателем, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, **_mbsset** возвращает **значение NULL** **и устанавливает для** **еинвал**. **_strset** и **_wcsset** не проверяют их параметры.
 
@@ -188,7 +189,7 @@ After:  *******************************
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Локаль](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbset, _mbsnbset_l](mbsnbset-mbsnbset-l.md)<br/>
 [memset, wmemset](memset-wmemset.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>

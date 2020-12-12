@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: создание производного класса документа от CDocument'
 title: Наследование класса документов от CDocument
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - derived classes [MFC], functions often overridden
 - document classes [MFC], functions often overridden
 ms.assetid: e6a198e0-9799-43c0-83c5-04174d8b532c
-ms.openlocfilehash: 399230446977636cc8769efe32b8f86fad466b83
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9f6dccb5400ba0e62b2f11a3c2d4074cb9bb2f25
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616114"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97327885"
 ---
 # <a name="deriving-a-document-class-from-cdocument"></a>Наследование класса документов от CDocument
 
@@ -23,7 +24,7 @@ ms.locfileid: "84616114"
 
 - Добавьте переменные члена для хранения данных каждого документа.
 
-- Переопределение `CDocument` `Serialize` функции члена в классе документа. `Serialize`записывает и считывает данные документа на диск и обратно.
+- Переопределение `CDocument` `Serialize` функции члена в классе документа. `Serialize` записывает и считывает данные документа на диск и обратно.
 
 ## <a name="other-document-functions-often-overridden"></a>Другие функции документов, которые часто переопределяются
 
