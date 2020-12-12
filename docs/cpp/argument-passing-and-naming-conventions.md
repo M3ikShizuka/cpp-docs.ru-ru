@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Передача аргументов и соглашения об именовании'
 title: Передача аргументов и соглашения именования
 ms.date: 12/17/2018
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - passing arguments [C++], conventions
 - conventions [C++], argument names
 ms.assetid: de468979-eab8-4158-90c5-c198932f93b9
-ms.openlocfilehash: 32f32ceb56267dc39b58b8eed1b30af697ca6d74
-ms.sourcegitcommit: d5a7ea8e462f555fbb3852d6fe5112521fef3133
+ms.openlocfilehash: bd51187fcc65dfce6c473c784c85c6afcae0bcf3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96324180"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239835"
 ---
 # <a name="argument-passing-and-naming-conventions"></a>Передача аргументов и соглашения именования
 
@@ -42,7 +43,7 @@ ms.locfileid: "96324180"
 |Ключевое слово|Очистка стека|Передача параметров|
 |-------------|-------------------|-----------------------|
 |[__cdecl](../cpp/cdecl.md)|Caller|Параметры помещаются в стек в обратном порядке (справа налево)|
-|[__clrcall](../cpp/clrcall.md)|Недоступно|Параметры загружаются в стек выражений CLR по-порядку (слева направо).|
+|[__clrcall](../cpp/clrcall.md)|н/д|Параметры загружаются в стек выражений CLR по-порядку (слева направо).|
 |[__stdcall](../cpp/stdcall.md)|Вызываемая функция|Параметры помещаются в стек в обратном порядке (справа налево)|
 |[__fastcall](../cpp/fastcall.md)|Вызываемая функция|Хранятся в регистрах, затем помещаются в стек|
 |[__thiscall](../cpp/thiscall.md)|Вызываемая функция|Помещается в стек; **`this`** указатель, хранящийся в ECX|

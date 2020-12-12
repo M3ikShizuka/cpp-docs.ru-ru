@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: фабрики классов и лицензирование'
 title: Фабрики классов и прослушивание
 ms.date: 11/04/2016
 helpviewer_keywords:
 - class factories [MFC], and licensing
 ms.assetid: 53c4856a-4062-46db-9f69-dd4339f746b3
-ms.openlocfilehash: 939d7156a9bd7bf0778d2ab4a40acb2afe10cf6e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7470a5828df358a28db5a30832f98314e09a133e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845930"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236845"
 ---
 # <a name="class-factories-and-licensing"></a>Фабрики классов и прослушивание
 
@@ -42,7 +43,7 @@ DECLARE_OLECREATE_EX(class_name)
 *class_name*<br/>
 Имя класса элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос в файле заголовка класса Control для элемента управления, который не поддерживает лицензирование.
 
@@ -86,7 +87,7 @@ IMPLEMENT_OLECREATE_EX(
 *l, W1, W2, B1, B2, B3, B4, B5, B6, B7, B8*<br/>
 Компоненты CLSID класса. Дополнительные сведения об этих параметрах см. в примечаниях для [IMPLEMENT_OLECREATE](run-time-object-model-services.md#implement_olecreate).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот макрос должен присутствовать в файле реализации для любого класса элементов управления, который использует макрос DECLARE_OLECREATE_EX или макросы BEGIN_OLEFACTORY и END_OLEFACTORY. Внешнее имя — это идентификатор элемента управления OLE, который предоставляется другим приложениям. Контейнеры используют это имя для запроса объекта этого класса элемента управления.
 
@@ -107,7 +108,7 @@ BEGIN_OLEFACTORY(class_name)
 *class_name*<br/>
 Указывает имя класса элемента управления, для которого задана фабрика класса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Объявления функций лицензирования фабрики класса должны начинаться сразу же после BEGIN_OLEFACTORY.
 
@@ -162,7 +163,7 @@ BOOL AFXAPI AfxVerifyLicFile(
 
 Ненулевое значение, если файл лицензии существует и начинается с последовательности символов в *псзликфилеконтентс*; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если *Кч* имеет значение-1, эта функция использует:
 

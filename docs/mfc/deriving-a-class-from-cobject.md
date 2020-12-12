@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: создание производного класса от CObject'
 title: Наследование класса от CObject
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - CObject class [MFC], deriving serializable classes
 - CObject class [MFC], deriving from
 ms.assetid: 5ea4ea41-08b5-4bd8-b247-c5de8c152a27
-ms.openlocfilehash: f4c01538877d8517cf3394d9e0108ce3a9df2900
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: c6c2ea75354d783b234bc3f7cac7a08dac4f05da
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621940"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240706"
 ---
 # <a name="deriving-a-class-from-cobject"></a>Наследование класса от CObject
 
@@ -40,7 +41,7 @@ ms.locfileid: "84621940"
 
 В следующей таблице показана связь между макросами, используемыми для поддержки сериализации и сведениями о времени выполнения.
 
-### <a name="macros-used-for-serialization-and-run-time-information"></a>Макросы, используемые для сериализации и сведения о времени выполнения
+### <a name="macros-used-for-serialization-and-run-time-information"></a>Макросы, используемые для сериализации и Run-Time сведения
 
 |Используемый макрос|CObject:: IsKindOf|Крунтимекласс::<br /><br /> CreateObject|CArchive:: operator>><br /><br /> CArchive:: operator<<|
 |----------------|-----------------------|--------------------------------------|-------------------------------------------------------|

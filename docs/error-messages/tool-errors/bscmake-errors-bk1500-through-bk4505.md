@@ -1,17 +1,18 @@
 ---
+description: 'Дополнительные сведения: ошибки и предупреждения BSCMAKE (Бккскскскс)'
 title: Ошибки и предупреждения BSCMAKE
 ms.date: 04/16/2019
 ms.assetid: 3767baa6-e639-472e-99fd-7543fd945cd3
-ms.openlocfilehash: e6abc334d9ecf5df54d200ab242c91a7035ab226
-ms.sourcegitcommit: 283cb64fd7958a6b7fbf0cd8534de99ac8d408eb
+ms.openlocfilehash: 8273782f82102c81cf7f7dd5e93b7e1ec6d1703e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64856368"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97237911"
 ---
 # <a name="bscmake-errors-and-warnings-bkxxxx"></a>Ошибки и предупреждения BSCMAKE (BKxxxx)
 
-Этот раздел представляет собой справочник по ошибкам и предупреждения, формируемые BSCMAKE инструмент сборки. BSCMAKE ошибки и предупреждения имеют форму BK*xxxx*, где *xxxx* состоит из четырех цифр.
+Этот раздел представляет собой ссылку на ошибки и предупреждения, создаваемые средством BSCMAKE Build. Ошибки и предупреждения BSCMAKE имеют форму BK *XXXX*, где *XXXX* — 4-значное число.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -34,11 +35,11 @@ ms.locfileid: "64856368"
 
 ## <a name="warning-messages"></a>Предупреждающие сообщения
 
-[Предупреждение BK4502 (BSCMAKE)](bscmake-warning-bk4502.md) \
-[Предупреждение BK4503 (BSCMAKE)](bscmake-warning-bk4503.md) \
-[Предупреждение BK4504 (BSCMAKE)](bscmake-warning-bk4504.md)
+[BSCMAKE Warning BK4502](bscmake-warning-bk4502.md) \
+[BSCMAKE Warning BK4503](bscmake-warning-bk4503.md) \
+[Предупреждение BSCMAKE BK4504](bscmake-warning-bk4504.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[C /C++ ошибки и предупреждения средств компиляции и построения](../compiler-errors-1/c-cpp-build-errors.md) \
+[Ошибки и предупреждения для компилятора C/C++ и средств сборки](../compiler-errors-1/c-cpp-build-errors.md) \
 [Справочник по BSCMake](../../build/reference/bscmake-reference.md)

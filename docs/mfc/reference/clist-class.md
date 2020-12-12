@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CList Class'
 title: Класс CList
 ms.date: 11/04/2016
 f1_keywords:
@@ -50,12 +51,12 @@ helpviewer_keywords:
 - CList [MFC], RemoveTail
 - CList [MFC], SetAt
 ms.assetid: 6f6273c3-c8f6-47f5-ac2a-0a950379ae5d
-ms.openlocfilehash: 7ba85445e3aba1df853d7d3666c92fdabdfa3970
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e216bda53c37c325ffb8aeb943d4cefb223ac1d1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87182880"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236689"
 ---
 # <a name="clist-class"></a>Класс CList
 
@@ -68,11 +69,11 @@ template<class TYPE, class ARG_TYPE = const TYPE&>
 class CList : public CObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CList:: CList](#clist)|Конструирует пустой упорядоченный список.|
 
@@ -110,9 +111,9 @@ class CList : public CObject
 *ARG_TYPE*<br/>
 Тип, используемый для ссылки на объекты, хранящиеся в списке. Может быть ссылкой.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CList`списки ведут себя как двунаправленные списки.
+`CList` списки ведут себя как двунаправленные списки.
 
 Переменная типа "расположение" является ключом для списка. Можно использовать переменную позиции в качестве итератора для последовательного прохода по списку и в виде закладки для размещения места. Однако позиция не совпадает с индексом.
 
@@ -138,7 +139,7 @@ class CList : public CObject
 
 **Заголовок:** afxtempl.h
 
-## <a name="clistaddhead"></a><a name="addhead"></a>CList:: Аддхеад
+## <a name="clistaddhead"></a><a name="addhead"></a> CList:: Аддхеад
 
 Добавляет новый элемент или список элементов в заголовок этого списка.
 
@@ -162,7 +163,7 @@ void AddHead(CList* pNewList);
 
 Первая версия возвращает значение расположения вновь вставленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Перед операцией список может быть пустым.
 
@@ -170,7 +171,7 @@ void AddHead(CList* pNewList);
 
 [!code-cpp[NVC_MFCCollections#36](../../mfc/codesnippet/cpp/clist-class_2.cpp)]
 
-## <a name="clistaddtail"></a><a name="addtail"></a>CList:: AddTail
+## <a name="clistaddtail"></a><a name="addtail"></a> CList:: AddTail
 
 Добавляет новый элемент или список элементов в конец этого списка.
 
@@ -194,7 +195,7 @@ void AddTail(CList* pNewList);
 
 Первая версия возвращает значение расположения вновь вставленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Перед операцией список может быть пустым.
 
@@ -202,7 +203,7 @@ void AddTail(CList* pNewList);
 
 [!code-cpp[NVC_MFCCollections#37](../../mfc/codesnippet/cpp/clist-class_3.cpp)]
 
-## <a name="clistclist"></a><a name="clist"></a>CList:: CList
+## <a name="clistclist"></a><a name="clist"></a> CList:: CList
 
 Конструирует пустой упорядоченный список.
 
@@ -215,7 +216,7 @@ CList(INT_PTR nBlockSize = 10);
 *нблокксизе*<br/>
 Гранулярность выделения памяти для расширения списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По мере роста списка память выделяется в единицах *нблокксизе* записей.
 
@@ -223,7 +224,7 @@ CList(INT_PTR nBlockSize = 10);
 
 [!code-cpp[NVC_MFCCollections#38](../../mfc/codesnippet/cpp/clist-class_4.cpp)]
 
-## <a name="clistfind"></a><a name="find"></a>CList:: Find
+## <a name="clistfind"></a><a name="find"></a> CList:: Find
 
 Выполняет поиск в списке последовательно, чтобы найти первый элемент, соответствующий указанному *сеарчвалуе*.
 
@@ -252,7 +253,7 @@ POSITION Find(
 
 [!code-cpp[NVC_MFCCollections#39](../../mfc/codesnippet/cpp/clist-class_5.cpp)]
 
-## <a name="clistfindindex"></a><a name="findindex"></a>CList:: FindIndex
+## <a name="clistfindindex"></a><a name="findindex"></a> CList:: FindIndex
 
 Использует значение *ниндекс* в качестве индекса в списке.
 
@@ -269,7 +270,7 @@ POSITION FindIndex(INT_PTR nIndex) const;
 
 Значение позиции, которое может использоваться для получения итераций или указателя на объект; NULL, если *ниндекс* является отрицательным или слишком большим.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Он запускает последовательное сканирование из заголовка списка, останавливаясь на *n*-ом элементе.
 
@@ -277,7 +278,7 @@ POSITION FindIndex(INT_PTR nIndex) const;
 
 [!code-cpp[NVC_MFCCollections#40](../../mfc/codesnippet/cpp/clist-class_6.cpp)]
 
-## <a name="clistgetat"></a><a name="getat"></a>CList:: GetAt
+## <a name="clistgetat"></a><a name="getat"></a> CList:: GetAt
 
 Возвращает элемент списка в заданной позиции.
 
@@ -291,16 +292,16 @@ const TYPE& GetAt(POSITION position) const;
 *TYPE*<br/>
 Параметр шаблона, указывающий тип объекта в списке.
 
-*разместить*<br/>
+*position*<br/>
 Местоположение элемента, который необходимо получить.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 См. описание возвращаемого значения для `GetHead` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`GetAt`Возвращает элемент (или ссылку на элемент), связанный с заданной позицией. Это не то же самое, что и индекс, и вы не можете самостоятельно обрабатывать значение позиции. Переменная типа "расположение" является ключом для списка.
+`GetAt` Возвращает элемент (или ссылку на элемент), связанный с заданной позицией. Это не то же самое, что и индекс, и вы не можете самостоятельно обрабатывать значение позиции. Переменная типа "расположение" является ключом для списка.
 
 Необходимо убедиться, что значение координаты представляет допустимую точку в списке. Если он является недопустимым, отладочная версия библиотека Microsoft Foundation Class утверждается.
 
@@ -308,7 +309,7 @@ const TYPE& GetAt(POSITION position) const;
 
   См. пример для [CList:: жесеадпоситион](#getheadposition).
 
-## <a name="clistgetcount"></a><a name="getcount"></a>CList:: NOCOUNT
+## <a name="clistgetcount"></a><a name="getcount"></a> CList:: NOCOUNT
 
 Возвращает число элементов в этом списке.
 
@@ -320,7 +321,7 @@ INT_PTR GetCount() const;
 
 Целочисленное значение, содержащее число элементов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызов этого метода приведет к формированию того же результата, что и метод [CList:: resize](#getsize) .
 
@@ -328,7 +329,7 @@ INT_PTR GetCount() const;
 
   См. пример для [CList:: ремовехеад](#removehead).
 
-## <a name="clistgethead"></a><a name="gethead"></a>CList:: onhead
+## <a name="clistgethead"></a><a name="gethead"></a> CList:: onhead
 
 Возвращает элемент head (или ссылку на головной элемент) этого списка.
 
@@ -349,7 +350,7 @@ TYPE& GetHead();
 
 Если список не имеет значение **`const`** , `GetHead` возвращает ссылку на элемент в заголовке списка. Это позволяет использовать функцию с любой стороны оператора присваивания и тем самым допустить изменение записей в списке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Перед вызовом необходимо убедиться, что список не пуст `GetHead` . Если список пуст, то отладочная версия библиотека Microsoft Foundation Class утверждается. Используйте параметр [IsEmpty](#isempty) , чтобы убедиться, что список содержит элементы.
 
@@ -357,7 +358,7 @@ TYPE& GetHead();
 
 [!code-cpp[NVC_MFCCollections#41](../../mfc/codesnippet/cpp/clist-class_7.cpp)]
 
-## <a name="clistgetheadposition"></a><a name="getheadposition"></a>CList:: Жесеадпоситион
+## <a name="clistgetheadposition"></a><a name="getheadposition"></a> CList:: Жесеадпоситион
 
 Возвращает расположение головного элемента этого списка.
 
@@ -373,7 +374,7 @@ POSITION GetHeadPosition() const;
 
 [!code-cpp[NVC_MFCCollections#42](../../mfc/codesnippet/cpp/clist-class_8.cpp)]
 
-## <a name="clistgetnext"></a><a name="getnext"></a>CList:: GetNext
+## <a name="clistgetnext"></a><a name="getnext"></a> CList:: GetNext
 
 Возвращает элемент List, определенный параметром *rPosition*, а затем устанавливает *rPosition* в значение value следующей записи в списке.
 
@@ -396,7 +397,7 @@ const TYPE& GetNext(POSITION& rPosition) const;
 
 Если список не имеет значение **`const`** , `GetNext` возвращает ссылку на элемент списка. Это позволяет использовать функцию с любой стороны оператора присваивания и тем самым допустить изменение записей в списке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Можно использовать `GetNext` в цикле прямой итерации, если исходное расположение устанавливается с вызовом `GetHeadPosition` или `Find` .
 
@@ -408,7 +409,7 @@ const TYPE& GetNext(POSITION& rPosition) const;
 
 [!code-cpp[NVC_MFCCollections#43](../../mfc/codesnippet/cpp/clist-class_9.cpp)]
 
-## <a name="clistgetprev"></a><a name="getprev"></a>CList:: prev
+## <a name="clistgetprev"></a><a name="getprev"></a> CList:: prev
 
 Возвращает элемент списка, заданный параметром `rPosition` , а затем устанавливает `rPosition` для значение расположения предыдущей записи в списке.
 
@@ -431,7 +432,7 @@ const TYPE& GetPrev(POSITION& rPosition) const;
 
 Если список не имеет значение **`const`** , `GetPrev` возвращает ссылку на элемент списка. Это позволяет использовать функцию с любой стороны оператора присваивания и тем самым допустить изменение записей в списке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Можно использовать `GetPrev` в цикле обратных итераций, если исходное расположение устанавливается с вызовом `GetTailPosition` или `Find` .
 
@@ -443,7 +444,7 @@ const TYPE& GetPrev(POSITION& rPosition) const;
 
 [!code-cpp[NVC_MFCCollections#44](../../mfc/codesnippet/cpp/clist-class_10.cpp)]
 
-## <a name="clistgetsize"></a><a name="getsize"></a>CList:: DataSize
+## <a name="clistgetsize"></a><a name="getsize"></a> CList:: DataSize
 
 Возвращает число элементов списка.
 
@@ -455,7 +456,7 @@ INT_PTR GetSize() const;
 
 Количество элементов в списке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите этот метод, чтобы получить количество элементов в списке.  Вызов этого метода приведет к формированию того же результата, что и метод [CList:: NOCOUNT](#getcount) .
 
@@ -463,7 +464,7 @@ INT_PTR GetSize() const;
 
 [!code-cpp[NVC_MFCCollections#45](../../mfc/codesnippet/cpp/clist-class_11.cpp)]
 
-## <a name="clistgettail"></a><a name="gettail"></a>CList:: tail
+## <a name="clistgettail"></a><a name="gettail"></a> CList:: tail
 
 Возвращает `CObject` указатель, представляющий элемент хвоста данного списка.
 
@@ -481,7 +482,7 @@ const TYPE& GetTail() const;
 
 См. описание возвращаемого значения для [onhead](../../mfc/reference/coblist-class.md#gethead).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Перед вызовом необходимо убедиться, что список не пуст `GetTail` . Если список пуст, то отладочная версия библиотека Microsoft Foundation Class утверждается. Используйте параметр [IsEmpty](../../mfc/reference/coblist-class.md#isempty) , чтобы убедиться, что список содержит элементы.
 
@@ -489,7 +490,7 @@ const TYPE& GetTail() const;
 
 [!code-cpp[NVC_MFCCollections#46](../../mfc/codesnippet/cpp/clist-class_12.cpp)]
 
-## <a name="clistgettailposition"></a><a name="gettailposition"></a>CList:: Жеттаилпоситион
+## <a name="clistgettailposition"></a><a name="gettailposition"></a> CList:: Жеттаилпоситион
 
 Возвращает расположение элемента хвоста в этом списке; Значение NULL, если список пуст.
 
@@ -505,7 +506,7 @@ POSITION GetTailPosition() const;
 
 [!code-cpp[NVC_MFCCollections#47](../../mfc/codesnippet/cpp/clist-class_13.cpp)]
 
-## <a name="clistinsertafter"></a><a name="insertafter"></a>CList:: InsertAfter
+## <a name="clistinsertafter"></a><a name="insertafter"></a> CList:: InsertAfter
 
 Добавляет элемент в этот список после элемента в указанной позиции.
 
@@ -515,7 +516,7 @@ POSITION InsertAfter(POSITION position, ARG_TYPE newElement);
 
 ### <a name="parameters"></a>Параметры
 
-*разместить*<br/>
+*position*<br/>
 Значение расположения, возвращенное предыдущим `GetNext` `GetPrev` `Find` вызовом функции-члена, или.
 
 *ARG_TYPE*<br/>
@@ -532,7 +533,7 @@ POSITION InsertAfter(POSITION position, ARG_TYPE newElement);
 
 [!code-cpp[NVC_MFCCollections#48](../../mfc/codesnippet/cpp/clist-class_14.cpp)]
 
-## <a name="clistinsertbefore"></a><a name="insertbefore"></a>CList:: методов insertBefore
+## <a name="clistinsertbefore"></a><a name="insertbefore"></a> CList:: методов insertBefore
 
 Добавляет элемент в список перед элементом в указанной позиции.
 
@@ -542,7 +543,7 @@ POSITION InsertBefore(POSITION position, ARG_TYPE newElement);
 
 ### <a name="parameters"></a>Параметры
 
-*разместить*<br/>
+*position*<br/>
 Значение расположения, возвращенное предыдущим `GetNext` `GetPrev` `Find` вызовом функции-члена, или.
 
 *ARG_TYPE*<br/>
@@ -555,7 +556,7 @@ POSITION InsertBefore(POSITION position, ARG_TYPE newElement);
 
 Значение POSITION, которое можно использовать для итерации или извлечения элемента списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если параметр *позиции* имеет значение null, элемент вставляется в заголовок списка.
 
@@ -563,7 +564,7 @@ POSITION InsertBefore(POSITION position, ARG_TYPE newElement);
 
 [!code-cpp[NVC_MFCCollections#49](../../mfc/codesnippet/cpp/clist-class_15.cpp)]
 
-## <a name="clistisempty"></a><a name="isempty"></a>CList:: IsEmpty
+## <a name="clistisempty"></a><a name="isempty"></a> CList:: IsEmpty
 
 Указывает, содержит ли этот список элементы.
 
@@ -579,7 +580,7 @@ BOOL IsEmpty() const;
 
 [!code-cpp[NVC_MFCCollections#50](../../mfc/codesnippet/cpp/clist-class_16.cpp)]
 
-## <a name="clistremoveall"></a><a name="removeall"></a>CList:: RemoveAll
+## <a name="clistremoveall"></a><a name="removeall"></a> CList:: RemoveAll
 
 Удаляет все элементы из этого списка и освобождает связанную память.
 
@@ -587,7 +588,7 @@ BOOL IsEmpty() const;
 void RemoveAll();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если список уже пуст, то ошибка не создается.
 
@@ -595,7 +596,7 @@ void RemoveAll();
 
 [!code-cpp[NVC_MFCCollections#51](../../mfc/codesnippet/cpp/clist-class_17.cpp)]
 
-## <a name="clistremoveat"></a><a name="removeat"></a>CList:: RemoveAt
+## <a name="clistremoveat"></a><a name="removeat"></a> CList:: RemoveAt
 
 Удаляет указанный элемент из этого списка.
 
@@ -605,10 +606,10 @@ void RemoveAt(POSITION position);
 
 ### <a name="parameters"></a>Параметры
 
-*разместить*<br/>
+*position*<br/>
 Расположение элемента, удаляемого из списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Необходимо убедиться, что значение координаты представляет допустимую точку в списке. Если он является недопустимым, отладочная версия библиотека Microsoft Foundation Class утверждается.
 
@@ -616,7 +617,7 @@ void RemoveAt(POSITION position);
 
 [!code-cpp[NVC_MFCCollections#52](../../mfc/codesnippet/cpp/clist-class_18.cpp)]
 
-## <a name="clistremovehead"></a><a name="removehead"></a>CList:: Ремовехеад
+## <a name="clistremovehead"></a><a name="removehead"></a> CList:: Ремовехеад
 
 Удаляет элемент из заголовка списка и возвращает указатель на него.
 
@@ -633,7 +634,7 @@ TYPE RemoveHead();
 
 Элемент, расположенный ранее в заголовке списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Перед вызовом необходимо убедиться, что список не пуст `RemoveHead` . Если список пуст, то отладочная версия библиотека Microsoft Foundation Class утверждается. Используйте параметр [IsEmpty](#isempty) , чтобы убедиться, что список содержит элементы.
 
@@ -641,7 +642,7 @@ TYPE RemoveHead();
 
 [!code-cpp[NVC_MFCCollections#53](../../mfc/codesnippet/cpp/clist-class_19.cpp)]
 
-## <a name="clistremovetail"></a><a name="removetail"></a>CList:: Ремоветаил
+## <a name="clistremovetail"></a><a name="removetail"></a> CList:: Ремоветаил
 
 Удаляет элемент из заключительного фрагмента списка и возвращает указатель на него.
 
@@ -658,7 +659,7 @@ TYPE RemoveTail();
 
 Элемент, который находится в заключительном фрагменте списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Перед вызовом необходимо убедиться, что список не пуст `RemoveTail` . Если список пуст, то отладочная версия библиотека Microsoft Foundation Class утверждается. Используйте параметр [IsEmpty](#isempty) , чтобы убедиться, что список содержит элементы.
 
@@ -666,7 +667,7 @@ TYPE RemoveTail();
 
 [!code-cpp[NVC_MFCCollections#54](../../mfc/codesnippet/cpp/clist-class_20.cpp)]
 
-## <a name="clistsetat"></a><a name="setat"></a>CList:: SetAt
+## <a name="clistsetat"></a><a name="setat"></a> CList:: SetAt
 
 Переменная типа "расположение" является ключом для списка.
 
@@ -685,9 +686,9 @@ void SetAt(POSITION pos, ARG_TYPE newElement);
 *невелемент*<br/>
 Элемент, добавляемый в список.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Это не то же самое, что и индекс, и вы не можете самостоятельно обрабатывать значение позиции. `SetAt`Записывает элемент в указанную точку в списке.
+Это не то же самое, что и индекс, и вы не можете самостоятельно обрабатывать значение позиции. `SetAt` Записывает элемент в указанную точку в списке.
 
 Необходимо убедиться, что значение координаты представляет допустимую точку в списке. Если он является недопустимым, отладочная версия библиотека Microsoft Foundation Class утверждается.
 

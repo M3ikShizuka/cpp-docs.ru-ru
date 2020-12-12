@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CKeyboardManager Class'
 title: Класс CKeyboardManager
 ms.date: 11/04/2016
 f1_keywords:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - CKeyboardManager [MFC], TranslateCharToUpper
 - CKeyboardManager [MFC], UpdateAccelTable
 ms.assetid: 4809ece6-89df-4479-8b53-9bf476ee107b
-ms.openlocfilehash: e67bbb18b6a87edfaa4bc4c410ec28eb613ed51d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9296c1d81cc2d915fe8ba84bfeedb64ae546fdd5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841497"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236897"
 ---
 # <a name="ckeyboardmanager-class"></a>Класс CKeyboardManager
 
@@ -47,7 +48,7 @@ ms.locfileid: "88841497"
 class CKeyboardManager : public CObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -71,7 +72,7 @@ class CKeyboardManager : public CObject
 |[CKeyboardManager:: Транслатечартауппер](#translatechartoupper)|Преобразует символ в его верхнюю регистр.|
 |[CKeyboardManager:: Упдатеакцелтабле](#updateacceltable)|Обновляет таблицу сочетаний клавиш с помощью новой таблицы сочетаний клавиш.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Члены этого класса позволяют сохранять и загружать таблицы сочетаний клавиш в реестр Windows, использовать шаблон для обновления коротких ключевых таблиц и находить сочетание клавиш по умолчанию для команды в окне фрейма. Кроме того, `CKeyboardManager` объект позволяет управлять отображением сочетаний клавиш для пользователя.
 
@@ -101,7 +102,7 @@ class CKeyboardManager : public CObject
 CKeyboardManager();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В большинстве случаев нет необходимости создавать `CKeyboardManager` напрямую. По умолчанию платформа создает ее. Чтобы получить указатель на `CKeyboardManager` , вызовите метод [CWinAppEx:: жеткэйбоардманажер](../../mfc/reference/cwinappex-class.md#getkeyboardmanager). Если создать его вручную, необходимо инициализировать его с помощью метода [CWinAppEx:: иниткэйбоардманажер](../../mfc/reference/cwinappex-class.md#initkeyboardmanager).
 
@@ -113,7 +114,7 @@ CKeyboardManager();
 static void CleanUp();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о сочетаниях клавиш см. в разделе [Настройка клавиатуры и мыши](../../mfc/keyboard-and-mouse-customization.md).
 
@@ -149,7 +150,7 @@ static BOOL FindDefaultAccelerator(
 
 Ненулевое значение, если ярлык найден; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод выполняет поиск команды, заданной параметром *уикмд* , и получает сочетание клавиш по умолчанию. Затем метод принимает строку, связанную с этим сочетанием клавиш, и записывает значение в параметр *str* .
 
@@ -183,7 +184,7 @@ static BOOL __stdcall IsKeyHandled(
 
 Значение TRUE, если сочетание клавиш обработано. Значение FALSE, если ключ не обрабатывается или если *пвндфраме* имеет значение null.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Входные параметры должны соответствовать записи в таблице сочетаний клавиш для *нкэй* и *фвирт* , чтобы определить, обрабатывается ли сочетание клавиш в *пвндфраме*.
 
@@ -204,7 +205,7 @@ static BOOL __stdcall IsKeyPrintable(const UINT nChar);
 
 Ненулевое значение, если символ доступен для печати, нуль, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод завершается ошибкой, если вызов [жеткэйбоардстате](/windows/win32/api/winuser/nf-winuser-getkeyboardstate) завершается ошибкой.
 
@@ -220,7 +221,7 @@ static BOOL IsShowAllAccelerators();
 
 Ненулевое значение, если приложение перечисляет все сочетания клавиш для команд меню; 0, если приложение отображает только сочетания клавиш по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Приложение выводит список сочетаний клавиш для команд меню в строке меню. Используйте функцию [CKeyboardManager:: шоваллакцелераторс](#showallaccelerators) , чтобы указать, отображает ли приложение все сочетания клавиш или только сочетания клавиш по умолчанию.
 
@@ -246,7 +247,7 @@ BOOL LoadState(
 
 Ненулевое значение, если состояние было успешно загружено, или 0 в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если параметр *лпсзпрофиленаме* имеет значение null, этот метод проверяет расположение данных в реестре по умолчанию `CKeyboardManager` . Расположение реестра по умолчанию указывается [классом CWinAppEx](../../mfc/reference/cwinappex-class.md). Данные должны быть предварительно записаны с помощью метода [CKeyboardManager:: SaveState](#savestate).
 
@@ -260,7 +261,7 @@ BOOL LoadState(
 void ResetAll();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция очищает ярлыки, хранящиеся в `CKeyboardManager` экземпляре. Затем состояние диспетчера клавиатуры будет перезагружено из ресурса приложения.
 
@@ -286,7 +287,7 @@ BOOL SaveState(
 
 Ненулевое значение, если состояние диспетчера клавиатуры сохранено успешно, или 0 в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если параметр *лпсзпрофиленаме* имеет значение null, этот метод записывает `CKeyboardManager` состояние в расположение по умолчанию, заданное [классом CWinAppEx](../../mfc/reference/cwinappex-class.md). Если указать расположение, данные можно загрузить позже с помощью метода [CKeyboardManager:: LoadState](#loadstate).
 
@@ -310,7 +311,7 @@ static void ShowAllAccelerators(
 *лпсзделимитер*<br/>
 окне Строка для вставки между сочетаниями клавиш. Этот разделитель не действует, если отображается только одна комбинация клавиш.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию, если с командой связано несколько сочетаний клавиш, будет отображаться только первый ярлык. Эта функция позволяет получить список всех сочетаний клавиш, связанных со всеми командами.
 
@@ -371,7 +372,7 @@ BOOL UpdateAccelTable(
 
 Ненулевое значение, если метод успешно выполнен; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция используется для замены существующей таблицы ярлыка новыми сочетаниями клавиш для нескольких объектов окна фрейма. Функция получает шаблон документа в качестве параметра для получения доступа ко всем объектам окна кадров, подключенным к данному шаблону документа.
 
