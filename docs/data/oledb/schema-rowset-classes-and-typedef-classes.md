@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: классы наборов строк схемы и классы typedef'
 title: Классы схемы Rowset и Typedef
 ms.date: 11/04/2016
 f1_keywords:
@@ -548,12 +549,12 @@ helpviewer_keywords:
 - TABLE_NAME
 - TABLE_SCHEMA
 ms.assetid: 4bd881b3-26ca-4bdb-9226-d67560864f29
-ms.openlocfilehash: 104f7a92cdb472fc889d44cff20982e51b955014
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5b51404642dbb6d9ad6c2236e7693137b4a949c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509500"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286570"
 ---
 # <a name="schema-rowset-classes-and-typedef-classes"></a>Классы схемы Rowset и Typedef
 
@@ -602,7 +603,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CAssertions` для реализации своего класса параметров `CAssertionInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -623,7 +624,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CCatalogs` для реализации своего класса параметров `CCatalogInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -640,7 +641,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CCharacterSets` для реализации своего класса параметров `CCharacterSetInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -663,7 +664,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CCheckConstraints` для реализации своего класса параметров `CCheckConstraintInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -683,7 +684,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CCollations` для реализации своего класса параметров `CCollationInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -705,7 +706,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CColumnDomainUsage` для реализации своего класса параметров `CColumnDomainUsageInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -729,7 +730,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CColumnPrivileges` для реализации своего класса параметров `CColumnPrivilegeInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -754,7 +755,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CColumns` для реализации своего класса параметров `CColumnsInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -797,7 +798,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CConstraintColumnUsage` для реализации своего класса параметров `CConstraintColumnUsageInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -821,7 +822,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CConstraintTableUsage` для реализации своего класса параметров `CConstraintTableUsageInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -842,7 +843,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CForeignKeys` для реализации своего класса параметров `CForeignKeysInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -872,7 +873,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CIndexes` для реализации своего класса параметров `CIndexInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -911,7 +912,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CKeyColumns` для реализации своего класса параметров `CKeyColumnInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -936,7 +937,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CPrimaryKeys` для реализации своего класса параметров `CPrimaryKeyInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -958,7 +959,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CProcedureColumns` для реализации своего класса параметров `CProcedureColumnInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -989,7 +990,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CProcedureParameters` для реализации своего класса параметров `CProcedureParamInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -1019,7 +1020,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CProcedures` для реализации своего класса параметров `CProcedureInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -1040,7 +1041,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CProviderTypes` для реализации своего класса параметров `CProviderInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -1058,7 +1059,7 @@ ms.locfileid: "91509500"
 |m_szCreateParams|CREATE_PARAMS|
 |m_bIsNullable|IS_NULLABLE|
 |m_bCaseSensitive|CASE_SENSITIVE|
-|m_nSearchable|SEARCHABLE|
+|m_nSearchable|ДОСТУПНЫЙ ДЛЯ ПОИСКА|
 |m_bUnsignedAttribute|UNSIGNED_ATTRIBUTE|
 |m_bFixedPrecScale|FIXED_PREC_SCALE|
 |m_bAutoUniqueValue|AUTO_UNIQUE_VALUE|
@@ -1075,7 +1076,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CReferentialConstraints` для реализации своего класса параметров `CReferentialConstraintInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -1100,7 +1101,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CSchemata` для реализации своего класса параметров `CSchemataInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -1121,7 +1122,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CSQLLanguages` для реализации своего класса параметров `CSQLLanguageInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -1143,7 +1144,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CStatistics` для реализации своего класса параметров `CStatisticInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -1162,7 +1163,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CTableConstraints` для реализации своего класса параметров `CTableConstraintInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -1187,7 +1188,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CTablePrivileges` для реализации своего класса параметров `CTablePrivilegeInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -1209,7 +1210,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CTables` для реализации своего класса параметров `CTableInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -1230,7 +1231,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CTranslations` для реализации своего класса параметров `CTranslationInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -1254,7 +1255,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CUsagePrivileges` для реализации своего класса параметров `CUsagePrivilegeInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -1277,7 +1278,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CViewColumnUsage` для реализации своего класса параметров `CViewColumnInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -1301,7 +1302,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CViews` для реализации своего класса параметров `CViewInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 
@@ -1323,7 +1324,7 @@ ms.locfileid: "91509500"
 
 Вызовите класс typedef `CViewTableUsage` для реализации своего класса параметров `CViewTableInfo` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об использовании классов typedef см. в разделе Классы [наборов строк схемы и классы typedef](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) .
 

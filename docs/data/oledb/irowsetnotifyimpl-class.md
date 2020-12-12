@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: IRowsetNotifyImpl Class'
 title: Класс IRowsetNotifyImpl
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - OnRowChange method
 - OnRowsetChange method
 ms.assetid: fbfd0cb2-38ff-4b42-899a-8de902f834b8
-ms.openlocfilehash: f938d9e92bc2f447ecfa82f2bfb27c8fda7652ab
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e07f918d7315998f5aa0dc14dbd613520a68f134
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845111"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287051"
 ---
 # <a name="irowsetnotifyimpl-class"></a>Класс IRowsetNotifyImpl
 
@@ -51,7 +52,7 @@ class ATL_NO_VTABLE IRowsetNotifyImpl : public IRowsetNotify
 |[онровчанже](#onrowchange)|Уведомляет объект-получатель о первом изменении в строке или о любом изменении, оказывающем влияние на всю строку.|
 |[онровсетчанже](#onrowsetchange)|Уведомляет объект-получатель о любом изменении, влияющем на весь набор строк.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 См. статью [Получение уведомлений](../../data/oledb/receiving-notifications.md) о реализации интерфейса точки подключения на потребителе.
 
@@ -82,7 +83,7 @@ STDMETHOD(OnFieldChange)(
 
 Описание возвращаемого значения см. в разделе [IRowsetNotify клиента:: онфиелдчанже](/previous-versions/windows/desktop/ms715961(v=vs.85)) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод создает оболочку для метода [IRowsetNotify клиента:: онфиелдчанже](/previous-versions/windows/desktop/ms715961(v=vs.85)) . Дополнительные сведения см. в описании этого метода в справочнике по OLE DB программиста.
 
@@ -110,7 +111,7 @@ STDMETHOD(OnRowChange)(
 
 Описание возвращаемого значения см. в разделе [IRowsetNotify клиента:: онровчанже](/previous-versions/windows/desktop/ms722694(v=vs.85)) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод создает оболочку для метода [IRowsetNotify клиента:: онровчанже](/previous-versions/windows/desktop/ms722694(v=vs.85)) . Дополнительные сведения см. в описании этого метода в справочнике по OLE DB программиста.
 
@@ -136,7 +137,7 @@ STDMETHOD(OnRowsetChange)(
 
 Описание возвращаемого значения см. в разделе [IRowsetNotify клиента:: онровсетчанже](/previous-versions/windows/desktop/ms722669(v=vs.85)) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод создает оболочку для метода [IRowsetNotify клиента:: онровсетчанже](/previous-versions/windows/desktop/ms722669(v=vs.85)) . Дополнительные сведения см. в описании этого метода в справочнике по OLE DB программиста.
 

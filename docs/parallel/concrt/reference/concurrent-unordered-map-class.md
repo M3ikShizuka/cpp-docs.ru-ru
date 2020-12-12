@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: concurrent_unordered_map классе'
 title: Класс concurrent_unordered_map
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_unordered_map class
 ms.assetid: b2d879dd-87ef-4af9-a266-a5443fd538b8
-ms.openlocfilehash: eb2493c3e3303a80c9825620aae0c2ef5270a71a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fb1c5c6dd35a1f1a79ea2988bbc2a33f1fb40058
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230341"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284893"
 ---
 # <a name="concurrent_unordered_map-class"></a>Класс concurrent_unordered_map
 
@@ -48,7 +49,7 @@ false>>;
 
 ### <a name="parameters"></a>Параметры
 
-*Занят*<br/>
+*K*<br/>
 Тип ключа.
 
 *_Element_type*<br/>
@@ -67,7 +68,7 @@ false>>;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |`allocator_type`|Тип распределителя для управления хранилищем.|
 |`const_iterator`|Тип постоянного итератора для управляемой последовательности.|
@@ -88,13 +89,13 @@ false>>;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[concurrent_unordered_map](#ctor)|Перегружен. Конструирует параллельную неупорядоченную карту.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[at](#at)|Перегружен. Находит элемент в `concurrent_unordered_map` с указанным значением ключа. Этот метод является типобезопасным в режиме параллелизма.|
 |[hash_function](#hash_function)|Получает сохраненный объект хэш-функции.|
@@ -105,12 +106,12 @@ false>>;
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
-|[оператор\[\]](#operator_at)|Перегружен. Находит или вставляет элемент с указанным ключом. Этот метод является типобезопасным в режиме параллелизма.|
+|[станции\[\]](#operator_at)|Перегружен. Находит или вставляет элемент с указанным ключом. Этот метод является типобезопасным в режиме параллелизма.|
 |[Оператор =](#operator_eq)|Перегружен. Присваивает `concurrent_unordered_map` этому объекту содержимое другого объекта. Этот метод не является типобезопасным в режиме параллелизма.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Подробные сведения о `concurrent_unordered_map` классе см. в разделе [Parallel Containers and Objects](../../../parallel/concrt/parallel-containers-and-objects.md).
 
@@ -128,7 +129,7 @@ false>>;
 
 **Пространство имен:** параллелизм
 
-## <a name="at"></a><a name="at"></a>в
+## <a name="at"></a><a name="at"></a> в
 
 Находит элемент в `concurrent_unordered_map` с указанным значением ключа. Этот метод является типобезопасным в режиме параллелизма.
 
@@ -147,11 +148,11 @@ const mapped_type& at(const key_type& KVal) const;
 
 Ссылка на значение данных найденного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если значение ключа аргумента не найдено, функция создает объект класса `out_of_range`.
 
-## <a name="begin"></a><a name="begin"></a>начале
+## <a name="begin"></a><a name="begin"></a> begin
 
 Возвращает итератор, указывающий на первый элемент в параллельном контейнере. Данный метод безопасен в режиме параллелизма.
 
@@ -165,7 +166,7 @@ const_iterator begin() const;
 
 Итератор на первый элемент в параллельном контейнере.
 
-## <a name="cbegin"></a><a name="cbegin"></a>cbegin
+## <a name="cbegin"></a><a name="cbegin"></a> cbegin
 
 Возвращает константный итератор, указывающий на первый элемент в параллельном контейнере. Данный метод безопасен в режиме параллелизма.
 
@@ -177,7 +178,7 @@ const_iterator cbegin() const;
 
 Константный итератор для первого элемента в параллельном контейнере.
 
-## <a name="cend"></a><a name="cend"></a>cend
+## <a name="cend"></a><a name="cend"></a> cend
 
 Возвращает константный итератор, указывающий на расположение, следующее за последним элементом в параллельном контейнере. Данный метод безопасен в режиме параллелизма.
 
@@ -189,7 +190,7 @@ const_iterator cend() const;
 
 Константный итератор к расположению, следующему за последним элементом в параллельном контейнере.
 
-## <a name="clear"></a><a name="clear"></a>открытым
+## <a name="clear"></a><a name="clear"></a> открытым
 
 Стирает все элементы в параллельном контейнере. Эта функция не является типобезопасным.
 
@@ -197,7 +198,7 @@ const_iterator cend() const;
 void clear();
 ```
 
-## <a name="concurrent_unordered_map"></a><a name="ctor"></a>concurrent_unordered_map
+## <a name="concurrent_unordered_map"></a><a name="ctor"></a> concurrent_unordered_map
 
 Конструирует параллельную неупорядоченную карту.
 
@@ -256,7 +257,7 @@ concurrent_unordered_map(
 *_Umap*<br/>
 Исходный объект `concurrent_unordered_map` для копирования или перемещения элементов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Все конструкторы хранят объект распределителя `_Allocator` и инициализируют неупорядоченную карту.
 
@@ -270,7 +271,7 @@ concurrent_unordered_map(
 
 Последний конструктор задает перемещение параллельной неупорядоченной таблицы `_Umap` .
 
-## <a name="count"></a><a name="count"></a>расчета
+## <a name="count"></a><a name="count"></a> расчета
 
 Подсчитывает количество элементов, соответствующих указанному ключу. Эта функция является потенциальной в режиме параллелизма.
 
@@ -287,7 +288,7 @@ size_type count(const key_type& KVal) const;
 
 Количество раз, когда ключ отображается в контейнере.
 
-## <a name="empty"></a><a name="empty"></a>указано
+## <a name="empty"></a><a name="empty"></a> указано
 
 Проверяет отсутствие элементов. Данный метод безопасен в режиме параллелизма.
 
@@ -299,11 +300,11 @@ bool empty() const;
 
 **`true`** значение, если параллельный контейнер пуст; **`false`** в противном случае —.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 При наличии параллельных вставок независимо от того, является ли параллельный контейнер пустым, может измениться сразу после вызова этой функции, прежде чем возвращаемое значение будет считаться четным.
 
-## <a name="end"></a><a name="end"></a>конце
+## <a name="end"></a><a name="end"></a> end
 
 Возвращает итератор, указывающий на расположение, следующее за последним элементом в параллельном контейнере. Данный метод безопасен в режиме параллелизма.
 
@@ -317,7 +318,7 @@ const_iterator end() const;
 
 Итератор на расположение, на котором заканчивается последний элемент в параллельном контейнере.
 
-## <a name="equal_range"></a><a name="equal_range"></a>equal_range
+## <a name="equal_range"></a><a name="equal_range"></a> equal_range
 
 Находит диапазон, соответствующий указанному ключу. Эта функция является потенциальной в режиме параллелизма.
 
@@ -340,11 +341,11 @@ std::pair<const_iterator,
 
 [Пара](../../../standard-library/pair-structure.md) , в которой первый элемент является итератором на начало, а второй элемент — итератором на конец диапазона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Одновременные вставки могут привести к вставке дополнительных ключей после итератора begin и перед конечным итератором.
 
-## <a name="find"></a><a name="find"></a>Найдено
+## <a name="find"></a><a name="find"></a> Найдено
 
 Определяет элемент, соответствующий указанному ключу. Эта функция является потенциальной в режиме параллелизма.
 
@@ -363,7 +364,7 @@ const_iterator find(const key_type& KVal) const;
 
 Итератор, указывающий на расположение первого элемента, совпадающего с предоставленным ключом, или итератор, `end()` Если такого элемента не существует.
 
-## <a name="get_allocator"></a><a name="get_allocator"></a>get_allocator
+## <a name="get_allocator"></a><a name="get_allocator"></a> get_allocator
 
 Возвращает сохраненный объект распределителя для этого параллельного контейнера. Данный метод безопасен в режиме параллелизма.
 
@@ -375,7 +376,7 @@ allocator_type get_allocator() const;
 
 Сохраненный объект распределителя для этого параллельного контейнера.
 
-## <a name="hash_function"></a><a name="hash_function"></a>hash_function
+## <a name="hash_function"></a><a name="hash_function"></a> hash_function
 
 Получает сохраненный объект хэш-функции.
 
@@ -387,7 +388,7 @@ hasher hash_function() const;
 
 Сохраненный объект хэш-функции.
 
-## <a name="insert"></a><a name="insert"></a>Вставляет
+## <a name="insert"></a><a name="insert"></a> Вставляет
 
 Добавляет элементы в `concurrent_unordered_map` объект.
 
@@ -422,7 +423,7 @@ typename std::enable_if<!std::is_same<const_iterator,
 *_Iterator*<br/>
 Тип итератора, используемый для вставки.
 
-*3,3*<br/>
+*V*<br/>
 Тип значения, вставляемого в карту.
 
 *value*<br/>
@@ -441,7 +442,7 @@ typename std::enable_if<!std::is_same<const_iterator,
 
 Пара, содержащая итератор и логическое значение. Дополнительные сведения см. в разделе "Примечания".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция – член определяет, существует ли элемент X в последовательности, ключ которой имеет эквивалентное упорядочение `value` . В противном случае он создает такой элемент X и инициализирует его с помощью `value` . Затем функция определяет итератор `where` , обозначающий X. Если произошла Вставка, функция возвращает значение `std::pair(where, true)` . В противном случае возвращается значение `std::pair(where, false)`.
 
@@ -451,7 +452,7 @@ typename std::enable_if<!std::is_same<const_iterator,
 
 Последние две функции-члена ведут себя так же, как первые два, за исключением того, что `value` используется для создания вставленного значения.
 
-## <a name="key_eq"></a><a name="key_eq"></a>key_eq
+## <a name="key_eq"></a><a name="key_eq"></a> key_eq
 
 Возвращает сохраненный объект функции сравнения равенства.
 
@@ -463,7 +464,7 @@ key_equal key_eq() const;
 
 Сохраненный объект функции сравнения равенства.
 
-## <a name="load_factor"></a><a name="load_factor"></a>load_factor
+## <a name="load_factor"></a><a name="load_factor"></a> load_factor
 
 Выполняет вычисление и возвращает текущий коэффициент загрузки контейнера. Коэффициент загрузки — это количество элементов в контейнере, деленное на количество сегментов.
 
@@ -475,7 +476,7 @@ float load_factor() const;
 
 Коэффициент загрузки для контейнера.
 
-## <a name="max_load_factor"></a><a name="max_load_factor"></a>max_load_factor
+## <a name="max_load_factor"></a><a name="max_load_factor"></a> max_load_factor
 
 Возвращает или задает максимальный коэффициент загрузки контейнера. Максимальный коэффициент загрузки — это наибольшее число элементов, чем может быть в любом контейнере, прежде чем контейнер будет расти до размера внутренней таблицы.
 
@@ -493,7 +494,7 @@ void max_load_factor(float _Newmax);
 
 Первая функция-член возвращает сохраненный коэффициент максимальной нагрузки. Вторая функция-член не возвращает значение, но вызывает исключение [out_of_range](../../../standard-library/out-of-range-class.md) , если указанный коэффициент загрузки является недопустимым.
 
-## <a name="max_size"></a><a name="max_size"></a>max_size
+## <a name="max_size"></a><a name="max_size"></a> max_size
 
 Возвращает максимальный размер параллельного контейнера, определяемого распределителем. Данный метод безопасен в режиме параллелизма.
 
@@ -505,11 +506,11 @@ size_type max_size() const;
 
 Максимальное число элементов, которые могут быть вставлены в этот параллельный контейнер.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это значение верхней границы может быть выше, чем на самом деле может храниться в контейнере.
 
-## <a name="operator"></a><a name="operator_at"></a>operator []
+## <a name="operator"></a><a name="operator_at"></a> operator[]
 
 Находит или вставляет элемент с указанным ключом. Этот метод является типобезопасным в режиме параллелизма.
 
@@ -530,7 +531,7 @@ mapped_type& operator[](key_type&& kval);
 
 Ссылка на значение данных найденного или вставленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если значение ключа аргумента не найдено, он вставляется вместе со значением по умолчанию для такого типа данных.
 
@@ -538,7 +539,7 @@ mapped_type& operator[](key_type&& kval);
 
 При использовании `operator[]` для вставки элементов возвращаемая ссылка не отображает, меняет ли вставка уже существующий элемент или создает новый. Функции-члены `find` и [INSERT](#insert) можно использовать, чтобы определить, существует ли элемент с указанным ключом перед вставкой.
 
-## <a name="operator"></a><a name="operator_eq"></a>Оператор =
+## <a name="operator"></a><a name="operator_eq"></a> Оператор =
 
 Присваивает `concurrent_unordered_map` этому объекту содержимое другого объекта. Этот метод не является типобезопасным в режиме параллелизма.
 
@@ -557,11 +558,11 @@ concurrent_unordered_map& operator= (concurrent_unordered_map&& _Umap);
 
 Ссылка на этот `concurrent_unordered_map` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 После удаления всех существующих элементов в параллельном векторе `operator=` либо копирует, либо перемещает содержимое `_Umap` в параллельный вектор.
 
-## <a name="rehash"></a><a name="rehash"></a>rehash
+## <a name="rehash"></a><a name="rehash"></a> rehash
 
 Повторно создает хэш-таблицу.
 
@@ -574,13 +575,13 @@ void rehash(size_type _Buckets);
 *_Buckets*<br/>
 Необходимое количество сегментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член устанавливает число сегментов не менее `_Buckets` и при необходимости перестраивает хэш-таблицу. Число сегментов должно быть степенью числа 2. Если не является степенью числа 2, она будет округляться до следующей самой крупной степени 2.
 
 Он вызывает исключение [out_of_range](../../../standard-library/out-of-range-class.md) , если количество сегментов недопустимо (0 или больше максимального количества сегментов).
 
-## <a name="size"></a><a name="size"></a>изменять
+## <a name="size"></a><a name="size"></a> изменять
 
 Возвращает число элементов в этом параллельном контейнере. Данный метод безопасен в режиме параллелизма.
 
@@ -592,11 +593,11 @@ size_type size() const;
 
 Число элементов в контейнере.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 При наличии параллельных вставок число элементов в параллельном контейнере может измениться сразу после вызова этой функции даже до чтения возвращаемого значения.
 
-## <a name="swap"></a><a name="swap"></a>позиции
+## <a name="swap"></a><a name="swap"></a> позиции
 
 Меняет местами содержимое двух объектов `concurrent_unordered_map`. Этот метод не является типобезопасным в режиме параллелизма.
 
@@ -609,7 +610,7 @@ void swap(concurrent_unordered_map& _Umap);
 *_Umap*<br/>
 Объект `concurrent_unordered_map` для обмена.
 
-## <a name="unsafe_begin"></a><a name="unsafe_begin"></a>unsafe_begin
+## <a name="unsafe_begin"></a><a name="unsafe_begin"></a> unsafe_begin
 
 Возвращает итератор, который является первым элементом в этом контейнере для определенного контейнера.
 
@@ -628,7 +629,7 @@ const_local_iterator unsafe_begin(size_type _Bucket) const;
 
 Итератор, указывающий на начало контейнера.
 
-## <a name="unsafe_bucket"></a><a name="unsafe_bucket"></a>unsafe_bucket
+## <a name="unsafe_bucket"></a><a name="unsafe_bucket"></a> unsafe_bucket
 
 Возвращает индекс контейнера, сопоставляемый с указанным ключом в этом контейнере.
 
@@ -645,7 +646,7 @@ size_type unsafe_bucket(const key_type& KVal) const;
 
 Индекс контейнера для ключа в этом контейнере.
 
-## <a name="unsafe_bucket_count"></a><a name="unsafe_bucket_count"></a>unsafe_bucket_count
+## <a name="unsafe_bucket_count"></a><a name="unsafe_bucket_count"></a> unsafe_bucket_count
 
 Возвращает текущее количество контейнеров в этом контейнере.
 
@@ -657,7 +658,7 @@ size_type unsafe_bucket_count() const;
 
 Текущее число контейнеров в этом контейнере.
 
-## <a name="unsafe_bucket_size"></a><a name="unsafe_bucket_size"></a>unsafe_bucket_size
+## <a name="unsafe_bucket_size"></a><a name="unsafe_bucket_size"></a> unsafe_bucket_size
 
 Возвращает количество элементов в определенном контейнере этого контейнера.
 
@@ -674,7 +675,7 @@ size_type unsafe_bucket_size(size_type _Bucket);
 
 Текущее число контейнеров в этом контейнере.
 
-## <a name="unsafe_cbegin"></a><a name="unsafe_cbegin"></a>unsafe_cbegin
+## <a name="unsafe_cbegin"></a><a name="unsafe_cbegin"></a> unsafe_cbegin
 
 Возвращает итератор, который является первым элементом в этом контейнере для определенного контейнера.
 
@@ -691,7 +692,7 @@ const_local_iterator unsafe_cbegin(size_type _Bucket) const;
 
 Итератор, указывающий на начало контейнера.
 
-## <a name="unsafe_cend"></a><a name="unsafe_cend"></a>unsafe_cend
+## <a name="unsafe_cend"></a><a name="unsafe_cend"></a> unsafe_cend
 
 Возвращает итератор в позицию, которая завершилась после последнего элемента в определенном контейнере.
 
@@ -708,7 +709,7 @@ const_local_iterator unsafe_cend(size_type _Bucket) const;
 
 Итератор, указывающий на начало контейнера.
 
-## <a name="unsafe_end"></a><a name="unsafe_end"></a>unsafe_end
+## <a name="unsafe_end"></a><a name="unsafe_end"></a> unsafe_end
 
 Возвращает итератор, который является последним элементом в этом контейнере для определенного контейнера.
 
@@ -727,7 +728,7 @@ const_local_iterator unsafe_end(size_type _Bucket) const;
 
 Итератор, указывающий на конец контейнера.
 
-## <a name="unsafe_erase"></a><a name="unsafe_erase"></a>unsafe_erase
+## <a name="unsafe_erase"></a><a name="unsafe_erase"></a> unsafe_erase
 
 Удаляет элементы из `concurrent_unordered_map` указанных позиций. Этот метод не является типобезопасным в режиме параллелизма.
 
@@ -761,13 +762,13 @@ size_type unsafe_erase(
 
 Первые две функции-члена возвращают итератор, который обозначает первый элемент, находящийся за всеми удаленными элементами, или `concurrent_unordered_map::end`(), если такой элемент не существует. Третья функция-член возвращает число элементов, которые она удаляет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция-член удаляет элемент управляемой последовательности, указанный параметром `_Where`. Вторая функция-член удаляет элементы в диапазоне [ `_Begin` , `_End` ).
 
 Третья функция-член удаляет элементы в диапазоне, разделенном `concurrent_unordered_map::equal_range` (квал).
 
-## <a name="unsafe_max_bucket_count"></a><a name="unsafe_max_bucket_count"></a>unsafe_max_bucket_count
+## <a name="unsafe_max_bucket_count"></a><a name="unsafe_max_bucket_count"></a> unsafe_max_bucket_count
 
 Возвращает максимальное число контейнеров в этом контейнере.
 
@@ -779,7 +780,7 @@ size_type unsafe_max_bucket_count() const;
 
 Максимальное число контейнеров в этом контейнере.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Пространство имен Concurrency](concurrency-namespace.md)<br/>
 [Параллельные контейнеры и объекты](../../../parallel/concrt/parallel-containers-and-objects.md)

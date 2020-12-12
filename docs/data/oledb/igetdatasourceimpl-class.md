@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ижетдатасаурцеимпл Class'
 title: Класс IGetDataSourceImpl
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - IGetDataSourceImpl class
 - GetDataSource method
 ms.assetid: d63f3178-d663-4f01-8c09-8aab2dd6805a
-ms.openlocfilehash: 4c8af66f41724c5a99dfe271a7dd8babc3a993a5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 24cf83b7eb799882f1c7da42854899bcf46fddf2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843967"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287272"
 ---
 # <a name="igetdatasourceimpl-class"></a>Класс IGetDataSourceImpl
 
@@ -49,7 +50,7 @@ class ATL_NO_VTABLE IGetDataSourceImpl : public IGetDataSource
 |-|-|
 |[GetDataSource](#getdatasource)|Возвращает указатель интерфейса на объекте источника данных, который создал сеанс.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Это обязательный интерфейс в сеансе для получения указателя интерфейса на объект источника данных.
 
@@ -68,7 +69,7 @@ STDMETHOD(GetDataSource)(REFIID riid,
 
 См. раздел [ижетдатасаурце:: DataSource](/previous-versions/windows/desktop/ms725443(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Полезно, если необходимо получить доступ к свойствам в объекте источника данных.
 

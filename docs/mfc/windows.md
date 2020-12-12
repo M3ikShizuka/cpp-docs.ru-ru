@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Windows'
 title: Windows
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,48 +8,48 @@ helpviewer_keywords:
 - MFC, windows
 - window objects [MFC], MFC Framework
 ms.assetid: dd92bf34-842e-40fe-8aea-3028b55314d5
-ms.openlocfilehash: ee5e6fef58b9ddfa2172b9024d414bdb03e93283
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c38dd8224fbd518fb0ebb2407ec4d03a43d90c63
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62338003"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284932"
 ---
 # <a name="windows"></a>Windows
 
-Этот сборник статей рассматриваются объекты окна платформы MFC. Все окна MFC являются производными от класса [CWnd](../mfc/reference/cwnd-class.md), включая окна фрейма, представлений, окон и элементов управления.
+В этом семействе статей описываются объекты окна в платформе MFC. Все окна MFC являются производными от класса [CWnd](../mfc/reference/cwnd-class.md), включая окна фрейма, представления, диалоговые окна и элементы управления.
 
-Первая группа статей описывает [объектов окна](../mfc/window-objects.md) в целом. Ссылки на эту группу, общие сведения об объектах окно C++, как они инкапсулируют `HWND`, и как их использовать при создании собственных windows, таких как дочерние окна.
+В первой группе статей описываются [объекты окна](../mfc/window-objects.md) в целом. Общие сведения об объектах окон C++, их инкапсуляции `HWND` и использовании при создании собственных окон, например дочерних окон, см. в этой группе.
 
-Вторая группа статей описывает [окон с фреймами](../mfc/frame-windows.md)— windows, которые добавляют рамку вокруг содержимого — в частности. Ссылки на эту группу, сведения об управлении платформой MFC, окон фреймов и содержимое фрейма, включая панели элементов управления и представления.
+Во второй группе статей описываются [окна фрейма](../mfc/frame-windows.md)— окна, которые помещают рамку вокруг содержимого, в частности. Сведения о том, как платформа MFC управляет окнами фрейма и содержимым рамки, включая панели элементов управления и представления, см. в этой группе.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Выберите для получения дополнительных сведений
+## <a name="what-do-you-want-to-know-more-about"></a>Что вы хотите узнать подробнее
 
-*Разделы, посвященные объектов окна в целом*
+*Разделы об объектах окон в целом*
 
 - [Объекты окон](../mfc/window-objects.md)
 
-- [Связь между C++ обрабатывает объекты окон и HWND](../mfc/relationship-between-a-cpp-window-object-and-an-hwnd.md)
+- [Связь между объектами окна C++ и дескрипторами HWND](../mfc/relationship-between-a-cpp-window-object-and-an-hwnd.md)
 
 - [Производные классы окон](../mfc/derived-window-classes.md)
 
-- [Создание объектов-окон](../mfc/creating-windows.md)
+- [Создание объектов Window](../mfc/creating-windows.md)
 
-- [Уничтожение объектов окон](../mfc/destroying-window-objects.md)
+- [Уничтожение объектов Window](../mfc/destroying-window-objects.md)
 
-- [Регистрация классов «window»](../mfc/registering-window-classes.md)
+- [Регистрация окна "классы"](../mfc/registering-window-classes.md)
 
-- [Работа с объектами окон](../mfc/working-with-window-objects.md)
+- [Использование объектов окон](../mfc/working-with-window-objects.md)
 
-- [Контексты устройств](../mfc/device-contexts.md): объекты, которые делают Windows Рисование аппаратно независимых
+- [Контексты устройств](../mfc/device-contexts.md): объекты, которые делают независимыми для рисования Windows устройства
 
-- [Графические объекты](../mfc/graphic-objects.md): перья, кисти, шрифты, растровые изображения, палитр, регионах
+- [Графические объекты](../mfc/graphic-objects.md): перья, кисти, шрифты, точечные рисунки, палитры, регионы
 
-*Разделы окна фрейма*
+*Разделы окон фрейма*
 
-- [Окна фрейма](../mfc/frame-windows.md): объекты окон, которые предоставляют кадров
+- [Окна фрейма](../mfc/frame-windows.md): объекты окна, которые предоставляют кадры
 
-- [Окна фрейма и представления](../mfc/frame-windows.md)
+- [Окна и представления фрейма](../mfc/frame-windows.md)
 
 - [Классы окна фрейма](../mfc/frame-window-classes.md)
 
@@ -56,13 +57,13 @@ ms.locfileid: "62338003"
 
 - [Изменение стилей окна, созданного MFC](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)
 
-- [Окон фрейма](../mfc/what-frame-windows-do.md)
+- [Функция окон фрейма](../mfc/what-frame-windows-do.md)
 
 - [Использование окон фрейма](../mfc/using-frame-windows.md)
 
-- [Управление MD/дочерними окнами (окно MDICLIENT)](../mfc/managing-mdi-child-windows.md)
+- [Управление окнами MD/Child (окно МДИКЛИЕНТ)](../mfc/managing-mdi-child-windows.md)
 
-- [Управление меню, панелей элементов управления и ускорителями](../mfc/managing-menus-control-bars-and-accelerators.md)
+- [Управление меню, панелями элементов управления и ускорителями](../mfc/managing-menus-control-bars-and-accelerators.md)
 
 - [CFrameWnd](../mfc/reference/cframewnd-class.md)
 
@@ -72,39 +73,39 @@ ms.locfileid: "62338003"
 
 - [Использование представлений](../mfc/using-views.md)
 
-- [Несколько типов документов, представлений и фрейма Windows (окна разделителей)](../mfc/multiple-document-types-views-and-frame-windows.md)
+- [Несколько типов документов, представлений и окон фрейма (окна с разделителями)](../mfc/multiple-document-types-views-and-frame-windows.md)
 
-- [Сообщения (карты и функции обработчика)](../mfc/messages.md)
+- [Сообщения (функции Maps и handler)](../mfc/messages.md)
 
-*Создавать и уничтожать Windows*
+*Создание и уничтожение окон*
 
 - [Общая последовательность создания окна](../mfc/general-window-creation-sequence.md)
 
-- [Уничтожения объектов окон](../mfc/destroying-window-objects.md)
+- [Уничтожить объекты окна](../mfc/destroying-window-objects.md)
 
 - [Создание окон фрейма документа](../mfc/creating-document-frame-windows.md)
 
-- [Уничтожения окна фрейма](../mfc/destroying-frame-windows.md)
+- [Уничтожить окна фрейма](../mfc/destroying-frame-windows.md)
 
-*Создание разделителя Windows*
+*Создание окон разделителей*
 
-- [Создание окна разделителей](../mfc/multiple-document-types-views-and-frame-windows.md)
+- [Создание окон разделителей](../mfc/multiple-document-types-views-and-frame-windows.md)
 
-*Управление Windows дочерних и текущее представление*
+*Управление дочерними окнами и текущим представлением*
 
 - [Управление дочерними окнами MDI](../mfc/managing-mdi-child-windows.md)
 
 - [Управление текущим представлением](../mfc/managing-the-current-view.md)
 
-- [Управление меню, панелей элементов управления и ускорителями](../mfc/managing-menus-control-bars-and-accelerators.md)
+- [Управление меню, панелями элементов управления и ускорителями](../mfc/managing-menus-control-bars-and-accelerators.md)
 
-*Работа с контексты устройств и стили окна*
+*Работа с контекстами устройств и стилями окна*
 
-- [Использовать перья и другие графические объекты в контексте устройства](../mfc/graphic-objects.md)
+- [Использование перьев и других графических объектов в контексте устройства](../mfc/graphic-objects.md)
 
 - [Изменение стилей окна, созданного MFC](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Элементы пользовательского интерфейса](../mfc/user-interface-elements-mfc.md)<br/>
 [Диалоговые окна](../mfc/dialog-boxes.md)<br/>

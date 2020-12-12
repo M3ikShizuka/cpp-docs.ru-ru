@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о том, как получить указатель на массив байтов.
 title: Практическое руководство. Получение указателя на массив байтов
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - pointers, to Byte array
 - Byte arrays
 ms.assetid: aea18073-3341-47f4-9f0e-04e03327037e
-ms.openlocfilehash: 5c0fc61f2876c652be6f25bf1627822537892dc9
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: d76aa9040be5b908edac3a87ae6f0698f6d6a5dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "79545219"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286388"
 ---
 # <a name="how-to-obtain-a-pointer-to-byte-array"></a>Практическое руководство. Получение указателя на массив байтов
 
@@ -32,6 +33,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Использование взаимодействия языка C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[Использование взаимодействия C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

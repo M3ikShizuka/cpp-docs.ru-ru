@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Идбкреатекоммандимпл Class'
 title: Класс IDBCreateCommandImpl
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - IDBCreateCommandImpl class
 - CreateCommand method
 ms.assetid: eac4755e-1668-42e1-958e-a35620c385ae
-ms.openlocfilehash: b7b658b2b365eb84a39ae94cef7c77e18d7bd4a0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: aaa9e84b66bd8bcb93fa418eed56a3cdadd31d6f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845553"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287350"
 ---
 # <a name="idbcreatecommandimpl-class"></a>Класс IDBCreateCommandImpl
 
@@ -50,7 +51,7 @@ class ATL_NO_VTABLE IDBCreateCommandImpl
 |-|-|
 |[CreateCommand](#createcommand)|Создает новую команду.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Необязательный интерфейс объекта Session для получения новой команды.
 

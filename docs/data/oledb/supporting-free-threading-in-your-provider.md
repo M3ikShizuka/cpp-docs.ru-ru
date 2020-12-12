@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о поддержке свободных потоков в поставщике
 title: Поддержка свободной потоковой модели в поставщике
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE DB providers, multithreaded
 - threading [C++], providers
 ms.assetid: a91270dc-cdf9-4855-88e7-88a54be7cbe8
-ms.openlocfilehash: 50e05b70a782dd343031443540790697e980c994
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 4f6785dd85ae043ce0ee74c1dda4fa365c566729
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209557"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286479"
 ---
 # <a name="supporting-free-threading-in-your-provider"></a>Поддержка свободной потоковой модели в поставщике
 
@@ -37,9 +38,9 @@ HRESULT MyObject::MyMethod(void)
 }
 ```
 
-Дополнительные сведения о том, как защитить критические разделы с помощью `Lock` и `Unlock`, см. в статье [многопоточность. Использование классов синхронизации](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
+Дополнительные сведения о защите критических разделов с помощью `Lock` и `Unlock` см. в разделе [многопоточность. Использование классов синхронизации](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).
 
-Убедитесь, что переопределяемые методы (например, `Execute`) являются потокобезопасными.
+Убедитесь, что переопределяемые методы (например, `Execute` ) являются потокобезопасными.
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: как приемник Windows Forms события из собственных классов C++'
 title: Практическое руководство. Получение событий Windows Forms из собственных классов C++
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -8,36 +9,36 @@ helpviewer_keywords:
 - event handling, .NET/native interop
 - event handling, Windows Forms in C++
 ms.assetid: 6e30ddee-d058-4c8d-9956-2a43d86f19d5
-ms.openlocfilehash: d02bcea4efce03c8fb11650d344468236737cfbd
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 223590849f114bfe02b030a0639f160b8fc1c321
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62387270"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286362"
 ---
 # <a name="how-to-sink-windows-forms-events-from-native-c-classes"></a>Практическое руководство. Получение событий Windows Forms из собственных классов C++
 
-Вы можете включить собственные классы C++ для получения обратных вызовов из управляемого события, созданные из элементов управления Windows Forms или другие формы в формате MFC макрос карты. Получение событий в представлениях и диалоговых окнах аналогично выполнению задачи для элементов управления.
+Можно включить собственные классы C++ для получения обратных вызовов от управляемых событий, вызванных Windows Forms элементами управления или другими формами, с помощью формата схемы макросов MFC. События-приемники в представлениях и диалоговых окнах похожи на выполнение одной и той же задачи для элементов управления.
 
-Чтобы сделать это, вам потребуется:
+Для этого необходимо выполнить следующие действия.
 
-- Присоединение `OnClick` обработчик событий для элемента управления с помощью [MAKE_DELEGATE](../mfc/reference/delegate-and-interface-maps.md#make_delegate).
+- Присоедините `OnClick` обработчик событий к элементу управления с помощью [MAKE_DELEGATE](../mfc/reference/delegate-and-interface-maps.md#make_delegate).
 
-- Создайте сопоставление делегатов с помощью [BEGIN_DELEGATE_MAP](../mfc/reference/delegate-and-interface-maps.md#begin_delegate_map), [END_DELEGATE_MAP](../mfc/reference/delegate-and-interface-maps.md#end_delegate_map), и [EVENT_DELEGATE_ENTRY](../mfc/reference/delegate-and-interface-maps.md#event_delegate_entry).
+- Создайте карту делегатов с помощью [BEGIN_DELEGATE_MAP](../mfc/reference/delegate-and-interface-maps.md#begin_delegate_map), [END_DELEGATE_MAP](../mfc/reference/delegate-and-interface-maps.md#end_delegate_map)и [EVENT_DELEGATE_ENTRY](../mfc/reference/delegate-and-interface-maps.md#event_delegate_entry).
 
-В этом примере продолжает работу, начатую в [как: Привязка данных DDX/DDV к элементам Управления Windows Forms](../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md).
+В этом примере пройдется работа, выполненная в ходе [выполнения привязки данных DDX/DDV с Windows Forms](../dotnet/how-to-do-ddx-ddv-data-binding-with-windows-forms.md).
 
-Теперь нужно связать элемент управления MFC (`m_MyControl`) с управляемым делегатом обработчика событий вызывается `OnClick` для управляемого <xref:System.Windows.Forms.Control.Click> событий.
+Теперь вы свяжете элемент управления MFC ( `m_MyControl` ) с управляемым делегатом обработчика событий, который вызывается `OnClick` для управляемого <xref:System.Windows.Forms.Control.Click> события.
 
-### <a name="to-attach-the-onclick-event-handler"></a>Чтобы настроить в обработчике события OnClick:
+### <a name="to-attach-the-onclick-event-handler"></a>Чтобы присоединить обработчик событий OnClick, сделайте следующее:
 
-1. Добавьте следующий код в реализацию BOOL CMFC01Dlg::OnInitDialog:
+1. Добавьте следующий код в реализацию BOOL CMFC01Dlg:: Онинитдиалог:
 
     ```
     m_MyControl.GetControl()->button1->Click += MAKE_DELEGATE( System::EventHandler, OnClick );
     ```
 
-1. Добавьте следующий код в раздел public в объявлении класса CMFC01Dlg: общий CDialog.
+1. Добавьте следующий код в общедоступный раздел в объявлении класса CMFC01Dlg: public CDialog.
 
     ```
     // delegate map
@@ -48,7 +49,7 @@ ms.locfileid: "62387270"
     void OnClick( System::Object^ sender, System::EventArgs^ e );
     ```
 
-1. Наконец, добавьте реализацию `OnClick` в файл CMFC01Dlg.cpp:
+1. Наконец, добавьте реализацию для `OnClick` в CMFC01Dlg. cpp:
 
     ```
     void CMFC01Dlg::OnClick(System::Object^ sender, System::EventArgs^ e)
@@ -57,7 +58,7 @@ ms.locfileid: "62387270"
     }
     ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [MAKE_DELEGATE](../mfc/reference/delegate-and-interface-maps.md#make_delegate)<br/>
 [BEGIN_DELEGATE_MAP](../mfc/reference/delegate-and-interface-maps.md#begin_delegate_map)<br/>

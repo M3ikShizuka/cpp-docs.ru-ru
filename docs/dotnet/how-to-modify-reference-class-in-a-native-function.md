@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как изменить ссылочный класс в собственной функции.
 title: Практическое руководство. Изменение ссылочного класса в собственной функции
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - platform invoke, reference class
 - reference types, modifying in a C++ native function
 ms.assetid: c701145b-62a0-4c4b-b32a-db8d69a59720
-ms.openlocfilehash: a9ff21390f8a5d7b20c8c36e596f80140ccb9a39
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 49bdb082d5b884a0cbb34970b2ffebe988f15c0d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90683953"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286505"
 ---
 # <a name="how-to-modify-reference-class-in-a-native-function"></a>Практическое руководство. Изменение ссылочного класса в собственной функции
 
@@ -87,6 +88,6 @@ In native: intarr: 100, 200
 In managed: intarr: 300, 400
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Использование взаимодействия C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

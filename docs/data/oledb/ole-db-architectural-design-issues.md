@@ -1,20 +1,21 @@
 ---
+description: 'Дополнительные сведения: OLE DB проблем проектирования архитектуры'
 title: Вопросы проектирования архитектуры OLE DB
 ms.date: 05/09/2019
 helpviewer_keywords:
 - OLE DB, application design considerations
 ms.assetid: 8caa7d99-d2bb-42c9-8884-74f228bb6ecc
-ms.openlocfilehash: b481d9948d3055247bd284ca794a0fa65905e21b
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 2e6bd90b5d3c67fbdfb8cdfbb9c32af88ed106e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "79544552"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286986"
 ---
 # <a name="ole-db-architectural-design-issues"></a>Вопросы проектирования архитектуры OLE DB
 
 > [!NOTE]
-> Мастер объекта-получателя ATL OLE DB недоступен в Visual Studio 2019 и более поздних версиях. Эту функцию все еще можно добавить вручную. Дополнительные сведения см. в статье [Creating a Consumer Without Using a Wizard](creating-a-consumer-without-using-a-wizard.md) (Создание объекта-получателя без помощи мастера).
+> Мастер объекта-получателя ATL OLE DB недоступен в Visual Studio 2019 и более поздних версиях. Эту функцию все еще можно добавить вручную. Дополнительные сведения см. в статье [Создание объекта-получателя без помощи мастера](creating-a-consumer-without-using-a-wizard.md).
 
 Перед запуском приложения OLE DB рассмотрите следующие вопросы.
 
@@ -40,7 +41,7 @@ ms.locfileid: "79544552"
 
 - [Microsoft Data Access Technical Articles Overview](/previous-versions/ms810811(v=msdn.10)) (Обзор технических статей о доступе к данным Майкрософт)
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Программирование объектов OLE DB](../../data/oledb/ole-db-programming.md)<br/>
+[OLE DB программирование](../../data/oledb/ole-db-programming.md)<br/>
 [Общие сведения о программировании OLE DB](../../data/oledb/ole-db-programming-overview.md)

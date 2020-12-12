@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кмфкбасевисуалманажер Class'
 title: Класс Кмфкбасевисуалманажер
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - CMFCBaseVisualManager [MFC], CleanUpThemes
 - CMFCBaseVisualManager [MFC], UpdateSystemColors
 ms.assetid: d56f3afc-cdea-4de1-825a-a08999c571e0
-ms.openlocfilehash: 79a3c0945fdd0df04e9ee52d7bad97dc0847fa91
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 14727eea4bcefdc7b7de53f19f188d7cb9c528c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834301"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97284984"
 ---
 # <a name="cmfcbasevisualmanager-class"></a>Класс Кмфкбасевисуалманажер
 
@@ -49,7 +50,7 @@ ms.locfileid: "88834301"
 class CMFCBaseVisualManager: public CObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -78,7 +79,7 @@ class CMFCBaseVisualManager: public CObject
 |[Кмфкбасевисуалманажер:: Клеанупсемес](#cleanupthemes)|Вызовы `CloseThemeData` для всех дескрипторов, полученных в `UpdateSystemColors` .|
 |[Кмфкбасевисуалманажер:: Упдатесистемколорс](#updatesystemcolors)|Вызовы `OpenThemeData` для получения дескрипторов для рисования различных элементов управления: окон, панелей инструментов, кнопок и т. д.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Нет необходимости напрямую создавать экземпляры объектов этого класса.
 
@@ -102,7 +103,7 @@ class CMFCBaseVisualManager: public CObject
 void CleanUpThemes();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Только для внутреннего использования.
 
@@ -156,7 +157,7 @@ virtual BOOL DrawCheckBox(
 
 Значение TRUE, если API темы включен; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Значения *nсведения* соответствуют следующим стилям флажков.
 
@@ -408,7 +409,7 @@ virtual WinXpTheme GetStandardWindowsTheme();
 void UpdateSystemColors();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Только для внутреннего использования.
 

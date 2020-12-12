@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Идбинитиализеимпл Class'
 title: Класс IDBInitializeImpl
 ms.date: 11/04/2016
 f1_keywords:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - m_dwStatus
 - m_pCUtlPropInfo
 ms.assetid: e4182f81-0443-44f5-a0d3-e7e075d6f883
-ms.openlocfilehash: aff02e812d2806201a08164aeb4a8ef290550725
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6b37998c78c3e88921318654653995ff356ba18a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845540"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287324"
 ---
 # <a name="idbinitializeimpl-class"></a>Класс IDBInitializeImpl
 
@@ -77,7 +78,7 @@ class ATL_NO_VTABLE IDBInitializeImpl : public IDBInitialize
 
 | Имя | Описание |
 |-|-|
-|[Устанавливает](#initialize)|Запускает поставщик.|
+|[Инициализация](#initialize)|Запускает поставщик.|
 |[Отменить инициализацию](#uninitialize)|Останавливает поставщик.|
 
 ### <a name="data-members"></a>Элементы данных
@@ -87,7 +88,7 @@ class ATL_NO_VTABLE IDBInitializeImpl : public IDBInitialize
 |[m_dwStatus](#dwstatus)|Флаги источника данных.|
 |[m_pCUtlPropInfo](#pcutlpropinfo)|Указатель на реализацию свойств базы данных.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Обязательный интерфейс для объектов источника данных и необязательный интерфейс для перечислителей.
 

@@ -1,23 +1,24 @@
 ---
-title: Изменение порядка наследования класса RCustomRowset
+description: 'Дополнительные сведения: изменение наследования Ркустомровсет'
+title: Изменение наследования Ркустомровсет
 ms.date: 10/26/2018
 helpviewer_keywords:
 - RMyProviderRowset
 - inheritance [C++]
 - RCustomRowset
 ms.assetid: 33089c90-98a4-43e7-8e67-d4bb137e267e
-ms.openlocfilehash: d22c6902667ec84abe7bd85ffbffd1f5c5c57f2a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c54533122083c526ad12ac6514efa3ad9ba47cf5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62395577"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287012"
 ---
-# <a name="modifying-the-inheritance-of-rcustomrowset"></a>Изменение порядка наследования класса RCustomRowset
+# <a name="modifying-the-inheritance-of-rcustomrowset"></a>Изменение наследования Ркустомровсет
 
-Чтобы добавить `IRowsetLocate` интерфейс, в примере простого поставщика только для чтения, изменение порядка наследования класса `CCustomRowset`. Изначально `CCustomRowset` наследует от `CRowsetImpl`. Вам нужно изменить так, чтобы наследовать от `CRowsetBaseImpl`.
+Чтобы добавить `IRowsetLocate` интерфейс в простой пример поставщика, доступного только для чтения, измените наследование `CCustomRowset` . Изначально `CCustomRowset` наследует от `CRowsetImpl` . Его необходимо изменить, чтобы он наследовался от `CRowsetBaseImpl` .
 
-Чтобы сделать это, создайте новый класс, `CCustomRowsetImpl`в *Custom*RS.h:
+Для этого создайте новый класс `CCustomRowsetImpl` в *пользовательском* RS. h:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
@@ -31,7 +32,7 @@ class CMyRowsetImpl:
 };
 ```
 
-Теперь, изменить схему интерфейсов COM в *Custom*RS.h быть следующим:
+Теперь измените карту COM-интерфейсов в *пользовательском* RS. h следующим образом:
 
 ```cpp
 BEGIN_COM_MAP(CMyRowsetImpl)
@@ -40,18 +41,18 @@ BEGIN_COM_MAP(CMyRowsetImpl)
 END_COM_MAP()
 ```
 
-Этот код создает схему интерфейсов COM, сообщающий `CMyRowsetImpl` для вызова `QueryInterface` для обоих `IRowset` и `IRowsetLocate` интерфейсов. Чтобы получить все реализации для других набора строк, классы, карта ссылки `CMyRowsetImpl` класс `CRowsetBaseImpl` класс определен в шаблонах OLE DB; карта использует макрос COM_INTERFACE_ENTRY_CHAIN, предписывающие шаблоны OLE DB для сканирования в сопоставление COM в `CRowsetBaseImpl` в ответ на `QueryInterface` вызова.
+Этот код создает карту COM-интерфейса, которая сообщает о `CMyRowsetImpl` вызове `QueryInterface` для `IRowset` `IRowsetLocate` интерфейсов и. Чтобы получить всю реализацию для других классов наборов строк, Map связывает `CMyRowsetImpl` класс с `CRowsetBaseImpl` классом, определенным в шаблонах OLE DB; на карте используется макрос COM_INTERFACE_ENTRY_CHAIN, который сообщает OLE DB шаблонам сканировать карту com в `CRowsetBaseImpl` в ответ на `QueryInterface` вызов.
 
-Свяжите `CCustomRowset` для `CMyRowsetBaseImpl` , изменив `CCustomRowset` наследование `CMyRowsetImpl`, как показано ниже:
+Наконец, свяжите `CCustomRowset` с `CMyRowsetBaseImpl` , изменив `CCustomRowset` для наследования `CMyRowsetImpl` , следующим образом:
 
 ```cpp
 class CCustomRowset : public CMyRowsetImpl<CCustomRowset, CCustomWindowsFile, CCustomCommand>
 ```
 
-`CCustomRowset` Теперь можно использовать `IRowsetLocate` интерфейс, при этом преимуществами оставшаяся часть реализации класса набора строк.
+`CCustomRowset` теперь может использовать `IRowsetLocate` интерфейс, используя преимущества остальной части реализации класса набора строк.
 
-Если это сделано, вы можете [динамически определять столбцы, возвращенные объекту-получателю](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md).
+Когда это будет сделано, можно [динамически определить столбцы, возвращаемые потребителю](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Усовершенствование простого поставщика только для чтения](../../data/oledb/enhancing-the-simple-read-only-provider.md)<br/>
+[Усовершенствование простого поставщика Read-Only](../../data/oledb/enhancing-the-simple-read-only-provider.md)<br/>

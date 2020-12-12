@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: шаблоны OLE DB'
 title: Шаблоны OLE DB
 ms.date: 05/09/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - OLE DB templates
 ms.assetid: 73918f6f-1fd7-4fa2-a0ff-7f9d792fce7e
-ms.openlocfilehash: d3b709bbebdf040ac818d2d2d44576cf49aafdd4
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2a1680f541e9d8f8fb35da22670e72b3a87a1db0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500905"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97286778"
 ---
 # <a name="ole-db-templates"></a>Шаблоны OLE DB
 
@@ -25,7 +26,7 @@ ms.locfileid: "91500905"
 [Шаблоны поставщика OLE DB](../../data/oledb/ole-db-provider-templates-reference.md)<br/>
 Предоставляет ссылки на классы шаблонов поставщика OLE DB, перечисленные по использованию.
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 
 [Общие сведения о программировании OLE DB](../../data/oledb/ole-db-programming-overview.md)<br/>
 Описывает OLE DB и рассматривает универсальный доступ к данным в OLE DB.
@@ -45,7 +46,7 @@ ms.locfileid: "91500905"
 [Создание OLE DB потребителя](../../data/oledb/creating-an-ole-db-consumer.md)<br/>
 Описывает создание шаблонов объекта-получателя OLE DB.
 
-[Создание простого поставщика, доступного только для чтения](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>
+[Создание простого поставщика Read-Only](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>
 Описывает создание простого поставщика с доступом только для чтения, который считывает пару строк.
 
 [Создание обновляемого поставщика](../../data/oledb/creating-an-updatable-provider.md)<br/>

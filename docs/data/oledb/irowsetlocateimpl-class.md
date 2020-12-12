@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: IRowsetLocateImpl Class'
 title: Класс IRowsetLocateImpl
 ms.date: 11/04/2016
 f1_keywords:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - Hash method
 - m_rgbookmarks
 ms.assetid: a8aa3149-7ce8-4976-a680-2da193fd3234
-ms.openlocfilehash: a45b7ef1a31c3ecf34b15ee35bce48559465a905
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5d723fbc1ff85ce2c5b50bb5eff53ba3771751fc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840314"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287064"
 ---
 # <a name="irowsetlocateimpl-class"></a>Класс IRowsetLocateImpl
 
@@ -105,7 +106,7 @@ class ATL_NO_VTABLE IRowsetLocateImpl : public IRowsetImpl<
 |-|-|
 |[m_rgBookmarks](#rgbookmarks)|Массив закладок.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `IRowsetLocateImpl` — Это реализация OLE DB шаблонов интерфейса [IRowsetLocate](/previous-versions/windows/desktop/ms721190(v=vs.85)) . `IRowsetLocate` используется для выборки произвольных строк из набора строк. Набор строк, который не реализует этот интерфейс, является `sequential` набором строк. Если имеется `IRowsetLocate` в наборе строк, столбец 0 является закладкой для строк; при чтении этого столбца будет получено значение закладки, которое можно использовать для перемещения в ту же строку.
 
@@ -134,7 +135,7 @@ STDMETHOD (Compare )(HCHAPTER /* hReserved */,
 
 См. раздел [IRowsetLocate:: Compare](/previous-versions/windows/desktop/ms709539(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Любая из закладок может быть стандартной стандартной [закладкой](/previous-versions/windows/desktop/ms712954(v=vs.85)) OLE DB ( `DBBMK_FIRST` , `DBBMK_LAST` или `DBBMK_INVALID` ). Значение, возвращаемое в, `pComparison` указывает связь между двумя закладками:
 
@@ -169,7 +170,7 @@ STDMETHOD (GetRowsAt )(HWATCHREGION /* hReserved1 */,
 
 См. раздел [IRowsetLocate:: GetRowsAt](/previous-versions/windows/desktop/ms723031(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Чтобы получить из позиции курсора вместо этого, используйте [IRowset:: GetRowsAt](/previous-versions/windows/desktop/ms723031(v=vs.85)).
 
@@ -197,7 +198,7 @@ STDMETHOD (GetRowsByBookmark )(HCHAPTER /* hReserved */,
 
 Другие параметры см. в разделе [IRowsetLocate:: жетровсбибукмарк](/previous-versions/windows/desktop/ms725420(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Закладка может быть значением, определенным пользователем, или OLE DB [стандартной закладками](/previous-versions/windows/desktop/ms712954(v=vs.85)) ( `DBBMK_FIRST` или `DBBMK_LAST` ). Не изменяет позицию курсора.
 
