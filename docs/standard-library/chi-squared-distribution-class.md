@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: chi_squared_distribution классе'
 title: Класс chi_squared_distribution
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - std::chi_squared_distribution [C++], param_type
 - std::chi_squared_distribution [C++], param_type
 ms.assetid: 9b603fbe-cafd-4a92-b8c5-a434d60b8122
-ms.openlocfilehash: 5d7a7e2ba3c962a1ef63b14fed5d4bfb67c38b44
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5ee63e0331a8412ca5104dd7dfbfc427d6b7f627
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845683"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325172"
 ---
 # <a name="chi_squared_distribution-class"></a>Класс chi_squared_distribution
 
@@ -72,9 +73,9 @@ public:
 *РГСЧ*\
 Единый механизм генератора случайных чисел. Возможные типы см. в разделе [\<random>](../standard-library/random.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Шаблон класса описывает распределение, которое создает значения заданного пользователем типа с плавающей запятой или тип **`double`** , если он не указан, распределяется в соответствии с распределением хи-квадрат. В следующей таблице представлены ссылки на статьи об отдельных членах.
+Шаблон класса описывает распределение, которое создает значения указанного пользователем типа с плавающей запятой или тип **`double`** , если он не указан, распределяется в соответствии с распределением Chi-Squared. В следующей таблице представлены ссылки на статьи об отдельных членах.
 
 [chi_squared_distribution](../standard-library/chi-squared-distribution-class.md)\
 [param_type](#param_type)
@@ -239,7 +240,7 @@ explicit chi_squared_distribution(const param_type& parm);
 *ParM*\
 Структура параметров, используемая для формирования распределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительное условие:**`0.0 < n`
 
@@ -270,7 +271,7 @@ struct param_type {
 *Правильно*\
 Объект `param_type`, который требуется сравнить с данным объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительное условие:**`0.0 < n`
 

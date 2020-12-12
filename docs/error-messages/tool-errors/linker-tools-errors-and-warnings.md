@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: ошибки и предупреждения средств компоновщика (Лнккскскскс)'
 title: Ошибки и предупреждения средств компоновщика
 ms.date: 09/10/2019
 f1_keywords:
@@ -313,16 +314,16 @@ helpviewer_keywords:
 - linker [C++], errors and warnings
 - errors [C++], linker
 ms.assetid: d4b12c0f-4dae-48b2-9b9e-fedf94c94cb0
-ms.openlocfilehash: e845ba44476508892be63f0a99f8b2c2fedf0d8e
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 97d73a56469ac2337546859517d3057f1d078132
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79445462"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332096"
 ---
 # <a name="linker-tools-errors-and-warnings-lnkxxxx"></a>Ошибки и предупреждения средств компоновщика (LNKxxxx)
 
-ССЫЛКИ на средства компоновщика, LIB, DUMPBIN и EDITBIN совместно используют общий исполняемый файл, который создает эти ошибки и предупреждения. Средства создают предупреждения в форме LNK*XXXX*, где *XXXX* — это четырехзначный номер.
+ССЫЛКИ на средства компоновщика, LIB, DUMPBIN и EDITBIN совместно используют общий исполняемый файл, который создает эти ошибки и предупреждения. Средства создают предупреждения в форме LNK *XXXX*, где *XXXX* — это четырехзначный номер.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -455,4 +456,4 @@ ms.locfileid: "79445462"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Ошибки иC++ предупреждения средств разработки C/компилятора и сборки](../compiler-errors-1/c-cpp-build-errors.md)
+[Ошибки и предупреждения компилятора и средств сборки C/C++](../compiler-errors-1/c-cpp-build-errors.md)

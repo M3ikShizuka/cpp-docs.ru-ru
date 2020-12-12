@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: char_traits &lt; wchar_t &gt; struct'
 title: Структура char_traits&lt;wchar_t&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - char_traits<wchar_t> class
 ms.assetid: 31f34072-04d6-4871-88fe-48e17d473484
-ms.openlocfilehash: 3b2504dbb124ccca7f9b27619585abb2b5795f92
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0276f4b50cb0039d0bec49b1b3eb2a0b3b2463aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219174"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325226"
 ---
 # <a name="char_traitsltwchar_tgt-struct"></a>Структура char_traits&lt;wchar_t&gt;
 
-Класс, являющийся специализацией структуры шаблона, **char_traits \<CharType> ** элементу типа **`wchar_t`** .
+Класс, являющийся специализацией структуры шаблона, **char_traits \<CharType>** элементу типа **`wchar_t`** .
 
 ## <a name="syntax"></a>Синтаксис
 

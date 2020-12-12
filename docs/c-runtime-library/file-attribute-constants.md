@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье константы атрибутов файлов.
 title: Константы атрибутов файлов
 ms.date: 11/04/2016
 f1_keywords:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - _A_HIDDEN constant
 - _A_RDONLY constant
 ms.assetid: 8dc8ccb9-99f5-446b-876c-7ebecc2f764f
-ms.openlocfilehash: 271459c33cdcc1110222871bdca06d3f04edb497
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 8b57549b4a21cc5d699f933009c575b3f3fca81d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750888"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97306369"
 ---
 # <a name="file-attribute-constants"></a>Константы атрибутов файлов
 
@@ -40,7 +41,7 @@ ms.locfileid: "57750888"
 #include <io.h>
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Эти константы определяют атрибуты текущего файла или каталога, заданного с помощью функции.
 
@@ -57,7 +58,7 @@ ms.locfileid: "57750888"
 
 Вы можете объединить несколько констант с помощью оператора OR (&#124;).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Функции поиска имени файла](../c-runtime-library/filename-search-functions.md)<br/>
+[Функции поиска имен файлов](../c-runtime-library/filename-search-functions.md)<br/>
 [Глобальные константы](../c-runtime-library/global-constants.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: idl_quote'
 title: idl_quote (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - idl_quote attribute
 ms.assetid: a370e1b7-948b-4e67-9a25-58facf24e4c9
-ms.openlocfilehash: 1d0aa80f64593ed347720b84e4059a0c32dce4be
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5aa389214283c188f71190eec41e22d396d887cf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844240"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275442"
 ---
 # <a name="idl_quote"></a>idl_quote
 
@@ -28,7 +29,7 @@ ms.locfileid: "88844240"
 *text*<br/>
 Имя атрибута, которое компилятор Microsoft C++ должен передать в созданный IDL-файл, не возвращая ошибку компилятора.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Если атрибут **idl_quote** C++ используется в качестве изолированного атрибута (с точкой с запятой после закрывающей скобки), то *текст* помещается в Объединенный IDL-файл как есть. Если в символе используется **idl_quote** , *текст* помещается в блок атрибутов для этого символа.
 

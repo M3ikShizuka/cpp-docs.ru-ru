@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: checked_array_iterator классе'
 title: Класс checked_array_iterator
 ms.date: 03/27/2019
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - stdext::checked_array_iterator [C++], reference
 - stdext::checked_array_iterator [C++], base
 ms.assetid: 7f07185e-d588-4ae3-9c4f-84ec4aa25a28
-ms.openlocfilehash: 467a94212d7b1e9d28a3229660b8a8619993b201
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 0db327613826105ccd65800246ad1bd16ffbf923
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684945"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325198"
 ---
 # <a name="checked_array_iterator-class"></a>Класс checked_array_iterator
 
@@ -191,7 +192,7 @@ int main()
 _Iterator base() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [Проверенные итераторы](../standard-library/checked-iterators.md).
 
@@ -247,10 +248,10 @@ checked_array_iterator(
 *изменять*\
 Размер массива.
 
-*номер*\
+*index*\
 Элемент в массиве для инициализации итератора (необязательно).  По умолчанию итератор инициализируется первым элементом в массиве.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [Проверенные итераторы](../standard-library/checked-iterators.md).
 
@@ -298,7 +299,7 @@ int main() {
 typedef typename iterator_traits<_Iterator>::difference_type difference_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип отличия `checked_array_iterator` совпадает с типом отличия итератора.
 
@@ -319,7 +320,7 @@ bool operator==(const checked_array_iterator<_Iterator>& right) const;
 *Правильно*\
 Итератор `checked_array_iterator`, по которому выполняется проверка на равенство.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [Проверенные итераторы](../standard-library/checked-iterators.md).
 
@@ -375,7 +376,7 @@ bool operator!=(const checked_array_iterator<_Iterator>& right) const;
 *Правильно*\
 Итератор `checked_array_iterator`, по которому выполняется проверка на неравенство.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [Проверенные итераторы](../standard-library/checked-iterators.md).
 
@@ -431,7 +432,7 @@ bool operator<(const checked_array_iterator<_Iterator>& right) const;
 *Правильно*\
 Итератор `checked_array_iterator`, по которому выполняется проверка на неравенство.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [Проверенные итераторы](../standard-library/checked-iterators.md).
 
@@ -487,7 +488,7 @@ bool operator>(const checked_array_iterator<_Iterator>& right) const;
 *Правильно*\
 Итератор `checked_array_iterator`, с которым выполняется сравнение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Пример кода см. в разделе [checked_array_iterator:: operator &lt; ](#op_lt) .
 
@@ -506,7 +507,7 @@ bool operator<=(const checked_array_iterator<_Iterator>& right) const;
 *Правильно*\
 Итератор `checked_array_iterator`, с которым выполняется сравнение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Пример кода см. в разделе [checked_array_iterator:: operator &gt; = ](#op_gt_eq) .
 
@@ -525,7 +526,7 @@ bool operator>=(const checked_array_iterator<_Iterator>& right) const;
 *Правильно*\
 Итератор `checked_array_iterator`, с которым выполняется сравнение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [Проверенные итераторы](../standard-library/checked-iterators.md).
 
@@ -580,7 +581,7 @@ reference operator*() const;
 
 Значение элемента, найденного итератором `checked_array_iterator`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [Проверенные итераторы](../standard-library/checked-iterators.md).
 
@@ -641,7 +642,7 @@ pointer operator->() const;
 
 Указатель на элемент, к которому обращается `checked_array_iterator`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Пример кода см. в разделе [checked_array_iterator::operator](#pointer).
 
@@ -661,7 +662,7 @@ checked_array_iterator<_Iterator> operator++(int);
 
 Первый оператор возвращает предварительно увеличенный `checked_array_iterator`, а второй, постинкрементный оператор, возвращает копию увеличенного `checked_array_iterator`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [Проверенные итераторы](../standard-library/checked-iterators.md).
 
@@ -709,7 +710,7 @@ checked_array_iterator<_Iterator> operator--(int);
 
 Первый оператор возвращает предварительно уменьшенный `checked_array_iterator`, а второй, постдекрементный оператор, возвращает копию уменьшенного `checked_array_iterator`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [Проверенные итераторы](../standard-library/checked-iterators.md).
 
@@ -760,7 +761,7 @@ checked_array_iterator<_Iterator>& operator+=(difference_type _Off);
 
 Ссылка на элемент, к которому обращается `checked_array_iterator`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [Проверенные итераторы](../standard-library/checked-iterators.md).
 
@@ -808,7 +809,7 @@ checked_array_iterator<_Iterator> operator+(difference_type _Off) const;
 
 Объект `checked_array_iterator`, который обращается к элементу смещения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [Проверенные итераторы](../standard-library/checked-iterators.md).
 
@@ -856,7 +857,7 @@ checked_array_iterator<_Iterator>& operator-=(difference_type _Off);
 
 Ссылка на элемент, к которому обращается `checked_array_iterator`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [Проверенные итераторы](../standard-library/checked-iterators.md).
 
@@ -907,7 +908,7 @@ difference_type operator-(const checked_array_iterator& right) const;
 
 Объект `checked_array_iterator`, который обращается к элементу смещения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [Проверенные итераторы](../standard-library/checked-iterators.md).
 
@@ -928,7 +929,7 @@ reference operator[](difference_type _Off) const;
 
 Ссылка на смещение элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [Проверенные итераторы](../standard-library/checked-iterators.md).
 
@@ -969,7 +970,7 @@ int main() {
 typedef typename iterator_traits<_Iterator>::pointer pointer;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Пример кода см. в разделе [checked_array_iterator:: operator *](#op_star) .
 
@@ -983,13 +984,13 @@ typedef typename iterator_traits<_Iterator>::pointer pointer;
 typedef typename iterator_traits<_Iterator>::reference reference;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Пример кода см. в разделе [checked_array_iterator:: operator []](#op_at) .
 
 Дополнительные сведения см. в разделе [Проверенные итераторы](../standard-library/checked-iterators.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [\<iterator>](../standard-library/iterator.md)\
 [Справочник по стандартной библиотеке C++](../standard-library/cpp-standard-library-reference.md)
