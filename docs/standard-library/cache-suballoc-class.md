@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: cache_suballoc классе'
 title: Класс cache_suballoc
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - stdext::cache_suballoc [C++], allocate
 - stdext::cache_suballoc [C++], deallocate
 ms.assetid: 9ea9c5e9-1dcc-45d0-b3a7-a56a93d88898
-ms.openlocfilehash: 410cdc7bd45c54c252ce33c7d8e3e2f883ac0eb4
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 9df13155101a77d327c8bdee9da1fe03bfa00366
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560625"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325373"
 ---
 # <a name="cache_suballoc-class"></a>Класс cache_suballoc
 
@@ -33,7 +34,7 @@ class cache_suballoc
 *SZ*\
 Число выделяемых элементов в массиве.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса cache_suballoc сохраняет свободные блоки памяти в свободном списке с неограниченной длиной, используя `freelist<sizeof(Type), max_unbounded>` и подраспределяет блоки памяти из большего блока, выделенного с помощью **оператора New** , если свободный список пуст.
 
@@ -75,7 +76,7 @@ void *allocate(std::size_t count);
 
 Указатель на выделяемый объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cache_suballoccache_suballoc"></a><a name="cache_suballoc"></a> cache_suballoc:: cache_suballoc
 
@@ -85,7 +86,7 @@ void *allocate(std::size_t count);
 cache_suballoc();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cache_suballocdeallocate"></a><a name="deallocate"></a> cache_suballoc::d еаллокате
 
@@ -103,7 +104,7 @@ void deallocate(void* ptr, std::size_t count);
 *расчета*\
 Количество объектов для освобождения из хранилища.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="see-also"></a>См. также раздел
 

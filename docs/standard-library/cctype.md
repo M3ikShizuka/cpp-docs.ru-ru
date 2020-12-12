@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: &lt; cctype&gt;'
 title: '&lt;cctype&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,24 +7,24 @@ f1_keywords:
 helpviewer_keywords:
 - cctype header
 ms.assetid: 3fd18bfd-c414-4def-bac1-c362e1fe8b71
-ms.openlocfilehash: d1d69b5fe125372c489965949b2b59c4012fdec9
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: a66c0b0f253ce034becf1845bb42f0c204414c34
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449845"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325346"
 ---
 # <a name="ltcctypegt"></a>&lt;cctype&gt;
 
-Включает заголовок \<ctype.h> стандартной библиотеки C и добавляет связанные имена в пространство имен `std`.
+Включает заголовок стандартной библиотеки C \<ctype.h> и добавляет связанные имена в `std` пространство имен.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<cctype >
+**Заголовок:**\<cctype>
 
 **Пространство имен:** std
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Включение этого заголовка гарантирует, что имена, объявленные с помощью внешней компоновки в заголовке стандартной библиотеки C, объявляются в пространстве имен `std`.
 
@@ -46,8 +47,8 @@ int tolower(int c);
 int toupper(int c);
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по файлам заголовков](../standard-library/cpp-standard-library-header-files.md)\
 [Общие сведения о стандартной библиотеке C++](../standard-library/cpp-standard-library-overview.md)\
-[Потокобезопасность в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)

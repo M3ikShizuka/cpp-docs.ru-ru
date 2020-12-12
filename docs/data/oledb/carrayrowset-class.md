@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CArrayRowset Class'
 title: Класс CArrayRowset
 ms.date: 11/04/2016
 f1_keywords:
@@ -42,12 +43,12 @@ helpviewer_keywords:
 - operator[], arrays
 - m_nRowsRead
 ms.assetid: 511427e1-73ca-4fd8-9ba1-ae9463557cb6
-ms.openlocfilehash: c5f12afa09bc1c62d3287bab93159e217721906f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 929f8744671cecc54e7c192d4f3ddc17e27287cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843252"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213186"
 ---
 # <a name="carrayrowset-class"></a>Класс CArrayRowset
 
@@ -139,7 +140,7 @@ TAccessor & operator[](int nrow);
 
 Содержимое запрошенной строки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если *нров* превышает количество строк в наборе строк, возникает исключение.
 

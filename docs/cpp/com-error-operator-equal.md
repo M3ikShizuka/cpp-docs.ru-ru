@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _com_error:: operator ='
 title: _com_error::operator =
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - _com_error [C++]
 ms.assetid: b9cc4094-d055-450c-b45a-0a95317488f8
-ms.openlocfilehash: 7f24076a0286da910378d6633f483e6f050858b2
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3c27fcd612fcf2fd67b09ac1217286edd69e1557
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80180554"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295800"
 ---
 # <a name="_com_erroroperator-"></a>_com_error::operator =
 
@@ -30,10 +31,10 @@ _com_error& operator = (
 #### <a name="parameters"></a>Параметры
 
 *что*<br/>
-Объект `_com_error` .
+Объект `_com_error`.
 
 **Завершение блока, относящегося только к системам Майкрософт**
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Класс _com_error](../cpp/com-error-class.md)

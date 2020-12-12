@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье обмен данными для представлений записей (доступ к данным MFC).
 title: Обмен данными в представлениях записей (доступ к данным MFC)
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - DDX (dialog data exchange), record views
 - RFX (record field exchange)
 ms.assetid: abc52ca7-6997-47a7-98f3-f347f52b1f72
-ms.openlocfilehash: f9f460305b55a2313b64effdf4d1dbbfd9823def
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6ffb82e3fb1e035b1334e15d5b4d1d25634739c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213477"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213212"
 ---
 # <a name="data-exchange-for-record-views---mfc-data-access"></a>Обмен данными в представлениях записей (доступ к данным MFC)
 
@@ -23,7 +24,7 @@ DDX для представлений записей работает совме
 
 На следующем рисунке показана связь между DDX и RFX для представлений записей.
 
-![Обмен&#45;данными диалоговых окон&#45;и обмен полями записей](../data/media/vc37xt1.gif "Обмен&#45;данными диалоговых окон&#45;и обмен полями записей")<br/>
+![Диалоговое окно&#45;обменом данными и записью&#45;полей](../data/media/vc37xt1.gif "Диалоговое окно&#45;обменом данными и записью&#45;полей")<br/>
 Обмен данными в диалоговом окне и обмен полями записи
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../mfc/dialog-data-exchange-and-validation.md). Дополнительные сведения о RFX см. в статье [Обмен полями записей (RFX)](../data/odbc/record-field-exchange-rfx.md).

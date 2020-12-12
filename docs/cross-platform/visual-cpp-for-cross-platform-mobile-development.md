@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о кросс-платформенной разработке мобильных приложений на C++
 title: Разработка кроссплатформенных мобильных приложений на языке C++
 ms.date: 11/14/2019
 ms.assetid: 0bb872d6-981b-4c96-9143-fcec5336bf0d
-ms.openlocfilehash: dd2ea678d7689fac60bcee3555772b87df06e31b
-ms.sourcegitcommit: a673f6a54cc97e3d4cd032b10aa8dce7f0539d39
+ms.openlocfilehash: 98e7124ca8a687a2308a97eb11da80fc0c69483a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "79469989"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97213238"
 ---
 # <a name="cross-platform-mobile-development-with-c"></a>Разработка кроссплатформенных мобильных приложений на языке C++
 
@@ -21,7 +22,7 @@ ms.locfileid: "79469989"
 
 - **Эффективная и привычная среда сборки.** Шаблоны Visual Studio позволяют легко создавать общие кроссплатформенные решения и проекты. Управлять свойствами для всех проектов можно с помощью единого интерфейса. Редактируйте весь код в редакторе Visual Studio и используйте встроенную кроссплатформенную функцию IntelliSense для автозавершения и выделения ошибок.
 
-- **Унифицированный процесс отладки.** Используйте средства отладки мирового класса в Visual Studio для просмотра и пошагового C++ кода на всех платформах: устройства и Эмуляторы Android, Симуляторы и устройства iOS, а также устройства и эмуляторы Windows или магазина Windows.
+- **Унифицированный процесс отладки.** Используйте средства отладки мирового класса в Visual Studio для просмотра и пошагового перехода по коду C++ на всех платформах: устройства и Эмуляторы Android, Симуляторы и устройства iOS, а также устройства и эмуляторы Windows или магазина Windows.
 
 ## <a name="get-the-tools"></a>Получить инструменты
 
@@ -29,7 +30,7 @@ ms.locfileid: "79469989"
 
 ## <a name="come-up-to-speed"></a>Быстрое начало работы
 
-Если у вас есть опыт разработки для Android или iOS, мы можем предложить вам отличные материалы, которые помогут вам приступить к работе. Visual Studio — это выразительная среда разработки с широкими возможностями. Чтобы научиться использовать ее, попробуйте обратиться к [руководству по началу работы для разработчиков решений Android](/previous-versions/windows/apps/dn275875\(v=win.10\)) или [руководству по началу работы для разработчиков решений iOS](/previous-versions/windows/apps/jj657966\(v=win.10\)). В этих статьях вы получите общие сведения о Visual Studio и ознакомитесь с понятиями, которые нужно знать для разработки кроссплатформенных приложений для Windows и Windows Store. Чтобы приступить к созданию первого кроссплатформенного приложения для iOS и Android, обратитесь к разделу [Создание приложения OpenGL ES в Android и iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).
+Если у вас есть опыт разработки для Android или iOS, мы можем предложить вам отличные материалы, которые помогут вам приступить к работе. Visual Studio — это выразительная среда разработки с широкими возможностями. Чтобы научиться использовать ее, попробуйте обратиться к [руководству по началу работы для разработчиков решений Android](/previous-versions/windows/apps/dn275875\(v=win.10\)) или [руководству по началу работы для разработчиков решений iOS](/previous-versions/windows/apps/jj657966\(v=win.10\)). В этих статьях вы получите общие сведения о Visual Studio и ознакомитесь с понятиями, которые нужно знать для разработки кроссплатформенных приложений для Windows и Windows Store. Чтобы приступить к написанию первого кросс-платформенного приложения для iOS и Android, см. статью [Создание приложения OpenGL ES в Android и iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).
 
 Рабочая нагрузка Visual C++ для разработки кроссплатформенных мобильных приложений включает несколько шаблонов, которые помогут вам приступить к созданию приложений:
 
@@ -87,8 +88,8 @@ ms.locfileid: "79469989"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Установка Visual C++ для разработки кроссплатформенных мобильных приложений на языке C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)\
-[Установка и настройка средств для разработки с помощью iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)\
+[Установка кросс-платформенной разработки мобильных приложений на C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)\
+[Установка и настройка средств для сборки с помощью iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)\
 [Создание приложения Android Native Activity](../cross-platform/create-an-android-native-activity-app.md)\
 [Создание приложения OpenGL ES в Android и iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)\
 [Примеры разработки кроссплатформенных мобильных приложений](../cross-platform/cross-platform-mobile-development-examples.md)

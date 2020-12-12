@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: cauchy_distribution классе'
 title: Класс cauchy_distribution
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::cauchy_distribution [C++], param_type
 - std::cauchy_distribution [C++], param_type
 ms.assetid: 21522351-f2f1-46d9-97f0-d358c932356c
-ms.openlocfilehash: f8e35815a702878fde702e772edb21899608e7f7
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: bf87f28b49ffa6b13a60c8faf237d38175cd9464
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88830804"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325333"
 ---
 # <a name="cauchy_distribution-class"></a>Класс cauchy_distribution
 
@@ -76,7 +77,7 @@ public:
 *РГСЧ*\
 Единый механизм генератора случайных чисел. Возможные типы см. в разделе [\<random>](../standard-library/random.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса описывает распределение, которое создает значения указанного пользователем типа с плавающей запятой или тип **`double`** , если он не указан, распределен в соответствии с распределение Коши распределением. В следующей таблице представлены ссылки на статьи об отдельных членах.
 
@@ -258,7 +259,7 @@ explicit cauchy_distribution(const param_type& parm);
 *ParM*\
 Структура `param_type`, используемая для формирования распределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительное условие:**`0.0 < b`
 
@@ -293,7 +294,7 @@ struct param_type {
 *Правильно*\
 Объект `param_type`, который требуется сравнить с данным объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительное условие:**`0.0 < b`
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о классе Module:: GenericReleaseNotifier'
 title: Класс Module::GenericReleaseNotifier
 ms.date: 09/17/2018
 ms.topic: reference
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Module::GenericReleaseNotifier::GenericReleaseNotifier, constructor
 - Microsoft::WRL::Module::GenericReleaseNotifier::Invoke method
 ms.assetid: 244a8fbe-f89b-409b-aa65-db3e37f9b125
-ms.openlocfilehash: 7437f4e1f6874d4c708780a146e1761ac6d98305
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dd82da7c1b6b9a77c68b6d451bfa6dac31f51180
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225739"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186380"
 ---
 # <a name="modulegenericreleasenotifier-class"></a>Класс Module::GenericReleaseNotifier
 
@@ -40,19 +41,19 @@ class GenericReleaseNotifier : public ReleaseNotifier;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-Имя                                                                                                     | Описание:
+name                                                                                                     | Описание
 -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------
 [Модуль:: GenericReleaseNotifier:: GenericReleaseNotifier](#genericreleasenotifier-genericreleasenotifier) | Инициализирует новый экземпляр класса `Module::GenericReleaseNotifier`.
 
 ### <a name="public-methods"></a>Открытые методы
 
-name                                                                     | Описание:
+name                                                                     | Описание
 ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------
 [Модуль:: GenericReleaseNotifier:: Invoke](#genericreleasenotifier-invoke) | Вызывает обработчик событий, связанный с текущим `Module::GenericReleaseNotifier` объектом.
 
 ### <a name="protected-data-members"></a>Защищенные члены данных
 
-Имя                                                                          | Описание:
+Имя                                                                          | Описание
 ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------
 [Модуль:: GenericReleaseNotifier:: callback_](#genericreleasenotifier-callback) | Содержит лямбда-, функтор или указатель на функцию-обработчик событий, связанный с текущим `Module::GenericReleaseNotifier` объектом.
 
@@ -68,7 +69,7 @@ name                                                                     | Оп�
 
 **Пространство имен:** Microsoft::WRL
 
-## <a name="modulegenericreleasenotifiercallback_"></a><a name="genericreleasenotifier-callback"></a>Модуль:: GenericReleaseNotifier:: callback_
+## <a name="modulegenericreleasenotifiercallback_"></a><a name="genericreleasenotifier-callback"></a> Модуль:: GenericReleaseNotifier:: callback_
 
 Содержит лямбда-, функтор или указатель на функцию-обработчик событий, связанный с текущим `Module::GenericReleaseNotifier` объектом.
 
@@ -76,7 +77,7 @@ name                                                                     | Оп�
 T callback_;
 ```
 
-## <a name="modulegenericreleasenotifiergenericreleasenotifier"></a><a name="genericreleasenotifier-genericreleasenotifier"></a>Модуль:: GenericReleaseNotifier:: GenericReleaseNotifier
+## <a name="modulegenericreleasenotifiergenericreleasenotifier"></a><a name="genericreleasenotifier-genericreleasenotifier"></a> Модуль:: GenericReleaseNotifier:: GenericReleaseNotifier
 
 Инициализирует новый экземпляр класса `Module::GenericReleaseNotifier`.
 
@@ -95,7 +96,7 @@ GenericReleaseNotifier(
 *отпускании*<br/>
 Укажите, **`true`** чтобы разрешить вызов базового метода [модуля:: ReleaseNotifier:: Release ()](module-releasenotifier-class.md#releasenotifier-release) ; в противном случае укажите **`false`** .
 
-## <a name="modulegenericreleasenotifierinvoke"></a><a name="genericreleasenotifier-invoke"></a>Модуль:: GenericReleaseNotifier:: Invoke
+## <a name="modulegenericreleasenotifierinvoke"></a><a name="genericreleasenotifier-invoke"></a> Модуль:: GenericReleaseNotifier:: Invoke
 
 Вызывает обработчик событий, связанный с текущим `Module::GenericReleaseNotifier` объектом.
 
