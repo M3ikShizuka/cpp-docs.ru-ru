@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: negative_binomial_distribution классе'
 title: Класс negative_binomial_distribution
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::negative_binomial_distribution [C++], param_type
 - std::negative_binomial_distribution [C++], param_type
 ms.assetid: 7f5f0967-7fdd-4578-99d4-88f292b4fe9c
-ms.openlocfilehash: fd5153a8eb0652aed7d963fb1dbdb1277e4f6718
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 59b13cce627faed54427a08acf71de3546aca96e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836456"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338225"
 ---
 # <a name="negative_binomial_distribution-class"></a>Класс negative_binomial_distribution
 
@@ -74,7 +75,7 @@ public:
 *инттипе*\
 Целочисленный тип результата, по умолчанию — **`int`** . Возможные типы см. в разделе [\<random>](../standard-library/random.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса описывает распределение, которое создает значения указанного пользователем целочисленного типа или тип **`int`** , если он не указан, распределен в соответствии с дискретной функцией вероятности неравномерного распределения. В следующей таблице представлены ссылки на статьи об отдельных членах.
 
@@ -239,7 +240,7 @@ explicit negative_binomial_distribution(const param_type& parm);
 *ParM*\
 Структура параметров, используемая для формирования распределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительные условия:** `0.0 < k` и `0.0 < p ≤ 1.0`
 
@@ -266,7 +267,7 @@ explicit negative_binomial_distribution(const param_type& parm);
 *Правильно*\
 Структура `param_type`, используемая для сравнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительные условия:** `0.0 < k` и `0.0 < p ≤ 1.0`
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: элементы управления ActiveX в MFC: страницы свойств'
 title: Элементы управления ActiveX в MFC. Страницы свойств
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - CPropertyPageDialog class [MFC]
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: 1506f87a-9fd6-4505-8380-0dbc9636230e
-ms.openlocfilehash: 3d22085daa503a7c778111718445920f98b98a89
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 40267857b12b2f23c07f03d0ee77b2ae8e6bf1a2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615441"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206153"
 ---
 # <a name="mfc-activex-controls-property-pages"></a>Элементы управления ActiveX в MFC. Страницы свойств
 
@@ -35,7 +36,7 @@ ms.locfileid: "84615441"
 ![Диалоговое окно “Свойства” Circ3](../mfc/media/vc373i1.gif "Диалоговое окно “Свойства” Circ3") <br/>
 Диалоговое окно «Свойства»
 
-В этой статье рассматриваются темы, связанные с использованием страниц свойств в элементе управления ActiveX. Сюда входит следующее.
+В этой статье рассматриваются темы, связанные с использованием страниц свойств в элементе управления ActiveX. К ним относятся следующие:
 
 - [Реализация страницы свойств по умолчанию для элемента управления ActiveX](#_core_implementing_the_default_property_page)
 
@@ -45,13 +46,13 @@ ms.locfileid: "84615441"
 
 Дополнительные сведения об использовании страниц свойств в элементе управления ActiveX см. в следующих статьях:
 
-- [Элементы управления ActiveX в MFC. Добавление дополнительной страницы пользовательских свойств](mfc-activex-controls-adding-another-custom-property-page.md)
+- [Элементы управления ActiveX в MFC. добавление другой страницы настраиваемых свойств](mfc-activex-controls-adding-another-custom-property-page.md)
 
-- [Элементы ActiveX в MFC. Использование стандартных страниц свойств](mfc-activex-controls-using-stock-property-pages.md)
+- [Элементы управления ActiveX в MFC. Использование страниц свойств запасов](mfc-activex-controls-using-stock-property-pages.md)
 
 Сведения об использовании страниц свойств в приложении MFC, отличном от элемента управления ActiveX, см. в разделе [страницы свойств](property-sheets-mfc.md).
 
-## <a name="implementing-the-default-property-page"></a><a name="_core_implementing_the_default_property_page"></a>Реализация страницы свойств по умолчанию
+## <a name="implementing-the-default-property-page"></a><a name="_core_implementing_the_default_property_page"></a> Реализация страницы свойств по умолчанию
 
 При использовании мастера элементов управления ActiveX для создания проекта элемента управления мастер элементов управления ActiveX предоставляет класс страницы свойств по умолчанию для элемента управления, производного от [класса COlePropertyPage](reference/colepropertypage-class.md). Изначально эта страница свойств пуста, но можно добавить в нее любой элемент управления диалогового окна или набор элементов управления. Поскольку мастер элементов управления ActiveX создает по умолчанию только один класс страницы свойств, необходимо создать дополнительные классы страниц свойств (также производные от `COlePropertyPage` ) с помощью представление классов. Дополнительные сведения об этой процедуре см. в разделе [элементы ActiveX MFC: Добавление другой настраиваемой страницы свойств](mfc-activex-controls-adding-another-custom-property-page.md).
 
@@ -67,7 +68,7 @@ ms.locfileid: "84615441"
 
 Например, в следующих процедурах используется простой элемент управления (с именем Sample). Образец был создан с помощью мастера элементов управления ActiveX и содержит только свойство "заголовок акции".
 
-## <a name="adding-controls-to-a-property-page"></a><a name="_core_adding_controls_to_a_property_page"></a>Добавление элементов управления на страницу свойств
+## <a name="adding-controls-to-a-property-page"></a><a name="_core_adding_controls_to_a_property_page"></a> Добавление элементов управления на страницу свойств
 
 #### <a name="to-add-controls-to-a-property-page"></a>Добавление элементов управления на страницу свойств
 
@@ -87,7 +88,7 @@ ms.locfileid: "84615441"
 
 Теперь, когда пользовательский интерфейс был изменен, необходимо связать поле редактирования со свойством Caption. Это делается в следующем разделе, изменив `CSamplePropPage::DoDataExchange` функцию.
 
-## <a name="customizing-the-dodataexchange-function"></a><a name="_core_customizing_the_dodataexchange_function"></a>Настройка функции DoDataExchange
+## <a name="customizing-the-dodataexchange-function"></a><a name="_core_customizing_the_dodataexchange_function"></a> Настройка функции DoDataExchange
 
 Страница свойств [CWnd::D одатаексчанже](reference/cwnd-class.md#dodataexchange) позволяет связывать значения страницы свойств с фактическими значениями свойств в элементе управления. Чтобы установить ссылки, необходимо связать соответствующие поля страницы свойств с соответствующими свойствами элементов управления.
 
@@ -117,5 +118,5 @@ ms.locfileid: "84615441"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Элементы ActiveX библиотеки MFC](mfc-activex-controls.md)<br/>
+[Элементы управления ActiveX в MFC](mfc-activex-controls.md)<br/>
 [Класс COlePropertyPage](reference/colepropertypage-class.md)

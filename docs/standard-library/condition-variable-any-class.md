@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: condition_variable_any классе'
 title: Класс condition_variable_any
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - std::condition_variable_any::wait
 - std::condition_variable_any::wait_for
 - std::condition_variable_any::wait_until
-ms.openlocfilehash: 9dc73de515aa8e321dbb28ca4a859b256613fbfe
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 853944a8eab0698fae6a12cace4ce9426ada8f3d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831481"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325001"
 ---
 # <a name="condition_variable_any-class"></a>Класс condition_variable_any
 
@@ -35,7 +36,7 @@ ms.locfileid: "88831481"
 class condition_variable_any;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="constructors"></a>Конструкторы
 
@@ -61,7 +62,7 @@ class condition_variable_any;
 condition_variable_any();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 При недостатке памяти этот конструктор вызывает объект [system_error](../standard-library/system-error-class.md), имеющий код ошибки `not_enough_memory`. Если объект не может быть создан из-за недоступности некоторых других ресурсов, конструктор создает объект `system_error`, имеющий код ошибки `resource_unavailable_try_again`.
 
@@ -101,7 +102,7 @@ void wait(Lock& Lck, Predicate Pred);
 *Возможен*\
 Любое выражение, возвращающее значение **`true`** или **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый метод блокируется до оповещения объекта `condition_variable_any` путем вызова [notify_one](../standard-library/condition-variable-class.md#notify_one) или [notify_all](../standard-library/condition-variable-class.md#notify_all). Он может также ложно активироваться.
 
@@ -141,7 +142,7 @@ bool wait_for(Lock& Lck, const chrono::duration<Rep, Period>& Rel_time, Predicat
 
 Второй метод возвращает значение *пред*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый метод блокируется до `condition_variable_any` сигнализации объекта вызовом [notify_one](../standard-library/condition-variable-class.md#notify_one) или [notify_all](../standard-library/condition-variable-class.md#notify_all)или до истечения интервала времени *Rel_time* . Он может также ложно активироваться.
 
@@ -196,7 +197,7 @@ void wait_until(
 
 Методы, возвращающие, **`bool`** возвращают значение " *пред*".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый метод блокируется до `condition_variable` сигнализации объекта вызовом [notify_one](../standard-library/condition-variable-class.md#notify_one) или [notify_all](../standard-library/condition-variable-class.md#notify_all)или до *Abs_time*. Он может также ложно активироваться.
 

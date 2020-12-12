@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: автоматическая параллелизации и автовекторность'
 title: Автоматическая параллелизация и автоматическая векторизация
 ms.date: 11/04/2016
 ms.assetid: ec71583a-287b-4599-8767-1d255e080fe3
-ms.openlocfilehash: adc0dd9346cc2850b02e01804e26044c367f2d14
-ms.sourcegitcommit: fcc3aeb271449f8be80348740cffef39ba543407
+ms.openlocfilehash: 4de73924ab6c28335ea6fcf2e6473e74d68bd189
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "82538612"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338321"
 ---
 # <a name="auto-parallelization-and-auto-vectorization"></a>Автоматическая параллелизация и автоматическая векторизация
 
@@ -24,7 +25,7 @@ void loop_test(int u) {
 }
 ```
 
-Поскольку значение `u` может быть маленьким, компилятор не будет выполнять автоматическую параллелизацию этого цикла. Допустим, вам известно, что значение `u` всегда будет большим и параллелизацию этого цикла желательно выполнить. Чтобы включить автоматическую параллелизации, укажите [цикл #pragma (hint_parallel (n))](../preprocessor/loop.md), где — число `n` потоков, по которым будет осуществляться параллельный режим. В приведенном ниже примере компилятор попытается выполнить параллелизацию цикла по 8 потокам.
+Поскольку значение `u` может быть маленьким, компилятор не будет выполнять автоматическую параллелизацию этого цикла. Допустим, вам известно, что значение `u` всегда будет большим и параллелизацию этого цикла желательно выполнить. Чтобы включить автоматическую параллелизации, укажите [цикл #pragma (hint_parallel (n))](../preprocessor/loop.md), где — число потоков, по которым будет осуществляться параллельный режим `n` . В приведенном ниже примере компилятор попытается выполнить параллелизацию цикла по 8 потокам.
 
 ```cpp
 void loop_test(int u) {
@@ -34,9 +35,9 @@ void loop_test(int u) {
 }
 ```
 
-Как и все [директивы pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md), также поддерживается альтернативный `__pragma(loop(hint_parallel(n)))` синтаксис директивы pragma.
+Как и все [директивы pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md), также поддерживается альтернативный синтаксис директивы pragma `__pragma(loop(hint_parallel(n)))` .
 
-Существуют такие циклы, для которых компилятор не сможет выполнить параллелизацию, даже если вы захотите это сделать. Пример:
+Существуют такие циклы, для которых компилятор не сможет выполнить параллелизацию, даже если вы захотите это сделать. Ниже приведен пример:
 
 ```cpp
 #pragma loop(hint_parallel(8))
@@ -101,17 +102,17 @@ for (int i = 0; i < 1000; ++i)
    A[i] = B[i] + C[i];
 ```
 
-Как и все [директивы pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md), также поддерживается альтернативный `__pragma(loop(no_vector))` синтаксис директивы pragma.
+Как и все [директивы pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md), также поддерживается альтернативный синтаксис директивы pragma `__pragma(loop(no_vector))` .
 
-Как и в случае с Auto-Параллелизатора, можно указать параметр командной строки [/Qvec-report (Auto-векторизатора Reporting Level)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md) , чтобы сообщить либо об успешном векторном`/Qvec-report:1`цикле, либо как успешно, так и в неуспешном векторном цикле —`/Qvec-report:2`).
+Как и в случае с Auto-Параллелизатора, можно указать параметр командной строки [/Qvec-report (Auto-векторизатора Reporting Level)](../build/reference/qvec-report-auto-vectorizer-reporting-level.md) , чтобы сообщить либо об успешном векторном цикле, `/Qvec-report:1` либо как успешно, так и в неуспешном векторном цикле — `/Qvec-report:2` ).
 
 Дополнительные сведения о кодах причин и сообщениях см. в разделе [сообщения векторизатора и параллелизатора](../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).
 
 Пример, демонстрирующий работу векторизатора на практике, см. в разделе [Project Остин часть 2 из 6: Залистывание страниц](https://devblogs.microsoft.com/cppblog/project-austin-part-2-of-6-page-curling/)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[повторить](../preprocessor/loop.md)<br/>
+[loop](../preprocessor/loop.md)<br/>
 [Параллельное программирование в машинном коде](/archive/blogs/nativeconcurrency)<br/>
 [/Qpar (авто-Параллелизатора)](../build/reference/qpar-auto-parallelizer.md)<br/>
 [/Qpar-report (автоматический уровень отчетов Параллелизатора)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>

@@ -1,5 +1,6 @@
 ---
-title: negate - структура
+description: 'Дополнительные сведения о: отрицание структуры'
+title: Структура negate
 ms.date: 11/04/2016
 f1_keywords:
 - functional/std::negate
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - negate struct
 - negate class
 ms.assetid: 8a372686-786e-4262-b37c-ca13dc11e62f
-ms.openlocfilehash: cb45f61323a407e90c2a455460a4d2cdd7b6720a
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: fccc583d38b797a856ed4e0915e5e0255bb9eaee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68240557"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338235"
 ---
-# <a name="negate-struct"></a>negate - структура
+# <a name="negate-struct"></a>Структура negate
 
 Стандартный объект функции, который выполняет над своим аргументом арифметическую операцию замены знака (унарное `operator-`).
 
@@ -43,11 +44,11 @@ struct negate<void>
 Любой тип, поддерживающий `operator-`, принимающий операнды указанного или выводимого типа.
 
 *Слева*\
-Операнд для замены знака. Специализированный шаблон выполняет точную пересылку lvalue и rvalue ссылочных аргументов выводимого типа *тип*.
+Операнд для замены знака. Специализированный шаблон выполняет точную пересылку ссылочных аргументов lvalue и rvalue для выводимого *типа*.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Результат `-Left`. Специализированный шаблон выполняет точную пересылку результата, который имеет тип, возвращаемый унарным `operator-`.
+Результат `-Left`. Специализированный шаблон выполняет точную пересылку результата, который имеет тип, возвращаемый унарным методом `operator-` .
 
 ## <a name="example"></a>Пример
 

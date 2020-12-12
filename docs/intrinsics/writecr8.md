@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __writecr8'
 title: __writecr8
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - _writecr8 intrinsic
 ms.assetid: 6f8bd632-dddb-4335-971e-1acee24aa2b9
-ms.openlocfilehash: c8df13c15b5cd8a51b77d65ad930a1852809ee30
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: b9c642d92cd5d5cfb861dbff3d159b5c98a1aa5d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219234"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331890"
 ---
 # <a name="__writecr8"></a>__writecr8
 
@@ -29,20 +30,20 @@ void writecr8(
 
 ### <a name="parameters"></a>Параметры
 
-*Data*\
+*Данные*\
 окне Значение, записываемое в CR8 регистр.
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__writecr8`|X64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-`__writecr8` Встроенная функция доступна только в режиме ядра, и подпрограммы доступны только в качестве встроенных.
+`__writecr8`Встроенная функция доступна только в режиме ядра, и подпрограммы доступны только в качестве встроенных.
 
 **Завершение блока, относящегося только к системам Майкрософт**
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: окна фрейма'
 title: Окна фрейма
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - MDI [MFC], frame windows
 - splitter windows [MFC], and frame windows
 ms.assetid: 40677339-8135-4f5e-aba6-3fced3078077
-ms.openlocfilehash: 39c0b4b866fa123d8bcae639342c925570d96e1b
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ee993b7f8314c28dba38c9ca607366f6fb93da1d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625826"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193504"
 ---
 # <a name="frame-windows"></a>Окна фрейма
 
@@ -45,11 +46,11 @@ ms.locfileid: "84625826"
 
 - [Классы окон фрейма](frame-window-classes.md)
 
-- [Классы фреймовых окон, созданные мастером приложений](frame-window-classes-created-by-the-application-wizard.md)
+- [Frame-Window классы, созданные мастером приложений](frame-window-classes-created-by-the-application-wizard.md)
 
 - [Стили окна фрейма](frame-window-styles-cpp.md)
 
-- [Что делают окна рамок](what-frame-windows-do.md)
+- [Функция окон фрейма](what-frame-windows-do.md)
 
 **Разделы, посвященные использованию окон фрейма**
 

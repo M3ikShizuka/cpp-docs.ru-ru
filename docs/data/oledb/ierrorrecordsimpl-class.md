@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: IErrorRecordsImpl Class'
 title: Класс IErrorRecordsImpl
 ms.date: 11/04/2016
 f1_keywords:
@@ -63,12 +64,12 @@ helpviewer_keywords:
 - GetRecordCount method
 - m_rgErrors
 ms.assetid: dea8e938-c5d8-45ab-86de-eb8fbf534ffb
-ms.openlocfilehash: cb0e236a31846e3465d76b6904a7b4c57a2b8cf4
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 2c4a674a6197178e3418afc6e62cda1894497599
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509006"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317458"
 ---
 # <a name="ierrorrecordsimpl-class"></a>Класс IErrorRecordsImpl
 
@@ -107,7 +108,7 @@ class IErrorRecordsImpl : public IErrorRecords
 
 ### <a name="interface-methods"></a>Методы интерфейса
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[аддерроррекорд](#adderrorrecord)|Добавляет запись в объект OLE DB Error.|
 |[GetBasicErrorInfo](#getbasicerrorinfo)|Возвращает основные сведения об ошибке, например код возврата и номер ошибки, зависящий от поставщика.|
@@ -118,7 +119,7 @@ class IErrorRecordsImpl : public IErrorRecords
 
 ### <a name="data-members"></a>Элементы данных
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[m_rgErrors](#rgerrors)|Массив записей об ошибках.|
 

@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье как написать цикл parallel_for
 title: Практическое руководство. Написание цикла parallel_for
 ms.date: 11/04/2016
 helpviewer_keywords:
 - writing a parallel_for loop [Concurrency Runtime]
 - parallel_for function, example
 ms.assetid: adb4d64e-5514-4b70-8dcb-b9210e6b5a1c
-ms.openlocfilehash: 8d2d54e084652a8f34b125b96c3f502dd9cdb1fa
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: ccf66c3e457b540721f0a76722b9d17206cf0f7f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008959"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205698"
 ---
 # <a name="how-to-write-a-parallel_for-loop"></a>Практическое руководство. Написание цикла parallel_for
 
@@ -49,7 +50,7 @@ parallel: 1311
 
 > **cl.exe/EHsc Параллел-Матрикс-мултипли. cpp**
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Параллельные алгоритмы](../../parallel/concrt/parallel-algorithms.md)<br/>
 [Функция parallel_for](reference/concurrency-namespace-functions.md#parallel_for)

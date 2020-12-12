@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __writemsr'
 title: __writemsr
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - wrmsr instruction
 - __writemsr intrinsic
 ms.assetid: 938b1553-51a8-4822-a818-6bed79b0fde5
-ms.openlocfilehash: 7819477edb8d4e6b18a1213a73ba67065ea7ff57
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 0ab7392d9df07a9083ca095bc7002a6bf7d45628
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219131"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331856"
 ---
 # <a name="__writemsr"></a>__writemsr
 
 **Блок, относящийся только к системам Microsoft**
 
-Создает инструкцию Write для конкретной модели Register`wrmsr`().
+Создает инструкцию Write для конкретной модели Register ( `wrmsr` ).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,18 +36,18 @@ void __writemsr(
 *Зарегистрировать*\
 окне Регистр, зависящий от модели.
 
-*Значений*\
+*Значение*\
 окне Записываемое значение.
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__writemsr`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эта функция может использоваться только в режиме ядра, и эта подпрограммы доступна только в качестве встроенной функции.
 

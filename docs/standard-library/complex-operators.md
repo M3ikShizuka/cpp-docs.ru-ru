@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; сложные &gt; операторы'
 title: '&lt;операторы&gt; complex'
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,16 +16,16 @@ helpviewer_keywords:
 - std::operator!= (complex)
 - std::operator&gt;&gt; (complex)
 - std::operator&lt;&lt; (complex), std::operator== (complex)
-ms.openlocfilehash: 325e194e9cc5b597ae010477ecbe313be11b179a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 88930dbf0b96d42c5c643305b56121cec8a1bacd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222593"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97325014"
 ---
 # <a name="ltcomplexgt-operators"></a>&lt;операторы&gt; complex
 
-## <a name="operator"></a><a name="op_neq"></a>operator! =
+## <a name="operator"></a><a name="op_neq"></a> operator! =
 
 Проверяет на неравенство два комплексных числа, по крайней мере одно из которых может принадлежать к подмножеству типа для вещественной и мнимой частей.
 
@@ -57,7 +58,7 @@ bool operator!=(
 
 **`true`** значение, если числа не равны; значение **`false`** , если числа равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Два комплексных числа равны только в том случае, если равны их вещественные части и мнимые части. В противном случае они не равны.
 
@@ -163,7 +164,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="operator"></a><a name="op_star"></a>станции\*
+## <a name="operator"></a><a name="op_star"></a> станции\*
 
 Умножает два комплексных числа, по крайней мере одно из которых может принадлежать к подмножеству типа для вещественной и мнимой частей.
 
@@ -196,7 +197,7 @@ complex<Type> operator*(
 
 Комплексное число, полученное в результате умножения двух чисел, значение и тип которых задаются входными данными параметров.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта операция является перегруженной, так что простые арифметические операции могут выполняться без преобразования данных в определенный формат.
 
@@ -260,7 +261,7 @@ int main( )
 }
 ```
 
-## <a name="operator"></a><a name="op_add"></a>operator +
+## <a name="operator"></a><a name="op_add"></a> operator +
 
 Складывает два комплексных числа, по крайней мере одно из которых может принадлежать к подмножеству типа для вещественной и мнимой частей.
 
@@ -296,7 +297,7 @@ complex<Type> operator+(const complex<Type>& left);
 
 Комплексное число, являющееся результатом сложения двух чисел, значение и тип которых задаются входными данными параметров.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта операция является перегруженной, так что простые арифметические операции могут выполняться без преобразования данных в определенный формат. Унарный оператор возвращает *Left*.
 
@@ -400,7 +401,7 @@ The modulus of cs4 is: 5
 The argument of cs4 is: 0.927295 radians, which is 53.1301 degrees.
 ```
 
-## <a name="operator-"></a><a name="operator-"></a>станции
+## <a name="operator-"></a><a name="operator-"></a> станции
 
 Вычитает два комплексных числа, по крайней мере одно из которых может принадлежать к подмножеству типа для вещественной и мнимой частей.
 
@@ -436,7 +437,7 @@ complex<Type> operator-(const complex<Type>& left);
 
 Комплексное число, полученное в результате вычитания *справа* *налево*, двух чисел, значения которых задаются с помощью входных параметров.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта операция является перегруженной, так что простые арифметические операции могут выполняться без преобразования данных в определенный формат.
 
@@ -542,7 +543,7 @@ The modulus of cs4 is: 5
 The argument of cs4 is: -2.2143 radians, which is -126.87 degrees.
 ```
 
-## <a name="operator"></a><a name="op_div"></a>станции
+## <a name="operator"></a><a name="op_div"></a> станции
 
 Делит два комплексных числа, по крайней мере одно из которых может принадлежать к подмножеству типа для вещественной и мнимой частей.
 
@@ -575,7 +576,7 @@ complex<Type> operator*(
 
 Комплексное число, полученное в результате деления делимого на делитель, значения которых задаются входными данными параметров.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта операция является перегруженной, так что простые арифметические операции могут выполняться без преобразования данных в определенный формат.
 
@@ -662,7 +663,7 @@ The modulus of cs3 is: 1.66667
 The argument of cs3 is: -0.523599 radians, which is -30 degrees.
 ```
 
-## <a name="operatorltlt"></a><a name="op_lt_lt"></a>станции&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a> станции&lt;&lt;
 
 Вставляет указанное комплексное число в выходной поток.
 
@@ -685,7 +686,7 @@ basic_ostream<Elem, Traits>& operator<<(
 
 Записывает значение указанного комплексного числа в *OSTR* в формате Декарт: ( *Вещественная часть, мнимая часть* ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Выходной поток перегружен, так что он будет принимать любую форму комплексного числа; его формат вывода по умолчанию — декартов (арифметический).
 
@@ -724,7 +725,7 @@ The modulus of c2 is: 2
 The argument of c2 is: 0.523599 radians, which is 30 degrees.
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>Оператор = =
+## <a name="operator"></a><a name="op_eq_eq"></a> Оператор = =
 
 Проверяет на равенство два комплексных числа, по крайней мере одно из которых может принадлежать к подмножеству типа для вещественной и мнимой частей.
 
@@ -757,7 +758,7 @@ bool operator==(
 
 **`true`** значение, если числа равны; **`false`** Если числа не равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Два комплексных числа равны только в том случае, если равны их вещественные части и мнимые части. В противном случае они не равны.
 
@@ -863,7 +864,7 @@ The 2nd right-side complex number is cr3b = (5,0)
 The complex numbers cl3b & cr3b are equal.
 ```
 
-## <a name="operatorgtgt"></a><a name="op_gt_gt"></a>станции&gt;&gt;
+## <a name="operatorgtgt"></a><a name="op_gt_gt"></a> станции&gt;&gt;
 
 Извлекает комплексное число из входного потока.
 
@@ -886,7 +887,7 @@ basic_istream<Elem, Traits>& operator>>(
 
 Считывает значение указанного комплексного числа из *ISTR* и возвращает его в *right*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Допустимые форматы входных данных:
 

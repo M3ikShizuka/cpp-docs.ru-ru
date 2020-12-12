@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: const_mem_fun_ref_t классе'
 title: Класс const_mem_fun_ref_t
 ms.date: 02/21/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - const_mem_fun_ref_t class
 ms.assetid: 316ddbaa-9f46-4931-8eba-ea4ca66360ef
-ms.openlocfilehash: 09d8569253dbeb1a873f4fc7b64b55658511d18e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 484416676b7957e3be08ddf03544d2679f1fbf18
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228366"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97324962"
 ---
 # <a name="const_mem_fun_ref_t-class"></a>Класс const_mem_fun_ref_t
 
@@ -41,7 +42,7 @@ template <class Result, class Type>
 
 Адаптируемая унарная функция.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса сохраняет копию *PM*, которая должна быть указателем на функцию-член класса `Type` в закрытом объекте-члене. Он определяет свою функцию `operator()` -член как возвращающую (**Left**. \* `Pm` ) () **`const`**.
 

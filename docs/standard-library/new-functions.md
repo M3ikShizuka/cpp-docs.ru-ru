@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; новые &gt; функции'
 title: Функции &lt;new&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,26 +7,26 @@ f1_keywords:
 - new/std::nothrow
 - new/std::set_new_handler
 ms.assetid: e250f06a-b025-4509-ae7a-5356d56aad7d
-ms.openlocfilehash: 6b51a5bcbb9c90370cef1391d4020862d2e2cefd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b46a21223fcee4f1e208f97e087e47445d5526c5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212180"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338184"
 ---
 # <a name="ltnewgt-functions"></a>Функции &lt;new&gt;
 
-## <a name="get_new_handler"></a><a name="get_new_handler"></a>get_new_handler
+## <a name="get_new_handler"></a><a name="get_new_handler"></a> get_new_handler
 
 ```cpp
 new_handler get_new_handler() noexcept;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает текущий `new_handler`.
 
-## <a name="launder"></a><a name="launder"></a>лаундер
+## <a name="launder"></a><a name="launder"></a> лаундер
 
 ```cpp
 template <class T>
@@ -39,9 +40,9 @@ template <class T>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Значение типа *T \* * , указывающее на X.
+Значение типа *T \** , указывающее на X.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Также называется барьером оптимизации указателя.
 
@@ -59,7 +60,7 @@ const int b = p->n; // undefined behavior
 const int c = std::launder(p)->n; // OK
 ```
 
-## <a name="nothrow"></a><a name="nothrow"></a>nothrow
+## <a name="nothrow"></a><a name="nothrow"></a> nothrow
 
 Предоставляет объект, который будет использоваться в качестве аргумента для **`nothrow`** версий **`new`** и **`delete`** .
 
@@ -67,7 +68,7 @@ const int c = std::launder(p)->n; // OK
 extern const std::nothrow_t nothrow;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Объект используется в качестве аргумента функции для соответствия типу параметра [std::nothrow_t](../standard-library/nothrow-t-structure.md).
 
@@ -75,7 +76,7 @@ extern const std::nothrow_t nothrow;
 
 См. разделы [operator new](../standard-library/new-operators.md#op_new) и [operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr) с примерами использования `std::nothrow_t` в качестве параметра функции.
 
-## <a name="set_new_handler"></a><a name="set_new_handler"></a>set_new_handler
+## <a name="set_new_handler"></a><a name="set_new_handler"></a> set_new_handler
 
 Устанавливает пользовательскую функцию, которая будет вызываться при сбое **оператора New** при попытке выделить память.
 
@@ -92,7 +93,7 @@ new_handler set_new_handler(new_handler Pnew) throw();
 
 0 для первого вызова и предыдущее `new_handler` при последующих вызовах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция сохраняет *Пнев* в статическом новом указателе [обработчика](../standard-library/new-typedefs.md#new_handler) , который он обслуживает, а затем возвращает значение, сохраненное ранее в указателе. Новый обработчик используется [оператором new](../standard-library/new-operators.md#op_new)(**size_t**).
 

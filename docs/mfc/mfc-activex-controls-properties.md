@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: элементы управления ActiveX в MFC: свойства'
 title: Элементы управления ActiveX в MFC. Свойства
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], properties
 - properties [MFC]
 ms.assetid: b678a53c-0d9e-476f-8aa0-23b80baaba46
-ms.openlocfilehash: c7ed0fddea660409f5089159b71d39a29b01d538
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9331be68c2e09fe3a4ad83d21e3ed58bbdfdd61e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618186"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206140"
 ---
 # <a name="mfc-activex-controls-properties"></a>Элементы управления ActiveX в MFC. Свойства
 
@@ -27,14 +28,14 @@ ms.locfileid: "84618186"
 
 Более подробные сведения о свойствах элементов управления ActiveX обсуждаются в следующих статьях:
 
-- [Элементы ActiveX в MFC. Добавление стандартных свойств](mfc-activex-controls-adding-stock-properties.md)
+- [Элементы управления ActiveX в MFC. Добавление свойств хранения](mfc-activex-controls-adding-stock-properties.md)
 
-- [Элементы ActiveX в MFC. Добавление пользовательских свойств](mfc-activex-controls-adding-custom-properties.md)
+- [Элементы управления ActiveX в MFC. Добавление пользовательских свойств](mfc-activex-controls-adding-custom-properties.md)
 
-- [Элементы ActiveX в MFC. Реализация расширенных свойств](mfc-activex-controls-advanced-property-implementation.md)
+- [Элементы ActiveX в MFC. Реализация расширенного свойства](mfc-activex-controls-advanced-property-implementation.md)
 
-- [Элементы ActiveX в MFC. Доступ к внешним свойствам](mfc-activex-controls-accessing-ambient-properties.md)
+- [Элементы управления ActiveX в MFC: доступ к внешним свойствам](mfc-activex-controls-accessing-ambient-properties.md)
 
 ## <a name="see-also"></a>См. также раздел
 
-[Элементы ActiveX библиотеки MFC](mfc-activex-controls.md)
+[Элементы управления ActiveX в MFC](mfc-activex-controls.md)

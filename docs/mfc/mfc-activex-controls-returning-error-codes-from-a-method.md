@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения см. в статье элементы управления ActiveX в MFC: Возвращение кодов ошибок из метода'
 title: Элементы управления ActiveX в MFC. Возврат кодов ошибок из метода
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - SCODE, MFC ActiveX controls
 - ThrowError method [MFC]
 ms.assetid: 771fb9c9-2413-4dcc-b386-7bc4c4adeafd
-ms.openlocfilehash: 1f7564d750b476ac3f57656f3392e0801652e5d5
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: f6a1f372442ee67787a7a5421dabb4460acfcc7a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615513"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206075"
 ---
 # <a name="mfc-activex-controls-returning-error-codes-from-a-method"></a>Элементы управления ActiveX в MFC. Возврат кодов ошибок из метода
 
@@ -24,7 +25,7 @@ ms.locfileid: "84615513"
 Чтобы указать, что в методе произошла ошибка, следует использовать функцию-член [COleControl:: ThrowError](reference/colecontrol-class.md#throwerror) , которая принимает в качестве параметра значение SCODE (код состояния). Вы можете использовать предопределенный SCODE или определить один из них.
 
 > [!NOTE]
-> `ThrowError`предназначен для использования только в качестве способа возвращения ошибки из функции Get или Set свойства или метода автоматизации. Это единственный раз, когда в стеке будет присутствовать соответствующий обработчик исключений.
+> `ThrowError` предназначен для использования только в качестве способа возвращения ошибки из функции Get или Set свойства или метода автоматизации. Это единственный раз, когда в стеке будет присутствовать соответствующий обработчик исключений.
 
 Вспомогательные функции существуют для наиболее распространенных предопределенных Скодес, таких как [COleControl:: сетнотсуппортед](reference/colecontrol-class.md#setnotsupported), [COleControl:: жетнотсуппортед](reference/colecontrol-class.md#getnotsupported)и [COleControl:: сетнотпермиттед](reference/colecontrol-class.md#setnotpermitted).
 
@@ -34,4 +35,4 @@ ms.locfileid: "84615513"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Элементы ActiveX библиотеки MFC](mfc-activex-controls.md)
+[Элементы управления ActiveX в MFC](mfc-activex-controls.md)

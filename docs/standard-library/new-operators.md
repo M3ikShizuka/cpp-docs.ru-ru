@@ -1,26 +1,27 @@
 ---
+description: 'Дополнительные сведения: &lt; новые &gt; операторы и перечисления'
 title: '&lt;новые &gt; операторы и перечисления'
 ms.date: 11/04/2016
 f1_keywords:
 - new/std::operator delete
 - new/std::operator new
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
-ms.openlocfilehash: 2af2b3bc24e045d66626607781bc97f83686d559
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e5b6a675b200c80dc56778a66d63d5940561eb1a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215638"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338173"
 ---
 # <a name="ltnewgt-operators-and-enums"></a>&lt;новые &gt; операторы и перечисления
 
-## <a name="enum-align_val_t"></a><a name="op_align_val_t"></a>Перечисление align_val_t
+## <a name="enum-align_val_t"></a><a name="op_align_val_t"></a> Перечисление align_val_t
 
 ```cpp
 enum class align_val_t : size_t {};
 ```
 
-## <a name="operator-delete"></a><a name="op_delete"></a>оператор DELETE
+## <a name="operator-delete"></a><a name="op_delete"></a> оператор DELETE
 
 Функция, вызываемая с помощью выражения DELETE для отмены выделения хранилища для отдельных объектов.
 
@@ -35,7 +36,7 @@ void operator delete(void* ptr, const std::nothrow_t&) throw();
 *указатель*\
 Указатель, значение которого при удалении устанавливается в недействительное.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция вызывается выражением DELETE для визуализации значения *ptr* invalid. Программа может определить функцию с помощью сигнатуры этой функции, которая заменяет версию по умолчанию из стандартной библиотеки C++. Требуемое поведение — принять значение типа *ptr* , которое равно null или было возвращено предыдущим вызовом [оператора New](../standard-library/new-operators.md#op_new)(**size_t**).
 
@@ -47,9 +48,9 @@ void operator delete(void* ptr, const std::nothrow_t&) throw();
 
 ### <a name="example"></a>Пример
 
-Пример использования **оператора delete**см. в разделе [оператор New](../standard-library/new-operators.md#op_new) .
+Пример использования **оператора delete** см. в разделе [оператор New](../standard-library/new-operators.md#op_new) .
 
-## <a name="operator-delete"></a><a name="op_delete_arr"></a>Оператор delete []
+## <a name="operator-delete"></a><a name="op_delete_arr"></a> Оператор delete []
 
 Функция, вызываемая с помощью выражения delete для отмены выделения хранилища для массива объектов.
 
@@ -64,7 +65,7 @@ void operator delete[](void* ptr, const std::nothrow_t&) throw();
 *указатель*\
 Указатель, значение которого при удалении устанавливается в недействительное.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция вызывается `delete[]` выражением для отображения значения *ptr* недопустимо. Это заменяемая функция, так как в программе можно определить функцию с сигнатурой этой функции, которая заменит версию по умолчанию из стандартной библиотеки C++. Требуемое поведение — принять значение типа *ptr* , которое равно null или было возвращено предыдущим вызовом [оператора new&#91;&#93;](../standard-library/new-operators.md#op_new_arr)(**size_t**). Поведение по умолчанию для значения NULL типа *ptr* — не выполнять никаких действий. Любое другое значение *типа PTR* должно быть возвращено ранее с помощью вызова, как описано выше. Поведение по умолчанию для такого значения типа *ptr* , отличное от NULL, — это освобождение хранилища, выделенного предыдущим вызовом. Он не указывается при условии, что часть условий или все освобожденное хранилище выделены последующим вызовом [оператора New](../standard-library/new-operators.md#op_new)(**size_t**) или любого из `calloc` (**size_t**), `malloc` (**size_t**) или `realloc` ( **`void`** <strong>\*</strong> , **size_t**).
 
@@ -76,7 +77,7 @@ void operator delete[](void* ptr, const std::nothrow_t&) throw();
 
 См. раздел [Оператор new&#91;&#93;](../standard-library/new-operators.md#op_new_arr) с примерами использования `operator delete[]`.
 
-## <a name="operator-new"></a><a name="op_new"></a>Оператор New
+## <a name="operator-new"></a><a name="op_new"></a> Оператор New
 
 Функция вызывается выражением new для выделения памяти для отдельных объектов.
 
@@ -98,7 +99,7 @@ void* operator new(std::size_t count, void* ptr) throw();
 
 Указатель на адрес младшего байта выделенной памяти. Или *ptr*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция вызывается выражением new для выделения `count` байт памяти, подходящим образом выровненных для представления любого объекта такого размера. Программа может определить альтернативную функцию с сигнатурой этой функции, что заменит версию по умолчанию из стандартной библиотеки C++, поэтому функция является заменяемой.
 
@@ -171,7 +172,7 @@ int main( )
 }
 ```
 
-## <a name="operator-new"></a><a name="op_new_arr"></a>оператор new []
+## <a name="operator-new"></a><a name="op_new_arr"></a> оператор new []
 
 Функция выделения, вызываемая выражением new для выделения памяти для массива объектов.
 
@@ -193,7 +194,7 @@ void* operator new[](std::size_t count, void* ptr) throw();
 
 Указатель на адрес младшего байта выделенной памяти. Или *ptr*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция вызывается выражением `new[]` для выделения `count` байт памяти, подходящим образом выровненной для представления любого объекта-массива такого или меньшего размера. Программа может определить функцию с помощью сигнатуры этой функции, которая заменяет версию по умолчанию из стандартной библиотеки C++. Требуемое поведение аналогично поведению [оператора New](../standard-library/new-operators.md#op_new)(**size_t**). Поведение по умолчанию — вернуть `operator new`( `count`).
 

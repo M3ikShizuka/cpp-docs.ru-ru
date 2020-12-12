@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: IOpenRowsetImpl Class'
 title: Класс IOpenRowsetImpl
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - CreateRowset method
 - OpenRowset method
 ms.assetid: d259cedc-1db4-41cf-bc9f-5030907ab486
-ms.openlocfilehash: a3c94c75db21218aae1205bf9c5c379ab772a7f8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4ec7f8ebdab132854172f7e5f4dff7387e46717f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843720"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317432"
 ---
 # <a name="iopenrowsetimpl-class"></a>Класс IOpenRowsetImpl
 
@@ -47,9 +48,9 @@ class IOpenRowsetImpl : public IOpenRowset
 | Имя | Описание |
 |-|-|
 |[CreateRowset](#createrowset)|Создает объект набора строк. Не вызывается непосредственно пользователем.|
-|[OpenRowset](#openrowset)|Открывает и возвращает набор строк, включающий все строки из одной базовой таблицы или индекса. (Не в ATLDB. Высоты|
+|[BULK](#openrowset)|Открывает и возвращает набор строк, включающий все строки из одной базовой таблицы или индекса. (Не в ATLDB. Высоты|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Интерфейс [IOpenRowset](/previous-versions/windows/desktop/ms716946(v=vs.85)) является обязательным для объекта сеанса. Он открывает и возвращает набор строк, включающий все строки из одной базовой таблицы или индекса.
 
@@ -101,9 +102,9 @@ HRESULT OpenRowset(IUnknown* pUnkOuter,
 
 См. раздел [IOpenRowset:: OPENROWSET](/previous-versions/windows/desktop/ms716724(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод не найден в ATLDB. Высоты. Он создается мастером объектов ATL при создании поставщика.
+Этот метод не найден в ATLDB. H. Он создается мастером объектов ATL при создании поставщика.
 
 ## <a name="see-also"></a>См. также раздел
 
