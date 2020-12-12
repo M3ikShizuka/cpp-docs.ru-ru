@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: предупреждение компилятора (уровень 1) C4183'
 title: Предупреждение компилятора (уровень 1) C4183
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4183
 ms.assetid: dc48312c-4b34-44dd-80ff-eb5f11d5ca47
-ms.openlocfilehash: cff62c18442cd6d55a9444bb86944b691145b9fe
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1e9753637d0ee52ef40ce875e4e2d66fbdaab9db
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231927"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97266680"
 ---
 # <a name="compiler-warning-level-1-c4183"></a>Предупреждение компилятора (уровень 1) C4183
 

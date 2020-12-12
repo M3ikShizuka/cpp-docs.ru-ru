@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _RTC_SetErrorFunc'
 title: _RTC_SetErrorFunc
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - RTC_SetErrorFunc function
 - _RTC_SetErrorFunc function
 ms.assetid: b2292722-0d83-4092-83df-3d5b19880666
-ms.openlocfilehash: 6b173dd9af9fe11146341468c44a0abc10ce90bc
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 454fd54e0960e8ce52c94b4e4a1e0a93ea99d3eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949014"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268942"
 ---
 # <a name="_rtc_seterrorfunc"></a>_RTC_SetErrorFunc
 
@@ -53,7 +54,7 @@ _RTC_error_fn _RTC_SetErrorFunc(
 
 Ранее определенная функция обработки ошибок. Если ранее определенная функция отсутствует, возвращает **значение NULL**.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Не используйте эту функцию. Вместо этого используйте **_RTC_SetErrorFuncW**. Она сохраняется только для обратной совместимости.
 
@@ -69,7 +70,7 @@ _RTC_error_fn _RTC_SetErrorFunc(
 
 Все версии [библиотек времени выполнения языка C](../../c-runtime-library/crt-library-features.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [_CrtDbgReport, _CrtDbgReportW](crtdbgreport-crtdbgreportw.md)<br/>
 [Проверка ошибок во время выполнения](../../c-runtime-library/run-time-error-checking.md)<br/>

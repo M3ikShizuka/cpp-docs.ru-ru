@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _scalb, _scalbf'
 title: _scalb, _scalbf
 ms.date: 4/2/2020
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - _scalbf function
 - scalb function
 ms.assetid: 148cf5a8-b405-44bf-a1f0-7487adba2421
-ms.openlocfilehash: debb617afea26437df16150592e631461d82c6b8
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d118fc19c4635f0f0b6d93b1528308e9b31ee45a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918225"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268916"
 ---
 # <a name="_scalb-_scalbf"></a>_scalb, _scalbf
 
@@ -61,7 +62,7 @@ float _scalbf(
 *x*<br/>
 Число двойной точности с плавающей запятой.
 
-*расширением*<br/>
+*exp*<br/>
 Показатель степени — длинное целое число.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -70,9 +71,9 @@ float _scalbf(
 
 Дополнительные сведения об этом и других кодах возврата см. в статье [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функция **_scalb** вычисляет значение<sup>*exp*</sup> *x* \* 2.
+Функция **_scalb** вычисляет значение  \* <sup>*exp*</sup>x 2.
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -86,5 +87,5 @@ float _scalbf(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Поддержка чисел с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
 [ldexp](ldexp.md)<br/>

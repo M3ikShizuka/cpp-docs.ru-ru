@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CSession Class'
 title: класс CSession
 ms.date: 11/04/2016
 f1_keywords:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - Open method
 - StartTransaction method
 ms.assetid: 83cd798f-b45d-4f11-a23c-29183390450c
-ms.openlocfilehash: f507ed432e107f586d34bb6b08fa9d3f7dc509d8
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 41ebf1c9d93e1443504f92b052e770c251324633
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507240"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268435"
 ---
 # <a name="csession-class"></a>класс CSession
 
@@ -74,7 +75,7 @@ class CSession
 |[Открыть](#open)|Открывает новый сеанс для объекта источника данных.|
 |[StartTransaction](#starttransaction)|Начинает новую транзакцию для этого сеанса.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Один или несколько сеансов могут быть связаны с каждым соединением с поставщиком (источником данных), представленным объектом [CDataSource](../../data/oledb/cdatasource-class.md) . Чтобы создать новый объект `CSession` для `CDataSource` , вызовите [CSession:: Open](#open). Для начала транзакции базы данных `CSession` предоставляет `StartTransaction` метод. После запуска транзакции ее можно зафиксировать с помощью `Commit` метода или отменить с помощью `Abort` метода.
 
@@ -132,7 +133,7 @@ HRESULT Commit(BOOL bRetaining = FALSE,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [ITransaction:: Commit](/previous-versions/windows/desktop/ms713008(v=vs.85)).
 
@@ -154,7 +155,7 @@ HRESULT GetTransactionInfo(XACTTRANSINFO* pInfo) const throw();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [ITransaction:: жеттрансактионинфо](/previous-versions/windows/desktop/ms714975(v=vs.85)) в *справочнике программиста OLE DB*.
 
@@ -185,7 +186,7 @@ HRESULT Open(const CDataSource& ds,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Необходимо открыть объект источника данных с помощью [CDataSource:: Open](./cdatasource-class.md#open) перед его передачей в `CSession::Open` .
 
@@ -210,7 +211,7 @@ HRESULT StartTransaction(ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [ITransactionLocal:: StartTransaction](/previous-versions/windows/desktop/ms709786(v=vs.85)) в *справочнике программиста OLE DB*.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: `/Zc:strictStrings` (отключение преобразования типов строковых литералов)'
 title: /Zc:strictStrings (отключение преобразования типов строковых литералов)
 ms.date: 03/06/2018
 f1_keywords:
@@ -11,14 +12,14 @@ helpviewer_keywords:
 - /Zc compiler options (C++)
 - Zc compiler options (C++)
 ms.assetid: b7eb3f3b-82c1-48a2-8e63-66bad7397b46
-ms.openlocfilehash: df880ed64fa472ff55eb5ee0d17caacf56228ab6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 38c0ac2fe69acd81762fbf26797eece659ee63a3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211896"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97269059"
 ---
-# <a name="zcstrictstrings-disable-string-literal-type-conversion"></a>`/Zc:strictStrings`(Отключить преобразование типов строковых литералов)
+# <a name="zcstrictstrings-disable-string-literal-type-conversion"></a>`/Zc:strictStrings` (Отключить преобразование типов строковых литералов)
 
 Если этот параметр указан, **`const`** для указателей, инициализированных с помощью строковых литералов, компилятору требуется обеспечить соответствие требованиям.
 
@@ -26,7 +27,7 @@ ms.locfileid: "87211896"
 
 > **`/Zc:strictStrings`**[**`-`**]
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Если **`/Zc:strictStrings`** задано значение, компилятор применяет стандартную **`const`** квалификацию C++ для строковых литералов в качестве типа "массив" `const char` или "массив" в `const wchar_t` зависимости от объявления. Строковые литералы являются неизменяемыми, и при попытке изменения содержимого одного из них возникает ошибка нарушения доступа во время выполнения. Необходимо объявить указатель строки как **`const`** для его инициализации с помощью строкового литерала или явно использовать **`const_cast`** для инициализации без **`const`** указателя. По умолчанию или если **`/Zc:strictStrings-`** указан параметр, компилятор не применяет стандартные стандарты C++ **`const`** для указателей на строки, инициализированных с помощью строковых литералов.
 
@@ -72,4 +73,4 @@ int main() {
 
 ## <a name="see-also"></a>См. также раздел
 
-[`/Zc`Соответствия](zc-conformance.md)<br/>
+[`/Zc` Соответствия](zc-conformance.md)<br/>

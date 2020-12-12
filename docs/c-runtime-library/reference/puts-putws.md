@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: PUT, _putws'
 title: puts, _putws
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - putts function
 - _putws function
 ms.assetid: 32dada12-ed45-40ac-be06-3feeced9ecd6
-ms.openlocfilehash: 2e581237c7b839af87df7bc88369f21751b855d2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 9b48be23b02301f79b942371fbd273a14bab3800
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916113"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268955"
 ---
 # <a name="puts-_putws"></a>puts, _putws
 
@@ -69,11 +70,11 @@ int _putws(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **Put** записывает *str* в стандартный выходной поток **stdout**, заменяя завершающий нуль-символ строки ("\ 0") символом новой строки ("\n") в выходном потоке.
 
-**_putws** — это версия **размещается**в расширенных символах; Эти две функции ведут себя одинаково, если поток открыт в режиме ANSI. в настоящее **время не поддерживает** вывод в поток Юникода.
+**_putws** — это версия **размещается** в расширенных символах; Эти две функции ведут себя одинаково, если поток открыт в режиме ANSI. в настоящее **время не поддерживает** вывод в поток Юникода.
 
 **_putwch** записывает символы Юникода с использованием текущей настройки языкового стандарта консоли.
 
@@ -92,7 +93,7 @@ int _putws(
 |**puts**|\<stdio.h>|
 |**_putws**|\<stdio.h>|
 
-Консоль не поддерживается в приложениях универсальная платформа Windows (UWP). Стандартные дескрипторы потока, связанные с консолью, **stdin**, **stdout**и **stderr**, должны быть перенаправляться до того, как функции времени выполнения C смогут использовать их в приложениях UWP. Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
+Консоль не поддерживается в приложениях универсальная платформа Windows (UWP). Стандартные дескрипторы потока, связанные с консолью, **stdin**, **stdout** и **stderr**, должны быть перенаправляться до того, как функции времени выполнения C смогут использовать их в приложениях UWP. Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Библиотеки
 

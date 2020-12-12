@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения см. в статье как разработать безопасность исключений.
 title: Руководство. проектирование безопасности исключений
 ms.custom: how-to
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 19ecc5d4-297d-4c4e-b4f3-4fccab890b3d
-ms.openlocfilehash: 732a46166c99396c5d55a7d2acd834b58f3d2b2e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a4b957803d822b495ae6d44bb6640dcbb4535397
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87187807"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268643"
 ---
 # <a name="how-to-design-for-exception-safety"></a>Руководство. проектирование безопасности исключений
 
@@ -89,7 +90,7 @@ public:
 
 ## <a name="the-three-exception-guarantees"></a>Три гарантии исключений
 
-Как правило, безопасность исключений обсуждается в трех исключениях, которые гарантируют, что функция может предоставить следующие возможности: *гарантия отсутствия ошибок*, *строгая гарантия*и *Базовая гарантия*.
+Как правило, безопасность исключений обсуждается в трех исключениях, которые гарантируют, что функция может предоставить следующие возможности: *гарантия отсутствия ошибок*, *строгая гарантия* и *Базовая гарантия*.
 
 ### <a name="no-fail-guarantee"></a>Гарантия No — сбой
 

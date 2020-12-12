@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CSimpleRow Class'
 title: Класс CSimpleRow
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - m_dwRef
 - m_iRowset
 ms.assetid: 06d9621d-60cc-4508-8b0c-528d1b1a809b
-ms.openlocfilehash: c0d7ea0966b9a582e4a6969573458bca2e8a0fea
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 7390a8d82e8996c81761065541eebbbccae510ad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507224"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268422"
 ---
 # <a name="csimplerow-class"></a>Класс CSimpleRow
 
@@ -68,12 +69,12 @@ class CSimpleRow
 
 ### <a name="data-members"></a>Элементы данных
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[m_dwRef](#dwref)|Счетчик ссылок на существующий маркер строки.|
 |[m_iRowset](#irowset)|Индекс набора строк, представляющего курсор.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Маркер строки логически является уникальным тегом для результирующей строки. `IRowsetImpl` создает новый `CSimpleRow` для каждой строки, запрошенной в [IRowsetImpl:: GetNextRows](./irowsetimpl-class.md#getnextrows). `CSimpleRow` также можно заменить собственной реализацией маркера строки, так как это аргумент шаблона по умолчанию для `IRowsetImpl` . Единственным требованием для замены этого класса является то, чтобы класс замены предоставил конструктор, принимающий один параметр типа **Long**.
 
@@ -121,7 +122,7 @@ CSimpleRow(DBCOUNTITEM iRowsetCur);
 *ировсеткур*<br/>
 окне Индекс текущего набора строк.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Задает для [m_iRowset](#irowset) значение *ировсеткур*.
 

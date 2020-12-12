@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CRowsetImpl Class'
 title: Класс CRowsetImpl
 ms.date: 11/04/2016
 f1_keywords:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - m_strCommandText
 - m_strIndexText
 ms.assetid: e97614b3-b11d-4806-a0d3-b9401331473f
-ms.openlocfilehash: cca74504c80b964b14742e7405953ad68764aa62
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: e517806cc7083700d4fad7fc053777b11a7de665
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507262"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268448"
 ---
 # <a name="crowsetimpl-class"></a>Класс CRowsetImpl
 
@@ -66,7 +67,7 @@ class CRowsetImpl :
 *T*<br/>
 Класс пользователя, производный от `CRowsetImpl` .
 
-*Хранилище*<br/>
+*Память*<br/>
 Класс записей пользователя.
 
 *креаторкласс*<br/>
@@ -90,7 +91,7 @@ class CRowsetImpl :
 
 ### <a name="overridable-methods"></a>Переопределяемые методы
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[GetColumnInfo](#getcolumninfo)|Возвращает сведения о столбце для конкретного запроса клиента.|
 |[жеткоммандфромид](#getcommandfromid)|Проверяет, содержат ли один или оба параметра строковые значения, и, если да, копирует строковые значения в элементы данных [m_strCommandText](#strcommandtext) и [m_strIndexText](#strindextext).|
@@ -98,13 +99,13 @@ class CRowsetImpl :
 
 ### <a name="data-members"></a>Элементы данных
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[m_rgRowData](#rgrowdata)|По умолчанию, `CAtlArray` темплатизес в аргументе шаблона записи пользователя в `CRowsetImpl` . Другой класс типа массива можно использовать, изменив `ArrayType` аргумент шаблона на `CRowsetImpl` .|
 |[m_strCommandText](#strcommandtext)|Содержит начальную команду набора строк.|
 |[m_strIndexText](#strindextext)|Содержит начальный индекс набора строк.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `CRowsetImpl` предоставляет переопределения в виде статических преобразований. Методы управляют способом, которым данный набор строк будет проверять текст команды. Можно создать собственный `CRowsetImpl` класс, сделав интерфейсы реализации множественно наследуемыми. Единственный метод, для которого необходимо предоставить реализацию, — это `Execute` . В зависимости от типа создаваемого набора строк методы Creator будут иметь разные сигнатуры `Execute` . Например, если `CRowsetImpl` для реализации набора строк схемы используется производный класс, `Execute` метод будет иметь следующую сигнатуру:
 
@@ -143,7 +144,7 @@ HRESULT CRowsetBaseImpl::NameFromDBID(DBID* pDBID,
 
 Стандартное значение HRESULT. В зависимости от того `DBID` , является ли объект таблицей или индексом (обозначенным *биндекс*), метод возвратит DB_E_NOINDEX или DB_E_NOTABLE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывается `CRowsetImpl` реализациями [Валидатекоммандид](#validatecommandid) и [жеткоммандфромид](#getcommandfromid).
 
@@ -170,7 +171,7 @@ HRESULT CRowsetBaseImpl::SetCommandText(DBID* pTableID,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `SetCommentText`Метод вызывается `CreateRowset` статическим методом преобразованный метода `IOpenRowsetImpl` .
 
@@ -199,7 +200,7 @@ static ATLCOLUMNINFO* CRowsetBaseImpl::GetColumnInfo(T* pv,
 
 Указатель на статическую `ATLCOLUMNINFO` структуру.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод является расширенным переопределением.
 
@@ -232,7 +233,7 @@ HRESULT CRowsetBaseImpl::GetCommandFromID(DBID* pTableID,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывается через статическое преобразование, `CRowsetImpl` чтобы заполнить элементы данных [m_strCommandText](#strcommandtext) и [m_strIndexText](#strindextext). По умолчанию этот метод проверяет, содержат ли один или оба параметра строковые значения. Если они содержат строковые значения, этот метод копирует строковые значения в элементы данных. Поместив метод с этой сигнатурой в `CRowsetImpl` производный класс, вместо базовой реализации будет вызываться метод.
 
@@ -259,7 +260,7 @@ HRESULT CRowsetBaseImpl::ValidateCommandID(DBID* pTableID,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывается с помощью статического приведения by `CRowsetImpl` для заполнения его элементов данных [m_strCommandText](#strcommandtext) и [m_strIndexText](#strindextext). По умолчанию этот метод проверяет, содержат ли один или оба `DBID` строковые значения, и, если да, копирует их в элементы данных. Поместив метод с этой сигнатурой в `CRowsetImpl` производный класс, вместо базовой реализации будет вызываться метод.
 

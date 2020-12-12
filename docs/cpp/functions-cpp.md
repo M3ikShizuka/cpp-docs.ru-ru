@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: функции (C++)'
 title: Функции (C++)
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - default arguments
 - declarators, functions
 ms.assetid: 33ba01d5-75b5-48d2-8eab-5483ac7d2274
-ms.openlocfilehash: 5beadbbf283a64f12dab7f0ee39a267ec1797861
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: da338e0fcc6c30f0f1482cb900803c0a98f854ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213441"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97268929"
 ---
 # <a name="functions-c"></a>Функции (C++)
 
@@ -26,7 +27,7 @@ int sum(int a, int b)
 }
 ```
 
-Функцию можно вызывать или *вызывать*из любого числа мест в программе. Значения, передаваемые в функцию, являются *аргументами*, типы которых должны быть совместимы с типами параметров в определении функции.
+Функцию можно вызывать или *вызывать* из любого числа мест в программе. Значения, передаваемые в функцию, являются *аргументами*, типы которых должны быть совместимы с типами параметров в определении функции.
 
 ```cpp
 int main()
@@ -261,7 +262,7 @@ auto Add(const Lhs& lhs, const Rhs& rhs) -> decltype(lhs + rhs)
 
 В C++ локальные переменные можно объявлять как статические. Переменная является видимой только в теле функции, однако для всех экземпляров функции существует только одна копия переменной. Локальные статические объекты удаляются во время завершения, определенного директивой `atexit`. Если статический объект не был создан из-за того, что поток кода программы обошел соответствующее объявление, попытка уничтожения этого объект не предпринимается.
 
-## <a name="type-deduction-in-return-types-c14"></a><a name="type_deduction"></a>Вычисление типов в возвращаемых типах (C++ 14)
+## <a name="type-deduction-in-return-types-c14"></a><a name="type_deduction"></a> Вычисление типов в возвращаемых типах (C++ 14)
 
 В C++ 14 можно использовать, **`auto`** чтобы дать компилятору инструкцию вывести возвращаемый тип из тела функции без необходимости предоставления завершающего возвращаемого типа. Обратите внимание, что всегда выводится **`auto`** на возврат по значению. Используйте `auto&&`, чтобы дать компилятору команду выведения ссылки.
 
@@ -295,7 +296,7 @@ template<typename F, typename Tuple = tuple<T...>,
 }
 ```
 
-## <a name="returning-multiple-values-from-a-function"></a><a name="multi_val"></a>Возврат нескольких значений из функции
+## <a name="returning-multiple-values-from-a-function"></a><a name="multi_val"></a> Возврат нескольких значений из функции
 
 Существует несколько способов вернуть более одного значения из функции:
 
@@ -430,4 +431,4 @@ int (*myFunction(char* s))(int);
 [Явно заданные по умолчанию и удаленные функции](../cpp/explicitly-defaulted-and-deleted-functions.md)<br/>
 [Подстановка с зависящим от аргументом именем (Поиск Koenig) для функций](../cpp/argument-dependent-name-koenig-lookup-on-functions.md)<br/>
 [Аргументы по умолчанию](../cpp/default-arguments.md)<br/>
-[Встроенные функции](../cpp/inline-functions-cpp.md)
+[Встраиваемые функции](../cpp/inline-functions-cpp.md)
