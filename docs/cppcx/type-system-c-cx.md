@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: система типов (C++/CX)'
 title: Система типов (C++/CX)
 ms.date: 02/03/2017
 ms.assetid: b67bee8a-b526-4872-969e-ef22724e88fe
-ms.openlocfilehash: 242fbde1774ef4537eedce26cafff6b8625ac2a5
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 43b1e9dd2df6e9e457525ebf337604f68f0c267f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845150"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288169"
 ---
 # <a name="type-system-ccx"></a>Система типов (C++/CX)
 
@@ -37,7 +38,7 @@ ms.locfileid: "88845150"
 
 | Опубликован в метаданных | Не опубликован в метаданных |
 |--|--|
-| таверна | private |
+| public | private |
 | protected | internal |
 | public protected | private protected |
 
@@ -68,7 +69,7 @@ C++/CX также определяет Uint8, эквивалент **`unsigned c
 
 Дополнительные сведения о фундаментальных типах см. в разделе [Базовые типы](../cppcx/fundamental-types-c-cx.md)
 
-### <a name="strings"></a>строк
+### <a name="strings"></a>Строки
 
 Строка среда выполнения Windows представляет собой неизменяемую последовательность из 16-разрядных символов Юникода. Строка среда выполнения Windows проецируется как `Platform::String^` . Этот класс предоставляет методы для создания строк, обработки и преобразования в и из **`wchar_t`** .
 

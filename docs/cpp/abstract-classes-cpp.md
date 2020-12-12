@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: абстрактные классы (C++)'
 title: Абстрактные классы (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - abstract classes [C++]
 - derived classes [C++], abstract classes [C++]
 ms.assetid: f0c5975b-39de-4d68-9640-6ce57f4632e6
-ms.openlocfilehash: 2ea9d3765f65434cb738c2b7c53f9499bba24545
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bb1c42ce7930128e72c88afaca90da7aaac0bde5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181698"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288416"
 ---
 # <a name="abstract-classes-c"></a>Абстрактные классы (C++)
 
@@ -55,7 +56,7 @@ private:
 
 *abstract — имя класса*::*Function-Name*()
 
-Это помогает при разработке иерархий классов, базовые классы которых содержат чистые виртуальные деструкторы, поскольку деструкторы базовых классов всегда вызываются в процессе удаления объекта. Рассмотрим следующий пример:
+Это помогает при разработке иерархий классов, базовые классы которых содержат чистые виртуальные деструкторы, поскольку деструкторы базовых классов всегда вызываются в процессе удаления объекта. Рассмотрим следующий пример.
 
 ```cpp
 // Declare an abstract base class with a pure virtual destructor.

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _set_abort_behavior'
 title: _set_abort_behavior
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - aborting programs
 - _set_abort_behavior function
 - set_abort_behavior function
-ms.openlocfilehash: 06f72597a384cc5c90b2e345e62e13dee96c4dca
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 1e024cf825115204f51e727d81af7aba74c305fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913129"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288910"
 ---
 # <a name="_set_abort_behavior"></a>_set_abort_behavior
 
@@ -56,14 +57,14 @@ unsigned int _set_abort_behavior(
 *flags*<br/>
 Новое значение флагов [прерывания](abort.md) .
 
-*маска*<br/>
+*виде*<br/>
 Маска для устанавливаемых битов флагов [прерывания](abort.md) .
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Старое значение флагов.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Существует два флага [прерывания](abort.md) : **_WRITE_ABORT_MSG** и **_CALL_REPORTFAULT**. **_WRITE_ABORT_MSG** определяет, печатается ли полезное текстовое сообщение при аварийном завершении программы. В сообщении указывается, что приложение вызвало функцию [Abort](abort.md) . По умолчанию сообщение выводится. **_CALL_REPORTFAULT**, если задано, указывает, что создается дамп аварийной работы программы Watson и сообщается при вызове метода [Abort](abort.md) . По умолчанию функция создания отчетов о аварийных дампах включена в неотладочных сборках.
 

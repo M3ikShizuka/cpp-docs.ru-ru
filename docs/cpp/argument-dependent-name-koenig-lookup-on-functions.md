@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: Argument-Dependent Name (Поиск Koenig) Lookup for functions'
 title: Поиск имен функций с зависимостью от аргументов (поиск Koenig)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Koenig lookup
 - argument-dependent lookup [C++]
 ms.assetid: c0928401-da2c-4658-942d-9ba4df149c35
-ms.openlocfilehash: 88811e8070fdfe398bc12734221dee772515d8bc
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 726174041c919a2918687101b223f0e1cca3d5ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80190542"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288195"
 ---
 # <a name="argument-dependent-name-koenig-lookup-on-functions"></a>Поиск имен функций с зависимостью от аргументов (поиск Koenig)
 

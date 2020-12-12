@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: ICommandImpl Class'
 title: Класс ICommandImpl
 ms.date: 11/04/2016
 f1_keywords:
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - m_bCancelWhenExecuting
 - m_bIsExecuting
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
-ms.openlocfilehash: 2f2d3938d63e5e67fc501d52d269c06f6b144ac8
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 62066d689e51a8ca8a71bb8120199c05ed2811d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501822"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287389"
 ---
 # <a name="icommandimpl-class"></a>Класс ICommandImpl
 
@@ -96,13 +97,13 @@ class ATL_NO_VTABLE ICommandImpl : public CommandBase
 
 ### <a name="data-members"></a>Элементы данных
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[m_bCancel](#bcancel)|Указывает, должна ли команда быть отменена.|
 |[m_bCancelWhenExecuting](#bcancelwhenexecuting)|Указывает, должна ли команда быть отменена при выполнении.|
 |[m_bIsExecuting](#bisexecuting)|Указывает, выполняется ли в данный момент команда.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Обязательный интерфейс для объекта Command.
 
@@ -173,7 +174,7 @@ HRESULT CreateRowset(IUnknown* pUnkOuter,
 
 Стандартное значение HRESULT. `ICommand::Execute`Список типичных значений см. в разделе.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Чтобы создать более одного набора строк или предоставить собственные условия для создания различных наборов строк, разместите разные вызовы `CreateRowset` из в `Execute` .
 
@@ -197,7 +198,7 @@ HRESULT Execute(IUnknown* pUnkOuter,
 
 См. раздел [ICommand:: Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) в *справочнике по OLE DB программиста*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Запрошенный исходящий интерфейс будет интерфейсом, полученным из объекта набора строк, создаваемого этой функцией.
 
@@ -218,7 +219,7 @@ STDMETHOD (GetDBSession) (REFIID riid,
 
 См. раздел [ICommand:: жетдбсессион](/previous-versions/windows/desktop/ms719622(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Полезно для получения свойств из сеанса.
 

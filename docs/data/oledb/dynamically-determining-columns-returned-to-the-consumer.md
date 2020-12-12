@@ -1,22 +1,23 @@
 ---
+description: 'Дополнительные сведения: динамическое определение столбцов, возвращаемых потребителю'
 title: Динамично определяемые столбцы, возвращенные объекту-получателю
 ms.date: 10/26/2018
 helpviewer_keywords:
 - bookmarks [C++], dynamically determining columns
 - dynamically determining columns [C++]
 ms.assetid: 58522b7a-894e-4b7d-a605-f80e900a7f5f
-ms.openlocfilehash: 6b6061fc7da6f4c4dd53ae70a0e2d5ba7ec40023
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: fd70164edff5b9267e01a891a143920ac4e60a35
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80079636"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287571"
 ---
 # <a name="dynamically-determining-columns-returned-to-the-consumer"></a>Динамично определяемые столбцы, возвращенные объекту-получателю
 
-PROVIDER_COLUMN_ENTRYные макросы обычно обрабатывали вызов `IColumnsInfo::GetColumnsInfo`. Однако, поскольку потребитель может выбрать использование закладок, поставщик должен иметь возможность изменять столбцы, возвращаемые в зависимости от того, запрашивает ли потребитель закладку.
+Макросы PROVIDER_COLUMN_ENTRY обычно обрабатывали `IColumnsInfo::GetColumnsInfo` вызов. Однако, поскольку потребитель может выбрать использование закладок, поставщик должен иметь возможность изменять столбцы, возвращаемые в зависимости от того, запрашивает ли потребитель закладку.
 
-Чтобы обрабатывался вызов `IColumnsInfo::GetColumnsInfo`, удалите PROVIDER_COLUMN_MAP, определяющий функцию `GetColumnInfo`, из записи `CCustomWindowsFile` пользователя в *пользовательском*RS. h и замените ее определением для собственной функции `GetColumnInfo`:
+Чтобы обрабатывался `IColumnsInfo::GetColumnsInfo` вызов, удалите PROVIDER_COLUMN_MAP, определяющую функцию `GetColumnInfo` , из `CCustomWindowsFile` записи пользователя в *пользовательском* RS. h и замените ее определением для собственной `GetColumnInfo` функции:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
@@ -39,11 +40,11 @@ public:
 };
 ```
 
-Затем реализуйте функцию `GetColumnInfo` в *пользовательском*RS. cpp, как показано в следующем коде.
+Затем реализуйте `GetColumnInfo` функцию в *пользовательском* RS. cpp, как показано в следующем коде.
 
-`GetColumnInfo` сначала проверяет, установлено ли свойство OLE DB `DBPROP_BOOKMARKS`. Чтобы получить свойство, `GetColumnInfo` использует указатель (`pRowset`) для объекта набора строк. Указатель `pThis` представляет класс, который создал набор строк, который является классом, в котором хранится схема свойств. `GetColumnInfo` приведение указателя `pThis` к указателю `RCustomRowset`.
+`GetColumnInfo` сначала проверяет, задано ли свойство OLE DB `DBPROP_BOOKMARKS` . Чтобы получить свойство, `GetColumnInfo` использует указатель ( `pRowset` ) для объекта набора строк. `pThis`Указатель представляет класс, который создал набор строк, который является классом, в котором хранится схема свойств. `GetColumnInfo` приведение `pThis` указателя к `RCustomRowset` указателю.
 
-Чтобы проверить свойство `DBPROP_BOOKMARKS`, `GetColumnInfo` использует интерфейс `IRowsetInfo`, который можно получить путем вызова `QueryInterface` в интерфейсе `pRowset`. В качестве альтернативы можно использовать вместо этого метод ATL [CComQIPtr](../../atl/reference/ccomqiptr-class.md) .
+Чтобы проверить `DBPROP_BOOKMARKS` свойство, `GetColumnInfo` использует `IRowsetInfo` интерфейс, который можно получить путем вызова метода `QueryInterface` в `pRowset` интерфейсе. В качестве альтернативы можно использовать вместо этого метод ATL [CComQIPtr](../../atl/reference/ccomqiptr-class.md) .
 
 ```cpp
 ////////////////////////////////////////////////////////////////////
@@ -135,7 +136,7 @@ ATLCOLUMNINFO* CCustomWindowsFile::GetColumnInfo(void* pThis, ULONG* pcCols)
    _rgColumns[ulCols].columnid.uName.pwszName = (LPOLESTR)name;  
 ```
 
-В функции `GetColumnInfo` макрос закладки используется следующим образом:
+В `GetColumnInfo` функции макрос закладки используется следующим образом:
 
 ```cpp
 ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Bookmark"), 0, sizeof(DWORD),
@@ -145,6 +146,6 @@ ADD_COLUMN_ENTRY_EX(ulCols, OLESTR("Bookmark"), 0, sizeof(DWORD),
 
 Теперь можно скомпилировать и запустить Улучшенный поставщик. Чтобы протестировать поставщик, измените тестового потребителя, как описано в разделе [Реализация простого потребителя](../../data/oledb/implementing-a-simple-consumer.md). Запустите тестового потребителя с поставщиком и убедитесь, что тестовый потребитель получает соответствующие строки от поставщика.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Усовершенствование простого поставщика только для чтения](../../data/oledb/enhancing-the-simple-read-only-provider.md)<br/>
+[Усовершенствование простого поставщика Read-Only](../../data/oledb/enhancing-the-simple-read-only-provider.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: метод ActivationFactory Class'
 title: ActivationFactory - класс
 ms.date: 10/03/2018
 ms.topic: reference
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - Microsoft::WRL::ActivationFactory::QueryInterface method
 - Microsoft::WRL::ActivationFactory::Release method
 ms.assetid: 5faddf1f-43b6-4f8a-97de-8c9d3ae1e1ff
-ms.openlocfilehash: 0655caeb3f49a18e9c57c78f0008901aaaedda4a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7204a3c2f981947a03efba648dd91b69d582fee1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368708"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287844"
 ---
 # <a name="activationfactory-class"></a>ActivationFactory - класс
 
@@ -57,7 +58,7 @@ class ActivationFactory :
 ### <a name="parameters"></a>Параметры
 
 *I0*<br/>
-Интерфейс нулевой.
+Интерфейс начальном.
 
 *I1*<br/>
 Первый интерфейс.
@@ -65,36 +66,36 @@ class ActivationFactory :
 *I2*<br/>
 Второй интерфейс.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`ActivationFactory`обеспечивает методы регистрации и `IActivationFactory` основные функциональные возможности для интерфейса. `ActivationFactory`также позволяет обеспечить пользовательскую реализацию завода.
+`ActivationFactory` предоставляет методы регистрации и базовые функциональные возможности для `IActivationFactory` интерфейса. `ActivationFactory` также позволяет предоставить собственную реализацию фабрики.
 
-Следующий фрагмент кода символически иллюстрирует, как использовать ActivationFactory.
+В следующем фрагменте кода показано, как использовать метод ActivationFactory.
 
 [!code-cpp[wrl-microsoft__wrl__activationfactory#1](../codesnippet/CPP/activationfactory-class_1.cpp)]
 
-Следующий фрагмент кода показывает, как использовать структуру [реализации](implements-structure.md) для указания более трех идонов интерфейса.
+В следующем фрагменте кода показано, как использовать структуру [Implements](implements-structure.md) , чтобы указать более трех идентификаторов интерфейса.
 
 `struct MyFactory : ActivationFactory<Implements<I1, I2, I3>, I4, I5>;`
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-Имя                                                       | Описание
+name                                                       | Описание
 ---------------------------------------------------------- | ------------------------------------------
-[АктивацияFactory::АктивацияFactory](#activationfactory) | Инициализирует класс `ActivationFactory`.
+[Метод ActivationFactory:: метод ActivationFactory](#activationfactory) | Инициализирует класс `ActivationFactory`.
 
 ### <a name="public-methods"></a>Открытые методы
 
-Имя                                                           | Описание
+name                                                           | Описание
 -------------------------------------------------------------- | --------------------------------------------------------------------------------------------
-[АктивацияFactory::AddRef](#addref)                           | Приращения эталонного количества `ActivationFactory` текущего объекта.
-[АктивацияFactory::GetIids](#getiids)                         | Извлекает массив идентификаторов реализованного интерфейса.
-[АктивацияFactory::GetRuntimeClassName](#getruntimeclassname) | Получает название класса времени выполнения объекта, `ActivationFactory` которое происходит в текущем моменте.
-[АктивацияFactory::GetTrustLevel](#gettrustlevel)             | Получает уровень доверия объекта, `ActivationFactory` который моментирует текущий.
-[АктивацияFactory::Квиинтерфейс](#queryinterface)           | Извлекает указатель на указанный интерфейс.
-[АктивацияFactory::Release](#release)                         | Декретирует количество ссылок `ActivationFactory` текущего объекта.
+[Метод ActivationFactory:: AddRef](#addref)                           | Увеличивает значение счетчика ссылок текущего `ActivationFactory` объекта.
+[Метод ActivationFactory:: GetIids](#getiids)                         | Извлекает массив идентификаторов реализованного интерфейса.
+[Метод ActivationFactory:: GetRuntimeClassName](#getruntimeclassname) | Возвращает имя класса среды выполнения для объекта, который является текущим `ActivationFactory` экземпляром.
+[Метод ActivationFactory:: GetTrustLevel](#gettrustlevel)             | Возвращает уровень доверия объекта, который является текущим `ActivationFactory` экземпляром.
+[Метод ActivationFactory:: QueryInterface](#queryinterface)           | Извлекает указатель на указанный интерфейс.
+[Метод ActivationFactory:: Release](#release)                         | Уменьшает значение счетчика ссылок текущего `ActivationFactory` объекта.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -120,11 +121,11 @@ class ActivationFactory :
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** module.h
+**Заголовок:** Module. h
 
 **Пространство имен:** Microsoft::WRL
 
-## <a name="activationfactoryactivationfactory"></a><a name="activationfactory"></a>АктивацияFactory::АктивацияFactory
+## <a name="activationfactoryactivationfactory"></a><a name="activationfactory"></a> Метод ActivationFactory:: метод ActivationFactory
 
 Инициализирует класс `ActivationFactory`.
 
@@ -132,9 +133,9 @@ class ActivationFactory :
 ActivationFactory();
 ```
 
-## <a name="activationfactoryaddref"></a><a name="addref"></a>АктивацияFactory::AddRef
+## <a name="activationfactoryaddref"></a><a name="addref"></a> Метод ActivationFactory:: AddRef
 
-Приращения эталонного количества `ActivationFactory` текущего объекта.
+Увеличивает значение счетчика ссылок текущего `ActivationFactory` объекта.
 
 ```cpp
 STDMETHOD_(
@@ -147,7 +148,7 @@ STDMETHOD_(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, описывающее тип сбоя.
 
-## <a name="activationfactorygetiids"></a><a name="getiids"></a>АктивацияFactory::GetIids
+## <a name="activationfactorygetiids"></a><a name="getiids"></a> Метод ActivationFactory:: GetIids
 
 Извлекает массив идентификаторов реализованного интерфейса.
 
@@ -160,18 +161,18 @@ STDMETHOD(
 ### <a name="parameters"></a>Параметры
 
 *iidCount*<br/>
-Когда эта операция завершается, количество идентификаторов взаимосвязей в массиве *iids.*
+По завершении этой операции число идентификаторов свойства интерфейса в массиве *идентификаторов IID* .
 
-*iids*<br/>
+*идентификаторов IID*<br/>
 После завершения операции представляет массив идентификаторов реализованного интерфейса.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, описывающее тип сбоя. E_OUTOFMEMORY является возможной ошибкой HRESULT.
 
-## <a name="activationfactorygetruntimeclassname"></a><a name="getruntimeclassname"></a>АктивацияFactory::GetRuntimeClassName
+## <a name="activationfactorygetruntimeclassname"></a><a name="getruntimeclassname"></a> Метод ActivationFactory:: GetRuntimeClassName
 
-Получает название класса времени выполнения объекта, `ActivationFactory` которое происходит в текущем моменте.
+Возвращает имя класса среды выполнения для объекта, который является текущим `ActivationFactory` экземпляром.
 
 ```cpp
 STDMETHOD(
@@ -181,16 +182,16 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Параметры
 
-*время выполненияИмя*<br/>
-Когда эта операция завершается, ручка строки, содержащей имя класса `ActivationFactory` времени выполнения объекта, который моментирует текущий.
+*рунтименаме*<br/>
+По завершении этой операции — обработчик строки, содержащей имя класса среды выполнения для объекта, который является текущим `ActivationFactory` экземпляром.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, описывающее тип сбоя.
 
-## <a name="activationfactorygettrustlevel"></a><a name="gettrustlevel"></a>АктивацияFactory::GetTrustLevel
+## <a name="activationfactorygettrustlevel"></a><a name="gettrustlevel"></a> Метод ActivationFactory:: GetTrustLevel
 
-Получает уровень доверия объекта, `ActivationFactory` который моментирует текущий.
+Возвращает уровень доверия объекта, который является текущим `ActivationFactory` экземпляром.
 
 ```cpp
 STDMETHOD(
@@ -200,14 +201,14 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Параметры
 
-*trustLvl*<br/>
-Когда эта операция завершается, уровень доверия класса `ActivationFactory` времени выполнения, который мгновенно.
+*трустлвл*<br/>
+По завершении этой операции уровень доверия класса среды выполнения, который `ActivationFactory` создает экземпляр.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK в случае успеха; в противном случае, ошибка утверждения излучается `FullTrust`и *trustLvl* установлен на .
+S_OK в случае успеха; в противном случае выдается ошибка утверждения, а для *трустлвл* задается значение `FullTrust` .
 
-## <a name="activationfactoryqueryinterface"></a><a name="queryinterface"></a>АктивацияFactory::Квиинтерфейс
+## <a name="activationfactoryqueryinterface"></a><a name="queryinterface"></a> Метод ActivationFactory:: QueryInterface
 
 Извлекает указатель на указанный интерфейс.
 
@@ -222,16 +223,16 @@ STDMETHOD(
 *riid*<br/>
 Идентификатор интерфейса.
 
-*ppvObject*<br/>
-Когда эта операция завершена, указатель на интерфейс, указанный *паралимбером riid.*
+*ппвобжект*<br/>
+После завершения этой операции указатель на интерфейс, указанный параметром *riid*.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, описывающее тип сбоя.
 
-## <a name="activationfactoryrelease"></a><a name="release"></a>АктивацияFactory::Release
+## <a name="activationfactoryrelease"></a><a name="release"></a> Метод ActivationFactory:: Release
 
-Декретирует количество ссылок `ActivationFactory` текущего объекта.
+Уменьшает значение счетчика ссылок текущего `ActivationFactory` объекта.
 
 ```cpp
 STDMETHOD_(

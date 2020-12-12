@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о интерфейсах объектов источника данных
 title: Интерфейсы объекта источника данных
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - OLE DB provider templates [C++], object interfaces
 - OLE DB [C++], interfaces
 ms.assetid: 929e100c-c08c-4b64-8437-d8d1357226f6
-ms.openlocfilehash: a615694a9db75cdaf3b187cf6d29248bd26ef978
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: ecc37ca4286e288939ccd15bdcd073379c27f7c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "79544606"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287623"
 ---
 # <a name="data-source-object-interfaces"></a>Интерфейсы объекта источника данных
 
 В следующей таблице показаны обязательные и необязательные интерфейсы, определенные OLE DB для объекта источника данных.
 
-|Интерфейс|Обязательно?|Реализуется с помощью шаблонов OLE DB?|
+|Интерфейс|Необходим?|Реализуется с помощью шаблонов OLE DB?|
 |---------------|---------------|--------------------------------------|
 |`IDBCreateSession`|Обязательный|Да|
 |`IDBInitialize`|Обязательный|Да|
@@ -32,8 +33,8 @@ ms.locfileid: "79544606"
 |[IPersistFile](/windows/win32/api/objidl/nn-objidl-ipersistfile)|Необязательно|Нет|
 |`ISupportErrorInfo`|Необязательно|Нет|
 
-Объект источника данных реализует интерфейсы `IDBProperties`, `IDBInitialize`и `IDBCreateSession` посредством наследования. Можно выбрать поддержку дополнительных функций путем наследования или наследования от одного из этих классов реализации. Если требуется поддержка интерфейса `IDBDataSourceAdmin`, необходимо наследовать от класса `IDBDataSourceAdminImpl`.
+Объект источника данных реализует `IDBProperties` `IDBInitialize` интерфейсы, и `IDBCreateSession` посредством наследования. Можно выбрать поддержку дополнительных функций путем наследования или наследования от одного из этих классов реализации. Если требуется поддержка `IDBDataSourceAdmin` интерфейса, необходимо наследовать от `IDBDataSourceAdminImpl` класса.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Архитектура шаблона поставщика OLE DB](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

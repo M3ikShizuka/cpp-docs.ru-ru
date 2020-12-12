@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CStreamRowset Class'
 title: Класс CStreamRowset
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - CStreamRowset class, constructor
 - Close method
 ms.assetid: a106e953-a38a-464e-8ea5-28963d9e4811
-ms.openlocfilehash: 304dfe0e026a9fbba899c1ef17c06cf1baf1529b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 278f85b36a2b4ec1c3d6b3c2bd5ecc5b47c5ef73
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841055"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287818"
 ---
 # <a name="cstreamrowset-class"></a>Класс CStreamRowset
 
@@ -62,13 +63,13 @@ class CStreamRowset
 |[CStreamRowset](#cstreamrowset)|Конструктор. Создает и инициализирует `CStreamRowset` объект.|
 |[Закрыть](#close)|Освобождает указатель интерфейса [ISequentialStream](/previous-versions/windows/desktop/ms718035(v=vs.85)) в классе.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Используйте `CStreamRowset` в `CCommand` `CTable` объявлении или, например:
 
 [!code-cpp[NVC_OLEDB_Consumer#11](../../data/oledb/codesnippet/cpp/cstreamrowset-class_1.cpp)]
 
-или диспетчер конфигурации служб
+или
 
 [!code-cpp[NVC_OLEDB_Consumer#12](../../data/oledb/codesnippet/cpp/cstreamrowset-class_2.cpp)]
 

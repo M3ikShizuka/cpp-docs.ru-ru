@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Активатаблекласс Macros'
 title: Макрос ActivatableClass
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - ActivatableClass
 - ActivatableClassWithFactoryEx
 ms.assetid: 9bd64709-ec2c-4678-8c96-ea5982622bdd
-ms.openlocfilehash: 7bc3d789d6c0d304aa170d59dff23a97a67061d7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2b59101373de72ca88338750bb7fe9169376ac65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80214289"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287948"
 ---
 # <a name="activatableclass-macros"></a>Макрос ActivatableClass
 
@@ -46,15 +47,15 @@ ActivatableClassWithFactoryEx(
 *className*<br/>
 Имя создаваемого класса.
 
-*установлен*<br/>
+*фабрика*<br/>
 Фабрика, которая создаст экземпляр указанного класса.
 
 *serverName*<br/>
 Имя, указывающее подмножество фабрик в модуле.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Не используйте эти макросы с классической моделью COM, если не используется директива `#undef`, чтобы гарантировать удаление определения макроса `__WRL_WINRT_STRICT__`.
+Не используйте эти макросы с классической моделью COM, если не используется `#undef` директива, чтобы гарантировать `__WRL_WINRT_STRICT__` Удаление определения макроса.
 
 ## <a name="requirements"></a>Требования
 

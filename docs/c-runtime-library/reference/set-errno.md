@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _set_errno'
 title: _set_errno
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - set_errno function
 - _set_errno function
 ms.assetid: d338914a-1894-4cf3-ae45-f2c4eb26590b
-ms.openlocfilehash: e889f8e2dabfffbcc69ff796fb21570b66b57fb0
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: f609e26468728d88346ef7b43faa2209ef9c77e7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913056"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288858"
 ---
 # <a name="_set_errno"></a>_set_errno
 
@@ -55,7 +56,7 @@ errno_t _set_errno( int error_value );
 
 Возвращает нуль при успешном завершении.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Возможные значения макроса определяются в Errno.h. Также см. раздел [Константы errno](../../c-runtime-library/errno-constants.md).
 
@@ -90,4 +91,4 @@ Oops: Illegal byte sequence
 ## <a name="see-also"></a>См. также раздел
 
 [_get_errno](get-errno.md)<br/>
-[errno, _doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>
+[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>

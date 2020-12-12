@@ -1,14 +1,15 @@
 ---
+description: 'Дополнительные сведения: универсальные приложения для Windows (C++)'
 title: Универсальные приложения Windows (C++)
 ms.date: 03/30/2018
 ms.assetid: 357121cc-d390-4bae-b34a-39614861a9f4
 ms.topic: overview
-ms.openlocfilehash: 45d02a5ab923ee46da97d78a1e5ceb2f4313352a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ef107311ce2e8ec1b7c33bad42edfd3fbee358eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841679"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288149"
 ---
 # <a name="universal-windows-apps-c"></a>Универсальные приложения Windows (C++)
 

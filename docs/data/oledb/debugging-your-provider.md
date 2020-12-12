@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Отладка поставщика'
 title: Отладка поставщика
 ms.date: 10/29/2018
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Visual C++ debugger, debugging providers
 - Visual C++ debugger
 ms.assetid: 90d4e7db-06ea-4de0-a7f4-4f3751d50d93
-ms.openlocfilehash: f80ce5dc82dd2baeefe3410a488a5fefda0e9bf0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 9a178bfa55f8efeb11a3265ab8aa14a5418d7516
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80211098"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287584"
 ---
 # <a name="debugging-your-provider"></a>Отладка поставщика
 
@@ -20,7 +21,7 @@ ms.locfileid: "80211098"
 
 - Так как поставщики создаются в процессе, можно создать некоторый код потребителя, используя шаблоны OLE DB потребителей, и в обычном режиме перейти к поставщику.
 
-- Вы можете использовать различные служебные программы, которые C++входят в состав Visual.
+- Вы можете использовать различные служебные программы, которые входят в состав Visual C++.
 
 ## <a name="to-use-debugging"></a>Использование отладки
 

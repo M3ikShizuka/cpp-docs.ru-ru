@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _set_fmode'
 title: _set_fmode
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - file translation [C++], setting mode
 - set_fmode function
 ms.assetid: f80eb9c7-733b-4652-a9bc-6b3790a35f12
-ms.openlocfilehash: 6d72baeecefb117f0d7b8258728ec299a31f710a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8f33a0024ad2746974440166f564f8dd41756de5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913043"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97288793"
 ---
 # <a name="_set_fmode"></a>_set_fmode
 
@@ -58,7 +59,7 @@ errno_t _set_fmode(
 
 Возвращает нуль в случае успеха или код ошибки в случае ошибки. Если *режим* не **_O_TEXT** или **_O_BINARY** или **_O_WTEXT**, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эта функция **устанавливает** **Еинвал** и возвращает **еинвал**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция задает глобальную переменную [_fmode](../../c-runtime-library/fmode.md). Эта переменная задает режим преобразования файла по умолчанию для операций файлового ввода-вывода **_open** и **_pipe**.
 

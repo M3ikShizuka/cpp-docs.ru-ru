@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CXMLAccessor Class'
 title: Класс CXMLAccessor
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - GetXMLColumnData method
 - GetXMLRowData method
 ms.assetid: c88c082c-ec2f-4351-8947-a330b15e448a
-ms.openlocfilehash: 36419e85554982d1c3784d0d73663b48cc820b6d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 30725f47add9f9b965fe36226a366342988275e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845631"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97287701"
 ---
 # <a name="cxmlaccessor-class"></a>Класс CXMLAccessor
 
@@ -50,7 +51,7 @@ class CXMLAccessor : public CDynamicStringAccessorW
 |[жетксмлколумндата](#getxmlcolumndata)|Извлекает сведения о столбце.|
 |[жетксмлровдата](#getxmlrowdata)|Извлекает все содержимое таблицы по строкам.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Однако `CXMLAccessor` отличается от `CDynamicStringAccessorW` в том, что он преобразует все данные, доступ к которым осуществлялся из хранилища данных, в формате XML (с тегами). Это особенно удобно для вывода на веб-страницы, поддерживающие XML. Имена XML-тегов будут соответствовать именам столбцов хранилища данных как можно точнее.
 
@@ -81,7 +82,7 @@ HRESULT GetXMLColumnData(CSimpleStringW& strOutput) throw();
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Ниже показано, как в XML форматируется информация о типе столбца. `type` Указывает тип данных столбца. Обратите внимание, что типы данных основаны OLE DB типах данных, а не к базе данных, к которой осуществляется доступ.
 
@@ -114,7 +115,7 @@ HRESULT GetXMLRowData(CSimpleStringW& strOutput,
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Ниже показано, как данные строки форматируются в формате XML. `DATA` Ниже представлены данные строки. Используйте методы Move для перехода к нужной строке.
 
