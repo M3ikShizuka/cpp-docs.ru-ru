@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: COleServerItem Class'
 title: Класс COleServerItem
 ms.date: 11/04/2016
 f1_keywords:
@@ -74,12 +75,12 @@ helpviewer_keywords:
 - COleServerItem [MFC], OnShow
 - COleServerItem [MFC], m_sizeExtent
 ms.assetid: 80256df6-3888-4256-944b-787d4b2e6b0d
-ms.openlocfilehash: 6131dceb314edff9f8208865e374cac349c7f1ce
-ms.sourcegitcommit: 13f42c339fb7af935e3a93ac80e350d5e784c9f1
+ms.openlocfilehash: 30f99e6ee62406b47a493781586d8ed8b11a60b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87470983"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97226653"
 ---
 # <a name="coleserveritem-class"></a>Класс COleServerItem
 
@@ -91,7 +92,7 @@ ms.locfileid: "87470983"
 class COleServerItem : public CDocItem
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="protected-constructors"></a>Защищенные конструкторы
 
@@ -171,7 +172,7 @@ class COleServerItem : public CDocItem
 
 **Заголовок:** афксоле. h
 
-## <a name="coleserveritemaddotherclipboarddata"></a><a name="addotherclipboarddata"></a>COleServerItem:: Аддосерклипбоарддата
+## <a name="coleserveritemaddotherclipboarddata"></a><a name="addotherclipboarddata"></a> COleServerItem:: Аддосерклипбоарддата
 
 Вызовите эту функцию, чтобы разместить представления и форматы преобразования для элемента OLE в указанном `COleDataSource` объекте.
 
@@ -188,7 +189,7 @@ void AddOtherClipboardData(COleDataSource* pDataSource);
 
 Необходимо реализовать функцию-член [OnDraw](#ondraw) , чтобы предоставить формат представления (изображение метафайла) для элемента. Для поддержки других форматов преобразования зарегистрируйте их с помощью объекта [COleDataSource](../../mfc/reference/coledatasource-class.md) , возвращаемого методом GetObject [, и](#getdatasource) переопределите функцию члена [онрендердата](#onrenderdata) , чтобы предоставить данные в форматах, которые требуется поддерживать.
 
-## <a name="coleserveritemcoleserveritem"></a><a name="coleserveritem"></a>COleServerItem:: COleServerItem
+## <a name="coleserveritemcoleserveritem"></a><a name="coleserveritem"></a> COleServerItem:: COleServerItem
 
 Создает `COleServerItem` объект и добавляет его в коллекцию элементов документа серверного документа.
 
@@ -206,7 +207,7 @@ COleServerItem(
 *баутоделете*<br/>
 Флаг, указывающий, можно ли удалить объект при освобождении ссылки на него. Установите значение FALSE, если `COleServerItem` объект является неотъемлемой частью данных документа, которые необходимо удалить. Задайте значение TRUE, если объект является вторичной структурой, используемой для обнаружения диапазона в данных документа, который может быть удален платформой.
 
-## <a name="coleserveritemcopytoclipboard"></a><a name="copytoclipboard"></a>COleServerItem:: Копитоклипбоард
+## <a name="coleserveritemcopytoclipboard"></a><a name="copytoclipboard"></a> COleServerItem:: Копитоклипбоард
 
 Вызовите эту функцию, чтобы скопировать элемент OLE в буфер обмена.
 
@@ -223,7 +224,7 @@ void CopyToClipboard(BOOL bIncludeLink = FALSE);
 
 Функция-член [онжетклипбоарддата](#ongetclipboarddata) используется для создания объекта [COleDataSource](../../mfc/reference/coledatasource-class.md) , содержащего данные OLE-элемента в поддерживаемых форматах. Затем функция помещает `COleDataSource` объект в буфер обмена с помощью функции [COleDataSource:: сетклипбоард](../../mfc/reference/coledatasource-class.md#setclipboard) . `COleDataSource`Объект включает в себя собственные данные элемента и его представление в CF_METAFILEPICT формате, а также данные в любых поддерживаемых форматах преобразования. Для работы этой функции члена необходимо реализовать [сериализацию](../../mfc/reference/cobject-class.md#serialize) и [OnDraw](#ondraw) .
 
-## <a name="coleserveritemdodragdrop"></a><a name="dodragdrop"></a>COleServerItem::D Одрагдроп
+## <a name="coleserveritemdodragdrop"></a><a name="dodragdrop"></a> COleServerItem::D Одрагдроп
 
 Вызовите `DoDragDrop` функцию-член для выполнения операции перетаскивания.
 
@@ -271,7 +272,7 @@ DROPEFFECT DoDragDrop(
 
 Дополнительные сведения о том, как данные задержки перетаскивания хранятся в реестре или в. INI-файла см. в разделе [вритепрофилестринг](/windows/win32/api/winbase/nf-winbase-writeprofilestringw) в Windows SDK.
 
-## <a name="coleserveritemgetclipboarddata"></a><a name="getclipboarddata"></a>COleServerItem:: Жетклипбоарддата
+## <a name="coleserveritemgetclipboarddata"></a><a name="getclipboarddata"></a> COleServerItem:: Жетклипбоарддата
 
 Вызывайте эту функцию для заполнения указанного объекта [COleDataSource](../../mfc/reference/coledatasource-class.md) всеми данными, которые будут скопированы в буфер обмена, если вы вызвали [копитоклипбоард](#copytoclipboard) (одни и те же данные будут передаваться при вызове [DoDragDrop](#dodragdrop)).
 
@@ -303,7 +304,7 @@ void GetClipboardData(
 
 Переопределите эту функцию, если требуется поместить форматы в `COleDataSource` объект до или после этих форматов, предоставляемых `CopyToClipboard` .
 
-## <a name="coleserveritemgetdatasource"></a><a name="getdatasource"></a>COleServerItem:: DataSource
+## <a name="coleserveritemgetdatasource"></a><a name="getdatasource"></a> COleServerItem:: DataSource
 
 Вызовите эту функцию, чтобы получить объект [COleDataSource](../../mfc/reference/coledatasource-class.md) , используемый для хранения форматов преобразования, поддерживаемых серверным приложением.
 
@@ -319,7 +320,7 @@ COleDataSource* GetDataSource();
 
 Если вы хотите, чтобы серверное приложение предлагало данные в различных форматах во время операций обмена данными, зарегистрируйте эти форматы с помощью `COleDataSource` объекта, возвращаемого этой функцией. Например, если необходимо предоставить CF_TEXT представление OLE-элемента для буфера обмена или операций перетаскивания, можно зарегистрировать формат с `COleDataSource` объектом, который возвращает эта функция, а затем переопределить `OnRenderXxxData` функцию-член для предоставления данных.
 
-## <a name="coleserveritemgetdocument"></a><a name="getdocument"></a>COleServerItem:: a Document
+## <a name="coleserveritemgetdocument"></a><a name="getdocument"></a> COleServerItem:: a Document
 
 Вызовите эту функцию, чтобы получить указатель на документ, содержащий элемент.
 
@@ -335,7 +336,7 @@ COleServerDoc* GetDocument() const;
 
 Это позволяет получить доступ к серверному документу, переданному в качестве аргумента в `COleServerItem` конструктор.
 
-## <a name="coleserveritemgetembedsourcedata"></a><a name="getembedsourcedata"></a>COleServerItem:: Жетембедсаурцедата
+## <a name="coleserveritemgetembedsourcedata"></a><a name="getembedsourcedata"></a> COleServerItem:: Жетембедсаурцедата
 
 Вызовите эту функцию, чтобы получить данные CF_EMBEDSOURCE для объекта OLE.
 
@@ -356,7 +357,7 @@ void GetEmbedSourceData(LPSTGMEDIUM lpStgMedium);
 
 Дополнительные сведения см. в разделе [стгмедиум](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) в Windows SDK.
 
-## <a name="coleserveritemgetitemname"></a><a name="getitemname"></a>COleServerItem:: Жетитемнаме
+## <a name="coleserveritemgetitemname"></a><a name="getitemname"></a> COleServerItem:: Жетитемнаме
 
 Вызовите эту функцию, чтобы получить имя элемента.
 
@@ -372,7 +373,7 @@ const CString& GetItemName() const;
 
 Обычно эта функция вызывается только для связанных элементов.
 
-## <a name="coleserveritemgetlinksourcedata"></a><a name="getlinksourcedata"></a>COleServerItem:: Жетлинксаурцедата
+## <a name="coleserveritemgetlinksourcedata"></a><a name="getlinksourcedata"></a> COleServerItem:: Жетлинксаурцедата
 
 Вызовите эту функцию, чтобы получить данные CF_LINKSOURCE для объекта OLE.
 
@@ -397,7 +398,7 @@ BOOL GetLinkSourceData(LPSTGMEDIUM lpStgMedium);
 
 Дополнительные сведения см. в разделе [стгмедиум](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) в Windows SDK.
 
-## <a name="coleserveritemgetobjectdescriptordata"></a><a name="getobjectdescriptordata"></a>COleServerItem:: Жетобжектдескриптордата
+## <a name="coleserveritemgetobjectdescriptordata"></a><a name="getobjectdescriptordata"></a> COleServerItem:: Жетобжектдескриптордата
 
 Вызовите эту функцию, чтобы получить данные CF_OBJECTDESCRIPTOR для объекта OLE.
 
@@ -425,7 +426,7 @@ void GetObjectDescriptorData(
 
 Дополнительные сведения см. в разделе [стгмедиум](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) в Windows SDK.
 
-## <a name="coleserveritemisconnected"></a><a name="isconnected"></a>COleServerItem:: a Connected
+## <a name="coleserveritemisconnected"></a><a name="isconnected"></a> COleServerItem:: a Connected
 
 Вызовите эту функцию, чтобы проверить, подключен ли элемент OLE.
 
@@ -441,7 +442,7 @@ BOOL IsConnected() const;
 
 Элемент OLE считается подключенным, если один или несколько контейнеров имеют ссылки на этот элемент. Элемент подключается, если его счетчик ссылок больше 0 или если это внедренный элемент.
 
-## <a name="coleserveritemislinkeditem"></a><a name="islinkeditem"></a>COleServerItem:: Ислинкедитем
+## <a name="coleserveritemislinkeditem"></a><a name="islinkeditem"></a> COleServerItem:: Ислинкедитем
 
 Вызовите эту функцию, чтобы определить, является ли элемент OLE связанным элементом.
 
@@ -457,9 +458,9 @@ BOOL IsLinkedItem() const;
 
 Элемент связан, если элемент является допустимым и не возвращается в списке внедренных элементов документа. Связанный элемент может быть подключен к контейнеру или не подключаться к нему.
 
-Обычно один и тот же класс используется как для связанных, так и для внедренных элементов. `IsLinkedItem`позволяет выполнять поведение связанных элементов не так, как внедренные элементы, хотя многие из них являются общими.
+Обычно один и тот же класс используется как для связанных, так и для внедренных элементов. `IsLinkedItem` позволяет выполнять поведение связанных элементов не так, как внедренные элементы, хотя многие из них являются общими.
 
-## <a name="coleserveritemm_sizeextent"></a><a name="m_sizeextent"></a>COleServerItem:: m_sizeExtent
+## <a name="coleserveritemm_sizeextent"></a><a name="m_sizeextent"></a> COleServerItem:: m_sizeExtent
 
 Этот член сообщает серверу, какая часть объекта отображается в документе-контейнере.
 
@@ -471,7 +472,7 @@ CSize m_sizeExtent;
 
 Реализация [онсетекстент](#onsetextent) по умолчанию задает этот элемент.
 
-## <a name="coleserveritemnotifychanged"></a><a name="notifychanged"></a>COleServerItem:: Нотифичанжед
+## <a name="coleserveritemnotifychanged"></a><a name="notifychanged"></a> COleServerItem:: Нотифичанжед
 
 Вызовите эту функцию после изменения связанного элемента.
 
@@ -496,7 +497,7 @@ void NotifyChanged(DVASPECT nDrawAspect = DVASPECT_CONTENT);
 
 Если элемент контейнера связан с документом с автоматическим связыванием, элемент обновляется для отражения изменений. В приложениях-контейнерах, написанных с помощью библиотека Microsoft Foundation Class, в ответе вызывается [COleClientItem:: OnChange](../../mfc/reference/coleclientitem-class.md#onchange) .
 
-## <a name="coleserveritemondoverb"></a><a name="ondoverb"></a>COleServerItem:: Ондоверб
+## <a name="coleserveritemondoverb"></a><a name="ondoverb"></a> COleServerItem:: Ондоверб
 
 Вызывается платформой для выполнения указанной команды.
 
@@ -527,7 +528,7 @@ virtual void OnDoVerb(LONG iVerb);
 
 Дополнительные сведения см. в разделе [иолеобжект::D оверб](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) в Windows SDK.
 
-## <a name="coleserveritemondraw"></a><a name="ondraw"></a>COleServerItem:: OnDraw
+## <a name="coleserveritemondraw"></a><a name="ondraw"></a> COleServerItem:: OnDraw
 
 Вызывается платформой для отрисовки элемента OLE в метафайл.
 
@@ -553,7 +554,7 @@ virtual BOOL OnDraw(
 
 Представление метафайла элемента OLE используется для отображения элемента в контейнерном приложении. Если приложение-контейнер было написано с библиотека Microsoft Foundation Class, то этот метафайл используется функцией-членом [Draw](../../mfc/reference/coleclientitem-class.md#draw) соответствующего объекта [COleClientItem](../../mfc/reference/coleclientitem-class.md) . Реализация по умолчанию отсутствует. Эта функция должна быть переопределена для отрисовки элемента в указанном контексте устройства.
 
-## <a name="coleserveritemondrawex"></a><a name="ondrawex"></a>COleServerItem:: OnDrawEx
+## <a name="coleserveritemondrawex"></a><a name="ondrawex"></a> COleServerItem:: OnDrawEx
 
 Вызывается платформой для всех рисунков.
 
@@ -593,7 +594,7 @@ virtual BOOL OnDrawEx(
 
 Переопределите эту функцию, чтобы предоставить данные представления для других аспектов, кроме DVASPECT_CONTENT, таких как DVASPECT_ICON или DVASPECT_THUMBNAIL.
 
-## <a name="coleserveritemongetclipboarddata"></a><a name="ongetclipboarddata"></a>COleServerItem:: Онжетклипбоарддата
+## <a name="coleserveritemongetclipboarddata"></a><a name="ongetclipboarddata"></a> COleServerItem:: Онжетклипбоарддата
 
 Вызвано платформой для получения `COleDataSource` объекта, содержащего все данные, которые будут помещены в буфер обмена путем вызова функции-члена [копитоклипбоард](#copytoclipboard) .
 
@@ -623,7 +624,7 @@ virtual COleDataSource* OnGetClipboardData(
 
 Реализация по умолчанию этой функции вызывает [жетклипбоарддата](#getclipboarddata).
 
-## <a name="coleserveritemongetextent"></a><a name="ongetextent"></a>COleServerItem:: OnGetExtent
+## <a name="coleserveritemongetextent"></a><a name="ongetextent"></a> COleServerItem:: OnGetExtent
 
 Вызвано платформой для получения размера (в единицах HIMETRIC) элемента OLE.
 
@@ -657,7 +658,7 @@ virtual BOOL OnGetExtent(
 
 Если приложение-контейнер было написано с библиотека Microsoft Foundation Class, эта функция вызывается при вызове функции [-члена](../../mfc/reference/coleclientitem-class.md#getextent) `COleClientItem` GetObject соответствующего объекта. Реализация по умолчанию не выполняет никаких действий. Его необходимо реализовать самостоятельно. Переопределите эту функцию, если требуется выполнить специальную обработку при обработке запроса на размер элемента OLE.
 
-## <a name="coleserveritemonhide"></a><a name="onhide"></a>COleServerItem:: onHide
+## <a name="coleserveritemonhide"></a><a name="onhide"></a> COleServerItem:: onHide
 
 Вызывается платформой для скрытия элемента OLE.
 
@@ -669,7 +670,7 @@ virtual void OnHide();
 
 Вызовы по умолчанию `COleServerDoc::OnShowDocument( FALSE )` . Функция также уведомляет контейнер о том, что элемент OLE был скрыт. Переопределите эту функцию, если требуется выполнить специальную обработку при скрытии элемента OLE.
 
-## <a name="coleserveritemoninitfromdata"></a><a name="oninitfromdata"></a>COleServerItem:: Онинитфромдата
+## <a name="coleserveritemoninitfromdata"></a><a name="oninitfromdata"></a> COleServerItem:: Онинитфромдата
 
 Вызывается платформой для инициализации элемента OLE с помощью содержимого *pDataObject*.
 
@@ -697,7 +698,7 @@ virtual BOOL OnInitFromData(
 
 Дополнительные сведения см. в разделе [иолеобжект:: инитфромдата](/windows/win32/api/oleidl/nf-oleidl-ioleobject-initfromdata) в Windows SDK.
 
-## <a name="coleserveritemonopen"></a><a name="onopen"></a>COleServerItem:: OnOpen
+## <a name="coleserveritemonopen"></a><a name="onopen"></a> COleServerItem:: OnOpen
 
 Вызывается платформой для вывода элемента OLE в отдельном экземпляре серверного приложения, а не на месте.
 
@@ -713,7 +714,7 @@ virtual void OnOpen();
 
 Дополнительные сведения см. в разделе [иолеклиентсите:: оншоввиндов](/windows/win32/api/oleidl/nf-oleidl-ioleclientsite-onshowwindow) в Windows SDK.
 
-## <a name="coleserveritemonqueryupdateitems"></a><a name="onqueryupdateitems"></a>COleServerItem:: Онкуерюпдатеитемс
+## <a name="coleserveritemonqueryupdateitems"></a><a name="onqueryupdateitems"></a> COleServerItem:: Онкуерюпдатеитемс
 
 Вызывается платформой для определения, устарели ли все связанные элементы в текущем серверном документе.
 
@@ -729,7 +730,7 @@ virtual BOOL OnQueryUpdateItems();
 
 Элемент устарел, если его исходный документ был изменен, но связанный элемент не был обновлен для отражения изменений в документе.
 
-## <a name="coleserveritemonrenderdata"></a><a name="onrenderdata"></a>COleServerItem:: Онрендердата
+## <a name="coleserveritemonrenderdata"></a><a name="onrenderdata"></a> COleServerItem:: Онрендердата
 
 Вызывается платформой для получения данных в указанном формате.
 
@@ -761,7 +762,7 @@ virtual BOOL OnRenderData(
 
 Дополнительные сведения см. в разделе [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata), [стгмедиум](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1), [форматетк](/windows/win32/api/objidl/ns-objidl-formatetc)и [тимед](/windows/win32/api/objidl/ne-objidl-tymed) в Windows SDK.
 
-## <a name="coleserveritemonrenderfiledata"></a><a name="onrenderfiledata"></a>COleServerItem:: Онрендерфиледата
+## <a name="coleserveritemonrenderfiledata"></a><a name="onrenderfiledata"></a> COleServerItem:: Онрендерфиледата
 
 Вызывается платформой для получения данных в указанном формате, когда среда хранения представляет собой файл.
 
@@ -791,7 +792,7 @@ virtual BOOL OnRenderFileData(
 
 Дополнительные сведения см. в разделе [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) и [форматетк](/windows/win32/api/objidl/ns-objidl-formatetc) в Windows SDK.
 
-## <a name="coleserveritemonrenderglobaldata"></a><a name="onrenderglobaldata"></a>COleServerItem:: Онрендерглобалдата
+## <a name="coleserveritemonrenderglobaldata"></a><a name="onrenderglobaldata"></a> COleServerItem:: Онрендерглобалдата
 
 Вызывается платформой для получения данных в указанном формате, если указанный носитель является глобальной памятью.
 
@@ -823,7 +824,7 @@ virtual BOOL OnRenderGlobalData(
 
 Дополнительные сведения см. в разделе [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) и [форматетк](/windows/win32/api/objidl/ns-objidl-formatetc) в Windows SDK.
 
-## <a name="coleserveritemonsetcolorscheme"></a><a name="onsetcolorscheme"></a>COleServerItem:: Онсетколорсчеме
+## <a name="coleserveritemonsetcolorscheme"></a><a name="onsetcolorscheme"></a> COleServerItem:: Онсетколорсчеме
 
 Вызывается платформой для указания цветовой палитры, используемой при редактировании элемента OLE.
 
@@ -846,7 +847,7 @@ virtual BOOL OnSetColorScheme(const LOGPALETTE* lpLogPalette);
 
 Дополнительные сведения см. в разделе [иолеобжект:: сетколорсчеме](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setcolorscheme) в Windows SDK.
 
-## <a name="coleserveritemonsetdata"></a><a name="onsetdata"></a>COleServerItem:: Онсетдата
+## <a name="coleserveritemonsetdata"></a><a name="onsetdata"></a> COleServerItem:: Онсетдата
 
 Вызывается платформой для замены данных объекта OLE указанными данными.
 
@@ -880,7 +881,7 @@ virtual BOOL OnSetData(
 
 Дополнительные сведения см. в разделе [стгмедиум](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1), [форматетк](/windows/win32/api/objidl/ns-objidl-formatetc)и [релеасестгмедиум](/windows/win32/api/ole2/nf-ole2-releasestgmedium) в Windows SDK.
 
-## <a name="coleserveritemonsetextent"></a><a name="onsetextent"></a>COleServerItem:: Онсетекстент
+## <a name="coleserveritemonsetextent"></a><a name="onsetextent"></a> COleServerItem:: Онсетекстент
 
 Вызывается платформой, чтобы сообщить элементу OLE о том, сколько места доступно для него в документе-контейнере.
 
@@ -914,7 +915,7 @@ virtual BOOL OnSetExtent(
 
 Если приложение-контейнер было написано с библиотека Microsoft Foundation Class, эта функция вызывается при вызове функции-члена [сетекстент](../../mfc/reference/coleclientitem-class.md#setextent) соответствующего `COleClientItem` объекта. Реализация по умолчанию устанавливает [m_sizeExtent](#m_sizeextent) элемент на указанный размер, если *ндраваспект* имеет DVASPECT_CONTENT. в противном случае возвращается значение 0. Переопределите эту функцию для выполнения особой обработки при изменении размера элемента.
 
-## <a name="coleserveritemonshow"></a><a name="onshow"></a>COleServerItem:: onShow
+## <a name="coleserveritemonshow"></a><a name="onshow"></a> COleServerItem:: onShow
 
 Вызывается платформой для указания серверному приложению отображать элемент OLE на месте.
 
@@ -928,7 +929,7 @@ virtual void OnShow();
 
 Переопределите эту функцию, если требуется выполнить специальную обработку при отображении элемента OLE.
 
-## <a name="coleserveritemonupdate"></a><a name="onupdate"></a>COleServerItem:: OnUpdate
+## <a name="coleserveritemonupdate"></a><a name="onupdate"></a> COleServerItem:: OnUpdate
 
 Вызывается платформой при изменении элемента.
 
@@ -966,7 +967,7 @@ virtual void OnUpdate(
 
 Реализация по умолчанию вызывает [нотифичанжед](#notifychanged), независимо от подсказок или отправителя.
 
-## <a name="coleserveritemonupdateitems"></a><a name="onupdateitems"></a>COleServerItem:: Онупдатеитемс
+## <a name="coleserveritemonupdateitems"></a><a name="onupdateitems"></a> COleServerItem:: Онупдатеитемс
 
 Вызывается платформой для обновления всех элементов в документе сервера.
 
@@ -978,7 +979,7 @@ virtual void OnUpdateItems();
 
 Реализация по умолчанию вызывает [упдателинк](../../mfc/reference/coleclientitem-class.md#updatelink) для всех `COleClientItem` объектов в документе.
 
-## <a name="coleserveritemsetitemname"></a><a name="setitemname"></a>COleServerItem:: Сетитемнаме
+## <a name="coleserveritemsetitemname"></a><a name="setitemname"></a> COleServerItem:: Сетитемнаме
 
 Вызывайте эту функцию при создании связанного элемента, чтобы задать его имя.
 
@@ -995,7 +996,7 @@ void SetItemName(LPCTSTR lpszItemName);
 
 Имя должно быть уникальным в пределах документа. При вызове серверного приложения для изменения связанного элемента приложение использует это имя для поиска элемента. Вам не нужно вызывать эту функцию для внедренных элементов.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Пример MFC для примера HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [Класс КдоЦитем](../../mfc/reference/cdocitem-class.md)<br/>

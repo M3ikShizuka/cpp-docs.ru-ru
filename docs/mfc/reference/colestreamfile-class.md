@@ -1,5 +1,6 @@
 ---
-title: Класс ColeStreamFile
+description: 'Дополнительные сведения о: Колестреамфиле Class'
+title: Класс Колестреамфиле
 ms.date: 11/04/2016
 f1_keywords:
 - COleStreamFile
@@ -20,14 +21,14 @@ helpviewer_keywords:
 - COleStreamFile [MFC], GetStream
 - COleStreamFile [MFC], OpenStream
 ms.assetid: e4f93698-e17c-4a18-a7c0-4b4df8eb4d93
-ms.openlocfilehash: 202f8381361881ce3b8b62f81da5bfb81a1f952d
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: b856dc5b408c43f61a11f7c68035587bc16bbeaa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753756"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97226640"
 ---
-# <a name="colestreamfile-class"></a>Класс ColeStreamFile
+# <a name="colestreamfile-class"></a>Класс Колестреамфиле
 
 Представляет поток данных (`IStream`) в составном файле как часть структурированного хранения OLE.
 
@@ -37,34 +38,34 @@ ms.locfileid: "81753756"
 class COleStreamFile : public CFile
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[ColeStreamFile::COleStreamFile](#colestreamfile)|Формирует объект `COleStreamFile`.|
+|[Колестреамфиле:: Колестреамфиле](#colestreamfile)|Формирует объект `COleStreamFile`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[ColeStreamFile::Attach](#attach)|Связывает поток с объектом.|
-|[ColeStreamFile::CreateMemoryStream](#creatememorystream)|Создает поток из глобальной памяти и связывает его с объектом.|
-|[ColeStreamFile::CreateStream](#createstream)|Создает поток и связывает его с объектом.|
-|[ColeStreamFile::Detach](#detach)|Отсажает поток от объекта.|
-|[ColeStreamFile::GetStream](#getstream)|Возвращает текущий поток.|
-|[ColeStreamFile::OpenStream](#openstream)|Безопасно открывает поток и связывает его с объектом.|
+|[Колестреамфиле:: Attach](#attach)|Связывает поток с объектом.|
+|[Колестреамфиле:: Креатемемористреам](#creatememorystream)|Создает поток из глобальной памяти и связывает его с объектом.|
+|[Колестреамфиле:: Креатестреам](#createstream)|Создает поток и связывает его с объектом.|
+|[Колестреамфиле::D етач](#detach)|Отменяет связь потока от объекта.|
+|[Колестреамфиле:: Stream](#getstream)|Возвращает текущий поток.|
+|[Колестреамфиле:: Опенстреам](#openstream)|Безопасно открывает поток и связывает его с объектом.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Объект `IStorage` должен существовать до того, как поток может быть открыт или создан, если он не является потоком памяти.
+`IStorage`Объект должен существовать, прежде чем можно будет открыть или создать поток, если он не является потоком памяти.
 
-`COleStreamFile`объектами манипулируют точно так же, как объекты [CFile.](../../mfc/reference/cfile-class.md)
+`COleStreamFile` объекты обрабатываются точно так же, как объекты [кфиле](../../mfc/reference/cfile-class.md) .
 
-Для получения дополнительной информации об манипулировании [Containers: Compound Files](../../mfc/containers-compound-files.md)потоками и хранилищами, см.
+Дополнительные сведения об управлении потоками и хранилищами см. в разделе [контейнеры статей: составные файлы](../../mfc/containers-compound-files.md).
 
-Для получения дополнительной информации [IStorage](/windows/win32/api/objidl/nn-objidl-istorage) [см.](/windows/win32/api/objidl/nn-objidl-istream)
+Дополнительные сведения см. в разделе [IStream](/windows/win32/api/objidl/nn-objidl-istream) и [IStorage](/windows/win32/api/objidl/nn-objidl-istorage) в Windows SDK.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -76,11 +77,11 @@ class COleStreamFile : public CFile
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxole.h
+**Заголовок:** афксоле. h
 
-## <a name="colestreamfileattach"></a><a name="attach"></a>ColeStreamFile::Attach
+## <a name="colestreamfileattach"></a><a name="attach"></a> Колестреамфиле:: Attach
 
-Ассоциирует поставляемый поток OLE с объектом. `COleStreamFile`
+Связывает переданный поток OLE с `COleStreamFile` объектом.
 
 ```cpp
 void Attach(LPSTREAM lpStream);
@@ -88,16 +89,16 @@ void Attach(LPSTREAM lpStream);
 
 ### <a name="parameters"></a>Параметры
 
-*lpStream*<br/>
-Очки к потоку`IStream`OLE (), чтобы быть связанным с объектом. Не может быть NULL.
+*лпстреам*<br/>
+Указывает на поток OLE ( `IStream` ), который должен быть связан с объектом. Не может быть NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Объект уже не должен быть связан с потоком OLE.
+Объект не должен быть уже связан с потоком OLE.
 
-Для получения дополнительной [IStream](/windows/win32/api/objidl/nn-objidl-istream) информации см.
+Дополнительные сведения см. в разделе [IStream](/windows/win32/api/objidl/nn-objidl-istream) в Windows SDK.
 
-## <a name="colestreamfilecolestreamfile"></a><a name="colestreamfile"></a>ColeStreamFile::COleStreamFile
+## <a name="colestreamfilecolestreamfile"></a><a name="colestreamfile"></a> Колестреамфиле:: Колестреамфиле
 
 Создает объект `COleStreamFile`.
 
@@ -107,18 +108,18 @@ COleStreamFile(LPSTREAM lpStream = NULL);
 
 ### <a name="parameters"></a>Параметры
 
-*lpStream*<br/>
-Указатель на поток OLE, связанный с объектом.
+*лпстреам*<br/>
+Указатель на поток OLE, который должен быть связан с объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если *lpStream* является NULL, объект не связан с потоком OLE, в противном случае, объект связан с поставляемым потоком OLE.
+Если *лпстреам* имеет значение null, объект не связан с потоком OLE, в противном случае объект связывается с предоставляемым потоком OLE.
 
-Для получения дополнительной [IStream](/windows/win32/api/objidl/nn-objidl-istream) информации см.
+Дополнительные сведения см. в разделе [IStream](/windows/win32/api/objidl/nn-objidl-istream) в Windows SDK.
 
-## <a name="colestreamfilecreatememorystream"></a><a name="creatememorystream"></a>ColeStreamFile::CreateMemoryStream
+## <a name="colestreamfilecreatememorystream"></a><a name="creatememorystream"></a> Колестреамфиле:: Креатемемористреам
 
-Безопасно создает новый поток из глобальной, общей памяти, где сбой является нормальным, ожидаемым состоянием.
+Безопасно создает новый поток из глобальной общей памяти, в которой сбой является нормальным, ожидаемым условием.
 
 ```
 BOOL CreateMemoryStream(CFileException* pError = NULL);
@@ -126,22 +127,22 @@ BOOL CreateMemoryStream(CFileException* pError = NULL);
 
 ### <a name="parameters"></a>Параметры
 
-*pОшибка*<br/>
-Указывает на объект [CFileException](../../mfc/reference/cfileexception-class.md) или NULL, указывающий состояние завершения операции создания. Подавайте этот параметр, если вы хотите отслеживать возможные исключения, генерируемые попыткой создания потока.
+*pError*<br/>
+Указывает на объект [кфиликсцептион](../../mfc/reference/cfileexception-class.md) или значение null, указывающее состояние завершения операции создания. Укажите этот параметр, если требуется отслеживать возможные исключения, созданные при попытке создать поток.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если поток создан успешно; в противном случае 0.
+Ненулевое значение, если поток успешно создан; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Память выделяется подсистемой OLE.
 
-Для получения дополнительной информации смотрите [CreateStreamOnHGlobal](/windows/win32/api/combaseapi/nf-combaseapi-createstreamonhglobal) в Windows SDK.
+Дополнительные сведения см. в разделе [CreateStreamOnHGlobal](/windows/win32/api/combaseapi/nf-combaseapi-createstreamonhglobal) в Windows SDK.
 
-## <a name="colestreamfilecreatestream"></a><a name="createstream"></a>ColeStreamFile::CreateStream
+## <a name="colestreamfilecreatestream"></a><a name="createstream"></a> Колестреамфиле:: Креатестреам
 
-Безопасно создает новый поток в поставляемом объекте хранения, где сбой является нормальным, ожидаемым состоянием.
+Безопасно создает новый поток в указанном объекте хранилища, в котором сбой является нормальным ожидаемым условием.
 
 ```
 BOOL CreateStream(
@@ -153,31 +154,31 @@ BOOL CreateStream(
 
 ### <a name="parameters"></a>Параметры
 
-*lpStorage*<br/>
-Указывает на объект хранения OLE, содержащий создаваемый поток. Не может быть NULL.
+*лпстораже*<br/>
+Указывает на объект OLE Storage, содержащий создаваемый поток. Не может быть NULL.
 
-*lpszStreamName*<br/>
-Название создаваемого потока. Не может быть NULL.
+*лпсзстреамнаме*<br/>
+Имя создаваемого потока. Не может быть NULL.
 
-*nОткрытыефлаги*<br/>
-Режим доступа для использования при открытии потока. По умолчанию используются эксклюзивные, читаемые/записные режимы. Полный список доступных режимов можно найти в [CFile::CFile](../../mfc/reference/cfile-class.md#cfile).
+*нопенфлагс*<br/>
+Режим доступа для использования при открытии потока. По умолчанию используются монопольные режимы, доступные для чтения, записи и создания. Полный список доступных режимов см. в разделе [кфиле:: кфиле](../../mfc/reference/cfile-class.md#cfile).
 
-*pОшибка*<br/>
-Указывает на объект [CFileException](../../mfc/reference/cfileexception-class.md) или NULL. Подавайте этот параметр, если вы хотите отслеживать возможные исключения, генерируемые попыткой создания потока.
+*pError*<br/>
+Указывает на объект [кфиликсцептион](../../mfc/reference/cfileexception-class.md) или значение null. Укажите этот параметр, если требуется отслеживать возможные исключения, созданные при попытке создать поток.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если поток создан успешно; в противном случае 0.
+Ненулевое значение, если поток успешно создан; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Исключение файла будет брошено, если открытый сбой и *pError* не является NULL.
+Исключение файла будет выдано, если открытые ошибки и *perror* не равны NULL.
 
-Для получения дополнительной информации см. [IStorage::CreateStream](/windows/win32/api/objidl/nf-objidl-istorage-createstream) в Windows SDK.
+Дополнительные сведения см. в разделе [IStorage:: креатестреам](/windows/win32/api/objidl/nf-objidl-istorage-createstream) в Windows SDK.
 
-## <a name="colestreamfiledetach"></a><a name="detach"></a>ColeStreamFile::Detach
+## <a name="colestreamfiledetach"></a><a name="detach"></a> Колестреамфиле::D етач
 
-Отсажает поток от объекта, не закрывая поток.
+Отменяет связь потока от объекта, не закрывая поток.
 
 ```
 LPSTREAM Detach();
@@ -185,17 +186,17 @@ LPSTREAM Detach();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на поток`IStream`(), который был связан с объектом.
+Указатель на поток ( `IStream` ), связанный с объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Поток должен быть закрыт другим способом до завершения программы.
+Перед завершением программы поток должен быть закрыт другим способом.
 
-Для получения дополнительной [IStream](/windows/win32/api/objidl/nn-objidl-istream) информации см.
+Дополнительные сведения см. в разделе [IStream](/windows/win32/api/objidl/nn-objidl-istream) в Windows SDK.
 
-## <a name="colestreamfilegetstream"></a><a name="getstream"></a>ColeStreamFile::GetStream
+## <a name="colestreamfilegetstream"></a><a name="getstream"></a> Колестреамфиле:: Stream
 
-Вызовите эту функцию, чтобы вернуть указатель в текущий поток.
+Вызовите эту функцию, чтобы вернуть указатель на текущий поток.
 
 ```
 IStream* GetStream() const;
@@ -203,9 +204,9 @@ IStream* GetStream() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на текущий интерфейс потока [(IStream](/windows/win32/api/objidl/nn-objidl-istream)).
+Указатель на текущий интерфейс потока ( [IStream](/windows/win32/api/objidl/nn-objidl-istream)).
 
-## <a name="colestreamfileopenstream"></a><a name="openstream"></a>ColeStreamFile::OpenStream
+## <a name="colestreamfileopenstream"></a><a name="openstream"></a> Колестреамфиле:: Опенстреам
 
 Открывает существующий поток.
 
@@ -219,29 +220,29 @@ BOOL OpenStream(
 
 ### <a name="parameters"></a>Параметры
 
-*lpStorage*<br/>
-Точки на объект хранения OLE, содержащий поток, который будет открыт. Не может быть NULL.
+*лпстораже*<br/>
+Указывает на объект OLE Storage, который содержит открываемый поток. Не может быть NULL.
 
-*lpszStreamName*<br/>
-Название потока, который будет открыт. Не может быть NULL.
+*лпсзстреамнаме*<br/>
+Имя открываемого потока. Не может быть NULL.
 
-*nОткрытыефлаги*<br/>
-Режим доступа для использования при открытии потока. По умолчанию используются эксклюзивные режимы чтения/записи. Полный список доступных режимов можно найти в [CFile::CFile](../../mfc/reference/cfile-class.md#cfile).
+*нопенфлагс*<br/>
+Режим доступа для использования при открытии потока. Монопольный режим и режимы чтения и записи используются по умолчанию. Полный список доступных режимов см. в разделе [кфиле:: кфиле](../../mfc/reference/cfile-class.md#cfile).
 
-*pОшибка*<br/>
-Указывает на объект [CFileException](../../mfc/reference/cfileexception-class.md) или NULL. Подавайте этот параметр, если вы хотите отслеживать возможные исключения, генерируемые попыткой открыть поток.
+*pError*<br/>
+Указывает на объект [кфиликсцептион](../../mfc/reference/cfileexception-class.md) или значение null. Укажите этот параметр, если требуется отслеживать возможные исключения, созданные при попытке открыть поток.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если поток открыт успешно; в противном случае 0.
+Ненулевое значение, если поток открыт успешно. в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Исключение файла будет брошено, если открытый сбой и *pError* не является NULL.
+Исключение файла будет выдано, если открытые ошибки и *perror* не равны NULL.
 
-Для получения дополнительной информации см. [IStorage::OpenStream](/windows/win32/api/objidl/nf-objidl-istorage-openstream) в Windows SDK.
+Дополнительные сведения см. в разделе [IStorage:: опенстреам](/windows/win32/api/objidl/nf-objidl-istorage-openstream) в Windows SDK.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс CFile](../../mfc/reference/cfile-class.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)
+[Класс Кфиле](../../mfc/reference/cfile-class.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)

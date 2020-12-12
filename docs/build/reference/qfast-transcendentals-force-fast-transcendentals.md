@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/Qfast_transcendentals (принудительная Быстрая трансцендентные функции)
 title: /Qfast_transcendentals (принудительное использование быстрых трансцендентных функций)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - /Qfast_transcendentals
 - Force Fast Transcendentals
 ms.assetid: 4de24bd1-38e6-49d4-9a05-04c9937d24ac
-ms.openlocfilehash: 383a915721d627367ca2ca035957df947996bbe2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7701925aa7df33107b0829ade1c0c711eda14c08
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62319321"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225665"
 ---
-# <a name="qfasttranscendentals-force-fast-transcendentals"></a>/Qfast_transcendentals (принудительное использование быстрых трансцендентных функций)
+# <a name="qfast_transcendentals-force-fast-transcendentals"></a>/Qfast_transcendentals (принудительное использование быстрых трансцендентных функций)
 
-Создает встроенный код для трансцендентных функций.
+Создает встроенный код для функций трансцендентных.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -24,15 +25,15 @@ ms.locfileid: "62319321"
 /Qfast_transcendentals
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Этот параметр компилятора заставляет трансцендентных функций для преобразования в встроенного кода для повышения быстродействия. Этот параметр действует только в том случае, когда используется вместе с **/fp: except** или **/fp: точное**. Создание встроенного кода для трансцендентных функций уже поведение по умолчанию в разделе **/fp:fast**.
+Этот параметр компилятора принудительно преобразует функции трансцендентных в встроенный код для повышения скорости выполнения. Этот параметр действует только в том случае, если он связан с **/FP: except** или **/FP: точным**. Создание встроенного кода для функций трансцендентных уже является поведением по умолчанию в разделе **/FP: Fast**.
 
-Этот параметр несовместим с **/fp: strict**. См. в разделе [/fp (определение поведения с плавающей запятой)](fp-specify-floating-point-behavior.md) Дополнительные сведения о точке параметры компилятора.
+Этот параметр несовместим с **/FP: Option**. Дополнительные сведения о параметрах компилятора с плавающей точкой см. в разделе [/FP (Указание поведения Floating-Point)](fp-specify-floating-point-behavior.md) .
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Установка данного параметра компилятора в среде разработки Visual Studio
 
-1. Откройте диалоговое окно **Страницы свойств** проекта. Дополнительные сведения см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
 1. Откройте папку **C/C++** .
 
@@ -44,8 +45,8 @@ ms.locfileid: "62319321"
 
 - См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Параметры /Q (низкоуровневые операции)](q-options-low-level-operations.md)<br/>
+[Параметры/q (низкоуровневые операции)](q-options-low-level-operations.md)<br/>
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора MSVC](compiler-command-line-syntax.md)
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)
