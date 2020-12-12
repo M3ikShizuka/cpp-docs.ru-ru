@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: COleException Class'
 title: Класс COleException
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - COleException [MFC], Process
 - COleException [MFC], m_sc
 ms.assetid: 2571e9fe-26cc-42f0-9ad9-8ad5b4311ec1
-ms.openlocfilehash: c82099d816bc8ee8c179e9d4656f474156a629a9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cb11e9c285180c6e54701c210c5329714d7dccb0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233201"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227095"
 ---
 # <a name="coleexception-class"></a>Класс COleException
 
@@ -27,21 +28,21 @@ ms.locfileid: "87233201"
 class COleException : public CException
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[COleException::P шаблоны](#process)|Преобразует Перехваченное исключение в код возврата OLE.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[COleException:: m_sc](#m_sc)|Содержит код состояния, указывающий причину исключения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `COleException`Класс включает открытый элемент данных, содержащий код состояния, указывающий причину исключения.
 
@@ -61,7 +62,7 @@ class COleException : public CException
 
 **Заголовок:** afxdisp.h
 
-## <a name="coleexceptionm_sc"></a><a name="m_sc"></a>COleException:: m_sc
+## <a name="coleexceptionm_sc"></a><a name="m_sc"></a> COleException:: m_sc
 
 Этот элемент данных содержит код состояния OLE, указывающий причину исключения.
 
@@ -69,7 +70,7 @@ class COleException : public CException
 SCODE m_sc;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Значение этой переменной задается параметром [афкссроволиксцептион](exception-processing.md#afxthrowoleexception).
 
@@ -79,7 +80,7 @@ SCODE m_sc;
 
 [!code-cpp[NVC_MFCOleContainer#22](../../mfc/codesnippet/cpp/coleexception-class_1.cpp)]
 
-## <a name="coleexceptionprocess"></a><a name="process"></a>COleException::P шаблоны
+## <a name="coleexceptionprocess"></a><a name="process"></a> COleException::P шаблоны
 
 Вызовите функцию-член **Process** , чтобы перевести Перехваченное исключение в код состояния OLE.
 
@@ -96,7 +97,7 @@ static SCODE PASCAL Process(const CException* pAnyException);
 
 Код состояния OLE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 > [!NOTE]
 > Эта функция — **`static`** .
@@ -107,7 +108,7 @@ static SCODE PASCAL Process(const CException* pAnyException);
 
   См. пример для [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Пример CALCDRIV в MFC](../../overview/visual-cpp-samples.md)<br/>
 [Класс CException](../../mfc/reference/cexception-class.md)<br/>

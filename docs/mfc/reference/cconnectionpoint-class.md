@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кконнектионпоинт Class'
 title: Класс Кконнектионпоинт
 ms.date: 11/04/2016
 f1_keywords:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - CConnectionPoint [MFC], OnAdvise
 - CConnectionPoint [MFC], QuerySinkInterface
 ms.assetid: f0f23a1e-5e8c-41a9-aa6c-1a4793b28e8f
-ms.openlocfilehash: f428ec597e0e4a56788fae2455eff80b286fda39
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 62525428d8f9bf5303f379140837d75e53cbb387
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87183088"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227849"
 ---
 # <a name="cconnectionpoint-class"></a>Класс Кконнектионпоинт
 
@@ -41,11 +42,11 @@ ms.locfileid: "87183088"
 class CConnectionPoint : public CCmdTarget
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Кконнектионпоинт:: Кконнектионпоинт](#cconnectionpoint)|Формирует объект `CConnectionPoint`.|
 
@@ -62,7 +63,7 @@ class CConnectionPoint : public CCmdTarget
 |[Кконнектионпоинт:: onadvise](#onadvise)|Вызывается платформой при установке или разрыве соединений.|
 |[Кконнектионпоинт:: Куерисинкинтерфаце](#querysinkinterface)|Извлекает указатель на запрошенный интерфейс приемника.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 В отличие от обычных интерфейсов OLE, которые используются для реализации и предоставления функциональных возможностей элемента управления OLE, точка соединения реализует исходящий интерфейс, который может инициировать действия с другими объектами, такими как срабатывание событий и уведомления об изменениях.
 
@@ -102,7 +103,7 @@ class CConnectionPoint : public CCmdTarget
 
 **Заголовок:** afxdisp.h
 
-## <a name="cconnectionpointcconnectionpoint"></a><a name="cconnectionpoint"></a>Кконнектионпоинт:: Кконнектионпоинт
+## <a name="cconnectionpointcconnectionpoint"></a><a name="cconnectionpoint"></a> Кконнектионпоинт:: Кконнектионпоинт
 
 Формирует объект `CConnectionPoint`.
 
@@ -110,7 +111,7 @@ class CConnectionPoint : public CCmdTarget
 CConnectionPoint();
 ```
 
-## <a name="cconnectionpointgetconnections"></a><a name="getconnections"></a>Кконнектионпоинт:: соединений
+## <a name="cconnectionpointgetconnections"></a><a name="getconnections"></a> Кконнектионпоинт:: соединений
 
 Вызовите эту функцию, чтобы получить все активные соединения для точки подключения.
 
@@ -122,7 +123,7 @@ const CPtrArray* GetConnections();
 
 Указатель на массив активных соединений (приемников). Некоторые указатели в массиве могут иметь значение NULL. Каждый непустой указатель в этом массиве можно безопасно преобразовать в указатель на интерфейс приемника с помощью оператора приведения.
 
-## <a name="cconnectionpointgetcontainer"></a><a name="getcontainer"></a>Кконнектионпоинт:: Contain
+## <a name="cconnectionpointgetcontainer"></a><a name="getcontainer"></a> Кконнектионпоинт:: Contain
 
 Вызывается платформой для получения `IConnectionPointContainer` точки подключения.
 
@@ -134,11 +135,11 @@ virtual LPCONNECTIONPOINTCONTAINER GetContainer();
 
 В случае успеха указатель на контейнер; в противном случае — NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция обычно реализуется с помощью макроса BEGIN_CONNECTION_PART.
 
-## <a name="cconnectionpointgetiid"></a><a name="getiid"></a>Кконнектионпоинт:: Жетиид
+## <a name="cconnectionpointgetiid"></a><a name="getiid"></a> Кконнектионпоинт:: Жетиид
 
 Вызывается платформой для получения идентификатора интерфейса точки подключения.
 
@@ -150,11 +151,11 @@ virtual REFIID GetIID() = 0;
 
 Ссылка на идентификатор интерфейса точки подключения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите эту функцию, чтобы вернуть идентификатор интерфейса для этой точки подключения.
 
-## <a name="cconnectionpointgetmaxconnections"></a><a name="getmaxconnections"></a>Кконнектионпоинт:: GetMaxConnections
+## <a name="cconnectionpointgetmaxconnections"></a><a name="getmaxconnections"></a> Кконнектионпоинт:: GetMaxConnections
 
 Вызывается платформой для получения максимального числа соединений, поддерживаемых точкой подключения.
 
@@ -166,13 +167,13 @@ virtual int GetMaxConnections();
 
 Максимальное число подключений, поддерживаемое элементом управления, или значение-1, если ограничение отсутствует.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию возвращает значение-1, что означает отсутствие ограничения.
 
 Переопределите эту функцию, если требуется ограничить количество приемников, которые могут подключаться к элементу управления.
 
-## <a name="cconnectionpointgetnextconnection"></a><a name="getnextconnection"></a>Кконнектионпоинт:: Жетнекстконнектион
+## <a name="cconnectionpointgetnextconnection"></a><a name="getnextconnection"></a> Кконнектионпоинт:: Жетнекстконнектион
 
 Извлекает указатель на элемент Connection в *торговом терминале*.
 
@@ -189,7 +190,7 @@ LPUNKNOWN GetNextConnection(POSITION& pos) const;
 
 Указатель на элемент Connection, указанный в *POS*, или значение null.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция наиболее полезна для прохода по всем элементам в схеме соединения. При итерации пропустите все значения NULL, возвращенные этой функцией.
 
@@ -197,7 +198,7 @@ LPUNKNOWN GetNextConnection(POSITION& pos) const;
 
 [!code-cpp[NVC_MFCConnectionPoints#4](../../mfc/codesnippet/cpp/cconnectionpoint-class_3.cpp)]
 
-## <a name="cconnectionpointgetstartposition"></a><a name="getstartposition"></a>Кконнектионпоинт:: Жетстартпоситион
+## <a name="cconnectionpointgetstartposition"></a><a name="getstartposition"></a> Кконнектионпоинт:: Жетстартпоситион
 
 Запускает итерацию Map, возвращая значение расположения, которое может быть передано в вызов [жетнекстконнектион](#getnextconnection) .
 
@@ -209,7 +210,7 @@ POSITION GetStartPosition() const;
 
 Значение положения, указывающее начальную точку для прохода по карте; или значение NULL, если схема пуста.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Последовательность итераций не является прогнозируемой. Таким образом, «первый элемент на карте» не имеет особой значимости.
 
@@ -217,7 +218,7 @@ POSITION GetStartPosition() const;
 
   См. пример для [кконнектионпоинт:: жетнекстконнектион](#getnextconnection).
 
-## <a name="cconnectionpointonadvise"></a><a name="onadvise"></a>Кконнектионпоинт:: onadvise
+## <a name="cconnectionpointonadvise"></a><a name="onadvise"></a> Кконнектионпоинт:: onadvise
 
 Вызывается платформой при установке или разрыве соединения.
 
@@ -230,13 +231,13 @@ virtual void OnAdvise(BOOL bAdvise);
 *бадвисе*<br/>
 Значение TRUE, если соединение устанавливается. в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию не выполняет никаких действий.
 
 Переопределите эту функцию, если требуется уведомление, когда приемники подключаются к точке подключения или отключаются от нее.
 
-## <a name="cconnectionpointquerysinkinterface"></a><a name="querysinkinterface"></a>Кконнектионпоинт:: Куерисинкинтерфаце
+## <a name="cconnectionpointquerysinkinterface"></a><a name="querysinkinterface"></a> Кконнектионпоинт:: Куерисинкинтерфаце
 
 Извлекает указатель на запрошенный интерфейс приемника.
 

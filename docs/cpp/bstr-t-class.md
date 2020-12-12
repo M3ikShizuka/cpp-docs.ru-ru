@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: _bstr_t классе'
 title: Класс _bstr_t
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - _bstr_t class
 - BSTR object [C++], COM encapsulation
 ms.assetid: 58841fef-fe21-4a84-aab9-780262b5201f
-ms.openlocfilehash: f521681da10eeda3b8024b0865d5164021296353
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 562b8eb871ddcd63e7df70c84e61e80a5bf934b5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838715"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229409"
 ---
 # <a name="_bstr_t-class"></a>Класс _bstr_t
 

@@ -1,5 +1,6 @@
 ---
-title: Класс COleConvertДиалогДиалог
+description: 'Дополнительные сведения о: Колеконвертдиалог Class'
+title: Класс Колеконвертдиалог
 ms.date: 11/04/2016
 f1_keywords:
 - COleConvertDialog
@@ -22,16 +23,16 @@ helpviewer_keywords:
 - COleConvertDialog [MFC], GetSelectionType
 - COleConvertDialog [MFC], m_cv
 ms.assetid: a7c57714-31e8-4b78-834d-8ddd1b856a1c
-ms.openlocfilehash: 6d6690b8d06df29ce9fcd323eb8724009ee3cca9
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: be0b1e88868918b623874cd5691c21752e7af47c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366169"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227472"
 ---
-# <a name="coleconvertdialog-class"></a>Класс COleConvertДиалогДиалог
+# <a name="coleconvertdialog-class"></a>Класс Колеконвертдиалог
 
-Для получения дополнительной [OLEUICONVERT](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) информации см.
+Дополнительные сведения см. в описании структуры [олеуиконверт](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) в Windows SDK.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,37 +40,37 @@ ms.locfileid: "81366169"
 class COleConvertDialog : public COleDialog
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[ColeConvertДиалог::COleConvertДиалогДиалог](#coleconvertdialog)|Формирует объект `COleConvertDialog`.|
+|[Колеконвертдиалог:: Колеконвертдиалог](#coleconvertdialog)|Формирует объект `COleConvertDialog`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[ColeConvertДиалог::DoПреобразование](#doconvert)|Выполняет преобразование, указанное в диалоговом поле.|
-|[ColeConvertДиалог::DoModal](#domodal)|Отображает диалоговую коробку элемента изменения OLE.|
-|[ColeConvertДиалог::GetClassID](#getclassid)|Получает CLSID, связанный с выбранным элементом.|
-|[ColeConvertДиалог::GetDrawAspect](#getdrawaspect)|Определяет, следует ли рисовать элемент в виде значка.|
-|[ColeConvertДиалог::GetIconicMetafile](#geticonicmetafile)|Получает ручку метафайла, связанную с культовой формой этого элемента.|
-|[ColeConvertДиалог::GetSelectionType](#getselectiontype)|Получает выбранный тип выбора.|
+|[Колеконвертдиалог::D Оконверт](#doconvert)|Выполняет преобразование, указанное в диалоговом окне.|
+|[Колеконвертдиалог::D Омодал](#domodal)|Отображает диалоговое окно «изменение элемента OLE».|
+|[Колеконвертдиалог::, ClassID](#getclassid)|Возвращает CLSID, связанный с выбранным элементом.|
+|[Колеконвертдиалог:: Жетдраваспект](#getdrawaspect)|Указывает, следует ли рисовать элемент как значок.|
+|[Колеконвертдиалог:: Жетиконикметафиле](#geticonicmetafile)|Возвращает маркер для метафайла, связанного со значком этого элемента.|
+|[Колеконвертдиалог:: Жетселектионтипе](#getselectiontype)|Возвращает выбранный тип выбора.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[ColeConvertДиалог:::m_cv](#m_cv)|Структура, контролирующая поведение диалогового окна.|
+|[Колеконвертдиалог:: m_cv](#m_cv)|Структура, которая управляет поведением диалогового окна.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 > [!NOTE]
-> Этот класс используется с генерируемым приложением Wizard.?
+> Созданный мастером приложений код контейнера использует этот класс.
 
-Для получения дополнительной информации о OL-специфических диалоговых ящиков, [см.](../../mfc/dialog-boxes-in-ole.md)
+Дополнительные сведения о диалоговых окнах, связанных с OLE, см. в разделе [диалоговые окна статьи в OLE](../../mfc/dialog-boxes-in-ole.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -89,11 +90,11 @@ class COleConvertDialog : public COleDialog
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxodlgs.h
+**Заголовок:** афксодлгс. h
 
-## <a name="coleconvertdialogcoleconvertdialog"></a><a name="coleconvertdialog"></a>ColeConvertДиалог::COleConvertДиалогДиалог
+## <a name="coleconvertdialogcoleconvertdialog"></a><a name="coleconvertdialog"></a> Колеконвертдиалог:: Колеконвертдиалог
 
-Строит только `COleConvertDialog` объект.
+Конструирует только `COleConvertDialog` объект.
 
 ```
 explicit COleConvertDialog (
@@ -105,37 +106,37 @@ explicit COleConvertDialog (
 
 ### <a name="parameters"></a>Параметры
 
-*pItem*<br/>
-Очки на элемент, который будет преобразован или активирован.
+*питем*<br/>
+Указывает на элемент, который необходимо преобразовать или активировать.
 
 *dwFlags*<br/>
-Флаг создания, который содержит любое количество следующих значений, объединенных с помощью bitwise-или оператора:
+Флаг создания, который содержит любое число следующих значений, Объединенных с помощью оператора побитового или:
 
-- CF_SELECTCONVERTTO указывает, что кнопка Convert To radio будет выбрана первоначально при вызове диалогового окна. Это значение по умолчанию.
+- CF_SELECTCONVERTTO указывает, что при вызове диалогового окна изначально будет выбран переключатель преобразовать в. Это значение по умолчанию.
 
-- CF_SELECTACTIVATEAS указывает, что кнопка «Активация как радио» будет выбрана первоначально при вызове диалогового окна.
+- CF_SELECTACTIVATEAS Указывает, что при вызове диалогового окна изначально будет выбран переключатель активировать как.
 
-- CF_SETCONVERTDEFAULT указывает, что класс, который clSID `clsidConvertDefault` указан членом `m_cv` структуры, будет использоваться в качестве выбора по умолчанию в поле списка классов при выборе кнопки Convert To radio.
+- CF_SETCONVERTDEFAULT указывает, что класс с идентификатором CLSID, заданный `clsidConvertDefault` членом `m_cv` структуры, будет использоваться в качестве выбора по умолчанию в списке классов при выборе переключателя преобразовать в переключатель.
 
-- CF_SETACTIVATEDEFAULT указывает, что класс, который clSID `clsidActivateDefault` указан членом `m_cv` структуры, будет использоваться в качестве выбора по умолчанию в поле списка классов при выборе кнопки «Активировать как радио».
+- CF_SETACTIVATEDEFAULT указывает, что класс, CLSID которого задан `clsidActivateDefault` членом `m_cv` структуры, будет использоваться в качестве выбора по умолчанию в списке классов при выборе переключателя активировать как.
 
-- CF_SHOWHELPBUTTON указывает, что при вызове диалогового окна будет отображаться кнопка справки.
+- CF_SHOWHELPBUTTON указывает, что при вызове диалогового окна появится кнопка Справка.
 
-*pClassID*<br/>
-Очки в CLSID элемента, который будет преобразован или активирован. Если NULL, CLSID, связанный с *pItem,* будет использоваться.
+*pClassId равен*<br/>
+Указывает на идентификатор CLSID элемента, который необходимо преобразовать или активировать. Если значение равно NULL, будет использоваться CLSID, связанный с *питем* .
 
-*pParentWnd*<br/>
-Указывает на объект окна родителя `CWnd`или владельца (типа), к которому принадлежит объект диалога. Если это NULL, родительское окно окна диалогов устанавливается на основное окно приложения.
+*ппарентвнд*<br/>
+Указывает на родительский элемент или объект окна-владельца (типа `CWnd` ), которому принадлежит объект диалогового окна. Если это значение равно NULL, родительскому окну диалогового окна присваивается основное окно приложения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Чтобы отобразить диалоговую будку, позвоните в функцию [DoModal.](#domodal)
+Чтобы открыть диалоговое окно, вызовите функцию [DoModal](#domodal) .
 
-Для получения дополнительной [информации](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) [см.](/windows/win32/com/clsid-key-hklm)
+Дополнительные сведения см. в разделе [ключ CLSID](/windows/win32/com/clsid-key-hklm) и структура [олеуиконверт](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) .
 
-## <a name="coleconvertdialogdoconvert"></a><a name="doconvert"></a>ColeConvertДиалог::DoПреобразование
+## <a name="coleconvertdialogdoconvert"></a><a name="doconvert"></a> Колеконвертдиалог::D Оконверт
 
-Вызов эту функцию, после успешного возвращения из [DoModal](#domodal), либо конвертировать или активировать объект типа [COleClientItem](../../mfc/reference/coleclientitem-class.md).
+Вызовите эту функцию после успешного возврата из [DoModal](#domodal)для преобразования или для активации объекта типа [COleClientItem](../../mfc/reference/coleclientitem-class.md).
 
 ```
 BOOL DoConvert(COleClientItem* pItem);
@@ -143,20 +144,20 @@ BOOL DoConvert(COleClientItem* pItem);
 
 ### <a name="parameters"></a>Параметры
 
-*pItem*<br/>
-Очки на элемент, который будет преобразован или активирован. Не может быть NULL.
+*питем*<br/>
+Указывает на элемент, который необходимо преобразовать или активировать. Не может быть NULL.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Элемент преобразуется или активируется в соответствии с информацией, выбранной пользователем в диалоговом поле Convert.
+Элемент преобразуется или активируется в соответствии со сведениями, выбранными пользователем в диалоговом окне Преобразование.
 
-## <a name="coleconvertdialogdomodal"></a><a name="domodal"></a>ColeConvertДиалог::DoModal
+## <a name="coleconvertdialogdomodal"></a><a name="domodal"></a> Колеконвертдиалог::D Омодал
 
-Вызовите эту функцию для отображения диалогового окна OLE Convert.
+Эта функция вызывается для вывода диалогового окна OLE Convert.
 
 ```
 virtual INT_PTR DoModal();
@@ -166,21 +167,21 @@ virtual INT_PTR DoModal();
 
 Состояние завершения для диалогового окна. Одно из следующих значений:
 
-- IDOK, если диалоговая коробка была успешно отображана.
+- ИДОК, если диалоговое окно было успешно отображено.
 
-- IDCANCEL, если пользователь отменил диалоговую будку.
+- ИДКАНЦЕЛ, если пользователь отменил диалоговое окно.
 
-- IDABORT, если произошла ошибка. Если IDABORT возвращается, позвоните в функцию [COleDialog::GetLastError,](../../mfc/reference/coledialog-class.md#getlasterror) чтобы получить больше информации о типе ошибки, которая произошла. Список возможных ошибок [OleUIConvert](/windows/win32/api/oledlg/nf-oledlg-oleuiconvertw) можно узнать в SDK Windows.
+- ИДАБОРТ, если произошла ошибка. Если возвращается ИДАБОРТ, вызовите функцию-член [коледиалог:: GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) , чтобы получить дополнительные сведения о типе произошедшей ошибки. Список возможных ошибок см. в описании функции [олеуиконверт](/windows/win32/api/oledlg/nf-oledlg-oleuiconvertw) в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если вы хотите инициализировать различные элементы управления диалоговой коробкой, установив элементы [структуры m_cv,](#m_cv) вы должны сделать это перед вызовом, `DoModal`но после построения объекта диалога.
+Если требуется инициализировать различные элементы управления диалогового окна путем установки элементов структуры [m_cv](#m_cv) , следует сделать это перед вызовом метода `DoModal` , но после создания объекта диалогового окна.
 
-При `DoModal` возврате IDOK можно вызвать другие функции участника, чтобы получить настройки или информацию, вводимые пользователем в диалоговую будку.
+Если `DoModal` ВОЗВРАЩАЕТ идок, можно вызвать другие функции, чтобы получить параметры или сведения, введенные пользователем в диалоговое окно.
 
-## <a name="coleconvertdialoggetclassid"></a><a name="getclassid"></a>ColeConvertДиалог::GetClassID
+## <a name="coleconvertdialoggetclassid"></a><a name="getclassid"></a> Колеконвертдиалог::, ClassID
 
-Вызовите эту функцию, чтобы получить CLSID, связанный с элементом, выбранным пользователем в диалоговом окне Convert.
+Вызовите эту функцию, чтобы получить идентификатор CLSID, связанный с элементом, выбранным пользователем в диалоговом окне Преобразование.
 
 ```
 REFCLSID GetClassID() const;
@@ -188,17 +189,17 @@ REFCLSID GetClassID() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-CLSID, связанный с элементом, выбранным в диалоговом окне Convert.
+Идентификатор CLSID, связанный с элементом, выбранным в диалоговом окне Преобразование.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вызовите эту функцию только после того, как [DoModal](#domodal) вернет IDOK.
+Вызывайте эту функцию только после того, как [DoModal](#domodal) возвращает идок.
 
-Для получения дополнительной информации [см. ключ CLSID](/windows/win32/com/clsid-key-hklm) в SDK Windows.
+Дополнительные сведения см. в разделе [ключ CLSID](/windows/win32/com/clsid-key-hklm) в Windows SDK.
 
-## <a name="coleconvertdialoggetdrawaspect"></a><a name="getdrawaspect"></a>ColeConvertДиалог::GetDrawAspect
+## <a name="coleconvertdialoggetdrawaspect"></a><a name="getdrawaspect"></a> Колеконвертдиалог:: Жетдраваспект
 
-Позвоните в эту функцию, чтобы определить, решил ли пользователь отобразить выбранный элемент в качестве значка.
+Вызовите эту функцию, чтобы определить, выбрал ли пользователь Отображение выбранного элемента в виде значка.
 
 ```
 DVASPECT GetDrawAspect() const;
@@ -206,21 +207,21 @@ DVASPECT GetDrawAspect() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Метод, необходимый для визуализации объекта.
+Метод, необходимый для отрисовки объекта.
 
-- DVASPECT_CONTENT возвращен, если флажок Display As As Icon не был проверен.
+- DVASPECT_CONTENT возвращается, если не установлен флажок Отображать как значок.
 
-- DVASPECT_ICON возвращена, если проверка флажка Display As As Icon.
+- DVASPECT_ICON возвращается, если установлен флажок Отображать как значок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вызовите эту функцию только после того, как [DoModal](#domodal) вернет IDOK.
+Вызывайте эту функцию только после того, как [DoModal](#domodal) возвращает идок.
 
-Более подробную информацию о аспекте рисования можно узнать в структуре данных [FORMATETC](/windows/win32/api/objidl/ns-objidl-formatetc) в SDK Windows.
+Дополнительные сведения о аспекте рисования см. в разделе Структура данных [форматетк](/windows/win32/api/objidl/ns-objidl-formatetc) в Windows SDK.
 
-## <a name="coleconvertdialoggeticonicmetafile"></a><a name="geticonicmetafile"></a>ColeConvertДиалог::GetIconicMetafile
+## <a name="coleconvertdialoggeticonicmetafile"></a><a name="geticonicmetafile"></a> Колеконвертдиалог:: Жетиконикметафиле
 
-Вызовите эту функцию, чтобы получить ручку метафайла, который содержит знаковый аспект выбранного элемента.
+Вызовите эту функцию, чтобы получить маркер для метафайла, содержащего значок выбранного элемента.
 
 ```
 HGLOBAL GetIconicMetafile() const;
@@ -228,11 +229,11 @@ HGLOBAL GetIconicMetafile() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Ручка к метафайлу, содержащему знаковый аспект выбранного элемента, если флажок Display As As Icon был проверен при отклонении диалога, выбрав OK; в противном случае NULL.
+Маркер для метафайла, содержащего значок выбранного элемента, если флажок Отображать как значок был установлен при отклонении диалогового окна нажатием кнопки ОК. в противном случае — NULL.
 
-## <a name="coleconvertdialoggetselectiontype"></a><a name="getselectiontype"></a>ColeConvertДиалог::GetSelectionType
+## <a name="coleconvertdialoggetselectiontype"></a><a name="getselectiontype"></a> Колеконвертдиалог:: Жетселектионтипе
 
-Вызовите эту функцию, чтобы определить тип преобразования, выбранного в диалоговом поле Convert.
+Вызовите эту функцию, чтобы определить тип преобразования, выбранного в диалоговом окне Преобразование.
 
 ```
 UINT GetSelectionType() const;
@@ -240,11 +241,11 @@ UINT GetSelectionType() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Тип выбора сделан.
+Тип сделанного выбора.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Значения типа возврата определяются `Selection` типом перечисления, `COleConvertDialog` объявленным в классе.
+Значения возвращаемого типа задаются `Selection` типом перечисления, объявленным в `COleConvertDialog` классе.
 
 ```
 enum Selection {
@@ -254,30 +255,30 @@ enum Selection {
     };
 ```
 
-Краткие описания этих значений следуют:
+Ниже приведены краткие описания этих значений.
 
-- `COleConvertDialog::noConversion`Возвращается, если либо диалоговая будка была отменена, либо пользователь не выбрал конверсию. При `COleConvertDialog::DoModal` возврате IDOK возможно, что пользователь выбрал другой значок, чем ранее выбранный.
+- `COleConvertDialog::noConversion` Возвращается, если диалоговое окно было отменено или пользователь не выбрал преобразование. Если `COleConvertDialog::DoModal` возвращено значение идок, пользователь может выбрать другой значок, отличный от того, который был выбран ранее.
 
-- `COleConvertDialog::convertItem`Возвращалась, если была проверена кнопка «Преобразование в радио», пользователь выбрал другой элемент для преобразования и `DoModal` вернул IDOK.
+- `COleConvertDialog::convertItem` Возвращается, если был установлен переключатель преобразовать в переключатель, пользователь выбрал другой элемент для преобразования в и `DoModal` ВЕРНУЛ идок.
 
-- `COleConvertDialog::activateAs`Возвращается, если была проверена радиокнопка «Активировать как `DoModal` радио», пользователь выбрал другой элемент для активации и вернул IDOK.
+- `COleConvertDialog::activateAs` Возвращается, если был установлен переключатель "активировать как", пользователь выбрал другой элемент для активации и `DoModal` ВЕРНУЛ идок.
 
-## <a name="coleconvertdialogm_cv"></a><a name="m_cv"></a>ColeConvertДиалог:::m_cv
+## <a name="coleconvertdialogm_cv"></a><a name="m_cv"></a> Колеконвертдиалог:: m_cv
 
-Структура типа OLEUICONVERT используется для управления поведением диалогового окна Convert.
+Структура типа ОЛЕУИКОНВЕРТ, используемая для управления поведением диалогового окна «Преобразование».
 
 ```
 OLEUICONVERT m_cv;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Члены этой структуры могут быть изменены либо непосредственно, либо через функции членов.
+Члены этой структуры можно изменять напрямую или с помощью функций-членов.
 
-Для получения дополнительной [OLEUICONVERT](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) информации см.
+Дополнительные сведения см. в описании структуры [олеуиконверт](/windows/win32/api/oledlg/ns-oledlg-oleuiconvertw) в Windows SDK.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс COleDialog](../../mfc/reference/coledialog-class.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
-[Класс COleDialog](../../mfc/reference/coledialog-class.md)
+[Класс Коледиалог](../../mfc/reference/coledialog-class.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
+[Класс Коледиалог](../../mfc/reference/coledialog-class.md)

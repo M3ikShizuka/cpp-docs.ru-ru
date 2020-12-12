@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: COleDataSource Class'
 title: Класс COleDataSource
 ms.date: 11/04/2016
 f1_keywords:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - COleDataSource [MFC], OnSetData
 - COleDataSource [MFC], SetClipboard
 ms.assetid: 02c8ee7d-8e10-4463-8613-bb2a0305ca69
-ms.openlocfilehash: 2cce7b888f929da9d313babc51a7724a4eb43482
-ms.sourcegitcommit: 13f42c339fb7af935e3a93ac80e350d5e784c9f1
+ms.openlocfilehash: 1fc6dd8a7df1d8b841c4f95a14c2bd1708c94fd2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87470936"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227329"
 ---
 # <a name="coledatasource-class"></a>Класс COleDataSource
 
@@ -53,11 +54,11 @@ ms.locfileid: "87470936"
 class COleDataSource : public CCmdTarget
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[COleDataSource:: COleDataSource](#coledatasource)|Формирует объект `COleDataSource`.|
 
@@ -100,7 +101,7 @@ class COleDataSource : public CCmdTarget
 
 **Заголовок:** афксоле. h
 
-## <a name="coledatasourcecachedata"></a><a name="cachedata"></a>COleDataSource:: Качедата
+## <a name="coledatasourcecachedata"></a><a name="cachedata"></a> COleDataSource:: Качедата
 
 Вызовите эту функцию, чтобы указать формат, в котором данные предоставляются во время операций по переносу данных.
 
@@ -136,7 +137,7 @@ void CacheData(
 
 Дополнительные сведения см. в разделе [регистерклипбоардформат](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) в Windows SDK.
 
-## <a name="coledatasourcecacheglobaldata"></a><a name="cacheglobaldata"></a>COleDataSource:: Качеглобалдата
+## <a name="coledatasourcecacheglobaldata"></a><a name="cacheglobaldata"></a> COleDataSource:: Качеглобалдата
 
 Вызовите эту функцию, чтобы указать формат, в котором данные предоставляются во время операций по переносу данных.
 
@@ -168,7 +169,7 @@ void CacheGlobalData(
 
 Дополнительные сведения см. в разделе [регистерклипбоардформат](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) в Windows SDK.
 
-## <a name="coledatasourcecoledatasource"></a><a name="coledatasource"></a>COleDataSource:: COleDataSource
+## <a name="coledatasourcecoledatasource"></a><a name="coledatasource"></a> COleDataSource:: COleDataSource
 
 Формирует объект `COleDataSource`.
 
@@ -176,7 +177,7 @@ void CacheGlobalData(
 COleDataSource();
 ```
 
-## <a name="coledatasourcedelayrenderdata"></a><a name="delayrenderdata"></a>COleDataSource::D Елайрендердата
+## <a name="coledatasourcedelayrenderdata"></a><a name="delayrenderdata"></a> COleDataSource::D Елайрендердата
 
 Вызовите эту функцию, чтобы указать формат, в котором данные предоставляются во время операций по переносу данных.
 
@@ -206,7 +207,7 @@ void DelayRenderData(
 
 Дополнительные сведения см. в разделе [регистерклипбоардформат](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) в Windows SDK.
 
-## <a name="coledatasourcedelayrenderfiledata"></a><a name="delayrenderfiledata"></a>COleDataSource::D Елайрендерфиледата
+## <a name="coledatasourcedelayrenderfiledata"></a><a name="delayrenderfiledata"></a> COleDataSource::D Елайрендерфиледата
 
 Вызовите эту функцию, чтобы указать формат, в котором данные предоставляются во время операций по переносу данных.
 
@@ -236,7 +237,7 @@ void DelayRenderFileData(
 
 Дополнительные сведения см. в разделе [регистерклипбоардформат](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) в Windows SDK.
 
-## <a name="coledatasourcedelaysetdata"></a><a name="delaysetdata"></a>COleDataSource::D Елайсетдата
+## <a name="coledatasourcedelaysetdata"></a><a name="delaysetdata"></a> COleDataSource::D Елайсетдата
 
 Вызывайте эту функцию для поддержки изменения содержимого источника данных.
 
@@ -256,13 +257,13 @@ void DelaySetData(
 
 ### <a name="remarks"></a>Комментарии
 
-В этом случае [онсетдата](#onsetdata) будет вызываться платформой. Используется только в том случае, если платформа Возвращает источник данных из [COleServerItem::-DataSource](../../mfc/reference/coleserveritem-class.md#getdatasource). Если `DelaySetData` не вызывается, `OnSetData` функция никогда не будет вызываться. `DelaySetData`должен вызываться для каждого поддерживаемого буфера обмена или `FORMATETC` формата.
+В этом случае [онсетдата](#onsetdata) будет вызываться платформой. Используется только в том случае, если платформа Возвращает источник данных из [COleServerItem::-DataSource](../../mfc/reference/coleserveritem-class.md#getdatasource). Если `DelaySetData` не вызывается, `OnSetData` функция никогда не будет вызываться. `DelaySetData` должен вызываться для каждого поддерживаемого буфера обмена или `FORMATETC` формата.
 
 Дополнительные сведения см. в описании структуры [форматетк](/windows/win32/api/objidl/ns-objidl-formatetc) в Windows SDK.
 
 Дополнительные сведения см. в разделе [регистерклипбоардформат](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) в Windows SDK.
 
-## <a name="coledatasourcedodragdrop"></a><a name="dodragdrop"></a>COleDataSource::D Одрагдроп
+## <a name="coledatasourcedodragdrop"></a><a name="dodragdrop"></a> COleDataSource::D Одрагдроп
 
 Вызовите `DoDragDrop` функцию-член для выполнения операции перетаскивания для этого источника данных, как правило, в обработчике [CWnd:: онлбуттондовн](../../mfc/reference/cwnd-class.md#onlbuttondown) .
 
@@ -312,7 +313,7 @@ DROPEFFECT DoDragDrop(
 
 Дополнительные сведения см. в статье [перетаскивание OLE](../../mfc/drag-and-drop-ole.md).
 
-## <a name="coledatasourceempty"></a><a name="empty"></a>COleDataSource:: Empty
+## <a name="coledatasourceempty"></a><a name="empty"></a> COleDataSource:: Empty
 
 Вызовите эту функцию, чтобы очистить `COleDataSource` объект данных.
 
@@ -326,7 +327,7 @@ void Empty();
 
 Дополнительные сведения см. в разделе [релеасестгмедиум](/windows/win32/api/ole2/nf-ole2-releasestgmedium) в Windows SDK.
 
-## <a name="coledatasourceflushclipboard"></a><a name="flushclipboard"></a>COleDataSource:: Флушклипбоард
+## <a name="coledatasourceflushclipboard"></a><a name="flushclipboard"></a> COleDataSource:: Флушклипбоард
 
 Отрисовывает данные, наявляющиеся в буфере обмена, а затем позволяет вставлять данные из буфера обмена после завершения работы приложения.
 
@@ -338,7 +339,7 @@ static void PASCAL FlushClipboard();
 
 Используйте [сетклипбоард](#setclipboard) для размещения данных в буфере обмена.
 
-## <a name="coledatasourcegetclipboardowner"></a><a name="getclipboardowner"></a>COleDataSource:: Жетклипбоардовнер
+## <a name="coledatasourcegetclipboardowner"></a><a name="getclipboardowner"></a> COleDataSource:: Жетклипбоардовнер
 
 Определяет, изменились ли данные в буфере обмена с момента последнего вызова [сетклипбоард](#setclipboard) и, если да, определяет текущего владельца.
 
@@ -350,7 +351,7 @@ static COleDataSource* PASCAL GetClipboardOwner();
 
 Источник данных, находящийся в буфере обмена, или значение NULL, если в буфере нет ничего или если буфер обмена не принадлежит вызывающему приложению.
 
-## <a name="coledatasourceonrenderdata"></a><a name="onrenderdata"></a>COleDataSource:: Онрендердата
+## <a name="coledatasourceonrenderdata"></a><a name="onrenderdata"></a> COleDataSource:: Онрендердата
 
 Вызывается платформой для получения данных в указанном формате.
 
@@ -382,7 +383,7 @@ virtual BOOL OnRenderData(
 
 Дополнительные сведения см. в разделе структуры [стгмедиум](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) и [форматетк](/windows/win32/api/objidl/ns-objidl-formatetc) , тип перечисления [Тимед](/windows/win32/api/objidl/ne-objidl-tymed) и [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) в Windows SDK.
 
-## <a name="coledatasourceonrenderfiledata"></a><a name="onrenderfiledata"></a>COleDataSource:: Онрендерфиледата
+## <a name="coledatasourceonrenderfiledata"></a><a name="onrenderfiledata"></a> COleDataSource:: Онрендерфиледата
 
 Вызывается платформой для получения данных в указанном формате, если указанный носитель является файлом.
 
@@ -412,7 +413,7 @@ virtual BOOL OnRenderFileData(
 
 Дополнительные сведения см. в разделе Структура [форматетк](/windows/win32/api/objidl/ns-objidl-formatetc) и [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) в Windows SDK.
 
-## <a name="coledatasourceonrenderglobaldata"></a><a name="onrenderglobaldata"></a>COleDataSource:: Онрендерглобалдата
+## <a name="coledatasourceonrenderglobaldata"></a><a name="onrenderglobaldata"></a> COleDataSource:: Онрендерглобалдата
 
 Вызывается платформой для получения данных в указанном формате, если указанный носитель является глобальной памятью.
 
@@ -444,7 +445,7 @@ virtual BOOL OnRenderGlobalData(
 
 Дополнительные сведения см. в разделе Структура [форматетк](/windows/win32/api/objidl/ns-objidl-formatetc) и [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) в Windows SDK.
 
-## <a name="coledatasourceonsetdata"></a><a name="onsetdata"></a>COleDataSource:: Онсетдата
+## <a name="coledatasourceonsetdata"></a><a name="onsetdata"></a> COleDataSource:: Онсетдата
 
 Вызывается платформой для задания или замены данных в `COleDataSource` объекте в указанном формате.
 
@@ -478,7 +479,7 @@ virtual BOOL OnSetData(
 
 Дополнительные сведения см. в разделе структуры [стгмедиум](/windows/win32/api/objidl/ns-objidl-ustgmedium-r1) и [Форматетк](/windows/win32/api/objidl/ns-objidl-formatetc) и функции [Релеасестгмедиум](/windows/win32/api/ole2/nf-ole2-releasestgmedium) и [IDataObject:: GetData](/windows/win32/api/objidl/nf-objidl-idataobject-getdata) в Windows SDK.
 
-## <a name="coledatasourcesetclipboard"></a><a name="setclipboard"></a>COleDataSource:: Сетклипбоард
+## <a name="coledatasourcesetclipboard"></a><a name="setclipboard"></a> COleDataSource:: Сетклипбоард
 
 Помещает данные, содержащиеся `COleDataSource` в объекте, в буфер обмена после вызова одной из следующих функций [: качедата](#cachedata), [Качеглобалдата](#cacheglobaldata), [делайрендердата](#delayrenderdata)или [делайрендерфиледата](#delayrenderfiledata).
 
@@ -486,7 +487,7 @@ virtual BOOL OnSetData(
 void SetClipboard();
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Пример MFC для примера HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [Пример OCLIENT MFC](../../overview/visual-cpp-samples.md)<br/>

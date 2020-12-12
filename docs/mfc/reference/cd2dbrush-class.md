@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CD2DBrush Class'
 title: Класс CD2DBrush
 ms.date: 11/04/2016
 f1_keywords:
@@ -30,16 +31,16 @@ helpviewer_keywords:
 - CD2DBrush [MFC], m_pBrush
 - CD2DBrush [MFC], m_pBrushProperties
 ms.assetid: 0d2c0857-2261-48a8-8ee0-a88cbf08499a
-ms.openlocfilehash: 536d84fe2c2f68d62490e1ce2b65085426762e87
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 6d19601258951a297a734aa304e2a22c98baf5c9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754192"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227576"
 ---
 # <a name="cd2dbrush-class"></a>Класс CD2DBrush
 
-Обертка для ID2D1Brush.
+Оболочка для ID2D1Brush.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,55 +48,55 @@ ms.locfileid: "81754192"
 class CD2DBrush : public CD2DResource;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="protected-constructors"></a>Защищенные конструкторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CD2DBrush::CD2DBrush](#cd2dbrush)|Строит объект CD2DBrush.|
-|[CD2DBrush::CD2DBrush](#_dtorcd2dbrush)|Деструктор Вызывается при уничтожении объекта кисти D2D.|
+|[CD2DBrush::CD2DBrush](#cd2dbrush)|Конструирует объект CD2DBrush.|
+|[CD2DBrush:: ~ CD2DBrush](#_dtorcd2dbrush)|Деструктор Вызывается при уничтожении объекта кисти D2D.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CD2DBrush::Attach](#attach)|Прикрепляет существующий интерфейс ресурса к объекту|
-|[CD2DBrush::Destroy](#destroy)|Уничтожает объект CD2DBrush. (Переопределяет [CD2DРесурс::Destroy](../../mfc/reference/cd2dresource-class.md#destroy).)|
-|[CD2DBrush::Detach](#detach)|Открепите интерфейс ресурса с объекта|
-|[CD2DBrush::Get](#get)|Возвращает интерфейс ID2D1Brush|
-|[CD2DBrush::GetOpacity](#getopacity)|Получает степень непрозрачности этой кисти|
-|[CD2DBrush::GetTransform](#gettransform)|Получает текущее преобразование цели рендеринга|
-|[CD2DBrush::IsValid](#isvalid)|Проверка достоверности ресурса (Переопределения [CD2DРесурса:: IsValid](../../mfc/reference/cd2dresource-class.md#isvalid).)|
-|[CD2DBrush::SetOpacity](#setopacity)|Устанавливает степень непрозрачности этой кисти|
-|[CD2DBrush::SetTransform](#settransform)|Применяет указанное преобразование к цели рендера, заменяя существующую трансформацию. Все последующие операции рисования происходят в преобразованном пространстве|
+|[CD2DBrush:: Attach](#attach)|Присоединяет существующий интерфейс ресурсов к объекту|
+|[CD2DBrush::D естрой](#destroy)|Уничтожает объект CD2DBrush. (Переопределяет [CD2DResource::D естрой](../../mfc/reference/cd2dresource-class.md#destroy).)|
+|[CD2DBrush::D етач](#detach)|Отсоединяет интерфейс ресурса от объекта|
+|[CD2DBrush:: Get](#get)|Возвращает интерфейс ID2D1Brush|
+|[CD2DBrush:: Opacity](#getopacity)|Возвращает степень прозрачности этой кисти|
+|[CD2DBrush:: Transform](#gettransform)|Возвращает текущее преобразование целевого объекта прорисовки|
+|[CD2DBrush:: IsValid](#isvalid)|Проверяет допустимость ресурса (переопределяет [CD2DResource:: IsValid](../../mfc/reference/cd2dresource-class.md#isvalid).)|
+|[CD2DBrush:: СетопаЦити](#setopacity)|Задает степень прозрачности этой кисти|
+|[CD2DBrush:: Сеттрансформ](#settransform)|Применяет указанное преобразование к целевому объекту прорисовки, заменяя существующее преобразование. Все последующие операции рисования происходят в преобразованном пространстве|
 
 ### <a name="public-operators"></a>Открытые операторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CD2DBrush::оператор ID2D1Brush](#operator_id2d1brush_star)|Возвращает интерфейс ID2D1Brush|
+|[CD2DBrush:: operator ID2D1Brush *](#operator_id2d1brush_star)|Возвращает интерфейс ID2D1Brush|
 
 ### <a name="protected-data-members"></a>Защищенные члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CD2DBrush::m_pBrush](#m_pbrush)|Хранит указатель на объект ID2D1Brush.|
-|[CD2DBrush::m_pBrushProperties](#m_pbrushproperties)|Свойства кисти.|
+|[CD2DBrush:: m_pBrush](#m_pbrush)|Хранит указатель на объект ID2D1Brush.|
+|[CD2DBrush:: m_pBrushProperties](#m_pbrushproperties)|Свойства кисти.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
 [CObject](../../mfc/reference/cobject-class.md)
 
-[CD2DРесурс](../../mfc/reference/cd2dresource-class.md)
+[CD2DResource](../../mfc/reference/cd2dresource-class.md)
 
 `CD2DBrush`
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxrendertarget.h
+**Заголовок:** афксрендертаржет. h
 
-## <a name="cd2dbrushcd2dbrush"></a><a name="_dtorcd2dbrush"></a>CD2DBrush::CD2DBrush
+## <a name="cd2dbrushcd2dbrush"></a><a name="_dtorcd2dbrush"></a> CD2DBrush:: ~ CD2DBrush
 
 Деструктор Вызывается при уничтожении объекта кисти D2D.
 
@@ -103,9 +104,9 @@ class CD2DBrush : public CD2DResource;
 virtual ~CD2DBrush();
 ```
 
-## <a name="cd2dbrushattach"></a><a name="attach"></a>CD2DBrush::Attach
+## <a name="cd2dbrushattach"></a><a name="attach"></a> CD2DBrush:: Attach
 
-Прикрепляет существующий интерфейс ресурса к объекту.
+Присоединяет существующий интерфейс ресурсов к объекту.
 
 ```cpp
 void Attach(ID2D1Brush* pResource);
@@ -113,12 +114,12 @@ void Attach(ID2D1Brush* pResource);
 
 ### <a name="parameters"></a>Параметры
 
-*pResource*<br/>
-Существующий интерфейс ресурса. Не может быть NULL.
+*исходный код*<br/>
+Существующий интерфейс ресурсов. Не может быть NULL.
 
-## <a name="cd2dbrushcd2dbrush"></a><a name="cd2dbrush"></a>CD2DBrush::CD2DBrush
+## <a name="cd2dbrushcd2dbrush"></a><a name="cd2dbrush"></a> CD2DBrush::CD2DBrush
 
-Строит объект CD2DBrush.
+Конструирует объект CD2DBrush.
 
 ```
 CD2DBrush(
@@ -129,16 +130,16 @@ CD2DBrush(
 
 ### <a name="parameters"></a>Параметры
 
-*pParentTarget*<br/>
-Указатель на цель рендера.
+*ппаренттаржет*<br/>
+Указатель на целевой объект прорисовки.
 
-*pBrushProperties*<br/>
-Указатель на непрозрачность и трансформацию кисти.
+*пбрушпропертиес*<br/>
+Указатель на непрозрачность и Преобразование кисти.
 
-*bAutoDestroy*<br/>
-Означает, что объект будет уничтожен владельцем (pParentTarget).
+*баутодестрой*<br/>
+Указывает, что объект будет уничтожен владельцем (Ппаренттаржет).
 
-## <a name="cd2dbrushdestroy"></a><a name="destroy"></a>CD2DBrush::Destroy
+## <a name="cd2dbrushdestroy"></a><a name="destroy"></a> CD2DBrush::D естрой
 
 Уничтожает объект CD2DBrush.
 
@@ -146,9 +147,9 @@ CD2DBrush(
 virtual void Destroy();
 ```
 
-## <a name="cd2dbrushdetach"></a><a name="detach"></a>CD2DBrush::Detach
+## <a name="cd2dbrushdetach"></a><a name="detach"></a> CD2DBrush::D етач
 
-Отсоединяет интерфейс ресурса с объекта.
+Отсоединяет интерфейс ресурса от объекта.
 
 ```
 ID2D1Brush* Detach();
@@ -156,9 +157,9 @@ ID2D1Brush* Detach();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на отдельный интерфейс ресурса.
+Указатель на отсоединенный интерфейс ресурсов.
 
-## <a name="cd2dbrushget"></a><a name="get"></a>CD2DBrush::Get
+## <a name="cd2dbrushget"></a><a name="get"></a> CD2DBrush:: Get
 
 Возвращает интерфейс ID2D1Brush
 
@@ -168,11 +169,11 @@ ID2D1Brush* Get();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на интерфейс ID2D1Brush или NULL, если объект еще не инициализирован.
+Указатель на интерфейс ID2D1Brush или значение NULL, если объект еще не инициализирован.
 
-## <a name="cd2dbrushgetopacity"></a><a name="getopacity"></a>CD2DBrush::GetOpacity
+## <a name="cd2dbrushgetopacity"></a><a name="getopacity"></a> CD2DBrush:: Opacity
 
-Получает степень непрозрачности этой кисти
+Возвращает степень прозрачности этой кисти
 
 ```
 FLOAT GetOpacity() const;
@@ -180,11 +181,11 @@ FLOAT GetOpacity() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Значение между нулем и 1, что указывает на непрозрачность кисти. Это значение является постоянным множитель, который лирано масштабирует альфа-значение всех пикселей, заполненных кистью. Значения непрозрачности зажимаются в диапазоне от 0 до 1, прежде чем они умножаются вместе.
+Значение от 0 до 1, указывающее на непрозрачность кисти. Это значение является постоянным множителем, который линейно масштабирует альфа-значение всех пикселов, заполненных кистью. Значения непрозрачности записываются в диапазоне от 0 до 1, прежде чем они будут умножены вместе.
 
-## <a name="cd2dbrushgettransform"></a><a name="gettransform"></a>CD2DBrush::GetTransform
+## <a name="cd2dbrushgettransform"></a><a name="gettransform"></a> CD2DBrush:: Transform
 
-Получает текущее преобразование цели рендеринга
+Возвращает текущее преобразование целевого объекта прорисовки
 
 ```cpp
 void GetTransform(D2D1_MATRIX_3X2_F* transform) const;
@@ -192,12 +193,12 @@ void GetTransform(D2D1_MATRIX_3X2_F* transform) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Преобразования*<br/>
-При возврате данных содержится текущее преобразование цели рендеринга. Этот параметр передается без инициализации.
+*Преобразует*<br/>
+При возврате содержит текущее преобразование целевого объекта отрисовки. Этот параметр передается неинициализированным.
 
-## <a name="cd2dbrushisvalid"></a><a name="isvalid"></a>CD2DBrush::IsValid
+## <a name="cd2dbrushisvalid"></a><a name="isvalid"></a> CD2DBrush:: IsValid
 
-Проверка достоверности ресурса
+Проверка действительности ресурсов
 
 ```
 virtual BOOL IsValid() const;
@@ -205,9 +206,9 @@ virtual BOOL IsValid() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если ресурс действителен; в противном случае FALSE.
+Значение TRUE, если ресурс является допустимым; в противном случае — FALSE.
 
-## <a name="cd2dbrushm_pbrush"></a><a name="m_pbrush"></a>CD2DBrush::m_pBrush
+## <a name="cd2dbrushm_pbrush"></a><a name="m_pbrush"></a> CD2DBrush:: m_pBrush
 
 Хранит указатель на объект ID2D1Brush.
 
@@ -215,7 +216,7 @@ TRUE, если ресурс действителен; в противном сл
 ID2D1Brush* m_pBrush;
 ```
 
-## <a name="cd2dbrushm_pbrushproperties"></a><a name="m_pbrushproperties"></a>CD2DBrush::m_pBrushProperties
+## <a name="cd2dbrushm_pbrushproperties"></a><a name="m_pbrushproperties"></a> CD2DBrush:: m_pBrushProperties
 
 Свойства кисти.
 
@@ -223,7 +224,7 @@ ID2D1Brush* m_pBrush;
 CD2DBrushProperties* m_pBrushProperties;
 ```
 
-## <a name="cd2dbrushoperator-id2d1brush"></a><a name="operator_id2d1brush_star"></a>CD2DBrush::оператор ID2D1Brush
+## <a name="cd2dbrushoperator-id2d1brush"></a><a name="operator_id2d1brush_star"></a> CD2DBrush:: operator ID2D1Brush *
 
 Возвращает интерфейс ID2D1Brush
 
@@ -233,11 +234,11 @@ operator ID2D1Brush*();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на интерфейс ID2D1Brush или NULL, если объект еще не инициализирован.
+Указатель на интерфейс ID2D1Brush или значение NULL, если объект еще не инициализирован.
 
-## <a name="cd2dbrushsetopacity"></a><a name="setopacity"></a>CD2DBrush::SetOpacity
+## <a name="cd2dbrushsetopacity"></a><a name="setopacity"></a> CD2DBrush:: СетопаЦити
 
-Устанавливает степень непрозрачности этой кисти
+Задает степень прозрачности этой кисти
 
 ```cpp
 void SetOpacity(FLOAT opacity);
@@ -245,12 +246,12 @@ void SetOpacity(FLOAT opacity);
 
 ### <a name="parameters"></a>Параметры
 
-*Непрозрачность*<br/>
-Значение между нулем и 1, что указывает на непрозрачность кисти. Это значение является постоянным множитель, который лирано масштабирует альфа-значение всех пикселей, заполненных кистью. Значения непрозрачности зажимаются в диапазоне от 0 до 1, прежде чем они умножаются вместе.
+*данной*<br/>
+Значение от 0 до 1, указывающее на непрозрачность кисти. Это значение является постоянным множителем, который линейно масштабирует альфа-значение всех пикселов, заполненных кистью. Значения непрозрачности записываются в диапазоне от 0 до 1, прежде чем они будут умножены вместе.
 
-## <a name="cd2dbrushsettransform"></a><a name="settransform"></a>CD2DBrush::SetTransform
+## <a name="cd2dbrushsettransform"></a><a name="settransform"></a> CD2DBrush:: Сеттрансформ
 
-Применяет указанное преобразование к цели рендера, заменяя существующую трансформацию. Все последующие операции рисования происходят в преобразованном пространстве.
+Применяет указанное преобразование к целевому объекту прорисовки, заменяя существующее преобразование. Все последующие операции рисования происходят в преобразованном пространстве.
 
 ```cpp
 void SetTransform(const D2D1_MATRIX_3X2_F* transform);
@@ -258,8 +259,8 @@ void SetTransform(const D2D1_MATRIX_3X2_F* transform);
 
 ### <a name="parameters"></a>Параметры
 
-*Преобразования*<br/>
-Преобразование для применения к цели рендеринга
+*Преобразует*<br/>
+Преобразование, применяемое к целевому объекту прорисовки
 
 ## <a name="see-also"></a>См. также раздел
 

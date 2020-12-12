@@ -1,5 +1,6 @@
 ---
-title: Класс COleDropSource
+description: 'Дополнительные сведения о: Коледропсаурце Class'
+title: Класс Коледропсаурце
 ms.date: 11/04/2016
 f1_keywords:
 - COleDropSource
@@ -14,16 +15,16 @@ helpviewer_keywords:
 - COleDropSource [MFC], OnBeginDrag
 - COleDropSource [MFC], QueryContinueDrag
 ms.assetid: d3eecc5f-a70b-4a01-b705-7d2c098ebe17
-ms.openlocfilehash: 324c4b7273f021b43c319fb0a494ac843856c78a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 069c1b2a3cb46f0824da55bca8e97041e9b0b2e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375027"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227147"
 ---
-# <a name="coledropsource-class"></a>Класс COleDropSource
+# <a name="coledropsource-class"></a>Класс Коледропсаурце
 
-Позволяет перетаскивают данные в цель падения.
+Позволяет перетаскивать данные в целевой объект перетаскивания.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,31 +32,31 @@ ms.locfileid: "81375027"
 class COleDropSource : public CCmdTarget
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[ColeDropИсточник::COleDropИсточник](#coledropsource)|Формирует объект `COleDropSource`.|
+|[Коледропсаурце:: Коледропсаурце](#coledropsource)|Формирует объект `COleDropSource`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[ColeDropИсточник::GiveОбратная связь](#givefeedback)|Изменяет курсор во время операции перетаскивания и падения.|
-|[ColeDropИсточник::Onbegindrag](#onbegindrag)|Ручки захвата мыши во время операции перетаскивания и падения.|
-|[ColeDropSource::QueryContinueDrag](#querycontinuedrag)|Проверка, чтобы увидеть, следует ли перетаскивание продолжаться.|
+|[Коледропсаурце:: GiveFeedback](#givefeedback)|Изменяет курсор во время операции перетаскивания.|
+|[Коледропсаурце:: Онбегиндраг](#onbegindrag)|Обрабатывает захват мыши во время операции перетаскивания.|
+|[Коледропсаурце:: QueryContinueDrag](#querycontinuedrag)|Проверяет, следует ли продолжать перетаскивание.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Класс [COleDropTarget](../../mfc/reference/coledroptarget-class.md) обрабатывает приемную часть операции перетаскивания и падения. Объект `COleDropSource` отвечает за определение того, когда операция перетаскивания начинается, обеспечивая обратную связь во время операции перетаскивания и определяя, когда операция перетаскивания заканчивается.
+Класс [коледроптаржет](../../mfc/reference/coledroptarget-class.md) обрабатывает принимающую часть операции перетаскивания. `COleDropSource`Объект отвечает за определение времени начала операции перетаскивания, предоставление обратной связи во время операции перетаскивания и определение момента завершения операции перетаскивания.
 
-Чтобы использовать `COleDropSource` объект, просто позвоните в конструктор. Это упрощает процесс определения того, какие события, такие как щелчком мыши, начинают операцию перетаскивания с помощью [COleDataSource::DoDragDrop](../../mfc/reference/coledatasource-class.md#dodragdrop), [COleClientItem::DoDragDrop](../../mfc/reference/coleclientitem-class.md#dodragdrop), или [COleServerItem::DoDragDrop](../../mfc/reference/coleserveritem-class.md#dodragdrop) функции. Эти функции `COleDropSource` создадут объект для вас. Возможно, вы захотите изменить `COleDropSource` поведение функций по умолчанию. Эти функции членов будут называться в соответствующее время рамками.
+Чтобы использовать `COleDropSource` объект, просто вызовите конструктор. Это упрощает процесс определения событий, например щелчка мышью, начала операции перетаскивания с помощью [COleDataSource::D одрагдроп](../../mfc/reference/coledatasource-class.md#dodragdrop), [COleClientItem::D одрагдроп](../../mfc/reference/coleclientitem-class.md#dodragdrop)или [COleServerItem::D одрагдроп](../../mfc/reference/coleserveritem-class.md#dodragdrop) . Эти функции будут создавать `COleDropSource` объект. Может потребоваться изменить поведение по умолчанию для `COleDropSource` переопределяемых функций. Эти функции элементов будут вызываться в нужное время платформой.
 
-Для получения дополнительной информации о перетаскивания [OLE drag and drop](../../mfc/drag-and-drop-ole.md)операций с использованием OLE, см.
+Дополнительные сведения об операциях перетаскивания с помощью OLE см. в разделе [перетаскивание OLE](../../mfc/drag-and-drop-ole.md).
 
-Для получения дополнительной информации, [см.](/windows/win32/api/oleidl/nn-oleidl-idropsource)
+Дополнительные сведения см. в разделе [идропсаурце](/windows/win32/api/oleidl/nn-oleidl-idropsource) в Windows SDK.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -67,9 +68,9 @@ class COleDropSource : public CCmdTarget
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxole.h
+**Заголовок:** афксоле. h
 
-## <a name="coledropsourcecoledropsource"></a><a name="coledropsource"></a>ColeDropИсточник::COleDropИсточник
+## <a name="coledropsourcecoledropsource"></a><a name="coledropsource"></a> Коледропсаурце:: Коледропсаурце
 
 Формирует объект `COleDropSource`.
 
@@ -77,9 +78,9 @@ class COleDropSource : public CCmdTarget
 COleDropSource();
 ```
 
-## <a name="coledropsourcegivefeedback"></a><a name="givefeedback"></a>ColeDropИсточник::GiveОбратная связь
+## <a name="coledropsourcegivefeedback"></a><a name="givefeedback"></a> Коледропсаурце:: GiveFeedback
 
-Вызывается по рамкам после вызова [COleDropTarget::OnDragOver](../../mfc/reference/coledroptarget-class.md#ondragover) или [COleDropTarget: :DragEnter](../../mfc/reference/coledroptarget-class.md#ondragenter).
+Вызвано структурой после вызова [коледроптаржет:: OnDragOver](../../mfc/reference/coledroptarget-class.md#ondragover) или [Коледроптаржет::D ражентер](../../mfc/reference/coledroptarget-class.md#ondragenter).
 
 ```
 virtual SCODE GiveFeedback(DROPEFFECT dropEffect);
@@ -87,32 +88,32 @@ virtual SCODE GiveFeedback(DROPEFFECT dropEffect);
 
 ### <a name="parameters"></a>Параметры
 
-*dropEffect*<br/>
-Эффект, который вы хотели бы отобразить пользователю, обычно указывает на то, что произойдет, если в этот момент произошло падение с выбранными данными. Как правило, это значение, возвращенное последним вызовом в [CView::OnDragEnter](../../mfc/reference/cview-class.md#ondragenter) или [CView::OnDragOver](../../mfc/reference/cview-class.md#ondragover). Это может быть один или несколько из следующих:
+*дропеффект*<br/>
+Результат, который необходимо отобразить пользователю, обычно указывающий, что произойдет, если в данный момент на выбранном этапе было выполнено перетаскивание. Как правило, это значение, возвращаемое последним вызовом [CView:: OnDragEnter](../../mfc/reference/cview-class.md#ondragenter) или [CView:: OnDragOver](../../mfc/reference/cview-class.md#ondragover). Это может быть одно или несколько из следующих:
 
-- DROPEFFECT_NONE падение не будет разрешено.
+- DROPEFFECT_NONE удаление запрещено.
 
-- DROPEFFECT_COPY будет выполнена операция копирования.
+- DROPEFFECT_COPY выполнить операцию копирования.
 
 - DROPEFFECT_MOVE будет выполнена операция перемещения.
 
-- DROPEFFECT_LINK Будет установлена связь с упавшими данными с исходными данными.
+- DROPEFFECT_LINK будет установлена ссылка из удаленных данных в исходные.
 
-- DROPEFFECT_SCROLL операция перетаски вот-вот произойдет или происходит в цели.
+- DROPEFFECT_SCROLL, что операция перетаскивания прокрутки собирается или происходит в целевом объекте.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает DRAGDROP_S_USEDEFAULTCURSORS, если перетаскивание продолжается, NOERROR, если это не так.
+Возвращает DRAGDROP_S_USEDEFAULTCURSORS, если выполняется перетаскивание, в противном случае — ошибка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переопределить эту функцию, чтобы обеспечить обратную связь с пользователем о том, что произойдет, если падение произошло в этой точке. В реализации по умолчанию используются курсоры OLE по умолчанию. Для получения дополнительной информации о перетаскивания [OLE drag and drop](../../mfc/drag-and-drop-ole.md)операций с использованием OLE, см.
+Переопределите эту функцию, чтобы предоставить пользователю отзыв о том, что произойдет, если в этот момент происходило перетаскивание. Реализация по умолчанию использует курсоры по умолчанию OLE. Дополнительные сведения об операциях перетаскивания с помощью OLE см. в разделе [перетаскивание OLE](../../mfc/drag-and-drop-ole.md).
 
-Для получения дополнительной информации, [см. IDropSource::GiveОбратная связь](/windows/win32/api/oleidl/nf-oleidl-idropsource-givefeedback), [IDropTarget: :DragOver](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragover), и [IDropTarget::DragEnter](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragenter) в Windows SDK.
+Дополнительные сведения см. в разделе [идропсаурце:: GiveFeedback](/windows/win32/api/oleidl/nf-oleidl-idropsource-givefeedback), [интерфейс IDropTarget::D раговер](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragover)и [интерфейс idroptarget::D ражентер](/windows/win32/api/oleidl/nf-oleidl-idroptarget-dragenter) в Windows SDK.
 
-## <a name="coledropsourceonbegindrag"></a><a name="onbegindrag"></a>ColeDropИсточник::Onbegindrag
+## <a name="coledropsourceonbegindrag"></a><a name="onbegindrag"></a> Коледропсаурце:: Онбегиндраг
 
-Вызывается в фреймворке при возникновении события, которое может начать операцию перетаскивания, например нажатие кнопки левой мыши.
+Вызывается платформой при возникновении события, которое может начать операцию перетаскивания, например нажатие левой кнопки мыши.
 
 ```
 virtual BOOL OnBeginDrag(CWnd* pWnd);
@@ -120,20 +121,20 @@ virtual BOOL OnBeginDrag(CWnd* pWnd);
 
 ### <a name="parameters"></a>Параметры
 
-*pWnd*<br/>
+*Приводится*<br/>
 Указывает на окно, содержащее выбранные данные.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если перетаскивание разрешено, в противном случае 0.
+Ненулевое значение, если перетаскивание запрещено; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переизбь эту функцию, если вы хотите изменить способ запуска процесса перетаскивания. Реализация по умолчанию захватывает мышь и остается в режиме перетаскивания до тех пор, пока пользователь не нажмет левую или правую кнопку мыши или не нажмет на ESC, в это время он выпускает мышь.
+Переопределите эту функцию, если необходимо изменить способ запуска процесса перетаскивания. Реализация по умолчанию захватывает мышь и остается в режиме перетаскивания до тех пор, пока пользователь не нажмет левую или правую кнопку мыши или не нажимает клавишу ESC, при этом она освобождает мышь.
 
-## <a name="coledropsourcequerycontinuedrag"></a><a name="querycontinuedrag"></a>ColeDropSource::QueryContinueDrag
+## <a name="coledropsourcequerycontinuedrag"></a><a name="querycontinuedrag"></a> Коледропсаурце:: QueryContinueDrag
 
-После начала перетаскивания эта функция неоднократно вызывается фректором до тех пор, пока операция перетаскивания не будет отменена или завершена.
+После начала перетаскивания эта функция вызывается повторно, пока операция перетаскивания не будет отменена или завершена.
 
 ```
 virtual SCODE QueryContinueDrag(
@@ -143,27 +144,27 @@ virtual SCODE QueryContinueDrag(
 
 ### <a name="parameters"></a>Параметры
 
-*bEscapePressed*<br/>
-Государства ли ключ ESC был нажат `COleDropSource::QueryContinueDrag`с момента последнего призыва к .
+*бескапепрессед*<br/>
+Указывает, была ли нажата клавиша ESC с момента последнего вызова `COleDropSource::QueryContinueDrag` .
 
-*dwKeyState*<br/>
-Содержит состояние клавиш модификатора на клавиатуре. Это сочетание любого числа: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON и MK_RBUTTON.
+*двкэйстате*<br/>
+Содержит состояние клавиш со модификатором на клавиатуре. Это сочетание любого числа следующих: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON и MK_RBUTTON.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-DRAGDROP_S_CANCEL, если нажатие клавиши ESC или правой кнопки или левой кнопки перед запуском. DRAGDROP_S_DROP, если операция по падению должна произойти. В противном случае S_OK.
+DRAGDROP_S_CANCEL если нажата клавиша ESC или правая кнопка, то перед началом перетаскивания появляется кнопка слева. DRAGDROP_S_DROP, если должна быть выполнена операция Drop. В противном случае S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переизбь эту функцию, если вы хотите изменить точку, в которой перетаскивание отменяется или происходит падение.
+Переопределите эту функцию, если нужно изменить точку, в которой перетаскивание отменяется, или происходит перетаскивание.
 
-Реализация по умолчанию инициирует падение или отменяет перетаскивание следующим образом. Он отменяет операцию перетаскивания при нажатии клавиши ESC или правой кнопки мыши. Он инициирует операцию падения при поднятии левой кнопки мыши после начала перетаскивания. В противном случае он возвращает S_OK и не выполняет никаких дальнейших операций.
+Реализация по умолчанию инициирует перетаскивание или отменяет перетаскивание следующим образом. Она отменяет операцию перетаскивания при нажатии клавиши ESC или щелчка правой кнопки мыши. Она инициирует операцию Drop, когда левая кнопка мыши вызывается после начала перетаскивания. В противном случае он возвращает S_OK и не выполняет дальнейших операций.
 
-Поскольку эта функция часто вызывается, ее следует максимально оптимизировать.
+Так как эта функция вызывается часто, ее следует оптимизировать как можно больше.
 
 ## <a name="see-also"></a>См. также раздел
 
-[MFC Образец HIERSVR](../../overview/visual-cpp-samples.md)<br/>
-[MFC Образец OCLIENT](../../overview/visual-cpp-samples.md)<br/>
-[Класс CCmdTarget](../../mfc/reference/ccmdtarget-class.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)
+[Пример MFC для примера HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[Пример OCLIENT MFC](../../overview/visual-cpp-samples.md)<br/>
+[Класс от CCmdTarget](../../mfc/reference/ccmdtarget-class.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)

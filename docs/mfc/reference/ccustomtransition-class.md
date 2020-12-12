@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ккустомтранситион Class'
 title: Класс CCustomTransition
 ms.date: 11/04/2016
 f1_keywords:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - CCustomTransition [MFC], m_initialVelocity
 - CCustomTransition [MFC], m_pInterpolator
 ms.assetid: 5bd3f492-940f-4290-a38b-fa68eb8f8401
-ms.openlocfilehash: 76e0d12308ad579e4bdf9866dfcf1cde231a2d0c
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 22c08cdcedc3a7cbdbe824ac1d98d62cfe810772
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81749152"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227667"
 ---
 # <a name="ccustomtransition-class"></a>Класс CCustomTransition
 
@@ -41,41 +42,41 @@ ms.locfileid: "81749152"
 class CCustomTransition : public CBaseTransition;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CCustomTransition::CCustomTransition](#ccustomtransition)|Строит пользовательский объект перехода.|
+|[Ккустомтранситион:: Ккустомтранситион](#ccustomtransition)|Конструирует пользовательский объект перехода.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CCustomTransition::Создание](#create)|Вызывает библиотеку перехода для создания инкапсулированного объекта переходного COM. (Переопределяет [CBaseПереход::Создание](../../mfc/reference/cbasetransition-class.md#create).)|
-|[CCustomTransition::SetInitialValue](#setinitialvalue)|Устанавливает начальное значение, которое будет применено к переменной анимации, связанной с этим переходом.|
-|[CCustomTransition::SetInitialVelocity](#setinitialvelocity)|Устанавливает начальную скорость, которая будет применена к переменной анимации, связанной с этим переходом.|
+|[Ккустомтранситион:: Create](#create)|Вызывает библиотеку переходов для создания COM-объекта инкапсулированного перехода. (Переопределяет [CBaseTransition:: Create](../../mfc/reference/cbasetransition-class.md#create).)|
+|[Ккустомтранситион:: Сетинитиалвалуе](#setinitialvalue)|Задает начальное значение, которое будет применено к переменной анимации, связанной с этим переходом.|
+|[Ккустомтранситион:: СетинитиалвелоЦити](#setinitialvelocity)|Задает начальную скорость, которая будет применена к переменной анимации, связанной с этим переходом.|
 
 ### <a name="protected-data-members"></a>Защищенные члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CCustomTransition::m_bInitialValueSpecified](#m_binitialvaluespecified)|Уточняется, было ли первоначальное значение определено с SetInitialValue.|
-|[CCustomTransition::m_bInitialVelocitySpecified](#m_binitialvelocityspecified)|Уточняется, была ли указана начальная скорость с помощью SetInitialVelocity.|
-|[CCustomTransition::m_initialValue](#m_initialvalue)|Хранит начальное значение.|
-|[CCustomTransition::m_initialVelocity](#m_initialvelocity)|Хранит начальную скорость.|
-|[CCustomTransition::m_pInterpolator](#m_pinterpolator)|Хранит указатель для пользовательского интерполятора.|
+|[Ккустомтранситион:: m_bInitialValueSpecified](#m_binitialvaluespecified)|Указывает, было ли начальное значение указано с помощью Сетинитиалвалуе.|
+|[Ккустомтранситион:: m_bInitialVelocitySpecified](#m_binitialvelocityspecified)|Указывает, была ли Начальная скорость указана с помощью СетинитиалвелоЦити.|
+|[Ккустомтранситион:: m_initialValue](#m_initialvalue)|Сохраняет начальное значение.|
+|[Ккустомтранситион:: m_initialVelocity](#m_initialvelocity)|Сохраняет начальную скорость.|
+|[Ккустомтранситион:: m_pInterpolator](#m_pinterpolator)|Хранит указатель на пользовательский интерполяцию.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Класс CCustomTransitions позволяет разработчикам внедрять пользовательские переходы. Он создан и используется в качестве стандартного перехода, но его конструктор принимает в качестве параметра указатель для пользовательского интерполятора. Выполните следующие шаги для использования пользовательских переходов: 1. Выполнить класс от CCustomInterpolator и реализовать по крайней мере метод InterpolateValue. 2. Убедитесь, что срок службы пользовательского объекта интерполятора должен быть больше, чем продолжительность анимации, где он используется. 3. Мгновенное (с помощью нового оператора) объект CCustomTransition и передать указатель пользовательскому интерполятору в конструкторе. 4. Вызов CCustomTransition::SetInitialValue и CCustomTransition::SetInitialVelocity, если эти параметры необходимы для таможенной интерполяции. 5. Передайте указатель на пользовательский переход к методу AddTransition объекта анимации, значение которого должно быть анимировано с пользовательским алгоритмом. 6. При изменении значения объекта анимации Windows Animation API вызовет InterpolateValue (и другие соответствующие методы) в CCustomInterpolator.
+Класс Ккустомтранситионс позволяет разработчикам реализовывать пользовательские переходы. Он создается и используется в качестве стандартного перехода, но его конструктор принимает в качестве параметра указатель на настраиваемый интерполяцию. Выполните следующие действия, чтобы использовать пользовательские переходы: 1. Создайте класс, производный от Ккустоминтерполатор, и реализуйте по крайней мере метод Интерполатевалуе. 2. Убедитесь, что время существования пользовательского объекта интерполяции должно быть дольше, чем длительность анимации, в которой он используется. 3. Создание экземпляра (с помощью оператора New) объекта Ккустомтранситион и передача указателя пользовательскому интерполяции в конструкторе. 4. Вызовите Ккустомтранситион:: Сетинитиалвалуе и Ккустомтранситион:: СетинитиалвелоЦити, если эти параметры необходимы для пользовательской интерполяции. 5. Передайте указатель на пользовательский переход к методу Аддтранситион объекта анимации, значение которого должно быть анимировано с помощью пользовательского алгоритма. 6. Когда значение объекта анимации должно изменить API анимации Windows, будет вызывать Интерполатевалуе (и другие соответствующие методы) в Ккустоминтерполатор.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
 [CObject](../../mfc/reference/cobject-class.md)
 
-[CBaseПереход](../../mfc/reference/cbasetransition-class.md)
+[CBaseTransition](../../mfc/reference/cbasetransition-class.md)
 
 `CCustomTransition`
 
@@ -83,9 +84,9 @@ class CCustomTransition : public CBaseTransition;
 
 **Заголовок:** afxanimationcontroller.h
 
-## <a name="ccustomtransitionccustomtransition"></a><a name="ccustomtransition"></a>CCustomTransition::CCustomTransition
+## <a name="ccustomtransitionccustomtransition"></a><a name="ccustomtransition"></a> Ккустомтранситион:: Ккустомтранситион
 
-Строит пользовательский объект перехода.
+Конструирует пользовательский объект перехода.
 
 ```
 CCustomTransition(CCustomInterpolator* pInterpolator);
@@ -93,12 +94,12 @@ CCustomTransition(CCustomInterpolator* pInterpolator);
 
 ### <a name="parameters"></a>Параметры
 
-*pInterpolator*<br/>
-Указатель на пользовательский интерполятор.
+*пинтерполатор*<br/>
+Указатель на настраиваемый интерполяцию.
 
-## <a name="ccustomtransitioncreate"></a><a name="create"></a>CCustomTransition::Создание
+## <a name="ccustomtransitioncreate"></a><a name="create"></a> Ккустомтранситион:: Create
 
-Вызывает библиотеку перехода для создания инкапсулированного объекта переходного COM.
+Вызывает библиотеку переходов для создания COM-объекта инкапсулированного перехода.
 
 ```
 virtual BOOL Create(
@@ -109,57 +110,57 @@ virtual BOOL Create(
 ### <a name="parameters"></a>Параметры
 
 *pFactory*<br/>
-Указатель на переходную фабрику, которая отвечает за создание пользовательских переходов.
+Указатель на фабрику переходов, который отвечает за создание пользовательских переходов.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод также может установить начальное значение и начальную скорость, которые должны быть применены к переменной анимации, которая связана с этим переходом. Для этого необходимо вызвать SetInitialValue и SetInitialVelocity, прежде чем фреймворк создает инкапсулированный переходный COM объект (это происходит при вызове CAnimationController::AnimateGroup).
+Этот метод также позволяет задать начальное и начальное значение скорости для переменной анимации, связанной с этим переходом. Для этой цели необходимо вызвать Сетинитиалвалуе и СетинитиалвелоЦити, прежде чем платформа создаст объект COM для инкапсулированного перехода (это происходит при вызове Каниматионконтроллер:: Аниматеграуп).
 
-## <a name="ccustomtransitionm_binitialvaluespecified"></a><a name="m_binitialvaluespecified"></a>CCustomTransition::m_bInitialValueSpecified
+## <a name="ccustomtransitionm_binitialvaluespecified"></a><a name="m_binitialvaluespecified"></a> Ккустомтранситион:: m_bInitialValueSpecified
 
-Уточняется, было ли первоначальное значение определено с SetInitialValue.
+Указывает, было ли начальное значение указано с помощью Сетинитиалвалуе.
 
 ```
 BOOL m_bInitialValueSpecified;
 ```
 
-## <a name="ccustomtransitionm_binitialvelocityspecified"></a><a name="m_binitialvelocityspecified"></a>CCustomTransition::m_bInitialVelocitySpecified
+## <a name="ccustomtransitionm_binitialvelocityspecified"></a><a name="m_binitialvelocityspecified"></a> Ккустомтранситион:: m_bInitialVelocitySpecified
 
-Уточняется, была ли указана начальная скорость с помощью SetInitialVelocity.
+Указывает, была ли Начальная скорость указана с помощью СетинитиалвелоЦити.
 
 ```
 BOOL m_bInitialVelocitySpecified;
 ```
 
-## <a name="ccustomtransitionm_initialvalue"></a><a name="m_initialvalue"></a>CCustomTransition::m_initialValue
+## <a name="ccustomtransitionm_initialvalue"></a><a name="m_initialvalue"></a> Ккустомтранситион:: m_initialValue
 
-Хранит начальное значение.
+Сохраняет начальное значение.
 
 ```
 DOUBLE m_initialValue;
 ```
 
-## <a name="ccustomtransitionm_initialvelocity"></a><a name="m_initialvelocity"></a>CCustomTransition::m_initialVelocity
+## <a name="ccustomtransitionm_initialvelocity"></a><a name="m_initialvelocity"></a> Ккустомтранситион:: m_initialVelocity
 
-Хранит начальную скорость.
+Сохраняет начальную скорость.
 
 ```
 DOUBLE m_initialVelocity;
 ```
 
-## <a name="ccustomtransitionm_pinterpolator"></a><a name="m_pinterpolator"></a>CCustomTransition::m_pInterpolator
+## <a name="ccustomtransitionm_pinterpolator"></a><a name="m_pinterpolator"></a> Ккустомтранситион:: m_pInterpolator
 
-Хранит указатель для пользовательского интерполятора.
+Хранит указатель на пользовательский интерполяцию.
 
 ```
 CCustomInterpolator* m_pInterpolator;
 ```
 
-## <a name="ccustomtransitionsetinitialvalue"></a><a name="setinitialvalue"></a>CCustomTransition::SetInitialValue
+## <a name="ccustomtransitionsetinitialvalue"></a><a name="setinitialvalue"></a> Ккустомтранситион:: Сетинитиалвалуе
 
-Устанавливает начальное значение, которое будет применено к переменной анимации, связанной с этим переходом.
+Задает начальное значение, которое будет применено к переменной анимации, связанной с этим переходом.
 
 ```cpp
 void SetInitialValue(DOUBLE initialValue);
@@ -167,11 +168,11 @@ void SetInitialValue(DOUBLE initialValue);
 
 ### <a name="parameters"></a>Параметры
 
-*начальнаястоимость*
+*инитиалвалуе*
 
-## <a name="ccustomtransitionsetinitialvelocity"></a><a name="setinitialvelocity"></a>CCustomTransition::SetInitialVelocity
+## <a name="ccustomtransitionsetinitialvelocity"></a><a name="setinitialvelocity"></a> Ккустомтранситион:: СетинитиалвелоЦити
 
-Устанавливает начальную скорость, которая будет применена к переменной анимации, связанной с этим переходом.
+Задает начальную скорость, которая будет применена к переменной анимации, связанной с этим переходом.
 
 ```cpp
 void SetInitialVelocity(DOUBLE initialVelocity);
@@ -179,7 +180,7 @@ void SetInitialVelocity(DOUBLE initialVelocity);
 
 ### <a name="parameters"></a>Параметры
 
-*ПервоначальныйВелосити*
+*InitialVelocity равно*
 
 ## <a name="see-also"></a>См. также раздел
 

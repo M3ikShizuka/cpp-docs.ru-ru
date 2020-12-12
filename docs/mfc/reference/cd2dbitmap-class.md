@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CD2DBitmap Class'
 title: Класс CD2DBitmap
 ms.date: 11/04/2016
 f1_keywords:
@@ -51,16 +52,16 @@ helpviewer_keywords:
 - CD2DBitmap [MFC], m_strPath
 - CD2DBitmap [MFC], m_uiResID
 ms.assetid: 2b3686f1-812c-462b-b449-9f0cb6949bf6
-ms.openlocfilehash: a3cabb00ded7dbc5f9c396a1de767058443a4436
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: ab023caa92683b24098db1a03d081922e3dfd48b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754209"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227654"
 ---
 # <a name="cd2dbitmap-class"></a>Класс CD2DBitmap
 
-Обертка для ID2D1Bitmap.
+Оболочка для ID2D1Bitmap.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -68,86 +69,86 @@ ms.locfileid: "81754209"
 class CD2DBitmap : public CD2DResource;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CD2DBitmap::CD2DBitmap](#cd2dbitmap)|Перегружен. Строит объект CD2DBitmap от HBITMAP.|
-|[CD2DBitmap:: »CD2DBitmap](#_dtorcd2dbitmap)|Деструктор Вызывается при уничтожении объекта битной карты D2D.|
+|[CD2DBitmap::CD2DBitmap](#cd2dbitmap)|Перегружен. Конструирует объект CD2DBitmap из ХБИТМАП.|
+|[CD2DBitmap:: ~ CD2DBitmap](#_dtorcd2dbitmap)|Деструктор Вызывается при уничтожении объекта Bitmap D2D.|
 
 ### <a name="protected-constructors"></a>Защищенные конструкторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CD2DBitmap::CD2DBitmap](#cd2dbitmap)|Перегружен. Строит объект CD2DBitmap.|
+|[CD2DBitmap::CD2DBitmap](#cd2dbitmap)|Перегружен. Конструирует объект CD2DBitmap.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CD2DBitmap:Attach](#attach)|Прикрепляет существующий интерфейс ресурса к объекту|
-|[CD2DBitmap:CopyFromBitmap](#copyfrombitmap)|Копирует указанный регион из указанной битной карты в текущую битную карту|
-|[CD2DBitmap::CopyFromMemory](#copyfrommemory)|Копирует указанный регион из памяти в текущую битную карту|
-|[CD2DBitmap::CopyFromRenderTarget](#copyfromrendertarget)|Копирует указанный регион из указанной цели рендеринга в текущую битную карту|
-|[CD2DBitmap::Создание](#create)|Создает CD2DBitmap. (Переопределяет [CD2DРесурс::Создание](../../mfc/reference/cd2dresource-class.md#create).)|
-|[CD2DBitmap::Destroy](#destroy)|Уничтожает объект CD2DBitmap. (Переопределяет [CD2DРесурс::Destroy](../../mfc/reference/cd2dresource-class.md#destroy).)|
-|[CD2DBitmap::Detach](#detach)|Открепите интерфейс ресурса с объекта|
-|[CD2DBitmap::Get](#get)|Возвращает интерфейс ID2D1Bitmap|
-|[CD2DBitmap::GetDPI](#getdpi)|Вернуть точки на дюйм (DPI) бит-карты|
-|[CD2DBitmap:GetPixelFormat](#getpixelformat)|Извлекает формат пикселя и альфа-режим битной карты|
-|[CD2DBitmap:GetPixelSize](#getpixelsize)|Возвращает размер в зависимых от устройства единиц (пикселей) битовой карты|
-|[CD2DBitmap:GetSize](#getsize)|Возвращает размер, в устройстве-независимых пикселей (DIPs), бит-карты|
-|[CD2DBitmap::IsValid](#isvalid)|Проверка достоверности ресурса (Переопределения [CD2DРесурса:: IsValid](../../mfc/reference/cd2dresource-class.md#isvalid).)|
+|[CD2DBitmap:: Attach](#attach)|Присоединяет существующий интерфейс ресурсов к объекту|
+|[CD2DBitmap:: Копифромбитмап](#copyfrombitmap)|Копирует указанную область из указанного растрового изображения в текущее растровое изображение|
+|[CD2DBitmap:: Копифроммемори](#copyfrommemory)|Копирует указанный регион из памяти в текущее растровое изображение|
+|[CD2DBitmap:: Копифромрендертаржет](#copyfromrendertarget)|Копирует указанный регион из указанного целевого объекта отрисовки в текущее растровое изображение|
+|[CD2DBitmap:: Create](#create)|Создает CD2DBitmap. (Переопределяет [CD2DResource:: Create](../../mfc/reference/cd2dresource-class.md#create).)|
+|[CD2DBitmap::D естрой](#destroy)|Уничтожает объект CD2DBitmap. (Переопределяет [CD2DResource::D естрой](../../mfc/reference/cd2dresource-class.md#destroy).)|
+|[CD2DBitmap::D етач](#detach)|Отсоединяет интерфейс ресурса от объекта|
+|[CD2DBitmap:: Get](#get)|Возвращает интерфейс ID2D1Bitmap|
+|[CD2DBitmap:: GetDPI](#getdpi)|Возврат точек на дюйм точечного рисунка (DPI)|
+|[CD2DBitmap:: Жетпикселформат](#getpixelformat)|Получает формат пикселей и альфа-режим точечного рисунка|
+|[CD2DBitmap:: Жетпикселсизе](#getpixelsize)|Возвращает размер точечного рисунка (в пикселях), зависящих от устройства (ПКС)|
+|[CD2DBitmap:: DataSize](#getsize)|Возвращает размер точечного рисунка в пикселях, не зависящих от устройства (DIP).|
+|[CD2DBitmap:: IsValid](#isvalid)|Проверяет допустимость ресурса (переопределяет [CD2DResource:: IsValid](../../mfc/reference/cd2dresource-class.md#isvalid).)|
 
 ### <a name="protected-methods"></a>Защищенные методы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CD2DBitmap::CommonInit](#commoninit)|Инициализация объекта|
+|[CD2DBitmap:: Коммонинит](#commoninit)|Инициализирует объект|
 
 ### <a name="public-operators"></a>Открытые операторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CD2DBitmap:оператор ID2D1Bitmap](#operator_id2d1bitmap_star)|Возвращает интерфейс ID2D1Bitmap|
+|[CD2DBitmap:: operator ID2D1Bitmap *](#operator_id2d1bitmap_star)|Возвращает интерфейс ID2D1Bitmap|
 
 ### <a name="protected-data-members"></a>Защищенные члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CD2DBitmap::m_bAutoDestroyHBMP](#m_bautodestroyhbmp)|ПРАВДА, если m_hBmpSrc должны быть уничтожены; в противном случае FALSE.|
-|[CD2DBitmap::m_hBmpSrc](#m_hbmpsrc)|Ручка исходной карты.|
-|[CD2DBitmap::m_lpszType](#m_lpsztype)|Тип ресурса.|
-|[CD2DBitmap::m_pBitmap](#m_pbitmap)|Хранит указатель на объект ID2D1Bitmap.|
-|[CD2DBitmap::m_sizeDest](#m_sizedest)|Размер назначения Bitmap.|
-|[CD2DBitmap::m_strPath](#m_strpath)|Путь файла Botmap.|
-|[CD2DBitmap::m_uiResID](#m_uiresid)|Идентификатор ресурса Bitmap.|
+|[CD2DBitmap:: m_bAutoDestroyHBMP](#m_bautodestroyhbmp)|Значение TRUE, если m_hBmpSrc следует уничтожить; в противном случае — FALSE.|
+|[CD2DBitmap:: m_hBmpSrc](#m_hbmpsrc)|Маркер исходного растрового изображения.|
+|[CD2DBitmap:: m_lpszType](#m_lpsztype)|Тип ресурса.|
+|[CD2DBitmap:: m_pBitmap](#m_pbitmap)|Хранит указатель на объект ID2D1Bitmap.|
+|[CD2DBitmap:: m_sizeDest](#m_sizedest)|Размер назначения точечного рисунка.|
+|[CD2DBitmap:: m_strPath](#m_strpath)|Путь к файлу ботмап.|
+|[CD2DBitmap:: m_uiResID](#m_uiresid)|Идентификатор ресурса точечного рисунка.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
 [CObject](../../mfc/reference/cobject-class.md)
 
-[CD2DРесурс](../../mfc/reference/cd2dresource-class.md)
+[CD2DResource](../../mfc/reference/cd2dresource-class.md)
 
 `CD2DBitmap`
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxrendertarget.h
+**Заголовок:** афксрендертаржет. h
 
-## <a name="cd2dbitmapcd2dbitmap"></a><a name="_dtorcd2dbitmap"></a>CD2DBitmap:: »CD2DBitmap
+## <a name="cd2dbitmapcd2dbitmap"></a><a name="_dtorcd2dbitmap"></a> CD2DBitmap:: ~ CD2DBitmap
 
-Деструктор Вызывается при уничтожении объекта битной карты D2D.
+Деструктор Вызывается при уничтожении объекта Bitmap D2D.
 
 ```
 virtual ~CD2DBitmap();
 ```
 
-## <a name="cd2dbitmapattach"></a><a name="attach"></a>CD2DBitmap:Attach
+## <a name="cd2dbitmapattach"></a><a name="attach"></a> CD2DBitmap:: Attach
 
-Прикрепляет существующий интерфейс ресурса к объекту.
+Присоединяет существующий интерфейс ресурсов к объекту.
 
 ```cpp
 void Attach(ID2D1Bitmap* pResource);
@@ -155,12 +156,12 @@ void Attach(ID2D1Bitmap* pResource);
 
 ### <a name="parameters"></a>Параметры
 
-*pResource*<br/>
-Существующий интерфейс ресурса. Не может быть NULL.
+*исходный код*<br/>
+Существующий интерфейс ресурсов. Не может быть NULL.
 
-## <a name="cd2dbitmapcd2dbitmap"></a><a name="cd2dbitmap"></a>CD2DBitmap::CD2DBitmap
+## <a name="cd2dbitmapcd2dbitmap"></a><a name="cd2dbitmap"></a> CD2DBitmap::CD2DBitmap
 
-Строит объект CD2DBitmap из ресурса.
+Конструирует объект CD2DBitmap из ресурса.
 
 ```
 CD2DBitmap(
@@ -189,28 +190,28 @@ CD2DBitmap(
 
 ### <a name="parameters"></a>Параметры
 
-*pParentTarget*<br/>
-Указатель на цель рендера.
+*ппаренттаржет*<br/>
+Указатель на целевой объект прорисовки.
 
-*uiResID*<br/>
-Идентификационный номер ресурса.
+*уиресид*<br/>
+ИДЕНТИФИКАЦИОНный номер ресурса.
 
-*lpszType*<br/>
-Указатель на нулевую строку, содержащую тип ресурса.
+*лпсзтипе*<br/>
+Указатель на строку, завершающуюся нулем, которая содержит тип ресурса.
 
-*размерDest*<br/>
-Размер назначения битной карты.
+*самый заданный размер*<br/>
+Целевой размер точечного рисунка.
 
-*bAutoDestroy*<br/>
-Означает, что объект будет уничтожен владельцем (pParentTarget).
+*баутодестрой*<br/>
+Указывает, что объект будет уничтожен владельцем (Ппаренттаржет).
 
-*lpszPath*<br/>
-Указатель на нулевую строку, содержащую имя файла.
+*лпсзпас*<br/>
+Указатель на строку, завершающуюся нулем, которая содержит имя файла.
 
-*hbmpSrc*<br/>
-Ручка к бит-карте.
+*хбмпсрк*<br/>
+Маркер для точечного рисунка.
 
-## <a name="cd2dbitmapcommoninit"></a><a name="commoninit"></a>CD2DBitmap::CommonInit
+## <a name="cd2dbitmapcommoninit"></a><a name="commoninit"></a> CD2DBitmap:: Коммонинит
 
 Инициализирует объект.
 
@@ -218,9 +219,9 @@ CD2DBitmap(
 void CommonInit();
 ```
 
-## <a name="cd2dbitmapcopyfrombitmap"></a><a name="copyfrombitmap"></a>CD2DBitmap:CopyFromBitmap
+## <a name="cd2dbitmapcopyfrombitmap"></a><a name="copyfrombitmap"></a> CD2DBitmap:: Копифромбитмап
 
-Копирует указанный регион из указанной битовой карты в текущую битную карту.
+Копирует указанную область из указанного растрового изображения в текущее растровое изображение.
 
 ```
 HRESULT CopyFromBitmap(
@@ -231,22 +232,22 @@ HRESULT CopyFromBitmap(
 
 ### <a name="parameters"></a>Параметры
 
-*pBitmap*<br/>
-Биткарта для копирования.
+*пбитмап*<br/>
+Битовая карта, из которой производится копирование.
 
-*destPoint*<br/>
-В текущей биткарте скопирован верхний левый угол области, в которую указывает область srcRect.
+*дестпоинт*<br/>
+В текущем битовом рисунке верхний левый угол области, в которую копируется регион, заданный параметром srcRect.
 
 *srcRect*<br/>
-Область бит-карты для копирования.
+Область копируемого растрового изображения.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод завершается успешно, возвращает значение S_OK. В противном случае он возвращает код ошибки HRESULT.
+Если метод завершается успешно, возвращает значение S_OK. В противном случае возвращается код ошибки HRESULT.
 
-## <a name="cd2dbitmapcopyfrommemory"></a><a name="copyfrommemory"></a>CD2DBitmap::CopyFromMemory
+## <a name="cd2dbitmapcopyfrommemory"></a><a name="copyfrommemory"></a> CD2DBitmap:: Копифроммемори
 
-Копирует указанный регион из памяти в текущую битную карту.
+Копирует указанный регион из памяти в текущее растровое изображение.
 
 ```
 HRESULT CopyFromMemory(
@@ -260,19 +261,19 @@ HRESULT CopyFromMemory(
 *srcData*<br/>
 Копируемые данные.
 
-*Шаг*<br/>
-Шаг, или шаг, исходной битной карты, хранящейся в srcData. Шаг — это количество байт сканлина (один ряд пикселей в памяти). Шаг можно вычислить по следующей \* формуле: ширина пикселя байтами на пиксель и обивка памяти.
+*тон*<br/>
+Шаг или шаг исходного растрового изображения, хранящегося в srcData. Шаг — это число байтов сканлине (одна строка пикселей в памяти). Шаг можно вычислить по следующей формуле: ширина пикселей \* в байтах на пиксель и заполнение памяти.
 
-*destRect*<br/>
-В текущей биткарте скопирован верхний левый угол области, в которую указывает область srcRect.
+*дестрект*<br/>
+В текущем битовом рисунке верхний левый угол области, в которую копируется регион, заданный параметром srcRect.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод завершается успешно, возвращает значение S_OK. В противном случае он возвращает код ошибки HRESULT.
+Если метод завершается успешно, возвращает значение S_OK. В противном случае возвращается код ошибки HRESULT.
 
-## <a name="cd2dbitmapcopyfromrendertarget"></a><a name="copyfromrendertarget"></a>CD2DBitmap::CopyFromRenderTarget
+## <a name="cd2dbitmapcopyfromrendertarget"></a><a name="copyfromrendertarget"></a> CD2DBitmap:: Копифромрендертаржет
 
-Копирует указанный регион из указанной цели влирении в текущую битную карту.
+Копирует указанный регион из указанного целевого объекта отрисовки в текущее растровое изображение.
 
 ```
 HRESULT CopyFromRenderTarget(
@@ -283,20 +284,20 @@ HRESULT CopyFromRenderTarget(
 
 ### <a name="parameters"></a>Параметры
 
-*pRenderTarget*<br/>
-Цель рендеринга, содержащая область для копирования.
+*прендертаржет*<br/>
+Целевой объект отрисовки, содержащий копируемый регион.
 
-*destPoint*<br/>
-В текущей биткарте скопирован верхний левый угол области, в которую указывает область srcRect.
+*дестпоинт*<br/>
+В текущем битовом рисунке верхний левый угол области, в которую копируется регион, заданный параметром srcRect.
 
 *srcRect*<br/>
-Область renderTarget для копирования.
+Область Рендертаржет для копирования.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод завершается успешно, возвращает значение S_OK. В противном случае он возвращает код ошибки HRESULT.
+Если метод завершается успешно, возвращает значение S_OK. В противном случае возвращается код ошибки HRESULT.
 
-## <a name="cd2dbitmapcreate"></a><a name="create"></a>CD2DBitmap::Создание
+## <a name="cd2dbitmapcreate"></a><a name="create"></a> CD2DBitmap:: Create
 
 Создает CD2DBitmap.
 
@@ -306,14 +307,14 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 
 ### <a name="parameters"></a>Параметры
 
-*pRenderTarget*<br/>
-Указатель на цель рендера.
+*прендертаржет*<br/>
+Указатель на целевой объект прорисовки.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод завершается успешно, возвращает значение S_OK. В противном случае он возвращает код ошибки HRESULT.
+Если метод завершается успешно, возвращает значение S_OK. В противном случае возвращается код ошибки HRESULT.
 
-## <a name="cd2dbitmapdestroy"></a><a name="destroy"></a>CD2DBitmap::Destroy
+## <a name="cd2dbitmapdestroy"></a><a name="destroy"></a> CD2DBitmap::D естрой
 
 Уничтожает объект CD2DBitmap.
 
@@ -321,9 +322,9 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 virtual void Destroy();
 ```
 
-## <a name="cd2dbitmapdetach"></a><a name="detach"></a>CD2DBitmap::Detach
+## <a name="cd2dbitmapdetach"></a><a name="detach"></a> CD2DBitmap::D етач
 
-Отсоединяет интерфейс ресурса с объекта.
+Отсоединяет интерфейс ресурса от объекта.
 
 ```
 ID2D1Bitmap* Detach();
@@ -331,9 +332,9 @@ ID2D1Bitmap* Detach();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на отдельный интерфейс ресурса.
+Указатель на отсоединенный интерфейс ресурсов.
 
-## <a name="cd2dbitmapget"></a><a name="get"></a>CD2DBitmap::Get
+## <a name="cd2dbitmapget"></a><a name="get"></a> CD2DBitmap:: Get
 
 Возвращает интерфейс ID2D1Bitmap.
 
@@ -343,11 +344,11 @@ ID2D1Bitmap* Get();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на интерфейс ID2D1Bitmap или NULL, если объект еще не инициализирован.
+Указатель на интерфейс ID2D1Bitmap или значение NULL, если объект еще не инициализирован.
 
-## <a name="cd2dbitmapgetdpi"></a><a name="getdpi"></a>CD2DBitmap::GetDPI
+## <a name="cd2dbitmapgetdpi"></a><a name="getdpi"></a> CD2DBitmap:: GetDPI
 
-Верните точки на дюйм (DPI) битной карты.
+Возврат точек на дюйм точечного рисунка (DPI).
 
 ```
 CD2DSizeF GetDPI() const;
@@ -355,11 +356,11 @@ CD2DSizeF GetDPI() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Горизонтальный и вертикальный DPI битной карты.
+Горизонтальное и вертикальное разрешение точечного рисунка.
 
-## <a name="cd2dbitmapgetpixelformat"></a><a name="getpixelformat"></a>CD2DBitmap:GetPixelFormat
+## <a name="cd2dbitmapgetpixelformat"></a><a name="getpixelformat"></a> CD2DBitmap:: Жетпикселформат
 
-Извлекает формат пикселя и альфа-режим битной карты
+Получает формат пикселей и альфа-режим точечного рисунка
 
 ```
 D2D1_PIXEL_FORMAT GetPixelFormat() const;
@@ -367,11 +368,11 @@ D2D1_PIXEL_FORMAT GetPixelFormat() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Формат пикселей и альфа-режим битной карты.
+Формат пикселей и альфа-режим точечного рисунка.
 
-## <a name="cd2dbitmapgetpixelsize"></a><a name="getpixelsize"></a>CD2DBitmap:GetPixelSize
+## <a name="cd2dbitmapgetpixelsize"></a><a name="getpixelsize"></a> CD2DBitmap:: Жетпикселсизе
 
-Возвращает размер, в устройстве-зависимых единицах (пикселей), битной карты.
+Возвращает размер точечного рисунка в единицах измерения, зависящих от устройства (в пикселях).
 
 ```
 CD2DSizeU GetPixelSize() const;
@@ -379,11 +380,11 @@ CD2DSizeU GetPixelSize() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Размер, в пикселях, бит-карты.
+Размер точечного рисунка (в пикселях).
 
-## <a name="cd2dbitmapgetsize"></a><a name="getsize"></a>CD2DBitmap:GetSize
+## <a name="cd2dbitmapgetsize"></a><a name="getsize"></a> CD2DBitmap:: DataSize
 
-Возвращает размер в независящих от устройств пикселей (DIPs) битовой карты.
+Возвращает размер точечного рисунка в пикселях, не зависящих от устройства (DIP).
 
 ```
 CD2DSizeF GetSize() const;
@@ -391,11 +392,11 @@ CD2DSizeF GetSize() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Размер, в DIPs, бит-карты.
+Размер точечного рисунка в DIP.
 
-## <a name="cd2dbitmapisvalid"></a><a name="isvalid"></a>CD2DBitmap::IsValid
+## <a name="cd2dbitmapisvalid"></a><a name="isvalid"></a> CD2DBitmap:: IsValid
 
-Проверка достоверности ресурса.
+Проверяет допустимость ресурсов.
 
 ```
 virtual BOOL IsValid() const;
@@ -403,25 +404,25 @@ virtual BOOL IsValid() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если ресурс действителен; в противном случае FALSE.
+Значение TRUE, если ресурс является допустимым; в противном случае — FALSE.
 
-## <a name="cd2dbitmapm_bautodestroyhbmp"></a><a name="m_bautodestroyhbmp"></a>CD2DBitmap::m_bAutoDestroyHBMP
+## <a name="cd2dbitmapm_bautodestroyhbmp"></a><a name="m_bautodestroyhbmp"></a> CD2DBitmap:: m_bAutoDestroyHBMP
 
-ПРАВДА, если m_hBmpSrc должны быть уничтожены; в противном случае FALSE.
+Значение TRUE, если m_hBmpSrc следует уничтожить; в противном случае — FALSE.
 
 ```
 BOOL m_bAutoDestroyHBMP;
 ```
 
-## <a name="cd2dbitmapm_hbmpsrc"></a><a name="m_hbmpsrc"></a>CD2DBitmap::m_hBmpSrc
+## <a name="cd2dbitmapm_hbmpsrc"></a><a name="m_hbmpsrc"></a> CD2DBitmap:: m_hBmpSrc
 
-Ручка исходной карты.
+Маркер исходного растрового изображения.
 
 ```
 HBITMAP m_hBmpSrc;
 ```
 
-## <a name="cd2dbitmapm_lpsztype"></a><a name="m_lpsztype"></a>CD2DBitmap::m_lpszType
+## <a name="cd2dbitmapm_lpsztype"></a><a name="m_lpsztype"></a> CD2DBitmap:: m_lpszType
 
 Тип ресурса.
 
@@ -429,7 +430,7 @@ HBITMAP m_hBmpSrc;
 LPCTSTR m_lpszType;
 ```
 
-## <a name="cd2dbitmapm_pbitmap"></a><a name="m_pbitmap"></a>CD2DBitmap::m_pBitmap
+## <a name="cd2dbitmapm_pbitmap"></a><a name="m_pbitmap"></a> CD2DBitmap:: m_pBitmap
 
 Хранит указатель на объект ID2D1Bitmap.
 
@@ -437,31 +438,31 @@ LPCTSTR m_lpszType;
 ID2D1Bitmap* m_pBitmap;
 ```
 
-## <a name="cd2dbitmapm_sizedest"></a><a name="m_sizedest"></a>CD2DBitmap::m_sizeDest
+## <a name="cd2dbitmapm_sizedest"></a><a name="m_sizedest"></a> CD2DBitmap:: m_sizeDest
 
-Размер назначения Bitmap.
+Размер назначения точечного рисунка.
 
 ```
 CD2DSizeU m_sizeDest;
 ```
 
-## <a name="cd2dbitmapm_strpath"></a><a name="m_strpath"></a>CD2DBitmap::m_strPath
+## <a name="cd2dbitmapm_strpath"></a><a name="m_strpath"></a> CD2DBitmap:: m_strPath
 
-Путь файла Botmap.
+Путь к файлу ботмап.
 
 ```
 CString m_strPath;
 ```
 
-## <a name="cd2dbitmapm_uiresid"></a><a name="m_uiresid"></a>CD2DBitmap::m_uiResID
+## <a name="cd2dbitmapm_uiresid"></a><a name="m_uiresid"></a> CD2DBitmap:: m_uiResID
 
-Идентификатор ресурса Bitmap.
+Идентификатор ресурса точечного рисунка.
 
 ```
 UINT m_uiResID;
 ```
 
-## <a name="cd2dbitmapoperator-id2d1bitmap"></a><a name="operator_id2d1bitmap_star"></a>CD2DBitmap:оператор ID2D1Bitmap
+## <a name="cd2dbitmapoperator-id2d1bitmap"></a><a name="operator_id2d1bitmap_star"></a> CD2DBitmap:: operator ID2D1Bitmap *
 
 Возвращает интерфейс ID2D1Bitmap
 
@@ -471,7 +472,7 @@ operator ID2D1Bitmap*();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на интерфейс ID2D1Bitmap или NULL, если объект еще не инициализирован.
+Указатель на интерфейс ID2D1Bitmap или значение NULL, если объект еще не инициализирован.
 
 ## <a name="see-also"></a>См. также раздел
 

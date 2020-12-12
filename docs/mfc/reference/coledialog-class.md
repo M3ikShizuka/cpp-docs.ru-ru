@@ -1,5 +1,6 @@
 ---
-title: Класс COleDialog
+description: 'Дополнительные сведения о: Коледиалог Class'
+title: Класс Коледиалог
 ms.date: 11/04/2016
 f1_keywords:
 - COleDialog
@@ -8,14 +9,14 @@ f1_keywords:
 helpviewer_keywords:
 - COleDialog [MFC], GetLastError
 ms.assetid: b1ed0aca-3914-4b00-af34-4a4fb491aec7
-ms.openlocfilehash: 6a1983d426e97dd8063aee2857dc36557aa20677
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9bdb532d58136ac2aac622fa88f674e60ec7221e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366097"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227303"
 ---
-# <a name="coledialog-class"></a>Класс COleDialog
+# <a name="coledialog-class"></a>Класс Коледиалог
 
 Предоставляет стандартные функции для диалоговых окон OLE.
 
@@ -25,17 +26,17 @@ ms.locfileid: "81366097"
 class COleDialog : public CCommonDialog
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[ColeDialog::GetLastError](#getlasterror)|Возвращает код ошибки в диалоговое окно.|
+|[Коледиалог:: GetLastError](#getlasterror)|Возвращает код ошибки, возвращенный диалоговым окном.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Библиотека класса Фонда Майкрософт предоставляет `COleDialog`несколько классов, полученных из:
+Библиотека Microsoft Foundation Class предоставляет несколько классов, производных от `COleDialog` :
 
 - [COleInsertDialog](../../mfc/reference/coleinsertdialog-class.md)
 
@@ -55,7 +56,7 @@ class COleDialog : public CCommonDialog
 
 - [COleChangeSourceDialog](../../mfc/reference/colechangesourcedialog-class.md)
 
-Для получения дополнительной информации о OL-специфических диалоговых ящиков, [см.](../../mfc/dialog-boxes-in-ole.md)
+Дополнительные сведения о диалоговых окнах, связанных с OLE, см. в разделе [диалоговые окна статьи в OLE](../../mfc/dialog-boxes-in-ole.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -73,11 +74,11 @@ class COleDialog : public CCommonDialog
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxodlgs.h
+**Заголовок:** афксодлгс. h
 
-## <a name="coledialoggetlasterror"></a><a name="getlasterror"></a>ColeDialog::GetLastError
+## <a name="coledialoggetlasterror"></a><a name="getlasterror"></a> Коледиалог:: GetLastError
 
-Позвоните `GetLastError` функции участника, чтобы `DoModal` получить дополнительную информацию об ошибке при возврате IDABORT.
+Вызовите `GetLastError` функцию члена, чтобы получить дополнительные сведения об ошибке при `DoModal` возвращении идаборт.
 
 ```
 UINT GetLastError() const;
@@ -85,13 +86,13 @@ UINT GetLastError() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Коды ошибок, `GetLastError` возвращенные в зависимости от отображаемого окна диалога.
+Коды ошибок, возвращаемые, `GetLastError` зависят от отображаемого диалогового окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Просматривайте `DoModal` функцию участника в производных классах для получения информации о конкретных сообщениях об ошибках.
+`DoModal`Сведения о конкретных сообщениях об ошибках см. в описании функции члена в производных классах.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс CCommonДиалог](../../mfc/reference/ccommondialog-class.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)
+[Класс Ккоммондиалог](../../mfc/reference/ccommondialog-class.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)

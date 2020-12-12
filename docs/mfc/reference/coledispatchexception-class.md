@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: COleDispatchException Class'
 title: Класс COleDispatchException
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - COleDispatchException [MFC], m_strSource
 - COleDispatchException [MFC], m_wCode
 ms.assetid: 0e95c8be-e21a-490c-99ec-181c6a9a26d0
-ms.openlocfilehash: 4572b639b757569d8e3cfa731f99c123762f3900
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 39d8c4652f49b721e5f94c05319e5c1adad07269
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375065"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227212"
 ---
 # <a name="coledispatchexception-class"></a>Класс COleDispatchException
 
@@ -33,25 +34,25 @@ ms.locfileid: "81375065"
 class COleDispatchException : public CException
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[ColeDispatchИсключение::m_dwHelpContext](#m_dwhelpcontext)|Справка контекст для ошибки.|
-|[ColeDispatchИсключение::m_strDescription](#m_strdescription)|Описание вербальной ошибки.|
-|[ColeDispatchИсключение::m_strHelpFile](#m_strhelpfile)|Справка файл `m_dwHelpContext`для использования с .|
-|[ColeDispatchИсключение::m_strSource](#m_strsource)|Приложение, генерируемое исключением.|
-|[ColeDispatchИсключение::m_wCode](#m_wcode)|`IDispatch`-специфический код ошибки.|
+|[COleDispatchException:: m_dwHelpContext](#m_dwhelpcontext)|Контекст справки для ошибки.|
+|[COleDispatchException:: m_strDescription](#m_strdescription)|Описание ошибки текстовом.|
+|[COleDispatchException:: m_strHelpFile](#m_strhelpfile)|Файл справки для использования с `m_dwHelpContext` .|
+|[COleDispatchException:: m_strSource](#m_strsource)|Приложение, создавшее исключение.|
+|[COleDispatchException:: m_wCode](#m_wcode)|`IDispatch`код ошибки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Как и другие классы `CException` исключений, полученные из базового класса, `COleDispatchException` могут использоваться с macros THROW, THROW_LAST, TRY, CATCH, AND_CATCH и END_CATCH.
+Как и другие классы исключений, производные от `CException` базового класса, `COleDispatchException` можно использовать с макросами THROW, THROW_LAST, try, CATCH, AND_CATCH и END_CATCH.
 
-В общем, вы должны вызвать [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) для создания и броска `COleDispatchException` объекта.
+Как правило, следует вызывать [афкссроволедиспатчексцептион](exception-processing.md#afxthrowoledispatchexception) для создания и вызова `COleDispatchException` объекта.
 
-Для получения дополнительной информации об [Exception Handling (MFC)](../../mfc/exception-handling-in-mfc.md) исключениях см. [Exceptions: OLE Exceptions](../../mfc/exceptions-ole-exceptions.md)
+Дополнительные сведения об исключениях см. в статьях [обработка исключений (MFC)](../../mfc/exception-handling-in-mfc.md) и [исключения: OLE Exceptions](../../mfc/exceptions-ole-exceptions.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -65,49 +66,49 @@ class COleDispatchException : public CException
 
 **Заголовок:** afxdisp.h
 
-## <a name="coledispatchexceptionm_dwhelpcontext"></a><a name="m_dwhelpcontext"></a>ColeDispatchИсключение::m_dwHelpContext
+## <a name="coledispatchexceptionm_dwhelpcontext"></a><a name="m_dwhelpcontext"></a> COleDispatchException:: m_dwHelpContext
 
-Определяет контекст справки в справке приложения (. HLP) файл.
+Определяет контекст справки в справке приложения (. Файл HLP).
 
 ```
 DWORD m_dwHelpContext;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот элемент устанавливается функцией [AfxThrowOleDispatchException,](exception-processing.md#afxthrowoledispatchexception) когда выбрасывается исключение.
+Этот элемент задается функцией [афкссроволедиспатчексцептион](exception-processing.md#afxthrowoledispatchexception) при возникновении исключения.
 
 ### <a name="example"></a>Пример
 
   См. пример для [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).
 
-## <a name="coledispatchexceptionm_strdescription"></a><a name="m_strdescription"></a>ColeDispatchИсключение::m_strDescription
+## <a name="coledispatchexceptionm_strdescription"></a><a name="m_strdescription"></a> COleDispatchException:: m_strDescription
 
-Содержит устное описание ошибки, например "Диск полный".
+Содержит описание ошибки текстовом, например "диск полон".
 
 ```
 CString m_strDescription;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот элемент устанавливается функцией [AfxThrowOleDispatchException,](exception-processing.md#afxthrowoledispatchexception) когда выбрасывается исключение.
+Этот элемент задается функцией [афкссроволедиспатчексцептион](exception-processing.md#afxthrowoledispatchexception) при возникновении исключения.
 
 ### <a name="example"></a>Пример
 
   См. пример для [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).
 
-## <a name="coledispatchexceptionm_strhelpfile"></a><a name="m_strhelpfile"></a>ColeDispatchИсключение::m_strHelpFile
+## <a name="coledispatchexceptionm_strhelpfile"></a><a name="m_strhelpfile"></a> COleDispatchException:: m_strHelpFile
 
-Платформа заполняет эту строку с именем файла справки приложения.
+Платформа заполняет эту строку именем файла справки приложения.
 
 ```
 CString m_strHelpFile;
 ```
 
-## <a name="coledispatchexceptionm_strsource"></a><a name="m_strsource"></a>ColeDispatchИсключение::m_strSource
+## <a name="coledispatchexceptionm_strsource"></a><a name="m_strsource"></a> COleDispatchException:: m_strSource
 
-Платформа заполняет эту строку с именем приложения, которое создало исключение.
+Платформа заполняет эту строку именем приложения, создавшего исключение.
 
 ```
 CString m_strSource;
@@ -117,22 +118,22 @@ CString m_strSource;
 
   См. пример для [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).
 
-## <a name="coledispatchexceptionm_wcode"></a><a name="m_wcode"></a>ColeDispatchИсключение::m_wCode
+## <a name="coledispatchexceptionm_wcode"></a><a name="m_wcode"></a> COleDispatchException:: m_wCode
 
-Содержит код ошибки, характерный для приложения.
+Содержит код ошибки, относящийся к вашему приложению.
 
 ```
 WORD m_wCode;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот элемент устанавливается функцией [AfxThrowOleDispatchException,](exception-processing.md#afxthrowoledispatchexception) когда выбрасывается исключение.
+Этот элемент задается функцией [афкссроволедиспатчексцептион](exception-processing.md#afxthrowoledispatchexception) при возникновении исключения.
 
 ## <a name="see-also"></a>См. также раздел
 
-[MFC Пример CALCDRIV](../../overview/visual-cpp-samples.md)<br/>
+[Пример CALCDRIV в MFC](../../overview/visual-cpp-samples.md)<br/>
 [Класс CException](../../mfc/reference/cexception-class.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
-[Класс ColeDispatchDriver](../../mfc/reference/coledispatchdriver-class.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
+[Класс COleDispatchDriver](../../mfc/reference/coledispatchdriver-class.md)<br/>
 [Класс COleException](../../mfc/reference/coleexception-class.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: COleDispatchDriver Class'
 title: Класс COleDispatchDriver
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - COleDispatchDriver [MFC], m_bAutoRelease
 - COleDispatchDriver [MFC], m_lpDispatch
 ms.assetid: 3ed98daf-cdc7-4374-8a0c-cf695a8d3657
-ms.openlocfilehash: 27520f09506698833b1449552ce669223cc0c4c6
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 0006f7922820602dd7a4a927b8064fc9e75f76f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520646"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227251"
 ---
 # <a name="coledispatchdriver-class"></a>Класс COleDispatchDriver
 
@@ -43,7 +44,7 @@ ms.locfileid: "87520646"
 class COleDispatchDriver
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -65,21 +66,21 @@ class COleDispatchDriver
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[COleDispatchDriver:: operator =](#operator_eq)|Копирует исходное значение в `COleDispatchDriver` объект.|
 |[COleDispatchDriver:: operator ЛПДИСПАТЧ](#operator_lpdispatch)|Обращается к базовому `IDispatch` указателю.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[COleDispatchDriver:: m_bAutoRelease](#m_bautorelease)|Указывает, следует ли освободить `IDispatch` во время `ReleaseDispatch` или уничтожения объекта.|
 |[COleDispatchDriver:: m_lpDispatch](#m_lpdispatch)|Указывает указатель на интерфейс, `IDispatch` присоединенный к объекту `COleDispatchDriver` .|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-`COleDispatchDriver`не имеет базового класса.
+`COleDispatchDriver` не имеет базового класса.
 
 Интерфейсы диспетчеризации OLE предоставляют доступ к методам и свойствам объекта. Функции-члены `COleDispatchDriver` присоединения, отсоединения, создания и освобождения подключения диспетчеризации типа `IDispatch` . Другие функции элементов используют списки аргументов переменных для упрощения вызова `IDispatch::Invoke` .
 
@@ -99,7 +100,7 @@ class COleDispatchDriver
 
 **Заголовок:** afxdisp.h
 
-## <a name="coledispatchdriverattachdispatch"></a><a name="attachdispatch"></a>COleDispatchDriver:: Аттачдиспатч
+## <a name="coledispatchdriverattachdispatch"></a><a name="attachdispatch"></a> COleDispatchDriver:: Аттачдиспатч
 
 Функция-член `AttachDispatch` вызывается для того, чтобы присоединить указатель `IDispatch` к объекту `COleDispatchDriver` . Дополнительные сведения см. в разделе [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).
 
@@ -117,7 +118,7 @@ void AttachDispatch(
 *бауторелеасе*<br/>
 Определяет, следует ли освободить диспетчер, когда этот объект выходит из области действия.
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Комментарии
 
 Эта функция освобождает все указатели `IDispatch` , которые уже присоединены к объекту `COleDispatchDriver` .
 
@@ -125,7 +126,7 @@ void AttachDispatch(
 
 [!code-cpp[NVC_MFCOleContainer#3](../../mfc/codesnippet/cpp/coledispatchdriver-class_1.cpp)]
 
-## <a name="coledispatchdrivercoledispatchdriver"></a><a name="coledispatchdriver"></a>COleDispatchDriver:: COleDispatchDriver
+## <a name="coledispatchdrivercoledispatchdriver"></a><a name="coledispatchdriver"></a> COleDispatchDriver:: COleDispatchDriver
 
 Формирует объект `COleDispatchDriver`.
 
@@ -146,7 +147,7 @@ COleDispatchDriver(const COleDispatchDriver& dispatchSrc);
 *диспатчсрк*<br/>
 Ссылка на существующий `COleDispatchDriver` объект.
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Комментарии
 
 Форма `COleDispatchDriver( LPDISPATCH lpDispatch, BOOL bAutoRelease = TRUE )` соединяет интерфейс [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) .
 
@@ -158,7 +159,7 @@ COleDispatchDriver(const COleDispatchDriver& dispatchSrc);
 
   См. пример для [COleDispatchDriver::CreateDispatch](#createdispatch).
 
-## <a name="coledispatchdrivercreatedispatch"></a><a name="createdispatch"></a>COleDispatchDriver:: Креатедиспатч
+## <a name="coledispatchdrivercreatedispatch"></a><a name="createdispatch"></a> COleDispatchDriver:: Креатедиспатч
 
 Создает объект интерфейса [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) и присоединяет его к объекту `COleDispatchDriver` .
 
@@ -191,7 +192,7 @@ BOOL CreateDispatch(
 
 [!code-cpp[NVC_MFCOleContainer#4](../../mfc/codesnippet/cpp/coledispatchdriver-class_2.cpp)]
 
-## <a name="coledispatchdriverdetachdispatch"></a><a name="detachdispatch"></a>COleDispatchDriver::D Етачдиспатч
+## <a name="coledispatchdriverdetachdispatch"></a><a name="detachdispatch"></a> COleDispatchDriver::D Етачдиспатч
 
 Отсоединяет текущее `IDispatch` соединение от этого объекта.
 
@@ -203,7 +204,7 @@ LPDISPATCH DetachDispatch();
 
 Указатель на ранее присоединенный объект OLE `IDispatch` .
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Комментарии
 
 `IDispatch`Не освобождается.
 
@@ -213,7 +214,7 @@ LPDISPATCH DetachDispatch();
 
 [!code-cpp[NVC_MFCOleContainer#5](../../mfc/codesnippet/cpp/coledispatchdriver-class_3.cpp)]
 
-## <a name="coledispatchdrivergetproperty"></a><a name="getproperty"></a>COleDispatchDriver:: Property
+## <a name="coledispatchdrivergetproperty"></a><a name="getproperty"></a> COleDispatchDriver:: Property
 
 Возвращает свойство объекта, заданное параметром *двдиспид*.
 
@@ -239,7 +240,7 @@ void GetProperty(
 
 [!code-cpp[NVC_MFCOleContainer#6](../../mfc/codesnippet/cpp/coledispatchdriver-class_4.cpp)]
 
-## <a name="coledispatchdriverinvokehelper"></a><a name="invokehelper"></a>COleDispatchDriver:: InvokeHelper
+## <a name="coledispatchdriverinvokehelper"></a><a name="invokehelper"></a> COleDispatchDriver:: InvokeHelper
 
 Вызывает метод или свойство объекта, заданное параметром *двдиспид*, в контексте, заданном параметром *вфлагс*.
 
@@ -272,13 +273,13 @@ void AFX_CDECL InvokeHelper(
 *...*<br/>
 Список переменных параметров типов, указанных в *пбпараминфо*.
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Комментарии
 
 Параметр *пбпараминфо* задает типы параметров, передаваемых методу или свойству. Переменный список аргументов представлен в объявлении синтаксиса как **...** .
 
 Возможные значения для аргумента *втрет* взяты из перечисления VARENUM. Возможные значения:
 
-|Символ|Возвращаемый тип|
+|Символ|Тип возвращаемых данных|
 |------------|-----------------|
 |VT_EMPTY|**`void`**|
 |VT_I2|**`short`**|
@@ -304,7 +305,7 @@ void AFX_CDECL InvokeHelper(
 
   См. пример для [COleDispatchDriver::CreateDispatch](#createdispatch).
 
-## <a name="coledispatchdriverm_bautorelease"></a><a name="m_bautorelease"></a>COleDispatchDriver:: m_bAutoRelease
+## <a name="coledispatchdriverm_bautorelease"></a><a name="m_bautorelease"></a> COleDispatchDriver:: m_bAutoRelease
 
 Если значение — TRUE, COM-объект, к которому обращается [m_lpDispatch](#m_lpdispatch) , будет автоматически освобожден при вызове [релеаседиспатч](#releasedispatch) или при `COleDispatchDriver` уничтожении этого объекта.
 
@@ -312,7 +313,7 @@ void AFX_CDECL InvokeHelper(
 BOOL m_bAutoRelease;
 ```
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Комментарии
 
 По умолчанию `m_bAutoRelease` в конструкторе задано значение true.
 
@@ -322,7 +323,7 @@ BOOL m_bAutoRelease;
 
 [!code-cpp[NVC_MFCOleContainer#9](../../mfc/codesnippet/cpp/coledispatchdriver-class_5.cpp)]
 
-## <a name="coledispatchdriverm_lpdispatch"></a><a name="m_lpdispatch"></a>COleDispatchDriver:: m_lpDispatch
+## <a name="coledispatchdriverm_lpdispatch"></a><a name="m_lpdispatch"></a> COleDispatchDriver:: m_lpDispatch
 
 Указатель на интерфейс, `IDispatch` присоединенный к объекту `COleDispatchDriver` .
 
@@ -330,7 +331,7 @@ BOOL m_bAutoRelease;
 LPDISPATCH m_lpDispatch;
 ```
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Комментарии
 
 `m_lpDispatch`Элемент данных является открытой переменной типа лпдиспатч.
 
@@ -340,7 +341,7 @@ LPDISPATCH m_lpDispatch;
 
   См. пример для [COleDispatchDriver:: аттачдиспатч](#attachdispatch).
 
-## <a name="coledispatchdriveroperator-"></a><a name="operator_eq"></a>COleDispatchDriver:: operator =
+## <a name="coledispatchdriveroperator-"></a><a name="operator_eq"></a> COleDispatchDriver:: operator =
 
 Копирует исходное значение в `COleDispatchDriver` объект.
 
@@ -353,7 +354,7 @@ const COleDispatchDriver& operator=(const COleDispatchDriver& dispatchSrc);
 *диспатчсрк*<br/>
 Указатель на существующий `COleDispatchDriver` объект.
 
-## <a name="coledispatchdriveroperator-lpdispatch"></a><a name="operator_lpdispatch"></a>COleDispatchDriver:: operator ЛПДИСПАТЧ
+## <a name="coledispatchdriveroperator-lpdispatch"></a><a name="operator_lpdispatch"></a> COleDispatchDriver:: operator ЛПДИСПАТЧ
 
 Обращается к базовому `IDispatch` указателю `COleDispatchDriver` объекта.
 
@@ -365,7 +366,7 @@ operator LPDISPATCH();
 
 [!code-cpp[NVC_MFCOleContainer#8](../../mfc/codesnippet/cpp/coledispatchdriver-class_6.cpp)]
 
-## <a name="coledispatchdriverreleasedispatch"></a><a name="releasedispatch"></a>COleDispatchDriver:: Релеаседиспатч
+## <a name="coledispatchdriverreleasedispatch"></a><a name="releasedispatch"></a> COleDispatchDriver:: Релеаседиспатч
 
 Освобождает `IDispatch` соединение. Дополнительные сведения см. [в разделе Реализация интерфейса IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) .
 
@@ -373,7 +374,7 @@ operator LPDISPATCH();
 void ReleaseDispatch();
 ```
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Комментарии
 
 Если для этого соединения задано автоматическое освобождение, эта функция вызывает `IDispatch::Release` перед освобождением интерфейса.
 
@@ -381,7 +382,7 @@ void ReleaseDispatch();
 
   См. пример для [COleDispatchDriver:: аттачдиспатч](#attachdispatch).
 
-## <a name="coledispatchdriversetproperty"></a><a name="setproperty"></a>COleDispatchDriver:: SetProperty
+## <a name="coledispatchdriversetproperty"></a><a name="setproperty"></a> COleDispatchDriver:: SetProperty
 
 Задает свойство объекта OLE, заданное параметром *двдиспид*.
 
@@ -406,7 +407,7 @@ void AFX_CDECL SetProperty(
 
 [!code-cpp[NVC_MFCOleContainer#7](../../mfc/codesnippet/cpp/coledispatchdriver-class_7.cpp)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Пример CALCDRIV в MFC](../../overview/visual-cpp-samples.md)<br/>
 [Пример ACDUAL библиотеки MFC](../../overview/visual-cpp-samples.md)<br/>

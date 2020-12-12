@@ -1,5 +1,6 @@
 ---
-title: Класс COleControlModule
+description: 'Дополнительные сведения о: Колеконтролмодуле Class'
+title: Класс Колеконтролмодуле
 ms.date: 11/04/2016
 f1_keywords:
 - OleControlModule
@@ -9,14 +10,14 @@ helpviewer_keywords:
 - COleControlModule class [MFC]
 - control modules [MFC]
 ms.assetid: 0721724d-d4af-4eda-ad34-5a2b27810dd4
-ms.openlocfilehash: f6d486c7bacb897d70d85414ac3d0bd0d13e447b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f88296b7c0e897f82227343b31ca2f639902256e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62310400"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227485"
 ---
-# <a name="colecontrolmodule-class"></a>Класс COleControlModule
+# <a name="colecontrolmodule-class"></a>Класс Колеконтролмодуле
 
 Базовый класс, от которого необходимо наследовать объект модуля элемента управления OLE.
 
@@ -26,11 +27,11 @@ ms.locfileid: "62310400"
 class COleControlModule : public CWinApp
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Этот класс предоставляет функции-члены для инициализации модуля вашего элемента управления. Каждый модуль управления OLE, который использует библиотеки Microsoft Foundation classes может содержать только один объект, производный от `COleControlModule`. Этот объект создается в том случае, при создании других глобальных объектов C++. Объявите в производный `COleControlModule` объекта на глобальном уровне.
+Этот класс предоставляет функции элементов для инициализации модуля управления. Каждый модуль управления OLE, использующий классы Microsoft Foundation, может содержать только один объект, производный от `COleControlModule` . Этот объект создается при создании других глобальных объектов C++. Объявите производный `COleControlModule` объект на глобальном уровне.
 
-Дополнительные сведения об использовании `COleControlModule` , представлена в разделе [CWinApp](../../mfc/reference/cwinapp-class.md) класса и в статье [элементы управления ActiveX](../../mfc/mfc-activex-controls.md).
+Дополнительные сведения об использовании `COleControlModule` класса см. в разделе класс [CWinApp](../../mfc/reference/cwinapp-class.md) и [элементы управления ActiveX](../../mfc/mfc-activex-controls.md)статьи.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -46,9 +47,9 @@ class COleControlModule : public CWinApp
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxctl.h
+**Заголовок:** afxctl. h
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Пример MFC TESTHELP](../../overview/visual-cpp-samples.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)
+[Пример ТЕССЕЛП для MFC](../../overview/visual-cpp-samples.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)

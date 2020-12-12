@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CD2DBitmapBrush Class'
 title: Класс CD2DBitmapBrush
 ms.date: 11/04/2016
 f1_keywords:
@@ -42,16 +43,16 @@ helpviewer_keywords:
 - CD2DBitmapBrush [MFC], m_pBitmapBrush
 - CD2DBitmapBrush [MFC], m_pBitmapBrushProperties
 ms.assetid: 46ebbe34-66e0-44c8-af1d-d129e851de5e
-ms.openlocfilehash: 8d0804c094204bc0e8ab420e20c8b6a6a35dc70a
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: a9d4c1955b1318ecb273482cd49025090bf97d3d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754289"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227589"
 ---
 # <a name="cd2dbitmapbrush-class"></a>Класс CD2DBitmapBrush
 
-Обертка для ID2D1BitmapBrush.
+Оболочка для ID2D1BitmapBrush.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -59,58 +60,58 @@ ms.locfileid: "81754289"
 class CD2DBitmapBrush : public CD2DBrush;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CD2DBitmapBrush::CD2DBitmapBrush](#cd2dbitmapbrush)|Перегружен. Строит объект CD2DBitmapBrush из файла.|
-|[CD2DBitmapBrush:: »CD2DBitmapBrush](#dtor)|Деструктор Вызывается при уничтожении объекта кисти Биткарты D2D.|
+|[CD2DBitmapBrush:: CD2DBitmapBrush](#cd2dbitmapbrush)|Перегружен. Конструирует объект CD2DBitmapBrush из файла.|
+|[CD2DBitmapBrush:: ~ CD2DBitmapBrush](#dtor)|Деструктор Вызывается при уничтожении объекта кисти точечного рисунка D2D.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CD2DBitmapBrush::Attach](#attach)|Прикрепляет существующий интерфейс ресурса к объекту|
-|[CD2DBitmapBrush::Создание](#create)|Создает CD2DBitmapBrush. (Переопределяет [CD2DРесурс::Создание](../../mfc/reference/cd2dresource-class.md#create).)|
-|[CD2DBitmapBrush::Destroy](#destroy)|Уничтожает объект CD2DBitmapBrush. (Отменяет [CD2DBrush::Destroy](../../mfc/reference/cd2dbrush-class.md#destroy).)|
-|[CD2DBitmapBrush::Detach](#detach)|Открепите интерфейс ресурса с объекта|
-|[CD2DBitmapBrush::Get](#get)|Возвращает интерфейс ID2D1BitmapBrush|
-|[CD2DBitmapBrush::GetBitmap](#getbitmap)|Получает источник биткарты, который эта кисть использует для рисования|
-|[CD2DBitmapBrush::GetExtendModeX](#getextendmodex)|Получает метод, с помощью которого кисть горизонтально плитки тех областях, которые расширяются мимо его bitmap|
-|[CD2DBitmapBrush::GetExtendModeY](#getextendmodey)|Получает метод, с помощью которого кисть вертикально плитки тех областях, которые простираются мимо его bitmap|
-|[CD2DBitmapBrush::GetInterpolationMode](#getinterpolationmode)|Получает метод интерполяции, используемый при масштабировании или повороте кисти|
-|[CD2DBitmapBrush::SetBitmap](#setbitmap)|Определяет источник биткарты, который эта кисть использует для краски|
-|[CD2DBitmapBrush::SetExtendModeX](#setextendmodex)|Определяет, как кисть горизонтально плитки тех областях, которые расширяются мимо его bitmap|
-|[CD2DBitmapBrush::SetExtendModeY](#setextendmodey)|Определяет, как кисть вертикально плитки тех областях, которые расширяются мимо его bitmap|
-|[CD2DBitmapBrush::SetInterpolationMode](#setinterpolationmode)|Определяет режим интерполяции, используемый при масштабировании или повороте кисти|
+|[CD2DBitmapBrush:: Attach](#attach)|Присоединяет существующий интерфейс ресурсов к объекту|
+|[CD2DBitmapBrush:: Create](#create)|Создает CD2DBitmapBrush. (Переопределяет [CD2DResource:: Create](../../mfc/reference/cd2dresource-class.md#create).)|
+|[CD2DBitmapBrush::D естрой](#destroy)|Уничтожает объект CD2DBitmapBrush. (Переопределяет [CD2DBrush::D естрой](../../mfc/reference/cd2dbrush-class.md#destroy).)|
+|[CD2DBitmapBrush::D етач](#detach)|Отсоединяет интерфейс ресурса от объекта|
+|[CD2DBitmapBrush:: Get](#get)|Возвращает интерфейс ID2D1BitmapBrush|
+|[CD2DBitmapBrush::/Bitmap](#getbitmap)|Возвращает источник точечного рисунка, используемый этой кистью для рисования|
+|[CD2DBitmapBrush:: Жетекстендмодекс](#getextendmodex)|Возвращает метод, с помощью которого кисть располагается по горизонтали в области, которые выходят за пределы его растрового изображения.|
+|[CD2DBitmapBrush:: Жетекстендмодэй](#getextendmodey)|Возвращает метод, по которому кисть накладывается на вертикальное расположение областей, которые выходят за пределы его битового рисунка.|
+|[CD2DBitmapBrush:: Жетинтерполатионмоде](#getinterpolationmode)|Возвращает метод интерполяции, используемый при масштабировании или повороте растрового изображения кисти.|
+|[CD2DBitmapBrush:: Сетбитмап](#setbitmap)|Указывает источник точечного рисунка, используемый этой кистью для рисования|
+|[CD2DBitmapBrush:: Сетекстендмодекс](#setextendmodex)|Указывает, как кисть горизонтально мозаики размещает области, которые выходят за пределы его растрового изображения|
+|[CD2DBitmapBrush:: Сетекстендмодэй](#setextendmodey)|Указывает, как кисть накладывается на вертикальную плитку областей, которые выходят за пределы ее битов|
+|[CD2DBitmapBrush:: Сетинтерполатионмоде](#setinterpolationmode)|Задает режим интерполяции, используемый при масштабировании или повороте растрового изображения кисти|
 
 ### <a name="protected-methods"></a>Защищенные методы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CD2DBitmapbrush::CommonInit](#commoninit)|Инициализация объекта|
+|[CD2DBitmapBrush:: Коммонинит](#commoninit)|Инициализирует объект|
 
 ### <a name="public-operators"></a>Открытые операторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CD2DBitmapBrush::оператор ID2D1BitmapBrush](#operator_id2d1bitmapbrush_star)|Возвращает интерфейс ID2D1BitmapBrush|
+|[CD2DBitmapBrush:: operator ID2D1BitmapBrush *](#operator_id2d1bitmapbrush_star)|Возвращает интерфейс ID2D1BitmapBrush|
 
 ### <a name="protected-data-members"></a>Защищенные члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CD2DBitmapBrush::m_pBitmap](#m_pbitmap)|Хранит указатель на объект CD2DBitmap.|
-|[CD2DBitmapBrush:::m_pBitmapBrush](#m_pbitmapbrush)|Хранит указатель на объект ID2D1BitmapBrush.|
-|[CD2DBitmapBrush:::m_pBitmapBrushProperties](#m_pbitmapbrushproperties)|Свойства кисти Bitmap.|
+|[CD2DBitmapBrush:: m_pBitmap](#m_pbitmap)|Хранит указатель на объект CD2DBitmap.|
+|[CD2DBitmapBrush:: m_pBitmapBrush](#m_pbitmapbrush)|Хранит указатель на объект ID2D1BitmapBrush.|
+|[CD2DBitmapBrush:: m_pBitmapBrushProperties](#m_pbitmapbrushproperties)|Свойства кисти растрового изображения.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
 [CObject](../../mfc/reference/cobject-class.md)
 
-[CD2DРесурс](../../mfc/reference/cd2dresource-class.md)
+[CD2DResource](../../mfc/reference/cd2dresource-class.md)
 
 [CD2DBrush](../../mfc/reference/cd2dbrush-class.md)
 
@@ -118,19 +119,19 @@ class CD2DBitmapBrush : public CD2DBrush;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxrendertarget.h
+**Заголовок:** афксрендертаржет. h
 
-## <a name="cd2dbitmapbrushcd2dbitmapbrush"></a><a name="dtor"></a>CD2DBitmapBrush:: »CD2DBitmapBrush
+## <a name="cd2dbitmapbrushcd2dbitmapbrush"></a><a name="dtor"></a> CD2DBitmapBrush:: ~ CD2DBitmapBrush
 
-Деструктор Вызывается при уничтожении объекта кисти Биткарты D2D.
+Деструктор Вызывается при уничтожении объекта кисти точечного рисунка D2D.
 
 ```
 virtual ~CD2DBitmapBrush();
 ```
 
-## <a name="cd2dbitmapbrushattach"></a><a name="attach"></a>CD2DBitmapBrush::Attach
+## <a name="cd2dbitmapbrushattach"></a><a name="attach"></a> CD2DBitmapBrush:: Attach
 
-Прикрепляет существующий интерфейс ресурса к объекту
+Присоединяет существующий интерфейс ресурсов к объекту
 
 ```cpp
 void Attach(ID2D1BitmapBrush* pResource);
@@ -138,12 +139,12 @@ void Attach(ID2D1BitmapBrush* pResource);
 
 ### <a name="parameters"></a>Параметры
 
-*pResource*<br/>
-Существующий интерфейс ресурса. Не может быть NULL
+*исходный код*<br/>
+Существующий интерфейс ресурсов. Не может иметь значение NULL
 
-## <a name="cd2dbitmapbrushcd2dbitmapbrush"></a><a name="cd2dbitmapbrush"></a>CD2DBitmapBrush::CD2DBitmapBrush
+## <a name="cd2dbitmapbrushcd2dbitmapbrush"></a><a name="cd2dbitmapbrush"></a> CD2DBitmapBrush:: CD2DBitmapBrush
 
-Строит объект CD2DBitmapBrush.
+Конструирует объект CD2DBitmapBrush.
 
 ```
 CD2DBitmapBrush(
@@ -172,33 +173,33 @@ CD2DBitmapBrush(
 
 ### <a name="parameters"></a>Параметры
 
-*pParentTarget*<br/>
-Указатель на цель рендера.
+*ппаренттаржет*<br/>
+Указатель на целевой объект прорисовки.
 
-*pBitmapBrushСвойства*<br/>
-Указатель на режимы расширения и режим интерполяции кисти bitmap.
+*пбитмапбрушпропертиес*<br/>
+Указатель на режимы расширения и режим интерполяции для растровой кисти.
 
-*pBrushProperties*<br/>
-Указатель на непрозрачность и трансформацию кисти.
+*пбрушпропертиес*<br/>
+Указатель на непрозрачность и Преобразование кисти.
 
-*bAutoDestroy*<br/>
-Означает, что объект будет уничтожен владельцем (pParentTarget).
+*баутодестрой*<br/>
+Указывает, что объект будет уничтожен владельцем (Ппаренттаржет).
 
-*uiResID*<br/>
-Идентификационный номер ресурса.
+*уиресид*<br/>
+ИДЕНТИФИКАЦИОНный номер ресурса.
 
-*lpszType*<br/>
-Указатель на нулевую строку, содержащую тип ресурса.
+*лпсзтипе*<br/>
+Указатель на строку, завершающуюся нулем, которая содержит тип ресурса.
 
-*размерDest*<br/>
-Размер назначения битной карты.
+*самый заданный размер*<br/>
+Целевой размер точечного рисунка.
 
-*lpszImagePath*<br/>
-Указатель на нулевую строку, содержащую имя файла.
+*лпсзимажепас*<br/>
+Указатель на строку, завершающуюся нулем, которая содержит имя файла.
 
-## <a name="cd2dbitmapbrushcommoninit"></a><a name="commoninit"></a>CD2DBitmapbrush::CommonInit
+## <a name="cd2dbitmapbrushcommoninit"></a><a name="commoninit"></a> CD2DBitmapBrush:: Коммонинит
 
-Инициализация объекта
+Инициализирует объект
 
 ```cpp
 void CommonInit(D2D1_BITMAP_BRUSH_PROPERTIES* pBitmapBrushProperties);
@@ -206,10 +207,10 @@ void CommonInit(D2D1_BITMAP_BRUSH_PROPERTIES* pBitmapBrushProperties);
 
 ### <a name="parameters"></a>Параметры
 
-*pBitmapBrushСвойства*<br/>
-Указатель на свойства кисти bitmap.
+*пбитмапбрушпропертиес*<br/>
+Указатель на свойства кисти растрового изображения.
 
-## <a name="cd2dbitmapbrushcreate"></a><a name="create"></a>CD2DBitmapBrush::Создание
+## <a name="cd2dbitmapbrushcreate"></a><a name="create"></a> CD2DBitmapBrush:: Create
 
 Создает CD2DBitmapBrush.
 
@@ -219,14 +220,14 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 
 ### <a name="parameters"></a>Параметры
 
-*pRenderTarget*<br/>
-Указатель на цель рендера.
+*прендертаржет*<br/>
+Указатель на целевой объект прорисовки.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод завершается успешно, возвращает значение S_OK. В противном случае он возвращает код ошибки HRESULT.
+Если метод завершается успешно, возвращает значение S_OK. В противном случае возвращается код ошибки HRESULT.
 
-## <a name="cd2dbitmapbrushdestroy"></a><a name="destroy"></a>CD2DBitmapBrush::Destroy
+## <a name="cd2dbitmapbrushdestroy"></a><a name="destroy"></a> CD2DBitmapBrush::D естрой
 
 Уничтожает объект CD2DBitmapBrush.
 
@@ -234,9 +235,9 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 virtual void Destroy();
 ```
 
-## <a name="cd2dbitmapbrushdetach"></a><a name="detach"></a>CD2DBitmapBrush::Detach
+## <a name="cd2dbitmapbrushdetach"></a><a name="detach"></a> CD2DBitmapBrush::D етач
 
-Открепите интерфейс ресурса с объекта
+Отсоединяет интерфейс ресурса от объекта
 
 ```
 ID2D1BitmapBrush* Detach();
@@ -244,9 +245,9 @@ ID2D1BitmapBrush* Detach();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на отдельный интерфейс ресурса.
+Указатель на отсоединенный интерфейс ресурсов.
 
-## <a name="cd2dbitmapbrushget"></a><a name="get"></a>CD2DBitmapBrush::Get
+## <a name="cd2dbitmapbrushget"></a><a name="get"></a> CD2DBitmapBrush:: Get
 
 Возвращает интерфейс ID2D1BitmapBrush
 
@@ -256,11 +257,11 @@ ID2D1BitmapBrush* Get();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на интерфейс ID2D1BitmapBrush или NULL, если объект еще не инициализирован.
+Указатель на интерфейс ID2D1BitmapBrush или значение NULL, если объект еще не инициализирован.
 
-## <a name="cd2dbitmapbrushgetbitmap"></a><a name="getbitmap"></a>CD2DBitmapBrush::GetBitmap
+## <a name="cd2dbitmapbrushgetbitmap"></a><a name="getbitmap"></a> CD2DBitmapBrush::/Bitmap
 
-Получает источник биткарты, который эта кисть использует для рисования
+Возвращает источник точечного рисунка, используемый этой кистью для рисования
 
 ```
 CD2DBitmap* GetBitmap();
@@ -268,11 +269,11 @@ CD2DBitmap* GetBitmap();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на объект CD2DBitmap или NULL, если объект еще не инициализирован.
+Указатель на объект CD2DBitmap или значение NULL, если объект еще не инициализирован.
 
-## <a name="cd2dbitmapbrushgetextendmodex"></a><a name="getextendmodex"></a>CD2DBitmapBrush::GetExtendModeX
+## <a name="cd2dbitmapbrushgetextendmodex"></a><a name="getextendmodex"></a> CD2DBitmapBrush:: Жетекстендмодекс
 
-Получает метод, с помощью которого кисть горизонтально плитки тех областях, которые расширяются мимо его bitmap
+Возвращает метод, с помощью которого кисть располагается по горизонтали в области, которые выходят за пределы его растрового изображения.
 
 ```
 D2D1_EXTEND_MODE GetExtendModeX() const;
@@ -280,11 +281,11 @@ D2D1_EXTEND_MODE GetExtendModeX() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Значение, которое определяет, как кисть горизонтально плитки тех областях, которые простираются мимо его bitmap
+Значение, указывающее, как кисть горизонтально мозаично отображает области, которые выходят за пределы его растрового изображения
 
-## <a name="cd2dbitmapbrushgetextendmodey"></a><a name="getextendmodey"></a>CD2DBitmapBrush::GetExtendModeY
+## <a name="cd2dbitmapbrushgetextendmodey"></a><a name="getextendmodey"></a> CD2DBitmapBrush:: Жетекстендмодэй
 
-Получает метод, с помощью которого кисть вертикально плитки тех областях, которые простираются мимо его bitmap
+Возвращает метод, по которому кисть накладывается на вертикальное расположение областей, которые выходят за пределы его битового рисунка.
 
 ```
 D2D1_EXTEND_MODE GetExtendModeY() const;
@@ -292,11 +293,11 @@ D2D1_EXTEND_MODE GetExtendModeY() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Значение, которое определяет, как кисть вертикально плитки тех областях, которые простираются мимо его bitmap
+Значение, указывающее, как кисть накладывается на вертикальное расположение областей, которые выходят за пределы его растрового изображения
 
-## <a name="cd2dbitmapbrushgetinterpolationmode"></a><a name="getinterpolationmode"></a>CD2DBitmapBrush::GetInterpolationMode
+## <a name="cd2dbitmapbrushgetinterpolationmode"></a><a name="getinterpolationmode"></a> CD2DBitmapBrush:: Жетинтерполатионмоде
 
-Получает метод интерполяции, используемый при масштабировании или повороте кисти
+Возвращает метод интерполяции, используемый при масштабировании или повороте растрового изображения кисти.
 
 ```
 D2D1_BITMAP_INTERPOLATION_MODE GetInterpolationMode() const;
@@ -304,9 +305,9 @@ D2D1_BITMAP_INTERPOLATION_MODE GetInterpolationMode() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Метод интерполяции, используемый при масштабировании или повороте кисти
+Метод интерполяции, используемый при масштабировании или повороте растрового изображения кисти
 
-## <a name="cd2dbitmapbrushm_pbitmap"></a><a name="m_pbitmap"></a>CD2DBitmapBrush::m_pBitmap
+## <a name="cd2dbitmapbrushm_pbitmap"></a><a name="m_pbitmap"></a> CD2DBitmapBrush:: m_pBitmap
 
 Хранит указатель на объект CD2DBitmap.
 
@@ -314,7 +315,7 @@ D2D1_BITMAP_INTERPOLATION_MODE GetInterpolationMode() const;
 CD2DBitmap* m_pBitmap;
 ```
 
-## <a name="cd2dbitmapbrushm_pbitmapbrush"></a><a name="m_pbitmapbrush"></a>CD2DBitmapBrush:::m_pBitmapBrush
+## <a name="cd2dbitmapbrushm_pbitmapbrush"></a><a name="m_pbitmapbrush"></a> CD2DBitmapBrush:: m_pBitmapBrush
 
 Хранит указатель на объект ID2D1BitmapBrush.
 
@@ -322,15 +323,15 @@ CD2DBitmap* m_pBitmap;
 ID2D1BitmapBrush* m_pBitmapBrush;
 ```
 
-## <a name="cd2dbitmapbrushm_pbitmapbrushproperties"></a><a name="m_pbitmapbrushproperties"></a>CD2DBitmapBrush:::m_pBitmapBrushProperties
+## <a name="cd2dbitmapbrushm_pbitmapbrushproperties"></a><a name="m_pbitmapbrushproperties"></a> CD2DBitmapBrush:: m_pBitmapBrushProperties
 
-Свойства кисти Bitmap.
+Свойства кисти растрового изображения.
 
 ```
 D2D1_BITMAP_BRUSH_PROPERTIES* m_pBitmapBrushProperties;
 ```
 
-## <a name="cd2dbitmapbrushoperator-id2d1bitmapbrush"></a><a name="operator_id2d1bitmapbrush_star"></a>CD2DBitmapBrush::оператор ID2D1BitmapBrush
+## <a name="cd2dbitmapbrushoperator-id2d1bitmapbrush"></a><a name="operator_id2d1bitmapbrush_star"></a> CD2DBitmapBrush:: operator ID2D1BitmapBrush *
 
 Возвращает интерфейс ID2D1BitmapBrush
 
@@ -340,11 +341,11 @@ operator ID2D1BitmapBrush*();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на интерфейс ID2D1BitmapBrush или NULL, если объект еще не инициализирован.
+Указатель на интерфейс ID2D1BitmapBrush или значение NULL, если объект еще не инициализирован.
 
-## <a name="cd2dbitmapbrushsetbitmap"></a><a name="setbitmap"></a>CD2DBitmapBrush::SetBitmap
+## <a name="cd2dbitmapbrushsetbitmap"></a><a name="setbitmap"></a> CD2DBitmapBrush:: Сетбитмап
 
-Определяет источник биткарты, который эта кисть использует для краски
+Указывает источник точечного рисунка, используемый этой кистью для рисования
 
 ```cpp
 void SetBitmap(CD2DBitmap* pBitmap);
@@ -352,12 +353,12 @@ void SetBitmap(CD2DBitmap* pBitmap);
 
 ### <a name="parameters"></a>Параметры
 
-*pBitmap*<br/>
-Источник биткарты, используемый кистью
+*пбитмап*<br/>
+Источник точечного рисунка, используемый кистью
 
-## <a name="cd2dbitmapbrushsetextendmodex"></a><a name="setextendmodex"></a>CD2DBitmapBrush::SetExtendModeX
+## <a name="cd2dbitmapbrushsetextendmodex"></a><a name="setextendmodex"></a> CD2DBitmapBrush:: Сетекстендмодекс
 
-Определяет, как кисть горизонтально плитки тех областях, которые расширяются мимо его bitmap
+Указывает, как кисть горизонтально мозаики размещает области, которые выходят за пределы его растрового изображения
 
 ```cpp
 void SetExtendModeX(D2D1_EXTEND_MODE extendModeX);
@@ -365,12 +366,12 @@ void SetExtendModeX(D2D1_EXTEND_MODE extendModeX);
 
 ### <a name="parameters"></a>Параметры
 
-*extendModeX*<br/>
-Значение, которое определяет, как кисть горизонтально плитки тех областях, которые простираются мимо его bitmap
+*екстендмодекс*<br/>
+Значение, указывающее, как кисть горизонтально мозаично отображает области, которые выходят за пределы его растрового изображения
 
-## <a name="cd2dbitmapbrushsetextendmodey"></a><a name="setextendmodey"></a>CD2DBitmapBrush::SetExtendModeY
+## <a name="cd2dbitmapbrushsetextendmodey"></a><a name="setextendmodey"></a> CD2DBitmapBrush:: Сетекстендмодэй
 
-Определяет, как кисть вертикально плитки тех областях, которые расширяются мимо его bitmap
+Указывает, как кисть накладывается на вертикальную плитку областей, которые выходят за пределы ее битов
 
 ```cpp
 void SetExtendModeY(D2D1_EXTEND_MODE extendModeY);
@@ -378,12 +379,12 @@ void SetExtendModeY(D2D1_EXTEND_MODE extendModeY);
 
 ### <a name="parameters"></a>Параметры
 
-*extendModeY*<br/>
-Значение, которое определяет, как кисть вертикально плитки тех областях, которые простираются мимо его bitmap
+*екстендмодэй*<br/>
+Значение, указывающее, как кисть накладывается на вертикальное расположение областей, которые выходят за пределы его растрового изображения
 
-## <a name="cd2dbitmapbrushsetinterpolationmode"></a><a name="setinterpolationmode"></a>CD2DBitmapBrush::SetInterpolationMode
+## <a name="cd2dbitmapbrushsetinterpolationmode"></a><a name="setinterpolationmode"></a> CD2DBitmapBrush:: Сетинтерполатионмоде
 
-Определяет режим интерполяции, используемый при масштабировании или повороте кисти
+Задает режим интерполяции, используемый при масштабировании или повороте растрового изображения кисти
 
 ```cpp
 void SetInterpolationMode(D2D1_BITMAP_INTERPOLATION_MODE interpolationMode);
@@ -391,8 +392,8 @@ void SetInterpolationMode(D2D1_BITMAP_INTERPOLATION_MODE interpolationMode);
 
 ### <a name="parameters"></a>Параметры
 
-*интерполяцияMode*<br/>
-Режим интерполяции, используемый при масштабировании или повороте кисти
+*интерполатионмоде*<br/>
+Режим интерполяции, используемый при масштабировании или повороте растрового изображения кисти
 
 ## <a name="see-also"></a>См. также раздел
 

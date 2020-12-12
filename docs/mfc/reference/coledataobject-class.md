@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Коледатаобжект Class'
 title: Класс Коледатаобжект
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - COleDataObject [MFC], IsDataAvailable
 - COleDataObject [MFC], Release
 ms.assetid: d1cc84be-2e1c-4bb3-a8a0-565eb08aaa34
-ms.openlocfilehash: 4a24fcab0eb34bbba597ba0b5c1fac22a929c0c0
-ms.sourcegitcommit: 13f42c339fb7af935e3a93ac80e350d5e784c9f1
+ms.openlocfilehash: ae94ed51f3f644efa73847c8e80300ebc5543190
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87470944"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227368"
 ---
 # <a name="coledataobject-class"></a>Класс Коледатаобжект
 
@@ -45,11 +46,11 @@ ms.locfileid: "87470944"
 class COleDataObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Коледатаобжект:: Коледатаобжект](#coledataobject)|Формирует объект `COleDataObject`.|
 
@@ -70,7 +71,7 @@ class COleDataObject
 
 ## <a name="remarks"></a>Комментарии
 
-`COleDataObject`не имеет базового класса.
+`COleDataObject` не имеет базового класса.
 
 Эти виды передачи данных включают источник и назначение. Источник данных реализуется как объект класса [COleDataSource](../../mfc/reference/coledatasource-class.md) . Каждый раз, когда в целевом приложении отбрасываются данные или запрос на выполнение операции вставки из буфера обмена, `COleDataObject` необходимо создать объект класса.
 
@@ -88,7 +89,7 @@ class COleDataObject
 
 **Заголовок:** афксоле. h
 
-## <a name="coledataobjectattach"></a><a name="attach"></a>Коледатаобжект:: Attach
+## <a name="coledataobjectattach"></a><a name="attach"></a> Коледатаобжект:: Attach
 
 Вызовите эту функцию, чтобы связать `COleDataObject` объект с объектом данных OLE.
 
@@ -110,7 +111,7 @@ void Attach(
 
 Дополнительные сведения см. в разделе [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) в Windows SDK.
 
-## <a name="coledataobjectattachclipboard"></a><a name="attachclipboard"></a>Коледатаобжект:: Аттачклипбоард
+## <a name="coledataobjectattachclipboard"></a><a name="attachclipboard"></a> Коледатаобжект:: Аттачклипбоард
 
 Вызовите эту функцию, чтобы присоединить объект данных, который в данный момент находится в буфере обмена, к `COleDataObject` объекту.
 
@@ -127,7 +128,7 @@ BOOL AttachClipboard();
 > [!NOTE]
 > Вызов этой функции блокирует буфер обмена до освобождения этого объекта данных. Объект данных освобождается в деструкторе для `COleDataObject` . Дополнительные сведения см. в разделе [опенклипбоард](/windows/win32/api/winuser/nf-winuser-openclipboard) и [Клосеклипбоард](/windows/win32/api/winuser/nf-winuser-closeclipboard) в документе Win32.
 
-## <a name="coledataobjectbeginenumformats"></a><a name="beginenumformats"></a>Коледатаобжект:: Бегиненумформатс
+## <a name="coledataobjectbeginenumformats"></a><a name="beginenumformats"></a> Коледатаобжект:: Бегиненумформатс
 
 Вызовите эту функцию, чтобы подготовиться к последующим вызовам для `GetNextFormat` получения списка форматов данных из элемента.
 
@@ -143,7 +144,7 @@ void BeginEnumFormats();
 
 Дополнительные сведения см. в разделе [IDataObject:: енумформатетк](/windows/win32/api/objidl/nf-objidl-idataobject-enumformatetc) в Windows SDK.
 
-## <a name="coledataobjectcoledataobject"></a><a name="coledataobject"></a>Коледатаобжект:: Коледатаобжект
+## <a name="coledataobjectcoledataobject"></a><a name="coledataobject"></a> Коледатаобжект:: Коледатаобжект
 
 Формирует объект `COleDataObject`.
 
@@ -158,7 +159,7 @@ COleDataObject();
 > [!NOTE]
 > Поскольку один из параметров обработчиков перетаскивания является указателем на `COleDataObject` , нет необходимости вызывать этот конструктор для поддержки перетаскивания.
 
-## <a name="coledataobjectdetach"></a><a name="detach"></a>Коледатаобжект::D етач
+## <a name="coledataobjectdetach"></a><a name="detach"></a> Коледатаобжект::D етач
 
 Вызовите эту функцию, чтобы отсоединить `COleDataObject` объект от связанного объекта данных OLE, не освобождая объект данных.
 
@@ -172,7 +173,7 @@ LPDATAOBJECT Detach();
 
 ### <a name="remarks"></a>Комментарии
 
-## <a name="coledataobjectgetdata"></a><a name="getdata"></a>Коледатаобжект:: GetData
+## <a name="coledataobjectgetdata"></a><a name="getdata"></a> Коледатаобжект:: GetData
 
 Вызывайте эту функцию для получения данных из элемента в указанном формате.
 
@@ -204,7 +205,7 @@ BOOL GetData(
 
 Дополнительные сведения см. в разделе [регистерклипбоардформат](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) в Windows SDK.
 
-## <a name="coledataobjectgetfiledata"></a><a name="getfiledata"></a>Коледатаобжект:: Жетфиледата
+## <a name="coledataobjectgetfiledata"></a><a name="getfiledata"></a> Коледатаобжект:: Жетфиледата
 
 Эта функция вызывается для создания `CFile` `CFile` объекта, производного от, и для получения данных в указанном формате в `CFile` указатель.
 
@@ -237,7 +238,7 @@ CFile* GetFileData(
 
 Дополнительные сведения см. в разделе [регистерклипбоардформат](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) в Windows SDK.
 
-## <a name="coledataobjectgetglobaldata"></a><a name="getglobaldata"></a>Коледатаобжект:: Жетглобалдата
+## <a name="coledataobjectgetglobaldata"></a><a name="getglobaldata"></a> Коледатаобжект:: Жетглобалдата
 
 Вызывайте эту функцию для выделения глобального блока памяти и получения данных в указанном формате в объект ХГЛОБАЛ.
 
@@ -265,7 +266,7 @@ HGLOBAL GetGlobalData(
 
 Дополнительные сведения см. в разделе [регистерклипбоардформат](/windows/win32/api/winuser/nf-winuser-registerclipboardformatw) в Windows SDK.
 
-## <a name="coledataobjectgetnextformat"></a><a name="getnextformat"></a>Коледатаобжект:: Жетнекстформат
+## <a name="coledataobjectgetnextformat"></a><a name="getnextformat"></a> Коледатаобжект:: Жетнекстформат
 
 Вызывайте эту функцию несколько раз, чтобы получить все форматы, доступные для извлечения данных из элемента.
 
@@ -290,7 +291,7 @@ BOOL GetNextFormat(LPFORMATETC lpFormatEtc);
 
 Дополнительные сведения см. в разделе [иенумкскскскс:: Next](/previous-versions/ms695273\(v=vs.85\)) в Windows SDK.
 
-## <a name="coledataobjectisdataavailable"></a><a name="isdataavailable"></a>Коледатаобжект:: Исдатааваилабле
+## <a name="coledataobjectisdataavailable"></a><a name="isdataavailable"></a> Коледатаобжект:: Исдатааваилабле
 
 Вызовите эту функцию, чтобы определить, доступен ли определенный формат для извлечения данных из OLE-элемента.
 
@@ -324,7 +325,7 @@ BOOL IsDataAvailable(
 
   См. пример для [CRichEditView:: куерякцептдата](../../mfc/reference/cricheditview-class.md#queryacceptdata).
 
-## <a name="coledataobjectrelease"></a><a name="release"></a>Коледатаобжект:: Release
+## <a name="coledataobjectrelease"></a><a name="release"></a> Коледатаобжект:: Release
 
 Вызовите эту функцию, чтобы освободить владение объектом [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) , который ранее был связан с `COleDataObject` объектом.
 
@@ -336,7 +337,7 @@ void Release();
 
 Объект `IDataObject` был связан с `COleDataObject` объектом путем вызова `Attach` или `AttachClipboard` явно или платформой. Если параметр *бауторелеасе* `Attach` имеет значение false, `IDataObject` объект не будет освобожден. В этом случае вызывающий объект отвечает за освобождение `IDataObject` с помощью вызова [IUnknown:: Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Пример MFC для примера HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [Пример OCLIENT MFC](../../overview/visual-cpp-samples.md)<br/>

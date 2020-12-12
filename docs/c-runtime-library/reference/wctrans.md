@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: wctrans'
 title: wctrans
 ms.date: 11/04/2016
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - characters, converting
 - wctrans function
 ms.assetid: 215404bf-6d60-489c-9ae9-880e6b586162
-ms.openlocfilehash: a75de3b699d0eb5ec6117d0f627e6a8ba34dbc62
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 59efe03f5851525d38c5ebd93520367338a97a79
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944888"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229656"
 ---
 # <a name="wctrans"></a>wctrans
 
@@ -48,14 +49,14 @@ wctrans_t wctrans(
 
 ### <a name="parameters"></a>Параметры
 
-*свойство*<br/>
+*property*<br/>
 Строка, указывающая одно из допустимых преобразований.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Если категория **LC_CTYPE** текущего языкового стандарта не определяет сопоставление, имя которого соответствует *свойству*строки свойства, функция возвращает ноль. В противном случае возвращается ненулевое значение, подходящее для использования в качестве второго аргумента последующего вызова [towctrans](towctrans.md).
+Если категория **LC_CTYPE** текущего языкового стандарта не определяет сопоставление, имя которого соответствует *свойству* строки свойства, функция возвращает ноль. В противном случае возвращается ненулевое значение, подходящее для использования в качестве второго аргумента последующего вызова [towctrans](towctrans.md).
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эта функция определяет сопоставление одного набора кодов символов с другим.
 
@@ -72,7 +73,7 @@ wctrans_t wctrans(
 |-------------|---------------------|
 |**wctrans**|\<wctype.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -110,7 +111,7 @@ int main()
 65
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Преобразование данных](../../c-runtime-library/data-conversion.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
