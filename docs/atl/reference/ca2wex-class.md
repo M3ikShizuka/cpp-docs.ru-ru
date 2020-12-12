@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CA2WEX Class'
 title: Класс CA2WEX
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CA2WEX class
 ms.assetid: 317d9ffb-e84f-47e8-beda-57e28fb19124
-ms.openlocfilehash: a710034c5d94a8fb093a2b6a2a52373e2bab2d6d
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 59d0624176f01ee266b8162060b281202ef977c6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168505"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165099"
 ---
 # <a name="ca2wex-class"></a>Класс CA2WEX
 
@@ -36,11 +37,11 @@ class CA2WEX
 *t_nBufferLength*<br/>
 Размер буфера, используемого в процессе перевода. Длина по умолчанию составляет 128 байт.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CA2WEX::CA2WEX](#ca2wex)|Конструктор.|
 |[CA2WEX:: ~ CA2WEX](#dtor)|Деструктор|
@@ -58,7 +59,7 @@ class CA2WEX
 |[CA2WEX:: m_psz](#m_psz)|Элемент данных, в котором хранится исходная строка.|
 |[CA2WEX:: m_szBuffer](#m_szbuffer)|Статический буфер, используемый для хранения преобразованной строки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Если не требуется дополнительных функций, используйте в коде CA2TEX, CA2CTEX, CT2WEX, CT2CWEX или CA2W.
 
@@ -92,7 +93,7 @@ class CA2WEX
 
 **Заголовок:** атлконв. h
 
-## <a name="ca2wexca2wex"></a><a name="ca2wex"></a>CA2WEX::CA2WEX
+## <a name="ca2wexca2wex"></a><a name="ca2wex"></a> CA2WEX::CA2WEX
 
 Конструктор.
 
@@ -109,11 +110,11 @@ CA2WEX(LPCSTR psz) throw(...);
 *нкодепаже*<br/>
 Кодовая страница, используемая для выполнения преобразования. Дополнительные сведения см. в обсуждении параметров кодовой страницы для функции Windows SDK [MultiByteToWideChar](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Выделяет буфер, используемый в процессе перевода.
 
-## <a name="ca2wexca2wex"></a><a name="dtor"></a>CA2WEX:: ~ CA2WEX
+## <a name="ca2wexca2wex"></a><a name="dtor"></a> CA2WEX:: ~ CA2WEX
 
 Деструктор
 
@@ -121,11 +122,11 @@ CA2WEX(LPCSTR psz) throw(...);
 ~CA2WEX() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Освобождает выделенный буфер.
 
-## <a name="ca2wexm_psz"></a><a name="m_psz"></a>CA2WEX:: m_psz
+## <a name="ca2wexm_psz"></a><a name="m_psz"></a> CA2WEX:: m_psz
 
 Элемент данных, в котором хранится исходная строка.
 
@@ -133,7 +134,7 @@ CA2WEX(LPCSTR psz) throw(...);
 LPWSTR m_psz;
 ```
 
-## <a name="ca2wexm_szbuffer"></a><a name="m_szbuffer"></a>CA2WEX:: m_szBuffer
+## <a name="ca2wexm_szbuffer"></a><a name="m_szbuffer"></a> CA2WEX:: m_szBuffer
 
 Статический буфер, используемый для хранения преобразованной строки.
 
@@ -141,7 +142,7 @@ LPWSTR m_psz;
 wchar_t m_szBuffer[t_nBufferLength];
 ```
 
-## <a name="ca2wexoperator-lpwstr"></a><a name="operator_lpwstr"></a>CA2WEX:: operator LPWSTR
+## <a name="ca2wexoperator-lpwstr"></a><a name="operator_lpwstr"></a> CA2WEX:: operator LPWSTR
 
 Оператор преобразования.
 
@@ -153,7 +154,7 @@ operator LPWSTR() const throw();
 
 Возвращает текстовую строку типа LPWSTR.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Класс CA2AEX](../../atl/reference/ca2aex-class.md)<br/>
 [Класс CA2CAEX](../../atl/reference/ca2caex-class.md)<br/>

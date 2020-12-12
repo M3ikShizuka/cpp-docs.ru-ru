@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: PROC'
 title: PROC
 ms.date: 12/06/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - PROC directive
 ms.assetid: ee5bb6b6-fa15-4d73-b0cf-e650178539a9
-ms.openlocfilehash: 85d9a1e82eebcd83cb0f12f5ca751ec9415af18d
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: fe811ed1723dc1a41014720d97b6f21ab596c2e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75318674"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97126039"
 ---
 # <a name="proc"></a>PROC
 
@@ -19,20 +20,20 @@ ms.locfileid: "75318674"
 
 ## <a name="syntax"></a>Синтаксис
 
-> *Метка* **proc** ⟦*Distance*⟧ ⟦*язык — тип*⟧ ⟦ **Public** | **частный** | **Экспорт** ⟧ ⟦ __\<__ *прологуеарг* __>__ ⟧ ⟦**использует** *реглист*⟧ ⟦ __,__ *параметр* ⟦ __:__ *Tag*⟧... ⟧\
-> ⟦**Frame** ⟦ __:__ *ехандлер-Address*⟧ ⟧ \
+> *Метка* **proc** ⟦*Distance*⟧ ⟦*язык-тип*⟧ ⟦ **Public**  |  **частный**  |  **Экспорт** ⟧ ⟦ ⟧ __\<__*prologuearg*__>__ ⟦**использует** *реглист*⟧ ⟦__,__ *параметр* ⟦__:__*Tag*⟧... ⟧\
+> ⟦**Frame** ⟦__:__*ехандлер-Address*⟧ ⟧ \
 > *инструкции*\
 > *Метка* **ЕНДП**
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
-Аргументы ⟦*Distance*⟧ и ⟦*Language-Type*допустимы только в 32-разрядном MASM.
+Аргументы ⟦*Distance*⟧ и ⟦*Language-Type* допустимы только в 32-разрядном MASM.
 
-⟦**Frame** ⟦ __:__ *ехандлер-Address*⟧ ⟧ является допустимым только в ml64. exe и приводит к тому, что компилятор MASM создает запись таблицы функций в pData-файл и сведения о выводу в. XData для структурированной обработки исключений функции.
+⟦**Frame** ⟦__:__*ехандлер-Address*⟧ ⟧ является допустимым только для ml64.exe и приводит к тому, что компилятор MASM создает запись таблицы функций в pData и сведения о выводу в. XData для структурированного исключения обработки исключений функции.
 
-При использовании атрибута **Frame** за ним должен следовать [. ](dot-endprolog.md)Директива ендпролог.
+При использовании атрибута **Frame** за ним должен следовать [.](dot-endprolog.md) Директива ендпролог.
 
-Дополнительные сведения об использовании ml64. exe см. в разделе [MASM для x64 (ml64. exe)](masm-for-x64-ml64-exe.md) .
+Дополнительные сведения об использовании ml64.exe см. в статье [MASM для x64 (ml64.exe)](masm-for-x64-ml64-exe.md) .
 
 ## <a name="example"></a>Пример
 
@@ -79,7 +80,7 @@ Dumping Unwind Information for file ex2.exe
       Code offset: 0x01, PUSH_NONVOL, register=rbp
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по директивам](directives-reference.md)\
 [Грамматика MASM BNF](masm-bnf-grammar.md)

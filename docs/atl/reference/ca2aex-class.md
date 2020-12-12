@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CA2AEX Class'
 title: Класс CA2AEX
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CA2AEX class
 ms.assetid: 57dc65df-d9cf-4a84-99d3-6e031dde3664
-ms.openlocfilehash: dfd8967d21005d83b38eeae36cfc147051d7beaf
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 408e04760d6b614fd344b3cab1b34f22678db315
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168531"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165112"
 ---
 # <a name="ca2aex-class"></a>Класс CA2AEX
 
@@ -36,11 +37,11 @@ class CA2AEX
 *t_nBufferLength*<br/>
 Размер буфера, используемого в процессе перевода. Длина по умолчанию составляет 128 байт.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CA2AEX::CA2AEX](#ca2aex)|Конструктор.|
 |[CA2AEX:: ~ CA2AEX](#dtor)|Деструктор|
@@ -58,7 +59,7 @@ class CA2AEX
 |[CA2AEX:: m_psz](#m_psz)|Элемент данных, в котором хранится исходная строка.|
 |[CA2AEX:: m_szBuffer](#m_szbuffer)|Статический буфер, используемый для хранения преобразованной строки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Если не требуется дополнительных функций, используйте CA2TEX, CT2AEX или CA2A в своем коде.
 
@@ -88,7 +89,7 @@ class CA2AEX
 
 **Заголовок:** атлконв. h
 
-## <a name="ca2aexca2aex"></a><a name="ca2aex"></a>CA2AEX::CA2AEX
+## <a name="ca2aexca2aex"></a><a name="ca2aex"></a> CA2AEX::CA2AEX
 
 Конструктор.
 
@@ -105,11 +106,11 @@ CA2AEX(LPCSTR psz) throw(...);
 *нкодепаже*<br/>
 Не используется в этом классе.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Создает буфер, необходимый для перевода.
 
-## <a name="ca2aexca2aex"></a><a name="dtor"></a>CA2AEX:: ~ CA2AEX
+## <a name="ca2aexca2aex"></a><a name="dtor"></a> CA2AEX:: ~ CA2AEX
 
 Деструктор
 
@@ -117,11 +118,11 @@ CA2AEX(LPCSTR psz) throw(...);
 ~CA2AEX() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Освобождает выделенный буфер.
 
-## <a name="ca2aexm_psz"></a><a name="m_psz"></a>CA2AEX:: m_psz
+## <a name="ca2aexm_psz"></a><a name="m_psz"></a> CA2AEX:: m_psz
 
 Элемент данных, в котором хранится исходная строка.
 
@@ -129,7 +130,7 @@ CA2AEX(LPCSTR psz) throw(...);
 LPSTR m_psz;
 ```
 
-## <a name="ca2aexm_szbuffer"></a><a name="m_szbuffer"></a>CA2AEX:: m_szBuffer
+## <a name="ca2aexm_szbuffer"></a><a name="m_szbuffer"></a> CA2AEX:: m_szBuffer
 
 Статический буфер, используемый для хранения преобразованной строки.
 
@@ -137,7 +138,7 @@ LPSTR m_psz;
 char m_szBuffer[ t_nBufferLength];
 ```
 
-## <a name="ca2aexoperator-lpstr"></a><a name="operator_lpstr"></a>CA2AEX:: operator LPSTR
+## <a name="ca2aexoperator-lpstr"></a><a name="operator_lpstr"></a> CA2AEX:: operator LPSTR
 
 Оператор преобразования.
 
@@ -149,7 +150,7 @@ operator LPSTR() const throw();
 
 Возвращает текстовую строку как тип LPSTR.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Класс CA2CAEX](../../atl/reference/ca2caex-class.md)<br/>
 [Класс CA2WEX](../../atl/reference/ca2wex-class.md)<br/>

@@ -1,67 +1,68 @@
 ---
+description: Дополнительные сведения о функциях ATL
 title: Функции ATL
 ms.date: 11/04/2016
 helpviewer_keywords:
 - functions [ATL]
 - ATL, global functions
 ms.assetid: 69db0cb2-de1d-445b-b692-020d6e8c2173
-ms.openlocfilehash: 9f0c6ccaa049290d3e183ae682c19ab7e497c2b8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 29c29d2b70a3c0dea266b937a20cdf6b2d831473
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62261558"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165385"
 ---
 # <a name="atl-functions"></a>Функции ATL
 
-Чтобы найти функцию ATL по категориям, в следующих разделах.
+Чтобы найти функцию ATL по категории, см. следующие разделы.
 
 [Функции пути ATL](../../atl/reference/com-map-global-functions.md)<br/>
-Предоставляет поддержку для управления пути к файлам.
+Предоставление поддержки для управления путями файлов.
 
-[Глобальные функции сопоставления COM](../../atl/reference/com-map-global-functions.md)<br/>
-Поддержка COM карты `IUnknown` реализаций.
+[Глобальные функции схемы COM](../../atl/reference/com-map-global-functions.md)<br/>
+Предоставление поддержки для `IUnknown` реализаций карт com.
 
-[Глобальные функции составных элементов управления](../../atl/reference/composite-control-global-functions.md)<br/>
-Обеспечивают поддержку для создания диалоговых окон, а также для создания, размещения и лицензирование элементов управления ActiveX.
+[Глобальные функции составного элемента управления](../../atl/reference/composite-control-global-functions.md)<br/>
+Предоставление поддержки для создания диалоговых окон, а для создания, размещения и лицензирования элементов управления ActiveX.
 
 [Глобальные функции точек подключения](../../atl/reference/connection-point-global-functions.md)<br/>
-Поддерживает точки подключения и сопоставляет приемника.
+Предоставление поддержки точек подключения и карт приемников.
 
-[Глобальные функции для отладки и создания отчетов об ошибках](../../atl/reference/debugging-and-error-reporting-global-functions.md)<br/>
-Предоставляет полезные средства отладки и трассировки.
+[Глобальные функции отладки и отчетов об ошибках](../../atl/reference/debugging-and-error-reporting-global-functions.md)<br/>
+Предоставьте полезные средства отладки и трассировки.
 
 [Глобальные функции контекста устройства](../../atl/reference/device-context-global-functions.md)<br/>
 Создает контекст устройства для данного устройства.
 
-[Глобальные функции для обработки событий](../../atl/reference/event-handling-global-functions.md)<br/>
+[Глобальные функции обработки событий](../../atl/reference/event-handling-global-functions.md)<br/>
 Предоставляет обработчик событий.
 
-[Глобальные функции для маршалинга](../../atl/reference/marshaling-global-functions.md)<br/>
-Поддерживают маршалинг и преобразование, данные маршалинга в указателе на интерфейс.
+[Маршалирование глобальных функций](../../atl/reference/marshaling-global-functions.md)<br/>
+Обеспечивают поддержку упаковки и преобразования данных упаковки в указатели интерфейса.
 
-[Глобальные функции преобразования пикселей/HIMETRIC](../../atl/reference/pixel-himetric-conversion-global-functions.md)<br/>
-Обеспечить поддержку преобразования из пикселей и единицах HIMETRIC.
+[Глобальные функции преобразования пикселей и HIMETRIC](../../atl/reference/pixel-himetric-conversion-global-functions.md)<br/>
+Обеспечивают поддержку для преобразования в Пиксели и HIMETRIC единицы измерения.
 
-[Глобальные функции реестра и библиотеки типов](../../atl/reference/registry-and-typelib-global-functions.md)<br/>
-Поддержка загрузки и регистрации библиотеки типов.
+[Глобальные функции Registry и TypeLib](../../atl/reference/registry-and-typelib-global-functions.md)<br/>
+Обеспечивают поддержку загрузки и регистрации библиотеки типов.
 
 [Глобальные функции безопасности](../../atl/reference/security-global-functions.md)<br/>
-Предоставляет поддержку для изменения идентификатора SID и список управления Доступом объектов.
+Предоставление поддержки для изменения идентификаторов безопасности и объектов ACL.
 
-[Глобальные функции для работы с идентификаторами безопасности](../../atl/reference/security-identifier-global-functions.md)<br/>
-Возвращает общие хорошо известного SID объекты.
+[Глобальные функции идентификатора безопасности](../../atl/reference/security-identifier-global-functions.md)<br/>
+Возвращают распространенные хорошо известные объекты SID.
 
-[Глобальные функции регистрации серверов](../../atl/reference/server-registration-global-functions.md)<br/>
-Поддержка регистрации и отмены регистрации серверных объектов в карте объектов.
+[Глобальные функции регистрации сервера](../../atl/reference/server-registration-global-functions.md)<br/>
+Обеспечивают поддержку регистрации и отмены регистрации объектов сервера в сопоставлении объектов.
 
-[Глобальные функции WinModule](../../atl/reference/winmodule-global-functions.md)<br/>
-Обеспечивает поддержку для `_AtlCreateWndData` структуры операций.
+[Глобальные функции Винмодуле](../../atl/reference/winmodule-global-functions.md)<br/>
+Обеспечить поддержку `_AtlCreateWndData` операций структуры.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Компоненты ATL COM Desktop](../../atl/atl-com-desktop-components.md)<br/>
 [Макросы](../../atl/reference/atl-macros.md)<br/>
 [Глобальные переменные](../../atl/reference/atl-global-variables.md)<br/>
-[Typedefs](../../atl/reference/atl-typedefs.md)<br/>
+[Определения типов](../../atl/reference/atl-typedefs.md)<br/>
 [Классы и структуры](../../atl/reference/atl-classes.md)

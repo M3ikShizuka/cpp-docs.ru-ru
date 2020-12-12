@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о мастере элементов управления ATL
 title: Мастер элементов управления ATL
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - controls [ATL], adding to projects
 - ATL Control Wizard
 ms.assetid: 991f8e72-ffbc-4382-a4ce-e255acfba5b6
-ms.openlocfilehash: c89fe17272399212e4436481abc2800c3ab6e660
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 3dd36e9ad2e14a87b86a56b8c035c4d4f8407430
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353146"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165437"
 ---
 # <a name="atl-control-wizard"></a>Мастер элементов управления ATL
 
@@ -46,7 +47,7 @@ ms.locfileid: "91353146"
 
    Задает сокращенное имя для объекта. Предоставляемое имя определяет имена класса и **сокласса** , файл (. CPP и. H) имена, имя интерфейса и имена **типов** , если не изменить эти поля по отдельности.
 
-- **Class**
+- **Класс**
 
    Задает имя класса, реализующего объект. Это имя основано на имени, указанном в поле **Короткое имя**, с предшествующей "С" — типичным префиксом для имени класса.
 

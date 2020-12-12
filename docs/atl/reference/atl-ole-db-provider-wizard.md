@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения о мастере поставщика OLE DB ATL
 title: Мастер поставщика ATL OLE DB
 ms.date: 05/09/2019
 helpviewer_keywords:
 - ATL projects, adding ATL OLE DB providers
 ms.assetid: cf91ba78-01d1-4d12-b673-e95d96bfbebe
-ms.openlocfilehash: 43b8ed4507b004f1e78bc1b9dda64c44ff56e1d7
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: 068670205c45c559e8b312d633d715f51a78190d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921143"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165346"
 ---
 # <a name="atl-ole-db-provider-wizard"></a>Мастер поставщика ATL OLE DB
 
@@ -21,9 +22,9 @@ ms.locfileid: "92921143"
 
 ::: moniker range="<=msvc-150"
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Начиная с Visual Studio 2008, сценарий регистрации, созданный этим мастером, зарегистрирует свои компоненты COM в разделе **HKEY_CURRENT_USER** вместо **HKEY_LOCAL_MACHINE** . Чтобы изменить это, задайте в мастере ATL параметр **Register component for all users** (Регистрация компонентов для всех пользователей).
+Начиная с Visual Studio 2008, сценарий регистрации, созданный этим мастером, зарегистрирует свои компоненты COM в разделе **HKEY_CURRENT_USER** вместо **HKEY_LOCAL_MACHINE**. Чтобы изменить это, задайте в мастере ATL параметр **Register component for all users** (Регистрация компонентов для всех пользователей).
 
 В следующей таблице описаны параметры мастера поставщика ATL OLE DB.
 
@@ -43,11 +44,11 @@ ms.locfileid: "92921143"
 
 - **ProgID:**
 
-   Программный идентификатор — это текстовая строка, которая может использоваться приложением вместо GUID. Имя программного идентификатора имеет следующий вид: *Projectname.CoClassname* .
+   Программный идентификатор — это текстовая строка, которая может использоваться приложением вместо GUID. Имя программного идентификатора имеет следующий вид: *Projectname.CoClassname*.
 
 - **Version**
 
-   Номер версии поставщика услуг. Значение по умолчанию — 1.
+   Номер версии поставщика услуг. Значение по умолчанию — 1.
 
 - **Класс DataSource**
 
@@ -87,6 +88,6 @@ ms.locfileid: "92921143"
 
 ::: moniker-end
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Поставщик ATL OLE DB](../../atl/reference/adding-an-atl-ole-db-provider.md)

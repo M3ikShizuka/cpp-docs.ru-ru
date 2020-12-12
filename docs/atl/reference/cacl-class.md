@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Какл Class'
 title: Класс Какл
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,16 +23,16 @@ f1_keywords:
 helpviewer_keywords:
 - CAcl class
 ms.assetid: 20bcb9af-dc1c-4737-b923-3864776680d6
-ms.openlocfilehash: 3beef0fc6a75a952956f032d3e0e4cbe4faed86b
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 60c498336f1bfb5358dd8e5b2eb771456a84ce17
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168453"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165073"
 ---
 # <a name="cacl-class"></a>Класс Какл
 
-Этот класс является оболочкой для структуры `ACL` (списка управления доступом).
+Этот класс является оболочкой для `ACL` структуры (списка управления доступом).
 
 > [!IMPORTANT]
 > Этот класс и его члены не могут использоваться в приложениях, выполняемых в среда выполнения Windows.
@@ -42,7 +43,7 @@ ms.locfileid: "82168453"
 class CAcl
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
@@ -54,24 +55,24 @@ class CAcl
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Какл:: Какл](#cacl)|Конструктор.|
 |[Какл:: ~ Какл](#dtor)|Деструктор|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Какл:: Жетацекаунт](#getacecount)|Возвращает число объектов записи управления доступом (ACE).|
-|[Какл:: Жетаклентриес](#getaclentries)|Извлекает из `CAcl` объекта записи списка управления доступом (ACL).|
+|[Какл:: Жетаклентриес](#getaclentries)|Извлекает из объекта записи списка управления доступом (ACL) `CAcl` .|
 |[Какл:: Жетаклентри](#getaclentry)|Извлекает все сведения о записи в `CAcl` объекте.|
 |[Какл:: DATALENGTH](#getlength)|Возвращает длину ACL.|
 |[Какл:: Жетпакл](#getpacl)|Возвращает ПАКЛ (указатель на список управления доступом).|
 |[Какл:: IsEmpty](#isempty)|Проверяет `CAcl` объект на наличие записей.|
 |[Какл:: IsNull](#isnull)|Возвращает состояние `CAcl` объекта.|
 |[Какл:: Ремовеаце](#removeace)|Удаляет конкретный элемент ACE (запись управления доступом) из `CAcl` объекта.|
-|[Какл:: Ремовеацес](#removeaces)|Удаляет все элементы ACE (записи управления доступом) из `CAcl` , которые применяются к заданному. `CSid`|
+|[Какл:: Ремовеацес](#removeaces)|Удаляет все элементы ACE (записи управления доступом) из `CAcl` , которые применяются к заданному `CSid` .|
 |[Какл:: Сетемпти](#setempty)|Помечает `CAcl` объект как пустой.|
 |[Какл:: SetNull](#setnull)|Помечает `CAcl` объект как null.|
 
@@ -82,9 +83,9 @@ class CAcl
 |[Список ACL Какл:: operator const *](#operator_const_acl__star)|Приводит `CAcl` объект к `ACL` структуре.|
 |[Какл:: operator =](#operator_eq)|Оператор присвоения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`ACL` Структура представляет собой заголовок списка ACL (список управления доступом). В список ACL входит последовательный список из нуля или более записей [ACE](/windows/win32/SecAuthZ/access-control-entries) (записи управления доступом). Отдельные элементы ACE в списке ACL нумеруются от 0 до *n – 1*, где *n* — число записей ACE в списке ACL. При редактировании списка управления доступом приложение ссылается на запись управления доступом (ACE) в списке управления доступом по индексу.
+`ACL`Структура представляет собой заголовок списка ACL (список управления доступом). В список ACL входит последовательный список из нуля или более записей [ACE](/windows/win32/SecAuthZ/access-control-entries) (записи управления доступом). Отдельные элементы ACE в списке ACL нумеруются от 0 до *n – 1*, где *n* — число записей ACE в списке ACL. При редактировании списка управления доступом приложение ссылается на запись управления доступом (ACE) в списке управления доступом по индексу.
 
 Существует два типа списков ACL:
 
@@ -104,7 +105,7 @@ class CAcl
 
 **Заголовок:** атлсекурити. h
 
-## <a name="caclcaccessmaskarray"></a><a name="caccessmaskarray"></a>Какл:: Какцессмаскаррай
+## <a name="caclcaccessmaskarray"></a><a name="caccessmaskarray"></a> Какл:: Какцессмаскаррай
 
 Массив объектов ACCESS_MASK.
 
@@ -112,11 +113,11 @@ class CAcl
 typedef CAtlArray<ACCESS_MASK> CAccessMaskArray;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это определение типа указывает тип массива, который можно использовать для хранения прав доступа, используемых в записях управления доступом (ACE).
 
-## <a name="caclcaceflagarray"></a><a name="caceflagarray"></a>Какл:: Кацефлагаррай
+## <a name="caclcaceflagarray"></a><a name="caceflagarray"></a> Какл:: Кацефлагаррай
 
 Массив байтов.
 
@@ -124,11 +125,11 @@ typedef CAtlArray<ACCESS_MASK> CAccessMaskArray;
 typedef CAtlArray<BYTE> CAceFlagArray;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это определение типа определяет тип массива, используемый для определения управляющих флагов, относящихся к типу элемента управления доступом (ACE). Полный список возможных флагов см. в определении [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) .
 
-## <a name="caclcacetypearray"></a><a name="cacetypearray"></a>Какл:: Кацетипеаррай
+## <a name="caclcacetypearray"></a><a name="cacetypearray"></a> Какл:: Кацетипеаррай
 
 Массив байтов.
 
@@ -136,11 +137,11 @@ typedef CAtlArray<BYTE> CAceFlagArray;
 typedef CAtlArray<BYTE> CAceTypeArray;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это определение типа определяет тип массива, используемый для определения природы объектов записи управления доступом (ACE), таких как ACCESS_ALLOWED_ACE_TYPE или ACCESS_DENIED_ACE_TYPE. Полный список возможных типов см. в определении [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) .
 
-## <a name="caclcacl"></a><a name="cacl"></a>Какл:: Какл
+## <a name="caclcacl"></a><a name="cacl"></a> Какл:: Какл
 
 Конструктор.
 
@@ -154,11 +155,11 @@ CAcl(const CAcl& rhs) throw(...);
 *rhs*<br/>
 Существующий объект `CAcl`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-При `CAcl` необходимости можно создать объект с помощью существующего `CAcl` объекта.
+`CAcl`При необходимости можно создать объект с помощью существующего `CAcl` объекта.
 
-## <a name="caclcacl"></a><a name="dtor"></a>Какл:: ~ Какл
+## <a name="caclcacl"></a><a name="dtor"></a> Какл:: ~ Какл
 
 Деструктор
 
@@ -166,11 +167,11 @@ CAcl(const CAcl& rhs) throw(...);
 virtual ~CAcl() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Деструктор освобождает все ресурсы, полученные объектом.
 
-## <a name="caclgetacecount"></a><a name="getacecount"></a>Какл:: Жетацекаунт
+## <a name="caclgetacecount"></a><a name="getacecount"></a> Какл:: Жетацекаунт
 
 Возвращает число объектов записи управления доступом (ACE).
 
@@ -182,9 +183,9 @@ virtual UINT GetAceCount() const throw() = 0;
 
 Возвращает число записей ACE в `CAcl` объекте.
 
-## <a name="caclgetaclentries"></a><a name="getaclentries"></a>Какл:: Жетаклентриес
+## <a name="caclgetaclentries"></a><a name="getaclentries"></a> Какл:: Жетаклентриес
 
-Извлекает из `CAcl` объекта записи списка управления доступом (ACL).
+Извлекает из объекта записи списка управления доступом (ACL) `CAcl` .
 
 ```cpp
 void GetAclEntries(
@@ -208,15 +209,15 @@ void GetAclEntries(
 *пацефлагс*<br/>
 Флаги ACE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод заполняет параметры массива сведениями о каждом объекте ACE, `CAcl` содержащемся в объекте. Если сведения для определенного массива не требуются, используйте значение NULL.
+Этот метод заполняет параметры массива сведениями о каждом объекте ACE, содержащемся в `CAcl` объекте. Если сведения для определенного массива не требуются, используйте значение NULL.
 
 Содержимое каждого массива соответствует друг другу, то есть первый элемент `CAccessMaskArray` массива соответствует первому элементу `CSidArray` массива и т. д.
 
 Дополнительные сведения о типах и флагах ACE см. в разделе [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) .
 
-## <a name="caclgetaclentry"></a><a name="getaclentry"></a>Какл:: Жетаклентри
+## <a name="caclgetaclentry"></a><a name="getaclentry"></a> Какл:: Жетаклентри
 
 Извлекает все сведения о записи в списке управления доступом (ACL).
 
@@ -254,13 +255,13 @@ void GetAclEntry(
 *пинхеритедобжекттипе*<br/>
 Тип наследуемого объекта. Будет установлено значение GUID_NULL, если наследуемый тип объекта не указан в элементе управления доступом или элемент управления доступом не является элементом ACE объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод извлечет все сведения об отдельном элементе управления доступом, предоставляя больше информации, чем [какл:: жетаклентриес](#getaclentries) .
 
 Дополнительные сведения о типах и флагах ACE см. в разделе [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) .
 
-## <a name="caclgetlength"></a><a name="getlength"></a>Какл:: DATALENGTH
+## <a name="caclgetlength"></a><a name="getlength"></a> Какл:: DATALENGTH
 
 Возвращает длину списка управления доступом (ACL).
 
@@ -272,7 +273,7 @@ UINT GetLength() const throw();
 
 Возвращает необходимую длину в байтах, необходимую для хранения `ACL` структуры.
 
-## <a name="caclgetpacl"></a><a name="getpacl"></a>Какл:: Жетпакл
+## <a name="caclgetpacl"></a><a name="getpacl"></a> Какл:: Жетпакл
 
 Возвращает указатель на список управления доступом (ACL).
 
@@ -284,7 +285,7 @@ const ACL* GetPACL() const throw(...);
 
 Возвращает указатель на `ACL` структуру.
 
-## <a name="caclisempty"></a><a name="isempty"></a>Какл:: IsEmpty
+## <a name="caclisempty"></a><a name="isempty"></a> Какл:: IsEmpty
 
 Проверяет `CAcl` объект на наличие записей.
 
@@ -292,11 +293,11 @@ const ACL* GetPACL() const throw(...);
 bool IsEmpty() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Возвращает значение TRUE, `CAcl` если объект не имеет значение null, и не содержит записей. Возвращает значение FALSE, `CAcl` если объект либо имеет значение null, либо содержит хотя бы одну запись.
+Возвращает значение TRUE `CAcl` , если объект не имеет значение null, и не содержит записей. Возвращает значение FALSE `CAcl` , если объект либо имеет значение null, либо содержит хотя бы одну запись.
 
-## <a name="caclisnull"></a><a name="isnull"></a>Какл:: IsNull
+## <a name="caclisnull"></a><a name="isnull"></a> Какл:: IsNull
 
 Возвращает состояние `CAcl` объекта.
 
@@ -306,21 +307,21 @@ bool IsNull() const throw();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает значение TRUE, `CAcl` если объект имеет значение null, в противном случае — значение false.
+Возвращает значение TRUE `CAcl` , если объект имеет значение null, в противном случае — значение false.
 
-## <a name="cacloperator-const-acl-"></a><a name="operator_const_acl__star"></a>Список ACL Какл:: operator const *
+## <a name="cacloperator-const-acl-"></a><a name="operator_const_acl__star"></a> Список ACL Какл:: operator const *
 
-Приводит `CAcl` объект к структуре `ACL` (список управления доступом).
+Приводит `CAcl` объект к `ACL` структуре (список управления доступом).
 
 ```cpp
 operator const ACL *() const throw(...);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает адрес `ACL` структуры.
 
-## <a name="cacloperator-"></a><a name="operator_eq"></a>Какл:: operator =
+## <a name="cacloperator-"></a><a name="operator_eq"></a> Какл:: operator =
 
 Оператор присвоения.
 
@@ -331,13 +332,13 @@ CAcl& operator= (const CAcl& rhs) throw(...);
 ### <a name="parameters"></a>Параметры
 
 *rhs*<br/>
-Объект `CAcl` , присваиваемый существующему объекту.
+Объект, `CAcl` присваиваемый существующему объекту.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Возвращает ссылку на обновленный `CAcl` объект.
 
-## <a name="caclremoveace"></a><a name="removeace"></a>Какл:: Ремовеаце
+## <a name="caclremoveace"></a><a name="removeace"></a> Какл:: Ремовеаце
 
 Удаляет конкретный элемент ACE (запись управления доступом) из `CAcl` объекта.
 
@@ -350,13 +351,13 @@ void RemoveAce(UINT nIndex) throw();
 *ниндекс*<br/>
 Индекс удаляемой записи ACE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод является производным от [CAtlArray:: RemoveAt](../../atl/reference/catlarray-class.md#removeat).
 
-## <a name="caclremoveaces"></a><a name="removeaces"></a>Какл:: Ремовеацес
+## <a name="caclremoveaces"></a><a name="removeaces"></a> Какл:: Ремовеацес
 
-Удаляет элементы ACE alls (записи управления доступом) из `CAcl` , которые применяются к заданному. `CSid`
+Удаляет элементы ACE alls (записи управления доступом) из `CAcl` , которые применяются к заданному `CSid` .
 
 ```cpp
 bool RemoveAces(const CSid& rSid) throw(...)
@@ -367,7 +368,7 @@ bool RemoveAces(const CSid& rSid) throw(...)
 *рсид*<br/>
 Ссылка на объект `CSid`.
 
-## <a name="caclsetempty"></a><a name="setempty"></a>Какл:: Сетемпти
+## <a name="caclsetempty"></a><a name="setempty"></a> Какл:: Сетемпти
 
 Помечает `CAcl` объект как пустой.
 
@@ -375,11 +376,11 @@ bool RemoveAces(const CSid& rSid) throw(...)
 void SetEmpty() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`CAcl` Можно задать значение Empty или значение NULL: два состояния различаются.
+`CAcl`Можно задать значение Empty или значение NULL: два состояния различаются.
 
-## <a name="caclsetnull"></a><a name="setnull"></a>Какл:: SetNull
+## <a name="caclsetnull"></a><a name="setnull"></a> Какл:: SetNull
 
 Помечает `CAcl` объект как null.
 
@@ -387,11 +388,11 @@ void SetEmpty() throw();
 void SetNull() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`CAcl` Можно задать значение Empty или значение NULL: два состояния различаются.
+`CAcl`Можно задать значение Empty или значение NULL: два состояния различаются.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Общие сведения о классах](../../atl/atl-class-overview.md)<br/>
 [Глобальные функции безопасности](../../atl/reference/security-global-functions.md)

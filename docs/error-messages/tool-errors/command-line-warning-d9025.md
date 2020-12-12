@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Command-Line Warning D9025'
 title: Предупреждение командной строки D9025
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - D9025
 ms.assetid: 6edff72c-1508-46c2-99f4-0e4b3c5e60c9
-ms.openlocfilehash: 4afd4d4dc07ffaae6038c025ee371278ebbebea6
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8cec7bdb5f3816c33d395e8ae93a861a29e94c64
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80196720"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97115499"
 ---
 # <a name="command-line-warning-d9025"></a>Предупреждение командной строки D9025
 

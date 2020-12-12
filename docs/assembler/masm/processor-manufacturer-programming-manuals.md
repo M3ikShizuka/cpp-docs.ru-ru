@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: руководства по программированию для производителей процессоров'
 title: Руководства по программированию изготовителей процессоров
 ms.date: 05/28/2020
 ms.assetid: 61844163-de2f-419a-808e-04de39dfdddf
-ms.openlocfilehash: 444539c1d06d24dd6c2847cf5c426cdb96a3aed5
-ms.sourcegitcommit: 426e327c9f7c3a3b02300e3f924f9786d62958e9
+ms.openlocfilehash: 5691669804c6d44a32e5cde6a87ca358beef12d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84206158"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97126026"
 ---
 # <a name="processor-manufacturer-programming-manuals"></a>Руководства по программированию изготовителей процессоров
 
@@ -27,7 +28,7 @@ ms.locfileid: "84206158"
 
 Visual Studio и Microsoft Macro Assembler не поддерживают все процессоры.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по ассемблеру макросов (Майкрософт)](microsoft-macro-assembler-reference.md)\
 [Грамматика MASM BNF](masm-bnf-grammar.md)

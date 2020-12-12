@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура _ATL_BASE_MODULE70'
 title: Структура _ATL_BASE_MODULE70
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - ATL_BASE_MODULE70 structure
 - _ATL_BASE_MODULE70 structure
 ms.assetid: 4539282f-15b8-4d7c-aafa-a85dc56f4980
-ms.openlocfilehash: 3893e4ce4fcd24f48d9e981ad24505f82dc98833
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 5bcf2083f9c8991871c05535fd3e20a39bfeb822
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168648"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165515"
 ---
 # <a name="_atl_base_module70-structure"></a>Структура _ATL_BASE_MODULE70
 
@@ -35,13 +36,13 @@ struct _ATL_BASE_MODULE70 {
 };
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 `cbSize`<br/>
 Размер структуры, используемый для управления версиями.
 
 `m_hInst`<br/>
-`hInstance` Для этого модуля (exe или DLL).
+`hInstance`Для этого модуля (exe или DLL).
 
 `m_hInstResource`<br/>
 Обработчик ресурсов экземпляра по умолчанию.
@@ -61,7 +62,7 @@ struct _ATL_BASE_MODULE70 {
 `m_rgResourceInstance`<br/>
 Массив, используемый для поиска ресурсов во всех экземплярах ресурсов, в которых учитывается ATL. Используется внутренне библиотекой ATL.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 [_ATL_BASE_MODULE](atl-typedefs.md#_atl_base_module) определяется как typedef _ATL_BASE_MODULE70.
 
@@ -69,6 +70,6 @@ struct _ATL_BASE_MODULE70 {
 
 **Заголовок:** атлкоре. h
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Классы и структуры](../../atl/reference/atl-classes.md)
