@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: sync_shared классе'
 title: Класс sync_shared
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - stdext::sync_shared [C++], deallocate
 - stdext::sync_shared [C++], equals
 ms.assetid: cab3af9e-3d1a-4f2c-8580-0f89e5687d8e
-ms.openlocfilehash: 8b516762f0ae2f6d25c4d5109cbc9870f1254b89
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 4093b85ce6f10552cba462074aee2a448cc5ce3e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562081"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183286"
 ---
 # <a name="sync_shared-class"></a>Класс sync_shared
 
@@ -66,7 +67,7 @@ void *allocate(std::size_t count);
 
 Указатель на выделяемый объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член блокирует мьютекс, вызывает метод `cache.allocate(count)`, разблокирует мьютекс и возвращает результат более раннего вызова `cache.allocate(count)`. `cache` представляет текущий объект кэша.
 
@@ -86,7 +87,7 @@ void deallocate(void* ptr, std::size_t count);
 *расчета*\
 Количество объектов для освобождения из хранилища.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член блокирует мьютекс, вызывает метод `cache.deallocate(ptr, count)`, где `cache` представляет объект кэша, а затем разблокирует мьютекс.
 
@@ -110,7 +111,7 @@ bool equals(const sync_shared<Cache>& Other) const;
 
 **`true`** значение, если результат `cache.equals(Other.cache)` , где `cache` представляет объект кэша, равен **`true`** ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="see-also"></a>См. также раздел
 
