@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: typeid (C++/CLI и C++/CX)'
 title: typeid (C++/CLI и C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - typeid keyword [C++]
 ms.assetid: e9706cae-e7c4-4d6d-b474-646d73df3e70
-ms.openlocfilehash: bfb226bc11f0fd7d3feddfb2c50ffe1aa6311d3d
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 0452de57b93eb5d55bed34fc1f9745280a6b6184
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500382"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185665"
 ---
 # <a name="typeid--ccli-and-ccx"></a>typeid (C++/CLI и C++/CX)
 
@@ -45,7 +46,7 @@ Platform::Type^ type = T::typeid;
 *T*<br/>
 Имя типа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В C++/CX typeid возвращает значение [Platform::Type](../cppcx/platform-type-class.md), создаваемое из данных типа во время выполнения.
 
@@ -66,7 +67,7 @@ type::typeid
 *type*<br/>
 Имя типа (абстрактный декларатор), для которого требуется объект `System::Type`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **`typeid`** используется для получения <xref:System.Type> для типа во время компиляции.
 

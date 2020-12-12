@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о платформах, пространствах имен по умолчанию и интерфейсах CLI (C++/CLI и C++/CX)
 title: Пространства имен Platform, default и cli (C++/CLI и C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - lang namespace
 - cli namespace
 ms.assetid: 9d38bd1e-dc78-47d1-a84b-9b4683e52c9c
-ms.openlocfilehash: df699b12404d9de1a9acaae6e9dc8c00fd2f15df
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1b4b47a1568b1a137bc49a09b8b50feb8ec3a76b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87195360"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185678"
 ---
 # <a name="platform-default-and-cli-namespaces--ccli-and-ccx"></a>Пространства имен Platform, default и cli (C++/CLI и C++/CX)
 

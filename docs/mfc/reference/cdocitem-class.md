@@ -1,5 +1,6 @@
 ---
-title: Класс CDocItem
+description: 'Дополнительные сведения о: КдоЦитем Class'
+title: Класс КдоЦитем
 ms.date: 11/04/2016
 f1_keywords:
 - CDocItem
@@ -10,14 +11,14 @@ helpviewer_keywords:
 - CDocItem [MFC], GetDocument
 - CDocItem [MFC], IsBlank
 ms.assetid: 84fb8610-a4c8-4211-adc0-e70e8d002c11
-ms.openlocfilehash: 438bc2a03239946dbfca53d5f2989c731b682ab0
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9e126d4351248165a3961739c13cc6ce7330c10c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375622"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185145"
 ---
-# <a name="cdocitem-class"></a>Класс CDocItem
+# <a name="cdocitem-class"></a>Класс КдоЦитем
 
 Базовый класс для элементов документа, являющихся компонентами данных документа.
 
@@ -27,20 +28,20 @@ ms.locfileid: "81375622"
 class CDocItem : public CCmdTarget
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CDocItem::GetDocument](#getdocument)|Возвращает документ, содержащий элемент.|
-|[CDocItem::IsBlank](#isblank)|Определяет, содержит ли элемент какую-либо информацию.|
+|[КдоЦитем:: a Document](#getdocument)|Возвращает документ, содержащий элемент.|
+|[КдоЦитем:: Blank](#isblank)|Определяет, содержит ли элемент какие бы то ни было сведения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CDocItem`объекты используются для представления элементов OLE в клиентских и серверных документах.
+`CDocItem` объекты используются для представления элементов OLE как в клиентских, так и в серверных документах.
 
-Для получения дополнительной информации см. [Containers: Implementing a Container](../../mfc/containers-implementing-a-container.md)
+Дополнительные сведения см. в разделе [контейнеры статьи: Реализация контейнера](../../mfc/containers-implementing-a-container.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -52,9 +53,9 @@ class CDocItem : public CCmdTarget
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxole.h
+**Заголовок:** афксоле. h
 
-## <a name="cdocitemgetdocument"></a><a name="getdocument"></a>CDocItem::GetDocument
+## <a name="cdocitemgetdocument"></a><a name="getdocument"></a> КдоЦитем:: a Document
 
 Вызовите эту функцию, чтобы получить документ, содержащий элемент.
 
@@ -64,15 +65,15 @@ CDocument* GetDocument() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на документ, содержащий элемент; NULL, если элемент не является частью документа.
+Указатель на документ, содержащий элемент; Значение NULL, если элемент не является частью документа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Эта функция переопределяется в производных классов [COleClientItem](../../mfc/reference/coleclientitem-class.md) и [COleServerItem](../../mfc/reference/coleserveritem-class.md), возвращая указатель либо [COleDocument](../../mfc/reference/coledocument-class.md), [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md), или объект [COleServerDoc.](../../mfc/reference/coleserverdoc-class.md)
+Эта функция переопределяется в производных классах [COleClientItem](../../mfc/reference/coleclientitem-class.md) и [COleServerItem](../../mfc/reference/coleserveritem-class.md), возвращая указатель либо на [коледокумент](../../mfc/reference/coledocument-class.md), [колелинкингдок](../../mfc/reference/colelinkingdoc-class.md), либо на объект [колесервердок](../../mfc/reference/coleserverdoc-class.md) .
 
-## <a name="cdocitemisblank"></a><a name="isblank"></a>CDocItem::IsBlank
+## <a name="cdocitemisblank"></a><a name="isblank"></a> КдоЦитем:: Blank
 
-Вызывается инфраструктурой при возникновении сериализации по умолчанию.
+Вызывается платформой при сериализации по умолчанию.
 
 ```
 virtual BOOL IsBlank() const;
@@ -80,18 +81,18 @@ virtual BOOL IsBlank() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если элемент не содержит никакой информации; в противном случае 0.
+Ненулевое значение, если элемент не содержит сведений; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-По умолчанию `CDocItem` объекты не являются пустыми. [COleClientItem](../../mfc/reference/coleclientitem-class.md) объекты иногда пустые, `CDocItem`потому что они получают непосредственно от . Тем не менее, объекты [COleServerItem](../../mfc/reference/coleserveritem-class.md) всегда пусты. По умолчанию приложения `COleClientItem` OLE, содержащие объекты, не имеют степени x или y, сериализируются. Это делается путем возвращения TRUE `IsBlank` из переопределения, когда элемент не имеет х или у степени.
+По умолчанию `CDocItem` объекты не являются пустыми. Объекты [COleClientItem](../../mfc/reference/coleclientitem-class.md) иногда являются пустыми, так как они наследуются непосредственно от `CDocItem` . Однако объекты [COleServerItem](../../mfc/reference/coleserveritem-class.md) всегда пусты. По умолчанию приложения OLE `COleClientItem` , содержащие объекты, не имеющие экстента x или y, сериализуются. Это делается путем возврата значения TRUE из переопределения, `IsBlank` Если у элемента нет экстента x или y.
 
-Переопределить эту функцию, если вы хотите реализовать другие действия во время сериализации.
+Переопределите эту функцию, если требуется реализовать другие действия во время сериализации.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс CCmdTarget](../../mfc/reference/ccmdtarget-class.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
-[Класс COleDocument](../../mfc/reference/coledocument-class.md)<br/>
-[Класс ColeServerItem](../../mfc/reference/coleserveritem-class.md)<br/>
-[Класс ColeClientItem](../../mfc/reference/coleclientitem-class.md)
+[Класс от CCmdTarget](../../mfc/reference/ccmdtarget-class.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
+[Класс Коледокумент](../../mfc/reference/coledocument-class.md)<br/>
+[Класс COleServerItem](../../mfc/reference/coleserveritem-class.md)<br/>
+[Класс COleClientItem](../../mfc/reference/coleclientitem-class.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Ошибка средств компоновщика LNK1301'
 title: Ошибка средств компоновщика LNK1301
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1301
 ms.assetid: 760da428-7182-4b25-b20a-de90d4b9a9cd
-ms.openlocfilehash: fe64eecfbc9fed57c3748afd5804b76d6e4284a4
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: ac282aea62836591c6e30abb3030ef2143a78003
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74990936"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335956"
 ---
 # <a name="linker-tools-error-lnk1301"></a>Ошибка средств компоновщика LNK1301
 
@@ -21,7 +22,7 @@ ms.locfileid: "74990936"
 
 Оптимизированные для профилирования оптимизации не поддерживаются для модулей/CLR.
 
-Дополнительные сведения см. в следующих разделах.
+Дополнительные сведения см. в разделе:
 
 - [/GL (оптимизация всей программы)](../../build/reference/gl-whole-program-optimization.md)
 

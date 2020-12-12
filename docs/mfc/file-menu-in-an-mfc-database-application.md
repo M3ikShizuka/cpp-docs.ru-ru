@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о меню "файл" в приложении базы данных MFC
 title: Меню "Файл" в приложении базы данных MFC
 ms.date: 11/04/2016
 helpviewer_keywords:
 - File menu
 - database applications [MFC], File menu commands
 ms.assetid: 92dafb75-c1b3-4860-80a0-87a83bfc36f2
-ms.openlocfilehash: fbbb4382749278708e8e758f79a618d5cad0549e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: d8d229ce9c53e7a79044af2de03778574c18e5dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615704"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335885"
 ---
 # <a name="file-menu-in-an-mfc-database-application"></a>Меню "Файл" в приложении базы данных MFC
 
@@ -34,4 +35,4 @@ ms.locfileid: "84615704"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Сериализация. Сериализация и ввод-вывод баз данных](serialization-serialization-vs-database-input-output.md)
+[Сериализация: сериализация и ввод-вывод базы данных](serialization-serialization-vs-database-input-output.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: override (C++/CLI и C++/CX)'
 title: override (C++/CLI и C++/CX)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - overriding, override keyword [C++]
 - override keyword [C++]
 ms.assetid: 34d19257-1686-4fcd-96f5-af07c70ba914
-ms.openlocfilehash: 32c825539efe670528eab7416afefe07d4cb1b6c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1be49ac9b9e2d0f2eb3342855a42e9707f883078
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172104"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335944"
 ---
 # <a name="override--ccli-and-ccx"></a>override (C++/CLI и C++/CX)
 
 Контекстно-зависимое ключевое слово **override** указывает, что член типа переопределяет член базового класса или базового интерфейса.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Ключевое слово **override** обрабатывается при компиляции в машинный код (параметр компилятора по умолчанию), объекты среды выполнения Windows (параметр компиляции `/ZW`) или объекты среды CLR (параметр компилятора `/clr`).
 
@@ -83,5 +84,5 @@ ref struct X : public I1 {
 
 ## <a name="see-also"></a>См. также раздел
 
-[Описатель override](../cpp/override-specifier.md)<br/>
+[Спецификатор переопределения](../cpp/override-specifier.md)<br/>
 [Спецификаторы переопределения](override-specifiers-cpp-component-extensions.md)

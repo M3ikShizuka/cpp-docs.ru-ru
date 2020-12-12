@@ -1,5 +1,6 @@
 ---
-title: Класс CDockablePaneAdapter
+description: 'Дополнительные сведения о: Кдоккаблепанеадаптер Class'
+title: Класс Кдоккаблепанеадаптер
 ms.date: 11/04/2016
 f1_keywords:
 - CDockablePaneAdapter
@@ -14,14 +15,14 @@ helpviewer_keywords:
 - CDockablePaneAdapter [MFC], SaveState
 - CDockablePaneAdapter [MFC], SetWrappedWnd
 ms.assetid: 6ed6cf82-f39c-4d0c-bf7c-8641495cf8f3
-ms.openlocfilehash: 2fbaf99e4cc9bcbecf1a94012713b34e986f7ecb
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0a46ef15d35194203d6e5c035555de0d80b63c72
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375596"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185041"
 ---
-# <a name="cdockablepaneadapter-class"></a>Класс CDockablePaneAdapter
+# <a name="cdockablepaneadapter-class"></a>Класс Кдоккаблепанеадаптер
 
 Обеспечивает поддержку прикрепления производных панелей от `CWnd`.
 
@@ -31,40 +32,40 @@ ms.locfileid: "81375596"
 class CDockablePaneAdapter : public CDockablePane
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CDockablePaneAdapter::GetWrappedWnd](#getwrappedwnd)|Возвращает окно в оболочке.|
-|[CDockablePaneAdapter::LoadState](#loadstate)|(Перекрывает [CDockablePane::LoadState](cdockablepane-class.md#loadstate).)|
-|[CDockablePaneAdapter::SaveState](#savestate)|(Перекрывает [CDockablePane::SaveState](cdockablepane-class.md).)|
+|[Кдоккаблепанеадаптер:: Жетвраппедвнд](#getwrappedwnd)|Возвращает окно в оболочке.|
+|[CDockablePaneAdapter::LoadState](#loadstate)|(Переопределяет [CDockablePane:: LoadState](cdockablepane-class.md#loadstate).)|
+|[CDockablePaneAdapter::SaveState](#savestate)|(Переопределяет [CDockablePane:: SaveState](cdockablepane-class.md).)|
 |[CDockablePaneAdapter::SetWrappedWnd](#setwrappedwnd)||
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Обычно фреймворк мгновенно использует объекты этого класса при использовании методов [CMFCBaseTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) или [CMFCBaseTabCtrl::InsertTab.](../../mfc/reference/cmfcbasetabctrl-class.md#inserttab)
+Как правило, платформа создает экземпляры объектов этого класса при использовании методов [CMFCBaseTabCtrl:: аддтаб](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) или [CMFCBaseTabCtrl:: инсерттаб](../../mfc/reference/cmfcbasetabctrl-class.md#inserttab) .
 
-Если вы хотите настроить `CDockablePaneAdapter` поведение, просто вывешите из него новый класс и установите информацию о классе выполнения в окно вкладок с помощью [CMFCBaseTabCtrl::SetDockingBarWrapperRTC.](../../mfc/reference/cmfcbasetabctrl-class.md#setdockingbarwrapperrtc)
+Если вы хотите настроить `CDockablePaneAdapter` поведение, просто создайте производный от него новый класс и задайте в качестве сведений о классе среды выполнения окно с вкладками с помощью [CMFCBaseTabCtrl:: SetDockingBarWrapperRTC](../../mfc/reference/cmfcbasetabctrl-class.md#setdockingbarwrapperrtc).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
-[Cobject](../../mfc/reference/cobject-class.md)\
-&nbsp;[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Квн](../../mfc/reference/cwnd-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[CBasePane](../../mfc/reference/cbasepane-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[КПэйне](../../mfc/reference/cpane-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;[CDockablePane](../../mfc/reference/cdockablepane-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;[CDockablePaneAdapter](../../mfc/reference/cdockablepaneadapter-class.md)
+[CObject](../../mfc/reference/cobject-class.md)\
+└ &nbsp; [От CCmdTarget](../../mfc/reference/ccmdtarget-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [CWnd](../../mfc/reference/cwnd-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [CBasePane](../../mfc/reference/cbasepane-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [CPane](../../mfc/reference/cpane-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [CDockablePane](../../mfc/reference/cdockablepane-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [Кдоккаблепанеадаптер](../../mfc/reference/cdockablepaneadapter-class.md)
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxDockablePaneAdapter.h
+**Заголовок:** афксдоккаблепанеадаптер. h
 
-## <a name="cdockablepaneadaptergetwrappedwnd"></a><a name="getwrappedwnd"></a>CDockablePaneAdapter::GetWrappedWnd
+## <a name="cdockablepaneadaptergetwrappedwnd"></a><a name="getwrappedwnd"></a> Кдоккаблепанеадаптер:: Жетвраппедвнд
 
-Возвращает базовое окно для адаптера сприминым стеклом.
+Возвращает базовое окно для адаптера закрепляемой панели.
 
 ```
 virtual CWnd* GetWrappedWnd() const;
@@ -72,13 +73,13 @@ virtual CWnd* GetWrappedWnd() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на завернутое окно.
+Указатель на окно с оболочкой.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте эту функцию для доступа к завернутому окну.
+Используйте эту функцию для доступа к окну с оболочкой.
 
-## <a name="cdockablepaneadapterloadstate"></a><a name="loadstate"></a>CDockablePaneAdapter:LoadState
+## <a name="cdockablepaneadapterloadstate"></a><a name="loadstate"></a> Кдоккаблепанеадаптер:: LoadState
 
 Загружает состояние панели из реестра.
 
@@ -91,22 +92,22 @@ virtual BOOL LoadState(
 
 ### <a name="parameters"></a>Параметры
 
-*lpszProfileName*<br/>
-(в) Имя профиля.
+*лпсзпрофиленаме*<br/>
+окне Имя профиля.
 
-*Nindex*<br/>
-(в) Индекс профиля.
+*ниндекс*<br/>
+окне Индекс профиля.
 
 *uiID*<br/>
-(в) Идентификатор панели.
+окне Идентификатор области.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cdockablepaneadaptersavestate"></a><a name="savestate"></a>CDockablePaneAdapter::SaveState
+## <a name="cdockablepaneadaptersavestate"></a><a name="savestate"></a> Кдоккаблепанеадаптер:: SaveState
 
-Сохраняет состояние панели в реестр.
+Сохраняет состояние панели в реестре.
 
 ```
 virtual BOOL SaveState(
@@ -117,22 +118,22 @@ virtual BOOL SaveState(
 
 ### <a name="parameters"></a>Параметры
 
-*lpszProfileName*<br/>
-(в) Имя профиля.
+*лпсзпрофиленаме*<br/>
+окне Имя профиля.
 
-*Nindex*<br/>
-(в) Индекс профиля (по умолчанию в идентификатор управления окном).
+*ниндекс*<br/>
+окне Индекс профиля (по умолчанию используется идентификатор элемента управления окна).
 
 *uiID*<br/>
-(в) Идентификатор панели.
+окне Идентификатор области.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cdockablepaneadaptersetwrappedwnd"></a><a name="setwrappedwnd"></a>CDockablePaneAdapter::SetWrappedWnd
+## <a name="cdockablepaneadaptersetwrappedwnd"></a><a name="setwrappedwnd"></a> Кдоккаблепанеадаптер:: Сетвраппедвнд
 
-Устанавливает базовое окно для адаптера сприминовными стеклами.
+Задает базовое окно для адаптера закрепляемой панели.
 
 ```
 virtual BOOL SetWrappedWnd(CWnd* pWnd);
@@ -140,15 +141,15 @@ virtual BOOL SetWrappedWnd(CWnd* pWnd);
 
 ### <a name="parameters"></a>Параметры
 
-*pWnd*<br/>
-(в) Указатель на окно для адаптера панели для упаковки.
+*Приводится*<br/>
+окне Указатель на окно для адаптера панели, для которого необходимо выполнить перенос.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
-[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)
+[Класс CDockablePane](../../mfc/reference/cdockablepane-class.md)

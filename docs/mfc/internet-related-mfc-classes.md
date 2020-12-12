@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: Internet-Related классов MFC'
 title: Классы MFC, связанные с Интернетом
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC, Internet classes
 ms.assetid: e50c6b39-4b65-4b8a-8101-8934d0780723
-ms.openlocfilehash: 1c784e9ae98e2fb51a31521511967b1755c3ea12
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: e1cdbbbb1079ae63d07a6f31c021a2c765f61964
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621626"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335864"
 ---
 # <a name="internet-related-mfc-classes"></a>Классы MFC, связанные с Интернетом
 

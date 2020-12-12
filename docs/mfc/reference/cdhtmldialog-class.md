@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CDHtmlDialog Class'
 title: Класс CDHtmlDialog
 ms.date: 03/27/2019
 f1_keywords:
@@ -116,12 +117,12 @@ helpviewer_keywords:
 - CDHtmlDialog [MFC], m_strCurrentUrl
 - CDHtmlDialog [MFC], m_szHtmlResID
 ms.assetid: 3f941c85-87e1-4f0f-9cc5-ffee8498b312
-ms.openlocfilehash: 9cc01c94357d7aac7fa6fa98127628a60746e1e8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: aa99d10b0d0ff6920f839d7588d80f489b971384
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842888"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185288"
 ---
 # <a name="cdhtmldialog-class"></a>Класс CDHtmlDialog
 
@@ -133,7 +134,7 @@ ms.locfileid: "88842888"
 class CDHtmlDialog : public CDialog, public CDHtmlEventSink
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -206,7 +207,7 @@ class CDHtmlDialog : public CDialog, public CDHtmlEventSink
 |[CDHtmlDialog:: m_strCurrentUrl](#m_strcurrenturl)|Текущий URL-адрес.|
 |[CDHtmlDialog:: m_szHtmlResID](#m_szhtmlresid)|Строковая версия идентификатора ресурса HTML.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `CDHtmlDialog` может загрузить HTML-код, отображаемый из ресурса HTML или с URL-адреса.
 
@@ -300,7 +301,7 @@ CDHtmlDialog(
 *нхтмлресид*<br/>
 Содержит ИДЕНТИФИКАЦИОНный номер ресурса HTML.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вторая форма конструктора предоставляет доступ к ресурсу диалогового окна через имя шаблона. Третья форма конструктора предоставляет доступ к ресурсу диалогового окна через идентификатор шаблона ресурса. Обычно идентификатор начинается с префикса **IDD_** .
 
@@ -312,7 +313,7 @@ CDHtmlDialog(
 virtual ~CDHtmlDialog();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция члена [CWnd::D естройвиндов](../../mfc/reference/cwnd-class.md#destroywindow) должна использоваться для уничтожения немодальных диалоговых окон, созданных с помощью класса [CDialog:: Create](../../mfc/reference/cdialog-class.md#create).
 
@@ -340,7 +341,7 @@ virtual BOOL CreateControlSite(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эту функцию-член можно переопределить, чтобы она возвращала экземпляр класса собственного элемента управления.
 
@@ -588,7 +589,7 @@ STDMETHOD(EnableModeless)(BOOL fEnable);
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член является реализацией [идочостуихандлер:: Енаблемоделесс](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\))CDHtmlDialog, как описано в Windows SDK.
 
@@ -614,7 +615,7 @@ STDMETHOD(FilterDataObject)(
 
 Возвращает S_FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член является реализацией [идочостуихандлер:: Филтердатаобжект](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\))CDHtmlDialog, как описано в Windows SDK.
 
@@ -676,7 +677,7 @@ VARIANT GetControlProperty(
 
 Значение типа Variant, содержащее запрошенное свойство, или пустое значение типа Variant, если не удалось найти элемент управления или свойство.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Перегрузки перечисляются с минимальной эффективностью в верхней части до наиболее эффективных в нижней части.
 
@@ -703,7 +704,7 @@ HRESULT GetDHtmlDocument(IHTMLDocument2 **pphtmlDoc);
 
 ### <a name="parameters"></a>Параметры
 
-* \* \* пфтмлдок* указатель на указатель на HTML-документ.
+*\* \* пфтмлдок* указатель на указатель на HTML-документ.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -731,7 +732,7 @@ STDMETHOD(GetDropTarget)(
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член является реализацией [идочостуихандлер:: Жетдроптаржет](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\))CDHtmlDialog, как описано в Windows SDK.
 
@@ -768,7 +769,7 @@ HRESULT GetElement(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте первую перегрузку, если необходимо обрабатывать условия, в которых может быть несколько элементов с указанным ИДЕНТИФИКАТОРом. Последний параметр можно использовать для определения того, является ли возвращаемый указатель интерфейса коллекцией или одним элементом. Если указатель интерфейса находится в коллекции, можно запросить `IHTMLElementCollection` и использовать его `item` свойство для ссылки на элементы по порядковому номеру.
 
@@ -881,7 +882,7 @@ HRESULT GetEvent(IHTMLEventObj** ppEventObj);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция должна вызываться только в обработчике событий DHTML.
 
@@ -902,7 +903,7 @@ STDMETHOD(GetExternal)(IDispatch** ppDispatch);
 
 Возвращает S_OK при успешном выполнении или E_NOTIMPL при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член является реализацией [идочостуихандлер:: External](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\))CDHtmlDialog, как описано в Windows SDK.
 
@@ -923,7 +924,7 @@ STDMETHOD(GetHostInfo)(DOCHOSTUIINFO* pInfo);
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член является реализацией [идочостуихандлер:: Жесостинфо](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\))CDHtmlDialog, как описано в Windows SDK.
 
@@ -949,7 +950,7 @@ STDMETHOD(GetOptionKeyPath)(
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член является реализацией [идочостуихандлер:: Жетоптионкэйпас](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\))CDHtmlDialog, как описано в Windows SDK.
 
@@ -965,7 +966,7 @@ STDMETHOD(HideUI)(void);
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член является реализацией [идочостуихандлер:: Хидеуи](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753259\(v=vs.85\))CDHtmlDialog, как описано в Windows SDK.
 
@@ -1010,9 +1011,9 @@ BOOL LoadFromResource(UINT nRes);
 BOOL m_bUseHtmlTitle;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если параметр **m**_ **бусехтмлтитле** имеет значение true, то заголовок диалогового окна задается равным заголовку HTML-документа. в противном случае используется заголовок в ресурсе диалогового окна.
+Если параметр **m** _ **бусехтмлтитле** имеет значение true, то заголовок диалогового окна задается равным заголовку HTML-документа. в противном случае используется заголовок в ресурсе диалогового окна.
 
 ## <a name="cdhtmldialogm_nhtmlresid"></a><a name="m_nhtmlresid"></a> CDHtmlDialog:: m_nHtmlResID
 
@@ -1149,7 +1150,7 @@ STDMETHOD(OnDocWindowActivate)(BOOL fActivate);
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член является реализацией [идочостуихандлер:: OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\))CDHtmlDialog, как описано в Windows SDK.
 
@@ -1170,7 +1171,7 @@ STDMETHOD(OnFrameWindowActivate)(BOOL fActivate);
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член является реализацией [идочостуихандлер:: OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\))CDHtmlDialog, как описано в Windows SDK.
 
@@ -1186,7 +1187,7 @@ virtual BOOL OnInitDialog();
 
 Реализация по умолчанию возвращает значение TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это сообщение отправляется в диалоговое окно во время `Create` `CreateIndirect` вызовов, или `DoModal` , которые происходят непосредственно перед отображением диалогового окна.
 
@@ -1404,7 +1405,7 @@ STDMETHOD(ShowContextMenu)(
 
 Возвращает S_FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член является реализацией [идочостуихандлер:: Шовконтекстмену](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\))CDHtmlDialog, как описано в Windows SDK.
 
@@ -1442,7 +1443,7 @@ STDMETHOD(ShowUI)(
 
 Возвращает S_FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член является реализацией [идочостуихандлер:: параметра showUI задано](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\))CDHtmlDialog, как описано в Windows SDK.
 
@@ -1472,7 +1473,7 @@ STDMETHOD(TranslateAccelerator)(
 
 Возвращает S_FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член является реализацией [идочостуихандлер:: TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\))CDHtmlDialog, как описано в Windows SDK.
 
@@ -1502,7 +1503,7 @@ STDMETHOD(TranslateUrl)(
 
 Возвращает S_FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член является реализацией [идочостуихандлер:: Транслатеурл](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\))CDHtmlDialog, как описано в Windows SDK.
 
@@ -1518,7 +1519,7 @@ STDMETHOD(UpdateUI)(void);
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член является реализацией [идочостуихандлер:: Упдатеуи](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753268\(v=vs.85\))CDHtmlDialog, как описано в Windows SDK.
 

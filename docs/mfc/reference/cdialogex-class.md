@@ -1,5 +1,6 @@
 ---
-title: Класс CDialogEx
+description: 'Дополнительные сведения о: Кдиаложекс Class'
+title: Класс Кдиаложекс
 ms.date: 11/04/2016
 f1_keywords:
 - CDialogEx
@@ -12,14 +13,14 @@ helpviewer_keywords:
 - CDialogEx [MFC], SetBackgroundColor
 - CDialogEx [MFC], SetBackgroundImage
 ms.assetid: a6ed3b1f-aef8-4b66-ac78-2160faf63c13
-ms.openlocfilehash: 717e560035d42957c16168097577d0c8c589e3c7
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 27ec0011935871d472734cae6f0d62b402382727
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753347"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185249"
 ---
-# <a name="cdialogex-class"></a>Класс CDialogEx
+# <a name="cdialogex-class"></a>Класс Кдиаложекс
 
 Класс `CDialogEx` задает цвет фона и фоновое изображение для диалогового окна.
 
@@ -29,29 +30,29 @@ ms.locfileid: "81753347"
 class CDialogEx : public CDialog
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CDialogEx::CDialogEx](#cdialogex)|Формирует объект `CDialogEx`.|
 |`CDialogEx::~CDialogEx`|Деструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CDialogEx::SetBackgroundColor](#setbackgroundcolor)|Задает цвет фона диалогового окна.|
 |[CDialogEx::SetBackgroundImage](#setbackgroundimage)|Задает фоновое изображение диалогового окна.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Чтобы использовать класс `CDialogEx`, сформируйте класс диалогового окна из класса `CDialogEx` вместо класса `CDialog`.
 
-Изображения диалогового окна хранятся в файле ресурсов. Платформа автоматически удаляет все изображения, загруженные из файла ресурсов. Чтобы программно удалить текущее фоновое изображение, позвоните в метод [CDialogEx::SetBackgroundImage](#setbackgroundimage) или реализуйте `OnDestroy` обработчик событий. При вызове [метода CDialogEx::SetBackgroundImage](#setbackgroundimage) `HBITMAP` передайте параметр в качестве ручки изображения. Объект `CDialogEx` будет распоряжаться изображением и может удалить его, если для флажка `m_bAutoDestroyBmp` установлено значение `TRUE`.
+Изображения диалогового окна хранятся в файле ресурсов. Платформа автоматически удаляет все изображения, загруженные из файла ресурсов. Чтобы программно удалить текущее фоновое изображение, вызовите метод [кдиаложекс:: сетбаккграундимаже](#setbackgroundimage) или реализуйте `OnDestroy` обработчик событий. При вызове метода [кдиаложекс:: сетбаккграундимаже](#setbackgroundimage) передайте `HBITMAP` параметр в качестве маркера изображения. Объект `CDialogEx` будет распоряжаться изображением и может удалить его, если для флажка `m_bAutoDestroyBmp` установлено значение `TRUE`.
 
-Объект `CDialogEx` может быть родительским объектом [класса CMFCPopupMenu.](../../mfc/reference/cmfcpopupmenu-class.md) Объект [класса CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) `CDialogEx::SetActiveMenu` вызывает метод при открытии [объекта класса CMFCPopupMenu.](../../mfc/reference/cmfcpopupmenu-class.md) После этого `CDialogEx` объект обрабатывает любое событие меню до тех пор, пока объект [класса CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) не будет закрыт.
+`CDialogEx`Объект может быть родителем объекта [класса CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) . Объект [класса CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) вызывает метод, `CDialogEx::SetActiveMenu` когда открывается объект [класса CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) . `CDialogEx`После этого объект обрабатывает все события меню до закрытия объекта [класса CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) .
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -67,9 +68,9 @@ class CDialogEx : public CDialog
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxdialogex.h
+**Заголовок:** афксдиаложекс. h
 
-## <a name="cdialogexcdialogex"></a><a name="cdialogex"></a>CDialogEx::CDialogEx
+## <a name="cdialogexcdialogex"></a><a name="cdialogex"></a> Кдиаложекс:: Кдиаложекс
 
 Формирует объект `CDialogEx`.
 
@@ -85,23 +86,23 @@ CDialogEx(
 
 ### <a name="parameters"></a>Параметры
 
-*nIDTemplate*<br/>
-(в) Идентификатор ресурса шаблона диалогового окна.
+*нидтемплате*<br/>
+окне Идентификатор ресурса шаблона диалогового окна.
 
-*lpszTemplateName*<br/>
-(в) Название ресурса шаблона диалогового окна.
+*лпсзтемплатенаме*<br/>
+окне Имя ресурса шаблона диалогового окна.
 
-*pРодитель*<br/>
-(в) Указатель на родительское окно. Значение по умолчанию — NULL.
+*ппарент*<br/>
+окне Указатель на родительское окно. Значение по умолчанию — NULL.
 
-*pParentWnd*<br/>
-(в) Указатель на родительское окно. Значение по умолчанию — NULL.
+*ппарентвнд*<br/>
+окне Указатель на родительское окно. Значение по умолчанию — NULL.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cdialogexsetbackgroundcolor"></a><a name="setbackgroundcolor"></a>CDialogEx::SetBackgroundColor
+## <a name="cdialogexsetbackgroundcolor"></a><a name="setbackgroundcolor"></a> Кдиаложекс:: Сетбаккграундколор
 
 Задает цвет фона диалогового окна.
 
@@ -113,15 +114,15 @@ void SetBackgroundColor(
 
 ### <a name="parameters"></a>Параметры
 
-*Цвет*<br/>
-(в) Значение цвета RGB.
+*color*<br/>
+окне Значение цвета RGB.
 
 *bRepaint*<br/>
-(в) TRUE для немедленного обновления экрана; в противном случае, FALSE. Значение по умолчанию — TRUE.
+окне Значение TRUE, чтобы немедленно обновить экран; в противном случае — значение FALSE. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cdialogexsetbackgroundimage"></a><a name="setbackgroundimage"></a>CDialogEx::SetBackgroundImage
+## <a name="cdialogexsetbackgroundimage"></a><a name="setbackgroundimage"></a> Кдиаложекс:: Сетбаккграундимаже
 
 Задает фоновое изображение диалогового окна.
 
@@ -140,32 +141,32 @@ BOOL SetBackgroundImage(
 
 ### <a name="parameters"></a>Параметры
 
-*hBitmap*<br/>
-(в) Ручка к фоновому изображению.
+*хбитмап*<br/>
+окне Маркер фонового изображения.
 
-*uiBmpResId*<br/>
-(в) Идентификатор ресурса фонового изображения.
+*уибмпресид*<br/>
+окне Идентификатор ресурса фонового изображения.
 
 *расположение*<br/>
-(в) Одно из `CDialogEx::BackgroundLocation` значений, определяющих местоположение изображения. Допустимые значения включают BACKGR_TILE, BACKGR_TOPLEFT, BACKGR_TOPRIGHT, BACKGR_BOTTOMLEFT и BACKGR_BOTTOMRIGHT. Значение по умолчанию является BACKGR_TILE.
+окне Одно из `CDialogEx::BackgroundLocation` значений, задающих расположение изображения. Допустимые значения: BACKGR_TILE, BACKGR_TOPLEFT, BACKGR_TOPRIGHT, BACKGR_BOTTOMLEFT и BACKGR_BOTTOMRIGHT. Значение по умолчанию — BACKGR_TILE.
 
-*bAutoDestroy*<br/>
-(в) TRUE для автоматического уничтожения фонового изображения; в противном случае, FALSE.
+*баутодестрой*<br/>
+окне Значение TRUE для автоматического уничтожения фонового изображения; в противном случае — значение FALSE.
 
 *bRepaint*<br/>
-(в) TRUE, чтобы немедленно перерисовать диалоговую коробку; в противном случае, FALSE.
+окне Значение TRUE, чтобы немедленно перерисовывать диалоговое окно; в противном случае — значение FALSE.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Во втором методе перегрузки синтаксиса, TRUE, если метод является успешным; в противном случае, FALSE.
+Во втором синтаксисе перегрузки метода — TRUE, если метод выполнен успешно; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Изображение, указанное, не растягивается в соответствии с областью клиента диалогового окна.
+Указанное изображение не растягивается по размеру клиентской области диалогового окна.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
 [Класс CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md)<br/>
-[Класс CContextMenuManager](../../mfc/reference/ccontextmenumanager-class.md)
+[Класс Кконтекстменуманажер](../../mfc/reference/ccontextmenumanager-class.md)
