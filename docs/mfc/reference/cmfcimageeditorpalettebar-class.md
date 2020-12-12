@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: КмфЦимажеедиторпалеттебар Class'
 title: Класс КмфЦимажеедиторпалеттебар
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - CMFCImageEditorPaletteBar [MFC], GetRowHeight
 - CMFCImageEditorPaletteBar [MFC], IsButtonExtraSizeAvailable
 ms.assetid: 3fb7ba8e-f254-4d56-b913-9941b4ed8138
-ms.openlocfilehash: 007fa94269a6a42bf076d2d75a18860896503aa1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 19d023776c66559e8d639eb71ebc266f992af4c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831168"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265367"
 ---
 # <a name="cmfcimageeditorpalettebar-class"></a>Класс КмфЦимажеедиторпалеттебар
 
@@ -27,7 +28,7 @@ ms.locfileid: "88831168"
 class CMFCImageEditorPaletteBar : public CMFCToolBar
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
@@ -36,7 +37,7 @@ class CMFCImageEditorPaletteBar : public CMFCToolBar
 |[КмфЦимажеедиторпалеттебар:: Жетровхеигхт](#getrowheight)|Возвращает высоту кнопок панели инструментов. (Переопределяет [CMFCToolBar:: жетровхеигхт](../../mfc/reference/cmfctoolbar-class.md#getrowheight).)|
 |[КмфЦимажеедиторпалеттебар:: Исбуттонекстрасизеаваилабле](#isbuttonextrasizeavailable)|Определяет, может ли на панели инструментов отображаться кнопка с расширенными границами. (Переопределяет [CMFCToolBar:: исбуттонекстрасизеаваилабле](../../mfc/reference/cmfctoolbar-class.md#isbuttonextrasizeavailable).)|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Данный класс не предназначен для непосредственного использования в коде.
 

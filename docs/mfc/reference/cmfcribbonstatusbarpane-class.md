@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CMFCRibbonStatusBarPane Class'
 title: Класс CMFCRibbonStatusBarPane
 ms.date: 11/04/2016
 f1_keywords:
@@ -32,16 +33,16 @@ helpviewer_keywords:
 - CMFCRibbonStatusBarPane [MFC], StopAnimation
 - CMFCRibbonStatusBarPane [MFC], OnFinishAnimation
 ms.assetid: 5d034c3c-ecca-4267-b88c-0f55a2884dd0
-ms.openlocfilehash: bb4e09eabab17061812ed22b2739d06accd57fee
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 4ddbee5a6c44411ef2ac34bff3e07b47c3d950a0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753513"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264990"
 ---
 # <a name="cmfcribbonstatusbarpane-class"></a>Класс CMFCRibbonStatusBarPane
 
-Класс `CMFCRibbonStatusBarPane` реализует элемент ленты, который можно добавить в бар состояния ленты.
+`CMFCRibbonStatusBarPane`Класс реализует элемент Ribbon, который можно добавить в строку состояния ленты.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -49,39 +50,39 @@ ms.locfileid: "81753513"
 class CMFCRibbonStatusBarPane : public CMFCRibbonButton
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMFCRibbonStatusBarPane::CMFCRibbonStatusBarPane](#cmfcribbonstatusbarpane)|Создает и инициализирует объект `CMFCRibbonStatusBarPane`.|
+|[CMFCRibbonStatusBarPane:: CMFCRibbonStatusBarPane](#cmfcribbonstatusbarpane)|Создает и инициализирует объект `CMFCRibbonStatusBarPane`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMFCRibbonStatusBarPane::GetAlmostLargeText](#getalmostlargetext)|Возвращает строку, определяющую самую длинную текстовую строку, которая может отображаться в стеле без усечения.|
-|[CMFCRibbonStatusBarPane::GetTextAlign](#gettextalign)|Возвращает текущую настройку выравнивания текста.|
-|[CMFCRibbonStatusBarPane::Анимация](#isanimation)|Определяет, выполняется ли анимация.|
-|[CMFCRibbonStatusBarPane::Расширенный](#isextended)|Определяет, находится ли панель в расширенной области ленты статус бар.|
-|[CMFCRibbonStatusBarPane::OnDrawBorder](#ondrawborder)|(Переопределяет [CMFCRibbonButton::OndrawBorder](../../mfc/reference/cmfcribbonbutton-class.md#ondrawborder).)|
-|[CMFCRibbonStatusBarPane::OnFillBackground](#onfillbackground)|(Переопределяет [CMFCRibbonButton::OnFillbackground](../../mfc/reference/cmfcribbonbutton-class.md#onfillbackground).)|
-|[CMFCRibbonStatusBarPane::SetAlmostLargeText](#setalmostlargetext)|Определяет самую длинную текстовую строку, которая может отображаться в стеле без усечения.|
-|[CMFCRibbonStatusBarPane::SetAnimationList](#setanimationlist)|Присваивает панели список изображений, которые могут быть использованы для анимации.|
-|[CMFCRibbonStatusBarPane::SetTextAlign](#settextalign)|Устанавливает выравнивание текста.|
-|[CMFCRibbonStatusBarPane::СтартАним](#startanimation)|Запускает анимацию, назначенную на панель.|
-|[CMFCRibbonStatusBarPane:StopAnimation](#stopanimation)|Остановка анимации, назначенной на панель. .|
+|[CMFCRibbonStatusBarPane:: Жеталмостларжетекст](#getalmostlargetext)|Возвращает строку, которая определяет длинную текстовую строку, которая может отображаться на панели без усечения.|
+|[CMFCRibbonStatusBarPane:: Жеттексталигн](#gettextalign)|Возвращает текущее значение выравнивания текста.|
+|[CMFCRibbonStatusBarPane:: Animation](#isanimation)|Определяет, выполняется ли анимация.|
+|[CMFCRibbonStatusBarPane:: Extended](#isextended)|Определяет, находится ли панель в расширенной области строки состояния ленты.|
+|[CMFCRibbonStatusBarPane:: Ондравбордер](#ondrawborder)|(Переопределяет [CMFCRibbonButton:: ондравбордер](../../mfc/reference/cmfcribbonbutton-class.md#ondrawborder).)|
+|[CMFCRibbonStatusBarPane:: Онфиллбаккграунд](#onfillbackground)|(Переопределяет [CMFCRibbonButton:: онфиллбаккграунд](../../mfc/reference/cmfcribbonbutton-class.md#onfillbackground).)|
+|[CMFCRibbonStatusBarPane:: Сеталмостларжетекст](#setalmostlargetext)|Определяет самую длинную текстовую строку, которая может отображаться на панели без усечения.|
+|[CMFCRibbonStatusBarPane:: Сетаниматионлист](#setanimationlist)|Присваивает панели список изображений, который можно использовать для анимации.|
+|[CMFCRibbonStatusBarPane:: Сеттексталигн](#settextalign)|Задает выравнивание текста.|
+|[CMFCRibbonStatusBarPane:: Стартаниматион](#startanimation)|Запускает анимацию, назначенную панели.|
+|[CMFCRibbonStatusBarPane:: Стопаниматион](#stopanimation)|Останавливает анимацию, назначенную панели. .|
 
 ### <a name="protected-methods"></a>Защищенные методы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CMFCRibbonStatusBarPane::OnFinishAnimation](#onfinishanimation)|Вызывается по фреймворку, когда анимация, назначенная панели, останавливается.|
+|[CMFCRibbonStatusBarPane:: Онфинишаниматион](#onfinishanimation)|Вызывается структурой при остановке анимации, назначенной панели.|
 
 ## <a name="example"></a>Пример
 
-В следующем примере демонстрируется использование различных методов класса `CMFCRibbonStatusBarPane`. На примере показано, `CMFCRibbonStatusBarPane` как построить объект, установить выравнивание текста панели знака статуса, определить самый длинный текст, который может отображаться в панели панели состояния без усечения, прикрепить к панели статуса панели список изображений, которые могут быть использованы для анимации, и начать анимацию.
+В следующем примере демонстрируется использование различных методов класса `CMFCRibbonStatusBarPane`. В этом примере показано, как создать `CMFCRibbonStatusBarPane` объект, задать выравнивание текста метки на панели строки состояния, определить самый длинный текст, который может отображаться на панели строки состояния без усечения, присоединиться к панели строки состояния список изображений, который можно использовать для анимации, и запустить анимацию.
 
 [!code-cpp[NVC_MFC_RibbonApp#2](../../mfc/reference/codesnippet/cpp/cmfcribbonstatusbarpane-class_1.cpp)]
 
@@ -97,11 +98,11 @@ class CMFCRibbonStatusBarPane : public CMFCRibbonButton
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxribbonstatusbarpane.h
+**Заголовок:** афксриббонстатусбарпане. h
 
-## <a name="cmfcribbonstatusbarpanecmfcribbonstatusbarpane"></a><a name="cmfcribbonstatusbarpane"></a>CMFCRibbonStatusBarPane::CMFCRibbonStatusBarPane
+## <a name="cmfcribbonstatusbarpanecmfcribbonstatusbarpane"></a><a name="cmfcribbonstatusbarpane"></a> CMFCRibbonStatusBarPane:: CMFCRibbonStatusBarPane
 
-Постройте объект панели панели в панели статуса.
+Создайте объект панели в строке состояния.
 
 ```
 CMFCRibbonStatusBarPane(
@@ -132,36 +133,36 @@ CMFCRibbonStatusBarPane(
 
 ### <a name="parameters"></a>Параметры
 
-*nCmdID*<br/>
-(в) Упогоняет идентификатор команды панели.
+*нкмдид*<br/>
+окне Указывает идентификатор команды для панели.
 
 *lpszText*<br/>
-(в) Определяет строку текста для отображения на панели.
+окне Задает текстовую строку, отображаемую на панели.
 
-*bIsStatic*<br/>
-(в) Если true, панель статуса не может быть выделена или выбрана, нажав на него.
+*бисстатик*<br/>
+окне Если значение — TRUE, область состояния нельзя выделить или выбрать, щелкнув ее.
 
 *hIcon*<br/>
-(в) Обращайтесь к рукоятке значка, который будет отображаться на панели.
+окне Задает маркер для значка, отображаемого на панели.
 
-*lpszAlmostLargeText*<br/>
-(в) Определяет самую длинную текстовую строку, которая может отображаться на панели.
+*лпсзалмостларжетекст*<br/>
+окне Указывает длинную текстовую строку, которая может отображаться на панели.
 
-*hBmpAnimationList*<br/>
-(в) Определяет ручку в списке изображений, который используется для анимации.
+*хбмпаниматионлист*<br/>
+окне Задает маркер для списка изображений, используемый для анимации.
 
-*cxАнимация*<br/>
-(в) Определяет ширину в пикселях значка в списке изображений, который используется для анимации.
+*кксаниматион*<br/>
+окне Задает ширину (в пикселях) значка в списке изображений, который используется для анимации.
 
-*clrTrnsp*<br/>
-(в) Определяет прозрачный цвет изображений в списке изображений, которые используются для анимации.
+*клртрнсп*<br/>
+окне Задает прозрачный цвет изображений в списке изображений, используемых для анимации.
 
-*uiAnimationListResID*<br/>
-(в) Упогоняет идентификатор ресурса списка изображений, который используется для анимации.
+*уианиматионлистресид*<br/>
+окне Указывает идентификатор ресурса для списка изображений, используемого для анимации.
 
-## <a name="cmfcribbonstatusbarpanegetalmostlargetext"></a><a name="getalmostlargetext"></a>CMFCRibbonStatusBarPane::GetAlmostLargeText
+## <a name="cmfcribbonstatusbarpanegetalmostlargetext"></a><a name="getalmostlargetext"></a> CMFCRibbonStatusBarPane:: Жеталмостларжетекст
 
-Получает самую длинную текстовую строку, которую может отображать панель статуса.
+Возвращает самую длинную текстовую строку, которую может отобразить панель строки состояния.
 
 ```
 LPCTSTR GetAlmostLargeText() const;
@@ -169,11 +170,11 @@ LPCTSTR GetAlmostLargeText() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Самая длинная строка текста, которую может отображать панель статуса.
+Длинная текстовая строка, которую может отобразить панель строки состояния.
 
-## <a name="cmfcribbonstatusbarpanegettextalign"></a><a name="gettextalign"></a>CMFCRibbonStatusBarPane::GetTextAlign
+## <a name="cmfcribbonstatusbarpanegettextalign"></a><a name="gettextalign"></a> CMFCRibbonStatusBarPane:: Жеттексталигн
 
-Получает текущую настройку выравнивания текста метки панели status.
+Возвращает текущее значение выравнивания текста метки на панели строки состояния.
 
 ```
 int GetTextAlign() const;
@@ -189,7 +190,7 @@ int GetTextAlign() const;
 
 - TA_RIGHT.
 
-## <a name="cmfcribbonstatusbarpaneisanimation"></a><a name="isanimation"></a>CMFCRibbonStatusBarPane::Анимация
+## <a name="cmfcribbonstatusbarpaneisanimation"></a><a name="isanimation"></a> CMFCRibbonStatusBarPane:: Animation
 
 Определяет, выполняется ли анимация.
 
@@ -199,11 +200,11 @@ BOOL IsAnimation() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если анимация продолжается; FALSE в противном случае.
+Значение TRUE, если анимация выполняется; В противном случае — значение FALSE.
 
-## <a name="cmfcribbonstatusbarpaneisextended"></a><a name="isextended"></a>CMFCRibbonStatusBarPane::Расширенный
+## <a name="cmfcribbonstatusbarpaneisextended"></a><a name="isextended"></a> CMFCRibbonStatusBarPane:: Extended
 
-Определите, находится ли панель в расширенной области ленты статус бар.
+Определите, находится ли панель в расширенной области строки состояния ленты.
 
 ```
 BOOL IsExtended() const;
@@ -211,11 +212,11 @@ BOOL IsExtended() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если панель находится на статус бар расширенной области. FALSE в противном случае.
+TRUE, если область находится в расширенной области строки состояния. В противном случае — значение FALSE.
 
-## <a name="cmfcribbonstatusbarpaneondrawborder"></a><a name="ondrawborder"></a>CMFCRibbonStatusBarPane::OnDrawBorder
+## <a name="cmfcribbonstatusbarpaneondrawborder"></a><a name="ondrawborder"></a> CMFCRibbonStatusBarPane:: Ондравбордер
 
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ```
 virtual void OnDrawBorder(CDC*);
@@ -223,13 +224,13 @@ virtual void OnDrawBorder(CDC*);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *CDC&#42;*<br/>
+окне *&#42;CDC*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonstatusbarpaneonfillbackground"></a><a name="onfillbackground"></a>CMFCRibbonStatusBarPane::OnFillBackground
+## <a name="cmfcribbonstatusbarpaneonfillbackground"></a><a name="onfillbackground"></a> CMFCRibbonStatusBarPane:: Онфиллбаккграунд
 
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ```
 virtual COLORREF OnFillBackground(CDC* pDC);
@@ -237,27 +238,27 @@ virtual COLORREF OnFillBackground(CDC* pDC);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonstatusbarpaneonfinishanimation"></a><a name="onfinishanimation"></a>CMFCRibbonStatusBarPane::OnFinishAnimation
+## <a name="cmfcribbonstatusbarpaneonfinishanimation"></a><a name="onfinishanimation"></a> CMFCRibbonStatusBarPane:: Онфинишаниматион
 
-Рамочная система вызывает этот метод, когда анимация, назначенная панели, заканчивается.
+Платформа вызывает этот метод при завершении анимации, назначенной панели.
 
 ```
 virtual void OnFinishAnimation();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`StopAnimation`метод вызывает `OnFinishAnimation` метод, который можно использовать для очистки данных по окончании анимации.
+`StopAnimation` вызывает `OnFinishAnimation` метод, который можно использовать для очистки данных при окончании анимации.
 
-## <a name="cmfcribbonstatusbarpanesetalmostlargetext"></a><a name="setalmostlargetext"></a>CMFCRibbonStatusBarPane::SetAlmostLargeText
+## <a name="cmfcribbonstatusbarpanesetalmostlargetext"></a><a name="setalmostlargetext"></a> CMFCRibbonStatusBarPane:: Сеталмостларжетекст
 
-Определите самый длинный текст, который может отображаться в панели панели status bar без усечения.
+Определите самый длинный текст, который может отображаться на панели строка состояния без усечения.
 
 ```cpp
 void SetAlmostLargeText(LPCTSTR lpszAlmostLargeText);
@@ -265,16 +266,16 @@ void SetAlmostLargeText(LPCTSTR lpszAlmostLargeText);
 
 ### <a name="parameters"></a>Параметры
 
-*lpszAlmostLargeText*<br/>
-(в) Определяет самую длинную строку, которая может отображаться на панели строки состояния без усечения.
+*лпсзалмостларжетекст*<br/>
+окне Указывает длинную строку, которая может быть отображена на панели строка состояния без усечения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Библиотека вычисляет размер текста, который *lpszAlmostLargeText* определяет и изменяет панель соответственно. Текст будет усечен, если он все еще не помещается в стекол.
+Библиотека вычисляет размер текста, который *лпсзалмостларжетекст* указывает, и соответствующим образом изменяет размеры панели. Текст будет обрезан, если он по-прежнему не умещается на панели.
 
-## <a name="cmfcribbonstatusbarpanesetanimationlist"></a><a name="setanimationlist"></a>CMFCRibbonStatusBarPane::SetAnimationList
+## <a name="cmfcribbonstatusbarpanesetanimationlist"></a><a name="setanimationlist"></a> CMFCRibbonStatusBarPane:: Сетаниматионлист
 
-Прикрепляет к панели статуса панель списка изображений, которые могут быть использованы для анимации.
+Присоединяет к панели строки состояния список изображений, который можно использовать для анимации.
 
 ```cpp
 void SetAnimationList(
@@ -290,25 +291,25 @@ BOOL SetAnimationList(
 
 ### <a name="parameters"></a>Параметры
 
-*hBmpAnimationList*<br/>
-(в) Определяет ручку в списке изображений.
+*хбмпаниматионлист*<br/>
+окне Задает маркер для списка изображений.
 
-*cxАнимация*<br/>
-(в) Определяет ширину в пикселях кадра в списке изображений.
+*кксаниматион*<br/>
+окне Задает ширину (в пикселях) кадра в списке изображений.
 
 *clrTransp*<br/>
-(в) Определяет прозрачный цвет списка изображений.
+окне Задает прозрачный цвет для списка изображений.
 
-*uiAnimationListResID*<br/>
-(в) Упогоняет идентификатор ресурса списка изображений.
+*уианиматионлистресид*<br/>
+окне Указывает идентификатор ресурса для списка изображений.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если список изображений успешно прилагается к панели панели панели статуса; FALSE в противном случае.
+Значение TRUE, если список изображений успешно присоединен к панели строки состояния; В противном случае — значение FALSE.
 
-## <a name="cmfcribbonstatusbarpanesettextalign"></a><a name="settextalign"></a>CMFCRibbonStatusBarPane::SetTextAlign
+## <a name="cmfcribbonstatusbarpanesettextalign"></a><a name="settextalign"></a> CMFCRibbonStatusBarPane:: Сеттексталигн
 
-Устанавливает выравнивание текста метки стежка-панели статуса.
+Задает выравнивание текста метки на панели строки состояния.
 
 ```cpp
 void SetTextAlign(int nAlign);
@@ -316,22 +317,22 @@ void SetTextAlign(int nAlign);
 
 ### <a name="parameters"></a>Параметры
 
-*nAlign*<br/>
-(в) Определяет выравнивание текста.
+*налигн*<br/>
+окне Задает выравнивание текста.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-*nAlign* может иметь одно из следующих значений:
+*налигн* может иметь одно из следующих значений:
 
-- TA_LEFT: левое выравнивание
+- TA_LEFT: выравнивание по левому краю
 
-- TA_CENTER: выравнивание центра
+- TA_CENTER: выравнивание по центру
 
-- TA_RIGHT: правое выравнивание
+- TA_RIGHT: выравнивание по правому краю
 
-## <a name="cmfcribbonstatusbarpanestartanimation"></a><a name="startanimation"></a>CMFCRibbonStatusBarPane::СтартАним
+## <a name="cmfcribbonstatusbarpanestartanimation"></a><a name="startanimation"></a> CMFCRibbonStatusBarPane:: Стартаниматион
 
-Запускает анимацию, которую вы назначаете панели.
+Запускает анимацию, назначенную панели.
 
 ```cpp
 void StartAnimation(
@@ -341,19 +342,19 @@ void StartAnimation(
 
 ### <a name="parameters"></a>Параметры
 
-*nФреймДерайка*<br/>
-(в) Определяет частоту кадров анимации в миллисекундах.
+*нфрамеделай*<br/>
+окне Указывает частоту кадров анимации в миллисекундах.
 
-*nDuration*<br/>
-(в) Определяет, как долго играть анимацию, в миллисекундах. Используйте -1 для бесконечного цикла.
+*ндуратион*<br/>
+окне Указывает продолжительность воспроизведения анимации в миллисекундах. Для бесконечного цикла используйте параметр-1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Перед вызовом `StartAnimation` `SetAnimationList`необходимо указать ручку в списке изображений.
+Необходимо указать маркер для списка изображений перед вызовом с `StartAnimation` помощью `SetAnimationList` .
 
-## <a name="cmfcribbonstatusbarpanestopanimation"></a><a name="stopanimation"></a>CMFCRibbonStatusBarPane:StopAnimation
+## <a name="cmfcribbonstatusbarpanestopanimation"></a><a name="stopanimation"></a> CMFCRibbonStatusBarPane:: Стопаниматион
 
-Остановка анимации, назначенной на панель состояния.
+Останавливает анимацию, назначенную панели строка состояния.
 
 ```cpp
 void StopAnimation();
@@ -361,7 +362,7 @@ void StopAnimation();
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
 [Класс CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md)<br/>
-[Класс CMFCRibbonStatusBar](../../mfc/reference/cmfcribbonstatusbar-class.md)
+[Класс Кмфкриббонстатусбар](../../mfc/reference/cmfcribbonstatusbar-class.md)

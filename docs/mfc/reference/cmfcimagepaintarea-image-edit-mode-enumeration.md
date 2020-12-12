@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: перечисление CMFCImagePaintArea:: IMAGE_EDIT_MODE enumeration'
 title: Перечисление CMFCImagePaintArea::IMAGE_EDIT_MODE
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - IMAGE_EDIT_MODE Enumeration method [MFC]
 ms.assetid: e51db66a-fa1c-4766-9dac-a25b595f871a
-ms.openlocfilehash: 37c877cc8562a9479535d9c6132e49e7c9b7e82f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f28880d108be8fb4f2b14ede1a3cbd3c7dac9f2e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831142"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265328"
 ---
 # <a name="cmfcimagepaintareaimage_edit_mode-enumeration"></a>Перечисление CMFCImagePaintArea::IMAGE_EDIT_MODE
 
@@ -31,7 +32,7 @@ enum IMAGE_EDIT_MODE
 };
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 |Имя|Описание|
 |-|-|
@@ -42,7 +43,7 @@ enum IMAGE_EDIT_MODE
 |IMAGE_EDIT_MODE_ELLIPSE|Используется для рисования эллипса.|
 |IMAGE_EDIT_MODE_COLOR|Используется для установки текущего цвета на цвет в текущем положении курсора.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `CMFCImagePaintArea`Классы и `CMFCImageEditorDialog` используют это перечисление для установки текущего режима рисования. Режим рисования и текущий цвет используются для изменения области изображения в диалоговом окне редактора изображений. Дополнительные сведения о `CMFCImagePaintArea` и `CMFCImageEditorDialog` см. в разделе [класс перечисление CMFCImagePaintArea](../../mfc/reference/cmfcimagepaintarea-class.md) и [класс кмфЦимажеедитордиалог](../../mfc/reference/cmfcimageeditordialog-class.md).
 

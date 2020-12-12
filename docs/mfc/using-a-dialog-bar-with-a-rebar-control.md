@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье Использование диалогового окна с элементом управления "Главная панель"
 title: Использование диалоговой панели с элементом управления главной панели
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - rebar controls [MFC], dialog bars
 - dialog bars [MFC], using with rebar bands
 ms.assetid: e528cea0-6b81-4bdf-9643-7c03b6176590
-ms.openlocfilehash: e4e786d3670ec74b734739e29aa7e3e33b5af384
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 97fb8ca5c356d91fa4b4ba44753fbdc9bf298435
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75302371"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263534"
 ---
 # <a name="using-a-dialog-bar-with-a-rebar-control"></a>Использование диалоговой панели с элементом управления главной панели
 
@@ -23,7 +24,7 @@ ms.locfileid: "75302371"
 
 ### <a name="to-implement-a-transparent-dialog-bar-in-a-rebar-band"></a>Реализация прозрачной диалоговой панели в полосе главной панели
 
-1. В [диалоговом окне Добавление класса](../mfc/reference/adding-an-mfc-class.md)добавьте новый класс (например, `CMyDlgBar`), который реализует объект панели диалогового окна.
+1. В [диалоговом окне Добавление класса](../mfc/reference/adding-an-mfc-class.md)добавьте новый класс (например, `CMyDlgBar` ), который реализует объект панели диалогового окна.
 
 1. Добавьте обработчик для сообщения WM_ERASEBKGND.
 
@@ -39,7 +40,7 @@ ms.locfileid: "75302371"
 
 Новые обработчики имитируют прозрачность диалогового окна, пересылая WM_ERASEBKGND сообщение в родительское окно и вызывая перерисовку при каждом перемещении объекта панели диалогового окна.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Использование CReBarCtrl](../mfc/using-crebarctrl.md)<br/>
 [Элементы управления](../mfc/controls-mfc.md)

@@ -1,5 +1,6 @@
 ---
-title: Класс CMFCRibbonStatusBar
+description: 'Дополнительные сведения о: Кмфкриббонстатусбар Class'
+title: Класс Кмфкриббонстатусбар
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonStatusBar
@@ -50,16 +51,16 @@ helpviewer_keywords:
 - CMFCRibbonStatusBar [MFC], SetInformation
 - CMFCRibbonStatusBar [MFC], OnDrawInformation
 ms.assetid: 921eb57f-3b40-49fa-a38c-3f2fb6dc2893
-ms.openlocfilehash: 8d90e01db022c33edd654e83af05e9986799f2b9
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 01436d535b410fd4a6c70f52760908e3547b7af8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754054"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265003"
 ---
-# <a name="cmfcribbonstatusbar-class"></a>Класс CMFCRibbonStatusBar
+# <a name="cmfcribbonstatusbar-class"></a>Класс Кмфкриббонстатусбар
 
-Класс `CMFCRibbonStatusBar` реализует элементы панели статуса, которые могут отображать элементы ленты.
+`CMFCRibbonStatusBar`Класс реализует элемент управления "строка состояния", который может отображать элементы ленты.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -67,51 +68,51 @@ ms.locfileid: "81754054"
 class CMFCRibbonStatusBar : public CMFCRibbonBar
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMFCRibbonStatusBar::AddDynamicElement](#adddynamicelement)|Добавляет динамический элемент в бар состояния ленты.|
-|[CMFCRibbonStatusBar::AddElement](#addelement)|Добавляет новый элемент ленты в бар статуса ленты.|
-|[CMFCRibbonStatusBar::AddExtendedElement](#addextendedelement)|Добавляет элемент ленты в расширенную область ленты статус бар.|
-|[CMFCRibbonStatusBar::AddSeparator](#addseparator)|Добавляет сепаратор в ленточное положение.|
-|[CMFCRibbonStatusBar::Создание](#create)|Создает ленту статус бар.|
-|[CMFCRibbonStatusBar::CreateEx](#createex)|Создает лента статус бар с расширенным стилем.|
-|[CMFCRibbonStatusBar:FindbyID](#findbyid)||
-|[CMFCRibbonStatusBar::FindElement](#findelement)|Возвращает указатель элементу с указанным идентификатором команды.|
-|[CMFCRibbonStatusBar::GetCount](#getcount)|Возвращает количество элементов, которые расположены в основной области ленты статус бар.|
-|[CMFCRibbonStatusBar::GetElement](#getelement)|Возвращает указатель элементу, расположенному в указанном индексе.|
-|[CMFCRibbonStatusBar::GetExCount](#getexcount)|Возвращает количество элементов, расположенных в расширенной области ленты статус бар.|
-|[CMFCRibbonStatusBar::GetExElement](#getexelement)|Возвращает указатель на элемент, расположенный по заданному индексу в расширенной области строки состояния ленты.|
-|[CMFCRibbonStatusBar::GetExtendedArea](#getextendedarea)||
-|[CMFCRibbonStatusBar::GetSpace](#getspace)||
-|[CMFCRibbonStatusBar::IsbottomFrame](#isbottomframe)||
-|[CMFCRibbonStatusBar::IsExtendedElement](#isextendedelement)||
-|[CMFCRibbonStatusBar::IsinformationMode](#isinformationmode)|Определяет, включен ли информационный режим для панели состояния ленты.|
-|[CMFCRibbonStatusBar::RecalcLayout](#recalclayout)|(Переопределяет [CMFCRibbonBar::RecalcLayout](../../mfc/reference/cmfcribbonbar-class.md#recalclayout).)|
-|[CMFCRibbonStatusBar::RemoveAll](#removeall)|Удаляет все элементы из ленты статус а.|
-|[CMFCRibbonStatusBar::RemoveElement](#removeelement)|Удаляет элемент с указанным идентификатором команды из панели состояния ленты.|
-|[CMFCRibbonStatusBar::SetInformation](#setinformation)|Позволяет или отсвагает информационный режим для ленты статус бар.|
+|[Кмфкриббонстатусбар:: Адддинамицелемент](#adddynamicelement)|Добавляет динамический элемент в строку состояния ленты.|
+|[Кмфкриббонстатусбар:: Адделемент](#addelement)|Добавляет новый элемент ленты в строку состояния ленты.|
+|[Кмфкриббонстатусбар:: Аддекстендеделемент](#addextendedelement)|Добавляет элемент ленты в расширенную область строки состояния ленты.|
+|[Кмфкриббонстатусбар:: Аддсепаратор](#addseparator)|Добавляет разделитель в строку состояния ленты.|
+|[Кмфкриббонстатусбар:: Create](#create)|Создает строку состояния ленты.|
+|[Кмфкриббонстатусбар:: Креатикс](#createex)|Создает строку состояния ленты с расширенным стилем.|
+|[Кмфкриббонстатусбар:: Финдбид](#findbyid)||
+|[Кмфкриббонстатусбар:: Финделемент](#findelement)|Возвращает указатель на элемент с указанным ИДЕНТИФИКАТОРом команды.|
+|[Кмфкриббонстатусбар:: NOCOUNT](#getcount)|Возвращает количество элементов, расположенных в основной области строки состояния ленты.|
+|[Кмфкриббонстатусбар:: элемент](#getelement)|Возвращает указатель на элемент, расположенный по указанному индексу.|
+|[Кмфкриббонстатусбар:: Жетекскаунт](#getexcount)|Возвращает количество элементов, расположенных в расширенной области строки состояния ленты.|
+|[Кмфкриббонстатусбар:: Жетекселемент](#getexelement)|Возвращает указатель на элемент, расположенный по заданному индексу в расширенной области строки состояния ленты.|
+|[Кмфкриббонстатусбар:: Жетекстендедареа](#getextendedarea)||
+|[Кмфкриббонстатусбар::-пробел](#getspace)||
+|[Кмфкриббонстатусбар:: Исботтомфраме](#isbottomframe)||
+|[Кмфкриббонстатусбар:: Исекстендеделемент](#isextendedelement)||
+|[Кмфкриббонстатусбар:: Исинформатионмоде](#isinformationmode)|Определяет, включен ли режим информации для строки состояния ленты.|
+|[Кмфкриббонстатусбар:: RecalcLayout](#recalclayout)|(Переопределяет [CMFCRibbonBar:: RecalcLayout](../../mfc/reference/cmfcribbonbar-class.md#recalclayout).)|
+|[Кмфкриббонстатусбар:: RemoveAll](#removeall)|Удаляет все элементы из строки состояния ленты.|
+|[Кмфкриббонстатусбар:: Ремовилемент](#removeelement)|Удаляет элемент с указанным ИДЕНТИФИКАТОРом команды из строки состояния ленты.|
+|[Кмфкриббонстатусбар:: Сетинформатион](#setinformation)|Включает или отключает режим информации для строки состояния ленты.|
 
 ### <a name="protected-methods"></a>Защищенные методы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CMFCRibbonStatusBar::OndrawInformation](#ondrawinformation)|Отображает строку информации, которая отображается на строке состояния ленты при включении информационного режима.|
+|[Кмфкриббонстатусбар:: Ондравинформатион](#ondrawinformation)|Отображает информационную строку, которая отображается в строке состояния ленты, если включен режим информации.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Пользователи могут изменить видимость элементов ленты на ленте статус бар с помощью встроенного контекстного меню для ленты статус бар. Вы можете добавлять или удалять элементы динамически.
+Пользователи могут изменять видимость элементов ленты в строке состояния ленты, используя встроенное контекстное меню для строки состояния ленты. Элементы можно добавлять или удалять динамически.
 
-Бар статуса ленты имеет две области: основную область и расширенную область. Расширенная область отображается на правой стороне ленты статус бар и появляется в другом цвете, чем основная область делает.
+Строка состояния ленты имеет две области: Главная и расширенная область. Расширенная область отображается в правой части строки состояния ленты и отображается в цвете, отличном от цвета основной области.
 
-Как правило, основная область панели статуса отображает уведомления о состоянии, а расширенная область отображает элементы управления представлениями. Расширенная область остается видимой как можно дольше, когда пользователь изменяет планку состояния ленты.
+Как правило, в основной области строки состояния отображаются уведомления о состоянии, а в расширенной области — элементы управления представления. Расширенная область остается видимой до тех пор, пока пользователь изменяет размер строки состояния ленты.
 
 ## <a name="example"></a>Пример
 
-В приведенном ниже примере демонстрируется использование различных методов класса `CMFCRibbonStatusBar` . На примере показано, как добавить новый элемент ленты в бар состояния ленты, добавить элемент ленты в расширенную область ленты статус бар, добавить сепаратор, и включить регулярный режим для ленты статус бар.
+В приведенном ниже примере демонстрируется использование различных методов класса `CMFCRibbonStatusBar` . В примере показано, как добавить новый элемент ленты в строку состояния ленты, добавить элемент Ribbon в расширенную область строки состояния ленты, добавить разделитель и включить обычный режим для строки состояния ленты.
 
 [!code-cpp[NVC_MFC_RibbonApp#15](../../mfc/reference/codesnippet/cpp/cmfcribbonstatusbar-class_1.cpp)]
 [!code-cpp[NVC_MFC_RibbonApp#16](../../mfc/reference/codesnippet/cpp/cmfcribbonstatusbar-class_2.cpp)]
@@ -134,11 +135,11 @@ class CMFCRibbonStatusBar : public CMFCRibbonBar
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxribbonstatusbar.h
+**Заголовок:** афксриббонстатусбар. h
 
-## <a name="cmfcribbonstatusbaradddynamicelement"></a><a name="adddynamicelement"></a>CMFCRibbonStatusBar::AddDynamicElement
+## <a name="cmfcribbonstatusbaradddynamicelement"></a><a name="adddynamicelement"></a> Кмфкриббонстатусбар:: Адддинамицелемент
 
-Добавляет динамический элемент в бар состояния ленты.
+Добавляет динамический элемент в строку состояния ленты.
 
 ```cpp
 void AddDynamicElement(CMFCRibbonBaseElement* pElement);
@@ -146,16 +147,16 @@ void AddDynamicElement(CMFCRibbonBaseElement* pElement);
 
 ### <a name="parameters"></a>Параметры
 
-*pElement*<br/>
-(в) Указатель на динамический элемент.
+*пелемент*<br/>
+окне Указатель на динамический элемент.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-В отличие от обычных элементов, динамические элементы не настраиваются и настраиваемое меню панели статуса не отображает их.
+В отличие от обычных элементов, динамические элементы не настраиваются, и меню Настройка в строке состояния не отображает их.
 
-## <a name="cmfcribbonstatusbaraddelement"></a><a name="addelement"></a>CMFCRibbonStatusBar::AddElement
+## <a name="cmfcribbonstatusbaraddelement"></a><a name="addelement"></a> Кмфкриббонстатусбар:: Адделемент
 
-Добавляет новый элемент ленты в бар статуса ленты.
+Добавляет новый элемент ленты в строку состояния ленты.
 
 ```cpp
 void AddElement(
@@ -166,18 +167,18 @@ void AddElement(
 
 ### <a name="parameters"></a>Параметры
 
-*pElement*<br/>
-(в) Указатель на добавленный элемент.
+*пелемент*<br/>
+окне Указатель на добавленный элемент.
 
-*lpszLabel*<br/>
-(в) Текстовая метка элемента.
+*лпсзлабел*<br/>
+окне Текстовая метка элемента.
 
-*bIsVisible*<br/>
-(в) ПРАВДА, если вы хотите добавить элемент, как видимые, FALSE, если вы хотите добавить элемент как скрытый.
+*бисвисибле*<br/>
+окне Значение TRUE, если необходимо добавить элемент как видимый, и FALSE, если требуется добавить элемент как скрытый.
 
-## <a name="cmfcribbonstatusbaraddextendedelement"></a><a name="addextendedelement"></a>CMFCRibbonStatusBar::AddExtendedElement
+## <a name="cmfcribbonstatusbaraddextendedelement"></a><a name="addextendedelement"></a> Кмфкриббонстатусбар:: Аддекстендеделемент
 
-Добавляет элемент ленты в расширенную область ленты статус бар.
+Добавляет элемент ленты в расширенную область строки состояния ленты.
 
 ```cpp
 void AddExtendedElement(
@@ -188,34 +189,34 @@ void AddExtendedElement(
 
 ### <a name="parameters"></a>Параметры
 
-*pElement*<br/>
-(в) Указатель на добавленный элемент.
+*пелемент*<br/>
+окне Указатель на добавленный элемент.
 
-*lpszLabel*<br/>
-(в) Текстовая метка элемента.
+*лпсзлабел*<br/>
+окне Текстовая метка элемента.
 
-*bIsVisible*<br/>
-(в) ПРАВДА, если вы хотите добавить элемент, как видимые, FALSE, если вы хотите добавить элемент как скрытый.
+*бисвисибле*<br/>
+окне Значение TRUE, если необходимо добавить элемент как видимый, и FALSE, если требуется добавить элемент как скрытый.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Расширенная область находится в правой части элемента управления состоянием строки.
 
-## <a name="cmfcribbonstatusbaraddseparator"></a><a name="addseparator"></a>CMFCRibbonStatusBar::AddSeparator
+## <a name="cmfcribbonstatusbaraddseparator"></a><a name="addseparator"></a> Кмфкриббонстатусбар:: Аддсепаратор
 
-Добавляет сепаратор в ленточное положение.
+Добавляет разделитель в строку состояния ленты.
 
 ```cpp
 void AddSeparator();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Платформа добавляет сепаратор по методу [CMFCRibbonStatusBar::AddElement](#addelement). вставляет последний элемент.
+Платформа добавляет разделитель после метода [кмфкриббонстатусбар:: адделемент](#addelement). Вставляет последний элемент.
 
-## <a name="cmfcribbonstatusbarcreate"></a><a name="create"></a>CMFCRibbonStatusBar::Создание
+## <a name="cmfcribbonstatusbarcreate"></a><a name="create"></a> Кмфкриббонстатусбар:: Create
 
-Создает ленту статус бар.
+Создает строку состояния ленты.
 
 ```
 BOOL Create(
@@ -226,22 +227,22 @@ BOOL Create(
 
 ### <a name="parameters"></a>Параметры
 
-*pParentWnd*<br/>
-(в) Указатель на родительское окно.
+*ппарентвнд*<br/>
+окне Указатель на родительское окно.
 
-*dwStyle*<br/>
-(в) Логическое или сочетание стилей управления.
+*двстиле*<br/>
+окне Логическое или сочетание стилей элементов управления.
 
 *nID*<br/>
-(в) Идентификатор управления панели статуса.
+окне Идентификатор элемента управления строки состояния.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если статус бар создан успешно, FALSE в противном случае.
+Значение TRUE, если строка состояния создана успешно; в противном случае — значение FALSE.
 
-## <a name="cmfcribbonstatusbarcreateex"></a><a name="createex"></a>CMFCRibbonStatusBar::CreateEx
+## <a name="cmfcribbonstatusbarcreateex"></a><a name="createex"></a> Кмфкриббонстатусбар:: Креатикс
 
-Создает лента статус бар, который имеет расширенный стиль.
+Создает строку состояния ленты с расширенным стилем.
 
 ```
 BOOL CreateEx(
@@ -253,25 +254,25 @@ BOOL CreateEx(
 
 ### <a name="parameters"></a>Параметры
 
-*pParentWnd*<br/>
+*ппарентвнд*<br/>
 Указатель на родительское окно.
 
-*dwCtrlStyle*<br/>
-Логическое или сочетание дополнительных стилей для создания объекта панели статуса.
+*двктрлстиле*<br/>
+Логическое или сочетание дополнительных стилей для создания объекта строки состояния.
 
-*dwStyle*<br/>
-Стиль управления адвокатской сословием статуса.
+*двстиле*<br/>
+Стиль элемента управления строки состояния.
 
 *nID*<br/>
-Идентификатор управления панели статуса.
+Идентификатор элемента управления строки состояния.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если статус бар создан успешно, FALSE в противном случае.
+Значение TRUE, если строка состояния создана успешно; в противном случае — значение FALSE.
 
-## <a name="cmfcribbonstatusbarfindbyid"></a><a name="findbyid"></a>CMFCRibbonStatusBar:FindbyID
+## <a name="cmfcribbonstatusbarfindbyid"></a><a name="findbyid"></a> Кмфкриббонстатусбар:: Финдбид
 
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ```
 CMFCRibbonBaseElement* FindByID(UINT uiCmdID, BOOL = TRUE);
@@ -279,16 +280,16 @@ CMFCRibbonBaseElement* FindByID(UINT uiCmdID, BOOL = TRUE);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *uiCmdID*<br/>
-(в) *БУЛ*<br/>
+окне *уикмдид*<br/>
+окне *Bool (логическое* )<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonstatusbarfindelement"></a><a name="findelement"></a>CMFCRibbonStatusBar::FindElement
+## <a name="cmfcribbonstatusbarfindelement"></a><a name="findelement"></a> Кмфкриббонстатусбар:: Финделемент
 
-Возвращает указатель элементу с указанным идентификатором команды.
+Возвращает указатель на элемент с указанным ИДЕНТИФИКАТОРом команды.
 
 ```
 CMFCRibbonBaseElement* FindElement(UINT uiID);
@@ -297,15 +298,15 @@ CMFCRibbonBaseElement* FindElement(UINT uiID);
 ### <a name="parameters"></a>Параметры
 
 *uiID*<br/>
-(в) Идентификатор элемента.
+окне Идентификатор элемента.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на элемент с указанным идентификатором команды. NULL, если нет такого элемента.
+Указатель на элемент с указанным ИДЕНТИФИКАТОРом команды. Значение NULL, если такого элемента нет.
 
-## <a name="cmfcribbonstatusbargetcount"></a><a name="getcount"></a>CMFCRibbonStatusBar::GetCount
+## <a name="cmfcribbonstatusbargetcount"></a><a name="getcount"></a> Кмфкриббонстатусбар:: NOCOUNT
 
-Возвращает количество элементов, которые расположены в основной области ленты статус бар.
+Возвращает количество элементов, расположенных в основной области строки состояния ленты.
 
 ```
 int GetCount() const;
@@ -313,11 +314,11 @@ int GetCount() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Количество элементов, расположенных в основной области ленты статус бар.
+Количество элементов, расположенных в основной области строки состояния ленты.
 
-## <a name="cmfcribbonstatusbargetelement"></a><a name="getelement"></a>CMFCRibbonStatusBar::GetElement
+## <a name="cmfcribbonstatusbargetelement"></a><a name="getelement"></a> Кмфкриббонстатусбар:: элемент
 
-Возвращает указатель элементу, расположенному в указанном индексе.
+Возвращает указатель на элемент, расположенный по указанному индексу.
 
 ```
 CMFCRibbonBaseElement* GetElement(int nIndex);
@@ -325,18 +326,18 @@ CMFCRibbonBaseElement* GetElement(int nIndex);
 
 ### <a name="parameters"></a>Параметры
 
-*Nindex*<br/>
-(в) Определяет индекс нулевой основе элемента, который находится в основной области управления баром статуса.
+*ниндекс*<br/>
+окне Задает отсчитываемый от нуля индекс элемента, который находится в основной области элемента управления "строка состояния".
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на элемент, расположенный в указанном индексе. NULL, если индекс отрицательный или превышает количество элементов в панели статуса.
+Указатель на элемент, расположенный по указанному индексу. Значение NULL, если индекс отрицательный или превышает число элементов в строке состояния.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonstatusbargetexcount"></a><a name="getexcount"></a>CMFCRibbonStatusBar::GetExCount
+## <a name="cmfcribbonstatusbargetexcount"></a><a name="getexcount"></a> Кмфкриббонстатусбар:: Жетекскаунт
 
-Возвращает количество элементов, расположенных в расширенной области ленты статус бар.
+Возвращает количество элементов, расположенных в расширенной области строки состояния ленты.
 
 ```
 int GetExCount() const;
@@ -344,9 +345,9 @@ int GetExCount() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Количество элементов, расположенных в расширенной области ленты статус бар.
+Количество элементов, расположенных в расширенной области строки состояния ленты.
 
-## <a name="cmfcribbonstatusbargetexelement"></a><a name="getexelement"></a>CMFCRibbonStatusBar::GetExElement
+## <a name="cmfcribbonstatusbargetexelement"></a><a name="getexelement"></a> Кмфкриббонстатусбар:: Жетекселемент
 
 Возвращает указатель на элемент, расположенный по заданному индексу в расширенной области строки состояния ленты. Расширенная область находится в правой части элемента управления состоянием строки.
 
@@ -356,18 +357,18 @@ CMFCRibbonBaseElement* GetExElement(int nIndex);
 
 ### <a name="parameters"></a>Параметры
 
-*Nindex*<br/>
-(в) Определяет индекс нулевой основе элемента, расположенного в расширенной области управления панели статуса.
+*ниндекс*<br/>
+окне Задает отсчитываемый от нуля индекс элемента, который находится в расширенной области элемента управления "строка состояния".
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на элемент, расположенный по заданному индексу в расширенной области строки состояния ленты. NULL, если *nIndex* отрицательный или превышает количество элементов в расширенной области ленты статус бар.
+Указатель на элемент, расположенный по заданному индексу в расширенной области строки состояния ленты. Значение NULL, если *ниндекс* является отрицательным или превышает число элементов в расширенной области строки состояния ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonstatusbargetextendedarea"></a><a name="getextendedarea"></a>CMFCRibbonStatusBar::GetExtendedArea
+## <a name="cmfcribbonstatusbargetextendedarea"></a><a name="getextendedarea"></a> Кмфкриббонстатусбар:: Жетекстендедареа
 
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ```
 virtual BOOL GetExtendedArea(CRect& rect) const;
@@ -379,11 +380,11 @@ virtual BOOL GetExtendedArea(CRect& rect) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonstatusbargetspace"></a><a name="getspace"></a>CMFCRibbonStatusBar::GetSpace
+## <a name="cmfcribbonstatusbargetspace"></a><a name="getspace"></a> Кмфкриббонстатусбар::-пробел
 
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ```
 int GetSpace() const;
@@ -391,11 +392,11 @@ int GetSpace() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonstatusbarisbottomframe"></a><a name="isbottomframe"></a>CMFCRibbonStatusBar::IsbottomFrame
+## <a name="cmfcribbonstatusbarisbottomframe"></a><a name="isbottomframe"></a> Кмфкриббонстатусбар:: Исботтомфраме
 
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ```
 BOOL IsBottomFrame() const;
@@ -403,11 +404,11 @@ BOOL IsBottomFrame() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonstatusbarisextendedelement"></a><a name="isextendedelement"></a>CMFCRibbonStatusBar::IsExtendedElement
+## <a name="cmfcribbonstatusbarisextendedelement"></a><a name="isextendedelement"></a> Кмфкриббонстатусбар:: Исекстендеделемент
 
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ```
 BOOL IsExtendedElement(CMFCRibbonBaseElement* pElement) const;
@@ -415,15 +416,15 @@ BOOL IsExtendedElement(CMFCRibbonBaseElement* pElement) const;
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pElement*<br/>
+окне *пелемент*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonstatusbarisinformationmode"></a><a name="isinformationmode"></a>CMFCRibbonStatusBar::IsinformationMode
+## <a name="cmfcribbonstatusbarisinformationmode"></a><a name="isinformationmode"></a> Кмфкриббонстатусбар:: Исинформатионмоде
 
-Определяет, включен ли информационный режим для панели состояния ленты.
+Определяет, включен ли режим информации для строки состояния ленты.
 
 ```
 BOOL IsInformationMode() const;
@@ -431,15 +432,15 @@ BOOL IsInformationMode() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если панель статуса может работать в информационном режиме; в противном случае FALSE.
+Значение TRUE, если строка состояния может работать в информационном режиме; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-В информационном режиме строка состояния скрывает все обычные панели и отображает строку сообщения.
+В режиме информации строка состояния скрывает все обычные панели и отображает строку сообщения.
 
-## <a name="cmfcribbonstatusbarondrawinformation"></a><a name="ondrawinformation"></a>CMFCRibbonStatusBar::OndrawInformation
+## <a name="cmfcribbonstatusbarondrawinformation"></a><a name="ondrawinformation"></a> Кмфкриббонстатусбар:: Ондравинформатион
 
-Отображает строку, которая отображается на панели состояния ленты при включении информационного режима.
+Отображает строку, которая отображается в строке состояния ленты при включенном информационном режиме.
 
 ```
 virtual void OnDrawInformation(
@@ -450,40 +451,40 @@ virtual void OnDrawInformation(
 
 ### <a name="parameters"></a>Параметры
 
-*pDC*<br/>
-(в) Указатель на контекст устройства.
+*Хозяин*<br/>
+окне Указатель на контекст устройства.
 
-*strInfo*<br/>
-(в) Информационная строка.
+*стринфо*<br/>
+окне Информационная строка.
 
-*rectInfo*<br/>
-(в) Ограничивающий прямоугольник.
+*ректинфо*<br/>
+окне Ограничивающий прямоугольник.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переопределить этот метод в производном классе, если вы хотите настроить внешний вид строки информации на строке статуса. Используйте [метод CMFCRibbonStatusBar::SetInformation,](#setinformation) чтобы поместить планку статуса в информационном режиме. В этом режиме строка состояния скрывает все панели и отображает строку информации, указанную *strInfo.*
+Переопределите этот метод в производном классе, если необходимо настроить внешний вид информационной строки в строке состояния. Используйте метод [кмфкриббонстатусбар:: сетинформатион](#setinformation) , чтобы перевести строку состояния в режим информации. В этом режиме строка состояния скрывает все области и отображает информационную строку, указанную параметром *стринфо*.
 
-## <a name="cmfcribbonstatusbarrecalclayout"></a><a name="recalclayout"></a>CMFCRibbonStatusBar::RecalcLayout
+## <a name="cmfcribbonstatusbarrecalclayout"></a><a name="recalclayout"></a> Кмфкриббонстатусбар:: RecalcLayout
 
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ```
 virtual void RecalcLayout();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonstatusbarremoveall"></a><a name="removeall"></a>CMFCRibbonStatusBar::RemoveAll
+## <a name="cmfcribbonstatusbarremoveall"></a><a name="removeall"></a> Кмфкриббонстатусбар:: RemoveAll
 
-Удаляет все элементы из ленты статус а.
+Удаляет все элементы из строки состояния ленты.
 
 ```cpp
 void RemoveAll();
 ```
 
-## <a name="cmfcribbonstatusbarremoveelement"></a><a name="removeelement"></a>CMFCRibbonStatusBar::RemoveElement
+## <a name="cmfcribbonstatusbarremoveelement"></a><a name="removeelement"></a> Кмфкриббонстатусбар:: Ремовилемент
 
-Удаляет элемент с указанным идентификатором команды из панели состояния ленты.
+Удаляет элемент с указанным ИДЕНТИФИКАТОРом команды из строки состояния ленты.
 
 ```
 BOOL RemoveElement(UINT uiID);
@@ -492,15 +493,15 @@ BOOL RemoveElement(UINT uiID);
 ### <a name="parameters"></a>Параметры
 
 *uiID*<br/>
-(в) Идентификатор элемента для удаления из панели статуса.
+окне Идентификатор элемента, который необходимо удалить из строки состояния.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если элемент с указанным *uiID* удаляется. FALSE в противном случае.
+Значение TRUE, если удаляется элемент с указанным *уиид* . В противном случае — значение FALSE.
 
-## <a name="cmfcribbonstatusbarsetinformation"></a><a name="setinformation"></a>CMFCRibbonStatusBar::SetInformation
+## <a name="cmfcribbonstatusbarsetinformation"></a><a name="setinformation"></a> Кмфкриббонстатусбар:: Сетинформатион
 
-Позволяет или отсвагает информационный режим для ленты статус бар.
+Включает или отключает режим информации для строки состояния ленты.
 
 ```cpp
 void SetInformation(LPCTSTR lpszInfo);
@@ -508,19 +509,19 @@ void SetInformation(LPCTSTR lpszInfo);
 
 ### <a name="parameters"></a>Параметры
 
-*lpszInfo*<br/>
-(в) Информационная строка.
+*лпсзинфо*<br/>
+окне Информационная строка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте этот метод, чтобы поместить панель статуса в информационном режиме. В этом режиме строка состояния скрывает все панели и отображает строку информации, указанную *lpszInfo.*
+Используйте этот метод, чтобы перевести строку состояния в информационный режим. В этом режиме строка состояния скрывает все области и отображает информационную строку, указанную параметром *лпсзинфо*.
 
-Когда lpszInfo является NULL, панель статуса возвращается в обычный режим.
+Если Лпсзинфо имеет значение NULL, строка состояния возвращается в обычный режим.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
 [Класс CMFCRibbonBar](../../mfc/reference/cmfcribbonbar-class.md)<br/>
-[Класс CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)<br/>
+[Класс метод CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)<br/>
 [Класс CMFCRibbonBar](../../mfc/reference/cmfcribbonbar-class.md)

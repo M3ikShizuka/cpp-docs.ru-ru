@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кпажесетупдиалог Class'
 title: Класс Кпажесетупдиалог
 ms.date: 11/04/2016
 f1_keywords:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - CPageSetupDialog [MFC], PreDrawPage
 - CPageSetupDialog [MFC], m_psd
 ms.assetid: 049c0ac8-f254-4854-9414-7a8271d1447a
-ms.openlocfilehash: 280d75c3bcacd673107fd32ecaa39953b06a77c8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 862e8c1edff04ba58efe13f471ffeee71c11ede5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214078"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264912"
 ---
 # <a name="cpagesetupdialog-class"></a>Класс Кпажесетупдиалог
 
@@ -47,11 +48,11 @@ ms.locfileid: "87214078"
 class CPageSetupDialog : public CCommonDialog
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Кпажесетупдиалог:: Кпажесетупдиалог](#cpagesetupdialog)|Формирует объект `CPageSetupDialog`.|
 
@@ -76,13 +77,13 @@ class CPageSetupDialog : public CCommonDialog
 |----------|-----------------|
 |[Кпажесетупдиалог:: m_psd](#m_psd)|Структура, используемая для настройки `CPageSetupDialog` объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Этот класс предназначен для размещения диалогового окна «Настройка печати».
 
 Чтобы использовать `CPageSetupDialog` объект, сначала создайте объект с помощью `CPageSetupDialog` конструктора. После создания диалогового окна можно задать или изменить любые значения в `m_psd` элементе данных, чтобы инициализировать значения элементов управления диалогового окна. Структура [m_psd](#m_psd) имеет тип пажесетупдлг.
 
-После инициализации элементов управления диалогового окна вызовите `DoModal` функцию члена, чтобы открыть диалоговое окно и позволить пользователю выбрать параметры печати. `DoModal`Возвращает значение, указывающее, выбрал пользователь кнопку ОК (ИДОК) или Отмена (ИДКАНЦЕЛ).
+После инициализации элементов управления диалогового окна вызовите `DoModal` функцию члена, чтобы открыть диалоговое окно и позволить пользователю выбрать параметры печати. `DoModal` Возвращает значение, указывающее, выбрал пользователь кнопку ОК (ИДОК) или Отмена (ИДКАНЦЕЛ).
 
 Если `DoModal` ВОЗВРАЩАЕТ идок, можно использовать несколько `CPageSetupDialog` функций члена или получить доступ к `m_psd` элементу данных, чтобы получить данные, введенные пользователем.
 
@@ -107,7 +108,7 @@ class CPageSetupDialog : public CCommonDialog
 
 **Заголовок:** афксдлгс. h
 
-## <a name="cpagesetupdialogcpagesetupdialog"></a><a name="cpagesetupdialog"></a>Кпажесетупдиалог:: Кпажесетупдиалог
+## <a name="cpagesetupdialogcpagesetupdialog"></a><a name="cpagesetupdialog"></a> Кпажесетупдиалог:: Кпажесетупдиалог
 
 Вызовите эту функцию для создания `CPageSetupDialog` объекта.
 
@@ -161,7 +162,7 @@ CPageSetupDialog(
 *ппарентвнд*<br/>
 Указатель на родительский элемент или владелец диалогового окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте функцию [DoModal](../../mfc/reference/cdialog-class.md#domodal) для вывода диалогового окна.
 
@@ -169,7 +170,7 @@ CPageSetupDialog(
 
 [!code-cpp[NVC_MFCDocView#94](../../mfc/codesnippet/cpp/cpagesetupdialog-class_1.cpp)]
 
-## <a name="cpagesetupdialogcreateprinterdc"></a><a name="createprinterdc"></a>Кпажесетупдиалог:: Креатепринтердк
+## <a name="cpagesetupdialogcreateprinterdc"></a><a name="createprinterdc"></a> Кпажесетупдиалог:: Креатепринтердк
 
 Создает контекст печатающего устройства из структур [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) и [DEVNAMES](/windows/win32/api/commdlg/ns-commdlg-devnames) .
 
@@ -181,7 +182,7 @@ HDC CreatePrinterDC();
 
 Обработайте только что созданный контекст устройства печати (DC).
 
-## <a name="cpagesetupdialogdomodal"></a><a name="domodal"></a>Кпажесетупдиалог::D Омодал
+## <a name="cpagesetupdialogdomodal"></a><a name="domodal"></a> Кпажесетупдиалог::D Омодал
 
 Эта функция вызывается для отображения диалогового окна Общие параметры OLE страницы Windows и позволяет пользователю выбирать различные параметры печати, такие как поля печати, размер и ориентация бумаги, а также конечный принтер.
 
@@ -195,7 +196,7 @@ virtual INT_PTR DoModal();
 
 ИДОК и ИДКАНЦЕЛ — это константы, которые указывают, выбрал ли пользователь кнопку ОК или Отмена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Кроме того, пользователь может получить доступ к параметрам установки принтера, таким как сетевое расположение и свойства, относящиеся к выбранному принтеру.
 
@@ -209,7 +210,7 @@ virtual INT_PTR DoModal();
 
   См. пример для [кпажесетупдиалог:: кпажесетупдиалог](#cpagesetupdialog).
 
-## <a name="cpagesetupdialoggetdevicename"></a><a name="getdevicename"></a>Кпажесетупдиалог:: Жетдевиценаме
+## <a name="cpagesetupdialoggetdevicename"></a><a name="getdevicename"></a> Кпажесетупдиалог:: Жетдевиценаме
 
 Вызовите эту функцию после, `DoModal` чтобы получить имя текущего выбранного принтера.
 
@@ -221,7 +222,7 @@ CString GetDeviceName() const;
 
 Имя устройства, используемое `CPageSetupDialog` объектом.
 
-## <a name="cpagesetupdialoggetdevmode"></a><a name="getdevmode"></a>Кпажесетупдиалог::
+## <a name="cpagesetupdialoggetdevmode"></a><a name="getdevmode"></a> Кпажесетупдиалог::
 
 Вызовите эту функцию после вызова `DoModal` , чтобы получить сведения о контексте устройства печати `CPageSetupDialog` объекта.
 
@@ -233,7 +234,7 @@ LPDEVMODE GetDevMode() const;
 
 Структура данных [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) , которая содержит сведения об инициализации устройства и среде драйвера печати. Необходимо разблокировать память, занятую этой структурой, с помощью функции Windows [глобалунлокк](/windows/win32/api/winbase/nf-winbase-globalunlock) , которая описана в Windows SDK.
 
-## <a name="cpagesetupdialoggetdrivername"></a><a name="getdrivername"></a>Кпажесетупдиалог:: GetDriverName
+## <a name="cpagesetupdialoggetdrivername"></a><a name="getdrivername"></a> Кпажесетупдиалог:: GetDriverName
 
 Вызовите эту функцию после вызова [DoModal](../../mfc/reference/cprintdialog-class.md#domodal) , чтобы получить имя драйвера принтера, определенного системой.
 
@@ -245,11 +246,11 @@ CString GetDriverName() const;
 
 Значение типа, `CString` указывающее имя драйвера, определяемое системой.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте указатель на `CString` объект, возвращаемый в `GetDriverName` качестве значения `lpszDriverName` в вызове [CDC:: креатедк](../../mfc/reference/cdc-class.md#createdc).
 
-## <a name="cpagesetupdialoggetmargins"></a><a name="getmargins"></a>Поля Кпажесетупдиалог:: Margin
+## <a name="cpagesetupdialoggetmargins"></a><a name="getmargins"></a> Поля Кпажесетупдиалог:: Margin
 
 Вызовите эту функцию после вызова метода, `DoModal` чтобы получить поля драйвера печатающего устройства.
 
@@ -267,7 +268,7 @@ void GetMargins(
 *лпректминмаргинс*<br/>
 Указатель на `RECT` структуру или `CRect` объект, описывающие минимальное поле печати для выбранного принтера (в 1/1000 дюймах или 1/100 мм). Если вы не заинтересованы в этом прямоугольнике, передайте значение NULL для этого параметра.
 
-## <a name="cpagesetupdialoggetpapersize"></a><a name="getpapersize"></a>Кпажесетупдиалог:: Жетпаперсизе
+## <a name="cpagesetupdialoggetpapersize"></a><a name="getpapersize"></a> Кпажесетупдиалог:: Жетпаперсизе
 
 Вызовите эту функцию, чтобы получить размер бумаги, выбранной для печати.
 
@@ -279,7 +280,7 @@ CSize GetPaperSize() const;
 
 Объект [ксизе](../../atl-mfc-shared/reference/csize-class.md) , содержащий размер бумаги (в 1/1000 дюймах или 1/100 мм), выбранный для печати.
 
-## <a name="cpagesetupdialoggetportname"></a><a name="getportname"></a>Кпажесетупдиалог:: Жетпортнаме
+## <a name="cpagesetupdialoggetportname"></a><a name="getportname"></a> Кпажесетупдиалог:: Жетпортнаме
 
 Вызовите эту функцию после вызова, `DoModal` чтобы получить имя текущего выбранного порта принтера.
 
@@ -291,7 +292,7 @@ CString GetPortName() const;
 
 Имя выбранного в данный момент порта принтера.
 
-## <a name="cpagesetupdialogm_psd"></a><a name="m_psd"></a>Кпажесетупдиалог:: m_psd
+## <a name="cpagesetupdialogm_psd"></a><a name="m_psd"></a> Кпажесетупдиалог:: m_psd
 
 Структура типа ПАЖЕСЕТУПДЛГ, члены которой хранят характеристики объекта диалогового окна.
 
@@ -299,7 +300,7 @@ CString GetPortName() const;
 PAGESETUPDLG m_psd;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 После создания `CPageSetupDialog` объекта можно использовать `m_psd` для установки различных аспектов диалогового окна перед вызовом `DoModal` функции-члена.
 
@@ -309,7 +310,7 @@ PAGESETUPDLG m_psd;
 
 См. пример для [кпажесетупдиалог:: кпажесетупдиалог](#cpagesetupdialog).
 
-## <a name="cpagesetupdialogondrawpage"></a><a name="ondrawpage"></a>Кпажесетупдиалог:: Ондравпаже
+## <a name="cpagesetupdialogondrawpage"></a><a name="ondrawpage"></a> Кпажесетупдиалог:: Ондравпаже
 
 Вызывается платформой для отрисовки экранного изображения печатной страницы.
 
@@ -347,7 +348,7 @@ virtual UINT OnDrawPage(
 
 Ненулевое значение при обработке; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это изображение затем отображается как часть диалогового окна «Общие параметры страницы OLE». Реализация по умолчанию рисует изображение страницы текста.
 
@@ -357,7 +358,7 @@ virtual UINT OnDrawPage(
 
 Обратите внимание, что не требуется выполнять обработку каждого случая *nсообщение*. Можно выбрать обработку одного компонента изображения, нескольких компонентов изображения или всей области.
 
-## <a name="cpagesetupdialogpredrawpage"></a><a name="predrawpage"></a>Кпажесетупдиалог::P Редравпаже
+## <a name="cpagesetupdialogpredrawpage"></a><a name="predrawpage"></a> Кпажесетупдиалог::P Редравпаже
 
 Вызывается структурой перед отрисовкой экранного изображения печатной страницы.
 
@@ -399,7 +400,7 @@ virtual UINT PreDrawPage(
 
 Ненулевое значение при обработке; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите эту функцию, чтобы настроить Рисование изображения. Если вы переопределяете эту функцию и возвращаете значение TRUE, необходимо рисовать изображение целиком. Если переопределить эту функцию и вернуть значение FALSE, платформа будет рисовать все изображение по умолчанию.
 

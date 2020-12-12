@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кскроллбар Class'
 title: Класс Кскроллбар
 ms.date: 11/04/2016
 f1_keywords:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - CScrollBar [MFC], SetScrollRange
 - CScrollBar [MFC], ShowScrollBar
 ms.assetid: f3735ca5-73ea-46dc-918b-4d824c9fe47f
-ms.openlocfilehash: 1ab25ad26357abe9091d273637f3ae9f77457342
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a557fe490b2cdce81d5639f9ce15fd6462442029
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230484"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264743"
 ---
 # <a name="cscrollbar-class"></a>Класс Кскроллбар
 
@@ -47,11 +48,11 @@ ms.locfileid: "87230484"
 class CScrollBar : public CWnd
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Кскроллбар:: Кскроллбар](#cscrollbar)|Формирует объект `CScrollBar`.|
 
@@ -71,7 +72,7 @@ class CScrollBar : public CWnd
 |[Кскроллбар:: Сетскроллранже](#setscrollrange)|Задает для указанной полосы прокрутки положения минимума и максимума.|
 |[Кскроллбар:: Шовскроллбар](#showscrollbar)|Показывает или скрывает полосу прокрутки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Элемент управления "полоса прокрутки" создается в два этапа. Сначала вызовите конструктор `CScrollBar` для создания `CScrollBar` объекта, а затем вызовите функцию [создания](#create) элемента, чтобы создать элемент управления полосы прокрутки Windows и присоединить его к `CScrollBar` объекту.
 
@@ -99,7 +100,7 @@ class CScrollBar : public CWnd
 
 **Заголовок:** afxwin.h
 
-## <a name="cscrollbarcreate"></a><a name="create"></a>Кскроллбар:: Create
+## <a name="cscrollbarcreate"></a><a name="create"></a> Кскроллбар:: Create
 
 Создает полосу прокрутки Windows и прикрепляет ее к `CScrollBar` объекту.
 
@@ -129,7 +130,7 @@ virtual BOOL Create(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `CScrollBar`Объект создается в два этапа. Сначала вызовите конструктор, который создает объект, а `CScrollBar` затем вызовите `Create` , создающий и инициализирующий связанную полосу прокрутки окна, и присоединяет ее к `CScrollBar` объекту.
 
@@ -147,7 +148,7 @@ virtual BOOL Create(
 
 [!code-cpp[NVC_MFC_CScrollBar#1](../../mfc/reference/codesnippet/cpp/cscrollbar-class_1.cpp)]
 
-## <a name="cscrollbarcscrollbar"></a><a name="cscrollbar"></a>Кскроллбар:: Кскроллбар
+## <a name="cscrollbarcscrollbar"></a><a name="cscrollbar"></a> Кскроллбар:: Кскроллбар
 
 Формирует объект `CScrollBar`.
 
@@ -155,7 +156,7 @@ virtual BOOL Create(
 CScrollBar();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 После создания объекта вызовите `Create` функцию члена, чтобы создать и инициализировать полосу прокрутки Windows.
 
@@ -163,7 +164,7 @@ CScrollBar();
 
 [!code-cpp[NVC_MFC_CScrollBar#2](../../mfc/reference/codesnippet/cpp/cscrollbar-class_2.h)]
 
-## <a name="cscrollbarenablescrollbar"></a><a name="enablescrollbar"></a>Кскроллбар:: Енаблескроллбар
+## <a name="cscrollbarenablescrollbar"></a><a name="enablescrollbar"></a> Кскроллбар:: Енаблескроллбар
 
 Включает или выключает одну или обе стрелки полосы прокрутки.
 
@@ -192,7 +193,7 @@ BOOL EnableScrollBar(UINT nArrowFlags = ESB_ENABLE_BOTH);
 
   См. пример для [кскроллбар:: сетскроллранже](#setscrollrange).
 
-## <a name="cscrollbargetscrollbarinfo"></a><a name="getscrollbarinfo"></a>Кскроллбар:: Жетскроллбаринфо
+## <a name="cscrollbargetscrollbarinfo"></a><a name="getscrollbarinfo"></a> Кскроллбар:: Жетскроллбаринфо
 
 Извлекает данные о полосе прокрутки, содержащиеся в структуре `SCROLLBARINFO`.
 
@@ -209,11 +210,11 @@ BOOL GetScrollBarInfo(PSCROLLBARINFO pScrollInfo) const;
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена эмулирует функциональность [SBM_SCROLLBARINFO](/windows/win32/Controls/sbm-getscrollbarinfo) сообщения, как описано в Windows SDK.
 
-## <a name="cscrollbargetscrollinfo"></a><a name="getscrollinfo"></a>Кскроллбар:: Жетскроллинфо
+## <a name="cscrollbargetscrollinfo"></a><a name="getscrollinfo"></a> Кскроллбар:: Жетскроллинфо
 
 Извлекает данные о полосе прокрутки, содержащиеся в структуре `SCROLLINFO`.
 
@@ -235,19 +236,19 @@ BOOL GetScrollInfo(
 
 Если сообщение получает какие-либо значения, возвращается значение TRUE. В противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`GetScrollInfo`позволяет приложениям использовать 32-разрядные позиции прокрутки.
+`GetScrollInfo` позволяет приложениям использовать 32-разрядные позиции прокрутки.
 
 Структура [скроллинфо](/windows/win32/api/winuser/ns-winuser-scrollinfo) содержит сведения о полосе прокрутки, включая минимальные и максимальные положения прокрутки, размер страницы и положение ползунка (бегунка). `SCROLLINFO`Дополнительные сведения об изменении структуры по умолчанию см. в разделе "структура" в Windows SDK.
 
-Обработчики сообщений Windows MFC, указывающие расположение полосы прокрутки, [CWnd:: Онхскролл и [CWnd:: онвскролл](../../mfc/reference/cwnd-class.md#onvscroll), предоставляют только 16 бит данных о положении. `GetScrollInfo`и `SetScrollInfo` предоставляют 32 бит данных о положении полосы прокрутки. Таким же, приложение может вызвать `GetScrollInfo` во время обработки либо, `CWnd::OnHScroll` `CWnd::OnVScroll` чтобы получить данные о положении полосы прокрутки 32-х бит.
+Обработчики сообщений Windows MFC, указывающие расположение полосы прокрутки, [CWnd:: Онхскролл и [CWnd:: онвскролл](../../mfc/reference/cwnd-class.md#onvscroll), предоставляют только 16 бит данных о положении. `GetScrollInfo` и `SetScrollInfo` предоставляют 32 бит данных о положении полосы прокрутки. Таким же, приложение может вызвать `GetScrollInfo` во время обработки либо, `CWnd::OnHScroll` `CWnd::OnVScroll` чтобы получить данные о положении полосы прокрутки 32-х бит.
 
 ### <a name="example"></a>Пример
 
   См. пример для [CWnd:: онхскролл](../../mfc/reference/cwnd-class.md#onhscroll).
 
-## <a name="cscrollbargetscrolllimit"></a><a name="getscrolllimit"></a>Кскроллбар:: Жетскролллимит
+## <a name="cscrollbargetscrolllimit"></a><a name="getscrolllimit"></a> Кскроллбар:: Жетскролллимит
 
 Возвращает максимальную точку прокрутки полосы прокрутки.
 
@@ -263,7 +264,7 @@ int GetScrollLimit();
 
   См. пример для [CWnd:: онхскролл](../../mfc/reference/cwnd-class.md#onhscroll).
 
-## <a name="cscrollbargetscrollpos"></a><a name="getscrollpos"></a>Кскроллбар:: Жетскроллпос
+## <a name="cscrollbargetscrollpos"></a><a name="getscrollpos"></a> Кскроллбар:: Жетскроллпос
 
 Извлекает текущее положение ползунка.
 
@@ -275,7 +276,7 @@ int GetScrollPos() const;
 
 Задает текущее расположение поля прокрутки в случае успешного завершения. в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Текущая величина — это относительное значение, которое зависит от текущего диапазона прокрутки. Например, если диапазон прокрутки находится в диапазоне от 100 до 200, а поле прокрутки находится в середине линейки, текущее расположение равно 150.
 
@@ -283,7 +284,7 @@ int GetScrollPos() const;
 
   См. пример для [CWnd:: онхскролл](../../mfc/reference/cwnd-class.md#onhscroll).
 
-## <a name="cscrollbargetscrollrange"></a><a name="getscrollrange"></a>Кскроллбар:: Жетскроллранже
+## <a name="cscrollbargetscrollrange"></a><a name="getscrollrange"></a> Кскроллбар:: Жетскроллранже
 
 Копирует текущие минимальное и максимальное позиции полосы прокрутки для заданной полосы прокрутки в расположения, заданные *лпминпос* и *лпмакспос*.
 
@@ -301,7 +302,7 @@ void GetScrollRange(
 *лпмакспос*<br/>
 Указывает на целочисленную переменную, которая должна принимать максимальную позиции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Диапазон по умолчанию для элемента управления "полоса прокрутки" пуст (оба значения равны 0).
 
@@ -309,7 +310,7 @@ void GetScrollRange(
 
   См. пример для [CWnd:: онхскролл](../../mfc/reference/cwnd-class.md#onhscroll).
 
-## <a name="cscrollbarsetscrollinfo"></a><a name="setscrollinfo"></a>Кскроллбар:: Сетскроллинфо
+## <a name="cscrollbarsetscrollinfo"></a><a name="setscrollinfo"></a> Кскроллбар:: Сетскроллинфо
 
 Задает сведения, которые `SCROLLINFO` хранятся в структуре, о полосе прокрутки.
 
@@ -331,7 +332,7 @@ BOOL SetScrollInfo(
 
 В случае успеха возвращается значение TRUE. В противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Необходимо указать значения, необходимые для `SCROLLINFO` параметров структуры, включая значения флагов.
 
@@ -341,7 +342,7 @@ BOOL SetScrollInfo(
 
 [!code-cpp[NVC_MFC_CScrollBar#3](../../mfc/reference/codesnippet/cpp/cscrollbar-class_3.cpp)]
 
-## <a name="cscrollbarsetscrollpos"></a><a name="setscrollpos"></a>Кскроллбар:: Сетскроллпос
+## <a name="cscrollbarsetscrollpos"></a><a name="setscrollpos"></a> Кскроллбар:: Сетскроллпос
 
 Устанавливает текущую точку полосы прокрутки в значение, заданную параметром *npos* , и, если оно указано, перерисовывает полосу прокрутки, чтобы отразить новую точку.
 
@@ -363,7 +364,7 @@ int SetScrollPos(
 
 Задает предыдущее расположение поля прокрутки в случае успешного завершения. в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Установите *бредрав* в значение false, когда полоса прокрутки будет перерисована при последующем вызове другой функции, чтобы избежать повторной прорисовки полосы прокрутки в течение короткого интервала.
 
@@ -371,7 +372,7 @@ int SetScrollPos(
 
   См. пример для [кскроллбар:: сетскроллранже](#setscrollrange).
 
-## <a name="cscrollbarsetscrollrange"></a><a name="setscrollrange"></a>Кскроллбар:: Сетскроллранже
+## <a name="cscrollbarsetscrollrange"></a><a name="setscrollrange"></a> Кскроллбар:: Сетскроллранже
 
 Задает для указанной полосы прокрутки положения минимума и максимума.
 
@@ -393,7 +394,7 @@ void SetScrollRange(
 *bRedraw*<br/>
 Указывает, следует ли перерисовать полосу прокрутки для отражения изменения. Если *бредрав* имеет значение true, полоса прокрутки перерисовывается; Если значение равно FALSE, оно не перерисовывается. По умолчанию он перерисовывается.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Задайте для *нминпос* и *нмакспос* значение 0, чтобы скрыть стандартные полосы прокрутки.
 
@@ -407,7 +408,7 @@ void SetScrollRange(
 
 [!code-cpp[NVC_MFC_CScrollBar#4](../../mfc/reference/codesnippet/cpp/cscrollbar-class_4.cpp)]
 
-## <a name="cscrollbarshowscrollbar"></a><a name="showscrollbar"></a>Кскроллбар:: Шовскроллбар
+## <a name="cscrollbarshowscrollbar"></a><a name="showscrollbar"></a> Кскроллбар:: Шовскроллбар
 
 Показывает или скрывает полосу прокрутки.
 
@@ -420,7 +421,7 @@ void ShowScrollBar(BOOL bShow = TRUE);
 *bShow*<br/>
 Указывает, отображается ли полоса прокрутки или скрыта. Если этот параметр имеет значение TRUE, отображается полоса прокрутки. в противном случае он скрыт.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Приложение не должно вызывать эту функцию для скрытия полосы прокрутки при обработке сообщения уведомления полосы прокрутки.
 

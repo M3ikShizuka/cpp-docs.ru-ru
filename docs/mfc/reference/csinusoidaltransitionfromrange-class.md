@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ксинусоидалтранситионфромранже Class'
 title: Класс CSinusoidalTransitionFromRange
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CSinusoidalTransitionFromRange [MFC], m_period
 - CSinusoidalTransitionFromRange [MFC], m_slope
 ms.assetid: 8b66a729-5f10-431a-b055-e3600d0065da
-ms.openlocfilehash: 0612a4b365b928d3c9be6d76168a76b4ee1caa85
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5d00b1cbfb8fe9b76a5a69bd1c9f10316ddf8141
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81318259"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264574"
 ---
 # <a name="csinusoidaltransitionfromrange-class"></a>Класс CSinusoidalTransitionFromRange
 
@@ -37,49 +38,49 @@ ms.locfileid: "81318259"
 class CSinusoidalTransitionFromRange : public CBaseTransition;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange](#csinusoidaltransitionfromrange)|Строит переходный объект.|
+|[Ксинусоидалтранситионфромранже:: Ксинусоидалтранситионфромранже](#csinusoidaltransitionfromrange)|Конструирует объект перехода.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CSinusoidalTransitionFromRange::Создание](#create)|Вызывает библиотеку перехода для создания инкапсулированного объекта переходного COM. (Переопределяет [CBaseПереход::Создание](../../mfc/reference/cbasetransition-class.md#create).)|
+|[Ксинусоидалтранситионфромранже:: Create](#create)|Вызывает библиотеку переходов для создания COM-объекта инкапсулированного перехода. (Переопределяет [CBaseTransition:: Create](../../mfc/reference/cbasetransition-class.md#create).)|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CSinusoidalTransitionRangeRange::m_dblMaximumValue](#m_dblmaximumvalue)|Значение переменной анимации на пике синусоидальной волны.|
-|[CSinusoidalTransitionRange:::m_dblMinimumValue](#m_dblminimumvalue)|Значение переменной анимации в корыте синусоидальной волны.|
-|[CSinusoidalTransitionRangeRange::m_duration](#m_duration)|Продолжительность перехода.|
-|[CSinusoidalTransitionRangeRange:::m_period](#m_period)|Период колебаний синусоидальной волны в считанные секунды.|
-|[CSinusoidalTransitionRangeRange::m_slope](#m_slope)|Склон в начале перехода.|
+|[Ксинусоидалтранситионфромранже:: m_dblMaximumValue](#m_dblmaximumvalue)|Значение переменной анимации в пиковую синусоидальной волна.|
+|[Ксинусоидалтранситионфромранже:: m_dblMinimumValue](#m_dblminimumvalue)|Значение переменной анимации в траугх волны синусоидальной.|
+|[Ксинусоидалтранситионфромранже:: m_duration](#m_duration)|Длительность перехода.|
+|[Ксинусоидалтранситионфромранже:: m_period](#m_period)|Период колебаний синусоидальнойной волны в секундах.|
+|[Ксинусоидалтранситионфромранже:: m_slope](#m_slope)|Наклон в начале перехода.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Значение переменной анимации колеблется между указанным минимальным и максимальным значениями в течение всего периода синусоидального перехода. Параметр наклона используется для дисамбии между двумя возможными синусоидными волнами, указанными другими параметрами. Поскольку все переходы очищаются автоматически, рекомендуется выделять их с помощью нового оператора. Инкапсулированный объект IUIAnimationTransition COM создается CAnimationController::AnimateGroup, до тех пор это NULL. Изменение переменных членов после создания этого объекта COM не имеет эффекта.
+Значение переменной анимации меняется между указанными минимальным и максимальным значениями в течение всей продолжительности перехода синусоидальной Range. Параметр наклона используется для устранения неоднозначности между двумя возможными синусами, заданными другими параметрами. Так как все переходы очищаются автоматически, рекомендуется выделять их с помощью оператора New. Инкапсулированный COM-объект Иуианиматионтранситион создается методом Каниматионконтроллер:: Аниматеграуп, пока он не будет равен NULL. Изменение переменных-членов после создания этого объекта COM не имеет силы.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
 [CObject](../../mfc/reference/cobject-class.md)
 
-[CBaseПереход](../../mfc/reference/cbasetransition-class.md)
+[CBaseTransition](../../mfc/reference/cbasetransition-class.md)
 
-[CSinusoidalTransitionFromRange](../../mfc/reference/csinusoidaltransitionfromrange-class.md)
+[ксинусоидалтранситионфромранже](../../mfc/reference/csinusoidaltransitionfromrange-class.md)
 
 ## <a name="requirements"></a>Требования
 
 **Заголовок:** afxanimationcontroller.h
 
-## <a name="csinusoidaltransitionfromrangecreate"></a><a name="create"></a>CSinusoidalTransitionFromRange::Создание
+## <a name="csinusoidaltransitionfromrangecreate"></a><a name="create"></a> Ксинусоидалтранситионфромранже:: Create
 
-Вызывает библиотеку перехода для создания инкапсулированного объекта переходного COM.
+Вызывает библиотеку переходов для создания COM-объекта инкапсулированного перехода.
 
 ```
 virtual BOOL Create(
@@ -89,16 +90,16 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Параметры
 
-*pLibrary*<br/>
-Указатель на библиотеку перехода, которая отвечает за создание стандартных переходов.
+*плибрари*<br/>
+Указатель на библиотеку переходов, который отвечает за создание стандартных переходов.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если переход создан успешно; в противном случае FALSE.
+Значение TRUE, если переход успешно создан; в противном случае — FALSE.
 
-## <a name="csinusoidaltransitionfromrangecsinusoidaltransitionfromrange"></a><a name="csinusoidaltransitionfromrange"></a>CSinusoidalTransitionFromRange::CSinusoidalTransitionFromRange
+## <a name="csinusoidaltransitionfromrangecsinusoidaltransitionfromrange"></a><a name="csinusoidaltransitionfromrange"></a> Ксинусоидалтранситионфромранже:: Ксинусоидалтранситионфромранже
 
-Строит переходный объект.
+Конструирует объект перехода.
 
 ```
 CSinusoidalTransitionFromRange(
@@ -111,56 +112,56 @@ CSinusoidalTransitionFromRange(
 
 ### <a name="parameters"></a>Параметры
 
-*Длительность*<br/>
-Продолжительность перехода.
+*duration*<br/>
+Длительность перехода.
 
-*dblMinimumValue*<br/>
-Значение переменной анимации в корыте синусоидальной волны.
+*дблминимумвалуе*<br/>
+Значение переменной анимации в траугх волны синусоидальной.
 
-*dblMaximumValue*<br/>
-Значение переменной анимации на пике синусоидальной волны.
+*дблмаксимумвалуе*<br/>
+Значение переменной анимации в пиковую синусоидальной волна.
 
-*Период*<br/>
-Период колебаний синусоидальной волны в считанные секунды.
+*периода*<br/>
+Период колебаний синусоидальнойной волны в секундах.
 
-*Уклона*<br/>
-Склон в начале перехода.
+*slope*<br/>
+Наклон в начале перехода.
 
-## <a name="csinusoidaltransitionfromrangem_dblmaximumvalue"></a><a name="m_dblmaximumvalue"></a>CSinusoidalTransitionRangeRange::m_dblMaximumValue
+## <a name="csinusoidaltransitionfromrangem_dblmaximumvalue"></a><a name="m_dblmaximumvalue"></a> Ксинусоидалтранситионфромранже:: m_dblMaximumValue
 
-Значение переменной анимации на пике синусоидальной волны.
+Значение переменной анимации в пиковую синусоидальной волна.
 
 ```
 DOUBLE m_dblMaximumValue;
 ```
 
-## <a name="csinusoidaltransitionfromrangem_dblminimumvalue"></a><a name="m_dblminimumvalue"></a>CSinusoidalTransitionRange:::m_dblMinimumValue
+## <a name="csinusoidaltransitionfromrangem_dblminimumvalue"></a><a name="m_dblminimumvalue"></a> Ксинусоидалтранситионфромранже:: m_dblMinimumValue
 
-Значение переменной анимации в корыте синусоидальной волны.
+Значение переменной анимации в траугх волны синусоидальной.
 
 ```
 DOUBLE m_dblMinimumValue;
 ```
 
-## <a name="csinusoidaltransitionfromrangem_duration"></a><a name="m_duration"></a>CSinusoidalTransitionRangeRange::m_duration
+## <a name="csinusoidaltransitionfromrangem_duration"></a><a name="m_duration"></a> Ксинусоидалтранситионфромранже:: m_duration
 
-Продолжительность перехода.
+Длительность перехода.
 
 ```
 UI_ANIMATION_SECONDS m_duration;
 ```
 
-## <a name="csinusoidaltransitionfromrangem_period"></a><a name="m_period"></a>CSinusoidalTransitionRangeRange:::m_period
+## <a name="csinusoidaltransitionfromrangem_period"></a><a name="m_period"></a> Ксинусоидалтранситионфромранже:: m_period
 
-Период колебаний синусоидальной волны в считанные секунды.
+Период колебаний синусоидальнойной волны в секундах.
 
 ```
 UI_ANIMATION_SECONDS m_period;
 ```
 
-## <a name="csinusoidaltransitionfromrangem_slope"></a><a name="m_slope"></a>CSinusoidalTransitionRangeRange::m_slope
+## <a name="csinusoidaltransitionfromrangem_slope"></a><a name="m_slope"></a> Ксинусоидалтранситионфромранже:: m_slope
 
-Склон в начале перехода.
+Наклон в начале перехода.
 
 ```
 UI_ANIMATION_SLOPE m_slope;

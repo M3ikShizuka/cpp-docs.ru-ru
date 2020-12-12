@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: перечисление CMFCImagePaintArea Class'
 title: Класс перечисление CMFCImagePaintArea
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - CMFCImagePaintArea [MFC], SetColor
 - CMFCImagePaintArea [MFC], SetMode
 ms.assetid: c59eec22-f15a-4e58-8c4d-4a18a41f4452
-ms.openlocfilehash: ee960b27651489ac1c196789d41a6c5ee396b260
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c12a85c05686dcde24560b5ecc69cc68de07aa48
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831155"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265354"
 ---
 # <a name="cmfcimagepaintarea-class"></a>Класс перечисление CMFCImagePaintArea
 
@@ -33,7 +34,7 @@ ms.locfileid: "88831155"
 class CMFCImagePaintArea : public CButton
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -51,7 +52,7 @@ class CMFCImagePaintArea : public CButton
 |[Перечисление CMFCImagePaintArea:: Сетколор](#setcolor)|Задает текущий цвет рисования.|
 |[Перечисление CMFCImagePaintArea:: SetMode](#setmode)|Задает текущий режим рисования.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Данный класс не предназначен для непосредственного использования в коде.
 
@@ -117,7 +118,7 @@ void SetBitmap(CBitmap* pBitmap);
 *пбитмап*\
 окне Новое растровое изображение для вывода.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если *пбитмап* имеет значение null, этот метод устанавливает размер изменяемой области рисования равным нулю. В противном случае размер изменяемой области заливки устанавливается равным размеру указанного растрового изображения.
 
@@ -134,7 +135,7 @@ void SetColor(COLORREF color);
 *Цвет*\
 окне Новый цвет рисования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 При выборе цвета на панели палитры редактора изображений или палитре цветов платформа вызывает этот метод для обновления текущего цвета рисования. Исходный цвет рисования — черный (значение COLORREF 0).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CMFCMenuButton Class'
 title: Класс CMFCMenuButton
 ms.date: 07/15/2019
 f1_keywords:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - CMFCMenuButton [MFC], m_nMenuResult
 - CMFCMenuButton [MFC], m_bDefaultClick
 ms.assetid: 53d3d459-1e5a-47c5-8b7f-2e61f6af5187
-ms.openlocfilehash: 2f8ef341d7f460ed6b0ec23cb8a490842eb67cbc
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 954a9239f7a4912e29dd031ecacfeb2e06c6d8be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743273"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97265133"
 ---
 # <a name="cmfcmenubutton-class"></a>Класс CMFCMenuButton
 
@@ -41,7 +42,7 @@ ms.locfileid: "90743273"
 class CMFCMenuButton : public CMFCButton
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -67,7 +68,7 @@ class CMFCMenuButton : public CMFCButton
 |[CMFCMenuButton:: m_nMenuResult](#m_nmenuresult)|Идентификатор, указывающий, какой элемент пользователь выбрал во всплывающем меню.|
 |[CMFCMenuButton:: m_bDefaultClick](#m_bdefaultclick)| Разрешить обработку по умолчанию (с текстом или изображением кнопки).|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `CMFCMenuButton`Класс является производным от [класса кмфкбуттон](../../mfc/reference/cmfcbutton-class.md) , который, в свою очередь, является производным от [класса кбуттон](../../mfc/reference/cbutton-class.md). Таким образом, вы можете использовать `CMFCMenuButton` в коде так же, как и при использовании `CButton` .
 
@@ -114,7 +115,7 @@ CMFCMenuButton();
 BOOL m_bOSMenu;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если `m_bOSMenu` имеет значение true, платформа вызывает наследуемый `TrackPopupMenu` метод для этого объекта. В противном случае платформа вызывает [кконтекстменуманажер:: метод TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu).
 
@@ -126,7 +127,7 @@ BOOL m_bOSMenu;
 BOOL m_bRightArrow;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Когда пользователь нажимает кнопку меню, приложение отображает всплывающее меню. Платформа отобразит всплывающее меню под кнопкой или справа от кнопки. Кнопка также имеет маленькую стрелку, которая указывает, где появится всплывающее меню. Если `m_bRightArrow` имеет значение true, платформа отображает всплывающее меню справа от кнопки. В противном случае отображается всплывающее меню под кнопкой.
 
@@ -138,7 +139,7 @@ BOOL m_bRightArrow;
 BOOL m_bStayPressed;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если `m_bStayPressed` элемент имеет значение false, кнопка меню не будет нажата, когда компонент использует нажатие кнопки. В этом случае платформа отображает только всплывающее меню.
 
@@ -152,7 +153,7 @@ BOOL m_bStayPressed;
 HMENU m_hMenu;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Платформа отображает меню, обозначенное этой переменной члена, когда пользователь нажимает кнопку меню.
 
@@ -164,7 +165,7 @@ HMENU m_hMenu;
 int m_nMenuResult;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Значение этой переменной-члена равно нулю, если пользователь отменяет меню, не выполняя выбор или при возникновении ошибки.
 
@@ -176,7 +177,7 @@ int m_nMenuResult;
 BOOL  m_bDefaultClick;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если присвоить параметру m_bDefaultClick значение false, при нажатии кнопки в любом месте на кнопке будет отображаться меню.
 
@@ -197,7 +198,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 Ненулевое значение, если сообщение было переведено и не должно быть отправлено. 0, если сообщение не было переведено и должно быть отправлено.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcmenubuttonsizetocontent"></a><a name="sizetocontent"></a> CMFCMenuButton:: SizeToContent
 
@@ -216,13 +217,13 @@ virtual CSize SizeToContent(BOOL bCalcOnly = FALSE);
 
 Объект [ксизе](../../atl-mfc-shared/reference/csize-class.md) , указывающий новый размер кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вызвать эту функцию, а *бкалконли* — true, `SizeToContent` будет вычислять только новый размер кнопки.
 
 Новый размер кнопки вычисляется в соответствии с текстом кнопки, изображением и стрелкой. Платформа также добавляет предварительно определенные поля с 10 пикселями для горизонтального края и 5 пикселей для вертикального края.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>

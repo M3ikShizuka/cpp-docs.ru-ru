@@ -1,5 +1,6 @@
 ---
-title: Класс CMFCRibbonUndoButton
+description: 'Дополнительные сведения о: Кмфкриббонундобуттон Class'
+title: Класс Кмфкриббонундобуттон
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonUndoButton
@@ -16,16 +17,16 @@ helpviewer_keywords:
 - CMFCRibbonUndoButton [MFC], GetActionNumber
 - CMFCRibbonUndoButton [MFC], HasMenu
 ms.assetid: 5c42adf7-871d-4239-901e-47ae7fb816fc
-ms.openlocfilehash: 15cf93d39057f0e235779d47cf24d920d80a807d
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 8bfc02b61160a5f11a6913736c5dc784c4d00ce4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753491"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264938"
 ---
-# <a name="cmfcribbonundobutton-class"></a>Класс CMFCRibbonUndoButton
+# <a name="cmfcribbonundobutton-class"></a>Класс Кмфкриббонундобуттон
 
-Класс `CMFCRibbonUndoButton` реализует кнопку списка выпадающих, содержащую самые последние команды пользователей. Пользователи могут выбрать одну или несколько последних команд из списка выпадающих, чтобы либо переделать, либо отменить их.
+`CMFCRibbonUndoButton`Класс реализует кнопку раскрывающегося списка, содержащую последние команды пользователя. Пользователи могут выбрать одну или несколько последних команд из раскрывающегося списка, чтобы либо повторить, либо отменить их.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,30 +34,30 @@ ms.locfileid: "81753491"
 class CMFCRibbonUndoButton : public CMFCRibbonGallery
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMFCRibbonUnButton::CMFCRibbonUnButton](#cmfcribbonundobutton)|Строит новый `CMFCRibbonUndoButton` объект с помощью указанного идентификатора команды, текстовой метки и изображений из списка изображений родительского объекта.|
+|[Кмфкриббонундобуттон:: Кмфкриббонундобуттон](#cmfcribbonundobutton)|Конструирует новый объект, `CMFCRibbonUndoButton` используя указанный идентификатор команды, текстовую метку и изображения из списка изображений родительского объекта.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMFCRibbonUnButton::AddUndoAction](#addundoaction)|Добавляет новое действие в список действий.|
-|[CMFCRibbonUnButton::CleanUpUndoList](#cleanupundolist)|Очищает список действий, который является выпадающим списком.|
-|[CMFCRibbonUnДоКнопка:GetActionNumber](#getactionnumber)|Определяет количество элементов, выбранных пользователем из списка выпадающих.|
-|[CMFCRibbonUnButton::HasMenu](#hasmenu)|Указывает, содержит ли объект меню.|
+|[Кмфкриббонундобуттон:: Аддундоактион](#addundoaction)|Добавляет новое действие в список действий.|
+|[Кмфкриббонундобуттон:: Клеанупундолист](#cleanupundolist)|Очищает список действий, который является раскрывающимся списком.|
+|[Кмфкриббонундобуттон:: Жетактионнумбер](#getactionnumber)|Определяет число элементов, выбранных пользователем в раскрывающемся списке.|
+|[Кмфкриббонундобуттон:: Хасмену](#hasmenu)|Указывает, содержит ли объект меню.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Класс `CMFCRibbonUndoButton` использует стек для представления списка выпадающих.
+`CMFCRibbonUndoButton`Класс использует стек для представления раскрывающегося списка.
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано, как `CMFCRibbonUndoButton` построить объект класса и добавить новое действие в список действий. Этот фрагмент кода является частью [образца гаджетов ленты.](../../overview/visual-cpp-samples.md)
+В следующем примере показано, как создать объект `CMFCRibbonUndoButton` класса и добавить новое действие в список действий. Этот фрагмент кода является частью [примера мини-приложений ленты](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_RibbonGadgets#2](../../mfc/reference/codesnippet/cpp/cmfcribbonundobutton-class_1.cpp)]
 
@@ -74,9 +75,9 @@ class CMFCRibbonUndoButton : public CMFCRibbonGallery
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxribbonundobutton.h
+**Заголовок:** афксриббонундобуттон. h
 
-## <a name="cmfcribbonundobuttonaddundoaction"></a><a name="addundoaction"></a>CMFCRibbonUnButton::AddUndoAction
+## <a name="cmfcribbonundobuttonaddundoaction"></a><a name="addundoaction"></a> Кмфкриббонундобуттон:: Аддундоактион
 
 Добавляет новое действие в список действий.
 
@@ -86,20 +87,20 @@ void AddUndoAction(LPCTSTR lpszLabel);
 
 ### <a name="parameters"></a>Параметры
 
-*lpszLabel*<br/>
-(в) Метка действия, которая будет отображаться в списке выпадающих.
+*лпсзлабел*<br/>
+окне Метка действия, которая будет отображаться в раскрывающемся списке.
 
-## <a name="cmfcribbonundobuttoncleanupundolist"></a><a name="cleanupundolist"></a>CMFCRibbonUnButton::CleanUpUndoList
+## <a name="cmfcribbonundobuttoncleanupundolist"></a><a name="cleanupundolist"></a> Кмфкриббонундобуттон:: Клеанупундолист
 
-Очищает список действий, который является выпадающим списком.
+Очищает список действий, который является раскрывающимся списком.
 
 ```cpp
 void CleanUpUndoList();
 ```
 
-## <a name="cmfcribbonundobuttoncmfcribbonundobutton"></a><a name="cmfcribbonundobutton"></a>CMFCRibbonUnButton::CMFCRibbonUnButton
+## <a name="cmfcribbonundobuttoncmfcribbonundobutton"></a><a name="cmfcribbonundobutton"></a> Кмфкриббонундобуттон:: Кмфкриббонундобуттон
 
-Строит новый `CMFCRibbonUndoButton` объект с помощью указанного идентификатора команды, текстовой метки и изображений из списка изображений родительского объекта.
+Конструирует новый объект, `CMFCRibbonUndoButton` используя указанный идентификатор команды, текстовую метку и изображения из списка изображений родительского объекта.
 
 ```
 CMFCRibbonUndoButton(
@@ -117,23 +118,23 @@ CMFCRibbonUndoButton(
 ### <a name="parameters"></a>Параметры
 
 *nID*<br/>
-(в) Определяет идентификатор команды.
+окне Указывает идентификатор команды.
 
 *lpszText*<br/>
-(в) Упомянет текстовую метку кнопки.
+окне Задает текстовую метку кнопки.
 
-*nSmallImageIndex*<br/>
-(в) Индекс на нулевой основе в списке изображений родительского объекта для небольшого изображения кнопки.
+*нсмаллимажеиндекс*<br/>
+окне Отсчитываемый от нуля индекс в списке изображений родительского объекта для мелкого изображения кнопки.
 
-*nLargeImageIndex*<br/>
-(в) Индекс на нулевой основе в списке изображений родительского объекта для большого изображения кнопки.
+*нларжеимажеиндекс*<br/>
+окне Отсчитываемый от нуля индекс в списке изображений родительского объекта для большого изображения кнопки.
 
 *hIcon*<br/>
-(в) Ручка к значку, которую можно использовать в качестве изображения кнопки.
+окне Маркер значка, который можно использовать в качестве изображения кнопки.
 
-## <a name="cmfcribbonundobuttongetactionnumber"></a><a name="getactionnumber"></a>CMFCRibbonUnДоКнопка:GetActionNumber
+## <a name="cmfcribbonundobuttongetactionnumber"></a><a name="getactionnumber"></a> Кмфкриббонундобуттон:: Жетактионнумбер
 
-Определяет количество элементов, выбранных пользователем из списка выпадающих.
+Определяет число элементов, выбранных пользователем в раскрывающемся списке.
 
 ```
 int GetActionNumber() const;
@@ -141,9 +142,9 @@ int GetActionNumber() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Количество элементов, выбранных пользователем.
+Число элементов, выбранных пользователем.
 
-## <a name="cmfcribbonundobuttonhasmenu"></a><a name="hasmenu"></a>CMFCRibbonUnButton::HasMenu
+## <a name="cmfcribbonundobuttonhasmenu"></a><a name="hasmenu"></a> Кмфкриббонундобуттон:: Хасмену
 
 Указывает, содержит ли объект меню.
 
@@ -153,13 +154,13 @@ virtual BOOL HasMenu() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Всегда возвращается TRUE.
+Всегда возвращает значение TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
-[Класс CMFCRibbonGallery](../../mfc/reference/cmfcribbongallery-class.md)<br/>
+[Класс Кмфкриббонгаллери](../../mfc/reference/cmfcribbongallery-class.md)<br/>
 [Класс CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md)
