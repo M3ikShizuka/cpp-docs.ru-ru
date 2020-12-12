@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: выражения с унарными операторами'
 title: Выражения с унарными операторами
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - unary operators [C++], expressions with
 - expressions [C++], operators
 ms.assetid: 1217685b-b85d-4b48-9ff4-d90f56a26c1b
-ms.openlocfilehash: 032ebd99041de9308d16710b2a27e0db3cddd4df
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6714727d0a4b2c386c37550151df21062534376e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233760"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186510"
 ---
 # <a name="expressions-with-unary-operators"></a>Выражения с унарными операторами
 
@@ -35,15 +36,15 @@ ms.locfileid: "87233760"
 
 - [Оператор CAST ()](../cpp/cast-operator-parens.md)
 
-- [`sizeof`станции](../cpp/sizeof-operator.md)
+- [`sizeof` станции](../cpp/sizeof-operator.md)
 
-- [`__uuidof`станции](../cpp/uuidof-operator.md)
+- [`__uuidof` станции](../cpp/uuidof-operator.md)
 
-- [`alignof`станции](../cpp/alignof-operator.md)
+- [`alignof` станции](../cpp/alignof-operator.md)
 
-- [`new`станции](../cpp/new-operator-cpp.md)
+- [`new` станции](../cpp/new-operator-cpp.md)
 
-- [`delete`станции](../cpp/delete-operator-cpp.md)
+- [`delete` станции](../cpp/delete-operator-cpp.md)
 
 Эти операторы имеют ассоциативность справа налево. Обычно синтаксис унарных выражений предшествует синтаксису постфиксных или основных выражений.
 
@@ -51,9 +52,9 @@ ms.locfileid: "87233760"
 
 - *postfix-expression*
 
-- `++`*унарное выражение*
+- `++` *unary-expression*
 
-- `--`*унарное выражение*
+- `--` *unary-expression*
 
 - приведение *унарных операторов* *-выражение*
 
@@ -77,6 +78,6 @@ ms.locfileid: "87233760"
 
 *Выражение выделения* ссылается на **`new`** оператор. *Выражение освобождения —* это **`delete`** оператор. Дополнительные сведения см. по ссылкам, приведенным выше.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Типы выражений](../cpp/types-of-expressions.md)

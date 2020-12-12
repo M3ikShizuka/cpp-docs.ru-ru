@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/MACHINE (Указание целевой платформы)
 title: Параметр /MACHINE (определение целевой платформы)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - /MACHINE linker option
 - MACHINE linker option
 ms.assetid: 8d41bf4b-7e53-4ab9-9085-d852b08d31c2
-ms.openlocfilehash: e64aa7b2ca9e50ebdc0760f64a9b25e851b45310
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a1bf87142fb99577672391356a43a2771ea0b09f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62321726"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190813"
 ---
 # <a name="machine-specify-target-platform"></a>Параметр /MACHINE (определение целевой платформы)
 
@@ -24,27 +25,27 @@ ms.locfileid: "62321726"
 /MACHINE:{ARM|EBC|X64|X86}
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Параметр/Machine определяет целевую платформу программы.
+Параметр/MACHINE указывает целевую платформу для программы.
 
-Как правило не нужно указать параметр/Machine. Тип компьютера из OBJ-файлов определяется связь. Тем не менее в некоторых случаях связь не может определить тип компьютера и проблемах [средств компоновщика LNK1113 ошибка](../../error-messages/tool-errors/linker-tools-error-lnk1113.md). Если возникает такая ошибка, укажите/Machine.
+Как правило, не нужно указывать параметр/MACHINE. LINK выводит тип компьютера из OBJ-файлов. Однако в некоторых случаях LINK не может определить тип компьютера и выдает [ошибку средств компоновщика LNK1113](../../error-messages/tool-errors/linker-tools-error-lnk1113.md). При возникновении такой ошибки укажите/МАЧИНЕ..
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Задание данного параметра компоновщика в среде разработки Visual Studio
 
-1. Откройте диалоговое окно **Страницы свойств** проекта. Дополнительные сведения см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
-1. Нажмите кнопку **компоновщика** папки.
+1. Выберите папку **компоновщика**.
 
-1. Нажмите кнопку **Дополнительно** страницу свойств.
+1. Перейдите на страницу свойств **Дополнительно** .
 
-1. Изменить **целевой машины** свойство.
+1. Измените свойство **целевого компьютера** .
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Задание данного параметра компоновщика программным способом
 
 1. См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TargetMachine%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по компоновщику MSVC](linking.md)<br/>
 [Параметры компоновщика MSVC](linker-options.md)

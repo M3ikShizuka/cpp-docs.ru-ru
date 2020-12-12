@@ -1,17 +1,18 @@
 ---
+description: Дополнительные сведения о приведении (C++/CX)
 title: Приведение (C++/CX)
 ms.date: 06/19/2018
 ms.assetid: 5247f6c7-6a0a-4021-97c9-21c868bd9455
-ms.openlocfilehash: 5e51f9e100be2096494e10aca38232dbd1576f40
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 90b9e90833acc14bcf76287b44f70fb914c7604a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843486"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190280"
 ---
 # <a name="casting-ccx"></a>Приведение (C++/CX)
 
-К среда выполнения Windows типам применяются четыре различных оператора приведения: [оператор static_cast](../cpp/static-cast-operator.md), оператор [dynamic_cast](../cpp/dynamic-cast-operator.md), оператор **safe_cast**и [оператор reinterpret_cast](../cpp/reinterpret-cast-operator.md). **safe_cast** и **`static_cast`** создают исключение, если преобразование не может быть выполнено; [Static_cast оператор](../cpp/static-cast-operator.md) также выполняет проверку типов во время компиляции. **`dynamic_cast`** Возвращает **`nullptr`** , если не удается преобразовать тип. Хотя **`reinterpret_cast`** возвращает значение, отличное от NULL, может быть недопустимым. По этой причине рекомендуется не использовать, **`reinterpret_cast`** если не известно, что приведение завершится с ошибкой. Кроме того, не рекомендуется использовать приведения в стиле C в коде C++/CX, так как они идентичны **`reinterpret_cast`** .
+К среда выполнения Windows типам применяются четыре различных оператора приведения: [оператор static_cast](../cpp/static-cast-operator.md), оператор [dynamic_cast](../cpp/dynamic-cast-operator.md), оператор **safe_cast** и [оператор reinterpret_cast](../cpp/reinterpret-cast-operator.md). **safe_cast** и **`static_cast`** создают исключение, если преобразование не может быть выполнено; [Static_cast оператор](../cpp/static-cast-operator.md) также выполняет проверку типов во время компиляции. **`dynamic_cast`** Возвращает **`nullptr`** , если не удается преобразовать тип. Хотя **`reinterpret_cast`** возвращает значение, отличное от NULL, может быть недопустимым. По этой причине рекомендуется не использовать, **`reinterpret_cast`** если не известно, что приведение завершится с ошибкой. Кроме того, не рекомендуется использовать приведения в стиле C в коде C++/CX, так как они идентичны **`reinterpret_cast`** .
 
 Компилятор и среда выполнения также выполняют неявное приведение, например в операциях упаковки, когда тип значения или встроенный тип передаются как аргументы в метод, параметры которого имеют тип `Object^`. Теоретически неявное приведение никогда не должно вызвать исключение во время выполнения; если компилятор не может выполнить неявное преобразование, он вызывает ошибку во время компиляции.
 

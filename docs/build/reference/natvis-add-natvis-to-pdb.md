@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/НАТВИС (Добавление Natvis в PDB)
 title: /NATVIS (добавление файла NATVIS в файл PDB)
 ms.date: 08/10/2017
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - -NATVIS linker option
 - Add Natvis file to PDB
 ms.assetid: 8747fc0c-701a-4796-bb4d-818ab4465cca
-ms.openlocfilehash: a16e320a2f8f946912fef6a354f27f6514a67e29
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 7703915591a59a558c8580dd64b9be22d281d784
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79439274"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190527"
 ---
 # <a name="natvis-add-natvis-to-pdb"></a>/NATVIS (добавление файла NATVIS в файл PDB)
 
@@ -25,7 +26,7 @@ ms.locfileid: "79439274"
 *filename*<br/>
 Natvis-файл для добавления в PDB-файл. Он внедряет визуализацию отладчика в файл Natvis в PDB.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Параметр/НАТВИС внедряет визуализации отладчика, определенные в файле Natvis-файла, в PDB *-файл,* созданный LINK. Это позволяет отладчику отображать визуализации независимо от natvis – файла. Можно использовать несколько параметров/НАТВИС для внедрения нескольких Natvis-файлов в созданный PDB-файл.
 

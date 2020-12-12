@@ -1,25 +1,26 @@
 ---
+description: 'Дополнительные сведения: создание. BSC файл'
 title: Построение BSC-файла
 ms.date: 11/04/2016
 helpviewer_keywords:
 - .bsc files, building
 - bsc files, building
 ms.assetid: 304e240d-692a-4f8b-b9ed-891c01bbb2ad
-ms.openlocfilehash: f78f0f2c6094cb2169f17a6db969731c9a2f494f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7432314757d51ae28ea1b358bde2e00219a4b834
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272901"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187095"
 ---
 # <a name="building-a-bsc-file"></a>Построение BSC-файла
 
-BSCMAKE может создавать новый файл информации из вновь созданных SBR-файлов. Он также может поддерживать существующий файл BSC-файл с помощью SBR-файлов для объектных файлов, которые были изменены с момента последней сборки.
+BSCMAKE может создать новый файл сведений о просмотре из вновь созданных SBR-файлов. Он также может поддерживать существующий BSC файл с помощью SBR для объектных файлов, которые были изменены с момента последней сборки.
 
-- [Создание SBR-файл](creating-an-dot-sbr-file.md)
+- [Создание SBR файла](creating-an-dot-sbr-file.md)
 
-- [Порядок построения BSC-файла в (BSCMAKE)](how-bscmake-builds-a-dot-bsc-file.md)
+- [Как BSCMAKE создает BSC-файл](how-bscmake-builds-a-dot-bsc-file.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Справочник ВSCMAKE](bscmake-reference.md)
+[Справочник по BSCMAKE](bscmake-reference.md)

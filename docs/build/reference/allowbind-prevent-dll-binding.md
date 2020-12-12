@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/ALLOWBIND (запрет привязки DLL)
 title: /ALLOWBIND (запретить привязку DLL)
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - -ALLOWBIND linker option
 - DLLs [C++], preventing binding
 ms.assetid: 30e37e24-12e4-407e-988a-39d357403598
-ms.openlocfilehash: d963a7145ab2e8c8872dc21c485bdc8f877b0b76
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 727f1cae7d1b0a94a8f7faba90ee6994df8657e7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69493146"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187238"
 ---
 # <a name="allowbind-prevent-dll-binding"></a>/ALLOWBIND (запретить привязку DLL)
 
@@ -25,7 +26,7 @@ ms.locfileid: "69493146"
 /ALLOWBIND[:NO]
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Параметр /ALLOWBIND:NO устанавливает в заголовке библиотеки DLL бит, который указывает программе Bind.exe на то, что привязка образа не допускается. Если DLL имеет цифровую подпись, привязывать ее не следует (при привязке цифровая подпись становится недействительной).
 
@@ -35,7 +36,7 @@ ms.locfileid: "69493146"
 
 1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
-1. Разверните узел **Свойства конфигурации**, **Компоновщик**и выберите пункт **Командная строка**.
+1. Разверните узел **Свойства конфигурации**, **Компоновщик** и выберите пункт **Командная строка**.
 
 1. Введите `/ALLOWBIND:NO` **Дополнительные параметры**.
 
@@ -43,7 +44,7 @@ ms.locfileid: "69493146"
 
 - См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по компоновщику MSVC](linking.md)<br/>
 [Параметры компоновщика MSVC](linker-options.md)<br/>
