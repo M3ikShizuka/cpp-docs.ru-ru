@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CD2DEllipse Class'
 title: Класс CD2DEllipse
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CD2DEllipse [MFC], CD2DEllipse
 ms.assetid: e9f02f54-acf2-427e-b349-db50cd9a77df
-ms.openlocfilehash: 82ad2fbfb8558486134f85d7ec9bcaa6eb4e7507
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 827ba5515cb4b20cb8e5b10012590a001e01c08f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369261"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313064"
 ---
 # <a name="cd2dellipse-class"></a>Класс CD2DEllipse
 
@@ -25,13 +26,13 @@ ms.locfileid: "81369261"
 class CD2DEllipse : public D2D1_ELLIPSE;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CD2DEllipse::CD2DEllipse](#cd2dellipse)|Перегружен. Строит `CD2DEllipse` объект из `D2D1_ELLIPSE` объекта.|
+|[CD2DEllipse::CD2DEllipse](#cd2dellipse)|Перегружен. Конструирует `CD2DEllipse` объект из `D2D1_ELLIPSE` объекта.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -41,11 +42,11 @@ class CD2DEllipse : public D2D1_ELLIPSE;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxrendertarget.h
+**Заголовок:** афксрендертаржет. h
 
-## <a name="cd2dellipsecd2dellipse"></a><a name="cd2dellipse"></a>CD2DEllipse::CD2DEllipse
+## <a name="cd2dellipsecd2dellipse"></a><a name="cd2dellipse"></a> CD2DEllipse::CD2DEllipse
 
-Строит объект CD2DEllipse с объекта CD2DRectF.
+Конструирует объект CD2DEllipse из объекта CD2DRectF.
 
 ```
 CD2DEllipse(const CD2DRectF& rect);
@@ -60,15 +61,15 @@ CD2DEllipse(
 ### <a name="parameters"></a>Параметры
 
 *rect*<br/>
-источник прямоугольника
+Исходный прямоугольник
 
-*ellipse*<br/>
-источник эллипса
+*эллипс*<br/>
+Источник эллипса
 
-*ptCenter*<br/>
+*птцентер*<br/>
 Центральная точка эллипса.
 
-*размерРадиус*<br/>
+*сизерадиус*<br/>
 X-радиус и Y-радиус эллипса.
 
 ## <a name="see-also"></a>См. также раздел

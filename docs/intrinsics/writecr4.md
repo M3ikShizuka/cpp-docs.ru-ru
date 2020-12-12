@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __writecr4'
 title: __writecr4
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - _writecr4 intrinsic
 ms.assetid: ab7651d7-b86b-4be7-a0a0-7263099c70fc
-ms.openlocfilehash: 1afdadcdfdbf1060c87e3865dd5597b0b9a2ea6b
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 711a6dff42f3805886865d09b4638479173bc64e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219272"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313090"
 ---
 # <a name="__writecr4"></a>__writecr4
 
@@ -29,18 +30,18 @@ void writecr4(
 
 ### <a name="parameters"></a>Параметры
 
-*Data*\
+*Данные*\
 окне Значение, записываемое в CR4 регистр.
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__writecr4`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эта встроенная функция доступна только в режиме ядра и процедура доступна только как встроенная.
 

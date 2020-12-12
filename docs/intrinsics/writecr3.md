@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __writecr3'
 title: __writecr3
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - _writecr3 intrinsic
 ms.assetid: 959d49fa-69d5-47cf-88d2-7688367fe38f
-ms.openlocfilehash: f2472a21fe42f10dbf0918480ef02f7e48109747
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: fa4555b2fe4a67dcb3669f8ae20ea0e2d76c8984
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219271"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313116"
 ---
 # <a name="__writecr3"></a>__writecr3
 
@@ -29,18 +30,18 @@ void writecr3(
 
 ### <a name="parameters"></a>Параметры
 
-*Data*\
+*Данные*\
 окне Значение, записываемое в CR3 регистр.
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__writecr3`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эта встроенная функция доступна только в режиме ядра и процедура доступна только как встроенная.
 
