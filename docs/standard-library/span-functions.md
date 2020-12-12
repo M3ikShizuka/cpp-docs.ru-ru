@@ -1,4 +1,5 @@
 ---
+description: См. Дополнительные сведения &lt; о &gt; функциях Span.
 title: '&lt;&gt;функции span'
 ms.date: 05/28/2020
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - std::span [C++], as_writable_bytes
 - std::as_bytes [C++]
-ms.openlocfilehash: f51c99d2f2a051a07cefcb985fdb46340fefb3ee
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 09d712d6dfffee2aa24e0e8cecca4031a27923f5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217445"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169194"
 ---
 # <a name="ltspangt-functions"></a>&lt;&gt;функции span
 
@@ -45,7 +46,7 @@ auto as_bytes(span<T, Extent> s) noexcept;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Объект в `span<const byte, S>` первый элемент, хранящийся в диапазоне, где `S` —`{reinterpret_cast<const std::byte*>(s.data()), s.size_bytes()}`
+Объект в `span<const byte, S>` первый элемент, хранящийся в диапазоне, где `S` — `{reinterpret_cast<const std::byte*>(s.data()), s.size_bytes()}`
 
 ### <a name="example"></a>Пример
 
@@ -85,7 +86,7 @@ auto as_writable_bytes(span<T, Extent> s) noexcept;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Объект в `span<byte, S>` первый элемент, хранящийся в диапазоне, где `S` —`{reinterpret_cast<std::byte*>(s.data()), s.size_bytes()}`
+Объект в `span<byte, S>` первый элемент, хранящийся в диапазоне, где `S` — `{reinterpret_cast<std::byte*>(s.data()), s.size_bytes()}`
 
 ### <a name="example"></a>Пример
 

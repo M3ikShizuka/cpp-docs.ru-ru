@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; функции кортежей &gt;'
 title: Функции &lt;tuple&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - std::get [C++]
 - std::make_tuple [C++]
 - std::tie [C++]
-ms.openlocfilehash: 46c386ecffb8fbbf7c07d40b334afd91d261ebcf
-ms.sourcegitcommit: 19016630f9d35f365e9ba249e0f3617515d7ca33
+ms.openlocfilehash: cf58cab5f222594a935156cf7e7f2e886639da2b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92274520"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168960"
 ---
 # <a name="lttuplegt-functions"></a>Функции &lt;tuple&gt;
 
@@ -28,7 +29,7 @@ ms.locfileid: "92274520"
 template <class F, class Tuple> constexpr decltype(auto) apply(F&& f, Tuple&& t);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызывает функцию *F* с кортежем *t*.
 
@@ -43,7 +44,7 @@ template <class... TTypes>
 
 Возвращает `tuple<TTypes&&...>(std::forward<TTypes>(t)...)`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конструирует кортеж ссылок на аргументы в *t* , подходящие для пересылки в качестве аргументов в функцию.
 
@@ -93,9 +94,9 @@ template <class T, class... Types>
 *Кортеж*\
 Значение типа `std::tuple` , содержащее любое количество элементов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Функции-шаблоны возвращают ссылку на значение *по индексу индекса или*типа *T* в `tuple` объекте.
+Функции-шаблоны возвращают ссылку на значение *по индексу индекса или* типа *T* в `tuple` объекте.
 
 Вызов функции `get<T>(Tuple)` приведет к ошибке компилятора, если кортеж содержит больше или меньше одного элемента типа T.
 
@@ -134,7 +135,7 @@ int main() {
 template <class T, class Tuple> constexpr T make_from_tuple(Tuple&& t);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эквивалентно `return make_from_tuple_impl<T>(forward<Tuple>(t), make_index_sequence<tuple_size_v<decay_t<Tuple>>>{})`.
 
@@ -155,7 +156,7 @@ template <class T1, class T2, ..., class TN>
 *Код*\
 Значение N-ного параметра функции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-шаблон возвращает `tuple<V1, V2, ..., VN>(t1, t2, ..., tN)` , где каждый тип `Vi` имеет значение, `X&` если соответствующий тип. `Ti` `cv` `reference_wrapper<X>` в противном случае — значение `Ti` .
 
@@ -217,7 +218,7 @@ tuple<T1&, T2&, ..., TN&> tie(T1& t1, T2& t2, ..., TN& tN);
 *КОД*\
 Базовый тип N-го элемента кортежа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция шаблона возвращает `tuple<T1&, T2&, ..., TN&>(t1, t2, ..., tN)`.
 

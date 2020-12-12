@@ -1,14 +1,15 @@
 ---
+description: 'Дополнительные сведения: классические приложения (Visual C++)'
 title: Классические приложения (Visual C++)
 ms.date: 07/28/2019
 ms.assetid: a020b534-293c-44e2-aa48-516c43ddeb8f
 ms.topic: overview
-ms.openlocfilehash: 26448ca65b3162e2adfe6988dfd8c9e85432429c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: eb7badb73af507d31c9dd982f0a6189362249a3b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504445"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114758"
 ---
 # <a name="desktop-applications-visual-c"></a>Классические приложения (Visual C++)
 
@@ -44,7 +45,7 @@ ms.locfileid: "91504445"
 |[Добавление файлов в пустые приложения Win32](./overview-of-windows-programming-in-cpp.md)|Добавление файлов в пустой проект.|
 |[Работа с файлами ресурсов](working-with-resource-files.md)|Добавление изображений, значков, таблиц строк и других ресурсов в классическое приложение.|
 |[Ресурсы для создания игры с использованием DirectX (C++)](resources-for-creating-a-game-using-directx.md)|Ссылки на материалы по созданию игр на C++.|
-|[Пошаговое руководство. Создание и использование статической библиотеки](../build/walkthrough-creating-and-using-a-static-library-cpp.md)|Создание двоичного файла. lib.|
+|[Пошаговое руководство: Создание и использование статической библиотеки](../build/walkthrough-creating-and-using-a-static-library-cpp.md)|Создание двоичного файла с расширением LIB.|
 |[Как использовать пакет SDK для Windows 10 в классическом приложении Windows](how-to-use-the-windows-10-sdk-in-a-windows-desktop-application.md)|Содержит инструкции по настройке проекта для построения с помощью пакета SDK для Windows 10.|
 
 ## <a name="related-articles"></a>Связанные статьи

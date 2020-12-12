@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _InterlockedOr встроенных функций'
 title: Встроенные функции _InterlockedOr
 ms.date: 09/02/2019
 f1_keywords:
@@ -56,12 +57,12 @@ helpviewer_keywords:
 - _InterlockedOr16_rel intrinsic
 - _InterlockedOr_HLEAcquire intrinsic
 ms.assetid: 5f265240-7af8-44b7-b952-19f3a9c56186
-ms.openlocfilehash: baad724c85d2d8fb981ec7836d7a46152000fae3
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: d0bd01bdc1b3a32398d65d11c49fe162fa7b4cd0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217583"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167985"
 ---
 # <a name="_interlockedor-intrinsic-functions"></a>Встроенные функции _InterlockedOr
 
@@ -172,7 +173,7 @@ __int64 _InterlockedOr64_rel(
 
 ### <a name="parameters"></a>Параметры
 
-*Значений*\
+*Значение*\
 [вход, выход] Указатель на первый операнд, который должен быть заменен результатом.
 
 *Виде*\
@@ -184,16 +185,16 @@ __int64 _InterlockedOr64_rel(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|Header|
+|Intrinsic|Архитектура|Заголовок|
 |---------------|------------------|------------|
-|`_InterlockedOr`, `_InterlockedOr8`, `_InterlockedOr16`|x86, ARM, x64, ARM64|\<> Intrin. h|
-|`_InterlockedOr64`|ARM, x64, ARM64|\<> Intrin. h|
-|`_InterlockedOr_acq`, `_InterlockedOr_nf`, `_InterlockedOr_rel`, `_InterlockedOr8_acq`, `_InterlockedOr8_nf`, `_InterlockedOr8_rel`, `_InterlockedOr16_acq`, `_InterlockedOr16_nf`, `_InterlockedOr16_rel`, `_InterlockedOr64_acq`, `_InterlockedOr64_nf`, `_InterlockedOr64_rel`|ARM, ARM64|\<> Intrin. h|
-|`_InterlockedOr_np`, `_InterlockedOr8_np`, `_InterlockedOr16_np`, `_InterlockedOr64_np`|X64|\<> Intrin. h|
-|`_InterlockedOr_HLEAcquire`, `_InterlockedOr_HLERelease`|x86, x64|\<> использованием immintrin. h|
-|`_InterlockedOr64_HLEAcquire`, `_InterlockedOr64_HLERelease`|X64|\<> использованием immintrin. h|
+|`_InterlockedOr`, `_InterlockedOr8`, `_InterlockedOr16`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedOr64`|ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedOr_acq`, `_InterlockedOr_nf`, `_InterlockedOr_rel`, `_InterlockedOr8_acq`, `_InterlockedOr8_nf`, `_InterlockedOr8_rel`, `_InterlockedOr16_acq`, `_InterlockedOr16_nf`, `_InterlockedOr16_rel`, `_InterlockedOr64_acq`, `_InterlockedOr64_nf`, `_InterlockedOr64_rel`|ARM, ARM64|\<intrin.h>|
+|`_InterlockedOr_np`, `_InterlockedOr8_np`, `_InterlockedOr16_np`, `_InterlockedOr64_np`|X64|\<intrin.h>|
+|`_InterlockedOr_HLEAcquire`, `_InterlockedOr_HLERelease`|x86, x64|\<immintrin.h>|
+|`_InterlockedOr64_HLEAcquire`, `_InterlockedOr64_HLERelease`|X64|\<immintrin.h>|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Число в имени каждой функции указывает разрядность аргументов.
 
@@ -231,4 +232,4 @@ int main()
 ## <a name="see-also"></a>См. также
 
 [Встроенные функции компилятора](../intrinsics/compiler-intrinsics.md)\
-[Конфликты с 32-разрядным (x86) компилятором](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
+[Конфликтует с компилятором x86](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

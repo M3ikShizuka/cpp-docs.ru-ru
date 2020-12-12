@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _InterlockedExchange встроенных функций'
 title: Встроенные функции _InterlockedExchange
 ms.date: 09/02/2019
 f1_keywords:
@@ -44,12 +45,12 @@ helpviewer_keywords:
 - _InterlockedExchange intrinsic
 - _InterlockedExchange8_nf
 ms.assetid: be2f232a-6301-462a-a92b-fcdeb8b0f209
-ms.openlocfilehash: 53c3545be5e74d802fe63f8e7c03d2a7a2b26110
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: de2f8a084cc5604051234fa9e01d5f5cc0974d74
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221993"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168050"
 ---
 # <a name="_interlockedexchange-intrinsic-functions"></a>Встроенные функции _InterlockedExchange
 
@@ -147,8 +148,8 @@ __int64 _InterlockedExchange64_rel(
 *Мишень*\
 [вход, выход] Указатель на значение для обмена. Функция присваивает этой переменной `Value` и возвращает предыдущее значение.
 
-*Значений*\
-окне Значение для обмена со значением, `Target`на которое указывает.
+*Значение*\
+окне Значение для обмена со значением, на которое указывает `Target` .
 
 ## <a name="return-value"></a>Возвращаемое значение
 
@@ -156,17 +157,17 @@ __int64 _InterlockedExchange64_rel(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|Header|
+|Intrinsic|Архитектура|Заголовок|
 |---------------|------------------|------------|
-|`_InterlockedExchange`, `_InterlockedExchange8`, `_InterlockedExchange16`|x86, ARM, x64, ARM64|\<> Intrin. h|
-|`_InterlockedExchange64`|ARM, x64, ARM64|\<> Intrin. h|
-|`_InterlockedExchange_acq`, `_InterlockedExchange_nf`, `_InterlockedExchange_rel`, `_InterlockedExchange8_acq`, `_InterlockedExchange8_nf`, `_InterlockedExchange8_rel`, `_InterlockedExchange16_acq`, `_InterlockedExchange16_nf`, `_InterlockedExchange16_rel`, `_InterlockedExchange64_acq`, `_InterlockedExchange64_nf`, `_InterlockedExchange64_rel`,|ARM, ARM64|\<> Intrin. h|
-|`_InterlockedExchange_HLEAcquire`, `_InterlockedExchange_HLERelease`|x86, x64|\<> использованием immintrin. h|
-|`_InterlockedExchange64_HLEAcquire`, `_InterlockedExchange64_HLERelease`|X64|\<> использованием immintrin. h|
+|`_InterlockedExchange`, `_InterlockedExchange8`, `_InterlockedExchange16`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedExchange64`|ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedExchange_acq`, `_InterlockedExchange_nf`, `_InterlockedExchange_rel`, `_InterlockedExchange8_acq`, `_InterlockedExchange8_nf`, `_InterlockedExchange8_rel`, `_InterlockedExchange16_acq`, `_InterlockedExchange16_nf`, `_InterlockedExchange16_rel`, `_InterlockedExchange64_acq`, `_InterlockedExchange64_nf`, `_InterlockedExchange64_rel`,|ARM, ARM64|\<intrin.h>|
+|`_InterlockedExchange_HLEAcquire`, `_InterlockedExchange_HLERelease`|x86, x64|\<immintrin.h>|
+|`_InterlockedExchange64_HLEAcquire`, `_InterlockedExchange64_HLERelease`|X64|\<immintrin.h>|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-`_InterlockedExchange`предоставляет встроенную поддержку компилятора для функции Win32 Windows SDK [интерлоккедексчанже](/windows/win32/api/winnt/nf-winnt-interlockedexchange) .
+`_InterlockedExchange` предоставляет встроенную поддержку компилятора для функции Win32 Windows SDK [интерлоккедексчанже](/windows/win32/api/winnt/nf-winnt-interlockedexchange) .
 
 Существуют несколько вариантов `_InterlockedExchange`, они различаются в зависимости от типов данных, которые включают, и от того, используется ли семантика получения или освобождения конкретного процессора.
 
@@ -180,12 +181,12 @@ __int64 _InterlockedExchange64_rel(
 
 ## <a name="example"></a>Пример
 
-Пример использования `_InterlockedExchange`см. в разделе [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).
+Пример использования см `_InterlockedExchange` . в разделе [_InterlockedDecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).
 
 **Завершение блока, относящегося только к системам Майкрософт**
 
 ## <a name="see-also"></a>См. также
 
 [Встроенные функции компилятора](../intrinsics/compiler-intrinsics.md)\
-[Ключевые слова](../cpp/keywords-cpp.md)\
-[Конфликты с 32-разрядным (x86) компилятором](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
+[Словами](../cpp/keywords-cpp.md)\
+[Конфликтует с компилятором x86](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

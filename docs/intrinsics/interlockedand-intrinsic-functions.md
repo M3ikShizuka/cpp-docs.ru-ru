@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _InterlockedAnd встроенных функций'
 title: Встроенные функции _InterlockedAnd
 ms.date: 09/02/2019
 f1_keywords:
@@ -56,12 +57,12 @@ helpviewer_keywords:
 - _InterlockedAnd8 intrinsic
 - _InterlockedAnd_HLEAcquire intrinsic
 ms.assetid: ad271dc3-42cd-47d0-9f65-30d5cfeb66fc
-ms.openlocfilehash: e22b463a5229de4745f71aaa0240374a5c057508
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: f5e00b997eced482a8adc8881e9a1b6a3231bb72
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217777"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168258"
 ---
 # <a name="_interlockedand-intrinsic-functions"></a>Встроенные функции _InterlockedAnd
 
@@ -172,7 +173,7 @@ __int64 _InterlockedAnd64_rel(
 
 ### <a name="parameters"></a>Параметры
 
-*value*\
+*значений*\
 [вход, выход] Указатель на первый операнд, который должен быть заменен результатом.
 
 *виде*\
@@ -184,19 +185,19 @@ __int64 _InterlockedAnd64_rel(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|Header|
+|Intrinsic|Архитектура|Заголовок|
 |---------------|------------------|------------|
-|`_InterlockedAnd`, `_InterlockedAnd8`, `_InterlockedAnd16`|x86, ARM, x64, ARM64|\<> Intrin. h|
-|`_InterlockedAnd64`|ARM, x64, ARM64|\<> Intrin. h|
-|`_InterlockedAnd_acq`, `_InterlockedAnd_nf`, `_InterlockedAnd_rel`, `_InterlockedAnd8_acq`, `_InterlockedAnd8_nf`, `_InterlockedAnd8_rel`, `_InterlockedAnd16_acq`, `_InterlockedAnd16_nf`, `_InterlockedAnd16_rel`, `_InterlockedAnd64_acq`, `_InterlockedAnd64_nf`, `_InterlockedAnd64_rel`|ARM, ARM64|\<> Intrin. h|
-|`_InterlockedAnd_np`, `_InterlockedAnd8_np`, `_InterlockedAnd16_np`, `_InterlockedAnd64_np`|X64|\<> Intrin. h|
-|`_InterlockedAnd_HLEAcquire`, `_InterlockedAnd_HLERelease`, `_InterlockedAnd64_HLEAcquire`, `_InterlockedAnd64_HLERelease`|x86, x64|\<> использованием immintrin. h|
+|`_InterlockedAnd`, `_InterlockedAnd8`, `_InterlockedAnd16`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedAnd64`|ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedAnd_acq`, `_InterlockedAnd_nf`, `_InterlockedAnd_rel`, `_InterlockedAnd8_acq`, `_InterlockedAnd8_nf`, `_InterlockedAnd8_rel`, `_InterlockedAnd16_acq`, `_InterlockedAnd16_nf`, `_InterlockedAnd16_rel`, `_InterlockedAnd64_acq`, `_InterlockedAnd64_nf`, `_InterlockedAnd64_rel`|ARM, ARM64|\<intrin.h>|
+|`_InterlockedAnd_np`, `_InterlockedAnd8_np`, `_InterlockedAnd16_np`, `_InterlockedAnd64_np`|X64|\<intrin.h>|
+|`_InterlockedAnd_HLEAcquire`, `_InterlockedAnd_HLERelease`, `_InterlockedAnd64_HLEAcquire`, `_InterlockedAnd64_HLERelease`|x86, x64|\<immintrin.h>|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Число в имени каждой функции указывает разрядность аргументов.
 
-На платформах ARM и ARM64 используйте встроенные функции с `_acq` суффиксами и `_rel` для семантики получения и освобождения, например в начале и в конце критической секции. Встроенные функции с суффиксом `_nf` («без границ») не действуют как барьер памяти.
+На платформах ARM и ARM64 используйте встроенные функции с `_acq` `_rel` суффиксами и для семантики получения и освобождения, например в начале и в конце критической секции. Встроенные функции с суффиксом `_nf` («без границ») не действуют как барьер памяти.
 
 Встроенные функции с суффиксом `_np` («нет упреждающей выборки") запрещают возможную вставку компилятором операции упреждающей выборки.
 
@@ -231,4 +232,4 @@ int main()
 ## <a name="see-also"></a>См. также
 
 [Встроенные функции компилятора](../intrinsics/compiler-intrinsics.md)\
-[Конфликты с 32-разрядным (x86) компилятором](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
+[Конфликтует с компилятором x86](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

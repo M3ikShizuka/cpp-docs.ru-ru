@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr'
 title: _strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr
 ms.date: 4/2/2020
 api_name:
@@ -70,12 +71,12 @@ helpviewer_keywords:
 - _tcsupr function
 - strings [C++], converting case
 ms.assetid: caac8f16-c233-41b6-91ce-575ec7061b77
-ms.openlocfilehash: c30aa9e1a73ba51931caff726837841f76922139
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a7de813f13d4a79a394ae369b4385e8e2c6e4e5a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912335"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97117176"
 ---
 # <a name="_strupr-_strupr_l-_mbsupr-_mbsupr_l-_wcsupr_l-_wcsupr"></a>_strupr, _strupr_l, _mbsupr, _mbsupr_l, _wcsupr_l, _wcsupr
 
@@ -149,11 +150,11 @@ unsigned char *_mbsupr_l(
 
 Возвращает указатель на измененную строку. Так как изменение осуществляется на месте, возвращенный указатель совпадает с указателем, переданным в качестве входного аргумента. Нет зарезервированных возвращаемых значений для указания ошибки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функция **_strupr** преобразует, на месте, каждую строчную букву в *str* в верхний регистр. Преобразование определяется параметром категории **LC_CTYPE** языкового стандарта. Другие символы не изменяются. Дополнительные сведения о **LC_CTYPE**см. в разделе [setlocale](setlocale-wsetlocale.md). Версии этих функций без суффикса **_l** используют текущий языковой стандарт. версии с суффиксом **_l** идентичны, за исключением того, что они используют переданный языковой стандарт. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
+Функция **_strupr** преобразует, на месте, каждую строчную букву в *str* в верхний регистр. Преобразование определяется параметром категории **LC_CTYPE** языкового стандарта. Другие символы не изменяются. Дополнительные сведения о **LC_CTYPE** см. в разделе [setlocale](setlocale-wsetlocale.md). Версии этих функций без суффикса **_l** используют текущий языковой стандарт. версии с суффиксом **_l** идентичны, за исключением того, что они используют переданный языковой стандарт. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
-**_wcsupr** и **_mbsupr** — это версии **_strupr**для расширенных символов и многобайтовых символов. Аргумент и возвращаемое значение **_wcsupr** являются строками расширенных символов; **_mbsupr** являются строками многобайтовых символов. В остальном эти три функции ведут себя идентично.
+**_wcsupr** и **_mbsupr** — это версии **_strupr** для расширенных символов и многобайтовых символов. Аргумент и возвращаемое значение **_wcsupr** являются строками расширенных символов; **_mbsupr** являются строками многобайтовых символов. В остальном эти три функции ведут себя идентично.
 
 Если *str* является пустым указателем, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md) . Если выполнение может быть продолжено, эти функции возвращают исходную строку и присвойте параметру " **еинвал**" значение " **No** @ @".
 
@@ -184,6 +185,6 @@ unsigned char *_mbsupr_l(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Locale](../../c-runtime-library/locale.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [_strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l](strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md)<br/>

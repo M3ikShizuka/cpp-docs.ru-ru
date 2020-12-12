@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __invlpg'
 title: __invlpg
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - invlpg instruction
 - __invlpg intrinsic
 ms.assetid: 3fb3633f-d9b7-4ec0-9e7f-a7f2fa8ed794
-ms.openlocfilehash: ba8bd81498f805992336b0dc4163fe18fa157a2c
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 16d8f51c8bf36ea94be7b1325ee5bed256c29693
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221895"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167907"
 ---
 # <a name="__invlpg"></a>__invlpg
 
 **Блок, относящийся только к системам Microsoft**
 
-Создает инструкцию `invlpg` x86, которая делает недействительным буфер TLB преобразования для страницы, связанной с памятью, на которую указывает *адрес*.
+Создает `invlpg` инструкцию x86, которая делает недействительным БУФЕР TLB преобразования для страницы, связанной с памятью, на которую указывает *адрес*.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,13 +37,13 @@ void __invlpg(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__invlpg`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Внутренняя функция `__invlpg` создает привилегированную инструкцию и доступна только в режиме ядра с уровнем привилегий (CPL), равным 0.
 

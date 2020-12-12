@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _RTC_GetErrDesc'
 title: _RTC_GetErrDesc
 ms.date: 11/04/2016
 api_name:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - _RTC_GetErrDesc function
 - RTC_GetErrDesc function
 ms.assetid: 7994ec2b-5488-4fd4-806d-a166c9a9f927
-ms.openlocfilehash: 7174e9242b77a904df817886df4f8c763e3e0b2c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 5e9beccec5e13d6c2c00e3edaefec695a8e16737
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70949058"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168726"
 ---
 # <a name="_rtc_geterrdesc"></a>_RTC_GetErrDesc
 
@@ -52,7 +53,7 @@ const char * _RTC_GetErrDesc(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Строка символов, которая содержит краткое описание одного из типов ошибок, обнаруженного системой проверки на ошибки во время выполнения. Если значение параметра Error меньше нуля или больше или равно значению, возвращенному функцией [_RTC_NumErrors](rtc-numerrors.md), **_RTC_GetErrDesc** возвращает **значение NULL**.
+Строка символов, которая содержит краткое описание одного из типов ошибок, обнаруженного системой проверки на ошибки во время выполнения. Если ошибка меньше нуля или больше или равна значению, возвращенному [_RTC_NumErrors](rtc-numerrors.md), **_RTC_GetErrDesc** возвращает **значение NULL**.
 
 ## <a name="requirements"></a>Требования
 
@@ -66,7 +67,7 @@ const char * _RTC_GetErrDesc(
 
 Все версии [библиотек времени выполнения языка C](../../c-runtime-library/crt-library-features.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [_RTC_NumErrors](rtc-numerrors.md)<br/>
 [Проверка ошибок во время выполнения](../../c-runtime-library/run-time-error-checking.md)<br/>

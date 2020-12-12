@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CBitmap Class'
 title: Класс CBitmap
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - CBitmap [MFC], SetBitmapBits
 - CBitmap [MFC], SetBitmapDimension
 ms.assetid: 3980616a-c59d-495a-86e6-62bd3889c84c
-ms.openlocfilehash: 8c19a54584390312cfd1657e88898cdb044179d0
-ms.sourcegitcommit: d77159732a8e782b2a1b7abea552065f2b6f61c1
+ms.openlocfilehash: e3d54a87cb53757f4751558b77e9c0c187484410
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93344583"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97122724"
 ---
 # <a name="cbitmap-class"></a>Класс CBitmap
 
@@ -51,7 +52,7 @@ ms.locfileid: "93344583"
 class CBitmap : public CGdiObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -97,7 +98,7 @@ class CBitmap : public CGdiObject
 
 `CBitmap`
 
-## <a name="requirements"></a>Requirements (Требования)
+## <a name="requirements"></a>Требования
 
 **Заголовок:** afxwin.h
 
@@ -542,7 +543,7 @@ CSize SetBitmapDimension(
 
 GDI не использует эти значения, кроме возврата их при вызове приложением функции члена [жетбитмапдименсион](#getbitmapdimension) .
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Образец MDI-формы MFC](../../overview/visual-cpp-samples.md)<br/>
 [Класс Кгдиобжект](../../mfc/reference/cgdiobject-class.md)<br/>

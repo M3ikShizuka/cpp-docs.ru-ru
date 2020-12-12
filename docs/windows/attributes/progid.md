@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: ProgID'
 title: ProgID (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - progid attribute
 ms.assetid: afcf559c-e432-481f-aa9a-bd3bb72c02a8
-ms.openlocfilehash: 136c651ec92c78339c2f701804a6a409523dd30f
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ed829d1ec20ae06fae8604e35ccc260013f59e3d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840002"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114940"
 ---
 # <a name="progid"></a>progid
 
@@ -30,7 +31,7 @@ ms.locfileid: "88840002"
 
 Идентификаторы ProgID представляют собой удобочитаемую для человека версию идентификатора класса (CLSID), используемую для идентификации объектов COM/ActiveX.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `progid`Атрибут C++ позволяет указать ProgID для COM-объекта. Идентификатор ProgID имеет форму *name1. имя2. Version*. Если не указать *версию* для ProgID, используется версия по умолчанию 1. Если не указать *name1. имя2*, по умолчанию используется имя *className. ClassName*. Если параметр не указан `progid` и задано `vi_progid` значение, *name1. имя2* берется из `vi_progid` и добавляется версия (следующий последовательный номер).
 

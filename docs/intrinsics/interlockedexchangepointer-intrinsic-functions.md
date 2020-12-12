@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _InterlockedExchangePointer встроенных функций'
 title: Встроенные функции _InterlockedExchangePointer
 ms.date: 09/02/2019
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - InterlockedExchangePointer_acq intrinsic
 - InterlockedExchangePointer intrinsic
 ms.assetid: 0eaca0b0-d79e-406b-892d-b3b462c50bbb
-ms.openlocfilehash: 1402dcf5279658c1364b59a324d988129bc841d8
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 0bb6080b9bca38c67b12b28976b49eb84f74e6c7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217628"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97167998"
 ---
 # <a name="_interlockedexchangepointer-intrinsic-functions"></a>Встроенные функции _InterlockedExchangePointer
 
@@ -67,7 +68,7 @@ void * _InterlockedExchangePointer_HLERelease(
 *Мишень*\
 [вход, выход] Указатель на указатель на значение для обмена. Функция устанавливает значение в *значение* и возвращает свое предыдущее значение.
 
-*Значений*\
+*Значение*\
 окне Значение для обмена со значением, на которое указывает *целевой объект*.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -76,15 +77,15 @@ void * _InterlockedExchangePointer_HLERelease(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|Header|
+|Intrinsic|Архитектура|Заголовок|
 |---------------|------------------|------------|
-|`_InterlockedExchangePointer`|x86, ARM, x64, ARM64|\<> Intrin. h|
-|`_InterlockedExchangePointer_acq`, `_InterlockedExchangePointer_rel`, `_InterlockedExchangePointer_nf`|ARM, ARM64|\<> Intrin. h|
-|`_InterlockedExchangePointer_HLEAcquire`, `_InterlockedExchangePointer_HLERelease`|X64|\<> использованием immintrin. h|
+|`_InterlockedExchangePointer`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedExchangePointer_acq`, `_InterlockedExchangePointer_rel`, `_InterlockedExchangePointer_nf`|ARM, ARM64|\<intrin.h>|
+|`_InterlockedExchangePointer_HLEAcquire`, `_InterlockedExchangePointer_HLERelease`|X64|\<immintrin.h>|
 
 В архитектуре x86, `_InterlockedExchangePointer` есть макрос, вызывающий `_InterlockedExchange`.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 В 64-разрядной системе параметры имеют значение 64 бит и должны быть согласованы по отношению к 64-разрядным границам. В противном случае произойдет сбой функции. Для 32-разрядной системы параметры 32-разрядные и должны быть выровнены по 32-разрядням границам. Дополнительные сведения см. в разделе [выровняйте](../cpp/align-cpp.md).
 
@@ -99,4 +100,4 @@ void * _InterlockedExchangePointer_HLERelease(
 ## <a name="see-also"></a>См. также
 
 [Встроенные функции компилятора](../intrinsics/compiler-intrinsics.md)\
-[Конфликты с 32-разрядным (x86) компилятором](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
+[Конфликтует с компилятором x86](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

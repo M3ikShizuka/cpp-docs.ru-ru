@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о доступе к элементу управления "календарь за встроенный месяц"
 title: Доступ к встроенному элементу управления "Календарь на месяц"
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - month calendar controls [MFC], changing the font
 - DateTimePicker control [MFC]
 ms.assetid: 355e97ed-cf81-4df3-a2f8-9ddbbde93227
-ms.openlocfilehash: 66a9ef7fd49ea81ddac4779aa6d1c3f12fbe4c55
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 35c715cdd84bd7921883db530c8cf36e8e5cf07e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617374"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169454"
 ---
 # <a name="accessing-the-embedded-month-calendar-control"></a>Доступ к встроенному элементу управления "Календарь на месяц"
 
@@ -27,7 +28,7 @@ ms.locfileid: "84617374"
 
 Иными словами, когда пользователь запрашивает отображение элемента управления "месячный календарь", создается элемент управления "Календарь на месяц" (перед уведомлением **DTN_DROPDOWN** ). Элемент управления уничтожается (после уведомления **DTN_CLOSEUP** ) при закрытии пользователем. Это означает, что любые изменяемые атрибуты перед отображением внедренного элемента управления теряются при закрытии внедренного элемента управления.
 
-В следующем примере показана эта процедура с помощью обработчика для **DTN_DROPDOWN** уведомления. Код изменяет цвет фона элемента управления "Календарь на месяц" с помощью вызова [сетмонскалколор](reference/cdatetimectrl-class.md#setmonthcalcolor)на серый. Код выглядит следующим образом:
+В следующем примере показана эта процедура с помощью обработчика для **DTN_DROPDOWN** уведомления. Код изменяет цвет фона элемента управления "Календарь на месяц" с помощью вызова [сетмонскалколор](reference/cdatetimectrl-class.md#setmonthcalcolor)на серый. Вот ее код:
 
 [!code-cpp[NVC_MFCControlLadenDialog#5](codesnippet/cpp/accessing-the-embedded-month-calendar-control_1.cpp)]
 

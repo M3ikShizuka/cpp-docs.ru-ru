@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _RTC_SetErrorType'
 title: _RTC_SetErrorType
 ms.date: 11/04/2016
 api_name:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - RTC_SetErrorType function
 - _RTC_SetErrorType function
 ms.assetid: f5f99be7-d357-4b11-b8f5-ddd3428f2b06
-ms.openlocfilehash: 6c1eff5920931aa3b72bf3dbc6232c371828b16a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8b0b28eaf97a27dbfcf4dcb414c9a17f03df7f9e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948927"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168700"
 ---
 # <a name="_rtc_seterrortype"></a>_RTC_SetErrorType
 
@@ -54,13 +55,13 @@ int _RTC_SetErrorType(
 *ErrType*<br/>
 Значение, присваиваемое *errnum*. Например, можно использовать **_CRT_ERROR**. Если в качестве обработчика ошибок используется **_CrtDbgReport** , *ErrType* может быть только одним из символов, определенных в [_CrtSetReportMode](crtsetreportmode.md). Если у вас есть собственный обработчик ошибок ([_RTC_SetErrorFunc](rtc-seterrorfunc.md)), у вас может быть столько же *ErrType*, сколько *errnum*.
 
-*ERRTYPE* _RTC_ERRTYPE_IGNORE имеет специальное значение для **_CrtSetReportMode**; ошибка игнорируется.
+*ErrType* _RTC_ERRTYPE_IGNORE имеет особое значение для **_CrtSetReportMode**; ошибка игнорируется.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Предыдущее *значение типа ошибки.*
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 По умолчанию для всех ошибок задается значение *ErrType* = 1, которое соответствует **_CRT_ERROR**. Дополнительные сведения о типах ошибок по умолчанию, таких как **_CRT_ERROR**, см. в статье об [_CrtDbgReport](crtdbgreport-crtdbgreportw.md).
 
@@ -78,7 +79,7 @@ int _RTC_SetErrorType(
 
 Все версии [библиотек времени выполнения языка C](../../c-runtime-library/crt-library-features.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [_RTC_GetErrDesc](rtc-geterrdesc.md)<br/>
 [Проверка ошибок во время выполнения](../../c-runtime-library/run-time-error-checking.md)<br/>

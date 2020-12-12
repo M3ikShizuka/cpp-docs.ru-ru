@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _interlockedbittestandreset встроенных функций'
 title: встроенные функции _interlockedbittestandreset
 ms.date: 09/02/2019
 f1_keywords:
@@ -21,18 +22,18 @@ helpviewer_keywords:
 - _interlockedbittestandreset64 intrinsic
 - _interlockedbittestandreset intrinsic
 ms.assetid: 9bbb1442-f2e9-4dc2-b0da-97f3de3493b9
-ms.openlocfilehash: 419d7f800d603a8beca5c8ccb0f9c8f8b3bfcfdb
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 10bd636fb25d0f4025530f0bd7a8c3f877cc1556
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222068"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168219"
 ---
 # <a name="_interlockedbittestandreset-intrinsic-functions"></a>встроенные функции _interlockedbittestandreset
 
 **Блок, относящийся только к системам Microsoft**
 
-Формирует инструкцию для установки бита `b` адреса `a` равным нулю и возвращает его исходное значение.
+Формирует инструкцию для установки бита `b` адреса равным `a` нулю и возвращает его исходное значение.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -92,7 +93,7 @@ unsigned char _interlockedbittestandreset64_HLERelease(
 *конкретного*\
 окне Указатель на память для проверки.
 
-*&* \
+*&*\
 окне Битовое расположение для проверки.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -101,16 +102,16 @@ unsigned char _interlockedbittestandreset64_HLERelease(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|Header|
+|Intrinsic|Архитектура|Заголовок|
 |---------------|------------------|------------|
-|`_interlockedbittestandreset`|x86, ARM, x64, ARM64|\<> Intrin. h|
-|`_interlockedbittestandreset_acq`, `_interlockedbittestandreset_nf`, `_interlockedbittestandreset_rel`|ARM, ARM64|\<> Intrin. h|
-|`_interlockedbittestandreset64_acq`, `_interlockedbittestandreset64_nf`, `_interlockedbittestandreset64_rel`|ARM64|\<> Intrin. h|
-|`_interlockedbittestandreset_HLEAcquire`, `_interlockedbittestandreset_HLERelease`|x86, x64|\<> использованием immintrin. h|
-|`_interlockedbittestandreset64`|x64, ARM64|\<> Intrin. h|
-|`_interlockedbittestandreset64_HLEAcquire`, `_interlockedbittestandreset64_HLERelease`|X64|\<> использованием immintrin. h|
+|`_interlockedbittestandreset`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_interlockedbittestandreset_acq`, `_interlockedbittestandreset_nf`, `_interlockedbittestandreset_rel`|ARM, ARM64|\<intrin.h>|
+|`_interlockedbittestandreset64_acq`, `_interlockedbittestandreset64_nf`, `_interlockedbittestandreset64_rel`|ARM64|\<intrin.h>|
+|`_interlockedbittestandreset_HLEAcquire`, `_interlockedbittestandreset_HLERelease`|x86, x64|\<immintrin.h>|
+|`_interlockedbittestandreset64`|x64, ARM64|\<intrin.h>|
+|`_interlockedbittestandreset64_HLEAcquire`, `_interlockedbittestandreset64_HLERelease`|X64|\<immintrin.h>|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 На процессорах x86 и x64 эти встроенные функции используют `lock btr` инструкцию, которая считывает и устанавливает в атомарной операции указанный бит, равный нулю.
 
@@ -125,4 +126,4 @@ unsigned char _interlockedbittestandreset64_HLERelease(
 ## <a name="see-also"></a>См. также
 
 [Встроенные функции компилятора](../intrinsics/compiler-intrinsics.md)\
-[Конфликты с 32-разрядным (x86) компилятором](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
+[Конфликтует с компилятором x86](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

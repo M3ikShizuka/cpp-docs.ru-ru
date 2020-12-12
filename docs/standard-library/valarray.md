@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: &lt; valarray&gt;'
 title: '&lt;valarray&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - valarray header
 ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
-ms.openlocfilehash: 9d2f3097637b3708c16f3048a34dd32b7f6fd80b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 7cc902a60a68f9cb667530dac76812d4a8e082be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840145"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168778"
 ---
 # <a name="ltvalarraygt"></a>&lt;valarray&gt;
 
@@ -26,11 +27,11 @@ ms.locfileid: "88840145"
 > [!NOTE]
 > \<valarray>Библиотека использует инструкцию "#include <initializer_list>".
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эти шаблоны и функции классов допускаются необычные широты в интересах повышения производительности. В частности, любой возвращаемый функцией тип `valarray<T1>` может возвращать объект другого типа T2. В этом случае любая функция, принимающая один или несколько аргументов типа, `valarray<T2>` должна иметь перегрузки, принимающие произвольные сочетания этих аргументов, каждый из которых заменен аргументом типа T2.
 
-## <a name="members"></a>Элементы
+## <a name="members"></a>Члены
 
 ### <a name="functions"></a>Функции
 
@@ -44,7 +45,7 @@ ms.locfileid: "88840145"
 |[начале](../standard-library/valarray-functions.md#begin)||
 |[COS](../standard-library/valarray-functions.md#cos)|Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны косинусу элементов входного valarray.|
 |[cosh](../standard-library/valarray-functions.md#cosh)|Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны гиперболическому косинусу элементов входного valarray.|
-|[конце](../standard-library/valarray-functions.md#end)||
+|[end](../standard-library/valarray-functions.md#end)||
 |[exp](../standard-library/valarray-functions.md#exp)|Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны натуральной экспоненте элементов входного valarray.|
 |[Журналь](../standard-library/valarray-functions.md#log)|Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны натуральному логарифму элементов входного valarray.|
 |[LOG10](../standard-library/valarray-functions.md#log10)|Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны десятичному логарифму элементов входного valarray.|

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: _variant_t классе'
 title: Класс _variant_t
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - VARIANT object
 - VARIANT object [C++], COM encapsulation
 ms.assetid: 6a3cbd4e-0ae8-425e-b4cf-ca0df894c93f
-ms.openlocfilehash: 3873452afca0159cba815a2cb290ebb6e62aff07
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e720d78e6f7fd22fc369d4b39804260892e235c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842563"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116617"
 ---
 # <a name="_variant_t-class"></a>Класс _variant_t
 
@@ -34,7 +35,7 @@ ms.locfileid: "88842563"
 | Имя | Описание |
 |--|--|
 | [Attach](../cpp/variant-t-attach.md) | Присоединяет `VARIANT` объект к объекту **_variant_t** . |
-| [Clear](../cpp/variant-t-clear.md) | Очищает инкапсулированный `VARIANT` объект. |
+| [Очистить](../cpp/variant-t-clear.md) | Очищает инкапсулированный `VARIANT` объект. |
 | [ChangeType](../cpp/variant-t-changetype.md) | Изменяет тип объекта **_variant_t** на указанный `VARTYPE` . |
 | [Отсоединить](../cpp/variant-t-detach.md) | Отсоединяет инкапсулированный `VARIANT` объект от этого **_variant_t** объекта. |
 | [SetString](../cpp/variant-t-setstring.md) | Присваивает строку этому объекту **_variant_t** . |

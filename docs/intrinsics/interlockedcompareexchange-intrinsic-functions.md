@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _InterlockedCompareExchange встроенных функций'
 title: Встроенные функции _InterlockedCompareExchange
 ms.date: 09/02/2019
 f1_keywords:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - InterlockedCompareExchange64_rel intrinsic
 - _InterlockedCompareExchange64_rel intrinsic
 ms.assetid: c3ad79c0-a523-4930-a3a4-69a65d7d5c81
-ms.openlocfilehash: 26dff1c902fff495d5efe45d8da10b1c5da72878
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 10788b5b4e8c8f7ee139dd8810149a49e8978f3c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222054"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168193"
 ---
 # <a name="_interlockedcompareexchange-intrinsic-functions"></a>Встроенные функции _InterlockedCompareExchange
 
@@ -181,7 +182,7 @@ __int64 _InterlockedCompareExchange64_rel(
 *Местоназначение*\
 [вход, выход] Указатель на целевое значение. Знак игнорируется
 
-*Сообщения*\
+*Exchange*\
 окне Значение обмена. Знак игнорируется
 
 *Сравниваемый операнд*\
@@ -193,22 +194,22 @@ __int64 _InterlockedCompareExchange64_rel(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|Header|
+|Intrinsic|Архитектура|Заголовок|
 |---------------|------------------|------------|
-|`_InterlockedCompareExchange`, `_InterlockedCompareExchange8`, `_InterlockedCompareExchange16`, `_InterlockedCompareExchange64`|x86, ARM, x64, ARM64|\<> Intrin. h|
-|`_InterlockedCompareExchange_acq`, `_InterlockedCompareExchange_rel`, `_InterlockedCompareExchange8_acq`, `_InterlockedCompareExchange8_nf`, `_InterlockedCompareExchange8_rel`,`_InterlockedCompareExchange16_acq`, `_InterlockedCompareExchange16_nf`, `_InterlockedCompareExchange16_rel`, `_InterlockedCompareExchange64_acq`, `_InterlockedCompareExchange64_nf`, `_InterlockedCompareExchange64_rel`,|ARM, ARM64|\<> Intrin. h|
-|`_InterlockedCompareExchange_np`, `_InterlockedCompareExchange16_np`, `_InterlockedCompareExchange64_np`|X64|\<> Intrin. h|
-|`_InterlockedCompareExchange_HLEAcquire`, `_InterlockedCompareExchange_HLERelease`, `_InterlockedCompareExchange64_HLEAcquire`, `_InterlockedCompareExchange64_HLERelease`|x86, x64|\<> использованием immintrin. h|
+|`_InterlockedCompareExchange`, `_InterlockedCompareExchange8`, `_InterlockedCompareExchange16`, `_InterlockedCompareExchange64`|x86, ARM, x64, ARM64|\<intrin.h>|
+|`_InterlockedCompareExchange_acq`, `_InterlockedCompareExchange_rel`, `_InterlockedCompareExchange8_acq`, `_InterlockedCompareExchange8_nf`, `_InterlockedCompareExchange8_rel`,`_InterlockedCompareExchange16_acq`, `_InterlockedCompareExchange16_nf`, `_InterlockedCompareExchange16_rel`, `_InterlockedCompareExchange64_acq`, `_InterlockedCompareExchange64_nf`, `_InterlockedCompareExchange64_rel`,|ARM, ARM64|\<intrin.h>|
+|`_InterlockedCompareExchange_np`, `_InterlockedCompareExchange16_np`, `_InterlockedCompareExchange64_np`|X64|\<intrin.h>|
+|`_InterlockedCompareExchange_HLEAcquire`, `_InterlockedCompareExchange_HLERelease`, `_InterlockedCompareExchange64_HLEAcquire`, `_InterlockedCompareExchange64_HLERelease`|x86, x64|\<immintrin.h>|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-`_InterlockedCompareExchange`выполняет атомарное сравнение `Destination` значения `Comparand` со значением. Если значение `Destination` равно значению `Comparand`, значение `Exchange` сохранится по адресу, указанному `Destination`. В противном случае не выполняет никаких операций.
+`_InterlockedCompareExchange` выполняет атомарное сравнение `Destination` значения со `Comparand` значением. Если значение `Destination` равно значению `Comparand`, значение `Exchange` сохранится по адресу, указанному `Destination`. В противном случае не выполняет никаких операций.
 
-`_InterlockedCompareExchange`предоставляет встроенную поддержку компилятора для функции Win32 Windows SDK [интерлоккедкомпариксчанже](/windows/win32/api/winnt/nf-winnt-interlockedcompareexchange) .
+`_InterlockedCompareExchange` предоставляет встроенную поддержку компилятора для функции Win32 Windows SDK [интерлоккедкомпариксчанже](/windows/win32/api/winnt/nf-winnt-interlockedcompareexchange) .
 
-Существует несколько вариаций в `_InterlockedCompareExchange` зависимости от типов данных, которые они используют, и от того, используется ли семантика получения или освобождения конкретного процессора.
+Существует несколько вариаций в зависимости от `_InterlockedCompareExchange` типов данных, которые они используют, и от того, используется ли семантика получения или освобождения конкретного процессора.
 
-Хотя функция работает с длинными целочисленными значениями `_InterlockedCompareExchange8` , работает с 8-разрядными целочисленными значениями, `_InterlockedCompareExchange16` работает с короткими `_InterlockedCompareExchange64` целочисленными значениями и работает с 64-разрядными целыми значениями. `_InterlockedCompareExchange`
+Хотя `_InterlockedCompareExchange` функция работает с длинными целочисленными значениями, `_InterlockedCompareExchange8` работает с 8-разрядными целочисленными значениями, `_InterlockedCompareExchange16` работает с короткими целочисленными значениями и `_InterlockedCompareExchange64` работает с 64-разрядными целыми значениями.
 
 На платформах ARM используются встроенные функции с суффиксами `_acq` и `_rel` для получения и освобождения семантики, например, в начале и конце критической секции. Встроенные функции ARM с `_nf` суффиксом ("без ограждения") не действуют как барьер памяти.
 
@@ -437,5 +438,5 @@ int main(
 [_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)\
 [Встроенные функции _InterlockedCompareExchangePointer](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)\
 [Встроенные функции компилятора](../intrinsics/compiler-intrinsics.md)\
-[Ключевые слова](../cpp/keywords-cpp.md)\
-[Конфликты с 32-разрядным (x86) компилятором](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
+[Словами](../cpp/keywords-cpp.md)\
+[Конфликтует с компилятором x86](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

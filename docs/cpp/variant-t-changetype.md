@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: _variant_t:: ChangeType'
 title: _variant_t::ChangeType
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - VARIANT object [C++], ChangeType
 - VARIANT object
 ms.assetid: 829d2eeb-3338-4a88-9dce-0ca145f47aac
-ms.openlocfilehash: c2283158856a6781ab2e12c51f4e2ad0e4f1d531
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 32ce43f1d9afb388c97e5271927113c71d31bb92
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81750732"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97116630"
 ---
 # <a name="_variant_tchangetype"></a>_variant_t::ChangeType
 
-**Microsoft Специфический**
+**Блок, относящийся только к системам Microsoft**
 
-Изменяет тип `_variant_t` объекта на `VARTYPE`указанный .
+Изменяет тип `_variant_t` объекта на указанный `VARTYPE` .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -33,18 +34,18 @@ void ChangeType(
 
 #### <a name="parameters"></a>Параметры
 
-*вартип*<br/>
-Для `VARTYPE` этого `_variant_t` объекта.
+*VarType*<br/>
+`VARTYPE`Для этого `_variant_t` объекта.
 
-*Psrc*<br/>
-Указатель на объект `_variant_t`, который необходимо преобразовать. Если это значение NULL, конверсия выполняется на месте.
+*pSrc*<br/>
+Указатель на объект `_variant_t`, который необходимо преобразовать. Если это значение равно NULL, преобразование выполняется на месте.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Эта функция члена `_variant_t` преобразует объект `VARTYPE`в указанный . Если *pSrc* null, преобразование выполняется `_variant_t` на месте, в противном случае этот объект скопирован из *pSrc,* а затем преобразуется.
+Эта функция-член преобразует `_variant_t` объект в указанный `VARTYPE` . Если *pSrc* имеет значение null, преобразование выполняется на месте, в противном случае `_variant_t` объект копируется из *pSrc* и затем преобразуется.
 
-**END Microsoft Специфический**
+**Завершение блока, относящегося только к системам Майкрософт**
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-[класс _variant_t](../cpp/variant-t-class.md)
+[Класс _variant_t](../cpp/variant-t-class.md)

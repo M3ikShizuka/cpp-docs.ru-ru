@@ -1,21 +1,22 @@
 ---
+description: 'Дополнительные сведения: структуры данных синхронизации'
 title: Структуры данных синхронизации
 ms.date: 11/04/2016
 helpviewer_keywords:
 - synchronization data structures
 ms.assetid: d612757d-e4b7-4019-a627-f853af085b8b
-ms.openlocfilehash: 244aaac9bd40c83d0bbec3c360bdf7351da54baf
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d5e2e9e6d79f1e71a8f18f98d69fb794597d0ccb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231667"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169350"
 ---
 # <a name="synchronization-data-structures"></a>Структуры данных синхронизации
 
 Среда выполнения с параллелизмом предоставляет несколько структур данных, которые позволяют синхронизировать доступ к общим данным из нескольких потоков. Эти структуры данных полезны при нечастом изменении общих данных. Объект синхронизации, например критический раздел, заставляет другие потоки ожидать, пока общий ресурс не станет доступным. Таким образом, если вы используете такой объект для синхронизации доступа к часто используемым данным, можно потерять масштабируемость в приложении. [Библиотека Parallel Patterns (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) предоставляет класс [Concurrency:: combinable](../../parallel/concrt/reference/combinable-class.md) , который позволяет совместно использовать ресурс в нескольких потоках или задачах без необходимости синхронизации. Дополнительные сведения о `combinable` классе см. в разделе [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md).
 
-## <a name="sections"></a><a name="top"></a>Священ
+## <a name="sections"></a><a name="top"></a> Священ
 
 В этом разделе подробно описаны следующие типы асинхронных блоков сообщений:
 
@@ -27,7 +28,7 @@ ms.locfileid: "87231667"
 
 - [event](#event)
 
-## <a name="critical_section"></a><a name="critical_section"></a>critical_section
+## <a name="critical_section"></a><a name="critical_section"></a> critical_section
 
 Класс [Concurrency:: critical_section](../../parallel/concrt/reference/critical-section-class.md) представляет объект совместного взаимного исключения, который передает другие задачи вместо того, чтобы прерывать их. Критические разделы полезны, когда нескольким потокам требуется эксклюзивный доступ на чтение и запись к общим данным.
 
@@ -45,7 +46,7 @@ ms.locfileid: "87231667"
 
 [[Top](#top)]
 
-## <a name="reader_writer_lock"></a><a name="reader_writer_lock"></a>reader_writer_lock
+## <a name="reader_writer_lock"></a><a name="reader_writer_lock"></a> reader_writer_lock
 
 Класс [Concurrency:: reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) предоставляет потокобезопасные операции чтения и записи для общих данных. Используйте блокировки потоков чтения/записи, когда нескольким потокам требуется одновременный доступ на чтение к общему ресурсу, но редко осуществляется запись в этот общий ресурс. Этот класс предоставляет только одному потоку доступ на запись к объекту в любое время.
 
@@ -74,7 +75,7 @@ ms.locfileid: "87231667"
 
 [[Top](#top)]
 
-## <a name="scoped_lock-and-scoped_lock_read"></a><a name="scoped_lock"></a>scoped_lock и scoped_lock_read
+## <a name="scoped_lock-and-scoped_lock_read"></a><a name="scoped_lock"></a> scoped_lock и scoped_lock_read
 
 `critical_section`Классы и `reader_writer_lock` предоставляют вложенные вспомогательные классы, которые упрощают работу с взаимоисключающими объектами. Эти вспомогательные классы известны как *блокировки с областью действия*.
 

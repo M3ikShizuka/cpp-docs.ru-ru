@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: класс кортежа'
 title: Класс tuple
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - tuple class
 ms.assetid: c38749be-ae4d-41f3-98ea-6aa3250de9a3
-ms.openlocfilehash: 04fd3ec6ce3363d118174025823279a80dd00f0b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9beb3f263fa516d7d4096c404c135deffde6fc31
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215547"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169026"
 ---
 # <a name="tuple-class"></a>Класс tuple
 
@@ -44,7 +45,7 @@ class tuple {
 *КОД*\
 Тип N-го элемента кортежа.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса описывает объект, в котором хранятся N объектов типов `T1` , `T2` ,...,, `TN` соответственно, где `0 <= N <= Nmax` . Экстент экземпляра кортежа `tuple<T1, T2, ..., TN>` — это число `N` аргументов шаблона. Индекс аргумента шаблона `Ti` и соответствующего сохраненного значения этого типа — `i - 1` . Таким образом, при нумерации типов от 1 до N в этой документации соответствующие значения индекса находятся в диапазоне от 0 до N – 1.
 
@@ -116,7 +117,7 @@ The tuples in the vector are
 ( 3, 0.033, three ).
 ```
 
-## <a name="operator"></a><a name="op_eq"></a>Оператор =
+## <a name="operator"></a><a name="op_eq"></a> Оператор =
 
 Назначает объект `tuple`.
 
@@ -143,7 +144,7 @@ template <class U1, class U2>
 *Правильно*\
 Кортеж, из которого выполняется копирование.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первые два оператора члена применяют элементы *right* к соответствующим элементам **`*this`** . Третий оператор члена присваивает `right.first` элементу с индексом 0, а — **`*this`** `right.second` элементу с индексом 1. Все три оператора члена возвращают **`*this`** .
 
@@ -198,7 +199,7 @@ int main()
 x 4
 ```
 
-## <a name="swap"></a><a name="tuple_swap"></a>позиции
+## <a name="swap"></a><a name="tuple_swap"></a> позиции
 
 Обмен элементами между двумя кортежами.
 
@@ -210,16 +211,16 @@ template <class... Types>
 ### <a name="parameters"></a>Параметры
 
 *слева*\
-Кортеж, элементы которого должны обмениваться с элементами, расположенными *справа*от кортежа.
+Кортеж, элементы которого должны обмениваться с элементами, расположенными *справа* от кортежа.
 
 *Правильно*\
 Кортеж, элементы которого должны быть заменены элементами кортежа *слева*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция выполняет `left.swap(right)`.
 
-## <a name="tuple"></a><a name="tuple"></a>кортеж
+## <a name="tuple"></a><a name="tuple"></a> кортеж
 
 Формирует объект `tuple`.
 
@@ -252,7 +253,7 @@ template <class U1, class U2>
 *Правильно*\
 Кортеж, из которого выполняется копирование.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый конструктор создает объект, элементы которого создаются по умолчанию.
 

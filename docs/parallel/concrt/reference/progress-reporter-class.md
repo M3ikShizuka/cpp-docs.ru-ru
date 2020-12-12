@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: progress_reporter классе'
 title: Класс progress_reporter
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - progress_reporter class
 ms.assetid: b836efab-2d05-4649-b6fa-d15236f1f813
-ms.openlocfilehash: bd8f50a8c9829ff9de3e2412b89aa4de88d90db6
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 40ae3dba0c804381478d8c32da4425b20a9825d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77138773"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97169363"
 ---
 # <a name="progress_reporter-class"></a>Класс progress_reporter
 
@@ -32,21 +33,21 @@ class progress_reporter;
 *_ProgressType*<br/>
 О типе полезных данных каждого уведомления о ходе выполнения сообщается посредством формирования отчетов о ходе выполнения.
 
-## <a name="members"></a>Члены
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[progress_reporter](#ctor)||
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
-|[передачи](#report)|Отправляет отчет о ходе выполнения в асинхронное действие или операцию, к которому привязано это средство формирования отчетов.|
+|[report](#report) (отчет).|Отправляет отчет о ходе выполнения в асинхронное действие или операцию, к которому привязано это средство формирования отчетов.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Этот тип доступен только для среда выполнения Windows приложений.
 
@@ -58,15 +59,15 @@ class progress_reporter;
 
 **Заголовок:** из ppltasks. h
 
-**Пространство имен:** concurrency
+**Пространство имен:** параллелизм
 
-## <a name="ctor"></a>progress_reporter
+## <a name="progress_reporter"></a><a name="ctor"></a> progress_reporter
 
 ```cpp
 progress_reporter();
 ```
 
-## <a name="report"></a>передачи
+## <a name="report"></a><a name="report"></a> передачи
 
 Отправляет отчет о ходе выполнения в асинхронное действие или операцию, к которому привязано это средство формирования отчетов.
 
@@ -81,4 +82,4 @@ void report(const _ProgressType& val) const;
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен concurrency](concurrency-namespace.md)
+[Пространство имен Concurrency](concurrency-namespace.md)

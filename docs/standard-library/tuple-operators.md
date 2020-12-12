@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; кортежные &gt; операторы'
 title: Операторы &lt;tuple&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ f1_keywords:
 - tuple/std::operator<=
 - tuple/std::operator==
 ms.assetid: f25752dc-d3e2-4e12-b5ac-9a8682ca60ed
-ms.openlocfilehash: 5554f08f32048bafde5bdb2c316e12e1e01c6ffb
-ms.sourcegitcommit: 19016630f9d35f365e9ba249e0f3617515d7ca33
+ms.openlocfilehash: de7c39aead2c1a216e4b7fc8646b92b09bb58dce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92274628"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168895"
 ---
 # <a name="lttuplegt-operators"></a>Операторы &lt;tuple&gt;
 
@@ -34,7 +35,7 @@ bool operator!=(const tuple<T1, T2, ..., TN>& tpl1,
 *КОД*\
 Тип N-го элемента кортежа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция возвращает значение false, если `N` равно 0; в противном случае — значение `get<0>(tpl1) != get<0>(tpl2) || get<1>(tpl1) != get<1>(tpl2) || ... || get<N - 1>(tpl1) == get<N - 1>(tpl2)`.
 
@@ -99,7 +100,7 @@ bool operator<(const tuple<T1, T2, ..., TN>& tpl1,
 *КОД*\
 Тип N-го элемента кортежа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция возвращает значение true, если `N` больше 0, а первое отличающееся значение в `tpl1` при сравнении оказывается меньше, чем соответствующее значение `tpl2`; в противном случае возвращается значение false.
 
@@ -164,7 +165,7 @@ bool operator<=(const tuple<T1, T2, ..., TN>& tpl1,
 *КОД*\
 Тип N-го элемента кортежа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция возвращает `!(tpl2 < tpl1)`.
 
@@ -229,7 +230,7 @@ bool operator==(const tuple<T1, T2, ..., TN>& tpl1,
 *КОД*\
 Тип N-го элемента кортежа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция возвращает значение true, если `N` равно 0; в противном случае — значение `get<0>(tpl1) == get<0>(tpl2) && get<1>(tpl1) == get<1>(tpl2) && ... && get<N - 1>(tpl1) == get<N - 1>(tpl2)`.
 
@@ -294,7 +295,7 @@ bool operator>(const tuple<T1, T2, ..., TN>& tpl1,
 *КОД*\
 Тип N-го элемента кортежа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция возвращает `tpl2 < tpl1`.
 
@@ -359,7 +360,7 @@ bool operator>=(const tuple<T1, T2, ..., TN>& tpl1,
 *КОД*\
 Тип N-го элемента кортежа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция возвращает `!(tpl1 < tpl2)`.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: tuple_element классе'
 title: Класс tuple_element
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - std::tuple_element
 ms.assetid: 4c51a6c1-ce81-462f-8c6c-291d69f2b77c
-ms.openlocfilehash: be9d9fe56d35e96e4179eb511edccd475a369f32
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: dea9f883c2ae8d0a071f894405059ddb5f2090af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008293"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168973"
 ---
 # <a name="tuple_element-class"></a>Класс tuple_element
 
@@ -76,7 +77,7 @@ template <class T1, class T2>
 
 ## <a name="remarks"></a>Комментарии
 
-Шаблон класса `tuple_element` имеет вложенное typedef `type` , который является синонимом для типа по индексу *индекса* *кортежа*типа кортежа.
+Шаблон класса `tuple_element` имеет вложенное typedef `type` , который является синонимом для типа по индексу *индекса* *кортежа* типа кортежа.
 
 Определение типа `tuple_element_t` является удобным псевдонимом для `tuple_element<Index, Tuple>::type`.
 
