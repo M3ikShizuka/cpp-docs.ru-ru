@@ -1,5 +1,6 @@
 ---
-title: Класс CSimpleMapEqualHelper
+description: 'Дополнительные сведения о: Ксимплемапекуалхелпер Class'
+title: Класс Ксимплемапекуалхелпер
 ms.date: 11/04/2016
 f1_keywords:
 - CSimpleMapEqualHelper
@@ -9,16 +10,16 @@ f1_keywords:
 helpviewer_keywords:
 - CSimpleMapEqualHelper class
 ms.assetid: 9bb2968a-d609-405c-8272-ff3b42df6164
-ms.openlocfilehash: d137a35a517ea93139f036f6e9a7a8de06d518a7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2b8ff742bf24b6c6c4354cef652e3fc697ffb1d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81330753"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140612"
 ---
-# <a name="csimplemapequalhelper-class"></a>Класс CSimpleMapEqualHelper
+# <a name="csimplemapequalhelper-class"></a>Класс Ксимплемапекуалхелпер
 
-Этот класс является помощником для класса [CSimpleMap.](../../atl/reference/csimplemap-class.md)
+Этот класс является вспомогательным классом для класса [ксимплемап](../../atl/reference/csimplemap-class.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,32 +30,32 @@ class CSimpleMapEqualHelper
 
 #### <a name="parameters"></a>Параметры
 
-*Tkey*<br/>
-Ключевой элемент.
+*TKey*<br/>
+Элемент key.
 
-*TVal*<br/>
-Элемент значения.
+*твал*<br/>
+Элемент value.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CSimpleMapEqualHelper::IsEqualKey](#isequalkey)|(Статик) Тесты два ключа для равенства.|
-|[CSimpleMapEqualHelper::IsEqualValue](#isequalvalue)|(Статик) Тесты двух значений равенства.|
+|[Ксимплемапекуалхелпер:: Исекуалкэй](#isequalkey)|Статически Проверяет два ключа на равенство.|
+|[Ксимплемапекуалхелпер:: Исекуалвалуе](#isequalvalue)|Статически Проверяет два значения на равенство.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот класс черт является дополнением к классу. `CSimpleMap` В нем приводятся `CSimpleMap` методы сравнения двух элементов объекта (в частности, ключевых и ценностных компонентов) для обеспечения равенства. По умолчанию ключи и значения сравниваются с помощью **оператора,()**, но если карта содержит сложные типы данных, которые не имеют своего собственного оператора равенства, этот класс может быть отменен, чтобы обеспечить дополнительную требуемую функциональность.
+Этот класс признаков является дополнением к `CSimpleMap` классу. Он предоставляет методы для сравнения двух `CSimpleMap` объектных элементов (в частности, компонентов ключа и значения) на равенство. По умолчанию ключи и значения сравниваются с помощью **оператора operator = = ()**, но если на карте содержатся сложные типы данных, у которых нет собственного оператора равенства, этот класс можно переопределить, чтобы предоставить дополнительные необходимые функции.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlsimpcoll.h
+**Заголовок:** атлсимпколл. h
 
-## <a name="csimplemapequalhelperisequalkey"></a><a name="isequalkey"></a>CSimpleMapEqualHelper::IsEqualKey
+## <a name="csimplemapequalhelperisequalkey"></a><a name="isequalkey"></a> Ксимплемапекуалхелпер:: Исекуалкэй
 
-Тесты два ключа для равенства.
+Проверяет два ключа на равенство.
 
 ```
 static bool IsEqualKey(const TKey& k1, const TKey& k2);
@@ -70,11 +71,11 @@ static bool IsEqualKey(const TKey& k1, const TKey& k2);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает верно, если ключи равны, ложные в противном случае.
+Возвращает значение true, если ключи равны; в противном случае — значение false.
 
-## <a name="csimplemapequalhelperisequalvalue"></a><a name="isequalvalue"></a>CSimpleMapEqualHelper::IsEqualValue
+## <a name="csimplemapequalhelperisequalvalue"></a><a name="isequalvalue"></a> Ксимплемапекуалхелпер:: Исекуалвалуе
 
-Тесты двух значений равенства.
+Проверяет два значения на равенство.
 
 ```
 static bool IsEqualValue(const TVal& v1, const TVal& v2);
@@ -90,9 +91,9 @@ static bool IsEqualValue(const TVal& v1, const TVal& v2);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает верно, если значения равны, ложные в противном случае.
+Возвращает значение true, если значения равны, и false в противном случае.
 
 ## <a name="see-also"></a>См. также раздел
 
-[CSimpleMapEqualHelperFalse Класс](../../atl/reference/csimplemapequalhelperfalse-class.md)<br/>
+[Класс Ксимплемапекуалхелперфалсе](../../atl/reference/csimplemapequalhelperfalse-class.md)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)

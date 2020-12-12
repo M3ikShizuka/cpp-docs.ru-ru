@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: глобальные функции контекста устройства'
 title: Глобальные функции контекста устройства
 ms.date: 11/04/2016
 f1_keywords:
 - atlwin/ATL::AtlCreateTargetDC
 ms.assetid: 08ec28f6-daff-4882-9544-e8a4639d05c4
-ms.openlocfilehash: d2d25660083f074683a3f42f878497ce14a008b8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f5e87271170e29a2f0cc4d42b4e7739a5fd869ab
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833469"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139910"
 ---
 # <a name="device-context-global-functions"></a>Глобальные функции контекста устройства
 
@@ -39,7 +40,7 @@ HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);
 
 Возвращает маркер для контекста устройства для устройства, указанного в `DVTARGETDEVICE` . Если устройство не указано, возвращает маркер в устройство дисплея по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если структура имеет значение NULL и *HDC* имеет значение null, создает контекст устройства для устройства вывода по умолчанию.
 

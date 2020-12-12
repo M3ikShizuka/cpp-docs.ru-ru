@@ -1,21 +1,22 @@
 ---
+description: 'Дополнительные сведения о: Примеры лямбда-выражений'
 title: Примеры лямбда-выражений
 ms.date: 05/07/2019
 helpviewer_keywords:
 - lambda expressions [C++], examples
 ms.assetid: 52506b15-0771-4190-a966-2f302049ca86
-ms.openlocfilehash: 585e76119b0e848e322c88ad0149ebb42c6b5b1d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 91c29bd1cd49045d51421d76bd46b3c121cfca3f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221605"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164812"
 ---
 # <a name="examples-of-lambda-expressions"></a>Примеры лямбда-выражений
 
 В данной статье приводится описание методов использования лямбда-выражений в программах. Общие сведения о лямбда-выражениях см. в разделе [лямбда-выражения](../cpp/lambda-expressions-in-cpp.md). Дополнительные сведения о структуре лямбда-выражения см. в разделе [синтаксис лямбда-выражения](../cpp/lambda-expression-syntax.md).
 
-## <a name="declaring-lambda-expressions"></a><a name="declaringLambdaExpressions"></a>Объявление лямбда-выражений
+## <a name="declaring-lambda-expressions"></a><a name="declaringLambdaExpressions"></a> Объявление лямбда-выражений
 
 ### <a name="example-1"></a>Пример 1
 
@@ -53,7 +54,7 @@ int main()
 7
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [`auto`](../cpp/auto-cpp.md) , [ `function` класс](../standard-library/function-class.md)и [вызов функции](../cpp/function-call-cpp.md).
 
@@ -99,7 +100,7 @@ int main()
 
 [[В этой статье](#top)]
 
-## <a name="calling-lambda-expressions"></a><a name="callingLambdaExpressions"></a>Вызов лямбда-выражений
+## <a name="calling-lambda-expressions"></a><a name="callingLambdaExpressions"></a> Вызов лямбда-выражений
 
 Можно вызывать лямбда-выражение сразу же, как показано в следующем фрагменте кода. Во втором фрагменте показано, как передать лямбда-выражение в качестве аргумента в алгоритмы стандартной библиотеки C++, такие как `find_if` .
 
@@ -173,13 +174,13 @@ int main()
 The first even number in the list is 42.
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о `find_if` функции см. в разделе [`find_if`](../standard-library/algorithm-functions.md#find_if) . Дополнительные сведения о функциях стандартной библиотеки C++, которые выполняют стандартные алгоритмы, см. в разделе [`<algorithm>`](../standard-library/algorithm.md) .
 
 [[В этой статье](#top)]
 
-## <a name="nesting-lambda-expressions"></a><a name="nestingLambdaExpressions"></a>Вложенные лямбда-выражения
+## <a name="nesting-lambda-expressions"></a><a name="nestingLambdaExpressions"></a> Вложенные лямбда-выражения
 
 ### <a name="example"></a>Пример
 
@@ -211,13 +212,13 @@ int main()
 13
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В этом примере значение параметра `[](int y) { return y * 2; }` является вложенным лямбда-выражением.
 
 [[В этой статье](#top)]
 
-## <a name="higher-order-lambda-functions"></a><a name="higherOrderLambdaExpressions"></a>Лямбда-функции высшего порядка
+## <a name="higher-order-lambda-functions"></a><a name="higherOrderLambdaExpressions"></a> Higher-Order лямбда-функций
 
 ### <a name="example"></a>Пример
 
@@ -266,7 +267,7 @@ int main()
 
 [[В этой статье](#top)]
 
-## <a name="using-a-lambda-expression-in-a-function"></a><a name="methodLambdaExpressions"></a>Использование лямбда-выражения в функции
+## <a name="using-a-lambda-expression-in-a-function"></a><a name="methodLambdaExpressions"></a> Использование лямбда-выражения в функции
 
 ### <a name="example"></a>Пример
 
@@ -353,13 +354,13 @@ int main()
 12
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция `ApplyScale` использует лямбда-выражение для выведения произведения масштаба на каждый элемент объекта `vector`. Лямбда-выражение неявно захватывает, **`this`** чтобы он мог получить доступ к `_scale` элементу.
 
 [[В этой статье](#top)]
 
-## <a name="using-lambda-expressions-with-templates"></a><a name="templateLambdaExpressions"></a>Использование лямбда-выражений с шаблонами
+## <a name="using-lambda-expressions-with-templates"></a><a name="templateLambdaExpressions"></a> Использование лямбда-выражений с шаблонами
 
 ### <a name="example"></a>Пример
 
@@ -417,13 +418,13 @@ After negate_all():
 -56
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о шаблонах C++ см. в разделе [шаблоны](../cpp/templates-cpp.md).
 
 [[В этой статье](#top)]
 
-## <a name="handling-exceptions"></a><a name="ehLambdaExpressions"></a>Обработка исключений
+## <a name="handling-exceptions"></a><a name="ehLambdaExpressions"></a> Обработка исключений
 
 ### <a name="example"></a>Пример
 
@@ -473,13 +474,13 @@ int main()
 Caught 'invalid vector<T> subscript'.
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения об обработке исключений см. в разделе [обработка исключений](../cpp/exception-handling-in-visual-cpp.md).
 
 [[В этой статье](#top)]
 
-## <a name="using-lambda-expressions-with-managed-types-ccli"></a><a name="managedLambdaExpressions"></a>Использование лямбда-выражений с управляемыми типами (C++/CLI)
+## <a name="using-lambda-expressions-with-managed-types-ccli"></a><a name="managedLambdaExpressions"></a> Использование лямбда-выражений с управляемыми типами (C++/CLI)
 
 ### <a name="example"></a>Пример
 
@@ -510,7 +511,7 @@ int main()
 Hello!
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Можно также использовать лямбда-выражения с библиотекой STL/CLR. Дополнительные сведения см. в разделе [Справочник по библиотеке STL/CLR](../dotnet/stl-clr-library-reference.md).
 
@@ -519,15 +520,15 @@ Hello!
 
 [[В этой статье](#top)]
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Лямбда-выражения](../cpp/lambda-expressions-in-cpp.md)<br/>
 [Синтаксис лямбда-выражений](../cpp/lambda-expression-syntax.md)<br/>
 [`auto`](../cpp/auto-cpp.md)<br/>
-[`function`См](../standard-library/function-class.md)<br/>
+[`function` См](../standard-library/function-class.md)<br/>
 [`find_if`](../standard-library/algorithm-functions.md#find_if)<br/>
 [`<algorithm>`](../standard-library/algorithm.md)<br/>
 [Вызов функции](../cpp/function-call-cpp.md)<br/>
-[См](../cpp/templates-cpp.md)<br/>
+[Шаблоны](../cpp/templates-cpp.md)<br/>
 [Обработка исключений](../cpp/exception-handling-in-visual-cpp.md)<br/>
 [Справочник по библиотеке STL/CLR](../dotnet/stl-clr-library-reference.md)

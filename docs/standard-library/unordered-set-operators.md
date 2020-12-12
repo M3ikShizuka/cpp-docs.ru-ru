@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: &lt; операторы unordered_set &gt;'
 title: Операторы &lt;unordered_set&gt;
 ms.date: 11/04/2016
 f1_keywords:
 - unordered_set/std::operator!=
 - unordered_set/std::operator==
 ms.assetid: 8653eea6-12f2-4dd7-aa2f-db38a71599a0
-ms.openlocfilehash: 7780b5dd031d6babc13bc202c948c3e8233f7170
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 6404ea9348dedea1e8ecdd4eefbca6b7c1b8158f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90741948"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153737"
 ---
 # <a name="ltunordered_setgt-operators"></a>Операторы &lt;unordered_set&gt;
 
@@ -34,7 +35,7 @@ bool operator!=(const unordered_set <Key, Hash, Pred, Allocator>& left, const un
 
 **`true`** Если unordered_sets не равны; значение **`false`** , если они равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Произвольный порядок хранения элементов не влияет на сравнение объектов unordered_set. Два объекта unordered_set равны, если они имеют одинаковое число элементов и элементы в одном контейнере представляют собой перестановки элементов в другом контейнере. В противном случае они не равны.
 
@@ -102,7 +103,7 @@ bool operator==(const unordered_set <Key, Hash, Pred, Allocator>& left, const un
 
 **`true`** значение, если unordered_sets равны; **`false`** если они не равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Произвольный порядок хранения элементов не влияет на сравнение объектов unordered_set. Два объекта unordered_set равны, если они имеют одинаковое число элементов и элементы в одном контейнере представляют собой перестановки элементов в другом контейнере. В противном случае они не равны.
 
@@ -168,7 +169,7 @@ bool operator!=(const unordered_multiset <Key, Hash, Pred, Allocator>& left, con
 
 **`true`** Если unordered_multisets не равны; значение **`false`** , если они равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Произвольный порядок хранения элементов не влияет на сравнение объектов unordered_multiset. Два объекта unordered_multiset равны, если они имеют одинаковое число элементов и элементы в одном контейнере представляют собой перестановки элементов в другом контейнере. В противном случае они не равны.
 
@@ -237,7 +238,7 @@ bool operator==(const unordered_multiset <Key, Hash, Pred, Allocator>& left, con
 
 **`true`** значение, если unordered_multisets равны; **`false`** если они не равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Произвольный порядок хранения элементов не влияет на сравнение объектов unordered_multiset. Два объекта unordered_multiset равны, если они имеют одинаковое число элементов и элементы в одном контейнере представляют собой перестановки элементов в другом контейнере. В противном случае они не равны.
 

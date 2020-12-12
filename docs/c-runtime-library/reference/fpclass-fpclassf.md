@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _fpclass, _fpclassf'
 title: _fpclass, _fpclassf
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - _fpclass function
 - _fpclassf function
 ms.assetid: 2774872d-3543-446f-bc72-db85f8b95a6b
-ms.openlocfilehash: a6591d9348739d27831785a05f4a602aacdd4d0c
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: bd7a2aa02a3431ff41c4d9695efca1f959ece24f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914850"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164917"
 ---
 # <a name="_fpclass-_fpclassf"></a>_fpclass, _fpclassf
 
@@ -65,9 +66,9 @@ int _fpclassf(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Функции **_fpclass** и **_fpclassf** возвращают целочисленное значение, которое указывает на классификацию с плавающей запятой аргумента *x*. Классификация может иметь одно из следующих значений, определенных в \<float.h>.
+Функции **_fpclass** и **_fpclassf** возвращают целочисленное значение, которое указывает на классификацию с плавающей запятой аргумента *x*. Классификация может иметь одно из следующих значений, определенных в \<float.h> .
 
-|Применение|Описание|
+|Значение|Описание|
 |-----------|-----------------|
 |**_FPCLASS_SNAN**|Сигнальное значение NaN|
 |**_FPCLASS_QNAN**|Несигнальное значение NaN|
@@ -80,7 +81,7 @@ int _fpclassf(
 |**_FPCLASS_PN**|Положительное ненулевое нормализованное значение|
 |**_FPCLASS_PINF**|Положительная бесконечность (+INF)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функции **_fpclass** и **_fpclassf** являются специфичными для Microsoft. Они похожи на [fpclassify](fpclassify.md), но возвращают подробные сведения об аргументе. Функция **_fpclassf** доступна только при компиляции для платформы x64.
 
@@ -96,6 +97,6 @@ int _fpclassf(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Поддержка чисел с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
 [isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
 [fpclassify](fpclassify.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: allocator_suballoc классе'
 title: Класс allocator_suballoc
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - allocator_suballoc class
 ms.assetid: 50c6a5c0-d00d-4276-9285-d908fd4f6483
-ms.openlocfilehash: 47b82a198a52a61bd5558bd59a38b1d328fa67b2
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 7e542b4b8f419f1ac219c63b113aced7e0bd7cda
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562588"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163591"
 ---
 # <a name="allocator_suballoc-class"></a>Класс allocator_suballoc
 
@@ -30,7 +31,7 @@ class allocator_suballoc;
 *Тип*\
 Тип элементов, распределяемых распределителем.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Макрос [ALLOCATOR_DECL](allocators-functions.md#allocator_decl) передает этот класс в качестве параметра *Name* в следующей инструкции: `ALLOCATOR_DECL(CACHE_SUBALLOC, SYNC_DEFAULT, allocator_suballoc);`
 
@@ -40,6 +41,6 @@ class allocator_suballoc;
 
 **Пространство имен:** stdext
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [\<allocators>](allocators-header.md)

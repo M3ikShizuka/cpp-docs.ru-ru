@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: макросы категорий'
 title: Макросы категорий
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 - atlcom/ATL::IMPLEMENTED_CATEGORY
 - atlcom/ATL::REQUIRED_CATEGORY
 ms.assetid: 223578cb-6180-4787-a8d8-ba3787a5d3ee
-ms.openlocfilehash: 0db32c9550cd76fbc8e1f6776b8ecf4cceffebd7
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 31cbef36ca02fb990ba8935915837074d7dd4116
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833898"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97165086"
 ---
 # <a name="category-macros"></a>Макросы категорий
 
@@ -42,7 +43,7 @@ BEGIN_CATEGORY_MAP(theClass)
 *секласс*<br/>
 окне Имя класса, содержащего карту категорий.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Таблица категорий используется для указания категорий компонентов, которые будут реализованы классом COM, и категорий, которые требуются для его контейнера.
 
@@ -84,7 +85,7 @@ IMPLEMENTED_CATEGORY(catID)
 *catID*<br/>
 окне Константа или переменная CATID, содержащая глобальный уникальный идентификатор (GUID) для реализованной категории. Адрес *CATID* будет создан и добавлен на карту. Для выбора категорий запасов см. таблицу ниже.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Категории компонентов, перечисленные на карте, будут регистрироваться автоматически при регистрации модуля, если класс имеет связанный [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) или [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) макрос.
 
@@ -102,7 +103,7 @@ IMPLEMENTED_CATEGORY(catID)
 |простую привязку данных|CATID_PropertyNotifyControl|{157083E1-2368-11cf-87B9-00AA006C8166}|
 |Расширенная привязка данных|CATID_VBDataBound|{157083E2-2368-11cf-87B9-00AA006C8166}|
 |Элементы управления без окон|CATID_WindowlessObject|{1D06B600-3AE3-11cf-87B9-00AA006C8166}|
-|Объекты, поддерживающие Интернет|Пример списка см. в разделе [объекты, поддерживающие Интернет](/windows/win32/com/internet-aware-objects) , в Windows SDK.||
+|Internet-Aware объекты|Пример списка см. в разделе [объекты, поддерживающие Интернет](/windows/win32/com/internet-aware-objects) , в Windows SDK.||
 
 ### <a name="example"></a>Пример
 
@@ -121,7 +122,7 @@ REQUIRED_CATEGORY( catID )
 *catID*<br/>
 окне Константа или переменная CATID, содержащая глобальный уникальный идентификатор (GUID) для требуемой категории. Адрес *CATID* будет создан и добавлен на карту. Для выбора категорий запасов см. таблицу ниже.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Категории компонентов, перечисленные на карте, будут регистрироваться автоматически при регистрации модуля, если класс имеет связанный [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) или [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) макрос.
 
@@ -139,7 +140,7 @@ REQUIRED_CATEGORY( catID )
 |простую привязку данных|CATID_PropertyNotifyControl|{157083E1-2368-11cf-87B9-00AA006C8166}|
 |Расширенная привязка данных|CATID_VBDataBound|{157083E2-2368-11cf-87B9-00AA006C8166}|
 |Элементы управления без окон|CATID_WindowlessObject|{1D06B600-3AE3-11cf-87B9-00AA006C8166}|
-|Объекты, поддерживающие Интернет|Пример списка см. в разделе [объекты, поддерживающие Интернет](/windows/win32/com/internet-aware-objects) , в Windows SDK.||
+|Internet-Aware объекты|Пример списка см. в разделе [объекты, поддерживающие Интернет](/windows/win32/com/internet-aware-objects) , в Windows SDK.||
 
 ### <a name="example"></a>Пример
 

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения об элементах управления ActiveX в MFC. Использование рисунков в элементе управления ActiveX
 title: Элементы управления ActiveX в MFC. Использование изображений в элементе управления ActiveX
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - OnResetState method [MFC]
 - CLSID_CPicturePropPage [MFC]
 ms.assetid: 2e49735c-21b9-4442-bb3d-c82ef258eec9
-ms.openlocfilehash: 9eb204dd240ae17421a20b7cddeff56c9a22c19b
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9c9989be7503eb449b969fbbf37d92f26c165131
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618081"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97133085"
 ---
 # <a name="mfc-activex-controls-using-pictures-in-an-activex-control"></a>Элементы управления ActiveX в MFC. Использование изображений в элементе управления ActiveX
 
@@ -47,7 +48,7 @@ ms.locfileid: "84618081"
 
    Эта страница свойств является частью группы запасных страниц свойств, доступных для элементов управления ActiveX. Дополнительные сведения о страницах свойств элементов управления ActiveX см. в статье [Элементы управления MFC ActiveX: использование запасных страниц свойств](mfc-activex-controls-using-stock-property-pages.md)
 
-## <a name="implementing-a-custom-picture-property-in-your-activex-control"></a><a name="_core_implementing_a_custom_picture_property_in_your_activex_control"></a>Реализация пользовательского свойства изображения в элементе управления ActiveX
+## <a name="implementing-a-custom-picture-property-in-your-activex-control"></a><a name="_core_implementing_a_custom_picture_property_in_your_activex_control"></a> Реализация пользовательского свойства изображения в элементе управления ActiveX
 
 После завершения шагов, перечисленных в этом разделе, элемент управления может отображать изображения, выбранные пользователем. Пользователь может изменить отображающееся изображение на странице свойств с текущим изображением и кнопкой "Обзор", которая позволяет пользователю выбирать другие изображения.
 
@@ -95,7 +96,7 @@ ms.locfileid: "84618081"
 
 1. В поле **тип свойства** выберите **ипиктуредисп** <strong>\*</strong> для типа свойства.
 
-1. В поле **Тип реализации**выберите **Методы Get/Set**.
+1. В поле **Тип реализации** выберите **Методы Get/Set**.
 
 1. Введите уникальные имена для функций Get и Set или примите имена по умолчанию. (В этом примере используются имена по умолчанию: `GetControlPicture` и `SetControlPicture` .)
 
@@ -149,6 +150,6 @@ ms.locfileid: "84618081"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Элементы ActiveX библиотеки MFC](mfc-activex-controls.md)<br/>
-[Элементы управления MFC ActiveX: использование шрифтов](mfc-activex-controls-using-fonts.md)<br/>
-[Элементы ActiveX в MFC. Страницы свойств](mfc-activex-controls-property-pages.md)
+[Элементы управления ActiveX в MFC](mfc-activex-controls.md)<br/>
+[Элементы управления ActiveX в MFC. Использование шрифтов](mfc-activex-controls-using-fonts.md)<br/>
+[Элементы управления ActiveX в MFC: страницы свойств](mfc-activex-controls-property-pages.md)

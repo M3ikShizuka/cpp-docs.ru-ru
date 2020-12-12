@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: allocator_newdel классе'
 title: Класс allocator_newdel
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - stdext::allocators [C++], allocator_newdel
 - stdext::allocator_newdel
 ms.assetid: 62666cd2-3afe-49f7-9dd1-9bbbb154da98
-ms.openlocfilehash: 30e0f7902a8af435b46aaedf0b38661b7a6604a8
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 0f514e64258ef0c1e7a4226a55a661216df9b3d5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562601"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163578"
 ---
 # <a name="allocator_newdel-class"></a>Класс allocator_newdel
 
@@ -32,7 +33,7 @@ class allocator_newdel;
 *Тип*\
 Тип элементов, распределяемых распределителем.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Макрос [ALLOCATOR_DECL](allocators-functions.md#allocator_decl) передает этот класс в качестве параметра *Name* в следующей инструкции: `ALLOCATOR_DECL(CACHE_FREELIST stdext::allocators::max_none), SYNC_DEFAULT, allocator_newdel);`
 
@@ -42,6 +43,6 @@ class allocator_newdel;
 
 **Пространство имен:** stdext
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [\<allocators>](allocators-header.md)

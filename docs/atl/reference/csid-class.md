@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CSid Class'
 title: CSid, класс
 ms.date: 03/27/2019
 f1_keywords:
@@ -21,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSid class
 ms.assetid: be58b7ca-5958-49c3-a833-ca341aaaf753
-ms.openlocfilehash: b6787c0e3f075935f19d51aa73bbd66da9cc0fcb
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b0f5553f14d31a43c0cc581ef43b518fa612616d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835601"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140807"
 ---
 # <a name="csid-class"></a>CSid, класс
 
@@ -41,7 +42,7 @@ ms.locfileid: "88835601"
 class CSid
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
@@ -91,7 +92,7 @@ class CSid
 |[станции \<=](#operator_lt__eq)|Сравнивает относительное значение двух объектов дескрипторов безопасности.|
 |[Оператор >=](#operator_gt__eq)|Сравнивает относительное значение двух объектов дескрипторов безопасности.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `SID`Структура — это структура переменной длины, используемая для уникальной идентификации пользователей или групп.
 
@@ -115,7 +116,7 @@ LPCTSTR AccountName() const throw(...);
 
 Возвращает LPCTSTR, указывающий на имя учетной записи.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод пытается найти имя для указанного `SID` (идентификатора безопасности). Полные сведения см. в разделе [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw).
 
@@ -164,9 +165,9 @@ explicit CSid(
 *Пустой pSid*<br/>
 Указатель на `SID` структуру.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Конструктор инициализирует `CSid` объект, настроив внутренний элемент данных на *сидтипеинвалид*или копируя параметры из существующей `CSid` или существующей `SID` учетной записи.
+Конструктор инициализирует `CSid` объект, настроив внутренний элемент данных на *сидтипеинвалид* или копируя параметры из существующей `CSid` или существующей `SID` учетной записи.
 
 Если инициализация завершается неудачей, конструктор вызывает [класс катлексцептион](../../atl/reference/catlexception-class.md).
 
@@ -178,7 +179,7 @@ explicit CSid(
 virtual ~CSid() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Деструктор освобождает все ресурсы, полученные объектом.
 
@@ -190,7 +191,7 @@ virtual ~CSid() throw();
 typedef CAtlArray<CSid> CSidArray;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это определение типа определяет тип массива, который можно использовать для получения идентификаторов безопасности из списка ACL (список управления доступом). См. раздел [какл:: жетаклентриес](../../atl/reference/cacl-class.md#getaclentries).
 
@@ -206,7 +207,7 @@ LPCTSTR Domain() const throw(...);
 
 Возвращает объект, `LPCTSTR` указывающий на домен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод пытается найти имя для указанного `SID` (идентификатора безопасности). Полные сведения см. в разделе [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw).
 
@@ -230,7 +231,7 @@ bool EqualPrefix(const CSid& rhs) const throw();
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [екуалпрефикссид](/windows/win32/api/securitybaseapi/nf-securitybaseapi-equalprefixsid) в Windows SDK.
 
@@ -246,7 +247,7 @@ UINT GetLength() const throw();
 
 Возвращает длину объекта в байтах `CSid` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если структура недопустима `CSid` , возвращаемое значение не определено. Перед вызовом метода `GetLength` используйте функцию-член [CSid:: IsValid](#isvalid) , чтобы убедиться, что `CSid` является допустимым.
 
@@ -297,7 +298,7 @@ DWORD GetSubAuthority(DWORD nSubAuthority) const throw();
 
 Возвращает подавтор, на который ссылается *нсубаусорити.* Значение подавтора — это относительный идентификатор (RID).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Параметр *нсубаусорити* задает значение индекса, определяющее элемент массива подавторов, который будет возвращен методом. Метод не выполняет проверочные тесты для этого значения. Приложение может вызвать код [CSid:: жетсубаусоритикаунт](#getsubauthoritycount) , чтобы определить диапазон допустимых значений.
 
@@ -333,7 +334,7 @@ bool IsValid() const throw();
 
 Возвращает значение TRUE `CSid` , если объект является допустимым, в противном случае — значение false. Расширенные сведения об ошибке для этого метода отсутствуют. не вызывайте `GetLastError` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `IsValid`Метод проверяет `CSid` объект, проверяя, что номер редакции находится в известном диапазоне, а число вложений меньше максимального.
 
@@ -366,7 +367,7 @@ bool LoadAccount(
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя. Чтобы получить расширенные сведения об ошибке, вызовите функцию `GetLastError`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `LoadAccount` пытается найти идентификатор безопасности для указанного имени. Дополнительные сведения см. в разделе [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw) .
 
@@ -528,7 +529,7 @@ bool operator>=(
 operator const SID *() const throw(...);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает адрес `SID` структуры.
 
@@ -568,7 +569,7 @@ SID_NAME_USE SidNameUse() const throw();
 |сидтипеункновн|Указывает на неизвестный `SID` тип.|
 |сидтипекомпутер|Указывает на `SID` компьютер.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите код [CSid:: лоадаккаунт](#loadaccount) , чтобы обновить `CSid` объект перед вызовом метода `SidNameUse` , чтобы вернуть его состояние. `SidNameUse` не изменяет состояние объекта (путем вызова метода `LookupAccountName` или `LookupAccountSid` ), но возвращает только текущее состояние.
 

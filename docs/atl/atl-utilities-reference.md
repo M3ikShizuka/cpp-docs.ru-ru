@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: Справочник по служебным программам ATL'
 title: Справочник по служебным программам ATL
 ms.date: 11/04/2016
 ms.assetid: dd8a2888-34f4-461e-9bf4-834218f9b95b
-ms.openlocfilehash: f9e59a2c67d391995d94d77f526613534acb48de
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8545881c5cd48aaff1bb25448ba443829128dc41
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831879"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148581"
 ---
 # <a name="atl-utilities-reference"></a>Справочник по служебным программам ATL
 
@@ -92,5 +93,5 @@ ATL предоставляет код для управления путями �
 
 ## <a name="see-also"></a>См. также раздел
 
-[Концепции](../atl/active-template-library-atl-concepts.md)<br/>
+[Основные понятия](../atl/active-template-library-atl-concepts.md)<br/>
 [Компоненты ATL COM Desktop](../atl/atl-com-desktop-components.md)

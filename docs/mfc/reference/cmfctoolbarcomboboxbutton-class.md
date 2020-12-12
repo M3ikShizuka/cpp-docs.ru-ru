@@ -1,5 +1,6 @@
 ---
-title: CMFCToolBarComboBoxButton класс
+description: 'Дополнительные сведения о: Кмфктулбаркомбобоксбуттон Class'
+title: Класс Кмфктулбаркомбобоксбуттон
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCToolBarComboBoxButton
@@ -64,16 +65,16 @@ helpviewer_keywords:
 - CMFCToolBarComboBoxButton [MFC], SetDropDownHeight
 - CMFCToolBarComboBoxButton [MFC], SetFlatMode
 ms.assetid: 32fa39f7-8e4e-4f0a-a31d-7b540d969a6c
-ms.openlocfilehash: 995d7d0db55889130e1cad9585b8fc87285ffd27
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: aa28d1b125a5e1baf56a9e6e10812e7e6e56312f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754010"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163916"
 ---
-# <a name="cmfctoolbarcomboboxbutton-class"></a>CMFCToolBarComboBoxButton класс
+# <a name="cmfctoolbarcomboboxbutton-class"></a>Класс Кмфктулбаркомбобоксбуттон
 
-Кнопка панели инструментов, которая содержит управление комбо-коробкой [(класс CComboBox).](../../mfc/reference/ccombobox-class.md)
+Кнопка на панели инструментов, содержащая элемент управления "поле со списком" ( [класс CComboBox](../../mfc/reference/ccombobox-class.md)).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -81,62 +82,62 @@ ms.locfileid: "81754010"
 class CMFCToolBarComboBoxButton : public CMFCToolBarButton
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMFCToolBarComboBoxButton::CMFCToolBarComboBoxButton](#cmfctoolbarcomboboxbutton)|Создает документ `CMFCToolBarComboBoxButton`.|
+|[Кмфктулбаркомбобоксбуттон:: Кмфктулбаркомбобоксбуттон](#cmfctoolbarcomboboxbutton)|Создает документ `CMFCToolBarComboBoxButton`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMFCToolBarComboButton:AddItem](#additem)|Добавляет элемент в конец списка комбо-боксов.|
-|[CMFCToolBarComboButton::AddSortedItem](#addsorteditem)|Добавляет элемент в список комбо-боксов. Порядок элементов в списке `Compare`указан.|
-|[CMFCToolBarComboBoxButton::Сравните](#compare)|Сравнивает два элемента. Вызывается для `AddSortedItems` сортировки элементов, которые добавляет к списку комбо-бокс.|
-|[CMFCToolBarComboButton::CreateEdit](#createedit)|Создает новый элемент управления для комбо-бокса кнопки.|
-|[CMFCToolBarComboButton::DeleteItem](#deleteitem)|Удаляет элемент из списка комбо-боксов.|
-|[CMFCToolBarComboButton::FindItem](#finditem)|Возвращает индекс элемента, содержащего указанную строку.|
-|[CMFCToolBarComboButton::GetByCmd](#getbycmd)|Возвращает указатель на кнопку комбо-бокса с указанным идентификатором команды.|
-|[CMFCToolBarComboButtonButton::GetComboBox](#getcombobox)|Возвращает указатель на управление комбо-коробкой, встроенной в кнопку комбо-бокса.|
-|[CMFCToolBarComboButton::GetCount](#getcount)|Возвращает количество элементов в списке комбо-боксов.|
-|[CMFCToolBarComboButtonButton::GetCountAll](#getcountall)|Находит кнопку комбо-бокса с указанным идентификатором команды. Возвращает количество элементов в списке комбо-боксов этой кнопки.|
-|[CMFCToolBarComboButton::GetCurSel](#getcursel)|Возвращает индекс выбранного элемента в списке комбо-боксов.|
-|[CMFCToolBarComboButtonButton::GetCurSelall](#getcurselall)|Находит кнопку комбо-бокса с указанным идентификатором команды и возвращает индекс выбранного элемента в списке комбо-боксов этой кнопки.|
-|[CMFCToolBarComboButton::GetEditCtrl](#geteditctrl)|Возвращает указатель на управление ревертом, встроенное в кнопку комбо-бокса.|
-|[CMFCToolBarComboBoxButton::GetItem](#getitem)|Возвращает строку, связанную с указанным индексом, в списке комбо-боксов.|
-|[CMFCToolBarComboBoxButton::GetItemAll](#getitemall)|Находит кнопку комбо-бокса с указанным идентификатором команды и возвращает строку, связанную с индексом в списке комбо-боксов этой кнопки.|
-|[CMFCToolBarComboBoxButton::GetItemData](#getitemdata)|Возвращает 32-битное значение, связанное с указанным индексом в списке комбо-боксов.|
-|[CMFCToolBarComboBoxButton::GetItemDataAll](#getitemdataall)|Находит кнопку комбо-бокса с указанным идентификатором команды и возвращает 32-битное значение, связанное с индексом в списке комбо-боксов этой кнопки.|
-|[CMFCToolBarComboBoxButton::GetItemDataPtrAll](#getitemdataptrall)|Находит кнопку комбо-бокса с указанным идентификатором команды. Получает 32-битное значение, связанное с индексом в списке комбо-боксов этой кнопки, и возвращает 32-битное значение в качестве указателя.|
-|[CMFCToolBarComboButton::GetText](#gettext)|Возвращает текст из управления редактированием комбо-коробки.|
-|[CMFCToolBarComboButton::GetTextAll](#gettextall)|Находит кнопку комбо-бокса с указанным идентификатором команды и возвращает текст из управления редактированием этой кнопки.|
-|[CMFCToolBarComboButton::IsCenterVert](#iscentervert)|Определяет, центрированы ли кнопки комбо-коробки в приложении или выровнены в верхней части панели инструментов.|
-|[CMFCToolBarComboButton::IsFlatMode](#isflatmode)|Определяет, имеют ли кнопки комбо-коробки в приложении плоский вид.|
-|[CMFCToolBarComboBoxButton::RemoveAllItems](#removeallitems)|Удаляет все элементы из коробки списка и отодевать управление комбо-коробкой.|
-|[CMFCToolBarComboButton::SelectItem](#selectitem)|Выбирает элемент в комбо-коробке в соответствии с его индексом, 32-битное значение, или строки, и уведомляет управление комбо-бокс о выборе.|
-|[CMFCToolBarComboButton::SelectItemAll](#selectitemall)|Находит кнопку комбо-бокса с указанным идентификатором команды. Вызовы, `SelectItem` чтобы выбрать элемент в комбо-коробке этой кнопки в соответствии с его строки, индекс, или 32-битное значение.|
-|[CMFCToolBarComboButtonButton::SetCenterVert](#setcentervert)|Определяет, по центру ли кнопки комбо-коробки в приложении по центру вертикальны или выровнены с верхней частью панели инструментов.|
-|[CMFCToolBarComboBoxButton::SetDropDownHeight](#setdropdownheight)|Устанавливает высоту выпадающих вниз поле списка.|
-|[CMFCToolBarComboBoxButton::SetFlatMode](#setflatmode)|Определяет, имеют ли кнопки комбо-коробки в приложении плоский вид.|
+|[Кмфктулбаркомбобоксбуттон:: AddItem](#additem)|Добавляет элемент в конец списка полей со списком.|
+|[Кмфктулбаркомбобоксбуттон:: Аддсортедитем](#addsorteditem)|Добавляет элемент в список полей со списком. Порядок элементов в списке указывается в `Compare` .|
+|[Кмфктулбаркомбобоксбуттон:: Compare](#compare)|Сравнивает два элемента. Вызывается для сортировки элементов, которые `AddSortedItems` добавляются в список полей со списком.|
+|[Кмфктулбаркомбобоксбуттон:: Креатидит](#createedit)|Создает новый элемент управления "поле ввода" для кнопки со списком.|
+|[Кмфктулбаркомбобоксбуттон::D Елетеитем](#deleteitem)|Удаляет элемент из списка полей со списком.|
+|[Кмфктулбаркомбобоксбуттон:: FindItem](#finditem)|Возвращает индекс элемента, содержащего указанную строку.|
+|[Кмфктулбаркомбобоксбуттон:: Жетбикмд](#getbycmd)|Возвращает указатель на кнопку поля со списком с указанным ИДЕНТИФИКАТОРом команды.|
+|[Кмфктулбаркомбобоксбуттон:: падающее поле](#getcombobox)|Возвращает указатель на элемент управления "поле со списком", встроенный в поле со списком.|
+|[Кмфктулбаркомбобоксбуттон:: NOCOUNT](#getcount)|Возвращает число элементов в списке полей со списком.|
+|[Кмфктулбаркомбобоксбуттон:: Жеткаунталл](#getcountall)|Находит кнопку поля со списком с указанным ИДЕНТИФИКАТОРом команды. Возвращает число элементов в списке в поле со списком этой кнопки.|
+|[Кмфктулбаркомбобоксбуттон:: рекурсивно](#getcursel)|Возвращает индекс выбранного элемента в списке поля со списком.|
+|[Кмфктулбаркомбобоксбуттон:: Жеткурселалл](#getcurselall)|Находит кнопку поля со списком с указанным ИДЕНТИФИКАТОРом команды и возвращает индекс выбранного элемента в списке поля со списком этой кнопки.|
+|[Кмфктулбаркомбобоксбуттон:: Жетедитктрл](#geteditctrl)|Возвращает указатель на элемент управления "поле ввода", внедренный в кнопку со списком.|
+|[Кмфктулбаркомбобоксбуттон:: DataItem](#getitem)|Возвращает строку, связанную с указанным индексом в списке полей со списком.|
+|[Кмфктулбаркомбобоксбуттон:: Жетитемалл](#getitemall)|Находит кнопку поля со списком, которая содержит указанный идентификатор команды, и возвращает строку, связанную с индексом, в списке поля со списком этой кнопки.|
+|[Кмфктулбаркомбобоксбуттон:: Жетитемдата](#getitemdata)|Возвращает 32-разрядное значение, связанное с указанным индексом в списке полей со списком.|
+|[Кмфктулбаркомбобоксбуттон:: Жетитемдатаалл](#getitemdataall)|Находит кнопку поля со списком, которая содержит указанный идентификатор команды, и возвращает 32-разрядное значение, связанное с индексом, в списке поля со списком этой кнопки.|
+|[Кмфктулбаркомбобоксбуттон:: Жетитемдатаптралл](#getitemdataptrall)|Находит кнопку поля со списком с указанным ИДЕНТИФИКАТОРом команды. Извлекает 32-разрядное значение, связанное с индексом в списке полей со списком этой кнопки, и возвращает 32-разрядное значение в виде указателя.|
+|[Кмфктулбаркомбобоксбуттон:: GetText](#gettext)|Возвращает текст из элемента управления "поле ввода" поля со списком.|
+|[Кмфктулбаркомбобоксбуттон:: Жеттексталл](#gettextall)|Находит кнопку поля со списком с указанным ИДЕНТИФИКАТОРом команды и возвращает текст из элемента управления редактирования этой кнопки.|
+|[Кмфктулбаркомбобоксбуттон:: Исцентерверт](#iscentervert)|Определяет, будут ли кнопки поля со списком в приложении центрированы или выровнены по верхней части панели инструментов.|
+|[Кмфктулбаркомбобоксбуттон:: Исфлатмоде](#isflatmode)|Определяет, имеют ли кнопки поля со списком неструктурированный вид.|
+|[Кмфктулбаркомбобоксбуттон:: Ремовеаллитемс](#removeallitems)|Удаляет все элементы из списка и элемент управления изменением поля со списком.|
+|[Кмфктулбаркомбобоксбуттон:: Селектитем](#selectitem)|Выбирает элемент в поле со списком в соответствии с его индексом, 32-битным значением или строкой и уведомляет элемент управления "поле со списком" о выделенном фрагменте.|
+|[Кмфктулбаркомбобоксбуттон:: Селектитемалл](#selectitemall)|Находит кнопку поля со списком с указанным ИДЕНТИФИКАТОРом команды. Вызывает метод `SelectItem` для выбора элемента в поле со списком этой кнопки в соответствии со строкой, индексом или 32-битным значением.|
+|[Кмфктулбаркомбобоксбуттон:: Сетцентерверт](#setcentervert)|Указывает, будут ли кнопки поля со списком в приложении центрированы вертикально или выровнены по верхней части панели инструментов.|
+|[Кмфктулбаркомбобоксбуттон:: Сетдропдовнхеигхт](#setdropdownheight)|Задает высоту раскрывающегося списка.|
+|[Кмфктулбаркомбобоксбуттон:: Сетфлатмоде](#setflatmode)|Указывает, имеют ли кнопки поля со списком неструктурированный вид.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Чтобы добавить кнопку комбо-коробки в панель инструментов, выполните следующие действия:
+Чтобы добавить кнопку поля со списком на панель инструментов, выполните следующие действия.
 
-1. Зарезервируйте идентификатор ресурсов для кнопки в родительском ресурсе панели инструментов.
+1. Зарезервируйте идентификатор фиктивного ресурса для кнопки на родительском ресурсе панели инструментов.
 
-2. Постройте `CMFCToolBarComboBoxButton` объект.
+2. Создайте `CMFCToolBarComboBoxButton` объект.
 
-3. В обработчике сообщений, который обрабатывает AFX_WM_RESETTOOLBAR сообщение, замените кнопку манекена новой кнопкой комбо-бокса с помощью [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton).
+3. В обработчике сообщений, обрабатывающем сообщение AFX_WM_RESETTOOLBAR, замените фиктивную кнопку на новое поле со списком, используя [CMFCToolBar:: реплацебуттон](../../mfc/reference/cmfctoolbar-class.md#replacebutton).
 
-Для получения дополнительной информации, [см. Walkthrough: Ввод контроля на панели инструментов](../../mfc/walkthrough-putting-controls-on-toolbars.md). Например, кнопку панели инструментов комбо-коробки см.
+Дополнительные сведения см. [в разделе Пошаговое руководство. размещение элементов управления на панелях инструментов](../../mfc/walkthrough-putting-controls-on-toolbars.md). Пример кнопки на панели инструментов для поля со списком см. в примере проекта Висуалстудиодемо.
 
 ## <a name="example"></a>Пример
 
-В приведенном ниже примере демонстрируется использование различных методов класса `CMFCToolBarComboBoxButton` . Пример показывает, как включить редактирование и комбо-боксы, установить вертикальное положение комбо кнопки коробки в приложении, установить высоту списка поле, когда он упал вниз, установить плоский стиль внешний вид комбо кнопки коробки в приложении, и установить текст в коробке редактирования кнопки комбо окно. Этот фрагмент кода является частью [образца демонстрации Visual Studio.](../../overview/visual-cpp-samples.md)
+В приведенном ниже примере демонстрируется использование различных методов класса `CMFCToolBarComboBoxButton` . В этом примере показано, как включить поля «Правка» и «поле со списком», установить вертикальное расположение кнопок поля со списком в приложении, установить высоту списка при его отправке, задать внешний вид кнопок поля со списком в приложении и задать текст в поле редактирования кнопки поля со списком. Этот фрагмент кода является частью [демонстрационного примера Visual Studio](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#36](../../mfc/codesnippet/cpp/cmfctoolbarcomboboxbutton-class_1.cpp)]
 [!code-cpp[NVC_MFC_VisualStudioDemo#37](../../mfc/codesnippet/cpp/cmfctoolbarcomboboxbutton-class_2.cpp)]
@@ -147,15 +148,15 @@ class CMFCToolBarComboBoxButton : public CMFCToolBarButton
 
 [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)
 
-[CMFCToolBarComboBoxButton](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md)
+[кмфктулбаркомбобоксбуттон](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md)
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxtoolbarcomboboxbutton.h
+**Заголовок:** афкстулбаркомбобоксбуттон. h
 
-## <a name="cmfctoolbarcomboboxbuttonadditem"></a><a name="additem"></a>CMFCToolBarComboButton:AddItem
+## <a name="cmfctoolbarcomboboxbuttonadditem"></a><a name="additem"></a> Кмфктулбаркомбобоксбуттон:: AddItem
 
-Придаток уникального элемента к ящику списка.
+Добавляет уникальный элемент в список.
 
 ```
 virtual INT_PTR AddItem(
@@ -165,25 +166,25 @@ virtual INT_PTR AddItem(
 
 ### <a name="parameters"></a>Параметры
 
-*lpszItem*<br/>
-(в) Текст элемента, чтобы добавить в поле списка.
+*лпсзитем*<br/>
+окне Текст элемента, добавляемого в список.
 
-*dwData*<br/>
-(в) Данные, связанные с элементом для добавления в поле списка.
+*двдата*<br/>
+окне Данные, связанные с элементом, добавляемым в список.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Индекс последнего элемента в поле списка.
+Индекс последнего элемента в списке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Не используйте этот метод при сортировке стиля коробки списка.
+Не используйте этот метод при сортировке стиля списка.
 
-Если текст элемента уже находится в поле списка, новые данные сохраняются вместе с существующим элементом. Поиск элемента является чувствительным к делу.
+Если текст элемента уже содержится в списке, новые данные сохраняются с существующим элементом. При поиске элемента учитывается регистр.
 
-## <a name="cmfctoolbarcomboboxbuttonaddsorteditem"></a><a name="addsorteditem"></a>CMFCToolBarComboButton::AddSortedItem
+## <a name="cmfctoolbarcomboboxbuttonaddsorteditem"></a><a name="addsorteditem"></a> Кмфктулбаркомбобоксбуттон:: Аддсортедитем
 
-Добавляет элемент в поле списка в порядке, определяемом методом [Сравнения.](#compare)
+Добавляет элемент в список в порядке, определенном методом [Compare](#compare) .
 
 ```
 virtual INT_PTR AddSortedItem(
@@ -193,23 +194,23 @@ virtual INT_PTR AddSortedItem(
 
 ### <a name="parameters"></a>Параметры
 
-*lpszItem*<br/>
-(в) Текст элемента, чтобы добавить в поле списка.
+*лпсзитем*<br/>
+окне Текст элемента, добавляемого в список.
 
-*dwData*<br/>
-(в) Данные, связанные с элементом для добавления в поле списка.
+*двдата*<br/>
+окне Данные, связанные с элементом, добавляемым в список.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Индекс элемента, который был добавлен в поле списка.
+Индекс элемента, который был добавлен в список.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте эту функцию, чтобы добавить элементы в поле списка в определенном порядке.
+Эта функция используется для добавления элементов в список в определенном порядке.
 
-## <a name="cmfctoolbarcomboboxbuttoncanbestretched"></a><a name="canbestretched"></a>CMFCToolBarComboBoxButton::CanBeStretched
+## <a name="cmfctoolbarcomboboxbuttoncanbestretched"></a><a name="canbestretched"></a> Кмфктулбаркомбобоксбуттон:: Канбестретчед
 
-Указывает, может ли изменяться размер кнопки комбо-коробки.
+Указывает, может ли измениться размер кнопки поля со списком.
 
 ```
 virtual BOOL CanBeStretched() const;
@@ -217,11 +218,11 @@ virtual BOOL CanBeStretched() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает TRUE.
+Возвращает значение TRUE.
 
-## <a name="cmfctoolbarcomboboxbuttoncmfctoolbarcomboboxbutton"></a><a name="cmfctoolbarcomboboxbutton"></a>CMFCToolBarComboBoxButton::CMFCToolBarComboBoxButton
+## <a name="cmfctoolbarcomboboxbuttoncmfctoolbarcomboboxbutton"></a><a name="cmfctoolbarcomboboxbutton"></a> Кмфктулбаркомбобоксбуттон:: Кмфктулбаркомбобоксбуттон
 
-Строит объект [CMFCToolBarComboButtonButton.](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md)
+Конструирует объект [кмфктулбаркомбобоксбуттон](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md) .
 
 ```
 CMFCToolBarComboBoxButton(
@@ -234,36 +235,36 @@ CMFCToolBarComboBoxButton(
 ### <a name="parameters"></a>Параметры
 
 *uiID*<br/>
-(в) Идентификатор команды новой кнопки.
+окне Идентификатор команды новой кнопки.
 
-*iImage*<br/>
-(в) Индекс изображения, связанный с новой кнопкой.
+*иимаже*<br/>
+окне Индекс изображения, связанного с кнопкой "создать".
 
-*dwStyle*<br/>
-(в) Стиль новой кнопки.
+*двстиле*<br/>
+окне Стиль кнопки "создать".
 
-*iWidth*<br/>
-(в) Ширина, в пикселях, новой кнопки.
+*ивидс*<br/>
+окне Ширина (в пикселях) кнопки "создать".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Ширина по умолчанию составляет 150 пикселей.
+Ширина по умолчанию — 150 пикселей.
 
-Для списка стилей кнопок панели инструментов смотрите [стили управления панели инструментов](../../mfc/reference/toolbar-control-styles.md)
+Список стилей кнопок панели инструментов см. в разделе [стили элементов управления ToolBar](../../mfc/reference/toolbar-control-styles.md) .
 
-## <a name="cmfctoolbarcomboboxbuttoncleardata"></a><a name="cleardata"></a>CMFCToolBarComboBoxButton::ClearData
+## <a name="cmfctoolbarcomboboxbuttoncleardata"></a><a name="cleardata"></a> Кмфктулбаркомбобоксбуттон:: Клеардата
 
-Удаляет данные, определяемые пользователем.
+Удаляет определяемые пользователем данные.
 
 ```
 virtual void ClearData();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-По умолчанию этот метод ничего не делает. Переопределить этот метод в производном классе, если вы хотите удалить любые данные, определяемые пользователем.
+По умолчанию этот метод не выполняет никаких действий. Переопределите этот метод в производном классе, если хотите удалить все определяемые пользователем данные.
 
-## <a name="cmfctoolbarcomboboxbuttoncompare"></a><a name="compare"></a>CMFCToolBarComboBoxButton::Сравните
+## <a name="cmfctoolbarcomboboxbuttoncompare"></a><a name="compare"></a> Кмфктулбаркомбобоксбуттон:: Compare
 
 Сравнивает две строки.
 
@@ -276,32 +277,32 @@ virtual int Compare(
 ### <a name="parameters"></a>Параметры
 
 *lpszItem1*<br/>
-(в) Первая строка для сравнения.
+окне Первая сравниваемая строка.
 
 *lpszItem2*<br/>
-(в) Вторая строка для сравнения.
+окне Вторая сравниваемая строка.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Значение, указывавое на чувствительную к случаю лексикографическую связь между строками. В следующем списке указаны возможные значения.
+Значение, указывающее лексикографическим порядком связь с учетом регистра между строками. В следующем списке указаны возможные значения.
 
 |Значение|Описание|
 |-----------|-----------------|
-|\<0|Первая строка меньше второй.|
-|0|Первая строка равна второй.|
-|> 0|Первая строка больше второй.|
+|\<0|Первая строка меньше, чем вторая.|
+|0|Первая строка равна второму.|
+|> 0|Первая строка больше, чем вторая.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переопределить этот метод, чтобы изменить способ сортировки элементов в поле списка.
+Переопределите этот метод, чтобы изменить порядок сортировки элементов в списке.
 
-Сравнение является чувствительным к делу.
+При сравнении учитывается регистр.
 
-Этот метод называется только из метода [AddSortedItem.](#addsorteditem)
+Этот метод вызывается только из метода [аддсортедитем](#addsorteditem) .
 
-## <a name="cmfctoolbarcomboboxbuttoncopyfrom"></a><a name="copyfrom"></a>CMFCToolBarComboButton::CopyFrom
+## <a name="cmfctoolbarcomboboxbuttoncopyfrom"></a><a name="copyfrom"></a> Кмфктулбаркомбобоксбуттон:: CopyFrom
 
-Копирует состояние указанного `CMFCToolBarComboBoxButton` к текущему объекту.
+Копирует состояние указанного `CMFCToolBarComboBoxButton` объекта в текущий объект.
 
 ```
 virtual void CopyFrom(const CMFCToolBarButton& src);
@@ -310,11 +311,11 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ### <a name="parameters"></a>Параметры
 
 *src*<br/>
-(в) Объект `CMFCToolBarComboBoxButton` исходного кода.
+окне Исходный `CMFCToolBarComboBoxButton` объект.
 
-## <a name="cmfctoolbarcomboboxbuttoncreatecombo"></a><a name="createcombo"></a>CMFCToolBarComboButtonButton::CreateCombo
+## <a name="cmfctoolbarcomboboxbuttoncreatecombo"></a><a name="createcombo"></a> Кмфктулбаркомбобоксбуттон:: Креатекомбо
 
-Создает новую комбо-коробку для кнопки комбо-бокс.
+Создает новое поле со списком для кнопки поля со списком.
 
 ```
 virtual CComboBox* CreateCombo(
@@ -324,19 +325,19 @@ virtual CComboBox* CreateCombo(
 
 ### <a name="parameters"></a>Параметры
 
-*pWndParent*<br/>
-(в) Указатель на родительское окно кнопки.
+*пвндпарент*<br/>
+окне Указатель на родительское окно кнопки.
 
 *rect*<br/>
-(в) Связанный прямоугольник комбо-коробки.
+окне Ограничивающий прямоугольник поля со списком.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на новую комбо-коробку, если метод был успешным; в противном случае, NULL.
+Указатель на новое поле со списком, если метод был успешным; в противном случае значение NULL.
 
-## <a name="cmfctoolbarcomboboxbuttoncreateedit"></a><a name="createedit"></a>CMFCToolBarComboButton::CreateEdit
+## <a name="cmfctoolbarcomboboxbuttoncreateedit"></a><a name="createedit"></a> Кмфктулбаркомбобоксбуттон:: Креатидит
 
-Создает новую коробку для вставки для кнопки комбо-бокса.
+Создает новое поле ввода для кнопки поля со списком.
 
 ```
 virtual CMFCToolBarComboBoxEdit* CreateEdit(
@@ -347,26 +348,26 @@ virtual CMFCToolBarComboBoxEdit* CreateEdit(
 
 ### <a name="parameters"></a>Параметры
 
-*pWndParent*<br/>
-(в) Указатель на родительское окно кнопки.
+*пвндпарент*<br/>
+окне Указатель на родительское окно кнопки.
 
 *rect*<br/>
-(в) Связанный прямоугольник новой коробки для реитров.
+окне Ограничивающий прямоугольник нового поля ввода.
 
-*dwEditStyle*<br/>
-(в) Стиль управления новой коробкой для отсеивок.
+*дведитстиле*<br/>
+окне Стиль элемента управления для нового поля ввода.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на новую коробку для отогвечения, если метод был успешным; в противном случае, NULL.
+Указатель на новое поле ввода, если метод был успешным; в противном случае значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Рамочная система вызывает этот метод, когда создает новую коробку для комбо-бокса. Переопределить этот метод, чтобы изменить способ создания [CMFCToolBarComboBoxEdit.](../../mfc/reference/cmfctoolbarcomboboxedit-class.md)
+Платформа вызывает этот метод при создании нового поля ввода для кнопки со списком. Переопределите этот метод, чтобы изменить способ создания [кмфктулбаркомбобокседит](../../mfc/reference/cmfctoolbarcomboboxedit-class.md) .
 
-## <a name="cmfctoolbarcomboboxbuttondeleteitem"></a><a name="deleteitem"></a>CMFCToolBarComboButton::DeleteItem
+## <a name="cmfctoolbarcomboboxbuttondeleteitem"></a><a name="deleteitem"></a> Кмфктулбаркомбобоксбуттон::D Елетеитем
 
-Удаляет указанный элемент из окна списка.
+Удаляет указанный элемент из списка.
 
 ```
 BOOL DeleteItem(int iIndex);
@@ -376,36 +377,36 @@ BOOL DeleteItem(LPCTSTR lpszText);
 
 ### <a name="parameters"></a>Параметры
 
-*iIndex*<br/>
-(в) Нулевой индекс элемента, который будет удален.
+*ииндекс*<br/>
+окне Отсчитываемый от нуля индекс удаляемого элемента.
 
-*dwData*<br/>
-(в) Данные, связанные с элементом, который будет удален.
+*двдата*<br/>
+окне Данные, связанные с удаляемым элементом.
 
 *lpszText*<br/>
-(в) Текст элемента, который будет удален. Если есть несколько элементов с одним и тем же текстом, первый элемент удаляется.
+окне Текст удаляемого элемента. Если имеется несколько элементов с одинаковым текстом, первый элемент удаляется.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если элемент был обнаружен и успешно удален; в противном случае, FALSE.
+Значение TRUE, если элемент был найден и успешно удален; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctoolbarcomboboxbuttonduplicatedata"></a><a name="duplicatedata"></a>CMFCToolBarComboButton::DuplicateData
+## <a name="cmfctoolbarcomboboxbuttonduplicatedata"></a><a name="duplicatedata"></a> Кмфктулбаркомбобоксбуттон::D Упликатедата
 
-Дублирует данные, определяемые пользователем.
+Дублирует определяемые пользователем данные.
 
 ```
 virtual void DuplicateData();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-По умолчанию этот метод ничего не делает. Переопределить этот метод в производном классе, если вы хотите скопировать любые данные, определяемые пользователем.
+По умолчанию этот метод не выполняет никаких действий. Переопределите этот метод в производном классе, если нужно скопировать какие-либо пользовательские данные.
 
-## <a name="cmfctoolbarcomboboxbuttonenablewindow"></a><a name="enablewindow"></a>CMFCToolBarComboButtonButton:EnableWindow
+## <a name="cmfctoolbarcomboboxbuttonenablewindow"></a><a name="enablewindow"></a> Кмфктулбаркомбобоксбуттон:: Енаблевиндов
 
-Позволяет или отстраняет от депонирований и комбо-боксов.
+Включает или отключает поля "Изменить" и "поле со списком".
 
 ```
 virtual void EnableWindow(BOOL bEnable = TRUE);
@@ -414,15 +415,15 @@ virtual void EnableWindow(BOOL bEnable = TRUE);
 ### <a name="parameters"></a>Параметры
 
 *bEnable*<br/>
-(в) TRUE для включения в него и комбо-коробок; FALSE отключить отодевать и комбо-боксы.
+окне Значение TRUE, чтобы включить поля "Изменить" и "поле со списком"; Значение FALSE, чтобы отключить поля "Изменить" и "поле со списком".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-При отключении элементы управления не могут стать активными и не могут принимать пользовательский ввод.
+При отключении элементы управления не могут стать активными и не могут принимать данные, вводимые пользователем.
 
-## <a name="cmfctoolbarcomboboxbuttonexporttomenubutton"></a><a name="exporttomenubutton"></a>CMFCToolBarComboBoxButton::ExportToMenuButton
+## <a name="cmfctoolbarcomboboxbuttonexporttomenubutton"></a><a name="exporttomenubutton"></a> Кмфктулбаркомбобоксбуттон:: Експорттоменубуттон
 
-Копирует строку из строки приложения в указанное меню с помощью идентификатора команды командного окна комбо-бокса.
+Копирует строку из таблицы строк приложения в указанное меню с помощью кнопки поля со списком Идентификатор команды.
 
 ```
 virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
@@ -430,16 +431,16 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 
 ### <a name="parameters"></a>Параметры
 
-*менюButton*<br/>
-(ваут) Ссылка на кнопку меню.
+*менубуттон*<br/>
+заполняет Ссылка на кнопку меню.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Всегда TRUE.
 
-## <a name="cmfctoolbarcomboboxbuttonfinditem"></a><a name="finditem"></a>CMFCToolBarComboButton::FindItem
+## <a name="cmfctoolbarcomboboxbuttonfinditem"></a><a name="finditem"></a> Кмфктулбаркомбобоксбуттон:: FindItem
 
-Возвращает индекс первого элемента в поле списка, содержащем указанную строку.
+Возвращает индекс первого элемента в списке, содержащего указанную строку.
 
 ```
 int FindItem(LPCTSTR lpszText) const;
@@ -448,17 +449,17 @@ int FindItem(LPCTSTR lpszText) const;
 ### <a name="parameters"></a>Параметры
 
 *lpszText*<br/>
-(в) Текст, для которого можно искать в поле списка.
+окне Текст, для которого необходимо выполнить поиск в списке.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Индекс товара; или CB_ERR, если элемент не найден.
+Индекс элемента; или CB_ERR, если элемент не найден.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctoolbarcomboboxbuttongetbycmd"></a><a name="getbycmd"></a>CMFCToolBarComboButton::GetByCmd
+## <a name="cmfctoolbarcomboboxbuttongetbycmd"></a><a name="getbycmd"></a> Кмфктулбаркомбобоксбуттон:: Жетбикмд
 
-Получает указатель на кнопку комбо-бокса с указанным идентификатором команды.
+Возвращает указатель на кнопку поля со списком, имеющий указанный идентификатор команды.
 
 ```
 static CMFCToolBarComboBoxButton* GetByCmd(
@@ -468,21 +469,21 @@ static CMFCToolBarComboBoxButton* GetByCmd(
 
 ### <a name="parameters"></a>Параметры
 
-*uiCmd*<br/>
-(в) Идентификатор команды кнопки комбо-бокса.
+*уикмд*<br/>
+окне Идентификатор команды для поля со списком.
 
-*bIsFocus*<br/>
-(в) TRUE для поиска только сфокусированных кнопок; FALSE для поиска всех кнопок.
+*бисфокус*<br/>
+окне Значение TRUE для поиска только кнопок с упором; Значение FALSE для поиска всех кнопок.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на кнопку комбо-бокс; или NULL, если кнопка не найдена.
+Указатель на кнопку поля со списком; или значение NULL, если кнопка не найдена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctoolbarcomboboxbuttongetcombobox"></a><a name="getcombobox"></a>CMFCToolBarComboButtonButton::GetComboBox
+## <a name="cmfctoolbarcomboboxbuttongetcombobox"></a><a name="getcombobox"></a> Кмфктулбаркомбобоксбуттон:: падающее поле
 
-Возвращает указатель на комбо-бокс в кнопке комбо-бокса.
+Возвращает указатель на поле со списком в кнопке со списком.
 
 ```
 CComboBox* GetComboBox() const;
@@ -490,13 +491,13 @@ CComboBox* GetComboBox() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на объект [класса CComboBox,](../../mfc/reference/ccombobox-class.md) если метод был успешным; в противном случае NULL.
+Указатель на объект [класса CComboBox](../../mfc/reference/ccombobox-class.md) , если метод был успешным; в противном случае — NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctoolbarcomboboxbuttongetcontextmenuid"></a><a name="getcontextmenuid"></a>CMFCToolBarComboBoxButton::GetContextMenuID
+## <a name="cmfctoolbarcomboboxbuttongetcontextmenuid"></a><a name="getcontextmenuid"></a> Кмфктулбаркомбобоксбуттон:: Жетконтекстменуид
 
-Получает идентификатор ресурса меню shortcut для кнопки комбо-бокса.
+Возвращает идентификатор ресурса контекстного меню для кнопки поля со списком.
 
 ```
 UINT GetContextMenuID();
@@ -504,11 +505,11 @@ UINT GetContextMenuID();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Идентификатор ресурса меню ярлыка.
+Идентификатор ресурса контекстного меню.
 
-## <a name="cmfctoolbarcomboboxbuttongetcount"></a><a name="getcount"></a>CMFCToolBarComboButton::GetCount
+## <a name="cmfctoolbarcomboboxbuttongetcount"></a><a name="getcount"></a> Кмфктулбаркомбобоксбуттон:: NOCOUNT
 
-Возвращает количество элементов в поле списка.
+Возвращает количество элементов в списке.
 
 ```
 INT_PTR GetCount() const;
@@ -516,13 +517,13 @@ INT_PTR GetCount() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Количество элементов в поле списка.
+Число элементов в списке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctoolbarcomboboxbuttongetcountall"></a><a name="getcountall"></a>CMFCToolBarComboButtonButton::GetCountAll
+## <a name="cmfctoolbarcomboboxbuttongetcountall"></a><a name="getcountall"></a> Кмфктулбаркомбобоксбуттон:: Жеткаунталл
 
-Получает количество элементов в поле списка кнопки комбо-бокс, которая имеет указанный идентификатор команды.
+Возвращает число элементов в списке кнопки поля со списком, имеющей указанный идентификатор команды.
 
 ```
 static int GetCountAll(UINT uiCmd);
@@ -530,18 +531,18 @@ static int GetCountAll(UINT uiCmd);
 
 ### <a name="parameters"></a>Параметры
 
-*uiCmd*<br/>
-(в) Идентификатор команды кнопки комбо-бокса.
+*уикмд*<br/>
+окне Идентификатор команды для поля со списком.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Количество элементов в поле списка; в противном случае, CB_ERR, если кнопка комбо-бокс не найдена.
+Число элементов в списке; в противном случае CB_ERR, если не найдена кнопка поля со списком.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctoolbarcomboboxbuttongetcursel"></a><a name="getcursel"></a>CMFCToolBarComboButton::GetCurSel
+## <a name="cmfctoolbarcomboboxbuttongetcursel"></a><a name="getcursel"></a> Кмфктулбаркомбобоксбуттон:: рекурсивно
 
-Получает индекс выбранного в настоящее время элемента в поле списка.
+Возвращает индекс выбранного в данный момент элемента в списке.
 
 ```
 int GetCurSel() const;
@@ -549,15 +550,15 @@ int GetCurSel() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Индекс выбранного в настоящее время элемента в поле списка; или CB_ERR, если нет элемента выбран.
+Индекс текущего выбранного элемента в списке; или CB_ERR, если элемент не выбран.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Индекс коробки списка обнуляется с нулевым уровнем.
+Индекс в списке отсчитывается от нуля.
 
-## <a name="cmfctoolbarcomboboxbuttongetcurselall"></a><a name="getcurselall"></a>CMFCToolBarComboButtonButton::GetCurSelall
+## <a name="cmfctoolbarcomboboxbuttongetcurselall"></a><a name="getcurselall"></a> Кмфктулбаркомбобоксбуттон:: Жеткурселалл
 
-Возвращает индекс выбранного в настоящее время элемента в поле списка кнопки комбо-бокса с указанным идентификатором команды.
+Возвращает индекс текущего выбранного элемента в списке кнопки поля со списком, имеющей указанный идентификатор команды.
 
 ```
 static int GetCurSelAll(UINT uiCmd);
@@ -565,20 +566,20 @@ static int GetCurSelAll(UINT uiCmd);
 
 ### <a name="parameters"></a>Параметры
 
-*uiCmd*<br/>
-(в) Идентификатор команды кнопки комбо-бокса.
+*уикмд*<br/>
+окне Идентификатор команды для поля со списком.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Индекс выбранного в настоящее время элемента в поле списка; в противном случае, CB_ERR, если нет пункта выбран или кнопка комбо-бокс не найдена.
+Индекс текущего выбранного элемента в списке; в противном случае CB_ERR, если элемент не выбран или не найдена кнопка поля со списком.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Индекс коробки списка обнуляется с нулевым уровнем.
+Индекс в списке отсчитывается от нуля.
 
-## <a name="cmfctoolbarcomboboxbuttongeteditctrl"></a><a name="geteditctrl"></a>CMFCToolBarComboButton::GetEditCtrl
+## <a name="cmfctoolbarcomboboxbuttongeteditctrl"></a><a name="geteditctrl"></a> Кмфктулбаркомбобоксбуттон:: Жетедитктрл
 
-Возвращает указатель в коробку для отсечения в кнопке комбо-бокса.
+Возвращает указатель на поле ввода в поле со списком.
 
 ```
 virtual CEdit* GetEditCtrl();
@@ -586,13 +587,13 @@ virtual CEdit* GetEditCtrl();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на отославательную к коробке для отосващения, если метод был успешным; в противном случае, NULL.
+Указатель на поле ввода, если метод был успешным; в противном случае значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctoolbarcomboboxbuttongethwnd"></a><a name="gethwnd"></a>CMFCToolBarComboButton::GetHwnd
+## <a name="cmfctoolbarcomboboxbuttongethwnd"></a><a name="gethwnd"></a> Кмфктулбаркомбобоксбуттон:: "HWND"
 
-Возвращает ручку окна для комбо-коробки.
+Возвращает маркер окна для поля со списком.
 
 ```
 virtual HWND GetHwnd();
@@ -600,11 +601,11 @@ virtual HWND GetHwnd();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Ручка окна, или NULL, если комбо-коробка не связана с объектом окна.
+Обработчик окна или значение NULL, если поле со списком не связано с объектом окна.
 
-## <a name="cmfctoolbarcomboboxbuttongetitem"></a><a name="getitem"></a>CMFCToolBarComboBoxButton::GetItem
+## <a name="cmfctoolbarcomboboxbuttongetitem"></a><a name="getitem"></a> Кмфктулбаркомбобоксбуттон:: DataItem
 
-Возвращает строку, связанную с элементом в указанном индексе, в поле списка.
+Возвращает строку, связанную с элементом по указанному индексу в поле со списком.
 
 ```
 LPCTSTR GetItem(int iIndex=-1) const;
@@ -612,20 +613,20 @@ LPCTSTR GetItem(int iIndex=-1) const;
 
 ### <a name="parameters"></a>Параметры
 
-*iIndex*<br/>
-(в) Нулевой индекс элемента в поле списка.
+*ииндекс*<br/>
+окне Отсчитываемый от нуля индекс элемента в списке.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на строку, связанную с элементом; в противном случае, NULL, если параметр индекса является недействительным, или если параметр индекса -1 и нет выбранного элемента в комбо-коробке.
+Указатель на строку, связанную с элементом; в противном случае значение NULL, если параметр индекса является недопустимым, или если параметр индекса имеет значение-1 и в поле со списком не выбран элемент.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Параметр индекса -1 возвращает строку выбранного в настоящее время элемента.
+Параметр индекса-1 возвращает строку выбранного в данный момент элемента.
 
-## <a name="cmfctoolbarcomboboxbuttongetitemall"></a><a name="getitemall"></a>CMFCToolBarComboBoxButton::GetItemAll
+## <a name="cmfctoolbarcomboboxbuttongetitemall"></a><a name="getitemall"></a> Кмфктулбаркомбобоксбуттон:: Жетитемалл
 
-Возвращает строку, связанную с элементом в указанном индексе, в поле списка кнопки комбо-бокса с указанным идентификатором команды.
+Возвращает строку, связанную с элементом по указанному индексу в поле со списком кнопки поля со списком, имеющей указанный идентификатор команды.
 
 ```
 static LPCTSTR GetItemAll(
@@ -635,23 +636,23 @@ static LPCTSTR GetItemAll(
 
 ### <a name="parameters"></a>Параметры
 
-*uiCmd*<br/>
-(в) Идентификатор команды кнопки комбо-бокса.
+*уикмд*<br/>
+окне Идентификатор команды для поля со списком.
 
-*iIndex*<br/>
-(в) Индекс элемента с нулевым уровнем в поле списка.
+*ииндекс*<br/>
+окне Отсчитываемый от нуля индекс элемента в списке.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на строку элемента, если метод был успешным; в противном случае, NULL, если индекс недействителен, кнопка комбо-бокса не найдена, или если индекс -1 и нет выбранного элемента в комбо-коробке.
+Указатель на строку элемента, если метод был успешным; в противном случае значение NULL, если индекс недопустим, кнопка поля со списком не найдена или если индекс равен-1 и в поле со списком не выбран элемент.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Значение индекса -1 возвращает строку выбранного в настоящее время элемента.
+Значение индекса, равное-1, возвращает строку выбранного в данный момент элемента.
 
-## <a name="cmfctoolbarcomboboxbuttongetitemdata"></a><a name="getitemdata"></a>CMFCToolBarComboBoxButton::GetItemData
+## <a name="cmfctoolbarcomboboxbuttongetitemdata"></a><a name="getitemdata"></a> Кмфктулбаркомбобоксбуттон:: Жетитемдата
 
-Возвращает данные, связанные с элементом, в определенном индексе в поле списка.
+Возвращает данные, связанные с элементом по указанному индексу в поле со списком.
 
 ```
 DWORD_PTR GetItemData(int iIndex=-1) const;
@@ -659,20 +660,20 @@ DWORD_PTR GetItemData(int iIndex=-1) const;
 
 ### <a name="parameters"></a>Параметры
 
-*iIndex*<br/>
-(в) Индекс элемента с нулевым уровнем в поле списка.
+*ииндекс*<br/>
+окне Отсчитываемый от нуля индекс элемента в списке.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Данные, связанные с элементом; или 0, если элемент не существует.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Параметр индекса -1 возвращает данные, связанные с выбранным в настоящее время элементом.
+Параметр индекса-1 возвращает данные, связанные с текущим выбранным элементом.
 
-## <a name="cmfctoolbarcomboboxbuttongetitemdataall"></a><a name="getitemdataall"></a>CMFCToolBarComboBoxButton::GetItemDataAll
+## <a name="cmfctoolbarcomboboxbuttongetitemdataall"></a><a name="getitemdataall"></a> Кмфктулбаркомбобоксбуттон:: Жетитемдатаалл
 
-Возвращает данные, связанные с элементом в определенном индексе, в поле списка кнопки комбо-бокса с определенным идентификатором команды.
+Возвращает данные, связанные с элементом по указанному индексу в поле со списком кнопки поля со списком, имеющей конкретный идентификатор команды.
 
 ```
 static DWORD_PTR GetItemDataAll(
@@ -682,23 +683,23 @@ static DWORD_PTR GetItemDataAll(
 
 ### <a name="parameters"></a>Параметры
 
-*uiCmd*<br/>
-(в) Идентификатор команды кнопки комбо-бокса.
+*уикмд*<br/>
+окне Идентификатор команды для поля со списком.
 
-*iIndex*<br/>
-(в) Индекс элемента с нулевым уровнем в поле списка.
+*ииндекс*<br/>
+окне Отсчитываемый от нуля индекс элемента в списке.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Данные, связанные с элементом, если метод был успешным; в противном случае 0, если указанный индекс не действителен, или CB_ERR, если кнопка комбо-бокса не найдена.
+Данные, связанные с элементом, если метод был успешным; в противном случае значение 0, если указанный индекс является недопустимым, или CB_ERR, если не найдена кнопка поля со списком.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Параметр индекса -1 возвращает данные, связанные с выбранным в настоящее время элементом.
+Параметр индекса-1 возвращает данные, связанные с текущим выбранным элементом.
 
-## <a name="cmfctoolbarcomboboxbuttongetitemdataptrall"></a><a name="getitemdataptrall"></a>CMFCToolBarComboBoxButton::GetItemDataPtrAll
+## <a name="cmfctoolbarcomboboxbuttongetitemdataptrall"></a><a name="getitemdataptrall"></a> Кмфктулбаркомбобоксбуттон:: Жетитемдатаптралл
 
-Возвращает данные, связанные с элементом в определенном индексе, в поле списка кнопки комбо-бокса с определенным идентификатором команды. Эти данные возвращаются в виде указателя.
+Возвращает данные, связанные с элементом по указанному индексу в поле со списком кнопки поля со списком, имеющей конкретный идентификатор команды. Эти данные возвращаются в виде указателя.
 
 ```
 static void* GetItemDataPtrAll(
@@ -708,21 +709,21 @@ static void* GetItemDataPtrAll(
 
 ### <a name="parameters"></a>Параметры
 
-*uiCmd*<br/>
-(в) Идентификатор команды кнопки комбо-бокса.
+*уикмд*<br/>
+окне Идентификатор команды для поля со списком.
 
-*iIndex*<br/>
-(в) Индекс элемента с нулевым уровнем в поле списка.
+*ииндекс*<br/>
+окне Отсчитываемый от нуля индекс элемента в списке.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель, связанный с элементом, если метод был успешным; в противном случае, -1, если ошибка происходит, или NULL, если кнопка комбо-бокс не найдена.
+Указатель, связанный с элементом, если метод был успешным; в противном случае — значение-1, если возникает ошибка, или NULL, если кнопка со списком не найдена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctoolbarcomboboxbuttongetprompt"></a><a name="getprompt"></a>CMFCToolBarComboButton::GetPrompt
+## <a name="cmfctoolbarcomboboxbuttongetprompt"></a><a name="getprompt"></a> Кмфктулбаркомбобоксбуттон:: @ Prompt
 
-Возвращает строку для кнопки комбо-бокса.
+Возвращает строку запроса для кнопки поля со списком.
 
 ```
 virtual CString GetPrompt() const;
@@ -732,13 +733,13 @@ virtual CString GetPrompt() const;
 
 Строка запроса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод в настоящее время не реализован.
 
-## <a name="cmfctoolbarcomboboxbuttongettext"></a><a name="gettext"></a>CMFCToolBarComboButton::GetText
+## <a name="cmfctoolbarcomboboxbuttongettext"></a><a name="gettext"></a> Кмфктулбаркомбобоксбуттон:: GetText
 
-Получает текст в коробке редактирования.
+Возвращает текст в поле ввода.
 
 ```
 LPCTSTR GetText() const;
@@ -746,13 +747,13 @@ LPCTSTR GetText() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Текст в коробке редактирования.
+Текст в поле ввода.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctoolbarcomboboxbuttongettextall"></a><a name="gettextall"></a>CMFCToolBarComboButton::GetTextAll
+## <a name="cmfctoolbarcomboboxbuttongettextall"></a><a name="gettextall"></a> Кмфктулбаркомбобоксбуттон:: Жеттексталл
 
-Получает текст в коробке редактирования кнопки комбо-бокс, которая имеет указанный идентификатор команды.
+Получает текст в поле ввода кнопки поля со списком, имеющей указанный идентификатор команды.
 
 ```
 static LPCTSTR GetTextAll(UINT uiCmd);
@@ -760,18 +761,18 @@ static LPCTSTR GetTextAll(UINT uiCmd);
 
 ### <a name="parameters"></a>Параметры
 
-*uiCmd*<br/>
-(в) Идентификатор команды определенной кнопки комбо-бокса.
+*уикмд*<br/>
+окне Идентификатор команды определенного поля со списком.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Текст в коробке редактирования, если метод был успешным; в противном случае, NULL.
+Текст в поле ввода, если метод был успешным; в противном случае значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctoolbarcomboboxbuttonhasfocus"></a><a name="hasfocus"></a>CMFCToolBarComboButton::HasFocus
+## <a name="cmfctoolbarcomboboxbuttonhasfocus"></a><a name="hasfocus"></a> Кмфктулбаркомбобоксбуттон:: Хасфокус
 
-Указывает ли комбо-бокс в настоящее время находится в центре внимания.
+Указывает, находится ли фокус в поле со списком в данный момент.
 
 ```
 virtual BOOL HasFocus() const;
@@ -779,15 +780,15 @@ virtual BOOL HasFocus() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если комбо-бокс в настоящее время находится в центре внимания; в противном случае, FALSE.
+Значение TRUE, если поле со списком в данный момент имеет фокус; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод также возвращает TRUE, если любое окно ребенка комбо-бокс в настоящее время находится в центре внимания.
+Этот метод также возвращает значение TRUE, если любое дочернее окно поля со списком в данный момент имеет фокус.
 
-## <a name="cmfctoolbarcomboboxbuttoniscentervert"></a><a name="iscentervert"></a>CMFCToolBarComboButton::IsCenterVert
+## <a name="cmfctoolbarcomboboxbuttoniscentervert"></a><a name="iscentervert"></a> Кмфктулбаркомбобоксбуттон:: Исцентерверт
 
-Возвращает вертикальное положение комбо-боксов в приложении.
+Возвращает вертикальное расположение кнопок со списком в приложении.
 
 ```
 static BOOL IsCenterVert();
@@ -795,13 +796,13 @@ static BOOL IsCenterVert();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если кнопки по центру; FALSE, если кнопки выровнены в верхней части.
+Значение TRUE, если кнопки центрируются по центру; Значение FALSE, если кнопки вычисляются сверху.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctoolbarcomboboxbuttonisflatmode"></a><a name="isflatmode"></a>CMFCToolBarComboButton::IsFlatMode
+## <a name="cmfctoolbarcomboboxbuttonisflatmode"></a><a name="isflatmode"></a> Кмфктулбаркомбобоксбуттон:: Исфлатмоде
 
-Возвращает плоский стиль внешний вид комбо кнопки коробки в приложении.
+Возвращает внешний вид кнопок со списком в приложении в плоском стиле.
 
 ```
 static BOOL IsFlatMode();
@@ -809,15 +810,15 @@ static BOOL IsFlatMode();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если кнопки имеют плоский стиль; в противном случае, FALSE.
+Значение TRUE, если кнопки имеют плоский стиль; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Плоский стиль по умолчанию для кнопок комбо-бокса FALSE.
+Неструктурированный стиль по умолчанию для кнопок со списком имеет значение FALSE.
 
-## <a name="cmfctoolbarcomboboxbuttonisownerof"></a><a name="isownerof"></a>CMFCToolBarComboBoxButton::Isownerof
+## <a name="cmfctoolbarcomboboxbuttonisownerof"></a><a name="isownerof"></a> Кмфктулбаркомбобоксбуттон:: Исовнероф
 
-Указывает, связана ли указанная ручка с кнопкой комбо-бокса или с одним из ее детей.
+Указывает, связан ли указанный маркер с кнопкой поля со списком или с одним из его дочерних элементов.
 
 ```
 virtual BOOL IsOwnerOf(HWND hwnd);
@@ -825,16 +826,16 @@ virtual BOOL IsOwnerOf(HWND hwnd);
 
 ### <a name="parameters"></a>Параметры
 
-*Hwnd*<br/>
-(в) Ручка окна.
+*HWND*<br/>
+окне Обработчик окна.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если ручка assocated с кнопкой комбо окно, или один из его детей; в противном случае, FALSE.
+Значение TRUE, если маркер ассокатед с кнопкой поля со списком или одним из его дочерних элементов. в противном случае — значение FALSE.
 
-## <a name="cmfctoolbarcomboboxbuttonisribbonbutton"></a><a name="isribbonbutton"></a>CMFCToolBarComboButton::IsRibbonButton
+## <a name="cmfctoolbarcomboboxbuttonisribbonbutton"></a><a name="isribbonbutton"></a> Кмфктулбаркомбобоксбуттон:: Исриббонбуттон
 
-Указывает, находится ли кнопка комбо-бокса на ленточной панели.
+Указывает, расположена ли кнопка поля со списком на панели ленты.
 
 ```
 BOOL IsRibbonButton() const;
@@ -846,11 +847,11 @@ BOOL IsRibbonButton() const;
 
 ### <a name="remarks"></a>Remarks
 
-По умолчанию этот метод всегда возвращает FALSE, что означает, что кнопка комбо-бокса никогда не отображается на ленточной панели.
+По умолчанию этот метод всегда возвращает значение FALSE, означающее, что кнопка со списком никогда не отображается на панели ленты.
 
-## <a name="cmfctoolbarcomboboxbuttoniswindowvisible"></a><a name="iswindowvisible"></a>CMFCToolBarComboButton::ОкноВидимо
+## <a name="cmfctoolbarcomboboxbuttoniswindowvisible"></a><a name="iswindowvisible"></a> Кмфктулбаркомбобоксбуттон:: Исвиндоввисибле
 
-Возвращает состояние видимости кнопки комбо-бокса.
+Возвращает состояние видимости кнопки поля со списком.
 
 ```
 virtual BOOL IsWindowVisible();
@@ -858,11 +859,11 @@ virtual BOOL IsWindowVisible();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Состояние видимости кнопки комбо-бокса.
+Состояние видимости кнопки поля со списком.
 
-## <a name="cmfctoolbarcomboboxbuttonnotifycommand"></a><a name="notifycommand"></a>CMFCToolBarComboButtonButton::NotifyCommand
+## <a name="cmfctoolbarcomboboxbuttonnotifycommand"></a><a name="notifycommand"></a> Кмфктулбаркомбобоксбуттон:: Нотификомманд
 
-Указывает, обрабатывает ли сообщение кнопку комбо-бокса.
+Указывает, обрабатывает ли кнопка поля со списком сообщение.
 
 ```
 virtual BOOL NotifyCommand(int iNotifyCode);
@@ -870,24 +871,24 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 
 ### <a name="parameters"></a>Параметры
 
-*iNotifyCode*<br/>
-(в) Сообщение об уведомлении, связанное с командой.
+*инотификоде*<br/>
+окне Сообщение уведомления, связанное с командой.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Ли кнопка комбо окно обрабатывает сообщение.
+Обрабатывает ли кнопка поля со списком сообщение.
 
-## <a name="cmfctoolbarcomboboxbuttononaddtocustomizepage"></a><a name="onaddtocustomizepage"></a>CMFCToolBarComboButton::OnAddTo CustomizePage
+## <a name="cmfctoolbarcomboboxbuttononaddtocustomizepage"></a><a name="onaddtocustomizepage"></a> Кмфктулбаркомбобоксбуттон:: Онаддтокустомизепаже
 
-Вызывается по фреймворку при добавлении кнопки в поле **настраиваемых** диалогов.
+Вызывается структурой при добавлении кнопки в диалоговое окно " **Настройка** ".
 
 ```
 virtual void OnAddToCustomizePage();
 ```
 
-## <a name="cmfctoolbarcomboboxbuttononcalculatesize"></a><a name="oncalculatesize"></a>CMFCToolBarComboBoxButton::OncalculateSize
+## <a name="cmfctoolbarcomboboxbuttononcalculatesize"></a><a name="oncalculatesize"></a> Кмфктулбаркомбобоксбуттон:: Онкалкулатесизе
 
-Вызывается по фрейму для расчета размера кнопки.
+Вызывается платформой для вычисления размера кнопки.
 
 ```
 virtual SIZE OnCalculateSize(
@@ -898,22 +899,22 @@ virtual SIZE OnCalculateSize(
 
 ### <a name="parameters"></a>Параметры
 
-*pDC*<br/>
-(в) Контекст устройства, отображающее кнопку комбо-бокса.
+*Хозяин*<br/>
+окне Контекст устройства, на котором отображается кнопка со списком.
 
-*размерПо умолчанию*<br/>
-(в) Размер по умолчанию кнопки комбо-бокса.
+*сизедефаулт*<br/>
+окне Размер по умолчанию кнопки поля со списком.
 
-*bHorz*<br/>
-(в) Состояние док-станции родительской панели инструментов. TRUE, когда панель инструментов пристыкована горизонтально и FALSE, когда панель инструментов пристыкована вертикально.
+*бхорз*<br/>
+окне Состояние закрепления родительской панели инструментов. Значение TRUE, если панель инструментов закреплена по горизонтали и FALSE, если панель инструментов закреплена по вертикали.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Структура, `SIZE` содержащая размеры кнопки комбо-бокса, в пикселях.
+`SIZE`Структура, содержащая размеры кнопки поля со списком в пикселях.
 
-## <a name="cmfctoolbarcomboboxbuttononchangeparentwnd"></a><a name="onchangeparentwnd"></a>CMFCToolBarComboButton::OnChangeParentWnd
+## <a name="cmfctoolbarcomboboxbuttononchangeparentwnd"></a><a name="onchangeparentwnd"></a> Кмфктулбаркомбобоксбуттон:: Ончанжепарентвнд
 
-Вызывается рамки, когда кнопка комбо-бокс вставляется в новую панель инструментов.
+Вызывается структурой при вставке кнопки поля со списком в новую панель инструментов.
 
 ```
 virtual void OnChangeParentWnd(CWnd* pWndParent);
@@ -921,12 +922,12 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 
 ### <a name="parameters"></a>Параметры
 
-*pWndParent*<br/>
-(в) Указатель на новую родительскую панель инструментов.
+*пвндпарент*<br/>
+окне Указатель на новую родительскую панель инструментов.
 
-## <a name="cmfctoolbarcomboboxbuttononclick"></a><a name="onclick"></a>CMFCToolBarComboButton::OnClick
+## <a name="cmfctoolbarcomboboxbuttononclick"></a><a name="onclick"></a> Кмфктулбаркомбобоксбуттон:: OnClick
 
-Вызывается по фреймворку, когда пользователь нажимает кнопку комбо-бокса.
+Вызывается структурой при нажатии пользователем кнопки со списком.
 
 ```
 virtual BOOL OnClick(
@@ -936,19 +937,19 @@ virtual BOOL OnClick(
 
 ### <a name="parameters"></a>Параметры
 
-*pWnd*<br/>
-(в) Указатель на родительское окно кнопки комбо-бокса.
+*Приводится*<br/>
+окне Указатель на родительское окно кнопки поля со списком.
 
-*bDelay*<br/>
-(в) Зарезервировано для использования в производном классе.
+*бделай*<br/>
+окне Зарезервировано для использования в производном классе.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если метод обрабатывает событие; в противном случае, FALSE.
+Значение TRUE, если метод обрабатывает событие; в противном случае — значение FALSE.
 
-## <a name="cmfctoolbarcomboboxbuttononctlcolor"></a><a name="onctlcolor"></a>CMFCToolBarComboButton::OnctlColor
+## <a name="cmfctoolbarcomboboxbuttononctlcolor"></a><a name="onctlcolor"></a> Кмфктулбаркомбобоксбуттон:: Онктлколор
 
-Вызывается рамки, когда пользователь изменяет цвет панели родительских инструментов, чтобы установить цвет кнопки комбо-бокса.
+Вызывается структурой, когда пользователь изменяет цвет родительской панели инструментов, устанавливая цвет кнопки поля со списком.
 
 ```
 virtual HBRUSH OnCtlColor(
@@ -958,23 +959,23 @@ virtual HBRUSH OnCtlColor(
 
 ### <a name="parameters"></a>Параметры
 
-*pDC*<br/>
-(в) Контекст устройства, отображающее кнопку комбо-бокса.
+*Хозяин*<br/>
+окне Контекст устройства, на котором отображается кнопка со списком.
 
-*nCtlColor*<br/>
+*нктлколор*<br/>
 [in] Не используется.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Ручка к кисти, что фреймворк использует для рисования фона кнопки комбо окно.
+Дескриптор кисти, используемой платформой для рисования фона кнопки поля со списком.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод также устанавливает цвет текста текста кнопки комбо коробки.
+Этот метод также задает цвет текста кнопки поля со списком.
 
-## <a name="cmfctoolbarcomboboxbuttonondraw"></a><a name="ondraw"></a>CMFCToolBarComboButton::Ondraw
+## <a name="cmfctoolbarcomboboxbuttonondraw"></a><a name="ondraw"></a> Кмфктулбаркомбобоксбуттон:: OnDraw
 
-Вызывается рамки, чтобы нарисовать кнопку комбо-бокс с помощью указанных стилей и опций.
+Вызывается платформой для рисования кнопки поля со списком с использованием указанных стилей и параметров.
 
 ```
 virtual void OnDraw(
@@ -990,33 +991,33 @@ virtual void OnDraw(
 
 ### <a name="parameters"></a>Параметры
 
-*Pdc*<br/>
-(в) Контекст устройства, отображаемый кнопкой.
+*Хозяин*<br/>
+окне Контекст устройства, на котором отображается кнопка.
 
 *rect*<br/>
-(в) Ограничивающий прямоугольник кнопки.
+окне Ограничивающий прямоугольник кнопки.
 
-*pImages*<br/>
-(в) Коллекция изображений, связанных с кнопкой.
+*пимажес*<br/>
+окне Коллекция изображений, связанных с кнопкой.
 
-*bHorz*<br/>
-(в) Состояние док-станции родительской панели инструментов. TRUE, когда панель инструментов пристыкована горизонтально и FALSE, когда панель инструментов пристыкована вертикально.
+*бхорз*<br/>
+окне Состояние закрепления родительской панели инструментов. Значение TRUE, если панель инструментов закреплена по горизонтали и FALSE, если панель инструментов закреплена по вертикали.
 
-*bCustomizeMode*<br/>
-(в) Находится ли приложение в режиме настройки.
+*бкустомиземоде*<br/>
+окне Находится ли приложение в режиме настройки.
 
-*bHighlight*<br/>
-(в) Следует ли нарисовать кнопку комбо-бокс выделено.
+*бхигхлигхт*<br/>
+окне Указывает, следует ли нарисовать выделенную кнопку поля со списком.
 
-*bDrawBorder*<br/>
-(в) Следует ли нарисовать кнопку комбо-бокс с границей.
+*бдравбордер*<br/>
+окне Следует ли нарисовать кнопку поля со списком с границей.
 
-*bGrayDisabledButtons*<br/>
-(в) TRUE для рисования затененных отключенных кнопок; FALSE для использования коллекции изображений с ограниченными возможностями.
+*бграйдисабледбуттонс*<br/>
+окне Значение TRUE для рисования затененных отключенных кнопок; Значение FALSE, чтобы использовать коллекцию отключенных изображений.
 
-## <a name="cmfctoolbarcomboboxbuttonondrawoncustomizelist"></a><a name="ondrawoncustomizelist"></a>CMFCToolBarComboButton::OnDrawOnCustomizeList
+## <a name="cmfctoolbarcomboboxbuttonondrawoncustomizelist"></a><a name="ondrawoncustomizelist"></a> Кмфктулбаркомбобоксбуттон:: Ондравонкустомизелист
 
-Вызывается рамки, чтобы нарисовать кнопку комбо-бокс в панели **команд** **настраиваемый** диалоговые окна.
+Вызывается платформой для рисования кнопки со списком в области **команд** диалогового окна **Настройка** .
 
 ```
 virtual int OnDrawOnCustomizeList(
@@ -1027,38 +1028,38 @@ virtual int OnDrawOnCustomizeList(
 
 ### <a name="parameters"></a>Параметры
 
-*pDC*<br/>
-(в) Контекст устройства, отображающее кнопку комбо-бокса.
+*Хозяин*<br/>
+окне Контекст устройства, на котором отображается кнопка со списком.
 
 *rect*<br/>
-(в) Ограничивающий прямоугольник кнопки комбо-бокса.
+окне Ограничивающий прямоугольник кнопки поля со списком.
 
-*bВыбор*<br/>
-(в) TRUE, если кнопка комбо-бокс выбрана; в противном случае, FALSE.
+*бселектед*<br/>
+окне Значение TRUE, если выбрана кнопка поля со списком. в противном случае — значение FALSE.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Ширина, в пикселях, кнопки комбо-бокса.
+Ширина (в пикселях) кнопки поля со списком.
 
-## <a name="cmfctoolbarcomboboxbuttononglobalfontschanged"></a><a name="onglobalfontschanged"></a>CMFCToolBarComboButton::OnGlobalFontsChanged
+## <a name="cmfctoolbarcomboboxbuttononglobalfontschanged"></a><a name="onglobalfontschanged"></a> Кмфктулбаркомбобоксбуттон:: Онглобалфонтсчанжед
 
-Вызывается рамки, чтобы установить комбо поле кнопки шрифта при изменении шрифта приложения.
+Вызывается платформой для установки шрифта кнопки поля со списком при изменении шрифта приложения.
 
 ```
 virtual void OnGlobalFontsChanged();
 ```
 
-## <a name="cmfctoolbarcomboboxbuttononmove"></a><a name="onmove"></a>CMFCToolBarComboButton::OnMove
+## <a name="cmfctoolbarcomboboxbuttononmove"></a><a name="onmove"></a> Кмфктулбаркомбобоксбуттон:: OnMove
 
-Вызывается фреймворком, чтобы изменить расположение кнопки комбо-бокса при перемещении родительской панели инструментов.
+Вызывается платформой для изменения положения кнопки поля со списком при перемещении родительской панели инструментов.
 
 ```
 virtual void OnMove();
 ```
 
-## <a name="cmfctoolbarcomboboxbuttononshow"></a><a name="onshow"></a>CMFCToolBarComboButton::OnShow
+## <a name="cmfctoolbarcomboboxbuttononshow"></a><a name="onshow"></a> Кмфктулбаркомбобоксбуттон:: onShow
 
-Вызывается рамки, когда кнопка комбо-бокс скрыта или отображается.
+Вызывается структурой при скрытии или отображении кнопки поля со списком.
 
 ```
 virtual void OnShow(BOOL bShow);
@@ -1067,11 +1068,11 @@ virtual void OnShow(BOOL bShow);
 ### <a name="parameters"></a>Параметры
 
 *bShow*<br/>
-(в) Спрячьте или отобразивкнопку кнопки комбо-бокса.
+окне Указывает, следует ли скрывать или отображать кнопку в поле со списком.
 
-## <a name="cmfctoolbarcomboboxbuttononsize"></a><a name="onsize"></a>CMFCToolBarComboBoxButton::Onsize
+## <a name="cmfctoolbarcomboboxbuttononsize"></a><a name="onsize"></a> Кмфктулбаркомбобоксбуттон:: OnSize
 
-Вызывается фреймворком, чтобы изменить размер кнопки комбо-коробки при изменении размера родительской панели инструментов.
+Вызывается платформой для изменения размера кнопки поля со списком при изменении размера родительской панели инструментов.
 
 ```
 virtual void OnSize(int iSize);
@@ -1079,12 +1080,12 @@ virtual void OnSize(int iSize);
 
 ### <a name="parameters"></a>Параметры
 
-*iSize*<br/>
-(в) Новая ширина кнопки комбо-бокса.
+*исизе*<br/>
+окне Новая ширина кнопки поля со списком.
 
-## <a name="cmfctoolbarcomboboxbuttononupdatetooltip"></a><a name="onupdatetooltip"></a>CMFCToolBarComboBoxButton::OnUpdateToolTip
+## <a name="cmfctoolbarcomboboxbuttononupdatetooltip"></a><a name="onupdatetooltip"></a> Кмфктулбаркомбобоксбуттон:: Онупдатетултип
 
-Вызывается рамки, когда пользователь изменяет наконечник инструмента для кнопки комбо-бокс.
+Вызывается платформой, когда пользователь изменяет подсказку для кнопки поля со списком.
 
 ```
 virtual BOOL OnUpdateToolTip(
@@ -1096,37 +1097,37 @@ virtual BOOL OnUpdateToolTip(
 
 ### <a name="parameters"></a>Параметры
 
-*pWndParent*<br/>
-(в) Указатель на родительское окно для кнопки комбо-бокса.
+*пвндпарент*<br/>
+окне Указатель на родительское окно для кнопки поля со списком.
 
-*iButtonIndex*<br/>
-(в) Id кнопки комбо-бокс.
+*ибуттониндекс*<br/>
+окне Идентификатор кнопки поля со списком.
 
-*wndToolTip*<br/>
-(в) Наконечник инструмента, чтобы связать с кнопкой комбо-бокс.
+*вндтултип*<br/>
+окне Всплывающая подсказка, связываемая с кнопкой поля со списком.
 
-*Ул*<br/>
-(в) Текст наконечника инструмента.
+*str*<br/>
+окне Текст подсказки.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если метод обрабатывает событие; в противном случае, FALSE.
+Значение TRUE, если метод обрабатывает событие; в противном случае — значение FALSE.
 
-## <a name="cmfctoolbarcomboboxbuttonremoveallitems"></a><a name="removeallitems"></a>CMFCToolBarComboBoxButton::RemoveAllItems
+## <a name="cmfctoolbarcomboboxbuttonremoveallitems"></a><a name="removeallitems"></a> Кмфктулбаркомбобоксбуттон:: Ремовеаллитемс
 
-Удаляет все элементы из списка и отославает коробки.
+Удаляет все элементы из полей списка и редактирования.
 
 ```cpp
 void RemoveAllItems();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Удаляет все элементы из коробки списка и отодевать управление комбо-коробкой.
+Удаляет все элементы из списка и элементы управления поля со списком.
 
-## <a name="cmfctoolbarcomboboxbuttonselectitem"></a><a name="selectitem"></a>CMFCToolBarComboButton::SelectItem
+## <a name="cmfctoolbarcomboboxbuttonselectitem"></a><a name="selectitem"></a> Кмфктулбаркомбобоксбуттон:: Селектитем
 
-Выбирает элемент в поле списка.
+Выбирает элемент в списке.
 
 ```
 BOOL SelectItem(
@@ -1139,27 +1140,27 @@ BOOL SelectItem(LPCTSTR lpszText);
 
 ### <a name="parameters"></a>Параметры
 
-*iIndex*<br/>
-(в) Индекс элемента с нулевым уровнем в поле списка.
+*ииндекс*<br/>
+окне Отсчитываемый от нуля индекс элемента в списке.
 
-*bNotify*<br/>
-(в) TRUE, чтобы уведомить кнопку комбо-бокс выбора; в противном случае FALSE.
+*бнотифи*<br/>
+окне Значение TRUE для уведомления кнопки поля со списком в выделенном фрагменте; в противном случае — FALSE.
 
-*dwData*<br/>
-(в) Данные, связанные с элементом в поле списка.
+*двдата*<br/>
+окне Данные, связанные с элементом в списке.
 
 *lpszText*<br/>
-(в) Текст элемента в поле списка.
+окне Текст элемента в списке.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если метод был успешным; в противном случае FALSE.
+Значение TRUE, если метод выполнен успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctoolbarcomboboxbuttonselectitemall"></a><a name="selectitemall"></a>CMFCToolBarComboButton::SelectItemAll
+## <a name="cmfctoolbarcomboboxbuttonselectitemall"></a><a name="selectitemall"></a> Кмфктулбаркомбобоксбуттон:: Селектитемалл
 
-Выбирает элемент в поле списка кнопки комбо-бокса с указанным идентификатором команды.
+Выбирает элемент в списке кнопки поля со списком, имеющей указанный идентификатор команды.
 
 ```
 static BOOL SelectItemAll(
@@ -1177,27 +1178,27 @@ static BOOL SelectItemAll(
 
 ### <a name="parameters"></a>Параметры
 
-*uiCmd*<br/>
-(в) Идентификатор команды кнопки комбо-бокса, содержащей поле списка.
+*уикмд*<br/>
+окне Идентификатор команды поля со списком, содержащей список.
 
-*iIndex*<br/>
-(в) Индекс элемента с нулевым уровнем в поле списка. Значение -1 удаляет любой текущий выбор в поле списка и очищает окно для отсылки.
+*ииндекс*<br/>
+окне Отсчитываемый от нуля индекс элемента в списке. Значение-1 удаляет все текущие выбранные элементы из списка и очищает поле ввода.
 
-*dwData*<br/>
-(в) Данные элемента в поле списка.
+*двдата*<br/>
+окне Данные элемента в списке.
 
 *lpszText*<br/>
-(в) Текст элемента в поле списка.
+окне Текст элемента в списке.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если метод был успешным; в противном случае FALSE.
+Значение TRUE, если метод выполнен успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfctoolbarcomboboxbuttonserialize"></a><a name="serialize"></a>CMFCToolBarComboBoxButton::Serialize
+## <a name="cmfctoolbarcomboboxbuttonserialize"></a><a name="serialize"></a> Кмфктулбаркомбобоксбуттон:: Serialize
 
-Читает этот объект из архива или запишет его в архив.
+Считывает этот объект из архива или записывает его в архив.
 
 ```
 virtual void Serialize(CArchive& ar);
@@ -1206,15 +1207,15 @@ virtual void Serialize(CArchive& ar);
 ### <a name="parameters"></a>Параметры
 
 *ar*<br/>
-(в, вне) Объект `CArchive` для сериализации.
+[вход, выход] `CArchive` Сериализуемый объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Настройки объекта `CArchive` определяют, читает ли этот метод или записывает в архив.
+Параметры `CArchive` объекта определяют, производит ли этот метод чтение или запись в архив.
 
-## <a name="cmfctoolbarcomboboxbuttonsetaccdata"></a><a name="setaccdata"></a>CMFCToolBarComboBoxButton:SetACCData
+## <a name="cmfctoolbarcomboboxbuttonsetaccdata"></a><a name="setaccdata"></a> Кмфктулбаркомбобоксбуттон:: Сетаккдата
 
-Заполняет указанный `CAccessibilityData` объект, используя данные о доступности из кнопки комбо-бокса.
+Заполняет указанный объект с `CAccessibilityData` помощью данных о специальных возможностях поля со списком.
 
 ```
 virtual BOOL SetACCData(
@@ -1224,19 +1225,19 @@ virtual BOOL SetACCData(
 
 ### <a name="parameters"></a>Параметры
 
-*pРодитель*<br/>
-(в) Родительское окно кнопки комбо-бокса.
+*ппарент*<br/>
+окне Родительское окно кнопки поля со списком.
 
-*данные*<br/>
-(ваут) Объект, `CAccessibilityData` который получает данные о доступности из кнопки комбо-бокса.
+*data*<br/>
+заполняет `CAccessibilityData` Объект, который получает данные о специальных возможностях из поля со списком.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если метод был успешным; в противном случае FALSE.
+Значение TRUE, если метод выполнен успешно; в противном случае — FALSE.
 
-## <a name="cmfctoolbarcomboboxbuttonsetcentervert"></a><a name="setcentervert"></a>CMFCToolBarComboButtonButton::SetCenterVert
+## <a name="cmfctoolbarcomboboxbuttonsetcentervert"></a><a name="setcentervert"></a> Кмфктулбаркомбобоксбуттон:: Сетцентерверт
 
-Устанавливает вертикальное положение комбо-боксов в приложении.
+Задает вертикальное расположение кнопок поля со списком в приложении.
 
 ```
 static void SetCenterVert(BOOL bCenterVert=TRUE);
@@ -1244,16 +1245,16 @@ static void SetCenterVert(BOOL bCenterVert=TRUE);
 
 ### <a name="parameters"></a>Параметры
 
-*bCenterVert*<br/>
-(в) TRUE для центра кнопки комбо-бокс в панели инструментов; FALSE выровнять кнопку комбо-бокс ажиотажа к верхней части панели инструментов.
+*бцентерверт*<br/>
+окне Значение TRUE, чтобы центрировать кнопку поля со списком на панели инструментов. Значение FALSE, чтобы согласовать кнопку поля со списком с верхней границей панели инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-По умолчанию кнопки комбо-коробки выровнены к верху.
+По умолчанию кнопки в поле со списком вычисляются по верхнему краю.
 
-## <a name="cmfctoolbarcomboboxbuttonsetcontextmenuid"></a><a name="setcontextmenuid"></a>CMFCToolBarComboBoxButton::SetContextMenuID
+## <a name="cmfctoolbarcomboboxbuttonsetcontextmenuid"></a><a name="setcontextmenuid"></a> Кмфктулбаркомбобоксбуттон:: Сетконтекстменуид
 
-Устанавливает идентификатор ресурса меню ярлыка для кнопки комбо-бокса.
+Задает идентификатор ресурса контекстного меню для кнопки поля со списком.
 
 ```cpp
 void SetContextMenuID(UINT uiResID);
@@ -1261,12 +1262,12 @@ void SetContextMenuID(UINT uiResID);
 
 ### <a name="parameters"></a>Параметры
 
-*uiResID*<br/>
-(в) Идентификатор ресурса меню ярлыка.
+*уиресид*<br/>
+окне Идентификатор ресурса контекстного меню.
 
-## <a name="cmfctoolbarcomboboxbuttonsetdropdownheight"></a><a name="setdropdownheight"></a>CMFCToolBarComboBoxButton::SetDropDownHeight
+## <a name="cmfctoolbarcomboboxbuttonsetdropdownheight"></a><a name="setdropdownheight"></a> Кмфктулбаркомбобоксбуттон:: Сетдропдовнхеигхт
 
-Устанавливает высоту окна списка, когда он упал.
+Задает высоту поля со списком при его перетаскивании.
 
 ```cpp
 void SetDropDownHeight(int nHeight);
@@ -1274,16 +1275,16 @@ void SetDropDownHeight(int nHeight);
 
 ### <a name="parameters"></a>Параметры
 
-*nВысота*<br/>
-(в) Высота, в пикселях, из списка поле.
+*нхеигхт*<br/>
+окне Высота (в пикселях) поля со списком.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Высота по умолчанию составляет 150 пикселей.
+Высота по умолчанию — 150 пикселей.
 
-## <a name="cmfctoolbarcomboboxbuttonsetflatmode"></a><a name="setflatmode"></a>CMFCToolBarComboBoxButton::SetFlatMode
+## <a name="cmfctoolbarcomboboxbuttonsetflatmode"></a><a name="setflatmode"></a> Кмфктулбаркомбобоксбуттон:: Сетфлатмоде
 
-Устанавливает плоский стиль внешний вид комбо кнопки коробки в приложении.
+Задает внешний вид кнопок со списком в приложении плоского стиля.
 
 ```
 static void SetFlatMode(BOOL bFlat=TRUE);
@@ -1291,16 +1292,16 @@ static void SetFlatMode(BOOL bFlat=TRUE);
 
 ### <a name="parameters"></a>Параметры
 
-*bFlat*<br/>
-(в) TRUE для плоского стиля внешний вид; в противном случае FALSE.
+*бфлат*<br/>
+окне Значение TRUE для плоского внешнего вида; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Плоский стиль по умолчанию для кнопок комбо-бокса FALSE.
+Неструктурированный стиль по умолчанию для кнопок со списком имеет значение FALSE.
 
-## <a name="cmfctoolbarcomboboxbuttonsetstyle"></a><a name="setstyle"></a>CMFCToolBarComboBoxButton::SetStyle
+## <a name="cmfctoolbarcomboboxbuttonsetstyle"></a><a name="setstyle"></a> Кмфктулбаркомбобоксбуттон:: SetStyle
 
-Устанавливает указанный стиль для кнопки комбо-бокса и перерисовывает элемент управления, если он не отключен.
+Задает указанный стиль для кнопки поля со списком и перерисовывает элемент управления, если он не отключен.
 
 ```
 virtual void SetStyle(UINT nStyle);
@@ -1309,15 +1310,15 @@ virtual void SetStyle(UINT nStyle);
 ### <a name="parameters"></a>Параметры
 
 *nStyle*<br/>
-(в) Битовая комбинация (OR) стилей панели инструментов.
+окне Побитовое сочетание (или) стилей панелей инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Для списка стилей кнопок панели инструментов смотрите [стили управления панели инструментов](../../mfc/reference/toolbar-control-styles.md)
+Список стилей кнопок панели инструментов см. в разделе [стили элементов управления ToolBar](../../mfc/reference/toolbar-control-styles.md) .
 
-## <a name="cmfctoolbarcomboboxbuttonsettext"></a><a name="settext"></a>CMFCToolBarComboBoxButton::SetText
+## <a name="cmfctoolbarcomboboxbuttonsettext"></a><a name="settext"></a> Кмфктулбаркомбобоксбуттон:: SetText
 
-Устанавливает текст в коробке редактирования кнопки комбо-бокс.
+Задает текст в поле ввода кнопки поля со списком.
 
 ```cpp
 void SetText(LPCTSTR lpszText);
@@ -1326,13 +1327,13 @@ void SetText(LPCTSTR lpszText);
 ### <a name="parameters"></a>Параметры
 
 *lpszText*<br/>
-(в) Указатель на строку, содержащую текст для редактирования коробки.
+окне Указатель на строку, содержащую текст для поля ввода.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
 [Класс CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)<br/>
 [Класс CComboBox](../../mfc/reference/ccombobox-class.md)<br/>
-[CMFCToolBar::Заменить кнопку](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
-[Пошаговое руководство. Размещение элементов управления на панели инструментов](../../mfc/walkthrough-putting-controls-on-toolbars.md)
+[CMFCToolBar:: Реплацебуттон](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
+[Пошаговое руководство. размещение элементов управления на панелях инструментов](../../mfc/walkthrough-putting-controls-on-toolbars.md)

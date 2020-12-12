@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: allocator_traits классе'
 title: Класс allocator_traits
 ms.date: 11/04/2016
 f1_keywords:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - std::allocator_traits [C++], destroy
 - std::allocator_traits [C++], max_size
 - std::allocator_traits [C++], select_on_container_copy_construction
-ms.openlocfilehash: 8ab46ebf85531af052bc19bc5f0088f0f564793b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d60658c5f8cf6217dff7a846f0e5cbae42e6a565
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844812"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163565"
 ---
 # <a name="allocator_traits-class"></a>Класс allocator_traits
 
@@ -58,7 +59,7 @@ template <class Alloc>
     class allocator_traits;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="typedefs"></a>Определения типов
 
@@ -139,7 +140,7 @@ static void construct(Alloc& al, Uty* ptr, Types&&... args);
 *args*\
 Список аргументов, передаваемый в конструктор объекта.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Эта статическая функция-член вызывает `al.construct(ptr, args...)`, если выражение правильно сформировано; в противном случае оно оценивается как `::new (static_cast<void *>(ptr)) Uty(std::forward<Types>(args)...)`.
 
@@ -164,7 +165,7 @@ static void deallocate(Alloc al,
 *расчета*\
 Количество освобождаемых объектов.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Этот метод вызывает `al.deallocate(ptr, count)`.
 
@@ -187,7 +188,7 @@ template <class Uty>
 *указатель*\
 Указатель на расположение объекта.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Этот метод вызывает `al.destroy(ptr)`, если выражение правильно сформировано; в противном случае оно оценивается как `ptr->~Uty()`.
 
@@ -204,7 +205,7 @@ static size_type max_size(const Alloc& al);
 *Al*\
 Объект распределителя.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Этот метод возвращает `al.max_size()`, если это выражение правильно сформировано; в противном случае возвращается `numeric_limits<size_type>::max()`.
 
@@ -225,6 +226,6 @@ static Alloc select_on_container_copy_construction(const Alloc& al);
 
 Этот метод возвращает `al.select_on_container_copy_construction()` , если этот тип имеет правильный формат; в противном случае возвращается значение *Al*.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Этот метод используется для указания распределителя при создании копии связанного контейнера.

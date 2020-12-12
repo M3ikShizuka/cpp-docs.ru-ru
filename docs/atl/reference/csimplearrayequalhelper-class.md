@@ -1,5 +1,6 @@
 ---
-title: Класс CSimpleArrayEqualHelper
+description: 'Дополнительные сведения о: Ксимплеаррайекуалхелпер Class'
+title: Класс Ксимплеаррайекуалхелпер
 ms.date: 11/04/2016
 f1_keywords:
 - CSimpleArrayEqualHelper
@@ -8,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - CSimpleArrayEqualHelper class
 ms.assetid: a2b55d89-78c9-42ef-842c-5304c6d20ad6
-ms.openlocfilehash: 386b005777b3e31dd74916a41bc5af2ab82df210
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e1a5fd3eea5fd6ef7563febc662c5a7a1bc639c5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81330883"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140768"
 ---
-# <a name="csimplearrayequalhelper-class"></a>Класс CSimpleArrayEqualHelper
+# <a name="csimplearrayequalhelper-class"></a>Класс Ксимплеаррайекуалхелпер
 
-Этот класс является помощником для класса [CSimpleArray.](../../atl/reference/csimplearray-class.md)
+Этот класс является вспомогательным классом для класса [ксимплеаррай](../../atl/reference/csimplearray-class.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,25 +32,25 @@ class CSimpleArrayEqualHelper
 *T*<br/>
 Производный класс.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CSimpleArrayУравнойХелсер::Аум](#isequal)|(Статик) Тестирует `CSimpleArray` два элемента объекта на равенство.|
+|[Ксимплеаррайекуалхелпер:: Equals](#isequal)|Статически Проверяет два `CSimpleArray` объектных элемента на равенство.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот класс черт является дополнением к классу. `CSimpleArray` Он предоставляет метод сравнения двух элементов, хранящихся в объекте. `CSimpleArray` По умолчанию элементы сравниваются с использованием **оператора ()**, но если массив содержит сложные типы данных, которые не имеют своего оператора равенства, вам нужно будет переопределить этот класс.
+Этот класс признаков является дополнением к `CSimpleArray` классу. Он предоставляет метод для сравнения двух элементов, хранящихся в `CSimpleArray` объекте. По умолчанию элементы сравниваются с помощью **оператора operator = ()**, но если массив содержит сложные типы данных, у которых отсутствует собственный оператор равенства, необходимо переопределить этот класс.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlsimpcoll.h
+**Заголовок:** атлсимпколл. h
 
-## <a name="csimplearrayequalhelperisequal"></a><a name="isequal"></a>CSimpleArrayУравнойХелсер::Аум
+## <a name="csimplearrayequalhelperisequal"></a><a name="isequal"></a> Ксимплеаррайекуалхелпер:: Equals
 
-Тестирует `CSimpleArray` два элемента объекта на равенство.
+Проверяет два `CSimpleArray` объектных элемента на равенство.
 
 ```
 static bool IsEqual(
@@ -62,15 +63,15 @@ static bool IsEqual(
 *T1*<br/>
 Объект типа T.
 
-*t2*<br/>
+*T2*<br/>
 Объект типа T.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает верно, если элементы равны, ложные в противном случае.
+Возвращает значение true, если элементы равны, и false в противном случае.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс CSimpleArray](../../atl/reference/csimplearray-class.md)<br/>
-[CSimpleArrayEqualHelperFalse Класс](../../atl/reference/csimplearrayequalhelperfalse-class.md)<br/>
+[Класс Ксимплеаррай](../../atl/reference/csimplearray-class.md)<br/>
+[Класс Ксимплеаррайекуалхелперфалсе](../../atl/reference/csimplearrayequalhelperfalse-class.md)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)

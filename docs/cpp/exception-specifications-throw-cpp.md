@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье спецификации исключений (throw, не только) (C++)
 title: Спецификации исключений (throw, не Except) (C++)
 ms.date: 01/18/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - throw keyword [C++]
 - noexcept keyword [C++]
 ms.assetid: 4d3276df-6f31-4c7f-8cab-b9d2d003a629
-ms.openlocfilehash: 1fa56ebf0a0358845ef620a89bc416992b3c0e31
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a6b3cb808caf464dc3dd19ea4d34e9d68f09d0d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221579"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164809"
 ---
 # <a name="exception-specifications-throw-noexcept-c"></a>Спецификации исключений (throw, не Except) (C++)
 
@@ -35,7 +36,7 @@ void MyFunction(int i) noexcept;
 
 |Спецификация исключений|Значение|
 |-----------------------------|-------------|
-|**`noexcept`**<br/>`noexcept(true)`<br/>`throw()`|Функция не вызывает исключений. В [/std: режим c++ 14](../build/reference/std-specify-language-standard-version.md) (по умолчанию) **`noexcept`** и `noexcept(true)` эквивалентны. При возникновении исключения из функции, которая объявлена **`noexcept`** или `noexcept(true)` вызывается [std:: Terminate](../standard-library/exception-functions.md#terminate) . При возникновении исключения из функции, объявленной как `throw()` в режиме **/std: c++ 14** , результат является неопределенным поведением. Никакая конкретная функция не вызывается. Это расхождение по стандарту C++ 14, которое требует, чтобы компилятор вызывал [std:: непредвиденный](../standard-library/exception-functions.md#unexpected).  <br/> **Visual Studio 2017 версии 15,5 и более поздних**версий: в **/std: режим c++ 17** ,, **`noexcept`** `noexcept(true)` и `throw()` все эквивалентны. В **/std: режим c++ 17** `throw()` является псевдонимом для `noexcept(true)` . В режиме **/std: c++ 17** при возникновении исключения из функции, объявленной с любой из этих спецификаций, [std:: Terminate](../standard-library/exception-functions.md#terminate) вызывается согласно требованиям стандарта c++ 17.|
+|**`noexcept`**<br/>`noexcept(true)`<br/>`throw()`|Функция не вызывает исключений. В [/std: режим c++ 14](../build/reference/std-specify-language-standard-version.md) (по умолчанию) **`noexcept`** и `noexcept(true)` эквивалентны. При возникновении исключения из функции, которая объявлена **`noexcept`** или `noexcept(true)` вызывается [std:: Terminate](../standard-library/exception-functions.md#terminate) . При возникновении исключения из функции, объявленной как `throw()` в режиме **/std: c++ 14** , результат является неопределенным поведением. Никакая конкретная функция не вызывается. Это расхождение по стандарту C++ 14, которое требует, чтобы компилятор вызывал [std:: непредвиденный](../standard-library/exception-functions.md#unexpected).  <br/> **Visual Studio 2017 версии 15,5 и более поздних** версий: в **/std: режим c++ 17** ,, **`noexcept`** `noexcept(true)` и `throw()` все эквивалентны. В **/std: режим c++ 17** `throw()` является псевдонимом для `noexcept(true)` . В режиме **/std: c++ 17** при возникновении исключения из функции, объявленной с любой из этих спецификаций, [std:: Terminate](../standard-library/exception-functions.md#terminate)  вызывается согласно требованиям стандарта c++ 17.|
 |`noexcept(false)`<br/>`throw(...)`<br/>Нет спецификации|Функция может вызывать исключение любого типа.|
 |`throw(type)`| (**C++ 14 и более ранние версии**) Функция может вызывать исключение типа `type` . Компилятор принимает синтаксис, но интерпретирует его как `noexcept(false)` . В **/std: режим c++ 17** . компилятор выдает предупреждение C5040.|
 
@@ -50,15 +51,15 @@ void MyFunction(int i) noexcept;
 
 - Задана ли явно спецификация исключений.
 
-Явные спецификации исключений не разрешено использовать для функций C. Предполагается, что функция C не создает исключения в **/EHsc**и может вызывать структурированные исключения в порядке **/EHs**, **/EHa**или **/ехак**.
+Явные спецификации исключений не разрешено использовать для функций C. Предполагается, что функция C не создает исключения в **/EHsc** и может вызывать структурированные исключения в порядке **/EHs**, **/EHa** или **/ехак**.
 
 В следующей таблице приведены сведения о том, может ли функция C++ вызываться в различных параметрах обработки исключений компилятора.
 
-|Компонент|/EHsc|/EHs|/EHa|/EHac|
+|Функция|/EHsc|/EHs|/EHa|/EHac|
 |--------------|------------|-----------|-----------|------------|
-|Функция C++ без спецификации исключений|да|да|да|да|
-|Функция C++ со **`noexcept`** `noexcept(true)` `throw()` спецификацией исключения, или|Нет|Нет|Да|да|
-|Функция C++ со `noexcept(false)` `throw(...)` `throw(type)` спецификацией исключения, или|да|да|да|Да|
+|Функция C++ без спецификации исключений|Да|Да|Да|Да|
+|Функция C++ со **`noexcept`** `noexcept(true)` `throw()` спецификацией исключения, или|Нет|Нет|Да|Да|
+|Функция C++ со `noexcept(false)` `throw(...)` `throw(type)` спецификацией исключения, или|Да|Да|Да|Да|
 
 ## <a name="example"></a>Пример
 

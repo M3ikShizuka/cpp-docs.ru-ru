@@ -1,23 +1,24 @@
 ---
-title: Функция CAtlServiceModuleT::Handler
+description: 'Дополнительные сведения о функции: функция CAtlServiceModuleT:: Handler'
+title: 'Функция функция CAtlServiceModuleT:: Handler'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Handler method
 ms.assetid: 14db5f2a-be87-4774-a296-445cb6fc7b2e
-ms.openlocfilehash: fffdeddce7f3fa27d798ea7abafe85c9a13d9d97
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 934c612b6fdfd47bb9966536cc335da58fbd38c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62223189"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148373"
 ---
-# <a name="catlservicemodulethandler-function"></a>Функция CAtlServiceModuleT::Handler
+# <a name="catlservicemodulethandler-function"></a>Функция функция CAtlServiceModuleT:: Handler
 
-`CAtlServiceModuleT::Handler` — Это процедуры, что диспетчер управления службами (SCM) вызывает получение сведений о состоянии службы и присвоить ему различные инструкции (например, остановка или приостановка). Диспетчер управления Службами передает код операции для `Handler` для указания, что должен делать. Услуга созданный ATL по умолчанию обрабатывает только инструкция stop. Если диспетчер управления Службами передает инструкция stop, службы показывает диспетчера управления Службами, что программа является остановка. Затем вызывается службой `PostThreadMessage` Чтобы отправить сообщение на самого себя. Это завершает цикл обработки сообщений и службы в конечном счете будет закрыт.
+`CAtlServiceModuleT::Handler` — Это подпрограммы, которые вызываются диспетчером управления службами (SCM) для получения состояния службы и предоставления ей различных инструкций (таких как остановка или приостановка). SCM передает код операции, `Handler` чтобы указать, что должна делать служба. Служба, создаваемая библиотекой ATL по умолчанию, обрабатывает только инструкцию по ошибке. Если SCM передает инструкцию по остановке, служба сообщает SCM о том, что программа собирается остановиться. Затем служба вызывает метод `PostThreadMessage` , чтобы отправить сообщение о выходе на себя. Это завершает цикл обработки сообщений, и служба в конечном итоге будет закрыта.
 
-Чтобы обрабатывать дополнительные инструкции, необходимо изменить `m_status` член данных инициализирован в `CAtlServiceModuleT` конструктор. Этот элемент данных сообщает SCM кнопки, которые следует включить при выборе службы в приложении службы на панели управления.
+Чтобы обрабатывались дополнительные инструкции, необходимо изменить `m_status` элемент данных, инициализированный в `CAtlServiceModuleT` конструкторе. Этот элемент данных сообщает SCM, какие кнопки должны быть включены при выборе службы в приложении панели управления "службы".
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Службы](../atl/atl-services.md)<br/>
-[CAtlServiceModuleT::Handler](../atl/reference/catlservicemodulet-class.md#handler)
+[Функция CAtlServiceModuleT:: Handler](../atl/reference/catlservicemodulet-class.md#handler)

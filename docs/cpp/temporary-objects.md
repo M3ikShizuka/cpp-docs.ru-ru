@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: временные объекты'
 title: Временные объекты
 ms.date: 11/04/2016
 helpviewer_keywords:
 - temporary objects
 - objects [C++], temporary
 ms.assetid: 4c8cec02-391e-4225-9bc6-06d150201412
-ms.openlocfilehash: 0f4cca7100ff8046123f7b2950c1d557797c70f4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d827568013b3684c2126887d390ecbf223c46da5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223555"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97164748"
 ---
 # <a name="temporary-objects"></a>Временные объекты
 
@@ -18,7 +19,7 @@ ms.locfileid: "87223555"
 
 - Для инициализации **`const`** ссылки с инициализатором типа, отличного от базового типа для инициализированной ссылки.
 
-- Для сохранения возвращаемого значения функции, которая возвращает пользовательский тип. Эти временные объекты создаются только в том случае, если программа не копирует возвращаемое значение в объект. Например:
+- Для сохранения возвращаемого значения функции, которая возвращает пользовательский тип. Эти временные объекты создаются только в том случае, если программа не копирует возвращаемое значение в объект. Пример:
 
     ```cpp
     UDT Func1();    //  Declare a function that returns a user-defined

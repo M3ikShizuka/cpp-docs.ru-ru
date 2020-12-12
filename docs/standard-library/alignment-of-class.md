@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: alignment_of классе'
 title: Класс alignment_of
 ms.date: 12/11/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - alignment_of class
 - alignment_of
 ms.assetid: 4141c59a-f94e-41c4-93fd-9ea578b27387
-ms.openlocfilehash: 5a90f481c33431d92f0f28405e6226863d2b3913
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7e1eeafb259b71f24cb272c079cdb485bb8e1b4a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87205019"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163656"
 ---
 # <a name="alignment_of-class"></a>Класс alignment_of
 
@@ -30,7 +31,7 @@ struct alignment_of;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Запрос типа содержит значение выравнивания типа *Ty*.
 
@@ -43,4 +44,4 @@ struct alignment_of;
 ## <a name="see-also"></a>См. также раздел
 
 [`<type_traits>`](type-traits.md)\
-[`aligned_storage`См](aligned-storage-class.md)
+[`aligned_storage` См](aligned-storage-class.md)

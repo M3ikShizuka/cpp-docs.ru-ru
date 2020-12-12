@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Иатлмеммгр Class'
 title: Класс Иатлмеммгр
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - memory, managing
 - memory, memory manager
 ms.assetid: 18b2c569-25fe-4464-bdb6-3b1abef7154a
-ms.openlocfilehash: b23d8f582c53114ea1434e250e8e5e64b642f733
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 31f25c5fdb6a4e443bf011aac29620be8a4f13f4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353016"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139754"
 ---
 # <a name="iatlmemmgr-class"></a>Класс Иатлмеммгр
 
@@ -30,7 +31,7 @@ ms.locfileid: "91353016"
 __interface __declspec(uuid("654F7EF5-CFDF-4df9-A450-6C6A13C622C0")) IAtlMemMgr
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="methods"></a>Методы
 
@@ -91,7 +92,7 @@ void Free(void* p) throw();
 
 ### <a name="parameters"></a>Параметры
 
-*ш*<br/>
+*p*<br/>
 Указатель на область памяти, выделенную ранее данным диспетчером памяти.
 
 ### <a name="remarks"></a>Комментарии
@@ -112,7 +113,7 @@ size_t GetSize(void* p) throw();
 
 ### <a name="parameters"></a>Параметры
 
-*ш*<br/>
+*p*<br/>
 Указатель на область памяти, выделенную ранее данным диспетчером памяти.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -133,7 +134,7 @@ void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>Параметры
 
-*ш*<br/>
+*p*<br/>
 Указатель на область памяти, выделенную ранее данным диспетчером памяти.
 
 *nBytes*<br/>

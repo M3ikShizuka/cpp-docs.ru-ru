@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: allocator_base классе'
 title: Класс allocator_base
 ms.date: 11/04/2016
 f1_keywords:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - stdext::allocator_base [C++], destroy
 - stdext::allocator_base [C++], max_size
 ms.assetid: f920b45f-2a88-4bb0-8ead-b6126b426ed4
-ms.openlocfilehash: f642c21f2b1060dd5adc5c3d98144592c3413777
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 95da41fd480101c26a2ab71b445790da47144189
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562640"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163643"
 ---
 # <a name="allocator_base-class"></a>Класс allocator_base
 
@@ -118,7 +119,7 @@ char *_Charalloc(size_type count);
 
 Указатель на выделяемый объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член используется контейнерами при компиляции с компилятором, которому не удается скомпилировать повторную привязку. Она реализует `_Charalloc` для пользовательского распределителя, возвращая результат вызова функции `allocate` фильтра синхронизации.
 
@@ -138,7 +139,7 @@ void _Chardealloc(void* ptr, size_type count);
 *расчета*\
 Количество объектов для освобождения из хранилища.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член используется контейнерами при компиляции с компилятором, которому не удается скомпилировать повторную привязку. Она реализует `_Chardealloc` для пользовательского распределителя путем вызова функции `deallocate` фильтра синхронизации. Указатель указателя мыши должен быть ранее возвращен путем вызова метода `_Charalloc` для объекта распределителя, который сравнивает равно **`*this`** , с выделением объекта массива того же размера и типа. `_Chardealloc` никогда не создает исключений.
 
@@ -161,7 +162,7 @@ const_pointer address(const_reference val);
 
 Константный или неконстантный указатель на найденный объект соответственно константного или неконстантного значения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член реализуется для пользовательского распределителя путем возврата `&val`.
 
@@ -188,7 +189,7 @@ pointer allocate(size_type _Nx);
 
 Указатель на выделяемый объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член реализует выделение памяти для пользовательского распределителя путем возврата результата вызова функции `allocate` фильтра синхронизации типа Type `*`, если `_Nx == 1`, в противном случае — путем возврата результата вызова приведения `operator new(_Nx * sizeof(Type))` к типу Type `*`.
 
@@ -208,7 +209,7 @@ allocator_base(const allocator_base<Other, Sync>& right);
 *Правильно*\
 Объект allocator для копирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый конструктор создает экземпляр [allocator_base](allocator-base-class.md). Второй конструктор создает экземпляр `allocator_base` так, что для любого экземпляра `allocator_base<Type, _Sync>``a`, `allocator_base<Type, Sync>(allocator_base<Other, Sync>(a)) == a`.
 
@@ -244,7 +245,7 @@ void construct(pointer ptr, const Type& val);
 *Val*\
 Значение, с которым создаваемый объект будет инициализирован.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член реализуется для пользовательского распределителя путем вызова `new((void*)ptr Type(val)`.
 
@@ -264,7 +265,7 @@ void deallocate(pointer ptr, size_type _Nx);
 *_Nx*\
 Количество объектов для освобождения из хранилища.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член реализуется для пользовательского распределителя путем вызова `deallocate(ptr)` в фильтре синхронизации `Sync`, если `_Nx == 1`, в противном случае — путем вызова `operator delete(_Nx * ptr)`.
 
@@ -281,7 +282,7 @@ void destroy(pointer ptr);
 *указатель*\
 Указатель, обозначающий адрес уничтожаемого объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член реализуется для пользовательского распределителя путем вызова `ptr->~Type()`.
 
@@ -305,7 +306,7 @@ size_type max_size() const;
 
 Количество элементов, которые могут быть выделены.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член реализуется для пользовательского распределителя путем возврата `(size_t)-1 / sizeof(Type)`, если `0 < (size_t)-1 / sizeof(Type)`в противном случае — `1`.
 
@@ -341,6 +342,6 @@ typedef std::size_t size_type;
 typedef Type value_type;
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [\<allocators>](allocators-header.md)
