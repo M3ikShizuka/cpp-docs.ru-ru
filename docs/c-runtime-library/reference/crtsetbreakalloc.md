@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _CrtSetBreakAlloc'
 title: _CrtSetBreakAlloc
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - CrtSetBreakAlloc function
 - _CrtSetBreakAlloc function
 ms.assetid: 33bfc6af-a9ea-405b-a29f-1c2d4d9880a1
-ms.openlocfilehash: e13c908c1efd1af9196885dee6e3b0f45845946b
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 07db47aa23fe95e86b3341813137643b81f57fbc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70942305"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319603"
 ---
 # <a name="_crtsetbreakalloc"></a>_CrtSetBreakAlloc
 
@@ -53,13 +54,13 @@ long _CrtSetBreakAlloc(
 
 Возвращает предыдущий порядковый номер выделения объекта, для которого задана точка останова.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-**_CrtSetBreakAlloc** позволяет приложению выполнять обнаружение утечек памяти, нарушая заданную точку выделения памяти и отменив трассировку на источник запроса. Функция использует последовательный порядковый номер выделения объекта, назначенный блоку памяти во время выделения в куче. Если [_DEBUG](../../c-runtime-library/debug.md) не определен, вызовы **_CrtSetBreakAlloc** удаляются во время предварительной обработки.
+**_CrtSetBreakAlloc** позволяет приложению выполнять обнаружение утечек памяти, нарушая заданную точку выделения памяти и отменив трассировку на источник запроса. Функция использует последовательный порядковый номер выделения объекта, назначенный блоку памяти во время выделения в куче. Если [_DEBUG](../../c-runtime-library/debug.md) не определено, вызовы **_CrtSetBreakAlloc** удаляются во время предварительной обработки.
 
-Порядковый номер выделения объекта хранится в поле *lRequest* структуры **_CrtMemBlockHeader**, определенной в Crtdbg.h. Если сведения о блоке памяти передаются одной из функций отладочного дампа, это значение заключается в фигурные скобки, например {36}.
+Порядковый номер выделения объекта хранится в поле *lRequest* структуры **_CrtMemBlockHeader**, определенной в Crtdbg.h. Если сведения о блоке памяти передаются одной из функций отладочного дампа, это значение заключается в фигурные скобки, например {36} .
 
-Дополнительные сведения о том, как **_CrtSetBreakAlloc** можно использовать с другими функциями управления памятью, см. в разделе [Отслеживание запросов на выделение кучи](/visualstudio/debugger/crt-debug-heap-details). Дополнительные сведения о выделении, инициализации и управлении блоками памяти в отладочной версии базовой кучи см. в статье [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).
+Дополнительные сведения о том, как **_CrtSetBreakAlloc** можно использовать с другими функциями управления памятью, см. в разделе [Отслеживание запросов на выделение кучи](/visualstudio/debugger/crt-debug-heap-details). Дополнительные сведения о выделении, инициализации и управлении блоками памяти в отладочной версии основной кучи см. в разделе [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).
 
 ## <a name="requirements"></a>Требования
 
@@ -67,7 +68,7 @@ long _CrtSetBreakAlloc(
 |-------------|---------------------|
 |**_CrtSetBreakAlloc**|\<crtdbg.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Библиотеки
 
@@ -119,6 +120,6 @@ int main( )
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Процедуры отладки](../../c-runtime-library/debug-routines.md)<br/>
+[Отладочные подпрограммы](../../c-runtime-library/debug-routines.md)<br/>

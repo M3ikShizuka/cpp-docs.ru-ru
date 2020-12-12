@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Implements (C++)'
 title: Implements (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - implements attribute
 ms.assetid: 9cf0858b-cb7d-4d3c-81a6-97d87ed00d25
-ms.openlocfilehash: 946972a9a7c3041c75e82865acb35feb4a97254a
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 601d1c99a9f59af8354d98e930a3e21c45255401
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686747"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321393"
 ---
 # <a name="implements-c"></a>implements (C++)
 
@@ -32,7 +33,7 @@ ms.locfileid: "90686747"
 *диспетчера*<br/>
 Разделенный запятыми список disp-интерфейсов, который будет членом кокласс IDL. С помощью краткого метода для указания одного disp-интерфейса **реализуется (disp-интерфейс =** *dispinterface_name* **)**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию `coclass` в кокласс IDL добавляются только COM-интерфейсы, являющиеся базовыми классами. **Implements** позволяет принудительно использовать другие интерфейсы в качестве `coclass` членов IDL.
 
@@ -478,7 +479,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Атрибуты компилятора](compiler-attributes.md)<br/>
 [Атрибуты класса](class-attributes.md)

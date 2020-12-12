@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: add_pointer классе'
 title: Класс add_pointer
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - add_pointer class
 - add_pointer
 ms.assetid: d8095cb0-6578-4143-b78f-87f82485298c
-ms.openlocfilehash: 74e8cf037f8adfb6fdd9338c3cd95e2363f8de75
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 36f262c68c17dbcaca603c2a78e2450f0de64aa6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222619"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319899"
 ---
 # <a name="add_pointer-class"></a>Класс add_pointer
 
@@ -33,7 +34,7 @@ using add_pointer_t = typename add_pointer<T>::type;
 *T*\
 Тип для изменения.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Имя элемента имеет тот **`typedef`** `type` же тип, что и `remove_reference<T>::type*` . Псевдоним `add_pointer_t` является ярлыком для доступа к элементу **`typedef`** `type` .
 

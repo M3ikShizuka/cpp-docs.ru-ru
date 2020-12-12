@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _CrtGetDumpClient'
 title: _CrtGetDumpClient
 ms.date: 11/04/2016
 api_name:
@@ -25,16 +26,16 @@ helpviewer_keywords:
 - _CrtGetDumpClient function
 - CrtGetDumpClient function
 ms.assetid: 9051867f-341b-493b-b53d-45d2b454a3ad
-ms.openlocfilehash: 4b5c6c7d4d123d2d419f104ddaabd57c10ad320e
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: b4163e6f4f252eddd304f2704c3f5a9aa62b5371
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70938749"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319756"
 ---
 # <a name="_crtgetdumpclient"></a>_CrtGetDumpClient
 
-Извлекает текущую определяемую приложением функцию для дампа блоков памяти типа **_CLIENT_BLOCK** (только отладочная версия).
+Извлекает текущую определяемую приложением функцию для дампа блоков памяти типа " **_CLIENT_BLOCK** " (только отладочная версия).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,9 +47,9 @@ _CRT_DUMP_CLIENT _CrtGetDumpClient( void );
 
 Возвращает текущую подпрограмму дампа.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Функция **_CrtGetDumpClient** извлекает текущую функцию-обработчик для дампа объектов, хранящихся в блоках памяти **_CLIENT_BLOCK** , для процесса дампа памяти отладки времени выполнения C.
+Функция **_CrtGetDumpClient** извлекает текущую функцию-обработчик для дампа объектов, хранящихся в блоках памяти **_CLIENT_BLOCK** , для процесса дампа памяти среды выполнения C.
 
 Дополнительные сведения о других допускающих подключение функциях среды выполнения и написании собственных определяемых клиентом функциях-ловушках см. в разделе [Написание функций отладочных ловушек](/visualstudio/debugger/debug-hook-function-writing).
 
@@ -58,14 +59,14 @@ _CRT_DUMP_CLIENT _CrtGetDumpClient( void );
 |-------------|---------------------|
 |**_CrtGetDumpClient**|\<crtdbg.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Библиотеки
 
 Только отладочные версии [библиотек времени выполнения языка C](../../c-runtime-library/crt-library-features.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Процедуры отладки](../../c-runtime-library/debug-routines.md)<br/>
+[Отладочные подпрограммы](../../c-runtime-library/debug-routines.md)<br/>
 [_CrtReportBlockType](crtreportblocktype.md)<br/>
 [_CrtSetDumpClient](crtsetdumpclient.md)<br/>

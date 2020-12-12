@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кмфкриббонсепаратор Class'
 title: Класс Кмфкриббонсепаратор
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - CMFCRibbonSeparator [MFC], OnDraw
 - CMFCRibbonSeparator [MFC], OnDrawOnList
 ms.assetid: bedb1a53-cb07-4c3c-be12-698c5409e7cf
-ms.openlocfilehash: f435dc5ae8821a6d5626af2f93710a1672fd374c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: db8e7f92089d1e6332fdb2ad057398c465c72f97
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831805"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321752"
 ---
 # <a name="cmfcribbonseparator-class"></a>Класс Кмфкриббонсепаратор
 
@@ -39,7 +40,7 @@ ms.locfileid: "88831805"
 class CMFCRibbonSeparator : public CMFCRibbonBaseElement
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -66,7 +67,7 @@ class CMFCRibbonSeparator : public CMFCRibbonBaseElement
 |[Кмфкриббонсепаратор:: OnDraw](#ondraw)|Вызывается системой для рисования разделителя на ленте или на панели быстрого доступа.|
 |[Кмфкриббонсепаратор:: Ондравонлист](#ondrawonlist)|Вызывается системой для рисования разделителя в списке **команд** .|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Разделитель ленты — это вертикальная или горизонтальная линия, которая логически разделяет элементы ленты. Разделитель может быть нарисован на элементе управления Ribbon, главном меню приложения, строке состояния ленты и панели быстрого доступа.
 
@@ -130,7 +131,7 @@ CMFCRibbonSeparator(BOOL bIsHoriz = FALSE);
 *бишориз*<br/>
 окне Если значение равно TRUE, разделитель является горизонтальным; Если значение равно FALSE, разделитель является вертикальным.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В меню приложения используются горизонтальные разделители. В панелях инструментов используются вертикальные разделители.
 
@@ -194,7 +195,7 @@ virtual BOOL IsTabStop() const;
 
 Для этого класса всегда имеет значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Разделитель ленты не является вкладкой табуляции.
 

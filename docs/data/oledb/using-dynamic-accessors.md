@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: использование динамических методов доступа'
 title: Использование динамических методов доступа
 ms.date: 10/18/2018
 helpviewer_keywords:
 - accessors [C++], dynamic
 - dynamic accessors
 ms.assetid: e5d5bfa6-2b1d-49d0-8ced-914666422431
-ms.openlocfilehash: 4f42d6f20da819cf325cad06a04878b46e52352a
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: 9cc1cbf1f4c408317802698c01b228b48a5614c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008678"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319148"
 ---
 # <a name="using-dynamic-accessors"></a>Использование динамических методов доступа
 
@@ -156,7 +157,7 @@ int main(int argc, char* argv[] )
 
 Пример использования этого класса для выполнения хранимой процедуры SQL Server и получения значений выходных параметров см. в примере кода [динамикконсумер](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/OLEDB/Consumer/DynamicConsumer) в репозитории [Microsoft Вксамплес](https://github.com/Microsoft/VCSamples) на сайте GitHub.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Использование методов доступа](../../data/oledb/using-accessors.md)<br/>
 [Класс CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md)<br/>

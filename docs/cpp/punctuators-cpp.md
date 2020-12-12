@@ -1,17 +1,18 @@
 ---
-title: Символы пунктуации (C++)
+description: 'Дополнительные сведения о: символы пунктуации (C++)'
+title: Знаки препинания (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - punctuators [C++]
 ms.assetid: 1521564c-a977-488a-9490-068079897592
-ms.openlocfilehash: cc4e56cd0dce3ae91183a8675eba96f174c3c31f
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 7485ea82725c2221d32d0647123cfce473719ca3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80160975"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319434"
 ---
-# <a name="punctuators-c"></a>Символы пунктуации (C++)
+# <a name="punctuators-c"></a>Знаки препинания (C++)
 
 Символы пунктуации в C++ имеют синтаксическое и семантическое значение для компилятора, однако сами по себе не указывают на операцию, которая позволяет получить значение. Некоторые символы пунктуации (по отдельности или в сочетании) могут также быть операторами C++ или иметь значение для препроцессора.
 
@@ -22,7 +23,7 @@ ms.locfileid: "80160975"
 [ ] \ ; ' : " < > ? , . / #
 ```
 
-Символы пунктуации **[]** , **()** и **{}** должны находиться в парах после [преобразования](../preprocessor/phases-of-translation.md) 4.
+Символы пунктуации **[]**, **()** и **{}** должны находиться в парах после [преобразования](../preprocessor/phases-of-translation.md) 4.
 
 ## <a name="see-also"></a>См. также раздел
 

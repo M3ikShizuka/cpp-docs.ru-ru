@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: basic_ifstream классе'
 title: Класс basic_ifstream
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - std::basic_ifstream [C++], rdbuf
 - std::basic_ifstream [C++], swap
 ms.assetid: 366cd9a7-efc4-4b7f-ba10-c8271e47ffcf
-ms.openlocfilehash: f4f5ddd3d1c0c595dd1661fab73f5267fb161593
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6968c6f1987a5261d06d53af24616281d84a0e3b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219291"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321564"
 ---
 # <a name="basic_ifstream-class"></a>Класс basic_ifstream
 
@@ -42,7 +43,7 @@ class basic_ifstream : public basic_istream<Elem, Tr>
 *ТС*\
 Признаки базового элемента буфера файла (обычно `char_traits`< `Elem`>).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Объект сохраняет объект класса `basic_filebuf`< `Elem`, `Tr`>.
 
@@ -93,7 +94,7 @@ This is the contents of basic_ifstream_class.txt.
 
 |Функция-член|Описание|
 |-|-|
-|[выхода](#close)|Закрывает файл.|
+|[close](#close)|Закрывает файл.|
 |[is_open](#is_open)|Определяет, открыт ли файл.|
 |[open](#open)|Открывает файл.|
 |[rdbuf](#rdbuf)|Возвращает адрес сохраненного буфера потока.|
@@ -111,7 +112,7 @@ This is the contents of basic_ifstream_class.txt.
 
 **Пространство имен:** std
 
-## <a name="basic_ifstreambasic_ifstream"></a><a name="basic_ifstream"></a>basic_ifstream:: basic_ifstream
+## <a name="basic_ifstreambasic_ifstream"></a><a name="basic_ifstream"></a> basic_ifstream:: basic_ifstream
 
 Создает объект типа `basic_ifstream`.
 
@@ -142,7 +143,7 @@ basic_ifstream(basic_ifstream&& right);
 *_Prot*\
 Защита открытия файла по умолчанию, эквивалент параметра `shflag` в [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый конструктор инициализирует базовый класс путем вызова [basic_istream](../standard-library/basic-istream-class.md)( `sb` ), где `sb` — это сохраненный объект класса [basic_filebuf](../standard-library/basic-filebuf-class.md) <  `Elem` , `Tr`>. Он также инициализирует `sb` путем вызова `basic_filebuf`< `Elem`, `Tr`>.
 
@@ -175,7 +176,7 @@ int main(int argc, char **argv)
 }
 ```
 
-## <a name="basic_ifstreamclose"></a><a name="close"></a>basic_ifstream:: Close
+## <a name="basic_ifstreamclose"></a><a name="close"></a> basic_ifstream:: Close
 
 Закрывает файл.
 
@@ -183,7 +184,7 @@ int main(int argc, char **argv)
 void close();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция члена вызывает [rdbuf](#rdbuf) **->** [Close](../standard-library/basic-filebuf-class.md#close).
 
@@ -191,7 +192,7 @@ void close();
 
 Пример, в котором используется `close`, см. в разделе [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close).
 
-## <a name="basic_ifstreamis_open"></a><a name="is_open"></a>basic_ifstream:: is_open
+## <a name="basic_ifstreamis_open"></a><a name="is_open"></a> basic_ifstream:: is_open
 
 Определяет, открыт ли файл.
 
@@ -203,7 +204,7 @@ bool is_open() const;
 
 **`true`** значение, если файл открыт; **`false`** в противном случае —.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция члена возвращает [rdbuf](#rdbuf) **->** [is_open](../standard-library/basic-filebuf-class.md#is_open).
 
@@ -211,7 +212,7 @@ bool is_open() const;
 
 Пример, в котором используется `is_open`, см. в разделе [basic_filebuf::is_open](../standard-library/basic-filebuf-class.md#is_open).
 
-## <a name="basic_ifstreamopen"></a><a name="open"></a>basic_ifstream:: Open
+## <a name="basic_ifstreamopen"></a><a name="open"></a> basic_ifstream:: Open
 
 Открывает файл.
 
@@ -246,7 +247,7 @@ void open(
 *_Prot*\
 Защита открытия файла по умолчанию, эквивалент параметра `shflag` в [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член вызывает [rdbuf](#rdbuf) **->** [Open](../standard-library/basic-filebuf-class.md#open)(_ *filename*, `_Mode` &#124; **ios_base:: в**). Если метод Open не выполняется, функция вызывает [SetState](../standard-library/basic-ios-class.md#setstate)( `failbit` ), что может вызвать исключение ios_base:: failure.
 
@@ -254,7 +255,7 @@ void open(
 
 Пример, в котором используется, см. в разделе [basic_filebuf:: Open](../standard-library/basic-filebuf-class.md#open) `open` .
 
-## <a name="basic_ifstreamoperator"></a><a name="op_eq"></a>basic_ifstream:: operator =
+## <a name="basic_ifstreamoperator"></a><a name="op_eq"></a> basic_ifstream:: operator =
 
 Назначает содержимое этого объекта потока. Это назначение перемещения, включающее rvalue, которое не оставляет копию.
 
@@ -271,11 +272,11 @@ basic_ifstream& operator=(basic_ifstream&& right);
 
 Возвращает **`*this`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Оператор Member заменяет содержимое объекта с помощью содержимого *right*, которое рассматривается как ссылка rvalue. Дополнительные сведения см. в разделе [Значения Lvalue и Rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md).
 
-## <a name="basic_ifstreamrdbuf"></a><a name="rdbuf"></a>basic_ifstream:: rdbuf
+## <a name="basic_ifstreamrdbuf"></a><a name="rdbuf"></a> basic_ifstream:: rdbuf
 
 Возвращает адрес сохраненного буфера потока.
 
@@ -291,7 +292,7 @@ basic_filebuf<Elem, Tr> *rdbuf() const
 
 Пример, в котором используется `rdbuf`, см. в разделе [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close).
 
-## <a name="basic_ifstreamswap"></a><a name="swap"></a>basic_ifstream:: swap
+## <a name="basic_ifstreamswap"></a><a name="swap"></a> basic_ifstream:: swap
 
 Меняет местами содержимое двух объектов `basic_ifstream`.
 
@@ -304,7 +305,7 @@ void swap(basic_ifstream& right);
 *Правильно*\
 Ссылка на другой буфер потока.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция элемента меняет местами содержимое этого объекта на содержимое, находящееся *справа*.
 

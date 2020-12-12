@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: texture_view классе'
 title: Класс texture_view
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,16 +15,16 @@ f1_keywords:
 - AMP_GRAPHICS/Concurrency::graphics::texture_view::set
 - AMP_GRAPHICS/Concurrency::graphics::texture_view::value_type
 ms.assetid: 6ec2e289-1626-4727-9592-07981cf1d27d
-ms.openlocfilehash: 1fa21f2a5a5c1d004fc23d70b686d7e45bbcac81
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e2c96f2fbddb5d2dc39a1e2e39fe5a0af656176a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215911"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321725"
 ---
 # <a name="texture_view-class"></a>Класс texture_view
 
-Предоставляет доступ на чтение и запись для текстуры. `texture_view`может использоваться только для чтения текстур, тип значения которых — **`int`** , **`unsigned int`** или **`float`** с 32-битным бпсе по умолчанию. Для чтения других форматов текстуры используйте `texture_view<const value_type, _Rank>` .
+Предоставляет доступ на чтение и запись для текстуры. `texture_view` может использоваться только для чтения текстур, тип значения которых — **`int`** , **`unsigned int`** или **`float`** с 32-битным бпсе по умолчанию. Для чтения других форматов текстуры используйте `texture_view<const value_type, _Rank>` .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -60,7 +61,7 @@ class texture_view<const value_type, _Rank>
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Конструктор texture_view](#ctor)|Перегружен. Конструирует `texture_view` экземпляр.|
 |[Деструктор ~ texture_view](#ctor)|Уничтожает `texture_view` экземпляр.|
@@ -82,7 +83,7 @@ class texture_view<const value_type, _Rank>
 |Имя|Описание|
 |----------|-----------------|
 |[оператор ()](#operator_call)|Перегружен. Возвращает значение элемента по индексу.|
-|[оператор\[\]](#operator_at)|Перегружен. Возвращает значение элемента по индексу.|
+|[станции\[\]](#operator_at)|Перегружен. Возвращает значение элемента по индексу.|
 |[Оператор =](#operator_eq)|Перегружен. Оператор присвоения.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
@@ -103,7 +104,7 @@ class texture_view<const value_type, _Rank>
 
 **Пространство имен:** Concurrency:: Graphics
 
-## <a name="texture_view"></a><a name="dtor"></a>~ texture_view
+## <a name="texture_view"></a><a name="dtor"></a> ~ texture_view
 
 Уничтожает `texture_view` экземпляр.
 
@@ -111,7 +112,7 @@ class texture_view<const value_type, _Rank>
 ~texture_view() restrict(amp, cpu);
 ```
 
-## <a name="texture_view"></a><a name="ctor"></a>texture_view
+## <a name="texture_view"></a><a name="ctor"></a> texture_view
 
 Конструирует `texture_view` экземпляр.
 
@@ -164,7 +165,7 @@ texture_view(// [7] copy constructor
 *_Mip_levels*<br/>
 Число уровней mipmap, доступных через `texture_view` .
 
-## <a name="gather_red"></a><a name="gather_red"></a>gather_red
+## <a name="gather_red"></a><a name="gather_red"></a> gather_red
 
 Выбирает текстуру с заданными координатами с помощью заданной конфигурации выборки и возвращает красный (x) компоненты четырех образцов пикселей текстуры.
 
@@ -195,7 +196,7 @@ const gather_return_type gather_red(
 
 Короткий вектор ранга, содержащий красный (x) компонент 4 выборочно шаг текселя значений.
 
-## <a name="gather_green"></a><a name="gather_green"></a>gather_green
+## <a name="gather_green"></a><a name="gather_green"></a> gather_green
 
 Выбирает текстуру с заданными координатами с помощью заданной конфигурации выборки и возвращает зеленые (y) компоненты четырех образцов пикселей текстуры.
 
@@ -226,7 +227,7 @@ const gather_return_type gather_green(
 
 Короткий вектор ранга, содержащий зеленый компонент (y) из 4 образцов значений шаг текселя.
 
-## <a name="gather_blue"></a><a name="gather_blue"></a>gather_blue
+## <a name="gather_blue"></a><a name="gather_blue"></a> gather_blue
 
 Выбирает текстуру с заданными координатами с помощью заданной конфигурации выборки и возвращает синие (z) компоненты четырех образцов пикселей текстуры.
 
@@ -257,7 +258,7 @@ const gather_return_type gather_blue(
 
 Короткий вектор ранга, содержащий красный (x) компонент 4 выборочно шаг текселя значений.
 
-## <a name="gather_alpha"></a><a name="gather_alpha"></a>gather_alpha
+## <a name="gather_alpha"></a><a name="gather_alpha"></a> gather_alpha
 
 Выбирает текстуру с заданными координатами с помощью заданной конфигурации выборки и возвращает альфа-компоненты четырех образцов пикселей текстуры.
 
@@ -288,7 +289,7 @@ const gather_return_type gather_alpha(
 
 Короткий вектор ранга, содержащий альфа-компонент (w) из 4 образцов значений шаг текселя.
 
-## <a name="get"></a><a name="get"></a>Получить
+## <a name="get"></a><a name="get"></a> Получить
 
 Возвращает значение элемента по указанному индексу.
 
@@ -313,7 +314,7 @@ value_type get(
 
 Значение элемента.
 
-## <a name="operator"></a><a name="operator_eq"></a>Оператор =
+## <a name="operator"></a><a name="operator_eq"></a> Оператор =
 
 Назначает представление той же текстуры, что и указанный `texture_view` для данного `texture_view` экземпляра.
 
@@ -339,7 +340,7 @@ texture_view<const value_type, _Rank>& operator= (// [3] copy constructor
 
 Ссылка на этот `texture_view` экземпляр.
 
-## <a name="operator"></a><a name="operator_at"></a>operator []
+## <a name="operator"></a><a name="operator_at"></a> operator[]
 
 Возвращает значение элемента по индексу.
 
@@ -365,7 +366,7 @@ value_type operator[] (int _I0) const restrict(amp);
 
 Значение элемента, индексируемое `_Index` .
 
-## <a name="operator"></a><a name="operator_call"></a>оператор ()
+## <a name="operator"></a><a name="operator_call"></a> оператор ()
 
 Возвращает значение элемента по индексу.
 
@@ -418,7 +419,7 @@ value_type operator() (
 
 Значение элемента, индексируемое `_Index` .
 
-## <a name="sample"></a><a name="sample"></a>Следующий
+## <a name="sample"></a><a name="sample"></a> Следующий
 
 Выбирает текстуру с заданными координатами и уровнем детализации, используя указанную конфигурацию выборки.
 
@@ -458,7 +459,7 @@ value_type sample(
 
 Пример значения с интерполяцией.
 
-## <a name="set"></a><a name="set"></a>параметр
+## <a name="set"></a><a name="set"></a> параметр
 
 Устанавливает значение элемента по указанному индексу в указанное значение.
 
@@ -476,7 +477,7 @@ void set(
 *value*<br/>
 Значение, которое необходимо присвоить элементу.
 
-## <a name="value_type"></a><a name="value_type"></a>value_type
+## <a name="value_type"></a><a name="value_type"></a> value_type
 
 Тип значения элементов texture_view.
 

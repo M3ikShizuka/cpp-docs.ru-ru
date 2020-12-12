@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: strtof, _strtof_l, wcstof, _wcstof_l'
 title: strtof, _strtof_l, wcstof, _wcstof_l
 ms.date: 4/2/2020
 api_name:
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - _tcstof_l function
 - strtof function
 ms.assetid: 52221b46-876d-4fcc-afb1-97512c17a43b
-ms.openlocfilehash: d99b895076025aa50028bb4cd21df9e13c98197f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7a73df80fefb8d86431027650be2ecd236135dfd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233968"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322424"
 ---
 # <a name="strtof-_strtof_l-wcstof-_wcstof_l"></a>strtof, _strtof_l, wcstof, _wcstof_l
 
@@ -99,9 +100,9 @@ float wcstof_l(
 
 Дополнительные сведения о кодах возврата см. в разделе [errno, _doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Каждая функция преобразует входную строку *стрсаурце* в **`float`** . Функция **strtof** преобразует *стрсаурце* в значение с одной точностью. **strtof** прекращает чтение строки *стрсаурце* на первом символе, который он не может распознать как часть числа. Это может быть завершающий нуль-символ. **wcstof** — это версия **strtof**для расширенных символов; его аргумент *стрсаурце* является строкой расширенных символов. В остальном эти функции ведут себя одинаково.
+Каждая функция преобразует входную строку *стрсаурце* в **`float`** . Функция **strtof** преобразует *стрсаурце* в значение с одной точностью. **strtof** прекращает чтение строки *стрсаурце* на первом символе, который он не может распознать как часть числа. Это может быть завершающий нуль-символ. **wcstof** — это версия **strtof** для расширенных символов; его аргумент *стрсаурце* является строкой расширенных символов. В остальном эти функции ведут себя одинаково.
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -128,8 +129,8 @@ UCRT версии этих функций не поддерживают прео
 
 |Подпрограмма|Обязательный заголовок|
 |-------------|---------------------|
-|**strtof**, **_strtof_l**|C: \<stdlib.h> C++: &lt; cstdlib> или\<stdlib.h>|
-|**wcstof**, **_wcstof_l**|C: \<stdlib.h> или \<wchar.h> C++: &lt; cstdlib> \<stdlib.h> или\<wchar.h>|
+|**strtof**, **_strtof_l**|C: \<stdlib.h> C++: &lt; cstdlib> или \<stdlib.h>|
+|**wcstof**, **_wcstof_l**|C: \<stdlib.h> или \<wchar.h> C++: &lt; cstdlib> \<stdlib.h> или \<wchar.h>|
 
 Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -167,7 +168,7 @@ string = 3.14159This stopped it
 
 [Преобразование данных](../../c-runtime-library/data-conversion.md)<br/>
 [Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [Локаль](../../c-runtime-library/locale.md)<br/>
 [Функции типа "строка — числовое значение"](../../c-runtime-library/string-to-numeric-value-functions.md)<br/>
 [strtod, _strtod_l, wcstod, _wcstod_l](strtod-strtod-l-wcstod-wcstod-l.md)<br/>

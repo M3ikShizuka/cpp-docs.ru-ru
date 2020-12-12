@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: feholdexcept'
 title: feholdexcept
 ms.date: 04/05/2018
 api_name:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - feholdexcept function
 ms.assetid: 88e512ae-b5d8-452c-afe9-c824cd3ef1d8
-ms.openlocfilehash: bd55a4ed627d731f7246d589d4b74b4173e31d4e
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 89ccf9bedb05752202152f6bd862b11b2f765322
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70941192"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322528"
 ---
 # <a name="feholdexcept"></a>feholdexcept
 
@@ -47,13 +48,13 @@ int feholdexcept(
 ### <a name="parameters"></a>Параметры
 
 *пенв*<br/>
-Указатель на объект **fenv_t** , который будет содержать копию среды с плавающей запятой.
+Указатель на объект **fenv_t** , который будет содержать копию среды с плавающей точкой.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Возвращает нуль только в том случае, если функция может успешно включить неостанавливаемую обработку исключений с плавающей точкой.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Функция **feholdexcept** используется для хранения состояния текущей среды с плавающей точкой в объекте **fenv_t** , на который указывает *пенв*, и для установки среды, чтобы не прерывать выполнение при исключениях с плавающей запятой. Это называется режимом без остановки.  В этом режиме работа продолжается, пока среда не будет восстановлена с помощью функции [fesetenv](fesetenv1.md) или [feupdateenv](feupdateenv.md).
 
@@ -67,11 +68,11 @@ int feholdexcept(
 |--------------|--------------|------------------|
 |**feholdexcept**|\<fenv.h>|\<cfenv>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Алфавитный указатель функций](crt-alphabetical-function-reference.md)<br/>
+[Алфавитный справочник по функциям](crt-alphabetical-function-reference.md)<br/>
 [feclearexcept](feclearexcept1.md)<br/>
 [fesetenv](fesetenv1.md)<br/>
 [feupdateenv](feupdateenv.md)<br/>

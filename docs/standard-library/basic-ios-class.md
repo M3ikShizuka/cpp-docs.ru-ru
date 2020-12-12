@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: basic_ios классе'
 title: Класс basic_ios
 ms.date: 11/04/2016
 f1_keywords:
@@ -55,16 +56,16 @@ helpviewer_keywords:
 - std::basic_ios [C++], tie
 - std::basic_ios [C++], widen
 ms.assetid: 4fdcd8e1-62d2-4611-8a70-1e4f58434007
-ms.openlocfilehash: ab8e9e0243a298f5ef39b38b3fd345572cafa587
-ms.sourcegitcommit: 8caaf5e00aeb727741a273aecafa15de293426cf
+ms.openlocfilehash: 54b70092860002b85b2a603ad5d4dc5a611007ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91806568"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321551"
 ---
 # <a name="basic_ios-class"></a>Класс basic_ios
 
-Шаблон класса описывает хранилище и функции-члены, общие для входных потоков (класса Template [basic_istream](../standard-library/basic-istream-class.md)) и потоков вывода (шаблона класса [basic_ostream](../standard-library/basic-ostream-class.md)), которые зависят от параметров шаблона. (Класс [ios_base](../standard-library/ios-base-class.md) описывает общие и независящие от параметров шаблона параметры.) Объект класса ** \<class Elem, class Traits> basic_ios** помогает управлять потоком с элементами типа `Elem` , признаки символов которых определяются классом `Traits` .
+Шаблон класса описывает хранилище и функции-члены, общие для входных потоков (класса Template [basic_istream](../standard-library/basic-istream-class.md)) и потоков вывода (шаблона класса [basic_ostream](../standard-library/basic-ostream-class.md)), которые зависят от параметров шаблона. (Класс [ios_base](../standard-library/ios-base-class.md) описывает общие и независящие от параметров шаблона параметры.) Объект класса **\<class Elem, class Traits> basic_ios** помогает управлять потоком с элементами типа `Elem` , признаки символов которых определяются классом `Traits` .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -84,7 +85,7 @@ class basic_ios : public ios_base
 
 ## <a name="remarks"></a>Комментарии
 
-Объект класса **basic_ios \<class Elem, class Traits> ** хранит:
+Объект класса **basic_ios \<class Elem, class Traits>** хранит:
 
 - Указатель привязки к объекту типа [basic_istream](../standard-library/basic-istream-class.md) **\<Elem, Traits>** .
 
@@ -116,7 +117,7 @@ class basic_ios : public ios_base
 
 |Функция-член|Описание|
 |-|-|
-|[Неправильное значение](#bad)|Сообщает о потере целостности буфера потока.|
+|[правильным](#bad)|Сообщает о потере целостности буфера потока.|
 |[пусто](#clear)|Очищает все флаги ошибок.|
 |[copyfmt](#copyfmt)|Копирует флаги из одного потока в другой.|
 |[конца](#eof)|Указывает, достигнут ли конец потока.|
@@ -260,7 +261,7 @@ const basic_ios<Elem, Traits>& right);
 
 ### <a name="remarks"></a>Комментарии
 
-Функция – член сообщает о ** \_ событии стирания**события обратного вызова. Затем он копируется *непосредственно* в ** \* этот** символ заполнения, указатель на привязку и сведения о форматировании. Перед изменением маски исключения он сообщает о событии обратного вызова `copyfmt_event` . Если после завершения копирования **state & **[exceptions](#exceptions) не равно нулю, функция эффективно вызывает [clear](#clear) с аргументом [rdstate](#rdstate). Он возвращает ** \* this**.
+Функция – член сообщает о **\_ событии стирания** события обратного вызова. Затем он копируется *непосредственно* в **\* этот** символ заполнения, указатель на привязку и сведения о форматировании. Перед изменением маски исключения он сообщает о событии обратного вызова `copyfmt_event` . Если после завершения копирования **state &**[exceptions](#exceptions) не равно нулю, функция эффективно вызывает [clear](#clear) с аргументом [rdstate](#rdstate). Он возвращает **\* this**.
 
 ### <a name="example"></a>Пример
 
@@ -581,7 +582,7 @@ void move(basic_ios&& right);
 
 ### <a name="remarks"></a>Комментарии
 
-Защищенная функция-член перемещает все значения, хранящиеся *справа* **`*this`** , за исключением хранимой функции `stream buffer pointer` , которая не изменяется в *правой части* и устанавливает для нее указатель null в **`*this`** . Сохраненный `tie pointer` указатель имеет значение NULL в *правильном*указателе.
+Защищенная функция-член перемещает все значения, хранящиеся *справа* **`*this`** , за исключением хранимой функции `stream buffer pointer` , которая не изменяется в *правой части* и устанавливает для нее указатель null в **`*this`** . Сохраненный `tie pointer` указатель имеет значение NULL в *правильном* указателе.
 
 ## <a name="basic_iosnarrow"></a><a name="narrow"></a> basic_ios:: Narrow
 
@@ -984,7 +985,7 @@ void swap(basic_ios&& right);
 
 Защищенная функция элемента обменивается со всеми значениями, которые хранятся *справа* , **`*this`** за исключением хранимой функции `stream buffer pointer` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [Программирование iostream](../standard-library/iostream-programming.md)\

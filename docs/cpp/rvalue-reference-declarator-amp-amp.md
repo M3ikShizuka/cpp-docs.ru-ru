@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: декларатор ссылки rvalue: &amp;&amp;'
 title: 'Декларатор ссылки rvalue: &amp;&amp;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - '&& rvalue reference declarator'
 ms.assetid: eab0ce3a-c5a3-4992-aa70-6a8ab1f7491d
-ms.openlocfilehash: 953aafe79115ad32a172c878eb910dd06b81e3f4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6c88116c5834c027d72874d1377e79799faa80ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842043"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319382"
 ---
 # <a name="rvalue-reference-declarator-ampamp"></a>Декларатор ссылки rvalue: &amp;&amp;
 
@@ -400,7 +401,7 @@ print_type_and_value<string&>(string& t)
 
 Вывод аргументов шаблонов — это важный элемент реализации точной пересылки. Более подробно точная пересылка рассматривается выше в подразделе "Точная пересылка" этого раздела.
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 Ссылки rvalue различают значения lvalue и rvalue. Они помогают повысить производительность приложений, устраняя необходимость в ненужных операциях выделения памяти и копирования. Они также позволяют создавать одну версию функции, принимающую произвольные аргументы и пересылающую их в другую функцию, как если бы эта другая функция вызывалась напрямую.
 

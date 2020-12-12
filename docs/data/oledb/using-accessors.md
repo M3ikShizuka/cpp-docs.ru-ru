@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: использование методов доступа'
 title: Использование методов доступа
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - OLE DB consumer templates, accessors
 - rowsets [C++], accessors
 ms.assetid: 6ce484a6-fbbe-40de-8ff9-5cddcd78d283
-ms.openlocfilehash: 5e35318fd1b5a245eaed982674d69484e34f9dac
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 66d7c7d26da0d808e533bee438fec1283a89e839
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209343"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322315"
 ---
 # <a name="using-accessors"></a>Использование методов доступа
 
@@ -23,10 +24,10 @@ ms.locfileid: "80209343"
 
 - [Использование динамических методов доступа](../../data/oledb/using-dynamic-accessors.md)
 
-- [Использование методов ручного доступа](../../data/oledb/using-manual-accessors.md)
+- [Использование ручных методов доступа](../../data/oledb/using-manual-accessors.md)
 
-- [Доступ к данным XML](../../data/oledb/accessing-xml-data.md)
+- [Доступ к XML-данным](../../data/oledb/accessing-xml-data.md)
 
 ## <a name="see-also"></a>См. также раздел
 
-[Работа с шаблонами объекта-получателя OLE DB](../../data/oledb/working-with-ole-db-consumer-templates.md)
+[Работа с шаблонами потребителей OLE DB](../../data/oledb/working-with-ole-db-consumer-templates.md)

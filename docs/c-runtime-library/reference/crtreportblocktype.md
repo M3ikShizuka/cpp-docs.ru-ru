@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _CrtReportBlockType'
 title: _CrtReportBlockType
 ms.date: 11/04/2016
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - _BLOCK_SUBTYPE macro
 - BLOCK_TYPE macro
 ms.assetid: 0f4b9da7-bebb-4956-9541-b2581640ec6b
-ms.openlocfilehash: 1fccb66632e832b491832cfac12fb1940bdf0f87
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b05b7fe73896068a05368df001ca5c80fedfb69a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213597"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319628"
 ---
 # <a name="_crtreportblocktype"></a>_CrtReportBlockType
 
@@ -57,7 +58,7 @@ int _CrtReportBlockType(
 
 При передаче допустимого указателя отладочной кучи функция **_CrtReportBlockType** Возвращает тип блока и подтип в виде **`int`** . При передаче недопустимого указателя функция возвращает значение -1.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Чтобы извлечь тип и подтип, возвращаемый **_CrtReportBlockType**, используйте макросы **_BLOCK_TYPE** и **_BLOCK_SUBTYPE** (они определены в Crtdbg. h) для возвращаемого значения.
 

@@ -1,20 +1,21 @@
 ---
+description: 'Дополнительные сведения о: bad_variant_access классе'
 title: Класс bad_variant_access
 ms.date: 04/04/2019
 f1_keywords:
 - variant/std::bad_variant_access
 helpviewer_keywords:
 - std::bad_variant_access
-ms.openlocfilehash: 6b325008c9e112a83210ad10f0311cfbb1a9a1d7
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 18956eb8f649990acdbc88226b520056d7c8d50b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68269136"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321590"
 ---
-# <a name="badvariantaccess-class"></a>Класс bad_variant_access
+# <a name="bad_variant_access-class"></a>Класс bad_variant_access
 
-Объекты типа bad_variant_access создаваемых для отчета недопустимое обращается к значению объекта variant.
+Объекты типа bad_variant_access создаются для передачи недопустимых обращений к значению объекта Variant.
 
 ## <a name="syntax"></a>Синтаксис
 

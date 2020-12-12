@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: in (C++)'
 title: In (атрибут C++ COM)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - in attribute
 ms.assetid: 7b450cc4-4d2e-4910-a195-7487c6b7c373
-ms.openlocfilehash: 2838a00ffe365f42fb7778b654306eb0c73b5996
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c4d19fcf7adc767986306a3ef55b26a2cc91dccf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842238"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321380"
 ---
 # <a name="in-c"></a>in (C++)
 
@@ -29,7 +30,7 @@ ms.locfileid: "88842238"
 
 ## <a name="example"></a>Пример
 
-Пример использования в см. **в**разделе о возможности [привязки](bindable.md) .
+Пример использования в см. **в** разделе о возможности [привязки](bindable.md) .
 
 ## <a name="requirements"></a>Требования
 
@@ -48,5 +49,5 @@ ms.locfileid: "88842238"
 [Атрибуты параметра](parameter-attributes.md)<br/>
 [Атрибуты метода](method-attributes.md)<br/>
 [максимально](defaultvalue.md)<br/>
-[идентификатор](id.md)<br/>
+[id](id.md)<br/>
 [out](out-cpp.md)

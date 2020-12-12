@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: RoInitializeWrapper Class'
 title: Класс RoInitializeWrapper
 ms.date: 10/03/2018
 ms.topic: reference
@@ -13,16 +14,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::RoInitializeWrapper::RoInitializeWrapper, constructor
 - Microsoft::WRL::Wrappers::RoInitializeWrapper::~RoInitializeWrapper, destructor
 ms.assetid: 4055fbe0-63a7-4c06-b5a0-414fda5640e5
-ms.openlocfilehash: eba9162f17b98d13a9caf956b4f110b89dd81c37
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b7f2c49bd461f08ad732680f1a02968ee7717116
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371224"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319304"
 ---
 # <a name="roinitializewrapper-class"></a>Класс RoInitializeWrapper
 
-Инициализирует время выполнения Windows.
+Инициализирует среда выполнения Windows.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,22 +33,22 @@ class RoInitializeWrapper;
 
 ## <a name="remarks"></a>Remarks
 
-`RoInitializeWrapper`это удобство, которое инициализирует Время выполнения Windows и возвращает HRESULT, который указывает, была ли операция успешной. Поскольку вызовы `::Windows::Foundation::Uninitialize`деструктора класса `RoInitializeWrapper` должны быть объявлены в глобальном или верхнем уровне.
+`RoInitializeWrapper` — Это удобство, которое инициализирует среда выполнения Windows и возвращает значение HRESULT, указывающее, была ли операция успешной. Поскольку деструктор класса вызывает `::Windows::Foundation::Uninitialize` , экземпляры `RoInitializeWrapper` должны быть объявлены на глобальном уровне или области верхнего уровня.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-Имя                                                                    | Описание
+name                                                                    | Описание
 ----------------------------------------------------------------------- | -----------------------------------------------------------------
-[RoInitializeWrapper::RoInitializeWrapper](#roinitializewrapper)        | Инициализирует новый экземпляр класса `RoInitializeWrapper`.
-[RoInitializeWrapper:: »RoInitializeWrapper](#tilde-roinitializewrapper) | Уничтожает текущий `RoInitializeWrapper` экземпляр класса.
+[RoInitializeWrapper:: RoInitializeWrapper](#roinitializewrapper)        | Инициализирует новый экземпляр класса `RoInitializeWrapper`.
+[RoInitializeWrapper:: ~ RoInitializeWrapper](#tilde-roinitializewrapper) | Уничтожает текущий экземпляр `RoInitializeWrapper` класса.
 
 ### <a name="public-operators"></a>Открытые операторы
 
 Имя                                       | Описание
 ------------------------------------------ | ------------------------------------------------------------------------
-[RoInitializeWrapper::HRESULT()](#hresult) | Извлекает HRESULT производства `RoInitializeWrapper` конструктора.
+[RoInitializeWrapper:: HRESULT ()](#hresult) | Извлекает значение HRESULT, созданное `RoInitializeWrapper` конструктором.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -55,19 +56,19 @@ class RoInitializeWrapper;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** corewrappers.h
+**Заголовок:** кореврапперс. h
 
-**Пространство имен:** Microsoft:WRL::Wrappers
+**Пространство имен:** Программы Microsoft:: WRL:: оболочки
 
-## <a name="roinitializewrapperhresult"></a><a name="hresult"></a>RoInitializeWrapper::HRESULT()
+## <a name="roinitializewrapperhresult"></a><a name="hresult"></a> RoInitializeWrapper:: HRESULT ()
 
-Извлекает значение HRESULT, произведенное последним `RoInitializeWrapper` конструктором.
+Извлекает значение HRESULT, созданное последним `RoInitializeWrapper` конструктором.
 
 ```cpp
 operator HRESULT()
 ```
 
-## <a name="roinitializewrapperroinitializewrapper"></a><a name="roinitializewrapper"></a>RoInitializeWrapper::RoInitializeWrapper
+## <a name="roinitializewrapperroinitializewrapper"></a><a name="roinitializewrapper"></a> RoInitializeWrapper:: RoInitializeWrapper
 
 Инициализирует новый экземпляр класса `RoInitializeWrapper`.
 
@@ -77,21 +78,21 @@ RoInitializeWrapper(RO_INIT_TYPE flags)
 
 ### <a name="parameters"></a>Параметры
 
-*Флаги*<br/>
-Один из RO_INIT_TYPE перечисления, который определяет поддержку, предоставляемую Windows Runtime.
+*flags*<br/>
+Одно из перечислений RO_INIT_TYPE, которое указывает поддержку, предоставляемую среда выполнения Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Класс `RoInitializeWrapper` вызывает `Windows::Foundation::Initialize(flags)`.
+`RoInitializeWrapper`Класс вызывает `Windows::Foundation::Initialize(flags)` .
 
-## <a name="roinitializewrapperroinitializewrapper"></a><a name="tilde-roinitializewrapper"></a>RoInitializeWrapper:: »RoInitializeWrapper
+## <a name="roinitializewrapperroinitializewrapper"></a><a name="tilde-roinitializewrapper"></a> RoInitializeWrapper:: ~ RoInitializeWrapper
 
-Не инициирует время выполнения Windows.
+Отменяет инициализацию среда выполнения Windows.
 
 ```cpp
 ~RoInitializeWrapper()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Класс `RoInitializeWrapper` вызывает `Windows::Foundation::Uninitialize()`.
+`RoInitializeWrapper`Класс вызывает `Windows::Foundation::Uninitialize()` .

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: basic_fstream классе'
 title: Класс basic_fstream
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - std::basic_fstream [C++], rdbuf
 - std::basic_fstream [C++], swap
 ms.assetid: 8473817e-42a4-430b-82b8-b476c86bcf8a
-ms.openlocfilehash: a2b62b85953a5f4ec829053c8af93582eec76618
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: df8ad83696422737b5b368b39bf21c82506e8b65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219304"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321577"
 ---
 # <a name="basic_fstream-class"></a>Класс basic_fstream
 
@@ -42,7 +43,7 @@ class basic_fstream : public basic_iostream<Elem, Tr>
 *ТС*\
 Признаки базового элемента буфера файла (обычно `char_traits`< `Elem`>).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Объект сохраняет объект класса `basic_filebuf`< `Elem`, `Tr`>.
 
@@ -93,7 +94,7 @@ Writing to a basic_fstream object...
 
 |Функция-член|Описание|
 |-|-|
-|[выхода](#close)|Закрывает файл.|
+|[close](#close)|Закрывает файл.|
 |[is_open](#is_open)|Определяет, открыт ли файл.|
 |[open](#open)|Открывает файл.|
 |[rdbuf](#rdbuf)|Возвращает адрес хранимого буфера потока типа pointer в [basic_filebuf](../standard-library/basic-filebuf-class.md) <  `Elem` `Tr`>.|
@@ -105,7 +106,7 @@ Writing to a basic_fstream object...
 
 **Пространство имен:** std
 
-## <a name="basic_fstreambasic_fstream"></a><a name="basic_fstream"></a>basic_fstream:: basic_fstream
+## <a name="basic_fstreambasic_fstream"></a><a name="basic_fstream"></a> basic_fstream:: basic_fstream
 
 Создает объект типа `basic_fstream`.
 
@@ -136,7 +137,7 @@ basic_fstream(basic_fstream&& right);
 *_Prot*\
 Защита открытия файлов по умолчанию, эквивалентная параметру *шфлаг* в [_fsopen _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый конструктор инициализирует базовый класс путем вызова [basic_iostream](../standard-library/basic-iostream-class.md)( `sb` ), где `sb` — это хранимый объект класса [basic_filebuf](../standard-library/basic-filebuf-class.md) \< **Elem**, **Tr**> . Он также инициализируется `sb` путем вызова `basic_filebuf` \< **Elem**, **Tr**> .
 
@@ -148,7 +149,7 @@ basic_fstream(basic_fstream&& right);
 
 Пример использования `basic_fstream` см. в разделе [streampos](../standard-library/ios-typedefs.md#streampos).
 
-## <a name="basic_fstreamclose"></a><a name="close"></a>basic_fstream:: Close
+## <a name="basic_fstreamclose"></a><a name="close"></a> basic_fstream:: Close
 
 Закрывает файл.
 
@@ -156,7 +157,7 @@ basic_fstream(basic_fstream&& right);
 void close();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция члена вызывает [rdbuf](#rdbuf) **->** [Close](../standard-library/basic-filebuf-class.md#close).
 
@@ -164,7 +165,7 @@ void close();
 
 Пример использования `close` см. в разделе [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close).
 
-## <a name="basic_fstreamis_open"></a><a name="is_open"></a>basic_fstream:: is_open
+## <a name="basic_fstreamis_open"></a><a name="is_open"></a> basic_fstream:: is_open
 
 Определяет, открыт ли файл.
 
@@ -176,7 +177,7 @@ bool is_open() const;
 
 **`true`** значение, если файл открыт; **`false`** в противном случае —.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция члена возвращает [rdbuf](#rdbuf) **->** [is_open](../standard-library/basic-filebuf-class.md#is_open).
 
@@ -184,7 +185,7 @@ bool is_open() const;
 
 Пример использования `is_open` см. в разделе [basic_filebuf::is_open](../standard-library/basic-filebuf-class.md#is_open).
 
-## <a name="basic_fstreamopen"></a><a name="open"></a>basic_fstream:: Open
+## <a name="basic_fstreamopen"></a><a name="open"></a> basic_fstream:: Open
 
 Открывает файл.
 
@@ -219,7 +220,7 @@ void open(
 *_Prot*\
 Защита открытия файлов по умолчанию, эквивалентная параметру *шфлаг* в [_fsopen _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член вызывает [rdbuf](#rdbuf) **->** [Open](../standard-library/basic-filebuf-class.md#open)(_ *filename*, `_Mode` ). Если эта функция возвращает пустой указатель, функция вызывает [SetState](../standard-library/basic-ios-class.md#setstate)( `failbit` ).
 
@@ -227,7 +228,7 @@ void open(
 
 Пример использования см. в разделе [basic_filebuf:: Open](../standard-library/basic-filebuf-class.md#open) `open` .
 
-## <a name="basic_fstreamoperator"></a><a name="op_eq"></a>basic_fstream:: operator =
+## <a name="basic_fstreamoperator"></a><a name="op_eq"></a> basic_fstream:: operator =
 
 Назначает этому объекту содержимое из указанного объекта потока. Это назначение перемещения с использованием rvalue, после которого не остается копии.
 
@@ -244,11 +245,11 @@ basic_fstream& operator=(basic_fstream&& right);
 
 Возвращает **`*this`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Оператор Member заменяет содержимое объекта с помощью содержимого *right*, которое рассматривается как ссылка rvalue.
 
-## <a name="basic_fstreamrdbuf"></a><a name="rdbuf"></a>basic_fstream:: rdbuf
+## <a name="basic_fstreamrdbuf"></a><a name="rdbuf"></a> basic_fstream:: rdbuf
 
 Возвращает адрес сохраненного буфера потока с типом указателя на [basic_filebuf](../standard-library/basic-filebuf-class.md) \< **Elem**, **Tr**> .
 
@@ -264,7 +265,7 @@ basic_filebuf<Elem, Tr> *rdbuf() const
 
 Пример использования `rdbuf` см. в разделе [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close).
 
-## <a name="basic_fstreamswap"></a><a name="swap"></a>basic_fstream:: swap
+## <a name="basic_fstreamswap"></a><a name="swap"></a> basic_fstream:: swap
 
 Меняет местами содержимое двух объектов `basic_fstream`.
 
@@ -277,7 +278,7 @@ void swap(basic_fstream& right);
 *Правильно*\
 Ссылка `lvalue` на объект `basic_fstream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция элемента обменивается содержимым этого объекта и содержимым *right*.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _CrtSetDumpClient'
 title: _CrtSetDumpClient
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - _CrtSetDumpClient function
 - CrtSetDumpClient function
 ms.assetid: f3dd06d0-c331-4a12-b68d-25378d112033
-ms.openlocfilehash: fd2b037ce10f708ab133f31a20636438b0d04b93
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 89a2648aae62fc7f62b04519eacce4e0f67002f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234267"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319538"
 ---
 # <a name="_crtsetdumpclient"></a>_CrtSetDumpClient
 
@@ -51,7 +52,7 @@ _CRT_DUMP_CLIENT _CrtSetDumpClient( _CRT_DUMP_CLIENT dumpClient );
 
 Возвращает определенную ранее функцию дампа клиентских блоков.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_CrtSetDumpClient** позволяет приложению подключать собственную функцию для дампа объектов, хранящихся в **_CLIENT_BLOCK** блоках памяти, в процесс дампа памяти отладки среды выполнения C. В результате каждый раз, когда функция дампа отладки, например [_CrtMemDumpAllObjectsSince](crtmemdumpallobjectssince.md) или [_CrtDumpMemoryLeaks](crtdumpmemoryleaks.md) , выводит дамп **_CLIENT_BLOCK** блока памяти, также вызывается функция дампа приложения. **_CrtSetDumpClient** предоставляет приложению простой способ обнаружения утечек памяти и проверки или сообщения содержимого данных, хранящихся в блоках **_CLIENT_BLOCK** . Если [_DEBUG](../../c-runtime-library/debug.md) не определено, вызовы **_CrtSetDumpClient** удаляются во время предварительной обработки.
 
@@ -81,7 +82,7 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)( void *, size_t );
 
 Только отладочные версии [библиотек времени выполнения языка C](../../c-runtime-library/crt-library-features.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Отладочные подпрограммы](../../c-runtime-library/debug-routines.md)<br/>
 [_CrtReportBlockType](crtreportblocktype.md)<br/>

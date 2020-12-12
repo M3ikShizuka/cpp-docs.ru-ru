@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: исвбланк,, _isblank_l, _iswblank_l'
 title: isblank, iswblank, _isblank_l, _iswblank_l
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ f1_keywords:
 - _isblank_l
 - iswblank
 ms.assetid: 33ce96c0-f387-411a-8283-c3d2a69e56bd
-ms.openlocfilehash: 1c45319d7da48fad21af5375b0c310330d0f575a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a2731468cda3a2d3bf059133f116b22fa2b019f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918474"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321117"
 ---
 # <a name="isblank-iswblank-_isblank_l-_iswblank_l"></a>isblank, iswblank, _isblank_l, _iswblank_l
 
@@ -65,7 +66,7 @@ int _iswblank_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Проверяемое целое число.
 
 *locale*<br/>
@@ -86,7 +87,7 @@ int _iswblank_l(
 |**_istblank**|**ISBLANK**|[_ismbcblank](ismbcgraph-functions.md)|**iswblank**|
 |**_istblank_l**|**_isblank_l**|[_ismbcblank_l](ismbcgraph-functions.md)|**_iswblank_l**|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -104,5 +105,5 @@ int _iswblank_l(
 ## <a name="see-also"></a>См. также раздел
 
 [Классификация символов](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Процедуры is, isw](../../c-runtime-library/is-isw-routines.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[является, подпрограммы isw](../../c-runtime-library/is-isw-routines.md)<br/>

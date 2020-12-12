@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: работа с шаблонами потребителей OLE DB'
 title: Работа с шаблонами объекта-получателя OLE DB
 ms.date: 10/24/2018
 helpviewer_keywords:
 - sample applications [C++], OLE DB Templates
 - OLE DB consumer templates, about consumer templates
 ms.assetid: 526aa897-5961-4396-85cb-c84f77113551
-ms.openlocfilehash: f1cc18d2192a42d22e31ee346f1e233cd7615ac0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 62d4920ab38cf960a3dec0bf8845016a42d798a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209265"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319083"
 ---
 # <a name="working-with-ole-db-consumer-templates"></a>Работа с шаблонами объекта-получателя OLE DB
 
@@ -18,11 +19,11 @@ ms.locfileid: "80209265"
 
 - [Упрощение доступа к данным с помощью атрибутов базы данных](../../data/oledb/simplifying-data-access-with-database-attributes.md)
 
-- [Статус поля элементов данных в методах доступа, создаваемых мастером](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md)
+- [Элементы данных состояния полей в Wizard-Generated методов доступа](../../data/oledb/field-status-data-members-in-wizard-generated-accessors.md)
 
-- [Перебор простого набора строк](../../data/oledb/traversing-a-simple-rowset.md)
+- [Обход простого набора строк](../../data/oledb/traversing-a-simple-rowset.md)
 
-- [Выполнение параметризованного запроса](../../data/oledb/issuing-a-parameterized-query.md)
+- [Выдача параметризованного запроса](../../data/oledb/issuing-a-parameterized-query.md)
 
 - [Выборка данных](../../data/oledb/fetching-data.md)
 
@@ -32,7 +33,7 @@ ms.locfileid: "80209265"
 
 - [Использование методов доступа](../../data/oledb/using-accessors.md)
 
-- [Получение метаданных в схеме набора строк](../../data/oledb/obtaining-metadata-with-schema-rowsets.md)
+- [Получение метаданных с помощью наборов строк схемы](../../data/oledb/obtaining-metadata-with-schema-rowsets.md)
 
 - [Поддержка транзакций в OLE DB](../../data/oledb/supporting-transactions-in-ole-db.md)
 
@@ -40,11 +41,11 @@ ms.locfileid: "80209265"
 
 - [Использование существующего набора записей ADO](../../data/oledb/using-an-existing-ado-recordset.md)
 
-- [Обновление столбца при наличии ссылки в другой таблице на данную строку](../../data/oledb/updating-a-column-when-another-table-contains-a-reference-to-the-row.md)
+- [Обновление столбца, если другая таблица содержит ссылку на строку](../../data/oledb/updating-a-column-when-another-table-contains-a-reference-to-the-row.md)
 
 - [Использование закладок](../../data/oledb/using-bookmarks.md)
 
-- [Извлечение большого двоичного объекта](../../data/oledb/retrieving-a-blob.md)
+- [Извлечение двоичного объекта (BLOB)](../../data/oledb/retrieving-a-blob.md)
 
 - [Получение уведомлений](../../data/oledb/receiving-notifications.md)
 
@@ -54,9 +55,9 @@ ms.locfileid: "80209265"
 
 - [CatDB](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer)
 
-- [дбвиевер](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer)
+- [DBViewer](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer)
 
-- [Чтение](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer)
+- [MultiRead](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer)
 
 ## <a name="see-also"></a>См. также раздел
 

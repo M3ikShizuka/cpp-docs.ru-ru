@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _strdup, _wcsdup, _mbsdup'
 title: _strdup, _wcsdup, _mbsdup
 ms.date: 4/2/2020
 api_name:
@@ -48,19 +49,19 @@ helpviewer_keywords:
 - tcsdup function
 - _tcsdup function
 ms.assetid: 8604f8bb-95e9-45d3-93ef-20397ebf247a
-ms.openlocfilehash: 42b4a890c1c7f350b83bb92a548d716ee6d9ebfc
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: b080f614f46aabc63e798c16113cffe45008047d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914475"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322450"
 ---
 # <a name="_strdup-_wcsdup-_mbsdup"></a>_strdup, _wcsdup, _mbsdup
 
 Повторяющиеся строки.
 
 > [!IMPORTANT]
-> **_mbsdup** нельзя использовать в приложениях, которые выполняются в среда выполнения Windows. Дополнительные сведения см. [в разделе функции CRT, которые не поддерживаются в универсальная платформа Windows приложениях](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsdup** нельзя использовать в приложениях, которые выполняются в среда выполнения Windows. Дополнительные сведения см.                  [в разделе функции CRT, которые не поддерживаются в универсальная платформа Windows приложениях](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -85,11 +86,11 @@ unsigned char *_mbsdup(
 
 Каждая из этих функций возвращает указатель на место хранения копируемой строки или **значение NULL** , если не удается выделить хранилище.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_strdup** вызывает функцию [malloc](malloc.md) , чтобы выделить место для хранения копии *Стрсаурце* , а затем копирует *стрсаурце* в выделенное пространство.
 
-**_wcsdup** и **_mbsdup** — это версии **_strdup**для расширенных символов и многобайтовых символов. Аргументы и возвращаемое значение **_wcsdup** являются строками расширенных символов; **_mbsdup** являются строками многобайтовых символов. В остальном эти три функции ведут себя идентично.
+**_wcsdup** и **_mbsdup** — это версии **_strdup** для расширенных символов и многобайтовых символов. Аргументы и возвращаемое значение **_wcsdup** являются строками расширенных символов; **_mbsdup** являются строками многобайтовых символов. В остальном эти три функции ведут себя идентично.
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Clang свойства компоновщика (Android C++)'
 title: Свойства компоновщика Clang (Android C++)
 ms.date: 10/23/2017
 ms.assetid: 66e88848-116c-4eb0-bc57-183394d35b57
@@ -25,16 +26,16 @@ f1_keywords:
 - VC.Project.VCLinkerTool.Clang.AdditionalOptionsPage
 - VC.Project.VCLinkerTool.Clang.AdditionalDependencies
 - VC.Project.VCLinkerTool.Clang.LibraryDependencies
-ms.openlocfilehash: 55b944040157d13741b992f4ec66c35d1b117d95
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 65cbfb3d77dad3d78d8b343274d0fa65cf3ed457
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79470253"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97319278"
 ---
 # <a name="clang-linker-properties-android-c"></a>Свойства компоновщика Clang (Android C++)
 
-| Свойство | Description | Варианты |
+| Свойство | Описание | Варианты |
 |--|--|--|
 | Выходной файл | Параметр переопределяет стандартное имя и расположение программы, которую создает компоновщик. (-o) |
 | Отображать ход выполнения | Печатает сообщения хода выполнения компоновщика. |

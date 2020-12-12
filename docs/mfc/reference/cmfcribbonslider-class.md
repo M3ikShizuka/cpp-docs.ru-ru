@@ -1,5 +1,6 @@
 ---
-title: Класс CMFCRibbonSlider
+description: 'Дополнительные сведения о: Кмфкриббонслидер Class'
+title: Класс Кмфкриббонслидер
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCRibbonSlider
@@ -30,16 +31,16 @@ helpviewer_keywords:
 - CMFCRibbonSlider [MFC], SetZoomButtons
 - CMFCRibbonSlider [MFC], SetZoomIncrement
 ms.assetid: 9351ac34-f234-4e42-91e2-763f1989c8ff
-ms.openlocfilehash: 304581371c68817c6031153c3cec227137771c5d
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: d125afdf961d97c0501742acdc75d7802c7e104d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754072"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321738"
 ---
-# <a name="cmfcribbonslider-class"></a>Класс CMFCRibbonSlider
+# <a name="cmfcribbonslider-class"></a>Класс Кмфкриббонслидер
 
-Класс `CMFCRibbonSlider` реализует элемент управления ползунок, который можно добавить в ленточку или ленту статус-бар. Элемент управления "ползунок" ленты напоминает ползунки масштаба, отображаемые в приложениях Office 2007.
+`CMFCRibbonSlider`Класс реализует элемент управления "ползунок", который можно добавить на панель ленты или в строку состояния ленты. Элемент управления "ползунок" ленты напоминает ползунки масштаба, отображаемые в приложениях Office 2007.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,41 +48,41 @@ ms.locfileid: "81754072"
 class CMFCRibbonSlider : public CMFCRibbonBaseElement
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMFCRibbonSlider::CMFCRibbonSlider](#cmfcribbonslider)|Конструирует и инициализирует управление слайдером ленты.|
+|[Кмфкриббонслидер:: Кмфкриббонслидер](#cmfcribbonslider)|Создает и инициализирует элемент управления "ползунок" ленты.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMFCRibbonSlider:GetPos](#getpos)|Возвращает текущее положение элемента управления ползунок.|
-|[CMFCRibbonSlider:GetRangeMax](#getrangemax)|Возвращает максимальное значение ползунка.|
-|[CMFCRibbonSlider:GetRangeMin](#getrangemin)|Возвращает минимальное значение ползунка.|
-|[CMFCRibbonSlider:GetRegularSize](#getregularsize)|Возвращает стандартный размер элемента ленты. (Оверлет [CMFCRibbonBaseElement::GetRegularSize](../../mfc/reference/cmfcribbonbaseelement-class.md#getregularsize).)|
-|[CMFCRibbonSlider::Get'mIncrement](#getzoomincrement)|Возвращает размер приращения зума для управления ползунок.|
-|[CMFCRibbonSlider::Хас-ЗумБаттонс](#haszoombuttons)|Уточняется, есть ли в слайдере кнопки масштабирования.|
-|[CMFCRibbonSlider::OnDraw](#ondraw)|Вызывается платформой для отрисовки элемента ленты. (Переопределяет [CMFCRibbonBaseElement::Ondraw](../../mfc/reference/cmfcribbonbaseelement-class.md#ondraw).)|
-|[CMFCRibbonSlider::SetPos](#setpos)|Устанавливает текущее положение управления ползунок.|
-|[CMFCRibbonSlider::SetRange](#setrange)|Определяет диапазон управления ползунок, установив минимальные и максимальные значения.|
-|[CMFCRibbonSlider::Set'mButtons](#setzoombuttons)|Показывает или скрывает кнопки масштабирования.|
-|[CMFCRibbonSlider::Set'mIncrement](#setzoomincrement)|Устанавливает размер приращения зума для управления ползунок.|
+|[Кмфкриббонслидер:: Жетпос](#getpos)|Возвращает текущую положение элемента управления "ползунок".|
+|[Кмфкриббонслидер:: Жетранжемакс](#getrangemax)|Возвращает максимальное значение ползунка.|
+|[Кмфкриббонслидер:: Жетранжемин](#getrangemin)|Возвращает минимальное значение ползунка.|
+|[Кмфкриббонслидер:: Жетрегуларсизе](#getregularsize)|Возвращает стандартный размер элемента ленты. (Переопределяет [метод CMFCRibbonBaseElement:: жетрегуларсизе](../../mfc/reference/cmfcribbonbaseelement-class.md#getregularsize).)|
+|[Кмфкриббонслидер:: Жетзуминкремент](#getzoomincrement)|Возвращает размер увеличения масштаба для элемента управления "ползунок".|
+|[Кмфкриббонслидер:: Хасзумбуттонс](#haszoombuttons)|Указывает, имеет ли ползунок кнопки масштабирования.|
+|[Кмфкриббонслидер:: OnDraw](#ondraw)|Вызывается платформой для отрисовки элемента ленты. (Переопределяет [метод CMFCRibbonBaseElement:: OnDraw](../../mfc/reference/cmfcribbonbaseelement-class.md#ondraw).)|
+|[Кмфкриббонслидер:: Сетпос](#setpos)|Задает текущую положение элемента управления "ползунок".|
+|[Кмфкриббонслидер:: SetRange](#setrange)|Задает диапазон элемента управления ползунка, устанавливая минимальное и максимальное значения.|
+|[Кмфкриббонслидер:: Сетзумбуттонс](#setzoombuttons)|Показывает или скрывает кнопки масштабирования.|
+|[Кмфкриббонслидер:: Сетзуминкремент](#setzoomincrement)|Задает размер увеличения масштаба для элемента управления "ползунок".|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот `SetRange` метод можно настроить для настройки диапазона приращений увеличения для ползунка. Можно установить текущее положение слайдера с помощью метода. `SetPos`
+С помощью метода можно `SetRange` настроить диапазон увеличения масштаба для ползунка. Текущее положение ползунка можно задать с помощью `SetPos` метода.
 
-Вы можете отображать круговые кнопки масштабирования на левой и `SetZoomButtons` правой стороне управления ползунок с помощью метода. По умолчанию ползунок горизонтальный, левая кнопка масштабирования отображает знак минус, а правая кнопка масштабирования отображает знак плюс.
+Кнопки с циклическим масштабом можно отобразить в левой и правой части ползунка с помощью `SetZoomButtons` метода. По умолчанию ползунок является горизонтальным, кнопка масштаба слева отображает знак «минус», а для кнопки «Масштаб вправо» отображается знак «плюс».
 
-Метод `SetZoomIncrement` определяет приращение, чтобы добавить или вычесть из текущего положения, когда пользователь нажимает кнопки масштабирования.
+`SetZoomIncrement`Метод определяет шаг приращения, который добавляется к текущему положению или вычитается из него, когда пользователь нажимает кнопку ZOOM.
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано, как использовать `CMFCRibbonSlider` различные методы в классе для установки свойств ползунка. На примере показано, `CMFCRibbonSlider` как построить объект, отобразить кнопки масштабирования, установить текущее положение управления ползунок и установить диапазон значений для управления ползунок.
+В следующем примере показано, как использовать различные методы в `CMFCRibbonSlider` классе для задания свойств ползунка. В примере показано, как создать `CMFCRibbonSlider` объект, отобразить кнопки масштабирования, задать текущую положение элемента управления Slider и задать диапазон значений для элемента управления "ползунок".
 
 [!code-cpp[NVC_MFC_RibbonApp#12](../../mfc/reference/codesnippet/cpp/cmfcribbonslider-class_1.cpp)]
 
@@ -95,11 +96,11 @@ class CMFCRibbonSlider : public CMFCRibbonBaseElement
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxribbonslider.h
+**Заголовок:** афксриббонслидер. h
 
-## <a name="cmfcribbonslidercmfcribbonslider"></a><a name="cmfcribbonslider"></a>CMFCRibbonSlider::CMFCRibbonSlider
+## <a name="cmfcribbonslidercmfcribbonslider"></a><a name="cmfcribbonslider"></a> Кмфкриббонслидер:: Кмфкриббонслидер
 
-Постройте ленточный ползунок.
+Создайте ползунок ленты.
 
 ```
 CMFCRibbonSlider(
@@ -110,17 +111,17 @@ CMFCRibbonSlider(
 ### <a name="parameters"></a>Параметры
 
 *nID*<br/>
-(в) Идентификатор слайдера.
+окне Идентификатор ползунка.
 
-[in]. *nWidth* Ширина слайдера в пикселях.
+[in]. *нвидс* Ширина ползунка в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Конструирует ленточный ползунок, который *nWidth* пикселей широкий в категории панели, где ползунок добавляется. По умолчанию ползунок является горизонтальным.
+Конструирует ползунок ленты, который в категории панели, где добавлен ползунок, имеет ширину *нвидс* пикселей. По умолчанию ползунок является горизонтальным.
 
-## <a name="cmfcribbonslidergetpos"></a><a name="getpos"></a>CMFCRibbonSlider:GetPos
+## <a name="cmfcribbonslidergetpos"></a><a name="getpos"></a> Кмфкриббонслидер:: Жетпос
 
-Возвращает текущее положение элемента управления ползунок.
+Возвращает текущую положение элемента управления "ползунок".
 
 ```
 int GetPos() const;
@@ -128,11 +129,11 @@ int GetPos() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Текущее положение управления ползунок, которое является положением относительно начала слайдера.
+Текущее положение элемента управления "ползунок", который является позицией относительно начала ползунка.
 
-## <a name="cmfcribbonslidergetrangemax"></a><a name="getrangemax"></a>CMFCRibbonSlider:GetRangeMax
+## <a name="cmfcribbonslidergetrangemax"></a><a name="getrangemax"></a> Кмфкриббонслидер:: Жетранжемакс
 
-Получает максимальный прирост ползунка, который ползунок может перемещать на элементе управления ползунок.
+Получает максимальный шаг ползунка, который может перемещаться ползунком на элемент управления "ползунок".
 
 ```
 int GetRangeMax() const;
@@ -140,11 +141,11 @@ int GetRangeMax() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Максимальное увеличение ползунка, что ползунок может путешествовать на ползунок управления.
+Максимальный шаг ползунка, который может перемещаться с помощью ползунка, на элемент управления Slider.
 
-## <a name="cmfcribbonslidergetrangemin"></a><a name="getrangemin"></a>CMFCRibbonSlider:GetRangeMin
+## <a name="cmfcribbonslidergetrangemin"></a><a name="getrangemin"></a> Кмфкриббонслидер:: Жетранжемин
 
-Возвращает минимальный прирост, который ползунок может перемещать на элементе управления ползунок.
+Возвращает минимальное приращение, которое ползунок может перемещать на элемент управления Slider.
 
 ```
 int GetRangeMin() const;
@@ -152,11 +153,11 @@ int GetRangeMin() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Минимальный прирост, который ползунок может перемещать на элементе управления ползунок.
+Минимальное приращение, которое может перемещаться с помощью ползунка на элемент управления Slider.
 
-## <a name="cmfcribbonslidergetregularsize"></a><a name="getregularsize"></a>CMFCRibbonSlider:GetRegularSize
+## <a name="cmfcribbonslidergetregularsize"></a><a name="getregularsize"></a> Кмфкриббонслидер:: Жетрегуларсизе
 
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ```
 virtual CSize GetRegularSize(CDC* pDC);
@@ -164,15 +165,15 @@ virtual CSize GetRegularSize(CDC* pDC);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonslidergetzoomincrement"></a><a name="getzoomincrement"></a>CMFCRibbonSlider::Get'mIncrement
+## <a name="cmfcribbonslidergetzoomincrement"></a><a name="getzoomincrement"></a> Кмфкриббонслидер:: Жетзуминкремент
 
-Получите приращение зума для управления ползунок.
+Получите шаг увеличения масштаба для элемента управления "ползунок".
 
 ```
 int GetZoomIncrement() const;
@@ -180,11 +181,11 @@ int GetZoomIncrement() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Увеличение приращения для управления ползунок.
+Увеличение масштаба для элемента управления "ползунок".
 
-## <a name="cmfcribbonsliderhaszoombuttons"></a><a name="haszoombuttons"></a>CMFCRibbonSlider::Хас-ЗумБаттонс
+## <a name="cmfcribbonsliderhaszoombuttons"></a><a name="haszoombuttons"></a> Кмфкриббонслидер:: Хасзумбуттонс
 
-Уточняется, есть ли в слайдере кнопки масштабирования.
+Указывает, имеет ли ползунок кнопки масштабирования.
 
 ```
 BOOL HasZoomButtons() const;
@@ -192,11 +193,11 @@ BOOL HasZoomButtons() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если ползунок имеет кнопки масштабирования; FALSE в противном случае.
+Значение TRUE, если ползунок имеет кнопки масштабирования; В противном случае — значение FALSE.
 
-## <a name="cmfcribbonsliderondraw"></a><a name="ondraw"></a>CMFCRibbonSlider::OnDraw
+## <a name="cmfcribbonsliderondraw"></a><a name="ondraw"></a> Кмфкриббонслидер:: OnDraw
 
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ```
 virtual void OnDraw(CDC* pDC);
@@ -204,13 +205,13 @@ virtual void OnDraw(CDC* pDC);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcribbonslidersetpos"></a><a name="setpos"></a>CMFCRibbonSlider::SetPos
+## <a name="cmfcribbonslidersetpos"></a><a name="setpos"></a> Кмфкриббонслидер:: Сетпос
 
-Установите текущее положение управления ползунок.
+Задает текущую положение элемента управления "ползунок".
 
 ```cpp
 void SetPos(
@@ -220,15 +221,15 @@ void SetPos(
 
 ### <a name="parameters"></a>Параметры
 
-*Npos*<br/>
-(в) Определяет положение для установки для ползунка. Позиция относительно начала слайдера.
+*nPos*<br/>
+окне Задает положение, устанавливаемое для ползунка. Позиция относительно начала ползунка.
 
 *bRedraw*<br/>
-(в) Если true, слайдер будет перерисован.
+окне Если значение равно TRUE, ползунок будет перерисован.
 
-## <a name="cmfcribbonslidersetrange"></a><a name="setrange"></a>CMFCRibbonSlider::SetRange
+## <a name="cmfcribbonslidersetrange"></a><a name="setrange"></a> Кмфкриббонслидер:: SetRange
 
-Установите диапазон значений для управления ползунок.
+Задайте диапазон значений для элемента управления "ползунок".
 
 ```cpp
 void SetRange(
@@ -238,19 +239,19 @@ void SetRange(
 
 ### <a name="parameters"></a>Параметры
 
-*nMin*<br/>
-(в) Определяет минимальное значение управления ползунок.
+*Nмин.*<br/>
+окне Задает минимальное значение элемента управления "ползунок".
 
-*nMax*<br/>
-(в) Определяет максимальное значение управления ползунок.
+*Nмакс.*<br/>
+окне Задает максимальное значение элемента управления "ползунок".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Определяет диапазон значений для управления ползунок, установив минимальные и максимальные значения.
+Задает диапазон значений для элемента управления "ползунок", устанавливая минимальное и максимальное значения.
 
-## <a name="cmfcribbonslidersetzoombuttons"></a><a name="setzoombuttons"></a>CMFCRibbonSlider::Set'mButtons
+## <a name="cmfcribbonslidersetzoombuttons"></a><a name="setzoombuttons"></a> Кмфкриббонслидер:: Сетзумбуттонс
 
-Отображение или сокрытие кнопок масштабирования.
+Отображение или скрытие кнопок масштабирования.
 
 ```cpp
 void SetZoomButtons(BOOL bSet=TRUE);
@@ -258,11 +259,11 @@ void SetZoomButtons(BOOL bSet=TRUE);
 
 ### <a name="parameters"></a>Параметры
 
-[in]. *bSet* TRUE для отображения кнопок масштабирования; FALSE, чтобы скрыть их.
+[in]. *управляемое bSet* Значение TRUE для вывода кнопок масштабирования; Значение FALSE, чтобы скрыть их.
 
-## <a name="cmfcribbonslidersetzoomincrement"></a><a name="setzoomincrement"></a>CMFCRibbonSlider::Set'mIncrement
+## <a name="cmfcribbonslidersetzoomincrement"></a><a name="setzoomincrement"></a> Кмфкриббонслидер:: Сетзуминкремент
 
-Установите приращение зума для управления ползунок.
+Задайте шаг увеличения масштаба для элемента управления "ползунок".
 
 ```cpp
 void SetZoomIncrement(int nZoomIncrement);
@@ -270,11 +271,11 @@ void SetZoomIncrement(int nZoomIncrement);
 
 ### <a name="parameters"></a>Параметры
 
-*nЗумИнкремент*<br/>
-(в) Определяет увеличение приращения управления ползунок.
+*нзуминкремент*<br/>
+окне Задает шаг масштабирования элемента управления ползунка.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
-[Класс CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)
+[Класс метод CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)

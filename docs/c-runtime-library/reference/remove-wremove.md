@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Remove, _wremove'
 title: remove, _wremove
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - wremove function
 - remove function
 ms.assetid: b6345ec3-3289-4645-93a4-28b9e478cc19
-ms.openlocfilehash: bf3eedaa9c24e7385686e2343857e69171e43090
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c17215803e03e1e59df86b6049249a824d5615c9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917839"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97322515"
 ---
 # <a name="remove-_wremove"></a>remove, _wremove
 
@@ -60,7 +61,7 @@ int _wremove(
 
 ### <a name="parameters"></a>Параметры
 
-*path*<br/>
+*путь*<br/>
 Путь к файлу, который требуется удалить.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -69,9 +70,9 @@ int _wremove(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе [_doserrno, переввод, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функция **remove** удаляет файл, указанный в параметре *path.* **_wremove** — это версия **_remove**для расширенных символов; Аргумент *пути* к **_wremove** является строкой расширенных символов. в противном случае **_wremove** и **_remove** ведут себя одинаково. Чтобы можно было удалить файл, все дескрипторы файлов должны быть закрыты.
+Функция **remove** удаляет файл, указанный в параметре *path.* **_wremove** — это версия **_remove** для расширенных символов; Аргумент *пути* к **_wremove** является строкой расширенных символов. в противном случае **_wremove** и **_remove** ведут себя одинаково. Чтобы можно было удалить файл, все дескрипторы файлов должны быть закрыты.
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

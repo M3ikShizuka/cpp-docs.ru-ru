@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: операторы сдвига влево и сдвига вправо ( &gt; &gt; и &lt; &lt; )'
 title: Операторы сдвига влево и вправо ( &gt; &gt; и &lt; &lt; )
 ms.date: 08/13/2018
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - shift operators [C++]
 - operators [C++], shift
 ms.assetid: 25fa0cbb-5fdd-4657-8745-b35f7d8f1606
-ms.openlocfilehash: 4cdb353c950313396b331dc7ba01b3ea392ed0f8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e13333d178fdfbb44631b9a2aced9ed2a48ad871
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87186962"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321022"
 ---
 # <a name="left-shift-and-right-shift-operators-gtgt-and-ltlt"></a>Операторы сдвига влево и вправо ( &gt; &gt; и &lt; &lt; )
 
@@ -29,7 +30,7 @@ ms.locfileid: "87186962"
 > *SHIFT-выражение* `<<` *аддитивное выражение*\
 > *shift-expression* `>>` *additive-expression*
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 > [!IMPORTANT]
 > Следующие описания и примеры допустимы в Windows для архитектур x86 и x64. Реализация операторов сдвига влево и сдвига вправо в Windows для устройств ARM существенно различается. Дополнительные сведения см. в разделе "операторы сдвига" в записи блога [Hello ARM](https://devblogs.microsoft.com/cppblog/hello-arm-exploring-undefined-unspecified-and-implementation-defined-behavior-in-c/) .

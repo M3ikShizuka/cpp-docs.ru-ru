@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: импорт'
 title: Import (атрибут COM C++)
 ms.date: 10/03/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - import attribute
 ms.assetid: ebf07cae-39fb-4047-8b57-54af0a9a83de
-ms.openlocfilehash: 6b146bdad7d870b534c371a4396993202cc83a4b
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a3ebb7aa625c0a422197662973985275647a049f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842316"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97321406"
 ---
 # <a name="import"></a>импорт
 
@@ -30,7 +31,7 @@ ms.locfileid: "88842316"
 *idl_file*<br/>
 Имя IDL-файла, который необходимо импортировать в библиотеку типов текущего проекта.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Атрибут **Import** C++ приводит к тому, что `#import` инструкция будет помещена под `import "docobj.idl"` инструкцией в созданном IDL-файле. Атрибут **Import** имеет те же функциональные возможности, что и атрибут [Import](/windows/win32/Midl/import) MIDL.
 
