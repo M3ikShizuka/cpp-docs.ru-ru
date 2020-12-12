@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения об исключениях: изменения в макросах исключений в версии 3,0'
 title: Исключения. Изменения макроса исключений в версии 3.0
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - exceptions [MFC], what's changed
 - THROW_LAST macro [MFC]
 ms.assetid: 3aa20d8c-229e-449c-995c-ab879eac84bc
-ms.openlocfilehash: 72b343641b0b43d408c5820ca2a2af1de94ce327
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3135e78885d0b4f14eb8588419b3b9d1852cf1c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225063"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290730"
 ---
 # <a name="exceptions-changes-to-exception-macros-in-version-30"></a>Исключения. Изменения макроса исключений в версии 3.0
 
@@ -26,7 +27,7 @@ ms.locfileid: "87225063"
 
 - [Повторная генерация исключений](#_core_re.2d.throwing_exceptions)
 
-## <a name="exception-types-and-the-catch-macro"></a><a name="_core_exception_types_and_the_catch_macro"></a>Типы исключений и макрос CATCH
+## <a name="exception-types-and-the-catch-macro"></a><a name="_core_exception_types_and_the_catch_macro"></a> Типы исключений и макрос CATCH
 
 В более ранних версиях MFC макрос **catch** использовал сведения о типе среды выполнения MFC для определения типа исключения. тип исключения определяется другими словами на сайте перехвата. Однако с исключениями C++ тип исключения всегда определяется на вызываемом сайте типом создаваемого объекта исключения. Это приведет к несовместимости в редких случаях, когда тип указателя на создаваемый объект отличается от типа создаваемого объекта.
 
@@ -48,7 +49,7 @@ ms.locfileid: "87225063"
 
 Чтобы обойти эту проблему, переместите выражение Throw из функции в вызывающий код и вызовите исключение фактического типа, известного компилятору во время создания исключения.
 
-## <a name="re-throwing-exceptions"></a><a name="_core_re.2d.throwing_exceptions"></a>Повторная генерация исключений
+## <a name="re-throwing-exceptions"></a><a name="_core_re.2d.throwing_exceptions"></a> Исключения Re-Throwing
 
 Блок catch не может вызывать тот же указатель исключения, который он вызвал.
 
@@ -60,6 +61,6 @@ ms.locfileid: "87225063"
 
 Дополнительные сведения см. в разделе [исключения: перехват и удаление исключений](exceptions-catching-and-deleting-exceptions.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Обработка исключений](exception-handling-in-mfc.md)

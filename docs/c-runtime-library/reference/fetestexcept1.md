@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: фетестексцепт'
 title: fetestexcept
 ms.date: 04/05/2018
 api_name:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - fetestexept function
 ms.assetid: ca4dc43f-5573-440d-bc19-ead7571b13dc
-ms.openlocfilehash: e70ae1b74420b8186cccd8fc8a817423df618adf
-ms.sourcegitcommit: ba4180a2d79d7e391f2f705797505d4aedbc2a5e
+ms.openlocfilehash: 8a62ae33f2965916bd16e2e854555bf22d87a0cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76972159"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289391"
 ---
 # <a name="fetestexcept"></a>fetestexcept
 
@@ -53,9 +54,9 @@ int fetestexcept(
 
 В случае успешного выполнения возвращает битовую маску, содержащую побитовую операцию ИЛИ для макросов исключений с плавающей запятой, которая соответствует установленным в данный момент флагам состояний исключения. Если исключения не заданы, возвращает 0.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
-Чтобы определить исключения, которые были вызваны операцией с плавающей запятой, используйте функцию fetestexcept. Используйте параметр *except* , чтобы указать, какие флаги состояния исключения следует проверить. Функция **фетестексцепт** использует эти макросы исключений, определенные в \<fenv. > h, *за исключением* и возвращаемым значением:
+Чтобы определить исключения, которые были вызваны операцией с плавающей запятой, используйте функцию fetestexcept. Используйте параметр *except* , чтобы указать, какие флаги состояния исключения следует проверить. Функция **фетестексцепт** использует эти макросы исключений, определенные в \<fenv.h> , *за исключением* и возвращаемым значением:
 
 |Макрос исключения|Описание|
 |---------------------|-----------------|
@@ -76,10 +77,10 @@ int fetestexcept(
 |--------------|--------------|------------------|
 |**fetestexcept**|\<fenv.h>|\<cfenv>|
 
-Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Алфавитный указатель функций](crt-alphabetical-function-reference.md)<br/>
+[Алфавитный справочник по функциям](crt-alphabetical-function-reference.md)<br/>
 [feclearexcept](feclearexcept1.md)<br/>
 [feraiseexcept](feraiseexcept.md)<br/>

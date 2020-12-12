@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье Включение всплывающих подсказок
 title: Включение всплывающих подсказок
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - tool tips [MFC], initializing
 - tool tips [MFC], enabling
 ms.assetid: 06b7c889-7722-4ce6-8b88-9efa50fe6369
-ms.openlocfilehash: bdd5c54f9174c42e17db0be7e13ea31acfea2dcf
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 677d2cc071e87f62f9bd2e700d8fdba166dfdee7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615718"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290951"
 ---
 # <a name="enabling-tool-tips"></a>Включение всплывающих подсказок
 
@@ -26,4 +27,4 @@ ms.locfileid: "84615718"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Всплывающие подсказки в Windows, не являющиеся производными CFrameWnd](tool-tips-in-windows-not-derived-from-cframewnd.md)
+[Всплывающие подсказки в Windows, не являющиеся производными от CFrameWnd](tool-tips-in-windows-not-derived-from-cframewnd.md)

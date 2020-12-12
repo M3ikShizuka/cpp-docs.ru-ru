@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Upper, _isupper_l, iswupper, _iswupper_l'
 title: isupper, _isupper_l, iswupper, _iswupper_l
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - _iswupper_l function
 - isupper function
 ms.assetid: da2bcc9f-241c-48c0-9a0e-ad273827e16a
-ms.openlocfilehash: 49aab47a72e7065cbd90935a431f59ec74b562ac
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d9af298cd1577473cac0db1ab6eda0be895d0c1b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910403"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289144"
 ---
 # <a name="isupper-_isupper_l-iswupper-_iswupper_l"></a>isupper, _isupper_l, iswupper, _iswupper_l
 
@@ -72,7 +73,7 @@ int _iwsupper_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Проверяемое целое число.
 
 *locale*<br/>
@@ -80,7 +81,7 @@ int _iwsupper_l(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Каждая из этих подпрограмм возвращает ненулевое значение, если *c* — конкретное представление прописной буквы. Функция **Upper** возвращает ненулевое значение, если *c* является символом верхнего регистра (a-Z). **iswupper** возвращает ненулевое значение, если *c* является расширенным символом, соответствующим прописной букве, или если *c* является одним из наборов расширенных символов, определяемых реализацией, для которых ни один из **исвкнтрл**, **исвдигит**, **исвпункт**или **исвспаце** не равен нулю. Каждая из этих подпрограмм возвращает 0, если *c* не удовлетворяет условию теста.
+Каждая из этих подпрограмм возвращает ненулевое значение, если *c* — конкретное представление прописной буквы. Функция **Upper** возвращает ненулевое значение, если *c* является символом верхнего регистра (a-Z). **iswupper** возвращает ненулевое значение, если *c* является расширенным символом, соответствующим прописной букве, или если *c* является одним из наборов расширенных символов, определяемых реализацией, для которых ни один из **исвкнтрл**, **исвдигит**, **исвпункт** или **исвспаце** не равен нулю. Каждая из этих подпрограмм возвращает 0, если *c* не удовлетворяет условию теста.
 
 Версии этих функций с суффиксом **_l** используют переданный языковой стандарт вместо текущего языкового стандарта для поведения, зависящего от языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
@@ -93,7 +94,7 @@ int _iwsupper_l(
 |**_istupper**|**isupper**|[_ismbcupper](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**iswupper**|
 |**_istupper_l**|**_isupper_l**|[_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l](ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|**_iswupper_l**|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -111,5 +112,5 @@ int _iwsupper_l(
 ## <a name="see-also"></a>См. также раздел
 
 [Классификация символов](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Процедуры is, isw](../../c-runtime-library/is-isw-routines.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[является, подпрограммы isw](../../c-runtime-library/is-isw-routines.md)<br/>

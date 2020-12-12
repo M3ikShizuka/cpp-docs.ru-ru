@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _getdrive'
 title: _getdrive
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - disk drives
 - _getdrive function
 ms.assetid: e40631a0-8f1a-4897-90ac-e1037ff30bca
-ms.openlocfilehash: c9c30fa288469d2382b3923e50f0486d6e190f17
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 9a8e9928504ad0320d5e96d21fdcafd2ff5f6ec9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913773"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289170"
 ---
 # <a name="_getdrive"></a>_getdrive
 
@@ -52,9 +53,9 @@ int _getdrive( void );
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Возвращает текущий (используемый по умолчанию) диск (1=A, 2=B и т. д). Возвращаемое значение, равное нулю, означает, что текущий путь не начинается с буквы диска, например UNC-путь. Или это означает, что выделение внутреннего буфера завершилось ошибкой. При сбое `errno` внутреннего выделения устанавливается значение еномем.
+Возвращает текущий (используемый по умолчанию) диск (1=A, 2=B и т. д). Возвращаемое значение, равное нулю, означает, что текущий путь не начинается с буквы диска, например UNC-путь. Или это означает, что выделение внутреннего буфера завершилось ошибкой. При сбое внутреннего выделения `errno` устанавливается значение еномем.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -118,7 +119,7 @@ G: (Current directory is G:\)
 
 ## <a name="see-also"></a>См. также раздел
 
-[Управление каталогами](../../c-runtime-library/directory-control.md)<br/>
+[Управление каталогом](../../c-runtime-library/directory-control.md)<br/>
 [_chdrive](chdrive.md)<br/>
 [_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>
 [_getdcwd, _wgetdcwd](getdcwd-wgetdcwd.md)<br/>

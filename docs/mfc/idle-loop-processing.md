@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: обработка бездействующего цикла'
 title: Обработка пустых циклов
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - processing [MFC]
 - background processing [MFC]
 ms.assetid: 5c7c46c1-6107-4304-895f-480983bb1e44
-ms.openlocfilehash: 74ca89d91cf4e60b09a063551b526f177caed161
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 8972a2bafe5c9d35af2a5f4452082a7ca82f28dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624519"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290158"
 ---
 # <a name="idle-loop-processing"></a>Обработка пустых циклов
 
@@ -35,7 +36,7 @@ ms.locfileid: "84624519"
 
 - Внедрение другого цикла **PeekMessage** в другое место в приложении.
 
-## <a name="peekmessage-in-the-mfc-message-loop"></a><a name="_core_peekmessage_in_the_mfc_message_loop"></a>PeekMessage в цикле обработки сообщений MFC
+## <a name="peekmessage-in-the-mfc-message-loop"></a><a name="_core_peekmessage_in_the_mfc_message_loop"></a> PeekMessage в цикле обработки сообщений MFC
 
 В приложении, разработанном с помощью MFC, главный цикл обработки сообщений в `CWinThread` классе содержит цикл обработки сообщений, который вызывает API Win32 [PeekMessage](/windows/win32/api/winuser/nf-winuser-peekmessagew) . Этот цикл также вызывает `OnIdle` функцию члена `CWinThread` между сообщениями. Приложение может обрабатывать сообщения в этом времени простоя путем переопределения `OnIdle` функции.
 
@@ -44,7 +45,7 @@ ms.locfileid: "84624519"
 
 Дополнительные сведения о выполнении обработки простоя см. в разделе [OnIdle](reference/cwinthread-class.md#onidle) *справочника по MFC*.
 
-## <a name="peekmessage-elsewhere-in-your-application"></a><a name="_core_peekmessage_elsewhere_in_your_application"></a>PeekMessage в любом расположении приложения
+## <a name="peekmessage-elsewhere-in-your-application"></a><a name="_core_peekmessage_elsewhere_in_your_application"></a> PeekMessage в любом расположении приложения
 
 Другой метод выполнения процесса простоя в приложении включает внедрение цикла обработки сообщений в одну из функций. Этот цикл обработки сообщений очень похож на главный цикл обработки сообщений MFC, который находится в [CWinThread:: Run](reference/cwinthread-class.md#run). Это означает, что такой цикл в приложении, разработанном с помощью MFC, должен выполнять многие из тех же функций, что и основной цикл обработки сообщений. В следующем фрагменте кода демонстрируется написание цикла обработки сообщений, совместимого с MFC.
 

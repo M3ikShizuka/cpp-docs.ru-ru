@@ -1,5 +1,6 @@
 ---
-title: Класс CMFCReBar
+description: 'Дополнительные сведения о: Кмфкребар Class'
+title: Класс Кмфкребар
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCReBar
@@ -28,17 +29,17 @@ helpviewer_keywords:
 - CMFCReBar [MFC], OnUpdateCmdUI
 - CMFCReBar [MFC], SetPaneAlignment
 ms.assetid: 02a60e29-6224-49c1-9e74-e0a7d9f8d023
-ms.openlocfilehash: 409c97aba64c97ecf0443d14a70848cc298a44ba
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: fcfad39ddb9c5f3bdacc5a06ebb65d22bc8c7a4d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81749999"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289833"
 ---
-# <a name="cmfcrebar-class"></a>Класс CMFCReBar
+# <a name="cmfcrebar-class"></a>Класс Кмфкребар
 
-Объект `CMFCReBar` — это панель управления, обеспечивающая информацию о компоновке, настойчивости и состоянии для управления арматурой.
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+`CMFCReBar`Объект — это панель элементов управления, которая предоставляет макет, сохраняемость и сведения о состоянии для элементов управления главной панели.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -46,53 +47,53 @@ ms.locfileid: "81749999"
 class CMFCReBar : public CPane
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMFCRebar:Addbar](#addbar)|Добавляет полосу к армате.|
-|[CMFCReBar::CalcFixedLayout](#calcfixedlayout)|(Оверлет [CBasePane::CalcFixedLayout](../../mfc/reference/cbasepane-class.md#calcfixedlayout).)|
-|[CMFCReBar:CanFloat](#canfloat)|(Переопределяет [CBasePane::CanFloat](../../mfc/reference/cbasepane-class.md#canfloat).)|
-|[CMFCReBar::Создание](#create)|Создает элемент управления арматом и `CMFCReBar` прикрепляет его к объекту.|
-|[CMFCReBar::EnableDocking](#enabledocking)|(Переопределяет [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking).)|
-|[CMFCRebar:GetrebarBandinfosize](#getrebarbandinfosize)||
-|[CMFCRebar:GetrebarCtrl](#getrebarctrl)|Обеспечивает прямой доступ к базовому общему контролю [CReBarCtrl.](../../mfc/reference/crebarctrl-class.md)|
-|[CMFCRebar::OnShowControlbarMenu](#onshowcontrolbarmenu)|(Переопределяет [CPane::OnShowControlBarMenu](../../mfc/reference/cpane-class.md#onshowcontrolbarmenu).)|
-|[CMFCRebar::Ontoolhittest](#ontoolhittest)|(Оверлет: [OnToolHitTest](../../mfc/reference/cwnd-class.md#ontoolhittest).)|
-|[CMFCReBar::OnUpdateCmdUI](#onupdatecmdui)|(Оверлет [CBasePane::OnUpdateCmdUI](cbasepane-class.md).)|
-|[CMFCReBar::SetPaneAlignment](#setpanealignment)|(Переопределяет [CBasePane::SetPaneAlignment](../../mfc/reference/cbasepane-class.md#setpanealignment).)|
+|[Кмфкребар:: Аддбар](#addbar)|Добавляет полосу к главной панели.|
+|[Кмфкребар:: Калкфикседлайаут](#calcfixedlayout)|(Переопределяет [CBasePane:: калкфикседлайаут](../../mfc/reference/cbasepane-class.md#calcfixedlayout).)|
+|[Кмфкребар:: Канфлоат](#canfloat)|(Переопределяет [CBasePane:: канфлоат](../../mfc/reference/cbasepane-class.md#canfloat).)|
+|[Кмфкребар:: Create](#create)|Создает элемент управления "Главная панель" и прикрепляет его к `CMFCReBar` объекту.|
+|[Кмфкребар:: Енабледоккинг](#enabledocking)|(Переопределяет [CBasePane:: енабледоккинг](../../mfc/reference/cbasepane-class.md#enabledocking).)|
+|[Кмфкребар:: Жетребарбандинфосизе](#getrebarbandinfosize)||
+|[Кмфкребар:: Жетребарктрл](#getrebarctrl)|Предоставляет прямой доступ к базовому общему элементу управления [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) .|
+|[Кмфкребар:: Оншовконтролбармену](#onshowcontrolbarmenu)|(Переопределяет [CPane:: оншовконтролбармену](../../mfc/reference/cpane-class.md#onshowcontrolbarmenu).)|
+|[Кмфкребар:: Онтулхиттест](#ontoolhittest)|(Переопределяет [CWnd:: онтулхиттест](../../mfc/reference/cwnd-class.md#ontoolhittest).)|
+|[Кмфкребар:: Онупдатекмдуи](#onupdatecmdui)|(Переопределяет [CBasePane:: онупдатекмдуи](cbasepane-class.md).)|
+|[Кмфкребар:: Сетпанеалигнмент](#setpanealignment)|(Переопределяет [CBasePane:: сетпанеалигнмент](../../mfc/reference/cbasepane-class.md#setpanealignment).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Объект `CMFCReBar` может содержать различные детские окна. Это включает в себя отодевать коробки, панели инструментов и списки. Вы можете изменить размер арматы программно, или пользователь может вручную изменить размер арматы, перетащив ее сцепление бар. Вы также можете установить фон арматы объекта на бит-карту по вашему выбору.
+`CMFCReBar`Объект может содержать различные дочерние окна. Сюда входят поля редактирования, панели инструментов и списки. Изменить размер главной панели можно программным способом, или пользователь может вручную изменить размер главной панели, перетащив ее панель захвата. Фон объекта главной панели также можно настроить на растровое изображение по своему усмотрению.
 
-Объект арматы ведет себя аналогично объекту панели инструментов. Элемент управления арматом может содержать одну или несколько полос, и каждая полоса может содержать планку захвата, бит-карту, текстовую этикетку и детское окно.
+Объект главной панели ведет себя аналогично объекту ToolBar. Элемент управления "Главная панель" может содержать одну или несколько полос, а каждая полоса может содержать панель захвата, точечный рисунок, текстовую метку и дочернее окно.
 
 ## <a name="example"></a>Пример
 
-В приведенном ниже примере демонстрируется использование различных методов класса `CMFCReBar` . На примере показано, как создать элемент управления арматом и добавить к нему полосу. Полоса функционирует как внутренняя панель инструментов. Этот фрагмент кода является частью [образца теста Rebar.](../../overview/visual-cpp-samples.md)
+В приведенном ниже примере демонстрируется использование различных методов класса `CMFCReBar` . В примере показано, как создать элемент управления "Главная панель" и добавить к нему полосу. Полоса функций выступает в качестве внутренней панели инструментов. Этот фрагмент кода является частью [примера тестирования главной панели](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_RebarTest#1](../../mfc/reference/codesnippet/cpp/cmfcrebar-class_1.h)]
 [!code-cpp[NVC_MFC_RebarTest#2](../../mfc/reference/codesnippet/cpp/cmfcrebar-class_2.cpp)]
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
-[Cobject](../../mfc/reference/cobject-class.md)\
-&nbsp;[CCmdTarget](../../mfc/reference/ccmdtarget-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Квн](../../mfc/reference/cwnd-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[CBasePane](../../mfc/reference/cbasepane-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[КПэйне](../../mfc/reference/cpane-class.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[-CMFCReBar](../../mfc/reference/cmfcrebar-class.md)
+[CObject](../../mfc/reference/cobject-class.md)\
+└ &nbsp; [От CCmdTarget](../../mfc/reference/ccmdtarget-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [CWnd](../../mfc/reference/cwnd-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [CBasePane](../../mfc/reference/cbasepane-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [CPane](../../mfc/reference/cpane-class.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└ &nbsp; [Кмфкребар](../../mfc/reference/cmfcrebar-class.md)
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxRebar.h
+**Заголовок:** афксребар. h
 
-## <a name="cmfcrebaraddbar"></a><a name="addbar"></a>CMFCRebar:Addbar
+## <a name="cmfcrebaraddbar"></a><a name="addbar"></a> Кмфкребар:: Аддбар
 
-Добавляет полосу к армате.
+Добавляет полосу к главной панели.
 
 ```
 BOOL AddBar(
@@ -111,31 +112,31 @@ BOOL AddBar(
 
 ### <a name="parameters"></a>Параметры
 
-*pBar*<br/>
-(в, вне) Указатель на детское окно, которое должно быть вставлено в армату. Ссылка на объект должна иметь стиль **WS_CHILD** окна.
+*пбар*<br/>
+[вход, выход] Указатель на дочернее окно, которое должно быть вставлено в главную панель. Объект, на который указывает ссылка, должен иметь стиль окна **WS_CHILD** .
 
-*pszText*<br/>
-(в) Определяет текст, чтобы появиться на армате. Текст не является частью окна ребенка. Скорее, он отображается на самой армате.
+*псзтекст*<br/>
+окне Задает текст, отображаемый в главной панели. Текст не является частью дочернего окна. Вместо этого он отображается в самой главной панели.
 
 *pbmp*<br/>
-(в, вне) Определяет битную карту, которая будет отображаться на фоне арматы.
+[вход, выход] Указывает битовую карту, отображаемую в фоновом элементе главной панели.
 
-*dwStyle*<br/>
-(в) Содержит стиль для применения к группе. Полный список стилей полос можно `fStyle` узнать в структуре [REBARBANDINFO](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) в документации Windows SDK.
+*двстиле*<br/>
+окне Содержит стиль, применяемый к полосе. Полный список стилей диапазонов см. в описании `fStyle` структуры [ребарбандинфо](/windows/win32/api/commctrl/ns-commctrl-rebarbandinfow) в документации по Windows SDK.
 
-*clrFore*<br/>
-(в) Представляет цвет переднего плана арматы.
+*клрфоре*<br/>
+окне Представляет цвет переднего плана главной панели.
 
-*clrBack*<br/>
-(в) Представляет фоновый цвет арматы.
+*клрбакк*<br/>
+окне Представляет цвет фона главной панели.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если полоса была успешно добавлена в арматру; в противном случае, FALSE.
+Значение TRUE, если полоса была успешно добавлена к главной панели; в противном случае — значение FALSE.
 
-## <a name="cmfcrebarcreate"></a><a name="create"></a>CMFCReBar::Создание
+## <a name="cmfcrebarcreate"></a><a name="create"></a> Кмфкребар:: Create
 
-Создает элемент управления арматом и прикрепляет его к объекту [CMFCReBar.](../../mfc/reference/cmfcrebar-class.md)
+Создает элемент управления "Главная панель" и присоединяет его к объекту [кмфкребар](../../mfc/reference/cmfcrebar-class.md) .
 
 ```
 BOOL Create(
@@ -147,27 +148,27 @@ BOOL Create(
 
 ### <a name="parameters"></a>Параметры
 
-*pParentWnd*<br/>
-(в, вне) Указатель на родительское окно этого элемента управления армаза.
+*ппарентвнд*<br/>
+[вход, выход] Указатель на родительское окно этого элемента управления главной панели.
 
-*dwCtrlStyle*<br/>
-(в) Определяет стиль управления арматом. Значение стиля по умолчанию **является RBS_BANDBORDERS,** который отображает узкие линии, чтобы отделить соседние полосы на элементе управления арматом. Список допустимых стилей [можно](/windows/win32/Controls/rebar-control-styles) узнать в документации SDK Windows.
+*двктрлстиле*<br/>
+окне Задает стиль элемента управления главной панели. Значение стиля по умолчанию — **RBS_BANDBORDERS**, которое отображает узкие строки для разделения смежных полос в элементе управления "Главная панель". Список допустимых стилей см. в разделе [стили элементов управления главной](/windows/win32/Controls/rebar-control-styles) панели в документации по Windows SDK.
 
-*dwStyle*<br/>
-(в) Стиль управления окнами. Список действительных стилей можно узнать в [виде стилей window.](../../mfc/reference/styles-used-by-mfc.md#window-styles)
+*двстиле*<br/>
+окне Стиль окна элемента управления главной панели. Список допустимых стилей см. в разделе [стили окна](../../mfc/reference/styles-used-by-mfc.md#window-styles).
 
 *nID*<br/>
-(в) Идентификатор ребенка-окна армабы.
+окне Идентификатор дочернего окна главной панели.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если армата была создана успешно; в противном случае, FALSE.
+Значение TRUE, если Главная панель успешно создана; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcrebargetrebarctrl"></a><a name="getrebarctrl"></a>CMFCRebar:GetrebarCtrl
+## <a name="cmfcrebargetrebarctrl"></a><a name="getrebarctrl"></a> Кмфкребар:: Жетребарктрл
 
-Обеспечивает прямой `CReBarCtrl` доступ к базовому общему контролю для `CMFCReBar` объектов.
+Предоставляет прямой доступ к `CReBarCtrl` базовому общему элементу управления для `CMFCReBar` объектов.
 
 ```
 CReBarCtrl& GetReBarCtrl() const;
@@ -175,13 +176,13 @@ CReBarCtrl& GetReBarCtrl() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Ссылка на основной `CReBarCtrl` объект.
+Ссылка на базовый `CReBarCtrl` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вызовите этот метод, чтобы воспользоваться общей функциональностью управления арматой Windows при настройке армазы.
+Вызовите этот метод, чтобы воспользоваться преимуществами общих функциональных возможностей элемента управления "Главная панель Windows" при настройке главной панели.
 
-## <a name="cmfcrebarcalcfixedlayout"></a><a name="calcfixedlayout"></a>CMFCReBar::CalcFixedLayout
+## <a name="cmfcrebarcalcfixedlayout"></a><a name="calcfixedlayout"></a> Кмфкребар:: Калкфикседлайаут
 
 ```
 virtual CSize CalcFixedLayout(
@@ -191,14 +192,14 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *bStretch*<br/>
-(в) *bHorz*<br/>
+окне *бстретч*<br/>
+окне *бхорз*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcrebarcanfloat"></a><a name="canfloat"></a>CMFCReBar:CanFloat
+## <a name="cmfcrebarcanfloat"></a><a name="canfloat"></a> Кмфкребар:: Канфлоат
 
 ```
 virtual BOOL CanFloat() const;
@@ -206,9 +207,9 @@ virtual BOOL CanFloat() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcrebarenabledocking"></a><a name="enabledocking"></a>CMFCReBar::EnableDocking
+## <a name="cmfcrebarenabledocking"></a><a name="enabledocking"></a> Кмфкребар:: Енабледоккинг
 
 ```cpp
 void EnableDocking(DWORD dwDockStyle);
@@ -216,11 +217,11 @@ void EnableDocking(DWORD dwDockStyle);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *dwDockStyle*<br/>
+окне *двдоккстиле*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcrebargetrebarbandinfosize"></a><a name="getrebarbandinfosize"></a>CMFCRebar:GetrebarBandinfosize
+## <a name="cmfcrebargetrebarbandinfosize"></a><a name="getrebarbandinfosize"></a> Кмфкребар:: Жетребарбандинфосизе
 
 ```
 UINT GetReBarBandInfoSize() const;
@@ -228,9 +229,9 @@ UINT GetReBarBandInfoSize() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcrebaronshowcontrolbarmenu"></a><a name="onshowcontrolbarmenu"></a>CMFCRebar::OnShowControlbarMenu
+## <a name="cmfcrebaronshowcontrolbarmenu"></a><a name="onshowcontrolbarmenu"></a> Кмфкребар:: Оншовконтролбармену
 
 ```
 virtual BOOL OnShowControlBarMenu(CPoint);
@@ -242,9 +243,9 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcrebarontoolhittest"></a><a name="ontoolhittest"></a>CMFCRebar::Ontoolhittest
+## <a name="cmfcrebarontoolhittest"></a><a name="ontoolhittest"></a> Кмфкребар:: Онтулхиттест
 
 ```
 virtual INT_PTR OnToolHitTest(
@@ -254,14 +255,14 @@ virtual INT_PTR OnToolHitTest(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *точки*<br/>
-(в) *pTI*<br/>
+окне *точка*<br/>
+окне *Пти*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcrebaronupdatecmdui"></a><a name="onupdatecmdui"></a>CMFCReBar::OnUpdateCmdUI
+## <a name="cmfcrebaronupdatecmdui"></a><a name="onupdatecmdui"></a> Кмфкребар:: Онупдатекмдуи
 
 ```
 virtual void OnUpdateCmdUI(
@@ -271,12 +272,12 @@ virtual void OnUpdateCmdUI(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pTarget*<br/>
-(в) *bDisableIfNoHndler*<br/>
+окне *птаржет*<br/>
+окне *бдисаблеифнохндлер*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcrebarsetpanealignment"></a><a name="setpanealignment"></a>CMFCReBar::SetPaneAlignment
+## <a name="cmfcrebarsetpanealignment"></a><a name="setpanealignment"></a> Кмфкребар:: Сетпанеалигнмент
 
 ```
 virtual void SetPaneAlignment(DWORD dwAlignment);
@@ -284,13 +285,13 @@ virtual void SetPaneAlignment(DWORD dwAlignment);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *dwAlignment*<br/>
+окне *двалигнмент*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
 [Класс CReBarCtrl](../../mfc/reference/crebarctrl-class.md)<br/>
-[CPane Class](../../mfc/reference/cpane-class.md)
+[Класс CPane](../../mfc/reference/cpane-class.md)

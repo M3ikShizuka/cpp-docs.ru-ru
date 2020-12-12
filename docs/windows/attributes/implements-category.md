@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: implements_category'
 title: implements_category (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - implements_category attribute
 ms.assetid: fb162df3-1ebe-43dc-a084-668d7ef8c03f
-ms.openlocfilehash: cd9a4de8834bc22368393e9ea4639884785af0f2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0efc240394c67ab7d470523b8dfe5025b7a0f978
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846125"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289547"
 ---
 # <a name="implements_category"></a>implements_category
 
@@ -28,7 +29,7 @@ ms.locfileid: "88846125"
 *implements_category*<br/>
 Идентификатор реализованной категории.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Атрибут **implements_category** C++ задает категории компонентов, реализуемых целевым классом. Это можно сделать, создав карту категорий и добавив отдельные записи, заданные атрибутом **implements_category** . Дополнительные сведения см. в разделах [категории компонентов и принципы их работы](/windows/win32/com/component-categories-and-how-they-work).
 

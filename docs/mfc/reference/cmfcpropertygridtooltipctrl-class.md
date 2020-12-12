@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кмфкпропертигридтултипктрл Class'
 title: Класс Кмфкпропертигридтултипктрл
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CMFCPropertyGridToolTipCtrl [MFC], SetTextMargin
 - CMFCPropertyGridToolTipCtrl [MFC], Track
 ms.assetid: 84b436e5-6695-4da0-9569-1a875e087711
-ms.openlocfilehash: 82d5f021204628121be242845583797348d02120
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5e560d09756be99c00257c351b58223b37a6b5da
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840756"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289885"
 ---
 # <a name="cmfcpropertygridtooltipctrl-class"></a>Класс Кмфкпропертигридтултипктрл
 
@@ -37,7 +38,7 @@ ms.locfileid: "88840756"
 class CMFCPropertyGridToolTipCtrl : public CWnd
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -58,7 +59,7 @@ class CMFCPropertyGridToolTipCtrl : public CWnd
 |[Кмфкпропертигридтултипктрл:: Сеттекстмаргин](#settextmargin)|Задает интервал между текстом подсказки и границей окна подсказки.|
 |[Кмфкпропертигридтултипктрл:: Track](#track)|Отображает элемент управления ToolTip.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Подсказки отображаются при наведении указателя мыши на имя свойства. Класс [кмфкпропертигридтултипктрл](../../mfc/reference/cmfcpropertygridtooltipctrl-class.md) отображает подсказку, чтобы она была легко читаема пользователем. Как правило, расположение подсказки определяется положением указателя. С помощью этого класса всплывающая подсказка отображается над именем свойства и напоминает расширение естественного свойства, чтобы имя свойства было полностью видимым.
 
@@ -117,7 +118,7 @@ BOOL Create(CWnd* pWndParent);
 void Deactivate();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод задает для последней позицией и текста пустые значения, чтобы будущие вызовы [кмфкпропертигридтултипктрл:: Track](#track) отображали подсказку.
 
@@ -173,7 +174,7 @@ void Track(
 *стртекст*<br/>
 окне Задает текст, отображаемый во всплывающей подсказке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отображает элемент управления ToolTip в позиции и размере, заданном параметром *Rect*. Если расположение, размер и текст не изменялись с момента последнего вызова этого метода, этот метод не оказывает никакого влияния.
 

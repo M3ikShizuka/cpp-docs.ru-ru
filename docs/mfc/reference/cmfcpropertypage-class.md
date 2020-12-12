@@ -1,5 +1,6 @@
 ---
-title: Класс CMFCPropertyPage
+description: 'Дополнительные сведения о: Кмфкпропертипаже Class'
+title: Класс Кмфкпропертипаже
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCPropertyPage
@@ -8,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCPropertyPage [MFC], CMFCPropertyPage
 ms.assetid: d279d7f2-2d81-418d-9f23-6147d6e8df09
-ms.openlocfilehash: e493f016b6384a768935186c31e3fc71ade6382f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9acdce1fd2f6133d44699f7bea4cce00e9d6dadb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81361760"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289859"
 ---
-# <a name="cmfcpropertypage-class"></a>Класс CMFCPropertyPage
+# <a name="cmfcpropertypage-class"></a>Класс Кмфкпропертипаже
 
-Класс `CMFCPropertyPage` поддерживает отображение всплывающих меню на странице свойств.
+`CMFCPropertyPage`Класс поддерживает отображение всплывающих меню на странице свойств.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -25,29 +26,29 @@ ms.locfileid: "81361760"
 class CMFCPropertyPage : public CPropertyPage
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMFCPropertyPage::CMFCPropertyPage](#cmfcpropertypage)|Формирует объект `CMFCPropertyPage`.|
+|[Кмфкпропертипаже:: Кмфкпропертипаже](#cmfcpropertypage)|Формирует объект `CMFCPropertyPage`.|
 |`CMFCPropertyPage::~CMFCPropertyPage`|Деструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |`CMFCPropertyPage::CreateObject`|Используется платформой для создания динамического экземпляра этого типа класса.|
-|`CMFCPropertyPage::GetThisClass`|Используется фректором для получения указателя на объект [CRuntimeClass,](../../mfc/reference/cruntimeclass-structure.md) связанный с этим типом класса.|
-|`CMFCPropertyPage::OnSetActive`|Эта функция участника вызывается инфраструктурой, когда страница выбрана пользователем и становится активной страницей. (Переопределяет [CPropertyPage:OnsetActive](../../mfc/reference/cpropertypage-class.md#onsetactive).)|
-|`CMFCPropertyPage::PreTranslateMessage`|Переводит оконные сообщения перед отправкой на функции [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) и [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows. Для получения дополнительной информации и метода синтаксиса, [см. CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Переопределяет `CPropertyPage::PreTranslateMessage`.)|
+|`CMFCPropertyPage::GetThisClass`|Используется платформой для получения указателя на объект [крунтимекласс](../../mfc/reference/cruntimeclass-structure.md) , связанный с этим типом класса.|
+|`CMFCPropertyPage::OnSetActive`|Эта функция-член вызывается платформой при выборе пользователем страницы и становится активной страницей. (Переопределяет [CPropertyPage:: онсетактиве](../../mfc/reference/cpropertypage-class.md#onsetactive).)|
+|`CMFCPropertyPage::PreTranslateMessage`|Преобразует сообщения окна до их отправки в функции Windows [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) и [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) . Дополнительные сведения и синтаксис методов см. в разделе [CWnd::P ретранслатемессаже](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Переопределяет `CPropertyPage::PreTranslateMessage`.)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Класс `CMFCPropertyPage` представляет отдельные страницы листа свойств, иначе известный как диалоговый ящик вкладок.
+`CMFCPropertyPage`Класс представляет отдельные страницы на странице свойств, которые в противном случае называются диалоговым окном «вкладка».
 
-Используйте `CMFCPropertyPage` класс вместе с классом [CMFCPropertySheet.](../../mfc/reference/cmfcpropertysheet-class.md) Чтобы использовать меню на странице свойств, замените `CPropertyPage` все `CMFCPropertyPage` случаи класса классом.
+Используйте `CMFCPropertyPage` класс вместе с классом [кмфкпропертишит](../../mfc/reference/cmfcpropertysheet-class.md) . Чтобы использовать меню на странице свойств, замените все вхождения `CPropertyPage` класса `CMFCPropertyPage` классом.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -65,9 +66,9 @@ class CMFCPropertyPage : public CPropertyPage
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxpropertypage.h
+**Заголовок:** афкспропертипаже. h
 
-## <a name="cmfcpropertypagecmfcpropertypage"></a><a name="cmfcpropertypage"></a>CMFCPropertyPage::CMFCPropertyPage
+## <a name="cmfcpropertypagecmfcpropertypage"></a><a name="cmfcpropertypage"></a> Кмфкпропертипаже:: Кмфкпропертипаже
 
 Формирует объект `CMFCPropertyPage`.
 
@@ -83,23 +84,23 @@ CMFCPropertyPage(
 
 ### <a name="parameters"></a>Параметры
 
-*nIDTemplate*<br/>
+*нидтемплате*<br/>
 Идентификатор ресурса шаблона для этой страницы.
 
-*nIDCaption*<br/>
-Идентификатор ресурса метки для вкладки для этой страницы. Если 0, имя получено из шаблона диалогового окна для этой страницы. Значение по умолчанию — 0.
+*нидкаптион*<br/>
+Идентификатор ресурса метки, помещаемой на вкладку этой страницы. Если значение равно 0, имя получается из шаблона диалогового окна для этой страницы. Значение по умолчанию — 0.
 
-*lpszTemplateName*<br/>
-Уотравли имя шаблона для этой страницы. Не может быть NULL.
+*лпсзтемплатенаме*<br/>
+Указывает на имя шаблона для этой страницы. Не может быть NULL.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Для получения дополнительной информации о параметрах конструктора см. [CPropertyPage::CPropertyPage](../../mfc/reference/cpropertypage-class.md#cpropertypage).
+Дополнительные сведения о параметрах конструктора см. в разделе [CPropertyPage:: CPropertyPage](../../mfc/reference/cpropertypage-class.md#cpropertypage).
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
-[Класс CMFCPropertySheet](../../mfc/reference/cmfcpropertysheet-class.md)
+[Класс Кмфкпропертишит](../../mfc/reference/cmfcpropertysheet-class.md)

@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: &lt; Thread&gt;'
 title: '&lt;thread&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <thread>
 ms.assetid: 0c858405-4efb-449d-bf76-70d3693c9234
-ms.openlocfilehash: 251a423829a048e3d67b0bcf83107f52c3fdafca
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3387d96772f1ed3322ce79b744e17b6bf494140d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232850"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289625"
 ---
 # <a name="ltthreadgt"></a>&lt;thread&gt;
 
@@ -32,19 +33,19 @@ ms.locfileid: "87232850"
 
 ### <a name="public-classes"></a>Открытые классы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Класс Thread](../standard-library/thread-class.md)|Определяет объект, используемый для наблюдения за потоком выполнения в приложении и управления им.|
 
 ### <a name="public-structures"></a>Открытые структуры
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Структура hash (Стандартная библиотека C++)](../standard-library/hash-structure-stl.md)|Определяет функцию-член, которая возвращает значение, которое однозначно определяется объектом `thread::id` . Функция-член определяет функцию [хэширования](../standard-library/hash-class.md) , которая подходит для сопоставления значений типа `thread::id` с распределением значений индекса.|
 
 ### <a name="public-functions"></a>Открытые функции
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[get_id](../standard-library/thread-functions.md#get_id)|Уникально идентифицирует текущий поток выполнения.|
 |[sleep_for](../standard-library/thread-functions.md#sleep_for)|Блокирует вызывающий поток.|
@@ -54,7 +55,7 @@ ms.locfileid: "87232850"
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Оператор>=](../standard-library/thread-operators.md#op_gt_eq)|Определяет, справедливо ли, что один из объектов `thread::id` больше другого или равен ему.|
 |[Оператор> оператора](../standard-library/thread-operators.md#op_gt)|Определяет, справедливо ли, что один из объектов `thread::id` больше другого или равен ему.|
@@ -64,7 +65,7 @@ ms.locfileid: "87232850"
 |[оператор operator = =](../standard-library/thread-operators.md#op_eq_eq)|Сравнивает два объекта `thread::id` на равенство.|
 |[Оператор<< оператора](../standard-library/thread-operators.md#op_lt_lt)|Вставляет текстовое представление объекта `thread::id` в поток.|
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по файлам заголовков](../standard-library/cpp-standard-library-header-files.md)\
 [Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)

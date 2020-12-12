@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: iterator_traits struct'
 title: Структура iterator_traits
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - iterator_traits struct
 - iterator_traits class
 ms.assetid: 8b92c2c5-f658-402f-8ca1-e7ae301b8514
-ms.openlocfilehash: 924ca5ae1d32753bbe315252d942425712962639
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: ac97b84ff7bcedc00f2b069ce05f734ac65618ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689453"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289687"
 ---
 # <a name="iterator_traits-struct"></a>Структура iterator_traits
 
@@ -31,23 +32,23 @@ struct iterator_traits {
    };
 ```
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
 Структура-шаблон определяет типы элементов
 
-- `iterator_category`: синоним для `Iterator::iterator_category`.
+- `iterator_category`: синоним для `Iterator::iterator_category` .
 
-- `value_type`: синоним для `Iterator::value_type`.
+- `value_type`: синоним для `Iterator::value_type` .
 
-- `difference_type`: синоним для `Iterator::difference_type`.
+- `difference_type`: синоним для `Iterator::difference_type` .
 
 - `distance_type`: синоним для `Iterator::difference_type.`
 
-- `pointer`: синоним для `Iterator::pointer`.
+- `pointer`: синоним для `Iterator::pointer` .
 
-- `reference`: синоним для `Iterator::reference`.
+- `reference`: синоним для `Iterator::reference` .
 
-Частичные специализации определяют критические типы, связанные с указателем **объекта типа** <strong>\*</strong> или **типа const** <strong>\*</strong>.
+Частичные специализации определяют критические типы, связанные с указателем на объект **типа** <strong>\*</strong> или типа **const** <strong>\*</strong> .
 
 В этой реализации вы также можете применить несколько шаблонов функций, которые не используют частичную специализацию:
 
@@ -118,12 +119,12 @@ struct std::bidirectional_iterator_tag
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<iterator>
+**Заголовок:**\<iterator>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [\<iterator>](../standard-library/iterator.md)\
-[Потокобезопасность в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [Справочник по стандартной библиотеке C++](../standard-library/cpp-standard-library-reference.md)

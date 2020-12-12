@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения об исключениях: исключения OLE'
 title: Исключения. Исключения OLE
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - exception handling [MFC], OLE
 - OLE exceptions [MFC], classes for handling
 ms.assetid: 2f8e0161-b94f-48bb-a5a2-6f644b192527
-ms.openlocfilehash: 7bd0b0cb2c9eb6fe49356ae8fd4602676d54fa66
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: da2a92d23dc7c11735c75482febea60916af289f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622785"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290522"
 ---
 # <a name="exceptions-ole-exceptions"></a>Исключения. Исключения OLE
 
@@ -25,7 +26,7 @@ ms.locfileid: "84622785"
 
 - [COleDispatchException](reference/coledispatchexception-class.md) Для создания и обработки исключений OLE-диспетчеризации (Automation).
 
-Разница между этими двумя классами — это объем информации, которую они предоставляют и где они используются. `COleException`содержит открытый элемент данных, содержащий код состояния OLE для исключения. `COleDispatchException`предоставляет дополнительные сведения, включая следующие:
+Разница между этими двумя классами — это объем информации, которую они предоставляют и где они используются. `COleException` содержит открытый элемент данных, содержащий код состояния OLE для исключения. `COleDispatchException` предоставляет дополнительные сведения, включая следующие:
 
 - Код ошибки, относящийся к приложению
 
@@ -37,7 +38,7 @@ ms.locfileid: "84622785"
 
 - Имя приложения, создавшего исключение
 
-`COleDispatchException`предоставляет дополнительные сведения, которые можно использовать с такими продуктами, как Microsoft Visual Basic. Описание ошибки текстовом можно использовать в окне сообщения или в другом уведомлении. Справочные сведения можно использовать, чтобы помочь пользователю реагировать на условия, вызвавшие исключение.
+`COleDispatchException` предоставляет дополнительные сведения, которые можно использовать с такими продуктами, как Microsoft Visual Basic. Описание ошибки текстовом можно использовать в окне сообщения или в другом уведомлении. Справочные сведения можно использовать, чтобы помочь пользователю реагировать на условия, вызвавшие исключение.
 
 Две глобальные функции соответствуют двум классам исключений OLE: [афкссроволиксцептион](reference/exception-processing.md#afxthrowoleexception) и [афкссроволедиспатчексцептион](reference/exception-processing.md#afxthrowoledispatchexception). Используйте их для создания общих исключений OLE и исключений OLE диспетчеризации соответственно.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения об исключениях: преобразование из макросов исключений MFC'
 title: Исключения. Преобразование из макроса исключений MFC
 ms.date: 08/27/2018
 helpviewer_keywords:
@@ -14,24 +15,24 @@ helpviewer_keywords:
 - catch blocks [MFC], delimiting
 - exception handling [MFC], converting exceptions
 ms.assetid: bd3ac3b3-f3ce-4fdd-a168-a2cff13ed796
-ms.openlocfilehash: e8e7f47b66f4263ed55d73c0aac1fda73d72393c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 83d4522dff902681e26a2bd098b46fea92bf1c6a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87183816"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290704"
 ---
 # <a name="exceptions-converting-from-mfc-exception-macros"></a>Исключения. Преобразование из макроса исключений MFC
 
 Это дополнительная тема.
 
-В этой статье объясняется, как преобразовать существующий код, написанный с помощью макросов Microsoft Foundation Class ( **try**, **catch**, **throw**и т. д.), для использования ключевых слов обработки исключений C++ **`try`** , **`catch`** и **`throw`** . Будут рассмотрены следующие задачи:
+В этой статье объясняется, как преобразовать существующий код, написанный с помощью макросов Microsoft Foundation Class ( **try**, **catch**, **throw** и т. д.), для использования ключевых слов обработки исключений C++ **`try`** , **`catch`** и **`throw`** . Будут рассмотрены следующие задачи:
 
 - [Преимущества преобразования](#_core_advantages_of_converting)
 
 - [Преобразование кода с помощью макросов исключений для использования исключений C++](#_core_doing_the_conversion)
 
-## <a name="advantages-of-converting"></a><a name="_core_advantages_of_converting"></a>Преимущества преобразования
+## <a name="advantages-of-converting"></a><a name="_core_advantages_of_converting"></a> Преимущества преобразования
 
 Вам, возможно, не придется преобразовывать существующий код, хотя следует помнить о различиях между реализациями макросов в MFC версии 3,0 и реализациях в более ранних версиях. Эти различия и последующие изменения в поведении кода обсуждаются в [исключениях: изменения в макросах исключений в версии 3,0](exceptions-changes-to-exception-macros-in-version-3-0.md).
 
@@ -69,11 +70,11 @@ ms.locfileid: "87183816"
 
    Макросы используют **THROW_LAST** для повторного создания текущего исключения. **`throw`** Ключевое слово без аргумента имеет тот же результат.
 
-## <a name="doing-the-conversion"></a><a name="_core_doing_the_conversion"></a>Преобразование
+## <a name="doing-the-conversion"></a><a name="_core_doing_the_conversion"></a> Преобразование
 
 #### <a name="to-convert-code-using-macros-to-use-the-c-exception-handling-keywords"></a>Преобразование кода с помощью макросов для использования ключевых слов обработки исключений C++
 
-1. Нахождение всех вхождений макросов MFC: **try**, **catch**, **AND_CATCH**, **END_CATCH**, **throw**и **THROW_LAST**.
+1. Нахождение всех вхождений макросов MFC: **try**, **catch**, **AND_CATCH**, **END_CATCH**, **throw** и **THROW_LAST**.
 
 2. Замените или удалите все вхождения следующих макросов:
 
@@ -95,7 +96,7 @@ ms.locfileid: "87183816"
 
    [!code-cpp[NVC_MFCExceptions#6](codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_1.cpp)]
 
-   в
+   значение
 
    [!code-cpp[NVC_MFCExceptions#7](codesnippet/cpp/exceptions-converting-from-mfc-exception-macros_2.cpp)]
 

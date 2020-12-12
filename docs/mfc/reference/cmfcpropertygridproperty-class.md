@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кмфкпропертигридпроперти Class'
 title: Класс Кмфкпропертигридпроперти
 ms.date: 11/04/2016
 f1_keywords:
@@ -166,12 +167,12 @@ helpviewer_keywords:
 - CMFCPropertyGridProperty [MFC], m_strFormatLong
 - CMFCPropertyGridProperty [MFC], m_strFormatShort
 ms.assetid: 36f3fabe-0efe-468b-8a0b-5a7956db38a2
-ms.openlocfilehash: cabff68a356bfa2d91d7c8db9c806e8a9f013705
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 7893d58933f9f13744a42b14fd6fa7c47bec56c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562666"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289911"
 ---
 # <a name="cmfcpropertygridproperty-class"></a>Класс Кмфкпропертигридпроперти
 
@@ -185,7 +186,7 @@ ms.locfileid: "88562666"
 class CMFCPropertyGridProperty : public CObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -289,7 +290,7 @@ class CMFCPropertyGridProperty : public CObject
 |[CMFCPropertyGridProperty::m_strFormatLong](#m_strformatlong)|Строка формата для значения типа long.|
 |[CMFCPropertyGridProperty::m_strFormatShort](#m_strformatshort)|Строка формата для значения типа Short.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Используйте `CMFCPropertyGridProperty` объект для представления свойства, которое затем добавляется в элемент управления "список свойств". Дополнительные сведения см. в разделе [класс кмфкпропертигридктрл](../../mfc/reference/cmfcpropertygridctrl-class.md).
 
@@ -333,7 +334,7 @@ BOOL AddOption(
 
 Значение TRUE означает, что элемент списка добавлен. В противном случае значение FALSE означает, что элемент списка не добавляется, поскольку параметр *бинсертуникуе* имеет значение true, а элемент списка, заданный параметром *лпсзоптион* , уже существует.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyaddsubitem"></a><a name="addsubitem"></a> Кмфкпропертигридпроперти:: Аддсубитем
 
@@ -352,7 +353,7 @@ BOOL AddSubItem(CMFCPropertyGridProperty* pProp);
 
 Значение TRUE, если указанное свойство успешно добавлено как дочернее свойство. Значение FALSE, если свойство не добавлено, так как оно уже содержится в родительском свойстве.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод используется для создания иерархического списка родительских и дочерних свойств. После добавления дочернего свойства свойство Parent автоматически отображает элемент управления "поле развертывания", обозначенный знаком "плюс" (+). Когда пользователь щелкает знак «плюс», родительское свойство разворачивается и отображает все дочерние элементы свойств.
 
@@ -364,7 +365,7 @@ BOOL AddSubItem(CMFCPropertyGridProperty* pProp);
 virtual void AdjustButtonRect();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию этот метод:
 
@@ -392,7 +393,7 @@ virtual void AdjustInPlaceEditRect(
 *ректспин*<br/>
 заполняет При возврате из этого метода прямоугольник, указывающий границы элемента управления "Счетчик" для значения свойства. Или, если свойство не поддерживает кнопку счетчика, пустой прямоугольник.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Область значений свойства состоит из текстового поля и, возможно, *переключателя*, такого как элемент управления "Счетчик". Этот метод вычисляет размеры текстового поля и переключателя, а затем возвращает эти значения в указанных параметрах.
 
@@ -409,7 +410,7 @@ void AllowEdit(BOOL bAllow=TRUE);
 *баллов*<br/>
 окне Значение TRUE, чтобы сделать свойство доступным для изменения; Значение FALSE, чтобы сделать свойство доступно только для чтения. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertycmfcpropertygridproperty"></a><a name="cmfcpropertygridproperty"></a> Кмфкпропертигридпроперти:: Кмфкпропертигридпроперти
 
@@ -460,7 +461,7 @@ CMFCPropertyGridProperty(
 *бисвалуелист*<br/>
 окне Значение TRUE, если свойство представляет список значений; Значение FALSE, если свойство представляет одно значение. Значение по умолчанию — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertycreatecombo"></a><a name="createcombo"></a> Кмфкпропертигридпроперти:: Креатекомбо
 
@@ -484,7 +485,7 @@ virtual CComboBox* CreateCombo(
 
 Указатель на новый объект [CComboBox](../../mfc/reference/ccombobox-class.md) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertycreateinplaceedit"></a><a name="createinplaceedit"></a> Кмфкпропертигридпроперти:: Креатеинплацеедит
 
@@ -508,11 +509,11 @@ virtual CWnd* CreateInPlaceEdit(
 
 Указатель на редактируемый элемент управления, если этот метод выполнен. в противном случае значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод использует значения параметров *varValue*, *лпсзедитмаск*, *лпсзедиттемплате*и *Лпсзвалидчарс* , указанных в конструкторе класса [кмфкпропертигридпроперти](../../mfc/reference/cmfcpropertygridproperty-class.md) . По умолчанию этот метод поддерживает типы Variant *varValue* . К ним относятся VT_BSTR, VT_R4, VT_R8, VT_UI1, VT_I2, VT_INT, VT_UINT, VT_I4, VT_UI2, VT_UI4 и VT_BOOL.
+Этот метод использует значения параметров *varValue*, *лпсзедитмаск*, *лпсзедиттемплате* и *Лпсзвалидчарс* , указанных в конструкторе класса [кмфкпропертигридпроперти](../../mfc/reference/cmfcpropertygridproperty-class.md) . По умолчанию этот метод поддерживает типы Variant *varValue* . К ним относятся VT_BSTR, VT_R4, VT_R8, VT_UI1, VT_I2, VT_INT, VT_UINT, VT_I4, VT_UI2, VT_UI4 и VT_BOOL.
 
-Этот метод создает элемент управления [у функции CMFCMaskedEdit](../../mfc/reference/cmfcmaskededit-class.md) , если задан один или несколько параметров *лпсзедитмаск*, *лпсзедиттемплате*или *лпсзвалидчарс* . в противном случае создается элемент управления [CEdit](../../mfc/reference/cedit-class.md) .
+Этот метод создает элемент управления [у функции CMFCMaskedEdit](../../mfc/reference/cmfcmaskededit-class.md) , если задан один или несколько параметров *лпсзедитмаск*, *лпсзедиттемплате* или *лпсзвалидчарс* . в противном случае создается элемент управления [CEdit](../../mfc/reference/cedit-class.md) .
 
 ## <a name="cmfcpropertygridpropertycreatespincontrol"></a><a name="createspincontrol"></a> Кмфкпропертигридпроперти:: Креатеспинконтрол
 
@@ -531,7 +532,7 @@ virtual CSpinButtonCtrl* CreateSpinControl(CRect rectSpin);
 
 Указатель на новый объект [кмфкспинбуттонктрл](../../mfc/reference/cmfcspinbuttonctrl-class.md) , который приводится в качестве указателя на объект [CSpinButtonCtrl](../../mfc/reference/cspinbuttonctrl-class.md) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите метод [кмфкпропертигридпроперти:: енаблеспинконтрол](#enablespincontrol) , чтобы отобразить редактируемый элемент управления "Счетчик" на правой границе свойства.
 
@@ -548,7 +549,7 @@ void Enable(BOOL bEnable=TRUE);
 *bEnable*<br/>
 окне Значение TRUE, чтобы включить свойство; Значение FALSE, чтобы отключить свойство. Отключенные свойства не реагируют на ввод с помощью мыши или клавиатуры. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyenablespincontrol"></a><a name="enablespincontrol"></a> Кмфкпропертигридпроперти:: Енаблеспинконтрол
 
@@ -572,7 +573,7 @@ void EnableSpinControl(
 *Nмакс.*<br/>
 окне Максимальное значение элемента управления "Счетчик". Значение по умолчанию — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Платформа автоматически создает элемент управления "Счетчик" при изменении свойства.
 
@@ -591,7 +592,7 @@ void Expand(BOOL bExpand=TRUE);
 *бекспанд*<br/>
 окне Значение TRUE, чтобы развернуть свойство; Значение FALSE, чтобы свернуть свойство. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyformatproperty"></a><a name="formatproperty"></a> Кмфкпропертигридпроперти:: Форматпроперти
 
@@ -605,7 +606,7 @@ virtual CString FormatProperty();
 
 Текстовое представление значения свойства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывается платформой перед отображением значения свойства.
 
@@ -621,7 +622,7 @@ DWORD_PTR GetData() const;
 
 Значение типа DWORD.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращаемые данные — это зависящее от приложения значение, например число или указатель на другие данные. Укажите значение данных при создании свойства или при вызове метода [кмфкпропертигридпроперти:: SetData](#setdata) .
 
@@ -637,7 +638,7 @@ const CString& GetDescription() const;
 
 Текстовая строка, содержащая описание свойства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Элемент управления "список свойств" также использует этот метод для вывода описания свойства.
 
@@ -658,7 +659,7 @@ int GetExpandedSubItems(BOOL bIncludeHidden=TRUE) const;
 
 Число развернутых дочерних элементов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertygethierarchylevel"></a><a name="gethierarchylevel"></a> Кмфкпропертигридпроперти:: Жесиерарчилевел
 
@@ -672,7 +673,7 @@ int GetHierarchyLevel() const;
 
 Иерархический уровень свойства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertygetname"></a><a name="getname"></a> Кмфкпропертигридпроперти:: Name
 
@@ -686,7 +687,7 @@ LPCTSTR GetName() const;
 
 Указатель на строку, содержащую имя свойства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertygetnametooltip"></a><a name="getnametooltip"></a> Кмфкпропертигридпроперти:: Жетнаметултип
 
@@ -700,7 +701,7 @@ virtual CString GetNameTooltip();
 
 Строка, содержащая имя свойства. По умолчанию возвращаемым значением является пустая строка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertygetoption"></a><a name="getoption"></a> Кмфкпропертигридпроперти:: параметр
 
@@ -719,7 +720,7 @@ LPCTSTR GetOption(int nIndex) const;
 
 Указатель на строку, содержащую текст параметра.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertygetoptioncount"></a><a name="getoptioncount"></a> Кмфкпропертигридпроперти:: Жетоптионкаунт
 
@@ -733,7 +734,7 @@ int GetOptionCount() const;
 
 Число элементов списка свойств (параметров), содержащихся в элементе управления свойств.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите метод [кмфкпропертигридпроперти:: аддоптион](#addoption) , чтобы добавить элементы в список свойств. Вызовите метод [кмфкпропертигридпроперти:: ремовеаллоптионс](#removealloptions) , чтобы удалить все элементы.
 
@@ -749,7 +750,7 @@ const COleVariant& GetOriginalValue() const;
 
 Исходное значение текущего свойства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот метод, чтобы отменить действие операции изменения, которое изменяет значение текущего свойства.
 
@@ -767,7 +768,7 @@ CMFCPropertyGridProperty* GetParent() const;
 
 Указатель на родительский объект свойства или значение NULL для свойства верхнего уровня.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertygetrect"></a><a name="getrect"></a> Кмфкпропертигридпроперти:: коrect
 
@@ -781,7 +782,7 @@ CRect GetRect() const;
 
 Объект [крект](../../atl-mfc-shared/reference/crect-class.md) , описывающий ограничивающий прямоугольник.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertygetsubitem"></a><a name="getsubitem"></a> Кмфкпропертигридпроперти:: Жетсубитем
 
@@ -804,7 +805,7 @@ CMFCPropertyGridProperty* GetSubItem(int nIndex) const;
 
 В режиме розничной торговли значение NULL, если параметр *ниндекс* является недопустимым. В режиме отладки этот метод утверждает.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertygetsubitemscount"></a><a name="getsubitemscount"></a> Кмфкпропертигридпроперти:: Жетсубитемскаунт
 
@@ -818,7 +819,7 @@ int GetSubItemsCount() const;
 
 Количество дочерних элементов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertygetvalue"></a><a name="getvalue"></a> Кмфкпропертигридпроперти:: GetValue
 
@@ -832,7 +833,7 @@ virtual const _variant_t& GetValue() const;
 
 Вариант, содержащий значение свойства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertygetvaluetooltip"></a><a name="getvaluetooltip"></a> Кмфкпропертигридпроперти:: Жетвалуетултип
 
@@ -846,7 +847,7 @@ virtual CString GetValueTooltip();
 
 `CString`Объект, содержащий текстовое представление значения свойства. По умолчанию это значение равно пустой строке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyhasbutton"></a><a name="hasbutton"></a> Кмфкпропертигридпроперти:: Хасбуттон
 
@@ -860,7 +861,7 @@ virtual BOOL HasButton() const;
 
 Значение TRUE, если свойство содержит кнопку (или список свойств); в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyhittest"></a><a name="hittest"></a> Кмфкпропертигридпроперти:: HitTest
 
@@ -895,7 +896,7 @@ CMFCPropertyGridProperty* HitTest(
 
 Указатель на объект свойства или значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию этот метод проверяет вложенные элементы свойств, если указанная точка не найдена ни в одном из элементов свойств.
 
@@ -915,7 +916,7 @@ CMFCPropertyGridProperty* HitTest(
 void Init();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyisallowedit"></a><a name="isallowedit"></a> Кмфкпропертигридпроперти:: Исалловедит
 
@@ -929,7 +930,7 @@ BOOL IsAllowEdit() const;
 
 Значение TRUE, если свойство доступно для редактирования; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyisenabled"></a><a name="isenabled"></a> Кмфкпропертигридпроперти:: enable
 
@@ -943,7 +944,7 @@ BOOL IsEnabled() const;
 
 Значение TRUE, если свойство включено; Значение FALSE, если свойство отключено.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Указывает, включено ли свойство или отключено.
 
@@ -959,7 +960,7 @@ BOOL IsExpanded() const;
 
 Значение TRUE, если свойство развернуто; Значение FALSE, если свойство свернуто.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyisgroup"></a><a name="isgroup"></a> Кмфкпропертигридпроперти:: Группа
 
@@ -973,7 +974,7 @@ BOOL IsGroup() const;
 
 Значение TRUE, если текущий объект свойства представляет группу; Значение FALSE, если свойство представляет значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 *Группа* — это коллекция связанных свойств в элементе управления "сетка свойств". Если элемент управления отображается иерархически, *имя группы* отображается в строке над группой в виде названия категории.
 
@@ -989,7 +990,7 @@ BOOL IsInPlaceEditing() const;
 
 Значение TRUE, если текущее свойство доступно для изменения; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyismodified"></a><a name="ismodified"></a> Кмфкпропертигридпроперти:: Modified
 
@@ -1003,7 +1004,7 @@ BOOL IsModified() const;
 
 Значение TRUE, если свойство изменено; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyisparentexpanded"></a><a name="isparentexpanded"></a> Кмфкпропертигридпроперти:: Испарентекспандед
 
@@ -1017,7 +1018,7 @@ BOOL IsParentExpanded() const;
 
 Значение TRUE, если все родительские элементы текущего свойства развернуты; Значение FALSE, если родительские свойства свернуты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyisselected"></a><a name="isselected"></a> Кмфкпропертигридпроперти:: SELECT
 
@@ -1031,7 +1032,7 @@ virtual BOOL IsSelected() const;
 
 Значение TRUE, если выбрано текущее свойство; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyissubitem"></a><a name="issubitem"></a> Кмфкпропертигридпроперти:: Иссубитем
 
@@ -1062,7 +1063,7 @@ virtual BOOL IsValueChanged() const;
 
 Значение TRUE, если значение текущего свойства изменилось; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyisvisible"></a><a name="isvisible"></a> Кмфкпропертигридпроперти:: Visible
 
@@ -1076,7 +1077,7 @@ BOOL IsVisible() const;
 
 Значение TRUE, если текущее свойство является видимым; ином IsFalse.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertym_strformatdouble"></a><a name="m_strformatdouble"></a> Кмфкпропертигридпроперти:: m_strFormatDouble
 
@@ -1086,7 +1087,7 @@ BOOL IsVisible() const;
 static CString m_strFormatDouble;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertym_strformatfloat"></a><a name="m_strformatfloat"></a> Кмфкпропертигридпроперти:: m_strFormatFloat
 
@@ -1096,7 +1097,7 @@ static CString m_strFormatDouble;
 static CString m_strFormatFloat;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertym_strformatlong"></a><a name="m_strformatlong"></a> Кмфкпропертигридпроперти:: m_strFormatLong
 
@@ -1106,7 +1107,7 @@ static CString m_strFormatFloat;
 static CString m_strFormatLong;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertym_strformatshort"></a><a name="m_strformatshort"></a> Кмфкпропертигридпроперти:: m_strFormatShort
 
@@ -1116,7 +1117,7 @@ static CString m_strFormatLong;
 static CString m_strFormatShort;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyonclickbutton"></a><a name="onclickbutton"></a> Кмфкпропертигридпроперти:: Онкликкбуттон
 
@@ -1131,7 +1132,7 @@ virtual void OnClickButton(CPoint point);
 *точки*<br/>
 окне Точка в координатах клиента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию этот метод не выполняет никаких действий.
 
@@ -1148,7 +1149,7 @@ virtual void OnClickName(CPoint C);
 *Ц*\
 окне Точка в координатах клиента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию этот метод не выполняет никаких действий.
 
@@ -1174,7 +1175,7 @@ virtual BOOL OnClickValue(
 
 Значение TRUE, если указанное сообщение мыши обрабатывается этим методом; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию этот метод возвращает значение FALSE, если текущее свойство недоступно для редактирования. В противном случае элемент управления "поле ввода" или "Счетчик", связанный с этим свойством, обрабатывает указанное сообщение мыши, а затем этот метод возвращает значение TRUE.
 
@@ -1186,7 +1187,7 @@ virtual BOOL OnClickValue(
 virtual void OnCloseCombo();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyonctlcolor"></a><a name="onctlcolor"></a> Кмфкпропертигридпроперти:: Онктлколор
 
@@ -1210,7 +1211,7 @@ virtual HBRUSH OnCtlColor(
 
 Дескриптор кисти, если этот метод успешно выполнен; в противном случае значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyondblclk"></a><a name="ondblclk"></a> Кмфкпропертигридпроперти:: Ондблклк
 
@@ -1229,7 +1230,7 @@ virtual BOOL OnDblClk(CPoint point);
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию этот метод выбирает элемент Next свойства в элементе управления "список свойств".
 
@@ -1241,7 +1242,7 @@ virtual BOOL OnDblClk(CPoint point);
 virtual void OnDestroyWindow();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyondrawbutton"></a><a name="ondrawbutton"></a> Кмфкпропертигридпроперти:: Ондравбуттон
 
@@ -1261,7 +1262,7 @@ virtual void OnDrawButton(
 *ректбуттон*<br/>
 окне Ограничивающий прямоугольник, указывающий, где нарисовать кнопку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyondrawdescription"></a><a name="ondrawdescription"></a> Кмфкпропертигридпроперти:: Ондравдескриптион
 
@@ -1281,7 +1282,7 @@ virtual void OnDrawDescription(
 *rect*<br/>
 окне Ограничивающий прямоугольник, указывающий, где следует нарисовать описание свойства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию этот метод рисует имя и описание свойства в шрифте, который используется родительским элементом управления списка свойств. Описание свойства отображается в обычном стиле, а имя свойства отображается полужирным шрифтом.
 
@@ -1303,7 +1304,7 @@ virtual void OnDrawExpandBox(
 *ректекспанд*<br/>
 окне Ограничивающий прямоугольник, указывающий место рисования элемента управления "поле развертывания".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Щелкните элемент управления "развернуть", чтобы развернуть или свернуть список вложенных свойств. Элемент управления "поле развертывания" обозначается квадратом, содержащим знак "плюс" (+) или "минус" (-). Знак «плюс» указывает, что свойство можно развернуть, чтобы отобразить список вложенных свойств. Знак «минус» указывает, что список можно свернуть, чтобы отображалось только свойство.
 
@@ -1325,7 +1326,7 @@ virtual void OnDrawName(
 *rect*<br/>
 окне Ограничивающий прямоугольник, указывающий, где следует нарисовать имя свойства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyondrawvalue"></a><a name="ondrawvalue"></a> Кмфкпропертигридпроперти:: Ондраввалуе
 
@@ -1345,7 +1346,7 @@ virtual void OnDrawValue(
 *rect*<br/>
 окне Ограничивающий прямоугольник, указывающий, где следует нарисовать значение свойства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyonedit"></a><a name="onedit"></a> Кмфкпропертигридпроперти:: onedit
 
@@ -1364,7 +1365,7 @@ virtual BOOL OnEdit(LPPOINT lptClick);
 
 Значение TRUE, если операция редактирования начинается успешно; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция вызывается платформой, когда пользователь собирается изменить значение свойства. По умолчанию этот метод запускает соответствующий редактор для элемента управления "поле со списком" или "Счетчик".
 
@@ -1380,7 +1381,7 @@ virtual BOOL OnEndEdit();
 
 Этот метод всегда возвращает значение TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию этот метод уничтожает текущий элемент управления редактированием, а затем возвращает значение TRUE.
 
@@ -1401,7 +1402,7 @@ virtual BOOL OnKillFocus(CWnd*);
 
 Этот метод всегда возвращает значение TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию этот метод не выполняет никаких действий, а затем возвращает значение TRUE. При переопределении этого метода возвращается значение TRUE, если платформа может завершить операцию редактирования, когда свойство теряет фокус ввода.
 
@@ -1415,7 +1416,7 @@ virtual void OnKillSelection(CMFCPropertyGridProperty*);
 
 окне *Кмфкпропертигридпроперти&#42;*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию этот метод не выполняет никаких действий.
 
@@ -1429,7 +1430,7 @@ virtual void OnPosSizeChanged(CRect);
 
 окне *Крект*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию этот метод не выполняет никаких действий.
 
@@ -1446,7 +1447,7 @@ virtual void OnRClickName(CPoint C);
 *Ц*\
 окне Точка в координатах клиента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию этот метод не выполняет никаких действий.
 
@@ -1468,7 +1469,7 @@ virtual void OnRClickValue(
 *&*\
 окне Логическое значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию этот метод не выполняет никаких действий, а параметр *B* не имеет предопределенного назначения.
 
@@ -1480,7 +1481,7 @@ virtual void OnRClickValue(
 virtual void OnSelectCombo();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию этот метод использует текст выбранного элемента для обновления значения свойства.
 
@@ -1496,7 +1497,7 @@ virtual BOOL OnSetCursor() const;
 
 TRUE, если текущее свойство является типом Variant или списком значений, и этот метод успешно загружает курсор мыши с точкой вставки (I-образной точки); в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод поддерживает следующие типы вариантов: VT_INT, VT_I2, VT_I4, VT_UINT, VT_UI1, VT_UI2, VT_UI4, VT_R4, VT_R8 и VT_BSTR.
 
@@ -1510,7 +1511,7 @@ virtual void OnSetSelection CMFCPropertyGridProperty*);
 
 окне *Кмфкпропертигридпроперти&#42;*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию этот метод не выполняет никаких действий.
 
@@ -1526,7 +1527,7 @@ virtual BOOL OnUpdateValue();
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertypushchar"></a><a name="pushchar"></a> Кмфкпропертигридпроперти::P Ушчар
 
@@ -1545,7 +1546,7 @@ virtual BOOL PushChar(UINT nChar);
 
 Значение TRUE, если операция редактирования продолжится; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод поддерживает свойство, которое является либо списком значений, либо одним из следующих типов вариантов: VT_INT, VT_I2, VT_I4, VT_UINT, VT_UI1, VT_UI2, VT_UI4, VT_R4, VT_R8 и VT_BSTR.
 
@@ -1557,7 +1558,7 @@ virtual BOOL PushChar(UINT nChar);
 void Redraw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyremovealloptions"></a><a name="removealloptions"></a> Кмфкпропертигридпроперти:: Ремовеаллоптионс
 
@@ -1567,7 +1568,7 @@ void Redraw();
 void RemoveAllOptions();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Параметры также называются элементами списка элемента управления "список свойств".
 
@@ -1591,7 +1592,7 @@ BOOL RemoveSubItem(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Укажите значение FALSE для параметра *бделете* , если планируется переместить указанный элемент. то есть удалите подэлемент, а затем добавьте его в другое место.
 
@@ -1603,7 +1604,7 @@ BOOL RemoveSubItem(
 virtual void ResetOriginalValue();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertysetdata"></a><a name="setdata"></a> Кмфкпропертигридпроперти:: SetData
 
@@ -1618,7 +1619,7 @@ void SetData(DWORD_PTR dwData);
 *двдата*<br/>
 окне Специфическое для приложения 32-разрядное значение, например целое число или указатель на другие данные.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте метод [кмфкпропертигридпроперти:: GetData](#getdata) для получения значения DWORD. Используйте метод [кмфкпропертигридктрл:: финдитембидата](../../mfc/reference/cmfcpropertygridctrl-class.md#finditembydata) для нахождение элемента списка свойств, связанного с указанным значением DWORD.
 
@@ -1635,7 +1636,7 @@ void SetDescription(const CString& strDescr);
 *стрдескр*<br/>
 окне Текст, описывающий текущее свойство.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertysetname"></a><a name="setname"></a> Кмфкпропертигридпроперти:: SetName
 
@@ -1655,7 +1656,7 @@ void SetName(
 *bRedraw*<br/>
 окне Значение TRUE, чтобы перерисовать свойство немедленно. в противном случае — значение FALSE. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertysetoriginalvalue"></a><a name="setoriginalvalue"></a> Кмфкпропертигридпроперти:: Сеторигиналвалуе
 
@@ -1670,7 +1671,7 @@ virtual void SetOriginalValue(const COleVariant& varValue);
 *varValue*<br/>
 окне Значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте метод [кмфкпропертигридпроперти:: ресеторигиналвалуе](#resetoriginalvalue) , чтобы сбросить исходное значение редактируемого свойства.
 
@@ -1687,7 +1688,7 @@ virtual void SetValue(const _variant_t& varValue);
 *varValue*<br/>
 окне Ссылка на значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcpropertygridpropertyshow"></a><a name="show"></a> Кмфкпропертигридпроперти:: показывать
 
@@ -1707,7 +1708,7 @@ void Show(
 *баджустлайаут*<br/>
 окне Значение TRUE, чтобы повторно рассчитать, как нарисовать метку и значение свойства, а затем нарисовать свойство; Значение FALSE, чтобы использовать существующие вычисления для рисования свойства. Значение по умолчанию — TRUE.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>

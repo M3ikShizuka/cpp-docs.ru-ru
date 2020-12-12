@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: исключения: использование макросов MFC и исключений C++'
 title: Исключения. Использование макросов MFC и исключений C++
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - heap corruption [MFC]
 - nested catch blocks [MFC]
 ms.assetid: d664a83d-879b-44d4-bdf0-029f0aca69e9
-ms.openlocfilehash: 9e97eb545dedd3ac38dd93471f82aecc382717ae
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4f46cdff236f37ccdccde8215c7937300014aca6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223178"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290455"
 ---
 # <a name="exceptions-using-mfc-macros-and-c-exceptions"></a>Исключения. Использование макросов MFC и исключений C++
 
@@ -33,7 +34,7 @@ ms.locfileid: "87223178"
 
 - [Блоки try внутри блоков catch](#_core_try_blocks_inside_catch_blocks)
 
-## <a name="mixing-exception-keywords-and-macros"></a><a name="_core_mixing_exception_keywords_and_macros"></a>Сочетание ключевых слов и макросов исключений
+## <a name="mixing-exception-keywords-and-macros"></a><a name="_core_mixing_exception_keywords_and_macros"></a> Сочетание ключевых слов и макросов исключений
 
 В одной программе можно смешивать макросы исключений MFC и ключевые слова исключений C++. Однако нельзя смешивать макросы MFC с ключевыми словами исключений C++ в одном блоке, так как макросы удаляют объекты исключений автоматически при выходе из области, а код, использующий ключевые слова для обработки исключений, — нет. Дополнительные сведения см. в статье [исключения: перехват и удаление исключений](exceptions-catching-and-deleting-exceptions.md).
 
@@ -47,7 +48,7 @@ ms.locfileid: "87223178"
 
 [!code-cpp[NVC_MFCExceptions#11](codesnippet/cpp/exceptions-using-mfc-macros-and-cpp-exceptions_2.cpp)]
 
-## <a name="try-blocks-inside-catch-blocks"></a><a name="_core_try_blocks_inside_catch_blocks"></a>Блоки try внутри блоков catch
+## <a name="try-blocks-inside-catch-blocks"></a><a name="_core_try_blocks_inside_catch_blocks"></a> Блоки try внутри блоков catch
 
 Невозможно повторно создать текущее исключение из **`try`** блока внутри блока **catch** . Следующий пример является недопустимым:
 
@@ -55,6 +56,6 @@ ms.locfileid: "87223178"
 
 Дополнительные сведения см. в разделе [исключения: Проверка содержимого исключений](exceptions-examining-exception-contents.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Обработка исключений](exception-handling-in-mfc.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: удаление всех объектов в коллекции CObject'
 title: удаление всех объектов из коллекции CObject
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - objects in CObject collections
 - collection classes [MFC], shared objects
 ms.assetid: 81d2c1d5-a0a5-46e1-8ab9-82b45cf7afd2
-ms.openlocfilehash: 5aac324b6af50db019c2a4b55b26a612cc081894
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 674253d06925bdf29e5606692a73911878f6c393
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225076"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97291016"
 ---
 # <a name="deleting-all-objects-in-a-cobject-collection"></a>удаление всех объектов из коллекции CObject
 
@@ -34,7 +35,7 @@ ms.locfileid: "87225076"
 
 - [Схема](#_core_to_delete_all_elements_in_a_map)
 
-#### <a name="to-delete-all-objects-in-a-list-of-pointers-to-cobject"></a><a name="_core_to_delete_all_objects_in_a_list_of_pointers_to_cobject"></a>Удаление всех объектов из списка указателей на CObject
+#### <a name="to-delete-all-objects-in-a-list-of-pointers-to-cobject"></a><a name="_core_to_delete_all_objects_in_a_list_of_pointers_to_cobject"></a> Удаление всех объектов из списка указателей на CObject
 
 1. Используйте `GetHeadPosition` и `GetNext` для итерации по списку.
 
@@ -50,7 +51,7 @@ ms.locfileid: "87225076"
 
 Обратите внимание на различие между удалением объекта элемента и удалением самого элемента. При удалении элемента из списка просто удаляется ссылка списка на объект. Объект по-прежнему существует в памяти. При удалении объекта он прекращает свое существование, а его память освобождается. Таким образом, важно удалить элемент сразу после удаления объекта, чтобы список не попытается получить доступ к объектам, которые больше не существуют.
 
-#### <a name="to-delete-all-elements-in-an-array"></a><a name="_core_to_delete_all_elements_in_an_array"></a>Удаление всех элементов в массиве
+#### <a name="to-delete-all-elements-in-an-array"></a><a name="_core_to_delete_all_elements_in_an_array"></a> Удаление всех элементов в массиве
 
 1. Используйте `GetSize` и целочисленные значения индекса для выполнения итерации по массиву.
 
@@ -64,7 +65,7 @@ ms.locfileid: "87225076"
 
 Как и в приведенном выше примере, можно вызвать метод `RemoveAll` , чтобы удалить все элементы в массиве или `RemoveAt` удалить отдельный элемент.
 
-#### <a name="to-delete-all-elements-in-a-map"></a><a name="_core_to_delete_all_elements_in_a_map"></a>Удаление всех элементов в сопоставлении
+#### <a name="to-delete-all-elements-in-a-map"></a><a name="_core_to_delete_all_elements_in_a_map"></a> Удаление всех элементов в сопоставлении
 
 1. Используйте `GetStartPosition` и `GetNextAssoc` для итерации по массиву.
 
@@ -78,6 +79,6 @@ ms.locfileid: "87225076"
 
 Можно вызвать `RemoveAll` , чтобы удалить все элементы в сопоставлении или `RemoveKey` удалить отдельный элемент с указанным ключом.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Доступ ко всем элементам коллекции](accessing-all-members-of-a-collection.md)

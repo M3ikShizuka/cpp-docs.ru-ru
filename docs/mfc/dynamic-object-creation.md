@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: динамическое создание объектов'
 title: Динамическое создание объектов
 ms.date: 03/27/2020
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - objects [MFC], creating dynamically at run time
 - dynamic object creation [MFC]
 ms.assetid: 3e0f51cb-3e24-4231-817f-1c0ce9f2d5df
-ms.openlocfilehash: 00e627e6d73e510ca694966291e2ef518fef18b5
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b39c0561a98807030c471b3de4cd5921883f9f0e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619548"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290977"
 ---
 # <a name="dynamic-object-creation"></a>Динамическое создание объектов
 
-В этой статье объясняется, как динамически создать объект во время выполнения. Процедура использует сведения о классе времени выполнения, как описано в статье [доступ к сведениям о классе времени выполнения](accessing-run-time-class-information.md).
+В этой статье объясняется, как динамически создать объект во время выполнения. Процедура использует сведения о классе времени выполнения, как описано в статье [доступ к Run-Time сведениям о классе](accessing-run-time-class-information.md).
 
 #### <a name="dynamically-create-an-object-given-its-run-time-class"></a>Динамическое создание объекта по заданному классу времени выполнения
 

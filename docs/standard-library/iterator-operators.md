@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; Операторы итераторов &gt;'
 title: Операторы &lt;iterator&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,16 +18,16 @@ helpviewer_keywords:
 - std::operator&gt;= (iterator)
 - std::operator&lt; (iterator)
 - std::operator&lt;= (iterator), std::operator== (iterator)
-ms.openlocfilehash: 36851eab86a32fab9294129cf1918e0add528eb3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6fe47669bcd2ab72cd91bc9eee36afea975fab3e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215664"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289703"
 ---
 # <a name="ltiteratorgt-operators"></a>Операторы &lt;iterator&gt;
 
-## <a name="operator"></a><a name="op_neq"></a>operator! =
+## <a name="operator"></a><a name="op_neq"></a> operator! =
 
 Проверяет объект итератора в левой части оператора на неравенство объекту итератора в правой части.
 
@@ -53,7 +54,7 @@ bool operator!=(const istreambuf_iterator<CharType, Traits>& left, const istream
 
 **`true`** значение, если объекты итератора не равны; **`false`** значение, если объекты итератора равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Один итератор равен другому, если они адресуют одни и те же элементы в контейнере. Если два итератора указывают на различные элементы в контейнере, они не равны.
 
@@ -119,7 +120,7 @@ in the reversed sequence: 7.
 The iterators are not equal.
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>Оператор = =
+## <a name="operator"></a><a name="op_eq_eq"></a> Оператор = =
 
 Проверяет объект итератора в левой части оператора на равенство объекту итератора в правой части.
 
@@ -157,7 +158,7 @@ bool operator==(
 
 **`true`** значение, если объекты итератора равны; **`false`** значение, если объекты итератора не равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Один итератор равен другому, если они адресуют одни и те же элементы в контейнере. Если два итератора указывают на различные элементы в контейнере, они не равны.
 
@@ -225,7 +226,7 @@ in the reversed sequence: 8.
 The iterators are not equal.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt"></a>станции&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> станции&lt;
 
 Определяет, верно ли, что объект итератора в левой части оператора меньше объекта итератора в правой части.
 
@@ -246,7 +247,7 @@ bool operator<(const reverse_iterator<RandomIterator>& left, const reverse_itera
 
 **`true`** значение, если итератор слева от выражения меньше итератора в правой части выражения; значение, **`false`** если оно больше или равно итератору справа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Один итератор меньше, чем другой, если он адресует элемент, который находится в контейнере раньше, чем элемент, адресуемый другим сравниваемым итератором. Один итератор не меньше, чем другой, если он адресует либо тот же самый элемент, либо элемент, который находится в контейнере дальше, чем элемент, адресуемый другим сравниваемым итератором.
 
@@ -316,7 +317,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is less than the iterator rVPOS2.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>станции&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> станции&lt;=
 
 Определяет, верно ли, что объект итератора в левой части оператора меньше или равен объекту итератора в правой части.
 
@@ -337,7 +338,7 @@ bool operator<=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 
 **`true`** значение, если итератор в левой части выражения меньше или равен итератору в правой части выражения; значение **`false`** , если оно больше итератора справа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Один итератор меньше или равен другому, если он адресует либо тот же самый элемент, либо элемент, который находится в контейнере раньше, чем элемент, адресуемый другим сравниваемым итератором. Один итератор больше, чем другой, если он адресует элемент, который находится в контейнере дальше, чем элемент, адресуемый другим сравниваемым итератором.
 
@@ -411,7 +412,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is less than or equal to the iterator rVPOS2.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt"></a>станции&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> станции&gt;
 
 Определяет, верно ли, что объект итератора в левой части оператора больше объекта итератора в правой части.
 
@@ -432,7 +433,7 @@ bool operator>(const reverse_iterator<RandomIterator>& left, const reverse_itera
 
 **`true`** значение, если итератор с левой стороны выражения больше итератора справа от выражения; значение, **`false`** если оно меньше или равно итератору справа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Один итератор больше, чем другой, если он адресует элемент, который находится в контейнере дальше, чем элемент, адресуемый другим сравниваемым итератором. Один итератор не больше, чем другой, если он адресует либо тот же самый элемент, либо элемент, который находится в контейнере раньше, чем элемент, адресуемый другим сравниваемым итератором.
 
@@ -500,7 +501,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is greater than the iterator rVPOS2.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>станции&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> станции&gt;=
 
 Определяет, верно ли, что объект итератора в левой части оператора больше или равен объекту итератора в правой части.
 
@@ -521,7 +522,7 @@ bool operator>=(const reverse_iterator<RandomIterator>& left, const reverse_iter
 
 **`true`** значение, если итератор в левой части выражения больше или равен итератору в правой части выражения; значение **`false`** , если оно меньше итератора справа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Один итератор больше или равен другому, если он адресует либо тот же самый элемент, либо элемент, который находится в контейнере дальше, чем элемент, адресуемый другим сравниваемым итератором. Один итератор меньше, чем другой, если он адресует элемент, который находится в контейнере раньше, чем элемент, адресуемый другим сравниваемым итератором.
 
@@ -595,7 +596,7 @@ in the reversed sequence: 8.
 The iterator rVPOS1 is greater than or equal to the iterator rVPOS2.
 ```
 
-## <a name="operator"></a><a name="op_add"></a>operator +
+## <a name="operator"></a><a name="op_add"></a> operator +
 
 Добавляет смещение к итератору и возвращает `move_iterator` или `reverse_iterator` с адресом вставленного элемента в новой позиции смещения.
 
@@ -674,7 +675,7 @@ The iterator rVPOS1 now points to the fifth element
 in the reversed sequence: 2.
 ```
 
-## <a name="operator-"></a><a name="operator-"></a>станции
+## <a name="operator-"></a><a name="operator-"></a> станции
 
 Вычитает один итератор из другого и возвращает разницу.
 
@@ -702,7 +703,7 @@ Tdiff operator-(
 
 Разница между двумя итераторами `.`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый оператор-шаблон возвращает `left.base() - right.base()`.
 

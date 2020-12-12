@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _getdiskfree'
 title: _getdiskfree
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - disk size
 - getdiskfree function
 ms.assetid: 47a3f6cf-4816-452a-8f3d-1c3ae02a0f2a
-ms.openlocfilehash: f94e8ecd314ed55d8519363d80dda57f661f18e5
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: f17310b426ded63f3e1139e3d7212657d4c6efd0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913818"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289209"
 ---
 # <a name="_getdiskfree"></a>_getdiskfree
 
@@ -66,7 +67,7 @@ unsigned _getdiskfree(
 
 Если вызов функции заканчивается удачно, возвращается нулевое значение. Если функция завершается с ошибкой, возвращается значение кода ошибки. Значение « **No** i» задается для любых ошибок, возвращаемых операционной системой. Дополнительные сведения об условиях ошибки, обозначенных как "Автоописание **", см**. в разделе " [константы](../../c-runtime-library/errno-constants.md)".
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Структура **_diskfree_t** определена в Direct. h.
 
@@ -195,4 +196,4 @@ void utoiRightJustified(TCHAR* szLeft, TCHAR* szRight, unsigned uVal) {
 
 ## <a name="see-also"></a>См. также раздел
 
-[Управление каталогами](../../c-runtime-library/directory-control.md)<br/>
+[Управление каталогом](../../c-runtime-library/directory-control.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _getdrives'
 title: _getdrives
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - getdrives function
 - disk drives
 ms.assetid: 869bb51f-4209-4328-846e-3aadebaceb9c
-ms.openlocfilehash: 66940abc3f171b07f0816441709b1f4f9db88614
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 77e73b1d63238b5f558fffdef0344fa5180c84ab
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913749"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97289157"
 ---
 # <a name="_getdrives"></a>_getdrives
 
@@ -51,9 +52,9 @@ unsigned long _getdrives( void );
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Если функция завершается успешно, возвращенное значение является битовой маской, которая представляет доступные в данный момент диски. Бит в позиции 0 (наименее значимый бит) представляет диск A, в позиции 1 — диск B, в позиции 2 — диск C и т. д. Если функция выполняется неудачно, возвращается нулевое значение. Чтобы получить расширенные сведения об ошибке, вызовите **GetLastError**.
+Если функция завершается успешно, возвращенное значение является битовой маской, которая представляет доступные в данный момент диски. Бит в позиции 0 (наименее значимый бит) представляет диск A, в позиции 1 — диск B, в позиции 2 — диск C и т. д. Если функция выполняется неудачно, возвращается нулевое значение. Дополнительные сведения об ошибке можно получить, вызвав **GetLastError**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -113,4 +114,4 @@ E:
 
 ## <a name="see-also"></a>См. также раздел
 
-[Управление каталогами](../../c-runtime-library/directory-control.md)<br/>
+[Управление каталогом](../../c-runtime-library/directory-control.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: исключения: исключения базы данных'
 title: Исключения. Исключения баз данных
 ms.date: 09/17/2019
 helpviewer_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - databases [MFC], exception handling
 - error codes [MFC], database exception handling
 ms.assetid: 28daf260-f824-4be6-aecc-1f859e6dec26
-ms.openlocfilehash: aaed2a9f88c46a405b754b78242478f93cffda31
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3e45f887d51b4b81196cd08d11f426f4ee6d4481
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217965"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97290652"
 ---
 # <a name="exceptions-database-exceptions"></a>Исключения. Исключения баз данных
 
@@ -26,7 +27,7 @@ ms.locfileid: "87217965"
 
 - [Пример обработки исключений базы данных](#_core_a_database_exception.2d.handling_example)
 
-## <a name="approaches-to-exception-handling"></a><a name="_core_approaches_to_exception_handling"></a>Подходы к обработке исключений
+## <a name="approaches-to-exception-handling"></a><a name="_core_approaches_to_exception_handling"></a> Подходы к обработке исключений
 
 Этот подход аналогичен при работе с DAO (устарел) или ODBC.
 
@@ -52,7 +53,7 @@ ms.locfileid: "87217965"
 
 Дополнительные сведения об ошибках DAO, типе объекта ошибки DAO и коллекции ошибок DAO доступны в разделе Class [кдаоексцептион](reference/cdaoexception-class.md).
 
-## <a name="a-database-exception-handling-example"></a><a name="_core_a_database_exception.2d.handling_example"></a>Пример обработки исключений базы данных
+## <a name="a-database-exception-handling-example"></a><a name="_core_a_database_exception.2d.handling_example"></a> Пример Exception-Handling базы данных
 
 В следующем примере предпринимается попытка создать объект, производный от [CRecordset](reference/crecordset-class.md), в куче с помощью **`new`** оператора, а затем открыть набор записей (для источника данных ODBC). Аналогичный пример для классов DAO см. в разделе "пример исключения DAO" ниже.
 
