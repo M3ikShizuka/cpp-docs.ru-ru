@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: операции Windows (C++/CLI)'
 title: Операции Windows (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - registry, writing to
 - Visual C++, writing to Windows Registry
 ms.assetid: b9a75cb4-0589-4d5b-92cb-5e8be42b4ac0
-ms.openlocfilehash: 3c4ef2a69c25313ff444e0fabaea6eef2feeeee2
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 95fff25cb5c921272972e343dd3a85d53f909c52
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501662"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298725"
 ---
 # <a name="windows-operations-ccli"></a>Операции Windows (C++/CLI)
 
@@ -140,7 +141,7 @@ int main( )
 }
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 <xref:Microsoft.Win32.Registry>Класс является просто контейнером для статических экземпляров <xref:Microsoft.Win32.RegistryKey> . Каждый экземпляр представляет корневой узел реестра. Экземпляры:,,, <xref:Microsoft.Win32.Registry.ClassesRoot> <xref:Microsoft.Win32.Registry.CurrentConfig> <xref:Microsoft.Win32.Registry.CurrentUser> <xref:Microsoft.Win32.Registry.LocalMachine> и <xref:Microsoft.Win32.Registry.Users> .
 
@@ -501,11 +502,11 @@ int main()
 }
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 .NET Framework можно использовать для доступа к реестру с помощью <xref:Microsoft.Win32.Registry> классов и <xref:Microsoft.Win32.RegistryKey> , которые определены в <xref:Microsoft.Win32> пространстве имен. Класс **реестра** — это контейнер для статических экземпляров <xref:Microsoft.Win32.RegistryKey> класса. Каждый экземпляр представляет корневой узел реестра. Экземпляры:,,, <xref:Microsoft.Win32.Registry.ClassesRoot> <xref:Microsoft.Win32.Registry.CurrentConfig> <xref:Microsoft.Win32.Registry.CurrentUser> <xref:Microsoft.Win32.Registry.LocalMachine> и <xref:Microsoft.Win32.Registry.Users> .
 
-## <a name="related-sections"></a>См. также
+## <a name="related-sections"></a>Связанные разделы
 
 <xref:System.Environment>
 

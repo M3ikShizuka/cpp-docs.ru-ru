@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _mbccpy, _mbccpy_l'
 title: _mbccpy, _mbccpy_l
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - _mbccpy function
 - mbccpy_l function
 ms.assetid: 13f4de6e-7792-41ac-b319-dd9b135433aa
-ms.openlocfilehash: a265a37ba4c16dd15e6b50035dcc65bc8afbe7c7
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a5d63a2d4ccd623d035fdc423774d6a344d107f8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919583"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299596"
 ---
 # <a name="_mbccpy-_mbccpy_l"></a>_mbccpy, _mbccpy_l
 
@@ -79,11 +80,11 @@ void _mbccpy_l(
 *locale*<br/>
 Используемый языковой стандарт.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_mbccpy** копирует один многобайтовый символ из *src* в *dest*.
 
-Эта функция проверяет свои параметры. Если **_mbccpy** передается пустой указатель для *dest* или *src*, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено **, для** параметра **еинвал**задается значение.
+Эта функция проверяет свои параметры. Если **_mbccpy** передается пустой указатель для *dest* или *src*, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено **, для** параметра **еинвал** задается значение.
 
 **_mbccpy** использует текущий языковой стандарт для любого поведения, зависящего от языкового стандарта. **_mbccpy_l** идентична **_mbccpy** за исключением того, что **_mbccpy_l** использует языковой стандарт, переданный для поведения, зависящего от языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
@@ -109,6 +110,6 @@ void _mbccpy_l(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>

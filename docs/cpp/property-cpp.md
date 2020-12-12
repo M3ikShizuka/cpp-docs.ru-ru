@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о свойстве: Property (C++)'
 title: property (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - property __declspec keyword
 - __declspec keyword [C++], property
 ms.assetid: f3b850ba-bf48-4df7-a1d6-8259d97309ce
-ms.openlocfilehash: 03f71739698fd20a01fd72567ce5b9babc176327
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ed996ecadd16837af1e28b71bbedd9b4e3c1abaa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80179306"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299167"
 ---
 # <a name="property-c"></a>property (C++)
 
@@ -30,7 +31,7 @@ ms.locfileid: "80179306"
 
 ## <a name="remarks"></a>Remarks
 
-Когда компилятор видит элемент данных, объявленный с этим атрибутом, справа от оператора выбора члена (" **.** " или " **->** "), он преобразует операцию в `get` или функцию `put` в зависимости от того, является ли это выражение l-значением или r-значением. В более сложных контекстах, таких как "`+=`", перезапись выполняется с помощью `get` и `put`.
+Когда компилятор видит элемент данных, объявленный с этим атрибутом, справа от оператора выбора члена ("**.**" или " **->** "), он преобразует операцию в `get` `put` функцию или, в зависимости от того, является ли такое выражение l-значением или r-value. В более сложных контекстах, таких как « `+=` », переписывание выполняется как, так `get` и `put` .
 
 Этот атрибут также может использоваться при объявлении пустого массива в определении класса или структуры. Пример:
 

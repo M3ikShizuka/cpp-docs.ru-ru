@@ -1,5 +1,6 @@
 ---
-title: Структура Инвокемодеоптионс
+description: 'Дополнительные сведения о: структура Инвокемодеоптионс'
+title: Структура InvokeModeOptions
 ms.date: 03/22/2018
 ms.topic: reference
 f1_keywords:
@@ -7,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - InvokeModeOptions structure
 - InvokeMode enum
-ms.openlocfilehash: 9bca49479d97ee371f6728f90a9aa96da0387f54
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1e1382242c95c47355239c220c43c278280dd451
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213841"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298985"
 ---
-# <a name="invokemodeoptions-structure"></a>Структура Инвокемодеоптионс
+# <a name="invokemodeoptions-structure"></a>Структура InvokeModeOptions
 
-Указывает, следует ли запускать все события в очереди делегатов или прекратить срабатывание после возникновения ошибки. Допустимые значения указываются в перечислении `InvokeMode`.
+Указывает, следует ли запускать все события в очереди делегатов или прекратить срабатывание после возникновения ошибки. Допустимые значения указываются в `InvokeMode` перечислении.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,5 +42,5 @@ struct InvokeModeOptions
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Microsoft::WRL](microsoft-wrl-namespace.md)<br/>
+[Пространство имен Microsoft:: WRL](microsoft-wrl-namespace.md)<br/>
 [Класс Microsoft:: WRL:: Агиливентсаурце](agileeventsource-class.md)

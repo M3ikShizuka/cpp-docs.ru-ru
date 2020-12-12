@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _execute_onexit_table, _initialize_onexit_table, _register_onexit_function'
 title: _execute_onexit_table, _initialize_onexit_table, _register_onexit_function
 ms.date: 4/2/2020
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - _initialize_onexit_table function
 - _register_onexit_function function
 ms.assetid: ad9e4149-d4ad-4fdf-aaaf-cf786fcb4473
-ms.openlocfilehash: 051961f049109b4fa6a2881e442e621036cb279c
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 5bd0449c4b353c6a417e145f864b07794ae40ca3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913833"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300077"
 ---
 # <a name="_execute_onexit_table-_initialize_onexit_table-_register_onexit_function"></a>_execute_onexit_table, _initialize_onexit_table, _register_onexit_function
 
@@ -67,9 +68,9 @@ int _execute_onexit_table(
 
 В случае успеха возвращает 0. В противном случае возвращает отрицательное значение.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Эти функции представляют собой сведения о реализации инфраструктуры, используются для поддержки среды выполнения C и не должны вызываться напрямую из кода. Среда выполнения C использует *таблицу функций onexit* для представления последовательности функций `atexit`, зарегистрированных с помощью вызовов, `at_quick_exit`и. `_onexit` Таблица функций onexit содержит непрозрачные данные реализации среды выполнения C. Порядок и значения входящих в нее элементов данных могут изменяться. Внешний код проверять их не должен.
+Эти функции представляют собой сведения о реализации инфраструктуры, используются для поддержки среды выполнения C и не должны вызываться напрямую из кода. Среда выполнения C использует *таблицу функций onexit* для представления последовательности функций, зарегистрированных с помощью вызовов `atexit` , `at_quick_exit` и `_onexit` . Таблица функций onexit содержит непрозрачные данные реализации среды выполнения C. Порядок и значения входящих в нее элементов данных могут изменяться. Внешний код проверять их не должен.
 
 Функция `_initialize_onexit_table` возвращает таблицу функций onexit к исходным значениям.  Эту функцию необходимо вызывать до того, как таблица функций onexit будет передана в `_register_onexit_function` или `_execute_onexit_table`.
 
@@ -85,7 +86,7 @@ int _execute_onexit_table(
 |-------------|---------------------|
 |`_initialize_onexit_table function`, `_register_onexit_function`, `_execute_onexit_table`|C, C++: \<process.h>|
 
-Функции `_initialize_onexit_table`, `_register_onexit_function`и `_execute_onexit_table` являются специфичными для Microsoft. Сведения о совместимости см. в разделе [Совместимость](../c-runtime-library/compatibility.md).
+`_initialize_onexit_table`Функции, `_register_onexit_function` и `_execute_onexit_table` являются специфичными для Microsoft. Сведения о совместимости см. в разделе [Совместимость](../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>См. также раздел
 

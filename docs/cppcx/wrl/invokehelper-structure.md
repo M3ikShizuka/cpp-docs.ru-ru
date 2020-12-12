@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура InvokeHelper'
 title: InvokeHelper - структура
 ms.date: 10/18/2018
 ms.topic: reference
@@ -13,16 +14,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::Invoke method
 - Microsoft::WRL::Details::InvokeHelper, constructor
 ms.assetid: 555ad2bc-4dd6-4e65-a2e2-1242c395f0e5
-ms.openlocfilehash: 9cb4e166628a6b5e7671494446d467e73c9f8cc3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0b9bb8abb59cce5a3c25d795d0946ffbe88d0076
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371384"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299024"
 ---
 # <a name="invokehelper-structure"></a>InvokeHelper - структура
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -103,44 +104,44 @@ struct InvokeHelper<TDelegateInterface, TCallback, 9> :
 
 ### <a name="parameters"></a>Параметры
 
-*TDelegateИнтерфейс*<br/>
+*тделегатеинтерфаце*<br/>
 Тип интерфейса делегата.
 
-*TCallback*<br/>
+*ткаллбакк*<br/>
 Тип функции обработчика событий.
 
-*argCount*<br/>
-Количество аргументов в `InvokeHelper` специализации.
+*аргкаунт*<br/>
+Число аргументов в `InvokeHelper` специализации.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Обеспечивает реализацию метода `Invoke()` на основе указанного числа и типа аргументов.
+Предоставляет реализацию `Invoke()` метода на основе указанного числа и типа аргументов.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
 Имя     | Описание
 -------- | -----------------------------------------------------------------------------
-`Traits` | Синоним для класса, определяющий тип каждого аргумента обработчика событий.
+`Traits` | Синоним класса, определяющий тип каждого аргумента обработчика событий.
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-Имя                                        | Описание
+name                                        | Описание
 ------------------------------------------- | -------------------------------------------------------
-[InvokeHelper::InvokeHelper](#invokehelper) | Инициализирует новый экземпляр класса `InvokeHelper`.
+[InvokeHelper:: InvokeHelper](#invokehelper) | Инициализирует новый экземпляр класса `InvokeHelper`.
 
 ### <a name="public-methods"></a>Открытые методы
 
-Имя                            | Описание
+name                            | Описание
 ------------------------------- | -----------------------------------------------------------------------------------
-[InvokeHelper::Invoke](#invoke) | Вызывает обработчик анонса, подпись которого содержит указанное количество аргументов.
+[InvokeHelper:: Invoke](#invoke) | Вызывает обработчик событий, сигнатура которого содержит указанное число аргументов.
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 Имя                                 | Описание
 ------------------------------------ | ----------------------------------------------------------
-[InvokeHelper::callback_](#callback) | Представляет обработчик событий для вызова при возникновении события.
+[InvokeHelper:: callback_](#callback) | Представляет обработчик событий, вызываемый при возникновении события.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -148,27 +149,27 @@ struct InvokeHelper<TDelegateInterface, TCallback, 9> :
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** event.h
+**Заголовок:** Event. h
 
-**Пространство имен:** Microsoft:WRL::Details
+**Пространство имен:** Microsoft:: WRL::D состояния
 
-## <a name="invokehelpercallback_"></a><a name="callback"></a>InvokeHelper::callback_
+## <a name="invokehelpercallback_"></a><a name="callback"></a> InvokeHelper:: callback_
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ```cpp
 TCallback callback_;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Представляет обработчик событий для вызова при возникновении события.
+Представляет обработчик событий, вызываемый при возникновении события.
 
-Параметр `TCallback` шаблона определяет тип обработчика событий.
+`TCallback`Параметр шаблона задает тип обработчика событий.
 
-## <a name="invokehelperinvoke"></a><a name="invoke"></a>InvokeHelper::Invoke
+## <a name="invokehelperinvoke"></a><a name="invoke"></a> InvokeHelper:: Invoke
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ```cpp
 STDMETHOD(
@@ -234,15 +235,15 @@ STDMETHOD(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK в случае успеха; в противном случае, HRESULT, который описывает ошибку.
+S_OK в случае успеха; в противном случае возвращается значение HRESULT, описывающее ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вызывает обработчик анонса, подпись которого содержит указанное количество аргументов.
+Вызывает обработчик событий, сигнатура которого содержит указанное число аргументов.
 
-## <a name="invokehelperinvokehelper"></a><a name="invokehelper"></a>InvokeHelper::InvokeHelper
+## <a name="invokehelperinvokehelper"></a><a name="invokehelper"></a> InvokeHelper:: InvokeHelper
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ```cpp
 explicit InvokeHelper(
@@ -255,8 +256,8 @@ explicit InvokeHelper(
 *обратный вызов*<br/>
 Обработчик событий.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Инициализирует новый экземпляр класса `InvokeHelper`.
 
-Параметр `TCallback` шаблона определяет тип обработчика событий.
+`TCallback`Параметр шаблона задает тип обработчика событий.

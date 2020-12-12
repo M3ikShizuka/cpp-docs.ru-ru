@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о функции: make'
 title: Функция Make
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - Make function
 ms.assetid: 66704143-df99-4a95-904d-ed99607e1034
-ms.openlocfilehash: 0f2e81e3cd757214805817af2a355a93c1cfd096
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bb83c6c163440f911bc625a8646d1758442b25f6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220474"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298907"
 ---
 # <a name="make-function"></a>Функция Make
 
@@ -225,7 +226,7 @@ ComPtr<T> Make();
 
 `ComPtr<T>`Объект в случае успеха; в противном случае — значение **`nullptr`** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 См. статью [как создать экземпляры компонентов WRL напрямую](how-to-instantiate-wrl-components-directly.md) , чтобы узнать о различиях между этой функцией и [Microsoft:: WRL::D состояния:: MakeAndInitialize](makeandinitialize-function.md), а также в качестве примера.
 

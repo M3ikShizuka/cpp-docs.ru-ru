@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура IsBaseOfStrict'
 title: IsBaseOfStrict - структура
 ms.date: 10/03/2018
 ms.topic: reference
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::IsBaseOfStrict structure
 - Microsoft::WRL::Details::IsBaseOfStrict::value constant
 ms.assetid: 6fed7366-c8d4-4991-b4fb-43ed93f8e1bf
-ms.openlocfilehash: 11acb4c7162a17ff763a574c27c186061ae476a7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bcdab9c4b6b5a2ab108b59d3127c08b53589e16a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211532"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298959"
 ---
 # <a name="isbaseofstrict-structure"></a>IsBaseOfStrict - структура
 
@@ -38,7 +39,7 @@ struct IsBaseOfStrict<Base, Base>;
 *Производный*<br/>
 Производный тип.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Проверяет, является ли один тип базовым для другого.
 
@@ -62,7 +63,7 @@ struct IsBaseOfStrict<Base, Base>;
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 
-## <a name="isbaseofstrictvalue"></a><a name="value"></a>IsBaseOfStrict:: value
+## <a name="isbaseofstrictvalue"></a><a name="value"></a> IsBaseOfStrict:: value
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -70,8 +71,8 @@ struct IsBaseOfStrict<Base, Base>;
 static const bool value = __is_base_of(Base, Derived);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Указывает, является ли один тип базовым для другого.
 
-`value`имеет значение **`true`** , если тип `Base` является базовым классом типа `Derived` , в противном случае — значение **`false`** .
+`value` имеет значение **`true`** , если тип `Base` является базовым классом типа `Derived` , в противном случае — значение **`false`** .

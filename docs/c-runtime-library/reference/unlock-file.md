@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _unlock_file'
 title: _unlock_file
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - _unlock_file function
 - unlocking files
 ms.assetid: cf380a51-6d3a-4f38-bd64-2d4fb57b4369
-ms.openlocfilehash: ed79f66baebf71c89e537c8343779bef44ebfbb8
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 6b639ca178f9cb397e9ec14f383b952e94400e7c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909201"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299362"
 ---
 # <a name="_unlock_file"></a>_unlock_file
 
@@ -51,10 +52,10 @@ void _unlock_file(
 
 ### <a name="parameters"></a>Параметры
 
-*File*<br/>
+*файл*<br/>
 Дескриптор файла.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_unlock_file** разблокирует файл, указанный в *файле*. Снятие блокировки файла разрешает доступ к этому файлу других процессов. Эта функция не должна вызываться, если ранее в указателе *файла* не было вызвано **_lock_file** . Вызов **_unlock_file** для файла, который не заблокирован, может привести к взаимоблокировке. Пример см. в разделе [_lock_file](lock-file.md).
 
@@ -71,6 +72,6 @@ void _unlock_file(
 ## <a name="see-also"></a>См. также раздел
 
 [Обработка файлов](../../c-runtime-library/file-handling.md)<br/>
-[_creat, _wcreat](creat-wcreat.md)<br/>
+[Функция _creat, _wcreat](creat-wcreat.md)<br/>
 [_open, _wopen](open-wopen.md)<br/>
 [_lock_file](lock-file.md)<br/>

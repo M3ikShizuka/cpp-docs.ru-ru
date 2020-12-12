@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: tmpfile'
 title: tmpfile
 ms.date: 11/04/2016
 api_name:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - tmpfile function
 - temporary files, creating
 ms.assetid: c4a4dc24-70da-438d-ae4e-98352d88e375
-ms.openlocfilehash: f58c23050fe89f84f283c3784a7c0cee72637bf2
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 27760a7d1369a0292c6719667b8cb182ce7df815
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957542"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299518"
 ---
 # <a name="tmpfile"></a>tmpfile
 
@@ -47,13 +48,13 @@ FILE *tmpfile( void );
 
 В случае успеха **tmpfile** возвращает указатель потока. В противном случае возвращается **пустой** указатель.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Функция **tmpfile** создает временный файл и возвращает указатель на этот поток. Временный файл создается в корневом каталоге. Чтобы создать временный файл в каталоге, отличном от корневого, используйте [tmpnam_s](tempnam-wtempnam-tmpnam-wtmpnam.md) или [tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md) в сочетании с [fopen](fopen-wfopen.md).
 
 Если не удается открыть файл, **tmpfile** возвращает **пустой** указатель. Этот временный файл автоматически удаляется при закрытии файла, при завершении программы в обычном режиме или при вызове **_rmtmp** , предполагая, что текущий рабочий каталог не изменяется. Временный файл открывается в режиме **w + b** (двоичный для чтения и записи).
 
-Сбой может произойти при попытке более TMP_MAX (см. STDIO). H) вызывает метод с **tmpfile**.
+Сбой может произойти при попытке более TMP_MAX (см. STDIO. H) вызывает метод с **tmpfile**.
 
 ## <a name="requirements"></a>Требования
 
@@ -61,7 +62,7 @@ FILE *tmpfile( void );
 |-------------|---------------------|
 |**tmpfile**|\<stdio.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -102,7 +103,7 @@ Temporary file 3 was created
 3 temporary files deleted
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Потоковый ввод-вывод](../../c-runtime-library/stream-i-o.md)<br/>
 [_rmtmp](rmtmp.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о &lt; &gt; функциях valarray
 title: Функции &lt;valarray&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -40,16 +41,16 @@ helpviewer_keywords:
 - std::swap [C++]
 - std::tan [C++]
 - std::tanh [C++]
-ms.openlocfilehash: 12275f93c751b4d9ffafcae62621b251a8bc9bfc
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: c1e660c73abc34864a0acf1966f8bfd37b51d87e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79427611"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300402"
 ---
 # <a name="ltvalarraygt-functions"></a>Функции &lt;valarray&gt;
 
-## <a name="abs"></a>просто
+## <a name="abs"></a><a name="abs"></a> просто
 
 Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны абсолютному значению элементов входного valarray.
 
@@ -60,7 +61,7 @@ valarray<Type> abs(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Параметры
 
-*left*\
+*слева*\
 Входной объект valarray, элементы которого будут обработаны функцией-членом.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -104,7 +105,7 @@ The initial valarray is: 0 -1 -2 -3 4 5 6 7 8 .
 The absolute value of the initial valarray is: 0 1 2 3 4 5 6 7 8 .
 ```
 
-## <a name="acos"></a>ACOS
+## <a name="acos"></a><a name="acos"></a> ACOS
 
 Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны арккосинусу элементов входного valarray.
 
@@ -115,14 +116,14 @@ valarray<Type> acos(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Параметры
 
-*left*\
+*слева*\
 Входной объект valarray, элементы которого будут обработаны функцией-членом.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Массив valarray, каждый элемент которого равен арккосинусу соответствующего элемента входного объекта valarray.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращенные элементы указываются в радианах.
 
@@ -177,7 +178,7 @@ The arccosine of the initial valarray is:
          0  radians, which is            0  degrees
 ```
 
-## <a name="asin"></a>ASIN
+## <a name="asin"></a><a name="asin"></a> ASIN
 
 Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны арксинусу элементов входного valarray.
 
@@ -188,14 +189,14 @@ valarray<Type> asin(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Параметры
 
-*left*\
+*слева*\
 Входной объект valarray, элементы которого будут обработаны функцией-членом.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Массив valarray, каждый элемент которого равен арксинусу соответствующего элемента входного объекта valarray.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращенные элементы указываются в радианах.
 
@@ -250,7 +251,7 @@ The arcsine of the initial valarray is:
     1.5708  radians, which is           90  degrees
 ```
 
-## <a name="atan"></a>Atan
+## <a name="atan"></a><a name="atan"></a> Atan
 
 Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны арифметическому значению арктангенса элементов входного valarray.
 
@@ -261,14 +262,14 @@ valarray<Type> atan(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Параметры
 
-*left*\
+*слева*\
 Входной объект valarray, элементы которого будут обработаны функцией-членом.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Массив valarray, каждый элемент которого равен арктангенсу соответствующего элемента входного объекта valarray.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращенные элементы указываются в радианах.
 
@@ -326,7 +327,7 @@ The arcsine of the initial valarray is:
     1.5608  radians, which is      89.4271  degrees
 ```
 
-## <a name="atan2"></a>atan2
+## <a name="atan2"></a><a name="atan2"></a> atan2
 
 Возвращает valarray, элементы которого равны арктангенсу декартовых компонентов, заданных сочетанием констант и элементов массивов valarray.
 
@@ -343,23 +344,23 @@ valarray<Type> atan2(const Type& left, const valarray<Type>& right);
 
 ### <a name="parameters"></a>Параметры
 
-*left*\
+*слева*\
 Значения для координаты y для аргумента арктангенса предоставляются числовыми константами или входным объектом valarray.
 
-*справа*\
+*Правильно*\
 Значения для координаты x для аргумента арктангенса предоставляются числовыми константами или входным объектом valarray.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Объект valarray, элементы которого `I` равны арктангенсу.
 
-- `left` [ *I* ] / *_Righ*t [ *I* ] для первой функции шаблона.
+- `left` [ *I* ] / *_Righ* t [ *I* ] для первой функции шаблона.
 
-- `left` [ *I* ] / `right` для второй функции шаблона.
+- `left` [ *I* ]/ `right` для второй функции шаблона.
 
 - `left` / `right` [ *I* ] для третьей функции шаблона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращенные элементы указываются в радианах.
 
@@ -420,14 +421,14 @@ The atan2 ( y / x ) of the initial valarrays is:
  -0.785398  radians, which is          -45degrees
 ```
 
-## <a name="begin"></a>начале
+## <a name="begin"></a><a name="begin"></a> begin
 
 ```cpp
 template <class T> unspecified 1 begin(valarray<T>& v);
 template <class T> unspecified 2 begin(const valarray<T>& v);
 ```
 
-## <a name="cos"></a>COS
+## <a name="cos"></a><a name="cos"></a> COS
 
 Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны косинусу элементов входного valarray.
 
@@ -438,7 +439,7 @@ valarray<Type> cos(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Параметры
 
-*left*\
+*слева*\
 Входной объект valarray, элементы которого будут обработаны функцией-членом.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -504,7 +505,7 @@ The cosine of the initial valarray is:
 -1
 ```
 
-## <a name="cosh"></a>cosh
+## <a name="cosh"></a><a name="cosh"></a> cosh
 
 Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны гиперболическому косинусу элементов входного valarray.
 
@@ -515,14 +516,14 @@ valarray<Type> cosh(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Параметры
 
-*left*\
+*слева*\
 Входной объект valarray, элементы которого будут обработаны функцией-членом.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Массив valarray, каждый элемент которого равен гиперболическому косинусу соответствующего элемента входного объекта valarray.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Гиперболический косинус с точки зрения экспоненциальной функции определяется следующим образом:
 
@@ -587,14 +588,14 @@ The hyperbolic cosine of the initial valarray is:
 11.592
 ```
 
-## <a name="end"></a>конце
+## <a name="end"></a><a name="end"></a> end
 
 ```cpp
 template <class T> unspecified 1 end(valarray<T>& v);
 template <class T> unspecified 2 end(const valarray<T>& v);
 ```
 
-## <a name="exp"></a>расширением
+## <a name="exp"></a><a name="exp"></a> расширением
 
 Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны натуральной экспоненте элементов входного valarray.
 
@@ -605,7 +606,7 @@ valarray<Type> exp(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Параметры
 
-*left*\
+*слева*\
 Входной объект valarray, элементы которого будут обработаны функцией-членом.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -657,7 +658,7 @@ The natural exponential of the initial valarray is:
 22026.5
 ```
 
-## <a name="log"></a>Журналь
+## <a name="log"></a><a name="log"></a> Журналь
 
 Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны натуральному логарифму элементов входного valarray.
 
@@ -668,7 +669,7 @@ valarray<Type> log(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Параметры
 
-*left*\
+*слева*\
 Входной объект valarray, элементы которого будут обработаны функцией-членом.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -720,7 +721,7 @@ The natural logarithm of the initial valarray is:
 4.38203
 ```
 
-## <a name="log10"></a>LOG10
+## <a name="log10"></a><a name="log10"></a> LOG10
 
 Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны десятичному логарифму элементов входного valarray.
 
@@ -731,7 +732,7 @@ valarray<Type> log10(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Параметры
 
-*left*\
+*слева*\
 Входной объект valarray, элементы которого будут обработаны функцией-членом.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -785,7 +786,7 @@ The common logarithm of the initial valarray is:
 2
 ```
 
-## <a name="pow"></a>Pow
+## <a name="pow"></a><a name="pow"></a> Pow
 
 Обрабатывает элементы входных объектов valarray и констант, возвращая массив valarray, элементы которого равны основанию, заданному элементами входного valarray, или константу, возведенную в степень, заданную элементами входного valarray или константой.
 
@@ -811,10 +812,10 @@ pow(
 
 ### <a name="parameters"></a>Параметры
 
-*left*\
+*слева*\
 Входной объект valarray, элементы которого используются в качестве оснований для каждого элемента, который будет возведен в степень.
 
-*справа*\
+*Правильно*\
 Входной объект valarray, элементы которого используются в качестве степени для каждого элемента, который будет возведен в степень.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -827,7 +828,7 @@ pow(
 
 - `left`, возведенному в степень `right` [ *I* ], для третьей функции шаблона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если *Left* и *right* имеют разное число элементов, результат будет неопределенным.
 
@@ -882,7 +883,7 @@ n = 4   gives 256
 n = 5   gives 1024
 ```
 
-## <a name="sin"></a>Sin
+## <a name="sin"></a><a name="sin"></a> Sin
 
 Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны синусу элементов входного valarray.
 
@@ -893,7 +894,7 @@ valarray<Type> sin(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Параметры
 
-*left*\
+*слева*\
 Входной объект valarray, элементы которого будут обработаны функцией-членом.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -959,7 +960,7 @@ The sine of the initial valarray is:
 -2.06823e-013
 ```
 
-## <a name="sinh"></a>sinh
+## <a name="sinh"></a><a name="sinh"></a> sinh
 
 Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны гиперболическому синусу элементов входного valarray.
 
@@ -970,14 +971,14 @@ valarray<Type> sinh(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Параметры
 
-*left*\
+*слева*\
 Входной объект valarray, элементы которого будут обработаны функцией-членом.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Массив valarray, каждый элемент которого равен гиперболическому синусу соответствующего элемента входного объекта valarray.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Гиперболический синус с точки зрения экспоненциальной функции определяется следующим образом:
 
@@ -1042,7 +1043,7 @@ The hyperbolic sine of the initial valarray is:
 11.5487
 ```
 
-## <a name="sqrt"></a>МНИМ
+## <a name="sqrt"></a><a name="sqrt"></a> МНИМ
 
 Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны квадратному корню элементов входного valarray.
 
@@ -1053,7 +1054,7 @@ valarray<Type> sqrt(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Параметры
 
-*left*\
+*слева*\
 Входной объект valarray, элементы которого будут обработаны функцией-членом.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -1096,7 +1097,7 @@ The initial valarray is: ( 0 1 4 9 16 ).
 The square root of the initial valarray is: ( 0 1 2 3 4 ).
 ```
 
-## <a name="swap"></a>позиции
+## <a name="swap"></a><a name="swap"></a> позиции
 
 Меняет местами элементы двух объектов valarray.
 
@@ -1109,17 +1110,17 @@ void swap(
 
 ### <a name="parameters"></a>Параметры
 
-*left*\
+*слева*\
 Объект типа `valarray`.
 
-*справа*\
+*Правильно*\
 Объект типа `valarray`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Функция шаблона выполняет метод `left.swap(right)`.
+Эта функция шаблона выполняет `left.swap(right)`.
 
-## <a name="tan"></a> tan
+## <a name="tan"></a><a name="tan"></a> тангенс
 
 Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны тангенсу элементов входного valarray.
 
@@ -1130,7 +1131,7 @@ valarray<Type> tan(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Параметры
 
-*left*\
+*слева*\
 Входной объект valarray, элементы которого будут обработаны функцией-членом.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -1196,7 +1197,7 @@ The tangent of the initial valarray is:
 -9.6701e+012
 ```
 
-## <a name="tanh"></a>tanh
+## <a name="tanh"></a><a name="tanh"></a> tanh
 
 Обрабатывает элементы входного valarray, возвращая массив valarray, элементы которого равны гиперболическому тангенсу элементов входного valarray.
 
@@ -1207,14 +1208,14 @@ valarray<Type> tanh(const valarray<Type>& left);
 
 ### <a name="parameters"></a>Параметры
 
-*left*\
+*слева*\
 Входной объект valarray, элементы которого будут обработаны функцией-членом.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Массив valarray, каждый элемент которого равен гиперболическому косинусу соответствующего элемента входного объекта valarray.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Гиперболический тангенс с точки зрения экспоненциальной функции определяется следующим образом:
 

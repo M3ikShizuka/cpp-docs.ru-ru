@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CPictureHolder Class'
 title: Класс CPictureHolder
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,16 +29,16 @@ helpviewer_keywords:
 - CPictureHolder [MFC], SetPictureDispatch
 - CPictureHolder [MFC], m_pPict
 ms.assetid: a4f59775-704a-41dd-b5bd-2e531c95127a
-ms.openlocfilehash: edb93b05c1187d2c78f4c1120ee76282167c9b49
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 47eacb66191e21b300aaa0d06bc23155fabaf651
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753594"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301481"
 ---
 # <a name="cpictureholder-class"></a>Класс CPictureHolder
 
-Реализует свойство Picture, которое позволяет пользователю отображать изображение в элементе управления.
+Реализует свойство изображения, которое позволяет пользователю отображать изображение в элементе управления.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -45,41 +46,41 @@ ms.locfileid: "81753594"
 class CPictureHolder
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CPictureHolder::CPictureHolder](#cpictureholder)|Формирует объект `CPictureHolder`.|
+|[CPictureHolder:: CPictureHolder](#cpictureholder)|Формирует объект `CPictureHolder`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CPictureHolder::CreateEmpty](#createempty)|Создает пустой объект `CPictureHolder`.|
-|[CPictureHolder::CreateFromBitmap](#createfrombitmap)|Создает `CPictureHolder` объект из битной карты.|
-|[CPictureHolder::CreateFromIcon](#createfromicon)|Создает `CPictureHolder` объект из значка.|
-|[CPictureHolder::CreateFromMetafile](#createfrommetafile)|Создает `CPictureHolder` объект из метафайла.|
-|[CPictureHolder::GetDisplayString](#getdisplaystring)|Извлекает строку, отображаемую в браузере свойств контейнера управления.|
-|[CPictureHolder::GetPictureDispatch](#getpicturedispatch)|Возвращает `CPictureHolder` `IDispatch` интерфейс объекта.|
-|[CPictureHolder::GetType](#gettype)|Сообщает, `CPictureHolder` является ли объект битовой картой, метафайлом или иконой.|
-|[CPictureHolder::Render](#render)|Рендерс изображение.|
-|[CPictureHolder::SetPictureDispatch](#setpicturedispatch)|Устанавливает `CPictureHolder` `IDispatch` интерфейс объекта.|
+|[CPictureHolder:: Креатимпти](#createempty)|Создает пустой объект `CPictureHolder`.|
+|[CPictureHolder:: Креатефромбитмап](#createfrombitmap)|Создает `CPictureHolder` объект из точечного рисунка.|
+|[CPictureHolder:: Креатефромикон](#createfromicon)|Создает `CPictureHolder` объект из значка.|
+|[CPictureHolder:: Креатефромметафиле](#createfrommetafile)|Создает `CPictureHolder` объект из метафайла.|
+|[CPictureHolder:: Жетдисплайстринг](#getdisplaystring)|Извлекает строку, отображаемую в обозревателе свойств контейнера элемента управления.|
+|[CPictureHolder:: Жетпиктуредиспатч](#getpicturedispatch)|Возвращает `CPictureHolder` `IDispatch` интерфейс объекта.|
+|[CPictureHolder:: GetType](#gettype)|Указывает `CPictureHolder` , является ли объект точечным рисунком, метафайлом или значком.|
+|[CPictureHolder:: Render](#render)|Визуализирует изображение.|
+|[CPictureHolder:: Сетпиктуредиспатч](#setpicturedispatch)|Задает `CPictureHolder` `IDispatch` интерфейс объекта.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CPictureHolder::m_pPict](#m_ppict)|Указатель на объект изображения.|
+|[CPictureHolder:: m_pPict](#m_ppict)|Указатель на объект изображения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CPictureHolder`не имеет базового класса.
+`CPictureHolder` не имеет базового класса.
 
-С свойством stock Picture разработчик может указать битную карту, значок или метафайл для отображения.
+С помощью свойства «изображение акции» разработчик может указать точечный рисунок, значок или метафайл для вывода.
 
-Для получения информации о создании [MFC ActiveX Controls: Using Pictures in an ActiveX Control](../../mfc/mfc-activex-controls-using-pictures-in-an-activex-control.md)пользовательских свойств изображения, см.
+Сведения о создании настраиваемых свойств рисунка см. в статье [элементы управления ActiveX в MFC. Использование рисунков в элементе управления ActiveX](../../mfc/mfc-activex-controls-using-pictures-in-an-activex-control.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -87,9 +88,9 @@ class CPictureHolder
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxctl.h
+**Заголовок:** afxctl. h
 
-## <a name="cpictureholdercpictureholder"></a><a name="cpictureholder"></a>CPictureHolder::CPictureHolder
+## <a name="cpictureholdercpictureholder"></a><a name="cpictureholder"></a> CPictureHolder:: CPictureHolder
 
 Формирует объект `CPictureHolder`.
 
@@ -97,9 +98,9 @@ class CPictureHolder
 CPictureHolder();
 ```
 
-## <a name="cpictureholdercreateempty"></a><a name="createempty"></a>CPictureHolder::CreateEmpty
+## <a name="cpictureholdercreateempty"></a><a name="createempty"></a> CPictureHolder:: Креатимпти
 
-Создает пустой `CPictureHolder` объект и соединяет `IPicture` его с интерфейсом.
+Создает пустой `CPictureHolder` объект и подключает его к `IPicture` интерфейсу.
 
 ```
 BOOL CreateEmpty();
@@ -107,11 +108,11 @@ BOOL CreateEmpty();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если объект успешно создан; в противном случае 0.
+Ненулевое значение, если объект успешно создан; в противном случае — 0.
 
-## <a name="cpictureholdercreatefrombitmap"></a><a name="createfrombitmap"></a>CPictureHolder::CreateFromBitmap
+## <a name="cpictureholdercreatefrombitmap"></a><a name="createfrombitmap"></a> CPictureHolder:: Креатефромбитмап
 
-Использует бит-карту для инициализации объекта изображения в `CPictureHolder`.
+Использует точечный рисунок для инициализации объекта изображения в `CPictureHolder` .
 
 ```
 BOOL CreateFromBitmap(
@@ -130,35 +131,35 @@ BOOL CreateFromBitmap(
 
 ### <a name="parameters"></a>Параметры
 
-*idРесурс*<br/>
-Идентификатор ресурса ресурса ресурса bitmap.
+*идресаурце*<br/>
+Идентификатор ресурса точечного рисунка.
 
-*pBitmap*<br/>
-Указатель на объект [CBitmap.](../../mfc/reference/cbitmap-class.md)
+*пбитмап*<br/>
+Указатель на объект [CBitmap](../../mfc/reference/cbitmap-class.md) .
 
-*pPal*<br/>
-Указатель на объект [CPalette.](../../mfc/reference/cpalette-class.md)
+*ппал*<br/>
+Указатель на объект [кпалетте](../../mfc/reference/cpalette-class.md) .
 
-*bTransferВладение*<br/>
-Указывает, будет ли объект изображения владельцем бит-карты и объектов палитры.
+*бтрансферовнершип*<br/>
+Указывает, будет ли объект изображения становиться владельцем объектов Bitmap и Palette.
 
-*Hbm*<br/>
-Обработка к биткарте, `CPictureHolder` из которой создается объект.
+*хбм*<br/>
+Обработчик для растрового изображения, из которого `CPictureHolder` создается объект.
 
-*hpal*<br/>
-Обработка к палитре, используемой для визуализации битной карты.
+*хпал*<br/>
+Обработка палитры, используемой для отрисовки точечного рисунка.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если объект успешно создан; в противном случае 0.
+Ненулевое значение, если объект успешно создан; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если *bTransferOwnership* является правдой, абонент не должен использовать битmap или объект палитры в любом случае после этого вызова возвращается. Если *bTransferOwnership* является FALSE, абонент несет ответственность за обеспечение того, чтобы битовая карта и объекты палитры оставались действительными в течение всего срока службы объекта изображения.
+Если *бтрансферовнершип* имеет значение true, вызывающий объект не должен использовать растровое изображение или объекты палитры каким-либо образом после возврата этого вызова. Если *бтрансферовнершип* имеет значение false, вызывающий объект отвечает за обеспечение допустимости объектов Bitmap и Palette в течение времени существования объекта изображения.
 
-## <a name="cpictureholdercreatefromicon"></a><a name="createfromicon"></a>CPictureHolder::CreateFromIcon
+## <a name="cpictureholdercreatefromicon"></a><a name="createfromicon"></a> CPictureHolder:: Креатефромикон
 
-Использует значок для инициализации объекта изображения в `CPictureHolder`.
+Использует значок для инициализации объекта изображения в `CPictureHolder` .
 
 ```
 BOOL CreateFromIcon(
@@ -171,26 +172,26 @@ BOOL CreateFromIcon(
 
 ### <a name="parameters"></a>Параметры
 
-*idРесурс*<br/>
-Идентификатор ресурса ресурса ресурса bitmap.
+*идресаурце*<br/>
+Идентификатор ресурса точечного рисунка.
 
 *hIcon*<br/>
-Обработка к значку, `CPictureHolder` из которой создается объект.
+Обработчик для значка, из которого `CPictureHolder` создается объект.
 
-*bTransferВладение*<br/>
-Указывает, будет ли объект изображения владельцем объекта иконы.
+*бтрансферовнершип*<br/>
+Указывает, будет ли объект изображения становиться владельцем объекта значка.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если объект успешно создан; в противном случае 0.
+Ненулевое значение, если объект успешно создан; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если *bTransferOwnership* является правдой, абонент не должен использовать объект значка в любом случае после этого вызова возвращается. Если *bTransferOwnership* является FALSE, абонент несет ответственность за обеспечение того, чтобы объект значка оставался действительным в течение всего срока службы объекта изображения.
+Если *бтрансферовнершип* имеет значение true, вызывающая сторона не должна использовать объект Icon каким-либо образом после возврата этого вызова. Если *бтрансферовнершип* имеет значение false, то вызывающая сторона несет ответственность за обеспечение того, что объект значка остается действительным в течение времени существования объекта изображения.
 
-## <a name="cpictureholdercreatefrommetafile"></a><a name="createfrommetafile"></a>CPictureHolder::CreateFromMetafile
+## <a name="cpictureholdercreatefrommetafile"></a><a name="createfrommetafile"></a> CPictureHolder:: Креатефромметафиле
 
-Использует метафайл для инициализации `CPictureHolder`объекта изображения в .
+Использует метафайл для инициализации объекта изображения в `CPictureHolder` .
 
 ```
 BOOL CreateFromMetafile(
@@ -202,29 +203,29 @@ BOOL CreateFromMetafile(
 
 ### <a name="parameters"></a>Параметры
 
-*Hmf*<br/>
-Обработка метафайла, используемого `CPictureHolder` для создания объекта.
+*хмф*<br/>
+Маркер для метафайла, используемого для создания `CPictureHolder` объекта.
 
-*xExt*<br/>
-X степень изображения.
+*ксекст*<br/>
+Экстент изображения на X.
 
-*yExt*<br/>
-Y степень картины.
+*екст*<br/>
+Область Y изображения.
 
-*bTransferВладение*<br/>
-Указывает, будет ли объект изображения владельцем метафайлного объекта.
+*бтрансферовнершип*<br/>
+Указывает, будет ли объект изображения становиться владельцем объекта Metafile.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если объект успешно создан; в противном случае 0.
+Ненулевое значение, если объект успешно создан; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если *bTransferOwnership* является правдой, абонент не должен использовать объект метафайла в любом случае после этого вызова возвращается. Если *bTransferOwnership* является FALSE, абонент несет ответственность за обеспечение того, чтобы объект метафайла оставался действительным в течение всего срока службы объекта изображения.
+Если *бтрансферовнершип* имеет значение true, то вызывающая сторона не должна использовать объект Metafile каким-либо образом после возврата этого вызова. Если *бтрансферовнершип* имеет значение false, вызывающий объект отвечает за обеспечение допустимости объекта Metafile в течение времени существования объекта изображения.
 
-## <a name="cpictureholdergetdisplaystring"></a><a name="getdisplaystring"></a>CPictureHolder::GetDisplayString
+## <a name="cpictureholdergetdisplaystring"></a><a name="getdisplaystring"></a> CPictureHolder:: Жетдисплайстринг
 
-Извлекает строку, отображаемую в браузере свойств контейнера.
+Извлекает строку, отображаемую в обозревателе свойств контейнера.
 
 ```
 BOOL GetDisplayString(CString& strValue);
@@ -233,15 +234,15 @@ BOOL GetDisplayString(CString& strValue);
 ### <a name="parameters"></a>Параметры
 
 *strValue*<br/>
-Ссылка на [CString,](../../atl-mfc-shared/reference/cstringt-class.md) которая должна удерживать строку дисплея.
+Ссылка на [CString](../../atl-mfc-shared/reference/cstringt-class.md) , который будет содержать отображаемую строку.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если строка успешно извлечена; в противном случае 0.
+Ненулевое значение, если строка успешно получена; в противном случае — 0.
 
-## <a name="cpictureholdergetpicturedispatch"></a><a name="getpicturedispatch"></a>CPictureHolder::GetPictureDispatch
+## <a name="cpictureholdergetpicturedispatch"></a><a name="getpicturedispatch"></a> CPictureHolder:: Жетпиктуредиспатч
 
-Эта функция возвращает указатель `CPictureHolder` в `IPictureDisp` интерфейс объекта.
+Эта функция возвращает указатель на `CPictureHolder` `IPictureDisp` интерфейс объекта.
 
 ```
 LPPICTUREDISP GetPictureDispatch();
@@ -249,15 +250,15 @@ LPPICTUREDISP GetPictureDispatch();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель `IPictureDisp` на `CPictureHolder` интерфейс объекта.
+Указатель на `CPictureHolder` `IPictureDisp` интерфейс объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Звонящее `Release` должно вызвать этот указатель, когда он закончил с ним.
+Вызывающий объект должен вызвать `Release` по этому указателю, когда он завершится с ним.
 
-## <a name="cpictureholdergettype"></a><a name="gettype"></a>CPictureHolder::GetType
+## <a name="cpictureholdergettype"></a><a name="gettype"></a> CPictureHolder:: GetType
 
-Указывает, является ли изображение битовой картой, метафайлом или иконой.
+Указывает, является ли изображение точечным рисунком, метафайлом или значком.
 
 ```
 short GetType();
@@ -265,27 +266,27 @@ short GetType();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Значение, указывающее тип изображения. Возможные значения и их значения таковы:
+Значение типа, указывающее тип изображения. Возможны следующие значения и их значение.
 
 |Значение|Значение|
 |-----------|-------------|
-|PICTYPE_UNINITIALIZED|`CPictureHolder`объект унифицирован.|
-|PICTYPE_NONE|`CPictureHolder`объект пуст.|
-|PICTYPE_BITMAP|Изображение бит-карта.|
-|PICTYPE_METAFILE|Изображение - это метафил.|
-|PICTYPE_ICON|Изображение является иконой.|
+|PICTYPE_UNINITIALIZED|`CPictureHolder` Объект — унититиализед.|
+|PICTYPE_NONE|`CPictureHolder` Объект пуст.|
+|PICTYPE_BITMAP|Рисунок является точечным рисунком.|
+|PICTYPE_METAFILE|Рисунок является метафайлом.|
+|PICTYPE_ICON|Изображение является значком.|
 
-## <a name="cpictureholderm_ppict"></a><a name="m_ppict"></a>CPictureHolder::m_pPict
+## <a name="cpictureholderm_ppict"></a><a name="m_ppict"></a> CPictureHolder:: m_pPict
 
-Указатель `IPicture` на `CPictureHolder` интерфейс объекта.
+Указатель на `CPictureHolder` `IPicture` интерфейс объекта.
 
 ```
 LPPICTURE m_pPict;
 ```
 
-## <a name="cpictureholderrender"></a><a name="render"></a>CPictureHolder::Render
+## <a name="cpictureholderrender"></a><a name="render"></a> CPictureHolder:: Render
 
-Renders изображение в прямоугольнике, на который ссылается *rcRender*.
+Визуализирует изображение в прямоугольнике, на который ссылается *ркрендер*.
 
 ```cpp
 void Render(
@@ -296,18 +297,18 @@ void Render(
 
 ### <a name="parameters"></a>Параметры
 
-*pDC*<br/>
-Указатель на контекст отображения, в котором отображается изображение.
+*Хозяин*<br/>
+Указатель на контекст отображения, в котором будет отображаться изображение.
 
-*rcRender*<br/>
-Прямоугольник, в котором изображение должно быть отрисовано.
+*ркрендер*<br/>
+Прямоугольник, в котором будет отображаться изображение.
 
-*rcWBounds*<br/>
-Прямоугольник, представляющий ограничивающий прямоугольник объекта, рендеринга изображения. Для элемента управления этот прямоугольник представляет собой параметр *rcBounds,* передаваемый переопределением [COleControl::OnDraw](../../mfc/reference/colecontrol-class.md#ondraw).
+*рквбаундс*<br/>
+Прямоугольник, представляющий ограничивающий прямоугольник объекта, который подготовит к просмотру изображение. Для элемента управления этот прямоугольник является параметром *ркбаундс* , передаваемым переопределению [COleControl:: OnDraw](../../mfc/reference/colecontrol-class.md#ondraw).
 
-## <a name="cpictureholdersetpicturedispatch"></a><a name="setpicturedispatch"></a>CPictureHolder::SetPictureDispatch
+## <a name="cpictureholdersetpicturedispatch"></a><a name="setpicturedispatch"></a> CPictureHolder:: Сетпиктуредиспатч
 
-Подключает `CPictureHolder` объект `IPictureDisp` к интерфейсу.
+Подключает `CPictureHolder` объект к `IPictureDisp` интерфейсу.
 
 ```cpp
 void SetPictureDispatch(LPPICTUREDISP pDisp);
@@ -315,10 +316,10 @@ void SetPictureDispatch(LPPICTUREDISP pDisp);
 
 ### <a name="parameters"></a>Параметры
 
-*pDisp*<br/>
-Указатель на `IPictureDisp` новый интерфейс.
+*пдисп*<br/>
+Указатель на новый `IPictureDisp` интерфейс.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
-[Класс CFontHolder](../../mfc/reference/cfontholder-class.md)
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
+[Класс Кфонсолдер](../../mfc/reference/cfontholder-class.md)

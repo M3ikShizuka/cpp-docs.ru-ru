@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _lsearch_s'
 title: _lsearch_s
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - _lsearch_s function
 - lsearch_s function
 ms.assetid: d2db0635-be7a-4799-8660-255f14450882
-ms.openlocfilehash: d8c421eb3c7a6a617ce073cbf5f36416294c1874
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: fdc3d8011dac00cd8d19fe414c2ae1aa78120eee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920446"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299960"
 ---
 # <a name="_lsearch_s"></a>_lsearch_s
 
@@ -87,12 +88,12 @@ void *_lsearch_s(
 
 |*key*|*base*|*равенств*|*number*|*size*|**errno**|
 |-----------|------------|---------------|-----------|------------|-------------|
-|**ЗАКАНЧИВАЮЩ**|any|any|any|any|**еинвал**|
-|any|**ЗАКАНЧИВАЮЩ**|any|!= 0|any|**еинвал**|
+|**NULL**|any|any|any|any|**еинвал**|
+|any|**NULL**|any|!= 0|any|**еинвал**|
 |any|any|any|any|нуль|**еинвал**|
-|any|any|**ЗАКАНЧИВАЮЩ**|любой|any|**еинвал**|
+|any|any|**NULL**|любой|any|**еинвал**|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_lsearch_s** выполняет линейный поиск *ключа* значения в массиве *числовых* элементов, каждый из которых имеет *ширину* в байтах. В отличие от **bsearch_s**, **_lsearch_s** не требует сортировки массива. Если *ключ* не найден, **_lsearch_s** добавляет его в конец массива и увеличивает *число*.
 

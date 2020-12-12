@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CProgressCtrl Class'
 title: Класс CProgressCtrl
 ms.date: 11/04/2016
 f1_keywords:
@@ -42,12 +43,12 @@ helpviewer_keywords:
 - CProgressCtrl [MFC], SetStep
 - CProgressCtrl [MFC], StepIt
 ms.assetid: 222630f4-1598-4026-8198-51649b1192ab
-ms.openlocfilehash: eda19ca2b94978201806e60d2ae8399e00e13f1f
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: f5bd1bcae041d6bd61b715275b232fc5536cba2f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561522"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301416"
 ---
 # <a name="cprogressctrl-class"></a>Класс CProgressCtrl
 
@@ -59,7 +60,7 @@ ms.locfileid: "88561522"
 class CProgressCtrl : public CWnd
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -89,7 +90,7 @@ class CProgressCtrl : public CWnd
 |[CProgressCtrl:: Сетстеп](#setstep)|Задает шаг приращения для элемента управления "индикатор выполнения".|
 |[CProgressCtrl:: Степит](#stepit)|Изменяет текущую позицию элемента управления "индикатор выполнения" на шаг шага (см. [сетстеп](#setstep)) и перерисовывает линию, чтобы отразить новую позицию.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Элемент управления "индикатор выполнения" — это окно, которое приложение может использовать для указания хода выполнения длительной операции. Он состоит из прямоугольника, который постепенно заполняется слева направо, с цветом выделения системы в ходе выполнения операции.
 
@@ -119,7 +120,7 @@ class CProgressCtrl : public CWnd
 CProgressCtrl();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 После создания `CProgressCtrl` объекта вызовите метод, `CProgressCtrl::Create` чтобы создать элемент управления "индикатор выполнения".
 
@@ -161,7 +162,7 @@ virtual BOOL Create(
 
 Значение TRUE, если `CProgressCtrl` объект успешно создан; в противном случае — значение false.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `CProgressCtrl`Объект создается в два этапа. Сначала вызовите конструктор, который создает `CProgressCtrl` объект, а затем вызовите `Create` , который создает элемент управления "индикатор выполнения".
 
@@ -203,7 +204,7 @@ virtual BOOL CreateEx(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте `CreateEx` вместо [CREATE](#create) , чтобы применить расширенные стили Windows, заданные **WS_EX_** в расширенном стиле Windows.
 
@@ -219,7 +220,7 @@ COLORREF GetBarColor() const;
 
 Цвет текущего индикатора выполнения, представленный в виде значения [COLORREF](/windows/win32/gdi/colorref) , или CLR_DEFAULT, если цвет панели индикаторов выполнения является цветом по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [PBM_GETBARCOLOR](/windows/win32/Controls/pbm-getbarcolor) сообщение, описанное в Windows SDK.
 
@@ -235,7 +236,7 @@ COLORREF GetBkColor() const;
 
 Цвет фона текущего индикатора выполнения, представленный в виде значения [COLORREF](/windows/win32/gdi/colorref) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [PBM_GETBKCOLOR](/windows/win32/Controls/pbm-getbkcolor) сообщение, описанное в Windows SDK.
 
@@ -251,7 +252,7 @@ int GetPos();
 
 Расположение элемента управления "индикатор выполнения".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Положение элемента управления "индикатор выполнения" не является физическим расположением на экране, а находится между верхним и нижним диапазонами, указанными в [SetRange](#setrange).
 
@@ -277,9 +278,9 @@ void GetRange(
 *нуппер*<br/>
 Ссылка на целое число, получающее верхний предел элемента управления "индикатор выполнения".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Эта функция копирует значения нижнего и верхнего пределов в целые числа, на которые ссылаются *нловер* и *нуппер*соответственно.
+Эта функция копирует значения нижнего и верхнего пределов в целые числа, на которые ссылаются *нловер* и *нуппер* соответственно.
 
 ### <a name="example"></a>Пример
 
@@ -300,10 +301,10 @@ int GetState() const;
 |Значение|Состояние|
 |-----------|-----------|
 |PBST_NORMAL|Выполняется|
-|PBST_ERROR|Error|
+|PBST_ERROR|Ошибка|
 |PBST_PAUSED|Пауза|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [PBM_GETSTATE](/windows/win32/Controls/pbm-getstate) сообщение, описанное в Windows SDK.
 
@@ -331,7 +332,7 @@ int GetStep() const;
 
 Шаг приращения индикатора выполнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Шаг приращения — это величина, на которую вызов [CProgressCtrl:: степит](#stepit) увеличивает текущее расположение индикатора выполнения.
 
@@ -387,7 +388,7 @@ COLORREF SetBarColor(COLORREF clrBar);
 
 Предыдущий цвет индикатора хода выполнения, представленный в виде значения [COLORREF](/windows/win32/gdi/colorref) , или CLR_DEFAULT, если цвет индикатора выполнения является цветом по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `SetBarColor`Метод задает цвет индикатора выполнения только в том случае, если [Тема](/windows/win32/Controls/visual-styles-overview) Windows Vista не действует.
 
@@ -448,7 +449,7 @@ BOOL SetMarquee(
 
 Этот метод всегда возвращает значение TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если включен режим "бегущая строка", индикатор выполнения анимируется и прокручивается как знак в области театра.
 
@@ -483,7 +484,7 @@ int SetPos(int nPos);
 
 Предыдущее расположение элемента управления "индикатор выполнения".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Положение элемента управления "индикатор выполнения" не является физическим расположением на экране, а находится между верхним и нижним диапазонами, указанными в [SetRange](#setrange).
 
@@ -513,7 +514,7 @@ void SetRange32(
 *нуппер*<br/>
 Задает верхний предел диапазона (по умолчанию — 100).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член `SetRange32` задает 32-разрядный диапазон для элемента управления progress.
 
@@ -542,7 +543,7 @@ int SetState(int iState);
 
 Предыдущее состояние текущего элемента управления "Индикатор выполнения".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [PBM_SETSTATE](/windows/win32/Controls/pbm-setstate) сообщение, описанное в Windows SDK.
 
@@ -575,7 +576,7 @@ int SetStep(int nStep);
 
 Шаг приращения предыдущего шага.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Шаг приращения — это величина, на которую вызов `CProgressCtrl::StepIt` увеличивает текущее расположение индикатора выполнения.
 
@@ -597,7 +598,7 @@ int StepIt();
 
 Предыдущее расположение элемента управления "индикатор выполнения".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Шаг приращения задается `CProgressCtrl::SetStep` функцией-членом.
 
@@ -605,7 +606,7 @@ int StepIt();
 
 [!code-cpp[NVC_MFC_CProgressCtrl#10](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_16.cpp)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Пример CMNCTRL2 для MFC](../../overview/visual-cpp-samples.md)<br/>
 [CWnd, класс](../../mfc/reference/cwnd-class.md)<br/>

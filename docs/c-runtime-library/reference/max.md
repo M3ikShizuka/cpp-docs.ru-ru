@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __max'
 title: __max
 ms.date: 04/05/2018
 api_name:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - maximum macro
 - __max macro
 ms.assetid: 05c936f6-0e22-45d6-a58d-4bc102e9dae2
-ms.openlocfilehash: 4cdfd99ec344cd357900d76dfc7f9400046e448a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 709bbb7aee48e65fdd3feb21eb1984135faae2f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80170193"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299657"
 ---
 # <a name="__max"></a>__max
 
@@ -52,13 +53,13 @@ ms.locfileid: "80170193"
 
 **__max** возвращает больший из своих аргументов.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Макрос **__max** сравнивает два значения и возвращает значение больше единицы. Аргументы могут быть любого числового типа данных со знаком или без знака. Оба аргумента и возвращаемое значение должны принадлежать к одному типу данных.
 
-Возвращаемый аргумент вычисляется дважды в макросе. Это может привести к непредвиденным результатам, если аргумент представляет собой выражение, изменяющее его значение при вычислении, например `*p++`.
+Возвращаемый аргумент вычисляется дважды в макросе. Это может привести к непредвиденным результатам, если аргумент представляет собой выражение, изменяющее его значение при вычислении, например `*p++` .
 
-## <a name="requirements"></a>Требования
+## <a name="requirements"></a>Requirements (Требования)
 
 |Макрос|Обязательный заголовок|
 |-------------|---------------------|
@@ -70,5 +71,5 @@ ms.locfileid: "80170193"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Поддержка чисел с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
 [__min](min.md)<br/>

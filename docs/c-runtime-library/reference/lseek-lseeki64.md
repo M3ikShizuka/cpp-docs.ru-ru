@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _lseek, _lseeki64'
 title: _lseek, _lseeki64
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - file pointers [C++], moving
 - seek file pointers
 ms.assetid: aba8a768-d40e-48c3-b38e-473dbd782f93
-ms.openlocfilehash: b99793c7d3f16eceec20c90f29824bca8321fb12
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 5ac536a0f1388f8d664aa6721900256da368d652
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911306"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97299973"
 ---
 # <a name="_lseek-_lseeki64"></a>_lseek, _lseeki64
 
@@ -78,7 +79,7 @@ __int64 _lseeki64(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_lseek** перемещает указатель на файл, связанный с *демоном* , в новое расположение, которое *смещается* в байтах с *начала*. Следующая операция в файле выполняется в новом местоположении. Аргумент *origin* должен быть одной из следующих констант, определенных в Stdio.h.
 
@@ -177,6 +178,6 @@ Position for end of file seek = 57
 
 ## <a name="see-also"></a>См. также
 
-[Низкоуровневый ввод-вывод](../../c-runtime-library/low-level-i-o.md)<br/>
+[Низкоуровневые операции ввода-вывода](../../c-runtime-library/low-level-i-o.md)<br/>
 [fseek, _fseeki64](fseek-fseeki64.md)<br/>
 [_tell, _telli64](tell-telli64.md)<br/>

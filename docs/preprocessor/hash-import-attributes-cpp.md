@@ -1,36 +1,37 @@
 ---
+description: 'Дополнительные сведения: атрибуты #import (C++)'
 title: '#Атрибуты import (C++)'
 ms.date: 08/29/2019
 helpviewer_keywords:
 - '#import directive, attributes'
 ms.assetid: 2a5085e3-82ee-4f83-892b-0aa6cc13863b
-ms.openlocfilehash: fc2af69025d47a9ea6cea0e2c9e1423151b01606
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 87719ba549efab4e0acf13d7e957c6841900d5fc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80215297"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300458"
 ---
 # <a name="import-attributes-c"></a>атрибуты #import (C++)
 
-Содержит ссылки на атрибуты, используемые с директивой `#import`.
+Предоставляет ссылки на атрибуты, используемые с `#import` директивой.
 
 **Блок, относящийся только к системам Microsoft**
 
-Для директивы `#import` доступны следующие атрибуты.
+Для директивы доступны следующие атрибуты `#import` .
 
-|attribute|Description|
+|Атрибут|Описание|
 |---------------|-----------------|
 |[auto_rename](../preprocessor/auto-rename.md)|Переименовывает зарезервированные слова C++ путем добавления двух знаков подчеркивания (__) к именам переменных, чтобы разрешить потенциальные конфликты имен.|
 |[auto_search](../preprocessor/auto-search.md)|Указывает, что если на библиотеку типов ссылаются при помощи директивы #import, и при этом она сама ссылается на другую библиотеку типов, то компилятор может неявным образом выполнить директиву #import и для второй библиотеки типов.|
 |[embedded_idl](../preprocessor/embedded-idl.md)|Указывает, что библиотека типов записывается в файл .tlh с сохранением кода, созданного с атрибутами.|
-|[exclude](../preprocessor/exclude-hash-import.md)|Исключает элементы из создаваемых файлов заголовка библиотеки типов.|
+|[запрет](../preprocessor/exclude-hash-import.md)|Исключает элементы из создаваемых файлов заголовка библиотеки типов.|
 |[high_method_prefix](../preprocessor/high-method-prefix.md)|Задает префикс, используемый при именовании высокоуровневых свойств и методов.|
 |[high_property_prefixes](../preprocessor/high-property-prefixes.md)|Задает другие префиксы для трех методов свойств.|
 |[implementation_only](../preprocessor/implementation-only.md)|Отключает создание файла заголовка .tlh (основного файла заголовка).|
-|[include()](../preprocessor/include-parens.md)|Отключает автоматическое исключение.|
+|[включить ()](../preprocessor/include-parens.md)|Отключает автоматическое исключение.|
 |[inject_statement](../preprocessor/inject-statement.md)|Вставляет свой аргумент как исходный текст в заголовок библиотеки типов.|
-|[named_guids](../preprocessor/named-guids.md)|Указывает компилятору определить и инициализировать переменные GUID в старом стиле в форме `LIBID_MyLib`, `CLSID_MyCoClass`, `IID_MyInterface`и `DIID_MyDispInterface`.|
+|[named_guids](../preprocessor/named-guids.md)|Указывает компилятору определить и инициализировать переменные GUID в старом стиле, форме, `LIBID_MyLib` `CLSID_MyCoClass` `IID_MyInterface` и `DIID_MyDispInterface` .|
 |[no_auto_exclude](../preprocessor/no-auto-exclude.md)|Отключает автоматическое исключение.|
 |[no_dual_interfaces](../preprocessor/no-dual-interfaces.md)|Изменяет способ, которым компилятор создает функции оболочки для методов сдвоенных интерфейсов.|
 |[no_implementation](../preprocessor/no-implementation.md)|Отключает создание заголовка .tli, который содержит реализацию функций-членов оболочки.|
@@ -50,6 +51,6 @@ ms.locfileid: "80215297"
 
 **Завершение блока, относящегося только к системам Майкрософт**
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-[Директива #import](../preprocessor/hash-import-directive-cpp.md)
+[#import - директива](../preprocessor/hash-import-directive-cpp.md)

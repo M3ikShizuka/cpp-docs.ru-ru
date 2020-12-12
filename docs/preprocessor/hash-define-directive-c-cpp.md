@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о директиве: #define (C/C++)'
 title: '#Директива define (C/C++)'
 ms.date: 08/29/2019
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - '#define directive, syntax'
 - '#define directive'
 ms.assetid: 33cf25c6-b24e-40bf-ab30-9008f0391710
-ms.openlocfilehash: e9e5b7a02ee55c05aa44278fbceb9c42f372c443
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 6821f775492671d860f4491354fff77e66150101
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91506666"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300465"
 ---
 # <a name="define-directive-cc"></a>Директива #define (C/C++)
 
@@ -23,10 +24,10 @@ ms.locfileid: "91506666"
 
 ## <a name="syntax"></a>Синтаксис
 
-> **#define** *identifier* *токена идентификатора — строка*<sub>OPT</sub>\
-> **идентификатор #define** *identifier* **(** *идентификатор*<sub>OPT</sub>**,** ... **,** *идентификатор*<sub>OPT</sub> **)** *— строка с*<sub>неявной</sub> строкой
+> **#define**  *токена идентификатора — строка*<sub>OPT</sub>\
+> **идентификатор #define**  **(** *идентификатор*<sub>OPT</sub>**,** ... **,** *идентификатор*<sub>OPT</sub> **)** *— строка с*<sub>неявной</sub> строкой
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Директива **#define** заставляет компилятор заменить *строку токена* для каждого вхождения *идентификатора* в исходном файле. *Идентификатор* заменяется только в том случае, если он формирует маркер. Это значит, что *идентификатор* не заменяется, если он присутствует в комментарии, в строке или в составе более длинного идентификатора. Дополнительные сведения см. в разделе [токены](../cpp/character-sets.md).
 

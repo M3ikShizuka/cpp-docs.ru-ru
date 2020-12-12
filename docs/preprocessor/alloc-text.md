@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: alloc_text pragma'
 title: alloc_text - прагма
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - alloc_text pragma
 - pragmas, alloc_text
 ms.assetid: 1fd7be18-e4f7-4f70-b079-6326f72b871a
-ms.openlocfilehash: c638c2026a493453aeb5aff00ba6273efb5f184e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 496a083c251684ebba004eef00bf466e72211ada
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219447"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97301065"
 ---
 # <a name="alloc_text-pragma"></a>alloc_text - прагма
 
@@ -23,7 +24,7 @@ ms.locfileid: "87219447"
 
 > **#pragma alloc_text (** "*текстсектион*" **,** *функция1* [**,** *функция2* ...] **)**
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Директива pragma **alloc_text** не обрабатывает функции элементов C++ или перегруженные функции. Он применим только к функциям, объявленным с компоновкой C, то есть к функциям, объявленным с помощью спецификации компоновки **extern "C"** . При попытке использовать эту директиву pragma в функции с компоновкой C++ возникнет ошибка компилятора.
 
