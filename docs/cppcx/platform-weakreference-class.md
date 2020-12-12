@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о классе Platform:: WeakReference'
 title: Класс Platform::WeakReference
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
 - Platform::WeakReference
 ms.assetid: 8cfe1977-a8c7-4b7b-b539-25c77ed4c5f1
-ms.openlocfilehash: befefba7cc76f24f6dddd58d0c5f040bfd205508
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: edf3220d8916ff4bdb1462f3dd04149a4e9a9709
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216600"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97307799"
 ---
 # <a name="platformweakreference-class"></a>Класс Platform::WeakReference
 
@@ -24,7 +25,7 @@ class WeakReference
 
 #### <a name="parameters"></a>Параметры
 
-### <a name="members"></a>Элементы
+### <a name="members"></a>Члены
 
 ### <a name="constructors"></a>Конструкторы
 
@@ -45,11 +46,11 @@ class WeakReference
 |[WeakReference::operator=](#operator-assign)|Присваивает новое значение объекту WeakReference.|
 |[WeakReference::operator BoolType](#booltype)|Реализует шаблон безопасного логического типа.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Класс WeakReference сам не является классом ссылок и поэтому не наследуется от Platform::Object^ и не может использоваться в сигнатуре открытого метода.
 
-## <a name="weakreferenceoperator"></a><a name="operator-assign"></a>WeakReference:: operator =
+## <a name="weakreferenceoperator"></a><a name="operator-assign"></a> WeakReference:: operator =
 
 Присваивает значение WeakReference.
 
@@ -66,7 +67,7 @@ WeakReference& operator=(const volatile ::Platform::Object^ const otherArg);
 
 Последняя перегрузка в списке выше позволяет назначить класс ссылок переменной WeakReference. В этом случае класс ссылки является производным от класса [Platform:: Object](../cppcx/platform-object-class.md)^. Исходный тип восстанавливается позднее путем указания его в качестве аргумента для параметра типа в функции члена [WeakReference:: Resolve \<T> ](#resolve) .
 
-## <a name="weakreferenceoperator-booltype"></a><a name="booltype"></a>WeakReference:: operator BoolType
+## <a name="weakreferenceoperator-booltype"></a><a name="booltype"></a> WeakReference:: operator BoolType
 
 Реализует безопасный шаблон bool для класса WeakReference. Не предназначен для явного вызова в коде.
 
@@ -76,7 +77,7 @@ WeakReference& operator=(const volatile ::Platform::Object^ const otherArg);
 BoolType BoolType();
 ```
 
-## <a name="weakreferenceresolve-method-platform-namespace"></a><a name="resolve"></a>Метод WeakReference:: Resolve (пространство имен платформы)
+## <a name="weakreferenceresolve-method-platform-namespace"></a><a name="resolve"></a> Метод WeakReference:: Resolve (пространство имен платформы)
 
 Возвращает маркер исходного класса ссылки или **`nullptr`** значение, если объект больше не существует.
 
@@ -108,7 +109,7 @@ if (bar != nullptr)
 
 Обратите внимание, что параметр типа — T, а не T^.
 
-## <a name="weakreferenceweakreference-constructor"></a><a name="ctor"></a>Конструктор WeakReference:: WeakReference
+## <a name="weakreferenceweakreference-constructor"></a><a name="ctor"></a> Конструктор WeakReference:: WeakReference
 
 Предоставляет различные способы построения WeakReference.
 
