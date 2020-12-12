@@ -1,16 +1,17 @@
 ---
+description: 'Подробнее о контейнерах: Реализация контейнера'
 title: Контейнеры. Реализация контейнера
 ms.date: 11/04/2016
 helpviewer_keywords:
 - applications [OLE], OLE container
 - OLE containers [MFC], implementing
 ms.assetid: af1e2079-619a-4eac-9327-985ad875823a
-ms.openlocfilehash: 0ba8d4aea6b69fdbfeedfba59449d0d30433eb94
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 24e3c7f7d4546ebe9b103af0e9ca0d9694b25d2e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623229"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310327"
 ---
 # <a name="containers-implementing-a-container"></a>Контейнеры. Реализация контейнера
 
@@ -65,4 +66,4 @@ ms.locfileid: "84623229"
 ## <a name="see-also"></a>См. также раздел
 
 [Контейнеры](containers.md)<br/>
-[Контейнеры. Элементы клиентов](containers-client-items.md)
+[Контейнеры: клиентские элементы](containers-client-items.md)

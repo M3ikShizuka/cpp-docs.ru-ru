@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: bad_weak_ptr классе'
 title: Класс bad_weak_ptr
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - bad_weak_ptr
 - bad_weak_ptr class
 ms.assetid: a09336d5-7237-4480-ab6b-3787e0e6025e
-ms.openlocfilehash: e1d536eed6727a5d1e828d358aa6b64521d748b8
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: db74ed31ff92f7665e8ecde5fc4700bcdf1a7fc1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68454271"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312921"
 ---
-# <a name="badweakptr-class"></a>Класс bad_weak_ptr
+# <a name="bad_weak_ptr-class"></a>Класс bad_weak_ptr
 
 Сообщает о необрабатываемом исключении weak_ptr.
 
@@ -28,7 +29,7 @@ class bad_weak_ptr : public std::exception
 };
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Данный класс описывает исключение, которое может быть создано из конструктора [класса shared_ptr](../standard-library/shared-ptr-class.md), принимающего аргумент типа [weak_ptr](../standard-library/weak-ptr-class.md). Функция-член `what` возвращает значение `"bad_weak_ptr"`.
 
@@ -70,6 +71,6 @@ int main()
 bad weak pointer
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Класс weak_ptr](../standard-library/weak-ptr-class.md)

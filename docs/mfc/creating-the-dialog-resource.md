@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Создание ресурса диалогового окна'
 title: Создание ресурса диалогового окна
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - resources [MFC], creating dialog boxes
 - MFC dialog boxes [MFC], dialog resource
 ms.assetid: 0b83bd33-14d3-4611-8129-fccdae18053e
-ms.openlocfilehash: efaef11cfdc036a201ced3357ca81b37a5dc29db
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 999a63d11981b8d21be85096ff49813c92b15810
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619627"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309723"
 ---
 # <a name="creating-the-dialog-resource"></a>Создание ресурса диалогового окна
 

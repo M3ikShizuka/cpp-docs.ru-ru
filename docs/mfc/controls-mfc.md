@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: элементы управления (MFC)'
 title: Элементы управления (MFC)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - common controls [MFC]
 - controls [MFC]
 ms.assetid: b2842884-6435-4b8f-933b-21671bf8af95
-ms.openlocfilehash: accbee66cdee4e7b849da2b034d253b1c206d8f1
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 94406928741eecd00794dbde230effe4d89ab3f6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84617182"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310139"
 ---
 # <a name="controls-mfc"></a>Элементы управления (MFC)
 
@@ -47,12 +48,12 @@ ms.locfileid: "84617182"
 
 В следующей таблице содержится краткое описание стандартных элементов управления Windows, включая класс-оболочку MFC элемента управления.
 
-### <a name="windows-common-controls-and-mfc-classes"></a><a name="_core_windows_common_controls_and_mfc_classes"></a>Общие элементы управления Windows и классы MFC
+### <a name="windows-common-controls-and-mfc-classes"></a><a name="_core_windows_common_controls_and_mfc_classes"></a> Общие элементы управления Windows и классы MFC
 
 |Control|Класс MFC|Описание|Новые в Windows 95|
 |-------------|---------------|-----------------|------------------------|
 |[захоронен](using-canimatectrl.md)|[CAnimateCtrl](reference/canimatectrl-class.md)|Отображение последовательных кадров видеоролика AVI.|Да|
-|кнопка|[CButton](reference/cbutton-class.md)|Кнопки, вызывающие действия; также используется для флажков, переключателей и полей групп.|Нет|
+|.|[CButton](reference/cbutton-class.md)|Кнопки, вызывающие действия; также используется для флажков, переключателей и полей групп.|Нет|
 |поле со списком|[CComboBox](reference/ccombobox-class.md)|Комбинация текстового поля и поля со списком.|Нет|
 |[элемент выбора даты и времени](using-cdatetimectrl.md)|[CDateTimeCtrl](reference/cdatetimectrl-class.md)|Позволяет выбирать определенное значение даты или времени.|Да|
 |поле ввода|[CEdit](reference/cedit-class.md)|Поля для ввода текста.|Нет|

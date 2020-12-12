@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _aligned_offset_realloc'
 title: _aligned_offset_realloc
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - aligned_offset_realloc function
 - _aligned_offset_realloc function
 ms.assetid: e0263533-991e-41b0-acc9-1b8a51ab9ecd
-ms.openlocfilehash: c719f62a089b1c233bac193f3431d0375af826eb
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 0e61a1425d495b2ab7019eee9f42dbe26989312e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910263"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312476"
 ---
 # <a name="_aligned_offset_realloc"></a>_aligned_offset_realloc
 
@@ -58,7 +59,7 @@ void * _aligned_offset_realloc(
 *size*<br/>
 Размер выделения памяти.
 
-*выравнивание*<br/>
+*Выравнивание*<br/>
 Значение выравнивания, которое должно быть целой степенью числа 2.
 
 *offset*<br/>
@@ -68,13 +69,13 @@ void * _aligned_offset_realloc(
 
 **_aligned_offset_realloc** возвращает указатель void на перераспределенный (и, возможно, перемещенный) блок памяти. Возвращаемое значение равно **null** , если размер равен нулю, а аргумент буфера не равен **null**, или если недостаточно памяти для расширения блока до заданного размера. В первом случае исходный блок освобождается. Во втором случае исходный блок не изменяется. Возвращаемое значение указывает на пространство хранилища, которое гарантированно будет соответственно выровнено для хранения объектов любого типа. Чтобы получить указатель на тип, отличающийся от void, используйте приведение типа для возвращаемого значения.
 
-**_aligned_offset_realloc** `__declspec(noalias)` помечается `__declspec(restrict)`и, что означает, что функция гарантированно не изменяет глобальные переменные и что возвращаемый указатель не имеет псевдонима. Дополнительные сведения см. в разделах [noalias](../../cpp/noalias.md) и [restrict](../../cpp/restrict.md).
+**_aligned_offset_realloc** помечается `__declspec(noalias)` и `__declspec(restrict)` , что означает, что функция гарантированно не изменяет глобальные переменные и что возвращаемый указатель не имеет псевдонима. Дополнительные сведения см. в разделах [noalias](../../cpp/noalias.md) и [restrict](../../cpp/restrict.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Как и [_aligned_offset_malloc](aligned-offset-malloc.md), **_aligned_offset_realloc** позволяет выстроить структуру по смещению в пределах структуры.
 
-**_aligned_offset_realloc** основан на **malloc**. Дополнительные сведения об использовании **_aligned_offset_malloc**см. в разделе [malloc](malloc.md). Если *мемблокк* имеет **значение NULL**, функция вызывает **_aligned_offset_malloc** внутренне.
+**_aligned_offset_realloc** основан на **malloc**. Дополнительные сведения об использовании **_aligned_offset_malloc** см. в разделе [malloc](malloc.md). Если *мемблокк* имеет **значение NULL**, функция вызывает **_aligned_offset_malloc** внутренне.
 
 Эта **функция устанавливает значение** **еномем** , если выделение памяти завершилось ошибкой, или если запрошенный размер был больше **_HEAP_MAXREQ**. Дополнительные **сведения об этом см. в разделе** [пере_doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Кроме того, **_aligned_offset_realloc** проверяет свои параметры. Если параметр *alignment* не является степенью 2 или *смещение* больше или равно *размеру* и не равно нулю, эта функция вызывает обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эта функция возвращает **значение NULL** **и устанавливает для** **еинвал**.
 

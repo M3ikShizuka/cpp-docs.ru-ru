@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _set_new_handler'
 title: _set_new_handler
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - error handling
 - transferring control to error handler
 ms.assetid: 1d1781b6-5cf8-486a-b430-f365e0bb023f
-ms.openlocfilehash: cd6e4df47b28e84bb0ac5ee857cfa1a3e7cf805a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1e693e010bcbb9489426fc5c67e888d50f430765
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218550"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312401"
 ---
 # <a name="_set_new_handler"></a>_set_new_handler
 
@@ -56,7 +57,7 @@ _PNH _set_new_handler( _PNH pNewHandler );
 
 Возвращает указатель на предыдущую функцию обработки исключений, зарегистрированную **_set_new_handler**, чтобы Предыдущая функция могла быть восстановлена позже. Если Предыдущая функция не задана, возвращаемое значение можно использовать для восстановления поведения по умолчанию. Это значение может быть **равно NULL**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_Set_new_handler** C++ определяет функцию обработки исключений, которая получает управление, если **`new`** оператору не удается выделить память. **`new`** В случае сбоя система времени выполнения автоматически вызывает функцию обработки исключений, которая была передана в качестве аргумента для **_set_new_handler**. **_PNH**, определенный в New. h, является указателем на функцию, возвращающую тип **`int`** и принимающую аргумент типа **size_t**. Используйте **size_t** , чтобы указать объем выделяемого пространства.
 
@@ -171,5 +172,5 @@ Please contact the application's support team for more information.
 
 [Выделение памяти](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](calloc.md)<br/>
-[свободный](free.md)<br/>
+[free](free.md)<br/>
 [realloc](realloc.md)<br/>

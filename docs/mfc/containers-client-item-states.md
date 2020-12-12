@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: контейнеры: Client-Item состояния'
 title: Контейнеры. Состояния элементов клиентов
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - lifetime, lifetime states and OLE container client items
 - client items and OLE containers
 ms.assetid: e7021caa-bd07-4adb-976e-f5f3d025bc53
-ms.openlocfilehash: 660b544a0f061ae2e4435777cdd934367f2e7652
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2f6560b5694bcd7a55b7547593d9ba2dc9a93389
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228652"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310464"
 ---
 # <a name="containers-client-item-states"></a>Контейнеры. Состояния элементов клиентов
 
@@ -38,10 +39,10 @@ ms.locfileid: "87228652"
 
 Когда элемент был активирован на месте, он передается, обычно только ненадолго, через активное состояние. Затем он переходит в активное состояние пользовательского интерфейса, в котором сервер объединяет меню, панели инструментов и другие компоненты пользовательского интерфейса с контейнерами. Наличие этих компонентов пользовательского интерфейса отличает активное состояние пользовательского интерфейса от активного состояния. В противном случае активное состояние напоминает состояние активного пользовательского интерфейса. Если сервер поддерживает операцию отмены, сервер должен хранить сведения о состоянии отмены элемента OLE, пока не достигнет загруженного или открытого состояния.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Контейнеры](containers.md)<br/>
 [Активация](activation-cpp.md)<br/>
-[Контейнеры: уведомления клиентского элемента](containers-client-item-notifications.md)<br/>
-[Средства отслеживания](trackers.md)<br/>
+[Контейнеры: уведомления Client-Item](containers-client-item-notifications.md)<br/>
+[Trackers](trackers.md)<br/>
 [Класс Кректтраккер](reference/crecttracker-class.md)

@@ -1,20 +1,21 @@
 ---
+description: 'Дополнительные сведения о: &lt; ограничения &gt; перечислений'
 title: Перечисления &lt;limits&gt;
 ms.date: 11/04/2016
 f1_keywords:
 - limits/std::float_denorm_style
 - limits/std::float_round_style
 ms.assetid: c86680a2-ba97-4ed9-8c20-a448857d7dc5
-ms.openlocfilehash: 567e0538f59c40d57f85d652a8919be6e034cf0b
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 115122a4901298018df8809be56a7fc69249d700
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79425613"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312869"
 ---
 # <a name="ltlimitsgt-enums"></a>Перечисления &lt;limits&gt;
 
-## <a name="float_denorm_style"></a>float_denorm_style
+## <a name="float_denorm_style"></a><a name="float_denorm_style"></a> float_denorm_style
 
 Перечисление описывает различные методы, которые могут быть выбраны реализацией для представления ненормализованного значения с плавающей запятой, если оно мало для представления в качестве нормализованного значения:
 
@@ -29,17 +30,17 @@ enum float_denorm_style {
 
 Перечисление возвращает:
 
-- `denorm_indeterminate`, если присутствие или отсутствие денормализованных форм невозможно определить во время преобразования.
+- `denorm_indeterminate` значение, если не удается определить присутствие или отсутствие денормализованных форм во время преобразования.
 
-- `denorm_absent`, если денормализованные формы отсутствуют.
+- `denorm_absent` Если денормализованные формы отсутствуют.
 
-- `denorm_present`, если денормализованные формы существуют.
+- `denorm_present` При наличии денормализованных форм.
 
 ### <a name="example"></a>Пример
 
 См. раздел [numeric_limits::has_denorm](../standard-library/numeric-limits-class.md#has_denorm) с примером, в котором можно получить доступ к значениям этого перечисления.
 
-## <a name="float_round_style"></a>float_round_style
+## <a name="float_round_style"></a><a name="float_round_style"></a> float_round_style
 
 Перечисление описывает различные методы, которые могут быть выбраны реализацией для округления значения с плавающей запятой до целочисленного.
 
@@ -56,15 +57,15 @@ enum float_round_style {
 
 Перечисление возвращает:
 
-- `round_indeterminate`, если не удается определить метод округления.
+- `round_indeterminate` значение, если не удается определить метод округления.
 
-- `round_toward_zero`, если округление в сторону нуля.
+- `round_toward_zero` значение, если округление в сторону нуля.
 
-- `round_to_nearest`, если округление до ближайшего целого числа.
+- `round_to_nearest` значение, если округление до ближайшего целого числа.
 
-- `round_toward_infinity`, если округление отбрасывается от нуля.
+- `round_toward_infinity` значение, если округление от нуля.
 
-- `round_toward_neg_infinity`, если округление до более отрицательного целого числа.
+- `round_toward_neg_infinity` значение, если округление до более отрицательного целого числа.
 
 ### <a name="example"></a>Пример
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о контейнерах: Client-Item уведомлениях.'
 title: Контейнеры. Уведомления элементов клиентов
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - OLE containers [MFC], client-item notifications
 - client items and OLE containers
 ms.assetid: e1f1c427-01f5-45f2-b496-c5bce3d76340
-ms.openlocfilehash: 54b1b2a64685b00fb265e0f80c1f6ad878a7da85
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 2918ea29bcd656e76735db8e003d33dce21c6b63
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623015"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310477"
 ---
 # <a name="containers-client-item-notifications"></a>Контейнеры. Уведомления элементов клиентов
 
@@ -30,7 +31,7 @@ ms.locfileid: "84623015"
 |**OLE_CHANGED_STATE**|Элемент OLE был изменен с одного состояния на другое.|
 |**OLE_CHANGED_ASPECT**|Аспект рисования элемента OLE был изменен платформой.|
 
-Эти значения относятся к перечислению **OLE_NOTIFICATION** , которое определено в афксоле. Высоты.
+Эти значения относятся к перечислению **OLE_NOTIFICATION** , которое определено в Афксоле. H.
 
 Второй аргумент этой функции указывает, как изменился элемент или какое состояние было введено:
 
@@ -38,9 +39,9 @@ ms.locfileid: "84623015"
 |----------------------------|---------------------|
 |**OLE_SAVED** или **OLE_CLOSED**|Не используется.|
 |**OLE_CHANGED**|Задает аспект объекта OLE, который был изменен.|
-|**OLE_CHANGED_STATE**|Описывает входное состояние (*емптистате*, *лоадедстате*, *опенстате*, *activeState*или *активеуистате*).|
+|**OLE_CHANGED_STATE**|Описывает входное состояние (*емптистате*, *лоадедстате*, *опенстате*, *activeState* или *активеуистате*).|
 
-Дополнительные сведения о состояниях, которые может предположить клиентский элемент, см. в разделе [контейнеры: состояния клиентских элементов](containers-client-item-states.md).
+Дополнительные сведения о состояниях, которые может предположить клиентский элемент, см. в разделе [Containers: Client-Item States](containers-client-item-states.md).
 
 Платформа вызывает, `COleClientItem::OnGetItemPosition` когда элемент активируется для редактирования на месте. Для приложений, поддерживающих редактирование на месте, требуется реализация. Мастер приложений MFC предоставляет базовую реализацию, которая назначает координаты элемента `CRect` объекту, который передается в качестве аргумента в `OnGetItemPosition` .
 
@@ -49,5 +50,5 @@ ms.locfileid: "84623015"
 ## <a name="see-also"></a>См. также раздел
 
 [Контейнеры](containers.md)<br/>
-[Контейнеры. Состояния элементов клиентов](containers-client-item-states.md)<br/>
+[Контейнеры: состояния Client-Item](containers-client-item-states.md)<br/>
 [COleClientItem:: OnChangeItemPosition](reference/coleclientitem-class.md#onchangeitemposition)

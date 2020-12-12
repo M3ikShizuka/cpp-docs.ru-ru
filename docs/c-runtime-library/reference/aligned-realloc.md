@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _aligned_realloc'
 title: _aligned_realloc
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - aligned_realloc function
 - _aligned_realloc function
 ms.assetid: 80ce96e8-6087-416f-88aa-4dbb8cb1d218
-ms.openlocfilehash: 28c47507fb6b1ee175842159bf6fab8807f29f76
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 305610f7eed8be180c9324f0e1e56e4af2f6a79b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915239"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312492"
 ---
 # <a name="_aligned_realloc"></a>_aligned_realloc
 
@@ -57,7 +58,7 @@ void * _aligned_realloc(
 *size*<br/>
 Размер запрошенного выделения памяти.
 
-*выравнивание*<br/>
+*Выравнивание*<br/>
 Значение выравнивания, которое должно быть целой степенью числа 2.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -66,9 +67,9 @@ void * _aligned_realloc(
 
 Будет ошибкой повторно выделить память и изменить выравнивание блока.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-**_aligned_realloc** основан на **malloc**. Дополнительные сведения об использовании **_aligned_offset_malloc**см. в разделе [malloc](malloc.md).
+**_aligned_realloc** основан на **malloc**. Дополнительные сведения об использовании **_aligned_offset_malloc** см. в разделе [malloc](malloc.md).
 
 Эта **функция устанавливает значение** **еномем** , если выделение памяти завершилось ошибкой, или если запрошенный размер был больше **_HEAP_MAXREQ**. Дополнительные **сведения об этом см. в разделе** [пере_doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md). Кроме того, **_aligned_realloc** проверяет свои параметры. Если значение *alignment* не является степенью числа 2, эта функция вызывает обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эта функция возвращает **значение NULL** **и устанавливает для** **еинвал**.
 

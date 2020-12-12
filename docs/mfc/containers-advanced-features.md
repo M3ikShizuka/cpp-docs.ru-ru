@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: контейнеры: дополнительные функции'
 title: Контейнеры. Дополнительные возможности
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - server/container applications [MFC]
 - containers [MFC], container applications
 ms.assetid: 221fd99c-b138-40fa-ad6a-974e3b3ad1f8
-ms.openlocfilehash: 1ef4ed9865d3a88a6ff85f777984b856d03cc48e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: d49f699ec0349e5c53b95996c6ee4b5d151dce5e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616362"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310516"
 ---
 # <a name="containers-advanced-features"></a>Контейнеры. Дополнительные возможности
 
@@ -27,7 +28,7 @@ ms.locfileid: "84616362"
 
 - [Связь OLE с внедренным объектом](#_core_links_to_embedded_objects)
 
-## <a name="creating-a-containerserver-application"></a><a name="_core_creating_a_container_server_application"></a>Создание приложения-контейнера или сервера
+## <a name="creating-a-containerserver-application"></a><a name="_core_creating_a_container_server_application"></a> Создание приложения-контейнера или сервера
 
 Приложение-контейнер или сервер — это приложение, которое выступает в качестве контейнера и сервера. Примером этого является Microsoft Word для Windows. Вы можете внедрять документы Word для Windows в другие приложения, а также внедрять элементы в документы Word для Windows. Процесс изменения приложения-контейнера как контейнера, так и полного сервера (Создание комбинированного контейнера или приложения минисервер) аналогичен процессу создания полного сервера.
 
@@ -45,7 +46,7 @@ ms.locfileid: "84616362"
 
 Обратите внимание, что вы не можете вставить приложение MDI в само себя. Приложение, которое является контейнером или сервером, не может быть вставлено в себя, если оно не является приложением SDI.
 
-## <a name="links-to-embedded-objects"></a><a name="_core_links_to_embedded_objects"></a>Ссылки на внедренные объекты
+## <a name="links-to-embedded-objects"></a><a name="_core_links_to_embedded_objects"></a> Ссылки на внедренные объекты
 
 Ссылки на внедренные объекты позволяют пользователю создать документ со ссылкой OLE на внедренный объект в приложении-контейнере. Например, создайте документ в текстовом процессоре, содержащем внедренную электронную таблицу. Если приложение поддерживает ссылки на внедренные объекты, оно может вставить ссылку на электронную таблицу, содержащуюся в документе текстового процессора. Эта функция позволяет приложению использовать информацию, содержащуюся в электронной таблице, без знания того, где он получил слово.
 

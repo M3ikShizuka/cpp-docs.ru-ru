@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: &lt; вариант&gt;'
 title: '&lt;variant&gt;'
 ms.date: 04/04/2019
 f1_keywords:
 - <variant>
 helpviewer_keywords:
 - <variant>
-ms.openlocfilehash: 1a3c861c96fedb7ef95eec66f95888ddc092bed4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 994bd18a66dd78c8f6042afea10df69ff08a1487
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835666"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312477"
 ---
 # <a name="ltvariantgt"></a>&lt;variant&gt;
 

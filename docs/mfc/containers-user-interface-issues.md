@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: контейнеры: проблемы User-Interface'
 title: Контейнеры. Проблемы пользовательского интерфейса
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - OLE containers [MFC], user interface
 - user interface issues
 ms.assetid: c833c249-a633-4f1c-82d6-ec6b4892863a
-ms.openlocfilehash: 623b5f5948d2428ccb4dab37ca227516474f2c1f
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 1408311586649c5f73f889f2c2d4c9250ea93c46
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84625959"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310308"
 ---
 # <a name="containers-user-interface-issues"></a>Контейнеры. Проблемы пользовательского интерфейса
 
@@ -19,13 +20,13 @@ ms.locfileid: "84625959"
 
 |Для получения информации о|См.|
 |------------------------|---------|
-|Добавления меню для контейнеров|[Меню и ресурсы. Добавление контейнеров](menus-and-resources-container-additions.md)|
-|Дополнительные ресурсы для контейнеров|[Меню и ресурсы. Добавление контейнеров](menus-and-resources-container-additions.md)|
+|Добавления меню для контейнеров|[Меню и ресурсы: добавления контейнеров](menus-and-resources-container-additions.md)|
+|Дополнительные ресурсы для контейнеров|[Меню и ресурсы: добавления контейнеров](menus-and-resources-container-additions.md)|
 |Рисование связанных или внедренных элементов|[Пример контейнера](../overview/visual-cpp-samples.md)|
 |Новые диалоговые окна для контейнеров|[Диалоговые окна в OLE](dialog-boxes-in-ole.md)|
 
 ## <a name="see-also"></a>См. также раздел
 
 [Контейнеры](containers.md)<br/>
-[Контейнеры. Дополнительные возможности](containers-advanced-features.md)<br/>
+[Контейнеры: дополнительные функции](containers-advanced-features.md)<br/>
 [Меню и ресурсы (OLE)](menus-and-resources-ole.md)

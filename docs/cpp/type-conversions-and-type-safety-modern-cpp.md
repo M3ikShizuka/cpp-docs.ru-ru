@@ -1,14 +1,15 @@
 ---
+description: 'Дополнительные сведения: преобразования типов и безопасность типов'
 title: Преобразования типов и безопасность типов
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
-ms.openlocfilehash: 28adbc261b5b4376f947e00695fe66650739438d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ce83837a8aec06063b2a4e50c445fe7756b5c076
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223542"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312193"
 ---
 # <a name="type-conversions-and-type-safety"></a>Преобразования типов и безопасность типов
 
@@ -28,7 +29,7 @@ ms.locfileid: "87223542"
 
 |От|Кому|
 |----------|--------|
-|Любой **`signed`** или **`unsigned`** целочисленный тип, кроме **`long long`** или**`__int64`**|**`double`**|
+|Любой **`signed`** или **`unsigned`** целочисленный тип, кроме **`long long`** или **`__int64`**|**`double`**|
 |**`bool`** или **`char`**|Любой другой встроенный тип|
 |**`short`** или **`wchar_t`**|**`int`**, **`long`**, **`long long`**|
 |**`int`**, **`long`**|**`long long`**|
@@ -176,9 +177,9 @@ int(x); // old-style cast, functional syntax
 
    Дополнительные сведения см. в разделе [ `reinterpret_cast` оператор](../cpp/reinterpret-cast-operator.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Система типов C++](../cpp/cpp-type-system-modern-cpp.md)<br/>
-[Добро пожаловать в C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[Возвращение к C++](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [Справочник по языку C++](../cpp/cpp-language-reference.md)<br/>
 [Стандартная библиотека C++](../standard-library/cpp-standard-library-reference.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; Пример контейнера&gt;'
 title: '&lt;образец контейнера&gt;'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,17 +7,17 @@ helpviewer_keywords:
 - sample container
 - container headers
 ms.assetid: 4ab3dcf9-49c3-4e49-b5d6-1ec573e2aee4
-ms.openlocfilehash: e89f15c7dd485a73d143b7cbee27ccd354e3892c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 65726e60dcdec522d93da70fb38cc06dce01e609
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373413"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97312856"
 ---
 # <a name="ltsample-containergt"></a>&lt;образец контейнера&gt;
 
 > [!NOTE]
-> Эта тема содержится в документации Microsoft C, как нефункциональный пример контейнеров, используемых в стандартной библиотеке СЗ. Дополнительные сведения см. в разделе [Контейнеры стандартной библиотеки C++](../standard-library/stl-containers.md).
+> Эта статья содержится в документации по Microsoft C++ как нефункциональный пример контейнеров, используемых в стандартной библиотеке C++. Дополнительные сведения см. в разделе [Контейнеры стандартной библиотеки C++](../standard-library/stl-containers.md).
 
 Показана структура заголовков контейнера из стандартной библиотеки C++.
 
