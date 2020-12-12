@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_same классе'
 title: Класс is_same
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_same class
 - is_same
 ms.assetid: d9df6c1d-c270-4ec2-802a-af275648dd1d
-ms.openlocfilehash: f4e4babeef89960762ebb2ccf0f733f60eadfa47
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 19e0ecec009227c0785c263893aa32beff4049e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68450059"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247726"
 ---
-# <a name="issame-class"></a>Класс is_same
+# <a name="is_same-class"></a>Класс is_same
 
 Определяет, совпадают ли два типа.
 
@@ -33,7 +34,7 @@ struct is_same;
 *Ty2*\
 Второй запрашиваемый тип.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если типы *Ty1* и *Ty2* имеют один и тот же тип, в противном случае — значение false.
 
@@ -82,11 +83,11 @@ is_same<int, const int> == false
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)\
 [Класс is_convertible](../standard-library/is-convertible-class.md)\

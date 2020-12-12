@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: пример программы Generic-Text'
 title: Пример программы, использующей обычный текст
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - TCHAR type
 - TCHAR.H data types, mapping
 ms.assetid: a03de0db-8118-4bd9-a03f-640e8dfc5ed3
-ms.openlocfilehash: bc339bb11d0910eea2ef115a8f9013fa5c0270a7
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 0c8b9e0d201cf4891f74e54a1f5ee929d864f6b4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738106"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242786"
 ---
 # <a name="a-sample-generic-text-program"></a>Пример программы, использующей обычный текст
 
@@ -180,4 +181,4 @@ int __cdecl main(int argc, char **argv, char **envp)
 [Сопоставления типов данных](../c-runtime-library/data-type-mappings.md)<br/>
 [Сопоставления констант и глобальных переменных](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
 [Сопоставления подпрограмм](../c-runtime-library/routine-mappings.md)<br/>
-[Использование универсальных текстовых сопоставлений](../c-runtime-library/using-generic-text-mappings.md)
+[Использование сопоставлений Generic-Text](../c-runtime-library/using-generic-text-mappings.md)

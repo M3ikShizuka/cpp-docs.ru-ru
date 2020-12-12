@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Предупреждение средств компоновщика LNK4254'
 title: Предупреждение средств компоновщика LNK4254
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4254
 ms.assetid: 6f41dfb3-ca21-40d3-bac7-b637e578efa4
-ms.openlocfilehash: 8431bd2d89fd5df5cf076ad006ab04006f552c4c
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 410a904af6af2015a817ac9e254dff7f09811b72
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988059"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244476"
 ---
 # <a name="linker-tools-warning-lnk4254"></a>Предупреждение средств компоновщика LNK4254
 
@@ -21,11 +22,11 @@ ms.locfileid: "74988059"
 
 Чтобы разрешить LNK4254, измените или удалите запрос на слияние.
 
-При нацеливании на компьютеры x86 и Windows CE (ARM, MIPS, SH4 и Thumb) с помощью C++визуального элемента. Раздел CRT доступен только для чтения. Если код зависит от предыдущего поведения (. Разделы CRT доступны для чтения и записи. это может привести к непредвиденному поведению.
+При нацеливании на компьютеры x86 и Windows CE (ARM, MIPS, SH4 и Thumb) с Visual C++,. Раздел CRT доступен только для чтения. Если код зависит от предыдущего поведения (. Разделы CRT доступны для чтения и записи. это может привести к непредвиденному поведению.
 
 Дополнительные сведения см. в следующих разделах:
 
-- [/MERGE (слияние разделов)](../../build/reference/merge-combine-sections.md)
+- [/MERGE (объединение разделов)](../../build/reference/merge-combine-sections.md)
 
 - [comment (C/C++)](../../preprocessor/comment-c-cpp.md)
 

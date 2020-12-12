@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функциях пространства имен Concurrency::d irect3d (AMP)
 title: Функции пространства имен Concurrency::direct3d (AMP)
 ms.date: 08/31/2018
 f1_keywords:
@@ -21,12 +22,12 @@ f1_keywords:
 - amp/Concurrency::direct3d::step
 - amp/Concurrency::direct3d::umin
 ms.assetid: 28943b62-52c9-42dc-baf1-ca7b095c1a19
-ms.openlocfilehash: bf98249001c2b8227581fbbbcceeebd085e5d820
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c446e89835e49d9afd7b11abd73ccccd032a7321
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831116"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247830"
 ---
 # <a name="concurrencydirect3d-namespace-functions-amp"></a>Функции пространства имен Concurrency::direct3d (AMP)
 
@@ -82,7 +83,7 @@ inline int abs(int _X) restrict(amp);
 ### <a name="parameters"></a>Параметры
 
 *_X*<br/>
-Целочисленное значение
+Целое значение
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -171,7 +172,7 @@ accelerator_view create_accelerator_view(
 
 `accelerator_view`Объект, созданный из переданного интерфейса устройства Direct3D.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эта функция создает новый `accelerator_view` объект на основе существующего указателя на интерфейс устройства Direct3D. Если вызов функции завершился с ошибкой, счетчик ссылок параметра увеличивается на единицу с помощью `AddRef` вызова интерфейса. Вы можете безопасно освободить объект, если он больше не требуется в коде DirectX. При сбое вызова метода выдается [runtime_exception](runtime-exception-class.md) .
 
@@ -233,7 +234,7 @@ inline int firstbithigh(int _X) restrict(amp);
 ### <a name="parameters"></a>Параметры
 
 *_X*<br/>
-Целочисленное значение
+Целое значение
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -250,7 +251,7 @@ inline int firstbitlow(int _X) restrict(amp);
 ### <a name="parameters"></a>Параметры
 
 *_X*<br/>
-Целочисленное значение
+Целое значение
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -314,10 +315,10 @@ inline int imax(
 ### <a name="parameters"></a>Параметры
 
 *_X*<br/>
-Целочисленное значение
+Целое значение
 
 *_Y*<br/>
-Целочисленное значение
+Целое значение
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -336,10 +337,10 @@ inline int imin(
 ### <a name="parameters"></a>Параметры
 
 *_X*<br/>
-Целочисленное значение
+Целое значение
 
 *_Y*<br/>
-Целочисленное значение
+Целое значение
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -537,7 +538,7 @@ inline int sign(int _X) restrict(amp);
 ### <a name="parameters"></a>Параметры
 
 *_X*<br/>
-Целочисленное значение
+Целое значение
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -604,10 +605,10 @@ inline unsigned int umax(
 ### <a name="parameters"></a>Параметры
 
 *_X*<br/>
-Целочисленное значение
+Целое значение
 
 *_Y*<br/>
-Целочисленное значение
+Целое значение
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -626,10 +627,10 @@ inline unsigned int umin(
 ### <a name="parameters"></a>Параметры
 
 *_X*<br/>
-Целочисленное значение
+Целое значение
 
 *_Y*<br/>
-Целочисленное значение
+Целое значение
 
 ### <a name="return-value"></a>Возвращаемое значение
 

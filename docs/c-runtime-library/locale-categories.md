@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о категориях языковых стандартов
 title: Категории языковых стандартов
 ms.date: 11/04/2016
 f1_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - LC_NUMERIC constant
 - LC_COLLATE constant
 ms.assetid: 868f1493-fe5d-4722-acab-bfcd374a063a
-ms.openlocfilehash: 434500dab0c68aa9475f54e930b91da0b1cd2fc9
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 2c6bfa4b2d1d0b76520043ee5568d51cf28a23c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749806"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246387"
 ---
 # <a name="locale-categories"></a>Категории языковых стандартов
 
@@ -36,7 +37,7 @@ ms.locfileid: "57749806"
 #include <locale.h>
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Категории языковых стандартов представляют собой константы манифеста, с помощью которых подпрограммы локализации указывают, какую информацию о языковом стандарте программы они будут использовать. Языковой стандарт определяет расположение (или страну, или регион), для которого можно настроить определенные аспекты программы. Например, языковой стандарт влияет на форматирование дат и отображение денежных значений.
 
@@ -45,15 +46,15 @@ ms.locfileid: "57749806"
 |`LC_ALL`|Любое применение языкового стандарта (все категории)|
 |`LC_COLLATE`|Поведение функций `strcoll` и `strxfrm`|
 |`LC_CTYPE`|Поведение функций обработки символов (за исключением `isdigit`, `isxdigit`, `mbstowcs` и `mbtowc`)|
-|`LC_MAX`|Аналогично `LC_TIME`|
-|`LC_MIN`|Аналогично `LC_ALL`|
+|`LC_MAX`|То же, что `LC_TIME`|
+|`LC_MIN`|То же, что `LC_ALL`|
 |`LC_MONETARY`|Информация о форматировании денежных значений, возвращаемая функцией `localeconv`|
 |`LC_NUMERIC`|Символ десятичного разделителя для процедур форматированного вывода (например, `printf`), для процедур преобразования данных и для форматирования в выводе функции `localeconv`, не имеющего отношения к денежным значениям.|
 |`LC_TIME`|Поведение функции `strftime`|
 
 См. пример в описании функций [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [localeconv](../c-runtime-library/reference/localeconv.md)<br/>
 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
