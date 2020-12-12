@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _AddressOfReturnAddress'
 title: _AddressOfReturnAddress
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - _AddressOfReturnAddress intrinsic
 - AddressOfReturnAddress intrinsic
 ms.assetid: c7e10b8c-445e-4236-a602-e2d90200f70a
-ms.openlocfilehash: d705029c30fdbc117c4c6e96923691e43e072e23
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 1a79ccbe7ddc2865d8225a62cd0d294f0bc66b4a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221071"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331926"
 ---
 # <a name="_addressofreturnaddress"></a>_AddressOfReturnAddress
 
@@ -29,15 +30,15 @@ void * _AddressOfReturnAddress();
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`_AddressOfReturnAddress`|x86, x64, ARM, ARM64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Если `_AddressOfReturnAddress` используется в программе, скомпилированной с [параметром/CLR](../build/reference/clr-common-language-runtime-compilation.md), `_AddressOfReturnAddress` то функция, содержащая вызов, компилируется как собственная функция. Если функция, скомпилированная как управляемые вызовы в функцию, `_AddressOfReturnAddress`содержащую `_AddressOfReturnAddress` , может работать не так, как ожидалось.
+Если `_AddressOfReturnAddress` используется в программе, скомпилированной с [параметром/CLR](../build/reference/clr-common-language-runtime-compilation.md), то функция, содержащая `_AddressOfReturnAddress` вызов, компилируется как собственная функция. Если функция, скомпилированная как управляемые вызовы в функцию `_AddressOfReturnAddress` , содержащую, `_AddressOfReturnAddress` может работать не так, как ожидалось.
 
 Эта процедура доступна только как встроенная функция.
 

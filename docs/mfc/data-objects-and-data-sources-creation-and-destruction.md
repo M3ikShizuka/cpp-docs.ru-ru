@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: объекты данных и источники данных: создание и уничтожение'
 title: Объекты и источники данных. Создание и деструкция
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - destruction [MFC], data objects
 - data sources [MFC], creating
 ms.assetid: ac216d54-3ca5-4ce7-850d-cd1f6a90d4f1
-ms.openlocfilehash: 8d4edc93594bf453c61e03dca7e3117aefaa6c42
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a19c7c2125c7d591bc4df4b3f01553a54de6a18b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620500"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97206192"
 ---
 # <a name="data-objects-and-data-sources-creation-and-destruction"></a>Объекты и источники данных. Создание и деструкция
 
@@ -34,7 +35,7 @@ ms.locfileid: "84620500"
 
 - [уничтожение источников данных.](#_core_destroying_data_sources)
 
-## <a name="creating-data-objects"></a><a name="_core_creating_data_objects"></a>Создание объектов данных
+## <a name="creating-data-objects"></a><a name="_core_creating_data_objects"></a> Создание объектов данных
 
 Объекты данных используются конечным приложением: клиентом или сервером. Объект данных в конечном приложении — это один конец соединения между исходным и конечным приложениями. Объект данных в конечном приложении используется для доступа к данным источника данных и взаимодействия с ними.
 
@@ -44,13 +45,13 @@ ms.locfileid: "84620500"
 
 Если приложение выполняет вставку или специальную вставку, вам необходимо создать объект `COleDataObject` и вызвать его функцию-член `AttachClipboard`. При этом объект данных связывается с данными в буфере обмена. Затем можно использовать этот объект данных в функции вставки.
 
-## <a name="destroying-data-objects"></a><a name="_core_destroying_data_objects"></a>Уничтожение объектов данных
+## <a name="destroying-data-objects"></a><a name="_core_destroying_data_objects"></a> Уничтожение объектов данных
 
 Если следовать схеме, описанной в разделе [Создание объектов данных](#_core_creating_data_objects), то уничтожение объектов данных является тривиальным аспектом передачи данных. Объект данных, который был создан в функции вставки, будет уничтожен MFC при возврате из функции вставки.
 
 Если использовать другой способ обработки операций вставки, необходимо убедиться, что объект данных уничтожается после завершения вставки. До уничтожения объекта данных никакое приложение не сможет успешно скопировать данные в буфер обмена.
 
-## <a name="creating-data-sources"></a><a name="_core_creating_data_sources"></a>Создание источников данных
+## <a name="creating-data-sources"></a><a name="_core_creating_data_sources"></a> Создание источников данных
 
 Источники данных используются источником передачи данных, которым может быть клиент или сервер. Источник данных в исходном приложении — это один конец соединения между исходным и конечным приложениями. Объект данных в конечном приложении используется для взаимодействия с данными источника данных.
 
@@ -72,9 +73,9 @@ ms.locfileid: "84620500"
 
 Еще одна ситуация, в которой может потребоваться создать объект `COleDataSource`, возникает при изменении поведения операции перетаскивания по умолчанию. Дополнительные сведения см. в статье перетаскивание [OLE: Настройка](drag-and-drop-ole.md#customize-drag-and-drop) перетаскивания.
 
-## <a name="destroying-data-sources"></a><a name="_core_destroying_data_sources"></a>Уничтожение источников данных
+## <a name="destroying-data-sources"></a><a name="_core_destroying_data_sources"></a> Уничтожение источников данных
 
-Источники данных должно уничтожить приложение, которое в данный момент отвечает за них. В ситуациях, когда источник данных передаются в OLE, например вызов [COleDataSource::D одрагдроп](reference/coledatasource-class.md#dodragdrop), необходимо вызвать `pDataSrc->InternalRelease` . Пример.
+Источники данных должно уничтожить приложение, которое в данный момент отвечает за них. В ситуациях, когда источник данных передаются в OLE, например вызов [COleDataSource::D одрагдроп](reference/coledatasource-class.md#dodragdrop), необходимо вызвать `pDataSrc->InternalRelease` . Пример:
 
 [!code-cpp[NVC_MFCListView#1](../atl/reference/codesnippet/cpp/data-objects-and-data-sources-creation-and-destruction_1.cpp)]
 
@@ -84,6 +85,6 @@ ms.locfileid: "84620500"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Объекты и источники данных (OLE)](data-objects-and-data-sources-ole.md)<br/>
+[Объекты данных и источники данных (OLE)](data-objects-and-data-sources-ole.md)<br/>
 [Класс Коледатаобжект](reference/coledataobject-class.md)<br/>
 [Класс COleDataSource](reference/coledatasource-class.md)
