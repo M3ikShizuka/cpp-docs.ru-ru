@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/CLRUNMANAGEDCODECHECK (удаление SuppressUnmanagedCodeSecurityAttribute)
 title: /CLRUNMANAGEDCODECHECK (удалить атрибут SuppressUnmanagedCodeSecurityAttribute)
 ms.date: 05/16/2019
 ms.topic: reference
@@ -10,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 73abc426-dab0-45e2-be85-0f9a14206cc2
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: ecc560673a8e98752289ef0e0f89d3abfc1938e4
-ms.sourcegitcommit: a10c9390413978d36b8096b684d5ed4cf1553bc8
+ms.openlocfilehash: e08b7b4b18a463122316b041ad81d6ddd2598bca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65837243"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182402"
 ---
 # <a name="clrunmanagedcodecheck-remove-suppressunmanagedcodesecurityattribute"></a>/CLRUNMANAGEDCODECHECK (удалить атрибут SuppressUnmanagedCodeSecurityAttribute)
 
@@ -23,9 +24,9 @@ ms.locfileid: "65837243"
 
 ## <a name="syntax"></a>Синтаксис
 
-> **/CLRUNMANAGEDCODECHECK**[ **:NO**]
+> **/CLRUNMANAGEDCODECHECK**[**:NO**]
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 По умолчанию компоновщик применяет атрибут **SuppressUnmanagedCodeSecurityAttribute** к создаваемым им вызовам `PInvoke`. Если параметр включен **/CLRUNMANAGEDCODECHECK**, атрибут **SuppressUnmanagedCodeSecurityAttribute** удаляется. Чтобы явно применить атрибут **SuppressUnmanagedCodeSecurityAttribute** к вызовам `PInvoke`, создаваемым компоновщиком, можно использовать параметр **/CLRUNMANAGEDCODECHECK:NO**.
 
@@ -53,7 +54,7 @@ ms.locfileid: "65837243"
 
 1. См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.CLRUnmanagedCodeCheck%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 - [Справочник по компоновщику MSVC](linking.md)
 - [Параметры компоновщика MSVC](linker-options.md)

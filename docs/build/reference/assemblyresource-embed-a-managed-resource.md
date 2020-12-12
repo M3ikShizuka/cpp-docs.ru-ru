@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/ASSEMBLYRESOURCE (внедрение управляемого ресурса)
 title: /ASSEMBLYRESOURCE (внедрение управляемого ресурса)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - assemblies [C++], linking resource files
 - /ASSEMBLYRESOURCE linker option
 ms.assetid: 0ce6e1fb-921b-4b1b-a59c-d35388d789f2
-ms.openlocfilehash: 1eac489ffd01f6bd79fc8c5bbda23adb751c9486
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3f79cc177df72bb83288a0a229fdf47adb0e7fc0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62295075"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182922"
 ---
 # <a name="assemblyresource-embed-a-managed-resource"></a>/ASSEMBLYRESOURCE (внедрение управляемого ресурса)
 
@@ -27,22 +28,22 @@ ms.locfileid: "62295075"
 ## <a name="parameters"></a>Параметры
 
 *filename*<br/>
-Управляемый ресурс, который требуется внедрить в этой сборке.
+Управляемый ресурс, который необходимо внедрить в эту сборку.
 
 *name*<br/>
-Необязательный параметр. Логическое имя ресурса; имя, используемое для загрузки ресурса. По умолчанию используется имя файла.
+Необязательный элемент. Логическое имя для ресурса; имя, используемое для загрузки ресурса. По умолчанию используется имя файла.
 
-Кроме того можно указать, если этот файл должен быть закрытым в манифесте сборки. По умолчанию *имя* является открытым в сборке.
+При необходимости можно указать, должен ли файл быть частным в манифесте сборки. По умолчанию *имя* является общедоступным в сборке.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Используйте параметр/ASSEMBLYRESOURCE для внедрения ресурса в сборке.
+Используйте параметр/ASSEMBLYRESOURCE для внедрения ресурса в сборку.
 
-Ресурсы в сборку при создании с ключом компоновщика открыты. Компоновщик не поддерживает переименование ресурса в сборке.
+Ресурсы являются общедоступными в сборке при их создании с помощью компоновщика. Компоновщик не позволяет переименовать ресурс в сборке.
 
-Если *filename* является файлом ресурсов (RESOURCES) платформы .NET Framework, созданным, например, по [генератор файлов ресурсов (Resgen.exe)](/dotnet/framework/tools/resgen-exe-resource-file-generator) или в среде разработки, он может осуществляться с помощью членов пространства **System.Resources** пространства имен (см. в разделе [System.Resources.ResourceManager](/dotnet/api/system.resources.resourcemanager) Дополнительные сведения). Все прочие ресурсы, используйте **GetManifestResource** \* методы в **System.Reflection.Assembly** класс для доступа к ресурсу во время выполнения.
+Если *filename* — файл ресурсов .NET Framework (Resources), созданный, например, [генератор файлов ресурсов (Resgen.exe)](/dotnet/framework/tools/resgen-exe-resource-file-generator) или в среде разработки, доступ к нему можно получить с помощью членов пространства имен **System. Resources** (Дополнительные сведения см. в разделе [System. Resources. ResourceManager](/dotnet/api/system.resources.resourcemanager) ). Для всех остальных ресурсов используйте методы **жетманифестресаурце** \* в классе **System. Reflection. Assembly** для доступа к ресурсу во время выполнения.
 
-Доступны следующие параметры компоновщика, которые влияют на создание сборки.
+Другие параметры компоновщика, влияющие на создание сборки:
 
 - [/ASSEMBLYDEBUG](assemblydebug-add-debuggableattribute.md)
 
@@ -60,19 +61,19 @@ ms.locfileid: "62295075"
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Задание данного параметра компоновщика в среде разработки Visual Studio
 
-1. Откройте диалоговое окно **Страницы свойств** проекта. Дополнительные сведения см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
-1. Нажмите кнопку **компоновщика** папки.
+1. Выберите папку **компоновщика**.
 
-1. Нажмите кнопку **ввода** страницу свойств.
+1. Перейдите на страницу свойств **входные данные** .
 
-1. Изменить **внедренный файл управляемых ресурсов** свойство.
+1. Измените свойство **внедрить управляемый файл ресурсов** .
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Задание данного параметра компоновщика программным способом
 
 1. См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EmbedManagedResourceFile%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по компоновщику MSVC](linking.md)<br/>
 [Параметры компоновщика MSVC](linker-options.md)

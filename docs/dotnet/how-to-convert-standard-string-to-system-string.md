@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения см. в статье как преобразовать стандартную строку в System:: String.'
 title: Практическое руководство. Преобразование стандартной строки к типу System::String
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - string conversion [C++], C++ Standard Library string
 - strings [C++], converting
 ms.assetid: 1fde79a0-9d0b-44e5-981b-e8f2676c199d
-ms.openlocfilehash: 3714cf519bcffc41ce8bfcf646dea11654d22ae1
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: b42e321f7819bf61149e17b5281badf4704bdbfb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "79545057"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181362"
 ---
 # <a name="how-to-convert-standard-string-to-systemstring"></a>Практическое руководство. Преобразование стандартной строки к типу System::String
 
-В этом разделе показано, как C++ преобразовать строку стандартной библиотеки ([\<строки >](../standard-library/string.md)) в <xref:System.String>.
+В этом разделе показано, как преобразовать строку стандартной библиотеки C++ ( [\<string>](../standard-library/string.md) ) в <xref:System.String> .
 
 ## <a name="example"></a>Пример
 
@@ -46,6 +47,6 @@ test
 test
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Использование взаимодействия языка C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[Использование взаимодействия C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

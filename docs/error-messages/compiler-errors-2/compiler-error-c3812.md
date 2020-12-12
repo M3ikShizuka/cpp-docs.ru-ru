@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C3812'
 title: Ошибка компилятора C3812
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - C3812
 ms.assetid: 326ac706-9a5f-4851-b9d2-b90c64c75532
-ms.openlocfilehash: 4f372b5fd8533ffacbe0dcd33b3449e44b1cc362
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 710968efbfbf0e2e008ab18e50d6a7e8d0cd2e1e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384339"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180985"
 ---
 # <a name="compiler-error-c3812"></a>Ошибка компилятора C3812
 
-«Свойство» должна быть первой лексемой в объявлении свойства
+"свойство" должно быть первым токеном в объявлении свойства
 
-При объявлении свойства, `__property` слово должно быть первым токеном в строке.
+При объявлении свойства `__property` ключевое слово должно быть первым маркером в строке.
 
-C3812 доступен только с помощью параметра компилятора устаревшие **/CLR: oldSyntax**.
+C3812 доступен только при использовании устаревшего параметра компилятора **/clr: oldSyntax**.

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения см. в статье как преобразовать System.: String в стандартную строку.'
 title: Практическое руководство. Преобразование строки System::String в стандартную строку
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -6,16 +7,16 @@ helpviewer_keywords:
 - C++ Standard Library, converting System::String to standard string
 - string conversion, System::String
 ms.assetid: 79e2537e-d4eb-459f-9506-0e738045b59e
-ms.openlocfilehash: 7dd73b8fed98918135b66af1b6351977426cd26e
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 2bcdaef743f2856f2db20dae8b804bb33546ea0d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "79545303"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181336"
 ---
 # <a name="how-to-convert-systemstring-to-standard-string"></a>Практическое руководство. Преобразование строки System::String в стандартную строку
 
-<xref:System.String> можно преобразовать в `std::string` или `std::wstring`без использования `PtrToStringChars` в Вкклр. h.
+Можно преобразовать <xref:System.String> в `std::string` или `std::wstring` , не используя `PtrToStringChars` в вкклр. h.
 
 ## <a name="example"></a>Пример
 
@@ -63,6 +64,6 @@ abcd
 efgh
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Использование взаимодействия языка C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[Использование взаимодействия C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

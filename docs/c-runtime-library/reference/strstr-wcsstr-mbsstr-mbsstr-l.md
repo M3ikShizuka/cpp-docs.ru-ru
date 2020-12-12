@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: стрстр, вксстр, _mbsstr, _mbsstr_l'
 title: strstr, wcsstr, _mbsstr, _mbsstr_l
 ms.date: 4/2/2020
 api_name:
@@ -50,12 +51,12 @@ helpviewer_keywords:
 - _mbsstr_l function
 - strstr function
 ms.assetid: 03d70c3f-2473-45cb-a5f8-b35beeb2748a
-ms.openlocfilehash: 3ac4df470e40b35257495d51c5d2d0efdb9310af
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 05f7cd3b03a56cb5e0e9343bd8cdee98af124988
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233994"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181687"
 ---
 # <a name="strstr-wcsstr-_mbsstr-_mbsstr_l"></a>strstr, wcsstr, _mbsstr, _mbsstr_l
 
@@ -133,9 +134,9 @@ const unsigned char *_mbsstr_l(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Возвращает указатель на первое вхождение *стрсеарч* в *str*или значение null, если *стрсеарч* не отображается в *str*. Если *стрсеарч* указывает на строку нулевой длины, функция возвращает *str*.
+Возвращает указатель на первое вхождение *стрсеарч* в *str* или значение null, если *стрсеарч* не отображается в *str*. Если *стрсеарч* указывает на строку нулевой длины, функция возвращает *str*.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `strstr`Функция возвращает указатель на первое вхождение *стрсеарч* в *str*. Поиск не включает завершающие нуль-символы. `wcsstr` является версией `strstr` с расширенными символами, а `_mbsstr` — версией с многобайтовыми символами. Аргументы и возвращаемое значение `wcsstr` представляют собой двухбайтовые строки; аргументы и возвращаемое значение `_mbsstr` представляют собой многобайтовые строки. `_mbsstr` проверяет свои параметры. Если *str* или *стрсеарч* имеет значение null, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md) . Если выполнение может быть продолжено, `_mbsstr` присваивает свойству `errno` значение еинвал и возвращает значение 0. Функции `strstr` и `wcsstr` не проверяют свои параметры. В остальном эти три функции ведут себя идентично.
 
@@ -206,7 +207,7 @@ lazy found at position 36
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Локаль](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
 [strpbrk, wcspbrk, _mbspbrk, _mbspbrk_l](strpbrk-wcspbrk-mbspbrk-mbspbrk-l.md)<br/>
