@@ -1,5 +1,6 @@
 ---
-title: Класс COleChangeIconDialog
+description: 'Дополнительные сведения о: Колечанжеикондиалог Class'
+title: Класс Колечанжеикондиалог
 ms.date: 11/04/2016
 f1_keywords:
 - COleChangeIconDialog
@@ -16,14 +17,14 @@ helpviewer_keywords:
 - COleChangeIconDialog [MFC], GetIconicMetafile
 - COleChangeIconDialog [MFC], m_ci
 ms.assetid: 8d6e131b-ddbb-4dff-a432-f239efda8e3d
-ms.openlocfilehash: 6cdc0ed6bfa4765817de8b7628f339db5e7e5bf5
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5ec6113bbcf63462380f18c4ac52abbb8706c8d5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369624"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209962"
 ---
-# <a name="colechangeicondialog-class"></a>Класс COleChangeIconDialog
+# <a name="colechangeicondialog-class"></a>Класс Колечанжеикондиалог
 
 Используется для диалогового окна OLE "Изменить значок".
 
@@ -33,35 +34,35 @@ ms.locfileid: "81369624"
 class COleChangeIconDialog : public COleDialog
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[ColeChangeIconДиалог::ColeChangeIconДиалог](#colechangeicondialog)|Формирует объект `COleChangeIconDialog`.|
+|[Колечанжеикондиалог:: Колечанжеикондиалог](#colechangeicondialog)|Формирует объект `COleChangeIconDialog`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[ColeChangeIconДиалог::DoChangeIcon](#dochangeicon)|Выполняет изменение, указанное в диалоговом поле.|
-|[ColeChangeIconДиалог::DoModal](#domodal)|Отображает диалоговую коробку ПОДОБОПН OLE 2 Change Icon.|
-|[ColeChangeIconДиалог::GetIconicMetafile](#geticonicmetafile)|Получает ручку метафайла, связанную с культовой формой этого элемента.|
+|[Колечанжеикондиалог::D Очанжеикон](#dochangeicon)|Выполняет изменение, указанное в диалоговом окне.|
+|[Колечанжеикондиалог::D Омодал](#domodal)|Отображает диалоговое окно «Изменение значка OLE 2».|
+|[Колечанжеикондиалог:: Жетиконикметафиле](#geticonicmetafile)|Возвращает маркер для метафайла, связанного со значком этого элемента.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[ColeChangeIconДиалогок::m_ci](#m_ci)|Структура, контролирующая поведение диалогового окна.|
+|[Колечанжеикондиалог:: m_ci](#m_ci)|Структура, которая управляет поведением диалогового окна.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Создайте объект `COleChangeIconDialog` класса, когда вы хотите вызвать этот диалоговый ящик. После `COleChangeIconDialog` построения объекта можно использовать [структуру m_ci](#m_ci) для инициализации значений или состояний элементов управления в диалоговом поле. Структура `m_ci` типа OLEUICHANGEICON. Для получения дополнительной информации об [использовании](#domodal) этого класса диалогов см.
+Создайте объект класса, `COleChangeIconDialog` Если нужно вызвать это диалоговое окно. После создания `COleChangeIconDialog` объекта можно использовать структуру [m_ci](#m_ci) для инициализации значений или состояний элементов управления в диалоговом окне. `m_ci`Структура имеет тип олеуичанжеикон. Дополнительные сведения об использовании этого класса диалогового окна см. в описании функции члена [DoModal](#domodal) .
 
-Для получения дополнительной информации, см [OLEUICHANGEICON](/windows/win32/api/oledlg/ns-oledlg-oleuichangeiconw) структуры в Windows SDK.
+Дополнительные сведения см. в описании структуры [олеуичанжеикон](/windows/win32/api/oledlg/ns-oledlg-oleuichangeiconw) в Windows SDK.
 
-Для получения дополнительной информации о OL-специфических диалоговых ящиков, [см.](../../mfc/dialog-boxes-in-ole.md)
+Дополнительные сведения о диалоговых окнах, связанных с OLE, см. в разделе [диалоговые окна статьи в OLE](../../mfc/dialog-boxes-in-ole.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -81,11 +82,11 @@ class COleChangeIconDialog : public COleDialog
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxodlgs.h
+**Заголовок:** афксодлгс. h
 
-## <a name="colechangeicondialogcolechangeicondialog"></a><a name="colechangeicondialog"></a>ColeChangeIconДиалог::ColeChangeIconДиалог
+## <a name="colechangeicondialogcolechangeicondialog"></a><a name="colechangeicondialog"></a> Колечанжеикондиалог:: Колечанжеикондиалог
 
-Эта функция строит `COleChangeIconDialog` только объект.
+Эта функция конструирует только `COleChangeIconDialog` объект.
 
 ```
 explicit COleChangeIconDialog(
@@ -96,34 +97,34 @@ explicit COleChangeIconDialog(
 
 ### <a name="parameters"></a>Параметры
 
-*pItem*<br/>
-Указывает на элемент, который будет преобразован.
+*питем*<br/>
+Указывает на элемент для преобразования.
 
 *dwFlags*<br/>
-Флаг создания, который содержит любое количество следующих значений, объединенных с помощью bitwise-или оператора:
+Флаг создания, который содержит любое число следующих значений, Объединенных с помощью оператора побитового или:
 
-- CIF_SELECTCURRENT указывает, что текущая кнопка радио будет выбрана первоначально, когда диалоговая коробка называется. Это значение по умолчанию.
+- CIF_SELECTCURRENT указывает, что при вызове диалогового окна будет выбран текущий переключатель. Это значение по умолчанию.
 
-- CIF_SELECTDEFAULT указывает, что кнопка радио по умолчанию будет выбрана первоначально, когда диалоговая коробка называется.
+- CIF_SELECTDEFAULT указывает, что при вызове диалогового окна будет выбран переключатель по умолчанию.
 
-- CIF_SELECTFROMFILE указывает, что кнопка радио Из файла будет выбрана первоначально, когда диалоговый ящик называется.
+- CIF_SELECTFROMFILE указывает, что при вызове диалогового окна будет выбран переключатель из файла изначально.
 
-- CIF_SHOWHELP указывает, что при вызове диалогового окна будет отображаться кнопка справки.
+- CIF_SHOWHELP Указывает, что при вызове диалогового окна появится кнопка Справка.
 
-- CIF_USEICONEXE указывает, что значок должен быть извлечен из исполняемого, указанного в `szIconExe` поле [m_ci,](#m_ci) а не извлечены из типа. Это полезно для встраивания или ссылки на файлы, не относящиеся к OLE.
+- CIF_USEICONEXE указывает, что значок должен быть извлечен из исполняемого файла, указанного в `szIconExe` поле [m_ci](#m_ci) вместо того, чтобы быть полученным из типа. Это полезно для внедрения или связывания файлов, отличных от OLE.
 
-*pParentWnd*<br/>
-Указывает на объект окна родителя `CWnd`или владельца (типа), к которому принадлежит объект диалога. Если это NULL, родительское окно окна диалогов будет установлено на основное окно приложения.
+*ппарентвнд*<br/>
+Указывает на родительский элемент или объект окна-владельца (типа `CWnd` ), которому принадлежит объект диалогового окна. Если значение равно NULL, то родительское окно диалогового окна будет установлено в главное окно приложения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Чтобы отобразить диалоговую будку, позвоните в функцию [DoModal.](#domodal)
+Чтобы открыть диалоговое окно, вызовите функцию [DoModal](#domodal) .
 
-Для получения дополнительной информации, см [OLEUICHANGEICON](/windows/win32/api/oledlg/ns-oledlg-oleuichangeiconw) структуры в Windows SDK.
+Дополнительные сведения см. в описании структуры [олеуичанжеикон](/windows/win32/api/oledlg/ns-oledlg-oleuichangeiconw) в Windows SDK.
 
-## <a name="colechangeicondialogdochangeicon"></a><a name="dochangeicon"></a>ColeChangeIconДиалог::DoChangeIcon
+## <a name="colechangeicondialogdochangeicon"></a><a name="dochangeicon"></a> Колечанжеикондиалог::D Очанжеикон
 
-Вызовите эту функцию, чтобы изменить значок, представляющий элемент, на тот, который выбран в поле диалога после того, как [DoModal](#domodal) возвращает IDOK.
+Вызовите эту функцию, чтобы изменить значок, представляющий элемент, в тот, который выбран в диалоговом окне после [DoModal](#domodal) возвращает идок.
 
 ```
 BOOL DoChangeIcon(COleClientItem* pItem);
@@ -131,16 +132,16 @@ BOOL DoChangeIcon(COleClientItem* pItem);
 
 ### <a name="parameters"></a>Параметры
 
-*pItem*<br/>
+*питем*<br/>
 Указывает на элемент, значок которого изменяется.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если изменения успешны; в противном случае 0.
+Ненулевое значение, если изменение выполнено успешно; в противном случае — 0.
 
-## <a name="colechangeicondialogdomodal"></a><a name="domodal"></a>ColeChangeIconДиалог::DoModal
+## <a name="colechangeicondialogdomodal"></a><a name="domodal"></a> Колечанжеикондиалог::D Омодал
 
-Вызовите эту функцию для отображения диалогового окна ICON Change Icon.
+Эта функция вызывается для вывода диалогового окна «значок изменения OLE».
 
 ```
 virtual INT_PTR DoModal();
@@ -150,21 +151,21 @@ virtual INT_PTR DoModal();
 
 Состояние завершения для диалогового окна. Одно из следующих значений:
 
-- IDOK, если диалоговая коробка была успешно отображана.
+- ИДОК, если диалоговое окно было успешно отображено.
 
-- IDCANCEL, если пользователь отменил диалоговую будку.
+- ИДКАНЦЕЛ, если пользователь отменил диалоговое окно.
 
-- IDABORT, если произошла ошибка. Если IDABORT возвращается, `COleDialog::GetLastError` позвоните функции участника, чтобы получить больше информации о типе ошибки, которая произошла. Список возможных ошибок [OleUIChangeIcon](/windows/win32/api/oledlg/nf-oledlg-oleuichangeiconw) можно узнать в SDK Windows.
+- ИДАБОРТ, если произошла ошибка. Если возвращается ИДАБОРТ, вызовите `COleDialog::GetLastError` функцию-член, чтобы получить дополнительные сведения о типе произошедшей ошибки. Список возможных ошибок см. в описании функции [олеуичанжеикон](/windows/win32/api/oledlg/nf-oledlg-oleuichangeiconw) в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если вы хотите инициализировать различные элементы управления диалоговой коробкой, установив элементы [структуры m_ci,](#m_ci) вы должны сделать это перед вызовом, `DoModal`но после построения объекта диалога.
+Если требуется инициализировать различные элементы управления диалогового окна путем установки элементов структуры [m_ci](#m_ci) , следует сделать это перед вызовом метода `DoModal` , но после создания объекта диалогового окна.
 
-При `DoModal` возврате IDOK можно вызвать другие функции участника, чтобы получить настройки или информацию, вводимые пользователем в диалоговую будку.
+Если `DoModal` ВОЗВРАЩАЕТ идок, можно вызвать другие функции, чтобы получить параметры или сведения, введенные пользователем в диалоговое окно.
 
-## <a name="colechangeicondialoggeticonicmetafile"></a><a name="geticonicmetafile"></a>ColeChangeIconДиалог::GetIconicMetafile
+## <a name="colechangeicondialoggeticonicmetafile"></a><a name="geticonicmetafile"></a> Колечанжеикондиалог:: Жетиконикметафиле
 
-Вызовите эту функцию, чтобы получить ручку метафайла, который содержит знаковый аспект выбранного элемента.
+Вызовите эту функцию, чтобы получить маркер для метафайла, содержащего значок выбранного элемента.
 
 ```
 HGLOBAL GetIconicMetafile() const;
@@ -172,24 +173,24 @@ HGLOBAL GetIconicMetafile() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Ручка к метафайлу, содержащему знаковый аспект новой иконки, если диалоговое окно было отклонено, выбрав **OK;** в противном случае, значок, как это было до диалога был показан.
+Маркер для метафайла, содержащего значок нового значка, если диалоговое окно было закрыто нажатием кнопки **ОК**. в противном случае — значок, находился перед отображением диалогового окна.
 
-## <a name="colechangeicondialogm_ci"></a><a name="m_ci"></a>ColeChangeIconДиалогок::m_ci
+## <a name="colechangeicondialogm_ci"></a><a name="m_ci"></a> Колечанжеикондиалог:: m_ci
 
-Структура типа OLEUICHANGEICON используется для управления поведением диалогового окна Change Icon.
+Структура типа ОЛЕУИЧАНЖЕИКОН, используемая для управления поведением диалогового окна «Изменение значка».
 
 ```
 OLEUICHANGEICON m_ci;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Члены этой структуры могут быть изменены либо непосредственно, либо через функции членов.
+Члены этой структуры можно изменять напрямую или с помощью функций-членов.
 
-Для получения дополнительной информации, см [OLEUICHANGEICON](/windows/win32/api/oledlg/ns-oledlg-oleuichangeiconw) структуры в Windows SDK.
+Дополнительные сведения см. в описании структуры [олеуичанжеикон](/windows/win32/api/oledlg/ns-oledlg-oleuichangeiconw) в Windows SDK.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс COleDialog](../../mfc/reference/coledialog-class.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
-[Класс COleDialog](../../mfc/reference/coledialog-class.md)
+[Класс Коледиалог](../../mfc/reference/coledialog-class.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
+[Класс Коледиалог](../../mfc/reference/coledialog-class.md)

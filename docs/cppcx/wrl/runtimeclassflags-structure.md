@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура RuntimeClassFlags'
 title: RuntimeClassFlags - структура
 ms.date: 10/03/2018
 ms.topic: reference
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Microsoft::WRL::RuntimeClassFlags structure
 - Microsoft::WRL::RuntimeClassFlags::value constant
 ms.assetid: 7098d605-bd14-4d51-82f4-3def8296a938
-ms.openlocfilehash: 9fed5bb31b077288495a78aefcbd8401b3520bb6
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7874447fbbbe429884c5a79d0c70bb93e617ec61
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81367224"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209273"
 ---
 # <a name="runtimeclassflags-structure"></a>RuntimeClassFlags - структура
 
@@ -29,16 +30,16 @@ struct RuntimeClassFlags;
 
 ### <a name="parameters"></a>Параметры
 
-*Флаги*<br/>
-Значение [значения runtimeClassType.](runtimeclasstype-enumeration.md)
+*flags*<br/>
+Значение [перечисления RuntimeClassType](runtimeclasstype-enumeration.md) .
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constants"></a>Открытые константы
 
 |Имя|Описание|
 |----------|-----------------|
-|[Константа RuntimeClassFlags::value](#value-constant)|Содержит значение [enumeration RuntimeClassType.](runtimeclasstype-enumeration.md)|
+|[Константа RuntimeClassFlags::value](#value-constant)|Содержит значение [перечисления RuntimeClassType](runtimeclasstype-enumeration.md) .|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -46,13 +47,13 @@ struct RuntimeClassFlags;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** implements.h
+**Заголовок:** Implements. h
 
 **Пространство имен:** Microsoft::WRL
 
-## <a name="runtimeclassflagsvalue-constant"></a><a name="value-constant"></a>RuntimeClassFlags::value Constant
+## <a name="runtimeclassflagsvalue-constant"></a><a name="value-constant"></a> Константа RuntimeClassFlags:: value
 
-Поле, содержащее значение [значения значения значения runtimeClassType Enumeration.](runtimeclasstype-enumeration.md)
+Поле, содержащее значение [перечисления RuntimeClassType](runtimeclasstype-enumeration.md) .
 
 ```cpp
 static const unsigned int value = flags;

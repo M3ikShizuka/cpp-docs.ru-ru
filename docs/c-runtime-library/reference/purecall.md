@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _purecall'
 title: _purecall
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - _purecall function
 - purecall function
 ms.assetid: 56135d9b-3403-4e22-822d-e714523801cc
-ms.openlocfilehash: 19ad6c2f517d9ddf277a7bdda6e46c7940f0d3f1
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: df52d7383685f3ce183562d8789b710fd7587acd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913339"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209455"
 ---
 # <a name="_purecall"></a>_purecall
 
@@ -55,9 +56,9 @@ extern "C" int __cdecl _purecall();
 
 ## <a name="requirements"></a>Требования
 
-Функция **_purecall** не имеет объявления заголовка. **_Purecall_handler** typedef определен в \<> stdlib. h.
+Функция **_purecall** не имеет объявления заголовка. Определение **_purecall_handler** typedef определяется в \<stdlib.h> .
 
 ## <a name="see-also"></a>См. также раздел
 
-[Алфавитный указатель функций](crt-alphabetical-function-reference.md)<br/>
+[Алфавитный справочник по функциям](crt-alphabetical-function-reference.md)<br/>
 [_get_purecall_handler, _set_purecall_handler](get-purecall-handler-set-purecall-handler.md)<br/>

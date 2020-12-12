@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _callnewh'
 title: _callnewh
 ms.date: 4/2/2020
 api_name:
@@ -26,12 +27,12 @@ f1_keywords:
 helpviewer_keywords:
 - _callnewh
 ms.assetid: 4dcb73e9-6384-4d12-a973-a8807d4de7a8
-ms.openlocfilehash: 3990d4b15c25cfd6c753c2b1d44c112971ff59af
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: f75028a47bbdbb6c12617a79b07a2fb8f4c5a6bc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918804"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209611"
 ---
 # <a name="_callnewh"></a>_callnewh
 
@@ -52,7 +53,7 @@ int _callnewh(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-|Применение|Описание|
+|Значение|Описание|
 |-----------|-----------------|
 |0|Ошибка: новый обработчик либо не установлен, либо не активен.|
 |1|Успешное завершение: новый обработчик установлен и активен. Выделение памяти можно повторить.|
@@ -61,7 +62,7 @@ int _callnewh(
 
 Эта функция вызывает [bad_alloc](../../standard-library/bad-alloc-class.md), если *новый обработчик* обнаружить не удается.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 *Новый обработчик* вызывается, если [оператору new](../../cpp/new-operator-cpp.md) не удается успешно выделить память. После этого новый обработчик может инициировать соответствующее действие, например освобождение памяти для успешного выполнения последующих распределений.
 

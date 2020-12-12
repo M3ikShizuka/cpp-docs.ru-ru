@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _putc_nolock, _putwc_nolock'
 title: _putc_nolock, _putwc_nolock
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - _puttc_nolock function
 - _putwc_nolock function
 ms.assetid: 3cfc7f21-c9e8-4b7f-b0fb-af0d4d85e7e1
-ms.openlocfilehash: 21ab002dee736a099bae5ce12f5c78248e682d58
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 2d69851ee6458d54f9c56e13894046ffa094e11f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82913314"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209442"
 ---
 # <a name="_putc_nolock-_putwc_nolock"></a>_putc_nolock, _putwc_nolock
 
@@ -66,7 +67,7 @@ wint_t _putwc_nolock(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Символ, который требуется записать.
 
 *вышестоящий*<br/>
@@ -76,11 +77,11 @@ wint_t _putwc_nolock(
 
 См. **putc, putwc**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **_putc_nolock** и **_putwc_nolock** идентичны версиям без суффикса **_nolock** , за исключением того, что они не защищены от помех в других потоках. Они могут выполняться быстрее, поскольку не создают дополнительную нагрузку, связанную с блокировкой работы других потоков. Используйте эти функции только в потокобезопасных контекстах, например в однопоточных приложениях или если вызываемая область уже обрабатывает изоляцию потоков.
 
-**_putwc_nolock** — это версия **_putc_nolock**для расширенных символов; Эти две функции ведут себя одинаково, если поток открыт в режиме ANSI. **_putc_nolock** в настоящее время не поддерживает вывод в поток Юникода.
+**_putwc_nolock** — это версия **_putc_nolock** для расширенных символов; Эти две функции ведут себя одинаково, если поток открыт в режиме ANSI. **_putc_nolock** в настоящее время не поддерживает вывод в поток Юникода.
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -97,7 +98,7 @@ wint_t _putwc_nolock(
 |**_putc_nolock**|\<stdio.h>|
 |**_putwc_nolock**|\<stdio.h> или \<wchar.h>|
 
-Консоль не поддерживается в приложениях универсальная платформа Windows (UWP). Стандартные дескрипторы потока, связанные с консолью, **stdin**, **stdout**и **stderr**, должны быть перенаправляться до того, как функции времени выполнения C смогут использовать их в приложениях UWP. Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
+Консоль не поддерживается в приложениях универсальная платформа Windows (UWP). Стандартные дескрипторы потока, связанные с консолью, **stdin**, **stdout** и **stderr**, должны быть перенаправляться до того, как функции времени выполнения C смогут использовать их в приложениях UWP. Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Библиотеки
 

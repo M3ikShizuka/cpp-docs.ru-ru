@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: printf_s, _printf_s_l, wprintf_s, _wprintf_s_l'
 title: printf_s, _printf_s_l, wprintf_s, _wprintf_s_l
 ms.date: 11/04/2016
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - tprintf_s_l function
 - _wprintf_s_l function
 ms.assetid: 044ebb2e-5cc1-445d-bb4c-f084b405615b
-ms.openlocfilehash: f8b324b5f3c23b324bdcd43e3529ad3a3d4d6847
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: d26f18a45f218f6d1921a8603ffed15df24dcc90
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70950187"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209481"
 ---
 # <a name="printf_s-_printf_s_l-wprintf_s-_wprintf_s_l"></a>printf_s, _printf_s_l, wprintf_s, _wprintf_s_l
 
@@ -78,7 +79,7 @@ int _wprintf_s_l(
 *format*<br/>
 Формат объекта.
 
-*параметр*<br/>
+*argument*<br/>
 Необязательные аргументы.
 
 *locale*<br/>
@@ -88,23 +89,23 @@ int _wprintf_s_l(
 
 Возвращает число выведенных символов или отрицательное значение в случае ошибки.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Функция **printf_s** форматирует и выводит последовательность символов и значений в стандартный выходной поток, **stdout**. Если аргументы следуют за строкой *формата* , строка *формата* должна содержать спецификации, определяющие формат выходных данных для аргументов.
 
-Основное различие между **printf_s** и **printf** заключается в том, что **printf_s** проверяет строку формата на допустимость символов форматирования, тогда как **printf** проверяет, является ли строка формата пустым указателем. Если проверка завершается с ошибкой, то вызывается обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, функция **возвращает значение-1 и устанавливает** для **еинвал**.
+Основное различие между **printf_s** и **printf** состоит в том, что **printf_s** проверяет строку формата на допустимость символов форматирования, тогда как **printf** проверяет, является ли строка формата пустым указателем. Если проверка завершается с ошибкой, то вызывается обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, функция **возвращает значение-1 и устанавливает** для **еинвал**.
 
-Дополнительные **сведения о кодах ошибок и код** ошибки см. в разделе _doserrno, Code, [_sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Сведения о кодах ошибок, а именно об ошибках, см **. в разделе** _doserrno, код ошибки [, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-поведение **printf_s** и **fprintf_s** идентично, за исключением того, что **printf_s** записывает выходные данные в **stdout** , а не в назначение **файла**типа. Дополнительные сведения см. в разделе [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).
+поведение **printf_s** и **fprintf_s** идентично, за исключением того, что **printf_s** записывает выходные данные в **stdout** , а не в назначение **файла** типа. Дополнительные сведения см. в разделе [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md).
 
-**wprintf_s** — это версия **printf_s**для расширенных символов; *Format* — это строка расширенных символов. поведение **wprintf_s** и **printf_s** идентично, если поток открыт в режиме ANSI. **printf_s** в настоящее время не поддерживает вывод в поток Юникода.
+**wprintf_s** — это версия **printf_s** для расширенных символов; *Format* — это строка расширенных символов. поведение **wprintf_s** и **printf_s** идентично, если поток открыт в режиме ANSI. **printf_s** в настоящее время не поддерживает вывод в поток Юникода.
 
 Версии этих функций с суффиксом **_l** идентичны за исключением того, что они используют переданный параметр языкового стандарта вместо локали текущего потока.
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
-|Подпрограмма TCHAR.H|_UNICODE и _MBCS не определены|_MBCS определено|_unicode определено|
+|Подпрограмма TCHAR.H|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tprintf_s**|**printf_s**|**printf_s**|**wprintf_s**|
 |**_tprintf_s_l**|**_printf_s_l**|**_printf_s_l**|**_wprintf_s_l**|
@@ -134,7 +135,7 @@ Line one
 |**printf_s**, **_printf_s_l**|\<stdio.h>|
 |**wprintf_s**, **_wprintf_s_l**|\<stdio.h> или \<wchar.h>|
 
-Консоль не поддерживается в приложениях универсальная платформа Windows (UWP). Стандартные дескрипторы потока, связанные с консолью, **stdin**, **stdout**и **stderr**, должны быть перенаправляться до того, как функции времени выполнения C смогут использовать их в приложениях UWP. Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Консоль не поддерживается в приложениях универсальная платформа Windows (UWP). Стандартные дескрипторы потока, связанные с консолью, **stdin**, **stdout** и **stderr**, должны быть перенаправляться до того, как функции времени выполнения C смогут использовать их в приложениях UWP. Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -186,7 +187,7 @@ int main( void )
 }
 ```
 
-### <a name="sample-output"></a>Пример результатов выполнения
+### <a name="sample-output"></a>Пример выходных данных
 
 ```Output
 Integer formats:
@@ -213,13 +214,13 @@ Real numbers:
 Address as:   0012FF78
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Поддержка чисел с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
 [Потоковый ввод-вывод](../../c-runtime-library/stream-i-o.md)<br/>
-[Языковой стандарт](../../c-runtime-library/locale.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [scanf, _scanf_l, wscanf, _wscanf_l](scanf-scanf-l-wscanf-wscanf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [Функции vprintf](../../c-runtime-library/vprintf-functions.md)<br/>

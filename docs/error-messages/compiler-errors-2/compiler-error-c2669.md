@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C2669'
 title: Ошибка компилятора C2669
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2669
 ms.assetid: f9cb8111-bcdc-484b-a863-2c42e15a0496
-ms.openlocfilehash: 7944ced947ba1d7c8b10172560ce6237a554e236
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 01b40131a2eef4ff83d10c5088b2cae3eb7e55e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62300795"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97210651"
 ---
 # <a name="compiler-error-c2669"></a>Ошибка компилятора C2669
 
-функции-члена не разрешается в анонимном объединении
+функция члена не разрешена в анонимном объединении
 
-[Анонимные объединения](../../cpp/unions.md#anonymous_unions) не могут иметь функции-члены.
+[Анонимные объединения](../../cpp/unions.md#anonymous_unions) не могут иметь функции элементов.
 
 ## <a name="example"></a>Пример
 

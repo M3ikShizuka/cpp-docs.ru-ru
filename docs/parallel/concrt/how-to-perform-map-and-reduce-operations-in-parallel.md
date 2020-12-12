@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о том, как выполнять операции Map и reduce в параллельном режиме.
 title: Практическое руководство. Параллельное выполнение операций сопоставления и сокращения числа элементов
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - parallel map and reduce, example
 - parallel_reduce function, example
 ms.assetid: 9d19fac0-4ab6-4380-a375-3b18eeb87720
-ms.openlocfilehash: 599e46c05a91a1f2ea6e317fe024d3c98a78977f
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: f35c9bf4df5a79cf9568bc286ff628e2f9fd45c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77141711"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209845"
 ---
 # <a name="how-to-perform-map-and-reduce-operations-in-parallel"></a>Практическое руководство. Параллельное выполнение операций сопоставления и сокращения числа элементов
 
 В этом примере показано, как использовать алгоритмы [Concurrency::p arallel_transform](reference/concurrency-namespace-functions.md#parallel_transform) и [concurrency::p arallel_reduce](reference/concurrency-namespace-functions.md#parallel_reduce) и класс [Concurrency:: concurrent_unordered_map](../../parallel/concrt/reference/concurrent-unordered-map-class.md) для подсчета вхождений слов в файлах.
 
-Операция *Map* применяет функцию к каждому значению в последовательности. Операция *сокращения* объединяет элементы последовательности в одно значение. Для выполнения операций Map C++ и reduce можно использовать стандартные библиотеки [std:: Transform](../../standard-library/algorithm-functions.md#transform) и [std:: accumulate](../../standard-library/numeric-functions.md#accumulate) . Однако для повышения производительности при многих проблемах можно использовать алгоритм `parallel_transform` для параллельного выполнения операции сопоставления и алгоритм `parallel_reduce` для параллельного выполнения операции редукции. В некоторых случаях можно использовать `concurrent_unordered_map` для выполнения сопоставления и операции редукции в одной операции.
+Операция *Map* применяет функцию к каждому значению в последовательности. Операция *сокращения* объединяет элементы последовательности в одно значение. Вы можете использовать функции стандартной библиотеки C++ [std:: Transform](../../standard-library/algorithm-functions.md#transform) и [std:: accumulate](../../standard-library/numeric-functions.md#accumulate) для выполнения операций Map и reduce. Однако для повышения производительности при многих проблемах можно использовать алгоритм `parallel_transform` для параллельного выполнения операции сопоставления и алгоритм `parallel_reduce` для параллельного выполнения операции редукции. В некоторых случаях можно использовать `concurrent_unordered_map` для выполнения сопоставления и операции редукции в одной операции.
 
 ## <a name="example"></a>Пример
 
@@ -27,9 +28,9 @@ ms.locfileid: "77141711"
 
 ## <a name="compiling-the-code"></a>Компиляция кода
 
-Чтобы скомпилировать код, скопируйте его и вставьте в проект Visual Studio или вставьте в файл с именем `parallel-map-reduce.cpp` а затем выполните следующую команду в окне командной строки Visual Studio.
+Чтобы скомпилировать код, скопируйте его и вставьте в проект Visual Studio или вставьте в файл с именем, `parallel-map-reduce.cpp` а затем выполните следующую команду в окне командной строки Visual Studio.
 
-> **CL. exe/EHsc Параллел-МАП-редуце. cpp**
+> **cl.exe/EHsc Параллел-МАП-редуце. cpp**
 
 ## <a name="robust-programming"></a>Отказоустойчивость
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C2570'
 title: Ошибка компилятора C2570
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2570
 ms.assetid: d65d0b32-2fac-464a-bcdf-0ebcedf3bf32
-ms.openlocfilehash: 6b9f94b1b17aad85aab37659565e6e0827b5a824
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: faebc117991262c8fff94ef75f18d6e59c884315
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74755516"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209026"
 ---
 # <a name="compiler-error-c2570"></a>Ошибка компилятора C2570
 
 "идентификатор": объединение не может иметь базовые классы
 
-Объединение является производным от класса, структуры или объединения. Такое использование недопустимо. Вместо этого объявите производный тип как класс или структуру.
+Объединение является производным от класса, структуры или объединения. Это не допускается. Вместо этого объявите производный тип как класс или структуру.
 
 Следующий пример приводит к возникновению ошибки C2570:
 

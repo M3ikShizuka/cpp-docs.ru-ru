@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C2567'
 title: Ошибка компилятора C2567
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2567
 ms.assetid: 9c140ac9-7059-47e6-9ba1-e7939c8c0dc3
-ms.openlocfilehash: 921992c678c1de0b74f99f544173478ebe809b2c
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 113dfebc1ac6bde6857ea55fd6249fff12c9faae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80177460"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97209117"
 ---
 # <a name="compiler-error-c2567"></a>Ошибка компилятора C2567
 
 не удается открыть метаданные в файле "File", возможно, файл удален или перемещен
 
-Файл метаданных, указанный в источнике (с `#using`), не найден в том же каталоге, что и серверный процесс компилятора, как это было в процессе внешнего интерфейса компилятора. Дополнительные сведения см. в разделе [директива #using](../../preprocessor/hash-using-directive-cpp.md) .
+Файл метаданных, указанный в источнике (с `#using` ), не найден в том же каталоге, что и серверный процесс компилятора, как это было в процессе внешнего интерфейса компилятора. Дополнительные сведения см. в разделе [директива #using](../../preprocessor/hash-using-directive-cpp.md) .
 
 C2567 может быть вызвана компиляцией с параметром **/c** на одном компьютере и последующей попыткой создания кода во время компоновки на другом компьютере. Дополнительные сведения см. в разделе [/LTCG (создание кода во время компоновки)](../../build/reference/ltcg-link-time-code-generation.md)).
 
