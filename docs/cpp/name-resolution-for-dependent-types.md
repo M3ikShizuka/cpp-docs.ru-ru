@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: разрешение имен для зависимых типов'
 title: Разрешение имен зависимых типов
 ms.date: 11/04/2016
 ms.assetid: 34066bb4-0c79-4fd8-bda7-539a60a277ab
-ms.openlocfilehash: de40bd056fe351e679ff32d9908c068ea4c6752a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f50b067062f01d04ce26374ad969d572e1a7fe08
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227313"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313792"
 ---
 # <a name="name-resolution-for-dependent-types"></a>Разрешение имен зависимых типов
 
@@ -121,6 +122,6 @@ int main() {
 
 Соответствие правилам устранения неоднозначности необходимо соблюдать, поскольку по умолчанию C++ предполагает, что `AY::Rebind` не является шаблоном, в результате чего компилятор интерпретирует знак "`<`" как "меньше чем". Чтобы компилятор мог правильно интерпретировать знак "`Rebind`" как угловую скобку, он должен знать, что `<` — это шаблон.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Разрешение имен](../cpp/templates-and-name-resolution.md)

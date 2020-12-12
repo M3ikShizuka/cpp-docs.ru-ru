@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: перенос исключений между потоками'
 title: Перенос исключений между потоками
 ms.date: 05/07/2019
 helpviewer_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - rethrow_exception
 - move exceptions between threads
 ms.assetid: 5c95d57b-acf5-491f-8122-57c5df0edd98
-ms.openlocfilehash: c3ba61062421462dea8f4280575be9f00ac3931a
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 8b62937c95c755304ab5766185168fad618a53aa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561366"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97313675"
 ---
 # <a name="transporting-exceptions-between-threads"></a>Перенос исключений между потоками
 
@@ -58,7 +59,7 @@ namespace std
 
 `make_exception_ptr`Функция возвращает `exception_ptr` объект, который ссылается на исключение, заданное параметром *e* .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 ### <a name="scenario"></a>Сценарий
 
@@ -88,7 +89,7 @@ namespace std
 
 - Параметр компилятора **/EHa** и **`catch`** оператор может передавать исключения SEH и C++.
 
-- Параметры компилятора **/EHa**, **/EHs**и **/EHsc** , а также **`catch`** инструкции могут передавать исключения C++.
+- Параметры компилятора **/EHa**, **/EHs** и **/EHsc** , а также **`catch`** инструкции могут передавать исключения C++.
 
 - Параметр компилятора **/CLR** и **`catch`** инструкция могут передавать исключения C++. Параметр компилятора **/CLR** подразумевает спецификацию параметра **/EHa** . Обратите внимание, что компилятор не поддерживает передачу управляемых исключений. Это обусловлено тем, что управляемые исключения, которые являются производными от [класса System. Exception](../standard-library/exception-class.md), уже являются объектами, которые можно перемещать между потоками с помощью средств общей среды выполнения лангуанже.
 

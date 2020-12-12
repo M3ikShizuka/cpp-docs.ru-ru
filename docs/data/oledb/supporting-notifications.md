@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: поддержка уведомлений'
 title: Поддержка уведомлений
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - OLE DB provider templates, notifications
 - OLE DB providers, notifications
 ms.assetid: 76e875fd-2bfd-4e4e-9f43-dbe5a3fa7382
-ms.openlocfilehash: d29f84a0a5b33d55c0a04a4c758050cf9746f72a
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3f03ded9b900a8691c256e6cde8eaf1a2f4fb5cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209562"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316678"
 ---
 # <a name="supporting-notifications"></a>Поддержка уведомлений
 
@@ -22,9 +23,9 @@ ms.locfileid: "80209562"
 
 Для реализации уведомлений класс поставщика должен наследовать от [IRowsetNotifyCP](../../data/oledb/irowsetnotifycp-class.md) и [IConnectionPointContainer](../../atl/reference/iconnectionpointcontainerimpl-class.md).
 
-`IRowsetNotifyCP` реализует сайт поставщика для интерфейса точки подключения [IRowsetNotify клиента](/previous-versions/windows/desktop/ms712959(v=vs.85)). `IRowsetNotifyCP` реализует широковещательные функции для уведомления прослушивателей на точке подключения `IID_IRowsetNotify` изменения содержимого набора строк.
+`IRowsetNotifyCP` реализует сайт поставщика для интерфейса точки подключения [IRowsetNotify клиента](/previous-versions/windows/desktop/ms712959(v=vs.85)). `IRowsetNotifyCP` реализует широковещательные функции для уведомления прослушивателей точки подключения об `IID_IRowsetNotify` изменениях содержимого набора строк.
 
-Также необходимо реализовать и зарегистрировать `IRowsetNotify` на потребителе (также известном как приемник) с помощью [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) , чтобы потребитель мог управлять уведомлениями. Сведения о реализации интерфейса точки подключения на потребителе см. в разделе [Получение уведомлений](../../data/oledb/receiving-notifications.md).
+Также необходимо реализовать и зарегистрироваться `IRowsetNotify` на потребителе (также известном как приемник) с помощью [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) , чтобы потребитель мог управлять уведомлениями. Сведения о реализации интерфейса точки подключения на потребителе см. в разделе [Получение уведомлений](../../data/oledb/receiving-notifications.md).
 
 Кроме того, класс должен иметь карту, которая определяет запись точки подключения следующим образом:
 
@@ -36,9 +37,9 @@ END_CONNECTION_POINT_MAP
 
 ## <a name="adding-irowsetnotify"></a>Добавление IRowsetNotify клиента
 
-Чтобы добавить `IRowsetNotify`, необходимо добавить `IConnectionPointContainerImpl<rowset-name>` и `IRowsetNotifyCP<rowset-name>` в цепочку наследования.
+Чтобы добавить `IRowsetNotify` , необходимо добавить `IConnectionPointContainerImpl<rowset-name>` и `IRowsetNotifyCP<rowset-name>` в цепочку наследования.
 
-Например, ниже приведена цепочка наследования для `RUpdateRowset` в [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV):
+Например, вот цепочка наследования для `RUpdateRowset` в [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV):
 
 > [!NOTE]
 > Пример кода может отличаться от указанного здесь. Его следует рассматривать как более актуальную версию.
@@ -65,11 +66,11 @@ COM_INTERFACE_ENTRY(IConnectionPointContainer)
 COM_INTERFACE_ENTRY_IMPL(IConnectionPointContainer)
 ```
 
-Эти макросы позволяют любому пользователю, вызывающему `QueryInterface` для вашего контейнера точки подключения (в основе `IRowsetNotify`) найти запрошенный интерфейс для вашего поставщика. Пример использования точек подключения см. в разделе пример и учебник по МНОГОУГОЛЬНИКам ATL.
+Эти макросы позволяют любому пользователю, обращающимся к `QueryInterface` контейнеру точки подключения (основание `IRowsetNotify` ), найти запрошенный интерфейс у вашего поставщика. Пример использования точек подключения см. в разделе пример и учебник по МНОГОУГОЛЬНИКам ATL.
 
 ### <a name="setting-connection-point-map-entries"></a>Настройка записей карт точек подключения
 
-Также необходимо добавить карту точек подключения. Он должен выглядеть примерно так:
+Также необходимо добавить карту точек подключения. Оно должно иметь приблизительно следующий вид:
 
 ```cpp
 BEGIN_CONNECTION_POINT_MAP(rowset-name)
@@ -77,7 +78,7 @@ BEGIN_CONNECTION_POINT_MAP(rowset-name)
 END_CONNECTION_POINT_MAP()
 ```
 
-Эта карта точек подключения позволяет компоненту, который ищет интерфейс `IRowsetNotify`, найти его в поставщике.
+Эта карта точек подключения позволяет компоненту, который ищет `IRowsetNotify` интерфейс, найти его в поставщике.
 
 ### <a name="setting-properties"></a>Установка свойств
 
@@ -103,4 +104,4 @@ END_CONNECTION_POINT_MAP()
 
 ## <a name="see-also"></a>См. также раздел
 
-[Дополнительные способы использования поставщика](../../data/oledb/advanced-provider-techniques.md)
+[Дополнительные методы поставщика](../../data/oledb/advanced-provider-techniques.md)

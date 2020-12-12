@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: взаимодействие с другими языками .NET (C++/CLI)'
 title: Совместимость с другими языками .NET (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,28 +10,28 @@ helpviewer_keywords:
 - lock statement
 - lock C# keyword [C++]
 ms.assetid: a5902cf8-a14d-4559-aefb-c178615d45bb
-ms.openlocfilehash: ffdf9a8b11912bde38e15408228670c8cff9a503
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 51cead7fcc7dedc05f0225facf10fe70a3d606fd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188326"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316613"
 ---
 # <a name="interoperability-with-other-net-languages-ccli"></a>Совместимость с другими языками .NET (C++/CLI)
 
-В подразделах этого раздела показано, как создать сборки в Visual C++, который используют или предоставляют функциональные возможности для сборок, написанных на C# или Visual Basic.
+В подразделах этого раздела показано, как создавать сборки в Visual C++, которые используют или предоставляют функциональные возможности для сборок, написанных на C# или Visual Basic.
 
-## <a name="consume_indexer"></a> Использование индексатора C#
+## <a name="consume-a-c-indexer"></a><a name="consume_indexer"></a> Использование индексатора C#
 
-Visual C++ не содержит индексаторов; он содержит индексированные свойства. Чтобы использование индексатора C#, доступ к индексатор, как будто индексированное свойство.
+Visual C++ не содержит индексаторов; Он имеет индексированные свойства. Чтобы использовать индексатор C#, необходимо получить доступ к индексатору так, как если бы он был индексированным свойством.
 
-Дополнительные сведения об индексаторах см. в разделе:
+Дополнительные сведения об индексаторах см. в следующих статьях:
 
 - [Индексаторы](/dotnet/csharp/programming-guide/indexers/index)
 
 ### <a name="example"></a>Пример
 
-Следующая программа C# определяет индексатор.
+В следующей программе C# определяется индексатор.
 
 ```csharp
 // consume_cs_indexers.cs
@@ -70,7 +71,7 @@ public class MainClass {
 
 ### <a name="example"></a>Пример
 
-Эта программа Visual C++ использует индексатор.
+Эта Visual C++ программа использует индексатор.
 
 ```cpp
 // consume_cs_indexers_2.cpp
@@ -100,9 +101,9 @@ Element #9 = 0
 Element #10 = 0
 ```
 
-## <a name="implement_isas"></a> Реализации является и как ключевые слова C#
+## <a name="implement-is-and-as-c-keywords"></a><a name="implement_isas"></a> Реализуйте ключевое слово и как ключевые слова C#
 
-В этом разделе показан способ реализации функциональности `is` и `as` ключевые слова C# в Visual C++.
+В этом разделе показано, как реализовать функциональные возможности `is` `as` ключевых слов и C# в Visual C++.
 
 ### <a name="example"></a>Пример
 
@@ -141,11 +142,11 @@ int main() {
 o is a string
 ```
 
-## <a name="implement_locak"></a> Применение ключевого слова C# lock
+## <a name="implement-the-lock-c-keyword"></a><a name="implement_locak"></a> Реализация ключевого слова C# lock
 
-В этом разделе показан способ реализации C# `lock` ключевого слова в Visual C++.
+В этом разделе показано, как реализовать `lock` ключевое слово C# в Visual C++.
 
-Можно также использовать `lock` класс в библиотека поддержки C++. См. в разделе [синхронизация (класс lock)](../dotnet/synchronization-lock-class.md) Дополнительные сведения.
+Также можно использовать `lock` класс в библиотеке поддержки C++. Дополнительные сведения см. в разделе [Синхронизация (класс Lock)](../dotnet/synchronization-lock-class.md) .
 
 ### <a name="example"></a>Пример
 
@@ -184,6 +185,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Программирование .NET с использованием C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: ICommandPropertiesImpl Class'
 title: Класс ICommandPropertiesImpl
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - GetProperties method
 - SetProperties method
 ms.assetid: b3cf6aea-527e-4f0d-96e0-669178b021a2
-ms.openlocfilehash: bd4dd73c79085a2c2d85a5dbacbfd20bc920108e
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: bf6a6f9a3ddd43a61671a85a791d63958f63c3e3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91501767"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317573"
 ---
 # <a name="icommandpropertiesimpl-class"></a>Класс ICommandPropertiesImpl
 
@@ -49,12 +50,12 @@ class ATL_NO_VTABLE ICommandPropertiesImpl
 
 ### <a name="interface-methods"></a>Методы интерфейса
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[GetProperties](#getproperties)|Возвращает список свойств в группе свойств набора строк, запрашиваемых в данный момент для набора строк.|
 |[SetProperties](#setproperties)|Задает свойства в группе свойств набора строк.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Это обязательно для команд. Реализация обеспечивается статической функцией, определенной [BEGIN_PROPSET_MAP](./macros-for-ole-db-provider-templates.md#begin_propset_map) макросом.
 
@@ -75,7 +76,7 @@ STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,
 
 См. раздел [ICommandProperties:: Properties](/previous-versions/windows/desktop/ms723119(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 См. раздел [BEGIN_PROPSET_MAP](./macros-for-ole-db-provider-templates.md#begin_propset_map).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: IRowsetUpdateImpl Class'
 title: Класс IRowsetUpdateImpl
 ms.date: 11/04/2016
 f1_keywords:
@@ -49,12 +50,12 @@ helpviewer_keywords:
 - IsUpdateAllowed method
 - m_mapCachedData
 ms.assetid: f85af76b-ab6f-4f8b-8f4a-337c9679d68f
-ms.openlocfilehash: 88ee9257655c96195339ded79f2dd4d3b7c7caf5
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: f040ed902b867059636a16bf635dc5c526b8ba1b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509772"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317250"
 ---
 # <a name="irowsetupdateimpl-class"></a>Класс IRowsetUpdateImpl
 
@@ -84,7 +85,7 @@ class IRowsetUpdateImpl : public IRowsetChangeImpl<
 *T*<br/>
 Класс, производный от `IRowsetUpdateImpl` .
 
-*Хранилище*<br/>
+*Память*<br/>
 Запись пользователя.
 
 *UpdateArray*<br/>
@@ -104,13 +105,13 @@ class IRowsetUpdateImpl : public IRowsetChangeImpl<
 
 ### <a name="interface-methods-used-with-irowsetchange"></a>Методы интерфейса (используются с IRowsetChange)
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[SetData](#setdata)|Задает значения данных в одном или нескольких столбцах.|
 
 ### <a name="interface-methods-used-with-irowsetupdate"></a>Методы интерфейса (используются с IRowsetUpdate)
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[жеторигиналдата](#getoriginaldata)|Возвращает данные, которые были переданы в последнее время или получены из источника данных, игнорируя ожидающие изменения.|
 |[жетпендингровс](#getpendingrows)|Возвращает список строк с ожидающими изменениями.|
@@ -120,17 +121,17 @@ class IRowsetUpdateImpl : public IRowsetChangeImpl<
 
 ### <a name="implementation-methods-callback"></a>Методы реализации (обратный вызов)
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[исупдатеалловед](#isupdateallowed)|Используется для проверки безопасности, целостности и т. д. перед разрешением обновлений.|
 
 ### <a name="data-members"></a>Элементы данных
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[m_mapCachedData](#mapcacheddata)|Содержит исходные данные для отложенной операции.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Сначала следует прочитать и разобраться в документации по [IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85)), так как все описанное здесь также применимо. Также следует ознакомиться с главой 6 *справочника по OLE DB программиста* по настройке данных.
 
@@ -161,7 +162,7 @@ STDMETHOD (SetData )(HROW hRow,
 
 См. раздел [IRowsetChange:: SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод переопределяет метод [ировсетчанжеимпл:: SetData](./irowsetchangeimpl-class.md#setdata) , но включает кэширование исходных данных, чтобы позволить немедленно или отложенную обработку операции.
 
@@ -202,7 +203,7 @@ STDMETHOD (GetPendingRows )(HCHAPTER /* hReserved */,
 
 Другие параметры см. в разделе [IRowsetUpdate:: жетпендингровс](/previous-versions/windows/desktop/ms719626(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [IRowsetUpdate:: жетпендингровс](/previous-versions/windows/desktop/ms719626(v=vs.85)) в *справочнике программиста OLE DB*.
 
@@ -276,7 +277,7 @@ STDMETHOD (Update )(HCHAPTER /* hReserved */,
 
 Другие параметры см. в разделе [IRowsetUpdate:: Update](/previous-versions/windows/desktop/ms719709(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Изменения передаются путем вызова [ировсетчанжеимпл:: FlushData](./irowsetchangeimpl-class.md#flushdata). Чтобы изменения вступили в силу, потребитель должен вызвать метод [CRowset:: Update](./crowset-class.md#update) . Задайте для *пргровстатус* соответствующее значение, как описано в разделе [состояния строк](/previous-versions/windows/desktop/ms722752(v=vs.85)) в *справочнике по OLE DB программиста*.
 
@@ -303,7 +304,7 @@ HRESULT IsUpdateAllowed(DBPENDINGSTATUS /* [in] */ /* status */,
 *провстатус*<br/>
 заполняет Состояние, возвращенное пользователю.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вы определили, что обновление должно быть разрешено, возвращает S_OK; в противном случае возвращает E_FAIL. Если вы разрешаете обновление, необходимо также установить `DBROWSTATUS` в [IRowsetUpdateImpl:: Update](#update) в соответствующее [состояние строки](/previous-versions/windows/desktop/ms722752(v=vs.85)).
 

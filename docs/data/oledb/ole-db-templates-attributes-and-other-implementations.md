@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: OLE DB шаблоны, атрибуты и другие реализации'
 title: Шаблоны, атрибуты и другие реализации OLE DB
 ms.date: 10/22/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - OLE DB templates, about OLE DB templates
 - OLE DB templates
 ms.assetid: 0c780c1b-9bba-4788-8c33-8552d9f120ac
-ms.openlocfilehash: 217db304c7d0b5723b7af383e07290f160cc9465
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 87f839fe39f2d2c9dcd61fd6628666f4ac8f5809
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500914"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316964"
 ---
 # <a name="ole-db-templates-attributes-and-other-implementations"></a>Шаблоны, атрибуты и другие реализации OLE DB
 
@@ -45,7 +46,7 @@ ms.locfileid: "91500914"
 
 ## <a name="mfc-ole-db-classes"></a>Классы MFC OLE DB
 
-Библиотека MFC имеет один класс [коледбрекордвиев](../../mfc/reference/coledbrecordview-class.md), который отображает записи базы данных в элементах управления. Представление является представлением формы, которое напрямую подключено к `CRowset` объекту и отображает поля `CRowset` объекта в элементах управления шаблона диалогового окна. Он также предоставляет реализацию по умолчанию для перехода к первой, следующей, предыдущей или последней записи и интерфейс для обновления записи в данный момент в представлении. Для получения дополнительной информации см. `COleDBRecordView`.
+Библиотека MFC имеет один класс [коледбрекордвиев](../../mfc/reference/coledbrecordview-class.md), который отображает записи базы данных в элементах управления. Представление является представлением формы, которое напрямую подключено к `CRowset` объекту и отображает поля `CRowset` объекта в элементах управления шаблона диалогового окна. Он также предоставляет реализацию по умолчанию для перехода к первой, следующей, предыдущей или последней записи и интерфейс для обновления записи в данный момент в представлении. Дополнительные сведения см. в разделе `COleDBRecordView`.
 
 ## <a name="ole-db-sdk-interfaces"></a>Интерфейсы пакета SDK OLE DB
 

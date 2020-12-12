@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье Архитектура шаблона поставщика OLE DB.
 title: Архитектура шаблона поставщика OLE DB
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - architecture [C++], OLE DB Provider
 - OLE DB provider templates, object model
 ms.assetid: 639304a3-f9e0-44dc-8d0c-0ebd2455b363
-ms.openlocfilehash: 89e07f95853c3611b7cceaef3f247c220c630add
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 1cc1619ab7ed13c2d7962f75229df2ecd8cf0d78
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509547"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317133"
 ---
 # <a name="ole-db-provider-template-architecture"></a>Архитектура шаблона поставщика OLE DB
 
@@ -29,11 +30,11 @@ ms.locfileid: "91509547"
 
 - [Источник данных](../../data/oledb/data-source-object-interfaces.md)
 
-- [Согласованность сеанса](../../data/oledb/session-object-interfaces.md)
+- [Session](../../data/oledb/session-object-interfaces.md)
 
 - [Набор строк](../../data/oledb/rowset-object-interfaces.md)
 
-- [Команда](../../data/oledb/command-object-interfaces.md)
+- [Command](../../data/oledb/command-object-interfaces.md)
 
 - [Транзакция](../../data/oledb/transaction-object-interfaces.md)
 

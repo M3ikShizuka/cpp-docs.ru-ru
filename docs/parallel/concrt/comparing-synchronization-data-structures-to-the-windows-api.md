@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье сравнение структур данных синхронизации с API Windows.
 title: Сравнение структур данных синхронизации с интерфейсом Windows API
 ms.date: 11/04/2016
 helpviewer_keywords:
 - synchronization data structures, compared to Windows API
 - event class, example
 ms.assetid: 8b0b1a3a-ef80-408c-91fa-93e6af920b4e
-ms.openlocfilehash: b889570935b3a94e0cb8717c8af1783e2ce31c42
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: b5c633c61d070e2cd687b6281597694a7533fe0f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040345"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318420"
 ---
 # <a name="comparing-synchronization-data-structures-to-the-windows-api"></a>Сравнение структур данных синхронизации с интерфейсом Windows API
 
@@ -26,7 +27,7 @@ ms.locfileid: "90040345"
 
 Класс [Concurrency:: reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) похож на блокировки потоков чтения/записи (SRW) Windows. В следующей таблице описаны сходства и различия.
 
-| Компонент | Класс `reader_writer_lock` | Блокировка SRW |
+| Функция | Класс `reader_writer_lock` | Блокировка SRW |
 |--|--|--|
 | Без повторных поправ | Да | Да |
 | Может повысить уровень читателя до модуля записи (поддержка обновления) | Нет | Нет |

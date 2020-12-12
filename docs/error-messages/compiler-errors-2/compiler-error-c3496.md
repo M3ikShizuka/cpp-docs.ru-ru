@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C3496'
 title: Ошибка компилятора C3496
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3496
 ms.assetid: e19885f2-677f-4c1e-bc69-e35852262dc3
-ms.openlocfilehash: 993d391f28a59afc8926748f2e6f34ab441657dc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dc3160e1007b65b70ea952aeaee3c77ba8ab21e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228860"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315521"
 ---
 # <a name="compiler-error-c3496"></a>Ошибка компилятора C3496
 
@@ -40,6 +41,6 @@ class C
 };
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 [Лямбда-выражения](../../cpp/lambda-expressions-in-cpp.md)

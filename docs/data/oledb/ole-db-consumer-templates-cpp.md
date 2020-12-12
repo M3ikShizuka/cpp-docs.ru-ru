@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: OLE DB шаблоны потребителей (C++)'
 title: Шаблоны потребителей OLE DB (C++)
 ms.date: 10/22/2018
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - OLE DB consumer templates [C++]
 - databases [C++], consumers
 ms.assetid: d3e42612-0bc0-4d65-9c32-0e8a7b219e82
-ms.openlocfilehash: d2697c955d2063bb075e06536b083c0b138aa4ac
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6aaf935234b8ec3396c97345ca7e38a0f8d806bf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62284050"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317159"
 ---
 # <a name="ole-db-consumer-templates-c"></a>Шаблоны потребителей OLE DB (C++)
 
-Шаблоны потребителей OLE DB поддерживают спецификацию OLE DB версии 2.6. (Шаблоны потребителей OLE DB проверяются на соответствие OLE DB версии 2.6, но не поддерживают все интерфейсы спецификации.) Использование шаблонов потребителей позволяет свести к минимуму объем кода, который вам необходимо написать для реализации потребителя OLE DB. Шаблоны обеспечивают:
+Шаблоны потребителей OLE DB поддерживают спецификацию OLE DB версии 2.6. (Шаблоны OLE DB потребителей тестируются на OLE DB 2,6, но не поддерживают каждый интерфейс в спецификации.) Шаблоны потребителей сокращают объем кода, который необходимо написать для реализации OLE DB потребителя. Шаблоны обеспечивают:
 
 - удобный доступ к функциям OLE DB и интеграцию с ATL и MFC;
 
@@ -24,7 +25,7 @@ ms.locfileid: "62284050"
 
 - типы данных неуправляемого кода C/C++ для программирования OLE DB.
 
-Чтобы использовать шаблоны OLE DB, необходимо иметь навыки работы с шаблонами C++, COM и интерфейсами OLE DB. Если вы не знакомы с OLE DB, см. в разделе [драйвера Microsoft OLE DB для SQL Server](/sql/connect/oledb/oledb-driver-for-sql-server).
+Чтобы использовать шаблоны OLE DB, необходимо иметь навыки работы с шаблонами C++, COM и интерфейсами OLE DB. Если вы не знакомы с OLE DB, см. раздел [драйвер Microsoft OLE DB для SQL Server](/sql/connect/oledb/oledb-driver-for-sql-server).
 
 Шаблоны OLE DB поддерживают существующую объектную модель OLE DB, а не добавляют новую объектную модель. Классы верхнего уровня в шаблонах потребителей OLE DB создают компоненты, параллельные компонентам, определенным в спецификации OLE DB. Шаблоны потребителей OLE DB включает дополнительные возможности, такие как несколько методов доступа к набору строк. Использование шаблонов и множественного наследования позволяет создавать более компактные и гибкие библиотеки.
 
@@ -38,7 +39,7 @@ ms.locfileid: "62284050"
 
 - [Команды и таблицы](../../data/oledb/commands-and-tables.md)
 
-- [Записи пользователя](../../data/oledb/user-records.md)
+- [Записи пользователей](../../data/oledb/user-records.md)
 
 Пока потребитель не выполняет никаких действий, вы выбираете поставщика OLE DB, соответствующего типу базы данных, к которой требуется получить доступ (например, SQL, Oracle, ODBC и MSDS). Для этого обычно используется перечислитель (см. раздел [CEnumerator](../../data/oledb/cenumerator-class.md) , как упоминалось в разделе [Источники данных и сеансы](../../data/oledb/data-sources-and-sessions.md)).
 
@@ -52,13 +53,13 @@ ms.locfileid: "62284050"
 
 Дополнительные сведения см. в следующих разделах:
 
-- [Создание объекта-получателя OLE DB](../../data/oledb/creating-an-ole-db-consumer.md)
+- [Создание OLE DB потребителя](../../data/oledb/creating-an-ole-db-consumer.md)
 
 - [Общие сценарии использования потребителей OLE DB (примеры)](../../data/oledb/working-with-ole-db-consumer-templates.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Программирование объектов OLE DB](../../data/oledb/ole-db-programming.md)<br/>
+[OLE DB программирование](../../data/oledb/ole-db-programming.md)<br/>
 [Доступ к данным](../data-access-in-cpp.md)<br/>
 [Документация по OLE DB SDK](/previous-versions/windows/desktop/ms722784(v=vs.85))<br/>
-[Драйвер Microsoft OLE DB для SQL Server](/sql/connect/oledb/oledb-driver-for-sql-server)
+[Драйвер Microsoft OLE DB для SQL Server](/sql/connect/oledb/oledb-driver-for-sql-server)

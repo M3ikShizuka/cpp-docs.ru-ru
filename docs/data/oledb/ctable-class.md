@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CTable Class'
 title: Класс CTable
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - CTable class
 - Open method
 ms.assetid: f13fdaa3-e198-4557-977d-54b0bbc3454d
-ms.openlocfilehash: a967ef8fa2832afd56442ae4f988ba080d0b2872
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 62808080a68bbd5de00b39c43661e06617ba53f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845644"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317731"
 ---
 # <a name="ctable-class"></a>Класс CTable
 
@@ -53,7 +54,7 @@ class CTable :
 |-|-|
 |[Открыть](#open)|Открывает таблицу.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Сведения о том, как выполнить команду для доступа к набору строк, см. в разделе [CCommand](../../data/oledb/ccommand-class.md) .
 
@@ -104,7 +105,7 @@ HRESULT Open(const CSession& session,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [IOpenRowset:: OPENROWSET](/previous-versions/windows/desktop/ms716724(v=vs.85)) в *справочнике программиста OLE DB*.
 

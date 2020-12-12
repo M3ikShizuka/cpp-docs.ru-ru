@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: OLE DB потребителей и поставщиков'
 title: Получатели и поставщики OLE DB
 ms.date: 10/22/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - OLE DB consumers
 - OLE DB, data model
 ms.assetid: 886cb39d-652b-4557-93f0-4b1b0754d8bc
-ms.openlocfilehash: d57ded9d084971c3562fc7f22e6a1a12a4e3368d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: dedcbe7837cf7fad5bc9db8832e34edd3859a02b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80210085"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317146"
 ---
 # <a name="ole-db-consumers-and-providers"></a>Получатели и поставщики OLE DB
 
@@ -27,5 +28,5 @@ OLE DB не имеет смысла использовать клиент и с�
 
 ## <a name="see-also"></a>См. также раздел
 
-[Программирование объектов OLE DB](../../data/oledb/ole-db-programming.md)<br/>
+[OLE DB программирование](../../data/oledb/ole-db-programming.md)<br/>
 [Общие сведения о программировании OLE DB](../../data/oledb/ole-db-programming-overview.md)

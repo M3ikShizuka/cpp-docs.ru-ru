@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кваиткурсор Class'
 title: Класс Кваиткурсор
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - CWaitCursor [MFC], CWaitCursor
 - CWaitCursor [MFC], Restore
 ms.assetid: 5dfae2ff-d7b6-4383-b0ad-91e0868c67b3
-ms.openlocfilehash: dfeedad18b3ebcefedff446699f074c86037a4a3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f9552dcd6f5304c96d550e153870f69d78d932ad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222879"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318472"
 ---
 # <a name="cwaitcursor-class"></a>Класс Кваиткурсор
 
@@ -27,23 +28,23 @@ ms.locfileid: "87222879"
 class CWaitCursor
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[Кваиткурсор:: Кваиткурсор](#cwaitcursor)|Конструирует `CWaitCursor` объект и отображает курсор ожидания.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[Кваиткурсор:: RESTORE](#restore)|Восстанавливает курсор ожидания после его изменения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CWaitCursor`не имеет базового класса.
+`CWaitCursor` не имеет базового класса.
 
 Для работы с хорошей практикой программирования Windows необходимо, чтобы при выполнении операции, которая занимает значительное время, отображался курсор ожидания.
 
@@ -73,7 +74,7 @@ class CWaitCursor
 
 [!code-cpp[NVC_MFCWindowing#62](../../mfc/reference/codesnippet/cpp/cwaitcursor-class_1.cpp)]
 
-## <a name="cwaitcursorcwaitcursor"></a><a name="cwaitcursor"></a>Кваиткурсор:: Кваиткурсор
+## <a name="cwaitcursorcwaitcursor"></a><a name="cwaitcursor"></a> Кваиткурсор:: Кваиткурсор
 
 Чтобы отобразить курсор ожидания, просто объявите `CWaitCursor` объект перед кодом, выполняющим длительную операцию.
 
@@ -81,7 +82,7 @@ class CWaitCursor
 CWaitCursor();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конструктор автоматически вызывает отображение курсора ожидания.
 
@@ -96,7 +97,7 @@ CWaitCursor();
 
 [!code-cpp[NVC_MFCWindowing#63](../../mfc/reference/codesnippet/cpp/cwaitcursor-class_2.cpp)]
 
-## <a name="cwaitcursorrestore"></a><a name="restore"></a>Кваиткурсор:: RESTORE
+## <a name="cwaitcursorrestore"></a><a name="restore"></a> Кваиткурсор:: RESTORE
 
 Чтобы восстановить курсор ожидания, вызовите эту функцию после выполнения операции, например отображения окна сообщения или диалогового окна, которое может изменить курсор ожидания на другой курсор.
 
@@ -104,7 +105,7 @@ CWaitCursor();
 void Restore();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Можно вызывать, `Restore` даже если в данный момент отображается курсор ожидания.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: предупреждение компилятора C4746'
 title: Предупреждение компилятора C4746
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - C4746
 ms.assetid: 5e79ab46-6031-499a-a986-716c866b6c0e
-ms.openlocfilehash: 7179e2e6d4ec44355e7338ffc4e9ba36f5de47e4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 09c6b6968e7180e19955d84fdb69c9113509c39c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80165110"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97315040"
 ---
 # <a name="compiler-warning-c4746"></a>Предупреждение компилятора C4746
 
-постоянный доступ к "\<expression >" подчиняется параметру/volatile: [&#124;ISO MS]. Рассмотрите возможность использования встроенных функций __iso_volatile_load/Store.
+постоянный доступ к " \<expression> " зависит от параметра/volatile: [iso&#124;MS]. Рассмотрите возможность использования встроенных функций __iso_volatile_load/Store.
 
 C4746 создается всякий раз, когда к переменной обращаются напрямую. Он предназначен для того, чтобы помочь разработчикам определить местоположения кода, затрагиваемые указанной временной моделью (которую можно контролировать с помощью параметра компилятора [/volatile](../../build/reference/volatile-volatile-keyword-interpretation.md) ). В частности, это может быть полезно при поиске аппаратных барьеров памяти, создаваемых компилятором при использовании/volatile: MS.
 

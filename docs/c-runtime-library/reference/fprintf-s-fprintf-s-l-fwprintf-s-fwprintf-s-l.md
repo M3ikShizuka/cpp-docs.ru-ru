@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l'
 title: fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l
 ms.date: 11/04/2016
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - _fwprintf_s_l function
 - print formatted data to streams
 ms.assetid: 16067c3c-69ce-472a-8272-9aadf1f5beed
-ms.openlocfilehash: 48f15bee685b058c0c059d676bea48e2bc32d699
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 89b597d59b9b3b42dcbd884929504f473182cb3a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70956973"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314166"
 ---
 # <a name="fprintf_s-_fprintf_s_l-fwprintf_s-_fwprintf_s_l"></a>fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l
 
@@ -94,20 +95,20 @@ int _fwprintf_s_l(
 
 **fprintf_s** возвращает число записанных байтов. **fwprintf_s** возвращает число записанных расширенных символов. В случае ошибки вывода каждая из этих функций возвращает отрицательное значение.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-**fprintf_s** форматирует и выводит последовательность символов и значений в *поток*вывода. Каждый аргумент в *argument_list* (при его наличии) преобразуется и выводится в соответствии с соответствующей спецификацией формата в *формате*. Аргумент *Format* использует [синтаксис спецификации формата для функций printf и wprintf](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+**fprintf_s** форматирует и выводит последовательность символов и значений в *поток* вывода. Каждый аргумент в *argument_list* (при его наличии) преобразуется и выводится в соответствии с соответствующей спецификацией формата в *формате*. Аргумент *Format* использует [синтаксис спецификации формата для функций printf и wprintf](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
-**fwprintf_s** — это версия **fprintf_s**для расширенных символов; в **fwprintf_s** *Format* является строкой расширенных символов. Эти функции ведут себя одинаково, если поток открыт в режиме ANSI. **fprintf_s** в настоящее время не поддерживает вывод в поток Юникода.
+**fwprintf_s** — это версия **fprintf_s** для расширенных символов; в **fwprintf_s** *Format* — строка расширенных символов. Эти функции ведут себя одинаково, если поток открыт в режиме ANSI. **fprintf_s** в настоящее время не поддерживает вывод в поток Юникода.
 
 Версии этих функций с суффиксом **_l** идентичны за исключением того, что они используют переданный параметр языкового стандарта вместо текущего языкового стандарта.
 
 > [!IMPORTANT]
 > Убедитесь, что *format* не является строкой, определяемой пользователем.
 
-Как и небезопасные версии (см. [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)), эти функции проверяют свои параметры и вызывают обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md), если один из *потоков* или  *Format* является пустым указателем. Также проверяется сама строка формата. При наличии любых неизвестных или неправильно сформированных описателей форматирования эти функции создают исключение недопустимого параметра. Во всех случаях, если выполнение может быть продолжено, функции возвращают значение-1 и **задают значение** **еинвал**. Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Как и небезопасные версии (см. раздел [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)), эти функции проверяют свои параметры и вызывают обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md), если *поток* или *Формат* является пустым указателем. Также проверяется сама строка формата. При наличии любых неизвестных или неправильно сформированных описателей форматирования эти функции создают исключение недопустимого параметра. Во всех случаях, если выполнение может быть продолжено, функции возвращают значение-1 и **задают значение** **еинвал**. Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Подпрограмма TCHAR.H|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -123,7 +124,7 @@ int _fwprintf_s_l(
 |**fprintf_s**, **_fprintf_s_l**|\<stdio.h>|
 |**fwprintf_s**, **_fwprintf_s_l**|\<stdio.h> или \<wchar.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -161,9 +162,9 @@ this is a string
 1.500000
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Потоковый ввод-вывод](../../c-runtime-library/stream-i-o.md)<br/>
 [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
 [fscanf, _fscanf_l, fwscanf, _fwscanf_l](fscanf-fscanf-l-fwscanf-fwscanf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>

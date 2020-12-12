@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: IRowsetNotifyCP Class'
 title: Класс IRowsetNotifyCP
 ms.date: 11/04/2016
 f1_keywords:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - Fire_OnRowChange method
 - Fire_OnRowsetChange method
 ms.assetid: ccef402b-94a0-4c2e-9a13-7e854ef82390
-ms.openlocfilehash: 2f8c80570e4771d1b0e713083f64bc982ddb9009
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 70e759ed19c366f7e85511170439c24f319c5cd3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840288"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317276"
 ---
 # <a name="irowsetnotifycp-class"></a>Класс IRowsetNotifyCP
 
@@ -75,7 +76,7 @@ class IRowsetNotifyCP :
 |[Fire_OnRowChange](#onrowchange)|Уведомляет потребителя об изменении, влияющем на строки.|
 |[Fire_OnRowsetChange](#onrowsetchange)|Уведомляет потребителя об изменении, влияющем на весь набор строк.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `IRowsetNotifyCP` реализует широковещательные функции для уведомления прослушивателей точки подключения об `IID_IRowsetNotify` изменениях содержимого набора строк.
 

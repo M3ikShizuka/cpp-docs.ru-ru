@@ -1,17 +1,18 @@
 ---
+description: 'Дополнительные сведения: использование лямбда-выражений, объектов функций и ограниченных функций'
 title: Использование лямбда-выражений, объектов функций и ограниченных функций
 ms.date: 11/04/2016
 ms.assetid: 25346cc9-869d-4ada-aad3-e2228cad3d6c
-ms.openlocfilehash: 0c72ae6f600fe73405481e34ab05b60f163e44d2
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bef02f30b5d5b5f11b8051c7a596ac0a141eef0a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405330"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314455"
 ---
 # <a name="using-lambdas-function-objects-and-restricted-functions"></a>Использование лямбда-выражений, объектов функций и ограниченных функций
 
-C++ AMP код, который вы хотите запустить на ускорителе заданное в качестве аргумента в вызове [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) метод. Можно предоставить лямбда-выражение или объект функции (функтор) в качестве этого аргумента. Кроме того лямбда-выражение выражение или объект функции могут вызывать функции с описателем ограничения C++ AMP. В этом разделе использует алгоритм сложения массивов для демонстрации лямбда-выражений, объектов функций и ограниченных функций. В следующем примере алгоритм без кода C++ AMP. Создаются два одномерных массива одинаковой длины. Соответствующие элементы целого типа добавляются и хранятся в третьем одномерным массивом. C++ AMP не используется.
+Код C++ AMP, который вы хотите запустить в сочетании с ускорителем, указывается в качестве аргумента в вызове метода [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) . В качестве этого аргумента можно указать лямбда-выражение или объект функции (функтор). Кроме того, лямбда-выражение или объект функции может вызывать функцию с ограничениями C++ AMP. В этом разделе используется алгоритм сложения массивов для демонстрации лямбда-выражений, объектов функций и ограниченных функций. В следующем примере показан алгоритм без C++ AMP кода. 2 1 — создаются массивы с одинаковой длиной. Соответствующие целочисленные элементы добавляются и хранятся в третьем одномерном массиве. C++ AMP не используется.
 
 ```cpp
 void CpuMethod() {
@@ -32,9 +33,9 @@ void CpuMethod() {
 }
 ```
 
-## <a name="lambda-expression"></a>Лямбда-выражения
+## <a name="lambda-expression"></a>Лямбда-выражение
 
-С помощью лямбда-выражение — это самый простой способ использования C++ AMP для переработки кода.
+Использование лямбда-выражения является наиболее прямым способом использования C++ AMP для перезаписи кода.
 
 ```cpp
 void AddArraysWithLambda() {
@@ -63,11 +64,11 @@ void AddArraysWithLambda() {
 }
 ```
 
-Лямбда-выражение должно включать один параметр индексирования и должен включать `restrict(amp)`. В примере [array_view](../../parallel/amp/reference/array-view-class.md) `sum` объект имеет ранг 1. Таким образом, параметр в лямбда-выражении, [индекс](../../parallel/amp/reference/index-class.md) , имеющий ранг 1. Во время выполнения лямбда-выражение выполняется один раз для каждого элемента в [array_view](../../parallel/amp/reference/array-view-class.md) объекта. Дополнительные сведения см. в разделе [синтаксис лямбда-выражений](../../cpp/lambda-expression-syntax.md).
+Лямбда-выражение должно включать один параметр индексирования и должно включать `restrict(amp)` . В этом примере объект [array_view](../../parallel/amp/reference/array-view-class.md) `sum` имеет ранг 1. Поэтому параметр для лямбда-оператора является объектом [индекса](../../parallel/amp/reference/index-class.md) , который имеет ранг 1. Во время выполнения лямбда-выражение выполняется один раз для каждого элемента в объекте [array_view](../../parallel/amp/reference/array-view-class.md) . Дополнительные сведения см. в разделе [синтаксис лямбда-выражений](../../cpp/lambda-expression-syntax.md).
 
 ## <a name="function-object"></a>Объект Function
 
-Можно вынести код ускорителя в объект функции.
+Код ускорителя можно разделить на объект функции.
 
 ```cpp
 class AdditionFunctionObject
@@ -114,11 +115,11 @@ void AddArraysWithFunctionObject() {
 }
 ```
 
-Объект функции должен включать конструктор и перегрузку оператора вызова функции. Оператор вызова функции должен включать один параметр индексирования. Экземпляр объекта функции передается в качестве второго аргумента [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) метод. В этом примере три [array_view](../../parallel/amp/reference/array-view-class.md) объекты передаются в конструктор объекта функции. [Array_view](../../parallel/amp/reference/array-view-class.md) объект `sum` имеет ранг 1. Таким образом, параметр оператор вызова функции, [индекс](../../parallel/amp/reference/index-class.md) , имеющий ранг 1. Во время выполнения функция выполняется один раз для каждого элемента в [array_view](../../parallel/amp/reference/array-view-class.md) объекта. Дополнительные сведения см. в разделе [вызовов функций](../../cpp/function-call-cpp.md) и [объекты-функции в стандартной библиотеке C++](../../standard-library/function-objects-in-the-stl.md).
+Объект функции должен включать конструктор и должен включать перегрузку оператора вызова функции. Оператор вызова функции должен включать один параметр индексирования. Экземпляр объекта функции передается в качестве второго аргумента методу [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) . В этом примере в конструктор объекта функции передается три [array_view](../../parallel/amp/reference/array-view-class.md) объектов. Объект [array_view](../../parallel/amp/reference/array-view-class.md) `sum` имеет ранг 1. Поэтому параметром для оператора вызова функции является объект [индекса](../../parallel/amp/reference/index-class.md) с рангом 1. Во время выполнения функция выполняется один раз для каждого элемента в объекте [array_view](../../parallel/amp/reference/array-view-class.md) . Дополнительные сведения см. в разделе [вызов функции](../../cpp/function-call-cpp.md) и [объекты функций в стандартной библиотеке C++](../../standard-library/function-objects-in-the-stl.md).
 
-## <a name="c-amp-restricted-function"></a>C++ AMP-ограниченную функцию
+## <a name="c-amp-restricted-function"></a>Функция AMP-Restricted C++
 
-Можно и дальше факторизовать код ускорителя, создавая ограниченную функцию и вызов его из лямбда-выражение или объект функции. В следующем примере кода показано, как вызывать ограниченную функцию из лямбда-выражения.
+Можно дополнительно разделить код ускорителя, создав функцию ограничения и вызвав ее из лямбда-выражения или объекта функции. В следующем примере кода показано, как вызвать ограниченную функцию из лямбда-выражения.
 
 ```cpp
 void AddElementsWithRestrictedFunction(index<1> idx, array_view<int, 1> sum, array_view<int, 1> a, array_view<int, 1> b) restrict(amp)
@@ -153,12 +154,12 @@ void AddArraysWithFunction() {
 }
 ```
 
-Ограниченная функция должна включать `restrict(amp)` и ограничений, описанных в [ограничения (C++ AMP)](../../cpp/restrict-cpp-amp.md).
+Функция с ограничением должна включать `restrict(amp)` и соответствовать ограничениям, описанным в разделе [ограничение (C++ amp)](../../cpp/restrict-cpp-amp.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [C++ AMP (C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 [Синтаксис лямбда-выражений](../../cpp/lambda-expression-syntax.md)<br/>
 [Вызов функции](../../cpp/function-call-cpp.md)<br/>
-[Объекты функции в стандартной библиотеке C++](../../standard-library/function-objects-in-the-stl.md)<br/>
+[Объекты функций в стандартной библиотеке C++](../../standard-library/function-objects-in-the-stl.md)<br/>
 [restrict (C++ AMP)](../../cpp/restrict-cpp-amp.md)

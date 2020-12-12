@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _set_new_mode'
 title: _set_new_mode
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - _set_new_mode function
 - set_new_mode function
 ms.assetid: 4d14039a-e54e-4689-8c70-74a4b9834768
-ms.openlocfilehash: aa21854f6a8c4b58a510b16e824449a53b91f329
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 233ab9cd4c74eaeb413d7c299620c29a52c41298
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218537"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314000"
 ---
 # <a name="_set_new_mode"></a>_set_new_mode
 
@@ -55,7 +56,7 @@ int _set_new_mode( int newhandlermode );
 
 Возвращает предыдущий режим обработчика, установленный для **malloc**. Возвращаемое значение, равное 1, указывает, что при сбое выделения памяти **malloc** выделит ранее новую подпрограммы обработчика; Возвращаемое значение 0 указывает, что это не так. Если аргумент *невхандлермоде* не равен 0 или 1, возвращает значение-1.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_set_new_mode** C++ задает новый режим обработчика для [malloc](malloc.md). Новый режим обработчика указывает, что в случае сбоя **malloc** вызывает новую подпрограммы обработчика, заданную [_set_new_handler](set-new-handler.md). По умолчанию **malloc** не вызывает новую подпрограммы обработчика при сбое выделения памяти. Это поведение по умолчанию можно переопределить таким образом, что, когда **malloc** не сможет выделить память, **malloc** вызывает новую подпрограммы обработчика так же, как **`new`** если бы она не завершилась по той же причине. Дополнительные сведения см. в разделе об операторах [new](../../cpp/new-operator-cpp.md) и [delete](../../cpp/delete-operator-cpp.md)*справочника по языку C++*. Чтобы переопределить значение по умолчанию, вызовите:
 
@@ -81,7 +82,7 @@ _set_new_mode(1);
 
 [Выделение памяти](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](calloc.md)<br/>
-[свободный](free.md)<br/>
+[free](free.md)<br/>
 [realloc](realloc.md)<br/>
 [_query_new_handler](query-new-handler.md)<br/>
 [_query_new_mode](query-new-mode.md)<br/>

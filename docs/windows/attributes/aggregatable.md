@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: агрегирование'
 title: Комбинируемые (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - aggregatable attribute
 ms.assetid: 9253a46a-cd76-41f2-b3b6-86f709bb069c
-ms.openlocfilehash: 6782b1ca28eb07b3f726bd85cd7fffa9b1f1bad2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 0ba6c96f1b12deb2db91c20f0558961ef1ed6f61
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836378"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314260"
 ---
 # <a name="aggregatable"></a>aggregatable
 
@@ -34,7 +35,7 @@ ms.locfileid: "88836378"
 
 - `always` COM-объект не может быть создан напрямую и может быть агрегирован. При вызове `CoCreateInstance` для этого объекта необходимо указать интерфейс статистического объекта `IUnknown` (Управление `IUnknown` ).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **Статистически обрабатываемый** атрибут C++ имеет те же функциональные возможности, что и [статистический](/windows/win32/Midl/aggregatable) атрибут MIDL. Это означает, что компилятор передает **статистически обрабатываемый** атрибут в созданный IDL-файл.
 
@@ -82,4 +83,4 @@ class CMyClass {};
 [Атрибуты IDL](idl-attributes.md)<br/>
 [Атрибуты класса](class-attributes.md)<br/>
 [Атрибуты typedef, enum, Union и struct](typedef-enum-union-and-struct-attributes.md)<br/>
-[Статистической обработки](/windows/win32/com/aggregation)
+[Агрегирование](/windows/win32/com/aggregation)

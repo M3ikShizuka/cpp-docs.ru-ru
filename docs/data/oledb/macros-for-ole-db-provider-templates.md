@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о макросах для шаблонов поставщиков OLE DB.
 title: Макросы для шаблонов поставщика OLE DB
 ms.date: 02/11/2019
 f1_keywords:
@@ -50,12 +51,12 @@ helpviewer_keywords:
 - END_SCHEMA_MAP macro
 - SCHEMA_ENTRY macro
 ms.assetid: 909482c5-64ab-4e52-84a9-1c07091db183
-ms.openlocfilehash: e72204102bfa47a9dd162499030a38c07bbfe46c
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 5e1e1137f49060273c60c73fc89c24c75fd2604d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504014"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317172"
 ---
 # <a name="macros-for-ole-db-provider-templates"></a>Макросы для шаблонов поставщика OLE DB
 
@@ -63,7 +64,7 @@ ms.locfileid: "91504014"
 
 ## <a name="property-set-map-macros"></a>Макросы для задания схемы набора свойств
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[BEGIN_PROPERTY_SET](#begin_property_set)|Помечает начало набора свойств.|
 |[BEGIN_PROPERTY_SET_EX](#begin_property_set_ex)|Помечает начало набора свойств.|
@@ -77,7 +78,7 @@ ms.locfileid: "91504014"
 
 ## <a name="column-map-macros"></a>Макросы таблицы соответствия столбцов
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[BEGIN_PROVIDER_COLUMN_MAP](#begin_provider_column_map)|Помечает начало записей схемы столбца поставщика.|
 |[END_PROVIDER_COLUMN_MAP](#end_provider_column_map)|Помечает конец записей схемы столбца поставщика.|
@@ -91,7 +92,7 @@ ms.locfileid: "91504014"
 
 ## <a name="schema-rowset-macros"></a>Макросы наборов строк схемы
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[BEGIN_SCHEMA_MAP](#begin_schema_map)|Помечает начало гиперкарты схемы.|
 |[END_SCHEMA_MAP](#end_schema_map)|Помечает конец гиперкарты схемы.|
@@ -154,7 +155,7 @@ BEGIN_PROPSET_MAP(Class)
 
 #### <a name="parameters"></a>Параметры
 
-*Class*<br/>
+*Класс*<br/>
 окне Класс, в котором задано это свойство. Набор свойств можно указать в следующих объектах OLE DB:
 
 - [Объекты источника данных](/previous-versions/windows/desktop/ms721278(v=vs.85))
@@ -184,7 +185,7 @@ CHAIN_PROPERTY_SET(ChainClass)
 *чаинкласс*<br/>
 окне Имя класса для сцепления свойств. Это класс, созданный мастером проектов ATL, который уже содержит карту (такую как сеанс, команда или класс объектов источника данных).
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Можно связать набор свойств из другого класса с собственным классом, а затем получить доступ к свойствам непосредственно из класса.
 
@@ -239,7 +240,7 @@ PROPERTY_INFO_ENTRY(dwPropID)
 *dwPropID*<br/>
 [входные данные] Значение [DBPROPID](/previous-versions/windows/desktop/ms723882(v=vs.85)) , которое может использоваться вместе с GUID набора свойств для идентификации свойства.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Этот макрос задает в качестве значения свойства типа `DWORD` значение по умолчанию, определенное в ATLDB.H. Чтобы задать свойству нужное вам значение, используйте [PROPERTY_INFO_ENTRY_VALUE](#property_info_entry_value). Чтобы задать `VARTYPE` и [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342(v=vs.85)) для свойства одновременно, используйте [PROPERTY_INFO_ENTRY_EX](#property_info_entry_ex).
 
@@ -274,7 +275,7 @@ PROPERTY_INFO_ENTRY_EX(dwPropID, vt, dwFlags, value, options)
 *options*<br/>
 DBPROPOPTIONS_REQUIRED или DBPROPOPTIONS_SETIFCHEAP. Как правило, поставщику не нужно задавать *Параметры* , так как он задается потребителем.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 С помощью этого макроса можно напрямую указать значение свойства типа `DWORD` , а также параметры и флаги. Чтобы задать свойству значение по умолчанию, определенное в ATLDB. H, используйте [PROPERTY_INFO_ENTRY](#property_info_entry). Чтобы задать свойству значение по своему усмотрению без параметров или флагов, используйте [PROPERTY_INFO_ENTRY_VALUE](#property_info_entry_value).
 
@@ -300,7 +301,7 @@ PROPERTY_INFO_ENTRY_VALUE(dwPropID, value)
 *value*<br/>
 [входные данные] Значение свойства с типом `DWORD`.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 С помощью этого макроса можно напрямую указать значение свойства типа `DWORD` . Чтобы задать для свойства значение по умолчанию, определенное в ATLDB. H, используйте [PROPERTY_INFO_ENTRY](#property_info_entry). Чтобы задать значение, флаги и параметры для свойства, используйте [PROPERTY_INFO_ENTRY_EX](#property_info_entry_ex).
 
@@ -388,7 +389,7 @@ PROVIDER_COLUMN_ENTRY_FIXED(name, ordinal, dbtype, member)
 *участниками*<br/>
 окне Переменная члена в `dataClass` , в которой хранятся данные.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Позволяет указать тип данных столбца.
 
@@ -432,7 +433,7 @@ PROVIDER_COLUMN_ENTRY_GN (name, ordinal, flags, colSize, dbtype, precision, scal
 *guid*<br/>
 Идентификатор GUID набора строк схемы. Список наборов строк схемы и их идентификаторов GUID см. в разделе [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) в *справочнике программиста OLE DB* .
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Позволяет указать размер столбца, тип данных, точность, масштаб и идентификатор GUID набора строк схемы.
 
@@ -460,7 +461,7 @@ PROVIDER_COLUMN_ENTRY_LENGTH(name, ordinal, size, member)
 *участниками*<br/>
 окне Переменная члена в `dataClass` , в которой хранятся данные столбца.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Позволяет указать размер столбца.
 
@@ -489,7 +490,7 @@ PROVIDER_COLUMN_ENTRY_STR(name, ordinal, member)
 *участниками*<br/>
 окне Переменная члена в классе данных, в которой хранятся данные.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, если предполагается [DBTYPE_STR](/previous-versions/windows/desktop/ms711251(v=vs.85))данных столбца.
 
@@ -524,7 +525,7 @@ PROVIDER_COLUMN_ENTRY_TYPE_LENGTH(name, ordinal, dbtype, size, member)
 *участниками*<br/>
 окне Переменная члена в классе данных, в которой хранятся данные.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Аналогично [PROVIDER_COLUMN_ENTRY_LENGTH](#provider_column_entry_length) , но также позволяет указать тип данных столбца, а также размер.
 
@@ -549,7 +550,7 @@ PROVIDER_COLUMN_ENTRY_WSTR(name, ordinal, member)
 *участниками*<br/>
 окне Переменная члена в классе данных, в которой хранятся данные.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Используйте этот макрос, если данные столбца представляют собой строку символов Юникода, заканчивающуюся нулем, [DBTYPE_WSTR](/previous-versions/windows/desktop/ms711251(v=vs.85)).
 
@@ -568,7 +569,7 @@ BEGIN_SCHEMA_MAP(SchemaClass);
 *счемакласс*<br/>
 Класс, содержащий карту. Обычно это будет класс сеанса.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о наборах строк схемы см. в разделе [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) в Windows SDK.
 
@@ -605,7 +606,7 @@ SCHEMA_ENTRY(guid,
 *rowsetClass*<br/>
 Класс, который будет создан для представления набора строк схемы.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) может выполнить запрос к карте для отображения списка идентификаторов GUID или создать набор строк, если ему присвоен идентификатор GUID. Набор строк схемы `IDBSchemaRowsetImpl` создается аналогично `CRowsetImpl` классу, производному от стандартного, за исключением того, что он должен предоставлять `Execute` метод со следующей сигнатурой:
 

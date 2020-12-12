@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: классы ODBC'
 title: Классы ODBC
 ms.date: 11/04/2016
 helpviewer_keywords:
 - database classes [MFC], ODBC
 - ODBC classes [MFC]
 ms.assetid: 6c40fca8-3033-4873-9abe-7f51725de0e0
-ms.openlocfilehash: 18b6e3a0ea20dbd352a61c4faab52c35b852dcb3
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ac03543a6dfd9cf85320f9ff051730c102f2e0bd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622184"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318693"
 ---
 # <a name="odbc-classes"></a>Классы ODBC
 
@@ -36,10 +37,10 @@ ms.locfileid: "84622184"
 ## <a name="related-classes"></a>Связанные классы
 
 [CLongBinary](reference/clongbinary-class.md)<br/>
-Инкапсулирует маркер хранения для большого двоичного объекта (BLOB), например точечный рисунок. `CLongBinary`объекты используются для управления большими объектами данных, хранящимися в таблицах базы данных.
+Инкапсулирует маркер хранения для большого двоичного объекта (BLOB), например точечный рисунок. `CLongBinary` объекты используются для управления большими объектами данных, хранящимися в таблицах базы данных.
 
 [CDBVariant](reference/cdbvariant-class.md)<br/>
-Позволяет сохранить значение, не беспокоясь о типе данных значения. `CDBVariant`отслеживает тип данных текущего значения, который хранится в объединении.
+Позволяет сохранить значение, не беспокоясь о типе данных значения. `CDBVariant` отслеживает тип данных текущего значения, который хранится в объединении.
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: Общие сведения о программировании OLE DB'
 title: Общие сведения о программировании OLE DB
 ms.date: 10/22/2018
 helpviewer_keywords:
 - Universal Data Access
 - OLE DB, about OLE DB
 ms.assetid: a5a69730-2793-4277-a67d-6f3c8edab6df
-ms.openlocfilehash: 2b855e0917ba9cdbdaa38a92473d7bddb4279101
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1976d8717704fbacec4f9d249b8ca3664c2eeb56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80210077"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317107"
 ---
 # <a name="ole-db-programming-overview"></a>Общие сведения о программировании OLE DB
 
@@ -26,7 +27,7 @@ OLE DB позволяет разрабатывать приложения, об�
 
 ## <a name="see-also"></a>См. также раздел
 
-[Программирование объектов OLE DB](../../data/oledb/ole-db-programming.md)<br/>
+[OLE DB программирование](../../data/oledb/ole-db-programming.md)<br/>
 [Шаблоны объекта-получателя OLE DB](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [Шаблоны поставщика OLE DB](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [Шаблоны OLE DB](../../data/oledb/ole-db-templates.md)

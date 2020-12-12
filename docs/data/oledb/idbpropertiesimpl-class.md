@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: IDBPropertiesImpl Class'
 title: Класс IDBPropertiesImpl
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - GetPropertyInfo method
 - SetProperties method
 ms.assetid: a7f15a8b-95b2-4316-b944-d5d03f8d74ab
-ms.openlocfilehash: d94c5d121386989d223a55b8ce7626444c3f8950
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: e8384086de5b61422cd63e2dc3fbda0cfe040843
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509062"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317497"
 ---
 # <a name="idbpropertiesimpl-class"></a>Класс IDBPropertiesImpl
 
@@ -52,13 +53,13 @@ class ATL_NO_VTABLE IDBPropertiesImpl
 
 ### <a name="interface-methods"></a>Методы интерфейса
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[GetProperties](#getproperties)|Возвращает значения свойств в источнике данных, сведения об источнике данных и группах свойств инициализации, которые в настоящее время заданы для объекта источника данных, или значения свойств в группе свойств инициализации, которые в данный момент установлены в перечислителе.|
 |[GetPropertyInfo](#getpropertyinfo)|Возвращает сведения обо всех свойствах, поддерживаемых поставщиком.|
 |[SetProperties](#setproperties)|Задает свойства в группах свойств источника данных и инициализации, для объектов источника данных или группы свойств инициализации для перечислителей.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 [Интерфейс IDBProperties](/previous-versions/windows/desktop/ms719607(v=vs.85)) является обязательным интерфейсом для объектов источника данных и необязательным интерфейсом для перечислителей. Однако если перечислитель предоставляет [IDBInitialize](/previous-versions/windows/desktop/ms713706(v=vs.85)), он должен предоставить `IDBProperties` . `IDBPropertiesImpl` реализует с `IDBProperties` помощью статической функции, определенной [BEGIN_PROPSET_MAP](./macros-for-ole-db-provider-templates.md#begin_propset_map).
 
@@ -88,7 +89,7 @@ STDMETHOD(GetProperties)(ULONG cPropertySets,
 |*пкпропертиес*|*пкпропертисетс*|
 |*пргпропертиес*|*пргпропертисетс*|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если поставщик инициализирован, этот метод возвращает значения свойств в DBPROPSET_DATASOURCE, DBPROPSET_DATASOURCEINFO, DBPROPSET_DBINITных группах свойств, которые в данный момент заданы для объекта источника данных. Если поставщик не инициализирован, он возвращает только DBPROPSET_DBINIT свойства группы.
 
@@ -117,7 +118,7 @@ STDMETHOD(GetPropertyInfo)(ULONG cPropertySets,
 |*cPropertySets*|*кпропертидсетс*|
 |*rgPropertySets*|*ргпропертидсетс*|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Использует [идбинитиализеимпл:: m_pCUtlPropInfo](./idbinitializeimpl-class.md#pcutlpropinfo) для реализации этой функции.
 
@@ -136,7 +137,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
 
 См. раздел [интерфейс IDBProperties:: SetProperties](/previous-versions/windows/desktop/ms723049(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если поставщик инициализирован, этот метод задает значения свойств в DBPROPSET_DATASOURCE, DBPROPSET_DATASOURCEINFO, DBPROPSET_DBINIT групп свойств для объекта источника данных. Если поставщик не инициализирован, он устанавливает DBPROPSET_DBINIT только свойства группы.
 

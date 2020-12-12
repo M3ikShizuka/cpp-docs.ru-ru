@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: IRowsetInfoImpl Class'
 title: Класс IRowsetInfoImpl
 ms.date: 11/04/2016
 f1_keywords:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - GetReferencedRowset method
 - GetSpecification method
 ms.assetid: 9c654155-7727-464e-bd31-143e68391a47
-ms.openlocfilehash: 7ceaf30318c176b13cb6f81c8401501863b988a4
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: cc51a32b6bee62ef7343bf134b3f1bc4099b8562
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504044"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97317367"
 ---
 # <a name="irowsetinfoimpl-class"></a>Класс IRowsetInfoImpl
 
@@ -61,13 +62,13 @@ class ATL_NO_VTABLE IRowsetInfoImpl :
 
 ### <a name="interface-methods"></a>Методы интерфейса
 
-| Название | Описание |
+| Имя | Описание |
 |-|-|
 |[GetProperties](#getproperties)|Возвращает текущие значения всех свойств, которые поддерживаются набором строк.|
 |[жетреференцедровсет](#getreferencedrowset)|Возвращает указатель интерфейса на набор строк, к которому применяется закладка.|
 |[Подробные](#getspecification)|Возвращает указатель интерфейса объекта (команды или сеанса работы), создавшего этот набор строк.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Обязательный интерфейс для наборов строк. Этот класс реализует свойства набора строк с помощью [схемы набора свойств](./macros-for-ole-db-provider-templates.md#begin_propset_map) , определенной в классе команд. Несмотря на то, что класс набора строк использует наборы свойств класса Command, набор строк предоставляется со своей собственной копией свойств времени выполнения, когда он создается объектом команды или сеанса.
 
@@ -119,7 +120,7 @@ STDMETHOD (GetSpecification )(REFIID riid,
 
 См. раздел [ировсетинфо::](/previous-versions/windows/desktop/ms716746(v=vs.85)) *IsReference в справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот метод совместно с [ижетдатасаурцеимпл](../../data/oledb/igetdatasourceimpl-class.md) для извлечения свойств из объекта источника данных.
 

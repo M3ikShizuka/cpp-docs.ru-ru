@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: fputs, fputws'
 title: fputs, fputws
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - fputs function
 - fputts function
 ms.assetid: d48c82b8-aa17-4830-8c7d-30442ddbb326
-ms.openlocfilehash: 718bcd227e5821c85517ff7c0a1f195bd24d230b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: bba51a6001d9ec27f39b590b2246a50409f5e47d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82912738"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314117"
 ---
 # <a name="fputs-fputws"></a>fputs, fputws
 
@@ -72,7 +73,7 @@ int fputws(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Каждая из этих функций копирует *str* в выходной *поток* в текущей позиции. **fputws** копирует *str* аргумента расширенных символов в *Stream* в виде строки многобайтовых символов или строки расширенных символов в зависимости от того, открыт ли *поток* в текстовом или двоичном режиме соответственно. Ни одна из функций не копирует завершающий нуль-символ.
 
@@ -93,7 +94,7 @@ int fputws(
 |**fputs**|\<stdio.h>|
 |**fputws**|\<stdio.h> или \<wchar.h>|
 
-Консоль не поддерживается в приложениях универсальная платформа Windows (UWP). Стандартные дескрипторы потока, связанные с консолью (**stdin**, **stdout**и **stderr**), необходимо перенаправить, прежде чем функции времени выполнения C смогут использовать их в приложениях UWP. Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
+Консоль не поддерживается в приложениях универсальная платформа Windows (UWP). Стандартные дескрипторы потока, связанные с консолью (**stdin**, **stdout** и **stderr**), необходимо перенаправить, прежде чем функции времени выполнения C смогут использовать их в приложениях UWP. Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 

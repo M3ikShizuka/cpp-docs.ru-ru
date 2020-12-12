@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: fread_s'
 title: fread_s
 ms.date: 4/2/2020
 api_name:
@@ -25,12 +26,12 @@ f1_keywords:
 - fread_s
 - stdio/fread_s
 ms.assetid: ce735de0-f005-435d-a8f2-6f4b80ac775e
-ms.openlocfilehash: 340d8188deb34166b1bea58cfc4fe7985cdc5e05
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 311184fc871e138675e2447b3f3ccdf2f7529325
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919465"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314078"
 ---
 # <a name="fread_s"></a>fread_s
 
@@ -71,7 +72,7 @@ size_t fread_s(
 
 Дополнительные сведения об этих кодах ошибки см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **fread_s** считывает *количество* элементов *elementSize* байт из входного *потока* и сохраняет их в *буфер*.  Указатель файла, связанный с *потоком* (при его наличии), увеличивается на число фактически считанных байтов. Если данный поток открыт в текстовом режиме, пары переводов строки возврата каретки заменяются символами однострочного перевода строки. Замена не влияет на указатель файла или возвращаемое значение. В случае ошибки позиция указателя файла будет неопределенной. Значение частично считанного элемента не может быть определено.
 

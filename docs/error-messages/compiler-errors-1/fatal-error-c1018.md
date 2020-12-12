@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Неустранимая ошибка C1018'
 title: Неустранимая ошибка C1018
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - C1018
 ms.assetid: 2ceb8a99-30b2-4b80-bf42-e9f3305b3c52
-ms.openlocfilehash: 3273288f1d60fad840fd8e9c459ce5d209ddb6a4
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 68b81406916ef358a73112c9f6f8b2370c627e54
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756933"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316418"
 ---
 # <a name="fatal-error-c1018"></a>Неустранимая ошибка C1018
 
-Непредвиденный #elif
+непредвиденный #elif
 
 Директива `#elif` встречается за пределами конструкции `#if`, `#ifdef`или `#ifndef` . Используйте `#elif` только в одной из этих конструкций.
 
@@ -29,7 +30,7 @@ ms.locfileid: "74756933"
 int main() {}
 ```
 
-Возможное решение
+Возможное решение:
 
 ```cpp
 // C1018b.cpp

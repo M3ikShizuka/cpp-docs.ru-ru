@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CToolBarCtrl Class'
 title: Класс CToolBarCtrl
 ms.date: 11/04/2016
 f1_keywords:
@@ -182,12 +183,12 @@ helpviewer_keywords:
 - CToolBarCtrl [MFC], SetToolTips
 - CToolBarCtrl [MFC], SetWindowTheme
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
-ms.openlocfilehash: e62d1a6773e1b65eaa1d2f0a8050873c673b5039
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 769403be6e4015df1de04d41fcb0a1b2721ee434
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561860"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97318563"
 ---
 # <a name="ctoolbarctrl-class"></a>Класс CToolBarCtrl
 
@@ -199,7 +200,7 @@ ms.locfileid: "88561860"
 class CToolBarCtrl : public CWnd
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -299,7 +300,7 @@ class CToolBarCtrl : public CWnd
 |[CToolBarCtrl:: Сеттултипс](#settooltips)|Связывает элемент управления «подсказка» с элементом управления ToolBar.|
 |[CToolBarCtrl:: SetWindowTheme](#setwindowtheme)|Задает визуальный стиль элемента управления ToolBar.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Этот элемент управления (и, следовательно, `CToolBarCtrl` класс) доступен только для программ, работающих под управлением windows 95/98 и Windows NT версии 3,51 и более поздних версий.
 
@@ -382,7 +383,7 @@ int AddBitmap(
 
 Отсчитываемый от нуля индекс первого нового образа в случае успеха; в противном случае — 1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вы можете использовать Windows API [креатемаппедбитмап](/windows/win32/api/commctrl/nf-commctrl-createmappedbitmap) для отображения цветов перед добавлением точечного рисунка на панель инструментов. При передаче указателя на `CBitMap` объект необходимо убедиться, что растровое изображение не уничтожается до тех пор, пока не будет удалена панель инструментов.
 
@@ -408,7 +409,7 @@ BOOL AddButtons(
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Указатель *лпбуттонс* указывает на массив `TBBUTTON` структур. Каждая `TBBUTTON` Структура связывает добавленную кнопку со стилем кнопки, изображением и/или строкой, идентификатором команды, состоянием и определяемыми пользователем данными:
 
@@ -507,13 +508,13 @@ int AddStrings(LPCTSTR lpszStrings);
 
 Отсчитываемый от нуля индекс первой новой строки, добавленной в случае успеха; в противном случае — 1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Строки в буфере должны быть разделены символом NULL. Необходимо убедиться, что последняя строка имеет два конца null. Чтобы правильно отформатировать постоянную строку, вы можете написать ее следующим образом:
 
 [!code-cpp[NVC_MFCControlLadenDialog#72](../../mfc/codesnippet/cpp/ctoolbarctrl-class_1.cpp)]
 
-или:
+или
 
 [!code-cpp[NVC_MFCControlLadenDialog#73](../../mfc/codesnippet/cpp/ctoolbarctrl-class_2.cpp)]
 
@@ -527,7 +528,7 @@ int AddStrings(LPCTSTR lpszStrings);
 void AutoSize();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эту функцию следует вызывать при изменении размера родительского окна или при изменении размера панели инструментов (например, при задании размера кнопки или растрового изображения или добавлении строк).
 
@@ -553,7 +554,7 @@ BOOL ChangeBitmap(
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если этот метод выполнен успешно, система отображает указанное изображение в указанной кнопке.
 
@@ -587,7 +588,7 @@ BOOL CheckButton(
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если кнопка была отмечена, она кажется нажатой. Если вы хотите изменить более одного состояния кнопки, попробуйте вызвать [SetState](#setstate) .
 
@@ -608,7 +609,7 @@ UINT CommandToIndex(UINT nID) const;
 
 Отсчитываемый от нуля индекс для кнопки, связанной с ИДЕНТИФИКАТОРом команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="ctoolbarctrlcreate"></a><a name="create"></a> CToolBarCtrl:: Create
 
@@ -640,7 +641,7 @@ virtual BOOL Create(
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Построение создается `CToolBarCtrl` в два этапа. Сначала вызовите конструктор, а затем вызовите метод `Create` , который создает элемент управления Toolbar и прикрепляет его к `CToolBarCtrl` объекту. Применить следующие стили окна к элементу управления ToolBar.
 
@@ -694,7 +695,7 @@ virtual BOOL CreateEx(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте `CreateEx` вместо [CREATE](#create) , чтобы применить расширенные стили Windows, заданные **WS_EX_** в расширенном стиле Windows. `CreateEx` создает элемент управления с расширенными стилями Windows, заданным параметром *двексстиле*. Установка расширенных стилей, относящихся к элементу управления с помощью [сетекстендедстиле](#setextendedstyle). Например, используйте `CreateEx` для установки таких стилей, как WS_EX_CONTEXTHELP, но используйте `SetExtendedStyle` для установки таких стилей, как TBSTYLE_EX_DRAWDDARROWS. Дополнительные сведения см. в статье стили, описанные в разделе [Расширенные стили панели инструментов](/windows/win32/Controls/toolbar-extended-styles) в Windows SDK.
 
@@ -706,7 +707,7 @@ virtual BOOL CreateEx(
 CToolBarCtrl();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Чтобы сделать панель инструментов доступной, необходимо вызвать метод [CREATE](#create) .
 
@@ -718,7 +719,7 @@ CToolBarCtrl();
 void Customize();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это диалоговое окно позволяет пользователю настроить панель инструментов, добавляя и удаляя кнопки. Для поддержки настройки родительское окно панели инструментов должно обрабатывать сообщения уведомления о настройке, как описано в разделе [обработка уведомлений о настройке](../../mfc/handling-customization-notifications.md). Панель инструментов также должна быть создана с использованием стиля CCS_ADJUSTABLE, как описано в разделе [CToolBarCtrl:: Create](#create).
 
@@ -739,7 +740,7 @@ BOOL DeleteButton(int nIndex);
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="ctoolbarctrlenablebutton"></a><a name="enablebutton"></a> CToolBarCtrl:: Енаблебуттон
 
@@ -763,7 +764,7 @@ BOOL EnableButton(
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если кнопка включена, ее можно нажать и проверить. Если вы хотите изменить более одного состояния кнопки, попробуйте вызвать [SetState](#setstate) .
 
@@ -779,7 +780,7 @@ BOOL GetAnchorHighlight() const;
 
 Если ненулевое значение, выделение закреплений включено. Если значение равно нулю, выделение закреплений отключено.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_GETANCHORHIGHLIGHT](/windows/win32/Controls/tb-getanchorhighlight), как описано в Windows SDK.
 
@@ -800,7 +801,7 @@ int GetBitmap(int nID) const;
 
 Возвращает индекс битовой карты в случае успеха или ноль в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализует функциональные возможности [TB_GETBITMAP](/windows/win32/Controls/tb-getbitmap) в Windows SDK.
 
@@ -816,7 +817,7 @@ UINT GetBitmapFlags() const;
 
 Значение типа UINT с установленным флагом TBBF_LARGE, если отображение может поддерживать большие точечные рисунки панели инструментов. в противном случае снимите флажок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Его следует вызывать после создания панели инструментов, но перед добавлением точечных рисунков на панель инструментов. Возвращаемое значение указывает, поддерживает ли дисплей крупные точечные рисунки. Если дисплей поддерживает крупные точечные рисунки и вы решили использовать их, вызовите [сетбитмапсизе](#setbitmapsize) и [сетбуттонсизе](#setbuttonsize) , прежде чем добавлять большой точечный рисунок с помощью [аддбитмап](#addbitmap).
 
@@ -876,7 +877,7 @@ int GetButtonInfo(
 
 Отсчитываемый от нуля индекс кнопки (в случае успеха). в противном случае — 1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_GETBUTTONINFO](/windows/win32/Controls/tb-getbuttoninfo), как описано в Windows SDK.
 
@@ -909,7 +910,7 @@ CString GetButtonText(int idButton) const;
 
 Значение [CString](../../atl-mfc-shared/using-cstring.md) , содержащее отображаемый текст указанной кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [TB_GETBUTTONTEXT](/windows/win32/Controls/tb-getbuttontext) сообщение, описанное в Windows SDK.
 
@@ -930,7 +931,7 @@ BOOL GetColorScheme(COLORSCHEME* lpColorScheme) const;
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [TB_GETCOLORSCHEME](/windows/win32/Controls/tb-getcolorscheme) сообщение, описанное в Windows SDK.
 
@@ -946,7 +947,7 @@ CImageList* GetDisabledImageList() const;
 
 Указатель на объект [CImageList](../../mfc/reference/cimagelist-class.md) или значение null, если отключенный список изображений не задан.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_GETDISABLEDIMAGELIST](/windows/win32/Controls/tb-getdisabledimagelist), как описано в Windows SDK. Реализация MFC `GetDisabledImageList` использует `CImageList` объект, содержащий изображения кнопки элемента управления ToolBar, а не маркер списка изображений.
 
@@ -967,7 +968,7 @@ HRESULT GetDropTarget(IDropTarget** ppDropTarget) const;
 
 Возвращает значение HRESULT, указывающее на успешное выполнение или сбой операции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_GETOBJECT](/windows/win32/Controls/tb-getobject), как описано в Windows SDK.
 
@@ -983,7 +984,7 @@ DWORD GetExtendedStyle() const;
 
 Значение типа DWORD, представляющее расширенные стили, используемые в данный момент для элемента управления ToolBar. Список стилей см. в разделе [Расширенные стили панели инструментов](/windows/win32/Controls/toolbar-extended-styles)в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_GETEXTENDEDSTYLE](/windows/win32/Controls/tb-getextendedstyle), как описано в Windows SDK.
 
@@ -999,7 +1000,7 @@ CImageList* GetHotImageList() const;
 
 Указатель на объект [CImageList](../../mfc/reference/cimagelist-class.md) или значение null, если отключенный список изображений не задан.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_GETHOTIMAGELIST](/windows/win32/Controls/tb-gethotimagelist), как описано в Windows SDK. Кнопка «горячее» отображается, если указатель мыши находится над ним.
 
@@ -1015,7 +1016,7 @@ int GetHotItem() const;
 
 Отсчитываемый от нуля индекс горячего элемента на панели инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_GETHOTITEM](/windows/win32/Controls/tb-gethotitem), как описано в Windows SDK.
 
@@ -1031,7 +1032,7 @@ CImageList* GetImageList() const;
 
 Указатель на объект [CImageList](../../mfc/reference/cimagelist-class.md) или значение null, если список изображений не задан.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_GETIMAGELIST](/windows/win32/Controls/tb-getimagelist), как описано в Windows SDK.
 
@@ -1048,7 +1049,7 @@ void GetInsertMark(TBINSERTMARK* ptbim) const;
 *птбим*<br/>
 Указатель на структуру [тбинсертмарк](/windows/win32/api/commctrl/ns-commctrl-tbinsertmark) , которая получает метку вставки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_GETINSERTMARK](/windows/win32/Controls/tb-getinsertmark), как описано в Windows SDK.
 
@@ -1064,7 +1065,7 @@ COLORREF GetInsertMarkColor() const;
 
 Значение COLORREF, содержащее текущий цвет отметки вставки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_GETINSERTMARKCOLOR](/windows/win32/Controls/tb-getinsertmarkcolor), как описано в Windows SDK.
 
@@ -1090,7 +1091,7 @@ BOOL GetItemRect(
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция не извлекает ограничивающий прямоугольник для кнопок, состояние которых равно TBSTATE_HIDDEN.
 
@@ -1111,7 +1112,7 @@ BOOL GetMaxSize(LPSIZE pSize) const;
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_GETMAXSIZE](/windows/win32/Controls/tb-getmaxsize), как описано в Windows SDK.
 
@@ -1140,7 +1141,7 @@ void GetMetrics(LPTBMETRICS ptbm) const;
 *птбм*<br/>
 Указатель на структуру [тбметрикс](/windows/win32/api/commctrl/ns-commctrl-tbmetrics) `CToolBarCtrl` объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена эмулирует функциональность [TB_GETMETRICS](/windows/win32/Controls/tb-getmetrics) сообщения, как описано в Windows SDK.
 
@@ -1166,7 +1167,7 @@ BOOL GetPadding(
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [TB_GETPADDING](/windows/win32/Controls/tb-getpadding) сообщение, описанное в Windows SDK.
 
@@ -1182,7 +1183,7 @@ CImageList* GetPressedImageList();
 
 Указатель на [CImageList](../../mfc/reference/cimagelist-class.md) , содержащий список изображений для текущего элемента управления, или значение null, если такой список изображений не задан.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [TB_GETPRESSEDIMAGELIST](/windows/win32/Controls/tb-getpressedimagelist) сообщение, описанное в Windows SDK.
 
@@ -1208,7 +1209,7 @@ BOOL GetRect(
 
 Значение TRUE, если успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_GETRECT](/windows/win32/Controls/tb-getrect), как описано в Windows SDK.
 
@@ -1224,7 +1225,7 @@ int GetRows() const;
 
 Число строк кнопок, отображаемых на панели инструментов в данный момент.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Обратите внимание, что количество строк всегда будет равно единице, если только панель инструментов не была создана с использованием стиля TBSTYLE_WRAPABLE.
 
@@ -1245,7 +1246,7 @@ int GetState(int nID) const;
 
 Сведения о состоянии кнопки в случае успеха или-1 в противном случае. Сведения о состоянии кнопки могут представлять собой сочетание значений, перечисленных в [CToolBarCtrl:: аддбуттонс](#addbuttons).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция особенно полезна, если требуется получить более одного состояния кнопки. Чтобы получить одно состояние, используйте одну из следующих функций члена: [исбуттоненаблед](#isbuttonenabled), [исбуттончеккед](#isbuttonchecked), [исбуттонпрессед](#isbuttonpressed), [исбуттонхидден](#isbuttonhidden)или [исбуттониндетерминате](#isbuttonindeterminate). Однако `GetState` функция-член является единственным способом обнаружения состояния кнопки TBSTATE_WRAP.
 
@@ -1282,7 +1283,7 @@ int GetString(
 
 Длина строки, если она выполнена успешно,-1, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_GETSTRING](/windows/win32/Controls/tb-getstring), как описано в Windows SDK.
 
@@ -1310,7 +1311,7 @@ CToolTipCtrl* GetToolTips() const;
 
 Указатель на объект [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) , связанный с этой панелью инструментов, или значение null, если у панели инструментов нет связанного элемента управления "Подсказка".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Поскольку элемент управления ToolBar обычно создает и поддерживает собственный элемент управления "Подсказка", большинству программ не требуется вызывать эту функцию.
 
@@ -1333,7 +1334,7 @@ int HitTest(LPPOINT ppt) const;
 
 Если возвращаемое значение отрицательное, точка не находится внутри кнопки. Абсолютное значение возвращаемого значения — это индекс элемента-разделителя или ближайший неразделительный элемент.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_HITTEST](/windows/win32/Controls/tb-hittest), как описано в Windows SDK.
 
@@ -1359,7 +1360,7 @@ BOOL HideButton(
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вы хотите изменить более одного состояния кнопки, попробуйте вызвать [SetState](#setstate) .
 
@@ -1385,7 +1386,7 @@ BOOL Indeterminate(
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Неопределенные кнопки отображаются серым цветом, например способ отображения кнопки Полужирный на панели инструментов текстового процессора, когда выбранный текст содержит как полужирный, так и обычный символ. Если вы хотите изменить более одного состояния кнопки, попробуйте вызвать [SetState](#setstate) .
 
@@ -1411,7 +1412,7 @@ BOOL InsertButton(
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Изображение и (или) строка, чей индекс должен быть ранее добавлен в список элементов управления ToolBar с помощью [аддбитмап](#addbitmap), [AddString](#addstring)и (или) [аддстрингс](#addstrings).
 
@@ -1437,7 +1438,7 @@ BOOL InsertMarkHitTest(
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_INSERTMARKHITTEST](/windows/win32/Controls/tb-insertmarkhittest), как описано в Windows SDK.
 
@@ -1458,7 +1459,7 @@ BOOL IsButtonChecked(int nID) const;
 
 Ненулевое значение, если кнопка отмечена флажком; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Рассмотрите возможность вызова метода " [State](#getstate) ", если требуется получить более одного состояния кнопки.
 
@@ -1479,7 +1480,7 @@ BOOL IsButtonEnabled(int nID) const;
 
 Ненулевое значение, если кнопка включена; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Рассмотрите возможность вызова метода " [State](#getstate) ", если требуется получить более одного состояния кнопки.
 
@@ -1500,7 +1501,7 @@ BOOL IsButtonHidden(int nID) const;
 
 Ненулевое значение, если кнопка скрыта; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Рассмотрите возможность вызова метода " [State](#getstate) ", если требуется получить более одного состояния кнопки.
 
@@ -1538,7 +1539,7 @@ BOOL IsButtonIndeterminate(int nID) const;
 
 Положительное целое число, если кнопка является неопределенной, ноль, если кнопка не является неопределенной, или-1 при возникновении ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Неопределенные кнопки отображаются серым цветом, например, способ отображения кнопки Полужирный на панели инструментов текстового процессора, если выделенный текст содержит как полужирный, так и обычный символ. Рассмотрите возможность вызова метода " [State](#getstate) ", если требуется получить более одного состояния кнопки.
 
@@ -1559,7 +1560,7 @@ BOOL IsButtonPressed(int nID) const;
 
 Ненулевое значение, если нажата кнопка; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Рассмотрите возможность вызова метода " [State](#getstate) ", если требуется получить более одного состояния кнопки.
 
@@ -1590,7 +1591,7 @@ void LoadImages(
 *хинст*<br/>
 К вызывающему приложению. Этот параметр может быть HINST_COMMCTRL для загрузки стандартного списка изображений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_LOADIMAGES](/windows/win32/Controls/tb-loadimages), как описано в Windows SDK.
 
@@ -1616,7 +1617,7 @@ BOOL MapAccelerator(
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_MAPACCELERATOR](/windows/win32/Controls/tb-mapaccelerator), как описано в Windows SDK.
 
@@ -1642,7 +1643,7 @@ BOOL MarkButton(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_MARKBUTTON](/windows/win32/Controls/tb-markbutton), как описано в Windows SDK.
 
@@ -1668,7 +1669,7 @@ BOOL MoveButton(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_MOVEBUTTON](/windows/win32/Controls/tb-movebutton), как описано в Windows SDK.
 
@@ -1692,7 +1693,7 @@ BOOL PressButton(int nID, BOOL bPress = TRUE);
 
 Значение TRUE, если метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вы хотите изменить более одного состояния кнопки, попробуйте вызвать [SetState](#setstate) .
 
@@ -1715,7 +1716,7 @@ BOOL ReplaceBitmap(LPTBREPLACEBITMAP pReplaceBitmap);
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [TB_REPLACEBITMAP](/windows/win32/Controls/tb-replacebitmap) сообщение, описанное в Windows SDK.
 
@@ -1802,7 +1803,7 @@ BOOL SetAnchorHighlight(BOOL fAnchor = TRUE);
 
 Предыдущий параметр привязки. Если выделение было включено, это значение не равно нулю. Если выделение не было включено, это значение равно нулю.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод реализует поведение сообщения Win32 [TB_SETANCHORHIGHLIGHT](/windows/win32/Controls/tb-setanchorhighlight), как описано в Windows SDK.
 
@@ -1823,7 +1824,7 @@ BOOL SetBitmapSize(CSize size);
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция должна вызываться только перед добавлением точечных рисунков на панель инструментов. Если в приложении явно не задан размер точечного рисунка, по умолчанию используется значение 16 на 15 пикселей.
 
@@ -1849,7 +1850,7 @@ BOOL SetButtonInfo(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция члена реализует поведение сообщения Win32 [TB_SETBUTTONINFO](/windows/win32/Controls/tb-setbuttoninfo), как описано в Windows SDK.
 
@@ -1870,7 +1871,7 @@ BOOL SetButtonSize(CSize size);
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Размер кнопки всегда должен быть не меньше размера точечного рисунка, который он заключает. Эта функция должна вызываться только перед добавлением точечных рисунков на панель инструментов. Если в приложении явно не задан размер кнопки, по умолчанию используется значение 24 x 22 пикселей.
 
@@ -1891,7 +1892,7 @@ void SetButtonStructSize(int nSize);
 *нсизе*<br/>
 Размер структуры в байтах `TBBUTTON` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вы хотите хранить в структуре дополнительные данные `TBBUTTON` , можно либо получить новую структуру из `TBBUTTON` , добавить необходимые элементы, либо создать новую структуру, содержащую `TBBUTTON` структуру в качестве первого элемента. Затем следует вызвать эту функцию, чтобы указать элементу управления ToolBar размер новой структуры.
 
@@ -1919,7 +1920,7 @@ BOOL SetButtonWidth(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_SETBUTTONWIDTH](/windows/win32/Controls/tb-setbuttonwidth), как описано в Windows SDK.
 
@@ -1958,7 +1959,7 @@ void SetColorScheme(const COLORSCHEME* lpColorScheme);
 *лпколорсчеме*\
 окне Указатель на структуру [колорсчеме](/windows/win32/api/commctrl/ns-commctrl-colorscheme) , описывающую цвет выделения и цвет тени элемента управления ToolBar.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод не действует, если задана визуальная тема Windows Vista.
 
@@ -1987,7 +1988,7 @@ CImageList* SetDisabledImageList(CImageList* pImageList);
 
 Указатель на объект [CImageList](../../mfc/reference/cimagelist-class.md) , который ранее использовался элементом управления Toolbar для вывода отключенных изображений кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_SETDISABLEDIMAGELIST](/windows/win32/Controls/tb-setdisabledimagelist), как описано в Windows SDK. Реализация MFC `SetDisabledImageList` использует `CImageList` объект, содержащий отключенные изображения кнопки элемента управления ToolBar, а не маркер списка изображений.
 
@@ -2013,7 +2014,7 @@ DWORD SetDrawTextFlags(
 
 Объект типа DWORD, содержащий предыдущие флаги рисования текста.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_SETDRAWTEXTFLAGS](/windows/win32/Controls/tb-setdrawtextflags), как описано в Windows SDK. Эта функция – член задает флаги в функции Win32 `DrawText` , которая рисует текст в указанном прямоугольнике, отформатированный в соответствии с установленными флагами.
 
@@ -2034,7 +2035,7 @@ DWORD SetExtendedStyle(DWORD dwExStyle);
 
 Значение типа DWORD, представляющее предыдущие расширенные стили. Список стилей см. в разделе [Расширенные стили панели инструментов](/windows/win32/Controls/toolbar-extended-styles)в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_SETEXTENDEDSTYLE](/windows/win32/Controls/tb-setextendedstyle), как описано в Windows SDK.
 
@@ -2055,7 +2056,7 @@ CImageList* SetHotImageList(CImageList* pImageList);
 
 Указатель на объект [CImageList](../../mfc/reference/cimagelist-class.md) , который ранее использовался элементом управления Toolbar для показа изображений активной кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_SETHOTIMAGELIST](/windows/win32/Controls/tb-sethotimagelist), как описано в Windows SDK.
 
@@ -2078,7 +2079,7 @@ int SetHotItem(int nHot);
 
 Индекс предыдущего горячего элемента или значение-1, если не было горячего элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_SETHOTITEM](/windows/win32/Controls/tb-sethotitem), как описано в Windows SDK.
 
@@ -2099,7 +2100,7 @@ CImageList* SetImageList(CImageList* pImageList);
 
 Указатель на объект [CImageList](../../mfc/reference/cimagelist-class.md) , который ранее использовался элементом управления Toolbar для отображения изображений кнопки в состоянии по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_SETIMAGELIST](/windows/win32/Controls/tb-setimagelist), как описано в Windows SDK.
 
@@ -2135,7 +2136,7 @@ void SetInsertMark(TBINSERTMARK* ptbim);
 *птбим*<br/>
 Указатель на структуру [тбинсертмарк](/windows/win32/api/commctrl/ns-commctrl-tbinsertmark) , содержащую метку вставки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_SETINSERTMARK](/windows/win32/Controls/tb-setinsertmark), как описано в Windows SDK.
 
@@ -2156,7 +2157,7 @@ COLORREF SetInsertMarkColor(COLORREF clrNew);
 
 Значение COLORREF, содержащее предыдущий цвет отметки вставки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TB_SETINSERTMARKCOLOR](/windows/win32/Controls/tb-setinsertmarkcolor), как описано в Windows SDK.
 
@@ -2190,7 +2191,7 @@ void SetMetrics(LPTBMETRICS ptbm);
 *птбм*<br/>
 Указатель на структуру [тбметрикс](/windows/win32/api/commctrl/ns-commctrl-tbmetrics) `CToolBarCtrl` объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена эмулирует функциональность [TB_SETMETRICS](/windows/win32/Controls/tb-setmetrics) сообщения, как описано в Windows SDK.
 
@@ -2207,7 +2208,7 @@ void SetOwner(CWnd* pWnd);
 *Приводится*<br/>
 Указатель на `CWnd` `CWnd` объект, производный от или, который будет новым владельцем окна для элемента управления ToolBar.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Окно-владелец — это окно, которое получает уведомления с панели инструментов.
 
@@ -2233,7 +2234,7 @@ DWORD SetPadding(
 
 Параметр DWORD, младшее слово которого содержит предыдущее значение отступа по горизонтали, а большое слово содержит предыдущее значение отступа по вертикали. Значения заполнения измеряются в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [TB_SETPADDING](/windows/win32/Controls/tb-setpadding) сообщение, описанное в Windows SDK.
 
@@ -2265,7 +2266,7 @@ CImagelist* SetPressedImageList(
 
 Указатель на [CImageList](../../mfc/reference/cimagelist-class.md) , содержащий предыдущий список изображений для текущего элемента управления, или значение null, если такой список изображений не задан.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [TB_SETPRESSEDIMAGELIST](/windows/win32/Controls/tb-setpressedimagelist) сообщение, описанное в Windows SDK.
 
@@ -2297,7 +2298,7 @@ void SetRows(
 *лпрект*<br/>
 Указывает на объект [крект](../../atl-mfc-shared/reference/crect-class.md) или структуру [Rect](/windows/win32/api/windef/ns-windef-rect) , которая будет принимать новый ограничивающий прямоугольник панели инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если панель инструментов не может изменить размер до запрошенного числа или строк, размер будет изменен на следующий больший или следующий меньший допустимый размер в зависимости от значения *бларжер*. Если *бларжер* имеет значение true, новое число строк будет больше запрошенного числа. Если *бларжер* имеет значение false, новое число строк будет меньше запрошенного числа.
 
@@ -2333,7 +2334,7 @@ BOOL SetState(
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция особенно полезна, если требуется задать более одного состояния кнопки. Чтобы установить одно состояние, используйте одну из следующих функций члена: [енаблебуттон](#enablebutton), [чеккбуттон](#checkbutton), [Хидебуттон](#hidebutton), [неопределенный](#indeterminate)или [прессбуттон](#pressbutton).
 
@@ -2380,11 +2381,11 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 
 Возвращаемое значение не используется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена эмулирует функциональность [TB_SETWINDOWTHEME](/windows/win32/Controls/tb-setwindowtheme) сообщения, как описано в Windows SDK.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Пример CMNCTRL1 для MFC](../../overview/visual-cpp-samples.md)<br/>
 [Пример MFC MFCIE](../../overview/visual-cpp-samples.md)<br/>

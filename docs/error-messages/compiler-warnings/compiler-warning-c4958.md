@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: предупреждение компилятора C4958'
 title: Предупреждение компилятора C4958
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4958
 ms.assetid: e79b9e9c-d572-4a3a-a3b6-60962b70864a
-ms.openlocfilehash: 63371d91367902c1eab539cb370e55440fcbf917
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 1a6260a441b619923e8c2ddf8c7a5d891a3c3844
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80164889"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314806"
 ---
 # <a name="compiler-warning-c4958"></a>Предупреждение компилятора C4958
 
 > "*Операция*": арифметика указателей не поддается проверке
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Использование арифметики указателей создает непроверяемый образ.
 
-Дополнительные сведения см. в разделе [чистый и проверяемый кодC++(/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).
+Дополнительные сведения см. в разделе [чистый и проверяемый код (C++/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).
 
 Параметр компилятора **/clr: Сейф** является устаревшим в visual Studio 2015 и не поддерживается в visual Studio 2017.
 
