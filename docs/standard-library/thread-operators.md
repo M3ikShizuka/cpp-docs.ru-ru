@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; операторы потоков &gt;'
 title: Операторы &lt;thread&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - std::operator&lt;&lt; (thread)
 - std::operator&lt;= (thread)
 - std::operator== (thread)
-ms.openlocfilehash: 26ed8157685502618fe6fb82fbf9c9ad4c47cba3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3992dccf051622bcf854c1843f1bdeb15d227731
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845033"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207427"
 ---
 # <a name="ltthreadgt-operators"></a>Операторы &lt;thread&gt;
 
@@ -57,7 +58,7 @@ bool operator>= (
 
 `!(Left < Right)`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция не вызывает исключений.
 
@@ -83,7 +84,7 @@ bool operator> (
 
 `Right < Left`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция не вызывает исключений.
 
@@ -109,7 +110,7 @@ bool operator<= (
 
 `!(Right < Left)`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция не вызывает исключений.
 
@@ -135,7 +136,7 @@ bool operator<(
 
 **`true`** значение, если *Left* стоит *справа* в общем порядке; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Оператор определяет общий порядок всех объектов `thread::id`. Эти объекты могут использоваться в качестве ключей в ассоциативных контейнерах.
 
@@ -163,7 +164,7 @@ bool operator!= (
 
 `!(Left == Right)`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция не вызывает исключений.
 
@@ -189,7 +190,7 @@ bool operator== (
 
 **`true`** значение, если два объекта представляют один и тот же поток выполнения или если ни один из объектов не представляет поток выполнения; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция не вызывает исключений.
 
@@ -215,7 +216,7 @@ basic_ostream<Elem, Tr>& operator<<(
 
 *OSTR*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция вставляет *идентификатор* в *OSTR*.
 

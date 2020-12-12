@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: unary_function struct'
 title: Структура unary_function
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - unary_function class
 ms.assetid: 04c2fbdc-c1f6-48ed-b6cc-292a6d484627
-ms.openlocfilehash: 4b93664377838cd5ff97346282cb9120ae9b5e37
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 441bbecbd356dddb20d8b8249dbaa39ccfbcc3ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520594"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207401"
 ---
 # <a name="unary_function-struct"></a>Структура unary_function
 
@@ -27,7 +28,7 @@ struct unary_function
 };
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Структура шаблона служит основой для классов, определяющих функцию-член формы `result_type operator()( constargument_type& ) const` .
 

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о классе Thread
 title: Класс thread
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - std::thread [C++], joinable
 - std::thread [C++], native_handle
 - std::thread [C++], swap
-ms.openlocfilehash: 19f7ae1fc95f531f509273f0eb9998c73fe7d47b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b9afa8e649fd2b3fb0fdaf339e4a6fbead5b4ef6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215586"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207466"
 ---
 # <a name="thread-class"></a>Класс thread
 
@@ -56,7 +57,7 @@ class thread;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[поток](#thread)|Формирует объект `thread`.|
 
@@ -84,7 +85,7 @@ class thread;
 
 **Пространство имен:** std
 
-## <a name="threaddetach"></a><a name="detach"></a>поток::d етач
+## <a name="threaddetach"></a><a name="detach"></a> поток::d етач
 
 Отсоединяет связанный поток. Операционная система становится ответственной за освобождение ресурсов потока при завершении.
 
@@ -92,7 +93,7 @@ class thread;
 void detach();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 После вызова `detach` последующие вызовы [get_id](#get_id) возвращают [id](#id_class).
 
@@ -100,7 +101,7 @@ void detach();
 
 Если поток, связанный с вызывающим объектом, является недопустимым, функция создает ошибку `system_error` с кодом `no_such_process`.
 
-## <a name="threadget_id"></a><a name="get_id"></a>Thread:: get_id
+## <a name="threadget_id"></a><a name="get_id"></a> Thread:: get_id
 
 Возвращает уникальный идентификатор связанного потока.
 
@@ -112,7 +113,7 @@ id get_id() const noexcept;
 
 Объект [thread::id](#id_class), уникально идентифицирующий связанный поток, или `thread::id()`, если с объектом не связан никакой поток.
 
-## <a name="threadhardware_concurrency"></a><a name="hardware_concurrency"></a>Thread:: hardware_concurrency
+## <a name="threadhardware_concurrency"></a><a name="hardware_concurrency"></a> Thread:: hardware_concurrency
 
 Статический метод, который возвращает приблизительное число контекстов аппаратного потока.
 
@@ -124,7 +125,7 @@ static unsigned int hardware_concurrency() noexcept;
 
 Приблизительное число контекстов аппаратного потока. Если значение не может быть вычислено или не является правильно определенным, этот метод возвращает значение 0.
 
-## <a name="threadid-class"></a><a name="id_class"></a>Класс Thread:: ID
+## <a name="threadid-class"></a><a name="id_class"></a> Класс Thread:: ID
 
 Предоставляет уникальный идентификатор для каждого потока выполнения в процессе.
 
@@ -134,13 +135,13 @@ class thread::id {
 };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конструктор по умолчанию создает объект, который не равен объекту `thread::id` ни для какого из существующих потоков.
 
 Все созданные конструктором по умолчанию объекты `thread::id` равны.
 
-## <a name="threadjoin"></a><a name="join"></a>Thread:: Join
+## <a name="threadjoin"></a><a name="join"></a> Thread:: Join
 
 Блокируется до завершения потока выполнения, связанного с вызывающим объектом.
 
@@ -148,11 +149,11 @@ class thread::id {
 void join();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вызов завершается успешно, последующие вызовы [get_id](#get_id) для вызывающего объекта возвращают значение по умолчанию [thread::id](#id_class), которое не равно значению `thread::id` ни одного из существующих потоков; если вызов завершается неудачно, возвращаемое `get_id` значение остается неизменным.
 
-## <a name="threadjoinable"></a><a name="joinable"></a>Thread:: соединение
+## <a name="threadjoinable"></a><a name="joinable"></a> Thread:: соединение
 
 Указывает, является ли связанный поток *соединяемым*.
 
@@ -164,11 +165,11 @@ bool joinable() const noexcept;
 
 **`true`** значение, если связанный поток является *соединяемым*; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Объект потока *присоединяем*, если `get_id() != id()`.
 
-## <a name="threadnative_handle"></a><a name="native_handle"></a>Thread:: native_handle
+## <a name="threadnative_handle"></a><a name="native_handle"></a> Thread:: native_handle
 
 Возвращает тип реализации, представляющий дескриптор потока. Дескриптор потока может использоваться разными способами в зависимости от реализации.
 
@@ -180,7 +181,7 @@ native_handle_type native_handle();
 
 `native_handle_type` определяется как `HANDLE` Win32, который приводится к `void *`.
 
-## <a name="threadoperator"></a><a name="op_eq"></a>Thread:: operator =
+## <a name="threadoperator"></a><a name="op_eq"></a> Thread:: operator =
 
 Связывает поток заданного объекта с текущим объектом.
 
@@ -197,13 +198,13 @@ thread& operator=(thread&& Other) noexcept;
 
 `*this`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовы метода удаляются окончательно, если вызывающий объект присоединяем.
 
 После установления связи `Other` присваивается состояние, созданное по умолчанию.
 
-## <a name="threadswap"></a><a name="swap"></a>поток:: swap
+## <a name="threadswap"></a><a name="swap"></a> поток:: swap
 
 Заменяет состояние потока состоянием заданного объекта `thread`.
 
@@ -216,7 +217,7 @@ void swap(thread& Other) noexcept;
 *Иной*\
 Объект `thread`.
 
-## <a name="threadthread-constructor"></a><a name="thread"></a>Конструктор потока:: Thread
+## <a name="threadthread-constructor"></a><a name="thread"></a> Конструктор потока:: Thread
 
 Формирует объект `thread`.
 
@@ -239,7 +240,7 @@ thread(thread&& Other) noexcept;
 *Иной*\
 Существующий объект `thread`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый конструктор создает объект, который не связан с потоком выполнения. Значение, возвращаемое вызовом `get_id` для созданного объекта, — это `thread::id()`.
 

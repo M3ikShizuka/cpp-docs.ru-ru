@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кмапвордтоптр Class'
 title: Класс Кмапвордтоптр
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - CMapWordToPtr [MFC], RemoveKey
 - CMapWordToPtr [MFC], SetAt
 ms.assetid: b204d87f-6427-43e1-93e3-a4b1bb41099f
-ms.openlocfilehash: 3374b3123e150a4cac127e30bf7e9a6569371b5c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ea260d785b2edf056cdf3b5bc1ef1c79564f5dc7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222983"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207804"
 ---
 # <a name="cmapwordtoptr-class"></a>Класс Кмапвордтоптр
 
@@ -51,7 +52,7 @@ ms.locfileid: "87222983"
 class CMapWordToPtr : public CObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 Функции элементов `CMapWordToPtr` похожи на функции членов класса [кмапстрингтуб](../../mfc/reference/cmapstringtoob-class.md). Из-за этой схожести для изучения этой функции-члена можно использовать справочную документацию по классу `CMapStringToOb`. Когда `CObject` указатель отображается как параметр функции или возвращаемое значение, замените указатель на **`void`** . Везде, где вы видите, `CString` или **`const`** указатель в **`char`** качестве параметра функции или возвращаемого значения, замените слово.
 
@@ -63,13 +64,13 @@ class CMapWordToPtr : public CObject
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[Кмапвордтоптр:: Кмапвордтоптр](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob)|Конструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[Кмапвордтоптр:: NOCOUNT](../../mfc/reference/cmapstringtoob-class.md#getcount)|Возвращает число элементов в этой карте.|
 |[Кмапвордтоптр:: Жесаштаблесизе](../../mfc/reference/cmapstringtoob-class.md#gethashtablesize)|Определяет текущее количество элементов в хэш-таблице.|
@@ -87,13 +88,13 @@ class CMapWordToPtr : public CObject
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Кмапвордтоптр:: operator \[\]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Вставляет элемент в Map — подстановку оператора для `SetAt` .|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CMapWordToPtr`включает в себя макрос IMPLEMENT_DYNAMIC для поддержки доступа к типу во время выполнения и дампа в `CDumpContext` объекте. Если требуется дамп отдельных элементов Map, необходимо установить глубину контекста дампа в 1 или более.
+`CMapWordToPtr` включает в себя макрос IMPLEMENT_DYNAMIC для поддержки доступа к типу во время выполнения и дампа в `CDumpContext` объекте. Если требуется дамп отдельных элементов Map, необходимо установить глубину контекста дампа в 1 или более.
 
 Карты с указателями на слова не могут быть сериализованы.
 
@@ -111,7 +112,7 @@ class CMapWordToPtr : public CObject
 
 **Заголовок:** афксколл. h
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [CObject, класс](../../mfc/reference/cobject-class.md)<br/>
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)

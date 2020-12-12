@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: unary_negate классе'
 title: Класс unary_negate
 ms.date: 02/21/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - unary_negate class
 ms.assetid: e3b86eec-3205-49b9-ab83-f55225af4e0c
-ms.openlocfilehash: 2d9f0bedd9e541e65f04ac20375f16f41413cf03
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 33907bce7e03005488d23b3ac39666b6310b0e43
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72684435"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207414"
 ---
 # <a name="unary_negate-class"></a>Класс unary_negate
 
@@ -31,19 +32,19 @@ class unary_negate
 
 ### <a name="parameters"></a>Параметры
 
-@No__t_1 *Func*
+*Функцию*\
 Унарная функция, которая должна быть инвертирована.
 
-*left* \
+*слева*\
 Операнд унарной функции, которая должна быть инвертирована.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Отрицание унарной функции.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
-Шаблон класса хранит копию объекта унарной функции *\_Func*. Он определяет свою функцию члена `operator()` как возвращаемый `!_Func(left)`.
+Шаблон класса хранит копию объекта унарной функции *\_ Func*. Он определяет свою функцию члена `operator()` как возвращающую `!_Func(left)` .
 
 Конструктор `unary_negate` редко используется напрямую. Вспомогательная функция [not1](../standard-library/functional-functions.md#not1) позволяет удобно объявить и использовать предикат адаптера **unary_negator**.
 

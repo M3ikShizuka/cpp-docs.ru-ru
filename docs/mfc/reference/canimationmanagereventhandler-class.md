@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Каниматионманажеревенсандлер Class'
 title: Класс CAnimationManagerEventHandler
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CAnimationManagerEventHandler [MFC], OnManagerStatusChanged
 - CAnimationManagerEventHandler [MFC], SetAnimationController
 ms.assetid: 6089ec07-e661-4805-b227-823b4652aade
-ms.openlocfilehash: 58bb37e9de40f4bc711b417eab107aa55b8ff0e8
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: aab944c23822486bbc04bb7710d257dd8c42beed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81750114"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207950"
 ---
 # <a name="canimationmanagereventhandler-class"></a>Класс CAnimationManagerEventHandler
 
@@ -31,25 +32,25 @@ ms.locfileid: "81750114"
 class CAnimationManagerEventHandler : public CUIAnimationManagerEventHandlerBase<CAnimationManagerEventHandler>;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CAnimationManagerEventHandler::CAnimationManagerEventHandler](#canimationmanagereventhandler)|Формирует объект `CAnimationManagerEventHandler`.|
+|[Каниматионманажеревенсандлер:: Каниматионманажеревенсандлер](#canimationmanagereventhandler)|Формирует объект `CAnimationManagerEventHandler`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CAnimationManagerEventHandler::CreateInstance](#createinstance)|Создает экземпляр `CAnimationManagerEventHandler` объекта.|
-|[CAnimationManagerEventhandler::OnManagerStatusChanged](#onmanagerstatuschanged)|Вызывается при изменении статуса менеджера анимации. (Переопределяет `CUIAnimationManagerEventHandlerBase::OnManagerStatusChanged`.)|
-|[CAnimationManagerEventHandler::SetAnimationController](#setanimationcontroller)|Хранит указатель контроллера анимации для маршрутизатора событий.|
+|[Каниматионманажеревенсандлер:: CreateInstance](#createinstance)|Создает экземпляр `CAnimationManagerEventHandler` объекта.|
+|[Каниматионманажеревенсандлер:: Онманажерстатусчанжед](#onmanagerstatuschanged)|Вызывается, когда изменилось состояние диспетчера анимации. (Переопределяет `CUIAnimationManagerEventHandlerBase::OnManagerStatusChanged`.)|
+|[Каниматионманажеревенсандлер:: Сетаниматионконтроллер](#setanimationcontroller)|Хранит указатель на контроллер анимации для маршрутизации событий.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Обработчик событий создается и передается методу IUIAnimationManager::SetManagerEventHandler метод, когда вы звоните CAnimationController::EnableAnimationManagerEvent.
+Этот обработчик событий создается и передается методу Иуианиматионманажер:: Сетманажеревенсандлер при вызове Каниматионконтроллер:: Енаблеаниматионманажеревент.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -63,21 +64,21 @@ class CAnimationManagerEventHandler : public CUIAnimationManagerEventHandlerBase
 
 **Заголовок:** afxanimationcontroller.h
 
-## <a name="canimationmanagereventhandlercanimationmanagereventhandler"></a><a name="canimationmanagereventhandler"></a>CAnimationManagerEventHandler::CAnimationManagerEventHandler
+## <a name="canimationmanagereventhandlercanimationmanagereventhandler"></a><a name="canimationmanagereventhandler"></a> Каниматионманажеревенсандлер:: Каниматионманажеревенсандлер
 
 Требуется Visual Studio 2010 с пакетом обновления 1 (SP1).
 
-Строит объект CAnimationManagerEventHandler.
+Конструирует объект Каниматионманажеревенсандлер.
 
 ```
 CAnimationManagerEventHandler();
 ```
 
-## <a name="canimationmanagereventhandlercreateinstance"></a><a name="createinstance"></a>CAnimationManagerEventHandler::CreateInstance
+## <a name="canimationmanagereventhandlercreateinstance"></a><a name="createinstance"></a> Каниматионманажеревенсандлер:: CreateInstance
 
 Требуется Visual Studio 2010 с пакетом обновления 1 (SP1).
 
-Создает экземпляр объекта CAnimationManagerEventHandler.
+Создает экземпляр объекта Каниматионманажеревенсандлер.
 
 ```
 static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
@@ -87,21 +88,21 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 
 ### <a name="parameters"></a>Параметры
 
-*pAnimationКонтроллер*<br/>
-Указатель на контроллер анимации, который будет получать события.
+*паниматионконтроллер*<br/>
+Указатель на контроллер анимации, который будет принимать события.
 
-*ppManagerEventHandler*<br/>
-Выходные данные. Если метод успешно удается, он содержит указатель на объект COM, который будет обрабатывать обновления статуса для менеджера анимации.
+*ппманажеревенсандлер*<br/>
+Выходные данные. Если метод выполнен, он содержит указатель на COM-объект, который будет поддерживать обновления состояния для диспетчера анимации.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод завершается успешно, возвращает значение S_OK. В противном случае он возвращает код ошибки HRESULT.
+Если метод завершается успешно, возвращает значение S_OK. В противном случае возвращается код ошибки HRESULT.
 
-## <a name="canimationmanagereventhandleronmanagerstatuschanged"></a><a name="onmanagerstatuschanged"></a>CAnimationManagerEventhandler::OnManagerStatusChanged
+## <a name="canimationmanagereventhandleronmanagerstatuschanged"></a><a name="onmanagerstatuschanged"></a> Каниматионманажеревенсандлер:: Онманажерстатусчанжед
 
 Требуется Visual Studio 2010 с пакетом обновления 1 (SP1).
 
-Вызывается при изменении статуса менеджера анимации.
+Вызывается, когда изменилось состояние диспетчера анимации.
 
 ```
 IFACEMETHOD(OnManagerStatusChanged)(
@@ -111,21 +112,21 @@ IFACEMETHOD(OnManagerStatusChanged)(
 
 ### <a name="parameters"></a>Параметры
 
-*newStatus*<br/>
-Новый статус.
+*невстатус*<br/>
+Новое состояние.
 
-*предыдущийСтатус*<br/>
-Предыдущий статус.
+*превиаусстатус*<br/>
+Предыдущее состояние.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Текущая реализация всегда возвращает S_OK;
 
-## <a name="canimationmanagereventhandlersetanimationcontroller"></a><a name="setanimationcontroller"></a>CAnimationManagerEventHandler::SetAnimationController
+## <a name="canimationmanagereventhandlersetanimationcontroller"></a><a name="setanimationcontroller"></a> Каниматионманажеревенсандлер:: Сетаниматионконтроллер
 
 Требуется Visual Studio 2010 с пакетом обновления 1 (SP1).
 
-Хранит указатель контроллера анимации для маршрутизатора событий.
+Хранит указатель на контроллер анимации для маршрутизации событий.
 
 ```cpp
 void SetAnimationController(CAnimationController* pAnimationController);
@@ -133,8 +134,8 @@ void SetAnimationController(CAnimationController* pAnimationController);
 
 ### <a name="parameters"></a>Параметры
 
-*pAnimationКонтроллер*<br/>
-Указатель на контроллер анимации, который будет получать события.
+*паниматионконтроллер*<br/>
+Указатель на контроллер анимации, который будет принимать события.
 
 ## <a name="see-also"></a>См. также раздел
 
