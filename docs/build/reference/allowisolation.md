@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/ALLOWISOLATION
 title: /ALLOWISOLATION
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /ALLOWISOLATION editbin option
 - ALLOWISOLATION editbin option
 ms.assetid: 91430344-f64f-491a-a5a5-7ea3b21cbe68
-ms.openlocfilehash: 3dae8ee83e25492fab0ba2c6a55681728d5f3453
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 7d935bc122b5f32bb8f1193feae58b5fc61e7faa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79440371"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179594"
 ---
 # <a name="allowisolation"></a>/ALLOWISOLATION
 
@@ -32,7 +33,7 @@ ms.locfileid: "79440371"
 
 По умолчанию используется **/ALLOWISOLATION** .
 
-**/ALLOWISOLATION: нет** означает, что исполняемые файлы загружаются так, как если бы манифеста не было, и заставляет [ссылку EDITBIN](editbin-reference.md) задать бит `IMAGE_DLLCHARACTERISTICS_NO_ISOLATION` в поле `DllCharacteristics` необязательного заголовка.
+**/ALLOWISOLATION: нет** означает, что исполняемые файлы загружаются, как если бы манифеста не было, и заставляет [ссылку EDITBIN](editbin-reference.md) задать `IMAGE_DLLCHARACTERISTICS_NO_ISOLATION` бит в поле необязательного заголовка `DllCharacteristics` .
 
 Если изоляция для исполняемого файла отключена, загрузчик Windows не пытается найти манифест приложения для нового процесса. Новый процесс не имеет контекста активации по умолчанию, даже если существует манифест в самом исполняемом файле или если имеется манифест с именем *Executable*. exe. manifest.
 

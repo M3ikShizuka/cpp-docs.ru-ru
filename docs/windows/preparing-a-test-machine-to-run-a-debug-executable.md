@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: Подготовка тестового компьютера для выполнения исполняемого файла отладки'
 title: Подготовка тестового компьютера для выполнения исполняемого файла отладки
 ms.date: 07/02/2019
 helpviewer_keywords:
 - debug executable, preparing a test machine to run
 ms.assetid: f0400989-cc2e-4dce-9788-6bdbe91c6f5a
-ms.openlocfilehash: 26a92d5efc4bf9f0332a0e81fa2f9c8b2c2a958f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 28bc1d328cf1ea1d7c9738012407f3190e3a65bd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81359912"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180010"
 ---
 # <a name="preparing-a-test-machine-to-run-a-debug-executable"></a>Подготовка тестового компьютера для выполнения исполняемого файла отладки
 
@@ -22,10 +23,10 @@ ms.locfileid: "81359912"
 
 - Используйте центральное развертывание для установки отладочной версии конкретной библиотеки DLL Visual C++ в каталоге %windir%\system32\, используя проект установки, который включает в себя модули слияния для подходящей версии библиотеки и архитектуры приложения. Модули слияния можно найти в каталоге Program Files или Program Files (x86) внутри \Common Files\Merge Modules\\. Отладочная версия модуля слияния имеет слово Debug в имени, например Microsoft_VC110_DebugCRT_x86.msm. Пример этого развертывания можно найти в разделе [Пошаговое руководство. Развертывание приложения Visual C++ с помощью проекта установки](walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project.md).
 
-- Используйте локальное развертывание для установки отладки версии конкретного Визуального C'DLL в каталоге установки приложения, используя файлы, которые \<предусмотрены в программных файлах\\или файлах программы (x86) каталога в «Версии Microsoft Visual Studio> »VC»redist Debug_NonRedist.
+- Используйте локальное развертывание для установки отладочной версии определенной Visual C++ библиотеки DLL в каталоге установки приложения, используя файлы, указанные в каталоге Program Files или Program Files (x86) в \Microsoft Visual Studio \<version> \вк\редист\ Debug_NonRedist \\ .
 
     > [!NOTE]
-    >  Для удаленной отладки приложения, построенного с помощью Visual Studio 2005 или Visual Studio 2008 на другом компьютере, необходимо развернуть отладочные версии DLL библиотеки Visual C' в качестве общих бок о бок сборки. Вы можете использовать проект установки или установщик Windows для установки подходящих модулей слияния.
+    >  Для удаленной отладки приложения, созданного с помощью Visual Studio 2005 или Visual Studio 2008 на другом компьютере, необходимо развернуть отладочные версии библиотек DLL Visual C++ Library как общие параллельные сборки. Вы можете использовать проект установки или установщик Windows для установки подходящих модулей слияния.
 
 - Используйте параметр **Развернуть** в диалоговом окне **Диспетчер конфигураций** Visual Studio, чтобы скопировать выходные и другие файлы проекта на удаленный компьютер.
 
@@ -33,7 +34,7 @@ ms.locfileid: "81359912"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Развертывание в визуальном СЗЗ](deployment-in-visual-cpp.md)<br>
+[Развертывание в Visual C++](deployment-in-visual-cpp.md)<br>
 [Параметры командной строки установщика Windows](/windows/win32/Msi/command-line-options)<br>
 [Примеры развертывания](deployment-examples.md)<br>
-[Дистанционное отладка](/visualstudio/debugger/remote-debugging)
+[Remote Debugging](/visualstudio/debugger/remote-debugging)

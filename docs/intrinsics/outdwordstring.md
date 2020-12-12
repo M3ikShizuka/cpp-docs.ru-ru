@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __outdwordstring'
 title: __outdwordstring
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - __outdwordstring intrinsic
 - rep outsd instruction
 ms.assetid: 55b31a65-aab7-4b5c-b61d-d9e2fb0c497a
-ms.openlocfilehash: 50908a65795af617f18a497c073cfefe009dfd80
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 3fbba7dd128666b591305326695e656befd9cada
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217159"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180398"
 ---
 # <a name="__outdwordstring"></a>__outdwordstring
 
 **Блок, относящийся только к системам Microsoft**
 
-Формирует инструкцию, которая отправляет `Count` даублевордс, начиная `Buffer` с порта ввода-вывода, заданного параметром `Port`. `rep outsd`
+Формирует `rep outsd` инструкцию, которая отправляет `Count` даублевордс, начиная с `Buffer` порта ввода-вывода, заданного параметром `Port` .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,13 +45,13 @@ void __outdwordstring(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__outdwordstring`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эта процедура доступна только как встроенная функция.
 

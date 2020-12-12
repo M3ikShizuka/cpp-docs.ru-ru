@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее: распространение приложения ATL'
 title: Повторное распространение приложения ATL
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - redistributing OLE DB templates
 - OLE DB templates, redistributing
 ms.assetid: 9a696b22-2345-43ec-826b-be7cb8cfd676
-ms.openlocfilehash: a1da92a00d6bf88f41801f8eb99433d0c64812b1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 58021416eb7f258e1d436ff099ebf9c647dfc0bc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362417"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179958"
 ---
 # <a name="redistributing-an-atl-application"></a>Повторное распространение приложения ATL
 
@@ -26,7 +27,7 @@ filename /regserver
 
 где `filename` — это имя исполняемого файла.
 
-В Visual Studio 2010 проект ATL можно собирать для конфигурации MinDependency или MinSize. Конфигурация MinDependency возникает, когда свойству **Использование AT**L на странице свойств **Общие** присваивается значение **Статическая компоновка с ATL**, а свойству **Библиотека среды выполнения** на странице свойств **Создание кода** (папка C/C++) — значение **Многопоточная (/MT)**.
+В Visual Studio 2010 проект ATL можно собирать для конфигурации MinDependency или MinSize. Конфигурация MinDependency возникает, когда свойству **Использование AT** L на странице свойств **Общие** присваивается значение **Статическая компоновка с ATL**, а свойству **Библиотека среды выполнения** на странице свойств **Создание кода** (папка C/C++) — значение **Многопоточная (/MT)**.
 
 Конфигурация MinSize возникает, когда свойству **Использование ATL** на странице свойств **Общие** присваивается значение **Динамическая компоновка с ATL**, а свойству **Библиотека среды выполнения** на странице свойств **Создание кода** (папка C/C++) — значение **Многопоточная DLL (/MD)**.
 
@@ -42,6 +43,6 @@ filename /regserver
 
 где `filename` — это имя исполняемого файла.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Распространение файлов Visual C++](redistributing-visual-cpp-files.md)

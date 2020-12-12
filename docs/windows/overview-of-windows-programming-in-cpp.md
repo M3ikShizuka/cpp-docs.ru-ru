@@ -1,13 +1,14 @@
 ---
+description: 'Подробнее: Общие сведения о программировании Windows в C++'
 title: Общие сведения о программировании на C++ в Windows
 ms.date: 09/17/2019
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
-ms.openlocfilehash: 0aa667168f88f48458ae3a9b3541d4944f7530cc
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 812fef686208f5f9d4f1c23cd5eb9b2cb8b227bf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404991"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180114"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>Общие сведения о программировании на C++ в Windows
 
@@ -101,7 +102,7 @@ Visual Studio включает многофункциональный отлад
 |-----------|-----------------|
 |[Пошаговое руководство. Создание стандартной программы на языке C++](walkthrough-creating-a-standard-cpp-program-cpp.md)| Создайте консольное приложение Windows.|
 |[Пошаговое руководство. Создание классических приложений Windows (C++)](walkthrough-creating-windows-desktop-applications-cpp.md)|Создайте собственное классическое приложение для Windows.|
-|[Мастер классической версии Windows](windows-desktop-wizard.md)|Используйте мастер для создания новых проектов Windows.|
+|[Мастер классических приложений Windows](windows-desktop-wizard.md)|Используйте мастер для создания новых проектов Windows.|
 |[Библиотека шаблонных классов (ATL)](../atl/atl-com-desktop-components.md)|Использование библиотеки ATL для создания COM-компонентов в C++.|
 |[Microsoft Foundation Classes (MFC)](../mfc/mfc-desktop-applications.md)|Использование MFC для создания крупных или небольших приложений Windows с помощью диалоговых окон и элементов управления|
 |[Общие классы ATL и MFC](../atl-mfc-shared/atl-mfc-shared-classes.md)|Используйте такие классы, как CString, которые являются общими в ATL и MFC.|

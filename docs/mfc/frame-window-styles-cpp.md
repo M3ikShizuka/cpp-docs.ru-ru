@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: стили Frame-Window (C++)'
 title: Стили окна фрейма (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - MFC, frame windows
 - styles [MFC], windows
 ms.assetid: fc5058c1-eec8-48d8-9f76-3fc01cfa53f7
-ms.openlocfilehash: 3c22944537370a44aee1af1cf71281264ed4969b
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 5d7b0effe4b7cea17eb0b5bd8208563ba552ba99
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626457"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180347"
 ---
 # <a name="frame-window-styles-c"></a>Стили окна фрейма (C++)
 
-Окна фрейма, получаемые с помощью платформы, подходят для большинства программ, но вы можете получить дополнительную гибкость, используя расширенные функции [PreCreateWindow](reference/cwnd-class.md#precreatewindow) и глобальную функцию MFC [афксрегистервндкласс](reference/application-information-and-management.md#afxregisterwndclass). `PreCreateWindow`является функцией-членом `CWnd` .
+Окна фрейма, получаемые с помощью платформы, подходят для большинства программ, но вы можете получить дополнительную гибкость, используя расширенные функции [PreCreateWindow](reference/cwnd-class.md#precreatewindow) и глобальную функцию MFC [афксрегистервндкласс](reference/application-information-and-management.md#afxregisterwndclass). `PreCreateWindow` является функцией-членом `CWnd` .
 
 Если применить стили **WS_HSCROLL** и **WS_VSCROLL** к главному окну фрейма, они будут применены к окну **мдиклиент** , чтобы пользователи могли прокручивать область **мдиклиент** .
 

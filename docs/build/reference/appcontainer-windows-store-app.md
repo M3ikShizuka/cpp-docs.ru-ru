@@ -1,17 +1,18 @@
 ---
-title: / APPCONTAINER (приложение UWP/Microsoft Store)
+description: Дополнительные сведения о:/APPCONTAINER (Microsoft Store приложение)
+title: /APPCONTAINER (приложение UWP/Microsoft Store)
 ms.date: 11/04/2016
 ms.assetid: 9a432db5-7640-460b-ab18-6f61fa7daf6f
-ms.openlocfilehash: f7ab8cf1ce034580953fdf1403264e8ef3d3ff09
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 4cb78c85aa59ebd7fc0eb82af9497606bc3c431c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62295126"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179581"
 ---
-# <a name="appcontainer-microsoft-store-app"></a>/ APPCONTAINER (приложение Microsoft Store)
+# <a name="appcontainer-microsoft-store-app"></a>/APPCONTAINER (Microsoft Store приложение)
 
-Указывает, создает ли компоновщик исполняемый образ, который должен запускаться в контейнере приложения.
+Указывает, создает ли компоновщик исполняемый образ, который должен выполняться в контейнере приложения.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -19,27 +20,27 @@ ms.locfileid: "62295126"
 /APPCONTAINER[:NO]
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-По умолчанию/appcontainer отключено.
+По умолчанию/APPCONTAINER отключен.
 
-Этот параметр изменяет исполняемый файл, чтобы указать, должна ли приложение выполняться в среде изоляции процессов appcontainer. Задайте параметр/appcontainer для приложения, который должен выполняться в среде appcontainer — например, для универсальной платформы Windows (UWP) или Windows Phone 8.x приложения. (Параметр задается автоматически в Visual Studio при создании приложения универсальной Windows на основе шаблона.) Для классического приложения укажите/appcontainer: no или просто опустив параметр.
+Этот параметр изменяет исполняемый файл, чтобы указать, должно ли приложение запускаться в среде изоляции процессов appcontainer. Укажите/APPCONTAINER для приложения, которое должно выполняться в среде APPCONTAINER (например, универсальная платформа Windows (UWP) или Windows Phone 8. x). (Параметр задается автоматически в Visual Studio при создании универсального приложения Windows из шаблона.) Для классического приложения укажите/APPCONTAINER: NO или просто опустите параметр.
 
-Параметр/appcontainer впервые появился в Windows 8.
+Параметр/APPCONTAINER появился в Windows 8.
 
 ### <a name="to-set-this-linker-option-in-visual-studio"></a>Настройка этого параметра компоновщика в Visual Studio
 
-1. Откройте диалоговое окно **Окна свойств** проекта. Дополнительные сведения см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+1. Откройте диалоговое окно **Окна свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойств сборки в Visual Studio](../working-with-project-properties.md).
 
 1. Разверните узел **Свойства конфигурации**.
 
-1. Разверните **компоновщика** узла.
+1. Разверните узел **Компоновщик**.
 
-1. Выберите **командной строки** страницу свойств.
+1. Выберите страницу свойств **Командная строка** .
 
-1. В **Дополнительные параметры**, введите `/APPCONTAINER` или `/APPCONTAINER:NO`.
+1. В окне **Дополнительные параметры** введите `/APPCONTAINER` или `/APPCONTAINER:NO` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по компоновщику MSVC](linking.md)<br/>
 [Параметры компоновщика MSVC](linker-options.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: сочетания клавиш (C++)'
 title: Сочетания клавиш (C++)
 ms.date: 02/14/2019
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - menus [C++], shortcut keys
 - keyboard shortcuts [C++], menu association
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
-ms.openlocfilehash: 4f838caa8ca9e4a996fa4cb8018d663c6c7aecea
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 397e0735ba33af6adf8f10c6188f73d6f504e68b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91504296"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180101"
 ---
 # <a name="accelerator-keys-c"></a>Сочетания клавиш (C++)
 
@@ -21,7 +22,7 @@ ms.locfileid: "91504296"
 
 Существуют стандартные сочетания клавиш, которые могут быть использованы в проектах приложений Windows. Некоторые из этих виртуальных клавиш предназначены для среды Windows. Другие поддерживают браузер или приложения для Юникода. Вы можете использовать любую из этих клавиш в любом сочетании.
 
-|Клавиши|Описание|
+|Ключ|Описание|
 |---------|-----------------|
 |VK_ACCEPT|(IME) Accept|
 |VK_BROWSER_BACK|Windows Браузер, клавиша **возврата**|
@@ -57,7 +58,7 @@ ms.locfileid: "91504296"
 |VK_OEM_2|Windows Для стандартной клавиатуры США в поле **/?** ключ|
 |VK_OEM_3|Windows Для стандартной клавиатуры США **`~** ключ|
 |VK_OEM_4|Windows Для стандартной клавиатуры США параметр **[{** Key|
-|VK_OEM_5|Windows Для стандартной клавиатуры США ** \\&#124;** ключ|
+|VK_OEM_5|Windows Для стандартной клавиатуры США **\\&#124;** ключ|
 |VK_OEM_6|Windows Для стандартной клавиатуры США клавиша **]}**|
 |VK_OEM_7|Windows Для стандартной клавиатуры США — клавиша "одинарная кавычка/двойная кавычка"|
 |VK_OEM_COMMA|Windows Для любой страны или региона **, ключ**|

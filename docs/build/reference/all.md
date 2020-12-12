@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/ALL
 title: /ALL
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - -ALL dumpbin option
 - ALL dumpbin option
 ms.assetid: aa7eb74a-33ba-4d77-8620-3d7ea8b19952
-ms.openlocfilehash: 4b02a13be70963d8c2dcf934cf2c750daf8052a9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 175d4ea7fb7bf4895c304846e6064be5e24bec67
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62273187"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179685"
 ---
 # <a name="all"></a>/ALL
 
@@ -21,12 +22,12 @@ ms.locfileid: "62273187"
 /ALL
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Этот параметр отображает все доступные данные, кроме дизассемблированного кода. Используйте [/DISASM](disasm.md) для отображения дизассемблированного кода. Можно использовать [/RAWDATA](rawdata.md): NONE/всех опустить двоичных необработанных сведений о файле.
+Этот параметр отображает все доступные сведения, кроме дизассемблированного кода. Используйте [/DISASM](disasm.md) для вывода дизассемблированного кода. Для пропуска необработанных двоичных данных файла можно использовать [/равдата](rawdata.md): None с параметром/ALL.
 
-Только [/Headers](headers.md) параметр (программа DUMPBIN) доступен для использования в файлах, созданных с помощью [/GL](gl-whole-program-optimization.md) параметр компилятора.
+С файлами, созданными с использованием параметра компилятора [/GL](gl-whole-program-optimization.md), можно использовать только параметр DUMPBIN [/HEADERS](headers.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Параметры DUMPBIN](dumpbin-options.md)

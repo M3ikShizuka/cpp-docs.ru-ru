@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: предопределенные символы MFC'
 title: Предопределенные символы MFC
 ms.date: 02/14/2019
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - databases [C++], MFC programming model
 - Windows programming MFC symbols [C++]
 ms.assetid: c1e689c4-45d7-40a3-8ee9-f47676cc3bbb
-ms.openlocfilehash: 376b25b457ae0bb9ebc473d997b91c7acfd7316e
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a55cc0d3e572da7321d992715257e444bbe1d261
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846307"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97180088"
 ---
 # <a name="mfc-predefined-symbols"></a>Предопределенные символы MFC
 
@@ -439,7 +440,7 @@ ms.locfileid: "88846307"
 
 Эти символы также являются частью файлов поддержки MFC, но поддерживают стандартные функции и действия приложения Windows. Эти символы используются с меню.
 
-При работе с меню в **редакторе меню**эти символы будут отображаться в окне **свойств** , связанном с командами общего меню. Например, если в приложении есть меню **файл** с командой **выхода** , эта команда будет связана с символом `ID_APP_EXIT` в [окно свойств](/visualstudio/ide/reference/properties-window).
+При работе с меню в **редакторе меню** эти символы будут отображаться в окне **свойств** , связанном с командами общего меню. Например, если в приложении есть меню **файл** с командой **выхода** , эта команда будет связана с символом `ID_APP_EXIT` в [окно свойств](/visualstudio/ide/reference/properties-window).
 
 :::row:::
    :::column span="":::

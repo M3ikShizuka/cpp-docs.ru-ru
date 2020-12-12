@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/c (компиляция без компоновки)
 title: Параметр /c (компиляция без связывания)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,16 +11,16 @@ helpviewer_keywords:
 - c compiler option [C++]
 - /c compiler option [C++]
 ms.assetid: 8017fc3d-e5dd-4668-a1f7-3120daa95d20
-ms.openlocfilehash: bfe351daf43b913f10df74b1059ba98f7d5d657b
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b9dd692dd99cddf63015fe26e37dc54841816f7f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294854"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179373"
 ---
 # <a name="c-compile-without-linking"></a>Параметр /c (компиляция без связывания)
 
-Запрет автоматического вызова к СВЯЗИ.
+Предотвращает автоматический вызов LINK.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -27,15 +28,15 @@ ms.locfileid: "62294854"
 /c
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Компиляция с **/c** создает только OBJ-файлы. СВЯЗИ необходимо вызвать явным образом с необходимые файлы и параметры для выполнения этапа связывания построения.
+При компиляции с параметром **/c** создаются только OBJ-файлы. Необходимо явно вызвать LINK с соответствующими файлами и параметрами для выполнения фазы связывания сборки.
 
-Любой внутренний проект, созданный в среде разработки используется **/c** параметр по умолчанию.
+Во всех внутренних проектах, созданных в среде разработки, по умолчанию используется параметр **/c** .
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Установка данного параметра компилятора в среде разработки Visual Studio
 
-- Этот параметр не доступен из среды разработки.
+- Этот параметр недоступен в среде разработки.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Установка данного параметра компилятора программным способом
 
@@ -43,19 +44,19 @@ ms.locfileid: "62294854"
 
 ## <a name="example"></a>Пример
 
-Следующая команда создает объектные файлы FIRST.obj и SECOND.obj. THIRD.obj учитывается.
+Следующая командная строка создает объектные файлы FIRST. obj и SECOND. obj. Третий obj игнорируется.
 
 ```
 CL /c FIRST.C SECOND.C THIRD.OBJ
 ```
 
-Чтобы создать исполняемый файл, необходимо вызвать ССЫЛКУ:
+Чтобы создать исполняемый файл, необходимо вызвать LINK:
 
 ```
 LINK firsti.obj second.obj third.obj /OUT:filename.exe
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора MSVC](compiler-command-line-syntax.md)
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)

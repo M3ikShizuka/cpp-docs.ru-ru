@@ -1,17 +1,18 @@
 ---
+description: Дополнительные сведения о:/Arch (ARM)
 title: /arch (ARM)
 ms.date: 11/04/2016
 ms.assetid: 4f1406ff-f174-487c-a126-8ab06cf447c1
-ms.openlocfilehash: b732a74d5fe223fdaf3b161d4ae92093ab5df407
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 885b624eb6a470d24d691641d0be63515ee76a49
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62295208"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179568"
 ---
 # <a name="arch-arm"></a>/arch (ARM)
 
-Указывает архитектуру для создания кода на платформе ARM. См. также [/arch (x86)](arch-x86.md) и [/arch (x64)](arch-x64.md).
+Указывает архитектуру для создания кода на платформе ARM. См. также [/Arch (x86)](arch-x86.md) и [/Arch (x64)](arch-x64.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -21,34 +22,34 @@ ms.locfileid: "62295208"
 
 ## <a name="arguments"></a>Аргументы
 
-**/arch:ARMv7VE**<br/>
+**/Arch: ARMv7VE**<br/>
 Включает использование инструкций расширения виртуализации ARMv7VE.
 
-**/arch:VFPv4**<br/>
+**/Arch: VFPv4**<br/>
 Включает использование инструкций ARM VFPv4. Если этот параметр не указан, по умолчанию используется VFPv3.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-`_M_ARM_FP` Макроса (ARM) указывает, что, если таковые имеются, **/arch** использовался параметр компилятора. Для получения дополнительной информации см. [Predefined Macros](../../preprocessor/predefined-macros.md).
+`_M_ARM_FP`Макрос (только для ARM) указывает, какой параметр компилятора (если  таковой имеется) был использован. Для получения дополнительной информации см. [Predefined Macros](../../preprocessor/predefined-macros.md).
 
-При использовании [/CLR](clr-common-language-runtime-compilation.md) для компиляции, **/arch** не влияет на создание кода для управляемых функций. **/ arch** только влияет на создание кода для собственных функций.
+При использовании [параметра/clr](clr-common-language-runtime-compilation.md) для компиляции **/Arch** не влияет на создание кода для управляемых функций. **/Arch** влияет только на создание кода для собственных функций.
 
 ### <a name="to-set-the-archarmv7ve-or-archvfpv4-compiler-option-in-visual-studio"></a>Чтобы задать параметр компилятора /arch:ARMv7VE или /arch:VFPv4 в Visual Studio
 
-1. Откройте **страницы свойств** диалоговое окно для проекта. Дополнительные сведения см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойств сборки в Visual Studio](../working-with-project-properties.md).
 
-1. Выберите **C/C++** папки.
+1. Выберите папку **C/C++** .
 
-1. Выберите **командной строки** страницу свойств.
+1. Выберите страницу свойств **Командная строка** .
 
-1. В **Дополнительные параметры** , добавьте `/arch:ARMv7VE` или `/arch:VFPv4`.
+1. В поле **Дополнительные параметры** добавьте `/arch:ARMv7VE` или `/arch:VFPv4` .
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Установка данного параметра компилятора программным способом
 
 - См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[/arch (минимальная архитектура ЦПУ)](arch-minimum-cpu-architecture.md)<br/>
+[/Arch (минимальная архитектура ЦП)](arch-minimum-cpu-architecture.md)<br/>
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора MSVC](compiler-command-line-syntax.md)
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)
