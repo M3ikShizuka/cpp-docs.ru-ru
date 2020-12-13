@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Катлмодулет Class'
 title: Класс Катлмодулет
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlModuleT class
 ms.assetid: 9b74d02f-9117-47b1-a05e-c5945f83dd2b
-ms.openlocfilehash: b07e60265570e66337a2d13007e9ad57c6f369e4
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 841d4a41b7df818d9e966af1050fd9e376d89447
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167868"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147229"
 ---
 # <a name="catlmodulet-class"></a>Класс Катлмодулет
 
@@ -35,19 +36,19 @@ class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 ### <a name="parameters"></a>Параметры
 
 *T*<br/>
-Класс, производный `CAtlModuleT`от.
+Класс, производный от `CAtlModuleT` .
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Катлмодулет:: Катлмодулет](#catlmodulet)|Конструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Катлмодулет:: Инитлибид](#initlibid)|Инициализирует элемент данных, содержащий идентификатор GUID текущего модуля.|
 |[Катлмодулет:: Регистераппид](#registerappid)|Добавляет EXE в реестр.|
@@ -56,11 +57,11 @@ class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 |[Катлмодулет:: Унрегистерсервер](#unregisterserver)|Удаляет службу из реестра.|
 |[Катлмодулет:: Упдатерегистряппид](#updateregistryappid)|Обновляет сведения о EXE в реестре.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `CAtlModuleT`, производный от [катлмодуле](../../atl/reference/catlmodule-class.md), реализует исполняемый (exe) или сервисный (exe) модуль ATL. Исполняемый модуль — это локальный сервер вне процесса, в то время как модуль службы — это приложение Windows, которое запускается в фоновом режиме при запуске Windows.
 
-`CAtlModuleT`обеспечивает поддержку инициализации, регистрации и отмены регистрации модуля.
+`CAtlModuleT` обеспечивает поддержку инициализации, регистрации и отмены регистрации модуля.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -74,7 +75,7 @@ class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 
 **Заголовок:** atlbase. h
 
-## <a name="catlmoduletcatlmodulet"></a><a name="catlmodulet"></a>Катлмодулет:: Катлмодулет
+## <a name="catlmoduletcatlmodulet"></a><a name="catlmodulet"></a> Катлмодулет:: Катлмодулет
 
 Конструктор.
 
@@ -82,11 +83,11 @@ class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 CAtlModuleT() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызывает [катлмодулет:: инитлибид](#initlibid).
 
-## <a name="catlmoduletinitlibid"></a><a name="initlibid"></a>Катлмодулет:: Инитлибид
+## <a name="catlmoduletinitlibid"></a><a name="initlibid"></a> Катлмодулет:: Инитлибид
 
 Инициализирует элемент данных, содержащий идентификатор GUID текущего модуля.
 
@@ -94,11 +95,11 @@ CAtlModuleT() throw();
 static void InitLibId() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызывается конструктором [катлмодулет:: катлмодулет](#catlmodulet).
 
-## <a name="catlmoduletregisterappid"></a><a name="registerappid"></a>Катлмодулет:: Регистераппид
+## <a name="catlmoduletregisterappid"></a><a name="registerappid"></a> Катлмодулет:: Регистераппид
 
 Добавляет EXE в реестр.
 
@@ -110,7 +111,7 @@ HRESULT RegisterAppId() throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-## <a name="catlmoduletregisterserver"></a><a name="registerserver"></a>Катлмодулет:: Регистерсервер
+## <a name="catlmoduletregisterserver"></a><a name="registerserver"></a> Катлмодулет:: Регистерсервер
 
 Добавляет службу в реестр.
 
@@ -132,7 +133,7 @@ HRESULT RegisterServer(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-## <a name="catlmoduletunregisterappid"></a><a name="unregisterappid"></a>Катлмодулет:: Унрегистераппид
+## <a name="catlmoduletunregisterappid"></a><a name="unregisterappid"></a> Катлмодулет:: Унрегистераппид
 
 Удаляет исполняемый файл из реестра.
 
@@ -144,7 +145,7 @@ HRESULT UnregisterAppId() throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-## <a name="catlmoduletunregisterserver"></a><a name="unregisterserver"></a>Катлмодулет:: Унрегистерсервер
+## <a name="catlmoduletunregisterserver"></a><a name="unregisterserver"></a> Катлмодулет:: Унрегистерсервер
 
 Удаляет службу из реестра.
 
@@ -166,7 +167,7 @@ HRESULT UnregisterServer(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-## <a name="catlmoduletupdateregistryappid"></a><a name="updateregistryappid"></a>Катлмодулет:: Упдатерегистряппид
+## <a name="catlmoduletupdateregistryappid"></a><a name="updateregistryappid"></a> Катлмодулет:: Упдатерегистряппид
 
 Обновляет сведения о EXE в реестре.
 
@@ -183,7 +184,7 @@ static HRESULT WINAPI UpdateRegistryAppId(BOOL /* bRegister*/) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Класс Катлмодуле](../../atl/reference/catlmodule-class.md)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)<br/>

@@ -1,14 +1,15 @@
 ---
+description: Дополнительные сведения о облачном и веб-программировании см. в Visual C++
 title: Облачное и веб-программирование в Visual C++
 ms.date: 05/14/2019
 ms.assetid: b63611f1-9723-44d0-ba7f-c3ebef341313
 ms.topic: overview
-ms.openlocfilehash: 675502e9ae50c9e69ad4555502000d128d5d4cbe
-ms.sourcegitcommit: efc8c32205c9d610f40597556273a64306dec15d
+ms.openlocfilehash: 3d845ea89507440c07747314c24ff01bd848cf37
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88898669"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151623"
 ---
 # <a name="cloud-and-web-programming-in-visual-c"></a>Облачное и веб-программирование в Visual C++
 
@@ -57,7 +58,7 @@ ms.locfileid: "88898669"
 
   Windows API, который можно использовать в классических приложениях Windows для подключения к Интернету.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [C++ в Visual Studio](../overview/visual-cpp-in-visual-studio.md) <br/>
 [Центр разработчиков Microsoft Azure C и C++](https://azure.microsoft.com/develop/cpp/) <br/>

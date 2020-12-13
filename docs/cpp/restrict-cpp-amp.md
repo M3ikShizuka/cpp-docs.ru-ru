@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: restrict (C++ AMP)'
 title: restrict (C++ AMP)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - restrict clause (C++ AMP)
 ms.assetid: 07d3291f-7edf-456b-8828-283ac8673661
-ms.openlocfilehash: 31db9e8c6f18879e65596593c10a8b3413c5cea9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 928d4f9dde9421d2c5ab244af26a688a9828881e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213272"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151455"
 ---
 # <a name="restrict-c-amp"></a>restrict (C++ AMP)
 
@@ -29,7 +30,7 @@ ms.locfileid: "87213272"
 |`restrict(amp)`|В функции может использоваться только то подмножество языка C++, выполнение которого может ускорить C++ AMP.|
 |Последовательность функций `restrict(cpu)` и `restrict(amp)`.|Функция должна соблюдать ограничения, устанавливаемые обеими функциями: и `restrict(cpu)`, и `restrict(amp)`. Вызывать ее могут функции, объявленные при помощи `restrict(cpu)`, `restrict(amp)`, `restrict(cpu, amp)` или `restrict(amp, cpu)`.<br /><br /> Форма `restrict(A) restrict(B)` может быть записана в виде `restrict(A,B)`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **`restrict`** Ключевое слово является контекстным. Спецификаторы ограничения `cpu` и `amp` не являются зарезервированными словами. Список спецификаторов не может быть расширен. Функция, у которой нет предложения, совпадает с функцией **`restrict`** , имеющей `restrict(cpu)` предложение.
 

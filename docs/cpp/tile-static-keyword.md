@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: tile_static ключевое слово'
 title: Ключевое слово tile_static
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - tile_static keyword
 ms.assetid: d78384d4-65d9-45cf-b3df-7e904f489d06
-ms.openlocfilehash: 9476c0c446463c04084f46ed17a8ada7fb01fd7e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c719ab61fd6247800b7e1b6b8ac1a58dd51c6ac5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80188133"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151415"
 ---
 # <a name="tile_static-keyword"></a>Ключевое слово tile_static
 
@@ -27,7 +28,7 @@ ms.locfileid: "80188133"
 
 - Значение неинициализированной **tile_static** переменной не определено.
 
-- Если переменная **tile_static** объявлена в графе вызовов, которая находится в корне с помощью немозаичного вызова для `parallel_for_each`, создается предупреждение и поведение переменной не определено.
+- Если переменная **tile_static** объявлена в графе вызовов, которая является корневой для вызова без мозаичного заполнения `parallel_for_each` , то создается предупреждение и поведение переменной не определено.
 
 ## <a name="example"></a>Пример
 
@@ -146,7 +147,7 @@ for (int i = 0; i < 4; i++) {
 
 ## <a name="see-also"></a>См. также раздел
 
-[Модификаторы, используемые в системах Майкрософт](../cpp/microsoft-specific-modifiers.md)<br/>
-[Общие сведения о C++ AMP](../parallel/amp/cpp-amp-overview.md)<br/>
-[Функция parallel_for_each (C++ amp)](../parallel/amp/reference/concurrency-namespace-functions-amp.md#parallel_for_each)<br/>
-[Пошаговое руководство. Умножение матриц](../parallel/amp/walkthrough-matrix-multiplication.md)
+[Модификаторы, специфичные для Майкрософт](../cpp/microsoft-specific-modifiers.md)<br/>
+[Обзор C++ AMP](../parallel/amp/cpp-amp-overview.md)<br/>
+[Функция parallel_for_each (C++ AMP)](../parallel/amp/reference/concurrency-namespace-functions-amp.md#parallel_for_each)<br/>
+[Пошаговое руководство. умножение матрицы](../parallel/amp/walkthrough-matrix-multiplication.md)

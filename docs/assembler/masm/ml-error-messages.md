@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: сообщения об ошибках машинного обучения'
 title: Сообщения об ошибках ML
 ms.date: 12/17/2019
 ms.custom: error-reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - MASM (Microsoft Macro Assembler), ML error messages
 ms.assetid: e7e164b3-6d65-4b5b-8925-bfbebc043523
-ms.openlocfilehash: 1b065433a1a6baf9bf2631aeb2f53421f8efb83b
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 08f9a3ccd1bfe79195bf3ba9acf5b5347cc35a1f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75312629"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97129705"
 ---
 # <a name="ml-error-messages"></a>Сообщения об ошибках ML
 
@@ -28,26 +29,26 @@ ms.locfileid: "75312629"
 
 > *Служебная программа*: *имя файла* (*строка*): {*Error_type*} (*код*): *Message_text*
 
-Здесь:
+Где:
 
-\ *служебной программы*
+*Программой*\
 Программа, которая отправила сообщение об ошибке.
 
-*Имя файла*\
+*Файлов*\
 Файл, содержащий условие формирования ошибок.
 
-*Строка*\
+*Штрих*\
 Приблизительная строка, в которой существует условие ошибки.
 
 *Error_type*\
 Неустранимая ошибка, ошибка или предупреждение.
 
-*Код*\
+*Приведен*\
 Уникальный 5-или 6-значный код ошибки.
 
 *Message_text*\
 Краткое и общее описание условия ошибки.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по ассемблеру макросов (Майкрософт)](microsoft-macro-assembler-reference.md)

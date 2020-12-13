@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье Настройка свойств анализа кода для проектов C/C++.
 title: Практическое руководство. Задание свойств анализа кода для проектов C/C++
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - code analysis properties
 - C/C++ code analysis properties
 ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
-ms.openlocfilehash: 0f1f5b18255c9d39c2922c5c4f049f1cbe40d37e
-ms.sourcegitcommit: 7bea0420d0e476287641edeb33a9d5689a98cb98
+ms.openlocfilehash: 590254406242c369da9aff91d006313ed797078f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "79467204"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151571"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Практическое руководство. Задание свойств анализа кода для проектов C/C++
 
@@ -40,11 +41,11 @@ ms.locfileid: "79467204"
 
 ## <a name="cmake-configuration"></a>Конфигурация CMak
 
-В проектах CMak измените значение `enableMicrosoftCodeAnalysis` и `enableClangTidyCodeAnalysis` ключи в `CMakeSettings.json`, чтобы включить или отключить анализ кода. Дополнительные сведения см. [в разделе Использование Clang в Visual Studio](../code-quality/clang-tidy.md) .
+В проектах CMak измените значения `enableMicrosoftCodeAnalysis` ключей и в, `enableClangTidyCodeAnalysis` `CMakeSettings.json` чтобы включить или отключить анализ кода. Дополнительные сведения см. [в разделе использование Clang-Tidy в Visual Studio](../code-quality/clang-tidy.md) .
 
 ## <a name="see-also"></a>См. также раздел
 
 - [Анализ качества управляемого кода](/visualstudio/code-quality/code-analysis-for-managed-code-overview)
 - [Анализ кода для предупреждений C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)
-- [Использование наборов правил для указания C++ правил для выполнения](using-rule-sets-to-specify-the-cpp-rules-to-run.md)
+- [Использование наборов правил для указания выполняемых правил C++](using-rule-sets-to-specify-the-cpp-rules-to-run.md)
 - [Использование Clang](../code-quality/clang-tidy.md)

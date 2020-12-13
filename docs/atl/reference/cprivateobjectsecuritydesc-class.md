@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кприватеобжектсекуритидеск Class'
 title: Класс Кприватеобжектсекуритидеск
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CPrivateObjectSecurityDesc class
 ms.assetid: 2c4bbb13-bf99-4833-912a-197f6815bb5d
-ms.openlocfilehash: f62d289418280a05f390bf9cdec23ea30632aed2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 339105d2a6356150c7a7ce8ccf04bc17d3df4911
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833508"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141067"
 ---
 # <a name="cprivateobjectsecuritydesc-class"></a>Класс Кприватеобжектсекуритидеск
 
@@ -29,7 +30,7 @@ ms.locfileid: "88833508"
 class CPrivateObjectSecurityDesc : public CSecurityDesc
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -53,7 +54,7 @@ class CPrivateObjectSecurityDesc : public CSecurityDesc
 |-|-|
 |[Оператор =](#operator_eq)|Оператор присвоения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Этот класс, производный от [ксекуритидеск](../../atl/reference/csecuritydesc-class.md), предоставляет методы для создания дескриптора безопасности закрытого объекта и управления им.
 
@@ -99,7 +100,7 @@ bool ConvertToAutoInherit(
 
 Возвращает значение true, если операция выполнена успешно; в противном случае — значение false.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод пытается определить, унаследованы ли элементы ACE в списке управления доступом на уровне пользователей (DACL) и списке управления доступом к системе (SACL) текущего дескриптора безопасности от родительского дескриптора безопасности. Он вызывает функцию [конверттоаутоинхеритприватеобжектсекурити](/windows/win32/api/securitybaseapi/nf-securitybaseapi-converttoautoinheritprivateobjectsecurity) .
 
@@ -111,7 +112,7 @@ bool ConvertToAutoInherit(
 CPrivateObjectSecurityDesc() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Выполняет инициализацию объекта `CPrivateObjectSecurityDesc`.
 
@@ -123,7 +124,7 @@ CPrivateObjectSecurityDesc() throw();
 ~CPrivateObjectSecurityDesc() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Деструктор освобождает все выделенные ресурсы и удаляет дескриптор безопасности закрытого объекта.
 
@@ -179,7 +180,7 @@ bool Create(
 
 Возвращает значение true, если операция выполнена успешно; в противном случае — значение false.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывает [креатеприватеобжектсеркурити](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurity) или [креатеприватеобжектсекуритекс](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createprivateobjectsecurityex).
 
@@ -200,7 +201,7 @@ bool Get(
 
 ### <a name="parameters"></a>Параметры
 
-*Си*<br/>
+*si*<br/>
 Набор битовых флагов, указывающих на извлекаемые части дескриптора безопасности. Это значение может быть сочетанием битовых флагов [SECURITY_INFORMATION](/windows/win32/SecAuthZ/security-information) .
 
 *пресулт*<br/>
@@ -210,7 +211,7 @@ bool Get(
 
 Возвращает значение true, если операция выполнена успешно; в противном случае — значение false.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дескриптор безопасности представляет собой структуру и связанные данные, содержащие сведения о безопасности защищаемого объекта.
 
@@ -252,7 +253,7 @@ bool Set(
 
 ### <a name="parameters"></a>Параметры
 
-*Си*<br/>
+*si*<br/>
 Набор битовых флагов, указывающих на устанавливаемые части дескриптора безопасности. Это значение может быть сочетанием битовых флагов [SECURITY_INFORMATION](/windows/win32/SecAuthZ/security-information) .
 
 *Изменение*<br/>
@@ -271,7 +272,7 @@ bool Set(
 
 Возвращает значение true, если операция выполнена успешно; в противном случае — значение false.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Второй метод позволяет указать идентификатор GUID типа объекта объекта или управлять наследованием ACE.
 

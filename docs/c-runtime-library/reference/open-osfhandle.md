@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _open_osfhandle'
 title: _open_osfhandle
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - file handles [C++], associating
 - _open_osfhandle function
 ms.assetid: 30d94df4-7868-4667-a401-9eb67ecb7855
-ms.openlocfilehash: d0f86c2588eed506bc9b8408e01bccdb6d1aad9d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3b5fe486416ec49f01078a4d90cab998e4bbe6c5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844071"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151662"
 ---
 # <a name="_open_osfhandle"></a>_open_osfhandle
 
@@ -61,7 +62,7 @@ int _open_osfhandle (
 
 В случае успешного выполнения функция **_open_osfhandle** возвращает дескриптор файла времени выполнения C. Иначе возвращается значение -1.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_open_osfhandle** выделяет дескриптор файла времени выполнения C. Он связывает этот дескриптор файла с дескриптором файла операционной системы, указанным параметром *осфхандле*. Чтобы компилятор не выдавал предупреждение, приведите аргумент *osfhandle* типа **HANDLE** к типу **intptr_t**. Аргумент *flags* — это целочисленное выражение, сформированное на основе одной или нескольких констант манифеста, определенных в \<fcntl.h> . Можно использовать оператор побитового или ( **&#124;** ) для объединения двух или более констант манифеста для формирования аргумента *flags* .
 

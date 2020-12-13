@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: fgetpos'
 title: fgetpos
 ms.date: 4/2/2020
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - fgetpos function
 - streams, file position indicator
 ms.assetid: bfa05c38-1135-418c-bda1-d41be51acb62
-ms.openlocfilehash: b57a07dbe5c2c746e8af6b96f1864e4f4534849f
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 72ee6e683d568de1650d5a046050230fa86dee24
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920353"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151766"
 ---
 # <a name="fgetpos"></a>fgetpos
 
@@ -59,7 +60,7 @@ int fgetpos(
 
 В случае успеха **fgetpos** возвращает 0. В случае сбоя он возвращает ненулевое значение и **задает для** нуля одну из следующих констант манифеста (определенных в stdio. H): **значение EBADF**, что означает, что указанный поток не является допустимым указателем файла или недоступен, или **еинвал**, что означает, что значение *потока* или значение *POS* являются недопустимыми, например, если либо является пустым указателем. Если *Stream* или *POS* является **пустым** указателем, функция вызывает обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **fgetpos** получает текущее значение индикатора положения файла в аргументе *потока* и сохраняет его в объекте, на который указывает *POS*. Функция **fsetpos** впоследствии может использовать информацию, хранящуюся в *POS* , для сброса указателя аргумента *потока* на его положение во время вызова **fgetpos** . Значение *POS* сохраняется во внутреннем формате и предназначено для использования только **fgetpos** и **fsetpos**.
 

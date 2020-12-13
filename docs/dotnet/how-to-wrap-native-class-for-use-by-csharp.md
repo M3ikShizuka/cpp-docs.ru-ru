@@ -1,21 +1,22 @@
 ---
-title: Практическое руководство. Создание программы-оболочки собственного класса для использования в C#
+description: 'Дополнительные сведения о том, как обернуть собственный класс для использования в C. #'
+title: Практическое руководство. Создание программы-оболочки для неуправляемого класса для использования в языке C#
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
 - native code [C++], Visual C# and
 - classes [C++], Visual C# and
 ms.assetid: 988819ae-cc6a-4453-8ff5-be369210d962
-ms.openlocfilehash: 06cb922aff4079f29b93874787a8b79ef99d75c3
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 1b90cfba08bd22ec6a49ef4de033afd5d2b187ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79545891"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97151376"
 ---
 # <a name="how-to-wrap-native-class-for-use-by-c"></a>Пошаговое руководство. Перенос собственного класса для использования в C\#
 
-В этом примере показано, как создать оболочку для собственного C++ класса, чтобы его можно было использовать в коде C#, созданном в, или на другом языке .NET.
+В этом примере показано, как создать оболочку для собственного класса C++, чтобы его можно было использовать в коде, созданном на языке C# или на другом языке .NET.
 
 ## <a name="example"></a>Пример
 
@@ -67,6 +68,6 @@ private:
 };
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Использование взаимодействия языка C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[Использование взаимодействия C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
