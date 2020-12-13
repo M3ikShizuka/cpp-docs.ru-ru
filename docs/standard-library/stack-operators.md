@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; Операторы Stack &gt;'
 title: Операторы &lt;stack&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,16 +17,16 @@ helpviewer_keywords:
 - std::operator&lt; (stack)
 - std::operator&lt;= (stack)
 - std::operator== (stack)
-ms.openlocfilehash: ac694e517279e43a501bb8289544e5da5ddba72b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 56d5dcf7d23fd685cd7d805d773ac9eb77d85506
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217419"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153854"
 ---
 # <a name="ltstackgt-operators"></a>Операторы &lt;stack&gt;
 
-## <a name="operator"></a><a name="op_neq"></a>operator! =
+## <a name="operator"></a><a name="op_neq"></a> operator! =
 
 Проверяет, не равен ли объект стека слева от оператора объекту стека справа от оператора.
 
@@ -45,7 +46,7 @@ bool operator!=(const stack <Type, Container>& left, const stack <Type, Containe
 
 **`true`** значение, если стеки или стеки не равны; значение **`false`** , если стеки или стеки равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами стеков основывается на попарном сравнении элементов этих стеков. Два стека равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -90,7 +91,7 @@ The stacks s1 and s2 are not equal.
 The stacks s1 and s3 are equal.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt"></a>станции&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> станции&lt;
 
 Проверяет, меньше ли объект стека слева от оператора объекта стека справа от оператора.
 
@@ -110,7 +111,7 @@ bool operator<(const stack <Type, Container>& left, const stack <Type, Container
 
 **`true`** значение, если стек слева от оператора меньше и не равен стеку в правой части оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами стеков основывается на попарном сравнении элементов этих списков. Отношение "меньше" между двумя объектами стека основывается на сравнении первой пары неравных элементов.
 
@@ -174,7 +175,7 @@ The stack s1 is greater than or equal to the stack s3.
 The stack s1 from the top down is: ( 8 6 4 2 ).
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>станции&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> станции&lt;=
 
 Проверяет, меньше или равен ли объект стека слева от оператора объекту стека справа от оператора.
 
@@ -194,7 +195,7 @@ bool operator<=(const stack <Type, Container>& left, const stack <Type, Containe
 
 **`true`** значение, если стек слева от оператора меньше или равен стеку в правой части оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами стеков основывается на попарном сравнении элементов этих списков. Отношение "меньше или равно" между двумя объектами стеков основывается на сравнении первой пары неравных элементов.
 
@@ -241,7 +242,7 @@ The stack s1 is greater than the stack s2.
 The stack s1 is less than or equal to the stack s3.
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>Оператор = =
+## <a name="operator"></a><a name="op_eq_eq"></a> Оператор = =
 
 Проверяет, равен ли объект стека слева от оператора объекту стека справа от оператора.
 
@@ -261,7 +262,7 @@ bool operator==(const stack <Type, Container>& left, const stack <Type, Containe
 
 **`true`** значение, если стеки или стеки равны; значение **`false`** , если стеки или стеки не равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами стеков основывается на попарном сравнении элементов этих списков. Два стека равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -306,7 +307,7 @@ The stacks s1 and s2 are not equal.
 The stacks s1 and s3 are equal.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt"></a>станции&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> станции&gt;
 
 Проверяет, больше ли объект стека слева от оператора объекта стека справа от оператора.
 
@@ -326,7 +327,7 @@ bool operator>(const stack <Type, Container>& left, const stack <Type, Container
 
 **`true`** значение, если стек слева от оператора больше и не равен стеку в правой части оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами стеков основывается на попарном сравнении элементов этих списков. Отношение "больше" между двумя объектами стеков основывается на сравнении первой пары неравных элементов.
 
@@ -375,7 +376,7 @@ The stack s1 is not greater than the stack s2.
 The stack s1 is greater than the stack s3.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>станции&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> станции&gt;=
 
 Проверяет, больше или равен ли объект стека слева от оператора объекту стека справа от оператора.
 
@@ -395,7 +396,7 @@ bool operator>=(const stack <Type, Container>& left, const stack <Type, Containe
 
 **`true`** значение, если стек слева от оператора строго меньше стека в правой части оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами стеков основывается на попарном сравнении элементов этих списков. Отношение "больше или равно" между двумя объектами стеков основывается на сравнении первой пары неравных элементов.
 

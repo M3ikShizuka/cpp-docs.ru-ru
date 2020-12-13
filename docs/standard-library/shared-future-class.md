@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: shared_future классе'
 title: Класс shared_future
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - std::shared_future [C++], wait
 - std::shared_future [C++], wait_for
 - std::shared_future [C++], wait_until
-ms.openlocfilehash: dcc1f4bf1ce25890945f1d9e207f2363122c0ad2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 169e9c7aa906a788975852ae6a3f90a1b46213c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217497"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154088"
 ---
 # <a name="shared_future-class"></a>Класс shared_future
 
@@ -46,7 +47,7 @@ class shared_future;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[shared_future](#shared_future)|Формирует объект `shared_future`.|
 
@@ -72,7 +73,7 @@ class shared_future;
 
 **Пространство имен:** std
 
-## <a name="shared_futureget"></a><a name="get"></a>shared_future:: Get
+## <a name="shared_futureget"></a><a name="get"></a> shared_future:: Get
 
 Получает результат, который хранится в *связанном асинхронном состоянии*.
 
@@ -84,7 +85,7 @@ Ty& get() const;
 void get() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если результат — исключение, метод создает его повторно. В противном случае результат будет возвращен.
 
@@ -94,7 +95,7 @@ void get() const;
 
 Так как для специализации не существует сохраненного значения `shared_future<void>` , метод возвращает **`void`** .
 
-## <a name="shared_futureoperator"></a><a name="op_eq"></a>shared_future:: operator =
+## <a name="shared_futureoperator"></a><a name="op_eq"></a> shared_future:: operator =
 
 Передает *связанное асинхронное состояние* из указанного объекта.
 
@@ -112,13 +113,13 @@ shared_future& operator=(const shared_future& Right);
 
 `*this`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Для первого оператора *право* больше не имеет связанного асинхронного состояния после операции.
 
 Во втором методе свойство *right* сохраняет связанное с ним асинхронное состояние.
 
-## <a name="shared_futureshared_future-constructor"></a><a name="shared_future"></a>Конструктор shared_future:: shared_future
+## <a name="shared_futureshared_future-constructor"></a><a name="shared_future"></a> Конструктор shared_future:: shared_future
 
 Формирует объект `shared_future`.
 
@@ -134,7 +135,7 @@ shared_future(const shared_future& Right);
 *Правильно*\
 Класс [future](../standard-library/future-class.md) или объект `shared_future`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый конструктор конструирует `shared_future` объект, который не имеет *связанного асинхронного состояния*.
 
@@ -142,7 +143,7 @@ shared_future(const shared_future& Right);
 
 Четвертый конструктор конструирует `shared_future` объект, имеющий то же связанное асинхронное состояние, что и *право*.
 
-## <a name="shared_futurevalid"></a><a name="valid"></a>shared_future:: допустимое
+## <a name="shared_futurevalid"></a><a name="valid"></a> shared_future:: допустимое
 
 Указывает, имеет ли объект *связанное асинхронное состояние*.
 
@@ -154,7 +155,7 @@ bool valid() noexcept;
 
 **`true`** значение, если объект имеет связанное асинхронное состояние. в противном случае — **`false`** .
 
-## <a name="shared_futurewait"></a><a name="wait"></a>shared_future:: wait
+## <a name="shared_futurewait"></a><a name="wait"></a> shared_future:: wait
 
 Блокирует текущий поток, пока *связанное асинхронное состояние* не будет *Готово*.
 
@@ -162,11 +163,11 @@ bool valid() noexcept;
 void wait() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Связанное асинхронное состояние имеет значение "ready", только если его асинхронный поставщик сохранил возвращаемое значение или исключение.
 
-## <a name="shared_futurewait_for"></a><a name="wait_for"></a>shared_future:: wait_for
+## <a name="shared_futurewait_for"></a><a name="wait_for"></a> shared_future:: wait_for
 
 Блокирует текущий поток, пока связанное асинхронное состояние не получит значение *ready* или не истечет указанный период времени.
 
@@ -185,11 +186,11 @@ future_status wait_for(
 
 Состояние [future_status](../standard-library/future-enums.md#future_status), которое указывает причину возврата.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Связанное асинхронное состояние *Готово* , только если его асинхронный поставщик сохранил возвращаемое значение или не сохранил исключение.
 
-## <a name="shared_futurewait_until"></a><a name="wait_until"></a>shared_future:: wait_until
+## <a name="shared_futurewait_until"></a><a name="wait_until"></a> shared_future:: wait_until
 
 Блокирует текущий поток, пока связанное асинхронное состояние не получит значение *ready* или не наступит указанный момент времени.
 
@@ -208,7 +209,7 @@ future_status wait_until(
 
 Состояние [future_status](../standard-library/future-enums.md#future_status), которое указывает причину возврата.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Связанное асинхронное состояние имеет значение "ready", только если его асинхронный поставщик сохранил возвращаемое значение или исключение.
 

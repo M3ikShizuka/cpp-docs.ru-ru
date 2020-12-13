@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения см. в статье пример. Реализация страницы свойств
 title: Реализация страницы свойств (ATL)
 ms.date: 05/09/2019
 helpviewer_keywords:
 - property pages, implementing
 ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
-ms.openlocfilehash: 82c2bd3765802f87025eaf2dfbda8f7467bbe9a0
-ms.sourcegitcommit: 9c2b3df9b837879cd17932ae9f61cdd142078260
+ms.openlocfilehash: b5f05d4e47187a8d3c2fe10ca7a00808095a713a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92921247"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152966"
 ---
 # <a name="example-implementing-a-property-page"></a>Пример. Реализация страницы свойств
 
@@ -47,7 +48,7 @@ ms.locfileid: "92921247"
 
 ## <a name="adding-the-atl-property-page-class"></a><a name="vcconusing_the_atl_object_wizard"></a> Добавление класса страницы свойств ATL
 
-Сначала создайте проект ATL для сервера DLL с именем `ATLPages7`. Теперь с помощью мастера [страницы свойств ATL](../atl/reference/atl-property-page-wizard.md) создайте страницу свойств. Дайте странице свойств **короткое имя** из **DocProperties** , затем перейдите на страницу **строк** , чтобы задать элементы, относящиеся к странице свойства, как показано в таблице ниже.
+Сначала создайте проект ATL для сервера DLL с именем `ATLPages7`. Теперь с помощью мастера [страницы свойств ATL](../atl/reference/atl-property-page-wizard.md) создайте страницу свойств. Дайте странице свойств **короткое имя** из **DocProperties**, затем перейдите на страницу **строк**, чтобы задать элементы, относящиеся к странице свойства, как показано в таблице ниже.
 
 |Элемент|Значение|
 |----------|-----------|
@@ -60,7 +61,7 @@ ms.locfileid: "92921247"
 > [!NOTE]
 > Заданные здесь строки сохраняются мастером в качестве строковых ресурсов в вашем проекте. Вы можете легко изменять эти строки, используя редактор ресурсов, если вам нужно изменить эти сведения после того, как был создан код для вашей страницы.
 
-Нажмите кнопку **ОК** , чтобы мастер создал страницу свойств.
+Нажмите кнопку **ОК**, чтобы мастер создал страницу свойств.
 
 ## <a name="editing-the-dialog-resource"></a><a name="vcconediting_the_dialog_resource"></a> Изменение ресурса диалогового окна
 
@@ -171,7 +172,7 @@ End Module
 
 ::: moniker-end
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Страницы свойств](../atl/atl-com-property-pages.md)<br/>
 [Примеры кода на Visual C++](../overview/visual-cpp-samples.md)

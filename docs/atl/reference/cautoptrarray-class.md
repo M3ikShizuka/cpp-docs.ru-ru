@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Каутоптраррай Class'
 title: Класс Каутоптраррай
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAutoPtrArray class
 ms.assetid: 880a70da-8c81-4427-8ac6-49aa8d424244
-ms.openlocfilehash: 11f39eac8b8d080fd840f6454f393e33ebcb9e1c
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 55f9382c82a1e242342d0d740c369a571c43f9ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167667"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152584"
 ---
 # <a name="cautoptrarray-class"></a>Класс Каутоптраррай
 
@@ -33,18 +34,18 @@ class CAutoPtrArray : public CAtlArray<
 
 ### <a name="parameters"></a>Параметры
 
-*&*<br/>
+*E*<br/>
 Тип указателя.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Каутоптраррай:: Каутоптраррай](#cautoptrarray)|Конструктор.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Этот класс предоставляет конструктор и наследует методы от [CAtlArray](../../atl/reference/catlarray-class.md) и [каутоптрелементтраитс](../../atl/reference/cautoptrelementtraits-class.md) для облегчения создания объекта класса коллекции, в котором хранятся интеллектуальные указатели.
 
@@ -60,7 +61,7 @@ class CAutoPtrArray : public CAtlArray<
 
 **Заголовок:** атлколл. h
 
-## <a name="cautoptrarraycautoptrarray"></a><a name="cautoptrarray"></a>Каутоптраррай:: Каутоптраррай
+## <a name="cautoptrarraycautoptrarray"></a><a name="cautoptrarray"></a> Каутоптраррай:: Каутоптраррай
 
 Конструктор.
 
@@ -68,11 +69,11 @@ class CAutoPtrArray : public CAtlArray<
 CAutoPtrArray() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Инициализирует массив интеллектуальных указателей.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Класс CAtlArray](../../atl/reference/catlarray-class.md)<br/>
 [Класс Каутоптрелементтраитс](../../atl/reference/cautoptrelementtraits-class.md)<br/>

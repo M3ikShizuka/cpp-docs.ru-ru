@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; операторы SET &gt;'
 title: Операторы &lt;set&gt;
 ms.date: 03/27/2019
 f1_keywords:
@@ -16,16 +17,16 @@ helpviewer_keywords:
 - std::operator&lt; (set)
 - std::operator&lt;= (set)
 - std::operator== (set)
-ms.openlocfilehash: a3256b7d963feca75e4a975def0f6da77538d278
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5872760bb7f9cd3517ad14ea29fcca495dbaed59
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217510"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154127"
 ---
 # <a name="ltsetgt-operators"></a>Операторы &lt;set&gt;
 
-## <a name="operator-set"></a><a name="op_neq"></a>operator! = (набор)
+## <a name="operator-set"></a><a name="op_neq"></a> operator! = (набор)
 
 Проверяет неравенство объекта-множества слева от оператора объекту-множеству справа от оператора.
 
@@ -45,7 +46,7 @@ bool operator!=(const set <Key, Traits, Allocator>& left, const set <Key, Traits
 
 **`true`** значение, если наборы не равны; **`false`** Если наборы равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами set основывается на попарном сравнении их элементов. Два множества равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -86,7 +87,7 @@ The sets s1 and s3 are equal.
 */
 ```
 
-## <a name="operatorlt-set"></a><a name="op_lt"></a>Оператор &lt; (Set)
+## <a name="operatorlt-set"></a><a name="op_lt"></a> Оператор &lt; (Set)
 
 Проверяет, меньше ли объект-множество слева от оператора, чем объект-множество справа от оператора.
 
@@ -106,7 +107,7 @@ bool operator<(const set <Key, Traits, Allocator>& left, const set <Key, Traits,
 
 **`true`** значение, если набор слева от оператора строго меньше набора в правой части оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами-множествами основывается на попарном сравнении элементов этих множеств. Отношение «меньше» между двумя объектами основывается на сравнении первой пары неравных элементов.
 
@@ -147,7 +148,7 @@ The set s1 is not less than the set s3.
 */
 ```
 
-## <a name="operatorlt-set"></a><a name="op_lt_eq"></a>operator &lt; = (набор)
+## <a name="operatorlt-set"></a><a name="op_lt_eq"></a> operator &lt; = (набор)
 
 Проверяет, что объект-множество слева от оператора не больше объекта-множества справа от оператора.
 
@@ -167,7 +168,7 @@ bool operator!<=(const set <Key, Traits, Allocator>& left, const set <Key, Trait
 
 **`true`** значение, если набор слева от оператора меньше или равен набору в правой части оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами-множествами основывается на попарном сравнении элементов этих множеств. Отношение «меньше или равно» между двумя объектами основывается на сравнении первой пары неравных элементов.
 
@@ -216,7 +217,7 @@ The set s1 is greater than the set s3.
 Set s1 is less than or equal to the set s4.
 ```
 
-## <a name="operator-set"></a><a name="op_eq_eq"></a>оператор = = (набор)
+## <a name="operator-set"></a><a name="op_eq_eq"></a> оператор = = (набор)
 
 Проверяет равенство объекта-множества слева от оператора объекту-множеству справа от оператора.
 
@@ -236,7 +237,7 @@ bool operator!==(const set <Key, Traits, Allocator>& left, const set <Key, Trait
 
 **`true`** значение, если набор слева от оператора равен набору в правой части оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами-множествами основывается на попарном сравнении элементов этих множеств. Два множества равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -278,7 +279,7 @@ The sets s1 and s2 are not equal.
 The sets s1 and s3 are equal.
 ```
 
-## <a name="operatorgt-set"></a><a name="op_gt"></a>Оператор &gt; (Set)
+## <a name="operatorgt-set"></a><a name="op_gt"></a> Оператор &gt; (Set)
 
 Проверяет, больше ли объект-множество слева от оператора, чем объект-множество справа от оператора.
 
@@ -298,7 +299,7 @@ bool operator>(const set <Key, Traits, Allocator>& left, const set <Key, Traits,
 
 **`true`** значение, если набор в левой части оператора больше, чем набор, расположенный справа от оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами-множествами основывается на попарном сравнении элементов этих множеств. Отношение «больше» между двумя объектами основывается на сравнении первой пары неравных элементов.
 
@@ -339,7 +340,7 @@ The set s1 is greater than the set s3.
 */
 ```
 
-## <a name="operatorgt-set"></a><a name="op_gt_eq"></a>operator &gt; = (набор)
+## <a name="operatorgt-set"></a><a name="op_gt_eq"></a> operator &gt; = (набор)
 
 Проверяет, что объект-множество слева от оператора не меньше объекта-множества справа от оператора.
 
@@ -359,7 +360,7 @@ bool operator!>=(const set <Key, Traits, Allocator>& left, const set <Key, Trait
 
 **`true`** значение, если набор в левой части оператора больше или равен набору в правой части списка; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами-множествами основывается на попарном сравнении элементов этих множеств. Отношение «больше или равно» между двумя объектами основывается на сравнении первой пары неравных элементов.
 
@@ -408,7 +409,7 @@ Set s1 is greater than or equal to set s3.
 Set s1 is greater than or equal to set s4.
 ```
 
-## <a name="operator-multiset"></a><a name="op_neq_multiset"></a>operator! = (мультинабор)
+## <a name="operator-multiset"></a><a name="op_neq_multiset"></a> operator! = (мультинабор)
 
 Проверяет неравенство объекта multiset слева от оператора и объекта multiset справа от оператора.
 
@@ -428,7 +429,7 @@ bool operator!=(const multiset <Key, Traits, Allocator>& left, const multiset <K
 
 **`true`** значение, если наборы или множества не равны; значение **`false`** , если наборы или множества равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами multiset основывается на попарном сравнении их элементов. Два множества или мультимножества равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -470,7 +471,7 @@ The multisets s1 and s2 are not equal.
 The multisets s1 and s3 are equal.
 ```
 
-## <a name="operatorlt-multiset"></a><a name="op_lt_multiset"></a>Оператор &lt; (мультинабор)
+## <a name="operatorlt-multiset"></a><a name="op_lt_multiset"></a> Оператор &lt; (мультинабор)
 
 Проверяет, меньше ли объект multiset слева от оператора объекта multiset справа от оператора.
 
@@ -490,7 +491,7 @@ bool operator<(const multiset <Key, Traits, Allocator>& left, const multiset <Ke
 
 **`true`** Если мультинабор в левой части оператора строго меньше мультинабора в правой части оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами multiset основывается на попарном сравнении их элементов. Отношение «меньше» между двумя объектами основывается на сравнении первой пары неравных элементов.
 
@@ -536,7 +537,7 @@ The multiset s1 is less than the multiset s2.
 The multiset s1 is not less than the multiset s3.
 ```
 
-## <a name="operatorlt-multiset"></a><a name="op_lt_eq_multiset"></a>operator &lt; = (мультинабор)
+## <a name="operatorlt-multiset"></a><a name="op_lt_eq_multiset"></a> operator &lt; = (мультинабор)
 
 Проверяет, не больше ли объект multiset слева от оператора объекта multiset справа от оператора.
 
@@ -556,7 +557,7 @@ bool operator!<=(const multiset <Key, Traits, Allocator>& left, const multiset <
 
 **`true`** значение, если мультинабор слева от оператора меньше или равен мультинабору в правой части оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами multiset основывается на попарном сравнении их элементов. Отношение «меньше или равно» между двумя объектами основывается на сравнении первой пары неравных элементов.
 
@@ -611,7 +612,7 @@ The multiset s1 is greater than the multiset s3.
 The multiset s1 is less than or equal to the multiset s4.
 ```
 
-## <a name="operator-multiset"></a><a name="op_eq_eq_multiset"></a>operator = = (мультинабор)
+## <a name="operator-multiset"></a><a name="op_eq_eq_multiset"></a> operator = = (мультинабор)
 
 Проверяет, равен ли объект multiset слева от оператора объекту multiset справа от оператора.
 
@@ -631,7 +632,7 @@ bool operator!==(const multiset <Key, Traits, Allocator>& left, const multiset <
 
 **`true`** значение, если мультинабор в левой части оператора равен мультинабору справа от оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами multiset основывается на попарном сравнении их элементов. Два множества или мультимножества равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -673,7 +674,7 @@ The multisets s1 and s2 are not equal.
 The multisets s1 and s3 are equal.
 ```
 
-## <a name="operatorgt-multiset"></a><a name="op_gt_multiset"></a>Оператор &gt; (мультинабор)
+## <a name="operatorgt-multiset"></a><a name="op_gt_multiset"></a> Оператор &gt; (мультинабор)
 
 Проверяет, больше ли объект multiset слева от оператора объекта multiset справа от оператора.
 
@@ -693,7 +694,7 @@ bool operator>(const multiset <Key, Traits, Allocator>& left, const multiset <Ke
 
 **`true`** значение, если мультинабор в левой части оператора больше мультинабора справа от оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами multiset основывается на попарном сравнении их элементов. Отношение «больше» между двумя объектами основывается на сравнении первой пары неравных элементов.
 
@@ -739,7 +740,7 @@ The multiset s1 is not greater than the multiset s2.
 The multiset s1 is greater than the multiset s3.
 ```
 
-## <a name="operatorgt-multiset"></a><a name="op_gt_eq_multiset"></a>operator &gt; = (мультинабор)
+## <a name="operatorgt-multiset"></a><a name="op_gt_eq_multiset"></a> operator &gt; = (мультинабор)
 
 Проверяет, не меньше ли объект multiset слева от оператора объекта multiset справа от оператора.
 
@@ -759,7 +760,7 @@ bool operator!>=(const multiset <Key, Traits, Allocator>& left, const multiset <
 
 **`true`** значение, если мультинабор в левой части оператора больше или равен мультинабору в правой части списка; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сравнение между объектами multiset основывается на попарном сравнении их элементов. Отношение «больше или равно» между двумя объектами основывается на сравнении первой пары неравных элементов.
 

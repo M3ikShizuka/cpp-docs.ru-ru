@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: классы коллекций'
 title: Классы коллекций в ATL
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - collection classes
 ms.assetid: eff95de6-78ef-4212-9d7d-1dacbdd4cc58
-ms.openlocfilehash: a93810b91cefd897b55cae4760ade32374900eb3
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: bf0b8cf1e45673dd64b1b1d60a56ed9889bb6cff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041423"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153321"
 ---
 # <a name="collection-classes"></a>Классы коллекций
 
@@ -60,11 +61,11 @@ ms.locfileid: "90041423"
 
 - [Кпримитивилементтраитс](../atl/reference/cprimitiveelementtraits-class.md) Этот класс предоставляет методы и функции по умолчанию для класса коллекции, состоящего из примитивных типов данных.
 
-- [Крбмап](../atl/reference/crbmap-class.md) Этот класс представляет структуру сопоставления с помощью двоичного дерева из красного черного.
+- [Крбмап](../atl/reference/crbmap-class.md) Этот класс представляет структуру сопоставления с помощью Red-Black двоичного дерева.
 
-- [Крбмултимап](../atl/reference/crbmultimap-class.md) Этот класс представляет структуру сопоставления, которая позволяет связать каждый ключ с более чем одним значением с помощью двоичного дерева из красного черного.
+- [Крбмултимап](../atl/reference/crbmultimap-class.md) Этот класс представляет структуру сопоставления, которая позволяет связать каждый ключ с более чем одним значением, используя Red-Black двоичное дерево.
 
-- [Крбтри](../atl/reference/crbtree-class.md) Этот класс предоставляет методы для создания и использования дерева с красным и черным цветами.
+- [Крбтри](../atl/reference/crbtree-class.md) Этот класс предоставляет методы для создания и использования дерева Red-Black.
 
 - [Ксимплеаррай](../atl/reference/csimplearray-class.md) Этот класс предоставляет методы для управления простым массивом.
 

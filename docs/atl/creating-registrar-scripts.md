@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: создание скриптов регистратора'
 title: Создание скриптов для регистратора ATL
 ms.date: 05/14/2014
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - scripts, Registrar scripts
 - scripts, creating
 ms.assetid: cbd5024b-8061-4a71-be65-7fee90374a35
-ms.openlocfilehash: f32606701ea08736985f0b0dd2ed82712040a049
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
-ms.translationtype: HT
+ms.openlocfilehash: a3ce4855460e65eda5ab522bc16f39191da02a71
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65707057"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153191"
 ---
 # <a name="creating-registrar-scripts"></a>Создание скриптов регистратора
 
@@ -29,12 +30,12 @@ ms.locfileid: "65707057"
 
 - [Основные сведения о деревьях синтаксического анализа](../atl/understanding-parse-trees.md)
 
-- [Примеры скриптов реестра](../atl/registry-scripting-examples.md)
+- [Примеры сценариев реестра](../atl/registry-scripting-examples.md)
 
-- [Использование подстановочных параметров (препроцессор регистратора)](../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)
+- [Использование заменяемых параметров (препроцессор регистратора)](../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)
 
 - [Вызов скриптов](../atl/invoking-scripts.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Компонент реестра (регистратор)](../atl/atl-registry-component-registrar.md)

@@ -1,33 +1,34 @@
 ---
-title: Классы вложения элементов управления (ATL)
+description: 'Дополнительные сведения: Управление классами включения'
+title: Классы включения элементов управления (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - control containment classes
 ms.assetid: e0812aee-c078-4ced-b967-247976552b9a
-ms.openlocfilehash: d70f6b6a432626e7b73989d8f34ecee094560b42
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2410cc2b5327702feeae380b4bf81ec03d8f152b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62235094"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153256"
 ---
-# <a name="control-containment-classes"></a>Классы вложения элементов управления
+# <a name="control-containment-classes"></a>Управление классами вложения
 
-Следующие классы поддерживают включения для размещения элементов управления:
+Следующие классы обеспечивают поддержку вложенности для элементов управления размещения:
 
-- [CAxWindow](../atl/reference/caxwindow-class.md) предоставляет методы для работы с окном, в котором размещается элемент управления ActiveX.
+- [Каксвиндов](../atl/reference/caxwindow-class.md) Предоставляет методы для манипуляций с окном, в котором размещается элемент управления ActiveX.
 
-- [CAxWindow2T](../atl/reference/caxwindow2t-class.md) содержит методы для работы окно, которое размещает элемент ActiveX, а также поддержку размещения Лицензированные элементы управления ActiveX.
+- [CAxWindow2T](../atl/reference/caxwindow2t-class.md) Предоставляет методы для управления окном, в котором размещается элемент управления ActiveX, а также поддерживает размещение лицензированных элементов управления ActiveX.
 
-- [IAxWinAmbientDispatch](../atl/reference/iaxwinambientdispatch-interface.md) вызывать методы на этом интерфейсе, чтобы задать свойства окружающей среды, доступные для размещаемого элемента управления.
+- [Иаксвинамбиентдиспатч](../atl/reference/iaxwinambientdispatch-interface.md) Вызовите методы этого интерфейса, чтобы задать свойства окружения, доступные размещаемому элементу управления.
 
-- [IAxWinHostWindow](../atl/reference/iaxwinhostwindow-interface.md) вызывать методы на этом интерфейсе для создания и/или подключить элемент управления к объекту узла, или чтобы получить интерфейс из размещаемого элемента управления.
+- [Иаксвинхоствиндов](../atl/reference/iaxwinhostwindow-interface.md) Вызывайте методы этого интерфейса для создания и/или присоединения элемента управления к объекту узла или для получения интерфейса из размещенного элемента управления.
 
-## <a name="related-articles"></a>Связанные статьи
+## <a name="related-articles"></a>Похожие статьи
 
-[Часто задаваемые вопросы о вложении элементов управления ATL](../atl/atl-control-containment-faq.md)
+[Вложение элемента управления ATL: вопросы и ответы](../atl/atl-control-containment-faq.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Общие сведения о классе](../atl/atl-class-overview.md)
+[Общие сведения о классах](../atl/atl-class-overview.md)

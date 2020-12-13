@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: класс среза'
 title: Класс slice
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,20 +13,20 @@ helpviewer_keywords:
 - std::slice [C++], start
 - std::slice [C++], stride
 ms.assetid: 00f0b03d-d657-4b81-ba53-5a9034bb2bf2
-ms.openlocfilehash: 05f87cbb6061e205f9731d2a903ce52a2482b214
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a2a738db5bf3479c58e6b4ddd4d29a3a7ba84b23
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81336721"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153906"
 ---
 # <a name="slice-class"></a>Класс slice
 
 Служебный класс, используемый для определения одномерных подмножеств родительского valarray. Если valarray рассматривается как двухмерная матрица со всеми элементами в массиве, срез извлекает одномерный вектор из двухмерного массива.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Класс хранит параметры, характеризующие объект типа [slice_array](../standard-library/slice-array-class.md). Подмножество valarray косвенно создается, когда объект среза класса отображается как аргумент для объекта класса [valarray](../standard-library/valarray-class.md#op_at)**\<Type>**. Хранимые значения, задающие подмножество, выбираемое из родительского valarray, включают:
+Класс хранит параметры, характеризующие объект типа [slice_array](../standard-library/slice-array-class.md) подмножество valarray, которое создается косвенно, когда объект среза класса отображается в качестве аргумента для объекта класса [valarray](../standard-library/valarray-class.md#op_at) **\<Type>** . Хранимые значения, задающие подмножество, выбираемое из родительского valarray, включают:
 
 - начальный индекс в valarray;
 
@@ -41,23 +42,23 @@ ms.locfileid: "81336721"
 
 |Конструктор|Описание|
 |-|-|
-|[Ломтик](#slice)|Определяет подмножество `valarray`, состоящее из нескольких элементов, которые находятся на одинаковом расстоянии друг от друга и начинаются с указанного элемента.|
+|[срез](#slice)|Определяет подмножество `valarray`, состоящее из нескольких элементов, которые находятся на одинаковом расстоянии друг от друга и начинаются с указанного элемента.|
 
 ### <a name="member-functions"></a>Функции элементов
 
 |Функция-член|Описание|
 |-|-|
-|[Размер](#size)|Определяет число элементов в срезе `valarray`.|
-|[Начать](#start)|Находит начальный индекс среза `valarray`.|
-|[Шаг](#stride)|Находит расстояние между элементами в срезе `valarray`.|
+|[size](#size)|Определяет число элементов в срезе `valarray`.|
+|[start](#start)|Находит начальный индекс среза `valarray`.|
+|[шага](#stride)|Находит расстояние между элементами в срезе `valarray`.|
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<valarray>
+**Заголовок:**\<valarray>
 
 **Пространство имен:** std
 
-## <a name="slicesize"></a><a name="size"></a>ломтик:размер
+## <a name="slicesize"></a><a name="size"></a> срез:: размер
 
 Определяет число элементов в срезе valarray.
 
@@ -121,7 +122,7 @@ The slice of valarray va is vaResult = va[slice( 3, 6, 3)] =
 The size of slice vaSlice is: 6.
 ```
 
-## <a name="sliceslice"></a><a name="slice"></a>ломтик::срез
+## <a name="sliceslice"></a><a name="slice"></a> срез:: срез
 
 Определяет подмножество valarray, состоящее из нескольких элементов, которые находятся на одинаковом расстоянии друг от друга и начинаются с указанного элемента.
 
@@ -142,14 +143,14 @@ slice(
 *_Len*\
 Количество элементов в подмножестве.
 
-*Шаг*\
+*шага*\
 Расстояние между элементами в подмножестве.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Конструктор по умолчанию хранит нули для начального индекса, общей длины и полного шага. Второй конструктор хранит *_StartIndex* для стартового индекса, *_Len* для общей длины, и *шаг* для шага.
+Конструктор по умолчанию хранит нули для начального индекса, общей длины и полного шага. Второй конструктор сохраняет *_StartIndex* для начального индекса, *_Len* для общей длины и *шаг* для шага.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Полный шаг может быть отрицательным.
 
@@ -194,7 +195,7 @@ The slice of valarray va is vaResult:
 va[slice( 1, 7, 3)] = ( 4 10 16 22 28 34 40 ).
 ```
 
-## <a name="slicestart"></a><a name="start"></a>ломтик::начало
+## <a name="slicestart"></a><a name="start"></a> срез:: Start
 
 Находит начальный индекс среза valarray.
 
@@ -252,7 +253,7 @@ The slice of valarray va is vaResult = va[slice( 3, 6, 3)] =
 The start index of slice vaSlice is: 3.
 ```
 
-## <a name="slicestride"></a><a name="stride"></a>ломтик::шаг
+## <a name="slicestride"></a><a name="stride"></a> срез:: шаг
 
 Находит расстояние между элементами в срезе valarray.
 
@@ -312,4 +313,4 @@ The stride of slice vaSlice is: 3.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Безопасность резьбы в стандартной библиотеке СЗ](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)

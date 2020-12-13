@@ -1,5 +1,6 @@
 ---
-title: Класс CAutoPtrList
+description: 'Дополнительные сведения о: Каутоптрлист Class'
+title: Класс Каутоптрлист
 ms.date: 11/04/2016
 f1_keywords:
 - CAutoPtrList
@@ -8,19 +9,19 @@ f1_keywords:
 helpviewer_keywords:
 - CAutoPtrList class
 ms.assetid: 11de4aca-28b0-4ff2-a74a-cb602312ffbd
-ms.openlocfilehash: 48c7ad6fe13c5f5fbbe5829c25ce1c27896841be
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 51544d464904d0ebfd31b82152088a0dfa638969
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81318806"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97152520"
 ---
-# <a name="cautoptrlist-class"></a>Класс CAutoPtrList
+# <a name="cautoptrlist-class"></a>Класс Каутоптрлист
 
-Этот класс предоставляет полезные методы при построении списка интеллектуальных указателей.
+Этот класс предоставляет методы, полезные при создании списка смарт-указателей.
 
 > [!IMPORTANT]
-> Этот класс и его члены не могут быть использованы в приложениях, выполняемых в Windows Runtime.
+> Этот класс и его члены не могут использоваться в приложениях, выполняемых в среда выполнения Windows.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,31 +36,31 @@ class CAutoPtrList :
 *E*<br/>
 Тип указателя.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CAutoPtrlist:CAutoPtrlist](#cautoptrlist)|Конструктор.|
+|[Каутоптрлист:: Каутоптрлист](#cautoptrlist)|Конструктор.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот класс предоставляет конструктор и получает методы из [CAtlList](../../atl/reference/catllist-class.md) и [CAutoPtrElementTraits,](../../atl/reference/cautoptrelementtraits-class.md) чтобы помочь создать объект списка хранения интеллектуальных указателей. Класс [CAutoPtrArray](../../atl/reference/cautoptrarray-class.md) предоставляет аналогичную функцию для объекта массива.
+Этот класс предоставляет конструктор и наследует методы от [катллист](../../atl/reference/catllist-class.md) и [каутоптрелементтраитс](../../atl/reference/cautoptrelementtraits-class.md) для облегчения создания объекта списка, в котором хранятся смарт-указатели. Класс [каутоптраррай](../../atl/reference/cautoptrarray-class.md) предоставляет аналогичную функцию для объекта массива.
 
-Для получения дополнительной информации, [см.](../../atl/atl-collection-classes.md)
+Дополнительные сведения см. в разделе [классы коллекций ATL](../../atl/atl-collection-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
-[Catllist](../../atl/reference/catllist-class.md)
+[катллист](../../atl/reference/catllist-class.md)
 
 `CAutoPtrList`
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlcoll.h
+**Заголовок:** атлколл. h
 
-## <a name="cautoptrlistcautoptrlist"></a><a name="cautoptrlist"></a>CAutoPtrlist:CAutoPtrlist
+## <a name="cautoptrlistcautoptrlist"></a><a name="cautoptrlist"></a> Каутоптрлист:: Каутоптрлист
 
 Конструктор.
 
@@ -69,15 +70,15 @@ CAutoPtrList(UINT nBlockSize = 10) throw();
 
 ### <a name="parameters"></a>Параметры
 
-*nBlockSize*<br/>
-Размер блока, с значением по умолчанию 10.
+*нблокксизе*<br/>
+Размер блока со значением по умолчанию 10.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Размер блока — это мера объема памяти, выделенного при необходимости нового элемента. Большие размеры блоков уменьшают вызовы для процедур распределения памяти, но используют больше ресурсов.
+Размер блока — это мера объема памяти, выделенной при необходимости нового элемента. Большие размеры блоков сокращают число вызовов подпрограмм выделения памяти, но используют больше ресурсов.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс CAtlList](../../atl/reference/catllist-class.md)<br/>
-[Класс CAutoPtrElementTraits](../../atl/reference/cautoptrelementtraits-class.md)<br/>
+[Класс Катллист](../../atl/reference/catllist-class.md)<br/>
+[Класс Каутоптрелементтраитс](../../atl/reference/cautoptrelementtraits-class.md)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)

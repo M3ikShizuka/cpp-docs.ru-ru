@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: использование операторов извлечения'
 title: Использование операторов извлечения
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - '&gt;&gt; operator [C++], extraction operators'
 - operators [C++], extraction
 ms.assetid: a961e1a9-4897-41de-b210-89d5b2d051ae
-ms.openlocfilehash: 7950984973f8df236905128ce4b5336ecb874b7f
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 11115ed9d7f83b5e4d8cefe088c638afe8d95f38
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458041"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153581"
 ---
 # <a name="using-extraction-operators"></a>Использование операторов извлечения
 
@@ -19,6 +20,6 @@ ms.locfileid: "68458041"
 
 Операторы извлечения форматированного текста используют пробел в качестве разделителя значений входных данных. Это неудобно, если текстовое поле содержит несколько слов или цифры, разделенные запятыми. В этом случае одним из альтернативных вариантов является считывание блока текста с пробелами с помощью функции-члена для обработки неформатированного ввода [istream::getline](../standard-library/basic-istream-class.md#getline) и последующий разбор блока с помощью специальных функций. Другой способ — наследовать класс входного потока с помощью функции-члена, например `GetNextToken`, которая может вызывать члены istream для извлечения и форматирования символьных данных.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Входные потоки](../standard-library/input-streams.md)

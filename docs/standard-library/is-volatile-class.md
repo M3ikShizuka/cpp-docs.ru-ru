@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_volatile классе'
 title: Класс is_volatile
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_volatile class
 - is_volatile
 ms.assetid: 54922e8a-db4e-4cae-8931-b3352f0b8d3b
-ms.openlocfilehash: daba5dff55e0f3afa1e9996631125bf7ba64d52e
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: b94a83360d62970b9a198976eeb6faaefdc89cbb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458847"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97154166"
 ---
-# <a name="isvolatile-class"></a>Класс is_volatile
+# <a name="is_volatile-class"></a>Класс is_volatile
 
 Проверяет, является ли тип изменчивым.
 
@@ -30,9 +31,9 @@ struct is_volatile;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Экземпляр предиката типа содержит значение true, если *Ty* — `volatile-qualified`.
+Экземпляр предиката типа содержит значение true, если *Ty* — `volatile-qualified` .
 
 ## <a name="example"></a>Пример
 
@@ -71,11 +72,11 @@ is_volatile<volatile int> == true
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)\
 [Класс is_const](../standard-library/is-const-class.md)

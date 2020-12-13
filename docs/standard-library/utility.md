@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; служебная программа&gt;'
 title: '&lt;utility&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - utility header
 ms.assetid: c4491103-5da9-47a1-9c2b-ed8bc64b0599
-ms.openlocfilehash: 1beade28ceec0f1552def4bc70c2e95e6b2aa24d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 67472492acdb0ddbc1de957a69c01b1aafaf9367
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215443"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153438"
 ---
 # <a name="ltutilitygt"></a>&lt;utility&gt;
 
@@ -23,7 +24,7 @@ ms.locfileid: "87215443"
 
 **Пространство имен:** std
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Пары широко используются в стандартной библиотеке C++. Они используются как аргументы и возвращаемые значения для различных функций и как типы элементов для контейнеров, таких как [класс map](../standard-library/map-class.md) и [класс multimap](../standard-library/multimap-class.md). \<utility>Заголовок автоматически включается \<map> для помощи в управлении элементами типа пары "ключ — значение".
 
@@ -34,7 +35,7 @@ ms.locfileid: "87215443"
 
 ### <a name="classes"></a>Классы
 
-|Тип|Description|
+|Тип|Описание|
 |-|-|
 |[chars_format](../standard-library/chars-format-class.md)|Формат с плавающей запятой для преобразования примитивных чисел.|
 |[tuple_element](../standard-library/tuple-element-class-tuple.md)|Класс, который заключает в оболочку тип элемента `pair`.|
@@ -44,7 +45,7 @@ ms.locfileid: "87215443"
 
 |Шаблон|Описание|
 |-|-|
-|[index_sequence](../standard-library/utility-functions.md#index_sequence)|Шаблон псевдонима, определенный для общего случая `T` , где —`std::size_t`  |
+|[index_sequence](../standard-library/utility-functions.md#index_sequence)|Шаблон псевдонима, определенный для общего случая `T` , где — `std::size_t`  |
 |[index_sequence_for](../standard-library/utility-functions.md#index_sequence_for)|Шаблон вспомогательного псевдонима для преобразования любого пакета параметров типа в последовательность индекса той же длины|
 |[make_index_sequence](../standard-library/utility-functions.md#make_index_sequence)| Шаблон вспомогательного псевдонима для упрощения создания `std::index_sequence` типа. |
 |[make_integer_sequence](../standard-library/utility-functions.md#make_integer_sequence)|Шаблон вспомогательного псевдонима для упрощения создания `std::integer_sequence` типа.|
@@ -71,8 +72,8 @@ ms.locfileid: "87215443"
 |-|-|
 |[operator! =](../standard-library/utility-operators.md#op_neq)|Проверяет неравенство объекта pair слева от оператора объекту pair справа от оператора.|
 |[Оператор = =](../standard-library/utility-operators.md#op_eq_eq)|Проверяет равенство объекта pair слева от оператора объекту pair справа от оператора.|
-|[оператор\<](../standard-library/utility-operators.md#op_lt)|Проверяет, меньше ли объект pair слева от оператора объекта pair справа от оператора.|
-|[оператор\<=](../standard-library/utility-operators.md#op_gt_eq)|Проверяет, что объект pair слева от оператора меньше или равен объекту pair справа от оператора.|
+|[станции\<](../standard-library/utility-operators.md#op_lt)|Проверяет, меньше ли объект pair слева от оператора объекта pair справа от оператора.|
+|[станции\<=](../standard-library/utility-operators.md#op_gt_eq)|Проверяет, что объект pair слева от оператора меньше или равен объекту pair справа от оператора.|
 |[Оператор>](../standard-library/utility-operators.md#op_gt)|Проверяет, больше ли объект pair слева от оператора объекта pair справа от оператора.|
 |[Оператор>=](../standard-library/utility-operators.md#op_gt_eq)|Проверяет, больше или равен ли объект pair слева от оператора объекту pair справа от оператора.|
 

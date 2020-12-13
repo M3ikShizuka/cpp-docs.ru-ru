@@ -1,5 +1,6 @@
 ---
-title: Классы передачи данных (ATL)
+description: 'Дополнительные сведения: Передача данных классы'
+title: Классы Передача данных (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -7,21 +8,21 @@ helpviewer_keywords:
 - data transfer [C++], classes
 - data transfer classes [C++]
 ms.assetid: c10bcdc8-b90c-4c2a-9179-fd3de80461da
-ms.openlocfilehash: 037125648a121883c43009ce59ee9ef05371f167
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 287ec7baf80ecb9b839fa3e266c1d4f14be328ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62250736"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153178"
 ---
-# <a name="data-transfer-classes"></a>Классы передачи данных
+# <a name="data-transfer-classes"></a>Классы Передача данных
 
-Следующие классы поддерживают различные типы передаваемых данных:
+Следующие классы поддерживают различные типы передаваемых данных.
 
-- [IDataObjectImpl](../atl/reference/idataobjectimpl-class.md) поддерживает унифицированная передача данных с помощью стандартных форматов для получения и задания данных. Уведомления об изменении данных дескрипторов, управляя соединения с приемниками уведомлений.
+- [Идатаобжектимпл](../atl/reference/idataobjectimpl-class.md) Поддерживает однородные Передача данных, используя стандартные форматы для извлечения и установки данных. Обрабатывает уведомления об изменении данных, управляя подключениями к приемникам уведомлений.
 
-- [CBindStatusCallback](../atl/reference/cbindstatuscallback-class.md) позволяет асинхронным моникером для отправки и получения сведений о асинхронный обмен данными из объекта.
+- [Кбиндстатускаллбакк](../atl/reference/cbindstatuscallback-class.md) Разрешает асинхронное моникер для отправки и получения сведений об асинхронной передаче данных в объект и из него.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Общие сведения о классе](../atl/atl-class-overview.md)
+[Общие сведения о классах](../atl/atl-class-overview.md)

@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: использование операторов вставки и Управление форматом'
 title: Использование операторов вставки и управление форматом
 ms.date: 11/04/2016
 helpviewer_keywords:
 - insertion operators
 ms.assetid: cdefe986-6548-4cd1-8a67-b431d7d36a1c
-ms.openlocfilehash: 0d6a2afb320f91e51e2a89156a6e6732c6be90e0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0ed0e850cb578b66ea9131d135891cbbd26da4b7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215467"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97153568"
 ---
 # <a name="using-insertion-operators-and-controlling-format"></a>Использование операторов вставки и управление форматом
 
@@ -72,7 +73,7 @@ for (int i = 0; i <4; i++)
 ******1.23
 *****35.36
 *****653.7
-***4358.24
+**_4358.24
 ```
 
 Чтобы указать ширину элементов выходных данных в той же строке, используйте манипулятор `setw`:
@@ -87,7 +88,7 @@ using namespace std;
 int main( )
 {
    double values[] = { 1.23, 35.36, 653.7, 4358.24 };
-   char *names[] = { "Zoot", "Jimmy", "Al", "Stan" };
+   char _names[] = { "Zoot", "Jimmy", "Al", "Stan" };
    for( int i = 0; i < 4; i++ )
       cout << setw( 7 )  << names[i]
            << setw( 10 ) << values[i] << endl;
@@ -105,7 +106,7 @@ int main( )
 
 Оба `setw` `width` значения не усекаются. Если форматированные выходные данные превышают ширину, значения выводятся полностью в соответствии с заданной в потоке точностью. `setw`И `width` влияют только на следующее поле. Для ширины поля восстанавливается значение по умолчанию (необходимая ширина) после вывода одного поля. Другие параметры форматирования потока остаются в силе, пока не будут изменены.
 
-## <a name="alignment"></a><a name="vclrfalignmentanchor4"></a>Выравнивание
+## <a name="alignment"></a><a name="vclrfalignmentanchor4"></a> Выравнивание
 
 По умолчанию выравнивание текста в потоках вывода задано по правому краю. Чтобы выровняйте имена по левому краю в предыдущем примере и выровняйте числа по правому краю, замените **`for`** цикл следующим образом:
 
@@ -128,7 +129,7 @@ Stan     4358.24
 
 Флаг выравнивания по левому краю устанавливается с помощью манипулятора [setiosflags](../standard-library/iomanip-functions.md#setiosflags) с перечислителем `left`. Этот перечислитель определен в классе [ios](../standard-library/basic-ios-class.md), поэтому его ссылка должна содержать префикс **ios::**. Манипулятор [resetiosflags](../standard-library/iomanip-functions.md#resetiosflags) снимает флаг выравнивания по левому краю. В отличие от `width` и `setw` , результат `setiosflags` и `resetiosflags` является постоянным.
 
-## <a name="precision"></a><a name="vclrfprecisionanchor5"></a>Обеспечивают
+## <a name="precision"></a><a name="vclrfprecisionanchor5"></a> Обеспечивают
 
 По умолчанию для чисел с плавающей запятой задана точность шесть. Например, число 3466,9768 выводится как 3466,98. Чтобы изменить способ вывода этого значения, используйте манипулятор [setprecision](../standard-library/iomanip-functions.md#setprecision). Манипулятор имеет два флага: [fixed](../standard-library/ios-functions.md#fixed) и [scientific](../standard-library/ios-functions.md#scientific). Если указан флаг [fixed](../standard-library/ios-functions.md#fixed), число выводится как 3466,976800. Если `scientific` задано значение, оно распечатывается как 3.4669773 + 003.
 
@@ -181,7 +182,7 @@ Stan    4.4e+03
 
 В этом случае программа также выводит числа с одной цифрой после десятичной запятой. Если `ios::fixed` задан параметр или `ios::scientific` , то значение точности определяет количество цифр после десятичной запятой. Если не установлен ни один из флагов, значение точности определяет общее количество значащих цифр. Манипулятор `resetiosflags` снимает эти флаги.
 
-## <a name="radix"></a><a name="vclrfradixanchor6"></a>Основание системы счисления
+## <a name="radix"></a><a name="vclrfradixanchor6"></a> Основание системы счисления
 
 `dec` `oct` Манипуляторы, и `hex` устанавливают основание системы счисления по умолчанию для входных и выходных данных. Например, при вставке `hex` манипулятора в поток вывода объект правильно преобразует внутреннее представление целых чисел в шестнадцатеричный формат выходных данных. Числа отображаются с цифрами от a до f в нижнем регистре, если не установлен флаг [uppercase](../standard-library/ios-functions.md#uppercase) (по умолчанию). В противном случае они отображаются в верхнем регистре. Основание системы счисления по умолчанию — `dec` (десятичное число).
 
