@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: strncmp, wcsncmp, _mbsncmp, _mbsncmp_l'
 title: strncmp, wcsncmp, _mbsncmp, _mbsncmp_l
 ms.date: 4/2/2020
 api_name:
@@ -55,12 +56,12 @@ helpviewer_keywords:
 - characters [C++], comparing
 - _ftcsnccmp function
 ms.assetid: 2fdbf4e6-77da-4b59-9086-488f6066b8af
-ms.openlocfilehash: deae95f8cf7d538dfe22ebbe0e86524765d9d234
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 91f7351f844425369ccae4bba6d13d177e75910f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919318"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344761"
 ---
 # <a name="strncmp-wcsncmp-_mbsncmp-_mbsncmp_l"></a>strncmp, wcsncmp, _mbsncmp, _mbsncmp_l
 
@@ -120,13 +121,13 @@ int _mbsncmp_l(
 |0|Строка *строка1* совпадает с подстрокой *строка_замены*|
 |> 0|Строка *строка1* больше, чем *строка2* подстроки|
 
-При ошибке проверки параметров **_mbsncmp** и **_mbsncmp_l** возвращают **_NLSCMPERROR**, которые определены в \<> String. h> и \<mbstring. h.
+При ошибке проверки параметров **_mbsncmp** и **_mbsncmp_l** возвращают **_NLSCMPERROR**, который определен в \<string.h> и \<mbstring.h> .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **strncmp** выполняет порядковое сравнение не более чем *из первых символов* в *строка1* и *строка_замены* и возвращает значение, указывающее связь между подстроками. **strncmp** — это зависящая от регистра версия **_strnicmp**. **wcsncmp** и **_mbsncmp** — это зависящие от регистра версии **_wcsnicmp** и **_mbsnicmp**.
 
-**wcsncmp** и **_mbsncmp** — это версии **strncmp**для расширенных символов и многобайтовых символов. Аргументы **wcsncmp** — это строки расширенных символов; **_mbsncmp** являются строками многобайтовых символов. **_mbsncmp** распознает последовательности многобайтовых символов в соответствии с многобайтовой кодовой страницей и возвращает **_NLSCMPERROR** об ошибке.
+**wcsncmp** и **_mbsncmp** — это версии **strncmp** для расширенных символов и многобайтовых символов. Аргументы **wcsncmp** — это строки расширенных символов; **_mbsncmp** являются строками многобайтовых символов. **_mbsncmp** распознает последовательности многобайтовых символов в соответствии с многобайтовой кодовой страницей и возвращает **_NLSCMPERROR** об ошибке.
 
 Кроме того, **_mbsncmp** и **_mbsncmp_l** проверить параметры. Если *строка1* или *строка_замены* является пустым указателем, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, **_mbsncmp** и **_mbsncmp_l** возвращают **_NLSCMPERROR** **и установите значение** **еинвал**. **strncmp** и **wcsncmp** не проверяют свои параметры. В остальном эти функции ведут себя одинаково.
 
@@ -205,12 +206,12 @@ Result:      String 1 is equal to string 2
 ## <a name="see-also"></a>См. также раздел
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbcmp, _mbsnbcmp_l](mbsnbcmp-mbsnbcmp-l.md)<br/>
 [_mbsnbicmp, _mbsnbicmp_l](mbsnbicmp-mbsnbicmp-l.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
-[strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
+[Функции strcoll](../../c-runtime-library/strcoll-functions.md)<br/>
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>

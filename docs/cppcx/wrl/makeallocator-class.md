@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: MakeAllocator Class'
 title: MakeAllocator - класс
 ms.date: 10/03/2018
 ms.topic: reference
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::MakeAllocator::MakeAllocator, constructor
 - Microsoft::WRL::Details::MakeAllocator::~MakeAllocator, destructor
 ms.assetid: a1114615-abd7-4a56-9bc3-750c118f0fa1
-ms.openlocfilehash: 19d3ab294df8adc059424c97e5733ae9ebb75c9c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c4e550dec37096a5ff6a41eccd4eb41968721a7d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218381"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344527"
 ---
 # <a name="makeallocator-class"></a>MakeAllocator - класс
 
@@ -52,19 +53,19 @@ class MakeAllocator<T, true>;
 *хасвеакреференцесуппорт*<br/>
 **`true`** выделение памяти для объекта, который поддерживает слабые ссылки; **`false`** выделение памяти для объекта, который не поддерживает слабые ссылки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Выделяет память для класса активируемого с поддержкой слабых ссылок или без нее.
 
 Переопределите `MakeAllocator` класс для реализации модели выделения памяти, определяемой пользователем.
 
-`MakeAllocator`обычно используется для предотвращения утечек памяти, если объект вызывается во время создания.
+`MakeAllocator` обычно используется для предотвращения утечек памяти, если объект вызывается во время создания.
 
 ## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-Имя                                                  | Описание
+name                                                  | Описание
 ----------------------------------------------------- | ----------------------------------------------------------------
 [MakeAllocator:: MakeAllocator](#makeallocator)        | Инициализирует новый экземпляр класса `MakeAllocator`.
 [MakeAllocator:: ~ MakeAllocator](#tilde-makeallocator) | Выполняет деинициализацию текущего экземпляра `MakeAllocator` класса.
@@ -86,7 +87,7 @@ name                                 | Описание
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 
-## <a name="makeallocatorallocate"></a><a name="allocate"></a>MakeAllocator:: allocate
+## <a name="makeallocatorallocate"></a><a name="allocate"></a> MakeAllocator:: allocate
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -98,7 +99,7 @@ __forceinline void* Allocate();
 
 В случае успеха указатель на выделенную память; в противном случае — **`nullptr`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Выделяет память и связывает ее с текущим `MakeAllocator` объектом.
 
@@ -106,7 +107,7 @@ __forceinline void* Allocate();
 
 Разработчику необходимо переопределить только `Allocate()` метод для реализации другой модели выделения памяти.
 
-## <a name="makeallocatordetach"></a><a name="detach"></a>MakeAllocator::D етач
+## <a name="makeallocatordetach"></a><a name="detach"></a> MakeAllocator::D етач
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -114,13 +115,13 @@ __forceinline void* Allocate();
 __forceinline void Detach();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Отменяет связь памяти, выделенной методом [выделения](#allocate) , из текущего `MakeAllocator` объекта.
 
 При вызове `Detach()` вы несете ответственность за удаление памяти, предоставленной `Allocate` методом.
 
-## <a name="makeallocatormakeallocator"></a><a name="makeallocator"></a>MakeAllocator:: MakeAllocator
+## <a name="makeallocatormakeallocator"></a><a name="makeallocator"></a> MakeAllocator:: MakeAllocator
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -128,11 +129,11 @@ __forceinline void Detach();
 MakeAllocator();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Инициализирует новый экземпляр класса `MakeAllocator`.
 
-## <a name="makeallocatormakeallocator"></a><a name="tilde-makeallocator"></a>MakeAllocator:: ~ MakeAllocator
+## <a name="makeallocatormakeallocator"></a><a name="tilde-makeallocator"></a> MakeAllocator:: ~ MakeAllocator
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -140,7 +141,7 @@ MakeAllocator();
 ~MakeAllocator();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Выполняет деинициализацию текущего экземпляра `MakeAllocator` класса.
 

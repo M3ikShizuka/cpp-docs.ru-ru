@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _strinc, _wcsinc, _mbsinc, _mbsinc_l'
 title: _strinc, _wcsinc, _mbsinc, _mbsinc_l
 ms.date: 4/2/2020
 api_name:
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - _tcsinc function
 - tcsinc function
 ms.assetid: 54685943-8e2c-45e9-a559-2d94930dc6b4
-ms.openlocfilehash: a53102f991ec7467fd74e1997f8d5b7419b15aa1
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: df42c06b0fd8ec71c56cc25b12f769906b8ee0a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919983"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344865"
 ---
 # <a name="_strinc-_wcsinc-_mbsinc-_mbsinc_l"></a>_strinc, _wcsinc, _mbsinc, _mbsinc_l
 
@@ -92,11 +93,11 @@ unsigned char *_mbsinc_l(
 
 Каждая из этих подпрограмм возвращает указатель на символ, который непосредственно следует за *текущим*.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_mbsinc** возвращает указатель на первый байт многобайтового символа, который непосредственно следует за *текущим*. **_mbsinc** распознает последовательности многобайтовых символов в соответствии с используемой в данный момент [многобайтовой кодовой страницей](../../c-runtime-library/code-pages.md) ; **_mbsinc_l** является идентичным за исключением того, что вместо этого использует переданный параметр языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
-Функция Generic-Text **_tcsinc**, определенная в файле Tchar. h, сопоставляется с **_mbsinc** , если определена **_MBCS** , или для **_wcsinc** , если определено **_UNICODE** . В противном случае **_tcsinc** сопоставляется с **_strinc**. **_strinc** и **_wcsinc** — это версии **_mbsinc**для однобайтовых символов и расширенных символов. **_strinc** и **_wcsinc** предоставляются только для этого сопоставления и не должны использоваться в других случаях. Дополнительные сведения см. в разделах [Использование универсальных текстовых сопоставлений](../../c-runtime-library/using-generic-text-mappings.md) и [Универсальные текстовые сопоставления](../../c-runtime-library/generic-text-mappings.md).
+Функция Generic-Text **_tcsinc**, определенная в файле Tchar. h, сопоставляется с **_mbsinc** , если определена **_MBCS** , или для **_wcsinc** , если определено **_UNICODE** . В противном случае **_tcsinc** сопоставляется с **_strinc**. **_strinc** и **_wcsinc** — это версии **_mbsinc** для однобайтовых символов и расширенных символов. **_strinc** и **_wcsinc** предоставляются только для этого сопоставления и не должны использоваться в других случаях. Дополнительные сведения см. в разделах [Использование универсальных текстовых сопоставлений](../../c-runtime-library/using-generic-text-mappings.md) и [Универсальные текстовые сопоставления](../../c-runtime-library/generic-text-mappings.md).
 
 Если *Current* имеет **значение NULL**, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эта функция возвращает **еинвал** и **устанавливает значение** переводится в **еинвал**.
 

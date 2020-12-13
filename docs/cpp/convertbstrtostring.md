@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Конвертбстртостринг'
 title: ConvertBSTRToString
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - ConvertBSTRToString function
 ms.assetid: ab6ce555-3d75-4e9c-9cb8-ada6d8ce43b1
-ms.openlocfilehash: 1d0ad8727dd4d5ec06a45ec26c67dd3ad268f524
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 72d6033003f186f358d9b4143498df65858ee354
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80189530"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344618"
 ---
 # <a name="convertbstrtostring"></a>ConvertBSTRToString
 
@@ -30,7 +31,7 @@ char* __stdcall ConvertBSTRToString(BSTR pSrc);
 *pSrc*<br/>
 Переменная BSTR.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **Конвертбстртостринг** выделяет строку, которую необходимо удалить.
 
@@ -64,10 +65,10 @@ char * text: Test
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<комутил. h >
+**Заголовок:**\<comutil.h>
 
 **Lib:** комсуппв. lib или комсуппвд. lib (Дополнительные сведения см. в разделе [/Zc: wchar_t (wchar_t является собственным типом)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)
 
 ## <a name="see-also"></a>См. также раздел
 
-[Глобальные функции COM-модели компилятора](../cpp/compiler-com-global-functions.md)
+[Глобальные функции компилятора COM](../cpp/compiler-com-global-functions.md)

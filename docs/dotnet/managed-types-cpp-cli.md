@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: управляемые типы (C++/CLI)'
 title: Управляемые типы (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -17,18 +18,18 @@ helpviewer_keywords:
 - exceptions, diagnosing odd behavior
 - compatibility, between assemblies
 ms.assetid: 679b8ed3-d966-4a0c-b627-2a3f3ec96b74
-ms.openlocfilehash: c542151bda780e5306db35049d988e6514fffd62
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ccf126152216cfddb9a78cb5abc608f23cc3ba80
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225609"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344462"
 ---
 # <a name="managed-types-ccli"></a>Управляемые типы (C++/CLI)
 
 Visual C++ предоставляет доступ к функциям .NET через управляемые типы, которые обеспечивают поддержку функций среды CLR и подвержены преимуществам и ограничениям среды выполнения.
 
-## <a name="managed-types-and-the-main-function"></a><a name="main_functions"></a>Управляемые типы и функция Main
+## <a name="managed-types-and-the-main-function"></a><a name="main_functions"></a> Управляемые типы и функция Main
 
 При написании приложения с помощью **`/clr`** аргументы функции **Main ()** не могут иметь управляемый тип.
 
@@ -40,7 +41,7 @@ Visual C++ предоставляет доступ к функциям .NET че
 int main(int, char*[], char*[]) {}
 ```
 
-## <a name="net-framework-equivalents-to-c-native-types"></a><a name="dotnet"></a>.NET Framework эквиваленты машинным типам C++
+## <a name="net-framework-equivalents-to-c-native-types"></a><a name="dotnet"></a> .NET Framework эквиваленты машинным типам C++
 
 В следующей таблице показаны ключевые слова для встроенных типов Visual C++, которые являются псевдонимами предопределенных типов в пространстве имен **System** .
 
@@ -53,7 +54,7 @@ int main(int, char*[], char*[]) {}
 |**`wchar_t`**|<xref:System.Char?displayProperty=nameWithType>|
 |**`short`** и **`signed short`**|<xref:System.Int16?displayProperty=nameWithType>|
 |**`unsigned short`**|<xref:System.UInt16?displayProperty=nameWithType>|
-|**`int`**, **`signed int`** , **`long`** и**`signed long`**|<xref:System.Int32?displayProperty=nameWithType>|
+|**`int`**, **`signed int`** , **`long`** и **`signed long`**|<xref:System.Int32?displayProperty=nameWithType>|
 |**`unsigned int`** и **`unsigned long`**|<xref:System.UInt32?displayProperty=nameWithType>|
 |**`__int64`** и **`signed __int64`**|<xref:System.Int64?displayProperty=nameWithType>|
 |**`unsigned __int64`**|<xref:System.UInt64?displayProperty=nameWithType>|
@@ -62,7 +63,7 @@ int main(int, char*[], char*[]) {}
 
 Дополнительные сведения о параметре компилятора, который по умолчанию **`signed char`** имеет значение или **`unsigned char`** , см. в разделе [ `/J` (тип по умолчанию **`char`** — **`unsigned`** )](../build/reference/j-default-char-type-is-unsigned.md).
 
-## <a name="version-issues-for-value-types-nested-in-native-types"></a><a name="version_issues"></a>Проблемы с версиями для типов значений, вложенных в собственные типы
+## <a name="version-issues-for-value-types-nested-in-native-types"></a><a name="version_issues"></a> Проблемы с версиями для типов значений, вложенных в собственные типы
 
 Рассмотрим подписанный (строгое имя) компонент сборки, используемый для сборки клиентской сборки. Компонент содержит тип значения, который используется в клиенте как тип для члена собственного объединения, класса или массива. Если в следующей версии компонента изменяется размер или структура типа значения, клиент должен быть перекомпилирован.
 
@@ -127,7 +128,7 @@ S.i = 11
 
 Однако если добавить `struct S` в nested_value_types. cpp другой член, (например, `double d;` ) и выполнить повторную компиляцию компонента без перекомпиляции клиента, результатом будет необработанное исключение (типа <xref:System.IO.FileLoadException?displayProperty=fullName> ).
 
-## <a name="how-to-test-for-equality"></a><a name="test_equality"></a>Руководство. Проверка на равенство
+## <a name="how-to-test-for-equality"></a><a name="test_equality"></a> Руководство. Проверка на равенство
 
 В следующем примере проверка на равенство, использующую управляемые расширения для C++, зависит от того, на что ссылаются дескрипторы.
 
@@ -152,7 +153,7 @@ IL_0012:  call       bool [mscorlib]System.String::op_Equality(string,
                                                                string)
 ```
 
-## <a name="how-to-diagnose-and-fix-assembly-compatibility-problems"></a><a name="diagnose_fix"></a>Как диагностировать и исправить проблемы совместимости сборок
+## <a name="how-to-diagnose-and-fix-assembly-compatibility-problems"></a><a name="diagnose_fix"></a> Как диагностировать и исправить проблемы совместимости сборок
 
 В этом разделе объясняется, что может произойти, если версия сборки, на которую ссылается время компиляции, не совпадает с версией сборки, на которую ссылается среда выполнения, и как избежать этой проблемы.
 
@@ -227,7 +228,7 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Программирование .NET с использованием C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
 [Совместимость с другими языками .NET (C++/CLI)](../dotnet/interoperability-with-other-dotnet-languages-cpp-cli.md)<br/>

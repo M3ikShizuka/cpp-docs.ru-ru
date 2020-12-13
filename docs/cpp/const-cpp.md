@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: const (C++)'
 title: const (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - const keyword [C++]
 ms.assetid: b21c0271-1ad0-40a0-b21c-5e812bba0318
-ms.openlocfilehash: db79e228f1fabc4b2da0a7778126a1b576a67768
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 35943a9b417029e92fe478d375423901c201b810
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229042"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344657"
 ---
 # <a name="const-c"></a>const (C++)
 
@@ -152,7 +153,7 @@ extern "C" const int x=10;
 
 для предотвращения изменения имени компилятором C++.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 При использовании списка параметров функции-члена **`const`** ключевое слово указывает, что функция не изменяет объект, для которого она вызывается.
 
@@ -166,6 +167,6 @@ extern "C" const int x=10;
 
 - [#define](../preprocessor/hash-define-directive-c-cpp.md)
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Ключевые слова](../cpp/keywords-cpp.md)

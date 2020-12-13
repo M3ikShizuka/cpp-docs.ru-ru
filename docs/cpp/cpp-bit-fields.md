@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о: битовые поля C++'
 title: Битовые поля в C++
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - fields [C++], bit
 - bit fields
 ms.assetid: 6f4b62e3-cc1d-4e5d-bf34-05904104f71a
-ms.openlocfilehash: 7c2dbb6e2932265984c8cb4e1e34504921e5d666
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3cf1eb3e3beb0da69a4c148a48e7c68e23804d1b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221787"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344592"
 ---
 # <a name="c-bit-fields"></a>Битовые поля в C++
 
@@ -21,7 +22,7 @@ ms.locfileid: "87221787"
 
 *декларатор* **:** *константное выражение*
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 *Декларатор* (необязательный) — это имя, по которому осуществляется доступ к элементу в программе. Он должен иметь один из целочисленных типов (включая перечисляемые типы). *Константа-выражение* указывает количество битов, занимаемых элементом в структуре. Анонимные битовые поля, (т. е. битовые поля без идентификатора) можно использовать для заполнения.
 
@@ -85,6 +86,6 @@ struct Date {
 
 - Инициализация не **`const`** ссылки с битовым полем.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Классы и структуры](../cpp/classes-and-structs-cpp.md)

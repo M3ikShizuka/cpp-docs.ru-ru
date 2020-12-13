@@ -1,5 +1,6 @@
 ---
-title: Класс CrichEditCntrItem
+description: 'Дополнительные сведения о: Кричедиткнтритем Class'
+title: Класс Кричедиткнтритем
 ms.date: 11/04/2016
 f1_keywords:
 - CRichEditCntrItem
@@ -10,16 +11,16 @@ helpviewer_keywords:
 - CRichEditCntrItem [MFC], CRichEditCntrItem
 - CRichEditCntrItem [MFC], SyncToRichEditObject
 ms.assetid: 6c0b4efe-0fb8-4621-b5e1-fdcb8ec48c3b
-ms.openlocfilehash: 7b566fe7f1c0667dbcdb4976f79cd2e1597f48f6
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 9e65e70a3fb03b65ebf9af7a619a5c4fbd3dba32
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81752768"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342964"
 ---
-# <a name="cricheditcntritem-class"></a>Класс CrichEditCntrItem
+# <a name="cricheditcntritem-class"></a>Класс Кричедиткнтритем
 
-С [CRichEditView](../../mfc/reference/cricheditview-class.md) и [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md), обеспечивает функциональность богатого управления рекреацией в контексте архитектуры представления документов MFC.
+С помощью [CRichEditView](../../mfc/reference/cricheditview-class.md) и [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md)предоставляет функциональные возможности элемента управления Rich Edit в контексте архитектуры представления документов MFC.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -27,29 +28,29 @@ ms.locfileid: "81752768"
 class CRichEditCntrItem : public COleClientItem
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CrichEditCntrItem::CrichEditCntrItem](#cricheditcntritem)|Формирует объект `CRichEditCntrItem`.|
+|[Кричедиткнтритем:: Кричедиткнтритем](#cricheditcntritem)|Формирует объект `CRichEditCntrItem`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CrichEditCntrItem:SyncToRichEditObject](#synctoricheditobject)|Активирует элемент как другой тип.|
+|[Кричедиткнтритем:: Синкторичедитобжект](#synctoricheditobject)|Активирует элемент как другой тип.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-"Богатый элемент управления редактированием" — это окно, в котором пользователь может вводить и отстранять текст. Текст может быть назначен символ и форматирование абзацев, и может включать встроенные объекты OLE. Управление богатым редактированием обеспечивает интерфейс программирования для форматирования текста. Однако приложение должно реализовать все компоненты пользовательского интерфейса, необходимые для того, чтобы операции форматирования были доступны пользователю.
+«Форматируемый элемент управления» — это окно, в котором пользователь может вводить и редактировать текст. Тексту можно присвоить форматирование символов и абзацев, а также включить внедренные объекты OLE. Элементы управления Rich Edit предоставляют программный интерфейс для форматирования текста. Однако приложение должно реализовывать любые компоненты пользовательского интерфейса, необходимые для того, чтобы сделать операции форматирования доступными для пользователя.
 
-`CRichEditView`сохраняет текст и форматирование характеристики текста. `CRichEditDoc`ведет список элементов клиента OLE, которые находятся в представлении. `CRichEditCntrItem`обеспечивает доступ к клиенту OL со стороны контейнера.
+`CRichEditView` поддерживает текстовую характеристику текста и форматирования текста. `CRichEditDoc` поддерживает список элементов OLE клиента, которые находятся в представлении. `CRichEditCntrItem` предоставляет доступ на стороне контейнера к элементу OLE-клиента.
 
-Этот общий элемент управления Windows (и, следовательно, [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) и связанных с ними классов) доступен только для программ, работающих под Windows 95/98 и Windows NT версии 3.51 и позже.
+Этот общий элемент управления Windows (и, следовательно, [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md) и связанные классы) доступен только для программ, работающих под управлением Windows 95/98 и Windows NT версии 3,51 и более поздних версий.
 
-Например, использование богатых элементов контейнеров для обработки в приложении MFC см. [WORDPAD](../../overview/visual-cpp-samples.md)
+Пример использования элементов контейнера с богатыми возможностями редактирования в приложении MFC см. в примере приложения [WordPad](../../overview/visual-cpp-samples.md) .
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -65,11 +66,11 @@ class CRichEditCntrItem : public COleClientItem
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxrich.h
+**Заголовок:** афксрич. h
 
-## <a name="cricheditcntritemcricheditcntritem"></a><a name="cricheditcntritem"></a>CrichEditCntrItem::CrichEditCntrItem
+## <a name="cricheditcntritemcricheditcntritem"></a><a name="cricheditcntritem"></a> Кричедиткнтритем:: Кричедиткнтритем
 
-Вызовите эту `CRichEditCntrItem` функцию, чтобы создать объект и добавьте его в контейнерный документ.
+Вызовите эту функцию, чтобы создать `CRichEditCntrItem` объект и добавить его в документ-контейнер.
 
 ```
 CRichEditCntrItem(
@@ -79,21 +80,21 @@ CRichEditCntrItem(
 
 ### <a name="parameters"></a>Параметры
 
-*preo*<br/>
-Указатель на структуру [REOBJECT,](/windows/win32/api/richole/ns-richole-reobject) описывающий элемент OLE. Новый `CRichEditCntrItem` объект построен вокруг этого элемента OLE. Если *preo* null, клиентский элемент пуст.
+*прео*<br/>
+Указатель на структуру [объекта](/windows/win32/api/richole/ns-richole-reobject) , описывающую элемент OLE. Новый `CRichEditCntrItem` объект создается вокруг этого объекта OLE. Если *прео* имеет значение null, то элемент клиента пуст.
 
 *pContainer*<br/>
-Указатель на контейнерный документ, который будет содержать этот элемент. Если *pContainer* является NULL, необходимо явно позвонить [в COleDocument::AddItem,](../../mfc/reference/coledocument-class.md#additem) чтобы добавить этот элемент клиента в документ.
+Указатель на документ контейнера, который будет содержать этот элемент. Если *pcontainer может* имеет значение null, необходимо явно вызвать [Коледокумент:: AddItem](../../mfc/reference/coledocument-class.md#additem) , чтобы добавить этот клиентский элемент в документ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Эта функция не выполняет никакой инициализации OLE.
+Эта функция не выполняет инициализацию OLE.
 
-Для получения дополнительной [информации](/windows/win32/api/richole/ns-richole-reobject) см.
+Дополнительные сведения см. в описании структуры [РЕобъектного объекта](/windows/win32/api/richole/ns-richole-reobject) в Windows SDK.
 
-## <a name="cricheditcntritemsynctoricheditobject"></a><a name="synctoricheditobject"></a>CrichEditCntrItem:SyncToRichEditObject
+## <a name="cricheditcntritemsynctoricheditobject"></a><a name="synctoricheditobject"></a> Кричедиткнтритем:: Синкторичедитобжект
 
-Вызовите эту функцию для синхронизации аспекта устройства, [DVASPECT](/windows/win32/api/wtypes/ne-wtypes-dvaspect), об этом, `CRichEditCntrltem` указанном *reo*.
+Вызовите эту функцию, чтобы синхронизировать аспект устройства, [дваспект](/windows/win32/api/wtypes/ne-wtypes-dvaspect), с `CRichEditCntrltem` указанным *Рео*.
 
 ```cpp
 void SyncToRichEditObject(REOBJECT& reo);
@@ -101,17 +102,17 @@ void SyncToRichEditObject(REOBJECT& reo);
 
 ### <a name="parameters"></a>Параметры
 
-*Reo*<br/>
-Ссылка на структуру [REOBJECT,](/windows/win32/api/richole/ns-richole-reobject) описывающая элемент OLE.
+*рео*<br/>
+Ссылка на структуру [объектов](/windows/win32/api/richole/ns-richole-reobject) , описывающую элемент OLE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Для получения дополнительной информации [см.](/windows/win32/api/wtypes/ne-wtypes-dvaspect)
+Дополнительные сведения см. в разделе [дваспект](/windows/win32/api/wtypes/ne-wtypes-dvaspect) в Windows SDK.
 
 ## <a name="see-also"></a>См. также раздел
 
-[MFC Образец WORDPAD](../../overview/visual-cpp-samples.md)<br/>
-[Класс ColeClientItem](../../mfc/reference/coleclientitem-class.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Образец WORDPAD для MFC](../../overview/visual-cpp-samples.md)<br/>
+[Класс COleClientItem](../../mfc/reference/coleclientitem-class.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Класс CRichEditDoc](../../mfc/reference/cricheditdoc-class.md)<br/>
-[Класс CrichEditView](../../mfc/reference/cricheditview-class.md)
+[Класс CRichEditView](../../mfc/reference/cricheditview-class.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l'
 title: _strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l
 ms.date: 4/2/2020
 api_name:
@@ -58,19 +59,19 @@ helpviewer_keywords:
 - _mbsnccnt function
 - _wcsncnt function
 ms.assetid: 2a022e9e-a307-4acb-a66b-e56e5357f848
-ms.openlocfilehash: 77746af98e5d62b80d5a0d2d93eb1f717c74b33e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9030c66e226cc36e08ca1730a8178b0000216d9a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231342"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344748"
 ---
 # <a name="_strncnt-_wcsncnt-_mbsnbcnt-_mbsnbcnt_l-_mbsnccnt-_mbsnccnt_l"></a>_strncnt, _wcsncnt, _mbsnbcnt, _mbsnbcnt_l, _mbsnccnt, _mbsnccnt_l
 
 Возвращает число символов или байтов в пределах указанного количества.
 
 > [!IMPORTANT]
-> **_mbsnbcnt**, **_mbsnbcnt_l**, **_mbsnccnt**и **_mbsnccnt_l** не могут использоваться в приложениях, выполняемых в среда выполнения Windows. Дополнительные сведения: [Функции CRT, которые не поддерживаются в приложениях универсальной платформы Windows](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsnbcnt**, **_mbsnbcnt_l**, **_mbsnccnt** и **_mbsnccnt_l** не могут использоваться в приложениях, выполняемых в среда выполнения Windows. Дополнительные сведения: [Функции CRT, которые не поддерживаются в приложениях универсальной платформы Windows](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -118,9 +119,9 @@ size_t _mbsnccnt_l(
 
 **_mbsnbcnt** и **_mbsnbcnt_l** возвращают число байтов, найденных в первом *количестве* многобайтовых символов *str*. **_mbsnccnt** и **_mbsnccnt_l** возвращают количество символов, найденных в первом *числе* байтов *str*. Если символ NULL обнаружен до завершения проверки *str* , он возвращает число байтов или символов, найденных перед нулевым символом. Если *str* состоит *из меньшего числа символов или* байтов, они возвращают количество символов или байтов в строке. Если *Count* меньше нуля, они возвращают 0. В предыдущих версиях эти функции имели возвращаемое значение типа, **`int`** а не **size_t**.
 
-**_strncnt** возвращает число символов в первом *числе* байтов строкового *str*в однобайтовой строке. **_wcsncnt** возвращает число символов в первых расширенных символах *строки расширенных* *символов.*
+**_strncnt** возвращает число символов в первом *числе* байтов строкового *str* в однобайтовой строке. **_wcsncnt** возвращает число символов в первых расширенных символах *строки расширенных* *символов.*
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **_mbsnbcnt** и **_mbsnbcnt_l** подсчитывает число байтов, найденных в первом *количестве* многобайтовых символов *str*. **_mbsnbcnt** и **_mbsnbcnt_l** замените **МТОБ** и должны использоваться вместо **МТОБ**.
 
@@ -138,9 +139,9 @@ size_t _mbsnccnt_l(
 |-------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsnbcnt**|**_strncnt**|**_mbsnbcnt**|**_wcsncnt**|
 |**_tcsnccnt**|**_strncnt**|**_mbsnbcnt**|н/д|
-|**_wcsncnt**|Недоступно|Недоступно|**_mbsnbcnt**|
-|**_wcsncnt**|Недоступно|Недоступно|**_mbsnccnt**|
-|Недоступно|Недоступно|**_mbsnbcnt_l**|**_mbsnccnt_l**|
+|**_wcsncnt**|Н/Д|Н/Д|**_mbsnbcnt**|
+|**_wcsncnt**|Н/Д|Н/Д|**_mbsnccnt**|
+|Н/Д|Н/Д|**_mbsnbcnt_l**|**_mbsnccnt_l**|
 
 ## <a name="requirements"></a>Требования
 
@@ -186,5 +187,5 @@ The first 10 characters are single-byte.
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Локаль](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l'
 title: strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
 ms.date: 4/2/2020
 api_name:
@@ -64,12 +65,12 @@ helpviewer_keywords:
 - _mbsncat_l function
 - tcsncat function
 ms.assetid: de67363b-68c6-4ca5-91e3-478610ad8159
-ms.openlocfilehash: 98f13967d8abbe079934d0c09ab71c5e279d2b7f
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 509afe42e4fbf4cec9f0a7a077f0bf4ce0a1423e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918154"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344774"
 ---
 # <a name="strncat-_strncat_l-wcsncat-_wcsncat_l-_mbsncat-_mbsncat_l"></a>strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
 
@@ -147,14 +148,14 @@ unsigned char *_mbsncat_l(
 
 Возвращает указатель на целевую строку символов. Нет зарезервированных возвращаемых значений для указания ошибки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функция **strncat** добавляет (не более) первые символы *Count* из *стрсаурце* в *стрдест*. Начальный символ *стрсаурце* перезаписывает завершающий нуль символ *стрдест*. Если символ NULL появляется в *стрсаурце* перед добавлением символов *Count* , **strncat** добавляет все символы из *стрсаурце*, вплоть до символа null. Если *Count* больше, чем длина *стрсаурце*, вместо *Count*используется длина *стрсаурце* . Во всех случаях результирующая строка завершается нуль-символом. Если копирование производится между перекрывающимися строками, поведение не определено.
+Функция **strncat** добавляет (не более) первые символы *Count* из *стрсаурце* в *стрдест*. Начальный символ *стрсаурце* перезаписывает завершающий нуль символ *стрдест*. Если символ NULL появляется в *стрсаурце* перед добавлением символов *Count* , **strncat** добавляет все символы из *стрсаурце*, вплоть до символа null. Если *Count* больше, чем длина *стрсаурце*, вместо *Count* используется длина *стрсаурце* . Во всех случаях результирующая строка завершается нуль-символом. Если копирование производится между перекрывающимися строками, поведение не определено.
 
 > [!IMPORTANT]
 > **strncat** не проверяет наличие достаточного места в *стрдест*; Поэтому возможная причина переполнения буфера. Помните *, что количество* добавляемых символов ограничено. Он не является ограничением размера *стрдест*. См. пример ниже. Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-**wcsncat** и **_mbsncat** — это версии **strncat**для расширенных символов и многобайтовых символов. Строковые аргументы и возвращаемое значение **wcsncat** являются строками расширенных символов. **_mbsncat** являются строками многобайтовых символов. В остальном эти три функции ведут себя идентично.
+**wcsncat** и **_mbsncat** — это версии **strncat** для расширенных символов и многобайтовых символов. Строковые аргументы и возвращаемое значение **wcsncat** являются строками расширенных символов. **_mbsncat** являются строками многобайтовых символов. В остальном эти три функции ведут себя идентично.
 
 Выходное значение зависит от настройки категории **LC_CTYPE** языкового стандарта; дополнительные сведения см. в разделе [setlocale](setlocale-wsetlocale.md). Версии этих функций без суффикса **_l** используют текущий языковой стандарт для данного поведения, зависящего от языкового стандарта; версии с суффиксом **_l** идентичны, за исключением того, что они используют переданный параметр языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
@@ -245,5 +246,5 @@ After GoodAppend:  This is the initial string!Extra text t (39 chars)
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
 [strspn, wcsspn, _mbsspn, _mbsspn_l](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>

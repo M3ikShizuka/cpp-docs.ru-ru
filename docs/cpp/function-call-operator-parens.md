@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: оператор вызова функции: ()'
 title: 'Оператор вызова функции: ()'
 ms.date: 06/11/2020
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 50c92e59-a4bf-415a-a6ab-d66c679ee80a
 no-loc:
 - opt
-ms.openlocfilehash: 5bb87795d3e91d853dc0d269ee9d2aa3ba025c0e
-ms.sourcegitcommit: 83ea5df40917885e261089b103d5de3660314104
+ms.openlocfilehash: 351674f345c7213a3c164ff88e9a165775088c68
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85813554"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344566"
 ---
 # <a name="function-call-operator-"></a>Оператор вызова функции: ()
 
@@ -28,7 +29,7 @@ ms.locfileid: "85813554"
 > *`postfix-expression`*:\
 > &emsp;*`postfix-expression`* **`(`** *`argument-expression-list`* <sub>opt</sub> **`)`**
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Аргументы оператора вызова функции берутся из *`argument-expression-list`* , разделенного запятыми списка выражений. Значения этих выражений передаются в функцию в качестве аргументов. *Аргумент-expression-list* может быть пустым. До C++ 17 порядок вычисления выражения функции и выражений аргументов не определен и может возникать в любом порядке. В C++ 17 и более поздних версиях выражение функции вычисляется перед любыми выражениями аргументов или аргументами по умолчанию. Выражения аргументов вычисляются в неопределенной последовательности.
 
@@ -183,7 +184,7 @@ int main() {
 
 Функции можно вызывать рекурсивно. Дополнительные сведения об объявлениях функций см. в разделе [функции](functions-cpp.md). Связанные материалы относятся к [единицам трансляции и компоновке](../cpp/program-and-linkage-cpp.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Постфиксные выражения](../cpp/postfix-expressions.md)<br/>
 [Встроенные операторы, приоритет и ассоциативность C++](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>

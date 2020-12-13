@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Неустранимая ошибка NMAKE U1099'
 title: Неустранимая ошибка NMAKE U1099
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - U1099
 ms.assetid: 6688a805-43e6-4247-a2d0-14be082f0b13
-ms.openlocfilehash: c963180059a48d9aa0b09103df1ed54f82b8a2f1
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 8044010cf967e4fe27b2235968022023d66ae1c3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80193398"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345320"
 ---
 # <a name="nmake-fatal-error-u1099"></a>Неустранимая ошибка NMAKE U1099
 
@@ -21,6 +22,6 @@ ms.locfileid: "80193398"
 
 Чтобы увеличить выделение стека NMAKE, запустите служебную программу [EDITBIN/Stack](../../build/reference/stack.md) с большим параметром стека:
 
-**EDITBIN/STACK: Reserve NMAKE. ПРОГРАММЫ**
+**EDITBIN/STACK: Reserve NMAKE.EXE**
 
 где *Reserve* — это число, большее, чем текущее выделение стека в NMAKE.

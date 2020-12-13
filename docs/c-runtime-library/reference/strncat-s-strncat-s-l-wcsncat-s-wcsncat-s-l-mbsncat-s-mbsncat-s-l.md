@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l'
 title: strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
 ms.date: 4/2/2020
 api_name:
@@ -56,12 +57,12 @@ helpviewer_keywords:
 - wcsncat_s_l function
 - mbsncat_s function
 ms.assetid: de77eca2-4d9c-4e66-abf2-a95fefc21e5a
-ms.openlocfilehash: 4aba4a2bd843fe0946c2e444b305f776065a57be
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c260c1a77908962441dba094686578e61db0e386
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919360"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344787"
 ---
 # <a name="strncat_s-_strncat_s_l-wcsncat_s-_wcsncat_s_l-_mbsncat_s-_mbsncat_s_l"></a>strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
 
@@ -179,16 +180,16 @@ errno_t _mbsncat_s_l(
 |*стрдестинатион*|*numberOfElements*|*стрсаурце*|Возвращаемое значение|Содержимое *стрдестинатион*|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
 |**Null** или без завершения|any|any|**еинвал**|не изменено|
-|any|any|**ЗАКАНЧИВАЮЩ**|**еинвал**|не изменено|
+|any|any|**NULL**|**еинвал**|не изменено|
 |any|0 или слишком мал|any|**ERANGE**|не изменено|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эти функции пытаются добавить первые *D* символов *Стрсаурце* в конец *стрдест*, где *D* — это меньшее *количество и длина* *стрсаурце*. Если добавление этих *D* -символов помещается в *стрдест* (чей размер задан как *numberOfElements*) и все еще оставляет место для нулевого терминатора, то добавляются эти символы, начиная с исходного завершающего значения NULL *стрдест*, и добавляется новое завершающее значение null. в противном случае для *стрдест*[0] задается символ NULL и вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md).
 
 Для вышеприведенного абзаца есть исключения. Если значение *Count* равно [_TRUNCATE](../../c-runtime-library/truncate.md) то, как помещается в *стрдест* , к нему добавляется *стрсаурце* , при этом остается свободное место для добавления завершающего значения NULL.
 
-Например,
+например следующие.
 
 ```C
 char dst[5];
@@ -204,7 +205,7 @@ strncat_s(dst, _countof(dst), "34567", 3);
 strncat_s(dst, _countof(dst), "34567", _TRUNCATE);
 ```
 
-или диспетчер конфигурации служб
+или
 
 ```C
 strncat_s(dst, _countof(dst), "34567", _countof(dst)-strlen(dst)-1);
@@ -212,9 +213,9 @@ strncat_s(dst, _countof(dst), "34567", _countof(dst)-strlen(dst)-1);
 
 Во всех случаях результирующая строка завершается нуль-символом. Если копирование производится между перекрывающимися строками, поведение не определено.
 
-Если *стрсаурце* или *Стрдест* имеет **значение NULL**или значение *numberOfElements* равно нулю, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md) . Если выполнение может быть продолжено, функция возвращает **еинвал** , не изменяя ее параметры.
+Если *стрсаурце* или *Стрдест* имеет **значение NULL** или значение *numberOfElements* равно нулю, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md) . Если выполнение может быть продолжено, функция возвращает **еинвал** , не изменяя ее параметры.
 
-**wcsncat_s** и **_mbsncat_s** — это версии **strncat_s**для расширенных символов и многобайтовых символов. Строковые аргументы и возвращаемое значение **wcsncat_s** являются строками расширенных символов; **_mbsncat_s** являются строками многобайтовых символов. В остальном эти три функции ведут себя идентично.
+**wcsncat_s** и **_mbsncat_s** — это версии **strncat_s** для расширенных символов и многобайтовых символов. Строковые аргументы и возвращаемое значение **wcsncat_s** являются строками расширенных символов; **_mbsncat_s** являются строками многобайтовых символов. В остальном эти три функции ведут себя идентично.
 
 Выходное значение зависит от настройки категории **LC_CTYPE** языкового стандарта; дополнительные сведения см. в разделе [setlocale](setlocale-wsetlocale.md). Версии этих функций без суффикса **_l** используют текущий языковой стандарт для данного поведения, зависящего от языкового стандарта; версии с суффиксом **_l** идентичны, за исключением того, что они используют переданный параметр языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
@@ -383,8 +384,8 @@ Invalid parameter handler invoked: (L"Buffer is too small" && 0)
 ## <a name="see-also"></a>См. также раздел
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о том, как MFC упрощает создание клиентских приложений для Интернета.
 title: Использование MFC для упрощения создания клиентских приложений в Интернете
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - Internet applications [MFC], MFC
 - MFC, Internet applications
 ms.assetid: 94437b3f-f15c-437d-b5fd-264a2efec9ab
-ms.openlocfilehash: 71b72a3079cd0d0c87289c1813c09a24d9f75c89
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 7cc201c67cf4964e5bd561cd173186bc57feb89b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618560"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343606"
 ---
 # <a name="how-mfc-makes-it-easier-to-create-internet-client-applications"></a>Использование MFC для упрощения создания клиентских приложений в Интернете
 
@@ -34,4 +35,4 @@ Microsoft Foundation Classes инкапсулировать функции ра�
 ## <a name="see-also"></a>См. также раздел
 
 [Расширения Интернета Win32 (WinInet)](win32-internet-extensions-wininet.md)<br/>
-[Использование WinInet для упрощения создания клиентских приложений в Интернете](how-wininet-makes-it-easier-to-create-internet-client-applications.md)
+[Как WinInet упрощает создание клиентских приложений для Интернета](how-wininet-makes-it-easier-to-create-internet-client-applications.md)

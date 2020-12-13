@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: конструкторы копирования и операторы присваивания копирования (C++)'
 title: Конструкторы копий и операторы присваивания копий (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - copying objects
 - assigning values to copy objects
 ms.assetid: a94fe1f9-0289-4fb9-8633-77c654002c0d
-ms.openlocfilehash: faf1a94e27f5a0a435d0a906661444f67709628e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 881470c92e0261dc5c4cd63876d7cb59fcc68fef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221800"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344579"
 ---
 # <a name="copy-constructors-and-copy-assignment-operators-c"></a>Конструкторы копий и операторы присваивания копий (C++)
 
@@ -24,7 +25,7 @@ ms.locfileid: "87221800"
 >
 > Как при операции назначения, так и при операции инициализации выполняется копирование объектов.
 
-- **Назначение**: когда значение одного объекта присваивается другому объекту, первый объект копируется во второй объект. Таким образом,
+- **Назначение**: когда значение одного объекта присваивается другому объекту, первый объект копируется во второй объект. Поэтому
 
     ```cpp
     Point a, b;

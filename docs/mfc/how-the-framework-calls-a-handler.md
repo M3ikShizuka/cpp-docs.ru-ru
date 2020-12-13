@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о том, как платформа вызывает обработчик.
 title: Вызовы к обработчику со стороны платформы
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - command handling [MFC], calling handlers and code in MFC
 - command routing [MFC], MFC
 ms.assetid: d79bceba-4ff6-417a-9d52-6b6af62a909d
-ms.openlocfilehash: 3fcfcbdd224db66550e7f0ff27de6313c85f856a
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 97bdf47d239c4b4d9cb4ca7ad26d4f688f864168
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618519"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343559"
 ---
 # <a name="how-the-framework-calls-a-handler"></a>Вызовы к обработчику со стороны платформы
 
@@ -20,11 +21,11 @@ ms.locfileid: "84618519"
 
 - [Отправка и получение сообщений](message-sending-and-receiving.md)
 
-- [Как Некомандные сообщения достигают обработчиков](how-noncommand-messages-reach-their-handlers.md)
+- [Получение доступа некомандных сообщений к обработчикам](how-noncommand-messages-reach-their-handlers.md)
 
 - [Маршрутизация команд](command-routing.md)
 
-- [Демонстрация маршрутизации команд](command-routing-illustration.md)
+- [Иллюстрация маршрутизации команд](command-routing-illustration.md)
 
 - [Обработчик OnCmdMsg](oncmdmsg-handler.md)
 

@@ -1,236 +1,237 @@
 ---
+description: 'Дополнительные сведения: C. грамматика OpenMP C и C++'
 title: В. Грамматика OpenMP C и C++
 ms.date: 01/16/2019
 ms.assetid: 97a878ce-1533-47f7-a134-66fcbff48524
-ms.openlocfilehash: 85e18161079b49e83cc9fedb3184ee220c889e75
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9543d721afbff1069b5497ba8dc7092089a1b706
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62362950"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342508"
 ---
 # <a name="c-openmp-c-and-c-grammar"></a>В. Грамматика OpenMP C и C++
 
 [C.1 Нотация](#c1-notation)<br/>
-[C.2 Правила](#c2-rules)
+[C.2 Правила](#c2-rules)
 
 ## <a name="c1-notation"></a>C.1 Нотация
 
-Грамматические правила состоят из имени для нетерминального, за которым следует двоеточие, следуют альтернативные варианты замены в отдельных строках.
+Правила грамматики состоят из имени для нетерминального, за которым следует двоеточие, а затем альтернативные варианты замены в отдельных строках.
 
-Термин синтаксические выражения<sub>opt</sub> указывает, что термин не является обязательным в замены.
+Термин «выражение синтаксиса<sub>» указывает, что термин является</sub> необязательным в пределах замены.
 
-Синтаксические выражения *термин*<sub>optseq</sub> эквивалентен *термин seq*<sub>opt</sub> с следующие дополнительные правила:
+*Выражение синтаксиса Expression*<sub>оптсек</sub> эквивалентно значению *ключевого слова-seq*<sub>OPT</sub> со следующими дополнительными правилами:
 
-*Термин seq*:  
-&nbsp;&nbsp;&nbsp;&nbsp;*Термин*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Термин seq* *термин*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*term-seq*   `,` *term*
+*Term — seq*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*термин*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;терм *— Seq* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Term-seq* `,` *срок*   
 
 ## <a name="c2-rules"></a>C.2 Правила
 
-Нотация описан в разделе 6.1 стандарта C. В этом приложении грамматики показано расширение для грамматики базовый язык для директивы OpenMP C и C++.
+Нотация описана в разделе 6,1 стандарта C. В этом грамматическом приложении показаны расширения для грамматики базового языка для директив OpenMP C и C++.
 
 **/\* в C++ (ISO/IEC 14882:1998) \*/**
 
-*оператор seq*:<br/>
+*оператор-seq*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*statement*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*OpenMP директива*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*statement-seq statement*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*statement-seq openmp-directive*
+&nbsp;&nbsp;&nbsp;&nbsp;*Директива OpenMP*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Инструкция-Seq, инструкция*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Оператор-последовательность OpenMP-директива*
 
-**/\* в C90 (ISO/IEC 9899: 1990) \*/**
+**/\* в C90 (ISO/IEC 9899:1990) \*/**
 
 *statement-list*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*statement*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*OpenMP директива*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*список операторов оператор*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*statement-list openmp-directive*
+&nbsp;&nbsp;&nbsp;&nbsp;*Директива OpenMP*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Statement-оператор List*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Инструкция-список директив OpenMP*
 
-**/\* в C99 (ISO/IEC 9899: 1999) \*/**
+**/\* в C99 (ISO/IEC 9899:1999) \*/**
 
-*block-item*:<br/>
+*блочный элемент*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*declaration*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*statement*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*OpenMP директива*
+&nbsp;&nbsp;&nbsp;&nbsp;*Директива OpenMP*
 
-**/\* стандартные инструкции \*/**
+**/\* стандартные операторы \*/**
 
 *statement*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*openmp-construct*
+&nbsp;&nbsp;&nbsp;&nbsp;*Конструкция OpenMP*
 
-*Конструкция OpenMP*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parallel-construct*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*для конструкции*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*sections-construct*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Конструкция одного*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parallel-for-construct*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parallel-sections-construct*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Конструкция master*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Конструкция Critical*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Конструкция atomic*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*упорядоченные конструкция*
+*конструкция OpenMP*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Параллельная конструкция*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*for-конструкция*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*раздел — конструкция*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*одиночная конструкция*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Parallel-for-конструкция*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Конструкция Parallel-Sections*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Главная — конструкция*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Критическая — конструкция*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Атомарная конструкция*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*упорядоченная конструкция*
 
-*Директива OpenMP*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Барьер директива*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Flush директива*
+*директива OpenMP*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*барьер-директива*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*flush-директива*
 
 *структурированный блок*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*statement*
 
-*parallel-construct*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*parallel-directive structured-block*
+*параллельная конструкция*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*структурированный блок директивы parallel*
 
-*Директива параллельного*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp parallel` *parallel-clause*<sub>optseq</sub> *new-line*
+*директива parallel-*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp parallel`*Parallel-предложение*<sub>оптсек</sub> *New-Line*
 
-*предложение параллельного*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Уникальный параллельного предложение*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*предложения данных*
+*Parallel-предложение*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Unique — параллельное предложение*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Data-предложение*
 
-*уникальное предложение параллельного*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `if (` *expression*   `)`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `num_threads (` *expression*   `)`
+*UNIQUE — параллельное предложение*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `if (`*выражение*   `)`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `num_threads (`*выражение*   `)`
 
 *для конструкции*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*для директивы итерации оператор*
+&nbsp;&nbsp;&nbsp;&nbsp;*Оператор итерации for-директивы*
 
-*для директивы*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp for` *for-clause*<sub>optseq</sub> *new-line*
+*директива for*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp for`*for-предложение*<sub>оптсек</sub> *New-Line*
 
-*для предложения*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Уникальный для предложения*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*предложения данных*<br/>
+*предложение for*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Unique-for-предложение*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Data-предложение*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `nowait`
 
-*Уникальный для предложения*:<br/>
+*UNIQUE-предложение-for*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `ordered`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `schedule (` *Вид расписания*   `)`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `schedule (` *schedule-kind*   `,` *expression*   `)`
+&nbsp;&nbsp;&nbsp;&nbsp;  `schedule (`*Тип расписания*   `)`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `schedule (`*Тип расписания* `,` *выражение*      `)`
 
-*Вид расписания*:<br/>
+*Тип расписания*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `static`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `dynamic`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `guided`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `runtime`
 
-*sections-construct*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*раздел области разделов директива*
+*Создание разделов*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*область раздела директивы разделов*
 
-*Директива разделах*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp sections` *sections-clause*<sub>optseq</sub> *new-line*
+*директива Sections-*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp sections`*раздел — предложение*<sub>оптсек</sub> *New-Line*
 
-*предложение разделах*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*предложения данных*<br/>
+*предложение Sections*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Data-предложение*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `nowait`
 
-*область разделе*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*{разделе последовательность}*
+*область видимости раздела*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*{Section-Sequence}*
 
-*раздел последовательности*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*section-directive*<sub>opt</sub> *structured-block*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*section-sequence section-directive structured-block*
+*последовательность разделов*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*директива раздела —*<sub></sub> *структурный блок*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*раздел-структура-директива раздела последовательности*
 
-*директивы Section*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp section` *new-line*
+*директива Section*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp section`*Новая строка*
 
-*Конструкция одного*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*структурированный блок одной директивы*
+*одиночная конструкция*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*структурированный блок с одной директивой*
 
-*Директива одним*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp single` *single-clause*<sub>optseq</sub> *new-line*
+*одна директива*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp single`оптсек с *одним предложением*<sub></sub> *New-Line*
 
-*одним предложением*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*предложения данных*<br/>
+*одно предложение*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Data-предложение*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `nowait`
 
-*parallel-for-construct*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Инструкции итерации параллельного для директивы*
+*Parallel-for-конструкция*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Оператор parallel-for-директива-Инструкция*
 
-*parallel-for-directive*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp parallel for` *parallel-for-clause*<sub>optseq</sub> *new-line*
+*Parallel-for-директива*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp parallel for`*Parallel-for-предложение*<sub>оптсек</sub> *New-Line*
 
-*параллельный для предложения*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Уникальный параллельного предложение*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Уникальный для предложения*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*предложения данных*
+*Parallel-for-предложение*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Unique — параллельное предложение*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Unique-for-предложение*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Data-предложение*
 
-*parallel-sections-construct*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*раздел области параллельной разделы директива*
+*конструкция Parallel-Sections*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*раздел директивы parallel-Sections-Scope*
 
-*parallel-sections-directive*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp parallel sections` *parallel-sections-clause*<sub>optseq</sub> *new-line*
+*директива parallel-Sections-*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp parallel sections`*Parallel-Sections-предложение*<sub>оптсек</sub> *New-Line*
 
-*parallel-sections-clause*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Уникальный параллельного предложение*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*предложения данных*
+*предложение Parallel-Sections*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Unique — параллельное предложение*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Data-предложение*
 
-*Конструкция master*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*структурированный блок master директива*
+*Главная — конструкция*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*структурный блок в директиве Master-*
 
-*master директива*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp master` *new-line*
+*Основная директива*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp master`*Новая строка*
 
-*Конструкция Critical*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*структурированный блок директивы Critical*
+*Критическая — конструкция*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Ключевая директива с ключевым блоком*
 
-*директивы Critical*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp critical` *Регион фраза*<sub>opt</sub> *новой строки*
+*критическая директива*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp critical`*регион — фраза*<sub></sub> " *создать" — строка*
 
-*Регион фраза*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*(идентификатор)*
+*регион — фраза*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Идентификатор*
 
-*Директива Barrier*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp barrier` *new-line*
+*барьер — директива*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp barrier`*Новая строка*
 
-*Конструкция atomic*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*оператор выражения директивы atomic*
+*Атомарная конструкция*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Оператор выражения-директивы atomic*
 
 *атомарная директива*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp atomic` *new-line*
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp atomic`*Новая строка*
 
-*Директива Flush*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp flush` *flush-vars*<sub>opt</sub> *new-line*
+*директива flush*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp flush`*flush-переменных —*<sub></sub> *Новая строка*
 
-*Flush переменных*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*(переменная list)*
+*переменных*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*(Variable-List)*
 
-*упорядоченные конструкция*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*структурированный блок упорядоченные директива*
+*упорядоченная конструкция*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*структурированная директива Structured-Block*
 
-*упорядоченные директива*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp ordered` *new-line*
+*упорядоченная директива*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp ordered`*Новая строка*
 
-**/\* Стандартные объявления \*/**
+**/\* стандартные объявления \*/**
 
 *declaration*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*Директива threadprivate*
+&nbsp;&nbsp;&nbsp;&nbsp;*threadprivate-директива*
 
-*Директива threadprivate*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp threadprivate (` *variable-list*    `)` *new-line*
+*threadprivate-директива*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `# pragma omp threadprivate (`*список переменных* `)` *Новая строка*    
 
-*предложение Data*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `private (` *variable-list*   `)`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `copyprivate (`  *variable-list*    `)`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `firstprivate (`  *variable-list*    `)`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `lastprivate (` *variable-list*    `)`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `shared (` *variable-list*   `)`<br/>
+*предложение данных*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `private (`*список переменных*   `)`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `copyprivate (`  *список переменных*    `)`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `firstprivate (`  *список переменных*    `)`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `lastprivate (`*список переменных*    `)`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `shared (`*список переменных*   `)`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `default ( shared )`<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  `default ( none )`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `reduction (`  *оператором редукции*`:`*переменной list*    `)`<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;  `copyin (`  *variable-list*    `)`
+&nbsp;&nbsp;&nbsp;&nbsp;  `reduction (`  *reduction-оператор* `:` *список переменных*          `)`<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;  `copyin (`  *список переменных*    `)`
 
-*оператором редукции*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;Один из:   `+ \* - & ^ | && ||`
+*сокращение — оператор*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Одно из следующих:   `+ \* - & ^ | && ||`
 
 **/\* в C \*/**
 
-*переменная list*:<br/>
+*список переменных*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*identifier*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*variable-list*   `,` *identifier*
+&nbsp;&nbsp;&nbsp;&nbsp;*список переменных* `,` *идентификатор*   
 
 **/\* в C++ \*/**
 
-*переменная list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*id-expression*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*variable-list*   `,` *id-expression*
+*список переменных*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ID-выражение*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*список переменных* `,` *ID-выражение*   

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: оператор const_cast'
 title: Оператор const_cast
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - const_cast keyword [C++]
 ms.assetid: 4d8bb203-ef33-4a10-9f9f-c64d4fbc1687
-ms.openlocfilehash: 36de296d1e871ca759108497922973ddea8e3382
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c0c08402450773368914facb719c4ddf97b7503d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227560"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344670"
 ---
 # <a name="const_cast-operator"></a>Оператор const_cast
 
@@ -64,7 +65,7 @@ int main() {
 
 В строке **`const_cast`** , содержащей, тип данных **`this`** указателя — `const CCTest *` . **`const_cast`** Оператор изменяет тип данных **`this`** указателя на `CCTest *` , позволяя `number` изменять элемент. Приведение выполняется только для оставшейся части оператора, в котором оно указано.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Операторы приведения](../cpp/casting-operators.md)<br/>
 [Ключевые слова](../cpp/keywords-cpp.md)

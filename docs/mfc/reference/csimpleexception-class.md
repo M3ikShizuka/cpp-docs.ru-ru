@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ксимпликсцептион Class'
 title: Класс Ксимпликсцептион
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - CSimpleException [MFC], CSimpleException
 - CSimpleException [MFC], GetErrorMessage
 ms.assetid: be0eb8ef-e5b9-47d6-b0fb-efaff2d1e666
-ms.openlocfilehash: afd83c1ddd6f68b10c5cc8c47c0e939bbd01b6c2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8070604e05fa59f7fcdfef6dcaad12ab0497da9f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88840717"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342822"
 ---
 # <a name="csimpleexception-class"></a>Класс Ксимпликсцептион
 
@@ -27,7 +28,7 @@ ms.locfileid: "88840717"
 class AFX_NOVTABLE CSimpleException : public CException
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -41,7 +42,7 @@ class AFX_NOVTABLE CSimpleException : public CException
 |----------|-----------------|
 |[Ксимпликсцептион:: Жетеррормессаже](#geterrormessage)|Содержит текст о произошедшей ошибке.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `CSimpleException` является базовым классом для критически важных для ресурса исключений MFC и обрабатывает владение и инициализацию сообщения об ошибке. Следующие классы используют `CSimpleException` в качестве базового класса:
 
@@ -83,7 +84,7 @@ explicit CSimpleException(BOOL bAutoDelete);
 *баутоделете*<br/>
 Укажите значение TRUE, если память для `CSimpleException` объекта была выделена в куче. Это приведет к `CSimpleException` удалению объекта при `Delete` вызове функции-члена для удаления исключения. Укажите значение FALSE, если `CSimpleException` объект находится в стеке или является глобальным объектом. В этом случае `CSimpleException` объект не будет удален при `Delete` вызове функции-члена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Обычно вызывать этот конструктор напрямую не требуется. Функция, вызывающая исключение, должна создать экземпляр `CException` производного класса и вызвать его конструктор или использовать одну из функций Throw MFC, например [афкссровфиликсцептион](exception-processing.md#afxthrowfileexception), для создания предопределенного типа.
 
@@ -113,7 +114,7 @@ virtual BOOL GetErrorMessage(
 
 Ненулевое значение, если функция выполнена успешно; в противном случае — 0, если текст сообщения об ошибке недоступен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [CException:: жетеррормессаже](../../mfc/reference/cfileexception-class.md#geterrormessage).
 
