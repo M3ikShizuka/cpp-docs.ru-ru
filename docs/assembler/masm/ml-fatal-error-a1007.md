@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Неустранимая ошибка машинного обучения A1007'
 title: Неустранимая ошибка ML A1007
 ms.date: 12/17/2019
 ms.custom: error-reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - A1007
 ms.assetid: bcf9c826-beb3-4e93-91fe-1ffd34995fbf
-ms.openlocfilehash: c9527769e0d9397de90f49cbce98b2cca42bed50
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: c26d5de1c1b44fb37d4a95f51b2cb9480d2ba664
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75317127"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97129549"
 ---
 # <a name="ml-fatal-error-a1007"></a>Неустранимая ошибка ML A1007
 
@@ -38,6 +39,6 @@ ms.locfileid: "75317127"
 
 - Макрос.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Сообщения об ошибках ML](ml-error-messages.md)

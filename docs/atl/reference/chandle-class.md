@@ -1,5 +1,6 @@
 ---
-title: Класс CHandle
+description: 'Дополнительные сведения о: Чандле Class'
+title: Класс Чандле
 ms.date: 07/09/2019
 f1_keywords:
 - CHandle
@@ -12,16 +13,16 @@ f1_keywords:
 helpviewer_keywords:
 - CHandle class
 ms.assetid: 883e9db5-40ec-4e29-9c74-4dd2ddd2e35d
-ms.openlocfilehash: 4b883bdf3159c40f8d74866f04f655ae73d82a8a
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 01c3b281daf829bc6488df35114c6cb853640ed1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81747692"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141678"
 ---
-# <a name="chandle-class"></a>Класс CHandle
+# <a name="chandle-class"></a>Класс Чандле
 
-Этот класс предоставляет методы для создания и использования объекта рукоятки.
+Этот класс предоставляет методы для создания и использования объекта Handle.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,50 +30,50 @@ ms.locfileid: "81747692"
 class CHandle
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CHandle::CHandle](#chandle)|Конструктор.|
-|[CHandle:::»CHandle](#dtor)|Деструктор|
+|[Чандле:: Чандле](#chandle)|Конструктор.|
+|[Чандле:: ~ Чандле](#dtor)|Деструктор|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CHandle::Attach](#attach)|Вызовите этот `CHandle` метод, чтобы прикрепить объект к существующей ручке.|
-|[CHandle::Закрыть](#close)|Вызовите этот `CHandle` метод, чтобы закрыть объект.|
-|[CHandle::Detach](#detach)|Вызовите этот метод, чтобы `CHandle` отделить ручку от объекта.|
+|[Чандле:: Attach](#attach)|Вызовите этот метод, чтобы присоединить `CHandle` объект к существующему обработчику.|
+|[Чандле:: Close](#close)|Вызовите этот метод, чтобы закрыть `CHandle` объект.|
+|[Чандле::D етач](#detach)|Вызовите этот метод, чтобы отсоединить маркер от `CHandle` объекта.|
 
 ### <a name="public-operators"></a>Открытые операторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CHandle::оператор HANDLE](#operator_handle)|Возвращает значение сохраненной ручки.|
-|[CHandle::оператор](#operator_eq)|Оператор присвоения.|
+|[ОБРАБОТЧИК Чандле:: operator](#operator_handle)|Возвращает значение хранимого маркера.|
+|[Чандле:: operator =](#operator_eq)|Оператор присвоения.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CHandle::m_h](#m_h)|Переменная участника, которая хранит ручку.|
+|[Чандле:: m_h](#m_h)|Переменная члена, в которой хранится маркер.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Объект `CHandle` может использоваться всякий раз, когда требуется `CHandle` ручка: основное отличие состоит в том, что объект будет автоматически удален.
+`CHandle`Объект может использоваться всякий раз, когда требуется обработчик: основное различие заключается в том, что `CHandle` объект будет автоматически удален.
 
 > [!NOTE]
-> Некоторые функции API будут использовать NULL как пустую или недействительную ручку, в то время как другие — INVALID_HANDLE_VALUE. `CHandle`использует только NULL и будет рассматривать INVALID_HANDLE_VALUE как реальную ручку. Если вы вызываете API, который может вернуть INVALID_HANDLE_VALUE, вы должны проверить это значение, прежде чем звонить [CHandle::Attach](#attach) или передать его `CHandle` конструктору, и вместо этого передать NULL.
+> Некоторые функции API будут использовать значение NULL в качестве пустого или недопустимого маркера, тогда как другие используют INVALID_HANDLE_VALUE. `CHandle` использует только значение NULL и будет рассматривать INVALID_HANDLE_VALUE как реальный обработчик. При вызове API, который может возвращать INVALID_HANDLE_VALUE, следует проверить это значение перед вызовом [чандле:: Attach](#attach) или передать его в `CHandle` конструктор, а вместо этого передать NULL.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase.h
+**Заголовок:** atlbase. h
 
-## <a name="chandleattach"></a><a name="attach"></a>CHandle::Attach
+## <a name="chandleattach"></a><a name="attach"></a> Чандле:: Attach
 
-Вызовите этот `CHandle` метод, чтобы прикрепить объект к существующей ручке.
+Вызовите этот метод, чтобы присоединить `CHandle` объект к существующему обработчику.
 
 ```cpp
 void Attach(HANDLE h) throw();
@@ -80,14 +81,14 @@ void Attach(HANDLE h) throw();
 
 ### <a name="parameters"></a>Параметры
 
-*H*<br/>
-`CHandle`возьмет на себя ответственность за ручку *h*.
+*h*<br/>
+`CHandle` принимает владение маркером *h*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Присваивает `CHandle` объект ручке *h,* а затем вызывает **h.Detach ()**. В сборках отладок, ATLASSERT будет поднят, если *ч* является NULL. Никакой другой проверки достоверности ручки не производится.
+Присваивает `CHandle` объект обработчику *h* , а затем вызывает метод **h. Detach ()**. При возникновении ошибок в сборках происходит исключение АТЛАССЕРТ, если *h* имеет значение null. Никакие другие проверки на допустимость этого маркера не выполняются.
 
-## <a name="chandlechandle"></a><a name="chandle"></a>CHandle::CHandle
+## <a name="chandlechandle"></a><a name="chandle"></a> Чандле:: Чандле
 
 Конструктор.
 
@@ -99,14 +100,14 @@ explicit CHandle(HANDLE h) throw();
 
 ### <a name="parameters"></a>Параметры
 
-*H*<br/>
-Существующая ручка или `CHandle`.
+*h*<br/>
+Существующий Handle или `CHandle` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Создает новый `CHandle` объект, по желанию `CHandle` используя существующую ручку или объект.
+Создает новый `CHandle` объект, при необходимости используя существующий обработчик или `CHandle` объект.
 
-## <a name="chandlechandle"></a><a name="dtor"></a>CHandle:::»CHandle
+## <a name="chandlechandle"></a><a name="dtor"></a> Чандле:: ~ Чандле
 
 Деструктор
 
@@ -114,25 +115,25 @@ explicit CHandle(HANDLE h) throw();
 ~CHandle() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Освобождает `CHandle` объект, позвонив [CHandle::Закрыть](#close).
+Освобождает `CHandle` объект путем вызова [чандле:: Close](#close).
 
-## <a name="chandleclose"></a><a name="close"></a>CHandle::Закрыть
+## <a name="chandleclose"></a><a name="close"></a> Чандле:: Close
 
-Вызовите этот `CHandle` метод, чтобы закрыть объект.
+Вызовите этот метод, чтобы закрыть `CHandle` объект.
 
 ```cpp
 void Close() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Закрывает открытую ручку объекта. Если ручка NULL, что будет `Close` в случае, если уже вызвано, ATLASSERT будет поднят в отладке сборки.
+Закрывает открытый обработчик объекта. Если Handle имеет значение NULL, то в случае, если `Close` уже был вызван метод, в отладочных сборках будет создано исключение атлассерт.
 
-## <a name="chandledetach"></a><a name="detach"></a>CHandle::Detach
+## <a name="chandledetach"></a><a name="detach"></a> Чандле::D етач
 
-Вызовите этот метод, чтобы `CHandle` отделить ручку от объекта.
+Вызовите этот метод, чтобы отсоединить маркер от `CHandle` объекта.
 
 ```
 HANDLE Detach() throw();
@@ -140,23 +141,23 @@ HANDLE Detach() throw();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает отсоединиваемую ручку.
+Возвращает Отсоединяемый маркер.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Выпускает право собственности на рукоятку.
+Освобождает владение дескриптором.
 
-## <a name="chandlem_h"></a><a name="m_h"></a>CHandle::m_h
+## <a name="chandlem_h"></a><a name="m_h"></a> Чандле:: m_h
 
-Переменная участника, которая хранит ручку.
+Переменная члена, в которой хранится маркер.
 
 ```
 HANDLE m_h;
 ```
 
-## <a name="chandleoperator-"></a><a name="operator_eq"></a>CHandle::оператор
+## <a name="chandleoperator-"></a><a name="operator_eq"></a> Чандле:: operator =
 
-Оператор назначения.
+Оператор присваивания.
 
 ```
 CHandle& operator=(CHandle& h) throw();
@@ -164,28 +165,28 @@ CHandle& operator=(CHandle& h) throw();
 
 ### <a name="parameters"></a>Параметры
 
-*H*<br/>
-`CHandle`возьмет на себя ответственность за ручку *h*.
+*h*<br/>
+`CHandle` принимает владение маркером *h*.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает ссылку на `CHandle` новый объект.
+Возвращает ссылку на новый `CHandle` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если `CHandle` объект в настоящее время содержит ручку, он будет закрыт. Объект, `CHandle` передаваемый в будет иметь свою ручку ссылки на NULL. Это гарантирует, `CHandle` что два объекта никогда не будут содержать одну и ту же активную ручку.
+Если `CHandle` объект в данный момент содержит маркер, он будет закрыт. `CHandle`Передаваемый объекту ссылка на Handle будет иметь значение null. Это гарантирует, что два `CHandle` объекта никогда не будут содержать один и тот же активный обработчик.
 
-## <a name="chandleoperator-handle"></a><a name="operator_handle"></a>CHandle::оператор HANDLE
+## <a name="chandleoperator-handle"></a><a name="operator_handle"></a> ОБРАБОТЧИК Чандле:: operator
 
-Возвращает значение сохраненной ручки.
+Возвращает значение хранимого маркера.
 
 ```
 operator HANDLE() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Возвращает значение, хранящееся в [CHandle::m_h](#m_h).
+Возвращает значение, хранящееся в [чандле:: m_h](#m_h).
 
 ## <a name="see-also"></a>См. также раздел
 

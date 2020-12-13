@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Неустранимая ошибка C1084'
 title: Неустранимая ошибка C1084
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C1084
 ms.assetid: b2f273ef-3a14-4d5f-8ce0-7a11a0388fe6
-ms.openlocfilehash: 649686857000b2bee469f0e3ec551d49717c1d7b
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6a3221bb894c0b320642a923d9552a207a2ff9ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80204078"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97145318"
 ---
 # <a name="fatal-error-c1084"></a>Неустранимая ошибка C1084
 
@@ -25,7 +26,7 @@ ms.locfileid: "80204078"
 
 - Убедитесь в том, что для доступа к указанному файлу заданы соответствующие разрешения.
 
-- Убедитесь, что синтаксис командной строки соответствует правилам, описанным в разделе [синтаксис командной строки компилятора](../../build/reference/compiler-command-line-syntax.md).
+- Убедитесь, что синтаксис командной строки соответствует правилам, описанным в разделе [синтаксис компилятора Command-Line](../../build/reference/compiler-command-line-syntax.md).
 
 - Убедитесь, что переменные среды **tmp** и **TEMP** установлены правильно, а также соответствующие разрешения для доступа к каталогам. Эти переменные среды ссылаются на. Также убедитесь, что диски, на которые ссылаются переменные среды **tmp** и **TEMP** , содержат достаточно свободного места.
 

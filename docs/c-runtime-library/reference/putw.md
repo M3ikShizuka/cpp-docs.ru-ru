@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _putw'
 title: _putw
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - streams, writing integers to
 - _putw function
 ms.assetid: 83d63644-249d-4a39-87e5-3b7aa313968d
-ms.openlocfilehash: 12f54c54b59e43d9a2861489171dd6c9c9436a8a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e49240d7410f47042f515f310ba79f9a9eb38398
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232434"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146397"
 ---
 # <a name="_putw"></a>_putw
 
@@ -63,7 +64,7 @@ int _putw(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_putw** записывает двоичное значение типа **`int`** в текущее расположение *потока.* **_putw** не влияет на выравнивание элементов в потоке и не предполагает никакого особого выравнивания. **_putw** в первую очередь для совместимости с предыдущими библиотеками. Проблемы переносимости могут возникать в **_putw** , так как размер **`int`** и порядок байтов в разных **`int`** системах различаются.
 

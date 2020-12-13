@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/MANIFESTFILE (имя файла манифеста)
 title: /MANIFESTFILE (Имя файла манифеста)
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - -MANIFESTFILE linker option
 - /MANIFESTFILE linker option
 ms.assetid: befa5ab2-a9cf-4c9b-969a-e7b4a930f08d
-ms.openlocfilehash: e75c6d8171aae22312ba6aaa2d4304d831ec6d0f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a0d3a4ba1d17c4aa8c97cb09cc768e614e46c864
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62321622"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138025"
 ---
 # <a name="manifestfile-name-manifest-file"></a>/MANIFESTFILE (Имя файла манифеста)
 
@@ -21,29 +22,29 @@ ms.locfileid: "62321622"
 /MANIFESTFILE:filename
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-/ MANIFESTFILE позволяет изменить имя файла манифеста по умолчанию.  По умолчанию имя файла манифеста — имя файла с расширением MANIFEST.
+/MANIFESTFILE позволяет изменить имя файла манифеста по умолчанию.  Имя файла манифеста по умолчанию — это имя файла с добавленным расширением MANIFEST.
 
-/ MANIFESTFILE не имеет смысла, если также не связана с [/MANIFEST](manifest-create-side-by-side-assembly-manifest.md).
+/MANIFESTFILE не будет действовать, если не связать с [/manifest](manifest-create-side-by-side-assembly-manifest.md).
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Задание данного параметра компоновщика в среде разработки Visual Studio
 
-1. Откройте диалоговое окно **Страницы свойств** проекта. Дополнительные сведения см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
 1. Разверните узел **Свойства конфигурации**.
 
-1. Разверните **компоновщика** узла.
+1. Разверните узел **Компоновщик**.
 
-1. Выберите **файл манифеста** страницу свойств.
+1. Выберите страницу свойств **файл манифеста** .
 
-1. Изменить **файл манифеста** свойство.
+1. Измените свойство **файла манифеста** .
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Задание данного параметра компоновщика программным способом
 
 1. См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ManifestFile%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по компоновщику MSVC](linking.md)<br/>
 [Параметры компоновщика MSVC](linker-options.md)

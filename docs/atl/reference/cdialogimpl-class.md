@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CDialogImpl Class'
 title: Класс CDialogImpl
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - dialog boxes, ATL
 - CDialogImpl class
 ms.assetid: d430bc7b-8a28-4ad3-9507-277bdd2c2c2e
-ms.openlocfilehash: b92b5130b31e88565d79b59a24b2bd377d0d84c0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 228a63edde7eb66960a0acad5d60088d909946a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834730"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141860"
 ---
 # <a name="cdialogimpl-class"></a>Класс CDialogImpl
 
@@ -73,7 +74,7 @@ template <class T,
 |[DialogProc](#dialogproc)|Обрабатывает сообщения, отправленные в диалоговое окно.|
 |[стартдиалогпрок](#startdialogproc)|Вызывается при получении первого сообщения для обработки сообщений, отправляемых в диалоговое окно.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 С помощью `CDialogImpl` можно создать модальное или немодальное диалоговое окно. `CDialogImpl` предоставляет процедуру диалогового окна, которая использует схему сообщений по умолчанию для направления сообщений соответствующим обработчикам.
 
@@ -128,7 +129,7 @@ HWND Create(
 
 Маркер для вновь созданного диалогового окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это диалоговое окно автоматически прикрепляется к `CDialogImpl` объекту. Чтобы создать модальное диалоговое окно, вызовите [DoModal](#domodal). Второе переопределение, приведенное выше, используется только с [ккомконтрол](../../atl/reference/ccomcontrol-class.md).
 
@@ -144,7 +145,7 @@ BOOL DestroyWindow();
 
 Значение TRUE, если диалоговое окно было успешно удалено; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает значение TRUE, если диалоговое окно было успешно удалено; в противном случае — FALSE.
 
@@ -178,7 +179,7 @@ static LRESULT CALLBACK DialogProc(
 
 Значение TRUE, если сообщение обрабатывается; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `DialogProc` использует схему сообщений по умолчанию, чтобы направить сообщения соответствующим обработчикам.
 
@@ -206,7 +207,7 @@ INT_PTR DoModal(
 
 В случае успеха значение параметра *нреткоде* , указанное при вызове [EndDialog](#enddialog). В противном случае –1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это диалоговое окно автоматически прикрепляется к `CDialogImpl` объекту.
 
@@ -229,7 +230,7 @@ BOOL EndDialog(int nRetCode);
 
 Значение TRUE, если диалоговое окно уничтожается; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `EndDialog` метод должен вызываться с помощью процедуры диалогового окна. После уничтожения диалогового окна Windows использует значение *нреткоде* в качестве возвращаемого значения для `DoModal` , которое создало диалоговое окно.
 
@@ -248,7 +249,7 @@ virtual WNDPROC GetDialogProc();
 
 Текущая процедура диалогового окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод, чтобы заменить процедуру диалогового окна собственным.
 
@@ -269,7 +270,7 @@ BOOL MapDialogRect(LPRECT lpRect);
 
 Ненулевое значение, если обновление завершилось с ошибкой; 0, если обновление завершается сбоем. Чтобы получить расширенные сведения об ошибке, вызовите функцию `GetLastError`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция заменяет координаты в указанной `RECT` структуре преобразованными координатами, что позволяет использовать структуру для создания диалогового окна или размещения элемента управления в диалоговом окне.
 
@@ -286,7 +287,7 @@ virtual void OnFinalMessage(HWND hWnd);
 *hWnd*<br/>
 окне Маркер для уничтожения окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Обратите внимание, что если вы хотите автоматически удалить объект при уничтожении окна, можно вызвать **Delete** . здесь.
 
@@ -320,7 +321,7 @@ static LRESULT CALLBACK StartDialogProc(
 
 Процедура окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 После начального вызова метод `StartDialogProc` `DialogProc` задается в качестве процедуры диалогового окна, а последующие вызовы попадают в нее.
 

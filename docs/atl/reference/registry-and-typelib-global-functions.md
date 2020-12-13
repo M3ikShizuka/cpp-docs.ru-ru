@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: глобальные функции Registry и TypeLib'
 title: Глобальные функции реестра и библиотеки типов
 ms.date: 03/27/2019
 f1_keywords:
@@ -17,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - RegistryDataExchange function, global functions
 ms.assetid: d58b8a4e-975c-4417-8b34-d3c847f679b3
-ms.openlocfilehash: 0f29f8cac62a7452781e8fde697cdf992db00b8c
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d7420dbbb472f1fc8b01329e9ded4c887e2bd71d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834622"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138893"
 ---
 # <a name="registry-and-typelib-global-functions"></a>Глобальные функции реестра и библиотеки типов
 
@@ -75,9 +76,9 @@ ATLINLINE ATLAPI AtlGetPerUserRegistration(bool* pEnabled);
 
 S_OK, если метод выполнен успешно, в противном случае — код ошибки HRESULT при возникновении ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-По умолчанию перенаправление реестра отключено. Если этот параметр включен, доступ к реестру перенаправляется в **HKEY_CURRENT_USER \софтваре\классес**.
+По умолчанию перенаправление реестра отключено. Если этот параметр включен, доступ к реестру перенаправляется в **HKEY_CURRENT_USER\Software\Classes**.
 
 Перенаправление не является глобальным. Это перенаправление реестра влияет только на платформы MFC и ATL.
 
@@ -191,7 +192,7 @@ ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта вспомогательная функция используется [атлкоммодулеунрегистерсервер](server-registration-global-functions.md#atlcommoduleunregisterserver) и [Катлкоммодуле:: регистертипелиб](../../atl/reference/catlcommodule-class.md#registertypelib).
 
@@ -307,9 +308,9 @@ ATLINLINE ATLAPI AtlSetPerUserRegistration(bool bEnable);
 
 S_OK, если метод выполнен успешно, в противном случае — код ошибки HRESULT при возникновении ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-По умолчанию перенаправление реестра отключено. Если этот параметр включен, доступ к реестру перенаправляется в **HKEY_CURRENT_USER \софтваре\классес**.
+По умолчанию перенаправление реестра отключено. Если этот параметр включен, доступ к реестру перенаправляется в **HKEY_CURRENT_USER\Software\Classes**.
 
 Перенаправление не является глобальным. Это перенаправление реестра влияет только на платформы MFC и ATL.
 
@@ -341,7 +342,7 @@ ATLAPI AtlUnRegisterTypeLib(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта вспомогательная функция используется [катлкоммодуле:: унрегистертипелиб](../../atl/reference/catlcommodule-class.md#unregistertypelib) и [атлкоммодулеунрегистерсервер](server-registration-global-functions.md#atlcommoduleunregisterserver).
 
@@ -381,7 +382,7 @@ ATLINLINE ATLAPI AtlLoadTypeLib(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта вспомогательная функция используется [атлрегистертипелиб](#atlregistertypelib) и [атлунрегистертипелиб](#atlunregistertypelib).
 
@@ -421,7 +422,7 @@ HRESULT RegistryDataExchange(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Макросы [BEGIN_RDX_MAP](registry-data-exchange-macros.md#begin_rdx_map) и [END_RDX_MAP](registry-data-exchange-macros.md#end_rdx_map) расширяются до функции, которая вызывает `RegistryDataExchange` .
 

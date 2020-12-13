@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/MAPINFO (включение сведений в параметр сопоставления)
 title: /MAPINFO (включение данных в файл сопоставления)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - MAPINFO linker option
 - -MAPINFO linker option
 ms.assetid: 533d2bce-f9b7-4fea-ae1c-0b4864c9d10b
-ms.openlocfilehash: 491df211856a9d7ceb02b6a401270f15b9da3b96
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5cf785182bd91923c3398d542d7e60d9afdb4a4e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62321440"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137908"
 ---
 # <a name="mapinfo-include-information-in-mapfile"></a>/MAPINFO (включение данных в файл сопоставления)
 
@@ -24,25 +25,25 @@ ms.locfileid: "62321440"
 /MAPINFO:EXPORTS
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Параметр/MAPINFO предписывает компоновщику Включение заданной информации в файл сопоставления, который создается при указании [/MAP](map-generate-mapfile.md) параметр.  EXPORTS предписывает компоновщику Включение экспортированных функций.
+Параметр/MAPINFO указывает компоновщику включить указанные сведения в параметр сопоставления, который создается при указании параметра [/Map](map-generate-mapfile.md) .  EXPORTs сообщает компоновщику о необходимости включения экспортированных функций.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Задание данного параметра компоновщика в среде разработки Visual Studio
 
-1. Откройте диалоговое окно **Страницы свойств** проекта. Дополнительные сведения см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
-1. Нажмите кнопку **компоновщика** папки.
+1. Выберите папку **компоновщика**.
 
-1. Нажмите кнопку **Отладка** страницу свойств.
+1. Перейдите на страницу свойств **Отладка** .
 
-1. Измените **сопоставлять экспортируемые** свойства:
+1. Изменение свойств **Map EXPORTS** :
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Задание данного параметра компоновщика программным способом
 
 - См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MapExports%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по компоновщику MSVC](linking.md)<br/>
 [Параметры компоновщика MSVC](linker-options.md)

@@ -1,36 +1,37 @@
 ---
-title: Классы с поддержкой пользовательского интерфейса (ATL)
+description: 'Дополнительные сведения: классы поддержки пользовательского интерфейса'
+title: Классы поддержки пользовательского интерфейса (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - user interfaces, support classes
 - user interfaces, ATL classes
 ms.assetid: 313dfc95-308a-4118-b919-5a3c3673b865
-ms.openlocfilehash: 4aa508a028eb0a90233b7baa34db9ee78bbe2b83
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d8bc345db05ef886c2a054356ae6bd8d299c8045
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62274213"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138259"
 ---
-# <a name="ui-support-classes"></a>Классы с поддержкой пользовательского интерфейса
+# <a name="ui-support-classes"></a>Классы поддержки пользовательского интерфейса
 
-Перечисленные ниже классы предоставляют общие поддержка пользовательского интерфейса:
+Следующие классы предоставляют общую поддержку пользовательского интерфейса:
 
-- [IDocHostUIHandlerDispatch](../atl/reference/idochostuihandlerdispatch-interface.md) интерфейс для синтаксического анализа Microsoft HTML и механизм визуализации.
+- [Идочостуихандлердиспатч](../atl/reference/idochostuihandlerdispatch-interface.md) Интерфейс для механизма анализа и подготовки отчетов в формате HTML (Майкрософт).
 
-- [IOleObjectImpl](../atl/reference/ioleobjectimpl-class.md) предоставляет основные методы, через которые контейнер взаимодействует с элементом управления. Управляет активацией и деактивацией встроенных элементов управления на месте.
+- [Иолеобжектимпл](../atl/reference/ioleobjectimpl-class.md) Предоставляет основные методы, с помощью которых контейнер взаимодействует с элементом управления. Управляет активацией и деактивацией элементов управления на месте.
 
-- [IOleInPlaceObjectWindowlessImpl](../atl/reference/ioleinplaceobjectwindowlessimpl-class.md) управляет повторной активации элементов управления на месте. Позволяет элементу управления без окон для получения сообщений, а также участвовать в операциях перетаскивания и вставки.
+- [Иолеинплацеобжектвиндовлессимпл](../atl/reference/ioleinplaceobjectwindowlessimpl-class.md) Управляет повторной активацией элементов управления на месте. Включает безоконный контроль для получения сообщений, а также для участия в операциях перетаскивания.
 
-- [IOleInPlaceActiveObjectImpl](../atl/reference/ioleinplaceactiveobjectimpl-class.md) помогает связи между элементом управления на месте и его контейнером.
+- [Иолеинплацеактивеобжектимпл](../atl/reference/ioleinplaceactiveobjectimpl-class.md) Помогает обеспечить взаимодействие между элементом управления на месте и его контейнером.
 
-- [IViewObjectExImpl](../atl/reference/iviewobjecteximpl-class.md) позволяет элементу управления отображаться непосредственно и для уведомления о контейнере изменений в его отображение. Поддерживает рисование без мелькания, непрямоугольные и прозрачные элементы управления и проверке нажатия.
+- [Ивиевобжектексимпл](../atl/reference/iviewobjecteximpl-class.md) Позволяет элементу управления отображать себя напрямую и уведомлять контейнер об изменениях в его отображении. Обеспечивает поддержку свободной для мерцания, непрямоугольных и прозрачных элементов управления, а также проверку нажатия.
 
-## <a name="related-articles"></a>Связанные статьи
+## <a name="related-articles"></a>Похожие статьи
 
 [Учебник по ATL](../atl/active-template-library-atl-tutorial.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Общие сведения о классе](../atl/atl-class-overview.md)
+[Общие сведения о классах](../atl/atl-class-overview.md)

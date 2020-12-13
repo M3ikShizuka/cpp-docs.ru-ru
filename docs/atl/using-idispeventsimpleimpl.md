@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: использование IDispEventSimpleImpl'
 title: Использование IDispEventSimpleImpl (ATL)
 ms.date: 08/19/2019
 helpviewer_keywords:
 - IDispEventSimpleImpl class, using
 ms.assetid: 8640ad1a-4bd0-40a5-b5e4-7322685d7aab
-ms.openlocfilehash: 8a5e64093d2687efc6c6c5e9b0ce89402d2b99a4
-ms.sourcegitcommit: 9d4ffb8e6e0d70520a1e1a77805785878d445b8a
+ms.openlocfilehash: c0b3f6a0ecdcaae084d3f5d62c19745ee15ac6e9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69630582"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138168"
 ---
 # <a name="using-idispeventsimpleimpl"></a>Использование IDispEventSimpleImpl
 
@@ -19,7 +20,7 @@ ms.locfileid: "69630582"
 
 - Добавьте карту приемника событий в класс.
 
-- Определите структуры [_ATL_FUNC_INFO](../atl/reference/atl-func-info-structure.md) , описывающие события.
+- Определите [_ATL_FUNC_INFO](../atl/reference/atl-func-info-structure.md) структуры, описывающие события.
 
 - Добавьте записи в карту приемника событий с помощью макроса [SINK_ENTRY_INFO](reference/composite-control-macros.md#sink_entry_info) .
 
@@ -49,11 +50,11 @@ methods:
 };
 ```
 
-В примере используется `#import` для создания необходимых файлов заголовков из библиотеки типов Word. Если вы хотите использовать этот пример с другими версиями Word, необходимо указать правильный DLL-файл Mso. Например, в Office 2000 есть MSO9. dll, а Оффицексп — MSO. dll. Этот код упрощен из *PCH. h* (*stdafx. h* в Visual Studio 2017 и более ранних версиях):
+В примере используется `#import` для создания необходимых файлов заголовков из библиотеки типов Word. Если вы хотите использовать этот пример с другими версиями Word, необходимо указать правильный DLL-файл Mso. Например, Office 2000 предоставляет mso.dll mso9.dll и Оффицексп. Этот код упрощен из *PCH. h* (*stdafx. h* в Visual Studio 2017 и более ранних версиях):
 
 [!code-cpp[NVC_ATL_EventHandlingSample#1](../atl/codesnippet/cpp/using-idispeventsimpleimpl_1.h)]
 
-Единственной информацией из библиотеки типов, которая фактически используется в этом примере, является CLSID объекта Word `Application` и IID `ApplicationEvents` интерфейса. Эти сведения используются только во время компиляции.
+Единственной информацией из библиотеки типов, которая фактически используется в этом примере, является CLSID `Application` объекта Word и IID `ApplicationEvents` интерфейса. Эти сведения используются только во время компиляции.
 
 Следующий код отображается в Simple. h. Соответствующий код отмечается комментариями:
 
@@ -63,7 +64,7 @@ methods:
 
 [!code-cpp[NVC_ATL_EventHandlingSample#4](../atl/codesnippet/cpp/using-idispeventsimpleimpl_3.cpp)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Обработка событий](../atl/event-handling-and-atl.md)<br/>
 [Пример Атлевенсандлинг](../overview/visual-cpp-samples.md)

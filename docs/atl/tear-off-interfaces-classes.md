@@ -1,26 +1,27 @@
 ---
-title: Перемещаемые интерфейсы классов (ATL)
+description: 'Дополнительные сведения: классы интерфейсов Tear-Off'
+title: Классы Tear-Offных интерфейсов (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - interfaces, tear-off
 - tear-off interfaces classes
 ms.assetid: 14e4ab01-9213-43e5-bef5-78af1e6206ff
-ms.openlocfilehash: 7ed6d6d68ee5d05b7bec2c8545eab34cf82e38a8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 947ad22c686f86d00a4bc49c0ea90b24cc1d8a6f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62275169"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138363"
 ---
-# <a name="tear-off-interfaces-classes"></a>Перемещаемые интерфейсы классов
+# <a name="tear-off-interfaces-classes"></a>Классы интерфейсов Tear-Off
 
-Следующие классы обеспечивают поддержку перемещаемые интерфейсы.
+Следующие классы обеспечивают поддержку для интерфейсов разрыва:
 
-- [CComTearOffObject](../atl/reference/ccomtearoffobject-class.md) реализует `IUnknown` для перемещаемой интерфейса.
+- [Ккомтеароффобжект](../atl/reference/ccomtearoffobject-class.md) Реализует `IUnknown` интерфейс для разрыва.
 
-- [CComCachedTearOffObject](../atl/reference/ccomcachedtearoffobject-class.md) реализует `IUnknown` для интерфейса «кешированные» перемещаемой.
+- [Ккомкачедтеароффобжект](../atl/reference/ccomcachedtearoffobject-class.md) Реализует `IUnknown` для "кэшированного" интерфейса разрыва.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Общие сведения о классе](../atl/atl-class-overview.md)
+[Общие сведения о классах](../atl/atl-class-overview.md)

@@ -1,5 +1,6 @@
 ---
-title: Класс CHeapPtr
+description: 'Дополнительные сведения о: Чеапптр Class'
+title: Класс Чеапптр
 ms.date: 11/04/2016
 f1_keywords:
 - CHeapPtr
@@ -10,19 +11,19 @@ f1_keywords:
 helpviewer_keywords:
 - CHeapPtr class
 ms.assetid: e5c5bfd4-9bf1-4164-8a83-8155fe253454
-ms.openlocfilehash: a512aa974cb57072915f887f0c2a20ed1263ffa3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: dc795c199562fa423a160b053c96983651d0812d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81326920"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141652"
 ---
-# <a name="cheapptr-class"></a>Класс CHeapPtr
+# <a name="cheapptr-class"></a>Класс Чеапптр
 
-Интеллектуальный класс указателей для управления кучей указателей.
+Класс интеллектуального указателя для управления указателями кучи.
 
 > [!IMPORTANT]
-> Этот класс и его члены не могут быть использованы в приложениях, выполняемых в Windows Runtime.
+> Этот класс и его члены не могут использоваться в приложениях, выполняемых в среда выполнения Windows.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,49 +35,49 @@ class CHeapPtr : public CHeapPtrBase<T, Allocator>
 #### <a name="parameters"></a>Параметры
 
 *T*<br/>
-Тип объекта, который будет храниться на куче.
+Тип объекта, сохраняемый в куче.
 
-*Распределителя*<br/>
-Класс распределения памяти для использования.
+*Выделен*<br/>
+Используемый класс выделения памяти.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CHeapPtr::CHeapPtr](#cheapptr)|Конструктор.|
+|[Чеапптр:: Чеапптр](#cheapptr)|Конструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CHeapPtr::Выделение](#allocate)|Вызов иметод для выделения памяти на куче для хранения объектов.|
-|[CHeapPtr::Перераспределить](#reallocate)|Вызовите этот метод, чтобы перераспределить память на куче.|
+|[Чеапптр:: allocate](#allocate)|Вызовите этот метод, чтобы выделить память в куче для хранения объектов.|
+|[Чеапптр:: перераспределение](#reallocate)|Вызовите этот метод, чтобы перераспределить память в куче.|
 
 ### <a name="public-operators"></a>Открытые операторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CHeapPtr::оператор](#operator_eq)|Оператор назначения.|
+|[Чеапптр:: operator =](#operator_eq)|Оператор присваивания.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CHeapPtr`происходит от [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md) и по умолчанию использует режимы CRT (в [CCRTAllocator)](../../atl/reference/ccrtallocator-class.md)для выделения и свободной памяти. Класс [CHeapPtrList](../../atl/reference/cheapptrlist-class.md) может быть использован для построения списка указателей кучи. Смотрите также [CComHeapPtr](../../atl/reference/ccomheapptr-class.md), который использует процедуры распределения памяти COM.
+`CHeapPtr` является производным от [чеапптрбасе](../../atl/reference/cheapptrbase-class.md) и по умолчанию использует подпрограммы CRT (в [ккрталлокатор](../../atl/reference/ccrtallocator-class.md)) для выделения и освобождения памяти. Класс [чеапптрлист](../../atl/reference/cheapptrlist-class.md) может использоваться для создания списка указателей на кучу. См. также [ккомхеапптр](../../atl/reference/ccomheapptr-class.md), который использует подпрограммы выделения памяти com.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
-[CHeapPtrBase](../../atl/reference/cheapptrbase-class.md)
+[чеапптрбасе](../../atl/reference/cheapptrbase-class.md)
 
 `CHeapPtr`
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlcore.h
+**Заголовок:** атлкоре. h
 
-## <a name="cheapptrallocate"></a><a name="allocate"></a>CHeapPtr::Выделение
+## <a name="cheapptrallocate"></a><a name="allocate"></a> Чеапптр:: allocate
 
-Вызов иметод для выделения памяти на куче для хранения объектов.
+Вызовите этот метод, чтобы выделить память в куче для хранения объектов.
 
 ```
 bool Allocate(size_t nElements = 1) throw();
@@ -84,22 +85,22 @@ bool Allocate(size_t nElements = 1) throw();
 
 ### <a name="parameters"></a>Параметры
 
-*nЭлементы*<br/>
-Количество элементов, используемых для расчета количества памяти для выделения. Значение по умолчанию — 1.
+*нелементс*<br/>
+Количество элементов, использованных для вычисления объема выделяемой памяти. Значение по умолчанию — 1.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает верно, если память была успешно распределена, ложно йода на сбой.
+Возвращает значение true, если память была успешно выделена, и false в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Процедуры разлестьиспользуются для резервирования достаточного количества памяти на куче для хранения объектов *nElement* типа, определенного в конструкторе.
+Подпрограммы распределителя используются для резервирования достаточного объема памяти в куче для хранения объектов *нелемент* типа, определенного в конструкторе.
 
 ### <a name="example"></a>Пример
 
 [!code-cpp[NVC_ATL_Utilities#77](../../atl/codesnippet/cpp/cheapptr-class_1.cpp)]
 
-## <a name="cheapptrcheapptr"></a><a name="cheapptr"></a>CHeapPtr::CHeapPtr
+## <a name="cheapptrcheapptr"></a><a name="cheapptr"></a> Чеапптр:: Чеапптр
 
 Конструктор.
 
@@ -111,18 +112,18 @@ CHeapPtr(CHeapPtr<T, Allocator>& p) throw();
 
 ### <a name="parameters"></a>Параметры
 
-*P*<br/>
-Существующий указатель кучи или `CHeapPtr`.
+*p*<br/>
+Существующий указатель кучи или `CHeapPtr` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Указатель кучи может быть дополнительно создан с помощью `CHeapPtr` существующего указателя или объекта. Если это так, новый `CHeapPtr` объект берет на себя ответственность за управление новым указателем и ресурсами.
+При необходимости можно создать указатель кучи с помощью существующего указателя или `CHeapPtr` объекта. В этом случае новый `CHeapPtr` объект несет ответственность за управление новым указателем и ресурсами.
 
 ### <a name="example"></a>Пример
 
 [!code-cpp[NVC_ATL_Utilities#78](../../atl/codesnippet/cpp/cheapptr-class_2.cpp)]
 
-## <a name="cheapptroperator-"></a><a name="operator_eq"></a>CHeapPtr::оператор
+## <a name="cheapptroperator-"></a><a name="operator_eq"></a> Чеапптр:: operator =
 
 Оператор присвоения.
 
@@ -133,20 +134,20 @@ CHeapPtr<T, Allocator>& operator=(
 
 ### <a name="parameters"></a>Параметры
 
-*P*<br/>
+*p*<br/>
 Существующий объект `CHeapPtr`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает ссылку на `CHeapPtr`обновленную .
+Возвращает ссылку на обновленную `CHeapPtr` .
 
 ### <a name="example"></a>Пример
 
 [!code-cpp[NVC_ATL_Utilities#80](../../atl/codesnippet/cpp/cheapptr-class_3.cpp)]
 
-## <a name="cheapptrreallocate"></a><a name="reallocate"></a>CHeapPtr::Перераспределить
+## <a name="cheapptrreallocate"></a><a name="reallocate"></a> Чеапптр:: перераспределение
 
-Вызовите этот метод, чтобы перераспределить память на куче.
+Вызовите этот метод, чтобы перераспределить память в куче.
 
 ```
 bool Reallocate(size_t nElements) throw();
@@ -154,12 +155,12 @@ bool Reallocate(size_t nElements) throw();
 
 ### <a name="parameters"></a>Параметры
 
-*nЭлементы*<br/>
-Новое количество элементов, используемых для расчета количества памяти для выделения.
+*нелементс*<br/>
+Новое число элементов, используемое для вычисления объема выделяемой памяти.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает верно, если память была успешно распределена, ложно йода на сбой.
+Возвращает значение true, если память была успешно выделена, и false в случае сбоя.
 
 ### <a name="example"></a>Пример
 
@@ -167,6 +168,6 @@ bool Reallocate(size_t nElements) throw();
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс CHeapPtrBase](../../atl/reference/cheapptrbase-class.md)<br/>
-[Класс CCRTAllocator](../../atl/reference/ccrtallocator-class.md)<br/>
+[Класс Чеапптрбасе](../../atl/reference/cheapptrbase-class.md)<br/>
+[Класс Ккрталлокатор](../../atl/reference/ccrtallocator-class.md)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)
