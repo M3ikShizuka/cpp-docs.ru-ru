@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: cpp_quote'
 title: cpp_quote (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - cpp_quote attribute
 ms.assetid: f75327ff-42bd-498b-9177-7ffa25427e1f
-ms.openlocfilehash: 27be83d123b5433f79c4c8a702197fc6f9f1a753
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fe8424fd16cb75e320f8c1a1f8e3e444cf2185ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833170"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333174"
 ---
 # <a name="cpp_quote"></a>cpp_quote
 
@@ -28,7 +29,7 @@ ms.locfileid: "88833170"
 *инструкция*<br/>
 Инструкция C.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Атрибут **cpp_quote** C++ полезен, если вы хотите поместить директиву препроцессора в IDL-файл.
 

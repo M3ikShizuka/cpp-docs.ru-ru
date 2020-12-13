@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Класс ISource'
 title: Класс ISource
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - ISource class
 ms.assetid: c7b73463-42f6-4dcc-801a-81379b12d35a
-ms.openlocfilehash: df592e965b436ed5a1d60702f9e57088887d5a94
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 86a55c9ca056c0aebb98e00c12518293b316bcb6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222710"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334433"
 ---
 # <a name="isource-class"></a>Класс ISource
 
@@ -49,7 +50,7 @@ class ISource;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Деструктор "~ ISource"](#dtor)|Уничтожает `ISource` объект.|
 
@@ -67,7 +68,7 @@ class ISource;
 |[unlink_target](#unlink_target)|При переопределении в производном классе отменяет связь целевого блока с этим `ISource` блоком, если он ранее был связан.|
 |[unlink_targets](#unlink_targets)|При переопределении в производном классе отменяет связь всех целевых блоков с этим `ISource` блоком.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [асинхронные блоки сообщений](../../../parallel/concrt/asynchronous-message-blocks.md).
 
@@ -81,7 +82,7 @@ class ISource;
 
 **Пространство имен:** параллелизм
 
-## <a name="accept"></a><a name="accept"></a>гласит
+## <a name="accept"></a><a name="accept"></a> гласит
 
 При переопределении в производном классе принимает сообщение, которое было предложено этим `ISource` блоком, передавая владение вызывающему объекту.
 
@@ -103,11 +104,11 @@ virtual message<T>* accept(
 
 Указатель на сообщение о том, что вызывающий объект теперь является владельцем.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `accept`Метод вызывается целевым объектом, в то время как сообщение предлагается этим `ISource` блоком. Возвращаемый указатель на сообщение может отличаться от переданного в `propagate` метод `ITarget` блока, если этот источник решит создать копию сообщения.
 
-## <a name="acquire_ref"></a><a name="acquire_ref"></a>acquire_ref
+## <a name="acquire_ref"></a><a name="acquire_ref"></a> acquire_ref
 
 При переопределении в производном классе получает счетчик ссылок `ISource` для этого блока, чтобы предотвратить удаление.
 
@@ -120,11 +121,11 @@ virtual void acquire_ref(_Inout_ ITarget<T>* _PTarget) = 0;
 *_PTarget*<br/>
 Указатель на целевой блок, вызывающий этот метод.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывается `ITarget` объектом, который связан с этим источником во время выполнения `link_target` метода.
 
-## <a name="consume"></a><a name="consume"></a>потребляющие
+## <a name="consume"></a><a name="consume"></a> потребляющие
 
 При переопределении в производном классе использует сообщение, которое было ранее предложено этим `ISource` блоком и успешно зарезервировано целевым объектом, передавая владение вызывающему объекту.
 
@@ -146,11 +147,11 @@ virtual message<T>* consume(
 
 Указатель на `message` объект, владельцем которого стал вызывающий объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `consume`Метод аналогичен `accept` , но ему всегда должен предшествовать вызов `reserve` , который возвращает **`true`** .
 
-## <a name="isource"></a><a name="dtor"></a>~ ISource
+## <a name="isource"></a><a name="dtor"></a> ~ ISource
 
 Уничтожает `ISource` объект.
 
@@ -158,7 +159,7 @@ virtual message<T>* consume(
 virtual ~ISource();
 ```
 
-## <a name="link_target"></a><a name="link_target"></a>link_target
+## <a name="link_target"></a><a name="link_target"></a> link_target
 
 При переопределении в производном классе связывает целевой блок с этим `ISource` блоком.
 
@@ -171,7 +172,7 @@ virtual void link_target(_Inout_ ITarget<T>* _PTarget) = 0;
 *_PTarget*<br/>
 Указатель на целевой блок, связываемый с этим `ISource` блоком.
 
-## <a name="release"></a><a name="release"></a>отпускании
+## <a name="release"></a><a name="release"></a> отпускании
 
 При переопределении в производном классе освобождает предыдущее успешное резервирование сообщения.
 
@@ -189,7 +190,7 @@ virtual void release(
 *_PTarget*<br/>
 Указатель на целевой блок, вызывающий `release` метод.
 
-## <a name="release_ref"></a><a name="release_ref"></a>release_ref
+## <a name="release_ref"></a><a name="release_ref"></a> release_ref
 
 При переопределении в производном классе освобождает счетчик ссылок на этот `ISource` блок.
 
@@ -202,11 +203,11 @@ virtual void release_ref(_Inout_ ITarget<T>* _PTarget) = 0;
 *_PTarget*<br/>
 Указатель на целевой блок, вызывающий этот метод.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывается `ITarget` объектом, для которого удаляется связь из этого источника. Блоку источника разрешено освобождать все ресурсы, зарезервированные для целевого блока.
 
-## <a name="reserve"></a><a name="reserve"></a>предназначен
+## <a name="reserve"></a><a name="reserve"></a> предназначен
 
 При переопределении в производном классе резервирует сообщение, которое было ранее предложено этим `ISource` блоком.
 
@@ -228,11 +229,11 @@ virtual bool reserve(
 
 **`true`** значение, если сообщение было успешно зарезервировано, **`false`** в противном случае. Резервирования могут завершаться неудачей по ряду причин, включая следующие: сообщение уже было зарезервировано или принято другим целевым объектом, источник может отклонять резервирования и т. п.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 После вызова метода `reserve` , если он выполняется, необходимо вызвать метод `consume` или `release` , чтобы получить или предоставить владение сообщениями соответственно.
 
-## <a name="unlink_target"></a><a name="unlink_target"></a>unlink_target
+## <a name="unlink_target"></a><a name="unlink_target"></a> unlink_target
 
 При переопределении в производном классе отменяет связь целевого блока с этим `ISource` блоком, если он ранее был связан.
 
@@ -245,7 +246,7 @@ virtual void unlink_target(_Inout_ ITarget<T>* _PTarget) = 0;
 *_PTarget*<br/>
 Указатель на целевой блок, связь с которым выполняется из этого `ISource` блока.
 
-## <a name="unlink_targets"></a><a name="unlink_targets"></a>unlink_targets
+## <a name="unlink_targets"></a><a name="unlink_targets"></a> unlink_targets
 
 При переопределении в производном классе отменяет связь всех целевых блоков с этим `ISource` блоком.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: ввод и вывод'
 title: Ввод и вывод
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - I/O [CRT], routines
 - output routines
 ms.assetid: 1c177301-e341-4ca0-aedc-0a87fe1c75ae
-ms.openlocfilehash: 2669ed3437fe0eea7dd648367feabe66ae6ed6d4
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 0edd66765f1633dc0adf12b311faf81d3a030512
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738519"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334282"
 ---
 # <a name="input-and-output"></a>Ввод и вывод
 
@@ -30,6 +31,6 @@ ms.locfileid: "57738519"
    > [!NOTE]
    > Поскольку потоковые функции используют буфер, а низкоуровневые функции буфер не используют, эти два типа функций обычно несовместимы. Для обработки конкретного файла используйте либо только потоковые, либо только низкоуровневые функции.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Универсальные подпрограммы среды выполнения C по категориям](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Подпрограммы универсальной среды выполнения C по категориям](../c-runtime-library/run-time-routines-by-category.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: db_accessor'
 title: db_accessor (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_accessor attribute
 ms.assetid: ec407a9f-24d7-4822-96d4-7cc6a0301815
-ms.openlocfilehash: 2a4c5475007cbc516f1a06c6bf858089ba24311f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: b32fb16fe938a84280b0fb047923bbc2aa687c75
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503561"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333116"
 ---
 # <a name="db_accessor"></a>db_accessor
 
@@ -31,7 +32,7 @@ ms.locfileid: "91503561"
 *auto*<br/>
 Логическое значение, указывающее, извлекается ли метод доступа автоматически (TRUE) или не извлекается (FALSE).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **db_accessor** определяет базовый метод доступа OLE DB для последующих `db_column` `db_param` атрибутов и в одном классе или функции. **db_accessor** можно использовать на уровне членов и используется для группирования `db_column` атрибутов, участвующих в `IAccessor` привязке на основе OLE DB. Он используется в сочетании с `db_table` `db_command` атрибутами или. Вызов этого атрибута аналогичен вызову макросов [BEGIN_ACCESSOR](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md#begin_accessor) и [END_ACCESSOR](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md#end_accessor) .
 
@@ -39,7 +40,7 @@ ms.locfileid: "91503561"
 
 **db_accessor** группирует привязки столбцов базы данных в один или несколько методов доступа. Обсуждение сценариев, в которых необходимо использовать несколько методов доступа, см. в разделе [Использование нескольких методов доступа в наборе строк](../../data/oledb/using-multiple-accessors-on-a-rowset.md). См. также раздел «Поддержка записи пользователей для нескольких методов доступа» в разделе « [записи пользователей](../../data/oledb/user-records.md)».
 
-Если поставщик атрибутов потребителя применяет этот атрибут к классу, компилятор переименует класс в \_*YourClassName*Accessor, где *YourClassName* — это имя, которое вы присвоили классу. Также компилятор создаст класс с именем *YourClassName*, производный от \_*YourClassName*Accessor.  В представлении классов отображаются оба класса.
+Если поставщик атрибутов потребителя применяет этот атрибут к классу, компилятор переименует класс в \_*YourClassName* Accessor, где *YourClassName* — это имя, которое вы присвоили классу. Также компилятор создаст класс с именем *YourClassName*, производный от \_*YourClassName* Accessor.  В представлении классов отображаются оба класса.
 
 ## <a name="example"></a>Пример
 
@@ -71,8 +72,8 @@ public:
 |-|-|
 |**Относится к**|Блоки атрибутов|
 |**REPEATABLE**|Нет|
-|**Требуемые атрибуты**|Отсутствуют|
-|**Недопустимые атрибуты**|Отсутствуют|
+|**Требуемые атрибуты**|Нет|
+|**Недопустимые атрибуты**|Нет|
 
 Дополнительные сведения о контекстах атрибутов см. в разделе [Контексты атрибутов](cpp-attributes-com-net.md#contexts).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: make_public pragma'
 title: Прагма make_public
 ms.date: 08/29/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - pragmas, make_public
 - make_public pragma
 ms.assetid: c3665f4d-268a-4932-9661-c37c8ae6a341
-ms.openlocfilehash: d12fab685e0088993cb43073c3603bda12edd2f3
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 327a9882e13f9c51182e0673443566b56177d320
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218821"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333402"
 ---
 # <a name="make_public-pragma"></a>Прагма make_public
 
@@ -21,16 +22,16 @@ ms.locfileid: "70218821"
 
 ## <a name="syntax"></a>Синтаксис
 
-> **#pragma make_public (** *тип* **)**
+> **make_public #pragma (** *тип* **)**
 
 ### <a name="parameters"></a>Параметры
 
-*Тип*\
+*type*\
 Имя типа, для которого требуется доступность общедоступной сборки.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-**make_public** полезен в случаях, когда собственный тип, на который необходимо сослаться, находится в файле заголовка, который нельзя изменить. Если вы хотите использовать собственный тип в сигнатуре открытой функции в типе с видимостью общедоступной сборки, то собственный тип должен также иметь доступность общедоступной сборки, иначе компилятор выдаст предупреждение.
+**make_public** удобно использовать, если собственный тип, на который необходимо сослаться, находится в файле заголовка, который нельзя изменить. Если вы хотите использовать собственный тип в сигнатуре открытой функции в типе с видимостью общедоступной сборки, то собственный тип должен также иметь доступность общедоступной сборки, иначе компилятор выдаст предупреждение.
 
 **make_public** должен быть указан в глобальной области видимости. Он действует только с точки, в которой он объявлен в конце файла исходного кода.
 
@@ -61,6 +62,6 @@ public ref struct A {
 };
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Директивы pragma и ключевое слово __pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

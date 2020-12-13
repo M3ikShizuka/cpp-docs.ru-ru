@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: управляемые, неуправляемые директивы pragma'
 title: Директивы pragma managed, unmanaged
 ms.date: 08/29/2019
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - pragmas, managed
 - unmanaged pragma
 ms.assetid: f072ddcc-e1ec-408a-8ce1-326ddb60e4a4
-ms.openlocfilehash: 4c13155d1c84966a593df11baf525a0c3539f02c
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 10f632b009c9922f67f4321acc862142d895e7ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218809"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333389"
 ---
 # <a name="managed-unmanaged-pragmas"></a>Директивы pragma managed, unmanaged
 
@@ -27,10 +28,10 @@ ms.locfileid: "70218809"
 
 > **управляемые #pragma**\
 > **неуправляемый #pragma**\
-> **управляемый #pragma (** [ **Push,** ] { **On** | **Off** } **)** \
+> **управляемый #pragma (** [ **Push,** ] { **On**  |  **Off** } **)**\
 > **управляемый #pragma (POP)**
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Параметр компилятора [/CLR](../build/reference/clr-common-language-runtime-compilation.md) обеспечивает управление на уровне модуля для компиляции функций как управляемых, так и неуправляемых.
 
@@ -42,9 +43,9 @@ ms.locfileid: "70218809"
 
 - Добавьте директиву pragma перед функцией, но не внутри тела функции.
 
-- Добавьте директиву pragma после операторов `#include`. Не используйте эти директивы pragma `#include` перед инструкциями.
+- Добавьте директиву pragma после операторов `#include`. Не используйте эти директивы pragma перед `#include` инструкциями.
 
-Компилятор игнорирует **управляемые** и неуправляемые директивы pragma, если `/clr` в компиляции не используется.
+Компилятор игнорирует **управляемые** и **неуправляемые** директивы pragma, если `/clr` в компиляции не используется.
 
 При создании экземпляра функции-шаблона состояние директивы pragma при определении шаблона определяет, является ли он управляемым или неуправляемым.
 
@@ -86,6 +87,6 @@ In managed function.
 In unmanaged function.
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Директивы pragma и ключевое слово __pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)

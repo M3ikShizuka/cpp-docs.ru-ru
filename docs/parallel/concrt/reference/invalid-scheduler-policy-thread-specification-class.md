@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: invalid_scheduler_policy_thread_specification классе'
 title: Класс invalid_scheduler_policy_thread_specification
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_scheduler_policy_thread_specification class
 ms.assetid: 2d0fafb2-18f8-4284-8040-3db640d33303
-ms.openlocfilehash: b6c2fd853ae19c48ae04d6601eb47e5afcb71944
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 97a3910fc83e741c54ece51ed8e20686bbd6c66b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77143039"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334498"
 ---
 # <a name="invalid_scheduler_policy_thread_specification-class"></a>Класс invalid_scheduler_policy_thread_specification
 
@@ -27,7 +28,7 @@ class invalid_scheduler_policy_thread_specification : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[invalid_scheduler_policy_thread_specification] (недопустимый-Scheduler-Policy-значение-Class. md # ctor|Перегружен. Создает объект `invalid_scheduler_policy_value`.|
 
@@ -41,9 +42,9 @@ class invalid_scheduler_policy_thread_specification : public std::exception;
 
 **Заголовок:** ConcRT. h
 
-**Пространство имен:** concurrency
+**Пространство имен:** параллелизм
 
-## <a name="ctor"></a>invalid_scheduler_policy_thread_specification
+## <a name="invalid_scheduler_policy_thread_specification"></a><a name="ctor"></a> invalid_scheduler_policy_thread_specification
 
 Создает объект `invalid_scheduler_policy_value`.
 
@@ -60,5 +61,5 @@ invalid_scheduler_policy_thread_specification() throw();
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен concurrency](concurrency-namespace.md)<br/>
+[Пространство имен Concurrency](concurrency-namespace.md)<br/>
 [Класс SchedulerPolicy](schedulerpolicy-class.md)

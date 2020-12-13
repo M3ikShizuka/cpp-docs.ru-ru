@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _set_error_mode'
 title: _set_error_mode
 ms.date: 11/04/2016
 api_name:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - _set_error_mode function
 - set_error_mode function
 ms.assetid: f0807be5-73d1-4a32-a701-3c9bdd139c5c
-ms.openlocfilehash: c1bb617e0f3792f2ac41d59df13d184423d56a9e
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: f21983702adb0ae080443e5869485fe581a65f85
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562042"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334094"
 ---
 # <a name="_set_error_mode"></a>_set_error_mode
 
@@ -57,7 +58,7 @@ int _set_error_mode(
 
 Возвращает старое значение или -1, если возникла ошибка.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Управляет приемником вывода ошибок, устанавливая значение **__error_mode**. Например, можно направить вывод в стандартную ошибку или использовать API **MessageBox** .
 
@@ -102,6 +103,6 @@ This application has requested the Runtime to terminate it in an unusual way.
 Please contact the application's support team for more information.
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Макрос assert, _assert, _wassert](assert-macro-assert-wassert.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура метод iumsthreadproxy'
 title: Структура IUMSThreadProxy
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - IUMSThreadProxy structure
 ms.assetid: 61c69b7e-5c37-4048-bcb4-e75c536afd86
-ms.openlocfilehash: 2e748b1da02394e1f70afd8b92947e1291957c62
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 02eb999b35143e4fc9e0416e02abb60c3c64768d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368083"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334328"
 ---
 # <a name="iumsthreadproxy-structure"></a>Структура IUMSThreadProxy
 
@@ -29,33 +30,33 @@ ms.locfileid: "81368083"
 struct IUMSThreadProxy : public IThreadProxy;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[IUMSThreadProxy::EnterCriticalRegion](#entercriticalregion)|Вызывается для того, чтобы войти в критический регион. Находясь в критически важном регионе, планировщик не будет наблюдать асинхронные операции блокировки, которые происходят в регионе. Это означает, что планировщик не будет повторно введен для сбоев страницы, суспензий потока, асинхронных процедурных вызовов ядра (APCs) и т.д. для потока UMS.|
-|[IUMSThreadProxy::EnterHypercriticalRegion](#enterhypercriticalregion)|Вызывается для того, чтобы войти в гипер-критический регион. Находясь в гиперкритической области, планировщик не будет наблюдать никаких блокирующих операций, которые происходят в регионе. Это означает, что в планировщик не будет повторных входов для блокирующих вызовов функции, блокирующих попыток получения блокировки, сбоев страниц, приостановок потока, вызовов асинхронных процедур ядра (APC) и т. п. для потока UMS.|
-|[IUMSThreadProxy::ExitCriticalRegion](#exitcriticalregion)|Вызывается для того, чтобы выйти из критического региона.|
-|[IUMSThreadProxy::ExitHyperCriticalRegion](#exithypercriticalregion)|Вызывается для того, чтобы выйти из гиперкритической области.|
-|[IUMSThreadProxy::GetCriticalRegionType](#getcriticalregiontype)|Возвращает, в каком критическом регионе находится прокси потока. Поскольку гиперкритические регионы представляют собой супермножество критически важных регионов, если `InsideHyperCriticalRegion` код вошел в критический регион, а затем в гиперкритический регион, будет возвращен.|
+|[Метод iumsthreadproxy:: Ентеркритикалрегион](#entercriticalregion)|Вызывается для входа в критическую область. В критической области планировщик не будет наблюдать за операциями асинхронной блокировки, происходящими в этом регионе. Это означает, что планировщик не будет повторно введен для ошибок страниц, приостановки потоков, асинхронных вызовов процедур ядра (APC) и т. д. для потока UMS.|
+|[Метод iumsthreadproxy:: Ентерхиперкритикалрегион](#enterhypercriticalregion)|Вызывается для входа в область, критическая для Hyper. В области, критической для Hyper, планировщик не будет наблюдать за операциями блокировки, происходящими в этом регионе. Это означает, что в планировщик не будет повторных входов для блокирующих вызовов функции, блокирующих попыток получения блокировки, сбоев страниц, приостановок потока, вызовов асинхронных процедур ядра (APC) и т. п. для потока UMS.|
+|[Метод iumsthreadproxy:: Екситкритикалрегион](#exitcriticalregion)|Вызывается для выхода из критической области.|
+|[Метод iumsthreadproxy:: Ексисиперкритикалрегион](#exithypercriticalregion)|Вызывается для выхода из области, критической для Hyper.|
+|[Метод iumsthreadproxy:: Жеткритикалрегионтипе](#getcriticalregiontype)|Возвращает тип критической области, в которой находится прокси-сервер потока. Поскольку регионы, критические с помощью Hyper-in, представляют собой надмножество критических регионов, если код вошел в критическую область, а затем будет возвращена критическая для Hyper-in область `InsideHyperCriticalRegion` .|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
-[IThreadProxy](ithreadproxy-structure.md)
+[исреадпрокси](ithreadproxy-structure.md)
 
 `IUMSThreadProxy`
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** concrtrm.h
+**Заголовок:** concrtrm. h
 
-**Название:** параллелизм
+**Пространство имен:** параллелизм
 
-## <a name="iumsthreadproxyentercriticalregion-method"></a><a name="entercriticalregion"></a>IUMSThreadProxy::Метод EnterCriticalRegion
+## <a name="iumsthreadproxyentercriticalregion-method"></a><a name="entercriticalregion"></a> Метод метод iumsthreadproxy:: Ентеркритикалрегион
 
-Вызывается для того, чтобы войти в критический регион. Находясь в критически важном регионе, планировщик не будет наблюдать асинхронные операции блокировки, которые происходят в регионе. Это означает, что планировщик не будет повторно введен для сбоев страницы, суспензий потока, асинхронных процедурных вызовов ядра (APCs) и т.д. для потока UMS.
+Вызывается для входа в критическую область. В критической области планировщик не будет наблюдать за операциями асинхронной блокировки, происходящими в этом регионе. Это означает, что планировщик не будет повторно введен для ошибок страниц, приостановки потоков, асинхронных вызовов процедур ядра (APC) и т. д. для потока UMS.
 
 ```cpp
 virtual int EnterCriticalRegion() = 0;
@@ -63,11 +64,11 @@ virtual int EnterCriticalRegion() = 0;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Новая глубина критической области. Критические регионы являются реакторами.
+Новая глубина критической области. Критические регионы — это повторные входы.
 
-## <a name="iumsthreadproxyenterhypercriticalregion-method"></a><a name="enterhypercriticalregion"></a>IUMSThreadProxy::Метод EnterHyperCriticalRegion
+## <a name="iumsthreadproxyenterhypercriticalregion-method"></a><a name="enterhypercriticalregion"></a> Метод метод iumsthreadproxy:: Ентерхиперкритикалрегион
 
-Вызывается для того, чтобы войти в гипер-критический регион. Находясь в гиперкритической области, планировщик не будет наблюдать никаких блокирующих операций, которые происходят в регионе. Это означает, что в планировщик не будет повторных входов для блокирующих вызовов функции, блокирующих попыток получения блокировки, сбоев страниц, приостановок потока, вызовов асинхронных процедур ядра (APC) и т. п. для потока UMS.
+Вызывается для входа в область, критическая для Hyper. В области, критической для Hyper, планировщик не будет наблюдать за операциями блокировки, происходящими в этом регионе. Это означает, что в планировщик не будет повторных входов для блокирующих вызовов функции, блокирующих попыток получения блокировки, сбоев страниц, приостановок потока, вызовов асинхронных процедур ядра (APC) и т. п. для потока UMS.
 
 ```cpp
 virtual int EnterHyperCriticalRegion() = 0;
@@ -75,15 +76,15 @@ virtual int EnterHyperCriticalRegion() = 0;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Новая глубина гиперкритической области. Гиперкритические регионы ретент.
+Новая глубина критической для Hyper-безопасности области. Области, критические для Hyper, — это повторный вход.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Планировщик должен быть чрезвычайно осторожным в отношении того, какие методы он называет и какие блокировки он приобретает в таких регионах. Если код в таком регионе блокируется на блокировке, которая удерживается чем-то, что планировщик отвечает за планирование, может возникнуть блокировка.
+Планировщик должен быть чрезвычайно осторожность о том, какие методы он вызывает, и какие блокировки он получает в таких регионах. Если код в таком регионе блокирует блокировку, которая удерживается каким-либо планировщиком, то может возникнуть взаимоблокировка.
 
-## <a name="iumsthreadproxyexitcriticalregion-method"></a><a name="exitcriticalregion"></a>IUMSThreadProxy::Метод ExitCriticalRegion
+## <a name="iumsthreadproxyexitcriticalregion-method"></a><a name="exitcriticalregion"></a> Метод метод iumsthreadproxy:: Екситкритикалрегион
 
-Вызывается для того, чтобы выйти из критического региона.
+Вызывается для выхода из критической области.
 
 ```cpp
 virtual int ExitCriticalRegion() = 0;
@@ -91,11 +92,11 @@ virtual int ExitCriticalRegion() = 0;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Новая глубина критической области. Критические регионы являются реакторами.
+Новая глубина критической области. Критические регионы — это повторные входы.
 
-## <a name="iumsthreadproxyexithypercriticalregion-method"></a><a name="exithypercriticalregion"></a>IUMSThreadProxy::ExitHyperCriticalRegion Метод
+## <a name="iumsthreadproxyexithypercriticalregion-method"></a><a name="exithypercriticalregion"></a> Метод метод iumsthreadproxy:: Ексисиперкритикалрегион
 
-Вызывается для того, чтобы выйти из гиперкритической области.
+Вызывается для выхода из области, критической для Hyper.
 
 ```cpp
 virtual int ExitHyperCriticalRegion() = 0;
@@ -103,11 +104,11 @@ virtual int ExitHyperCriticalRegion() = 0;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Новая глубина гиперкритической области. Гиперкритические регионы ретент.
+Новая глубина критической для Hyper-безопасности области. Области, критические для Hyper, — это повторный вход.
 
-## <a name="iumsthreadproxygetcriticalregiontype-method"></a><a name="getcriticalregiontype"></a>IUMSThreadProxy::GetCriticalRegionType Метод
+## <a name="iumsthreadproxygetcriticalregiontype-method"></a><a name="getcriticalregiontype"></a> Метод метод iumsthreadproxy:: Жеткритикалрегионтипе
 
-Возвращает, в каком критическом регионе находится прокси потока. Поскольку гиперкритические регионы представляют собой супермножество критически важных регионов, если `InsideHyperCriticalRegion` код вошел в критический регион, а затем в гиперкритический регион, будет возвращен.
+Возвращает тип критической области, в которой находится прокси-сервер потока. Поскольку регионы, критические с помощью Hyper-in, представляют собой надмножество критических регионов, если код вошел в критическую область, а затем будет возвращена критическая для Hyper-in область `InsideHyperCriticalRegion` .
 
 ```cpp
 virtual CriticalRegionType GetCriticalRegionType() const = 0;
@@ -115,9 +116,9 @@ virtual CriticalRegionType GetCriticalRegionType() const = 0;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Тип критической области прокси потока находится внутри.
+Тип критической области, в которой находится прокси-объект потока.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен concurrency](concurrency-namespace.md)<br/>
+[Пространство имен Concurrency](concurrency-namespace.md)<br/>
 [Структура IUMSScheduler](iumsscheduler-structure.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: db_table'
 title: db_table (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_table attribute
 ms.assetid: ff9eb957-4e6d-4175-afcc-fd8ea916cec0
-ms.openlocfilehash: dfdf012550359d0658d53b3f67c0619a124b6309
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 3d871961a8ded6070127e5e562615018a4320162
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834197"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333042"
 ---
 # <a name="db_table"></a>db_table
 
@@ -37,11 +38,11 @@ ms.locfileid: "88834197"
 *состав*<br/>
 Определяет переменную, которая будет получать HRESULT от этой команды базы данных (необязательно). Если переменная не существует, она будет автоматически внедрена с помощью атрибута.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **db_table** создает объект [CTable](../../data/oledb/ctable-class.md) , который используется потребителем OLE DB для открытия таблицы. Этот атрибут можно использовать только на уровне класса. его нельзя использовать в строке. Используйте `db_column` для привязки столбцов таблицы к переменным; используйте `db_param` для разделения (задайте тип параметра и т. д.) для параметров.
 
-Если поставщик атрибутов потребителя применяет этот атрибут к классу, компилятор переименует класс в \_*YourClassName*Accessor, где *YourClassName* — это имя, которое вы присвоили классу. Также компилятор создаст класс с именем *YourClassName*, производный от \_*YourClassName*Accessor.  В представлении классов отображаются оба класса.
+Если поставщик атрибутов потребителя применяет этот атрибут к классу, компилятор переименует класс в \_*YourClassName* Accessor, где *YourClassName* — это имя, которое вы присвоили классу. Также компилятор создаст класс с именем *YourClassName*, производный от \_*YourClassName* Accessor.  В представлении классов отображаются оба класса.
 
 ## <a name="example"></a>Пример
 

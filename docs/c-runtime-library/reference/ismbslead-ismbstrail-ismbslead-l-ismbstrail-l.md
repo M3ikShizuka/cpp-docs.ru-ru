@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l'
 title: _ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l
 ms.date: 4/2/2020
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - ismbstrail_l function
 - _ismbstrail_l function
 ms.assetid: 86d2cd7a-3cff-443a-b713-14cc17a231e9
-ms.openlocfilehash: 892545ba0ac66604b0ea1c5adcfa32dd64b68973
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 54745c2db33a68b35236c5b6169280e5e7dacfef
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919162"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334134"
 ---
 # <a name="_ismbslead-_ismbstrail-_ismbslead_l-_ismbstrail_l"></a>_ismbslead, _ismbstrail, _ismbslead_l, _ismbstrail_l
 
@@ -100,7 +101,7 @@ int _ismbstrail_l(
 
 **_ismbslead** возвращает значение-1, если символ является старшим байтом, а **_ismbstrail** возвращает-1, если символ является младшим байтом. Если входные строки допустимы, но не являются старшим или младшим байтом, эти функции возвращают ноль. Если любой из аргументов имеет **значение NULL**, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции возвращают **значение NULL** и **задают значение** **еинвал**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **_ismbslead** и **_ismbstrail** выполняются медленнее, чем **_ismbblead** и **_ismbbtrail** версии, так как они принимают в качестве строки контекст.
 
@@ -124,6 +125,6 @@ int _ismbstrail_l(
 ## <a name="see-also"></a>См. также раздел
 
 [Классификация символов](../../c-runtime-library/character-classification.md)<br/>
-[Процедуры _ismbc](../../c-runtime-library/ismbc-routines.md)<br/>
-[Процедуры is, isw](../../c-runtime-library/is-isw-routines.md)<br/>
+[подпрограммы _ismbc](../../c-runtime-library/ismbc-routines.md)<br/>
+[является, подпрограммы isw](../../c-runtime-library/is-isw-routines.md)<br/>
 [подпрограммы _ismbb](../../c-runtime-library/ismbb-routines.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __umulh'
 title: __umulh
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __umulh intrinsic
 ms.assetid: d241b53a-e6f7-4af1-9f6e-84e149158f03
-ms.openlocfilehash: bf098657d1bd5b7ef8a4ffc21f487d2ce619a04e
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 1d727d72155bdfb5cd5da1ee56c514af26b5ae89
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219667"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333610"
 ---
 # <a name="__umulh"></a>__umulh
 
@@ -33,7 +34,7 @@ unsigned __int64 __umulh(
 *конкретного*\
 [in] Первое число для умножения.
 
-*&* \
+*&*\
 [in] Второе число для умножения.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -42,13 +43,13 @@ unsigned __int64 __umulh(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__umulh`|X64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эти процедуры доступны только как встроенные объекты.
 

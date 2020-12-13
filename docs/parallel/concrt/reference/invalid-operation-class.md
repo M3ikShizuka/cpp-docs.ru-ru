@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: invalid_operation классе'
 title: Класс invalid_operation
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_operation class
 ms.assetid: 26ba07dc-fcdf-44cb-b748-a31d35205b52
-ms.openlocfilehash: e17d530569d16ba0084a58bf0be00d4a8423b7f6
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: f3050d487f2c374f66f264b6e568fce5244d25ba
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77140870"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334539"
 ---
 # <a name="invalid_operation-class"></a>Класс invalid_operation
 
@@ -29,11 +30,11 @@ class invalid_operation : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[invalid_operation](#ctor)|Перегружен. Создает объект `invalid_operation`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Различные методы, создающие это исключение, обычно документируют, в каких обстоятельствах они создают его.
 
@@ -47,9 +48,9 @@ class invalid_operation : public std::exception;
 
 **Заголовок:** ConcRT. h
 
-**Пространство имен:** concurrency
+**Пространство имен:** параллелизм
 
-## <a name="ctor"></a>invalid_operation
+## <a name="invalid_operation"></a><a name="ctor"></a> invalid_operation
 
 Создает объект `invalid_operation`.
 
@@ -66,4 +67,4 @@ invalid_operation() throw();
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен concurrency](concurrency-namespace.md)
+[Пространство имен Concurrency](concurrency-namespace.md)

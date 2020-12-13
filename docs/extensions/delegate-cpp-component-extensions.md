@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Delegate (C++/CLI и C++/CX)'
 title: delegate (C++/CLI и C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - delegate keyword [C++]
 ms.assetid: 03caf23d-7873-4a23-9b34-becf42aaf429
-ms.openlocfilehash: 77cd17eb8c164a08af9ec783f8aba422785609b6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 92cd46980775a340e6bf0d6857ace91645d65a7d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219733"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333723"
 ---
 # <a name="delegate--ccli-and-ccx"></a>delegate (C++/CLI и C++/CX)
 
@@ -23,7 +24,7 @@ ms.locfileid: "87219733"
 
 Среда выполнения Windows, как и среда CLR, поддерживает делегаты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **delegate** — контекстно-зависимое ключевое слово. Дополнительные сведения см. в статье [Context-Sensitive Keywords (C++/CLI and C++/CX)](context-sensitive-keywords-cpp-component-extensions.md) (Контекстно-зависимые ключевые слова (C++/CLI и C++/CX)).
 
@@ -59,7 +60,7 @@ delegate-type-identifier
 *parameters*<br/>
 Типы и идентификаторы прототипа функции (необязательно).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте параметр *delegate-type-identifier* для объявления события с таким же прототипом, что и у делегата. Дополнительные сведения см. в статье [Delegates (C++/CX)](../cppcx/delegates-c-cx.md) (Делегаты (C++/CX)).
 
@@ -89,7 +90,7 @@ function_declaration
 
 Чтобы определить непривязанный делегат, первым параметром в *function_declaration* должен быть тип **`this`** указателя для объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Делегаты являются многоадресной рассылкой: "указатель функции" можно привязать к одному или нескольким методам в управляемом классе. Ключевое слово **delegate** определяет тип делегата многоадресной рассылки с помощью сигнатуры определенного метода.
 

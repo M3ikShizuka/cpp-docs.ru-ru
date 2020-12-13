@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ftell_nolock, _ftelli64_nolock'
 title: _ftell_nolock, _ftelli64_nolock
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - ftell_nolock function
 - file pointers [C++], getting current position
 ms.assetid: 84e68b0a-32f8-4c4a-90ad-3f2387685ede
-ms.openlocfilehash: 9f1f0018773f8fb5b00f1304011ba8128ce7d9df
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 77ddd09d6c72413f4ca0ef2fa1e4ea66e044dedc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909994"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334213"
 ---
 # <a name="_ftell_nolock-_ftelli64_nolock"></a>_ftell_nolock, _ftelli64_nolock
 
@@ -66,7 +67,7 @@ __int64 _ftelli64_nolock(
 
 То же, что и **ftell** и **_ftelli64**. Дополнительные сведения см. в разделе [ftell _ftelli64](ftell-ftelli64.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эти функции являются версиями **ftell** и **_ftelli64**, которые не блокируются соответственно. Они идентичны **ftell** и **_ftelli64** за исключением того, что они не защищены от помех в других потоках. Они могут выполняться быстрее, так как не создают дополнительную нагрузку, связанную с блокировкой работы других потоков. Используйте эти функции только в потокобезопасных контекстах, например в однопоточных приложениях или если вызываемая область уже обрабатывает изоляцию потоков.
 

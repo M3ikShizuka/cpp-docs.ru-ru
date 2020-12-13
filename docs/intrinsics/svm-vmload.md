@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __svm_vmload'
 title: __svm_vmload
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - __svm_vmload intrinsic
 - VMLOAD instruction
 ms.assetid: b46a5592-db76-4ffc-8694-2f3494e28bed
-ms.openlocfilehash: da6ca9786b9c7e5041b9a8ca908d567b16176436
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 975f6aed50007b0b184bbab2b9b48790e5e20616
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219812"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333713"
 ---
 # <a name="__svm_vmload"></a>__svm_vmload
 
@@ -33,17 +34,17 @@ void __svm_vmload(
 *вмкбфисикаладдресс*\
 окне Физический адрес ВМКБ.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Функция `__svm_vmload` эквивалентна инструкции компьютера `VMLOAD` . Эта функция поддерживает взаимодействие монитора виртуальной машины узла с гостевой операционной системой и ее приложениями. Дополнительные сведения см. в документе "Ручная задача программиста архитектуры AMD64", том 2: Системное программирование, «номер документа 24593, версия 3,11, на сайте [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) .
+Функция `__svm_vmload` эквивалентна инструкции компьютера `VMLOAD` . Эта функция поддерживает взаимодействие монитора виртуальной машины узла с гостевой операционной системой и ее приложениями. Дополнительные сведения см. в документе "Ручная задача программиста архитектуры AMD64: том 2. Программирование системы", "номер документа 24593, редакция 3,11" на сайте [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) .
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__svm_vmload`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
 **Завершение блока, относящегося только к системам Майкрософт**
 

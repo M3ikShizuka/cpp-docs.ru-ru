@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура ISchedulerProxy'
 title: Структура ISchedulerProxy
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - ISchedulerProxy structure
 ms.assetid: af416973-7a1c-4c30-aa3b-4161c2aaea54
-ms.openlocfilehash: dcb6d175fa84e33f6a5af974eb76f1e1246bdc35
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4c3c488136c2b41a76b3080b2162fbf95dcb5ea8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226702"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334455"
 ---
 # <a name="ischedulerproxy-structure"></a>Структура ISchedulerProxy
 
@@ -30,11 +31,11 @@ ms.locfileid: "87226702"
 struct ISchedulerProxy;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[ISchedulerProxy:: Биндконтекст](#bindcontext)|Связывает контекст выполнения с прокси-сервером потока, если он еще не связан с одним потоком.|
 |[ISchedulerProxy:: Креатеоверсубскрибер](#createoversubscriber)|Создает новый корень виртуального процессора в аппаратном потоке, связанном с существующим ресурсом выполнения.|
@@ -43,7 +44,7 @@ struct ISchedulerProxy;
 |[ISchedulerProxy:: Субскрибекуррентсреад](#subscribecurrentthread)|Регистрирует текущий поток с диспетчер ресурсов, связывая его с этим планировщиком.|
 |[ISchedulerProxy:: Унбиндконтекст](#unbindcontext)|Отменяет связь прокси-сервера потока с контекстом выполнения, указанным в `pContext` параметре, и возвращает его в свободный пул фабрики прокси-сервера потока. Этот метод может быть вызван только для контекста выполнения, который был привязан через метод [ISchedulerProxy:: биндконтекст](#bindcontext) и еще не был запущен с помощью `pContext` параметра вызова метода [исреадпрокси:: свитчто](ithreadproxy-structure.md#switchto) .|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Диспетчер ресурсов передает `ISchedulerProxy` интерфейс каждому планировщику, который регистрируется с ним с помощью метода [метод IResourceManager:: регистерсчедулер](iresourcemanager-structure.md#registerscheduler) .
 
@@ -57,7 +58,7 @@ struct ISchedulerProxy;
 
 **Пространство имен:** параллелизм
 
-## <a name="ischedulerproxybindcontext-method"></a><a name="bindcontext"></a>Метод ISchedulerProxy:: Биндконтекст
+## <a name="ischedulerproxybindcontext-method"></a><a name="bindcontext"></a> Метод ISchedulerProxy:: Биндконтекст
 
 Связывает контекст выполнения с прокси-сервером потока, если он еще не связан с одним потоком.
 
@@ -70,13 +71,13 @@ virtual void BindContext(_Inout_ IExecutionContext* pContext) = 0;
 *pContext*<br/>
 Интерфейс к контексту выполнения, связываемый с прокси-потоком.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Как правило, метод [исреадпрокси:: свитчто](ithreadproxy-structure.md#switchto) будет привязывать прокси-сервер потока к контексту выполнения по запросу. Однако существуют обстоятельства, когда необходимо привязать контекст заранее, чтобы `SwitchTo` метод переключились на уже привязанный контекст. Это происходит в контексте планирования UMS, так как он не может вызывать методы, выделяющие память, и привязка прокси-сервера потока может привести к выделению памяти, если прокси-сервер потока недоступен в свободном пуле фабрики прокси потока.
 
-`invalid_argument`Если параметр имеет значение, создается исключение `pContext` `NULL` .
+`invalid_argument` Если параметр имеет значение, создается исключение `pContext` `NULL` .
 
-## <a name="ischedulerproxycreateoversubscriber-method"></a><a name="createoversubscriber"></a>Метод ISchedulerProxy:: Креатеоверсубскрибер
+## <a name="ischedulerproxycreateoversubscriber-method"></a><a name="createoversubscriber"></a> Метод ISchedulerProxy:: Креатеоверсубскрибер
 
 Создает новый корень виртуального процессора в аппаратном потоке, связанном с существующим ресурсом выполнения.
 
@@ -93,13 +94,13 @@ virtual IVirtualProcessorRoot* CreateOversubscriber(_Inout_ IExecutionResource* 
 
 Интерфейс `IVirtualProcessorRoot`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот метод, если вашему планировщику требуется отменить подписывание определенного аппаратного потока в течение ограниченного периода времени. Завершив работу с корнем виртуального процессора, необходимо вернуть его в Resource Manager, вызвав метод [Remove](iexecutionresource-structure.md#remove) `IVirtualProcessorRoot` интерфейса.
 
 Поскольку интерфейс `IVirtualProcessorRoot` наследует от интерфейса `IExecutionResource`, можно даже переподписать существующий корневой виртуальный процессор.
 
-## <a name="ischedulerproxyrequestinitialvirtualprocessors-method"></a><a name="requestinitialvirtualprocessors"></a>Метод ISchedulerProxy:: Рекуестинитиалвиртуалпроцессорс
+## <a name="ischedulerproxyrequestinitialvirtualprocessors-method"></a><a name="requestinitialvirtualprocessors"></a> Метод ISchedulerProxy:: Рекуестинитиалвиртуалпроцессорс
 
 Запрашивает начальное выделение корней виртуального процессора. Каждый корень виртуального процессора представляет возможность выполнения одного потока, который может выполнять работу с планировщиком.
 
@@ -116,7 +117,7 @@ virtual IExecutionResource* RequestInitialVirtualProcessors(bool doSubscribeCurr
 
 `IExecutionResource`Интерфейс для текущего потока, если параметр `doSubscribeCurrentThread` имеет значение **`true`** . Если значение равно **`false`** , метод возвращает значение null.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Прежде чем планировщик будет выполнять какую-либо работу, он должен использовать этот метод для запроса корней виртуального процессора из диспетчер ресурсов. Диспетчер ресурсов будет получать доступ к политике планировщика с помощью [IScheduler:: Policy](ischeduler-structure.md#getpolicy) и использовать значения ключей политики `MinConcurrency` , `MaxConcurrency` а также определить, сколько `TargetOversubscriptionFactor` аппаратных потоков необходимо назначить планировщику, и сколько корней виртуального процессора следует создать для каждого аппаратного потока. Дополнительные сведения о том, как политики планировщика используются для определения первоначального выделения планировщика, см. в разделе [полициелементкэй](concurrency-namespace-enums.md).
 
@@ -128,7 +129,7 @@ virtual IExecutionResource* RequestInitialVirtualProcessors(bool doSubscribeCurr
 
 Процесс подписки потока увеличивает уровень подписки базового аппаратного потока на единицу. Уровень подписки уменьшается на единицу после завершения подписки. Дополнительные сведения об уровнях подписки см. в разделе [IExecutionResource:: куррентсубскриптионлевел](iexecutionresource-structure.md#currentsubscriptionlevel).
 
-## <a name="ischedulerproxyshutdown-method"></a><a name="shutdown"></a>Метод ISchedulerProxy:: Shutdown
+## <a name="ischedulerproxyshutdown-method"></a><a name="shutdown"></a> Метод ISchedulerProxy:: Shutdown
 
 Уведомляет диспетчер ресурсов о завершении работы планировщика. Это приведет к тому, что диспетчер ресурсов немедленно освободит все ресурсы, предоставленные планировщику.
 
@@ -136,7 +137,7 @@ virtual IExecutionResource* RequestInitialVirtualProcessors(bool doSubscribeCurr
 virtual void Shutdown() = 0;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Все `IExecutionContext` интерфейсы, полученные планировщиком в результате подписки внешнего потока с помощью методов `ISchedulerProxy::RequestInitialVirtualProcessors` или, `ISchedulerProxy::SubscribeCurrentThread` должны возвращаться в Диспетчер ресурсов с помощью `IExecutionResource::Remove` перед завершением работы планировщика.
 
@@ -144,7 +145,7 @@ virtual void Shutdown() = 0;
 
 Для планировщика необязательно возвращать все корневые виртуальные процессоры, выданные ему диспетчером ресурсов путем вызовов метода `Remove`, поскольку все корневые виртуальные процессоры будут возвращены диспетчеру ресурсов при завершении работы.
 
-## <a name="ischedulerproxysubscribecurrentthread-method"></a><a name="subscribecurrentthread"></a>Метод ISchedulerProxy:: Субскрибекуррентсреад
+## <a name="ischedulerproxysubscribecurrentthread-method"></a><a name="subscribecurrentthread"></a> Метод ISchedulerProxy:: Субскрибекуррентсреад
 
 Регистрирует текущий поток с диспетчер ресурсов, связывая его с этим планировщиком.
 
@@ -156,7 +157,7 @@ virtual IExecutionResource* SubscribeCurrentThread() = 0;
 
 `IExecutionResource`Взаимодействие, представляющее текущий поток в среде выполнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот метод, если необходимо, чтобы диспетчер ресурсов учетной записи для текущего потока при выделении ресурсов планировщику и другим планировщикам. Это особенно полезно, когда поток планирует участвовать в работе в очереди планировщика, а также к корням виртуальных процессоров, получаемым планировщиком от диспетчер ресурсов. Диспетчер ресурсов использует сведения, чтобы предотвратить ненужную избыточную подписку аппаратных потоков в системе.
 
@@ -164,7 +165,7 @@ virtual IExecutionResource* SubscribeCurrentThread() = 0;
 
 Процесс подписки потока увеличивает уровень подписки базового аппаратного потока на единицу. Уровень подписки уменьшается на единицу после завершения подписки. Дополнительные сведения об уровнях подписки см. в разделе [IExecutionResource:: куррентсубскриптионлевел](iexecutionresource-structure.md#currentsubscriptionlevel).
 
-## <a name="ischedulerproxyunbindcontext-method"></a><a name="unbindcontext"></a>Метод ISchedulerProxy:: Унбиндконтекст
+## <a name="ischedulerproxyunbindcontext-method"></a><a name="unbindcontext"></a> Метод ISchedulerProxy:: Унбиндконтекст
 
 Отменяет связь прокси-сервера потока с контекстом выполнения, указанным в `pContext` параметре, и возвращает его в свободный пул фабрики прокси-сервера потока. Этот метод может быть вызван только для контекста выполнения, который был привязан через метод [ISchedulerProxy:: биндконтекст](#bindcontext) и еще не был запущен с помощью `pContext` параметра вызова метода [исреадпрокси:: свитчто](ithreadproxy-structure.md#switchto) .
 
@@ -177,7 +178,7 @@ virtual void UnbindContext(_Inout_ IExecutionContext* pContext) = 0;
 *pContext*<br/>
 Контекст выполнения для отсвязи от прокси-сервера потока.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Пространство имен Concurrency](concurrency-namespace.md)<br/>
 [Структура IScheduler](ischeduler-structure.md)<br/>

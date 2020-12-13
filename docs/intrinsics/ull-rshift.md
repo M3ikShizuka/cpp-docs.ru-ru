@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __ull_rshift'
 title: __ull_rshift
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - ull_rshift intrinsic
 - __ull_rshift intrinsic
 ms.assetid: b7ff5254-3540-4e6e-b57c-a6c4beb7dca2
-ms.openlocfilehash: bf9fe7775cee1c774c097a1b6bd371721c9fa34f
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 5b819e4a1df8db7b7562023c6acc9dbbd94f7f76
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80074977"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333627"
 ---
 # <a name="__ull_rshift"></a>__ull_rshift
 
@@ -31,7 +32,7 @@ unsigned __int64 __ull_rshift(
 
 ### <a name="parameters"></a>Параметры
 
-*маска*\
+*виде*\
 окне 64-разрядное целочисленное значение, которое нужно сдвинуть вправо.
 
 *нбит*\
@@ -39,7 +40,7 @@ unsigned __int64 __ull_rshift(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Маска, смещенная `nBit` бит.
+Маска, смещенная по `nBit` битам.
 
 ## <a name="requirements"></a>Требования
 
@@ -47,11 +48,11 @@ unsigned __int64 __ull_rshift(
 |---------------|------------------|
 |`__ull_rshift`|x86, x64|
 
-**Файл заголовка** \<Intrin. h >
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Если второй параметр больше 31 для x86 (63 в x64), то это число берется по модулю 32 (64 в x64), чтобы определить число битов для сдвига. `ull` в имени указывает `unsigned long long (unsigned __int64)`.
+Если второй параметр больше 31 для x86 (63 в x64), то это число берется по модулю 32 (64 в x64), чтобы определить число битов для сдвига. `ull`В имени указывается `unsigned long long (unsigned __int64)` .
 
 ## <a name="example"></a>Пример
 
@@ -80,8 +81,8 @@ int main()
 
 **Завершение блока, относящегося только к системам Майкрософт**
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 [__ll_lshift](../intrinsics/ll-lshift.md)\
 [__ll_rshift](../intrinsics/ll-rshift.md)\
-[Встроенные функции компилятора](../intrinsics/compiler-intrinsics.md)
+[Встроенные объекты компилятора](../intrinsics/compiler-intrinsics.md)

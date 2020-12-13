@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: ITarget Class'
 title: Класс ITarget
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - ITarget class
 ms.assetid: 5678db25-112a-4f72-be13-42e16b67c48b
-ms.openlocfilehash: 39aebd9d82f098225c1275ac6f43d64fc1ce3ba8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6a1e900fa67ac5ee72305f18679e7a0fc38a2386
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231719"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334401"
 ---
 # <a name="itarget-class"></a>Класс ITarget
 
@@ -47,7 +48,7 @@ class ITarget;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Деструктор ~ ITarget](#dtor)|Уничтожает `ITarget` объект.|
 
@@ -67,7 +68,7 @@ class ITarget;
 |[unlink_source](#unlink_source)|При переопределении в производном классе отменяет связь указанного исходного блока с этим `ITarget` блоком.|
 |[unlink_sources](#unlink_sources)|При переопределении в производном классе отменяет связь всех исходных блоков с этим `ITarget` блоком.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [асинхронные блоки сообщений](../../../parallel/concrt/asynchronous-message-blocks.md).
 
@@ -81,7 +82,7 @@ class ITarget;
 
 **Пространство имен:** параллелизм
 
-## <a name="itarget"></a><a name="dtor"></a>~ ITarget
+## <a name="itarget"></a><a name="dtor"></a> ~ ITarget
 
 Уничтожает `ITarget` объект.
 
@@ -89,7 +90,7 @@ class ITarget;
 virtual ~ITarget();
 ```
 
-## <a name="link_source"></a><a name="link_source"></a>link_source
+## <a name="link_source"></a><a name="link_source"></a> link_source
 
 При переопределении в производном классе связывает указанный блок источника с этим `ITarget` блоком.
 
@@ -102,11 +103,11 @@ virtual void link_source(_Inout_ ISource<T>* _PSource) = 0;
 *_PSource*<br/>
 `ISource`Блок, связанный с этим `ITarget` блоком.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция не должна вызываться напрямую в `ITarget` блоке. Блоки должны быть соединены вместе с помощью `link_target` метода для `ISource` блоков, которые будут вызывать `link_source` метод для соответствующего целевого объекта.
 
-## <a name="propagate"></a><a name="propagate"></a>распространения
+## <a name="propagate"></a><a name="propagate"></a> распространения
 
 При переопределении в производном классе асинхронно передает сообщение из исходного блока в этот целевой блок.
 
@@ -128,11 +129,11 @@ virtual message_status propagate(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Метод вызывает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если `_PMessage` параметр или имеет значение `_PSource` `NULL` .
 
-## <a name="send"></a><a name="send"></a>Отправить
+## <a name="send"></a><a name="send"></a> Отправить
 
 При переопределении в производном классе синхронно передает сообщение в целевой блок.
 
@@ -154,7 +155,7 @@ virtual message_status send(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Метод вызывает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если `_PMessage` параметр или имеет значение `_PSource` `NULL` .
 
@@ -162,7 +163,7 @@ virtual message_status send(
 
 Когда `send` метод возвращает значение, сообщение уже было принято и передано в целевой блок или было отклонено целевым объектом.
 
-## <a name="supports_anonymous_source"></a><a name="supports_anonymous_source"></a>supports_anonymous_source
+## <a name="supports_anonymous_source"></a><a name="supports_anonymous_source"></a> supports_anonymous_source
 
 При переопределении в производном классе возвращает значение true или false в зависимости от того, принимает ли блок сообщений сообщения, предоставляемые не связанным с ним источником. Если переопределенный метод возвращает **`true`** , целевой объект не может отложить предлагаемое сообщение, так как в дальнейшем для использования отложенного сообщения в реестре ссылок саурсе необходимо определить источник.
 
@@ -174,7 +175,7 @@ virtual bool supports_anonymous_source();
 
 **`true`** значение, если блок может принимать сообщение из источника, который не связан с ним **`false`** .
 
-## <a name="unlink_source"></a><a name="unlink_source"></a>unlink_source
+## <a name="unlink_source"></a><a name="unlink_source"></a> unlink_source
 
 При переопределении в производном классе отменяет связь указанного исходного блока с этим `ITarget` блоком.
 
@@ -187,11 +188,11 @@ virtual void unlink_source(_Inout_ ISource<T>* _PSource) = 0;
 *_PSource*<br/>
 `ISource`Несвязанный с этим `ITarget` блоком блок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция не должна вызываться напрямую в `ITarget` блоке. Блоки должны быть отключены с `unlink_target` помощью `unlink_targets` методов или для `ISource` блоков, которые будут вызывать `unlink_source` метод для соответствующего целевого объекта.
 
-## <a name="unlink_sources"></a><a name="unlink_sources"></a>unlink_sources
+## <a name="unlink_sources"></a><a name="unlink_sources"></a> unlink_sources
 
 При переопределении в производном классе отменяет связь всех исходных блоков с этим `ITarget` блоком.
 

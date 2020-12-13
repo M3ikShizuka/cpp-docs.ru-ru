@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура Иумскомплетионлист'
 title: Структура IUMSCompletionList
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - IUMSCompletionList structure
 ms.assetid: 81b5250e-3065-492c-b20d-2cdabf12271a
-ms.openlocfilehash: c388cc98aedbd35b2d0e00a4653a85a47abcb838
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: b54766e8b1c6f2e7c0afbb5e4e9a8efc0c455b4d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368125"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334358"
 ---
 # <a name="iumscompletionlist-structure"></a>Структура IUMSCompletionList
 
@@ -25,17 +26,17 @@ ms.locfileid: "81368125"
 struct IUMSCompletionList;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[IUMSCompletionList::GetUnblockУведомления](#getunblocknotifications)|Извлекает цепочку `IUMSUnblockNotification` интерфейсов, представляющих контексты выполнения, прокси-данные которых были разблокированы с момента последнего вызова этого метода.|
+|[Иумскомплетионлист:: Жетунблоккнотификатионс](#getunblocknotifications)|Извлекает цепочку `IUMSUnblockNotification` интерфейсов, представляющих контексты выполнения, связанные прокси-серверы потоков которых были разблокированы с момента последнего вызова этого метода.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Планировщик должен быть чрезвычайно осторожным в отношении того, какие действия выполняются после использования этого интерфейса для разграничения элементов из списка завершения. Элементы должны быть помещены в список планировщиков runnable контекстов и быть в целом доступны как можно скорее. Вполне возможно, что один из разогнаных предметов получил право собственности на произвольный замок. Планировщик не может совершать произвольные вызовы функций, которые могут блокировать между вызовом для разложения элементов и размещением этих элементов в списке, к которым обычно можно получить доступ из планировщика.
+Планировщик должен быть чрезвычайно осторожность, какие действия выполняются после использования этого интерфейса для вывода элементов из очереди в списке завершения. Элементы должны быть помещены в список готовых к выполнению контекстов планировщика и доступны как можно быстрее. Вполне возможно, что одному из выведенных из очереди элементов было предоставлено право владения произвольной блокировкой. Планировщик не может выполнять произвольные вызовы функций, которые могут блокировать между вызовом из очереди и размещением этих элементов в списке, доступ к которому можно получить в планировщике.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -43,13 +44,13 @@ struct IUMSCompletionList;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** concrtrm.h
+**Заголовок:** concrtrm. h
 
-**Название:** параллелизм
+**Пространство имен:** параллелизм
 
-## <a name="iumscompletionlistgetunblocknotifications-method"></a><a name="getunblocknotifications"></a>ИСТОЧНИК:GetUnblockУведомления Метод
+## <a name="iumscompletionlistgetunblocknotifications-method"></a><a name="getunblocknotifications"></a> Метод Иумскомплетионлист:: Жетунблоккнотификатионс
 
-Извлекает цепочку `IUMSUnblockNotification` интерфейсов, представляющих контексты выполнения, прокси-данные которых были разблокированы с момента последнего вызова этого метода.
+Извлекает цепочку `IUMSUnblockNotification` интерфейсов, представляющих контексты выполнения, связанные прокси-серверы потоков которых были разблокированы с момента последнего вызова этого метода.
 
 ```cpp
 virtual IUMSUnblockNotification *GetUnblockNotifications() = 0;
@@ -59,12 +60,12 @@ virtual IUMSUnblockNotification *GetUnblockNotifications() = 0;
 
 Цепочка `IUMSUnblockNotification` интерфейсов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Возвратные уведомления недействительны после переноса контекстов выполнения.
+Возвращенные уведомления недействительны после перепланирования контекстов выполнения.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен concurrency](concurrency-namespace.md)<br/>
+[Пространство имен Concurrency](concurrency-namespace.md)<br/>
 [Структура IUMSScheduler](iumsscheduler-structure.md)<br/>
 [Структура IUMSUnblockNotification](iumsunblocknotification-structure.md)

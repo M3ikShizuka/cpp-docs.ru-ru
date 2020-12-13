@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __svm_vmsave'
 title: __svm_vmsave
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - VMSAVE instruction
 - __svm_vmsave intrinsic
 ms.assetid: 617a60bd-8514-4ba1-8066-bcf4dd481030
-ms.openlocfilehash: f91efa7116a8a8e9ebe27c7e5e4e64c4f1533e9d
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 5c0e4eb5f2d4c0f73921572811b070c8f87a2673
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219793"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333682"
 ---
 # <a name="__svm_vmsave"></a>__svm_vmsave
 
@@ -33,17 +34,17 @@ void __svm_vmsave(
 *вмкбфисикаладдресс*\
 окне Физический адрес ВМКБ.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Функция `__svm_vmsave` эквивалентна инструкции компьютера `VMSAVE` . Эта функция поддерживает взаимодействие монитора виртуальной машины узла с гостевой операционной системой и ее приложениями. Дополнительные сведения см. в документе "Ручная задача программиста архитектуры AMD64", том 2: Системное программирование, «номер документа 24593, редакция 3,11 или более поздней версии, на сайте [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) .
+Функция `__svm_vmsave` эквивалентна инструкции компьютера `VMSAVE` . Эта функция поддерживает взаимодействие монитора виртуальной машины узла с гостевой операционной системой и ее приложениями. Дополнительные сведения см. в документе "Ручная задача программиста архитектуры AMD64, том 2. Программирование системы", "номер документа 24593, редакция 3,11 или более поздней версии" на сайте [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) .
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__svm_vmsave`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
 **Завершение блока, относящегося только к системам Майкрософт**
 

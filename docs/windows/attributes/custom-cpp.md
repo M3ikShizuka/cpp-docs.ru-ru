@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Custom (C++)'
 title: custom (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - custom attributes, defining
 ms.assetid: 3abac928-4d55-4ea6-8cf6-8427a4ad79f1
-ms.openlocfilehash: 7a1d9bd64a28fa7c08477c6011dc0e8236b7bcf6
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 7771230fd6eed5f567fb2e74e8cd869a0b3618f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87521256"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333151"
 ---
 # <a name="custom-c"></a>custom (C++)
 
@@ -34,7 +35,7 @@ ms.locfileid: "87521256"
 *value*<br/>
 Значение, которое может быть помещается в вариант.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 **Настраиваемый** атрибут C++ приведет к помещению данных в библиотеку типов. Вам потребуется средство, считывающее пользовательское значение из библиотеки типов.
 
@@ -51,7 +52,7 @@ ms.locfileid: "87521256"
 
 Дополнительные сведения о контекстах атрибутов см. в разделе [Контексты атрибутов](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Атрибуты IDL](idl-attributes.md)<br/>
 [Изолированные атрибуты](stand-alone-attributes.md)<br/>

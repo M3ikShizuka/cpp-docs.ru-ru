@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: db_param'
 title: db_param (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_param attribute
 ms.assetid: a28315f5-4722-459e-92ef-32e83c0b205a
-ms.openlocfilehash: 008a7f1ea07e6c23ad6d812ac4fbf3b30ef1da89
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 27666b4cdf027e24b54326a3acc5fe701b9f6f44
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833079"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333107"
 ---
 # <a name="db_param"></a>db_param
 
@@ -25,7 +26,7 @@ ms.locfileid: "88833079"
 
 ### <a name="parameters"></a>Параметры
 
-*ordinal*<br/>
+*порядковый номер*<br/>
 Номер столбца (DBCOLUMNINFO порядковый номер), соответствующий полю в наборе строк, к которому требуется привязать данные.
 
 *типу paramtype*<br/>
@@ -52,7 +53,7 @@ ms.locfileid: "88833079"
 *length*<br/>
 Используемых Переменная-член, используемая для хранения размера столбца в байтах.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **db_param** определяет параметры, используемые в командах; Поэтому он используется с `db_command` . Например, можно использовать **db_param** для привязки параметров в запросах SQL или хранимых процедурах. Параметры в хранимой процедуре обозначаются вопросительными знаками (?), и элементы данных следует привязывать в порядке, в котором отображаются параметры.
 
@@ -60,7 +61,7 @@ ms.locfileid: "88833079"
 
 **db_param** используется в сочетании с атрибутами [db_table](db-table.md) или [db_command](db-command.md) .
 
-Если поставщик атрибутов потребителя применяет этот атрибут к классу, компилятор переименует класс в \_*YourClassName*Accessor, где *YourClassName* — это имя, которое вы присвоили классу. Также компилятор создаст класс с именем *YourClassName*, производный от \_*YourClassName*Accessor.  В представлении классов отображаются оба класса.
+Если поставщик атрибутов потребителя применяет этот атрибут к классу, компилятор переименует класс в \_*YourClassName* Accessor, где *YourClassName* — это имя, которое вы присвоили классу. Также компилятор создаст класс с именем *YourClassName*, производный от \_*YourClassName* Accessor.  В представлении классов отображаются оба класса.
 
 ## <a name="example"></a>Пример
 

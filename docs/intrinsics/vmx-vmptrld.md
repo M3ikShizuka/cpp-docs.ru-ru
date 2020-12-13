@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __vmx_vmptrld'
 title: __vmx_vmptrld
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - __vmx_vmptrld intrinsic
 - VMPTRLD instruction
 ms.assetid: 95c9ec5b-1a81-41ba-983e-327bd6a65fcb
-ms.openlocfilehash: 79b5a8b34b652ae1f011e89c793a7157c9e435ee
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 850311e4423940ebd34a203e6d43ec961b3258f4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219505"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333532"
 ---
 # <a name="__vmx_vmptrld"></a>__vmx_vmptrld
 
@@ -35,16 +36,16 @@ int __vmx_vmptrld(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-0\
+0,0
 Операция успешно выполнена.
 
-1\
+одного
 Не удалось выполнить операцию; расширенные сведения о состоянии доступны в `VM-instruction error field` текущей структуре VMCS.
 
-2\
+открыт
 Сбой операции без сведений о состоянии.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Указатель VMCS — это 64-разрядный физический адрес.
 
@@ -52,11 +53,11 @@ int __vmx_vmptrld(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__vmx_vmptrld`|X64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
 **Завершение блока, относящегося только к системам Майкрософт**
 

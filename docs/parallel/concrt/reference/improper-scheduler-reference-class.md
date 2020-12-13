@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: improper_scheduler_reference классе'
 title: Класс improper_scheduler_reference
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - improper_scheduler_reference class
 ms.assetid: 434a7512-7796-4255-92a7-f3bf71c6a7a7
-ms.openlocfilehash: 18536043b0d46a6f27f1e5c60778a22af82ad2d3
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 4857418e14908b2d085d52249236d6395284b98a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77141112"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334604"
 ---
 # <a name="improper_scheduler_reference-class"></a>Класс improper_scheduler_reference
 
@@ -29,7 +30,7 @@ class improper_scheduler_reference : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[improper_scheduler_reference](#ctor)|Перегружен. Создает объект `improper_scheduler_reference`.|
 
@@ -43,9 +44,9 @@ class improper_scheduler_reference : public std::exception;
 
 **Заголовок:** ConcRT. h
 
-**Пространство имен:** concurrency
+**Пространство имен:** параллелизм
 
-## <a name="ctor"></a>improper_scheduler_reference
+## <a name="improper_scheduler_reference"></a><a name="ctor"></a> improper_scheduler_reference
 
 Создает объект `improper_scheduler_reference`.
 
@@ -62,5 +63,5 @@ improper_scheduler_reference() throw();
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен concurrency](concurrency-namespace.md)<br/>
+[Пространство имен Concurrency](concurrency-namespace.md)<br/>
 [Класс Scheduler](scheduler-class.md)

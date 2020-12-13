@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: invalid_scheduler_policy_key классе'
 title: Класс invalid_scheduler_policy_key
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_scheduler_policy_key class
 ms.assetid: 6a7c42fe-9bc4-4a02-bebb-99fe9ef9817d
-ms.openlocfilehash: 60d5a57ff9cb33a3d522c14514f5107844216852
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: d352246cf0fe94f0ba5ee567f353680c89efcddc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77143024"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334510"
 ---
 # <a name="invalid_scheduler_policy_key-class"></a>Класс invalid_scheduler_policy_key
 
@@ -29,7 +30,7 @@ class invalid_scheduler_policy_key : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[invalid_scheduler_policy_key](#ctor)|Перегружен. Создает объект `invalid_scheduler_policy_key`.|
 
@@ -43,9 +44,9 @@ class invalid_scheduler_policy_key : public std::exception;
 
 **Заголовок:** ConcRT. h
 
-**Пространство имен:** concurrency
+**Пространство имен:** параллелизм
 
-## <a name="ctor"></a>invalid_scheduler_policy_key
+## <a name="invalid_scheduler_policy_key"></a><a name="ctor"></a> invalid_scheduler_policy_key
 
 Создает объект `invalid_scheduler_policy_key`.
 
@@ -62,5 +63,5 @@ invalid_scheduler_policy_key() throw();
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен concurrency](concurrency-namespace.md)<br/>
+[Пространство имен Concurrency](concurrency-namespace.md)<br/>
 [Класс SchedulerPolicy](schedulerpolicy-class.md)

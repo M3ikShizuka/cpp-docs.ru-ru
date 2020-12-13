@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: упаковка (C++/CLI и C++/CX)'
 title: Упаковка-преобразование (C++/CLI и C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - boxing, C++
 ms.assetid: b5fd2c98-c578-4f83-8257-6dd663478665
-ms.openlocfilehash: 709754e8609406f635444937af93488060167ba9
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b3bdc87d9dea2a5a70344ee032655712af221d59
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172611"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333757"
 ---
 # <a name="boxing--ccli-and-ccx"></a>Упаковка-преобразование (C++/CLI и C++/CX)
 
@@ -82,11 +83,11 @@ void BlankPage::OnNavigatedTo(NavigationEventArgs^ e)
 
 Дополнительные сведения см. в разделе:
 
-- [Практическое руководство. Явный запрос упаковки-преобразования](../dotnet/how-to-explicitly-request-boxing.md)
+- [Как явно запрашивать упаковку-преобразование](../dotnet/how-to-explicitly-request-boxing.md)
 
-- [Практическое руководство. Использование gcnew для создания типов значений и использование неявной упаковки-преобразования](../dotnet/how-to-use-gcnew-to-create-value-types-and-use-implicit-boxing.md)
+- [Как использовать gcnew для создания типов значений и использования неявной упаковки](../dotnet/how-to-use-gcnew-to-create-value-types-and-use-implicit-boxing.md)
 
-- [Практическое руководство. Распаковка-преобразование](../dotnet/how-to-unbox.md)
+- [Практическое руководство. Распаковка](../dotnet/how-to-unbox.md)
 
 - [Стандартные преобразования и неявная упаковка-преобразование](../dotnet/standard-conversions-and-implicit-boxing.md)
 

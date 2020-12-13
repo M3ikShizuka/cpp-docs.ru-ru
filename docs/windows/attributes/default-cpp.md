@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Default (C++)'
 title: Default (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - attributes [C#], default attribute
 - defaults, default attribute
 ms.assetid: 0cdca716-1ba8-46d7-9399-167e55492870
-ms.openlocfilehash: b53420d721b43f9a51b19c4cc8e4a83fc8b94ed4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 83c4a17f513db755395ed978d57c9c6f01f84ca3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842446"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333014"
 ---
 # <a name="default-c"></a>default (C++)
 
@@ -37,7 +38,7 @@ ms.locfileid: "88842446"
 
 Если исходный интерфейс по умолчанию не указан, в качестве интерфейса по умолчанию используется первый исходный интерфейс.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **`default`** Атрибут C++ имеет те же функциональные возможности, что и атрибут MIDL [по умолчанию](/windows/win32/Midl/default) . **`default`** Атрибут также используется с атрибутом [case](case-cpp.md) .
 

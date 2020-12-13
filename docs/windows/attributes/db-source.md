@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: db_source'
 title: db_source (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_source attribute
 ms.assetid: 0ec8bbf7-ade2-4899-bf4c-8608b92779bc
-ms.openlocfilehash: f17a4ea183a24f7bf4e88137f4536ca082efdf85
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 273d6626a8cd6fa2cadc42bac7ddb2e5e28a69c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831389"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333066"
 ---
 # <a name="db_source"></a>db_source
 
@@ -34,7 +35,7 @@ ms.locfileid: "88831389"
 *состав*<br/>
 Определяет переменную, которая будет получать HRESULT от этой команды базы данных (необязательно). Если переменная не существует, она будет автоматически внедрена с помощью атрибута.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **db_source** создает объект [CDataSource](../../data/oledb/cdatasource-class.md) и [CSession](../../data/oledb/csession-class.md) , который вместе представляет соединение с источником данных OLE DB потребителя.
 
@@ -44,7 +45,7 @@ ms.locfileid: "88831389"
 
 **db_source** добавляет свойства источника данных в класс или в метод. Он используется вместе с `db_command` (который принимает параметр *имени* *db_source* в качестве параметра *source_name* ).
 
-Если поставщик атрибутов потребителя применяет этот атрибут к классу, компилятор переименует класс в \_*YourClassName*Accessor, где *YourClassName* — это имя, которое вы присвоили классу. Также компилятор создаст класс с именем *YourClassName*, производный от \_*YourClassName*Accessor.  В представлении классов отображаются оба класса.
+Если поставщик атрибутов потребителя применяет этот атрибут к классу, компилятор переименует класс в \_*YourClassName* Accessor, где *YourClassName* — это имя, которое вы присвоили классу. Также компилятор создаст класс с именем *YourClassName*, производный от \_*YourClassName* Accessor.  В представлении классов отображаются оба класса.
 
 Пример использования этого атрибута в приложении см. в разделе [Read](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer).
 

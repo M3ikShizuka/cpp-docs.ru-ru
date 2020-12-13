@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __ud2'
 title: __ud2
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - UD2 instruction
 - __ud2 intrinsic
 ms.assetid: 0831cd5a-8b65-402e-bb57-11e1d5d7ffd2
-ms.openlocfilehash: b5aa20804099af4d75dcc62a5e62ccc0d4a09566
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 2b5f0b9ffec066baa3eb2fa212dfc7baf3a6cb49
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219757"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333671"
 ---
 # <a name="__ud2"></a>__ud2
 
@@ -26,19 +27,19 @@ ms.locfileid: "70219757"
 void __ud2();
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 При выполнении неопределенной инструкции процессор создает исключение недопустимого кода операции.
 
-Функция эквивалентна инструкции компьютера и доступна только в режиме ядра. `UD2` `__ud2` Дополнительные сведения см. в документе "Руководство разработчика по архитектуры Intel, том 2: Справочник по набору инструкций "на сайте корпорации [Intel](https://software.intel.com/articles/intel-sdm) .
+`__ud2`Функция эквивалентна `UD2` инструкции компьютера и доступна только в режиме ядра. Дополнительные сведения см. в документе "Руководство разработчика по архитектуры Intel, том 2. Справочник по набору инструкций" на сайте корпорации [Intel](https://software.intel.com/articles/intel-sdm) .
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__ud2`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
 **Завершение блока, относящегося только к системам Майкрософт**
 
@@ -82,6 +83,6 @@ Before __ud2(). Return code = 0.
 After __ud2().  Return code = 1.
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Встроенные функции компилятора](../intrinsics/compiler-intrinsics.md)

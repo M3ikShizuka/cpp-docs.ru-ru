@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в статье как использовать обработку исключений для прерывания работы параллельного цикла.
 title: Практическое руководство. Использование обработки исключений для выхода из параллельного цикла
 ms.date: 11/04/2016
 helpviewer_keywords:
 - search algorithm, writing [Concurrency Runtime]
 - writing a search algorithm [Concurrency Runtime]
 ms.assetid: 16d7278c-2d10-4014-9f58-f1899e719ff9
-ms.openlocfilehash: f6842e3093a577289c0c4432d96298e3c7b2bb92
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: aedad8f5851a606b91894ea07fce7e666d307992
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008500"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334680"
 ---
 # <a name="how-to-use-exception-handling-to-break-from-a-parallel-loop"></a>Практическое руководство. Использование обработки исключений для выхода из параллельного цикла
 
@@ -68,7 +69,7 @@ Did not find node with value 17522.
 
 > **cl.exe/EHsc ТАСК-три-СЕАРЧ. cpp**
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Отмена в библиотеке параллельных шаблонов](cancellation-in-the-ppl.md)<br/>
 [Обработка исключений](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>

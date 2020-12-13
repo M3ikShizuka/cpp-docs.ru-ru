@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: SQL'
 title: SQL
 ms.date: 05/09/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - SQL [C++], ODBC
 - ODBC [C++], SQL implementation
 ms.assetid: e3923bc4-b317-4e0b-afd8-3cd403eb0faf
-ms.openlocfilehash: cdceec9f4a6a39e9e1a50fc002d4220801e8d15a
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 01a559b959d0f9a8c37f13a79855d55c5890f20e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86404272"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97333906"
 ---
 # <a name="sql"></a>SQL
 
@@ -33,7 +34,7 @@ ms.locfileid: "86404272"
 
 - [Как классы базы данных используют SQL](#_core_how_the_database_classes_use_sql).
 
-## <a name="open-database-connectivity-odbc"></a><a name="_core_open_database_connectivity_.28.odbc.29"></a>Открытие подключения к базе данных (ODBC)
+## <a name="open-database-connectivity-odbc"></a><a name="_core_open_database_connectivity_.28.odbc.29"></a> Открытие подключения к базе данных (ODBC)
 
 Классы базы данных реализуются на основе интерфейса ODBC, который использует SQL в интерфейсе уровня вызова вместо того, чтобы внедрять команды SQL в код. Интерфейс ODBC использует SQL для связи с [источником данных](../../data/odbc/data-source-odbc.md) посредством драйверов ODBC. Эти драйверы интерпретируют инструкции SQL и при необходимости преобразуют их в формат, используемый конкретной базой данных, например Microsoft Access. Дополнительные сведения о том, как ODBC использует SQL, см. в справочной документации по [ODBC](../../data/odbc/odbc-basics.md) и [программисту ODBC](/sql/odbc/reference/odbc-programmer-s-reference) .
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура ITopologyExecutionResource'
 title: Структура ITopologyExecutionResource
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - ITopologyExecutionResource structure
 ms.assetid: e36756f7-4cd9-4fa6-ba60-23fea58ef2bf
-ms.openlocfilehash: 2c9221cab1ac2d48bd099a769188e4bee797823c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: c2567cf9e34e0b27308e331056d5e0dbc99b2779
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368149"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334383"
 ---
 # <a name="itopologyexecutionresource-structure"></a>Структура ITopologyExecutionResource
 
@@ -26,18 +27,18 @@ ms.locfileid: "81368149"
 struct ITopologyExecutionResource;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[ITopologyExecutionРесурс::: Газета.](#getid)|Возвращает уникальный идентификатор диспетчера ресурсов для данного ресурса выполнения.|
-|[ITopologyExecutionРесурс::: GetNext](#getnext)|Возвращает интерфейс для следующего ресурса выполнения в порядке перечисления.|
+|[ITopologyExecutionResource:: GetId](#getid)|Возвращает уникальный идентификатор диспетчера ресурсов для данного ресурса выполнения.|
+|[ITopologyExecutionResource:: GetNext](#getnext)|Возвращает интерфейс для следующего ресурса выполнения в порядке перечисления.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот интерфейс обычно используется для ходьбы по топологии системы, наблюдаемой диспетчером ресурсов.
+Этот интерфейс обычно используется для анализа топологии системы, наблюдаемой диспетчер ресурсов.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -45,11 +46,11 @@ struct ITopologyExecutionResource;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** concrtrm.h
+**Заголовок:** concrtrm. h
 
-**Название:** параллелизм
+**Пространство имен:** параллелизм
 
-## <a name="itopologyexecutionresourcegetid-method"></a><a name="getid"></a>ITopologyExecutionРесурс::GetId Метод
+## <a name="itopologyexecutionresourcegetid-method"></a><a name="getid"></a> Метод ITopologyExecutionResource:: GetId
 
 Возвращает уникальный идентификатор диспетчера ресурсов для данного ресурса выполнения.
 
@@ -61,7 +62,7 @@ virtual unsigned int GetId() const = 0;
 
 Уникальный идентификатор диспетчера ресурсов для данного ресурса выполнения.
 
-## <a name="itopologyexecutionresourcegetnext-method"></a><a name="getnext"></a>ITopologyExecutionРесурс::GetNext Метод
+## <a name="itopologyexecutionresourcegetnext-method"></a><a name="getnext"></a> Метод ITopologyExecutionResource:: GetNext
 
 Возвращает интерфейс для следующего ресурса выполнения в порядке перечисления.
 
@@ -75,4 +76,4 @@ virtual ITopologyExecutionResource *GetNext() const = 0;
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен concurrency](concurrency-namespace.md)
+[Пространство имен Concurrency](concurrency-namespace.md)
