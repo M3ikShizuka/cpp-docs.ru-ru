@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ungetc_nolock, _ungetwc_nolock'
 title: _ungetc_nolock, _ungetwc_nolock
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - ungettc_nolock function
 - ungetc_nolock function
 ms.assetid: aa02d5c2-1be1-46d2-a8c4-b61269e9d465
-ms.openlocfilehash: 397abcda60dc80f790fcdaba1e6eb0a390f68dc5
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 4b8e788cd64ca00de47109bb12780e2ccc7f4e0b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915987"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186627"
 ---
 # <a name="_ungetc_nolock-_ungetwc_nolock"></a>_ungetc_nolock, _ungetwc_nolock
 
@@ -64,7 +65,7 @@ wint_t _ungetwc_nolock(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Символ, который требуется поместить обратно.
 
 *вышестоящий*<br/>
@@ -76,9 +77,9 @@ wint_t _ungetwc_nolock(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Эти функции являются версиями **ungetc** и **ungetwc**без блокировки. Версии с суффиксом **_nolock** идентичны за исключением того, что они не защищены от помех со стороны других потоков. Они могут выполняться быстрее, поскольку не создают дополнительную нагрузку, связанную с блокировкой работы других потоков. Используйте эти функции только в потокобезопасных контекстах, например в однопоточных приложениях или если вызываемая область уже обрабатывает изоляцию потоков.
+Эти функции являются версиями **ungetc** и **ungetwc** без блокировки. Версии с суффиксом **_nolock** идентичны за исключением того, что они не защищены от помех со стороны других потоков. Они могут выполняться быстрее, поскольку не создают дополнительную нагрузку, связанную с блокировкой работы других потоков. Используйте эти функции только в потокобезопасных контекстах, например в однопоточных приложениях или если вызываемая область уже обрабатывает изоляцию потоков.
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

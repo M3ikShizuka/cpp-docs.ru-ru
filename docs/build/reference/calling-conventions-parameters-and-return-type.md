@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: соглашения о вызовах, параметры и тип возвращаемого значения'
 title: Соглашения о вызове, параметры и тип возвращаемого значения
 ms.date: 02/13/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - helper functions, calling conventions
 - helper functions, return types
 ms.assetid: 0ffa4558-6005-4803-be95-7a8ec8837660
-ms.openlocfilehash: 8813bab0cb55aa57792d0031433d96eefb095da4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f840ecbe3364f293e9445239984ad375eed48aac
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223919"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182532"
 ---
 # <a name="calling-conventions-parameters-and-return-type"></a>Соглашения о вызове, параметры и тип возвращаемого значения
 
@@ -48,13 +49,13 @@ FARPROC WINAPI __delayLoadHelper2(
 
 Вы отвечаете за обработку этих исключений.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Соглашение о вызовах для вспомогательной функции — **`__stdcall`** . Тип возвращаемого значения не важен, поэтому используется ФАРПРОК. Для этой функции используется компоновка C.
 
 Возвращаемое значение вспомогательной подпрограммы загрузки с задержкой должно быть сохранено в переданном указателе на функцию, если только подпрограмма не должна использоваться в качестве обработчика уведомлений. В этом случае за поиск необходимого возвращаемого указателя на функцию отвечает пользовательский код. Затем код преобразователя, создаваемый компоновщиком, принимает это возвращаемое значение в качестве действительной цели импорта и переходит непосредственно к ней.
 
-## <a name="sample"></a>Пример
+## <a name="sample"></a>Образец
 
 В приведенном ниже примере показано, как реализовать простейшую функцию-обработчик.
 
@@ -135,6 +136,6 @@ const PfnDliHook __pfnDliNotifyHook2 = delayHook;
 */
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Основные сведения о вспомогательной функции](understanding-the-helper-function.md)

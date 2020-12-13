@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CHeaderCtrl Class'
 title: Класс CHeaderCtrl
 ms.date: 11/04/2016
 f1_keywords:
@@ -64,12 +65,12 @@ helpviewer_keywords:
 - CHeaderCtrl [MFC], SetItem
 - CHeaderCtrl [MFC], SetOrderArray
 ms.assetid: b847ac90-5fae-4a87-88e0-ca45f77b8b3b
-ms.openlocfilehash: f225d406ab1560b4308a468ebd71b3dfd88cfa2a
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 9fe17b6c2553526af40ead253cd7c03fa6b57612
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562177"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184014"
 ---
 # <a name="cheaderctrl-class"></a>Класс CHeaderCtrl
 
@@ -81,7 +82,7 @@ ms.locfileid: "88562177"
 class CHeaderCtrl : public CWnd
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -122,7 +123,7 @@ class CHeaderCtrl : public CWnd
 |[CHeaderCtrl:: Сетитем](#setitem)|Задает атрибуты указанного элемента в элементе управления "заголовок".|
 |[CHeaderCtrl:: Сетордераррай](#setorderarray)|Задает порядок элементов в элементе управления "заголовок" слева направо.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Элемент управления "заголовок" — это окно, которое обычно располагается над набором столбцов текста или чисел. Он содержит заголовок для каждого столбца, который можно разделить на части. Пользователь может перетаскивать разделители, разделяющие части, для установки ширины каждого столбца. Рисунок элемента управления "заголовок" см. в разделе [элементы управления "заголовок](/windows/win32/Controls/header-controls)".
 
@@ -180,7 +181,7 @@ BOOL ClearAllFilters();
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод реализует поведение сообщения Win32 [HDM_CLEARFILTER](/windows/win32/Controls/hdm-clearfilter) со значением столбца-1, как описано в Windows SDK.
 
@@ -205,7 +206,7 @@ BOOL ClearFilter(int nColumn);
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод реализует поведение сообщения Win32 [HDM_CLEARFILTER](/windows/win32/Controls/hdm-clearfilter), как описано в Windows SDK.
 
@@ -243,7 +244,7 @@ virtual BOOL Create(
 
 Ненулевое значение, если инициализация прошла успешно; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `CHeaderCtrl`Объект создается в два этапа. Сначала вызовите конструктор, а затем вызовите метод `Create` , который создает элемент управления "заголовок" и присоединяет его к `CHeaderCtrl` объекту.
 
@@ -313,7 +314,7 @@ virtual BOOL CreateEx(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте `CreateEx` вместо `Create` для применения расширенных стилей Windows, заданных **WS_EX_** в расширенном стиле Windows.
 
@@ -334,7 +335,7 @@ CImageList* CreateDragImage(int nIndex);
 
 Указатель на объект [CImageList](../../mfc/reference/cimagelist-class.md) в случае успешного выполнения; в противном случае — NULL. Возвращаемый список содержит только одно изображение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [HDM_CREATEDRAGIMAGE](/windows/win32/Controls/hdm-createdragimage), как описано в Windows SDK. Он предоставляется для поддержки перетаскивания элемента заголовка.
 
@@ -374,7 +375,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 *лпдравитемструкт*<br/>
 Указатель на структуру [дравитемструкт](/windows/win32/api/winuser/ns-winuser-drawitemstruct) , описывающую закрашиваемый элемент.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `itemAction`Элемент `DRAWITEMSTRUCT` структуры определяет выполняемое действие рисования.
 
@@ -410,7 +411,7 @@ BOOL EditFilter(
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод реализует поведение сообщения Win32 [HDM_EDITFILTER](/windows/win32/Controls/hdm-editfilter), как описано в Windows SDK.
 
@@ -430,7 +431,7 @@ int GetBitmapMargin() const;
 
 Ширина поля точечного рисунка в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [HDM_GETBITMAPMARGIN](/windows/win32/Controls/hdm-getbitmapmargin), как описано в Windows SDK.
 
@@ -450,7 +451,7 @@ int GetFocusedItem() const;
 
 Отсчитываемый от нуля индекс элемента заголовка, который находится в фокусе.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [HDM_GETFOCUSEDITEM](/windows/win32/Controls/hdm-getfocuseditem) сообщение, описанное в Windows SDK.
 
@@ -478,7 +479,7 @@ CImageList* GetImageList() const;
 
 Указатель на объект [CImageList](../../mfc/reference/cimagelist-class.md) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [HDM_GETIMAGELIST](/windows/win32/Controls/hdm-getimagelist), как описано в Windows SDK. `CImageList`Объект, на который указывает возвращаемый указатель, является временным объектом и удаляется при следующей обработке времени простоя.
 
@@ -550,7 +551,7 @@ BOOL GetItemDropDownRect(
 
 Значение TRUE, если эта функция выполнена успешно; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [HDM_GETITEMDROPDOWNRECT](/windows/win32/Controls/hdm-getitemdropdownrect) сообщение, описанное в Windows SDK.
 
@@ -588,7 +589,7 @@ BOOL GetItemRect(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод реализует поведение сообщения Win32 [HDM_GETITEMRECT](/windows/win32/Controls/hdm-getitemrect), как описано в Windows SDK.
 
@@ -614,7 +615,7 @@ BOOL GetOrderArray(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [HDM_GETORDERARRAY](/windows/win32/Controls/hdm-getorderarray), как описано в Windows SDK. Он предоставляется для поддержки упорядочения элементов заголовка.
 
@@ -639,7 +640,7 @@ BOOL GetOverflowRect(LPRECT lpRect) const;
 
 Значение TRUE, если эта функция выполнена успешно; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если элемент управления "заголовок" содержит больше элементов, чем может одновременно отображаться, элемент управления может отобразить кнопку переполнения, которая прокручивается до невидимых элементов. Элемент управления "заголовок" должен иметь стили HDS_OVERFLOW и HDF_SPLITBUTTON для вывода кнопки переполнения. Ограничивающий прямоугольник включает кнопку переполнения и существует только при отображении кнопки переполнения. Дополнительные сведения см. в разделе [стили элементов управления "заголовок](/windows/win32/Controls/header-control-styles)".
 
@@ -674,7 +675,7 @@ int HitTest(LPHDHITTESTINFO* phdhti);
 
 Отсчитываемый от нуля индекс элемента заголовка, если он имеется, в указанной позиции; в противном случае — значение-1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [HDM_HITTEST](/windows/win32/Controls/hdm-hittest) сообщение, описанное в Windows SDK.
 
@@ -733,7 +734,7 @@ BOOL Layout(HDLAYOUT* pHeaderLayout);
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция используется для определения соответствующих измерений для нового элемента управления "заголовок", который должен занимать данный прямоугольник.
 
@@ -758,7 +759,7 @@ int OrderToIndex(int nOrder) const;
 
 Индекс элемента в зависимости от его порядка в элементе управления "заголовок". Индекс учитывается слева направо, начиная с 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение макроса Win32 [HDM_ORDERTOINDEX](/windows/win32/controls/hdm-ordertoindex), как описано в Windows SDK. Он предоставляется для поддержки упорядочения элементов заголовка.
 
@@ -779,7 +780,7 @@ int SetBitmapMargin(int nWidth);
 
 Ширина поля точечного рисунка в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [HDM_SETBITMAPMARGIN](/windows/win32/Controls/hdm-setbitmapmargin), как описано в Windows SDK.
 
@@ -804,7 +805,7 @@ int SetFilterChangeTimeout(DWORD dwTimeOut);
 
 Индекс изменяемого элемента управления фильтра.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [HDM_SETFILTERCHANGETIMEOUT](/windows/win32/Controls/hdm-setfilterchangetimeout), как описано в Windows SDK.
 
@@ -829,7 +830,7 @@ BOOL SetFocusedItem(int iItem);
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [HDM_SETFOCUSEDITEM](/windows/win32/Controls/hdm-setfocuseditem) сообщение, описанное в Windows SDK.
 
@@ -866,7 +867,7 @@ int SetHotDivider(int nIndex);
 
 Индекс выделенного разделителя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [HDM_SETHOTDIVIDER](/windows/win32/Controls/hdm-sethotdivider), как описано в Windows SDK. Он предоставляется для поддержки перетаскивания элемента заголовка.
 
@@ -891,7 +892,7 @@ CImageList* SetImageList(CImageList* pImageList);
 
 Указатель на объект [CImageList](../../mfc/reference/cimagelist-class.md) , ранее назначенный элементу управления заголовка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [HDM_SETIMAGELIST](/windows/win32/Controls/hdm-setimagelist), как описано в Windows SDK. `CImageList`Объект, на который указывает возвращаемый указатель, является временным объектом и удаляется при следующей обработке времени простоя.
 
@@ -947,7 +948,7 @@ BOOL SetOrderArray(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение макроса Win32 [HDM_SETORDERARRAY](/windows/win32/Controls/hdm-setorderarray), как описано в Windows SDK. Он предоставляется для поддержки упорядочения элементов заголовка.
 
@@ -955,7 +956,7 @@ BOOL SetOrderArray(
 
   См. пример для [CHeaderCtrl:: жетордераррай](#getorderarray).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [CWnd, класс](../../mfc/reference/cwnd-class.md)<br/>
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>

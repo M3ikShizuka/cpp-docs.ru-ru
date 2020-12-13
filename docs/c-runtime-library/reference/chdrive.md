@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _chdrive'
 title: _chdrive
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - _chdrive function
 - chdrive function
 ms.assetid: 212a1a4b-4fa8-444e-9677-7fca4c8c47e3
-ms.openlocfilehash: a597a67c7d2083cf5860112f6ed55ff248053d17
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d3935c64d8ae67c72f8516e4c2d21a7a0aa6e21b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917020"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186692"
 ---
 # <a name="_chdrive"></a>_chdrive
 
@@ -60,7 +61,7 @@ int _chdrive(
 
 Ноль (0), если текущий рабочий диск был успешно изменен; в противном случае возвращается −1.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Если параметр *Drive* не находится в диапазоне от 1 до 26, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, функция **_chdrive** возвращает значение-1 **, а** **для свойства** **_doserrno** устанавливается значение **ERROR_INVALID_DRIVE**.
 
@@ -84,7 +85,7 @@ int _chdrive(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Управление каталогами](../../c-runtime-library/directory-control.md)<br/>
+[Управление каталогом](../../c-runtime-library/directory-control.md)<br/>
 [_chdir, _wchdir](chdir-wchdir.md)<br/>
 [_fullpath, _wfullpath](fullpath-wfullpath.md)<br/>
 [_getcwd, _wgetcwd](getcwd-wgetcwd.md)<br/>

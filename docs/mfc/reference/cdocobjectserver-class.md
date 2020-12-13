@@ -1,5 +1,6 @@
 ---
-title: Класс CDocObjectServer
+description: 'Дополнительные сведения о: Кдокобжектсервер Class'
+title: Класс Кдокобжектсервер
 ms.date: 09/12/2018
 f1_keywords:
 - CDocObjectServer
@@ -16,14 +17,14 @@ helpviewer_keywords:
 - CDocObjectServer [MFC], OnApplyViewState
 - CDocObjectServer [MFC], OnSaveViewState
 ms.assetid: 18cd0dff-0616-4472-b8d9-66c081bc383a
-ms.openlocfilehash: f415df35b13e50eee092f87eca0627e5cf143720
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 5a87363fef66a4819fc8efd504da96398cf3c89e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753291"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184950"
 ---
-# <a name="cdocobjectserver-class"></a>Класс CDocObjectServer
+# <a name="cdocobjectserver-class"></a>Класс Кдокобжектсервер
 
 Реализует дополнительные интерфейсы OLE, необходимые для преобразования стандартного сервера `COleDocument` в полноценный сервер DocObject: `IOleDocument`, `IOleDocumentView`, `IOleCommandTarget`и `IPrint`.
 
@@ -33,37 +34,37 @@ ms.locfileid: "81753291"
 class CDocObjectServer : public CCmdTarget
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CDocObjectServer::CDocObjectServer](#cdocobjectserver)|Формирует объект `CDocObjectServer`.|
+|[Кдокобжектсервер:: Кдокобжектсервер](#cdocobjectserver)|Формирует объект `CDocObjectServer`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CDocObjectServer::ActivateDocObject](#activatedocobject)|Активирует сервер объекта документа, но не показывает его.|
+|[Кдокобжектсервер:: Активатедокобжект](#activatedocobject)|Активирует сервер объектов документов, но не отображает его.|
 
 ### <a name="protected-methods"></a>Защищенные методы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CDocObjectServer::OnActivateView](#onactivateview)|Отображает представление DocObject.|
-|[CDocObjectServer::OnApplyViewState](#onapplyviewstate)|Восстанавливает состояние представления DocObject.|
-|[CDocObjectServer::OnSaveviewState](#onsaveviewstate)|Сохраняет состояние представления DocObject.|
+|[Кдокобжектсервер:: Онактиватевиев](#onactivateview)|Отображает представление DocObject.|
+|[Кдокобжектсервер:: Онаппливиевстате](#onapplyviewstate)|Восстанавливает состояние представления DocObject.|
+|[Кдокобжектсервер:: Онсавевиевстате](#onsaveviewstate)|Сохраняет состояние представления DocObject.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CDocObjectServer`происходит от `CCmdTarget` и работает в `COleServerDoc` тесном контакте с подвергать интерфейсы.
+`CDocObjectServer` является производным от `CCmdTarget` и тесно взаимодействует с `COleServerDoc` интерфейсами.
 
-Серверный документ DocObject может содержать объекты [CDocObjectServerItem,](../../mfc/reference/cdocobjectserveritem-class.md) которые представляют интерфейс сервера для элементов DocObject.
+Документ сервера DocObject может содержать объекты [кдокобжектсерверитем](../../mfc/reference/cdocobjectserveritem-class.md) , представляющие интерфейс сервера для DocObject элементов.
 
-Чтобы настроить сервер DocObject, вывешив свой собственный класс `CDocObjectServer` из функций настройки представления, [OnActivateView,](#onactivateview) [OnApplyViewState](#onapplyviewstate)и [OnSaveViewState.](#onsaveviewstate) Вам нужно будет предоставить новый экземпляр вашего класса в ответ на вызовы фреймворка.
+Чтобы настроить сервер DocObject, создайте класс, производный от класса, `CDocObjectServer` и переопределите его функции настройки представления, [онактиватевиев](#onactivateview), [онаппливиевстате](#onapplyviewstate)и [онсавевиевстате](#onsaveviewstate). Необходимо будет предоставить новый экземпляр класса в ответ на вызовы платформы.
 
-Для получения дополнительной информации о DocObjects, [см. CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md) и [COleCmdUI](../../mfc/reference/colecmdui-class.md) в *MFC Справочник*.
+Дополнительные сведения о Докобжектс см. в разделе [кдокобжектсерверитем](../../mfc/reference/cdocobjectserveritem-class.md) и [колекмдуи](../../mfc/reference/colecmdui-class.md) в *справочнике по MFC*.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -75,23 +76,23 @@ class CDocObjectServer : public CCmdTarget
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxdocob.h
+**Заголовок:** афксдокоб. h
 
-## <a name="cdocobjectserveractivatedocobject"></a><a name="activatedocobject"></a>CDocObjectServer::ActivateDocObject
+## <a name="cdocobjectserveractivatedocobject"></a><a name="activatedocobject"></a> Кдокобжектсервер:: Активатедокобжект
 
-Вызовите эту функцию, чтобы активировать (но не показывать) сервер объекта документа.
+Вызовите эту функцию, чтобы активировать (но не показывать) сервер объектов Document.
 
 ```cpp
 void ActivateDocObject();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`ActivateDocObject`вызова `IOleDocumentSite`'s `ActivateMe` метод, но не показывает вид, потому что он ждет конкретных инструкций о том, как настроить и отобразить представление, данное в вызове [на CDocObjectServer: OnActivateView](#onactivateview).
+`ActivateDocObject` вызывает `IOleDocumentSite` `ActivateMe` метод, но не показывает представление, поскольку он ожидает конкретные инструкции по настройке и отображению представления, заданному в вызове [Кдокобжектсервер:: онактиватевиев](#onactivateview).
 
-Вместе `ActivateDocObject` активируйте `OnActivateView` и отображайте представление DocObject. Активация DocObject отличается от других видов активации OLE на месте. Активация DocObject обходит границы люка и украшения объектов (например, рукоятки размеров), игнорирует функции размера объекта и рисует прокрутки баров в прямоугольнике представления, а не рисует их за пределами этого прямоугольника (как при обычной активации на месте).
+Вместе и `ActivateDocObject` `OnActivateView` активизируйте и отобразите представление DocObject. Активация DocObject отличается от других видов активации на месте OLE. DocObject активация обходит отображение границ штриховки на месте и оформлений объектов (таких как маркеры изменения размера), игнорирует функции экстента объектов и рисует полосы прокрутки внутри прямоугольника представления, а не выводит их за пределы этого прямоугольника (как при обычной активации на месте).
 
-## <a name="cdocobjectservercdocobjectserver"></a><a name="cdocobjectserver"></a>CDocObjectServer::CDocObjectServer
+## <a name="cdocobjectservercdocobjectserver"></a><a name="cdocobjectserver"></a> Кдокобжектсервер:: Кдокобжектсервер
 
 Создает и инициализирует объект `CDocObjectServer`.
 
@@ -103,19 +104,19 @@ explicit CDocObjectServer(
 
 ### <a name="parameters"></a>Параметры
 
-*pOwner*<br/>
-Указатель на документ сайта клиента, который является клиентом сервера DocObject.
+*повнер*<br/>
+Указатель на клиентский документ сайта, который является клиентом для сервера DocObject.
 
-*pDocSite*<br/>
-Указатель на `IOleDocumentSite` интерфейс, реализованный контейнером.
+*пдоксите*<br/>
+Указатель на интерфейс, `IOleDocumentSite` реализуемый контейнером.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Когда DocObject активен, интерфейс клиента `IOleDocumentSite`сайта OLE () позволяет серверу DocObject общаться со своим клиентом (контейнером). При активации сервера DocObject сначала проверяется, реализует `IOleDocumentSite` ли контейнер интерфейс. Если это так, [COleServerDoc::GetDocObjectServer](../../mfc/reference/coleserverdoc-class.md#getdocobjectserver) называется, чтобы увидеть, если контейнер поддерживает DocObjects. По умолчанию возвращает `GetDocObjectServer` NULL. Необходимо `COleServerDoc::GetDocObjectServer` переопределить, чтобы `CDocObjectServer` построить новый объект или собственный объект, `COleServerDoc` с `IOleDocumentSite` указателями на контейнер и его интерфейс в качестве аргументов для конструктора.
+Когда DocObject активен, клиентский интерфейс OLE ( `IOleDocumentSite` ) позволяет серверу DocObject взаимодействовать со своим клиентом (контейнером). Когда сервер DocObject активируется, он сначала проверяет, что контейнер реализует `IOleDocumentSite` интерфейс. Если это так, вызывается [колесервердок:: жетдокобжектсервер](../../mfc/reference/coleserverdoc-class.md#getdocobjectserver) , чтобы проверить, поддерживает ли контейнер докобжектс. По умолчанию `GetDocObjectServer` возвращает значение null. Необходимо переопределить `COleServerDoc::GetDocObjectServer` , чтобы создать новый `CDocObjectServer` объект или производный объект, используя указатели на `COleServerDoc` контейнер и его `IOleDocumentSite` интерфейс в качестве аргументов конструктора.
 
-## <a name="cdocobjectserveronactivateview"></a><a name="onactivateview"></a>CDocObjectServer::OnActivateView
+## <a name="cdocobjectserveronactivateview"></a><a name="onactivateview"></a> Кдокобжектсервер:: Онактиватевиев
 
-Вызовите эту функцию для отображения представления DocObject.
+Вызовите эту функцию, чтобы отобразить представление DocObject.
 
 ```
 virtual HRESULT OnActivateView();
@@ -123,15 +124,15 @@ virtual HRESULT OnActivateView();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает значение ошибки или предупреждения. По умолчанию, возвращает NOERROR в случае успеха; в противном случае, E_FAIL.
+Возвращает значение ошибки или предупреждения. По умолчанию в случае успешного выполнения функция возвращает значение "No ERROR". в противном случае E_FAIL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Эта функция создает окно кадра на месте, рисует прокрутки в представлении, настраивает меню, которое сервер делит с контейнером, добавляет элементы управления кадром, устанавливает активный объект, затем, наконец, показывает окно кадра на месте и устанавливает фокус.
+Эта функция создает окно фрейма на месте, выводит полосы прокрутки в представлении, настраивает меню, которые сервер использует совместно с контейнером, добавляет элементы управления Frame, устанавливает активный объект, затем отображает окно фрейма на месте и устанавливает фокус.
 
-## <a name="cdocobjectserveronapplyviewstate"></a><a name="onapplyviewstate"></a>CDocObjectServer::OnApplyViewState
+## <a name="cdocobjectserveronapplyviewstate"></a><a name="onapplyviewstate"></a> Кдокобжектсервер:: Онаппливиевстате
 
-Переопределить эту функцию для восстановления состояния представления DocObject.
+Переопределите эту функцию, чтобы восстановить состояние представления DocObject.
 
 ```
 virtual void OnApplyViewState(CArchive& ar);
@@ -140,17 +141,17 @@ virtual void OnApplyViewState(CArchive& ar);
 ### <a name="parameters"></a>Параметры
 
 *ar*<br/>
-Объект, `CArchive` с которого можно выставить состояние представления.
+`CArchive`Объект, из которого следует сериализовать состояние представления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Эта функция вызывается при отображении представления в первый раз после его мгновенного воспроизведения. `OnApplyViewState`инструктирует представление о репрефализации `CArchive` в соответствии с данными на объекте, ранее сохраненных с [OnSaveViewState.](#onsaveviewstate) Представление должно проверять данные `CArchive` в объекте, поскольку контейнер не пытается интерпретировать данные состояния представления каким-либо образом.
+Эта функция вызывается, когда представление отображается в первый раз после его создания. `OnApplyViewState` Инструктирует представление для повторной инициализации в соответствии с данными в `CArchive` объекте, ранее сохраненном с помощью [онсавевиевстате](#onsaveviewstate). Представление должно проверять данные в `CArchive` объекте, так как контейнер не пытается интерпретировать данные состояния представления каким-либо образом.
 
-Можно использовать `OnSaveViewState` для хранения постоянной информации, характерной для состояния представления. Если вы `OnSaveViewState` переопределяете для хранения информации, вы хотите переопределить, `OnApplyViewState` чтобы прочитать эту информацию и применить ее к вашему представлению, когда она недавно активирована.
+Можно использовать `OnSaveViewState` для хранения постоянных сведений, относящихся к состоянию представления. При переопределении `OnSaveViewState` для хранения информации необходимо переопределить `OnApplyViewState` для считывания этой информации и применить ее к представлению, когда она вновь активирована.
 
-## <a name="cdocobjectserveronsaveviewstate"></a><a name="onsaveviewstate"></a>CDocObjectServer::OnSaveviewState
+## <a name="cdocobjectserveronsaveviewstate"></a><a name="onsaveviewstate"></a> Кдокобжектсервер:: Онсавевиевстате
 
-Переизобить эту функцию, чтобы сохранить дополнительную информацию о состоянии вашего представления DocObject.
+Переопределите эту функцию, чтобы сохранить дополнительные сведения о состоянии представления DocObject.
 
 ```
 virtual void OnSaveViewState(CArchive& ar);
@@ -159,16 +160,16 @@ virtual void OnSaveViewState(CArchive& ar);
 ### <a name="parameters"></a>Параметры
 
 *ar*<br/>
-Объект, `CArchive` состояние представления которого является последовательным.
+`CArchive`Объект, для которого сериализуется состояние представления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Состояние может включать такие свойства, как тип представления, коэффициент масштабирования, пункт вставки и выбора и так далее. Контейнер обычно вызывает эту функцию перед деактивацией представления. Сохраненное состояние позже может быть восстановлено через [OnApplyViewState.](#onapplyviewstate)
+Состояние может включать такие свойства, как тип представления, коэффициент масштабирования, точка вставки и выбора и т. д. Контейнер обычно вызывает эту функцию перед деактивацией представления. Сохраненное состояние можно затем восстановить с помощью [онаппливиевстате](#onapplyviewstate).
 
-Можно использовать `OnSaveViewState` для хранения постоянной информации, характерной для состояния представления. Если вы `OnSaveViewState` переопределяете для хранения информации, вы хотите переопределить, `OnApplyViewState` чтобы прочитать эту информацию и применить ее к вашему представлению, когда она недавно активирована.
+Можно использовать `OnSaveViewState` для хранения постоянных сведений, относящихся к состоянию представления. При переопределении `OnSaveViewState` для хранения информации необходимо переопределить `OnApplyViewState` для считывания этой информации и применить ее к представлению, когда она вновь активирована.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс CCmdTarget](../../mfc/reference/ccmdtarget-class.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
-[Класс CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md)
+[Класс от CCmdTarget](../../mfc/reference/ccmdtarget-class.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
+[Класс Кдокобжектсерверитем](../../mfc/reference/cdocobjectserveritem-class.md)

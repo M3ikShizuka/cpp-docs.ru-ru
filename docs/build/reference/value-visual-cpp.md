@@ -1,5 +1,6 @@
 ---
-title: '> значение &lt;(C++ комментарии к документации)'
+description: 'Дополнительные сведения: &lt; значение&gt;'
+title: '&lt;> значений (комментарии к документации по C++)'
 ms.date: 11/04/2016
 f1_keywords:
 - value
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - value C++ XML tag
 - <value> C++ XML tag
 ms.assetid: 0ba0a0d5-bcd7-4862-a169-83f2721ad80e
-ms.openlocfilehash: de84d1faca59a6c8e4f82fba3605cbd54a05bd2e
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 110091607af7c973591384d44816f372f0d15b14
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988591"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187031"
 ---
 # <a name="ltvaluegt"></a>&lt;value&gt;
 
-Тег \<value> позволяет описать свойство и методы доступа к свойству. Обратите внимание, что при добавлении свойства с помощью мастера создания кода из интегрированной среды разработки Visual Studio для нового свойства будет добавлен тег [\<summary>](summary-visual-cpp.md). После этого следует вручную добавить тег \<value> для описания значения, которое представляется свойством.
+\<value>Тег позволяет описать методы доступа свойств и свойств. Обратите внимание, что при добавлении свойства с помощью мастера кода в интегрированной среде разработки Visual Studio будет добавлен [\<summary>](summary-visual-cpp.md) тег для нового свойства. После этого следует вручную добавить тег \<value> для описания значения, которое представляется свойством.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -30,9 +31,9 @@ ms.locfileid: "74988591"
 *property-description*<br/>
 Описание свойства.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
 
-Чтобы обработать и сохранить комментарии документации в файл, при компиляции необходимо использовать параметр [/doc](doc-process-documentation-comments-c-cpp.md).
+Скомпилируйте с [/doc](doc-process-documentation-comments-c-cpp.md) для обработки комментариев документации в файл.
 
 ## <a name="example"></a>Пример
 
@@ -58,6 +59,6 @@ public:
 };
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Документация XML](xml-documentation-visual-cpp.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения об &lt; &gt; операторах памяти
 title: операторы &lt;memory&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,16 +11,16 @@ f1_keywords:
 - memory/std::operator<<
 - memory/std::operator==
 ms.assetid: 257e3ba9-c4c2-4ae8-9b11-b156ba9c28de
-ms.openlocfilehash: 15762e4853cfd018c7cff997a3ed9ba7d86b3c2e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cbf52aa2af13a0eae241444d88e0eeabe7efe47b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233058"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183949"
 ---
 # <a name="ltmemorygt-operators"></a>операторы &lt;memory&gt;
 
-## <a name="operator"></a><a name="op_neq"></a>operator! =
+## <a name="operator"></a><a name="op_neq"></a> operator! =
 
 Проверяет неравенство между объектами.
 
@@ -58,7 +59,7 @@ bool operator!=(
 
 **`true`** значение, если объекты не равны; значение **`false`** , если объекты равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый оператор шаблона возвращает значение false. (Все распределители по умолчанию равны.)
 
@@ -120,7 +121,7 @@ sp0 != sp0 == false
 sp0 != sp1 == true
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>Оператор = =
+## <a name="operator"></a><a name="op_eq_eq"></a> Оператор = =
 
 Проверяет равенство между объектами.
 
@@ -159,7 +160,7 @@ bool operator==(
 
 **`true`** значение, если объекты равны, **`false`** Если объекты не равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый оператор шаблона возвращает значение true. (Все распределители по умолчанию равны.)
 
@@ -232,7 +233,7 @@ sp0 == sp0 == true
 sp0 == sp1 == false
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>станции&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> станции&gt;=
 
 Проверяет, больше или равен один объект второму объекту.
 
@@ -262,11 +263,11 @@ bool operator>=(
 *Ty2*\
 Тип, управляемый правым общим указателем.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Операторы шаблона возвращают `left.get() >= right.get()`.
 
-## <a name="operatorlt"></a><a name="op_lt"></a>станции&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> станции&lt;
 
 Проверяет, меньше ли один объект второго объекта.
 
@@ -296,7 +297,7 @@ bool operator<(
 *Ty2*\
 Тип, управляемый правым указателем.
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>станции&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> станции&lt;=
 
 Проверяет, меньше или равен один объект второму объекту.
 
@@ -326,11 +327,11 @@ bool operator<=(
 *Ty2*\
 Тип, управляемый правым общим указателем.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Операторы шаблона возвращают `left.get() <= right.get()`
 
-## <a name="operatorgt"></a><a name="op_gt"></a>станции&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> станции&gt;
 
 Проверяет, больше ли один объект второго объекта.
 
@@ -360,7 +361,7 @@ bool operator>(
 *Ty2*\
 Тип, управляемый правым общим указателем.
 
-## <a name="operatorltlt"></a><a name="op_lt_lt"></a>станции&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a> станции&lt;&lt;
 
 Записывает в поток общий указатель.
 
@@ -387,7 +388,7 @@ std::basic_ostream<Elem, Tr>& operator<<(std::basic_ostream<Elem, Tr>& out,
 *портов*\
 Общий указатель.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция шаблона возвращает `out << sp.get()`.
 

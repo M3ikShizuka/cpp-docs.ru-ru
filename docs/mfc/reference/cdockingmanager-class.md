@@ -1,5 +1,6 @@
 ---
-title: Класс CDockingManager
+description: 'Дополнительные сведения о: Кдоккингманажер Class'
+title: Класс Кдоккингманажер
 ms.date: 11/04/2016
 f1_keywords:
 - CDockingManager
@@ -160,14 +161,14 @@ helpviewer_keywords:
 - CDockingManager [MFC], m_nTimeOutBeforeDockingBarDock
 - CDockingManager [MFC], m_nTimeOutBeforeToolBarDock
 ms.assetid: 98e69c43-55d8-4f43-b861-4fda80ec1e32
-ms.openlocfilehash: 76fd12b0817c99d0d08327f9d9156eadf3559dc5
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 5bbcc2a31739a5a81d66713bab47662b96c74e50
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753323"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185054"
 ---
-# <a name="cdockingmanager-class"></a>Класс CDockingManager
+# <a name="cdockingmanager-class"></a>Класс Кдоккингманажер
 
 Реализует базовую функциональность, которая контролирует макет закрепления в окне главного фрейма.
 
@@ -177,108 +178,108 @@ ms.locfileid: "81753323"
 class CDockingManager : public CObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CDockingManager::AddDockSite](#adddocksite)|Создает док-панель и добавляет его в список баров управления.|
-|[CDockingManager::AddHiddenMDITabbedBar](#addhiddenmditabbedbar)|Добавляет ручку в панель панели в список скрытых стекалок MDI.|
-|[CDockingManager::AddMiniFrame](#addminiframe)|Добавляет кадр в список мини-кадров.|
-|[CDockingManager::AddPane](#addpane)|Регистрирует панель с менеджером стыковки.|
-|[CdockingManager::AdjustDockingLayout](#adjustdockinglayout)|Пересчитывает и регулирует расположение всех стекол в окне рамы.|
-|[CDockingManager::AdjustPaneFrames](#adjustpaneframes)|Вызывает отправку сообщения WM_NCCALCSIZE на все `CPaneFrameWnd` стекла и окна.|
-|[CDockingManager::AdjusttToClientArea](#adjustrecttoclientarea)|Регулирует выравнивание прямоугольника.|
-|[CDockingManager::AlignAutoHidePane](#alignautohidepane)|Изображки стыковочную панель в режиме автохайда, так что она занимает всю ширину или высоту клиентской области кадра в окружении док-станций.|
-|[CDockingManager::AutoHidePane](#autohidepane)|Создает панель инструментов для автоматической ауторазии.|
-|[CDockingManager::BringBarsToTop](#bringbarstotop)|Приносит пристыкованные бары, которые имеют указанное выравнивание к верхней части.|
-|[CDockingManager::BuildPanesMenu](#buildpanesmenu)|Добавляет названия стыковочных стекол и панели инструментов в меню.|
-|[CDockingManager::CalcExpectedDockedRect](#calcexpecteddockedrect)|Вычисляет ожидаемый прямоугольник пристыкованного окна.|
-|[CDockingManager::Создание](#create)|Создает стыковку менеджера.|
-|[CDockingManager::DeterminePaneAndStatus](#determinepaneandstatus)|Определяет панель, содержащую заданную точку, и ее статус стыковки.|
-|[CDockingManager::DisableRestoreDockState](#disablerestoredockstate)|Позволяет или отсваивает загрузку макета стыковки из реестра.|
-|[CDockingManager::DockPane](#dockpane)|Пристыкуется к стеку к другому стеку или к окну рамы.|
-|[CDockingManager::DockPaneLeftOf](#dockpaneleftof)|Закрепляет область слева от другой области.|
-|[CDockingManager::EnableAutoHidePanes](#enableautohidepanes)|Позволяет стыковку панели с основной рамой, создает док-панель и добавляет его в список баров управления.|
-|[CDockingManager:EnableDocking](#enabledocking)|Создает док-панель и позволяет стыковки панели к основной раме.|
-|[CDockingManager::EnableDockSiteMenu](#enabledocksitemenu)|Отображает дополнительную кнопку, которая открывает всплывающее меню на подписях всех стыковочных стекол.|
-|[CDockingManager::EnablePaneContextMenu](#enablepanecontextmenu)|Сообщает библиотеке отобразить специальное контекстное меню, в которое есть список панели инструментов приложений и стыковочные панели, когда пользователь нажимает на правую кнопку мыши и библиотека обрабатывает WM_CONTEXTMENU сообщение.|
-|[CDockingManager::FindDockSite](#finddocksite)|Извлекает панель, которая находится в указанном положении и имеет указанное выравнивание.|
-|[CDockingManager::FindDockSiteByPane](#finddocksitebypane)|Возвращает панель, которая имеет идентификатор панели бара цели.|
-|[CDockingManager::FindPaneByID](#findpanebyid)|Находит панель по указанному идентификатору управления.|
-|[CDockingManager::FixupVirtualRects](#fixupvirtualrects)|Замещает все текущие позиции панели инструментов в виртуальные прямоугольники.|
-|[CDockingManager::FrameFromPoint](#framefrompoint)|Возвращает кадр, содержащий заданную точку.|
-|[CDockingManager::GetClientAreaBounds](#getclientareabounds)|Получает прямоугольник, содержащий границы клиентской области.|
-|[CDockingManager::GetDockingMode](#getdockingmode)|Возвращает текущий режим стыковки.|
-|[CDockingManager::GetDockSiteFrameWnd](#getdocksiteframewnd)|Получает указатель на родительскую оконную раму.|
-|[CDockingManager::GetEnabledAutoHideAlignment](#getenabledautohidealignment)|Возвращает включенное выравнивание стекол.|
-|[CDockingManager::GetMiniFrames](#getminiframes)|Получает список минифреймов.|
-|[CDockingManager::GetOuterEdgeBounds](#getouteredgebounds)|Получает прямоугольник, содержащий внешние края рамы.|
-|[CDockingManager::GetPaneList](#getpanelist)|Возвращает список стекол, принадлежащих менеджеру стыковки. Это включает в себя все плавающие стекла.|
-|[CDockingManager::GetSmartDockingManager](#getsmartdockingmanager)|Получает указатель для смарт-менеджера стыковки.|
-|[CDockingManager::GetSmartDockingManagerПостоянный](#getsmartdockingmanagerpermanent)|Получает указатель для смарт-менеджера стыковки.|
-|[CDockingManager::GetSmartDockingParams](#getsmartdockingparams)|Возвращает параметры смарт-стыковки для менеджера стыковки.|
-|[CDockingManager::GetSmartDockingTheme](#getsmartdockingtheme)|Статический метод, который возвращает тему, используемую для отображения интеллектуальных маркеров стыковки.|
-|[CDockingManager::HideAutoHidePanes](#hideautohidepanes)|Скрывает панель, которая находится в режиме автохидирования.|
-|[CDockingManager::InsertDockSite](#insertdocksite)|Создает док-панель и вставляет его в список контрольных баров.|
-|[CDockingManager::InsertPane](#insertpane)|Вставляет элементную панель управления в список контрольных баров.|
-|[CDockingManager::IsDockSiteMenu](#isdocksitemenu)|Уточняется, отображается ли всплывающее меню на подписях всех стекол.|
-|[CdockingManager::IsInAdjustLayout](#isinadjustlayout)|Определяет, корректируются ли макеты всех стекол.|
-|[CDockingManager::IsOLEContainerMode](#isolecontainermode)|Уточняется, находится ли диспетчер стыковки в режиме контейнера OLE.|
-|[CDockingManager::IsPointNearDockSite](#ispointneardocksite)|Определяет, находится ли указанная точка рядом с местом дока.|
-|[CDockingManager::IsPrintPreviewValid](#isprintpreviewvalid)|Определяет, установлен ли режим предварительного просмотра печати.|
-|[CDockingManager::LoadState](#loadstate)|Загружает состояние менеджера стыковки из реестра.|
-|[CDockingManager::LockUpdate](#lockupdate)|Запирает данное окно.|
-|[CDockingManager::OnActivateFrame](#onactivateframe)|Вызывается фреймворком, когда окно кадра становится активным или деактивировано.|
-|[CDockingManager::OnClosePopupMenu](#onclosepopupmenu)|Вызывается платформой, когда активное всплывающее меню обрабатывает сообщение WM_DESTROY.|
-|[CDockingManager::OnMoveMiniFrame](#onmoveminiframe)|Вызывается по фреймворку для перемещения окна мини-рамки.|
-|[CDockingManager::OnPaneContextMenu](#onpanecontextmenu)|Вызывается фреймворк, когда он строит меню, которое имеет список стекол.|
-|[CDockingManager::PaneFromPoint](#panefrompoint)|Возвращает панель, содержащую заданную точку.|
-|[CDockingManager::ProcessPaneContextMenuCommand](#processpanecontextmenucommand)|Вызывается фреймворком для выбора или очистки флажка для указанной команды и перерасчета макета показанной панели.|
-|[CdockingManager::RecalcLayout](#recalclayout)|Пересчитывает внутреннюю компоновку элементов управления, присутствующих в списке элементов управления.|
-|[CDockingManager::ReleaseEmptyPaneContainers](#releaseemptypanecontainers)|Выпускает пустые панели контейнеров.|
-|[CDockingManager::RemoveHiddenMDITabbedBar](#removehiddenmditabbedbar)|Удаляет указанное скрытое панельное стекло.|
-|[CDockingManager::RemoveMiniFrame](#removeminiframe)|Удаляет указанную рамку из списка мини-кадров.|
-|[CDockingManager::RemovePaneFromDockManager](#removepanefromdockmanager)|Отменяет панель и удаляет ее из списка в диспетчере стыковки.|
-|[CDockingManager::ReplacePane](#replacepane)|Заменяет одну панель другой.|
-|[CDockingManager::ResortMiniFramesFor](#resortminiframesforzorder)|Курорты кадры в списке мини-кадров.|
-|[CDockingManager::SaveState](#savestate)|Сохраняет состояние менеджера стыковки в реестр.|
-|[CDockingManager::SendMessageToMiniFrames](#sendmessagetominiframes)|Отправляет указанное сообщение на все мини-кадры.|
-|[CDockingManager::Serialize](#serialize)|Записывает менеджера стыковки в архив. (Переопределяет [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize).)|
-|[CDockingManager::SetAutohide](#setautohidezorder)|Устанавливает размер, ширину и высоту руля и указанного стекла.|
-|[CDockingManager::SetDockingMode](#setdockingmode)|Устанавливает режим стыковки.|
-|[CDockingManager::SetDockState](#setdockstate)|Устанавливает состояние стыковки баров управления, мини-рам и аутохидных решеток.|
-|[CDockingManager::SetPrintPreviewMode](#setprintpreviewmode)|Устанавливает режим предварительного просмотра печати баров, отображаемых в предварительном просмотре печати.|
-|[CDockingManager::SetSmartDockingParams](#setsmartdockingparams)|Устанавливает параметры, определяющие поведение смарт-стыковки.|
-|[CDockingManager::ShowDelayShowMiniКадры](#showdelayshowminiframes)|Показывает или скрывает окна мини-кадров.|
-|[CDockingManager::ShowPanes](#showpanes)|Показывает или скрывает стекла управления и автоматики баров.|
-|[CDockingManager::StartSDocking](#startsdocking)|Запускает смарт-стыковку указанного окна в соответствии с выравниванием менеджера смарт-стыковки.|
-|[CDockingManager::StopSDocking](#stopsdocking)|Прекращает стыковку.|
+|[Кдоккингманажер:: Адддокксите](#adddocksite)|Создает панель закрепления и добавляет ее в список панелей элементов управления.|
+|[Кдоккингманажер:: Аддхидденмдитаббедбар](#addhiddenmditabbedbar)|Добавляет маркер в панель элементов в список скрытых областей панели с вкладками MDI.|
+|[Кдоккингманажер:: Аддминифраме](#addminiframe)|Добавляет кадр в список мини-кадров.|
+|[Кдоккингманажер:: Аддпане](#addpane)|Регистрирует панель с помощью диспетчера закрепления.|
+|[Кдоккингманажер:: Аджустдоккинглайаут](#adjustdockinglayout)|Повторно вычисляет и корректирует макет всех панелей в окне фрейма.|
+|[Кдоккингманажер:: Аджустпанефрамес](#adjustpaneframes)|Вызывает отправку WM_NCCALCSIZE сообщения на все панели и `CPaneFrameWnd` окна.|
+|[Кдоккингманажер:: Аджустректтоклиентареа](#adjustrecttoclientarea)|Регулирует выравнивание прямоугольника.|
+|[Кдоккингманажер:: Алигнаутохидепане](#alignautohidepane)|Изменяет размер закрепляемой области в режиме автоскрытия таким образом, чтобы она занимала всю ширину или высоту клиентской области кадра, окруженной закреплением сайтов.|
+|[Кдоккингманажер:: Аутохидепане](#autohidepane)|Создает панель инструментов автоскрытия.|
+|[Кдоккингманажер:: Брингбарстотоп](#bringbarstotop)|Переводит закрепленные линейчатые диаграммы с указанным выравниванием сверху.|
+|[Кдоккингманажер:: Буилдпанесмену](#buildpanesmenu)|Добавляет в меню имена закрепляемых панелей и панелей инструментов.|
+|[Кдоккингманажер:: Калцекспектеддоккедрект](#calcexpecteddockedrect)|Вычисляет ожидаемый прямоугольник закрепленного окна.|
+|[Кдоккингманажер:: Create](#create)|Создает диспетчер закрепления.|
+|[Кдоккингманажер::D Етерминепанеандстатус](#determinepaneandstatus)|Определяет панель, содержащую заданную точку и ее состояние закрепления.|
+|[Кдоккингманажер::D Исаблересторедоккстате](#disablerestoredockstate)|Включает или отключает загрузку макета закрепления из реестра.|
+|[Кдоккингманажер::D Оккпане](#dockpane)|Закрепляет панель на другой панели или в окне фрейма.|
+|[Кдоккингманажер::D Оккпанелефтоф](#dockpaneleftof)|Закрепляет область слева от другой области.|
+|[Кдоккингманажер:: Енаблеаутохидепанес](#enableautohidepanes)|Включает закрепление панели в главном фрейме, создает панель закрепления и добавляет ее в список панелей элементов управления.|
+|[Кдоккингманажер:: Енабледоккинг](#enabledocking)|Создает панель закрепления и позволяет закреплять область в главном фрейме.|
+|[Кдоккингманажер:: Енабледоккситемену](#enabledocksitemenu)|Отображает дополнительную кнопку, открывающую всплывающее меню на заголовках всех панелей закрепления.|
+|[Кдоккингманажер:: Енаблепанеконтекстмену](#enablepanecontextmenu)|Указывает библиотеке отображать специальное контекстное меню, имеющее список панелей инструментов приложения и закрепляемых областей, когда пользователь нажимает правую кнопку мыши и библиотека обрабатывает сообщение WM_CONTEXTMENU.|
+|[Кдоккингманажер:: Финддокксите](#finddocksite)|Извлекает панель гистограммы, находящийся в указанной позиции и имеющую указанное выравнивание.|
+|[Кдоккингманажер:: Финддоккситебипане](#finddocksitebypane)|Возвращает панель гистограммы с идентификатором панели целевых панелей.|
+|[Кдоккингманажер:: Финдпанебид](#findpanebyid)|Находит панель по указанному ИДЕНТИФИКАТОРу элемента управления.|
+|[Кдоккингманажер:: Фиксупвиртуалректс](#fixupvirtualrects)|Фиксирует все текущие позиции панели инструментов в виртуальных прямоугольниках.|
+|[Кдоккингманажер:: Фрамефромпоинт](#framefrompoint)|Возвращает кадр, содержащий заданную точку.|
+|[Кдоккингманажер:: Жетклиентареабаундс](#getclientareabounds)|Возвращает прямоугольник, содержащий границы клиентской области.|
+|[Кдоккингманажер:: Жетдоккингмоде](#getdockingmode)|Возвращает текущий режим закрепления.|
+|[Кдоккингманажер:: Жетдоккситефрамевнд](#getdocksiteframewnd)|Возвращает указатель на фрейм родительского окна.|
+|[Кдоккингманажер:: Жетенабледаутохидеалигнмент](#getenabledautohidealignment)|Возвращает включенное выравнивание панелей.|
+|[Кдоккингманажер:: Жетминифрамес](#getminiframes)|Возвращает список минифрамес.|
+|[Кдоккингманажер:: Жетаутереджебаундс](#getouteredgebounds)|Возвращает прямоугольник, содержащий внешние края рамки.|
+|[Кдоккингманажер:: копанель](#getpanelist)|Возвращает список панелей, принадлежащих диспетчеру закрепления. Сюда входят все плавающие панели.|
+|[Кдоккингманажер:: Жетсмартдоккингманажер](#getsmartdockingmanager)|Получает указатель на диспетчер смарт-закрепления.|
+|[Кдоккингманажер:: Жетсмартдоккингманажерперманент](#getsmartdockingmanagerpermanent)|Получает указатель на диспетчер смарт-закрепления.|
+|[Кдоккингманажер:: Жетсмартдоккингпарамс](#getsmartdockingparams)|Возвращает параметры смарт-стыковки для диспетчера закрепления.|
+|[Кдоккингманажер:: Жетсмартдоккингсеме](#getsmartdockingtheme)|Статический метод, возвращающий тему, используемую для вывода маркеров смарт-закрепления.|
+|[Кдоккингманажер:: Хидеаутохидепанес](#hideautohidepanes)|Скрывает панель, которая находится в режиме автоскрытия.|
+|[Кдоккингманажер:: Инсертдокксите](#insertdocksite)|Создает панель закрепления и вставляет ее в список панелей элементов управления.|
+|[Кдоккингманажер:: Инсертпане](#insertpane)|Вставляет панель элементов управления в список панелей элементов управления.|
+|[Кдоккингманажер:: Исдоккситемену](#isdocksitemenu)|Указывает, отображается ли всплывающее меню в заголовках всех панелей.|
+|[Кдоккингманажер:: Исинаджустлайаут](#isinadjustlayout)|Определяет, настроены ли макеты всех панелей.|
+|[Кдоккингманажер:: Исолеконтаинермоде](#isolecontainermode)|Указывает, находится ли диспетчер стыковки в режиме контейнера OLE.|
+|[Кдоккингманажер:: Испоинтнеардокксите](#ispointneardocksite)|Определяет, находится ли указанная точка вблизи сайта закрепления.|
+|[Кдоккингманажер:: Испринтпревиеввалид](#isprintpreviewvalid)|Определяет, установлен ли режим предварительного просмотра печати.|
+|[Кдоккингманажер:: LoadState](#loadstate)|Загружает состояние диспетчера закрепления из реестра.|
+|[Кдоккингманажер:: Локкупдате](#lockupdate)|Блокирует заданное окно.|
+|[Кдоккингманажер:: Онактиватефраме](#onactivateframe)|Вызывается структурой, когда окно фрейма становится активным или деактивируется.|
+|[Кдоккингманажер:: Онклосепопупмену](#onclosepopupmenu)|Вызывается платформой, когда активное всплывающее меню обрабатывает сообщение WM_DESTROY.|
+|[Кдоккингманажер:: Онмовеминифраме](#onmoveminiframe)|Вызывается структурой для перемещения окна мини-кадра.|
+|[Кдоккингманажер:: Онпанеконтекстмену](#onpanecontextmenu)|Вызывается платформой при построении меню со списком панелей.|
+|[Кдоккингманажер::P Анефромпоинт](#panefrompoint)|Возвращает панель, содержащую заданную точку.|
+|[Кдоккингманажер::P Роцесспанеконтекстменукомманд](#processpanecontextmenucommand)|Вызывается платформой для выбора или снятия флажка для указанной команды и повторного вычисления макета отображаемой панели.|
+|[Кдоккингманажер:: RecalcLayout](#recalclayout)|Повторно вычисляет внутренний макет элементов управления, имеющихся в списке элементов управления.|
+|[Кдоккингманажер:: Релеасимптипанеконтаинерс](#releaseemptypanecontainers)|Освобождает пустые контейнеры панели.|
+|[Кдоккингманажер:: Ремовехидденмдитаббедбар](#removehiddenmditabbedbar)|Удаляет указанную панель скрытой панели.|
+|[Кдоккингманажер:: Ремовеминифраме](#removeminiframe)|Удаляет указанный кадр из списка мини-кадров.|
+|[Кдоккингманажер:: Ремовепанефромдоккманажер](#removepanefromdockmanager)|Отменяет регистрацию панели и удаляет ее из списка в диспетчере закрепления.|
+|[Кдоккингманажер:: Реплацепане](#replacepane)|Заменяет одну панель другой.|
+|[Кдоккингманажер:: Ресортминифрамесфорзордер](#resortminiframesforzorder)|Перекурортить кадры в списке мини-кадров.|
+|[Кдоккингманажер:: SaveState](#savestate)|Сохраняет состояние диспетчера закрепления в реестре.|
+|[Кдоккингманажер:: Сендмессажетоминифрамес](#sendmessagetominiframes)|Отправляет указанное сообщение во все мини-кадры.|
+|[Кдоккингманажер:: Serialize](#serialize)|Записывает диспетчер закрепления в архив. (Переопределяет [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize).)|
+|[Кдоккингманажер:: Сетаутохидезордер](#setautohidezorder)|Задает размер, ширину и высоту панелей элементов управления и указанной панели.|
+|[Кдоккингманажер:: Сетдоккингмоде](#setdockingmode)|Задает режим закрепления.|
+|[Кдоккингманажер:: Сетдоккстате](#setdockstate)|Задает состояние закрепления панелей элементов управления, Мини-кадров и полос автоскрытия.|
+|[Кдоккингманажер:: Сетпринтпревиевмоде](#setprintpreviewmode)|Задает режим предварительного просмотра для полос, отображаемых в предварительном просмотре.|
+|[Кдоккингманажер:: Сетсмартдоккингпарамс](#setsmartdockingparams)|Задает параметры, определяющие поведение интеллектуальной стыковки.|
+|[Кдоккингманажер:: Шовделайшовминифрамес](#showdelayshowminiframes)|Показывает или скрывает окна мини-кадров.|
+|[Кдоккингманажер:: Шовпанес](#showpanes)|Показывает или скрывает панели элемента управления и панели автоскрытия.|
+|[Кдоккингманажер:: Стартсдоккинг](#startsdocking)|Запускает интеллектуальную стыковку указанного окна в соответствии с выравниванием для диспетчера смарт-стыковки.|
+|[Кдоккингманажер:: Стопсдоккинг](#stopsdocking)|Останавливает интеллектуальную стыковку.|
 
 ### <a name="data-members"></a>Элементы данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CDockingManager::m_bHideDockingBarsInContainerMode](#m_bhidedockingbarsincontainermode)|Уточняется, прячет ли диспетчер стыковки стекла в режиме контейнера OLE.|
-|[CDockingManager::m_dockModeGlobal](#m_dockmodeglobal)|Определяет глобальный режим стыковки.|
-|[CDockingManager::m_nDockSensitivity](#m_ndocksensitivity)|Определяет чувствительность стыковки.|
-|[CDockingManager::m_nTimeOutBeforeDockingBarDock](#m_ntimeoutbeforedockingbardock)|Определяет время, в миллисекундах, до стыковки стыковка в режиме немедленного стыковки.|
-|[CDockingManager::m_nTimeOutBeforeToolBarDock](#m_ntimeoutbeforetoolbardock)|Определяет время, в миллисекундах, до того, как панель инструментов пристыкована к окну основной рамы.|
+|[Кдоккингманажер:: m_bHideDockingBarsInContainerMode](#m_bhidedockingbarsincontainermode)|Указывает, скрывает ли диспетчер стыковки панели в режиме контейнера OLE.|
+|[Кдоккингманажер:: m_dockModeGlobal](#m_dockmodeglobal)|Задает режим глобальной стыковки.|
+|[Кдоккингманажер:: m_nDockSensitivity](#m_ndocksensitivity)|Указывает чувствительность закрепления.|
+|[Кдоккингманажер:: m_nTimeOutBeforeDockingBarDock](#m_ntimeoutbeforedockingbardock)|Указывает время в миллисекундах, по истечении которого закрепляемая панель закрепляется в режиме немедленного закрепления.|
+|[Кдоккингманажер:: m_nTimeOutBeforeToolBarDock](#m_ntimeoutbeforetoolbardock)|Указывает время в миллисекундах до того, как панель инструментов закрепляется в главном окне фрейма.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Окно основной рамы автоматически создает и инициализирует этот класс.
+Основное окно фрейма создает и инициализирует этот класс автоматически.
 
-Объект менеджера стыковки содержит список всех стекол, которые находятся в макете стыковки, а также список всех окон [CPaneFrameWnd,](../../mfc/reference/cpaneframewnd-class.md) которые принадлежат к главному окну кадра.
+Объект диспетчера закрепления содержит список всех панелей, находящихся в макете закрепления, а также список всех окон [кпанефрамевнд](../../mfc/reference/cpaneframewnd-class.md) , принадлежащих главному окну фрейма.
 
-Класс `CDockingManager` реализует некоторые службы, которые можно использовать для `CPaneFrameWnd` поиска панели или окна. Обычно эти службы не называются напрямую, поскольку они завернуты в объект окна основной рамы. Для получения дополнительной [информации](../../mfc/reference/cpaneframewnd-class.md)см.
+`CDockingManager`Класс реализует некоторые службы, которые можно использовать для поиска панели или `CPaneFrameWnd` окна. Обычно эти службы не вызываются напрямую, так как они упаковываются в основной объект окна фрейма. Дополнительные сведения см. в разделе [класс кпанефрамевнд](../../mfc/reference/cpaneframewnd-class.md).
 
 ## <a name="customization-tips"></a>Советы по настройке
 
-Следующие советы `CDockingManager` применяются к объектам:
+Следующие советы применимы к `CDockingManager` объектам:
 
-- [Класс CDockingManager](../../mfc/reference/cdockingmanager-class.md) поддерживает эти режимы стыковки:
+- [Класс кдоккингманажер](../../mfc/reference/cdockingmanager-class.md) поддерживает следующие режимы закрепления:
 
   - `AFX_DOCK_TYPE::DT_IMMEDIATE`
 
@@ -286,13 +287,13 @@ class CDockingManager : public CObject
 
   - `AFX_DOCK_TYPE::DT_SMART`
 
-  Эти режимы стыковки определяются [CDockingManager::m_dockModeGlobal](#m_dockmodeglobal) и устанавливаются по телефону [CDockingManager::SetDockingMode](#setdockingmode).
+  Эти режимы закрепления определяются [кдоккингманажер:: m_dockModeGlobal](#m_dockmodeglobal) и задаются путем вызова [Кдоккингманажер:: сетдоккингмоде](#setdockingmode).
 
-- Если вы хотите создать неплаватемое, не изрешеханное стекло, позвоните в [CDockingManager::AddPane](#addpane) метод. Этот метод регистрирует панель с менеджером стыковки, который отвечает за расположение панели.
+- Если вы хотите создать неплавающую панель без изменения размера, вызовите метод [кдоккингманажер:: аддпане](#addpane) . Этот метод регистрирует панель с помощью диспетчера закрепления, который отвечает за размещение панели.
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано, как использовать `CDockingManager` различные методы в классе для настройки `CDockingManager` объекта. На примере показано, как отобразить дополнительную кнопку, открывающую всплывающее меню на подписях всех стыковочных стекол, и как установить режим стыковки объекта. Этот фрагмент кода является частью [образца демонстрации Visual Studio.](../../overview/visual-cpp-samples.md)
+В следующем примере показано, как использовать различные методы в `CDockingManager` классе для настройки `CDockingManager` объекта. В примере показано, как отобразить дополнительную кнопку, открывающую всплывающее меню в заголовках всех панелей закрепляемых областей, и как задать режим закрепления объекта. Этот фрагмент кода является частью [демонстрационного примера Visual Studio](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#24](../../mfc/codesnippet/cpp/cdockingmanager-class_1.cpp)]
 
@@ -304,11 +305,11 @@ class CDockingManager : public CObject
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxDockingManager.h
+**Заголовок:** афксдоккингманажер. h
 
-## <a name="cdockingmanageradddocksite"></a><a name="adddocksite"></a>CDockingManager::AddDockSite
+## <a name="cdockingmanageradddocksite"></a><a name="adddocksite"></a> Кдоккингманажер:: Адддокксите
 
-Создает док-панель и добавляет его в список баров управления.
+Создает панель закрепления и добавляет ее в список панелей элементов управления.
 
 ```
 BOOL AddDockSite(
@@ -318,19 +319,19 @@ BOOL AddDockSite(
 
 ### <a name="parameters"></a>Параметры
 
-*Информация*<br/>
-(в) Ссылка на структуру информации, содержащую выравнивание док-панели.
+*контактные*<br/>
+окне Ссылка на информационную структуру, содержащую выравнивание на панели закрепления.
 
-*ppDockBar*<br/>
-(ваут) Указатель на указатель на новую док-панель.
+*ппдоккбар*<br/>
+заполняет Указатель на указатель на новую панель закрепления.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если док-панель была создана успешно; FALSE в противном случае.
+Значение TRUE, если панель закрепления успешно создана; В противном случае — значение FALSE.
 
-## <a name="cdockingmanageraddhiddenmditabbedbar"></a><a name="addhiddenmditabbedbar"></a>CDockingManager::AddHiddenMDITabbedBar
+## <a name="cdockingmanageraddhiddenmditabbedbar"></a><a name="addhiddenmditabbedbar"></a> Кдоккингманажер:: Аддхидденмдитаббедбар
 
-Добавляет ручку в панель панели в список скрытых стекалок MDI.
+Добавляет маркер в панель элементов в список скрытых областей панели с вкладками MDI.
 
 ```cpp
 void AddHiddenMDITabbedBar(CDockablePane* pBar);
@@ -338,12 +339,12 @@ void AddHiddenMDITabbedBar(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Параметры
 
-*pBar*<br/>
-(в) Указатель на барное стекло
+*пбар*<br/>
+окне Указатель на панель строк
 
-## <a name="cdockingmanageraddpane"></a><a name="addpane"></a>CDockingManager::AddPane
+## <a name="cdockingmanageraddpane"></a><a name="addpane"></a> Кдоккингманажер:: Аддпане
 
-Регистрирует панель с менеджером стыковки.
+Регистрирует панель с помощью диспетчера закрепления.
 
 ```
 BOOL AddPane(
@@ -355,29 +356,29 @@ BOOL AddPane(
 
 ### <a name="parameters"></a>Параметры
 
-*pWnd*<br/>
-(в, вне) Определяет панель для добавления в стыковочный менеджер.
+*Приводится*<br/>
+[вход, выход] Задает область, добавляемую в Диспетчер стыковки.
 
-*bTail*<br/>
-(в) TRUE, чтобы добавить панель в конце списка стекол для стыковки менеджера; в противном случае, FALSE.
+*бтаил*<br/>
+окне Значение TRUE, чтобы добавить область в конец списка панелей для диспетчера закрепления; в противном случае — значение FALSE.
 
-*bAutoHide*<br/>
-(в) Только для внутреннего использования. Всегда используйте значение по умолчанию FALSE.
+*баутохиде*<br/>
+окне Только для внутреннего использования. Всегда используйте значение по умолчанию FALSE.
 
-*bInsertForOuterEdge*<br/>
-(в) Только для внутреннего использования. Всегда используйте значение по умолчанию FALSE.
+*бинсертфораутередже*<br/>
+окне Только для внутреннего использования. Всегда используйте значение по умолчанию FALSE.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если панель была успешно зарегистрирована с менеджером стыковки; в противном случае, FALSE.
+Значение TRUE, если панель успешно зарегистрирована в диспетчере закрепления; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вызовите этот метод для регистрации неплавающих, неизменяемых стекол с менеджером стыковки. Если вы не зарегистрируете стекла, они не будут отображаться правильно, когда менеджер стыковки будет выложен.
+Вызывайте этот метод для регистрации неплавающих панелей с неизменяемыми размерами с помощью диспетчера закрепления. Если вы не зарегистрировали панели, они будут отображаться неправильно при размещении диспетчера закрепления.
 
-## <a name="cdockingmanageradjustdockinglayout"></a><a name="adjustdockinglayout"></a>CdockingManager::AdjustDockingLayout
+## <a name="cdockingmanageradjustdockinglayout"></a><a name="adjustdockinglayout"></a> Кдоккингманажер:: Аджустдоккинглайаут
 
-Пересчитывает и регулирует расположение всех стекол в окне рамы.
+Повторно вычисляет и корректирует макет всех панелей в окне фрейма.
 
 ```
 virtual void AdjustDockingLayout(HDWP hdwp = NULL);
@@ -385,12 +386,12 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 
 ### <a name="parameters"></a>Параметры
 
-*hdwp*<br/>
-(в) Определяет структуру отложенного положения окна. Дополнительные сведения см. в разделе [Типы данных Windows](/windows/win32/WinProg/windows-data-types).
+*хдвп*<br/>
+окне Задает структуру отложенного позиционирования окна. Дополнительные сведения см. в разделе [Типы данных Windows](/windows/win32/WinProg/windows-data-types).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cdockingmanageraddminiframe"></a><a name="addminiframe"></a>CDockingManager::AddMiniFrame
+## <a name="cdockingmanageraddminiframe"></a><a name="addminiframe"></a> Кдоккингманажер:: Аддминифраме
 
 Добавляет кадр в список мини-кадров.
 
@@ -400,24 +401,24 @@ virtual BOOL AddMiniFrame(CPaneFrameWnd* pWnd);
 
 ### <a name="parameters"></a>Параметры
 
-*pWnd*<br/>
-(в) Указатель на раму.
+*Приводится*<br/>
+окне Указатель на кадр.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если кадр не в списке мини-кадров и был добавлен успешно; FALSE в противном случае.
+Значение TRUE, если кадр отсутствует в списке мини-кадров и был успешно добавлен. В противном случае — значение FALSE.
 
-## <a name="cdockingmanageradjustpaneframes"></a><a name="adjustpaneframes"></a>CDockingManager::AdjustPaneFrames
+## <a name="cdockingmanageradjustpaneframes"></a><a name="adjustpaneframes"></a> Кдоккингманажер:: Аджустпанефрамес
 
-Вызывает отправку сообщения WM_NCCALCSIZE на все `CPaneFrameWnd` стекла и окна.
+Вызывает отправку WM_NCCALCSIZE сообщения на все панели и `CPaneFrameWnd` окна.
 
 ```
 virtual void AdjustPaneFrames();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cdockingmanageradjustrecttoclientarea"></a><a name="adjustrecttoclientarea"></a>CDockingManager::AdjusttToClientArea
+## <a name="cdockingmanageradjustrecttoclientarea"></a><a name="adjustrecttoclientarea"></a> Кдоккингманажер:: Аджустректтоклиентареа
 
 Регулирует выравнивание прямоугольника.
 
@@ -429,19 +430,19 @@ virtual BOOL AdjustRectToClientArea(
 
 ### <a name="parameters"></a>Параметры
 
-*rectResult*<br/>
-(в) Ссылка на `CRect` объект
+*ректресулт*<br/>
+окне Ссылка на `CRect` объект
 
-*dwAlignment*<br/>
-(в) Выравнивание `CRect` объекта
+*двалигнмент*<br/>
+окне Выравнивание `CRect` объекта
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если выравнивание `CRect` объекта было скорректировано; FALSE в противном случае.
+Значение TRUE, если выравнивание `CRect` объекта было изменено; В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Параметр *dwAlignment* может иметь одно из следующих значений:
+Параметр *двалигнмент* может иметь одно из следующих значений:
 
 - CBRS_ALIGN_TOP
 
@@ -451,9 +452,9 @@ TRUE, если выравнивание `CRect` объекта было скор
 
 - CBRS_ALIGN_RIGHT
 
-## <a name="cdockingmanageralignautohidepane"></a><a name="alignautohidepane"></a>CDockingManager::AlignAutoHidePane
+## <a name="cdockingmanageralignautohidepane"></a><a name="alignautohidepane"></a> Кдоккингманажер:: Алигнаутохидепане
 
-Изображки стыковочную панель в режиме автохайда, так что она занимает всю ширину или высоту клиентской области кадра в окружении док-станций.
+Изменяет размер закрепляемой области в режиме автоскрытия таким образом, чтобы она занимала всю ширину или высоту клиентской области кадра, окруженной закреплением сайтов.
 
 ```cpp
 void AlignAutoHidePane(
@@ -463,15 +464,15 @@ void AlignAutoHidePane(
 
 ### <a name="parameters"></a>Параметры
 
-*pDefaultSlider*<br/>
-(в) Стыковка ползунок панели.
+*пдефаултслидер*<br/>
+окне Панель ползунка закрепления.
 
-*bIsVisible*<br/>
-(в) ПРАВДА, если стыковка видна; FALSE в противном случае.
+*бисвисибле*<br/>
+окне Значение TRUE, если область закрепления видима; В противном случае — значение FALSE.
 
-## <a name="cdockingmanagerautohidepane"></a><a name="autohidepane"></a>CDockingManager::AutoHidePane
+## <a name="cdockingmanagerautohidepane"></a><a name="autohidepane"></a> Кдоккингманажер:: Аутохидепане
 
-Создает панель инструментов для автоматической ауторазии.
+Создает панель инструментов автоскрытия.
 
 ```
 CMFCAutoHideToolBar* AutoHidePane(
@@ -481,19 +482,19 @@ CMFCAutoHideToolBar* AutoHidePane(
 
 ### <a name="parameters"></a>Параметры
 
-*pBar*<br/>
-(в) Указатель на барное стекло.
+*пбар*<br/>
+окне Указатель на панель панели.
 
-*pCurrAutoHideToolBar*<br/>
-(в) Указатель на автоматическую панель инструментов.
+*пкурраутохидетулбар*<br/>
+окне Указатель на панель инструментов автоматического скрытия.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-NULL, если панель инструментов автоматического сокрытия не была создана; в противном случае указатель на новую панель инструментов.
+Значение NULL, если панель инструментов автоматического скрытия не была создана; в противном случае — указатель на новую панель инструментов.
 
-## <a name="cdockingmanagerbringbarstotop"></a><a name="bringbarstotop"></a>CDockingManager::BringBarsToTop
+## <a name="cdockingmanagerbringbarstotop"></a><a name="bringbarstotop"></a> Кдоккингманажер:: Брингбарстотоп
 
-Приносит пристыкованные бары, которые имеют указанное выравнивание к верхней части.
+Переводит закрепленные линейчатые диаграммы с указанным выравниванием сверху.
 
 ```cpp
 void BringBarsToTop(
@@ -503,15 +504,15 @@ void BringBarsToTop(
 
 ### <a name="parameters"></a>Параметры
 
-*dwAlignment*<br/>
-(в) Выравнивание док-баров, которые доводятся до верхней части других окон.
+*двалигнмент*<br/>
+окне Выравнивание строк закрепления, которые отображаются в верхней части других окон.
 
-*bExcludeDockedBars*<br/>
-(в) TRUE, чтобы исключить док-бары из на вершине; в противном случае FALSE.
+*бексклудедоккедбарс*<br/>
+окне Значение TRUE, чтобы исключить закрепленные полосы из поверх; в противном случае — FALSE.
 
-## <a name="cdockingmanagerbuildpanesmenu"></a><a name="buildpanesmenu"></a>CDockingManager::BuildPanesMenu
+## <a name="cdockingmanagerbuildpanesmenu"></a><a name="buildpanesmenu"></a> Кдоккингманажер:: Буилдпанесмену
 
-Добавляет названия стыковочных стекол и панели инструментов в меню.
+Добавляет в меню имена закрепляемых панелей и панелей инструментов.
 
 ```cpp
 void BuildPanesMenu(
@@ -521,15 +522,15 @@ void BuildPanesMenu(
 
 ### <a name="parameters"></a>Параметры
 
-*Меню*<br/>
-(в) Меню для добавления названий стыковочных стекол и панели инструментов.
+*меню*<br/>
+окне Меню для добавления имен закрепляемых панелей и панелей инструментов в.
 
-*bToolbarsТолько*<br/>
-(в) TRUE, чтобы добавить только имена панели инструментов в меню; FALSE в противном случае.
+*бтулбарсонли*<br/>
+окне Значение TRUE, чтобы добавить в меню только имена панелей инструментов; В противном случае — значение FALSE.
 
-## <a name="cdockingmanagercalcexpecteddockedrect"></a><a name="calcexpecteddockedrect"></a>CDockingManager::CalcExpectedDockedRect
+## <a name="cdockingmanagercalcexpecteddockedrect"></a><a name="calcexpecteddockedrect"></a> Кдоккингманажер:: Калцекспектеддоккедрект
 
-Вычисляет ожидаемый прямоугольник пристыкованного окна.
+Вычисляет ожидаемый прямоугольник закрепленного окна.
 
 ```cpp
 void CalcExpectedDockedRect(
@@ -542,28 +543,28 @@ void CalcExpectedDockedRect(
 
 ### <a name="parameters"></a>Параметры
 
-*pWnd*<br/>
-(в) Указатель на окно для стыковки.
+*Приводится*<br/>
+окне Указатель на окно для закрепления.
 
-*ptMouse*<br/>
-(в) Расположение мыши.
+*птмаусе*<br/>
+окне Положение мыши.
 
-*rectResult*<br/>
-(ваут) Расчетный прямоугольник.
+*ректресулт*<br/>
+заполняет Вычисляемый прямоугольник.
 
-*bDrawTab*<br/>
-(в) TRUE, чтобы нарисовать вкладку; в противном случае FALSE.
+*бдравтаб*<br/>
+окне Значение TRUE для рисования вкладки; в противном случае — FALSE.
 
-*ppTargetBar*<br/>
-(ваут) Указатель на указатель на целевое стекло.
+*пптаржетбар*<br/>
+заполняет Указатель на указатель на целевую область.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод вычисляет прямоугольник, который занимал бы окно, если пользователь перетащил окно в точку, указанную *ptMouse,* и пристыковал его туда.
+Этот метод вычисляет прямоугольник, который будет занимать окно, если пользователь переместил окно в точку, указанную параметром *птмаусе* , и закрепляет ее там.
 
-## <a name="cdockingmanagercreate"></a><a name="create"></a>CDockingManager::Создание
+## <a name="cdockingmanagercreate"></a><a name="create"></a> Кдоккингманажер:: Create
 
-Создает стыковку менеджера.
+Создает диспетчер закрепления.
 
 ```
 BOOL Create(CFrameWnd* pParentWnd);
@@ -571,16 +572,16 @@ BOOL Create(CFrameWnd* pParentWnd);
 
 ### <a name="parameters"></a>Параметры
 
-*pParentWnd*<br/>
-(в) Указатель на родительский кадр менеджера стыковки. Это значение не должно быть NULL.
+*ппарентвнд*<br/>
+окне Указатель на родительский фрейм диспетчера закрепления. Это значение не должно быть равно NULL.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА всегда.
+Значение TRUE всегда.
 
-## <a name="cdockingmanagerdeterminepaneandstatus"></a><a name="determinepaneandstatus"></a>CDockingManager::DeterminePaneAndStatus
+## <a name="cdockingmanagerdeterminepaneandstatus"></a><a name="determinepaneandstatus"></a> Кдоккингманажер::D Етерминепанеандстатус
 
-Определяет панель, содержащую заданную точку, и ее статус стыковки.
+Определяет панель, содержащую заданную точку и ее состояние закрепления.
 
 ```
 virtual AFX_CS_STATUS DeterminePaneAndStatus(
@@ -595,41 +596,41 @@ virtual AFX_CS_STATUS DeterminePaneAndStatus(
 ### <a name="parameters"></a>Параметры
 
 *пт*<br/>
-(в) Расположение панели для проверки.
+окне Расположение области для проверки.
 
-*nЧувствительность*<br/>
-(в) Значение для увеличения прямоугольника окна каждого проверенного стекла. Панель удовлетворяет критериям поиска, если данный пункт находится в этом увеличенном регионе.
+*нсенситивити*<br/>
+окне Значение для увеличения прямоугольника окна каждой проверяемой области. Панель удовлетворяет критериям поиска, если заданная точка находится в этой увеличенной области.
 
-*dwEnabledAlignment*<br/>
-(в) Выравнивание стыковочного стекла.
+*двенабледалигнмент*<br/>
+окне Выравнивание закрепляемой области.
 
-*ppTargetBar*<br/>
-(ваут) Указатель на указатель на целевое стекло.
+*пптаржетбар*<br/>
+заполняет Указатель на указатель на целевую область.
 
-*pbartoignore*<br/>
-(в) Панель, которую игнорирует метод.
+*пбартоигноре*<br/>
+окне Область, которую пропускает метод.
 
-*пбартодок*<br/>
-(в) Панель, которая пристыкована.
+*пбартодокк*<br/>
+окне Закрепленная панель.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Статус стыковки.
+Состояние закрепления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Статус стыковки может быть одним из следующих значений:
+В качестве состояния закрепления может использоваться одно из следующих значений:
 
 |AFX_CS_STATUS значение|Значение|
 |---------------------------|-------------|
-|CS_NOTHING|Указатель не над док-станцией. Таким образом, держать панель плавающей.|
-|CS_DOCK_IMMEDIATELY|Указатель находится над местом дока в непосредственном режиме (DT_IMMEDIATE стиль включен), поэтому панель должна быть пристыкована немедленно.|
-|CS_DELAY_DOCK|Указатель находится над док-сайт, который является еще одним стыковки панели или края основной рамы.|
-|CS_DELAY_DOCK_TO_TAB|Указатель находится над сайтом дока, что приводит к стыковке панели в окне вкладок. Это происходит, когда мышь находится над подписью другого стыковочного стекла или над областью вкладки панели вкладки.|
+|CS_NOTHING|Указатель находится не на сайте закрепления. Поэтому не заключайте панель в плавающую.|
+|CS_DOCK_IMMEDIATELY|Указатель находится на сайте закрепления в режиме интерпретации (DT_IMMEDIATE стиль включен), поэтому панель необходимо закрепить немедленно.|
+|CS_DELAY_DOCK|Указатель находится над узлом закрепления, который является другой закрепляемой областью или является ребром главного фрейма.|
+|CS_DELAY_DOCK_TO_TAB|Указатель находится на сайте закрепления, который приводит к закреплению панели в окне с вкладками. Это происходит, когда указатель мыши наведен на заголовок другой панели закрепления или над областью вкладки в области с вкладками.|
 
-## <a name="cdockingmanagerdisablerestoredockstate"></a><a name="disablerestoredockstate"></a>CDockingManager::DisableRestoreDockState
+## <a name="cdockingmanagerdisablerestoredockstate"></a><a name="disablerestoredockstate"></a> Кдоккингманажер::D Исаблересторедоккстате
 
-Позволяет или отсваивает загрузку макета стыковки из реестра.
+Включает или отключает загрузку макета закрепления из реестра.
 
 ```cpp
 void DisableRestoreDockState(BOOL bDisable = TRUE);
@@ -637,16 +638,16 @@ void DisableRestoreDockState(BOOL bDisable = TRUE);
 
 ### <a name="parameters"></a>Параметры
 
-*bDisable*<br/>
-(в) TRUE для отправления загрузки стыковочного компоновки из реестра; в противном случае, FALSE.
+*bОтключите*<br/>
+окне Значение TRUE, чтобы отключить загрузку макета закрепления из реестра. в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вызовите этот метод, когда необходимо сохранить текущую компоновку стыковочных спрей-панелей и панели инструментов при загрузке состояния приложения.
+Этот метод следует вызывать, когда необходимо сохранить текущий макет закрепляемых панелей и панелей инструментов при загрузке состояния приложения.
 
-## <a name="cdockingmanagerdockpane"></a><a name="dockpane"></a>CDockingManager::DockPane
+## <a name="cdockingmanagerdockpane"></a><a name="dockpane"></a> Кдоккингманажер::D Оккпане
 
-Пристыкуется к стеку к другому стеку или к окну рамы.
+Закрепляет панель на другой панели или в окне фрейма.
 
 ```cpp
 void DockPane(
@@ -657,16 +658,16 @@ void DockPane(
 
 ### <a name="parameters"></a>Параметры
 
-*pBar*<br/>
-(в) Указатель на бар панели достыковки.
+*пбар*<br/>
+окне Указатель на область линейчатой диаграммы для закрепления.
 
-*nDockBarID*<br/>
-(в) Идентификатор бара для стыковки.
+*ндоккбарид*<br/>
+окне Идентификатор закрепления панели.
 
-*lpRect*<br/>
-(в) Прямоугольник назначения.
+*лпрект*<br/>
+окне Прямоугольник назначения.
 
-## <a name="cdockingmanagerdockpaneleftof"></a><a name="dockpaneleftof"></a>CDockingManager::DockPaneLeftOf
+## <a name="cdockingmanagerdockpaneleftof"></a><a name="dockpaneleftof"></a> Кдоккингманажер::D Оккпанелефтоф
 
 Закрепляет область слева от другой области.
 
@@ -678,19 +679,19 @@ BOOL DockPaneLeftOf(
 
 ### <a name="parameters"></a>Параметры
 
-*пбартодок*<br/>
-(в) Указатель на стекол, чтобы быть пристыкован к левой части *pTargetBar*.
+*пбартодокк*<br/>
+окне Указатель на область, которая должна быть закреплена слева от *птаржетбар*.
 
-*pTargetBar*<br/>
-(в) Указатель на целевое стекло.
+*птаржетбар*<br/>
+окне Указатель на целевую область.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если панель была пристыкована успешно; в противном случае, FALSE.
+Значение TRUE, если панель закреплена успешно. в противном случае — значение FALSE.
 
-## <a name="cdockingmanagerenableautohidepanes"></a><a name="enableautohidepanes"></a>CDockingManager::EnableAutoHidePanes
+## <a name="cdockingmanagerenableautohidepanes"></a><a name="enableautohidepanes"></a> Кдоккингманажер:: Енаблеаутохидепанес
 
-Позволяет стыковку панели с основной рамой, создает док-панель и добавляет его в список баров управления.
+Включает закрепление панели в главном фрейме, создает панель закрепления и добавляет ее в список панелей элементов управления.
 
 ```
 BOOL EnableAutoHidePanes(DWORD dwStyle);
@@ -698,16 +699,16 @@ BOOL EnableAutoHidePanes(DWORD dwStyle);
 
 ### <a name="parameters"></a>Параметры
 
-*dwStyle*<br/>
-(в) Выравнивание стыковки.
+*двстиле*<br/>
+окне Выравнивание закрепления.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если док-панель была создана успешно; FALSE в противном случае.
+Значение TRUE, если панель закрепления успешно создана; В противном случае — значение FALSE.
 
-## <a name="cdockingmanagerenabledocking"></a><a name="enabledocking"></a>CDockingManager:EnableDocking
+## <a name="cdockingmanagerenabledocking"></a><a name="enabledocking"></a> Кдоккингманажер:: Енабледоккинг
 
-Создает док-панель и позволяет стыковки панели к основной раме.
+Создает панель закрепления и позволяет закреплять область в главном фрейме.
 
 ```
 BOOL EnableDocking(DWORD dwStyle);
@@ -715,16 +716,16 @@ BOOL EnableDocking(DWORD dwStyle);
 
 ### <a name="parameters"></a>Параметры
 
-*dwStyle*<br/>
-(в) Выравнивание стыковки.
+*двстиле*<br/>
+окне Выравнивание закрепления.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если док-панель была создана успешно; FALSE в противном случае.
+Значение TRUE, если панель закрепления успешно создана; В противном случае — значение FALSE.
 
-## <a name="cdockingmanagerenabledocksitemenu"></a><a name="enabledocksitemenu"></a>CDockingManager::EnableDockSiteMenu
+## <a name="cdockingmanagerenabledocksitemenu"></a><a name="enabledocksitemenu"></a> Кдоккингманажер:: Енабледоккситемену
 
-Отображает дополнительную кнопку, которая открывает всплывающее меню на подписях всех стыковочных стекол.
+Отображает дополнительную кнопку, открывающую всплывающее меню на заголовках всех панелей закрепления.
 
 ```
 static void EnableDockSiteMenu(BOOL bEnable = TRUE);
@@ -733,25 +734,25 @@ static void EnableDockSiteMenu(BOOL bEnable = TRUE);
 ### <a name="parameters"></a>Параметры
 
 *bEnable*<br/>
-(в) TRUE для включения меню сайта док-станции; в противном случае, FALSE.
+окне Значение TRUE, чтобы включить меню сайта закрепления; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Меню сайта док-станции отображает следующие варианты изменения состояния стыковки панели:
+В меню закрепляемый сайт отображаются следующие параметры для изменения состояния закрепления панели.
 
-- `Floating`- Плавает панель
+- `Floating` — Перемещает панель в плавающую область
 
-- `Docking`- Доки панели на главной раме в месте, где панель была в последний раз состыкован
+- `Docking` — Закрепляет панель в главном фрейме в месте последнего закрепления панели
 
-- `AutoHide`- Переключает панель в режим автохайда
+- `AutoHide` -Переключает панель в режим автоскрытия
 
-- `Hide`- Скрывает стекло
+- `Hide` -Скрыть панель
 
 По умолчанию это меню не отображается.
 
-## <a name="cdockingmanagerenablepanecontextmenu"></a><a name="enablepanecontextmenu"></a>CDockingManager::EnablePaneContextMenu
+## <a name="cdockingmanagerenablepanecontextmenu"></a><a name="enablepanecontextmenu"></a> Кдоккингманажер:: Енаблепанеконтекстмену
 
-Сообщает библиотеке отобразить специальное контекстное меню, в которое есть список панели инструментов приложений и стыковочные панели, когда пользователь нажимает на правую кнопку мыши и библиотека обрабатывает WM_CONTEXTMENU сообщение.
+Указывает библиотеке отображать специальное контекстное меню, имеющее список панелей инструментов приложения и закрепляемых областей, когда пользователь нажимает правую кнопку мыши и библиотека обрабатывает сообщение WM_CONTEXTMENU.
 
 ```cpp
 void EnablePaneContextMenu(
@@ -764,20 +765,20 @@ void EnablePaneContextMenu(
 ### <a name="parameters"></a>Параметры
 
 *bEnable*<br/>
-(в) Если true, библиотека включает поддержку автоматического контекстного меню; если FALSE библиотека выключает поддержку автоматического контекстного меню.
+окне Если значение — TRUE, Библиотека включает поддержку автоматического контекстного меню; Если значение равно FALSE, Библиотека отключает поддержку автоматического контекстного меню.
 
-*uiCustomizeCmd*<br/>
-(в) Идентификатор команды для элемента **Настройка** в меню.
+*уикустомизекмд*<br/>
+окне Идентификатор команды для **настройки** элемента в меню.
 
-*strCustomizeText*<br/>
-(в) Текст элемента **Настройка.**
+*стркустомизетекст*<br/>
+окне Текст **настраиваемого** элемента.
 
-*bToolbarsТолько*<br/>
-(в) Если TRUE, меню отображает только список инструментов приложения; если FALSE, библиотека добавляет стыковочные панели приложений в этот список.
+*бтулбарсонли*<br/>
+окне Если значение — TRUE, в меню отображается только список панелей инструментов приложения. Если задано значение FALSE, Библиотека добавляет в этот список закрепляемые области приложения.
 
-## <a name="cdockingmanagerfinddocksite"></a><a name="finddocksite"></a>CDockingManager::FindDockSite
+## <a name="cdockingmanagerfinddocksite"></a><a name="finddocksite"></a> Кдоккингманажер:: Финддокксите
 
-Извлекает панель, которая находится в указанном положении и имеет указанное выравнивание.
+Извлекает панель гистограммы, находящийся в указанной позиции и имеющую указанное выравнивание.
 
 ```
 virtual CDockSite* FindDockSite(
@@ -787,19 +788,19 @@ virtual CDockSite* FindDockSite(
 
 ### <a name="parameters"></a>Параметры
 
-*dwAlignment*<br/>
-(в) Выравнивание панели бара.
+*двалигнмент*<br/>
+окне Выравнивание панели строк.
 
-*bOuter*<br/>
-(в) Если true, получить бар в голову позиции в списке контрольных баров. В противном случае, получить бар в хвосте позиции в списке контрольных баров.
+*баутер*<br/>
+окне Если значение — TRUE, извлеките строку в головном положении в списке панелей элементов управления. В противном случае извлеките строку в позиции хвоста в списке панелей элементов управления.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Стыковочное стекло, имеющее указанное выравнивание; NULL в противном случае.
+Закрепляемая панель с указанным выравниванием; В противном случае — NULL.
 
-## <a name="cdockingmanagerfindpanebyid"></a><a name="findpanebyid"></a>CDockingManager::FindPaneByID
+## <a name="cdockingmanagerfindpanebyid"></a><a name="findpanebyid"></a> Кдоккингманажер:: Финдпанебид
 
-Находит панель по указанному идентификатору управления.
+Находит панель по указанному ИДЕНТИФИКАТОРу элемента управления.
 
 ```
 virtual CBasePane* FindPaneByID(
@@ -809,21 +810,21 @@ virtual CBasePane* FindPaneByID(
 
 ### <a name="parameters"></a>Параметры
 
-*uBarID*<br/>
-(в) Упоняет идентификатор управления панели, чтобы найти.
+*убарид*<br/>
+окне Указывает идентификатор элемента управления для поиска панели.
 
-*bSearchMiniФреймы*<br/>
-(в) TRUE включить все плавающие стекла в поиске. FALSE включить только пристыкованные стекла.
+*бсеарчминифрамес*<br/>
+окне Значение TRUE, чтобы включить в Поиск все плавающие области. Значение FALSE, чтобы включить только закрепленные панели.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Объект [CBasePane,](../../mfc/reference/cbasepane-class.md) который имеет указанный идентификатор управления, или NULL, если указанное стекло не может быть найдено.
+Объект [CBasePane](../../mfc/reference/cbasepane-class.md) с указанным идентификатором элемента управления или значение null, если указанная панель не найдена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cdockingmanagerfinddocksitebypane"></a><a name="finddocksitebypane"></a>CDockingManager::FindDockSiteByPane
+## <a name="cdockingmanagerfinddocksitebypane"></a><a name="finddocksitebypane"></a> Кдоккингманажер:: Финддоккситебипане
 
-Возвращает панель, которая имеет идентификатор панели бара цели.
+Возвращает панель гистограммы с идентификатором панели целевых панелей.
 
 ```
 virtual CDockSite* FindDockSiteByPane(CPane* pTargetBar);
@@ -831,26 +832,26 @@ virtual CDockSite* FindDockSiteByPane(CPane* pTargetBar);
 
 ### <a name="parameters"></a>Параметры
 
-*pTargetBar*<br/>
-(в) Указатель на панель целевого бара.
+*птаржетбар*<br/>
+окне Указатель на панель целевой строки.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Панель бара, которая имеет идентификатор панели бара цели; NULL, если такого панели бара не существует.
+Панель гистограммы с идентификатором панели целевых панелей; NULL, если такая панель не существует.
 
-## <a name="cdockingmanagerfixupvirtualrects"></a><a name="fixupvirtualrects"></a>CDockingManager::FixupVirtualRects
+## <a name="cdockingmanagerfixupvirtualrects"></a><a name="fixupvirtualrects"></a> Кдоккингманажер:: Фиксупвиртуалректс
 
-Замещает все текущие позиции панели инструментов в виртуальные прямоугольники.
+Фиксирует все текущие позиции панели инструментов в виртуальных прямоугольниках.
 
 ```
 virtual void FixupVirtualRects();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Когда пользователь начинает перетаскивать панель инструментов, приложение запоминает свое исходное положение в *виртуальном прямоугольнике.* Когда пользователь перемещает панель инструментов по месту док-станции, панель инструментов может сдвинуть другие панели инструментов. Исходные позиции других инструментов хранятся в соответствующих виртуальных прямоугольниках.
+Когда пользователь начинает перетаскивать панель инструментов, приложение запоминает его исходную точку в *виртуальном прямоугольнике*. Когда пользователь перемещает панель инструментов через узел закрепления, панель инструментов может быть сдвинуты на другие панели инструментов. Исходные положения других панелей инструментов хранятся в соответствующих виртуальных прямоугольниках.
 
-## <a name="cdockingmanagerframefrompoint"></a><a name="framefrompoint"></a>CDockingManager::FrameFromPoint
+## <a name="cdockingmanagerframefrompoint"></a><a name="framefrompoint"></a> Кдоккингманажер:: Фрамефромпоинт
 
 Возвращает кадр, содержащий заданную точку.
 
@@ -864,21 +865,21 @@ virtual CPaneFrameWnd* FrameFromPoint(
 ### <a name="parameters"></a>Параметры
 
 *пт*<br/>
-(в) Определяет точку, в координатах экрана, для проверки.
+окне Указывает точку (в экранных координатах) для проверки.
 
-*pFrameToExclude*<br/>
-(в) Указатель на кадр, чтобы исключить.
+*пфраметоексклуде*<br/>
+окне Указатель на кадр, который необходимо исключить.
 
-*bFloatMultiТолько*<br/>
-(в) TRUE, чтобы исключить кадры, `CMultiPaneFrameWnd`которые не являются экземплярами; FALSE в противном случае.
+*бфлоатмултионли*<br/>
+окне Значение TRUE, чтобы исключить кадры, которые не являются экземплярами `CMultiPaneFrameWnd` ; В противном случае — значение FALSE.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Кадр, содержащий заданную точку; NULL в противном случае.
+Кадр, содержащий заданную точку; В противном случае — NULL.
 
-## <a name="cdockingmanagergetclientareabounds"></a><a name="getclientareabounds"></a>CDockingManager::GetClientAreaBounds
+## <a name="cdockingmanagergetclientareabounds"></a><a name="getclientareabounds"></a> Кдоккингманажер:: Жетклиентареабаундс
 
-Получает прямоугольник, содержащий границы клиентской области.
+Возвращает прямоугольник, содержащий границы клиентской области.
 
 ```
 CRect GetClientAreaBounds() const;
@@ -888,16 +889,16 @@ void GetClientAreaBounds(CRect& rcClient);
 
 ### <a name="parameters"></a>Параметры
 
-*rcКлиент*<br/>
-(ваут) Ссылка на прямоугольник, содержащий границы клиентской зоны.
+*ркклиент*<br/>
+заполняет Ссылка на прямоугольник, содержащий границы клиентской области.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Прямоугольник, содержащий границы клиентской области.
 
-## <a name="cdockingmanagergetdockingmode"></a><a name="getdockingmode"></a>CDockingManager::GetDockingMode
+## <a name="cdockingmanagergetdockingmode"></a><a name="getdockingmode"></a> Кдоккингманажер:: Жетдоккингмоде
 
-Возвращает текущий режим стыковки.
+Возвращает текущий режим закрепления.
 
 ```
 static AFX_DOCK_TYPE GetDockingMode();
@@ -905,7 +906,7 @@ static AFX_DOCK_TYPE GetDockingMode();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Значение регистратора, представляющее текущий режим стыковки. Может иметь одно из следующих значений.
+Значение перечислителя, представляющее текущий режим закрепления. Может иметь одно из следующих значений.
 
 - DT_STANDARD
 
@@ -913,13 +914,13 @@ static AFX_DOCK_TYPE GetDockingMode();
 
 - DT_SMART
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Чтобы установить режим стыковки, позвоните [CDockingManager::SetDockingMode](#setdockingmode).
+Чтобы задать режим закрепления, вызовите метод [кдоккингманажер:: сетдоккингмоде](#setdockingmode).
 
-## <a name="cdockingmanagergetdocksiteframewnd"></a><a name="getdocksiteframewnd"></a>CDockingManager::GetDockSiteFrameWnd
+## <a name="cdockingmanagergetdocksiteframewnd"></a><a name="getdocksiteframewnd"></a> Кдоккингманажер:: Жетдоккситефрамевнд
 
-Получает указатель на родительскую оконную раму.
+Возвращает указатель на фрейм родительского окна.
 
 ```
 CFrameWnd* GetDockSiteFrameWnd() const;
@@ -927,11 +928,11 @@ CFrameWnd* GetDockSiteFrameWnd() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на родительскую оконную раму.
+Указатель на фрейм родительского окна.
 
-## <a name="cdockingmanagergetenabledautohidealignment"></a><a name="getenabledautohidealignment"></a>CDockingManager::GetEnabledAutoHideAlignment
+## <a name="cdockingmanagergetenabledautohidealignment"></a><a name="getenabledautohidealignment"></a> Кдоккингманажер:: Жетенабледаутохидеалигнмент
 
-Возвращает включенное выравнивание стекол.
+Возвращает включенное выравнивание панелей.
 
 ```
 DWORD GetEnabledAutoHideAlignment() const;
@@ -939,15 +940,15 @@ DWORD GetEnabledAutoHideAlignment() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Битовая комбинация CBRS_ALIGN_ флагов, или 0, если автоматида не включена. Для получения дополнительной информации [см. CFrameWnd::EnableDocking](../../mfc/reference/cframewnd-class.md#enabledocking).
+Побитовое сочетание флагов CBRS_ALIGN_ или 0, если области автоскрытия не включены. Дополнительные сведения см. в разделе [CFrameWnd:: енабледоккинг](../../mfc/reference/cframewnd-class.md#enabledocking).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Метод возвращает включенное выравнивание для баров управления автохидов. Для включения баров автохид, [позвоните CFrameWndEx::EnableAutoHidePanes](../../mfc/reference/cframewndex-class.md#enableautohidepanes).
+Метод возвращает включенное выравнивание для панелей управления автоскрытия. Чтобы включить автоматическое скрытие полос, вызовите метод [CFrameWndEx:: енаблеаутохидепанес](../../mfc/reference/cframewndex-class.md#enableautohidepanes).
 
-## <a name="cdockingmanagergetminiframes"></a><a name="getminiframes"></a>CDockingManager::GetMiniFrames
+## <a name="cdockingmanagergetminiframes"></a><a name="getminiframes"></a> Кдоккингманажер:: Жетминифрамес
 
-Получает список минифреймов.
+Возвращает список минифрамес.
 
 ```
 const CObList& GetMiniFrames() const;
@@ -955,11 +956,11 @@ const CObList& GetMiniFrames() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Список минифреймов, содержащих панели управления, принадлежащие менеджеру стыковки.
+Список минифрамес, содержащих панели элементов управления, принадлежащие диспетчеру закрепления.
 
-## <a name="cdockingmanagergetouteredgebounds"></a><a name="getouteredgebounds"></a>CDockingManager::GetOuterEdgeBounds
+## <a name="cdockingmanagergetouteredgebounds"></a><a name="getouteredgebounds"></a> Кдоккингманажер:: Жетаутереджебаундс
 
-Получает прямоугольник, содержащий внешние края рамы.
+Возвращает прямоугольник, содержащий внешние края рамки.
 
 ```
 CRect GetOuterEdgeBounds() const;
@@ -967,11 +968,11 @@ CRect GetOuterEdgeBounds() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Прямоугольник, содержащий внешние края рамы.
+Прямоугольник, содержащий внешние края рамки.
 
-## <a name="cdockingmanagergetpanelist"></a><a name="getpanelist"></a>CDockingManager::GetPaneList
+## <a name="cdockingmanagergetpanelist"></a><a name="getpanelist"></a> Кдоккингманажер:: копанель
 
-Возвращает список стекол, принадлежащих менеджеру стыковки. Это включает в себя все плавающие стекла.
+Возвращает список панелей, принадлежащих диспетчеру закрепления. Сюда входят все плавающие панели.
 
 ```cpp
 void GetPaneList(
@@ -983,27 +984,27 @@ void GetPaneList(
 
 ### <a name="parameters"></a>Параметры
 
-*lstBars*<br/>
-(в, вне) Содержит все панели текущего менеджера стыковки.
+*лстбарс*<br/>
+[вход, выход] Содержит все панели текущего диспетчера закрепления.
 
-*bВключитьАвтохидэ*<br/>
-(в) TRUE включить стекла, которые находятся в режиме автохидирования; в противном случае, FALSE.
+*бинклудеаутохиде*<br/>
+окне Значение TRUE, чтобы включить панели, которые находятся в режиме автоскрытия. в противном случае — значение FALSE.
 
-*pRTCFilter*<br/>
-(в) Если не NULL, то в списке возвращается только панели указанного класса времени выполнения.
+*прткфилтер*<br/>
+окне Если значение не равно NULL, возвращаемый список содержит только панели указанного класса среды выполнения.
 
-*bВключитьудары*<br/>
-(в) TRUE для включения вкладок; в противном случае, FALSE.
+*бинклудетабс*<br/>
+окне Значение TRUE, чтобы включить вкладки; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если в диспетчере стыковки есть какие-либо табло, метод возвращает указатели на объекты [класса CBaseTabbedPane,](../../mfc/reference/cbasetabbedpane-class.md) и вы должны точно перечислить вкладки.
+Если в диспетчере закрепления есть панели с вкладками, метод возвращает указатели на объекты [класса CBaseTabbedPane](../../mfc/reference/cbasetabbedpane-class.md) , и необходимо явно перечислить вкладки.
 
-Используйте *pRTCFilter* для получения определенного класса стекол. Например, можно получить только панели инструментов, установив это значение соответствующим образом.
+Используйте *прткфилтер* для получения определенного класса панелей. Например, можно получить только панели инструментов, задав это значение соответствующим образом.
 
-## <a name="cdockingmanagergetsmartdockingmanager"></a><a name="getsmartdockingmanager"></a>CDockingManager::GetSmartDockingManager
+## <a name="cdockingmanagergetsmartdockingmanager"></a><a name="getsmartdockingmanager"></a> Кдоккингманажер:: Жетсмартдоккингманажер
 
-Получает указатель для смарт-менеджера стыковки.
+Получает указатель на диспетчер смарт-закрепления.
 
 ```
 CSmartDockingManager* GetSmartDockingManager();
@@ -1011,11 +1012,11 @@ CSmartDockingManager* GetSmartDockingManager();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на смарт-менеджера стыковки.
+Указатель на диспетчер смарт-закрепления.
 
-## <a name="cdockingmanagergetsmartdockingmanagerpermanent"></a><a name="getsmartdockingmanagerpermanent"></a>CDockingManager::GetSmartDockingManagerПостоянный
+## <a name="cdockingmanagergetsmartdockingmanagerpermanent"></a><a name="getsmartdockingmanagerpermanent"></a> Кдоккингманажер:: Жетсмартдоккингманажерперманент
 
-Получает указатель для смарт-менеджера стыковки.
+Получает указатель на диспетчер смарт-закрепления.
 
 ```
 CSmartDockingManager* GetSmartDockingManagerPermanent() const;
@@ -1023,11 +1024,11 @@ CSmartDockingManager* GetSmartDockingManagerPermanent() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на смарт-менеджера стыковки.
+Указатель на диспетчер смарт-закрепления.
 
-## <a name="cdockingmanagergetsmartdockingparams"></a><a name="getsmartdockingparams"></a>CDockingManager::GetSmartDockingParams
+## <a name="cdockingmanagergetsmartdockingparams"></a><a name="getsmartdockingparams"></a> Кдоккингманажер:: Жетсмартдоккингпарамс
 
-Возвращает параметры смарт-стыковки для менеджера стыковки.
+Возвращает параметры смарт-стыковки для диспетчера закрепления.
 
 ```
 static CSmartDockingInfo& GetSmartDockingParams();
@@ -1035,13 +1036,13 @@ static CSmartDockingInfo& GetSmartDockingParams();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Класс, содержащий интеллектуальные параметры стыковки для текущего менеджера стыковки. Для получения дополнительной [CSmartDockingInfo Class](../../mfc/reference/csmartdockinginfo-class.md)информации см.
+Класс, содержащий параметры смарт-стыковки для текущего диспетчера закрепления. Дополнительные сведения см. в разделе [класс ксмартдоккингинфо](../../mfc/reference/csmartdockinginfo-class.md).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cdockingmanagerhideautohidepanes"></a><a name="hideautohidepanes"></a>CDockingManager::HideAutoHidePanes
+## <a name="cdockingmanagerhideautohidepanes"></a><a name="hideautohidepanes"></a> Кдоккингманажер:: Хидеаутохидепанес
 
-Скрывает панель, которая находится в режиме автохидирования.
+Скрывает панель, которая находится в режиме автоскрытия.
 
 ```cpp
 void HideAutoHidePanes(
@@ -1051,15 +1052,15 @@ void HideAutoHidePanes(
 
 ### <a name="parameters"></a>Параметры
 
-*pbartoExclude*<br/>
-(в) Указатель на бар, чтобы исключить из укрытия.
+*пбартоексклуде*<br/>
+окне Указатель на полосу, которую необходимо исключить из скрытия.
 
-*bImmediately*<br/>
-(в) ПРАВДА, чтобы скрыть панель немедленно; FALSE, чтобы скрыть панель с эффектом автоматики.
+*биммедиатели*<br/>
+окне Значение TRUE, чтобы скрыть панель немедленно. Значение FALSE, чтобы скрыть панель с помощью автоскрытия.
 
-## <a name="cdockingmanagerinsertdocksite"></a><a name="insertdocksite"></a>CDockingManager::InsertDockSite
+## <a name="cdockingmanagerinsertdocksite"></a><a name="insertdocksite"></a> Кдоккингманажер:: Инсертдокксите
 
-Создает док-панель и вставляет его в список контрольных баров.
+Создает панель закрепления и вставляет ее в список панелей элементов управления.
 
 ```
 BOOL InsertDockSite(
@@ -1070,22 +1071,22 @@ BOOL InsertDockSite(
 
 ### <a name="parameters"></a>Параметры
 
-*Информация*<br/>
-(в) Структура, содержащая информацию о выравнивании стыковки.
+*контактные*<br/>
+окне Структура, содержащая сведения о выравнивании для панели закрепления.
 
-*dwAlignToInsertAfter*<br/>
-(в) Выравнивание док-панели.
+*двалигнтоинсертафтер*<br/>
+окне Выравнивание панели закрепления.
 
-*ppDockBar*<br/>
-(ваут) Указатель на указатель на док-панель.
+*ппдоккбар*<br/>
+заполняет Указатель на указатель на панель закрепления.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если док-панель была создана успешно; FALSE в противном случае.
+Значение TRUE, если панель закрепления успешно создана; В противном случае — значение FALSE.
 
-## <a name="cdockingmanagerinsertpane"></a><a name="insertpane"></a>CDockingManager::InsertPane
+## <a name="cdockingmanagerinsertpane"></a><a name="insertpane"></a> Кдоккингманажер:: Инсертпане
 
-Вставляет элементную панель управления в список контрольных баров.
+Вставляет панель элементов управления в список панелей элементов управления.
 
 ```
 BOOL InsertPane(
@@ -1096,26 +1097,26 @@ BOOL InsertPane(
 
 ### <a name="parameters"></a>Параметры
 
-*pControlBar*<br/>
-(в) Указатель на контрольное стекло.
+*пконтролбар*<br/>
+окне Указатель на панель управления.
 
-*pTarget*<br/>
-(в) Указатель на целевое стекло.
+*птаржет*<br/>
+окне Указатель на целевую область.
 
-*bПосле*<br/>
-(в) TRUE вставить панель после положения целевого стекла; FALSE в противном случае.
+*бафтер*<br/>
+окне Значение TRUE, чтобы вставить панель после расположения целевой области; В противном случае — значение FALSE.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если элемент управления успешно добавлен в список контрольных баров; FALSE в противном случае.
+Значение TRUE, если панель управления успешно добавлена в список панелей элементов управления; В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод возвращается ложным, если панель управления уже находится в списке контрольных баров или если целевое стекло не существует в списке контрольных баров.
+Этот метод возвращает значение false, если панель управления уже находится в списке панелей элементов управления или если целевая область не существует в списке панелей элементов управления.
 
-## <a name="cdockingmanagerisdocksitemenu"></a><a name="isdocksitemenu"></a>CDockingManager::IsDockSiteMenu
+## <a name="cdockingmanagerisdocksitemenu"></a><a name="isdocksitemenu"></a> Кдоккингманажер:: Исдоккситемену
 
-Уточняется, отображается ли всплывающее меню на подписях всех стекол.
+Указывает, отображается ли всплывающее меню в заголовках всех панелей.
 
 ```
 static BOOL IsDockSiteMenu();
@@ -1123,15 +1124,15 @@ static BOOL IsDockSiteMenu();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если меню сайта док-станции отображается на подписи всех стыковочных стекол; в противном случае FALSE.
+TRUE, если меню сайта закрепления отображается на заголовках всех панелей закрепления; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вы можете включить меню сайта док-станции, позвонив [cDockingManager::EnableDockSiteMenu](#enabledocksitemenu).
+Можно включить меню DOCKER site, вызвав [кдоккингманажер:: енабледоккситемену](#enabledocksitemenu).
 
-## <a name="cdockingmanagerisinadjustlayout"></a><a name="isinadjustlayout"></a>CdockingManager::IsInAdjustLayout
+## <a name="cdockingmanagerisinadjustlayout"></a><a name="isinadjustlayout"></a> Кдоккингманажер:: Исинаджустлайаут
 
-Определяет, корректируются ли макеты всех стекол.
+Определяет, настроены ли макеты всех панелей.
 
 ```
 BOOL IsInAdjustLayout() const;
@@ -1139,11 +1140,11 @@ BOOL IsInAdjustLayout() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если макеты всех стекол скорректированы; FALSE в противном случае.
+Значение TRUE, если макеты всех панелей настроены; В противном случае — значение FALSE.
 
-## <a name="cdockingmanagerisolecontainermode"></a><a name="isolecontainermode"></a>CDockingManager::IsOLEContainerMode
+## <a name="cdockingmanagerisolecontainermode"></a><a name="isolecontainermode"></a> Кдоккингманажер:: Исолеконтаинермоде
 
-Уточняется, находится ли диспетчер стыковки в режиме контейнера OLE.
+Указывает, находится ли диспетчер стыковки в режиме контейнера OLE.
 
 ```
 BOOL IsOLEContainerMode() const;
@@ -1151,15 +1152,15 @@ BOOL IsOLEContainerMode() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если менеджер стыковки находится в режиме контейнера OLE; в противном случае, FALSE.
+Значение TRUE, если диспетчер закрепления находится в режиме контейнера OLE. в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-В режиме контейнера OLE все стыковочные панели и панели инструментов приложений скрыты. Панели также скрыты в этом режиме, если вы установили [CDockingManager::m_bHideDockingBarsInContainerMode](#m_bhidedockingbarsincontainermode) true.
+В режиме контейнера OLE все панели закреплений и панели инструментов приложения скрыты. Панели также скрыты в этом режиме, если для параметра [кдоккингманажер:: m_bHideDockingBarsInContainerMode](#m_bhidedockingbarsincontainermode) ЗАДАНО значение true.
 
-## <a name="cdockingmanagerispointneardocksite"></a><a name="ispointneardocksite"></a>CDockingManager::IsPointNearDockSite
+## <a name="cdockingmanagerispointneardocksite"></a><a name="ispointneardocksite"></a> Кдоккингманажер:: Испоинтнеардокксите
 
-Определяет, находится ли указанная точка рядом с местом дока.
+Определяет, находится ли указанная точка вблизи сайта закрепления.
 
 ```
 BOOL IsPointNearDockSite(
@@ -1170,20 +1171,20 @@ BOOL IsPointNearDockSite(
 
 ### <a name="parameters"></a>Параметры
 
-*Точки*<br/>
-(в) Указанная точка.
+*точки*<br/>
+окне Указанная точка.
 
-*dwBarAlignment*<br/>
-(ваут) Определяет, какой край находится рядом. Возможные значения CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP и CBRS_ALIGN_BOTTOM.
+*двбаралигнмент*<br/>
+заполняет Указывает, на каком крае находится приближается точка. Возможные значения: CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP и CBRS_ALIGN_BOTTOM.
 
-*bOuterEdge*<br/>
-(ваут) TRUE, если точка находится вблизи внешней границы дока; FALSE в противном случае.
+*баутередже*<br/>
+заполняет Значение TRUE, если точка близка к внешней границе сайта закрепления; В противном случае — значение FALSE.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если точка находится рядом с док-станции; в противном случае FALSE.
+Значение TRUE, если точка находится вблизи сайта закрепления; в противном случае — FALSE.
 
-## <a name="cdockingmanagerisprintpreviewvalid"></a><a name="isprintpreviewvalid"></a>CDockingManager::IsPrintPreviewValid
+## <a name="cdockingmanagerisprintpreviewvalid"></a><a name="isprintpreviewvalid"></a> Кдоккингманажер:: Испринтпревиеввалид
 
 Определяет, установлен ли режим предварительного просмотра печати.
 
@@ -1193,11 +1194,11 @@ BOOL IsPrintPreviewValid() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если режим предварительного просмотра печати установлен; FALSE в противном случае.
+Значение TRUE, если установлен режим предварительного просмотра. В противном случае — значение FALSE.
 
-## <a name="cdockingmanagerloadstate"></a><a name="loadstate"></a>CDockingManager::LoadState
+## <a name="cdockingmanagerloadstate"></a><a name="loadstate"></a> Кдоккингманажер:: LoadState
 
-Загружает состояние менеджера стыковки из реестра.
+Загружает состояние диспетчера закрепления из реестра.
 
 ```
 virtual BOOL LoadState(
@@ -1207,19 +1208,19 @@ virtual BOOL LoadState(
 
 ### <a name="parameters"></a>Параметры
 
-*lpszProfileName*<br/>
-(в) Имя профиля.
+*лпсзпрофиленаме*<br/>
+окне Имя профиля.
 
 *uiID*<br/>
-(в) Ид менеджера стыковки.
+окне Идентификатор диспетчера закрепления.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если состояние менеджера стыковки было загружено успешно; в противном случае FALSE.
+Значение TRUE, если состояние диспетчера закрепления было успешно загружено; в противном случае — FALSE.
 
-## <a name="cdockingmanagerlockupdate"></a><a name="lockupdate"></a>CDockingManager::LockUpdate
+## <a name="cdockingmanagerlockupdate"></a><a name="lockupdate"></a> Кдоккингманажер:: Локкупдате
 
-Запирает данное окно.
+Блокирует заданное окно.
 
 ```cpp
 void LockUpdate(BOOL bLock);
@@ -1228,75 +1229,75 @@ void LockUpdate(BOOL bLock);
 ### <a name="parameters"></a>Параметры
 
 *Блок*<br/>
-(в) ПРАВДА, если окно заблокировано; FALSE в противном случае.
+окне Значение TRUE, если окно заблокировано; В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Когда окно заблокировано, оно не может быть перемещено и не может быть перерисовано.
+Если окно заблокировано, оно не может быть перемещено и не может быть перерисовано.
 
-## <a name="cdockingmanagerm_bhidedockingbarsincontainermode"></a><a name="m_bhidedockingbarsincontainermode"></a>CDockingManager::m_bHideDockingBarsInContainerMode
+## <a name="cdockingmanagerm_bhidedockingbarsincontainermode"></a><a name="m_bhidedockingbarsincontainermode"></a> Кдоккингманажер:: m_bHideDockingBarsInContainerMode
 
-Уточняется, прячет ли диспетчер стыковки стекла в режиме контейнера OLE.
+Указывает, скрывает ли диспетчер стыковки панели в режиме контейнера OLE.
 
 ```
 AFX_IMPORT_DATA static BOOL m_bHideDockingBarsInContainerMode;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Установите это значение false, если вы хотите сохранить все панели пристыкован к основной кадр видна, когда приложение находится в режиме контейнера OLE. По умолчанию это значение является правдой.
+Установите это значение в значение FALSE, если хотите, чтобы все панели, закрепленные за основным кадром, отображались, если приложение находится в режиме контейнера OLE. По умолчанию это значение равно TRUE.
 
-## <a name="cdockingmanagerm_dockmodeglobal"></a><a name="m_dockmodeglobal"></a>CDockingManager::m_dockModeGlobal
+## <a name="cdockingmanagerm_dockmodeglobal"></a><a name="m_dockmodeglobal"></a> Кдоккингманажер:: m_dockModeGlobal
 
-Определяет глобальный режим стыковки.
+Задает режим глобальной стыковки.
 
 ```
 AFX_IMPORT_DATA static AFX_DOCK_TYPE m_dockModeGlobal;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-По умолчанию каждая стыковка использует этот режим стыковки. Для получения дополнительной информации о значениях, которые это поле может быть установлено, [см. CBasePane::GetDockingMode](../../mfc/reference/cbasepane-class.md#getdockingmode).
+По умолчанию в каждой области закрепления используется режим закрепления. Дополнительные сведения о значениях, которые могут быть заданы для этого поля, см. в разделе [CBasePane:: жетдоккингмоде](../../mfc/reference/cbasepane-class.md#getdockingmode).
 
-## <a name="cdockingmanagerm_ndocksensitivity"></a><a name="m_ndocksensitivity"></a>CDockingManager::m_nDockSensitivity
+## <a name="cdockingmanagerm_ndocksensitivity"></a><a name="m_ndocksensitivity"></a> Кдоккингманажер:: m_nDockSensitivity
 
-Определяет чувствительность стыковки.
+Указывает чувствительность закрепления.
 
 ```
 AFX_IMPORT_DATA static int m_nDockSensitivity;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Чувствительность стыковки определяет, насколько близко плавающее стекло может приблизиться к стыковочную панель, место стыковки или другую панель до того, как фреймворк изменит свое состояние на стыковку.
+Чувствительность к закреплениям определяет, как закрытие плавающей панели может подходить к закрепляемой панели, узлу стыковки или другой панели до того, как платформа изменит свое состояние на закрепленный.
 
-## <a name="cdockingmanagerm_ntimeoutbeforedockingbardock"></a><a name="m_ntimeoutbeforedockingbardock"></a>CDockingManager::m_nTimeOutBeforeDockingBarDock
+## <a name="cdockingmanagerm_ntimeoutbeforedockingbardock"></a><a name="m_ntimeoutbeforedockingbardock"></a> Кдоккингманажер:: m_nTimeOutBeforeDockingBarDock
 
-Определяет время, в миллисекундах, до стыковки стыковка в режиме немедленного стыковки.
+Указывает время в миллисекундах, по истечении которого закрепляемая панель закрепляется в режиме немедленного закрепления.
 
 ```
 static UINT m_nTimeOutBeforeDockingBarDock;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Перед стыковкой панели фреймворк ждет указанный промежуток времени. Это предотвращает случайное пристыкование панели к местоположению, пока пользователь все еще перетаскивает его.
+Перед закреплением области платформа ожидает указанное время. Это предотвращает случайную Прикрепление панели к месту, когда пользователь все еще перетаскивать его.
 
-## <a name="cdockingmanagerm_ntimeoutbeforetoolbardock"></a><a name="m_ntimeoutbeforetoolbardock"></a>CDockingManager::m_nTimeOutBeforeToolBarDock
+## <a name="cdockingmanagerm_ntimeoutbeforetoolbardock"></a><a name="m_ntimeoutbeforetoolbardock"></a> Кдоккингманажер:: m_nTimeOutBeforeToolBarDock
 
-Определяет время, в миллисекундах, до того, как панель инструментов пристыкована к окну основной рамы.
+Указывает время в миллисекундах до того, как панель инструментов закрепляется в главном окне фрейма.
 
 ```
 static UINT m_nTimeOutBeforeToolBarDock;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Перед стыковкой панели инструментов фреймворк ждет указанный промежуток времени. Это предотвращает случайное пристыкование панели инструментов к местоположению, пока пользователь все еще перетаскивает ее.
+Перед закреплением панели инструментов платформа ожидает указанное время. Это предотвращает случайную Прикрепление панели инструментов к месту, когда пользователь все еще перетаскивать его.
 
-## <a name="cdockingmanageronactivateframe"></a><a name="onactivateframe"></a>CDockingManager::OnActivateFrame
+## <a name="cdockingmanageronactivateframe"></a><a name="onactivateframe"></a> Кдоккингманажер:: Онактиватефраме
 
-Вызывается фреймворком, когда окно кадра становится активным или деактивировано.
+Вызывается структурой, когда окно фрейма становится активным или деактивируется.
 
 ```
 virtual void OnActivateFrame(BOOL bActivate);
@@ -1305,9 +1306,9 @@ virtual void OnActivateFrame(BOOL bActivate);
 ### <a name="parameters"></a>Параметры
 
 *bActivate*<br/>
-(в) Если TRUE, окно рамы становится активным; если FALSE, окно рамы отключается.
+окне Если значение равно TRUE, окно фрейма становится активным; Если значение равно FALSE, окно фрейма деактивируется.
 
-## <a name="cdockingmanageronclosepopupmenu"></a><a name="onclosepopupmenu"></a>CDockingManager::OnClosePopupMenu
+## <a name="cdockingmanageronclosepopupmenu"></a><a name="onclosepopupmenu"></a> Кдоккингманажер:: Онклосепопупмену
 
 Вызывается платформой, когда активное всплывающее меню обрабатывает сообщение WM_DESTROY.
 
@@ -1315,13 +1316,13 @@ virtual void OnActivateFrame(BOOL bActivate);
 void OnClosePopupMenu();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Платформа отправляет WM_DESTROY сообщение, когда он собирается закрыть текущее основное окно. Переопределить этот метод для `CMFCPopupMenu` обработки уведомлений от `CMFCPopupMenu` объектов, которые принадлежат к окну кадра, когда объект обрабатывает WM_DESTROY сообщение.
+Платформа отправляет WM_DESTROY сообщение, когда закрывает текущее главное окно. Переопределите этот метод, чтобы обрабатывать уведомления от `CMFCPopupMenu` объектов, принадлежащих окну фрейма, когда `CMFCPopupMenu` объект обрабатывает WM_DESTROY сообщение.
 
-## <a name="cdockingmanageronmoveminiframe"></a><a name="onmoveminiframe"></a>CDockingManager::OnMoveMiniFrame
+## <a name="cdockingmanageronmoveminiframe"></a><a name="onmoveminiframe"></a> Кдоккингманажер:: Онмовеминифраме
 
-Вызывается по фреймворку для перемещения окна мини-рамки.
+Вызывается структурой для перемещения окна мини-кадра.
 
 ```
 virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
@@ -1329,16 +1330,16 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 
 ### <a name="parameters"></a>Параметры
 
-*pFrame*<br/>
-(в) Указатель на окно мини-рамки.
+*пфраме*<br/>
+окне Указатель на окно с мини-рамкой.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если метод удается; в противном случае FALSE.
+Значение TRUE, если метод выполнен. в противном случае — FALSE.
 
-## <a name="cdockingmanageronpanecontextmenu"></a><a name="onpanecontextmenu"></a>CDockingManager::OnPaneContextMenu
+## <a name="cdockingmanageronpanecontextmenu"></a><a name="onpanecontextmenu"></a> Кдоккингманажер:: Онпанеконтекстмену
 
-Вызывается фреймворк, когда он строит меню, которое имеет список стекол.
+Вызывается платформой при построении меню со списком панелей.
 
 ```cpp
 void OnPaneContextMenu(CPoint point);
@@ -1346,10 +1347,10 @@ void OnPaneContextMenu(CPoint point);
 
 ### <a name="parameters"></a>Параметры
 
-*Точки*<br/>
-(в) Определяет расположение меню.
+*точки*<br/>
+окне Указывает расположение меню.
 
-## <a name="cdockingmanagerpanefrompoint"></a><a name="panefrompoint"></a>CDockingManager::PaneFromPoint
+## <a name="cdockingmanagerpanefrompoint"></a><a name="panefrompoint"></a> Кдоккингманажер::P Анефромпоинт
 
 Возвращает панель, содержащую заданную точку.
 
@@ -1372,38 +1373,38 @@ virtual CBasePane* PaneFromPoint(
 
 ### <a name="parameters"></a>Параметры
 
-*Точки*<br/>
-(в) Определяет точку, в координатах экрана, для проверки.
+*точки*<br/>
+окне Указывает точку (в экранных координатах) для проверки.
 
-*nЧувствительность*<br/>
-(в) Значение для раздувания прямоугольника окна каждого проверенного стекла. Панель удовлетворяет критериям поиска, если данная точка находится в этом завышенном регионе.
+*нсенситивити*<br/>
+окне Значение для расширения прямоугольника окна каждой проверяемой области. Панель удовлетворяет критериям поиска, если данная точка находится в этом неизменном регионе.
 
-*bExactBar*<br/>
-(в) TRUE игнорировать *nSensitivity* параметр; в противном случае, FALSE.
+*бексактбар*<br/>
+окне Значение TRUE, чтобы игнорировать параметр *нсенситивити* ; в противном случае — значение FALSE.
 
-*pRTCBarType*<br/>
-(в) Если не NULL, метод выполняет поиск только стекол указанного типа.
+*прткбартипе*<br/>
+окне Если значение не равно NULL, метод выполняет поиск только на панелях указанного типа.
 
-*bCheckВидимость*<br/>
-(в) TRUE для проверки только видимых стекол; в противном случае, FALSE.
+*бчекквисибилити*<br/>
+окне Значение TRUE, чтобы проверять только видимые панели; в противном случае — значение FALSE.
 
-*dwAlignment*<br/>
-(ваут) Если панель найдена в указанной точке, этот параметр содержит сторону панели, которая была ближе всего к указанной точке. Дополнительные сведения см. в разделе «Примечания».
+*двалигнмент*<br/>
+заполняет Если область находится в указанной точке, этот параметр содержит сторону области, ближайшую к указанной точке. Дополнительные сведения см. в разделе "Примечания".
 
-*pbartoignore*<br/>
-(в) Если не NULL, метод игнорирует стекла, указанные этим параметром.
+*пбартоигноре*<br/>
+окне Если значение не равно NULL, метод игнорирует панели, заданные этим параметром.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-[Объект CBasePane,](../../mfc/reference/cbasepane-class.md)содержащий заданную точку, или NULL, если не было найдено стекол.
+Объект, производный от [CBasePane](../../mfc/reference/cbasepane-class.md), который содержит заданную точку, или значение null, если панель не найдена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Когда функция возвращается и панель была найдена, *dwAlignment* содержит выравнивание указанной точки. Например, если точка была ближе всего к верхней части панели, *dwAlignment* установлен на CBRS_ALIGN_TOP.
+Когда функция возвращает и найдена панель, *двалигнмент* содержит выравнивание указанной точки. Например, если точка находилась ближе к верхней части области, *двалигнмент* имеет значение CBRS_ALIGN_TOP.
 
-## <a name="cdockingmanagerprocesspanecontextmenucommand"></a><a name="processpanecontextmenucommand"></a>CDockingManager::ProcessPaneContextMenuCommand
+## <a name="cdockingmanagerprocesspanecontextmenucommand"></a><a name="processpanecontextmenucommand"></a> Кдоккингманажер::P Роцесспанеконтекстменукомманд
 
-Вызывается фреймворком для выбора или очистки флажка для указанной команды и перерасчета макета показанной панели.
+Вызывается платформой для выбора или снятия флажка для указанной команды и повторного вычисления макета отображаемой панели.
 
 ```
 BOOL ProcessPaneContextMenuCommand(
@@ -1416,24 +1417,24 @@ BOOL ProcessPaneContextMenuCommand(
 ### <a name="parameters"></a>Параметры
 
 *nID*<br/>
-(в) Ид контрольной панели в меню.
+окне Идентификатор панели элементов управления в меню.
 
-*nКод*<br/>
-(в) Код уведомления команды.
+*нкоде*<br/>
+окне Код уведомления команды.
 
-*pExtra*<br/>
-(в) Указатель на аннулирование, которое отлито в указатель, `CCmdUI` если *nCode* является CN_UPDATE_COMMAND_UI.
+*пекстра*<br/>
+окне Указатель на void, который приводится к указателю, `CCmdUI` Если *нкоде* имеет CN_UPDATE_COMMAND_UI.
 
-*pHandlerInfo*<br/>
-(в) Указатель на структуру информации. Этот параметр не используется.
+*фандлеринфо*<br/>
+окне Указатель на информационную структуру. Этот параметр не используется.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если *pEXtra* не является NULL и *nCode* равна CN_UPDATE_COMMAND_UI, или если есть панель управления с указанным *nID*.
+Значение TRUE, если *пекстра* не равно NULL и *нкоде* равно CN_UPDATE_COMMAND_UI или если имеется панель элементов управления с указанным *NID*.
 
-## <a name="cdockingmanagerrecalclayout"></a><a name="recalclayout"></a>CdockingManager::RecalcLayout
+## <a name="cdockingmanagerrecalclayout"></a><a name="recalclayout"></a> Кдоккингманажер:: RecalcLayout
 
-Пересчитывает внутреннюю компоновку элементов управления, присутствующих в списке элементов управления.
+Повторно вычисляет внутренний макет элементов управления, имеющихся в списке элементов управления.
 
 ```
 virtual void RecalcLayout(BOOL bNotify = TRUE);
@@ -1441,20 +1442,20 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 
 ### <a name="parameters"></a>Параметры
 
-*bNotify*<br/>
-(в) Этот параметр не используется.
+*бнотифи*<br/>
+окне Этот параметр не используется.
 
-## <a name="cdockingmanagerreleaseemptypanecontainers"></a><a name="releaseemptypanecontainers"></a>CDockingManager::ReleaseEmptyPaneContainers
+## <a name="cdockingmanagerreleaseemptypanecontainers"></a><a name="releaseemptypanecontainers"></a> Кдоккингманажер:: Релеасимптипанеконтаинерс
 
-Выпускает пустые панели контейнеров.
+Освобождает пустые контейнеры панели.
 
 ```cpp
 void ReleaseEmptyPaneContainers();
 ```
 
-## <a name="cdockingmanagerremovehiddenmditabbedbar"></a><a name="removehiddenmditabbedbar"></a>CDockingManager::RemoveHiddenMDITabbedBar
+## <a name="cdockingmanagerremovehiddenmditabbedbar"></a><a name="removehiddenmditabbedbar"></a> Кдоккингманажер:: Ремовехидденмдитаббедбар
 
-Удаляет указанное скрытое панельное стекло.
+Удаляет указанную панель скрытой панели.
 
 ```cpp
 void RemoveHiddenMDITabbedBar(CDockablePane* pBar);
@@ -1462,12 +1463,12 @@ void RemoveHiddenMDITabbedBar(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Параметры
 
-*pBar*<br/>
-(в) Указатель на панель панели для удаления.
+*пбар*<br/>
+окне Указатель на панель полос, которую необходимо удалить.
 
-## <a name="cdockingmanagerremoveminiframe"></a><a name="removeminiframe"></a>CDockingManager::RemoveMiniFrame
+## <a name="cdockingmanagerremoveminiframe"></a><a name="removeminiframe"></a> Кдоккингманажер:: Ремовеминифраме
 
-Удаляет указанную рамку из списка мини-кадров.
+Удаляет указанный кадр из списка мини-кадров.
 
 ```
 virtual BOOL RemoveMiniFrame(CPaneFrameWnd* pWnd);
@@ -1475,16 +1476,16 @@ virtual BOOL RemoveMiniFrame(CPaneFrameWnd* pWnd);
 
 ### <a name="parameters"></a>Параметры
 
-*pWnd*<br/>
-(в) Указатель на кадр для удаления.
+*Приводится*<br/>
+окне Указатель на удаляемый кадр.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если указанный кадр удален; FALSE в противном случае.
+Значение TRUE, если указанный кадр удален; В противном случае — значение FALSE.
 
-## <a name="cdockingmanagerremovepanefromdockmanager"></a><a name="removepanefromdockmanager"></a>CDockingManager::RemovePaneFromDockManager
+## <a name="cdockingmanagerremovepanefromdockmanager"></a><a name="removepanefromdockmanager"></a> Кдоккингманажер:: Ремовепанефромдоккманажер
 
-Отменяет панель и удаляет ее из списка в диспетчере стыковки.
+Отменяет регистрацию панели и удаляет ее из списка в диспетчере закрепления.
 
 ```cpp
 void RemovePaneFromDockManager(
@@ -1497,22 +1498,22 @@ void RemovePaneFromDockManager(
 
 ### <a name="parameters"></a>Параметры
 
-*pWnd*<br/>
-(в) Указатель на панель, которая должна быть удалена.
+*Приводится*<br/>
+окне Указатель на панель, которую необходимо удалить.
 
-*bDestroy*<br/>
-(в) Если true, удаленная панель уничтожается.
+*бдестрой*<br/>
+окне Если значение — TRUE, удаленная панель уничтожается.
 
-*bAdjustLayout*<br/>
-(в) Если true, отрегулируйте макет стыковки немедленно.
+*баджустлайаут*<br/>
+окне Если значение — TRUE, откорректируйте макет закрепления немедленно.
 
-*bAutoHide*<br/>
-(в) Если true, панель удаляется из списка баров autohide. Если FALSE, панель удаляется из списка регулярных стекол.
+*баутохиде*<br/>
+окне Если значение — TRUE, панель удаляется из списка полос автоскрытия. Если значение равно FALSE, панель удаляется из списка обычных панелей.
 
-*pBarЗамена*<br/>
-(в) Указатель на панель, которая заменяет удаленное стекло.
+*пбарреплацемент*<br/>
+окне Указатель на панель, которая заменяет удаленную панель.
 
-## <a name="cdockingmanagerreplacepane"></a><a name="replacepane"></a>CDockingManager::ReplacePane
+## <a name="cdockingmanagerreplacepane"></a><a name="replacepane"></a> Кдоккингманажер:: Реплацепане
 
 Заменяет одну панель другой.
 
@@ -1524,27 +1525,27 @@ BOOL ReplacePane(
 
 ### <a name="parameters"></a>Параметры
 
-*pOriginalBar*<br/>
-(в) Указатель на исходное стекло.
+*поригиналбар*<br/>
+окне Указатель на исходную панель.
 
-*pNewBar*<br/>
-(в) Указатель на панель, которая заменяет исходное стекло.
+*пневбар*<br/>
+окне Указатель на область, которая заменяет исходную панель.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если панель успешно заменена; FALSE в противном случае.
+Значение TRUE, если панель успешно заменена; В противном случае — значение FALSE.
 
-## <a name="cdockingmanagerresortminiframesforzorder"></a><a name="resortminiframesforzorder"></a>CDockingManager::ResortMiniFramesFor
+## <a name="cdockingmanagerresortminiframesforzorder"></a><a name="resortminiframesforzorder"></a> Кдоккингманажер:: Ресортминифрамесфорзордер
 
-Курорты кадры в списке мини-кадров.
+Перекурортить кадры в списке мини-кадров.
 
 ```cpp
 void ResortMiniFramesForZOrder();
 ```
 
-## <a name="cdockingmanagersavestate"></a><a name="savestate"></a>CDockingManager::SaveState
+## <a name="cdockingmanagersavestate"></a><a name="savestate"></a> Кдоккингманажер:: SaveState
 
-Сохраняет состояние менеджера стыковки в реестр.
+Сохраняет состояние диспетчера закрепления в реестре.
 
 ```
 virtual BOOL SaveState(
@@ -1554,23 +1555,23 @@ virtual BOOL SaveState(
 
 ### <a name="parameters"></a>Параметры
 
-*lpszProfileName*<br/>
-(в) Путь к ключу реестра.
+*лпсзпрофиленаме*<br/>
+окне Путь к разделу реестра.
 
 *uiID*<br/>
-(в) Идентификатор менеджера стыковки.
+окне Идентификатор диспетчера закрепления.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если государство было сохранено успешно; в противном случае FALSE.
+Значение TRUE, если состояние успешно сохранено; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Сохранение состояния менеджера стыковки в реестр включает в себя сохранение состояний баров управления, состояния баров автохидирования и состояния мини-кадров, присутствующих в менеджере стыковки.
+Сохранение состояния диспетчера закрепления в реестре включает сохранение состояния панелей элементов управления, состояния полос автоскрытия и состояния мини-кадров, имеющихся в диспетчере закрепления.
 
-## <a name="cdockingmanagersendmessagetominiframes"></a><a name="sendmessagetominiframes"></a>CDockingManager::SendMessageToMiniFrames
+## <a name="cdockingmanagersendmessagetominiframes"></a><a name="sendmessagetominiframes"></a> Кдоккингманажер:: Сендмессажетоминифрамес
 
-Отправляет указанное сообщение на все мини-кадры.
+Отправляет указанное сообщение во все мини-кадры.
 
 ```
 BOOL SendMessageToMiniFrames(
@@ -1581,22 +1582,22 @@ BOOL SendMessageToMiniFrames(
 
 ### <a name="parameters"></a>Параметры
 
-*uMessage*<br/>
-(в) Сообщение, чтобы быть отправлено.
+*умессаже*<br/>
+окне Отправляемое сообщение.
 
 *wParam*<br/>
-(в) Дополнительная информация, зависящая от сообщений.
+окне Дополнительные сведения, зависящие от сообщений.
 
 *lParam*<br/>
-(в) Дополнительная информация, зависящая от сообщений.
+окне Дополнительные сведения, зависящие от сообщений.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА всегда.
+Значение TRUE всегда.
 
-## <a name="cdockingmanagerserialize"></a><a name="serialize"></a>CDockingManager::Serialize
+## <a name="cdockingmanagerserialize"></a><a name="serialize"></a> Кдоккингманажер:: Serialize
 
-Записывает менеджера стыковки в архив.
+Записывает диспетчер закрепления в архив.
 
 ```cpp
 void Serialize(CArchive& ar);
@@ -1605,15 +1606,15 @@ void Serialize(CArchive& ar);
 ### <a name="parameters"></a>Параметры
 
 *ar*<br/>
-(в) Ссылка на объект архива.
+окне Ссылка на объект архива.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Запись менеджера стыковки в архив включает определение количества стыковочных баров управления и ползунок, а также написание баров управления, мини-кадров, баров автохидов и баров MDI, склееных в архив.
+Запись диспетчера закрепления в архив включает определение количества закрепления панелей элементов управления и ползунков, а также запись панелей элементов управления, Мини-кадров, полос автоскрытия и столбцов с вкладками MDI в архив.
 
-## <a name="cdockingmanagersetautohidezorder"></a><a name="setautohidezorder"></a>CDockingManager::SetAutohide
+## <a name="cdockingmanagersetautohidezorder"></a><a name="setautohidezorder"></a> Кдоккингманажер:: Сетаутохидезордер
 
-Устанавливает размер, ширину и высоту руля и указанного стекла.
+Задает размер, ширину и высоту панелей элементов управления и указанной панели.
 
 ```cpp
 void SetAutohideZOrder(CDockablePane* pAHDockingBar);
@@ -1621,12 +1622,12 @@ void SetAutohideZOrder(CDockablePane* pAHDockingBar);
 
 ### <a name="parameters"></a>Параметры
 
-*pAHDockingBar*<br/>
-(в) Указатель на док-станционное стекло.
+*пахдоккингбар*<br/>
+окне Указатель на закрепляемую область.
 
-## <a name="cdockingmanagersetdockingmode"></a><a name="setdockingmode"></a>CDockingManager::SetDockingMode
+## <a name="cdockingmanagersetdockingmode"></a><a name="setdockingmode"></a> Кдоккингманажер:: Сетдоккингмоде
 
-Устанавливает режим стыковки.
+Задает режим закрепления.
 
 ```
 static void SetDockingMode(
@@ -1636,35 +1637,35 @@ static void SetDockingMode(
 
 ### <a name="parameters"></a>Параметры
 
-*dockMode*<br/>
-Определяет новый режим стыковки. Дополнительные сведения см. в разделе «Примечания».
+*доккмоде*<br/>
+Задает новый режим стыковки. Дополнительные сведения см. в разделе "Примечания".
 
-*Тема*<br/>
-Определяет тему, которая будет использоваться для умных маркеров стыковки. Это может быть одно из следующих перечисленных значений: AFX_SDT_DEFAULT, AFX_SDT_VS2005 AFX_SDT_VS2008.
+*Theme*<br/>
+Указывает тему, используемую для маркеров смарт-закрепления. Это может быть одно из следующих перечислимых значений: AFX_SDT_DEFAULT, AFX_SDT_VS2005, AFX_SDT_VS2008.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вызовите этот статический метод, чтобы установить режим стыковки.
+Вызовите этот статический метод, чтобы задать режим закрепления.
 
-*dockMode* может быть одним из следующих значений:
+*доккмоде* может принимать одно из следующих значений:
 
-- DT_STANDARD - Стандартный режим стыковки, реализованный в Visual Studio .NET 2003. Панели перетаскиваются без перетаскивания контекста.
+- DT_STANDARD стандартный режим стыковки, реализованный в Visual Studio .NET 2003. Панели перетаскиваются без контекстного перетаскивания.
 
-- DT_IMMEDIATE - Режим немедленного стыковки, реализованный в Microsoft Visio. Панели перетаскиваются с перетаскиванием контекста, но маркеры не отображаются.
+- Режим закрепления DT_IMMEDIATE, реализованный в Microsoft Visio. Панели перетаскиваются с контекстом перетаскивания, но маркеры не отображаются.
 
-- DT_SMART - Смарт-режим стыковки, реализованный в Visual Studio 2005. Панели перетаскиваются с перетаскиванием контекста и смарт-маркеры отображаются, которые показывают, где панель может быть пристыкован.
+- DT_SMART-интеллектуальный режим стыковки, реализованный в Visual Studio 2005. Панели перемещаются с контекстом перетаскивания, и отобразятся смарт-маркеры, которые показывают, где можно закрепить область.
 
-## <a name="cdockingmanagersetdockstate"></a><a name="setdockstate"></a>CDockingManager::SetDockState
+## <a name="cdockingmanagersetdockstate"></a><a name="setdockstate"></a> Кдоккингманажер:: Сетдоккстате
 
-Устанавливает состояние стыковки баров управления, мини-рам и аутохидных решеток.
+Задает состояние закрепления панелей элементов управления, Мини-кадров и полос автоскрытия.
 
 ```
 virtual void SetDockState();
 ```
 
-## <a name="cdockingmanagersetprintpreviewmode"></a><a name="setprintpreviewmode"></a>CDockingManager::SetPrintPreviewMode
+## <a name="cdockingmanagersetprintpreviewmode"></a><a name="setprintpreviewmode"></a> Кдоккингманажер:: Сетпринтпревиевмоде
 
-Устанавливает режим предварительного просмотра печати баров, отображаемых в предварительном просмотре печати.
+Задает режим предварительного просмотра для полос, отображаемых в предварительном просмотре.
 
 ```cpp
 void SetPrintPreviewMode(
@@ -1674,15 +1675,15 @@ void SetPrintPreviewMode(
 
 ### <a name="parameters"></a>Параметры
 
-*bPreview*<br/>
-(в) TRUE, если режим предварительного просмотра печати установлен; FALSE в противном случае.
+*бпревиев*<br/>
+окне Значение TRUE, если установлен режим предварительного просмотра. В противном случае — значение FALSE.
 
-*pState*<br/>
-(в) Указатель на состояние предварительного просмотра. Этот параметр не используется.
+*пстате*<br/>
+окне Указатель на состояние предварительного просмотра. Этот параметр не используется.
 
-## <a name="cdockingmanagersetsmartdockingparams"></a><a name="setsmartdockingparams"></a>CDockingManager::SetSmartDockingParams
+## <a name="cdockingmanagersetsmartdockingparams"></a><a name="setsmartdockingparams"></a> Кдоккингманажер:: Сетсмартдоккингпарамс
 
-Устанавливает параметры, определяющие поведение смарт-стыковки.
+Задает параметры, определяющие поведение интеллектуальной стыковки.
 
 ```
 static void SetSmartDockingParams(CSmartDockingInfo& params);
@@ -1691,15 +1692,15 @@ static void SetSmartDockingParams(CSmartDockingInfo& params);
 ### <a name="parameters"></a>Параметры
 
 *params*<br/>
-(в, вне) Определяет параметры смарт-стыковки.
+[вход, выход] Определяет параметры для интеллектуальной стыковки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вызовите этот метод, если вы хотите настроить внешний вид, цвет или форму умных маркеров стыковки.
+Этот метод следует вызывать, если требуется настроить внешний вид, цвет или форму маркеров закрепления.
 
-Чтобы использовать по умолчанию искать смарт-маркеры стыковки, передать непрепрецизмированный экземпляр [CSmartDockingInfo класса](../../mfc/reference/csmartdockinginfo-class.md) *парамы.*
+Чтобы использовать поиск по умолчанию для маркеров смарт-закрепления, передайте неинициализированный экземпляр [класса ксмартдоккингинфо](../../mfc/reference/csmartdockinginfo-class.md) в *params*.
 
-## <a name="cdockingmanagershowdelayshowminiframes"></a><a name="showdelayshowminiframes"></a>CDockingManager::ShowDelayShowMiniКадры
+## <a name="cdockingmanagershowdelayshowminiframes"></a><a name="showdelayshowminiframes"></a> Кдоккингманажер:: Шовделайшовминифрамес
 
 Показывает или скрывает окна мини-кадров.
 
@@ -1710,11 +1711,11 @@ void ShowDelayShowMiniFrames(BOOL bshow);
 ### <a name="parameters"></a>Параметры
 
 *bShow*<br/>
-(в) TRUE, чтобы сделать окно показанного кадра активным; FALSE, чтобы скрыть окно рамы.
+окне Значение TRUE, чтобы активировать окно отображаемого кадра. Значение FALSE, чтобы скрыть окно рамки.
 
-## <a name="cdockingmanagershowpanes"></a><a name="showpanes"></a>CDockingManager::ShowPanes
+## <a name="cdockingmanagershowpanes"></a><a name="showpanes"></a> Кдоккингманажер:: Шовпанес
 
-Показывает или скрывает стекла управления и автоматики баров.
+Показывает или скрывает панели элемента управления и панели автоскрытия.
 
 ```
 virtual BOOL ShowPanes(BOOL bShow);
@@ -1723,15 +1724,15 @@ virtual BOOL ShowPanes(BOOL bShow);
 ### <a name="parameters"></a>Параметры
 
 *bShow*<br/>
-(в) TRUE, чтобы показать стекла; FALSE, чтобы скрыть стекла.
+окне Значение TRUE, чтобы отобразить панели; Значение FALSE, чтобы скрыть панели.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Всегда значение FALSE.
 
-## <a name="cdockingmanagerstartsdocking"></a><a name="startsdocking"></a>CDockingManager::StartSDocking
+## <a name="cdockingmanagerstartsdocking"></a><a name="startsdocking"></a> Кдоккингманажер:: Стартсдоккинг
 
-Запускает смарт-стыковку указанного окна в соответствии с выравниванием менеджера смарт-стыковки.
+Запускает интеллектуальную стыковку указанного окна в соответствии с выравниванием для диспетчера смарт-стыковки.
 
 ```cpp
 void StartSDocking(CWnd* pDockingWnd);
@@ -1739,20 +1740,20 @@ void StartSDocking(CWnd* pDockingWnd);
 
 ### <a name="parameters"></a>Параметры
 
-*pDockingWnd*<br/>
-(в) Указатель на окно для стыковки.
+*пдоккингвнд*<br/>
+окне Указатель на окно для закрепления.
 
-## <a name="cdockingmanagerstopsdocking"></a><a name="stopsdocking"></a>CDockingManager::StopSDocking
+## <a name="cdockingmanagerstopsdocking"></a><a name="stopsdocking"></a> Кдоккингманажер:: Стопсдоккинг
 
-Прекращает стыковку.
+Останавливает интеллектуальную стыковку.
 
 ```cpp
 void StopSDocking();
 ```
 
-## <a name="cdockingmanagergetsmartdockingtheme"></a><a name="getsmartdockingtheme"></a>CDockingManager::GetSmartDockingTheme
+## <a name="cdockingmanagergetsmartdockingtheme"></a><a name="getsmartdockingtheme"></a> Кдоккингманажер:: Жетсмартдоккингсеме
 
-Статический метод, который возвращает тему, используемую для отображения интеллектуальных маркеров стыковки.
+Статический метод, возвращающий тему, используемую для вывода маркеров смарт-закрепления.
 
 ```
 static AFX_SMARTDOCK_THEME __stdcall GetSmartDockingTheme();
@@ -1760,15 +1761,15 @@ static AFX_SMARTDOCK_THEME __stdcall GetSmartDockingTheme();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает одно из следующих перечисленных значений: AFX_SDT_DEFAULT, AFX_SDT_VS2005, AFX_SDT_VS2008.
+Возвращает одно из следующих перечислимых значений: AFX_SDT_DEFAULT, AFX_SDT_VS2005, AFX_SDT_VS2008.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
-[Класс CObject](../../mfc/reference/cobject-class.md)<br/>
+[CObject, класс](../../mfc/reference/cobject-class.md)<br/>
 [Класс CFrameWndEx](../../mfc/reference/cframewndex-class.md)<br/>
-[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
-[Класс CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md)
+[Класс CDockablePane](../../mfc/reference/cdockablepane-class.md)<br/>
+[Класс Кпанефрамевнд](../../mfc/reference/cpaneframewnd-class.md)

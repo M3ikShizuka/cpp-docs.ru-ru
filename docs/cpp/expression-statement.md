@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: оператор expression'
 title: Оператор выражений
 ms.date: 11/04/2016
 helpviewer_keywords:
 - statements [C++], expression
 - expression statements
 ms.assetid: 547d7f7a-58be-4ffc-a4b3-d64c7ae7538c
-ms.openlocfilehash: 2f12bbbafd9be50f851e36f472098431f9ac0d5d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a208951c536883f2f08a6e856e9da48884255b1a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80189004"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97186549"
 ---
 # <a name="expression-statement"></a>Оператор выражений
 
@@ -30,4 +31,4 @@ ms.locfileid: "80189004"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Общие сведения об операторах в C++](../cpp/overview-of-cpp-statements.md)
+[Общие сведения о инструкциях C++](../cpp/overview-of-cpp-statements.md)

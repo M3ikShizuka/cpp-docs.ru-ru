@@ -1,5 +1,6 @@
 ---
-title: '&lt;c > (C++ комментариев документации)'
+description: 'Дополнительные сведения о: &lt; c&gt;'
+title: '&lt;c> (комментарии к документации по C++)'
 ms.date: 11/04/2016
 f1_keywords:
 - <c>
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - <c> C++ XML tag
 - c C++ XML tag
 ms.assetid: 3b23fc0f-e10d-4dd0-b197-48a46cbddd9f
-ms.openlocfilehash: 43e1417e5a749f2ea51346bbf6db235ba08a7bcf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 35d06183136a82c602b5e4daa288fb4518962154
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62294776"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182623"
 ---
 # <a name="ltcgt"></a>&lt;c&gt;
 
-С помощью тега \<c> можно указать, что текст в описании нужно пометить как код. Чтобы определить несколько строк в качестве кода, используйте тег [\<code>](code-visual-cpp.md).
+\<c>Тег указывает, что текст в описании должен быть помечен как код. Чтобы определить несколько строк в качестве кода, используйте тег [\<code>](code-visual-cpp.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -26,12 +27,12 @@ ms.locfileid: "62294776"
 
 #### <a name="parameters"></a>Параметры
 
-*текст*<br/>
+*text*<br/>
 Текст, который нужно указать в качестве кода.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Чтобы обработать и сохранить комментарии документации в файл, при компиляции необходимо использовать параметр [/doc](doc-process-documentation-comments-c-cpp.md).
+Скомпилируйте с [/doc](doc-process-documentation-comments-c-cpp.md) для обработки комментариев документации в файл.
 
 ## <a name="example"></a>Пример
 
@@ -54,6 +55,6 @@ public:
 };
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Документация XML](xml-documentation-visual-cpp.md)

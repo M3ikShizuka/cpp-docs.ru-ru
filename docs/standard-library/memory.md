@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; память&gt;'
 title: '&lt;memory&gt;'
 ms.date: 08/04/2019
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 - std::<memory>
 helpviewer_keywords:
 - memory header
-ms.openlocfilehash: 0e3ce4a4411bd6d4c352802a96c97e93c66491df
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 27aea86d8329ee37c3aa1409b7dde7091cfe43bf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836469"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97183780"
 ---
 # <a name="ltmemorygt"></a>&lt;memory&gt;
 
@@ -24,7 +25,7 @@ ms.locfileid: "88836469"
 
 **Пространство имен:** std
 
-## <a name="members"></a>Элементы
+## <a name="members"></a>Члены
 
 ### <a name="functions"></a>Функции
 

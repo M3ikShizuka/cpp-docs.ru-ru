@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: `/cgthreads` (потоки создания кода)'
 title: /cgthreads (потоки создания кода)
 ms.date: 07/31/2020
 f1_keywords:
@@ -9,14 +10,14 @@ helpviewer_keywords:
 - cgthreads compiler option (C++)
 - cgthreads
 ms.assetid: 64bc768c-6caa-4baf-9dea-7cfa1ffb01c2
-ms.openlocfilehash: 319a42ab68f02df6019ff283f1039ef3d561c4a0
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: 41f1e2ab6aa9263a2faf81e83d47db953819827a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520879"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97182480"
 ---
-# <a name="cgthreads-code-generation-threads"></a>`/cgthreads`(Потоки создания кода)
+# <a name="cgthreads-code-generation-threads"></a>`/cgthreads` (Потоки создания кода)
 
 Задает число потоков cl.exe, используемых для оптимизации и создания кода.
 
@@ -36,7 +37,7 @@ ms.locfileid: "87520879"
 **`cgthreadsN`**\
 Максимальное число потоков для использования cl.exe, где *N* — число в диапазоне от 1 до 8.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 **`cgthreads`** Параметр указывает максимальное число потоков, которые cl.exe параллельно используются для этапов оптимизации и создания кода компиляции. Обратите внимание, что между **`cgthreads`** и аргументом *Number* не может быть пробела. По умолчанию cl.exe использует четыре потока, как если **`/cgthreads4`** бы были указаны. Если доступно больше ядер процессора, то значение большего *числа* может увеличить время сборки. Этот параметр особенно полезен при объединении с [ `/GL` (оптимизация всей программы)](gl-whole-program-optimization.md).
 
@@ -54,7 +55,7 @@ ms.locfileid: "87520879"
 
 - См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Параметры компилятора КОМПИЛЯТОРОМ MSVC](compiler-options.md)<br/>
+[Параметры компилятора MSVC](compiler-options.md)<br/>
 [Синтаксис командной строки компилятора MSVC](compiler-command-line-syntax.md)

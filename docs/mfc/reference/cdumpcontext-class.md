@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CDumpContext Class'
 title: Класс CDumpContext
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - CDumpContext [MFC], HexDump
 - CDumpContext [MFC], SetDepth
 ms.assetid: 98c52b2d-14b5-48ed-b423-479a4d1c60fa
-ms.openlocfilehash: 3a81e06586e6de14d57ce4c4de36dc30c73383f1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 955be92c4a3b08fe6e1d5a947166133143667ac7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87212518"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97184780"
 ---
 # <a name="cdumpcontext-class"></a>Класс CDumpContext
 
@@ -35,11 +36,11 @@ ms.locfileid: "87212518"
 class CDumpContext
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CDumpContext:: CDumpContext](#cdumpcontext)|Формирует объект `CDumpContext`.|
 
@@ -57,11 +58,11 @@ class CDumpContext
 
 |Имя|Описание|
 |----------|-----------------|
-|[CDumpContext:: operator&lt;&lt;](#operator_lt_lt)|Вставляет переменные и объекты в контекст дампа.|
+|[CDumpContext:: operator &lt;&lt;](#operator_lt_lt)|Вставляет переменные и объекты в контекст дампа.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CDumpContext`не имеет базового класса.
+`CDumpContext` не имеет базового класса.
 
 Для большей части дампа можно использовать [афксдумп](diagnostic-services.md#afxdump), предварительно объявленный `CDumpContext` объект. `afxDump`Объект доступен только в отладочной версии Библиотека Microsoft Foundation Class.
 
@@ -91,7 +92,7 @@ class CDumpContext
 
 **Заголовок:** AFX. h
 
-## <a name="cdumpcontextcdumpcontext"></a><a name="cdumpcontext"></a>CDumpContext:: CDumpContext
+## <a name="cdumpcontextcdumpcontext"></a><a name="cdumpcontext"></a> CDumpContext:: CDumpContext
 
 Конструирует объект класса `CDumpContext` .
 
@@ -104,7 +105,7 @@ CDumpContext(CFile* pFile = NULL);
 *pFile*<br/>
 Указатель на `CFile` объект, который является назначением дампа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `afxDump`Объект создается автоматически.
 
@@ -114,7 +115,7 @@ CDumpContext(CFile* pFile = NULL);
 
 [!code-cpp[NVC_MFC_Utilities#12](../../mfc/codesnippet/cpp/cdumpcontext-class_1.cpp)]
 
-## <a name="cdumpcontextdumpashex"></a><a name="dumpashex"></a>CDumpContext::D Умпашекс
+## <a name="cdumpcontextdumpashex"></a><a name="dumpashex"></a> CDumpContext::D Умпашекс
 
 Выводит указанный тип в формате шестнадцатеричных чисел.
 
@@ -133,7 +134,7 @@ CDumpContext& DumpAsHex(WORD w);
 
 Ссылка на объект `CDumpContext`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите эту функцию-член для вывода элемента указанного типа в виде шестнадцатеричного числа. Чтобы создать дамп массива, вызовите метод [CDumpContext:: хексдумп](#hexdump).
 
@@ -141,7 +142,7 @@ CDumpContext& DumpAsHex(WORD w);
 
 [!code-cpp[NVC_MFC_Utilities#13](../../mfc/codesnippet/cpp/cdumpcontext-class_2.cpp)]
 
-## <a name="cdumpcontextflush"></a><a name="flush"></a>CDumpContext:: Flush
+## <a name="cdumpcontextflush"></a><a name="flush"></a> CDumpContext:: Flush
 
 Принудительная запись всех данных, остающихся в буферах, в файл, присоединенный к контексту дампа.
 
@@ -153,7 +154,7 @@ void Flush();
 
 [!code-cpp[NVC_MFC_Utilities#14](../../mfc/codesnippet/cpp/cdumpcontext-class_3.cpp)]
 
-## <a name="cdumpcontextgetdepth"></a><a name="getdepth"></a>CDumpContext:: Depth
+## <a name="cdumpcontextgetdepth"></a><a name="getdepth"></a> CDumpContext:: Depth
 
 Определяет, находится ли в процессе глубокий или поверхностный дамп.
 
@@ -169,7 +170,7 @@ int GetDepth() const;
 
   См. пример для [сетдепс](#setdepth).
 
-## <a name="cdumpcontexthexdump"></a><a name="hexdump"></a>CDumpContext:: Хексдумп
+## <a name="cdumpcontexthexdump"></a><a name="hexdump"></a> CDumpContext:: Хексдумп
 
 Выводит массив байтов в формате шестнадцатеричных чисел.
 
@@ -195,7 +196,7 @@ void HexDump(
 *нвидс*<br/>
 Максимальное число байтов, записываемых в строку (не является шириной строки вывода).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Чтобы создать дамп одного определенного типа элемента в виде шестнадцатеричного числа, вызовите [CDumpContext::D умпашекс](#dumpashex).
 
@@ -203,7 +204,7 @@ void HexDump(
 
 [!code-cpp[NVC_MFC_Utilities#15](../../mfc/codesnippet/cpp/cdumpcontext-class_4.cpp)]
 
-## <a name="cdumpcontextoperator-ltlt"></a><a name="operator_lt_lt"></a>CDumpContext:: operator&lt;&lt;
+## <a name="cdumpcontextoperator-ltlt"></a><a name="operator_lt_lt"></a> CDumpContext:: operator &lt;&lt;
 
 Выводит указанные данные в контекст дампа.
 
@@ -235,7 +236,7 @@ CDumpContext& operator<<(HFONT h);
 
 Ссылка `CDumpContext`. С помощью возвращаемого значения можно записывать несколько вставок в одну строку исходного кода.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Оператор вставки перегружается для `CObject` указателей, а также для большинства типов-примитивов. Указатель на символ приводит к дампу содержимого строки. Указатель на **`void`** результат в шестнадцатеричном дампе адреса. ЛОНГЛОНГ приводит к дампу 64-разрядного целого числа со знаком; УЛОНГЛОНГ приводит к дампу 64-разрядного целого числа без знака.
 
@@ -245,7 +246,7 @@ CDumpContext& operator<<(HFONT h);
 
 [!code-cpp[NVC_MFC_Utilities#17](../../mfc/codesnippet/cpp/cdumpcontext-class_5.cpp)]
 
-## <a name="cdumpcontextsetdepth"></a><a name="setdepth"></a>CDumpContext:: Сетдепс
+## <a name="cdumpcontextsetdepth"></a><a name="setdepth"></a> CDumpContext:: Сетдепс
 
 Задает глубину дампа.
 
@@ -258,7 +259,7 @@ void SetDepth(int nNewDepth);
 *нневдепс*<br/>
 Новое значение глубины.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вы создаете дамп простого типа или простой `CObject` , который не содержит указателей на другие объекты, достаточно иметь значение 0. Значение больше 0 указывает глубокий дамп, в котором рекурсивно выводятся дампы всех объектов. Например, при глубоком дампе коллекции будут выгружаться все элементы коллекции. В производных классах можно использовать и другие конкретные значения глубины.
 

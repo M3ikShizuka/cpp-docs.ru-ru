@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: SQL: типы данных SQL и C++ (ODBC)'
 title: SQL. Типы данных SQL и C++ (ODBC)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - SQL data types [C++]
 - SQL [C++], vs. C++ data types
 ms.assetid: 066e0070-d4da-435c-9c4b-f7cab3352c86
-ms.openlocfilehash: 424ae09f6462d4d34b5a847fc210f9329e76d788
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7dd0e4fe94ef61436a7a62e1bb653e803c0b6168
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218342"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97185977"
 ---
 # <a name="sql-sql-and-c-data-types-odbc"></a>SQL. Типы данных SQL и C++ (ODBC)
 
@@ -24,25 +25,25 @@ ms.locfileid: "87218342"
 
 |Тип данных SQL ANSI|Тип данных в C++|
 |------------------------|---------------------|
-|**ТИПА**|`CString`|
-|**DECIMAL**|`CString`одного|
+|**CHAR**|`CString`|
+|**DECIMAL**|`CString` одного|
 |**SMALLINT**|**`int`**|
 |**REAL**|**`float`**|
-|**ЦЕЛО**|**`long`**|
-|**СДЕЛАТЬ**|**`double`**|
-|**Дважды**|**`double`**|
-|**ISNUMERIC**|`CString`одного|
+|**INTEGER**|**`long`**|
+|**FLOAT**|**`double`**|
+|**DOUBLE**|**`double`**|
+|**NUMERIC**|`CString` одного|
 |**VARCHAR**|`CString`|
 |**LONGVARCHAR**|`CLongBinary`, `CString` 2|
-|**ВЕРСИЙ**|**ЛОГИЧЕСКОМ**|
-|**TINYINT**|**ДВУХБАЙТОВЫХ**|
-|**BIGINT**|`CString`одного|
-|**ДВОИЧНЫЙ**|`CByteArray`|
+|**BIT**|**ЛОГИЧЕСКОМ**|
+|**TINYINT**|**BYTE**|
+|**BIGINT**|`CString` одного|
+|**BINARY**|`CByteArray`|
 |**VARBINARY**|`CByteArray`|
 |**LONGVARBINARY**|`CLongBinary`, `CByteArray` 3|
 |**DATE**|`CTime`, `CString`|
-|**ТАЙМАУТ**|`CTime`, `CString`|
-|**timestamp**|`CTime`, `CString`|
+|**TIME**|`CTime`, `CString`|
+|**TIMESTAMP**|`CTime`, `CString`|
 
 1. **Десятичное** и **числовое** сопоставляется в кодировке ANSI, `CString` так как **SQL_C_CHAR** является типом обмена ODBC по умолчанию.
 
@@ -50,7 +51,7 @@ ms.locfileid: "87218342"
 
 3. Двоичные данные, превышающие 255 символов, усекаются по умолчанию при сопоставлении с `CByteArray` . Длину усечения можно расширить, явно задав аргумент *нмаксленгс* в параметре `RFX_Binary` .
 
-Если библиотека курсоров ODBC не используется, может возникнуть проблема при попытке обновить два или более длинные поля переменной длины с помощью драйвера Microsoft SQL Server ODBC и классов базы данных ODBC MFC. Типы ODBC, **SQL_LONGVARCHAR** и **SQL_LONGVARBINARY**сопоставляются с типами SQL Server текста и изображений. `CDBException`Исключение возникает при обновлении двух или более длинных полей переменной длины в одном вызове `CRecordset::Update` . Поэтому не обновляйте несколько столбцов Long одновременно с `CRecordset::Update` . С помощью API ODBC можно одновременно обновить несколько столбцов типа long `SQLPutData` . Можно также использовать библиотеку курсоров ODBC, но это не рекомендуется делать для драйверов, таких как драйвер SQL Server, которые поддерживают курсоры и не нуждаются в библиотеке курсоров.
+Если библиотека курсоров ODBC не используется, может возникнуть проблема при попытке обновить два или более длинные поля переменной длины с помощью драйвера Microsoft SQL Server ODBC и классов базы данных ODBC MFC. Типы ODBC, **SQL_LONGVARCHAR** и **SQL_LONGVARBINARY** сопоставляются с типами SQL Server текста и изображений. `CDBException`Исключение возникает при обновлении двух или более длинных полей переменной длины в одном вызове `CRecordset::Update` . Поэтому не обновляйте несколько столбцов Long одновременно с `CRecordset::Update` . С помощью API ODBC можно одновременно обновить несколько столбцов типа long `SQLPutData` . Можно также использовать библиотеку курсоров ODBC, но это не рекомендуется делать для драйверов, таких как драйвер SQL Server, которые поддерживают курсоры и не нуждаются в библиотеке курсоров.
 
 Если вы используете библиотеку курсоров ODBC с классами базы данных ODBC MFC и драйвером Microsoft SQL Server ODBC, **утверждение** может возникнуть вместе с, `CDBException` Если вызов выполняется `CRecordset::Update` после вызова метода `CRecordset::Requery` . Вместо этого вызывайте метод `CRecordset::Close` и, `CRecordset::Open` а не `CRecordset::Requery` . Другое решение — не использовать библиотеку курсоров ODBC, так как SQL Server и драйвер ODBC SQL Server обеспечивают встроенную поддержку курсоров в собственном режиме, а библиотека курсоров ODBC не требуется.
 
