@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ккомтеароффобжект Class'
 title: Класс Ккомтеароффобжект
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - tear-off interfaces
 - CComTearOffObject class
 ms.assetid: d974b598-c6b2-42b1-8360-9190d9d0fbf3
-ms.openlocfilehash: 3eee1d33d5eded75d8805584a24e6b6f396a8369
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b9fe9e7a790a004aec1de059415bd5f47572455b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833625"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142159"
 ---
 # <a name="ccomtearoffobject-class"></a>Класс Ккомтеароффобжект
 
@@ -69,7 +70,7 @@ ATL реализует интерфейсы разрыва в два этапа 
 |-|-|
 |[m_pOwner](#m_powner)|Указатель на `CComObject` производный от класса Owner.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `CComTearOffObject` реализует интерфейс разрыва как отдельный объект, который создается только при запросе к этому интерфейсу. Разрыв удаляется, когда счетчик ссылок становится равным нулю. Как правило, создается интерфейс разрыва для интерфейса, который редко используется, поскольку при использовании разрыва сохраняется указатель vtable во всех экземплярах основного объекта.
 
@@ -116,7 +117,7 @@ CComTearOffObject(void* pv);
 *PV*<br/>
 окне Указатель, который будет преобразован в указатель на `CComObject<Owner>` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Увеличивает счетчик ссылок владельца на единицу.
 
@@ -128,7 +129,7 @@ CComTearOffObject(void* pv);
 ~CComTearOffObject();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Освобождает все выделенные ресурсы, вызывает Финалрелеасе и уменьшает число блокировок модуля.
 
@@ -140,7 +141,7 @@ CComTearOffObject(void* pv);
 CComTearOffObjectBase();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Инициализирует член [m_pOwner](#m_powner) значением NULL.
 
@@ -157,7 +158,7 @@ CComObject<Owner>* m_pOwner;
 *Владелец*<br/>
 окне Класс, для которого реализуется отрыв.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Во время создания указатель инициализируется значением NULL.
 
@@ -181,7 +182,7 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сначала запросы для интерфейсов в классе отрыва. Если интерфейс отсутствует, запрашивает интерфейс для объекта-владельца. Если запрошенный интерфейс имеет значение `IUnknown` , возвращает объект `IUnknown` владельца.
 

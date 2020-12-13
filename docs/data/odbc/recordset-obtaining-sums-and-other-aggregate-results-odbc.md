@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: набор записей: получение сумм и других статистических результатов (ODBC)'
 title: Набор записей. Определение сумм и других статистических результатов (ODBC)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - SQL Server projects, retrieving aggregate values from recordsets
 - SQL aggregate values, retrieving from recordsets
 ms.assetid: 94500662-22a4-443e-82d7-acbe6eca447b
-ms.openlocfilehash: b9e70716ad90a14bbed552d47f48d5a3317e5a62
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 10a2ef3b013d9eba0d9733cc321591ae8d6681f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225713"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136491"
 ---
 # <a name="recordset-obtaining-sums-and-other-aggregate-results-odbc"></a>Набор записей. Определение сумм и других статистических результатов (ODBC)
 
@@ -39,7 +40,7 @@ ms.locfileid: "87225713"
 С помощью функций SQL можно получать статистическую информацию о записях в источнике данных, не извлекая эти записи из источника. Создаваемый набор записей обычно состоит из одной записи (если все столбцы являются статистическими), которая содержит значение. (При использовании предложения **Group By** может существовать несколько записей.) Это значение является результатом вычисления или извлечения, выполненного функцией SQL.
 
 > [!TIP]
-> Чтобы добавить предложение SQL **GROUP BY** и, возможно, предложение **HAVING** в инструкцию SQL, добавьте их в конце `m_strFilter`. Например:
+> Чтобы добавить предложение SQL **GROUP BY** и, возможно, предложение **HAVING** в инструкцию SQL, добавьте их в конце `m_strFilter`. Пример:
 
 ```
 m_strFilter = "sales > 10 GROUP BY SALESPERSON_ID";
@@ -85,13 +86,13 @@ m_strFilter = "sales > 10 GROUP BY SALESPERSON_ID";
 DDX_FieldText(pDX, IDC_SUMSALES, m_pSet->m_lSales, m_pSet);
 ```
 
-В:
+на:
 
 ```
 DDX_FieldText(pDX, IDC_SUMSALES, m_pSet->m_dblSumSales, m_pSet);
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Набор записей (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
 [Набор записей. Выбор записей в наборе записей (ODBC)](../../data/odbc/recordset-how-recordsets-select-records-odbc.md)

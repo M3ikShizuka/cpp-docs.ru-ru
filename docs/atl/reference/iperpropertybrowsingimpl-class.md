@@ -1,5 +1,6 @@
 ---
-title: IPerPropertyБражИмпл класс
+description: 'Дополнительные сведения о: Иперпропертибровсингимпл Class'
+title: Класс Иперпропертибровсингимпл
 ms.date: 11/04/2016
 f1_keywords:
 - IPerPropertyBrowsingImpl
@@ -13,19 +14,19 @@ helpviewer_keywords:
 - property pages, accessing information
 - IPerPropertyBrowsing, ATL implementation
 ms.assetid: 0b1a9be3-d242-4767-be69-663a21e4b728
-ms.openlocfilehash: f8fb80cc38e775b9b26afa033647faac694e968a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: eba17c0011343f50f586b13086dc76229f08ba3c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81326513"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139351"
 ---
-# <a name="iperpropertybrowsingimpl-class"></a>IPerPropertyБражИмпл класс
+# <a name="iperpropertybrowsingimpl-class"></a>Класс Иперпропертибровсингимпл
 
-Этот класс `IUnknown` реализует и позволяет клиенту получить доступ к информации на страницах свойств объекта.
+Этот класс реализует `IUnknown` и позволяет клиенту обращаться к данным на страницах свойств объекта.
 
 > [!IMPORTANT]
-> Этот класс и его члены не могут быть использованы в приложениях, выполняемых в Windows Runtime.
+> Этот класс и его члены не могут использоваться в приложениях, выполняемых в среда выполнения Windows.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,27 +40,27 @@ class ATL_NO_VTABLE IPerPropertyBrowsingImpl :
 #### <a name="parameters"></a>Параметры
 
 *T*<br/>
-Ваш класс, полученный из `IPerPropertyBrowsingImpl`.
+Класс, производный от `IPerPropertyBrowsingImpl` .
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[IPerPropertyБражИмпл::GetDisplayString](#getdisplaystring)|Извлекает строку, описывающую данное свойство.|
-|[IPerPropertyBrowsingImpl::GetPredefinedStrings](#getpredefinedstrings)|Извлекает массив строк, соответствующих значениям, которые может принять данное свойство.|
-|[IPerPropertyBrowsingImpl::GetPredefinedValue](#getpredefinedvalue)|Извлекает VARIANT, содержащий значение свойства, идентифицированного данной DISPID. DISPID связан с именем строки, извлеченным из `GetPredefinedStrings`. Реализация ATL возвращает E_NOTIMPL.|
-|[IPerPropertyBrowsingImpl::MapPropertyToPage](#mappropertytopage)|Извлекает CLSID страницы свойств, связанных с данным свойством.|
+|[Иперпропертибровсингимпл:: Жетдисплайстринг](#getdisplaystring)|Извлекает строку, описывающую заданное свойство.|
+|[Иперпропертибровсингимпл:: Жетпредефинедстрингс](#getpredefinedstrings)|Извлекает массив строк, соответствующий значениям, которые может принимать данное свойство.|
+|[Иперпропертибровсингимпл:: Жетпредефинедвалуе](#getpredefinedvalue)|Извлекает объект типа VARIANT, содержащий значение свойства, идентифицируемого по заданному идентификатору DISPID. Идентификатор DISPID связан с именем строки, полученным из `GetPredefinedStrings` . Реализация ATL возвращает E_NOTIMPL.|
+|[Иперпропертибровсингимпл:: Маппропертитопаже](#mappropertytopage)|Извлекает идентификатор CLSID страницы свойств, связанной с данным свойством.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Интерфейс [IPerPropertyBrowsing](/windows/win32/api/ocidl/nn-ocidl-iperpropertybrowsing) позволяет клиенту получить доступ к информации на страницах свойств объекта. Класс `IPerPropertyBrowsingImpl` обеспечивает реализацию этого интерфейса `IUnknown` по умолчанию и реализует, отправляя информацию на устройство свалки в отладочных сборках.
+Интерфейс [иперпропертибровсинг](/windows/win32/api/ocidl/nn-ocidl-iperpropertybrowsing) позволяет клиенту получить доступ к информации на страницах свойств объекта. Класс `IPerPropertyBrowsingImpl` предоставляет реализацию этого интерфейса по умолчанию и реализует `IUnknown` , отправляя сведения в устройство дампа в отладочных сборках.
 
 > [!NOTE]
-> Если вы используете Microsoft Access в качестве контейнерного `IPerPropertyBrowsingImpl`приложения, вы должны получить свой класс из. В противном случае Access не загрузит элемент управления.
+> Если вы используете Microsoft Access в качестве приложения контейнера, необходимо создать класс, производный от `IPerPropertyBrowsingImpl` . В противном случае Access не будет загружать элемент управления.
 
-**Похожие статьи** [ATL Учебник](../../atl/active-template-library-atl-tutorial.md), Создание проекта [ATL](../../atl/reference/creating-an-atl-project.md)
+Руководство по **сопутствующим статьям** [ATL](../../atl/active-template-library-atl-tutorial.md), [Создание проекта ATL](../../atl/reference/creating-an-atl-project.md)
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -69,11 +70,11 @@ class ATL_NO_VTABLE IPerPropertyBrowsingImpl :
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlctl.h
+**Заголовок:** атлктл. h
 
-## <a name="iperpropertybrowsingimplgetdisplaystring"></a><a name="getdisplaystring"></a>IPerPropertyБражИмпл::GetDisplayString
+## <a name="iperpropertybrowsingimplgetdisplaystring"></a><a name="getdisplaystring"></a> Иперпропертибровсингимпл:: Жетдисплайстринг
 
-Извлекает строку, описывающую данное свойство.
+Извлекает строку, описывающую заданное свойство.
 
 ```
 STDMETHOD(GetDisplayString)(
@@ -81,11 +82,11 @@ STDMETHOD(GetDisplayString)(
     BSTR* pBstr);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Смотрите [IPerPropertyBrowsing::GetDisplayString](/windows/win32/api/ocidl/nf-ocidl-iperpropertybrowsing-getdisplaystring) в Windows SDK.
+См. раздел [иперпропертибровсинг:: жетдисплайстринг](/windows/win32/api/ocidl/nf-ocidl-iperpropertybrowsing-getdisplaystring) в Windows SDK.
 
-## <a name="iperpropertybrowsingimplgetpredefinedstrings"></a><a name="getpredefinedstrings"></a>IPerPropertyBrowsingImpl::GetPredefinedStrings
+## <a name="iperpropertybrowsingimplgetpredefinedstrings"></a><a name="getpredefinedstrings"></a> Иперпропертибровсингимпл:: Жетпредефинедстрингс
 
 Заполняет каждый массив нулевыми элементами.
 
@@ -98,15 +99,15 @@ STDMETHOD(GetPredefinedStrings)(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Реализация ATL [GetPredefinedValue](#getpredefinedvalue) возвращается E_NOTIMPL.
+Реализация [жетпредефинедвалуе](#getpredefinedvalue) ВОЗВРАЩАЕТ в ATL E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Смотрите [IPerPropertyBrowsing::GetPredefinedStrings](/windows/win32/api/ocidl/nf-ocidl-iperpropertybrowsing-getpredefinedstrings) в Windows SDK.
+См. раздел [иперпропертибровсинг:: жетпредефинедстрингс](/windows/win32/api/ocidl/nf-ocidl-iperpropertybrowsing-getpredefinedstrings) в Windows SDK.
 
-## <a name="iperpropertybrowsingimplgetpredefinedvalue"></a><a name="getpredefinedvalue"></a>IPerPropertyBrowsingImpl::GetPredefinedValue
+## <a name="iperpropertybrowsingimplgetpredefinedvalue"></a><a name="getpredefinedvalue"></a> Иперпропертибровсингимпл:: Жетпредефинедвалуе
 
-Извлекает VARIANT, содержащий значение свойства, идентифицированного данной DISPID. DISPID связан с именем строки, извлеченным из `GetPredefinedStrings`.
+Извлекает объект типа VARIANT, содержащий значение свойства, идентифицируемого по заданному идентификатору DISPID. Идентификатор DISPID связан с именем строки, полученным из `GetPredefinedStrings` .
 
 ```
 STDMETHOD(GetPredefinedValue)(
@@ -119,15 +120,15 @@ STDMETHOD(GetPredefinedValue)(
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Реализация [ATL GetPredefinedStrings](#getpredefinedstrings) не получает соответствующих строк.
+Реализация [жетпредефинедстрингс](#getpredefinedstrings) библиотеки ATL не извлекает соответствующие строки.
 
-Смотрите [IPerPropertyBrowsing::GetPredefinedValue](/windows/win32/api/ocidl/nf-ocidl-iperpropertybrowsing-getpredefinedvalue) в Windows SDK.
+См. раздел [иперпропертибровсинг:: жетпредефинедвалуе](/windows/win32/api/ocidl/nf-ocidl-iperpropertybrowsing-getpredefinedvalue) в Windows SDK.
 
-## <a name="iperpropertybrowsingimplmappropertytopage"></a><a name="mappropertytopage"></a>IPerPropertyBrowsingImpl::MapPropertyToPage
+## <a name="iperpropertybrowsingimplmappropertytopage"></a><a name="mappropertytopage"></a> Иперпропертибровсингимпл:: Маппропертитопаже
 
-Извлекает CLSID страницы свойств, связанных с указанным свойством.
+Извлекает идентификатор CLSID страницы свойств, связанной с указанным свойством.
 
 ```
 STDMETHOD(MapPropertyToPage)(
@@ -135,14 +136,14 @@ STDMETHOD(MapPropertyToPage)(
     CLSID* pClsid);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-ATL использует карту свойств объекта для получения этой информации.
+Для получения этих сведений в ATL используется схема свойств объекта.
 
-Смотрите [IPerPropertyBrowsing::MapPropertyToPage](/windows/win32/api/ocidl/nf-ocidl-iperpropertybrowsing-mappropertytopage) в Windows SDK.
+См. раздел [иперпропертибровсинг:: маппропертитопаже](/windows/win32/api/ocidl/nf-ocidl-iperpropertybrowsing-mappropertytopage) в Windows SDK.
 
 ## <a name="see-also"></a>См. также раздел
 
-[IPropertyPageImpl класс](../../atl/reference/ipropertypageimpl-class.md)<br/>
-[ISpecifyPropertyPagesImpl класс](../../atl/reference/ispecifypropertypagesimpl-class.md)<br/>
+[Класс Ипропертипажеимпл](../../atl/reference/ipropertypageimpl-class.md)<br/>
+[Класс ИспеЦифипропертипажесимпл](../../atl/reference/ispecifypropertypagesimpl-class.md)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)

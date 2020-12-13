@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кколордиалог Class'
 title: Класс Кколордиалог
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CColorDialog [MFC], OnColorOK
 - CColorDialog [MFC], m_cc
 ms.assetid: d013dc25-9290-4b5d-a97e-95ad7208e13b
-ms.openlocfilehash: 54fd987d683a9236531baee3afbb9ee61be623e2
-ms.sourcegitcommit: 13f42c339fb7af935e3a93ac80e350d5e784c9f1
+ms.openlocfilehash: d9af49d4986f0619211ed4fd2dc9174acea27d0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87470762"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150141"
 ---
 # <a name="ccolordialog-class"></a>Класс Кколордиалог
 
@@ -37,11 +38,11 @@ ms.locfileid: "87470762"
 class CColorDialog : public CCommonDialog
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Кколордиалог:: Кколордиалог](#ccolordialog)|Формирует объект `CColorDialog`.|
 
@@ -74,13 +75,13 @@ class CColorDialog : public CCommonDialog
 
 После создания диалогового окна можно задать или изменить любые значения в структуре [m_cc](#m_cc) , чтобы инициализировать значения элементов управления диалогового окна. Структура *m_cc* имеет тип [чусеколор](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1).
 
-После инициализации элементов управления диалогового окна вызовите `DoModal` функцию-член, чтобы отобразить диалоговое окно и позволить пользователю выбрать цвет. `DoModal`Возвращает выбор пользователя либо кнопки ОК (ИДОК), либо Cancel (ИДКАНЦЕЛ) диалогового окна.
+После инициализации элементов управления диалогового окна вызовите `DoModal` функцию-член, чтобы отобразить диалоговое окно и позволить пользователю выбрать цвет. `DoModal` Возвращает выбор пользователя либо кнопки ОК (ИДОК), либо Cancel (ИДКАНЦЕЛ) диалогового окна.
 
 Если `DoModal` функция ВОЗВРАЩАЕТ идок, `CColorDialog` для получения входных данных пользователем можно использовать одну из функций члена.
 
 Вы можете использовать функцию Windows [коммдлжекстендедеррор](/windows/win32/api/commdlg/nf-commdlg-commdlgextendederror) , чтобы определить, произошла ли ошибка во время инициализации диалогового окна, и получить дополнительные сведения об ошибке.
 
-`CColorDialog`зависит от файла COMMDLG.DLL, поставляемого с Windows версии 3,1 и более поздних версий.
+`CColorDialog` зависит от файла COMMDLG.DLL, поставляемого с Windows версии 3,1 и более поздних версий.
 
 Чтобы настроить диалоговое окно, создайте производный класс от `CColorDialog` , предоставьте пользовательский шаблон диалогового окна и добавьте карту сообщений для обработки сообщений уведомлений из расширенных элементов управления. Все необработанные сообщения должны передаваться в базовый класс.
 
@@ -109,7 +110,7 @@ class CColorDialog : public CCommonDialog
 
 **Заголовок:** афксдлгс. h
 
-## <a name="ccolordialogccolordialog"></a><a name="ccolordialog"></a>Кколордиалог:: Кколордиалог
+## <a name="ccolordialogccolordialog"></a><a name="ccolordialog"></a> Кколордиалог:: Кколордиалог
 
 Формирует объект `CColorDialog`.
 
@@ -135,7 +136,7 @@ CColorDialog(
 
 [!code-cpp[NVC_MFCDocView#49](../../mfc/codesnippet/cpp/ccolordialog-class_1.cpp)]
 
-## <a name="ccolordialogdomodal"></a><a name="domodal"></a>Кколордиалог::D Омодал
+## <a name="ccolordialogdomodal"></a><a name="domodal"></a> Кколордиалог::D Омодал
 
 Вызовите эту функцию, чтобы открыть диалоговое окно "общий цвет Windows" и позволить пользователю выбрать цвет.
 
@@ -159,7 +160,7 @@ virtual INT_PTR DoModal();
 
   См. пример для [кколордиалог:: кколордиалог](#ccolordialog).
 
-## <a name="ccolordialoggetcolor"></a><a name="getcolor"></a>Кколордиалог:: "Color"
+## <a name="ccolordialoggetcolor"></a><a name="getcolor"></a> Кколордиалог:: "Color"
 
 Вызовите эту функцию после вызова, `DoModal` чтобы получить сведения о выбранном пользователем цвете.
 
@@ -175,9 +176,9 @@ COLORREF GetColor() const;
 
 [!code-cpp[NVC_MFCDocView#50](../../mfc/codesnippet/cpp/ccolordialog-class_2.cpp)]
 
-## <a name="ccolordialoggetsavedcustomcolors"></a><a name="getsavedcustomcolors"></a>Кколордиалог:: Жетсаведкустомколорс
+## <a name="ccolordialoggetsavedcustomcolors"></a><a name="getsavedcustomcolors"></a> Кколордиалог:: Жетсаведкустомколорс
 
-`CColorDialog`объекты позволяют пользователю, помимо выбора цветов, определять до 16 пользовательских цветов.
+`CColorDialog` объекты позволяют пользователю, помимо выбора цветов, определять до 16 пользовательских цветов.
 
 ```
 static COLORREF* PASCAL GetSavedCustomColors();
@@ -197,7 +198,7 @@ static COLORREF* PASCAL GetSavedCustomColors();
 
 [!code-cpp[NVC_MFCDocView#51](../../mfc/codesnippet/cpp/ccolordialog-class_3.cpp)]
 
-## <a name="ccolordialogm_cc"></a><a name="m_cc"></a>Кколордиалог:: m_cc
+## <a name="ccolordialogm_cc"></a><a name="m_cc"></a> Кколордиалог:: m_cc
 
 Структура типа [чусеколор](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1), члены которой хранят характеристики и значения диалогового окна.
 
@@ -213,7 +214,7 @@ CHOOSECOLOR m_cc;
 
 [!code-cpp[NVC_MFCDocView#53](../../mfc/codesnippet/cpp/ccolordialog-class_4.cpp)]
 
-## <a name="ccolordialogoncolorok"></a><a name="oncolorok"></a>Кколордиалог:: Онколорок
+## <a name="ccolordialogoncolorok"></a><a name="oncolorok"></a> Кколордиалог:: Онколорок
 
 Переопределение для проверки цвета, вводимых в диалоговое окно.
 
@@ -245,7 +246,7 @@ virtual BOOL OnColorOK();
 
 [!code-cpp[NVC_MFCDocView#52](../../mfc/codesnippet/cpp/ccolordialog-class_5.cpp)]
 
-## <a name="ccolordialogsetcurrentcolor"></a><a name="setcurrentcolor"></a>Кколордиалог:: Сеткуррентколор
+## <a name="ccolordialogsetcurrentcolor"></a><a name="setcurrentcolor"></a> Кколордиалог:: Сеткуррентколор
 
 Вызывайте эту функцию после вызова `DoModal` для принудительного выбора текущего цвета в качестве значения цвета, указанного в *CLR*.
 
@@ -266,7 +267,7 @@ void SetCurrentColor(COLORREF clr);
 
   См. пример для [кколордиалог:: онколорок](#oncolorok).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Образец MDI-формы MFC](../../overview/visual-cpp-samples.md)<br/>
 [Пример DRAWCLI для MFC](../../overview/visual-cpp-samples.md)<br/>

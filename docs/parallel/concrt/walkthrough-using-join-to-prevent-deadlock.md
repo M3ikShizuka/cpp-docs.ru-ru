@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в разделе Пошаговое руководство. Использование функции Join для предотвращения взаимоблокировок
 title: Пошаговое руководство. Использование класса join для предотвращения взаимоблокировки
 ms.date: 04/25/2019
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - non-greedy joins, example
 - join class, example
 ms.assetid: d791f697-bb93-463e-84bd-5df1651b7446
-ms.openlocfilehash: 5bdd6cd81051d224714dd66d4604cbdec4ddb552
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b74a7cd3f5f2326bb73ece13e16be95d6677bdd0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217887"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150154"
 ---
 # <a name="walkthrough-using-join-to-prevent-deadlock"></a>Пошаговое руководство. Использование класса join для предотвращения взаимоблокировки
 
@@ -26,7 +27,7 @@ ms.locfileid: "87217887"
 
 - [Асинхронные агенты](../../parallel/concrt/asynchronous-agents.md)
 
-- [Пошаговое руководство. Создание приложения на основе агента](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)
+- [Пошаговое руководство. Создание приложения Agent-Based](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)
 
 - [Асинхронные блоки сообщений](../../parallel/concrt/asynchronous-message-blocks.md)
 
@@ -34,7 +35,7 @@ ms.locfileid: "87217887"
 
 - [Структуры данных синхронизации](../../parallel/concrt/synchronization-data-structures.md)
 
-## <a name="sections"></a><a name="top"></a>Священ
+## <a name="sections"></a><a name="top"></a> Священ
 
 Это пошаговое руководство содержит следующие разделы:
 
@@ -44,7 +45,7 @@ ms.locfileid: "87217887"
 
 - [Использование Join для предотвращения взаимоблокировок](#solution)
 
-## <a name="the-dining-philosophers-problem"></a><a name="problem"></a>Проблема обедающих философов
+## <a name="the-dining-philosophers-problem"></a><a name="problem"></a> Проблема обедающих философов
 
 Проблема с философами обеда показывает, как происходит взаимоблокировка в приложении. В этой проблеме пять философов располагаются в круглой таблице. Каждый философ является альтернативным для мышления и съесть. Каждый философ должен поделиться палочкой с соседом слева и другой палочкой, расположенной справа от соседнего. На следующем рисунке показан этот макет.
 
@@ -54,7 +55,7 @@ ms.locfileid: "87217887"
 
 [[Top](#top)]
 
-## <a name="a-nave-implementation"></a><a name="deadlock"></a>Упрощенная реализация
+## <a name="a-nave-implementation"></a><a name="deadlock"></a> Упрощенная реализация
 
 В следующем примере показана упрощенная реализация проблемы обедающих философов. `philosopher`Класс, производный от [Concurrency:: Agent](../../parallel/concrt/reference/agent-class.md), позволяет каждому философу работать независимо. В примере используется общий массив объектов [Concurrency:: critical_section](../../parallel/concrt/reference/critical-section-class.md) , чтобы предоставить каждому `philosopher` объекту эксклюзивный доступ к паре палочк.
 
@@ -76,7 +77,7 @@ ms.locfileid: "87217887"
 
 [[Top](#top)]
 
-## <a name="using-join-to-prevent-deadlock"></a><a name="solution"></a>Использование Join для предотвращения взаимоблокировок
+## <a name="using-join-to-prevent-deadlock"></a><a name="solution"></a> Использование Join для предотвращения взаимоблокировок
 
 В этом разделе показано, как использовать буферы сообщений и функции передачи сообщений для устранения вероятности взаимоблокировки.
 

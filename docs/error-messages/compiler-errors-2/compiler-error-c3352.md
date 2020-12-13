@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C3352'
 title: Ошибка компилятора C3352
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3352
 ms.assetid: f233bed7-474e-425f-aad2-7801578169d4
-ms.openlocfilehash: b679a89bb768ad7a50d0bbaa7b814c7a72f9f4c5
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 66d6921c86c6b7a30026880f01ab2a5dada11a65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74740433"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150947"
 ---
 # <a name="compiler-error-c3352"></a>Ошибка компилятора C3352
 
@@ -19,7 +20,7 @@ ms.locfileid: "74740433"
 
 Списки параметров для `function` и делегата не совпадают.
 
-Дополнительные сведения см. в разделе [DelegateC++ (расширения компонентов)](../../extensions/delegate-cpp-component-extensions.md).
+Дополнительные сведения см. в разделе [Delegate (расширения компонентов C++)](../../extensions/delegate-cpp-component-extensions.md).
 
 Следующий пример приводит к возникновению ошибки C3352:
 

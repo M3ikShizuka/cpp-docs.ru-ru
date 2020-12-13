@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: глобальные функции точек подключения'
 title: Глобальные функции точек подключения
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - connection points [C++], global functions
 ms.assetid: bcb4bf50-2155-4e20-b8bb-f2908b03a6e7
-ms.openlocfilehash: 1a648f49b0f3715fd322b1099dcebbf194f57a10
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 33a9f81b086b572bb31f730e4a6ce1bac0fb45d2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833534"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141145"
 ---
 # <a name="connection-point-global-functions"></a>Глобальные функции точек подключения
 
@@ -65,7 +66,7 @@ HRESULT    AtlAdvise(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Приемник реализует исходящий интерфейс, поддерживаемый точкой подключения. Клиент использует файл cookie *PDW* для удаления подключения, передав его в [атлунадвисе](#atlunadvise).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ккомсафеделетекритикалсектион Class'
 title: Класс Ккомсафеделетекритикалсектион
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComSafeDeleteCriticalSection class
 ms.assetid: 4d2932c4-ba8f-48ec-8664-1db8bed01314
-ms.openlocfilehash: 115cbd466f51db271f4be65ce708fe54c7f2b2ce
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 73e27fb267cbfc8cde248c7ac896d29de2a91f77
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833638"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142173"
 ---
 # <a name="ccomsafedeletecriticalsection-class"></a>Класс Ккомсафеделетекритикалсектион
 
@@ -29,7 +30,7 @@ ms.locfileid: "88833638"
 class CComSafeDeleteCriticalSection : public CComCriticalSection
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -52,7 +53,7 @@ class CComSafeDeleteCriticalSection : public CComCriticalSection
 |-|-|
 |[m_bInitialized](#m_binitialized)|Помечает, инициализирован ли внутренний `CRITICAL_SECTION` объект.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `CComSafeDeleteCriticalSection` является производным от класса [ккомкритикалсектион](../../atl/reference/ccomcriticalsection-class.md). Однако `CComSafeDeleteCriticalSection` предоставляет дополнительные механизмы безопасности по сравнению с [ккомкритикалсектион](../../atl/reference/ccomcriticalsection-class.md).
 
@@ -78,7 +79,7 @@ class CComSafeDeleteCriticalSection : public CComCriticalSection
 CComSafeDeleteCriticalSection();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Задает для элемента данных [m_bInitialized](#m_binitialized) значение false.
 
@@ -90,7 +91,7 @@ CComSafeDeleteCriticalSection();
 ~CComSafeDeleteCriticalSection() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Освобождает внутренний `CRITICAL_SECTION` объект из памяти, если элемент данных [m_bInitialized](#m_binitialized) имеет значение true.
 
@@ -118,7 +119,7 @@ HRESULT Lock();
 
 Возвращает результат [ккомкритикалсектион:: Lock](../../atl/reference/ccomcriticalsection-class.md#lock).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод предполагает, что при записи для элемента данных [m_bInitialized](#m_binitialized) ЗАДАНО значение true. Утверждение создается в отладочных сборках, если это условие не выполнено.
 
@@ -132,7 +133,7 @@ HRESULT Lock();
 bool m_bInitialized;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `m_bInitialized`Элемент данных используется для контроля допустимости базового `CRITICAL_SECTION` объекта, связанного с классом [ккомсафеделетекритикалсектион](../../atl/reference/ccomsafedeletecriticalsection-class.md) . Базовый `CRITICAL_SECTION` объект не будет пытаться освободить из памяти, если этот флаг не установлен в значение true.
 
@@ -148,7 +149,7 @@ HRESULT Term() throw();
 
 Возвращает результат [ккомкритикалсектион:: Term](../../atl/reference/ccomcriticalsection-class.md#term)или S_OK, если для [m_bInitialized](#m_binitialized) было задано значение false при входе.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызывать этот метод можно, даже если внутренний `CRITICAL_SECTION` объект является недопустимым. Деструктор этого класса вызывает этот метод, если элемент данных [m_bInitialized](#m_binitialized) имеет значение true.
 

@@ -1,5 +1,6 @@
 ---
-title: Класс CMessageMap
+description: 'Дополнительные сведения о: Кмессажемап Class'
+title: Класс Кмессажемап
 ms.date: 11/04/2016
 f1_keywords:
 - CMessageMap
@@ -10,19 +11,19 @@ helpviewer_keywords:
 - message maps, ATL
 - ATL, message handlers
 ms.assetid: 1f97bc16-a8a0-4cf0-b90f-1778813a5c8e
-ms.openlocfilehash: a822f36d6b6fd49301d8240324e27f0ad9ce52e7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 90ecdc101071b84362d328558ff2e74cb9bbeb6b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81326725"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141444"
 ---
-# <a name="cmessagemap-class"></a>Класс CMessageMap
+# <a name="cmessagemap-class"></a>Класс Кмессажемап
 
-Этот класс позволяет картам сообщений объекта быть доступными для другого объекта.
+Этот класс позволяет сопоставлению сообщений объекта иметь доступ к другому объекту.
 
 > [!IMPORTANT]
-> Этот класс и его члены не могут быть использованы в приложениях, выполняемых в Windows Runtime.
+> Этот класс и его члены не могут использоваться в приложениях, выполняемых в среда выполнения Windows.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -30,33 +31,33 @@ ms.locfileid: "81326725"
 class ATL_NO_VTABLE CMessageMap
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMessageMap::ProcessWindowMessage](#processwindowmessage)|Доступ к карте сообщений `CMessageMap`в классе -выведенных.|
+|[Кмессажемап::P Роцессвиндовмессаже](#processwindowmessage)|Обращается к схеме сообщений в `CMessageMap` классе, производном от.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CMessageMap`— это абстрактный базовый класс, позволяющий доступ к картам сообщений объекта к другому объекту. Для того, чтобы объект разоблачил свои карты `CMessageMap`сообщений, его класс должен вытекать из .
+`CMessageMap` является абстрактным базовым классом, который разрешает доступ к сопоставлению сообщений объекта другому объекту. Чтобы объект мог предоставлять свои карты сообщений, его класс должен быть производным от `CMessageMap` .
 
-ATL `CMessageMap` используется для поддержки содержащихся окон и динамических цепей карты сообщений. Например, любой класс, содержащий объект `CMessageMap` [CContainedWindow,](../../atl/reference/ccontainedwindowt-class.md) должен вытекать из. Следующий код взят из образца [SUBEDIT.](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/SubEdit) Через [CComControl](../../atl/reference/ccomcontrol-class.md) `CAtlEdit` класс автоматически происходит `CMessageMap`от .
+В библиотеке ATL используется `CMessageMap` для поддержки цепочек в цепочке окон и динамической схемы сообщений. Например, любой класс, содержащий объект [кконтаинедвиндов](../../atl/reference/ccontainedwindowt-class.md) , должен быть производным от `CMessageMap` . Следующий код взят из примера [подизменения](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/SubEdit) . С помощью [ккомконтрол](../../atl/reference/ccomcontrol-class.md) `CAtlEdit` класс автоматически является производным от `CMessageMap` .
 
 [!code-cpp[NVC_ATL_Windowing#90](../../atl/codesnippet/cpp/cmessagemap-class_1.h)]
 
-Потому что `m_EditCtrl`содержащееся окно, , будет `CAtlEdit` использовать `CMessageMap`карту сообщений в содержащем классе, вытекает из .
+Так как автономное окно, `m_EditCtrl` , будет использовать схему сообщений в содержащем классе, `CAtlEdit` является производной от `CMessageMap` .
 
-Для получения дополнительной информации о картах сообщений смотрите [Карты сообщений](../../atl/message-maps-atl.md) в статье «Классы окон ATL».
+Дополнительные сведения о картах сообщений см. в разделе [схемы сообщений](../../atl/message-maps-atl.md) статьи "классы окон ATL".
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin.h
+**Заголовок:** atlwin. h
 
-## <a name="cmessagemapprocesswindowmessage"></a><a name="processwindowmessage"></a>CMessageMap::ProcessWindowMessage
+## <a name="cmessagemapprocesswindowmessage"></a><a name="processwindowmessage"></a> Кмессажемап::P Роцессвиндовмессаже
 
-Получает доступ к карте сообщений, идентифицированной `CMessageMap` *dwMsgMapID* в классе-производные.
+Обращается к схеме сообщений, идентифицируемой *двмсгмапид* , в `CMessageMap` классе, производном от.
 
 ```
 virtual BOOL ProcessWindowMessage(
@@ -70,35 +71,35 @@ virtual BOOL ProcessWindowMessage(
 
 ### <a name="parameters"></a>Параметры
 
-*Hwnd*<br/>
-(в) Ручка к окну, получающая сообщение.
+*hWnd*<br/>
+окне Маркер окна, получающего сообщение.
 
-*uMsg*<br/>
-(в) Сообщение, отправленное в окно.
+*Uiacp*<br/>
+окне Сообщение, отправленное в окно.
 
 *wParam*<br/>
-(в) Дополнительная информация, соомнее сообщения.
+окне Дополнительные сведения, относящиеся к конкретному сообщению.
 
 *lParam*<br/>
-(в) Дополнительная информация, соомнее сообщения.
+окне Дополнительные сведения, относящиеся к конкретному сообщению.
 
 *lResult*<br/>
-(ваут) Результат обработки сообщений.
+заполняет Результат обработки сообщения.
 
-*dwMsgMapID*<br/>
-(в) Идентификатор карты сообщений, которая будет обрабатывать сообщение. Карта сообщений по умолчанию, объявленная [с BEGIN_MSG_MAP,](message-map-macros-atl.md#begin_msg_map)идентифицируется по 0. Альтернативная карта сообщений, объявленная с [ALT_MSG_MAP (msgMapID),](message-map-macros-atl.md#alt_msg_map)идентифицируется по `msgMapID`.
+*двмсгмапид*<br/>
+окне Идентификатор схемы сообщений, которая будет обрабатывать сообщение. Схема сообщений по умолчанию, объявленная с [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map), определяется значением 0. Альтернативная схема сообщений, объявленная с помощью [ALT_MSG_MAP (мсгмапид)](message-map-macros-atl.md#alt_msg_map), определяется `msgMapID` .
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если сообщение полностью обработано; в противном случае, FALSE.
+Значение TRUE, если сообщение полностью обработано; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вызывается процедурой окна объекта [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) или объекта, который динамически приковывается к карте сообщений.
+Вызывается процедурой окна объекта [кконтаинедвиндов](../../atl/reference/ccontainedwindowt-class.md) или объекта, динамически сцепленного с картой сообщений.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс CDynamicChain](../../atl/reference/cdynamicchain-class.md)<br/>
+[Класс Кдинамикчаин](../../atl/reference/cdynamicchain-class.md)<br/>
 [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
-[ALT_MSG_MAP (msgMapID)](message-map-macros-atl.md#alt_msg_map)<br/>
+[ALT_MSG_MAP (Мсгмапид)](message-map-macros-atl.md#alt_msg_map)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)

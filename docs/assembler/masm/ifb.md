@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: ИФБ'
 title: IFB
 ms.date: 12/17/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - IFB directive
 ms.assetid: 6395e313-e590-41b3-824c-577f200faf80
-ms.openlocfilehash: e8494918408e51c2bc7e8fa77f72c48115418c4c
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: d51bf75d7bc28edbea1054a8243aab7216ad20fd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75317270"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97130069"
 ---
 # <a name="ifb"></a>IFB
 
@@ -21,11 +22,11 @@ ms.locfileid: "75317270"
 
 > **ИФБ** *текститем*
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
 Полный [Синтаксис см.](if-masm.md) в разделе.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по директивам](directives-reference.md)\
 [Грамматика MASM BNF](masm-bnf-grammar.md)

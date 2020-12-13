@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _mm_stream_sd'
 title: _mm_stream_sd
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - _mm_stream_sd intrinsic
 - movntsd instruction
 ms.assetid: 2b4bea5e-e64e-45fa-9afc-88a2e4b82cfc
-ms.openlocfilehash: ec639004884d022fe6a827c2ec31d3201ea04657
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 60ef13afcbe99e1390f4eb1087fddc5540a7de34
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214221"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97133267"
 ---
 # <a name="_mm_stream_sd"></a>_mm_stream_sd
 
@@ -39,17 +40,17 @@ void _mm_stream_sd(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Нет.
+Отсутствует.
 
 ## <a name="requirements"></a>Требования
 
-|Intrinsic|Architecture|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`_mm_stream_sd`|SSE4a|
 
 **Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Внутренняя функция создает `movntsd` инструкцию. Чтобы определить поддержку оборудования для этой инструкции, вызовите `__cpuid` встроенную функцию с параметром `InfoType=0x80000001` и установите бит 6 из `CPUInfo[2] (ECX)` . Этот бит равен 1, если оборудование поддерживает эту инструкцию, и 0 в противном случае.
 

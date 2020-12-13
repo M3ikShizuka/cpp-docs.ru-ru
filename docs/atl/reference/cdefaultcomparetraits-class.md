@@ -1,5 +1,6 @@
 ---
-title: Класс CDefaultCompareTraits
+description: 'Дополнительные сведения о: Кдефаулткомпаретраитс Class'
+title: Класс Кдефаулткомпаретраитс
 ms.date: 11/04/2016
 f1_keywords:
 - CDefaultCompareTraits
@@ -9,14 +10,14 @@ f1_keywords:
 helpviewer_keywords:
 - CDefaultCompareTraits class
 ms.assetid: a17e2740-e7b4-48f2-aeb7-c80ce84b63f7
-ms.openlocfilehash: 8262800ef613424c37c53931d97dd4b1b1a71321
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: dcb366cdcd99a6eed2b641be290ccc4913a81476
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81327065"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141912"
 ---
-# <a name="cdefaultcomparetraits-class"></a>Класс CDefaultCompareTraits
+# <a name="cdefaultcomparetraits-class"></a>Класс Кдефаулткомпаретраитс
 
 Этот класс предоставляет функции сравнения элементов по умолчанию.
 
@@ -30,30 +31,30 @@ class CDefaultCompareTraits
 #### <a name="parameters"></a>Параметры
 
 *T*<br/>
-Тип данных, которые будут храниться в коллекции.
+Тип данных, сохраняемых в коллекции.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CDefaultCompareTraits::CompareElements](#compareelements)|(Статик) Назовите эту функцию для сравнения двух элементов для равенства.|
-|[CDefaultCompareTraits::CompareElementsOrdered](#compareelementsordered)|(Статик) Вызовите эту функцию, чтобы определить больший и меньший элемент.|
+|[Кдефаулткомпаретраитс:: Компарилементс](#compareelements)|Статически Вызовите эту функцию, чтобы сравнить два элемента на равенство.|
+|[Кдефаулткомпаретраитс:: Компарилементсордеред](#compareelementsordered)|Статически Вызовите эту функцию для определения большего и меньшего элемента.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот класс содержит две статические функции для сравнения элементов, хранящихся в объекте класса коллекции. Этот класс используется [классом CDefaultElementTraits.](../../atl/reference/cdefaultelementtraits-class.md)
+Этот класс содержит две статические функции для сравнения элементов, хранящихся в объекте класса коллекции. Этот класс используется [классом кдефаултелементтраитс](../../atl/reference/cdefaultelementtraits-class.md).
 
-Для получения дополнительной информации, [см.](../../atl/atl-collection-classes.md)
+Дополнительные сведения см. в разделе [классы коллекций ATL](../../atl/atl-collection-classes.md).
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlcoll.h
+**Заголовок:** атлколл. h
 
-## <a name="cdefaultcomparetraitscompareelements"></a><a name="compareelements"></a>CDefaultCompareTraits::CompareElements
+## <a name="cdefaultcomparetraitscompareelements"></a><a name="compareelements"></a> Кдефаулткомпаретраитс:: Компарилементс
 
-Назовите эту функцию для сравнения двух элементов для равенства.
+Вызовите эту функцию, чтобы сравнить два элемента на равенство.
 
 ```
 static bool CompareElements(const T& element1, const T& element2);
@@ -61,23 +62,23 @@ static bool CompareElements(const T& element1, const T& element2);
 
 ### <a name="parameters"></a>Параметры
 
-*элемент1*<br/>
+*Element1*<br/>
 Первый элемент
 
-*элемент2*<br/>
+*element2*<br/>
 Второй элемент.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает верно, если элементы равны, ложные в противном случае.
+Возвращает значение true, если элементы равны, и false в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Выполнение этой функции по умолчанию — это оператор равенства ()**==** Для объектов, не относясь от простых типов данных, эту функцию, возможно, потребуется переопределить.
+Реализацией по умолчанию этой функции является оператор равенства ( **==** ). Для объектов, отличных от простых типов данных, эту функцию может потребоваться переопределить.
 
-## <a name="cdefaultcomparetraitscompareelementsordered"></a><a name="compareelementsordered"></a>CDefaultCompareTraits::CompareElementsOrdered
+## <a name="cdefaultcomparetraitscompareelementsordered"></a><a name="compareelementsordered"></a> Кдефаулткомпаретраитс:: Компарилементсордеред
 
-Вызовите эту функцию, чтобы определить больший и меньший элемент.
+Вызовите эту функцию для определения большего и меньшего элемента.
 
 ```
 static int CompareElementsOrdered(const T& element1, const T& element2);
@@ -85,25 +86,25 @@ static int CompareElementsOrdered(const T& element1, const T& element2);
 
 ### <a name="parameters"></a>Параметры
 
-*элемент1*<br/>
+*Element1*<br/>
 Первый элемент
 
-*элемент2*<br/>
+*element2*<br/>
 Второй элемент.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает несколько седжеров на основе следующей таблицы:
+Возвращает целое число, основанное на следующей таблице:
 
 |Условие|Возвращаемое значение|
 |---------------|------------------|
-|*элемент1* < *элемент2*|<0|
-|*элемент1* == *элемент2*|0|
-|*элемент1* > *элемент2*|> 0|
+|*Element1*  <  *ELEMENT2*|<0|
+|*Element1*  ==  *ELEMENT2*|0|
+|*Element1*  >  *ELEMENT2*|> 0|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-В реализации этой функции **\<** по **>** умолчанию используются операторы и операторы. **==** Для объектов, не относясь от простых типов данных, эту функцию, возможно, потребуется переопределить.
+Реализация по умолчанию этой функции использует **==** операторы, **\<**, and **>** . Для объектов, отличных от простых типов данных, эту функцию может потребоваться переопределить.
 
 ## <a name="see-also"></a>См. также раздел
 

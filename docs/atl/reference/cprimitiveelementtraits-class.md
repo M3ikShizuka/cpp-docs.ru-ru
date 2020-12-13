@@ -1,5 +1,6 @@
 ---
-title: Класс CPrimitiveElementTraits
+description: 'Дополнительные сведения о: Кпримитивилементтраитс Class'
+title: Класс Кпримитивилементтраитс
 ms.date: 11/04/2016
 f1_keywords:
 - CPrimitiveElementTraits
@@ -9,16 +10,16 @@ f1_keywords:
 helpviewer_keywords:
 - CPrimitiveElementTraits class
 ms.assetid: 21c1cea8-2c5a-486c-b65c-85490f3ed4e6
-ms.openlocfilehash: 6b45d93420d1832091cc451a3e6eb309f61d07a3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a9a47d9e6268ee6cc858d85e9236b00c270e8841
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81331440"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141080"
 ---
-# <a name="cprimitiveelementtraits-class"></a>Класс CPrimitiveElementTraits
+# <a name="cprimitiveelementtraits-class"></a>Класс Кпримитивилементтраитс
 
-Этот класс предоставляет методы и функции по умолчанию для класса сбора, состоящего из примитивных типов данных.
+Этот класс предоставляет методы и функции по умолчанию для класса коллекции, состоящего из примитивных типов данных.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -30,50 +31,50 @@ class CPrimitiveElementTraits : public CDefaultElementTraits<T>
 #### <a name="parameters"></a>Параметры
 
 *T*<br/>
-Тип данных, которые будут храниться в объекте класса сбора.
+Тип данных, сохраняемых в объекте класса коллекции.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
 |Имя|Описание|
 |----------|-----------------|
-|[CPrimitiveElementTraits::INARGTYPE](#inargtype)|Тип данных для добавления элементов в объект класса сбора.|
-|[CPrimitiveElementTraits:::OUTARGTYPE](#outargtype)|Тип данных для извлечения элементов из объекта класса сбора.|
+|[Кпримитивилементтраитс:: ИНАРГТИПЕ](#inargtype)|Тип данных, используемый для добавления элементов в объект класса коллекции.|
+|[Кпримитивилементтраитс:: АУТАРГТИПЕ](#outargtype)|Тип данных, используемый для извлечения элементов из объекта класса коллекции.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот класс предоставляет статичные функции и методы по умолчанию для перемещения, копирования, сравнения и хэширования примитивных элементов типа данных, хранящихся в объекте класса сбора.
+Этот класс предоставляет статические функции и методы по умолчанию для перемещения, копирования, сравнения и хэширования примитивных элементов типа данных, хранящихся в объекте класса коллекции.
 
-Для получения дополнительной информации, [см.](../../atl/atl-collection-classes.md)
+Дополнительные сведения см. в разделе [классы коллекций ATL](../../atl/atl-collection-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
-[CDefaultCompareTraits](../../atl/reference/cdefaultcomparetraits-class.md)
+[кдефаулткомпаретраитс](../../atl/reference/cdefaultcomparetraits-class.md)
 
-[CDefaultHashTraits](../../atl/reference/cdefaulthashtraits-class.md)
+[кдефаулсаштраитс](../../atl/reference/cdefaulthashtraits-class.md)
 
-[CElementTraitsBase](../../atl/reference/celementtraitsbase-class.md)
+[целементтраитсбасе](../../atl/reference/celementtraitsbase-class.md)
 
-[CDefaultЭлементТхрытс](../../atl/reference/cdefaultelementtraits-class.md)
+[кдефаултелементтраитс](../../atl/reference/cdefaultelementtraits-class.md)
 
 `CPrimitiveElementTraits`
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlcoll.h
+**Заголовок:** атлколл. h
 
-## <a name="cprimitiveelementtraitsinargtype"></a><a name="inargtype"></a>CPrimitiveElementTraits::INARGTYPE
+## <a name="cprimitiveelementtraitsinargtype"></a><a name="inargtype"></a> Кпримитивилементтраитс:: ИНАРГТИПЕ
 
-Тип данных для добавления элементов в объект класса сбора.
+Тип данных, используемый для добавления элементов в объект класса коллекции.
 
 ```
 typedef T INARGTYPE;
 ```
 
-## <a name="cprimitiveelementtraitsoutargtype"></a><a name="outargtype"></a>CPrimitiveElementTraits:::OUTARGTYPE
+## <a name="cprimitiveelementtraitsoutargtype"></a><a name="outargtype"></a> Кпримитивилементтраитс:: АУТАРГТИПЕ
 
-Тип данных для извлечения элементов из объекта класса сбора.
+Тип данных, используемый для извлечения элементов из объекта класса коллекции.
 
 ```
 typedef T& OUTARGTYPE;
@@ -81,5 +82,5 @@ typedef T& OUTARGTYPE;
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс CDefaultElementTraits](../../atl/reference/cdefaultelementtraits-class.md)<br/>
+[Класс Кдефаултелементтраитс](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)

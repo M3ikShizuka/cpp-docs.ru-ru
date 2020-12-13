@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: Если'
 title: IF (MASM)
 ms.date: 12/17/2019
 helpviewer_keywords:
 - IF directive
 ms.assetid: 82e43712-4f0c-4bf6-90ce-0663e81af707
-ms.openlocfilehash: 6e63f5c8075b3c94370ad8863d224c097cf0ecdf
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 09b4bd09155ef848ad165b4e8b0d3a093ade0008
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79440747"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97130213"
 ---
 # <a name="if"></a>IF
 
@@ -18,16 +19,16 @@ ms.locfileid: "79440747"
 ## <a name="syntax"></a>Синтаксис
 
 > **Если** *expression1*\
-> *If-операторы*\
-> ⟦**ELSEIF**\ *выражение2*
+> *операторы If*\
+> ⟦**ELSEIF** , *выражение2*\
 > *ElseIf-операторы*⟧ \
-> ⟦**ELSE**\
+> ⟦**Else**\
 > *else-Операторы*⟧ \
 > **ENDIF**
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Следующие директивы могут быть заменены на [ElseIf](elseif-masm.md): **елсеифб**, **елсеифдеф**, **елсеифдиф**, **елсеифдифи**, **ELSEIF**, **елсеифидн**, **елсеифидни**, **елсеифнб**и **елсеифндеф**. При необходимости собирает *else-Операторы* , если предыдущее выражение имеет значение false. Обратите внимание, что выражения оцениваются во время сборки.
+Следующие директивы могут быть заменены на [ElseIf](elseif-masm.md): **елсеифб**, **елсеифдеф**, **елсеифдиф**, **елсеифдифи**, **ELSEIF**, **елсеифидн**, **елсеифидни**, **елсеифнб** и **елсеифндеф**. При необходимости собирает *else-Операторы* , если предыдущее выражение имеет значение false. Обратите внимание, что выражения оцениваются во время сборки.
 
 ## <a name="see-also"></a>См. также раздел
 

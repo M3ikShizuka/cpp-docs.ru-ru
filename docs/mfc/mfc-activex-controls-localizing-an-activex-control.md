@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье элементы управления ActiveX в MFC. Локализация элемента управления ActiveX
 title: Элементы управления ActiveX в MFC. Локализация элемента управления ActiveX
 ms.date: 09/12/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - LocaleID ambient property [MFC]
 - LOCALIZE sample [MFC]
 ms.assetid: a44b839a-c652-4ec5-b824-04392708a5f9
-ms.openlocfilehash: a85ec5cbed797b756afd93cd8423c58d138a0625
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 830fecd316b48f61da4f90136dd29455801ec725
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615426"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97150219"
 ---
 # <a name="mfc-activex-controls-localizing-an-activex-control"></a>Элементы управления ActiveX в MFC. Локализация элемента управления ActiveX
 
@@ -42,7 +43,7 @@ ms.locfileid: "84615426"
 
 В оставшейся части этой статьи описываются две стратегии локализации. Первая стратегия обеспечивает [локализацию интерфейса программирования элемента управления](#_core_localizing_your_control.92.s_programmability_interface) (имен свойств, методов и событий). Вторая стратегия [локализуется пользовательский интерфейс элемента управления](#_core_localizing_the_control.92.s_user_interface), используя внешнее свойство LocaleID контейнера. Демонстрацию локализации элементов управления см. в разделе пример [локализации](../overview/visual-cpp-samples.md)элементов управления ACTIVEX в MFC.
 
-## <a name="localizing-the-controls-programmability-interface"></a><a name="_core_localizing_your_control.92.s_programmability_interface"></a>Локализация интерфейса программирования элемента управления
+## <a name="localizing-the-controls-programmability-interface"></a><a name="_core_localizing_your_control.92.s_programmability_interface"></a> Локализация интерфейса программирования элемента управления
 
 При локализации интерфейса программирования элемента управления (интерфейс, используемый программистами для создания приложений, использующих ваш элемент управления), необходимо создать измененную версию элемента управления. IDL-файл (скрипт для создания библиотеки типов элементов управления) для каждого поддерживаемого языка. Это единственное место, необходимое для локализации имен свойств элемента управления.
 
@@ -50,7 +51,7 @@ ms.locfileid: "84615426"
 
 [!code-cpp[NVC_MFC_AxLoc#1](codesnippet/cpp/mfc-activex-controls-localizing-an-activex-control_1.idl)]
 
-Измените имена свойств в САМПЛЕФР. IDL в эквивалентные им французские, а затем используйте MKTYPLIB. EXE для создания французской библиотеки типов САМПЛЕФР. TLB.
+Измените имена свойств в САМПЛЕФР. Для языка IDL на эквиваленты их французского языка, а затем используйте MKTYPLIB.EXE для создания французской библиотеки типов САМПЛЕФР. TLB.
 
 Чтобы создать несколько локализованных библиотек типов, можно добавить локализованные. IDL-файлы в проект, и они будут созданы автоматически.
 
@@ -80,7 +81,7 @@ ms.locfileid: "84615426"
 
 При регистрации элемента управления `AfxOleRegisterTypeLib` функция автоматически ищет указанный объект. TLB в том же каталоге, что и элемент управления, и регистрирует его в базе данных регистрации Windows. Если. TLB-файл не найден, функция не действует.
 
-## <a name="localizing-the-controls-user-interface"></a><a name="_core_localizing_the_control.92.s_user_interface"></a>Локализация пользовательского интерфейса элемента управления
+## <a name="localizing-the-controls-user-interface"></a><a name="_core_localizing_the_control.92.s_user_interface"></a> Локализация пользовательского интерфейса элемента управления
 
 Чтобы локализовать пользовательский интерфейс элемента управления, поместите все видимые пользователю ресурсы элемента управления (например, страницы свойств и сообщения об ошибках) в библиотеки ресурсов, зависящие от языка. Затем можно использовать внешнее свойство LocaleID контейнера, чтобы выбрать соответствующую библиотеку DLL для языкового стандарта пользователя.
 
@@ -102,4 +103,4 @@ ms.locfileid: "84615426"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Элементы ActiveX библиотеки MFC](mfc-activex-controls.md)
+[Элементы управления ActiveX в MFC](mfc-activex-controls.md)

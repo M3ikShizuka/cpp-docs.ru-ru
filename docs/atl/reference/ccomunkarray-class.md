@@ -1,5 +1,6 @@
 ---
-title: Класс CComUnkArray
+description: 'Дополнительные сведения о: Ккомункаррай Class'
+title: Класс Ккомункаррай
 ms.date: 11/04/2016
 f1_keywords:
 - CComUnkArray
@@ -15,16 +16,16 @@ helpviewer_keywords:
 - connection points [C++], managing
 - CComUnkArray class
 ms.assetid: 5fd4b378-a7b5-4cc1-8866-8ab72a73639e
-ms.openlocfilehash: c1d2f0296394d3979ef4f152e3f902c89adf5b45
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e03022fb751b487debb9f81d9e3d99ce46f1b9e7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81327305"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142146"
 ---
-# <a name="ccomunkarray-class"></a>Класс CComUnkArray
+# <a name="ccomunkarray-class"></a>Класс Ккомункаррай
 
-Этот класс `IUnknown` хранит указатели и предназначен для использования в качестве параметра для шаблона [IConnectionPointImpl.](../../atl/reference/iconnectionpointimpl-class.md)
+Этот класс хранит `IUnknown` указатели и предназначен для использования в качестве параметра для класса шаблона [иконнектионпоинтимпл](../../atl/reference/iconnectionpointimpl-class.md) .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,46 +36,46 @@ class CComUnkArray
 
 #### <a name="parameters"></a>Параметры
 
-*nMaxSize*<br/>
-Максимальное количество `IUnknown` указателей, которые могут быть проведены в статическом массиве.
+*нмакссизе*<br/>
+Максимальное число `IUnknown` указателей, которые могут храниться в статическом массиве.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CComUnkArray::CComUnkArray](#ccomunkarray)|Конструктор.|
+|[Ккомункаррай:: Ккомункаррай](#ccomunkarray)|Конструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CComUnkArray::Добавить](#add)|Вызовите этот `IUnknown` метод, чтобы добавить указатель в массив.|
-|[CComUnkArray::начало](#begin)|Возвращает указатель на `IUnknown` первый указатель в коллекции.|
-|[CComUnkArray::end](#end)|Возвращает указатель на один `IUnknown` последний указатель в коллекции.|
-|[CComUnkArray::GetCookie](#getcookie)|Вызовите этот метод, чтобы `IUnknown` получить файлcookieо-файлы, связанные с заданным указателем.|
-|[CComUnkArray::Газета.Ru](#getunknown)|Вызовите этот `IUnknown` метод, чтобы получить указатель, связанный с данным файлом cookie.|
-|[CComUnkArray::Удалить](#remove)|Вызов иметод, `IUnknown` чтобы удалить указатель из массива.|
+|[Ккомункаррай:: Add](#add)|Вызовите этот метод, чтобы добавить `IUnknown` указатель на массив.|
+|[Ккомункаррай:: Begin](#begin)|Возвращает указатель на первый `IUnknown` указатель в коллекции.|
+|[Ккомункаррай:: end](#end)|Возвращает указатель на один из последних `IUnknown` указателей в коллекции.|
+|[Ккомункаррай:: Кука](#getcookie)|Вызовите этот метод, чтобы получить файл cookie, связанный с заданным `IUnknown` указателем.|
+|[Ккомункаррай:: неизвестный](#getunknown)|Вызовите этот метод, чтобы получить `IUnknown` указатель, связанный с заданным файлом cookie.|
+|[Ккомункаррай:: Remove](#remove)|Вызовите этот метод, чтобы удалить `IUnknown` указатель из массива.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CComUnkArray`содержит фиксированное `IUnknown` количество указателей, каждый интерфейс на точке соединения. `CComUnkArray`может быть использован в качестве параметра для класса шаблонов [IConnectionPointImpl.](../../atl/reference/iconnectionpointimpl-class.md) `CComUnkArray<1>`является шаблоном, `CComUnkArray` специализацией которого была оптимизирована для одной точки соединения.
+`CComUnkArray` содержит фиксированное число `IUnknown` указателей, каждый из которых является интерфейсом в точке соединения. `CComUnkArray` может использоваться в качестве параметра для класса шаблона [иконнектионпоинтимпл](../../atl/reference/iconnectionpointimpl-class.md) . `CComUnkArray<1>` — это специализация шаблона `CComUnkArray` , оптимизированная для одной точки подключения.
 
-Методы `CComUnkArray` [начинаются](#begin) и [заканчиваются,](#end) можно использовать для прослеживании всех точек соединения (например, при выстреле события).
+`CComUnkArray`Методы [Begin](#begin) и [End](#end) можно использовать для выполнения цикла по всем точкам соединения (например, при срабатывании события).
 
-[См. Добавление точек соединения к объекту](../../atl/adding-connection-points-to-an-object.md) для получения подробной информации об автоматизации создания прокси-сервисов точки соединения.
+Дополнительные сведения об автоматизации создания прокси-серверов точек подключения см. в разделе [Добавление точек подключения к объекту](../../atl/adding-connection-points-to-an-object.md) .
 
 > [!NOTE]
-> **Заметка** Класс [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md) используется мастером **Add Class** при создании элемента управления, который имеет точки соединения. Если вы хотите указать количество точек соединения вручную, измените ссылку `CComDynamicUnkArray` с `CComUnkArray<` *n,* `>`где *n* — это необходимое количество точек соединения.
+> **Примечание** . Класс [ккомдинамикункаррай](../../atl/reference/ccomdynamicunkarray-class.md) используется мастером **добавления классов** при создании элемента управления с точками соединения. Если вы хотите вручную указать число точек соединения, измените ссылку с `CComDynamicUnkArray` на `CComUnkArray<` *n* `>` , где *n* — необходимое число точек соединения.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlcom.h
+**Заголовок:** атлком. h
 
-## <a name="ccomunkarrayadd"></a><a name="add"></a>CComUnkArray::Добавить
+## <a name="ccomunkarrayadd"></a><a name="add"></a> Ккомункаррай:: Add
 
-Вызовите этот `IUnknown` метод, чтобы добавить указатель в массив.
+Вызовите этот метод, чтобы добавить `IUnknown` указатель на массив.
 
 ```
 DWORD Add(IUnknown* pUnk);
@@ -82,16 +83,16 @@ DWORD Add(IUnknown* pUnk);
 
 ### <a name="parameters"></a>Параметры
 
-*Панк*<br/>
-Вызовите этот `IUnknown` метод, чтобы добавить указатель в массив.
+*pUnk*<br/>
+Вызовите этот метод, чтобы добавить `IUnknown` указатель на массив.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает файлcookieо-файлы, связанные с недавно добавленным указателем, или 0, если массив недостаточно велик, чтобы содержать новый указатель.
+Возвращает файл cookie, связанный с вновь добавленным указателем, или значение 0, если массив недостаточно велик для размещения нового указателя.
 
-## <a name="ccomunkarraybegin"></a><a name="begin"></a>CComUnkArray::начало
+## <a name="ccomunkarraybegin"></a><a name="begin"></a> Ккомункаррай:: Begin
 
-Возвращает указатель к началу сбора `IUnknown` указателей интерфейса.
+Возвращает указатель на начало коллекции `IUnknown` указателей интерфейса.
 
 ```
 IUnknown**
@@ -102,13 +103,13 @@ IUnknown**
 
 Указатель на `IUnknown` указатель интерфейса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Коллекция содержит указатели на интерфейсы, `IUnknown`хранящиеся локально как. Вы отбрасываете каждый `IUnknown` интерфейс в реальный тип интерфейса, а затем вызвать через него. Сначала не нужно запросить интерфейс.
+Коллекция содержит указатели на интерфейсы, хранимые локально как `IUnknown` . Каждый интерфейс приводится `IUnknown` к реальному типу интерфейса, а затем вызывается через него. Сначала не нужно запрашивать интерфейс.
 
-Перед использованием интерфейса `IUnknown` следует проверить, что он не является NULL.
+Прежде чем использовать `IUnknown` интерфейс, убедитесь, что он не РАВЕН null.
 
-## <a name="ccomunkarrayccomunkarray"></a><a name="ccomunkarray"></a>CComUnkArray::CComUnkArray
+## <a name="ccomunkarrayccomunkarray"></a><a name="ccomunkarray"></a> Ккомункаррай:: Ккомункаррай
 
 Конструктор.
 
@@ -116,13 +117,13 @@ IUnknown**
 CComUnkArray();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Устанавливает коллекцию `nMaxSize` `IUnknown` для удержания указателей и инициализирует указатели на NULL.
+Задает для коллекции хранение `nMaxSize` `IUnknown` указателей и инициализирует УКАЗАТЕЛИ значением NULL.
 
-## <a name="ccomunkarrayend"></a><a name="end"></a>CComUnkArray::end
+## <a name="ccomunkarrayend"></a><a name="end"></a> Ккомункаррай:: end
 
-Возвращает указатель на один `IUnknown` последний указатель в коллекции.
+Возвращает указатель на один из последних `IUnknown` указателей в коллекции.
 
 ```
 IUnknown**
@@ -133,15 +134,15 @@ IUnknown**
 
 Указатель на `IUnknown` указатель интерфейса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Методы `CComUnkArray` `begin` и `end` могут быть использованы для цикла через все точки соединения, например, при выстреле события.
+`CComUnkArray`Методы `begin` и `end` могут использоваться для перебора всех точек соединения, например при срабатывании события.
 
 [!code-cpp[NVC_ATL_COM#44](../../atl/codesnippet/cpp/ccomunkarray-class_1.cpp)]
 
-## <a name="ccomunkarraygetcookie"></a><a name="getcookie"></a>CComUnkArray::GetCookie
+## <a name="ccomunkarraygetcookie"></a><a name="getcookie"></a> Ккомункаррай:: Кука
 
-Вызовите этот метод, чтобы `IUnknown` получить файлcookieо-файлы, связанные с заданным указателем.
+Вызовите этот метод, чтобы получить файл cookie, связанный с заданным `IUnknown` указателем.
 
 ```
 DWORD WINAPI GetCookie(IUnknown** ppFind);
@@ -149,20 +150,20 @@ DWORD WINAPI GetCookie(IUnknown** ppFind);
 
 ### <a name="parameters"></a>Параметры
 
-*ppFind*<br/>
-Указатель, `IUnknown` для которого требуется связанное cookie.
+*ппфинд*<br/>
+`IUnknown`Указатель, для которого требуется связанный файл cookie.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает файлcookieо-файлы, связанные с указателем, `IUnknown` или 0, если не найдено подходящего `IUnknown` указателя.
+Возвращает файл cookie, связанный с `IUnknown` указателем, или значение 0, если соответствующий `IUnknown` указатель не найден.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если существует несколько экземпляров `IUnknown` одного и того же указателя, эта функция возвращает файл cookie для первого.
+Если имеется несколько экземпляров одного и того же `IUnknown` указателя, эта функция возвращает файл cookie для первого объекта.
 
-## <a name="ccomunkarraygetunknown"></a><a name="getunknown"></a>CComUnkArray::Газета.Ru
+## <a name="ccomunkarraygetunknown"></a><a name="getunknown"></a> Ккомункаррай:: неизвестный
 
-Вызовите этот `IUnknown` метод, чтобы получить указатель, связанный с данным файлом cookie.
+Вызовите этот метод, чтобы получить `IUnknown` указатель, связанный с заданным файлом cookie.
 
 ```
 IUnknown* WINAPI GetUnknown(DWORD dwCookie);
@@ -170,16 +171,16 @@ IUnknown* WINAPI GetUnknown(DWORD dwCookie);
 
 ### <a name="parameters"></a>Параметры
 
-*dwCookie*<br/>
-Файлы cookie, `IUnknown` для которых требуется связанный указатель.
+*двкукие*<br/>
+Файл cookie, для которого `IUnknown` требуется связанный указатель.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает `IUnknown` указатель или NULL, если не найдено соответствующее файловое печенье.
+Возвращает `IUnknown` указатель или значение null, если соответствующий файл cookie не найден.
 
-## <a name="ccomunkarrayremove"></a><a name="remove"></a>CComUnkArray::Удалить
+## <a name="ccomunkarrayremove"></a><a name="remove"></a> Ккомункаррай:: Remove
 
-Вызов иметод, `IUnknown` чтобы удалить указатель из массива.
+Вызовите этот метод, чтобы удалить `IUnknown` указатель из массива.
 
 ```
 BOOL Remove(DWORD dwCookie);
@@ -187,14 +188,14 @@ BOOL Remove(DWORD dwCookie);
 
 ### <a name="parameters"></a>Параметры
 
-*dwCookie*<br/>
-Файлы cookie, ссылающиеся на указатель, `IUnknown` который должен быть удален из массива.
+*двкукие*<br/>
+Файл cookie, ссылающийся на `IUnknown` указатель, удаляемый из массива.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает TRUE, если указатель удален, FALSE в противном случае.
+Возвращает значение TRUE, если указатель удален, и FALSE в противном случае.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md)<br/>
+[Класс Ккомдинамикункаррай](../../atl/reference/ccomdynamicunkarray-class.md)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)

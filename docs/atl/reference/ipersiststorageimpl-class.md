@@ -1,5 +1,6 @@
 ---
-title: IPersistStorageImpl Класс
+description: 'Дополнительные сведения о: Иперсистсторажеимпл Class'
+title: Класс Иперсистсторажеимпл
 ms.date: 11/04/2016
 f1_keywords:
 - IPersistStorageImpl
@@ -15,19 +16,19 @@ helpviewer_keywords:
 - storage, ATL
 - IPersistStorageImpl class
 ms.assetid: d652f02c-239c-47c7-9a50-3e9fc3014fff
-ms.openlocfilehash: b235b190f237293932705e4d290ac963088722f3
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1d3d996886b587c25988139eed62e409650b5d4e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81326468"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139338"
 ---
-# <a name="ipersiststorageimpl-class"></a>IPersistStorageImpl Класс
+# <a name="ipersiststorageimpl-class"></a>Класс Иперсистсторажеимпл
 
-Этот класс реализует интерфейс [IPersistStorage.](/windows/win32/api/objidl/nn-objidl-ipersiststorage)
+Этот класс реализует интерфейс [иперсистстораже](/windows/win32/api/objidl/nn-objidl-ipersiststorage) .
 
 > [!IMPORTANT]
-> Этот класс и его члены не могут быть использованы в приложениях, выполняемых в Windows Runtime.
+> Этот класс и его члены не могут использоваться в приложениях, выполняемых в среда выполнения Windows.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -39,29 +40,29 @@ class ATL_NO_VTABLE IPersistStorageImpl : public IPersistStorage
 #### <a name="parameters"></a>Параметры
 
 *T*<br/>
-Ваш класс, полученный из `IPersistStorageImpl`.
+Класс, производный от `IPersistStorageImpl` .
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[IPersistStorageImpl::GetClassID](#getclassid)|Извлекает CLSID объекта.|
-|[IPersistStorageImpl::HandsOffStorage](#handsoffstorage)|Поручает объекту освободить все объекты хранения и войти в режим HandsOff. Реализация ATL возвращает S_OK.|
-|[IPersistStorageImpl::InitNew](#initnew)|Инициализирует новое хранилище.|
-|[IPersistStorageImpl::IsDirty](#isdirty)|Проверяет, изменились ли данные объекта с момента его последнего сохранения.|
-|[IPersistStorageImpl::Load](#load)|Загружает свойства объекта из указанного хранилища.|
-|[IPersistStorageImpl::Сохранить](#save)|Сохраняет свойства объекта в указанном хранилище.|
-|[IPersistStorageImpl::SaveCompleted](#savecompleted)|Уведомляет объект о том, что он может вернуться в обычный режим для записи на объект хранения. Реализация ATL возвращает S_OK.|
+|[Иперсистсторажеимпл::, ClassID](#getclassid)|Получает CLSID объекта.|
+|[Иперсистсторажеимпл:: Хандсоффстораже](#handsoffstorage)|Указывает объекту освободить все объекты хранилища и войти в режим Хандсофф. Реализация ATL возвращает S_OK.|
+|[Иперсистсторажеимпл:: InitNew](#initnew)|Инициализирует новое хранилище.|
+|[Иперсистсторажеимпл:: IsDirty](#isdirty)|Проверяет, изменились ли данные объекта со времени последнего сохранения.|
+|[Иперсистсторажеимпл:: Load](#load)|Загружает свойства объекта из указанного хранилища.|
+|[Иперсистсторажеимпл:: Save](#save)|Сохраняет свойства объекта в указанном хранилище.|
+|[Иперсистсторажеимпл:: Савекомплетед](#savecompleted)|Сообщает объекту, что он может вернуться в нормальный режим для записи в свой объект хранилища. Реализация ATL возвращает S_OK.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`IPersistStorageImpl`реализует интерфейс [IPersistStorage,](/windows/win32/api/objidl/nn-objidl-ipersiststorage) который позволяет клиенту запросить загрузку объекта и сохранить его постоянные данные с помощью хранилища.
+`IPersistStorageImpl` реализует интерфейс [иперсистстораже](/windows/win32/api/objidl/nn-objidl-ipersiststorage) , позволяющий клиенту запрашивать загрузку объекта и сохранять постоянные данные с помощью хранилища.
 
-Реализация этого класса требует `T` класса, чтобы `IPersistStreamInit` сделать `QueryInterface`реализацию интерфейса доступной через . Обычно это означает, что `T` класс должен происходить от [IPersistStreamInitImpl,](../../atl/reference/ipersiststreaminitimpl-class.md)обеспечивать запись на `IPersistStreamInit` карте [COM](com-map-macros.md)и использовать карту [свойств](property-map-macros.md) для описания постоянных данных класса.
+Реализация этого класса требует класс `T` , чтобы реализовать `IPersistStreamInit` интерфейс, доступный через `QueryInterface` . Обычно это означает, что класс `T` должен быть производным от [IPersistStreamInitImpl](../../atl/reference/ipersiststreaminitimpl-class.md), предоставлять запись для `IPersistStreamInit` в [сопоставлении com](com-map-macros.md)и использовать [карту свойств](property-map-macros.md) для описания постоянных данных класса.
 
-**Похожие статьи** [ATL Учебник](../../atl/active-template-library-atl-tutorial.md), Создание проекта [ATL](../../atl/reference/creating-an-atl-project.md)
+Руководство по **сопутствующим статьям** [ATL](../../atl/active-template-library-atl-tutorial.md), [Создание проекта ATL](../../atl/reference/creating-an-atl-project.md)
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -71,23 +72,23 @@ class ATL_NO_VTABLE IPersistStorageImpl : public IPersistStorage
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlcom.h
+**Заголовок:** атлком. h
 
-## <a name="ipersiststorageimplgetclassid"></a><a name="getclassid"></a>IPersistStorageImpl::GetClassID
+## <a name="ipersiststorageimplgetclassid"></a><a name="getclassid"></a> Иперсистсторажеимпл::, ClassID
 
-Извлекает CLSID объекта.
+Получает CLSID объекта.
 
 ```
 STDMETHOD(GetClassID)(CLSID* pClassID);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Смотрите [IPersist::GetClassID](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) в Windows SDK.
+См. [IPersist:: ClassID](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) в Windows SDK.
 
-## <a name="ipersiststorageimplhandsoffstorage"></a><a name="handsoffstorage"></a>IPersistStorageImpl::HandsOffStorage
+## <a name="ipersiststorageimplhandsoffstorage"></a><a name="handsoffstorage"></a> Иперсистсторажеимпл:: Хандсоффстораже
 
-Поручает объекту освободить все объекты хранения и войти в режим HandsOff.
+Указывает объекту освободить все объекты хранилища и войти в режим Хандсофф.
 
 ```
 STDMETHOD(HandsOffStorage)(void);
@@ -97,11 +98,11 @@ STDMETHOD(HandsOffStorage)(void);
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Смотрите [IPersistStorage::HandsOffStorage](/windows/win32/api/objidl/nf-objidl-ipersiststorage-handsoffstorage) в Windows SDK.
+См. раздел [иперсистстораже:: хандсоффстораже](/windows/win32/api/objidl/nf-objidl-ipersiststorage-handsoffstorage) в Windows SDK.
 
-## <a name="ipersiststorageimplinitnew"></a><a name="initnew"></a>IPersistStorageImpl::InitNew
+## <a name="ipersiststorageimplinitnew"></a><a name="initnew"></a> Иперсистсторажеимпл:: InitNew
 
 Инициализирует новое хранилище.
 
@@ -109,27 +110,27 @@ STDMETHOD(HandsOffStorage)(void);
 STDMETHOD(InitNew)(IStorage*);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Реализация ATL делегирует интерфейс [IPersistStreamInit.](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit)
+Реализация ATL делегирует интерфейсу [иперсистстреаминит](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) .
 
-Смотрите [IPersistStorage:InitNew](/windows/win32/api/objidl/nf-objidl-ipersiststorage-initnew) в Windows SDK.
+См. раздел [иперсистстораже: InitNew](/windows/win32/api/objidl/nf-objidl-ipersiststorage-initnew) в Windows SDK.
 
-## <a name="ipersiststorageimplisdirty"></a><a name="isdirty"></a>IPersistStorageImpl::IsDirty
+## <a name="ipersiststorageimplisdirty"></a><a name="isdirty"></a> Иперсистсторажеимпл:: IsDirty
 
-Проверяет, изменились ли данные объекта с момента его последнего сохранения.
+Проверяет, изменились ли данные объекта со времени последнего сохранения.
 
 ```
 STDMETHOD(IsDirty)(void);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Реализация ATL делегирует интерфейс [IPersistStreamInit.](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit)
+Реализация ATL делегирует интерфейсу [иперсистстреаминит](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) .
 
-Смотрите [IPersistStorage:IsDirty](/windows/win32/api/objidl/nf-objidl-ipersiststorage-isdirty) в Windows SDK.
+См. раздел [иперсистстораже: IsDirty](/windows/win32/api/objidl/nf-objidl-ipersiststorage-isdirty) в Windows SDK.
 
-## <a name="ipersiststorageimplload"></a><a name="load"></a>IPersistStorageImpl::Load
+## <a name="ipersiststorageimplload"></a><a name="load"></a> Иперсистсторажеимпл:: Load
 
 Загружает свойства объекта из указанного хранилища.
 
@@ -137,13 +138,13 @@ STDMETHOD(IsDirty)(void);
 STDMETHOD(Load)(IStorage* pStorage);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Реализация ATL делегирует интерфейс [IPersistStreamInit.](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) `Load`использует поток под названием "Содержимое" для извлечения данных объекта. Метод [Сохранения](#save) изначально создает этот поток.
+Реализация ATL делегирует интерфейсу [иперсистстреаминит](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) . `Load` использует поток с именем "Content" для получения данных объекта. Метод [Save](#save) изначально создает этот поток.
 
-Смотрите [IPersistStorage: Загрузите](/windows/win32/api/objidl/nf-objidl-ipersiststorage-load) в Windows SDK.
+См. раздел [иперсистстораже: Load](/windows/win32/api/objidl/nf-objidl-ipersiststorage-load) в Windows SDK.
 
-## <a name="ipersiststorageimplsave"></a><a name="save"></a>IPersistStorageImpl::Сохранить
+## <a name="ipersiststorageimplsave"></a><a name="save"></a> Иперсистсторажеимпл:: Save
 
 Сохраняет свойства объекта в указанном хранилище.
 
@@ -151,15 +152,15 @@ STDMETHOD(Load)(IStorage* pStorage);
 STDMETHOD(Save)(IStorage* pStorage, BOOL fSameAsLoad);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Реализация ATL делегирует интерфейс [IPersistStreamInit.](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) Когда `Save` он впервые вызывается, он создает поток под названием "Содержимое" на указанном хранилище. Этот поток затем используется в `Save` последующих вызовах и в вызовах [к Загрузке.](#load)
+Реализация ATL делегирует интерфейсу [иперсистстреаминит](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) . При `Save` первом вызове создается поток с именем "Content" (содержимое) в указанном хранилище. Этот поток затем используется в последующих вызовах функций `Save` и в вызовах для [загрузки](#load).
 
-Смотрите [IPersistStorage:Сохранить](/windows/win32/api/objidl/nf-objidl-ipersiststorage-save) в Windows SDK.
+См. раздел [иперсистстораже: Save](/windows/win32/api/objidl/nf-objidl-ipersiststorage-save) в Windows SDK.
 
-## <a name="ipersiststorageimplsavecompleted"></a><a name="savecompleted"></a>IPersistStorageImpl::SaveCompleted
+## <a name="ipersiststorageimplsavecompleted"></a><a name="savecompleted"></a> Иперсистсторажеимпл:: Савекомплетед
 
-Уведомляет объект о том, что он может вернуться в обычный режим для записи на объект хранения.
+Сообщает объекту, что он может вернуться в нормальный режим для записи в свой объект хранилища.
 
 ```
 STDMETHOD(SaveCompleted)(IStorage*);
@@ -169,13 +170,13 @@ STDMETHOD(SaveCompleted)(IStorage*);
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Смотрите [IPersistStorage:СохранитьЗавершено](/windows/win32/api/objidl/nf-objidl-ipersiststorage-savecompleted) в Windows SDK.
+См. раздел [иперсистстораже: савекомплетед](/windows/win32/api/objidl/nf-objidl-ipersiststorage-savecompleted) в Windows SDK.
 
 ## <a name="see-also"></a>См. также раздел
 
 [Хранилища и потоки](/windows/win32/Stg/storages-and-streams)<br/>
-[IPersistStreamInitImpl класс](../../atl/reference/ipersiststreaminitimpl-class.md)<br/>
-[IPersistPropertyBagImpl Класс](../../atl/reference/ipersistpropertybagimpl-class.md)<br/>
+[Класс IPersistStreamInitImpl](../../atl/reference/ipersiststreaminitimpl-class.md)<br/>
+[Класс Иперсистпропертибагимпл](../../atl/reference/ipersistpropertybagimpl-class.md)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)
