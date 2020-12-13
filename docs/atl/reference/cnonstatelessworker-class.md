@@ -1,5 +1,6 @@
 ---
-title: Класс CNonStatelessWorker
+description: 'Дополнительные сведения о: Кнонстателессворкер Class'
+title: Класс Кнонстателессворкер
 ms.date: 11/04/2016
 f1_keywords:
 - CNonStatelessWorker
@@ -11,19 +12,19 @@ f1_keywords:
 helpviewer_keywords:
 - CNonStatelessWorker class
 ms.assetid: d00936c6-9e7d-49fb-b87d-417b963367d1
-ms.openlocfilehash: 6264bb6bc9070b5ce170b294f9db0d371e7b6b71
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 68457c9594bfaf4d8dd53acd80d7997355c3a3f5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81747671"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141431"
 ---
-# <a name="cnonstatelessworker-class"></a>Класс CNonStatelessWorker
+# <a name="cnonstatelessworker-class"></a>Класс Кнонстателессворкер
 
-Получает запросы из пула потоков и передает их объекту рабочего, который создается и уничтожается по каждому запросу.
+Получает запросы из пула потоков и передает их в рабочий объект, который создается и уничтожается при каждом запросе.
 
 > [!IMPORTANT]
-> Этот класс и его члены не могут быть использованы в приложениях, выполняемых в Windows Runtime.
+> Этот класс и его члены не могут использоваться в приложениях, выполняемых в среда выполнения Windows.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -34,38 +35,38 @@ class CNonStatelessWorker
 
 #### <a name="parameters"></a>Параметры
 
-*Работник*<br/>
-Класс рабочего потока, соответствующий [архетипу рабочего,](../../atl/reference/worker-archetype.md) подходящий для обработки запросов в очереди на [CThreadPool.](../../atl/reference/cthreadpool-class.md)
+*Рабочий узел*<br/>
+Класс рабочего потока, соответствующий [рабочему](../../atl/reference/worker-archetype.md) потоку архетипа, подходящему для обработки запросов, поставленных в очередь [ксреадпул](../../atl/reference/cthreadpool-class.md).
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
 |Имя|Описание|
 |----------|-----------------|
-|[CNonStatelessWorker::RequestType](#requesttype)|Реализация [WorkerArchetype::RequestType](worker-archetype.md#requesttype).|
+|[Кнонстателессворкер:: RequestType](#requesttype)|Реализация [воркерарчетипе:: RequestType](worker-archetype.md#requesttype).|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CNonStatelessWorker:::Исполнение](#execute)|Реализация [WorkerArchetype::Execute](worker-archetype.md#execute).|
-|[CNonStatelessWorker::](#initialize)|Реализация [WorkerArchetype::Первоначальная](worker-archetype.md#initialize).|
-|[CNonStatelessWorker::: Прекращение](#terminate)|Реализация [WorkerArchetype::Terminate](worker-archetype.md#terminate).|
+|[Кнонстателессворкер:: Execute](#execute)|Реализация [воркерарчетипе:: Execute](worker-archetype.md#execute).|
+|[Кнонстателессворкер:: Initialize](#initialize)|Реализация [воркерарчетипе:: Initialize](worker-archetype.md#initialize).|
+|[Кнонстателессворкер:: Terminate](#terminate)|Реализация [воркерарчетипе:: Terminate](worker-archetype.md#terminate).|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот класс является простой рабочей нитью для использования с [CThreadPool.](../../atl/reference/cthreadpool-class.md) Этот класс не предоставляет каких-либо собственных возможностей обработки запросов. Вместо этого он мгновенно устанавливает один экземпляр *Рабочего* на запрос и делегирует реализацию своих методов в этот экземпляр.
+Этот класс является простым рабочим потоком для использования с [ксреадпул](../../atl/reference/cthreadpool-class.md). Этот класс не предоставляет собственные возможности обработки запросов. Вместо этого он создает экземпляр *Worker* на одном запросе и делегирует реализацию своих методов этому экземпляру.
 
-Преимущество этого класса заключается в том, что он обеспечивает удобный способ изменения модели состояния для существующих классов рабочих потоков. `CThreadPool`создаст один рабочий в течение всего срока службы потока, так что если класс рабочего удерживает состояние, он будет удерживать его в нескольких запросах. Просто обернув этот `CNonStatelessWorker` класс в `CThreadPool`шаблон, прежде чем использовать его с, срок службы работника и состояние, которое он держит ограничивается одним запросом.
+Преимущество этого класса заключается в том, что он предоставляет удобный способ изменения модели состояний для существующих классов рабочих потоков. `CThreadPool` создает один рабочий процесс в течение времени существования потока, поэтому, если рабочий класс удерживает состояние, он будет удерживать его в нескольких запросах. Просто заключив этот класс в `CNonStatelessWorker` шаблон перед его использованием `CThreadPool` , время существования рабочей роли и состояние, которое он содержит, ограничено одним запросом.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlutil.h
+**Заголовок:** файлов atlutil. h
 
-## <a name="cnonstatelessworkerexecute"></a><a name="execute"></a>CNonStatelessWorker:::Исполнение
+## <a name="cnonstatelessworkerexecute"></a><a name="execute"></a> Кнонстателессворкер:: Execute
 
-Реализация [WorkerArchetype::Execute](worker-archetype.md#execute).
+Реализация [воркерарчетипе:: Execute](worker-archetype.md#execute).
 
 ```cpp
 void Execute(
@@ -74,13 +75,13 @@ void Execute(
     OVERLAPPED* pOverlapped);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод создает экземпляр класса *«Рабочий»* в стеке и вызывает [инициализацию](worker-archetype.md#initialize) на этом объекте. Если инициализация успешна, этот метод также вызывает [выполнение](worker-archetype.md#execute) и [прекращение](worker-archetype.md#terminate) на одном объекте.
+Этот метод создает экземпляр *рабочего* класса в стеке и вызывает метод [Initialize](worker-archetype.md#initialize) для этого объекта. Если инициализация прошла успешно, этот метод также вызывает [EXECUTE](worker-archetype.md#execute) и [Terminate](worker-archetype.md#terminate) для того же объекта.
 
-## <a name="cnonstatelessworkerinitialize"></a><a name="initialize"></a>CNonStatelessWorker::
+## <a name="cnonstatelessworkerinitialize"></a><a name="initialize"></a> Кнонстателессворкер:: Initialize
 
-Реализация [WorkerArchetype::Первоначальная](worker-archetype.md#initialize).
+Реализация [воркерарчетипе:: Initialize](worker-archetype.md#initialize).
 
 ```
 BOOL Initialize(void* /* pvParam */) throw();
@@ -88,38 +89,38 @@ BOOL Initialize(void* /* pvParam */) throw();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Всегда возвращается TRUE.
+Всегда возвращает значение TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот класс не делает никакой инициализации в `Initialize`.
+Этот класс не выполняет инициализацию в `Initialize` .
 
-## <a name="cnonstatelessworkerrequesttype"></a><a name="requesttype"></a>CNonStatelessWorker::RequestType
+## <a name="cnonstatelessworkerrequesttype"></a><a name="requesttype"></a> Кнонстателессворкер:: RequestType
 
-Реализация [WorkerArchetype::RequestType](worker-archetype.md#requesttype).
+Реализация [воркерарчетипе:: RequestType](worker-archetype.md#requesttype).
 
 ```
 typedef Worker::RequestType RequestType;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот класс обрабатывает тот же тип рабочего элемента, что и класс, используемый для параметра *шаблона «Рабочий».* Подробнее о ней читайте [в обзоре CNonStatelessWorker.](../../atl/reference/cnonstatelessworker-class.md)
+Этот класс обрабатывает тот же тип рабочего элемента, что и класс, используемый для параметра *рабочего* шаблона. Дополнительные сведения см. в [обзоре кнонстателессворкер](../../atl/reference/cnonstatelessworker-class.md) .
 
-## <a name="cnonstatelessworkerterminate"></a><a name="terminate"></a>CNonStatelessWorker::: Прекращение
+## <a name="cnonstatelessworkerterminate"></a><a name="terminate"></a> Кнонстателессворкер:: Terminate
 
-Реализация [WorkerArchetype::Terminate](worker-archetype.md#terminate).
+Реализация [воркерарчетипе:: Terminate](worker-archetype.md#terminate).
 
 ```cpp
 void Terminate(void* /* pvParam */) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот класс не делает никакой очистки в `Terminate`.
+Этот класс не выполняет очистку в `Terminate` .
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс CThreadPool](../../atl/reference/cthreadpool-class.md)<br/>
-[Рабочий архетип](../../atl/reference/worker-archetype.md)<br/>
+[Класс Ксреадпул](../../atl/reference/cthreadpool-class.md)<br/>
+[Архетипа рабочей роли](../../atl/reference/worker-archetype.md)<br/>
 [Классы](../../atl/reference/atl-classes.md)

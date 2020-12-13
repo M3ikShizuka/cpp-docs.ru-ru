@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: wctomb, _wctomb_l'
 title: wctomb, _wctomb_l
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 4a543f0e-5516-4d81-8ff2-3c5206f02ed5
-ms.openlocfilehash: 0a95d61c50af5f49e69df8ae20efccfd3fb8ff5f
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: f49915d062aa602ab361084cbcc7a9a034599de2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910430"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136816"
 ---
 # <a name="wctomb-_wctomb_l"></a>wctomb, _wctomb_l
 
@@ -65,14 +66,14 @@ int _wctomb_l(
 *мбчар*<br/>
 Адрес последовательности многобайтовых символов.
 
-*WCHAR*<br/>
+*wchar*<br/>
 Расширенный символ.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Если **wctomb** преобразует расширенный символ в многобайтовый символ, он возвращает число байтов (которое никогда не превышает **MB_CUR_MAX**) в расширенном символе. Если *WCHAR* является расширенным символом NULL (L ' \ 0 '), **wctomb** возвращает 1. Если целевой указатель *мбчар* имеет **значение NULL**, **wctomb** возвращает 0. Если преобразование невозможно в текущем языковом стандарте, **wctomb** **возвращает значение-1, а для** возврата — **еилсек**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **wctomb** Преобразует аргумент *WCHAR* в соответствующий многобайтовый символ и сохраняет результат в *мбчар*. Эту функцию можно вызывать из любой точки в любой программе. **wctomb** использует текущий языковой стандарт для любого поведения, зависящего от языкового стандарта; **_wctomb_l** идентичен **wctomb** , за исключением того, что он использует переданный языковой стандарт. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
@@ -121,7 +122,7 @@ Convert a wide character:
 ## <a name="see-also"></a>См. также раздел
 
 [Преобразование данных](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
 [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>

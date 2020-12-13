@@ -1,5 +1,6 @@
 ---
-title: Класс CDefaultCharTraits
+description: 'Дополнительные сведения о: Кдефаултчартраитс Class'
+title: Класс Кдефаултчартраитс
 ms.date: 11/04/2016
 f1_keywords:
 - CDefaultCharTraits
@@ -9,16 +10,16 @@ f1_keywords:
 helpviewer_keywords:
 - CDefaultCharTraits class
 ms.assetid: f94a3934-597f-401d-8513-ed6924ae069a
-ms.openlocfilehash: 40c4d107d05e6d7b610e7c46be920d91d8fe6086
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6d98c6b6ffb527fef1e5b2320b46eda61ec3f670
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81327092"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141964"
 ---
-# <a name="cdefaultchartraits-class"></a>Класс CDefaultCharTraits
+# <a name="cdefaultchartraits-class"></a>Класс Кдефаултчартраитс
 
-Этот класс предоставляет две статические функции для преобразования символов между верхним и нижним регистром.
+Этот класс предоставляет две статические функции для преобразования символов между прописными и строчными буквами.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -30,26 +31,26 @@ class CDefaultCharTraits
 #### <a name="parameters"></a>Параметры
 
 *T*<br/>
-Тип данных, которые будут храниться в коллекции.
+Тип данных, сохраняемых в коллекции.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CDefaultChartraits::CharTolower](#chartolower)|(Статик) Вызовите эту функцию, чтобы преобразовать символ в верхний регистр.|
-|[CDefaultChartraits::Chartoupper](#chartoupper)|(Статик) Вызовите эту функцию, чтобы преобразовать символ в нижний регистр.|
+|[Кдефаултчартраитс:: Чартоловер](#chartolower)|Статически Вызовите эту функцию, чтобы преобразовать символ в верхний регистр.|
+|[Кдефаултчартраитс:: Чартауппер](#chartoupper)|Статически Вызовите эту функцию, чтобы преобразовать символ в нижний регистр.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот класс предоставляет функции, которые используются классом [CStringElementTraitsI.](../../atl/reference/cstringelementtraitsi-class.md)
+Этот класс предоставляет функции, используемые классом [кстринжелементтраитси](../../atl/reference/cstringelementtraitsi-class.md).
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlcoll.h
+**Заголовок:** атлколл. h
 
-## <a name="cdefaultchartraitschartolower"></a><a name="chartolower"></a>CDefaultChartraits::CharTolower
+## <a name="cdefaultchartraitschartolower"></a><a name="chartolower"></a> Кдефаултчартраитс:: Чартоловер
 
 Вызовите эту функцию, чтобы преобразовать символ в нижний регистр.
 
@@ -67,7 +68,7 @@ static char CharToLower(char x);
 
 [!code-cpp[NVC_ATL_Utilities#132](../../atl/codesnippet/cpp/cdefaultchartraits-class_1.cpp)]
 
-## <a name="cdefaultchartraitschartoupper"></a><a name="chartoupper"></a>CDefaultChartraits::Chartoupper
+## <a name="cdefaultchartraitschartoupper"></a><a name="chartoupper"></a> Кдефаултчартраитс:: Чартауппер
 
 Вызовите эту функцию, чтобы преобразовать символ в верхний регистр.
 

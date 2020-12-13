@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: сопоставления подпрограмм'
 title: Сопоставления процедур
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - TCHAR.H data types, list of routine mappings
 - generic-text mappings
 ms.assetid: 38f33d3b-0f7b-430d-8a4f-75e27c6f1c42
-ms.openlocfilehash: 245a44a6722bdf704a5ce750dd285eb3eac66609
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 22febc86d47ca435e9667015f1130b472e515946
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444854"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136803"
 ---
 # <a name="routine-mappings"></a>Сопоставления процедур
 
@@ -21,7 +22,7 @@ ms.locfileid: "79444854"
 
 Дополнительные сведения см. в разделе [Универсальные текстовые сопоставления в файле TCHAR.H](../text/generic-text-mappings-in-tchar-h.md).
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Имя универсальной текстовой подпрограммы|Однобайтовая кодировка (_UNICODE и MBCS не определены)|_MBCS определено|_UNICODE определено|
 |--------------------------------|-------------------------------------------|--------------------|-----------------------|
@@ -80,11 +81,11 @@ ms.locfileid: "79444854"
 |`_taccess_s`|`_access_s`|`_access_s`|`_waccess_s`|
 |`_tasctime`|`asctime`|`asctime`|`_wasctime`|
 |`_tasctime_s`|`asctime_s`|`asctime_s`|`_wasctime_s`|
-|`_tccmp`|Сопоставляется макросу или встроенной функции|`_mbsncmp`|Сопоставляется макросу или встроенной функции|
-|`_tccpy`|Сопоставляется макросу или встроенной функции|`_mbccpy`|Сопоставляется макросу или встроенной функции|
+|`_tccmp`|Сопоставляется макросу или встраиваемой функции|`_mbsncmp`|Сопоставляется макросу или встраиваемой функции|
+|`_tccpy`|Сопоставляется макросу или встраиваемой функции|`_mbccpy`|Сопоставляется макросу или встраиваемой функции|
 |`_tccpy_s`|`strcpy_s`|`_mbccpy_s`|`wcscpy_s`|
 |`_tchdir`|`_chdir`|`_chdir`|`_wchdir`|
-|`_tclen`|Сопоставляется макросу или встроенной функции|`_mbclen`|Сопоставляется макросу или встроенной функции|
+|`_tclen`|Сопоставляется макросу или встраиваемой функции|`_mbclen`|Сопоставляется макросу или встраиваемой функции|
 |`_tchmod`|`_chmod`|`_chmod`|`_wchmod`|
 |`_tcprintf`|`_cprintf`|`_cprintf`|`_cwprintf`|
 |`_tcprintf_s`|`_cprintf_s`|`_cprintf_s`|`_cwprintf_s`|
@@ -265,5 +266,5 @@ ms.locfileid: "79444854"
 [Универсальные текстовые сопоставления](../c-runtime-library/generic-text-mappings.md)<br/>
 [Сопоставления типов данных](../c-runtime-library/data-type-mappings.md)<br/>
 [Сопоставления констант и глобальных переменных](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
-[Пример программы с использованием универсального текста](../c-runtime-library/a-sample-generic-text-program.md)<br/>
-[Использование универсальных текстовых сопоставлений](../c-runtime-library/using-generic-text-mappings.md)
+[Пример программы Generic-Text](../c-runtime-library/a-sample-generic-text-program.md)<br/>
+[Использование сопоставлений Generic-Text](../c-runtime-library/using-generic-text-mappings.md)

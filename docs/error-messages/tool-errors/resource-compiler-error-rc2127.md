@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Ошибка компилятора ресурсов RC2127'
 title: Ошибка компилятора ресурсов RC2127
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,15 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - RC2127
 ms.assetid: 13c1599d-ac4c-4044-a59a-48e69511ef7e
-ms.openlocfilehash: a3baa4d29eba4c8c3c2596e46d04d5bf92e7aa45
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e3b619377f70d76ac89469fee78b957b6ba9ac6b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80191409"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97133566"
 ---
 # <a name="resource-compiler-error-rc2127"></a>Ошибка компилятора ресурсов RC2127
 
 ожидались слова версии, разделенные запятыми
 
-Номера версий в ресурсе версии должны относиться к типу **Word**и разделяться запятыми.
+Номера версий в ресурсе версии должны относиться к типу **Word** и разделяться запятыми.

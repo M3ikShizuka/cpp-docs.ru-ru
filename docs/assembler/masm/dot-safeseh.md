@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения:. SAFESEH (32-разрядный MASM)
 title: .SAFESEH
 ms.date: 11/05/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - SAFESEH directive
 - .SAFESEH directive
 ms.assetid: 6eaac8c4-c46f-47ae-8a66-f5cfeb267e43
-ms.openlocfilehash: 5953ad6bdf1d9d1b0070ce83dd1d764799b7440a
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: f0b44477d20aa024689df5e2901cc3e179596a79
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75317569"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97131213"
 ---
 # <a name="safeseh-32-bit-masm"></a>. SAFESEH (32-разрядный MASM)
 
@@ -21,11 +22,11 @@ ms.locfileid: "75317569"
 
 ## <a name="syntax"></a>Синтаксис
 
-> **.**  *Идентификатор* SAFESEH
+> **.** *Идентификатор* SAFESEH
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
-*идентификатор* должен быть идентификатором для локально определенной процедуры [или](proc.md) процедуры [екстрн](extrn.md) . [Метка](label-masm.md) не разрешена. Тот. Для директивы SAFESEH требуется параметр командной строки [/SAFESEH](ml-and-ml64-command-line-reference.md) ml. exe.
+*идентификатор* должен быть идентификатором для локально определенной процедуры [или](proc.md) процедуры [екстрн](extrn.md) . [Метка](label-masm.md) не разрешена. Тот. Для директивы SAFESEH требуется параметр командной строки [/safeseh](ml-and-ml64-command-line-reference.md) ml.exe.
 
 Дополнительные сведения о структурированных обработчиках исключений см. в разделе параметр [/SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md).
 
@@ -39,7 +40,7 @@ MyHandler   proto
 end
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по директивам](directives-reference.md)\
 [Грамматика MASM BNF](masm-bnf-grammar.md)

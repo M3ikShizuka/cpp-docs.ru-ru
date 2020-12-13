@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: ELSEIF2'
 title: ELSEIF2
 ms.date: 12/17/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - ELSEIF2 directive
 ms.assetid: 6e6a1020-1dc2-45a9-a42c-e08442fb4071
-ms.openlocfilehash: 65bb02bd65531ab0d4f591ca9435c3f3aa6d6bae
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 251ff4ee2a1a992ee3d08777951c65b85cd21c90
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75318141"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97130602"
 ---
 # <a name="elseif2"></a>ELSEIF2
 
@@ -21,11 +22,11 @@ ms.locfileid: "75318141"
 
 > **ELSEIF2**
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о 2-проходном поведении в MASM 5,1 vs MASM 6,1 см. в разделе [IF1 и If2](if2.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по директивам](directives-reference.md)\
 [Грамматика MASM BNF](masm-bnf-grammar.md)

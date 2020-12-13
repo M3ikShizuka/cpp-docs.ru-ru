@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения:. WHILE (32-разрядный MASM)
 title: .WHILE
 ms.date: 11/05/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - .WHILE directive
 ms.assetid: 7c5e78ae-1bfd-4dcf-aa4c-ba940bcf7793
-ms.openlocfilehash: 5e7d3f92e5f1ffc27b7987ee7f06e9d1cdb12507
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: c699ee923454dde6d82c20c381145c197bd4a9e8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75318219"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97130914"
 ---
 # <a name="while-32-bit-masm"></a>. WHILE (32-разрядный MASM)
 
@@ -19,11 +20,11 @@ ms.locfileid: "75318219"
 
 ## <a name="syntax"></a>Синтаксис
 
-> **.**  *Условие* while\
+> **.** *Условие* while\
 > *инструкции*\
 > **.ENDW**
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по директивам](directives-reference.md)\
 [Грамматика MASM BNF](masm-bnf-grammar.md)

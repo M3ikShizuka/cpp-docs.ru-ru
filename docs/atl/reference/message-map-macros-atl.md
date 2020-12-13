@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: макросы схемы сообщений (ATL)'
 title: Макросы схемы сообщений (ATL)
 ms.date: 11/04/2016
 f1_keywords:
@@ -37,12 +38,12 @@ f1_keywords:
 - atlwin/ATL::REFLECTED_NOTIFY_RANGE_CODE_HANDLER
 - atlwin/ATL::REFLECTED_NOTIFY_RANGE_HANDLER
 ms.assetid: eefdd546-8934-4a30-b263-9c06a8addcbd
-ms.openlocfilehash: 9917f31dbb115552cf9dc9bde24f7b6921611750
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5efe2a6b5aaeb2fbbf3cb5b54ce376ebf00c3b75
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835302"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139078"
 ---
 # <a name="message-map-macros-atl"></a>Макросы схемы сообщений (ATL)
 
@@ -102,7 +103,7 @@ ALT_MSG_MAP(msgMapID)
 *мсгмапид*<br/>
 окне Идентификатор схемы сообщения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ATL идентифицирует каждую карту сообщений по числу. Схема сообщений по умолчанию (объявленная с помощью макроса BEGIN_MSG_MAP) определяется значением 0. Альтернативная схема сообщения определяется *мсгмапид*.
 
@@ -141,7 +142,7 @@ BEGIN_MSG_MAP(theClass)
 *секласс*<br/>
 окне Имя класса, содержащего схему сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 [Квиндовимпл:: WindowProc](cwindowimpl-class.md#windowproc) использует схему сообщений по умолчанию для обработки сообщений, отправляемых в окно. Схема сообщений направляет сообщения либо в соответствующую функцию обработчика, либо на другую схему сообщений.
 
@@ -223,7 +224,7 @@ CHAIN_MSG_MAP_ALT(theChainClass, msgMapID)
 *мсгмапид*<br/>
 окне Идентификатор схемы сообщения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 CHAIN_MSG_MAP_ALT направляет сообщения на альтернативную карту сообщений в базовом классе. Необходимо объявить эту альтернативную схему сообщений с помощью [ALT_MSG_MAP (мсгмапид)](#alt_msg_map). Чтобы направить сообщения в схему сообщений по умолчанию базового класса (объявленную с помощью [BEGIN_MSG_MAP](#begin_msg_map)), используйте CHAIN_MSG_MAP. Пример см. в разделе [CHAIN_MSG_MAP](#chain_msg_map).
 
@@ -252,7 +253,7 @@ CHAIN_MSG_MAP_ALT_MEMBER(theChainMember, msgMapID)
 *мсгмапид*<br/>
 окне Идентификатор схемы сообщения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 CHAIN_MSG_MAP_ALT_MEMBER направляет сообщения на альтернативную карту сообщений в элементе данных. Необходимо объявить эту альтернативную схему сообщений с помощью [ALT_MSG_MAP (мсгмапид)](#alt_msg_map). Чтобы направить сообщения в схему сообщений элемента данных по умолчанию (объявленную с помощью [BEGIN_MSG_MAP](#begin_msg_map)), используйте CHAIN_MSG_MAP_MEMBER. Пример см. в разделе [CHAIN_MSG_MAP_MEMBER](#chain_msg_map_member).
 
@@ -278,7 +279,7 @@ CHAIN_MSG_MAP(theChainClass)
 *сечаинкласс*<br/>
 окне Имя базового класса, содержащего схему сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 CHAIN_MSG_MAP направляет сообщения в схему сообщений по умолчанию базового класса (объявленную с помощью [BEGIN_MSG_MAP](#begin_msg_map)). Чтобы направить сообщения на альтернативную карту сообщений базового класса (объявленной с помощью [ALT_MSG_MAP](#alt_msg_map)), используйте [CHAIN_MSG_MAP_ALT](#chain_msg_map_alt).
 
@@ -316,7 +317,7 @@ CHAIN_MSG_MAP_DYNAMIC(dynaChainID)
 *диначаинид*<br/>
 окне Уникальный идентификатор для схемы сообщений объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 CHAIN_MSG_MAP_DYNAMIC направляет сообщения во время выполнения в схему сообщений по умолчанию в другом объекте. Объект и его схема сообщений связаны с *диначаинид*, определяемым с помощью [Кдинамикчаин:: сетчаинентри](cdynamicchain-class.md#setchainentry). Для использования CHAIN_MSG_MAP_DYNAMIC необходимо создать производный класс от `CDynamicChain` . Пример см. в обзоре [кдинамикчаин](../../atl/reference/cdynamicchain-class.md) .
 
@@ -342,7 +343,7 @@ CHAIN_MSG_MAP_MEMBER(theChainMember)
 *сечаинмембер*<br/>
 окне Имя элемента данных, содержащего схему сообщения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 CHAIN_MSG_MAP_MEMBER направляет сообщения в схему сообщений элемента данных по умолчанию (объявленную с помощью [BEGIN_MSG_MAP](#begin_msg_map)). Чтобы направить сообщения на альтернативную карту сообщений элемента данных (объявленную с помощью [ALT_MSG_MAP](#alt_msg_map)), используйте [CHAIN_MSG_MAP_ALT_MEMBER](#chain_msg_map_alt_member).
 
@@ -397,7 +398,7 @@ COMMAND_HANDLER(id, code, func)
 
 ### <a name="parameters"></a>Параметры
 
-*идентификатор*<br/>
+*id*<br/>
 окне Идентификатор элемента меню, элемента управления или ускорителя.
 
 *code*<br/>
@@ -406,7 +407,7 @@ COMMAND_HANDLER(id, code, func)
 *func*<br/>
 окне Имя функции обработчика сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 COMMAND_HANDLER сопоставляет [WM_COMMAND](/windows/win32/menurc/wm-command) сообщение с указанной функцией обработчика на основе кода уведомления и идентификатора элемента управления. Пример:
 
@@ -439,7 +440,7 @@ COMMAND_ID_HANDLER(id, func)
 
 ### <a name="parameters"></a>Параметры
 
-*идентификатор*<br/>
+*id*<br/>
 окне Идентификатор элемента меню, элемента управления или ускорителя отправки сообщения.
 
 *func*<br/>
@@ -471,7 +472,7 @@ COMMAND_RANGE_CODE_HANDLER(idFirst, idLast, code, func)
 *func*<br/>
 окне Имя функции обработчика сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот диапазон основан на идентификаторе элемента меню, элемента управления или ускорителе отправки сообщения.
 
@@ -498,7 +499,7 @@ COMMAND_RANGE_HANDLER( idFirst, idLast, func)
 *func*<br/>
 окне Имя функции обработчика сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот диапазон основан на идентификаторе элемента меню, элемента управления или ускорителе отправки сообщения.
 
@@ -514,7 +515,7 @@ COMMAND_RANGE_HANDLER( idFirst, idLast, func)
 DECLARE_EMPTY_MSG_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 DECLARE_EMPTY_MSG_MAP — это удобный макрос, вызывающий макросы [BEGIN_MSG_MAP](#begin_msg_map) и [END_MSG_MAP](#end_msg_map) для создания пустой схемы сообщения:
 
@@ -540,7 +541,7 @@ DEFAULT_REFLECTION_HANDLER()
 END_MSG_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Для пометки начала схемы сообщения всегда используйте макрос [BEGIN_MSG_MAP](#begin_msg_map) . Используйте [ALT_MSG_MAP](#alt_msg_map) для объявления последующих альтернативных схем сообщений.
 
@@ -570,7 +571,7 @@ END_MSG_MAP()
 FORWARD_NOTIFICATIONS()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Укажите этот макрос в составе схемы сообщений.
 
@@ -594,7 +595,7 @@ MESSAGE_HANDLER( msg, func )
 *func*<br/>
 окне Имя функции обработчика сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 MESSAGE_HANDLER сопоставляет сообщение Windows с указанной функцией обработчика.
 
@@ -672,7 +673,7 @@ NOTIFY_HANDLER( id, cd, func )
 
 ### <a name="parameters"></a>Параметры
 
-*идентификатор*<br/>
+*id*<br/>
 окне Идентификатор элемента управления, отправляющего сообщение.
 
 *cd*<br/>
@@ -681,7 +682,7 @@ NOTIFY_HANDLER( id, cd, func )
 *func*<br/>
 окне Имя функции обработчика сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 NOTIFY_HANDLER сопоставляет [WM_NOTIFY](/windows/win32/controls/wm-notify) сообщение с указанной функцией обработчика на основе кода уведомления и идентификатора элемента управления.
 
@@ -716,7 +717,7 @@ NOTIFY_ID_HANDLER( id, func )
 
 ### <a name="parameters"></a>Параметры
 
-*идентификатор*<br/>
+*id*<br/>
 окне Идентификатор элемента управления, отправляющего сообщение.
 
 *func*<br/>
@@ -748,7 +749,7 @@ NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
 *func*<br/>
 окне Имя функции обработчика сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот диапазон основан на идентификаторе элемента управления, отправляющего сообщение.
 
@@ -775,7 +776,7 @@ NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
 *func*<br/>
 окне Имя функции обработчика сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот диапазон основан на идентификаторе элемента управления, отправляющего сообщение.
 
@@ -791,7 +792,7 @@ NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
 REFLECT_NOTIFICATIONS()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Укажите этот макрос как часть схемы сообщения родительского окна.
 
@@ -829,7 +830,7 @@ REFLECTED_COMMAND_HANDLER( id, code, func )
 
 ### <a name="parameters"></a>Параметры
 
-*идентификатор*<br/>
+*id*<br/>
 окне Идентификатор элемента меню, элемента управления или ускорителя.
 
 *code*<br/>
@@ -852,7 +853,7 @@ REFLECTED_COMMAND_ID_HANDLER( id, func )
 
 ### <a name="parameters"></a>Параметры
 
-*идентификатор*<br/>
+*id*<br/>
 окне Идентификатор элемента меню, элемента управления или ускорителя.
 
 *func*<br/>
@@ -941,7 +942,7 @@ REFLECTED_NOTIFY_HANDLER( id, cd, func )
 
 ### <a name="parameters"></a>Параметры
 
-*идентификатор*<br/>
+*id*<br/>
 окне Идентификатор элемента меню, элемента управления или ускорителя.
 
 *cd*<br/>
@@ -964,7 +965,7 @@ REFLECTED_NOTIFY_ID_HANDLER( id, func )
 
 ### <a name="parameters"></a>Параметры
 
-*идентификатор*<br/>
+*id*<br/>
 окне Идентификатор элемента меню, элемента управления или ускорителя.
 
 *func*<br/>

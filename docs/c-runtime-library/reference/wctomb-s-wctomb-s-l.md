@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: wctomb_s, _wctomb_s_l'
 title: wctomb_s, _wctomb_s_l
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - characters, converting
 - string conversion, multibyte character strings
 ms.assetid: 7e94a888-deed-4dbd-b5e9-d4a0455538b8
-ms.openlocfilehash: 63839f70fa334fadd961eb173343d1b406268cfd
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 845bdd5fff74e24226700b1f233ccf1e29afc27e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910434"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136829"
 ---
 # <a name="wctomb_s-_wctomb_s_l"></a>wctomb_s, _wctomb_s_l
 
@@ -75,7 +76,7 @@ errno_t _wctomb_s_l(
 *сизеинбитес*<br/>
 Размер буфера *мбчар*.
 
-*WCHAR*<br/>
+*wchar*<br/>
 Расширенный символ.
 
 *locale*<br/>
@@ -89,13 +90,13 @@ errno_t _wctomb_s_l(
 
 |*мбчар*|*сизеинбитес*|Возвращаемое значение|*претвалуе*|
 |--------------|-------------------|------------------|-----------------|
-|**ЗАКАНЧИВАЮЩ**|> 0|**еинвал**|не изменено|
+|**NULL**|> 0|**еинвал**|не изменено|
 |any|>**INT_MAX**|**еинвал**|не изменено|
 |any|слишком мало|**еинвал**|не изменено|
 
 Если выполняется какое-либо из приведенных выше условий возникновения ошибки, вызывается обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, **wctomb** возвращает **еинвал** и **задает** для **еинвал**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **wctomb_s** Преобразует аргумент *WCHAR* в соответствующий многобайтовый символ и сохраняет результат в *мбчар*. Эту функцию можно вызывать из любой точки в любой программе.
 
@@ -145,7 +146,7 @@ Convert a wide character:
 ## <a name="see-also"></a>См. также раздел
 
 [Преобразование данных](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
 [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __writefsbyte, __writefsdword, __writefsqword, __writefsword'
 title: __writefsbyte, __writefsdword, __writefsqword, __writefsword
 ms.date: 09/02/2019
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - __writefsbyte intrinsic
 - writefsword intrinsic
 ms.assetid: 23ac6e8e-bc91-4e90-a4c6-da02993637ad
-ms.openlocfilehash: c0cb70986fc75d14f23fb70efe89f48e10fb047e
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: cde85cd7fea5b65ced127da96033ecc5b1f4f058
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219128"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136062"
 ---
 # <a name="__writefsbyte-__writefsdword-__writefsqword-__writefsword"></a>__writefsbyte, __writefsdword, __writefsqword, __writefsword
 
@@ -55,21 +56,21 @@ void __writefsqword(
 *Собой*\
 окне Смещение от начала объекта FS, в который производится запись.
 
-*Data*\
+*Данные*\
 окне Записываемое значение.
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__writefsbyte`|x86|
 |`__writefsword`|x86|
 |`__writefsdword`|x86|
 |`__writefsqword`|x86|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эти подпрограммы доступны только в виде встроенных функций.
 
@@ -77,5 +78,5 @@ void __writefsqword(
 
 ## <a name="see-also"></a>См. также
 
-[__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)\
-[Встроенные функции компилятора](../intrinsics/compiler-intrinsics.md)
+[__readfsbyte, \_ _readfsdword, \_ _readfsqword, \_ _readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)\
+[Встроенные объекты компилятора](../intrinsics/compiler-intrinsics.md)

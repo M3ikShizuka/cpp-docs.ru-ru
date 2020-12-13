@@ -1,5 +1,6 @@
 ---
-title: Класс CHeapPtrBase
+description: 'Дополнительные сведения о: Чеапптрбасе Class'
+title: Класс Чеапптрбасе
 ms.date: 11/04/2016
 f1_keywords:
 - CHeapPtrBase
@@ -13,19 +14,19 @@ f1_keywords:
 helpviewer_keywords:
 - CHeapPtrBase class
 ms.assetid: 501ac1b2-fb34-4c72-b7e6-a4f1fc8fda21
-ms.openlocfilehash: e247b4f488411ffdcde5d1d9016436c9c36fe793
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 6186f68066f4c159c16c458f9f00725478aa98a0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81747680"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141639"
 ---
-# <a name="cheapptrbase-class"></a>Класс CHeapPtrBase
+# <a name="cheapptrbase-class"></a>Класс Чеапптрбасе
 
-Этот класс составляет основу для нескольких умных классов указателей кучи.
+Этот класс образует базу для нескольких классов указателей смарт-кучи.
 
 > [!IMPORTANT]
-> Этот класс и его члены не могут быть использованы в приложениях, выполняемых в Windows Runtime.
+> Этот класс и его члены не могут использоваться в приложениях, выполняемых в среда выполнения Windows.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -37,54 +38,54 @@ class CHeapPtrBase
 #### <a name="parameters"></a>Параметры
 
 *T*<br/>
-Тип объекта, который будет храниться на куче.
+Тип объекта, сохраняемый в куче.
 
-*Распределителя*<br/>
-Класс распределения памяти для использования. По умолчанию режимы CRT используются для выделения и свободной памяти.
+*Выделен*<br/>
+Используемый класс выделения памяти. По умолчанию подпрограммы CRT используются для выделения и освобождения памяти.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CHeapPtrBase:: »CHeapPtrBase](#dtor)|Деструктор|
+|[Чеапптрбасе:: ~ Чеапптрбасе](#dtor)|Деструктор|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CHeapPtrBase::AllocateBytes](#allocatebytes)|Вызовите этот метод для выделения памяти.|
-|[CHeapPtrBase::Attach](#attach)|Вызовите этот метод, чтобы взять на себя ответственность за существующий указатель.|
-|[CHeapPtrBase::Detach](#detach)|Вызовите этот метод, чтобы освободить право собственности на указатель.|
-|[CHeapPtrBase::Бесплатно](#free)|Вызовите этот метод, чтобы `CHeapPtrBase`удалить объект, на который указывает .|
-|[CHeapPtrBase:ReallocateBytes](#reallocatebytes)|Вызовите этот метод для перераспределения памяти.|
+|[Чеапптрбасе:: Аллокатебитес](#allocatebytes)|Вызовите этот метод, чтобы выделить память.|
+|[Чеапптрбасе:: Attach](#attach)|Вызовите этот метод, чтобы стать владельцем существующего указателя.|
+|[Чеапптрбасе::D етач](#detach)|Вызовите этот метод, чтобы освободить владение указателем.|
+|[Чеапптрбасе:: Free](#free)|Вызовите этот метод, чтобы удалить объект, на который указывает `CHeapPtrBase` .|
+|[Чеапптрбасе:: Реаллокатебитес](#reallocatebytes)|Вызовите этот метод, чтобы перераспределить память.|
 
 ### <a name="public-operators"></a>Открытые операторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CHeapPtrBase:Оператор ТЗ](#operator_t_star)|Оператор актерского состава.|
-|[CHeapPtrBase::оператор &](#operator_amp)|Оператора &.|
-|[CHeapPtrBase:Оператор ->](#operator_ptr)|Оператор указателя на участника.|
+|[Чеапптрбасе:: operator T *](#operator_t_star)|Оператор CAST.|
+|[Чеапптрбасе:: operator &](#operator_amp)|Оператора &.|
+|[Чеапптрбасе:: operator — >](#operator_ptr)|Оператор указателя на член.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CHeapPtrBase::m_pData](#m_pdata)|Переменная данных указателя.|
+|[Чеапптрбасе:: m_pData](#m_pdata)|Переменная члена данных указателя.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот класс составляет основу для нескольких умных классов указателей кучи. Полученные классы, например, [CHeapPtr](../../atl/reference/cheapptr-class.md) и [CComHeapPtr,](../../atl/reference/ccomheapptr-class.md)добавляют свои собственные конструкторы и операторов. Ознакомьтесь с этими классами для примеров реализации.
+Этот класс образует базу для нескольких классов указателей смарт-кучи. Производные классы, например [чеапптр](../../atl/reference/cheapptr-class.md) и [ккомхеапптр](../../atl/reference/ccomheapptr-class.md), добавляют собственные конструкторы и операторы. Примеры реализации см. в этих классах.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlcore.h
+**Заголовок:** атлкоре. h
 
-## <a name="cheapptrbaseallocatebytes"></a><a name="allocatebytes"></a>CHeapPtrBase::AllocateBytes
+## <a name="cheapptrbaseallocatebytes"></a><a name="allocatebytes"></a> Чеапптрбасе:: Аллокатебитес
 
-Вызовите этот метод для выделения памяти.
+Вызовите этот метод, чтобы выделить память.
 
 ```
 bool AllocateBytes(size_t nBytes) throw();
@@ -92,20 +93,20 @@ bool AllocateBytes(size_t nBytes) throw();
 
 ### <a name="parameters"></a>Параметры
 
-*nБайт*<br/>
-Количество байтов памяти для выделения.
+*nBytes*<br/>
+Число байтов памяти для выделения.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает верно, если память успешно выделена, ложнов в противном случае.
+Возвращает значение true, если память успешно выделена, и false в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-В отладочных сборках произойдет сбой утверждения, если переменная [CHeapPtrBase::m_pData](#m_pdata) в настоящее время указывает на существующее значение; то есть, он не равен NULL.
+В отладочных сборках произойдет сбой утверждения, если переменная члена [чеапптрбасе:: m_pData](#m_pdata) указывает на существующее значение. то есть он не равен NULL.
 
-## <a name="cheapptrbaseattach"></a><a name="attach"></a>CHeapPtrBase::Attach
+## <a name="cheapptrbaseattach"></a><a name="attach"></a> Чеапптрбасе:: Attach
 
-Вызовите этот метод, чтобы взять на себя ответственность за существующий указатель.
+Вызовите этот метод, чтобы стать владельцем существующего указателя.
 
 ```cpp
 void Attach(T* pData) throw();
@@ -113,16 +114,16 @@ void Attach(T* pData) throw();
 
 ### <a name="parameters"></a>Параметры
 
-*Pdata*<br/>
-Объект `CHeapPtrBase` будет владеть этим указателем.
+*pData*<br/>
+`CHeapPtrBase`Объект будет становиться владельцем этого указателя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Когда `CHeapPtrBase` объект становится владельцем указателя, он автоматически удаляет указатель и любые выделенные данные, когда он выходит за рамки.
+Когда `CHeapPtrBase` объект получает владение указателем, он автоматически удаляет указатель и все выделенные данные, когда оно выходит за пределы области.
 
-В отладочных сборках произойдет сбой утверждения, если переменная [CHeapPtrBase::m_pData](#m_pdata) в настоящее время указывает на существующее значение; то есть, он не равен NULL.
+В отладочных сборках произойдет сбой утверждения, если переменная члена [чеапптрбасе:: m_pData](#m_pdata) указывает на существующее значение. то есть он не равен NULL.
 
-## <a name="cheapptrbasecheapptrbase"></a><a name="dtor"></a>CHeapPtrBase:: »CHeapPtrBase
+## <a name="cheapptrbasecheapptrbase"></a><a name="dtor"></a> Чеапптрбасе:: ~ Чеапптрбасе
 
 Деструктор
 
@@ -130,13 +131,13 @@ void Attach(T* pData) throw();
 ~CHeapPtrBase() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Освобождает все выделенные ресурсы.
 
-## <a name="cheapptrbasedetach"></a><a name="detach"></a>CHeapPtrBase::Detach
+## <a name="cheapptrbasedetach"></a><a name="detach"></a> Чеапптрбасе::D етач
 
-Вызовите этот метод, чтобы освободить право собственности на указатель.
+Вызовите этот метод, чтобы освободить владение указателем.
 
 ```
 T* Detach() throw();
@@ -146,35 +147,35 @@ T* Detach() throw();
 
 Возвращает копию указателя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Выпускает право собственности на указатель, устанавливает [CHeapPtrBase::m_pData](#m_pdata) переменной члена null и возвращает копию указателя.
+Освобождает владение указателем, устанавливает для переменной-члена [чеапптрбасе:: m_pData](#m_pdata) значение NULL и возвращает копию указателя.
 
-## <a name="cheapptrbasefree"></a><a name="free"></a>CHeapPtrBase::Бесплатно
+## <a name="cheapptrbasefree"></a><a name="free"></a> Чеапптрбасе:: Free
 
-Вызовите этот метод, чтобы `CHeapPtrBase`удалить объект, на который указывает .
+Вызовите этот метод, чтобы удалить объект, на который указывает `CHeapPtrBase` .
 
 ```cpp
 void Free() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Объект, на который `CHeapPtrBase` указывает сяроб, освобождается, и переменная [CHeapPtrBase::m_pData](#m_pdata) переменная члена установлена null.
+Объект, на который указывает, `CHeapPtrBase` освобождается, и переменной-члену [чеапптрбасе:: m_pData](#m_pdata) присваивается значение null.
 
-## <a name="cheapptrbasem_pdata"></a><a name="m_pdata"></a>CHeapPtrBase::m_pData
+## <a name="cheapptrbasem_pdata"></a><a name="m_pdata"></a> Чеапптрбасе:: m_pData
 
-Переменная данных указателя.
+Переменная члена данных указателя.
 
 ```
 T* m_pData;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Эта переменная члена содержит информацию указателя.
+Эта переменная члена содержит сведения об указателе.
 
-## <a name="cheapptrbaseoperator-amp"></a><a name="operator_amp"></a>CHeapPtrBase::оператор&amp;
+## <a name="cheapptrbaseoperator-amp"></a><a name="operator_amp"></a> Чеапптрбасе:: operator &amp;
 
 Оператора &.
 
@@ -184,11 +185,11 @@ T** operator&() throw();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает адрес объекта, на который `CHeapPtrBase` указывает объект.
+Возвращает адрес объекта, на который указывает `CHeapPtrBase` объект.
 
-## <a name="cheapptrbaseoperator--gt"></a><a name="operator_ptr"></a>CHeapPtrBase:оператор -&gt;
+## <a name="cheapptrbaseoperator--gt"></a><a name="operator_ptr"></a> Чеапптрбасе:: operator —&gt;
 
-Оператор указателя на участника.
+Оператор указателя на член.
 
 ```
 T* operator->() const throw();
@@ -196,27 +197,27 @@ T* operator->() const throw();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает значение переменной [CHeapPtrBase::m_pData](#m_pdata) переменной.
+Возвращает значение переменной члена [чеапптрбасе:: m_pData](#m_pdata) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте этот оператор для вызова метода `CHeapPtrBase` в классе, на который указывает объект. В сборках отладки произойдет `CHeapPtrBase` сбой утверждения, если точки NULL.
+Этот оператор используется для вызова метода в классе, на который указывает `CHeapPtrBase` объект. В отладочных сборках произойдет сбой утверждения, если `CHeapPtrBase` указывает на значение null.
 
-## <a name="cheapptrbaseoperator-t"></a><a name="operator_t_star"></a>CHeapPtrBase:Оператор ТЗ
+## <a name="cheapptrbaseoperator-t"></a><a name="operator_t_star"></a> Чеапптрбасе:: operator T *
 
-Оператор актерского состава.
+Оператор CAST.
 
 ```
 operator T*() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Возвращает [CHeapPtrBase::m_pData](#m_pdata).
+Возвращает [чеапптрбасе:: m_pData](#m_pdata).
 
-## <a name="cheapptrbasereallocatebytes"></a><a name="reallocatebytes"></a>CHeapPtrBase:ReallocateBytes
+## <a name="cheapptrbasereallocatebytes"></a><a name="reallocatebytes"></a> Чеапптрбасе:: Реаллокатебитес
 
-Вызовите этот метод для перераспределения памяти.
+Вызовите этот метод, чтобы перераспределить память.
 
 ```
 bool ReallocateBytes(size_t nBytes) throw();
@@ -224,15 +225,15 @@ bool ReallocateBytes(size_t nBytes) throw();
 
 ### <a name="parameters"></a>Параметры
 
-*nБайт*<br/>
-Новый объем памяти, чтобы выделить, в байтах.
+*nBytes*<br/>
+Новый объем памяти, выделяемый в байтах.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает верно, если память успешно выделена, ложнов в противном случае.
+Возвращает значение true, если память успешно выделена, и false в противном случае.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс CHeapPtr](../../atl/reference/cheapptr-class.md)<br/>
-[Класс CComHeapPtr](../../atl/reference/ccomheapptr-class.md)<br/>
+[Класс Чеапптр](../../atl/reference/cheapptr-class.md)<br/>
+[Класс Ккомхеапптр](../../atl/reference/ccomheapptr-class.md)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)

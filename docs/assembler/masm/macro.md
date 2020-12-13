@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: макрос'
 title: MACRO
 ms.date: 12/16/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - MACRO directive
 ms.assetid: 89434f7c-bc2c-4e91-8940-fe2db8785233
-ms.openlocfilehash: 8eb0afdf73270c3e741f43b2e1fba02fe965846c
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 5410357e76d28cddd54f3c90a34d3e85b8629143
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076139"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97129744"
 ---
 # <a name="macro"></a>MACRO
 
@@ -19,19 +20,19 @@ ms.locfileid: "80076139"
 
 ## <a name="syntax"></a>Синтаксис
 
-> *имя***макроса** ⟦*параметр* ⟦ **: req** | : =*default* | *args* **: VARARG**⟧... ⟧\
+> *имя***макроса** ⟦*параметр* ⟦**: req** | : =*аргументы по умолчанию*  |   **: VARARG**⟧... ⟧\  
 > *инструкции*\
 ⟦**Goto** :*макролабелид*⟧ \
 > ⟦**Екситм**⟧ \
 > **Ендм** ⟦*значение*⟧
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Функция-макрос возвращает *значение* в вызывающую инструкцию.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по директивам](directives-reference.md)\
-[GoTo (MASM)](goto-masm.md)\
-[Ендм](endm.md)\
+[GOTO (MASM)](goto-masm.md)\
+[ендм](endm.md)\
 [Грамматика MASM BNF](masm-bnf-grammar.md)

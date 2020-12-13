@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения:. BREAK (32-разрядный MASM)
 title: .BREAK
 ms.date: 11/05/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - .BREAK directive
 ms.assetid: 4f55dfce-ff41-4a68-9423-b0077dfc9206
-ms.openlocfilehash: 3096aaf827eecb4e297e5a1d04f5e982294053de
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 93da3c282ea2840ccbe8fda01e6c36e5fe882679
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75314137"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132305"
 ---
 # <a name="break-32-bit-masm"></a>. BREAK (32-разрядный MASM)
 
@@ -19,9 +20,9 @@ ms.locfileid: "75314137"
 
 ## <a name="syntax"></a>Синтаксис
 
-> **. Прервать** ⟦ **.**  *Условие*if ⟧
+> **. Прервать** ⟦**.** *Условие* if ⟧
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по директивам](directives-reference.md)\
 [Грамматика MASM BNF](masm-bnf-grammar.md)

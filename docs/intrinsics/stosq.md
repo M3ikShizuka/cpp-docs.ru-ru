@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __stosq'
 title: __stosq
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - stosq instruction
 - __stosq intrinsic
 ms.assetid: 3ea28297-4369-4c2d-bf0c-91fa539ce209
-ms.openlocfilehash: 8b347d595da4cdbf1fefb6244940e262981671e9
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 5fce587c163da18679750c20ec697c489ecf5d90
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219954"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97143706"
 ---
 # <a name="__stosq"></a>__stosq
 
 **Блок, относящийся только к системам Microsoft**
 
-Создает инструкцию строки хранения (`rep stosq`).
+Создает инструкцию строки хранения ( `rep stosq` ).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,7 +37,7 @@ void __stosb(
 *Местоназначение*\
 заполняет Назначение операции.
 
-*Data*\
+*Данные*\
 окне Данные для хранения.
 
 *Расчета*\
@@ -44,13 +45,13 @@ void __stosb(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__stosq`|AMD64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 В результате *данные* куадворд записываются в блок *Count* куадвордс в *целевой* строке.
 

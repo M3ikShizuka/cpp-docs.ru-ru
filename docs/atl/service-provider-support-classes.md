@@ -1,23 +1,24 @@
 ---
-title: Классы для поддержки поставщиков службы (ATL)
+description: 'Дополнительные сведения: классы поддержки поставщиков услуг'
+title: Классы поддержки поставщиков услуг (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - service provider support classes
 ms.assetid: 190f598e-fb32-4d37-adf1-21de395b04d9
-ms.openlocfilehash: 96207453aef02bb3999c0a049c2ad46ca07b0fe2
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: d89300bab17ccf0769acc4190fee81c4c6855ece
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64342039"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138532"
 ---
-# <a name="service-provider-support-classes"></a>Классы поддержки поставщика службы
+# <a name="service-provider-support-classes"></a>Классы поддержки поставщиков услуг
 
 Следующий класс обеспечивает поддержку для поставщиков услуг:
 
-- [IServiceProviderImpl](../atl/reference/iserviceproviderimpl-class.md) находит службу, указанного по его идентификатору GUID и возвращает указатель интерфейса для запрошенного интерфейса в службе.
+- [Исервицепровидеримпл](../atl/reference/iserviceproviderimpl-class.md) Находит службу, указанную по ее идентификатору GUID, и возвращает указатель интерфейса для запрошенного интерфейса службы.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Общие сведения о классе](../atl/atl-class-overview.md)
+[Общие сведения о классах](../atl/atl-class-overview.md)

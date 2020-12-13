@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о хранилище данных
 title: DW
 ms.date: 12/17/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - DW directive
 ms.assetid: 451d0e24-b65b-4cbb-b81d-ea27680feaf3
-ms.openlocfilehash: 70c09d77f7acf8bbd06ad071612ecdaf66e0488f
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: 06b6cb7a67abca98680558bd4b4152ba84315afb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75317426"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97130721"
 ---
 # <a name="dw"></a>DW
 
@@ -19,10 +20,10 @@ ms.locfileid: "75317426"
 
 ## <a name="syntax"></a>Синтаксис
 
-> ⟦*имя*⟧. *инициализатор* **хранилища** ⟦ __,__ *инициализатор* ... ⟧
+> ⟦*имя*⟧. *инициализатор* **хранилища** ⟦__,__ *инициализатор* ... ⟧
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по директивам](directives-reference.md)\
-[Технологий](sword.md)\
+[ТЕХНОЛОГИЙ](sword.md)\
 [Грамматика MASM BNF](masm-bnf-grammar.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l'
 title: _mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l
 ms.date: 4/2/2020
 api_name:
@@ -50,12 +51,12 @@ helpviewer_keywords:
 - _totlower function
 - mbctoupper function
 ms.assetid: 787fab71-3224-4ed7-bc93-4dcd8023fc54
-ms.openlocfilehash: 3a3adb32b8620a49110e887788e9f3c4893b6a1a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: abf09a7a96fc1df9f34f3263638c68da4f9991d1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914289"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146449"
 ---
 # <a name="_mbctolower-_mbctolower_l-_mbctoupper-_mbctoupper_l"></a>_mbctolower, _mbctolower_l, _mbctoupper, _mbctoupper_l
 
@@ -85,7 +86,7 @@ unsigned int _mbctoupper_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Многобайтовый символ для преобразования.
 
 *locale*<br/>
@@ -95,7 +96,7 @@ unsigned int _mbctoupper_l(
 
 Каждая из этих функций возвращает преобразованный символ *c*, если это возможно. В противном случае возвращается символ *c* без изменений.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функции проверяют символ *c* и, если это возможно, применяют одно из следующих преобразований.
 

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения:. Если (32-разрядный MASM)
 title: .IF
 ms.date: 11/05/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - .IF directive
 ms.assetid: dccc7615-8fc7-4829-9f39-0ee405f6c1e3
-ms.openlocfilehash: 6992ec8b151a83b3f9fa920997845c20caf0476d
-ms.sourcegitcommit: 0781c69b22797c41630601a176b9ea541be4f2a3
+ms.openlocfilehash: e6ce9695f90a90665aee1cdaf15167963360fe04
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75317751"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97131681"
 ---
 # <a name="if-32-bit-masm"></a>. Если (32-разрядный MASM)
 
@@ -21,17 +22,17 @@ ms.locfileid: "75317751"
 
 > **. Если** *condition1*\
 > *инструкции*\
-> ⟦ **.\ ELSEIF** *condition2*
+> ⟦**. ELSEIF** *condition2*\
 > *инструкции*⟧ \
-> ⟦ **. ELSE**\
+> ⟦**. ELSE**\
 > *инструкции*⟧ \
-> **.ENDIF**
+> **. ENDIF**
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
 Если [. В ПРОТИВном](dot-else.md) случае его операторы выполняются, если исходное условие было ложным. Обратите внимание, что условия оцениваются во время выполнения.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по директивам](directives-reference.md)\
 [Грамматика MASM BNF](masm-bnf-grammar.md)

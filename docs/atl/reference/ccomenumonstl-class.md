@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ккоменумонстл Class'
 title: Класс Ккоменумонстл
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComEnumOnSTL class
 ms.assetid: befe1a44-7a00-4f28-9a2e-cc0fa526643c
-ms.openlocfilehash: b0674d64b471318d972d209373e0d74af0fa77f5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1ff73796d7e3eefa76cbecdeb6d997bede2d2be5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226598"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146670"
 ---
 # <a name="ccomenumonstl-class"></a>Класс Ккоменумонстл
 
@@ -47,9 +48,9 @@ CollType>,
 *коллтипе*<br/>
 Класс контейнера стандартной библиотеки C++.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CComEnumOnSTL`Определяет объект перечислителя COM на основе коллекции стандартной библиотеки C++. Этот класс можно использовать самостоятельно или в сочетании с [иколлектиононстлимпл](../../atl/reference/icollectiononstlimpl-class.md). Ниже приведены типичные действия по использованию этого класса. Дополнительные сведения см. в разделе [коллекции и перечислители ATL](../../atl/atl-collections-and-enumerators.md).
+`CComEnumOnSTL` Определяет объект перечислителя COM на основе коллекции стандартной библиотеки C++. Этот класс можно использовать самостоятельно или в сочетании с [иколлектиононстлимпл](../../atl/reference/icollectiononstlimpl-class.md). Ниже приведены типичные действия по использованию этого класса. Дополнительные сведения см. в разделе [коллекции и перечислители ATL](../../atl/atl-collections-and-enumerators.md).
 
 ## <a name="to-use-this-class-with-icollectiononstlimpl"></a>Чтобы использовать этот класс с Иколлектиононстлимпл:
 
@@ -99,7 +100,7 @@ CollType>,
 
 Этот код создает объект **`typedef`** для `CComEnumOnSTL` , который предоставляет вектор из с `CComVariant` помощью `IEnumVariant` интерфейса. `CVariantCollection`Класс просто специализируется `CreateSTLEnumerator` на работе с объектами перечислителя этого типа.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [иенумонстлимпл](../../atl/reference/ienumonstlimpl-class.md)<br/>
 [Пример Атлколлектионс. Демонстрация классов политик Иколлектиононстлимпл, Ккоменумонстл и пользовательских копий](../../overview/visual-cpp-samples.md)<br/>

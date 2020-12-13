@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: присоединение к классу'
 title: Класс join
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - join class
 ms.assetid: d2217119-70a1-40b6-809f-c1c13a571c3f
-ms.openlocfilehash: c65eed8abafe424fa27c5b9a72d3c73b7127b68e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0a160e0a8e12dc9d58c6a9c46dcb99be2ad1999b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219590"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132800"
 ---
 # <a name="join-class"></a>Класс join
 
@@ -42,7 +43,7 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
 Тип полезных данных сообщений, соединяемых и распространяемых блоком.
 
 *_Jtype*<br/>
-Тип `join` блока: `greedy` или`non_greedy`
+Тип `join` блока: `greedy` или `non_greedy`
 
 ## <a name="members"></a>Элементы
 
@@ -66,7 +67,7 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
 |[reserve_message](#reserve_message)|Резервирует сообщение, которое было ранее предложено этим `join` блоком обмена сообщениями. (Переопределяет [source_block:: reserve_message](source-block-class.md#reserve_message).)|
 |[resume_propagation](#resume_propagation)|Возобновляет распространение после освобождения резервирования. (Переопределяет [source_block:: resume_propagation](source-block-class.md#resume_propagation).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [асинхронные блоки сообщений](../../../parallel/concrt/asynchronous-message-blocks.md).
 
@@ -88,7 +89,7 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
 
 **Пространство имен:** параллелизм
 
-## <a name="accept_message"></a><a name="accept_message"></a>accept_message
+## <a name="accept_message"></a><a name="accept_message"></a> accept_message
 
 Принимает сообщение, которое было предложено этим `join` блоком обмена сообщениями, передавая владение вызывающему объекту.
 
@@ -105,7 +106,7 @@ virtual message<_OutputType>* accept_message(runtime_object_identity _MsgId);
 
 Указатель на `message` объект, владельцем которого стал вызывающий объект.
 
-## <a name="consume_message"></a><a name="consume_message"></a>consume_message
+## <a name="consume_message"></a><a name="consume_message"></a> consume_message
 
 Использует сообщение, которое было ранее предложено `join` блоком обмена сообщениями и зарезервировано целевым объектом, передавая владение вызывающему объекту.
 
@@ -122,11 +123,11 @@ virtual message<_OutputType>* consume_message(runtime_object_identity _MsgId);
 
 Указатель на `message` объект, владельцем которого стал вызывающий объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Аналогично `accept` , но всегда предшествует вызову `reserve` .
 
-## <a name="join"></a><a name="ctor"></a>к
+## <a name="join"></a><a name="ctor"></a> к
 
 Создает блок обмена сообщениями `join` .
 
@@ -171,13 +172,13 @@ join(
 *_PScheduleGroup*<br/>
 Объект `ScheduleGroup` , в котором запланирована задача распространения для блока обмена сообщениями `join` . Используемый объект `Scheduler` подразумевается группой расписаний.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Среда выполнения использует планировщик по умолчанию, если вы не указали параметры `_PScheduler` или `_PScheduleGroup` .
 
 Тип `filter_method` — это функтор с сигнатурой, `bool (T const &)` которая вызывается этим `join` блоком обмена сообщениями для определения того, следует ли принимать предложенное сообщение.
 
-## <a name="join"></a><a name="dtor"></a>~ соединение
+## <a name="join"></a><a name="dtor"></a> ~ соединение
 
 Уничтожает `join` блок.
 
@@ -185,7 +186,7 @@ join(
 ~join();
 ```
 
-## <a name="link_target_notification"></a><a name="link_target_notification"></a>link_target_notification
+## <a name="link_target_notification"></a><a name="link_target_notification"></a> link_target_notification
 
 Обратный вызов, уведомляющий о том, что новый целевой объект связан с этим `join` блоком обмена сообщениями.
 
@@ -193,7 +194,7 @@ join(
 virtual void link_target_notification(_Inout_ ITarget<std::vector<T>> *);
 ```
 
-## <a name="propagate_message"></a><a name="propagate_message"></a>propagate_message
+## <a name="propagate_message"></a><a name="propagate_message"></a> propagate_message
 
 Асинхронно передает сообщение из `ISource` блока в этот `join` блок обмена сообщениями. Он вызывается `propagate` методом при вызове из исходного блока.
 
@@ -215,7 +216,7 @@ message_status propagate_message(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-## <a name="propagate_to_any_targets"></a><a name="propagate_to_any_targets"></a>propagate_to_any_targets
+## <a name="propagate_to_any_targets"></a><a name="propagate_to_any_targets"></a> propagate_to_any_targets
 
 Формирует выходное сообщение, содержащее входное сообщение из каждого источника, когда все они распространяют сообщение. Отправляет это выходное сообщение в все целевые объекты.
 
@@ -223,7 +224,7 @@ message_status propagate_message(
 void propagate_to_any_targets(_Inout_opt_ message<_OutputType> *);
 ```
 
-## <a name="release_message"></a><a name="release_message"></a>release_message
+## <a name="release_message"></a><a name="release_message"></a> release_message
 
 Освобождает предыдущее резервирование сообщения.
 
@@ -236,7 +237,7 @@ virtual void release_message(runtime_object_identity _MsgId);
 *_MsgId*<br/>
 `runtime_object_identity` `message` Объект для освобожденного объекта.
 
-## <a name="reserve_message"></a><a name="reserve_message"></a>reserve_message
+## <a name="reserve_message"></a><a name="reserve_message"></a> reserve_message
 
 Резервирует сообщение, которое было ранее предложено этим `join` блоком обмена сообщениями.
 
@@ -253,11 +254,11 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 **`true`** значение, если сообщение было успешно зарезервировано, **`false`** в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 После `reserve` вызова метода, если он возвращает значение **`true`** , `consume` `release` метод или должен быть вызван, чтобы принять или освободить владение сообщением.
 
-## <a name="resume_propagation"></a><a name="resume_propagation"></a>resume_propagation
+## <a name="resume_propagation"></a><a name="resume_propagation"></a> resume_propagation
 
 Возобновляет распространение после освобождения резервирования.
 

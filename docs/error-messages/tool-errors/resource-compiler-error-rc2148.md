@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Ошибка компилятора ресурсов ресурсов RC2148'
 title: Ошибка компилятора ресурсов RC2148
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - RC2148
 ms.assetid: 0290065c-35d3-4815-80c5-40bf7132ae1d
-ms.openlocfilehash: e2394dbb93dd2d203d65760d805e09f60a692ba4
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 10d20fe175005794fd10a84d2817024dea7e630c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80191331"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97133423"
 ---
 # <a name="resource-compiler-error-rc2148"></a>Ошибка компилятора ресурсов RC2148
 
@@ -21,6 +22,6 @@ ms.locfileid: "80191331"
 
 Оператор **LANGUAGE** должен использовать следующий синтаксис:
 
-**LANGUAGE** *Primary_language_ID*языка,*secondary_language_ID*
+**LANGUAGE** *ИД_основного_языка*,*ИД_дополнительного_языка*
 
 Допустимые идентификаторы языков определяются как **SUBLANG_** константы в файле WINNT. h.

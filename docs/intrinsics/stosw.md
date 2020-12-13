@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __stosw'
 title: __stosw
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - __stosw intrinsic
 - rep stosw instruction
 ms.assetid: 7620fd1d-dba5-40e3-8e07-01aa68895133
-ms.openlocfilehash: 5fd29bbf1aebba115670fc1bc35e0d8cbe29c7ad
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 2995276fb255858d6c3dd9f438487726e75fdf1e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219926"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97143693"
 ---
 # <a name="__stosw"></a>__stosw
 
 **Блок, относящийся только к системам Microsoft**
 
-Создает инструкцию строки хранения (`rep stosw`).
+Создает инструкцию строки хранения ( `rep stosw` ).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,7 +37,7 @@ void __stosw(
 *Местоназначение*\
 заполняет Назначение операции.
 
-*Data*\
+*Данные*\
 окне Данные для хранения.
 
 *Расчета*\
@@ -44,15 +45,15 @@ void __stosw(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__stosw`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-В результате *данные* слова записываются в блок количества слов в *целевой* строке.
+В результате *данные* слова записываются в блок *количества слов в* *целевой* строке.
 
 Эта процедура доступна только как встроенная функция.
 
