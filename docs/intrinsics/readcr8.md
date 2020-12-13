@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __readcr8'
 title: __readcr8
 ms.date: 09/02/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - __readcr8 intrinsic
 ms.assetid: fce16953-87ff-4fbe-8081-7962b97ae46c
-ms.openlocfilehash: 525775fde4cb96cecfcabef878780d5a2aa6743a
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 1961f00575956c8377131cd0871e59f79db5dc1d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70221245"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341026"
 ---
 # <a name="__readcr8"></a>__readcr8
 
@@ -31,13 +32,13 @@ unsigned __int64 __readcr8(void);
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__readcr8`|X64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Встроенная функция доступна только в режиме ядра, и подпрограммы доступны только в качестве встроенных.
 

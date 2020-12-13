@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l'
 title: _vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l
 ms.date: 11/04/2016
 api_name:
@@ -45,12 +46,12 @@ helpviewer_keywords:
 - vscprintf function
 - vscprintf_l function
 ms.assetid: 1bc67d3d-21d5-49c9-ac8d-69e26b16a3c3
-ms.openlocfilehash: e7448c7f3313165009de15bbdf4c1bd9baaba3d1
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 434a444b7b2c8a552c148c7c369a63b0c4a9acf2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70945373"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342170"
 ---
 # <a name="_vscprintf-_vscprintf_l-_vscwprintf-_vscwprintf_l"></a>_vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l
 
@@ -100,14 +101,14 @@ int _vscwprintf_l(
 
 Если параметр *Format* является пустым указателем, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, функции возвращают значение-1 и **задают значение** **еинвал**.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Каждый *аргумент* (при его наличии) преобразуется в соответствии с соответствующей спецификацией формата в *формате*. Формат состоит из обычных символов и имеет ту же форму и функциональные возможности, что и аргумент *format* для [printf](printf-printf-l-wprintf-wprintf-l.md).
+Каждый *аргумент* (при его наличии) преобразуется в соответствии с соответствующей спецификацией формата в *формате*. Формат состоит из обычных символов и имеет ту же форму и функцию, что и аргумент *Format* для [printf](printf-printf-l-wprintf-wprintf-l.md).
 
 > [!IMPORTANT]
 > Убедитесь, что если *Формат* является определяемой пользователем строкой, он завершается нулем и имеет правильное число и тип параметров. Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Подпрограмма TCHAR.H|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -121,13 +122,13 @@ int _vscwprintf_l(
 |**_vscprintf**, **_vscprintf_l**|\<stdio.h>|
 |**_vscwprintf**, **_vscwprintf_l**|\<stdio.h> или \<wchar.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
 См. пример для функции [vsprintf](vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Потоковый ввод-вывод](../../c-runtime-library/stream-i-o.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>

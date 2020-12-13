@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: предложения OpenMP'
 title: Предложения OpenMP
 ms.date: 03/20/2019
 f1_keywords:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - schedule OpenMP clause
 - shared OpenMP clause
 ms.assetid: 806e7d8f-b204-4e4c-a12c-273ab540a7ca
-ms.openlocfilehash: 495f77003fa43922d49f2fc5203076cbf927f86f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3bdcb496238b2f8acef85819c43348c095293287
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505937"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342417"
 ---
 # <a name="openmp-clauses"></a>Предложения OpenMP
 
@@ -49,7 +50,7 @@ Visual C++ поддерживает следующие предложения Op
 
 |Предложение|Описание|
 |------|-----------|
-|[if](#if-openmp) (если);|Указывает, должен ли цикл выполняться параллельно или последовательно.|
+|[if](#if-openmp)|Указывает, должен ли цикл выполняться параллельно или последовательно.|
 |[num_threads](#num-threads)|Задает число потоков в команде потока.|
 |[упорядоченный](#ordered-openmp-clauses)|Требуется для параллельной инструкции [for](openmp-directives.md#for-openmp) , если [упорядоченная](openmp-directives.md#ordered-openmp-directives) директива должна использоваться в цикле.|
 |[Расписание](#schedule)|Применяется к директиве [for](openmp-directives.md#for-openmp) .|
@@ -81,7 +82,7 @@ copyin(var)
 *var*<br/>
 `threadprivate`Переменная, которая будет инициализирована значением переменной в главном потоке, как оно существует до параллельной конструкции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `copyin` применяется к следующим директивам:
 
@@ -93,7 +94,7 @@ copyin(var)
 
 ### <a name="example"></a>Пример
 
-Пример [threadprivate](openmp-directives.md#threadprivate) использования см. в разделе threadprivate `copyin` .
+Пример [](openmp-directives.md#threadprivate) использования см. в разделе threadprivate `copyin` .
 
 ## <a name="copyprivate"></a><a name="copyprivate"></a> copyprivate
 
@@ -108,7 +109,7 @@ copyprivate(var)
 *var*<br/>
 Одна или несколько переменных для совместного использования. Если указано более одной переменной, имена переменных следует разделять запятыми.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `copyprivate` применяется к директиве [Single](openmp-directives.md#single) .
 
@@ -188,7 +189,7 @@ Value = 1.008000, thread = 1
 default(shared | none)
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `shared`значение, действующее, если `default` предложение не указано, означает, что любая переменная в параллельной области будет обрабатываться так, как если бы она была указана с предложением [Shared](#shared-openmp) . `none` означает, что любая переменная, используемая в параллельной области, не относящейся к предложению [Private](#private-openmp), [Shared](#shared-openmp), [reduction](#reduction), [фирстпривате](#firstprivate)или [lastprivate](#lastprivate) , вызовет ошибку компилятора.
 
@@ -202,7 +203,7 @@ default(shared | none)
 
 ### <a name="example"></a>Пример
 
-Пример [private](#private-openmp) использования см. в разделе Private `default` .
+Пример [](#private-openmp) использования см. в разделе Private `default` .
 
 ## <a name="firstprivate"></a><a name="firstprivate"></a> фирстпривате
 
@@ -217,7 +218,7 @@ firstprivate(var)
 *var*<br/>
 Переменная для создания экземпляров в каждом потоке, которая будет инициализирована значением переменной, так как она существует до параллельной конструкции. Если указано более одной переменной, имена переменных следует разделять запятыми.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `firstprivate` применяется к следующим директивам:
 
@@ -245,7 +246,7 @@ if(expression)
 *expression*<br/>
 Целочисленное выражение, которое, если оно имеет значение true (отличное от нуля), приводит к параллельному выполнению кода в параллельной области. Если результат вычисления выражения равен false (нулю), то параллельная область выполняется в последовательном (отдельном потоке).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `if` применяется к следующим директивам:
 
@@ -304,7 +305,7 @@ lastprivate(var)
 *var*<br/>
 Переменная, которая установлена равна закрытой версии любого потока, выполняет окончательную итерацию (конструкцию цикла for) или последний раздел (#pragma разделов).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `lastprivate` применяется к следующим директивам:
 
@@ -325,7 +326,7 @@ lastprivate(var)
 nowait
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `nowait` применяется к следующим директивам:
 
@@ -395,7 +396,7 @@ num_threads(num)
 *num*<br/>
 Число потоков
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `num_threads`Предложение имеет те же функциональные возможности, что и функция [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) .
 
@@ -419,7 +420,7 @@ num_threads(num)
 ordered
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `ordered` применяется к директиве [for](openmp-directives.md#for-openmp) .
 
@@ -442,7 +443,7 @@ private(var)
 *var*<br/>
 Переменная, в которой имеются экземпляры в каждом потоке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `private` применяется к следующим директивам:
 
@@ -647,7 +648,7 @@ reduction(operation:var)
 *var*<br/>
 Одна или несколько переменных, для которых необходимо выполнить скалярное сокращение. Если указано более одной переменной, имена переменных следует разделять запятыми.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `reduction` применяется к следующим директивам:
 
@@ -786,7 +787,7 @@ schedule(type[,size])
 *size*<br/>
 Используемых Задает размер итераций. *Размер* должен быть целым числом. Недопустимо, если *тип* — `runtime` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [2.4.1 for конструировать](../2-directives.md#241-for-construct).
 
@@ -917,7 +918,7 @@ shared(var)
 *var*<br/>
 Одна или несколько переменных для совместного использования. Если указано более одной переменной, имена переменных следует разделять запятыми.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Другим способом совместного использования переменных в потоках является предложение [copyprivate](#copyprivate) .
 
@@ -931,4 +932,4 @@ shared(var)
 
 ### <a name="example"></a>Пример
 
-Пример [private](#private-openmp) использования см. в разделе Private `shared` .
+Пример [](#private-openmp) использования см. в разделе Private `shared` .

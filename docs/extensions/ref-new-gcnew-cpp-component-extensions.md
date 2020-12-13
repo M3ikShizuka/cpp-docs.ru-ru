@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: ref new, gcnew (C++/CLI и C++/CX)'
 title: ref new, gcnew (C++/CLI и C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - ref new keyword (C++)
 - gcnew keyword [C++]
 ms.assetid: 388a62da-c2df-4a94-a9a2-205b53e577da
-ms.openlocfilehash: f7269a62d7899df4eb89f6dd9487310c0fda0b4d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bfe93d9d3966f8796c0fc0ab2cdf7b80115b3d33
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181815"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341065"
 ---
 # <a name="ref-new-gcnew--ccli-and-ccx"></a>ref new, gcnew (C++/CLI и C++/CX)
 

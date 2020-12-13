@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции End
 title: Функция end
 ms.date: 01/22/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - end Function
 ms.assetid: fb837bff-fc76-4bae-9096-facf0e03041c
-ms.openlocfilehash: c46c601be2b2ed78cf79641a7fcf5324e615a771
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: e29595e7eb403af85abdbfa18782adf1c33c308e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62375812"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341975"
 ---
 # <a name="end-function"></a>Функция end
 
@@ -44,16 +45,16 @@ template <typename T>
 Параметр типа шаблона.
 
 *v*<br/>
-Коллекция вектор\<T > или VectorView\<T > объекты, к которым подключены IVector\<T >, или IVectorView\<T > интерфейс.
+Коллекция \<T> объектов Vector или VectorView \<T> , доступ к которым осуществляется с помощью интерфейса IVector \<T> или IVectorView \<T> .
 
 *i*<br/>
-Коллекция произвольных среды выполнения Windows объекты, которым осуществляется через IIterable\<T > интерфейс.
+Коллекция объектов арбитрати среда выполнения Windows, доступ к которым осуществляется с помощью \<T> интерфейса иитерабле.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Итератор, который указывает на позицию после конечного элемента коллекции.
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Комментарии
 
 Первые две функции шаблона возвращают итераторы, а третья возвращает итератор ввода.
 
@@ -63,8 +64,8 @@ template <typename T>
 
 **Заголовок:** collection.h
 
-**Пространство имен:** Windows::Foundation:: Collections
+**Пространство имен:** Windows::Foundation::Collections
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Windows::Foundation::Collections](../cppcx/windows-foundation-collections-namespace-c-cx.md)
+[Пространство имен Windows:: Foundation:: Collections](../cppcx/windows-foundation-collections-namespace-c-cx.md)

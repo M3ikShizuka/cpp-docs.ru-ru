@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о коллекциях (C++/CX)
 title: Коллекции (C++/CX)
 ms.date: 11/19/2018
 ms.assetid: 914da30b-aac5-4cd7-9da3-a5ac08cdd72c
-ms.openlocfilehash: 84c6ecad5ffb4920972faf5aa564103ec1f5b5df
-ms.sourcegitcommit: 65fead53d56d531d71be42216056aca5f44def11
+ms.openlocfilehash: 4843441b5d5091bea36ff8c74bd84bddd5f7fa4d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88610950"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342053"
 ---
 # <a name="collections-ccx"></a>Коллекции (C++/CX)
 
@@ -57,7 +58,7 @@ ms.locfileid: "88610950"
 
 ## <a name="vectorproxy-elements"></a>Элементы VectorProxy
 
-[Platform:: Collections:: VectorIterator](../cppcx/platform-collections-vectoriterator-class.md) and [Platform:: Collections:: VectorViewIterator](../cppcx/platform-collections-vectorviewiterator-class.md) позволяют использовать `range for` циклы и алгоритмы, такие как [std:: Sort](../standard-library/algorithm-functions.md#sort) с контейнером [IVector \<T> ](/uwp/api/windows.foundation.collections.ivector-1) . Однако невозможно получить доступ к элементам `IVector` через отмену ссылки на указатель C++; доступ к ним можно получить только с использованием методов [GetAt](/uwp/api/windows.foundation.collections.ivector-1.getat) и [SetAt](/uwp/api/windows.foundation.collections.ivector-1.setat) . Таким образом, эти итераторы используют прокси-классы `Platform::Details::VectorProxy<T>` и `Platform::Details::ArrowProxy<T>` для предоставления доступа к отдельным элементам с __\*__ помощью __->__ операторов,, и __ \[ ]__ , как это требуется для стандартной библиотеки. Строго говоря, при использовании `IVector<Person^> vec`типом `*begin(vec)` является `VectorProxy<Person^>`. Однако прокси-объект практически всегда прозрачен для кода. Эти прокси-объекты не документируются, поскольку предназначены исключительно для внутреннего пользования итераторами, однако полезно иметь представление о самом механизме работы.
+[Platform:: Collections:: VectorIterator](../cppcx/platform-collections-vectoriterator-class.md) and [Platform:: Collections:: VectorViewIterator](../cppcx/platform-collections-vectorviewiterator-class.md) позволяют использовать `range for` циклы и алгоритмы, такие как [std:: Sort](../standard-library/algorithm-functions.md#sort) с контейнером [IVector \<T> ](/uwp/api/windows.foundation.collections.ivector-1) . Однако невозможно получить доступ к элементам `IVector` через отмену ссылки на указатель C++; доступ к ним можно получить только с использованием методов [GetAt](/uwp/api/windows.foundation.collections.ivector-1.getat) и [SetAt](/uwp/api/windows.foundation.collections.ivector-1.setat) . Таким образом, эти итераторы используют прокси-классы `Platform::Details::VectorProxy<T>` и `Platform::Details::ArrowProxy<T>` для предоставления доступа к отдельным элементам с __\*__ помощью __->__ операторов,, и __\[ ]__ , как это требуется для стандартной библиотеки. Строго говоря, при использовании `IVector<Person^> vec`типом `*begin(vec)` является `VectorProxy<Person^>`. Однако прокси-объект практически всегда прозрачен для кода. Эти прокси-объекты не документируются, поскольку предназначены исключительно для внутреннего пользования итераторами, однако полезно иметь представление о самом механизме работы.
 
 При использовании цикла `range for` с контейнерами `IVector` используйте `auto&&` для включения переменной итератора для правильной привязки к элементам `VectorProxy` . Если используется **`auto`** или `auto&` , предупреждение компилятора C4239 вызывается и `VectoryProxy` упоминается в тексте предупреждения.
 
@@ -143,7 +144,7 @@ void FindButton(UIElementCollection^ col)
 
 Делегаты [Windows::Foundation::Collections::VectorChangedEventHandler](/uwp/api/windows.foundation.collections.vectorchangedeventhandler-1) и [Windows::Foundation::Collections::MapChangedEventHandler](/uwp/api/windows.foundation.collections.mapchangedeventhandler-2) определяют сигнатуры для обработчиков событий для событий изменения коллекции. Открытый класс перечисления [Windows::Foundation::Collections::CollectionChange](/uwp/api/windows.foundation.collections.collectionchange) и ссылочные классы `Platform::Collection::Details::MapChangedEventArgs` и `Platform::Collections::Details::VectorChangedEventArgs` хранят аргументы события, по которым можно определить его причину. `*EventArgs`Типы определяются в `Details` пространстве имен, так как их не нужно создавать и использовать явным образом при использовании `Map` или `Vector` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Система типов](../cppcx/type-system-c-cx.md)<br/>
 [Справочник по языку C++/CX](../cppcx/visual-c-language-reference-c-cx.md)<br/>

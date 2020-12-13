@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l'
 title: _vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l
 ms.date: 11/04/2016
 api_name:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - _vsprintf_p function
 - _vstprintf_p_l function
 ms.assetid: 00821c0d-9fee-4d8a-836c-0669cfb11317
-ms.openlocfilehash: e684bebc0a997e25963366b64fbab6d4f958e8eb
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 02277b9f69aaecfe378bf9e6fd4f004feb741c79
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70945236"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342144"
 ---
 # <a name="_vsprintf_p-_vsprintf_p_l-_vswprintf_p-_vswprintf_p_l"></a>_vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l
 
@@ -87,7 +88,7 @@ int _vswprintf_p_l(
 
 ### <a name="parameters"></a>Параметры
 
-*buffer*<br/>
+*двойной*<br/>
 Место хранения выходных данных.
 
 *сизеинбитес*<br/>
@@ -109,7 +110,7 @@ int _vswprintf_p_l(
 
 **_vsprintf_p** и **_vswprintf_p** возвращают число записанных символов, не включая завершающий нуль-символ, или отрицательное значение, если возникает ошибка вывода.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Каждая из этих функций принимает указатель на список аргументов, а затем форматирует и записывает указанные данные в память, на которую указывает *буфер*.
 
@@ -119,7 +120,7 @@ int _vswprintf_p_l(
 
 Если *буфер* или параметры *формата* являются **пустыми** указателями, если параметр Count равен нулю или строка формата содержит недопустимые символы форматирования, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, функции возвращают значение-1 и **задают значение** **еинвал**.
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Подпрограмма TCHAR.H|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -131,11 +132,11 @@ int _vswprintf_p_l(
 |Подпрограмма|Обязательный заголовок|Необязательные заголовки|
 |-------------|---------------------|----------------------|
 |**_vsprintf_p**, **_vsprintf_p_l**|\<stdio.h> и \<stdarg.h>|\<varargs.h>*|
-|**_vswprintf_p**, **_vswprintf_p_l**|\<stdio.h> или \<wchar.h> и \<stdarg.h>|\<varargs.h>*|
+|**_vswprintf_p**, **_vswprintf_p_l**|\<stdio.h> или \<wchar.h> , и \<stdarg.h>|\<varargs.h>*|
 
 \* Требуется для совместимости с UNIX V.
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -186,12 +187,12 @@ int main( void )
 This is a string
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Потоковый ввод-вывод](../../c-runtime-library/stream-i-o.md)<br/>
 [Функции vprintf](../../c-runtime-library/vprintf-functions.md)<br/>
-[Синтаксис описания формата: функции printf и wprintf](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
+[Синтаксис спецификации формата: функции printf и wprintf](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)<br/>

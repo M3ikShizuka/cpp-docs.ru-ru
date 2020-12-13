@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l'
 title: vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
 ms.date: 09/03/2019
 api_name:
@@ -49,12 +50,12 @@ helpviewer_keywords:
 - vsprintf function
 - _vstprintf function
 ms.assetid: b8ef1c0d-58f9-4a18-841a-f1a989e1c29b
-ms.openlocfilehash: 9efb30428a146ec72c48d68ec411b21ca5bfef79
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: dd7e06817049f26e80c4be9f1d3f3df40444feaf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70945344"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342118"
 ---
 # <a name="vsprintf-_vsprintf_l-vswprintf-_vswprintf_l-__vswprintf_l"></a>vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
 
@@ -140,24 +141,24 @@ int _vswprintf_l(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-**vsprintf** и **vswprintf** возвращают число записанных символов, не включая завершающий нуль-символ, или отрицательное значение, если возникает ошибка вывода. Если *buffer* или *Format* является пустым указателем, эти функции вызывают обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции возвращают-1 **и устанавливают для** **еинвал**значение.
+**vsprintf** и **vswprintf** возвращают число записанных символов, не включая завершающий нуль-символ, или отрицательное значение, если возникает ошибка вывода. Если *buffer* или *Format* является пустым указателем, эти функции вызывают обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции возвращают-1 **и устанавливают для** **еинвал** значение.
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Каждая из этих функций принимает указатель на список аргументов, а затем форматирует и записывает указанные данные в память, на которую указывает *буфер*.
 
 Версии этих функций с суффиксом **_l** идентичны за исключением того, что они используют переданный параметр языкового стандарта вместо локали текущего потока.
 
 > [!IMPORTANT]
-> С помощью **vsprintf**невозможно ограничить число записанных символов. Это означает, что код, использующий эту функцию, подвержен переполнению буфера. Используйте вместо нее [_vsnprintf](vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) или вызывайте [_vscprintf](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md), чтобы определить требуемый размер буфера. Кроме того, убедитесь, что *Формат* не является определяемой пользователем строкой. Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
+> С помощью **vsprintf** невозможно ограничить число записанных символов. Это означает, что код, использующий эту функцию, подвержен переполнению буфера. Используйте вместо нее [_vsnprintf](vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) или вызывайте [_vscprintf](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md), чтобы определить требуемый размер буфера. Кроме того, убедитесь, что *Формат* не является определяемой пользователем строкой. Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-**vswprintf** соответствует стандарту ISO C, для которого требуется второй параметр, *Count*, типа **size_t**. Чтобы принудительно использовать старое нестандартное поведение, определите **_CRT_NON_CONFORMING_SWPRINTFS**. Старое поведение может не быть в следующей версии, поэтому необходимо изменить код, чтобы использовать новое согласованное поведение.
+**vswprintf** соответствует стандарту ISO C, для которого требуется второй параметр, *count*, типа **size_t**. Чтобы принудительно использовать старое нестандартное поведение, определите **_CRT_NON_CONFORMING_SWPRINTFS**. Старое поведение может не быть в следующей версии, поэтому необходимо изменить код, чтобы использовать новое согласованное поведение.
 
-В C++ эти функции имеют шаблонные перегрузки, которые вызывают более новые и безопасные аналоги этих функций. Дополнительные сведения см. в разделе [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+В C++ эти функции имеют шаблонные перегрузки, которые вызывают более новые и безопасные аналоги этих функций. Дополнительные сведения см. в разделе [Безопасные перегрузки шаблонов](../../c-runtime-library/secure-template-overloads.md).
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Подпрограмма TCHAR.H|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -169,11 +170,11 @@ int _vswprintf_l(
 |Подпрограмма|Обязательный заголовок|Необязательные заголовки|
 |-------------|---------------------|----------------------|
 |**vsprintf**, **_vsprintf_l**|\<stdio.h> и \<stdarg.h>|\<varargs.h>*|
-|**vswprintf**, **_vswprintf_l**|\<stdio.h> или \<wchar.h> и \<stdarg.h>|\<varargs.h>*|
+|**vswprintf**, **_vswprintf_l**|\<stdio.h> или \<wchar.h> , и \<stdarg.h>|\<varargs.h>*|
 
 \* Требуется для совместимости с UNIX V.
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -224,12 +225,12 @@ int main( void )
 This is a string
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Потоковый ввод-вывод](../../c-runtime-library/stream-i-o.md)\
 [Функции vprintf](../../c-runtime-library/vprintf-functions.md)\
-[Синтаксис описания формата: функции printf и wprintf](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)\
+[Синтаксис спецификации формата: функции printf и wprintf](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)\
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)\
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)\
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)\
 [va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)

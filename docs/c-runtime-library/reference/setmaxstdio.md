@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _setmaxstdio'
 title: _setmaxstdio
 ms.date: 05/21/2019
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - setmaxstdio function
 - open files, maximum
 ms.assetid: 9e966875-9ff5-47c4-9b5f-e79e83b70249
-ms.openlocfilehash: 620213b4df9ea555189a1403b3c9e83b55cad6c6
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: ef34c3cf69f9664e5af593e4f0fa1e1046faff9d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70948225"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342235"
 ---
 # <a name="_setmaxstdio"></a>_setmaxstdio
 
@@ -60,7 +61,7 @@ int _setmaxstdio(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Функция **_setmaxstdio** изменяет максимальное значение числа файлов, которые могут быть одновременно открыты на уровне потокового ввода-вывода.
 
@@ -77,12 +78,12 @@ int _setmaxstdio(
 |-------------|---------------------|
 |**_setmaxstdio**|\<stdio.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
 Пример использования **_setmaxstdio** см. в разделе [_getmaxstdio](getmaxstdio.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Потоковый ввод-вывод](../../c-runtime-library/stream-i-o.md)<br/>

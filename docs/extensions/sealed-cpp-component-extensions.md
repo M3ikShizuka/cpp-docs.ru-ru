@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Sealed (C++/CLI и C++/CX)'
 title: sealed (C++/CLI и C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - sealed keyword [C++]
 ms.assetid: 3d0d688a-41aa-45f5-a25a-65c44206521e
-ms.openlocfilehash: ab5d5b32ceb87a3b1ccf08d170889dd4825f6c17
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a1ec201f9b03d1f2cf4d11eb71ba166f48bc6cea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80181802"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341052"
 ---
 # <a name="sealed--ccli-and-ccx"></a>sealed (C++/CLI и C++/CX)
 
@@ -36,16 +37,16 @@ virtual return-type identifier() sealed {...};
 *identifier*<br/>
 Имя функции или класса.
 
-*return-type*<br/>
+*Тип возвращаемого значения*<br/>
 Тип, который возвращается функцией.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 В первом примере синтаксиса запечатан (sealed) класс. Во втором примере запечатана виртуальная функция.
 
 Используйте ключевое слово **sealed** для ссылочных классов и их виртуальных функций-членов. Дополнительные сведения см. в статье [Спецификаторы переопределения и компиляция в машинный код](../dotnet/how-to-declare-override-specifiers-in-native-compilations-cpp-cli.md).
 
-Во время компиляции можно определить, запечатан ли тип, используя признак типа `__is_sealed(type)`. Подробные сведения см. в статье [Compiler Support for Type Traits (C++/CLI and C++/CX)](compiler-support-for-type-traits-cpp-component-extensions.md) (Поддержка характеристик типов компилятором (C++/CLI and C++/CX)).
+Во время компиляции можно определить, запечатан ли тип, используя признак типа `__is_sealed(type)`. Дополнительные сведения см. в статье [Compiler Support for Type Traits (C++/CLI and C++/CX)](compiler-support-for-type-traits-cpp-component-extensions.md) (Поддержка характеристик типов компилятором (C++/CLI and C++/CX)).
 
 **sealed** — контекстно-зависимое ключевое слово.  Дополнительные сведения см. в статье [Context-Sensitive Keywords (C++/CLI and C++/CX)](context-sensitive-keywords-cpp-component-extensions.md) (Контекстно-зависимые ключевые слова (C++/CLI и C++/CX)).
 

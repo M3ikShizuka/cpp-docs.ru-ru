@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l'
 title: vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l
 ms.date: 09/12/2019
 api_name:
@@ -39,16 +40,16 @@ helpviewer_keywords:
 - formatted text [C++]
 - _vswprintf_s_l function
 ms.assetid: 60e90518-57f0-4f1b-b732-f62a69702833
-ms.openlocfilehash: 84e85885acf671b49e1e3226234a1d3337577768
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 725962d2bb08515f60bf3b2ce3342534daaadfa7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70945277"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342131"
 ---
 # <a name="vsprintf_s-_vsprintf_s_l-vswprintf_s-_vswprintf_s_l"></a>vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l
 
-Записывают форматированные выходные данные с помощью указателя на список аргументов. Эти функции представляют собой версии [vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, \__vswprintf_l](vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md) с улучшенной безопасностью, как описано в разделе [функции безопасности в CRT](../../c-runtime-library/security-features-in-the-crt.md).
+Записывают форматированные выходные данные с помощью указателя на список аргументов. Эти функции являются версиями [vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, \_ _vswprintf_l](vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md) с улучшенной безопасностью, как описано в разделе [функции безопасности в CRT](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -95,7 +96,7 @@ int vswprintf_s(
 
 ### <a name="parameters"></a>Параметры
 
-*buffer*<br/>
+*двойной*<br/>
 Место хранения выходных данных.
 
 *numberOfElements*<br/>
@@ -116,7 +117,7 @@ int vswprintf_s(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Каждая из этих функций принимает указатель на список аргументов, а затем форматирует и записывает указанные данные в память, на которую указывает *буфер*.
 
@@ -126,9 +127,9 @@ int vswprintf_s(
 
 Версии этих функций с суффиксом **_l** идентичны за исключением того, что они используют переданный параметр языкового стандарта вместо локали текущего потока.
 
-В C++среде использование этих функций упрощено с помощью перегрузок шаблонов. Перегрузки могут автоматически определять длину буфера, устраняя необходимость указывать аргумент размера. Кроме того, они могут автоматически заменять небезопасные функции их безопасными аналогами. Дополнительные сведения см. в разделе [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md).
+В C++ использование этих функций упрощено с помощью перегрузок шаблонов. Перегрузки могут автоматически определять длину буфера, устраняя необходимость указывать аргумент размера. Кроме того, они могут автоматически заменять небезопасные функции их безопасными аналогами. Дополнительные сведения см. в разделе [Безопасные перегрузки шаблонов](../../c-runtime-library/secure-template-overloads.md).
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Подпрограмма TCHAR.H|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -140,11 +141,11 @@ int vswprintf_s(
 |Подпрограмма|Обязательный заголовок|Необязательные заголовки|
 |-------------|---------------------|----------------------|
 |**vsprintf_s**, **_vsprintf_s_l**|\<stdio.h> и \<stdarg.h>|\<varargs.h>*|
-|**vswprintf_s**, **_vswprintf_s_l**|\<stdio.h> или \<wchar.h> и \<stdarg.h>|\<varargs.h>*|
+|**vswprintf_s**, **_vswprintf_s_l**|\<stdio.h> или \<wchar.h> , и \<stdarg.h>|\<varargs.h>*|
 
 \* Требуется для совместимости с UNIX V.
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -189,12 +190,12 @@ int main( void )
 This is a string
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Потоковый ввод-вывод](../../c-runtime-library/stream-i-o.md)<br/>
 [Функции vprintf](../../c-runtime-library/vprintf-functions.md)<br/>
-[Синтаксис описания формата: функции printf и wprintf](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
+[Синтаксис спецификации формата: функции printf и wprintf](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)

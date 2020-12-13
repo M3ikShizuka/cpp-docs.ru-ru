@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l'
 title: vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l
 ms.date: 11/04/2016
 api_name:
@@ -43,12 +44,12 @@ helpviewer_keywords:
 - _vsnwprintf_s function
 - formatted text [C++]
 ms.assetid: 147ccfce-58c7-4681-a726-ef54ac1c604e
-ms.openlocfilehash: edb534eb533d63c9298b7b7e9aced1be3e8652d9
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 27c91d6064b4a92da8a6f09e7d7e5b6bfb8bf95f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502785"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342157"
 ---
 # <a name="vsnprintf_s-_vsnprintf_s-_vsnprintf_s_l-_vsnwprintf_s-_vsnwprintf_s_l"></a>vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l
 
@@ -144,7 +145,7 @@ int _vsnwprintf_s(
 
 * Если параметр *Count* равен или превышает значение *сизеофбуффер* , но число символов в данных меньше *сизеофбуффер*, то все данные записываются (с завершающим значением NULL), а число символов возвращается.
 
-* Если *Count* и количество символов в данных равно или превышает *сизеофбуффер*, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение продолжится после обработчика недопустимых параметров, эти функции задают для *буфера* пустую строку, устанавливают значение **очистки в** **ERANGE**и возвращают-1.
+* Если *Count* и количество символов в данных равно или превышает *сизеофбуффер*, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение продолжится после обработчика недопустимых параметров, эти функции задают для *буфера* пустую строку, устанавливают значение **очистки в** **ERANGE** и возвращают-1.
 
 * Если *buffer* или *Format* является пустым указателем или **значение** *Count* меньше или равно нулю, вызывается обработчик недопустимых параметров. Если выполнение может быть продолжено, эти функции **устанавливают** значение **еинвал** и возвращают-1.
 
@@ -157,7 +158,7 @@ int _vsnwprintf_s(
 |*число* <= 0|-1|**еинвал**|
 |*сизеофбуффер* слишком мал (и *count* ! = **_TRUNCATE**)|-1 (и *буфер* , для которого задана пустая строка)|**ERANGE**|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **vsnprintf_s** совпадает с **_vsnprintf_s**. **vsnprintf_s** входит в соответствие стандарту ANSI. **_vnsprintf** сохраняется для обеспечения обратной совместимости.
 

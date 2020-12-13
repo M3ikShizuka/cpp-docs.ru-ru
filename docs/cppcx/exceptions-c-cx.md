@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: исключения (C++/CX)'
 title: Исключения (C++/CX)
 ms.date: 07/02/2019
 ms.assetid: 6cbdc1f1-e4d7-4707-a670-86365146432f
-ms.openlocfilehash: 7b4475cfa92aa952dd5a2996508d9343255b7ed2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9bc04febf0d4b13a635ded6807e0cc77654dfdb0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231017"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97341949"
 ---
 # <a name="exceptions-ccx"></a>Исключения (C++/CX)
 
@@ -27,7 +28,7 @@ C++/CX поддерживает набор стандартных исключе
 
 В следующей таблице перечислены стандартные исключения.
 
-|Имя|Значение HRESULT|Описание:|
+|Имя|Значение HRESULT|Описание|
 |----------|------------------------|-----------------|
 |COMException|*Определяемое пользователем значение hresult*|Возникает при возвращении неизвестного значения HRESULT после вызова метода COM.|
 |AccessDeniedException|E \_ ACCESSDENIED|Возникает при запрете доступа к ресурсу или функции.|
@@ -97,11 +98,11 @@ void App::OnUnhandledException(Platform::Object^ sender, Windows::ApplicationMod
 }
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 C++/CX не использует **`finally`** предложение.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по языку C++/CX](visual-c-language-reference-c-cx.md)<br/>
 [Справочник по пространствам имен](namespaces-reference-c-cx.md)
