@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _strnicoll, _wcsnicoll, _mbsnicoll, _strnicoll_l, _wcsnicoll_l, _mbsnicoll_l'
 title: _strnicoll, _wcsnicoll, _mbsnicoll, _strnicoll_l, _wcsnicoll_l, _mbsnicoll_l
 ms.date: 4/2/2020
 api_name:
@@ -70,12 +71,12 @@ helpviewer_keywords:
 - tcsnicoll function
 - _strnicoll function
 ms.assetid: abf0c569-725b-428d-9ff2-924f430104b4
-ms.openlocfilehash: 7694edda5ef2b214a1ca391ab1b922b8bfbf35e0
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 7fbbf44747bdcd0b95ccb603d735fc2ac0ecf6b1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914189"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336469"
 ---
 # <a name="_strnicoll-_wcsnicoll-_mbsnicoll-_strnicoll_l-_wcsnicoll_l-_mbsnicoll_l"></a>_strnicoll, _wcsnicoll, _mbsnicoll, _strnicoll_l, _wcsnicoll_l, _mbsnicoll_l
 
@@ -143,9 +144,9 @@ int _mbsnicoll_l(
 |0|*строка1* совпадает с *строка2*|
 |> 0|*строка1* больше, чем *строка2*|
 
-Каждая из этих функций возвращает **_NLSCMPERROR**. Чтобы использовать **_NLSCMPERROR**, включите либо строку. H или MBSTRING. Высоты. **_wcsnicoll** может завершиться ошибкой, если *строка1* или *строка_замены* содержат коды расширенных символов за пределами домена последовательности сортировки. При возникновении ошибки **_wcsnicoll** **может установить значение** **еинвал**. Чтобы проверить наличие ошибки при вызове **_wcsnicoll** **, задайте значение** 0, а затем проверьте правозвонку **после** вызова **_wcsnicoll**.
+Каждая из этих функций возвращает **_NLSCMPERROR**. Чтобы использовать **_NLSCMPERROR**, включите либо строку. H или MBSTRING. H. **_wcsnicoll** может завершиться ошибкой, если *строка1* или *строка_замены* содержат коды расширенных символов за пределами домена последовательности сортировки. При возникновении ошибки **_wcsnicoll** **может установить значение** **еинвал**. Чтобы проверить наличие ошибки при вызове **_wcsnicoll** **, задайте значение** 0, а затем проверьте правозвонку **после** вызова **_wcsnicoll**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Каждая из этих функций выполняет сравнение знаков первого *числа* в строках *строка1* и *строка2* с учетом регистра в соответствии с кодовой страницей. Эти функции следует использовать только в том случае, когда есть различие между порядком символов в наборе и лексикографическим порядком символов в кодовой странице, и это различие представляет интерес при сравнении строк. Версии этих функций без суффикса **_l** используют текущий языковой стандарт и кодовую страницу. Версии с суффиксом **_l** идентичны, за исключением того, что они используют переданный языковой стандарт. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
@@ -173,9 +174,9 @@ int _mbsnicoll_l(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Locale](../../c-runtime-library/locale.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
+[Функции strcoll](../../c-runtime-library/strcoll-functions.md)<br/>
 [localeconv](localeconv.md)<br/>
 [_mbsnbcoll, _mbsnbcoll_l, _mbsnbicoll, _mbsnbicoll_l](mbsnbcoll-mbsnbcoll-l-mbsnbicoll-mbsnbicoll-l.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>

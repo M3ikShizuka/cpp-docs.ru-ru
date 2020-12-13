@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CAnimationGroup Class'
 title: Класс CAnimationGroup
 ms.date: 03/27/2019
 f1_keywords:
@@ -46,16 +47,16 @@ helpviewer_keywords:
 - CAnimationGroup [MFC], m_nGroupID
 - CAnimationGroup [MFC], m_pParentController
 ms.assetid: 8bc18ceb-33a2-41d0-9731-71811adacab7
-ms.openlocfilehash: 14ac32524436ff46449171ad90599e60f63dff2a
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 45fd49b95f73811f52795b87bf3de2dd004fa5ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81750153"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336794"
 ---
 # <a name="canimationgroup-class"></a>Класс CAnimationGroup
 
-Реализует анимационную группу, которая сочетает в себе анимационный раскадровку, объекты анимации и переходы для определения анимации.
+Реализует группу анимации, объединяющую раскадровку анимации, объекты анимации и переходы для определения анимации.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -63,57 +64,57 @@ ms.locfileid: "81750153"
 class CAnimationGroup;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CAnimationGroup:CAnimationGroup](#canimationgroup)|Строит анимационную группу.|
-|[CAnimationGroup::](#_dtorcanimationgroup)|Деструктор Вызывается при уничтожении группы анимации.|
+|[CAnimationGroup:: CAnimationGroup](#canimationgroup)|Конструирует группу анимации.|
+|[CAnimationGroup:: ~ CAnimationGroup](#_dtorcanimationgroup)|Деструктор Вызывается при уничтожении группы анимации.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CAnimationGroup:Animate](#animate)|Оживляет группу.|
-|[CAnimationGroup:ApplyTransitions](#applytransitions)|Применяет переходы к объектам анимации.|
-|[CAnimationGroup:FindAnimationObject](#findanimationobject)|Находит объект анимации, содержащий указанную переменную анимации.|
-|[CAnimationGroup:GetGroupID](#getgroupid)|Возвращает GroupID.|
-|[CAnimationGroup::RemoveKeyframes](#removekeyframes)|Удаляет и по желанию уничтожает все ключевые кадры, принадлежащие группе анимации.|
-|[CAnimationGroup::RemoveTransitions](#removetransitions)|Удаляет переходы из объектов анимации, принадлежащих к группе анимации.|
-|[CAnimationGroup:Расписание](#schedule)|Расписание анимации в указанное время.|
-|[CAnimationGroup:SetAutodestroyПереходы](#setautodestroytransitions)|Направляет все объекты анимации, принадлежащие группе, автоматически уничтожают переходы.|
+|[CAnimationGroup:: анимировать](#animate)|Выполняет анимацию группы.|
+|[CAnimationGroup:: Апплитранситионс](#applytransitions)|Применяет переходы к объектам анимации.|
+|[CAnimationGroup:: Финданиматионобжект](#findanimationobject)|Находит объект анимации, содержащий указанную переменную анимации.|
+|[CAnimationGroup:: Жетграупид](#getgroupid)|Возвращает значение GroupID.|
+|[CAnimationGroup:: Ремовекэйфрамес](#removekeyframes)|Удаляет и при необходимости уничтожает все ключевые кадры, принадлежащие группе анимации.|
+|[CAnimationGroup:: Ремоветранситионс](#removetransitions)|Удаляет переходы из объектов анимации, принадлежащих группе анимации.|
+|[CAnimationGroup:: Schedule](#schedule)|Планирует анимацию в указанное время.|
+|[CAnimationGroup:: Сетаутодестройтранситионс](#setautodestroytransitions)|Направляет все объекты анимации, входящие в группу, автоматически уничтожать переходы.|
 
 ### <a name="protected-methods"></a>Защищенные методы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CAnimationGroup:AddKeyframes](#addkeyframes)|Помощник, который добавляет ключевые кадры в раскадровку.|
-|[CAnimationGroup:AddTransitions](#addtransitions)|Помощник, который добавляет переходы к раскадровке.|
-|[CAnimationGroup::СозданиеПереходы](#createtransitions)|Помощник, создающий объекты перехода COM.|
+|[CAnimationGroup:: Аддкэйфрамес](#addkeyframes)|Вспомогательный объект, добавляющий опорные кадры в раскадровку.|
+|[CAnimationGroup:: Аддтранситионс](#addtransitions)|Вспомогательный объект, добавляющий переходы в раскадровку.|
+|[CAnimationGroup:: Креатетранситионс](#createtransitions)|Вспомогательный объект, который создает COM-объекты перехода.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CAnimationGroup::m_bAutoclearTransitions](#m_bautocleartransitions)|Определяет, как очистить переходы от объектов анимации, которые принадлежат группе. Если этот элемент является правдой, переходы удаляются автоматически, когда анимация была запланирована. В противном случае необходимо удалить переходы вручную.|
-|[CAnimationGroup::m_bAutodestroyAnimationObjects](#m_bautodestroyanimationobjects)|Определяет, как уничтожать объекты анимации. Если этот параметр является истинным, объекты анимации будут автоматически уничтожены при уничтожении группы. В противном случае объекты анимации должны быть уничтожены вручную. Значение по умолчанию — FALSE. Установите это значение к TRUE только в том случае, если все объекты анимации, принадлежащие группе, динамически распределены с новым оператором.|
-|[CAnimationGroup::m_bAutodestroyKeyframes](#m_bautodestroykeyframes)|Определяет, как уничтожить ключевые кадры. Если это значение соответствует действительности, все ключевые кадры удаляются и уничтожаются; в противном случае они удаляются только из списка. Значение по умолчанию — TRUE.|
-|[CAnimationGroup::m_lstAnimationObjects](#m_lstanimationobjects)|Содержит список объектов анимации.|
-|[CAnimationGroup::m_lstKeyFrames](#m_lstkeyframes)|Содержит список ключевых кадров.|
-|[CAnimationGroup::m_pStoryboard](#m_pstoryboard)|Указывает на раскадровку анимации. Этот указатель действителен только после вызова на Animate.|
+|[CAnimationGroup:: m_bAutoclearTransitions](#m_bautocleartransitions)|Задает способ очистки переходов от объектов анимации, принадлежащих группе. Если этот член имеет значение TRUE, переходы автоматически удаляются при планировании анимации. В противном случае необходимо удалить переходы вручную.|
+|[CAnimationGroup:: m_bAutodestroyAnimationObjects](#m_bautodestroyanimationobjects)|Указывает, как уничтожить объекты анимации. Если этот параметр имеет значение TRUE, объекты анимации будут автоматически уничтожены при удалении группы. В противном случае объекты анимации необходимо уничтожить вручную. Значение по умолчанию — FALSE. Присвойте этому параметру значение TRUE, только если все объекты анимации, принадлежащие к группе, выделяются динамически с помощью оператора New.|
+|[CAnimationGroup:: m_bAutodestroyKeyframes](#m_bautodestroykeyframes)|Задает способ уничтожения опорных кадров. Если это значение равно TRUE, все опорные кадры удаляются и уничтожаются; в противном случае они удаляются только из списка. Значение по умолчанию — TRUE.|
+|[CAnimationGroup:: m_lstAnimationObjects](#m_lstanimationobjects)|Содержит список объектов анимации.|
+|[CAnimationGroup:: m_lstKeyFrames](#m_lstkeyframes)|Содержит список опорных кадров.|
+|[CAnimationGroup:: m_pStoryboard](#m_pstoryboard)|Указывает на раскадровку анимации. Этот указатель допустим только после вызова в анимации.|
 
 ### <a name="protected-data-members"></a>Защищенные члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CAnimationGroup::m_nGroupID](#m_ngroupid)|Уникальный идентификатор анимационной группы.|
-|[CAnimationGroup::m_pParentController](#m_pparentcontroller)|Указатель на контроллер анимации эта группа принадлежит.|
+|[CAnimationGroup:: m_nGroupID](#m_ngroupid)|Уникальный идентификатор группы анимации.|
+|[CAnimationGroup:: m_pParentController](#m_pparentcontroller)|Указатель на контроллер анимации, к которому принадлежит эта группа.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Группы анимации создаются автоматически контроллером анимации (CAnimationController) при добавлении объектов анимации с помощью CAnimationController::AddAnimationObject. Группа анимации идентифицируется GroupID, который обычно принимается в качестве параметра для манипулирования группами анимации. GroupID взят из первого анимационного объекта, добавленного в новую группу анимации. Инкапсулированная анимация раскадровка создается после вызова CAnimationController::AnimateGroup и может быть доступна через общественный m_pStoryboard членов.
+Группы анимации создаются автоматически контроллером анимации (Каниматионконтроллер) при добавлении объектов анимации с помощью Каниматионконтроллер:: Адданиматионобжект. Группа анимации определяется параметром GroupID, который обычно используется в качестве параметра для управления группами анимации. Объект GroupID берется из первого объекта анимации, добавляемого в новую группу анимации. Раскадровка инкапсулированной анимации создается после вызова Каниматионконтроллер:: Аниматеграуп и доступна через открытый член m_pStoryboard.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -123,7 +124,7 @@ class CAnimationGroup;
 
 **Заголовок:** afxanimationcontroller.h
 
-## <a name="canimationgroupcanimationgroup"></a><a name="_dtorcanimationgroup"></a>CAnimationGroup::
+## <a name="canimationgroupcanimationgroup"></a><a name="_dtorcanimationgroup"></a> CAnimationGroup:: ~ CAnimationGroup
 
 Деструктор Вызывается при уничтожении группы анимации.
 
@@ -131,9 +132,9 @@ class CAnimationGroup;
 ~CAnimationGroup();
 ```
 
-## <a name="canimationgroupaddkeyframes"></a><a name="addkeyframes"></a>CAnimationGroup:AddKeyframes
+## <a name="canimationgroupaddkeyframes"></a><a name="addkeyframes"></a> CAnimationGroup:: Аддкэйфрамес
 
-Помощник, который добавляет ключевые кадры в раскадровку.
+Вспомогательный объект, добавляющий опорные кадры в раскадровку.
 
 ```cpp
 void AddKeyframes(IUIAnimationStoryboard* pStoryboard, BOOL bAddDeep);
@@ -141,15 +142,15 @@ void AddKeyframes(IUIAnimationStoryboard* pStoryboard, BOOL bAddDeep);
 
 ### <a name="parameters"></a>Параметры
 
-*pStoryboard*<br/>
-Указатель на раскадровку объекта COM.
+*псторибоард*<br/>
+Указатель на COM-объект раскадровки.
 
-*bAddDeep*<br/>
-Уточняется, следует ли добавить этот метод к ключевым кадрам раскадровки, которые зависят от других ключевых кадров.
+*бадддип*<br/>
+Указывает, должен ли этот метод добавляться к опорным кадрам раскадровки, которые зависят от других опорных кадров.
 
-## <a name="canimationgroupaddtransitions"></a><a name="addtransitions"></a>CAnimationGroup:AddTransitions
+## <a name="canimationgroupaddtransitions"></a><a name="addtransitions"></a> CAnimationGroup:: Аддтранситионс
 
-Помощник, который добавляет переходы к раскадровке.
+Вспомогательный объект, добавляющий переходы в раскадровку.
 
 ```cpp
 void AddTransitions(
@@ -159,14 +160,14 @@ void AddTransitions(
 
 ### <a name="parameters"></a>Параметры
 
-*pStoryboard*<br/>
-Указатель на раскадровку объекта COM.
+*псторибоард*<br/>
+Указатель на COM-объект раскадровки.
 
-*bDependOnKeyframes*
+*бдепендонкэйфрамес*
 
-## <a name="canimationgroupanimate"></a><a name="animate"></a>CAnimationGroup:Animate
+## <a name="canimationgroupanimate"></a><a name="animate"></a> CAnimationGroup:: анимировать
 
-Оживляет группу.
+Выполняет анимацию группы.
 
 ```
 BOOL Animate(
@@ -177,19 +178,19 @@ BOOL Animate(
 
 ### <a name="parameters"></a>Параметры
 
-*pManager*<br/>
-*pTimer*
-*bScheduleNow*
+*пманажер*<br/>
+*птимер* 
+ *бсчедуленов*
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если метод удается; в противном случае FALSE.
+Значение TRUE, если метод выполнен. в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод создает внутреннюю раскадровку, создает и применяет переходы и запланировал анимацию, если bScheduleNow является правдой. Если bScheduleNow является FALSE, вам необходимо вызвать Расписание, чтобы начать анимацию в указанное время.
+Этот метод создает внутреннюю раскадровку, создает и применяет переходы и планирует анимацию, если Бсчедуленов имеет значение TRUE. Если Бсчедуленов имеет значение FALSE, необходимо вызвать Schedule для запуска анимации в указанное время.
 
-## <a name="canimationgroupapplytransitions"></a><a name="applytransitions"></a>CAnimationGroup:ApplyTransitions
+## <a name="canimationgroupapplytransitions"></a><a name="applytransitions"></a> CAnimationGroup:: Апплитранситионс
 
 Применяет переходы к объектам анимации.
 
@@ -197,13 +198,13 @@ TRUE, если метод удается; в противном случае FAL
 void ApplyTransitions();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод ASSERTS в режиме отладки, если раскадровка не была создана. Сначала он создает все переходы, затем добавляет "статические" ключевые кадры (ключевые кадры, зависящие от смещений), добавляет переходы, которые не зависят от ключевых кадров, добавляет ключевые кадры в зависимости от переходов и других ключевых кадров и, наконец, добавляет переходы, зависящие от ключевых кадров.
+Этот метод УТВЕРЖДАЕТся в режиме отладки, если раскадровка не была создана. Сначала создаются все переходы, затем добавляются "статические" ключевые кадры (опорные кадры, зависящие от смещений), добавляются переходы, которые не зависят от ключевых кадров, добавляются ключевые кадры в зависимости от переходов и других опорных кадров, а при последнем добавлении переходов, зависящих от опорных кадров.
 
-## <a name="canimationgroupcanimationgroup"></a><a name="canimationgroup"></a>CAnimationGroup:CAnimationGroup
+## <a name="canimationgroupcanimationgroup"></a><a name="canimationgroup"></a> CAnimationGroup:: CAnimationGroup
 
-Строит анимационную группу.
+Конструирует группу анимации.
 
 ```
 CAnimationGroup(CAnimationController* pParentController, UINT32 nGroupID);
@@ -211,15 +212,15 @@ CAnimationGroup(CAnimationController* pParentController, UINT32 nGroupID);
 
 ### <a name="parameters"></a>Параметры
 
-*pParentController*<br/>
+*ппарентконтроллер*<br/>
 Указатель на контроллер анимации, который создает группу.
 
-*nGroupID*<br/>
-Уточняет GroupID.
+*нграупид*<br/>
+Указывает GroupID.
 
-## <a name="canimationgroupcreatetransitions"></a><a name="createtransitions"></a>CAnimationGroup::СозданиеПереходы
+## <a name="canimationgroupcreatetransitions"></a><a name="createtransitions"></a> CAnimationGroup:: Креатетранситионс
 
-Помощник, создающий объекты перехода COM.
+Вспомогательный объект, который создает COM-объекты перехода.
 
 ```
 BOOL CreateTransitions();
@@ -227,9 +228,9 @@ BOOL CreateTransitions();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА метод удается, в противном случае FALSE.
+Значение TRUE, если метод выполняется, в противном случае — значение FALSE.
 
-## <a name="canimationgroupfindanimationobject"></a><a name="findanimationobject"></a>CAnimationGroup:FindAnimationObject
+## <a name="canimationgroupfindanimationobject"></a><a name="findanimationobject"></a> CAnimationGroup:: Финданиматионобжект
 
 Находит объект анимации, содержащий указанную переменную анимации.
 
@@ -239,16 +240,16 @@ CAnimationBaseObject* FindAnimationObject(IUIAnimationVariable* pVariable);
 
 ### <a name="parameters"></a>Параметры
 
-*pПеременный*<br/>
+*пвариабле*<br/>
 Указатель на переменную анимации.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на объект анимации, или NULL, если объект анимации не найден.
+Указатель на объект анимации или значение NULL, если объект анимации не найден.
 
-## <a name="canimationgroupgetgroupid"></a><a name="getgroupid"></a>CAnimationGroup:GetGroupID
+## <a name="canimationgroupgetgroupid"></a><a name="getgroupid"></a> CAnimationGroup:: Жетграупид
 
-Возвращает GroupID.
+Возвращает значение GroupID.
 
 ```
 UINT32 GetGroupID() const;
@@ -258,31 +259,31 @@ UINT32 GetGroupID() const;
 
 Идентификатор группы.
 
-## <a name="canimationgroupm_bautocleartransitions"></a><a name="m_bautocleartransitions"></a>CAnimationGroup::m_bAutoclearTransitions
+## <a name="canimationgroupm_bautocleartransitions"></a><a name="m_bautocleartransitions"></a> CAnimationGroup:: m_bAutoclearTransitions
 
-Определяет, как очистить переходы от объектов анимации, которые принадлежат группе. Если этот элемент является правдой, переходы удаляются автоматически, когда анимация была запланирована. В противном случае необходимо удалить переходы вручную.
+Задает способ очистки переходов от объектов анимации, принадлежащих группе. Если этот член имеет значение TRUE, переходы автоматически удаляются при планировании анимации. В противном случае необходимо удалить переходы вручную.
 
 ```
 BOOL m_bAutoclearTransitions;
 ```
 
-## <a name="canimationgroupm_bautodestroyanimationobjects"></a><a name="m_bautodestroyanimationobjects"></a>CAnimationGroup::m_bAutodestroyAnimationObjects
+## <a name="canimationgroupm_bautodestroyanimationobjects"></a><a name="m_bautodestroyanimationobjects"></a> CAnimationGroup:: m_bAutodestroyAnimationObjects
 
-Определяет, как уничтожать объекты анимации. Если этот параметр является истинным, объекты анимации будут автоматически уничтожены при уничтожении группы. В противном случае объекты анимации должны быть уничтожены вручную. Значение по умолчанию — FALSE. Установите это значение к TRUE только в том случае, если все объекты анимации, принадлежащие группе, динамически распределены с новым оператором.
+Указывает, как уничтожить объекты анимации. Если этот параметр имеет значение TRUE, объекты анимации будут автоматически уничтожены при удалении группы. В противном случае объекты анимации необходимо уничтожить вручную. Значение по умолчанию — FALSE. Присвойте этому параметру значение TRUE, только если все объекты анимации, принадлежащие к группе, выделяются динамически с помощью оператора New.
 
 ```
 BOOL m_bAutodestroyAnimationObjects;
 ```
 
-## <a name="canimationgroupm_bautodestroykeyframes"></a><a name="m_bautodestroykeyframes"></a>CAnimationGroup::m_bAutodestroyKeyframes
+## <a name="canimationgroupm_bautodestroykeyframes"></a><a name="m_bautodestroykeyframes"></a> CAnimationGroup:: m_bAutodestroyKeyframes
 
-Определяет, как уничтожить ключевые кадры. Если это значение соответствует действительности, все ключевые кадры удаляются и уничтожаются; в противном случае они удаляются только из списка. Значение по умолчанию — TRUE.
+Задает способ уничтожения опорных кадров. Если это значение равно TRUE, все опорные кадры удаляются и уничтожаются; в противном случае они удаляются только из списка. Значение по умолчанию — TRUE.
 
 ```
 BOOL m_bAutodestroyKeyframes;
 ```
 
-## <a name="canimationgroupm_lstanimationobjects"></a><a name="m_lstanimationobjects"></a>CAnimationGroup::m_lstAnimationObjects
+## <a name="canimationgroupm_lstanimationobjects"></a><a name="m_lstanimationobjects"></a> CAnimationGroup:: m_lstAnimationObjects
 
 Содержит список объектов анимации.
 
@@ -290,65 +291,65 @@ BOOL m_bAutodestroyKeyframes;
 CObList m_lstAnimationObjects;
 ```
 
-## <a name="canimationgroupm_lstkeyframes"></a><a name="m_lstkeyframes"></a>CAnimationGroup::m_lstKeyFrames
+## <a name="canimationgroupm_lstkeyframes"></a><a name="m_lstkeyframes"></a> CAnimationGroup:: m_lstKeyFrames
 
-Содержит список ключевых кадров.
+Содержит список опорных кадров.
 
 ```
 CObList m_lstKeyFrames;
 ```
 
-## <a name="canimationgroupm_ngroupid"></a><a name="m_ngroupid"></a>CAnimationGroup::m_nGroupID
+## <a name="canimationgroupm_ngroupid"></a><a name="m_ngroupid"></a> CAnimationGroup:: m_nGroupID
 
-Уникальный идентификатор анимационной группы.
+Уникальный идентификатор группы анимации.
 
 ```
 UINT32 m_nGroupID;
 ```
 
-## <a name="canimationgroupm_pparentcontroller"></a><a name="m_pparentcontroller"></a>CAnimationGroup::m_pParentController
+## <a name="canimationgroupm_pparentcontroller"></a><a name="m_pparentcontroller"></a> CAnimationGroup:: m_pParentController
 
-Указатель на контроллер анимации эта группа принадлежит.
+Указатель на контроллер анимации, к которому принадлежит эта группа.
 
 ```
 CAnimationController* m_pParentController;
 ```
 
-## <a name="canimationgroupm_pstoryboard"></a><a name="m_pstoryboard"></a>CAnimationGroup::m_pStoryboard
+## <a name="canimationgroupm_pstoryboard"></a><a name="m_pstoryboard"></a> CAnimationGroup:: m_pStoryboard
 
-Указывает на раскадровку анимации. Этот указатель действителен только после вызова на Animate.
+Указывает на раскадровку анимации. Этот указатель допустим только после вызова в анимации.
 
 ```
 ATL::CComPtr<IUIAnimationStoryboard> m_pStoryboard;
 ```
 
-## <a name="canimationgroupremovekeyframes"></a><a name="removekeyframes"></a>CAnimationGroup::RemoveKeyframes
+## <a name="canimationgroupremovekeyframes"></a><a name="removekeyframes"></a> CAnimationGroup:: Ремовекэйфрамес
 
-Удаляет и по желанию уничтожает все ключевые кадры, принадлежащие группе анимации.
+Удаляет и при необходимости уничтожает все ключевые кадры, принадлежащие группе анимации.
 
 ```cpp
 void RemoveKeyframes();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если m_bAutodestroyKeyframes член является правдой, то ключевые кадры удаляются и уничтожаются, в противном случае ключевые кадры просто удаляются из внутреннего списка ключевых кадров.
+Если m_bAutodestroyKeyframes член имеет значение TRUE, кадры удаляются и уничтожаются, в противном случае кадры удаляются из внутреннего списка опорных кадров.
 
-## <a name="canimationgroupremovetransitions"></a><a name="removetransitions"></a>CAnimationGroup::RemoveTransitions
+## <a name="canimationgroupremovetransitions"></a><a name="removetransitions"></a> CAnimationGroup:: Ремоветранситионс
 
-Удаляет переходы из объектов анимации, принадлежащих к группе анимации.
+Удаляет переходы из объектов анимации, принадлежащих группе анимации.
 
 ```cpp
 void RemoveTransitions();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если m_bAutoclearTransitions флаг установлен на ИСТИНу, этот метод циклов над всеми объектами анимации, которые принадлежат к группе и называет CAnimationObject::ClearTransitions (FALSE).
+Если флаг m_bAutoclearTransitions имеет значение TRUE, этот метод выполняет перебор всех объектов анимации, принадлежащих группе, и вызывает Каниматионобжект:: Клеартранситионс (FALSE).
 
-## <a name="canimationgroupschedule"></a><a name="schedule"></a>CAnimationGroup:Расписание
+## <a name="canimationgroupschedule"></a><a name="schedule"></a> CAnimationGroup:: Schedule
 
-Расписание анимации в указанное время.
+Планирует анимацию в указанное время.
 
 ```
 BOOL Schedule(IUIAnimationTimer* pTimer, UI_ANIMATION_SECONDS time);
@@ -356,23 +357,23 @@ BOOL Schedule(IUIAnimationTimer* pTimer, UI_ANIMATION_SECONDS time);
 
 ### <a name="parameters"></a>Параметры
 
-*pTimer*<br/>
-Указатель на анимационный таймер.
+*птимер*<br/>
+Указатель на таймер анимации.
 
 *time*<br/>
-Определяет время для планирования анимации.
+Указывает время запланировать анимацию.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если метод удается; FALSE, если метод не удается или если Animate не был вызван с bScheduleNow установлен false.
+Значение TRUE, если метод выполнен. Значение FALSE, если метод завершается неудачно или если не вызывалась анимация с параметром Бсчедуленов со значением FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вызовите эту функцию, чтобы запланировать анимацию в указанное время. Вы должны позвонить Animate с bScheduleNow установлен на FALSE в первую очередь.
+Вызовите эту функцию, чтобы запланировать анимацию в указанное время. Необходимо сначала вызвать метод анимации с параметром Бсчедуленов, равным FALSE.
 
-## <a name="canimationgroupsetautodestroytransitions"></a><a name="setautodestroytransitions"></a>CAnimationGroup:SetAutodestroyПереходы
+## <a name="canimationgroupsetautodestroytransitions"></a><a name="setautodestroytransitions"></a> CAnimationGroup:: Сетаутодестройтранситионс
 
-Направляет все объекты анимации, принадлежащие группе, автоматически уничтожают переходы.
+Направляет все объекты анимации, входящие в группу, автоматически уничтожать переходы.
 
 ```cpp
 void SetAutodestroyTransitions(BOOL bAutoDestroy = TRUE);
@@ -380,12 +381,12 @@ void SetAutodestroyTransitions(BOOL bAutoDestroy = TRUE);
 
 ### <a name="parameters"></a>Параметры
 
-*bAutoDestroy*<br/>
-Определяет, как уничтожить переходы.
+*баутодестрой*<br/>
+Задает способ уничтожения переходов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Установите это значение false только в том случае, если вы выделяете переходы в стеке. Значение по умолчанию является правдой, поэтому настоятельно рекомендуется выделять объекты перехода с помощью нового оператора.
+Присвойте этому параметру значение FALSE только при выделении переходов в стеке. Значение по умолчанию — TRUE, поэтому настоятельно рекомендуется выделить объекты перехода с помощью оператора New.
 
 ## <a name="see-also"></a>См. также раздел
 

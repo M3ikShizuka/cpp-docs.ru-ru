@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: рекомендации в библиотеке параллельных шаблонов'
 title: Рекомендации по работе с библиотекой параллельных шаблонов
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - best practices, Parallel Patterns Library
 - Parallel Patterns Library, best practices
 ms.assetid: e43e0304-4d54-4bd8-a3b3-b8673559a9d7
-ms.openlocfilehash: 0bd49dda881df402a8c511714c22be37da3a50c4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 72b0ff36532decbc55ae792ee407b3b711bd54a5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231732"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334695"
 ---
 # <a name="best-practices-in-the-parallel-patterns-library"></a>Рекомендации по работе с библиотекой параллельных шаблонов
 
@@ -20,7 +21,7 @@ ms.locfileid: "87231732"
 
 Дополнительные сведения о PPL см. в разделе [Библиотека параллельных шаблонов (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md).
 
-## <a name="sections"></a><a name="top"></a>Священ
+## <a name="sections"></a><a name="top"></a> Священ
 
 Этот документ содержит следующие разделы.
 
@@ -44,7 +45,7 @@ ms.locfileid: "87231732"
 
 - [Убедитесь, что переменные допустимы на протяжении времени существования задачи](#lifetime)
 
-## <a name="do-not-parallelize-small-loop-bodies"></a><a name="small-loops"></a>Не выпараллелизации небольшие тела циклов
+## <a name="do-not-parallelize-small-loop-bodies"></a><a name="small-loops"></a> Не выпараллелизации небольшие тела циклов
 
 Распараллеливание относительно небольших тел циклов может привести к дополнительным издержкам при планировании, которые сведут на нет преимущества параллельной обработки. Рассмотрим следующий пример, в котором каждая пара элементов помещается в два массива.
 
@@ -54,7 +55,7 @@ ms.locfileid: "87231732"
 
 [[Top](#top)]
 
-## <a name="express-parallelism-at-the-highest-possible-level"></a><a name="highest"></a>Экспресс параллелизма на максимально возможном уровне
+## <a name="express-parallelism-at-the-highest-possible-level"></a><a name="highest"></a> Экспресс параллелизма на максимально возможном уровне
 
 При распараллеливании кода только на низком уровне можно ввести конструкцию ветвления-соединения, которая не масштабируется при увеличении числа процессоров. Конструкция *ветвления-объединения* — это конструкция, в которой одна задача разделяет свою работу на небольшие параллельные подзадачи и ожидает завершения этих подзадач. Каждая подзадача может рекурсивно делиться на еще более мелкие подзадачи.
 
@@ -76,11 +77,11 @@ ms.locfileid: "87231732"
 
 [!code-cpp[concrt-image-processing-filter#22](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-parallel-patterns-library_5.cpp)]
 
-Аналогичный пример, использующий конвейер для параллельной обработки изображений, см. в разделе [Пошаговое руководство. Создание сети обработки изображений](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
+Аналогичный пример, использующий конвейер для параллельной обработки изображений, см. в разделе [Пошаговое руководство. создание Image-Processing сети](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
 
 [[Top](#top)]
 
-## <a name="use-parallel_invoke-to-solve-divide-and-conquer-problems"></a><a name="divide-and-conquer"></a>Использование parallel_invoke для решения проблем деления и властвуй
+## <a name="use-parallel_invoke-to-solve-divide-and-conquer-problems"></a><a name="divide-and-conquer"></a> Использование parallel_invoke для решения проблем деления и властвуй
 
 Проблема *деления и властвуй* — это форма конструкции ветвления-объединения, которая использует рекурсию для разбиения задачи на подзадачи. В дополнение к классам [Concurrency:: task_group](reference/task-group-class.md) и [concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) можно также использовать алгоритм [параллелизма::p arallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) , чтобы решить проблемы деления и властвуй. Алгоритм `parallel_invoke` имеет более сжатый синтаксис, чем объекты группы задач, и удобен при наличии фиксированного числа параллельных задач.
 
@@ -94,7 +95,7 @@ ms.locfileid: "87231732"
 
 [[Top](#top)]
 
-## <a name="use-cancellation-or-exception-handling-to-break-from-a-parallel-loop"></a><a name="breaking-loops"></a>Использование отмены или обработки исключений для прерывания из параллельного цикла
+## <a name="use-cancellation-or-exception-handling-to-break-from-a-parallel-loop"></a><a name="breaking-loops"></a> Использование отмены или обработки исключений для прерывания из параллельного цикла
 
 Библиотека PPL предоставляет два способа отмены параллельной работы, выполняемой группой задач или параллельным алгоритмом. Один из способов — использовать механизм отмены, предоставляемый классами [Concurrency:: task_group](reference/task-group-class.md) и [concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) . Второй способ — создать исключение в теле рабочей функции задачи. Механизм отмены более эффективен, чем обработка исключений при отмене дерева параллельной работы. *Дерево параллельной работы* — это группа связанных групп задач, в которой некоторые группы задач содержат другие группы задач. Механизм отмены отменяет группу задач и ее дочерние группы в порядке «сверху вниз». И наоборот, обработка исключений работает в режиме «снизу вверх» и необходимо отменять каждую дочернюю группу задач независимо, поскольку исключение распространяется вверх.
 
@@ -118,7 +119,7 @@ ms.locfileid: "87231732"
 
 [[Top](#top)]
 
-## <a name="understand-how-cancellation-and-exception-handling-affect-object-destruction"></a><a name="object-destruction"></a>Узнайте, как отмена и обработка исключений влияют на уничтожение объектов.
+## <a name="understand-how-cancellation-and-exception-handling-affect-object-destruction"></a><a name="object-destruction"></a> Узнайте, как отмена и обработка исключений влияют на уничтожение объектов.
 
 В дереве параллельной работы отмененная задача предотвращает запуск дочерних задач. Это может привести к проблемам, если одна из дочерних задач выполняет операцию, важную для приложения, например высвобождает ресурс. Кроме того, отмена задачи может привести к тому, что исключение распространится через деструктор объектов и вызовет неопределенное поведение в приложении.
 
@@ -148,7 +149,7 @@ Container 1: Freeing resources...Exiting program...
 
 [[Top](#top)]
 
-## <a name="do-not-block-repeatedly-in-a-parallel-loop"></a><a name="repeated-blocking"></a>Не блокируйте несколько раз в параллельном цикле
+## <a name="do-not-block-repeatedly-in-a-parallel-loop"></a><a name="repeated-blocking"></a> Не блокируйте несколько раз в параллельном цикле
 
 Параллельный цикл, такой как [Concurrency::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) или [concurrency::p arallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) , который находится в результате блокирующих операций, может привести к тому, что среда выполнения создаст много потоков в течение короткого промежутка времени.
 
@@ -164,7 +165,7 @@ Container 1: Freeing resources...Exiting program...
 
 [[Top](#top)]
 
-## <a name="do-not-perform-blocking-operations-when-you-cancel-parallel-work"></a><a name="blocking"></a>Не выполнять блокирующие операции при отмене параллельной работы
+## <a name="do-not-perform-blocking-operations-when-you-cancel-parallel-work"></a><a name="blocking"></a> Не выполнять блокирующие операции при отмене параллельной работы
 
 По возможности не выполняйте блокирующие операции перед вызовом метода [Concurrency:: task_group:: Cancel](reference/task-group-class.md#cancel) или [concurrency:: structured_task_group:: Cancel](reference/structured-task-group-class.md#cancel) для отмены параллельной работы.
 
@@ -182,7 +183,7 @@ Container 1: Freeing resources...Exiting program...
 
 [[Top](#top)]
 
-## <a name="do-not-write-to-shared-data-in-a-parallel-loop"></a><a name="shared-writes"></a>Не записывать в общие данные в параллельном цикле
+## <a name="do-not-write-to-shared-data-in-a-parallel-loop"></a><a name="shared-writes"></a> Не записывать в общие данные в параллельном цикле
 
 Среда выполнения с параллелизмом предоставляет несколько структур данных, например [Concurrency:: critical_section](../../parallel/concrt/reference/critical-section-class.md), которые синхронизируют одновременный доступ к общим данным. Эти структуры данных удобны во многих случаях, например, если нескольким задачам нечасто нужен общий доступ к ресурсу.
 
@@ -202,7 +203,7 @@ PPL определяет класс [Concurrency:: combinable](../../parallel/co
 
 [[Top](#top)]
 
-## <a name="when-possible-avoid-false-sharing"></a><a name="false-sharing"></a>По возможности избегайте ложного совместного доступа
+## <a name="when-possible-avoid-false-sharing"></a><a name="false-sharing"></a> По возможности избегайте ложного совместного доступа
 
 *Ложное совместное использование* происходит, когда несколько параллельных задач, выполняемых на разных процессорах, записывают переменные, расположенные в одной строке кэша. Когда одна задача записывает данные в одну из переменных, строка кэша для обоих переменных становится недействительной. Каждый процессор должен перезагружать строку кэша каждый раз, когда строка кэша становится недействительной. Таким образом, ложное совместное использование может привести к снижению производительности приложения.
 
@@ -224,7 +225,7 @@ PPL определяет класс [Concurrency:: combinable](../../parallel/co
 
 [[Top](#top)]
 
-## <a name="make-sure-that-variables-are-valid-throughout-the-lifetime-of-a-task"></a><a name="lifetime"></a>Убедитесь, что переменные допустимы в течение всего времени существования задачи.
+## <a name="make-sure-that-variables-are-valid-throughout-the-lifetime-of-a-task"></a><a name="lifetime"></a> Убедитесь, что переменные допустимы в течение всего времени существования задачи.
 
 При предоставлении лямбда-выражения группе задач или параллельному алгоритму предложение фиксации указывает, получает ли тело лямбда-выражения доступ к переменным во внешней области по значению или по ссылке. При передаче переменных в лямбда-выражение по ссылке необходимо обеспечить сохранение существования этой переменной до завершения задачи.
 
@@ -264,7 +265,7 @@ PPL определяет класс [Concurrency:: combinable](../../parallel/co
 [Параллельные алгоритмы](../../parallel/concrt/parallel-algorithms.md)<br/>
 [Отмена в библиотеке параллельных шаблонов](cancellation-in-the-ppl.md)<br/>
 [Обработка исключений](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
-[Пошаговое руководство. Создание сети обработки изображений](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)<br/>
+[Пошаговое руководство. Создание Image-Processing сети](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)<br/>
 [Как использовать parallel_invoke для написания параллельной подпрограммы сортировки](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md)<br/>
 [Как прервать выполнение из параллельного цикла с помощью отмены](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)<br/>
 [Как использовать комбинирование для повышения производительности](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md)<br/>

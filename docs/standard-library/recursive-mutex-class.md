@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: recursive_mutex классе'
 title: Класс recursive_mutex
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - std::recursive_mutex [C++], lock
 - std::recursive_mutex [C++], try_lock
 - std::recursive_mutex [C++], unlock
-ms.openlocfilehash: 8455548997c4ccf1b950e26e01df67306554b945
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f8a9c9322407871984c83135eecd2e26ac475d2b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217614"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337888"
 ---
 # <a name="recursive_mutex-class"></a>Класс recursive_mutex
 
@@ -31,11 +32,11 @@ ms.locfileid: "87217614"
 class recursive_mutex;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[recursive_mutex](#recursive_mutex)|Формирует объект `recursive_mutex`.|
 |[Деструктор ~recursive_mutex](#dtorrecursive_mutex_destructor)|Освобождает все ресурсы, используемые объектом `recursive_mutex`.|
@@ -54,7 +55,7 @@ class recursive_mutex;
 
 **Пространство имен:** std
 
-## <a name="lock"></a><a name="lock"></a>скрыть
+## <a name="lock"></a><a name="lock"></a> скрыть
 
 Блокирует вызывающий поток до тех пор, пока этот поток не получит права владельца объекта `mutex`.
 
@@ -62,11 +63,11 @@ class recursive_mutex;
 void lock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вызывающий поток уже владеет `mutex`, метод немедленно возвращает значение и предыдущая блокировка остается в силе.
 
-## <a name="recursive_mutex"></a><a name="recursive_mutex"></a>recursive_mutex
+## <a name="recursive_mutex"></a><a name="recursive_mutex"></a> recursive_mutex
 
 Создает объект `recursive_mutex`, который не заблокирован.
 
@@ -82,11 +83,11 @@ recursive_mutex();
 ~recursive_mutex();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если при выполнении деструктора объект заблокирован, поведение не определено.
 
-## <a name="try_lock"></a><a name="try_lock"></a>try_lock
+## <a name="try_lock"></a><a name="try_lock"></a> try_lock
 
 Попытки получить права владельца объекта `mutex` без блокировки.
 
@@ -98,11 +99,11 @@ bool try_lock() noexcept;
 
 **`true`** Если метод успешно получает владение `mutex` или, если вызывающий поток уже владеет `mutex**; otherwise, **false` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вызывающий поток уже владеет `mutex` , функция немедленно возвращает значение **`true`** , а предыдущая блокировка остается в силе.
 
-## <a name="unlock"></a><a name="unlock"></a>блокирован
+## <a name="unlock"></a><a name="unlock"></a> блокирован
 
 Освобождает права владения мьютексом.
 
@@ -110,7 +111,7 @@ bool try_lock() noexcept;
 void unlock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод освобождает владение `mutex` только после его вызова столько раз, сколько [lock](#lock) и [try_lock](#try_lock) были успешно вызваны для объекта`recursive_mutex`.
 

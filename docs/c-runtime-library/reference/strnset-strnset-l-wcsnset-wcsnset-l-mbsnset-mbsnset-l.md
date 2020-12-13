@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l'
 title: _strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l
 ms.date: 4/2/2020
 api_name:
@@ -73,12 +74,12 @@ helpviewer_keywords:
 - strings [C++], initializing
 - tcsnset_l function
 ms.assetid: 3f306489-5763-48e5-b939-aefee7c94ef5
-ms.openlocfilehash: eb23e63fa5eba7ab79fc45b8c8cb6ea350685a7e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dc0ca21ff23cbbf016b53ec55ed3e1960fbe2fb6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231329"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336443"
 ---
 # <a name="_strnset-_strnset_l-_wcsnset-_wcsnset_l-_mbsnset-_mbsnset_l"></a>_strnset, _strnset_l, _wcsnset, _wcsnset_l, _mbsnset, _mbsnset_l
 
@@ -130,7 +131,7 @@ unsigned char *_mbsnset_l(
 *str*<br/>
 Строка, которую требуется изменить.
 
-*ц*<br/>
+*c*<br/>
 Параметр символов.
 
 *count*<br/>
@@ -143,11 +144,11 @@ unsigned char *_mbsnset_l(
 
 Возвращает указатель на измененную строку.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функция **_strnset** задает не более первого символа *подсчета* *str* в *c* (преобразуется в **`char`** ). Если параметр *Count* превышает длину *str*, вместо *Count*используется длина *str* .
+Функция **_strnset** задает не более первого символа *подсчета* *str* в *c* (преобразуется в **`char`** ). Если параметр *Count* превышает длину *str*, вместо *Count* используется длина *str* .
 
-**_wcsnset** и **_mbsnset** — это версии **_strnset**для расширенных символов и многобайтовых символов. Строковые аргументы и возвращаемое значение **_wcsnset** являются строками расширенных символов; **_mbsnset** являются строками многобайтовых символов. В остальном эти три функции ведут себя идентично.
+**_wcsnset** и **_mbsnset** — это версии **_strnset** для расширенных символов и многобайтовых символов. Строковые аргументы и возвращаемое значение **_wcsnset** являются строками расширенных символов; **_mbsnset** являются строками многобайтовых символов. В остальном эти три функции ведут себя идентично.
 
 **_mbsnset** проверяет свои параметры; Если *str* является пустым указателем, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md) . Если выполнение может быть продолжено, **_mbsnset** возвращает **значение NULL** **и устанавливает для** **еинвал**. **_strnset** и **_wcsnset** не проверяют их параметры.
 
@@ -202,7 +203,7 @@ After:  **** is a test
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Локаль](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
 [strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>

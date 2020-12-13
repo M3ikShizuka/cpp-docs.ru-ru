@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _disable'
 title: _disable
 ms.date: 09/02/2019
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - rsm instruction
 - disable intrinsic
 ms.assetid: 52da3df9-815c-4524-9839-6d1742cff5c6
-ms.openlocfilehash: 94be850e1d494ff62df84922b46f28481be68314
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: c118315a4fea2dad401cc5c6f3621a8ec3b1794c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216821"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337102"
 ---
 # <a name="_disable"></a>_disable
 
@@ -30,15 +31,15 @@ void _disable(void);
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`_disable`|x86, ARM, x64, ARM64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-`_disable`Указывает, что процессор должен снять флаг прерывания. На платформе x86 систем, эта функция создает инструкцию снятия флага прерывания (`cli`) .
+`_disable` Указывает, что процессор должен снять флаг прерывания. На платформе x86 систем, эта функция создает инструкцию снятия флага прерывания (`cli`) .
 
 Эта функция доступна только в режиме ядра. При использовании в пользовательском режиме, исключение привилегированной инструкции во время выполнения отбрасывается.
 

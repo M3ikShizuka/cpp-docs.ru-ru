@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __debugbreak'
 title: __debugbreak
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - breakpoints, __debugbreak intrinsic
 - __debugbreak intrinsic
 ms.assetid: 1d1e1c0c-891a-4613-ae4b-d790094ba830
-ms.openlocfilehash: e4cf2c85818a878417c560ddb5a80f8690e60a93
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 83a670d9fa9c1f6b41c1c405c59af71c7aa0c8a1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217920"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337104"
 ---
 # <a name="__debugbreak"></a>__debugbreak
 
@@ -29,18 +30,18 @@ void __debugbreak();
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|Header|
+|Intrinsic|Архитектура|Заголовок|
 |---------------|------------------|------------|
-|`__debugbreak`|x86, x64, ARM, ARM64|\<> Intrin. h|
+|`__debugbreak`|x86, x64, ARM, ARM64|\<intrin.h>|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Внутренняя функция компилятора`__debugbreak`, аналогичная [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak), является переносимым способом Win32, который вызывает точку останова.
+`__debugbreak`Внутренняя функция компилятора, аналогичная [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak), является переносимым способом Win32, который вызывает точку останова.
 
 > [!NOTE]
-> При компиляции с **параметром/CLR**функция, содержащая `__debugbreak` , будет скомпилирована в MSIL. При использовании `asm int 3` функция компилируется в машинный код. Дополнительные сведения см. в разделе [__asm](../assembler/inline/asm.md).
+> При компиляции с **параметром/CLR** функция, содержащая, `__debugbreak` будет скомпилирована в MSIL. При использовании `asm int 3` функция компилируется в машинный код. Дополнительные сведения см. в разделе [__asm](../assembler/inline/asm.md).
 
-Например:
+Пример:
 
 ```C
 main() {
@@ -60,7 +61,7 @@ main() {
 
 на компьютере с архитектурой x86.
 
-В ARM64 `__debugbreak` встроенная функция компилируется в инструкцию `brk #0xF000`.
+В ARM64 `__debugbreak` Встроенная функция компилируется в инструкцию `brk #0xF000` .
 
 Эта процедура доступна только как встроенная функция.
 

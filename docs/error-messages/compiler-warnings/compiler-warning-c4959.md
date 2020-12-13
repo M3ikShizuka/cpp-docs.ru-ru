@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: предупреждение компилятора C4959'
 title: Предупреждение компилятора C4959
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - C4959
 ms.assetid: 3a128f3e-4d8a-4565-ba1a-5d32fdeb5982
-ms.openlocfilehash: 13d2ed705bff7b42eb3c348692a5829bd54158b0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 3a4fae04ee654caf23776a7bf4d6b073853bd03a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80164876"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336082"
 ---
 # <a name="compiler-warning-c4959"></a>Предупреждение компилятора C4959
 
 > не удается определить неуправляемую структуру "*тип*" в/CLR: Сейф, так как доступ к ее членам дает непроверяемый код
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Обращение к члену неуправляемого типа приводит к формированию непроверяемого (peverify.exe) образа.
 
-Дополнительные сведения см. в разделе [чистый и проверяемый кодC++(/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).
+Дополнительные сведения см. в разделе [чистый и проверяемый код (C++/CLI)](../../dotnet/pure-and-verifiable-code-cpp-cli.md).
 
 Параметр компилятора **/clr: Сейф** является устаревшим в visual Studio 2015 и не поддерживается в visual Studio 2017.
 

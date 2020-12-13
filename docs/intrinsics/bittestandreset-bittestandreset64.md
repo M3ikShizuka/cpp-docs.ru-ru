@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _bittestandreset, _bittestandreset64'
 title: _bittestandreset, _bittestandreset64
 ms.date: 09/02/2019
 f1_keywords:
@@ -11,18 +12,18 @@ helpviewer_keywords:
 - _bittestandreset intrinsic
 - _bittestandreset64 intrinsic
 ms.assetid: 8dad63bb-a051-4cd7-a793-3357537dfeaf
-ms.openlocfilehash: 9e0c869b926b2f9f3c04fd648f84ef33b8d16fcd
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 5d0b6133b981a7008bbe4979ee123cebd5ef99fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216921"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337171"
 ---
 # <a name="_bittestandreset-_bittestandreset64"></a>_bittestandreset, _bittestandreset64
 
 **Блок, относящийся только к системам Microsoft**
 
-Создайте инструкцию для проверки бита `b` адреса `a`, возврата его текущего значения и сброса бита в значение 0.
+Создайте инструкцию для проверки бита `b` адреса `a` , возврата его текущего значения и сброса бита в значение 0.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -42,7 +43,7 @@ unsigned char _bittestandreset64(
 *конкретного*\
 [вход, выход] Указатель на память для проверки.
 
-*&* \
+*&*\
 окне Битовое расположение для проверки.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -51,14 +52,14 @@ unsigned char _bittestandreset64(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`_bittestandreset`|x86, ARM, x64, ARM64|
 |`_bittestandreset64`|x64, ARM64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эта процедура доступна только как встроенная функция.
 

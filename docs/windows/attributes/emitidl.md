@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: emitidl'
 title: emitidl (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - emitidl attribute
 ms.assetid: 85b80c56-578e-4392-ac03-8443c74ebb7d
-ms.openlocfilehash: 32362f287320e69d1680cbe07ca050143b507514
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 21c4f7fc067eb37b8816bdedd1f338908950566e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846333"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337795"
 ---
 # <a name="emitidl"></a>emitidl
 
@@ -44,7 +45,7 @@ ms.locfileid: "88846333"
 
 - Если *значение Boolean* равно **`false`** , докобж. IDL не импортируется в созданный IDL-файл. Необходимо явным образом импортировать idl-файлы с помощью [импорта](import.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 После обнаружения атрибута **emitidl** C++ в файле исходного кода АТРИБУТЫ категории IDL помещаются в созданный IDL-файл. Если атрибут **emitidl** отсутствует, атрибуты IDL в файле исходного кода выводятся в созданный IDL-файл.
 

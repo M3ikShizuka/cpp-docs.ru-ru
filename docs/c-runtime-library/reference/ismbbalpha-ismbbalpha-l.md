@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ismbbalpha, _ismbbalpha_l'
 title: _ismbbalpha, _ismbbalpha_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - _ismbbalpha function
 - _ismbbalpha_l function
 ms.assetid: 8e54cb92-fc2b-41f5-8ab4-b22ac8aa9ad0
-ms.openlocfilehash: 1fa92d8e0f0ed331110666add1015fbdacf20f07
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 93ae26ff54af4cdee5f99e51c8f85d14ec51ae4e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917498"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335672"
 ---
 # <a name="_ismbbalpha-_ismbbalpha_l"></a>_ismbbalpha, _ismbbalpha_l
 
@@ -58,7 +59,7 @@ int _ismbbalpha_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Целое число, которое требуется проверить.
 
 *locale*<br/>
@@ -70,9 +71,9 @@ int _ismbbalpha_l(
 
 `isalpha(c) || _ismbbkalnum(c)`
 
-параметр имеет ненулевое значение для *языка c*или значение 0, если нет. **_ismbbalpha** использует текущий языковой стандарт для любых параметров символов, зависящих от языкового стандарта. **_ismbbalpha_l** идентично, за исключением того, что он использует переданный языковой стандарт.
+параметр имеет ненулевое значение для *языка c* или значение 0, если нет. **_ismbbalpha** использует текущий языковой стандарт для любых параметров символов, зависящих от языкового стандарта. **_ismbbalpha_l** идентично, за исключением того, что он использует переданный языковой стандарт.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

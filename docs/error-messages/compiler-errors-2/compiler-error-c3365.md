@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C3365'
 title: Ошибка компилятора C3365
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3365
 ms.assetid: 875ec3a4-522c-4e3d-9b67-48808b857f6d
-ms.openlocfilehash: 355c4530fffa89470ac495aff8bc2822278e2da3
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e25c0b4c53b9a811c863a96baf9555d0bde0bfc7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80201199"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335020"
 ---
 # <a name="compiler-error-c3365"></a>Ошибка компилятора C3365
 
 оператор "оператор": отличающиеся операнды типов "тип1" и "тип2"
 
-Попытка компоновки делегатов различного типа.  Дополнительные сведения о делегатах см. [в разделеC++инструкции. Определение и использование делегатов (/CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md) .
+Попытка компоновки делегатов различного типа.  Дополнительные сведения о делегатах см. [в разделе инструкции. Определение и использование делегатов (C++/CLI)](../../dotnet/how-to-define-and-use-delegates-cpp-cli.md) .
 
 ## <a name="example"></a>Пример
 

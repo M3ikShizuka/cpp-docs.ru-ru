@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Friend (C++)'
 title: friend (C++)
 ms.date: 07/15/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - friend classes [C++]
 - friend keyword [C++]
 ms.assetid: 8fe9ee55-d56f-40cd-9075-d9fb1375aff4
-ms.openlocfilehash: 772eada8257917a6127b15ea2e50946aebb3bc74
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 6e25beb10a727d0dcefce15e96059b49c5661601
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227469"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337736"
 ---
 # <a name="friend-c"></a>friend (C++)
 
@@ -155,7 +156,7 @@ int main()
 
 ## <a name="class-members-as-friends"></a>Члены класса как дружественные элементы
 
-Функции-члены класса могут быть объявлены в других классах как дружественные. Рассмотрим следующий пример:
+Функции-члены класса могут быть объявлены в других классах как дружественные. Рассмотрим следующий пример.
 
 ```cpp
 // classes_as_friends1.cpp
@@ -237,6 +238,6 @@ int main() {
 
 Дружественные функции могут быть определены (при наличии тела функции) внутри объявлений класса. Эти функции являются встраиваемыми, и как встраиваемые функции членов они ведут себя так, как если бы они были определены сразу после просмотра всех членов класса, но до закрытия области класса (конец объявления класса). Дружественные функции, определенные внутри объявлений класса, находятся в области включающего класса.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Ключевые слова](../cpp/keywords-cpp.md)

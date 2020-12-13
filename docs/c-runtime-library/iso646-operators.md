@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: операторы ISO646'
 title: Операторы ISO646
 ms.date: 04/11/2018
 ms.assetid: 93e6d3e7-4889-4d8e-8dcb-c1a6b9bbe0f5
-ms.openlocfilehash: 49fba3eda1be77b3a5026039fbd7b4594e317777
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: dafe41000ae702effff17bf333de7efd6d474063
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839300"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335702"
 ---
 # <a name="iso646-operators"></a>Операторы ISO646
 

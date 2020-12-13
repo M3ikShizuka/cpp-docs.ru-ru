@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __emul, __emulu'
 title: __emul, __emulu
 ms.date: 09/02/2019
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - __emul intrinsic
 - __emulu intrinsic
 ms.assetid: 79545236-cca2-40b8-a4e1-8abce9b26311
-ms.openlocfilehash: 16b2b38f6f44b99c9f5b9370ba586342a860684e
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: cdcbd14e4e72bcaf7d2c7fd5f098a291e32227cc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70216739"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337056"
 ---
 # <a name="__emul-__emulu"></a>__emul, __emulu
 
@@ -41,7 +42,7 @@ unsigned __int64 __emulu(
 *конкретного*\
 окне Первый целочисленный операнд умножения.
 
-*&* \
+*&*\
 окне Второй целочисленный операнд умножения.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -50,18 +51,18 @@ unsigned __int64 __emulu(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__emul`|x86, x64|
 |`__emulu`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-`__emul`принимает 2 32-битные значения со знаком и возвращает результат умножения как значение 64-разрядного целого числа со знаком.
+`__emul` принимает 2 32-битные значения со знаком и возвращает результат умножения как значение 64-разрядного целого числа со знаком.
 
-`__emulu`принимает 2 32-разрядные целочисленные значения без знака и возвращает результат умножения как значение 64-битового целого числа без знака.
+`__emulu` принимает 2 32-разрядные целочисленные значения без знака и возвращает результат умножения как значение 64-битового целого числа без знака.
 
 ## <a name="example"></a>Пример
 
@@ -95,7 +96,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Вывод
+## <a name="output"></a>Выходные данные
 
 ```Output
 -268435456 * 2 = -536870912

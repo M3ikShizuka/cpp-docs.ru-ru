@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _get_errno'
 title: _get_errno
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - errno global variable
 - _get_errno function
 ms.assetid: b3fd5ebc-f41b-4314-a2f4-2f2d79d6e740
-ms.openlocfilehash: f1678628685c74519077fb68ca9c810aebe30fdd
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 6df162974494a29d55af9e27eb7a2b526a27cf45
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919343"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336516"
 ---
 # <a name="_get_errno"></a>_get_errno
 
@@ -56,7 +57,7 @@ errno_t _get_errno(
 
 Возвращает нуль в случае успеха или код ошибки в случае ошибки. Если параметр *pValue* имеет **значение NULL**, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эта функция **устанавливает** **Еинвал** и возвращает **еинвал**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Возможные значения параметра «н/д **» определены в** виде «н. h». Также см. раздел [Константы errno](../../c-runtime-library/errno-constants.md).
 
@@ -99,4 +100,4 @@ fyi, ENOENT = 2
 ## <a name="see-also"></a>См. также раздел
 
 [_set_errno](set-errno.md)<br/>
-[errno, _doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>
+[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>

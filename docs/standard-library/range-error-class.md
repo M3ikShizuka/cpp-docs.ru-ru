@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: range_error классе'
 title: Класс range_error
 ms.date: 08/14/2018
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - range_error class
 ms.assetid: 8afb3e88-fc49-4213-b096-ed63d7aea37c
-ms.openlocfilehash: 3e741604a3bb23fa8166023d115f79e7a288e2f7
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: c9d1ef328ba077b4b675d782df9c85d2db3a2072
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68458250"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337952"
 ---
-# <a name="rangeerror-class"></a>Класс range_error
+# <a name="range_error-class"></a>Класс range_error
 
 Этот класс служит базовым для всех исключений, создаваемых для сообщения об ошибке в диапазоне.
 
@@ -27,9 +28,9 @@ public:
 };
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Значение, возвращаемое [, является](../standard-library/exception-class.md) копией `message.data`. Дополнительные сведения см. в разделе [basic_string::d ATA](../standard-library/basic-string-class.md#data).
+Значение, возвращаемое [, является](../standard-library/exception-class.md) копией `message.data` . Дополнительные сведения см. в разделе [basic_string::d ATA](../standard-library/basic-string-class.md#data).
 
 ## <a name="example"></a>Пример
 
@@ -58,11 +59,11 @@ Type: class std::range_error
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<stdexcept>
+**Заголовок:**\<stdexcept>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Класс runtime_error](../standard-library/runtime-error-class.md)\
-[Потокобезопасность в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)

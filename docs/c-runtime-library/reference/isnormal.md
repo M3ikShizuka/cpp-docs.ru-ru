@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о параметре "Обычная"
 title: isnormal
 ms.date: 01/31/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 - math/isnormal
 helpviewer_keywords:
 - isnormal function
-ms.openlocfilehash: 2e12cabb57f2e51c08b4d93af33dae85164d016b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3afae5196a7a6b2b149028ad347f95baa27b1544
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213532"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337763"
 ---
 # <a name="isnormal"></a>isnormal
 
@@ -39,13 +40,13 @@ inline bool isnormal(
 
 функция «с **нормальным** возвратом» возвращает ненулевое значение ( **`true`** в коде C++), если аргумент *x* не равен ни нулю, ни поднормализованному, бесконечному значению, ни NaN. В противном **случае возвращает 0** ( **`false`** в коде C++).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **функция oninline является** макросом, скомпилированным как C, и шаблоном встроенной функции при компиляции в виде C++.
 
 ## <a name="requirements"></a>Требования
 
-|Компонент|Обязательный заголовок (C)|Обязательный заголовок (C++)|
+|Функция|Обязательный заголовок (C)|Обязательный заголовок (C++)|
 |--------------|---------------------------|-------------------------------|
 |**isnormal**|\<math.h>|\<math.h> или \<cmath>|
 
@@ -55,6 +56,6 @@ inline bool isnormal(
 
 [Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
 [isfinite, _finite, _finitef](finite-finitef.md)<br/>
-[isinf](isinf.md)<br/>
+[исинф](isinf.md)<br/>
 [isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
 [_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Каниматионтимеревенсандлер Class'
 title: Класс CAnimationTimerEventHandler
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - CAnimationTimerEventHandler [MFC], OnRenderingTooSlow
 - CAnimationTimerEventHandler [MFC], SetAnimationController
 ms.assetid: 188dea3b-4b5e-4f6b-8df9-09d993a21619
-ms.openlocfilehash: d1653e50fef03deb8eb23dd9a989d1ca2a529dd8
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 5d5f3e07eeb7ffe3f3bb226afd566330808303ac
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81755090"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336753"
 ---
 # <a name="canimationtimereventhandler-class"></a>Класс CAnimationTimerEventHandler
 
@@ -33,21 +34,21 @@ ms.locfileid: "81755090"
 class CAnimationTimerEventHandler : public CUIAnimationTimerEventHandlerBase<CAnimationTimerEventHandler>;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CAnimationTimerEventHandler::CreateInstance](#createinstance)|Создает экземпляр `CAnimationTimerEventHandler` обратного вызова.|
-|[CAnimationTimerEventHandler::OnPostUpdate](#onpostupdate)|Обработка событий, возникающих после завершения обновления анимации. (Переопределяет `CUIAnimationTimerEventHandlerBase::OnPostUpdate`.)|
-|[CAnimationTimerEventHandler::OnpreUpdate](#onpreupdate)|Обработка событий, возникающих до начала обновления анимации. (Переопределяет `CUIAnimationTimerEventHandlerBase::OnPreUpdate`.)|
-|[CAnimationTimerEventHandler::OnRenderingTooSlow](#onrenderingtooslow)|Обрабатывает события, возникающие при частоте рендеринга кадров для анимации, ниже минимальножелаемой частоты кадров. (Переопределяет `CUIAnimationTimerEventHandlerBase::OnRenderingTooSlow`.)|
-|[CAnimationTimerEventHandler::SetAnimationController](#setanimationcontroller)|Хранит указатель контроллера анимации для маршрутизатора событий.|
+|[Каниматионтимеревенсандлер:: CreateInstance](#createinstance)|Создает экземпляр `CAnimationTimerEventHandler` обратного вызова.|
+|[Каниматионтимеревенсандлер:: Онпоступдате](#onpostupdate)|Обрабатывает события, происходящие после завершения обновления анимации. (Переопределяет `CUIAnimationTimerEventHandlerBase::OnPostUpdate`.)|
+|[Каниматионтимеревенсандлер:: Онпреупдате](#onpreupdate)|Обрабатывает события, происходящие перед началом обновления анимации. (Переопределяет `CUIAnimationTimerEventHandlerBase::OnPreUpdate`.)|
+|[Каниматионтимеревенсандлер:: Онрендерингтуслов](#onrenderingtooslow)|Обрабатывает события, происходящие, когда частота кадров отрисовки для анимации падает ниже минимально желаемой частоты кадров. (Переопределяет `CUIAnimationTimerEventHandlerBase::OnRenderingTooSlow`.)|
+|[Каниматионтимеревенсандлер:: Сетаниматионконтроллер](#setanimationcontroller)|Хранит указатель на контроллер анимации для маршрутизации событий.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Обработчик событий создается и передается iUIAnimationTimer::SetTimerEventHandler при вызове CAnimationController::EnableAnimationTimerEventHandler.
+Этот обработчик событий создается и передается в Иуианиматионтимер:: Сеттимеревенсандлер при вызове Каниматионконтроллер:: Енаблеаниматионтимеревенсандлер.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -61,9 +62,9 @@ class CAnimationTimerEventHandler : public CUIAnimationTimerEventHandlerBase<CAn
 
 **Заголовок:** afxanimationcontroller.h
 
-## <a name="canimationtimereventhandlercreateinstance"></a><a name="createinstance"></a>CAnimationTimerEventHandler::CreateInstance
+## <a name="canimationtimereventhandlercreateinstance"></a><a name="createinstance"></a> Каниматионтимеревенсандлер:: CreateInstance
 
-Создает экземпляр обратного вызова CAnimationTimerEventHandler.
+Создает экземпляр обратного вызова Каниматионтимеревенсандлер.
 
 ```
 static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
@@ -73,18 +74,18 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 
 ### <a name="parameters"></a>Параметры
 
-*pAnimationКонтроллер*<br/>
-Указатель на контроллер анимации, который будет получать события.
+*паниматионконтроллер*<br/>
+Указатель на контроллер анимации, который будет принимать события.
 
-*ppTimerEventHandler*
+*пптимеревенсандлер*
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод завершается успешно, возвращает значение S_OK. В противном случае он возвращает код ошибки HRESULT.
+Если метод завершается успешно, возвращает значение S_OK. В противном случае возвращается код ошибки HRESULT.
 
-## <a name="canimationtimereventhandleronpostupdate"></a><a name="onpostupdate"></a>CAnimationTimerEventHandler::OnPostUpdate
+## <a name="canimationtimereventhandleronpostupdate"></a><a name="onpostupdate"></a> Каниматионтимеревенсандлер:: Онпоступдате
 
-Обработка событий, возникающих после завершения обновления анимации.
+Обрабатывает события, происходящие после завершения обновления анимации.
 
 ```
 IFACEMETHOD(OnPostUpdate)();
@@ -92,11 +93,11 @@ IFACEMETHOD(OnPostUpdate)();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK, если метод удается; в противном случае E_FAIL.
+S_OK, если метод выполнен. в противном случае E_FAIL.
 
-## <a name="canimationtimereventhandleronpreupdate"></a><a name="onpreupdate"></a>CAnimationTimerEventHandler::OnpreUpdate
+## <a name="canimationtimereventhandleronpreupdate"></a><a name="onpreupdate"></a> Каниматионтимеревенсандлер:: Онпреупдате
 
-Обработка событий, возникающих до начала обновления анимации.
+Обрабатывает события, происходящие перед началом обновления анимации.
 
 ```
 IFACEMETHOD(OnPreUpdate)();
@@ -104,11 +105,11 @@ IFACEMETHOD(OnPreUpdate)();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK, если метод удается; в противном случае E_FAIL.
+S_OK, если метод выполнен. в противном случае E_FAIL.
 
-## <a name="canimationtimereventhandleronrenderingtooslow"></a><a name="onrenderingtooslow"></a>CAnimationTimerEventHandler::OnRenderingTooSlow
+## <a name="canimationtimereventhandleronrenderingtooslow"></a><a name="onrenderingtooslow"></a> Каниматионтимеревенсандлер:: Онрендерингтуслов
 
-Обрабатывает события, возникающие при частоте рендеринга кадров для анимации, ниже минимальножелаемой частоты кадров.
+Обрабатывает события, происходящие, когда частота кадров отрисовки для анимации падает ниже минимально желаемой частоты кадров.
 
 ```
 IFACEMETHOD(OnRenderingTooSlow)(UINT32 fps);
@@ -116,15 +117,15 @@ IFACEMETHOD(OnRenderingTooSlow)(UINT32 fps);
 
 ### <a name="parameters"></a>Параметры
 
-*Fps*
+*частота*
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK, если метод удается; в противном случае E_FAIL.
+S_OK, если метод выполнен. в противном случае E_FAIL.
 
-## <a name="canimationtimereventhandlersetanimationcontroller"></a><a name="setanimationcontroller"></a>CAnimationTimerEventHandler::SetAnimationController
+## <a name="canimationtimereventhandlersetanimationcontroller"></a><a name="setanimationcontroller"></a> Каниматионтимеревенсандлер:: Сетаниматионконтроллер
 
-Хранит указатель контроллера анимации для маршрутизатора событий.
+Хранит указатель на контроллер анимации для маршрутизации событий.
 
 ```cpp
 void SetAnimationController(CAnimationController* pAnimationController);
@@ -132,8 +133,8 @@ void SetAnimationController(CAnimationController* pAnimationController);
 
 ### <a name="parameters"></a>Параметры
 
-*pAnimationКонтроллер*<br/>
-Указатель на контроллер анимации, который будет получать события.
+*паниматионконтроллер*<br/>
+Указатель на контроллер анимации, который будет принимать события.
 
 ## <a name="see-also"></a>См. также раздел
 

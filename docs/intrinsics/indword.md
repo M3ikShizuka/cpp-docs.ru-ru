@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __indword'
 title: __indword
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - in instruction
 - __indword intrinsic
 ms.assetid: 1068d686-586e-4e36-b962-d1d7c3315260
-ms.openlocfilehash: 790b65c8a565124df92b82b7ea17174788086a96
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: bd637027ee930b551f08508874554e2b19f22461
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222120"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336928"
 ---
 # <a name="__indword"></a>__indword
 
@@ -40,13 +41,13 @@ unsigned long __indword(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__indword`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эта процедура доступна только как встроенная функция.
 

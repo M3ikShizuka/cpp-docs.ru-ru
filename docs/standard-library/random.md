@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; случайные&gt;'
 title: '&lt;random&gt;'
 ms.date: 08/24/2017
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - random header
 ms.assetid: 60afc25c-b162-4811-97c1-1b65398d4c57
-ms.openlocfilehash: e66ffbfba7a7cc4a7dfebbc2dcc074842de3c1ac
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4080e305620dbe4b8fa1674762c27ece4eccd0a1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831442"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337966"
 ---
 # <a name="ltrandomgt"></a>&lt;random&gt;
 
@@ -26,7 +27,7 @@ ms.locfileid: "88831442"
 > [!NOTE]
 > \<random>Библиотека использует инструкцию "#include <initializer_list>".
 
-## <a name="summary"></a>Итоги
+## <a name="summary"></a>Сводка
 
 *Генератор случайных чисел* — это объект, формирующий последовательность из псевдослучайных чисел. Генератор, который выдает значения с равномерным распределением в указанном диапазоне, называют *равномерным генератором случайных чисел* (РГСЧ). Шаблон класса, предназначенный для работы в качестве РГСЧ, называется *подсистемой* , если этот класс имеет некоторые общие признаки, которые обсуждаются далее в этой статье. РГСЧ может объединяться и обычно объединяется с *распределением* путем передачи РГСЧ в качестве аргумента в `operator()` распределения для получения значений, распределенных в соответствии с заданным распределением.
 
@@ -357,7 +358,7 @@ Randomized array: Si C Sc H Na O S Cr K Li Al Ti Cl B Mn He Fe Ne Be Ar V P Ca N
 |-|-|
 |[Класс cauchy_distribution](../standard-library/cauchy-distribution-class.md)|Формирует распределение Коши вещественных значений (с плавающей запятой).|
 |[Класс chi_squared_distribution](../standard-library/chi-squared-distribution-class.md)|Формирует распределение хи-квадрат вещественных значений (с плавающей запятой).|
-|[Класс fisher_f_distribution](../standard-library/fisher-f-distribution-class.md)|Создает F-распределение (также известное как Снедекора F Distribution или Фишера-Снедекора Distribution) реальных значений (с плавающей запятой).|
+|[Класс fisher_f_distribution](../standard-library/fisher-f-distribution-class.md)|Создает F-распределение (также известное как Снедекора F Distribution или распределение Fisher-Snedecor) реальных значений (с плавающей запятой).|
 |[Класс lognormal_distribution](../standard-library/lognormal-distribution-class.md)|Формирует логарифмически нормальное распределение вещественных значений (с плавающей запятой).|
 |[Класс normal_distribution](../standard-library/normal-distribution-class.md)|Формирует нормальное (Гауссово) распределение вещественных значений (с плавающей запятой).|
 |[Класс student_t_distribution](../standard-library/student-t-distribution-class.md)|Формирует *t*-распределение Стьюдента вещественных значений (с плавающей запятой).|

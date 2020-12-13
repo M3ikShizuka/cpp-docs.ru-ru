@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __incfsbyte, __incfsword, __incfsdword'
 title: __incfsbyte, __incfsword, __incfsdword
 ms.date: 09/02/2019
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - __incfsdword intrinsic
 - __incfsbyte intrinsic
 ms.assetid: 820457fb-e35e-42d3-bcb6-725da3281c64
-ms.openlocfilehash: 43824829043304f5762d049b5c75a72b57e2102c
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 29d86de51ad282789cb19b72ca953f65af2dc19d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222122"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336961"
 ---
 # <a name="__incfsbyte-__incfsword-__incfsdword"></a>__incfsbyte, __incfsword, __incfsdword
 
@@ -43,19 +44,19 @@ void __incfsdword(
 ### <a name="parameters"></a>Параметры
 
 *Собой*\
-окне Смещение от начала `FS`.
+окне Смещение от начала `FS` .
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__incfsbyte`|x86|
 |`__incfsword`|x86|
 |`__incfsdword`|x86|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эти встроенные функции доступны только в режиме ядра, а подпрограммы доступны только в виде встроенных функций.
 
@@ -63,7 +64,7 @@ void __incfsdword(
 
 ## <a name="see-also"></a>См. также
 
-[\__addfsbyte, \__addfsword, \__addfsdword](../intrinsics/addfsbyte-addfsword-addfsdword.md)\
-[\__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)\
-[\__writefsbyte, \__writefsdword, \__writefsqword, \__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)\
-[Встроенные функции компилятора](../intrinsics/compiler-intrinsics.md)
+[\__addfsbyte, \_ _addfsword \_ _addfsdword](../intrinsics/addfsbyte-addfsword-addfsdword.md)\
+[\__readfsbyte, \_ _readfsdword, \_ _readfsqword, \_ _readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)\
+[\__writefsbyte, \_ _writefsdword, \_ _writefsqword, \_ _writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)\
+[Встроенные объекты компилятора](../intrinsics/compiler-intrinsics.md)

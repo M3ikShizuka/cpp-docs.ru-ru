@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: глобальные функции COM компилятора'
 title: Глобальные функции COM-модели компилятора
 ms.date: 11/04/2016
 helpviewer_keywords:
 - cl.exe compiler, COM support
 - COM, compiler support
 ms.assetid: 74449d26-50a2-47c7-b175-7cf2cf83533e
-ms.openlocfilehash: c0a9c742ad9dcbb05ed2d78c954d5a597e3b57cb
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: d678372bdc5703aa05fdf093b84075b7286c4b9d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80189784"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335550"
 ---
 # <a name="compiler-com-global-functions"></a>Глобальные функции COM-модели компилятора
 
@@ -18,7 +19,7 @@ ms.locfileid: "80189784"
 
 Доступны следующие процедуры.
 
-|Компонент|Description|
+|Функция|Описание|
 |--------------|-----------------|
 |[_com_raise_error](../cpp/com-raise-error.md)|Вызывает исключение [_com_error](../cpp/com-error-class.md) в ответ на сбой.|
 |[_set_com_error_handler](../cpp/set-com-error-handler.md)|Заменяет функцию по умолчанию, используемую для обработки ошибок COM.|
@@ -27,7 +28,7 @@ ms.locfileid: "80189784"
 
 **Завершение блока, относящегося только к системам Майкрософт**
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-[Классы поддержки модели COM компилятора](../cpp/compiler-com-support-classes.md)<br/>
-[Поддержка COM компилятора](../cpp/compiler-com-support.md)
+[Классы поддержки COM компилятора](../cpp/compiler-com-support-classes.md)<br/>
+[Поддержка COM компилятором](../cpp/compiler-com-support.md)

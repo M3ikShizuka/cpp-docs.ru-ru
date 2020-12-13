@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ismbbkprint, _ismbbkprint_l'
 title: _ismbbkprint, _ismbbkprint_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - ismbbkprint function
 - _ismbbkprint_l function
 ms.assetid: 8d1d3258-1e34-4365-81ed-97c95de25475
-ms.openlocfilehash: 183a883d259fd322c5ecd6712bba676b7ffe080c
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 2d48f77143ffb14b142380cf0c3d2f3b4ceb3675
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915718"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337765"
 ---
 # <a name="_ismbbkprint-_ismbbkprint_l"></a>_ismbbkprint, _ismbbkprint_l
 
@@ -59,7 +60,7 @@ int _ismbbkprint_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Целое число, которое требуется проверить.
 
 *locale*<br/>
@@ -69,7 +70,7 @@ int _ismbbkprint_l(
 
 **_ismbbkprint** возвращает ненулевое значение, если целое число *c* является ТЕКСТОВым или не ASCII-символом пунктуации, или 0 в противном случае. Например, только для кодовой страницы 932, **_ismbbkprint** проверяет на принадлежность к алфавитно-цифровым или пунктуационным символам катаканы (диапазон: 0xA1–0xDF). **_ismbbkprint** использует текущий языковой стандарт для параметров символов, зависящих от языкового стандарта. **_ismbbkprint_l** идентично, за исключением того, что он использует переданный языковой стандарт. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

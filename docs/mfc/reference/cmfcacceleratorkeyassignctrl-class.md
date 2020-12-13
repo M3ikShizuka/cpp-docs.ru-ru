@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кмфкакцелераторкэйассигнктрл Class'
 title: Класс CMFCAcceleratorKeyAssignCtrl
 ms.date: 10/18/2018
 f1_keywords:
@@ -18,16 +19,16 @@ helpviewer_keywords:
 - CMFCAcceleratorKeyAssignCtrl [MFC], PreTranslateMessage
 - CMFCAcceleratorKeyAssignCtrl [MFC], ResetKey
 ms.assetid: 89fb8e62-596e-4e71-8c9a-32740347aaab
-ms.openlocfilehash: 2021a2069885c6314859a65d528cf03712c524b6
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 0f5584dfa521f45841691bff3775d9cd98808b9a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81751738"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336587"
 ---
 # <a name="cmfcacceleratorkeyassignctrl-class"></a>Класс CMFCAcceleratorKeyAssignCtrl
 
-Класс `CMFCAcceleratorKeyAssignCtrl` расширяет [класс CEdit](../../mfc/reference/cedit-class.md) для поддержки дополнительных системных кнопок, таких как ALT, CONTROL и SHIFT.
+`CMFCAcceleratorKeyAssignCtrl`Класс расширяет [класс CEdit](../../mfc/reference/cedit-class.md) для поддержки дополнительных системных кнопок, таких как Alt, Control и Shift.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -35,29 +36,29 @@ ms.locfileid: "81751738"
 class CMFCAcceleratorKeyAssignCtrl : public CEdit
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CMFCAcceleratorKeyAssignCtrl::CMFCAcceleratorKeyAssignCtrl](#cmfcacceleratorkeyassignctrl)|Формирует объект `CMFCAcceleratorKeyAssignCtrl`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CMFCAcceleratorKeyAssignCtrl::GetAccel](#getaccel)|Извлекает `ACCEL` структуру для сочетания клавиш, нажатого в объекте `CMFCAcceleratorKeyAssignCtrl`.|
-|[CMFCAcceleratorKeyAssignCtrl::Isfocused](#isfocused)||
+|[Кмфкакцелераторкэйассигнктрл:: с фокусом](#isfocused)||
 |[CMFCAcceleratorKeyAssignCtrl::IsKeyDefined](#iskeydefined)|Определяет, задано ли сочетание клавиш.|
 |[CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage](#pretranslatemessage)|Используется классом [CWinApp](../../mfc/reference/cwinapp-class.md) для преобразования сообщений окна перед их передачей функциям Windows [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) и [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) . (Переопределяет [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|
 |[CMFCAcceleratorKeyAssignCtrl::ResetKey](#resetkey)|Сбрасывает сочетание клавиш.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот класс расширяет функциональность класса `CEdit` благодаря поддержке сочетаний клавиш. Класс `CMFCAcceleratorKeyAssignCtrl` функционирует как [класс CEdit,](../../mfc/reference/cedit-class.md) и он также может распознавать системные кнопки.
+Этот класс расширяет функциональность класса `CEdit` благодаря поддержке сочетаний клавиш. `CMFCAcceleratorKeyAssignCtrl`Класс функционирует как [класс CEdit](../../mfc/reference/cedit-class.md) и может также распознать системные кнопки.
 
-Этот класс сопоставляет физические сочетания клавиш со строковыми значениями. Например, пусть сочетание клавиш ALT+B сопоставлено со строкой "Alt + B". Когда пользователь нажимает это сочетание клавиш в объекте `CMFCAcceleratorKeyAssignCtrl`, отображается строка "Alt + B". Для получения дополнительной информации о отображении между клавишами ярлыка и форматом строки [см.](../../mfc/reference/cmfcacceleratorkey-class.md)
+Этот класс сопоставляет физические сочетания клавиш со строковыми значениями. Например, пусть сочетание клавиш ALT+B сопоставлено со строкой "Alt + B". Когда пользователь нажимает это сочетание клавиш в объекте `CMFCAcceleratorKeyAssignCtrl`, отображается строка "Alt + B". Дополнительные сведения о сопоставлении сочетаний клавиш и формата строки см. в разделе [класс кмфкакцелераторкэй](../../mfc/reference/cmfcacceleratorkey-class.md).
 
 ## <a name="example"></a>Пример
 
@@ -79,19 +80,19 @@ class CMFCAcceleratorKeyAssignCtrl : public CEdit
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxacceleratorkeyassignctrl.h
+**Заголовок:** афксакцелераторкэйассигнктрл. h
 
-## <a name="cmfcacceleratorkeyassignctrlcmfcacceleratorkeyassignctrl"></a><a name="cmfcacceleratorkeyassignctrl"></a>CMFCAcceleratorKeyAssignCtrl::CMFCAcceleratorKeyAssignCtrl
+## <a name="cmfcacceleratorkeyassignctrlcmfcacceleratorkeyassignctrl"></a><a name="cmfcacceleratorkeyassignctrl"></a> Кмфкакцелераторкэйассигнктрл:: Кмфкакцелераторкэйассигнктрл
 
-Строит объект [CMFCAcceleratorKeyAssignCtrl.](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md)
+Конструирует объект [кмфкакцелераторкэйассигнктрл](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) .
 
 ```
 CMFCAcceleratorKeyAssignCtrl();
 ```
 
-## <a name="cmfcacceleratorkeyassignctrlgetaccel"></a><a name="getaccel"></a>CMFCAcceleratorKeyAssignCtrl::GetAccel
+## <a name="cmfcacceleratorkeyassignctrlgetaccel"></a><a name="getaccel"></a> Кмфкакцелераторкэйассигнктрл:: i
 
-Извлекает `ACCEL` структуру для клавиши, нажатой в объекте [CMFCAcceleratorKeyAssignCtrl.](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md)
+Извлекает `ACCEL` структуру сочетания клавиш, нажатой в объекте [кмфкакцелераторкэйассигнктрл](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) .
 
 ```
 ACCEL const* GetAccel() const;
@@ -99,15 +100,15 @@ ACCEL const* GetAccel() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Структура, `ACCEL` описывающая ключ ярлыка.
+`ACCEL`Структура, описывающая сочетание клавиш.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте эту функцию `ACCEL` для получения структуры для ключа ярлыка, который пользователь ввел в объект. `CMFCAcceleratorKeyAssignCtrl`
+Эта функция используется для получения `ACCEL` структуры сочетания клавиш, вводимых пользователем в `CMFCAcceleratorKeyAssignCtrl` объект.
 
-## <a name="cmfcacceleratorkeyassignctrlisfocused"></a><a name="isfocused"></a>CMFCAcceleratorKeyAssignCtrl::Isfocused
+## <a name="cmfcacceleratorkeyassignctrlisfocused"></a><a name="isfocused"></a> Кмфкакцелераторкэйассигнктрл:: с фокусом
 
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ```
 BOOL IsFocused() const;
@@ -115,11 +116,11 @@ BOOL IsFocused() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcacceleratorkeyassignctrliskeydefined"></a><a name="iskeydefined"></a>CMFCAcceleratorKeyAssignCtrl::IsKeyDefined
+## <a name="cmfcacceleratorkeyassignctrliskeydefined"></a><a name="iskeydefined"></a> Кмфкакцелераторкэйассигнктрл:: Искэйдефинед
 
-Определяет, был ли определен ключ кратки в объекте [CMFCAcceleratorKeyAssignCtrl.](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md)
+Определяет, определен ли в объекте [кмфкакцелераторкэйассигнктрл](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) сочетание клавиш.
 
 ```
 BOOL IsKeyDefined() const;
@@ -127,15 +128,15 @@ BOOL IsKeyDefined() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если пользователь уже нажал действительную комбинацию ключей, которые определяют ключ ярлыка; в противном случае 0.
+Ненулевое значение, если пользователь уже нажал на допустимое сочетание ключей, определяющих сочетание клавиш; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте эту функцию, чтобы определить, ввел `CMFCAcceleratorKeyAssignCtrl` ли пользователь действительноключный ключ в объекте. Если ключ ярлыка существует, вы можете использовать [cmFCAcceleratorKeyAssignCtrl::GetAccel](#getaccel) метод для получения `ACCEL` структуры, связанной с этим ключом ярлыка.
+Эта функция используется для определения того, вошел ли пользователь в объект в качестве допустимого сочетания клавиш `CMFCAcceleratorKeyAssignCtrl` . Если сочетание клавиш существует, можно использовать метод [кмфкакцелераторкэйассигнктрл::](#getaccel) , чтобы получить `ACCEL` структуру, связанную с этим сочетанием клавиш.
 
-## <a name="cmfcacceleratorkeyassignctrlpretranslatemessage"></a><a name="pretranslatemessage"></a>CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage
+## <a name="cmfcacceleratorkeyassignctrlpretranslatemessage"></a><a name="pretranslatemessage"></a> Кмфкакцелераторкэйассигнктрл::P Ретранслатемессаже
 
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -147,9 +148,9 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcacceleratorkeyassignctrlresetkey"></a><a name="resetkey"></a>CMFCAcceleratorKeyAssignCtrl::ResetKey
+## <a name="cmfcacceleratorkeyassignctrlresetkey"></a><a name="resetkey"></a> Кмфкакцелераторкэйассигнктрл:: Ресеткэй
 
 Сбрасывает сочетание клавиш.
 
@@ -157,12 +158,12 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 void ResetKey();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Функция очищает текст управления редактированием. Это включает в себя любые клавиши ярлыка, которые пользователь нажал.
+Функция очищает текст элемента управления Edit. Сюда входят все сочетания клавиш, нажатые пользователем.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
-[CMFCAcceleratorKey Класс](../../mfc/reference/cmfcacceleratorkey-class.md)
+[Класс Кмфкакцелераторкэй](../../mfc/reference/cmfcacceleratorkey-class.md)

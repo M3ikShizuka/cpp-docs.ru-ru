@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CAnimationValue Class'
 title: Класс CAnimationValue
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CAnimationValue [MFC], GetAnimationVariableList
 - CAnimationValue [MFC], m_value
 ms.assetid: 78c5ae19-ede5-4f20-bfbe-68b467b603c2
-ms.openlocfilehash: e020e3e123bb5dc96a623e7a41896d75c611b81e
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: d704e83d286b4078af90d09edef35e8445d149d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81755085"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336750"
 ---
 # <a name="canimationvalue-class"></a>Класс CAnimationValue
 
@@ -37,52 +38,52 @@ ms.locfileid: "81755085"
 class CAnimationValue : public CAnimationBaseObject;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CAnimationValue::CAnimationValue](#canimationvalue)|Перегружен. Строит объект CAnimationValue.|
+|[CAnimationValue:: CAnimationValue](#canimationvalue)|Перегружен. Конструирует объект CAnimationValue.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CAnimationValue::AddTransition](#addtransition)|Добавляет переход, который должен быть применен к значению.|
-|[CAnimationValue::GetValue](#getvalue)|Перегружен. Извлекает текущее значение.|
-|[CAnimationValue::GetVariable](#getvariable)|Обеспечивает доступ к инкапсулированной переменной анимации.|
-|[CAnimationValue::SetDefaultValue](#setdefaultvalue)|Устанавливает значение по умолчанию.|
+|[CAnimationValue:: Аддтранситион](#addtransition)|Добавляет переход, применяемый к значению.|
+|[CAnimationValue:: GetValue](#getvalue)|Перегружен. Извлекает текущее значение.|
+|[CAnimationValue:: variable](#getvariable)|Предоставляет доступ к переменной инкапсулированной анимации.|
+|[CAnimationValue:: Сетдефаултвалуе](#setdefaultvalue)|Задает значение по умолчанию.|
 
 ### <a name="protected-methods"></a>Защищенные методы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CAnimationValue::GetAnimationVariableList](#getanimationvariablelist)|Помещает инкапсулированную переменную анимации в список. (Оверлет [CAnimationBaseObject::GetAnimationVariableList](../../mfc/reference/canimationbaseobject-class.md#getanimationvariablelist).)|
+|[CAnimationValue:: Жетаниматионвариаблелист](#getanimationvariablelist)|Помещает переменную инкапсулированной анимации в список. (Переопределяет [каниматионбасеобжект:: жетаниматионвариаблелист](../../mfc/reference/canimationbaseobject-class.md#getanimationvariablelist).)|
 
 ### <a name="public-operators"></a>Открытые операторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CAnimationValue::оператор DOUBLE](#operator_double)|Обеспечивает преобразование между CAnimationValue и DOUBLE.|
-|[CAnimationValue::оператор INT32](#operator_int32)|Обеспечивает конверсию между CAnimationValue и INT32.|
-|[CAnimationValue::оператор](#operator_eq)|Перегружен. Присваивает значение INT32 CAnimationValue.|
+|[CAnimationValue:: operator, двойной](#operator_double)|Обеспечивает преобразование между CAnimationValue и DOUBLE.|
+|[CAnimationValue:: operator INT32](#operator_int32)|Обеспечивает преобразование между CAnimationValue и INT32.|
+|[CAnimationValue:: operator =](#operator_eq)|Перегружен. Присваивает значение INT32 CAnimationValue.|
 
 ### <a name="protected-data-members"></a>Защищенные члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CAnimationValue::m_value](#m_value)|Инкапсулированная переменная анимации, представляющая значение анимации.|
+|[CAnimationValue:: m_value](#m_value)|Переменная инкапсулированной анимации, представляющая значение анимации.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Класс CAnimationValue инкапсулирует один объект CAnimationVariable и может представлять в приложениях одно анимированное значение. Например, этот класс можно использовать для анимированной прозрачности (эффект увядания), угла (для поворота объектов) или для любого другого случая, когда необходимо создать анимацию в зависимости от одного анимированного значения. Чтобы использовать этот класс в приложении, просто мгновенно объект этого класса, добавьте его в контроллер анимации с помощью CAnimationController::AddAnimationObject и вызов AddTransition для каждого перехода, который будет применяться к значению.
+Класс CAnimationValue инкапсулирует один объект CAnimationVariable и может представлять в приложениях одно анимированное значение. Например, этот класс можно использовать для анимированной прозрачности (эффекта исчезновения), угла (для поворота объектов) или для любого другого случая, когда необходимо создать анимацию в зависимости от одного анимированного значения. Чтобы использовать этот класс в приложении, просто создайте экземпляр объекта этого класса, добавьте его в контроллер анимации с помощью Каниматионконтроллер:: Адданиматионобжект и вызовите Аддтранситион для каждого перехода, применяемого к значению.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
 [CObject](../../mfc/reference/cobject-class.md)
 
-[CAnimationBaseObject](../../mfc/reference/canimationbaseobject-class.md)
+[каниматионбасеобжект](../../mfc/reference/canimationbaseobject-class.md)
 
 `CAnimationValue`
 
@@ -90,9 +91,9 @@ class CAnimationValue : public CAnimationBaseObject;
 
 **Заголовок:** afxanimationcontroller.h
 
-## <a name="canimationvalueaddtransition"></a><a name="addtransition"></a>CAnimationValue::AddTransition
+## <a name="canimationvalueaddtransition"></a><a name="addtransition"></a> CAnimationValue:: Аддтранситион
 
-Добавляет переход, который должен быть применен к значению.
+Добавляет переход, применяемый к значению.
 
 ```cpp
 void AddTransition(CBaseTransition* pTransition);
@@ -100,16 +101,16 @@ void AddTransition(CBaseTransition* pTransition);
 
 ### <a name="parameters"></a>Параметры
 
-*pTransition*<br/>
+*птранситион*<br/>
 Указатель на объект перехода.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вызовите эту функцию, чтобы добавить переход во внутренний список переходов, которые будут применены к переменной анимации. При добавлении переходов они не применяются немедленно и хранятся во внутреннем списке. Переходы применяются (добавлены к раскадровке для определенного значения) при вызове CAnimationController::AnimateGroup.
+Вызовите эту функцию, чтобы добавить переход к внутреннему списку переходов, применяемых к переменной анимации. При добавлении переходов они не применяются немедленно и хранятся во внутреннем списке. Переходы применяются (добавляются к раскадровке для конкретного значения) при вызове Каниматионконтроллер:: Аниматеграуп.
 
-## <a name="canimationvaluecanimationvalue"></a><a name="canimationvalue"></a>CAnimationValue::CAnimationValue
+## <a name="canimationvaluecanimationvalue"></a><a name="canimationvalue"></a> CAnimationValue:: CAnimationValue
 
-Строит объект CAnimationValue.
+Конструирует объект CAnimationValue.
 
 ```
 CAnimationValue();
@@ -123,25 +124,25 @@ CAnimationValue(
 
 ### <a name="parameters"></a>Параметры
 
-*dblDefaultValue*<br/>
-Определяет значение по умолчанию.
+*дблдефаултвалуе*<br/>
+Задает значение по умолчанию.
 
-*nGroupID*<br/>
-Определяет идентификатор группы.
+*нграупид*<br/>
+Указывает идентификатор группы.
 
-*nObjectID*<br/>
-Определяет идентификатор объекта.
+*нобжектид*<br/>
+Указывает идентификатор объекта.
 
-*dwUserData*<br/>
-определяет данные, определяемые пользователем.
+*двусердата*<br/>
+указывает определяемые пользователем данные.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Строит объект CAnimationValue с свойствами по умолчанию: значение по умолчанию, идентификатор группы и идентификатор объекта настроены до 0.
+Конструирует объект CAnimationValue со свойствами по умолчанию: значение по умолчанию, идентификатор группы и идентификатор объекта устанавливаются в 0.
 
-## <a name="canimationvaluegetanimationvariablelist"></a><a name="getanimationvariablelist"></a>CAnimationValue::GetAnimationVariableList
+## <a name="canimationvaluegetanimationvariablelist"></a><a name="getanimationvariablelist"></a> CAnimationValue:: Жетаниматионвариаблелист
 
-Помещает инкапсулированную переменную анимации в список.
+Помещает переменную инкапсулированной анимации в список.
 
 ```
 virtual void GetAnimationVariableList(
@@ -151,10 +152,10 @@ virtual void GetAnimationVariableList(
 
 ### <a name="parameters"></a>Параметры
 
-*Lst*<br/>
-Когда функция возвращается, она содержит указатель на CAnimationVariable, представляющий анимированное значение.
+*LST*<br/>
+При возврате функции она содержит указатель на CAnimationVariable, представляющий анимированное значение.
 
-## <a name="canimationvaluegetvalue"></a><a name="getvalue"></a>CAnimationValue::GetValue
+## <a name="canimationvaluegetvalue"></a><a name="getvalue"></a> CAnimationValue:: GetValue
 
 Извлекает текущее значение.
 
@@ -165,23 +166,23 @@ BOOL GetValue(INT32& nValue);
 
 ### <a name="parameters"></a>Параметры
 
-*dblValue*<br/>
+*дблвалуе*<br/>
 Выходные данные. При возврате функции она содержит текущее значение переменной анимации.
 
-*nValue*<br/>
+*Nзначение*<br/>
 Выходные данные. При возврате функции она содержит текущее значение переменной анимации.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если текущее значение было извлечено успешно; в противном случае FALSE.
+Значение TRUE, если текущее значение успешно получено; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вызов ими функции для получения текущего значения. Эта реализация вызывает инкапсулированный объект COM, и если вызов завершается неудачей, этот метод возвращает значение по умолчанию, которое ранее было установлено в конструкторе или в SetDefaultValue.
+Вызовите эту функцию, чтобы получить текущее значение. Эта реализация вызывает инкапсулированный COM-объект, и если вызов завершается неудачно, этот метод возвращает значение по умолчанию, которое было ранее задано в конструкторе или с помощью Сетдефаултвалуе.
 
-## <a name="canimationvaluegetvariable"></a><a name="getvariable"></a>CAnimationValue::GetVariable
+## <a name="canimationvaluegetvariable"></a><a name="getvariable"></a> CAnimationValue:: variable
 
-Обеспечивает доступ к инкапсулированной переменной анимации.
+Предоставляет доступ к переменной инкапсулированной анимации.
 
 ```
 CAnimationVariable& GetVariable();
@@ -189,21 +190,21 @@ CAnimationVariable& GetVariable();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Ссылка на инкапсулированную переменную анимации.
+Ссылка на переменную инкапсулированной анимации.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте этот метод для доступа к инкапсулированной переменной анимации. От CAnimationVariable вы получаете доступ к базовому объекту IUIAnimationVariable, указатель которого может быть NULL, если переменная анимации не была создана.
+Используйте этот метод для доступа к переменной инкапсулированной анимации. Из CAnimationVariable вы получаете доступ к базовому объекту Иуианиматионвариабле, указатель которого может иметь значение NULL, если переменная анимации не была создана.
 
-## <a name="canimationvaluem_value"></a><a name="m_value"></a>CAnimationValue::m_value
+## <a name="canimationvaluem_value"></a><a name="m_value"></a> CAnimationValue:: m_value
 
-Инкапсулированная переменная анимации, представляющая значение анимации.
+Переменная инкапсулированной анимации, представляющая значение анимации.
 
 ```
 CAnimationVariable m_value;
 ```
 
-## <a name="canimationvalueoperator-double"></a><a name="operator_double"></a>CAnimationValue::оператор DOUBLE
+## <a name="canimationvalueoperator-double"></a><a name="operator_double"></a> CAnimationValue:: operator, двойной
 
 Обеспечивает преобразование между CAnimationValue и DOUBLE.
 
@@ -215,13 +216,13 @@ operator DOUBLE();
 
 Текущее значение значения анимации.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Обеспечивает преобразование между CAnimationValue и DOUBLE. Этот метод внутренне вызывает GetValue и не проверяет на наличие ошибок. Если GetValue выходит из строя, возвращенное значение будет содержать значение по умолчанию, ранее установленное в конструкторе или с SetDefaultValue.
+Обеспечивает преобразование между CAnimationValue и DOUBLE. Этот метод внутренне вызывает функцию GetValue и не проверяет наличие ошибок. Если не удается выполнить GetValue, возвращаемое значение будет содержать значение по умолчанию, установленное ранее в конструкторе или с Сетдефаултвалуе.
 
-## <a name="canimationvalueoperator-int32"></a><a name="operator_int32"></a>CAnimationValue::оператор INT32
+## <a name="canimationvalueoperator-int32"></a><a name="operator_int32"></a> CAnimationValue:: operator INT32
 
-Обеспечивает конверсию между CAnimationValue и INT32.
+Обеспечивает преобразование между CAnimationValue и INT32.
 
 ```
 operator INT32();
@@ -229,15 +230,15 @@ operator INT32();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Текущее значение значения анимации как целый.
+Текущее значение значения анимации в виде целого числа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Обеспечивает конверсию между CAnimationValue и INT32. Этот метод внутренне вызывает GetValue и не проверяет на наличие ошибок. Если GetValue выходит из строя, возвращенное значение будет содержать значение по умолчанию, ранее установленное в конструкторе или с SetDefaultValue.
+Обеспечивает преобразование между CAnimationValue и INT32. Этот метод внутренне вызывает функцию GetValue и не проверяет наличие ошибок. Если не удается выполнить GetValue, возвращаемое значение будет содержать значение по умолчанию, установленное ранее в конструкторе или с Сетдефаултвалуе.
 
-## <a name="canimationvalueoperator"></a><a name="operator_eq"></a>CAnimationValue::оператор
+## <a name="canimationvalueoperator"></a><a name="operator_eq"></a> CAnimationValue:: operator =
 
-Присваивает значение DOUBLE CAnimationValue.
+Присваивает значение типа DOUBLE CAnimationValue.
 
 ```cpp
 void operator=(DOUBLE dblVal);
@@ -246,19 +247,19 @@ void operator=(INT32 nVal);
 
 ### <a name="parameters"></a>Параметры
 
-*dblVal*<br/>
-Упогоняет значение, назначенное значению анимации.
+*дблвал*<br/>
+Указывает значение, присваиваемое значению анимации.
 
-*nVal*<br/>
-Упогоняет значение, назначенное значению анимации.
+*Непредвиденное nval*<br/>
+Указывает значение, присваиваемое значению анимации.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Присваивает значение DOUBLE CAnimationValue. Это значение устанавливается как значение по умолчанию для инкапсулированной переменной анимации. Если вы подписались на этот объект анимации на события (ValueChanged или IntegerValue), необходимо повторно включить эти события.
+Присваивает значение типа DOUBLE CAnimationValue. Это значение задается как значение по умолчанию для переменной инкапсулированной анимации. Если вы подписаны на этот объект анимации на события (ValueChanged или Интежервалуечанжед), необходимо повторно включить эти события.
 
-## <a name="canimationvaluesetdefaultvalue"></a><a name="setdefaultvalue"></a>CAnimationValue::SetDefaultValue
+## <a name="canimationvaluesetdefaultvalue"></a><a name="setdefaultvalue"></a> CAnimationValue:: Сетдефаултвалуе
 
-Устанавливает значение по умолчанию.
+Задает значение по умолчанию.
 
 ```cpp
 void SetDefaultValue(DOUBLE dblDefaultValue);
@@ -266,12 +267,12 @@ void SetDefaultValue(DOUBLE dblDefaultValue);
 
 ### <a name="parameters"></a>Параметры
 
-*dblDefaultValue*<br/>
-Определяет значение по умолчанию.
+*дблдефаултвалуе*<br/>
+Задает значение по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте этот метод для установки значения по умолчанию. Значение по умолчанию возвращается в приложение, когда анимация не запущена и/или базовый объект COM не создан. Если базовый объект COM, инкапсулированный в CAnimationVarible, уже создан, этот метод воссоздает его, поэтому, возможно, потребуется снова позвонить в enableValueChanged/EnableIntegerValue.
+Используйте этот метод, чтобы задать значение по умолчанию. Значение по умолчанию возвращается приложению, если анимация не была запущена, а базовый COM-объект не создан. Если базовый COM-объект, инкапсулированный в Каниматионварибле, уже создан, этот метод повторно создает его, поэтому может потребоваться снова вызвать методы Енаблевалуечанжед/Енаблеинтежервалуечанжед.
 
 ## <a name="see-also"></a>См. также раздел
 

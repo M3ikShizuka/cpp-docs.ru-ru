@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: стрнлен, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l'
 title: strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l
 ms.date: 4/2/2020
 api_name:
@@ -66,19 +67,19 @@ helpviewer_keywords:
 - string length
 - strnlen_l function
 ms.assetid: cc05ce1c-72ea-4ae4-a7e7-4464e56e5f80
-ms.openlocfilehash: be13a67d51b0296d91355c970e5e37ad227812ad
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 2f38ba18647b232e19e2ecda94519a8a0e55a444
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919256"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336465"
 ---
 # <a name="strnlen-strnlen_s-wcsnlen-wcsnlen_s-_mbsnlen-_mbsnlen_l-_mbstrnlen-_mbstrnlen_l"></a>strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l
 
 Получает длину строки, используя текущий или переданный в функцию языковой стандарт. Существуют более безопасные версии функций [strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l](strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l.md).
 
 > [!IMPORTANT]
-> **_mbsnlen**, **_mbsnlen_l**, **_mbstrnlen**и **_mbstrnlen_l** не могут использоваться в приложениях, выполняемых в среда выполнения Windows. Дополнительные сведения: [Функции CRT, которые не поддерживаются в приложениях универсальной платформы Windows](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsnlen**, **_mbsnlen_l**, **_mbstrnlen** и **_mbstrnlen_l** не могут использоваться в приложениях, выполняемых в среда выполнения Windows. Дополнительные сведения: [Функции CRT, которые не поддерживаются в приложениях универсальной платформы Windows](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -136,18 +137,18 @@ size_t _mbstrnlen_l(
 
 **_mbstrnlen** и **_mbstrnlen_l** возвращают значение-1, если строка содержит недопустимый многобайтовый символ.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 > [!NOTE]
-> **стрнлен** не является заменой для **strlen**; **стрнлен** предназначен для использования только для вычисления размера входящих ненадежных данных в буфере известного размера, например в сетевом пакете. **стрнлен** вычисляет длину, но не выполняет проход за концом буфера, если строка не завершена. В других ситуациях используйте **strlen**. (То же применимо к **wcsnlen**, **_mbsnlen**и **_mbstrnlen**.)
+> **стрнлен** не является заменой для **strlen**; **стрнлен** предназначен для использования только для вычисления размера входящих ненадежных данных в буфере известного размера, например в сетевом пакете. **стрнлен** вычисляет длину, но не выполняет проход за концом буфера, если строка не завершена. В других ситуациях используйте **strlen**. (То же применимо к **wcsnlen**, **_mbsnlen** и **_mbstrnlen**.)
 
 Каждая из этих функций возвращает количество символов в *str*, не включая завершающий символ null. Однако **стрнлен** и **strnlen_s** интерпретировать строку как однобайтовую строку символов, и поэтому возвращаемое значение всегда равно количеству байтов, даже если строка содержит многобайтовые символы. **wcsnlen** и **wcsnlen_s** — это версии **стрнлен** и **strnlen_s** для расширенных символов соответственно; аргументы для **wcsnlen** и **wcsnlen_s** представляют собой строки расширенных символов, а количество символов — в единицах расширенных символов. В противном случае поведение **wcsnlen** и **стрнлен** идентично, как **strnlen_s** и **wcsnlen_s**.
 
-**стрнлен**, **wcsnlen**и **_mbsnlen** не проверяют их параметры. Если *str* имеет **значение NULL**, возникает нарушение прав доступа.
+**стрнлен**, **wcsnlen** и **_mbsnlen** не проверяют их параметры. Если *str* имеет **значение NULL**, возникает нарушение прав доступа.
 
 **strnlen_s** и **wcsnlen_s** проверить их параметры. Если *str* имеет **значение NULL**, функции возвращают 0.
 
-**_mbstrnlen** также проверяет свои параметры. Если *str* имеет **значение NULL**или *numberOfElements* больше, чем **INT_MAX**, **_mbstrnlen** создает исключение недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, **_mbstrnlen** устанавливает значение **еинвал** и **возвращает значение-** 1.
+**_mbstrnlen** также проверяет свои параметры. Если *str* имеет **значение NULL** или *numberOfElements* больше, чем **INT_MAX**, **_mbstrnlen** создает исключение недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, **_mbstrnlen** устанавливает значение **еинвал** и **возвращает значение-** 1.
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -215,12 +216,12 @@ Length: 100
 ## <a name="see-also"></a>См. также раздел
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [setlocale, _wsetlocale](setlocale-wsetlocale.md)<br/>
 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
-[strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
+[Функции strcoll](../../c-runtime-library/strcoll-functions.md)<br/>
 [strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l](strncpy-s-strncpy-s-l-wcsncpy-s-wcsncpy-s-l-mbsncpy-s-mbsncpy-s-l.md)<br/>
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
 [_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>

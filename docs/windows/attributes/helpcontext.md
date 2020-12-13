@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: HelpContext'
 title: HelpContext (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - helpcontext attribute
 ms.assetid: 6fbb022d-a4b7-4989-a02f-7f18a9b0ad96
-ms.openlocfilehash: 60e6bf66e088872a357751e4a7b7e043cd9b4dfc
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: cfedec2f7650490dd266331e6853ba47265aa4ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845254"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335723"
 ---
 # <a name="helpcontext"></a>helpcontext
 
@@ -25,16 +26,16 @@ ms.locfileid: "88845254"
 
 ### <a name="parameters"></a>Параметры
 
-*идентификатор*<br/>
-Идентификатор контекста раздела справки. Дополнительные сведения об идентификаторах контекста см. в разделе [HTML Help: контекстно-зависимая справка для ваших программ](../../mfc/html-help-context-sensitive-help-for-your-programs.md) .
+*id*<br/>
+Идентификатор контекста раздела справки. Дополнительные сведения об идентификаторах контекста см. в [справке HTML: Context-Sensitive справку для своих программ](../../mfc/html-help-context-sensitive-help-for-your-programs.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Атрибут **HelpContext** C++ имеет те же функциональные возможности, что и атрибут MIDL для [HelpContext](/windows/win32/Midl/helpcontext) .
 
 ## <a name="example"></a>Пример
 
-Пример использования **HelpContext**см. в примере для [DefaultValue](defaultvalue.md) .
+Пример использования **HelpContext** см. в примере для [DefaultValue](defaultvalue.md) .
 
 ## <a name="requirements"></a>Требования
 

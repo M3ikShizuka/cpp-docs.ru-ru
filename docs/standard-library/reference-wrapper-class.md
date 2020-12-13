@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: reference_wrapper классе'
 title: Класс reference_wrapper
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - std::reference_wrapper [C++], type
 - std::reference_wrapper [C++], get
 ms.assetid: 90b8ed62-e6f1-44ed-acc7-9619bd58865a
-ms.openlocfilehash: 623e1480bdec85120e504c8dc71b28d017c8872a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 5d3550a6ff579ea1e4174459d3ab1eab07b8a5d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845072"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337861"
 ---
 # <a name="reference_wrapper-class"></a>Класс reference_wrapper
 
@@ -55,7 +56,7 @@ class reference_wrapper
 
 Вспомогательные функции [std::ref](functional-functions.md#ref) и [std::cref](functional-functions.md#cref) можно использовать для создания объектов `reference_wrapper`.
 
-## <a name="members"></a>Элементы
+## <a name="members"></a>Члены
 
 ### <a name="constructors"></a>Конструкторы
 
@@ -91,7 +92,7 @@ class reference_wrapper
 Ty& get() const noexcept;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает ссылку в оболочке.
 
@@ -130,7 +131,7 @@ i = -1
 operator Ty&() const noexcept;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Оператор-член возвращает `*ptr`.
 
@@ -175,7 +176,7 @@ auto operator()(Types&&... args);
 *args*\
 Список аргументов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Элемент шаблона `operator()` возвращает `std::invoke(get(), std::forward<Types>(args)...)`.
 
@@ -220,7 +221,7 @@ reference_wrapper(Ty& val) noexcept;
 *Val*\
 Значение для упаковки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конструктор устанавливает сохраненное значение `ptr` в `&val`.
 
@@ -263,7 +264,7 @@ i = -1
 typedef R result_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Определение типа `result_type` является синонимом слабого типа результата функции в оболочке. Это определение типа имеет смысл только для типов функций.
 
@@ -302,7 +303,7 @@ val = -3
 typedef Ty type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Определение типа является синонимом параметра шаблона `Ty`.
 

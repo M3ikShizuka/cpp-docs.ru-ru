@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: структура once_flag'
 title: Структура once_flag
 ms.date: 09/17/2018
 f1_keywords:
 - mutex/std::once_flag
 ms.assetid: 71bfb88d-ca8c-4082-a6e1-ff52151e8629
-ms.openlocfilehash: 55c3f90f72857a4e4cd3f9075ce5bae10e14d218
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4419353e68da5929d8abed9b2c718438855057e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87202731"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338000"
 ---
 # <a name="once_flag-structure"></a>Структура once_flag
 
@@ -19,7 +20,7 @@ ms.locfileid: "87202731"
 
 Структура once_flag {constexpr once_flag () не except;};
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `once_flag` **`struct`** Имеет только конструктор по умолчанию.
 

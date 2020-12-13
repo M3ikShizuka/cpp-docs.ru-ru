@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ismbbblank, _ismbbblank_l'
 title: _ismbbblank, _ismbbblank_l
 ms.date: 4/2/2020
 api_name:
@@ -24,12 +25,12 @@ api_type:
 topic_type:
 - apiref
 ms.assetid: d21b2e41-7206-41f5-85bb-9c9ab4f3e21b
-ms.openlocfilehash: 8285a3ae34c3b0fd678e447c76a28495b6f4ffb3
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3d604b377ff874418dab11405ad2c891792a5bda
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909533"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335644"
 ---
 # <a name="_ismbbblank-_ismbbblank_l"></a>_ismbbblank, _ismbbblank_l
 
@@ -52,7 +53,7 @@ int _ismbbblank_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Целое число, которое требуется проверить.
 
 *locale*<br/>
@@ -62,7 +63,7 @@ int _ismbbblank_l(
 
 **_ismbbblank** возвращает ненулевое значение, если *c* представляет символ пробела (0x20), символ горизонтальной табуляции (0x09) или символ, зависящий от языкового стандарта, который используется для разделения слов в строке текста, **для которой значение** параметра «IsTrue» равно true. в противном случае возвращает 0. **_ismbbblank** использует текущий языковой стандарт для любого поведения, зависящего от языкового стандарта. **_ismbbblank_l** является идентичным, за исключением того, что вместо этого используется переданный языковой стандарт. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

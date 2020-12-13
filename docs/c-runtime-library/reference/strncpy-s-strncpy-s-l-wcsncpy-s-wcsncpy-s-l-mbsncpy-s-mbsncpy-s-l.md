@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l'
 title: strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
 ms.date: 4/2/2020
 api_name:
@@ -54,12 +55,12 @@ helpviewer_keywords:
 - _tcsncpy_s function
 - wcsncpy_s_l function
 ms.assetid: a971c800-94d1-4d88-92f3-a2fe236a4546
-ms.openlocfilehash: 08921ff44d2d69ab77eb210b2123016ea61c4f67
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: eb4ea7c5f7b288640fe0797d9f6c5428fe28e0af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008270"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336481"
 ---
 # <a name="strncpy_s-_strncpy_s_l-wcsncpy_s-_wcsncpy_s_l-_mbsncpy_s-_mbsncpy_s_l"></a>strncpy_s, _strncpy_s_l, wcsncpy_s, _wcsncpy_s_l, _mbsncpy_s, _mbsncpy_s_l
 
@@ -187,7 +188,7 @@ errno_t _mbsncpy_s_l(
 
 Для вышеприведенного абзаца есть исключения. Если параметр *Count* имеет значение **_TRUNCATE**, то *стрсаурце* , как помещается в *стрдест* , копируется, оставляя место для завершающего значения NULL, которое всегда добавляется.
 
-Например:
+например следующие.
 
 ```C
 char dst[5];
@@ -207,9 +208,9 @@ strncpy_s(dst, 5, "a long string", 4);
 
 Поведение **strncpy_s** не определено, если строки источника и назначения перекрываются.
 
-Если *стрдест* или *Стрсаурце* имеет **значение NULL**или *numberOfElements* равен 0, вызывается обработчик недопустимых параметров. Если выполнение может быть продолжено, функция возвращает **еинвал** **и устанавливает значение** переводится в **еинвал**.
+Если *стрдест* или *Стрсаурце* имеет **значение NULL** или *numberOfElements* равен 0, вызывается обработчик недопустимых параметров. Если выполнение может быть продолжено, функция возвращает **еинвал** **и устанавливает значение** переводится в **еинвал**.
 
-**wcsncpy_s** и **_mbsncpy_s** — это версии **strncpy_s**для расширенных символов и многобайтовых символов. Аргументы и возвращаемое значение **wcsncpy_s** и **mbsncpy_s** различаются соответственно. В остальном эти шесть функций ведут себя идентично.
+**wcsncpy_s** и **_mbsncpy_s** — это версии **strncpy_s** для расширенных символов и многобайтовых символов. Аргументы и возвращаемое значение **wcsncpy_s** и **mbsncpy_s** различаются соответственно. В остальном эти шесть функций ведут себя идентично.
 
 Выходное значение зависит от настройки категории **LC_CTYPE** языкового стандарта; дополнительные сведения см. в разделе [setlocale](setlocale-wsetlocale.md). Версии этих функций без суффикса **_l** используют текущий языковой стандарт для данного поведения, зависящего от языкового стандарта; версии с суффиксом **_l** идентичны, за исключением того, что они используют переданный параметр языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
@@ -410,7 +411,7 @@ After strncpy_s (with null-termination):
    'mice'
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Локаль](../../c-runtime-library/locale.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ismbbkana, _ismbbkana_l'
 title: _ismbbkana, _ismbbkana_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - ismbbkana function
 - ismbbkana_l function
 ms.assetid: 64d4eb4a-205a-40ef-be35-ff9d77fabbaf
-ms.openlocfilehash: dd788d18692e11886caf4ee12703bb5878de1163
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3b4c005068a6a646c256d0f091e4b86e15df2acb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918936"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335655"
 ---
 # <a name="_ismbbkana-_ismbbkana_l"></a>_ismbbkana, _ismbbkana_l
 
@@ -59,7 +60,7 @@ int _ismbbkana_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Целое число, которое требуется проверить.
 
 *locale*<br/>
@@ -69,7 +70,7 @@ int _ismbbkana_l(
 
 **_ismbbkana** возвращает ненулевое значение, если целое число *c* является символом катакана или 0 в противном случае. **_ismbbkana** использует текущий языковой стандарт для сведений о символах, зависящих от языкового стандарта. **_ismbbkana_l** идентично, за исключением того, что он использует переданный объект языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

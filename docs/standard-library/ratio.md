@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о &lt; соотношении: отношение&gt;'
 title: '&lt;ratio&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -31,12 +32,12 @@ f1_keywords:
 - ratio/std::deci
 - ratio/std::deca
 ms.assetid: 8543e912-2d84-45ea-b3c0-bd7bfacee405
-ms.openlocfilehash: 5f6919c84c3fb125e149ba6bcd69b6b7f996d17f
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 8fab74cde47e4078781b665044bc2becd0a9dac3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687066"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97337946"
 ---
 # <a name="ltratiogt"></a>&lt;ratio&gt;
 
@@ -60,17 +61,17 @@ struct ratio // holds the ratio of Numerator to Denominator
 }
 ```
 
-Шаблон `ratio` определяет статические константы `num` и `den` таким, что `num`  /  `den` = = числитель/знаменатель и `num` и `den` не имеют общих факторов. `num`  /  `den` — это значение, представленное шаблоном класса. Таким образом, `type` обозначает `ratio<num, den>` создания экземпляра.
+Шаблон `ratio` определяет статические константы `num` и `den` такие элементы `num`  /  `den` = = числитель/знаменатель и `num` `den` не имеют общих факторов. `num` / `den` значение, представленное шаблоном класса. Таким образом, `type` обозначает создание экземпляра `ratio<num, den>` .
 
 ### <a name="specializations"></a>Специализации
 
-\<ratio> также определяет специализации `ratio`, которые имеют следующую форму.
+\<ratio> также определяет специализации `ratio` , которые имеют следующую форму.
 
 `template <class R1, class R2> struct ratio_specialization`
 
 Каждая специализация принимает два параметра-шаблона, которые также должны быть специализациями `ratio`. Значение `type` определяется связанной логической операцией.
 
-|Название|Значение `type`|
+|Имя|Значение `type`|
 |----------|------------------|
 |`ratio_add`|`R1 + R2`|
 |`ratio_divide`|`R1 / R2`|
@@ -106,6 +107,6 @@ typedef ratio<1000000000000000, 1> peta;
 typedef ratio<1000000000000000000, 1> exa;
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по файлам заголовков](../standard-library/cpp-standard-library-header-files.md)

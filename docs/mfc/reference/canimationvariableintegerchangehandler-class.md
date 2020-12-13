@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Каниматионвариаблеинтежерчанжехандлер Class'
 title: Класс CAnimationVariableIntegerChangeHandler
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CAnimationVariableIntegerChangeHandler [MFC], OnIntegerValueChanged
 - CAnimationVariableIntegerChangeHandler [MFC], SetAnimationController
 ms.assetid: 6ac8e91b-e514-4ff6-babd-33f77c4b2b61
-ms.openlocfilehash: dec940d2f5e68f0531fc917df447b5a1a5cb8189
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 53a0a1838e021294b4ccc870e6f01b873233a0c9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81755058"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336731"
 ---
 # <a name="canimationvariableintegerchangehandler-class"></a>Класс CAnimationVariableIntegerChangeHandler
 
@@ -31,25 +32,25 @@ ms.locfileid: "81755058"
 class CAnimationVariableIntegerChangeHandler : public CUIAnimationVariableIntegerChangeHandlerBase<CAnimationVariableIntegerChangeHandler>;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CAnimationVariableIntegerChangeHandler::CAnimationVariableIntegerChange](#canimationvariableintegerchangehandler)|Формирует объект `CAnimationVariableIntegerChangeHandler`.|
+|[Каниматионвариаблеинтежерчанжехандлер:: Каниматионвариаблеинтежерчанжехандлер](#canimationvariableintegerchangehandler)|Формирует объект `CAnimationVariableIntegerChangeHandler`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CAnimationVariableIntegerChangeHandler::CreateInstance](#createinstance)|Создает экземпляр `CAnimationVariableIntegerChangeHandler` обратного вызова.|
-|[CAnimationVariableIntegerChange::OnIntegerValue](#onintegervaluechanged)|Вызывается при изменении значения переменной анимации. (Переопределяет `CUIAnimationVariableIntegerChangeHandlerBase::OnIntegerValueChanged`.)|
-|[CAnimationVariableIntegerChangeHandler::SetAnimationController](#setanimationcontroller)|Хранит указатель контроллера анимации для маршрутизатора событий.|
+|[Каниматионвариаблеинтежерчанжехандлер:: CreateInstance](#createinstance)|Создает экземпляр `CAnimationVariableIntegerChangeHandler` обратного вызова.|
+|[Каниматионвариаблеинтежерчанжехандлер:: Онинтежервалуечанжед](#onintegervaluechanged)|Вызывается, когда изменилось значение переменной анимации. (Переопределяет `CUIAnimationVariableIntegerChangeHandlerBase::OnIntegerValueChanged`.)|
+|[Каниматионвариаблеинтежерчанжехандлер:: Сетаниматионконтроллер](#setanimationcontroller)|Хранит указатель на контроллер анимации для маршрутизации событий.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Обработчик событий создан и передан IUIAnimationVariable::SetVariableIntegerChangeHandler метод, когда вы называете CAnimationVariable::EnableIntegerValueChangedEvent или CAnimationBaseObject::EnableIntegerValueChangedEvent (что позволяет это событие для всех переменных анимации инкапсулированы в объекте анимации).
+Этот обработчик событий создается и передается методу Иуианиматионвариабле:: Сетвариаблеинтежерчанжехандлер при вызове CAnimationVariable:: Енаблеинтежервалуечанжедевент или CAnimationBaseObject:: EnableIntegerValueChangedEvent (который включает это событие для всех переменных анимации, инкапсулированных в объекте анимации).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -65,17 +66,17 @@ class CAnimationVariableIntegerChangeHandler : public CUIAnimationVariableIntege
 
 **Заголовок:** afxanimationcontroller.h
 
-## <a name="canimationvariableintegerchangehandlercanimationvariableintegerchangehandler"></a><a name="canimationvariableintegerchangehandler"></a>CAnimationVariableIntegerChangeHandler::CAnimationVariableIntegerChange
+## <a name="canimationvariableintegerchangehandlercanimationvariableintegerchangehandler"></a><a name="canimationvariableintegerchangehandler"></a> Каниматионвариаблеинтежерчанжехандлер:: Каниматионвариаблеинтежерчанжехандлер
 
-Строит объект CAnimationVariableIntegerChangeHandler.
+Конструирует объект Каниматионвариаблеинтежерчанжехандлер.
 
 ```
 CAnimationVariableIntegerChangeHandler ();
 ```
 
-## <a name="canimationvariableintegerchangehandlercreateinstance"></a><a name="createinstance"></a>CAnimationVariableIntegerChangeHandler::CreateInstance
+## <a name="canimationvariableintegerchangehandlercreateinstance"></a><a name="createinstance"></a> Каниматионвариаблеинтежерчанжехандлер:: CreateInstance
 
-Создает экземпляр обратного вызова CAnimationVariableIntegerChangeHandler.
+Создает экземпляр обратного вызова Каниматионвариаблеинтежерчанжехандлер.
 
 ```
 static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
@@ -85,18 +86,18 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 
 ### <a name="parameters"></a>Параметры
 
-*pAnimationКонтроллер*<br/>
-Указатель на контроллер анимации, который будет получать события.
+*паниматионконтроллер*<br/>
+Указатель на контроллер анимации, который будет принимать события.
 
-*ppHandler*
+*пфандлер*
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод завершается успешно, возвращает значение S_OK. В противном случае он возвращает код ошибки HRESULT.
+Если метод завершается успешно, возвращает значение S_OK. В противном случае возвращается код ошибки HRESULT.
 
-## <a name="canimationvariableintegerchangehandleronintegervaluechanged"></a><a name="onintegervaluechanged"></a>CAnimationVariableIntegerChange::OnIntegerValue
+## <a name="canimationvariableintegerchangehandleronintegervaluechanged"></a><a name="onintegervaluechanged"></a> Каниматионвариаблеинтежерчанжехандлер:: Онинтежервалуечанжед
 
-Вызывается при изменении значения переменной анимации.
+Вызывается, когда изменилось значение переменной анимации.
 
 ```
 IFACEMETHOD(OnIntegerValueChanged) (
@@ -108,25 +109,25 @@ IFACEMETHOD(OnIntegerValueChanged) (
 
 ### <a name="parameters"></a>Параметры
 
-*Раскадровки*<br/>
-Раскадровка, онимающая переменную.
+*выполнена*<br/>
+Раскадровка, которая используется для анимации переменной.
 
-*Переменной*<br/>
-Обновленная переменная анимации.
+*variable*<br/>
+Переменная анимации, которая была обновлена.
 
 *newValue*<br/>
-Новое округлое значение.
+Новое округленное значение.
 
-*предыдущаястоимость*<br/>
-Предыдущее округлое значение.
+*превиаусвалуе*<br/>
+Предыдущее округленное значение.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK, если метод удается; в противном случае E_FAIL.
+S_OK, если метод выполнен. в противном случае E_FAIL.
 
-## <a name="canimationvariableintegerchangehandlersetanimationcontroller"></a><a name="setanimationcontroller"></a>CAnimationVariableIntegerChangeHandler::SetAnimationController
+## <a name="canimationvariableintegerchangehandlersetanimationcontroller"></a><a name="setanimationcontroller"></a> Каниматионвариаблеинтежерчанжехандлер:: Сетаниматионконтроллер
 
-Хранит указатель контроллера анимации для маршрутизатора событий.
+Хранит указатель на контроллер анимации для маршрутизации событий.
 
 ```cpp
 void SetAnimationController(CAnimationController* pAnimationController);
@@ -134,8 +135,8 @@ void SetAnimationController(CAnimationController* pAnimationController);
 
 ### <a name="parameters"></a>Параметры
 
-*pAnimationКонтроллер*<br/>
-Указатель на контроллер анимации, который будет получать события.
+*паниматионконтроллер*<br/>
+Указатель на контроллер анимации, который будет принимать события.
 
 ## <a name="see-also"></a>См. также раздел
 

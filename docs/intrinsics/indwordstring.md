@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __indwordstring'
 title: __indwordstring
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - __indwordstring intrinsic
 - rep insd instruction
 ms.assetid: 96a1cf33-f691-4916-99e4-fa849b61e3a9
-ms.openlocfilehash: b0b160ba00b1c0b7aa6bffc913e4cb56d503c2ff
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 18d18a8981a2dd58c0f7bcd366faaf46629647c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217836"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336919"
 ---
 # <a name="__indwordstring"></a>__indwordstring
 
@@ -44,13 +45,13 @@ void __indwordstring(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__indwordstring`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эта процедура доступна только как встроенная функция.
 
