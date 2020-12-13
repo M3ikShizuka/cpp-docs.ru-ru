@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: сообщения векторизатора и параллелизатора'
 title: Сообщения векторизатора и параллелизатора
 ms.date: 04/17/2019
 f1_keywords:
@@ -8,18 +9,18 @@ f1_keywords:
 - C5001
 - C5012
 ms.assetid: d8f4844a-f414-42ab-b9a5-925a5da9d365
-ms.openlocfilehash: 1cdbb40d06d2b3da7e6444e3a6743c6e6ae1c874
-ms.sourcegitcommit: 6b3d793f0ef3bbb7eefaf9f372ba570fdfe61199
+ms.openlocfilehash: 54465331b3301c8f792763b9d7d1e29b8d62b1a0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86405004"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177137"
 ---
 # <a name="vectorizer-and-parallelizer-messages"></a>Сообщения векторизатора и параллелизатора
 
 Можно использовать параметры компилятора Microsoft C++ [/Qpar-report](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md) и [/Qvec-report](../../build/reference/qvec-report-auto-vectorizer-reporting-level.md) , чтобы задать [автоматическую параллелизации и автоматическое](../../parallel/auto-parallelization-and-auto-vectorization.md) упорядочивание для вывода кодов причин и информационных сообщений о действиях. В этой статье описываются коды причины и сообщения.
 
-## <a name="informational-messages"></a><a name="BKMK_InformationalMessages"></a>Информационные сообщения
+## <a name="informational-messages"></a><a name="BKMK_InformationalMessages"></a> Информационные сообщения
 
 В зависимости от заданного уровня отчетов для каждого цикла выводится одно из следующих информационных сообщений.
 
@@ -35,11 +36,11 @@ ms.locfileid: "86405004"
 
 В следующих разделах перечислены возможные коды причин для параллелизатора и векторизатора.
 
-## <a name="5xx-reason-codes"></a><a name="BKMK_ReasonCode50x"></a>коды причин 5xx
+## <a name="5xx-reason-codes"></a><a name="BKMK_ReasonCode50x"></a> коды причин 5xx
 
-Коды причин 5*XX* применяются как к параллелизатора, так и к векторизатора.
+Коды причин 5 *XX* применяются как к параллелизатора, так и к векторизатора.
 
-|Код причины|Пояснение|
+|Код причины|Объяснение|
 |-----------------|-----------------|
 |500|Универсальное сообщение, охватывающее несколько вариантов (например, цикл включает несколько выходов), или заголовок цикла не заканчивается путем увеличения переменной удержания.|
 |501|`Induction variable is not local; or upper bound is not loop-invariant.`|
@@ -198,11 +199,11 @@ void code_504(int *A) {
 }
 ```
 
-## <a name="10xx-reason-codes"></a><a name="BKMK_ReasonCode100x"></a>коды причин 10xx
+## <a name="10xx-reason-codes"></a><a name="BKMK_ReasonCode100x"></a> коды причин 10xx
 
-Коды причин 10*XX* относятся к параллелизатора.
+Коды причин 10 *XX* относятся к параллелизатора.
 
-|Код причины|Пояснение|
+|Код причины|Объяснение|
 |-----------------|-----------------|
 |1000|`The compiler detected a data dependency in the loop body.`|
 |1001|`The compiler detected a store to a scalar variable in the loop body, and that scalar has a use beyond the loop.`|
@@ -407,11 +408,11 @@ void code_1010()
 }
 ```
 
-## <a name="11xx-reason-codes"></a><a name="BKMK_ReasonCode110x"></a>коды причин 11xx
+## <a name="11xx-reason-codes"></a><a name="BKMK_ReasonCode110x"></a> коды причин 11xx
 
-Коды причин 11*XX* применяются к векторизатора.
+Коды причин 11 *XX* применяются к векторизатора.
 
-|Код причины|Пояснение|
+|Код причины|Объяснение|
 |-----------------|-----------------|
 |1100|`Loop contains control flow—for example, "if" or "?".`|
 |1101|`Loop contains datatype conversion—perhaps implicit—that cannot be vectorized.`|
@@ -555,11 +556,11 @@ void code_1106(int *A)
 }
 ```
 
-## <a name="12xx-reason-codes"></a><a name="BKMK_ReasonCode120x"></a>коды причин 12xx
+## <a name="12xx-reason-codes"></a><a name="BKMK_ReasonCode120x"></a> коды причин 12xx
 
-Коды причин 12*XX* относятся к векторизатора.
+Коды причин 12 *XX* относятся к векторизатора.
 
-|Код причины|Пояснение|
+|Код причины|Объяснение|
 |-----------------|-----------------|
 |1200|`Loop contains loop-carried data dependences that prevent vectorization. Different iterations of the loop interfere with each other such that vectorizing the loop would produce wrong answers, and the auto-vectorizer cannot prove to itself that there are no such data dependences.`|
 |1201|`Array base changes during the loop.`|
@@ -630,11 +631,11 @@ void code_1203(int *A)
 }
 ```
 
-## <a name="13xx-reason-codes"></a><a name="BKMK_ReasonCode130x"></a>коды причин 13xx
+## <a name="13xx-reason-codes"></a><a name="BKMK_ReasonCode130x"></a> коды причин 13xx
 
-Коды причин 13*XX* относятся к векторизатора.
+Коды причин 13 *XX* относятся к векторизатора.
 
-|Код причины|Пояснение|
+|Код причины|Объяснение|
 |-----------------|-----------------|
 |1300|`Loop body contains no—or very little—computation.`|
 |1301|`Loop stride is not +1.`|
@@ -762,11 +763,11 @@ void code_1305( S_1305 *s, S_1305 x)
 }
 ```
 
-## <a name="14xx-reason-codes"></a><a name="BKMK_ReasonCode140x"></a>коды причин 14xx
+## <a name="14xx-reason-codes"></a><a name="BKMK_ReasonCode140x"></a> коды причин 14xx
 
-Коды причины 14*XX* возникают, если задан какой-либо параметр, несовместимый с вектором.
+Коды причины 14 *XX* возникают, если задан какой-либо параметр, несовместимый с вектором.
 
-|Код причины|Пояснение|
+|Код причины|Объяснение|
 |-----------------|-----------------|
 |1400|`#pragma loop(no_vector) is specified.`|
 |1401|`/kernel switch is specified when targeting x86 or ARM.`|
@@ -834,11 +835,11 @@ void code_1404(int *A)
 }
 ```
 
-## <a name="15xx-reason-codes"></a><a name="BKMK_ReasonCode150x"></a>коды причин 15xx
+## <a name="15xx-reason-codes"></a><a name="BKMK_ReasonCode150x"></a> коды причин 15xx
 
-Коды причины 15*XX* применяются к псевдонимам. Совмещение имен возникает, когда одно и тоже расположение в памяти доступно под двумя разными именами.
+Коды причины 15 *XX* применяются к псевдонимам. Совмещение имен возникает, когда одно и тоже расположение в памяти доступно под двумя разными именами.
 
-|Код причины|Пояснение|
+|Код причины|Объяснение|
 |-----------------|-----------------|
 |1500|`Possible aliasing on multi-dimensional arrays.`|
 |1501|`Possible aliasing on arrays-of-structs.`|

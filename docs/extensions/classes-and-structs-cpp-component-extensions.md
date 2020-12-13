@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: ref class и ref struct (C++/CLI и C++/CX)'
 title: ref class и ref struct (C++/CLI и C++/CX)
 ms.date: 05/30/2019
 ms.topic: reference
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - value struct keyword [C++]
 - ref struct keyword [C++]
 ms.assetid: 5c360764-b229-49c6-9357-66213afbc372
-ms.openlocfilehash: 1ec29dcc09cd338136102c0f3b769055d5143973
-ms.sourcegitcommit: b492516cc65120250b9ea23f96f7f63f37f99fae
+ms.openlocfilehash: 633314e27118cfceddef449ab944c6dd0dbc4f9a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075807"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176981"
 ---
 # <a name="ref-class-and-ref-struct--ccli-and-ccx"></a>ref class и ref struct (C++/CLI и C++/CX)
 
@@ -54,7 +55,7 @@ class_access value struct name modifier : inherit_access base_type {};
 
 Дополнительные сведения см. в описаниях этого параметра для конкретного языка в разделах "Среда выполнения Windows" и "Среда CLR".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Доступность по умолчанию для объекта, объявленного с **классом ref** или **классом значений** , — **`private`** . И доступность по умолчанию для объекта, объявленного с **структурой ref** или **структурой значений** , — **`public`** .
 
@@ -82,7 +83,7 @@ class_access value struct name modifier : inherit_access base_type {};
 
 ## <a name="windows-runtime"></a>Среда выполнения Windows
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 См. разделы [Классы и структуры ссылки (C++/CX)](../cppcx/ref-classes-and-structs-c-cx.md) и [Классы и структуры значений (C++/CX)](../cppcx/value-classes-and-structs-c-cx.md).
 
@@ -95,13 +96,13 @@ class_access value struct name modifier : inherit_access base_type {};
 
 При объявлении объекта с помощью ключевых слов **value class** или **value struct** время жизни объявленного объекта не контролируется. Этот объект аналогичен любому другому стандартному классу или структуре C++.
 
-### <a name="requirements"></a>Requirements (Требования)
+### <a name="requirements"></a>Требования
 
 Параметр компилятора: `/ZW`
 
 ## <a name="common-language-runtime"></a>Среда CLR
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В следующей таблице перечислены отличия от синтаксиса, показанного в разделе **Все среды выполнения**, которые характерны для C++/CLI.
 
@@ -114,7 +115,7 @@ class_access value struct name modifier : inherit_access base_type {};
 
 Ключевые слова **value class** и **value struct** сообщают компилятору, что значение выделенного класса или структуры передается функциям или сохраняется в элементах.
 
-### <a name="requirements"></a>Requirements (Требования)
+### <a name="requirements"></a>Требования
 
 Параметр компилятора: `/clr`
 

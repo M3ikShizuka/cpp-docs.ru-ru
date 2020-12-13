@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о массивах (C++/CLI и C++/CX)
 title: Массивы (C++/CLI и C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - multidimensional arrays
 - arrays [C++]
 ms.assetid: 49445812-d775-4db1-a231-869598dbb955
-ms.openlocfilehash: 814be57caafed117a1403105d46326ac53682578
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: e75818b7c4de3123fefb6bed9f24da46f8212ed8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500896"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177111"
 ---
 # <a name="arrays-ccli-and-ccx"></a>Массивы (C++/CLI и C++/CX)
 
@@ -70,7 +71,7 @@ ms.locfileid: "91500896"
 *initialization-list*<br/>
 (Необязательно) Разделенный запятыми список инициализирующих элементы массива значений в фигурных скобках. Например, если *rank-size-list* имеет значение `(3)`, т. е. объявляется одномерным массивом из 3 элементов, *initialization-list* может иметь вид `{1,2,3}`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Во время компиляции с помощью `__is_ref_array(type)` можно определить, является ли тип массивом с подсчетом ссылок. Дополнительные сведения см. в статье [Compiler Support for Type Traits (C++/CLI and C++/CX)](compiler-support-for-type-traits-cpp-component-extensions.md) (Поддержка характеристик типов компилятором (C++/CLI and C++/CX)).
 
@@ -131,7 +132,7 @@ int main() {
 
 Например, если *rank-size-list* имеет значение `(3)`, т. е. объявляется одномерным массивом из 3 элементов, *initialization-list* может иметь вид `{1,2,3}`. Если параметр *rank-size-list* имеет значение `(3,2,4)`, т. е. объявляется трехмерным массивом с 3 элементами в первом измерении, 2 элементами во втором и 4 элементами в третьем, то параметр *initialization-list* может иметь вид `{{1,2,3},{0,0},{-5,10,-21,99}}`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Массив** находится в пространстве имен [Platform, default, and cli Namespaces](platform-default-and-cli-namespaces-cpp-component-extensions.md).
 

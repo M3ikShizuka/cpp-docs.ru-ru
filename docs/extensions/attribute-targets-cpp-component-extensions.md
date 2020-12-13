@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: целевые объекты атрибутов (C++/CLI и C++/CX)'
 title: Целевые объекты атрибутов (C++/CLI и C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - custom attributes, targets
 ms.assetid: b4e6e224-da77-4520-b6e6-b96846e0ebc1
-ms.openlocfilehash: fe2c1d27042b51300d01ba70b951b7601d87701e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 2c14f80c277feb7fc540eed8735a8a78e1cb1907
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172624"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177033"
 ---
 # <a name="attribute-targets-ccli-and-ccx"></a>Целевые объекты атрибутов (C++/CLI и C++/CX)
 
@@ -250,7 +251,7 @@ ms.locfileid: "80172624"
 
 ## <a name="example"></a>Пример
 
-### <a name="description"></a>Description
+### <a name="description"></a>Описание
 
 В этом примере показано задание нескольких целевых объектов.
 
@@ -272,6 +273,6 @@ ref class MyClass {};
 value struct MyStruct {};
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-[Пользовательские атрибуты](user-defined-attributes-cpp-component-extensions.md)
+[Определяемые пользователем атрибуты](user-defined-attributes-cpp-component-extensions.md)

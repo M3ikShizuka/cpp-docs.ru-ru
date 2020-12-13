@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: abstract (C++/CLI и C++/CX)'
 title: abstract (C++/CLI and C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - abstract keyword [C++]
 ms.assetid: cbae3408-0378-4ac8-b70d-c016b381a6d5
-ms.openlocfilehash: 1e729589f78c56111717a87a27f9c7370dca7b90
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e40d0d0c03bbf97b684d9e011f4bf614f6a44332
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214299"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177124"
 ---
 # <a name="abstract--ccli-and-ccx"></a>abstract (C++/CLI and C++/CX)
 
@@ -31,9 +32,9 @@ ms.locfileid: "87214299"
 
 **`virtual`** Абстрактный *возвращаемый тип* - *функция-идентификатор* **();**
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-В первом примере синтаксиса объявляется абстрактный класс. Компонент *объявления класса* может быть либо машинным объявлением c++ (** `class` * * * или **`struct`** ), либо объявлением расширения c++ (** ref class * * или **ref struct**), если `/ZW` `/clr` указан параметр компилятора или.
+В первом примере синтаксиса объявляется абстрактный класс. Компонент *объявления класса* может быть либо машинным объявлением c++ (**`class` * * * или **`struct`** ), либо объявлением расширения c++ (** ref class * * или **ref struct**), если `/ZW` `/clr` указан параметр компилятора или.
 
 Во втором примере синтаксиса объявляется абстрактная виртуальная функция-член. Объявление функции абстрактной — то же, что и объявление ее чистой виртуальной функцией. Объявление функции-члена абстрактной также приводит к тому, что включающий класс объявляется как абстрактный.
 

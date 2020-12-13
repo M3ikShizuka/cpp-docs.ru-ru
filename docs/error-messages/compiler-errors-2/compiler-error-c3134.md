@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C3134'
 title: Ошибка компилятора C3134
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3134
 ms.assetid: f887e4d2-7740-49e4-9972-7edceb8fa77b
-ms.openlocfilehash: fe393f82739de8cf62d7684bf74956165774864d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ce35d7999992db93804d01978fdb4418a73e19b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80176615"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177358"
 ---
 # <a name="compiler-error-c3134"></a>Ошибка компилятора C3134
 
@@ -21,4 +22,4 @@ ms.locfileid: "80176615"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Список атрибутов по использованию](../../windows/attributes/attributes-by-usage.md)
+[Атрибуты по использованию](../../windows/attributes/attributes-by-usage.md)

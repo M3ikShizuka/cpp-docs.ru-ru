@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _fpreset'
 title: _fpreset
 ms.date: 04/05/2018
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - floating-point numbers, resetting math package
 - _fpreset function
 ms.assetid: f31c6a04-b464-4f07-a7c4-42133360e328
-ms.openlocfilehash: 842b9c794d04d71f8f6ca97e35fb3cac2f7bb1ec
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 7818e0f02f6165c5041245e342a81b1dde25b091
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70957016"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178697"
 ---
 # <a name="_fpreset"></a>_fpreset
 
@@ -44,9 +45,9 @@ ms.locfileid: "70957016"
 void _fpreset( void );
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Функция **_fpreset** повторно инициализирует пакет математических вычислений с плавающей запятой. **_fpreset** обычно используется с **сигналами**, **системой**или функциями **_exec** или **_spawn** . Если программа перехватывает сигналы ошибки с плавающей запятой (**сигфпе**) с **сигналом**, ее можно безопасно восстановить после ошибок с плавающей запятой, вызвав **_fpreset** и используя **longjmp**.
+Функция **_fpreset** повторно инициализирует пакет математических вычислений с плавающей запятой. **_fpreset** обычно используется с **сигналами**, **системой** или функциями **_exec** или **_spawn** . Если программа перехватывает сигналы ошибки с плавающей запятой (**сигфпе**) с **сигналом**, она может безопасно восстанавливаться после ошибок с плавающей запятой путем вызова **_fpreset** и использования **longjmp**.
 
 Эта функция является устаревшей при компиляции с [параметром/CLR (компиляция общеязыковой среды выполнения)](../../build/reference/clr-common-language-runtime-compilation.md) , так как среда CLR поддерживает только точность с плавающей запятой по умолчанию.
 
@@ -56,7 +57,7 @@ void _fpreset( void );
 |--------------|---------------------|
 |**_fpreset**|\<float.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -172,10 +173,10 @@ Dividing    5 by    0...
 Error 131: Divide by zero
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Поддержка чисел с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
-[Функции _exec, _wexec](../../c-runtime-library/exec-wexec-functions.md)<br/>
-[signal](signal.md)<br/>
-[Функции _spawn, _wspawn](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
+[_exec, функции _wexec](../../c-runtime-library/exec-wexec-functions.md)<br/>
+[signal](signal.md);<br/>
+[_spawn, функции _wspawn](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
 [system, _wsystem](system-wsystem.md)<br/>

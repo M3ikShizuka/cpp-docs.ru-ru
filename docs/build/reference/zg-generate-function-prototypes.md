@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/Zg (создание прототипов функций)
 title: /Zg (создание прототипов функций)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,16 +11,16 @@ helpviewer_keywords:
 - -Zg compiler option [C++]
 - generate function prototypes compiler option
 ms.assetid: c8df1b46-24ff-46f2-8356-e0a144b21dd2
-ms.openlocfilehash: 591460b78a461aa2e33f873b79d6dcec0277f99f
-ms.sourcegitcommit: 7d64c5f226f925642a25e07498567df8bebb00d4
-ms.translationtype: HT
+ms.openlocfilehash: ee0bed48f15acae867d344a60a6d42f3b17c7e85
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/08/2019
-ms.locfileid: "65446197"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97178879"
 ---
 # <a name="zg-generate-function-prototypes"></a>/Zg (создание прототипов функций)
 
-Удалено. Для каждой функции, определенной в исходном файле, создает прототип; компиляция исходного файла при этом не производится.
+Удаляются. Для каждой функции, определенной в исходном файле, создает прототип; компиляция исходного файла при этом не производится.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -27,9 +28,9 @@ ms.locfileid: "65446197"
 /Zg
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Этот параметр компилятора больше не доступен. Он был удален в Visual Studio 2015. Эта страница сохраняется для пользователей более ранних версиях Visual Studio.
+Этот параметр компилятора больше не доступен. Он был удален в Visual Studio 2015. Эта страница остается для пользователей более ранних версий Visual Studio.
 
 В состав прототипа функции входит тип возвращаемого значения функции и список типов аргументов. Список типов аргументов создается на основе типов формальных параметров функции. Все прототипы функций, присутствующие в исходном файле, пропускаются.
 
@@ -44,11 +45,11 @@ typedef struct MyStruct { int i; } T2;
 void f2(T2 * t) {}
 ```
 
-**/Zg** параметр был объявлен устаревшим в Visual Studio 2005 и был удален в Visual Studio 2015. Компилятор MSVC была удалена поддержка более старые, C-стиля кода. Список параметров компилятора, см. в разделе **нерекомендуемые и удаленные параметры компилятора** в [параметры компилятора, упорядоченные по категориям](compiler-options-listed-by-category.md).
+Параметр **/Zg** устарел в visual Studio 2005 и был удален в visual Studio 2015. Компилятор КОМПИЛЯТОРОМ MSVC удалил поддержку старого кода в стиле C. Список устаревших параметров компилятора см. в разделе **устаревшие и удаленные параметры** компилятора в [параметрах компилятора, перечисленных по категориям](compiler-options-listed-by-category.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Установка данного параметра компилятора в среде разработки Visual Studio
 
-1. Откройте диалоговое окно **Страницы свойств** проекта. Дополнительные сведения см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
 1. Откройте папку **C/C++** .
 
@@ -60,7 +61,7 @@ void f2(T2 * t) {}
 
 - См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора MSVC](compiler-command-line-syntax.md)
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)

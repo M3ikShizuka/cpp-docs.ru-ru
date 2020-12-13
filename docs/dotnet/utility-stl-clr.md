@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Utility (STL/CLR)'
 title: utility (STL/CLR)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - operator<= member [STL/CLR]
 - operator< member [STL/CLR]
 ms.assetid: fb48cb75-d5ef-47ce-b526-bf60dc86c552
-ms.openlocfilehash: faf7f607f9433fa3e4813957b24220a5e66e1e49
-ms.sourcegitcommit: 43cee7a0d41a062661229043c2f7cbc6ace17fa3
+ms.openlocfilehash: cb55acec88ca7b687ca7ad7790c4b0073944c0c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92008616"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97177995"
 ---
 # <a name="utility-stlclr"></a>utility (STL/CLR)
 
@@ -98,10 +99,10 @@ template<typename Value1,
 *Значение1*<br/>
 Тип первого упакованного значения.
 
-*Value2*<br/>
+*Значение2*<br/>
 Тип второго упакованного значения.
 
-## <a name="members"></a>Члены
+## <a name="members"></a>Элементы
 
 |Определение типа|Описание|
 |---------------------|-----------------|
@@ -217,7 +218,7 @@ pair<Value1, Value2>% operator=(pair<Value1, Value2>% right);
 
 ### <a name="remarks"></a>Комментарии
 
-Оператор члена копирует *прямо* в объект, а затем возвращает **`*this`** . Он используется для замены сохраненной пары значений копией сохраненной пары значений в *правой*части.
+Оператор члена копирует *прямо* в объект, а затем возвращает **`*this`** . Он используется для замены сохраненной пары значений копией сохраненной пары значений в *правой* части.
 
 ### <a name="example"></a>Пример
 
@@ -489,7 +490,7 @@ template<typename Value1,
 *Значение1*<br/>
 Тип первого упакованного значения.
 
-*Value2*<br/>
+*Значение2*<br/>
 Тип второго упакованного значения.
 
 *first*<br/>

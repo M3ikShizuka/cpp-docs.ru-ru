@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о приведениях в стиле C с помощью/CLR (C++/CLI)
 title: Приведение в стиле C с использованием параметра -clr (C++/CLI)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - C-style casts and /clr
 ms.assetid: d2a4401a-156a-4da9-8d12-923743e26913
-ms.openlocfilehash: daaf92e36550c5479903dec4869b1cb116c0a65a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: aedd794ca0f305f0cc292fb9048bd8dcceace7d0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219798"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176994"
 ---
 # <a name="c-style-casts-with-clr-ccli"></a>Приведение в стиле C с использованием параметра /clr (C++/CLI)
 
@@ -30,7 +31,7 @@ ms.locfileid: "87219798"
 
 Если ни одно из указанных выше приведений не является допустимым и если тип выражения и целевой тип являются ссылочными типами CLR, приведение в стиле C отображается на проверку во время выполнения (инструкция castclass MSIL). В противном случае приведение в стиле C считается недействительным, и компилятор выдает ошибку.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Приведение в стиле C не рекомендуется. При компиляции с помощью параметра [/CLR (компиляция CLR)](../build/reference/clr-common-language-runtime-compilation.md) необходимо использовать [safe_cast](safe-cast-cpp-component-extensions.md).
 

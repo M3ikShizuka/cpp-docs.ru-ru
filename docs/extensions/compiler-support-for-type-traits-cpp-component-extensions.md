@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Поддержка компилятора для признаков типов (C++/CLI и C++/CX)'
 title: Поддержка признаков типов компилятором (C++/CLI и C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
@@ -61,12 +62,12 @@ helpviewer_keywords:
 - __is_simple_value_class keyword [C++]
 - __has_trivial_constructor keyword [C++]
 ms.assetid: cd440630-0394-48c0-a16b-1580b6ef5844
-ms.openlocfilehash: 16c79e05c6ba6f50a3e6c0d6dd5f48963be40fa8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ec9efe1305a844779b4848cbae155d2946488d11
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219785"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176929"
 ---
 # <a name="compiler-support-for-type-traits-ccli-and-ccx"></a>Поддержка признаков типов компилятором (C++/CLI и C++/CX)
 
@@ -74,7 +75,7 @@ ms.locfileid: "87219785"
 
 ## <a name="all-runtimes"></a>Все среды выполнения
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Признаки типов особенно важны для программистов, создающих библиотеки.
 
@@ -520,9 +521,9 @@ ms.locfileid: "87219785"
 
 ## <a name="windows-runtime"></a>Среда выполнения Windows
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`__has_finalizer(` *type* `)` Характеристика типа типа не поддерживается, так как эта платформа не поддерживает методы завершения.
+`__has_finalizer(`  `)` Характеристика типа типа не поддерживается, так как эта платформа не поддерживает методы завершения.
 
 ### <a name="requirements"></a>Требования
 
@@ -530,7 +531,7 @@ ms.locfileid: "87219785"
 
 ## <a name="common-language-runtime"></a>Среда CLR
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 (Отсутствуют комментарии для данной возможности в рамках этой платформы).
 
