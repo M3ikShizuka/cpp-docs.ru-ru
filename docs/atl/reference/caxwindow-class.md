@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Каксвиндов Class'
 title: Класс Каксвиндов
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - CAxWindow class
 - ATL, hosting ActiveX controls
 ms.assetid: 85e79261-43e4-4770-bde0-1ff87f222b0f
-ms.openlocfilehash: b74ecb9af2decf92f873cef8d016907b6c9474cf
-ms.sourcegitcommit: d9c94dcabd94537e304be0261b3263c2071b437b
+ms.openlocfilehash: 0b1cdabbce4fd6a36f6f3e9fb15b3f28249065c3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91353081"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146995"
 ---
 # <a name="caxwindow-class"></a>Класс Каксвиндов
 
@@ -36,11 +37,11 @@ ms.locfileid: "91353081"
 class CAxWindow : public CWindow
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="methods"></a>Методы
 
-|Компонент|Описание|
+|Функция|Описание|
 |-|-|
 |[аттачконтрол](#attachcontrol)|Присоединяет существующий элемент управления ActiveX к `CAxWindow` объекту.|
 |[каксвиндов](#caxwindow)|Формирует объект `CAxWindow`.|
@@ -291,7 +292,7 @@ HRESULT QueryControl(Q** ppUnk);
 *ппунк*<br/>
 заполняет Указатель на интерфейс элемента управления. В версии шаблона этого метода нет необходимости указывать идентификатор ссылки при условии, что передан типизированный интерфейс со связанным UUID.
 
-*Формате*<br/>
+*Q*<br/>
 окне Интерфейс, для которого выполняется запрос.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -316,7 +317,7 @@ HRESULT QueryHost(Q** ppUnk);
 *ппунк*<br/>
 заполняет Указатель на интерфейс на узле. В версии шаблона этого метода нет необходимости указывать идентификатор ссылки при условии, что передан типизированный интерфейс со связанным UUID.
 
-*Формате*<br/>
+*Q*<br/>
 окне Интерфейс, для которого выполняется запрос.
 
 ### <a name="return-value"></a>Возвращаемое значение

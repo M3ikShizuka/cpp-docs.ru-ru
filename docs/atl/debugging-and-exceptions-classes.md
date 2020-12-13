@@ -1,27 +1,28 @@
 ---
-title: Отладка и исключения классов (ATL)
+description: 'Дополнительные сведения: классы отладки и исключений'
+title: Классы отладки и исключений (ATL)
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - debugging and exceptions classes
 ms.assetid: d42d7649-9721-4a1a-8b38-d983a649fdb9
-ms.openlocfilehash: f6e242b883689152f55c93a9e29f4e93e9f88737
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ddc00054284f75feb239819d83a097a6eb4b853d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62234964"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148062"
 ---
-# <a name="debugging-and-exceptions-classes"></a>Классы исключений для отладки и
+# <a name="debugging-and-exceptions-classes"></a>Классы отладки и исключений
 
-Эти классы обеспечивают поддержку для обработки исключений и отладки.
+Эти классы обеспечивают поддержку обработки исключений и отладки.
 
-- [CAtlDebugInterfacesModule](../atl/reference/catldebuginterfacesmodule-class.md) этот класс обеспечивает поддержку интерфейсов отладки.
+- [Катлдебугинтерфацесмодуле](../atl/reference/catldebuginterfacesmodule-class.md) Этот класс обеспечивает поддержку для интерфейсов отладки.
 
-- [CAtlException](../atl/reference/catlexception-class.md) этот класс определяет ATL исключения.
+- [Катлексцептион](../atl/reference/catlexception-class.md) Этот класс определяет исключение ATL.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Общие сведения о классе](../atl/atl-class-overview.md)<br/>
-[Глобальные функции для отладки и создания отчетов об ошибках](../atl/reference/debugging-and-error-reporting-global-functions.md)<br/>
-[Макросы для отладки и создания отчетов об ошибках](../atl/reference/debugging-and-error-reporting-macros.md)
+[Общие сведения о классах](../atl/atl-class-overview.md)<br/>
+[Глобальные функции отладки и отчетов об ошибках](../atl/reference/debugging-and-error-reporting-global-functions.md)<br/>
+[Макросы отладки и отчетов об ошибках](../atl/reference/debugging-and-error-reporting-macros.md)

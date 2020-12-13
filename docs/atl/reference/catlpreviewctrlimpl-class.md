@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Катлпревиевктрлимпл Class'
 title: Класс Катлпревиевктрлимпл
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlPreviewCtrlImpl class
 ms.assetid: 39b3299e-07e4-4abc-9b6e-b54bfa3b0802
-ms.openlocfilehash: fd94d0d6fe43d80b45def3f747c7b7d558de31d4
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 52263a4c65af1b791ca5da64eff235e93006ab52
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82167881"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147216"
 ---
 # <a name="catlpreviewctrlimpl-class"></a>Класс Катлпревиевктрлимпл
 
@@ -40,18 +41,18 @@ ms.locfileid: "82167881"
 class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPreviewCtrl;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Катлпревиевктрлимпл:: ~ Катлпревиевктрлимпл](#dtor)|Разструктура объекта элемента управления предварительной версии.|
 |[Катлпревиевктрлимпл:: Катлпревиевктрлимпл](#catlpreviewctrlimpl)|Конструирует объект элемента управления предварительной версии.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Катлпревиевктрлимпл:: Create](#create)|Вызывается расширенным обработчиком просмотра для создания окна Windows.|
 |[Катлпревиевктрлимпл::D естрой](#destroy)|Вызывается расширенным обработчиком просмотра, когда ему требуется уничтожить этот элемент управления.|
@@ -81,7 +82,7 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
 |[Катлпревиевктрлимпл:: m_clrBack](#m_clrback)|Цвет фона окна предварительного просмотра.|
 |[Катлпревиевктрлимпл:: m_clrText](#m_clrtext)|Цвет текста окна предварительного просмотра.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -93,7 +94,7 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
 
 `ATL::CWindowImplBaseT<TBase,TWinTraits>`
 
-[Библиотека ATL::\<квиндовимпл катлпревиевктрлимпл>](../../atl/reference/cwindowimpl-class.md)
+[Библиотека ATL:: Квиндовимпл\<CAtlPreviewCtrlImpl>](../../atl/reference/cwindowimpl-class.md)
 
 `IPreviewCtrl`
 
@@ -103,7 +104,7 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
 
 **Заголовок:** атлпревиевктрлимпл. h
 
-## <a name="catlpreviewctrlimplcatlpreviewctrlimpl"></a><a name="catlpreviewctrlimpl"></a>Катлпревиевктрлимпл:: Катлпревиевктрлимпл
+## <a name="catlpreviewctrlimplcatlpreviewctrlimpl"></a><a name="catlpreviewctrlimpl"></a> Катлпревиевктрлимпл:: Катлпревиевктрлимпл
 
 Конструирует объект элемента управления предварительной версии.
 
@@ -112,9 +113,9 @@ CAtlPreviewCtrlImpl(void) : m_clrText(0),
    m_clrBack(RGB(255, 255, 255)), m_plf(NULL);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="catlpreviewctrlimplcatlpreviewctrlimpl"></a><a name="dtor"></a>Катлпревиевктрлимпл:: ~ Катлпревиевктрлимпл
+## <a name="catlpreviewctrlimplcatlpreviewctrlimpl"></a><a name="dtor"></a> Катлпревиевктрлимпл:: ~ Катлпревиевктрлимпл
 
 Разструктура объекта элемента управления предварительной версии.
 
@@ -122,9 +123,9 @@ CAtlPreviewCtrlImpl(void) : m_clrText(0),
 virtual ~CAtlPreviewCtrlImpl(void);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="catlpreviewctrlimplcreate"></a><a name="create"></a>Катлпревиевктрлимпл:: Create
+## <a name="catlpreviewctrlimplcreate"></a><a name="create"></a> Катлпревиевктрлимпл:: Create
 
 Вызывается расширенным обработчиком просмотра для создания окна Windows.
 
@@ -144,9 +145,9 @@ virtual BOOL Create(HWND hWndParent, const RECT* prc);
 
 Значение TRUE, если успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="catlpreviewctrlimpldestroy"></a><a name="destroy"></a>Катлпревиевктрлимпл::D естрой
+## <a name="catlpreviewctrlimpldestroy"></a><a name="destroy"></a> Катлпревиевктрлимпл::D естрой
 
 Вызывается расширенным обработчиком просмотра, когда ему требуется уничтожить этот элемент управления.
 
@@ -154,9 +155,9 @@ virtual BOOL Create(HWND hWndParent, const RECT* prc);
 virtual void Destroy();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="catlpreviewctrlimpldopaint"></a><a name="dopaint"></a>Катлпревиевктрлимпл::D Опаинт
+## <a name="catlpreviewctrlimpldopaint"></a><a name="dopaint"></a> Катлпревиевктрлимпл::D Опаинт
 
 Вызывается платформой для отрисовки предварительной версии.
 
@@ -169,9 +170,9 @@ virtual void DoPaint(HDC hdc);
 *HDC*<br/>
 Маркер контекста устройства для рисования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="catlpreviewctrlimplfocus"></a><a name="focus"></a>Катлпревиевктрлимпл:: Focus
+## <a name="catlpreviewctrlimplfocus"></a><a name="focus"></a> Катлпревиевктрлимпл:: Focus
 
 Устанавливает фокус на этот элемент управления.
 
@@ -179,9 +180,9 @@ virtual void DoPaint(HDC hdc);
 virtual void Focus();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="catlpreviewctrlimplm_clrback"></a><a name="m_clrback"></a>Катлпревиевктрлимпл:: m_clrBack
+## <a name="catlpreviewctrlimplm_clrback"></a><a name="m_clrback"></a> Катлпревиевктрлимпл:: m_clrBack
 
 Цвет фона окна предварительного просмотра.
 
@@ -189,9 +190,9 @@ virtual void Focus();
 COLORREF m_clrBack;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="catlpreviewctrlimplm_clrtext"></a><a name="m_clrtext"></a>Катлпревиевктрлимпл:: m_clrText
+## <a name="catlpreviewctrlimplm_clrtext"></a><a name="m_clrtext"></a> Катлпревиевктрлимпл:: m_clrText
 
 Цвет текста окна предварительного просмотра.
 
@@ -199,9 +200,9 @@ COLORREF m_clrBack;
 COLORREF m_clrText;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="catlpreviewctrlimplm_plf"></a><a name="m_plf"></a>Катлпревиевктрлимпл:: m_plf
+## <a name="catlpreviewctrlimplm_plf"></a><a name="m_plf"></a> Катлпревиевктрлимпл:: m_plf
 
 Шрифт, используемый для вывода текста в окне предварительного просмотра.
 
@@ -209,9 +210,9 @@ COLORREF m_clrText;
 const LOGFONTW* m_plf;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="catlpreviewctrlimplonpaint"></a><a name="onpaint"></a>Катлпревиевктрлимпл:: onpain
+## <a name="catlpreviewctrlimplonpaint"></a><a name="onpaint"></a> Катлпревиевктрлимпл:: onpain
 
 Обрабатывает сообщение WM_PAINT.
 
@@ -241,9 +242,9 @@ LRESULT OnPaint(
 
 Всегда возвращает 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="catlpreviewctrlimplredraw"></a><a name="redraw"></a>Катлпревиевктрлимпл:: перерисовка
+## <a name="catlpreviewctrlimplredraw"></a><a name="redraw"></a> Катлпревиевктрлимпл:: перерисовка
 
 Указывает, что этот элемент управления должен перерисовываться.
 
@@ -251,9 +252,9 @@ LRESULT OnPaint(
 virtual void Redraw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="catlpreviewctrlimplsethost"></a><a name="sethost"></a>Катлпревиевктрлимпл:: Сесост
+## <a name="catlpreviewctrlimplsethost"></a><a name="sethost"></a> Катлпревиевктрлимпл:: Сесост
 
 Задает новый родительский элемент для этого элемента управления.
 
@@ -266,9 +267,9 @@ virtual void SetHost(HWND hWndParent);
 *хвндпарент*<br/>
 Дескриптор нового родительского окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="catlpreviewctrlimplsetpreviewvisuals"></a><a name="setpreviewvisuals"></a>Катлпревиевктрлимпл:: Сетпревиеввисуалс
+## <a name="catlpreviewctrlimplsetpreviewvisuals"></a><a name="setpreviewvisuals"></a> Катлпревиевктрлимпл:: Сетпревиеввисуалс
 
 Вызывается расширенным обработчиком просмотра, когда ему необходимо задать визуальные элементы расширенного просмотра содержимого.
 
@@ -290,9 +291,9 @@ virtual void SetPreviewVisuals(
 *плф*<br/>
 Шрифт, используемый для вывода текста в окне предварительного просмотра.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="catlpreviewctrlimplsetrect"></a><a name="setrect"></a>Катлпревиевктрлимпл:: SetRect
+## <a name="catlpreviewctrlimplsetrect"></a><a name="setrect"></a> Катлпревиевктрлимпл:: SetRect
 
 Задает новый ограничивающий прямоугольник для этого элемента управления.
 
@@ -308,8 +309,8 @@ virtual void SetRect(const RECT* prc, BOOL bRedraw);
 *bRedraw*<br/>
 Указывает, следует ли перерисовать элемент управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Компоненты ATL COM Desktop](../../atl/atl-com-desktop-components.md)

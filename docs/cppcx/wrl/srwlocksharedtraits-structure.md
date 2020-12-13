@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура метод srwlocksharedtraits'
 title: SRWLockSharedTraits - структура
 ms.date: 09/27/2018
 ms.topic: reference
@@ -11,16 +12,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::SRWLockSharedTraits::GetInvalidValue method
 - Microsoft::WRL::Wrappers::HandleTraits::SRWLockSharedTraits::Unlock method
 ms.assetid: 709cb51e-d70c-40b6-bdb4-d8eacf3af495
-ms.openlocfilehash: 0dc43d4b9c16145ed7a5abe03cddb598c59b1e94
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 2cdfbd584adeffc9dedd8504d9183d6c5d4c1a95
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374289"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135126"
 ---
 # <a name="srwlocksharedtraits-structure"></a>SRWLockSharedTraits - структура
 
-Описывает общие характеристики класса в режиме общего блокировки. `SRWLock`
+Описывает общие характеристики `SRWLock` класса в режиме общей блокировки.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,20 +29,20 @@ ms.locfileid: "81374289"
 struct SRWLockSharedTraits;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
 Имя   | Описание
 ------ | --------------------------------------------------------------------------
-`Type` | Синоним указателя на класс [SRWLOCK.](srwlock-class.md)
+`Type` | Синоним для указателя на класс [SRWLock](srwlock-class.md) .
 
 ### <a name="public-methods"></a>Открытые методы
 
-Имя                                                     | Описание
+name                                                     | Описание
 -------------------------------------------------------- | -----------------------------------------------------------------
-[SRWLockSharedTraits::GetInvalidValue](#getinvalidvalue) | Извлекает `SRWLockSharedTraits` объект, который всегда является недействительным.
-[SRWLockSharedTraits::Разблокировка](#unlock)                   | Выпускает эксклюзивный контроль `SRWLock` указанного объекта.
+[Метод srwlocksharedtraits:: GetInvalidValue](#getinvalidvalue) | Извлекает `SRWLockSharedTraits` объект, который всегда является недопустимым.
+[Метод srwlocksharedtraits:: Unlock](#unlock)                   | Освобождает монопольный доступ к указанному `SRWLock` объекту.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -49,13 +50,13 @@ struct SRWLockSharedTraits;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** corewrappers.h
+**Заголовок:** кореврапперс. h
 
-**Пространство имен:** Microsoft::WRL::Wrappers:: HandleTraits
+**Пространство имен:** Microsoft:: WRL:: оболочки:: метод HandleTraits
 
-## <a name="srwlocksharedtraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a>SRWLockSharedTraits::GetInvalidValue
+## <a name="srwlocksharedtraitsgetinvalidvalue"></a><a name="getinvalidvalue"></a> Метод srwlocksharedtraits:: GetInvalidValue
 
-Извлекает `SRWLockSharedTraits` объект, который всегда является недействительным.
+Извлекает `SRWLockSharedTraits` объект, который всегда является недопустимым.
 
 ```cpp
 inline static Type GetInvalidValue();
@@ -63,11 +64,11 @@ inline static Type GetInvalidValue();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Ручка к `SRWLockSharedTraits` объекту.
+Маркер `SRWLockSharedTraits` объекта.
 
-## <a name="srwlocksharedtraitsunlock"></a><a name="unlock"></a>SRWLockSharedTraits::Разблокировка
+## <a name="srwlocksharedtraitsunlock"></a><a name="unlock"></a> Метод srwlocksharedtraits:: Unlock
 
-Выпускает эксклюзивный контроль `SRWLock` указанного объекта.
+Освобождает монопольный доступ к указанному `SRWLock` объекту.
 
 ```cpp
 inline static void Unlock(
@@ -77,5 +78,5 @@ inline static void Unlock(
 
 ### <a name="parameters"></a>Параметры
 
-*Srwlock*<br/>
-Ручка к `SRWLock` объекту.
+*SRWLock*<br/>
+Маркер `SRWLock` объекта.

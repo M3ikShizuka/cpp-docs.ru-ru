@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Катлтрансактионманажер Class'
 title: Класс Катлтрансактионманажер
 ms.date: 11/04/2016
 f1_keywords:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlTransactionManager class
 ms.assetid: b01732dc-1d16-4b42-bfac-b137fca2b740
-ms.openlocfilehash: 74afc1a82c12d6138198f5696d300825e06aba1e
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 25d5ea7e9b4838f483dd7f9ee408cdd5bd4c88cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562220"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147190"
 ---
 # <a name="catltransactionmanager-class"></a>Класс Катлтрансактионманажер
 
@@ -45,7 +46,7 @@ ms.locfileid: "88562220"
 class CAtlTransactionManager;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -72,7 +73,7 @@ class CAtlTransactionManager;
 |[регкреатекэйекс](#regcreatekeyex)|Создает указанный раздел реестра и связывает его с транзакцией. Если ключ уже существует, функция открывает его.|
 |[регделетекэй](#regdeletekey)|Удаляет подраздел и его значения из указанного представления реестра для конкретной платформы в качестве транзакционной операции.|
 |[RegOpenKeyEx](#regopenkeyex)|Открывает указанный раздел реестра и связывает его с транзакцией.|
-|[Отката](#rollback)|Запрашивает откат транзакции.|
+|[Откат](#rollback)|Запрашивает откат транзакции.|
 |[сетфилеаттрибутес](#setfileattributes)|Задает атрибуты для файла или каталога в качестве транзакционной операции.|
 
 ### <a name="protected-data-members"></a>Защищенные члены данных
@@ -82,7 +83,7 @@ class CAtlTransactionManager;
 |[m_bFallback](#m_bfallback)|Значение TRUE, если резервная поддержка поддерживается; В противном случае — значение FALSE.|
 |[m_hTransaction](#m_htransaction)|Маркер транзакции.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -100,7 +101,7 @@ class CAtlTransactionManager;
 virtual ~CAtlTransactionManager();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 При нормальной обработке транзакция автоматически фиксируется и закрывается. Если деструктор вызывается во время очистки исключения, происходит откат и закрытие транзакции.
 
@@ -120,7 +121,7 @@ CAtlTransactionManager(BOOL bFallback = TRUE, BOOL bAutoCreateTransaction = TRUE
 *баутокреатетрансактион*<br/>
 Значение TRUE указывает, что обработчик транзакций создается в конструкторе автоматически. Значение FALSE указывает, что это не так.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="close"></a><a name="close"></a> Выхода
 
@@ -134,7 +135,7 @@ inline BOOL Close();
 
 Значение TRUE, если успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта оболочка вызывает `CloseHandle` функцию. Метод автоматически вызывается в деструкторе.
 
@@ -150,7 +151,7 @@ inline BOOL Commit();
 
 Значение TRUE, если успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта оболочка вызывает `CommitTransaction` функцию. Метод автоматически вызывается в деструкторе.
 
@@ -166,7 +167,7 @@ inline BOOL Create();
 
 Значение TRUE, если успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта оболочка вызывает `CreateTransaction` функцию. Проверьте его на наличие
 
@@ -206,13 +207,13 @@ inline HANDLE CreateFile(
 Атрибуты и флаги файла. Этот параметр может включать любое сочетание доступных атрибутов файлов (FILE_ATTRIBUTE_ *). Все остальные атрибуты файла переопределяют FILE_ATTRIBUTE_NORMAL. Этот параметр также может содержать сочетания флагов (FILE_FLAG_ \* ) для управления поведением буферизации, режимами доступа и другими флагами специального назначения. Они объединяются с любыми FILE_ATTRIBUTE_ными \* значениями.
 
 *хтемплатефиле*<br/>
-Допустимый маркер файла шаблона с правом доступа GENERIC_READ. Файл шаблона предоставляет атрибуты файлов и дополнительные атрибуты для создаваемого файла. Этот параметр может иметь значение NULL.
+Допустимый маркер файла шаблона с правом доступа GENERIC_READ. Файл шаблона предоставляет атрибуты файлов и дополнительные атрибуты для создаваемого файла. Этот параметр может принимать значение NULL.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Возвращает маркер, который можно использовать для доступа к объекту.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта оболочка вызывает `CreateFileTransacted` функцию.
 
@@ -229,7 +230,7 @@ inline BOOL DeleteFile(LPCTSTR lpFileName);
 *лпфиленаме*<br/>
 Имя файла, предназначенного для удаления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта оболочка вызывает `DeleteFileTransacted` функцию.
 
@@ -255,7 +256,7 @@ inline HANDLE FindFirstFile(
 
 Если функция выполнена, возвращаемое значение является маркером поиска, используемым при последующем вызове метода `FindNextFile` или `FindClose` . Если функция завершается ошибкой или не находит файлы из строки поиска в параметре *лпфиленаме* , возвращается значение INVALID_HANDLE_VALUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта оболочка вызывает `FindFirstFileTransacted` функцию.
 
@@ -272,7 +273,7 @@ inline DWORD GetFileAttributes(LPCTSTR lpFileName);
 *лпфиленаме*<br/>
 Имя файла или каталога.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта оболочка вызывает `GetFileAttributesTransacted` функцию.
 
@@ -298,7 +299,7 @@ inline BOOL GetFileAttributesEx(
 *лпфилеинформатион*<br/>
 Указатель на буфер, который получает сведения об атрибуте. Тип сведений об атрибутах, хранящихся в этом буфере, определяется значением *финфолевелид*. Если параметр *финфолевелид* имеет значение жетфиликсинфостандард, то этот параметр указывает на структуру WIN32_FILE_ATTRIBUTE_DATA.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта оболочка вызывает `GetFileAttributesTransacted` функцию.
 
@@ -314,7 +315,7 @@ HANDLE GetHandle() const;
 
 Возвращает маркер транзакции для класса. Возвращает значение NULL, если `CAtlTransactionManager` не присоединен к маркеру.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="isfallback"></a><a name="isfallback"></a> Возврат
 
@@ -328,7 +329,7 @@ BOOL IsFallback() const;
 
 Возвращает значение TRUE, если класс поддерживает резервные вызовы. В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="m_bfallback"></a><a name="m_bfallback"></a> m_bFallback
 
@@ -338,7 +339,7 @@ BOOL IsFallback() const;
 BOOL m_bFallback;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="m_htransaction"></a><a name="m_htransaction"></a> m_hTransaction
 
@@ -348,7 +349,7 @@ BOOL m_bFallback;
 HANDLE m_hTransaction;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="movefile"></a><a name="movefile"></a> MoveFile
 
@@ -366,7 +367,7 @@ inline BOOL MoveFile(LPCTSTR lpOldFileName, LPCTSTR lpNewFileName);
 *лпневфиленаме*<br/>
 Новое имя для файла или каталога. Это имя уже не должно существовать. Новый файл может находиться в другой файловой системе или на диске. Новый каталог должен находиться на том же диске.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта оболочка вызывает `MoveFileTransacted` функцию.
 
@@ -399,7 +400,7 @@ inline LSTATUS RegCreateKeyEx(
 Этот параметр зарезервирован и должен быть равен нулю.
 
 *лпкласс*<br/>
-Определяемый пользователем класс этого ключа. Этот параметр можно игнорировать. Этот параметр может иметь значение NULL.
+Определяемый пользователем класс этого ключа. Этот параметр можно игнорировать. Этот параметр может принимать значение NULL.
 
 *двоптионс*<br/>
 Этот параметр может принимать одно из следующих значений: REG_OPTION_BACKUP_RESTORE, REG_OPTION_NON_VOLATILE или REG_OPTION_VOLATILE.
@@ -420,7 +421,7 @@ inline LSTATUS RegCreateKeyEx(
 
 Если функция выполнена, возвращаемое значение будет ERROR_SUCCESS. Если функция завершается ошибкой, возвращаемое значение является ненулевым кодом ошибки, определенным в файле Winerror. h.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта оболочка вызывает `RegCreateKeyTransacted` функцию.
 
@@ -444,7 +445,7 @@ inline LSTATUS RegDeleteKeyEx(HKEY hKey, LPCTSTR lpSubKey);
 
 Если функция выполнена, возвращаемое значение будет ERROR_SUCCESS. Если функция завершается ошибкой, возвращаемое значение является ненулевым кодом ошибки, определенным в файле Winerror. h.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта оболочка вызывает `RegDeleteKeyTransacted` функцию.
 
@@ -482,7 +483,7 @@ inline LSTATUS RegOpenKeyEx(
 
 Если функция выполнена, возвращаемое значение будет ERROR_SUCCESS. Если функция завершается ошибкой, возвращаемое значение является ненулевым кодом ошибки, определенным в файле Winerror. h.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта оболочка вызывает `RegOpenKeyTransacted` функцию.
 
@@ -498,7 +499,7 @@ inline BOOL Rollback();
 
 Значение TRUE, если успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта оболочка вызывает `RollbackTransaction` функцию.
 
@@ -518,10 +519,10 @@ inline BOOL SetFileAttributes(LPCTSTR lpFileName, DWORD dwAttributes);
 *дваттрибутес*<br/>
 Атрибуты файла, которые необходимо задать для файла. Дополнительные сведения см. в разделе [сетфилеаттрибутестрансактед](/windows/win32/api/winbase/nf-winbase-setfileattributestransactedw).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта оболочка вызывает `SetFileAttributesTransacted` функцию.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Компоненты ATL COM Desktop](../../atl/atl-com-desktop-components.md)

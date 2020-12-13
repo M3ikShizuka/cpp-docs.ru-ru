@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: max_variable_size классе'
 title: Класс max_variable_size
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - stdext::max_variable_size [C++], released
 - stdext::max_variable_size [C++], saved
 ms.assetid: 9f2e9df0-4148-4b37-bc30-f8eca0ef86ae
-ms.openlocfilehash: 53d2603c82e94710ed687dce4caeec24aeb2f60a
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 0640e11e4ab68b60dc8114c88463a370e43dc749
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561652"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149231"
 ---
 # <a name="max_variable_size-class"></a>Класс max_variable_size
 
@@ -68,7 +69,7 @@ void allocated(std::size_t _Nx = 1);
 *_Nx*\
 Значение приращения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена добавляет *_Nx* к сохраненному значению `_Nallocs` . Эта функция-член вызывается после каждого успешного вызова `cache_freelist::allocate` оператором **`new`** . Аргумент *_Nx* — число блоков памяти в блоке, выделенном оператором **`new`** .
 
@@ -85,7 +86,7 @@ void deallocated(std::size_t _Nx = 1);
 *_Nx*\
 Значение приращения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция члена вычитает *_Nx* из сохраненного значения `_Nallocs` . Эта функция-член вызывается после каждого вызова `cache_freelist::deallocate` оператором **`delete`** . Аргумент *_Nx* — число блоков памяти в блоке, освобожденных оператором **`delete`** .
 
@@ -101,7 +102,7 @@ bool full();
 
 **`true`** Если `_Nallocs / 16 + 16 <= _Nblocks` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член вызывается `cache_freelist::deallocate`. Если вызов возвращает **`true`** , `deallocate` помещает блок памяти в свободный список; если возвращается значение false, `deallocate` вызывает оператор **`delete`** для освобождения блока.
 
@@ -113,7 +114,7 @@ bool full();
 max_variable_size();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конструктор инициализирует сохраненные значения `_Nblocks` и `_Nallocs` нулями.
 
@@ -125,7 +126,7 @@ max_variable_size();
 void released();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член уменьшает хранимое значение `_Nblocks`. Функция-член `released` текущего класса max вызывается `cache_freelist::allocate` каждый раз при удалении блока памяти из свободного списка.
 
@@ -137,10 +138,10 @@ void released();
 void saved();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член увеличивает хранимое значение `_Nblocks`. Она вызывается `cache_freelist::deallocate` каждый раз при помещении блока памяти в свободный список.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [\<allocators>](../standard-library/allocators-header.md)

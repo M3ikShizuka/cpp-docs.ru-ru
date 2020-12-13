@@ -1,40 +1,41 @@
 ---
-title: 'Элементы управления ATL: Общие вспомогательные классы'
+description: 'Дополнительные сведения о: элементы управления: общие классы поддержки'
+title: 'Элементы управления ATL: общие классы поддержки'
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - controls [ATL]
 - general support classes
 ms.assetid: cf73f1d2-7542-48e3-b8c8-9d3abf29f85b
-ms.openlocfilehash: 3f00348ab0c9f25bdd4f6b7a2b05cd4b82ea48e9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a5b147ef2b30f0cc209fdfdabd52b59d7112c475
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62262818"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148217"
 ---
-# <a name="controls-general-support-classes"></a>Элементы управления: Общие вспомогательные классы
+# <a name="controls-general-support-classes"></a>Элементы управления: общие классы поддержки
 
-Перечисленные ниже классы предоставляют общую поддержку для элементов управления ATL:
+Следующие классы обеспечивают общую поддержку элементов управления ATL.
 
-- [CComControl](../atl/reference/ccomcontrol-class.md) состоит из вспомогательных функций и данным-членам, которые необходимы для элементов управления ATL.
+- [Ккомконтрол](../atl/reference/ccomcontrol-class.md) Состоит из вспомогательных функций и элементов данных, необходимых элементам управления ATL.
 
-- [IOleControlImpl](../atl/reference/iolecontrolimpl-class.md) предоставляет методы, необходимые для элементов управления.
+- [Иолеконтролимпл](../atl/reference/iolecontrolimpl-class.md) Предоставляет методы, необходимые для элементов управления.
 
-- [IOleObjectImpl](../atl/reference/ioleobjectimpl-class.md) предоставляет основные методы, через которые контейнер взаимодействует с элементом управления. Управляет активацией и деактивацией встроенных элементов управления на месте.
+- [Иолеобжектимпл](../atl/reference/ioleobjectimpl-class.md) Предоставляет основные методы, с помощью которых контейнер взаимодействует с элементом управления. Управляет активацией и деактивацией элементов управления на месте.
 
-- [IQuickActivateImpl](../atl/reference/iquickactivateimpl-class.md) объединяет инициализации в один вызов, чтобы помочь избежать задержек при загрузке элементов управления контейнеров.
+- [Икуиккактиватеимпл](../atl/reference/iquickactivateimpl-class.md) Объединяет инициализацию в один вызов контейнеров справки, чтобы избежать задержек при загрузке элементов управления.
 
-- [IPointerInactiveImpl](../atl/reference/ipointerinactiveimpl-class.md) предоставляет взаимодействия с минимальными мышью для элемента управления, в противном случае неактивной.
+- [Ипоинтеринактивеимпл](../atl/reference/ipointerinactiveimpl-class.md) Обеспечивает минимальное взаимодействие с мышью для неактивного элемента управления.
 
 ## <a name="sample-program"></a>Пример программы
 
 [ATLFire](../overview/visual-cpp-samples.md)
 
-## <a name="related-articles"></a>Связанные статьи
+## <a name="related-articles"></a>Похожие статьи
 
 [Учебник по ATL](../atl/active-template-library-atl-tutorial.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Общие сведения о классе](../atl/atl-class-overview.md)
+[Общие сведения о классах](../atl/atl-class-overview.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: reverse_iterator классе'
 title: Класс reverse_iterator
 ms.date: 03/27/2019
 f1_keywords:
@@ -18,16 +19,16 @@ helpviewer_keywords:
 - std::reverse_iterator [C++], base
 - std::reverse_iterator [C++], operator_star
 ms.assetid: c0b34d04-ae9a-4999-9aff-28b313897ffa
-ms.openlocfilehash: 882d0f7f4930e9d809098a29384a962d0aa8f4ea
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0aa8b03188d8b5a6e2ce004579b7b3cc2fb9b254
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81373433"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148971"
 ---
 # <a name="reverse_iterator-class"></a>Класс reverse_iterator
 
-Шаблон класса представляет собой адаптер итератора, который описывает объект обратного итератора, который ведет себя как случайный доступ или двунаправленный итератор, только в обратном направлении. Он включает прохождение через диапазон в обратном порядке.
+Шаблон класса — это адаптер итератора, который описывает объект реверсивного итератора, который ведет себя как итератор произвольного доступа или прямой, в обратную. Он включает прохождение через диапазон в обратном порядке.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -38,17 +39,17 @@ class reverse_iterator
 
 ### <a name="parameters"></a>Параметры
 
-RandomIterator Тип, представляющий итератор, который будет адаптирован для работы в обратном направлении.
+RandomIterator тип, представляющий итератор, который должен адаптироваться к работе в обратную.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Существующие контейнеры стандартной библиотеки C++ также задают типы `reverse_iterator` и `const_reverse_iterator` и обладают функциями-членами `rbegin` и `rend`, которые возвращают обратные итераторы. Эти итераторы обладают семантикой перезаписи. Адаптер `reverse_iterator` дополняет эту функциональность, поскольку он предлагает семантику вставки, а также может быть использован с потоками.
+Существующие контейнеры стандартной библиотеки C++ также задают типы `reverse_iterator` и `const_reverse_iterator` и обладают функциями-членами `rbegin` и `rend`, которые возвращают обратные итераторы. Эти итераторы обладают семантикой перезаписи. `reverse_iterator`Адаптер дополняет эту функциональность, так как она предлагает семантику вставки и также может использоваться с потоками.
 
-Который `reverse_iterator` требует двунаправленного итератора не должен `operator+=`вызывать `operator+` `operator-=`какие-либо из функций члена, `operator-`, или `operator[]`, которые могут быть использованы только со случайным доступом итераторов.
+Объект `reverse_iterator` , для которого требуется двунаправленный итератор, не должен вызывать функции-члены `operator+=` ,,, `operator+` `operator-=` `operator-` или `operator[]` , которые могут использоваться только с итераторами произвольного доступа.
 
-Диапазон итератора является*первым,* *последним,* где квадратная кронштейна слева указывает на включение *первого,* а скобки справа указывает на включение элементов до, но исключая *последнее.* Те же элементы включены в обратную последовательность - **оборот** - *первый,* **оборот** - *последний),* так что если *последний* является одним-последний \*элемент в последовательности, то первый элемент **оборота** - *сначала* в обратной последовательности указывает на *(последний* - 1). Идентификатор, который связывает все обратные итераторы с их базовыми итераторами:
+Диапазон итератора — [*первый*, *последний*), где квадратная скобка слева указывает на включение *первого* , а круглые скобки справа указывают на включение элементов вплоть до, но за исключением самого *последнего* . Одни и те же элементы включены в обратную последовательность [ **Редакция**  -  *First*, **Редакция**  -  *Last*), так что если *последним* является однонаправленный элемент в последовательности, первый элемент, номер которого   -  *первым* в инвертированной последовательности указывает на \* (*Last* -1). Идентификатор, который связывает все обратные итераторы с их базовыми итераторами:
 
-&\***(reverse_iterator** *(i* ) ) \*&*(i* - 1 ).
+&\*( **reverse_iterator** ( *i* )) = = &\* ( *i* -1).
 
 На практике это означает, что в обращенной последовательности reverse_iterator будет ссылаться на элемент, позиция которого на единицу превышает позицию элемента, на который итератор ссылается в исходной последовательности (т. е. находится справа от данного элемента). Поэтому если итератор обращался к элементу 6 в последовательности (2, 4, 6, 8), то итератор `reverse_iterator` будет обращаться к элементу 4 в обращенной последовательности (8, 6, 4, 2).
 
@@ -64,8 +65,8 @@ RandomIterator Тип, представляющий итератор, котор
 |-|-|
 |[difference_type](#difference_type)|Тип, обеспечивающий разницу между двумя итераторами `reverse_iterator`, которые ссылаются на элементы в одном контейнере.|
 |[iterator_type](#iterator_type)|Тип, предоставляющий базовый итератор для итератора `reverse_iterator`.|
-|[указатель](#pointer)|Тип, содержащий указатель на элемент, к которому обращается итератор `reverse_iterator`.|
-|[Ссылки](#reference)|Тип, содержащий ссылку на элемент, к которому обращается итератор `reverse_iterator`.|
+|[вид](#pointer)|Тип, содержащий указатель на элемент, к которому обращается итератор `reverse_iterator`.|
+|[reference](#reference)|Тип, содержащий ссылку на элемент, к которому обращается итератор `reverse_iterator`.|
 
 ### <a name="member-functions"></a>Функции элементов
 
@@ -78,22 +79,22 @@ RandomIterator Тип, представляющий итератор, котор
 |Оператор|Описание|
 |-|-|
 |[operator_star](#op_star)|Возвращение элемента, к которому обращается `reverse_iterator`.|
-|[оператор](#op_add)|Добавление смещения к итератору и возврат нового итератора `reverse_iterator`, который обращается к вставленному элементу в новой позиции смещения.|
-|[оператор](#op_add_add)|Увеличение `reverse_iterator` до следующего элемента.|
-|[оператора](#op_add_eq)|Добавление заданного смещения из итератора `reverse_iterator`.|
-|[оператор-](#operator-)|Вычитание смещения из итератора `reverse_iterator` с возвратом итератора `reverse_iterator`, который обращается к элементу в позиции со сдвигом.|
-|[оператор--](#operator--)|Уменьшение `reverse_iterator` до предыдущего элемента.|
-|[оператор-я](#operator-_eq)|Вычитание заданного смещения из итератора `reverse_iterator`.|
-|[оператор->](#op-arrow)|Возвращение указателя на элемент, к которому обращается `reverse_iterator`.|
+|[operator +](#op_add)|Добавление смещения к итератору и возврат нового итератора `reverse_iterator`, который обращается к вставленному элементу в новой позиции смещения.|
+|[operator + +](#op_add_add)|Увеличение `reverse_iterator` до следующего элемента.|
+|[operator + =](#op_add_eq)|Добавление заданного смещения из итератора `reverse_iterator`.|
+|[станции](#operator-)|Вычитание смещения из итератора `reverse_iterator` с возвратом итератора `reverse_iterator`, который обращается к элементу в позиции со сдвигом.|
+|[Оператор--](#operator--)|Уменьшение `reverse_iterator` до предыдущего элемента.|
+|[Оператор-=](#operator-_eq)|Вычитание заданного смещения из итератора `reverse_iterator`.|
+|[Оператор->](#op-arrow)|Возвращение указателя на элемент, к которому обращается `reverse_iterator`.|
 |[оператор&#91;&#93;](#op_at)|Возврат ссылки на смещение элемента из элемента, к которому обращается `reverse_iterator`, на указанное число позиций.|
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<iterator>
+**Заголовок:**\<iterator>
 
 **Пространство имен:** std
 
-## <a name="reverse_iteratorbase"></a><a name="base"></a>reverse_iterator::база
+## <a name="reverse_iteratorbase"></a><a name="base"></a> reverse_iterator:: базовый
 
 Восстановление базового итератора из соответствующего итератора `reverse_iterator`.
 
@@ -105,11 +106,11 @@ RandomIterator base() const;
 
 Базовый интегратор `reverse_iterator`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Идентификатор, который связывает все обратные итераторы с их базовыми итераторами:
 
-&\*((i `reverse_iterator` ) ) \*, &*(i* - 1 ). *i*
+&\*( `reverse_iterator` ( *i* )) = = &\* ( *i* -1).
 
 На практике это означает, что в обращенной последовательности `reverse_iterator` будет ссылаться на элемент, позиция которого на единицу превышает позицию элемента, на который итератор ссылается в исходной последовательности (т. е. находится справа от данного элемента). Поэтому если итератор обращался к элементу 6 в последовательности (2, 4, 6, 8), то итератор `reverse_iterator` будет обращаться к элементу 4 в обращенной последовательности (8, 6, 4, 2).
 
@@ -162,7 +163,7 @@ int main( )
 }
 ```
 
-## <a name="reverse_iteratordifference_type"></a><a name="difference_type"></a>reverse_iterator::difference
+## <a name="reverse_iteratordifference_type"></a><a name="difference_type"></a> reverse_iterator::d ifference_type
 
 Тип, обеспечивающий разницу между двумя итераторами `reverse_iterator`, которые ссылаются на элементы в одном контейнере.
 
@@ -170,17 +171,17 @@ int main( )
 typedef typename iterator_traits<RandomIterator>::difference_type  difference_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип отличия `reverse_iterator` совпадает с типом отличия итератора.
 
-Тип является синонимом итератора `iterator_traits` \< черта typename **RandomIterator**> **::pointer**.
+Тип является синонимом типа TypeName для признака итератора `iterator_traits` \< **RandomIterator**> **::p оинтер**.
 
 ### <a name="example"></a>Пример
 
 См. пример объявления и использования `difference_type` в разделе [reverse_iterator::operator&#91;&#93;](#op_at).
 
-## <a name="reverse_iteratoriterator_type"></a><a name="iterator_type"></a>reverse_iterator::iterator_type
+## <a name="reverse_iteratoriterator_type"></a><a name="iterator_type"></a> reverse_iterator:: iterator_type
 
 Тип, предоставляющий базовый итератор для итератора `reverse_iterator`.
 
@@ -188,7 +189,7 @@ typedef typename iterator_traits<RandomIterator>::difference_type  difference_ty
 typedef RandomIterator iterator_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом для параметра шаблона `Iterator`.
 
@@ -196,7 +197,7 @@ typedef RandomIterator iterator_type;
 
 См. пример объявления и использования `iterator_type` в разделе [reverse_iterator::base](#base).
 
-## <a name="reverse_iteratoroperator"></a><a name="op_star"></a>reverse_iterator::оператор\*
+## <a name="reverse_iteratoroperator"></a><a name="op_star"></a> reverse_iterator:: operator\*
 
 Возвращает элемент, к которому обращается reverse_iterator.
 
@@ -208,9 +209,9 @@ reference operator*() const;
 
 Значение элементов к которым обращается reverse_iterator.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Оператор возвращается \* **(текущий** - 1).
+Оператор возвращает \* ( **Current** -1).
 
 ### <a name="example"></a>Пример
 
@@ -255,7 +256,7 @@ int main( )
 }
 ```
 
-## <a name="reverse_iteratoroperator"></a><a name="op_add"></a>reverse_iterator::оператор
+## <a name="reverse_iteratoroperator"></a><a name="op_add"></a> reverse_iterator:: operator +
 
 Добавление смещения к итератору и возврат нового итератора `reverse_iterator`, который обращается к вставленному элементу в новой позиции смещения.
 
@@ -265,14 +266,14 @@ reverse_iterator<RandomIterator> operator+(difference_type Off) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Выключено*\
+*Автоном*\
 Смещение, добавляемое в обратный итератор.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Объект `reverse_iterator`, который обращается к элементу смещения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член может использоваться, только если `reverse_iterator` удовлетворяет требованиям для итератора произвольного доступа.
 
@@ -331,7 +332,7 @@ After the +2 offset, the iterator rVPOS2 points
 to the 3rd element in the reversed sequence: 6.
 ```
 
-## <a name="reverse_iteratoroperator"></a><a name="op_add_add"></a>reverse_iterator:оператор
+## <a name="reverse_iteratoroperator"></a><a name="op_add_add"></a> reverse_iterator:: operator + +
 
 Увеличивает reverse_iterator до предыдущего элемента.
 
@@ -344,7 +345,7 @@ reverse_iterator<RandomIterator> operator++(int);
 
 Первый оператор возвращает предварительно увеличенный `reverse_iterator`, а второй, постинкрементный оператор, возвращает копию увеличенного `reverse_iterator`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член может использоваться, только если `reverse_iterator` удовлетворяет требованиям для двустороннего итератора.
 
@@ -404,7 +405,7 @@ After incrementing, the iterator rVPOS1 points
 to the second element in the reversed sequence: 7.
 ```
 
-## <a name="reverse_iteratoroperator"></a><a name="op_add_eq"></a>reverse_iterator::оператор
+## <a name="reverse_iteratoroperator"></a><a name="op_add_eq"></a> reverse_iterator:: operator + =
 
 Добавляет заданное смещение из reverse_iterator.
 
@@ -414,7 +415,7 @@ reverse_iterator<RandomIterator>& operator+=(difference_type Off);
 
 ### <a name="parameters"></a>Параметры
 
-*Выключено*\
+*Автоном*\
 Смещение, на которое необходимо увеличить итератор.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -477,7 +478,7 @@ After the +2 offset, the iterator rVPOS1 now points
 to the third element in the reversed sequence: 6.
 ```
 
-## <a name="reverse_iteratoroperator-"></a><a name="operator-"></a>reverse_iterator::оператор-
+## <a name="reverse_iteratoroperator-"></a><a name="operator-"></a> reverse_iterator:: operator —
 
 Вычитание смещения из итератора `reverse_iterator` с возвратом итератора `reverse_iterator`, который обращается к элементу в позиции со сдвигом.
 
@@ -487,14 +488,14 @@ reverse_iterator<RandomIterator> operator-(difference_type Off) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Выключено*\
+*Автоном*\
 Смещение, которое необходимо вычесть из reverse_iterator.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Объект `reverse_iterator`, который обращается к элементу смещения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член может использоваться, только если `reverse_iterator` удовлетворяет требованиям для итератора произвольного доступа.
 
@@ -554,7 +555,7 @@ After the -2 offset, the iterator rVPOS2 points
 to the 2nd element from the last in the reversed sequence: 9.
 ```
 
-## <a name="reverse_iteratoroperator--"></a><a name="operator--"></a>reverse_iterator:оператор--
+## <a name="reverse_iteratoroperator--"></a><a name="operator--"></a> reverse_iterator:: operator--
 
 Уменьшает reverse_iterator до предыдущего элемента.
 
@@ -567,7 +568,7 @@ reverse_iterator<RandomIterator> operator--(int);
 
 Первый оператор возвращает предварительно уменьшенный `reverse_iterator`, а второй, постдекрементный оператор, возвращает копию уменьшенного `reverse_iterator`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член может использоваться, только если `reverse_iterator` удовлетворяет требованиям для двустороннего итератора.
 
@@ -627,7 +628,7 @@ After the decrement, the iterator rVPOS1 points
 to the next-to-last element in the reversed sequence: 3.
 ```
 
-## <a name="reverse_iteratoroperator-"></a><a name="operator-_eq"></a>reverse_iterator:оператор-я
+## <a name="reverse_iteratoroperator-"></a><a name="operator-_eq"></a> reverse_iterator:: operator-=
 
 Вычитание заданного смещения из итератора `reverse_iterator`.
 
@@ -637,14 +638,14 @@ reverse_iterator<RandomIterator>& operator-=(difference_type Off);
 
 ### <a name="parameters"></a>Параметры
 
-*Выключено*\
+*Автоном*\
 Смещение, которое необходимо вычесть из `reverse_iterator`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член может использоваться, только если `reverse_iterator` удовлетворяет требованиям для итератора произвольного доступа.
 
-Оператор оценивает **текущий** + *Off* затем возвращает ** \*это.**
+Оператор вычисляет текущее значение   +  *Off* и возвращает **\* this**.
 
 ### <a name="example"></a>Пример
 
@@ -702,7 +703,7 @@ After the -2 offset, the iterator rVPOS1 now points
 to the 2nd element from the last in the reversed sequence: 9.
 ```
 
-## <a name="reverse_iteratoroperator-gt"></a><a name="op-arrow"></a>reverse_iterator::оператор-&gt;
+## <a name="reverse_iteratoroperator-gt"></a><a name="op-arrow"></a> reverse_iterator:: operator —&gt;
 
 Возвращение указателя на элемент, к которому обращается `reverse_iterator`.
 
@@ -714,9 +715,9 @@ pointer operator->() const;
 
 Указатель на элемент, к которому обращается `reverse_iterator`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Оператор возвращает ** & \* \*это.**
+Оператор возвращает **& \* \* this**.
 
 ### <a name="example"></a>Пример
 
@@ -781,7 +782,7 @@ The reverse_iterator rpos points to:
 ( 1, 2 )
 ```
 
-## <a name="reverse_iteratoroperator"></a><a name="op_at"></a>reverse_iterator:оператор
+## <a name="reverse_iteratoroperator"></a><a name="op_at"></a> reverse_iterator:: operator []
 
 Возврат ссылки на смещение элемента из элемента, к которому обращается `reverse_iterator`, на указанное число позиций.
 
@@ -791,16 +792,16 @@ reference operator[](difference_type Off) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Выключено*\
+*Автоном*\
 Смещение от адреса `reverse_iterator`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Ссылка на смещение элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Оператор возвращается <strong>\*</strong> ** \*(это** + `Off`).
+Оператор возвращает значение <strong>\*</strong> ( **\* this**  +  `Off` ).
 
 ### <a name="example"></a>Пример
 
@@ -859,7 +860,7 @@ The iterator rpos points to: 6.
 The iterator rpos now points to: 2.
 ```
 
-## <a name="reverse_iteratorpointer"></a><a name="pointer"></a>reverse_iterator::pointer
+## <a name="reverse_iteratorpointer"></a><a name="pointer"></a> reverse_iterator::p оинтер
 
 Тип, содержащий указатель на элемент, к которому обращается итератор `reverse_iterator`.
 
@@ -867,9 +868,9 @@ The iterator rpos now points to: 2.
 typedef typename iterator_traits<RandomIterator>::pointer pointer;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Тип является синонимом итератора `iterator_traits` \< черта typename *RandomIterator*> **::pointer**.
+Тип является синонимом типа TypeName для признака итератора `iterator_traits` \< *RandomIterator*> **::p оинтер**.
 
 ### <a name="example"></a>Пример
 
@@ -931,7 +932,7 @@ The iterator rpos points to:
 ( 1, 2 )
 ```
 
-## <a name="reverse_iteratorreference"></a><a name="reference"></a>reverse_iterator::reference
+## <a name="reverse_iteratorreference"></a><a name="reference"></a> reverse_iterator:: Reference
 
 Тип, предоставляющий ссылку на элемент, к которому обращается reverse_iterator.
 
@@ -939,15 +940,15 @@ The iterator rpos points to:
 typedef typename iterator_traits<RandomIterator>::reference reference;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Тип является синонимом итератора `iterator_traits` \< черта typename *RandomIterator*> **::reference**.
+Тип является синонимом для признака модификатора TypeName `iterator_traits` \< *RandomIterator*> **:: Reference**.
 
 ### <a name="example"></a>Пример
 
-Смотрите [reverse_iterator::оператор&#91;&#93;](#op_at) или [reverse_iterator::оператор для](#op_star) примеров `reference`того, как объявить и использовать .
+Примеры объявления и использования см. в разделе [reverse_iterator:: operator&#91;&#93;](#op_at) или [reverse_iterator:: operator *](#op_star) `reference` .
 
-## <a name="reverse_iteratorreverse_iterator"></a><a name="reverse_iterator"></a>reverse_iterator::reverse_iterator
+## <a name="reverse_iteratorreverse_iterator"></a><a name="reverse_iterator"></a> reverse_iterator:: reverse_iterator
 
 Формирование итератора `reverse_iterator` по умолчанию или итератора `reverse_iterator` из базового итератора.
 
@@ -968,11 +969,11 @@ reverse_iterator(const reverse_iterator<Type>& right);
 
 `reverse_iterator` по умолчанию или `reverse_iterator`, адаптирующий базовый итератор.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Идентификатор, который связывает все обратные итераторы с их базовыми итераторами:
 
-&\*((i `reverse_iterator` ) ) \*, &*(i* - 1 ). *i*
+&\*( `reverse_iterator` ( *i* )) = = &\* ( *i* -1).
 
 На практике это означает, что в обращенной последовательности reverse_iterator будет ссылаться на элемент, позиция которого на единицу превышает позицию элемента, на который итератор ссылается в исходной последовательности (т. е. находится справа от данного элемента). Поэтому если итератор обращался к элементу 6 в последовательности (2, 4, 6, 8), то итератор `reverse_iterator` будет обращаться к элементу 4 в обращенной последовательности (8, 6, 4, 2).
 
@@ -1021,6 +1022,6 @@ int main( )
 
 ## <a name="see-also"></a>См. также раздел
 
-[\<итератор>](../standard-library/iterator.md)\
-[Безопасность резьбы в стандартной библиотеке СЗ](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
-[Стандартная библиотечная справка по СЗ](../standard-library/cpp-standard-library-reference.md)
+[\<iterator>](../standard-library/iterator.md)\
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[Справочник по стандартной библиотеке C++](../standard-library/cpp-standard-library-reference.md)

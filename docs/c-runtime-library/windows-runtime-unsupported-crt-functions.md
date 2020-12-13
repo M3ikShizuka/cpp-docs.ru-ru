@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: среда выполнения Windows неподдерживаемых функций CRT'
 title: Функции CRT, которые не поддерживаются средой выполнения Windows
 ms.date: 11/04/2016
 helpviewer_keywords:
 - unsupported CRT functions, Windows Runtime
 - Windows Runtime, unsupported CRT functions
 ms.assetid: bb8386d6-0ef8-460c-88d8-addff009b6f1
-ms.openlocfilehash: 8f5b900d968bd80f9095c564f0222364769d63c9
-ms.sourcegitcommit: 180f63704f6ddd07a4172a93b179cf0733fd952d
-ms.translationtype: HT
+ms.openlocfilehash: 12195d083485d9591610176a7cb00b4eead844ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739541"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136790"
 ---
 # <a name="windows-runtime-unsupported-crt-functions"></a>Функции CRT, которые не поддерживаются средой выполнения Windows
 
@@ -18,7 +19,7 @@ ms.locfileid: "70739541"
 
 Все API CRT описаны в документации в статье [CRT Alphabetical Function Reference](../c-runtime-library/reference/crt-alphabetical-function-reference.md) (Алфавитный указатель функций CRT).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Универсальные подпрограммы среды выполнения C по категориям](../c-runtime-library/run-time-routines-by-category.md)<br/>
-[Алфавитный указатель функций](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[Подпрограммы универсальной среды выполнения C по категориям](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Алфавитный справочник по функциям](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>

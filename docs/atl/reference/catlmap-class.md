@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CAtlMap Class'
 title: Класс CAtlMap
 ms.date: 11/04/2016
 f1_keywords:
@@ -37,12 +38,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlMap class
 ms.assetid: 5e2fe028-8e6d-4686-93df-1433d2080ec3
-ms.openlocfilehash: b79e6cbd796569e6ba11c96158099de6c30b310a
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: 721f0f3a41afb409ec8cdc505a5f5e5324cdb9bb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168063"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147255"
 ---
 # <a name="catlmap-class"></a>Класс CAtlMap
 
@@ -60,10 +61,10 @@ class CAtlMap
 
 ### <a name="parameters"></a>Параметры
 
-*Занят*<br/>
+*K*<br/>
 Тип элемента Key.
 
-*3,3*<br/>
+*V*<br/>
 Тип элемента value.
 
 *ктраитс*<br/>
@@ -72,7 +73,7 @@ class CAtlMap
 *втраитс*<br/>
 Код, используемый для копирования или перемещения элементов значений.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
@@ -98,54 +99,54 @@ class CAtlMap
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CAtlMap:: CAtlMap](#catlmap)|Конструктор.|
 |[CAtlMap:: ~ CAtlMap](#dtor)|Деструктор|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CAtlMap:: AssertValid](#assertvalid)|Вызовите этот метод, чтобы вызвать ASSERT, `CAtlMap` если является недопустимым.|
+|[CAtlMap:: AssertValid](#assertvalid)|Вызовите этот метод, чтобы вызвать ASSERT, если `CAtlMap` является недопустимым.|
 |[CAtlMap::D Исаблеауторехаш](#disableautorehash)|Вызовите этот метод, чтобы отключить автоматическую перехэширование `CAtlMap` объекта.|
-|[CAtlMap:: Енаблеауторехаш](#enableautorehash)|Вызовите этот метод, чтобы включить автоматическую повторное `CAtlMap` хэширование объекта.|
+|[CAtlMap:: Енаблеауторехаш](#enableautorehash)|Вызовите этот метод, чтобы включить автоматическую повторное хэширование `CAtlMap` объекта.|
 |[CAtlMap:: GetAt](#getat)|Вызовите этот метод, чтобы вернуть элемент в указанной позиции на карте.|
 |[CAtlMap:: NOCOUNT](#getcount)|Вызовите этот метод, чтобы получить количество элементов в сопоставлении.|
 |[CAtlMap:: Жесаштаблесизе](#gethashtablesize)|Вызовите этот метод, чтобы определить количество ячеек в хэш-таблице на карте.|
-|[CAtlMap:: Жеткэйат](#getkeyat)|Вызовите этот метод, чтобы получить ключ, хранящийся в заданной `CAtlMap` позиции в объекте.|
-|[CAtlMap:: GetNext](#getnext)|Вызовите этот метод, чтобы получить указатель на следующую пару элементов, хранящуюся `CAtlMap` в объекте.|
+|[CAtlMap:: Жеткэйат](#getkeyat)|Вызовите этот метод, чтобы получить ключ, хранящийся в заданной позиции в `CAtlMap` объекте.|
+|[CAtlMap:: GetNext](#getnext)|Вызовите этот метод, чтобы получить указатель на следующую пару элементов, хранящуюся в `CAtlMap` объекте.|
 |[CAtlMap:: Жетнекстассок](#getnextassoc)|Возвращает следующий элемент для итерации.|
 |[CAtlMap:: Жетнексткэй](#getnextkey)|Вызовите этот метод, чтобы получить следующий ключ из `CAtlMap` объекта.|
 |[CAtlMap:: Жетнекствалуе](#getnextvalue)|Вызовите этот метод, чтобы получить следующее значение из `CAtlMap` объекта.|
 |[CAtlMap:: Жетстартпоситион](#getstartposition)|Вызовите этот метод для запуска итерации на карте.|
-|[CAtlMap:: Жетвалуеат](#getvalueat)|Вызовите этот метод, чтобы получить значение, хранящееся в заданной позиции `CAtlMap` в объекте.|
+|[CAtlMap:: Жетвалуеат](#getvalueat)|Вызовите этот метод, чтобы получить значение, хранящееся в заданной позиции в `CAtlMap` объекте.|
 |[CAtlMap:: Инисаштабле](#inithashtable)|Вызовите этот метод, чтобы инициализировать хэш-таблицу.|
 |[CAtlMap:: IsEmpty](#isempty)|Вызовите этот метод, чтобы проверить наличие пустого объекта Map.|
 |[CAtlMap:: Lookup](#lookup)|Вызывайте этот метод для поиска ключей или значений в `CAtlMap` объекте.|
 |[CAtlMap:: rehash](#rehash)|Вызовите этот метод для перехеширования `CAtlMap` объекта.|
-|[CAtlMap:: RemoveAll](#removeall)|Вызовите этот метод, чтобы удалить все элементы `CAtlMap` из объекта.|
+|[CAtlMap:: RemoveAll](#removeall)|Вызовите этот метод, чтобы удалить все элементы из `CAtlMap` объекта.|
 |[CAtlMap:: Ремовеатпос](#removeatpos)|Вызовите этот метод, чтобы удалить элемент в заданной позиции в `CAtlMap` объекте.|
 |[CAtlMap:: Ремовекэй](#removekey)|Вызовите этот метод, чтобы удалить элемент из `CAtlMap` объекта по заданному ключу.|
 |[CAtlMap:: SetAt](#setat)|Вызовите этот метод, чтобы вставить пару элементов в карту.|
 |[CAtlMap:: Сетоптималлоад](#setoptimalload)|Вызовите этот метод, чтобы задать оптимальную загрузку `CAtlMap` объекта.|
-|[CAtlMap:: Сетвалуеат](#setvalueat)|Вызовите этот метод, чтобы изменить значение, хранящееся в заданной позиции `CAtlMap` в объекте.|
+|[CAtlMap:: Сетвалуеат](#setvalueat)|Вызовите этот метод, чтобы изменить значение, хранящееся в заданной позиции в `CAtlMap` объекте.|
 
 ### <a name="public-operators"></a>Открытые операторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CAtlMap::operator\[\]](catlmap-class.md#operator_at)|Заменяет или добавляет новый элемент в `CAtlMap`.|
+|[CAtlMap::operator\[\]](catlmap-class.md#operator_at)|Заменяет или добавляет новый элемент в `CAtlMap` .|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CAtlMap`обеспечивает поддержку для массива сопоставления любого заданного типа, управляя неупорядоченным массивом ключевых элементов и связанными с ними значениями. Элементы (состоящие из ключа и значения) хранятся с помощью алгоритма хэширования, что позволяет эффективно хранить и извлекать большие объемы данных.
+`CAtlMap` обеспечивает поддержку для массива сопоставления любого заданного типа, управляя неупорядоченным массивом ключевых элементов и связанными с ними значениями. Элементы (состоящие из ключа и значения) хранятся с помощью алгоритма хэширования, что позволяет эффективно хранить и извлекать большие объемы данных.
 
 Параметры *ктраитс* и *втраитс* являются признаками классов, которые содержат любой дополнительный код, необходимый для копирования или перемещения элементов.
 
-Альтернатива `CAtlMap` предложению класса [крбмап](../../atl/reference/crbmap-class.md) . `CRBMap`также хранит пары "ключ-значение", но имеет различные характеристики производительности. Время, затраченное на вставку элемента, Поиск ключа или удаление ключа из `CRBMap` объекта, является *журналом порядка (n)*, где *n* — число элементов. Для `CAtlMap`все эти операции обычно принимают постоянное время, хотя наихудшие сценарии могут иметь порядок *n*. Таким образом, в типичном случае `CAtlMap` это быстрее.
+Альтернатива `CAtlMap` предложению класса [крбмап](../../atl/reference/crbmap-class.md) . `CRBMap` также хранит пары "ключ-значение", но имеет различные характеристики производительности. Время, затраченное на вставку элемента, Поиск ключа или удаление ключа из `CRBMap` объекта, является *журналом порядка (n)*, где *n* — число элементов. Для `CAtlMap` все эти операции обычно принимают постоянное время, хотя наихудшие сценарии могут иметь порядок *n*. Таким образом, в типичном случае `CAtlMap` это быстрее.
 
-Другие различия между `CRBMap` и `CAtlMap` становятся очевидными при переборе хранимых элементов. `CRBMap`В элементы отображаются в отсортированном порядке. `CAtlMap`В элементы не упорядочиваются, и порядок не может быть определен.
+Другие различия между `CRBMap` и `CAtlMap` становятся очевидными при переборе хранимых элементов. В `CRBMap` элементы отображаются в отсортированном порядке. В `CAtlMap` элементы не упорядочиваются, и порядок не может быть определен.
 
 Если необходимо сохранить небольшое количество элементов, рекомендуется использовать класс [ксимплемап](../../atl/reference/csimplemap-class.md) .
 
@@ -155,15 +156,15 @@ class CAtlMap
 
 **Заголовок:** атлколл. h
 
-## <a name="catlmapassertvalid"></a><a name="assertvalid"></a>CAtlMap:: AssertValid
+## <a name="catlmapassertvalid"></a><a name="assertvalid"></a> CAtlMap:: AssertValid
 
-Вызовите этот метод, чтобы вызвать ASSERT, `CAtlMap` если объект является недопустимым.
+Вызовите этот метод, чтобы вызвать ASSERT, если `CAtlMap` объект является недопустимым.
 
 ```cpp
 void AssertValid() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В отладочных сборках этот метод вызывает утверждение, если `CAtlMap` объект является недопустимым.
 
@@ -171,7 +172,7 @@ void AssertValid() const;
 
 См. пример для [CAtlMap:: CAtlMap](#catlmap).
 
-## <a name="catlmapcatlmap"></a><a name="catlmap"></a>CAtlMap:: CAtlMap
+## <a name="catlmapcatlmap"></a><a name="catlmap"></a> CAtlMap:: CAtlMap
 
 Конструктор.
 
@@ -201,15 +202,15 @@ CAtlMap(
 *нблокксизе*<br/>
 Размер блока.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`CAtlMap`ссылается на все свои хранимые элементы путем создания индекса с помощью алгоритма хэширования для ключа. Этот индекс ссылается на "bin", содержащий указатель на хранимые элементы. Если ячейка уже используется, для доступа к последующим элементам создается связанный список. Обход списка выполняется медленнее, чем прямой доступ к правильному элементу, поэтому структуре Map необходимо сбалансировать требования к хранилищу по производительности. В большинстве случаев для предоставления оптимальных результатов выбраны параметры по умолчанию.
+`CAtlMap` ссылается на все свои хранимые элементы путем создания индекса с помощью алгоритма хэширования для ключа. Этот индекс ссылается на "bin", содержащий указатель на хранимые элементы. Если ячейка уже используется, для доступа к последующим элементам создается связанный список. Обход списка выполняется медленнее, чем прямой доступ к правильному элементу, поэтому структуре Map необходимо сбалансировать требования к хранилищу по производительности. В большинстве случаев для предоставления оптимальных результатов выбраны параметры по умолчанию.
 
 Коэффициент нагрузки — это отношение количества ячеек к количеству элементов, хранящихся в объекте Map. При повторном вычислении структуры Map значение параметра *фоптималлоад* будет использоваться для вычисления необходимого количества ячеек. Это значение можно изменить с помощью метода [CAtlMap:: сетоптималлоад](#setoptimalload) .
 
-Параметр *флосрешолд* — это наименьшее значение, которое может достичь коэффициента загрузки `CAtlMap` , прежде чем будет повторно вычислить оптимальный размер Map.
+Параметр *флосрешолд* — это наименьшее значение, которое может достичь коэффициента загрузки, прежде чем `CAtlMap` будет повторно вычислить оптимальный размер Map.
 
-Параметр *фхисрешолд* — это верхнее значение, которое может быть достигнуто коэффициентом `CAtlMap` загрузки, прежде чем объект будет повторно вычислить оптимальный размер Map.
+Параметр *фхисрешолд* — это верхнее значение, которое может быть достигнуто коэффициентом загрузки, прежде чем `CAtlMap` объект будет повторно вычислить оптимальный размер Map.
 
 Этот процесс повторного вычисления (называемый повторным хэшированием) включен по умолчанию. Если вы хотите отключить этот процесс, например при вводе большого количества данных за один раз, вызовите метод [CAtlMap::D исаблеауторехаш](#disableautorehash) . Повторно активируйте его с помощью метода [CAtlMap:: енаблеауторехаш](#enableautorehash) .
 
@@ -221,7 +222,7 @@ CAtlMap(
 
 [!code-cpp[NVC_ATL_Utilities#72](../../atl/codesnippet/cpp/catlmap-class_1.cpp)]
 
-## <a name="catlmapcatlmap"></a><a name="dtor"></a>CAtlMap:: ~ CAtlMap
+## <a name="catlmapcatlmap"></a><a name="dtor"></a> CAtlMap:: ~ CAtlMap
 
 Деструктор
 
@@ -229,11 +230,11 @@ CAtlMap(
 ~CAtlMap() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Освобождает все выделенные ресурсы.
 
-## <a name="catlmapcpair-class"></a><a name="cpair_class"></a>Класс CAtlMap:: Кпаир
+## <a name="catlmapcpair-class"></a><a name="cpair_class"></a> Класс CAtlMap:: Кпаир
 
 Класс, содержащий элементы Key и value.
 
@@ -241,11 +242,11 @@ CAtlMap(
 class CPair : public __POSITION
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот класс используется методами [CAtlMap::](#getnext) GetNext и [CAtlMap:: Lookup](#lookup) для доступа к элементам Key и value, хранящимся в структуре сопоставления.
 
-## <a name="catlmapdisableautorehash"></a><a name="disableautorehash"></a>CAtlMap::D Исаблеауторехаш
+## <a name="catlmapdisableautorehash"></a><a name="disableautorehash"></a> CAtlMap::D Исаблеауторехаш
 
 Вызовите этот метод, чтобы отключить автоматическую перехэширование `CAtlMap` объекта.
 
@@ -253,27 +254,27 @@ class CPair : public __POSITION
 void DisableAutoRehash() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если включена автоматическая повторная хеширование (которая по умолчанию), число ячеек в хэш-таблице будет автоматически пересчитано, если значение загрузки (отношение количества ячеек к количеству элементов, хранящихся в массиве) превышает максимальное или минимальное значения, указанные во время создания схемы.
 
-`DisableAutoRehash`наиболее полезен при одновременном добавлении большого числа элементов на карту. Вместо запуска процесса повторной хэширования каждый раз, когда превышены ограничения, более эффективно вызывать `DisableAutoRehash`, добавлять элементы и, наконец, вызывать [CAtlMap:: енаблеауторехаш](#enableautorehash).
+`DisableAutoRehash` наиболее полезен при одновременном добавлении большого числа элементов на карту. Вместо запуска процесса повторной хэширования каждый раз, когда превышены ограничения, более эффективно вызывать `DisableAutoRehash` , добавлять элементы и, наконец, вызывать [CAtlMap:: енаблеауторехаш](#enableautorehash).
 
-## <a name="catlmapenableautorehash"></a><a name="enableautorehash"></a>CAtlMap:: Енаблеауторехаш
+## <a name="catlmapenableautorehash"></a><a name="enableautorehash"></a> CAtlMap:: Енаблеауторехаш
 
-Вызовите этот метод, чтобы включить автоматическую повторное `CAtlMap` хэширование объекта.
+Вызовите этот метод, чтобы включить автоматическую повторное хэширование `CAtlMap` объекта.
 
 ```cpp
 void EnableAutoRehash() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если включена автоматическая повторная хеширование (которая по умолчанию), число ячеек в хэш-таблице будет автоматически пересчитано, если значение загрузки (отношение количества ячеек к количеству элементов, хранящихся в массиве) превышает максимальное или минимальное значения, указанные во время создания схемы.
 
-`EnableAutoRefresh`чаще всего используется после вызова [CAtlMap::D исаблеауторехаш](#disableautorehash).
+`EnableAutoRefresh` чаще всего используется после вызова [CAtlMap::D исаблеауторехаш](#disableautorehash).
 
-## <a name="catlmapgetat"></a><a name="getat"></a>CAtlMap:: GetAt
+## <a name="catlmapgetat"></a><a name="getat"></a> CAtlMap:: GetAt
 
 Вызовите этот метод, чтобы вернуть элемент в указанной позиции на карте.
 
@@ -301,11 +302,11 @@ CPair* GetAt(POSITION& pos) throw();
 
 Возвращает указатель на текущую пару пар "ключ-значение", хранимую на карте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В отладочных сборках возникнет ошибка утверждения, если значение *POS* равно null.
 
-## <a name="catlmapgetcount"></a><a name="getcount"></a>CAtlMap:: NOCOUNT
+## <a name="catlmapgetcount"></a><a name="getcount"></a> CAtlMap:: NOCOUNT
 
 Вызовите этот метод, чтобы получить количество элементов в сопоставлении.
 
@@ -321,7 +322,7 @@ size_t GetCount() const throw();
 
 См. пример для [CAtlMap:: CAtlMap](#catlmap).
 
-## <a name="catlmapgethashtablesize"></a><a name="gethashtablesize"></a>CAtlMap:: Жесаштаблесизе
+## <a name="catlmapgethashtablesize"></a><a name="gethashtablesize"></a> CAtlMap:: Жесаштаблесизе
 
 Вызовите этот метод, чтобы определить количество ячеек в хэш-таблице на карте.
 
@@ -333,9 +334,9 @@ UINT GetHashTableSize() const throw();
 
 Возвращает число ячеек в хэш-таблице. Описание см. в разделе [CAtlMap:: CAtlMap](#catlmap) .
 
-## <a name="catlmapgetkeyat"></a><a name="getkeyat"></a>CAtlMap:: Жеткэйат
+## <a name="catlmapgetkeyat"></a><a name="getkeyat"></a> CAtlMap:: Жеткэйат
 
-Вызовите этот метод, чтобы получить ключ, хранящийся в заданной `CAtlMap` позиции в объекте.
+Вызовите этот метод, чтобы получить ключ, хранящийся в заданной позиции в `CAtlMap` объекте.
 
 ```cpp
 const K& GetKeyAt(POSITION pos) const throw();
@@ -354,9 +355,9 @@ const K& GetKeyAt(POSITION pos) const throw();
 
 См. пример для [CAtlMap:: CAtlMap](#catlmap).
 
-## <a name="catlmapgetnext"></a><a name="getnext"></a>CAtlMap:: GetNext
+## <a name="catlmapgetnext"></a><a name="getnext"></a> CAtlMap:: GetNext
 
-Вызовите этот метод, чтобы получить указатель на следующую пару элементов, хранящуюся `CAtlMap` в объекте.
+Вызовите этот метод, чтобы получить указатель на следующую пару элементов, хранящуюся в `CAtlMap` объекте.
 
 ```cpp
 CPair* GetNext(POSITION& pos) throw();
@@ -372,7 +373,7 @@ const CPair* GetNext(POSITION& pos) const throw();
 
 Возвращает указатель на следующую пару элементов "ключ-значение", хранимых на карте. Счетчик "положение *POS* " обновляется после каждого вызова. Если извлеченный элемент является последним в сопоставлении, для *POS* устанавливается значение null.
 
-## <a name="catlmapgetnextassoc"></a><a name="getnextassoc"></a>CAtlMap:: Жетнекстассок
+## <a name="catlmapgetnextassoc"></a><a name="getnextassoc"></a> CAtlMap:: Жетнекстассок
 
 Возвращает следующий элемент для итерации.
 
@@ -394,11 +395,11 @@ void GetNextAssoc(
 *value*<br/>
 Параметр шаблона, указывающий тип значения схемы.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Счетчик "положение *POS* " обновляется после каждого вызова. Если извлеченный элемент является последним в сопоставлении, для *POS* устанавливается значение null.
 
-## <a name="catlmapgetnextkey"></a><a name="getnextkey"></a>CAtlMap:: Жетнексткэй
+## <a name="catlmapgetnextkey"></a><a name="getnextkey"></a> CAtlMap:: Жетнексткэй
 
 Вызовите этот метод, чтобы получить следующий ключ из `CAtlMap` объекта.
 
@@ -415,11 +416,11 @@ const K& GetNextKey(POSITION& pos) const throw();
 
 Возвращает ссылку на следующий ключ в сопоставлении.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Обновляет текущий счетчик позиций, *POS*. Если на карте больше нет записей, счетчику позиции присваивается значение NULL.
 
-## <a name="catlmapgetnextvalue"></a><a name="getnextvalue"></a>CAtlMap:: Жетнекствалуе
+## <a name="catlmapgetnextvalue"></a><a name="getnextvalue"></a> CAtlMap:: Жетнекствалуе
 
 Вызовите этот метод, чтобы получить следующее значение из `CAtlMap` объекта.
 
@@ -437,7 +438,7 @@ const V& GetNextValue(POSITION& pos) const throw();
 
 Возвращает ссылку на следующее значение в сопоставлении.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Обновляет текущий счетчик позиций, *POS*. Если на карте больше нет записей, счетчику позиции присваивается значение NULL.
 
@@ -445,7 +446,7 @@ const V& GetNextValue(POSITION& pos) const throw();
 
 См. пример для [CAtlMap:: CAtlMap](#catlmap).
 
-## <a name="catlmapgetstartposition"></a><a name="getstartposition"></a>CAtlMap:: Жетстартпоситион
+## <a name="catlmapgetstartposition"></a><a name="getstartposition"></a> CAtlMap:: Жетстартпоситион
 
 Вызовите этот метод для запуска итерации на карте.
 
@@ -457,9 +458,9 @@ POSITION GetStartPosition() const throw();
 
 Возвращает начальную точку, или значение NULL возвращается, если значение Map пустое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вызовите этот метод для запуска итерации Map, возвращая значение значения value, которое может быть `GetNextAssoc` передано в метод.
+Вызовите этот метод для запуска итерации Map, возвращая значение значения value, которое может быть передано в `GetNextAssoc` метод.
 
 > [!NOTE]
 > Последовательность итераций не является прогнозируемой
@@ -468,9 +469,9 @@ POSITION GetStartPosition() const throw();
 
 См. пример для [CAtlMap:: CAtlMap](#catlmap).
 
-## <a name="catlmapgetvalueat"></a><a name="getvalueat"></a>CAtlMap:: Жетвалуеат
+## <a name="catlmapgetvalueat"></a><a name="getvalueat"></a> CAtlMap:: Жетвалуеат
 
-Вызовите этот метод, чтобы получить значение, хранящееся в заданной позиции `CAtlMap` в объекте.
+Вызовите этот метод, чтобы получить значение, хранящееся в заданной позиции в `CAtlMap` объекте.
 
 ```cpp
 V& GetValueAt(POSITION pos) throw();
@@ -486,7 +487,7 @@ const V& GetValueAt(POSITION pos) const throw();
 
 Возвращает ссылку на значение, хранящееся в заданной позиции в `CAtlMap` объекте.
 
-## <a name="catlmapinithashtable"></a><a name="inithashtable"></a>CAtlMap:: Инисаштабле
+## <a name="catlmapinithashtable"></a><a name="inithashtable"></a> CAtlMap:: Инисаштабле
 
 Вызовите этот метод, чтобы инициализировать хэш-таблицу.
 
@@ -508,9 +509,9 @@ bool InitHashTable(
 
 Возвращает значение TRUE при успешной инициализации, значение FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`InitHashTable`должен вызываться до того, как все элементы будут сохранены в хэш-таблице.  Если этот метод не вызывается явным образом, он будет вызываться автоматически при первом добавлении элемента с помощью счетчика bin, указанного `CAtlMap` конструктором.  В противном случае Map будет инициализирован с использованием нового счетчика ячеек, указанного параметром *нбинс* .
+`InitHashTable` должен вызываться до того, как все элементы будут сохранены в хэш-таблице.  Если этот метод не вызывается явным образом, он будет вызываться автоматически при первом добавлении элемента с помощью счетчика bin, указанного `CAtlMap` конструктором.  В противном случае Map будет инициализирован с использованием нового счетчика ячеек, указанного параметром *нбинс* .
 
 Если параметр *баллокнов* имеет значение false, то память, требуемая для хэш-таблицы, не будет выделена до первой необходимости. Это может быть полезно, если не уверены в том, что будет использоваться схема.
 
@@ -518,7 +519,7 @@ bool InitHashTable(
 
 См. пример для [CAtlMap:: CAtlMap](#catlmap).
 
-## <a name="catlmapisempty"></a><a name="isempty"></a>CAtlMap:: IsEmpty
+## <a name="catlmapisempty"></a><a name="isempty"></a> CAtlMap:: IsEmpty
 
 Вызовите этот метод, чтобы проверить наличие пустого объекта Map.
 
@@ -530,7 +531,7 @@ bool IsEmpty() const throw();
 
 Возвращает значение TRUE, если значение Map пусто, и FALSE в противном случае.
 
-## <a name="catlmapkinargtype"></a><a name="kinargtype"></a>CAtlMap:: КИНАРГТИПЕ
+## <a name="catlmapkinargtype"></a><a name="kinargtype"></a> CAtlMap:: КИНАРГТИПЕ
 
 Тип, используемый при передаче ключа в качестве входного аргумента.
 
@@ -538,7 +539,7 @@ bool IsEmpty() const throw();
 typedef KTraits::INARGTYPE KINARGTYPE;
 ```
 
-## <a name="catlmapkoutargtype"></a><a name="koutargtype"></a>CAtlMap:: КАУТАРГТИПЕ
+## <a name="catlmapkoutargtype"></a><a name="koutargtype"></a> CAtlMap:: КАУТАРГТИПЕ
 
 Тип, используемый при возврате ключа в качестве выходного аргумента.
 
@@ -546,7 +547,7 @@ typedef KTraits::INARGTYPE KINARGTYPE;
 typedef KTraits::OUTARGTYPE KOUTARGTYPE;
 ```
 
-## <a name="catlmaplookup"></a><a name="lookup"></a>CAtlMap:: Lookup
+## <a name="catlmaplookup"></a><a name="lookup"></a> CAtlMap:: Lookup
 
 Вызывайте этот метод для поиска ключей или значений в `CAtlMap` объекте.
 
@@ -568,13 +569,13 @@ CPair* Lookup(KINARGTYPE key) throw();
 
 Первая форма метода возвращает значение true, если ключ найден; в противном случае — значение false. Вторая и третья формы возвращают указатель на [кпаир](#cpair_class) , который можно использовать в качестве позиции для вызовов [CAtlMap:: GetNext](#getnext) и т. д.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`Lookup`использует алгоритм хэширования для быстрого поиска элемента Map, содержащего ключ, который точно соответствует заданному ключевому параметру.
+`Lookup` использует алгоритм хэширования для быстрого поиска элемента Map, содержащего ключ, который точно соответствует заданному ключевому параметру.
 
-## <a name="catlmapoperator-"></a><a name="operator_at"></a>CAtlMap:: operator\[\]
+## <a name="catlmapoperator-"></a><a name="operator_at"></a> CAtlMap:: operator \[\]
 
-Заменяет или добавляет новый элемент в `CAtlMap`.
+Заменяет или добавляет новый элемент в `CAtlMap` .
 
 ```cpp
 V& operator[](kinargtype key) throw();
@@ -593,7 +594,7 @@ V& operator[](kinargtype key) throw();
 
 Если ключ уже существует, элемент заменяется. Если ключ не существует, добавляется новый элемент. См. пример для [CAtlMap:: CAtlMap](#catlmap).
 
-## <a name="catlmaprehash"></a><a name="rehash"></a>CAtlMap:: rehash
+## <a name="catlmaprehash"></a><a name="rehash"></a> CAtlMap:: rehash
 
 Вызовите этот метод для перехеширования `CAtlMap` объекта.
 
@@ -606,23 +607,23 @@ void Rehash(UINT nBins = 0);
 *нбинс*<br/>
 Новое число ячеек для использования в хэш-таблице. Описание см. в разделе [CAtlMap:: CAtlMap](#catlmap) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если *нбинс* равен 0, `CAtlMap` вычисляет разумное число на основе числа элементов на карте и оптимального параметра загрузки. Обычно процесс повторной хеширования выполняется автоматически, но если был вызван [CAtlMap::D исаблеауторехаш](#disableautorehash) , этот метод выполнит необходимое изменение размера.
 
-## <a name="catlmapremoveall"></a><a name="removeall"></a>CAtlMap:: RemoveAll
+## <a name="catlmapremoveall"></a><a name="removeall"></a> CAtlMap:: RemoveAll
 
-Вызовите этот метод, чтобы удалить все элементы `CAtlMap` из объекта.
+Вызовите этот метод, чтобы удалить все элементы из `CAtlMap` объекта.
 
 ```cpp
 void RemoveAll() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Очищает `CAtlMap` объект, освобождая память, используемую для хранения элементов.
 
-## <a name="catlmapremoveatpos"></a><a name="removeatpos"></a>CAtlMap:: Ремовеатпос
+## <a name="catlmapremoveatpos"></a><a name="removeatpos"></a> CAtlMap:: Ремовеатпос
 
 Вызовите этот метод, чтобы удалить элемент в заданной позиции в `CAtlMap` объекте.
 
@@ -635,11 +636,11 @@ void RemoveAtPos(POSITION pos) throw();
 *pos*<br/>
 Счетчик позиций, возвращенный предыдущим вызовом [CAtlMap:: жетнекстассок](#getnextassoc) или [CAtlMap:: жетстартпоситион](#getstartposition).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Удаляет пару "ключ-значение", хранящуюся в указанной позиции. Память, используемая для хранения элемента, освобождается. ПОЗИЦИЯ, на которую ссылается *POS* , становится недопустимой, а позиция любых других элементов в сопоставлении остается допустимой, но не обязательно сохраняет одинаковый порядок.
 
-## <a name="catlmapremovekey"></a><a name="removekey"></a>CAtlMap:: Ремовекэй
+## <a name="catlmapremovekey"></a><a name="removekey"></a> CAtlMap:: Ремовекэй
 
 Вызовите этот метод, чтобы удалить элемент из `CAtlMap` объекта по заданному ключу.
 
@@ -660,7 +661,7 @@ bool RemoveKey(KINARGTYPE key) throw();
 
 См. пример для [CAtlMap:: CAtlMap](#catlmap).
 
-## <a name="catlmapsetat"></a><a name="setat"></a>CAtlMap:: SetAt
+## <a name="catlmapsetat"></a><a name="setat"></a> CAtlMap:: SetAt
 
 Вызовите этот метод, чтобы вставить пару элементов в карту.
 
@@ -682,11 +683,11 @@ POSITION SetAt(
 
 Возвращает расположение пары элементов "ключ-значение" в `CAtlMap` объекте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`SetAt`заменяет существующий элемент, если найден соответствующий ключ. Если ключ не найден, создается новая пара "ключ-значение".
+`SetAt` заменяет существующий элемент, если найден соответствующий ключ. Если ключ не найден, создается новая пара "ключ-значение".
 
-## <a name="catlmapsetoptimalload"></a><a name="setoptimalload"></a>CAtlMap:: Сетоптималлоад
+## <a name="catlmapsetoptimalload"></a><a name="setoptimalload"></a> CAtlMap:: Сетоптималлоад
 
 Вызовите этот метод, чтобы задать оптимальную загрузку `CAtlMap` объекта.
 
@@ -712,13 +713,13 @@ void SetOptimalLoad(
 *брехашнов*<br/>
 Флаг, указывающий, следует ли повторно вычислить хэш-таблицу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод переопределяет оптимальное значение загрузки для `CAtlMap` объекта. Описание различных параметров см. в разделе [CAtlMap:: CAtlMap](#catlmap) . Если *брехашнов* имеет значение true, а количество элементов находится за пределами минимального и максимального значений, хэш-таблица пересчитывается.
 
-## <a name="catlmapsetvalueat"></a><a name="setvalueat"></a>CAtlMap:: Сетвалуеат
+## <a name="catlmapsetvalueat"></a><a name="setvalueat"></a> CAtlMap:: Сетвалуеат
 
-Вызовите этот метод, чтобы изменить значение, хранящееся в заданной позиции `CAtlMap` в объекте.
+Вызовите этот метод, чтобы изменить значение, хранящееся в заданной позиции в `CAtlMap` объекте.
 
 ```cpp
 void SetValueAt(
@@ -734,11 +735,11 @@ void SetValueAt(
 *value*<br/>
 Значение, добавляемое в `CAtlMap` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Изменяет элемент value, хранящийся в заданной позиции в `CAtlMap` объекте.
 
-## <a name="catlmapvinargtype"></a><a name="vinargtype"></a>CAtlMap:: ВИНАРГТИПЕ
+## <a name="catlmapvinargtype"></a><a name="vinargtype"></a> CAtlMap:: ВИНАРГТИПЕ
 
 Тип, используемый при передаче значения в качестве входного аргумента.
 
@@ -746,7 +747,7 @@ void SetValueAt(
 typedef VTraits::INARGTYPE VINARGTYPE;
 ```
 
-## <a name="catlmapvoutargtype"></a><a name="voutargtype"></a>CAtlMap:: ВАУТАРГТИПЕ
+## <a name="catlmapvoutargtype"></a><a name="voutargtype"></a> CAtlMap:: ВАУТАРГТИПЕ
 
 Тип, используемый при передаче значения в качестве выходного аргумента.
 
@@ -754,7 +755,7 @@ typedef VTraits::INARGTYPE VINARGTYPE;
 typedef VTraits::OUTARGTYPE VOUTARGTYPE;
 ```
 
-## <a name="catlmapcpairm_key"></a><a name="m_key"></a>CAtlMap:: Кпаир:: m_key
+## <a name="catlmapcpairm_key"></a><a name="m_key"></a> CAtlMap:: Кпаир:: m_key
 
 Элемент данных, в котором хранится элемент key.
 
@@ -764,10 +765,10 @@ const K m_key;
 
 ### <a name="parameters"></a>Параметры
 
-*Занят*<br/>
+*K*<br/>
 Тип элемента Key.
 
-## <a name="catlmapcpairm_value"></a><a name="m_value"></a>CAtlMap:: Кпаир:: m_value
+## <a name="catlmapcpairm_value"></a><a name="m_value"></a> CAtlMap:: Кпаир:: m_value
 
 Элемент данных, в котором хранится элемент value.
 
@@ -777,10 +778,10 @@ V  m_value;
 
 ### <a name="parameters"></a>Параметры
 
-*3,3*<br/>
+*V*<br/>
 Тип элемента value.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Образец бегущей строки](../../overview/visual-cpp-samples.md)<br/>
 [Образец UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)<br/>

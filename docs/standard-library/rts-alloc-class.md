@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: rts_alloc классе'
 title: Класс rts_alloc
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - stdext::rts_alloc [C++], deallocate
 - stdext::rts_alloc [C++], equals
 ms.assetid: ab41bffa-83d1-4a1c-87b9-5707d516931f
-ms.openlocfilehash: 04a6578c7abd07ff84f4c0a5cee68cfd7ec8ef04
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: b2fe4bf3fe3f54e8fe1de3d89605280b2ba2b857
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88560560"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97148945"
 ---
 # <a name="rts_alloc-class"></a>Класс rts_alloc
 
@@ -35,7 +36,7 @@ class rts_alloc
 *Мбайта*\
 Тип экземпляров кэша, содержащихся в массиве. Это может быть [`cache_chunklist`](../standard-library/cache-chunklist-class.md) , [`cache_freelist`](../standard-library/cache-freelist-class.md) или [`cache_suballoc`](../standard-library/cache-suballoc-class.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Этот шаблон класса содержит несколько экземпляров распределителя блоков и определяет, какой экземпляр следует использовать для выделения или освобождения в среде выполнения, а не во время компиляции. Он используется с компиляторами, которые не могут скомпилировать повторную привязку.
 
@@ -70,9 +71,9 @@ void *allocate(std::size_t count);
 
 Указатель на выделяемый объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Функция-член возвращает `caches[_IDX].allocate(count)` , где индекс `_IDX` определяется запрошенным *количеством*размеров блоков, или, если *Count* слишком велик, возвращается значение `operator new(count)` . `cache`, представляющий объект кэша.
+Функция-член возвращает `caches[_IDX].allocate(count)` , где индекс `_IDX` определяется запрошенным *количеством* размеров блоков, или, если *Count* слишком велик, возвращается значение `operator new(count)` . `cache`, представляющий объект кэша.
 
 ## <a name="rts_allocdeallocate"></a><a name="deallocate"></a> rts_alloc::d еаллокате
 
@@ -90,9 +91,9 @@ void deallocate(void* ptr, std::size_t count);
 *расчета*\
 Количество объектов для освобождения из хранилища.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Функция-член вызывает `caches[_IDX].deallocate(ptr, count)` , где индекс `_IDX` определяется запрошенным *количеством*размеров блока, или, если *Count* слишком велик, возвращается значение `operator delete(ptr)` .
+Функция-член вызывает `caches[_IDX].deallocate(ptr, count)` , где индекс `_IDX` определяется запрошенным *количеством* размеров блока, или, если *Count* слишком велик, возвращается значение `operator delete(ptr)` .
 
 ## <a name="rts_allocequals"></a><a name="equals"></a> rts_alloc:: Equals
 
@@ -110,7 +111,7 @@ bool equals(const sync<_Cache>& _Other) const;
 *_Other*\
 Объект кэша для сравнения на равенство.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **`true`** значение, если результат `caches[0].equals(other.caches[0])` ; в противном случае — **`false`** . `caches` представляет массив объектов кэша.
 

@@ -1,5 +1,6 @@
 ---
-title: Класс CComObjectStack
+description: 'Дополнительные сведения о: Ккомобжектстакк Class'
+title: Класс Ккомобжектстакк
 ms.date: 11/04/2016
 f1_keywords:
 - CComObjectStack
@@ -12,16 +13,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComObjectStack class
 ms.assetid: 3da72c40-c834-45f6-bb76-6ac204028d80
-ms.openlocfilehash: 8c3fd56635da8b80c84f6151009586b7bd2b4341
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5713601a765ad9ff1c32992d1f9c517dd86affca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81327578"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142419"
 ---
-# <a name="ccomobjectstack-class"></a>Класс CComObjectStack
+# <a name="ccomobjectstack-class"></a>Класс Ккомобжектстакк
 
-Этот класс создает временный объект COM и обеспечивает его `IUnknown`скелетной реализацией .
+Этот класс создает временный COM-объект и предоставляет его с реализацией скелетообразных `IUnknown` .
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,41 +33,41 @@ class CComObjectStack : public Base
 
 #### <a name="parameters"></a>Параметры
 
-*Базы*<br/>
-Ваш класс, полученный из [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) или [CComObjectRootEx,](../../atl/reference/ccomobjectrootex-class.md)а также из любого другого интерфейса, который вы хотите поддерживать на объекте.
+*Из*<br/>
+Класс, производный от [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) или [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md), а также от любого другого интерфейса, который требуется поддерживать для объекта.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CComObjectStack::CComObjectstack](#ccomobjectstack)|Конструктор.|
-|[CComObjectStack:::CComObjectstack](#dtor)|Деструктор|
+|[Ккомобжектстакк:: Ккомобжектстакк](#ccomobjectstack)|Конструктор.|
+|[Ккомобжектстакк:: ~ Ккомобжектстакк](#dtor)|Деструктор|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CComObjectstack:AddRef](#addref)|Возвращает ноль. В режиме отладки, вызовы `_ASSERTE`.|
-|[CComObjectStack::QueryInterface](#queryinterface)|Возвращает E_NOINTERFACE. В режиме отладки, вызовы `_ASSERTE`.|
-|[CComObjectStack::Release](#release)|Возвращает ноль. В режиме отладки, вызовы `_ASSERTE`. ~|
+|[Ккомобжектстакк:: AddRef](#addref)|Возвращает ноль. В режиме отладки вызывает `_ASSERTE` .|
+|[Ккомобжектстакк:: QueryInterface](#queryinterface)|Возвращает E_NOINTERFACE. В режиме отладки вызывает `_ASSERTE` .|
+|[Ккомобжектстакк:: Release](#release)|Возвращает ноль. В режиме отладки вызывает `_ASSERTE` . ~|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CComObjectStack::m_hResFinalConstruct](#m_hresfinalconstruct)|Содержит HRESULT, возвращенный `CComObjectStack` во время строительства объекта.|
+|[Ккомобжектстакк:: m_hResFinalConstruct](#m_hresfinalconstruct)|Содержит значение HRESULT, возвращаемое во время создания `CComObjectStack` объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CComObjectStack`используется для создания временного объекта COM и обеспечения объекта `IUnknown`скелетной реализации. Как правило, объект используется в качестве локальной переменной в пределах одной функции (т.е. нажата на стек). Поскольку объект разрушается по окончании функции, подсчет ссылок не выполняется для повышения эффективности.
+`CComObjectStack` используется для создания временного COM-объекта и предоставления объекта реализации скелетообразных `IUnknown` . Как правило, объект используется в качестве локальной переменной в одной функции (т. е. помещается в стек). Поскольку объект уничтожается после завершения функции, подсчет ссылок не выполняется для повышения эффективности.
 
-Ниже приводится следующий пример, как создать объект COM, используемый внутри функции:
+В следующем примере показано, как создать COM-объект, используемый внутри функции:
 
 [!code-cpp[NVC_ATL_COM#42](../../atl/codesnippet/cpp/ccomobjectstack-class_1.cpp)]
 
-Временный `Tempobj` объект нажат на стек и автоматически исчезает по окончании функции.
+Временный объект `Tempobj` помещается в стек и автоматически исчезает после завершения функции.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -76,9 +77,9 @@ class CComObjectStack : public Base
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlcom.h
+**Заголовок:** атлком. h
 
-## <a name="ccomobjectstackaddref"></a><a name="addref"></a>CComObjectstack:AddRef
+## <a name="ccomobjectstackaddref"></a><a name="addref"></a> Ккомобжектстакк:: AddRef
 
 Возвращает ноль.
 
@@ -90,11 +91,11 @@ STDMETHOD_(ULONG, AddRef)();
 
 Возвращает ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-В режиме отладки, вызовы `_ASSERTE`.
+В режиме отладки вызывает `_ASSERTE` .
 
-## <a name="ccomobjectstackccomobjectstack"></a><a name="ccomobjectstack"></a>CComObjectStack::CComObjectstack
+## <a name="ccomobjectstackccomobjectstack"></a><a name="ccomobjectstack"></a> Ккомобжектстакк:: Ккомобжектстакк
 
 Конструктор.
 
@@ -102,11 +103,11 @@ STDMETHOD_(ULONG, AddRef)();
 CComObjectStack(void* = NULL);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вызовы, `FinalConstruct` а затем устанавливает [m_hResFinalConstruct](#m_hresfinalconstruct) на HRESULT вернулся `FinalConstruct`. Если вы не получили свой базовый класс от [CComObjectRoot,](../../atl/reference/ccomobjectroot-class.md)вы должны предоставить свой собственный `FinalConstruct` метод. Деструктор вызывает `FinalRelease`.
+Вызывает `FinalConstruct` , а затем устанавливает [m_hResFinalConstruct](#m_hresfinalconstruct) в значение HRESULT, возвращаемое `FinalConstruct` . Если базовый класс не был производным от [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md), необходимо указать собственный `FinalConstruct` метод. Деструктор вызывает `FinalRelease`.
 
-## <a name="ccomobjectstackccomobjectstack"></a><a name="dtor"></a>CComObjectStack:::CComObjectstack
+## <a name="ccomobjectstackccomobjectstack"></a><a name="dtor"></a> Ккомобжектстакк:: ~ Ккомобжектстакк
 
 Деструктор
 
@@ -114,19 +115,19 @@ CComObjectStack(void* = NULL);
 CComObjectStack();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Освобождает все выделенные ресурсы и вызывает [FinalRelease](ccomobjectrootex-class.md#finalrelease).
+Освобождает все выделенные ресурсы и вызывает [финалрелеасе](ccomobjectrootex-class.md#finalrelease).
 
-## <a name="ccomobjectstackm_hresfinalconstruct"></a><a name="m_hresfinalconstruct"></a>CComObjectStack::m_hResFinalConstruct
+## <a name="ccomobjectstackm_hresfinalconstruct"></a><a name="m_hresfinalconstruct"></a> Ккомобжектстакк:: m_hResFinalConstruct
 
-Содержит HRESULT вернулся `FinalConstruct` из вызова `CComObjectStack` во время строительства объекта.
+Содержит значение HRESULT, возвращаемое `FinalConstruct` при вызове во время создания `CComObjectStack` объекта.
 
 ```
 HRESULT    m_hResFinalConstruct;
 ```
 
-## <a name="ccomobjectstackqueryinterface"></a><a name="queryinterface"></a>CComObjectStack::QueryInterface
+## <a name="ccomobjectstackqueryinterface"></a><a name="queryinterface"></a> Ккомобжектстакк:: QueryInterface
 
 Возвращает E_NOINTERFACE.
 
@@ -138,11 +139,11 @@ HRESULT    QueryInterface(REFIID, void**);
 
 Возвращает E_NOINTERFACE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-В режиме отладки, вызовы `_ASSERTE`.
+В режиме отладки вызывает `_ASSERTE` .
 
-## <a name="ccomobjectstackrelease"></a><a name="release"></a>CComObjectStack::Release
+## <a name="ccomobjectstackrelease"></a><a name="release"></a> Ккомобжектстакк:: Release
 
 Возвращает ноль.
 
@@ -154,13 +155,13 @@ STDMETHOD_(ULONG, Release)();
 
 Возвращает ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-В режиме отладки, вызовы `_ASSERTE`.
+В режиме отладки вызывает `_ASSERTE` .
 
 ## <a name="see-also"></a>См. также раздел
 
 [Класс CComAggObject](../../atl/reference/ccomaggobject-class.md)<br/>
 [Класс CComObject](../../atl/reference/ccomobject-class.md)<br/>
-[Класс CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md)<br/>
+[Класс Ккомобжектглобал](../../atl/reference/ccomobjectglobal-class.md)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)

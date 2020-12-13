@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CD2DRectF Class'
 title: Класс CD2DRectF
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - CD2DRectF [MFC], CD2DRectF
 - CD2DRectF [MFC], IsNull
 ms.assetid: 87c12d87-9d18-4a19-ba14-0f51d6b6835a
-ms.openlocfilehash: 33d3c5f9e795ad6c91b689436e8a3b1b56966dce
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 273a3d07f152f8b24a24175c0f466c8969830ebd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369123"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136023"
 ---
 # <a name="cd2drectf-class"></a>Класс CD2DRectF
 
@@ -27,25 +28,25 @@ ms.locfileid: "81369123"
 class CD2DRectF : public D2D1_RECT_F;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CD2DRectF::CD2DRectF](#cd2drectf)|Перегружен. Строит `CD2DRectF` объект из `D2D1_RECT_F` объекта.|
+|[CD2DRectF::CD2DRectF](#cd2drectf)|Перегружен. Конструирует `CD2DRectF` объект из `D2D1_RECT_F` объекта.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CD2DRectF::IsNull](#isnull)|Возвращает значение **boolean,** которое указывает, не содержит ли выражение действительных данных (NULL).|
+|[CD2DRectF:: IsNull](#isnull)|Возвращает **логическое** значение, указывающее, содержит ли выражение допустимые данные (null).|
 
 ### <a name="public-operators"></a>Открытые операторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CD2DRectF:оператор CRect](#operator_crect)|`CD2DRectF` Преобразуется `CRect` в объект.|
+|[CD2DRectF:: operator Крект](#operator_crect)|Преобразует `CD2DRectF` в `CRect` объект.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -55,11 +56,11 @@ class CD2DRectF : public D2D1_RECT_F;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxrendertarget.h
+**Заголовок:** афксрендертаржет. h
 
-## <a name="cd2drectfcd2drectf"></a><a name="cd2drectf"></a>CD2DRectF::CD2DRectF
+## <a name="cd2drectfcd2drectf"></a><a name="cd2drectf"></a> CD2DRectF::CD2DRectF
 
-Строит объект CD2DRectF с объекта CRect.
+Конструирует объект CD2DRectF из объекта Крект.
 
 ```
 CD2DRectF(const CRect& rect);
@@ -76,23 +77,23 @@ CD2DRectF(
 ### <a name="parameters"></a>Параметры
 
 *rect*<br/>
-источник прямоугольника
+Исходный прямоугольник
 
-*fLeft*<br/>
-источник левой координат
+*флефт*<br/>
+Координата слева источника
 
-*fТоп*<br/>
-источник верхней координаты
+*фтоп*<br/>
+Координата вершины источника
 
-*Испуг*<br/>
-источник правой координат
+*фригхт*<br/>
+Координата справа источника
 
-*fBottom*<br/>
-источник нижней координаты
+*фботтом*<br/>
+координата нижней части источника
 
-## <a name="cd2drectfisnull"></a><a name="isnull"></a>CD2DRectF::IsNull
+## <a name="cd2drectfisnull"></a><a name="isnull"></a> CD2DRectF:: IsNull
 
-Возвращает значение Boolean, которое указывает, не содержит ли выражение действительных данных (Null).
+Возвращает логическое значение, указывающее, содержит ли выражение допустимые данные (null).
 
 ```
 BOOL IsNull() const;
@@ -100,11 +101,11 @@ BOOL IsNull() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если прямоугольник в верхней, левой, нижней и правой значения все равны 0; в противном случае FALSE.
+TRUE, если значения верхнего, левого, нижнего и правого прямоугольника равны 0; в противном случае — FALSE.
 
-## <a name="cd2drectfoperator-crect"></a><a name="operator_crect"></a>CD2DRectF:оператор CRect
+## <a name="cd2drectfoperator-crect"></a><a name="operator_crect"></a> CD2DRectF:: operator Крект
 
-Преобразует CD2DRectF в объект CRect.
+Преобразует CD2DRectF в объект Крект.
 
 ```
 operator CRect();

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции Терминатемап
 title: Функция TerminateMap
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - TerminateMap function
 ms.assetid: 1c314a61-da5d-49bb-ac44-c34ee3c23b66
-ms.openlocfilehash: 2aa4d6733d2a4e458ff8abff192778d52a4522b2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 919759d0b4b7f67cf3aff83c3e83678860d0badc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233500"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135067"
 ---
 # <a name="terminatemap-function"></a>Функция TerminateMap
 
@@ -32,8 +33,8 @@ inline bool TerminateMap(
 *модуль*<br/>
 [Модуль](module-class.md).
 
-*Имя*<br/>
-Имя подмножества фабрик класса в модуле, заданном *модулем*параметров.
+*serverName*<br/>
+Имя подмножества фабрик класса в модуле, заданном *модулем* параметров.
 
 *форцетерминате*<br/>
 **`true`** для завершения фабрик классов, независимо от того, активны они, **`false`** значение, чтобы не завершать фабрики класса, если активна какая-либо фабрика.
@@ -42,7 +43,7 @@ inline bool TerminateMap(
 
 **`true`** значение, если все фабрики класса были завершены; в противном случае — **`false`** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Завершает работу фабрик классов в указанном модуле.
 
@@ -52,6 +53,6 @@ inline bool TerminateMap(
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Пространство имен Microsoft:: WRL::D состояния](microsoft-wrl-details-namespace.md)

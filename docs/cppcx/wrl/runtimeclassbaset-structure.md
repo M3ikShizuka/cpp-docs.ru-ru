@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура метод runtimeclassbaset'
 title: Структура RuntimeClassBaseT
 ms.date: 10/03/2018
 ms.topic: reference
@@ -11,16 +12,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::RuntimeClassBaseT::AsIID method
 - Microsoft::WRL::Details::RuntimeClassBaseT::GetImplementedIIDS method
 ms.assetid: a62775fb-3359-4f45-9ff1-c07fa8da464b
-ms.openlocfilehash: 06a9f73e00d541b0e5bcbe20c57befe4a67c5132
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 48f03a5d54eba455b60646ed47c48e228f07863e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81375725"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135295"
 ---
 # <a name="runtimeclassbaset-structure"></a>Структура RuntimeClassBaseT
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,21 +32,21 @@ friend struct Details::RuntimeClassBaseT;
 
 ### <a name="parameters"></a>Параметры
 
-*RuntimeClassTypeT*<br/>
-Поле флагов, которое определяет один или несколько регистраторов [RuntimeClassType.](runtimeclasstype-enumeration.md)
+*рунтимекласстипет*<br/>
+Поле флагов, задающее один или несколько перечислителей [RuntimeClassType](runtimeclasstype-enumeration.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Предоставляет вспомогательные методы для операций `QueryInterface` и получения идентификаторов интерфейсов.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="protected-methods"></a>Защищенные методы
 
 Имя                                                         | Описание
 ------------------------------------------------------------ | -----------------------------------------------------------------------------
-[RuntimeClassBaset::ASIID](#asiid)                           | Извлекает указатель на указанный идентификатор интерфейса.
-[RuntimeClassBaset::GetImplementedIIDS](#getimplementediids) | Извлекает массив идотов интерфейса, реализованных определенным типом.
+[Метод runtimeclassbaset:: AsIID](#asiid)                           | Извлекает указатель на указанный идентификатор интерфейса.
+[Метод runtimeclassbaset:: GetImplementedIIDS](#getimplementediids) | Извлекает массив идентификаторов интерфейса, реализованных указанным типом.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -53,13 +54,13 @@ friend struct Details::RuntimeClassBaseT;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** implements.h
+**Заголовок:** Implements. h
 
-**Пространство имен:** Microsoft:WRL::Details
+**Пространство имен:** Microsoft:: WRL::D состояния
 
-## <a name="runtimeclassbasetasiid"></a><a name="asiid"></a>RuntimeClassBaset::ASIID
+## <a name="runtimeclassbasetasiid"></a><a name="asiid"></a> Метод runtimeclassbaset:: AsIID
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ```cpp
 template<typename T>
@@ -73,28 +74,28 @@ __forceinline static HRESULT AsIID(
 ### <a name="parameters"></a>Параметры
 
 *T*<br/>
-Тип, реализуемый идентификаторинтерфейса, указанный по параметру *riid.*
+Тип, реализующий идентификатор интерфейса, указанный параметром *riid*.
 
-*реализует*<br/>
-Переменная типа, указанная параметром шаблона *T*.
+*внедрен*<br/>
+Переменная типа, заданная параметром-шаблоном *T*.
 
 *riid*<br/>
 Извлекаемый идентификатор интерфейса.
 
-*ppvObject*<br/>
-Если эта операция успешна, указатель к указателю на интерфейс, указанный по параметру *riid.*
+*ппвобжект*<br/>
+Если эта операция выполнена успешно, указатель на указатель на интерфейс, указанный параметром *riid*.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK в случае успеха; в противном случае, HRESULT, который описывает ошибку.
+S_OK в случае успеха; в противном случае возвращается значение HRESULT, описывающее ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Извлекает указатель на указанный идентификатор интерфейса.
 
-## <a name="runtimeclassbasetgetimplementediids"></a><a name="getimplementediids"></a>RuntimeClassBaset::GetImplementedIIDS
+## <a name="runtimeclassbasetgetimplementediids"></a><a name="getimplementediids"></a> Метод runtimeclassbaset:: GetImplementedIIDS
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ```cpp
 template<typename T>
@@ -108,21 +109,21 @@ __forceinline static HRESULT GetImplementedIIDS(
 ### <a name="parameters"></a>Параметры
 
 *T*<br/>
-Тип параметра *реализации.*
+Тип параметра *Implements* .
 
-*реализует*<br/>
-Указатель на тип, указанный по параметру *T*.
+*внедрен*<br/>
+Указатель на тип, заданный параметром *T*.
 
 *iidCount*<br/>
-Максимальное количество идотов интерфейса для извлечения.
+Максимальное число идентификаторов интерфейсов для извлечения.
 
-*iids*<br/>
-Если эта операция успешно завершена, массив интидоподобных интерфейсов реализован по типу *T.*
+*идентификаторов IID*<br/>
+Если эта операция завершается успешно, массив идентификаторов интерфейса, реализованный типом *T*.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK в случае успеха; в противном случае, HRESULT, который описывает ошибку.
+S_OK в случае успеха; в противном случае возвращается значение HRESULT, описывающее ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Извлекает массив идотов интерфейса, реализованных определенным типом.
+Извлекает массив идентификаторов интерфейса, реализованных указанным типом.

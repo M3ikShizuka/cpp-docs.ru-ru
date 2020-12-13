@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Катллист Class'
 title: Класс Катллист
 ms.date: 11/04/2016
 f1_keywords:
@@ -37,12 +38,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlList class
 ms.assetid: 09e98053-64b2-4efa-99ab-d0542caaf981
-ms.openlocfilehash: 15830a30e8236a13f3911d1b84d3727d3246fc0b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 79ad0ab8e1a3cd1fb528776fa868aa806746b9da
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226676"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147359"
 ---
 # <a name="catllist-class"></a>Класс Катллист
 
@@ -57,7 +58,7 @@ class CAtlList
 
 ### <a name="parameters"></a>Параметры
 
-*&*<br/>
+*E*<br/>
 Тип элемента.
 
 *етраитс*<br/>
@@ -67,20 +68,20 @@ class CAtlList
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Катллист:: ИНАРГТИПЕ](#inargtype)||
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[Катллист:: Катллист](#catllist)|Конструктор.|
 |[Катллист:: ~ Катллист](#dtor)|Деструктор|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[Катллист:: Аддхеад](#addhead)|Вызовите этот метод, чтобы добавить элемент в заголовок списка.|
 |[Катллист:: Аддхеадлист](#addheadlist)|Вызовите этот метод, чтобы добавить существующий список в заголовок списка.|
@@ -111,9 +112,9 @@ class CAtlList
 |[Катллист:: SetAt](#setat)|Вызовите этот метод, чтобы задать значение элемента в заданной позиции в списке.|
 |[Катллист:: Свапелементс](#swapelements)|Вызовите этот метод, чтобы переключить элементы в списке.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CAtlList`Класс поддерживает упорядоченные списки неуникальных объектов, доступных последовательно или по значению. `CAtlList`списки ведут себя подобно удвоенным связанным спискам. Каждый список содержит головной элемент и хвост, а новые элементы (или списки в некоторых случаях) можно добавить в конец списка или вставить до или после определенных элементов.
+`CAtlList`Класс поддерживает упорядоченные списки неуникальных объектов, доступных последовательно или по значению. `CAtlList` списки ведут себя подобно удвоенным связанным спискам. Каждый список содержит головной элемент и хвост, а новые элементы (или списки в некоторых случаях) можно добавить в конец списка или вставить до или после определенных элементов.
 
 Большинство `CAtlList` методов используют значение расположения. Это значение используется методами для ссылки на фактическое место в памяти, где хранятся элементы, и не должно вычисляться или прогнозироваться напрямую. Если необходимо получить доступ к *n*-ом элементу в списке, метод [Катллист:: FindIndex](#findindex) возвратит соответствующее значение позиции для данного индекса. Методы [катллист:: GetNext](#getnext) и [Катллист:: prev](#getprev) можно использовать для прохода по объектам в списке.
 
@@ -123,7 +124,7 @@ class CAtlList
 
 **Заголовок:** атлколл. h
 
-## <a name="catllistaddhead"></a><a name="addhead"></a>Катллист:: Аддхеад
+## <a name="catllistaddhead"></a><a name="addhead"></a> Катллист:: Аддхеад
 
 Вызовите этот метод, чтобы добавить элемент в заголовок списка.
 
@@ -141,7 +142,7 @@ POSITION AddHead(INARGTYPE element);
 
 Возвращает расположение только что добавленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если используется первая версия, пустой элемент создается с помощью конструктора по умолчанию, а не конструктора копии.
 
@@ -149,7 +150,7 @@ POSITION AddHead(INARGTYPE element);
 
 [!code-cpp[NVC_ATL_Utilities#13](../../atl/codesnippet/cpp/catllist-class_1.cpp)]
 
-## <a name="catllistaddheadlist"></a><a name="addheadlist"></a>Катллист:: Аддхеадлист
+## <a name="catllistaddheadlist"></a><a name="addheadlist"></a> Катллист:: Аддхеадлист
 
 Вызовите этот метод, чтобы добавить существующий список в заголовок списка.
 
@@ -162,7 +163,7 @@ void AddHeadList(const CAtlList<E, ETraits>* plNew);
 *плнев*<br/>
 Список, в который добавляется элемент.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Список, на который указывает *плнев* , вставляется в начало существующего списка. В отладочных сборках произойдет сбой утверждения, если *плнев* равен null.
 
@@ -170,7 +171,7 @@ void AddHeadList(const CAtlList<E, ETraits>* plNew);
 
 [!code-cpp[NVC_ATL_Utilities#14](../../atl/codesnippet/cpp/catllist-class_2.cpp)]
 
-## <a name="catllistaddtail"></a><a name="addtail"></a>Катллист:: AddTail
+## <a name="catllistaddtail"></a><a name="addtail"></a> Катллист:: AddTail
 
 Вызовите этот метод, чтобы добавить элемент в конец этого списка.
 
@@ -188,7 +189,7 @@ POSITION AddTail(INARGTYPE element);
 
 Возвращает расположение только что добавленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если используется первая версия, пустой элемент создается с помощью конструктора по умолчанию, а не конструктора копии. Элемент добавляется в конец списка, поэтому теперь он становится заключительным. Этот метод можно использовать с пустым списком.
 
@@ -196,7 +197,7 @@ POSITION AddTail(INARGTYPE element);
 
 [!code-cpp[NVC_ATL_Utilities#15](../../atl/codesnippet/cpp/catllist-class_3.cpp)]
 
-## <a name="catllistaddtaillist"></a><a name="addtaillist"></a>Катллист:: Аддтаиллист
+## <a name="catllistaddtaillist"></a><a name="addtaillist"></a> Катллист:: Аддтаиллист
 
 Вызовите этот метод, чтобы добавить существующий список в конец этого списка.
 
@@ -209,7 +210,7 @@ void AddTailList(const CAtlList<E, ETraits>* plNew);
 *плнев*<br/>
 Список, в который добавляется элемент.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Список, на который указывает *плнев* , вставляется после последнего элемента (если есть) в объекте списка. Таким образом, последний элемент в списке *плнев* преобразуется в конец. В отладочных сборках произойдет сбой утверждения, если *плнев* равен null.
 
@@ -217,7 +218,7 @@ void AddTailList(const CAtlList<E, ETraits>* plNew);
 
 [!code-cpp[NVC_ATL_Utilities#16](../../atl/codesnippet/cpp/catllist-class_4.cpp)]
 
-## <a name="catllistassertvalid"></a><a name="assertvalid"></a>Катллист:: AssertValid
+## <a name="catllistassertvalid"></a><a name="assertvalid"></a> Катллист:: AssertValid
 
 Вызовите этот метод, чтобы убедиться, что список является допустимым.
 
@@ -225,7 +226,7 @@ void AddTailList(const CAtlList<E, ETraits>* plNew);
 void AssertValid() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В отладочных сборках произойдет сбой утверждения, если объект списка является недопустимым. Чтобы быть допустимым, пустой список должен содержать как заголовок, так и хвост, указывающий на NULL, а список, который не является пустым, должен содержать и головной, и хвост, указывающие на допустимые адреса.
 
@@ -233,7 +234,7 @@ void AssertValid() const;
 
 [!code-cpp[NVC_ATL_Utilities#17](../../atl/codesnippet/cpp/catllist-class_5.cpp)]
 
-## <a name="catllistcatllist"></a><a name="catllist"></a>Катллист:: Катллист
+## <a name="catllistcatllist"></a><a name="catllist"></a> Катллист:: Катллист
 
 Конструктор.
 
@@ -246,7 +247,7 @@ CAtlList(UINT nBlockSize = 10) throw();
 *нблокксизе*<br/>
 Размер блока.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конструктор для `CAtlList` объекта. Размер блока — это мера объема памяти, выделенной при необходимости нового элемента. Большие размеры блоков сокращают число вызовов подпрограмм выделения памяти, но используют больше ресурсов.
 
@@ -254,7 +255,7 @@ CAtlList(UINT nBlockSize = 10) throw();
 
 [!code-cpp[NVC_ATL_Utilities#18](../../atl/codesnippet/cpp/catllist-class_6.cpp)]
 
-## <a name="catllistcatllist"></a><a name="dtor"></a>Катллист:: ~ Катллист
+## <a name="catllistcatllist"></a><a name="dtor"></a> Катллист:: ~ Катллист
 
 Деструктор
 
@@ -262,13 +263,13 @@ CAtlList(UINT nBlockSize = 10) throw();
 ~CAtlList() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Освобождает все выделенные ресурсы, включая вызов [катллист:: RemoveAll](#removeall) для удаления всех элементов из списка.
 
 В отладочных сборках происходит сбой утверждения, если список по-прежнему содержит некоторые элементы после вызова `RemoveAll` .
 
-## <a name="catllistfind"></a><a name="find"></a>Катллист:: Find
+## <a name="catllistfind"></a><a name="find"></a> Катллист:: Find
 
 Вызовите этот метод для поиска указанного элемента в списке.
 
@@ -288,7 +289,7 @@ POSITION Find(INARGTYPE element, POSITION posStartAfter = NULL) const throw();
 
 Возвращает значение расположения элемента, если оно найдено, в противном случае возвращает значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В отладочных сборках происходит сбой утверждения, если объект списка является недопустимым или значение *посстартафтер* выходит за пределы диапазона.
 
@@ -296,7 +297,7 @@ POSITION Find(INARGTYPE element, POSITION posStartAfter = NULL) const throw();
 
 [!code-cpp[NVC_ATL_Utilities#19](../../atl/codesnippet/cpp/catllist-class_7.cpp)]
 
-## <a name="catllistfindindex"></a><a name="findindex"></a>Катллист:: FindIndex
+## <a name="catllistfindindex"></a><a name="findindex"></a> Катллист:: FindIndex
 
 Вызывайте этот метод для получения позиции элемента по заданному значению индекса.
 
@@ -313,7 +314,7 @@ POSITION FindIndex(size_t iElement) const throw();
 
 Возвращает соответствующее значение координаты или значение NULL, если *IElement* выходит за пределы диапазона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод возвращает расположение, соответствующее заданному значению индекса, что позволяет получить доступ к *n*-ом элементу в списке.
 
@@ -323,7 +324,7 @@ POSITION FindIndex(size_t iElement) const throw();
 
 [!code-cpp[NVC_ATL_Utilities#20](../../atl/codesnippet/cpp/catllist-class_8.cpp)]
 
-## <a name="catllistgetat"></a><a name="getat"></a>Катллист:: GetAt
+## <a name="catllistgetat"></a><a name="getat"></a> Катллист:: GetAt
 
 Вызовите этот метод, чтобы вернуть элемент в указанной позиции в списке.
 
@@ -341,7 +342,7 @@ const E& GetAt(POSITION pos) const throw();
 
 Ссылка на или копию элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если список имеет значение **`const`** , `GetAt` возвращает копию элемента. Это позволяет использовать метод только с правой стороны оператора присваивания и защищать список от изменения.
 
@@ -353,7 +354,7 @@ const E& GetAt(POSITION pos) const throw();
 
 См. пример для [катллист:: FindIndex](#findindex).
 
-## <a name="catllistgetcount"></a><a name="getcount"></a>Катллист:: NOCOUNT
+## <a name="catllistgetcount"></a><a name="getcount"></a> Катллист:: NOCOUNT
 
 Вызовите этот метод, чтобы получить количество объектов в списке.
 
@@ -369,7 +370,7 @@ size_t GetCount() const throw();
 
 См. пример для [катллист:: Find](#find).
 
-## <a name="catllistgethead"></a><a name="gethead"></a>Катллист:: onhead
+## <a name="catllistgethead"></a><a name="gethead"></a> Катллист:: onhead
 
 Вызовите этот метод, чтобы вернуть элемент в заголовке списка.
 
@@ -382,7 +383,7 @@ const E& GetHead() const throw();
 
 Возвращает ссылку на или копию элемента в заголовке списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если список имеет значение **`const`** , `GetHead` возвращает копию элемента в заголовке списка. Это позволяет использовать метод только с правой стороны оператора присваивания и защищать список от изменения.
 
@@ -394,7 +395,7 @@ const E& GetHead() const throw();
 
 См. пример для [катллист:: аддхеад](#addhead).
 
-## <a name="catllistgetheadposition"></a><a name="getheadposition"></a>Катллист:: Жесеадпоситион
+## <a name="catllistgetheadposition"></a><a name="getheadposition"></a> Катллист:: Жесеадпоситион
 
 Вызовите этот метод, чтобы получить расположение заголовка списка.
 
@@ -406,7 +407,7 @@ POSITION GetHeadPosition() const throw();
 
 Возвращает значение позиции, соответствующее элементу в заголовке списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если список пуст, возвращается значение NULL.
 
@@ -414,7 +415,7 @@ POSITION GetHeadPosition() const throw();
 
 [!code-cpp[NVC_ATL_Utilities#21](../../atl/codesnippet/cpp/catllist-class_9.cpp)]
 
-## <a name="catllistgetnext"></a><a name="getnext"></a>Катллист:: GetNext
+## <a name="catllistgetnext"></a><a name="getnext"></a> Катллист:: GetNext
 
 Вызовите этот метод, чтобы вернуть следующий элемент из списка.
 
@@ -434,15 +435,15 @@ const E& GetNext(POSITION& pos) const throw();
 
 Если список не имеет значение **`const`** , `GetNext` возвращает ссылку на следующий элемент списка. Это позволяет использовать метод с любой стороны оператора присваивания и таким образом допустить изменение элементов списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Счетчик позиции, *POS*обновляется, чтобы указать следующий элемент в списке, или значение null, если больше нет элементов. В отладочных сборках произойдет сбой утверждения, если *POS* равен null.
+Счетчик позиции, *POS* обновляется, чтобы указать следующий элемент в списке, или значение null, если больше нет элементов. В отладочных сборках произойдет сбой утверждения, если *POS* равен null.
 
 ### <a name="example"></a>Пример
 
 См. пример для [катллист:: жесеадпоситион](#getheadposition).
 
-## <a name="catllistgetprev"></a><a name="getprev"></a>Катллист:: prev
+## <a name="catllistgetprev"></a><a name="getprev"></a> Катллист:: prev
 
 Вызовите этот метод, чтобы вернуть предыдущий элемент из списка.
 
@@ -462,15 +463,15 @@ const E& GetPrev(POSITION& pos) const throw();
 
 Если список не имеет значение **`const`** , `GetPrev` возвращает ссылку на элемент списка. Это позволяет использовать метод с любой стороны оператора присваивания и таким образом допустить изменение элементов списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Счетчик позиции, *POS*обновляется, чтобы указать предыдущий элемент в списке, или значение null, если больше нет элементов. В отладочных сборках произойдет сбой утверждения, если *POS* равен null.
+Счетчик позиции, *POS* обновляется, чтобы указать предыдущий элемент в списке, или значение null, если больше нет элементов. В отладочных сборках произойдет сбой утверждения, если *POS* равен null.
 
 ### <a name="example"></a>Пример
 
 См. пример для [катллист:: жеттаилпоситион](#gettailposition).
 
-## <a name="catllistgettail"></a><a name="gettail"></a>Катллист:: tail
+## <a name="catllistgettail"></a><a name="gettail"></a> Катллист:: tail
 
 Вызовите этот метод, чтобы вернуть элемент в хвосте списка.
 
@@ -483,7 +484,7 @@ const E& GetTail() const throw();
 
 Возвращает ссылку на или копию элемента в хвосте списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если список имеет значение **`const`** , `GetTail` возвращает копию элемента в заголовке списка. Это позволяет использовать метод только с правой стороны оператора присваивания и защищать список от изменения.
 
@@ -495,7 +496,7 @@ const E& GetTail() const throw();
 
 См. пример для [катллист:: AddTail](#addtail).
 
-## <a name="catllistgettailposition"></a><a name="gettailposition"></a>Катллист:: Жеттаилпоситион
+## <a name="catllistgettailposition"></a><a name="gettailposition"></a> Катллист:: Жеттаилпоситион
 
 Вызовите этот метод, чтобы получить позиции заключительного фрагмента списка.
 
@@ -507,7 +508,7 @@ POSITION GetTailPosition() const throw();
 
 Возвращает значение позиции, соответствующее элементу в заключительном фрагменте списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если список пуст, возвращается значение NULL.
 
@@ -515,7 +516,7 @@ POSITION GetTailPosition() const throw();
 
 [!code-cpp[NVC_ATL_Utilities#22](../../atl/codesnippet/cpp/catllist-class_10.cpp)]
 
-## <a name="catllistinargtype"></a><a name="inargtype"></a>Катллист:: ИНАРГТИПЕ
+## <a name="catllistinargtype"></a><a name="inargtype"></a> Катллист:: ИНАРГТИПЕ
 
 Тип, используемый при передаче элемента в качестве входного аргумента.
 
@@ -523,7 +524,7 @@ POSITION GetTailPosition() const throw();
 typedef ETraits::INARGTYPE INARGTYPE;
 ```
 
-## <a name="catllistinsertafter"></a><a name="insertafter"></a>Катллист:: InsertAfter
+## <a name="catllistinsertafter"></a><a name="insertafter"></a> Катллист:: InsertAfter
 
 Вызовите этот метод, чтобы вставить новый элемент в список после указанной должности.
 
@@ -543,7 +544,7 @@ POSITION InsertAfter(POSITION pos, INARGTYPE element);
 
 Возвращает значение расположения нового элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В отладочных сборках происходит сбой утверждения, если список является недопустимым, если вставка завершается ошибкой или если выполняется попытка вставить элемент после хвоста.
 
@@ -551,7 +552,7 @@ POSITION InsertAfter(POSITION pos, INARGTYPE element);
 
 [!code-cpp[NVC_ATL_Utilities#23](../../atl/codesnippet/cpp/catllist-class_11.cpp)]
 
-## <a name="catllistinsertbefore"></a><a name="insertbefore"></a>Катллист:: методов insertBefore
+## <a name="catllistinsertbefore"></a><a name="insertbefore"></a> Катллист:: методов insertBefore
 
 Вызовите этот метод, чтобы вставить новый элемент в список перед заданной позицией.
 
@@ -571,7 +572,7 @@ POSITION InsertBefore(POSITION pos, INARGTYPE element);
 
 Возвращает значение расположения нового элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В отладочных сборках происходит сбой утверждения, если список является недопустимым, если вставка завершается ошибкой или если выполняется попытка вставить элемент перед заголовком.
 
@@ -579,7 +580,7 @@ POSITION InsertBefore(POSITION pos, INARGTYPE element);
 
 [!code-cpp[NVC_ATL_Utilities#24](../../atl/codesnippet/cpp/catllist-class_12.cpp)]
 
-## <a name="catllistisempty"></a><a name="isempty"></a>Катллист:: IsEmpty
+## <a name="catllistisempty"></a><a name="isempty"></a> Катллист:: IsEmpty
 
 Вызовите этот метод, чтобы определить, является ли список пустым.
 
@@ -595,7 +596,7 @@ bool IsEmpty() const throw();
 
 [!code-cpp[NVC_ATL_Utilities#25](../../atl/codesnippet/cpp/catllist-class_13.cpp)]
 
-## <a name="catllistmovetohead"></a><a name="movetohead"></a>Катллист:: Моветохеад
+## <a name="catllistmovetohead"></a><a name="movetohead"></a> Катллист:: Моветохеад
 
 Вызовите этот метод, чтобы переместить указанный элемент в заголовок списка.
 
@@ -608,7 +609,7 @@ void MoveToHead(POSITION pos) throw();
 *pos*<br/>
 Значение положения перемещаемого элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Указанный элемент перемещается от его текущей позицией к заголовку списка. В отладочных сборках произойдет сбой утверждения, если *POS* равен null.
 
@@ -616,7 +617,7 @@ void MoveToHead(POSITION pos) throw();
 
 [!code-cpp[NVC_ATL_Utilities#26](../../atl/codesnippet/cpp/catllist-class_14.cpp)]
 
-## <a name="catllistmovetotail"></a><a name="movetotail"></a>Катллист:: Моветотаил
+## <a name="catllistmovetotail"></a><a name="movetotail"></a> Катллист:: Моветотаил
 
 Вызовите этот метод, чтобы переместить указанный элемент в конец списка.
 
@@ -629,7 +630,7 @@ void MoveToTail(POSITION pos) throw();
 *pos*<br/>
 Значение положения перемещаемого элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Указанный элемент перемещается из его текущей позиции в конец списка. В отладочных сборках произойдет сбой утверждения, если *POS* равен null.
 
@@ -637,7 +638,7 @@ void MoveToTail(POSITION pos) throw();
 
 См. пример для [катллист:: моветохеад](#movetohead).
 
-## <a name="catllistremoveall"></a><a name="removeall"></a>Катллист:: RemoveAll
+## <a name="catllistremoveall"></a><a name="removeall"></a> Катллист:: RemoveAll
 
 Вызовите этот метод, чтобы удалить все элементы из списка.
 
@@ -645,7 +646,7 @@ void MoveToTail(POSITION pos) throw();
 void RemoveAll() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод удаляет все элементы из списка и освобождает выделенную память. При возникновении ошибок в сборках создается исключение АТЛАССЕРТ, если все элементы не удаляются или структура списка повреждена.
 
@@ -653,7 +654,7 @@ void RemoveAll() throw();
 
 См. пример для [катллист:: IsEmpty](#isempty).
 
-## <a name="catllistremoveat"></a><a name="removeat"></a>Катллист:: RemoveAt
+## <a name="catllistremoveat"></a><a name="removeat"></a> Катллист:: RemoveAt
 
 Вызовите этот метод, чтобы удалить из списка один элемент.
 
@@ -666,7 +667,7 @@ void RemoveAt(POSITION pos) throw();
 *pos*<br/>
 Значение расположения удаляемого элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Элемент, на который ссылается *POS* , удаляется, а память освобождается. Допускается использование `RemoveAt` для удаления головного или заключительного фрагмента списка.
 
@@ -676,7 +677,7 @@ void RemoveAt(POSITION pos) throw();
 
 [!code-cpp[NVC_ATL_Utilities#27](../../atl/codesnippet/cpp/catllist-class_15.cpp)]
 
-## <a name="catllistremovehead"></a><a name="removehead"></a>Катллист:: Ремовехеад
+## <a name="catllistremovehead"></a><a name="removehead"></a> Катллист:: Ремовехеад
 
 Вызовите этот метод, чтобы удалить элемент в заголовке списка.
 
@@ -688,7 +689,7 @@ E RemoveHead();
 
 Возвращает элемент в заголовке списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Элемент head удаляется из списка, а память освобождается. Возвращается копия элемента. В отладочных сборках произойдет сбой утверждения, если список пуст.
 
@@ -696,7 +697,7 @@ E RemoveHead();
 
 [!code-cpp[NVC_ATL_Utilities#28](../../atl/codesnippet/cpp/catllist-class_16.cpp)]
 
-## <a name="catllistremoveheadnoreturn"></a><a name="removeheadnoreturn"></a>Катллист:: Ремовехеадноретурн
+## <a name="catllistremoveheadnoreturn"></a><a name="removeheadnoreturn"></a> Катллист:: Ремовехеадноретурн
 
 Вызовите этот метод, чтобы удалить элемент в заголовке списка без возвращения значения.
 
@@ -704,7 +705,7 @@ E RemoveHead();
 void RemoveHeadNoReturn() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Элемент head удаляется из списка, а память освобождается. В отладочных сборках произойдет сбой утверждения, если список пуст.
 
@@ -712,7 +713,7 @@ void RemoveHeadNoReturn() throw();
 
 См. пример для [катллист:: IsEmpty](#isempty).
 
-## <a name="catllistremovetail"></a><a name="removetail"></a>Катллист:: Ремоветаил
+## <a name="catllistremovetail"></a><a name="removetail"></a> Катллист:: Ремоветаил
 
 Вызовите этот метод, чтобы удалить элемент из конца списка.
 
@@ -724,7 +725,7 @@ E RemoveTail();
 
 Возвращает элемент в заключительном фрагменте списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Элемент tail удаляется из списка, а память освобождается. Возвращается копия элемента. В отладочных сборках произойдет сбой утверждения, если список пуст.
 
@@ -732,7 +733,7 @@ E RemoveTail();
 
 [!code-cpp[NVC_ATL_Utilities#29](../../atl/codesnippet/cpp/catllist-class_17.cpp)]
 
-## <a name="catllistremovetailnoreturn"></a><a name="removetailnoreturn"></a>Катллист:: Ремоветаилноретурн
+## <a name="catllistremovetailnoreturn"></a><a name="removetailnoreturn"></a> Катллист:: Ремоветаилноретурн
 
 Вызовите этот метод, чтобы удалить элемент в заключительном фрагменте списка без возвращения значения.
 
@@ -740,7 +741,7 @@ E RemoveTail();
 void RemoveTailNoReturn() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Элемент tail удаляется из списка, а память освобождается. В отладочных сборках произойдет сбой утверждения, если список пуст.
 
@@ -748,7 +749,7 @@ void RemoveTailNoReturn() throw();
 
 См. пример для [катллист:: IsEmpty](#isempty).
 
-## <a name="catllistsetat"></a><a name="setat"></a>Катллист:: SetAt
+## <a name="catllistsetat"></a><a name="setat"></a> Катллист:: SetAt
 
 Вызовите этот метод, чтобы задать значение элемента в заданной позиции в списке.
 
@@ -764,7 +765,7 @@ void SetAt(POSITION pos, INARGTYPE element);
 *дерев*<br/>
 Новое значение элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Заменяет существующее значение *элементом*. В отладочных сборках произойдет сбой утверждения, если *POS* равен null.
 
@@ -772,7 +773,7 @@ void SetAt(POSITION pos, INARGTYPE element);
 
 [!code-cpp[NVC_ATL_Utilities#30](../../atl/codesnippet/cpp/catllist-class_18.cpp)]
 
-## <a name="catllistswapelements"></a><a name="swapelements"></a>Катллист:: Свапелементс
+## <a name="catllistswapelements"></a><a name="swapelements"></a> Катллист:: Свапелементс
 
 Вызовите этот метод, чтобы переключить элементы в списке.
 
@@ -788,7 +789,7 @@ void SwapElements(POSITION pos1, POSITION pos2) throw();
 *pos2*<br/>
 Второе значение расположения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Меняет местами элементы на двух указанных позициях. В отладочных сборках возникнет сбой утверждения, если одно из значений равно NULL.
 

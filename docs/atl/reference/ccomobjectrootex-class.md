@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CComObjectRootEx Class'
 title: Класс CComObjectRootEx
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - reference counting
 ms.assetid: 894a3d7c-2daf-4fd0-8fa4-e6a05bcfb631
-ms.openlocfilehash: b4dbc42cb0c6fe2c9c6692e0db37267ce3fff361
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9fe0140944e3da5ddf70e0da38d054a35bb648ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833651"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142484"
 ---
 # <a name="ccomobjectrootex-class"></a>Класс CComObjectRootEx
 
@@ -53,7 +54,7 @@ class CComObjectRootEx : public CComObjectRootBase
 |[InternalAddRef](#internaladdref)|Увеличивает значение счетчика ссылок для неагрегированного объекта.|
 |[InternalRelease](#internalrelease)|Уменьшает значение счетчика ссылок для неагрегированного объекта.|
 |[Блокировка](#lock)|Если модель потока является многопоточной, получает владение объектом критической секции.|
-|[Блокирован](#unlock)|Если модель потока является многопоточной, освобождает владение объектом критической секции.|
+|[Unlock](#unlock)|Если модель потока является многопоточной, освобождает владение объектом критической секции.|
 
 ### <a name="ccomobjectrootbase-methods"></a>Методы Ккомобжектрутбасе
 
@@ -79,7 +80,7 @@ class CComObjectRootEx : public CComObjectRootBase
 |[m_dwRef](#m_dwref)|Вместе с `m_pOuterUnknown` , часть объединения. Используется, если объект не является агрегированным для хранения счетчика ссылок `AddRef` и `Release` .|
 |[m_pOuterUnknown](#m_pouterunknown)|Вместе с `m_dwRef` , часть объединения. Используется при статистической обработке объекта для хранения указателя на внешнюю неизвестную.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `CComObjectRootEx` обрабатывает управление счетчиком ссылок на объекты для неагрегированных и агрегированных объектов. Он содержит счетчик ссылок на объекты, если объект не выполняет статистическую обработку, и содержит указатель на внешнюю неизвестную функцию, если выполняется статистическая обработка объекта. Для агрегированных объектов `CComObjectRootEx` методы можно использовать для обработки сбоя внутреннего объекта, а также для защиты внешнего объекта от удаления при освобождении внутренних интерфейсов или при удалении внутреннего объекта.
 
@@ -119,7 +120,7 @@ HRESULT FinalConstruct();
 
 Возвращает S_OK об успешном или одном из стандартных значений HRESULT ошибок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию `CComObjectRootEx::FinalConstruct` просто возвращает S_OK.
 
@@ -159,7 +160,7 @@ HRESULT FinalConstruct();
 void FinalRelease();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию `CComObjectRootEx::FinalRelease` не выполняет никаких действий.
 
@@ -177,7 +178,7 @@ ULONG InternalAddRef();
 
 Значение, которое может быть полезно для диагностики и тестирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если модель потока является многопоточной, `InterlockedIncrement` используется для предотвращения одновременного изменения счетчика ссылок несколькими потоками.
 
@@ -211,7 +212,7 @@ static HRESULT InternalQueryInterface(
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `InternalQueryInterface` обрабатывает интерфейсы только в таблице сопоставлений COM. Если объект является агрегатным, `InternalQueryInterface` не выполняет делегирование внешнему неизвестному объекту. Вы можете вводить интерфейсы в таблицу-сопоставлении COM с помощью макроса [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) или одного из вариантов.
 
@@ -227,7 +228,7 @@ ULONG InternalRelease();
 
 В сборках, не относящихся к отладке и отладке, эта функция возвращает значение, которое может быть полезно для диагностики или тестирования. Точное возвращаемое значение зависит от многих факторов, например от используемой операционной системы, а также от того, могут ли они быть счетчиком ссылок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если модель потока является многопоточной, `InterlockedDecrement` используется для предотвращения одновременного изменения счетчика ссылок несколькими потоками.
 
@@ -239,7 +240,7 @@ ULONG InternalRelease();
 void Lock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 После завершения выполнения защищенного кода поток должен вызвать, `Unlock` чтобы освободить владение критической секцией.
 
@@ -253,7 +254,7 @@ void Lock();
 long m_dwRef;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В `m_pOuterUnknown` составе объединения:
 
@@ -275,7 +276,7 @@ IUnknown*
     m_pOuterUnknown;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В `m_dwRef` составе объединения:
 
@@ -301,7 +302,7 @@ static void WINAPI ObjectMain(bool bStarting);
 *бстартинг*<br/>
 заполняет Значение равно TRUE, если инициализируется класс. в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Значение параметра *бстартинг* указывает, выполняется ли инициализация или завершение модуля. Реализация по умолчанию `ObjectMain` не выполняет никаких действий, но эту функцию можно переопределить в своем классе, чтобы инициализировать или очистить ресурсы, которые необходимо выделить для класса. Обратите внимание, что `ObjectMain` вызывается до запроса всех экземпляров класса.
 
@@ -363,7 +364,7 @@ ULONG OuterRelease();
 void Unlock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Чтобы получить владение, поток должен вызвать `Lock` . Каждый вызов метода `Lock` требует соответствующего вызова, `Unlock` чтобы освободить владение критическим разделом.
 

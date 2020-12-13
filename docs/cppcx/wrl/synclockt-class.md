@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: SyncLockT Class'
 title: SyncLockT - класс
 ms.date: 10/03/2018
 ms.topic: reference
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::Details::SyncLockT::~SyncLockT, destructor
 - Microsoft::WRL::Wrappers::Details::SyncLockT::Unlock method
 ms.assetid: a967f6f7-3555-43d1-b210-2bb65d63d15e
-ms.openlocfilehash: 6a6e176020624f02e778ba5684a374abfbafa9e4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 289a31d87ce395be2d2a72a8fe062c9c0bfa8f56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87184674"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135113"
 ---
 # <a name="synclockt-class"></a>SyncLockT - класс
 
@@ -40,7 +41,7 @@ class SyncLockT;
 *синктраитс*<br/>
 Тип, который может стать владельцем ресурса.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Представляет тип, который может принимать монопольное или совместное владение ресурсом.
 
@@ -50,7 +51,7 @@ class SyncLockT;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-Имя                                      | Описание
+name                                      | Описание
 ----------------------------------------- | ----------------------------------------------------
 [SyncLockT:: SyncLockT](#synclockt)        | Инициализирует новый экземпляр класса `SyncLockT`.
 [SyncLockT:: ~ SyncLockT](#tilde-synclockt) | Выполняет деинициализацию экземпляра `SyncLockT` класса.
@@ -84,7 +85,7 @@ name                             | Описание
 
 **Пространство имен:** Microsoft:: WRL:: оболочки::D состояния
 
-## <a name="synclocktsynclockt"></a><a name="tilde-synclockt"></a>SyncLockT:: ~ SyncLockT
+## <a name="synclocktsynclockt"></a><a name="tilde-synclockt"></a> SyncLockT:: ~ SyncLockT
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -92,13 +93,13 @@ name                             | Описание
 ~SyncLockT();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Выполняет деинициализацию экземпляра `SyncLockT` класса.
 
 Этот деструктор также разблокирует текущий `SyncLockT` экземпляр.
 
-## <a name="synclocktislocked"></a><a name="islocked"></a>SyncLockT:: NOLOCK
+## <a name="synclocktislocked"></a><a name="islocked"></a> SyncLockT:: NOLOCK
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -110,11 +111,11 @@ bool IsLocked() const;
 
 **`true`**`SyncLockT`значение, если объект заблокирован; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Указывает `SyncLockT` , владеет ли текущий объект ресурсом, т `SyncLockT` . е. объект *заблокирован*.
 
-## <a name="synclocktsync_"></a><a name="sync"></a>SyncLockT:: sync_
+## <a name="synclocktsync_"></a><a name="sync"></a> SyncLockT:: sync_
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -122,11 +123,11 @@ bool IsLocked() const;
 typename SyncTraits::Type sync_;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Содержит базовый ресурс, представленный `SyncLockT` классом.
 
-## <a name="synclocktsynclockt"></a><a name="synclockt"></a>SyncLockT:: SyncLockT
+## <a name="synclocktsynclockt"></a><a name="synclockt"></a> SyncLockT:: SyncLockT
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -148,13 +149,13 @@ explicit SyncLockT(
 *nosync*<br/>
 Ссылка на другой `SyncLockWithStatusT` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Инициализирует новый экземпляр класса `SyncLockT`.
 
 Первый конструктор инициализирует текущий объект `SyncLockT` из другого `SyncLockT` объекта, указанного параметром *other*, а затем делает недействительным другой `SyncLockT` объект. Второй конструктор — **`protected`** и инициализирует текущий `SyncLockT` объект в недопустимом состоянии.
 
-## <a name="synclocktunlock"></a><a name="unlock"></a>SyncLockT:: Unlock
+## <a name="synclocktunlock"></a><a name="unlock"></a> SyncLockT:: Unlock
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -162,6 +163,6 @@ explicit SyncLockT(
 void Unlock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Освобождает управление ресурсом, удерживаемым текущим `SyncLockT` объектом, если он есть.

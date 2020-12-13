@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CAtlDllModuleT Class'
 title: Класс CAtlDllModuleT
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlDllModuleT class
 ms.assetid: 351d5767-8257-4878-94be-45a85e31a72d
-ms.openlocfilehash: e0896a28c24877465213a71ac5207c537c731003
-ms.sourcegitcommit: 2bc15c5b36372ab01fa21e9bcf718fa22705814f
+ms.openlocfilehash: b6b6f87fc77187b150824fcd67fae254eb6d8f57
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82168775"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97147437"
 ---
 # <a name="catldllmodulet-class"></a>Класс CAtlDllModuleT
 
@@ -35,20 +36,20 @@ class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 ### <a name="parameters"></a>Параметры
 
 *T*<br/>
-Класс, производный `CAtlDllModuleT`от.
+Класс, производный от `CAtlDllModuleT` .
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CAtlDllModuleT:: CAtlDllModuleT](#catldllmodulet)|Конструктор.|
 |[CAtlDllModuleT:: ~ CAtlDllModuleT](#dtor)|Деструктор|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CAtlDllModuleT::D Ллканунлоаднов](#dllcanunloadnow)|Проверяет, можно ли выгрузить библиотеку DLL.|
 |[CAtlDllModuleT::D Ллжетклассобжект](#dllgetclassobject)|Возвращает фабрику класса.|
@@ -57,9 +58,9 @@ class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 |[CAtlDllModuleT::D Ллунрегистерсервер](#dllunregisterserver)|Удаляет записи в системном реестре для объектов в библиотеке DLL.|
 |[CAtlDllModuleT:: Жетклассобжект](#getclassobject)|Возвращает фабрику класса. Вызывается методом [DllGetClassObject](#dllgetclassobject).|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CAtlDllModuleT`представляет модуль для библиотеки динамической компоновки (DLL) и предоставляет функции, используемые всеми проектами DLL. Эта специализация класса [катлмодулет](../../atl/reference/catlmodulet-class.md) включает поддержку регистрации.
+`CAtlDllModuleT` представляет модуль для библиотеки динамической компоновки (DLL) и предоставляет функции, используемые всеми проектами DLL. Эта специализация класса [катлмодулет](../../atl/reference/catlmodulet-class.md) включает поддержку регистрации.
 
 Дополнительные сведения о модулях в ATL см. в разделе [Классы модулей ATL](../../atl/atl-module-classes.md).
 
@@ -77,7 +78,7 @@ class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 
 **Заголовок:** atlbase. h
 
-## <a name="catldllmoduletcatldllmodulet"></a><a name="catldllmodulet"></a>CAtlDllModuleT:: CAtlDllModuleT
+## <a name="catldllmoduletcatldllmodulet"></a><a name="catldllmodulet"></a> CAtlDllModuleT:: CAtlDllModuleT
 
 Конструктор.
 
@@ -85,7 +86,7 @@ class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 CAtlDllModuleT() throw();
 ```
 
-## <a name="catldllmoduletcatldllmodulet"></a><a name="dtor"></a>CAtlDllModuleT:: ~ CAtlDllModuleT
+## <a name="catldllmoduletcatldllmodulet"></a><a name="dtor"></a> CAtlDllModuleT:: ~ CAtlDllModuleT
 
 Деструктор
 
@@ -93,7 +94,7 @@ CAtlDllModuleT() throw();
 ~CAtlDllModuleT() throw();
 ```
 
-## <a name="catldllmoduletdllcanunloadnow"></a><a name="dllcanunloadnow"></a>CAtlDllModuleT::D Ллканунлоаднов
+## <a name="catldllmoduletdllcanunloadnow"></a><a name="dllcanunloadnow"></a> CAtlDllModuleT::D Ллканунлоаднов
 
 Проверяет, можно ли выгрузить библиотеку DLL.
 
@@ -105,7 +106,7 @@ HRESULT DllCanUnloadNow() throw();
 
 Возвращает S_OK, если библиотека DLL может быть выгружена, или S_FALSE в случае невозможности.
 
-## <a name="catldllmoduletdllgetclassobject"></a><a name="dllgetclassobject"></a>CAtlDllModuleT::D Ллжетклассобжект
+## <a name="catldllmoduletdllgetclassobject"></a><a name="dllgetclassobject"></a> CAtlDllModuleT::D Ллжетклассобжект
 
 Возвращает фабрику класса.
 
@@ -131,7 +132,7 @@ IID запрашиваемого интерфейса.
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-## <a name="catldllmoduletdllmain"></a><a name="dllmain"></a>CAtlDllModuleT::D Ллмаин
+## <a name="catldllmoduletdllmain"></a><a name="dllmain"></a> CAtlDllModuleT::D Ллмаин
 
 Необязательная точка входа в библиотеку динамической компоновки (DLL).
 
@@ -151,11 +152,11 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID /* lpReserved*/) throw();
 
 Всегда возвращает значение TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Отключение вызовов уведомлений DLL_THREAD_ATTACH и DLL_THREAD_DETACH может быть полезной оптимизацией для многопоточных приложений, которые имеют много библиотек DLL, часто создают и удаляют потоки, а библиотеки DLL не нуждаются в таких уведомлениях на уровне потока, как вложение или отсоединение.
 
-## <a name="catldllmoduletdllregisterserver"></a><a name="dllregisterserver"></a>CAtlDllModuleT::D Ллрегистерсервер
+## <a name="catldllmoduletdllregisterserver"></a><a name="dllregisterserver"></a> CAtlDllModuleT::D Ллрегистерсервер
 
 Добавляет записи в системный реестр для объектов в библиотеке DLL.
 
@@ -172,7 +173,7 @@ HRESULT DllRegisterServer(BOOL bRegTypeLib = TRUE) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-## <a name="catldllmoduletdllunregisterserver"></a><a name="dllunregisterserver"></a>CAtlDllModuleT::D Ллунрегистерсервер
+## <a name="catldllmoduletdllunregisterserver"></a><a name="dllunregisterserver"></a> CAtlDllModuleT::D Ллунрегистерсервер
 
 Удаляет записи в системном реестре для объектов в библиотеке DLL.
 
@@ -189,7 +190,7 @@ HRESULT DllUnregisterServer(BOOL bUnRegTypeLib = TRUE) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-## <a name="catldllmoduletgetclassobject"></a><a name="getclassobject"></a>CAtlDllModuleT:: Жетклассобжект
+## <a name="catldllmoduletgetclassobject"></a><a name="getclassobject"></a> CAtlDllModuleT:: Жетклассобжект
 
 Создает объект указанного идентификатора CLSID.
 
@@ -215,11 +216,11 @@ IID запрашиваемого интерфейса.
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывается методом [CAtlDllModuleT::D ллжетклассобжект](#dllgetclassobject) и включен для обеспечения обратной совместимости.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Класс Катлмодулет](../../atl/reference/catlmodulet-class.md)<br/>
 [Класс CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md)<br/>

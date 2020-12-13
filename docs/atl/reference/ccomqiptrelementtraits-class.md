@@ -1,5 +1,6 @@
 ---
-title: Класс CCom-IPtrElementTraits
+description: 'Дополнительные сведения о: Ккомкиптрелементтраитс Class'
+title: Класс Ккомкиптрелементтраитс
 ms.date: 11/04/2016
 f1_keywords:
 - CComQIPtrElementTraits
@@ -8,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComQIPtrElementTraits class
 ms.assetid: 9df9250a-5413-4362-b133-332932a597c4
-ms.openlocfilehash: 19f2669c157310be02f746672b22f6c0ed005075
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9aa96c5b926263d6ed58125a28f5d0a12d8107d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81327412"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142341"
 ---
-# <a name="ccomqiptrelementtraits-class"></a>Класс CCom-IPtrElementTraits
+# <a name="ccomqiptrelementtraits-class"></a>Класс Ккомкиптрелементтраитс
 
-Этот класс предоставляет методы, статические функции и полезные при создании коллекций указателей интерфейса COM.
+Этот класс предоставляет методы, статические функции и определения типов, полезные при создании коллекций указателей на COM-интерфейсах.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,45 +30,45 @@ class CComQIPtrElementTraits :
 
 #### <a name="parameters"></a>Параметры
 
-*Я*<br/>
-Интерфейс COM с указанием типа указателя для хранения.
+*I*<br/>
+COM-интерфейс, указывающий тип сохраняемого указателя.
 
 *пиид*<br/>
-Указатель на IID *I*.
+Указатель на идентификатор IID *I*.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
 |Имя|Описание|
 |----------|-----------------|
-|[CCom-IPtrElementTraits::INARGTYPE](#inargtype)|Тип данных для добавления элементов в объект класса сбора.|
+|[Ккомкиптрелементтраитс:: ИНАРГТИПЕ](#inargtype)|Тип данных, используемый для добавления элементов в объект класса коллекции.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот класс получает методы и обеспечивает полезную типографпри равен при создании класса коллекции объектов указатель интерфейса [CCom-IPtr](../../atl/reference/ccomqiptr-class.md) COM. Этот класс используется как [классами CInterfaceArray,](../../atl/reference/cinterfacearray-class.md) так и [CInterfaceList.](../../atl/reference/cinterfacelist-class.md)
+Этот класс наследует методы и предоставляет typedef, полезный при создании класса коллекции объектов указателя COM-интерфейса [CComQIPtr](../../atl/reference/ccomqiptr-class.md) . Этот класс используется как классами [Цинтерфацеаррай](../../atl/reference/cinterfacearray-class.md) , так и [Цинтерфацелист](../../atl/reference/cinterfacelist-class.md) .
 
-Для получения дополнительной информации, [см.](../../atl/atl-collection-classes.md)
+Дополнительные сведения см. в разделе [классы коллекций ATL](../../atl/atl-collection-classes.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
-[CDefaultCompareTraits](../../atl/reference/cdefaultcomparetraits-class.md)
+[кдефаулткомпаретраитс](../../atl/reference/cdefaultcomparetraits-class.md)
 
-[CDefaultHashTraits](../../atl/reference/cdefaulthashtraits-class.md)
+[кдефаулсаштраитс](../../atl/reference/cdefaulthashtraits-class.md)
 
-[CElementTraitsBase](../../atl/reference/celementtraitsbase-class.md)
+[целементтраитсбасе](../../atl/reference/celementtraitsbase-class.md)
 
-[CDefaultЭлементТхрытс](../../atl/reference/cdefaultelementtraits-class.md)
+[кдефаултелементтраитс](../../atl/reference/cdefaultelementtraits-class.md)
 
 `CComQIPtrElementTraits`
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlcoll.h
+**Заголовок:** атлколл. h
 
-## <a name="ccomqiptrelementtraitsinargtype"></a><a name="inargtype"></a>CCom-IPtrElementTraits::INARGTYPE
+## <a name="ccomqiptrelementtraitsinargtype"></a><a name="inargtype"></a> Ккомкиптрелементтраитс:: ИНАРГТИПЕ
 
-Тип данных для добавления элементов в объект класса сбора.
+Тип данных, используемый для добавления элементов в объект класса коллекции.
 
 ```
 typedef I* INARGTYPE;
@@ -75,5 +76,5 @@ typedef I* INARGTYPE;
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс CDefaultElementTraits](../../atl/reference/cdefaultelementtraits-class.md)<br/>
+[Класс Кдефаултелементтраитс](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)

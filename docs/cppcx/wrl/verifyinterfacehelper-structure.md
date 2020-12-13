@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура Verifyinterfacehelper-'
 title: VerifyInterfaceHelper - структура
 ms.date: 10/03/2018
 ms.topic: reference
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::VerifyInterfaceHelper structure
 - Microsoft::WRL::Details::VerifyInterfaceHelper::Verify method
 ms.assetid: ea95b641-199a-4fdf-964b-186b40cb3ba7
-ms.openlocfilehash: 09c2cc7e08e2dc0e8df42c64d285c37627c5925a
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a9b51eac55666d15b8362fc070d0feb731e9674d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374237"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135035"
 ---
 # <a name="verifyinterfacehelper-structure"></a>VerifyInterfaceHelper - структура
 
-Поддерживает инфраструктуру библиотеки шаблонов Windows Runtime C'и не предназначен айме к использованию непосредственно из кода.
+Поддерживает среда выполнения Windows инфраструктуру библиотеки шаблонов C++ и не предназначена для непосредственного использования в коде.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,20 +33,20 @@ struct VerifyInterfaceHelper<false, I>;
 
 ### <a name="parameters"></a>Параметры
 
-*Я*<br/>
+*I*<br/>
 Интерфейс для проверки.
 
-*isWinRTИнтерфейс*
+*исвинртинтерфаце*
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Проверяет, что интерфейс, указанный параметром шаблона, соответствует определенным требованиям.
+Проверяет, соответствует ли интерфейс, указанный параметром шаблона, определенным требованиям.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-methods"></a>Открытые методы
 
-Имя                                            | Описание
+name                                            | Описание
 ----------------------------------------------- | ---------------------------------------------------------------------------------------------------
 [Метод VerifyInterfaceHelper::Verify](#verify) | Проверяет, отвечает ли определенным требованиям интерфейс, заданный текущим параметром шаблона.
 
@@ -55,18 +56,18 @@ struct VerifyInterfaceHelper<false, I>;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** implements.h
+**Заголовок:** Implements. h
 
-**Пространство имен:** Microsoft:WRL::Details
+**Пространство имен:** Microsoft:: WRL::D состояния
 
-## <a name="verifyinterfacehelperverify"></a><a name="verify"></a>VerifyInterfaceHelper::Verify
+## <a name="verifyinterfacehelperverify"></a><a name="verify"></a> Verifyinterfacehelper-:: Verify
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ```cpp
 static void Verify();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Проверяет, отвечает ли определенным требованиям интерфейс, заданный текущим параметром шаблона.

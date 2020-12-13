@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: SRWLock Class'
 title: SRWLock - класс
 ms.date: 09/25/2018
 ms.topic: reference
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::SRWLock::TryLockExclusive method
 - Microsoft::WRL::Wrappers::SRWLock::TryLockShared method
 ms.assetid: 4fa250e3-5f29-4b06-ac24-61b6c04ade93
-ms.openlocfilehash: e305ad54e30455ce7c25f356c454791da0783591
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 10bc3dc700f90d5154ece1546cdf3ec464ea6e56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81377269"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135191"
 ---
 # <a name="srwlock-class"></a>SRWLock - класс
 
@@ -40,38 +41,38 @@ class SRWLock;
 
 ## <a name="remarks"></a>Remarks
 
-Тонкий замок читателя/писателя используется для синхронизации доступа между потоками к объекту или ресурсу. Для получения дополнительной [Synchronization Functions](/windows/win32/Sync/synchronization-functions)информации см.
+Упрощенная блокировка потоков чтения/записи используется для синхронизации доступа между потоками с объектом или ресурсом. Дополнительные сведения см. в разделе [функции синхронизации](/windows/win32/Sync/synchronization-functions).
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
 Имя                | Описание
 ------------------- | -------------------------------------------------------------------
-`SyncLockExclusive` | Синоним `SRWLock` объекта, приобретенного в эксклюзивном режиме.
-`SyncLockShared`    | Синоним `SRWLock` объекта, приобретенного в общем режиме.
+`SyncLockExclusive` | Синоним для `SRWLock` объекта, полученного в монопольном режиме.
+`SyncLockShared`    | Синоним для `SRWLock` объекта, полученного в режиме общего доступа.
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-Имя                                     | Описание
+name                                     | Описание
 ---------------------------------------- | --------------------------------------------------
-[SRWLock::SRWLock](#srwlock-constructor) | Инициализирует новый экземпляр класса `SRWLock`.
-[SRWLock:::](#tilde-srwlock)      | Деприиратизирует экземпляр `SRWLock` класса.
+[SRWLock:: SRWLock](#srwlock-constructor) | Инициализирует новый экземпляр класса `SRWLock`.
+[SRWLock:: ~ SRWLock](#tilde-srwlock)      | Выполняет деинициализацию экземпляра `SRWLock` класса.
 
 ### <a name="public-methods"></a>Открытые методы
 
-Имя                                           | Описание
+name                                           | Описание
 ---------------------------------------------- | -------------------------------------------------------------------------------------------------------
-[SRWLock::LockExclusive](#lockexclusive)       | Приобретает объект `SRWLock` в эксклюзивном режиме.
-[SRWLock::LockShared](#lockshared)             | Приобретает `SRWLock` объект в общем режиме.
-[SRWLock::TryLockExclusive](#trylockexclusive) | Попытки приобрести `SRWLock` объект в эксклюзивном режиме для текущего или указанного `SRWLock` объекта.
-[SRWLock::TryLockShared](#trylockshared)       | Попытки приобрести `SRWLock` объект в общем режиме `SRWLock` для текущего или указанного объекта.
+[SRWLock:: LockExclusive](#lockexclusive)       | Получает `SRWLock` объект в монопольном режиме.
+[SRWLock:: LockShared](#lockshared)             | Получает `SRWLock` объект в общем режиме.
+[SRWLock:: TryLockExclusive](#trylockexclusive) | Пытается получить `SRWLock` объект в монопольном режиме для текущего или указанного `SRWLock` объекта.
+[SRWLock:: TryLockShared](#trylockshared)       | Пытается получить `SRWLock` объект в общем режиме для текущего или указанного `SRWLock` объекта.
 
-### <a name="protected-data-member"></a>Защищенный член данных
+### <a name="protected-data-member"></a>Защищенный элемент данных
 
 Имя                                      | Описание
 ----------------------------------------- | -----------------------------------------------------------------------
-[SRWLock::SRWLock_](#srwlock-data-member) | Содержит базовую переменную блокировки для текущего `SRWLock` объекта.
+[SRWLock:: SRWLock_](#srwlock-data-member) | Содержит базовую переменную блокировки для текущего `SRWLock` объекта.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -79,21 +80,21 @@ class SRWLock;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** corewrappers.h
+**Заголовок:** кореврапперс. h
 
-**Пространство имен:** Microsoft:WRL::Wrappers
+**Пространство имен:** Программы Microsoft:: WRL:: оболочки
 
-## <a name="srwlocksrwlock"></a><a name="tilde-srwlock"></a>SRWLock:::
+## <a name="srwlocksrwlock"></a><a name="tilde-srwlock"></a> SRWLock:: ~ SRWLock
 
-Деприиратизирует экземпляр `SRWLock` класса.
+Выполняет деинициализацию экземпляра `SRWLock` класса.
 
 ```cpp
 ~SRWLock();
 ```
 
-## <a name="srwlocklockexclusive"></a><a name="lockexclusive"></a>SRWLock::LockExclusive
+## <a name="srwlocklockexclusive"></a><a name="lockexclusive"></a> SRWLock:: LockExclusive
 
-Приобретает объект `SRWLock` в эксклюзивном режиме.
+Получает `SRWLock` объект в монопольном режиме.
 
 ```cpp
 SyncLockExclusive LockExclusive();
@@ -110,11 +111,11 @@ static SyncLockExclusive LockExclusive(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Объект `SRWLock` в эксклюзивном режиме.
+`SRWLock`Объект в монопольном режиме.
 
-## <a name="srwlocklockshared"></a><a name="lockshared"></a>SRWLock::LockShared
+## <a name="srwlocklockshared"></a><a name="lockshared"></a> SRWLock:: LockShared
 
-Приобретает `SRWLock` объект в общем режиме.
+Получает `SRWLock` объект в общем режиме.
 
 ```cpp
 SyncLockShared LockShared();
@@ -131,9 +132,9 @@ static SyncLockShared LockShared(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Объект `SRWLock` в общем режиме.
+`SRWLock`Объект в общем режиме.
 
-## <a name="srwlocksrwlock"></a><a name="srwlock-constructor"></a>SRWLock::SRWLock
+## <a name="srwlocksrwlock"></a><a name="srwlock-constructor"></a> SRWLock:: SRWLock
 
 Инициализирует новый экземпляр класса `SRWLock`.
 
@@ -141,7 +142,7 @@ static SyncLockShared LockShared(
 SRWLock();
 ```
 
-## <a name="srwlocksrwlock_"></a><a name="srwlock-data-member"></a>SRWLock::SRWLock_
+## <a name="srwlocksrwlock_"></a><a name="srwlock-data-member"></a> SRWLock:: SRWLock_
 
 Содержит базовую переменную блокировки для текущего `SRWLock` объекта.
 
@@ -149,9 +150,9 @@ SRWLock();
 SRWLOCK SRWLock_;
 ```
 
-## <a name="srwlocktrylockexclusive"></a><a name="trylockexclusive"></a>SRWLock::TryLockExclusive
+## <a name="srwlocktrylockexclusive"></a><a name="trylockexclusive"></a> SRWLock:: TryLockExclusive
 
-Попытки приобрести `SRWLock` объект в эксклюзивном режиме для текущего или указанного `SRWLock` объекта. Если вызов выполняется успешно, поток вызова берет на себя ответственность за блокировку.
+Пытается получить `SRWLock` объект в монопольном режиме для текущего или указанного `SRWLock` объекта. Если вызов выполнен успешно, вызывающий поток принимает владение блокировкой.
 
 ```cpp
 SyncLockExclusive TryLockExclusive();
@@ -168,11 +169,11 @@ static SyncLockExclusive TryLockExclusive(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-В случае `SRWLock` успеха объект в эксклюзивном режиме и поток вызова берет на себя ответственность за блокировку. В противном случае `SRWLock` объект, состояние которого является недействительным.
+В случае успеха `SRWLock` объект в монопольном режиме и вызывающий поток принимает владение блокировкой. В противном случае — `SRWLock` объект, состояние которого является недопустимым.
 
-## <a name="srwlocktrylockshared"></a><a name="trylockshared"></a>SRWLock::TryLockShared
+## <a name="srwlocktrylockshared"></a><a name="trylockshared"></a> SRWLock:: TryLockShared
 
-Попытки приобрести `SRWLock` объект в общем режиме `SRWLock` для текущего или указанного объекта.
+Пытается получить `SRWLock` объект в общем режиме для текущего или указанного `SRWLock` объекта.
 
 ```cpp
 WRL_NOTHROW SyncLockShared TryLockShared();
@@ -188,4 +189,4 @@ WRL_NOTHROW static SyncLockShared TryLockShared(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-В случае `SRWLock` успеха объект в общем режиме и поток вызова берет на себя ответственность за блокировку. В противном случае `SRWLock` объект, состояние которого является недействительным.
+В случае успеха `SRWLock` объект в общем режиме и вызывающий поток принимает владение блокировкой. В противном случае — `SRWLock` объект, состояние которого является недопустимым.

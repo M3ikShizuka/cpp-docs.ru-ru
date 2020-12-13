@@ -1,5 +1,6 @@
 ---
-title: Класс CComAllocator
+description: 'Дополнительные сведения о: Ккомаллокатор Class'
+title: Класс Ккомаллокатор
 ms.date: 11/04/2016
 f1_keywords:
 - CComAllocator
@@ -10,16 +11,16 @@ f1_keywords:
 helpviewer_keywords:
 - CComAllocator class
 ms.assetid: 0cd706fd-0c7b-42d3-9054-febe2966fc8e
-ms.openlocfilehash: 165cdb8b0b16a4872214f4556c26ee141e6a4d89
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 886692f6a55ac096e51fd6888f941d63bf089263
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81321142"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97146956"
 ---
-# <a name="ccomallocator-class"></a>Класс CComAllocator
+# <a name="ccomallocator-class"></a>Класс Ккомаллокатор
 
-Этот класс предоставляет методы управления памятью с помощью процедур com памяти.
+Этот класс предоставляет методы для управления памятью с помощью подпрограмм COM-памяти.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -27,25 +28,25 @@ ms.locfileid: "81321142"
 class CComAllocator
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CComAllocator::Выделение](#allocate)|Вызовите этот статический метод для выделения памяти.|
-|[CComAllocator::Бесплатно](#free)|Вызовите этот статический метод, чтобы освободить выделенную память.|
-|[CComAllocator:Перераспределить](#reallocate)|Вызовите этот статический метод для перераспределения памяти.|
+|[Ккомаллокатор:: allocate](#allocate)|Вызовите этот статический метод, чтобы выделить память.|
+|[Ккомаллокатор:: Free](#free)|Вызовите этот статический метод, чтобы освободить выделенную память.|
+|[Ккомаллокатор:: перераспределение](#reallocate)|Вызовите этот статический метод, чтобы перераспределить память.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот класс используется [CComHeapPtr](../../atl/reference/ccomheapptr-class.md) для обеспечения процедур распределения памяти COM. Класс аналогов, [CCRTAllocator,](../../atl/reference/ccrtallocator-class.md)предоставляет те же методы, используя процедуры CRT.
+Этот класс используется [ккомхеапптр](../../atl/reference/ccomheapptr-class.md) для предоставления подпрограмм выделения памяти com. Аналогичный класс [ккрталлокатор](../../atl/reference/ccrtallocator-class.md)предоставляет те же методы, что и подпрограммы CRT.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase.h
+**Заголовок:** atlbase. h
 
-## <a name="ccomallocatorallocate"></a><a name="allocate"></a>CComAllocator::Выделение
+## <a name="ccomallocatorallocate"></a><a name="allocate"></a> Ккомаллокатор:: allocate
 
 Вызовите эту статическую функция для выделения памяти.
 
@@ -55,18 +56,18 @@ static void* Allocate(size_t nBytes) throw();
 
 ### <a name="parameters"></a>Параметры
 
-*nБайт*<br/>
+*nBytes*<br/>
 Количество байтов, которые необходимо выделить.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Возвращает указатель void на выделенное пространство или значение NULL, если памяти недостаточно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Выделяет память. Более подробную информацию можно узнать [в CoTaskMemAlloc.](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc)
+Выделяет память. Дополнительные сведения см. в разделе [CoTaskMemAlloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc) .
 
-## <a name="ccomallocatorfree"></a><a name="free"></a>CComAllocator::Бесплатно
+## <a name="ccomallocatorfree"></a><a name="free"></a> Ккомаллокатор:: Free
 
 Вызовите эту статическую функцию, чтобы освободить выделенную память.
 
@@ -76,14 +77,14 @@ static void Free(void* p) throw();
 
 ### <a name="parameters"></a>Параметры
 
-*P*<br/>
+*p*<br/>
 Указатель на выделенную область памяти.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Освобождает выделенную память. Более подробную информацию можно узнать [в CoTaskMemFree.](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree)
+Освобождает выделенную память. Дополнительные сведения см. в разделе [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) .
 
-## <a name="ccomallocatorreallocate"></a><a name="reallocate"></a>CComAllocator:Перераспределить
+## <a name="ccomallocatorreallocate"></a><a name="reallocate"></a> Ккомаллокатор:: перераспределение
 
 Вызовите эту статическую функцию для повторного выделения памяти.
 
@@ -93,22 +94,22 @@ static void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>Параметры
 
-*P*<br/>
+*p*<br/>
 Указатель на выделенную область памяти.
 
-*nБайт*<br/>
+*nBytes*<br/>
 Количество байтов, которые необходимо выделить повторно.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает пустоту указателя в выделенное пространство или NULL, если не хватает памяти
+Возвращает указатель типа void на выделенное пространство или значение NULL, если недостаточно памяти
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Изменяет объем выделенной памяти. Более подробную информацию можно узнать [в CoTaskMemRealloc.](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemrealloc)
+Изменяет объем выделенной памяти. Дополнительные сведения см. в разделе [котаскмемреаллок](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemrealloc) .
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс CComHeapPtr](../../atl/reference/ccomheapptr-class.md)<br/>
-[Класс CCRTAllocator](../../atl/reference/ccrtallocator-class.md)<br/>
+[Класс Ккомхеапптр](../../atl/reference/ccomheapptr-class.md)<br/>
+[Класс Ккрталлокатор](../../atl/reference/ccrtallocator-class.md)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: max_fixed_size классе'
 title: Класс max_fixed_size
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - stdext::max_fixed_size [C++], released
 - stdext::max_fixed_size [C++], saved
 ms.assetid: 8c8f4588-37e9-4579-8168-ba3553800914
-ms.openlocfilehash: e62884c83d71b4e9f1902fa4bc7f52f5e0a4e0ee
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 3238013547078640af42914fa21dddec622a9973
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561691"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149283"
 ---
 # <a name="max_fixed_size-class"></a>Класс max_fixed_size
 
@@ -74,7 +75,7 @@ void allocated(std::size_t _Nx = 1);
 *_Nx*\
 Значение приращения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член ничего не делает. Эта функция-член вызывается после каждого успешного вызова `cache_freelist::allocate` оператором **`new`** . Аргумент *_Nx* — число блоков памяти в блоке, выделенном оператором **`new`** .
 
@@ -91,7 +92,7 @@ void deallocated(std::size_t _Nx = 1);
 *_Nx*\
 Значение приращения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член ничего не делает. Эта функция-член вызывается после каждого вызова `cache_freelist::deallocate` оператором **`delete`** . Аргумент *_Nx* — число блоков памяти в блоке, освобожденных оператором **`delete`** .
 
@@ -107,7 +108,7 @@ bool full();
 
 **`true`**`Max <= _Nblocks`в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член вызывается `cache_freelist::deallocate`. Если вызов возвращает **`true`** , `deallocate` помещает блок памяти в свободный список; если возвращается значение false, `deallocate` вызывает оператор **`delete`** для освобождения блока.
 
@@ -119,7 +120,7 @@ bool full();
 max_fixed_size();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конструктор инициализирует сохраненное значение `_Nblocks` нулем.
 
@@ -131,7 +132,7 @@ max_fixed_size();
 void released();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Уменьшает хранимое значение `_Nblocks`. `released`Функция-член текущего [класса Max](../standard-library/allocators-header.md) вызывается при `cache_freelist::allocate` каждом удалении блока памяти из свободного списка.
 
@@ -143,10 +144,10 @@ void released();
 void saved();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член увеличивает хранимое значение `_Nblocks`. Она вызывается `cache_freelist::deallocate` каждый раз при помещении блока памяти в свободный список.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [\<allocators>](../standard-library/allocators-header.md)

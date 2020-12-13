@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о классе CHtmlView
 title: Класс CHtmlView
 ms.date: 11/04/2016
 f1_keywords:
@@ -194,12 +195,12 @@ helpviewer_keywords:
 - CHtmlView [MFC], SetWidth
 - CHtmlView [MFC], Stop
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
-ms.openlocfilehash: 9956537dbbbc34c69f6f6a6da8174ab594418386
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 2bd6b1fde083b4b14c7ce149aeaa35868bbd28b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81752658"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97143667"
 ---
 # <a name="chtmlview-class"></a>Класс CHtmlView
 
@@ -211,108 +212,108 @@ ms.locfileid: "81752658"
 class CHtmlView : public CFormView
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CHtmlView::Создание](#create)|Создает элемент управления WebBrowser.|
-|[CHtmlView::СозданиеControlSite](#createcontrolsite)|Переопределяемый класс, используемый для создания экземпляра сайта элемента управления для размещения элемента управления на форме.|
-|[CHtmlView::ExecFormsCommand](#execformscommand)|Выполняет указанную команду с помощью метода `IOleCommandTarget::Exec` .|
-|[CHtmlView::ExecWB](#execwb)|Выполняет команду.|
-|[CHtmlView::GetAddressBar](#getaddressbar)|Определяет, видима ли адресная строка объекта Internet Explorer. (Элемент управления WebBrowser игнорирует; только Internet Explorer.)|
-|[CHtmlView::GetApplication](#getapplication)|Возвращает объект приложения, который представляет приложение, содержащее текущий экземпляр приложения Internet Explorer.|
-|[CHtmlView::GetBusy](#getbusy)|Возвращает значение, указывающее на то, выполняется ли все еще скачивание или другой процесс.|
-|[CHtmlView::GetContainer](#getcontainer)|Возвращает контейнер элемента управления WebBrowser.|
-|[CHtmlView::GetFullName](#getfullname)|Извлекает полное имя, включая путь ресурса, отображаемого в веб-браузере. (Элемент управления WebBrowser игнорирует; только Internet Explorer.)|
-|[CHtmlView:GetFullScreen](#getfullscreen)|Указывает, работает ли элемент управления WebBrowser в полноэкранном режиме или в обычном режиме окна.|
-|[CHtmlView::GetHeight](#getheight)|Получает высоту главного окна Internet Explorer.|
-|[CHtmlView::GetHtmlДокумент](#gethtmldocument)|Получает активный документ HTML.|
-|[CHtmlView:GetLeft](#getleft)|Получает координату левого края главного окна Internet Explorer.|
-|[CHtmlView::GetLocationName](#getlocationname)|Получает имя ресурса, который в данный момент отображается элементом управления WebBrowser.|
-|[CHtmlView::GetLocationURL](#getlocationurl)|Получает URL-адрес ресурса, который в данный момент отображается элементом управления WebBrowser.|
-|[CHtmlView::GetMenuBar](#getmenubar)|Получает значение, указывающее, является ли строка меню видимой.|
-|[CHtmlView::GetOffline](#getoffline)|Получает значение, указывающее, находится ли элемент управления в автономном режиме.|
-|[CHtmlView::GetParentBrowser](#getparentbrowser)|Получает указатель на интерфейс `IDispatch` . Дополнительные сведения см. в разделе [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).|
-|[CHtmlView:GetProperty](#getproperty)|Возвращает текущее значение свойства, связанного с данным объектом.|
-|[CHtmlView:GetReadyState](#getreadystate)|Получает состояние готовности объекта веб-браузера.|
-|[CHtmlView::GetRegisterasBrowser](#getregisterasbrowser)|Указывает, зарегистрирован ли элемент управления WebBrowser в качестве браузера верхнего уровня для разрешения целевых имен.|
-|[CHtmlView::GetRegisterasDropTarget](#getregisterasdroptarget)|Указывает, зарегистрирован ли элемент управления WebBrowser в качестве целевого объекта перетаскивания для навигации.|
-|[CHtmlView::GetSilent](#getsilent)|Указывает, могут ли отображаться какие-либо диалоговые окна.|
-|[CHtmlView::GetSource](#getsource)|Исходный код HTML веб-страницы.|
-|[CHtmlView::GetStatusBar](#getstatusbar)|Указывает, является ли строка состояния Internet Explorer видимой. (Элемент управления WebBrowser игнорирует; только Internet Explorer.)|
-|[CHtmlView:GetTheaterMode](#gettheatermode)|Указывает, находится ли элемент управления WebBrowser в режиме театра.|
-|[CHtmlView::GetToolBar](#gettoolbar)|Получает значение, указывающее, является ли панель инструментов видимой.|
-|[CHtmlView::GetTop](#gettop)|Получает координату верхнего края главного окна Internet Explorer.|
-|[CHtmlView::GetTopLevelContainer](#gettoplevelcontainer)|Получает значение, указывающее, является ли текущий объект контейнером верхнего уровня для элемента управления WebBrowser.|
-|[CHtmlView::GetType](#gettype)|Получает имя типа объекта документа.|
-|[CHtmlView::Получить](#getvisible)|Получает значение, указывающее, является ли объект видимым или скрытым.|
-|[CHtmlView::GetWidth](#getwidth)|Получает ширину главного окна Internet Explorer.|
-|[CHtmlView::GoBack](#goback)|Переходит к предыдущему элементу в списке журнала.|
-|[CHtmlView:GoForward](#goforward)|Переходит к следующему элементу в списке журнала.|
+|[CHtmlView:: Create](#create)|Создает элемент управления WebBrowser.|
+|[CHtmlView:: Креатеконтролсите](#createcontrolsite)|Переопределяемый класс, используемый для создания экземпляра сайта элемента управления для размещения элемента управления на форме.|
+|[CHtmlView:: Ексекформскомманд](#execformscommand)|Выполняет указанную команду с помощью метода `IOleCommandTarget::Exec` .|
+|[CHtmlView:: Ексеквб](#execwb)|Выполняет команду.|
+|[CHtmlView:: Жетаддрессбар](#getaddressbar)|Определяет, видима ли адресная строка объекта Internet Explorer. (Элемент управления WebBrowser игнорирует; только Internet Explorer.)|
+|[CHtmlView:: a Application](#getapplication)|Возвращает объект приложения, который представляет приложение, содержащее текущий экземпляр приложения Internet Explorer.|
+|[CHtmlView:: Busy](#getbusy)|Возвращает значение, указывающее на то, выполняется ли все еще скачивание или другой процесс.|
+|[CHtmlView:: Contain](#getcontainer)|Возвращает контейнер элемента управления WebBrowser.|
+|[CHtmlView:: FullName](#getfullname)|Извлекает полное имя, включая путь ресурса, отображаемого в веб-браузере. (Элемент управления WebBrowser игнорирует; только Internet Explorer.)|
+|[CHtmlView:: во весь экран](#getfullscreen)|Указывает, работает ли элемент управления WebBrowser в полноэкранном режиме или в обычном режиме окна.|
+|[CHtmlView:: Height](#getheight)|Получает высоту главного окна Internet Explorer.|
+|[CHtmlView:: Жестмлдокумент](#gethtmldocument)|Получает активный документ HTML.|
+|[CHtmlView:: Left](#getleft)|Получает координату левого края главного окна Internet Explorer.|
+|[CHtmlView:: Жетлокатионнаме](#getlocationname)|Получает имя ресурса, который в данный момент отображается элементом управления WebBrowser.|
+|[CHtmlView:: Жетлокатионурл](#getlocationurl)|Получает URL-адрес ресурса, который в данный момент отображается элементом управления WebBrowser.|
+|[CHtmlView:: Жетменубар](#getmenubar)|Получает значение, указывающее, является ли строка меню видимой.|
+|[CHtmlView:: offline](#getoffline)|Получает значение, указывающее, находится ли элемент управления в автономном режиме.|
+|[CHtmlView:: Жетпарентбровсер](#getparentbrowser)|Получает указатель на интерфейс `IDispatch` . Дополнительные сведения см. в разделе [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).|
+|[CHtmlView:: Property](#getproperty)|Возвращает текущее значение свойства, связанного с данным объектом.|
+|[CHtmlView:: Жетреадистате](#getreadystate)|Получает состояние готовности объекта веб-браузера.|
+|[CHtmlView:: Жетрегистерасбровсер](#getregisterasbrowser)|Указывает, зарегистрирован ли элемент управления WebBrowser в качестве браузера верхнего уровня для разрешения целевых имен.|
+|[CHtmlView:: Жетрегистерасдроптаржет](#getregisterasdroptarget)|Указывает, зарегистрирован ли элемент управления WebBrowser в качестве целевого объекта перетаскивания для навигации.|
+|[CHtmlView:: Silent](#getsilent)|Указывает, могут ли отображаться какие-либо диалоговые окна.|
+|[CHtmlView:: \ Source](#getsource)|Исходный код HTML веб-страницы.|
+|[CHtmlView:: StatusBar](#getstatusbar)|Указывает, является ли строка состояния Internet Explorer видимой. (Элемент управления WebBrowser игнорирует; только Internet Explorer.)|
+|[CHtmlView:: Жетсеатермоде](#gettheatermode)|Указывает, находится ли элемент управления WebBrowser в режиме театра.|
+|[CHtmlView:: "панель инструментов"](#gettoolbar)|Получает значение, указывающее, является ли панель инструментов видимой.|
+|[CHtmlView:: GetTop](#gettop)|Получает координату верхнего края главного окна Internet Explorer.|
+|[CHtmlView:: Жеттоплевелконтаинер](#gettoplevelcontainer)|Получает значение, указывающее, является ли текущий объект контейнером верхнего уровня для элемента управления WebBrowser.|
+|[CHtmlView:: GetType](#gettype)|Получает имя типа объекта документа.|
+|[CHtmlView:: Visible](#getvisible)|Получает значение, указывающее, является ли объект видимым или скрытым.|
+|[CHtmlView:: полуширинные](#getwidth)|Получает ширину главного окна Internet Explorer.|
+|[CHtmlView:: GoBack](#goback)|Переходит к предыдущему элементу в списке журнала.|
+|[CHtmlView:: GoForward](#goforward)|Переходит к следующему элементу в списке журнала.|
 |[CHtmlView::GoHome](#gohome)|Переходит к текущей домашней или начальной странице.|
-|[CHtmlView::GoSearch](#gosearch)|Переходит к текущей странице поиска.|
-|[CHtmlView::LoadFromResource](#loadfromresource)|Загружает ресурс в элементе управления WebBrowser.|
-|[CHtmlView::Навигация](#navigate)|Переходит к ресурсу, определяемому URL-адресом.|
-|[CHtmlView::Навигация2](#navigate2)|Переходит к ресурсу, определяемому URL-адресом, или файлу, определяемому полным путем.|
-|[CHtmlView::OnBeforeNavigate2](#onbeforenavigate2)|Вызывается до того, как начинается переход в данном элементе управления WebBrowser (в окне или элементе набора фреймов).|
-|[CHtmlView::НаCommandStateChange](#oncommandstatechange)|Вызывается для уведомления приложения о том, что состояние выполнения команды веб-браузера изменилось.|
-|[CHtmlView:OnDocumentcomplete](#ondocumentcomplete)|Вызывается, чтобы уведомить приложение о том, что документ достиг состояния READYSTATE_COMPLETE.|
-|[CHtmlView::OnDocWindowActivate](#ondocwindowactivate)|Вызывается из реализованного в Internet Explorer или MSHTML метода [IOleInPlaceActiveObject::OnDocWindowActivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate), который уведомляет активный встроенный объект об активации или отключении окна документа контейнера.|
-|[CHtmlView::OnDownloadBegin](#ondownloadbegin)|Вызывается для уведомления приложения о том, что начинается операция перехода.|
-|[CHtmlView:OnDownloadcomplete](#ondownloadcomplete)|Вызывается, когда операция перехода закончилась, была остановлена или завершилась с ошибкой.|
-|[CHtmlView:OnenableModeless](#onenablemodeless)|Вызывается для включения или отключения безрежимных диалоговых окон, когда контейнер создает или уничтожает модальное диалоговое окно.|
-|[CHtmlView::OnFilterDataObject](#onfilterdataobject)|Вызывается Internet Explorer или MSHTML в основном приложении, чтобы разрешить ему заменить объект данных Internet Explorer или MSHTML.|
-|[CHtmlView::OnFrameWindowActivate](#onframewindowactivate)|Вызывается из [IOleInPlaceActiveObject::OnFrameWindowActivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate) , чтобы уведомить объект об активации или отключении окна фрейма верхнего уровня контейнера.|
-|[CHtmlView::OnFullscreen](#onfullscreen)|Вызывается после изменения свойства FullScreen.|
-|[CHtmlView:OnGetDropTarget](#ongetdroptarget)|Вызывается Internet Explorer или MSHTML при использовании в качестве целевого объекта перетаскивания, чтобы разрешить основному приложению предоставить альтернативный интерфейс [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget).|
-|[CHtmlView::OnGetExternal](#ongetexternal)|Вызывается Internet Explorer или MSHTML для получения интерфейса `IDispatch` основного приложения.|
-|[CHtmlView::OnGetHostinfo](#ongethostinfo)|Возвращает возможности пользовательского интерфейса основного приложения Internet Explorer или MSHTML.|
-|[CHtmlView::OnGetOptionKeypath](#ongetoptionkeypath)|Возвращает раздел реестра, в котором хранятся пользовательские настройки Internet Explorer или MSHTML.|
-|[CHtmlView:OnHideUI](#onhideui)|Вызывается при удалении меню и панелей инструментов Internet Explorer или MSHTML.|
-|[CHtmlView::OnMenuBar](#onmenubar)|Вызывается после изменения свойства MenuBar.|
-|[CHtmlView::OnNavigatecomplete2](#onnavigatecomplete2)|Вызывается после того, как выполнен переход по гиперссылке (в окне или элементе набора фреймов).|
-|[CHtmlView:OnNavigateError](#onnavigateerror)|Вызывается платформой, если переход по гиперссылке завершается ошибкой.|
-|[CHtmlView::OnNewWindow2](#onnewwindow2)|Вызывается, если для отображения ресурса должно быть создано окно.|
-|[CHtmlView::ProgressChange](#onprogresschange)|Вызывается для уведомления приложения о том, что ход операции скачивания был обновлен.|
-|[CHtmlView::OnPropertyChange](#onpropertychange)|Вызывается для уведомления приложения о том, что метод [PutProperty](#putproperty) изменил значение свойства.|
-|[CHtmlView::Onquit](#onquit)|Вызывается для уведомления приложения о том, что приложение Internet Explorer готово закрыться. (Применяется только в Internet Explorer.)|
-|[CHtmlView::OnResizeBorder](#onresizeborder)|Вызывается из реализованного в Internet Explorer или MSHTML метода [IOleInPlaceActiveObject::ResizeBorder](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder), который оповещает объект о необходимости изменить размер пространства вокруг границы.|
-|[CHtmlView::OnshowContextMenu](#onshowcontextmenu)|Вызывается из Internet Explorer или MSHTML перед отображением контекстного меню.|
-|[CHtmlView::OnshowuI](#onshowui)|Вызывается перед отображением меню и панелей инструментов в Internet Explorer или MSHTML.|
-|[CHtmlView::Onstatusbar](#onstatusbar)|Вызывается после изменения свойства StatusBar.|
-|[CHtmlView::OnstatusTextChange](#onstatustextchange)|Вызывается для уведомления приложения о том, что текст строки состояния, связанной с элементом управления WebBrowser, изменился.|
-|[CHtmlView:OnTheaterMode](#ontheatermode)|Вызывается после изменения свойства TheaterMode.|
-|[CHtmlView::OntitleChange](#ontitlechange)|Вызывается для уведомления приложения о том, что заголовок документа в элементе управления WebBrowser стал доступен или изменился.|
-|[CHtmlView::OntoolBar](#ontoolbar)|Вызывается после изменения свойства ToolBar.|
-|[CHtmlView::OnTranslateAccelerator](#ontranslateaccelerator)|Вызывается Internet Explorer или MSHTML при вызове метода [IOleInPlaceActiveObject::TranslateAccelerator](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) или [IOleControlSite::TranslateAccelerator](/windows/win32/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) для обработки сообщений об использовании сочетаний клавиш, связанных с меню, из очереди сообщений контейнера.|
-|[CHtmlView::OnTranslateUrl](#ontranslateurl)|Вызывается Internet Explorer или MSHTML, чтобы разрешить основному приложению изменять URL-адрес, который нужно загрузить.|
-|[CHtmlView::OnUpdateUI](#onupdateui)|Уведомляет основное приложение об изменении состояния команды.|
-|[CHtmlView::Видимо](#onvisible)|Вызывается, когда окно элемента управления WebBrowser должно быть показано или скрыто.|
-|[CHtmlView::PutProperty](#putproperty)|Задает значение свойства, связанного с данным объектом.|
-|[CHtmlView::КвириФормСКоманда](#queryformscommand)|Запрашивает состояние одной или нескольких команд, созданных событиями пользовательского интерфейса.|
-|[CHtmlView::Квиостав](#querystatuswb)|Запрашивает состояние команды, обрабатываемой элементом управления WebBrowser.|
-|[CHtmlView::Обновление](#refresh)|Перезагружает текущий файл.|
-|[CHtmlView::Refresh2](#refresh2)|Перезагружает текущий файл и при необходимости блокирует отправку заголовка `pragma:nocache` .|
-|[CHtmlView::SetAddressBar](#setaddressbar)|Отображает или скрывает адресную строку объекта Internet Explorer. (Элемент управления WebBrowser игнорирует; только Internet Explorer.)|
-|[CHtmlView:SetFullScreen](#setfullscreen)|Задает значение, которое указывает, работает ли элемент управления в полноэкранном режиме или в обычном режиме окна. (Элемент управления WebBrowser игнорирует; только Internet Explorer.)|
-|[CHtmlView::SetHeight](#setheight)|Задает высоту главного окна Internet Explorer.|
-|[CHtmlView:SetLeft](#setleft)|Задает положение главного окна Internet Explorer по горизонтали.|
-|[CHtmlView::SetMenuBar](#setmenubar)|Задает значение, указывающее, является ли строка меню элемента управления видимой. (Элемент управления WebBrowser игнорирует; только Internet Explorer.)|
-|[CHtmlView::SetOffline](#setoffline)|Задает значение, указывающее, находится ли элемент управления в автономном режиме.|
-|[CHtmlView::SetRegisterAsBrowser](#setregisterasbrowser)|Задает значение, которое указывает, зарегистрирован ли элемент управления WebBrowser в качестве браузера верхнего уровня для разрешения целевых имен.|
-|[CHtmlView::SetRegisterasDropTarget](#setregisterasdroptarget)|Задает значение, которое указывает, зарегистрирован ли элемент управления WebBrowser в качестве целевого объекта перетаскивания для навигации.|
-|[CHtmlView::SetSilent](#setsilent)|Задает значение, указывающее, будет ли элемент управления выводить диалоговые окна.|
-|[CHtmlView::SetStatusBar](#setstatusbar)|Задает значение, которое указывает, является ли строка состояния Internet Explorer видимой. (Элемент управления WebBrowser игнорирует; только Internet Explorer.)|
-|[CHtmlView::SetTheaterMode](#settheatermode)|Задает значение, которое указывает, находится ли элемент управления WebBrowser в режиме театра.|
-|[CHtmlView::SetToolBar](#settoolbar)|Задает значение, указывающее, является ли панель инструментов элемента управления видимой. (Элемент управления WebBrowser игнорирует; только Internet Explorer.)|
-|[CHtmlView::SetTop](#settop)|Задает положение главного окна Internet Explorer по вертикали.|
-|[CHtmlView::Установка](#setvisible)|Задает значение, указывающее, является ли объект видимым или скрытым.|
-|[CHtmlView::SetWidth](#setwidth)|Задает ширину главного окна Internet Explorer.|
-|[CHtmlView::Стоп](#stop)|Останавливает открытие файла.|
+|[CHtmlView:: Госеарч](#gosearch)|Переходит к текущей странице поиска.|
+|[CHtmlView:: Лоадфромресаурце](#loadfromresource)|Загружает ресурс в элементе управления WebBrowser.|
+|[CHtmlView:: Navigate](#navigate)|Переходит к ресурсу, определяемому URL-адресом.|
+|[CHtmlView:: Navigate2](#navigate2)|Переходит к ресурсу, определяемому URL-адресом, или файлу, определяемому полным путем.|
+|[CHtmlView:: OnBeforeNavigate2](#onbeforenavigate2)|Вызывается до того, как начинается переход в данном элементе управления WebBrowser (в окне или элементе набора фреймов).|
+|[CHtmlView:: Онкоммандстатечанже](#oncommandstatechange)|Вызывается для уведомления приложения о том, что состояние выполнения команды веб-браузера изменилось.|
+|[CHtmlView:: Ондокументкомплете](#ondocumentcomplete)|Вызывается для уведомления приложения о том, что документ достиг состояния READYSTATE_COMPLETE.|
+|[CHtmlView:: OnDocWindowActivate](#ondocwindowactivate)|Вызывается из реализованного в Internet Explorer или MSHTML метода [IOleInPlaceActiveObject::OnDocWindowActivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate), который уведомляет активный встроенный объект об активации или отключении окна документа контейнера.|
+|[CHtmlView:: Ондовнлоадбегин](#ondownloadbegin)|Вызывается для уведомления приложения о том, что начинается операция перехода.|
+|[CHtmlView:: Ондовнлоадкомплете](#ondownloadcomplete)|Вызывается, когда операция перехода закончилась, была остановлена или завершилась с ошибкой.|
+|[CHtmlView:: Оненаблемоделесс](#onenablemodeless)|Вызывается для включения или отключения безрежимных диалоговых окон, когда контейнер создает или уничтожает модальное диалоговое окно.|
+|[CHtmlView:: Онфилтердатаобжект](#onfilterdataobject)|Вызывается Internet Explorer или MSHTML в основном приложении, чтобы разрешить ему заменить объект данных Internet Explorer или MSHTML.|
+|[CHtmlView:: OnFrameWindowActivate](#onframewindowactivate)|Вызывается из [IOleInPlaceActiveObject::OnFrameWindowActivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate) , чтобы уведомить объект об активации или отключении окна фрейма верхнего уровня контейнера.|
+|[CHtmlView:: onfullscreenный режим](#onfullscreen)|Вызывается после изменения свойства FullScreen.|
+|[CHtmlView:: Онжетдроптаржет](#ongetdroptarget)|Вызывается Internet Explorer или MSHTML при использовании в качестве целевого объекта перетаскивания, чтобы разрешить основному приложению предоставить альтернативный интерфейс [IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget).|
+|[CHtmlView:: Онжетекстернал](#ongetexternal)|Вызывается Internet Explorer или MSHTML для получения интерфейса `IDispatch` основного приложения.|
+|[CHtmlView:: Онжесостинфо](#ongethostinfo)|Возвращает возможности пользовательского интерфейса основного приложения Internet Explorer или MSHTML.|
+|[CHtmlView:: Онжетоптионкэйпас](#ongetoptionkeypath)|Возвращает раздел реестра, в котором хранятся пользовательские настройки Internet Explorer или MSHTML.|
+|[CHtmlView:: Онхидеуи](#onhideui)|Вызывается при удалении меню и панелей инструментов Internet Explorer или MSHTML.|
+|[CHtmlView:: Онменубар](#onmenubar)|Вызывается после изменения свойства MenuBar.|
+|[CHtmlView:: OnNavigateComplete2](#onnavigatecomplete2)|Вызывается после того, как выполнен переход по гиперссылке (в окне или элементе набора фреймов).|
+|[CHtmlView:: Оннавигатиррор](#onnavigateerror)|Вызывается платформой, если переход по гиперссылке завершается ошибкой.|
+|[CHtmlView:: OnNewWindow2](#onnewwindow2)|Вызывается, если для отображения ресурса должно быть создано окно.|
+|[CHtmlView:: Онпрогрессчанже](#onprogresschange)|Вызывается для уведомления приложения о том, что ход операции скачивания был обновлен.|
+|[CHtmlView:: добавляется OnPropertyChange](#onpropertychange)|Вызывается для уведомления приложения о том, что метод [PutProperty](#putproperty) изменил значение свойства.|
+|[CHtmlView:: onquit](#onquit)|Вызывается для уведомления приложения о том, что приложение Internet Explorer готово закрыться. (Применяется только в Internet Explorer.)|
+|[CHtmlView:: Онресизебордер](#onresizeborder)|Вызывается из реализованного в Internet Explorer или MSHTML метода [IOleInPlaceActiveObject::ResizeBorder](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder), который оповещает объект о необходимости изменить размер пространства вокруг границы.|
+|[CHtmlView:: Оншовконтекстмену](#onshowcontextmenu)|Вызывается из Internet Explorer или MSHTML перед отображением контекстного меню.|
+|[CHtmlView:: Оншовуи](#onshowui)|Вызывается перед отображением меню и панелей инструментов в Internet Explorer или MSHTML.|
+|[CHtmlView:: onstatusbar](#onstatusbar)|Вызывается после изменения свойства StatusBar.|
+|[CHtmlView:: Онстатустекстчанже](#onstatustextchange)|Вызывается для уведомления приложения о том, что текст строки состояния, связанной с элементом управления WebBrowser, изменился.|
+|[CHtmlView:: Онсеатермоде](#ontheatermode)|Вызывается после изменения свойства TheaterMode.|
+|[CHtmlView:: Онтитлечанже](#ontitlechange)|Вызывается для уведомления приложения о том, что заголовок документа в элементе управления WebBrowser стал доступен или изменился.|
+|[CHtmlView:: ontoolbar](#ontoolbar)|Вызывается после изменения свойства ToolBar.|
+|[CHtmlView:: Онтранслатеакцелератор](#ontranslateaccelerator)|Вызывается Internet Explorer или MSHTML при вызове метода [IOleInPlaceActiveObject::TranslateAccelerator](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) или [IOleControlSite::TranslateAccelerator](/windows/win32/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) для обработки сообщений об использовании сочетаний клавиш, связанных с меню, из очереди сообщений контейнера.|
+|[CHtmlView:: Онтранслатеурл](#ontranslateurl)|Вызывается Internet Explorer или MSHTML, чтобы разрешить основному приложению изменять URL-адрес, который нужно загрузить.|
+|[CHtmlView:: Онупдатеуи](#onupdateui)|Уведомляет основное приложение об изменении состояния команды.|
+|[CHtmlView:: OnVisible](#onvisible)|Вызывается, когда окно элемента управления WebBrowser должно быть показано или скрыто.|
+|[CHtmlView::P Утпроперти](#putproperty)|Задает значение свойства, связанного с данным объектом.|
+|[CHtmlView:: Куериформскомманд](#queryformscommand)|Запрашивает состояние одной или нескольких команд, созданных событиями пользовательского интерфейса.|
+|[CHtmlView:: Куеристатусвб](#querystatuswb)|Запрашивает состояние команды, обрабатываемой элементом управления WebBrowser.|
+|[CHtmlView:: Refresh](#refresh)|Перезагружает текущий файл.|
+|[CHtmlView:: Refresh2](#refresh2)|Перезагружает текущий файл и при необходимости блокирует отправку заголовка `pragma:nocache` .|
+|[CHtmlView:: Сетаддрессбар](#setaddressbar)|Отображает или скрывает адресную строку объекта Internet Explorer. (Элемент управления WebBrowser игнорирует; только Internet Explorer.)|
+|[CHtmlView:: Сетфуллскрин](#setfullscreen)|Задает значение, которое указывает, работает ли элемент управления в полноэкранном режиме или в обычном режиме окна. (Элемент управления WebBrowser игнорирует; только Internet Explorer.)|
+|[CHtmlView:: Сесеигхт](#setheight)|Задает высоту главного окна Internet Explorer.|
+|[CHtmlView:: Сетлефт](#setleft)|Задает положение главного окна Internet Explorer по горизонтали.|
+|[CHtmlView:: Сетменубар](#setmenubar)|Задает значение, указывающее, является ли строка меню элемента управления видимой. (Элемент управления WebBrowser игнорирует; только Internet Explorer.)|
+|[CHtmlView:: Сетоффлине](#setoffline)|Задает значение, указывающее, находится ли элемент управления в автономном режиме.|
+|[CHtmlView:: Сетрегистерасбровсер](#setregisterasbrowser)|Задает значение, которое указывает, зарегистрирован ли элемент управления WebBrowser в качестве браузера верхнего уровня для разрешения целевых имен.|
+|[CHtmlView:: Сетрегистерасдроптаржет](#setregisterasdroptarget)|Задает значение, которое указывает, зарегистрирован ли элемент управления WebBrowser в качестве целевого объекта перетаскивания для навигации.|
+|[CHtmlView:: Сетсилент](#setsilent)|Задает значение, указывающее, будет ли элемент управления выводить диалоговые окна.|
+|[CHtmlView:: Сетстатусбар](#setstatusbar)|Задает значение, которое указывает, является ли строка состояния Internet Explorer видимой. (Элемент управления WebBrowser игнорирует; только Internet Explorer.)|
+|[CHtmlView:: Сетсеатермоде](#settheatermode)|Задает значение, которое указывает, находится ли элемент управления WebBrowser в режиме театра.|
+|[CHtmlView:: Сеттулбар](#settoolbar)|Задает значение, указывающее, является ли панель инструментов элемента управления видимой. (Элемент управления WebBrowser игнорирует; только Internet Explorer.)|
+|[CHtmlView:: Сеттоп](#settop)|Задает положение главного окна Internet Explorer по вертикали.|
+|[CHtmlView:: Сетвисибле](#setvisible)|Задает значение, указывающее, является ли объект видимым или скрытым.|
+|[CHtmlView:: Сетвидс](#setwidth)|Задает ширину главного окна Internet Explorer.|
+|[CHtmlView:: останавливаться](#stop)|Останавливает открытие файла.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Элемент управления WebBrowser — это окно, в котором пользователь может просматривать сайты в Интернете, а также папки в локальной файловой системе и в сети. Элемент управления WebBrowser поддерживает гиперссылки и переход по URL-адресам. Кроме того, в нем ведется список журнала.
 
@@ -363,9 +364,9 @@ class CHtmlView : public CFormView
 
 **Заголовок:** afxhtml.h
 
-## <a name="chtmlviewcreate"></a><a name="create"></a>CHtmlView::Создание
+## <a name="chtmlviewcreate"></a><a name="create"></a> CHtmlView:: Create
 
-Вызов эту функцию участника для создания элемента управления WebBrowser или контейнера для исчерпченного Internet Explorer.
+Вызовите эту функцию-член, чтобы создать элемент управления WebBrowser или контейнер для исполняемого файла Internet Explorer.
 
 ```
 virtual BOOL Create(
@@ -380,28 +381,28 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Параметры
 
-*lpszClassName*<br/>
-Указывает на строку символов с нулевым завершением, которая называет класс Windows. Имя класса может быть любым именем, зарегистрированным в глобальной функции [AfxRegisterWndClass](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) или функции `RegisterClass` Windows. Если NULL, использует предопределенные атрибуты [CFrameWnd](../../mfc/reference/cframewnd-class.md) по умолчанию.
+*лпсзкласснаме*<br/>
+Указывает на строку символов, завершающуюся нулем, которая именует класс Windows. Именем класса может быть любое имя, зарегистрированное с помощью глобальной функции [афксрегистервндкласс](../../mfc/reference/application-information-and-management.md#afxregisterwndclass) или `RegisterClass` функции Windows. Если значение равно NULL, использует стандартные атрибуты [CFrameWnd](../../mfc/reference/cframewnd-class.md) по умолчанию.
 
-*lpszWindowName*<br/>
-Указывает на строку символов с нулевым завершением, представляющую имя окна.
+*лпсзвиндовнаме*<br/>
+Указывает на строку символов, завершающуюся нулем, которая представляет имя окна.
 
-*dwStyle*<br/>
-Определяет атрибуты стиля окна. По умолчанию установлены стили WS_VISIBLE и WS_CHILD Windows.
+*двстиле*<br/>
+Задает атрибуты стиля окна. По умолчанию устанавливаются стили WS_VISIBLE и WS_CHILD Windows.
 
 *rect*<br/>
-Ссылка на структуру [RECT](/windows/win32/api/windef/ns-windef-rect) с указанием размера и положения окна. Значение *rectDefault* позволяет Windows указать размер и положение нового окна.
+Ссылка на структуру [Rect](/windows/win32/api/windef/ns-windef-rect) , указывающую размер и расположение окна. Значение *ректдефаулт* позволяет Windows указать размер и расположение нового окна.
 
-*pParentWnd*<br/>
+*ппарентвнд*<br/>
 Указатель на родительское окно элемента управления.
 
 *nID*<br/>
-Идентификационный номер представления. По умолчанию, установлен на AFX_IDW_PANE_FIRST.
+ИДЕНТИФИКАЦИОНный номер представления. По умолчанию задайте для значение AFX_IDW_PANE_FIRST.
 
 *pContext*<br/>
-Указатель на [CCreateContext](../../mfc/reference/ccreatecontext-structure.md). NULL по умолчанию.
+Указатель на [ккреатеконтекст](../../mfc/reference/ccreatecontext-structure.md). По умолчанию имеет значение NULL.
 
-## <a name="chtmlviewcreatecontrolsite"></a><a name="createcontrolsite"></a>CHtmlView::СозданиеControlSite
+## <a name="chtmlviewcreatecontrolsite"></a><a name="createcontrolsite"></a> CHtmlView:: Креатеконтролсите
 
 Переопределяемый класс, используемый для создания экземпляра сайта элемента управления для размещения элемента управления на форме.
 
@@ -416,26 +417,26 @@ virtual BOOL CreateControlSite(
 ### <a name="parameters"></a>Параметры
 
 *pContainer*<br/>
-Указатель на объект [COleControlContainer,](../../mfc/reference/colecontrolcontainer-class.md) содержащий элемент управления.
+Указатель на объект [колеконтролконтаинер](../../mfc/reference/colecontrolcontainer-class.md) , содержащий элемент управления.
 
-*ppSite*<br/>
-Указатель на указатель на объект [COleControlSite,](../../mfc/reference/colecontrolsite-class.md) обеспечивающий сайт для управления.
+*ппсите*<br/>
+Указатель на указатель на объект [колеконтролсите](../../mfc/reference/colecontrolsite-class.md) , предоставляющий сайт для элемента управления.
 
 *nID*<br/>
-Идентификатор элемента управления, который будет размещен.
+Идентификатор размещаемого элемента управления.
 
-*clsid*<br/>
-CLSID управления, который будет размещен
+*этому*<br/>
+Идентификатор CLSID размещаемого элемента управления
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Возвращает TRUE на успех, FALSE на неудачу.
+Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вы можете переопределить эту функцию участника, чтобы вернуть экземпляр вашего собственного класса сайта управления.
+Эту функцию-член можно переопределить, чтобы она возвращала экземпляр класса собственного элемента управления.
 
-## <a name="chtmlviewexecformscommand"></a><a name="execformscommand"></a>CHtmlView::ExecFormsCommand
+## <a name="chtmlviewexecformscommand"></a><a name="execformscommand"></a> CHtmlView:: Ексекформскомманд
 
 Выполняет указанную команду с помощью метода `IOleCommandTarget::Exec` .
 
@@ -448,26 +449,26 @@ HRESULT ExecFormsCommand(
 
 ### <a name="parameters"></a>Параметры
 
-*dwCommandID*<br/>
-Команда для выполнения. Эта команда должна принадлежать группе CMDSETID3_Forms3.
+*двкоммандид*<br/>
+Команда для выполнения. Эта команда должна принадлежать к группе CMDSETID3_Forms3.
 
-*pvarin*<br/>
+*пварин*<br/>
 Указатель на структуру `VARIANT`, содержащую аргументы ввода. Может иметь значение NULL.
 
-*pVarOut*<br/>
-Указатель на `VARIANT` структуру для получения вывода команд. Может иметь значение NULL.
+*пвараут*<br/>
+Указатель на `VARIANT` структуру для получения выходных данных команды. Может иметь значение NULL.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Стандартное значение HRESULT. Полный список возможных значений можно узнать в комплекте с [IOleCommandTarget::Exec](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-exec) в SDK Windows.
+Стандартное значение HRESULT. Полный список возможных значений см. в разделе [IOleCommandTarget:: Exec](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-exec) в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`ExecFormsCommand`реализует поведение метода [IOleCommandTarget::Exec.](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-exec)
+`ExecFormsCommand` реализует поведение метода [IOleCommandTarget:: Exec](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-exec) .
 
-## <a name="chtmlviewexecwb"></a><a name="execwb"></a>CHtmlView::ExecWB
+## <a name="chtmlviewexecwb"></a><a name="execwb"></a> CHtmlView:: Ексеквб
 
-Вызов эту функцию участника для выполнения команды в WebBrowser или Internet Explorer.
+Вызовите эту функцию-член для выполнения команды в WebBrowser или Internet Explorer.
 
 ```cpp
 void ExecWB(
@@ -482,22 +483,22 @@ void ExecWB(
 *cmdID*<br/>
 Команда для выполнения.
 
-*cmdexecopt*<br/>
-Параметры, установленные для выполнения команды.
+*кмдексекопт*<br/>
+Параметры, заданные для исполнения команды.
 
-*pvaIn*<br/>
-Вариант, используемый для указания аргументов ввода команды.
+*пваин*<br/>
+Вариант, используемый для указания входных аргументов команды.
 
-*pvaOut*<br/>
-Вариант, используемый для указания аргументов вывода команд.
+*пвааут*<br/>
+Вариант, используемый для указания выходных аргументов команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Смотрите [IWebBrowser2::ExecWB](/previous-versions//aa752117\(v=vs.85\)) в SDK Windows.
+См. раздел [IWebBrowser2:: ексеквб](/previous-versions//aa752117\(v=vs.85\)) в Windows SDK.
 
-## <a name="chtmlviewgetaddressbar"></a><a name="getaddressbar"></a>CHtmlView::GetAddressBar
+## <a name="chtmlviewgetaddressbar"></a><a name="getaddressbar"></a> CHtmlView:: Жетаддрессбар
 
-Вызов исчерпнивите эту функцию участника, чтобы получить адресную панель Internet Explorer.
+Вызовите эту функцию члена, чтобы получить адресную строку Internet Explorer.
 
 ```
 BOOL GetAddressBar() const;
@@ -505,15 +506,15 @@ BOOL GetAddressBar() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если адресная панель видна; в противном случае ноль.
+Ненулевое значение, если адресная строка видима; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Применяется к Internet Explorer. Если вы используете этот вызов с помощью управления WebBrowser, он не вернет ошибку, но он будет игнорировать этот вызов.
+Применяется к Internet Explorer. При использовании этого вызова с элементом управления WebBrowser он не будет возвращать ошибку, но будет игнорировать этот вызов.
 
-## <a name="chtmlviewgetapplication"></a><a name="getapplication"></a>CHtmlView::GetApplication
+## <a name="chtmlviewgetapplication"></a><a name="getapplication"></a> CHtmlView:: a Application
 
-Вызовите эту функцию участника для извлечения объекта автоматизации, поддерживаемого приложением, содержащим элемент управления WebBrowser.
+Вызовите эту функцию члена, чтобы получить объект автоматизации, поддерживаемый приложением, которое содержит элемент управления WebBrowser.
 
 ```
 LPDISPATCH GetApplication() const;
@@ -523,13 +524,13 @@ LPDISPATCH GetApplication() const;
 
 Указатель на `IDispatch` интерфейс объекта активного документа. Дополнительные сведения см. в разделе [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetbusy"></a><a name="getbusy"></a>CHtmlView::GetBusy
+## <a name="chtmlviewgetbusy"></a><a name="getbusy"></a> CHtmlView:: Busy
 
-Позвоните в эту функцию участника, чтобы определить, участвует ли элемент управления WebBrowser в навигации или операции загрузки.
+Вызовите эту функцию-член, чтобы определить, вовлечен ли элемент управления WebBrowser в операцию перехода или загрузки.
 
 ```
 BOOL GetBusy() const;
@@ -537,15 +538,15 @@ BOOL GetBusy() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если веб-браузер занят; в противном случае ноль.
+Ненулевое значение, если веб-браузер занят; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetcontainer"></a><a name="getcontainer"></a>CHtmlView::GetContainer
+## <a name="chtmlviewgetcontainer"></a><a name="getcontainer"></a> CHtmlView:: Contain
 
-Вызов эту функцию участника для извлечения объекта, который оценивает сятву в контейнер веб-браузера.
+Вызовите эту функцию-член, чтобы получить объект, который возвращает контейнер веб-браузера.
 
 ```
 LPDISPATCH GetContainer() const;
@@ -555,13 +556,13 @@ LPDISPATCH GetContainer() const;
 
 Указатель на `IDispatch` интерфейс объекта активного документа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetfullname"></a><a name="getfullname"></a>CHtmlView::GetFullName
+## <a name="chtmlviewgetfullname"></a><a name="getfullname"></a> CHtmlView:: FullName
 
-Вызов исправите эту функцию участника, чтобы получить полный путь файла, отображаемого Internet Explorer в настоящее время.
+Вызовите эту функцию-член, чтобы получить полный путь к файлу, который в данный момент отображается в Internet Explorer.
 
 ```
 CString GetFullName() const;
@@ -569,15 +570,15 @@ CString GetFullName() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Объект [CString,](../../atl-mfc-shared/reference/cstringt-class.md) содержащий путь и имя отображаемого файла. Если пути и имя `GetFullName` файла `CString`не существует, возвращаетпустое .
+Объект [CString](../../atl-mfc-shared/reference/cstringt-class.md) , содержащий путь и имя отображаемого в данный момент файла. Если путь и имя файла не существуют, `GetFullName` возвращает пустое значение `CString` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Применяется к Internet Explorer. Если вы используете этот вызов с помощью управления WebBrowser, он не вернет ошибку, но он будет игнорировать этот вызов.
+Применяется к Internet Explorer. При использовании этого вызова с элементом управления WebBrowser он не будет возвращать ошибку, но будет игнорировать этот вызов.
 
-## <a name="chtmlviewgetfullscreen"></a><a name="getfullscreen"></a>CHtmlView:GetFullScreen
+## <a name="chtmlviewgetfullscreen"></a><a name="getfullscreen"></a> CHtmlView:: во весь экран
 
-Вызовите эту функцию участника, чтобы определить, работает ли элемент управления WebBrowser в полноэкранном режиме или в обычном режиме окна.
+Вызовите эту функцию-член, чтобы определить, работает ли элемент управления WebBrowser в полноэкранном режиме или в режиме обычного окна.
 
 ```
 BOOL GetFullScreen() const;
@@ -585,17 +586,17 @@ BOOL GetFullScreen() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если WebBrowser работает в полноэкранном режиме; в противном случае ноль.
+Ненулевое значение, если браузер работает в полноэкранном режиме; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-В полноэкранном режиме, Основное окно Internet Explorer максимизируется и статус бар, панель инструментов, меню бар, и название бар скрыты.
+В полноэкранном режиме главное окно Internet Explorer разворачивается, а строка состояния, панель инструментов, строка меню и строка заголовка скрыты.
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetheight"></a><a name="getheight"></a>CHtmlView::GetHeight
+## <a name="chtmlviewgetheight"></a><a name="getheight"></a> CHtmlView:: Height
 
-Вызовите эту функцию участника, чтобы получить высоту в пикселях из окна кадра управления WebBrowser.
+Вызовите эту функцию члена, чтобы получить высоту (в пикселях) окна фрейма элемента управления WebBrowser.
 
 ```
 long GetHeight() const;
@@ -603,11 +604,11 @@ long GetHeight() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Высота окна рамы управления, в пикселях.
+Высота окна фрейма элемента управления (в пикселях).
 
-## <a name="chtmlviewgethtmldocument"></a><a name="gethtmldocument"></a>CHtmlView::GetHtmlДокумент
+## <a name="chtmlviewgethtmldocument"></a><a name="gethtmldocument"></a> CHtmlView:: Жестмлдокумент
 
-Вызовите эту функцию участника, чтобы получить HTML-документ для активного документа.
+Вызовите эту функцию-член для получения документа HTML для активного документа.
 
 ```
 LPDISPATCH GetHtmlDocument() const;
@@ -617,13 +618,13 @@ LPDISPATCH GetHtmlDocument() const;
 
 Указатель на `IDispatch` интерфейс объекта активного документа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetleft"></a><a name="getleft"></a>CHtmlView:GetLeft
+## <a name="chtmlviewgetleft"></a><a name="getleft"></a> CHtmlView:: Left
 
-Вызов эту функцию участника для получения расстояния между внутренним левым краем управления WebBrowser и левым краем контейнера.
+Вызовите эту функцию члена, чтобы получить расстояние между внутренним левым ребром элемента управления WebBrowser и левым ребром его контейнера.
 
 ```
 long GetLeft() const;
@@ -631,15 +632,15 @@ long GetLeft() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Расстояние с левым краем, в пикселях.
+Расстояние по левому краю в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetlocationname"></a><a name="getlocationname"></a>CHtmlView::GetLocationName
+## <a name="chtmlviewgetlocationname"></a><a name="getlocationname"></a> CHtmlView:: Жетлокатионнаме
 
-Вызовите эту функцию участника, чтобы получить имя ресурса, отображаемого в WebBrowser.
+Вызовите эту функцию члена, чтобы получить имя ресурса, отображаемого в WebBrowser.
 
 ```
 CString GetLocationName() const;
@@ -647,17 +648,17 @@ CString GetLocationName() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Объект [CString,](../../atl-mfc-shared/reference/cstringt-class.md) содержащий имя ресурса, в настоящее время отображаемый в WebBrowser.
+Объект [CString](../../atl-mfc-shared/reference/cstringt-class.md) , содержащий имя ресурса, отображаемого в данный момент в WebBrowser.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если ресурс является HTML-страницей во Всемирной паутине, название — это название этой страницы. Если ресурс представляет собой папку или файл в сети или локальном компьютере, то имя — ЭТО КООН или полный путь папки или файла.
+Если ресурс является HTML-страницей в Интернете, имя будет заголовком этой страницы. Если ресурс является папкой или файлом в сети или на локальном компьютере, это имя является UNC-именем или полным путем к папке или файлу.
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetlocationurl"></a><a name="getlocationurl"></a>CHtmlView::GetLocationURL
+## <a name="chtmlviewgetlocationurl"></a><a name="getlocationurl"></a> CHtmlView:: Жетлокатионурл
 
-Вызовите эту функцию участника, чтобы получить URL-адрес ресурса, который в настоящее время отображает элемент управления WebBrowser.
+Вызовите эту функцию-член, чтобы получить адрес URL ресурса, отображаемого в данный момент элементом управления WebBrowser.
 
 ```
 CString GetLocationURL() const;
@@ -665,17 +666,17 @@ CString GetLocationURL() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Объект [CString,](../../atl-mfc-shared/reference/cstringt-class.md) содержащий URL ресурса, в настоящее время отображаемый в WebBrowser.
+Объект [CString](../../atl-mfc-shared/reference/cstringt-class.md) , содержащий URL-адрес ресурса, отображаемого в данный момент в WebBrowser.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если ресурс представляет собой папку или файл в сети или локальном компьютере, то имя — ЭТО КООН или полный путь папки или файла.
+Если ресурс является папкой или файлом в сети или на локальном компьютере, это имя является UNC-именем или полным путем к папке или файлу.
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetmenubar"></a><a name="getmenubar"></a>CHtmlView::GetMenuBar
+## <a name="chtmlviewgetmenubar"></a><a name="getmenubar"></a> CHtmlView:: Жетменубар
 
-Позвоните в эту функцию участника, чтобы определить, видна ли панель меню.
+Вызовите эту функцию-член, чтобы определить, является ли строка меню видимой.
 
 ```
 BOOL GetMenuBar() const;
@@ -683,15 +684,15 @@ BOOL GetMenuBar() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если панель меню видна; в противном случае ноль.
+Ненулевое значение, если строка меню видима; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetoffline"></a><a name="getoffline"></a>CHtmlView::GetOffline
+## <a name="chtmlviewgetoffline"></a><a name="getoffline"></a> CHtmlView:: offline
 
-Позвоните в эту функцию участника, чтобы определить, работает ли веб-браузер в автономном режиме.
+Вызовите эту функцию-член, чтобы определить, работает ли браузер в автономном режиме.
 
 ```
 BOOL GetOffline() const;
@@ -699,15 +700,15 @@ BOOL GetOffline() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если веб-браузер в настоящее время в автономном режиме; в противном случае ноль.
+Ненулевое значение, если веб-браузер находится в автономном режиме; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetparentbrowser"></a><a name="getparentbrowser"></a>CHtmlView::GetParentBrowser
+## <a name="chtmlviewgetparentbrowser"></a><a name="getparentbrowser"></a> CHtmlView:: Жетпарентбровсер
 
-Вызовите эту функцию участника, чтобы получить указатель на родительский объект управления WebBrowser.
+Вызовите эту функцию-член, чтобы получить указатель на родительский объект элемента управления WebBrowser.
 
 ```
 LPDISPATCH GetParentBrowser() const;
@@ -715,15 +716,15 @@ LPDISPATCH GetParentBrowser() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на `IDispatch` интерфейс объекта, который является родителем управления WebBrowser.
+Указатель на `IDispatch` интерфейс объекта, который является родительским для элемента управления WebBrowser.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetproperty"></a><a name="getproperty"></a>CHtmlView:GetProperty
+## <a name="chtmlviewgetproperty"></a><a name="getproperty"></a> CHtmlView:: Property
 
-Вызовите эту функцию участника, чтобы получить значение свойства, в настоящее время связанного с управлением.
+Вызовите эту функцию члена, чтобы получить значение свойства, связанного с элементом управления в данный момент.
 
 ```
 BOOL GetProperty(
@@ -735,23 +736,23 @@ COleVariant GetProperty(LPCTSTR lpszProperty);
 
 ### <a name="parameters"></a>Параметры
 
-*lpszНедвижимость*<br/>
-Указатель на строку, содержащую свойство для извлечения.
+*лпсзпроперти*<br/>
+Указатель на строку, содержащую извлекаемое свойство.
 
 *strValue*<br/>
-Ссылка на объект [CString,](../../atl-mfc-shared/reference/cstringt-class.md) который получает текущую стоимость свойства.
+Ссылка на объект [CString](../../atl-mfc-shared/reference/cstringt-class.md) , который получает текущее значение свойства.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-В первой версии, ненулевой, если завершен успешно; в противном случае ноль. Во второй версии объект [COleVariant.](../../mfc/reference/colevariant-class.md)
+В первой версии, ненулевое значение, если успешно завершено; в противном случае — ноль. Во второй версии — объект [COleVariant](../../mfc/reference/colevariant-class.md) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetreadystate"></a><a name="getreadystate"></a>CHtmlView:GetReadyState
+## <a name="chtmlviewgetreadystate"></a><a name="getreadystate"></a> CHtmlView:: Жетреадистате
 
-Вызов исчерпе функции участника для получения готового состояния объекта WebBrowser.
+Вызовите эту функцию члена, чтобы получить состояние готовности объекта WebBrowser.
 
 ```
 READYSTATE GetReadyState() const;
@@ -759,15 +760,15 @@ READYSTATE GetReadyState() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Значение [READYSTATE,](/previous-versions//aa768362\(v=vs.85\)) описанное в SDK Windows.
+Значение [READYSTATE](/previous-versions//aa768362\(v=vs.85\)) , как описано в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetregisterasbrowser"></a><a name="getregisterasbrowser"></a>CHtmlView::GetRegisterasBrowser
+## <a name="chtmlviewgetregisterasbrowser"></a><a name="getregisterasbrowser"></a> CHtmlView:: Жетрегистерасбровсер
 
-Позвоните в эту функцию участника, чтобы определить, зарегистрирован ли объект WebBrowser в качестве браузера верхнего уровня для разрешения целевого имени.
+Вызовите эту функцию-член, чтобы определить, зарегистрирован ли объект WebBrowser в качестве браузера верхнего уровня для разрешения имен целевых объектов.
 
 ```
 BOOL GetRegisterAsBrowser() const;
@@ -775,15 +776,15 @@ BOOL GetRegisterAsBrowser() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если браузер зарегистрирован как браузер верхнего уровня; в противном случае ноль.
+Ненулевое значение, если браузер зарегистрирован в качестве браузера верхнего уровня; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetregisterasdroptarget"></a><a name="getregisterasdroptarget"></a>CHtmlView::GetRegisterasDropTarget
+## <a name="chtmlviewgetregisterasdroptarget"></a><a name="getregisterasdroptarget"></a> CHtmlView:: Жетрегистерасдроптаржет
 
-Позвоните в эту функцию участника, чтобы определить, зарегистрирован ли элемент управления WebBrowser в качестве цели падения для навигации.
+Вызовите эту функцию-член, чтобы определить, зарегистрирован ли элемент управления WebBrowser в качестве цели перетаскивания для навигации.
 
 ```
 BOOL GetRegisterAsDropTarget() const;
@@ -791,15 +792,15 @@ BOOL GetRegisterAsDropTarget() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если браузер зарегистрирован в качестве целевой капли; в противном случае ноль.
+Ненулевое значение, если браузер зарегистрирован в качестве цели перетаскивания; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetsilent"></a><a name="getsilent"></a>CHtmlView::GetSilent
+## <a name="chtmlviewgetsilent"></a><a name="getsilent"></a> CHtmlView:: Silent
 
-Позвоните в эту функцию участника, чтобы определить, могут ли какие-либо диалоговые коробки отображаться в управлении WebBrowser.
+Вызовите эту функцию члена, чтобы определить, можно ли отображать любые диалоговые окна в элементе управления WebBrowser.
 
 ```
 BOOL GetSilent() const;
@@ -807,15 +808,15 @@ BOOL GetSilent() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если диалоговые коробки не могут отображаться из управления WebBrowser; в противном случае ноль.
+Ненулевое значение, если диалоговые окна не могут быть отображены из элемента управления WebBrowser; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetsource"></a><a name="getsource"></a>CHtmlView::GetSource
+## <a name="chtmlviewgetsource"></a><a name="getsource"></a> CHtmlView:: \ Source
 
-Вызовите эту функцию участника, чтобы получить исходный код HTML для веб-страницы.
+Вызовите эту функцию-член, чтобы получить исходный код HTML для веб-страницы.
 
 ```
 BOOL GetSource(CString& strRef);
@@ -827,16 +828,16 @@ BOOL GetSource(CString& strRef);
 
 ### <a name="parameters"></a>Параметры
 
-*refString*<br/>
-[CString,](../../atl-mfc-shared/reference/cstringt-class.md) который будет держать исходный код.
+*рефстринг*<br/>
+Значение [CString](../../atl-mfc-shared/reference/cstringt-class.md) , которое будет содержать исходный код.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Эта функция эквивалентна команде "Источник просмотра" в Internet Explorer, за `CString`исключением того, что исходный код возвращается в .
+Эта функция эквивалентна команде "Просмотр исходного кода" в Internet Explorer, за исключением того, что исходный код возвращается в `CString` .
 
-## <a name="chtmlviewgetstatusbar"></a><a name="getstatusbar"></a>CHtmlView::GetStatusBar
+## <a name="chtmlviewgetstatusbar"></a><a name="getstatusbar"></a> CHtmlView:: StatusBar
 
-Вызовите эту функцию участника, чтобы определить, отображает ли элемент управления WebBrowser строку статуса.
+Вызовите эту функцию-член, чтобы определить, отображается ли строка состояния в элементе управления WebBrowser.
 
 ```
 BOOL GetStatusBar() const;
@@ -844,15 +845,15 @@ BOOL GetStatusBar() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если может отображаться панель статуса; в противном случае ноль.
+Ненулевое значение, если строка состояния может быть отображена; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Применяется к Internet Explorer. Если вы используете этот вызов с помощью управления WebBrowser, он не вернет ошибку, но он будет игнорировать этот вызов.
+Применяется к Internet Explorer. При использовании этого вызова с элементом управления WebBrowser он не будет возвращать ошибку, но будет игнорировать этот вызов.
 
-## <a name="chtmlviewgettheatermode"></a><a name="gettheatermode"></a>CHtmlView:GetTheaterMode
+## <a name="chtmlviewgettheatermode"></a><a name="gettheatermode"></a> CHtmlView:: Жетсеатермоде
 
-Позвоните в эту функцию участника, чтобы определить, находится ли веб-браузер в режиме театра.
+Вызовите эту функцию-член, чтобы определить, находится ли браузер в режиме театра.
 
 ```
 BOOL GetTheaterMode() const;
@@ -860,17 +861,17 @@ BOOL GetTheaterMode() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если веб-браузер находится в режиме театра; в противном случае ноль.
+Ненулевое значение, если веб-браузер находится в режиме театра; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Когда веб-браузер находится в режиме театра, основное окно браузера заполняет весь экран, появляется панель инструментов с минимальным набором навигационных инструментов, а в правом верхнем углу экрана появляется строка статуса.
+Когда веб-браузер находится в режиме театра, главное окно браузера заполняет весь экран, панель инструментов с минимальным набором средств навигации, а строка состояния отображается в правом верхнем углу экрана.
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgettoolbar"></a><a name="gettoolbar"></a>CHtmlView::GetToolBar
+## <a name="chtmlviewgettoolbar"></a><a name="gettoolbar"></a> CHtmlView:: "панель инструментов"
 
-Вызовите эту функцию участника, чтобы определить, видна ли панель инструментов.
+Вызовите эту функцию-член, чтобы определить, является ли панель инструментов видимой.
 
 ```
 int GetToolBar() const;
@@ -878,11 +879,11 @@ int GetToolBar() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Значение, указывающее на то, видна ли панель инструментов. Nonzero, если панель инструментов видна; в противном случае ноль.
+Значение, указывающее, видима ли панель инструментов. Ненулевое значение, если панель инструментов видима; в противном случае — ноль.
 
-## <a name="chtmlviewgettop"></a><a name="gettop"></a>CHtmlView::GetTop
+## <a name="chtmlviewgettop"></a><a name="gettop"></a> CHtmlView:: GetTop
 
-Вызов эту функцию участника для получения координат экрана верхнего края главного окна управления WebBrowser.
+Вызовите эту функцию члена, чтобы получить координату экрана верхнего края главного окна элемента управления WebBrowser.
 
 ```
 long GetTop() const;
@@ -890,15 +891,15 @@ long GetTop() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Адрес переменной, которая получает координаты экрана верхнего края основного окна.
+Адрес переменной, получающей экранную координату верхнего края главного окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgettoplevelcontainer"></a><a name="gettoplevelcontainer"></a>CHtmlView::GetTopLevelContainer
+## <a name="chtmlviewgettoplevelcontainer"></a><a name="gettoplevelcontainer"></a> CHtmlView:: Жеттоплевелконтаинер
 
-Позвоните в эту функцию участника, чтобы определить, является ли Internet Explorer контейнером верхнего уровня управления WebBrowser.
+Вызовите эту функцию-член, чтобы определить, является ли Internet Explorer контейнером верхнего уровня элемента управления WebBrowser.
 
 ```
 BOOL GetTopLevelContainer() const;
@@ -906,15 +907,15 @@ BOOL GetTopLevelContainer() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero контейнер верхнего уровня контейнера; в противном случае ноль.
+Ненулевое значение контейнера является контейнером верхнего уровня; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgettype"></a><a name="gettype"></a>CHtmlView::GetType
+## <a name="chtmlviewgettype"></a><a name="gettype"></a> CHtmlView:: GetType
 
-Вызовите эту функцию участника, чтобы получить имя типа содержащегося активного документа.
+Вызовите эту функцию члена, чтобы получить имя типа содержащегося активного документа.
 
 ```
 CString GetType() const;
@@ -922,15 +923,15 @@ CString GetType() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Объект [CString,](../../atl-mfc-shared/reference/cstringt-class.md) содержащий имя типа содержащегося активного документа.
+Объект [CString](../../atl-mfc-shared/reference/cstringt-class.md) , содержащий имя типа содержащегося активного документа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetvisible"></a><a name="getvisible"></a>CHtmlView::Получить
+## <a name="chtmlviewgetvisible"></a><a name="getvisible"></a> CHtmlView:: Visible
 
-Вызовите эту функцию участника, чтобы определить, виден ли содержащийся объект.
+Вызовите эту функцию-член, чтобы определить, видим ли содержащийся объект.
 
 ```
 BOOL GetVisible() const;
@@ -938,13 +939,13 @@ BOOL GetVisible() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если объект виден; в противном случае ноль.
+Ненулевое значение, если объект является видимым; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgetwidth"></a><a name="getwidth"></a>CHtmlView::GetWidth
+## <a name="chtmlviewgetwidth"></a><a name="getwidth"></a> CHtmlView:: полуширинные
 
 Получает ширину главного окна Internet Explorer.
 
@@ -954,29 +955,29 @@ long GetWidth() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Текущая ширина окна, в пикселях.
+Текущая ширина окна в пикселях.
 
-## <a name="chtmlviewgoback"></a><a name="goback"></a>CHtmlView::GoBack
+## <a name="chtmlviewgoback"></a><a name="goback"></a> CHtmlView:: GoBack
 
-Перейдите назад один элемент в списке истории.
+Переход к предыдущему элементу в списке журнала.
 
 ```cpp
 void GoBack();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgoforward"></a><a name="goforward"></a>CHtmlView:GoForward
+## <a name="chtmlviewgoforward"></a><a name="goforward"></a> CHtmlView:: GoForward
 
-Перейдите вперед один элемент в списке истории.
+Перемещение вперед одного элемента в списке журнала.
 
 ```cpp
 void GoForward();
 ```
 
-## <a name="chtmlviewgohome"></a><a name="gohome"></a>CHtmlView::GoHome
+## <a name="chtmlviewgohome"></a><a name="gohome"></a> CHtmlView:: GoHome
 
 Переходит к текущей домашней или начальной странице, указанной в диалоговом окне "Свойства браузера" в Internet Explorer или в диалоговом окне "Свойства Интернета", доступном из панели управления.
 
@@ -984,25 +985,25 @@ void GoForward();
 void GoHome();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewgosearch"></a><a name="gosearch"></a>CHtmlView::GoSearch
+## <a name="chtmlviewgosearch"></a><a name="gosearch"></a> CHtmlView:: Госеарч
 
-Переход на текущую страницу поиска, указанный в диалоговом окне Internet Explorer Options или в диалоговом окне Internet Properties, доступ к которой осуществляется с панели управления.
+Переход к текущей странице поиска, как указано в диалоговом окне Свойства обозревателя Internet Explorer или диалоговое окно свойств Интернета, доступ к которому осуществляется с помощью панели управления.
 
 ```cpp
 void GoSearch();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewloadfromresource"></a><a name="loadfromresource"></a>CHtmlView::LoadFromResource
+## <a name="chtmlviewloadfromresource"></a><a name="loadfromresource"></a> CHtmlView:: Лоадфромресаурце
 
-Вызовите эту функцию участника для загрузки указанного ресурса в управление WebBrowser.
+Вызовите эту функцию члена, чтобы загрузить указанный ресурс в элемент управления WebBrowser.
 
 ```
 BOOL LoadFromResource(LPCTSTR lpszResource);
@@ -1011,23 +1012,23 @@ BOOL LoadFromResource(UINT nRes);
 
 ### <a name="parameters"></a>Параметры
 
-*lpszРесурс*<br/>
-Указатель строки, содержащей имя ресурса для загрузки.
+*лпсзресаурце*<br/>
+Указатель на строку, содержащую имя загружаемого ресурса.
 
-*nRes*<br/>
-Идентификатор буфера, содержащий имя ресурса для загрузки.
+*нрес*<br/>
+ИДЕНТИФИКАТОР буфера, содержащего имя загружаемого ресурса.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewnavigate"></a><a name="navigate"></a>CHtmlView::Навигация
+## <a name="chtmlviewnavigate"></a><a name="navigate"></a> CHtmlView:: Navigate
 
-Вызов ими функции участника для навигации по ресурсу, идентифицированному url-адресом.
+Вызовите эту функцию-член для перехода к ресурсу, определяемому URL-адресом.
 
 ```cpp
 void Navigate(
@@ -1042,30 +1043,30 @@ void Navigate(
 ### <a name="parameters"></a>Параметры
 
 *URL-адрес*<br/>
-Строка, выделенная вызываемому, содержащая URL-адрес для навигации, или полный путь отображения файла.
+Выделенная вызывающим объектом строка, содержащая URL-адрес для перехода или полный путь к отображаемому файлу.
 
 *dwFlags*<br/>
-Флаги переменной, которая определяет, следует ли добавлять ресурс в список истории, следует ли читать или писать из кэша, и следует ли отображать ресурс в новом окне. Переменная может быть комбинацией значений, определенных [перечислением BrowserNavConstants.](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\))
+Флаги переменной, указывающие, следует ли добавить ресурс в список журнала, считывать или записывать из кэша, а также следует ли отображать ресурс в новом окне. Переменная может представлять собой сочетание значений, определенных перечислением [бровсернавконстантс](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) .
 
-*lpszTargetFrameName*<br/>
+*лпсзтаржетфраменаме*<br/>
 Указатель на строку, содержащую имя кадра, в котором отображается ресурс.
 
-*lpszHeaders*<br/>
-Указатель на значение, которое определяет заголовки HTTP для отправки на сервер. Эти заголовки добавляются в заголовки Internet Explorer по умолчанию. Заголовки могут указывать такие вещи, как действие, требуемое от сервера, тип данных, передаваемых на сервер, или код состояния. Этот параметр игнорируется, если *URL* не является URL HTTP.
+*лпсзеадерс*<br/>
+Указатель на значение, указывающее заголовки HTTP для отправки на сервер. Эти заголовки добавляются в заголовки Internet Explorer по умолчанию. Заголовки могут указывать такие вещи, как требуемое действие сервера, тип данных, передаваемых на сервер, или код состояния. Этот параметр пропускается, если *URL-адрес* не является URL-адресом HTTP.
 
-*lpvPostData*<br/>
-Указатель на данные для отправки с транзакцией HTTP POST. Например, транзакция POST используется для отправки данных, собранных в форме HTML. Если этот параметр не указывает `Navigate` какие-либо данные о публикации, выдает транзакцию HTTP GET. Этот параметр игнорируется, если *URL* не является URL HTTP.
+*лпвпостдата*<br/>
+Указатель на данные, которые необходимо отправить с помощью транзакции HTTP POST. Например, транзакция POST используется для отправки данных, собранных HTML-формой. Если этот параметр не указывает какие-либо данные POST, `Navigate` выдает транзакцию HTTP GET. Этот параметр пропускается, если *URL-адрес* не является URL-адресом HTTP.
 
-*dwPostDataLen*<br/>
-Данные для отправки с транзакцией HTTP POST. Например, транзакция POST используется для отправки данных, собранных в форме HTML. Если этот параметр не указывает `Navigate` какие-либо данные о публикации, выдает транзакцию HTTP GET. Этот параметр игнорируется, если *URL* не является URL HTTP.
+*двпостдатален*<br/>
+Данные, отправляемые с помощью транзакции HTTP POST. Например, транзакция POST используется для отправки данных, собранных HTML-формой. Если этот параметр не указывает какие-либо данные POST, `Navigate` выдает транзакцию HTTP GET. Этот параметр пропускается, если *URL-адрес* не является URL-адресом HTTP.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewnavigate2"></a><a name="navigate2"></a>CHtmlView::Навигация2
+## <a name="chtmlviewnavigate2"></a><a name="navigate2"></a> CHtmlView:: Navigate2
 
-Вызовите эту функцию участника для навигации по ресурсу, идентифицированному URL- или файлу, идентифицированному полным способом.
+Вызовите эту функцию-член для перехода к ресурсу, определяемому URL-адресом, или к файлу, определенному по полному пути.
 
 ```cpp
 void Navigate2(
@@ -1091,33 +1092,33 @@ void Navigate2(
 
 ### <a name="parameters"></a>Параметры
 
-*pIDL*<br/>
-Указатель на структуру [ITEMIDLIST.](/windows/win32/api/shtypes/ns-shtypes-itemidlist)
+*пидл*<br/>
+Указатель на структуру [итемидлист](/windows/win32/api/shtypes/ns-shtypes-itemidlist) .
 
 *dwFlags*<br/>
-Флаги переменной, которая определяет, следует ли добавлять ресурс в список истории, следует ли читать или писать из кэша, и следует ли отображать ресурс в новом окне. Переменная может быть комбинацией значений, определенных [перечислением BrowserNavConstants.](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\))
+Флаги переменной, указывающие, следует ли добавить ресурс в список журнала, считывать или записывать из кэша, а также следует ли отображать ресурс в новом окне. Переменная может представлять собой сочетание значений, определенных перечислением [бровсернавконстантс](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) .
 
-*lpszTargetFrameName*<br/>
+*лпсзтаржетфраменаме*<br/>
 Указатель на строку, содержащую имя кадра, в котором отображается ресурс.
 
-*lpszURL*<br/>
-Указатель на строку, содержащую URL.
+*лпсзурл*<br/>
+Указатель на строку, содержащую URL-адрес.
 
-*lpvPostData*<br/>
-Данные для отправки с транзакцией HTTP POST. Например, транзакция POST используется для отправки данных, собранных в форме HTML. Если этот параметр не указывает `Navigate2` какие-либо данные о публикации, выдает транзакцию HTTP GET. Этот параметр игнорируется, если *URL* не является URL HTTP или HTTPS.
+*лпвпостдата*<br/>
+Данные, отправляемые с помощью транзакции HTTP POST. Например, транзакция POST используется для отправки данных, собранных HTML-формой. Если этот параметр не указывает какие-либо данные POST, `Navigate2` выдает транзакцию HTTP GET. Этот параметр пропускается, если *URL-адрес* не является URL-адресом HTTP или HTTPS.
 
-*dwPostDataLen*<br/>
-Длина байтов данных, на которые указывает параметр *lpvPostData.*
+*двпостдатален*<br/>
+Длина данных в байтах, на которые указывает параметр *лпвпостдата* .
 
-*lpszHeaders*<br/>
-Указатель на значение, которое определяет заголовки HTTP или HTTPS для отправки на сервер. Эти заголовки добавляются в заголовки Internet Explorer по умолчанию. Заголовки могут указывать такие вещи, как действие, требуемое от сервера, тип данных, передаваемых на сервер, или код состояния. Этот параметр игнорируется, если *URL* не является URL HTTP или HTTPS.
+*лпсзеадерс*<br/>
+Указатель на значение, указывающее заголовки HTTP или HTTPS для отправки на сервер. Эти заголовки добавляются в заголовки Internet Explorer по умолчанию. Заголовки могут указывать такие вещи, как требуемое действие сервера, тип данных, передаваемых на сервер, или код состояния. Этот параметр пропускается, если *URL-адрес* не является URL-адресом HTTP или HTTPS.
 
-*baPostedData*<br/>
-Ссылка на объект [CByteArray.](../../mfc/reference/cbytearray-class.md)
+*бапостеддата*<br/>
+Ссылка на объект [CByteArray](../../mfc/reference/cbytearray-class.md) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Эта функция члена `Navigate` расширяет функцию участника, поддерживая просмотр специальных папок, таких как Desktop и My Computer, которые представлены параметром *pIDL.*
+Эта функция члена расширяет `Navigate` функцию члена путем поддержки обзора специальных папок, таких как Desktop и мой компьютер, которые представлены параметром *Пидл*.
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -1125,9 +1126,9 @@ void Navigate2(
 
 [!code-cpp[NVC_MFCHtmlHttp#7](../../mfc/reference/codesnippet/cpp/chtmlview-class_1.cpp)]
 
-## <a name="chtmlviewonbeforenavigate2"></a><a name="onbeforenavigate2"></a>CHtmlView::OnBeforeNavigate2
+## <a name="chtmlviewonbeforenavigate2"></a><a name="onbeforenavigate2"></a> CHtmlView:: OnBeforeNavigate2
 
-Эта функция элемента вызывается инфраструктурой, чтобы вызвать событие в результате срастать перед навигацией в веб-браузере.
+Эта функция-член вызывается платформой, чтобы вызвать событие перед переходом в веб-браузер.
 
 ```
 virtual void OnBeforeNavigate2(
@@ -1141,27 +1142,27 @@ virtual void OnBeforeNavigate2(
 
 ### <a name="parameters"></a>Параметры
 
-*lpszURL*<br/>
-Указатель на строку, содержащую URL для навигации.
+*лпсзурл*<br/>
+Указатель на строку, содержащую URL-адрес для перехода.
 
-*nФлаги*<br/>
-Зарезервировано для последующего использования.
+*нфлагс*<br/>
+Зарезервировано для будущего использования.
 
-*lpszTargetFrameName*<br/>
-Строка, содержащая имя кадра, в котором отображается ресурс, или NULL, если ни один указанный кадр не предназначен для ресурса.
+*лпсзтаржетфраменаме*<br/>
+Строка, содержащая имя кадра, в котором отображается ресурс, или значение NULL, если именованный фрейм не предназначен для ресурса.
 
-*baPostedData*<br/>
-Ссылка на `CByteArray` объект, содержащий данные для отправки на сервер, если транзакция HTTP POST используется.
+*бапостеддата*<br/>
+Ссылка на объект, `CByteArray` содержащий данные для отправки на сервер, если используется транзакция HTTP POST.
 
-*lpszHeaders*<br/>
-Указатель на строку, содержащую дополнительные заголовки HTTP для отправки на сервер (только URL-адреса HTTP). Заголовки могут указывать такие вещи, как действие, требуемое от сервера, тип данных, передаваемых на сервер, или код состояния.
+*лпсзеадерс*<br/>
+Указатель на строку, содержащую дополнительные заголовки HTTP для отправки на сервер (только URL-адреса HTTP). Заголовки могут указывать такие вещи, как требуемое действие сервера, тип данных, передаваемых на сервер, или код состояния.
 
-*pbОтмен*<br/>
-Указатель на флаг отмены. Приложение может установить этот параметр на ненулевой, чтобы отменить навигационную операцию, или до нуля, чтобы позволить ей продолжить.
+*пбканцел*<br/>
+Указатель на флаг отмены. Приложение может присвоить этому параметру значение ненулевой, чтобы отменить операцию навигации, или нуль, чтобы разрешить продолжение.
 
-## <a name="chtmlviewoncommandstatechange"></a><a name="oncommandstatechange"></a>CHtmlView::НаCommandStateChange
+## <a name="chtmlviewoncommandstatechange"></a><a name="oncommandstatechange"></a> CHtmlView:: Онкоммандстатечанже
 
-Эта функция элемента вызывается инфраструктурой для уведомления приложения об изменении включенного состояния команды веб-браузера.
+Эта функция-член вызывается платформой для уведомления приложения о том, что изменилось состояние команды веб-браузера.
 
 ```
 virtual void OnCommandStateChange(
@@ -1171,15 +1172,15 @@ virtual void OnCommandStateChange(
 
 ### <a name="parameters"></a>Параметры
 
-*nКоманда*<br/>
-Идентификация команды, состояние включенного которого изменилось.
+*Nвыполненная команда*<br/>
+Идентификатор команды, состояние включения которой изменилось.
 
 *bEnable*<br/>
-Включенное состояние. Этот параметр является ненулевым, если включена команда, или ноль, если она отключена.
+Включенное состояние. Этот параметр имеет ненулевое значение, если команда включена, или нуль, если она отключена.
 
-## <a name="chtmlviewondocumentcomplete"></a><a name="ondocumentcomplete"></a>CHtmlView:OnDocumentcomplete
+## <a name="chtmlviewondocumentcomplete"></a><a name="ondocumentcomplete"></a> CHtmlView:: Ондокументкомплете
 
-Эта функция члена вызывается инфраструктурой для уведомления приложения о том, что документ достиг состояния READYSTATE_COMPLETE.
+Эта функция-член вызывается платформой для уведомления приложения о том, что документ достиг состояния READYSTATE_COMPLETE.
 
 ```
 virtual void OnDocumentComplete(LPCTSTR lpszURL);
@@ -1187,18 +1188,18 @@ virtual void OnDocumentComplete(LPCTSTR lpszURL);
 
 ### <a name="parameters"></a>Параметры
 
-*lpszURL*<br/>
-Указатель на строку, которая оценивает URL, имя файла КООН или PIDL (указатель на список идентификаторов элементов), который был переориентирован.
+*лпсзурл*<br/>
+Указатель на строку, которая вычисляет URL-адрес, имя файла в формате UNC или ПИДЛ (указатель на список идентификаторов элементов), к которому был выполнен переход.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Не каждый кадр будет заготавливать это событие, но `OnDocumentComplete` каждый кадр, который запускает событие [OnDownloadBegin,](#ondownloadbegin) будет заготавливать соответствующее событие.
+Не каждый кадр запустит это событие, но каждый кадр, который запускает событие [ондовнлоадбегин](#ondownloadbegin) , запустит соответствующее `OnDocumentComplete` событие.
 
-URL-адрес, указанный *lpszURL,* может отличаться от URL-адреса, на который браузеру было сказано ориентироваться, поскольку этот URL является канонизированным и квалифицированным URL. Например, если приложение указывает URL-адрес `"www.microsoft.com"` вызова [на навигацию](#navigate) или [навигацию 2,](#navigate2)URL-адрес, пройденый `OnNavigateComplete2` будет находиться в центре вхад, будет `"<https://www.microsoft.com/>"`находиться под номером. Кроме того, если сервер перенаправил браузер на другой URL, перенаправленный URL будет отражен здесь.
+URL-адрес, указанный в *лпсзурл* , может отличаться от URL-адреса, к которому был передан браузер, поскольку этот URL-адрес является каноническим и полным URL-адресом. Например, если приложение задает URL-адрес `"www.microsoft.com"` в вызове [навигации](#navigate) или [Navigate2](#navigate2), то URL-адрес, передаваемый методом, `OnNavigateComplete2` будет иметь значение `"<https://www.microsoft.com/>"` . Кроме того, если сервер перенаправлял браузер на другой URL-адрес, перенаправленный URL-адрес будет отражен здесь.
 
-## <a name="chtmlviewondocwindowactivate"></a><a name="ondocwindowactivate"></a>CHtmlView::OnDocWindowActivate
+## <a name="chtmlviewondocwindowactivate"></a><a name="ondocwindowactivate"></a> CHtmlView:: OnDocWindowActivate
 
-Вызывается из Internet Explorer или `IOleInPlaceActiveObject::OnDocWindowActivate`MSHTML реализации , которая уведомляет активный объект на месте, когда окно документа контейнера активируется или деактивировано.
+Вызывается из реализации Internet Explorer или MSHTML `IOleInPlaceActiveObject::OnDocWindowActivate` , которая уведомляет активный объект на месте при активации или отключении окна документа контейнера.
 
 ```
 virtual HRESULT OnDocWindowActivate(BOOL fActivate);
@@ -1206,40 +1207,40 @@ virtual HRESULT OnDocWindowActivate(BOOL fActivate);
 
 ### <a name="parameters"></a>Параметры
 
-*fАктивировать*<br/>
-Указывает состояние окна документа. Если это значение ненулевое, окно активируется. Если это значение равен нулю, окно деактивируется.
+*фактивате*<br/>
+Указывает состояние окна документа. Если это значение не равно нулю, то окно активируется. Если это значение равно нулю, окно деактивируется.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK в случае успеха или в противном случае код ошибки, определяемый OLE.
+S_OK в случае успеха или код ошибки, определенный OLE, в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переутомляйте `OnDocWindowActivate` `OnDocWindowActivate` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о том, как ознакомиться с информацией, читайте в [данных IDocHostUIHandler::OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\)) в SDK Windows.
+Переопределение `OnDocWindowActivate` для реакции на `OnDocWindowActivate` уведомление от элемента управления веб-браузера Майкрософт. Дополнительные сведения см. в разделе [идочостуихандлер:: OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\)) в Windows SDK.
 
-## <a name="chtmlviewondownloadbegin"></a><a name="ondownloadbegin"></a>CHtmlView::OnDownloadBegin
+## <a name="chtmlviewondownloadbegin"></a><a name="ondownloadbegin"></a> CHtmlView:: Ондовнлоадбегин
 
-Эта функция элемента вызывается инфраструктурой для начала загрузки документа.
+Эта функция-член вызывается платформой для начала загрузки документа.
 
 ```
 virtual void OnDownloadBegin();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Это событие будет запущено вскоре после события [OnBeforeNavigate2,](#onbeforenavigate2) если только навигация не отменена. Любая анимация или "занят" указание на то, что контейнер должен отображаться, должна быть подключена к этому событию.
+Это событие срабатывает вскоре после события [OnBeforeNavigate2](#onbeforenavigate2) , если переход не будет отменен. Любая анимация или "занято" указывает, что контейнер должен быть подключен к этому событию.
 
-## <a name="chtmlviewondownloadcomplete"></a><a name="ondownloadcomplete"></a>CHtmlView:OnDownloadcomplete
+## <a name="chtmlviewondownloadcomplete"></a><a name="ondownloadcomplete"></a> CHtmlView:: Ондовнлоадкомплете
 
-Эта функция члена вызывается инфраструктурой, чтобы указать, что навигационная операция завершена, остановлена или сбой.
+Эта функция-член вызывается платформой для указания на то, что операция навигации завершена, была остановлена или завершилась ошибкой.
 
 ```
 virtual void OnDownloadComplete();
 ```
 
-## <a name="chtmlviewonenablemodeless"></a><a name="onenablemodeless"></a>CHtmlView:OnenableModeless
+## <a name="chtmlviewonenablemodeless"></a><a name="onenablemodeless"></a> CHtmlView:: Оненаблемоделесс
 
-Вызывается, когда Internet Explorer или MSHTML отображает модальный uI.
+Вызывается, когда Internet Explorer или MSHTML отображает модальный пользовательский интерфейс.
 
 ```
 virtual HRESULT OnEnableModeless(BOOL fEnable);
@@ -1247,18 +1248,18 @@ virtual HRESULT OnEnableModeless(BOOL fEnable);
 
 ### <a name="parameters"></a>Параметры
 
-*fEnable*<br/>
-Указывает, включены или отключены ли нештатные диалоговые ящики хоста. Если это значение является ненулевым, включены нештатные диалоговые будки. Если это значение равно нулю, нештатные диалоговые ящики отключены.
+*фенабле*<br/>
+Указывает, включены или отключены немодальные диалоговые окна узла. Если это значение не равно нулю, то немодальные диалоговые окна включены. Если это значение равно нулю, немодальные диалоговые окна отключаются.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK в случае успеха или в противном случае код ошибки, определяемый OLE.
+S_OK в случае успеха или код ошибки, определенный OLE, в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Включает или отсваивает бесрежимные диалоговые ящики, когда контейнер создает или разрушает модальный диалоговый ящик. Переутомляйте `OnEnableModeless` `EnableModeless` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о ней читайте в [сообщении IDocHostUIHandler::EnableModeless](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\)) в SDK Windows.
+Включает или отключает немодальные диалоговые окна, когда контейнер создает или уничтожает модальное диалоговое окно. Переопределение `OnEnableModeless` для реакции на `EnableModeless` уведомление от элемента управления веб-браузера Майкрософт. Дополнительные сведения см. в разделе [идочостуихандлер:: енаблемоделесс](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\)) в Windows SDK.
 
-## <a name="chtmlviewonfilterdataobject"></a><a name="onfilterdataobject"></a>CHtmlView::OnFilterDataObject
+## <a name="chtmlviewonfilterdataobject"></a><a name="onfilterdataobject"></a> CHtmlView:: Онфилтердатаобжект
 
 Вызывается Internet Explorer или MSHTML в основном приложении, чтобы разрешить ему заменить объект данных Internet Explorer или MSHTML.
 
@@ -1271,20 +1272,20 @@ virtual HRESULT OnFilterDataObject(
 ### <a name="parameters"></a>Параметры
 
 *pDataObject*<br/>
-Адрес интерфейса [IDataObject,](/windows/win32/api/objidl/nn-objidl-idataobject) поставляемого Internet Explorer или MSHTML.
+Адрес интерфейса [IDataObject](/windows/win32/api/objidl/nn-objidl-idataobject) , предоставляемого Internet Explorer или MSHTML.
 
-*ppDataObject*<br/>
-Адрес, который `IDataObject` получает указатель интерфейса, поставляемый хостом. Содержимое этого параметра всегда должно быть инициализировано до NULL, даже если метод не удается.
+*ппдатаобжект*<br/>
+Адрес, который получает `IDataObject` указатель интерфейса, предоставленный узлом. Содержимое этого параметра всегда должно быть инициализировано значением NULL, даже если метод завершается с ошибкой.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK, если объект данных заменен, S_FALSE, если объект данных не будет заменен, или код ошибки, определяемый OLE, если произошла ошибка.
+S_OK, если объект данных заменяется, S_FALSE, если объект данных не заменяется, или код ошибки, определенный OLE, при возникновении ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переутомляйте `OnFilterDataObject` `FilterDataObject` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о ней читайте в [сообщении IDocHostUIHandler::FilterDataObject](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\)) в SDK Windows.
+Переопределение `OnFilterDataObject` для реакции на `FilterDataObject` уведомление от элемента управления веб-браузера Майкрософт. Дополнительные сведения см. в разделе [идочостуихандлер:: филтердатаобжект](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\)) в Windows SDK.
 
-## <a name="chtmlviewonframewindowactivate"></a><a name="onframewindowactivate"></a>CHtmlView::OnFrameWindowActivate
+## <a name="chtmlviewonframewindowactivate"></a><a name="onframewindowactivate"></a> CHtmlView:: OnFrameWindowActivate
 
 Вызывается из [IOleInPlaceActiveObject::OnFrameWindowActivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate) , чтобы уведомить объект об активации или отключении окна фрейма верхнего уровня контейнера.
 
@@ -1294,20 +1295,20 @@ virtual HRESULT OnFrameWindowActivate(BOOL fActivate);
 
 ### <a name="parameters"></a>Параметры
 
-*fАктивировать*<br/>
-Указывает состояние окна рамы верхнего уровня контейнера. Если это значение ненулевое, окно активируется. Если это значение равен нулю, окно деактивируется.
+*фактивате*<br/>
+Указывает состояние окна фрейма верхнего уровня контейнера. Если это значение не равно нулю, то окно активируется. Если это значение равно нулю, окно деактивируется.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK в случае успеха или в противном случае код ошибки, определяемый OLE.
+S_OK в случае успеха или код ошибки, определенный OLE, в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переутомляйте `OnFrameWindowActivate` `OnFrameWindowActivate` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о том, как ознакомиться с информацией, читайте в [сообщении IDocHostUIHandler::OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\)) в SDK Windows.
+Переопределение `OnFrameWindowActivate` для реакции на `OnFrameWindowActivate` уведомление от элемента управления веб-браузера Майкрософт. Дополнительные сведения см. в разделе [идочостуихандлер:: OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\)) в Windows SDK.
 
-## <a name="chtmlviewonfullscreen"></a><a name="onfullscreen"></a>CHtmlView::OnFullscreen
+## <a name="chtmlviewonfullscreen"></a><a name="onfullscreen"></a> CHtmlView:: onfullscreenный режим
 
-Эта функция участника вызывается инфраструктурой при изменении свойства [FullScreen.](/previous-versions/aa752119\(v=vs.85\))
+Эта функция-член вызывается платформой при изменении свойства " [полноэкранное](/previous-versions/aa752119\(v=vs.85\)) ".
 
 ```
 virtual void OnFullScreen(BOOL bFullScreen);
@@ -1315,10 +1316,10 @@ virtual void OnFullScreen(BOOL bFullScreen);
 
 ### <a name="parameters"></a>Параметры
 
-*bFullScreen*<br/>
-Nonzero, если Internet Explorer находится в полноэкранном режиме; ноль в противном случае.
+*бфуллскрин*<br/>
+Ненулевое значение, если Internet Explorer работает в полноэкранном режиме; в противном случае — ноль.
 
-## <a name="chtmlviewongetdroptarget"></a><a name="ongetdroptarget"></a>CHtmlView:OnGetDropTarget
+## <a name="chtmlviewongetdroptarget"></a><a name="ongetdroptarget"></a> CHtmlView:: Онжетдроптаржет
 
 Вызывается Internet Explorer или MSHTML при использовании в качестве целевого объекта перетаскивания, чтобы разрешить основному приложению предоставить альтернативный интерфейс `IDropTarget`.
 
@@ -1330,21 +1331,21 @@ virtual HRESULT OnGetDropTarget(
 
 ### <a name="parameters"></a>Параметры
 
-*pDropTarget*<br/>
-[IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) Internet Explorer или MSHTML предлагает использовать.
+*пдроптаржет*<br/>
+[Интерфейс IDropTarget](/windows/win32/api/oleidl/nn-oleidl-idroptarget) Internet Explorer или MSHTML предлагает использовать.
 
-*ppDropTarget*<br/>
-`IDropTarget` Адрес, который получает `IDropTarget` указатель интерфейса, который хочет предоставить хост.
+*ппдроптаржет*<br/>
+Адрес объекта `IDropTarget` , который получает `IDropTarget` указатель интерфейса, который требуется предоставить узлу.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Смотрите [IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\)) в SDK Windows для списка кодов возврата.
+Список кодов возврата см. в разделе [идочостуихандлер:: жетдроптаржет](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\)) в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переутомляйте `OnGetDropTarget` `GetDropTarget` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о том, как получить дополнительную информацию, читайте в [сообщении IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\)) в SDK Windows.
+Переопределение `OnGetDropTarget` для реакции на `GetDropTarget` уведомление от элемента управления веб-браузера Майкрософт. Дополнительные сведения см. в разделе [идочостуихандлер:: жетдроптаржет](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\)) в Windows SDK.
 
-## <a name="chtmlviewongetexternal"></a><a name="ongetexternal"></a>CHtmlView::OnGetExternal
+## <a name="chtmlviewongetexternal"></a><a name="ongetexternal"></a> CHtmlView:: Онжетекстернал
 
 Вызывается Internet Explorer или MSHTML для получения интерфейса `IDispatch` основного приложения.
 
@@ -1354,18 +1355,18 @@ virtual HRESULT OnGetExternal(LPDISPATCH* lppDispatch);
 
 ### <a name="parameters"></a>Параметры
 
-*lppDispatch*<br/>
-Указатель на адрес, который `IDispatch` получает указатель интерфейса приложения хоста. Если хост предоставляет интерфейс автоматизации, он может предоставить ссылку на Internet Explorer или MSHTML через этот параметр. Содержимое этого параметра всегда должно быть инициализировано до NULL, даже если метод не удается.
+*лппдиспатч*<br/>
+Указатель на адрес, который получает `IDispatch` указатель интерфейса ведущего приложения. Если узел предоставляет интерфейс автоматизации, он может предоставить ссылку на Internet Explorer или MSHTML с помощью этого параметра. Содержимое этого параметра всегда должно быть инициализировано значением NULL, даже если метод завершается с ошибкой.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK в случае успеха или в противном случае код ошибки, определяемый OLE.
+S_OK в случае успеха или код ошибки, определенный OLE, в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переутомляйте `OnGetExternal` `GetExternal` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о ней читайте в [сообщении IDocHostUIHandler::GetExternal](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\)) в Windows SDK.
+Переопределение `OnGetExternal` для реакции на `GetExternal` уведомление от элемента управления веб-браузера Майкрософт. Дополнительные сведения см. в разделе [идочостуихандлер:: External](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\)) в Windows SDK.
 
-## <a name="chtmlviewongethostinfo"></a><a name="ongethostinfo"></a>CHtmlView::OnGetHostinfo
+## <a name="chtmlviewongethostinfo"></a><a name="ongethostinfo"></a> CHtmlView:: Онжесостинфо
 
 Возвращает возможности пользовательского интерфейса основного приложения Internet Explorer или MSHTML.
 
@@ -1375,20 +1376,20 @@ virtual HRESULT OnGetHostInfo(DOCHOSTUIINFO* pInfo);
 
 ### <a name="parameters"></a>Параметры
 
-*pInfo*<br/>
-Адрес структуры [DOCHOSTUIINFO,](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa770044\(v=vs.85\)) которая получает возможности uI-адреса хозяина.
+*пинфо*<br/>
+Адрес структуры [дочостуиинфо](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa770044\(v=vs.85\)) , которая получает возможности пользовательского интерфейса узла.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK в случае успеха или в противном случае код ошибки, определяемый OLE.
+S_OK в случае успеха или код ошибки, определенный OLE, в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переутомляйте `OnGetHostInfo` `GetHostInfo` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о [компании IDocHostUIHandler::GetHostInfo](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\)) в SDK Windows.
+Переопределение `OnGetHostInfo` для реакции на `GetHostInfo` уведомление от элемента управления веб-браузера Майкрософт. Дополнительные сведения см. в разделе [идочостуихандлер:: жесостинфо](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\)) в Windows SDK.
 
-## <a name="chtmlviewongetoptionkeypath"></a><a name="ongetoptionkeypath"></a>CHtmlView::OnGetOptionKeypath
+## <a name="chtmlviewongetoptionkeypath"></a><a name="ongetoptionkeypath"></a> CHtmlView:: Онжетоптионкэйпас
 
-Позвоните в эту функцию участника, чтобы получить ключ реестра, под которым Internet Explorer или MSHTML хранит пользовательские предпочтения.
+Вызовите эту функцию члена, чтобы получить раздел реестра, в котором Internet Explorer или MSHTML хранит настройки пользователя.
 
 ```
 virtual HRESULT OnGetOptionKeyPath(
@@ -1398,23 +1399,23 @@ virtual HRESULT OnGetOptionKeyPath(
 
 ### <a name="parameters"></a>Параметры
 
-*pchKey*<br/>
-`LPOLESTR` Адрес, который получает строку подключки реестра, где хост хранит свои параметры по умолчанию. Этот подключ будет находиться под HKEY_CURRENT_USER ключом. Выделите эту память с помощью [CoTaskMemAlloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc). Вызов приложение несет ответственность за освобождение этой памяти с помощью [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree). Этот параметр всегда должен быть инициализирован до NULL, даже если метод не удается.
+*пчкэй*<br/>
+Адрес `LPOLESTR` , который получает строку подраздела реестра, в которой узел хранит параметры по умолчанию. Этот подраздел будет содержать ключ HKEY_CURRENT_USER. Выделите эту память с помощью функции [CoTaskMemAlloc](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc). Вызывающее приложение отвечает за освобождение этой памяти с помощью [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree). Этот параметр всегда должен инициализироваться со значением NULL, даже если метод завершается с ошибкой.
 
-*dwReserved*<br/>
-Зарезервировано для последующего использования. В настоящий момент не используется.
+*двресервед*<br/>
+Зарезервировано для будущего использования. В настоящий момент не используется.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK, если успешно, или S_FALSE иным образом. Если S_FALSE, Internet Explorer или MSHTML будет по умолчанию для своих собственных вариантов пользователя.
+S_OK в случае успеха или S_FALSE в противном случае. Если S_FALSE, Internet Explorer или MSHTML будет по умолчанию иметь собственные параметры пользователя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переутомляйте `OnGetOptionKeyPath` `GetOptionKeyPath` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о том, как получить информацию, читайте в [фото: GetOptionKeyPath](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\)) в SDK Windows.
+Переопределение `OnGetOptionKeyPath` для реакции на `GetOptionKeyPath` уведомление от элемента управления веб-браузера Майкрософт. Дополнительные сведения см. в разделе [идочостуихандлер:: жетоптионкэйпас](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\)) в Windows SDK.
 
-## <a name="chtmlviewonhideui"></a><a name="onhideui"></a>CHtmlView:OnHideUI
+## <a name="chtmlviewonhideui"></a><a name="onhideui"></a> CHtmlView:: Онхидеуи
 
-Эта функция участника вызывается инфраструктурой, когда Internet Explorer или MSHTML удаляет свои меню и панели инструментов.
+Эта функция-член вызывается платформой, когда Internet Explorer или MSHTML удаляет свои меню и панели инструментов.
 
 ```
 virtual HRESULT OnHideUI();
@@ -1422,15 +1423,15 @@ virtual HRESULT OnHideUI();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK в случае успеха или в противном случае код ошибки, определяемый OLE.
+S_OK в случае успеха или код ошибки, определенный OLE, в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переутомляйте `OnHideUI` `HideUI` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о ней читайте в [сообщении IDocHostUIHandler::HideUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753259\(v=vs.85\)) в SDK Windows.
+Переопределение `OnHideUI` для реакции на `HideUI` уведомление от элемента управления веб-браузера Майкрософт. Дополнительные сведения см. в разделе [идочостуихандлер:: хидеуи](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753259\(v=vs.85\)) в Windows SDK.
 
-## <a name="chtmlviewonmenubar"></a><a name="onmenubar"></a>CHtmlView::OnMenuBar
+## <a name="chtmlviewonmenubar"></a><a name="onmenubar"></a> CHtmlView:: Онменубар
 
-Эта функция элемента вызывается инфраструктурой при изменении свойства [MenuBar.](/previous-versions/aa752131\(v=vs.85\))
+Эта функция-член вызывается платформой при изменении свойства [MenuBar](/previous-versions/aa752131\(v=vs.85\)) .
 
 ```
 virtual void OnMenuBar(BOOL bMenuBar);
@@ -1438,12 +1439,12 @@ virtual void OnMenuBar(BOOL bMenuBar);
 
 ### <a name="parameters"></a>Параметры
 
-*bМенюБар*<br/>
-Nonzero, если панель меню Internet Explorer видна; ноль в противном случае.
+*бменубар*<br/>
+Ненулевое значение, если строка меню Internet Explorer видима; в противном случае — ноль.
 
-## <a name="chtmlviewonnavigatecomplete2"></a><a name="onnavigatecomplete2"></a>CHtmlView::OnNavigatecomplete2
+## <a name="chtmlviewonnavigatecomplete2"></a><a name="onnavigatecomplete2"></a> CHtmlView:: OnNavigateComplete2
 
-Эта функция элемента вызывается инфраструктурой после завершения навигации к гиперссылке (либо на элементе окна или элемента набора кадров).
+Эта функция-член вызывается платформой после завершения перехода к гиперссылке (в окне или элементе набора фреймов).
 
 ```
 virtual void OnNavigateComplete2(LPCTSTR strURL);
@@ -1452,15 +1453,15 @@ virtual void OnNavigateComplete2(LPCTSTR strURL);
 ### <a name="parameters"></a>Параметры
 
 *strURL*<br/>
-Выражение строки, которое оценивает URL, имя файла КООН или PIDL (указатель на список идентификаторов элементов), по которым было переориентируется.
+Строковое выражение, результатом которого является URL-адрес, имя файла в формате UNC или ПИДЛ (указатель на список идентификаторов элементов), к которому был выполнен переход.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Параметр URL может быть PIDL в случае объекта пространства имени оболочки, для которого нет представления URL.
+Параметр URL-адреса может быть ПИДЛ в случае сущности пространства имен оболочки, для которой отсутствует представление URL-адреса.
 
-Обратите внимание, что URL, содержащийся в *strURL,* может отличаться от URL-адреса, на который браузеру было сказано ориентироваться, поскольку этот URL является канонизированным и квалифицированным URL. Например, если приложение указывает URL-адрес `"www.microsoft.com"` вызова [на навигацию](#navigate) или [навигацию 2,](#navigate2)URL-адрес, пройденый `OnNavigateComplete2` будет находиться в центре вхад, будет `"<https://www.microsoft.com/>"`находиться под номером. Кроме того, если сервер перенаправил браузер на другой URL, перенаправленный URL будет отражен здесь.
+Обратите внимание, что URL-адрес, содержащийся в *strURL* , может отличаться от URL-адреса, к которому был передан браузер, поскольку этот URL-адрес является каноническим и полным URL-адресом. Например, если приложение задает URL-адрес `"www.microsoft.com"` в вызове [навигации](#navigate) или [Navigate2](#navigate2), то URL-адрес, передаваемый методом, `OnNavigateComplete2` будет иметь значение `"<https://www.microsoft.com/>"` . Кроме того, если сервер перенаправлял браузер на другой URL-адрес, перенаправленный URL-адрес будет отражен здесь.
 
-## <a name="chtmlviewonnavigateerror"></a><a name="onnavigateerror"></a>CHtmlView:OnNavigateError
+## <a name="chtmlviewonnavigateerror"></a><a name="onnavigateerror"></a> CHtmlView:: Оннавигатиррор
 
 Вызывается платформой, если переход по гиперссылке завершается ошибкой.
 
@@ -1474,27 +1475,27 @@ virtual void OnNavigateError(
 
 ### <a name="parameters"></a>Параметры
 
-*lpszURL*<br/>
-URL-адрес, для которого навигация не удалась.
+*лпсзурл*<br/>
+URL-адрес, для которого не удалось выполнить навигацию.
 
-*lpszFrame*<br/>
-Имя кадра, в котором должен отображаться ресурс, или NULL, если ни один названный кадр не был предназначен для ресурса.
+*лпсзфраме*<br/>
+Имя кадра, в котором будет отображаться ресурс, или значение NULL, если для ресурса не назначен именованный кадр.
 
-*dwОшибка*<br/>
-Код состояния ошибки, если он доступен. Список возможных кодов статусов HRESULT и HTTP можно узнать в [коде событий NavigateError.](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768365\(v=vs.85\)).
+*дверрор*<br/>
+Код состояния ошибки, если он доступен. Список возможных кодов состояния HRESULT и HTTP см. в разделе [коды состояния событий навигатиррор.](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768365\(v=vs.85\))
 
-*pbОтмен*<br/>
-Уточняется, следует ли отменить навигацию на странице ошибки или на любой дальнейший автопоиск. Если TRUE (по умолчанию), продолжить навигацию на страницу ошибки или автопоиска; если FALSE, отменить навигацию на странице ошибки или автопоиска.
+*пбканцел*<br/>
+Указывает, следует ли отменить переход на страницу ошибки или на любой другой поиск. Если значение равно TRUE (по умолчанию), продолжайте переход на страницу ошибки или Автопоиск; Если значение равно FALSE, отменяет переход на страницу ошибки или Автопоиск.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переопределить этот метод, чтобы обеспечить обработку ошибок на пользовательской навигации.
+Переопределите этот метод, чтобы обеспечить настраиваемую обработку ошибок навигации.
 
-Для получения дополнительной информации [см. DWebBrowserEvents2::НавигацияОшибка](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768286\(v=vs.85\))
+Дополнительные сведения см. в разделе [DWebBrowserEvents2:: навигатиррор](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768286\(v=vs.85\))
 
-## <a name="chtmlviewonnewwindow2"></a><a name="onnewwindow2"></a>CHtmlView::OnNewWindow2
+## <a name="chtmlviewonnewwindow2"></a><a name="onnewwindow2"></a> CHtmlView:: OnNewWindow2
 
-Эта функция члена вызывается инфраструктурой при создании нового окна для отображения ресурса.
+Эта функция-член вызывается платформой, когда создается новое окно для отображения ресурса.
 
 ```
 virtual void OnNewWindow2(
@@ -1504,19 +1505,19 @@ virtual void OnNewWindow2(
 
 ### <a name="parameters"></a>Параметры
 
-*ppDisp*<br/>
-Указатель на указатель интерфейса, который, `IDispatch` по желанию, получает указатель интерфейса нового объекта WebBrowser или Internet Explorer.
+*ппдисп*<br/>
+Указатель на указатель интерфейса, который, при необходимости, получает `IDispatch` указатель интерфейса нового объекта WebBrowser или Internet Explorer.
 
 *Отмена*<br/>
-Указатель на флаг отмены. Приложение может установить этот параметр на ненулевой, чтобы отменить навигационную операцию, или до нуля, чтобы позволить ей продолжить.
+Указатель на флаг отмены. Приложение может присвоить этому параметру значение ненулевой, чтобы отменить операцию навигации, или нуль, чтобы разрешить продолжение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Это событие предшествует созданию нового окна из WebBrowser.
+Это событие предшествует созданию нового окна в WebBrowser.
 
-## <a name="chtmlviewonprogresschange"></a><a name="onprogresschange"></a>CHtmlView::ProgressChange
+## <a name="chtmlviewonprogresschange"></a><a name="onprogresschange"></a> CHtmlView:: Онпрогрессчанже
 
-Эта функция члена вызывается инфраструктурой для уведомления приложения об обновлении операции загрузки.
+Эта функция-член вызывается платформой для уведомления приложения о том, что ход выполнения операции загрузки обновлен.
 
 ```
 virtual void OnProgressChange(
@@ -1526,19 +1527,19 @@ virtual void OnProgressChange(
 
 ### <a name="parameters"></a>Параметры
 
-*nПрогресс*<br/>
-Сумма общего прогресса, чтобы показать, или -1, когда прогресс завершен.
+*nProgress*<br/>
+Суммарный ход выполнения для показа, или значение-1 после завершения выполнения.
 
-*nProgressMax*<br/>
-Максимальное значение прогресса.
+*нпрогрессмакс*<br/>
+Максимальное значение хода выполнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Контейнер может использовать информацию, предоставленную этим событием, для отображения количества байтов, загруженных до сих пор, или для обновления индикатора прогресса.
+Контейнер может использовать сведения, предоставляемые этим событием, для отображения количества байтов, загруженных на данный момент или для обновления индикатора хода выполнения.
 
-## <a name="chtmlviewonpropertychange"></a><a name="onpropertychange"></a>CHtmlView::OnPropertyChange
+## <a name="chtmlviewonpropertychange"></a><a name="onpropertychange"></a> CHtmlView:: добавляется OnPropertyChange
 
-Эта функция члена вызывается инфраструктурой для уведомления приложения о том, что [PutProperty](#putproperty) изменила значение свойства.
+Эта функция-член вызывается платформой для уведомления приложения, что [putproperty изменил](#putproperty) изменило значение свойства.
 
 ```
 virtual void OnPropertyChange(LPCTSTR lpszProperty);
@@ -1546,18 +1547,18 @@ virtual void OnPropertyChange(LPCTSTR lpszProperty);
 
 ### <a name="parameters"></a>Параметры
 
-*lpszНедвижимость*<br/>
-Указатель на строку, содержащую название свойства.
+*лпсзпроперти*<br/>
+Указатель на строку, содержащую имя свойства.
 
-## <a name="chtmlviewonquit"></a><a name="onquit"></a>CHtmlView::Onquit
+## <a name="chtmlviewonquit"></a><a name="onquit"></a> CHtmlView:: onquit
 
-Эта функция члена вызывается инфраструктурой для уведомления приложения о том, что приложение Internet Explorer готово к выходу из системы.
+Эта функция-член вызывается платформой для уведомления приложения о том, что приложение Internet Explorer готово к завершению работы.
 
 ```
 virtual void OnQuit();
 ```
 
-## <a name="chtmlviewonresizeborder"></a><a name="onresizeborder"></a>CHtmlView::OnResizeBorder
+## <a name="chtmlviewonresizeborder"></a><a name="onresizeborder"></a> CHtmlView:: Онресизебордер
 
 Вызывается из реализованного в Internet Explorer или MSHTML метода [IOleInPlaceActiveObject::ResizeBorder](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder), который оповещает объект о необходимости изменить размер пространства вокруг границы.
 
@@ -1570,24 +1571,24 @@ virtual HRESULT OnResizeBorder(
 
 ### <a name="parameters"></a>Параметры
 
-*prcBorder*<br/>
-Новый внешний прямоугольник для пограничного пространства.
+*пркбордер*<br/>
+Новый внешний прямоугольник для пространства границ.
 
-*pUIWindow*<br/>
-Указатель на интерфейс для объекта окна кадра или документа, граница которого изменилась.
+*пуивиндов*<br/>
+Указатель на интерфейс для объекта фрейма или окна документа, граница которого изменилась.
 
-*fFrameWindow*<br/>
-ПРАВДА, если окно кадра вызывает [IOleInPlaceActiveObject::ResizeBorder](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder), в противном случае FALSE.
+*ффрамевиндов*<br/>
+Значение TRUE, если окно фрейма вызывает [метода IOleInPlaceActiveObject:: ResizeBorder](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder); в противном случае — значение false.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK в случае успеха или в противном случае код ошибки, определяемый OLE.
+S_OK в случае успеха или код ошибки, определенный OLE, в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переутомляйте `OnResizeBorder` `ResizeBorder` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о том, как ознакомиться с информацией, читайте в [сообщении IDocHostUIHandler::ResizeBorder](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753263\(v=vs.85\)) в SDK Windows.
+Переопределение `OnResizeBorder` для реакции на `ResizeBorder` уведомление от элемента управления веб-браузера Майкрософт. Дополнительные сведения см. в разделе [идочостуихандлер:: ResizeBorder](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753263\(v=vs.85\)) в Windows SDK.
 
-## <a name="chtmlviewonshowcontextmenu"></a><a name="onshowcontextmenu"></a>CHtmlView::OnshowContextMenu
+## <a name="chtmlviewonshowcontextmenu"></a><a name="onshowcontextmenu"></a> CHtmlView:: Оншовконтекстмену
 
 Вызывается из Internet Explorer или MSHTML перед отображением контекстного меню.
 
@@ -1601,27 +1602,27 @@ virtual HRESULT OnShowContextMenu(
 
 ### <a name="parameters"></a>Параметры
 
-*dwID*<br/>
-Идентификатор отображаемого контекстного меню. Список значений можно просмотреть `IDocHostUIHandler::ShowContextMenu` в SDK Windows.
+*двид*<br/>
+Идентификатор отображаемого контекстного меню. `IDocHostUIHandler::ShowContextMenu`Список значений см. в разделе Windows SDK.
 
-*Ppt*<br/>
-Координаты экрана для меню.
+*PowerPoint*<br/>
+Экранные координаты меню.
 
-*PCmdtReserved*<br/>
-[Интерфейс IOleCommandTarget](/windows/win32/api/docobj/nn-docobj-iolecommandtarget) используется для запроса статуса команды и выполнения команд на этом объекте.
+*пкмдтресервед*<br/>
+Интерфейс [IOleCommandTarget](/windows/win32/api/docobj/nn-docobj-iolecommandtarget) , используемый для запроса состояния команды и выполнения команд для этого объекта.
 
-*pdispReserved*<br/>
-Интерфейс IDispatch объекта на экране координаты. Это позволяет хосту дифференцировать определенные объекты, чтобы обеспечить более конкретный контекст.
+*пдиспресервед*<br/>
+Интерфейс IDispatch объекта на экранных координатах. Это позволяет узлу отличать определенные объекты для предоставления более конкретного контекста.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Смотрите [IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\)) в SDK Windows для списка значений.
+Список значений см. в разделе [идочостуихандлер:: шовконтекстмену](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\)) в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переутомляйте `OnShowContextMenu` `ShowContextMenu` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о ней читайте в [сообщении IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\)) в SDK Windows.
+Переопределение `OnShowContextMenu` для реакции на `ShowContextMenu` уведомление от элемента управления веб-браузера Майкрософт. Дополнительные сведения см. в разделе [идочостуихандлер:: шовконтекстмену](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\)) в Windows SDK.
 
-## <a name="chtmlviewonshowui"></a><a name="onshowui"></a>CHtmlView::OnshowuI
+## <a name="chtmlviewonshowui"></a><a name="onshowui"></a> CHtmlView:: Оншовуи
 
 Вызывается перед отображением меню и панелей инструментов в Internet Explorer или MSHTML.
 
@@ -1636,32 +1637,32 @@ virtual HRESULT OnShowUI(
 
 ### <a name="parameters"></a>Параметры
 
-*dwID*<br/>
-Зарезервировано для последующего использования.
+*двид*<br/>
+Зарезервировано для будущего использования.
 
-*pActiveObject*<br/>
-[Интерфейс IOleInPlaceActiveObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceactiveobject) действующего объекта.
+*пактивеобжект*<br/>
+Интерфейс [метода IOleInPlaceActiveObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceactiveobject) текущего активного объекта.
 
-*pCommandTarget*<br/>
-Интерфейс объекта [IOleCommandTarget.](/windows/win32/api/docobj/nn-docobj-iolecommandtarget)
+*пкоммандтаржет*<br/>
+Интерфейс [IOleCommandTarget](/windows/win32/api/docobj/nn-docobj-iolecommandtarget) объекта.
 
-*pFrame*<br/>
-Интерфейс объекта [IOleInPlaceFrame.](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceframe) Это необходимо для меню и панели инструментов.
+*пфраме*<br/>
+Интерфейс [иолеинплацефраме](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceframe) объекта. Это необходимо для меню и панелей инструментов.
 
 *pDoc*<br/>
-[Интерфейс IOleInPlaceUIWindow](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceuiwindow) для объекта. Это необходимо для панели инструментов.
+Интерфейс [иолеинплацеуивиндов](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceuiwindow) для объекта. Это необходимо для панелей инструментов.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Смотрите [IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\)) в SDK Windows для списка значений.
+Список значений см. в разделе [идочостуихандлер:: параметра showUI задано](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\)) в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переутомляйте `OnShowUI` `ShowUI` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о ней читайте в [сообщении IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\)) в SDK Windows.
+Переопределение `OnShowUI` для реакции на `ShowUI` уведомление от элемента управления веб-браузера Майкрософт. Дополнительные сведения см. в разделе [идочостуихандлер:: параметра showUI задано](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\)) в Windows SDK.
 
-## <a name="chtmlviewonstatusbar"></a><a name="onstatusbar"></a>CHtmlView::Onstatusbar
+## <a name="chtmlviewonstatusbar"></a><a name="onstatusbar"></a> CHtmlView:: onstatusbar
 
-Эта функция участника вызывается инфраструктурой при изменении свойства [StatusBar.](/previous-versions//aa768270\(v=vs.85\))
+Эта функция-член вызывается платформой при изменении свойства [StatusBar](/previous-versions//aa768270\(v=vs.85\)) .
 
 ```
 virtual void OnStatusBar(BOOL bStatusBar);
@@ -1669,12 +1670,12 @@ virtual void OnStatusBar(BOOL bStatusBar);
 
 ### <a name="parameters"></a>Параметры
 
-*bStatusBar*<br/>
-Nonzero, если интернет-проводник статус бар виден или нуля в противном случае.
+*бстатусбар*<br/>
+Ненулевое значение, если строка состояния обозревателя Internet Explorer является видимой или в противном случае — ноль.
 
-## <a name="chtmlviewonstatustextchange"></a><a name="onstatustextchange"></a>CHtmlView::OnstatusTextChange
+## <a name="chtmlviewonstatustextchange"></a><a name="onstatustextchange"></a> CHtmlView:: Онстатустекстчанже
 
-Эта функция участника вызывается инфраструктурой для уведомления приложения об изменении текста панели статуса, связанного с управлением WebBrowser.
+Эта функция-член вызывается платформой для уведомления приложения о том, что текст строки состояния, связанной с элементом управления WebBrowser, изменился.
 
 ```
 virtual void OnStatusTextChange(LPCTSTR lpszText);
@@ -1685,9 +1686,9 @@ virtual void OnStatusTextChange(LPCTSTR lpszText);
 *lpszText*<br/>
 Строка, содержащая новый текст строки состояния.
 
-## <a name="chtmlviewontheatermode"></a><a name="ontheatermode"></a>CHtmlView:OnTheaterMode
+## <a name="chtmlviewontheatermode"></a><a name="ontheatermode"></a> CHtmlView:: Онсеатермоде
 
-Эта функция участника вызывается инфраструктурой при изменении свойства [TheaterMode.](/previous-versions/aa768273\(v=vs.85\))
+Эта функция-член вызывается платформой при изменении свойства [TheaterMode](/previous-versions/aa768273\(v=vs.85\)) .
 
 ```
 virtual void OnTheaterMode(BOOL bTheaterMode);
@@ -1695,12 +1696,12 @@ virtual void OnTheaterMode(BOOL bTheaterMode);
 
 ### <a name="parameters"></a>Параметры
 
-*bTheaterMode*<br/>
-Nonzero, если Internet Explorer находится в режиме театра; ноль в противном случае.
+*бсеатермоде*<br/>
+Ненулевое значение, если Internet Explorer находится в режиме театра; в противном случае — ноль.
 
-## <a name="chtmlviewontitlechange"></a><a name="ontitlechange"></a>CHtmlView::OntitleChange
+## <a name="chtmlviewontitlechange"></a><a name="ontitlechange"></a> CHtmlView:: Онтитлечанже
 
-Эта функция члена вызывается инфраструктурой для уведомления приложения, если название документа в управлении WebBrowser становится доступным или изменяется.
+Эта функция-член вызывается платформой для уведомления приложения, если заголовок документа в элементе управления WebBrowser становится доступным или изменяется.
 
 ```
 virtual void OnTitleChange(LPCTSTR lpszText);
@@ -1709,15 +1710,15 @@ virtual void OnTitleChange(LPCTSTR lpszText);
 ### <a name="parameters"></a>Параметры
 
 *lpszText*<br/>
-Новое название документа.
+Новый заголовок документа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Для HTML название может измениться; в то время как HTML все еще загружается, URL документа устанавливается как заголовок. После того, как реальное название (если он есть) будет разогнано из HTML, название изменяется, чтобы отразить фактическое название.
+Для HTML название может измениться. Хотя HTML по-прежнему скачивается, URL-адрес документа задается в качестве заголовка. После того как реальный заголовок (если таковой имеется) был проанализирован из HTML, заголовок изменяется в соответствии с фактическим названием.
 
-## <a name="chtmlviewontoolbar"></a><a name="ontoolbar"></a>CHtmlView::OntoolBar
+## <a name="chtmlviewontoolbar"></a><a name="ontoolbar"></a> CHtmlView:: ontoolbar
 
-Эта функция члена вызывается инфраструктурой при изменении свойства [панели инструментов.](/previous-versions/aa768274\(v=vs.85\))
+Эта функция-член вызывается платформой при изменении свойства [Toolbar](/previous-versions/aa768274\(v=vs.85\)) .
 
 ```
 virtual void OnToolBar(BOOL bToolBar);
@@ -1725,10 +1726,10 @@ virtual void OnToolBar(BOOL bToolBar);
 
 ### <a name="parameters"></a>Параметры
 
-*bToolBar*<br/>
-Nonzero, если панель инструментов Internet Explorer видна или равна нулю в противном случае.
+*бтулбар*<br/>
+Ненулевое значение, если панель инструментов Internet Explorer является видимой или в противном случае — ноль.
 
-## <a name="chtmlviewontranslateaccelerator"></a><a name="ontranslateaccelerator"></a>CHtmlView::OnTranslateAccelerator
+## <a name="chtmlviewontranslateaccelerator"></a><a name="ontranslateaccelerator"></a> CHtmlView:: Онтранслатеакцелератор
 
 Вызывается Internet Explorer или MSHTML при вызове метода [IOleInPlaceActiveObject::TranslateAccelerator](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) или [IOleControlSite::TranslateAccelerator](/windows/win32/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) для обработки сообщений об использовании сочетаний клавиш, связанных с меню, из очереди сообщений контейнера.
 
@@ -1741,24 +1742,24 @@ virtual HRESULT OnTranslateAccelerator(
 
 ### <a name="parameters"></a>Параметры
 
-*lpMsg*<br/>
+*лпмсг*<br/>
 Указывает на сообщение, которое может потребоваться перевести.
 
-*pguidCmdGroup*<br/>
-Идентификатор группы командования.
+*пгуидкмдграуп*<br/>
+Идентификатор группы команд.
 
-*nCmdID*<br/>
+*нкмдид*<br/>
 Идентификатор команды.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK, если успешно, или S_FALSE иным образом.
+S_OK в случае успеха или S_FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переутомляйте `OnTranslateAccelerator` `TranslateAccelerator` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о ней читайте в фотоэлектронном фото [iDocHostUIHandler::TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\)) в SDK Windows.
+Переопределение `OnTranslateAccelerator` для реакции на `TranslateAccelerator` уведомление от элемента управления веб-браузера Майкрософт. Дополнительные сведения см. в разделе [идочостуихандлер:: TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\)) в Windows SDK.
 
-## <a name="chtmlviewontranslateurl"></a><a name="ontranslateurl"></a>CHtmlView::OnTranslateUrl
+## <a name="chtmlviewontranslateurl"></a><a name="ontranslateurl"></a> CHtmlView:: Онтранслатеурл
 
 Вызывается Internet Explorer или MSHTML, чтобы разрешить основному приложению изменять URL-адрес, который нужно загрузить.
 
@@ -1771,24 +1772,24 @@ virtual HRESULT OnTranslateUrl(
 
 ### <a name="parameters"></a>Параметры
 
-*dwПеревод*<br/>
-Зарезервировано для последующего использования.
+*двтранслате*<br/>
+Зарезервировано для будущего использования.
 
-*pchURLIn*<br/>
-Адрес строки, поставляемой Internet Explorer или MSHTML, которая представляет URL для перевода.
+*пчурлин*<br/>
+Адрес строки, предоставляемой Internet Explorer или MSHTML, которая представляет URL-адрес для перевода.
 
-*ppchURLOut*<br/>
-Адрес указателя строки, который получает адрес переведенного URL. Хост выделяет буфер с помощью распределителя памяти задачи. Содержимое этого параметра всегда должно быть инициализировано до NULL, даже если URL не переведен или метод не переведен.
+*ппчурлаут*<br/>
+Адрес указателя строки, который получает адрес переведенного URL-адреса. Узел выделяет буфер с помощью распределителя памяти задачи. Содержимое этого параметра всегда должно быть инициализировано значением NULL, даже если URL-адрес не переведен или метод завершается ошибкой.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-`S_OK`если URL был переведен, S_FALSE если URL не был переведен, или код ошибки, определяемый OLE, если произошла ошибка.
+`S_OK` Если URL-адрес был переведен, S_FALSE, если URL-адрес не был преобразован, или код ошибки, определенный OLE, если произошла ошибка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Переутомляйте `OnTranslateUrl` `TranslateUrl` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о ней читайте в [сообщении IDocHostUIHandler::TranslateUrl](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\)) в SDK Windows.
+Переопределение `OnTranslateUrl` для реакции на `TranslateUrl` уведомление от элемента управления веб-браузера Майкрософт. Дополнительные сведения см. в разделе [идочостуихандлер:: транслатеурл](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\)) в Windows SDK.
 
-## <a name="chtmlviewonupdateui"></a><a name="onupdateui"></a>CHtmlView::OnUpdateUI
+## <a name="chtmlviewonupdateui"></a><a name="onupdateui"></a> CHtmlView:: Онупдатеуи
 
 Уведомляет основное приложение об изменении состояния команды.
 
@@ -1798,15 +1799,15 @@ virtual HRESULT OnUpdateUI();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-S_OK в случае успеха или в противном случае код ошибки, определяемый OLE.
+S_OK в случае успеха или код ошибки, определенный OLE, в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Хост должен обновить состояние кнопок панели инструментов. Этот метод вызывается независимо от `ShowUI`значения возврата от . Переутомляйте `OnUpdateUI` `UpdateUI` реагировать на уведомление от управления веб-браузера Майкрософт.
+Узел должен обновить состояние кнопок панели инструментов. Этот метод вызывается независимо от значения, возвращаемого из `ShowUI` . Переопределение `OnUpdateUI` для реакции на `UpdateUI` уведомление от элемента управления веб-браузера Майкрософт.
 
-## <a name="chtmlviewonvisible"></a><a name="onvisible"></a>CHtmlView::Видимо
+## <a name="chtmlviewonvisible"></a><a name="onvisible"></a> CHtmlView:: OnVisible
 
-Эта функция-член вызывается инфраструктурой, когда окно для WebBrowser должно быть показано или скрыто.
+Эта функция-член вызывается платформой, когда окно для WebBrowser должно быть отображено или скрыто.
 
 ```
 virtual void OnVisible(BOOL bVisible);
@@ -1814,16 +1815,16 @@ virtual void OnVisible(BOOL bVisible);
 
 ### <a name="parameters"></a>Параметры
 
-*bVisible*<br/>
-Nonzero, если объект виден или ноль в противном случае.
+*бвисибле*<br/>
+Ненулевое значение, если объект является видимым или ноль в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Это позволяет окну управления объектом вести себя так же, как и окно Internet Explorer.
+Это позволяет основному окну управления объектами вести себя так же, как и окно Internet Explorer.
 
-## <a name="chtmlviewputproperty"></a><a name="putproperty"></a>CHtmlView::PutProperty
+## <a name="chtmlviewputproperty"></a><a name="putproperty"></a> CHtmlView::P Утпроперти
 
-Вызов ифункции этого участника для установки свойства, связанного с данным объектом.
+Вызовите эту функцию-член, чтобы задать свойство, связанное с данным объектом.
 
 ```cpp
 void PutProperty(
@@ -1849,32 +1850,32 @@ void PutProperty(
 
 ### <a name="parameters"></a>Параметры
 
-*lpszНедвижимость*<br/>
-Строка, содержащая свойство для установки.
+*лпсзпроперти*<br/>
+Строка, содержащая заданное свойство.
 
-*vtValue*<br/>
-Новая стоимость имущества, указанная *lpszProperty*.
+*втвалуе*<br/>
+Новое значение свойства, указанного параметром *лпсзпроперти*.
 
-*lpszPropertyName*<br/>
-Указатель на строку, содержащую имя свойства для установки.
+*лпсзпропертинаме*<br/>
+Указатель на строку, содержащую имя свойства, которое необходимо задать.
 
-*dValue*<br/>
+*двалуе*<br/>
 Новое значение свойства.
 
-*Lvalue*<br/>
+*lValue*<br/>
 Новое значение свойства.
 
-*lpszValue*<br/>
+*лпсзвалуе*<br/>
 Указатель на строку, содержащую новое значение свойства.
 
-*nValue*<br/>
+*Nзначение*<br/>
 Новое значение свойства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewqueryformscommand"></a><a name="queryformscommand"></a>CHtmlView::КвириФормСКоманда
+## <a name="chtmlviewqueryformscommand"></a><a name="queryformscommand"></a> CHtmlView:: Куериформскомманд
 
 Запрашивает состояние одной или нескольких команд, созданных событиями пользовательского интерфейса.
 
@@ -1888,29 +1889,29 @@ HRESULT QueryFormsCommand(
 
 ### <a name="parameters"></a>Параметры
 
-*dwCommandID*<br/>
-Идентификатор запрашиваемых команд.
+*двкоммандид*<br/>
+Идентификатор команды, для которой выполняется запрос.
 
-*pbПоддерживается*<br/>
-Указатель на BOOL, указывающий, поддерживается ли команда (идентифицированная *dwCommandID).* Если true, команда поддерживается; в противном случае FALSE.
+*пбсуппортед*<br/>
+Указатель на логическое значение, указывающее, поддерживается ли команда (определяется параметром *двкоммандид*). Если значение равно TRUE, команда поддерживается; в противном случае — FALSE.
 
-*pbEnabled*<br/>
-Указатель на BOOL, указывающий, включена ли команда (идентифицированная *dwCommandID).* Если true, команда поддерживается; в противном случае FALSE.
+*пбенаблед*<br/>
+Указатель на логическое значение, указывающее, включена ли команда (определенная параметром *двкоммандид*). Если значение равно TRUE, команда поддерживается; в противном случае — FALSE.
 
-*pbChecked*<br/>
-Указатель на BOOL, указывающий, проверяется ли команда (идентифицированная *dwCommandID).* Если true, команда поддерживается; в противном случае FALSE.
+*пбчеккед*<br/>
+Указатель на логическое значение, указывающее, установлен ли флажок (определяется параметром *двкоммандид*). Если значение равно TRUE, команда поддерживается; в противном случае — FALSE.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Стандартное значение HRESULT. Полный список возможных значений можно узнать на примере [IOleCommandTarget::QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) в SDK Windows.
+Стандартное значение HRESULT. Полный список возможных значений см. в разделе [IOleCommandTarget:: QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`QueryFormsCommand`реализует поведение метода [IOleCommandTarget::QueryStatus.](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus)
+`QueryFormsCommand` реализует поведение метода [IOleCommandTarget:: QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) .
 
-## <a name="chtmlviewquerystatuswb"></a><a name="querystatuswb"></a>CHtmlView::Квиостав
+## <a name="chtmlviewquerystatuswb"></a><a name="querystatuswb"></a> CHtmlView:: Куеристатусвб
 
-Вызовите эту функцию участника для запроса статуса команды.
+Вызовите эту функцию-член для запроса состояния команды.
 
 ```
 OLECMDF QueryStatusWB(OLECMDID cmdID) const;
@@ -1919,35 +1920,35 @@ OLECMDF QueryStatusWB(OLECMDID cmdID) const;
 ### <a name="parameters"></a>Параметры
 
 *cmdID*<br/>
-Значение [команды OLECMDID,](/windows/win32/api/docobj/ne-docobj-olecmdid) для которой вызываешься информация о состоянии.
+Значение [олекмдид](/windows/win32/api/docobj/ne-docobj-olecmdid) команды, для которой вызывающей стороне требуются сведения о состоянии.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Адрес значения [OLECMDF,](/windows/win32/api/docobj/ne-docobj-olecmdf) который получает статус команды.
+Адрес значения [OLECMDF](/windows/win32/api/docobj/ne-docobj-olecmdf) , которое получает состояние команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`QueryStatusWB`реализует поведение метода [IOleCommandTarget::QueryStatus.](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus)
+`QueryStatusWB` реализует поведение метода [IOleCommandTarget:: QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) .
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewrefresh"></a><a name="refresh"></a>CHtmlView::Обновление
+## <a name="chtmlviewrefresh"></a><a name="refresh"></a> CHtmlView:: Refresh
 
-Перезагружает URL или файл, который веб-браузер в настоящее время отображает.
+Перезагружает URL-адрес или файл, который в настоящий момент отображается в веб-браузере.
 
 ```cpp
 void Refresh();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`Refresh`не содержит параметров для установки уровня обновления.
+`Refresh` не содержит параметров для установки уровня обновления.
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewrefresh2"></a><a name="refresh2"></a>CHtmlView::Refresh2
+## <a name="chtmlviewrefresh2"></a><a name="refresh2"></a> CHtmlView:: Refresh2
 
-Перезагружает файл, отображаемый Internet Explorer в настоящее время.
+Перезагружает файл, который в настоящий момент отображается в Internet Explorer.
 
 ```cpp
 void Refresh2(int nLevel);
@@ -1955,18 +1956,18 @@ void Refresh2(int nLevel);
 
 ### <a name="parameters"></a>Параметры
 
-*nУровень*<br/>
-Адрес переменной, определяющей уровень обновления. Возможные переменные определяются в [RefreshConstants,](/previous-versions/aa768363\(v=vs.85\))в Windows SDK.
+*нлевел*<br/>
+Адрес переменной, указывающей уровень обновления. Возможные переменные определяются в [рефрешконстантс](/previous-versions/aa768363\(v=vs.85\))в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-В отличие `Refresh2` от [Refresh,](#refresh)содержит параметр, который определяет уровень обновления.
+В отличие от [Refresh](#refresh), `Refresh2` содержит параметр, указывающий уровень обновления.
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewsetaddressbar"></a><a name="setaddressbar"></a>CHtmlView::SetAddressBar
+## <a name="chtmlviewsetaddressbar"></a><a name="setaddressbar"></a> CHtmlView:: Сетаддрессбар
 
-Вызов ими функции участника, чтобы показать или скрыть адресную панель объекта Internet Explorer.
+Вызовите эту функцию члена, чтобы показать или скрыть адресную строку объекта Internet Explorer.
 
 ```cpp
 void SetAddressBar(BOOL bNewValue);
@@ -1974,16 +1975,16 @@ void SetAddressBar(BOOL bNewValue);
 
 ### <a name="parameters"></a>Параметры
 
-*bNewValue*<br/>
-Nonzero, чтобы показать адресную панель; в противном случае ноль.
+*бневвалуе*<br/>
+Ненулевое значение для отображения адресной строки; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Применяется к Internet Explorer. Если вы используете этот вызов с помощью управления WebBrowser, он не вернет ошибку, но он будет игнорировать этот вызов.
+Применяется к Internet Explorer. При использовании этого вызова с элементом управления WebBrowser он не будет возвращать ошибку, но будет игнорировать этот вызов.
 
-## <a name="chtmlviewsetfullscreen"></a><a name="setfullscreen"></a>CHtmlView:SetFullScreen
+## <a name="chtmlviewsetfullscreen"></a><a name="setfullscreen"></a> CHtmlView:: Сетфуллскрин
 
-Вызов ими функции участника для установки Internet Explorer в полноэкранном или обычном режиме окна.
+Вызовите эту функцию-член, чтобы установить Internet Explorer в полноэкранный или нормальный режим окна.
 
 ```cpp
 void SetFullScreen(BOOL bNewValue);
@@ -1991,18 +1992,18 @@ void SetFullScreen(BOOL bNewValue);
 
 ### <a name="parameters"></a>Параметры
 
-*bNewValue*<br/>
-Nonzero для полноэкранного режима; в противном случае ноль.
+*бневвалуе*<br/>
+Ненулевое значение для полноэкранного режима; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-В полноэкранном режиме, Основное окно Internet Explorer максимизируется и статус бар, панель инструментов, меню бар, и название бар скрыты.
+В полноэкранном режиме главное окно Internet Explorer разворачивается, а строка состояния, панель инструментов, строка меню и строка заголовка скрыты.
 
-Применяется к Internet Explorer. Если вы используете этот вызов с помощью управления WebBrowser, он не вернет ошибку, но он будет игнорировать этот вызов.
+Применяется к Internet Explorer. При использовании этого вызова с элементом управления WebBrowser он не будет возвращать ошибку, но будет игнорировать этот вызов.
 
-## <a name="chtmlviewsetheight"></a><a name="setheight"></a>CHtmlView::SetHeight
+## <a name="chtmlviewsetheight"></a><a name="setheight"></a> CHtmlView:: Сесеигхт
 
-Вызовите эту функцию участника, чтобы установить высоту основного окна Internet Explorer.
+Вызовите эту функцию члена, чтобы задать высоту главного окна Internet Explorer.
 
 ```cpp
 void SetHeight(long nNewValue);
@@ -2010,14 +2011,14 @@ void SetHeight(long nNewValue);
 
 ### <a name="parameters"></a>Параметры
 
-*nNewValue*<br/>
-Высота, в пикселях, главного окна.
+*нневвалуе*<br/>
+Высота главного окна (в пикселях).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewsetleft"></a><a name="setleft"></a>CHtmlView:SetLeft
+## <a name="chtmlviewsetleft"></a><a name="setleft"></a> CHtmlView:: Сетлефт
 
 Задает положение главного окна Internet Explorer по горизонтали.
 
@@ -2027,12 +2028,12 @@ void SetLeft(long nNewValue);
 
 ### <a name="parameters"></a>Параметры
 
-*nNewValue*<br/>
-Координат экрана левого края основного окна.
+*нневвалуе*<br/>
+Координата экрана левого края главного окна.
 
-## <a name="chtmlviewsetmenubar"></a><a name="setmenubar"></a>CHtmlView::SetMenuBar
+## <a name="chtmlviewsetmenubar"></a><a name="setmenubar"></a> CHtmlView:: Сетменубар
 
-Позвоните в эту функцию участника, чтобы показать или скрыть панель меню Internet Explorer.
+Вызовите эту функцию члена, чтобы показать или скрыть строку меню Internet Explorer.
 
 ```cpp
 void SetMenuBar(BOOL bNewValue);
@@ -2040,16 +2041,16 @@ void SetMenuBar(BOOL bNewValue);
 
 ### <a name="parameters"></a>Параметры
 
-*bNewValue*<br/>
-Nonzero, чтобы показать меню бар; в противном случае ноль.
+*бневвалуе*<br/>
+Ненулевое значение для отображения строки меню; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Применяется к Internet Explorer. Если вы используете этот вызов с помощью управления WebBrowser, он не вернет ошибку, но он будет игнорировать этот вызов.
+Применяется к Internet Explorer. При использовании этого вызова с элементом управления WebBrowser он не будет возвращать ошибку, но будет игнорировать этот вызов.
 
-## <a name="chtmlviewsetoffline"></a><a name="setoffline"></a>CHtmlView::SetOffline
+## <a name="chtmlviewsetoffline"></a><a name="setoffline"></a> CHtmlView:: Сетоффлине
 
-Вызовите эту функцию участника, чтобы установить значение, указывающее, работает ли элемент управления WebBrowser в автономном режиме.
+Вызовите эту функцию-член, чтобы задать значение, указывающее, работает ли элемент управления WebBrowser в автономном режиме.
 
 ```cpp
 void SetOffline(BOOL bNewValue);
@@ -2057,18 +2058,18 @@ void SetOffline(BOOL bNewValue);
 
 ### <a name="parameters"></a>Параметры
 
-*bNewValue*<br/>
-Nonzero для чтения из локального кэша; в противном случае ноль.
+*бневвалуе*<br/>
+Ненулевое значение для чтения из локального кэша; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-В автономном режиме браузер читает HTML-страницы из локального кэша, а не из исходного документа.
+В автономном режиме браузер считывает HTML-страницы из локального кэша, а не из исходного документа.
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewsetregisterasbrowser"></a><a name="setregisterasbrowser"></a>CHtmlView::SetRegisterAsBrowser
+## <a name="chtmlviewsetregisterasbrowser"></a><a name="setregisterasbrowser"></a> CHtmlView:: Сетрегистерасбровсер
 
-Позвоните в эту функцию участника, чтобы установить значение, указывающее, зарегистрирован ли элемент управления WebBrowser в качестве браузера верхнего уровня для разрешения целевого имени.
+Вызовите эту функцию-член, чтобы задать значение, указывающее, зарегистрирован ли элемент управления WebBrowser в качестве браузера верхнего уровня для разрешения имен целевых объектов.
 
 ```cpp
 void SetRegisterAsBrowser(BOOL bNewValue);
@@ -2076,18 +2077,18 @@ void SetRegisterAsBrowser(BOOL bNewValue);
 
 ### <a name="parameters"></a>Параметры
 
-*bNewValue*<br/>
-Определяет, зарегистрирован ли Internet Explorer как браузер верхнего уровня. Если ненулевой, веб-браузер зарегистрирован как браузер верхнего уровня; если ноль, это не браузер верхнего уровня. Значение по умолчанию равно нулю.
+*бневвалуе*<br/>
+Определяет, зарегистрирован ли Internet Explorer в качестве браузера верхнего уровня. Если не равен нулю, веб-браузер регистрируется в качестве браузера верхнего уровня. Если значение равно нулю, это не браузер верхнего уровня. Значение по умолчанию равно нулю.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Браузер верхнего уровня — это браузер, установленный в реестре в качестве браузера по умолчанию.
+Браузер верхнего уровня — это браузер, заданный в реестре в качестве браузера по умолчанию.
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewsetregisterasdroptarget"></a><a name="setregisterasdroptarget"></a>CHtmlView::SetRegisterasDropTarget
+## <a name="chtmlviewsetregisterasdroptarget"></a><a name="setregisterasdroptarget"></a> CHtmlView:: Сетрегистерасдроптаржет
 
-Вызовите эту функцию участника, чтобы установить значение, указывающее, зарегистрирован ли элемент управления WebBrowser в качестве цели падения для навигации.
+Вызовите эту функцию-член, чтобы задать значение, указывающее, зарегистрирован ли элемент управления WebBrowser в качестве цели перетаскивания для навигации.
 
 ```cpp
 void SetRegisterAsDropTarget(BOOL bNewValue);
@@ -2095,16 +2096,16 @@ void SetRegisterAsDropTarget(BOOL bNewValue);
 
 ### <a name="parameters"></a>Параметры
 
-*bNewValue*<br/>
-Определяет, зарегистрирован ли элемент управления WebBrowser в качестве цели падения для навигации. Если ненулевой, объект регистрируется как цель падения; если ноль, это не цель падения.
+*бневвалуе*<br/>
+Определяет, зарегистрирован ли элемент управления WebBrowser в качестве цели перетаскивания для навигации. Если значение не равно нулю, объект регистрируется как цель перетаскивания; Если значение равно нулю, это не цель перетаскивания.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewsetsilent"></a><a name="setsilent"></a>CHtmlView::SetSilent
+## <a name="chtmlviewsetsilent"></a><a name="setsilent"></a> CHtmlView:: Сетсилент
 
-Вызовите эту функцию участника, чтобы установить значение, указывающее, могут ли быть отображаются какие-либо диалоговые коробки.
+Вызовите эту функцию-член, чтобы задать значение, указывающее, можно ли отображать любые диалоговые окна.
 
 ```cpp
 void SetSilent(BOOL bNewValue);
@@ -2112,16 +2113,16 @@ void SetSilent(BOOL bNewValue);
 
 ### <a name="parameters"></a>Параметры
 
-*bNewValue*<br/>
-Если ненулевой, диалоговые коробки не будут отображаться; если ноль, диалоговые коробки будут отображаться. Значение по умолчанию равно нулю.
+*бневвалуе*<br/>
+Если не равно нулю, диалоговые окна не будут отображаться. Если это значение равно нулю, будут отображаться диалоговые окна. Значение по умолчанию равно нулю.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewsetstatusbar"></a><a name="setstatusbar"></a>CHtmlView::SetStatusBar
+## <a name="chtmlviewsetstatusbar"></a><a name="setstatusbar"></a> CHtmlView:: Сетстатусбар
 
-Вызовите эту функцию участника для отображения панели статуса.
+Вызовите эту функцию члена, чтобы отобразить строку состояния.
 
 ```cpp
 void SetStatusBar(BOOL bNewValue);
@@ -2129,16 +2130,16 @@ void SetStatusBar(BOOL bNewValue);
 
 ### <a name="parameters"></a>Параметры
 
-*bNewValue*<br/>
-Nonzero, если видимая планка состояния; в противном случае ноль.
+*бневвалуе*<br/>
+Ненулевое значение, если строка состояния видима; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Применяется к Internet Explorer. Если вы используете этот вызов с помощью управления WebBrowser, он не вернет ошибку, но он будет игнорировать этот вызов.
+Применяется к Internet Explorer. При использовании этого вызова с элементом управления WebBrowser он не будет возвращать ошибку, но будет игнорировать этот вызов.
 
-## <a name="chtmlviewsettheatermode"></a><a name="settheatermode"></a>CHtmlView::SetTheaterMode
+## <a name="chtmlviewsettheatermode"></a><a name="settheatermode"></a> CHtmlView:: Сетсеатермоде
 
-Вызовите эту функцию участника, чтобы установить значение, указывающее, находится ли элемент управления WebBrowser в режиме театра.
+Вызовите эту функцию-член, чтобы задать значение, указывающее, находится ли элемент управления WebBrowser в режиме театра.
 
 ```cpp
 void SetTheaterMode(BOOL bNewValue);
@@ -2146,18 +2147,18 @@ void SetTheaterMode(BOOL bNewValue);
 
 ### <a name="parameters"></a>Параметры
 
-*bNewValue*<br/>
-Nonzero для установки управления WebBrowser в режим театра; в противном случае ноль. Значение по умолчанию равно нулю.
+*бневвалуе*<br/>
+Ненулевое значение, чтобы задать для элемента управления WebBrowser режим театра; в противном случае — ноль. Значение по умолчанию равно нулю.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Когда веб-браузер находится в режиме театра, основное окно браузера заполняет весь экран, появляется панель инструментов с минимальным набором навигационных инструментов, а в правом верхнем углу экрана появляется строка статуса.
+Когда веб-браузер находится в режиме театра, главное окно браузера заполняет весь экран, панель инструментов с минимальным набором средств навигации, а строка состояния отображается в правом верхнем углу экрана.
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewsettoolbar"></a><a name="settoolbar"></a>CHtmlView::SetToolBar
+## <a name="chtmlviewsettoolbar"></a><a name="settoolbar"></a> CHtmlView:: Сеттулбар
 
-Вызов эту функцию участника, чтобы показать или скрыть панель инструментов Internet Explorer.
+Вызовите эту функцию члена, чтобы показать или скрыть панель инструментов Internet Explorer.
 
 ```cpp
 void SetToolBar(int nNewValue);
@@ -2165,16 +2166,16 @@ void SetToolBar(int nNewValue);
 
 ### <a name="parameters"></a>Параметры
 
-*nNewValue*<br/>
-Указывает, следует ли отображать панель инструментов. Nonzero, если панель инструментов должна быть отображана; в противном случае ноль.
+*нневвалуе*<br/>
+Указывает, следует ли отображать панель инструментов. Ненулевое значение, если панель инструментов должна отображаться; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Применяется к Internet Explorer. Если вы используете этот вызов с помощью управления WebBrowser, он не вернет ошибку, но он будет игнорировать этот вызов.
+Применяется к Internet Explorer. При использовании этого вызова с элементом управления WebBrowser он не будет возвращать ошибку, но будет игнорировать этот вызов.
 
-## <a name="chtmlviewsettop"></a><a name="settop"></a>CHtmlView::SetTop
+## <a name="chtmlviewsettop"></a><a name="settop"></a> CHtmlView:: Сеттоп
 
-Вызов ифункции участника, чтобы установить расстояние между внутренним верхним краем управления WebBrowser и верхним краем контейнера
+Вызовите эту функцию члена, чтобы установить расстояние между внутренним верхним краями элемента управления WebBrowser и верхней границей контейнера
 
 ```cpp
 void SetTop(long nNewValue);
@@ -2182,16 +2183,16 @@ void SetTop(long nNewValue);
 
 ### <a name="parameters"></a>Параметры
 
-*nNewValue*<br/>
-Координат экрана верхнего края главного окна.
+*нневвалуе*<br/>
+Координата экрана верхнего края главного окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewsetvisible"></a><a name="setvisible"></a>CHtmlView::Установка
+## <a name="chtmlviewsetvisible"></a><a name="setvisible"></a> CHtmlView:: Сетвисибле
 
-Вызовите эту функцию участника, чтобы установить состояние видимости элемента управления WebBrowser.
+Вызовите эту функцию члена, чтобы установить состояние видимости элемента управления WebBrowser.
 
 ```cpp
 void SetVisible(BOOL bNewValue);
@@ -2199,14 +2200,14 @@ void SetVisible(BOOL bNewValue);
 
 ### <a name="parameters"></a>Параметры
 
-*bNewValue*<br/>
-Nonzero, если элемент управления виден; в противном случае ноль.
+*бневвалуе*<br/>
+Ненулевое значение, если элемент управления является видимым; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
-## <a name="chtmlviewsetwidth"></a><a name="setwidth"></a>CHtmlView::SetWidth
+## <a name="chtmlviewsetwidth"></a><a name="setwidth"></a> CHtmlView:: Сетвидс
 
 Задает ширину главного окна Internet Explorer.
 
@@ -2216,18 +2217,18 @@ void SetWidth(long nNewValue);
 
 ### <a name="parameters"></a>Параметры
 
-*nNewValue*<br/>
-Ширина, в пикселях, основного окна Internet Explorer.
+*нневвалуе*<br/>
+Ширина (в пикселях) главного окна Internet Explorer.
 
-## <a name="chtmlviewstop"></a><a name="stop"></a>CHtmlView::Стоп
+## <a name="chtmlviewstop"></a><a name="stop"></a> CHtmlView:: останавливаться
 
-Вызов эту функцию участника, чтобы отменить любую ожидачную навигацию или скачать операцию и остановить любые динамические элементы страницы, такие как фоновые звуки и анимации.
+Вызовите эту функцию-член, чтобы отменить все ожидающие переходы или операции скачивания и остановить все динамические элементы страницы, такие как фоновые звуки и анимации.
 
 ```cpp
 void Stop();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -2235,5 +2236,5 @@ void Stop();
 
 [Пример MFC MFCIE](../../overview/visual-cpp-samples.md)<br/>
 [Класс CFormView](../../mfc/reference/cformview-class.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [IWebBrowser2](/windows/win32/api/exdisp/nn-exdisp-iwebbrowser2)

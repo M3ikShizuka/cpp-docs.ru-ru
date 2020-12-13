@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения см. в статье приложения UWP, среда выполнения Windows и C Run-Time
 title: Приложения UWP, среда выполнения Windows и среда выполнения C
 ms.date: 02/02/2019
 ms.assetid: 356d6d8d-76ee-4181-9ad0-6f24b2fede38
-ms.openlocfilehash: 932b5388f2d1bf87f0d77ae1330fa3e613c9dca7
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: cfbbdbde19b882fb51b8fd8782b20e4205bdb00b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57738680"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136751"
 ---
 # <a name="uwp-apps-the-windows-runtime-and-the-c-run-time"></a>Приложения UWP, среда выполнения Windows и среда выполнения C
 
@@ -39,9 +40,9 @@ ms.locfileid: "57738680"
 
 Полный список функций CRT, которые недоступны в приложениях UWP, и предлагаемые альтернативы см. в статье [Функции CRT, которые не поддерживаются в приложениях универсальной платформы Windows](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Совместимость](../c-runtime-library/compatibility.md)<br/>
-[Функции CRT, которые не поддерживаются средой выполнения Windows](../c-runtime-library/windows-runtime-unsupported-crt-functions.md)<br/>
-[Универсальные подпрограммы среды выполнения C по категориям](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[среда выполнения Windows неподдерживаемые функции CRT](../c-runtime-library/windows-runtime-unsupported-crt-functions.md)<br/>
+[Подпрограммы универсальной среды выполнения C по категориям](../c-runtime-library/run-time-routines-by-category.md)<br/>
 [Создание консольного приложения для универсальной платформы Windows](/windows/uwp/launch-resume/console-uwp)

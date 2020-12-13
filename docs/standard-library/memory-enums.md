@@ -1,19 +1,20 @@
 ---
+description: Дополнительные сведения о &lt; &gt; перечислителях памяти
 title: Перечисления &lt;memory&gt;
 ms.date: 11/04/2016
 f1_keywords:
 - memory/std::pointer_safety
 ms.assetid: b9be0a7b-0beb-40b2-8183-911de371c6b9
-ms.openlocfilehash: 507628628fcf8bbf8993ce5beb1e02c28ff82147
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: da9bb22a6095f74b94e1745210fa55061ecf3c71
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222255"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97149101"
 ---
 # <a name="ltmemorygt-enums"></a>Перечисления &lt;memory&gt;
 
-## <a name="pointer_safety-enumeration"></a><a name="pointer_safety"></a>Перечисление pointer_safety
+## <a name="pointer_safety-enumeration"></a><a name="pointer_safety"></a> Перечисление pointer_safety
 
 Перечисление возможных значений, возвращаемых `get_pointer_safety`.
 
@@ -25,7 +26,7 @@ class pointer_safety {
 };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Область **`enum`** определяет значения, которые могут быть возвращены `get_pointer_safety()` :
 

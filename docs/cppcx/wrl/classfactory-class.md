@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: ClassFactory Class'
 title: ClassFactory - класс
 ms.date: 10/03/2018
 ms.topic: reference
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - Microsoft::WRL::ClassFactory::QueryInterface method
 - Microsoft::WRL::ClassFactory::Release method
 ms.assetid: f13e6bce-722b-4f18-b7cf-3ffa6345c1db
-ms.openlocfilehash: bbf20e2269e6d62206e06e748174d7b88898cd68
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e6503cba1060c432b2cb85020799b83f0ee16c6d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87198103"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135308"
 ---
 # <a name="classfactory-class"></a>ClassFactory - класс
 
@@ -61,7 +62,7 @@ class ClassFactory :
 *I2*<br/>
 Второй интерфейс.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Используется `ClassFactory` для предоставления определяемой пользователем фабрики.
 
@@ -73,7 +74,7 @@ class ClassFactory :
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-Имя                                        | Описание
+name                                        | Описание
 ------------------------------------------- | -----------
 [ClassFactory:: ClassFactory](#classfactory) |
 
@@ -114,7 +115,7 @@ name                                            | Описание
 
 **Пространство имен:** Microsoft::WRL
 
-## <a name="classfactoryaddref"></a><a name="addref"></a>ClassFactory:: AddRef
+## <a name="classfactoryaddref"></a><a name="addref"></a> ClassFactory:: AddRef
 
 Увеличивает значение счетчика ссылок для текущего `ClassFactory` объекта.
 
@@ -129,13 +130,13 @@ STDMETHOD_(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, описывающее тип сбоя.
 
-## <a name="classfactoryclassfactory"></a><a name="classfactory"></a>ClassFactory:: ClassFactory
+## <a name="classfactoryclassfactory"></a><a name="classfactory"></a> ClassFactory:: ClassFactory
 
 ```cpp
 WRL_NOTHROW ClassFactory();
 ```
 
-## <a name="classfactorylockserver"></a><a name="lockserver"></a>ClassFactory:: Локксервер
+## <a name="classfactorylockserver"></a><a name="lockserver"></a> ClassFactory:: Локксервер
 
 Увеличивает или уменьшает количество базовых объектов, которые отправляются текущим `ClassFactory` объектом.
 
@@ -154,11 +155,11 @@ STDMETHOD(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение E_FAIL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`ClassFactory`отслеживает объекты в базовом экземпляре класса [module](module-class.md) .
+`ClassFactory` отслеживает объекты в базовом экземпляре класса [module](module-class.md) .
 
-## <a name="classfactoryqueryinterface"></a><a name="queryinterface"></a>ClassFactory:: QueryInterface
+## <a name="classfactoryqueryinterface"></a><a name="queryinterface"></a> ClassFactory:: QueryInterface
 
 Извлекает указатель на интерфейс, указанный параметром.
 
@@ -180,7 +181,7 @@ STDMETHOD(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, описывающее тип сбоя.
 
-## <a name="classfactoryrelease"></a><a name="release"></a>ClassFactory:: Release
+## <a name="classfactoryrelease"></a><a name="release"></a> ClassFactory:: Release
 
 Уменьшает значение счетчика ссылок для текущего `ClassFactory` объекта.
 
