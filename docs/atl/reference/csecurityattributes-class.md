@@ -1,5 +1,6 @@
 ---
-title: Класс CSecurityAttributes
+description: 'Дополнительные сведения о: Ксекуритяттрибутес Class'
+title: Класс Ксекуритяттрибутес
 ms.date: 11/04/2016
 f1_keywords:
 - CSecurityAttributes
@@ -9,19 +10,19 @@ f1_keywords:
 helpviewer_keywords:
 - CSecurityAttributes class
 ms.assetid: a094880c-52e1-4a28-97ff-752d5869908e
-ms.openlocfilehash: e0ac813008a028bb233adfb4c7409a0ad62a6b78
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 8cb772e574aef4ad941feef1cb838fb91d937576
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81746501"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97140820"
 ---
-# <a name="csecurityattributes-class"></a>Класс CSecurityAttributes
+# <a name="csecurityattributes-class"></a>Класс Ксекуритяттрибутес
 
-Этот класс представляет собой тонкую обертку для структуры атрибутов безопасности.
+Этот класс является тонкой оболочкой для структуры атрибутов безопасности.
 
 > [!IMPORTANT]
-> Этот класс и его члены не могут быть использованы в приложениях, выполняемых в Windows Runtime.
+> Этот класс и его члены не могут использоваться в приложениях, выполняемых в среда выполнения Windows.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,25 +30,25 @@ ms.locfileid: "81746501"
 class CSecurityAttributes : public SECURITY_ATTRIBUTES
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CSecurityAttributes::CSecurityAttributes](#csecurityattributes)|Конструктор.|
+|[Ксекуритяттрибутес:: Ксекуритяттрибутес](#csecurityattributes)|Конструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CSecurityAttributes::Set](#set)|Вызовите этот метод, чтобы `CSecurityAttributes` установить атрибуты объекта.|
+|[Ксекуритяттрибутес:: Set](#set)|Вызовите этот метод, чтобы задать атрибуты `CSecurityAttributes` объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Структура `SECURITY_ATTRIBUTES` содержит [дескриптор безопасности,](/windows/win32/api/winnt/ns-winnt-security_descriptor) используемый для создания объекта, и определяет, является ли извлеченная ручка науказной, указав эту структуру, наследуемой.
+`SECURITY_ATTRIBUTES`Структура содержит [дескриптор безопасности](/windows/win32/api/winnt/ns-winnt-security_descriptor) , используемый для создания объекта, и указывает, наследуется ли полученный дескриптор путем указания этой структуры.
 
-Для введения в модель управления доступом [Access Control](/windows/win32/SecAuthZ/access-control) в Windows см.
+Общие сведения о модели управления доступом в Windows см. в разделе [Управление доступом](/windows/win32/SecAuthZ/access-control) в Windows SDK.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -57,9 +58,9 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlsecurity.h
+**Заголовок:** атлсекурити. h
 
-## <a name="csecurityattributescsecurityattributes"></a><a name="csecurityattributes"></a>CSecurityAttributes::CSecurityAttributes
+## <a name="csecurityattributescsecurityattributes"></a><a name="csecurityattributes"></a> Ксекуритяттрибутес:: Ксекуритяттрибутес
 
 Конструктор.
 
@@ -70,15 +71,15 @@ explicit CSecurityAttributes(const CSecurityDesc& rSecurityDescriptor, bool bInh
 
 ### <a name="parameters"></a>Параметры
 
-*rSecurityДескриптор*<br/>
+*рсекуритидескриптор*<br/>
 Ссылка на дескриптор безопасности.
 
-*bНаследыРучка*<br/>
+*бинхеритшандле*<br/>
 Определяет, наследуется ли возвращаемый дескриптор при создании процесса. Если этот элемент имеет значение true, новый процесс наследует дескриптор.
 
-## <a name="csecurityattributesset"></a><a name="set"></a>CSecurityAttributes::Set
+## <a name="csecurityattributesset"></a><a name="set"></a> Ксекуритяттрибутес:: Set
 
-Вызовите этот метод, чтобы `CSecurityAttributes` установить атрибуты объекта.
+Вызовите этот метод, чтобы задать атрибуты `CSecurityAttributes` объекта.
 
 ```cpp
 void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) throw(...);
@@ -86,13 +87,13 @@ void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) 
 
 ### <a name="parameters"></a>Параметры
 
-*rSecurityДескриптор*<br/>
+*рсекуритидескриптор*<br/>
 Ссылка на дескриптор безопасности.
 
-*bНаследыХи*<br/>
+*бинхерисандле*<br/>
 Определяет, наследуется ли возвращаемый дескриптор при создании процесса. Если этот элемент имеет значение true, новый процесс наследует дескриптор.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод используется конструктором для инициализации `CSecurityAttributes` объекта.
 
@@ -100,6 +101,6 @@ void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) 
 
 [Пример безопасности](../../overview/visual-cpp-samples.md)<br/>
 [SECURITY_ATTRIBUTES](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\))<br/>
-[дескриптор безопасности](/windows/win32/api/winnt/ns-winnt-security_descriptor)<br/>
+[Дескриптор безопасности](/windows/win32/api/winnt/ns-winnt-security_descriptor)<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)<br/>
 [Глобальные функции безопасности](../../atl/reference/security-global-functions.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура метод semaphoretraits'
 title: SemaphoreTraits - структура
 ms.date: 09/27/2018
 ms.topic: reference
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HandleTraits::SemaphoreTraits structure
 - Microsoft::WRL::Wrappers::HandleTraits::SemaphoreTraits::Unlock method
 ms.assetid: eddb8576-d063-409b-9201-cc87ca5d111e
-ms.openlocfilehash: 11719576c9fc7b23f4cd318ee1b3ed9ca3f5edaa
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5779a30d22fd2d32e57f96f752bb52e2bf469cd8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81360741"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135230"
 ---
 # <a name="semaphoretraits-structure"></a>SemaphoreTraits - структура
 
@@ -26,13 +27,13 @@ ms.locfileid: "81360741"
 struct SemaphoreTraits : HANDLENullTraits;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-Имя                               | Описание
+name                               | Описание
 ---------------------------------- | --------------------------------------
-[SemaphoreTraits::Разблокировка](#unlock) | Выпускает элемент управления общим ресурсом.
+[Метод semaphoretraits:: Unlock](#unlock) | Выпускают управление общим ресурсом.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -42,13 +43,13 @@ struct SemaphoreTraits : HANDLENullTraits;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** corewrappers.h
+**Заголовок:** кореврапперс. h
 
-**Пространство имен:** Microsoft::WRL::Wrappers:: HandleTraits
+**Пространство имен:** Microsoft:: WRL:: оболочки:: метод HandleTraits
 
-## <a name="semaphoretraitsunlock"></a><a name="unlock"></a>SemaphoreTraits::Разблокировка
+## <a name="semaphoretraitsunlock"></a><a name="unlock"></a> Метод semaphoretraits:: Unlock
 
-Выпускает элемент управления общим ресурсом.
+Выпускают управление общим ресурсом.
 
 ```cpp
 inline static void Unlock(
@@ -58,9 +59,9 @@ inline static void Unlock(
 
 ### <a name="parameters"></a>Параметры
 
-*H*<br/>
-Обработка `Semaphore` объекта.
+*h*<br/>
+Обработчик для `Semaphore` объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если операция разблокировки `Unlock()` не выполнена, испускают ошибку, указывают причину сбоя.
+Если операция разблокировки завершилась неудачно, `Unlock()` выдает ошибку, которая указывает на причину сбоя.

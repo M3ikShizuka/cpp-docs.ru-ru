@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: макросы реестра'
 title: Макросы реестра
 ms.date: 08/19/2019
 f1_keywords:
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - registry, ATL macros
 ms.assetid: 3ee041da-c63b-42a4-89cf-2a4b2a6f81ae
-ms.openlocfilehash: dac1c187bae0eb55b954fc02cd4fb4c981f272f4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: e1f85e43f64dd34455cb9ec453ab3719b07f67f1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834522"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138894"
 ---
 # <a name="registry-macros"></a>Макросы реестра
 
@@ -45,7 +46,7 @@ ms.locfileid: "88834522"
 #define _ATL_STATIC_REGISTRY
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 При определении ATL_STATIC_REGISTRY следует использовать следующий код:
 
@@ -64,7 +65,7 @@ DECLARE_LIBID( libid )
 *ID*<br/>
 Идентификатор GUID библиотеки типов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте DECLARE_LIBID в `CAtlModuleT` производном классе.
 
@@ -110,7 +111,7 @@ DECLARE_REGISTRY(
 *flags*<br/>
 окне Значение типа DWORD, содержащее потоковую модель программы в реестре. Должно иметь одно из следующих значений: THREADFLAGS_APARTMENT, THREADFLAGS_BOTH или АУТПРКСФЛАГ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Стандартная регистрация состоит из идентификатора CLSID, идентификатора программы, идентификатора программы, не зависящего от версии, строки описания и модели потока.
 
@@ -134,7 +135,7 @@ DECLARE_REGISTRY_APPID_RESOURCEID(
 *appid*<br/>
 Идентификатор GUID.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте DECLARE_REGISTRY_APPID_RESOURCEID в `CAtlModuleT` производном классе.
 
@@ -155,7 +156,7 @@ DECLARE_REGISTRY_RESOURCE( x )
 *x*<br/>
 окне Идентификатор строки ресурса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 При создании объекта или элемента управления с помощью мастера проектов ATL мастер автоматически реализует поддержку реестра на основе сценариев и добавляет в файлы макрос [DECLARE_REGISTRY_RESOURCEID](#declare_registry_resourceid) , аналогичный DECLARE_REGISTRY_RESOURCE.
 
@@ -180,7 +181,7 @@ DECLARE_REGISTRY_RESOURCEID( x )
 *x*<br/>
 окне Идентификатор ресурса, созданный мастером.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 При создании объекта или элемента управления с помощью мастера проектов ATL мастер автоматически реализует поддержку реестра на основе сценариев и добавляет макрос DECLARE_REGISTRY_RESOURCEID в файлы.
 

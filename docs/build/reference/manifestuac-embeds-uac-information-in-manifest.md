@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/MANIFESTUAC (внедряет сведения о контроле учетных записей в манифесте)
 title: /MANIFESTUAC (встраивает в манифест сведений об UAC)
 ms.date: 06/12/2020
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - MANIFESTUAC linker option
 - -MANIFESTUAC linker option
 ms.assetid: 2d243c39-fa13-493c-b56f-d0d972a1603a
-ms.openlocfilehash: 96719c6f6f5359afb03b967524b1f65db6dc664a
-ms.sourcegitcommit: 8645408c7929558b8162f781776d0908d790a41c
+ms.openlocfilehash: 165f543dab087ca32c91002811d99b9048fa392b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85334940"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137895"
 ---
 # <a name="manifestuac-embeds-uac-information-in-manifest"></a>/MANIFESTUAC (встраивает в манифест сведений об UAC)
 
@@ -35,10 +36,10 @@ ms.locfileid: "85334940"
 Компоновщик не внедряет сведения о контроле учетных записей в манифест программы.
 
 *`level`*<br/>
-**`level=`**, за которым следует один из **`'asInvoker'`** , **`'highestAvailable'`** или **`'requireAdministrator'`** . По умолчанию имеет значение **`'asInvoker'`** . Дополнительные сведения см. в разделе [Примечания](#remarks).
+**`level=`** , за которым следует один из **`'asInvoker'`** , **`'highestAvailable'`** или **`'requireAdministrator'`** . По умолчанию — **`'asInvoker'`** . Дополнительные сведения см. в разделе [Примечания](#remarks).
 
 *`uiAccess`*<br/>
-**`uiAccess='true'`** Если требуется, чтобы приложение обходило уровни защиты пользовательского интерфейса и входные данные в окнах с более высоким разрешением на рабочем столе; в противном случае — **`uiAccess='false'`** . По умолчанию имеет значение **`uiAccess='false'`** . Задайте для этого аргумента значение **`uiAccess='true'`** только для приложений со специальными возможностями пользовательского интерфейса.
+**`uiAccess='true'`** Если требуется, чтобы приложение обходило уровни защиты пользовательского интерфейса и входные данные в окнах с более высоким разрешением на рабочем столе; в противном случае — **`uiAccess='false'`** . По умолчанию — **`uiAccess='false'`** . Задайте для этого аргумента значение **`uiAccess='true'`** только для приложений со специальными возможностями пользовательского интерфейса.
 
 *`fragment`*<br/>
 Строка, содержащая *`level`* *`uiAccess`* значения и. При необходимости можно заключить в двойные кавычки. Дополнительные сведения см. в разделе [Примечания](#remarks).
@@ -59,7 +60,7 @@ ms.locfileid: "85334940"
 
 > **`/MANIFESTUAC:`** \[ **`"`** ] **`level=`** { **`'asInvoker'`** | **`'highestAvailable'`** | **`'requireAdministrator'`** } **`uiAccess=`** { **`'true'`** | **`'false'`** } \[ **`"`** ]
 
-Пример.
+Пример:
 
 **`/MANIFESTUAC:"level='highestAvailable' uiAccess='true'"`**
 
@@ -67,15 +68,15 @@ ms.locfileid: "85334940"
 
 1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
-1. Откройте **Configuration Properties**  >  **Linker**  >  страницу свойств**файл манифеста** компоновщика свойств конфигурации.
+1. Откройте   >    >  страницу свойств **файл манифеста** компоновщика свойств конфигурации.
 
-1. Измените параметры **включить контроль учетных записей пользователей (UAC)**, **уровень выполнения UAC**и **Обход свойств защиты пользовательского интерфейса UAC** .
+1. Измените параметры **включить контроль учетных записей пользователей (UAC)**, **уровень выполнения UAC** и **Обход свойств защиты пользовательского интерфейса UAC** .
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Задание данного параметра компоновщика программным способом
 
 1. См. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EnableUAC%2A>, <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.UACExecutionLevel%2A> и <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.UACUIAccess%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по компоновщику MSVC](linking.md)<br/>
 [Параметры компоновщика MSVC](linker-options.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: макросы класса Window'
 title: Макросы класса Window
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 - atlwin/ATL::DECLARE_WND_SUPERCLASS
 - atlwin/ATL::DECLARE_WND_CLASS_EX
 ms.assetid: ce18681a-2bab-4453-9895-0f3ea47c2b24
-ms.openlocfilehash: ca19eba1632ef3754b704c82ad5a872160ae0c91
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: eb1abcdfea2f3f7e3a8859473d3fabe734906afe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834470"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138689"
 ---
 # <a name="window-class-macros"></a>Макросы класса Window
 
@@ -41,7 +42,7 @@ DECLARE_WND_CLASS( WndClassName )
 *вндкласснаме*<br/>
 окне Имя нового класса окна. Если значение равно NULL, ATL создаст имя класса Window.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если используется параметр компилятора/permissive-, то DECLARE_WND_CLASS вызовет ошибку компилятора; Вместо этого используйте DECLARE_WND_CLASS2.
 
@@ -79,7 +80,7 @@ DECLARE_WND_CLASS2( WndClassName, EnclosingClass )
 *енклосингкласс*<br/>
 окне Имя класса окна, охватывающего новый класс окна. Не может быть NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если используется параметр/permissive-, то DECLARE_WND_CLASS вызовет ошибку компиляции, так как она содержит зависимое имя. DECLARE_WND_CLASS2 требует явного указания имени класса, в котором используется этот макрос, и не вызывает ошибку в/permissive-флаге.
 В противном случае этот макрос идентичен [DECLARE_WND_CLASS](#declare_wnd_class).
@@ -100,7 +101,7 @@ DECLARE_WND_SUPERCLASS( WndClassName, OrigWndClassName )
 *оригвндкласснаме*<br/>
 окне Имя существующего класса окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот макрос позволяет указать имя класса окна, который будет суперклассом для существующего класса Window. [Квндклассинфо](cwndclassinfo-class.md) управляет сведениями о суперклассе.
 
@@ -133,7 +134,7 @@ DECLARE_WND_CLASS_EX( WndClassName, style, bkgnd )
 *Фоновая*<br/>
 окне Цвет фона окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот макрос позволяет указать параметры класса нового класса Window, сведения которого будут управляться с помощью [квндклассинфо](cwndclassinfo-class.md). DECLARE_WND_CLASS_EX определяет новый класс окна, реализуя следующую статическую функцию:
 

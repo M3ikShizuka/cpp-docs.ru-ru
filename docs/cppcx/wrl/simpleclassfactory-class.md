@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: метод simpleclassfactory Class'
 title: SimpleClassFactory - класс
 ms.date: 09/7/2018
 ms.topic: reference
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Microsoft::WRL::SimpleClassFactory class
 - Microsoft::WRL::SimpleClassFactory::CreateInstance method
 ms.assetid: 6edda1b2-4e44-4e14-9364-72f519249962
-ms.openlocfilehash: 66794789e51a2635fae646cca49e4fae8385dfe0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: cd771909790f80048d8fee678b842f820e2f7be2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211155"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135204"
 ---
 # <a name="simpleclassfactory-class"></a>SimpleClassFactory - класс
 
@@ -32,7 +33,7 @@ class SimpleClassFactory : public ClassFactory<>;
 *Из*<br/>
 Базовый класс.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Базовый класс должен предоставлять конструктор по умолчанию.
 
@@ -78,7 +79,7 @@ class SimpleClassFactory : public ClassFactory<>;
 
 **Пространство имен:** Microsoft::WRL
 
-## <a name="simpleclassfactorycreateinstance-method"></a><a name="createinstance"></a>Метод метод simpleclassfactory:: CreateInstance
+## <a name="simpleclassfactorycreateinstance-method"></a><a name="createinstance"></a> Метод метод simpleclassfactory:: CreateInstance
 
 Создает экземпляр указанного интерфейса.
 
@@ -107,6 +108,6 @@ SimpleClassFactory не поддерживает агрегирование. Е�
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если `__WRL_STRICT__` определено значение, выдается ошибка Assert, если базовый класс, указанный в параметре шаблона класса, не является производным от [RuntimeClass](runtimeclass-class.md)или не настроен с помощью значения перечисления Классикком или WinRtClassicComMix [RuntimeClassType](runtimeclasstype-enumeration.md) .

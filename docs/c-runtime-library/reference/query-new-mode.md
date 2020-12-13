@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _query_new_mode'
 title: _query_new_mode
 ms.date: 11/04/2016
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - handler modes
 - _query_new_mode function
 ms.assetid: e185c5f9-b73b-4257-8eff-b47648374768
-ms.openlocfilehash: 26fabc71337f1554b63909697b601a0bd9e86638
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 90c7355f4babc4726c8b52d61309eb1ceb23c9a3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216834"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137141"
 ---
 # <a name="_query_new_mode"></a>_query_new_mode
 
@@ -50,7 +51,7 @@ int _query_new_mode(
 
 Возвращает текущий новый режим обработчика, а именно 0 или 1 для **malloc**. Возвращаемое значение 1 указывает, что при сбое выделения памяти **malloc** вызывает новую подпрограммы обработчика; Возвращаемое значение 0 указывает, что это не так.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_Query_new_mode** c++ возвращает целое число, указывающее новый режим обработчика, заданный функцией [_set_new_mode](set-new-mode.md) C++ для [malloc](malloc.md). Новый режим обработчика показывает **, будет ли** при сбое выделения памяти вызывать новую подпрограммы обработчика, заданную [_set_new_handler](set-new-handler.md). По умолчанию **malloc** не вызывает новую подпрограммы обработчика при сбое. Можно использовать **_set_new_mode** , чтобы переопределить это поведение, чтобы в случае сбоя **malloc** вызовет новую подпрограммы обработчика так же, как это **`new`** делает оператор в случае сбоя выделения памяти. Дополнительные сведения см. в разделе о [новых и удаленных операторах](../../cpp/new-and-delete-operators.md) справочника по языку C++.
 
@@ -70,6 +71,6 @@ int _query_new_mode(
 
 [Выделение памяти](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](calloc.md)<br/>
-[свободный](free.md)<br/>
+[free](free.md)<br/>
 [realloc](realloc.md)<br/>
 [_query_new_handler](query-new-handler.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C2707'
 title: Ошибка компилятора C2707
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2707
 ms.assetid: 3deaf45c-74da-4c9d-acc6-b82412720b74
-ms.openlocfilehash: eaac568387138450577ead23f1470c37ad300335
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1f615da7ebd2884cbaae26d7c1966725186e2883
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225427"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97144837"
 ---
 # <a name="compiler-error-c2707"></a>Ошибка компилятора C2707
 
@@ -21,9 +22,9 @@ ms.locfileid: "87225427"
 
 - `_exception_code()`вне фильтра или блока исключений **`__except`**
 
-- `_exception_info()`за пределами фильтра исключений
+- `_exception_info()` за пределами фильтра исключений
 
-- `_abnormal_termination()`за пределами **`__finally`** блока
+- `_abnormal_termination()` за пределами **`__finally`** блока
 
 Чтобы устранить эту ошибку, убедитесь, что встроенные функции обработки исключений помещаются в соответствующий контекст.
 

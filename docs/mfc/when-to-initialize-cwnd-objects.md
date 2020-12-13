@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: когда следует инициализировать объекты CWnd'
 title: Время инициализации объектов CWnd
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,23 +10,23 @@ helpviewer_keywords:
 - HWND, when attached to CWnd object
 - CWnd objects [MFC], when to initialize
 ms.assetid: 4d31bcb1-73db-4f2f-b71c-89b087569a10
-ms.openlocfilehash: aa396ade2e8ab4e1245e161423de7bd5bfafaaf8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 89d40b826507574fddd41364ac6cecc526663519
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62405720"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142770"
 ---
 # <a name="when-to-initialize-cwnd-objects"></a>Время инициализации объектов CWnd
 
-Нельзя создавать свои собственные дочерние окна или вызывать любые функции Windows API в конструкторе класса `CWnd`-объект, производный от. Это обусловлено `HWND` для `CWnd` объект еще не создан. Наиболее Windows инициализации, например добавление дочерних окон, должна быть выполнена в [OnCreate](../mfc/reference/cwnd-class.md#oncreate) обработчик сообщений.
+Нельзя создавать собственные дочерние окна или вызывать функции API Windows в конструкторе `CWnd` объекта, производного от. Это происходит потому, что `HWND` `CWnd` объект для объекта еще не создан. Большая часть инициализации Windows, например добавление дочерних окон, должна выполняться обработчиком сообщений [OnCreate](../mfc/reference/cwnd-class.md#oncreate) .
 
-## <a name="what-do-you-want-to-know-more-about"></a>Выберите для получения дополнительных сведений
+## <a name="what-do-you-want-to-know-more-about"></a>Что вы хотите узнать подробнее
 
 - [Создание окон фрейма документа](../mfc/creating-document-frame-windows.md)
 
 - [Создание документа или представления](../mfc/document-view-creation.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Использование окон фрейма](../mfc/using-frame-windows.md)

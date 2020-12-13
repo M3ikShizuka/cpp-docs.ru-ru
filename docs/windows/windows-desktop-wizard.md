@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о мастере Windows Desktop
 title: Мастер классических приложений Windows
 ms.date: 03/29/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - Windows Desktop Wizard
 - Win32 Project Wizard
 ms.assetid: 5d7b3a5e-8461-479a-969a-67b7883725b9
-ms.openlocfilehash: 47984b4c4416bf129efb226381fe778659aa16ca
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: b80a5fb23bd9ce2428bee17b9c4ca6fd9401d1e4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503514"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135932"
 ---
 # <a name="windows-desktop-wizard"></a>Мастер классических приложений Windows
 
@@ -31,7 +32,7 @@ ms.locfileid: "91503514"
 |**поддержка ATL**|Да|Нет|Нет|Нет|
 |**поддержка MFC**|Да|Нет|Нет|Да|
 
-## <a name="overview"></a>Обзор
+## <a name="overview"></a>Общие сведения
 
 На этой странице мастера описываются текущие параметры проекта для создаваемого приложения Win32. По умолчанию заданы следующие параметры:
 
@@ -76,7 +77,7 @@ ms.locfileid: "91503514"
 |**ATL**|Встраивает в проект поддержку для классов в библиотеке активных шаблонов (ATL). Только для консольных приложений Win32.<br /><br /> **Примечание** . Этот параметр не указывает на поддержку добавления объектов ATL с помощью мастеров кода ATL. Объекты ATL можно добавлять только в проекты ATL или проекты MFC с поддержкой ATL.|
 |**MFC**|Встраивает в проект поддержку библиотеки Microsoft Foundation Class (MFC). Только для консольных приложений Win32 и статических библиотек.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Создав классическое приложение Windows, можно добавить универсальные классы C++ с помощью мастера [универсального](../ide/adding-a-generic-cpp-class.md#generic-c-class-wizard) кода. Можно добавить другие элементы, такие как файлы HTML, файлы заголовков, ресурсы или текстовые файлы.
 

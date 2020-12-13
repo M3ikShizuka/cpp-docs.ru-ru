@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: класс текстуры'
 title: Класс texture
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,12 +18,12 @@ f1_keywords:
 - AMP_GRAPHICS/concurrency::graphics::texture::depth_pitch
 - AMP_GRAPHICS/concurrency::graphics::texture::row_pitch
 ms.assetid: 16e85d4d-e80a-474a-995d-8bf63fbdf34c
-ms.openlocfilehash: b8a37293166ec21aeb9410f05fb70c9753ec4f22
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d8712f0d8ef3a66c921b63ae938f575e982d3d97
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230419"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97142757"
 ---
 # <a name="texture-class"></a>Класс texture
 
@@ -47,21 +48,21 @@ class texture;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |`scalar_type`|Скалярные типы.|
 |`value_type`|Типы значений.|
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[Конструктор текстур](#ctor)|Инициализирует новый экземпляр класса `texture`.|
 |[~ Деструктор текстуры](#ctor)|Уничтожает `texture` объект.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[copy_to](#copy_to)|Копирует `texture` объект в место назначения, выполняя глубокое копирование.|
 |[data](#data)|Возвращает указатель ЦП на необработанные данные этой текстуры.|
@@ -73,21 +74,21 @@ class texture;
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[оператор ()](#operator_call)|Возвращает значение элемента, заданное параметрами.|
-|[оператор\[\]](#operator_at)|Возвращает элемент, расположенный по указанному индексу.|
+|[станции\[\]](#operator_at)|Возвращает элемент, расположенный по указанному индексу.|
 |[Оператор =](#operator_eq)|Копирует указанный объект [текстуры](texture-class.md) в эту единицу.|
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа Rank](#rank)|Возвращает ранг `texture` объекта.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[associated_accelerator_view](#associated_accelerator_view)|Возвращает [accelerator_view](accelerator-view-class.md) , который является предпочтительным целевым объектом для копирования текстуры в.|
 |[depth_pitch](#depth_pitch)|Возвращает число байтов между каждым срезом глубины в трехмерной текстуре на ЦП.|
@@ -105,7 +106,7 @@ class texture;
 
 **Пространство имен:** Concurrency:: Graphics
 
-## <a name="texture"></a><a name="dtor"></a>~ Текстура
+## <a name="texture"></a><a name="dtor"></a> ~ Текстура
 
 Уничтожает `texture` объект.
 
@@ -113,7 +114,7 @@ class texture;
 ~texture() restrict(cpu);
 ```
 
-## <a name="associated_accelerator_view"></a><a name="associated_accelerator_view"></a>associated_accelerator_view
+## <a name="associated_accelerator_view"></a><a name="associated_accelerator_view"></a> associated_accelerator_view
 
 Возвращает [accelerator_view](accelerator-view-class.md) , который является предпочтительным целевым объектом для копирования текстуры в.
 
@@ -121,7 +122,7 @@ class texture;
 __declspec(property(get= get_associated_accelerator_view)) Concurrency::accelerator_view associated_accelerator_view;
 ```
 
-## <a name="copy_to"></a><a name="copy_to"></a>copy_to
+## <a name="copy_to"></a><a name="copy_to"></a> copy_to
 
 Копирует `texture` объект в место назначения, выполняя глубокое копирование.
 
@@ -155,7 +156,7 @@ const void* data() const restrict(cpu);
 
 Указатель на необработанные данные текстуры.
 
-## <a name="depth_pitch"></a><a name="depth_pitch"></a>depth_pitch
+## <a name="depth_pitch"></a><a name="depth_pitch"></a> depth_pitch
 
 Возвращает число байтов между каждым срезом глубины в трехмерной текстуре на ЦП.
 
@@ -163,7 +164,7 @@ const void* data() const restrict(cpu);
 __declspec(property(get= get_depth_pitch)) unsigned int depth_pitch;
 ```
 
-## <a name="get"></a><a name="get"></a>Получить
+## <a name="get"></a><a name="get"></a> Получить
 
 Возвращает значение элемента по указанному индексу.
 
@@ -180,7 +181,7 @@ const value_type get(const index<_Rank>& _Index) const restrict(amp);
 
 Значение элемента по указанному индексу.
 
-## <a name="get_associated_accelerator_view"></a><a name="get_associated_accelerator_view"></a>get_associated_accelerator_view
+## <a name="get_associated_accelerator_view"></a><a name="get_associated_accelerator_view"></a> get_associated_accelerator_view
 
 Возвращает accelerator_view, который является предпочтительным целевым объектом для копирования текстуры в.
 
@@ -192,7 +193,7 @@ Concurrency::accelerator_view get_associated_accelerator_view() const restrict(c
 
 [Accelerator_view](accelerator-view-class.md) , который является предпочтительным целевым объектом для этой текстуры, в которую будет скопирована Эта текстура.
 
-## <a name="get_depth_pitch"></a><a name="get_depth_pitch"></a>get_depth_pitch
+## <a name="get_depth_pitch"></a><a name="get_depth_pitch"></a> get_depth_pitch
 
 Возвращает число байтов между каждым срезом глубины в трехмерной текстуре на ЦП.
 
@@ -204,7 +205,7 @@ unsigned int get_depth_pitch() const restrict(cpu);
 
 Число байтов между каждым срезом глубины в трехмерной промежуточной текстуре ЦП.
 
-## <a name="get_row_pitch"></a><a name="get_row_pitch"></a>get_row_pitch
+## <a name="get_row_pitch"></a><a name="get_row_pitch"></a> get_row_pitch
 
 Возвращает число байтов между каждой строкой в двумерной промежуточной текстуре или между каждой строкой среза глубины в трехмерной промежуточной текстуре.
 
@@ -216,7 +217,7 @@ unsigned int get_row_pitch() const restrict(cpu);
 
 Число байтов между каждой строкой в двумерной промежуточной текстуре или между каждой строкой среза глубины в трехмерной промежуточной текстуре.
 
-## <a name="operator"></a><a name="operator_call"></a>оператор ()
+## <a name="operator"></a><a name="operator_call"></a> оператор ()
 
 Возвращает значение элемента, заданное параметрами.
 
@@ -258,7 +259,7 @@ const value_type operator() (
 
 Значение элемента, заданное параметрами.
 
-## <a name="operator"></a><a name="operator_at"></a>operator []
+## <a name="operator"></a><a name="operator_at"></a> operator[]
 
 Возвращает элемент, расположенный по указанному индексу.
 
@@ -280,7 +281,7 @@ const value_type operator[] (int _I0) const restrict(amp);
 
 Элемент, расположенный по указанному индексу.
 
-## <a name="operator"></a><a name="operator_eq"></a>Оператор =
+## <a name="operator"></a><a name="operator_eq"></a> Оператор =
 
 Копирует указанный объект [текстуры](texture-class.md) в эту единицу.
 
@@ -301,7 +302,7 @@ texture& operator= (
 
 Ссылка на этот `texture` объект.
 
-## <a name="rank"></a><a name="rank"></a>Рейтинг
+## <a name="rank"></a><a name="rank"></a> Рейтинг
 
 Возвращает ранг `texture` объекта.
 
@@ -309,7 +310,7 @@ texture& operator= (
 static const int rank = _Rank;
 ```
 
-## <a name="row_pitch"></a><a name="row_pitch"></a>row_pitch
+## <a name="row_pitch"></a><a name="row_pitch"></a> row_pitch
 
 Возвращает количество байтов между строками в двухмерной или трехмерной промежуточной текстуре ЦП.
 
@@ -317,7 +318,7 @@ static const int rank = _Rank;
 __declspec(property(get= get_row_pitch)) unsigned int row_pitch;
 ```
 
-## <a name="set"></a><a name="set"></a>параметр
+## <a name="set"></a><a name="set"></a> параметр
 
 Задает значение элемента по указанному индексу.
 
@@ -338,7 +339,7 @@ void set(
 *value*<br/>
 Новое значение элемента.
 
-## <a name="texture"></a><a name="ctor"></a>поддержки
+## <a name="texture"></a><a name="ctor"></a> поддержки
 
 Инициализирует новый экземпляр класса `texture`.
 
@@ -594,6 +595,6 @@ Accelerator_view, указывающий предпочтительный цел
 *_Rank*<br/>
 Ранг раздела.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Пространство имен Concurrency::graphics](concurrency-graphics-namespace.md)

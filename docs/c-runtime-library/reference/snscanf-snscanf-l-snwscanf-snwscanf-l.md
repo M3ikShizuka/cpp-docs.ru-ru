@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _snscanf, _snscanf_l, _snwscanf, _snwscanf_l'
 title: _snscanf, _snscanf_l, _snwscanf, _snwscanf_l
 ms.date: 11/04/2016
 api_name:
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - strings [C++], reading
 - _snscanf function
 ms.assetid: da1ac890-f905-4cd7-954b-3c90957b5551
-ms.openlocfilehash: f259eede1b2927b4676467c3450504f7ff7c19de
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 0098578a012666a498062a78eb9ae17d362ea466
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70947940"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97137024"
 ---
 # <a name="_snscanf-_snscanf_l-_snwscanf-_snwscanf_l"></a>_snscanf, _snscanf_l, _snwscanf, _snwscanf_l
 
@@ -95,7 +96,7 @@ int __cdecl _snwscanf_l(
 
 ### <a name="parameters"></a>Параметры
 
-*входной*<br/>
+*input*<br/>
 Входная строка для анализа.
 
 *length*<br/>
@@ -118,13 +119,13 @@ int __cdecl _snwscanf_l(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эта функция похожа на **sscanf** , за исключением того, что она предоставляет возможность указать фиксированное число символов для проверки из входной строки. Дополнительные сведения см. в разделе [sscanf](sscanf-sscanf-l-swscanf-swscanf-l.md).
 
 Версии этих функций с суффиксом **_l** идентичны за исключением того, что они используют переданный параметр языкового стандарта вместо локали текущего потока.
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Процедура Tchar.h|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -138,7 +139,7 @@ int __cdecl _snwscanf_l(
 |**_snscanf**, **_snscanf_l**|\<stdio.h>|
 |**_snwscanf**, **_snwscanf_l**|\<stdio.h> или \<wchar.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -173,6 +174,6 @@ _snscanf converted 2 fields: 15 and 12.000000
 _snwscanf converted 2 fields: 15 and 12.000000
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Спецификация ширины scanf](../../c-runtime-library/scanf-width-specification.md)<br/>

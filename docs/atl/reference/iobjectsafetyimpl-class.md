@@ -1,5 +1,6 @@
 ---
-title: IObjectSafetyImpl класс
+description: 'Дополнительные сведения о: Иобжектсафетимпл Class'
+title: Класс Иобжектсафетимпл
 ms.date: 11/04/2016
 f1_keywords:
 - IObjectSafetyImpl
@@ -13,19 +14,19 @@ helpviewer_keywords:
 - IObjectSafety, ATL implementation
 - IObjectSafetyImpl class
 ms.assetid: 64e32082-d910-4a8a-a5bf-ebed9145359d
-ms.openlocfilehash: 6eee7585bc3c5587e106ab6b0cefb4b7129df59f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ac19fe24d12d7d09968b3e2d76f77741e83e1f81
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81329652"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97139468"
 ---
-# <a name="iobjectsafetyimpl-class"></a>IObjectSafetyImpl класс
+# <a name="iobjectsafetyimpl-class"></a>Класс Иобжектсафетимпл
 
-Этот класс обеспечивает реализацию `IObjectSafety` интерфейса по умолчанию, позволяющую клиенту получать и устанавливать уровни безопасности объекта.
+Этот класс предоставляет реализацию интерфейса по умолчанию, позволяющую `IObjectSafety` клиенту получать и устанавливать уровни безопасности объекта.
 
 > [!IMPORTANT]
-> Этот класс и его члены не могут быть использованы в приложениях, выполняемых в Windows Runtime.
+> Этот класс и его члены не могут использоваться в приложениях, выполняемых в среда выполнения Windows.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -37,37 +38,37 @@ class IObjectSafetyImpl
 #### <a name="parameters"></a>Параметры
 
 *T*<br/>
-Ваш класс, полученный из `IObjectSafetyImpl`.
+Класс, производный от `IObjectSafetyImpl` .
 
-*dwSupportedSafety*<br/>
-Определяет поддерживаемые варианты безопасности для управления. Может использоваться одно из следующих значений:
+*двсуппортедсафети*<br/>
+Задает поддерживаемые параметры безопасности для элемента управления. Может иметь одно из следующих значений:
 
-- INTERFACESAFE_FOR_UNTRUSTED_CALLER интерфейс, идентифицированный параметром `riid` [SetInterfaceSafetyOptions,](#setinterfacesafetyoptions) должен быть безопасным для сценариев.
+- INTERFACESAFE_FOR_UNTRUSTED_CALLER интерфейс, определяемый параметром [сетинтерфацесафетйоптионс](#setinterfacesafetyoptions) , `riid` должен быть защищен для создания скриптов.
 
-- INTERFACESAFE_FOR_UNTRUSTED_DATA интерфейс, идентифицированный `riid` по параметру, `SetInterfaceSafetyOptions` должен быть безопасным для ненадежных данных во время инициализации.
+- INTERFACESAFE_FOR_UNTRUSTED_DATA интерфейс, определяемый `SetInterfaceSafetyOptions` параметром, `riid` должен быть защищен для ненадежных данных во время инициализации.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[IObjectSafetyImpl::GetInterfaceSafetyOptions](#getinterfacesafetyoptions)|Извлекает параметры безопасности, поддерживаемые объектом, а также параметры безопасности, установленные в настоящее время для объекта.|
-|[IObjectSafetyImpl::SetInterfaceSafetyOptions](#setinterfacesafetyoptions)|Делает объект безопасным для инициализации или скриптов.|
+|[Иобжектсафетимпл:: Жетинтерфацесафетйоптионс](#getinterfacesafetyoptions)|Извлекает параметры безопасности, поддерживаемые объектом, а также параметры безопасности, установленные для объекта.|
+|[Иобжектсафетимпл:: Сетинтерфацесафетйоптионс](#setinterfacesafetyoptions)|Делает объект надежным для инициализации или создания скриптов.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[IObjectSafetyImpl::m_dwCurrentSafety](#m_dwcurrentsafety)|Хранит текущий уровень безопасности объекта.|
+|[Иобжектсафетимпл:: m_dwCurrentSafety](#m_dwcurrentsafety)|Сохраняет текущий уровень безопасности объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Класс `IObjectSafetyImpl` обеспечивает реализацию `IObjectSafety`по умолчанию . Интерфейс `IObjectSafety` позволяет клиенту получить и установить уровень безопасности объекта. Например, веб-браузер `IObjectSafety::SetInterfaceSafetyOptions` может вызвать, чтобы сделать контроль безопасным для инициализации или безопасным для скриптов.
+Класс `IObjectSafetyImpl` предоставляет реализацию по умолчанию `IObjectSafety` . `IObjectSafety`Интерфейс позволяет клиенту извлекать и устанавливать уровни безопасности объекта. Например, веб-браузер может вызвать `IObjectSafety::SetInterfaceSafetyOptions` , чтобы сделать элемент управления надежным для инициализации или обеспечения безопасности при написании сценариев.
 
-Обратите внимание, что использование [IMPLEMENTED_CATEGORY](category-macros.md#implemented_category) макроса с категориями CATID_SafeForScripting и CATID_SafeForInitializing компонентов обеспечивает альтернативный способ определения того, что компонент является безопасным.
+Обратите внимание, что использование макроса [IMPLEMENTED_CATEGORY](category-macros.md#implemented_category) с категориями компонентов CATID_SafeForScripting и CATID_SafeForInitializing предоставляет альтернативный способ указания того, что компонент является надежным.
 
-**Похожие статьи** [ATL Учебник](../../atl/active-template-library-atl-tutorial.md), Создание проекта [ATL](../../atl/reference/creating-an-atl-project.md)
+Руководство по **сопутствующим статьям** [ATL](../../atl/active-template-library-atl-tutorial.md), [Создание проекта ATL](../../atl/reference/creating-an-atl-project.md)
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -77,11 +78,11 @@ class IObjectSafetyImpl
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlctl.h
+**Заголовок:** атлктл. h
 
-## <a name="iobjectsafetyimplgetinterfacesafetyoptions"></a><a name="getinterfacesafetyoptions"></a>IObjectSafetyImpl::GetInterfaceSafetyOptions
+## <a name="iobjectsafetyimplgetinterfacesafetyoptions"></a><a name="getinterfacesafetyoptions"></a> Иобжектсафетимпл:: Жетинтерфацесафетйоптионс
 
-Извлекает параметры безопасности, поддерживаемые объектом, а также параметры безопасности, установленные в настоящее время для объекта.
+Извлекает параметры безопасности, поддерживаемые объектом, а также параметры безопасности, установленные для объекта.
 
 ```
 HRESULT GetInterfaceSafetyOptions(
@@ -90,26 +91,26 @@ HRESULT GetInterfaceSafetyOptions(
     DWORD* pdwEnabledOptions);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Реализация возвращает соответствующие значения для любого интерфейса, `IUnknown::QueryInterface`поддерживаемого реализацией объекта.
+Реализация возвращает соответствующие значения для любого интерфейса, поддерживаемого реализацией объекта `IUnknown::QueryInterface` .
 
 > [!IMPORTANT]
-> Любой объект, который поддерживает, `IObjectSafety` отвечает за свою собственную безопасность и безопасность любого объекта, который он делегирует. Программист должен учитывать проблемы, возникающие в связи с запуском кода в контексте пользователя, кросс-сайтом сценариев и выполнять соответствующую проверку зоны.
+> Любой объект, который поддерживает, `IObjectSafety` отвечает за собственную безопасность, а также на все объекты, которые он делегирует. Программист должен учитывать проблемы, возникающие из-за выполнения кода в контексте пользователя, межсайтовые сценарии и выполнять подходящую проверку зоны.
 
-Смотрите [IObjectSafety::GetInterfaceSafetyOptions](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768223\(v=vs.85\)) в Windows SDK.
+См. раздел [иобжектсафети:: жетинтерфацесафетйоптионс](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768223\(v=vs.85\)) в Windows SDK.
 
-## <a name="iobjectsafetyimplm_dwcurrentsafety"></a><a name="m_dwcurrentsafety"></a>IObjectSafetyImpl::m_dwCurrentSafety
+## <a name="iobjectsafetyimplm_dwcurrentsafety"></a><a name="m_dwcurrentsafety"></a> Иобжектсафетимпл:: m_dwCurrentSafety
 
-Хранит текущий уровень безопасности объекта.
+Сохраняет текущий уровень безопасности объекта.
 
 ```
 DWORD m_dwCurrentSafety;
 ```
 
-## <a name="iobjectsafetyimplsetinterfacesafetyoptions"></a><a name="setinterfacesafetyoptions"></a>IObjectSafetyImpl::SetInterfaceSafetyOptions
+## <a name="iobjectsafetyimplsetinterfacesafetyoptions"></a><a name="setinterfacesafetyoptions"></a> Иобжектсафетимпл:: Сетинтерфацесафетйоптионс
 
-Делает объект безопасным для инициализации или скрипта, установив [m_dwCurrentSafety](#m_dwcurrentsafety) член омрачаемому значению.
+Делает объект надежным для инициализации или создания скриптов, устанавливая для элемента [m_dwCurrentSafety](#m_dwcurrentsafety) соответствующее значение.
 
 ```
 HRESULT SetInterfaceSafetyOptions(
@@ -118,16 +119,16 @@ HRESULT SetInterfaceSafetyOptions(
     DWORD dwEnabledOptions);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Реализация возвращает E_NOINTERFACE для любого интерфейса, не `IUnknown::QueryInterface`поддерживаемого реализацией объекта.
+Реализация возвращает E_NOINTERFACE для любого интерфейса, не поддерживаемого реализацией объекта `IUnknown::QueryInterface` .
 
 > [!IMPORTANT]
-> Любой объект, который поддерживает, `IObjectSafety` отвечает за свою собственную безопасность и безопасность любого объекта, который он делегирует. Программист должен учитывать проблемы, возникающие в связи с запуском кода в контексте пользователя, кросс-сайтом сценариев и выполнять соответствующую проверку зоны.
+> Любой объект, который поддерживает, `IObjectSafety` отвечает за собственную безопасность, а также на все объекты, которые он делегирует. Программист должен учитывать проблемы, возникающие из-за выполнения кода в контексте пользователя, межсайтовые сценарии и выполнять подходящую проверку зоны.
 
-Смотрите [IObjectSafety::SetInterfaceSafetyOptions](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768225\(v=vs.85\)) в Windows SDK.
+См. раздел [иобжектсафети:: сетинтерфацесафетйоптионс](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768225\(v=vs.85\)) в Windows SDK.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Интерфейс IObjectSafety](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768224\(v=vs.85\))<br/>
+[Интерфейс Иобжектсафети](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768224\(v=vs.85\))<br/>
 [Общие сведения о классах](../../atl/atl-class-overview.md)

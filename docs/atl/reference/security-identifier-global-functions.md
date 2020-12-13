@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: глобальные функции идентификатора безопасности'
 title: Глобальные функции идентификатора безопасности
 ms.date: 11/04/2016
 f1_keywords:
@@ -37,12 +38,12 @@ helpviewer_keywords:
 - security IDs [C++]
 - SIDs [C++], returning SID objects
 ms.assetid: 85404dcb-c59b-4535-ab3d-66cfa37e87de
-ms.openlocfilehash: e040cbb76e851bd323360f4f5ae602f9c73651d1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 035cdf2991f00d518bf4cfc3a93a226650728846
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834483"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97138870"
 ---
 # <a name="security-identifier-global-functions"></a>Глобальные функции идентификатора безопасности
 
@@ -218,7 +219,7 @@ CSid Network() throw(...);
 CSid NetworkService() throw(...);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте сетевую учетную запись, чтобы разрешить пользователю NT AUTHORITY\NetworkService чтение объекта безопасности Кперфмон. NetworkService добавляет SecurityAttribute в код Атлсервер, который позволяет библиотеке DLL входить в систему под учетной записью NetworkService в Windows XP Home Edition, Windows XP Professional, Windows Server 2003 и более поздних операционных системах.
 

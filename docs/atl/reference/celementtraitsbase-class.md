@@ -1,5 +1,6 @@
 ---
-title: Класс CElementTraitsBase
+description: 'Дополнительные сведения о: Целементтраитсбасе Class'
+title: Класс Целементтраитсбасе
 ms.date: 11/04/2016
 f1_keywords:
 - CElementTraitsBase
@@ -11,14 +12,14 @@ f1_keywords:
 helpviewer_keywords:
 - CElementTraitsBase class
 ms.assetid: 75284caf-347e-4355-a7d8-efc708dd514a
-ms.openlocfilehash: 5a29e8778cf2f3400df25b55574950a005bad995
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: a200517e378cc3c3ca854ff60e9a49ac8e43d215
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81327006"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97141782"
 ---
-# <a name="celementtraitsbase-class"></a>Класс CElementTraitsBase
+# <a name="celementtraitsbase-class"></a>Класс Целементтраитсбасе
 
 Этот класс предоставляет методы копирования и перемещения по умолчанию для класса коллекции.
 
@@ -32,37 +33,37 @@ class CElementTraitsBase
 #### <a name="parameters"></a>Параметры
 
 *T*<br/>
-Тип данных, которые будут храниться в коллекции.
+Тип данных, сохраняемых в коллекции.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
 |Имя|Описание|
 |----------|-----------------|
-|[CElementTraitsBase::INARGTYPE](#inargtype)|Тип данных для добавления элементов в объект класса сбора.|
-|[CElementTraitsBase::OUTARGTYPE](#outargtype)|Тип данных для извлечения элементов из объекта класса сбора.|
+|[Целементтраитсбасе:: ИНАРГТИПЕ](#inargtype)|Тип данных, используемый для добавления элементов в объект класса коллекции.|
+|[Целементтраитсбасе:: АУТАРГТИПЕ](#outargtype)|Тип данных, используемый для извлечения элементов из объекта класса коллекции.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CElementTraitsBase::CopyElements](#copyelements)|Вызовите этот метод для копирования элементов, хранящихся в объекте класса коллекции.|
-|[CElementTraitsBase::ПереместитьЭлементы](#relocateelements)|Вызовите этот метод для перемещения элементов, хранящихся в объекте класса сбора.|
+|[Целементтраитсбасе:: Копелементс](#copyelements)|Вызовите этот метод, чтобы скопировать элементы, хранящиеся в объекте класса коллекции.|
+|[Целементтраитсбасе:: Релокатилементс](#relocateelements)|Вызовите этот метод, чтобы перенести элементы, хранящиеся в объекте класса коллекции.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот базовый класс определяет методы копирования и перемещения элементов в классе коллекции. Он используется в классах [CDefaultElementTraits](../../atl/reference/cdefaultelementtraits-class.md), [CStringRefElementTraits](../../atl/reference/cstringrefelementtraits-class.md)и [CStringElementTraitsI](../../atl/reference/cstringelementtraitsi-class.md).
+Этот базовый класс определяет методы для копирования и перемещения элементов в классе коллекции. Они используются классами [кдефаултелементтраитс](../../atl/reference/cdefaultelementtraits-class.md), [кстрингрефелементтраитс](../../atl/reference/cstringrefelementtraits-class.md)и [кстринжелементтраитси](../../atl/reference/cstringelementtraitsi-class.md).
 
-Для получения дополнительной информации, [см.](../../atl/atl-collection-classes.md)
+Дополнительные сведения см. в разделе [классы коллекций ATL](../../atl/atl-collection-classes.md).
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlcoll.h
+**Заголовок:** атлколл. h
 
-## <a name="celementtraitsbasecopyelements"></a><a name="copyelements"></a>CElementTraitsBase::CopyElements
+## <a name="celementtraitsbasecopyelements"></a><a name="copyelements"></a> Целементтраитсбасе:: Копелементс
 
-Вызовите этот метод для копирования элементов, хранящихся в объекте класса коллекции.
+Вызовите этот метод, чтобы скопировать элементы, хранящиеся в объекте класса коллекции.
 
 ```
 static void CopyElements(
@@ -74,37 +75,37 @@ static void CopyElements(
 ### <a name="parameters"></a>Параметры
 
 *pDest*<br/>
-Указатель на первый элемент, который будет получать скопированные данные.
+Указатель на первый элемент, который получит скопированные данные.
 
-*Psrc*<br/>
+*pSrc*<br/>
 Указатель на первый элемент для копирования.
 
-*nЭлементы*<br/>
+*нелементс*<br/>
 Число элементов для копирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Элементы источника и назначения не должны пересекаться.
+Исходный и конечный элементы не должны перекрываться.
 
-## <a name="celementtraitsbaseinargtype"></a><a name="inargtype"></a>CElementTraitsBase::INARGTYPE
+## <a name="celementtraitsbaseinargtype"></a><a name="inargtype"></a> Целементтраитсбасе:: ИНАРГТИПЕ
 
-Тип данных для добавления элементов в коллекцию.
+Тип данных, используемый для добавления элементов в коллекцию.
 
 ```
 typedef const T& INARGTYPE;
 ```
 
-## <a name="celementtraitsbaseoutargtype"></a><a name="outargtype"></a>CElementTraitsBase::OUTARGTYPE
+## <a name="celementtraitsbaseoutargtype"></a><a name="outargtype"></a> Целементтраитсбасе:: АУТАРГТИПЕ
 
-Тип данных для извлечения элементов из коллекции.
+Тип данных, используемый для получения элементов из коллекции.
 
 ```
 typedef T& OUTARGTYPE;
 ```
 
-## <a name="celementtraitsbaserelocateelements"></a><a name="relocateelements"></a>CElementTraitsBase::ПереместитьЭлементы
+## <a name="celementtraitsbaserelocateelements"></a><a name="relocateelements"></a> Целементтраитсбасе:: Релокатилементс
 
-Вызовите этот метод для перемещения элементов, хранящихся в объекте класса сбора.
+Вызовите этот метод, чтобы перенести элементы, хранящиеся в объекте класса коллекции.
 
 ```
 static void RelocateElements(
@@ -116,17 +117,17 @@ static void RelocateElements(
 ### <a name="parameters"></a>Параметры
 
 *pDest*<br/>
-Указатель на первый элемент, который будет получать переложевы данные.
+Указатель на первый элемент, который получит перемещенные данные.
 
-*Psrc*<br/>
+*pSrc*<br/>
 Указатель на первый элемент для перемещения.
 
-*nЭлементы*<br/>
-Количество элементов для перемещения.
+*нелементс*<br/>
+Число элементов для перемещения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод называет [memmove](../../c-runtime-library/reference/memmove-wmemmove.md), который достаточен для большинства типов данных. Если движимые объекты содержат указатели для своих членов, этот метод необходимо будет переопределить.
+Этот метод вызывает [memmove](../../c-runtime-library/reference/memmove-wmemmove.md), который достаточно для большинства типов данных. Если перемещаемые объекты содержат указатели на свои собственные члены, этот метод потребуется переопределить.
 
 ## <a name="see-also"></a>См. также раздел
 

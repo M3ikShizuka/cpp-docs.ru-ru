@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: вктоб'
 title: wctob
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - wctob function
 - characters, converting
 ms.assetid: 46aec98b-c2f2-4e9d-9d89-7db99ba8a9a6
-ms.openlocfilehash: 3740e4bebcc63f0f664d40b2e048f19c2aa24c99
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 184c9858aebcdecf3b5d9857980f27be45a5d2d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215092"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97136870"
 ---
 # <a name="wctob"></a>wctob
 
@@ -49,14 +50,14 @@ int wctob(
 
 ### <a name="parameters"></a>Параметры
 
-*WCHAR*<br/>
+*wchar*<br/>
 Значение, которое необходимо преобразовать.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Если **вктоб** успешно преобразует расширенный символ, он возвращает его представление многобайтового символа, только если многобайтовый символ имеет длину ровно один байт. Если **вктоб** встречает широкий символ, который не может быть преобразован в многобайтовый символ или многобайтовый символ, не должен быть длиннее одного байта, возвращается значение-1.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **вктоб** преобразует расширенный символ, содержащийся в параметре *WCHAR* , в соответствующий многобайтовый символ, передаваемый возвращаемым **`int`** значением, если многобайтовый символ имеет длину в один байт.
 

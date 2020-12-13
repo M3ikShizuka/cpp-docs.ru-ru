@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: метод simpleactivationfactory Class'
 title: SimpleActivationFactory - класс
 ms.date: 09/07/2018
 ms.topic: reference
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - Microsoft::WRL::SimpleActivationFactory::GetRuntimeClassName method
 - Microsoft::WRL::SimpleActivationFactory::GetTrustLevel method
 ms.assetid: aff768e0-0038-4fd7-95d2-ad7d308da41c
-ms.openlocfilehash: 39e539c63e91b508f51656114ee8fbd68150991f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 83643c69977b887e58e430bbd500fcf7c2e81ca6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81370936"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97135217"
 ---
 # <a name="simpleactivationfactory-class"></a>SimpleActivationFactory - класс
 
@@ -33,26 +34,26 @@ class SimpleActivationFactory : public ActivationFactory<>;
 
 ### <a name="parameters"></a>Параметры
 
-*Базы*<br/>
+*Из*<br/>
 Базовый класс.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Базовый класс должен предоставить конструктор по умолчанию.
+Базовый класс должен предоставлять конструктор по умолчанию.
 
-Следующий пример кода демонстрирует, как использовать SimpleActivationFactory с помощью макроса [ActivatableWithFactoryEx.](activatableclass-macros.md)
+В следующем примере кода показано, как использовать метод simpleactivationfactory с макросом [активатаблеклассвисфакторекс](activatableclass-macros.md) .
 
 `ActivatableClassWithFactoryEx(MyClass, SimpleActivationFactory, MyServerName);`
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Метод SimpleActivationFactory::ActivateInstance](#activateinstance)|Создает экземпляр указанного интерфейса.|
-|[Метод SimpleActivationFactory::GetRuntimeClassName](#getruntimeclassname)|Получается название класса времени выполнения экземпляра класса, указанного параметром *шаблона* базового класса.|
-|[Метод SimpleActivationFactory::GetTrustLevel](#gettrustlevel)|Получает уровень доверия экземпляра класса, указанный параметром *шаблона* базового класса.|
+|[Метод SimpleActivationFactory::GetRuntimeClassName](#getruntimeclassname)|Возвращает имя класса среды выполнения для экземпляра класса, заданного параметром шаблона *базового* класса.|
+|[Метод SimpleActivationFactory::GetTrustLevel](#gettrustlevel)|Возвращает уровень доверия экземпляра класса, заданного параметром шаблона *базового* класса.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -80,11 +81,11 @@ class SimpleActivationFactory : public ActivationFactory<>;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** module.h
+**Заголовок:** Module. h
 
 **Пространство имен:** Microsoft::WRL
 
-## <a name="simpleactivationfactoryactivateinstance-method"></a><a name="activateinstance"></a>ПростаяактивацияФабрика::Метод активацииInstance
+## <a name="simpleactivationfactoryactivateinstance-method"></a><a name="activateinstance"></a> Метод метод simpleactivationfactory:: ActivateInstance
 
 Создает экземпляр указанного интерфейса.
 
@@ -96,18 +97,18 @@ STDMETHOD( ActivateInstance )(
 
 #### <a name="parameters"></a>Параметры
 
-*ppvObject*<br/>
-Когда эта операция завершается, указатель на экземпляр `Base` объекта, указанный параметром шаблона класса.
+*ппвобжект*<br/>
+По завершении этой операции указатель на экземпляр объекта, указанный `Base` параметром шаблона класса.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если `__WRL_STRICT__` определено, ошибка утверждения испускается, если базовый класс, указанный в параметре шаблона класса, не получен из [RuntimeClass](runtimeclass-class.md)или не настроен со значением перечисления WinRt или WinRtClassicComMix [RuntimeClassTypeType.](runtimeclasstype-enumeration.md)
+Если `__WRL_STRICT__` определено значение, выдается ошибка Assert, если базовый класс, указанный в параметре шаблона класса, не является производным от [RuntimeClass](runtimeclass-class.md)или не настроен с помощью значения перечисления WinRt или WinRtClassicComMix [RuntimeClassType](runtimeclasstype-enumeration.md) .
 
-## <a name="simpleactivationfactorygetruntimeclassname-method"></a><a name="getruntimeclassname"></a>SimpleActivationFactory::GetRuntimeClassName Метод
+## <a name="simpleactivationfactorygetruntimeclassname-method"></a><a name="getruntimeclassname"></a> Метод метод simpleactivationfactory:: GetRuntimeClassName
 
 Получает имя класса среды выполнения экземпляра класса, указанного в параметре шаблона класса `Base`.
 
@@ -119,20 +120,20 @@ STDMETHOD( GetRuntimeClassName )(
 
 #### <a name="parameters"></a>Параметры
 
-*время выполненияИмя*<br/>
+*рунтименаме*<br/>
 После завершения операции представляет имя класса среды выполнения.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если `__WRL_STRICT__` определено, ошибка утверждения испускается, если `Base` класс, указанный параметром шаблона класса, не получен из [RuntimeClass](runtimeclass-class.md)или не настроен со значением winRt или WinRtClassicComMix [RuntimeClassTypeType.](runtimeclasstype-enumeration.md)
+Если `__WRL_STRICT__` определено значение, выдается ошибка Assert, если класс, указанный `Base` параметром шаблона класса, не является производным от [RuntimeClass](runtimeclass-class.md)или не настроен с помощью значения перечисления WinRt или WinRtClassicComMix [RuntimeClassType](runtimeclasstype-enumeration.md) .
 
-## <a name="simpleactivationfactorygettrustlevel-method"></a><a name="gettrustlevel"></a>ПростаяактивацияФабрика::GetTrustLevel Метод
+## <a name="simpleactivationfactorygettrustlevel-method"></a><a name="gettrustlevel"></a> Метод метод simpleactivationfactory:: GetTrustLevel
 
-Получает уровень доверия экземпляра класса, `Base` указанный параметром шаблона класса.
+Возвращает уровень доверия экземпляра класса, заданного `Base` параметром шаблона класса.
 
 ```cpp
 STDMETHOD(
@@ -142,8 +143,8 @@ STDMETHOD(
 
 #### <a name="parameters"></a>Параметры
 
-*trustLvl*<br/>
-Когда эта операция завершается, уровень доверия объекта текущего класса.
+*трустлвл*<br/>
+По завершении этой операции уровень доверия текущего объекта класса.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
