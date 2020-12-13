@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: back_insert_iterator классе'
 title: Класс back_insert_iterator
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - std::back_insert_iterator [C++], container_type
 - std::back_insert_iterator [C++], reference
 ms.assetid: a1ee07f2-cf9f-46a1-8608-cfaf207f9713
-ms.openlocfilehash: 0a518253c28d89de6eeed51e152e11bfcb8bb969
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e8c188da7201ccb78866981ffb64e168d1a8fc32
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87203887"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132774"
 ---
 # <a name="back_insert_iterator-class"></a>Класс back_insert_iterator
 
@@ -33,7 +34,7 @@ class back_insert_iterator;
 *Контейнера*\
 Тип контейнера, в конец которого итератор `back_insert_iterator` вставит элементы.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Контейнер должен удовлетворять требованиям последовательности вставки в конечную часть, если можно вставить элементы в конец последовательности в постоянном времени с поправкой на амортизацию. Контейнеры последовательности стандартной библиотеки C++, определенные классами [deque](../standard-library/deque-class.md), [list](../standard-library/list-class.md) и [vector](../standard-library/vector-class.md), предоставляют необходимую функцию-член `push_back` и удовлетворяют данным требованиям. Эти три контейнера, как и строки, можно адаптировать для использования в сочетании с итераторами `back_insert_iterator`. Итератор `back_insert_iterator` всегда необходимо инициализировать с его контейнером.
 
@@ -60,11 +61,11 @@ class back_insert_iterator;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок**:\<iterator>
+**Заголовок**: \<iterator>
 
 **Пространство имен:** std
 
-## <a name="back_insert_iteratorback_insert_iterator"></a><a name="back_insert_iterator"></a>back_insert_iterator:: back_insert_iterator
+## <a name="back_insert_iteratorback_insert_iterator"></a><a name="back_insert_iterator"></a> back_insert_iterator:: back_insert_iterator
 
 Создает итератор `back_insert_iterator`, который добавляет элементы в местоположение за последним элементом в контейнере.
 
@@ -129,7 +130,7 @@ The initial vector vec is: ( 1 2 3 ).
 After the insertions, the vector vec is: ( 1 2 3 40 50 600 700 ).
 ```
 
-## <a name="back_insert_iteratorcontainer_type"></a><a name="container_type"></a>back_insert_iterator:: container_type
+## <a name="back_insert_iteratorcontainer_type"></a><a name="container_type"></a> back_insert_iterator:: container_type
 
 Тип, предоставляющий контейнер для итератора `back_insert_iterator`.
 
@@ -138,7 +139,7 @@ typedef Container
 container_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом для параметра-шаблона **Container**.
 
@@ -183,7 +184,7 @@ The original vector vec is: ( 1 2 3 ).
 After the insertion, the vector is: ( 1 2 3 40 ).
 ```
 
-## <a name="back_insert_iteratoroperator"></a><a name="op_star"></a>back_insert_iterator:: operator\*
+## <a name="back_insert_iteratoroperator"></a><a name="op_star"></a> back_insert_iterator:: operator\*
 
 Оператор разыменования, используемый для реализации выражения итератора вывода \* *i*  =  *x*.
 
@@ -195,9 +196,9 @@ back_insert_iterator<Container>& operator*();
 
 Ссылка на элемент, вставленный в конец контейнера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используется для реализации значения ** \* iter**выражения итератора вывода  =  **value**. Если **Iter** является итератором, который адресует элемент в последовательности, то **\*Iter** = **value** заменяет этот элемент значением и не изменяет общее число элементов в последовательности.
+Используется для реализации значения **\* iter** выражения итератора вывода  =  . Если **Iter** является итератором, который адресует элемент в последовательности, то **\*Iter** = **value** заменяет этот элемент значением и не изменяет общее число элементов в последовательности.
 
 ### <a name="example"></a>Пример
 
@@ -243,7 +244,7 @@ The vector vec is: ( 1 2 3 ).
 After the insertions, the vector vec becomes: ( 1 2 3 10 20 ).
 ```
 
-## <a name="back_insert_iteratoroperator"></a><a name="op_add_add"></a>back_insert_iterator:: operator + +
+## <a name="back_insert_iteratoroperator"></a><a name="op_add_add"></a> back_insert_iterator:: operator + +
 
 Увеличивает `back_insert_iterator` до следующего местоположения, в котором можно сохранить значение.
 
@@ -256,7 +257,7 @@ back_insert_iterator<Container> operator++(int);
 
 `back_insert_iterator`, адресующий следующее местоположение, в котором можно сохранить значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Операторы preincrementation и postincrementation возвращают одинаковый результат.
 
@@ -304,7 +305,7 @@ The vector vec is: ( 10 20 ).
 After the insertions, the vector vec becomes: ( 10 20 30 40 ).
 ```
 
-## <a name="back_insert_iteratoroperator"></a><a name="op_eq"></a>back_insert_iterator:: operator =
+## <a name="back_insert_iteratoroperator"></a><a name="op_eq"></a> back_insert_iterator:: operator =
 
 Добавляет или вставляет значение в конец контейнера.
 
@@ -322,7 +323,7 @@ back_insert_iterator<Container>& operator=(typename Container::value_type&& val)
 
 Ссылка на последний элемент, вставленный в конец контейнера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый оператор-член вычисляет `Container.push_back( val)`,
 
@@ -371,7 +372,7 @@ int main( )
 }
 ```
 
-## <a name="back_insert_iteratorreference"></a><a name="reference"></a>back_insert_iterator:: Reference
+## <a name="back_insert_iteratorreference"></a><a name="reference"></a> back_insert_iterator:: Reference
 
 Тип, предоставляющий ссылку для итератора `back_insert_iterator`.
 
@@ -379,7 +380,7 @@ int main( )
 typedef typename Container::reference reference;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип, который описывает ссылку на элемент последовательности под управлением связанного контейнера.
 

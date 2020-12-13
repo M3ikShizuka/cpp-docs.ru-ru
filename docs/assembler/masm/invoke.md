@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: INVOKE'
 title: INVOKE
 ms.date: 11/05/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - INVOKE directive
 ms.assetid: 12d9bb40-33b9-411e-b801-45a1d675967e
-ms.openlocfilehash: ba1377359ba9bc960e5d7d2a55df15adfe0d5d33
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: eb372ad3d7ccde9f217f55ed9817acfe9bd8f1cc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076227"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97129848"
 ---
 # <a name="invoke"></a>INVOKE
 
@@ -19,13 +20,13 @@ ms.locfileid: "80076227"
 
 ## <a name="syntax"></a>Синтаксис
 
-> **Вызвать** *выражение* ⟦ __,__ *аргумент* ... ⟧
+> **Вызвать** *выражение* ⟦__,__ *аргумент* ... ⟧
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Каждый аргумент, передаваемый в процедуру, может быть выражением, парой регистров или выражением адреса (выражением с префиксом **addr**).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по директивам](directives-reference.md)\
 [Грамматика MASM BNF](masm-bnf-grammar.md)

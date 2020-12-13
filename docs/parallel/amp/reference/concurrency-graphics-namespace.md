@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о пространстве имен Concurrency:: Graphics'
 title: Пространство имен Concurrency::graphics
 ms.date: 11/04/2016
 f1_keywords:
 - AMP_GRAPHICS/Concurrency
 ms.assetid: 4529d3b1-d7da-4ffb-82bf-080915e0f23e
-ms.openlocfilehash: 942b3bbace85fa297bba6cd4b509f67006a4aed3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f4ab25a6bc6e7bfd318ea58bb6a7efe403c51a89
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226741"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97132838"
 ---
 # <a name="concurrencygraphics-namespace"></a>Пространство имен Concurrency::graphics
 
@@ -21,30 +22,30 @@ ms.locfileid: "87226741"
 namespace graphics;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="namespaces"></a>Пространства имен
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Concurrency:: Graphics::d пространство имен irect3d](concurrency-graphics-direct3d-namespace.md)|Предоставляет функции для взаимодействия Direct3D.|
 
 ### <a name="typedefs"></a>Определения типов
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |`uint`|Тип элемента для [класса uint_2](uint-2-class.md), класса [uint_3](uint-3-class.md)и [класса uint_4](uint-4-class.md). Определен как `typedef unsigned int uint;`.|
 
 ### <a name="enumerations"></a>Перечисления
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Перечисление address_mode](concurrency-graphics-namespace-enums.md#address_mode).|Указывает режимы адресации, поддерживаемые для выборки текстур.|
 |[Перечисление filter_mode](concurrency-graphics-namespace-enums.md#filter_mode)|Задает режимы фильтрации, поддерживаемые для выборки текстур.|
 
 ### <a name="classes"></a>Классы
 
-|name|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[Класс текстуры](texture-class.md)|Текстура — это статистическое выражение данных для accelerator_view в домене экстента. Это коллекция переменных, по одному для каждого элемента в домене экстента. Каждая переменная содержит значение, соответствующее типу-примитиву C++ (без знака int, int, float, Double) или норме скалярного типа или unorm (определено в Concurrency:: Graphics) или допустимых коротких векторических типов, определенных в Concurrency:: Graphics.|
 |[Класс writeonly_texture_view](writeonly-texture-view-class.md)|Writeonly_texture_view обеспечивает WriteOnly доступ к текстуре.|
@@ -73,7 +74,7 @@ namespace graphics;
 
 ### <a name="functions"></a>Функции
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[copy](concurrency-graphics-namespace-functions.md#copy)|Перегружен. Копирует содержимое текстуры источника в целевой буфер узла.|
 |[copy_async](concurrency-graphics-namespace-functions.md#copy_async)|Перегружен. Асинхронно копирует содержимое текстуры источника в целевой буфер узла.|
@@ -84,6 +85,6 @@ namespace graphics;
 
 **Пространство имен** : Concurrency
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Пространство имен Concurrency (C++ AMP)](concurrency-namespace-cpp-amp.md)
