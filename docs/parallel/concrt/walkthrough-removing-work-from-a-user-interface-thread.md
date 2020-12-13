@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в разделе Пошаговое руководство. Удаление работы из потока User-Interface
 title: Пошаговое руководство. Удаление задач из потоков пользовательского интерфейса
 ms.date: 08/19/2019
 helpviewer_keywords:
 - user-interface threads, removing work from [Concurrency Runtime]
 - removing work from user-interface threads [Concurrency Runtime]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
-ms.openlocfilehash: 003678f3c79f2abfa7ceb0c67fecd69cf178f442
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 816e8446771cda907397f43386c33476cf3665b8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222697"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340922"
 ---
 # <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>Пошаговое руководство. Удаление задач из потоков пользовательского интерфейса
 
@@ -34,7 +35,7 @@ ms.locfileid: "87222697"
 
 Мы также рекомендуем ознакомиться с основами разработки приложений MFC и GDI+, прежде чем приступать к этому пошаговому руководству. Дополнительные сведения о MFC см. в статье [классическое приложение MFC](../../mfc/mfc-desktop-applications.md). Дополнительные сведения о GDI+ см. в разделе [GDI+](/windows/win32/gdiplus/-gdiplus-gdi-start).
 
-## <a name="sections"></a><a name="top"></a>Священ
+## <a name="sections"></a><a name="top"></a> Священ
 
 Это пошаговое руководство содержит следующие разделы:
 
@@ -42,13 +43,13 @@ ms.locfileid: "87222697"
 
 - [Реализация серийной версии приложения фрактала Мандельброта](#serial)
 
-- [Удаление работы из потока пользовательского интерфейса](#removing-work)
+- [Удаление работы из потока User-Interface](#removing-work)
 
 - [Повышение производительности рисования](#performance)
 
 - [Добавление поддержки отмены](#cancellation)
 
-## <a name="creating-the-mfc-application"></a><a name="application"></a>Создание приложения MFC
+## <a name="creating-the-mfc-application"></a><a name="application"></a> Создание приложения MFC
 
 В этом разделе описывается создание базового приложения MFC.
 
@@ -64,7 +65,7 @@ ms.locfileid: "87222697"
 
    Убедитесь, что приложение успешно создано путем его сборки и запуска. Чтобы выполнить сборку приложения, в меню **Сборка** выберите пункт **построить решение**. Если приложение успешно строится, запустите его, выбрав команду **начать отладку** в меню **Отладка** .
 
-## <a name="implementing-the-serial-version-of-the-mandelbrot-application"></a><a name="serial"></a>Реализация серийной версии приложения фрактала Мандельброта
+## <a name="implementing-the-serial-version-of-the-mandelbrot-application"></a><a name="serial"></a> Реализация серийной версии приложения фрактала Мандельброта
 
 В этом разделе описывается рисование фрактала Мандельброта. Эта версия рисует фрактал Мандельброта в объекте GDI+ [Bitmap](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-bitmap) , а затем копирует содержимое этого растрового изображения в окно клиента.
 
@@ -114,7 +115,7 @@ ms.locfileid: "87222697"
 
 [[Top](#top)]
 
-## <a name="removing-work-from-the-ui-thread"></a><a name="removing-work"></a>Удаление работы из потока пользовательского интерфейса
+## <a name="removing-work-from-the-ui-thread"></a><a name="removing-work"></a> Удаление работы из потока пользовательского интерфейса
 
 В этом разделе показано, как удалить работу по отрисовке из потока пользовательского интерфейса в приложении фрактала Мандельброта. Перемещая работу по отрисовке из потока пользовательского интерфейса в рабочий поток, поток пользовательского интерфейса может обрабатывать сообщения, когда рабочий поток создает изображение в фоновом режиме.
 
@@ -152,7 +153,7 @@ ms.locfileid: "87222697"
 
 [[Top](#top)]
 
-## <a name="improving-drawing-performance"></a><a name="performance"></a>Повышение производительности рисования
+## <a name="improving-drawing-performance"></a><a name="performance"></a> Повышение производительности рисования
 
 Поколение фрактала Мандельброта является хорошим кандидатом для параллелизации, поскольку вычисление каждого пикселя не зависит от других вычислений. Для параллелизации процедуры рисования преобразуйте внешний **`for`** цикл в `CChildView::DrawMandelbrot` методе в вызов алгоритма [concurrency::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) , как показано ниже.
 
@@ -162,7 +163,7 @@ ms.locfileid: "87222697"
 
 [[Top](#top)]
 
-## <a name="adding-support-for-cancellation"></a><a name="cancellation"></a>Добавление поддержки отмены
+## <a name="adding-support-for-cancellation"></a><a name="cancellation"></a> Добавление поддержки отмены
 
 В этом разделе описывается, как управлять изменением размера окна и отменять любые активные задачи рисования при уничтожении окна.
 

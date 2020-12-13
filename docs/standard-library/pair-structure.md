@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее: пара структур'
 title: Структура pair
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - pair class
 ms.assetid: 539d3d67-80a2-4170-b347-783495d42109
-ms.openlocfilehash: 0a78d5074c37f4fbbfb736125626fa4b7fc7e275
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 052dd0e95125726f377e9d74585cfad6cc7e8c0f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505757"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340818"
 ---
 # <a name="pair-structure"></a>Структура pair
 
@@ -78,7 +79,7 @@ template<class T1, class T2>
 
 Четвертый конструктор инициализирует первый элемент из пары в *val1* , а второй — *val2* , используя [декларатор ссылки rvalue:  &&](../cpp/rvalue-reference-declarator-amp-amp.md).  Он определяется в том случае, если оба типа пары конструируемым из предоставленных типов значений.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Структура шаблона хранит пару объектов типа `T1` и `T2` соответственно. Тип совпадает с `first_type` параметром шаблона `T1` , и тип совпадает с `second_type` параметром шаблона `T2` . `T1``T2`каждая из них должна предоставлять только конструктор по умолчанию, конструктор с одним аргументом и деструктор. Все члены типа `pair` являются открытыми, так как тип объявляется как, **`struct`** а не как **`class`** . Два наиболее распространенных способа применения пары — в качестве возвращаемых типов для функций, возвращающих два значения, и в качестве элементов для классов ассоциативных контейнеров [map](../standard-library/map-class.md) и [multimap](../standard-library/multimap-class.md), у которых есть ключ и тип значения, связанные с каждым элементом. Последний удовлетворяет требованиям для парного ассоциативного контейнера и имеет тип значения в форме `pair< const key_type, mapped_type >` .
 

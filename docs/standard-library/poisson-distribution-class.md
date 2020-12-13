@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: poisson_distribution классе'
 title: Класс poisson_distribution
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - std::poisson_distribution [C++], param_type
 - std::poisson_distribution [C++], param_type
 ms.assetid: 09614281-349a-45f7-8e95-c0196be0a937
-ms.openlocfilehash: bf5cd289ab0ee02d6c9e09e95d01008191899cd6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b640517a63665ebec4573da8aff9e537412de589
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832650"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340675"
 ---
 # <a name="poisson_distribution-class"></a>Класс poisson_distribution
 
@@ -70,7 +71,7 @@ public:
 *инттипе*\
 Целочисленный тип результата, по умолчанию — **`int`** . Возможные типы см. в разделе [\<random>](../standard-library/random.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса описывает распределение, которое создает значения указанного пользователем целочисленного типа с распределением Пуассона. В следующей таблице представлены ссылки на статьи об отдельных членах.
 
@@ -211,7 +212,7 @@ explicit binomial_distribution(const param_type& parm);
 *ParM*\
 Структура параметров, используемая для формирования распределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительное условие:**`0.0 < mean`
 
@@ -238,7 +239,7 @@ struct param_type {
 
 См. параметры конструктора для [poisson_distribution](#poisson_distribution).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительное условие:**`0.0 < mean`
 

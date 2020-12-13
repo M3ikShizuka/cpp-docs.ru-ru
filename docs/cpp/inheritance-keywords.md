@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: ключевые слова наследования'
 title: Ключевые слова наследования
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - derived classes [C++], declaring
 - inheritance, keywords
 ms.assetid: bb810f56-7720-4fea-b8b6-9499edd141df
-ms.openlocfilehash: bc9afdcb7971c478c1cad9185cece57ea6326a48
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 05d13303064c2857780af62b1b4beba00483b72e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233734"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340467"
 ---
 # <a name="inheritance-keywords"></a>Ключевые слова наследования
 
@@ -35,12 +36,12 @@ class [__multiple_inheritance] class-name;
 class [__virtual_inheritance] class-name;
 ```
 
-где:
+Где:
 
 *имя класса*<br/>
 Имя объявляемого класса.
 
-В C++ указатель на член класса можно объявить до определения класса. Например:
+В C++ указатель на член класса можно объявить до определения класса. Пример:
 
 ```cpp
 class S;
@@ -74,7 +75,7 @@ int S::*p;
 > [!NOTE]
 > То же опережающее объявление представления указателя на член должно быть включено в каждую запись преобразования, которая объявляет указатели на члены этого класса, и объявление должно выполняться до объявления указателей на члены.
 
-Для совместимости с предыдущими версиями **_single_inheritance**, **_multiple_inheritance**и **_virtual_inheritance** являются синонимами для **`__single_inheritance`** , **`__multiple_inheritance`** и, если не **`__virtual_inheritance`** задан параметр компилятора [/Za \( Отключить расширения языка)](../build/reference/za-ze-disable-language-extensions.md) .
+Для совместимости с предыдущими версиями **_single_inheritance**, **_multiple_inheritance** и **_virtual_inheritance** являются синонимами для **`__single_inheritance`** , **`__multiple_inheritance`** и, если не **`__virtual_inheritance`** задан параметр компилятора [/Za \( Отключить расширения языка)](../build/reference/za-ze-disable-language-extensions.md) .
 
 **Завершение блока, относящегося только к системам Майкрософт**
 

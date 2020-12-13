@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __readfsbyte, __readfsdword, __readfsqword, __readfsword'
 title: __readfsbyte, __readfsdword, __readfsqword, __readfsword
 ms.date: 09/02/2019
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - readfsqword intrinsic
 - __readfsqword intrinsic
 ms.assetid: f6ee7203-4179-402c-a464-0746c84ce6ac
-ms.openlocfilehash: 30040b33fe8c686bc0cda585c525ae2926cdf314
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 2b733ced12045253c78e823379c10a5e70f65143
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222360"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340987"
 ---
 # <a name="__readfsbyte-__readfsdword-__readfsqword-__readfsword"></a>__readfsbyte, __readfsdword, __readfsqword, __readfsword
 
@@ -53,20 +54,20 @@ unsigned __int64 __readfsqword(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Содержимое памяти в байтах, слово, даублеворд или куадворд (как указано именем функции с именем) в расположении `FS:[Offset]`.
+Содержимое памяти в байтах, слово, даублеворд или куадворд (как указано именем функции с именем) в расположении `FS:[Offset]` .
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__readfsbyte`|x86|
 |`__readfsdword`|x86|
 |`__readfsqword`|x86|
 |`__readfsword`|x86|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эти подпрограммы доступны только в виде встроенных функций.
 
@@ -74,5 +75,5 @@ unsigned __int64 __readfsqword(
 
 ## <a name="see-also"></a>См. также
 
-[__writefsbyte, \__writefsdword, \__writefsqword, \__writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)\
-[Встроенные функции компилятора](../intrinsics/compiler-intrinsics.md)
+[__writefsbyte, \_ _writefsdword, \_ _writefsqword, \_ _writefsword](../intrinsics/writefsbyte-writefsdword-writefsqword-writefsword.md)\
+[Встроенные объекты компилятора](../intrinsics/compiler-intrinsics.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Предупреждение средств компоновщика LNK4076'
 title: Предупреждение средств компоновщика LNK4076
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,15 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4076
 ms.assetid: c424d43b-abb3-4df4-be66-8907b859a555
-ms.openlocfilehash: 3f5c5f6bd33fd0e43ccf3c7b55ab54a3cc25ba68
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f94a51c5516cec83de31b1cd1fc19b7c90c81063
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80183440"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339869"
 ---
 # <a name="linker-tools-warning-lnk4076"></a>Предупреждение средств компоновщика LNK4076
 
 Недопустимый файл добавочного состояния "имяфайла"; Компоновка выполняется не инкрементно
 
-LINK не удается выполнить запись в файл добавочного состояния (. ILK). Либо `filename` повреждена, либо не является базой данных добавочной компоновки. Удалите файл и повторно свяжите его.
+LINK не удается выполнить запись в файл добавочного состояния (. ILK). Либо `filename` поврежден, либо не является базой данных добавочной компоновки. Удалите файл и повторно свяжите его.

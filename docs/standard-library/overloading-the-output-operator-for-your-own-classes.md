@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: перегрузка &lt; &lt; оператора для собственных классов'
 title: Перегрузка оператора &lt;&lt; для собственных классов
 ms.date: 11/04/2016
 helpviewer_keywords:
 - operator<<, overloading for your own classes
 - operator <<, overloading for your own classes
 ms.assetid: ad1d2c49-d84e-48a8-9c09-121f28b10bf0
-ms.openlocfilehash: c470bb7335a5997ae26327f99b8c5f31d20b4edb
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 206d6ccb50c7cb3706c66adeb6c1429a04775fc1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452052"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340844"
 ---
 # <a name="overloading-the-ltlt-operator-for-your-own-classes"></a>Перегрузка оператора &lt;&lt; для собственных классов
 
@@ -62,7 +63,7 @@ int main()
 5/6/92
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Перегруженный оператор возвращает ссылку на исходный объект `ostream`, то есть вставки можно объединить:
 
@@ -70,6 +71,6 @@ int main()
 cout <<"The date is" <<dt <<flush;
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Потоки вывода](../standard-library/output-streams.md)
+[Выходные потоки](../standard-library/output-streams.md)

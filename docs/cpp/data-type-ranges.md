@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: диапазоны типов данных'
 title: Диапазоны типов данных
 ms.date: 05/28/2020
 helpviewer_keywords:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - long int keyword [C++]
 - unsigned long int [C++]
 ms.assetid: 3691ceca-05fb-4b82-b1ae-5c4618cda91a
-ms.openlocfilehash: f7658d0c0a61180193de268414e214595198e8fa
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8d4ae1b6aae3a4dbf12180248df6000085103efe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228977"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339531"
 ---
 # <a name="data-type-ranges"></a>Диапазоны типов данных
 
@@ -79,7 +80,7 @@ ms.locfileid: "87228977"
 |**`__int64`**|8|**`long long`**, **`signed long long`**|От -9 223 372 036 854 775 808 до 9 223 372 036 854 775 807|
 |**`unsigned __int64`**|8|**`unsigned long long`**|От 0 до 18 446 744 073 709 551 615|
 |**`bool`**|1|нет|**`false`** или **`true`**|
-|**`char`**|1|нет|от-128 до 127 по умолчанию<br /><br /> от 0 до 255 при компиляции с помощью[`/J`](../build/reference/j-default-char-type-is-unsigned.md)|
+|**`char`**|1|нет|от-128 до 127 по умолчанию<br /><br /> от 0 до 255 при компиляции с помощью [`/J`](../build/reference/j-default-char-type-is-unsigned.md)|
 |**`signed char`**|1|нет|От -128 до 127|
 |**`unsigned char`**|1|нет|От 0 до 255|
 |**`short`**|2|**`short int`**, **`signed short int`**|От -32 768 до 32 767|
@@ -91,7 +92,7 @@ ms.locfileid: "87228977"
 |**`enum`**|непостоянно|нет| |
 |**`float`**|4|нет|3,4E +/- 38 (7 знаков)|
 |**`double`**|8|нет|1,7E +/- 308 (15 знаков)|
-|**`long double`**|то же, что**`double`**|нет|То же, что**`double`**|
+|**`long double`**|то же, что **`double`**|нет|То же, что **`double`**|
 |**`wchar_t`**|2|**`__wchar_t`**|От 0 до 65 535|
 
 В зависимости от того, как он используется, переменная **`__wchar_t`** определяет либо тип расширенного символа, либо многобайтовый символ. Чтобы указать константу расширенного символьного типа, перед символьной или строковой константой следует использовать префикс `L` .
@@ -106,7 +107,7 @@ C и C++ в Visual Studio также поддерживают целочисле
 
 Диапазон перечисляемых типов зависит от контекста языка и указанных флажков компилятора. Дополнительные сведения см. в статьях [Объявления перечислений C](../c-language/c-enumeration-declarations.md) и [Объявления перечислений C++](../cpp/enumerations-cpp.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Ключевые слова](../cpp/keywords-cpp.md)<br/>
 [Встроенные типы](../cpp/fundamental-types-cpp.md)

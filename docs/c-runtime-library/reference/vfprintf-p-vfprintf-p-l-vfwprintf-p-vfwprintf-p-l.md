@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _vfprintf_p, _vfprintf_p_l, _vfwprintf_p, _vfwprintf_p_l'
 title: _vfprintf_p, _vfprintf_p_l, _vfwprintf_p, _vfwprintf_p_l
 ms.date: 11/04/2016
 api_name:
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - formatted text [C++]
 - vfwprintf_p function
 ms.assetid: 4d4a0914-4175-4b65-9ca1-037c4ef29147
-ms.openlocfilehash: a98c84ae9cfd221fd23da2eaa08c639e01f12ad4
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 062fb24abb2f1b9032a462715585afc5a0dd23b6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70945562"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340545"
 ---
 # <a name="_vfprintf_p-_vfprintf_p_l-_vfwprintf_p-_vfwprintf_p_l"></a>_vfprintf_p, _vfprintf_p_l, _vfwprintf_p, _vfwprintf_p_l
 
@@ -104,11 +105,11 @@ int _vfwprintf_p_l(
 
 **_vfprintf_p** и **_vfwprintf_p** возвращают число записанных символов, не включая завершающий нуль-символ, или отрицательное значение, если возникает ошибка вывода.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Каждая из этих функций принимает указатель на список аргументов, затем форматирует и записывает указанные данные в *поток*. Эти функции отличаются от версий **_vfprint_s** и **_vfwprint_s** только тем, что они поддерживают позиционированные параметры. Дополнительные сведения см. в разделе [Позиционные параметры printf_p](../../c-runtime-library/printf-p-positional-parameters.md).
+Каждая из этих функций принимает указатель на список аргументов, затем форматирует и записывает указанные данные в *поток*. Эти функции отличаются от **_vfprint_s** и **_vfwprint_s** версий только тем, что они поддерживают позиционированные параметры. Дополнительные сведения см. в разделе [Позиционные параметры printf_p](../../c-runtime-library/printf-p-positional-parameters.md).
 
-**_vfwprintf_p** — это версия **_vprintf_p**для расширенных символов; Эти две функции ведут себя одинаково, если поток открыт в режиме ANSI. **_vprintf_p** в настоящее время не поддерживает вывод в поток Юникода.
+**_vfwprintf_p** — это версия **_vprintf_p** для расширенных символов; Эти две функции ведут себя одинаково, если поток открыт в режиме ANSI. **_vprintf_p** в настоящее время не поддерживает вывод в поток Юникода.
 
 Версии этих функций с суффиксом **_l** идентичны за исключением того, что они используют переданный параметр языкового стандарта вместо локали текущего потока.
 
@@ -117,7 +118,7 @@ int _vfwprintf_p_l(
 
 Если *поток* или *Формат* является пустым указателем или строка формата содержит недопустимые символы форматирования, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, функции возвращают значение-1 и **задают значение** **еинвал**.
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Подпрограмма TCHAR.H|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -129,21 +130,21 @@ int _vfwprintf_p_l(
 |Подпрограмма|Обязательный заголовок|Необязательные заголовки|
 |-------------|---------------------|----------------------|
 |**_vfprintf_p**, **_vfprintf_p_l**|\<stdio.h> и \<stdarg.h>|\<varargs.h>*|
-|**_vfwprintf_p**, **_vfwprintf_p_l**|\<stdio.h> или \<wchar.h> и \<stdarg.h>|\<varargs.h>*|
+|**_vfwprintf_p**, **_vfwprintf_p_l**|\<stdio.h> или \<wchar.h> , и \<stdarg.h>|\<varargs.h>*|
 
 \* Требуется для совместимости с UNIX V.
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Потоковый ввод-вывод](../../c-runtime-library/stream-i-o.md)<br/>
 [Функции vprintf](../../c-runtime-library/vprintf-functions.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)<br/>
-[Позиционные параметры printf_p](../../c-runtime-library/printf-p-positional-parameters.md)<br/>
+[printf_p позиционированные параметры](../../c-runtime-library/printf-p-positional-parameters.md)<br/>
 [_fprintf_p, _fprintf_p_l, _fwprintf_p, _fwprintf_p_l](fprintf-p-fprintf-p-l-fwprintf-p-fwprintf-p-l.md)<br/>
 [_vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l](vsprintf-p-vsprintf-p-l-vswprintf-p-vswprintf-p-l.md)<br/>
 [_sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l](sprintf-p-sprintf-p-l-swprintf-p-swprintf-p-l.md)<br/>

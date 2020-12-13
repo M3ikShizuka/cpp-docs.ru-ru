@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: decltype (C++)'
 title: decltype (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - operators [C++], type of an expression
 - operators [C++], deduce expression type
 ms.assetid: 6dcf8888-8196-4f13-af50-51e3797255d4
-ms.openlocfilehash: 9e769bbef66bd1b55b9d445874f00d37a736025e
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: e581436a43fc9632961fcb888dfb0b23974fc2df
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90683485"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339505"
 ---
 # <a name="decltype--c"></a>decltype (C++)
 
@@ -33,7 +34,7 @@ ms.locfileid: "90683485"
 
 Тип параметра *выражения* .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **`decltype`** Спецификатор типа поддерживается в Visual Studio 2010 или более поздних версиях и может использоваться с машинным или управляемым кодом. `decltype(auto)` (C++ 14) поддерживается в Visual Studio 2015 и более поздних версиях.
 
@@ -56,7 +57,7 @@ const A* a = new A();
 
 Затем проверьте типы, возвращаемые четырьмя **`decltype`** инструкциями, приведенными в следующей таблице.
 
-|Инструкция|Type|Примечания|
+|Инструкция|Тип|Примечания|
 |---------------|----------|-----------|
 |`decltype(fx());`|`const int&&`|[Ссылка rvalue](../cpp/rvalue-reference-declarator-amp-amp.md) на **`const int`** .|
 |`decltype(var);`|**`int`**|Тип переменной `var`.|
@@ -78,7 +79,7 @@ UNKNOWN func(T&& t, U&& u){ return t + u; };
 
 Следующий прототип иллюстрирует синтаксис альтернативного объявления функции. Обратите внимание, что **`const`** **`volatile`** квалификаторы и, а также **`throw`** [спецификация исключения](../cpp/exception-specifications-throw-cpp.md) являются необязательными. Заполнитель *function_body* представляет составной оператор, указывающий, что делает функция. В качестве лучшего написания кода заполнитель *выражения* в **`decltype`** операторе должен соответствовать выражению, заданному **`return`** оператором, если таковое имеется, в *function_body*.
 
-**`auto`***function_name* **`(`** *Параметры*<sub>opt</sub> не следует заменять **`)`** **`const`** <sub>opt</sub> **`volatile`** <sub>opt</sub> **`->`** **`decltype(`** *выражение* opt **`)`** **`noexcept`** <sub>opt</sub> **`{`** *function_body***`};`**
+**`auto`***function_name* **`(`** *Параметры*<sub></sub> не следует заменять **`)`** **`const`** <sub></sub> **`volatile`** <sub></sub> **`->`** **`decltype(`** *выражение* opt **`)`** **`noexcept`** <sub></sub> **`{`** *function_body***`};`**
 
 В следующем примере кода поздно заданный возвращаемый тип функции шаблона `myFunc` определяется типами аргументов шаблона `t` и `u`. В качестве лучшего программирования в примере кода также используются ссылки rvalue и `forward` шаблон функции, поддерживающие *идеальную пересылку*. Дополнительные сведения см. в статье [Декларатор ссылки Rvalue: &&](../cpp/rvalue-reference-declarator-amp-amp.md).
 

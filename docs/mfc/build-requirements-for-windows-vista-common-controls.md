@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: требования к сборке для стандартных элементов управления Windows'
 title: Требования к сборке для стандартных элементов управления Windows
 ms.date: 08/19/2019
 helpviewer_keywords:
 - Common Controls (MFC), build requirements
 - Common Controls (MFC)
 ms.assetid: 025f7d55-55a2-4dcd-8f62-02424e3dcc04
-ms.openlocfilehash: cf2139e04d2f72feb7951010caa351d67ccc5a93
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 4d11b4da2fb1ff616ab077390c2d603e76382313
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619744"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339804"
 ---
 # <a name="build-requirements-for-windows-common-controls"></a>Требования к сборке для стандартных элементов управления Windows
 
@@ -53,5 +54,5 @@ MFC поддерживает все версии стандартных элем
 ## <a name="see-also"></a>См. также раздел
 
 [Общие разделы по MFC](general-mfc-topics.md)<br/>
-[Диаграмма иерархии](hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](hierarchy-chart.md)<br/>
 [Нерекомендуемые API ANSI](deprecated-ansi-apis.md)

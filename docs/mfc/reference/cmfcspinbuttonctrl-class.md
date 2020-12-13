@@ -1,5 +1,6 @@
 ---
-title: Класс CMFCSpinButtonCtrl
+description: 'Дополнительные сведения о: Кмфкспинбуттонктрл Class'
+title: Класс Кмфкспинбуттонктрл
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCSpinButtonCtrl
@@ -8,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCSpinButtonCtrl [MFC], OnDraw
 ms.assetid: 8773f259-4d3f-4bca-a71c-09e0c71bc843
-ms.openlocfilehash: 445b857400d8c82109ca7220b84bac692a2abf89
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 87e9abc94247416704ab801beeaa1953c4cceb46
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376174"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339643"
 ---
-# <a name="cmfcspinbuttonctrl-class"></a>Класс CMFCSpinButtonCtrl
+# <a name="cmfcspinbuttonctrl-class"></a>Класс Кмфкспинбуттонктрл
 
-Класс `CMFCSpinButtonCtrl` поддерживает визуальный менеджер, который рисует управление кнопкой вращения.
+`CMFCSpinButtonCtrl`Класс поддерживает визуальный диспетчер, который рисует элемент управления "Счетчик".
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -25,28 +26,28 @@ ms.locfileid: "81376174"
 class CMFCSpinButtonCtrl : public CSpinButtonCtrl
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |`CMFCSpinButtonCtrl::CMFCSpinButtonCtrl`|Конструктор по умолчанию.|
 |`CMFCSpinButtonCtrl::~CMFCSpinButtonCtrl`|Деструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMFCSpinButtonCtrl::Ondraw](#ondraw)|Перерисовывает текущее управление кнопкой вращения.|
+|[Кмфкспинбуттонктрл:: OnDraw](#ondraw)|Перерисовывает текущий элемент управления "Счетчик".|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Чтобы использовать визуальный менеджер, чтобы нарисовать управление кнопкой `CSpinButtonCtrl` вращения в `CMFCSpinButtonCtrl` приложении, замените все экземпляры класса классом.
+Чтобы использовать визуальный диспетчер для рисования элемента управления "Счетчик" в приложении, замените все экземпляры `CSpinButtonCtrl` класса `CMFCSpinButtonCtrl` классом.
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано, как `CMFCSpinButtonCtrl` создать объект `Create` класса и использовать его метод.
+В следующем примере показано, как создать объект `CMFCSpinButtonCtrl` класса и использовать его `Create` метод.
 
 [!code-cpp[NVC_MFC_RibbonApp#25](../../mfc/reference/codesnippet/cpp/cmfcspinbuttonctrl-class_1.cpp)]
 
@@ -64,11 +65,11 @@ class CMFCSpinButtonCtrl : public CSpinButtonCtrl
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxspinbuttonctrl.h
+**Заголовок:** афксспинбуттонктрл. h
 
-## <a name="cmfcspinbuttonctrlondraw"></a><a name="ondraw"></a>CMFCSpinButtonCtrl::Ondraw
+## <a name="cmfcspinbuttonctrlondraw"></a><a name="ondraw"></a> Кмфкспинбуттонктрл:: OnDraw
 
-Перерисовывает текущее управление кнопкой вращения.
+Перерисовывает текущий элемент управления "Счетчик".
 
 ```
 virtual void OnDraw(CDC* pDC);
@@ -76,15 +77,15 @@ virtual void OnDraw(CDC* pDC);
 
 ### <a name="parameters"></a>Параметры
 
-*pDC*<br/>
-(в) Указатель на контекст устройства.
+*Хозяин*<br/>
+окне Указатель на контекст устройства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Платформа вызывает `CMFCSpinButtonCtrl::OnPaint` метод обработки [CWnd::OnPaint](../../mfc/reference/cwnd-class.md#onpaint) сообщение, и этот `CMFCSpinButtonCtrl::OnDraw` метод, в свою очередь, вызывает этот метод. Переопределить этот метод, чтобы настроить способ управления кнопкой вращения.
+Платформа вызывает `CMFCSpinButtonCtrl::OnPaint` метод для работы с сообщением [CWnd:: onpain](../../mfc/reference/cwnd-class.md#onpaint) , а этот метод, в свою очередь, вызывает этот `CMFCSpinButtonCtrl::OnDraw` метод. Переопределите этот метод, чтобы настроить способ, которым платформа рисует элемент управления "Счетчик".
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
 [Класс CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md)

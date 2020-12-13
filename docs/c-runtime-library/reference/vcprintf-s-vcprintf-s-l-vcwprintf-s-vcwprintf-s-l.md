@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _vcprintf_s, _vcprintf_s_l, _vcwprintf_s, _vcwprintf_s_l'
 title: _vcprintf_s, _vcprintf_s_l, _vcwprintf_s, _vcwprintf_s_l
 ms.date: 11/04/2016
 api_name:
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - vtcprintf_s function
 - formatted text [C++]
 ms.assetid: 5a46d45a-30db-45df-9850-455cbdac5636
-ms.openlocfilehash: a6a3e94167adcc614a5de45a314fca25bdc9e1f2
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 68ac12f9c9ddbebe613ea92ade0b05eeb8e1ab01
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70945663"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339596"
 ---
 # <a name="_vcprintf_s-_vcprintf_s_l-_vcwprintf_s-_vcwprintf_s_l"></a>_vcprintf_s, _vcprintf_s_l, _vcwprintf_s, _vcwprintf_s_l
 
@@ -102,16 +103,16 @@ int _vcwprintf_s_l(
 
 Как и менее безопасные версии этих функций, если *Format* является пустым указателем, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Кроме того, в отличие от менее защищенных версий этих функций, если *Формат* не задает допустимый формат, создается исключение недопустимого параметра. Если выполнение может быть продолжено, эти функции возвращают код ошибки и **устанавливают код** ошибки. Код ошибки по умолчанию — **еинвал** , если более конкретное значение не применяется.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Каждая из этих функций принимает указатель на список аргументов, а затем форматирует и записывает указанные данные в консоль. **_vcwprintf_s** — это версия **_vcprintf_s**для расширенных символов. Она принимает строку расширенных символов в качестве аргумента.
+Каждая из этих функций принимает указатель на список аргументов, а затем форматирует и записывает указанные данные в консоль. **_vcwprintf_s** — это версия **_vcprintf_s** для расширенных символов. Она принимает строку расширенных символов в качестве аргумента.
 
 Версии этих функций с суффиксом **_l** идентичны за исключением того, что они используют переданный параметр языкового стандарта вместо текущего языкового стандарта.
 
 > [!IMPORTANT]
 > Убедитесь, что *format* не является строкой, определяемой пользователем. Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Подпрограмма TCHAR.H|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -123,11 +124,11 @@ int _vcwprintf_s_l(
 |Подпрограмма|Обязательный заголовок|Необязательные заголовки|
 |-------------|---------------------|----------------------|
 |**_vcprintf_s**, **_vcprintf_s_l**|\<conio.h> и \<stdarg.h>|\<varargs.h>*|
-|**_vcwprintf_s**, **_vcwprintf_s_l**|\<conio.h> или \<wchar.h> и \<stdarg.h>|\<varargs.h>*|
+|**_vcwprintf_s**, **_vcwprintf_s_l**|\<conio.h> или \<wchar.h> , и \<stdarg.h>|\<varargs.h>*|
 
 \* Требуется для совместимости с UNIX V.
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -160,12 +161,12 @@ int main()
     (Related to symbol '<symbol>' defined on line 5).
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Потоковый ввод-вывод](../../c-runtime-library/stream-i-o.md)<br/>
 [Функции vprintf](../../c-runtime-library/vprintf-functions.md)<br/>
 [_cprintf, _cprintf_l, _cwprintf, _cwprintf_l](cprintf-cprintf-l-cwprintf-cwprintf-l.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>
-[sprintf, _sprintf_l, swprintf, _swprintf_l, \__swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
+[sprintf, _sprintf_l, swprintf, _swprintf_l, \_ _swprintf_l](sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md)<br/>
 [va_arg, va_copy, va_end, va_start](va-arg-va-copy-va-end-va-start.md)<br/>

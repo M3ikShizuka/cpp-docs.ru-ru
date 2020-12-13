@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _strdec, _wcsdec, _mbsdec, _mbsdec_l'
 title: _strdec, _wcsdec, _mbsdec, _mbsdec_l
 ms.date: 4/2/2020
 api_name:
@@ -46,12 +47,12 @@ helpviewer_keywords:
 - wcsdec function
 - _mbsdec function
 ms.assetid: ae37c223-800f-48a9-ae8e-38c8d20af2dd
-ms.openlocfilehash: c3988beac1a3c1b3d7fa831405208ddc564456a3
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 85001258baea9e7c6509bfdd33a74f9a0eccd80f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914500"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340558"
 ---
 # <a name="_strdec-_wcsdec-_mbsdec-_mbsdec_l"></a>_strdec, _wcsdec, _mbsdec, _mbsdec_l
 
@@ -95,9 +96,9 @@ unsigned char *_mbsdec_l(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-**_mbsdec**, **_mbsdec_l**, **_strdec**и **_wcsdec** каждый из них возвращает указатель на символ, который находится непосредственно перед *текущим*; **_mbsdec** возвращает **значение NULL** , если значение *Start* больше или равно значению *Current*. **_tcsdec** сопоставляется с одной из этих функций, и ее возвращаемое значение зависит от сопоставления.
+**_mbsdec**, **_mbsdec_l**, **_strdec** и **_wcsdec** каждый из них возвращает указатель на символ, который находится непосредственно перед *текущим*; **_mbsdec** возвращает **значение NULL** , если значение *Start* больше или равно значению *Current*. **_tcsdec** сопоставляется с одной из этих функций, и ее возвращаемое значение зависит от сопоставления.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функции **_mbsdec** и **_mbsdec_l** возвращают указатель на первый байт многобайтового символа, непосредственно предшествующий *текущему* в строке, содержащей *Start*.
 
@@ -116,7 +117,7 @@ unsigned char *_mbsdec_l(
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsdec**|**_strdec**|**_mbsdec**|**_wcsdec**|
 
-**_strdec** и **_wcsdec** — версии **_mbsdec** и **_mbsdec_l**с однобайтовыми символами и расширенными символами. **_strdec** и **_wcsdec** предоставляются только для этого сопоставления и не должны использоваться в других случаях.
+**_strdec** и **_wcsdec** — версии **_mbsdec** и **_mbsdec_l** с однобайтовыми символами и расширенными символами. **_strdec** и **_wcsdec** предоставляются только для этого сопоставления и не должны использоваться в других случаях.
 
 Дополнительные сведения см. в разделах [Использование универсальных текстовых сопоставлений](../../c-runtime-library/using-generic-text-mappings.md) и [Универсальные текстовые сопоставления](../../c-runtime-library/generic-text-mappings.md).
 

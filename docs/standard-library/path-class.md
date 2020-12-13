@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: класс Path'
 title: Класс path
 ms.date: 09/27/2018
 f1_keywords:
 - filesystem/std::experimental::filesystem::path
 ms.assetid: 8a1227ca-aeb2-4e0e-84aa-86e34e4f4fe8
-ms.openlocfilehash: fb56afbc1d29f1d321b394342382f89b06768720
-ms.sourcegitcommit: b5854134553db1d99a5761bec131841c374a3098
+ms.openlocfilehash: 469d594800036b165f8693162ca11ca161736cf0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91958663"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340779"
 ---
 # <a name="path-class"></a>Класс path
 
@@ -34,7 +35,7 @@ class path;
 |Имя типа|Описание|
 |-|-|
 |[const_iterator](#const_iterator)|Синоним для `iterator`.|
-|[итераци](#iterator)|Итератор двунаправленной константы, обозначающий `path` компоненты `myname` .|
+|[iterator](#iterator)|Итератор двунаправленной константы, обозначающий `path` компоненты `myname` .|
 |[string_type](#string_type)|Тип является синонимом `basic_string<value_type>`.|
 
 ### <a name="member-functions"></a>Функции элементов
@@ -79,7 +80,7 @@ class path;
 |[root_name](#root_name)|Возвращает компонент корневого имени `myname` . |
 |[root_path](#root_path)|Возвращает компонент корневого пути `myname` .|
 |[stem](#stem)|Возвращает `stem` компонент `myname` .|
-|[string](#string)|Преобразует последовательность, хранящуюся в `mypath` .|
+|[строка](#string)|Преобразует последовательность, хранящуюся в `mypath` .|
 |[позиции](#swap)|Выполняется `swap(mypath, right.mypath)` .|
 |[u16string](#u16string)|Преобразует последовательность, хранимую в `mypath` , в кодировку UTF-16 и возвращает ее, хранящуюся в объекте типа `u16string` .|
 |[u32string](#u32string)|Преобразует последовательность, хранимую в `mypath` , в кодировку UTF-32 и возвращает ее, хранящуюся в объекте типа `u32string` .|
@@ -248,7 +249,7 @@ iterator end() const;
 path extension() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает суффикс `filename() X` таким образом, что:
 
@@ -407,7 +408,7 @@ class iterator
    };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Класс описывает двунаправленный константный итератор, указывающий `path` компоненты `myname` в последовательности:
 
@@ -467,7 +468,7 @@ path& operator=(const Source& source);
 *источника*\
 Исходный путь.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый оператор члена копирует `right.myname` в `myname` . Второй оператор члена перемещается `right.myname` в `myname` . Третий оператор члена ведет себя так же, как `*this = path(source)` .
 
@@ -505,7 +506,7 @@ path& operator+=(Elem elem);
 *источника*\
 Добавленный источник.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функции-члены работают так же, как следующие соответствующие выражения:
 
@@ -540,7 +541,7 @@ path& operator/=(const Source& source);
 *источника*\
 Добавленный источник.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функции-члены работают так же, как следующие соответствующие выражения:
 
@@ -564,7 +565,7 @@ operator string_type() const;
 path parent_path() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает компонент родительского пути, в `myname` частности префикс `myname` после удаления `filename().native()` и все непосредственно предшествующие разделители каталогов. (Аналогично, если это `begin() != end()` объединение всех элементов в диапазоне `[begin(), --end())` путем последовательного применения `operator/=` .) Компонент может быть пустым.
 
@@ -608,7 +609,7 @@ path(InIt first, InIt last, const locale& loc);
 *Последняя*\
 Расположение последнего элемента для копирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конструкторы всех конструкций создаются `myname` различными способами:
 
@@ -638,7 +639,7 @@ static constexpr value_type preferred_separator == '/';
 #endif // filesystem model now defined
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Обратите внимание, что в большинстве контекстов в Windows в равной мере допускается использование соответствующего символа L"/".
 
@@ -650,7 +651,7 @@ static constexpr value_type preferred_separator == '/';
 path relative_path() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает компонент относительного пути `myname` , в частности суффикс `myname` после удаления, `root_path().native()` и все последующие избыточные разделители каталогов. Компонент может быть пустым.
 
@@ -675,7 +676,7 @@ path& replace_extension(const path& newext = path());
 *newext*\
 Новое расширение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сначала удаляет суффикс `extension().native()` из `myname` . Затем `!newext.empty() && newext[0] != dot` , если (где `dot` равно `*path(".").c_str()` ), `dot` добавляется к `myname` . Затем *newext* добавляется к `myname` .
 
@@ -692,7 +693,7 @@ path& replace_filename(const path& pval);
 *Pval*\
 Путь к имени файла.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член выполняет:
 
@@ -711,7 +712,7 @@ return (*this);
 path root_directory() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Компонент может быть пустым.
 
@@ -723,7 +724,7 @@ path root_directory() const;
 path root_name() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Компонент может быть пустым.
 
@@ -735,7 +736,7 @@ path root_name() const;
 path root_path() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает компонент корневого пути `myname` , в частности `root_name()`  /  `root_directory` . Компонент может быть пустым.
 
@@ -747,7 +748,7 @@ path root_path() const;
 path stem() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает `stem` компонент, в `myname` частности, `filename().native()` с любым удаленным конечным методом `extension().native()` . Компонент может быть пустым.
 
@@ -761,7 +762,7 @@ basic_string\<Elem, Traits, Alloc> string(const Alloc& al = Alloc()) const;
 string string() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция-член (шаблон) преобразует последовательность, хранимую `mypath` таким же образом, как:
 
@@ -835,6 +836,6 @@ typedef char value_type;
 wstring wstring() const;
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по файлам заголовков](../standard-library/cpp-standard-library-header-files.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Цинтерполаторбасе Class'
 title: Класс CInterpolatorBase
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - CInterpolatorBase [MFC], SetDuration
 - CInterpolatorBase [MFC], SetInitialValueAndVelocity
 ms.assetid: bbc3dce7-8398-47f9-b97e-e4fd2d737232
-ms.openlocfilehash: efa08aa5dd556d7e136323c31451a9f33bd72ec6
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 73204e8b81db862fe30058d1b2451ea468d332e8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754955"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340961"
 ---
 # <a name="cinterpolatorbase-class"></a>Класс CInterpolatorBase
 
@@ -43,31 +44,31 @@ ms.locfileid: "81754955"
 class CInterpolatorBase : public CUIAnimationInterpolatorBase<CInterpolatorBase>;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CInterpolatorBase::КИнтерполаторБаза](#cinterpolatorbase)|Строит `CInterpolatorBase` объект.|
+|[Цинтерполаторбасе:: Цинтерполаторбасе](#cinterpolatorbase)|Конструирует `CInterpolatorBase` объект.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CInterpolatorBase::СозданиеInstance](#createinstance)|Создает экземпляр `CInterpolatorBase` и хранит указатель на пользовательский интерполятор, который будет обрабатывать события.|
-|[CInterpolatorBase::GetDependencies](#getdependencies)|Получает зависимости интерполятора. (Переопределяет `CUIAnimationInterpolatorBase::GetDependencies`.)|
-|[CInterpolatorBase::GetDuration](#getduration)|Получает продолжительность интерполятора. (Переопределяет `CUIAnimationInterpolatorBase::GetDuration`.)|
-|[CInterpolatorBase::GetFinalValue](#getfinalvalue)|Получает окончательное значение, к которому ведет интерполятор. (Переопределяет `CUIAnimationInterpolatorBase::GetFinalValue`.)|
-|[CInterpolatorBase::InterpolateValue](#interpolatevalue)|Интерполиративирует значение в заданном смещении (Overrides `CUIAnimationInterpolatorBase::InterpolateValue`.)|
-|[CInterpolatorBase::InterpolateVelocity](#interpolatevelocity)|Интерполирует скорость при заданном смещении `CUIAnimationInterpolatorBase::InterpolateVelocity`(Overrides .)|
-|[CInterpolatorBase::SetCustomИнтерполатор](#setcustominterpolator)|Хранит указатель на пользовательский интерполятор, который будет обрабатывать события.|
-|[CInterpolatorBase::SetDuration](#setduration)|Устанавливает продолжительность интерполятора (Переопределения `CUIAnimationInterpolatorBase::SetDuration`.)|
-|[CInterpolatorBase::SetInitialValueAndVelocity](#setinitialvalueandvelocity)|Устанавливает исходное значение и скорость интерполятора. (Переопределяет `CUIAnimationInterpolatorBase::SetInitialValueAndVelocity`.)|
+|[Цинтерполаторбасе:: CreateInstance](#createinstance)|Создает экземпляр `CInterpolatorBase` и сохраняет указатель на настраиваемую интерполяцию, которая будет обрабатывать события.|
+|[Цинтерполаторбасе:: Dependencies](#getdependencies)|Возвращает зависимости интерполяции. (Переопределяет `CUIAnimationInterpolatorBase::GetDependencies`.)|
+|[Цинтерполаторбасе:: длит](#getduration)|Возвращает длительность интерполяции. (Переопределяет `CUIAnimationInterpolatorBase::GetDuration`.)|
+|[Цинтерполаторбасе:: Жетфиналвалуе](#getfinalvalue)|Возвращает конечное значение, которое вызывает интерполяцию. (Переопределяет `CUIAnimationInterpolatorBase::GetFinalValue`.)|
+|[Цинтерполаторбасе:: Интерполатевалуе](#interpolatevalue)|Выполняет интерполяцию значения в заданном смещении (переопределения `CUIAnimationInterpolatorBase::InterpolateValue` .)|
+|[Цинтерполаторбасе:: ИнтерполатевелоЦити](#interpolatevelocity)|Интерполирует скорость в заданном смещении (переопределения `CUIAnimationInterpolatorBase::InterpolateVelocity` .)|
+|[Цинтерполаторбасе:: Сеткустоминтерполатор](#setcustominterpolator)|Хранит указатель на пользовательский интерполяций, который будет обрабатывать события.|
+|[Цинтерполаторбасе:: Сетдуратион](#setduration)|Задает длительность интерполяции (переопределения `CUIAnimationInterpolatorBase::SetDuration` .)|
+|[Цинтерполаторбасе:: СетинитиалвалуеандвелоЦити](#setinitialvalueandvelocity)|Задает начальное значение и скорость для интерполяции. (Переопределяет `CUIAnimationInterpolatorBase::SetInitialValueAndVelocity`.)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот обработчик создается и передается `IUIAnimationTransitionFactory::CreateTransition` при создании `CCustomTransition` объекта в рамках `CAnimationController::AnimateGroup`процесса инициализации анимации (запущенного). Обычно вам не нужно использовать этот класс напрямую, он `CCustomInterpolator`просто разогнат все события на `CCustomTransition`-производный класс, указатель которого передается конструктору .
+Этот обработчик создается и передается в, `IUIAnimationTransitionFactory::CreateTransition` когда `CCustomTransition` объект создается как часть процесса инициализации анимации (запускается с помощью `CAnimationController::AnimateGroup` ). Обычно этот класс не требуется использовать напрямую, он просто перенадает все события в `CCustomInterpolator` производный класс, указатель которого передан конструктору `CCustomTransition` .
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -81,17 +82,17 @@ class CInterpolatorBase : public CUIAnimationInterpolatorBase<CInterpolatorBase>
 
 **Заголовок:** afxanimationcontroller.h
 
-## <a name="cinterpolatorbasecinterpolatorbase"></a><a name="cinterpolatorbase"></a>CInterpolatorBase::КИнтерполаторБаза
+## <a name="cinterpolatorbasecinterpolatorbase"></a><a name="cinterpolatorbase"></a> Цинтерполаторбасе:: Цинтерполаторбасе
 
-Строит объект CInterpolatorBase.
+Конструирует объект Цинтерполаторбасе.
 
 ```
 CInterpolatorBase();
 ```
 
-## <a name="cinterpolatorbasecreateinstance"></a><a name="createinstance"></a>CInterpolatorBase::СозданиеInstance
+## <a name="cinterpolatorbasecreateinstance"></a><a name="createinstance"></a> Цинтерполаторбасе:: CreateInstance
 
-Создает экземпляр CInterpolatorBase и хранит указатель на пользовательский интерполятор, который будет обрабатывать события.
+Создает экземпляр Цинтерполаторбасе и сохраняет указатель на настраиваемую интерполяцию, которая будет обрабатывать события.
 
 ```
 static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
@@ -101,17 +102,17 @@ static COM_DECLSPEC_NOTHROW HRESULT CreateInstance(
 
 ### <a name="parameters"></a>Параметры
 
-*pInterpolator*<br/>
-Указатель на пользовательский интерполятор.
+*пинтерполатор*<br/>
+Указатель на настраиваемый интерполяцию.
 
-*ppHandler*<br/>
-Выходные данные. Содержит указатель на экземпляр CInterpolatorBase при возврате функции.
+*пфандлер*<br/>
+Выходные данные. Содержит указатель на экземпляр Цинтерполаторбасе при возврате функции.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-## <a name="cinterpolatorbasegetdependencies"></a><a name="getdependencies"></a>CInterpolatorBase::GetDependencies
+## <a name="cinterpolatorbasegetdependencies"></a><a name="getdependencies"></a> Цинтерполаторбасе:: Dependencies
 
-Получает зависимости интерполятора.
+Возвращает зависимости интерполяции.
 
 ```
 IFACEMETHOD(GetDependencies)(
@@ -122,22 +123,22 @@ IFACEMETHOD(GetDependencies)(
 
 ### <a name="parameters"></a>Параметры
 
-*initialValueDependencies*<br/>
-Выходные данные. Аспекты интерполятора, зависят от первоначального значения, переданного SetInitialValueAndVelocity.
+*инитиалвалуедепенденЦиес*<br/>
+Выходные данные. Аспекты интерполяции, зависящие от первоначального значения, переданного в СетинитиалвалуеандвелоЦити.
 
-*initialVelocityЗависимость*<br/>
-Выходные данные. Аспекты интерполятора, зависят от начальной скорости, перешли к SetInitialValueAndVelocity.
+*инитиалвелоЦитидепенденЦиес*<br/>
+Выходные данные. Аспекты интерполяции, зависящие от начальной скорости, передаваемой в СетинитиалвалуеандвелоЦити.
 
-*длительностьЗависимости*<br/>
-Выходные данные. Аспекты интерполятора, зависят от продолжительности, передаваемые SetDuration.
+*дуратиондепенденЦиес*<br/>
+Выходные данные. Аспекты интерполяции, зависящие от длительности, переданной в Сетдуратион.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод завершается успешно, возвращает значение S_OK. Он возвращает E_FAIL, если CCustomInterpolator не установлен, или пользовательская реализация возвращает FALSE из метода GetDependencies.
+Если метод завершается успешно, возвращает значение S_OK. Он возвращает E_FAIL, если Ккустоминтерполатор не задан, или пользовательская реализация возвращает значение FALSE из метода DEPENDENCIES.
 
-## <a name="cinterpolatorbasegetduration"></a><a name="getduration"></a>CInterpolatorBase::GetDuration
+## <a name="cinterpolatorbasegetduration"></a><a name="getduration"></a> Цинтерполаторбасе:: длит
 
-Получает продолжительность интерполятора.
+Возвращает длительность интерполяции.
 
 ```
 IFACEMETHOD(GetDuration)(__out UI_ANIMATION_SECONDS* duration);
@@ -146,15 +147,15 @@ IFACEMETHOD(GetDuration)(__out UI_ANIMATION_SECONDS* duration);
 ### <a name="parameters"></a>Параметры
 
 *duration*<br/>
-Выходные данные. Продолжительность перехода, в секундах.
+Выходные данные. Длительность перехода в секундах.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод завершается успешно, возвращает значение S_OK. Он возвращает E_FAIL если CCustomInterpolator не установлен, или пользовательская реализация возвращает FALSE из метода GetDuration.
+Если метод завершается успешно, возвращает значение S_OK. Он возвращает E_FAIL, если Ккустоминтерполатор не задан, или пользовательская реализация возвращает значение FALSE из метода IsFalse.
 
-## <a name="cinterpolatorbasegetfinalvalue"></a><a name="getfinalvalue"></a>CInterpolatorBase::GetFinalValue
+## <a name="cinterpolatorbasegetfinalvalue"></a><a name="getfinalvalue"></a> Цинтерполаторбасе:: Жетфиналвалуе
 
-Получает окончательное значение, к которому ведет интерполятор.
+Возвращает конечное значение, которое вызывает интерполяцию.
 
 ```
 IFACEMETHOD(GetFinalValue)(__out DOUBLE* value);
@@ -163,15 +164,15 @@ IFACEMETHOD(GetFinalValue)(__out DOUBLE* value);
 ### <a name="parameters"></a>Параметры
 
 *value*<br/>
-Выходные данные. Окончательное значение переменной в конце перехода.
+Выходные данные. Конечное значение переменной в конце перехода.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод завершается успешно, возвращает значение S_OK. Он возвращает E_FAIL, если CCustomInterpolator не установлен, или пользовательская реализация возвращает FALSE из метода GetFinalValue.
+Если метод завершается успешно, возвращает значение S_OK. Он возвращает E_FAIL, если Ккустоминтерполатор не задан, или пользовательская реализация возвращает значение FALSE из метода Жетфиналвалуе.
 
-## <a name="cinterpolatorbaseinterpolatevalue"></a><a name="interpolatevalue"></a>CInterpolatorBase::InterpolateValue
+## <a name="cinterpolatorbaseinterpolatevalue"></a><a name="interpolatevalue"></a> Цинтерполаторбасе:: Интерполатевалуе
 
-Интерполиративирует значение в заданном смещении
+Выполняет интерполяцию значения по заданному смещению
 
 ```
 IFACEMETHOD(InterpolateValue)(
@@ -181,19 +182,19 @@ IFACEMETHOD(InterpolateValue)(
 
 ### <a name="parameters"></a>Параметры
 
-*Смещение*<br/>
-Смещение с начала перехода. Смещение всегда больше или равно нулю и меньше, чем продолжительность перехода. Этот метод не вызывается, если продолжительность перехода равна нулю.
+*offset*<br/>
+Смещение от начала перехода. Смещение всегда больше или равно нулю и меньше, чем длительность перехода. Этот метод не вызывается, если длительность перехода равна нулю.
 
 *value*<br/>
-Выходные данные. Интерполированное значение.
+Выходные данные. Значение интерполяции.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод завершается успешно, возвращает значение S_OK. Он возвращает E_FAIL если CCustomInterpolator не установлен, или пользовательская реализация возвращает FALSE из метода InterpolateValue.
+Если метод завершается успешно, возвращает значение S_OK. Он возвращает E_FAIL, если Ккустоминтерполатор не задан, или пользовательская реализация возвращает значение FALSE из метода Интерполатевалуе.
 
-## <a name="cinterpolatorbaseinterpolatevelocity"></a><a name="interpolatevelocity"></a>CInterpolatorBase::InterpolateVelocity
+## <a name="cinterpolatorbaseinterpolatevelocity"></a><a name="interpolatevelocity"></a> Цинтерполаторбасе:: ИнтерполатевелоЦити
 
-Интерполиративирует скорость в заданном смещении
+Интерполяция скорости в заданном смещении
 
 ```
 IFACEMETHOD(InterpolateVelocity)(
@@ -203,19 +204,19 @@ IFACEMETHOD(InterpolateVelocity)(
 
 ### <a name="parameters"></a>Параметры
 
-*Смещение*<br/>
-Смещение с начала перехода. Смещение всегда больше или равно нулю и меньше или равно продолжительности перехода. Этот метод не вызывается, если продолжительность перехода равна нулю.
+*offset*<br/>
+Смещение от начала перехода. Смещение всегда больше или равно нулю и меньше или равно длительности перехода. Этот метод не вызывается, если длительность перехода равна нулю.
 
-*velocity*<br/>
+*скорость*<br/>
 Выходные данные. Скорость переменной в смещении.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод завершается успешно, возвращает значение S_OK. Он возвращает E_FAIL, если CCustomInterpolator не установлен, или пользовательская реализация возвращает FALSE из метода InterpolateVelocity.
+Если метод завершается успешно, возвращает значение S_OK. Он возвращает E_FAIL, если Ккустоминтерполатор не задан, или пользовательская реализация возвращает значение FALSE из метода ИнтерполатевелоЦити.
 
-## <a name="cinterpolatorbasesetcustominterpolator"></a><a name="setcustominterpolator"></a>CInterpolatorBase::SetCustomИнтерполатор
+## <a name="cinterpolatorbasesetcustominterpolator"></a><a name="setcustominterpolator"></a> Цинтерполаторбасе:: Сеткустоминтерполатор
 
-Хранит указатель на пользовательский интерполятор, который будет обрабатывать события.
+Хранит указатель на пользовательский интерполяций, который будет обрабатывать события.
 
 ```cpp
 void SetCustomInterpolator(CCustomInterpolator* pInterpolator);
@@ -223,12 +224,12 @@ void SetCustomInterpolator(CCustomInterpolator* pInterpolator);
 
 ### <a name="parameters"></a>Параметры
 
-*pInterpolator*<br/>
-Указатель на пользовательский интерполятор.
+*пинтерполатор*<br/>
+Указатель на настраиваемый интерполяцию.
 
-## <a name="cinterpolatorbasesetduration"></a><a name="setduration"></a>CInterpolatorBase::SetDuration
+## <a name="cinterpolatorbasesetduration"></a><a name="setduration"></a> Цинтерполаторбасе:: Сетдуратион
 
-Устанавливает продолжительность интерполятора
+Задает длительность интерполяции
 
 ```
 IFACEMETHOD(SetDuration)(__in UI_ANIMATION_SECONDS duration);
@@ -237,15 +238,15 @@ IFACEMETHOD(SetDuration)(__in UI_ANIMATION_SECONDS duration);
 ### <a name="parameters"></a>Параметры
 
 *duration*<br/>
-Продолжительность перехода.
+Длительность перехода.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод завершается успешно, возвращает значение S_OK. Он возвращает E_FAIL если CCustomInterpolator не установлен, или пользовательская реализация возвращает FALSE из метода SetDuration.
+Если метод завершается успешно, возвращает значение S_OK. Он возвращает E_FAIL, если Ккустоминтерполатор не задан, или пользовательская реализация возвращает значение FALSE из метода Сетдуратион.
 
-## <a name="cinterpolatorbasesetinitialvalueandvelocity"></a><a name="setinitialvalueandvelocity"></a>CInterpolatorBase::SetInitialValueAndVelocity
+## <a name="cinterpolatorbasesetinitialvalueandvelocity"></a><a name="setinitialvalueandvelocity"></a> Цинтерполаторбасе:: СетинитиалвалуеандвелоЦити
 
-Устанавливает исходное значение и скорость интерполятора.
+Задает начальное значение и скорость для интерполяции.
 
 ```
 IFACEMETHOD(SetInitialValueAndVelocity)(
@@ -255,15 +256,15 @@ IFACEMETHOD(SetInitialValueAndVelocity)(
 
 ### <a name="parameters"></a>Параметры
 
-*начальнаястоимость*<br/>
+*инитиалвалуе*<br/>
 Значение переменной в начале перехода.
 
-*ПервоначальныйВелосити*<br/>
+*InitialVelocity равно*<br/>
 Скорость переменной в начале перехода.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод завершается успешно, возвращает значение S_OK. Он возвращает E_FAIL если CCustomInterpolator не установлен, или пользовательская реализация возвращает FALSE из метода SetInitialValueAndVelocity.
+Если метод завершается успешно, возвращает значение S_OK. Он возвращает E_FAIL, если Ккустоминтерполатор не задан, или пользовательская реализация возвращает значение FALSE из метода СетинитиалвалуеандвелоЦити.
 
 ## <a name="see-also"></a>См. также раздел
 

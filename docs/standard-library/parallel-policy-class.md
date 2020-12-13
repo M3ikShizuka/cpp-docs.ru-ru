@@ -1,18 +1,19 @@
 ---
+description: 'Дополнительные сведения о: parallel_policy классе'
 title: Класс parallel_policy
 ms.date: 04/18/2019
 f1_keywords:
 - execution/std::execution::parallel_policy
-ms.openlocfilehash: 7bb2b095a50e664dfc585e0bd4aaa608a6ad8e95
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 1cead0bcc44256bf7d41d061d592849a7411b057
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68268966"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340805"
 ---
-# <a name="parallelpolicy-class"></a>Класс parallel_policy
+# <a name="parallel_policy-class"></a>Класс parallel_policy
 
-Используется как уникальный тип для устранения неоднозначности перегрузки параллельный алгоритм и указать, что выполнение параллельного алгоритма может выполняться параллельно.
+Используется в качестве уникального типа для устранения неоднозначности при перегрузке параллельного алгоритма и указывает, что выполнение параллельного алгоритма может быть параллельным.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -20,6 +21,6 @@ ms.locfileid: "68268966"
 class execution::parallel_policy;
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Во время выполнения параллельного алгоритма с `execution::parallel_policy` политики, если вызов функции доступа элемент завершается через неперехваченное исключение `terminate()` должны вызываться.
+При выполнении параллельного алгоритма с `execution::parallel_policy` политикой, если вызов функции доступа к элементу завершается через неперехваченное исключение, то `terminate()` должно быть вызвано.

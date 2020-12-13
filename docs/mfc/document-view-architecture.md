@@ -1,5 +1,6 @@
 ---
-title: Архитектура "документ-представление"
+description: Дополнительные сведения см. в статье архитектура документов и представлений.
+title: Архитектура Document-View
 ms.date: 11/19/2018
 helpviewer_keywords:
 - CView class [MFC], view architecture
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - documents [MFC], MFC document/view model
 - document objects [MFC], document/view architecture
 ms.assetid: 6127768a-553f-462a-b01b-a5ee6068c81e
-ms.openlocfilehash: a74aeba651d385cf3a5386e94ec20e4e56b7cd57
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: ef6746a77a3f8a482c347d61685fccad3e6b4dfb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624791"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339726"
 ---
 # <a name="documentview-architecture"></a>Архитектура "документ-представление"
 
@@ -70,7 +71,7 @@ ms.locfileid: "84624791"
 
 - [Использование представлений](using-views.md)
 
-- [Множественные типы документов, представления и окна фреймов](multiple-document-types-views-and-frame-windows.md)
+- [Несколько типов документов, представлений и окон фрейма](multiple-document-types-views-and-frame-windows.md)
 
 - [Инициализация и очистка документов и представлений](initializing-and-cleaning-up-documents-and-views.md)
 

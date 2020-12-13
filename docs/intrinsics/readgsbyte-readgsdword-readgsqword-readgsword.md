@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __readgsbyte, __readgsdword, __readgsqword, __readgsword'
 title: __readgsbyte, __readgsdword, __readgsqword, __readgsword
 ms.date: 09/02/2019
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - __readgsqword intrinsic
 - __readgsbyte intrinsic
 ms.assetid: f822632d-854c-4558-a71b-cdfc3eea2236
-ms.openlocfilehash: 278f1de33a7e01c5893217ddd8aaa22e68cf0c94
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: fb1faf0e785f0d0983d7d3611e68a7515298e61c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222352"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340974"
 ---
 # <a name="__readgsbyte-__readgsdword-__readgsqword-__readgsword"></a>__readgsbyte, __readgsdword, __readgsqword, __readgsword
 
@@ -49,20 +50,20 @@ unsigned __int64 __readgsqword(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Содержимое памяти в байтах, слово, двойное слово или куадворд (как указано именем функции с именем) в расположении `GS:[Offset]`.
+Содержимое памяти в байтах, слово, двойное слово или куадворд (как указано именем функции с именем) в расположении `GS:[Offset]` .
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__readgsbyte`|X64|
 |`__readgsdword`|X64|
 |`__readgsqword`|X64|
 |`__readgsword`|X64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эти подпрограммы доступны только в качестве встроенных.
 
@@ -70,5 +71,5 @@ unsigned __int64 __readgsqword(
 
 ## <a name="see-also"></a>См. также
 
-[__writegsbyte, \__writegsdword, \__writegsqword, \__writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)\
-[Встроенные функции компилятора](../intrinsics/compiler-intrinsics.md)
+[__writegsbyte, \_ _writegsdword, \_ _writegsqword, \_ _writegsword](../intrinsics/writegsbyte-writegsdword-writegsqword-writegsword.md)\
+[Встроенные объекты компилятора](../intrinsics/compiler-intrinsics.md)

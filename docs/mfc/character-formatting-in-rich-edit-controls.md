@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о форматировании символов в элементах управления Rich Edit
 title: Форматирование знаков с использованием элементов управления "Rich Edit"
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - rich edit controls [MFC], character formatting in
 - CRichEditCtrl class [MFC], character formatting in
 ms.assetid: c80f4305-75ad-45f9-8d17-d83d0fe79be5
-ms.openlocfilehash: 0b9d925b6ba3157177b7012d1e303ef7b7ddab46
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 47d44a7d586d52ba6a83314711af1350d1c2def6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624937"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339700"
 ---
 # <a name="character-formatting-in-rich-edit-controls"></a>Форматирование знаков с использованием элементов управления "Rich Edit"
 
 Функции-члены элемента управления Rich Edit ([CRichEditCtrl](reference/cricheditctrl-class.md)) можно использовать для форматирования символов и получения сведений о форматировании. Для символов можно указать гарнитуру, размер, цвет и эффекты, такие как полужирный, курсив и защищенный.
 
-Форматирование символов можно применить с помощью функций члена [сетселектиончарформат](reference/cricheditctrl-class.md#setselectioncharformat) и [сетвордчарформат](reference/cricheditctrl-class.md#setwordcharformat) . Чтобы определить текущее форматирование символов для выделенного текста, используйте функцию члена [жетселектиончарформат](reference/cricheditctrl-class.md#getselectioncharformat) . Структура [чарформат](/windows/win32/api/richedit/ns-richedit-charformata) используется с этими функциями-членами для указания атрибутов символов. Одним из важных членов **чарформат** является **двмаск**. В `SetSelectionCharFormat` и `SetWordCharFormat` **двмаск** указывает, какие символьные атрибуты будут заданы этим вызовом функции. `GetSelectionCharFormat`сообщает об атрибутах первого символа в выделенном фрагменте. **двмаск** задает атрибуты, согласованные по всему выбору.
+Форматирование символов можно применить с помощью функций члена [сетселектиончарформат](reference/cricheditctrl-class.md#setselectioncharformat) и [сетвордчарформат](reference/cricheditctrl-class.md#setwordcharformat) . Чтобы определить текущее форматирование символов для выделенного текста, используйте функцию члена [жетселектиончарформат](reference/cricheditctrl-class.md#getselectioncharformat) . Структура [чарформат](/windows/win32/api/richedit/ns-richedit-charformata) используется с этими функциями-членами для указания атрибутов символов. Одним из важных членов **чарформат** является **двмаск**. В `SetSelectionCharFormat` и `SetWordCharFormat` **двмаск** указывает, какие символьные атрибуты будут заданы этим вызовом функции. `GetSelectionCharFormat` сообщает об атрибутах первого символа в выделенном фрагменте. **двмаск** задает атрибуты, согласованные по всему выбору.
 
 Можно также получить и установить параметр «форматирование символов по умолчанию», который применяется к вставленным символам. Например, если приложение устанавливает форматирование символов по умолчанию полужирным, а пользователь вводит символ, этот символ выделяется полужирным шрифтом. Чтобы получить и установить форматирование символов по умолчанию, используйте функции члена [жетдефаултчарформат](reference/cricheditctrl-class.md#getdefaultcharformat) и [сетдефаултчарформат](reference/cricheditctrl-class.md#setdefaultcharformat) .
 

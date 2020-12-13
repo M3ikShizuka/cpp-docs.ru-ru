@@ -1,18 +1,19 @@
 ---
+description: 'Дополнительные сведения о: parallel_unsequenced_policy классе'
 title: Класс parallel_unsequenced_policy
 ms.date: 04/18/2019
 f1_keywords:
 - execution/std::execution::parallel_unsequenced_policy
-ms.openlocfilehash: 92b4e3ce3743fdd3d5ba112a333b2306829b95d4
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: e39edc0979bf1374bc6092dbadb032811180f668
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68268786"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340792"
 ---
-# <a name="parallelunsequencedpolicy-class"></a>Класс parallel_unsequenced_policy
+# <a name="parallel_unsequenced_policy-class"></a>Класс parallel_unsequenced_policy
 
-Используется как уникальный тип для устранения неоднозначности перегрузки параллельный алгоритм и указать, что параллельный алгоритм выполнения может быть параллелизован и преобразованы в векторный формат.
+Используется в качестве уникального типа для устранения неоднозначности при перегрузке параллельного алгоритма и указывает, что выполнение параллельного алгоритма может быть параллельным и векторным.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -20,6 +21,6 @@ ms.locfileid: "68268786"
 class execution::parallel_unsequenced_policy;
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Во время выполнения параллельного алгоритма с `execution::parallel_unsequenced_policy` политики, если вызов функции доступа элемент завершается через неперехваченное исключение `terminate()` должны вызываться.
+При выполнении параллельного алгоритма с `execution::parallel_unsequenced_policy` политикой, если вызов функции доступа к элементу завершается через неперехваченное исключение, то `terminate()` должно быть вызвано.

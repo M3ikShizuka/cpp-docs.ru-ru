@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: серверы автоматизации'
 title: Серверы автоматизации
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - dispatch maps [MFC], Automation servers
 - servers, Automation
 ms.assetid: 523fd155-51ce-4f91-b986-b74bdbdd7d92
-ms.openlocfilehash: 4c2ef77e20b7dccfa8cd6830c090111601331642
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: e97bcf524b96e459cd1a3caddec7cdaf0c030962
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619421"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339830"
 ---
 # <a name="automation-servers"></a>Серверы автоматизации
 
@@ -27,7 +28,7 @@ ms.locfileid: "84619421"
 
 Благодаря предоставлению функциональных возможностей приложения через общий, четко определенный интерфейс автоматизации позволяет создавать приложения на едином общем языке программирования, таком как Microsoft Visual Basic, а не на различных языках макросов, зависящих от приложения.
 
-## <a name="support-for-automation-servers"></a><a name="_core_support_for_automation_servers"></a>Поддержка серверов автоматизации
+## <a name="support-for-automation-servers"></a><a name="_core_support_for_automation_servers"></a> Поддержка серверов автоматизации
 
 Visual C++ и платформа MFC обеспечивают расширенную поддержку серверов автоматизации. Они обрабатывали большую часть издержек, связанных с созданием сервера автоматизации, поэтому вы можете сосредоточиться на работе с функциями приложения.
 

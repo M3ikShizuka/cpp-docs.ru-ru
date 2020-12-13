@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: piecewise_linear_distribution классе'
 title: Класс piecewise_linear_distribution
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::piecewise_linear_distribution [C++], param_type
 - std::piecewise_linear_distribution [C++], param_type
 ms.assetid: cd141152-7163-4754-8f98-c6d6500005e0
-ms.openlocfilehash: 57c6e19bc56068c98f6c85978c7af68e56cb4f2a
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8ba2a0707599c8510488290c5d0c227d464588ff
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88832689"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340740"
 ---
 # <a name="piecewise_linear_distribution-class"></a>Класс piecewise_linear_distribution
 
@@ -83,7 +84,7 @@ public:
 *реалтипе*\
 Тип результата с плавающей запятой, по умолчанию — **`double`** . Возможные типы см. в разделе [\<random>](../standard-library/random.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Выборочное распределение использует меняющиеся интервалы ширины с линейно меняющейся вероятностью в каждом интервале. Сведения о других выборочных распределениях см. в разделах [piecewise_linear_distribution](../standard-library/piecewise-constant-distribution-class.md) и [discrete_distribution](../standard-library/discrete-distribution-class.md).
 
@@ -274,7 +275,7 @@ explicit piecewise_linear_distribution(const param_type& parm);
 *ParM*\
 Структура параметров, используемая для формирования распределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конструктор по умолчанию задает хранимые параметры таким образом, чтобы существовал один интервал от 0 до 1 с плотностью вероятности 1.
 
@@ -348,7 +349,7 @@ struct param_type {
 
 См. параметры конструктора [piecewise_linear_distribution](#piecewise_linear_distribution).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительное условие:**`xmin < xmax`
 

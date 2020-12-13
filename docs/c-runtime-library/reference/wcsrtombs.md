@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: вксртомбс'
 title: wcsrtombs
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - string conversion, wide characters
 - wide characters, strings
 ms.assetid: a8d21fec-0d36-4085-9d81-9b1c61c7259d
-ms.openlocfilehash: cad31f28c5542a96eae9f144344882b71806052a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 34fabe44c0e239eba4201b180df026655a4277f4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910617"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340518"
 ---
 # <a name="wcsrtombs"></a>wcsrtombs
 
@@ -75,7 +76,7 @@ size_t wcsrtombs(
 
 Возвращает число успешно преобразованных байтов, не включая завершающий байт NULL (если имеется); в противном случае — значение -1, если произошла ошибка.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **вксртомбс** преобразует строку расширенных символов, начиная с указанного состояния преобразования, содержащегося в *мбстате*, из значений, косвенно указываемых в *вкстр*, в адрес *мбстр*. Преобразование продолжится для каждого символа до тех пор, пока не будет обнаружен несоответствующий символ или если следующий символ превысит предел, содержащийся в параметре *Count*. Если **вксртомбс** обнаруживает символ NULL с расширенными символами (L ' \ 0 ') как до, так и при *подсчете* , он преобразует его в 8-разрядный 0 и останавливается.
 
@@ -148,8 +149,8 @@ The string was successfuly converted.
 ## <a name="see-also"></a>См. также раздел
 
 [Преобразование данных](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [wcrtomb](wcrtomb.md)<br/>
 [wcrtomb_s](wcrtomb-s.md)<br/>
 [wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>

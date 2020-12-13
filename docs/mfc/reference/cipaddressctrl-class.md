@@ -1,5 +1,6 @@
 ---
-title: Класс CIPAddressCtrl
+description: 'Дополнительные сведения о: Ципаддрессктрл Class'
+title: Класс Ципаддрессктрл
 ms.date: 11/04/2016
 f1_keywords:
 - CIPAddressCtrl
@@ -24,14 +25,14 @@ helpviewer_keywords:
 - CIPAddressCtrl [MFC], SetFieldFocus
 - CIPAddressCtrl [MFC], SetFieldRange
 ms.assetid: 9764d2f4-cb14-4ba8-b799-7f57a55a47c6
-ms.openlocfilehash: 0613dea766b022acf140a82bb4b01784793c2589
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: e5791726bc31e9b7485d0de7ecfc5461408ed02a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81754966"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340948"
 ---
-# <a name="cipaddressctrl-class"></a>Класс CIPAddressCtrl
+# <a name="cipaddressctrl-class"></a>Класс Ципаддрессктрл
 
 Предоставляет функциональные возможности стандартного элемента управления "IP-адрес" Windows.
 
@@ -41,34 +42,34 @@ ms.locfileid: "81754966"
 class CIPAddressCtrl : public CWnd
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CIPAddressCtrl::CIPAddressCtrl](#cipaddressctrl)|Формирует объект `CIPAddressCtrl`.|
+|[Ципаддрессктрл:: Ципаддрессктрл](#cipaddressctrl)|Формирует объект `CIPAddressCtrl`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CIPAddressCtrl::ClearAddress](#clearaddress)|Очищает содержимое IP-адреса управления.|
-|[CIPAddressCtrl::Создание](#create)|Создает IP-адрес управления и прикрепляет его к объекту. `CIPAddressCtrl`|
-|[CIPAddressCtrl::CreateEx](#createex)|Создает элемент управления IP-адресом с указанными расширенными стилями Windows и прикрепляет его к объекту. `CIPAddressCtrl`|
-|[CIPAddressCtrl::GetAddress](#getaddress)|Извлекает значения адресов для всех четырех полей в IP-управлении.|
-|[CIPAddressCtrl::IsBlank](#isblank)|Определяет, пусты ли все поля в управлении IP-адресами.|
-|[CIPAddressCtrl::SetAddress](#setaddress)|Устанавливает значения адресов для всех четырех полей в ip-управлении.|
-|[CIPAddressCtrl::SetFieldFocus](#setfieldfocus)|Устанавливает фокус клавиатуры на указанное поле в IP-управлении.|
-|[CIPAddressCtrl::SetFieldRange](#setfieldrange)|Устанавливает диапазон в указанном поле в IP-управлении.|
+|[Ципаддрессктрл:: Клеараддресс](#clearaddress)|Очищает содержимое элемента управления "IP-адрес".|
+|[Ципаддрессктрл:: Create](#create)|Создает элемент управления IP-адреса и прикрепляет его к `CIPAddressCtrl` объекту.|
+|[Ципаддрессктрл:: Креатикс](#createex)|Создает элемент управления IP-адреса с указанными расширенными стилями Windows и прикрепляет его к `CIPAddressCtrl` объекту.|
+|[Ципаддрессктрл:: наадресовать](#getaddress)|Извлекает значения адреса для всех четырех полей в элементе управления IP-адреса.|
+|[Ципаддрессктрл:: Blank](#isblank)|Определяет, являются ли все поля в элементе управления "IP-адрес" пустыми.|
+|[Ципаддрессктрл:: Сетаддресс](#setaddress)|Задает значения адреса для всех четырех полей в элементе управления "IP-адрес".|
+|[Ципаддрессктрл:: Сетфиелдфокус](#setfieldfocus)|Устанавливает фокус клавиатуры на указанное поле в элементе управления IP-адреса.|
+|[Ципаддрессктрл:: Сетфиелдранже](#setfieldrange)|Задает диапазон в указанном поле в элементе управления IP-адреса.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Контроль IP-адреса, элемент управления, аналогичный правку, позволяет вводить и манипулировать числовым адресом в формате Интернет-протокола (IP).
+Элемент управления IP-адреса, аналогичный элементу управления Edit, позволяет вводить числовой адрес в формате протокола Интернета (IP) и управлять им.
 
-Этот элемент управления `CIPAddressCtrl` (и, следовательно, класс) доступен только для программ, работающих в Microsoft Internet Explorer 4.0 и позже. Они также будут доступны в рамках будущих версий Windows и Windows NT.
+Этот элемент управления (и, следовательно, `CIPAddressCtrl` класс) доступен только для программ, работающих под управлением Microsoft Internet Explorer 4,0 и более поздних версий. Они также будут доступны в будущих версиях Windows и Windows NT.
 
-Более подробную информацию о контроле IP-адреса [можно](/windows/win32/Controls/ip-address-controls) узнать в SDK Windows.
+Дополнительные общие сведения об элементе управления IP-адресом см. в разделе [элементы управления IP-адресами](/windows/win32/Controls/ip-address-controls) в Windows SDK.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -84,7 +85,7 @@ class CIPAddressCtrl : public CWnd
 
 **Заголовок:** afxcmn.h
 
-## <a name="cipaddressctrlcipaddressctrl"></a><a name="cipaddressctrl"></a>CIPAddressCtrl::CIPAddressCtrl
+## <a name="cipaddressctrlcipaddressctrl"></a><a name="cipaddressctrl"></a> Ципаддрессктрл:: Ципаддрессктрл
 
 Создает объект `CIPAddressCtrl`.
 
@@ -92,21 +93,21 @@ class CIPAddressCtrl : public CWnd
 CIPAddressCtrl();
 ```
 
-## <a name="cipaddressctrlclearaddress"></a><a name="clearaddress"></a>CIPAddressCtrl::ClearAddress
+## <a name="cipaddressctrlclearaddress"></a><a name="clearaddress"></a> Ципаддрессктрл:: Клеараддресс
 
-Очищает содержимое IP-адреса управления.
+Очищает содержимое элемента управления "IP-адрес".
 
 ```cpp
 void ClearAddress();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Эта функция члена реализует поведение сообщения Win32 [IPM_CLEARADDRESS,](/windows/win32/Controls/ipm-clearaddress)как описано в SDK Windows.
+Эта функция члена реализует поведение сообщения Win32 [IPM_CLEARADDRESS](/windows/win32/Controls/ipm-clearaddress), как описано в Windows SDK.
 
-## <a name="cipaddressctrlcreate"></a><a name="create"></a>CIPAddressCtrl::Создание
+## <a name="cipaddressctrlcreate"></a><a name="create"></a> Ципаддрессктрл:: Create
 
-Создает IP-адрес управления и прикрепляет его к объекту. `CIPAddressCtrl`
+Создает элемент управления IP-адреса и прикрепляет его к `CIPAddressCtrl` объекту.
 
 ```
 virtual BOOL Create(
@@ -118,35 +119,35 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Параметры
 
-*dwStyle*<br/>
-Стиль управления IP-адресом. Примените комбинацию стилей окон. Вы должны включить WS_CHILD стиль, потому что элемент управления должен быть окном ребенка. Смотрите [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) в SDK Windows для списка стилей windows.
+*двстиле*<br/>
+Стиль элемента управления IP-адресом. Применить сочетание стилей окна. Необходимо включить стиль WS_CHILD, так как элемент управления должен быть дочерним окном. Список стилей Windows см. в разделе [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) в Windows SDK.
 
 *rect*<br/>
-Ссылка на размер и положение IP-адреса. Это может быть либо объект [CRect,](../../atl-mfc-shared/reference/crect-class.md) либо структура [RECT.](/windows/win32/api/windef/ns-windef-rect)
+Ссылка на размер и расположение элемента управления IP-адреса. Это может быть либо объект [крект](../../atl-mfc-shared/reference/crect-class.md) , либо структура [Rect](/windows/win32/api/windef/ns-windef-rect) .
 
-*pParentWnd*<br/>
-Указатель на родительское окно IP-адреса Control. Она не должна быть NULL.
+*ппарентвнд*<br/>
+Указатель на родительское окно элемента управления IP-адресом. Оно не должно иметь значение NULL.
 
 *nID*<br/>
-Идентификатор IP-адреса control.
+Идентификатор элемента управления IP-адреса.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Незерно, если инициализация была успешной; в противном случае 0.
+Ненулевое значение, если инициализация прошла успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вы строите `CIPAddressCtrl` объект в два этапа.
+`CIPAddressCtrl`Объект создается в два этапа.
 
-1. Вызовите конструктора, `CIPAddressCtrl` который создает объект.
+1. Вызовите конструктор, который создает `CIPAddressCtrl` объект.
 
-1. Вызов `Create`, который создает IP-адрес управления.
+1. Вызовите метод `Create` , который создает элемент управления IP-адреса.
 
-Если вы хотите использовать расширенные стили `Create`окон с вашим управлением, позвоните [CreateEx](#createex) вместо .
+Если вы хотите использовать расширенные стили Windows с элементом управления, вызовите [креатикс](#createex) вместо `Create` .
 
-## <a name="cipaddressctrlcreateex"></a><a name="createex"></a>CIPAddressCtrl::CreateEx
+## <a name="cipaddressctrlcreateex"></a><a name="createex"></a> Ципаддрессктрл:: Креатикс
 
-Вызовите эту функцию, чтобы создать элемент управления `CIPAddressCtrl` (окно ребенка) и связать его с объектом.
+Вызовите эту функцию, чтобы создать элемент управления (дочернее окно) и связать его с `CIPAddressCtrl` объектом.
 
 ```
 virtual BOOL CreateEx(
@@ -159,32 +160,32 @@ virtual BOOL CreateEx(
 
 ### <a name="parameters"></a>Параметры
 
-*dwExStyle*<br/>
-Определяет расширенный стиль создаваемого элемента управления. Список расширенных стилей Windows можно узнать [в](/windows/win32/api/winuser/nf-winuser-createwindowexw) *SDK* Windows см.
+*двексстиле*<br/>
+Задает расширенный стиль создаваемого элемента управления. Список расширенных стилей Windows см. в разделе параметр *двексстиле* для [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) в Windows SDK.
 
-*dwStyle*<br/>
-Стиль управления IP-адресом. Примените комбинацию стилей окон. Вы должны включить WS_CHILD стиль, потому что элемент управления должен быть окном ребенка. Смотрите [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) в SDK Windows для списка стилей windows.
+*двстиле*<br/>
+Стиль элемента управления IP-адресом. Применить сочетание стилей окна. Необходимо включить стиль WS_CHILD, так как элемент управления должен быть дочерним окном. Список стилей Windows см. в разделе [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) в Windows SDK.
 
 *rect*<br/>
-Ссылка на структуру [RECT,](/windows/win32/api/windef/ns-windef-rect) описывающую размер и положение создаваемого окна, в клиентских координатах *pParentWnd*.
+Ссылка на структуру [Rect](/windows/win32/api/windef/ns-windef-rect) , описывающую размер и расположение создаваемого окна в клиентских координатах *ппарентвнд*.
 
-*pParentWnd*<br/>
-Указатель на окно, которое является родителем элемента управления.
+*ппарентвнд*<br/>
+Указатель на окно, которое является родительским элементом управления.
 
 *nID*<br/>
-Идентификатор окна ребенка элемента управления.
+Идентификатор дочернего окна элемента управления.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Используйте `CreateEx` вместо [создания](#create) для применения расширенных стилей Windows, указанных в предисловии расширенного стиля Windows **WS_EX_.**
+Используйте `CreateEx` вместо [CREATE](#create) , чтобы применить расширенные стили Windows, заданные **WS_EX_** в расширенном стиле Windows.
 
-## <a name="cipaddressctrlgetaddress"></a><a name="getaddress"></a>CIPAddressCtrl::GetAddress
+## <a name="cipaddressctrlgetaddress"></a><a name="getaddress"></a> Ципаддрессктрл:: наадресовать
 
-Извлекает значения адресов для всех четырех полей в IP-управлении.
+Извлекает значения адреса для всех четырех полей в элементе управления IP-адреса.
 
 ```
 int GetAddress(
@@ -199,38 +200,38 @@ int GetAddress(DWORD& dwAddress);
 ### <a name="parameters"></a>Параметры
 
 *nField0*<br/>
-Ссылка на значение поля 0 с упакованного IP-адреса.
+Ссылка на значение поля 0 из упакованного IP-адреса.
 
 *nField1*<br/>
-Ссылка на значение поля 1 с упакованного IP-адреса.
+Ссылка на значение поля 1 из упакованного IP-адреса.
 
 *nField2*<br/>
-Ссылка на значение поля 2 с упакованного IP-адреса.
+Ссылка на значение поля 2 из упакованного IP-адреса.
 
 *nField3*<br/>
-Ссылка на значение поля 3 с упакованного IP-адреса.
+Ссылка на значение поля 3 из упакованного IP-адреса.
 
-*dwАдрес*<br/>
-Ссылка на адрес значения DWORD, который получает IP-адрес. Смотрите **замечания** для таблицы, которая показывает, как *dwAddress* заполнен.
+*дваддресс*<br/>
+Ссылка на адрес значения DWORD, получающего IP-адрес. См. **Примечания** к таблице, в которой показано, как *дваддресс* заполняется.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Количество непустых полей в IP-управлении.
+Число непустых полей в элементе управления "IP-адрес".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Эта функция члена реализует поведение сообщения Win32 [IPM_GETADDRESS,](/windows/win32/Controls/ipm-getaddress)как описано в SDK Windows. В первом прототипе выше, номера в полях от 0 до 3 управления, читать слева направо соответственно, заполнить четыре параметра. Во втором прототипе выше, *dwAddress* заселен следующим образом.
+Эта функция члена реализует поведение сообщения Win32 [IPM_GETADDRESS](/windows/win32/Controls/ipm-getaddress), как описано в Windows SDK. В первом приведенном выше прототипе числа в полях от 0 до 3 элемента управления считываются слева направо, заполняют четыре параметра. Во втором приведенном выше прототипе *дваддресс* заполняется следующим образом.
 
 |Поле|Биты, содержащие значение поля|
 |-----------|-------------------------------------|
 |0|от 24 до 31|
 |1|от 16 до 23|
 |2|от 8 до 15|
-|3|От 0 до 7|
+|3|от 0 до 7|
 
-## <a name="cipaddressctrlisblank"></a><a name="isblank"></a>CIPAddressCtrl::IsBlank
+## <a name="cipaddressctrlisblank"></a><a name="isblank"></a> Ципаддрессктрл:: Blank
 
-Определяет, пусты ли все поля в управлении IP-адресами.
+Определяет, являются ли все поля в элементе управления "IP-адрес" пустыми.
 
 ```
 BOOL IsBlank() const;
@@ -238,15 +239,15 @@ BOOL IsBlank() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero, если все поля ip-адреса управления пусты; в противном случае 0.
+Ненулевое значение, если все поля управления IP-адресами пусты; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Эта функция члена реализует поведение сообщения Win32 [IPM_ISBLANK,](/windows/win32/Controls/ipm-isblank)как описано в SDK Windows.
+Эта функция члена реализует поведение сообщения Win32 [IPM_ISBLANK](/windows/win32/Controls/ipm-isblank), как описано в Windows SDK.
 
-## <a name="cipaddressctrlsetaddress"></a><a name="setaddress"></a>CIPAddressCtrl::SetAddress
+## <a name="cipaddressctrlsetaddress"></a><a name="setaddress"></a> Ципаддрессктрл:: Сетаддресс
 
-Устанавливает значения адресов для всех четырех полей в ip-управлении.
+Задает значения адреса для всех четырех полей в элементе управления "IP-адрес".
 
 ```cpp
 void SetAddress(
@@ -261,34 +262,34 @@ void SetAddress(DWORD dwAddress);
 ### <a name="parameters"></a>Параметры
 
 *nField0*<br/>
-Значение поля 0 с упакованного IP-адреса.
+Значение поля 0 из упакованного IP-адреса.
 
 *nField1*<br/>
-Значение поля 1 с упакованного IP-адреса.
+Значение поля 1 из упакованного IP-адреса.
 
 *nField2*<br/>
-Значение поля 2 с упакованного IP-адреса.
+Значение поля 2 из упакованного IP-адреса.
 
 *nField3*<br/>
-Значение поля 3 с упакованного IP-адреса.
+Значение поля 3 из упакованного IP-адреса.
 
-*dwАдрес*<br/>
-Значение DWORD, содержащее новый IP-адрес. Смотрите **замечания** для таблицы, которая показывает, как заполняется значение DWORD.
+*дваддресс*<br/>
+Значение типа DWORD, содержащее новый IP-адрес. См. раздел **Примечания** для таблицы, в которой показано, как заполняется значение DWORD.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Эта функция члена реализует поведение сообщения Win32 [IPM_SETADDRESS,](/windows/win32/Controls/ipm-setaddress)как описано в SDK Windows. В первом прототипе выше, номера в полях от 0 до 3 управления, читать слева направо соответственно, заполнить четыре параметра. Во втором прототипе выше, *dwAddress* заселен следующим образом.
+Эта функция члена реализует поведение сообщения Win32 [IPM_SETADDRESS](/windows/win32/Controls/ipm-setaddress), как описано в Windows SDK. В первом приведенном выше прототипе числа в полях от 0 до 3 элемента управления считываются слева направо, заполняют четыре параметра. Во втором приведенном выше прототипе *дваддресс* заполняется следующим образом.
 
 |Поле|Биты, содержащие значение поля|
 |-----------|-------------------------------------|
 |0|от 24 до 31|
 |1|от 16 до 23|
 |2|от 8 до 15|
-|3|От 0 до 7|
+|3|от 0 до 7|
 
-## <a name="cipaddressctrlsetfieldfocus"></a><a name="setfieldfocus"></a>CIPAddressCtrl::SetFieldFocus
+## <a name="cipaddressctrlsetfieldfocus"></a><a name="setfieldfocus"></a> Ципаддрессктрл:: Сетфиелдфокус
 
-Устанавливает фокус клавиатуры на указанное поле в IP-управлении.
+Устанавливает фокус клавиатуры на указанное поле в элементе управления IP-адреса.
 
 ```cpp
 void SetFieldFocus(WORD nField);
@@ -296,16 +297,16 @@ void SetFieldFocus(WORD nField);
 
 ### <a name="parameters"></a>Параметры
 
-*nФилд*<br/>
-Индекс полей на нулевой основе, на который следует установить фокус. Если это значение больше, чем количество полей, фокус устанавливается на первое пустое поле. Если все поля не пустые, фокус устанавливается на первое поле.
+*нфиелд*<br/>
+Отсчитываемый от нуля индекс поля, к которому должен быть установлен фокус. Если это значение больше числа полей, фокус устанавливается на первое пустое поле. Если все поля не пусты, фокус устанавливается на первое поле.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Эта функция члена реализует поведение сообщения Win32 [IPM_SETFOCUS,](/windows/win32/Controls/ipm-setfocus)как описано в SDK Windows.
+Эта функция члена реализует поведение сообщения Win32 [IPM_SETFOCUS](/windows/win32/Controls/ipm-setfocus), как описано в Windows SDK.
 
-## <a name="cipaddressctrlsetfieldrange"></a><a name="setfieldrange"></a>CIPAddressCtrl::SetFieldRange
+## <a name="cipaddressctrlsetfieldrange"></a><a name="setfieldrange"></a> Ципаддрессктрл:: Сетфиелдранже
 
-Устанавливает диапазон в указанном поле в IP-управлении.
+Задает диапазон в указанном поле в элементе управления IP-адреса.
 
 ```cpp
 void SetFieldRange(
@@ -316,20 +317,20 @@ void SetFieldRange(
 
 ### <a name="parameters"></a>Параметры
 
-*nФилд*<br/>
-Индекс полей на нулевой основе, к которому будет применяться диапазон.
+*нфиелд*<br/>
+Отсчитываемый от нуля индекс поля, к которому будет применен диапазон.
 
-*nLower*<br/>
-Ссылка на ряд, получающий нижний предел указанного поля в данном IP-управлении.
+*нловер*<br/>
+Ссылка на целое число, получающее нижнюю границу указанного поля в этом элементе управления IP-адресов.
 
-*nУппер*<br/>
-Ссылка на ряд, получающий верхний предел указанного поля в данном IP-управлении.
+*нуппер*<br/>
+Ссылка на целое число, получающее верхний предел указанного поля в этом элементе управления IP-адресов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Эта функция члена реализует поведение сообщения Win32 [IPM_SETRANGE,](/windows/win32/Controls/ipm-setrange)как описано в SDK Windows. Используйте два параметра, *nLower* и *nUpper*, чтобы указать нижние и верхние пределы поля, вместо параметра *wRange,* используемого с сообщением Win32.
+Эта функция члена реализует поведение сообщения Win32 [IPM_SETRANGE](/windows/win32/Controls/ipm-setrange), как описано в Windows SDK. Используйте два параметра, *нловер* и *нуппер*, чтобы указать нижний и верхний пределы поля, а не параметр *вранже* , используемый вместе с сообщением Win32.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Класс CWnd](../../mfc/reference/cwnd-class.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)
+[CWnd, класс](../../mfc/reference/cwnd-class.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)

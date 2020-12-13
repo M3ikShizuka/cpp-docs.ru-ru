@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: pointer_to_binary_function классе'
 title: Класс pointer_to_binary_function
 ms.date: 02/21/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - pointer_to_binary_function function
 - pointer_to_binary_function class
 ms.assetid: fb50599f-bcb3-4076-a669-6dcc3eb189a5
-ms.openlocfilehash: 890ebb7d4c2b8fbd51a4460e21efba3e763ead7e
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 5cdecc297ff5c55c9b6c57b5b6ab029636f3958c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687195"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97340714"
 ---
 # <a name="pointer_to_binary_function-class"></a>Класс pointer_to_binary_function
 
@@ -33,22 +34,22 @@ class pointer_to_binary_function
 
 ### <a name="parameters"></a>Параметры
 
-*pfunc* \
+*pFunc*\
 Бинарная функция для преобразования.
 
-*left* \
-Левый объект, для которого вызывается функция *\*pfunc*.
+*слева*\
+Левый объект, для которого вызывается *\* pFunc* .
 
-*справа* \
-Правый объект, для которого вызывается функция *\*pfunc*.
+*Правильно*\
+Правый объект, для которого вызывается *\* pFunc* .
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Шаблон класса хранит копию `pfunc`. Он определяет свою функцию члена `operator()` как возвращаемый `(* pfunc)(Left, right)`.
+Шаблон класса хранит копию `pfunc` . Он определяет свою функцию члена `operator()` как возвращающую `(* pfunc)(Left, right)` .
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
-Указатель на бинарную функцию является объектом функции и может передаваться в любой алгоритм стандартной библиотеки C++, ожидающий бинарную функцию в качестве параметра, но не может настраиваться. Чтобы использовать его с адаптером, например привязать к нему значение или использовать его с отрицанием, он должен быть передаваться с вложенными типами `first_argument_type`, `second_argument_type` и `result_type`, что делает такую адаптацию допустимой. Преобразование посредством `pointer_to_binary_function` позволяет адаптерам функций работать с указателями бинарных функций.
+Указатель на бинарную функцию является объектом функции и может передаваться в любой алгоритм стандартной библиотеки C++, ожидающий бинарную функцию в качестве параметра, но не может настраиваться. Чтобы использовать его с адаптером, например привязать к нему значение или использовать его с отрицанием, он должен быть передаваться вместе с вложенными типами `first_argument_type` , `second_argument_type` а `result_type` это делает возможным такую адаптацию. Преобразование посредством `pointer_to_binary_function` позволяет адаптерам функций работать с указателями бинарных функций.
 
 ## <a name="example"></a>Пример
 
