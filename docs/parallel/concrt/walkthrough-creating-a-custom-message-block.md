@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в разделе Пошаговое руководство. Создание пользовательского блока сообщений
 title: Пошаговое руководство. Создание пользовательского блока сообщений
 ms.date: 04/25/2019
 helpviewer_keywords:
 - creating custom message blocks Concurrency Runtime]
 - custom message blocks, creating [Concurrency Runtime]
 ms.assetid: 4c6477ad-613c-4cac-8e94-2c9e63cd43a1
-ms.openlocfilehash: f95eaf7e1da41bd473ab15d12330d0177b98ccdf
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2347284c4541ef52579a2179c6387b435b1d382f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219499"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163851"
 ---
 # <a name="walkthrough-creating-a-custom-message-block"></a>Пошаговое руководство. Создание пользовательского блока сообщений
 
@@ -26,7 +27,7 @@ ms.locfileid: "87219499"
 
 - [Функции передачи сообщений](../../parallel/concrt/message-passing-functions.md)
 
-## <a name="sections"></a><a name="top"></a>Священ
+## <a name="sections"></a><a name="top"></a> Священ
 
 Это пошаговое руководство содержит следующие разделы:
 
@@ -36,7 +37,7 @@ ms.locfileid: "87219499"
 
 - [Полный пример](#complete)
 
-## <a name="designing-a-custom-message-block"></a><a name="design"></a>Разработка пользовательского блока сообщений
+## <a name="designing-a-custom-message-block"></a><a name="design"></a> Разработка пользовательского блока сообщений
 
 Блоки сообщений участвуют в действиях отправки и получения сообщений. Блок сообщений, который отправляет сообщения, называется *исходным блоком*. Блок сообщений, принимающий сообщения, называется *целевым блоком*. Блок сообщений, который отправляет и получает сообщения, называется *блоком распространителя*. Библиотека агентов использует абстрактный класс [Concurrency:: ISource](../../parallel/concrt/reference/isource-class.md) для представления исходных блоков и абстрактный класс [Concurrency:: ITarget](../../parallel/concrt/reference/itarget-class.md) для представления целевых блоков. Типы блоков сообщений, выступающих в качестве источников, являются `ISource` типами блоков сообщений, которые являются целями, производными от `ITarget` .
 
@@ -60,11 +61,11 @@ ms.locfileid: "87219499"
 
 [[Top](#top)]
 
-## <a name="defining-the-priority_buffer-class"></a><a name="class"></a>Определение класса priority_buffer
+## <a name="defining-the-priority_buffer-class"></a><a name="class"></a> Определение класса priority_buffer
 
 `priority_buffer`Класс — это пользовательский тип блока сообщений, который упорядочивает входящие сообщения сначала по приоритету, а затем по порядку получения сообщений. `priority_buffer`Класс похож на класс [Concurrency:: unbounded_buffer](reference/unbounded-buffer-class.md) , так как он содержит очередь сообщений, а также потому, что он действует как исходный и целевой блок сообщений и может одновременно иметь несколько источников и несколько целевых объектов. Однако `unbounded_buffer` распространение сообщений основывается только на порядке, в котором он получает сообщения из своих источников.
 
-`priority_buffer`Класс получает сообщения типа std::[Tuple](../../standard-library/tuple-class.md) , которые содержат `PriorityType` элементы и `Type` . `PriorityType`относится к типу, содержащему приоритет каждого сообщения; `Type`ссылается на часть данных сообщения. `priority_buffer`Класс отправляет сообщения типа `Type` . `priority_buffer`Класс также управляет двумя очередями сообщений: объектом [std::p riority_queue](../../standard-library/priority-queue-class.md) для входящих сообщений и объектом std::[Queue](../../standard-library/queue-class.md) для исходящих сообщений. Упорядочение сообщений по приоритету полезно, когда `priority_buffer` объект получает несколько сообщений одновременно или когда оно получает несколько сообщений перед чтением сообщений потребителями.
+`priority_buffer`Класс получает сообщения типа std::[Tuple](../../standard-library/tuple-class.md) , которые содержат `PriorityType` элементы и `Type` . `PriorityType` относится к типу, содержащему приоритет каждого сообщения; `Type` ссылается на часть данных сообщения. `priority_buffer`Класс отправляет сообщения типа `Type` . `priority_buffer`Класс также управляет двумя очередями сообщений: объектом [std::p riority_queue](../../standard-library/priority-queue-class.md) для входящих сообщений и объектом std::[Queue](../../standard-library/queue-class.md) для исходящих сообщений. Упорядочение сообщений по приоритету полезно, когда `priority_buffer` объект получает несколько сообщений одновременно или когда оно получает несколько сообщений перед чтением сообщений потребителями.
 
 Помимо семи методов, которые класс, производный от, `propagator_block` должен реализовывать, `priority_buffer` класс также переопределяет `link_target_notification` `send_message` методы и. `priority_buffer`Класс также определяет два общедоступных вспомогательных метода, `enqueue` и `dequeue` , и закрытый вспомогательный метод `propagate_priority_order` .
 
@@ -178,7 +179,7 @@ ms.locfileid: "87219499"
 
 [[Top](#top)]
 
-## <a name="the-complete-example"></a><a name="complete"></a>Полный пример
+## <a name="the-complete-example"></a><a name="complete"></a> Полный пример
 
 В следующем примере показано полное определение `priority_buffer` класса.
 
