@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Создание шаблона документа'
 title: Создание шаблонов документов
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - MFC, document templates
 - templates [MFC], document templates
 ms.assetid: c87f1821-7cbf-442e-9690-f126ae7fb783
-ms.openlocfilehash: 952a383792eb3a4d0a4ed1b3e24dd82f7fa644cf
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 60f85cf0a1c16e1aaa6057160c5b986001e18d84
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615788"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330266"
 ---
 # <a name="document-template-creation"></a>Создание шаблонов документов
 
@@ -23,7 +24,7 @@ ms.locfileid: "84615788"
 
 [!code-cpp[NVC_MFCDocView#7](codesnippet/cpp/document-template-creation_1.cpp)]
 
-Указатель на новый `CMultiDocTemplate` объект используется в качестве аргумента для [AddDocTemplate](reference/cwinapp-class.md#adddoctemplate). Аргументы `CMultiDocTemplate` конструктора включают идентификатор ресурса, связанный с меню и ускорителями типа документа, и три применения макроса [RUNTIME_CLASS](reference/run-time-object-model-services.md#runtime_class) . `RUNTIME_CLASS`Возвращает объект [крунтимекласс](reference/cruntimeclass-structure.md) для класса C++ с именем в качестве аргумента. Три `CRuntimeClass` объекта, передаваемые конструктору шаблона документа, предоставляют сведения, необходимые для создания новых объектов указанных классов в процессе создания документа. В примере показано создание шаблона документа, который создает `CScribDoc` объекты с `CScribView` присоединенными объектами. Представления выделяются стандартными окнами дочернего фрейма MDI.
+Указатель на новый `CMultiDocTemplate` объект используется в качестве аргумента для [AddDocTemplate](reference/cwinapp-class.md#adddoctemplate). Аргументы `CMultiDocTemplate` конструктора включают идентификатор ресурса, связанный с меню и ускорителями типа документа, и три применения макроса [RUNTIME_CLASS](reference/run-time-object-model-services.md#runtime_class) . `RUNTIME_CLASS` Возвращает объект [крунтимекласс](reference/cruntimeclass-structure.md) для класса C++ с именем в качестве аргумента. Три `CRuntimeClass` объекта, передаваемые конструктору шаблона документа, предоставляют сведения, необходимые для создания новых объектов указанных классов в процессе создания документа. В примере показано создание шаблона документа, который создает `CScribDoc` объекты с `CScribView` присоединенными объектами. Представления выделяются стандартными окнами дочернего фрейма MDI.
 
 ## <a name="see-also"></a>См. также раздел
 

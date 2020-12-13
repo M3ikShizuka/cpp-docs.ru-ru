@@ -1,5 +1,6 @@
 ---
-title: Шаблоны документов и процесс создания представления документов
+description: Дополнительные сведения см. в статье шаблоны документов и процесс создания документа/представления.
+title: Шаблоны документов и процесс создания Document-View
 ms.date: 11/19/2018
 helpviewer_keywords:
 - icons, for multiple document templates
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - CDocTemplate class [MFC]
 - templates [MFC], document templates
 ms.assetid: 311ce4cd-fbdf-4ea1-a51b-5bb043abbcee
-ms.openlocfilehash: b96a11926927e89890ca268dcff7d347079b25fb
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 324d46df1027c03e7f41564691742c5c065cf85c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615775"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330245"
 ---
 # <a name="document-templates-and-the-documentview-creation-process"></a>Шаблоны документов и процесс создания документов и представлений
 
@@ -38,7 +39,7 @@ ms.locfileid: "84615775"
 ## <a name="see-also"></a>См. также раздел
 
 [Общие разделы по MFC](general-mfc-topics.md)<br/>
-[Создание шаблонов документов](document-template-creation.md)<br/>
+[Создание шаблона документа](document-template-creation.md)<br/>
 [Создание документа или представления](document-view-creation.md)<br/>
 [Связи между объектами MFC](relationships-among-mfc-objects.md)<br/>
 [Создание новых документов, окон и представлений](creating-new-documents-windows-and-views.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: int_2 классе'
 title: Класс int_2
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,12 +29,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::int_2::operator+=
 - amp_short_vectors/Concurrency::graphics::int_2::operator--
 ms.assetid: 258b02e9-f1ee-46c2-8edd-dc9f69184846
-ms.openlocfilehash: 000bda3a6ecc5b1ebf9be4e07ce8d703b6cd9194
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 7ee3f2726ce5c96a51a8246933c8d2d9d9eacc38
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126647"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330040"
 ---
 # <a name="int_2-class"></a>Класс int_2
 
@@ -49,41 +50,41 @@ class int_2;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[Конструктор int_2](#ctor)|Перегружен. Конструктор по умолчанию инициализирует все элементы значением 0.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
-|int_2::get_x||
-|int_2::get_xy||
-|int_2::get_y||
-|int_2::get_yx||
-|int_2::ref_g||
-|int_2::ref_r||
-|int_2::ref_x||
-|int_2::ref_y||
-|int_2::set_x||
-|int_2::set_xy||
-|int_2::set_y||
-|int_2::set_yx||
+|int_2:: get_x||
+|int_2:: get_xy||
+|int_2:: get_y||
+|int_2:: get_yx||
+|int_2:: ref_g||
+|int_2:: ref_r||
+|int_2:: ref_x||
+|int_2:: ref_y||
+|int_2:: set_x||
+|int_2:: set_xy||
+|int_2:: set_y||
+|int_2:: set_yx||
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |int_2:: operator —||
 |int_2:: operator--||
 |int_2:: operator% =||
-|int_2:: operator & =||
+|int_2:: operator&=||
 |int_2:: operator * =||
 |int_2:: operator/=||
 |int_2:: operator ^ =||
@@ -91,29 +92,29 @@ class int_2;
 |int_2:: operator ~||
 |int_2:: operator + +||
 |int_2:: operator + =||
-|int_2:: operator <\<=||
+|int_2:: operator<\<=||
 |int_2:: operator =||
 |int_2:: operator-=||
-|int_2:: operator > > =||
+|int_2:: operator>>=||
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа размера](#int_2__size)||
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
-|int_2::g||
-|int_2::gr||
-|int_2::r||
-|int_2::rg||
-|int_2::x||
-|int_2::xy||
-|int_2::y||
-|int_2::yx||
+|int_2:: g||
+|int_2:: GR||
+|int_2:: r||
+|int_2:: RG||
+|int_2:: x||
+|int_2:: XY||
+|int_2:: y||
+|int_2:: Икс||
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -125,7 +126,7 @@ class int_2;
 
 **Пространство имен:** Concurrency:: Graphics
 
-## <a name="ctor"></a>int_2
+## <a name="int_2"></a><a name="ctor"></a> int_2
 
 Конструктор по умолчанию инициализирует все элементы значением 0.
 
@@ -181,7 +182,7 @@ explicit inline int_2(
 *_Other*<br/>
 Объект, используемый для инициализации.
 
-## <a name="int_2__size"></a>изменять
+## <a name="size"></a><a name="int_2__size"></a> изменять
 
 ```cpp
 static const int size = 2;

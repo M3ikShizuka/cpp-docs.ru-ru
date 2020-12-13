@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о том, как WinInet упрощает создание клиентских приложений для Интернета.
 title: Использование WinInet для упрощения создания клиентских приложений в Интернете
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - WinInet classes [MFC], vs. WinSock
 - WinInet classes [MFC], Internet client applications
 ms.assetid: dc0f9f47-3184-4e7a-8074-2c63e0359885
-ms.openlocfilehash: 54f63da7451dfef39a33e6b437be938cb1652326
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: efee0b201a165fab8aaf838eedb2ba83b9a5b946
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624575"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330133"
 ---
 # <a name="how-wininet-makes-it-easier-to-create-internet-client-applications"></a>Использование WinInet для упрощения создания клиентских приложений в Интернете
 
@@ -48,4 +49,4 @@ Visual C++ предоставляет два способа использова
 ## <a name="see-also"></a>См. также раздел
 
 [Расширения Интернета Win32 (WinInet)](win32-internet-extensions-wininet.md)<br/>
-[Использование MFC для упрощения создания клиентских приложений в Интернете](how-mfc-makes-it-easier-to-create-internet-client-applications.md)
+[Как MFC упрощает создание клиентских приложений для Интернета](how-mfc-makes-it-easier-to-create-internet-client-applications.md)

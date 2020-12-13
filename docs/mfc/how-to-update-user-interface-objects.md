@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: инструкции по обновлению объектов User-Interface'
 title: Практическое руководство. Обновление объектов интерфейса пользователя
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - commands [MFC], updating UI
 - enabling menus [MFC]
 ms.assetid: 82f09773-c978-427b-b321-05a6143b7369
-ms.openlocfilehash: aec4067a7b5854ef872cfcef19a15db8438dd795
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 32d7c033d03ba679fa295237c1c49c5060c731ee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626391"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330172"
 ---
 # <a name="how-to-update-user-interface-objects"></a>Практическое руководство. Обновление объектов интерфейса пользователя
 
@@ -32,7 +33,7 @@ ms.locfileid: "84626391"
 
 В следующих разделах описывается использование обработчиков обновлений.
 
-- [При вызове обработчиков обновления](when-update-handlers-are-called.md)
+- [Вызовы обработчиков обновления](when-update-handlers-are-called.md)
 
 - [Макрос ON_UPDATE_COMMAND_UI](on-update-command-ui-macro.md)
 

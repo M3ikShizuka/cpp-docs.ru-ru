@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: norm_3 классе'
 title: Класс norm_3
 ms.date: 11/04/2016
 f1_keywords:
@@ -72,12 +73,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::norm_3::set_zx
 - amp_short_vectors/Concurrency::graphics::norm_3::bgr
 ms.assetid: 17081060-14ce-477e-a71a-9801b0f1d9e4
-ms.openlocfilehash: f7123f047a92c377dedefbc5be11e30f5d77db46
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: ac5419ac8bfaa0f0359d15399f163307cf4a6859
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142165"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329976"
 ---
 # <a name="norm_3-class"></a>Класс norm_3
 
@@ -93,60 +94,60 @@ class norm_3;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[Конструктор norm_3](#ctor)|Перегружен. Конструктор по умолчанию инициализирует все элементы значением 0.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
-|norm_3::get_x||
-|norm_3::get_xy||
-|norm_3::get_xyz||
-|norm_3::get_xz||
-|norm_3::get_xzy||
+|norm_3:: get_x||
+|norm_3:: get_xy||
+|norm_3:: get_xyz||
+|norm_3:: get_xz||
+|norm_3:: get_xzy||
 |norm_3:: get_y||
 |norm_3:: get_yx||
-|norm_3::get_yxz||
+|norm_3:: get_yxz||
 |norm_3:: get_yz||
-|norm_3::get_yzx||
-|norm_3::get_z||
-|norm_3::get_zx||
+|norm_3:: get_yzx||
+|norm_3:: get_z||
+|norm_3:: get_zx||
 |norm_3:: get_zxy||
 |norm_3:: get_zy||
-|norm_3::get_zyx||
+|norm_3:: get_zyx||
 |norm_3:: ref_b||
 |norm_3:: ref_g||
 |norm_3:: ref_r||
 |norm_3:: ref_x||
 |norm_3:: ref_y||
 |norm_3:: ref_z||
-|norm_3::set_x||
-|norm_3::set_xy||
-|norm_3::set_xyz||
-|norm_3::set_xz||
-|norm_3::set_xzy||
+|norm_3:: set_x||
+|norm_3:: set_xy||
+|norm_3:: set_xyz||
+|norm_3:: set_xz||
+|norm_3:: set_xzy||
 |norm_3:: set_y||
 |norm_3:: set_yx||
-|norm_3::set_yxz||
-|norm_3::set_yz||
-|norm_3::set_yzx||
-|norm_3::set_z||
-|norm_3::set_zx||
-|norm_3::set_zxy||
+|norm_3:: set_yxz||
+|norm_3:: set_yz||
+|norm_3:: set_yzx||
+|norm_3:: set_z||
+|norm_3:: set_zx||
+|norm_3:: set_zxy||
 |norm_3:: set_zy||
-|norm_3::set_zyx||
+|norm_3:: set_zyx||
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |norm_3:: operator —||
 |norm_3:: operator--||
@@ -159,13 +160,13 @@ class norm_3;
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа размера](#size)||
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |norm_3:: b||
 |norm_3:: BG||
@@ -208,7 +209,7 @@ class norm_3;
 
 **Пространство имен:** Concurrency:: Graphics
 
-## <a name="ctor"></a>Конструктор norm_3
+## <a name="norm_3-constructor"></a><a name="ctor"></a> Конструктор norm_3
 
 Конструктор по умолчанию инициализирует все элементы значением 0.
 
@@ -274,7 +275,7 @@ explicit inline norm_3(
 *_Other*<br/>
 Объект, используемый для инициализации.
 
-## <a name="a-namesize-size-constant"></a>Константа размера <a name="size">
+## <a name="a-namesize-size-constant"></a><a name="size"> Константа размера
 
 ### <a name="syntax"></a>Синтаксис
 

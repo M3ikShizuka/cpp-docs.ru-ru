@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Атолл, _atoll_l, _wtoll, _wtoll_l'
 title: atoll, _atoll_l, _wtoll, _wtoll_l
 ms.date: 4/2/2020
 api_name:
@@ -41,12 +42,12 @@ helpviewer_keywords:
 - _wtoll function
 - _atoll_l function
 ms.assetid: 5e85fcac-b351-4882-bff2-6e7c469b7fa8
-ms.openlocfilehash: f18fb618909b2dfd4bcd1b4d759fe7a895724896
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d9476588e937dba3b6452d1c51a1ada518ff0459
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218719"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331019"
 ---
 # <a name="atoll-_atoll_l-_wtoll-_wtoll_l"></a>atoll, _atoll_l, _wtoll, _wtoll_l
 
@@ -87,7 +88,7 @@ long long _wtoll_l(
 
 Во всех случаях **, когда выходит** из диапазона, для параметра « **ERANGE**» задано значение «нет». Если переданный параметр имеет **значение NULL**, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции **устанавливают** значение **еинвал** и возвращают 0.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эти функции преобразуют символьную строку в **`long long`** целочисленное значение.
 

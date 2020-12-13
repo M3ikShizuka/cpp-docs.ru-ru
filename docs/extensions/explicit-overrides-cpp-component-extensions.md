@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: явные переопределения (C++/CLI и C++/CX)'
 title: Явные переопределения (C++/CLI и C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - overriding, override [C++]
 ms.assetid: 4ec3eaf5-163b-4df8-8f16-7a2ec04c3d0f
-ms.openlocfilehash: c199301794daaa140ede2fd99b0ae755cea70f97
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: a24460f8135ff5379f14533dbaff83bde8918e4c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80172377"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330344"
 ---
 # <a name="explicit-overrides--ccli-and-ccx"></a>Явные переопределения (C++/CLI и C++/CX)
 
@@ -39,7 +40,7 @@ overriding-function-declarator = function { overriding-function-definition }
 *overriding-function-definition*<br/>
 Операторы тела функции, которые определяют функцию переопределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте явные переопределения для создания псевдонима для сигнатуры метода или для предоставления различных реализаций для методов с одинаковой сигнатурой.
 
@@ -53,7 +54,7 @@ overriding-function-declarator = function { overriding-function-definition }
 
 ## <a name="common-language-runtime"></a>Среда CLR
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сведения о явных переопределениях в машинном или скомпилированном коде с `/clr:oldSyntax` см. в разделе [Явные переопределения](../cpp/explicit-overrides-cpp.md).
 

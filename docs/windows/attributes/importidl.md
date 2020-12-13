@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: импортидл'
 title: импортидл (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - importidl attribute
 ms.assetid: 4b0a4b55-6c57-4e6e-bc7b-a12cc8063941
-ms.openlocfilehash: 8f3c2c5c67ac216d096d1082814c561698f3f732
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b10caa9f4b1467727c70b6d968ca6aa33b58da0c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842251"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329888"
 ---
 # <a name="importidl"></a>importidl
 
@@ -28,7 +29,7 @@ ms.locfileid: "88842251"
 *idl_file*<br/>
 Определяет имя IDL-файла, который необходимо объединить с IDL-файлом, который будет создан для приложения.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Атрибут **импортидл** C++ помещает раздел за пределами блока библиотеки (в *idl_file*) в созданный IDL-файл программы и раздел Library (в *idl_file*) в раздел Library созданного idl-файла программы.
 

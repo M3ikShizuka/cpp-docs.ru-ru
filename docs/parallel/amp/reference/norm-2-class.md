@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: norm_2 классе'
 title: Класс norm_2
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,12 +29,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::norm_2
 - amp_short_vectors/Concurrency::graphics::norm_2::operator--
 ms.assetid: 80703f9b-61f4-414a-93fd-bc774f7d3393
-ms.openlocfilehash: 09bd33b5a8d9148c7959f69fcab4a260fe05c332
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 5b4b19d83672a88828d3cad8be7f22a2f54a431e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126504"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329986"
 ---
 # <a name="norm_2-class"></a>Класс norm_2
 
@@ -49,36 +50,36 @@ class norm_2;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[Конструктор norm_2](#ctor)|Перегружен. Конструктор по умолчанию инициализирует все элементы значением 0.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
-|norm_2::get_x||
-|norm_2::get_xy||
-|norm_2::get_y||
-|norm_2::get_yx||
-|norm_2::ref_g||
+|norm_2:: get_x||
+|norm_2:: get_xy||
+|norm_2:: get_y||
+|norm_2:: get_yx||
+|norm_2:: ref_g||
 |norm_2:: ref_r||
-|norm_2::ref_x||
+|norm_2:: ref_x||
 |norm_2:: ref_y||
-|norm_2::set_x||
-|norm_2::set_xy||
+|norm_2:: set_x||
+|norm_2:: set_xy||
 |norm_2:: set_y||
-|norm_2::set_yx||
+|norm_2:: set_yx||
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |norm_2:: operator —||
 |norm_2:: operator--||
@@ -91,18 +92,18 @@ class norm_2;
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа размера](#norm_2__size)||
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |norm_2:: g||
 |norm_2:: GR||
 |norm_2:: r||
-|norm_2::rg||
+|norm_2:: RG||
 |norm_2:: x||
 |norm_2:: XY||
 |norm_2:: y||
@@ -118,7 +119,7 @@ class norm_2;
 
 **Пространство имен:** Concurrency:: Graphics
 
-## <a name="ctor"></a>norm_2
+## <a name="norm_2"></a><a name="ctor"></a> norm_2
 
 Конструктор по умолчанию инициализирует все элементы значением 0.
 
@@ -188,7 +189,7 @@ explicit inline norm_2(
 *_Other*<br/>
 Объект, используемый для инициализации.
 
-## <a name="norm_2__size"></a>изменять
+## <a name="size"></a><a name="norm_2__size"></a> изменять
 
 ```cpp
 static const int size = 2;

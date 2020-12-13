@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: классы документов'
 title: Классы документов
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - document classes [MFC]
 ms.assetid: 4bf19b02-0a4f-4319-b68e-cddcba2705cb
-ms.openlocfilehash: 012d107d7bcc630c4bc02a9dc697172080787eac
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 7f5bd3011dec84cad20b10668e0a997838e79dbb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615807"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330282"
 ---
 # <a name="document-classes"></a>Классы документов
 
@@ -32,7 +33,7 @@ ms.locfileid: "84615807"
 Поддерживает список элементов OLE, которые находятся в элементе управления Rich Edit. Используется с [CRichEditView](reference/cricheditview-class.md) и [кричедиткнтритем](reference/cricheditcntritem-class.md).
 
 [COleServerDoc](reference/coleserverdoc-class.md)<br/>
-Используется в качестве базового класса для классов документов серверного приложения. `COleServerDoc`объекты обеспечивают большую часть поддержки сервера за счет взаимодействия с объектами [COleServerItem](reference/coleserveritem-class.md) . Возможность визуального редактирования предоставляется с помощью архитектуры "документ-представление" библиотеки классов.
+Используется в качестве базового класса для классов документов серверного приложения. `COleServerDoc` объекты обеспечивают большую часть поддержки сервера за счет взаимодействия с объектами [COleServerItem](reference/coleserveritem-class.md) . Возможность визуального редактирования предоставляется с помощью архитектуры "документ-представление" библиотеки классов.
 
 [CHtmlEditDoc](reference/chtmleditdoc-class.md)<br/>
 Предоставляет с помощью [CHtmlEditView](reference/chtmleditview-class.md)функциональные возможности платформы редактирования HTML WebBrowser в контексте архитектуры представления документов MFC.
@@ -44,7 +45,7 @@ ms.locfileid: "84615807"
 [CArchive](reference/carchive-class.md)<br/>
 Взаимодействует с объектом [кфиле](reference/cfile-class.md) для реализации постоянного хранилища объектов с помощью сериализации (см. [CObject:: Serialize](reference/cobject-class.md#serialize)).
 
-Документы также могут содержать объекты OLE. `CDocItem`является базовым классом для серверных и клиентских элементов.
+Документы также могут содержать объекты OLE. `CDocItem` является базовым классом для серверных и клиентских элементов.
 
 [CDocItem](reference/cdocitem-class.md)<br/>
 Абстрактный базовый класс [COleClientItem](reference/coleclientitem-class.md) и [COleServerItem](reference/coleserveritem-class.md). Объекты классов, производных от, `CDocItem` представляют части документов.

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: обработка ошибок (CRT)'
 title: Обработка ошибок (CRT)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - error handling, library routines
 - testing, for program errors
 ms.assetid: 125ac697-9eb0-4152-a440-b7842f23d97f
-ms.openlocfilehash: d38aaf76a4901b12290782957db90049d815d278
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 4aa81f1152fe991398b38f6b433993aecb8be401
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79443321"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331141"
 ---
 # <a name="error-handling-crt"></a>Обработка ошибок (CRT)
 
@@ -20,7 +21,7 @@ ms.locfileid: "79443321"
 
 ## <a name="error-handling-routines"></a>Процедуры обработки ошибок
 
-|Подпрограмма|Использование|
+|Подпрограмма|Использовать|
 |-------------|---------|
 |Макрос [assert](../c-runtime-library/reference/assert-macro-assert-wassert.md)|Проверка на наличие ошибок в логике программы; доступен как в итоговой, так и в отладочной версии библиотек среды выполнения.|
 |Макросы [_ASSERT, _ASSERTE](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)|Подобны **assert**, но доступны только в отладочных версиях библиотеки времени выполнения.|
@@ -34,4 +35,4 @@ ms.locfileid: "79443321"
 
 ## <a name="see-also"></a>См. также раздел
 
-- [Универсальные подпрограммы среды выполнения C по категориям](../c-runtime-library/run-time-routines-by-category.md)
+- [Подпрограммы универсальной среды выполнения C по категориям](../c-runtime-library/run-time-routines-by-category.md)

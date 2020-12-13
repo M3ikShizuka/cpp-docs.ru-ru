@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: int_3 классе'
 title: Класс int_3
 ms.date: 11/04/2016
 f1_keywords:
@@ -72,12 +73,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::int_3::xz
 - amp_short_vectors/Concurrency::graphics::int_3::set_yz
 ms.assetid: d4af182f-30f1-455c-b16d-aa99cd314038
-ms.openlocfilehash: bc35562466ee33585be03739695d24da043415c2
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: fbdbb436e503bc00239875b92b2b1065956af23c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127820"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330009"
 ---
 # <a name="int_3-class"></a>Класс int_3
 
@@ -93,65 +94,65 @@ class int_3;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[Конструктор int_3](#ctor)|Перегружен. Конструктор по умолчанию инициализирует все элементы значением 0.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
-|int_3::get_x||
-|int_3::get_xy||
-|int_3::get_xyz||
-|int_3::get_xz||
-|int_3::get_xzy||
-|int_3::get_y||
-|int_3::get_yx||
-|int_3::get_yxz||
-|int_3::get_yz||
-|int_3::get_yzx||
-|int_3::get_z||
-|int_3::get_zx||
-|int_3::get_zxy||
-|int_3::get_zy||
-|int_3::get_zyx||
-|int_3::ref_b||
-|int_3::ref_g||
-|int_3::ref_r||
-|int_3::ref_x||
-|int_3::ref_y||
-|int_3::ref_z||
-|int_3::set_x||
-|int_3::set_xy||
-|int_3::set_xyz||
-|int_3::set_xz||
-|int_3::set_xzy||
-|int_3::set_y||
-|int_3::set_yx||
-|int_3::set_yxz||
-|int_3::set_yz||
-|int_3::set_yzx||
-|int_3::set_z||
-|int_3::set_zx||
-|int_3::set_zxy||
-|int_3::set_zy||
-|int_3::set_zyx||
+|int_3:: get_x||
+|int_3:: get_xy||
+|int_3:: get_xyz||
+|int_3:: get_xz||
+|int_3:: get_xzy||
+|int_3:: get_y||
+|int_3:: get_yx||
+|int_3:: get_yxz||
+|int_3:: get_yz||
+|int_3:: get_yzx||
+|int_3:: get_z||
+|int_3:: get_zx||
+|int_3:: get_zxy||
+|int_3:: get_zy||
+|int_3:: get_zyx||
+|int_3:: ref_b||
+|int_3:: ref_g||
+|int_3:: ref_r||
+|int_3:: ref_x||
+|int_3:: ref_y||
+|int_3:: ref_z||
+|int_3:: set_x||
+|int_3:: set_xy||
+|int_3:: set_xyz||
+|int_3:: set_xz||
+|int_3:: set_xzy||
+|int_3:: set_y||
+|int_3:: set_yx||
+|int_3:: set_yxz||
+|int_3:: set_yz||
+|int_3:: set_yzx||
+|int_3:: set_z||
+|int_3:: set_zx||
+|int_3:: set_zxy||
+|int_3:: set_zy||
+|int_3:: set_zyx||
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |int_3:: operator —||
 |int_3:: operator--||
 |int_3:: operator% =||
-|int_3:: operator & =||
+|int_3:: operator&=||
 |int_3:: operator * =||
 |int_3:: operator/=||
 |int_3:: operator ^ =||
@@ -159,51 +160,51 @@ class int_3;
 |int_3:: operator ~||
 |int_3:: operator + +||
 |int_3:: operator + =||
-|int_3:: operator <\<=||
+|int_3:: operator<\<=||
 |int_3:: operator =||
 |int_3:: operator-=||
-|int_3:: operator > > =||
+|int_3:: operator>>=||
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа размера](#size)||
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
-|int_3::b||
-|int_3::bg||
-|int_3::bgr||
-|int_3::br||
-|int_3::brg||
-|int_3::g||
-|int_3::gb||
-|int_3::gbr||
-|int_3::gr||
-|int_3::grb||
-|int_3::r||
-|int_3::rb||
-|int_3::rbg||
-|int_3::rg||
-|int_3::rgb||
-|int_3::x||
-|int_3::xy||
-|int_3::xyz||
-|int_3::xz||
-|int_3::xzy||
-|int_3::y||
-|int_3::yx||
-|int_3::yxz||
-|int_3::yz||
-|int_3::yzx||
-|int_3::z||
-|int_3::zx||
-|int_3::zxy||
-|int_3::zy||
-|int_3::zyx||
+|int_3:: b||
+|int_3:: BG||
+|int_3:: BGR||
+|int_3:: BR||
+|int_3:: БРГ||
+|int_3:: g||
+|int_3:: ГБ||
+|int_3:: ГБР||
+|int_3:: GR||
+|int_3:: ГРБ||
+|int_3:: r||
+|int_3:: RB||
+|int_3:: РБГ||
+|int_3:: RG||
+|int_3:: RGB||
+|int_3:: x||
+|int_3:: XY||
+|int_3:: XYZ||
+|int_3:: КСЗ||
+|int_3:: XZY||
+|int_3:: y||
+|int_3:: Икс||
+|int_3:: иксз||
+|int_3:: из||
+|int_3:: изкс||
+|int_3:: z||
+|int_3:: ЗКС||
+|int_3:: зкси||
+|int_3:: зи||
+|int_3:: зикс||
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -215,7 +216,7 @@ class int_3;
 
 **Пространство имен:** Concurrency:: Graphics
 
-## <a name="ctor"></a>int_3
+## <a name="int_3"></a><a name="ctor"></a> int_3
 
 Конструктор по умолчанию инициализирует все элементы значением 0.
 
@@ -268,7 +269,7 @@ explicit inline int_3(
 *_Other*<br/>
 Объект, используемый для инициализации.
 
-## <a name="size"></a>изменять
+## <a name="size"></a><a name="size"></a> изменять
 
 ### <a name="syntax"></a>Синтаксис
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: вкртомб'
 title: wcrtomb
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - multibyte characters
 - characters, converting
 ms.assetid: 717f1b21-2705-4b7f-b6d0-82adc5224340
-ms.openlocfilehash: 4107ae6cb6366fa8ad80251ce94ee35ca59501bd
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: effa442cee4aa0924fa976ee9138f40b22217375
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910647"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331056"
 ---
 # <a name="wcrtomb"></a>wcrtomb
 
@@ -61,7 +62,7 @@ size_t wcrtomb(
 *мбчар*<br/>
 Итоговый преобразованный многобайтовый символ.
 
-*WCHAR*<br/>
+*wchar*<br/>
 Расширенный символ для преобразования.
 
 *мбстате*<br/>
@@ -71,7 +72,7 @@ size_t wcrtomb(
 
 Возвращает число байтов, необходимых для представления преобразованного многобайтового символа, или значение -1, если произошла ошибка.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **вкртомб** преобразует расширенный символ, начиная с указанного состояния преобразования, содержащегося в *мбстате*, из значения, содержащегося в параметре *WCHAR*, в адрес, представленный в *мбчар*. Возвращаемое значение — это число байтов, необходимое для представления соответствующего многобайтового символа, однако оно не будет возвращать больше **MB_CUR_MAX** байтов.
 
@@ -139,6 +140,6 @@ The corresponding wide character "Q" was converted to the "Q" multibyte characte
 ## <a name="see-also"></a>См. также раздел
 
 [Преобразование данных](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [mbsinit](mbsinit.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о классе событий:'
 title: Класс event
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - event class
 ms.assetid: fba35a53-6568-4bfa-9aaf-07c0928cf73d
-ms.openlocfilehash: 3f2ec71083f7a7905bad5cda014baba914e31e79
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3c33096795d1980ea78cbce8c38fa9305ee45cd0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215807"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331251"
 ---
 # <a name="event-class"></a>Класс event
 
@@ -28,11 +29,11 @@ ms.locfileid: "87215807"
 class event;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Деструктор события ~](#dtor)|Уничтожает событие.|
 
@@ -51,7 +52,7 @@ class event;
 |----------|-----------------|
 |[timeout_infinite](#timeout_infinite)|Значение, указывающее, что время ожидания никогда не должно истечь.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [структуры данных синхронизации](../../../parallel/concrt/synchronization-data-structures.md).
 
@@ -73,9 +74,9 @@ class event;
 _CRTIMP event();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="event"></a><a name="dtor"></a>событие ~
+## <a name="event"></a><a name="dtor"></a> событие ~
 
 Уничтожает событие.
 
@@ -83,11 +84,11 @@ _CRTIMP event();
 ~event();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Ожидается, что потоки, ожидающие события, не будут выполняться при выполнении деструктора. Разрешение уничтожения события при наличии ожидающих его результатов потоков приводит к неопределенному поведению.
 
-## <a name="reset"></a><a name="reset"></a>перезапуск
+## <a name="reset"></a><a name="reset"></a> перезапуск
 
 Сбрасывает событие в несигнальное состояние.
 
@@ -95,7 +96,7 @@ _CRTIMP event();
 void reset();
 ```
 
-## <a name="set"></a><a name="set"></a>параметр
+## <a name="set"></a><a name="set"></a> параметр
 
 Сигнализирует о событии.
 
@@ -103,11 +104,11 @@ void reset();
 void set();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Подача сигнала о событии может привести к тому, что произвольное число контекстов будет ожидать, когда событие станет готово к запуску.
 
-## <a name="timeout_infinite"></a><a name="timeout_infinite"></a>timeout_infinite
+## <a name="timeout_infinite"></a><a name="timeout_infinite"></a> timeout_infinite
 
 Значение, указывающее, что время ожидания никогда не должно истечь.
 
@@ -115,7 +116,7 @@ void set();
 static const unsigned int timeout_infinite = COOPERATIVE_TIMEOUT_INFINITE;
 ```
 
-## <a name="wait"></a><a name="wait"></a>ожидания
+## <a name="wait"></a><a name="wait"></a> ожидания
 
 Ожидает сигнала события.
 
@@ -135,7 +136,7 @@ size_t wait(unsigned int _Timeout = COOPERATIVE_TIMEOUT_INFINITE);
 > [!IMPORTANT]
 > В приложении универсальная платформа Windows (UWP) не вызывайте `wait` поток ASTA, так как этот вызов может блокировать текущий поток и может привести к тому, что приложение перестанет отвечать на запросы.
 
-## <a name="wait_for_multiple"></a><a name="wait_for_multiple"></a>wait_for_multiple
+## <a name="wait_for_multiple"></a><a name="wait_for_multiple"></a> wait_for_multiple
 
 Ожидает получения сигнала для нескольких событий.
 
@@ -165,7 +166,7 @@ static size_t __cdecl wait_for_multiple(
 
 Если ожидание было удовлетворено, индекс в массиве, указанный в `_PPEvents` параметре, который удовлетворяет условию ожидания; в противном случае — значение, `COOPERATIVE_WAIT_TIMEOUT` указывающее, что время ожидания истекло без соблюдения условия.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если параметру `_FWaitAll` присвоено значение, **`true`** указывающее, что все события должны быть сигнальными для удовлетворения ожидания, индекс, возвращаемый функцией, не несет никакого специального значения, Кроме того факта, что он не является значением `COOPERATIVE_WAIT_TIMEOUT` .
 

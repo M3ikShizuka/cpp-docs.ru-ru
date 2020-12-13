@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _mbctombb, _mbctombb_l'
 title: _mbctombb, _mbctombb_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - mbctombb function
 - _mbctombb_l function
 ms.assetid: d90970b8-71ff-4586-b6a2-f9ceb811f776
-ms.openlocfilehash: d5fcae2a0e403d75383e2998b1ea127dd6f2ef89
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 326ef50ae447594b347086bbbee9493cfe37e546
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914271"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330991"
 ---
 # <a name="_mbctombb-_mbctombb_l"></a>_mbctombb, _mbctombb_l
 
@@ -62,7 +63,7 @@ unsigned int _mbctombb_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Многобайтовый символ для преобразования.
 
 *locale*<br/>
@@ -72,7 +73,7 @@ unsigned int _mbctombb_l(
 
 В случае успеха **_mbctombb** и **_mbctombb_l** возвращают однобайтовый символ, соответствующий *c*; в противном случае возвращается *c*.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функции **_mbctombb** и **_mbctombb_l** преобразуют заданный многобайтовый символ в соответствующий однобайтовой многобайтовый символ. Символы должны соответствовать однобайтовым символам в диапазоне от 0x20 до 0x7E или 0xA1-0xDF для преобразования.
 

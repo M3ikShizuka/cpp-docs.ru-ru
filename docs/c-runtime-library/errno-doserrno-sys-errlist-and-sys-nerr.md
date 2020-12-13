@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: "право_doserrno", "_sys_errlist" и "_sys_nerr"'
 title: errno, _doserrno, _sys_errlist, and _sys_nerr
 ms.date: 11/04/2016
 api_name:
@@ -24,12 +25,12 @@ helpviewer_keywords:
 - _sys_nerr global variable
 - sys_nerr global variable
 ms.assetid: adbec641-6d91-4e19-8398-9a34046bd369
-ms.openlocfilehash: 5b10d98dab41151290d4e44e031f659108b0c73c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
-ms.translationtype: HT
+ms.openlocfilehash: b15091ebfffec891b09f5024b14a8ca7fe0d02e1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70944555"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331166"
 ---
 # <a name="errno-_doserrno-_sys_errlist-and-_sys_nerr"></a>errno, _doserrno, _sys_errlist, and _sys_nerr
 
@@ -44,7 +45,7 @@ ms.locfileid: "70944555"
 #define _sys_nerr (*__sys_nerr())
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Как для `errno`, так и для `_doserrno` средой выполнения во время запуска программы задается значение 0. `errno` возникает при ошибке в вызове системного уровня. Поскольку `errno` хранит значение для последнего вызова, задавшего его, это значение может быть изменено успешными вызовами. Вызовы библиотеки времени выполнения, задающие `errno` при ошибке, не сбрасывают `errno` при успешном завершении. Всегда сбрасывайте `errno` путем вызова функции `_set_errno(0)` сразу после вызова, который мог задать значение этой переменной, и проверяйте его сразу после вызова.
 
@@ -56,16 +57,16 @@ ms.locfileid: "70944555"
 |------------------|----------------------------|
 |`_doserrno`|[_get_doserrno](../c-runtime-library/reference/get-doserrno.md), [_set_doserrno](../c-runtime-library/reference/set-doserrno.md)|
 |`errno`|[_get_errno](../c-runtime-library/reference/get-errno.md), [_set_errno](../c-runtime-library/reference/set-errno.md)|
-|`_sys_errlist`, `_sys_nerr`|[strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md)|
+|`_sys_errlist`, `_sys_nerr`|[strerror_s, _strerror_s, _wcserror_s, \_ _wcserror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md)|
 
 Математические подпрограммы библиотек задают значение `errno` путем вызова [_matherr](../c-runtime-library/reference/matherr.md). Для обработки математических ошибок иным образом напишите собственную процедуру в соответствии с базовым описанием `_matherr` и назовите ее `_matherr`.
 
-Все значения `errno` в следующей таблице являются предопределенными константами в \<errno.h> и совместимы с UNIX. Только `ERANGE`, `EILSEQ` и `EDOM` определены в стандарте ISO C99.
+Все `errno` значения в следующей таблице являются предопределенными константами в \<errno.h> и совместимы с UNIX. Только `ERANGE`, `EILSEQ` и `EDOM` определены в стандарте ISO C99.
 
 |Константа|Системное сообщение об ошибке|Значение|
 |--------------|--------------------------|-----------|
 |`EPERM`|Операция не разрешена|1|
-|`ENOENT`|Отсутствует такой файл или каталог|2|
+|`ENOENT`|нет такого файла или каталога.|2|
 |`ESRCH`|Отсутствует такой процесс|3|
 |`EINTR`|Прерванная функция|4|
 |`EIO`|Ошибка ввода-вывода|5|
@@ -109,18 +110,18 @@ ms.locfileid: "70944555"
 
 |Глобальный макрос|Обязательный заголовок|Необязательный заголовок|
 |------------------|---------------------|---------------------|
-|`errno`|\<errno.h> or \<stdlib.h>, \<cerrno> или \<cstdlib> (C++)||
+|`errno`|\<errno.h> OR \<stdlib.h> \<cerrno> или \<cstdlib> (C++)||
 |`_doserrno`, `_sys_errlist`, `_sys_nerr`|\<stdlib.h>, \<cstdlib> (C++)|\<errno.h>, \<cerrno> (C++)|
 
-Макросы `_doserrno`, `_sys_errlist` и `_sys_nerr` являются расширениями Майкрософт. Дополнительные сведения о совместимости см. в разделе [Совместимость](../c-runtime-library/compatibility.md).
+Макросы `_doserrno`, `_sys_errlist` и `_sys_nerr` являются расширениями Майкрософт. Дополнительные сведения о совместимости см. в разделе [Compatibility](../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Глобальные переменные](../c-runtime-library/global-variables.md)<br/>
-[Константы errno](../c-runtime-library/errno-constants.md)<br/>
+[Константы "No"](../c-runtime-library/errno-constants.md)<br/>
 [perror, _wperror](../c-runtime-library/reference/perror-wperror.md)<br/>
-[strerror, _strerror, _wcserror, \__wcserror](../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md)<br/>
-[strerror_s, _strerror_s, _wcserror_s, \__wcserror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md)<br/>
+[strerror, _strerror, _wcserror, \_ _wcserror](../c-runtime-library/reference/strerror-strerror-wcserror-wcserror.md)<br/>
+[strerror_s, _strerror_s, _wcserror_s, \_ _wcserror_s](../c-runtime-library/reference/strerror-s-strerror-s-wcserror-s-wcserror-s.md)<br/>
 [_get_doserrno](../c-runtime-library/reference/get-doserrno.md)<br/>
 [_set_doserrno](../c-runtime-library/reference/set-doserrno.md)<br/>
 [_get_errno](../c-runtime-library/reference/get-errno.md)<br/>

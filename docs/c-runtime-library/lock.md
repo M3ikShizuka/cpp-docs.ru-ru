@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _lock'
 title: _lock
 ms.date: 11/04/2016
 api_name:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - lock function
 - _lock function
 ms.assetid: 29f77c37-30de-4b3d-91b6-030216e645a6
-ms.openlocfilehash: 9ab7cab2209dc2e02cacca6d540927aa39dc3965
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 9b95c8b7ad0f0ce84348f9581d9acb611373a27b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81745387"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331045"
 ---
 # <a name="_lock"></a>_lock
 
@@ -50,7 +51,7 @@ void __cdecl _lock
 *locknum*<br/>
 [in] Идентификатор блокировки, которую нужно получить.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Если блокировка уже была получена, этот метод все равно получает блокировку и вызывает внутреннюю ошибку среды выполнения языка C (CRT). Если метод не может получить блокировку, он завершается с неустранимой ошибкой и устанавливает код ошибки `_RT_LOCK`.
 
@@ -60,5 +61,5 @@ void __cdecl _lock
 
 ## <a name="see-also"></a>См. также раздел
 
-[Алфавитный указатель функций](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[Алфавитный справочник по функциям](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [_unlock](../c-runtime-library/unlock.md)

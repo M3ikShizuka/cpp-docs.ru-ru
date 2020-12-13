@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: norm_4 классе'
 title: Класс norm_4
 ms.date: 11/04/2016
 f1_keywords:
@@ -268,12 +269,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::norm_4::set_zyx
 - amp_short_vectors/Concurrency::graphics::norm_4::wy
 ms.assetid: d628b2bf-2cdb-4dbb-95c6-cd778f5e991f
-ms.openlocfilehash: 08d19d25c3f9309553972e752daee75c9896a071
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: a705ee990cebe04368ab607c5b22f4b7d8dbc9dd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77126478"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329965"
 ---
 # <a name="norm_4-class"></a>Класс norm_4
 
@@ -289,160 +290,160 @@ class norm_4;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[Конструктор norm_4](#ctor)|Перегружен. Конструктор по умолчанию инициализирует все элементы значением 0.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
-|norm_4::get_w||
-|norm_4::get_wx||
-|norm_4::get_wxy||
-|norm_4::get_wxyz||
-|norm_4::get_wxz||
-|norm_4::get_wxzy||
-|norm_4::get_wy||
-|norm_4::get_wyx||
-|norm_4::get_wyxz||
-|norm_4::get_wyz||
-|norm_4::get_wyzx||
-|norm_4::get_wz||
-|norm_4::get_wzx||
-|norm_4::get_wzxy||
-|norm_4::get_wzy||
-|norm_4::get_wzyx||
-|norm_4::get_x||
-|norm_4::get_xw||
-|norm_4::get_xwy||
-|norm_4::get_xwyz||
-|norm_4::get_xwz||
-|norm_4::get_xwzy||
-|norm_4::get_xy||
-|norm_4::get_xyw||
-|norm_4::get_xywz||
-|norm_4::get_xyz||
-|norm_4::get_xyzw||
-|norm_4::get_xz||
-|norm_4::get_xzw||
-|norm_4::get_xzwy||
-|norm_4::get_xzy||
-|norm_4::get_xzyw||
+|norm_4:: get_w||
+|norm_4:: get_wx||
+|norm_4:: get_wxy||
+|norm_4:: get_wxyz||
+|norm_4:: get_wxz||
+|norm_4:: get_wxzy||
+|norm_4:: get_wy||
+|norm_4:: get_wyx||
+|norm_4:: get_wyxz||
+|norm_4:: get_wyz||
+|norm_4:: get_wyzx||
+|norm_4:: get_wz||
+|norm_4:: get_wzx||
+|norm_4:: get_wzxy||
+|norm_4:: get_wzy||
+|norm_4:: get_wzyx||
+|norm_4:: get_x||
+|norm_4:: get_xw||
+|norm_4:: get_xwy||
+|norm_4:: get_xwyz||
+|norm_4:: get_xwz||
+|norm_4:: get_xwzy||
+|norm_4:: get_xy||
+|norm_4:: get_xyw||
+|norm_4:: get_xywz||
+|norm_4:: get_xyz||
+|norm_4:: get_xyzw||
+|norm_4:: get_xz||
+|norm_4:: get_xzw||
+|norm_4:: get_xzwy||
+|norm_4:: get_xzy||
+|norm_4:: get_xzyw||
 |norm_4:: get_y||
-|norm_4::get_yw||
-|norm_4::get_ywx||
-|norm_4::get_ywxz||
-|norm_4::get_ywz||
-|norm_4::get_ywzx||
+|norm_4:: get_yw||
+|norm_4:: get_ywx||
+|norm_4:: get_ywxz||
+|norm_4:: get_ywz||
+|norm_4:: get_ywzx||
 |norm_4:: get_yx||
-|norm_4::get_yxw||
-|norm_4::get_yxwz||
-|norm_4::get_yxz||
-|norm_4::get_yxzw||
-|norm_4::get_yz||
-|norm_4::get_yzw||
-|norm_4::get_yzwx||
-|norm_4::get_yzx||
-|norm_4::get_yzxw||
-|norm_4::get_z||
-|norm_4::get_zw||
-|norm_4::get_zwx||
-|norm_4::get_zwxy||
-|norm_4::get_zwy||
-|norm_4::get_zwyx||
-|norm_4::get_zx||
-|norm_4::get_zxw||
+|norm_4:: get_yxw||
+|norm_4:: get_yxwz||
+|norm_4:: get_yxz||
+|norm_4:: get_yxzw||
+|norm_4:: get_yz||
+|norm_4:: get_yzw||
+|norm_4:: get_yzwx||
+|norm_4:: get_yzx||
+|norm_4:: get_yzxw||
+|norm_4:: get_z||
+|norm_4:: get_zw||
+|norm_4:: get_zwx||
+|norm_4:: get_zwxy||
+|norm_4:: get_zwy||
+|norm_4:: get_zwyx||
+|norm_4:: get_zx||
+|norm_4:: get_zxw||
 |norm_4:: get_zxwy||
-|norm_4::get_zxy||
-|norm_4::get_zxyw||
-|norm_4::get_zy||
-|norm_4::get_zyw||
-|norm_4::get_zywx||
-|norm_4::get_zyx||
-|norm_4::get_zyxw||
-|norm_4::ref_a||
+|norm_4:: get_zxy||
+|norm_4:: get_zxyw||
+|norm_4:: get_zy||
+|norm_4:: get_zyw||
+|norm_4:: get_zywx||
+|norm_4:: get_zyx||
+|norm_4:: get_zyxw||
+|norm_4:: ref_a||
 |norm_4:: ref_b||
 |norm_4:: ref_g||
 |norm_4:: ref_r||
-|norm_4::ref_w||
+|norm_4:: ref_w||
 |norm_4:: ref_x||
 |norm_4:: ref_y||
-|norm_4::ref_z||
-|norm_4::set_w||
-|norm_4::set_wx||
-|norm_4::set_wxy||
-|norm_4::set_wxyz||
-|norm_4::set_wxz||
-|norm_4::set_wxzy||
-|norm_4::set_wy||
-|norm_4::set_wyx||
-|norm_4::set_wyxz||
-|norm_4::set_wyz||
-|norm_4::set_wyzx||
-|norm_4::set_wz||
-|norm_4::set_wzx||
-|norm_4::set_wzxy||
-|norm_4::set_wzy||
-|norm_4::set_wzyx||
-|norm_4::set_x||
-|norm_4::set_xw||
-|norm_4::set_xwy||
-|norm_4::set_xwyz||
-|norm_4::set_xwz||
-|norm_4::set_xwzy||
-|norm_4::set_xy||
-|norm_4::set_xyw||
-|norm_4::set_xywz||
-|norm_4::set_xyz||
-|norm_4::set_xyzw||
-|norm_4::set_xz||
-|norm_4::set_xzw||
-|norm_4::set_xzwy||
-|norm_4::set_xzy||
-|norm_4::set_xzyw||
+|norm_4:: ref_z||
+|norm_4:: set_w||
+|norm_4:: set_wx||
+|norm_4:: set_wxy||
+|norm_4:: set_wxyz||
+|norm_4:: set_wxz||
+|norm_4:: set_wxzy||
+|norm_4:: set_wy||
+|norm_4:: set_wyx||
+|norm_4:: set_wyxz||
+|norm_4:: set_wyz||
+|norm_4:: set_wyzx||
+|norm_4:: set_wz||
+|norm_4:: set_wzx||
+|norm_4:: set_wzxy||
+|norm_4:: set_wzy||
+|norm_4:: set_wzyx||
+|norm_4:: set_x||
+|norm_4:: set_xw||
+|norm_4:: set_xwy||
+|norm_4:: set_xwyz||
+|norm_4:: set_xwz||
+|norm_4:: set_xwzy||
+|norm_4:: set_xy||
+|norm_4:: set_xyw||
+|norm_4:: set_xywz||
+|norm_4:: set_xyz||
+|norm_4:: set_xyzw||
+|norm_4:: set_xz||
+|norm_4:: set_xzw||
+|norm_4:: set_xzwy||
+|norm_4:: set_xzy||
+|norm_4:: set_xzyw||
 |norm_4:: set_y||
-|norm_4::set_yw||
-|norm_4::set_ywx||
-|norm_4::set_ywxz||
-|norm_4::set_ywz||
-|norm_4::set_ywzx||
-|norm_4::set_yx||
+|norm_4:: set_yw||
+|norm_4:: set_ywx||
+|norm_4:: set_ywxz||
+|norm_4:: set_ywz||
+|norm_4:: set_ywzx||
+|norm_4:: set_yx||
 |norm_4:: set_yxw||
-|norm_4::set_yxwz||
-|norm_4::set_yxz||
-|norm_4::set_yxzw||
-|norm_4::set_yz||
-|norm_4::set_yzw||
-|norm_4::set_yzwx||
-|norm_4::set_yzx||
-|norm_4::set_yzxw||
-|norm_4::set_z||
-|norm_4::set_zw||
-|norm_4::set_zwx||
-|norm_4::set_zwxy||
-|norm_4::set_zwy||
-|norm_4::set_zwyx||
-|norm_4::set_zx||
-|norm_4::set_zxw||
+|norm_4:: set_yxwz||
+|norm_4:: set_yxz||
+|norm_4:: set_yxzw||
+|norm_4:: set_yz||
+|norm_4:: set_yzw||
+|norm_4:: set_yzwx||
+|norm_4:: set_yzx||
+|norm_4:: set_yzxw||
+|norm_4:: set_z||
+|norm_4:: set_zw||
+|norm_4:: set_zwx||
+|norm_4:: set_zwxy||
+|norm_4:: set_zwy||
+|norm_4:: set_zwyx||
+|norm_4:: set_zx||
+|norm_4:: set_zxw||
 |norm_4:: set_zxwy||
-|norm_4::set_zxy||
-|norm_4::set_zxyw||
+|norm_4:: set_zxy||
+|norm_4:: set_zxyw||
 |norm_4:: set_zy||
-|norm_4::set_zyw||
-|norm_4::set_zywx||
-|norm_4::set_zyx||
-|norm_4::set_zyxw||
+|norm_4:: set_zyw||
+|norm_4:: set_zywx||
+|norm_4:: set_zyx||
+|norm_4:: set_zyxw||
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |norm_4:: operator —||
 |norm_4:: operator--||
@@ -455,13 +456,13 @@ class norm_4;
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа размера](#norm_4__size)||
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |norm_4:: a||
 |norm_4:: AB||
@@ -498,7 +499,7 @@ class norm_4;
 |norm_4:: g||
 |norm_4:: GA||
 |norm_4:: ГАБ||
-|norm_4::gabr||
+|norm_4:: Габр||
 |norm_4:: Гар||
 |norm_4:: нечитаемость||
 |norm_4:: ГБ||
@@ -533,7 +534,7 @@ class norm_4;
 |norm_4:: вксиз||
 |norm_4:: вксз||
 |norm_4:: вксзи||
-|norm_4::wy||
+|norm_4:: WY||
 |norm_4:: Викс||
 |norm_4:: виксз||
 |norm_4:: виз||
@@ -547,7 +548,7 @@ class norm_4;
 |norm_4:: КСВ||
 |norm_4:: ксви||
 |norm_4:: ксвиз||
-|norm_4::xwz||
+|norm_4:: ксвз||
 |norm_4:: ксвзи||
 |norm_4:: XY||
 |norm_4:: ксив||
@@ -560,26 +561,26 @@ class norm_4;
 |norm_4:: XZY||
 |norm_4:: ксзив||
 |norm_4:: y||
-|norm_4::yw||
-|norm_4::ywx||
+|norm_4:: Ив||
+|norm_4:: ивкс||
 |norm_4:: ивксз||
-|norm_4::ywz||
-|norm_4::ywzx||
+|norm_4:: ИВЗ||
+|norm_4:: ивзкс||
 |norm_4:: Икс||
 |norm_4:: ИКСВ||
 |norm_4:: иксвз||
 |norm_4:: иксз||
 |norm_4:: иксзв||
 |norm_4:: из||
-|norm_4::yzw||
-|norm_4::yzwx||
+|norm_4:: ИЗВ||
+|norm_4:: извкс||
 |norm_4:: изкс||
 |norm_4:: изксв||
 |norm_4:: z||
 |norm_4:: ZW||
 |norm_4:: звкс||
 |norm_4:: звкси||
-|norm_4::zwy||
+|norm_4:: Зви||
 |norm_4:: звикс||
 |norm_4:: ЗКС||
 |norm_4:: зксв||
@@ -587,8 +588,8 @@ class norm_4;
 |norm_4:: зкси||
 |norm_4:: зксив||
 |norm_4:: зи||
-|norm_4::zyw||
-|norm_4::zywx||
+|norm_4:: Зив||
+|norm_4:: зивкс||
 |norm_4:: зикс||
 |norm_4:: зиксв||
 
@@ -602,7 +603,7 @@ class norm_4;
 
 **Пространство имен:** Concurrency:: Graphics
 
-## <a name="ctor"></a>norm_4
+## <a name="norm_4"></a><a name="ctor"></a> norm_4
 
 Конструктор по умолчанию инициализирует все элементы значением 0.
 
@@ -684,7 +685,7 @@ explicit inline norm_4(
 *_Other*<br/>
 Объект, используемый для инициализации.
 
-## <a name="norm_4__size"></a>изменять
+## <a name="size"></a><a name="norm_4__size"></a> изменять
 
 ```cpp
 static const int size = 4;

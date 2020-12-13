@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: invalid_compute_domain классе'
 title: invalid_compute_domain - класс
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_compute_domain class
 ms.assetid: ac7a7166-8bdb-4db1-8caf-ea129ab5117e
-ms.openlocfilehash: 09418991e805e494c1d79ef31980bbec66a2e172
-ms.sourcegitcommit: ced5ff1431ffbd25b20d106901955532723bd188
+ms.openlocfilehash: 7598180a12cacabcdb308c3924c84eb17ec90ed7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92135571"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329997"
 ---
 # <a name="invalid_compute_domain-class"></a>invalid_compute_domain - класс
 
@@ -69,6 +70,6 @@ invalid_compute_domain() throw();
 
 Экземпляр `invalid_compute_domain` класса
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Пространство имен Concurrency (C++ AMP)](concurrency-namespace-cpp-amp.md)

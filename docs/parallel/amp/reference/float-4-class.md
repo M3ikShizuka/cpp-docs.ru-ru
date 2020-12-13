@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: float_4 классе'
 title: Класс float_4
 ms.date: 11/04/2016
 f1_keywords:
@@ -268,12 +269,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::float_4::get_z
 - amp_short_vectors/Concurrency::graphics::float_4::set_xyzw
 ms.assetid: 10f92170-e58c-4afc-8198-fc5778d56038
-ms.openlocfilehash: efff4e2263704dab35e5c212f6ef5d906e3f7c72
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 3920cf59cca50bac7ea57f37cc4db4d590dfd3be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142178"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330058"
 ---
 # <a name="float_4-class"></a>Класс float_4
 
@@ -289,164 +290,164 @@ class float_4;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[Конструктор float_4](#ctor)|Перегружен. Конструктор по умолчанию инициализирует все элементы значением 0.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
-|float_4::get_w||
-|float_4::get_wx||
-|float_4::get_wxy||
-|float_4::get_wxyz||
-|float_4::get_wxz||
-|float_4::get_wxzy||
-|float_4::get_wy||
-|float_4::get_wyx||
-|float_4::get_wyxz||
-|float_4::get_wyz||
-|float_4::get_wyzx||
-|float_4::get_wz||
-|float_4::get_wzx||
-|float_4::get_wzxy||
-|float_4::get_wzy||
-|float_4::get_wzyx||
-|float_4::get_x||
-|float_4::get_xw||
-|float_4::get_xwy||
-|float_4::get_xwyz||
-|float_4::get_xwz||
-|float_4::get_xwzy||
-|float_4::get_xy||
-|float_4::get_xyw||
-|float_4::get_xywz||
-|float_4::get_xyz||
-|float_4::get_xyzw||
-|float_4::get_xz||
-|float_4::get_xzw||
-|float_4::get_xzwy||
-|float_4::get_xzy||
-|float_4::get_xzyw||
+|float_4:: get_w||
+|float_4:: get_wx||
+|float_4:: get_wxy||
+|float_4:: get_wxyz||
+|float_4:: get_wxz||
+|float_4:: get_wxzy||
+|float_4:: get_wy||
+|float_4:: get_wyx||
+|float_4:: get_wyxz||
+|float_4:: get_wyz||
+|float_4:: get_wyzx||
+|float_4:: get_wz||
+|float_4:: get_wzx||
+|float_4:: get_wzxy||
+|float_4:: get_wzy||
+|float_4:: get_wzyx||
+|float_4:: get_x||
+|float_4:: get_xw||
+|float_4:: get_xwy||
+|float_4:: get_xwyz||
+|float_4:: get_xwz||
+|float_4:: get_xwzy||
+|float_4:: get_xy||
+|float_4:: get_xyw||
+|float_4:: get_xywz||
+|float_4:: get_xyz||
+|float_4:: get_xyzw||
+|float_4:: get_xz||
+|float_4:: get_xzw||
+|float_4:: get_xzwy||
+|float_4:: get_xzy||
+|float_4:: get_xzyw||
 |float_4:: get_y||
 |float_4:: get_yw||
-|float_4::get_ywx||
-|float_4::get_ywxz||
-|float_4::get_ywz||
-|float_4::get_ywzx||
-|float_4::get_yx||
-|float_4::get_yxw||
-|float_4::get_yxwz||
-|float_4::get_yxz||
-|float_4::get_yxzw||
-|float_4::get_yz||
-|float_4::get_yzw||
-|float_4::get_yzwx||
-|float_4::get_yzx||
-|float_4::get_yzxw||
-|float_4::get_z||
-|float_4::get_zw||
-|float_4::get_zwx||
-|float_4::get_zwxy||
-|float_4::get_zwy||
-|float_4::get_zwyx||
-|float_4::get_zx||
-|float_4::get_zxw||
-|float_4::get_zxwy||
-|float_4::get_zxy||
-|float_4::get_zxyw||
-|float_4::get_zy||
-|float_4::get_zyw||
-|float_4::get_zywx||
-|float_4::get_zyx||
-|float_4::get_zyxw||
-|float_4::ref_a||
-|float_4::ref_b||
-|float_4::ref_g||
-|float_4::ref_r||
-|float_4::ref_w||
-|float_4::ref_x||
-|float_4::ref_y||
-|float_4::ref_z||
-|float_4::set_w||
-|float_4::set_wx||
-|float_4::set_wxy||
-|float_4::set_wxyz||
-|float_4::set_wxz||
-|float_4::set_wxzy||
-|float_4::set_wy||
-|float_4::set_wyx||
-|float_4::set_wyxz||
-|float_4::set_wyz||
-|float_4::set_wyzx||
-|float_4::set_wz||
-|float_4::set_wzx||
-|float_4::set_wzxy||
-|float_4::set_wzy||
-|float_4::set_wzyx||
-|float_4::set_x||
-|float_4::set_xw||
-|float_4::set_xwy||
-|float_4::set_xwyz||
-|float_4::set_xwz||
-|float_4::set_xwzy||
-|float_4::set_xy||
-|float_4::set_xyw||
-|float_4::set_xywz||
-|float_4::set_xyz||
-|float_4::set_xyzw||
-|float_4::set_xz||
-|float_4::set_xzw||
-|float_4::set_xzwy||
-|float_4::set_xzy||
-|float_4::set_xzyw||
+|float_4:: get_ywx||
+|float_4:: get_ywxz||
+|float_4:: get_ywz||
+|float_4:: get_ywzx||
+|float_4:: get_yx||
+|float_4:: get_yxw||
+|float_4:: get_yxwz||
+|float_4:: get_yxz||
+|float_4:: get_yxzw||
+|float_4:: get_yz||
+|float_4:: get_yzw||
+|float_4:: get_yzwx||
+|float_4:: get_yzx||
+|float_4:: get_yzxw||
+|float_4:: get_z||
+|float_4:: get_zw||
+|float_4:: get_zwx||
+|float_4:: get_zwxy||
+|float_4:: get_zwy||
+|float_4:: get_zwyx||
+|float_4:: get_zx||
+|float_4:: get_zxw||
+|float_4:: get_zxwy||
+|float_4:: get_zxy||
+|float_4:: get_zxyw||
+|float_4:: get_zy||
+|float_4:: get_zyw||
+|float_4:: get_zywx||
+|float_4:: get_zyx||
+|float_4:: get_zyxw||
+|float_4:: ref_a||
+|float_4:: ref_b||
+|float_4:: ref_g||
+|float_4:: ref_r||
+|float_4:: ref_w||
+|float_4:: ref_x||
+|float_4:: ref_y||
+|float_4:: ref_z||
+|float_4:: set_w||
+|float_4:: set_wx||
+|float_4:: set_wxy||
+|float_4:: set_wxyz||
+|float_4:: set_wxz||
+|float_4:: set_wxzy||
+|float_4:: set_wy||
+|float_4:: set_wyx||
+|float_4:: set_wyxz||
+|float_4:: set_wyz||
+|float_4:: set_wyzx||
+|float_4:: set_wz||
+|float_4:: set_wzx||
+|float_4:: set_wzxy||
+|float_4:: set_wzy||
+|float_4:: set_wzyx||
+|float_4:: set_x||
+|float_4:: set_xw||
+|float_4:: set_xwy||
+|float_4:: set_xwyz||
+|float_4:: set_xwz||
+|float_4:: set_xwzy||
+|float_4:: set_xy||
+|float_4:: set_xyw||
+|float_4:: set_xywz||
+|float_4:: set_xyz||
+|float_4:: set_xyzw||
+|float_4:: set_xz||
+|float_4:: set_xzw||
+|float_4:: set_xzwy||
+|float_4:: set_xzy||
+|float_4:: set_xzyw||
 |float_4:: set_y||
-|float_4::set_yw||
-|float_4::set_ywx||
-|float_4::set_ywxz||
-|float_4::set_ywz||
-|float_4::set_ywzx||
-|float_4::set_yx||
-|float_4::set_yxw||
-|float_4::set_yxwz||
-|float_4::set_yxz||
-|float_4::set_yxzw||
-|float_4::set_yz||
-|float_4::set_yzw||
-|float_4::set_yzwx||
-|float_4::set_yzx||
-|float_4::set_yzxw||
-|float_4::set_z||
-|float_4::set_zw||
-|float_4::set_zwx||
-|float_4::set_zwxy||
-|float_4::set_zwy||
-|float_4::set_zwyx||
-|float_4::set_zx||
-|float_4::set_zxw||
-|float_4::set_zxwy||
-|float_4::set_zxy||
-|float_4::set_zxyw||
-|float_4::set_zy||
-|float_4::set_zyw||
-|float_4::set_zywx||
-|float_4::set_zyx||
-|float_4::set_zyxw||
+|float_4:: set_yw||
+|float_4:: set_ywx||
+|float_4:: set_ywxz||
+|float_4:: set_ywz||
+|float_4:: set_ywzx||
+|float_4:: set_yx||
+|float_4:: set_yxw||
+|float_4:: set_yxwz||
+|float_4:: set_yxz||
+|float_4:: set_yxzw||
+|float_4:: set_yz||
+|float_4:: set_yzw||
+|float_4:: set_yzwx||
+|float_4:: set_yzx||
+|float_4:: set_yzxw||
+|float_4:: set_z||
+|float_4:: set_zw||
+|float_4:: set_zwx||
+|float_4:: set_zwxy||
+|float_4:: set_zwy||
+|float_4:: set_zwyx||
+|float_4:: set_zx||
+|float_4:: set_zxw||
+|float_4:: set_zxwy||
+|float_4:: set_zxy||
+|float_4:: set_zxyw||
+|float_4:: set_zy||
+|float_4:: set_zyw||
+|float_4:: set_zywx||
+|float_4:: set_zyx||
+|float_4:: set_zyxw||
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |float_4:: operator —||
 |float_4:: operator--||
-|float_4::operator*=||
+|float_4:: operator * =||
 |float_4:: operator/=||
 |float_4:: operator + +||
 |float_4:: operator + =||
@@ -455,23 +456,23 @@ class float_4;
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа размера](#float_4__size)||
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |float_4:: a||
 |float_4:: AB||
-|float_4::abg||
-|float_4::abgr||
+|float_4:: ABG||
+|float_4:: абгр||
 |float_4:: Граничный маршрутизатор||
 |float_4:: абрг||
 |float_4:: AG||
-|float_4::agb||
-|float_4::agbr||
+|float_4:: АГБ||
+|float_4:: агбр||
 |float_4:: принимаю||
 |float_4:: агрб||
 |float_4:: AR||
@@ -480,117 +481,117 @@ class float_4;
 |float_4:: ARG||
 |float_4:: ARGB||
 |float_4:: b||
-|float_4::ba||
+|float_4:: BA||
 |float_4:: сумка||
 |float_4:: БАГР||
 |float_4:: линейчатая||
 |float_4:: Барг||
-|float_4::bg||
-|float_4::bga||
+|float_4:: BG||
+|float_4:: BGA||
 |float_4:: бгар||
-|float_4::bgr||
-|float_4::bgra||
-|float_4::br||
-|float_4::bra||
+|float_4:: BGR||
+|float_4:: BGRA||
+|float_4:: BR||
+|float_4:: неверное||
 |float_4:: похвастать||
-|float_4::brg||
-|float_4::brga||
+|float_4:: БРГ||
+|float_4:: брга||
 |float_4:: g||
 |float_4:: GA||
 |float_4:: ГАБ||
-|float_4::gabr||
+|float_4:: Габр||
 |float_4:: Гар||
-|float_4::garb||
+|float_4:: нечитаемость||
 |float_4:: ГБ||
-|float_4::gba||
+|float_4:: Гба||
 |float_4:: ГБАР||
-|float_4::gbr||
-|float_4::gbra||
+|float_4:: ГБР||
+|float_4:: гбра||
 |float_4:: GR||
-|float_4::gra||
+|float_4:: гра||
 |float_4:: захватить||
 |float_4:: ГРБ||
-|float_4::grba||
+|float_4:: ГРБА||
 |float_4:: r||
-|float_4::ra||
+|float_4:: RA||
 |float_4:: раб||
-|float_4::rabg||
+|float_4:: рабг||
 |float_4:: перетаскивание||
 |float_4:: рагб||
 |float_4:: RB||
-|float_4::rba||
+|float_4:: роль||
 |float_4:: РБАГ||
-|float_4::rbg||
-|float_4::rbga||
-|float_4::rg||
-|float_4::rga||
-|float_4::rgab||
-|float_4::rgb||
-|float_4::rgba||
+|float_4:: РБГ||
+|float_4:: рбга||
+|float_4:: RG||
+|float_4:: РГА||
+|float_4:: ргаб||
+|float_4:: RGB||
+|float_4:: RGBA||
 |float_4:: w||
-|float_4::wx||
-|float_4::wxy||
-|float_4::wxyz||
-|float_4::wxz||
-|float_4::wxzy||
-|float_4::wy||
-|float_4::wyx||
-|float_4::wyxz||
+|float_4:: WX||
+|float_4:: вкси||
+|float_4:: вксиз||
+|float_4:: вксз||
+|float_4:: вксзи||
+|float_4:: WY||
+|float_4:: Викс||
+|float_4:: виксз||
 |float_4:: виз||
-|float_4::wyzx||
-|float_4::wz||
-|float_4::wzx||
-|float_4::wzxy||
-|float_4::wzy||
-|float_4::wzyx||
+|float_4:: визкс||
+|float_4:: WZ||
+|float_4:: взкс||
+|float_4:: взкси||
+|float_4:: ВЗИ||
+|float_4:: взикс||
 |float_4:: x||
 |float_4:: КСВ||
 |float_4:: ксви||
-|float_4::xwyz||
-|float_4::xwz||
-|float_4::xwzy||
+|float_4:: ксвиз||
+|float_4:: ксвз||
+|float_4:: ксвзи||
 |float_4:: XY||
-|float_4::xyw||
-|float_4::xywz||
-|float_4::xyz||
+|float_4:: ксив||
+|float_4:: ксивз||
+|float_4:: XYZ||
 |float_4:: ксизв||
-|float_4::xz||
-|float_4::xzw||
+|float_4:: КСЗ||
+|float_4:: ксзв||
 |float_4:: ксзви||
 |float_4:: XZY||
-|float_4::xzyw||
+|float_4:: ксзив||
 |float_4:: y||
-|float_4::yw||
-|float_4::ywx||
-|float_4::ywxz||
-|float_4::ywz||
-|float_4::ywzx||
+|float_4:: Ив||
+|float_4:: ивкс||
+|float_4:: ивксз||
+|float_4:: ИВЗ||
+|float_4:: ивзкс||
 |float_4:: Икс||
 |float_4:: ИКСВ||
-|float_4::yxwz||
-|float_4::yxz||
-|float_4::yxzw||
+|float_4:: иксвз||
+|float_4:: иксз||
+|float_4:: иксзв||
 |float_4:: из||
-|float_4::yzw||
-|float_4::yzwx||
-|float_4::yzx||
-|float_4::yzxw||
+|float_4:: ИЗВ||
+|float_4:: извкс||
+|float_4:: изкс||
+|float_4:: изксв||
 |float_4:: z||
-|float_4::zw||
-|float_4::zwx||
-|float_4::zwxy||
-|float_4::zwy||
-|float_4::zwyx||
-|float_4::zx||
-|float_4::zxw||
+|float_4:: ZW||
+|float_4:: звкс||
+|float_4:: звкси||
+|float_4:: Зви||
+|float_4:: звикс||
+|float_4:: ЗКС||
+|float_4:: зксв||
 |float_4:: зксви||
-|float_4::zxy||
-|float_4::zxyw||
-|float_4::zy||
-|float_4::zyw||
-|float_4::zywx||
-|float_4::zyx||
-|float_4::zyxw||
+|float_4:: зкси||
+|float_4:: зксив||
+|float_4:: зи||
+|float_4:: Зив||
+|float_4:: зивкс||
+|float_4:: зикс||
+|float_4:: зиксв||
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -602,7 +603,7 @@ class float_4;
 
 **Пространство имен:** Concurrency:: Graphics
 
-## <a name="ctor"></a>float_4
+## <a name="float_4"></a><a name="ctor"></a> float_4
 
 Конструктор по умолчанию инициализирует все элементы значением 0.
 
@@ -666,7 +667,7 @@ explicit inline float_4(
 *_Other*<br/>
 Объект, используемый для инициализации.
 
-## <a name="float_4__size"></a>изменять
+## <a name="size"></a><a name="float_4__size"></a> изменять
 
 ```cpp
 static const int size = 4;

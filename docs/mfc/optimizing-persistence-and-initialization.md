@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: оптимизация сохраняемости и инициализации'
 title: Оптимизация постоянства и инициализации
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - optimization, ActiveX controls
 - optimizing performance, ActiveX controls
 ms.assetid: e821e19e-b9eb-49ab-b719-0743420ba80b
-ms.openlocfilehash: 57b98f7e2e4f9e23175b8b01c2e37ff49c499949
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 440239daa0ecfc4a5955a0ccbecb33bf801da7ca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624001"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330149"
 ---
 # <a name="optimizing-persistence-and-initialization"></a>Оптимизация постоянства и инициализации
 
@@ -32,7 +33,7 @@ ms.locfileid: "84624001"
 
 `dwVersion`Локальную переменную можно использовать для определения версии сохраняемого или сохраняемого постоянного состояния элемента управления. Эту переменную можно использовать вместо вызова [кпропексчанже::/Version](reference/cpropexchange-class.md#getversion).
 
-Чтобы сохранить небольшое пространство в постоянном формате для свойства **bool** (и обеспечить его совместимость с форматом, созданным `PX_Bool` ), можно сохранить свойство в виде **байта**следующим образом:
+Чтобы сохранить небольшое пространство в постоянном формате для свойства **bool** (и обеспечить его совместимость с форматом, созданным `PX_Bool` ), можно сохранить свойство в виде **байта** следующим образом:
 
 [!code-cpp[NVC_MFC_AxOpt#3](codesnippet/cpp/optimizing-persistence-and-initialization_3.cpp)]
 

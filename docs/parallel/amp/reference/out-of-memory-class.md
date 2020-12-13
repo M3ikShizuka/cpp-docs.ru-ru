@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: out_of_memory классе'
 title: out_of_memory - класс
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - out_of_memory class
 ms.assetid: 3aa7e682-8f13-4ae6-9188-31fb423956e4
-ms.openlocfilehash: e716d4952bdb9634cc0d195285d3a65c5c06b0a1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bb7ba1db5be5921111b1fba2e12ea5cf6a5bea1b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81336806"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97329929"
 ---
 # <a name="out_of_memory-class"></a>out_of_memory - класс
 
-Исключение, которое выбрасывается, когда метод выходит из строя из-за отсутствия системы или памяти устройства.
+Исключение, возникающее при сбое метода из-за нехватки памяти системы или устройства.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -25,13 +26,13 @@ ms.locfileid: "81336806"
 class out_of_memory : public runtime_exception;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[out_of_memory конструктор](#ctor)|Инициализирует новый экземпляр класса `out_of_memory`.|
+|[Конструктор out_of_memory](#ctor)|Инициализирует новый экземпляр класса `out_of_memory`.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -43,11 +44,11 @@ class out_of_memory : public runtime_exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** amprt.h
+**Заголовок:** ампрт. h
 
 **Пространство имен** : Concurrency
 
-## <a name="out_of_memory"></a><a name="ctor"></a>out_of_memory
+## <a name="out_of_memory"></a><a name="ctor"></a> out_of_memory
 
 Инициализирует новый экземпляр класса.
 
@@ -71,4 +72,4 @@ out_of_memory () throw();
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен параллелизма (КЗ АМП)](concurrency-namespace-cpp-amp.md)
+[Пространство имен Concurrency (C++ AMP)](concurrency-namespace-cpp-amp.md)

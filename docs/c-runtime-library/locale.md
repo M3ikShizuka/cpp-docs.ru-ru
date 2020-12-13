@@ -1,5 +1,6 @@
 ---
-title: Локаль
+description: 'Подробнее о: языковой стандарт'
+title: Языковой стандарт
 ms.date: 04/11/2018
 f1_keywords:
 - c.international
@@ -10,14 +11,14 @@ helpviewer_keywords:
 - setlocale function
 - locale routines
 ms.assetid: 442f8112-9288-44d7-be3c-15d22652093a
-ms.openlocfilehash: a747c60994afbf4293aca8e4a3290d20b4bc18a3
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 660a4fb0103de8c1ac06272c711e02fcd6d12289
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87189588"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331065"
 ---
-# <a name="locale"></a>Локаль
+# <a name="locale"></a>Языковой стандарт
 
 *Языковой стандарт* — это настройки страны/региона и языковые настройки, с помощью которых можно настраивать программы. К числу категорий, зависящих от языкового стандарта, относится отображение форматов дат и денежных значений. Дополнительные сведения см. в разделе [Категории языковых стандартов](../c-runtime-library/locale-categories.md).
 
@@ -29,7 +30,7 @@ ms.locfileid: "87189588"
 
 ## <a name="locale-dependent-routines"></a>Зависимые от языковых стандартов подпрограммы
 
-|Подпрограмма|Используйте|Зависимость настройки категории **setlocale**|
+|Подпрограмма|Использовать|Зависимость настройки категории **setlocale**|
 |-------------|---------|---------------------------------------------|
 |[atof, _atof_l, _wtof, _wtof_l](../c-runtime-library/reference/atof-atof-l-wtof-wtof-l.md)|Преобразовать символ в значение с плавающей запятой|**LC_NUMERIC**|
 |[atoi, _atoi_l, _wtoi, _wtoi_l](../c-runtime-library/reference/atoi-atoi-l-wtoi-wtoi-l.md)|Преобразовать символ в целочисленное значение|**LC_NUMERIC**|

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: HelpFile'
 title: HelpFile (атрибут C++ COM)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - helpfile attribute
 ms.assetid: d75161c1-1363-4019-ae09-e7e3b8a3971e
-ms.openlocfilehash: 385c6da6a432f0954e62c9f16a22f0b70b73b317
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ff3207c39bc5f83ededb2f7f299cf798b16f0eaa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845241"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331151"
 ---
 # <a name="helpfile"></a>helpfile
 
@@ -28,13 +29,13 @@ ms.locfileid: "88845241"
 *filename*<br/>
 Имя файла, содержащего разделы справки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Атрибут **HelpFile** C++ имеет те же функциональные возможности, что и атрибут [HelpFile](/windows/win32/Midl/helpfile) MIDL.
 
 ## <a name="example"></a>Пример
 
-Пример использования **HelpFile**см. в примере для [модуля](module-cpp.md) .
+Пример использования **HelpFile** см. в примере для [модуля](module-cpp.md) .
 
 ## <a name="requirements"></a>Требования
 

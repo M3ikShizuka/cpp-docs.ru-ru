@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: RuntimeClass Class'
 title: Класс RuntimeClass
 ms.date: 09/11/2018
 ms.topic: reference
@@ -29,18 +30,18 @@ helpviewer_keywords:
 - Microsoft::WRL::RuntimeClass::RuntimeClass, constructor
 - Microsoft::WRL::RuntimeClass::~RuntimeClass, destructor
 ms.assetid: d52f9d1a-98e5-41f2-a143-8fb629dd0727
-ms.openlocfilehash: 64b4124ba3c60fdcb53fc29c7b791c0f73a49579
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: f62eec0b5ac9b8fc8ecac390ea07077743fdcb51
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376236"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97330760"
 ---
 # <a name="runtimeclass-class"></a>Класс RuntimeClass
 
-Представляет класс WinRT или COM, который наследует указанные интерфейсы и предоставляет указанное время выполнения Windows, классическую COM и слабую справочную поддержку.
+Представляет класс WinRT или COM, который наследует указанные интерфейсы и предоставляет указанную среда выполнения Windows, классическую модель COM и поддержку слабых ссылок.
 
-Этот класс обеспечивает шаблонную реализацию классов WinRT и `QueryInterface`COM, обеспечивая реализацию `AddRef`и `Release` т.д., управляет эталонным подсчетом модуля и имеет поддержку для обеспечения фабрики класса для активируемых объектов.
+Этот класс предоставляет стандартную реализацию классов WinRT и com, предоставляя реализацию, и `QueryInterface` `AddRef` `Release` т. д., управляет счетчиком ссылок модуля и поддерживает предоставление фабрики класса для объектов активируемого.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,37 +52,37 @@ template <unsigned int classFlags, typename ...TInterfaces> class RuntimeClass;
 
 ### <a name="parameters"></a>Параметры
 
-*классФлаги*<br/>
-Необязательный параметр. Комбинация одного или нескольких значений перечисления [RuntimeClassType.](runtimeclasstype-enumeration.md) Макрос `__WRL_CONFIGURATION_LEGACY__` можно определить для изменения значения класса ClassFlags по умолчанию для всех классов выполнения проекта. Если это определено, экземпляры RuntimeClass по умолчанию не проворны. Если не определено, экземпляры RuntimeClass проворны по умолчанию. Чтобы избежать двусмысленности всегда `Microsoft::WRL::FtmBase` `TInterfaces` укажите в или `RuntimeClassType::InhibitFtmBase`. Обратите внимание, что если используются InhibitFtmBase и FtmBase, объект будет гибким.
+*классфлагс*<br/>
+Необязательный параметр. Сочетание одного или нескольких значений перечисления [RuntimeClassType](runtimeclasstype-enumeration.md) . `__WRL_CONFIGURATION_LEGACY__`Макрос можно определить, чтобы изменить значение по умолчанию классфлагс для всех классов среды выполнения в проекте. Если этот параметр определен, экземпляры RuntimeClass по умолчанию не являются гибкими. Если не определено, экземпляры RuntimeClass по умолчанию являются гибкими. Во избежание неоднозначности всегда указывайте `Microsoft::WRL::FtmBase` в `TInterfaces` или `RuntimeClassType::InhibitFtmBase` . Обратите внимание, что если используются и Инхибитфтмбасе, и метод FtmBase, объект будет гибким.
 
-*TИнтерфейсы*<br/>
-Список интерфейсов, которые объект `IUnknown` `IInspectable` реализует за пределами, или других интерфейсов, контролируемых [RuntimeClassType.](runtimeclasstype-enumeration.md) Он также может перечислить другие классы, которые будут выведены из, в частности, `Microsoft::WRL::FtmBase` чтобы сделать объект гибким и заставить его реализовать. `IMarshal`
+*тинтерфацес*<br/>
+Список интерфейсов, которые объект реализует за пределами `IUnknown` , `IInspectable` или другие интерфейсы, управляемые [RuntimeClassType](runtimeclasstype-enumeration.md). В нем также могут содержаться другие классы, от которых следует сделать, особенно `Microsoft::WRL::FtmBase` Сделайте объект гибким и привлечет его реализацию `IMarshal` .
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 `RuntimeClassInitialize`<br/>
-Функция, которая инициализирует `MakeAndInitialize` объект, если функция шаблона используется для построения объекта. Он возвращает S_OK если объект был успешно инициализирован, или код ошибки COM, если не удалось инициализации. Код ошибки COM распространяется как значение `MakeAndInitialize`возврата. Обратите внимание, что `RuntimeClassInitialize` метод `Make` не вызывается, если функция шаблона используется для построения объекта.
+Функция, которая инициализирует объект, если `MakeAndInitialize` для создания объекта используется функция шаблона. Он возвращает S_OK, если объект был успешно инициализирован, или код ошибки COM, если инициализация завершилась неудачно. Код ошибки COM распространяется как возвращаемое значение `MakeAndInitialize` . Обратите внимание, что `RuntimeClassInitialize` метод не вызывается, если `Make` для создания объекта используется функция шаблона.
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-| Имя                                               | Описание                                                     |
+| name                                               | Описание                                                     |
 | -------------------------------------------------- | --------------------------------------------------------------- |
-| [RuntimeClass::RuntimeClass](#runtimeclass)        | Инициализирует текущий экземпляр `RuntimeClass` класса.   |
-| [RuntimeClass:::'RuntimeClass](#tilde-runtimeclass) | Деприиратизирует текущий `RuntimeClass` экземпляр класса. |
+| [RuntimeClass:: RuntimeClass](#runtimeclass)        | Инициализирует текущий экземпляр `RuntimeClass` класса.   |
+| [RuntimeClass:: ~ RuntimeClass](#tilde-runtimeclass) | Выполняет деинициализацию текущего экземпляра `RuntimeClass` класса. |
 
 ### <a name="public-methods"></a>Открытые методы
 
-| Имя                                                      | Описание                                                                                        |
+| name                                                      | Описание                                                                                        |
 | --------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [RuntimeClass::AddRef](#addref)                           | Приращения отсчета ссылок на текущий `RuntimeClass` объект.                              |
-| [RuntimeClass::DecrementСправка](#decrementreference)   | Декретирует значение отсчета `RuntimeClass` ссылок для текущего объекта.                              |
-| [RuntimeClass::GetIids](#getiids)                         | Получает массив, который может содержать иные иксы интерфейса, реализованные текущим `RuntimeClass` объектом. |
-| [RuntimeClass::GetRuntimeClassName](#getruntimeclassname) | Получает имя класса времени выполнения `RuntimeClass` текущего объекта.                                  |
-| [RuntimeClass::GetTrustLevel](#gettrustlevel)             | Получает уровень доверия `RuntimeClass` к текущему объекту.                                         |
-| [RuntimeClass::GetWeakСправка](#getweakreference)       | Получает указатель на слабый эталонный `RuntimeClass` объект для текущего объекта.                 |
-| [RuntimeClass::InternalAddRef](#internaladdref)           | Приращения отсчета ссылок на текущий `RuntimeClass` объект.                               |
-| [RuntimeClass::Квитип](#queryinterface)           | Извлекает указатель на указанный идентификатор интерфейса.                                                 |
-| [RuntimeClass::Release](#release)                         | Выполняет операцию COM Release `RuntimeClass` на текущем объекте.                             |
+| [RuntimeClass:: AddRef](#addref)                           | Увеличивает значение счетчика ссылок для текущего `RuntimeClass` объекта.                              |
+| [RuntimeClass::D Екрементреференце](#decrementreference)   | Уменьшает значение счетчика ссылок для текущего `RuntimeClass` объекта.                              |
+| [RuntimeClass:: GetIids](#getiids)                         | Возвращает массив, который может содержать идентификаторы интерфейса, реализованные текущим `RuntimeClass` объектом. |
+| [RuntimeClass:: GetRuntimeClassName](#getruntimeclassname) | Возвращает имя класса среды выполнения для текущего `RuntimeClass` объекта.                                  |
+| [RuntimeClass:: GetTrustLevel](#gettrustlevel)             | Возвращает уровень доверия текущего `RuntimeClass` объекта.                                         |
+| [RuntimeClass:: GetWeakReference](#getweakreference)       | Возвращает указатель на объект слабой ссылки для текущего `RuntimeClass` объекта.                 |
+| [RuntimeClass:: InternalAddRef](#internaladdref)           | Увеличивает значение счетчика ссылок до текущего `RuntimeClass` объекта.                               |
+| [RuntimeClass:: QueryInterface](#queryinterface)           | Извлекает указатель на указанный идентификатор интерфейса.                                                 |
+| [RuntimeClass:: Release](#release)                         | Выполняет операцию освобождения COM для текущего `RuntimeClass` объекта.                             |
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -89,21 +90,21 @@ template <unsigned int classFlags, typename ...TInterfaces> class RuntimeClass;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** implements.h
+**Заголовок:** Implements. h
 
 **Пространство имен:** Microsoft::WRL
 
-## <a name="runtimeclassruntimeclass"></a><a name="tilde-runtimeclass"></a>RuntimeClass:::'RuntimeClass
+## <a name="runtimeclassruntimeclass"></a><a name="tilde-runtimeclass"></a> RuntimeClass:: ~ RuntimeClass
 
-Деприиратизирует текущий `RuntimeClass` экземпляр класса.
+Выполняет деинициализацию текущего экземпляра `RuntimeClass` класса.
 
 ```cpp
 virtual ~RuntimeClass();
 ```
 
-## <a name="runtimeclassaddref"></a><a name="addref"></a>RuntimeClass::AddRef
+## <a name="runtimeclassaddref"></a><a name="addref"></a> RuntimeClass:: AddRef
 
-Приращения отсчета ссылок на текущий `RuntimeClass` объект.
+Увеличивает значение счетчика ссылок для текущего `RuntimeClass` объекта.
 
 ```cpp
 STDMETHOD_(
@@ -116,9 +117,9 @@ STDMETHOD_(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-## <a name="runtimeclassdecrementreference"></a><a name="decrementreference"></a>RuntimeClass::DecrementСправка
+## <a name="runtimeclassdecrementreference"></a><a name="decrementreference"></a> RuntimeClass::D Екрементреференце
 
-Декретирует значение отсчета `RuntimeClass` ссылок для текущего объекта.
+Уменьшает значение счетчика ссылок для текущего `RuntimeClass` объекта.
 
 ```cpp
 ULONG DecrementReference();
@@ -128,9 +129,9 @@ ULONG DecrementReference();
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-## <a name="runtimeclassgetiids"></a><a name="getiids"></a>RuntimeClass::GetIids
+## <a name="runtimeclassgetiids"></a><a name="getiids"></a> RuntimeClass:: GetIids
 
-Получает массив, который может содержать иные иксы интерфейса, реализованные текущим `RuntimeClass` объектом.
+Возвращает массив, который может содержать идентификаторы интерфейса, реализованные текущим `RuntimeClass` объектом.
 
 ```cpp
 STDMETHOD(
@@ -143,18 +144,18 @@ STDMETHOD(
 ### <a name="parameters"></a>Параметры
 
 *iidCount*<br/>
-Когда эта операция завершается, общее количество элементов в массиве *iids.*
+По завершении этой операции общее число элементов в массиве *идентификаторов IID*.
 
-*iids*<br/>
+*идентификаторов IID*<br/>
 После завершения операции представляет указатель на массив идентификаторов интерфейса.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение E_OUTOFMEMORY.
 
-## <a name="runtimeclassgetruntimeclassname"></a><a name="getruntimeclassname"></a>RuntimeClass::GetRuntimeClassName
+## <a name="runtimeclassgetruntimeclassname"></a><a name="getruntimeclassname"></a> RuntimeClass:: GetRuntimeClassName
 
-Получает имя класса времени выполнения `RuntimeClass` текущего объекта.
+Возвращает имя класса среды выполнения для текущего `RuntimeClass` объекта.
 
 ```cpp
 STDMETHOD( GetRuntimeClassName )(
@@ -164,20 +165,20 @@ STDMETHOD( GetRuntimeClassName )(
 
 ### <a name="parameters"></a>Параметры
 
-*время выполненияИмя*<br/>
+*рунтименаме*<br/>
 После завершения операции представляет имя класса среды выполнения.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Ошибка утверждения испускается, `__WRL_STRICT__` `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` если или не определена.
+Если `__WRL_STRICT__` не определено или, возникает ошибка Assert `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` .
 
-## <a name="runtimeclassgettrustlevel"></a><a name="gettrustlevel"></a>RuntimeClass::GetTrustLevel
+## <a name="runtimeclassgettrustlevel"></a><a name="gettrustlevel"></a> RuntimeClass:: GetTrustLevel
 
-Получает уровень доверия `RuntimeClass` к текущему объекту.
+Возвращает уровень доверия текущего `RuntimeClass` объекта.
 
 ```cpp
 STDMETHOD(GetTrustLevel)(
@@ -187,20 +188,20 @@ STDMETHOD(GetTrustLevel)(
 
 ### <a name="parameters"></a>Параметры
 
-*trustLvl*<br/>
-Когда эта операция завершается, уровень `RuntimeClass` доверия текущего объекта.
+*трустлвл*<br/>
+По завершении этой операции уровень доверия текущего `RuntimeClass` объекта.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Всегда S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Ошибка утверждения испускается, `__WRL_STRICT__` `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` если или не определена.
+Если `__WRL_STRICT__` не определено или, возникает ошибка Assert `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` .
 
-## <a name="runtimeclassgetweakreference"></a><a name="getweakreference"></a>RuntimeClass::GetWeakСправка
+## <a name="runtimeclassgetweakreference"></a><a name="getweakreference"></a> RuntimeClass:: GetWeakReference
 
-Получает указатель на слабый эталонный `RuntimeClass` объект для текущего объекта.
+Возвращает указатель на объект слабой ссылки для текущего `RuntimeClass` объекта.
 
 ```cpp
 STDMETHOD(
@@ -210,16 +211,16 @@ STDMETHOD(
 
 ### <a name="parameters"></a>Параметры
 
-*Weakreference*<br/>
+*weakReference*<br/>
 После завершения операции представляет указатель на объект слабой ссылки.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Всегда S_OK.
 
-## <a name="runtimeclassinternaladdref"></a><a name="internaladdref"></a>RuntimeClass::InternalAddRef
+## <a name="runtimeclassinternaladdref"></a><a name="internaladdref"></a> RuntimeClass:: InternalAddRef
 
-Приращения отсчета ссылок на текущий `RuntimeClass` объект.
+Увеличивает значение счетчика ссылок до текущего `RuntimeClass` объекта.
 
 ```cpp
 ULONG InternalAddRef();
@@ -227,9 +228,9 @@ ULONG InternalAddRef();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-В результате отсчет ссылок.
+Результирующий счетчик ссылок.
 
-## <a name="runtimeclassqueryinterface"></a><a name="queryinterface"></a>RuntimeClass::Квитип
+## <a name="runtimeclassqueryinterface"></a><a name="queryinterface"></a> RuntimeClass:: QueryInterface
 
 Извлекает указатель на указанный идентификатор интерфейса.
 
@@ -246,16 +247,16 @@ STDMETHOD(
 *riid*<br/>
 Идентификатор интерфейса.
 
-*ppvObject*<br/>
-Когда эта оперезания завершается, указатель на интерфейс, указанный параметром *riid.*
+*ппвобжект*<br/>
+После завершения этого опереатион указатель на интерфейс, указанный параметром *riid* .
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-## <a name="runtimeclassrelease"></a><a name="release"></a>RuntimeClass::Release
+## <a name="runtimeclassrelease"></a><a name="release"></a> RuntimeClass:: Release
 
-Выполняет операцию COM Release `RuntimeClass` на текущем объекте.
+Выполняет операцию освобождения COM для текущего `RuntimeClass` объекта.
 
 ```cpp
 STDMETHOD_(
@@ -268,11 +269,11 @@ STDMETHOD_(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Если количество ссылок становится `RuntimeClass` нулевым, объект удаляется.
+Если значение счетчика ссылок становится равным нулю, `RuntimeClass` объект удаляется.
 
-## <a name="runtimeclassruntimeclass"></a><a name="runtimeclass"></a>RuntimeClass::RuntimeClass
+## <a name="runtimeclassruntimeclass"></a><a name="runtimeclass"></a> RuntimeClass:: RuntimeClass
 
 Инициализирует текущий экземпляр `RuntimeClass` класса.
 
