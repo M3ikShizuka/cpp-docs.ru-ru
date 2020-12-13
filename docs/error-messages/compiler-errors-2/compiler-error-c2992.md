@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C2992'
 title: Ошибка компилятора C2992
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2992
 ms.assetid: 01b16447-43fe-4e91-9a5a-af884a166a31
-ms.openlocfilehash: a51e87980eba90eb4e543a3d07a44c1b170334e9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b96ca202ee3d8128e3cbd27e4e114519f625aaf9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214559"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338615"
 ---
 # <a name="compiler-error-c2992"></a>Ошибка компилятора C2992
 
 "класс": список параметров типов недопустим или отсутствует
 
-Классу предшествует **`template`** ключевое слово или **generic** с отсутствующими или недопустимыми параметрами.
+Классу предшествует **`template`** ключевое слово или  с отсутствующими или недопустимыми параметрами.
 
 ## <a name="example"></a>Пример
 

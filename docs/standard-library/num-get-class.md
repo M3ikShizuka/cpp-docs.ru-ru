@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: num_get классе'
 title: Класс num_get
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - std::num_get [C++], do_get
 - std::num_get [C++], get
 ms.assetid: 9933735d-3918-4b17-abad-5fca2adc62d7
-ms.openlocfilehash: d5a88e904c437e79eabfa854a196aa48dbad955e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0236aac2e7c7859f966430bd276b4dffc42820b5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228171"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338079"
 ---
 # <a name="num_get-class"></a>Класс num_get
 
@@ -40,13 +41,13 @@ class num_get : public locale::facet;
 *InputIterator*\
 Тип итератора, из которого функции получения числовых значений считывают своих входные данные.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Как и в случае любого другого аспекта языкового стандарта, начальное сохраненное значение статического идентификатора объекта равно нулю. Первая попытка получить доступ к сохраненному значению сохранит уникальное положительное значение в **id.**
 
 ### <a name="constructors"></a>Конструкторы
 
-|Конструктор|Описание:|
+|Конструктор|Описание|
 |-|-|
 |[num_get](#num_get)|Конструктор для объектов типа `num_get`, используемых для извлечения числовых значений из последовательностей.|
 
@@ -70,7 +71,7 @@ class num_get : public locale::facet;
 
 **Пространство имен:** std
 
-## <a name="num_getchar_type"></a><a name="char_type"></a>num_get:: char_type
+## <a name="num_getchar_type"></a><a name="char_type"></a> num_get:: char_type
 
 Тип, используемый для описания символа, используемого языковым стандартом.
 
@@ -78,11 +79,11 @@ class num_get : public locale::facet;
 typedef CharType char_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип является синонимом для параметра-шаблона **Chartype**.
 
-## <a name="num_getdo_get"></a><a name="do_get"></a>num_get::d o_get
+## <a name="num_getdo_get"></a><a name="do_get"></a> num_get::d o_get
 
 Виртуальная функция, вызываемая для извлечения числового или логического значения из последовательности символов, представляющей денежное значение.
 
@@ -186,7 +187,7 @@ virtual iter_type do_get(
 
 Итератор после чтения значения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая виртуальная защищенная функция-член:
 
@@ -211,7 +212,7 @@ virtual iter_type do_get(
 
 В противном случае спецификация преобразования имеет значение `ld`.
 
-Формат целочисленного поля ввода дополнительно определяется [аспектом языкового стандарта](../standard-library/locale-class.md#facet_class) , `fac` возвращаемым вызовом [use_facet](../standard-library/locale-functions.md#use_facet) `<` [numpunct](../standard-library/numpunct-class.md) `<Elem>(iosbase.` [ios_base:: getloc](../standard-library/ios-base-class.md#getloc) `())` . В частности, внесены следующие изменения.
+Формат целочисленного поля ввода дополнительно определяется [аспектом языкового стандарта](../standard-library/locale-class.md#facet_class) , `fac` возвращаемым вызовом [use_facet](../standard-library/locale-functions.md#use_facet) `<` [numpunct](../standard-library/numpunct-class.md) `<Elem>(iosbase.` [ios_base:: getloc](../standard-library/ios-base-class.md#getloc) `())` . В частности:
 
 `fac.`[numpunct:: GROUPING](../standard-library/numpunct-class.md#grouping) `()` Определяет, как группируются цифры слева от любой десятичной запятой
 
@@ -329,7 +330,7 @@ virtual iter_type do_get(
 
 См. пример для [get](#get), где виртуальная функция-член вызывается из `do_get`.
 
-## <a name="num_getget"></a><a name="get"></a>num_get:: Get
+## <a name="num_getget"></a><a name="get"></a> num_get:: Get
 
 Извлекает числовое или логическое значение из последовательности символов.
 
@@ -433,7 +434,7 @@ iter_type get(
 
 Итератор после чтения значения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Все функции элементов возвращают [do_get](#do_get) `( first, last, iosbase, state, val)` .
 
@@ -449,7 +450,7 @@ iter_type get(
 
 - В противном случае спецификация преобразования имеет значение `ld`.
 
-Формат целочисленного поля ввода дополнительно определяется [аспектом языкового стандарта](../standard-library/locale-class.md#facet_class) , `fac` возвращаемым вызовом [use_facet](../standard-library/locale-functions.md#use_facet) `<` [`numpunct`](../standard-library/numpunct-class.md) `<Elem>(iosbase.` [getloc](../standard-library/ios-base-class.md#getloc) `())` . В частности, внесены следующие изменения.
+Формат целочисленного поля ввода дополнительно определяется [аспектом языкового стандарта](../standard-library/locale-class.md#facet_class) , `fac` возвращаемым вызовом [use_facet](../standard-library/locale-functions.md#use_facet) `<` [`numpunct`](../standard-library/numpunct-class.md) `<Elem>(iosbase.` [getloc](../standard-library/ios-base-class.md#getloc) `())` . В частности:
 
 - `fac.`[группирование](../standard-library/numpunct-class.md#grouping) определяет, как группируются цифры слева от любой десятичной запятой.
 
@@ -551,7 +552,7 @@ int main( )
 }
 ```
 
-## <a name="num_getiter_type"></a><a name="iter_type"></a>num_get:: iter_type
+## <a name="num_getiter_type"></a><a name="iter_type"></a> num_get:: iter_type
 
 Тип, который описывает итератор ввода.
 
@@ -559,11 +560,11 @@ int main( )
 typedef InputIterator iter_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом для параметра шаблона `InputIterator`.
 
-## <a name="num_getnum_get"></a><a name="num_get"></a>num_get:: num_get
+## <a name="num_getnum_get"></a><a name="num_get"></a> num_get:: num_get
 
 Конструктор для объектов типа `num_get`, используемых для извлечения числовых значений из последовательностей.
 
@@ -576,7 +577,7 @@ explicit num_get(size_t refs = 0);
 *ReFS*\
 Целочисленное значение, используемое для указания типа управления памятью для объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возможные значения для параметра *ReFS* и их значимости:
 
@@ -584,13 +585,13 @@ explicit num_get(size_t refs = 0);
 
 - 1: время существования объекта должно управляться вручную.
 
-- \>1: эти значения не определены.
+- \> 1: эти значения не определены.
 
 Прямые примеры привести нельзя, так как деструктор защищен.
 
 Конструктор инициализирует свой базовый объект с `locale::` [аспектом](../standard-library/locale-class.md#facet_class) `(refs)` .
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [\<locale>](../standard-library/locale.md)\
 [Класс аспекта](../standard-library/locale-class.md#facet_class)\

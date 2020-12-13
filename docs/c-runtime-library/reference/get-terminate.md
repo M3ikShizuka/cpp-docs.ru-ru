@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _get_terminate'
 title: _get_terminate
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - get_terminate function
 - _get_terminate function
 ms.assetid: c8f168c4-0ad5-4832-a522-dd1ef383c208
-ms.openlocfilehash: 2ee68506437cb1c5b76cac05d674527095055055
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 958ecb51620497c459b0505431036d5e9d546862
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920414"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338978"
 ---
 # <a name="_get_terminate"></a>_get_terminate
 
@@ -51,7 +52,7 @@ terminate_function _get_terminate( void );
 
 Возвращает указатель на функцию, зарегистрированную функцией [set_terminate](set-terminate-crt.md). Если функция не задана, возвращаемое значение может использоваться для восстановления поведения по умолчанию; Это значение может быть **равно NULL**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -65,7 +66,7 @@ terminate_function _get_terminate( void );
 
 ## <a name="see-also"></a>См. также раздел
 
-[Процедуры обработки исключений](../../c-runtime-library/exception-handling-routines.md)<br/>
+[Подпрограммы обработки исключений](../../c-runtime-library/exception-handling-routines.md)<br/>
 [рвал](abort.md)<br/>
 [set_unexpected](set-unexpected-crt.md)<br/>
 [заканчива](terminate-crt.md)<br/>

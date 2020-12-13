@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l'
 title: _stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l
 ms.date: 4/2/2020
 api_name:
@@ -66,12 +67,12 @@ helpviewer_keywords:
 - mbsicmp_l function
 - _strcmpi function
 ms.assetid: 0e1ee515-0d75-435a-a445-8875d4669b50
-ms.openlocfilehash: 786c2bd2738bb82b3edac5c811ccfd3f9f8bc854
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 07ec1b2f53ae299c1c9622422cdf22e7f07ad330
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920011"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338878"
 ---
 # <a name="_stricmp-_wcsicmp-_mbsicmp-_stricmp_l-_wcsicmp_l-_mbsicmp_l"></a>_stricmp, _wcsicmp, _mbsicmp, _stricmp_l, _wcsicmp_l, _mbsicmp_l
 
@@ -130,9 +131,9 @@ int _mbsicmp_l(
 |0|*строка1* совпадает с *строка2*|
 |> 0|*строка1* больше, чем *строка2*|
 
-При возникновении ошибки **_mbsicmp** возвращает **_NLSCMPERROR**, которая определена в \<> String. h> \<и Mbstring. h.
+При возникновении ошибки **_mbsicmp** возвращает **_NLSCMPERROR**, которая определена в \<string.h> и \<mbstring.h> .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_stricmp** по порядковому номеру сравнивает символы *строка1* и *строка2* после преобразования каждого символа в нижний регистр и возвращает значение, указывающее их связь. **_stricmp** отличается от **_stricoll** тем, что сравнение **_stricmp** влияет только на **LC_CTYPE**, которое определяет, какие символы являются прописными и строчными. Функция **_stricoll** сравнивает строки в соответствии с категориями **LC_CTYPE** и **LC_COLLATE** языкового стандарта, которые включают как регистр, так и порядок сортировки. Дополнительные сведения о категории **LC_COLLATE** см. в статье категории [setlocale](setlocale-wsetlocale.md) и [языкового стандарта](../../c-runtime-library/locale-categories.md). Версии этих функций без суффикса **_l** используют текущий языковой стандарт для поведения, зависящего от языкового стандарта. Версии с суффиксом идентичны за исключением того, что вместо этого они используют переданный языковой стандарт. Если языковой стандарт не задан, используется языковой стандарт C. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
@@ -145,9 +146,9 @@ int _mbsicmp_l(
 
 Чтобы продемонстрировать, когда преобразование регистра **_stricmp** влияет на результат сравнения, предположим, что у вас есть две строки: джонстон и JOHN_HENRY. Строка JOHN_HENRY будет считаться меньше JOHNSTON, так как "_" имеет меньшее значение ASCII, чем s в нижнем регистре. На самом деле любой символ, имеющий значение ASCII в диапазоне от 91 до 96, считается меньше любой буквы.
 
-Если вместо **_stricmp**используется функция [strcmp](strcmp-wcscmp-mbscmp.md) , JOHN_HENRY будет больше Джонстон.
+Если вместо **_stricmp** используется функция [strcmp](strcmp-wcscmp-mbscmp.md) , JOHN_HENRY будет больше Джонстон.
 
-**_wcsicmp** и **_mbsicmp** — это версии **_stricmp**для расширенных символов и многобайтовых символов. Аргументы и возвращаемое значение **_wcsicmp** являются строками расширенных символов; **_mbsicmp** являются строками многобайтовых символов. **_mbsicmp** распознает последовательности многобайтовых символов в соответствии с текущей многобайтовой кодовой страницей и возвращает **_NLSCMPERROR** об ошибке. Дополнительные сведения см. в разделе [Кодовые страницы](../../c-runtime-library/code-pages.md). В остальном эти три функции ведут себя идентично.
+**_wcsicmp** и **_mbsicmp** — это версии **_stricmp** для расширенных символов и многобайтовых символов. Аргументы и возвращаемое значение **_wcsicmp** являются строками расширенных символов; **_mbsicmp** являются строками многобайтовых символов. **_mbsicmp** распознает последовательности многобайтовых символов в соответствии с текущей многобайтовой кодовой страницей и возвращает **_NLSCMPERROR** об ошибке. Дополнительные сведения см. в разделе [Кодовые страницы](../../c-runtime-library/code-pages.md). В остальном эти три функции ведут себя идентично.
 
 поведение **_wcsicmp** и **wcscmp** идентично, за исключением того, что **wcscmp** не преобразует свои аргументы в нижний регистр перед их сравнением. поведение **_mbsicmp** и **_mbscmp** идентично, за исключением того, что **_mbscmp** не преобразует свои аргументы в нижний регистр перед их сравнением.
 
@@ -244,7 +245,7 @@ Compare strings:
 [memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
 [_memicmp, _memicmp_l](memicmp-memicmp-l.md)<br/>
 [strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
-[strcoll Functions](../../c-runtime-library/strcoll-functions.md)<br/>
+[Функции strcoll](../../c-runtime-library/strcoll-functions.md)<br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
 [_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
 [strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>

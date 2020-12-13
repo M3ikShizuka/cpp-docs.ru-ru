@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: numpunct_byname классе'
 title: Класс numpunct_byname
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - numpunct_byname class
 ms.assetid: 18412924-e085-4771-b5e9-7a200cbdd7c0
-ms.openlocfilehash: da9259df8c527e44a4adea3a53be31b3c3ffc10b
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: e4e6352f9f65b2a726acf3f8f5f8ede9bffe54f9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72687608"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338036"
 ---
 # <a name="numpunct_byname-class"></a>Класс numpunct_byname
 
@@ -37,16 +38,16 @@ protected:
 };
 ```
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
-Его поведение определяется [именованным](../standard-library/locale-class.md#name) языковым стандартом `_Locname`. Конструктор инициализирует свой базовый объект с [numpunct](../standard-library/numpunct-class.md#numpunct)\<CharType>( `_Refs`).
+Его поведение определяется [с помощью именованного](../standard-library/locale-class.md#name) языкового стандарта `_Locname` . Конструктор инициализирует свой базовый объект с помощью [numpunct](../standard-library/numpunct-class.md#numpunct) \<CharType> ( `_Refs` ).
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<locale>
+**Заголовок:**\<locale>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Потокобезопасность в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)

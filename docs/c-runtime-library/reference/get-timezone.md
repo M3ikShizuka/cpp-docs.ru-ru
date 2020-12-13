@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _get_timezone'
 title: _get_timezone
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - get_timezone function
 - _get_timezone function
 ms.assetid: 30ab0838-0ae9-4a2f-bfe6-a49ee443b21e
-ms.openlocfilehash: 28838825ab7a15f312f5f75a8ad9166926979690
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 9fb42603d0b7d63cbbb18c4904c221cd2edeb0e0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918500"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338967"
 ---
 # <a name="_get_timezone"></a>_get_timezone
 
@@ -50,14 +51,14 @@ error_t _get_timezone(
 
 ### <a name="parameters"></a>Параметры
 
-*несколько*<br/>
+*секунд*<br/>
 Разница в секундах между временем в формате UTC и местным временем.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Нуль в случае успеха или **значение** пересчета при возникновении ошибки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_get_timezone** извлекает разность в секундах между временем UTC и местным временем в виде целого числа. Значение по умолчанию — 28800 секунд (тихоокеанское время, на 8 часов отстающее от UTC).
 
@@ -76,7 +77,7 @@ error_t _get_timezone(
 ## <a name="see-also"></a>См. также раздел
 
 [Операции управления временем](../../c-runtime-library/time-management.md)<br/>
-[errno, _doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>
+[errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)<br/>
 [_get_daylight](get-daylight.md)<br/>
 [_get_dstbias](get-dstbias.md)<br/>
 [_get_tzname](get-tzname.md)<br/>

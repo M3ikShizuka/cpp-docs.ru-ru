@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: &lt; New&gt;'
 title: '&lt;новую&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - new header
 ms.assetid: 218e2a15-34e8-4ef3-9122-1e90eccf8559
-ms.openlocfilehash: 0fe2d0e57c0746f25187028b85157d66ee736ca4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: c99c036a7b4065e207bfe9ad71eb86e6d5f01d0f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836430"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338147"
 ---
 # <a name="ltnewgt"></a>&lt;новую&gt;
 
@@ -23,7 +24,7 @@ ms.locfileid: "88836430"
 
 **Пространство имен:** std
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Некоторые функции, объявленные в этом заголовке, можно заменить. Данная реализация предоставляет версию по умолчанию, поведение которой описано в этом документе. Однако программа может определить функцию с той же самой сигнатурой, чтобы заменить версию по умолчанию во время компоновки. Версия, на которую производится замена, должна удовлетворять требованиям, описанным в этом документе.
 

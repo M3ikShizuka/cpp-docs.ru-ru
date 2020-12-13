@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: WeakRef Class'
 title: Класс WeakRef
 ms.date: 10/03/2018
 ms.topic: reference
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - Microsoft::WRL::WeakRef::operator& operator
 - Microsoft::WRL::WeakRef::WeakRef, constructor
 ms.assetid: 572be703-c641-496c-8af5-ad6164670ba1
-ms.openlocfilehash: 715a823784aaa75f9abe349ef0a7ddc9e5d607d1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9c1c3edf7589dfd08e0ebab5389d2ca108d8e73c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218355"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339414"
 ---
 # <a name="weakref-class"></a>Класс WeakRef
 
@@ -36,11 +37,11 @@ ms.locfileid: "87218355"
 class WeakRef : public ComPtr<IWeakReference>;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Конструктор WeakRef::WeakRef](#weakref)|Инициализирует новый экземпляр класса `WeakRef`.|
 |[Деструктор WeakRef::~WeakRef](#tilde-weakref)|Выполняет деинициализацию текущего экземпляра `WeakRef` класса.|
@@ -59,7 +60,7 @@ class WeakRef : public ComPtr<IWeakReference>;
 |----------|-----------------|
 |[Оператор WeakRef::operator&](#operator-ampersand-operator)|Возвращает `ComPtrRef` объект, представляющий текущий `WeakRef` объект.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `WeakRef`Объект поддерживает *строгую ссылку*, которая связана с объектом и может быть допустимой или недопустимой. `As()` `AsIID()` Чтобы получить строгую ссылку, вызовите метод или. Когда строгая ссылка допустима, возможно обращение к связанному объекту. Если строгая ссылка является недопустимой ( **`nullptr`** ), связанный объект недоступен.
 
@@ -105,7 +106,7 @@ if (strongRef == nullptr)
 
 **Пространство имен:** Microsoft::WRL
 
-## <a name="weakrefweakref-destructor"></a><a name="tilde-weakref"></a>Деструктор WeakRef:: ~ WeakRef
+## <a name="weakrefweakref-destructor"></a><a name="tilde-weakref"></a> Деструктор WeakRef:: ~ WeakRef
 
 Выполняет деинициализацию текущего экземпляра `WeakRef` класса.
 
@@ -113,7 +114,7 @@ if (strongRef == nullptr)
 ~WeakRef();
 ```
 
-## <a name="weakrefas-method"></a><a name="as"></a>Метод WeakRef:: AS
+## <a name="weakrefas-method"></a><a name="as"></a> Метод WeakRef:: AS
 
 Задает указанный `ComPtr` параметр указателя для представления указанного интерфейса.
 
@@ -145,7 +146,7 @@ HRESULT As(
 
 - S_OK, если эта операция завершилась с ошибкой, но текущий `WeakRef` объект не является производным от параметра *U*. Параметр *ptr* имеет значение **`nullptr`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если параметр *U* имеет значение `IWeakReference` или не является производным от, генерируется ошибка `IInspectable` .
 
@@ -153,7 +154,7 @@ HRESULT As(
 
 Начиная с пакета SDK для Windows 10, этот метод не задает `WeakRef` для экземпляра значение **`nullptr`** , если не удалось получить слабую ссылку, поэтому следует избегать проверки ошибок, которые проверяют значение `WeakRef` для **`nullptr`** . Вместо этого проверьте *ptr* для **`nullptr`** .
 
-## <a name="weakrefasiid-method"></a><a name="asiid"></a>Метод WeakRef:: AsIID
+## <a name="weakrefasiid-method"></a><a name="asiid"></a> Метод WeakRef:: AsIID
 
 Задает указанный `ComPtr` параметр указателя для представления УКАЗАННОГО идентификатора интерфейса.
 
@@ -180,7 +181,7 @@ HRESULT AsIID(
 
 - S_OK, если эта операция выполнена, но текущий `WeakRef` объект не является производным от параметра *riid*. Параметр *ptr* имеет значение **`nullptr`** . (Дополнительные сведения см. в разделе "Примечания".)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если параметр *riid* не является производным от, генерируется ошибка `IInspectable` . Эта ошибка заменяет возвращаемое значение.
 
@@ -188,7 +189,7 @@ HRESULT AsIID(
 
 Начиная с пакета SDK для Windows 10, этот метод не задает `WeakRef` для экземпляра значение **`nullptr`** , если не удалось получить слабую ссылку, поэтому следует избегать проверки ошибок, которые проверяют значение `WeakRef` для **`nullptr`** . Вместо этого проверьте *ptr* для **`nullptr`** .
 
-## <a name="weakrefcopyto-method"></a><a name="copyto"></a>Метод WeakRef:: CopyTo
+## <a name="weakrefcopyto-method"></a><a name="copyto"></a> Метод WeakRef:: CopyTo
 
 Присваивает указатель на интерфейс (при его наличии) указанной переменной указателя.
 
@@ -223,7 +224,7 @@ HRESULT CopyTo(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, описывающее тип сбоя. Дополнительные сведения см. в разделе **Примечания**.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращаемое значение S_OK означает, что эта операция завершилась успешно, но не указывает, была ли слабая ссылка разрешена в строгую ссылку. Если возвращается S_OK, проверьте, является ли параметр *p* строгой ссылкой; то есть параметр *p* не равен **`nullptr`** .
 
@@ -241,11 +242,11 @@ Details::ComPtrRef<WeakRef> operator&() throw()
 
 `ComPtrRef`Объект, представляющий текущий `WeakRef` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это внутренний вспомогательный оператор, который не предназначен для использования в коде.
 
-## <a name="weakrefweakref-constructor"></a><a name="weakref"></a>Конструктор WeakRef:: WeakRef
+## <a name="weakrefweakref-constructor"></a><a name="weakref"></a> Конструктор WeakRef:: WeakRef
 
 Инициализирует новый экземпляр класса `WeakRef`.
 
@@ -277,6 +278,6 @@ WeakRef(
 *ptr*<br/>
 Указатель, ссылка или rvalue-ссылка на существующий объект, который инициализирует текущий `WeakRef` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый конструктор инициализирует пустой `WeakRef` объект. Второй конструктор инициализирует `WeakRef` объект из указателя на `IWeakReference` интерфейс. Третий конструктор инициализирует `WeakRef` объект из ссылки на `ComPtr<IWeakReference>` объект. Четвертый и пятый конструкторы инициализируют `WeakRef` объект из другого `WeakRef` объекта.

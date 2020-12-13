@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _get_printf_count_output'
 title: _get_printf_count_output
 ms.date: 11/04/2016
 api_name:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - get_printf_count_output function
 - _get_printf_count_output function
 ms.assetid: 850f9f33-8319-433e-98d8-6a694200d994
-ms.openlocfilehash: 15b37ac759821ad56cc5c03c9b98719d8f0cc19a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: fe5ee728b7bc8400cd93ec4e93131496d59334c5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70955712"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97339008"
 ---
 # <a name="_get_printf_count_output"></a>_get_printf_count_output
 
@@ -48,7 +49,7 @@ int _get_printf_count_output();
 
 Не равно нулю, если **% n** поддерживается, 0, если **% n** не поддерживается.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Если **% n** не поддерживается (по умолчанию), при обнаружении **% n** в строке формата любой из функций **printf** вызовет обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если поддержка **% n** включена (см. [_set_printf_count_output](set-printf-count-output.md)), то **% n** будет работать, как описано в разделе [синтаксис спецификации формата: функции printf и wprintf](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
@@ -58,12 +59,12 @@ int _get_printf_count_output();
 |-------------|---------------------|
 |**_get_printf_count_output**|\<stdio.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
 См. пример для [_set_printf_count_output](set-printf-count-output.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [_set_printf_count_output](set-printf-count-output.md)<br/>

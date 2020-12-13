@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: normal_distribution классе'
 title: Класс normal_distribution
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::normal_distribution [C++], param_type
 - std::normal_distribution [C++], param_type
 ms.assetid: bf92cdbd-bc72-4d4a-b588-173d748f0d7d
-ms.openlocfilehash: 0fed268b6c3f318b3e308f90e94862fdf969e3fa
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: eb27debf104df3e33a324a0297624769af4860b3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836404"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97338132"
 ---
 # <a name="normal_distribution-class"></a>Класс normal_distribution
 
@@ -74,7 +75,7 @@ public:
 *реалтипе*\
 Тип результата операции с плавающей запятой, по умолчанию — **`double`** . Возможные типы см. в разделе [\<random>](../standard-library/random.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса описывает распределение, которое создает значения указанного пользователем целочисленного типа или тип **`double`** , если он не указан, распределен в соответствии с нормальным распределением. В следующей таблице представлены ссылки на статьи об отдельных членах.
 
@@ -205,7 +206,7 @@ explicit normal_distribution(const param_type& parm);
 *ParM*\
 Структура параметров, используемая для формирования распределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительное условие:**`0.0 < stddev`
 
@@ -240,7 +241,7 @@ struct param_type {
 *Правильно*\
 Структура `param_type`, используемая для сравнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительное условие:**`0.0 < stddev`
 
