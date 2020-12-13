@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _dupenv_s_dbg, _wdupenv_s_dbg'
 title: _dupenv_s_dbg, _wdupenv_s_dbg
 ms.date: 11/04/2016
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - wdupenv_s_dbg function
 - _dupenv_s_dbg function
 ms.assetid: e3d81148-e24e-46d0-a21d-fd87b5e6256c
-ms.openlocfilehash: 6c61986184f93c6cf6e83b33f77dce2bd017cfae
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: a12e5adc55cd69b8336b3f9f50d982f80ec1b070
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70937681"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332899"
 ---
 # <a name="_dupenv_s_dbg-_wdupenv_s_dbg"></a>_dupenv_s_dbg, _wdupenv_s_dbg
 
@@ -66,7 +67,7 @@ errno_t _wdupenv_s_dbg(
 
 ### <a name="parameters"></a>Параметры
 
-*buffer*<br/>
+*двойной*<br/>
 Буфер для хранения значения переменной.
 
 *numberOfElements*<br/>
@@ -81,7 +82,7 @@ errno_t _wdupenv_s_dbg(
 *filename*<br/>
 Указатель на имя исходного файла или **значение NULL**.
 
-*linenumber*<br/>
+*LineNumber*<br/>
 Номер строки в файле исходного кода или **значение NULL**.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -92,13 +93,13 @@ errno_t _wdupenv_s_dbg(
 
 Если эти функции не могут выделить достаточно памяти, они устанавливают для *buffer* **значение NULL** , а *numberOfElements* — на 0 и возвращают **еномем**.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Функции **_dupenv_s_dbg** и **_wdupenv_s_dbg** идентичны **_dupenv_s** и **_wdupenv_s** , за исключением того, что при определении **_DEBUG** эти функции используют отладочную версию [malloc](malloc.md), [_malloc_dbg](malloc-dbg.md), для выделения памяти для значения переменной среды. Сведения о функциях отладки **_malloc_dbg**см. в разделе [_malloc_dbg](malloc-dbg.md).
+Функции **_dupenv_s_dbg** и **_wdupenv_s_dbg** идентичны **_dupenv_s** и **_wdupenv_s** за исключением того, что при определении **_DEBUG** эти функции используют отладочную версию [malloc](malloc.md), [_malloc_dbg](malloc-dbg.md), чтобы выделить память для значения переменной среды. Сведения о возможностях отладки **_malloc_dbg** см. в разделе [_malloc_dbg](malloc-dbg.md).
 
-Как правило, явно вызывать эти функции не требуется. Вместо этого можно определить флаг **_CRTDBG_MAP_ALLOC**. Если определен **_CRTDBG_MAP_ALLOC** , вызовы методов **_dupenv_s** и **_wdupenv_s** пересопоставляются с **_dupenv_s_dbg** и **_wdupenv_s_dbg**соответственно, а *блокктипе* устанавливается в **_NORMAL_BLOCK**. Таким образом, не нужно явно вызывать эти функции, если не нужно помечать блоки кучи как **_CLIENT_BLOCK**. Дополнительные сведения о типах блоков см. в разделе [Типы блоков в отладочной куче](/visualstudio/debugger/crt-debug-heap-details).
+Как правило, явно вызывать эти функции не требуется. Вместо этого можно определить флаг **_CRTDBG_MAP_ALLOC**. Если определено **_CRTDBG_MAP_ALLOC** , вызовы **_dupenv_s** и **_wdupenv_s** пересопоставляются с **_dupenv_s_dbg** и **_wdupenv_s_dbg** соответственно, с *блокктипе* , для которого задано значение **_NORMAL_BLOCK**. Таким образом, не нужно явно вызывать эти функции, если не нужно помечать блоки кучи как **_CLIENT_BLOCK**. Дополнительные сведения о типах блоков см. в разделе [Типы блоков в отладочной куче](/visualstudio/debugger/crt-debug-heap-details).
 
-### <a name="generic-text-routine-mappings"></a>Сопоставления подпрограмм обработки обычного текста
+### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
 |Подпрограмма TCHAR.H|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -111,7 +112,7 @@ errno_t _wdupenv_s_dbg(
 |**_dupenv_s_dbg**|\<crtdbg.h>|
 |**_wdupenv_s_dbg**|\<crtdbg.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -142,7 +143,7 @@ pathext = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.pl
 nonexistentvariable = (null)
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Управление процессами и средой](../../c-runtime-library/process-and-environment-control.md)<br/>
 [Константы среды](../../c-runtime-library/environmental-constants.md)<br/>

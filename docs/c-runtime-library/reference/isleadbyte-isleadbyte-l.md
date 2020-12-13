@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: ислеадбите, _isleadbyte_l'
 title: isleadbyte, _isleadbyte_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - istleadbyte function
 - isleadbyte function
 ms.assetid: 3b2bcf09-d82b-4803-9e80-59d04942802a
-ms.openlocfilehash: 1d2202bd1ca59ee42287c398da429df132e24fcb
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 544adda1b794db6a003e3ae7d51b15456574f875
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234085"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332654"
 ---
 # <a name="isleadbyte-_isleadbyte_l"></a>isleadbyte, _isleadbyte_l
 
@@ -57,14 +58,14 @@ int _isleadbyte_l( int c );
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Проверяемое целое число.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 **ислеадбите** возвращает ненулевое значение, если аргумент удовлетворяет условию теста, или 0, если нет. В языковых стандартах "C" и в национальных кодировках однобайтовых кодировок (SBCS) **ислеадбите** всегда возвращает 0.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Макрос **ислеадбите** возвращает ненулевое значение, если его аргумент является первым байтом многобайтового символа. **ислеадбите** дает значимый результат для любого целочисленного аргумента от-1 (**EOF**) до **UCHAR_MAX** (0xFF) включительно.
 
@@ -89,7 +90,7 @@ int _isleadbyte_l( int c );
 
 Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Классификация байтов](../../c-runtime-library/byte-classification.md)<br/>
 [Локаль](../../c-runtime-library/locale.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о классе CObject
 title: CObject, класс
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - CObject [MFC], IsSerializable
 - CObject [MFC], Serialize
 ms.assetid: 95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a
-ms.openlocfilehash: ce745e0717e36a3c9acb5323d04545c59750add7
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bd093307f159a6d7abe83d9fdd9ad6898a19e4ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222905"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331466"
 ---
 # <a name="cobject-class"></a>CObject, класс
 
@@ -37,17 +38,17 @@ ms.locfileid: "87222905"
 class AFX_NOVTABLE CObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="protected-constructors"></a>Защищенные конструкторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[CObject:: CObject](#cobject)|Конструктор по умолчанию.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[CObject:: AssertValid](#assertvalid)|Проверяет целостность этого объекта.|
 |[CObject::D УМП](#dump)|Создает диагностический дамп этого объекта.|
@@ -58,14 +59,14 @@ class AFX_NOVTABLE CObject
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Удаление CObject:: operator](#operator_delete)|Специальный **`delete`** оператор.|
 |[CObject:: оператор New](#operator_new)|Специальный **`new`** оператор.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Он выступает в качестве корня не только для классов библиотек, таких как `CFile` и `CObList` , но также и для классов, которые вы пишете. `CObject`предоставляет базовые службы, включая
+Он выступает в качестве корня не только для классов библиотек, таких как `CFile` и `CObList` , но также и для классов, которые вы пишете. `CObject` предоставляет базовые службы, включая
 
 - Поддержка сериализации
 
@@ -93,7 +94,7 @@ class AFX_NOVTABLE CObject
 
 **Заголовок:** AFX. h
 
-## <a name="cobjectassertvalid"></a><a name="assertvalid"></a>CObject:: AssertValid
+## <a name="cobjectassertvalid"></a><a name="assertvalid"></a> CObject:: AssertValid
 
 Проверяет целостность этого объекта.
 
@@ -101,9 +102,9 @@ class AFX_NOVTABLE CObject
 virtual void AssertValid() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`AssertValid`выполняет проверку достоверности этого объекта, проверяя его внутреннее состояние. В отладочной версии библиотеки `AssertValid` может утверждать и, таким же, завершать программу сообщением, в котором отображается номер строки и имя файла, в котором произошел сбой утверждения.
+`AssertValid` выполняет проверку достоверности этого объекта, проверяя его внутреннее состояние. В отладочной версии библиотеки `AssertValid` может утверждать и, таким же, завершать программу сообщением, в котором отображается номер строки и имя файла, в котором произошел сбой утверждения.
 
 При написании собственного класса следует переопределить `AssertValid` функцию, чтобы предоставить службы диагностики для себя и других пользователей класса. Переопределение `AssertValid` обычно вызывает `AssertValid` функцию своего базового класса перед проверкой элементов данных, уникальных для производного класса.
 
@@ -119,7 +120,7 @@ virtual void AssertValid() const;
 
 Другой пример см. в разделе [афксдофораллобжектс](diagnostic-services.md#afxdoforallobjects).
 
-## <a name="cobjectcobject"></a><a name="cobject"></a>CObject:: CObject
+## <a name="cobjectcobject"></a><a name="cobject"></a> CObject:: CObject
 
 Эти функции являются стандартными `CObject` конструкторами.
 
@@ -131,9 +132,9 @@ CObject(const CObject& objectSrc);
 ### <a name="parameters"></a>Параметры
 
 *обжектсрк*<br/>
-Ссылка на другую`CObject`
+Ссылка на другую `CObject`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Версия по умолчанию автоматически вызывается конструктором производного класса.
 
@@ -147,7 +148,7 @@ CObject(const CObject& objectSrc);
 
 [!code-cpp[NVC_MFCCObjectSample#8](../../mfc/codesnippet/cpp/cobject-class_2.cpp)]
 
-## <a name="cobjectdump"></a><a name="dump"></a>CObject::D УМП
+## <a name="cobjectdump"></a><a name="dump"></a> CObject::D УМП
 
 Выводит содержимое объекта в объект [CDumpContext](../../mfc/reference/cdumpcontext-class.md) .
 
@@ -157,23 +158,23 @@ virtual void Dump(CDumpContext& dc) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Постоянный*<br/>
+*dc*<br/>
 Контекст диагностического дампа для дампа обычно `afxDump` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-При написании собственного класса следует переопределить `Dump` функцию, чтобы предоставить службы диагностики для себя и других пользователей класса. `Dump` `Dump` Перед печатью элементов данных, уникальных для производного класса, переопределение обычно вызывает функцию своего базового класса. `CObject::Dump`Выводит имя класса, если в классе используется `IMPLEMENT_DYNAMIC` макрос или IMPLEMENT_SERIAL.
+При написании собственного класса следует переопределить `Dump` функцию, чтобы предоставить службы диагностики для себя и других пользователей класса. `Dump` `Dump` Перед печатью элементов данных, уникальных для производного класса, переопределение обычно вызывает функцию своего базового класса. `CObject::Dump` Выводит имя класса, если в классе используется `IMPLEMENT_DYNAMIC` макрос или IMPLEMENT_SERIAL.
 
 > [!NOTE]
 > `Dump`Функция не должна печатать символ новой строки в конце выходных данных.
 
-`Dump`вызовы имеют смысл только в отладочной версии библиотека Microsoft Foundation Class. Для условной компиляции следует заключать в скобки вызовы, объявления функций и реализации функций с помощью **#ifdef _DEBUGных** /  `#endif` инструкций.
+`Dump` вызовы имеют смысл только в отладочной версии библиотека Microsoft Foundation Class. Для условной компиляции следует заключать в скобки вызовы, объявления функций и реализации функций с помощью **#ifdef _DEBUGных** /  `#endif` инструкций.
 
 Поскольку `Dump` является **`const`** функцией, вы не имеете права изменять состояние объекта во время создания дампа.
 
 [Оператор вставки CDumpContext (<<)](../../mfc/reference/cdumpcontext-class.md#operator_lt_lt) вызывает `Dump` при `CObject` вставке указателя.
 
-`Dump`разрешает только "ациклический" дамп объектов. Можно создать дамп списка объектов, например, но если один из объектов является самим списком, то в конечном итоге стек будет переполнен.
+`Dump` разрешает только "ациклический" дамп объектов. Можно создать дамп списка объектов, например, но если один из объектов является самим списком, то в конечном итоге стек будет переполнен.
 
 ### <a name="example"></a>Пример
 
@@ -181,7 +182,7 @@ virtual void Dump(CDumpContext& dc) const;
 
 [!code-cpp[NVC_MFCCObjectSample#9](../../mfc/codesnippet/cpp/cobject-class_3.cpp)]
 
-## <a name="cobjectgetruntimeclass"></a><a name="getruntimeclass"></a>CObject:: Жетрунтимекласс
+## <a name="cobjectgetruntimeclass"></a><a name="getruntimeclass"></a> CObject:: Жетрунтимекласс
 
 Возвращает `CRuntimeClass` структуру, соответствующую классу данного объекта.
 
@@ -193,7 +194,7 @@ virtual CRuntimeClass* GetRuntimeClass() const;
 
 Указатель на структуру [крунтимекласс](../../mfc/reference/cruntimeclass-structure.md) , соответствующую классу данного объекта; никогда не **имеет значения NULL**.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `CRuntimeClass`Для каждого `CObject` производного класса существует одна структура. Члены структуры выглядят следующим образом:
 
@@ -217,7 +218,7 @@ virtual CRuntimeClass* GetRuntimeClass() const;
 
 [!code-cpp[NVC_MFCCObjectSample#10](../../mfc/codesnippet/cpp/cobject-class_4.cpp)]
 
-## <a name="cobjectiskindof"></a><a name="iskindof"></a>CObject:: IsKindOf
+## <a name="cobjectiskindof"></a><a name="iskindof"></a> CObject:: IsKindOf
 
 Проверяет связь этого объекта с заданным классом.
 
@@ -234,7 +235,7 @@ BOOL IsKindOf(const CRuntimeClass* pClass) const;
 
 Ненулевое значение, если объект соответствует классу; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция проверяет *пкласс* , чтобы определить, является ли он объектом указанного класса или (2) является объектом класса, производного от указанного класса. Эта функция работает только для классов, объявленных с помощью макроса [DECLARE_DYNAMIC](run-time-object-model-services.md#declare_dynamic), [DECLARE_DYNCREATE](run-time-object-model-services.md#declare_dyncreate)или [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) .
 
@@ -246,7 +247,7 @@ BOOL IsKindOf(const CRuntimeClass* pClass) const;
 
 [!code-cpp[NVC_MFCCObjectSample#11](../../mfc/codesnippet/cpp/cobject-class_5.cpp)]
 
-## <a name="cobjectisserializable"></a><a name="isserializable"></a>CObject:: Serializable
+## <a name="cobjectisserializable"></a><a name="isserializable"></a> CObject:: Serializable
 
 Проверяет, подходит ли этот объект для сериализации.
 
@@ -258,7 +259,7 @@ BOOL IsSerializable() const;
 
 Ненулевое значение, если этот объект можно сериализовать; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Чтобы класс был сериализуемым, его объявление должно содержать макрос [DECLARE_SERIAL](run-time-object-model-services.md#declare_serial) , а реализация должна содержать макрос [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) .
 
@@ -271,7 +272,7 @@ BOOL IsSerializable() const;
 
 [!code-cpp[NVC_MFCCObjectSample#12](../../mfc/codesnippet/cpp/cobject-class_6.cpp)]
 
-## <a name="cobjectoperator-delete"></a><a name="operator_delete"></a>Удаление CObject:: operator
+## <a name="cobjectoperator-delete"></a><a name="operator_delete"></a> Удаление CObject:: operator
 
 Для версии выпуска библиотеки оператор **`delete`** освобождает память, выделенную оператором **`new`** .
 
@@ -288,7 +289,7 @@ void PASCAL operator delete(
     int nLine);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В отладочной версии оператор **`delete`** участвует в схеме мониторинга распределения, предназначенной для обнаружения утечек памяти.
 
@@ -308,7 +309,7 @@ void PASCAL operator delete(
 
 [!code-cpp[NVC_MFCCObjectSample#15](../../mfc/codesnippet/cpp/cobject-class_8.cpp)]
 
-## <a name="cobjectoperator-new"></a><a name="operator_new"></a>CObject:: оператор New
+## <a name="cobjectoperator-new"></a><a name="operator_new"></a> CObject:: оператор New
 
 Для окончательной версии библиотеки оператор **`new`** выполняет оптимальное выделение памяти подобным образом `malloc` .
 
@@ -322,7 +323,7 @@ void* PASCAL operator new(
     int nLine);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В отладочной версии оператор **`new`** участвует в схеме мониторинга распределения, предназначенной для обнаружения утечек памяти.
 
@@ -343,7 +344,7 @@ void* PASCAL operator new(
 
 [!code-cpp[NVC_MFCCObjectSample#16](../../mfc/codesnippet/cpp/cobject-class_9.h)]
 
-## <a name="cobjectserialize"></a><a name="serialize"></a>CObject:: Serialize
+## <a name="cobjectserialize"></a><a name="serialize"></a> CObject:: Serialize
 
 Считывает этот объект из архива или записывает в него.
 
@@ -353,10 +354,10 @@ virtual void Serialize(CArchive& ar);
 
 ### <a name="parameters"></a>Параметры
 
-*AR*<br/>
+*ar*<br/>
 `CArchive`Объект для сериализации в или из.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Необходимо переопределить `Serialize` для каждого класса, который предполагается сериализовать. Переопределенный `Serialize` метод должен сначала вызвать `Serialize` функцию своего базового класса.
 
@@ -364,7 +365,7 @@ virtual void Serialize(CArchive& ar);
 
 Используйте [CArchive:: Load](../../mfc/reference/carchive-class.md#isloading) или [CArchive::](../../mfc/reference/carchive-class.md#isstoring) , чтобы определить, загружается ли архив или сохраняется.
 
-`Serialize`вызывается методами [CArchive:: вызове ReadObject](../../mfc/reference/carchive-class.md#readobject) и [CArchive:: WriteObject](../../mfc/reference/carchive-class.md#writeobject). Эти функции связаны с `CArchive` оператором вставки ( **<\<**) and extraction operator ( **>>** ).
+`Serialize` вызывается методами [CArchive:: вызове ReadObject](../../mfc/reference/carchive-class.md#readobject) и [CArchive:: WriteObject](../../mfc/reference/carchive-class.md#writeobject). Эти функции связаны с `CArchive` оператором вставки ( **<\<**) and extraction operator ( **>>** ).
 
 Примеры сериализации см. в статье [сериализация объекта](../../mfc/serialization-serializing-an-object.md).
 
@@ -374,6 +375,6 @@ virtual void Serialize(CArchive& ar);
 
 [!code-cpp[NVC_MFCCObjectSample#13](../../mfc/codesnippet/cpp/cobject-class_10.cpp)]
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)

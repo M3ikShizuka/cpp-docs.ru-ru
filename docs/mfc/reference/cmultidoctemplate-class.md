@@ -1,5 +1,6 @@
 ---
-title: Класс CMultiDocTemplate
+description: 'Дополнительные сведения о: Кмултидоктемплате Class'
+title: Класс Кмултидоктемплате
 ms.date: 11/04/2016
 f1_keywords:
 - CMultiDocTemplate
@@ -8,14 +9,14 @@ f1_keywords:
 helpviewer_keywords:
 - CMultiDocTemplate [MFC], CMultiDocTemplate
 ms.assetid: 5b8aa328-e461-41d0-b388-00594535e119
-ms.openlocfilehash: af950d188c4e02a38a39ed3c672f0f8c4161bee8
-ms.sourcegitcommit: 8fd49f8ac20457710ceb5403ca46fc73cb3f95f8
+ms.openlocfilehash: 70b77c04fed41da3b5f025f6a600b9ecfd4bc89b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85737482"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331575"
 ---
-# <a name="cmultidoctemplate-class"></a>Класс CMultiDocTemplate
+# <a name="cmultidoctemplate-class"></a>Класс Кмултидоктемплате
 
 Определяет шаблон документа, реализующий многодокументный интерфейс (MDI).
 
@@ -25,7 +26,7 @@ ms.locfileid: "85737482"
 class CMultiDocTemplate : public CDocTemplate
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 Функции элементов для этого класса являются виртуальными. Документацию см. в разделе [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) и [от CCmdTarget](../../mfc/reference/ccmdtarget-class.md) .
 
@@ -35,7 +36,7 @@ class CMultiDocTemplate : public CDocTemplate
 |----------|-----------------|
 |[Кмултидоктемплате:: Кмултидоктемплате](#cmultidoctemplate)|Формирует объект `CMultiDocTemplate`.|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Приложение MDI использует главное окно фрейма в качестве рабочей области, в которой пользователь может открыть ноль или несколько окон фрейма документа, каждый из которых отображает документ. Более подробное описание интерфейса MDI см. в разделе *рекомендации по интерфейсу Windows для разработки программного обеспечения*.
 
@@ -69,7 +70,7 @@ class CMultiDocTemplate : public CDocTemplate
 
 **Заголовок:** afxwin.h
 
-## <a name="cmultidoctemplatecmultidoctemplate"></a><a name="cmultidoctemplate"></a>Кмултидоктемплате:: Кмултидоктемплате
+## <a name="cmultidoctemplatecmultidoctemplate"></a><a name="cmultidoctemplate"></a> Кмултидоктемплате:: Кмултидоктемплате
 
 Формирует объект `CMultiDocTemplate`.
 
@@ -109,7 +110,7 @@ END
 *пвиевкласс*<br/>
 Указывает на `CRuntimeClass` объект класса представления. Этот класс является производным от класса, `CView` который определяется для вывода документов.
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Комментарии
 
 Динамически выделяйте один `CMultiDocTemplate` объект для каждого типа документа, поддерживаемого приложением, и передайте каждое из них в `CWinApp::AddDocTemplate` `InitInstance` функцию члена класса приложения.
 
@@ -121,10 +122,10 @@ END
 
 [!code-cpp[NVC_MFCDocView#93](../../mfc/codesnippet/cpp/cmultidoctemplate-class_2.cpp)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Класс CDocTemplate](../../mfc/reference/cdoctemplate-class.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Класс CDocTemplate](../../mfc/reference/cdoctemplate-class.md)<br/>
-[Класс CSingleDocTemplate](../../mfc/reference/csingledoctemplate-class.md)<br/>
+[Класс Ксингледоктемплате](../../mfc/reference/csingledoctemplate-class.md)<br/>
 [Класс CWinApp](../../mfc/reference/cwinapp-class.md)

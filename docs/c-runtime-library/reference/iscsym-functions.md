@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: исксим, исксимф, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l'
 title: iscsym, iscsymf, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l
 ms.date: 11/04/2016
 api_name:
@@ -65,12 +66,12 @@ helpviewer_keywords:
 - iscsym function
 - iscsymf function
 ms.assetid: 944dfb99-f2b8-498c-9f55-dbcf370d0a2c
-ms.openlocfilehash: bc38e72818446a94a51a37b8df5c8c8582971b3f
-ms.sourcegitcommit: a6d63c07ab9ec251c48bc003ab2933cf01263f19
+ms.openlocfilehash: e6b979800caf404ee79f8913b0431b941acd20cb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74857766"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332693"
 ---
 # <a name="iscsym-iscsymf-__iscsym-__iswcsym-__iscsymf-__iswcsymf-_iscsym_l-_iswcsym_l-_iscsymf_l-_iswcsymf_l"></a>iscsym, iscsymf, __iscsym, __iswcsym, __iscsymf, __iswcsymf, _iscsym_l, _iswcsym_l, _iscsymf_l, _iswcsymf_l
 
@@ -121,24 +122,24 @@ int _iswcsymf_l(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Как **__iscsym** , так и **__iswcsym** возвращают ненулевое значение, если *c* — буква, символ подчеркивания или цифра. Как **__iscsymf** , так и **__iswcsymf** возвращают ненулевое значение, если *c* — буква или символ подчеркивания. Каждая из этих подпрограмм возвращает 0, если *c* не удовлетворяет условию теста. Версии этих функций с суффиксом **_l** идентичны за исключением того, что они используют переданный *языковой стандарт* вместо текущего языкового стандарта для поведения, зависящего от языкового стандарта. Дополнительные сведения см. в разделе [Locale](../../c-runtime-library/locale.md).
+Как **__iscsym** , так и **__iswcsym** возвращают ненулевое значение, если *c* — буква, символ подчеркивания или цифра. Как **__iscsymf** , так и **__iswcsymf** возвращают ненулевое значение, если *c* — буква или символ подчеркивания. Каждая из этих подпрограмм возвращает 0, если *c* не удовлетворяет условию теста. Версии этих функций с суффиксом **_l** идентичны за исключением того, что они используют переданный *языковой стандарт* вместо текущего языкового стандарта для поведения, зависящего от языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
 Эти подпрограммы реализуются в виде макросов за исключением случаев, когда определен макрос препроцессора _CTYPE_DISABLE_MACROS. При использовании версий этих подпрограмм, реализованных в виде макроса, аргументы могут вычисляться несколько раз. При использовании выражений со списками аргументов следует соблюдать осторожность.
 
-Для обеспечения обратной совместимости **исксим** и **исксимф** определяются как макросы только в том случае, если [ &#95; &#95;STDC&#95; ](../../preprocessor/predefined-macros.md) не определена или определена как 0. в противном случае они не определены.
+Для обеспечения обратной совместимости **исксим** и **исксимф** определяются как макросы только в том случае, если [&#95;&#95;STDC&#95;&#95;](../../preprocessor/predefined-macros.md) не определена или определена как 0. в противном случае они не определены.
 
 ## <a name="requirements"></a>Требования
 
 |Подпрограмма|Обязательный заголовок|
 |-------------|---------------------|
-|**исксим**, **исксимф**, **__iscsym**, **__iswcsym**, **__iscsymf**, **__iswcsymf**, **_iscsym_l**, **_iswcsym_l**, **_iscsymf_l**, **_iswcsymf_l**|C: \<ctype.h><br /><br /> C++: \<cctype> или \<ctype.h>|
+|**исксим**, **исксимф**, **__iscsym**, **__iswcsym**, **__iscsymf**, **__iswcsymf**, **_iscsym_l**, **_iswcsym_l**, **_iscsymf_l**, **_iswcsymf_l**|Ц \<ctype.h><br /><br /> C++: \<cctype> или \<ctype.h>|
 
-Подпрограммы **исксим**, **исксимф**, **__iscsym**, **__iswcsym**, **__iscsymf** **,** **__Iswcsymf**, _iscsym_l **, _iswcsym_l, _iscsymf_l**и **_iswcsymf_l** являются специфичными для Microsoft. Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
+Подпрограммы **исксим**, **исксимф**, **__iscsym**, **__iswcsym**, **__iscsymf** **,** **__Iswcsymf**, _iscsym_l **, _iswcsym_l, _iscsymf_l** и **_iswcsymf_l** являются специфичными для Microsoft.  Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Классификация символов](../../c-runtime-library/character-classification.md)<br/>
-[Языковой стандарт](../../c-runtime-library/locale.md)<br/>
-[Подпрограммы is, isw](../../c-runtime-library/is-isw-routines.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[является, подпрограммы isw](../../c-runtime-library/is-isw-routines.md)<br/>

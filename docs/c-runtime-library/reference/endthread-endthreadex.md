@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _endthread, _endthreadex'
 title: _endthread, _endthreadex
 ms.date: 4/2/2020
 api_name:
@@ -36,16 +37,16 @@ helpviewer_keywords:
 - _endthreadex function
 - threading [C++], terminating threads
 ms.assetid: 18a91f2f-659e-40b4-b266-ec12dcf2abf5
-ms.openlocfilehash: a3889adcc90bd62e766102b72aae68577915e55b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: ef74cac4cbe23a021ed8d796f92f2767695eb08e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915085"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332831"
 ---
 # <a name="_endthread-_endthreadex"></a>_endthread, _endthreadex
 
-Завершает поток; **_endthread** завершает поток, созданный **_beginthread** , и **_endthreadex** завершает поток, созданный **_beginthreadex**.
+Завершает поток; **_endthread** завершает поток, созданный **_beginthread** , и  **_endthreadex** завершает поток, созданный **_beginthreadex**.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -61,16 +62,16 @@ void _endthreadex(
 *retval*<br/>
 Код выхода потока.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Чтобы завершить поток, можно явно вызвать **_endthread** или **_endthreadex** . Однако **_endthread** или **_endthreadex** вызывается автоматически, когда поток возвращается из подпрограммы, передаваемой в качестве параметра в **_beginthread** или **_beginthreadex**. Завершение потока с вызовом **ендсреад** или **_endthreadex** помогает обеспечить правильное восстановление ресурсов, выделенных для потока.
 
 > [!NOTE]
 > Для исполняемого файла, связанного с Libcmt.lib, не следует вызывать функцию [ExitThread](/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitthread) API Win32. Это помешает системе времени выполнения освобождать выделенные ресурсы. **_endthread** и **_endthreadex** освободить выделенные ресурсы потока, а затем вызвать **ExitThread**.
 
-**_endthread** автоматически закрывает обработчик потока. (Это поведение отличается от API Win32 **ExitThread** .) Поэтому при использовании **_beginthread** и **_endthread**не следует явно закрывать обработчик потока, вызывая API-интерфейс Win32 [CloseHandle](/windows/win32/api/handleapi/nf-handleapi-closehandle) .
+**_endthread** автоматически закрывает обработчик потока. (Это поведение отличается от API Win32 **ExitThread** .) Поэтому при использовании **_beginthread** и **_endthread** не следует явно закрывать обработчик потока, вызывая API-интерфейс Win32 [CloseHandle](/windows/win32/api/handleapi/nf-handleapi-closehandle) .
 
-Как и API-интерфейс Win32 **ExitThread** , **_endthreadex** не закрывает обработчик потока. Поэтому при использовании **_beginthreadex** и **_endthreadex**необходимо закрыть обработчик потока, вызвав API-интерфейс Win32 **CloseHandle** .
+Как и API-интерфейс Win32 **ExitThread** , **_endthreadex** не закрывает обработчик потока. Поэтому при использовании **_beginthreadex** и **_endthreadex** необходимо закрыть обработчик потока, вызвав API-интерфейс Win32 **CloseHandle** .
 
 > [!NOTE]
 > **_endthread** и **_endthreadex** приводят к тому, что деструкторы C++ ожидают вызова в потоке.

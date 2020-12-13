@@ -1,5 +1,6 @@
 ---
-title: CmFCWindowsManagerДиалог Класс
+description: 'Дополнительные сведения о: Кмфквиндовсманажердиалог Class'
+title: Класс Кмфквиндовсманажердиалог
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCWindowsManagerDialog
@@ -8,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCWindowsManagerDialog [MFC], CMFCWindowsManagerDialog
 ms.assetid: 35b4b0db-33c4-4b22-94d8-5e3396341340
-ms.openlocfilehash: e3928c0d3ae4f607dceb99c0762277e8ea9ddbde
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 526cf731e049ffd267382b0c3895b5d29792dcb0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81319829"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331619"
 ---
-# <a name="cmfcwindowsmanagerdialog-class"></a>CmFCWindowsManagerДиалог Класс
+# <a name="cmfcwindowsmanagerdialog-class"></a>Класс Кмфквиндовсманажердиалог
 
-Объект `CMFCWindowsManagerDialog` позволяет пользователю управлять окнами mDI ребенка в приложении MDI.
+`CMFCWindowsManagerDialog`Объект позволяет пользователю управлять дочерними ОКНАМИ MDI в приложении MDI.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -25,23 +26,23 @@ ms.locfileid: "81319829"
 class CMFCWindowsManagerDialog : public CDialog
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMFCWindowsManagerДиалог::CMFCWindowsManagerDialog](#cmfcwindowsmanagerdialog)|Формирует объект `CMFCWindowsManagerDialog`.|
+|[Кмфквиндовсманажердиалог:: Кмфквиндовсманажердиалог](#cmfcwindowsmanagerdialog)|Формирует объект `CMFCWindowsManagerDialog`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-В `CMFCWindowsManagerDialog` приложении содержится список детских окон MDI, которые в настоящее время открыты в приложении. Пользователь может вручную управлять состоянием детских окон MDI, используя этот диалоговый ящик.
+`CMFCWindowsManagerDialog`Содержит список дочерних окон MDI, которые в данный момент открыты в приложении. Пользователь может вручную управлять состоянием дочерних окон MDI с помощью этого диалогового окна.
 
-`CMFCWindowsManagerDialog`встроен внутри [класса CMDIFrameWndEx.](../../mfc/reference/cmdiframewndex-class.md) Это `CMFCWindowsManagerDialog` не класс, который вы должны создавать вручную. Вместо этого, вызов функции [CMDIFrameWndEx::ShowWindowsDialog](../../mfc/reference/cmdiframewndex-class.md#showwindowsdialog), `CMFCWindowsManagerDialog` и он будет создавать и отображать объект.
+`CMFCWindowsManagerDialog` внедряется в [класс CMDIFrameWndEx](../../mfc/reference/cmdiframewndex-class.md). `CMFCWindowsManagerDialog`Не является классом, который необходимо создать вручную. Вместо этого вызовите функцию [CMDIFrameWndEx:: шоввиндовсдиалог](../../mfc/reference/cmdiframewndex-class.md#showwindowsdialog), и она создаст и отобразит `CMFCWindowsManagerDialog` объект.
 
 ## <a name="example"></a>Пример
 
-Ниже приводится следующий `CMFCWindowsManagerDialog` пример, как `CMDIFrameWndEx::ShowWindowsDialog`построить объект, вызывая . Этот фрагмент кода является частью [образца демонстрации Visual Studio.](../../overview/visual-cpp-samples.md)
+В следующем примере показано, как создать `CMFCWindowsManagerDialog` объект путем вызова `CMDIFrameWndEx::ShowWindowsDialog` . Этот фрагмент кода является частью [демонстрационного примера Visual Studio](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#18](../../mfc/codesnippet/cpp/cmfcwindowsmanagerdialog-class_1.cpp)]
 
@@ -59,11 +60,11 @@ class CMFCWindowsManagerDialog : public CDialog
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxWindowsManagerDialog.h
+**Заголовок:** афксвиндовсманажердиалог. h
 
-## <a name="cmfcwindowsmanagerdialogcmfcwindowsmanagerdialog"></a><a name="cmfcwindowsmanagerdialog"></a>CMFCWindowsManagerДиалог::CMFCWindowsManagerDialog
+## <a name="cmfcwindowsmanagerdialogcmfcwindowsmanagerdialog"></a><a name="cmfcwindowsmanagerdialog"></a> Кмфквиндовсманажердиалог:: Кмфквиндовсманажердиалог
 
-Строит объект [CMFCWindowsManagerDialog.](../../mfc/reference/cmfcwindowsmanagerdialog-class.md)
+Конструирует объект [кмфквиндовсманажердиалог](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) .
 
 ```
 CMFCWindowsManagerDialog(
@@ -73,18 +74,18 @@ CMFCWindowsManagerDialog(
 
 ### <a name="parameters"></a>Параметры
 
-*pMDIFrame*<br/>
-(в) Указатель на окно родителя или владельца.
+*пмдифраме*<br/>
+окне Указатель на родительское или окно-владелец.
 
-*bHelpButton*<br/>
-(в) Параметр Boolean, который определяет, отображает ли фреймворк кнопку **справки.**
+*бхелпбуттон*<br/>
+окне Логический параметр, указывающий, отображает ли платформа кнопку " **Справка** ".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Для получения дополнительной информации о визуальных менеджеров, [см.](../../mfc/visualization-manager.md)
+Дополнительные сведения о визуальных диспетчерах см. в разделе [Диспетчер визуализации](../../mfc/visualization-manager.md).
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
 [Класс CMDIFrameWndEx](../../mfc/reference/cmdiframewndex-class.md)

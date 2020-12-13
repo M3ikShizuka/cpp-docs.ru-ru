@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: imaxdiv'
 title: imaxdiv
 ms.date: 04/05/2018
 api_name:
@@ -24,12 +25,12 @@ f1_keywords:
 helpviewer_keywords:
 - imaxdiv function
 ms.assetid: 7d90126f-fdc2-4986-9cdf-94e4c9123d26
-ms.openlocfilehash: 298356da8e8e76c132b963ef4f71db6a3d0e74f7
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 3e1f417c1fb45b452b3cd07560bfec68d21fd1a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91505629"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332770"
 ---
 # <a name="imaxdiv"></a>imaxdiv
 
@@ -56,9 +57,9 @@ imaxdiv_t imaxdiv(
 
 **imaxdiv** , вызванный с аргументами типа [intmax_t](../../c-runtime-library/standard-types.md) , возвращает структуру типа [imaxdiv_t](../../c-runtime-library/standard-types.md) , которая состоит из частного и остатка.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функция **imaxdiv** делит *число ключей* на *Деном* и, таким образом, вычислит частную и оставшуюся стороны. Структура **imaxdiv_t** содержит частное, **intmax_t** **quot**и остаток **intmax_t** **REM**. Знак частного является таким же, как и у математического частного. Его абсолютное значение представляет собой наибольшее целое число, которое меньше абсолютного значения математического частного. Если знаменатель равен 0, выполнение программы прекратится и появится сообщение об ошибке.
+Функция **imaxdiv** делит *число ключей* на *Деном* и, таким образом, вычислит частную и оставшуюся стороны. Структура **imaxdiv_t** содержит частное, **intmax_t** **quot** и остаток **intmax_t** **REM**. Знак частного является таким же, как и у математического частного. Его абсолютное значение представляет собой наибольшее целое число, которое меньше абсолютного значения математического частного. Если знаменатель равен 0, выполнение программы прекратится и появится сообщение об ошибке.
 
 ## <a name="requirements"></a>Требования
 

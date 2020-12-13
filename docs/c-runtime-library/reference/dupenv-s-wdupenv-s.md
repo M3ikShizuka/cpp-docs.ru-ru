@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _dupenv_s, _wdupenv_s'
 title: _dupenv_s, _wdupenv_s
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - dupenv_s function
 - tdupenv_s function
 ms.assetid: b729ecc2-a31d-4ccf-92a7-5accedb8f8c8
-ms.openlocfilehash: 39184eff5db511dfb920782c3e29bf2b0cc9340e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3163645b83ec701478cca76d98fe5e17acdc86d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915184"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332884"
 ---
 # <a name="_dupenv_s-_wdupenv_s"></a>_dupenv_s, _wdupenv_s
 
@@ -87,7 +88,7 @@ errno_t _wdupenv_s(
 
 Если эти функции не могут выделить достаточно памяти, они устанавливают для *buffer* **значение NULL** , а *numberOfElements* — на 0 и возвращают **еномем**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_dupenv_s** выполняет поиск в списке переменных среды для *VarName*. Если переменная найдена, **_dupenv_s** выделяет буфер и копирует значение переменной в буфер. Адрес и длина буфера возвращаются в *buffer* и *numberOfElements*. Выделяя сам буфер, **_dupenv_s** предоставляет более удобную альтернативу [getenv_s _wgetenv_s](getenv-s-wgetenv-s.md).
 
@@ -98,11 +99,11 @@ errno_t _wdupenv_s(
 
 Если вы не заинтересованы в размере буфера, вы можете передать **значение NULL** для *numberOfElements*.
 
-**_dupenv_s** не учитывает регистр в операционной системе Windows. **_dupenv_s** использует копию среды, на которую указывает глобальная переменная **_environ** для доступа к среде. Обсуждение **_environ**см. в примечаниях в [getenv_s _wgetenv_s](getenv-s-wgetenv-s.md) .
+**_dupenv_s** не учитывает регистр в операционной системе Windows. **_dupenv_s** использует копию среды, на которую указывает глобальная переменная **_environ** для доступа к среде. Обсуждение **_environ** см. в примечаниях в [getenv_s _wgetenv_s](getenv-s-wgetenv-s.md) .
 
 Значение в поле *buffer* является копией значения переменной среды; изменение этого действия не влияет на среду. Чтобы изменить значение переменной среды, используйте функцию [_putenv_s, _wputenv_s](putenv-s-wputenv-s.md).
 
-**_wdupenv_s** — это версия **_dupenv_s**для расширенных символов; аргументы **_wdupenv_s** являются строками расширенных символов. **_Wenviron** глобальная переменная — это версия **_environ**для расширенных символов. Дополнительные сведения об **_wenviron**см. в примечаниях в [getenv_s _wgetenv_s](getenv-s-wgetenv-s.md) .
+**_wdupenv_s** — это версия **_dupenv_s** для расширенных символов; аргументы **_wdupenv_s** являются строками расширенных символов. **_Wenviron** глобальная переменная — это версия **_environ** для расширенных символов. Дополнительные сведения об **_wenviron** см. в примечаниях в [getenv_s _wgetenv_s](getenv-s-wgetenv-s.md) .
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

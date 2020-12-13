@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: исинф'
 title: isinf
 ms.date: 01/31/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 - math/isinf
 helpviewer_keywords:
 - isinf function
-ms.openlocfilehash: 7366f340477bf1bb50ebe1e53bcec1f3e16e0863
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f174855ddbb8cc43fd7338d4254c0f03bf53967d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234098"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332641"
 ---
 # <a name="isinf"></a>isinf
 
@@ -39,19 +40,19 @@ inline bool isinf(
 
 **исинф** возвращает ненулевое значение ( **`true`** в коде C++), если аргумент *x* является положительной или отрицательной бесконечностью. **исинф** возвращает 0 ( **`false`** в коде C++), если аргумент является конечным или нечисловым. Как обычные, так и поднормальные значения с плавающей запятой считаются конечными.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **исинф** — это макрос, скомпилированный как C, и встроенная функция шаблона при компиляции в виде C++.
 
 ## <a name="requirements"></a>Требования
 
-|Компонент|Обязательный заголовок (C)|Обязательный заголовок (C++)|
+|Функция|Обязательный заголовок (C)|Обязательный заголовок (C++)|
 |--------------|---------------------------|-------------------------------|
-|**isinf**|\<math.h>|\<math.h> или \<cmath>|
+|**исинф**|\<math.h>|\<math.h> или \<cmath>|
 
 Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
 [fpclassify](fpclassify.md)<br/>

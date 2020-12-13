@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CMonthCalCtrl Class'
 title: Класс CMonthCalCtrl
 ms.date: 11/04/2016
 f1_keywords:
@@ -90,12 +91,12 @@ helpviewer_keywords:
 - CMonthCalCtrl [MFC], SizeMinReq
 - CMonthCalCtrl [MFC], SizeRectToMin
 ms.assetid: a42f6bd6-ab5c-4335-82f8-839982fc64a2
-ms.openlocfilehash: d986aa5f8e232f0ab94858dbdfae5754536ccdb9
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 4c4c4684167a9c1c569f69f582688b294ac95233
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562146"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331600"
 ---
 # <a name="cmonthcalctrl-class"></a>Класс CMonthCalCtrl
 
@@ -107,7 +108,7 @@ ms.locfileid: "88562146"
 class CMonthCalCtrl : public CWnd
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -161,7 +162,7 @@ class CMonthCalCtrl : public CWnd
 |[CMonthCalCtrl:: Сиземинрек](#sizeminreq)|Перерисовывает элемент управления "календарь месяца" до минимального размера в один месяц.|
 |[CMonthCalCtrl:: Сизеректтомин](#sizerecttomin)|Для элемента управления "Календарь текущего месяца" вычисляет наименьший прямоугольник, который может содержать все календари, попадающие в указанный прямоугольник.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Элемент управления "календарь месяца" предоставляет пользователю простой интерфейс календаря, с помощью которого пользователь может выбрать дату. Пользователь может изменить отображение следующим образом:
 
@@ -199,7 +200,7 @@ class CMonthCalCtrl : public CWnd
 CMonthCalCtrl();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `Create`После создания объекта необходимо вызвать метод.
 
@@ -242,7 +243,7 @@ virtual BOOL Create(
 
 Ненулевое значение, если инициализация прошла успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Создание элемента управления "месячный календарь" в два этапа:
 
@@ -272,7 +273,7 @@ int GetCalendarBorder() const;
 
 Ширина границы элемента управления в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [MCM_GETCALENDARBORDER](/windows/win32/Controls/mcm-getcalendarborder) сообщение, описанное в Windows SDK.
 
@@ -288,7 +289,7 @@ int GetCalendarCount() const;
 
 Число календарей, отображаемых в данный момент в элементе управления "месячный календарь". Максимально допустимое число календарей — 12.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [MCM_GETCALENDARCOUNT](/windows/win32/Controls/mcm-getcalendarcount) сообщение, описанное в Windows SDK.
 
@@ -309,7 +310,7 @@ BOOL GetCalendarGridInfo(PMCGRIDINFO pmcGridInfo) const;
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [MCM_GETCALENDARGRIDINFO](/windows/win32/Controls/mcm-getcalendargridinfo) сообщение, описанное в Windows SDK.
 
@@ -337,7 +338,7 @@ CALID GetCalID() const;
 
 Одна из констант [идентификатора календаря](/windows/win32/Intl/calendar-identifiers) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Идентификатор календаря обозначает календарь определенного региона, например григорианский (локализованный), японский или летоисчисление по хиджре календари. Приложение может использовать идентификатор календаря с различными функциями языковой поддержки.
 
@@ -379,7 +380,7 @@ DWORD GetCurrentView() const;
 |MCMV_DECADE|Представление десятилетия|
 |MCMV_CENTURY|Представление "век"|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [MCM_GETCURRENTVIEW](/windows/win32/Controls/mcm-getcurrentview) сообщение, описанное в Windows SDK.
 
@@ -417,7 +418,7 @@ BOOL GetCurSel(LPSYSTEMTIME pDateTime) const;
 
 Ненулевое значение в случае успешного выполнения; осервизе 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_GETCURSEL](/windows/win32/Controls/mcm-getcursel), как описано в Windows SDK.
 
@@ -443,7 +444,7 @@ int GetFirstDayOfWeek(BOOL* pbLocal = NULL) const;
 
 Целочисленное значение, представляющее первый день недели. Дополнительные сведения о том, что представляют эти целые числа, см. в разделе **Примечания** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_GETFIRSTDAYOFWEEK](/windows/win32/Controls/mcm-getfirstdayofweek), как описано в Windows SDK. Дни недели представлены в виде целых чисел, как показано ниже.
 
@@ -473,7 +474,7 @@ int GetMaxSelCount() const;
 
 Целочисленное значение, представляющее общее число дней, которое может быть выбрано для элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_GETMAXSELCOUNT](/windows/win32/Controls/mcm-getmaxselcount), как описано в Windows SDK. Используйте эту функцию элемента для элементов управления с набором стилей MCS_MULTISELECT.
 
@@ -505,7 +506,7 @@ DWORD GetMaxTodayWidth() const;
 
 [!code-cpp[NVC_MFC_CMonthCalCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cmonthcalctrl-class_5.cpp)]
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Пользователь может вернуться к текущей дате, щелкнув строку "Today", которая отображается в нижней части элемента управления "Календарь на месяц". Строка "Today" включает текст метки и текст даты.
 
@@ -528,7 +529,7 @@ BOOL GetMinReqRect(RECT* pRect) const;
 
 В случае успеха эта функция члена возвращает ненулевое значение и `lpRect` получает применимые сведения о границах. В случае неудачи функция члена возвращает значение 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_GETMINREQRECT](/windows/win32/Controls/mcm-getminreqrect), как описано в Windows SDK.
 
@@ -544,7 +545,7 @@ int GetMonthDelta() const;
 
 Скорость прокрутки для элемента управления "месячный календарь". Скорость прокрутки — это число месяцев, в течение которых элемент управления перемещает свое отображение, когда пользователь нажимает кнопку прокрутки один раз.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_GETMONTHDELTA](/windows/win32/Controls/mcm-getmonthdelta), как описано в Windows SDK.
 
@@ -595,7 +596,7 @@ int GetMonthRange(
 
 Целое число, представляющее диапазон в месяцах, охватываемый двумя ограничениями, указанными в *рефминранже* и *рефмаксранже* в первой и второй версиях, а также *пминранже* и *пмаксранже* в третьей версии.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_GETMONTHRANGE](/windows/win32/Controls/mcm-getmonthrange), как описано в Windows SDK. В реализации MFC `GetMonthRange` можно указать использование `COleDateTime` , `CTime` использование или `SYSTEMTIME` использование структуры.
 
@@ -638,7 +639,7 @@ DWORD GetRange(
 |GDTR_MAX|Для элемента управления задано ограничение максимального значения; *пмаксранже* является допустимым и содержит применимые сведения о датах.|
 |GDTR_MIN|Для элемента управления задано минимальное ограничение; *пминранже* является допустимым и содержит применимые сведения о датах.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_GETRANGE](/windows/win32/Controls/mcm-getrange), как описано в Windows SDK. В реализации MFC `GetRange` можно указать использование `COleDateTime` , `CTime` использование или `SYSTEMTIME` использование структуры.
 
@@ -682,7 +683,7 @@ BOOL GetSelRange(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_GETSELRANGE](/windows/win32/Controls/mcm-getselrange), как описано в Windows SDK. `GetSelRange` завершится ошибкой, если применяется к элементу управления "месячный календарь", который не использует стиль MCS_MULTISELECT.
 
@@ -710,7 +711,7 @@ BOOL GetToday(LPSYSTEMTIME pDateTime) const;
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_GETTODAY](/windows/win32/Controls/mcm-gettoday), как описано в Windows SDK. В реализации MFC `GetToday` можно указать использование `COleDateTime` , `CTime` использование или `SYSTEMTIME` использование структуры.
 
@@ -735,7 +736,7 @@ DWORD HitTest(PMCHITTESTINFO pMCHitTest);
 
 Значение типа DWORD. Значение, равное **ухит** элементу `MCHITTESTINFO` структуры.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `HitTest` использует `MCHITTESTINFO` структуру, которая содержит сведения о проверке попадания.
 
@@ -751,7 +752,7 @@ BOOL IsCenturyView() const;
 
 Значение TRUE, если текущее представление является представлением века; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [MCM_GETCURRENTVIEW](/windows/win32/Controls/mcm-getcurrentview) сообщение, описанное в Windows SDK. Если это сообщение возвращает MCMV_CENTURY, этот метод возвращает значение TRUE.
 
@@ -767,7 +768,7 @@ BOOL IsDecadeView() const;
 
 Значение TRUE, если текущее представление является представлением десятилетия; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [MCM_GETCURRENTVIEW](/windows/win32/Controls/mcm-getcurrentview) сообщение, описанное в Windows SDK. Если это сообщение возвращает MCMV_DECADE, этот метод возвращает значение TRUE.
 
@@ -783,7 +784,7 @@ BOOL IsMonthView() const;
 
 Значение TRUE, если текущее представление является представлением месяца; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [MCM_GETCURRENTVIEW](/windows/win32/Controls/mcm-getcurrentview) сообщение, описанное в Windows SDK. Если это сообщение возвращает MCMV_MONTH, этот метод возвращает значение TRUE.
 
@@ -799,7 +800,7 @@ BOOL IsYearView() const;
 
 Значение TRUE, если текущее представление является представлением года; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [MCM_GETCURRENTVIEW](/windows/win32/Controls/mcm-getcurrentview) сообщение, описанное в Windows SDK. Если это сообщение возвращает MCMV_YEAR, этот метод возвращает значение TRUE.
 
@@ -816,7 +817,7 @@ void SetCalendarBorder(int cxyBorder);
 *кксибордер*\
 окне Ширина границы в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если этот метод завершился с ошибкой, то ширина границы устанавливается в параметр *кксибордер* . В противном случае ширина границы сбрасывается до значения по умолчанию, заданного текущей [темой](/windows/win32/Controls/visual-styles-overview), или нуль, если темы не используются.
 
@@ -842,7 +843,7 @@ void SetCalendarBorder(int cxyBorder);
 void SetCalendarBorderDefault();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Ширина границы устанавливается равным значению по умолчанию, заданному текущей [темой](/windows/win32/Controls/visual-styles-overview), или нуль, если темы не используются.
 
@@ -865,7 +866,7 @@ BOOL SetCalID(CALID calid);
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Идентификатор календаря указывает календарь определенного региона, например григорианский (локализованный), японский или летоисчисление по хиджре календари. Используйте `SetCalID` метод для вывода календаря, указанного параметром *Калид* , если на компьютере установлен языковой стандарт, содержащий календарь.
 
@@ -895,7 +896,7 @@ BOOL SetCenturyView();
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод использует метод [CMonthCalCtrl:: сеткуррентвиев](#setcurrentview) , чтобы задать представление `MCMV_CENTURY` , которое представляет представление века.
 
@@ -930,7 +931,7 @@ COLORREF SetColor(
 
 Значение COLORREF, представляющее предыдущий цвет для указанного фрагмента элемента управления "месячный календарь" в случае успеха. В противном случае это сообщение возвращает значение-1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_SETCOLOR](/windows/win32/Controls/mcm-setcolor), как описано в Windows SDK.
 
@@ -960,7 +961,7 @@ BOOL SetCurrentView(DWORD dwNewView);
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [MCM_SETCURRENTVIEW](/windows/win32/Controls/mcm-setcurrentview) сообщение, описанное в Windows SDK.
 
@@ -986,7 +987,7 @@ BOOL SetCurSel(const LPSYSTEMTIME pDateTime);
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_SETCURSEL](/windows/win32/Controls/mcm-setcursel), как описано в Windows SDK. В реализации MFC `SetCurSel` можно указать использование `COleDateTime` , `CTime` использование или `SYSTEMTIME` использование структуры.
 
@@ -1016,7 +1017,7 @@ BOOL SetDayState(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_SETDAYSTATE](/windows/win32/Controls/mcm-setdaystate), как описано в Windows SDK.
 
@@ -1036,7 +1037,7 @@ BOOL SetDecadeView();
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод использует метод [CMonthCalCtrl:: сеткуррентвиев](#setcurrentview) , чтобы задать для представления значение `MCMV_DECADE` , представляющее представление десятилетия.
 
@@ -1062,7 +1063,7 @@ BOOL SetFirstDayOfWeek(
 
 Ненулевое значение, если предыдущим первым днем недели присвоено отличное от LOCALE_IFIRSTDAYOFWEEK, то есть день, указанный в параметре панели управления. В противном случае эта функция возвращает 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_SETFIRSTDAYOFWEEK](/windows/win32/Controls/mcm-setfirstdayofweek), как описано в Windows SDK.
 
@@ -1087,7 +1088,7 @@ BOOL SetMaxSelCount(int nMax);
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_SETMAXSELCOUNT](/windows/win32/Controls/mcm-setmaxselcount), как описано в Windows SDK.
 
@@ -1112,7 +1113,7 @@ int SetMonthDelta(int iDelta);
 
 Предыдущая скорость прокрутки. Если скорость прокрутки не была задана ранее, возвращаемое значение равно 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_SETMONTHDELTA](/windows/win32/Controls/mcm-setmonthdelta), как описано в Windows SDK.
 
@@ -1128,7 +1129,7 @@ BOOL SetMonthView();
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод использует метод [CMonthCalCtrl:: сеткуррентвиев](#setcurrentview) , чтобы установить представление в MCMV_MONTH, представляющее представление месяца.
 
@@ -1174,7 +1175,7 @@ BOOL SetRange(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_SETRANGE](/windows/win32/Controls/mcm-setrange), как описано в Windows SDK. В реализации MFC `SetRange` можно указать использование `COleDateTime` , `CTime` использование или `SYSTEMTIME` использование структуры.
 
@@ -1212,7 +1213,7 @@ BOOL SetSelRange(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_SETSELRANGE](/windows/win32/Controls/mcm-setselrange), как описано в Windows SDK. В реализации MFC `SetSelRange` можно указать использование `COleDateTime` , `CTime` использование или `SYSTEMTIME` использование структуры.
 
@@ -1234,7 +1235,7 @@ void SetToday(const LPSYSTEMTIME pDateTime);
 *пдатетиме*<br/>
 Во второй версии — указатель на объект [CTime](../../atl-mfc-shared/reference/ctime-class.md) , содержащий сведения о текущей дате. В третьей версии — указатель на структуру [SYSTEMTIME](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) , содержащую сведения о текущей дате.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [MCM_SETTODAY](/windows/win32/Controls/mcm-settoday), как описано в Windows SDK.
 
@@ -1254,7 +1255,7 @@ BOOL SetYearView();
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод использует метод [CMonthCalCtrl:: сеткуррентвиев](#setcurrentview) , чтобы задать для представления значение MCMV_YEAR, представляющее годовое представление.
 
@@ -1275,7 +1276,7 @@ BOOL SizeMinReq(BOOL bRepaint = TRUE);
 
 Ненулевое значение, если элемент управления "календарь месяца" имеет размер до минимального. в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызов `SizeMinReq` успешно отображает элемент управления "Календарь на весь месяц" для календаря в один месяц.
 
@@ -1296,13 +1297,13 @@ LPRECT SizeRectToMin(LPRECT lpRect);
 
 Указатель на структуру [Rect](/windows/win32/api/windef/ns-windef-rect) , определяющую прямоугольник, размер которого меньше или равен прямоугольнику, определенному параметром *лпрект* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вычисляет, сколько календарей может уместиться в прямоугольнике, указанном параметром *лпрект* , а затем возвращает наименьший прямоугольник, который может содержать это количество календарей. Фактически этот метод сжимает указанный прямоугольник в точном соответствии с требуемым количеством календарей.
 
 Этот метод отправляет [MCM_SIZERECTTOMIN](/windows/win32/Controls/mcm-sizerecttomin) сообщение, описанное в Windows SDK.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Пример CMNCTRL1 для MFC](../../overview/visual-cpp-samples.md)<br/>
 [CWnd, класс](../../mfc/reference/cwnd-class.md)<br/>

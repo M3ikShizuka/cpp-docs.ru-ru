@@ -1,15 +1,16 @@
 ---
+description: 'Подробнее: оптимизация рисования элементов управления'
 title: Оптимизация рисования элементов управления
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], optimizing
 ms.assetid: 29ff985d-9bf5-4678-b62d-aad12def75fb
-ms.openlocfilehash: 17cb7318e667fe4e16416d51e7e7fba02553cfe6
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 93e948d4a572f4e02c8676b2af1b6f8943004f26
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84621015"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331812"
 ---
 # <a name="optimizing-control-drawing"></a>Оптимизация рисования элементов управления
 
@@ -46,6 +47,6 @@ ms.locfileid: "84621015"
 
 [Элементы ActiveX в MFC. Оптимизация](mfc-activex-controls-optimization.md)<br/>
 [Класс COleControl](reference/colecontrol-class.md)<br/>
-[Элементы ActiveX библиотеки MFC](mfc-activex-controls.md)<br/>
+[Элементы управления ActiveX в MFC](mfc-activex-controls.md)<br/>
 [Мастер элементов ActiveX MFC](reference/mfc-activex-control-wizard.md)<br/>
-[Элементы ActiveX в MFC. Закраска элементов ActiveX](mfc-activex-controls-painting-an-activex-control.md)
+[Элементы ActiveX в MFC. Рисование элемента управления ActiveX](mfc-activex-controls-painting-an-activex-control.md)

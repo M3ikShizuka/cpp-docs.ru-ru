@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _cscanf, _cscanf_l, _cwscanf, _cwscanf_l'
 title: _cscanf, _cscanf_l, _cwscanf, _cwscanf_l
 ms.date: 10/21/2019
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - reading data [C++], from the console
 - _cwscanf_l function
 ms.assetid: dbfe7547-b577-4567-a1cb-893fa640e669
-ms.openlocfilehash: 45dcbd93ab689c8c86ab35e53552a65f561dfd18
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 65c025c7a02c0bd9493bcaf8d6ff0e29c6c7a217
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234254"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332922"
 ---
 # <a name="_cscanf-_cscanf_l-_cwscanf-_cwscanf_l"></a>_cscanf, _cscanf_l, _cwscanf, _cwscanf_l
 
@@ -94,7 +95,7 @@ int _cwscanf_l(
 Строка управления форматом.
 
 *argument*<br/>
-Необязательные параметры.
+Дополнительные параметры.
 
 *locale*<br/>
 Используемый языковой стандарт.
@@ -103,7 +104,7 @@ int _cwscanf_l(
 
 Число успешно преобразованных и назначенных полей. Возвращаемое значение не включает поля, которые были считаны, но не назначены. Возвращаемое значение — **EOF** для попытки чтения в конце файла. Это может произойти при перенаправлении ввода данных с клавиатуры на уровне командной строки операционной системы. Возвращаемое значение 0 означает, что поля не были назначены.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_cscanf** считывает данные непосредственно из консоли в расположения, указанные *аргументом*. Функция [_Getche](getch-getwch.md) используется для чтения символов. Каждый необязательный параметр должен быть указателем на переменную с типом, который соответствует спецификатору типа в *формате*. Формат управляет интерпретацией полей ввода и имеет ту же форму и функцию, что и параметр *Format* для функции [scanf](scanf-scanf-l-wscanf-wscanf-l.md) . Хотя **_cscanf** обычно отображает входной символ, он не делает этого, если последний вызов был **_ungetch**.
 

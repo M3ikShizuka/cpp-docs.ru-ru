@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура Ремовереференце'
 title: RemoveReference - структура
 ms.date: 10/03/2018
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - RemoveReference structure
 ms.assetid: 43ff91bb-815a-440e-b9fb-7dcbb7c863af
-ms.openlocfilehash: 7753c1ad41f12fa8c14d2f10c9e2f91e043a5846
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 0bcf3685e44b756ce324adc8301d7afb5b4b3f40
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213607"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332495"
 ---
 # <a name="removereference-structure"></a>RemoveReference - структура
 
@@ -36,15 +37,15 @@ struct RemoveReference<T&&>;
 *T*<br/>
 Класс.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Отделяет ссылку или признак rvalue-reference от указанного параметра шаблона класса.
 
-## <a name="members"></a>Члены
+## <a name="members"></a>Элементы
 
-### <a name="public-typedefs"></a>Открытые определения типов
+### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`Type`|Синоним для параметра шаблона класса.|
 
@@ -60,4 +61,4 @@ struct RemoveReference<T&&>;
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Microsoft::WRL::Details](microsoft-wrl-details-namespace.md)
+[Пространство имен Microsoft:: WRL::D состояния](microsoft-wrl-details-namespace.md)

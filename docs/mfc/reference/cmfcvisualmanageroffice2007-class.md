@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CMFCVisualManagerOffice2007 Class'
 title: Класс CMFCVisualManagerOffice2007
 ms.date: 11/04/2016
 f1_keywords:
@@ -230,18 +231,18 @@ helpviewer_keywords:
 - CMFCVisualManagerOffice2007 [MFC], OnUpdateSystemColors
 - CMFCVisualManagerOffice2007 [MFC], SetResourceHandle
 ms.assetid: fb687c74-6d08-4c72-8acf-27f75dda6d6b
-ms.openlocfilehash: 94b7e15a540ab95342b030c48c93905daaf86f40
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 0cfdb40e5c814d35476be30d72971d67ee33fa2a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81319914"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331666"
 ---
 # <a name="cmfcvisualmanageroffice2007-class"></a>Класс CMFCVisualManagerOffice2007
 
-`CMFCVisualManagerOffice2007`придает приложению внешний вид Microsoft Office 2007.
+`CMFCVisualManagerOffice2007` предоставляет приложению внешний вид Microsoft Office 2007.
 
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -249,134 +250,134 @@ ms.locfileid: "81319914"
 class CMFCVisualManagerOffice2007 : public CMFCVisualManagerOffice2003
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CMFCVisualManagerOffice2007::AlwaysHighlight3DTabs](#alwayshighlight3dtabs)||
-|[CMFCVisualManagerOffice2007:CleanStyle](#cleanstyle)||
-|[CMFCVisualManagerOffice2007::GetCaptionBarTextColor](#getcaptionbartextcolor)||
-|[CMFCVisualManagerOffice2007::GetHighlightedMenuTextColor](#gethighlightedmenuitemtextcolor)||
-|[CMFCVisualManagerOffice2007:GetMenuTextColor](#getmenuitemtextcolor)||
-|[CMFCVisualManagerOffice2007:GetNcBtnSize](#getncbtnsize)||
-|[CMFCVisualManagerOffice2007:GetRibbonBar](#getribbonbar)||
-|[CMFCVisualManagerOffice2007:GetRibbonHyperlinkTextColor](#getribbonhyperlinktextcolor)||
-|[CMFCVisualManagerOffice2007:GetRibbonPopupBorderSize](#getribbonpopupbordersize)||
-|[CMFCVisualManagerOffice2007::GetRibbonКвиКвИКвАйтТулБарШевронСтом](#getribbonquickaccesstoolbarchevronoffset)||
-|[CMFCVisualManagerOffice2007:GetRibbonКваДоступToolRightMargin](#getribbonquickaccesstoolbarrightmargin)||
-|[CMFCVisualManagerOffice2007:GetRibbonКваДоступToolToolTextColorЦвет](#getribbonquickaccesstoolbartextcolor)||
-|[CMFCVisualManagerOffice2007:GetRibbonStatusBarTextColor](#getribbonstatusbartextcolor)||
-|[CMFCVisualManagerOffice2007:GetShowAllMenuItemsВысота](#getshowallmenuitemsheight)||
-|[CMFCVisualManagerOffice2007:GetStatusBarPaneTextColor](#getstatusbarpanetextcolor)||
-|`CMFCVisualManagerOffice2007::GetStyle`|Возвращает текущую цветовую `CMFCVisualManagerOffice2007` схему графического интерфейса, который, в свою очередь, имитирует графический интерфейс Microsoft Office 2007.|
-|[CMFCVisualManagerOffice2007:GetTabFrameColors](#gettabframecolors)||
-|[CMFCVisualManagerOffice2007:GetTabHorzMargin](#gettabhorzmargin)||
-|[CMFCVisualManagerOffice2007:GetTabTextColor](#gettabtextcolor)||
-|[CMFCVisualManagerOffice2007:GetToolbarButtonText](#gettoolbarbuttontextcolor)||
-|[CMFCVisualManagerOffice2007::GetToolbarDisabledDisabledTextColor](#gettoolbardisabledtextcolor)||
-|[CMFCVisualManagerOffice2007:GetToolTipInfo](#gettooltipinfo)||
-|[CMFCVisualManagerOffice2007:IsHighlightWholeMenuItem](#ishighlightwholemenuitem)||
-|[CMFCVisualManagerOffice2007:IsLayeredRibbonKeyTip](#islayeredribbonkeytip)||
-|[CMFCVisualManagerOffice2007:IsOwnerDrawCaption](#isownerdrawcaption)||
-|[CMFCVisualManagerOffice2007:IsOwnerdrawMenuCheck](#isownerdrawmenucheck)||
-|[CMFCVisualManagerOffice2007:IsRibbonPresent](#isribbonpresent)||
-|[CMFCVisualManagerOffice2007:OnDrawBarGripper](#ondrawbargripper)||
-|[CMFCVisualManagerOffice2007:OndrawbuttonBorder](#ondrawbuttonborder)||
-|[CMFCVisualManagerOffice2007:OnDrawButtonСепара](#ondrawbuttonseparator)||
-|[CMFCVisualManagerOffice2007:OndrawcaptionBarinfo](#ondrawcaptionbarinfoarea)||
-|[CMFCVisualManagerOffice2007:OndrawCheckBoxex](#ondrawcheckboxex)||
-|[CMFCVisualManagerOffice2007:OndrawComboBorder](#ondrawcomboborder)||
-|[CMFCVisualManagerOffice2007:OndrawComboDropButton](#ondrawcombodropbutton)||
-|[CMFCVisualManagerOffice2007::OndrawDefaultRibbonImage](#ondrawdefaultribbonimage)||
-|[CMFCVisualManagerOffice2007:OnDrawEditBorder](#ondraweditborder)||
-|[CMFCVisualManagerOffice2007:OnDrawFloatingToolbarBorder](#ondrawfloatingtoolbarborder)||
-|[CMFCVisualManagerOffice2007:OnDrawHeaderCtrlBorder](#ondrawheaderctrlborder)||
-|[CMFCVisualManagerOffice2007:OndrawMenuBorder](#ondrawmenuborder)||
-|[CMFCVisualManagerOffice2007:OndrawMenuCheck](#ondrawmenucheck)||
-|[CMFCVisualManagerOffice2007:OndrawMenuitembutton](#ondrawmenuitembutton)||
-|[CMFCVisualManagerOffice2007:OndrawMenuLabel](#ondrawmenulabel)||
-|[CMFCVisualManagerOffice2007:OndrawMenuresizebar](#ondrawmenuresizebar)||
-|[CMFCVisualManagerOffice2007:OndrawMenuScrollbutton](#ondrawmenuscrollbutton)||
-|[CMFCVisualManagerOffice2007:OndrawMenuSystemButton](#ondrawmenusystembutton)||
-|[CMFCVisualManagerOffice2007:OndrawMiniFrameBorder](#ondrawminiframeborder)||
-|[CMFCVisualManagerOffice2007:OndrawOutlookBarSplitter](#ondrawoutlookbarsplitter)||
-|[CMFCVisualManagerOffice2007:OndrawOutlookPageButtonBorder](#ondrawoutlookpagebuttonborder)||
-|[CMFCVisualManagerOffice2007:OnDrawPaneCaption](#ondrawpanecaption)||
-|[CMFCVisualManagerOffice2007:OnDrawPopupWindowCaption](#ondrawpopupwindowcaption)||
-|[CMFCVisualManagerOffice2007:OndrawPropertySheetlistItem](#ondrawpropertysheetlistitem)||
-|[CMFCVisualManagerOffice2007:OndrawRibbonApplicationButton](#ondrawribbonapplicationbutton)||
-|[CMFCVisualManagerOffice2007:OndrawribbonButtonBorder](#ondrawribbonbuttonborder)||
-|[CMFCVisualManagerOffice2007:OnDrawRibbonButtonsGroup](#ondrawribbonbuttonsgroup)||
-|[CMFCVisualManagerOffice2007:OndrawRibbonCaption](#ondrawribboncaption)||
-|[CMFCVisualManagerOffice2007::OndrawRibbonCaptionButton](#ondrawribboncaptionbutton)||
-|[CMFCVisualManagerOffice2007:OndrawRibbonКатегория](#ondrawribboncategory)||
-|[CMFCVisualManagerOffice2007:OndrawRibbonCategoryCaptioncaption](#ondrawribboncategorycaption)||
-|[CMFCVisualManagerOffice2007:OndrawRibbonCategoryScroll](#ondrawribboncategoryscroll)||
-|[CMFCVisualManagerOffice2007:OndrawRibbonCategoryTab](#ondrawribboncategorytab)||
-|[CMFCVisualManagerOffice2007:OndrawRibbonCheckBoxonlist](#ondrawribboncheckboxonlist)||
-|[CMFCVisualManagerOffice2007:OnDrawRibbonDefaultPaneButton](#ondrawribbondefaultpanebutton)||
-|[CMFCVisualManagerOffice2007:OnDrawRibbonDefaultPaneButtonИндикатор](#ondrawribbondefaultpanebuttonindicator)||
-|[CMFCVisualManagerOffice2007:OndrawRibbonGalleryBorder](#ondrawribbongalleryborder)||
-|[CMFCVisualManagerOffice2007:OndrawRibbonGalleryButton](#ondrawribbongallerybutton)||
-|[CMFCVisualManagerOffice2007:OndrawRibbonKeyTip](#ondrawribbonkeytip)||
-|[CMFCVisualManagerOffice2007:OndrawribbonMainPanelButtonborder](#ondrawribbonmainpanelbuttonborder)||
-|[CMFCVisualManagerOffice2007:OndrawRibbonMainPanelFrame](#ondrawribbonmainpanelframe)||
-|[CMFCVisualManagerOffice2007::OndrawRibbonMenuCheckframe](#ondrawribbonmenucheckframe)||
-|[CMFCVisualManagerOffice2007:OndrawRibbonPanel](#ondrawribbonpanel)||
-|[CMFCVisualManagerOffice2007:OndrawRibbonPanelCaption](#ondrawribbonpanelcaption)||
-|[CMFCVisualManagerOffice2007:OndrawRibbonProgressBar](#ondrawribbonprogressbar)||
-|[CMFCVisualManagerOffice2007:OndrawribbonRecentFilesFrame](#ondrawribbonrecentfilesframe)||
-|[CMFCVisualManagerOffice2007:OnDrawRibbonSliderChannel](#ondrawribbonsliderchannel)||
-|[CMFCVisualManagerOffice2007:OnDrawRibbonSliderThumb](#ondrawribbonsliderthumb)||
-|[CMFCVisualManagerOffice2007::OnDrawRibbonSliderЗоумБаттон](#ondrawribbonsliderzoombutton)||
-|[CMFCVisualManagerOffice2007:OnDrawRibbonStatusBarPane](#ondrawribbonstatusbarpane)||
-|[CMFCVisualManagerOffice2007:OnDrawRibbonTabsFrame](#ondrawribbontabsframe)||
-|[CMFCVisualManagerOffice2007:OnDrawScrollButtons](#ondrawscrollbuttons)||
-|[CMFCVisualManagerOffice2007:OnDrawСепаратор](#ondrawseparator)||
-|[CMFCVisualManagerOffice2007:OndrawShowallMenuItems](#ondrawshowallmenuitems)||
-|[CMFCVisualManagerOffice2007:OnDrawStatusBarPaneBorder](#ondrawstatusbarpaneborder)||
-|[CMFCVisualManagerOffice2007:OndrawstatusbarSizeBox](#ondrawstatusbarsizebox)||
-|[CMFCVisualManagerOffice2007:OndrawTab](#ondrawtab)||
-|[CMFCVisualManagerOffice2007:OnDrawTabsButtonBorder](#ondrawtabsbuttonborder)||
-|[CMFCVisualManagerOffice2007:OndrawTask](#ondrawtask)||
-|[CMFCVisualManagerOffice2007:OndrawtasksGroupCaption](#ondrawtasksgroupcaption)||
-|[CMFCVisualManagerOffice2007:OndrawtearOffCaption](#ondrawtearoffcaption)||
-|[CMFCVisualManagerOffice2007:OnErasemDIClientArea](#onerasemdiclientarea)||
-|[CMFCVisualManagerOffice2007:OnEraseTabsArea](#onerasetabsarea)||
-|[CMFCVisualManagerOffice2007:OnEraseTabsButton](#onerasetabsbutton)||
-|[CMFCVisualManagerOffice2007:OnEraseTabsFrame](#onerasetabsframe)||
-|[CMFCVisualManagerOffice2007:OnfillBarbackground](#onfillbarbackground)||
-|[CMFCVisualManagerOffice2007:OnFillbuttonInterior](#onfillbuttoninterior)||
-|[CMFCVisualManagerOffice2007:OnfillcaptionБарБаттон](#onfillcaptionbarbutton)||
-|[CMFCVisualManagerOffice2007:OnFillHighlightedArea](#onfillhighlightedarea)||
-|[CMFCVisualManagerOffice2007:OnfillminiFrameCaption](#onfillminiframecaption)||
-|[CMFCVisualManagerOffice2007:OnfillOutlookBarCaption](#onfilloutlookbarcaption)||
-|[CMFCVisualManagerOffice2007:OnFillOutlookPageButton](#onfilloutlookpagebutton)||
-|[CMFCVisualManagerOffice2007:OnFillPopupWindowBackground](#onfillpopupwindowbackground)||
-|[CMFCVisualManagerOffice2007:OnfillRibbonButton](#onfillribbonbutton)||
-|[CMFCVisualManagerOffice2007:OnFillRibbonEdit](#onfillribbonedit)||
-|[CMFCVisualManagerOffice2007:OnfillRibbonMainPanelButton](#onfillribbonmainpanelbutton)||
-|[CMFCVisualManagerOffice2007:OnfillRibbonMenuframe](#onfillribbonmenuframe)||
-|[CMFCVisualManagerOffice2007::OnfillRibbonКваAccessToolBarPopup](#onfillribbonquickaccesstoolbarpopup)||
-|[CMFCVisualManagerOffice2007:OnfillTab](#onfilltab)||
-|[CMFCVisualManagerOffice2007:OnHighlightMenuitem](#onhighlightmenuitem)||
-|[CMFCVisualManagerOffice2007:OnHighlightРедкоИспользуемыеМенюэлементы](#onhighlightrarelyusedmenuitems)||
-|[CMFCVisualManagerOffice2007:OnNcActivate](#onncactivate)||
-|[CMFCVisualManagerOffice2007:OnNcpaint](#onncpaint)||
-|[CMFCVisualManagerOffice2007:OnsetWindowРегион](#onsetwindowregion)||
-|[CMFCVisualManagerOffice2007:OnUpdateSystemColors](#onupdatesystemcolors)||
-|[CMFCVisualManagerOffice2007:SetResourceHandle](#setresourcehandle)||
-|`CMFCVisualManagerOffice2007::SetStyle`|Устанавливает цветовую гамму графического интерфейса. `CMFCVisualManagerOffice2007`|
+|[CMFCVisualManagerOffice2007:: Клеанстиле](#cleanstyle)||
+|[CMFCVisualManagerOffice2007:: Жеткаптионбартекстколор](#getcaptionbartextcolor)||
+|[CMFCVisualManagerOffice2007:: Жесигхлигхтедменуитемтекстколор](#gethighlightedmenuitemtextcolor)||
+|[CMFCVisualManagerOffice2007:: Жетменуитемтекстколор](#getmenuitemtextcolor)||
+|[CMFCVisualManagerOffice2007:: Жетнкбтнсизе](#getncbtnsize)||
+|[CMFCVisualManagerOffice2007:: Жетриббонбар](#getribbonbar)||
+|[CMFCVisualManagerOffice2007:: Жетриббонхиперлинктекстколор](#getribbonhyperlinktextcolor)||
+|[CMFCVisualManagerOffice2007:: Жетриббонпопупбордерсизе](#getribbonpopupbordersize)||
+|[CMFCVisualManagerOffice2007:: Жетриббонкуиккакцесстулбарчевроноффсет](#getribbonquickaccesstoolbarchevronoffset)||
+|[CMFCVisualManagerOffice2007:: Жетриббонкуиккакцесстулбарригхтмаргин](#getribbonquickaccesstoolbarrightmargin)||
+|[CMFCVisualManagerOffice2007:: Жетриббонкуиккакцесстулбартекстколор](#getribbonquickaccesstoolbartextcolor)||
+|[CMFCVisualManagerOffice2007:: Жетриббонстатусбартекстколор](#getribbonstatusbartextcolor)||
+|[CMFCVisualManagerOffice2007:: Жетшоваллменуитемшеигхт](#getshowallmenuitemsheight)||
+|[CMFCVisualManagerOffice2007:: Жетстатусбарпанетекстколор](#getstatusbarpanetextcolor)||
+|`CMFCVisualManagerOffice2007::GetStyle`|Возвращает текущую цветовую схему `CMFCVisualManagerOffice2007` графического пользовательского интерфейса, которая, в свою очередь, имитирует графический пользовательский интерфейс Microsoft Office 2007.|
+|[CMFCVisualManagerOffice2007:: Жеттабфрамеколорс](#gettabframecolors)||
+|[CMFCVisualManagerOffice2007:: Жеттабхорзмаргин](#gettabhorzmargin)||
+|[CMFCVisualManagerOffice2007:: Жеттабтекстколор](#gettabtextcolor)||
+|[CMFCVisualManagerOffice2007:: Жеттулбарбуттонтекстколор](#gettoolbarbuttontextcolor)||
+|[CMFCVisualManagerOffice2007:: Жеттулбардисабледтекстколор](#gettoolbardisabledtextcolor)||
+|[CMFCVisualManagerOffice2007:: Жеттултипинфо](#gettooltipinfo)||
+|[CMFCVisualManagerOffice2007:: Ишигхлигхтвхолеменуитем](#ishighlightwholemenuitem)||
+|[CMFCVisualManagerOffice2007:: Ислайередриббонкэйтип](#islayeredribbonkeytip)||
+|[CMFCVisualManagerOffice2007:: Исовнердравкаптион](#isownerdrawcaption)||
+|[CMFCVisualManagerOffice2007:: Исовнердравменучекк](#isownerdrawmenucheck)||
+|[CMFCVisualManagerOffice2007:: Исриббонпресент](#isribbonpresent)||
+|[CMFCVisualManagerOffice2007:: Ондравбаргриппер](#ondrawbargripper)||
+|[CMFCVisualManagerOffice2007:: Ондравбуттонбордер](#ondrawbuttonborder)||
+|[CMFCVisualManagerOffice2007:: Ондравбуттонсепаратор](#ondrawbuttonseparator)||
+|[CMFCVisualManagerOffice2007:: Ондравкаптионбаринфоареа](#ondrawcaptionbarinfoarea)||
+|[CMFCVisualManagerOffice2007:: Ондравчеккбоксекс](#ondrawcheckboxex)||
+|[CMFCVisualManagerOffice2007:: Ондравкомбобордер](#ondrawcomboborder)||
+|[CMFCVisualManagerOffice2007:: Ондравкомбодропбуттон](#ondrawcombodropbutton)||
+|[CMFCVisualManagerOffice2007:: Ондравдефаултриббонимаже](#ondrawdefaultribbonimage)||
+|[CMFCVisualManagerOffice2007:: Ондраведитбордер](#ondraweditborder)||
+|[CMFCVisualManagerOffice2007:: Ондравфлоатингтулбарбордер](#ondrawfloatingtoolbarborder)||
+|[CMFCVisualManagerOffice2007:: Ондравхеадерктрлбордер](#ondrawheaderctrlborder)||
+|[CMFCVisualManagerOffice2007:: Ондравменубордер](#ondrawmenuborder)||
+|[CMFCVisualManagerOffice2007:: Ондравменучекк](#ondrawmenucheck)||
+|[CMFCVisualManagerOffice2007:: Ондравменуитембуттон](#ondrawmenuitembutton)||
+|[CMFCVisualManagerOffice2007:: Ондравменулабел](#ondrawmenulabel)||
+|[CMFCVisualManagerOffice2007:: Ондравменуресизебар](#ondrawmenuresizebar)||
+|[CMFCVisualManagerOffice2007:: Ондравменускроллбуттон](#ondrawmenuscrollbutton)||
+|[CMFCVisualManagerOffice2007:: Ондравменусистембуттон](#ondrawmenusystembutton)||
+|[CMFCVisualManagerOffice2007:: Ондравминифрамебордер](#ondrawminiframeborder)||
+|[CMFCVisualManagerOffice2007:: Ондраваутлукбарсплиттер](#ondrawoutlookbarsplitter)||
+|[CMFCVisualManagerOffice2007:: Ондраваутлукпажебуттонбордер](#ondrawoutlookpagebuttonborder)||
+|[CMFCVisualManagerOffice2007:: Ондравпанекаптион](#ondrawpanecaption)||
+|[CMFCVisualManagerOffice2007:: Ондравпопупвиндовкаптион](#ondrawpopupwindowcaption)||
+|[CMFCVisualManagerOffice2007:: Ондравпропертишитлиститем](#ondrawpropertysheetlistitem)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонаппликатионбуттон](#ondrawribbonapplicationbutton)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонбуттонбордер](#ondrawribbonbuttonborder)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонбуттонсграуп](#ondrawribbonbuttonsgroup)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонкаптион](#ondrawribboncaption)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонкаптионбуттон](#ondrawribboncaptionbutton)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонкатегори](#ondrawribboncategory)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонкатегорикаптион](#ondrawribboncategorycaption)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонкатегорискролл](#ondrawribboncategoryscroll)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонкатегоритаб](#ondrawribboncategorytab)||
+|[CMFCVisualManagerOffice2007:: Ондравриббончеккбоксонлист](#ondrawribboncheckboxonlist)||
+|[CMFCVisualManagerOffice2007:: Ондравриббондефаултпанебуттон](#ondrawribbondefaultpanebutton)||
+|[CMFCVisualManagerOffice2007:: Ондравриббондефаултпанебуттониндикатор](#ondrawribbondefaultpanebuttonindicator)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонгаллерибордер](#ondrawribbongalleryborder)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонгаллерибуттон](#ondrawribbongallerybutton)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонкэйтип](#ondrawribbonkeytip)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонмаинпанелбуттонбордер](#ondrawribbonmainpanelbuttonborder)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонмаинпанелфраме](#ondrawribbonmainpanelframe)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонменучеккфраме](#ondrawribbonmenucheckframe)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонпанел](#ondrawribbonpanel)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонпанелкаптион](#ondrawribbonpanelcaption)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонпрогрессбар](#ondrawribbonprogressbar)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонрецентфилесфраме](#ondrawribbonrecentfilesframe)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонслидерчаннел](#ondrawribbonsliderchannel)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонслидерсумб](#ondrawribbonsliderthumb)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонслидерзумбуттон](#ondrawribbonsliderzoombutton)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонстатусбарпане](#ondrawribbonstatusbarpane)||
+|[CMFCVisualManagerOffice2007:: Ондравриббонтабсфраме](#ondrawribbontabsframe)||
+|[CMFCVisualManagerOffice2007:: Ондравскроллбуттонс](#ondrawscrollbuttons)||
+|[CMFCVisualManagerOffice2007:: Ондравсепаратор](#ondrawseparator)||
+|[CMFCVisualManagerOffice2007:: Ондравшоваллменуитемс](#ondrawshowallmenuitems)||
+|[CMFCVisualManagerOffice2007:: Ондравстатусбарпанебордер](#ondrawstatusbarpaneborder)||
+|[CMFCVisualManagerOffice2007:: Ондравстатусбарсизебокс](#ondrawstatusbarsizebox)||
+|[CMFCVisualManagerOffice2007:: Ондравтаб](#ondrawtab)||
+|[CMFCVisualManagerOffice2007:: Ондравтабсбуттонбордер](#ondrawtabsbuttonborder)||
+|[CMFCVisualManagerOffice2007:: Ондравтаск](#ondrawtask)||
+|[CMFCVisualManagerOffice2007:: Ондравтасксграупкаптион](#ondrawtasksgroupcaption)||
+|[CMFCVisualManagerOffice2007:: Ондравтеароффкаптион](#ondrawtearoffcaption)||
+|[CMFCVisualManagerOffice2007:: Онерасемдиклиентареа](#onerasemdiclientarea)||
+|[CMFCVisualManagerOffice2007:: Онерасетабсареа](#onerasetabsarea)||
+|[CMFCVisualManagerOffice2007:: Онерасетабсбуттон](#onerasetabsbutton)||
+|[CMFCVisualManagerOffice2007:: Онерасетабсфраме](#onerasetabsframe)||
+|[CMFCVisualManagerOffice2007:: Онфиллбарбаккграунд](#onfillbarbackground)||
+|[CMFCVisualManagerOffice2007:: Онфиллбуттонинтериор](#onfillbuttoninterior)||
+|[CMFCVisualManagerOffice2007:: Онфиллкаптионбарбуттон](#onfillcaptionbarbutton)||
+|[CMFCVisualManagerOffice2007:: Онфиллхигхлигхтедареа](#onfillhighlightedarea)||
+|[CMFCVisualManagerOffice2007:: Онфиллминифрамекаптион](#onfillminiframecaption)||
+|[CMFCVisualManagerOffice2007:: Онфиллаутлукбаркаптион](#onfilloutlookbarcaption)||
+|[CMFCVisualManagerOffice2007:: Онфиллаутлукпажебуттон](#onfilloutlookpagebutton)||
+|[CMFCVisualManagerOffice2007:: Онфиллпопупвиндовбаккграунд](#onfillpopupwindowbackground)||
+|[CMFCVisualManagerOffice2007:: Онфиллриббонбуттон](#onfillribbonbutton)||
+|[CMFCVisualManagerOffice2007:: Онфиллриббонедит](#onfillribbonedit)||
+|[CMFCVisualManagerOffice2007:: Онфиллриббонмаинпанелбуттон](#onfillribbonmainpanelbutton)||
+|[CMFCVisualManagerOffice2007:: Онфиллриббонменуфраме](#onfillribbonmenuframe)||
+|[CMFCVisualManagerOffice2007:: Онфиллриббонкуиккакцесстулбарпопуп](#onfillribbonquickaccesstoolbarpopup)||
+|[CMFCVisualManagerOffice2007:: Онфиллтаб](#onfilltab)||
+|[CMFCVisualManagerOffice2007:: Онхигхлигхтменуитем](#onhighlightmenuitem)||
+|[CMFCVisualManagerOffice2007:: Онхигхлигхтрарелюседменуитемс](#onhighlightrarelyusedmenuitems)||
+|[CMFCVisualManagerOffice2007:: Оннкактивате](#onncactivate)||
+|[CMFCVisualManagerOffice2007:: Оннкпаинт](#onncpaint)||
+|[CMFCVisualManagerOffice2007:: Онсетвиндоврегион](#onsetwindowregion)||
+|[CMFCVisualManagerOffice2007:: Онупдатесистемколорс](#onupdatesystemcolors)||
+|[CMFCVisualManagerOffice2007:: Сетресаурцехандле](#setresourcehandle)||
+|`CMFCVisualManagerOffice2007::SetStyle`|Задает цветовую схему `CMFCVisualManagerOffice2007` графического пользовательского интерфейса.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Используйте `CMFCVisualManagerOffice2007` для изменения внешнего вида приложения, чтобы напоминать microsoft Office 2007. Этот визуальный менеджер требует, чтобы вы установили стиль, прежде чем использовать его. Перед тем, `CMFCVisualManager::SetDefaultManager`как пройти этот визуальный `CMFCVisualManagerOffice2007::SetStyle`менеджер, вы должны вызвать статическую функцию.
+Используйте, `CMFCVisualManagerOffice2007` чтобы изменить внешний вид приложения так, чтобы он наглядел примерно так: Microsoft Office 2007. Для этого визуального диспетчера необходимо задать стиль перед его использованием. Перед передачей этого визуального элемента управления в `CMFCVisualManager::SetDefaultManager` необходимо вызвать статическую функцию `CMFCVisualManagerOffice2007::SetStyle` .
 
 ## <a name="example"></a>Пример
 
-Ниже приводится следующий пример, как использовать визуальный менеджер Office 2007. Этот фрагмент кода является частью [образца демо-версии оповещения рабочего стола.](../../overview/visual-cpp-samples.md)
+В следующем примере показано, как использовать Visual Manager Office 2007. Этот фрагмент кода является частью [демонстрационного примера оповещения Desktop](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#7](../../mfc/reference/codesnippet/cpp/cmfcvisualmanageroffice2007-class_1.cpp)]
 
@@ -384,7 +385,7 @@ class CMFCVisualManagerOffice2007 : public CMFCVisualManagerOffice2003
 
 [CObject](../../mfc/reference/cobject-class.md)
 
-[CMFCBaseВизуальныйМенеджер](../../mfc/reference/cmfcbasevisualmanager-class.md)
+[кмфкбасевисуалманажер](../../mfc/reference/cmfcbasevisualmanager-class.md)
 
 [CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md)
 
@@ -396,9 +397,9 @@ class CMFCVisualManagerOffice2007 : public CMFCVisualManagerOffice2003
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxvisualmanageroffice2007.h
+**Заголовок:** afxvisualmanageroffice2007. h
 
-## <a name="cmfcvisualmanageroffice2007alwayshighlight3dtabs"></a><a name="alwayshighlight3dtabs"></a>CMFCVisualManagerOffice2007::AlwaysHighlight3DTabs
+## <a name="cmfcvisualmanageroffice2007alwayshighlight3dtabs"></a><a name="alwayshighlight3dtabs"></a> CMFCVisualManagerOffice2007::AlwaysHighlight3DTabs
 
 ```
 virtual BOOL AlwaysHighlight3DTabs() const;
@@ -406,17 +407,17 @@ virtual BOOL AlwaysHighlight3DTabs() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007cleanstyle"></a><a name="cleanstyle"></a>CMFCVisualManagerOffice2007:CleanStyle
+## <a name="cmfcvisualmanageroffice2007cleanstyle"></a><a name="cleanstyle"></a> CMFCVisualManagerOffice2007:: Клеанстиле
 
 ```
 static void __stdcall CleanStyle();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007getcaptionbartextcolor"></a><a name="getcaptionbartextcolor"></a>CMFCVisualManagerOffice2007::GetCaptionBarTextColor
+## <a name="cmfcvisualmanageroffice2007getcaptionbartextcolor"></a><a name="getcaptionbartextcolor"></a> CMFCVisualManagerOffice2007:: Жеткаптионбартекстколор
 
 ```
 virtual COLORREF GetCaptionBarTextColor(CMFCCaptionBar* pBar);
@@ -424,13 +425,13 @@ virtual COLORREF GetCaptionBarTextColor(CMFCCaptionBar* pBar);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
+окне *пбар*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007gethighlightedmenuitemtextcolor"></a><a name="gethighlightedmenuitemtextcolor"></a>CMFCVisualManagerOffice2007::GetHighlightedMenuTextColor
+## <a name="cmfcvisualmanageroffice2007gethighlightedmenuitemtextcolor"></a><a name="gethighlightedmenuitemtextcolor"></a> CMFCVisualManagerOffice2007:: Жесигхлигхтедменуитемтекстколор
 
 ```
 virtual COLORREF GetHighlightedMenuItemTextColor(CMFCToolBarMenuButton* pButton);
@@ -438,13 +439,13 @@ virtual COLORREF GetHighlightedMenuItemTextColor(CMFCToolBarMenuButton* pButton)
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pButton*<br/>
+окне *пбуттон*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007getmenuitemtextcolor"></a><a name="getmenuitemtextcolor"></a>CMFCVisualManagerOffice2007:GetMenuTextColor
+## <a name="cmfcvisualmanageroffice2007getmenuitemtextcolor"></a><a name="getmenuitemtextcolor"></a> CMFCVisualManagerOffice2007:: Жетменуитемтекстколор
 
 ```
 virtual COLORREF GetMenuItemTextColor(
@@ -455,15 +456,15 @@ virtual COLORREF GetMenuItemTextColor(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pButton*<br/>
-(в) *bНазалион*<br/>
-(в) *bDisabled*<br/>
+окне *пбуттон*<br/>
+окне *бхигхлигхтед*<br/>
+окне *бдисаблед*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007getncbtnsize"></a><a name="getncbtnsize"></a>CMFCVisualManagerOffice2007:GetNcBtnSize
+## <a name="cmfcvisualmanageroffice2007getncbtnsize"></a><a name="getncbtnsize"></a> CMFCVisualManagerOffice2007:: Жетнкбтнсизе
 
 ```
 virtual CSize GetNcBtnSize(BOOL bSmall) const;
@@ -471,13 +472,13 @@ virtual CSize GetNcBtnSize(BOOL bSmall) const;
 
 ### <a name="parameters"></a>Параметры
 
-(в) *bСмеломбл*<br/>
+окне *бсмалл*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007getribbonbar"></a><a name="getribbonbar"></a>CMFCVisualManagerOffice2007:GetRibbonBar
+## <a name="cmfcvisualmanageroffice2007getribbonbar"></a><a name="getribbonbar"></a> CMFCVisualManagerOffice2007:: Жетриббонбар
 
 ```
 CMFCRibbonBar* GetRibbonBar(CWnd* pWnd) const;
@@ -485,13 +486,13 @@ CMFCRibbonBar* GetRibbonBar(CWnd* pWnd) const;
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pWnd*<br/>
+окне *приводится*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007getribbonhyperlinktextcolor"></a><a name="getribbonhyperlinktextcolor"></a>CMFCVisualManagerOffice2007:GetRibbonHyperlinkTextColor
+## <a name="cmfcvisualmanageroffice2007getribbonhyperlinktextcolor"></a><a name="getribbonhyperlinktextcolor"></a> CMFCVisualManagerOffice2007:: Жетриббонхиперлинктекстколор
 
 ```
 virtual COLORREF GetRibbonHyperlinkTextColor(CMFCRibbonLinkCtrl* pHyperLink);
@@ -499,13 +500,13 @@ virtual COLORREF GetRibbonHyperlinkTextColor(CMFCRibbonLinkCtrl* pHyperLink);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pHyperLink*<br/>
+окне *фиперлинк*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007getribbonpopupbordersize"></a><a name="getribbonpopupbordersize"></a>CMFCVisualManagerOffice2007:GetRibbonPopupBorderSize
+## <a name="cmfcvisualmanageroffice2007getribbonpopupbordersize"></a><a name="getribbonpopupbordersize"></a> CMFCVisualManagerOffice2007:: Жетриббонпопупбордерсизе
 
 ```
 virtual int GetRibbonPopupBorderSize(const CMFCRibbonPanelMenu* pPopup) const;
@@ -513,13 +514,13 @@ virtual int GetRibbonPopupBorderSize(const CMFCRibbonPanelMenu* pPopup) const;
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pPopup*<br/>
+окне *ппопуп*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007getribbonquickaccesstoolbarchevronoffset"></a><a name="getribbonquickaccesstoolbarchevronoffset"></a>CMFCVisualManagerOffice2007::GetRibbonКвиКвИКвАйтТулБарШевронСтом
+## <a name="cmfcvisualmanageroffice2007getribbonquickaccesstoolbarchevronoffset"></a><a name="getribbonquickaccesstoolbarchevronoffset"></a> CMFCVisualManagerOffice2007:: Жетриббонкуиккакцесстулбарчевроноффсет
 
 ```
 virtual int GetRibbonQuickAccessToolBarChevronOffset();
@@ -527,9 +528,9 @@ virtual int GetRibbonQuickAccessToolBarChevronOffset();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007getribbonquickaccesstoolbarrightmargin"></a><a name="getribbonquickaccesstoolbarrightmargin"></a>CMFCVisualManagerOffice2007:GetRibbonКваДоступToolRightMargin
+## <a name="cmfcvisualmanageroffice2007getribbonquickaccesstoolbarrightmargin"></a><a name="getribbonquickaccesstoolbarrightmargin"></a> CMFCVisualManagerOffice2007:: Жетриббонкуиккакцесстулбарригхтмаргин
 
 ```
 virtual int GetRibbonQuickAccessToolBarRightMargin();
@@ -537,9 +538,9 @@ virtual int GetRibbonQuickAccessToolBarRightMargin();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007getribbonquickaccesstoolbartextcolor"></a><a name="getribbonquickaccesstoolbartextcolor"></a>CMFCVisualManagerOffice2007:GetRibbonКваДоступToolToolTextColorЦвет
+## <a name="cmfcvisualmanageroffice2007getribbonquickaccesstoolbartextcolor"></a><a name="getribbonquickaccesstoolbartextcolor"></a> CMFCVisualManagerOffice2007:: Жетриббонкуиккакцесстулбартекстколор
 
 ```
 virtual COLORREF GetRibbonQuickAccessToolBarTextColor(BOOL bDisabled = FALSE);
@@ -547,13 +548,13 @@ virtual COLORREF GetRibbonQuickAccessToolBarTextColor(BOOL bDisabled = FALSE);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *bDisabled*<br/>
+окне *бдисаблед*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007getribbonstatusbartextcolor"></a><a name="getribbonstatusbartextcolor"></a>CMFCVisualManagerOffice2007:GetRibbonStatusBarTextColor
+## <a name="cmfcvisualmanageroffice2007getribbonstatusbartextcolor"></a><a name="getribbonstatusbartextcolor"></a> CMFCVisualManagerOffice2007:: Жетриббонстатусбартекстколор
 
 ```
 virtual COLORREF GetRibbonStatusBarTextColor(CMFCRibbonStatusBar* pStatusBar);
@@ -561,13 +562,13 @@ virtual COLORREF GetRibbonStatusBarTextColor(CMFCRibbonStatusBar* pStatusBar);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pStatusBar*<br/>
+окне *пстатусбар*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007getshowallmenuitemsheight"></a><a name="getshowallmenuitemsheight"></a>CMFCVisualManagerOffice2007:GetShowAllMenuItemsВысота
+## <a name="cmfcvisualmanageroffice2007getshowallmenuitemsheight"></a><a name="getshowallmenuitemsheight"></a> CMFCVisualManagerOffice2007:: Жетшоваллменуитемшеигхт
 
 ```
 virtual int GetShowAllMenuItemsHeight(
@@ -577,14 +578,14 @@ virtual int GetShowAllMenuItemsHeight(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *размерПо умолчанию*<br/>
+окне *основной контроллер домена*<br/>
+окне *сизедефаулт*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007getstatusbarpanetextcolor"></a><a name="getstatusbarpanetextcolor"></a>CMFCVisualManagerOffice2007:GetStatusBarPaneTextColor
+## <a name="cmfcvisualmanageroffice2007getstatusbarpanetextcolor"></a><a name="getstatusbarpanetextcolor"></a> CMFCVisualManagerOffice2007:: Жетстатусбарпанетекстколор
 
 ```
 virtual COLORREF GetStatusBarPaneTextColor(
@@ -594,14 +595,14 @@ virtual COLORREF GetStatusBarPaneTextColor(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pStatusBar*<br/>
-(в) *pPane*<br/>
+окне *пстатусбар*<br/>
+окне *ппане*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007gettabframecolors"></a><a name="gettabframecolors"></a>CMFCVisualManagerOffice2007:GetTabFrameColors
+## <a name="cmfcvisualmanageroffice2007gettabframecolors"></a><a name="gettabframecolors"></a> CMFCVisualManagerOffice2007:: Жеттабфрамеколорс
 
 ```
 virtual void GetTabFrameColors(
@@ -618,19 +619,19 @@ virtual void GetTabFrameColors(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pTabWnd*<br/>
-(в) *clrDark*<br/>
-(в) *clrBlack*<br/>
-(в) *clrHighlight*<br/>
-(в) *clrFace*<br/>
-(в) *clrDarkShadow*<br/>
-(в) *clrLight*<br/>
-(в) *pbrFace*<br/>
-(в) *pbrBlack*<br/>
+окне *птабвнд*<br/>
+окне *клрдарк*<br/>
+окне *клрблакк*<br/>
+окне *клрхигхлигхт*<br/>
+окне *клрфаце*<br/>
+окне *клрдаркшадов*<br/>
+окне *клрлигхт*<br/>
+окне *пбрфаце*<br/>
+окне *пбрблакк*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007gettabhorzmargin"></a><a name="gettabhorzmargin"></a>CMFCVisualManagerOffice2007:GetTabHorzMargin
+## <a name="cmfcvisualmanageroffice2007gettabhorzmargin"></a><a name="gettabhorzmargin"></a> CMFCVisualManagerOffice2007:: Жеттабхорзмаргин
 
 ```
 virtual int GetTabHorzMargin(const CMFCBaseTabCtrl* pTabWnd);
@@ -638,13 +639,13 @@ virtual int GetTabHorzMargin(const CMFCBaseTabCtrl* pTabWnd);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pTabWnd*<br/>
+окне *птабвнд*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007gettabtextcolor"></a><a name="gettabtextcolor"></a>CMFCVisualManagerOffice2007:GetTabTextColor
+## <a name="cmfcvisualmanageroffice2007gettabtextcolor"></a><a name="gettabtextcolor"></a> CMFCVisualManagerOffice2007:: Жеттабтекстколор
 
 ```
 virtual COLORREF GetTabTextColor(
@@ -655,15 +656,15 @@ virtual COLORREF GetTabTextColor(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pTabWnd*<br/>
+окне *птабвнд*<br/>
 [in] *iTab*<br/>
-(в) *bIsActive*<br/>
+окне *бисактиве*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007gettoolbarbuttontextcolor"></a><a name="gettoolbarbuttontextcolor"></a>CMFCVisualManagerOffice2007:GetToolbarButtonText
+## <a name="cmfcvisualmanageroffice2007gettoolbarbuttontextcolor"></a><a name="gettoolbarbuttontextcolor"></a> CMFCVisualManagerOffice2007:: Жеттулбарбуттонтекстколор
 
 ```
 virtual COLORREF GetToolbarButtonTextColor(
@@ -673,14 +674,14 @@ virtual COLORREF GetToolbarButtonTextColor(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pButton*<br/>
-(в) *состояние*<br/>
+окне *пбуттон*<br/>
+окне *состояние*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007gettoolbardisabledtextcolor"></a><a name="gettoolbardisabledtextcolor"></a>CMFCVisualManagerOffice2007::GetToolbarDisabledDisabledTextColor
+## <a name="cmfcvisualmanageroffice2007gettoolbardisabledtextcolor"></a><a name="gettoolbardisabledtextcolor"></a> CMFCVisualManagerOffice2007:: Жеттулбардисабледтекстколор
 
 ```
 virtual COLORREF GetToolbarDisabledTextColor();
@@ -688,9 +689,9 @@ virtual COLORREF GetToolbarDisabledTextColor();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007gettooltipinfo"></a><a name="gettooltipinfo"></a>CMFCVisualManagerOffice2007:GetToolTipInfo
+## <a name="cmfcvisualmanageroffice2007gettooltipinfo"></a><a name="gettooltipinfo"></a> CMFCVisualManagerOffice2007:: Жеттултипинфо
 
 ```
 virtual BOOL GetToolTipInfo(
@@ -700,14 +701,14 @@ virtual BOOL GetToolTipInfo(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *парамы*<br/>
-(в) *nТип*<br/>
+окне *Параметры*<br/>
+окне *nуведомления*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ishighlightwholemenuitem"></a><a name="ishighlightwholemenuitem"></a>CMFCVisualManagerOffice2007:IsHighlightWholeMenuItem
+## <a name="cmfcvisualmanageroffice2007ishighlightwholemenuitem"></a><a name="ishighlightwholemenuitem"></a> CMFCVisualManagerOffice2007:: Ишигхлигхтвхолеменуитем
 
 ```
 virtual BOOL IsHighlightWholeMenuItem();
@@ -715,9 +716,9 @@ virtual BOOL IsHighlightWholeMenuItem();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007islayeredribbonkeytip"></a><a name="islayeredribbonkeytip"></a>CMFCVisualManagerOffice2007:IsLayeredRibbonKeyTip
+## <a name="cmfcvisualmanageroffice2007islayeredribbonkeytip"></a><a name="islayeredribbonkeytip"></a> CMFCVisualManagerOffice2007:: Ислайередриббонкэйтип
 
 ```
 virtual BOOL IsLayeredRibbonKeyTip() const;
@@ -725,9 +726,9 @@ virtual BOOL IsLayeredRibbonKeyTip() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007isownerdrawcaption"></a><a name="isownerdrawcaption"></a>CMFCVisualManagerOffice2007:IsOwnerDrawCaption
+## <a name="cmfcvisualmanageroffice2007isownerdrawcaption"></a><a name="isownerdrawcaption"></a> CMFCVisualManagerOffice2007:: Исовнердравкаптион
 
 ```
 virtual BOOL IsOwnerDrawCaption();
@@ -735,9 +736,9 @@ virtual BOOL IsOwnerDrawCaption();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007isownerdrawmenucheck"></a><a name="isownerdrawmenucheck"></a>CMFCVisualManagerOffice2007:IsOwnerdrawMenuCheck
+## <a name="cmfcvisualmanageroffice2007isownerdrawmenucheck"></a><a name="isownerdrawmenucheck"></a> CMFCVisualManagerOffice2007:: Исовнердравменучекк
 
 ```
 virtual BOOL IsOwnerDrawMenuCheck();
@@ -745,9 +746,9 @@ virtual BOOL IsOwnerDrawMenuCheck();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007isribbonpresent"></a><a name="isribbonpresent"></a>CMFCVisualManagerOffice2007:IsRibbonPresent
+## <a name="cmfcvisualmanageroffice2007isribbonpresent"></a><a name="isribbonpresent"></a> CMFCVisualManagerOffice2007:: Исриббонпресент
 
 ```
 BOOL IsRibbonPresent(CWnd* pWnd) const;
@@ -755,13 +756,13 @@ BOOL IsRibbonPresent(CWnd* pWnd) const;
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pWnd*<br/>
+окне *приводится*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawbargripper"></a><a name="ondrawbargripper"></a>CMFCVisualManagerOffice2007:OnDrawBarGripper
+## <a name="cmfcvisualmanageroffice2007ondrawbargripper"></a><a name="ondrawbargripper"></a> CMFCVisualManagerOffice2007:: Ондравбаргриппер
 
 ```
 virtual void OnDrawBarGripper(
@@ -773,14 +774,14 @@ virtual void OnDrawBarGripper(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *rectGripper*<br/>
-(в) *bHorz*<br/>
-(в) *pBar*<br/>
+окне *основной контроллер домена*<br/>
+окне *ректгриппер*<br/>
+окне *бхорз*<br/>
+окне *пбар*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawbuttonborder"></a><a name="ondrawbuttonborder"></a>CMFCVisualManagerOffice2007:OndrawbuttonBorder
+## <a name="cmfcvisualmanageroffice2007ondrawbuttonborder"></a><a name="ondrawbuttonborder"></a> CMFCVisualManagerOffice2007:: Ондравбуттонбордер
 
 ```
 virtual void OnDrawButtonBorder(
@@ -792,14 +793,14 @@ virtual void OnDrawButtonBorder(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pButton*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбуттон*<br/>
 [in] *rect*<br/>
-(в) *состояние*<br/>
+окне *состояние*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawbuttonseparator"></a><a name="ondrawbuttonseparator"></a>CMFCVisualManagerOffice2007:OnDrawButtonСепара
+## <a name="cmfcvisualmanageroffice2007ondrawbuttonseparator"></a><a name="ondrawbuttonseparator"></a> CMFCVisualManagerOffice2007:: Ондравбуттонсепаратор
 
 ```
 virtual void OnDrawButtonSeparator(
@@ -812,15 +813,15 @@ virtual void OnDrawButtonSeparator(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pButton*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбуттон*<br/>
 [in] *rect*<br/>
-(в) *состояние*<br/>
-(в) *bHorz*<br/>
+окне *состояние*<br/>
+окне *бхорз*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawcaptionbarinfoarea"></a><a name="ondrawcaptionbarinfoarea"></a>CMFCVisualManagerOffice2007:OndrawcaptionBarinfo
+## <a name="cmfcvisualmanageroffice2007ondrawcaptionbarinfoarea"></a><a name="ondrawcaptionbarinfoarea"></a> CMFCVisualManagerOffice2007:: Ондравкаптионбаринфоареа
 
 ```
 virtual void OnDrawCaptionBarInfoArea(
@@ -831,13 +832,13 @@ virtual void OnDrawCaptionBarInfoArea(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pBar*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбар*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawcheckboxex"></a><a name="ondrawcheckboxex"></a>CMFCVisualManagerOffice2007:OndrawCheckBoxex
+## <a name="cmfcvisualmanageroffice2007ondrawcheckboxex"></a><a name="ondrawcheckboxex"></a> CMFCVisualManagerOffice2007:: Ондравчеккбоксекс
 
 ```
 virtual void OnDrawCheckBoxEx(
@@ -851,16 +852,16 @@ virtual void OnDrawCheckBoxEx(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
-(в) *nState*<br/>
-(в) *bНазалион*<br/>
-(в) *bPressed*<br/>
-(в) *bВСтои*<br/>
+окне *nсведения*<br/>
+окне *бхигхлигхтед*<br/>
+окне *бпрессед*<br/>
+окне *бенаблед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawcomboborder"></a><a name="ondrawcomboborder"></a>CMFCVisualManagerOffice2007:OndrawComboBorder
+## <a name="cmfcvisualmanageroffice2007ondrawcomboborder"></a><a name="ondrawcomboborder"></a> CMFCVisualManagerOffice2007:: Ондравкомбобордер
 
 ```
 virtual void OnDrawComboBorder(
@@ -874,16 +875,16 @@ virtual void OnDrawComboBorder(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
-(в) *bDisabled*<br/>
-(в) *bIsDropped*<br/>
-(в) *bIsHighlighted*<br/>
-(в) *pButton*<br/>
+окне *бдисаблед*<br/>
+окне *бисдроппед*<br/>
+окне *бишигхлигхтед*<br/>
+окне *пбуттон*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawcombodropbutton"></a><a name="ondrawcombodropbutton"></a>CMFCVisualManagerOffice2007:OndrawComboDropButton
+## <a name="cmfcvisualmanageroffice2007ondrawcombodropbutton"></a><a name="ondrawcombodropbutton"></a> CMFCVisualManagerOffice2007:: Ондравкомбодропбуттон
 
 ```
 virtual void OnDrawComboDropButton(
@@ -897,16 +898,16 @@ virtual void OnDrawComboDropButton(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
-(в) *bDisabled*<br/>
-(в) *bIsDropped*<br/>
-(в) *bIsHighlighted*<br/>
-(в) *pButton*<br/>
+окне *бдисаблед*<br/>
+окне *бисдроппед*<br/>
+окне *бишигхлигхтед*<br/>
+окне *пбуттон*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawdefaultribbonimage"></a><a name="ondrawdefaultribbonimage"></a>CMFCVisualManagerOffice2007::OndrawDefaultRibbonImage
+## <a name="cmfcvisualmanageroffice2007ondrawdefaultribbonimage"></a><a name="ondrawdefaultribbonimage"></a> CMFCVisualManagerOffice2007:: Ондравдефаултриббонимаже
 
 ```
 virtual void OnDrawDefaultRibbonImage(
@@ -919,15 +920,15 @@ virtual void OnDrawDefaultRibbonImage(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *rectImage*<br/>
-(в) *bIsDisabled*<br/>
-(в) *bIsPressed*<br/>
-(в) *bIsHighlighted*<br/>
+окне *основной контроллер домена*<br/>
+окне *ректимаже*<br/>
+окне *бисдисаблед*<br/>
+окне *биспрессед*<br/>
+окне *бишигхлигхтед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondraweditborder"></a><a name="ondraweditborder"></a>CMFCVisualManagerOffice2007:OnDrawEditBorder
+## <a name="cmfcvisualmanageroffice2007ondraweditborder"></a><a name="ondraweditborder"></a> CMFCVisualManagerOffice2007:: Ондраведитбордер
 
 ```
 virtual void OnDrawEditBorder(
@@ -940,15 +941,15 @@ virtual void OnDrawEditBorder(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
-(в) *bDisabled*<br/>
-(в) *bIsHighlighted*<br/>
-(в) *pButton*<br/>
+окне *бдисаблед*<br/>
+окне *бишигхлигхтед*<br/>
+окне *пбуттон*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawfloatingtoolbarborder"></a><a name="ondrawfloatingtoolbarborder"></a>CMFCVisualManagerOffice2007:OnDrawFloatingToolbarBorder
+## <a name="cmfcvisualmanageroffice2007ondrawfloatingtoolbarborder"></a><a name="ondrawfloatingtoolbarborder"></a> CMFCVisualManagerOffice2007:: Ондравфлоатингтулбарбордер
 
 ```
 virtual void OnDrawFloatingToolbarBorder(
@@ -960,14 +961,14 @@ virtual void OnDrawFloatingToolbarBorder(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pToolBar*<br/>
-(в) *rectBorder*<br/>
-(в) *rectBorderSize*<br/>
+окне *основной контроллер домена*<br/>
+окне *птулбар*<br/>
+окне *ректбордер*<br/>
+окне *ректбордерсизе*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawheaderctrlborder"></a><a name="ondrawheaderctrlborder"></a>CMFCVisualManagerOffice2007:OnDrawHeaderCtrlBorder
+## <a name="cmfcvisualmanageroffice2007ondrawheaderctrlborder"></a><a name="ondrawheaderctrlborder"></a> CMFCVisualManagerOffice2007:: Ондравхеадерктрлбордер
 
 ```
 virtual void OnDrawHeaderCtrlBorder(
@@ -980,15 +981,15 @@ virtual void OnDrawHeaderCtrlBorder(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pCtrl*<br/>
-(в) *pDC*<br/>
+окне *pCtrl*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
-(в) *bIsPressed*<br/>
-(в) *bIsHighlighted*<br/>
+окне *биспрессед*<br/>
+окне *бишигхлигхтед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawmenuborder"></a><a name="ondrawmenuborder"></a>CMFCVisualManagerOffice2007:OndrawMenuBorder
+## <a name="cmfcvisualmanageroffice2007ondrawmenuborder"></a><a name="ondrawmenuborder"></a> CMFCVisualManagerOffice2007:: Ондравменубордер
 
 ```
 virtual void OnDrawMenuBorder(
@@ -999,13 +1000,13 @@ virtual void OnDrawMenuBorder(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pMenu*<br/>
+окне *основной контроллер домена*<br/>
+окне *пмену*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawmenucheck"></a><a name="ondrawmenucheck"></a>CMFCVisualManagerOffice2007:OndrawMenuCheck
+## <a name="cmfcvisualmanageroffice2007ondrawmenucheck"></a><a name="ondrawmenucheck"></a> CMFCVisualManagerOffice2007:: Ондравменучекк
 
 ```
 virtual void OnDrawMenuCheck(
@@ -1018,15 +1019,15 @@ virtual void OnDrawMenuCheck(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pButton*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбуттон*<br/>
 [in] *rect*<br/>
-(в) *bHighlight*<br/>
-(в) *bIsRadio*<br/>
+окне *бхигхлигхт*<br/>
+окне *бисрадио*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawmenuitembutton"></a><a name="ondrawmenuitembutton"></a>CMFCVisualManagerOffice2007:OndrawMenuitembutton
+## <a name="cmfcvisualmanageroffice2007ondrawmenuitembutton"></a><a name="ondrawmenuitembutton"></a> CMFCVisualManagerOffice2007:: Ондравменуитембуттон
 
 ```
 virtual void OnDrawMenuItemButton(
@@ -1039,15 +1040,15 @@ virtual void OnDrawMenuItemButton(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pButton*<br/>
-(в) *rectButton*<br/>
-(в) *bHighlight*<br/>
-(в) *bDisabled*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбуттон*<br/>
+окне *ректбуттон*<br/>
+окне *бхигхлигхт*<br/>
+окне *бдисаблед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawmenulabel"></a><a name="ondrawmenulabel"></a>CMFCVisualManagerOffice2007:OndrawMenuLabel
+## <a name="cmfcvisualmanageroffice2007ondrawmenulabel"></a><a name="ondrawmenulabel"></a> CMFCVisualManagerOffice2007:: Ондравменулабел
 
 ```
 virtual COLORREF OnDrawMenuLabel(
@@ -1057,14 +1058,14 @@ virtual COLORREF OnDrawMenuLabel(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawmenuresizebar"></a><a name="ondrawmenuresizebar"></a>CMFCVisualManagerOffice2007:OndrawMenuresizebar
+## <a name="cmfcvisualmanageroffice2007ondrawmenuresizebar"></a><a name="ondrawmenuresizebar"></a> CMFCVisualManagerOffice2007:: Ондравменуресизебар
 
 ```
 virtual void OnDrawMenuResizeBar(
@@ -1075,13 +1076,13 @@ virtual void OnDrawMenuResizeBar(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
-(в) *nResizeFlags*<br/>
+окне *нресизефлагс*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawmenuscrollbutton"></a><a name="ondrawmenuscrollbutton"></a>CMFCVisualManagerOffice2007:OndrawMenuScrollbutton
+## <a name="cmfcvisualmanageroffice2007ondrawmenuscrollbutton"></a><a name="ondrawmenuscrollbutton"></a> CMFCVisualManagerOffice2007:: Ондравменускроллбуттон
 
 ```
 virtual void OnDrawMenuScrollButton(
@@ -1095,16 +1096,16 @@ virtual void OnDrawMenuScrollButton(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
-(в) *bIsScrollDown*<br/>
-(в) *bIsHighlited*<br/>
-(в) *bIsPressed*<br/>
-(в) *bIsDisabled*<br/>
+окне *бисскроллдовн*<br/>
+окне *бишигхлитед*<br/>
+окне *биспрессед*<br/>
+окне *бисдисаблед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawmenusystembutton"></a><a name="ondrawmenusystembutton"></a>CMFCVisualManagerOffice2007:OndrawMenuSystemButton
+## <a name="cmfcvisualmanageroffice2007ondrawmenusystembutton"></a><a name="ondrawmenusystembutton"></a> CMFCVisualManagerOffice2007:: Ондравменусистембуттон
 
 ```
 virtual void OnDrawMenuSystemButton(
@@ -1117,15 +1118,15 @@ virtual void OnDrawMenuSystemButton(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
-(в) *uiSystemCommand*<br/>
-(в) *nСтиль*<br/>
-(в) *bHighlight*<br/>
+окне *уисистемкомманд*<br/>
+окне *нстиле*<br/>
+окне *бхигхлигхт*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawminiframeborder"></a><a name="ondrawminiframeborder"></a>CMFCVisualManagerOffice2007:OndrawMiniFrameBorder
+## <a name="cmfcvisualmanageroffice2007ondrawminiframeborder"></a><a name="ondrawminiframeborder"></a> CMFCVisualManagerOffice2007:: Ондравминифрамебордер
 
 ```
 virtual void OnDrawMiniFrameBorder(
@@ -1137,14 +1138,14 @@ virtual void OnDrawMiniFrameBorder(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pFrameWnd*<br/>
-(в) *rectBorder*<br/>
-(в) *rectBorderSize*<br/>
+окне *основной контроллер домена*<br/>
+окне *пфрамевнд*<br/>
+окне *ректбордер*<br/>
+окне *ректбордерсизе*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawoutlookbarsplitter"></a><a name="ondrawoutlookbarsplitter"></a>CMFCVisualManagerOffice2007:OndrawOutlookBarSplitter
+## <a name="cmfcvisualmanageroffice2007ondrawoutlookbarsplitter"></a><a name="ondrawoutlookbarsplitter"></a> CMFCVisualManagerOffice2007:: Ондраваутлукбарсплиттер
 
 ```
 virtual void OnDrawOutlookBarSplitter(
@@ -1154,12 +1155,12 @@ virtual void OnDrawOutlookBarSplitter(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *rectSplitter*<br/>
+окне *основной контроллер домена*<br/>
+окне *ректсплиттер*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawoutlookpagebuttonborder"></a><a name="ondrawoutlookpagebuttonborder"></a>CMFCVisualManagerOffice2007:OndrawOutlookPageButtonBorder
+## <a name="cmfcvisualmanageroffice2007ondrawoutlookpagebuttonborder"></a><a name="ondrawoutlookpagebuttonborder"></a> CMFCVisualManagerOffice2007:: Ондраваутлукпажебуттонбордер
 
 ```
 virtual void OnDrawOutlookPageButtonBorder(
@@ -1171,14 +1172,14 @@ virtual void OnDrawOutlookPageButtonBorder(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *rectBtn*<br/>
-(в) *bIsHighlighted*<br/>
-(в) *bIsPressed*<br/>
+окне *основной контроллер домена*<br/>
+окне *ректбтн*<br/>
+окне *бишигхлигхтед*<br/>
+окне *биспрессед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawpanecaption"></a><a name="ondrawpanecaption"></a>CMFCVisualManagerOffice2007:OnDrawPaneCaption
+## <a name="cmfcvisualmanageroffice2007ondrawpanecaption"></a><a name="ondrawpanecaption"></a> CMFCVisualManagerOffice2007:: Ондравпанекаптион
 
 ```
 virtual COLORREF OnDrawPaneCaption(
@@ -1191,17 +1192,17 @@ virtual COLORREF OnDrawPaneCaption(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pBar*<br/>
-(в) *bАктивный*<br/>
-(в) *rectCaption*<br/>
-(в) *rectButtons*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбар*<br/>
+окне *бактиве*<br/>
+окне *ректкаптион*<br/>
+окне *ректбуттонс*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawpopupwindowcaption"></a><a name="ondrawpopupwindowcaption"></a>CMFCVisualManagerOffice2007:OnDrawPopupWindowCaption
+## <a name="cmfcvisualmanageroffice2007ondrawpopupwindowcaption"></a><a name="ondrawpopupwindowcaption"></a> CMFCVisualManagerOffice2007:: Ондравпопупвиндовкаптион
 
 ```
 virtual COLORREF OnDrawPopupWindowCaption(
@@ -1212,15 +1213,15 @@ virtual COLORREF OnDrawPopupWindowCaption(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *rectCaption*<br/>
-(в) *pPopupWnd*<br/>
+окне *основной контроллер домена*<br/>
+окне *ректкаптион*<br/>
+окне *ппопупвнд*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawpropertysheetlistitem"></a><a name="ondrawpropertysheetlistitem"></a>CMFCVisualManagerOffice2007:OndrawPropertySheetlistItem
+## <a name="cmfcvisualmanageroffice2007ondrawpropertysheetlistitem"></a><a name="ondrawpropertysheetlistitem"></a> CMFCVisualManagerOffice2007:: Ондравпропертишитлиститем
 
 ```
 virtual COLORREF OnDrawPropertySheetListItem(
@@ -1233,17 +1234,17 @@ virtual COLORREF OnDrawPropertySheetListItem(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pРодитель*<br/>
+окне *основной контроллер домена*<br/>
+окне *ппарент*<br/>
 [in] *rect*<br/>
-(в) *bIsHighlihted*<br/>
-(в) *bIsSelected*<br/>
+окне *бишигхлихтед*<br/>
+окне *бисселектед*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbonapplicationbutton"></a><a name="ondrawribbonapplicationbutton"></a>CMFCVisualManagerOffice2007:OndrawRibbonApplicationButton
+## <a name="cmfcvisualmanageroffice2007ondrawribbonapplicationbutton"></a><a name="ondrawribbonapplicationbutton"></a> CMFCVisualManagerOffice2007:: Ондравриббонаппликатионбуттон
 
 ```
 virtual void OnDrawRibbonApplicationButton(
@@ -1253,12 +1254,12 @@ virtual void OnDrawRibbonApplicationButton(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pButton*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбуттон*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbonbuttonborder"></a><a name="ondrawribbonbuttonborder"></a>CMFCVisualManagerOffice2007:OndrawribbonButtonBorder
+## <a name="cmfcvisualmanageroffice2007ondrawribbonbuttonborder"></a><a name="ondrawribbonbuttonborder"></a> CMFCVisualManagerOffice2007:: Ондравриббонбуттонбордер
 
 ```
 virtual void OnDrawRibbonButtonBorder(
@@ -1268,12 +1269,12 @@ virtual void OnDrawRibbonButtonBorder(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pButton*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбуттон*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbonbuttonsgroup"></a><a name="ondrawribbonbuttonsgroup"></a>CMFCVisualManagerOffice2007:OnDrawRibbonButtonsGroup
+## <a name="cmfcvisualmanageroffice2007ondrawribbonbuttonsgroup"></a><a name="ondrawribbonbuttonsgroup"></a> CMFCVisualManagerOffice2007:: Ондравриббонбуттонсграуп
 
 ```
 virtual COLORREF OnDrawRibbonButtonsGroup(
@@ -1284,15 +1285,15 @@ virtual COLORREF OnDrawRibbonButtonsGroup(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pGroup*<br/>
-(в) *rectGroup*<br/>
+окне *основной контроллер домена*<br/>
+окне *пграуп*<br/>
+окне *ректграуп*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribboncaption"></a><a name="ondrawribboncaption"></a>CMFCVisualManagerOffice2007:OndrawRibbonCaption
+## <a name="cmfcvisualmanageroffice2007ondrawribboncaption"></a><a name="ondrawribboncaption"></a> CMFCVisualManagerOffice2007:: Ондравриббонкаптион
 
 ```
 virtual void OnDrawRibbonCaption(
@@ -1304,14 +1305,14 @@ virtual void OnDrawRibbonCaption(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pBar*<br/>
-(в) *rectCaption*<br/>
-(в) *rectText*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбар*<br/>
+окне *ректкаптион*<br/>
+окне *ректтекст*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribboncaptionbutton"></a><a name="ondrawribboncaptionbutton"></a>CMFCVisualManagerOffice2007::OndrawRibbonCaptionButton
+## <a name="cmfcvisualmanageroffice2007ondrawribboncaptionbutton"></a><a name="ondrawribboncaptionbutton"></a> CMFCVisualManagerOffice2007:: Ондравриббонкаптионбуттон
 
 ```
 virtual void OnDrawRibbonCaptionButton(
@@ -1321,12 +1322,12 @@ virtual void OnDrawRibbonCaptionButton(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pButton*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбуттон*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribboncategory"></a><a name="ondrawribboncategory"></a>CMFCVisualManagerOffice2007:OndrawRibbonКатегория
+## <a name="cmfcvisualmanageroffice2007ondrawribboncategory"></a><a name="ondrawribboncategory"></a> CMFCVisualManagerOffice2007:: Ондравриббонкатегори
 
 ```
 virtual void OnDrawRibbonCategory(
@@ -1337,13 +1338,13 @@ virtual void OnDrawRibbonCategory(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pКатегория*<br/>
-(в) *rectКатегория*<br/>
+окне *основной контроллер домена*<br/>
+окне *пкатегори*<br/>
+окне *ректкатегори*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribboncategorycaption"></a><a name="ondrawribboncategorycaption"></a>CMFCVisualManagerOffice2007:OndrawRibbonCategoryCaptioncaption
+## <a name="cmfcvisualmanageroffice2007ondrawribboncategorycaption"></a><a name="ondrawribboncategorycaption"></a> CMFCVisualManagerOffice2007:: Ондравриббонкатегорикаптион
 
 ```
 virtual COLORREF OnDrawRibbonCategoryCaption(
@@ -1353,14 +1354,14 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pContextCaption*<br/>
+окне *основной контроллер домена*<br/>
+окне *пконтексткаптион*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribboncategoryscroll"></a><a name="ondrawribboncategoryscroll"></a>CMFCVisualManagerOffice2007:OndrawRibbonCategoryScroll
+## <a name="cmfcvisualmanageroffice2007ondrawribboncategoryscroll"></a><a name="ondrawribboncategoryscroll"></a> CMFCVisualManagerOffice2007:: Ондравриббонкатегорискролл
 
 ```
 virtual void OnDrawRibbonCategoryScroll(
@@ -1370,12 +1371,12 @@ virtual void OnDrawRibbonCategoryScroll(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *прокрутка*<br/>
+окне *основной контроллер домена*<br/>
+окне *пскролл*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribboncategorytab"></a><a name="ondrawribboncategorytab"></a>CMFCVisualManagerOffice2007:OndrawRibbonCategoryTab
+## <a name="cmfcvisualmanageroffice2007ondrawribboncategorytab"></a><a name="ondrawribboncategorytab"></a> CMFCVisualManagerOffice2007:: Ондравриббонкатегоритаб
 
 ```
 virtual COLORREF OnDrawRibbonCategoryTab(
@@ -1386,15 +1387,15 @@ virtual COLORREF OnDrawRibbonCategoryTab(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pTab*<br/>
-(в) *bIsActive*<br/>
+окне *основной контроллер домена*<br/>
+окне *ПТАБ*<br/>
+окне *бисактиве*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribboncheckboxonlist"></a><a name="ondrawribboncheckboxonlist"></a>CMFCVisualManagerOffice2007:OndrawRibbonCheckBoxonlist
+## <a name="cmfcvisualmanageroffice2007ondrawribboncheckboxonlist"></a><a name="ondrawribboncheckboxonlist"></a> CMFCVisualManagerOffice2007:: Ондравриббончеккбоксонлист
 
 ```
 virtual void OnDrawRibbonCheckBoxOnList(
@@ -1407,15 +1408,15 @@ virtual void OnDrawRibbonCheckBoxOnList(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pCheckBox*<br/>
+окне *основной контроллер домена*<br/>
+окне *пчеккбокс*<br/>
 [in] *rect*<br/>
-(в) *bIsSelected*<br/>
-(в) *bНазалион*<br/>
+окне *бисселектед*<br/>
+окне *бхигхлигхтед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbondefaultpanebutton"></a><a name="ondrawribbondefaultpanebutton"></a>CMFCVisualManagerOffice2007:OnDrawRibbonDefaultPaneButton
+## <a name="cmfcvisualmanageroffice2007ondrawribbondefaultpanebutton"></a><a name="ondrawribbondefaultpanebutton"></a> CMFCVisualManagerOffice2007:: Ондравриббондефаултпанебуттон
 
 ```
 virtual void OnDrawRibbonDefaultPaneButton(
@@ -1425,12 +1426,12 @@ virtual void OnDrawRibbonDefaultPaneButton(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pButton*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбуттон*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbondefaultpanebuttonindicator"></a><a name="ondrawribbondefaultpanebuttonindicator"></a>CMFCVisualManagerOffice2007:OnDrawRibbonDefaultPaneButtonИндикатор
+## <a name="cmfcvisualmanageroffice2007ondrawribbondefaultpanebuttonindicator"></a><a name="ondrawribbondefaultpanebuttonindicator"></a> CMFCVisualManagerOffice2007:: Ондравриббондефаултпанебуттониндикатор
 
 ```
 virtual void OnDrawRibbonDefaultPaneButtonIndicator(
@@ -1443,15 +1444,15 @@ virtual void OnDrawRibbonDefaultPaneButtonIndicator(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pButton*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбуттон*<br/>
 [in] *rect*<br/>
-(в) *bIsSelected*<br/>
-(в) *bНазалион*<br/>
+окне *бисселектед*<br/>
+окне *бхигхлигхтед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbongalleryborder"></a><a name="ondrawribbongalleryborder"></a>CMFCVisualManagerOffice2007:OndrawRibbonGalleryBorder
+## <a name="cmfcvisualmanageroffice2007ondrawribbongalleryborder"></a><a name="ondrawribbongalleryborder"></a> CMFCVisualManagerOffice2007:: Ондравриббонгаллерибордер
 
 ```
 virtual void OnDrawRibbonGalleryBorder(
@@ -1462,13 +1463,13 @@ virtual void OnDrawRibbonGalleryBorder(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pButton*<br/>
-(в) *rectBorder*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбуттон*<br/>
+окне *ректбордер*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbongallerybutton"></a><a name="ondrawribbongallerybutton"></a>CMFCVisualManagerOffice2007:OndrawRibbonGalleryButton
+## <a name="cmfcvisualmanageroffice2007ondrawribbongallerybutton"></a><a name="ondrawribbongallerybutton"></a> CMFCVisualManagerOffice2007:: Ондравриббонгаллерибуттон
 
 ```
 virtual void OnDrawRibbonGalleryButton(
@@ -1478,12 +1479,12 @@ virtual void OnDrawRibbonGalleryButton(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pButton*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбуттон*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbonkeytip"></a><a name="ondrawribbonkeytip"></a>CMFCVisualManagerOffice2007:OndrawRibbonKeyTip
+## <a name="cmfcvisualmanageroffice2007ondrawribbonkeytip"></a><a name="ondrawribbonkeytip"></a> CMFCVisualManagerOffice2007:: Ондравриббонкэйтип
 
 ```
 virtual void OnDrawRibbonKeyTip(
@@ -1495,14 +1496,14 @@ virtual void OnDrawRibbonKeyTip(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pElement*<br/>
+окне *основной контроллер домена*<br/>
+окне *пелемент*<br/>
 [in] *rect*<br/>
-(в) *str*<br/>
+окне *str*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbonmainpanelbuttonborder"></a><a name="ondrawribbonmainpanelbuttonborder"></a>CMFCVisualManagerOffice2007:OndrawribbonMainPanelButtonborder
+## <a name="cmfcvisualmanageroffice2007ondrawribbonmainpanelbuttonborder"></a><a name="ondrawribbonmainpanelbuttonborder"></a> CMFCVisualManagerOffice2007:: Ондравриббонмаинпанелбуттонбордер
 
 ```
 virtual void OnDrawRibbonMainPanelButtonBorder(
@@ -1512,12 +1513,12 @@ virtual void OnDrawRibbonMainPanelButtonBorder(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pButton*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбуттон*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbonmainpanelframe"></a><a name="ondrawribbonmainpanelframe"></a>CMFCVisualManagerOffice2007:OndrawRibbonMainPanelFrame
+## <a name="cmfcvisualmanageroffice2007ondrawribbonmainpanelframe"></a><a name="ondrawribbonmainpanelframe"></a> CMFCVisualManagerOffice2007:: Ондравриббонмаинпанелфраме
 
 ```
 virtual void OnDrawRibbonMainPanelFrame(
@@ -1528,13 +1529,13 @@ virtual void OnDrawRibbonMainPanelFrame(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pPanel*<br/>
+окне *основной контроллер домена*<br/>
+окне *ппанел*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbonmenucheckframe"></a><a name="ondrawribbonmenucheckframe"></a>CMFCVisualManagerOffice2007::OndrawRibbonMenuCheckframe
+## <a name="cmfcvisualmanageroffice2007ondrawribbonmenucheckframe"></a><a name="ondrawribbonmenucheckframe"></a> CMFCVisualManagerOffice2007:: Ондравриббонменучеккфраме
 
 ```
 virtual void OnDrawRibbonMenuCheckFrame(
@@ -1545,13 +1546,13 @@ virtual void OnDrawRibbonMenuCheckFrame(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pButton*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбуттон*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbonpanel"></a><a name="ondrawribbonpanel"></a>CMFCVisualManagerOffice2007:OndrawRibbonPanel
+## <a name="cmfcvisualmanageroffice2007ondrawribbonpanel"></a><a name="ondrawribbonpanel"></a> CMFCVisualManagerOffice2007:: Ондравриббонпанел
 
 ```
 virtual COLORREF OnDrawRibbonPanel(
@@ -1563,16 +1564,16 @@ virtual COLORREF OnDrawRibbonPanel(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pPanel*<br/>
-(в) *rectPanel*<br/>
-(в) *rectCaption*<br/>
+окне *основной контроллер домена*<br/>
+окне *ппанел*<br/>
+окне *ректпанел*<br/>
+окне *ректкаптион*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbonpanelcaption"></a><a name="ondrawribbonpanelcaption"></a>CMFCVisualManagerOffice2007:OndrawRibbonPanelCaption
+## <a name="cmfcvisualmanageroffice2007ondrawribbonpanelcaption"></a><a name="ondrawribbonpanelcaption"></a> CMFCVisualManagerOffice2007:: Ондравриббонпанелкаптион
 
 ```
 virtual void OnDrawRibbonPanelCaption(
@@ -1583,13 +1584,13 @@ virtual void OnDrawRibbonPanelCaption(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pPanel*<br/>
-(в) *rectCaption*<br/>
+окне *основной контроллер домена*<br/>
+окне *ппанел*<br/>
+окне *ректкаптион*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbonprogressbar"></a><a name="ondrawribbonprogressbar"></a>CMFCVisualManagerOffice2007:OndrawRibbonProgressBar
+## <a name="cmfcvisualmanageroffice2007ondrawribbonprogressbar"></a><a name="ondrawribbonprogressbar"></a> CMFCVisualManagerOffice2007:: Ондравриббонпрогрессбар
 
 ```
 virtual void OnDrawRibbonProgressBar(
@@ -1602,15 +1603,15 @@ virtual void OnDrawRibbonProgressBar(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pProgress*<br/>
-(в) *rectProgress*<br/>
-(в) *rectChunk*<br/>
-(в) *bInfiniteMode*<br/>
+окне *основной контроллер домена*<br/>
+окне *ппрогресс*<br/>
+окне *ректпрогресс*<br/>
+окне *ректчунк*<br/>
+окне *бинфинитемоде*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbonrecentfilesframe"></a><a name="ondrawribbonrecentfilesframe"></a>CMFCVisualManagerOffice2007:OndrawribbonRecentFilesFrame
+## <a name="cmfcvisualmanageroffice2007ondrawribbonrecentfilesframe"></a><a name="ondrawribbonrecentfilesframe"></a> CMFCVisualManagerOffice2007:: Ондравриббонрецентфилесфраме
 
 ```
 virtual void OnDrawRibbonRecentFilesFrame(
@@ -1621,13 +1622,13 @@ virtual void OnDrawRibbonRecentFilesFrame(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pPanel*<br/>
+окне *основной контроллер домена*<br/>
+окне *ппанел*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbonsliderchannel"></a><a name="ondrawribbonsliderchannel"></a>CMFCVisualManagerOffice2007:OnDrawRibbonSliderChannel
+## <a name="cmfcvisualmanageroffice2007ondrawribbonsliderchannel"></a><a name="ondrawribbonsliderchannel"></a> CMFCVisualManagerOffice2007:: Ондравриббонслидерчаннел
 
 ```
 virtual void OnDrawRibbonSliderChannel(
@@ -1638,13 +1639,13 @@ virtual void OnDrawRibbonSliderChannel(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pSlider*<br/>
+окне *основной контроллер домена*<br/>
+окне *пслидер*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbonsliderthumb"></a><a name="ondrawribbonsliderthumb"></a>CMFCVisualManagerOffice2007:OnDrawRibbonSliderThumb
+## <a name="cmfcvisualmanageroffice2007ondrawribbonsliderthumb"></a><a name="ondrawribbonsliderthumb"></a> CMFCVisualManagerOffice2007:: Ондравриббонслидерсумб
 
 ```
 virtual void OnDrawRibbonSliderThumb(
@@ -1658,16 +1659,16 @@ virtual void OnDrawRibbonSliderThumb(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pSlider*<br/>
+окне *основной контроллер домена*<br/>
+окне *пслидер*<br/>
 [in] *rect*<br/>
-(в) *bIsHighlighted*<br/>
-(в) *bIsPressed*<br/>
-(в) *bIsDisabled*<br/>
+окне *бишигхлигхтед*<br/>
+окне *биспрессед*<br/>
+окне *бисдисаблед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbonsliderzoombutton"></a><a name="ondrawribbonsliderzoombutton"></a>CMFCVisualManagerOffice2007::OnDrawRibbonSliderЗоумБаттон
+## <a name="cmfcvisualmanageroffice2007ondrawribbonsliderzoombutton"></a><a name="ondrawribbonsliderzoombutton"></a> CMFCVisualManagerOffice2007:: Ондравриббонслидерзумбуттон
 
 ```
 virtual void OnDrawRibbonSliderZoomButton(
@@ -1682,17 +1683,17 @@ virtual void OnDrawRibbonSliderZoomButton(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pSlider*<br/>
+окне *основной контроллер домена*<br/>
+окне *пслидер*<br/>
 [in] *rect*<br/>
-(в) *bIs'oomOut*<br/>
-(в) *bIsHighlighted*<br/>
-(в) *bIsPressed*<br/>
-(в) *bIsDisabled*<br/>
+окне *бисзумаут*<br/>
+окне *бишигхлигхтед*<br/>
+окне *биспрессед*<br/>
+окне *бисдисаблед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbonstatusbarpane"></a><a name="ondrawribbonstatusbarpane"></a>CMFCVisualManagerOffice2007:OnDrawRibbonStatusBarPane
+## <a name="cmfcvisualmanageroffice2007ondrawribbonstatusbarpane"></a><a name="ondrawribbonstatusbarpane"></a> CMFCVisualManagerOffice2007:: Ондравриббонстатусбарпане
 
 ```
 virtual COLORREF OnDrawRibbonStatusBarPane(
@@ -1703,15 +1704,15 @@ virtual COLORREF OnDrawRibbonStatusBarPane(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pBar*<br/>
-(в) *pPane*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбар*<br/>
+окне *ппане*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawribbontabsframe"></a><a name="ondrawribbontabsframe"></a>CMFCVisualManagerOffice2007:OnDrawRibbonTabsFrame
+## <a name="cmfcvisualmanageroffice2007ondrawribbontabsframe"></a><a name="ondrawribbontabsframe"></a> CMFCVisualManagerOffice2007:: Ондравриббонтабсфраме
 
 ```
 virtual COLORREF OnDrawRibbonTabsFrame(
@@ -1722,15 +1723,15 @@ virtual COLORREF OnDrawRibbonTabsFrame(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pWndRibbonBar*<br/>
-(в) *rectTab*<br/>
+окне *основной контроллер домена*<br/>
+окне *пвндриббонбар*<br/>
+окне *ректтаб*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawscrollbuttons"></a><a name="ondrawscrollbuttons"></a>CMFCVisualManagerOffice2007:OnDrawScrollButtons
+## <a name="cmfcvisualmanageroffice2007ondrawscrollbuttons"></a><a name="ondrawscrollbuttons"></a> CMFCVisualManagerOffice2007:: Ондравскроллбуттонс
 
 ```
 virtual void OnDrawScrollButtons(
@@ -1743,15 +1744,15 @@ virtual void OnDrawScrollButtons(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
-(в) *nBorderSize*<br/>
-(в) *iImage*<br/>
-(в) *bHilited*<br/>
+окне *нбордерсизе*<br/>
+окне *иимаже*<br/>
+окне *бхилитед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawseparator"></a><a name="ondrawseparator"></a>CMFCVisualManagerOffice2007:OnDrawСепаратор
+## <a name="cmfcvisualmanageroffice2007ondrawseparator"></a><a name="ondrawseparator"></a> CMFCVisualManagerOffice2007:: Ондравсепаратор
 
 ```
 virtual void OnDrawSeparator(
@@ -1763,14 +1764,14 @@ virtual void OnDrawSeparator(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pBar*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбар*<br/>
 [in] *rect*<br/>
-(в) *bIsHoriz*<br/>
+окне *бишориз*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawshowallmenuitems"></a><a name="ondrawshowallmenuitems"></a>CMFCVisualManagerOffice2007:OndrawShowallMenuItems
+## <a name="cmfcvisualmanageroffice2007ondrawshowallmenuitems"></a><a name="ondrawshowallmenuitems"></a> CMFCVisualManagerOffice2007:: Ондравшоваллменуитемс
 
 ```
 virtual void OnDrawShowAllMenuItems(
@@ -1781,13 +1782,13 @@ virtual void OnDrawShowAllMenuItems(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
-(в) *состояние*<br/>
+окне *состояние*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawstatusbarpaneborder"></a><a name="ondrawstatusbarpaneborder"></a>CMFCVisualManagerOffice2007:OnDrawStatusBarPaneBorder
+## <a name="cmfcvisualmanageroffice2007ondrawstatusbarpaneborder"></a><a name="ondrawstatusbarpaneborder"></a> CMFCVisualManagerOffice2007:: Ондравстатусбарпанебордер
 
 ```
 virtual void OnDrawStatusBarPaneBorder(
@@ -1800,15 +1801,15 @@ virtual void OnDrawStatusBarPaneBorder(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pBar*<br/>
-(в) *rectPane*<br/>
-(в) *uiID*<br/>
-(в) *nСтиль*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбар*<br/>
+окне *ректпане*<br/>
+окне *уиид*<br/>
+окне *нстиле*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawstatusbarsizebox"></a><a name="ondrawstatusbarsizebox"></a>CMFCVisualManagerOffice2007:OndrawstatusbarSizeBox
+## <a name="cmfcvisualmanageroffice2007ondrawstatusbarsizebox"></a><a name="ondrawstatusbarsizebox"></a> CMFCVisualManagerOffice2007:: Ондравстатусбарсизебокс
 
 ```
 virtual void OnDrawStatusBarSizeBox(
@@ -1819,13 +1820,13 @@ virtual void OnDrawStatusBarSizeBox(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pStatBar*<br/>
-(в) *rectSizeBox*<br/>
+окне *основной контроллер домена*<br/>
+окне *пстатбар*<br/>
+окне *ректсизебокс*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawtab"></a><a name="ondrawtab"></a>CMFCVisualManagerOffice2007:OndrawTab
+## <a name="cmfcvisualmanageroffice2007ondrawtab"></a><a name="ondrawtab"></a> CMFCVisualManagerOffice2007:: Ондравтаб
 
 ```
 virtual void OnDrawTab(
@@ -1838,15 +1839,15 @@ virtual void OnDrawTab(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *rectTab*<br/>
+окне *основной контроллер домена*<br/>
+окне *ректтаб*<br/>
 [in] *iTab*<br/>
-(в) *bIsActive*<br/>
-(в) *pTabWnd*<br/>
+окне *бисактиве*<br/>
+окне *птабвнд*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawtabsbuttonborder"></a><a name="ondrawtabsbuttonborder"></a>CMFCVisualManagerOffice2007:OnDrawTabsButtonBorder
+## <a name="cmfcvisualmanageroffice2007ondrawtabsbuttonborder"></a><a name="ondrawtabsbuttonborder"></a> CMFCVisualManagerOffice2007:: Ондравтабсбуттонбордер
 
 ```
 virtual void OnDrawTabsButtonBorder(
@@ -1859,15 +1860,15 @@ virtual void OnDrawTabsButtonBorder(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
-(в) *pButton*<br/>
-(в) *uiState*<br/>
-(в) *pWndTab*<br/>
+окне *пбуттон*<br/>
+окне *уистате*<br/>
+окне *пвндтаб*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawtask"></a><a name="ondrawtask"></a>CMFCVisualManagerOffice2007:OndrawTask
+## <a name="cmfcvisualmanageroffice2007ondrawtask"></a><a name="ondrawtask"></a> CMFCVisualManagerOffice2007:: Ондравтаск
 
 ```
 virtual void OnDrawTask(
@@ -1880,15 +1881,15 @@ virtual void OnDrawTask(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pTask*<br/>
-(в) *pIcons*<br/>
-(в) *bIsHighlighted*<br/>
-(в) *bIsSelected*<br/>
+окне *основной контроллер домена*<br/>
+окне *птаск*<br/>
+окне *пиконс*<br/>
+окне *бишигхлигхтед*<br/>
+окне *бисселектед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawtasksgroupcaption"></a><a name="ondrawtasksgroupcaption"></a>CMFCVisualManagerOffice2007:OndrawtasksGroupCaption
+## <a name="cmfcvisualmanageroffice2007ondrawtasksgroupcaption"></a><a name="ondrawtasksgroupcaption"></a> CMFCVisualManagerOffice2007:: Ондравтасксграупкаптион
 
 ```
 virtual void OnDrawTasksGroupCaption(
@@ -1901,15 +1902,15 @@ virtual void OnDrawTasksGroupCaption(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pGroup*<br/>
-(в) *bIsHighlighted*<br/>
-(в) *bIsSelected*<br/>
-(в) *bCanCollapse*<br/>
+окне *основной контроллер домена*<br/>
+окне *пграуп*<br/>
+окне *бишигхлигхтед*<br/>
+окне *бисселектед*<br/>
+окне *бканколлапсе*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007ondrawtearoffcaption"></a><a name="ondrawtearoffcaption"></a>CMFCVisualManagerOffice2007:OndrawtearOffCaption
+## <a name="cmfcvisualmanageroffice2007ondrawtearoffcaption"></a><a name="ondrawtearoffcaption"></a> CMFCVisualManagerOffice2007:: Ондравтеароффкаптион
 
 ```
 virtual void OnDrawTearOffCaption(
@@ -1920,13 +1921,13 @@ virtual void OnDrawTearOffCaption(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
-(в) *bIsActive*<br/>
+окне *бисактиве*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onerasemdiclientarea"></a><a name="onerasemdiclientarea"></a>CMFCVisualManagerOffice2007:OnErasemDIClientArea
+## <a name="cmfcvisualmanageroffice2007onerasemdiclientarea"></a><a name="onerasemdiclientarea"></a> CMFCVisualManagerOffice2007:: Онерасемдиклиентареа
 
 ```
 virtual BOOL OnEraseMDIClientArea(
@@ -1936,14 +1937,14 @@ virtual BOOL OnEraseMDIClientArea(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *rectClient*<br/>
+окне *основной контроллер домена*<br/>
+окне *ректклиент*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onerasetabsarea"></a><a name="onerasetabsarea"></a>CMFCVisualManagerOffice2007:OnEraseTabsArea
+## <a name="cmfcvisualmanageroffice2007onerasetabsarea"></a><a name="onerasetabsarea"></a> CMFCVisualManagerOffice2007:: Онерасетабсареа
 
 ```
 virtual void OnEraseTabsArea(
@@ -1954,13 +1955,13 @@ virtual void OnEraseTabsArea(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
-(в) *pTabWnd*<br/>
+окне *птабвнд*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onerasetabsbutton"></a><a name="onerasetabsbutton"></a>CMFCVisualManagerOffice2007:OnEraseTabsButton
+## <a name="cmfcvisualmanageroffice2007onerasetabsbutton"></a><a name="onerasetabsbutton"></a> CMFCVisualManagerOffice2007:: Онерасетабсбуттон
 
 ```
 virtual void OnEraseTabsButton(
@@ -1972,14 +1973,14 @@ virtual void OnEraseTabsButton(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
-(в) *pButton*<br/>
-(в) *pWndTab*<br/>
+окне *пбуттон*<br/>
+окне *пвндтаб*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onerasetabsframe"></a><a name="onerasetabsframe"></a>CMFCVisualManagerOffice2007:OnEraseTabsFrame
+## <a name="cmfcvisualmanageroffice2007onerasetabsframe"></a><a name="onerasetabsframe"></a> CMFCVisualManagerOffice2007:: Онерасетабсфраме
 
 ```
 virtual BOOL OnEraseTabsFrame(
@@ -1990,15 +1991,15 @@ virtual BOOL OnEraseTabsFrame(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
-(в) *pTabWnd*<br/>
+окне *птабвнд*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onfillbarbackground"></a><a name="onfillbarbackground"></a>CMFCVisualManagerOffice2007:OnfillBarbackground
+## <a name="cmfcvisualmanageroffice2007onfillbarbackground"></a><a name="onfillbarbackground"></a> CMFCVisualManagerOffice2007:: Онфиллбарбаккграунд
 
 ```
 virtual void OnFillBarBackground(
@@ -2011,15 +2012,15 @@ virtual void OnFillBarBackground(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pBar*<br/>
-(в) *rectClient*<br/>
-(в) *rectClip*<br/>
-(в) *bNCArea*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбар*<br/>
+окне *ректклиент*<br/>
+окне *ректклип*<br/>
+окне *бнкареа*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onfillbuttoninterior"></a><a name="onfillbuttoninterior"></a>CMFCVisualManagerOffice2007:OnFillbuttonInterior
+## <a name="cmfcvisualmanageroffice2007onfillbuttoninterior"></a><a name="onfillbuttoninterior"></a> CMFCVisualManagerOffice2007:: Онфиллбуттонинтериор
 
 ```
 virtual void OnFillButtonInterior(
@@ -2031,14 +2032,14 @@ virtual void OnFillButtonInterior(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pButton*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбуттон*<br/>
 [in] *rect*<br/>
-(в) *состояние*<br/>
+окне *состояние*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onfillcaptionbarbutton"></a><a name="onfillcaptionbarbutton"></a>CMFCVisualManagerOffice2007:OnfillcaptionБарБаттон
+## <a name="cmfcvisualmanageroffice2007onfillcaptionbarbutton"></a><a name="onfillcaptionbarbutton"></a> CMFCVisualManagerOffice2007:: Онфиллкаптионбарбуттон
 
 ```
 virtual COLORREF OnFillCaptionBarButton(
@@ -2054,20 +2055,20 @@ virtual COLORREF OnFillCaptionBarButton(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pBar*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбар*<br/>
 [in] *rect*<br/>
-(в) *bIsPressed*<br/>
-(в) *bIsHighlighted*<br/>
-(в) *bIsDisabled*<br/>
-(в) *bHasDropDownArrow*<br/>
-(в) *bIsSysButton*<br/>
+окне *биспрессед*<br/>
+окне *бишигхлигхтед*<br/>
+окне *бисдисаблед*<br/>
+окне *бхасдропдовнарров*<br/>
+окне *биссисбуттон*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onfillhighlightedarea"></a><a name="onfillhighlightedarea"></a>CMFCVisualManagerOffice2007:OnFillHighlightedArea
+## <a name="cmfcvisualmanageroffice2007onfillhighlightedarea"></a><a name="onfillhighlightedarea"></a> CMFCVisualManagerOffice2007:: Онфиллхигхлигхтедареа
 
 ```
 virtual void OnFillHighlightedArea(
@@ -2079,14 +2080,14 @@ virtual void OnFillHighlightedArea(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
-(в) *pBrush*<br/>
-(в) *pButton*<br/>
+окне *пбруш*<br/>
+окне *пбуттон*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onfillminiframecaption"></a><a name="onfillminiframecaption"></a>CMFCVisualManagerOffice2007:OnfillminiFrameCaption
+## <a name="cmfcvisualmanageroffice2007onfillminiframecaption"></a><a name="onfillminiframecaption"></a> CMFCVisualManagerOffice2007:: Онфиллминифрамекаптион
 
 ```
 virtual COLORREF OnFillMiniFrameCaption(
@@ -2098,16 +2099,16 @@ virtual COLORREF OnFillMiniFrameCaption(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *rectCaption*<br/>
-(в) *pFrameWnd*<br/>
-(в) *bАктивный*<br/>
+окне *основной контроллер домена*<br/>
+окне *ректкаптион*<br/>
+окне *пфрамевнд*<br/>
+окне *бактиве*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onfilloutlookbarcaption"></a><a name="onfilloutlookbarcaption"></a>CMFCVisualManagerOffice2007:OnfillOutlookBarCaption
+## <a name="cmfcvisualmanageroffice2007onfilloutlookbarcaption"></a><a name="onfilloutlookbarcaption"></a> CMFCVisualManagerOffice2007:: Онфиллаутлукбаркаптион
 
 ```
 virtual void OnFillOutlookBarCaption(
@@ -2118,13 +2119,13 @@ virtual void OnFillOutlookBarCaption(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *rectCaption*<br/>
-(в) *clrText*<br/>
+окне *основной контроллер домена*<br/>
+окне *ректкаптион*<br/>
+окне *клртекст*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onfilloutlookpagebutton"></a><a name="onfilloutlookpagebutton"></a>CMFCVisualManagerOffice2007:OnFillOutlookPageButton
+## <a name="cmfcvisualmanageroffice2007onfilloutlookpagebutton"></a><a name="onfilloutlookpagebutton"></a> CMFCVisualManagerOffice2007:: Онфиллаутлукпажебуттон
 
 ```
 virtual void OnFillOutlookPageButton(
@@ -2137,15 +2138,15 @@ virtual void OnFillOutlookPageButton(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
-(в) *bIsHighlighted*<br/>
-(в) *bIsPressed*<br/>
-(в) *clrText*<br/>
+окне *бишигхлигхтед*<br/>
+окне *биспрессед*<br/>
+окне *клртекст*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onfillpopupwindowbackground"></a><a name="onfillpopupwindowbackground"></a>CMFCVisualManagerOffice2007:OnFillPopupWindowBackground
+## <a name="cmfcvisualmanageroffice2007onfillpopupwindowbackground"></a><a name="onfillpopupwindowbackground"></a> CMFCVisualManagerOffice2007:: Онфиллпопупвиндовбаккграунд
 
 ```
 virtual void OnFillPopupWindowBackground(
@@ -2155,12 +2156,12 @@ virtual void OnFillPopupWindowBackground(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
+окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onfillribbonbutton"></a><a name="onfillribbonbutton"></a>CMFCVisualManagerOffice2007:OnfillRibbonButton
+## <a name="cmfcvisualmanageroffice2007onfillribbonbutton"></a><a name="onfillribbonbutton"></a> CMFCVisualManagerOffice2007:: Онфиллриббонбуттон
 
 ```
 virtual COLORREF OnFillRibbonButton(
@@ -2170,14 +2171,14 @@ virtual COLORREF OnFillRibbonButton(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pButton*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбуттон*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onfillribbonedit"></a><a name="onfillribbonedit"></a>CMFCVisualManagerOffice2007:OnFillRibbonEdit
+## <a name="cmfcvisualmanageroffice2007onfillribbonedit"></a><a name="onfillribbonedit"></a> CMFCVisualManagerOffice2007:: Онфиллриббонедит
 
 ```
 virtual void OnFillRibbonEdit(
@@ -2194,19 +2195,19 @@ virtual void OnFillRibbonEdit(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pEdit*<br/>
+окне *основной контроллер домена*<br/>
+окне *педит*<br/>
 [in] *rect*<br/>
-(в) *bIsHighlighted*<br/>
-(в) *bIsPaneАулион*<br/>
-(в) *bIsDisabled*<br/>
-(в) *clrText*<br/>
-(в) *clrSelBackground*<br/>
-(в) *clrSelText*<br/>
+окне *бишигхлигхтед*<br/>
+окне *биспанехигхлигхтед*<br/>
+окне *бисдисаблед*<br/>
+окне *клртекст*<br/>
+окне *клрселбаккграунд*<br/>
+окне *клрселтекст*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onfillribbonmainpanelbutton"></a><a name="onfillribbonmainpanelbutton"></a>CMFCVisualManagerOffice2007:OnfillRibbonMainPanelButton
+## <a name="cmfcvisualmanageroffice2007onfillribbonmainpanelbutton"></a><a name="onfillribbonmainpanelbutton"></a> CMFCVisualManagerOffice2007:: Онфиллриббонмаинпанелбуттон
 
 ```
 virtual COLORREF OnFillRibbonMainPanelButton(
@@ -2216,14 +2217,14 @@ virtual COLORREF OnFillRibbonMainPanelButton(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pButton*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбуттон*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onfillribbonmenuframe"></a><a name="onfillribbonmenuframe"></a>CMFCVisualManagerOffice2007:OnfillRibbonMenuframe
+## <a name="cmfcvisualmanageroffice2007onfillribbonmenuframe"></a><a name="onfillribbonmenuframe"></a> CMFCVisualManagerOffice2007:: Онфиллриббонменуфраме
 
 ```
 virtual void OnFillRibbonMenuFrame(
@@ -2234,13 +2235,13 @@ virtual void OnFillRibbonMenuFrame(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pPanel*<br/>
+окне *основной контроллер домена*<br/>
+окне *ппанел*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onfillribbonquickaccesstoolbarpopup"></a><a name="onfillribbonquickaccesstoolbarpopup"></a>CMFCVisualManagerOffice2007::OnfillRibbonКваAccessToolBarPopup
+## <a name="cmfcvisualmanageroffice2007onfillribbonquickaccesstoolbarpopup"></a><a name="onfillribbonquickaccesstoolbarpopup"></a> CMFCVisualManagerOffice2007:: Онфиллриббонкуиккакцесстулбарпопуп
 
 ```
 virtual void OnFillRibbonQuickAccessToolBarPopup(
@@ -2251,13 +2252,13 @@ virtual void OnFillRibbonQuickAccessToolBarPopup(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pMenuBar*<br/>
+окне *основной контроллер домена*<br/>
+окне *пменубар*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onfilltab"></a><a name="onfilltab"></a>CMFCVisualManagerOffice2007:OnfillTab
+## <a name="cmfcvisualmanageroffice2007onfilltab"></a><a name="onfilltab"></a> CMFCVisualManagerOffice2007:: Онфиллтаб
 
 ```
 virtual void OnFillTab(
@@ -2271,16 +2272,16 @@ virtual void OnFillTab(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *rectFill*<br/>
-(в) *pbrFill*<br/>
+окне *основной контроллер домена*<br/>
+окне *ректфилл*<br/>
+окне *пбрфилл*<br/>
 [in] *iTab*<br/>
-(в) *bIsActive*<br/>
-(в) *pTabWnd*<br/>
+окне *бисактиве*<br/>
+окне *птабвнд*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onhighlightmenuitem"></a><a name="onhighlightmenuitem"></a>CMFCVisualManagerOffice2007:OnHighlightMenuitem
+## <a name="cmfcvisualmanageroffice2007onhighlightmenuitem"></a><a name="onhighlightmenuitem"></a> CMFCVisualManagerOffice2007:: Онхигхлигхтменуитем
 
 ```
 virtual void OnHighlightMenuItem(
@@ -2292,14 +2293,14 @@ virtual void OnHighlightMenuItem(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *pButton*<br/>
+окне *основной контроллер домена*<br/>
+окне *пбуттон*<br/>
 [in] *rect*<br/>
-(в) *clrText*<br/>
+окне *клртекст*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onhighlightrarelyusedmenuitems"></a><a name="onhighlightrarelyusedmenuitems"></a>CMFCVisualManagerOffice2007:OnHighlightРедкоИспользуемыеМенюэлементы
+## <a name="cmfcvisualmanageroffice2007onhighlightrarelyusedmenuitems"></a><a name="onhighlightrarelyusedmenuitems"></a> CMFCVisualManagerOffice2007:: Онхигхлигхтрарелюседменуитемс
 
 ```
 virtual void OnHighlightRarelyUsedMenuItems(
@@ -2309,12 +2310,12 @@ virtual void OnHighlightRarelyUsedMenuItems(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDC*<br/>
-(в) *rectRarelyИспользуется*<br/>
+окне *основной контроллер домена*<br/>
+окне *ректрарелюсед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onncactivate"></a><a name="onncactivate"></a>CMFCVisualManagerOffice2007:OnNcActivate
+## <a name="cmfcvisualmanageroffice2007onncactivate"></a><a name="onncactivate"></a> CMFCVisualManagerOffice2007:: Оннкактивате
 
 ```
 virtual BOOL OnNcActivate(
@@ -2324,14 +2325,14 @@ virtual BOOL OnNcActivate(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pWnd*<br/>
-(в) *bАктивный*<br/>
+окне *приводится*<br/>
+окне *бактиве*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onncpaint"></a><a name="onncpaint"></a>CMFCVisualManagerOffice2007:OnNcpaint
+## <a name="cmfcvisualmanageroffice2007onncpaint"></a><a name="onncpaint"></a> CMFCVisualManagerOffice2007:: Оннкпаинт
 
 ```
 virtual BOOL OnNcPaint(
@@ -2342,15 +2343,15 @@ virtual BOOL OnNcPaint(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pWnd*<br/>
-(в) *lstSysButtons*<br/>
-(в) *rectRedraw*<br/>
+окне *приводится*<br/>
+окне *лстсисбуттонс*<br/>
+окне *ректредрав*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onsetwindowregion"></a><a name="onsetwindowregion"></a>CMFCVisualManagerOffice2007:OnsetWindowРегион
+## <a name="cmfcvisualmanageroffice2007onsetwindowregion"></a><a name="onsetwindowregion"></a> CMFCVisualManagerOffice2007:: Онсетвиндоврегион
 
 ```
 virtual BOOL OnSetWindowRegion(
@@ -2360,22 +2361,22 @@ virtual BOOL OnSetWindowRegion(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pWnd*<br/>
-(в) *размерОкно*<br/>
+окне *приводится*<br/>
+окне *сизевиндов*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007onupdatesystemcolors"></a><a name="onupdatesystemcolors"></a>CMFCVisualManagerOffice2007:OnUpdateSystemColors
+## <a name="cmfcvisualmanageroffice2007onupdatesystemcolors"></a><a name="onupdatesystemcolors"></a> CMFCVisualManagerOffice2007:: Онупдатесистемколорс
 
 ```
 virtual void OnUpdateSystemColors();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmfcvisualmanageroffice2007setresourcehandle"></a><a name="setresourcehandle"></a>CMFCVisualManagerOffice2007:SetResourceHandle
+## <a name="cmfcvisualmanageroffice2007setresourcehandle"></a><a name="setresourcehandle"></a> CMFCVisualManagerOffice2007:: Сетресаурцехандле
 
 ```
 static void __stdcall SetResourceHandle(HINSTANCE hinstRes);
@@ -2383,14 +2384,14 @@ static void __stdcall SetResourceHandle(HINSTANCE hinstRes);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *hinstRes*<br/>
+окне *хинстрес*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
 [Класс CMFCVisualManager](../../mfc/reference/cmfcvisualmanager-class.md)<br/>
-[CMFCVisualManagerOfficeXP Класс](../../mfc/reference/cmfcvisualmanagerofficexp-class.md)<br/>
-[CmFCVisualManagerWindows Класс](../../mfc/reference/cmfcvisualmanagerwindows-class.md)
+[Класс CMFCVisualManagerOfficeXP](../../mfc/reference/cmfcvisualmanagerofficexp-class.md)<br/>
+[Класс Кмфквисуалманажервиндовс](../../mfc/reference/cmfcvisualmanagerwindows-class.md)

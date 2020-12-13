@@ -1,5 +1,6 @@
 ---
-title: CMFCToolBarFontSizeComboBox класс
+description: 'Дополнительные сведения о: Кмфктулбарфонтсизекомбобокс Class'
+title: Класс Кмфктулбарфонтсизекомбобокс
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCToolBarFontSizeComboBox
@@ -14,16 +15,16 @@ helpviewer_keywords:
 - CMFCToolBarFontSizeComboBox [MFC], RebuildFontSizes
 - CMFCToolBarFontSizeComboBox [MFC], SetTwipSize
 ms.assetid: 72e0c44c-6a0e-4194-a71f-ab64e3afb9b5
-ms.openlocfilehash: 6c90bb1ce464a90295e7edb933d87594444c3648
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: a355e62f2ef538372d70b9b2b393bc16bff2ef4b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81745323"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331742"
 ---
-# <a name="cmfctoolbarfontsizecombobox-class"></a>CMFCToolBarFontSizeComboBox класс
+# <a name="cmfctoolbarfontsizecombobox-class"></a>Класс Кмфктулбарфонтсизекомбобокс
 
-Кнопка панели инструментов, содержащая управление комбо-коробкой, позволяющее пользователю выбрать размер шрифта.
+Кнопка на панели инструментов, содержащая элемент управления "поле со списком", позволяющий пользователю выбрать размер шрифта.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,33 +32,33 @@ ms.locfileid: "81745323"
 class CMFCToolBarFontSizeComboBox : public CMFCToolBarComboBoxButton
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="protected-constructors"></a>Защищенные конструкторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CMFCToolBarFontSizeComboBox::CMFCToolBarFontSizeComboBox](#cmfctoolbarfontsizecombobox)|Формирует объект `CMFCToolBarFontSizeComboBox`.|
+|[Кмфктулбарфонтсизекомбобокс:: Кмфктулбарфонтсизекомбобокс](#cmfctoolbarfontsizecombobox)|Формирует объект `CMFCToolBarFontSizeComboBox`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMFCToolBarFontSizeComboBox::GetTwipSize](#gettwipsize)|Возвращает выбранный размер шрифта в twips.|
-|[CMFCToolBarFontSizeComboBox::RebuildFontSizes](#rebuildfontsizes)|Заполняет список комбо-боксов всеми поддерживаемыми размерами шрифта для указанного шрифта.|
-|[CMFCToolBarFontSizeComboBox::SetTwipSize](#settwipsize)|Устанавливает размер шрифта в twips.|
+|[Кмфктулбарфонтсизекомбобокс:: Жеттвипсизе](#gettwipsize)|Возвращает выбранный размер шрифта в твипах.|
+|[Кмфктулбарфонтсизекомбобокс:: Ребуилдфонтсизес](#rebuildfontsizes)|Заполняет список полей со списком всеми поддерживаемыми размерами шрифтов для указанного шрифта.|
+|[Кмфктулбарфонтсизекомбобокс:: Сеттвипсизе](#settwipsize)|Задает размер шрифта в твипах.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Вы можете `CMFCToolBarFontSizeComboBox` использовать объект вместе с объектом [класса CMFCToolBarFontComboBox,](../../mfc/reference/cmfctoolbarfontcombobox-class.md) чтобы пользователь мог выбрать шрифт и размер шрифта.
+Объект можно использовать `CMFCToolBarFontSizeComboBox` вместе с объектом [класса кмфктулбарфонткомбобокс](../../mfc/reference/cmfctoolbarfontcombobox-class.md) , чтобы позволить пользователю выбрать шрифт и размер шрифта.
 
-Вы можете добавить кнопку комбо-коробки размера шрифта в панель инструментов так же, как вы добавляете кнопку комбо-коробки шрифта. Для получения дополнительной информации, см [CMFCToolBarFontComboBox класса](../../mfc/reference/cmfctoolbarfontcombobox-class.md).
+Можно добавить кнопку поля со списком размер шрифта на панель инструментов при добавлении кнопки поля со списком шрифтов. Дополнительные сведения см. в разделе [класс кмфктулбарфонткомбобокс](../../mfc/reference/cmfctoolbarfontcombobox-class.md).
 
-Когда пользователь выбирает новый шрифт `CMFCToolBarFontComboBox` в объекте, вы можете заполнить комбо-коробку размера шрифта с поддерживаемыми размерами для этого шрифта с помощью метода [CMFCToolBarFontSizeComboBox::RebuildFontSizes](#rebuildfontsizes) метод.
+Когда пользователь выбирает новый шрифт в `CMFCToolBarFontComboBox` объекте, можно заполнить поле со списком размер шрифта поддерживаемыми размерами для этого шрифта с помощью метода [кмфктулбарфонтсизекомбобокс:: ребуилдфонтсизес](#rebuildfontsizes) .
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано, как использовать `CMFCToolBarFontSizeComboBox` различные методы в классе для настройки `CMFCToolBarFontSizeComboBox` объекта. Пример иллюстрирует, как получить размер шрифта, в twips, из текстового окна, заполнить размер шрифта комбо поле со всеми действительными размерами данного шрифта, и указать размер шрифта в twips. Этот фрагмент кода входит в состав [примера Word Pad](../../overview/visual-cpp-samples.md).
+В следующем примере показано, как использовать различные методы в `CMFCToolBarFontSizeComboBox` классе для настройки `CMFCToolBarFontSizeComboBox` объекта. В примере показано, как извлечь размер шрифта в твипах из текстового поля, заполнить поле со списком размер шрифта всеми допустимыми размерами данного шрифта и указать размер шрифта в твипах. Этот фрагмент кода входит в состав [примера Word Pad](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_WordPad#8](../../mfc/reference/codesnippet/cpp/cmfctoolbarfontsizecombobox-class_1.cpp)]
 
@@ -67,15 +68,15 @@ class CMFCToolBarFontSizeComboBox : public CMFCToolBarComboBoxButton
 
 [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)
 
-[CMFCToolBarComboBoxButton](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md)
+[кмфктулбаркомбобоксбуттон](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md)
 
-[CMFCToolBarFontSizeComboBox](../../mfc/reference/cmfctoolbarfontsizecombobox-class.md)
+[кмфктулбарфонтсизекомбобокс](../../mfc/reference/cmfctoolbarfontsizecombobox-class.md)
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxtoolbarfontcombobox.h
+**Заголовок:** афкстулбарфонткомбобокс. h
 
-## <a name="cmfctoolbarfontsizecomboboxcmfctoolbarfontsizecombobox"></a><a name="cmfctoolbarfontsizecombobox"></a>CMFCToolBarFontSizeComboBox::CMFCToolBarFontSizeComboBox
+## <a name="cmfctoolbarfontsizecomboboxcmfctoolbarfontsizecombobox"></a><a name="cmfctoolbarfontsizecombobox"></a> Кмфктулбарфонтсизекомбобокс:: Кмфктулбарфонтсизекомбобокс
 
 Формирует объект `CMFCToolBarFontSizeComboBox`.
 
@@ -83,9 +84,9 @@ class CMFCToolBarFontSizeComboBox : public CMFCToolBarComboBoxButton
 CMFCToolBarFontSizeComboBox();
 ```
 
-## <a name="cmfctoolbarfontsizecomboboxgettwipsize"></a><a name="gettwipsize"></a>CMFCToolBarFontSizeComboBox::GetTwipSize
+## <a name="cmfctoolbarfontsizecomboboxgettwipsize"></a><a name="gettwipsize"></a> Кмфктулбарфонтсизекомбобокс:: Жеттвипсизе
 
-Извлекает размер шрифта, в twips, из текстового ящика комбо-коробки размера шрифта.
+Получает размер шрифта в твипах из текстового поля поля со списком размер шрифта.
 
 ```
 int GetTwipSize() const;
@@ -93,11 +94,11 @@ int GetTwipSize() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если значение возврата положительное, то это размер шрифта в twips. Это -1, если текстовый ящик комбо-бокса пуст. Это -2, если происходит ошибка.
+Если возвращаемое значение положительное, то это размер шрифта в твипах. Значение-1, если текстовое поле со списком пустое. При возникновении ошибки — 2.
 
-## <a name="cmfctoolbarfontsizecomboboxrebuildfontsizes"></a><a name="rebuildfontsizes"></a>CMFCToolBarFontSizeComboBox::RebuildFontSizes
+## <a name="cmfctoolbarfontsizecomboboxrebuildfontsizes"></a><a name="rebuildfontsizes"></a> Кмфктулбарфонтсизекомбобокс:: Ребуилдфонтсизес
 
-Заполняет комбо-коробку размера шрифта со всеми действительными размерами данного шрифта.
+Заполняет поле со списком размера шрифта всеми допустимыми размерами данного шрифта.
 
 ```cpp
 void RebuildFontSizes(const CString& strFontName);
@@ -105,16 +106,16 @@ void RebuildFontSizes(const CString& strFontName);
 
 ### <a name="parameters"></a>Параметры
 
-*strFontName*<br/>
-(в) Упогоняет имя шрифта.
+*стрфонтнаме*<br/>
+окне Задает имя шрифта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вызовите эту функцию, когда вы хотите синхронизировать между выбором в комбо-коробке шрифта и комбо-коробке размером шрифта, такой как [CMFCToolBarFontComboBox Class.](../../mfc/reference/cmfctoolbarfontcombobox-class.md)
+Вызывайте эту функцию, если нужно синхронизировать выборку в поле со списком шрифтов и поле со списком размер шрифта, например [класс кмфктулбарфонткомбобокс](../../mfc/reference/cmfctoolbarfontcombobox-class.md).
 
-## <a name="cmfctoolbarfontsizecomboboxsettwipsize"></a><a name="settwipsize"></a>CMFCToolBarFontSizeComboBox::SetTwipSize
+## <a name="cmfctoolbarfontsizecomboboxsettwipsize"></a><a name="settwipsize"></a> Кмфктулбарфонтсизекомбобокс:: Сеттвипсизе
 
-Округляет указанный размер (в twips) до ближайшего размера в точках, а затем устанавливает выбранный размер в комбо-коробке к этому значению.
+Округляет указанный размер (в твипах) до ближайшего размера в точках, а затем задает для выбранного размера в поле со списком указанное значение.
 
 ```cpp
 void SetTwipSize(int nSize);
@@ -122,20 +123,20 @@ void SetTwipSize(int nSize);
 
 ### <a name="parameters"></a>Параметры
 
-*Nsize*<br/>
-(в) Установить размер шрифта (в twips) для установки.
+*нсизе*<br/>
+окне Задает размер шрифта (в твипах) для задания.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Вы можете получить предыдущий допустимый размер шрифта позже, позвонив по методу [CMFCToolBarFontSizeComboBox::GetTwipSize.](#gettwipsize)
+Предыдущий допустимый размер шрифта можно получить позже, вызвав метод [кмфктулбарфонтсизекомбобокс:: жеттвипсизе](#gettwipsize) .
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
 [Класс CMFCToolBar](../../mfc/reference/cmfctoolbar-class.md)<br/>
 [Класс CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md)<br/>
-[CMFCToolBarComboBoxButton класс](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md)<br/>
-[Класс CMFCФонФоФо](../../mfc/reference/cmfcfontinfo-class.md)<br/>
-[CMFCToolBar::Заменить кнопку](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
-[Пошаговое руководство. Размещение элементов управления на панели инструментов](../../mfc/walkthrough-putting-controls-on-toolbars.md)
+[Класс Кмфктулбаркомбобоксбуттон](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md)<br/>
+[Класс Кмфкфонтинфо](../../mfc/reference/cmfcfontinfo-class.md)<br/>
+[CMFCToolBar:: Реплацебуттон](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
+[Пошаговое руководство. размещение элементов управления на панелях инструментов](../../mfc/walkthrough-putting-controls-on-toolbars.md)

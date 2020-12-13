@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Коблист Class'
 title: Класс Коблист
 ms.date: 11/04/2016
 f1_keywords:
@@ -50,12 +51,12 @@ helpviewer_keywords:
 - CObList [MFC], RemoveTail
 - CObList [MFC], SetAt
 ms.assetid: 80699c93-33d8-4f8b-b8cf-7b58aeab64ca
-ms.openlocfilehash: a13363ef9b200051c26781ab6e9870a10de06d88
-ms.sourcegitcommit: 19016630f9d35f365e9ba249e0f3617515d7ca33
+ms.openlocfilehash: edfa476780e07b41f4f1e0abede24244ad837578
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92274590"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331449"
 ---
 # <a name="coblist-class"></a>Класс Коблист
 
@@ -101,7 +102,7 @@ class CObList : public CObject
 |[Коблист:: Ремоветаил](#removetail)|Удаляет элемент из хвоста списка.|
 |[Коблист:: SetAt](#setat)|Задает элемент в заданной позиции.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `CObList` списки ведут себя как двунаправленные списки.
 
@@ -128,7 +129,7 @@ class CObList : public CObject
 
 `CObList`
 
-## <a name="requirements"></a>Requirements (Требования)
+## <a name="requirements"></a>Требования
 
 **Заголовок:** афксколл. h
 
@@ -160,7 +161,7 @@ void AddHead(CObList* pNewList);
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**Аддхеад позиций (void** <strong>\*</strong> `newElement` **);**<br /><br /> **void аддхеад (кптрлист** <strong>\*</strong> `pNewList` **);**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**Расположение аддхеад (const CString&** `newElement` **);**<br /><br /> **Расположение аддхеад (LPCTSTR** `newElement` **);**<br /><br /> **void аддхеад (кстринглист** <strong>\*</strong> `pNewList` **);**|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Перед операцией список может быть пустым.
 
@@ -199,7 +200,7 @@ void AddTail(CObList* pNewList);
 
 Первая версия возвращает значение расположения вновь вставленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Перед операцией список может быть пустым.
 
@@ -237,7 +238,7 @@ CObList(INT_PTR nBlockSize = 10);
 *нблокксизе*<br/>
 Гранулярность выделения памяти для расширения списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По мере роста списка память выделяется в единицах *нблокксизе* записей. При сбое выделения памяти `CMemoryException` создается исключение.
 
@@ -280,7 +281,7 @@ POSITION Find(
 
 Значение позиции, которое может использоваться для получения итераций или указателя на объект; Значение NULL, если объект не найден.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Обратите внимание, что сравниваются значения указателя, а не содержимое объектов.
 
@@ -314,7 +315,7 @@ POSITION FindIndex(INT_PTR nIndex) const;
 
 Значение позиции, которое может использоваться для получения итераций или указателя на объект; Значение NULL, если *ниндекс* слишком большой. (Платформа создает утверждение, если *ниндекс* является отрицательным.)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Он запускает последовательное сканирование из заголовка списка, останавливаясь на *n*-ом элементе.
 
@@ -349,7 +350,7 @@ const CObject*& GetAt(POSITION position) const;
 
 См. описание возвращаемого значения для [onhead](#gethead).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это не то же самое, что и индекс, и вы не можете самостоятельно обрабатывать значение позиции. `GetAt` Извлекает `CObject` указатель, связанный с заданной позицией.
 
@@ -359,7 +360,7 @@ const CObject*& GetAt(POSITION position) const;
 
 |Класс|Функция-член|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**const void \*& GetAt (положением расположения** *position* **) const;**<br /><br /> **void \*& GetAt (расположение расположения** *position* **);**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**const void \*& GetAt (положением расположения**  **) const;**<br /><br /> **void \*& GetAt (расположение расположения**  **);**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**const CString& GetAt (** *положением* расположения **) const;**<br /><br /> **CString& GetAt (** *Расположение* расположения **);**|
 
 ### <a name="example"></a>Пример
@@ -406,7 +407,7 @@ const CObject*& GetHead() const;
 
 Если доступ к списку осуществляется напрямую или через указатель на `CObList` , `GetHead` возвращается ссылка на `CObject` указатель. Это позволяет использовать функцию с любой стороны оператора присваивания и тем самым допустить изменение записей в списке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Перед вызовом необходимо убедиться, что список не пуст `GetHead` . Если список пуст, то отладочная версия библиотека Microsoft Foundation Class утверждается. Используйте параметр [IsEmpty](#isempty) , чтобы убедиться, что список содержит элементы.
 
@@ -468,7 +469,7 @@ const CObject* GetNext(POSITION& rPosition) const;
 
 См. описание возвращаемого значения для [onhead](#gethead).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Можно использовать `GetNext` в цикле прямой итерации, если исходное расположение устанавливается с вызовом `GetHeadPosition` или `Find` .
 
@@ -519,7 +520,7 @@ const CObject* GetPrev(POSITION& rPosition) const;
 
 См. описание возвращаемого значения для [onhead](#gethead).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Можно использовать `GetPrev` в цикле обратных итераций, если исходное расположение устанавливается с вызовом `GetTailPosition` или `Find` .
 
@@ -562,7 +563,7 @@ INT_PTR GetSize() const;
 
 Количество элементов в списке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите этот метод, чтобы получить количество элементов в списке.
 
@@ -592,7 +593,7 @@ const CObject*& GetTail() const;
 
 См. описание возвращаемого значения для [onhead](#gethead).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Перед вызовом необходимо убедиться, что список не пуст `GetTail` . Если список пуст, то отладочная версия библиотека Microsoft Foundation Class утверждается. Используйте параметр [IsEmpty](#isempty) , чтобы убедиться, что список содержит элементы.
 
@@ -657,7 +658,7 @@ POSITION InsertAfter(
 |Класс|Функция-член|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**InsertAfter позиций (** *Расположение* **, void)** <strong>\*</strong> `newElement` **);**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**Расположение InsertAfter (расположение расположения** *position* **, константа CString&** `newElement` **);**<br /><br /> **Расположение InsertAfter (расположение расположения** *position* **, LPCTSTR** `newElement` **);**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**Расположение InsertAfter (расположение расположения**  **, константа CString&** `newElement` **);**<br /><br /> **Расположение InsertAfter (расположение расположения**  **, LPCTSTR** `newElement` **);**|
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -705,7 +706,7 @@ POSITION InsertBefore(
 |Класс|Функция-член|
 |-----------|---------------------|
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**Методов insertBefore позиций (** *Расположение* **, void)** <strong>\*</strong> `newElement` **);**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**Расположение методов insertBefore (расположение расположения** *position* **, константа CString&** `newElement` **);**<br /><br /> **Расположение методов insertBefore (расположение расположения** *position* **, LPCTSTR** `newElement` **);**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**Расположение методов insertBefore (расположение расположения**  **, константа CString&** `newElement` **);**<br /><br /> **Расположение методов insertBefore (расположение расположения**  **, LPCTSTR** `newElement` **);**|
 
 ### <a name="example"></a>Пример
 
@@ -753,7 +754,7 @@ BOOL IsEmpty() const;
 void RemoveAll();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если список уже пуст, то ошибка не создается.
 
@@ -785,7 +786,7 @@ void RemoveAt(POSITION position);
 *position*<br/>
 Расположение элемента, удаляемого из списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 При удалении элемента из удаляется `CObList` указатель объекта из списка. Вы несете ответственность за удаление самих объектов.
 
@@ -800,7 +801,7 @@ void RemoveAt(POSITION position);
 
 ### <a name="example"></a>Пример
 
-  Будьте внимательны при удалении элемента во время итерации списка. В следующем примере показан метод удаления, который гарантирует допустимость **POSITION** значения для метода [GetNext](#getnext).
+  Будьте внимательны при удалении элемента во время итерации списка. В следующем примере показан метод удаления, который гарантирует допустимость  значения для метода [GetNext](#getnext).
 
 Список класса см. в разделе [коблист:: коблист](#coblist) `CAge` .
 
@@ -826,7 +827,7 @@ CObject* RemoveHead();
 
 Указатель, который ранее находился в `CObject` заголовке списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Перед вызовом необходимо убедиться, что список не пуст `RemoveHead` . Если список пуст, то отладочная версия библиотека Microsoft Foundation Class утверждается. Используйте параметр [IsEmpty](#isempty) , чтобы убедиться, что список содержит элементы.
 
@@ -855,7 +856,7 @@ CObject* RemoveTail();
 
 Указатель на объект, находился в заключительном фрагменте списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Перед вызовом необходимо убедиться, что список не пуст `RemoveTail` . Если список пуст, то отладочная версия библиотека Microsoft Foundation Class утверждается. Используйте параметр [IsEmpty](#isempty) , чтобы убедиться, что список содержит элементы.
 
@@ -890,7 +891,7 @@ void SetAt(
 *невелемент*<br/>
 `CObject`Указатель, который должен быть записан в список.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переменная типа "расположение" является ключом для списка. Это не то же самое, что и индекс, и вы не можете самостоятельно обрабатывать значение позиции. `SetAt` записывает `CObject` указатель в указанную позиции в списке.
 

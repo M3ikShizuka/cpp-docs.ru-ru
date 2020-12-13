@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l'
 title: _cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l
 ms.date: 11/04/2016
 api_name:
@@ -51,12 +52,12 @@ helpviewer_keywords:
 - _tcscanf_s function
 - tcscanf_s_l function
 ms.assetid: 9ccab74d-916f-42a6-93d8-920525efdf4b
-ms.openlocfilehash: a869ae4ab1b5f81c4198f620662604b79f19c2ab
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e379d454b9acd9cda75eb41721f55f0818004858
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234241"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332930"
 ---
 # <a name="_cscanf_s-_cscanf_s_l-_cwscanf_s-_cwscanf_s_l"></a>_cscanf_s, _cscanf_s_l, _cwscanf_s, _cwscanf_s_l
 
@@ -94,7 +95,7 @@ int _cwscanf_s_l(
 Строка управления форматом.
 
 *argument*<br/>
-Необязательные параметры.
+Дополнительные параметры.
 
 *locale*<br/>
 Используемый языковой стандарт.
@@ -105,11 +106,11 @@ int _cwscanf_s_l(
 
 Эти функции проверяют свои параметры. Если *Format* является пустым указателем, эти функции вызывают обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции возвращают **EOF** , а параметру "переполнять **" задано** значение **еинвал**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_cscanf_s** считывает данные непосредственно из консоли в расположения, указанные *аргументом*. Функция [_Getche](getch-getwch.md) используется для чтения символов. Каждый необязательный параметр должен быть указателем на переменную с типом, который соответствует спецификатору типа в *формате*. Формат управляет интерпретацией полей ввода и имеет ту же форму и функцию, что и параметр *Format* для функции [scanf_s](scanf-scanf-l-wscanf-wscanf-l.md) . Хотя **_cscanf_s** обычно отображает входной символ, он не делает этого, если последний вызов был **_ungetch**.
 
-Как и другие безопасные версии функций в семействе **scanf** , **_cscanf_s** и **_cswscanf_s** требуются аргументы размера для символов поля типа **c**, **c**, **s**, **s**и **[**. Дополнительные сведения см. в разделе [Спецификация ширины scanf](../../c-runtime-library/scanf-width-specification.md).
+Как и другие безопасные версии функций в семействе **scanf** , **_cscanf_s** и **_cswscanf_s** требуются аргументы размера для символов поля типа **c**, **c**, **s**, **s** и **[**. Дополнительные сведения см. в разделе [Спецификация ширины scanf](../../c-runtime-library/scanf-width-specification.md).
 
 > [!NOTE]
 > Параметр size имеет тип **`unsigned`** , а не **size_t**.

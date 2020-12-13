@@ -1,5 +1,6 @@
 ---
-title: Класс CMultiPaneFrameWnd
+description: 'Дополнительные сведения о: Кмултипанефрамевнд Class'
+title: Класс Кмултипанефрамевнд
 ms.date: 11/04/2016
 f1_keywords:
 - CMultiPaneFrameWnd
@@ -80,18 +81,18 @@ helpviewer_keywords:
 - CMultiPaneFrameWnd [MFC], StoreRecentDockSiteInfo
 - CMultiPaneFrameWnd [MFC], StoreRecentTabRelatedInfo
 ms.assetid: 989a548e-0d70-46b7-a513-8cf740e1be3e
-ms.openlocfilehash: 047dd5ca2ca6705549e8f92de1550248e348ff52
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: c12dccc684aa0bdcad62a09b527d482d78ac3823
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81752788"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331516"
 ---
-# <a name="cmultipaneframewnd-class"></a>Класс CMultiPaneFrameWnd
+# <a name="cmultipaneframewnd-class"></a>Класс Кмултипанефрамевнд
 
-Класс `CMultiPaneFrameWnd` расширяет [класс CPaneFrameWnd.](../../mfc/reference/cpaneframewnd-class.md) Может поддерживать несколько областей. Вместо одной встроенной ручки `CMultiPaneFrameWnd` к панели управления, содержит объект [класса CPaneContainerManager,](../../mfc/reference/cpanecontainermanager-class.md) который позволяет пользователю пристыковкаться к `CMultiPaneFrameWnd` другому и динамически создавать несколько плавающих, вкладках окон.
+`CMultiPaneFrameWnd`Класс расширяет [класс кпанефрамевнд](../../mfc/reference/cpaneframewnd-class.md). Может поддерживать несколько областей. Вместо одного внедренного маркера в панели элементов управления `CMultiPaneFrameWnd` содержит объект [класса CPaneContainerManager](../../mfc/reference/cpanecontainermanager-class.md) , позволяющий пользователю закреплять один `CMultiPaneFrameWnd` элемент на другой и динамически создавать несколько плавающих окон с вкладками.
 
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -99,63 +100,63 @@ ms.locfileid: "81752788"
 class CMultiPaneFrameWnd : public CPaneFrameWnd
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CMultiPaneFrameWnd:AddPane](#addpane)|Добавляет панель. (Перекрывает [CPaneFrameWnd::AddPane](../../mfc/reference/cpaneframewnd-class.md#addpane).)|
-|[CMultiPaneFrameWnd:AddRecentPane](#addrecentpane)||
-|[CMultiPaneFrameWnd::AdjustLayout](#adjustlayout)|Настраивает макет окна области. (Перекрывает [CPaneFrameWnd::AdjustLayout](../../mfc/reference/cpaneframewnd-class.md#adjustlayout).)|
-|[CMultiPaneFrameWnd::AdjustPaneFrames](#adjustpaneframes)|(Перекрывает [CPaneFrameWnd::AdjustPaneFrames](../../mfc/reference/cpaneframewnd-class.md#adjustpaneframes).)|
-|[CMultiPaneFrameWnd::CalcExpectedDockedRect](#calcexpecteddockedrect)|Вычисляет ожидаемый прямоугольник пристыкованного окна. (Перекрывает [CPaneFrameWnd::CalcExpectedDockedRect](../../mfc/reference/cpaneframewnd-class.md#calcexpecteddockedrect).)|
-|[CMultiPaneFrameWnd::CanBeattached](#canbeattached)|Определяет, может ли текущее стекло пристыковаться к другому сну или окну рамы. (Перекрывает [CPaneFrameWnd::CanBeAttached](../../mfc/reference/cpaneframewnd-class.md#canbeattached).)|
-|[CMultiPaneFrameWnd::CanBeDockedToPane](#canbedockedtopane)|Определяет, может ли окно мини-рамки пристыковаться к стекле. (Перекрывает [CPaneFrameWnd::CanBeDockedToPane](../../mfc/reference/cpaneframewnd-class.md#canbedockedtopane).)|
-|[CMultiPaneFrameWnd::CheckGripperВидимость](#checkgrippervisibility)|(Перекрывает [CPaneFrameWnd::CheckGripperVisibility](../../mfc/reference/cpaneframewnd-class.md#checkgrippervisibility).)|
-|[CMultiPaneFrameWnd::CloseMiniFrame](#closeminiframe)|(Переопределяет `CPaneFrameWnd::CloseMiniFrame`.)|
-|[CMultiPaneFrameWnd::ConvertToTabbedDocument](#converttotabbeddocument)|Преобразует панель в документ с вкладками. (Перекрывает [CPaneFrameWnd::ConvertToTabbedDocument](../../mfc/reference/cpaneframewnd-class.md#converttotabbeddocument).)|
-|[CMultiPaneFrameWnd::DockFrame](#dockframe)||
-|[CMultiPaneFrameWnd::DockPane](#dockpane)|Закрепляет область. (Перекрывает [CPaneFrameWnd::DockPane](../../mfc/reference/cpaneframewnd-class.md#dockpane).)|
-|[CMultiPaneFrameWnd::DockRecentPaneToMainFrame](#dockrecentpanetomainframe)||
-|[CMultiPaneFrameWnd::GetCaptionText](#getcaptiontext)|Возвращает текст заголовка. (Перекрывает [CPaneFrameWnd::GetCaptionText](../../mfc/reference/cpaneframewnd-class.md#getcaptiontext).)|
-|[CMultiPaneFrameWnd::GetPaneContainerManager](#getpanecontainermanager)|Возвращает ссылку на объект внутреннего диспетчера контейнеров.|
-|[CMultiPaneFrameWnd::GetFirstVisiblePane](#getfirstvisiblepane)|Возвращает первую видимую панель, содержащуюся в окне области. (Перекрывает [CPaneFrameWnd::GetFirstVisiblePane](../../mfc/reference/cpaneframewnd-class.md#getfirstvisiblepane).)|
-|[CMultiPaneFrameWnd::GetPane](#getpane)|Возвращает панель, содержащуюся в окне области. (Перекрывает [CPaneFrameWnd::GetPane](../../mfc/reference/cpaneframewnd-class.md#getpane).)|
-|[CMultiPaneFrameWnd::GetPaneCount](#getpanecount)|Возвращает число панелей, содержащихся в окне области. (Перекрывает [CPaneFrameWnd::GetPaneCount](../../mfc/reference/cpaneframewnd-class.md#getpanecount).)|
-|[CMultiPaneFrameWnd::GetVisiblePaneCount](#getvisiblepanecount)|Возвращает число видимых панелей, содержащихся в окне области. (Перекрывает [CPaneFrameWnd::GetVisiblePaneCount](../../mfc/reference/cpaneframewnd-class.md#getvisiblepanecount).)|
-|[CMultiPaneFrameWnd::InsertPane](#insertpane)||
-|[CMultiPaneFrameWnd::LoadState](#loadstate)|Загружает состояние панели из реестра. (Перекрывает [CPaneFrameWnd::LoadState](../../mfc/reference/cpaneframewnd-class.md#loadstate).)|
-|[CMultiPaneFrameWnd::OndockToRecentPos](#ondocktorecentpos)|Закрепляет окно области в его последней позиции. (Перекрывает [CPaneFrameWnd::OndockToRecentPos](../../mfc/reference/cpaneframewnd-class.md#ondocktorecentpos).)|
-|[CMultiPaneFrameWnd::OnKillRollUpTimer](#onkillrolluptimer)|Останавливает таймер свертки. (Перекрывает [CPaneFrameWnd::OnKillRollUpTimer](../../mfc/reference/cpaneframewnd-class.md#onkillrolluptimer).)|
-|[CMultiPaneFrameWnd::OnPaneRecalcLayout](#onpanerecalclayout)|Регулирует расположение панели внутри окна мини-рамки. (Перекрывает [CPaneFrameWnd::OnPaneRecalcLayout](../../mfc/reference/cpaneframewnd-class.md#onpanerecalclayout).)|
-|[CMultiPaneFrameWnd::OnSetRollUpTimer](#onsetrolluptimer)|Устанавливает таймер свертки. (Перекрывает [CPaneFrameWnd::OnSetRollUpTimer](../../mfc/reference/cpaneframewnd-class.md#onsetrolluptimer).)|
-|[CMultiPaneFrameWnd::OnShowPane](#onshowpane)|Вызывается платформой при скрытии или отображении панели в окне области. (Перекрывает [CPaneFrameWnd::OnShowPane](../../mfc/reference/cpaneframewnd-class.md#onshowpane).)|
-|[CMultiPaneFrameWnd::PaneFromPoint](#panefrompoint)|Возвращает панель, если она содержит предоставленную пользователем точку в пределах окна области. (Перекрывает [CPaneFrameWnd::PaneFromPoint](../../mfc/reference/cpaneframewnd-class.md#panefrompoint).)|
-|[CMultiPaneFrameWnd::RemoveNonValidPanes](#removenonvalidpanes)|Вызывается платформой для удаления недопустимых панелей. (Перекрывает [CPaneFrameWnd::RemoveNonValidPanes](../../mfc/reference/cpaneframewnd-class.md#removenonvalidpanes).)|
-|[CMultiPaneFrameWnd::RemovePane](#removepane)|Удаляет панель из окна области. (Перекрывает [CPaneFrameWnd::RemovePane](../../mfc/reference/cpaneframewnd-class.md#removepane).)|
-|[CMultiPaneFrameWnd::ReplacePane](#replacepane)|Заменяет одну панель другой. (Перекрывает [CPaneFrameWnd::ReplacePane](../../mfc/reference/cpaneframewnd-class.md#replacepane).)|
-|[CMultiPaneFrameWnd::SaveState](#savestate)|Сохраняет состояние панели в реестр. (Перекрывает [CPaneFrameWnd::SaveState](../../mfc/reference/cpaneframewnd-class.md#savestate).)|
-|[CMultiPaneFrameWnd::Serialize](#serialize)|(Переопределяет `CPaneFrameWnd::Serialize`.)|
-|[CMultiPaneFrameWnd::SetDockState](#setdockstate)|Задает состояние закрепления. (Перекрывает [CPaneFrameWnd::SetDockState](../../mfc/reference/cpaneframewnd-class.md#setdockstate).)|
-|[CMultiPaneFrameWnd::SetLastFocusedPane](#setlastfocusedpane)||
-|[CMultiPaneFrameWnd::SetPreDockState](#setpredockstate)|Устанавливает состояние predocking. (Перекрывает [CPaneFrameWnd::SetPreDockState](../../mfc/reference/cpaneframewnd-class.md#setpredockstate).)|
-|[CMultiPaneFrameWnd::StoreRecentDockSiteInfo](#storerecentdocksiteinfo)|(Перекрывает [CPaneFrameWnd::StoreRecentDockSiteInfo](../../mfc/reference/cpaneframewnd-class.md#storerecentdocksiteinfo).)|
-|[CMultiPaneFrameWnd::StoreRecentTabRelatedInfo](#storerecenttabrelatedinfo)|(Перекрывает [CPaneFrameWnd::StoreRecentTabRelatedInfo](../../mfc/reference/cpaneframewnd-class.md#storerecenttabrelatedinfo).)|
+|[Кмултипанефрамевнд:: Аддпане](#addpane)|Добавляет панель. (Переопределяет [кпанефрамевнд:: аддпане](../../mfc/reference/cpaneframewnd-class.md#addpane).)|
+|[Кмултипанефрамевнд:: Аддрецентпане](#addrecentpane)||
+|[Кмултипанефрамевнд:: Аджустлайаут](#adjustlayout)|Настраивает макет окна области. (Переопределяет [кпанефрамевнд:: аджустлайаут](../../mfc/reference/cpaneframewnd-class.md#adjustlayout).)|
+|[Кмултипанефрамевнд:: Аджустпанефрамес](#adjustpaneframes)|(Переопределяет [кпанефрамевнд:: аджустпанефрамес](../../mfc/reference/cpaneframewnd-class.md#adjustpaneframes).)|
+|[Кмултипанефрамевнд:: Калцекспектеддоккедрект](#calcexpecteddockedrect)|Вычисляет ожидаемый прямоугольник закрепленного окна. (Переопределяет [кпанефрамевнд:: калцекспектеддоккедрект](../../mfc/reference/cpaneframewnd-class.md#calcexpecteddockedrect).)|
+|[Кмултипанефрамевнд:: Канбеаттачед](#canbeattached)|Определяет, может ли текущая Панель закрепляться на другой панели или в окне фрейма. (Переопределяет [кпанефрамевнд:: канбеаттачед](../../mfc/reference/cpaneframewnd-class.md#canbeattached).)|
+|[Кмултипанефрамевнд:: Канбедоккедтопане](#canbedockedtopane)|Определяет, можно ли закрепить окно мини-кадра на панели. (Переопределяет [кпанефрамевнд:: канбедоккедтопане](../../mfc/reference/cpaneframewnd-class.md#canbedockedtopane).)|
+|[Кмултипанефрамевнд:: Чеккгриппервисибилити](#checkgrippervisibility)|(Переопределяет [кпанефрамевнд:: чеккгриппервисибилити](../../mfc/reference/cpaneframewnd-class.md#checkgrippervisibility).)|
+|[Кмултипанефрамевнд:: Клосеминифраме](#closeminiframe)|(Переопределяет `CPaneFrameWnd::CloseMiniFrame`.)|
+|[Кмултипанефрамевнд:: Конверттотаббеддокумент](#converttotabbeddocument)|Преобразует панель в документ с вкладками. (Переопределяет [кпанефрамевнд:: конверттотаббеддокумент](../../mfc/reference/cpaneframewnd-class.md#converttotabbeddocument).)|
+|[Кмултипанефрамевнд::D Оккфраме](#dockframe)||
+|[Кмултипанефрамевнд::D Оккпане](#dockpane)|Закрепляет область. (Переопределяет [кпанефрамевнд::D оккпане](../../mfc/reference/cpaneframewnd-class.md#dockpane).)|
+|[Кмултипанефрамевнд::D Оккрецентпанетомаинфраме](#dockrecentpanetomainframe)||
+|[Кмултипанефрамевнд:: Жеткаптионтекст](#getcaptiontext)|Возвращает текст заголовка. (Переопределяет [кпанефрамевнд:: жеткаптионтекст](../../mfc/reference/cpaneframewnd-class.md#getcaptiontext).)|
+|[Кмултипанефрамевнд:: Жетпанеконтаинерманажер](#getpanecontainermanager)|Возвращает ссылку на внутренний объект диспетчера контейнеров.|
+|[Кмултипанефрамевнд:: Жетфирствисиблепане](#getfirstvisiblepane)|Возвращает первую видимую панель, содержащуюся в окне области. (Переопределяет [кпанефрамевнд:: жетфирствисиблепане](../../mfc/reference/cpaneframewnd-class.md#getfirstvisiblepane).)|
+|[Кмултипанефрамевнд:: "панель"](#getpane)|Возвращает панель, содержащуюся в окне области. (Переопределяет [кпанефрамевнд:: onpane](../../mfc/reference/cpaneframewnd-class.md#getpane).)|
+|[Кмултипанефрамевнд:: Жетпанекаунт](#getpanecount)|Возвращает число панелей, содержащихся в окне области. (Переопределяет [кпанефрамевнд:: жетпанекаунт](../../mfc/reference/cpaneframewnd-class.md#getpanecount).)|
+|[Кмултипанефрамевнд:: Жетвисиблепанекаунт](#getvisiblepanecount)|Возвращает число видимых панелей, содержащихся в окне области. (Переопределяет [кпанефрамевнд:: жетвисиблепанекаунт](../../mfc/reference/cpaneframewnd-class.md#getvisiblepanecount).)|
+|[Кмултипанефрамевнд:: Инсертпане](#insertpane)||
+|[Кмултипанефрамевнд:: LoadState](#loadstate)|Загружает состояние панели из реестра. (Переопределяет [кпанефрамевнд:: LoadState](../../mfc/reference/cpaneframewnd-class.md#loadstate).)|
+|[Кмултипанефрамевнд:: Ондоккторецентпос](#ondocktorecentpos)|Закрепляет окно области в его последней позиции. (Переопределяет [кпанефрамевнд:: ондоккторецентпос](../../mfc/reference/cpaneframewnd-class.md#ondocktorecentpos).)|
+|[Кмултипанефрамевнд:: Онкиллроллуптимер](#onkillrolluptimer)|Останавливает таймер свертки. (Переопределяет [кпанефрамевнд:: онкиллроллуптимер](../../mfc/reference/cpaneframewnd-class.md#onkillrolluptimer).)|
+|[Кмултипанефрамевнд:: Онпанерекалклайаут](#onpanerecalclayout)|Настраивает макет области внутри окна в палитре. (Переопределяет [кпанефрамевнд:: онпанерекалклайаут](../../mfc/reference/cpaneframewnd-class.md#onpanerecalclayout).)|
+|[Кмултипанефрамевнд:: Онсетроллуптимер](#onsetrolluptimer)|Устанавливает таймер свертки. (Переопределяет [кпанефрамевнд:: онсетроллуптимер](../../mfc/reference/cpaneframewnd-class.md#onsetrolluptimer).)|
+|[Кмултипанефрамевнд:: Оншовпане](#onshowpane)|Вызывается платформой при скрытии или отображении панели в окне области. (Переопределяет [кпанефрамевнд:: оншовпане](../../mfc/reference/cpaneframewnd-class.md#onshowpane).)|
+|[Кмултипанефрамевнд::P Анефромпоинт](#panefrompoint)|Возвращает панель, если она содержит предоставленную пользователем точку в пределах окна области. (Переопределяет [кпанефрамевнд::P анефромпоинт](../../mfc/reference/cpaneframewnd-class.md#panefrompoint).)|
+|[Кмултипанефрамевнд:: Ремовенонвалидпанес](#removenonvalidpanes)|Вызывается платформой для удаления недопустимых панелей. (Переопределяет [кпанефрамевнд:: ремовенонвалидпанес](../../mfc/reference/cpaneframewnd-class.md#removenonvalidpanes).)|
+|[Кмултипанефрамевнд:: Ремовепане](#removepane)|Удаляет панель из окна области. (Переопределяет [кпанефрамевнд:: ремовепане](../../mfc/reference/cpaneframewnd-class.md#removepane).)|
+|[Кмултипанефрамевнд:: Реплацепане](#replacepane)|Заменяет одну панель другой. (Переопределяет [кпанефрамевнд:: реплацепане](../../mfc/reference/cpaneframewnd-class.md#replacepane).)|
+|[Кмултипанефрамевнд:: SaveState](#savestate)|Сохраняет состояние панели в реестр. (Переопределяет [кпанефрамевнд:: SaveState](../../mfc/reference/cpaneframewnd-class.md#savestate).)|
+|[Кмултипанефрамевнд:: Serialize](#serialize)|(Переопределяет `CPaneFrameWnd::Serialize`.)|
+|[Кмултипанефрамевнд:: Сетдоккстате](#setdockstate)|Задает состояние закрепления. (Переопределяет [кпанефрамевнд:: сетдоккстате](../../mfc/reference/cpaneframewnd-class.md#setdockstate).)|
+|[Кмултипанефрамевнд:: Сетластфокуседпане](#setlastfocusedpane)||
+|[Кмултипанефрамевнд:: Сетпредоккстате](#setpredockstate)|Задает состояние предстыковки. (Переопределяет [кпанефрамевнд:: сетпредоккстате](../../mfc/reference/cpaneframewnd-class.md#setpredockstate).)|
+|[Кмултипанефрамевнд:: Сторерецентдоккситеинфо](#storerecentdocksiteinfo)|(Переопределяет [кпанефрамевнд:: сторерецентдоккситеинфо](../../mfc/reference/cpaneframewnd-class.md#storerecentdocksiteinfo).)|
+|[Кмултипанефрамевнд:: Сторереценттабрелатединфо](#storerecenttabrelatedinfo)|(Переопределяет [кпанефрамевнд:: сторереценттабрелатединфо](../../mfc/reference/cpaneframewnd-class.md#storerecenttabrelatedinfo).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Большинство методов этого класса переопределяют методы в классе [CPaneFrameWnd.](../../mfc/reference/cpaneframewnd-class.md)
+Большинство методов в этом классе переопределяют методы в классе [класса кпанефрамевнд](../../mfc/reference/cpaneframewnd-class.md) .
 
-Если панель использует AFX_CBRS_AUTO_ROLLUP стиль и пользователь пристыковывается к многопанельной раме окна, пользователь может свернуть окно, независимо от настройки стиля других пристыкованных стекол.
+Если в области используется стиль AFX_CBRS_AUTO_ROLLUP и пользователь закрепляет эту панель в многоэлементном окне фрейма, пользователь может выполнить сведение окна независимо от параметров стиля других закрепленных панелей.
 
-Фрейм `CMultiPaneFrameWnd` автоматически создает объект, когда пользователь плавает панель, которая использует CBRS_FLOAT_MULTI стиль.
+Платформа автоматически создает `CMultiPaneFrameWnd` объект, когда пользователь перемещает панель, использующую стиль CBRS_FLOAT_MULTI.
 
-Для получения информации о выводе класса из `CPaneFrameWnd` класса и его динамическом создании см. [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md)
+Сведения о наследовании класса от `CPaneFrameWnd` класса и его динамического создания см. в разделе [кпанефрамевнд](../../mfc/reference/cpaneframewnd-class.md).
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано, как получить `CMultiPaneFrameWnd` указатель объекта. Этот фрагмент кода является частью [образца Set Pane Size.](../../overview/visual-cpp-samples.md)
+В следующем примере показано, как получить указатель на `CMultiPaneFrameWnd` объект. Этот фрагмент кода является частью [примера размера панели Set](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_SetPaneSize#4](../../mfc/reference/codesnippet/cpp/cmultipaneframewnd-class_1.cpp)]
 
@@ -173,9 +174,9 @@ class CMultiPaneFrameWnd : public CPaneFrameWnd
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxMultiPaneFramewnd.h
+**Заголовок:** афксмултипанефрамевнд. h
 
-## <a name="cmultipaneframewndaddpane"></a><a name="addpane"></a>CMultiPaneFrameWnd:AddPane
+## <a name="cmultipaneframewndaddpane"></a><a name="addpane"></a> Кмултипанефрамевнд:: Аддпане
 
 ```
 virtual void AddPane(CBasePane* pWnd);
@@ -183,11 +184,11 @@ virtual void AddPane(CBasePane* pWnd);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pWnd*<br/>
+окне *приводится*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndaddrecentpane"></a><a name="addrecentpane"></a>CMultiPaneFrameWnd:AddRecentPane
+## <a name="cmultipaneframewndaddrecentpane"></a><a name="addrecentpane"></a> Кмултипанефрамевнд:: Аддрецентпане
 
 ```
 virtual BOOL AddRecentPane(CDockablePane* pBar);
@@ -195,29 +196,29 @@ virtual BOOL AddRecentPane(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
+окне *пбар*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndadjustlayout"></a><a name="adjustlayout"></a>CMultiPaneFrameWnd::AdjustLayout
+## <a name="cmultipaneframewndadjustlayout"></a><a name="adjustlayout"></a> Кмултипанефрамевнд:: Аджустлайаут
 
 ```
 virtual void AdjustLayout();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndadjustpaneframes"></a><a name="adjustpaneframes"></a>CMultiPaneFrameWnd::AdjustPaneFrames
+## <a name="cmultipaneframewndadjustpaneframes"></a><a name="adjustpaneframes"></a> Кмултипанефрамевнд:: Аджустпанефрамес
 
 ```
 virtual void AdjustPaneFrames();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndcalcexpecteddockedrect"></a><a name="calcexpecteddockedrect"></a>CMultiPaneFrameWnd::CalcExpectedDockedRect
+## <a name="cmultipaneframewndcalcexpecteddockedrect"></a><a name="calcexpecteddockedrect"></a> Кмултипанефрамевнд:: Калцекспектеддоккедрект
 
 ```
 virtual void CalcExpectedDockedRect(
@@ -230,15 +231,15 @@ virtual void CalcExpectedDockedRect(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pWndTodock*<br/>
-(в) *ptMouse*<br/>
-(в) *rectResult*<br/>
-(в) *bDrawTab*<br/>
-(в) *ppTargetBar*<br/>
+окне *пвндтодокк*<br/>
+окне *птмаусе*<br/>
+окне *ректресулт*<br/>
+окне *бдравтаб*<br/>
+окне *пптаржетбар*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndcanbeattached"></a><a name="canbeattached"></a>CMultiPaneFrameWnd::CanBeattached
+## <a name="cmultipaneframewndcanbeattached"></a><a name="canbeattached"></a> Кмултипанефрамевнд:: Канбеаттачед
 
 ```
 virtual BOOL CanBeAttached() const;
@@ -246,9 +247,9 @@ virtual BOOL CanBeAttached() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndcanbedockedtopane"></a><a name="canbedockedtopane"></a>CMultiPaneFrameWnd::CanBeDockedToPane
+## <a name="cmultipaneframewndcanbedockedtopane"></a><a name="canbedockedtopane"></a> Кмултипанефрамевнд:: Канбедоккедтопане
 
 ```
 virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
@@ -256,37 +257,37 @@ virtual BOOL CanBeDockedToPane(const CDockablePane* pDockingBar) const;
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDockingBar*<br/>
+окне *пдоккингбар*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndcheckgrippervisibility"></a><a name="checkgrippervisibility"></a>CMultiPaneFrameWnd::CheckGripperВидимость
+## <a name="cmultipaneframewndcheckgrippervisibility"></a><a name="checkgrippervisibility"></a> Кмултипанефрамевнд:: Чеккгриппервисибилити
 
 ```
 virtual void CheckGripperVisibility();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndcloseminiframe"></a><a name="closeminiframe"></a>CMultiPaneFrameWnd::CloseMiniFrame
+## <a name="cmultipaneframewndcloseminiframe"></a><a name="closeminiframe"></a> Кмултипанефрамевнд:: Клосеминифраме
 
 ```
 virtual void CloseMiniFrame();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndconverttotabbeddocument"></a><a name="converttotabbeddocument"></a>CMultiPaneFrameWnd::ConvertToTabbedDocument
+## <a name="cmultipaneframewndconverttotabbeddocument"></a><a name="converttotabbeddocument"></a> Кмултипанефрамевнд:: Конверттотаббеддокумент
 
 ```
 virtual void ConvertToTabbedDocument();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewnddockframe"></a><a name="dockframe"></a>CMultiPaneFrameWnd::DockFrame
+## <a name="cmultipaneframewnddockframe"></a><a name="dockframe"></a> Кмултипанефрамевнд::D Оккфраме
 
 ```
 virtual BOOL DockFrame(
@@ -296,14 +297,14 @@ virtual BOOL DockFrame(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDockedFrame*<br/>
-(в) *докМетод*<br/>
+окне *пдоккедфраме*<br/>
+окне *доккмесод*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewnddockpane"></a><a name="dockpane"></a>CMultiPaneFrameWnd::DockPane
+## <a name="cmultipaneframewnddockpane"></a><a name="dockpane"></a> Кмултипанефрамевнд::D Оккпане
 
 ```
 virtual BOOL DockPane(CDockablePane* pDockedBar);
@@ -311,13 +312,13 @@ virtual BOOL DockPane(CDockablePane* pDockedBar);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDockedBar*<br/>
+окне *пдоккедбар*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewnddockrecentpanetomainframe"></a><a name="dockrecentpanetomainframe"></a>CMultiPaneFrameWnd::DockRecentPaneToMainFrame
+## <a name="cmultipaneframewnddockrecentpanetomainframe"></a><a name="dockrecentpanetomainframe"></a> Кмултипанефрамевнд::D Оккрецентпанетомаинфраме
 
 ```
 virtual void DockRecentPaneToMainFrame(CDockablePane* pBar);
@@ -325,11 +326,11 @@ virtual void DockRecentPaneToMainFrame(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
+окне *пбар*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndgetcaptiontext"></a><a name="getcaptiontext"></a>CMultiPaneFrameWnd::GetCaptionText
+## <a name="cmultipaneframewndgetcaptiontext"></a><a name="getcaptiontext"></a> Кмултипанефрамевнд:: Жеткаптионтекст
 
 ```
 virtual CString GetCaptionText();
@@ -337,9 +338,9 @@ virtual CString GetCaptionText();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndgetfirstvisiblepane"></a><a name="getfirstvisiblepane"></a>CMultiPaneFrameWnd::GetFirstVisiblePane
+## <a name="cmultipaneframewndgetfirstvisiblepane"></a><a name="getfirstvisiblepane"></a> Кмултипанефрамевнд:: Жетфирствисиблепане
 
 ```
 virtual CWnd* GetFirstVisiblePane() const;
@@ -347,9 +348,9 @@ virtual CWnd* GetFirstVisiblePane() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndgetpane"></a><a name="getpane"></a>CMultiPaneFrameWnd::GetPane
+## <a name="cmultipaneframewndgetpane"></a><a name="getpane"></a> Кмултипанефрамевнд:: "панель"
 
 ```
 virtual CWnd* GetPane() const;
@@ -357,11 +358,11 @@ virtual CWnd* GetPane() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndgetpanecontainermanager"></a><a name="getpanecontainermanager"></a>CMultiPaneFrameWnd::GetPaneContainerManager
+## <a name="cmultipaneframewndgetpanecontainermanager"></a><a name="getpanecontainermanager"></a> Кмултипанефрамевнд:: Жетпанеконтаинерманажер
 
-Возвращает ссылку на объект внутреннего диспетчера контейнеров.
+Возвращает ссылку на внутренний объект диспетчера контейнеров.
 
 ```
 CPaneContainerManager& GetPaneContainerManager();
@@ -371,11 +372,11 @@ CPaneContainerManager& GetPaneContainerManager();
 
 Ссылка на внутренний объект диспетчера контейнеров.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Этот метод может быть использован для доступа к внутреннему объекту [класса CPaneContainerManager.](../../mfc/reference/cpanecontainermanager-class.md)
+Этот метод можно использовать для доступа к внутреннему объекту [класса CPaneContainerManager](../../mfc/reference/cpanecontainermanager-class.md) .
 
-## <a name="cmultipaneframewndgetpanecount"></a><a name="getpanecount"></a>CMultiPaneFrameWnd::GetPaneCount
+## <a name="cmultipaneframewndgetpanecount"></a><a name="getpanecount"></a> Кмултипанефрамевнд:: Жетпанекаунт
 
 ```
 virtual int GetPaneCount() const;
@@ -383,9 +384,9 @@ virtual int GetPaneCount() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndgetvisiblepanecount"></a><a name="getvisiblepanecount"></a>CMultiPaneFrameWnd::GetVisiblePaneCount
+## <a name="cmultipaneframewndgetvisiblepanecount"></a><a name="getvisiblepanecount"></a> Кмултипанефрамевнд:: Жетвисиблепанекаунт
 
 ```
 virtual int GetVisiblePaneCount() const;
@@ -393,9 +394,9 @@ virtual int GetVisiblePaneCount() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndinsertpane"></a><a name="insertpane"></a>CMultiPaneFrameWnd::InsertPane
+## <a name="cmultipaneframewndinsertpane"></a><a name="insertpane"></a> Кмултипанефрамевнд:: Инсертпане
 
 ```
 virtual BOOL InsertPane(
@@ -406,15 +407,15 @@ virtual BOOL InsertPane(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pControlBar*<br/>
-(в) *pTarget*<br/>
-(в) *bПосле*<br/>
+окне *пконтролбар*<br/>
+окне *птаржет*<br/>
+окне *бафтер*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndloadstate"></a><a name="loadstate"></a>CMultiPaneFrameWnd::LoadState
+## <a name="cmultipaneframewndloadstate"></a><a name="loadstate"></a> Кмултипанефрамевнд:: LoadState
 
 ```
 virtual BOOL LoadState(
@@ -424,46 +425,46 @@ virtual BOOL LoadState(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *lpszProfileName*<br/>
-(в) *uiID*<br/>
+окне *лпсзпрофиленаме*<br/>
+окне *уиид*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndondocktorecentpos"></a><a name="ondocktorecentpos"></a>CMultiPaneFrameWnd::OndockToRecentPos
+## <a name="cmultipaneframewndondocktorecentpos"></a><a name="ondocktorecentpos"></a> Кмултипанефрамевнд:: Ондоккторецентпос
 
 ```
 virtual void OnDockToRecentPos();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndonkillrolluptimer"></a><a name="onkillrolluptimer"></a>CMultiPaneFrameWnd::OnKillRollUpTimer
+## <a name="cmultipaneframewndonkillrolluptimer"></a><a name="onkillrolluptimer"></a> Кмултипанефрамевнд:: Онкиллроллуптимер
 
 ```
 virtual void OnKillRollUpTimer();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndonpanerecalclayout"></a><a name="onpanerecalclayout"></a>CMultiPaneFrameWnd::OnPaneRecalcLayout
+## <a name="cmultipaneframewndonpanerecalclayout"></a><a name="onpanerecalclayout"></a> Кмултипанефрамевнд:: Онпанерекалклайаут
 
 ```
 virtual void OnPaneRecalcLayout();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndonsetrolluptimer"></a><a name="onsetrolluptimer"></a>CMultiPaneFrameWnd::OnSetRollUpTimer
+## <a name="cmultipaneframewndonsetrolluptimer"></a><a name="onsetrolluptimer"></a> Кмултипанефрамевнд:: Онсетроллуптимер
 
 ```
 virtual void OnSetRollUpTimer();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndonshowpane"></a><a name="onshowpane"></a>CMultiPaneFrameWnd::OnShowPane
+## <a name="cmultipaneframewndonshowpane"></a><a name="onshowpane"></a> Кмултипанефрамевнд:: Оншовпане
 
 ```
 virtual void OnShowPane(
@@ -473,12 +474,12 @@ virtual void OnShowPane(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
-(в) *bShow*<br/>
+окне *пбар*<br/>
+окне *бшов*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndpanefrompoint"></a><a name="panefrompoint"></a>CMultiPaneFrameWnd::PaneFromPoint
+## <a name="cmultipaneframewndpanefrompoint"></a><a name="panefrompoint"></a> Кмултипанефрамевнд::P Анефромпоинт
 
 ```
 virtual CBasePane* PaneFromPoint(
@@ -489,23 +490,23 @@ virtual CBasePane* PaneFromPoint(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *точки*<br/>
-(в) *nЧувствительность*<br/>
-(в) *bCheckВидимость*<br/>
+окне *точка*<br/>
+окне *нсенситивити*<br/>
+окне *бчекквисибилити*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndremovenonvalidpanes"></a><a name="removenonvalidpanes"></a>CMultiPaneFrameWnd::RemoveNonValidPanes
+## <a name="cmultipaneframewndremovenonvalidpanes"></a><a name="removenonvalidpanes"></a> Кмултипанефрамевнд:: Ремовенонвалидпанес
 
 ```
 virtual void RemoveNonValidPanes();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndremovepane"></a><a name="removepane"></a>CMultiPaneFrameWnd::RemovePane
+## <a name="cmultipaneframewndremovepane"></a><a name="removepane"></a> Кмултипанефрамевнд:: Ремовепане
 
 ```
 virtual void RemovePane(
@@ -516,13 +517,13 @@ virtual void RemovePane(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
-(в) *bDestroy*<br/>
-(в) *bNoDelayedDestroy*<br/>
+окне *пбар*<br/>
+окне *бдестрой*<br/>
+окне *бноделайеддестрой*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndreplacepane"></a><a name="replacepane"></a>CMultiPaneFrameWnd::ReplacePane
+## <a name="cmultipaneframewndreplacepane"></a><a name="replacepane"></a> Кмултипанефрамевнд:: Реплацепане
 
 ```
 virtual void ReplacePane(
@@ -532,12 +533,12 @@ virtual void ReplacePane(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBarOrg*<br/>
-(в) *pBarReplaceWith*<br/>
+окне *пбарорг*<br/>
+окне *пбарреплацевис*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndsavestate"></a><a name="savestate"></a>CMultiPaneFrameWnd::SaveState
+## <a name="cmultipaneframewndsavestate"></a><a name="savestate"></a> Кмултипанефрамевнд:: SaveState
 
 ```
 virtual BOOL SaveState(
@@ -547,14 +548,14 @@ virtual BOOL SaveState(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *lpszProfileName*<br/>
-(в) *uiID*<br/>
+окне *лпсзпрофиленаме*<br/>
+окне *уиид*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndserialize"></a><a name="serialize"></a>CMultiPaneFrameWnd::Serialize
+## <a name="cmultipaneframewndserialize"></a><a name="serialize"></a> Кмултипанефрамевнд:: Serialize
 
 ```
 virtual void Serialize(CArchive& ar);
@@ -564,9 +565,9 @@ virtual void Serialize(CArchive& ar);
 
 [in] *ar*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndsetdockstate"></a><a name="setdockstate"></a>CMultiPaneFrameWnd::SetDockState
+## <a name="cmultipaneframewndsetdockstate"></a><a name="setdockstate"></a> Кмултипанефрамевнд:: Сетдоккстате
 
 ```
 virtual void SetDockState(CDockingManager* pDockManager);
@@ -574,11 +575,11 @@ virtual void SetDockState(CDockingManager* pDockManager);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDockManager*<br/>
+окне *пдоккманажер*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndsetlastfocusedpane"></a><a name="setlastfocusedpane"></a>CMultiPaneFrameWnd::SetLastFocusedPane
+## <a name="cmultipaneframewndsetlastfocusedpane"></a><a name="setlastfocusedpane"></a> Кмултипанефрамевнд:: Сетластфокуседпане
 
 ```cpp
 void SetLastFocusedPane(HWND hwnd);
@@ -586,11 +587,11 @@ void SetLastFocusedPane(HWND hwnd);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *hwnd*<br/>
+окне *HWND*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndsetpredockstate"></a><a name="setpredockstate"></a>CMultiPaneFrameWnd::SetPreDockState
+## <a name="cmultipaneframewndsetpredockstate"></a><a name="setpredockstate"></a> Кмултипанефрамевнд:: Сетпредоккстате
 
 ```
 virtual BOOL SetPreDockState(
@@ -601,15 +602,15 @@ virtual BOOL SetPreDockState(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *preDockState*<br/>
-(в) *пбартодок*<br/>
-(в) *докМетод*<br/>
+окне *предоккстате*<br/>
+окне *пбартодокк*<br/>
+окне *доккмесод*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndstorerecentdocksiteinfo"></a><a name="storerecentdocksiteinfo"></a>CMultiPaneFrameWnd::StoreRecentDockSiteInfo
+## <a name="cmultipaneframewndstorerecentdocksiteinfo"></a><a name="storerecentdocksiteinfo"></a> Кмултипанефрамевнд:: Сторерецентдоккситеинфо
 
 ```
 virtual void StoreRecentDockSiteInfo(CPane* pBar);
@@ -617,11 +618,11 @@ virtual void StoreRecentDockSiteInfo(CPane* pBar);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
+окне *пбар*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cmultipaneframewndstorerecenttabrelatedinfo"></a><a name="storerecenttabrelatedinfo"></a>CMultiPaneFrameWnd::StoreRecentTabRelatedInfo
+## <a name="cmultipaneframewndstorerecenttabrelatedinfo"></a><a name="storerecenttabrelatedinfo"></a> Кмултипанефрамевнд:: Сторереценттабрелатединфо
 
 ```
 virtual void StoreRecentTabRelatedInfo(
@@ -631,13 +632,13 @@ virtual void StoreRecentTabRelatedInfo(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pDockingBar*<br/>
-(в) *pTabbedBar*<br/>
+окне *пдоккингбар*<br/>
+окне *птаббедбар*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
-[Класс CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md)
+[Класс Кпанефрамевнд](../../mfc/reference/cpaneframewnd-class.md)

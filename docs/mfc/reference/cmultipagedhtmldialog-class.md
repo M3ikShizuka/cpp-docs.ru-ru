@@ -1,5 +1,6 @@
 ---
-title: Класс CmultiPageDHtmlDialog
+description: 'Дополнительные сведения о: Кмултипажедхтмлдиалог Class'
+title: Класс Кмултипажедхтмлдиалог
 ms.date: 03/27/2019
 f1_keywords:
 - CMultiPageDHtmlDialog
@@ -8,14 +9,14 @@ f1_keywords:
 helpviewer_keywords:
 - CMultiPageDHtmlDialog [MFC], CMultiPageDHtmlDialog
 ms.assetid: 971accc1-824d-4df4-b4c1-b1a20e0f7e4f
-ms.openlocfilehash: 89e4830c3b5c6cb663ca2d2935adaaae3f356958
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 1f7f8c2081687c71a98e427bb5396cfa47a73deb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81319655"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331530"
 ---
-# <a name="cmultipagedhtmldialog-class"></a>Класс CmultiPageDHtmlDialog
+# <a name="cmultipagedhtmldialog-class"></a>Класс Кмултипажедхтмлдиалог
 
 Многостраничное диалоговое окно последовательно отображает несколько HTML-страниц и обрабатывает события каждой страницы.
 
@@ -25,28 +26,28 @@ ms.locfileid: "81319655"
 class CMultiPageDHtmlDialog : public CDHtmlDialog
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CmultipagedHtmlDialog::CmultipagedHtmlDialog](#cmultipagedhtmldialog)|Строит многостраничный (волшебник-стиль) диалоговый объект DHTML.|
-|[CmultipagedHtmlDialog:::»CmultipagedHtmlDialog](#_dtorcmultipagedhtmldialog)|Уничтожает многостраничный диалоговой объект DHTML.|
+|[Кмултипажедхтмлдиалог:: Кмултипажедхтмлдиалог](#cmultipagedhtmldialog)|Конструирует многостраничный (в стиле мастера) объект диалогового окна DHTML.|
+|[Кмултипажедхтмлдиалог:: ~ Кмултипажедхтмлдиалог](#_dtorcmultipagedhtmldialog)|Уничтожает многостраничный объект диалогового окна DHTML.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Механизмом для этого является [карта событий DHTML и URL,](dhtml-event-maps.md)которая содержит встроенные карты событий для каждой страницы.
+Этот механизм является [сопоставлением событий DHTML и URL-адресов](dhtml-event-maps.md), который содержит внедренные карты событий для каждой страницы.
 
 ## <a name="example"></a>Пример
 
-Этот многостраничный диалог предполагает три HTML-ресурса, определяющих простую функциональность, похожую на мастера. На первой странице есть **кнопка Next,** вторая кнопка **Prev** и **Next,** а третья кнопка **Prev.** При нажатии одной из кнопок функция обработчика вызывает [CDHtmlDialog::LoadFromResource](../../mfc/reference/cdhtmldialog-class.md#loadfromresource) для загрузки соответствующей новой страницы.
+В этом многостраничном диалоговом окне предполагается три HTML-ресурса, определяющие простые функции, аналогичные мастеру. На первой странице имеется кнопка **Далее** , вторая кнопка **назад** и **Далее** , а также третья кнопка **назад** . При нажатии одной из кнопок функция обработчика вызывает [CDHtmlDialog:: лоадфромресаурце](../../mfc/reference/cdhtmldialog-class.md#loadfromresource) для загрузки соответствующей новой страницы.
 
-Соответствующие части классной декларации (в CMyMultiPageDlg.h):
+Соответствующие части объявления класса (в Кмимултипажедлг. h):
 
 [!code-cpp[NVC_MFCDocView#181](../../mfc/codesnippet/cpp/cmultipagedhtmldialog-class_1.h)]
 
-Соответствующие части реализации класса (в CMyMultipageDlg.cpp):
+Соответствующие части реализации класса (в Кмимултипажедлг. cpp):
 
 [!code-cpp[NVC_MFCDocView#182](../../mfc/codesnippet/cpp/cmultipagedhtmldialog-class_2.cpp)]
 
@@ -74,11 +75,11 @@ class CMultiPageDHtmlDialog : public CDHtmlDialog
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxdhtml.h
+**Заголовок:** афксдхтмл. h
 
-## <a name="cmultipagedhtmldialogcmultipagedhtmldialog"></a><a name="cmultipagedhtmldialog"></a>CmultipagedHtmlDialog::CmultipagedHtmlDialog
+## <a name="cmultipagedhtmldialogcmultipagedhtmldialog"></a><a name="cmultipagedhtmldialog"></a> Кмултипажедхтмлдиалог:: Кмултипажедхтмлдиалог
 
-Строит многостраничный (волшебник-стиль) диалоговый объект DHTML.
+Конструирует многостраничный (в стиле мастера) объект диалогового окна DHTML.
 
 ```
 CMultiPageDHtmlDialog(
@@ -96,24 +97,24 @@ CMultiPageDHtmlDialog();
 
 ### <a name="parameters"></a>Параметры
 
-*lpszTemplateName*<br/>
-Строка с нулевым завершением, которая является названием ресурса шаблона диалог-бокса.
+*лпсзтемплатенаме*<br/>
+Строка, завершающаяся нулем, которая является именем ресурса шаблона диалогового окна.
 
-*szHtmlResID*<br/>
-Строка с нулевым завершением, которая является именем ресурса HTML.
+*сзтмлресид*<br/>
+Строка, завершающаяся нулем, которая является именем ресурса HTML.
 
-*pParentWnd*<br/>
-Указатель на объект окна родителя или владельца (типа [CWnd),](../../mfc/reference/cwnd-class.md)к которому принадлежит объект диалога. Если это NULL, родительское окно объекта диалога устанавливается на основное окно приложения.
+*ппарентвнд*<br/>
+Указатель на родительский или объект окна-владельца (типа [CWnd](../../mfc/reference/cwnd-class.md)), которому принадлежит объект диалогового окна. Если значение равно NULL, то родительское окно объекта диалогового окна устанавливается в главное окно приложения.
 
-*nIDTemplate*<br/>
-Содержит идентификационный номер ресурса шаблона диалогового ящика.
+*нидтемплате*<br/>
+Содержит ИДЕНТИФИКАЦИОНный номер ресурса шаблона диалогового окна.
 
-*nHtmlResID*<br/>
-Содержит идентификационный номер ресурса HTML.
+*нхтмлресид*<br/>
+Содержит ИДЕНТИФИКАЦИОНный номер ресурса HTML.
 
-## <a name="cmultipagedhtmldialogcmultipagedhtmldialog"></a><a name="_dtorcmultipagedhtmldialog"></a>CmultipagedHtmlDialog:::»CmultipagedHtmlDialog
+## <a name="cmultipagedhtmldialogcmultipagedhtmldialog"></a><a name="_dtorcmultipagedhtmldialog"></a> Кмултипажедхтмлдиалог:: ~ Кмултипажедхтмлдиалог
 
-Уничтожает многостраничный диалоговой объект DHTML.
+Уничтожает многостраничный объект диалогового окна DHTML.
 
 ```
 virtual ~CMultiPageDHtmlDialog();

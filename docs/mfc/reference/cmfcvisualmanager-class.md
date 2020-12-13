@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CMFCVisualManager Class'
 title: Класс CMFCVisualManager
 ms.date: 11/04/2016
 f1_keywords:
@@ -344,12 +345,12 @@ helpviewer_keywords:
 - CMFCVisualManager [MFC], SetMenuShadowDepth
 - CMFCVisualManager [MFC], SetShadowHighlightedImage
 ms.assetid: beed80f7-36a2-4d64-9f09-e807cfefc3fe
-ms.openlocfilehash: bf6c663b6c841f4bc06255845d924cab58d87f1f
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: ae915c74ec97c2e9ec65da2c24674dd38637ba60
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90683914"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331678"
 ---
 # <a name="cmfcvisualmanager-class"></a>Класс CMFCVisualManager
 
@@ -363,7 +364,7 @@ ms.locfileid: "90683914"
 class CMFCVisualManager : public CMFCBaseVisualManager
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -392,7 +393,7 @@ class CMFCVisualManager : public CMFCBaseVisualManager
 |[CMFCVisualManager:: Жетмдитабсбордерссизе](#getmditabsborderssize)|Вызвано структурой для получения размера границы окна Мдитабс.|
 |[CMFCVisualManager:: Жетменуитемтекстколор](#getmenuitemtextcolor)||
 |[CMFCVisualManager:: Жетменушадовдепс](#getmenushadowdepth)|Возвращает значение, определяющее ширину и высоту тени меню.|
-|[CMFCVisualManager:: Жетнкбтнсизе](#getncbtnsize)|Вызывается платформой для определения размера системных кнопок на основе текущего диспетчера визуальных элементов. Системные кнопки — это кнопки в заголовке главного фрейма, сопоставленные с командами **Close**, **сворачивания**, **Maximize**и **RESTORE**.|
+|[CMFCVisualManager:: Жетнкбтнсизе](#getncbtnsize)|Вызывается платформой для определения размера системных кнопок на основе текущего диспетчера визуальных элементов. Системные кнопки — это кнопки в заголовке главного фрейма, сопоставленные с командами **Close**, **сворачивания**, **Maximize** и **RESTORE**.|
 |[CMFCVisualManager:: Жетпопупменубордерсизе](#getpopupmenubordersize)|Вызывается платформой для получения размера границы всплывающего меню.|
 |[CMFCVisualManager:: Жетпропертигридграупколор](#getpropertygridgroupcolor)|Вызвано структурой для получения цвета фона списка свойств.|
 |[CMFCVisualManager:: Жетпропертигридграуптекстколор](#getpropertygridgrouptextcolor)|Вызывается платформой для получения цвета текста списка свойств.|
@@ -447,7 +448,7 @@ class CMFCVisualManager : public CMFCBaseVisualManager
 |[CMFCVisualManager:: Ондравменуресизебар](#ondrawmenuresizebar)||
 |[CMFCVisualManager:: Ондравменускроллбуттон](#ondrawmenuscrollbutton)|Вызывается структурой при отрисовке кнопки прокрутки меню.|
 |[CMFCVisualManager:: Ондравменушадов](#ondrawmenushadow)||
-|[CMFCVisualManager:: Ондравменусистембуттон](#ondrawmenusystembutton)|Вызывается структурой при отрисовке системных кнопок меню: **Закрыть**, **сворачивания**, **развернуть**и **восстановить**.|
+|[CMFCVisualManager:: Ондравменусистембуттон](#ondrawmenusystembutton)|Вызывается структурой при отрисовке системных кнопок меню: **Закрыть**, **сворачивания**, **развернуть** и **восстановить**.|
 |[CMFCVisualManager:: Ондравминифрамебордер](#ondrawminiframeborder)||
 |[CMFCVisualManager:: Ондраваутлукбарсплиттер](#ondrawoutlookbarsplitter)|Вызывается структурой при отрисовке разделителя для панели Outlook. Разделитель — это горизонтальная полоса, используемая для группирования элементов управления.|
 |[CMFCVisualManager:: Ондраваутлукпажебуттонбордер](#ondrawoutlookpagebuttonborder)|Вызывается структурой при отрисовке границы кнопки страницы Outlook. Кнопки страницы Outlook отображаются, если панель Outlook содержит больше кнопок, чем может быть отображено.|
@@ -481,7 +482,7 @@ class CMFCVisualManager : public CMFCBaseVisualManager
 |[CMFCVisualManager:: Ондравриббонпанел](#ondrawribbonpanel)|Вызывается структурой при отрисовке панели ленты.|
 |[CMFCVisualManager:: Ондравриббонпанелкаптион](#ondrawribbonpanelcaption)|Вызывается структурой при отрисовке заголовка панели ленты.|
 |[CMFCVisualManager:: Ондравриббонпрогрессбар](#ondrawribbonprogressbar)|Вызывается структурой при отрисовке объекта [кмфкриббонпрогрессбар](../../mfc/reference/cmfcribbonprogressbar-class.md) .|
-|[CMFCVisualManager:: Ондравриббонкуиккакцесстулбарсепаратор](#ondrawribbonquickaccesstoolbarseparator)|Вызывается структурой при нарисовании разделителя на **панели быстрого доступа**на ленте.|
+|[CMFCVisualManager:: Ондравриббонкуиккакцесстулбарсепаратор](#ondrawribbonquickaccesstoolbarseparator)|Вызывается структурой при нарисовании разделителя на **панели быстрого доступа** на ленте.|
 |[CMFCVisualManager:: Ондравриббонрецентфилесфраме](#ondrawribbonrecentfilesframe)|Вызвано структурой при отрисовке рамки вокруг списка последних файлов.|
 |[CMFCVisualManager:: Ондравриббонслидерчаннел](#ondrawribbonsliderchannel)|Вызывается структурой при отрисовке канала объекта [кмфкриббонслидер](../../mfc/reference/cmfcribbonslider-class.md) .|
 |[CMFCVisualManager:: Ондравриббонслидерсумб](#ondrawribbonsliderthumb)|Вызывается структурой при отрисовке бегунка `CMFCRibbonSlider` объекта.|
@@ -545,7 +546,7 @@ class CMFCVisualManager : public CMFCBaseVisualManager
 |[CMFCVisualManager:: Сетменушадовдепс](#setmenushadowdepth)|Задает ширину и высоту тени меню.|
 |[CMFCVisualManager:: Сетшадовхигхлигхтедимаже](#setshadowhighlightedimage)|Задает флаг, указывающий, отображать ли тень при отрисовке выделенных изображений.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Поскольку `CMFCVisualManager` класс управляет графическим интерфейсом приложения, каждое приложение может иметь либо один экземпляр `CMFCVisualManager` , либо один экземпляр класса, производного от `CMFCVisualManager` . Приложение также может работать без `CMFCVisualManager` . Используйте статический метод `GetInstance` для получения указателя на текущий `CMFCVisualManager` объект, производный от.
 
@@ -607,7 +608,7 @@ void CMFCSkinsApp::SetSkin (int iIndex)
 static void __stdcall AdjustFrames();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanageradjusttoolbars"></a><a name="adjusttoolbars"></a> CMFCVisualManager:: Аджусттулбарс
 
@@ -615,7 +616,7 @@ static void __stdcall AdjustFrames();
 static void __stdcall AdjustToolbars();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanageralwayshighlight3dtabs"></a><a name="alwayshighlight3dtabs"></a> CMFCVisualManager:: AlwaysHighlight3DTabs
 
@@ -629,7 +630,7 @@ virtual BOOL AlwaysHighlight3DTabs() const;
 
 `TRUE` значение, если необходимо выделить трехмерные вкладки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите эту функцию в производном визуальном диспетчере и возвратите значение TRUE, если трехмерные вкладки всегда должны выделяться. Реализация по умолчанию этого метода возвращает значение FALSE.
 
@@ -643,7 +644,7 @@ CMFCVisualManager(BOOL bTemporary = FALSE);
 
 окне *бтемпорари*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerdestroyinstance"></a><a name="destroyinstance"></a> CMFCVisualManager::D Естройинстанце
 
@@ -655,7 +656,7 @@ static void __stdcall DestroyInstance(BOOL bAutoDestroyOnly = FALSE);
 
 окне *баутодестройонли*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerdodrawheadersortarrow"></a><a name="dodrawheadersortarrow"></a> CMFCVisualManager::D Одравхеадерсортарров
 
@@ -674,7 +675,7 @@ void DoDrawHeaderSortArrow(
 окне *бисуп*<br/>
 окне *бдлгктрл*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerdrawcomboborderwinxp"></a><a name="drawcomboborderwinxp"></a> CMFCVisualManager::D Равкомбобордервинксп
 
@@ -688,13 +689,13 @@ virtual BOOL DrawComboBorderWinXP(CDC*,
 
 ### <a name="parameters"></a>Параметры
 
-окне *&#42;CDC *<br/>
+окне *&#42;CDC*<br/>
 окне *Крект*<br/>
 окне *Bool (логическое* )<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerdrawcombodropbuttonwinxp"></a><a name="drawcombodropbuttonwinxp"></a> CMFCVisualManager::D Равкомбодропбуттонвинксп
 
@@ -708,13 +709,13 @@ virtual BOOL DrawComboDropButtonWinXP(CDC*,
 
 ### <a name="parameters"></a>Параметры
 
-окне *&#42;CDC *<br/>
+окне *&#42;CDC*<br/>
 окне *Крект*<br/>
 окне *Bool (логическое* )<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerdrawpushbuttonwinxp"></a><a name="drawpushbuttonwinxp"></a> CMFCVisualManager::D Равпушбуттонвинксп
 
@@ -727,14 +728,14 @@ virtual BOOL DrawPushButtonWinXP(CDC*,
 
 ### <a name="parameters"></a>Параметры
 
-окне *&#42;CDC *<br/>
+окне *&#42;CDC*<br/>
 окне *Крект*<br/>
 окне *Кмфкбуттон&#42;*<br/>
 окне *Uint*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerdrawtextonglass"></a><a name="drawtextonglass"></a> CMFCVisualManager::D Равтекстонгласс
 
@@ -759,7 +760,7 @@ virtual BOOL DrawTextOnGlass(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerenabletoolbarbuttonfill"></a><a name="enabletoolbarbuttonfill"></a> CMFCVisualManager:: Енаблетулбарбуттонфилл
 
@@ -771,7 +772,7 @@ void EnableToolbarButtonFill(BOOL bEnable = TRUE);
 
 окне *бенабле*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetautohidebuttontextcolor"></a><a name="getautohidebuttontextcolor"></a> CMFCVisualManager:: Жетаутохидебуттонтекстколор
 
@@ -790,7 +791,7 @@ virtual COLORREF GetAutoHideButtonTextColor(CMFCAutoHideButton* pButton);
 
 Параметр [COLORREF](/windows/win32/gdi/colorref) , указывающий цвет текста *пбуттон*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном классе, чтобы настроить цвет текста для кнопки автоматического скрытия в приложении. Для этого нужно вернуть цвет, который будет использоваться в приложении в качестве цвета текста.
 
@@ -806,7 +807,7 @@ virtual CSize GetButtonExtraBorder() const;
 
 Объект [ксизе](../../atl-mfc-shared/reference/csize-class.md) , который содержит дополнительный размер границы для кнопок панели инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Некоторые обложки должны расширять границы кнопок на панели инструментов. Переопределите этот метод в пользовательском визуальном диспетчере, чтобы расширить границы кнопок панели инструментов в приложении. Реализация по умолчанию этого метода возвращает пустой размер.
 
@@ -827,7 +828,7 @@ virtual COLORREF GetCaptionBarTextColor(CMFCCaptionBar* pBar);
 
 Параметр [COLORREF](/windows/win32/gdi/colorref) , указывающий цвет текста в *пбар*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном классе, чтобы настроить цвет текста для строки заголовка. В переопределенном методе возвратите нужный цвет.
 
@@ -839,7 +840,7 @@ virtual CSize GetCaptionButtonExtraBorder() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetdockingpanecaptionextraheight"></a><a name="getdockingpanecaptionextraheight"></a> CMFCVisualManager:: Жетдоккингпанекаптионекстрахеигхт
 
@@ -849,7 +850,7 @@ virtual int GetDockingPaneCaptionExtraHeight() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetdockingtabsborderssize"></a><a name="getdockingtabsborderssize"></a> CMFCVisualManager:: Жетдоккингтабсбордерссизе
 
@@ -863,7 +864,7 @@ virtual int GetDockingTabsBordersSize();
 
 Целое число, указывающее размер границы закрепленной области и вкладки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Закрепленная панель превращается в вкладку, когда пользователь закрепляет несколько панелей в одном месте в приложении.
 
@@ -881,7 +882,7 @@ virtual COLORREF GetHighlightedMenuItemTextColor(CMFCToolBarMenuButton* pButton)
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetinstance"></a><a name="getinstance"></a> CMFCVisualManager:: @ instance
 
@@ -895,7 +896,7 @@ static CMFCVisualManager* GetInstance();
 
 Указатель на объект `CMFCVisualManager`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 С приложением может быть связан только один `CMFCVisualManager` объект. Сюда входит любой объект, производный от `CMFCVisualManager` класса. Этот метод возвращает указатель на связанный `CMFCVisualManager` объект. Если у приложения нет связанного `CMFCVisualManager` объекта, этот метод создаст его и свяжет с приложением.
 
@@ -911,7 +912,7 @@ virtual int GetMDITabsBordersSize();
 
 Размер границы окна Мдитабс.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите эту функцию в производном классе, чтобы настроить размер границы окна Мдитабс.
 
@@ -923,7 +924,7 @@ virtual int GetMenuImageMargin() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetmenuitemtextcolor"></a><a name="getmenuitemtextcolor"></a> CMFCVisualManager:: Жетменуитемтекстколор
 
@@ -942,7 +943,7 @@ virtual COLORREF GetMenuItemTextColor(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetmenushadowdepth"></a><a name="getmenushadowdepth"></a> CMFCVisualManager:: Жетменушадовдепс
 
@@ -956,7 +957,7 @@ int GetMenuShadowDepth() const;
 
 Ширина и высота тени меню в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Ширина и высота тени меню эквивалентны. Значение по умолчанию — 7 пикселей.
 
@@ -977,9 +978,9 @@ virtual CSize GetNcBtnSize(BOOL bSmall) const;
 
 Параметр [ксизе](../../atl-mfc-shared/reference/csize-class.md) , указывающий размер системных кнопок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Системные кнопки — это кнопки в заголовке окна фрейма, которые сопоставляются с командами **Close**, **сворачивания**, **Maximize**и **RESTORE**. Размер этих кнопок зависит от текущего диспетчера визуальных элементов. Переопределите этот метод, если требуется настроить размер системных кнопок в приложении.
+Системные кнопки — это кнопки в заголовке окна фрейма, которые сопоставляются с командами **Close**, **сворачивания**, **Maximize** и **RESTORE**. Размер этих кнопок зависит от текущего диспетчера визуальных элементов. Переопределите этот метод, если требуется настроить размер системных кнопок в приложении.
 
 ## <a name="cmfcvisualmanagergetpopupmenubordersize"></a><a name="getpopupmenubordersize"></a> CMFCVisualManager:: Жетпопупменубордерсизе
 
@@ -993,7 +994,7 @@ virtual int GetPopupMenuBorderSize() const;
 
 Целое число, указывающее размер границы всплывающих меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод, чтобы настроить размер границы всплывающих меню в приложении.
 
@@ -1005,7 +1006,7 @@ virtual int GetPopupMenuGap() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetpropertygridgroupcolor"></a><a name="getpropertygridgroupcolor"></a> CMFCVisualManager:: Жетпропертигридграупколор
 
@@ -1024,7 +1025,7 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
 
 Параметр [COLORREF](/windows/win32/gdi/colorref) , указывающий цвет фона для *ппроплист*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите эту функцию, чтобы настроить цвет фона для списка свойств в приложении.
 
@@ -1045,7 +1046,7 @@ virtual COLORREF GetPropertyGridGroupTextColor(CMFCPropertyGridCtrl* pPropList);
 
 Параметр [COLORREF](/windows/win32/gdi/colorref) , указывающий цвет текста для списка свойств.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите эту функцию, чтобы настроить цвет текста для списка свойств в приложении.
 
@@ -1061,7 +1062,7 @@ virtual COLORREF GetRibbonHyperlinkTextColor(CMFCRibbonLinkCtrl* pHyperLink);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetribbonpopupbordersize"></a><a name="getribbonpopupbordersize"></a> CMFCVisualManager:: Жетриббонпопупбордерсизе
 
@@ -1075,7 +1076,7 @@ virtual int GetRibbonPopupBorderSize(const CMFCRibbonPanelMenu*) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetribbonquickaccesstoolbarchevronoffset"></a><a name="getribbonquickaccesstoolbarchevronoffset"></a> CMFCVisualManager:: Жетриббонкуиккакцесстулбарчевроноффсет
 
@@ -1085,7 +1086,7 @@ virtual int GetRibbonQuickAccessToolBarChevronOffset();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetribbonquickaccesstoolbarrightmargin"></a><a name="getribbonquickaccesstoolbarrightmargin"></a> CMFCVisualManager:: Жетриббонкуиккакцесстулбарригхтмаргин
 
@@ -1095,7 +1096,7 @@ virtual int GetRibbonQuickAccessToolBarRightMargin();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetribbonquickaccesstoolbartextcolor"></a><a name="getribbonquickaccesstoolbartextcolor"></a> CMFCVisualManager:: Жетриббонкуиккакцесстулбартекстколор
 
@@ -1109,7 +1110,7 @@ virtual COLORREF GetRibbonQuickAccessToolBarTextColor(BOOL bDisabled = FALSE);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetribbonslidercolors"></a><a name="getribbonslidercolors"></a> CMFCVisualManager:: Жетриббонслидерколорс
 
@@ -1132,7 +1133,7 @@ virtual void GetRibbonSliderColors(
 окне *клрлине*<br/>
 окне *клрфилл*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetribbonstatusbartextcolor"></a><a name="getribbonstatusbartextcolor"></a> CMFCVisualManager:: Жетриббонстатусбартекстколор
 
@@ -1146,7 +1147,7 @@ virtual COLORREF GetRibbonStatusBarTextColor(CMFCRibbonStatusBar* pStatusBar);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetshowallmenuitemsheight"></a><a name="getshowallmenuitemsheight"></a> CMFCVisualManager:: Жетшоваллменуитемшеигхт
 
@@ -1163,7 +1164,7 @@ virtual int GetShowAllMenuItemsHeight(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetsmartdockingbaseguidecolors"></a><a name="getsmartdockingbaseguidecolors"></a> CMFCVisualManager:: Жетсмартдоккингбасегуидеколорс
 
@@ -1178,7 +1179,7 @@ virtual void GetSmartDockingBaseGuideColors(
 окне *клрбасеграупбаккграунд*<br/>
 окне *клрбасеграупбордер*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetsmartdockinghighlighttonecolor"></a><a name="getsmartdockinghighlighttonecolor"></a> CMFCVisualManager:: Жетсмартдоккингхигхлигхттонеколор
 
@@ -1188,7 +1189,7 @@ virtual COLORREF GetSmartDockingHighlightToneColor();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetsmartdockingtheme"></a><a name="getsmartdockingtheme"></a> CMFCVisualManager:: Жетсмартдоккингсеме
 
@@ -1202,7 +1203,7 @@ virtual AFX_SMARTDOCK_THEME GetSmartDockingTheme();
 
 Возвращает одно из следующих перечислимых значений: AFX_SDT_DEFAULT, AFX_SDT_VS2005, AFX_SDT_VS2008.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergetstatusbarpanetextcolor"></a><a name="getstatusbarpanetextcolor"></a> CMFCVisualManager:: Жетстатусбарпанетекстколор
 
@@ -1219,7 +1220,7 @@ virtual COLORREF GetStatusBarPaneTextColor(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergettabframecolors"></a><a name="gettabframecolors"></a> CMFCVisualManager:: Жеттабфрамеколорс
 
@@ -1267,7 +1268,7 @@ virtual void GetTabFrameColors(
 *пбрблакк*<br/>
 заполняет Указатель на ссылку на кисть. Этот метод сохраняет кисть, используемую для заполнения черной границы окна табуляции в этом параметре.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределяйте эту функцию в производном классе, если необходимо настроить набор цветов, используемых платформой при рисовании окна вкладки.
 
@@ -1283,7 +1284,7 @@ virtual int GetTabHorzMargin(const CMFCBaseTabCtrl*);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergettabtextcolor"></a><a name="gettabtextcolor"></a> CMFCVisualManager:: Жеттабтекстколор
 
@@ -1302,7 +1303,7 @@ virtual COLORREF GetTabTextColor(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergettaskspanegroupcaptionheight"></a><a name="gettaskspanegroupcaptionheight"></a> CMFCVisualManager:: Жеттаскспанеграупкаптионхеигхт
 
@@ -1312,7 +1313,7 @@ int GetTasksPaneGroupCaptionHeight() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergettaskspanegroupcaptionhorzoffset"></a><a name="gettaskspanegroupcaptionhorzoffset"></a> CMFCVisualManager:: Жеттаскспанеграупкаптионхорзоффсет
 
@@ -1322,7 +1323,7 @@ int GetTasksPaneGroupCaptionHorzOffset() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergettaskspanegroupcaptionvertoffset"></a><a name="gettaskspanegroupcaptionvertoffset"></a> CMFCVisualManager:: Жеттаскспанеграупкаптионвертоффсет
 
@@ -1332,7 +1333,7 @@ int GetTasksPaneGroupCaptionVertOffset() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergettaskspanegroupvertoffset"></a><a name="gettaskspanegroupvertoffset"></a> CMFCVisualManager:: Жеттаскспанеграупвертоффсет
 
@@ -1342,7 +1343,7 @@ int GetTasksPaneGroupVertOffset() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergettaskspanehorzmargin"></a><a name="gettaskspanehorzmargin"></a> CMFCVisualManager:: Жеттаскспанехорзмаргин
 
@@ -1352,7 +1353,7 @@ int GetTasksPaneHorzMargin() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergettaskspaneiconhorzoffset"></a><a name="gettaskspaneiconhorzoffset"></a> CMFCVisualManager:: Жеттаскспанеиконхорзоффсет
 
@@ -1362,7 +1363,7 @@ int GetTasksPaneIconHorzOffset() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergettaskspaneiconvertoffset"></a><a name="gettaskspaneiconvertoffset"></a> CMFCVisualManager:: Жеттаскспанеиконвертоффсет
 
@@ -1372,7 +1373,7 @@ int GetTasksPaneIconVertOffset() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergettaskspanetaskhorzoffset"></a><a name="gettaskspanetaskhorzoffset"></a> CMFCVisualManager:: Жеттаскспанетаскхорзоффсет
 
@@ -1382,7 +1383,7 @@ int GetTasksPaneTaskHorzOffset() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergettaskspanevertmargin"></a><a name="gettaskspanevertmargin"></a> CMFCVisualManager:: Жеттаскспаневертмаргин
 
@@ -1392,7 +1393,7 @@ int GetTasksPaneVertMargin() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergettoolbarbuttontextcolor"></a><a name="gettoolbarbuttontextcolor"></a> CMFCVisualManager:: Жеттулбарбуттонтекстколор
 
@@ -1416,7 +1417,7 @@ virtual COLORREF GetToolbarButtonTextColor(
 
 Цвет текста *пбуттон* , когда он находится в состоянии, обозначенном *состоянием*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Цвет текста объекта [класса CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md) зависит от состояния кнопки. Возможные состояния кнопки панели инструментов: `ButtonsIsRegular` , `ButtonsIsPressed` или `ButtonsIsHighlighted` .
 
@@ -1430,7 +1431,7 @@ virtual int GetToolBarCustomizeButtonMargin() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergettoolbardisabledcolor"></a><a name="gettoolbardisabledcolor"></a> CMFCVisualManager:: Жеттулбардисабледколор
 
@@ -1440,7 +1441,7 @@ virtual COLORREF GetToolbarDisabledColor() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergettoolbardisabledtextcolor"></a><a name="gettoolbardisabledtextcolor"></a> CMFCVisualManager:: Жеттулбардисабледтекстколор
 
@@ -1454,7 +1455,7 @@ virtual COLORREF GetToolbarDisabledTextColor();
 
 Цвет, используемый платформой для цвета текста кнопок панели инструментов, которые недоступны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в пользовательском визуальном диспетчере, чтобы задать цвет текста для кнопок панели инструментов, которые недоступны.
 
@@ -1466,7 +1467,7 @@ virtual COLORREF GetToolbarHighlightColor();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagergettooltipinfo"></a><a name="gettooltipinfo"></a> CMFCVisualManager:: Жеттултипинфо
 
@@ -1483,7 +1484,7 @@ virtual BOOL GetToolTipInfo(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerhasoverlappedautohidebuttons"></a><a name="hasoverlappedautohidebuttons"></a> CMFCVisualManager:: Хасоверлаппедаутохидебуттонс
 
@@ -1505,7 +1506,7 @@ BOOL IsAutoDestroy() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerisdefaultwinxppopupbutton"></a><a name="isdefaultwinxppopupbutton"></a> CMFCVisualManager:: Исдефаултвинксппопупбуттон
 
@@ -1519,7 +1520,7 @@ virtual BOOL IsDefaultWinXPPopupButton(CMFCDesktopAlertWndButton*) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerisdockingtabhasborder"></a><a name="isdockingtabhasborder"></a> CMFCVisualManager:: Исдоккингтабхасбордер
 
@@ -1533,7 +1534,7 @@ virtual BOOL IsDockingTabHasBorder();
 
 Значение TRUE, если визуальный диспетчер рисует границы вокруг закрепленных панелей и вкладок; В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Закрепленные панели становятся вкладками, когда несколько панелей закреплены за одним и тем же расположением.
 
@@ -1549,7 +1550,7 @@ BOOL IsEmbossDisabledImage() const;
 
 Ненулевое значение, если платформа приподнята недоступные образы. в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывается методом [кмфктулбаримажес::D RAW](../../mfc/reference/cmfctoolbarimages-class.md#draw) при рисовании изображения на панели инструментов, которая недоступна.
 
@@ -1565,7 +1566,7 @@ BOOL IsFadeInactiveImage() const;
 
 Ненулевое значение, если платформа использует эффекты освещения при рисовании неактивных изображений на панели инструментов или в меню; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вы можете активировать или деактивировать эффекты освещения, вызвав [CMFCVisualManager:: сетфадеинактивеимаже](#setfadeinactiveimage). Эффекты освещения делают недоступные изображения нетронутыми.
 
@@ -1577,7 +1578,7 @@ BOOL IsFrameMenuCheckedItems() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerishighlightonenotetabs"></a><a name="ishighlightonenotetabs"></a> CMFCVisualManager:: Ишигхлигхтоненотетабс
 
@@ -1587,7 +1588,7 @@ virtual BOOL IsHighlightOneNoteTabs() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerishighlightwholemenuitem"></a><a name="ishighlightwholemenuitem"></a> CMFCVisualManager:: Ишигхлигхтвхолеменуитем
 
@@ -1597,7 +1598,7 @@ virtual BOOL IsHighlightWholeMenuItem();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerislayeredribbonkeytip"></a><a name="islayeredribbonkeytip"></a> CMFCVisualManager:: Ислайередриббонкэйтип
 
@@ -1607,7 +1608,7 @@ virtual BOOL IsLayeredRibbonKeyTip() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerismenuflatlook"></a><a name="ismenuflatlook"></a> CMFCVisualManager:: Исменуфлатлук
 
@@ -1621,7 +1622,7 @@ BOOL IsMenuFlatLook() const;
 
 Ненулевое значение, если кнопки меню отображаются плоскими; 0 в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию кнопки меню не отображаются плоскими. Чтобы изменить это поведение, используйте метод [CMFCVisualManager:: сетменуфлатлук](#setmenuflatlook) . Когда кнопки меню отображаются плоскими, они не изменяют внешний вид, когда пользователь щелкает их.
 
@@ -1637,7 +1638,7 @@ virtual BOOL IsOfficeXPStyleMenus() const;
 
 Ненулевое значение, если визуальный диспетчер отображает меню в стиле Office XP; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 [Класс CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) вызывает этот метод, когда необходимо нарисовать меню и тень. По умолчанию этот метод возвращает значение FALSE. Если вы хотите использовать всплывающие меню, похожие на всплывающие меню в Office XP, Переопределите этот метод в пользовательском визуальном диспетчере и возвратите значение TRUE.
 
@@ -1649,7 +1650,7 @@ virtual BOOL IsOffsetPressedButton() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerisownerdrawcaption"></a><a name="isownerdrawcaption"></a> CMFCVisualManager:: Исовнердравкаптион
 
@@ -1671,7 +1672,7 @@ virtual BOOL IsOwnerDrawMenuCheck();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerisshadowhighlightedimage"></a><a name="isshadowhighlightedimage"></a> CMFCVisualManager:: Исшадовхигхлигхтедимаже
 
@@ -1693,7 +1694,7 @@ BOOL IsToolbarButtonFillEnabled() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanageristoolbarroundshape"></a><a name="istoolbarroundshape"></a> CMFCVisualManager:: Истулбарраундшапе
 
@@ -1707,7 +1708,7 @@ virtual BOOL IsToolbarRoundShape(CMFCToolBar*);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanageriswindowsthemingsupported"></a><a name="iswindowsthemingsupported"></a> CMFCVisualManager:: Исвиндовссемингсуппортед
 
@@ -1717,7 +1718,7 @@ virtual BOOL IsWindowsThemingSupported() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanageronactivateapp"></a><a name="onactivateapp"></a> CMFCVisualManager:: OnActivateApp
 
@@ -1732,7 +1733,7 @@ virtual void OnActivateApp(
 окне *приводится*<br/>
 окне *бактиве*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawautohidebuttonborder"></a><a name="ondrawautohidebuttonborder"></a> CMFCVisualManager:: Ондраваутохидебуттонбордер
 
@@ -1760,7 +1761,7 @@ virtual void OnDrawAutoHideButtonBorder(
 *пбуттон*<br/>
 окне Указатель на кнопку автоматического скрытия. Платформа рисует границу для этой кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном классе, если хотите настроить внешний вид границы кнопки автоматического скрытия. По умолчанию этот метод заполняет плоскую границу цветом тени по умолчанию для приложения.
 
@@ -1792,7 +1793,7 @@ virtual void OnDrawBarGripper(
 *пбар*<br/>
 окне Указатель на панель элементов управления. В визуальном диспетчере рисуется захват этой панели элементов управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию этого метода отображает стандартный захват. Чтобы настроить внешний вид захвата, Переопределите этот метод в пользовательском классе, производном от `CMFCVisualManager` класса.
 
@@ -1830,7 +1831,7 @@ virtual BOOL OnDrawBrowseButton(
 
 Значение TRUE, если успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите эту функцию в производном классе, если необходимо настроить внешний вид кнопок обзора в экземплярах [класса CMFCEditBrowseCtrl](../../mfc/reference/cmfceditbrowsectrl-class.md). Возможные значения для состояния кнопки: `ButtonsIsRegular` , `ButtonsIsPressed` и `ButtonsIsHighlighted` .
 
@@ -1860,7 +1861,7 @@ virtual void OnDrawButtonBorder(
 *state*<br/>
 окне Перечислимый тип данных, указывающий текущее состояние кнопки панели инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию этого метода отображает стандартную границу. Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид границы кнопки на панели инструментов.
 
@@ -1885,7 +1886,7 @@ virtual void OnDrawButtonSeparator(
 окне *состояние*<br/>
 окне *бхорз*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawcaptionbarborder"></a><a name="ondrawcaptionbarborder"></a> CMFCVisualManager:: Ондравкаптионбарбордер
 
@@ -1917,7 +1918,7 @@ virtual void OnDrawCaptionBarBorder(
 *бфлатбордер*<br/>
 окне Логический параметр, указывающий, имеет ли граница плоский, 2D-внешний вид.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном классе, чтобы настроить внешний вид границы заголовка.
 
@@ -1946,7 +1947,7 @@ virtual void OnDrawCaptionBarButtonBorder(
 окне *бхасдропдовнарров*<br/>
 окне *биссисбуттон*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawcaptionbarinfoarea"></a><a name="ondrawcaptionbarinfoarea"></a> CMFCVisualManager:: Ондравкаптионбаринфоареа
 
@@ -1963,7 +1964,7 @@ virtual void OnDrawCaptionBarInfoArea(
 окне *пбар*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawcaptionbutton"></a><a name="ondrawcaptionbutton"></a> CMFCVisualManager:: Ондравкаптионбуттон
 
@@ -2003,7 +2004,7 @@ virtual void OnDrawCaptionButton (
 *нимажеид*<br/>
 окне Индекс изображения для значка, используемого для кнопки. Если *нимажеид* имеет значение-1, этот метод использует индекс образа, записанный в *пбуттон*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию этого метода отображает маленькую кнопку из глобального экземпляра `CMenuImages` класса. Кнопки перечислены в файле заголовка для `CMenuImages` . Некоторые примеры включают,,,, `CMenuImages::IdClose` `CMenuImages::IdArowLeft` `CMenuImages::IdArowRight` `CMenuImages::IdArowDown` `CMenuImages::IdArowUp` и `CMenuImages::IdPinHorz` .
 
@@ -2028,7 +2029,7 @@ virtual void OnDrawCheckBox(
 окне *бчеккед*<br/>
 окне *бенаблед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawcheckboxex"></a><a name="ondrawcheckboxex"></a> CMFCVisualManager:: Ондравчеккбоксекс
 
@@ -2051,7 +2052,7 @@ virtual void OnDrawCheckBoxEx(
 окне *бпрессед*<br/>
 окне *бенаблед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawcomboborder"></a><a name="ondrawcomboborder"></a> CMFCVisualManager:: Ондравкомбобордер
 
@@ -2087,7 +2088,7 @@ virtual void OnDrawComboBorder(
 *пбуттон*<br/>
 окне Указатель на `CMFCToolBarComboBoxButton` объект. Платформа рисует эту кнопку поля со списком.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид границы поля со списком.
 
@@ -2125,7 +2126,7 @@ virtual void OnDrawComboDropButton(
 *пбуттон*<br/>
 окне Указатель на `CMFCToolBarComboBoxButton` объект. Платформа рисует кнопку перетаскивания для этой кнопки поля со списком.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид кнопки раскрывающегося списка.
 
@@ -2139,7 +2140,7 @@ virtual void OnDrawControlBorder(CWnd* pWndCtrl);
 
 окне *пвндктрл*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawdefaultribbonimage"></a><a name="ondrawdefaultribbonimage"></a> CMFCVisualManager:: Ондравдефаултриббонимаже
 
@@ -2171,7 +2172,7 @@ virtual void OnDrawDefaultRibbonImage(
 *бишигхлигхтед*<br/>
 окне Логический параметр, указывающий, выделена ли кнопка ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, если требуется настроить изображение, используемое для кнопки на ленте.
 
@@ -2205,7 +2206,7 @@ virtual void OnDrawEditBorder(
 *пбуттон*<br/>
 окне Указатель на `CMFCToolBarEditBoxButton` объект. Платформа рисует границу этой кнопки поля ввода.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить границу `CMFCToolBarEditBoxButton` объекта.
 
@@ -2226,7 +2227,7 @@ virtual void OnDrawExpandingBox(
 окне *бисопенед*<br/>
 окне *колорбокс*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawfloatingtoolbarborder"></a><a name="ondrawfloatingtoolbarborder"></a> CMFCVisualManager:: Ондравфлоатингтулбарбордер
 
@@ -2254,7 +2255,7 @@ virtual void OnDrawFloatingToolbarBorder(
 *ректбордерсизе*<br/>
 окне Прямоугольник, указывающий размер границы панели инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Плавающая панель инструментов — это панель инструментов, которая отображается в виде окна с рамками. Обычно это происходит, когда пользователь перетаскивает панель инструментов, чтобы она больше не закреплена.
 
@@ -2292,7 +2293,7 @@ virtual void OnDrawHeaderCtrlBorder(
 *бишигхлигхтед*<br/>
 окне Логический параметр, указывающий, выделен ли элемент управления "заголовок".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить границу элемента управления заголовка.
 
@@ -2322,7 +2323,7 @@ virtual void OnDrawHeaderCtrlSortArrow(
 *бисуп*<br/>
 окне Логическое значение, указывающее направление стрелки сортировки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если *бисуп* имеет значение true, визуальный менеджер рисует стрелку вверх. Если он имеет значение FALSE, то визуальный диспетчер рисует стрелку вниз. Переопределение `OnDrawHeaderCtrlSortArrow` в производном классе для настройки внешнего вида кнопки сортировки.
 
@@ -2341,7 +2342,7 @@ virtual void OnDrawMenuArrowOnCustomizeList(
 окне *ректкомманд*<br/>
 окне *бселектед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawmenuborder"></a><a name="ondrawmenuborder"></a> CMFCVisualManager:: Ондравменубордер
 
@@ -2365,7 +2366,7 @@ virtual void OnDrawMenuBorder(
 *rect*<br/>
 окне Прямоугольник, указывающий границы всплывающего меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию этого метода отображает стандартную границу меню. Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид границы меню.
 
@@ -2388,7 +2389,7 @@ virtual void OnDrawMenuCheck(
 окне *бхигхлигхт*<br/>
 окне *бисрадио*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawmenuitembutton"></a><a name="ondrawmenuitembutton"></a> CMFCVisualManager:: Ондравменуитембуттон
 
@@ -2409,7 +2410,7 @@ virtual void OnDrawMenuItemButton(
 окне *бхигхлигхт*<br/>
 окне *бдисаблед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawmenulabel"></a><a name="ondrawmenulabel"></a> CMFCVisualManager:: Ондравменулабел
 
@@ -2426,7 +2427,7 @@ virtual COLORREF OnDrawMenuLabel(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawmenuresizebar"></a><a name="ondrawmenuresizebar"></a> CMFCVisualManager:: Ондравменуресизебар
 
@@ -2443,7 +2444,7 @@ virtual void OnDrawMenuResizeBar(
 [in] *rect*<br/>
 окне *нресизефлагс*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawmenuscrollbutton"></a><a name="ondrawmenuscrollbutton"></a> CMFCVisualManager:: Ондравменускроллбуттон
 
@@ -2479,7 +2480,7 @@ virtual void OnDrawMenuScrollButton(
 *бисдисаблед*<br/>
 окне Логическое значение, указывающее, отключена ли кнопка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид кнопок прокрутки меню. Кнопки прокрутки меню отображаются на границе всплывающих меню, когда общая высота пунктов меню превышает высоту всплывающего меню.
 
@@ -2510,7 +2511,7 @@ virtual void OnDrawMenuShadow(
 окне *пбмпсаверигхт*<br/>
 окне *бртл*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawmenusystembutton"></a><a name="ondrawmenusystembutton"></a> CMFCVisualManager:: Ондравменусистембуттон
 
@@ -2542,7 +2543,7 @@ virtual void OnDrawMenuSystemButton(
 *бхигхлигхт*<br/>
 окне Логический параметр, указывающий, выделена ли кнопка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Кнопки меню « **Закрыть**», « **сворачивания**», « **развернуть**» и « **восстановить** » находятся в заголовке окна.
 
@@ -2565,7 +2566,7 @@ virtual void OnDrawMiniFrameBorder(
 окне *ректбордер*<br/>
 окне *ректбордерсизе*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawoutlookbarsplitter"></a><a name="ondrawoutlookbarsplitter"></a> CMFCVisualManager:: Ондраваутлукбарсплиттер
 
@@ -2585,7 +2586,7 @@ virtual void OnDrawOutlookBarSplitter(
 *ректсплиттер*<br/>
 окне Прямоугольник, указывающий границы разделителя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид разделителей на панели Outlook.
 
@@ -2615,7 +2616,7 @@ virtual void OnDrawOutlookPageButtonBorder(
 *биспрессед*<br/>
 окне Логическое значение, указывающее, нажата ли кнопка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в пользовательском визуальном диспетчере, чтобы изменить внешний вид кнопки страницы Outlook.
 
@@ -2641,7 +2642,7 @@ virtual void OnDrawPaneBorder(
 *rect*<br/>
 окне Прямоугольник, указывающий границы панели.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию этого метода отображает стандартную границу. Переопределите этот метод в производном классе, чтобы настроить внешний вид границы.
 
@@ -2679,7 +2680,7 @@ virtual COLORREF OnDrawPaneCaption(
 
 Параметр [COLORREF](/windows/win32/gdi/colorref) , указывающий цвет текста заголовка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид субтитров панели.
 
@@ -2700,7 +2701,7 @@ virtual void OnDrawPaneDivider(
 [in] *rect*<br/>
 окне *баутохидемоде*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawpopupwindowborder"></a><a name="ondrawpopupwindowborder"></a> CMFCVisualManager:: Ондравпопупвиндовбордер
 
@@ -2715,7 +2716,7 @@ virtual void OnDrawPopupWindowBorder(
 окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawpopupwindowbuttonborder"></a><a name="ondrawpopupwindowbuttonborder"></a> CMFCVisualManager:: Ондравпопупвиндовбуттонбордер
 
@@ -2732,7 +2733,7 @@ virtual void OnDrawPopupWindowButtonBorder(
 окне *ректклиент*<br/>
 окне *пбуттон*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawpopupwindowcaption"></a><a name="ondrawpopupwindowcaption"></a> CMFCVisualManager:: Ондравпопупвиндовкаптион
 
@@ -2751,7 +2752,7 @@ virtual COLORREF OnDrawPopupWindowCaption(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawribbonapplicationbutton"></a><a name="ondrawribbonapplicationbutton"></a> CMFCVisualManager:: Ондравриббонаппликатионбуттон
 
@@ -2771,7 +2772,7 @@ virtual void OnDrawRibbonApplicationButton(
 *пбуттон*<br/>
 окне Указатель на **кнопку Main** на ленте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, если необходимо настроить внешний вид **кнопки Main**.
 
@@ -2793,7 +2794,7 @@ virtual void OnDrawRibbonButtonBorder(
 *пбуттон*<br/>
 окне Указатель на объект [CMFCRibbonButton](../../mfc/reference/cmfcribbonbutton-class.md) . Платформа рисует границу для этой кнопки ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид `CMFCRibbonButton` .
 
@@ -2823,7 +2824,7 @@ virtual COLORREF OnDrawRibbonButtonsGroup(
 
 Зарезервированное значение. Реализация по умолчанию возвращает значение -1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид группы кнопок на ленте.
 
@@ -2853,7 +2854,7 @@ virtual void OnDrawRibbonCaption(
 *ректтекст*<br/>
 окне Прямоугольник, указывающий границы текста заголовка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите эту функцию в производном визуальном диспетчере, чтобы настроить внешний вид строки заголовка. Этот метод влияет на заголовок, только если лента интегрирована с основным окном фрейма.
 
@@ -2875,7 +2876,7 @@ virtual void OnDrawRibbonCaptionButton(
 *пбуттон*<br/>
 Указатель на `CMFCRibbonCaptionButton` класс. Платформа рисует эту кнопку заголовка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид кнопки заголовка на ленте.
 
@@ -2901,7 +2902,7 @@ virtual void OnDrawRibbonCategory(
 *ректкатегори*<br/>
 окне Прямоугольник, указывающий границу всех панелей категорий на ленте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Категория ленты — это логическая группа команд меню. Дополнительные сведения о категориях ленты см. в разделе [класс кмфкриббонкатегори](../../mfc/reference/cmfcribboncategory-class.md).
 
@@ -2929,7 +2930,7 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
 
 Параметр [COLORREF](/windows/win32/gdi/colorref) , указывающий цвет текста в строке заголовка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном классе, чтобы настроить внешний вид строки заголовка для категории ленты. Дополнительные сведения о строке заголовка см. в разделе [класс кмфкриббонконтексткаптион](../../mfc/reference/cmfcribboncontextcaption-class.md).
 
@@ -2946,7 +2947,7 @@ virtual void OnDrawRibbonCategoryScroll(
 окне *основной контроллер домена*<br/>
 окне *пскролл*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawribboncategorytab"></a><a name="ondrawribboncategorytab"></a> CMFCVisualManager:: Ондравриббонкатегоритаб
 
@@ -2974,7 +2975,7 @@ virtual COLORREF OnDrawRibbonCategoryTab(
 
 Цвет, используемый для текста на вкладке категории ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид вкладки категории ленты. Дополнительные сведения о категориях ленты см. в разделе [класс кмфкриббонкатегори](../../mfc/reference/cmfcribboncategory-class.md).
 
@@ -2997,7 +2998,7 @@ virtual void OnDrawRibbonCheckBoxOnList(
 окне *бисселектед*<br/>
 окне *бхигхлигхтед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawribboncolorpalettebox"></a><a name="ondrawribboncolorpalettebox"></a> CMFCVisualManager:: Ондравриббонколорпалеттебокс
 
@@ -3028,7 +3029,7 @@ virtual void OnDrawRibbonColorPaletteBox(
 окне *бисчеккед*<br/>
 окне *бисдисаблед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawribbondefaultpanebutton"></a><a name="ondrawribbondefaultpanebutton"></a> CMFCVisualManager:: Ондравриббондефаултпанебуттон
 
@@ -3048,7 +3049,7 @@ virtual void OnDrawRibbonDefaultPaneButton(
 *пбуттон*<br/>
 окне Указатель на кнопку по умолчанию для панели ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Платформа отображает кнопку по умолчанию при изменении размера области ленты до минимального размера, и нет области для отображения содержимого панели. Когда пользователь нажимает кнопку по умолчанию, платформа отображает раскрывающееся меню, содержащее содержимое панели.
 
@@ -3067,7 +3068,7 @@ virtual void OnDrawRibbonDefaultPaneButtonContext(
 окне *основной контроллер домена*<br/>
 окне *пбуттон*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawribbondefaultpanebuttonindicator"></a><a name="ondrawribbondefaultpanebuttonindicator"></a> CMFCVisualManager:: Ондравриббондефаултпанебуттониндикатор
 
@@ -3088,7 +3089,7 @@ virtual void OnDrawRibbonDefaultPaneButtonIndicator(
 окне *бисселектед*<br/>
 окне *бхигхлигхтед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawribbongalleryborder"></a><a name="ondrawribbongalleryborder"></a> CMFCVisualManager:: Ондравриббонгаллерибордер
 
@@ -3105,7 +3106,7 @@ virtual void OnDrawRibbonGalleryBorder(
 окне *пбуттон*<br/>
 окне *ректбордер*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawribbongallerybutton"></a><a name="ondrawribbongallerybutton"></a> CMFCVisualManager:: Ондравриббонгаллерибуттон
 
@@ -3120,7 +3121,7 @@ virtual void OnDrawRibbonGalleryButton(
 окне *основной контроллер домена*<br/>
 окне *пбуттон*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawribbonkeytip"></a><a name="ondrawribbonkeytip"></a> CMFCVisualManager:: Ондравриббонкэйтип
 
@@ -3139,7 +3140,7 @@ virtual void OnDrawRibbonKeyTip(
 [in] *rect*<br/>
 окне *str*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawribbonlabel"></a><a name="ondrawribbonlabel"></a> CMFCVisualManager:: Ондравриббонлабел
 
@@ -3163,7 +3164,7 @@ virtual void OnDrawRibbonLabel(
 *rect*<br/>
 окне Прямоугольник, указывающий границы панели ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном классе, чтобы настроить метку ленты.
 
@@ -3185,7 +3186,7 @@ virtual void OnDrawRibbonMainPanelButtonBorder(
 *пбуттон*<br/>
 окне Указатель на объект, `CMFCRibbonButton` расположенный на главной панели ленты. Платформа выводит границу для этой кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид границы для элемента `CMFCRibbonButton` на **главной** панели.
 
@@ -3211,7 +3212,7 @@ virtual void OnDrawRibbonMainPanelFrame(
 *rect*<br/>
 окне Прямоугольник, указывающий границы объекта `CMFCRibbonMainPanel` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид рамки для `CMFCRibbonMainPanel` .
 
@@ -3230,7 +3231,7 @@ virtual void OnDrawRibbonMenuCheckFrame(
 окне *пбуттон*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawribbonpanel"></a><a name="ondrawribbonpanel"></a> CMFCVisualManager:: Ондравриббонпанел
 
@@ -3262,7 +3263,7 @@ virtual COLORREF OnDrawRibbonPanel(
 
 Цвет текста на панели ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном классе, чтобы настроить внешний вид панели ленты.
 
@@ -3288,7 +3289,7 @@ virtual void OnDrawRibbonPanelCaption(
 *ректкаптион*<br/>
 окне Прямоугольник, указывающий границы заголовка для панели ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном классе, чтобы настроить внешний вид заголовков для панелей ленты.
 
@@ -3322,7 +3323,7 @@ virtual void OnDrawRibbonProgressBar(
 *бинфинитемоде*<br/>
 окне Логический параметр, указывающий режим индикатора выполнения. Значение TRUE означает, что панель находится в бесконечном режиме. Реализация по умолчанию не использует этот параметр.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном классе, чтобы настроить внешний вид индикатора выполнения.
 
@@ -3348,7 +3349,7 @@ virtual void OnDrawRibbonQuickAccessToolBarSeparator(
 *rect*<br/>
 окне Прямоугольник, указывающий границы разделителя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном классе, чтобы настроить внешний вид разделителей ленты на **панели быстрого доступа**.
 
@@ -3374,7 +3375,7 @@ virtual void OnDrawRibbonRecentFilesFrame(
 *rect*<br/>
 окне Прямоугольник, указывающий границы кадра для списка последних файлов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид списка последних файлов.
 
@@ -3400,7 +3401,7 @@ virtual void OnDrawRibbonSliderChannel(
 *rect*<br/>
 окне Прямоугольник, указывающий границы канала для ползунка ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном классе, чтобы настроить внешний вид канала ползунка ленты.
 
@@ -3438,7 +3439,7 @@ virtual void OnDrawRibbonSliderThumb(
 *бисдисаблед*<br/>
 окне Логический параметр, указывающий, недоступен бегунок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид бегунка для `CMFCRibbonSlider` .
 
@@ -3480,7 +3481,7 @@ virtual void OnDrawRibbonSliderZoomButton(
 *бисдисаблед*<br/>
 окне Логический параметр, указывающий, недоступна ли кнопка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию кнопки масштабирования на ползунке отображаются в виде круга с знаком + или-в центре. Чтобы настроить внешний вид кнопок масштабирования, Переопределите этот метод в производном визуальном диспетчере.
 
@@ -3510,7 +3511,7 @@ virtual COLORREF OnDrawRibbonStatusBarPane(
 
 Зарезервированное значение. Реализация по умолчанию возвращает значение -1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид панели в строке состояния.
 
@@ -3540,7 +3541,7 @@ virtual COLORREF OnDrawRibbonTabsFrame(
 
 Зарезервированное значение. По умолчанию этот метод возвращает значение-1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить рамку вокруг набора вкладок на ленте.
 
@@ -3563,7 +3564,7 @@ virtual void OnDrawScrollButtons(
 окне *иимаже*<br/>
 окне *бхилитед*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawseparator"></a><a name="ondrawseparator"></a> CMFCVisualManager:: Ондравсепаратор
 
@@ -3591,7 +3592,7 @@ virtual void OnDrawSeparator(
 *бишориз*<br/>
 окне Логический параметр, указывающий ориентацию закрепленной панели. Значение TRUE указывает, что панель закреплена по горизонтали. Значение FALSE указывает, что панель закреплена по вертикали.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Разделители используются на панелях управления для разделения групп связанных значков. Реализация по умолчанию для этого метода отображает стандартный разделитель. Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид разделителя.
 
@@ -3610,7 +3611,7 @@ virtual void OnDrawShowAllMenuItems(
 [in] *rect*<br/>
 окне *состояние*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawspinbuttons"></a><a name="ondrawspinbuttons"></a> CMFCVisualManager:: Ондравспинбуттонс
 
@@ -3642,7 +3643,7 @@ virtual void OnDrawSpinButtons(
 *пспинктрл*<br/>
 окне Указатель на элемент управления "Счетчик". Платформа рисует кнопки для этого элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Параметр *nсведения* указывает состояние элемента управления "Счетчик". Параметр может иметь одно из следующих значений:
 
@@ -3680,7 +3681,7 @@ virtual void OnDrawSplitterBorder(
 *rect*<br/>
 окне Прямоугольник, указывающий границы окна разделителя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид границы для окна-разделителя.
 
@@ -3706,7 +3707,7 @@ virtual void OnDrawSplitterBox(
 *rect*<br/>
 окне Прямоугольник, указывающий границы окна разделителя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид поля перетаскивания для окна-разделителя.
 
@@ -3740,7 +3741,7 @@ virtual void OnDrawStatusBarPaneBorder(
 *nStyle*<br/>
 окне Стиль строки состояния.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид границы для `CMFCStatusBar` объекта.
 
@@ -3790,7 +3791,7 @@ virtual void OnDrawStatusBarProgress(
 *bProgressText*<br/>
 окне Логический параметр, указывающий, отображать ли текстовое представление текущего хода выполнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид `CMFCStatusBar` объекта.
 
@@ -3816,7 +3817,7 @@ virtual void OnDrawStatusBarSizeBox(
 *ректсизебокс*<br/>
 окне Прямоугольник, указывающий границы поля размера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид поля размера в `CMFCStatusBar` .
 
@@ -3850,7 +3851,7 @@ virtual void OnDrawTab(
 *pTabWnd*<br/>
 окне Указатель на `CMFCBaseTabCtrl` объект. Платформа рисует этот элемент управления вкладки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `CMFCBaseTabCtrl`Объект вызывает этот метод при обработке сообщения WM_PAINT.
 
@@ -3890,7 +3891,7 @@ virtual void OnDrawTabCloseButton(
 *бисдисаблед*<br/>
 окне Логический параметр, указывающий, отключена ли кнопка **Закрыть** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид кнопки **Закрыть** на активной вкладке *птабвнд*.
 
@@ -3928,7 +3929,7 @@ virtual void OnDrawTabContent(
 *clrText*<br/>
 окне Цвет текста во внутренней части вкладки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Внутренняя часть вкладки содержит текст и значки вкладки. Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид вкладок.
 
@@ -3962,7 +3963,7 @@ virtual void OnDrawTabsButtonBorder(
 *пвндтаб*<br/>
 окне Указатель на родительское окно вкладки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид границы кнопки табуляции.
 
@@ -3996,7 +3997,7 @@ virtual void OnDrawTask(
 *бисселектед*<br/>
 окне Логический параметр, указывающий, выбрана ли отображаемая задача.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Платформа отображает задачи на панели задач в виде значка и текста. Параметр *пиконс* содержит значок для задачи, указанной параметром *птаск*.
 
@@ -4028,7 +4029,7 @@ virtual void OnDrawTasksGroupAreaBorder(
 *бнотитле*<br/>
 окне Логический параметр, указывающий, имеет ли область группы заголовок. Значение TRUE указывает, что область группы не имеет заголовка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите эту функцию в производном классе, чтобы настроить границу вокруг области группы в области задач.
 
@@ -4062,7 +4063,7 @@ virtual void OnDrawTasksGroupCaption(
 *бканколлапсе*<br/>
 окне Логический параметр, указывающий, можно ли свернуть группу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Группы задач отображаются в объекте [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) .
 
@@ -4089,7 +4090,7 @@ virtual void OnDrawTasksGroupIcon(
 окне *бисселектед*<br/>
 окне *бканколлапсе*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagerondrawtearoffcaption"></a><a name="ondrawtearoffcaption"></a> CMFCVisualManager:: Ондравтеароффкаптион
 
@@ -4113,7 +4114,7 @@ virtual void OnDrawTearOffCaption(
 *бисактиве*<br/>
 окне Значение TRUE, если заголовок активен; В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция вызывается платформой, когда `CMFCPopupMenu` объект обрабатывает WM_PAINT сообщение и должен нарисовать заголовок разрыва.
 
@@ -4132,7 +4133,7 @@ virtual void OnDrawToolBoxFrame(
 окне *основной контроллер домена*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanageronerasemdiclientarea"></a><a name="onerasemdiclientarea"></a> CMFCVisualManager:: Онерасемдиклиентареа
 
@@ -4156,7 +4157,7 @@ virtual BOOL OnEraseMDIClientArea(
 
 Зарезервированное значение. Реализация по умолчанию возвращает значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод для выполнения пользовательского кода, когда визуальный диспетчер удаляет клиентскую область MDI.
 
@@ -4175,7 +4176,7 @@ virtual void OnErasePopupWindowButton(
 окне *ректклиент*<br/>
 окне *пбуттон*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanageronerasetabsarea"></a><a name="onerasetabsarea"></a> CMFCVisualManager:: Онерасетабсареа
 
@@ -4199,7 +4200,7 @@ virtual void OnEraseTabsArea(
 *pTabWnd*<br/>
 окне Указатель на окно вкладки. Платформа удаляет область вкладки для указанного окна вкладки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция вызывается платформой, когда объект [класса CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) обрабатывает сообщение WM_PAINT и удаляет область вкладки.
 
@@ -4231,7 +4232,7 @@ virtual void OnEraseTabsButton(
 *пвндтаб*<br/>
 окне Указатель на элемент управления Tab, содержащий кнопку вкладки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Платформа удаляет текст и значок кнопки, когда объект [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) обрабатывает сообщение WM_ERASEBKGND.
 
@@ -4263,7 +4264,7 @@ virtual BOOL OnEraseTabsFrame(
 
 Значение TRUE, если метод успешно выполнен; В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод заполняет область, обозначенную *Rect* , цветом фона активной вкладки. Он вызывается, когда `CMFCBaseTabCtrl` объект обрабатывает сообщение WM_PAINT и удаляет кадр табуляции.
 
@@ -4289,7 +4290,7 @@ virtual void OnFillAutoHideButtonBackground(
 *пбуттон*<br/>
 окне Указатель на объект [CMFCAutoHideButton](../../mfc/reference/cmfcautohidebutton-class.md) . Платформа заполняет фон для этой кнопки автоматического скрытия.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид кнопки автоматического скрытия.
 
@@ -4323,7 +4324,7 @@ virtual void OnFillBarBackground(
 *бнкареа*<br/>
 окне Зарезервированное значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию этого метода заполняет фон линейки трехмерным фоновым цветом из глобальной переменной `afxGlobalData` . Переопределите этот метод в производном визуальном диспетчере, чтобы настроить фон панели.
 
@@ -4359,7 +4360,7 @@ virtual void OnFillButtonInterior(
 *state*<br/>
 окне Состояние кнопки панели инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию этого метода использует цвет по умолчанию для заполнения фона. Переопределите этот метод в производном визуальном диспетчере, чтобы настроить фон кнопки на панели инструментов.
 
@@ -4392,7 +4393,7 @@ virtual COLORREF OnFillCaptionBarButton(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanageronfillcommandslistbackground"></a><a name="onfillcommandslistbackground"></a> CMFCVisualManager:: Онфиллкоммандслистбаккграунд
 
@@ -4420,7 +4421,7 @@ virtual COLORREF OnFillCommandsListBackground(
 
 Цвет текста для кнопки панели инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о списке настроек см. в разделе [CMFCToolBarButton:: ондравонкустомизелист](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist). Реализация по умолчанию для этого метода заполняет фон на основе цветовой схемы текущей выбранной обложки.
 
@@ -4446,7 +4447,7 @@ virtual void OnFillHeaderCtrlBackground(
 *rect*<br/>
 окне Прямоугольник, указывающий границы элемента управления "заголовок".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид элемента управления "заголовок".
 
@@ -4480,7 +4481,7 @@ virtual COLORREF OnFillMiniFrameCaption(
 
 Цвет, используемый для заполнения фона заголовка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию для этого метода заполняет строку заголовка текущим цветом заголовка активной обложки.
 
@@ -4506,7 +4507,7 @@ virtual void OnFillOutlookBarCaption(
 *clrText*<br/>
 заполняет Ссылка на параметр [COLORREF](/windows/win32/gdi/colorref) . Метод записывает цвет текста в строке заголовка в этот параметр.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию этого метода заполняет строку заголовка цветом теней на основе текущей обложки. Переопределите этот метод в производном визуальном диспетчере, чтобы настроить цвет панели заголовка Outlook.
 
@@ -4540,7 +4541,7 @@ virtual void OnFillOutlookPageButton(
 *clrText*<br/>
 заполняет Ссылка на параметр [COLORREF](/windows/win32/gdi/colorref) . Этот метод сохраняет цвет текста кнопки страницы Outlook в этом параметре.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите эту функцию в производном визуальном диспетчере, чтобы настроить внешний вид кнопок страницы Outlook.
 
@@ -4562,7 +4563,7 @@ virtual void OnFillPopupWindowBackground(
 *rect*<br/>
 окне Прямоугольник, указывающий границы всплывающего окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид всплывающих окон.
 
@@ -4588,7 +4589,7 @@ virtual COLORREF OnFillRibbonButton(
 
 Цвет текста для кнопки ленты, заданной параметром *пбуттон* , если кнопка ленты поддерживает текст. Значение-1, если текст для кнопки ленты недопустим.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид кнопок на ленте.
 
@@ -4638,7 +4639,7 @@ virtual void OnFillRibbonEdit(
 *клрселтекст*<br/>
 окне Ссылка на цвет выбранного текста в элементе управления "поле ввода".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Объект, `CMFCRibbonRichEditCtrl` обозначенный *педит* , может быть частью кнопки поля со списком на ленте.
 
@@ -4666,7 +4667,7 @@ virtual COLORREF OnFillRibbonMainPanelButton(
 
 Цвет текста для кнопки ленты, заданной параметром *пбуттон* , если кнопка ленты поддерживает текст. Значение-1, если текст для кнопки ленты недопустим.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид кнопок ленты на **главной** панели.
 
@@ -4692,7 +4693,7 @@ virtual void OnFillRibbonMenuFrame(
 *rect*<br/>
 окне Прямоугольник, указывающий границы рамки меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид строки меню для `CMFCRibbonMainPanel` .
 
@@ -4711,7 +4712,7 @@ virtual void OnFillRibbonQuickAccessToolBarPopup(
 окне *пменубар*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanageronfillsplitterbackground"></a><a name="onfillsplitterbackground"></a> CMFCVisualManager:: Онфиллсплиттербаккграунд
 
@@ -4735,7 +4736,7 @@ virtual void OnFillSplitterBackground(
 *rect*<br/>
 окне Прямоугольник, указывающий границы окна разделителя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид окна-разделителя.
 
@@ -4773,7 +4774,7 @@ virtual void OnFillTab(
 *pTabWnd*<br/>
 окне Указатель на родительский элемент управления Tab.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид вкладок.
 
@@ -4799,7 +4800,7 @@ virtual void OnFillTasksGroupInterior(
 *бспеЦиал*<br/>
 окне Логическое значение, указывающее, заполнена ли внутренняя часть цветом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид группы задач.
 
@@ -4821,7 +4822,7 @@ virtual void OnFillTasksPaneBackground(
 *ректворкареа*<br/>
 окне Прямоугольник, указывающий границы области задач.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид `CMFCTasksPane` объекта.
 
@@ -4851,7 +4852,7 @@ virtual void OnHighlightMenuItem(
 *clrText*<br/>
 окне Текущий цвет текста выделенных пунктов меню. Реализация по умолчанию не использует этот параметр.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию этого метода не использует параметры *пбуттон* или *клртекст*. Он заполняет прямоугольник, заданный параметром *Rect* , стандартным цветом фона.
 
@@ -4875,7 +4876,7 @@ virtual void OnHighlightRarelyUsedMenuItems(
 *ректрарелюсед*<br/>
 окне Прямоугольник, указывающий границы выделенной команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид выделенных команд меню.
 
@@ -4894,7 +4895,7 @@ virtual BOOL OnNcActivate(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanageronncpaint"></a><a name="onncpaint"></a> CMFCVisualManager:: Оннкпаинт
 
@@ -4922,7 +4923,7 @@ virtual BOOL OnNcPaint(
 
 Зарезервированное значение. Реализация по умолчанию возвращает значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите этот метод в производном визуальном диспетчере, чтобы настроить внешний вид кнопок фрейма окна и заголовка.
 
@@ -4948,7 +4949,7 @@ virtual BOOL OnSetWindowRegion(
 
 Значение TRUE, если метод успешно выполнен; В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Платформа вызывает этот метод, чтобы уведомить визуальный диспетчер о том, что регион задан для кадров и всплывающих меню. Дополнительные сведения см. в разделе [CWindow:: сетвиндовргн](../../atl/reference/cwindow-class.md#setwindowrgn).
 
@@ -4960,7 +4961,7 @@ virtual BOOL OnSetWindowRegion(
 virtual void OnUpdateSystemColors();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Платформа вызывает этот метод как часть обработки сообщения WM_SYSCOLORCHANGE. Реализация по умолчанию не выполняет никаких действий. Переопределите этот метод в производном визуальном диспетчере, если требуется выполнить пользовательский код при изменении цветов в приложении.
 
@@ -4984,7 +4985,7 @@ virtual COLORREF RibbonCategoryColorToRGB(AFX_RibbonCategoryColor color);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="cmfcvisualmanagersetdefaultmanager"></a><a name="setdefaultmanager"></a> CMFCVisualManager:: Сетдефаултманажер
 
@@ -4999,7 +5000,7 @@ static void SetDefaultManager(CRuntimeClass* pRTI);
 *прти*<br/>
 окне Указатель на сведения о среде выполнения для визуального диспетчера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте `CMFCVisualManager` класс и все производные визуальные руководители для настройки внешнего вида приложения. После настройки визуального элемента управления по умолчанию этот метод перерисовывает приложение с помощью нового диспетчера визуальных элементов. Дополнительные сведения об использовании визуальных диспетчеров см. в разделе [Диспетчер визуализации](../../mfc/visualization-manager.md).
 
@@ -5018,7 +5019,7 @@ void SetEmbossDisabledImage (BOOL bEmboss = TRUE);
 *бембосс*<br/>
 окне Логический параметр, указывающий, включать ли режим вытиснения для отключенных изображений панели инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте функцию [CMFCVisualManager:: исембоссдисабледимаже](#isembossdisabledimage) , чтобы определить, включен ли режим тиснения.
 
@@ -5035,7 +5036,7 @@ void SetFadeInactiveImage(BOOL bFade = TRUE);
 *бфаде*<br/>
 окне Логический параметр, указывающий, следует ли включить эффекты освещения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция определяет, будут ли неактивные изображения пропускаться в меню или на панели инструментов. Чтобы определить, включена ли эта функция, используйте метод [CMFCVisualManager:: исфадеинактивеимаже](#isfadeinactiveimage) .
 
@@ -5052,7 +5053,7 @@ void SetMenuFlatLook(BOOL bMenuFlatLook = TRUE);
 *бменуфлатлук*<br/>
 окне Логический параметр, указывающий, отображаются ли кнопки меню плоскими.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию эта функция отключена.
 
@@ -5069,7 +5070,7 @@ void SetMenuShadowDepth(int nDepth);
 *ндепс*<br/>
 окне Целое число, указывающее глубину тени меню в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Высота и ширина тени меню должны быть идентичными. Значение по умолчанию — 7 пикселей.
 
@@ -5086,11 +5087,11 @@ void SetShadowHighlightedImage(BOOL bShadow = TRUE);
 *бшадов*<br/>
 окне Логический параметр, указывающий, отображается ли в визуальном диспетчере тень в выделенных изображениях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию эта функция отключена.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>

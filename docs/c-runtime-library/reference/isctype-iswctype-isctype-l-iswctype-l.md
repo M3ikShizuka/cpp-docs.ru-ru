@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _isctype, iswctype, _isctype_l, _iswctype_l'
 title: _isctype, iswctype, _isctype_l, _iswctype_l
 ms.date: 4/2/2020
 api_name:
@@ -46,16 +47,16 @@ helpviewer_keywords:
 - isctype function
 - _iswctype function
 ms.assetid: cf7509b7-12fc-4d95-8140-ad2eb98173d3
-ms.openlocfilehash: 2261eab574a8bc206a02f9e505beff88cf4c7fcf
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 2b8bd10cd4240e4382d17cb8028589ddf4dd8b2d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918948"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332670"
 ---
 # <a name="_isctype-iswctype-_isctype_l-_iswctype_l"></a>_isctype, iswctype, _isctype_l, _iswctype_l
 
-Проверяет *c* для свойства CType, заданного аргументом *DESC* . Для каждого допустимого значения *DESC*существует эквивалентная подпрограммы классификации расширенных символов.
+Проверяет *c* для свойства CType, заданного аргументом *DESC* . Для каждого допустимого значения *DESC* существует эквивалентная подпрограммы классификации расширенных символов.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -82,7 +83,7 @@ int _iswctype_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Проверяемое целое число.
 
 *desc*<br/>
@@ -104,7 +105,7 @@ int _iswctype_l(
 |н/д|**_isctype**|н/д|**_iswctype**|
 |н/д|**_isctype_l**|н/д|**_iswctype_l**|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -126,5 +127,5 @@ int _iswctype_l(
 ## <a name="see-also"></a>См. также раздел
 
 [Классификация символов](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Процедуры is, isw](../../c-runtime-library/is-isw-routines.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[является, подпрограммы isw](../../c-runtime-library/is-isw-routines.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функциях поиска имен файлов
 title: Функции поиска имени файла
 ms.date: 11/04/2016
 api_location:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - find function
 - _wfind function
 ms.assetid: 2bc2f8ef-44e4-4271-b3e8-666d36fde828
-ms.openlocfilehash: fb5cc0e18d150d4171e33038e27810989c0f503b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1ab547de95906909a75bdd73f653c5cdae519879
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226246"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332946"
 ---
 # <a name="filename-search-functions"></a>Функции поиска имени файла
 
@@ -37,7 +38,7 @@ ms.locfileid: "87226246"
 
 - [_findclose](../c-runtime-library/reference/findclose.md)
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция `_findfirst` предоставляет сведения о первом экземпляре имени файла, соответствующем файлу, указанному в аргументе `filespec` . В `filespec` можно использовать любые комбинации подстановочных знаков, которые поддерживаются операционной системой.
 
@@ -104,7 +105,7 @@ ms.locfileid: "87226246"
 |`_finddata32i64_t`, `_wfinddata32i64_t`|`__time32_t`|**`__int64`**|
 |`_finddata64i32_t`, `_wfinddata64i32_t`|`__time64_t`|`_fsize_t`|
 
-`_fsize_t`значение **`typedef`** для **`unsigned long`** (32 бит).
+`_fsize_t` значение **`typedef`** для **`unsigned long`** (32 бит).
 
 ## <a name="example"></a>Пример
 

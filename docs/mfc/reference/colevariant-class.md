@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: COleVariant Class'
 title: Класс COleVariant
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - COleVariant [MFC], GetByteArrayFromVariantArray
 - COleVariant [MFC], SetString
 ms.assetid: e1b5cd4a-b066-4b9b-b48b-6215ed52d998
-ms.openlocfilehash: 63bce4695e4e1142b797f24cfbbae71638177d04
-ms.sourcegitcommit: 13f42c339fb7af935e3a93ac80e350d5e784c9f1
+ms.openlocfilehash: dcf59fe1d9f67ce47a1a8587209649f56147a9f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "87470905"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331405"
 ---
 # <a name="colevariant-class"></a>Класс COleVariant
 
@@ -37,11 +38,11 @@ ms.locfileid: "87470905"
 class COleVariant : public tagVARIANT
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[COleVariant:: COleVariant](#colevariant)|Формирует объект `COleVariant`.|
 
@@ -89,7 +90,7 @@ class COleVariant : public tagVARIANT
 
 **Заголовок:** afxdisp.h
 
-## <a name="colevariantattach"></a><a name="attach"></a>COleVariant:: Attach
+## <a name="colevariantattach"></a><a name="attach"></a> COleVariant:: Attach
 
 Вызовите эту функцию, чтобы присоединить заданный объект [Variant](/windows/win32/api/oaidl/ns-oaidl-variant) к текущему `COleVariant` объекту.
 
@@ -108,7 +109,7 @@ void Attach(VARIANT& varSrc);
 
 Дополнительные сведения см. в записях [типа Variant](/windows/win32/api/oaidl/ns-oaidl-variant) и [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum) в Windows SDK.
 
-## <a name="colevariantcolevariant"></a><a name="colevariant"></a>COleVariant:: COleVariant
+## <a name="colevariantcolevariant"></a><a name="colevariant"></a> COleVariant:: COleVariant
 
 Формирует объект `COleVariant`.
 
@@ -208,7 +209,7 @@ COleVariant(LPCITEMIDLIST pidl);
 
 Дополнительные сведения о SCODE см. в разделе [структура кодов ошибок COM](/windows/win32/com/structure-of-com-error-codes) в Windows SDK.
 
-## <a name="colevariantchangetype"></a><a name="changetype"></a>COleVariant:: ChangeType
+## <a name="colevariantchangetype"></a><a name="changetype"></a> COleVariant:: ChangeType
 
 Преобразует тип значения Variant в этом `COleVariant` объекте.
 
@@ -228,7 +229,7 @@ void ChangeType(VARTYPE vartype, LPVARIANT pSrc = NULL);
 
 Дополнительные сведения см. в записях [типа Variant](/windows/win32/api/oaidl/ns-oaidl-variant), [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum)и [вариантчанжетипе](/windows/win32/api/oleauto/nf-oleauto-variantchangetype) в Windows SDK.
 
-## <a name="colevariantclear"></a><a name="clear"></a>COleVariant:: Clear
+## <a name="colevariantclear"></a><a name="clear"></a> COleVariant:: Clear
 
 Очищает `VARIANT`.
 
@@ -242,7 +243,7 @@ void Clear();
 
 Дополнительные сведения см. в разделе `VARIANT` , VarType и `VariantClear` записях в Windows SDK.
 
-## <a name="colevariantdetach"></a><a name="detach"></a>COleVariant::D етач
+## <a name="colevariantdetach"></a><a name="detach"></a> COleVariant::D етач
 
 Отсоединяет базовый объект [Variant](/windows/win32/api/oaidl/ns-oaidl-variant) от этого `COleVariant` объекта.
 
@@ -259,7 +260,7 @@ VARIANT Detach();
 
 Дополнительные сведения см. в записях [типа Variant](/windows/win32/api/oaidl/ns-oaidl-variant), [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum)и [вариантклеар](/windows/win32/api/oleauto/nf-oleauto-variantclear) в Windows SDK.
 
-## <a name="colevariantgetbytearrayfromvariantarray"></a><a name="getbytearrayfromvariantarray"></a>COleVariant:: Жетбитеаррайфромвариантаррай
+## <a name="colevariantgetbytearrayfromvariantarray"></a><a name="getbytearrayfromvariantarray"></a> COleVariant:: Жетбитеаррайфромвариантаррай
 
 Извлекает массив байтов из существующего массива вариантов
 
@@ -269,10 +270,10 @@ void GetByteArrayFromVariantArray(CByteArray& bytes);
 
 ### <a name="parameters"></a>Параметры
 
-*байт*<br/>
+*bytes*<br/>
 Ссылка на существующий объект [CByteArray](../../mfc/reference/cbytearray-class.md) .
 
-## <a name="colevariantoperator-lpcvariant"></a><a name="operator_lpcvariant"></a>COleVariant:: operator ЛПКВАРИАНТ
+## <a name="colevariantoperator-lpcvariant"></a><a name="operator_lpcvariant"></a> COleVariant:: operator ЛПКВАРИАНТ
 
 Этот оператор приведения возвращает `VARIANT` структуру, значение которой копируется из этого `COleVariant` объекта.
 
@@ -282,7 +283,7 @@ operator LPCVARIANT() const;
 
 ### <a name="remarks"></a>Комментарии
 
-## <a name="colevariantoperator-lpvariant"></a><a name="operator_lpvariant"></a>COleVariant:: operator ЛПВАРИАНТ
+## <a name="colevariantoperator-lpvariant"></a><a name="operator_lpvariant"></a> COleVariant:: operator ЛПВАРИАНТ
 
 Вызовите этот оператор приведения, чтобы получить доступ к базовой `VARIANT` структуре для этого `COleVariant` объекта.
 
@@ -295,7 +296,7 @@ operator LPVARIANT();
 > [!CAUTION]
 > Изменение значения в `VARIANT` структуре, к которой обращается указатель, возвращенное этой функцией, приведет к изменению значения этого `COleVariant` объекта.
 
-## <a name="colevariantoperator-"></a><a name="operator_eq"></a>COleVariant:: operator =
+## <a name="colevariantoperator-"></a><a name="operator_eq"></a> COleVariant:: operator =
 
 Эти перегруженные операторы присваивания копируют исходное значение в этот `COleVariant` объект.
 
@@ -346,7 +347,7 @@ const COleVariant& operator=(const CLongBinary& lbSrc);
 
 Дополнительные сведения см. в записях [типа Variant](/windows/win32/api/oaidl/ns-oaidl-variant) и [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum) в Windows SDK.
 
-## <a name="colevariantoperator-"></a><a name="operator_eq_eq"></a>COleVariant:: operator = =
+## <a name="colevariantoperator-"></a><a name="operator_eq_eq"></a> COleVariant:: operator = =
 
 Этот оператор сравнивает два значения типа Variant и возвращает ненулевое значение, если они равны. в противном случае — 0.
 
@@ -377,7 +378,7 @@ friend CArchive& AFXAPI operator>>(
 
 `COleVariant`Оператор вставки ( **\<\<**) operator supports diagnostic dumping and storing to an archive. The extraction (**>>** ) поддерживает загрузку из архива.
 
-## <a name="colevariantsetstring"></a><a name="setstring"></a>COleVariant:: SetString
+## <a name="colevariantsetstring"></a><a name="setstring"></a> COleVariant:: SetString
 
 Задает для строки конкретный тип.
 
@@ -395,10 +396,10 @@ void SetString(LPCTSTR lpszSrc, VARTYPE vtSrc);
 
 ### <a name="remarks"></a>Комментарии
 
-Параметр *втсрк* должен иметь значение VT_BSTR (Unicode) или VT_BSTRT (ANSI). `SetString`обычно используется для задания строк в ANSI, так как по умолчанию для конструктора [COleVariant:: COleVariant](#colevariant) со строкой или параметром указателя строки, а значение VarType не равно Unicode.
+Параметр *втсрк* должен иметь значение VT_BSTR (Unicode) или VT_BSTRT (ANSI). `SetString` обычно используется для задания строк в ANSI, так как по умолчанию для конструктора [COleVariant:: COleVariant](#colevariant) со строкой или параметром указателя строки, а значение VarType не равно Unicode.
 
 Набор записей DAO в сборке, не поддерживающей Юникод, принимает строки как ANSI. Таким образом, для функций DAO, использующих `COleVariant` объекты, если не создается набор записей в Юникоде, необходимо использовать форму конструктора **COleVariant:: COleVariant (** *лпсзсрк* **,** *втсрк* **)** с *втсрк* установленным в VT_BSTRT (ANSI) или использовать `SetString` с параметром *втсрк* , для которого задано значение VT_BSTRT, чтобы сделать строки ANSI. Например, `CDaoRecordset` функции [CDaoRecordset:: Seek](../../mfc/reference/cdaorecordset-class.md#seek) и [CDaoRecordset:: сетфиелдвалуе](../../mfc/reference/cdaorecordset-class.md#setfieldvalue) используют `COleVariant` объекты в качестве параметров. Эти объекты должны иметь значение ANSI, если набор записей DAO не является ЮНИКОДом.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>

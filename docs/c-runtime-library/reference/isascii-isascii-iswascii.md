@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: исвасЦии, __isascii,'
 title: isascii, __isascii, iswascii
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - istascii function
 - iswascii function
 ms.assetid: ba4325ad-7cb3-4fb9-b096-58906d67971a
-ms.openlocfilehash: 3e04b85c9ce7519593802c21311315d534dce6a5
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 0d0a7964ba5b9a3133f100ea94fd4bac95407627
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919789"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332732"
 ---
 # <a name="isascii-__isascii-iswascii"></a>isascii, __isascii, iswascii
 
@@ -65,14 +66,14 @@ int iswascii(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Проверяемое целое число.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Каждая из этих подпрограмм возвращает ненулевое значение, если **c** является определенным представлением символа ASCII. **__isascii** возвращает ненулевое значение, если **c** является символом ASCII (в диапазоне 0x00 – 0x7F). **исвасЦии** возвращает ненулевое значение, если **c** является представлением символа ASCII в расширенном виде символа. Каждая из этих подпрограмм возвращает 0, если **c** не удовлетворяет условию теста.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Как **__isascii** , так и **исвасЦии** реализуются в виде макросов, если не определен _CTYPE_DISABLE_MACROS макроса препроцессора.
 
@@ -90,13 +91,13 @@ int iswascii(
 
 |Подпрограмма|Обязательный заголовок|
 |-------------|---------------------|
-|**isascii** **__isascii**|C: \<ctype.h><br /><br /> C++: \<cctype> или \<ctype.h>|
-|**iswascii**|C: \<wctype.h>, \<ctype.h> или \<wchar.h><br /><br /> C++: \<cwctype>, \<cctype>, \<wctype.h>, \<ctype.h> или \<wchar.h>|
+| **__isascii**|Ц \<ctype.h><br /><br /> C++: \<cctype> или \<ctype.h>|
+|**iswascii**|C: \<wctype.h> , \<ctype.h> или \<wchar.h><br /><br /> C++: \<cwctype> , \<cctype> , \<wctype.h> , \<ctype.h> или \<wchar.h>|
 
 Функции **__isascii** и **исвасЦии** являются специфичными **для Microsoft**. Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>См. также раздел
 
 [Классификация символов](../../c-runtime-library/character-classification.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Процедуры is, isw](../../c-runtime-library/is-isw-routines.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[является, подпрограммы isw](../../c-runtime-library/is-isw-routines.md)<br/>

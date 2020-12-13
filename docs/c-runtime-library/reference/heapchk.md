@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _heapchk'
 title: _heapchk
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - heaps, checking consistency
 - _heapchk function
 ms.assetid: 859619a5-1e35-4f02-9e09-11d9fa266ec0
-ms.openlocfilehash: 2ddbdaec5861d48cc23a7cbcd28332e8c06ebbfe
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 57cde789c8d6e6b8c8da91adf4a6f274ce557ed7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916215"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97332800"
 ---
 # <a name="_heapchk"></a>_heapchk
 
@@ -62,7 +63,7 @@ int _heapchk( void );
 
 Кроме того, при возникновении ошибки **_heapchk** **устанавливает значение** **еносис**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_heapchk** помогает отладить проблемы, связанные с кучей, с помощью проверки на наличие минимальной согласованности кучи. Если операционная система не поддерживает **_heapchk**(например, Windows 98), функция возвращает **_HEAPOK** **и устанавливает для** **еносис**.
 

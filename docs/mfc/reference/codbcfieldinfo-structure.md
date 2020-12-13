@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура Кодбкфиелдинфо'
 title: Структура CODBCFieldInfo
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - ODBC [MFC], data source information
 - CODBCFieldInfo structure [MFC]
 ms.assetid: 92598b4f-facc-4108-b282-63a179ff79ab
-ms.openlocfilehash: bc2ad0c8319a60b773211dbd6b52b57bb2dbcafb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7cd7072719bec46cfbfaeb02c5c86d714c4de13c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62388199"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97331412"
 ---
 # <a name="codbcfieldinfo-structure"></a>Структура CODBCFieldInfo
 
-`CODBCFieldInfo` Структура содержит сведения о полях в источник данных ODBC.
+`CODBCFieldInfo`Структура содержит сведения о полях в источнике данных ODBC.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -37,27 +38,27 @@ struct CODBCFieldInfo
 Имя поля.
 
 *m_nSQLType*<br/>
-Тип данных SQL поля. Это может быть типом данных ODBC SQL или типом данных специфические для драйвера SQL. Список допустимых типов данных ODBC SQL см. в разделе «Типы данных SQL» в пакете Windows SDK. Сведения о типах данных драйвера SQL см. в разделе документации по драйверу.
+Тип данных SQL поля. Это может быть тип данных ODBC SQL или тип данных SQL, зависящий от драйвера. Список допустимых типов данных ODBC SQL см. в разделе "типы данных SQL" в Windows SDK. Дополнительные сведения о типах данных SQL, относящихся к драйверам, см. в документации по драйверу.
 
 *m_nPrecision*<br/>
-Максимальная точность поля. Дополнительные сведения см. в разделе «Точность, масштаб, длину и отображаемый размер» в пакете Windows SDK.
+Максимальная точность поля. Дополнительные сведения см. в разделе "точность, масштаб, Длина и размер дисплея" в Windows SDK.
 
 *m_nScale*<br/>
-Масштаб поля. Дополнительные сведения см. в разделе «Точность, масштаб, длину и отображаемый размер» в пакете Windows SDK.
+Масштаб поля. Дополнительные сведения см. в разделе "точность, масштаб, Длина и размер дисплея" в Windows SDK.
 
 *m_nNullability*<br/>
-Является ли поле допускает значение Null. Это может быть одно из двух значений: SQL_NULLABLE, если поле допускает значения Null, или SQL_NO_NULLS, если поле не принимает значения Null.
+Принимает ли поле значение null. Это может быть одно из двух значений: SQL_NULLABLE, если поле принимает значения NULL, или SQL_NO_NULLS, если поле не принимает значения NULL.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Чтобы получить эти данные, вызовите [CRecordset::GetODBCFieldInfo](../../mfc/reference/crecordset-class.md#getodbcfieldinfo).
+Чтобы получить эти сведения, вызовите метод [CRecordset:: жетодбкфиелдинфо](../../mfc/reference/crecordset-class.md#getodbcfieldinfo).
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxdb.h
+**Заголовок:** афксдб. h
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Структуры, стили, обратные вызовы и схемы сообщений](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
-[CRecordset::GetODBCFieldInfo](../../mfc/reference/crecordset-class.md#getodbcfieldinfo)<br/>
-[CRecordset::GetFieldValue](../../mfc/reference/crecordset-class.md#getfieldvalue)
+[CRecordset:: Жетодбкфиелдинфо](../../mfc/reference/crecordset-class.md#getodbcfieldinfo)<br/>
+[CRecordset:: GetFieldValue](../../mfc/reference/crecordset-class.md#getfieldvalue)
