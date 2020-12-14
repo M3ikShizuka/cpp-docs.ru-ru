@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: локальное хранилище потоков (TLS)'
 title: Локальное хранилище потока (TLS)
 ms.date: 08/09/2019
 helpviewer_keywords:
@@ -9,18 +10,18 @@ helpviewer_keywords:
 - thread attribute
 - Thread Local Storage [C++]
 ms.assetid: 80801907-d792-45ca-b776-df0cf2e9f197
-ms.openlocfilehash: f677d7382a9747df63023bd83b104a6bb3b74c1f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1259f0c3af84f90fcd82483d3891124d1553eeb9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222658"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342326"
 ---
 # <a name="thread-local-storage-tls"></a>Локальное хранилище потока (TLS)
 
 Локальное хранилище потока (TLS) — это механизм, с помощью которого каждый поток в указанном многопоточном процессе может выделять расположения для хранения данных определенного потока. Динамически связанные данные потока (среды выполнения) поддерживаются API TLS ([TlsAlloc](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc)). В дополнение к существующей реализации API в Win32 и компиляторе Microsoft C++ теперь поддерживаются статически связанные данные (время загрузки) для каждого потока.
 
-## <a name="compiler-implementation-for-tls"></a><a name="_core_compiler_implementation_for_tls"></a>Реализация компилятора для TLS
+## <a name="compiler-implementation-for-tls"></a><a name="_core_compiler_implementation_for_tls"></a> Реализация компилятора для TLS
 
 **C++ 11:**  **`thread_local`** Описатель класса хранения — это рекомендуемый способ указания локального хранилища потока для объектов и членов класса. Дополнительные сведения см. в разделе [классы хранения данных (C++)](../cpp/storage-classes-cpp.md).
 

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о интерфейсах объектов наборов строк
 title: Интерфейсы объекта Rowset
 ms.date: 10/24/2018
 helpviewer_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - OLE DB provider templates, object interfaces
 - interfaces, list of
 ms.assetid: 0d7a5d48-2fe4-434f-a84b-157c1fdc3494
-ms.openlocfilehash: d9c2c61714a98d9de09d8657352a14f296e35a58
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: fc7cbb0ee7c15cc7414144334018afc93888da01
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "79544546"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97316860"
 ---
 # <a name="rowset-object-interfaces"></a>Интерфейсы объекта Rowset
 
 В следующей таблице показаны обязательные и необязательные интерфейсы, определенные OLE DB для объекта набора строк.
 
-|Интерфейс|Обязательно?|Реализуется с помощью шаблонов OLE DB?|
+|Интерфейс|Необходим?|Реализуется с помощью шаблонов OLE DB?|
 |---------------|---------------|--------------------------------------|
 |[IAccessor](/previous-versions/windows/desktop/ms719672(v=vs.85))|Обязательный|Да|
 |[IColumnsInfo](/previous-versions/windows/desktop/ms724541(v=vs.85))|Обязательный|Да|
@@ -37,7 +38,7 @@ ms.locfileid: "79544546"
 |[ировсеткуррентиндекс](/previous-versions/windows/desktop/ms709700(v=vs.85))|Необязательно|Нет|
 |[IRowsetFind](/previous-versions/windows/desktop/ms724221(v=vs.85))|Необязательно|Нет|
 |[ировсетидентити](/previous-versions/windows/desktop/ms715913(v=vs.85))|Необязательный (но требуется для поставщиков уровня 0)|Да|
-|[ировсетиндекс](/previous-versions/windows/desktop/ms719604(v=vs.85))|Необязательно|Нет|
+|[IRowsetIndex](/previous-versions/windows/desktop/ms719604(v=vs.85))|Необязательно|Нет|
 |[IRowsetLocate](/previous-versions/windows/desktop/ms721190(v=vs.85))|Необязательно|Да|
 |[ировсетрефреш](/previous-versions/windows/desktop/ms714892(v=vs.85))|Необязательно|Нет|
 |[IRowsetScroll](/previous-versions/windows/desktop/ms712984(v=vs.85))|Необязательно|Нет|
@@ -46,8 +47,8 @@ ms.locfileid: "79544546"
 |[ISupportErrorInfo](/previous-versions/windows/desktop/ms715816(v=vs.85))|Необязательно|Да|
 |[ировсетбукмарк](/previous-versions/windows/desktop/ms714246(v=vs.85))|Необязательно|Нет|
 
-Созданный мастером объект набора строк реализует `IAccessor`, `IRowset`и `IRowsetInfo` через наследование. `IAccessorImpl` привязывает оба выходных столбца. Интерфейс `IRowset` обрабатывает выборку строк и данных. Интерфейс `IRowsetInfo` обрабатывает свойства набора строк.
+Созданный мастером объект набора строк реализует `IAccessor` , `IRowset` и `IRowsetInfo` посредством наследования. `IAccessorImpl`Привязывает оба выходных столбца. `IRowset`Интерфейс обрабатывает выборку строк и данных. `IRowsetInfo`Интерфейс обрабатывает свойства набора строк.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Архитектура шаблона поставщика OLE DB](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

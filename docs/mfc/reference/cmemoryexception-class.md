@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CMemoryException Class'
 title: Класс CMemoryException
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMemoryException [MFC], CMemoryException
 ms.assetid: 9af0ed57-d12a-45ca-82b5-c910a60f7edf
-ms.openlocfilehash: 71b17e777db9d6351192da7cffd075b3a64553bd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 694629d65c8b4cffc351873d5da3d8ed3c34cf8e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222931"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336652"
 ---
 # <a name="cmemoryexception-class"></a>Класс CMemoryException
 
@@ -25,15 +26,15 @@ ms.locfileid: "87222931"
 class CMemoryException : public CSimpleException
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[CMemoryException:: CMemoryException](#cmemoryexception)|Формирует объект `CMemoryException`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Дальнейшая квалификация не требуется или невозможна. Исключения памяти автоматически создаются **`new`** . При написании собственных функций для работы с памятью с помощью, например, `malloc` вы несете ответственность за создание исключений памяти.
 
@@ -53,7 +54,7 @@ class CMemoryException : public CSimpleException
 
 **Заголовок:** AFX. h
 
-## <a name="cmemoryexceptioncmemoryexception"></a><a name="cmemoryexception"></a>CMemoryException:: CMemoryException
+## <a name="cmemoryexceptioncmemoryexception"></a><a name="cmemoryexception"></a> CMemoryException:: CMemoryException
 
 Формирует объект `CMemoryException`.
 
@@ -61,11 +62,11 @@ class CMemoryException : public CSimpleException
 CMemoryException();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Не используйте этот конструктор напрямую, а вызовите глобальную функцию [афкссровмеморексцептион](exception-processing.md#afxthrowmemoryexception). Эта глобальная функция может быть выполнена в случае нехватки памяти, так как она конструирует объект исключения в ранее выделенной памяти. Дополнительные сведения об обработке исключений см. в статье [исключения](../exception-handling-in-mfc.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Класс CException](cexception-class.md)<br/>
 [Иерархическая диаграмма](../hierarchy-chart.md)

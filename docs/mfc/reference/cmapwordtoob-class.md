@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кмапвордтуб Class'
 title: Класс Кмапвордтуб
 ms.date: 11/04/2016
 f1_keywords:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - CMapWordToOb [MFC], RemoveKey
 - CMapWordToOb [MFC], SetAt
 ms.assetid: 9c9bcd76-456f-4cf9-b03c-dd28b49d5e4f
-ms.openlocfilehash: f360760bb5c04400ed77ef49c5968f8e9e7a6e59
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: da21902c3789f1547055baffae5650fcb6b8c789
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222996"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97336701"
 ---
 # <a name="cmapwordtoob-class"></a>Класс Кмапвордтуб
 
@@ -51,7 +52,7 @@ ms.locfileid: "87222996"
 class CMapWordToOb : public CObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 Функции элементов `CMapWordToOb` похожи на функции членов класса [кмапстрингтуб](../../mfc/reference/cmapstringtoob-class.md). Из-за этой схожести для изучения этой функции-члена можно использовать справочную документацию по классу `CMapStringToOb`. Везде, где вы видите, `CString` или **`const`** указатель в **`char`** качестве параметра функции или возвращаемого значения, замените слово.
 
@@ -63,13 +64,13 @@ class CMapWordToOb : public CObject
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[Кмапвордтуб:: Кмапвордтуб](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob)|Конструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[Кмапвордтуб:: NOCOUNT](../../mfc/reference/cmapstringtoob-class.md#getcount)|Возвращает число элементов в этой карте.|
 |[Кмапвордтуб:: Жесаштаблесизе](../../mfc/reference/cmapstringtoob-class.md#gethashtablesize)|Определяет текущее количество элементов в хэш-таблице.|
@@ -87,13 +88,13 @@ class CMapWordToOb : public CObject
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Кмапвордтуб:: operator \[\]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Вставляет элемент в Map — подстановку оператора для `SetAt` .|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CMapWordToOb`включает макрос IMPLEMENT_SERIAL для поддержки сериализации и дампа его элементов. Каждый элемент сериализуется в свою очередь, если схема хранится в архиве с перегруженным **<<** оператором вставки () или с `Serialize` функцией-членом.
+`CMapWordToOb` включает макрос IMPLEMENT_SERIAL для поддержки сериализации и дампа его элементов. Каждый элемент сериализуется в свою очередь, если схема хранится в архиве с перегруженным **<<** оператором вставки () или с `Serialize` функцией-членом.
 
 Если требуется дамп отдельных `CObject` элементов Word, необходимо задать для контекста дампа значение 1 или больше.
 
@@ -111,7 +112,7 @@ class CMapWordToOb : public CObject
 
 **Заголовок:** афксколл. h
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [CObject, класс](../../mfc/reference/cobject-class.md)<br/>
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)

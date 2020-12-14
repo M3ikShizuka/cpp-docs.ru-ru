@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как вызывать собственные библиотеки DLL из управляемого кода с помощью PInvoke.
 title: Практическое руководство. Вызов неуправляемых библиотек DLL из управляемого кода с помощью PInvoke
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - marshaling [C++], calling native DLLs
 - data marshaling [C++], calling native DLLs
 ms.assetid: 3273eb4b-38d1-4619-92a6-71bda542be72
-ms.openlocfilehash: 1eb5d5669c49dd49a411c275f8845dbbab989df3
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 915601aa813f1c5c14977c1492d6c675125c47be
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "79545093"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97335397"
 ---
 # <a name="how-to-call-native-dlls-from-managed-code-using-pinvoke"></a>Практическое руководство. Вызов неуправляемых библиотек DLL из управляемого кода с помощью PInvoke
 
-Функции, реализованные в неуправляемых библиотеках DLL, могут вызываться из управляемого кода с помощью функции вызова неуправляемой платформы (P/Invoke). Если исходный код библиотеки DLL недоступен, вызов P/Invoke является единственным вариантом взаимодействия. Однако в отличие от других языков .NET, Visual C++ предоставляет альтернативу P/Invoke. Дополнительные сведения см. [в разделе C++ использование взаимодействия (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
+Функции, реализованные в неуправляемых библиотеках DLL, могут вызываться из управляемого кода с помощью функции вызова неуправляемой платформы (P/Invoke). Если исходный код библиотеки DLL недоступен, вызов P/Invoke является единственным вариантом взаимодействия. Однако, в отличие от других языков .NET, Visual C++ предоставляет альтернативу P/Invoke. Дополнительные сведения см. [в разделе Использование взаимодействия C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).
 
 ## <a name="example"></a>Пример
 
@@ -52,6 +53,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Использование явного вызова Pinvoke в C++ (атрибут DllImport)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)
+[Использование явного вызова PInvoke в C++ (атрибут DllImport)](../dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute.md)
