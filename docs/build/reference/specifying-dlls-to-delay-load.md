@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: указание библиотек DLL для задержки загрузки'
 title: Задание библиотек DLL с отложенной загрузкой
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - delayed loading of DLLs, specifying
 - /DELAYLOAD linker option
 ms.assetid: 94cbecfe-7a42-40d1-a618-9f2786bac0d8
-ms.openlocfilehash: 2b6737abd76c03186881e83bbd2bf286be6ffe2f
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ece96ea6f818c7e0bc6b6e032ce523e96a9f4ecb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62318151"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224548"
 ---
 # <a name="specifying-dlls-to-delay-load"></a>Задание библиотек DLL с отложенной загрузкой
 
-Можно указать, какие библиотек DLL с отложенной загрузки с [/DELAYLOAD](delayload-delay-load-import.md):`dllname` параметр компоновщика. Если вы не планируете использовать собственную версию вспомогательной функции, необходимо также связать программу с библиотекой delayimp.lib (для классических приложений) или dloadhelper.lib (для приложений Магазина).
+Можно указать, какие DLL следует отложить загрузку с помощью параметра [параметр/DELAYLOAD](delayload-delay-load-import.md): `dllname` компоновщика. Если вы не планируете использовать собственную версию вспомогательной функции, необходимо также связать программу с библиотекой delayimp.lib (для классических приложений) или dloadhelper.lib (для приложений Магазина).
 
 Ниже приведен простой пример задержки загрузки библиотеки DLL.
 
@@ -35,6 +36,6 @@ int main() {
 
 Создание ОТЛАДОЧНОЙ версии проекта. Просмотрите код, используя отладчик, и обратите внимание, что файл user32.dll загружается только при вызове `MessageBox`.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Поддержка компоновщика для библиотек DLL с отложенной загрузкой](linker-support-for-delay-loaded-dlls.md)
+[Поддержка компоновщика для Delay-Loadedных библиотек DLL](linker-support-for-delay-loaded-dlls.md)

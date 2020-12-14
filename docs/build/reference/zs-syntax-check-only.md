@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/ZS (только проверка синтаксиса)
 title: /Zs (Только синтаксическая проверка)
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - Zs compiler option
 - /Zs compiler option [C++]
 ms.assetid: b4b41e6a-3f41-4d09-9cb6-fde5aa2cfecf
-ms.openlocfilehash: e3713312b71c4cd539d40e09a3eaa821a2e5caed
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a4f5e2227104003a637db1d921fd959ea0a11ad7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315421"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224300"
 ---
 # <a name="zs-syntax-check-only"></a>/Zs (Только синтаксическая проверка)
 
@@ -26,15 +27,15 @@ ms.locfileid: "62315421"
 /Zs
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-При использовании этого параметра, не выходные файлы создаются и сообщения об ошибках записываются в стандартный вывод.
+При использовании этого параметра выходные файлы не создаются, а сообщения об ошибках записываются в стандартный вывод.
 
-**/Zs** параметр позволяет быстро находить и исправлять ошибки синтаксиса, перед компиляцией и связать файл с исходным.
+Параметр **/ZS** обеспечивает быстрый способ поиска и исправления синтаксических ошибок перед компиляцией и связыванием исходного файла.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Установка данного параметра компилятора в среде разработки Visual Studio
 
-1. Откройте диалоговое окно **Страницы свойств** проекта. Дополнительные сведения см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
 1. Откройте папку **C/C++** .
 
@@ -46,7 +47,7 @@ ms.locfileid: "62315421"
 
 - См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора MSVC](compiler-command-line-syntax.md)
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)

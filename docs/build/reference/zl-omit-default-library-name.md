@@ -1,4 +1,5 @@
 ---
+description: Подробнее о:/ZL (опустить имя библиотеки по умолчанию)
 title: /Zl (Опущенное по умолчанию имя библиотеки)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - /Zl compiler option [C++]
 - default libraries, omitting names
 ms.assetid: b27d39d0-44d6-498c-84ae-27c1326fee59
-ms.openlocfilehash: c72377314abf755469075c7a4b431f4b8a64ee7f
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: eaf39b7bfe1a2b7f2d2c7754cccf8061543e4c7c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79438633"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224430"
 ---
 # <a name="zl-omit-default-library-name"></a>/Zl (Опущенное по умолчанию имя библиотеки)
 
@@ -30,7 +31,7 @@ ms.locfileid: "79438633"
 
 ## <a name="remarks"></a>Remarks
 
-Дополнительные сведения о библиотеке по умолчанию см. в разделе [Использование библиотеки времени выполнения](md-mt-ld-use-run-time-library.md).
+Дополнительные сведения о библиотеке по умолчанию см. в статье [использование Run-Time библиотеки](md-mt-ld-use-run-time-library.md).
 
 Параметр **/Zl** можно использовать для компиляции OBJ-файлов, которые планируется разместить в библиотеке. Хотя пропуск имени библиотеки экономит лишь небольшой объем пространства для одного OBJ-файла, общее пространство сохраняется в библиотеке, содержащей множество модулей объектов.
 
@@ -40,7 +41,7 @@ ms.locfileid: "79438633"
 
 Дополнительные сведения см. в разделе [Функции библиотеки CRT](../../c-runtime-library/crt-library-features.md).
 
-При компиляции с параметром **/Zl**определяется `_VC_NODEFAULTLIB`.  Пример:
+При компиляции с параметром **/Zl** `_VC_NODEFAULTLIB` определяется.  Пример:
 
 ```cpp
 // vc_nodefaultlib.cpp
@@ -71,4 +72,4 @@ void Test() {
 ## <a name="see-also"></a>См. также раздел
 
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора MSVC](compiler-command-line-syntax.md)
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)

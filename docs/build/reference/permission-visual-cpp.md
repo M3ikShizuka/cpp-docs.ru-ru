@@ -1,5 +1,6 @@
 ---
-title: '> разрешений &lt;(C++ комментарии к документации)'
+description: 'Дополнительные сведения: &lt; разрешение&gt;'
+title: '&lt;> разрешений (комментарии к документации по C++)'
 ms.date: 11/04/2016
 f1_keywords:
 - permission
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - <permission> C++ XML tag
 - permission C++ XML tag
 ms.assetid: 537ee2bc-95bd-48e4-9ce6-3420c3da87f4
-ms.openlocfilehash: e7f0a59c85e3fa28d24e44953e207151c3afa0f4
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: cd815b5df831632afd399e752e4525082f20b063
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988676"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97226029"
 ---
 # <a name="ltpermissiongt"></a>&lt;permission&gt;
 
-Тег \<permission> tag позволяет документировать уровень доступа для члена. <xref:System.Security.PermissionSet> позволяет задать уровень доступа для члена.
+Тег \<permission> позволяет документировать уровень доступа для элемента. <xref:System.Security.PermissionSet> позволяет задать уровень доступа для члена.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -27,21 +28,21 @@ ms.locfileid: "74988676"
 
 #### <a name="parameters"></a>Параметры
 
-*member*<br/>
+*участниками*<br/>
 Ссылка на член или поле, которые доступны для вызова из текущей среды компиляции. Компилятор проверяет, существует ли элемент кода, и приводит `member` к каноническому имени элемента в выходных XML-данных.  Заключите имя в одинарные или двойные кавычки.
 
 Если компилятору не удается найти `member`, он выдает предупреждение.
 
-Дополнительные сведения о создании ссылки cref на универсальный тип см. в разделе [\<see>](see-visual-cpp.md).
+Сведения о том, как создать ссылку cref на универсальный тип, см. в разделе [\<see>](see-visual-cpp.md) .
 
 *description*<br/>
 Описание уровня доступа для члена.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
 
-Чтобы обработать и сохранить комментарии документации в файл, при компиляции необходимо использовать параметр [/doc](doc-process-documentation-comments-c-cpp.md).
+Скомпилируйте с [/doc](doc-process-documentation-comments-c-cpp.md) для обработки комментариев документации в файл.
 
-Компилятор КОМПИЛЯТОРОМ MSVC будет пытаться разрешить ссылки cref в одном проходе через комментарии к документации.  Поэтому если при использовании правил поиска C++ компилятор не найдет символ, ссылка будет помечена как не разрешенная. Дополнительные сведения см. в описании [\<seealso>](seealso-visual-cpp.md).
+Компилятор КОМПИЛЯТОРОМ MSVC будет пытаться разрешить ссылки cref в одном проходе через комментарии к документации.  Поэтому если при использовании правил поиска C++ компилятор не найдет символ, ссылка будет помечена как не разрешенная. [\<seealso>](seealso-visual-cpp.md)Дополнительные сведения см. в разделе.
 
 ## <a name="example"></a>Пример
 
@@ -57,6 +58,6 @@ public ref class TestClass {
 };
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Документация XML](xml-documentation-visual-cpp.md)

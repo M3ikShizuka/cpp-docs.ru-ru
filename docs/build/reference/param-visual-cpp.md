@@ -1,5 +1,6 @@
 ---
-title: '&lt;PARAM > (C++ комментариев документации)'
+description: 'Дополнительные сведения: &lt; param&gt;'
+title: '&lt;> param (комментарии к документации по C++)'
 ms.date: 11/04/2016
 f1_keywords:
 - param
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - param C++ XML tag
 - <param> C++ XML tag
 ms.assetid: 66c1a1c3-4f98-4bcf-8c7d-9a40308982fb
-ms.openlocfilehash: d8ea4feddbe1ec2d5898f8ef698cc2d69d255933
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c3baabc6aef9a4cabdd7c7a9023fb628bd53793
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320010"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97226146"
 ---
 # <a name="ltparamgt"></a>&lt;param&gt;
 
@@ -35,9 +36,9 @@ ms.locfileid: "62320010"
 
 ## <a name="remarks"></a>Примечания
 
-Текст тега \<param> будет отображаться в IntelliSense, в [обозревателе объектов](/visualstudio/ide/viewing-the-structure-of-code) и в веб-отчете комментариев кода.
+Текст \<param> тега будет отображаться в IntelliSense, в [обозревателе объектов](/visualstudio/ide/viewing-the-structure-of-code)и в веб-отчете с комментариями к коду.
 
-Чтобы обработать и сохранить комментарии документации в файл, при компиляции необходимо использовать параметр [/doc](doc-process-documentation-comments-c-cpp.md).
+Скомпилируйте с [/doc](doc-process-documentation-comments-c-cpp.md) для обработки комментариев документации в файл.
 
 ## <a name="example"></a>Пример
 
@@ -53,6 +54,6 @@ public ref class MyClass {
 };
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Документация XML](xml-documentation-visual-cpp.md)

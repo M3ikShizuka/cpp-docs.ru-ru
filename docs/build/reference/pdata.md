@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/ПДАТА
 title: /PDATA
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /PDATA dumpbin option
 - -PDATA dumpbin option
 ms.assetid: 5d41d629-6576-4733-b103-0d61e6b77b50
-ms.openlocfilehash: bd763abf7b2a08e6aa54ba37cb451f1ec0f6cef7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2855e7f33577ca17aa271d953663f858163b94a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320062"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97226133"
 ---
 # <a name="pdata"></a>/PDATA
 
@@ -21,14 +22,14 @@ ms.locfileid: "62320062"
 /PDATA
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-RISC процессоров.
+Только процессоры RISC.
 
-Этот параметр копирует таблицы исключений (.pdata) из образа или объекта.
+Этот параметр выводит таблицы исключений (pData) из образа или объекта.
 
-Только [/Headers](headers.md) параметр (программа DUMPBIN) доступен для использования в файлах, созданных с помощью [/GL](gl-whole-program-optimization.md) параметр компилятора.
+С файлами, созданными с использованием параметра компилятора [/GL](gl-whole-program-optimization.md), можно использовать только параметр DUMPBIN [/HEADERS](headers.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Параметры DUMPBIN](dumpbin-options.md)

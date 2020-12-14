@@ -1,5 +1,6 @@
 ---
-title: '&lt;> seeAlso (C++ комментарии к документации)'
+description: 'Дополнительные сведения о: &lt; seeAlso&gt;'
+title: '&lt;> seeAlso (комментарии к документации по C++)'
 ms.date: 11/04/2016
 f1_keywords:
 - <seealso>
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - seealso C++ XML tag
 - <seealso> C++ XML tag
 ms.assetid: cb33d100-9c50-4485-8d0c-573429eff155
-ms.openlocfilehash: 698db2df462f561acd897d0d0e56b3106a915466
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 70f5f0147ff56dd6327e99f073f80c28a7cce539
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988605"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224729"
 ---
 # <a name="ltseealsogt"></a>&lt;seealso&gt;
 
-Кроме того, с помощью тега \<seealso> можно указать текст, который должен отображаться в разделе "См. также". Тег [\<see>](see-visual-cpp.md) позволяет задать ссылку из текста.
+С помощью тега \<seealso> можно указать текст, который должен отображаться в разделе "См. также". Тег [\<see>](see-visual-cpp.md) позволяет задать ссылку из текста.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -27,18 +28,18 @@ ms.locfileid: "74988605"
 
 #### <a name="parameters"></a>Параметры
 
-*member*<br/>
+*участниками*<br/>
 Ссылка на член или поле, которые доступны для вызова из текущей среды компиляции.  Заключите имя в одинарные или двойные кавычки.
 
 Компилятор проверяет, существует ли элемент кода, и разрешает `member` в имя элемента в выходных XML-данных.  Если компилятору не удается найти `member`, он выдает предупреждение.
 
-Дополнительные сведения о создании ссылки cref на универсальный тип см. в разделе [\<see>](see-visual-cpp.md).
+Сведения о том, как создать ссылку cref на универсальный тип, см. в разделе [\<see>](see-visual-cpp.md) .
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Комментарии
 
-Чтобы обработать и сохранить комментарии документации в файл, при компиляции необходимо использовать параметр [/doc](doc-process-documentation-comments-c-cpp.md).
+Скомпилируйте с [/doc](doc-process-documentation-comments-c-cpp.md) для обработки комментариев документации в файл.
 
-В разделе [\<summary>](summary-visual-cpp.md) можно найти пример использования тега \<seealso>.
+См. [\<summary>](summary-visual-cpp.md) с примером использования \<seealso>.
 
 Компилятор КОМПИЛЯТОРОМ MSVC будет пытаться разрешить ссылки cref в одном проходе через комментарии к документации.  Поэтому если при использовании правил поиска C++ компилятор не найдет символ, ссылка будет помечена как не разрешенная.
 
@@ -68,6 +69,6 @@ public ref struct B {
 };
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Документация XML](xml-documentation-visual-cpp.md)

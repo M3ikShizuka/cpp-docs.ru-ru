@@ -1,5 +1,6 @@
 ---
-title: '&lt;возвращает > (C++ комментарии к документации)'
+description: 'Дополнительные сведения: &lt; возвращает&gt;'
+title: '&lt;Возвращает> (комментарии к документации по C++)'
 ms.date: 11/04/2016
 f1_keywords:
 - returns
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - returns C++ XML tag
 - <returns> C++ XML tag
 ms.assetid: 5e3b0ed9-838d-4953-a93e-76d2d0a19fb9
-ms.openlocfilehash: 1315ec09271c2c97f7bcaf3fb6f9c75f514b5d2d
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: c07439610fa0259a38a4c1993ead7f0f06023e5e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988630"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225054"
 ---
 # <a name="ltreturnsgt"></a>&lt;returns&gt;
 
@@ -30,9 +31,9 @@ ms.locfileid: "74988630"
 *description*<br/>
 Описание возвращаемого значения.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
 
-Чтобы обработать и сохранить комментарии документации в файл, при компиляции необходимо использовать параметр [/doc](doc-process-documentation-comments-c-cpp.md).
+Скомпилируйте с [/doc](doc-process-documentation-comments-c-cpp.md) для обработки комментариев документации в файл.
 
 ## <a name="example"></a>Пример
 
@@ -49,6 +50,6 @@ public:
 };
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Документация XML](xml-documentation-visual-cpp.md)

@@ -1,25 +1,26 @@
 ---
+description: 'Дополнительные сведения: потоковые состояния'
 title: Состояния потока
 ms.date: 11/19/2018
 helpviewer_keywords:
 - streams, states
 ms.assetid: 5f28c968-f132-403f-968c-8417ff315e52
-ms.openlocfilehash: f725fa16e8d669975dbc02c6eefd727085bbeb7c
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: c691c1fd01feb9f78ff0929775505f08cb625ecc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57743351"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97224183"
 ---
 # <a name="stream-states"></a>Состояния потока
 
 Допустимые состояния и переходы состояний для потока показаны на следующем рисунке.
 
-![Схема состояний потока](../c-runtime-library/media/stream.gif "Схема состояний потока")
+![Схема состояния потока](../c-runtime-library/media/stream.gif "Схема состояния потока")
 
 Каждый из кругов обозначает устойчивое состояние. Каждая из линий задает переход, который может возникать в результате вызова функции, работающей в потоке. Пять групп функций могут вызвать переходы состояний.
 
-Функции в первых трех группах объявлены в \<stdio.h>:
+Функции в первых трех группах объявляются в \<stdio.h> :
 
 - Функции чтения байтов — [fgetc](../c-runtime-library/reference/fgetc-fgetwc.md), [fgets](../c-runtime-library/reference/fgets-fgetws.md), [fread](../c-runtime-library/reference/fread.md), [fscanf](../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md), [getc](../c-runtime-library/reference/getc-getwc.md), [getchar](../c-runtime-library/reference/getc-getwc.md), [gets](../c-runtime-library/gets-getws.md), [scanf](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) и [ungetc](../c-runtime-library/reference/ungetc-ungetwc.md)
 
@@ -27,7 +28,7 @@ ms.locfileid: "57743351"
 
 - Функции позиционирования — [fflush](../c-runtime-library/reference/fflush.md), [fseek](../c-runtime-library/reference/fseek-fseeki64.md), [fsetpos](../c-runtime-library/reference/fsetpos.md) и [rewind](../c-runtime-library/reference/rewind.md)
 
-Функции в оставшихся двух группах объявлены в \<wchar.h>:
+Функции в оставшихся двух группах объявляются в \<wchar.h> :
 
 - Функции чтения расширенных символов — [fgetwc](../c-runtime-library/reference/fgetc-fgetwc.md), [fgetws](../c-runtime-library/reference/fgets-fgetws.md), [fwscanf](../c-runtime-library/reference/fscanf-fscanf-l-fwscanf-fwscanf-l.md), [getwc](../c-runtime-library/reference/getc-getwc.md), [getwchar](../c-runtime-library/reference/getc-getwc.md), [ungetwc](../c-runtime-library/reference/ungetc-ungetwc.md) и [wscanf](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md)
 
@@ -41,6 +42,6 @@ ms.locfileid: "57743351"
 
 Наконец, схема состояний показывает, что операция позиционирования никогда не уменьшает число допустимых вызовов функций, которые могут следовать далее.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Файлы и потоки](../c-runtime-library/files-and-streams.md)

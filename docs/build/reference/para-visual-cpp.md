@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: &lt; para&gt;'
 title: '&lt;para>'
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - <para> C++ XML tag
 - para C++ XML tag
 ms.assetid: 35f2a1b3-bc14-4f13-bcb0-c39ccbf74d59
-ms.openlocfilehash: 38c50a1152b8fea9b6d7bd55d89deff6546dbc83
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f01336fc2bf30f7b6bfa3fce3152ac1ba9d0614e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80171181"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97226172"
 ---
 # <a name="ltparagt"></a>&lt;para&gt;
 
@@ -30,14 +31,14 @@ ms.locfileid: "80171181"
 *content*<br/>
 Текст абзаца.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
-Чтобы обработать и сохранить комментарии документации в файл, при компиляции необходимо использовать параметр [/doc](doc-process-documentation-comments-c-cpp.md).
+Скомпилируйте с [/doc](doc-process-documentation-comments-c-cpp.md) для обработки комментариев документации в файл.
 
 ## <a name="example"></a>Пример
 
-В разделе [\<summary>](summary-visual-cpp.md) можно найти пример использования тега \<para>.
+См. [\<summary>](summary-visual-cpp.md) с примером использования \<para>.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Документация XML](xml-documentation-visual-cpp.md)

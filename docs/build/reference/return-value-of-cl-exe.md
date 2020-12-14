@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: возвращаемое значение cl.exe'
 title: Возвращаемое программой cl.exe значение
 ms.date: 09/05/2018
 helpviewer_keywords:
 - cl.exe compiler, return value
 ms.assetid: 7c2d7f33-ee0d-4199-8ef4-75fe2b007670
-ms.openlocfilehash: 06e0993f6a96117ab73f22e73857843dfcc334a1
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2d324488e0d83979824d1b0c9244070c974e65af
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836729"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97225093"
 ---
 # <a name="return-value-of-clexe"></a>Возвращаемое программой cl.exe значение
 
@@ -21,7 +22,7 @@ ms.locfileid: "88836729"
 
 Для выяснения значения ошибки компилятора можно также использовать программу поиска ошибок в Visual Studio. В командной оболочке Visual Studio введите **errlook.exe** , чтобы запустить программу. или в интегрированной среде разработки Visual Studio в строке меню выберите **Сервис**, **Поиск ошибок**. Введите значение ошибки, чтобы найти связанный с ней описательный текст. Дополнительные сведения см. в [справочнике по ERRLOOK](errlook-reference.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Ниже приведен пример BAT-файла, в котором используется значение, возвращаемое программой cl.exe.
 
@@ -51,4 +52,4 @@ cl /W4 t.cpp
 
 ## <a name="see-also"></a>См. также раздел
 
-[Синтаксис командной строки компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)
