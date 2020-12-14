@@ -1,40 +1,41 @@
 ---
+description: Дополнительные сведения о функциях элементов управления "ползунок"
 title: Функции-члены элемента управления "Ползунок"
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CSliderCtrl class [MFC], methods
 - slider controls [MFC], member functions
 ms.assetid: dbde49ee-7306-4d14-a6ce-d09aa198178f
-ms.openlocfilehash: a88dd1a49eb928261393a4473ee7eb53628c607a
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 57108872a779bc4876be89afd5b81008f69a0837
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62307435"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216903"
 ---
 # <a name="slider-control-member-functions"></a>Функции-члены элемента управления "Ползунок"
 
-Приложение может вызвать ползунок функции-члены элемента управления для получения сведений об элементе управления "ползунок" ([CSliderCtrl](../mfc/reference/csliderctrl-class.md)) и изменить его характеристики.
+Приложение может вызывать функции-члены элемента управления Slider для получения сведений о элементе управления Slider ([CSliderCtrl](../mfc/reference/csliderctrl-class.md)) и для изменения его характеристик.
 
-Для получения позиции ползунка (то есть значение, пользователь выбрал), используйте [GetPos](../mfc/reference/csliderctrl-class.md#getpos) функция-член. Чтобы задать положение ползунка, используйте [SetPos](../mfc/reference/csliderctrl-class.md#setpos) функция-член. В любое время можно использовать `VerifyPos` функцию-член для убедитесь, что ползунок находится между минимальным и максимальным значениями.
+Чтобы получить положение ползунка (то есть значение, выбранное пользователем), используйте функцию-член [жетпос](../mfc/reference/csliderctrl-class.md#getpos) . Чтобы задать положение ползунка, используйте функцию члена [сетпос](../mfc/reference/csliderctrl-class.md#setpos) . В любой момент можно использовать `VerifyPos` функцию-член, чтобы убедиться, что ползунок находится между минимальным и максимальным значениями.
 
-Диапазон элемента управления "ползунок" — это набор непрерывных значений, которые могут представлять элемент управления "ползунок". Большинство приложений используют [SetRange](../mfc/reference/csliderctrl-class.md#setrange) функция-член Чтобы задать диапазон элемента управления "ползунок", при ее создании. После создания элемента управления slider с помощью приложения динамически можно изменить диапазон [SetRangeMax](../mfc/reference/csliderctrl-class.md#setrangemax) и [SetRangeMin](../mfc/reference/csliderctrl-class.md#setrangemin) функций-членов. Приложение, в которой можно изменять динамически обычно извлекает параметры окончательного диапазона, когда пользователь закончил работу с элементом управления "ползунок". Чтобы получить эти параметры, используйте [GetRange](../mfc/reference/csliderctrl-class.md#getrange), [GetRangeMax](../mfc/reference/csliderctrl-class.md#getrangemax), и [GetRangeMin](../mfc/reference/csliderctrl-class.md#getrangemin) функций-членов.
+Диапазон элемента управления "ползунок" — это набор смежных значений, которые может представлять элемент управления "ползунок". Большинство приложений используют функцию-член [SetRange](../mfc/reference/csliderctrl-class.md#setrange) для задания диапазона элемента управления "ползунок" при его первоначальном создании. Приложения могут динамически изменять диапазон после создания элемента управления Slider с помощью функций члена [сетранжемакс](../mfc/reference/csliderctrl-class.md#setrangemax) и [сетранжемин](../mfc/reference/csliderctrl-class.md#setrangemin) . Приложение, которое позволяет динамически изменять диапазон, обычно извлекает параметры последнего диапазона, когда пользователь завершает работу с элементом управления "ползунок". Чтобы получить эти [Параметры, используйте](../mfc/reference/csliderctrl-class.md#getrange)функции членов [жетранжемакс](../mfc/reference/csliderctrl-class.md#getrangemax)и [жетранжемин](../mfc/reference/csliderctrl-class.md#getrangemin) .
 
-Приложение может использовать TBS_AUTOTICKS стиль для элемента управления "ползунок" делений, отображаемых автоматически. Если приложению для управления положения или частоту делений, тем не менее, можно использовать ряд функций-членов.
+Приложение может использовать стиль TBS_AUTOTICKS для автоматического отображения делений элемента управления ползунка. Однако если приложению требуется управлять положением или частотой делений, можно использовать ряд функций-членов.
 
-Чтобы установить позицию делений, приложение может использовать [SetTic](../mfc/reference/csliderctrl-class.md#settic) функция-член. [SetTicFreq](../mfc/reference/csliderctrl-class.md#setticfreq) функция-член позволяет приложению задать деления, метки, которые отображаются с регулярными интервалами, в диапазоне элемента управления "ползунок". Например приложение может использовать эту функцию-член для отображения только 10 деления в диапазоне от 1 до 100.
+Чтобы задать расположение деления, приложение может использовать функцию-член [Set](../mfc/reference/csliderctrl-class.md#settic) . Функция члена [сеттикфрек](../mfc/reference/csliderctrl-class.md#setticfreq) позволяет приложению задавать деления, которые отображаются с регулярными интервалами в диапазоне элемента управления Slider. Например, приложение может использовать эту функцию-член для вывода только 10 делений в диапазоне от 1 до 100.
 
-Для получения индекса в диапазон, соответствующий деления, используйте [GetTic](../mfc/reference/csliderctrl-class.md#gettic) функция-член. [GetTicArray](../mfc/reference/csliderctrl-class.md#getticarray) функция-член возвращает массив этих индексов. Чтобы получить позицию делений, в координатах клиентской области окна, используйте [GetTicPos](../mfc/reference/csliderctrl-class.md#getticpos) функция-член. Приложение может получить количество делений, с помощью [GetNumTics](../mfc/reference/csliderctrl-class.md#getnumtics) функция-член.
+Чтобы получить индекс в диапазоне, соответствующем делению, используйте функцию-член [жеттик](../mfc/reference/csliderctrl-class.md#gettic) . Функция члена [жеттикаррай](../mfc/reference/csliderctrl-class.md#getticarray) извлекает массив этих индексов. Для получения положения деления в клиентских координатах используйте функцию-член [жеттикпос](../mfc/reference/csliderctrl-class.md#getticpos) . Приложение может получить количество делений с помощью функции члена [жетнумтикс](../mfc/reference/csliderctrl-class.md#getnumtics) .
 
-[ClearTics](../mfc/reference/csliderctrl-class.md#cleartics) функция-член удаляет все делений для элемента управления "ползунок".
+Функция-член [клеартикс](../mfc/reference/csliderctrl-class.md#cleartics) удаляет все деления элемента управления Slider.
 
-Размер строки элемента управления "ползунок" определяет, насколько далеко перемещается ползунок, когда приложение получает сообщение уведомления TB_LINEDOWN или TB_LINEUP. Аналогичным образом размер страницы определяет ответ TB_PAGEDOWN и TB_PAGEUP сообщений уведомления. Приложения можно получать и задавать значения размера строки и страницы с помощью [GetLineSize](../mfc/reference/csliderctrl-class.md#getlinesize), [SetLineSize](../mfc/reference/csliderctrl-class.md#setlinesize), [GetPageSize](../mfc/reference/csliderctrl-class.md#getpagesize), и [SetPageSize](../mfc/reference/csliderctrl-class.md#setpagesize) функций-членов.
+Размер линии элемента управления ползунок определяет, на какое расстояние ползунок перемещается при получении приложением TB_LINEDOWN или TB_LINEUP уведомления. Аналогичным образом, размер страницы определяет ответ на TB_PAGEDOWN и TB_PAGEUP уведомления. Приложения могут извлекать и задавать значения строк и размеров страниц с помощью функций-членов [жетлинесизе](../mfc/reference/csliderctrl-class.md#getlinesize), [сетлинесизе](../mfc/reference/csliderctrl-class.md#setlinesize), [pageSize](../mfc/reference/csliderctrl-class.md#getpagesize)и [SetPageSize](../mfc/reference/csliderctrl-class.md#setpagesize) .
 
-Приложение может использовать функции-члены для извлечения элемента управления "ползунок". [GetThumbRect](../mfc/reference/csliderctrl-class.md#getthumbrect) функция-член извлекает ограничивающий прямоугольник для ползунка. [GetChannelRect](../mfc/reference/csliderctrl-class.md#getchannelrect) функция-член Возвращает ограничивающий прямоугольник, канал управления "ползунок". (Канал — это область над ползунок также увеличивает и при выборе диапазона, который содержит выделение).
+Приложение может использовать функции-члены для получения измерений элемента управления "ползунок". Функция члена [жетсумбрект](../mfc/reference/csliderctrl-class.md#getthumbrect) извлекает ограничивающий прямоугольник для ползунка. Функция члена [жетчаннелрект](../mfc/reference/csliderctrl-class.md#getchannelrect) извлекает ограничивающий прямоугольник для канала элемента управления Slider. (Канал — это область, в которую перемещается ползунок, который содержит выделение при выборе диапазона.)
 
-Если элемент управления "ползунок" стиль TBS_ENABLESELRANGE, пользователь может выбрать диапазон смежных значений из него. Ряд функций-членов разрешить диапазон выбора корректироваться динамически. [SetSelection](../mfc/reference/csliderctrl-class.md#setselection) функция-член задает начальное и конечное положение выделения. По завершении установки диапазон выбора пользователя приложение может извлечь параметры с помощью [GetSelection](../mfc/reference/csliderctrl-class.md#getselection) функция-член. Чтобы очистить Выбор пользователя, используйте [ClearSel](../mfc/reference/csliderctrl-class.md#clearsel) функция-член.
+Если элемент управления "ползунок" имеет стиль TBS_ENABLESELRANGE, пользователь может выбрать из него диапазон смежных значений. Ряд функций-членов позволяет динамически корректировать диапазон выбора. Функция-член [сетселектион](../mfc/reference/csliderctrl-class.md#setselection) задает начальную и конечную позиции для выделения. Когда пользователь закончит настройку диапазона выбора, приложение может получить параметры с помощью функции-члена- [выбора](../mfc/reference/csliderctrl-class.md#getselection) . Чтобы очистить выбор пользователя, используйте функцию-член [клеарсел](../mfc/reference/csliderctrl-class.md#clearsel) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Использование CSliderCtrl](../mfc/using-csliderctrl.md)<br/>
 [Элементы управления](../mfc/controls-mfc.md)

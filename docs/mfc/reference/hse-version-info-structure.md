@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура HSE_VERSION_INFO'
 title: Структура HSE_VERSION_INFO
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - HSE_VERSION_INFO structure [MFC]
 ms.assetid: 4837312d-68c8-4d05-9afa-1934d7d49b20
-ms.openlocfilehash: 97f34bebae8a486a825d04b23c5a92fbd4aefa42
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: fe03f3c4e00f9af62398993838927ce75410f17b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62322118"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219633"
 ---
-# <a name="hseversioninfo-structure"></a>Структура HSE_VERSION_INFO
+# <a name="hse_version_info-structure"></a>Структура HSE_VERSION_INFO
 
-Эта структура указывает *pVer* параметр в `CHttpServer::GetExtensionVersion` функция-член. Содержит номер версии ISA и текстовое описание ISA.
+На эту структуру указывает параметр *пвер* в `CHttpServer::GetExtensionVersion` функции-члене. Он предоставляет номер версии ISA и текстовое описание ISA.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,16 +29,16 @@ typedef struct _HSE_VERSION_INFO {
 
 #### <a name="parameters"></a>Параметры
 
-*dwExtensionVersion*<br/>
+*двекстенсионверсион*<br/>
 Номер версии ISA.
 
-*lpszExtensionDesc*<br/>
-Текстовое описание ISA. Реализация по умолчанию предоставляет замещающий текст; переопределить `CHttpServer::GetExtensionVersion` для предоставления собственное описание.
+*лпсзекстенсиондеск*<br/>
+Текстовое описание ISA. Реализация по умолчанию предоставляет текст заполнителя; Переопределите `CHttpServer::GetExtensionVersion` , чтобы предоставить собственное описание.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** httpext.h
+**Заголовок:** хттпекст. h
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Структуры, стили, обратные вызовы и схемы сообщений](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)

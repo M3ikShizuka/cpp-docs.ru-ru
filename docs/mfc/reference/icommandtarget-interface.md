@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс ICommandTarget'
 title: Интерфейс ICommandTarget
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,16 +9,16 @@ f1_keywords:
 helpviewer_keywords:
 - ICommandTarget interface [MFC]
 ms.assetid: dd9927f6-3479-4e7c-8ef9-13206cf901f3
-ms.openlocfilehash: be64f4e0367b9ecc1b24fa96f067f4acd45a9978
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: 6deb11ecca94160ea19225fb955826845a4cdefa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81751452"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219581"
 ---
 # <a name="icommandtarget-interface"></a>Интерфейс ICommandTarget
 
-Обеспечивает управление пользователем интерфейсом для получения команд от объекта исходного кода команды.
+Предоставляет пользовательский элемент управления с интерфейсом для получения команд из исходного объекта команды.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -25,29 +26,29 @@ ms.locfileid: "81751452"
 interface class ICommandTarget
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[ICommandTarget::Инициализация](#initialize)|Инициализирует объект цели команды.|
+|[ICommandTarget:: Initialize](#initialize)|Инициализирует целевой объект команды.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Когда вы размещаете управление пользователем в представлении MFC, [CWinFormsView](../../mfc/reference/cwinformsview-class.md) направляет команды и обновляет сообщения пользовательского интерфейса для управления пользователем, чтобы он должен обрабатывать команды MFC (например, элементы меню кадра и кнопки панели инструментов). Реализуя, `ICommandTarget`вы даете пользователю управления ссылку на объект [ICommandSource.](../../mfc/reference/icommandsource-interface.md)
+При размещении пользовательского элемента управления в представлении MFC [квинформсвиев](../../mfc/reference/cwinformsview-class.md) направляет команды и обновляет сообщения пользовательского интерфейса команды на пользовательский элемент управления, чтобы разрешить обработку команд MFC (например, элементы меню "фрейм" и кнопки панели инструментов). Реализуя `ICommandTarget` , вы предоставляете пользовательскому элементу управления ссылку на объект [ICommandSource](../../mfc/reference/icommandsource-interface.md) .
 
-[Узнайте, как: Добавьте командную раминю](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) в управление `ICommandTarget`формами Windows для примера использования.
+См. раздел [как добавить маршрутизацию команд в элемент управления Windows Forms,](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) чтобы получить пример использования `ICommandTarget` .
 
-Для получения дополнительной информации об использовании форм Windows, [см.](../../dotnet/using-a-windows-form-user-control-in-mfc.md)
+Дополнительные сведения об использовании Windows Forms см. в разделе [Использование пользовательского элемента управления формы Windows в MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxwinforms.h (определяется в сборке atlmfc-lib'mfcmifc80.dll)
+**Заголовок:** афксвинформс. h (определяется в atlmfc\lib\mfcmifc80.dll сборки)
 
-## <a name="icommandtargetinitialize"></a><a name="initialize"></a>ICommandTarget::Инициализация
+## <a name="icommandtargetinitialize"></a><a name="initialize"></a> ICommandTarget:: Initialize
 
-Инициализирует объект цели команды.
+Инициализирует целевой объект команды.
 
 ```cpp
 void Initialize(ICommandSource^ cmdSource);
@@ -55,16 +56,16 @@ void Initialize(ICommandSource^ cmdSource);
 
 ### <a name="parameters"></a>Параметры
 
-*cmdИсточник*<br/>
-Ручка к объекту исходного кода команды.
+*кмдсаурце*<br/>
+Маркер для исходного объекта команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Когда вы размещаете управление пользователем в представлении MFC, CWinFormsView маршрутирует команды и обновляет сообщения пользовательского интерфейса для управления пользователем, чтобы позволить ему обрабатывать команды MFC.
+При размещении пользовательского элемента управления в представлении MFC Квинформсвиев направляет команды и обновляет сообщения пользовательского интерфейса команды в пользовательский элемент управления, чтобы разрешить обработку команд MFC.
 
-Этот метод инициализирует объект цели команды и связывает его с указанным объектом источника команды cmdSource. Он должен быть вызван в реализации класса управления пользователем. При инициализации следует зарегистрировать обработчики команд с объектом исходного кода команды, позвонив в ICommandSource::AddCommandHandler в реализации Initialize. Узнайте, как: Добавьте командную раминю в систему управления windows, чтобы пример того, как использовать инициализацию для этого.
+Этот метод инициализирует целевой объект команды и связывает его с указанным исходным объектом команды Кмдсаурце. Он должен вызываться в реализации класса пользовательского элемента управления. При инициализации необходимо зарегистрировать обработчики команд в объекте источника команды, вызвав ICommandSource:: Аддкоммандхандлер в реализации инициализации. См. раздел как добавить маршрутизацию команд в элемент управления Windows Forms, чтобы получить пример использования инструкции Initialize для выполнения этого действия.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Практическое руководство. Добавление маршрутизации команд в элемент управления Windows Forms](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
+[Как добавить маршрутизацию команд в элемент управления Windows Forms](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
 [Интерфейс ICommandSource](../../mfc/reference/icommandsource-interface.md)

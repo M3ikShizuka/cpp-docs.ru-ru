@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: технические примечания по категориям'
 title: Технические примечания по категории
 ms.date: 11/04/2016
 ms.assetid: b9f1c953-233d-4d64-9e8e-ca69b79460b8
-ms.openlocfilehash: 4f12946efdb57293038e59c078a68b2614b05ba7
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 4787b73c9a9039336beba709aa7ddb5aaf761f65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041852"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216344"
 ---
 # <a name="technical-notes-by-category"></a>Технические примечания по категории
 
@@ -70,20 +71,20 @@ ms.locfileid: "90041852"
 
 [TN038: реализация MFC/OLE IUnknown](../mfc/tn038-mfc-ole-iunknown-implementation.md)\
 [TN039: реализация автоматизации MFC/OLE](../mfc/tn039-mfc-ole-automation-implementation.md)\
-[TN040: изменение размера и масштабирование MFC/OLE на месте](../mfc/tn040-mfc-ole-in-place-resizing-and-zooming.md)\
+[TN040: MFC/OLE In-Place изменение размера и масштабирование](../mfc/tn040-mfc-ole-in-place-resizing-and-zooming.md)\
 [TN041: переход с MFC или OLE1 на MFC или OLE2](../mfc/tn041-mfc-ole1-migration-to-mfc-ole-2.md)\
 [TN049: уровень преобразования MFC/OLE MBCS в Юникод (MFCANS32)](../mfc/tn049-mfc-ole-mbcs-to-unicode-translation-layer-mfcans32.md)\
 [TN050: общие диалоговые окна MFC/OLE (MFCUIx32)](../mfc/tn050-mfc-ole-common-dialogs-mfcuix32.md)\
-[TN064: потоковая модель в контейнерах элементов управления OLE](../mfc/tn064-apartment-model-threading-in-activex-controls.md)\
-[TN065: поддержка сдвоенных интерфейсов для серверов OLE-автоматизации](../mfc/tn065-dual-interface-support-for-ole-automation-servers.md)\
+[TN064: Apartment-Model потоков в элементах управления OLE](../mfc/tn064-apartment-model-threading-in-activex-controls.md)\
+[TN065: Dual-Interface поддержка серверов OLE Automation](../mfc/tn065-dual-interface-support-for-ole-automation-servers.md)\
 [TN071: реализация MFC IOleCommandTarget](../mfc/tn071-mfc-iolecommandtarget-implementation.md)
 
 ### <a name="mfc-resources"></a>Ресурсы MFC
 
 [TN020: соглашения об именовании и нумерации ИДЕНТИФИКАТОРов](../mfc/tn020-id-naming-and-numbering-conventions.md)\
 [TN023: стандартные ресурсы MFC](../mfc/tn023-standard-mfc-resources.md)\
-[TN024: сообщения и ресурсы, определяемые библиотекой MFC](../mfc/tn024-mfc-defined-messages-and-resources.md)\
-[TN028: поддержка контекстно-зависимой справки](../mfc/tn028-context-sensitive-help-support.md)\
+[TN024: MFC-Defined сообщения и ресурсы](../mfc/tn024-mfc-defined-messages-and-resources.md)\
+[TN028: поддержка справки Context-Sensitive](../mfc/tn028-context-sensitive-help-support.md)\
 [TN035: использование нескольких файлов ресурсов и файлов заголовков с Visual C++](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)\
 [TN036: использование CFormView с помощью мастера и ClassWizard](../mfc/tn036-using-cformview-with-appwizard-and-classwizard.md)\
 [TN070: имена классов окон MFC](../mfc/tn070-mfc-window-class-names.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье об интерфейсе IView.
 title: Интерфейс IView
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - IView class [MFC]
 - views [MFC], classes
 ms.assetid: 9321f299-486e-4551-bee9-d2c4a7b91548
-ms.openlocfilehash: 9233ee5a8330c4b2c79ebc7b79e0616612c00204
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: e0229d61d12638935d7e4d928626a4bd7f5a830a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743429"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219451"
 ---
 # <a name="iview-interface"></a>Интерфейс IView
 
@@ -29,7 +30,7 @@ ms.locfileid: "90743429"
 interface class IView
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
@@ -39,7 +40,7 @@ interface class IView
 |[IView:: Онинитиалупдате](#oninitialupdate)|Вызывается структурой после первого присоединения представления к документу, но до первоначального отображения представления.|
 |[IView:: OnUpdate](#onupdate)|Вызывается MFC после изменения документа представления; Эта функция позволяет представлению обновлять свое отображение в соответствии с изменениями.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `IView` реализует несколько методов, которые `CWinFormsView` используются для пересылки общих уведомлений о представлении в размещенный управляемый элемент управления. Это [онинитиалупдате](#oninitialupdate), [OnUpdate](#onupdate) и [онактиватевиев](#onactivateview).
 
@@ -61,7 +62,7 @@ void OnActivateView(bool activate);
 
 ## <a name="parameters"></a>Параметры
 
-*активация*<br/>
+*вызова*<br/>
 Указывает, активируется ли представление или деактивируется.
 
 ## <a name="iviewoninitialupdate"></a><a name="oninitialupdate"></a> IView:: Онинитиалупдате
@@ -80,11 +81,11 @@ void OnInitialUpdate();
 void OnUpdate();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция позволяет представлению обновлять свое отображение в соответствии с изменениями.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Класс Квинформсвиев](../../mfc/reference/cwinformsview-class.md)<br/>
 [Класс CView](../../mfc/reference/cview-class.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: действия в типичном клиентском приложении FTP'
 title: Шаги для организации типичного клиентского приложения FTP
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,33 +9,33 @@ helpviewer_keywords:
 - FTP (File Transfer Protocol) [MFC], client applications
 - Internet applications [MFC], FTP client applications
 ms.assetid: 70bed7b5-6040-40d1-bc77-702e63a698f2
-ms.openlocfilehash: d08edf704e748767f3b566252ad328baf40b55ea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: caac613adf3ad886c4b36ae567a3b8c5c928ee10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62307022"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216643"
 ---
 # <a name="steps-in-a-typical-ftp-client-application"></a>Шаги для организации типичного клиентского приложения FTP
 
-Типичное приложение клиента FTP создает [CInternetSession](../mfc/reference/cinternetsession-class.md) и [CFtpConnection](../mfc/reference/cftpconnection-class.md) объекта. Обратите внимание, что эти классы MFC WinInet фактически управляет параметры типа прокси-сервера; Делает IIS.
+Типичное клиентское приложение FTP создает [Цинтернетсессион](../mfc/reference/cinternetsession-class.md) и объект [кфтпконнектион](../mfc/reference/cftpconnection-class.md) . Обратите внимание, что эти классы MFC WinInet фактически не управляют параметрами типа прокси-сервера. Службы IIS.
 
-Ниже приведены шаги, которые необходимо выполнять в обычном клиентском приложении FTP.
+В следующей таблице приведены действия, которые можно выполнить в типичном клиентском приложении FTP.
 
-|Ваша цель|Выполняемые действия|Произведенный эффект|
+|Ваша цель|Действия, которые вы принимаете|Произведенный эффект|
 |---------------|----------------------|-------------|
-|Начните сеанс FTP.|Создание [CInternetSession](../mfc/reference/cinternetsession-class.md) объекта.|Инициализирует WinInet и подключается к серверу.|
-|Подключитесь к серверу FTP.|Используйте [CInternetSession::GetFtpConnection](../mfc/reference/cinternetsession-class.md#getftpconnection).|Возвращает [CFtpConnection](../mfc/reference/cftpconnection-class.md) объекта.|
-|Перейдите в новый каталог FTP на сервере.|Используйте [CFtpConnection::SetCurrentDirectory](../mfc/reference/cftpconnection-class.md#setcurrentdirectory).|Изменение каталога, которые в настоящее время вы подключены к на сервере.|
-|Найдите первый файл в каталоге FTP.|Используйте [CFtpFileFind::FindFile](../mfc/reference/cftpfilefind-class.md#findfile).|Находит первый файл. Возвращает значение FALSE, если файлы не найдены.|
-|Найти следующий файл в каталоге FTP.|Используйте [CFtpFileFind::FindNextFile](../mfc/reference/cftpfilefind-class.md#findnextfile).|Находит следующий файл. Возвращает значение FALSE, если файл не найден.|
-|Откройте файл обнаруженных `FindFile` или `FindNextFile` для чтения или записи.|Используйте [CFtpConnection::OpenFile](../mfc/reference/cftpconnection-class.md#openfile), возвращенные с помощью имени файла [FindFile](../mfc/reference/cftpfilefind-class.md#findfile) или [FindNextFile](../mfc/reference/cftpfilefind-class.md#findnextfile).|Открывает файл для чтения или записи на сервере. Возвращает [CInternetFile](../mfc/reference/cinternetfile-class.md) объекта.|
-|Считывание или запись в файл.|Используйте [CInternetFile::Read](../mfc/reference/cinternetfile-class.md#read) или [CInternetFile::Write](../mfc/reference/cinternetfile-class.md#write).|Считывает или записывает указанное число байтов, с помощью буфера указанные вами.|
-|Обработка исключений.|Используйте [CInternetException](../mfc/reference/cinternetexception-class.md) класса.|Обрабатывает все общие типы исключений Интернет.|
-|Завершите сеанс FTP.|Избавиться от [CInternetSession](../mfc/reference/cinternetsession-class.md) объекта.|Автоматически очищает открытые дескрипторы файлов и подключений.|
+|Начните сеанс FTP.|Создайте объект [Цинтернетсессион](../mfc/reference/cinternetsession-class.md) .|Инициализирует WinInet и подключается к серверу.|
+|Подключается к FTP-серверу.|Используйте [Цинтернетсессион:: жетфтпконнектион](../mfc/reference/cinternetsession-class.md#getftpconnection).|Возвращает объект [кфтпконнектион](../mfc/reference/cftpconnection-class.md) .|
+|Перейдите в новый каталог FTP на сервере.|Используйте [кфтпконнектион:: сеткуррентдиректори](../mfc/reference/cftpconnection-class.md#setcurrentdirectory).|Изменяет каталог, к которому вы подключены в данный момент на сервере.|
+|Найти первый файл в каталоге FTP.|Используйте [кфтпфилефинд:: финдфиле](../mfc/reference/cftpfilefind-class.md#findfile).|Находит первый файл. Возвращает значение FALSE, если файлы не найдены.|
+|Найдите следующий файл в каталоге FTP.|Используйте [кфтпфилефинд:: FindNextFile](../mfc/reference/cftpfilefind-class.md#findnextfile).|Поиск следующего файла. Возвращает значение FALSE, если файл не найден.|
+|Откройте файл, найденный `FindFile` или `FindNextFile` для чтения или записи.|Используйте [кфтпконнектион:: OpenFile](../mfc/reference/cftpconnection-class.md#openfile), используя имя файла, возвращенное [финдфиле](../mfc/reference/cftpfilefind-class.md#findfile) или [FindNextFile](../mfc/reference/cftpfilefind-class.md#findnextfile).|Открывает файл на сервере для чтения или записи. Возвращает объект [Цинтернетфиле](../mfc/reference/cinternetfile-class.md) .|
+|Чтение из файла или запись в него.|Используйте [Цинтернетфиле:: Read](../mfc/reference/cinternetfile-class.md#read) или [Цинтернетфиле:: Write](../mfc/reference/cinternetfile-class.md#write).|Считывает или записывает указанное число байтов, используя предоставленный буфер.|
+|Выполните обработку исключений.|Используйте класс [Цинтернетексцептион](../mfc/reference/cinternetexception-class.md) .|Обрабатывает все распространенные типы исключений Интернета.|
+|Завершите сеанс FTP.|Удаление объекта [Цинтернетсессион](../mfc/reference/cinternetsession-class.md) .|Автоматически очищает открытые дескрипторы файлов и соединения.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Расширения Интернета Win32 (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[Необходимые компоненты для клиентских классов в Интернете](../mfc/prerequisites-for-internet-client-classes.md)<br/>
-[Создание клиентских приложений в Интернете с использованием классов MFC WinInet](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
+[Необходимые условия для клиентских классов Интернета](../mfc/prerequisites-for-internet-client-classes.md)<br/>
+[Написание Интернет клиентского приложения с помощью классов MFC WinInet](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)

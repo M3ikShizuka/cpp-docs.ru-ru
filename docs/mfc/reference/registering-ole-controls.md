@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: регистрация элементов управления OLE'
 title: Регистрация элементов управления OLE
 ms.date: 11/04/2016
 helpviewer_keywords:
 - registering OLE controls
 - OLE controls [MFC], registering
 ms.assetid: 73c45b7f-7dbc-43f5-bd17-dd77c6acec72
-ms.openlocfilehash: 5468f3d4b730cc0b81a6ab814d495b061d292f20
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2556d67e509f7c4217a726ed097bbb69788af7fb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88843577"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218931"
 ---
 # <a name="registering-ole-controls"></a>Регистрация элементов управления OLE
 
@@ -133,7 +134,7 @@ BOOL AFXAPI AfxOleRegisterControlClass(
 
 Ненулевое значение, если класс элемента управления был зарегистрирован; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это позволяет использовать элемент управления в контейнерах, поддерживающих технологию OLE-управления. `AfxOleRegisterControlClass` обновляет реестр, используя имя и расположение элемента управления в системе, а также задает модель потоков, которую элемент управления поддерживает в реестре. Дополнительные сведения см. в [техническом примечании 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), «потоковая модель потоков в элементах управления OLE» и [о процессах и потоках](/windows/win32/ProcThread/about-processes-and-threads) в Windows SDK.
 
@@ -186,7 +187,7 @@ BOOL AFXAPI AfxOleRegisterPropertyPageClass(
 
 Ненулевое значение, если класс элемента управления был зарегистрирован; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это позволяет использовать страницу свойств в контейнерах, поддерживающих технологию OLE-управления. `AfxOleRegisterPropertyPageClass` обновляет реестр, используя имя страницы свойств и ее расположение в системе, а также задает модель потоков, которую элемент управления поддерживает в реестре. Дополнительные сведения см. в [техническом примечании 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), «потоковая модель потоков в элементах управления OLE» и [о процессах и потоках](/windows/win32/ProcThread/about-processes-and-threads) в Windows SDK.
 
@@ -224,7 +225,7 @@ BOOL AfxOleRegisterTypeLib(
 
 Ненулевое значение, если библиотека типов была зарегистрирована; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция обновляет реестр, используя имя библиотеки типов и ее расположение в системе.
 

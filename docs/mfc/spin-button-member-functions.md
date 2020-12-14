@@ -1,32 +1,33 @@
 ---
+description: Дополнительные сведения о функциях элементов "Счетчик"
 title: Функции-члены счетчика
 ms.date: 11/04/2016
 helpviewer_keywords:
 - spin button control, methods
 - CSpinButtonCtrl class [MFC], methods
 ms.assetid: a08a26fd-b803-4cbe-a509-395fa357d057
-ms.openlocfilehash: 5ad6f529762e77e1cf1c00f41eea0add5d196fbb
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6a03ab33d29634ed85d807eb5b51edfdef310d65
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62307267"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97216838"
 ---
 # <a name="spin-button-member-functions"></a>Функции-члены счетчика
 
-Существует несколько функций-членов, доступных для управления "Счетчик" ([CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)). Используйте эти функции, чтобы изменить следующие атрибуты элемента кнопка "Счетчик".
+Существует несколько функций-членов, доступных для элемента управления "Счетчик" ([CSpinButtonCtrl](../mfc/reference/cspinbuttonctrl-class.md)). Используйте эти функции, чтобы изменить следующие атрибуты кнопки "Счетчик".
 
-- **Ускорение** можно настроить частоту, с которой положение изменений, когда пользователь удерживает кнопку со стрелкой. Для работы с ускорением используйте [SetAccel](../mfc/reference/cspinbuttonctrl-class.md#setaccel) и [GetAccel](../mfc/reference/cspinbuttonctrl-class.md#getaccel) функций-членов.
+- **Ускорение** Можно настроить частоту изменения позиции, когда пользователь удерживает кнопку со стрелкой. Для работы с ускорением используйте [функции члена](../mfc/reference/cspinbuttonctrl-class.md#getaccel) [сетакцел](../mfc/reference/cspinbuttonctrl-class.md#setaccel) и.
 
-- **Базовый** базы (10 или 16), используемый для отображения позиции в заголовке в связанном окне можно изменить. Для работы с базой, используйте [GetBase](../mfc/reference/cspinbuttonctrl-class.md#getbase) и [SetBase](../mfc/reference/cspinbuttonctrl-class.md#setbase) функций-членов.
+- **Базовый** Можно изменить базовое значение (10 или 16), используемое для вывода расположения в заголовке окна собеседника. Чтобы работать с базой, используйте функции членов [сетбасе](../mfc/reference/cspinbuttonctrl-class.md#setbase) и [polybase](../mfc/reference/cspinbuttonctrl-class.md#getbase) .
 
-- **Приятель окно** вы можете динамически устанавливать в связанном окне. Чтобы запросить или изменить, какой элемент управления является окном buddy, используйте [GetBuddy](../mfc/reference/cspinbuttonctrl-class.md#getbuddy) и [SetBuddy](../mfc/reference/cspinbuttonctrl-class.md#setbuddy) функций-членов.
+- **Окно собеседника** Можно динамически задать окно собеседника. Для запроса или изменения того, какой элемент управления является окном контакта [,](../mfc/reference/cspinbuttonctrl-class.md#getbuddy) используйте функции-члены [сетбудди](../mfc/reference/cspinbuttonctrl-class.md#setbuddy) и.
 
-- **Позиция** можно запросить или изменить положение. Для работы непосредственно с позиции, используйте [GetPos](../mfc/reference/cspinbuttonctrl-class.md#getpos) и [SetPos](../mfc/reference/cspinbuttonctrl-class.md#setpos) функций-членов. Так как подпись элемента управления buddy могло измениться (например, в случае что контактов является элементом управления), `GetPos` извлекает текущий заголовок и корректирует положение соответствующим образом.
+- **Расположение** Можно запрашивать и изменять расположение. Для работы непосредственно с положением используйте функции члена [жетпос](../mfc/reference/cspinbuttonctrl-class.md#getpos) и [сетпос](../mfc/reference/cspinbuttonctrl-class.md#setpos) . Так как заголовок элемента управления может измениться (например, в случае, если он является элементом управления редактирования), `GetPos` извлекает текущий заголовок и корректирует его соответствующим образом.
 
-- **Диапазон** можно изменить максимальное и минимальное позиции для кнопка "Счетчик". По умолчанию максимальное имеет значение 0, и минимальное значение — 100. Так как по умолчанию максимальное значение меньше, чем минимальное значение по умолчанию, нелогичными действия кнопки со стрелками. Как правило, устанавливается диапазон с помощью [SetRange](../mfc/reference/cspinbuttonctrl-class.md#setrange) функция-член. Чтобы запросить использование диапазона [GetRange](../mfc/reference/cspinbuttonctrl-class.md#getrange).
+- **Диапазон значений** Вы можете изменить максимальное и минимальное положение кнопки счетчика. По умолчанию максимальное значение равно 0, а минимальное значение — 100. Так как максимальное значение по умолчанию меньше минимального значения по умолчанию, действия кнопок со стрелками являются интуитивно понятными. Как правило, диапазон задается с помощью функции члена [SetRange](../mfc/reference/cspinbuttonctrl-class.md#setrange) . Чтобы запросить диапазон, используйте параметр " [дальнее](../mfc/reference/cspinbuttonctrl-class.md#getrange)".
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Использование CSpinButtonCtrl](../mfc/using-cspinbuttonctrl.md)<br/>
 [Элементы управления](../mfc/controls-mfc.md)

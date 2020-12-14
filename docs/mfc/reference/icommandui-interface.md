@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: интерфейс Икоммандуи'
 title: Интерфейс Икоммандуи
 ms.date: 09/07/2019
 f1_keywords:
@@ -14,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - ICommandUI interface [MFC]
 ms.assetid: 134afe8d-dcdf-47ca-857a-a166a6b665dd
-ms.openlocfilehash: 0c185e873f526403e86cb5a80f6e0631f8654284
-ms.sourcegitcommit: 72161bcd21d1ad9cc3f12261aa84a5b026884afa
+ms.openlocfilehash: 26ddd4366994c9e0cecba2b4902a36e1038896c2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90743442"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219542"
 ---
 # <a name="icommandui-interface"></a>Интерфейс Икоммандуи
 
@@ -31,7 +32,7 @@ ms.locfileid: "90743442"
 interface class ICommandUI
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
@@ -45,7 +46,7 @@ interface class ICommandUI
 |[Икоммандуи:: Radio](#radio)|Задает для элемента пользовательского интерфейса для этой команды соответствующее состояние проверки.|
 |[Икоммандуи:: Text](#text)|Задает текст элемента пользовательского интерфейса для этой команды.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот интерфейс предоставляет методы и свойства, управляющие командами пользовательского интерфейса. `ICommandUI` аналогичен [классу поддержка CCmdUI](../../mfc/reference/ccmdui-class.md), за исключением того, что `ICommandUI` используется для приложений MFC, которые взаимодействуют с компонентами .NET.
 
@@ -65,7 +66,7 @@ interface class ICommandUI
 property UICheckState Check;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это свойство задает для элемента пользовательского интерфейса для этой команды соответствующее состояние проверки. Установите флажок проверять следующие значения:
 
@@ -81,7 +82,7 @@ property UICheckState Check;
 void ContinueRouting();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это расширенная функция-член, которая должна использоваться в сочетании с обработчиком ON_COMMAND_EX, возвращающим значение FALSE. Дополнительные сведения см. в статье Технические примечания TN006: схемы сообщений.
 
@@ -93,7 +94,7 @@ void ContinueRouting();
 property bool Enabled;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это свойство включает или отключает элемент пользовательского интерфейса для этой команды. Установите для параметра Включено значение TRUE, чтобы включить элемент, и FALSE, чтобы отключить его.
 
@@ -105,7 +106,7 @@ property bool Enabled;
 property unsigned int ID;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это свойство получает идентификатор (маркер) элемента меню, кнопки панели инструментов или другого объекта пользовательского интерфейса, представленного объектом Икоммандуи.
 
@@ -117,7 +118,7 @@ property unsigned int ID;
 property unsigned int Index;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это свойство получает индекс (маркер) элемента меню, кнопки панели инструментов или другого объекта пользовательского интерфейса, представленного объектом Икоммандуи.
 
@@ -129,7 +130,7 @@ property unsigned int Index;
 property bool Radio;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это свойство задает для элемента пользовательского интерфейса для этой команды соответствующее состояние проверки. Для параметра Radio задайте значение TRUE, чтобы включить элемент. в противном случае — FALSE.
 
@@ -141,7 +142,7 @@ property bool Radio;
 property String^ Text;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это свойство задает текст элемента пользовательского интерфейса для этой команды. Задайте для текста текстовый маркер.
 
@@ -149,6 +150,6 @@ property String^ Text;
 
 **Заголовок:** афксвинформс. h (определяется в atlmfc\lib\mfcmifc80.dll сборки)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Класс поддержка CCmdUI](../../mfc/reference/ccmdui-class.md)

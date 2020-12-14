@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: внутренние классы'
 title: Внутренние классы
 ms.date: 11/04/2016
 f1_keywords:
@@ -307,108 +308,108 @@ helpviewer_keywords:
 - CMenuImages class [MFC]
 - CleanUp method [MFC]
 ms.assetid: 3e2276aa-b02a-4781-97ba-ea074045e9e2
-ms.openlocfilehash: ae35aefefe548990eeb7fbe637839e475036c2bc
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2f32eed3d97df5b1e260d834836bf701968466a5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62322018"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219516"
 ---
 # <a name="internal-classes"></a>Внутренние классы
 
-Следующие классы используются внутренне в MFC. В данном разделе эти внутренние классы описываются с целью предоставления полной информации, но они не предназначены для непосредственного использования в коде.
+Следующие классы используются внутри MFC. В данном разделе эти внутренние классы описываются с целью предоставления полной информации, но они не предназначены для непосредственного использования в коде.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 
 |Класс|Описание|
 |-----------|-----------------|
-|`CCommandManager Class`|`CCommandManager` Класс управляет команд и их связи с изображениями.|
-|`CDialogImpl Class (MFC)`|Содержит подробные сведения о реализации классы на базе диалоговых окон, таких как `CDialogEx`.|
-|`CDocumentAdapter Class`|Реализует IDocument интерфейс, необходимый для поиска и организовать обработчиков.|
-|`CFrameImpl Class`|`CFrameImpl` Класс обрабатывает настройки панели инструментов для следующие классы окна фрейма: [Класс CFrameWndEx](../../mfc/reference/cframewndex-class.md), [класс CMDIFrameWndEx](../../mfc/reference/cmdiframewndex-class.md), и [класс COleIPFrameWndEx](../../mfc/reference/coleipframewndex-class.md).|
-|`CFullScreenImpl Class`|Реализует весь экран функции, общие для приложения SDI и MDI.|
-|`CMDIClientAreaWnd Class`|`CMDIClientAreaWnd` Класс — это вспомогательный класс, который упрощает реализацию вкладок MDI и групп с вкладками MDI.|
-|`CMemDC Class`|Вспомогательный класс для контекста устройства памяти. Контекст устройства памяти поддерживает созданного рисунка.|
+|`CCommandManager Class`|`CCommandManager`Класс управляет командами и их взаимосвязь с образами.|
+|`CDialogImpl Class (MFC)`|Предоставляет сведения о реализации для классов, основанных на диалоговых окнах, таких как `CDialogEx` .|
+|`CDocumentAdapter Class`|Реализует интерфейс IDocument, необходимый для поиска и упорядочения обработчиков.|
+|`CFrameImpl Class`|`CFrameImpl`Класс обрабатывает настройку панели инструментов для следующих классов окон кадров: [Класс CFrameWndEx](../../mfc/reference/cframewndex-class.md), класс [CMDIFrameWndEx](../../mfc/reference/cmdiframewndex-class.md)и [класс колеипфрамевндекс](../../mfc/reference/coleipframewndex-class.md).|
+|`CFullScreenImpl Class`|Реализует функциональные возможности полноэкранного режима для приложений SDI и MDI.|
+|`CMDIClientAreaWnd Class`|`CMDIClientAreaWnd`Класс является вспомогательным классом, который упрощает реализацию ВКЛАДОК MDI и групп с ВКЛАДКАМИ MDI.|
+|`CMemDC Class`|Вспомогательный класс для контекста устройства памяти. Контекст устройства памяти поддерживает рисование на заводе экрана.|
 |`CMenuHash Class`|Считывает состояние `CMFCToolBar` объектов из архива или записывает состояние в архив.|
-|`CMenuImages Class`|Предоставляет функциональные возможности для отображения стандартных образов, например закрыть кнопки, максимизировать кнопки, переключатели и стрелок.|
-|`CMFCCaptionButtonEx Class`|Содержит неклиентской области системы в заголовке.|
-|`CMFCCaptionMenuButton Class`|Представляет кнопку меню, расположенном в области заголовка области задач или панели инструментов.|
-|`CMFCColorPropertySheet Class`|Используемые [класс CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) для предоставления диалоговое окно с вкладками.|
-|`CMFCControlBarImpl Class`|Предоставляет сведения о реализации для контроля классов на основе строки, такие как `CMFCReBar` и `CMFCToolBar`.|
-|`CMFCControlRenderer Class`|Вспомогательный класс, который обрабатывает отрисовку изображений.|
-|`CMFCControlRendererInfo Class`|Вспомогательный класс для передачи параметров в `CMFCControlRenderer` класса.|
-|`CMFCCustomizeButton Class`|Поддерживает команду меню или панели инструментов кнопку, которая запускает диалоговое окно настройки.|
-|`CMFCCustomizeMenuButton Class`|Представляет одну кнопку в меню "настройки".|
-|`CMFCDropDownListBox Class`|Предоставляет функциональные возможности поле с раскрывающимся списком для поля со списком на ленте.|
-|`CMFCMousePropertyPage Class`|Страница свойств, который позволяет пользователю настроить поведение мыши.|
+|`CMenuImages Class`|Предоставляет функциональные возможности для вывода предопределенных изображений, таких как кнопки закрытия, кнопки развертывания, переключатели и стрелки.|
+|`CMFCCaptionButtonEx Class`|Содержит неклиентскую область системных кнопок заголовка.|
+|`CMFCCaptionMenuButton Class`|Представляет кнопку меню, расположенную в области заголовка области задач или панели инструментов.|
+|`CMFCColorPropertySheet Class`|Используется [классом кмфкколордиалог](../../mfc/reference/cmfccolordialog-class.md) для предоставления диалогового окна с вкладками.|
+|`CMFCControlBarImpl Class`|Предоставляет подробные сведения о реализации для классов, основанных на линейчатых диаграммах, таких как `CMFCReBar` и `CMFCToolBar` .|
+|`CMFCControlRenderer Class`|Вспомогательный класс, обрабатывающий отрисовку изображения.|
+|`CMFCControlRendererInfo Class`|Вспомогательный класс для передачи параметров в `CMFCControlRenderer` класс.|
+|`CMFCCustomizeButton Class`|Поддерживает команду меню или кнопку на панели инструментов, которая запускает диалоговое окно настройки.|
+|`CMFCCustomizeMenuButton Class`|Представляет одну кнопку в меню настройки.|
+|`CMFCDropDownListBox Class`|Обеспечивает функциональные возможности раскрывающегося списка для полей со списком ленты.|
+|`CMFCMousePropertyPage Class`|Страница свойств, позволяющая пользователю настраивать поведение мыши.|
 |`CMFCOutlookBarPaneAdapter Class`||
-|`CMFCOutlookBarPaneButton Class`|Реализует кнопку, среда добавит `CMFCOutlookBarPane` объекта.|
-|`CMFCOutlookBarPaneList Class`|Расширяет `CMFCOutlookBarPane` класс, предоставляющий визуальный стиль Outlook.|
-|`CMFCOutlookBarScrollButton Class`|Предоставляет возможность прокрутки `CMFCOutlookBarTabCtrl` класса.|
-|`CMFCOutlookBarToolBar Class`|Реализует панель инструментов с Outlook 2003 визуальный стиль.|
-|`CMFCPropertySheetCategoryInfo Class`|Представляет узел в виде дерева.|
-|`CMFCPropertySheetTabCtrl Class`|Расширяет `CMFCTabCtrl` класса для выполнения функций листа свойств.|
-|`CMFCProperySheetListBox Class`|Расширяет `CListBox` класса для выполнения функций листа свойств.|
+|`CMFCOutlookBarPaneButton Class`|Реализует кнопку, которую платформа добавляет в `CMFCOutlookBarPane` объект.|
+|`CMFCOutlookBarPaneList Class`|Расширяет `CMFCOutlookBarPane` класс для предоставления визуального стиля Outlook.|
+|`CMFCOutlookBarScrollButton Class`|Предоставляет функции прокрутки для `CMFCOutlookBarTabCtrl` класса.|
+|`CMFCOutlookBarToolBar Class`|Реализует панель инструментов с визуальным стилем Outlook 2003.|
+|`CMFCPropertySheetCategoryInfo Class`|Представляет узел в элементе управления "дерево".|
+|`CMFCPropertySheetTabCtrl Class`|Расширяет `CMFCTabCtrl` класс для предоставления функциональных возможностей страницы свойств.|
+|`CMFCProperySheetListBox Class`|Расширяет `CListBox` класс для предоставления функциональных возможностей страницы свойств.|
 |`CMFCReBarState Class`||
-|`CMFCRibbonCaptionButton Class`|Реализует кнопки заголовка системы.|
-|`CMFCRibbonCmdUI Class`|Обновления ленты панели объектов, при необходимости во время простоя приложения.|
+|`CMFCRibbonCaptionButton Class`|Реализует кнопку системного заголовка.|
+|`CMFCRibbonCmdUI Class`|Обновляет объекты ленты, если приложение бездействует.|
 |`CMFCRibbonCommandsListBox Class`||
 |`CMFCRibbonDefaultPanelButton Class`||
-|`CMFCRibbonGalleryIcon Class`|Представляет элемент в `CMFCRibbonGallery` объекта.|
-|`CMFCRibbonKeyboardCustomizeDialog Class`|Реализует диалоговое окно настройки клавиатуры для приложений, которые содержат лент.|
-|`CMFCRibbonKeyTip Class`|Реализует всплывающее окно, отображающее ключевых подсказок для панели ленты.|
+|`CMFCRibbonGalleryIcon Class`|Представляет элемент в `CMFCRibbonGallery` объекте.|
+|`CMFCRibbonKeyboardCustomizeDialog Class`|Реализует диалоговое окно «Настройка клавиатуры» для приложений, содержащих панели ленты.|
+|`CMFCRibbonKeyTip Class`|Реализует всплывающее окно, в котором отображается ключевая подсказка для панели ленты.|
 |`CMFCRibbonPanelMenu Class`||
-|`CMFCRibbonPanelMenuBar Class`|Представляет всплывающее меню в панели ленты.|
-|`CMFCRibbonQuickAccessToolBar Class`|Реализует панель быстрого доступа для элемента ленты.|
-|`CMFCRibbonRichEditCtrl Class`|Реализует элемент управления, расположенный на панели ленты.|
-|`CMFCRibbonTab Class`|Представляет вкладку на ленту.|
+|`CMFCRibbonPanelMenuBar Class`|Представляет всплывающую строку меню на панели ленты.|
+|`CMFCRibbonQuickAccessToolBar Class`|Реализует панель быстрого доступа для элемента Ribbon.|
+|`CMFCRibbonRichEditCtrl Class`|Реализует элемент управления "Правка", расположенный на панели ленты.|
+|`CMFCRibbonTab Class`|Представляет вкладку на панели ленты.|
 |`CMFCShadowRenderer Class`||
-|`CMFCShowAllButton Class`|Представляет кнопку, расположенную в нижней части всплывающего меню, разворачивается, чтобы показать скрытые команды.|
-|`CMFCStatusBarPaneInfo Class`|Описывает содержимое и внешний вид `CMFCStatusBar` области.|
-|`CMFCTabButton Class`|Предоставляет функциональные возможности вкладки кнопку вкладок.|
-|`CMFCTabInfo Class`|Сведения об элементах управления вкладки.|
-|`CMFCTasksPaneFrameWnd Class`|Управляет кнопок пользовательского заголовка области задач.|
-|`CMFCTasksPanePropertyPage Class`|Управляет связью между `CMFCTasksPane` объекта и его имя.|
-|`CMFCTasksPaneToolBar Class`|Реализует панель инструментов навигации, расположенного в верхней части `CMFCTasksPane` объекта.|
-|`CMFCToolBarButtonsListButton Class`|Отображает список образов, которые пользователь может выбрать во время настройки в **внешний вид кнопки** диалоговое окно.|
-|`CMFCToolBarDateTimeCtrlImpl Class`|Реализует источника сброса для `CMFCToolBar` объектов.|
-|`CMFCToolBarDropSource Class`|Реализует источника сброса для `CMFCToolBar` объектов.|
-|`CMFCToolBarDropTarget Class`|Реализует целевого объекта перетаскивания для `CMFCToolBar` объектов.|
-|`CMFCToolBarEditCtrl Class`|Предоставляет функциональные возможности элемента управления edit `CMFCToolBarEditBoxButton` объектов.|
-|`CMFCToolBarMenuButtonsButton Class`|Представляет систему в заголовке, которые находятся в правой части строки меню.|
-|`CMFCToolBarNameDialog Class`|Представляет диалоговое окно, которое позволяет пользователю указать новый заголовок панели инструментов.|
+|`CMFCShowAllButton Class`|Представляет кнопку, расположенную в нижней части всплывающего меню, которое разворачивается для отображения скрытых команд.|
+|`CMFCStatusBarPaneInfo Class`|Описывает содержимое и внешний вид `CMFCStatusBar` панели.|
+|`CMFCTabButton Class`|Предоставляет функциональные возможности кнопок табуляции для элементов управления "Вкладка".|
+|`CMFCTabInfo Class`|Предоставляет сведения об элементах управления Tab для вкладок.|
+|`CMFCTasksPaneFrameWnd Class`|Управляет настраиваемыми кнопками заголовка области задач.|
+|`CMFCTasksPanePropertyPage Class`|Управляет связью между `CMFCTasksPane` объектом и его именем.|
+|`CMFCTasksPaneToolBar Class`|Реализует панель инструментов навигации, расположенную в верхней части `CMFCTasksPane` объекта.|
+|`CMFCToolBarButtonsListButton Class`|Отображает список изображений, которые пользователь может выбрать во время настройки в диалоговом окне « **вид кнопки»** .|
+|`CMFCToolBarDateTimeCtrlImpl Class`|Реализует источник перетаскивания для `CMFCToolBar` объектов.|
+|`CMFCToolBarDropSource Class`|Реализует источник перетаскивания для `CMFCToolBar` объектов.|
+|`CMFCToolBarDropTarget Class`|Реализует цель перетаскивания для `CMFCToolBar` объектов.|
+|`CMFCToolBarEditCtrl Class`|Предоставляет функции управления редактированием `CMFCToolBarEditBoxButton` объектов.|
+|`CMFCToolBarMenuButtonsButton Class`|Представляет кнопки системного заголовка, расположенные справа от строки меню.|
+|`CMFCToolBarNameDialog Class`|Представляет диалоговое окно, позволяющее пользователю указать новую надпись на панели инструментов.|
 |`CMFCToolBarsCommandsListBox Class`|Представляет список, содержащий список команд панели инструментов.|
-|`CMFCToolBarsCommandsPropertyPage Class`|Реализует команды настройки на странице свойств.|
+|`CMFCToolBarsCommandsPropertyPage Class`|Реализует настройку команд на странице свойств.|
 |`CMFCToolBarsKeyboardPropertyPage Class`||
-|`CMFCToolBarsListCheckBox Class`|Отображает список панелей инструментов на **панелей инструментов** странице **Настройка** диалоговое окно.|
-|`CMFCToolBarsListPropertyPage Class`|Представляет страницу свойств, в которой отображается список панелей инструментов в **Настройка** диалоговое окно.|
-|`CMFCToolBarsMenuPropertyPage Class`|Представляет страницу свойств, который содержит параметры настройки меню в **Настройка** диалоговое окно.|
-|`CMFCToolBarsOptionsPropertyPage Class`|Представляет **параметры** странице в **Настройка** диалоговое окно.|
-|`CMFCToolBarSpinEditBoxButton Class`|Представляет кнопка "Счетчик", расположенной на поле ввода.|
-|`CMFCToolBarsToolsPropertyPage Class`|Представляет страницу свойств, который позволяет пользователям настраивать средства пользователя.|
-|`CMFCToolBarSystemMenuButton Class`|Реализует кнопки заголовка системы, среда добавит строку главного меню, когда пользователь разворачивает дочернего окна MDI.|
-|`CMFCVisualManagerBitmapCache Class`|Управляет `CMFCControlRenderer` объектов для повышения производительности операций в растровые изображения.|
-|`CMultiDocTemplateEx Class`|Расширяет `CMultiDocTemplate` класс для предоставления доступа к идентификатор ресурса меню.|
+|`CMFCToolBarsListCheckBox Class`|Отображает список панелей инструментов на странице **панели инструментов** диалогового окна **Настройка** .|
+|`CMFCToolBarsListPropertyPage Class`|Представляет страницу свойств, отображающую список панелей инструментов в диалоговом окне " **Настройка** ".|
+|`CMFCToolBarsMenuPropertyPage Class`|Представляет страницу свойств, содержащую параметры настройки меню в диалоговом окне " **Настройка** ".|
+|`CMFCToolBarsOptionsPropertyPage Class`|Представляет страницу « **Параметры** » в диалоговом окне « **Настройка** ».|
+|`CMFCToolBarSpinEditBoxButton Class`|Представляет кнопку счетчика, расположенную в поле ввода.|
+|`CMFCToolBarsToolsPropertyPage Class`|Представляет страницу свойств, позволяющую пользователю настраивать пользовательские средства.|
+|`CMFCToolBarSystemMenuButton Class`|Реализует кнопку системного заголовка, которую платформа добавляет в главную строку меню, когда пользователь развертывает дочернее окно MDI.|
+|`CMFCVisualManagerBitmapCache Class`|Управляет `CMFCControlRenderer` объектами для повышения производительности операций с растровыми изображениями.|
+|`CMultiDocTemplateEx Class`|Расширяет `CMultiDocTemplate` класс, чтобы предоставить доступ к идентификатору ресурса меню.|
 |`COleCntrFrameWndEx Class`||
-|`COleDocIPFrameWndEx Class`|Обеспечивает поддержку OLE.|
-|`COleServerDocEx Class`|Предоставляет операции на серверные документы OLE.|
+|`COleDocIPFrameWndEx Class`|Предоставляет поддержку OLE.|
+|`COleServerDocEx Class`|Предоставляет операции с документами сервера OLE.|
 |`CPaneContainerGC Class`||
-|`CPngImage Class`|Предоставляет доступ к графических ресурсов, использующих формат файла PNG.|
+|`CPngImage Class`|Предоставляет доступ к ресурсам изображений, использующим формат PNG.|
 |`CPreviewViewEx Class`||
-|`CRecentPaneContainerInfo Class`|Содержит предыдущее состояние закрепляемой области.|
-|`CRibbonCategoryScroll Class`|Реализует кнопку прокрутки, открываемом не все элементы в соответствии в области панели ленты.|
-|`CSmartDockingGroupGuide Class`|Представляет центральный элемент группы смарт закрепления.|
-|`CSmartDockingGroupGuidesManager Class`|Управляет группа руководства по смарт закрепления.|
-|`CSmartDockingGroupGuidesWnd Class`|Реализует многоуровневую непрямоугольных окно, инфраструктура использует для отображения этой центральной группы смарт закрепления руководства.|
-|`CSmartDockingHighlighterWnd Class`|Реализует полупрозрачным окно, которое охватывает область выполняемое объектом закрепляемую панель, который закрепляется.|
-|`CSmartDockingManager Class`|Предоставляет функциональные возможности на смарт закрепления для `CDockingManager` объектов.|
-|`CSmartDockingStandaloneGuide Class`|Реализует руководство смарт закрепления.|
-|`CSmartDockingStandaloneGuideWnd Class`|Реализует многоуровневую непрямоугольных окно, инфраструктура использует для отображения смарт закрепления руководства.|
-|`CTagManager Class`|`CTagManager` Класс предназначен для считывания значений, которые хранятся в XML-формате с тегами.|
+|`CRecentPaneContainerInfo Class`|Содержит предыдущее состояние закрепляемой панели.|
+|`CRibbonCategoryScroll Class`|Реализует кнопку прокрутки, которая появляется, когда не все элементы помещаются в области ленты.|
+|`CSmartDockingGroupGuide Class`|Представляет центральный элемент для группы смарт-закрепления.|
+|`CSmartDockingGroupGuidesManager Class`|Управляет направляющими групп смарт-закрепления.|
+|`CSmartDockingGroupGuidesWnd Class`|Реализует многослойное, Непрямоугольное окно, используемое платформой для вывода Центральной группы направляющих для смарт-закрепления.|
+|`CSmartDockingHighlighterWnd Class`|Реализует полупрозрачное окно, охватывающее область, используемую закрепленным объектом закрепляемой области.|
+|`CSmartDockingManager Class`|Обеспечивает функции интеллектуальной стыковки с `CDockingManager` объектами.|
+|`CSmartDockingStandaloneGuide Class`|Реализует направляющую для смарт-стыковки.|
+|`CSmartDockingStandaloneGuideWnd Class`|Реализует многослойное, Непрямоугольное окно, используемое платформой для показа направляющих для смарт-закрепления.|
+|`CTagManager Class`|`CTagManager`Класс предназначен для чтения значений, которые хранятся в формате с тегами, похожей на XML.|
 |`CVSListBoxBase Class`|Предоставляет базовую функциональность для `CVSListBox` класса.|
-|`CVSListBoxEditCtrl Class`|Расширяет возможности управления полем стандартного списка, отображения маленькую кнопку, которая открывает диалоговое окно.|
-|`CVSToolsListBox Class`|Расширяет стандартные окно списка, предоставляя дополнительные кнопки для добавления, удаления и перемещать элементы в поле со списком.|
+|`CVSListBoxEditCtrl Class`|Расширяет стандартный элемент управления "поле списка", отображая маленькую кнопку, которая открывает диалоговое окно.|
+|`CVSToolsListBox Class`|Расширяет стандартный элемент управления "список", предоставляя дополнительные кнопки для добавления, удаления и перемещения элементов в поле со списком.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Приложения MFC для рабочего стола](../../mfc/mfc-desktop-applications.md)
+[Классические приложения MFC](../../mfc/mfc-desktop-applications.md)

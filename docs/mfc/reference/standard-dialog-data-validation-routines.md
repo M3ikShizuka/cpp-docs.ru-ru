@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: стандартные подпрограммы проверки данных в диалоговом окне'
 title: Стандартные программы проверки данных диалоговых окон
 ms.date: 11/04/2016
 helpviewer_keywords:
 - standard dialog, data validation routines
 ms.assetid: 44dbc222-a897-4949-925e-7660e8964ccd
-ms.openlocfilehash: 19d1858d67802a7c464a9be783e4c1fb96fe3fae
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d2b39381610c51f661e98256c39b580df256ebaa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844487"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97218853"
 ---
 # <a name="standard-dialog-data-validation-routines"></a>Стандартные программы проверки данных диалоговых окон
 
@@ -60,7 +61,7 @@ void AFXAPI DDV_MaxChars(
 *типы nChar*<br/>
 Максимально допустимое число символов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -94,7 +95,7 @@ void AFXAPI DDV_MinMaxByte(
 *максвал*<br/>
 Разрешено максимальное значение (типа BYTE).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -134,7 +135,7 @@ void AFXAPI DDV_MinMaxDateTime(
 *рефмаксранже*<br/>
 Максимальное допустимое значение даты и времени.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -168,7 +169,7 @@ void AFXAPI DDV_MinMaxDouble(
 *максвал*<br/>
 Разрешено максимальное значение (типа **`double`** ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -202,7 +203,7 @@ void AFXAPI DDV_MinMaxDWord(
 *максвал*<br/>
 Разрешено максимальное значение (типа DWORD).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -236,7 +237,7 @@ void AFXAPI DDV_MinMaxFloat(
 *максвал*<br/>
 Разрешено максимальное значение (типа **`float`** ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -270,7 +271,7 @@ void AFXAPI DDV_MinMaxInt(
 *максвал*<br/>
 Разрешено максимальное значение (типа **`int`** ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -304,7 +305,7 @@ void AFXAPI DDV_MinMaxLong(
 *максвал*<br/>
 Разрешено максимальное значение (типа **`long`** ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -338,7 +339,7 @@ void AFXAPI DDV_MinMaxLongLong(
 *максвал*<br/>
 Разрешено максимальное значение (типа ЛОНГЛОНГ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -378,7 +379,7 @@ void AFXAPI DDV_MinMaxMonth(
 *рефмаксранже*<br/>
 Максимальное допустимое значение даты и времени.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -412,7 +413,7 @@ void AFXAPI DDV_MinMaxShort(
 *максвал*<br/>
 Разрешено максимальное значение (типа **`short`** ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -446,7 +447,7 @@ void AFXAPI DDV_MinMaxSlider(
 *максвал*<br/>
 Максимально допустимое значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md). Дополнительные сведения об элементах управления "ползунок" см. [в разделе using CSliderCtrl](../../mfc/using-csliderctrl.md).
 
@@ -480,7 +481,7 @@ void AFXAPI DDV_MinMaxUInt(
 *максвал*<br/>
 Разрешено максимальное значение (типа UINT).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -514,7 +515,7 @@ void AFXAPI DDV_MinMaxULongLong(
 *максвал*<br/>
 Разрешено максимальное значение (типа УЛОНГЛОНГ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -550,7 +551,7 @@ void AFXAPI DDV_MinMaxULongLong(
 *максвал*<br/>
 Разрешено максимальное значение (типа **`unsigned`** ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../dialog-data-exchange-and-validation.md).
 
