@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/GR (включение сведений о типе Run-Time)
 title: /GR (Предоставление информации о типах во время выполнения)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - /Gr compiler option [C++]
 - enable run-time type information compiler option [C++]
 ms.assetid: d1f9f850-dcec-49fd-96ef-e72d01148906
-ms.openlocfilehash: 974a2b38c793b21abc9f17f5b7ca5c9f5e3305f5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 61b1a595999e5e00bf6b28c75be2de03467cc4ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215235"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200171"
 ---
 # <a name="gr-enable-run-time-type-information"></a>/GR (Предоставление информации о типах во время выполнения)
 
@@ -44,7 +45,7 @@ ms.locfileid: "87215235"
 
 1. Перейдите на страницу свойств **язык** .
 
-1. Измените свойство **включить сведения о типе времени выполнения** .
+1. Измените свойство **включить сведения о типе Run-Time** .
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Установка данного параметра компилятора программным способом
 
@@ -53,4 +54,4 @@ ms.locfileid: "87215235"
 ## <a name="see-also"></a>См. также раздел
 
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)

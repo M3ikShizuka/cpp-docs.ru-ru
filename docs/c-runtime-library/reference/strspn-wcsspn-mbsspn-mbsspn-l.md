@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: strspn, wcsspn, _mbsspn, _mbsspn_l'
 title: strspn, wcsspn, _mbsspn, _mbsspn_l
 ms.date: 4/2/2020
 api_name:
@@ -47,12 +48,12 @@ helpviewer_keywords:
 - mbsspn_l function
 - _tcsspn function
 ms.assetid: d077284a-809f-4068-959e-c6d6262677eb
-ms.openlocfilehash: b63ca5f7d22b6522ca3e3c58ea5486d612b671ae
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 366e6f306c119ae7bc712fb3a97db6fbe210b5a2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911106"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198847"
 ---
 # <a name="strspn-wcsspn-_mbsspn-_mbsspn_l"></a>strspn, wcsspn, _mbsspn, _mbsspn_l
 
@@ -98,11 +99,11 @@ size_t _mbsspn_l(
 
 Возвращает целочисленное значение, задающее длину подстроки в *str* , которая состоит исключительно из символов в *стрчарсет*. Если *str* начинается с символа, не *стрчарсет*, функция возвращает 0.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **strspn** возвращает индекс первого символа в *str* , не принадлежащего набору символов в *стрчарсет*. Поиск не включает завершающие нуль-символы.
 
-**wcsspn** и **_mbsspn** — это версии **strspn**для расширенных символов и многобайтовых символов. Аргументы **wcsspn** — это строки расширенных символов; **_mbsspn** являются строками многобайтовых символов. **_mbsspn** проверяет свои параметры. Если *str* или *Стрчарсет* имеет **значение NULL**, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md) . Если выполнение может быть продолжено **_mbspn** , _mbspn **устанавливает** значение **еинвал** и возвращает 0. **strspn** и **wcsspn** не проверяют свои параметры. В остальном эти три функции ведут себя идентично.
+**wcsspn** и **_mbsspn** — это версии **strspn** для расширенных символов и многобайтовых символов. Аргументы **wcsspn** — это строки расширенных символов; **_mbsspn** являются строками многобайтовых символов. **_mbsspn** проверяет свои параметры. Если *str* или *Стрчарсет* имеет **значение NULL**, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md) . Если выполнение может быть продолжено  , _mbspn **устанавливает** значение **еинвал** и возвращает 0. **strspn** и **wcsspn** не проверяют свои параметры. В остальном эти три функции ведут себя идентично.
 
 Выходное значение зависит от настройки категории **LC_CTYPE** языкового стандарта; дополнительные сведения см. в разделе [setlocale](setlocale-wsetlocale.md). Версии этих функций без суффикса **_l** используют текущий языковой стандарт для данного поведения, зависящего от языкового стандарта; версии с суффиксом **_l** идентичны, за исключением того, что они используют переданный параметр языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
@@ -155,8 +156,8 @@ The portion of 'cabbage' containing only a, b, or c is 5 bytes long
 ## <a name="see-also"></a>См. также раздел
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l](strspnp-wcsspnp-mbsspnp-mbsspnp-l.md)<br/>
 [strcspn, wcscspn, _mbscspn, _mbscspn_l](strcspn-wcscspn-mbscspn-mbscspn-l.md)<br/>
 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)<br/>

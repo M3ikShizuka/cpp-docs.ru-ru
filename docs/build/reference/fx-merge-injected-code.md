@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/FX (слияние подставляемого кода)
 title: /Fx (объединение подставляемого кода)
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - merging injected code
 - /Fx compiler option [C++]
 ms.assetid: 14f0e301-3bab-45a3-bbdf-e7ce66f20560
-ms.openlocfilehash: b928ca63171f0f6d28859d049a1ed5008b908686
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 0c0aeea4c3a72f37848615d80c5ee6a5a807d838
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91500104"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200355"
 ---
 # <a name="fx-merge-injected-code"></a>/Fx (объединение подставляемого кода)
 
@@ -78,4 +79,4 @@ ms.locfileid: "91500104"
 
 [Параметры OUTPUT-File (/F)](output-file-f-options.md)<br/>
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)

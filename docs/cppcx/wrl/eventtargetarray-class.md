@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: EventTargetArray Class'
 title: Класс EventTargetArray
 ms.date: 10/03/2018
 ms.topic: reference
@@ -19,16 +20,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::EventTargetArray::Length method
 - Microsoft::WRL::Details::EventTargetArray::~EventTargetArray, destructor
 ms.assetid: e3cadb7c-2160-4cbb-a2f8-c28733d1e96d
-ms.openlocfilehash: 9ea8800aa22a6b5cae0b3342cf337786fb53fc76
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: ac3199d2374a47e94705f8f51672bfedd0b7bf20
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371505"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198587"
 ---
 # <a name="eventtargetarray-class"></a>Класс EventTargetArray
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -44,25 +45,25 @@ class EventTargetArray :
 
 Представляет массив обработчиков событий.
 
-Обработчики событий, связанные с объектом [EventSource,](eventsource-class.md) хранятся в защищенном `EventTargetArray` элементе данных.
+Обработчики событий, связанные с объектом [EventSource](eventsource-class.md) , хранятся в защищенном `EventTargetArray` члене данных.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-Имя                                                           | Описание
+name                                                           | Описание
 -------------------------------------------------------------- | -----------------------------------------------------------
-[EventTargetArray:EventTargetArray](#eventtargetarray)        | Инициализирует новый экземпляр класса `EventTargetArray`.
-[EventTargetArray:::EventTargetArray](#tilde-eventtargetarray) | Деприниализирует `EventTargetArray` текущий класс.
+[EventTargetArray:: EventTargetArray](#eventtargetarray)        | Инициализирует новый экземпляр класса `EventTargetArray`.
+[EventTargetArray:: ~ EventTargetArray](#tilde-eventtargetarray) | Выполняет деинициализацию текущего `EventTargetArray` класса.
 
 ### <a name="public-methods"></a>Открытые методы
 
-Имя                                  | Описание
+name                                  | Описание
 ------------------------------------- | ---------------------------------------------------------------------------------------
-[EventTargetArray::AddTail](#addtail) | Приспособите указанный обработчик событий к концу внутреннего массива обработчиков событий.
-[EventTargetArray:Начало](#begin)     | Получает адрес первого элемента во внутреннем массиве обработчиков событий.
-[EventTargetArray::Конец](#end)         | Получает адрес последнего элемента во внутреннем массиве обработчиков событий.
-[EventTargetArray::Длина](#length)   | Получает текущее количество элементов во внутреннем массиве обработчиков событий.
+[EventTargetArray:: AddTail](#addtail) | Добавляет указанный обработчик событий в конец внутреннего массива обработчиков событий.
+[EventTargetArray:: Begin](#begin)     | Возвращает адрес первого элемента во внутреннем массиве обработчиков событий.
+[EventTargetArray:: end](#end)         | Возвращает адрес последнего элемента во внутреннем массиве обработчиков событий.
+[EventTargetArray:: Length](#length)   | Возвращает текущее количество элементов во внутреннем массиве обработчиков событий.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -70,25 +71,25 @@ class EventTargetArray :
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** event.h
+**Заголовок:** Event. h
 
-**Пространство имен:** Microsoft:WRL::Details
+**Пространство имен:** Microsoft:: WRL::D состояния
 
-## <a name="eventtargetarrayeventtargetarray"></a><a name="tilde-eventtargetarray"></a>EventTargetArray:::EventTargetArray
+## <a name="eventtargetarrayeventtargetarray"></a><a name="tilde-eventtargetarray"></a> EventTargetArray:: ~ EventTargetArray
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ```cpp
 ~EventTargetArray();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Деприниализирует `EventTargetArray` текущий класс.
+Выполняет деинициализацию текущего `EventTargetArray` класса.
 
-## <a name="eventtargetarrayaddtail"></a><a name="addtail"></a>EventTargetArray::AddTail
+## <a name="eventtargetarrayaddtail"></a><a name="addtail"></a> EventTargetArray:: AddTail
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ```cpp
 void AddTail(
@@ -98,18 +99,18 @@ void AddTail(
 
 ### <a name="parameters"></a>Параметры
 
-*Элемент*<br/>
-Указатель на обработчик событий для приложения.
+*дерев*<br/>
+Указатель на обработчик событий для добавления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Приспособите указанный обработчик событий к концу внутреннего массива обработчиков событий.
+Добавляет указанный обработчик событий в конец внутреннего массива обработчиков событий.
 
-`AddTail()`предназначен для внутреннего использования только `EventSource` классом.
+`AddTail()` предназначен для внутреннего использования только `EventSource` классом.
 
-## <a name="eventtargetarraybegin"></a><a name="begin"></a>EventTargetArray:Начало
+## <a name="eventtargetarraybegin"></a><a name="begin"></a> EventTargetArray:: Begin
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ```cpp
 ComPtr<IUnknown>* Begin();
@@ -119,13 +120,13 @@ ComPtr<IUnknown>* Begin();
 
 Адрес первого элемента во внутреннем массиве обработчиков событий.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Получает адрес первого элемента во внутреннем массиве обработчиков событий.
+Возвращает адрес первого элемента во внутреннем массиве обработчиков событий.
 
-## <a name="eventtargetarrayend"></a><a name="end"></a>EventTargetArray::Конец
+## <a name="eventtargetarrayend"></a><a name="end"></a> EventTargetArray:: end
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ```cpp
 ComPtr<IUnknown>* End();
@@ -135,13 +136,13 @@ ComPtr<IUnknown>* End();
 
 Адрес последнего элемента во внутреннем массиве обработчиков событий.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Получает адрес последнего элемента во внутреннем массиве обработчиков событий.
+Возвращает адрес последнего элемента во внутреннем массиве обработчиков событий.
 
-## <a name="eventtargetarrayeventtargetarray"></a><a name="eventtargetarray"></a>EventTargetArray:EventTargetArray
+## <a name="eventtargetarrayeventtargetarray"></a><a name="eventtargetarray"></a> EventTargetArray:: EventTargetArray
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ```cpp
 EventTargetArray(
@@ -152,30 +153,30 @@ EventTargetArray(
 
 ### <a name="parameters"></a>Параметры
 
-*Hr*<br/>
-После этого *конструктора,* параметр hr указывает, удалось ли выделение массива или не удалось. В следующем списке показаны возможные значения для *hr*.
+*ч*<br/>
+После выполнения этой операции конструктора параметр *HR* указывает, успешно ли выполнено выделение массива. В следующем списке приведены возможные значения для *HR*.
 
 - S_OK<br/>
   Операция успешно выполнена.
 
 - E_OUTOFMEMORY<br/>
-  Память не может быть выделена для массива.
+  Не удалось выделить память для массива.
 
 - S_FALSE<br/>
-  *Параметры элементов* меньше или равны нулю.
+  *Элементы* параметров меньше или равны нулю.
 
-*Элементы*<br/>
-Количество элементов массива для выделения.
+*items*<br/>
+Число выделяемых элементов массива.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Инициализирует новый экземпляр класса `EventTargetArray`.
 
-`EventTargetArray`используется для сохранения массива обработчиков событий в объекте. `EventSource`
+`EventTargetArray` используется для сохранения массива обработчиков событий в `EventSource` объекте.
 
-## <a name="eventtargetarraylength"></a><a name="length"></a>EventTargetArray::Длина
+## <a name="eventtargetarraylength"></a><a name="length"></a> EventTargetArray:: Length
 
-Поддерживает инфраструктуру WRL и не предназначен для использования непосредственно из кода.
+Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
 ```cpp
 size_t Length();
@@ -183,8 +184,8 @@ size_t Length();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Текущее количество элементов во внутреннем массиве обработчиков событий.
+Текущее число элементов во внутреннем массиве обработчиков событий.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Получает текущее количество элементов во внутреннем массиве обработчиков событий.
+Возвращает текущее количество элементов во внутреннем массиве обработчиков событий.

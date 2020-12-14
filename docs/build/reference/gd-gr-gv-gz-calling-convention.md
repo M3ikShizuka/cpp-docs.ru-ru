@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/GD,/GR,/GV,/gz (соглашение о вызовах)
 title: /Gd, /Gr, /Gv, /Gz (соглашение о вызовах)
 ms.date: 09/05/2018
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - Gv compiler option [C++]
 - /Gr compiler option [C++]
 ms.assetid: fd3110cb-2d77-49f2-99cf-a03f9ead00a3
-ms.openlocfilehash: e1617b7c158e9705a6211310fa7873f667a62ba5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: dd343466efd0b3b0d93fc783cd7e4305c2295ef3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234371"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200329"
 ---
 # <a name="gd-gr-gv-gz-calling-convention"></a>/Gd, /Gr, /Gv, /Gz (соглашение о вызовах)
 
@@ -100,7 +101,7 @@ ms.locfileid: "87234371"
 
 1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
-1. Выберите страницу дополнительных свойств **C/C++**  >  **Advanced** .
+1. Выберите страницу дополнительных свойств **C/C++**  >   .
 
 1. Измените свойство **Соглашение о вызовах**.
 
@@ -108,7 +109,7 @@ ms.locfileid: "87234371"
 
 - См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.CallingConvention%2A>.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 - [Параметры компилятора MSVC](compiler-options.md)
-- [Синтаксис командной строки компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)
+- [Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)

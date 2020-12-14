@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о единицах трансляции и компоновке
 title: Единицы и компоновка преобразования (C++)
 ms.date: 12/11/2019
 ms.assetid: a6493ba0-24e2-4c89-956e-9da1dea660cb
-ms.openlocfilehash: 5a166efc7ae926f6b028c35007b0972d0a652d6d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e03edb374a61e461b7a6b30fb88981e7d0cb15f0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87227196"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198574"
 ---
 # <a name="translation-units-and-linkage"></a>Единицы трансляции и компоновка
 
@@ -61,6 +62,6 @@ extern const int value = 42;
 
 Дополнительные сведения см. в разделе [extern](extern-cpp.md) .
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Основные понятия](../cpp/basic-concepts-cpp.md)

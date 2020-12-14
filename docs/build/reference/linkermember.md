@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/ЛИНКЕРМЕМБЕР
 title: /LINKERMEMBER
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - LINKERMEMBER dumpbin option
 - -LINKERMEMBER dumpbin option
 ms.assetid: c96868c1-d70e-4651-ae36-c55b58b16406
-ms.openlocfilehash: a0456fd9ed1729b4a6cfa200a54ba211a64e94ea
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 76c842bcc2299b4245847e7d4e9a64656e88d2d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62216589"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199393"
 ---
 # <a name="linkermember"></a>/LINKERMEMBER
 
@@ -21,12 +22,12 @@ ms.locfileid: "62216589"
 /LINKERMEMBER[:{1|2}]
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Этот параметр отображает открытые символы, определенные в библиотеке. Аргумент 1 для отображения символов в порядке объекта, а также их смещения. Аргумент 2 позволяет вывести смещения и порядковые номера объектов, а затем список символов в алфавитном порядке, вместе с индексом для каждого объекта. Чтобы получить обоих выходов, укажите/LINKERMEMBER без числовой аргумент.
+Этот параметр отображает открытые символы, определенные в библиотеке. Укажите аргумент 1, чтобы отображать символы в порядке объектов, а также их смещения. Укажите аргумент 2, чтобы отображать смещения и номера индексов объектов, а затем перечислите символы в алфавитном порядке вместе с индексом объекта для каждого из них. Чтобы получить оба выхода, укажите/ЛИНКЕРМЕМБЕР без аргумента number.
 
-Только [/Headers](headers.md) параметр (программа DUMPBIN) доступен для использования в файлах, созданных с помощью [/GL](gl-whole-program-optimization.md) параметр компилятора.
+С файлами, созданными с использованием параметра компилятора [/GL](gl-whole-program-optimization.md), можно использовать только параметр DUMPBIN [/HEADERS](headers.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Параметры DUMPBIN](dumpbin-options.md)

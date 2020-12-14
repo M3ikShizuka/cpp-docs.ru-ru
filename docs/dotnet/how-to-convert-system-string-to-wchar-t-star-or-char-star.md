@@ -1,5 +1,6 @@
 ---
-title: Практическое руководство. Преобразование типа System::String к wchar_t* или char*
+description: 'Дополнительные сведения см. в статье как преобразовать System.: String в wchar_t * или char *'
+title: Практическое руководство. Преобразование типа System::String в wchar_t* или char*
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,16 +10,16 @@ helpviewer_keywords:
 - wchart type, converting System::String
 - char data type, converting System::String to
 ms.assetid: 385da01b-5649-4543-8076-e3e251243ff0
-ms.openlocfilehash: 9fcea7d54f5b3dcfe5fa75092463465711b1a505
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 973d9c71e536865188dc03d88821dacce4b20e52
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "79545045"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198366"
 ---
-# <a name="how-to-convert-systemstring-to-wchar_t-or-char"></a>Практическое руководство. Преобразование типа System::String к wchar_t* или char*
+# <a name="how-to-convert-systemstring-to-wchar_t-or-char"></a>Практическое руководство. Преобразование типа System::String в wchar_t* или char*
 
-`PtrToStringChars` в Вкклр. h можно использовать для преобразования <xref:System.String> в машинный `wchar_t *` или `char *`.  Это всегда возвращает указатель на расширенную строку в Юникоде, так как строки CLR являются внутренним символом Юникода. Затем можно преобразовать из расширенного формата, как показано в следующем примере.
+`PtrToStringChars`В вкклр. h можно использовать для преобразования <xref:System.String> в машинный код `wchar_t *` или `char *` .  Это всегда возвращает указатель на расширенную строку в Юникоде, так как строки CLR являются внутренним символом Юникода. Затем можно преобразовать из расширенного формата, как показано в следующем примере.
 
 ## <a name="example"></a>Пример
 
@@ -64,6 +65,6 @@ Hello
 Hello
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Использование взаимодействия языка C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[Использование взаимодействия C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

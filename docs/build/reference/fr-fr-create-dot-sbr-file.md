@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения:/FR,/fr (Create. SBR-файл)
 title: /FR, /Fr (создать SBR-файл)
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - FR compiler option [C++]
 - symbolic browser information
 ms.assetid: 3fd8f88b-3924-4feb-9393-287036a28896
-ms.openlocfilehash: 58f55811f5d2bb81bc77da38a87c35bae91ce6cb
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 9142e7afedb55a7b0f4ed0cdb56e4288524d7afc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81320523"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200420"
 ---
 # <a name="fr-fr-create-sbr-file"></a>/FR, /Fr (создать SBR-файл)
 
@@ -59,11 +60,11 @@ ms.locfileid: "81320523"
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Установка данного параметра компилятора программным способом
 
-- Ознакомьтесь с разделами <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformation%2A> и <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformationFile%2A>.
+- См. разделы <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformation%2A> и <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformationFile%2A>.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Параметры выходного файла (/F)](output-file-f-options.md)<br/>
+[Параметры OUTPUT-File (/F)](output-file-f-options.md)<br/>
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[MSVC Компилятор Командно-линейный синтаксис](compiler-command-line-syntax.md)<br/>
-[Указание имени Пути](specifying-the-pathname.md)
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)<br/>
+[Указание пути](specifying-the-pathname.md)

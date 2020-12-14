@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о параметре/FD (имя файла базы данных программы)
 title: /Fd (имя файла базы данных программы)
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,16 +15,16 @@ helpviewer_keywords:
 - .pdb files, creating
 - FD compiler option [C++]
 ms.assetid: 3977a9ed-f0ac-45df-bf06-01cedd2ba85a
-ms.openlocfilehash: c686de7dc9c9c20c404240db558d2ff66078ceb7
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 3990cdd6c560dfdeaef7078a29e965831c2a9504
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62292735"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200667"
 ---
 # <a name="fd-program-database-file-name"></a>/Fd (имя файла базы данных программы)
 
-Указывает имя файла для файла базы данных (PDB) программы, созданные [/Z7, / Zi, /ZI (формат отладочной информации)](z7-zi-zi-debug-information-format.md).
+Указывает имя файла для файла базы данных программы (PDB), созданного [/Z7,/Zi,/Zi (формат отладочной информации)](z7-zi-zi-debug-information-format.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -31,25 +32,25 @@ ms.locfileid: "62292735"
 /Fdpathname
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Без **/Fd**, по умолчанию используется имя PDB-файла VC*x*0.pdb, где *x* – основная используемая версия Visual C++.
+Без **/FD** имя PDB-файла по умолчанию имеет значение VC *x* 0. pdb, где *x* — основной номер версии Visual C++ используется.
 
-Если указать путь, который не включает имя файла (путь заканчивается обратной косой черты), компилятор создает PDB-файл с именем VC*x*0. PDB-файл в указанном каталоге.
+Если указать путь, который не включает имя файла (путь заканчивается обратной косой чертой), компилятор создает PDB-файл с именем VC *x* 0. pdb в указанном каталоге.
 
-При указании имени файла, который не поддерживает расширения, компилятор использует PDB-файл в качестве расширения.
+Если указать имя файла, не включающее расширение, компилятор использует расширение PDB в качестве расширения.
 
-Этот параметр также имена файла состояния (IDB), используемый для минимального перепостроения и добавочной компиляции.
+Этот параметр также присваивает имя файлу состояния (IDB), используемому для минимальной перестройки и добавочной компиляции.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Установка данного параметра компилятора в среде разработки Visual Studio
 
-1. Откройте диалоговое окно **Страницы свойств** проекта. Дополнительные сведения см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
 1. Откройте папку **C/C++** .
 
 1. Откройте страницу свойств **Выходные файлы** .
 
-1. Изменить **имя файла базы данных программы** свойство.
+1. Измените значение свойства **имя файла базы данных программы** .
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Установка данного параметра компилятора программным способом
 
@@ -57,15 +58,15 @@ ms.locfileid: "62292735"
 
 ## <a name="example"></a>Пример
 
-Эта команда создает PDB-файл с именем PROG.pdb и IDB-файла с именем PROG.idb:
+Эта командная строка создает PDB-файл с именем PROG. pdb и IDB-файлом с именем PROG. IDB:
 
 ```
 CL /DDEBUG /Zi /FdPROG.PDB PROG.CPP
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Параметры выходного файла (/F)](output-file-f-options.md)<br/>
+[Параметры OUTPUT-File (/F)](output-file-f-options.md)<br/>
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора MSVC](compiler-command-line-syntax.md)<br/>
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)<br/>
 [Указание пути](specifying-the-pathname.md)

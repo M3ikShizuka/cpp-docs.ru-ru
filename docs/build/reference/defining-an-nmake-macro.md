@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: определение макроса NMAKE'
 title: Определение макроса NMAKE
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - defining NMAKE macros
 - NMAKE macros, defining
 ms.assetid: 45aae451-9d33-4a3d-8799-2e0cae17070d
-ms.openlocfilehash: b163c3dcbfb079a532bd1babca4ee881407bafc1
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 133e05cac2a236a38f6b2d1e719f1b66fd73760d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62272234"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201642"
 ---
 # <a name="defining-an-nmake-macro"></a>Определение макроса NMAKE
 
@@ -22,22 +23,22 @@ ms.locfileid: "62272234"
 macroname=string
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-*Имя макроса* представляет собой сочетание букв, цифр и символов подчеркивания (_), не более 1024 символов, и происходит конфиденциальные. *Имя макроса* может содержать вызванный макрос. Если *имя макроса* состоит только из вызванного макроса, вызываемый макрос не может быть пустым или равным NULL.
+*ИмяМакроса* — это сочетание букв, цифр и знаков подчеркивания (_) до 1 024 символов и чувствительное к регистру. *ИмяМакроса* может содержать вызванный макрос. Если *имяМакроса* полностью состоит из вызванного макроса, то вызываемый макрос не может иметь значение null или быть неопределенным.
 
-`string` Может быть любой последовательностью из нуля или более символов. Пустая строка содержит нуль символов или только пробелы или символы табуляции. `string` Может содержать вызов макроса.
+`string`Может быть любой последовательностью из нуля или более символов. Пустая строка содержит ноль символов или только пробелы или символы табуляции. `string`Может содержать вызов макроса.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Дополнительные сведения
 
 [Специальные символы в макросах](special-characters-in-macros.md)
 
-[Пустой и неопределенный макрос](null-and-undefined-macros.md)
+[Пустые и неопределенные макросы](null-and-undefined-macros.md)
 
 [Где следует определять макросы](where-to-define-macros.md)
 
 [Приоритет в макроопределениях](precedence-in-macro-definitions.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Макросы и программа NMAKE](macros-and-nmake.md)

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/H (ограничение длины внешних имен)
 title: /H (ограничение длины внешних имен)
 ms.date: 09/05/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - external names
 - -H compiler option [C++]
 ms.assetid: de701dd3-ed04-4c88-8195-960d2520ec2e
-ms.openlocfilehash: 9a8976700cfb0f333c2715c573aa2d239e2a8e3a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5df4c4765cc4917e6914eab0b4818c34fceea853
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218992"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200082"
 ---
 # <a name="h-restrict-length-of-external-names"></a>/H (ограничение длины внешних имен)
 
@@ -23,14 +24,14 @@ ms.locfileid: "87218992"
 
 ## <a name="syntax"></a>Синтаксис
 
-> **/H**<em>Число</em> /h
+> <em>Число</em> /h
 
 ## <a name="arguments"></a>Аргументы
 
 *number*<br/>
 Указывает максимально допустимую длину внешних имен в программе.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию длина внешних (общедоступных) имен составляет 2 047 символов. Это справедливо для программ C и C++. Использование **/h** может уменьшить максимально допустимую длину идентификаторов, а не увеличить его. Пробел между **/h** и *Number* является необязательным.
 
@@ -87,4 +88,4 @@ void func2(void) {}
 ## <a name="see-also"></a>См. также раздел
 
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)

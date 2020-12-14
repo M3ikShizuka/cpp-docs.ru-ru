@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l'
 title: _strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l
 ms.date: 4/2/2020
 api_name:
@@ -48,12 +49,12 @@ helpviewer_keywords:
 - _tcsspnp function
 - tcsspnp function
 ms.assetid: 1ce18100-2edd-4c3b-af8b-53f204d80233
-ms.openlocfilehash: 16c56f95fc89c1bb7b34c82cdf19c406b61c5a7e
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 7b043e96d99644e4534dd2de3202575e2e7cf833
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911044"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198730"
 ---
 # <a name="_strspnp-_wcsspnp-_mbsspnp-_mbsspnp_l"></a>_strspnp, _wcsspnp, _mbsspnp, _mbsspnp_l
 
@@ -97,9 +98,9 @@ unsigned char *_mbsspnp_l(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-**_strspnp**, **_wcsspnp**и **_mbsspnp** возвращают указатель на первый символ в *str* , который не принадлежит набору символов в *CharSet*. Каждая из этих функций возвращает **значение NULL** , если *str* состоит исключительно из символов из *CharSet*. Для каждой из этих подпрограмм отсутствуют зарезервированные возвращаемые значения для указания ошибки.
+**_strspnp**, **_wcsspnp** и **_mbsspnp** возвращают указатель на первый символ в *str* , который не принадлежит набору символов в *CharSet*. Каждая из этих функций возвращает **значение NULL** , если *str* состоит исключительно из символов из *CharSet*. Для каждой из этих подпрограмм отсутствуют зарезервированные возвращаемые значения для указания ошибки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_mbsspnp** возвращает указатель на многобайтовый символ, который является первым символом в *str* , не принадлежащим набору символов в *CharSet*. **_mbsspnp** распознает последовательности многобайтовых символов в соответствии с используемой в данный момент [многобайтовой кодовой страницей](../../c-runtime-library/code-pages.md) . Поиск не включает завершающие нуль-символы.
 
@@ -113,7 +114,7 @@ unsigned char *_mbsspnp_l(
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsspnp**|**_strspnp**|**_mbsspnp**|**_wcsspnp**|
 
-**_strspnp** и **_wcsspnp** — однобайтовые и версии **_mbsspnp**с расширенными символами. поведение **_strspnp** и **_wcsspnp** идентично **_mbsspnp** в противном случае. они предоставляются только для этого сопоставления и не должны использоваться по какой бы то ни было причине. Дополнительные сведения см. в разделах [Использование универсальных текстовых сопоставлений](../../c-runtime-library/using-generic-text-mappings.md) и [Универсальные текстовые сопоставления](../../c-runtime-library/generic-text-mappings.md).
+**_strspnp** и **_wcsspnp** — однобайтовые и версии **_mbsspnp** с расширенными символами. поведение **_strspnp** и **_wcsspnp** идентично **_mbsspnp** в противном случае. они предоставляются только для этого сопоставления и не должны использоваться по какой бы то ни было причине. Дополнительные сведения см. в разделах [Использование универсальных текстовых сопоставлений](../../c-runtime-library/using-generic-text-mappings.md) и [Универсальные текстовые сопоставления](../../c-runtime-library/generic-text-mappings.md).
 
 **_mbsspnp_l** является идентичным, за исключением того, что в нем используется переданный параметр языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
@@ -152,8 +153,8 @@ abbage
 ## <a name="see-also"></a>См. также
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [strspn, wcsspn, _mbsspn, _mbsspn_l](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
 [strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md)<br/>
 [strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>

@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения о странице свойств "Общие" (файл)
 title: Страница свойств "Общие" (файл)
 ms.date: 08/30/2019
 f1_keywords:
 - VC.Project.VCFileConfiguration.ExcludedFromBuild
 - VC.Project.VCFileConfiguration.Tool
 ms.assetid: 26e3711e-9e7d-4e8d-bc4c-2474538efdad
-ms.openlocfilehash: 7626e161e6f59de32d426b558827c423a0bb050d
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 03b91a028bce5423bcf80fab24153a36eb7435e8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041384"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200342"
 ---
 # <a name="general-property-page-file"></a>Страница свойств "Общие" (файл)
 
@@ -41,7 +42,7 @@ ms.locfileid: "90041384"
     |APPX|Определение приложения XAML|[Упаковщик приложений](/windows/win32/appxpkg/make-appx-package--makeappx-exe-)|
     |. HLSL,. cso|Компилятор HLSL|[fxc.exe](/windows/win32/direct3dtools/fxc)|
     |.h|Заголовок C/C++|[Препроцессор C/C++](../../preprocessor/c-cpp-preprocessor-reference.md)|
-    |Н/Д|Не участвует в сборке|Н/Д|
+    |н/д|Не участвует в сборке|н/д|
     |. XML,. XSLT,. xsl|Xml|[Редактор XML](/visualstudio/xml-tools/xml-editor)|
     |. resw,. resjson|Ресурс PRI (приложения UWP)|[MakePri.exe](/windows/uwp/app-resources/compile-resources-manually-with-makepri)|
     ||Носитель (UWP)|[Упаковщик приложений](/windows/win32/appxpkg/make-appx-package--makeappx-exe-)|
@@ -50,14 +51,14 @@ ms.locfileid: "90041384"
     |.rc|Ресурс|[Компилятор ресурсов Windows (rc.exe)](/windows/win32/menurc/resource-compiler)|
     |. appxmanifest|Манифест пакета приложения|[Упаковщик приложений](/windows/win32/appxpkg/make-appx-package--makeappx-exe-)|
     |.obj|Объект|[Компоновщик C/C++ (link.exe)](cl-invokes-the-linker.md)|
-    |.ttf|Шрифт|Н/Д|
-    |.txt|текст|Н/Д|
+    |.ttf|Шрифт|н/д|
+    |.txt|Текст|Н/Д|
     |Н/Д|Настраиваемое средство сборки|Определяемые пользователем маршруты|
-    |Н/Д|Копировать файл|Н/Д|
+    |н/д|Копировать файл|н/д|
     |. packagelayout|Макет пакета приложения|[Упаковщик приложений](/windows/win32/appxpkg/make-appx-package--makeappx-exe-)|
     |.resx|Управляемый компилятором ресурс|[Resgen.exe (генератор файлов ресурсов)](/dotnet/framework/tools/resgen-exe-resource-file-generator)|
     |. natvis|Файл визуализации отладчика C++|[Платформа Natvis](/visualstudio/debugger/create-custom-views-of-native-objects)|
-    |JPG, BMP, ICO и т. д.|Образ —|Компилятор ресурсов на основе типа приложения.|
+    |JPG, BMP, ICO и т. д.|Образ|Компилятор ресурсов на основе типа приложения.|
     |.cpp|Компилятор C/C++|cl.exe|
 
    Для программного доступа к этому свойству см. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCFileConfiguration.Tool%2A>.

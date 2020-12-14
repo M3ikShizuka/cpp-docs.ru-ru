@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции RaiseException
 title: RaiseException - функция
 ms.date: 11/04/2016
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - RaiseException function
 ms.assetid: f9c74f6d-112a-4d2e-900f-622f795d5dbf
-ms.openlocfilehash: 3270057bf5b1b27a98bef1ab236291eab15d27ab
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: b5353757ff04ab12c0fc61da6b2e98b2df835ef0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213633"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198444"
 ---
 # <a name="raiseexception-function"></a>RaiseException - функция
 
@@ -28,17 +29,17 @@ inline void __declspec(noreturn)   RaiseException(
 
 ### <a name="parameters"></a>Параметры
 
-*кадров*<br/>
+*ч*<br/>
 Код исключения вызванного исключения; то есть значение HRESULT невыполненной операции.
 
 *двексцептионфлагс*<br/>
 Флаг, указывающий на непрерывное исключение (значение флага равно нулю) или непостоянное исключение (значение флага не равно нулю). По умолчанию исключение недоступно.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Вызывает исключение в вызывающем потоке.
 
-Дополнительные сведения см. в описании функции Windows `RaiseException`.
+Дополнительные сведения см. в описании `RaiseException` функции Windows.
 
 ## <a name="requirements"></a>Требования
 
@@ -48,4 +49,4 @@ inline void __declspec(noreturn)   RaiseException(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Microsoft::WRL::Details](microsoft-wrl-details-namespace.md)
+[Пространство имен Microsoft:: WRL::D состояния](microsoft-wrl-details-namespace.md)

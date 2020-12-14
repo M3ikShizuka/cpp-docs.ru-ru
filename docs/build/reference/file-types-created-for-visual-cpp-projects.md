@@ -1,5 +1,6 @@
 ---
-title: Типы файлов, создаваемых для C++ проектов Visual Studio
+description: Дополнительные сведения о типах файлов, созданных для проектов Visual Studio C++
+title: Типы файлов, создаваемых для проектов Visual Studio C++
 ms.date: 04/08/2019
 helpviewer_keywords:
 - header files [C++], Visual Studio projects
@@ -14,14 +15,14 @@ helpviewer_keywords:
 - .def files
 - licensing ActiveX controls
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
-ms.openlocfilehash: 27e15f8dec693c6b7e70f3e03f274dcbc4f04677
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: bd1dad365ea2635549322c886f00f4e08ff47942
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169023"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97200589"
 ---
-# <a name="file-types-created-for-visual-studio-c-projects"></a>Типы файлов, создаваемых для C++ проектов Visual Studio
+# <a name="file-types-created-for-visual-studio-c-projects"></a>Типы файлов, созданные для проектов Visual Studio C++
 
 Многие типы файлов связаны с проектами Visual Studio для классических настольных приложений. То, какие файлы фактически войдут в ваш проект, зависит от типа проекта и параметров, выбранных при работе с мастером.
 
@@ -33,7 +34,7 @@ ms.locfileid: "80169023"
 
 - [Программа MFC или управление файлами исходного кода и заголовков](mfc-program-or-control-source-and-header-files.md)
 
-- [Файлы предварительно скомпилированных заголовков](../creating-precompiled-header-files.md)
+- [Файлы предкомпилированных заголовков](../creating-precompiled-header-files.md)
 
 - [Файлы ресурсов](resource-files-cpp.md)
 
@@ -51,39 +52,39 @@ ms.locfileid: "80169023"
 |--------------------|----------|--------------|
 |ASMX|Источник|Файл развертывания.|
 |.asp|Источник|ASP-файл.|
-|ATP|Проект|Файл шаблона приложения проекта.|
+|ATP|Project|Файл шаблона приложения проекта.|
 |BMP, DIB, GIF, JPG, JPE, PNG|Ресурс|Файлы изображений общего характера.|
 |BSC|Компиляция|Файл кода браузера.|
 |. cpp,. c|Источник|Основные файлы исходного кода приложения.|
 |CUR|Ресурс|Растровый графический файл курсора.|
-|DBP|Проект|Файл проекта базы данных.|
+|DBP|Project|Файл проекта базы данных.|
 |DISCO|Источник|Файл документа динамического обнаружения. Обеспечивает обнаружение веб-служб XML.|
-|EXE, DLL|Проект|Исполняемые файлы или файлы библиотек динамической компоновки.|
+|EXE, DLL|Project|Исполняемые файлы или файлы библиотек динамической компоновки.|
 |.h|Источник|Файл заголовка.|
 |HTM, HTML, XSP, ASP, HTC, HTA, XML|Ресурс|Общие веб-файлы.|
-|HXC|Проект|Файл справки проекта.|
+|HXC|Project|Файл справки проекта.|
 |ICO|Ресурс|Растровый графический файл значка.|
 |IDB|Компиляция|Файл состояния, содержащий сведения о зависимостях между исходными файлами и определениями классов. Он может использоваться компилятором во время добавочной компиляции. Для задания имени IDB-файла используйте параметр компилятора [/Fd](fd-program-database-file-name.md) .|
 |.idl|Компиляция|Файл языка определения интерфейса. Дополнительные сведения см. в разделе [Файл определения интерфейса (IDL-файл)](/windows/win32/Rpc/the-interface-definition-language-idl-file) для пакета Windows SDK.|
-|ILK|Компоновка|Файл инкрементной компоновки. Дополнительные сведения см. в разделе [/incremental](incremental-link-incrementally.md).|
-|MAP|Компоновка|Текстовый файл, содержащий информацию для компоновщика. Для задания имени MAP-файла используйте параметр компилятора [/Fm](fm-name-mapfile.md) . Дополнительные сведения см. в разделе [/Map](map-generate-mapfile.md).|
+|ILK|Связывание|Файл инкрементной компоновки. Дополнительные сведения см. в разделе [/incremental](incremental-link-incrementally.md).|
+|MAP|Связывание|Текстовый файл, содержащий информацию для компоновщика. Для задания имени MAP-файла используйте параметр компилятора [/Fm](fm-name-mapfile.md) . Дополнительные сведения см. в разделе [/Map](map-generate-mapfile.md).|
 |MFCRIBBON-MS|Ресурс|Файл ресурсов, содержащий XML-код, определяющий кнопки, элементы управления и атрибуты MFC на ленте. Для получения дополнительной информации см. [Ribbon Designer](../../mfc/ribbon-designer-mfc.md).|
 |OBJ, O||Объектные файлы — скомпилированные, но не скомпонованные.|
 |PCH|Отладка|Файл предкомпилированных заголовков.|
 |RC, RC2|Ресурс|[Файлы скриптов ресурсов](../../windows/working-with-resource-files.md) для генерации ресурсов.|
 |SBR|Компиляция|Промежуточный файл обозревателя исходного кода. Входной файл для [BSCMAKE](bscmake-options.md).|
-|.sln|Решение|Файл [решения](/visualstudio/ide/solutions-and-projects-in-visual-studio) .|
+|.SLN|Решение|Файл [решения](/visualstudio/ide/solutions-and-projects-in-visual-studio).|
 |SUO|Решение|Файл параметров решения.|
 |.txt|Ресурс|Текстовый файл, обычно README-файл.|
-|VAP|Проект|Файл проекта Visual Studio Analyzer.|
+|VAP|Project|Файл проекта Visual Studio Analyzer.|
 |VBG|Решение|Файл совместимой группы проектов.|
-|VBP, VIP, VBPROJ|Проект|Файл проекта Visual Basic.|
-|VCXITEMS|Проект|Проект общих элементов для совместного использования файлов кода в нескольких проектах C++. Дополнительные сведения см. в разделе [файлы проекта и решения](project-and-solution-files.md).|
-|VCXPROJ|Проект|Файл проекта Visual Studio. Дополнительные сведения см. в разделе [файлы проекта и решения](project-and-solution-files.md).|
-|VCXPROJ.FILTERS|Проект|Используется при использовании обозреватель решений для добавления файла в проект. Файл фильтров определяет, где в древовидном представлении обозреватель решений добавить файл на основе расширения имени файла.|
-|VDPROJ|Проект|Файл развертывания проекта Visual Studio.|
-|VMX|Проект|Файл проекта макроса.|
-|VUP|Проект|Вспомогательный файл проекта.|
+|VBP, VIP, VBPROJ|Project|Файл проекта Visual Basic.|
+|VCXITEMS|Project|Проект общих элементов для совместного использования файлов кода в нескольких проектах C++. Дополнительные сведения см. в разделе [файлы проекта и решения](project-and-solution-files.md).|
+|VCXPROJ|Project|Файл проекта Visual Studio. Дополнительные сведения см. в разделе [файлы проекта и решения](project-and-solution-files.md).|
+|VCXPROJ.FILTERS|Project|Используется при использовании обозреватель решений для добавления файла в проект. Файл фильтров определяет, где в древовидном представлении обозреватель решений добавить файл на основе расширения имени файла.|
+|VDPROJ|Project|Файл развертывания проекта Visual Studio.|
+|VMX;|Project|Файл проекта макроса.|
+|VUP|Project|Вспомогательный файл проекта.|
 
 Сведения о других файлах, связанных с Visual Studio, см. в разделе [Типы и расширения файлов в Visual Studio .NET](/visualstudio/ide/reference/project-and-solution-file-types).
 
@@ -94,4 +95,4 @@ ms.locfileid: "80169023"
 ## <a name="see-also"></a>См. также раздел
 
 [Создание проектов Visual Studio C++ и управление ими](../creating-and-managing-visual-cpp-projects.md)<br>
-[Типы проектов C++ Visual Studio](visual-cpp-project-types.md)<br>
+[Типы проектов Visual Studio C++](visual-cpp-project-types.md)<br>

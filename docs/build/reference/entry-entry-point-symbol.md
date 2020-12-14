@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о команде:/ENTRY (символ точки входа)
 title: /ENTRY (символ точки входа)
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - /ENTRY linker option
 - ENTRY linker option
 ms.assetid: 26c62ba2-4f52-4882-a7bd-7046a0abf445
-ms.openlocfilehash: 80833980b64e8fdd2a2f57b2dc40eb21c784b6f9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e4966ef44922a3a90d5abb5a7ac23460d4155f92
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232707"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201018"
 ---
 # <a name="entry-entry-point-symbol"></a>/ENTRY (символ точки входа)
 
@@ -28,7 +29,7 @@ ms.locfileid: "87232707"
 *function*<br/>
 Функция, указывающая определяемый пользователем начальный адрес для EXE-файла или библиотеки DLL.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Параметр/ENTRY задает функцию точки входа в качестве начального адреса для EXE-файла или библиотеки DLL.
 
@@ -39,8 +40,8 @@ ms.locfileid: "87232707"
 |Имя функции|По умолчанию для|
 |-------------------|-----------------|
 |**mainCRTStartup** (или **вмаинкртстартуп**)|Приложение, использующее/SUBSYSTEM: CONSOLE; вызовы `main` (или `wmain` )|
-|**Винмаинкртстартуп** (или **ввинмаинкртстартуп**)|Приложение, использующее/SUBSYSTEM:**Windows**; вызовы `WinMain` (или `wWinMain` ), которые должны быть определены для использования**`__stdcall`**|
-|**_DllMainCRTStartup**|DLL; вызывает `DllMain` , если он существует, который должен быть определен для использования**`__stdcall`**|
+|**Винмаинкртстартуп** (или **ввинмаинкртстартуп**)|Приложение, использующее/SUBSYSTEM:**Windows**; вызовы `WinMain` (или `wWinMain` ), которые должны быть определены для использования **`__stdcall`**|
+|**_DllMainCRTStartup**|DLL; вызывает `DllMain` , если он существует, который должен быть определен для использования **`__stdcall`**|
 
 Если параметр [/DLL](dll-build-a-dll.md) или [/SUBSYSTEM](subsystem-specify-subsystem.md) не указан, компоновщик выбирает подсистему и точку входа в зависимости от того, `main` `WinMain` определено ли значение.
 
@@ -64,7 +65,7 @@ ms.locfileid: "87232707"
 
 - См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EntryPointSymbol%2A>.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по компоновщику MSVC](linking.md)<br/>
 [Параметры компоновщика MSVC](linker-options.md)

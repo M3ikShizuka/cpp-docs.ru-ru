@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Неустранимая ошибка NMAKE U1035'
 title: Неустранимая ошибка NMAKE U1035
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - U1035
 ms.assetid: 68f0cc59-007e-4109-ac30-7ac4ac447e6d
-ms.openlocfilehash: 3eda424574dfa48901cf4dc6aea3b28beb739dc0
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: e41b65cbec43a0b19e06767c555df9cfede9b69c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80193723"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97197755"
 ---
 # <a name="nmake-fatal-error-u1035"></a>Неустранимая ошибка NMAKE U1035
 
 Синтаксическая ошибка: требуется разделитель ":" или "="
 
-Ожидался либо двоеточие ( **:** ), либо знак равенства ( **=** ).
+Ожидался либо двоеточие (**:**), либо знак равенства ( **=** ).
 
 ### <a name="to-fix-by-checking-the-following-possible-causes"></a>Чтобы устранить ошибку, проверьте указанные ниже возможные причины ее возникновения.
 

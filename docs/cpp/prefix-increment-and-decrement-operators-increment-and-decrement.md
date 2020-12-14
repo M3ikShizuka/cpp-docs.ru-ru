@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения см. в статье префиксные операторы инкремента и декремента: + + и--'
 title: Префиксные операторы увеличения и уменьшения ++ и --
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - decrement operators [C++], syntax
 - decrement operators [C++]
 ms.assetid: 45ea7fc7-f279-4be9-a216-1d9a0ef9eb7b
-ms.openlocfilehash: 0b84360f41c665707a03ad453909c054ac741405
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e484dde59a2bb58e7c408ad28242fc0ab4290051
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231160"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198646"
 ---
 # <a name="prefix-increment-and-decrement-operators--and---"></a>Префиксные операторы увеличения и уменьшения ++ и --
 

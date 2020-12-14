@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CBulkRowset Class'
 title: Класс CBulkRowset
 ms.date: 11/04/2016
 f1_keywords:
@@ -95,12 +96,12 @@ helpviewer_keywords:
 - ReleaseRows method
 - SetRows method
 ms.assetid: c6bde426-c543-4022-a98a-9519d9e2ae59
-ms.openlocfilehash: 5c1c7bc381d30f701bad123807689b08ea47f65d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 106a8ffb3d70a021adbdb03b426e53ca39285b02
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838468"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198379"
 ---
 # <a name="cbulkrowset-class"></a>Класс CBulkRowset
 
@@ -271,7 +272,7 @@ HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `MoveToRatio` выбирает строки примерно в соответствии со следующей формулой:
 
@@ -308,7 +309,7 @@ void SetRows(DBROWCOUNT nRows) throw();
 *nRows*<br/>
 окне Новый размер набора строк (число строк).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 При вызове этой функции она должна быть перед открытием набора строк.
 

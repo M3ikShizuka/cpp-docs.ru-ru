@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура FactoryCache'
 title: FactoryCache - структура
 ms.date: 09/21/2018
 ms.topic: reference
@@ -11,16 +12,16 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::FactoryCache::cookie data member
 - Microsoft::WRL::Details::FactoryCache::factory data member
 ms.assetid: 624544e6-0989-47f6-a3e9-edb60e1ee6d4
-ms.openlocfilehash: 507d35179b9fa86399e56b18171800f41eaf1f10
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3e9ee084a063eb8094c309dee412a8793801921b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371488"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198559"
 ---
 # <a name="factorycache-structure"></a>FactoryCache - структура
 
-Поддерживает инфраструктуру библиотеки шаблонов Windows Runtime C'и не предназначен айме к использованию непосредственно из кода.
+Поддерживает среда выполнения Windows инфраструктуру библиотеки шаблонов C++ и не предназначена для непосредственного использования в коде.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,14 +33,14 @@ struct FactoryCache;
 
 Содержит местоположение фабрики класса и значение, которое идентифицирует зарегистрированный объект класса Среды выполнения Windows или модели COM.
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Элементы
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 Имя                              | Описание
 --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------
-[ФабрикаCache::cookie](#cookie)   | Содержит значение, которое идентифицирует зарегистрированный объект класса Windows Runtime или COM, а затем используется для отстранителя объекта.
-[ЗаводCache::фабрика](#factory) | Указывает на фабрику Windows Runtime или COM класса.
+[FactoryCache:: cookie](#cookie)   | Содержит значение, идентифицирующее зарегистрированный среда выполнения Windows или объект класса COM, который затем используется для отмены регистрации объекта.
+[FactoryCache:: Factory](#factory) | Указывает на фабрику классов среда выполнения Windows или COM.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -47,13 +48,13 @@ struct FactoryCache;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** module.h
+**Заголовок:** Module. h
 
-**Пространство имен:** Microsoft:WRL::Details
+**Пространство имен:** Microsoft:: WRL::D состояния
 
-## <a name="factorycachecookie"></a><a name="cookie"></a>ФабрикаCache::cookie
+## <a name="factorycachecookie"></a><a name="cookie"></a> FactoryCache:: cookie
 
-Поддерживает инфраструктуру библиотеки шаблонов Windows Runtime C'и не предназначен айме к использованию непосредственно из кода.
+Поддерживает среда выполнения Windows инфраструктуру библиотеки шаблонов C++ и не предназначена для непосредственного использования в коде.
 
 ```cpp
 union {
@@ -62,18 +63,18 @@ union {
 } cookie;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Содержит значение, которое идентифицирует зарегистрированный объект класса Windows Runtime или COM, а затем используется для отстранителя объекта.
+Содержит значение, идентифицирующее зарегистрированный среда выполнения Windows или объект класса COM, который затем используется для отмены регистрации объекта.
 
-## <a name="factorycachefactory"></a><a name="factory"></a>ЗаводCache::фабрика
+## <a name="factorycachefactory"></a><a name="factory"></a> FactoryCache:: Factory
 
-Поддерживает инфраструктуру библиотеки шаблонов Windows Runtime C'и не предназначен айме к использованию непосредственно из кода.
+Поддерживает среда выполнения Windows инфраструктуру библиотеки шаблонов C++ и не предназначена для непосредственного использования в коде.
 
 ```cpp
 IUnknown* factory;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Указывает на фабрику Windows Runtime или COM класса.
+Указывает на фабрику классов среда выполнения Windows или COM.

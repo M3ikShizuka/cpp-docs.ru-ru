@@ -1,20 +1,21 @@
 ---
+description: Дополнительные сведения о предварительной обработке файлов Makefile
 title: Предварительная обработка файла makefile
 ms.date: 11/04/2016
 helpviewer_keywords:
 - preprocessing makefiles
 - makefiles, preprocessing
 ms.assetid: a9185139-97c9-4adb-b4a9-1ec395cce9f8
-ms.openlocfilehash: fd29fc062191227204da2ea871a9754cda71a302
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c32aa8daa0fc868a48c7cc5875b95ca5efa9a510
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62321563"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97199315"
 ---
 # <a name="makefile-preprocessing"></a>Предварительная обработка файла makefile
 
-Сеанс (NMAKE) можно управлять с помощью предварительной обработки директив и выражений. Инструкции предварительной обработки можно поместить в файл makefile или Tools.ini. Директивы using, можно условно обработку файла makefile, отображения сообщений об ошибках, включать другие файлы makefile, отменить определение макроса и выключать определенные параметры.
+Сеанс NMAKE можно контролировать с помощью директив и выражений предварительной обработки. Инструкции по предварительной обработке можно разместить в файле makefile или в Tools.ini. Директивы using позволяют условно обрабатывать файл makefile, отображать сообщения об ошибках, включать другие файлы Makefile, отменять определение макроса и включать или отключать определенные параметры.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Дополнительные сведения
 
@@ -22,6 +23,6 @@ ms.locfileid: "62321563"
 
 [Выражения в предобработке файлов makefile](expressions-in-makefile-preprocessing.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Справочник по программе NMAKE](nmake-reference.md)
+[Справочник по NMAKE](nmake-reference.md)
