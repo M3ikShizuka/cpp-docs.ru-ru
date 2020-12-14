@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Ошибка средств компоновщика LNK2028'
 title: Ошибка средств компоновщика LNK2028
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2028
 ms.assetid: e2b03293-6066-464d-a050-ce747bcf7f0e
-ms.openlocfilehash: 29aaed167f750186d956589e9daa0d21c441149e
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 31b20cc572a44b1260f58eb03519b60050c0246c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90684201"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275728"
 ---
 # <a name="linker-tools-error-lnk2028"></a>Ошибка средств компоновщика LNK2028
 
 "*exported_function*" (*decorated_name*), на который указывает ссылка в функции "*function_containing_function_call*" (*decorated_name*)
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 При попытке импортировать собственную функцию в чистый образ Помните, что неявные соглашения о вызовах отличаются от собственных и чистых компиляций.
 

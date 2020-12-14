@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Ошибка средств компоновщика LNK2033'
 title: Ошибка средств компоновщика LNK2033
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK2033
 ms.assetid: d61db467-9328-4788-bf54-e2a20537f13f
-ms.openlocfilehash: 407f5eaf94a0e2da43425c3bbdd1955a88c95f14
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 46ee94e0aff4379a6d28a508ed1394e90ef9a96d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991180"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275650"
 ---
 # <a name="linker-tools-error-lnk2033"></a>Ошибка средств компоновщика LNK2033
 
@@ -23,7 +24,7 @@ LNK2033 может возникать при компиляции с **пара�
 
 Тип должен быть определен в **параметре/CLR: Сейф**.
 
-Дополнительные сведения см. в разделе [/clr (компиляция CLR)](../../build/reference/clr-common-language-runtime-compilation.md).
+Дополнительные сведения см. в разделе [/CLR (компиляция среды CLR)](../../build/reference/clr-common-language-runtime-compilation.md).
 
 ## <a name="example"></a>Пример
 

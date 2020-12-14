@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _Cbuild, _FCbuild, _LCbuild'
 title: _Cbuild, _FCbuild, _LCbuild
 ms.date: 03/30/2018
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - _Cbuild function
 - _FCbuild function
 - _LCbuild function
-ms.openlocfilehash: d521fdb0d79e1e4ff6e6c1b01ce40941ed5c8c0a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bbca2571a10badcfc02da3e0d2f404590a1d7eb3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221969"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275234"
 ---
 # <a name="_cbuild-_fcbuild-_lcbuild"></a>_Cbuild, _FCbuild, _LCbuild
 
@@ -61,11 +62,11 @@ _Lcomplex _LCbuild( long double real, long double imaginary );
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Структура **_Dcomplex**, **_Fcomplex**или **_Lcomplex** , представляющая комплексное число (*Real*, *мнимая* \* i) для значений указанного типа с плавающей запятой.
+Структура **_Dcomplex**, **_Fcomplex** или **_Lcomplex** , представляющая комплексное число (*Real*, *мнимая* \* i) для значений указанного типа с плавающей запятой.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функции **_Cbuild**, **_FCbuild**и **_LCbuild** упрощают создание сложных типов. Используйте функции [Креал, креалф, креалл](creal-crealf-creall.md) и [Цимаг, Цимагф, Цимагл,](cimag-cimagf-cimagl.md) чтобы получить действительные и мнимые части представленных комплексных чисел.
+Функции **_Cbuild**, **_FCbuild** и **_LCbuild** упрощают создание сложных типов. Используйте функции [Креал, креалф, креалл](creal-crealf-creall.md) и [Цимаг, Цимагф, Цимагл,](cimag-cimagf-cimagl.md) чтобы получить действительные и мнимые части представленных комплексных чисел.
 
 ## <a name="requirements"></a>Требования
 
@@ -73,7 +74,7 @@ _Lcomplex _LCbuild( long double real, long double imaginary );
 |-------------|--------------|------------------|
 |**_Cbuild**, **_FCbuild** **_LCbuild**|\<complex.h>|\<ccomplex>|
 
-Эти функции относятся только к Microsoft. Типы **_Dcomplex**, **_Fcomplex**и **_Lcomplex** являются эквивалентами корпорации Майкрософт для нереализованных C99 машинных типов **`double _Complex`** , **`float _Complex`** и **`long double _Complex`** соответственно. Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
+Эти функции относятся только к Microsoft. Типы **_Dcomplex**, **_Fcomplex** и **_Lcomplex** являются эквивалентами корпорации Майкрософт для нереализованных C99 машинных типов **`double _Complex`** , **`float _Complex`** и **`long double _Complex`** соответственно. Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>См. также раздел
 

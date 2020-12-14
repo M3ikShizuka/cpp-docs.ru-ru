@@ -1,39 +1,40 @@
 ---
+description: Дополнительные сведения о:/WINMDDELAYSIGN (частичное подписание WinMD)
 title: /WINMDDELAYSIGN (частично подпишите файл winmd)
 ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCLinkerTool.WINMDDelaySign
 ms.assetid: 445cd602-62cb-400a-8e3a-4beb6572724d
-ms.openlocfilehash: 5e6eab3fbc40543b634f03da826d3bd3477b9623
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 801b172f52a9beb9d09617644b3096e460359724
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316604"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259062"
 ---
 # <a name="winmddelaysign-partially-sign-a-winmd"></a>/WINMDDELAYSIGN (частично подпишите файл winmd)
 
-Включает частичную подпись файла метаданных среды выполнения Windows (.winmd), поместив открытый ключ в файле.
+Включает частичную подпись файла метаданных среда выполнения Windows (WinMD), помещая открытый ключ в файл.
 
 ```
 /WINMDDELAYSIGN[:NO]
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Напоминает [/delaysign](delaysign-partially-sign-an-assembly.md) параметра компоновщика, который применяется к winmd-файл. Используйте **параметр/winmddelaysign** Если вы хотите поместить только открытый ключ в файл winmd. По умолчанию компоновщик работает так, как если **/winmddelaysign: no** указаны; то есть он не подписывает файл winmd.
+Напоминает параметр компоновщика [/delaysign](delaysign-partially-sign-an-assembly.md) , применяемый к WinMD-файлу. Используйте **/WINMDDELAYSIGN** , если хотите поместить в WINMD-файл только открытый ключ. По умолчанию компоновщик работает так, как будто **/WINMDDELAYSIGN: NO не** указан. то есть он не подписывает WINMD-файл.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Задание данного параметра компоновщика в среде разработки Visual Studio
 
-1. Откройте диалоговое окно **Страницы свойств** проекта. Дополнительные сведения см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
-1. Выберите **компоновщика** папки.
+1. Выберите папку **Компоновщик** .
 
-1. Выберите **метаданных Windows** страницу свойств.
+1. Выберите страницу свойств **метаданные Windows** .
 
-1. В **отложенная подпись метаданных Windows** раскрывающемся списке выберите нужный вариант.
+1. В раскрывающемся списке « **Задержка метаданных Windows** » выберите нужный параметр.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по компоновщику MSVC](linking.md)<br/>
 [Параметры компоновщика MSVC](linker-options.md)

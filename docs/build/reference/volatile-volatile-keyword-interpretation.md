@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/volatile (интерпретация ключевого слова volatile)
 title: /volatile (интерпретация ключевого слова volatile)
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - volatile compiler option
 - -volatile compiler option [C++]
 ms.assetid: 9d08fcc6-5bda-44c8-8151-8d8d54f164b8
-ms.openlocfilehash: 7c2c1cd477b424f56e66bd9246e7bde76ad06120
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: e75a9932cff59748cf75b89a3a85e89130de84f5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223789"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259218"
 ---
 # <a name="volatile-volatile-keyword-interpretation"></a>/volatile (интерпретация ключевого слова volatile)
 
@@ -36,7 +37,7 @@ ms.locfileid: "87223789"
 **/volatile: МС**<br/>
 Выбирается Расширенная **`volatile`** семантика Майкрософт, которая добавляет гарантии порядка в память за пределами языка C++, используемого в стандарте ISO. Семантика получения и освобождения гарантирована при неизменяемых обращениях. Однако этот параметр также заставляет компилятор создавать барьеры аппаратной памяти, что может значительно увеличить нагрузку на ARM и другую слабую архитектуру упорядочивания памяти. Если компилятор предназначен для любой платформы, кроме ARM, это интерпретация по умолчанию **`volatile`** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Настоятельно рекомендуется использовать **/volatile: ISO** вместе с явными примитивами синхронизации и встроенными функциями компилятора при работе с памятью, которая совместно используется в потоках. Дополнительные сведения см. в разделе [volatile](../../cpp/volatile-cpp.md).
 
@@ -52,8 +53,8 @@ ms.locfileid: "87223789"
 
 1. В поле **Дополнительные параметры** добавьте **/volatile: ISO** или **/volatile: MS** , а затем нажмите кнопку **ОК** или **Применить** , чтобы сохранить изменения.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [volatile](../../cpp/volatile-cpp.md)<br/>
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)

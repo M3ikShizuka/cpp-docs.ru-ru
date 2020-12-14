@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _cgets_s, _cgetws_s'
 title: _cgets_s, _cgetws_s
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - _cgetws_s function
 - cgetws_s function
 ms.assetid: 38b74897-afe6-4dd9-a43f-36a3c0d72c5c
-ms.openlocfilehash: 6e48602eee3d2135d4624b28d88661ac00f65542
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 827f3c8b155f58fe13396f5dc0c66e8999b5f942
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917101"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275091"
 ---
 # <a name="_cgets_s-_cgetws_s"></a>_cgets_s, _cgetws_s
 
@@ -94,11 +95,11 @@ errno_t _cgetws_s(
 
 |*двойной*|*numberOfElements*|*псизереад*|Возвращает|Содержимое *буфера*|
 |--------------|------------------------|-----------------|------------|--------------------------|
-|**ЗАКАНЧИВАЮЩ**|any|any|**еинвал**|н/д|
+|**NULL**|any|any|**еинвал**|н/д|
 |не **null**|нуль|any|**еинвал**|не изменено|
-|не **null**|any|**ЗАКАНЧИВАЮЩ**|**еинвал**|строка нулевой длины|
+|не **null**|any|**NULL**|**еинвал**|строка нулевой длины|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **_cgets_s** и **_cgetws_s** прочитать строку из консоли и скопировать строку (с нулевым символом конца) в *буфер*. **_cgetws_s** — это версия функции с расширенными символами; в отличие от размера символов, поведение этих двух функций идентично. Максимальный размер строки для чтения передается в качестве параметра *numberOfElements* . Размер должен учитывать дополнительный символ для конечного нуля. Фактическое число считанных символов помещается в *псизереад*.
 

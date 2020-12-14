@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: ккош, ккошф, ккошл'
 title: ccosh, ccoshf, ccoshl
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - ccoshf function
 - ccoshl function
 ms.assetid: 79667449-4edf-4948-bf6b-720adf2b3f3b
-ms.openlocfilehash: 978db0141ecd6799c3a8d19a3b4621ae1a2e8b43
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 11e6dc87f72753c10e62e10cfba20701fe706359
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943290"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275117"
 ---
 # <a name="ccosh-ccoshf-ccoshl"></a>ccosh, ccoshf, ccoshl
 
@@ -66,28 +67,28 @@ _Lcomplex ccoshl(
 
 ### <a name="parameters"></a>Параметры
 
-*z*<br/>
+*з*<br/>
 Комплексное число, указывающее угол в радианах.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Гиперболический косинус *z*, в радианах.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Поскольку C++ допускает перегрузку, можно вызывать перегрузки **ккош** , которые принимают и возвращают значения **_Fcomplex** и **_Lcomplex** . В программе на языке C **ккош** всегда принимает и возвращает значение **_Dcomplex** .
+Поскольку C++ допускает перегрузку, можно вызывать перегрузки **ккош** , которые принимают и возвращают **_Fcomplex** и **_Lcomplex** значения. В программе на языке C **ккош** всегда принимает и возвращает значение **_Dcomplex** .
 
 ## <a name="requirements"></a>Требования
 
 |Подпрограмма|Заголовок C|Заголовок C++|
 |-------------|--------------|------------------|
-|**ккош**, **ккошф**, **ккошл**|\<complex.h>|\<ccomplex>|
+|**ккош**,               **ккошф**, **ккошл**|\<complex.h>|\<ccomplex>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Алфавитный указатель функций](crt-alphabetical-function-reference.md)<br/>
+[Алфавитный справочник по функциям](crt-alphabetical-function-reference.md)<br/>
 [catanh, catanhf, catanhl](catanh-catanhf-catanhl.md)<br/>
 [ctanh, ctanhf, ctanhl](ctanh-ctanhf-ctanhl.md)<br/>
 [catan, catanf, catanl](catan-catanf-catanl.md)<br/>

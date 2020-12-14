@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о странице свойств веб-ссылок
 title: Страница свойств веб-ссылок
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - Web references, properties
 ms.assetid: b80f7c77-af88-4551-9943-99748ebacf09
-ms.openlocfilehash: 9e33fc1d53253c3da09e812110015cfdfdbe2d02
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 371642cd7ffcac9cccaea980f7790f729c8e74b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62316474"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259166"
 ---
 # <a name="web-references-property-page"></a>Страница свойств веб-ссылок
 
@@ -26,7 +27,7 @@ ms.locfileid: "62316474"
 
    Имя файла, содержащего прокси-класс веб-службы XML.
 
-- **Отключить загрузочное объявление**
+- **Отключить загрузочный баннер**
 
    Отключение отображения объявления для инструмента языка WSDL (Wsdl.exe).
 
@@ -34,11 +35,11 @@ ms.locfileid: "62316474"
 
    Определяет имя создаваемого веб-прокси.
 
-- **Дополнительные ссылки**
+- **Дополнительные справочники**
 
    Задает дополнительные библиотеки DLL, на которые ссылается библиотека DLL прокси.
 
-Сведения о том, как получить доступ к **веб-ссылки** страницу свойств, см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+Сведения о доступе к странице свойств **веб-ссылок** см. [в разделе Установка компилятора C++ и свойств сборки в Visual Studio](../working-with-project-properties.md).
 
 ## <a name="see-also"></a>См. также
 

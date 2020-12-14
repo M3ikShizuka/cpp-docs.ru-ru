@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: создание приложения контейнера активного документа'
 title: Создание приложения с контейнером активных документов
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - MFC COM, active document containment
 - applications [MFC], active document container
 ms.assetid: 14e2d022-a6c5-4249-8712-706b0f4433f7
-ms.openlocfilehash: 860a8531a96a0671c808dba13523b492026eafe0
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 9bf00a73e7520cde45d4e43ae79813896d4c1129
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616344"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309996"
 ---
 # <a name="creating-an-active-document-container-application"></a>Создание приложения с контейнером активных документов
 
@@ -21,13 +22,13 @@ ms.locfileid: "84616344"
 
 #### <a name="to-create-an-active-document-container-application"></a>Создание приложения контейнера активного документа
 
-1. В меню **файл** выберите пункт **проект**из подменю **создать** .
+1. В меню **файл** выберите пункт **проект** из подменю **создать** .
 
 1. В левой области щелкните **Visual C++** тип проекта.
 
 1. В области справа выберите **приложение MFC** .
 
-1. Назовите проект *мипрож*и нажмите кнопку **ОК**.
+1. Назовите проект *мипрож* и нажмите кнопку **ОК**.
 
 1. Выберите страницу **Поддержка составного документа** .
 
@@ -41,13 +42,13 @@ ms.locfileid: "84616344"
 
    - *Мипрожвиев. cpp*
 
-1. В *мипрожвиев. cpp*внесите следующие изменения:
+1. В *мипрожвиев. cpp* внесите следующие изменения:
 
    - В `CMyProjView::OnPreparePrinting` замените содержимое функции следующим кодом:
 
      [!code-cpp[NVC_MFCDocView#56](codesnippet/cpp/creating-an-active-document-container-application_1.cpp)]
 
-   `OnPreparePrinting`обеспечивает поддержку печати. Этот код заменяет собой `DoPreparePrinting` подготовку к печати по умолчанию.
+   `OnPreparePrinting` обеспечивает поддержку печати. Этот код заменяет собой `DoPreparePrinting` подготовку к печати по умолчанию.
 
    Включение активного документа обеспечивает улучшенную схему печати:
 
@@ -63,4 +64,4 @@ ms.locfileid: "84616344"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Вложение активного документа](active-document-containment.md)
+[Включение активного документа](active-document-containment.md)

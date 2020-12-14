@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: константы типов данных'
 title: Константы типа данных
 ms.date: 06/25/2018
 f1_keywords:
@@ -139,12 +140,12 @@ helpviewer_keywords:
 - SIZE_MAX constant
 - RSIZE_MAX constant
 ms.assetid: c0f1c405-0465-41d5-b5ff-e81cdb6f1622
-ms.openlocfilehash: d9d053611fb733d55424d01be2bab030fc49e6e0
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: eb1c16cb730ea40a60a5929867fa8a36b17190ec
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215170"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258841"
 ---
 # <a name="data-type-constants"></a>Константы типа данных
 
@@ -163,13 +164,13 @@ ms.locfileid: "87215170"
 
 |Константа|Значение|Описание|
 |--------------|-----------|-------------|
-|**CHAR_BIT**|8|Число битов в**`char`**|
+|**CHAR_BIT**|8|Число битов в **`char`**|
 |**SCHAR_MIN**|(–128)|Минимальное **`signed char`** значение|
 |**SCHAR_MAX**|127|Максимальное **`signed char`** значение|
 |**UCHAR_MAX**|255 (0xff)|Максимальное **`unsigned char`** значение|
 |**CHAR_MIN**|(-128) (при **`/J`** использовании параметра 0)|Минимальное **`char`** значение|
 |**CHAR_MAX**|127 (255, если **`/J`** используется параметр)|Максимальное **`char`** значение|
-|**MB_LEN_MAX**|5|Максимальное число байтов в многобайтовой кодировке**`char`**|
+|**MB_LEN_MAX**|5|Максимальное число байтов в многобайтовой кодировке **`char`**|
 |**SHRT_MIN**|-32768|Минимальное **`signed short`** значение|
 |**SHRT_MAX**|32767|Максимальное **`signed short`** значение|
 |**USHRT_MAX**|65 535 (0xffff)|Максимальное **`unsigned short`** значение|
