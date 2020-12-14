@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: Добавление элементов в элемент управления'
 title: Добавление элементов в элемент управления
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CListCtrl class [MFC], adding items
 ms.assetid: 715994bd-340d-4ad2-9882-411654137830
-ms.openlocfilehash: 5cc1c7a921cf6d6ba2c0f968012b48bfcaef0658
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 44a553564aa9a98806cd8e4d9551c9474421105f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84623365"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249026"
 ---
 # <a name="adding-items-to-the-control"></a>Добавление элементов в элемент управления
 
@@ -21,7 +22,7 @@ ms.locfileid: "84623365"
 
 Другие версии `InsertItem` принимают одно или несколько отдельных значений, соответствующих элементам `LVITEM` структуры, что позволяет инициализировать только те элементы, которые требуется поддерживать. Как правило, элемент управления "список" управляет хранилищем для элементов списка, но вместо этого можно хранить некоторые сведения в приложении, используя "элементы обратного вызова". Дополнительные сведения см. в разделах [элементы обратного вызова и маска обратного вызова](callback-items-and-the-callback-mask.md) в этом разделе, а также [элементы обратного вызова и маска обратного звонка](/windows/win32/Controls/using-list-view-controls) в Windows SDK.
 
-Дополнительные сведения см. в разделе [Добавление элементов и подэлементов представления списка](/windows/win32/Controls/using-list-view-controls).
+Дополнительные сведения см. в разделе [добавление List-View элементов и подэлементов](/windows/win32/Controls/using-list-view-controls).
 
 ## <a name="see-also"></a>См. также раздел
 

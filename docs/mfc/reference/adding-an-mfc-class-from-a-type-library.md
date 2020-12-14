@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Добавление класса MFC из библиотеки типов'
 title: Добавление класса MFC из библиотеки типов
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - MFC, adding classes from type libraries
 - type libraries, adding MFC classes from
 ms.assetid: aba40476-3cfb-47af-990e-ae2e9e0d79cf
-ms.openlocfilehash: 45bad00155cc1587980e6f3b25843a7a22e7e754
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: b5a9979e2581eb3a560736c57c4b1eac4a7e1e81
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503037"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248376"
 ---
 # <a name="adding-an-mfc-class-from-a-type-library"></a>Добавление класса MFC из библиотеки типов
 
@@ -28,7 +29,7 @@ ms.locfileid: "91503037"
 
 1. В контекстном меню выберите команду **Добавить**, а затем — **Добавить класс**.
 
-1. В диалоговом окне [Добавление класса](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) в области Шаблоны щелкните **класс MFC из библиотеки типов**и нажмите кнопку **Открыть** , чтобы открыть [Мастер добавления класса из typelib](../../mfc/reference/add-class-from-typelib-wizard.md).
+1. В диалоговом окне [Добавление класса](../../ide/adding-a-class-visual-cpp.md#add-class-dialog-box) в области Шаблоны щелкните **класс MFC из библиотеки типов** и нажмите кнопку **Открыть** , чтобы открыть [Мастер добавления класса из typelib](../../mfc/reference/add-class-from-typelib-wizard.md).
 
 В мастере можно добавить более одного класса в библиотеку типов. Аналогичным образом можно добавлять классы из нескольких библиотек типов в одном сеансе мастера.
 

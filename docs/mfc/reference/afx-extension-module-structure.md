@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура AFX_EXTENSION_MODULE'
 title: Структура AFX_EXTENSION_MODULE
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - AFX_EXTENSION_MODULE structure [MFC]
 ms.assetid: b85a989c-d0c5-4b28-b53c-dad45b75704e
-ms.openlocfilehash: e1bdc9d744424ab0ad59be3bd7b815b5122bcd10
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d3a5abd449f13a06aa5d7388b2dd2926a6011973
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62338640"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248233"
 ---
-# <a name="afxextensionmodule-structure"></a>Структура AFX_EXTENSION_MODULE
+# <a name="afx_extension_module-structure"></a>Структура AFX_EXTENSION_MODULE
 
-`AFX_EXTENSION_MODULE` Используется во время инициализации библиотеки DLL расширений MFC для хранения состояния модуля DLL расширения MFC.
+`AFX_EXTENSION_MODULE`Используется во время инициализации библиотек DLL расширения MFC для хранения состояния модуля DLL расширения MFC.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,43 +33,43 @@ struct AFX_EXTENSION_MODULE
 
 #### <a name="parameters"></a>Параметры
 
-*bInitialized*<br/>
-Значение TRUE, если модуль DLL инициализирована с помощью `AfxInitExtensionModule`.
+*бинитиализед*<br/>
+Значение TRUE, если модуль DLL был инициализирован с помощью `AfxInitExtensionModule` .
 
-*hModule*<br/>
-Указывает дескриптор модуля DLL.
+*хмодуле*<br/>
+Задает маркер модуля DLL.
 
-*hResource*<br/>
-Указывает дескриптор модуля DLL настраиваемого ресурса.
+*хресаурце*<br/>
+Указывает обработчик настраиваемого модуля ресурсов библиотеки DLL.
 
-*pFirstSharedClass*<br/>
-Указатель на сведения ( `CRuntimeClass` структуры) о модуль DLL первого класса среды выполнения. Используется для начала список классов среды выполнения.
+*пфирстшаредкласс*<br/>
+Указатель на информацию ( `CRuntimeClass` структуру) о первом классе среды выполнения модуля DLL. Используется для задания начала списка классов среды выполнения.
 
-*pFirstSharedFactory*<br/>
-Указатель на первый объект фабрики модуль DLL ( `COleObjectFactory` объекта). Используется для предоставления в начале списка фабрики класса.
+*пфирстшаредфактори*<br/>
+Указатель на первую фабрику объектов модуля DLL ( `COleObjectFactory` объект). Используется для предоставления начала списка фабрик класса.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Расширения MFC DLL-библиотеки нужно сделать две вещи в свои `DllMain` функции:
+Библиотеки DLL расширения MFC должны выполнять два действия в своей `DllMain` функции:
 
-- Вызовите [AfxInitExtensionModule](extension-dll-macros.md#afxinitextensionmodule) и проверяйте возвращаемое значение.
+- Вызовите [афксинитекстенсионмодуле](extension-dll-macros.md#afxinitextensionmodule) и проверьте возвращаемое значение.
 
-- Создание `CDynLinkLibrary` объекта, если библиотека DLL будет экспортироваться [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) объектов или имеет свои собственные настраиваемые ресурсы.
+- Создайте `CDynLinkLibrary` объект, если библиотека DLL будет экспортировать объекты [крунтимекласс](../../mfc/reference/cruntimeclass-structure.md) или имеет собственные пользовательские ресурсы.
 
-`AFX_EXTENSION_MODULE` Структура используется для хранения копии расширения MFC состояния модуля DLL, в том числе объектов класса среды выполнения, для инициализации библиотеки DLL расширения MFC как часть конструкции обычный статический объект, перед выполнением `DllMain` — вводить. Пример:
+`AFX_EXTENSION_MODULE`Структура используется для хранения копии состояния модуля библиотеки DLL расширения MFC, включая копию объектов класса среды выполнения, которые были инициализированы библиотекой DLL расширения MFC в рамках обычного создания статического объекта, выполняемого перед `DllMain` входом. Пример:
 
 [!code-cpp[NVC_MFC_DLL#2](../../atl-mfc-shared/codesnippet/cpp/afx-extension-module-structure_1.cpp)]
 
-Модуль сведениями, хранящимися в `AFX_EXTENSION_MODULE` структуры можно было скопировать в `CDynLinkLibrary` объекта. Пример:
+Сведения о модуле, хранящиеся в `AFX_EXTENSION_MODULE` структуре, можно скопировать в `CDynLinkLibrary` объект. Пример:
 
 [!code-cpp[NVC_MFC_DLL#5](../../atl-mfc-shared/codesnippet/cpp/afx-extension-module-structure_2.cpp)]
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afx.h
+**Заголовок:** AFX. h
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Структуры, стили, обратные вызовы и схемы сообщений](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [AfxInitExtensionModule](extension-dll-macros.md#afxinitextensionmodule)<br/>
-[Функцию AfxTermExtensionModule](extension-dll-macros.md#afxtermextensionmodule)
+[AfxTermExtensionModule](extension-dll-macros.md#afxtermextensionmodule)

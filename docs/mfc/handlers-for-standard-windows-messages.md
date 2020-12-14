@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: обработчики для стандартных сообщений Windows'
 title: Обработчики для стандартных сообщений Windows
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - functions [MFC], handler
 - messages [MFC], Windows
 ms.assetid: 19412a8b-2c38-4502-81da-13c823c7e36c
-ms.openlocfilehash: d967341cdb0197f1157ab9d253072f3d0d7aa46f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 161e4d85e702972ee178e2fe82aa2371f0560068
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223152"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97248935"
 ---
 # <a name="handlers-for-standard-windows-messages"></a>Обработчики для стандартных сообщений Windows
 
@@ -38,6 +39,6 @@ ms.locfileid: "87223152"
 
 По соглашению имена этих обработчиков начинаются с префикса "вкл.". Некоторые из этих обработчиков не имеют аргументов, а другие принимают несколько. Некоторые также имеют тип возвращаемого значения, отличный от **`void`** . Обработчики по умолчанию для всех сообщений **WM_** задокументированы в *справочнике MFC* как функции членов класса `CWnd` , имена которых начинаются на "on". В объявлении функции члена в `CWnd` добавляются префиксы **afx_msg**.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Объявление функций обработчика сообщений](declaring-message-handler-functions.md)

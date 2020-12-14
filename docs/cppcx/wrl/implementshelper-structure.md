@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура метод implementshelper'
 title: ImplementsHelper - структура
 ms.date: 10/03/2018
 ms.topic: reference
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Details::ImplementsHelper::FillArrayWithIid method
 - Microsoft::WRL::Details::ImplementsHelper::IidCount constant
 ms.assetid: b857ba80-81bd-4e53-92b6-210991954243
-ms.openlocfilehash: d7908670b67df7dbf7b2b74e98f8b59cf30f8e96
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 142cc532a89758c35c3387c398311acd077b8385
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87184947"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249819"
 ---
 # <a name="implementshelper-structure"></a>ImplementsHelper - структура
 
@@ -44,7 +45,7 @@ friend struct Details::ImplementsHelper;
 *исделегатетокласс*<br/>
 Укажите **`true`** , является ли текущий экземпляр `Implements` базовым классом первого идентификатора интерфейса в *илст*; в противном случае — значение **`false`** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Помогает реализовать структуру [Implements](implements-structure.md) .
 
@@ -71,7 +72,7 @@ friend struct Details::ImplementsHelper;
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 
-## <a name="implementshelpercancastto"></a><a name="cancastto"></a>Метод implementshelper:: CanCastTo
+## <a name="implementshelpercancastto"></a><a name="cancastto"></a> Метод implementshelper:: CanCastTo
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -102,11 +103,11 @@ HRESULT CanCastTo(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает указатель на указанный идентификатор интерфейса.
 
-## <a name="implementshelpercasttounknown"></a><a name="casttounknown"></a>Метод implementshelper:: CastToUnknown
+## <a name="implementshelpercasttounknown"></a><a name="casttounknown"></a> Метод implementshelper:: CastToUnknown
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -118,11 +119,11 @@ IUnknown* CastToUnknown();
 
 Указатель на базовый `IUnknown` интерфейс.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возвращает указатель на базовый `IUnknown` интерфейс для текущей `Implements` структуры.
 
-## <a name="implementshelperfillarraywithiid"></a><a name="fillarraywithiid"></a>Метод implementshelper:: FillArrayWithIid
+## <a name="implementshelperfillarraywithiid"></a><a name="fillarraywithiid"></a> Метод implementshelper:: FillArrayWithIid
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -134,17 +135,17 @@ void FillArrayWithIid(
 
 ### <a name="parameters"></a>Параметры
 
-*номер*<br/>
+*index*<br/>
 Отсчитываемый от нуля индекс, указывающий начальный элемент массива для данной операции. По завершении этой операции *индекс* увеличивается на 1.
 
 *идентификаторов IID*<br/>
 Массив типа идентификаторов IID.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вставляет идентификатор интерфейса, указанный текущим параметром шаблона начальном, в указанный элемент массива.
 
-## <a name="implementshelperiidcount"></a><a name="iidcount"></a>Метод implementshelper:: IidCount
+## <a name="implementshelperiidcount"></a><a name="iidcount"></a> Метод implementshelper:: IidCount
 
 Поддерживает инфраструктуру WRL и не предназначен для непосредственного использования в коде.
 
@@ -152,6 +153,6 @@ void FillArrayWithIid(
 static const unsigned long IidCount;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Содержит число реализованных идентификаторов интерфейсов в текущем `Implements` объекте.

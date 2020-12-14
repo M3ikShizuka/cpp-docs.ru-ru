@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Platform:: Collections:: VectorView Class'
 title: Класс Platform::Collections::VectorView
 ms.date: 12/30/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - VectorView Class
 ms.assetid: 05cd461d-dce7-49d3-b0e7-2e5c78ed8192
-ms.openlocfilehash: 207f5d517eaae475af1c65a284a3d1ebe50621af
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f0d1244ed5331fa9732bdfef1f1b7e2133f99442
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218394"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250040"
 ---
 # <a name="platformcollectionsvectorview-class"></a>Класс Platform::Collections::VectorView
 
@@ -35,7 +36,7 @@ template <typename T, typename E>
 *T*<br/>
 Тип элементов, содержащихся в объекте `VectorView` .
 
-*&*<br/>
+*E*<br/>
 Определяет бинарный предикат для проверки равенства со значениями типа `T`. Значение по умолчанию — `std::equal_to<T>`.
 
 ### <a name="remarks"></a>Примечания
@@ -46,7 +47,7 @@ template <typename T, typename E>
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[VectorView:: VectorView](#ctor)|Инициализирует новый экземпляр класса VectorView.|
 
@@ -70,7 +71,7 @@ template <typename T, typename E>
 
 **Пространство имен:** Platform::Collections
 
-## <a name="vectorviewfirst-method"></a><a name="first"></a>Метод VectorView:: First
+## <a name="vectorviewfirst-method"></a><a name="first"></a> Метод VectorView:: First
 
 Возвращает итератор, указывающий первый элемент объекта VectorView.
 
@@ -86,11 +87,11 @@ virtual Windows::Foundation::Collections::IIterator<T>^
 
 Итератор, указывающий первый элемент объекта VectorView.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Удобным способом удержания итератора, возвращенного первым (), является присвоение возвращаемого значения переменной, объявленной с **`auto`** ключевым словом выведения типа. Например, `auto x = myVectorView->First();`.
 
-## <a name="vectorviewgetat-method"></a><a name="getat"></a>Метод VectorView:: GetAt
+## <a name="vectorviewgetat-method"></a><a name="getat"></a> Метод VectorView:: GetAt
 
 Извлекает элемент текущего VectorView, указанный заданным индексом.
 
@@ -105,14 +106,14 @@ T GetAt(
 
 ### <a name="parameters"></a>Параметры
 
-*номер*<br/>
+*index*<br/>
 Целое значение без знака, отсчитываемое от нуля, которое указывает определенный элемент в объекте VectorView.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Элемент, заданный параметром `index`. Тип элемента задается параметром шаблона VectorView, *т*. е.
 
-## <a name="vectorviewgetmany-method"></a><a name="getmany"></a>Метод VectorView:: many
+## <a name="vectorviewgetmany-method"></a><a name="getmany"></a> Метод VectorView:: many
 
 Извлекает последовательность элементов из текущего объекта VectorView, начиная с указанного индекса.
 
@@ -138,7 +139,7 @@ virtual unsigned int GetMany(
 
 Количество извлеченных элементов.
 
-## <a name="vectorviewindexof-method"></a><a name="indexof"></a>Метод VectorView:: IndexOf
+## <a name="vectorviewindexof-method"></a><a name="indexof"></a> Метод VectorView:: IndexOf
 
 Выполняет поиск указанного элемента в текущем объекте VectorView и возвращает его индекс, если он найден.
 
@@ -157,7 +158,7 @@ virtual bool IndexOf(
 *value*<br/>
 Элемент, который нужно найти.
 
-*номер*<br/>
+*index*<br/>
 Отсчитываемый от нуля индекс элемента, если параметр `value` найден; в противном случае — 0.
 
 Параметр *индекса* равен 0, если элемент является первым элементом элемента `VectorView` или элемент не найден. Если возвращаемое значение равно **`true`** , элемент был найден и является первым элементом; в противном случае элемент не был найден.
@@ -166,7 +167,7 @@ virtual bool IndexOf(
 
 **`true`** значение, если указанный элемент найден; в противном случае — **`false`** .
 
-## <a name="vectorviewsize-method"></a><a name="size"></a>Метод VectorView:: size
+## <a name="vectorviewsize-method"></a><a name="size"></a> Метод VectorView:: size
 
 Возвращает количество элементов в текущем объекте VectorView.
 
@@ -181,7 +182,7 @@ virtual property unsigned int Size;
 
 Количество элементов в текущем объекте VectorView.
 
-## <a name="vectorviewvectorview-constructor"></a><a name="ctor"></a>Конструктор VectorView:: VectorView
+## <a name="vectorviewvectorview-constructor"></a><a name="ctor"></a> Конструктор VectorView:: VectorView
 
 Инициализирует новый экземпляр класса VectorView.
 
@@ -256,7 +257,7 @@ VectorView(
 *value*<br/>
 Значение, используемое для инициализации каждого элемента в текущем объекте VectorView.
 
-*3,3*<br/>
+*v*<br/>
 [Значения lvalue и rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) для [std:: Vector](../standard-library/vector-class.md) , который используется для инициализации текущего VectorView.
 
 *ptr*<br/>

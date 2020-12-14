@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_scalar классе'
 title: Класс is_scalar
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_scalar class
 - is_scalar
 ms.assetid: a0cdfc9a-f27e-4808-890f-6ed7942db60c
-ms.openlocfilehash: d562ba4beb037d547846f57e7b40eaceb409a358
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 34d998536d3ad1843b44de5ad64c8b6a664895d9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449809"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247674"
 ---
-# <a name="isscalar-class"></a>Класс is_scalar
+# <a name="is_scalar-class"></a>Класс is_scalar
 
 Проверяет, является ли тип скалярным.
 
@@ -30,7 +31,7 @@ struct is_scalar;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* является целочисленным типом, типом с плавающей запятой, типом перечисления, типом указателя, указателем на тип элемента или `cv-qualified` формой одного из них, в противном случае — значение false.
 
@@ -71,11 +72,11 @@ is_scalar<float> == true
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)\
 [Класс is_compound](../standard-library/is-compound-class.md)

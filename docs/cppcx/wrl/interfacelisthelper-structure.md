@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура InterfaceListHelper'
 title: InterfaceListHelper - структура
 ms.date: 10/03/2018
 ms.topic: reference
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - InterfaceListHelper structure
 ms.assetid: 4297e419-c96b-45df-8a00-7568062125ba
-ms.openlocfilehash: 1a7b4c19bbcdd4161e9078274f18f96a48f9e7d7
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: ca9e13e66acb6f27fba76a7653388305c57146dc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80213854"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97249806"
 ---
 # <a name="interfacelisthelper-structure"></a>InterfaceListHelper - структура
 
@@ -71,17 +72,17 @@ struct InterfaceListHelper<T0, Nil, Nil, Nil, Nil, Nil, Nil, Nil, Nil>;
 *T9*<br/>
 Параметр шаблона 9, который по умолчанию не задан.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Создает тип `InterfaceList`, рекурсивно применяя заданные аргументы параметра шаблона.
+Создает `InterfaceList` тип, рекурсивно применяя заданные аргументы параметра шаблона.
 
-Шаблон **InterfaceListHelper** использует параметр шаблона *T0* для определения первого элемента данных в структуре `InterfaceList`, а затем рекурсивно применяет шаблон **InterfaceListHelper** к любым оставшимся параметрам шаблона. **InterfaceListHelper** останавливается при отсутствии оставшихся параметров шаблона.
+Шаблон **InterfaceListHelper** использует параметр шаблона *T0* для определения первого элемента данных в `InterfaceList` структуре, а затем рекурсивно применяет шаблон **InterfaceListHelper** к любым оставшимся параметрам шаблона. **InterfaceListHelper** останавливается при отсутствии оставшихся параметров шаблона.
 
-## <a name="members"></a>Члены
+## <a name="members"></a>Элементы
 
-### <a name="public-typedefs"></a>Открытые определения типов
+### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`TypeT`|Синоним для типа Интерфацелист.|
 
@@ -97,4 +98,4 @@ struct InterfaceListHelper<T0, Nil, Nil, Nil, Nil, Nil, Nil, Nil, Nil>;
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Microsoft::WRL::Details](microsoft-wrl-details-namespace.md)
+[Пространство имен Microsoft:: WRL::D состояния](microsoft-wrl-details-namespace.md)
