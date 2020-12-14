@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения:/Yc (создать предварительно скомпилированный заголовочный файл)
 title: /Yc (создать предварительно скомпилированный заголовочный файл)
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - /Yc compiler option [C++]
 - Yc compiler option [C++]
 ms.assetid: 47c2e555-b4f5-46e6-906e-ab5cf21f0678
-ms.openlocfilehash: 71a05df3adc74edfd814bb6dc15121e4a343dc4d
-ms.sourcegitcommit: 6b749db14b4cf3a2b8d581fda6fdd8cb98bc3207
+ms.openlocfilehash: eba045c3148d0caceee3ca6f9d5352ea61726757
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "82825760"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243656"
 ---
 # <a name="yc-create-precompiled-header-file"></a>/Yc (создать предварительно скомпилированный заголовочный файл)
 
@@ -29,28 +30,28 @@ ms.locfileid: "82825760"
 ## <a name="syntax"></a>Синтаксис
 
 > __/Yc__\
-> __/Yc__*Имя файла* /Yc
+> *Имя файла* /Yc
 
 ## <a name="arguments"></a>Аргументы
 
-*файлов*<br/>
+*filename*<br/>
 Указывает файл заголовка (h). При использовании этого аргумента компилятор компилирует весь код и включает h-файл.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Если параметр **/Yc** указан без аргумента, компилятор компилирует весь код до конца базового исходного файла или до точки в базовом файле, где происходит директива [hdrstop](../../preprocessor/hdrstop.md) . Полученный PCH-файл имеет то же базовое имя, что и базовый исходный файл, если не указано другое имя файла с помощью директивы pragma **hdrstop** или параметра **/FP** .
 
 Предварительно скомпилированный код сохраняется в файле с именем, созданным на основе базового имени файла, указанного с помощью параметра **/Yc** , и расширения PCH. Можно также использовать [/FP (Name. PCH-файл)](fp-name-dot-pch-file.md) , чтобы указать имя файла предкомпилированного заголовка.
 
-При использовании __/Yc__*filename*компилятор компилирует весь код вплоть до указанного файла и включает его для последующего использования с параметром [/Yu (использовать предкомпилированный заголовочный файл)](yu-use-precompiled-header-file.md) .
+При использовании __/Yc__*filename* компилятор компилирует весь код вплоть до указанного файла и включает его для последующего использования с параметром [/Yu (использовать предкомпилированный заголовочный файл)](yu-use-precompiled-header-file.md) .
 
 Если параметры __/Yc__*filename* и __/Yu__*filename* выполняются в одной командной строке, и обе ссылки или подразумевают одно и то же имя файла, приоритет имеет значение __/Yc__*filename* . Эта функция упрощает написание файлов Makefile.
 
 Дополнительные сведения о предкомпилированных заголовках см. в следующих статьях:
 
-- [/Y (Предкомпилированные заголовки)](y-precompiled-headers.md)
+- [/Y (предварительно скомпилированные заголовки)](y-precompiled-headers.md)
 
-- [Файлы предварительно скомпилированных заголовков](../creating-precompiled-header-files.md)
+- [Файлы предкомпилированных заголовков](../creating-precompiled-header-files.md)
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Установка данного параметра компилятора в среде разработки Visual Studio
 
@@ -66,11 +67,11 @@ ms.locfileid: "82825760"
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Установка данного параметра компилятора программным способом
 
-- Ознакомьтесь с разделами <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.PrecompiledHeaderThrough%2A> и <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UsePrecompiledHeader%2A>.
+- См. разделы <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.PrecompiledHeaderThrough%2A> и <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UsePrecompiledHeader%2A>.
 
 ## <a name="example"></a>Пример
 
-Рассмотрим следующий код.
+Рассмотрим следующий код:
 
 ```cpp
 // prog.cpp
@@ -81,10 +82,10 @@ ms.locfileid: "82825760"
 // ...
 ```
 
-При компиляции этого кода с помощью команды `CL /YcMYAPP.H PROG.CPP`компилятор сохраняет всю предварительную обработку для AFXWIN. h, Resource. h и MyApp. h в файле предкомпилированного заголовка с именем MyApp. pch.
+При компиляции этого кода с помощью команды `CL /YcMYAPP.H PROG.CPP` компилятор сохраняет всю предварительную обработку для AFXWIN. h, Resource. h и MyApp. h в файле предкомпилированного заголовка с именем MyApp. pch.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Параметры компилятора КОМПИЛЯТОРОМ MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)<br/>
-[Файлы предварительно скомпилированных заголовков](../creating-precompiled-header-files.md)
+[Параметры компилятора MSVC](compiler-options.md)<br/>
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)<br/>
+[Файлы предкомпилированных заголовков](../creating-precompiled-header-files.md)

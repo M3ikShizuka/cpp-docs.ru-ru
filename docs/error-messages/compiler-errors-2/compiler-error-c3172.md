@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C3172'
 title: Ошибка компилятора C3172
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C3172
 ms.assetid: 1834e2fd-6036-4c33-aff2-b51bc7c99441
-ms.openlocfilehash: ca0eab35f6e60d81a324156905619ceb7ace8830
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: d8ce88960e725266723c3c37cd9bfbbbd342027b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91508285"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242175"
 ---
 # <a name="compiler-error-c3172"></a>Ошибка компилятора C3172
 
 "module_name": невозможно указать другие атрибуты idl_module в проекте
 
-[idl_module](../../windows/attributes/idl-module.md) в `dllname` `version` двух файлах при компиляции были обнаружены idl_module атрибуты с одинаковым именем, но разными параметрами или. `idl_module`Для каждой компиляции можно указать только один уникальный атрибут.
+[](../../windows/attributes/idl-module.md) в `dllname` `version` двух файлах при компиляции были обнаружены idl_module атрибуты с одинаковым именем, но разными параметрами или. `idl_module`Для каждой компиляции можно указать только один уникальный атрибут.
 
 Идентичные `idl_module` атрибуты могут быть указаны в нескольких файлах исходного кода.
 

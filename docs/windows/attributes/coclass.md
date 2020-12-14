@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о компоненте: coclass'
 title: coclass (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - coclass attribute
 ms.assetid: 42da6a10-3af9-4b43-9a1d-689d00b61eb3
-ms.openlocfilehash: 12f7af195f2282955cb16c1f38d4e512ca0f86cb
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9ff2198807407a7dfc56649ed80cb1fa2bafc17c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838884"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247375"
 ---
 # <a name="coclass"></a>кокласс
 
@@ -29,7 +30,7 @@ ms.locfileid: "88838884"
 
 При определении компонентного класса можно также указать атрибуты [UUID](uuid-cpp-attributes.md), [версии](version-cpp.md), [потоков](threading-cpp.md), [vi_progid](vi-progid.md)и [ProgID](progid.md) . Если один из них не указан, он будет создан.
 
-Если два файла заголовков содержат классы с атрибутом **coclass** и не указывают идентификатор GUID, компилятор будет использовать один и тот же идентификатор GUID для обоих классов, что приведет к ошибке MIDL.  Поэтому при `uuid` использовании **компонентного класса**следует использовать атрибут.
+Если два файла заголовков содержат классы с атрибутом **coclass** и не указывают идентификатор GUID, компилятор будет использовать один и тот же идентификатор GUID для обоих классов, что приведет к ошибке MIDL.  Поэтому при `uuid` использовании **компонентного класса** следует использовать атрибут.
 
 **Проекты ATL**
 

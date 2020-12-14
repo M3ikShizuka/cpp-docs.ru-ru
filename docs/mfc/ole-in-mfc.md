@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о OLE в MFC
 title: OLE в MFC
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - applications [OLE], about OLE
 - OLE component object model (COM)
 ms.assetid: 5193479d-1239-4697-aea4-e82f92c707ab
-ms.openlocfilehash: 529b6d0eaedaee200da547ef9ed980aab51ea233
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 125a2ad8e900747d859c03b57df33f2e7e5f1c28
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622175"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97244099"
 ---
 # <a name="ole-in-mfc"></a>OLE в MFC
 
@@ -36,9 +37,9 @@ ms.locfileid: "84622175"
 > [!NOTE]
 > Термин «OLE» обозначает технологии, связанные с связыванием и внедрением, включая контейнеры OLE, OLE-серверы, элементы OLE, встроенную активацию (или визуальное редактирование), инспекторы, перетаскивание и слияние меню. Термин активный применяется к COM и COM-объектам, таким как элементы управления ActiveX. Автоматизация OLE теперь называется автоматизацией.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 
-[Поддержка OLE](ole-background.md)<br/>
+[Фон OLE](ole-background.md)<br/>
 Описывает OLE и предоставляет концептуальную информацию о его работе.
 
 [Активация](activation-cpp.md)<br/>
@@ -62,7 +63,7 @@ ms.locfileid: "84622175"
 [Серверы](servers.md)<br/>
 Описывает создание элементов OLE (или компонентов) для использования в приложениях-контейнерах.
 
-[Средства отслеживания](trackers.md)<br/>
+[Trackers](trackers.md)<br/>
 Предоставляет сведения о `CRectTracker` классе, который предоставляет графический интерфейс, позволяющий пользователям взаимодействовать с ЭЛЕМЕНТАМИ OLE-клиента.
 
 ## <a name="related-sections"></a>Связанные разделы
@@ -78,4 +79,4 @@ ms.locfileid: "84622175"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Концепции](mfc-concepts.md)
+[Основные понятия](mfc-concepts.md)

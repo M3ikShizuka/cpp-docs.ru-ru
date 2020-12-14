@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: unique_ptr классе'
 title: Класс unique_ptr
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - std::unique_ptr [C++], reset
 - std::unique_ptr [C++], swap
 ms.assetid: acdf046b-831e-4a4a-83aa-6d4ee467db9a
-ms.openlocfilehash: 4e6c7d8dd9835545c4aaa677a39f5e3149743d14
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 888229c4e07a0b2189e46bcecd562e0177cfd67e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835679"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243696"
 ---
 # <a name="unique_ptr-class"></a>Класс unique_ptr
 
@@ -109,7 +110,7 @@ public:
 
 `unique_ptr` не генерирует исключения.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Класс `unique_ptr` заменяет значение `auto_ptr` и может использоваться в качестве элемента контейнеров стандартной библиотеки C++.
 
@@ -121,7 +122,7 @@ public:
 
 Сохраненный указатель на принадлежащий ресурс, `stored_ptr` относится к типу `pointer`. Он имеет значение `Del::pointer`, если определен, и значение `T *`, если не определен. Сохраненный объект `deleter``stored_deleter` не занимает пространство в объекте, если `deleter` не сохраняет данные о состоянии. Обратите внимание, что `Del` может быть ссылочным типом.
 
-## <a name="members"></a>Элементы
+## <a name="members"></a>Члены
 
 ### <a name="constructors"></a>Конструкторы
 
@@ -164,7 +165,7 @@ public:
 typedef Del deleter_type;
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом для параметра шаблона `Del`.
 
@@ -176,7 +177,7 @@ typedef Del deleter_type;
 typedef Type element_type;
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом для параметра шаблона `Ty`.
 
@@ -188,7 +189,7 @@ typedef Type element_type;
 pointer get() const;
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает значение `stored_ptr`.
 
@@ -202,7 +203,7 @@ Del& get_deleter();
 const Del& get_deleter() const;
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает ссылку на `stored_deleter`.
 
@@ -221,7 +222,7 @@ unique_ptr& operator=(pointer-type);
 
 Ссылка `unique_ptr`, используемая для назначения значения текущему `unique_ptr`.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Функции члена вызывают `reset(right.release())` и переходят `right.stored_deleter` к `stored_deleter` , а затем возвращают **`*this`** .
 
@@ -233,7 +234,7 @@ unique_ptr& operator=(pointer-type);
 typedef T1 pointer;
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Данный тип — это синоним для `Del::pointer`, если он определен; в противном случае — значение `Type *`.
 
@@ -245,7 +246,7 @@ typedef T1 pointer;
 pointer release();
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Используйте `release` для получения прав на владение необработанным указателем, сохраненным `unique_ptr`. Вызывающий объект отвечает за удаление возвращаемого указателя. Указателю `unique-ptr` присвоено пустое состояние, созданное по умолчанию. Для `unique_ptr` можно назначить другой указатель совместимого типа после вызова `release`.
 
@@ -311,11 +312,11 @@ void reset(nullptr_t ptr);
 *указатель*\
 Указатель на ресурс для получения права на владение.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Используйте `reset` , чтобы изменить сохраненный [указатель](#pointer) , принадлежащий, `unique_ptr` на *ptr* , а затем удалите исходный сохраненный указатель. Если указатель `unique_ptr` не был пуст, `reset` вызывает функцию удаления, возвращенную [get_deleter](#get_deleter), для исходного сохраненного указателя.
 
-Поскольку `reset` сначала сохраняет новый указатель указателя *ptr*мыши, а затем удаляется исходный сохраненный указатель, можно `reset` немедленно удалить *ptr* , если он совпадает с исходным сохраненным указателем.
+Поскольку `reset` сначала сохраняет новый указатель указателя мыши, а затем удаляется исходный сохраненный указатель, можно `reset` немедленно удалить *ptr* , если он совпадает с исходным сохраненным указателем.
 
 ### <a name="swap"></a><a name="swap"></a> позиции
 
@@ -330,7 +331,7 @@ void swap(unique_ptr& right);
 *Правильно*\
 Объект `unique_ptr`, используемый для замены указателей.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Эта функция-член меняет местами `stored_ptr` с `right.stored_ptr` и `stored_deleter` с `right.stored_deleter`.
 
@@ -368,7 +369,7 @@ template <class Ty2, Class Del2>
 *Правильно*\
 Объект `rvalue reference` в `unique_ptr`, из которого поля `unique_ptr` присваиваются перемещением в созданный `unique_ptr`.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Первые два конструктора создают объект, который не управляет никакими ресурсами. Третий *конструктор сохраняет* входные записи в `stored_ptr` . Четвертый *конструктор сохраняет* входные `stored_ptr` и `deleter` входные в `stored_deleter` .
 
@@ -382,6 +383,6 @@ template <class Ty2, Class Del2>
 ~unique_ptr();
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Деструктор вызывает `get_deleter()(stored_ptr)`.

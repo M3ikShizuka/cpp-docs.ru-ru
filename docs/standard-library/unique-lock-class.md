@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: unique_lock классе'
 title: Класс unique_lock
 ms.date: 11/04/2016
 f1_keywords:
 - mutex/std::unique_lock
 ms.assetid: f4ed8ba9-c8af-446f-8ef0-0b356bad14bd
-ms.openlocfilehash: be53f66296612f1b44790393907028bfc4d062ff
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 6e7f5ddadce00814196e630b27570e21176c0e62
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88834223"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243722"
 ---
 # <a name="unique_lock-class"></a>Класс unique_lock
 
@@ -48,7 +49,7 @@ class unique_lock;
 |name|Описание|
 |----------|-----------------|
 |[lock](#lock)|Блокирует вызывающий поток до тех пор, пока этот поток не получит права владельца соответствующего объекта `mutex`.|
-|[мьютекс](#mutex)|Извлекает сохраненный указатель на соответствующий объект `mutex`.|
+|[принадлежащ](#mutex)|Извлекает сохраненный указатель на соответствующий объект `mutex`.|
 |[owns_lock](#owns_lock)|Указывает, является ли вызывающий поток владельцем соответствующего объекта `mutex`.|
 |[отпускании](#release)|Отменяет связь объекта `unique_lock` с объектом `mutex`.|
 |[позиции](#swap)|Меняет местами соответствующий `mutex` и статус владения с аналогичными свойствами указанного объекта.|
@@ -82,7 +83,7 @@ class unique_lock;
 void lock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если сохраненный `mutex` указатель имеет значение null, этот метод создает исключение [system_error](../standard-library/system-error-class.md) с кодом ошибки `operation_not_permitted` .
 
@@ -127,7 +128,7 @@ unique_lock& operator=(unique_lock&& Other) noexcept;
 
 `*this`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вызывающий поток является владельцем ранее назначенного объекта `mutex`, то перед вызовом `unlock` на `mutex` этот метод назначает новые значения.
 
@@ -157,7 +158,7 @@ mutex_type *release() noexcept;
 
 Предыдущее значение сохраненного указателя `mutex`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод задает значение сохраненного `mutex` указателя равным 0 и устанавливает `mutex` для внутреннего флага владения **`false`** .
 
@@ -186,7 +187,7 @@ bool try_lock() noexcept;
 
 **`true`** значение, если метод успешно получает владение `mutex` ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если сохраненный `mutex` указатель имеет значение null, метод создает исключение [system_error](../standard-library/system-error-class.md) с кодом ошибки `operation_not_permitted` .
 
@@ -211,7 +212,7 @@ bool try_lock_for(
 
 **`true`** значение, если метод успешно получает владение `mutex` ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если сохраненный `mutex` указатель имеет значение null, метод создает исключение [system_error](../standard-library/system-error-class.md) с кодом ошибки `operation_not_permitted` .
 
@@ -237,7 +238,7 @@ bool try_lock_until(const xtime* Abs_time);
 
 **`true`** значение, если метод успешно получает владение `mutex` ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если сохраненный `mutex` указатель имеет значение null, метод создает исключение [system_error](../standard-library/system-error-class.md) с кодом ошибки `operation_not_permitted` .
 
@@ -285,7 +286,7 @@ unique_lock(mutex_type& Mtx,
 *Иной*\
 Объект `unique_lock`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый конструктор создает объект, у которого значение соответствующего указателя мьютекса равно 0.
 
@@ -310,7 +311,7 @@ unique_lock(mutex_type& Mtx,
 ~unique_lock() noexcept;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вызывающий поток является владельцем соответствующего объекта `mutex`, деструктор освобождает права владения, вызывая метод unlock для объекта `mutex`.
 
@@ -322,7 +323,7 @@ unique_lock(mutex_type& Mtx,
 void unlock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вызывающий поток не является владельцем соответствующего объекта `mutex`, этот метод создает исключение [system_error](../standard-library/system-error-class.md) с кодом ошибки `operation_not_permitted`.
 

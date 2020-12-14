@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: Platform:: Collections:: UnorderedMap Class'
 title: Класс Platform::Collections::UnorderedMap
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::UnorderedMap
 ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
-ms.openlocfilehash: ec458f5d4a47b6eced939c4fe346d5d0414ea7c2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 51acfa7e411f96addd8a33024224779c32ebcda0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839131"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242539"
 ---
 # <a name="platformcollectionsunorderedmap-class"></a>Класс Platform::Collections::UnorderedMap
 
@@ -29,16 +30,16 @@ ref class Map sealed;
 
 #### <a name="parameters"></a>Параметры
 
-*Занят*<br/>
+*K*<br/>
 Тип ключа в паре "ключ-значение".
 
-*3,3*<br/>
+*V*<br/>
 Тип значения в паре "ключ-значение".
 
 *В*<br/>
 Тип, предоставляющий объект функции, который может сравнить два значения элементов как ключи сортировки для определения их относительного порядка в объекте Map. По умолчанию [std:: equal_to \<K> ](../standard-library/equal-to-struct.md).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Допустимые типы:
 
@@ -119,7 +120,7 @@ virtual Windows::Foundation::Collections::IIterator<
 
 Итератор, указывающий первый элемент на карте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Удобным способом удержания итератора, возвращенного первым (), является присвоение возвращаемого значения переменной, объявленной с **`auto`** ключевым словом выведения типа. Например, `auto x = myUnorderedMap->First();`.
 

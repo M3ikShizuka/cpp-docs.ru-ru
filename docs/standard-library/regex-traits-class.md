@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: regex_traits классе'
 title: Класс regex_traits
 ms.date: 09/10/2018
 f1_keywords:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - std::regex_traits [C++], imbue
 - std::regex_traits [C++], getloc
 ms.assetid: bc5a5eed-32fc-4eb7-913d-71c42e729e81
-ms.openlocfilehash: 8879336c48d0fec8a20411abf1c07d570a1575e7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 419e0d242c43c644b6c67c48b0c28b09e96e59b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366393"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243813"
 ---
 # <a name="regex_traits-class"></a>Класс regex_traits
 
@@ -61,9 +62,9 @@ class regex_traits
 *Elem*\
 Тип элемента символа для описания.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Шаблон класса описывает различные регулярные черты выражения для типа *Elem.* Шаблон класса [basic_regex класса](../standard-library/basic-regex-class.md) использует эту информацию для управления элементами типа *Elem.*
+Шаблон класса описывает различные признаки регулярных выражений для типа *elem*. Шаблон класса [Basic_regex класс](../standard-library/basic-regex-class.md) использует эти сведения для управления элементами типа *elem*.
 
 Каждый объект `regex_traits` содержит объект типа `regex_traits::locale` , используемый некоторыми из его функций-членов. Языковой стандарт по умолчанию является копией `regex_traits::locale()`. Функция-член `imbue` заменяет объект языкового стандарта, а функция-член `getloc` возвращает копию объекта языкового стандарта.
 
@@ -89,11 +90,11 @@ class regex_traits
 |-|-|
 |[getloc](#getloc)|Возвращает сохраненный объект языкового стандарта.|
 |[imbue](#imbue)|Изменяет сохраненный объект языкового стандарта.|
-|[истип](#isctype)|Проверяет членство в классе.|
-|[длина](#length)|Возвращает длину нулевой последовательности.|
+|[Функция CType](#isctype)|Проверяет членство в классе.|
+|[length](#length)|Возвращает длину последовательности, завершающейся нулем.|
 |[lookup_classname](#lookup_classname)|Сопоставляет последовательность с классом символов.|
 |[lookup_collatename](#lookup_collatename)|Сопоставляет последовательность с элементом упорядочивания.|
-|[Преобразования](#transform)|Преобразует в эквивалентную упорядоченную последовательность.|
+|[Преобразует](#transform)|Преобразует в эквивалентную упорядоченную последовательность.|
 |[transform_primary](#transform_primary)|Преобразует в эквивалентную упорядоченную последовательность без учета регистра.|
 |[Перевести](#translate)|Преобразует в эквивалентный соответствующий элемент.|
 |[translate_nocase](#translate_nocase)|Преобразует в эквивалентный соответствующий элемент без учета регистра.|
@@ -101,7 +102,7 @@ class regex_traits
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<regex>
+**Заголовок:**\<regex>
 
 **Пространство имен:** std
 
@@ -175,7 +176,7 @@ class digit == d == true
 hex C == 12
 ```
 
-## <a name="regex_traitschar_class_type"></a><a name="char_class_type"></a>regex_traits::char_class_type
+## <a name="regex_traitschar_class_type"></a><a name="char_class_type"></a> regex_traits:: char_class_type
 
 Тип обозначений класса символов.
 
@@ -183,11 +184,11 @@ hex C == 12
 typedef T8 char_class_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип является синонимом незаданного типа, который обозначает классы символов. Значения этого типа могут быть объединены с помощью оператора `|` для обозначения классов символов, которые представляют собой объединение классов, указанных операндами.
 
-## <a name="regex_traitschar_type"></a><a name="char_type"></a>regex_traits:::char_type
+## <a name="regex_traitschar_type"></a><a name="char_type"></a> regex_traits:: char_type
 
 Тип элемента.
 
@@ -195,11 +196,11 @@ typedef T8 char_class_type;
 typedef Elem char_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Определение типа является синонимом параметра шаблона `Elem`.
 
-## <a name="regex_traitsgetloc"></a><a name="getloc"></a>regex_traits::getloc
+## <a name="regex_traitsgetloc"></a><a name="getloc"></a> regex_traits:: getloc
 
 Возвращает сохраненный объект языкового стандарта.
 
@@ -207,11 +208,11 @@ typedef Elem char_type;
 locale_type getloc() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член возвращает хранимый объект `locale` .
 
-## <a name="regex_traitsimbue"></a><a name="imbue"></a>regex_traits::imbue
+## <a name="regex_traitsimbue"></a><a name="imbue"></a> regex_traits:: imbue
 
 Изменяет сохраненный объект языкового стандарта.
 
@@ -224,11 +225,11 @@ locale_type imbue(locale_type loc);
 *Loc*\
 Объект языкового стандарта, который необходимо сохранить.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Функция участника копирует *лок* к `locale` сохраненного объекту и возвращает копию предыдущего значения сохраненного `locale` объекта.
+Функция-член копирует *Loc* в сохраненный `locale` объект и возвращает копию предыдущего значения сохраненного `locale` объекта.
 
-## <a name="regex_traitsisctype"></a><a name="isctype"></a>regex_traits::isctype
+## <a name="regex_traitsisctype"></a><a name="isctype"></a> regex_traits:: "CType"
 
 Проверяет членство в классе.
 
@@ -238,19 +239,19 @@ bool isctype(char_type ch, char_class_type cls) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Ch*\
+*канал*\
 Элемент для проверки.
 
-*Cls*\
+*Спецификация*\
 Классы для проверки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Функция участника возвращается верно *ch* только в том случае, если ch-символ находится в классе символов, обозначенном *cls.*
+Функция-член возвращает значение true, только если символ *CH* находится в классе символов, обозначенном *CLS*.
 
-## <a name="regex_traitslength"></a><a name="length"></a>regex_traits::длина
+## <a name="regex_traitslength"></a><a name="length"></a> regex_traits:: Length
 
-Возвращает длину нулевой последовательности.
+Возвращает длину последовательности, завершающейся нулем.
 
 ```cpp
 static size_type length(const char_type *str);
@@ -258,14 +259,14 @@ static size_type length(const char_type *str);
 
 ### <a name="parameters"></a>Параметры
 
-*Ул*\
-Последовательность с нулевым завершением.
+*str*\
+Последовательность, завершающаяся нулем.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Статическая функция-член возвращает значение `std::char_traits<char_type>::length(str)`.
 
-## <a name="regex_traitslocale_type"></a><a name="locale_type"></a>regex_traits::locale_type
+## <a name="regex_traitslocale_type"></a><a name="locale_type"></a> regex_traits:: locale_type
 
 Тип сохраненного объекта языкового стандарта.
 
@@ -273,11 +274,11 @@ static size_type length(const char_type *str);
 typedef T7 locale_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Определение типа является синонимом типа, который инкапсулирует языковые стандарты. В специализациях `regex_traits<char>` и `regex_traits<wchar_t>` он является синонимом `std::locale`.
 
-## <a name="regex_traitslookup_classname"></a><a name="lookup_classname"></a>regex_traits::lookup_classname
+## <a name="regex_traitslookup_classname"></a><a name="lookup_classname"></a> regex_traits:: lookup_classname
 
 Сопоставляет последовательность с классом символов.
 
@@ -288,13 +289,13 @@ char_class_type lookup_classname(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Первый*\
+*началь*\
 Начало искомой последовательности.
 
-*Последний*\
+*Последняя*\
 Конец искомой последовательности.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает значение, которое определяет класс символов с именем, образуемым последовательностью символов, на которую указывают аргументы. Значение не зависит от регистра символов в последовательности.
 
@@ -302,7 +303,7 @@ char_class_type lookup_classname(FwdIt first, FwdIt last) const;
 
 Специализация `regex_traits<wchar_t>` распознает имена `L"d"`, `L"s"`, `L"w"`, `L"alnum"`, `L"alpha"`, `L"blank"`, `L"cntrl"`, `L"digit"`, `L"graph"`, `L"lower"`, `L"print"`, `L"punct"`, `L"space"`, `L"upper"` и `L"xdigit"`, все без учета регистра.
 
-## <a name="regex_traitslookup_collatename"></a><a name="lookup_collatename"></a>regex_traits::lookup_collatename
+## <a name="regex_traitslookup_collatename"></a><a name="lookup_collatename"></a> regex_traits:: lookup_collatename
 
 Сопоставляет последовательность с элементом упорядочивания.
 
@@ -313,17 +314,17 @@ string_type lookup_collatename(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Первый*\
+*началь*\
 Начало искомой последовательности.
 
-*Последний*\
+*Последняя*\
 Конец искомой последовательности.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает строковый объект, содержащий элемент упорядочивания, соответствующий последовательности `[first, last)`, или пустую строку, если последовательность не является допустимым элементом упорядочивания.
 
-## <a name="regex_traitsregex_traits"></a><a name="regex_traits"></a>regex_traits::regex_traits
+## <a name="regex_traitsregex_traits"></a><a name="regex_traits"></a> regex_traits:: regex_traits
 
 Создает объект.
 
@@ -331,11 +332,11 @@ string_type lookup_collatename(FwdIt first, FwdIt last) const;
 regex_traits();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конструктор создает объект, хранимый объект `locale` которого инициализируется с  языковым стандартом по умолчанию.
 
-## <a name="regex_traitssize_type"></a><a name="size_type"></a>regex_traits::size_type
+## <a name="regex_traitssize_type"></a><a name="size_type"></a> regex_traits:: size_type
 
 Тип длины последовательности.
 
@@ -343,13 +344,13 @@ regex_traits();
 typedef T6 size_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Typedef выступает синонимом для целочисленного типа без знака. В специализациях `regex_traits<char>` и `regex_traits<wchar_t>` он является синонимом `std::size_t`.
 
 Typedef является синонимом `std::size_t`.
 
-## <a name="regex_traitsstring_type"></a><a name="string_type"></a>regex_traits::string_type
+## <a name="regex_traitsstring_type"></a><a name="string_type"></a> regex_traits:: string_type
 
 Тип строки элементов.
 
@@ -357,11 +358,11 @@ Typedef является синонимом `std::size_t`.
 typedef basic_string<Elem> string_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Typedef является синонимом `basic_string<Elem>`.
 
-## <a name="regex_traitstransform"></a><a name="transform"></a>regex_traits::преобразование
+## <a name="regex_traitstransform"></a><a name="transform"></a> regex_traits:: Transform
 
 Преобразует в эквивалентную упорядоченную последовательность.
 
@@ -372,17 +373,17 @@ string_type transform(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Первый*\
+*началь*\
 Начало преобразуемой последовательности.
 
-*Последний*\
+*Последняя*\
 Конец преобразуемой последовательности.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает строку, которая создается с помощью правила преобразования, зависящего от сохраненного объекта `locale` . Для двух последовательностей символов, указанных диапазонами итератора `[first1, last1)` и `[first2, last2)`, значение `transform(first1, last1) < transform(first2, last2)` , если последовательность символов, указанная диапазоном итератора `[first1, last1)` , предшествует последовательности символов, указанной диапазоном итератора `[first2, last2)`.
 
-## <a name="regex_traitstransform_primary"></a><a name="transform_primary"></a>regex_traits::transform_primary
+## <a name="regex_traitstransform_primary"></a><a name="transform_primary"></a> regex_traits:: transform_primary
 
 Преобразует в эквивалентную упорядоченную последовательность без учета регистра.
 
@@ -393,17 +394,17 @@ string_type transform_primary(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Первый*\
+*началь*\
 Начало преобразуемой последовательности.
 
-*Последний*\
+*Последняя*\
 Конец преобразуемой последовательности.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает строку, которая создается с помощью правила преобразования, зависящего от сохраненного объекта `locale` . Для двух последовательностей символов, указанных диапазонами итератора `[first1, last1)` и `[first2, last2)`, выражение `transform_primary(first1, last1) < transform_primary(first2, last2)` , если последовательность символов, указанная диапазоном итератора `[first1, last1)` , выполняет сортировку до последовательности символов, указанной диапазоном итератора `[first2, last2)` , без учета регистра и диакритических знаков.
 
-## <a name="regex_traitstranslate"></a><a name="translate"></a>regex_traits::перевод
+## <a name="regex_traitstranslate"></a><a name="translate"></a> regex_traits:: сдвиг
 
 Преобразует в эквивалентный соответствующий элемент.
 
@@ -413,14 +414,14 @@ char_type translate(char_type ch) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Ch*\
+*канал*\
 Преобразуемый элемент.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает символ, который создается с помощью правила преобразования, зависящего от сохраненного объекта `locale` . Для двух объектов `char_type` , `ch1` и `ch2`, значение `translate(ch1) == translate(ch2)` , только если `ch1` и `ch2` должны совпадать, когда один объект возникает в определении регулярного выражения, а второй — в соответствующей позиции в целевой последовательности для сопоставления, зависящего от языкового стандарта.
 
-## <a name="regex_traitstranslate_nocase"></a><a name="translate_nocase"></a>regex_traits::translate_nocase
+## <a name="regex_traitstranslate_nocase"></a><a name="translate_nocase"></a> regex_traits:: translate_nocase
 
 Преобразует в эквивалентный соответствующий элемент без учета регистра.
 
@@ -430,14 +431,14 @@ char_type translate_nocase(char_type ch) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Ch*\
+*канал*\
 Преобразуемый элемент.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает символ, который создается с помощью правила преобразования, зависящего от сохраненного объекта `locale` . Для двух объектов `char_type` , `ch1` и `ch2`, значение `translate_nocase(ch1) == translate_nocase(ch2)` , только если `ch1` и `ch2` должны совпадать, когда один объект возникает в определении регулярного выражения, а второй — в соответствующей позиции в целевой последовательности для сопоставления, не учитывающего регистр.
 
-## <a name="regex_traitsvalue"></a><a name="value"></a>regex_traits::стоимость
+## <a name="regex_traitsvalue"></a><a name="value"></a> regex_traits:: value
 
 Преобразует элемент в цифровое значение.
 
@@ -447,25 +448,25 @@ int value(Elem ch, int radix) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Ch*\
+*канал*\
 Преобразуемый элемент.
 
-*Radix*\
+*основание системы счисления*\
 Используемое арифметическое основание.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Функция участника возвращает значение, представленное *ch* символом в базовом *радиусе,* или -1, если *ch* не является действительной цифрой в базовом *радиксе.* Функция будет вызываться только с *аргументом радикса* 8, 10 или 16.
+Функция-член возвращает значение, представленное символом *CH* в базовом представлении системы *счисления*, или значение – 1, если *CH* не является допустимой цифрой в базовом *основание системы счисления*. Функция будет вызываться только с аргументом системы *счисления* 8, 10 или 16.
 
 ## <a name="see-also"></a>См. также раздел
 
 [\<regex>](../standard-library/regex.md)\
-[класс regex_constants](../standard-library/regex-constants-class.md)\
-[regex_error класс](../standard-library/regex-error-class.md)\
-[\<функции regex>](../standard-library/regex-functions.md)\
-[класс regex_iterator](../standard-library/regex-iterator-class.md)\
-[\<операторы regex>](../standard-library/regex-operators.md)\
-[класс regex_token_iterator](../standard-library/regex-token-iterator-class.md)\
-[\<regex> typedefs](../standard-library/regex-typedefs.md)\
-[regex_traits\<> класса](../standard-library/regex-traits-char-class.md)\
-Класс [regex_traits\<wchar_t>](../standard-library/regex-traits-wchar-t-class.md)
+[Класс regex_constants](../standard-library/regex-constants-class.md)\
+[Класс regex_error](../standard-library/regex-error-class.md)\
+[\<regex> функции](../standard-library/regex-functions.md)\
+[Класс regex_iterator](../standard-library/regex-iterator-class.md)\
+[\<regex> операторы](../standard-library/regex-operators.md)\
+[Класс regex_token_iterator](../standard-library/regex-token-iterator-class.md)\
+[\<regex> определения типов](../standard-library/regex-typedefs.md)\
+[\<char>класс regex_traits](../standard-library/regex-traits-char-class.md)\
+[\<wchar_t>класс regex_traits](../standard-library/regex-traits-wchar-t-class.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C3159'
 title: Ошибка компилятора C3159
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - C3159
 ms.assetid: e115cc76-0021-4568-95fd-61a324c41a85
-ms.openlocfilehash: 97905478a6ba4672eff1679198e8e6d3db30818c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: f100b76f003f33ced8adde43d6c6711487a38257
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62374811"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97242409"
 ---
 # <a name="compiler-error-c3159"></a>Ошибка компилятора C3159
 
-«указатель»: нельзя объявить массив указателей на тип значения
+"указатель": массив указателей на тип значения не может быть объявлен
 
 Невозможно объявить массив указателей на тип значения.
 
-C3159 доступен только с помощью параметра компилятора устаревшие **/CLR: oldSyntax**.
+C3159 доступен только при использовании устаревшего параметра компилятора **/clr: oldSyntax**.

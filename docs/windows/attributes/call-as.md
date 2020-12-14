@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: call_as'
 title: call_as (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - call_as attribute
 ms.assetid: a09d7f1f-353b-4870-9b45-f0284161695d
-ms.openlocfilehash: 9ae620ed6f2b01cc52e4a9c76217f044db925f11
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: de407da1401479327185c6133c625d61e1e221cf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88838924"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97247453"
 ---
 # <a name="call_as"></a>call_as
 
@@ -28,7 +29,7 @@ ms.locfileid: "88838924"
 *function*<br/>
 Локальная функция, которая должна вызываться при вызове удаленной функции.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Атрибут **call_as** C++ имеет те же функциональные возможности, что и атрибут [call_as](/windows/win32/Midl/call-as) MIDL.
 

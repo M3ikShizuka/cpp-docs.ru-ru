@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: regex_token_iterator классе'
 title: Класс regex_token_iterator
 ms.date: 09/10/2018
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - std::regex_token_iterator [C++], pointer
 - std::regex_token_iterator [C++], reference
 ms.assetid: a213ba48-8e4e-4b6b-871a-2637acf05f15
-ms.openlocfilehash: 5ada2ad69cbcac15e09968045e54095dfb2623d1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 752ff44864b435100bacb83250a5c6a792cab502
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366404"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243891"
 ---
 # <a name="regex_token_iterator-class"></a>Класс regex_token_iterator
 
@@ -45,24 +46,24 @@ class regex_token_iterator
 
 ## <a name="parameters"></a>Параметры
 
-*BidIt*\
+*Двунаправленный*\
 Тип итератора для подстрок соответствия.
 
 *Elem*\
 Тип элементов для обеспечения соответствия.
 
-*RXtraits*\
+*ркстраитс*\
 Класс характеристик для элементов.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Шаблон класса описывает постоянный объект итератора вперед. По существу, он содержит объект `regex_iterator` , который использует для поиска соответствий регулярного выражения в последовательности символов. Он извлекает объекты типа `sub_match<BidIt>` , представляющие подстроки соответствия, идентифицируемые значениями индекса в хранимом векторе `subs` , для каждого совпадения регулярного выражения.
+Шаблон класса описывает постоянный объект итератора прямой. По существу, он содержит объект `regex_iterator` , который использует для поиска соответствий регулярного выражения в последовательности символов. Он извлекает объекты типа `sub_match<BidIt>` , представляющие подстроки соответствия, идентифицируемые значениями индекса в хранимом векторе `subs` , для каждого совпадения регулярного выражения.
 
 Значение индекса -1 обозначает, что последовательность символов начинается сразу после окончания предыдущего совпадения регулярного выражения или в начале последовательности символов, если нет предыдущего совпадения регулярного выражения, и продолжается до (но не включает) первого символа текущего совпадения регулярного выражения или до конца последовательности символов, если нет текущего совпадения. Любое другое значение индекса `idx` определяет содержимое группы записи, содержащейся в `it.match[idx]`.
 
-### <a name="members"></a>Участники
+### <a name="members"></a>Элементы
 
-|Участник|Значение по умолчанию|
+|Член|Значение по умолчанию|
 |-|-|
 |`private regex_iterator<BidIt, Elem, RXtraits> it`||
 |`private vector<int> subs`||
@@ -80,24 +81,24 @@ class regex_token_iterator
 |-|-|
 |[difference_type](#difference_type)|Тип разницы итератора.|
 |[iterator_category](#iterator_category)|Тип категории итератора.|
-|[указатель](#pointer)|Тип указателя на совпадение.|
-|[Ссылки](#reference)|Тип ссылки на подстроку соответствия.|
+|[вид](#pointer)|Тип указателя на совпадение.|
+|[reference](#reference)|Тип ссылки на подстроку соответствия.|
 |[regex_type](#regex_type)|Тип регулярного выражения для сопоставления.|
-|[Value_type](#value_type)|Тип подстроки соответствия.|
+|[value_type](#value_type)|Тип подстроки соответствия.|
 
 ### <a name="operators"></a>Операторы
 
 |Оператор|Описание|
 |-|-|
-|[оператора!](#op_neq)|Сравнивает итераторы на неравенство.|
-|[оператор](#op_star)|Обращается к заданной подстроке соответствия.|
-|[оператор](#op_add_add)|Увеличивает значение итератора.|
-|[оператора](#op_eq_eq)|Сравнивает итераторы на равенство.|
-|[оператор->](#op_arrow)|Обращается к заданной подстроке соответствия.|
+|[operator! =](#op_neq)|Сравнивает итераторы на неравенство.|
+|[станции](#op_star)|Обращается к заданной подстроке соответствия.|
+|[operator + +](#op_add_add)|Увеличивает значение итератора.|
+|[Оператор = =](#op_eq_eq)|Сравнивает итераторы на равенство.|
+|[Оператор->](#op_arrow)|Обращается к заданной подстроке соответствия.|
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<regex>
+**Заголовок:**\<regex>
 
 **Пространство имен:** std
 
@@ -197,7 +198,7 @@ match == aa
 match == z
 ```
 
-## <a name="regex_token_iteratordifference_type"></a><a name="difference_type"></a>regex_token_iterator::difference
+## <a name="regex_token_iteratordifference_type"></a><a name="difference_type"></a> regex_token_iterator::d ifference_type
 
 Тип разницы итератора.
 
@@ -205,11 +206,11 @@ match == z
 typedef std::ptrdiff_t difference_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип является синонимом `std::ptrdiff_t`.
 
-## <a name="regex_token_iteratoriterator_category"></a><a name="iterator_category"></a>regex_token_iterator::iterator_category
+## <a name="regex_token_iteratoriterator_category"></a><a name="iterator_category"></a> regex_token_iterator:: iterator_category
 
 Тип категории итератора.
 
@@ -217,11 +218,11 @@ typedef std::ptrdiff_t difference_type;
 typedef std::forward_iterator_tag iterator_category;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип является синонимом `std::forward_iterator_tag`.
 
-## <a name="regex_token_iteratoroperator"></a><a name="op_neq"></a>regex_token_iterator::оператор!
+## <a name="regex_token_iteratoroperator"></a><a name="op_neq"></a> regex_token_iterator:: operator! =
 
 Сравнивает итераторы на неравенство.
 
@@ -234,11 +235,11 @@ bool operator!=(const regex_token_iterator& right);
 *Правильно*\
 Итератор для сравнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает значение `!(*this == right)`.
 
-## <a name="regex_token_iteratoroperator"></a><a name="op_star"></a>regex_token_iterator:оператор
+## <a name="regex_token_iteratoroperator"></a><a name="op_star"></a> regex_token_iterator:: operator *
 
 Обращается к заданной подстроке соответствия.
 
@@ -246,11 +247,11 @@ bool operator!=(const regex_token_iterator& right);
 const sub_match<BidIt>& operator*();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает объект `sub_match<BidIt>` , представляющий группу записи, указанную значением индекса `subs[pos]`.
 
-## <a name="regex_token_iteratoroperator"></a><a name="op_add_add"></a>regex_token_iterator:оператор
+## <a name="regex_token_iteratoroperator"></a><a name="op_add_add"></a> regex_token_iterator:: operator + +
 
 Увеличивает значение итератора.
 
@@ -260,13 +261,13 @@ regex_token_iterator& operator++();
 regex_token_iterator& operator++(int);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если сохраненный итератор `it` является итератором конца последовательности, то первый оператор задает для сохраненного значения `pos` значение `subs.size()` (образуя, тем самым, итератор конца последовательности). В противном случае оператор увеличивает сохраненное значение `pos`. Если результат равен значению `subs.size()`, он задает сохраненное значение `pos` равным нулю и увеличивает значение сохраненного итератора `it`. Если при увеличении сохраненного итератора он остается неравным итератору конца последовательности, оператор не больше ничего не делает. В противном случае, если предыдущее совпадение остановилось в конце последовательности символов, оператор задает для сохраненного значения `pos` значение `subs.size()`. В противном случае оператор многократно увеличивает сохраненное значение `pos` до `pos == subs.size()` или `subs[pos] == -1` (поэтому следующее разыменование итератора возвратит завершающую часть последовательности символов, если одно из значений индекса равно -1). Во всех случаях оператор возвращает объект.
 
 Второй оператор создает копию объекта, увеличивает объект, а затем возвращает копию.
 
-## <a name="regex_token_iteratoroperator"></a><a name="op_eq_eq"></a>regex_token_iterator::оператор
+## <a name="regex_token_iteratoroperator"></a><a name="op_eq_eq"></a> regex_token_iterator:: operator = =
 
 Сравнивает итераторы на равенство.
 
@@ -279,11 +280,11 @@ bool operator==(const regex_token_iterator& right);
 *Правильно*\
 Итератор для сравнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает значение `it == right.it && subs == right.subs && pos == right.pos`.
 
-## <a name="regex_token_iteratoroperator-gt"></a><a name="op_arrow"></a>regex_token_iterator::оператор-&gt;
+## <a name="regex_token_iteratoroperator-gt"></a><a name="op_arrow"></a> regex_token_iterator:: operator —&gt;
 
 Обращается к заданной подстроке соответствия.
 
@@ -291,11 +292,11 @@ bool operator==(const regex_token_iterator& right);
 const sub_match<BidIt> * operator->();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает указатель на объект `sub_match<BidIt>` , представляющий группу записи, указанную значением индекса `subs[pos]`.
 
-## <a name="regex_token_iteratorpointer"></a><a name="pointer"></a>regex_token_iterator::pointer
+## <a name="regex_token_iteratorpointer"></a><a name="pointer"></a> regex_token_iterator::p оинтер
 
 Тип указателя на совпадение.
 
@@ -303,11 +304,11 @@ const sub_match<BidIt> * operator->();
 typedef sub_match<BidIt> *pointer;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом для `sub_match<BidIt>*`, где `BidIt` — параметр шаблона.
 
-## <a name="regex_token_iteratorreference"></a><a name="reference"></a>regex_token_iterator::reference
+## <a name="regex_token_iteratorreference"></a><a name="reference"></a> regex_token_iterator:: Reference
 
 Тип ссылки на подстроку соответствия.
 
@@ -315,11 +316,11 @@ typedef sub_match<BidIt> *pointer;
 typedef sub_match<BidIt>& reference;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом для `sub_match<BidIt>&`, где `BidIt` — параметр шаблона.
 
-## <a name="regex_token_iteratorregex_token_iterator"></a><a name="regex_token_iterator"></a>regex_token_iterator::regex_token_iterator
+## <a name="regex_token_iteratorregex_token_iterator"></a><a name="regex_token_iterator"></a> regex_token_iterator:: regex_token_iterator
 
 Формирует итератор.
 
@@ -342,19 +343,19 @@ regex_token_iterator(BidIt first, BidIt last,
 
 ### <a name="parameters"></a>Параметры
 
-*Первый*\
+*началь*\
 Начало последовательности для сопоставления.
 
-*Последний*\
+*Последняя*\
 Конец последовательности для сопоставления.
 
-*Повторно*\
+*восстановлен*\
 Регулярное выражение для соответствий.
 
-*F*\
+*ж*\
 Флаги для соответствий.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый конструктор создает итератор конца последовательности.
 
@@ -364,7 +365,7 @@ regex_token_iterator(BidIt first, BidIt last,
 
 Четвертый конструктор создает объект, сохраненный итератор `it` которого инициализируется `regex_iterator<BidIt, Elem, RXtraits>(first, last, re, f)`, сохраненный вектор `subs` которого содержит значения `N` , на которые указывает аргумент конструктора `submatches`, и сохраненное значение которого `pos` равно нулю.
 
-## <a name="regex_token_iteratorregex_type"></a><a name="regex_type"></a>regex_token_iterator::regex_type
+## <a name="regex_token_iteratorregex_type"></a><a name="regex_type"></a> regex_token_iterator:: regex_type
 
 Тип регулярного выражения для сопоставления.
 
@@ -372,11 +373,11 @@ regex_token_iterator(BidIt first, BidIt last,
 typedef basic_regex<Elem, RXtraits> regex_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Typedef является синонимом `basic_regex<Elem, RXtraits>`.
 
-## <a name="regex_token_iteratorvalue_type"></a><a name="value_type"></a>regex_token_iterator::value_type
+## <a name="regex_token_iteratorvalue_type"></a><a name="value_type"></a> regex_token_iterator:: value_type
 
 Тип подстроки соответствия.
 
@@ -384,17 +385,17 @@ Typedef является синонимом `basic_regex<Elem, RXtraits>`.
 typedef sub_match<BidIt> value_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот тип является синонимом для `sub_match<BidIt>`, где `BidIt` — параметр шаблона.
 
 ## <a name="see-also"></a>См. также раздел
 
 [\<regex>](../standard-library/regex.md)\
-[класс regex_constants](../standard-library/regex-constants-class.md)\
-[regex_error класс](../standard-library/regex-error-class.md)\
-[\<функции regex>](../standard-library/regex-functions.md)\
-[класс regex_iterator](../standard-library/regex-iterator-class.md)\
-[\<операторы regex>](../standard-library/regex-operators.md)\
-[класс regex_traits](../standard-library/regex-traits-class.md)\
-[\<regex> typedefs](../standard-library/regex-typedefs.md)
+[Класс regex_constants](../standard-library/regex-constants-class.md)\
+[Класс regex_error](../standard-library/regex-error-class.md)\
+[\<regex> функции](../standard-library/regex-functions.md)\
+[Класс regex_iterator](../standard-library/regex-iterator-class.md)\
+[\<regex> операторы](../standard-library/regex-operators.md)\
+[Класс regex_traits](../standard-library/regex-traits-class.md)\
+[\<regex> определения типов](../standard-library/regex-typedefs.md)
