@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения: упаковка (C++/CX)'
 title: Упаковка-преобразование (C++/CX)
 ms.date: 12/30/2016
 ms.assetid: edfb12fa-2a9b-42f6-bdac-d4d76cb8274e
-ms.openlocfilehash: 59c7f8ec56a912ed993316fba093b87bd85e16b1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 50b7f3f071fcd0109a85fb24985024666bd8fad3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233539"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302742"
 ---
 # <a name="boxing-ccx"></a>Упаковка-преобразование (C++/CX)
 
@@ -36,7 +37,7 @@ C# и Visual Basic поддерживают понятие типов значе
     var result = obj.Multiply(a,b); //result = null
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Система типов (C++/CX)](../cppcx/type-system-c-cx.md)<br/>
 [Приведение (C++/CX)](../cppcx/casting-c-cx.md)<br/>

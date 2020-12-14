@@ -1,13 +1,14 @@
 ---
+description: 'Дополнительные сведения о: Array и WriteOnlyArray (C++/CX)'
 title: Классы Array и WriteOnlyArray (C++/CX)
 ms.date: 01/22/2017
 ms.assetid: ef7cc5f9-cae6-4636-8220-f789e5b6aea4
-ms.openlocfilehash: 1980fbcd1e2fa8cdaa48e00d2e7de9e45ac96a92
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4c4f9415f401f1180786608288e33691c82fbdfa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231030"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302794"
 ---
 # <a name="array-and-writeonlyarray-ccx"></a>Классы Array и WriteOnlyArray (C++/CX)
 
@@ -21,7 +22,7 @@ ms.locfileid: "87231030"
 
 1. `Platform::WriteOnlyArray`
 
-1. Возвращаемое значение`Platform::Array^`
+1. Возвращаемое значение `Platform::Array^`
 
 Эти типы массивов используются для реализации трех типов шаблонов массивов, определяемых среда выполнения Windows.
 
@@ -90,7 +91,7 @@ FillArray
 
 Как правило, следует избегать предоставления доступа к типу `Platform::Array` как к свойству в ссылочном классе, потому что массив возвращается целиком, даже если код клиента пытается получить доступ только к одному элементу. Если необходимо предоставить контейнер последовательности как свойство в открытом классе ссылки, [`Windows::Foundation::IVector`](/uwp/api/windows.foundation.collections.ivector-1) лучше выбрать. В закрытых или внутренних интерфейсах API (которые не публикуются в метаданных) рассмотрите возможность использования стандартного контейнера C++, такого как [`std::vector`](../standard-library/vector-class.md) .
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Система типов](../cppcx/type-system-c-cx.md)<br/>
 [Справочник по языку C++/CX](../cppcx/visual-c-language-reference-c-cx.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о инструкции: while (C++)'
 title: Оператор while (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - while keyword [C++]
 - while keyword [C++], syntax
 ms.assetid: 358dbe76-5e5e-4af5-b575-c2293c636899
-ms.openlocfilehash: 168b1fc20d165c44c3230a8d1094c99b689ddbb9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3001760372410222651366416ac74d0cba59f23b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233552"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97302833"
 ---
 # <a name="while-statement-c"></a>Оператор while (C++)
 
@@ -62,7 +63,7 @@ int main()
 
 Условие завершения вычисляется в начале цикла. Если символов подчеркивания в конце строки нет, цикл никогда не выполняется.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Операторы итерации](../cpp/iteration-statements-cpp.md)<br/>
 [Ключевые слова](../cpp/keywords-cpp.md)<br/>
