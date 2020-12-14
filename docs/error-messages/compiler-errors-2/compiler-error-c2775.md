@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C2775'
 title: Ошибка компилятора C2775
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2775
 ms.assetid: 9c488508-ade0-48f1-b94f-d538d15f807a
-ms.openlocfilehash: be858c7508aa520f78ec144b02738af02099b49b
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: f7a24cfa3b868d08c86a08deaa13ec6067f4a9eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74740056"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97298166"
 ---
 # <a name="compiler-error-c2775"></a>Ошибка компилятора C2775
 
 "идентификатор": нет метода "Get", связанного с этим свойством
 
-Для элемента данных, объявленного с помощью расширенного атрибута [Свойства](../../cpp/property-cpp.md) , не указана функция `get`, но выражение пытается извлечь его значение.
+Для элемента данных, объявленного с помощью расширенного атрибута [Свойства](../../cpp/property-cpp.md) `get` , не указана функция, но выражение пытается извлечь его значение.
 
 Следующий пример приводит к возникновению ошибки C2775:
 

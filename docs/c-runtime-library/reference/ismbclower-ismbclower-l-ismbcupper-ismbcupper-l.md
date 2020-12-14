@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l'
 title: _ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - ismbclower_l function
 - _ismbcupper_l function
 ms.assetid: 17d89587-65bc-477c-ba8f-a84e63cf59e7
-ms.openlocfilehash: f33bb4d882031221a80dc3b86670916a2e77af66
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: c4afed88aff750be44602270b0bc7c2e3fa77073
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915704"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97279667"
 ---
 # <a name="_ismbclower-_ismbclower_l-_ismbcupper-_ismbcupper_l"></a>_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l
 
@@ -75,7 +76,7 @@ int _ismbcupper_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Символ, который требуется проверить.
 
 *locale*<br/>
@@ -85,7 +86,7 @@ int _ismbcupper_l(
 
 Каждая из этих процедур возвращает ненулевое значение, если символ удовлетворяет условию теста, или 0, если не удовлетворяет. Если *c*<= 255 и имеется соответствующая **_ismbbая** под (например, **_ismbcalnum** соответствует **_ismbbalnum**), результатом является возвращаемое значение соответствующей подпрограммы **_ismbb** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Каждая из этих функций проверяет определенный многобайтовый символ на соответствие заданному условию.
 
@@ -114,8 +115,8 @@ int _ismbcupper_l(
 ## <a name="see-also"></a>См. также раздел
 
 [Классификация символов](../../c-runtime-library/character-classification.md)<br/>
-[Процедуры _ismbc](../../c-runtime-library/ismbc-routines.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
-[Процедуры is, isw](../../c-runtime-library/is-isw-routines.md)<br/>
+[подпрограммы _ismbc](../../c-runtime-library/ismbc-routines.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[является, подпрограммы isw](../../c-runtime-library/is-isw-routines.md)<br/>
 [подпрограммы _ismbb](../../c-runtime-library/ismbb-routines.md)<br/>
