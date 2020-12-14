@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_placeholder классе'
 title: Класс is_placeholder
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,22 +7,22 @@ f1_keywords:
 helpviewer_keywords:
 - is_placeholder class
 ms.assetid: 2b21a792-96d1-4bb8-b911-0db796510835
-ms.openlocfilehash: 9fa7d4aaade6244fe26f89f3a667598d39471a47
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 84d73da6ffe2446a8448b0ff5f30604d259493b1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68245156"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230657"
 ---
-# <a name="isplaceholder-class"></a>Класс is_placeholder
+# <a name="is_placeholder-class"></a>Класс is_placeholder
 
 Проверяет, является ли тип заполнителем.
 
 ## <a name="syntax"></a>Синтаксис
 
-struct is_placeholder { static const int value; };
+Структура is_placeholder {статическое константное значение int;};
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Значение константы `value` равно 0, если тип `Ty` не является заполнителем. В противном случае значение — это положение аргумента вызова функции, к которому он привязывается. Используется для определения значения `N` n-ного заполнителя `_N`.
 

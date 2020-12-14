@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье как загрузить неуправляемые ресурсы в массив байтов.
 title: Практическое руководство. Загрузка неуправляемых ресурсов в массив байтов
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - unmanaged resources, loading into Byte array
 - native resources
 ms.assetid: cdada6cd-6d42-437a-a90f-44a0b18d6a93
-ms.openlocfilehash: b2b98ff3c4bbd857e3f5d861c1e0e8e2bd2f357b
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: e5a7a88a505d3f02b8e9287d6407ddbe77b99dee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90685809"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258282"
 ---
 # <a name="how-to-load-unmanaged-resources-into-a-byte-array"></a>Практическое руководство. Загрузка неуправляемых ресурсов в массив байтов
 
@@ -73,6 +74,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Использование взаимодействия C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

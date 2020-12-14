@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: структура удостоверений'
 title: Структура identity
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - identity class
 - identity structure
 ms.assetid: 990756fd-7969-4b39-ad7e-0878e8dac8fd
-ms.openlocfilehash: 49b2c1eb3ca03f9bf9199bdbca49348866ff0a7e
-ms.sourcegitcommit: 3590dc146525807500c0477d6c9c17a4a8a2d658
+ms.openlocfilehash: 753a3b697eb2a77dd102f681403fd23d7062cb36
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68246166"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231762"
 ---
 # <a name="identity-structure"></a>Структура identity
 
@@ -29,11 +30,11 @@ struct identity {
 
 ### <a name="parameters"></a>Параметры
 
-*Слева*\
+*слева*\
 Значение, которое необходимо идентифицировать.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Класс содержит определение открытого типа `type`, которое совпадает с типом параметра-шаблона. Он используется в сочетании с функцией шаблона [forward](../standard-library/utility-functions.md#forward) для проверки того, что параметр функции имеет требуемый тип.
 
-Для совместимости со старым кодом этот класс также определяет функцию identity `operator()` которая возвращает свой аргумент *левой*.
+Для совместимости с более старым кодом класс также определяет функцию Identity, `operator()` которая возвращает его аргумент *Left*.

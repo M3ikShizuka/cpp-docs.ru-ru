@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_copy_constructible классе'
 title: Класс is_copy_constructible
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - is_copy_constructible
 ms.assetid: d8db9d4c-21ed-4884-bead-0b0b562de007
-ms.openlocfilehash: 70de134fa0cb3e9d6b0259135372f37b9c017e92
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 0cef349dcfd25652bab133822a047352a7c9371d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452794"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231177"
 ---
-# <a name="iscopyconstructible-class"></a>Класс is_copy_constructible
+# <a name="is_copy_constructible-class"></a>Класс is_copy_constructible
 
 Проверяет, есть ли у типа конструктор копии.
 
@@ -29,7 +30,7 @@ struct is_copy_constructible;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* является классом с конструктором копии, в противном случае — значение false.
 
@@ -69,10 +70,10 @@ is_copy_constructible<NotCopyable > == false
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: создание Windows'
 title: Создание окон
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - CWnd objects [MFC]
 - CWnd objects [MFC], creating
 ms.assetid: f5ff91a6-4069-47d7-9177-1e6c80d3792c
-ms.openlocfilehash: fbaad1b973ce944d94dd61bcd368f13e85d73261
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 33821a84de2b18ee4489be040f78e53e8e16377e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626508"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97309489"
 ---
 # <a name="creating-windows"></a>Создание окон
 
@@ -24,7 +25,7 @@ ms.locfileid: "84626508"
 
 - [Общая последовательность создания окна](general-window-creation-sequence.md)
 
-- [Уничтожение объектов Window](destroying-window-objects.md)
+- [Уничтожение объектов окон](destroying-window-objects.md)
 
 - [Использование объектов окон](working-with-window-objects.md)
 

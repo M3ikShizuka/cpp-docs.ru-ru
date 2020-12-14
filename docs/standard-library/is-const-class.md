@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_const классе'
 title: Класс is_const
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_const class
 - is_const
 ms.assetid: 55b8e887-9c3f-4a1d-823a-4a257337b205
-ms.openlocfilehash: 92059f43e73c4b76f45ea9aeae61daf573367b43
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 81bcb02e06f55521ca5a04ebf01b5e6e1e8827a2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68452881"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231216"
 ---
-# <a name="isconst-class"></a>Класс is_const
+# <a name="is_const-class"></a>Класс is_const
 
 Проверяет, является ли тип константой.
 
@@ -30,9 +31,9 @@ struct is_const;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Экземпляр предиката типа содержит значение true, если *Ty* — `const-qualified`.
+Экземпляр предиката типа содержит значение true, если *Ty* — `const-qualified` .
 
 ## <a name="example"></a>Пример
 
@@ -71,11 +72,11 @@ is_const<const int> == true
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)\
-Класс [is_volatile](../standard-library/is-volatile-class.md)
+[Класс is_volatile](../standard-library/is-volatile-class.md)

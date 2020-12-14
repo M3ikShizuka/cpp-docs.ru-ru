@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Raise'
 title: raise
 ms.date: 4/2/2020
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - raise function
 - signals
 - programs [C++], sending signals to executing programs
-ms.openlocfilehash: 81b92404603820948a384b6ad33421251a27c13c
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: eb225e25ef0ff4e04f1ea8877a434c2af240cbfe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919548"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274870"
 ---
 # <a name="raise"></a>raise
 
@@ -52,18 +53,18 @@ int raise(
 
 ### <a name="parameters"></a>Параметры
 
-*sig*<br/>
+*SIG*<br/>
 Сигнал, который требуется инициализировать.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 В случае успеха **raise** возвращает 0. В противном случае возвращается ненулевое значение.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **raise** отправляет сигнал *sig* выполняемой программе. Если предыдущий вызов **signal** установил функцию обработки сигнала для *sig*, **raise** выполняет эту функцию. Если функция обработчика не была установлена, то выполняется действие по умолчанию, связанное со значением сигнала *sig*, как показано ниже.
 
-|Сигнал|Значение|По умолчанию|
+|Сигнал|Значение|Значение по умолчанию|
 |------------|-------------|-------------|
 |**SIGABRT**|Аварийное завершение|Завершает вызывающую программу с кодом выхода 3|
 |**SIGFPE**|Ошибка с плавающей запятой|Завершает вызывающую программу|

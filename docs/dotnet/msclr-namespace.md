@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: мсклр Namespace'
 title: Пространство имен msclr
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,17 +15,17 @@ helpviewer_keywords:
 - C++ Support Library, namespace
 - msclr
 ms.assetid: 799460e2-9ae2-4b59-a81c-611df356834f
-ms.openlocfilehash: 0054d8086c8492c79723e6b4091f102062aa3c91
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: df9a19ea16b37717612cd883c372d79c9568fad2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62384820"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274649"
 ---
 # <a name="msclr-namespace"></a>Пространство имен msclr
 
-`msclr` Пространство имен содержит все классы библиотека поддержки C++. Дополнительные сведения о этих классов см. в разделе [библиотека поддержки C++](../dotnet/cpp-support-library.md).
+`msclr`Пространство имен содержит все классы библиотеки поддержки C++. Дополнительные сведения об этих классах см. в разделе [Библиотека поддержки C++](../dotnet/cpp-support-library.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Библиотека поддержки C++](../dotnet/cpp-support-library.md)

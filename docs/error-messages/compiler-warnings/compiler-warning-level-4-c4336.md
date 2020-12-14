@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: предупреждение компилятора (уровень 4) C4336'
 title: Предупреждение компилятора (уровень 4) C4336
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - C4336
 ms.assetid: 93f199dd-d6dd-42c0-82d8-c12d101a7235
-ms.openlocfilehash: e83bac9028980bdf3ef7449fbef065a8c9316d2d
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: d41ca5584864327b3012e79af97f2857e3f93d42
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991333"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257723"
 ---
 # <a name="compiler-warning-level-4-c4336"></a>Предупреждение компилятора (уровень 4) C4336
 
 импортировать библиотеку типов "type_lib1" для перекрестных ссылок перед импортом "type_lib2"
 
-Ссылка на библиотеку типов была указана с помощью директивы [#import](../../preprocessor/hash-import-directive-cpp.md) . Однако библиотека типов содержала ссылку на другую библиотеку типов, на которую нет ссылок в `#import`. Этот файл TLB был найден компилятором.
+Ссылка на библиотеку типов была указана с помощью директивы [#import](../../preprocessor/hash-import-directive-cpp.md) . Однако библиотека типов содержала ссылку на другую библиотеку типов, на которую нет ссылок в `#import` . Этот файл TLB был найден компилятором.
 
-При наличии двух библиотек типов на диске, созданных из следующих двух файлов (скомпилированных с помощью MIDL. exe):
+При наличии двух библиотек типов на диске, созданных из следующих двух файлов (скомпилированных с midl.exe):
 
 ```
 // c4336a.idl

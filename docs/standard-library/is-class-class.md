@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_class классе'
 title: Класс is_class
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - is_class class
 - is_class
 ms.assetid: 96fc34a3-a81b-4ec6-b7fb-baafde1a0f4e
-ms.openlocfilehash: 4122ad2b4adbd0ed290f26428560c569b3754d7d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9aa7646ca46aa82176c97d90d42a65ad76bc45eb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87222450"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231255"
 ---
 # <a name="is_class-class"></a>Класс is_class
 
@@ -30,7 +31,7 @@ struct is_class;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* является типом, определенным как **`class`** или **`struct`** , или `cv-qualified` формой одного из них, в противном случае — значение false.
 

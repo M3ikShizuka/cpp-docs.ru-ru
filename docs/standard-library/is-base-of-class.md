@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: is_base_of классе'
 title: Класс is_base_of
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - is_base_of class
 - is_base_of
 ms.assetid: 436f6213-1d4c-4ffc-a588-fc7c4887dd86
-ms.openlocfilehash: d56222f218033d00583e5e3def9790720ef7bb94
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 6cb2b55a6df687fbb7da74ca3c696a8a9b0ffbad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68456623"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231268"
 ---
-# <a name="isbaseof-class"></a>Класс is_base_of
+# <a name="is_base_of-class"></a>Класс is_base_of
 
 Проверяет, является ли один тип базовым для другого.
 
@@ -33,9 +34,9 @@ struct is_base_of;
 *Получает*\
 Производный тип для проверки.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Экземпляр предиката типа содержит значение true, если *базовый* тип является базовым классом производного типа , в противном случае — значение false.
+Экземпляр предиката типа содержит значение true, если *базовый* тип является базовым классом *производного* типа, в противном случае — значение false.
 
 ## <a name="example"></a>Пример
 
@@ -74,11 +75,11 @@ is_base_of<derived, base> == false
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)\
-Класс [is_convertible](../standard-library/is-convertible-class.md)
+[Класс is_convertible](../standard-library/is-convertible-class.md)

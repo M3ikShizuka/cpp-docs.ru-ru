@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: rand_s'
 title: rand_s
 ms.date: 4/2/2020
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - cryptographically secure random numbers
 - pseudorandom numbers
 - numbers, generating pseudorandom
-ms.openlocfilehash: cad1740e64c7bbda553ac1a6c777d7e2295152ba
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 8894248bf924ef513dc916e10e47ce8ea7e95137
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82919543"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274831"
 ---
 # <a name="rand_s"></a>rand_s
 
@@ -58,7 +59,7 @@ errno_t rand_s(unsigned int* randomValue);
 
 Ноль в случае успешного выполнения; в противном случае — код ошибки. Если входной указатель _рандомвалуе_ является пустым указателем, функция вызывает обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, функция возвращает **еинвал** **и устанавливает значение** переводится в **еинвал**. Если функция завершается ошибкой по какой-либо другой причине, *_рандомвалуе_ имеет значение 0.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **rand_s** Записывает целое число псевдослучайное в диапазоне 0 для **UINT_MAX** в указатель ввода. Функция **rand_s** использует операционную систему для создания криптографически защищенных случайных чисел. Оно не использует начальное значение, созданное функцией [srand](srand.md) , и не влияет на последовательность случайных чисел, используемую [СЛЧИС](rand.md).
 
@@ -159,6 +160,6 @@ int main( void )
 
 ## <a name="see-also"></a>См. также раздел
 
-[Поддержка чисел с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
-[Функция](rand.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
+[rand](rand.md)<br/>
 [srand](srand.md)<br/>

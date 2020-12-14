@@ -1,22 +1,23 @@
 ---
+description: Дополнительные сведения см. в статье функции элементов входного потока.
 title: Функции-члены потока ввода
 ms.date: 07/19/2019
 helpviewer_keywords:
 - input stream objects
 - input streams, member functions
 ms.assetid: b4b9465d-0da9-4ccf-859d-72a68418982e
-ms.openlocfilehash: 8aa211a03bb6e9b1d910db360066b4a2ca76571a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 8b75470d39e5c376da497f721c725eaad8424b3d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233175"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231606"
 ---
 # <a name="input-stream-member-functions"></a>Функции-члены потока ввода
 
 Функции — члены потока ввода используются для дисковых операций ввода.
 
-## <a name="open"></a><a name="vclrftheopenfunctionforinputstreamsanchor11"></a>открыт
+## <a name="open"></a><a name="vclrftheopenfunctionforinputstreamsanchor11"></a> открыт
 
 Если используется входной поток файлов ( `ifstream` ), необходимо связать этот поток с конкретным файлом диска. Это можно сделать в конструкторе или можно использовать `open` функцию. В любом случае аргументы одни и те же.
 
@@ -31,7 +32,7 @@ if (ifile.fail())
 // The file does not exist ...
 ```
 
-## <a name="get"></a><a name="vclrfthegetfunctionanchor12"></a>Получить
+## <a name="get"></a><a name="vclrfthegetfunctionanchor12"></a> Получить
 
 Неформатированная `get` функция элемента работает как `>>` оператор с двумя исключениями. Во-первых, `get` функция включает пробелы, в то время как средство извлечения исключает пробелы при `skipws` установке флага (по умолчанию). Во-вторых, эта `get` функция менее вероятно приведет к тому, что связанный поток вывода ( `cout` например,) будет сброшен.
 
@@ -66,7 +67,7 @@ int main()
 1234
 ```
 
-## <a name="getline"></a><a name="vclrfthegetlinefunctionanchor13"></a>getline
+## <a name="getline"></a><a name="vclrfthegetlinefunctionanchor13"></a> getline
 
 `getline`Функция-член аналогична `get` функции. Обе функции допускают третий аргумент, который указывает завершающий символ для входных данных. Значение по умолчанию — символ новой строки. Обе функции резервируют один символ для необходимого завершающего символа. Однако `get` оставляет завершающий символ в потоке и `getline` удаляет завершающий символ.
 
@@ -93,7 +94,7 @@ int main( )
 test
 ```
 
-## <a name="read"></a><a name="vclrfthereadfunctionanchor14"></a>Просмотр
+## <a name="read"></a><a name="vclrfthereadfunctionanchor14"></a> Просмотр
 
 `read`Функция-член считывает байты из файла в указанную область памяти. Аргумент length определяет количество прочтенных байтов. Если этот аргумент не указан, чтение останавливается при достижении физического конца файла или, в случае файла в текстовом режиме, при чтении встроенного символа `EOF`.
 
@@ -125,7 +126,7 @@ int main()
 
 Программа предполагает, что записи данных форматируются точно так же, как указано в структуре, без завершающего возврата каретки или символов перевода строки.
 
-## <a name="seekg-and-tellg"></a><a name="vclrftheseekgandtellgfunctionsanchor7"></a>функции seekg и tellg
+## <a name="seekg-and-tellg"></a><a name="vclrftheseekgandtellgfunctionsanchor7"></a> функции seekg и tellg
 
 Потоки входного файла хранят внутренний указатель на позицию в файле, с которой будет продолжаться чтение. Этот указатель можно установить функцией `seekg`, как показано ниже:
 
@@ -180,10 +181,10 @@ int main( )
 }
 ```
 
-## <a name="close"></a><a name="vclrftheclosefunctionforinputstreamsanchor15"></a>выхода
+## <a name="close"></a><a name="vclrftheclosefunctionforinputstreamsanchor15"></a> выхода
 
 `close`Функция члена закрывает файл диска, связанный с входным файлом потока, и освобождает файл операционной системы. [`ifstream`](../standard-library/basic-ifstream-class.md)Деструктор закрывает файл, но функцию можно использовать, `close` Если необходимо открыть другой файл для того же объекта потока.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Входные потоки](../standard-library/input-streams.md)

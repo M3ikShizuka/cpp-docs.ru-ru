@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: independent_bits_engine классе'
 title: Класс independent_bits_engine
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - independent_bits_engine class
 ms.assetid: 889e9a82-f457-49a7-9d2e-26e0fc3cd907
-ms.openlocfilehash: f9c1c97795e6d4eeff64ba8be8f22602f4f3fbd6
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8da68469c266fae1f9c966b586ea66973d871dc3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845774"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231690"
 ---
 # <a name="independent_bits_engine-class"></a>Класс independent_bits_engine
 
@@ -46,9 +47,9 @@ class independent_bits_engine;
 
 Дополнительные сведения о членах подсистемы см [\<random>](../standard-library/random.md) . в разделе.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот шаблон класса описывает *адаптер подсистемы* , создающий значения путем повторного упаковки битов из значений, возвращенных базовым механизмом, в результате чего используются значения *W*bit.
+Этот шаблон класса описывает *адаптер подсистемы* , создающий значения путем повторного упаковки битов из значений, возвращенных базовым механизмом, в результате чего используются значения *W* bit.
 
 ## <a name="requirements"></a>Требования
 
