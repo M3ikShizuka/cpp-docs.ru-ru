@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: missing_wait классе'
 title: Класс missing_wait
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - missing_wait class
 ms.assetid: ff981875-bd43-47e3-806f-b03c9f418b18
-ms.openlocfilehash: cf81d1ee6c144da210da5b1f37aca7910ae37bc8
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: bfbfdf4c2a52573d08c048bac278386aed1dc5a8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142379"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202188"
 ---
 # <a name="missing_wait-class"></a>Класс missing_wait
 
@@ -29,13 +30,13 @@ class missing_wait : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[missing_wait](#ctor)|Перегружен. Формирует объект `missing_wait`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Отсутствие потока исключений. Вы несете ответственность за вызов метода `wait` или `run_and_wait` объекта `task_group` или `structured_task_group`, прежде чем разрешить этому объекту уничтожения. Среда выполнения создает это исключение в качестве свидетельства о том, что вы забыли вызвать метод `wait` или `run_and_wait`.
+Отсутствие потока исключений. Вы несете ответственность за вызов `wait` метода или `run_and_wait` `task_group` `structured_task_group` объекта или перед тем, как разрешить этому объекту уничтожения. Среда выполнения создает это исключение в качестве свидетельства о том, что вы забыли вызвать `wait` `run_and_wait` метод или.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -47,9 +48,9 @@ class missing_wait : public std::exception;
 
 **Заголовок:** ConcRT. h
 
-**Пространство имен:** concurrency
+**Пространство имен:** параллелизм
 
-## <a name="ctor"></a>missing_wait
+## <a name="missing_wait"></a><a name="ctor"></a> missing_wait
 
 Формирует объект `missing_wait`.
 
@@ -66,7 +67,7 @@ missing_wait() throw();
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен concurrency](concurrency-namespace.md)<br/>
+[Пространство имен Concurrency](concurrency-namespace.md)<br/>
 [Класс task_group](task-group-class.md)<br/>
 [ожидания](task-group-class.md)<br/>
 [run_and_wait](task-group-class.md)<br/>

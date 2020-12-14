@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: необязательный класс'
 title: необязательный класс
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - optional/std::optional::reset
 - optional/std::optional::value
 - optional/std::optional::value_or
-ms.openlocfilehash: b1e77325cc485da1caec91316ce5d46cfa6357dc
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fc0f14eb8bffc55c10db73b9b2f1ea5bcfdf6995
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841939"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201941"
 ---
 # <a name="optional-class"></a>необязательный класс
 
@@ -42,7 +43,7 @@ class optional
 template<class T> optional(T) -> optional<T>;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="constructors"></a>Конструкторы
 
@@ -109,7 +110,7 @@ explicit optional(optional<U>&& rhs);
 *args*\
 Список аргументов для создания содержащего значения из.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `constexpr optional() noexcept;`
 `constexpr optional(nullopt_t nullopt) noexcept;` Эти конструкторы создают объект `optional` , который не содержит значения.
@@ -136,7 +137,7 @@ explicit optional(optional<U>&& rhs);
 ~optional();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если `T` является тривиальным можно уничтожить, то `optional<T>` он также тривиальным можно уничтожить.
 

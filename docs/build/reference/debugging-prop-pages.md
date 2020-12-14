@@ -1,5 +1,6 @@
 ---
-title: C++Отладка страниц свойств
+description: 'Дополнительные сведения: Отладка C++ страницы свойств'
+title: Страницы свойств отладки C++
 ms.date: 07/24/2019
 ms.topic: article
 ms.assetid: 78115a6b-3799-4515-814e-8566b5bdc55d
@@ -35,20 +36,20 @@ f1_keywords:
 - VC.Project.IVCWebSvcDebugPageObject.HttpUrl
 - VC.Project.IVCWebSvcDebugPageObject.DebuggerType
 - VC.Project.IVCWebSvcDebugPageObject.SQLDebugging
-ms.openlocfilehash: c2190c4406e165cfec1915234b688c598f228777
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 16a7fec317485dd20a430baab9a413586f913fa3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169712"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201746"
 ---
-# <a name="c-debugging-property-pages"></a>C++Отладка страниц свойств
+# <a name="c-debugging-property-pages"></a>Страницы свойств отладки C++
 
-Эти страницы свойств находятся в разделе **свойства** > **проекта** > **Свойства конфигурации** > **Отладка**. Выберите тип отладчика в раскрывающемся элементе управления. Дополнительные сведения об отладке C++ кода см. [в разделе Учебник. обучение C++ отладке кода с помощью Visual Studio](/visualstudio/debugger/getting-started-with-the-debugger-cpp) и [Отладка машинного кода](/visualstudio/debugger/debugging-native-code).
+Эти страницы свойств находятся в разделе   >  **Свойства** проекта свойства  >  **конфигурации**  >  **Отладка**. Выберите тип отладчика в раскрывающемся элементе управления. Дополнительные сведения об отладке кода C++ см. [в разделе Учебник. изучение отладки кода c++ с помощью Visual Studio](/visualstudio/debugger/getting-started-with-the-debugger-cpp) и [Отладка машинного кода](/visualstudio/debugger/debugging-native-code).
 
 ## <a name="local-windows-debugger-property-page"></a>Локальная страница свойств отладчика Windows
 
-### <a name="command"></a>Get-Help
+### <a name="command"></a>Команда
 
 Команда отладки для выполнения.
 
@@ -75,7 +76,7 @@ ms.locfileid: "80169712"
 - **Смешанные**
 - **Авто**
 - **Скрипт-скрипт**
-- **Только GPU (C++ amp)** — только GPU (C++ amp)
+- **Только GPU (C++ amp)** — только gpu (C++ amp)
 
 ### <a name="environment"></a>Среда
 
@@ -104,11 +105,11 @@ ms.locfileid: "80169712"
 
 ### <a name="amp-default-accelerator"></a>Ускоритель по умолчанию для AMP
 
-Переопределить C++ выбор ускорителя amp по умолчанию. Свойство не применяется при отладке управляемого кода.
+Переопределить выбор ускорителя по умолчанию C++ AMP. Свойство не применяется при отладке управляемого кода.
 
 ## <a name="remote-windows-debugger-property-page"></a>Страница свойств удаленного отладчика Windows
 
-Дополнительные сведения об удаленной отладке см. [в разделе Удаленная C++ Отладка визуального проекта в Visual Studio](/visualstudio/debugger/remote-debugging-cpp).
+Дополнительные сведения об удаленной отладке см. [в разделе Удаленная отладка Visual C++ проекта в Visual Studio](/visualstudio/debugger/remote-debugging-cpp).
 
 ### <a name="remote-command"></a>Удаленная команда
 
@@ -126,7 +127,7 @@ ms.locfileid: "80169712"
 
 Указывает имя удаленного сервера.
 
-### <a name="connection"></a>Соединение
+### <a name="connection"></a>Подключение
 
 Указывает тип соединения.
 
@@ -146,7 +147,7 @@ ms.locfileid: "80169712"
 - **Смешанные**
 - **Авто**
 - **Скрипт-скрипт**
-- **Только GPU (C++ amp)** — только GPU (C++ amp)
+- **Только GPU (C++ amp)** — только gpu (C++ amp)
 
 ### <a name="environment"></a>Среда
 
@@ -177,7 +178,7 @@ ms.locfileid: "80169712"
 
 Если при отладке на удаленном компьютере необходимо скопировать содержимое выходных данных проекта (за исключением PDB-файлов) на удаленный компьютер, укажите здесь путь.
 
-### <a name="additional-files-to-deploy"></a>Дополнительные файлы, которые необходимо развернуть
+### <a name="additional-files-to-deploy"></a>Дополнительные файлы развертывания
 
 При отладке на удаленном компьютере указанные здесь файлы и каталоги (помимо выходных данных проекта) копируются в каталог развертывания, если он указан.
 
@@ -187,7 +188,7 @@ ms.locfileid: "80169712"
 
 ### <a name="amp-default-accelerator"></a>Ускоритель по умолчанию для AMP
 
-Переопределить C++ выбор ускорителя amp по умолчанию. Свойство не применяется при отладке управляемого кода.
+Переопределить выбор ускорителя по умолчанию C++ AMP. Свойство не применяется при отладке управляемого кода.
 
 ## <a name="web-browser-debugger-property-page"></a>Страница свойств отладчика веб-браузера
 

@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: использование CTabCtrl'
 title: Использование CTabCtrl
 ms.date: 11/04/2016
 helpviewer_keywords:
 - CTabCtrl class [MFC], using
 - tab controls [MFC], using
 ms.assetid: 6bda6798-0085-4c09-a5ea-fe0e97af5c95
-ms.openlocfilehash: af61b33d592589f557afe13a319696a0f0f5f456
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 6bb88d5446731248a2e7d83644f7f8c340105f4b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79442255"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202357"
 ---
 # <a name="using-ctabctrl"></a>Использование CTabCtrl
 
@@ -20,11 +21,11 @@ ms.locfileid: "79442255"
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Что вы хотите узнать подробнее
 
-- [Элементы управления "Вкладка" и страницы свойств](../mfc/tab-controls-and-property-sheets.md)
+- [Элементы управления вкладки и страницы свойств](../mfc/tab-controls-and-property-sheets.md)
 
-- [Вкладки и атрибуты элемента управления "Вкладка"](../mfc/tabs-and-tab-control-attributes.md)
+- [Вкладки и атрибуты элемента управления Tab](../mfc/tabs-and-tab-control-attributes.md)
 
-- [Создание определяемых владельцем вкладок](../mfc/making-owner-drawn-tabs.md)
+- [Создание Owner-Drawn вкладок](../mfc/making-owner-drawn-tabs.md)
 
 - [Работа с элементом управления "Вкладка"](../mfc/working-with-a-tab-control.md)
 
@@ -32,7 +33,7 @@ ms.locfileid: "79442255"
 
 - [Добавление вкладок в элемент управления "Вкладка"](../mfc/adding-tabs-to-a-tab-control.md)
 
-- [Обработка уведомляющих сообщений элемента управления "Вкладка"](../mfc/processing-tab-control-notification-messages.md)
+- [Обработка сообщений уведомления элемента управления "Вкладка"](../mfc/processing-tab-control-notification-messages.md)
 
 ## <a name="see-also"></a>См. также раздел
 

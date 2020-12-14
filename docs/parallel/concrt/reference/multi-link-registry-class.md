@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: multi_link_registry классе'
 title: Класс multi_link_registry
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - multi_link_registry class
 ms.assetid: b2aa73a8-e8a6-4255-b117-d07530c328b2
-ms.openlocfilehash: 777b3f5206b4a595b5dcac653d608255e92f4ef6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a5d5e6c7e837f76a422c3f2879f74d1af36d64d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231706"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202136"
 ---
 # <a name="multi_link_registry-class"></a>Класс multi_link_registry
 
@@ -41,7 +42,7 @@ class multi_link_registry : public network_link_registry<_Block>;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[multi_link_registry](#ctor)|Формирует объект `multi_link_registry`.|
 |[Деструктор ~ multi_link_registry](#dtor)|Уничтожает `multi_link_registry` объект.|
@@ -69,7 +70,7 @@ class multi_link_registry : public network_link_registry<_Block>;
 
 **Пространство имен:** параллелизм
 
-## <a name="add"></a><a name="add"></a>включить
+## <a name="add"></a><a name="add"></a> включить
 
 Добавляет ссылку на `multi_link_registry` объект.
 
@@ -82,11 +83,11 @@ virtual void add(_EType _Link);
 *_Link*<br/>
 Указатель на добавляемый блок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Метод вызывает исключение [invalid_link_target](invalid-link-target-class.md) , если ссылка уже имеется в реестре, или если привязка уже была задана с помощью `set_bound` функции и связь была удалена.
 
-## <a name="begin"></a><a name="begin"></a>начале
+## <a name="begin"></a><a name="begin"></a> begin
 
 Возвращает итератор на первый элемент в `multi_link_registry` объекте.
 
@@ -98,11 +99,11 @@ virtual iterator begin();
 
 Итератор, обращающийся к первому элементу в `multi_link_registry` объекте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конечное состояние обозначается `NULL` ссылкой.
 
-## <a name="contains"></a><a name="contains"></a>содержащих
+## <a name="contains"></a><a name="contains"></a> содержащих
 
 Выполняет поиск `multi_link_registry` указанного блока в объекте.
 
@@ -119,7 +120,7 @@ virtual bool contains(_EType _Link);
 
 **`true`** значение, если указанный блок найден; **`false`** в противном случае —.
 
-## <a name="count"></a><a name="count"></a>расчета
+## <a name="count"></a><a name="count"></a> расчета
 
 Подсчитывает количество элементов в `multi_link_registry` объекте.
 
@@ -131,7 +132,7 @@ virtual size_t count();
 
 Число элементов в объекте `multi_link_registry`.
 
-## <a name="multi_link_registry"></a><a name="ctor"></a>multi_link_registry
+## <a name="multi_link_registry"></a><a name="ctor"></a> multi_link_registry
 
 Формирует объект `multi_link_registry`.
 
@@ -139,7 +140,7 @@ virtual size_t count();
 multi_link_registry();
 ```
 
-## <a name="multi_link_registry"></a><a name="dtor"></a>~ multi_link_registry
+## <a name="multi_link_registry"></a><a name="dtor"></a> ~ multi_link_registry
 
 Уничтожает `multi_link_registry` объект.
 
@@ -147,11 +148,11 @@ multi_link_registry();
 virtual ~multi_link_registry();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Метод вызывает исключение [invalid_operation](invalid-operation-class.md) , если вызывается до удаления всех ссылок.
 
-## <a name="remove"></a><a name="remove"></a>отменит
+## <a name="remove"></a><a name="remove"></a> отменит
 
 Удаляет ссылку из `multi_link_registry` объекта.
 
@@ -168,7 +169,7 @@ virtual bool remove(_EType _Link);
 
 **`true`** значение, если ссылка была найдена и удалена, **`false`** в противном случае.
 
-## <a name="set_bound"></a><a name="set_bound"></a>set_bound
+## <a name="set_bound"></a><a name="set_bound"></a> set_bound
 
 Задает верхнюю границу числа ссылок, которые `multi_link_registry` может содержать объект.
 
@@ -181,7 +182,7 @@ void set_bound(size_t _MaxLinks);
 *_MaxLinks*<br/>
 Максимальное число ссылок, которые `multi_link_registry` может содержать объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 После установки границы отсоединение записи приведет к тому, что объект `multi_link_registry` войдет в неизменяемое состояние, где дальнейшие вызовы `add` создадут исключение `invalid_link_target`.
 

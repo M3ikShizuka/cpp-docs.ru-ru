@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: использование CImageList'
 title: Использование CImageList
 ms.date: 11/04/2016
 helpviewer_keywords:
 - image list control
 - CImageList class [MFC], using
 ms.assetid: 3d2a909e-d641-46b7-aada-81cab1a29b41
-ms.openlocfilehash: 09fd0e95ce2981afbebbfe10d87b26f88a7b5e13
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 9e0126e3d5b083dc4a88bfb1ca2130be0e9fbaaa
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447233"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202539"
 ---
 # <a name="using-cimagelist"></a>Использование CImageList
 
@@ -28,11 +29,11 @@ ms.locfileid: "79447233"
 
 - [Рисование изображений из списка изображений](../mfc/drawing-images-from-an-image-list.md)
 
-- [Перекрытия изображений в списках изображений](../mfc/image-overlays-in-image-lists.md)
+- [Наложение изображений в списках изображений](../mfc/image-overlays-in-image-lists.md)
 
 - [Перетаскивание изображений из списка изображений](../mfc/dragging-images-from-an-image-list.md)
 
-- [Сведения об изображениях в списках изображений](../mfc/image-information-in-image-lists.md)
+- [Сведения об образе в списках изображений](../mfc/image-information-in-image-lists.md)
 
 ## <a name="see-also"></a>См. также раздел
 

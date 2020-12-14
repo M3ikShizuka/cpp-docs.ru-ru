@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C3648'
 title: Ошибка компилятора C3648
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3648
 ms.assetid: 5d042989-41cb-4cd0-aa50-976b70146aaf
-ms.openlocfilehash: 3b26be9890bbbdf6276c61023e6867160528e236
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: 532c65896ae5c3707c86735c661a095698417288
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74751837"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97203748"
 ---
 # <a name="compiler-error-c3648"></a>Ошибка компилятора C3648
 

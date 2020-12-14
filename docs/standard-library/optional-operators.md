@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: &lt; необязательных &gt; операторах'
 title: '&lt;необязательные &gt; операторы'
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,16 +17,16 @@ helpviewer_keywords:
 - std::operatoroperator&gt=; (optional)
 - std::operatoroperator&lt; (optional)
 - std::operatoroperator&lt;= (optional)
-ms.openlocfilehash: c7eca76f71f12e7f7fe0e60c0a4cfe456d54c374
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3c61f62ff87ab285dfeb5b26f1d22de86ef50fee
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87224686"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97201863"
 ---
 # <a name="ltoptionalgt-operators"></a>&lt;необязательные &gt; операторы
 
-## <a name="operator"></a><a name="op_eq_eq"></a>Оператор = =
+## <a name="operator"></a><a name="op_eq_eq"></a> Оператор = =
 
 Проверяет равенство объекта `optional` слева от оператора объекту `optional` справа от оператора.
 
@@ -45,7 +46,7 @@ template <class T, class U> constexpr bool operator==(const U&, const optional<T
 *Правильно*\
 Объект типа `optional` , `nullopt_t` или `T` .
 
-## <a name="operator"></a><a name="op_neq"></a>operator! =
+## <a name="operator"></a><a name="op_neq"></a> operator! =
 
 Проверяет неравенство объекта `optional` слева от оператора объекту `optional` справа от оператора.
 
@@ -65,11 +66,11 @@ template <class T, class U> constexpr bool operator!=(const U&, const optional<T
 *Правильно*\
 Объект типа `optional` , `nullopt_t` или `T` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция шаблона возвращает `!(left == right)`.
 
-## <a name="operatorlt"></a><a name="op_lt"></a>станции&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> станции&lt;
 
 Проверяет, меньше ли объект `optional` слева от оператора, чем объект `optional` справа от оператора.
 
@@ -93,7 +94,7 @@ template <class T, class U> constexpr bool operator<(const U&, const optional<T>
 
 **`true`** значение, если список слева от оператора меньше, но не равен списку с правой стороны оператора; в противном случае — значение **`false`** .
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>станции&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> станции&lt;=
 
 Проверяет, меньше ли объект `optional` слева от оператора, чем объект `optional` справа от оператора, или равен ему.
 
@@ -117,11 +118,11 @@ template <class T, class U> constexpr bool operator<=(const U&, const optional<T
 
 **`true`** значение, если список слева от оператора меньше или равен списку с правой стороны оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция шаблона возвращает `!(right < left)`.
 
-## <a name="operatorgt"></a><a name="op_gt"></a>станции&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> станции&gt;
 
 Проверяет больше ли объект `optional` слева от оператора, чем объект `optional` справа от оператора.
 
@@ -145,11 +146,11 @@ template <class T, class U> constexpr bool operator>(const U&, const optional<T>
 
 **`true`** значение, если список в левой части оператора больше списка с правой стороны оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция шаблона возвращает `right < left`.
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>станции&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> станции&gt;=
 
 Проверяет больше ли объект `optional` слева от оператора, чем объект `optional` справа от оператора, или равен ему.
 
@@ -173,6 +174,6 @@ template <class T, class U> constexpr bool operator>=(const U&, const optional<T
 
 **`true`** значение, если `optional` слева от оператора больше или равно объекту `optional` справа от оператора; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция шаблона возвращает `!(left < right)`.

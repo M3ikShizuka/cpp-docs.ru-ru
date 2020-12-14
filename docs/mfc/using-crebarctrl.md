@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: использование CReBarCtrl'
 title: Использование CReBarCtrl
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - combo boxes [MFC], in rebar controls
 - rebar controls
 ms.assetid: 2c0aeec2-ffc3-44b8-97b5-0f56e116a338
-ms.openlocfilehash: 2578ddbb626da4959c81cf37a38082315ec8c6a0
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 8f1393079c929e79753ac378fdecfafd19e00423
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79441960"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202435"
 ---
 # <a name="using-crebarctrl"></a>Использование CReBarCtrl
 
@@ -19,21 +20,21 @@ ms.locfileid: "79441960"
 
 На следующем рисунке показан элемент управления "Главная панель" с двумя полосами. Одна содержит панель захвата, текстовую метку ("адрес") и дочернее окно поля со списком. Другой полоса содержит панель захвата, текстовую метку и плоскую панель инструментов (реализованную с помощью дочернего окна).
 
-![Элемент управления "Главная панель" с двумя полосами](../mfc/media/vc4ruz1.gif "Элемент управления главный панели с двумя полосами")
+![Элемент управления главный панели с двумя полосами](../mfc/media/vc4ruz1.gif "Элемент управления главный панели с двумя полосами")
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Что вы хотите узнать подробнее
 
-- [Кребар и CReBarCtrl](../mfc/crebar-vs-crebarctrl.md)
+- [CReBar или CReBarCtrl](../mfc/crebar-vs-crebarctrl.md)
 
 - [Создание элемента управления "Главная панель"](../mfc/creating-a-rebar-control.md)
 
-- [Элементы управления и зоны главной панели](../mfc/rebar-controls-and-bands.md)
+- [Элементы управления и полосы главной панели](../mfc/rebar-controls-and-bands.md)
 
 - [Использование списка изображений с элементом управления "Главная панель"](../mfc/using-an-image-list-with-a-rebar-control.md)
 
 - [Использование диалоговой панели с элементом управления "Главная панель"](../mfc/using-a-dialog-bar-with-a-rebar-control.md)
 
-- [Обработка уведомляющих сообщений в элементах управления "Главная панель"](../mfc/processing-notification-messages-in-a-rebar-control.md)
+- [Обработка сообщений уведомлений в элементе управления "Главная панель"](../mfc/processing-notification-messages-in-a-rebar-control.md)
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения о функции make_exception_ptr
 title: Функция make_exception_ptr
 ms.date: 11/04/2016
 f1_keywords:
 - ppltasks/std::make_exception_ptr
 ms.assetid: 8d81cf7a-818e-4b27-8d49-440ec3088609
-ms.openlocfilehash: 68e29942498187970d7a157a8fbb86efe2aac635
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 0cdfe41ced73fd62a98a8fece13f06f516c347ea
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77139665"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202331"
 ---
 # <a name="make_exception_ptr-function"></a>Функция make_exception_ptr
 
@@ -38,4 +39,4 @@ exception_ptr make_exception_ptr(_E _Except);
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен std](std-namespace.md)
+[стандартное пространство имен](std-namespace.md)

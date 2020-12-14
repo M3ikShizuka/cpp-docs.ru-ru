@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: использование списка изображений'
 title: Использование списка изображений
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - CImageList class [MFC], using
 - image lists [MFC]
 ms.assetid: e0aed188-a1e6-400e-9f51-033d61c5541f
-ms.openlocfilehash: 710831ea8ef6b52292ba3e8eb84a69575c6c7508
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 92587bd80a4f613a04cae22322ab258e9869d247
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226832"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97202695"
 ---
 # <a name="using-an-image-list"></a>Использование списка изображений
 
@@ -28,7 +29,7 @@ ms.locfileid: "87226832"
 > [!NOTE]
 > Если список изображений был создан с помощью **`new`** оператора, то `CImageList` при завершении его создания необходимо уничтожить объект.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Использование CImageList](../mfc/using-cimagelist.md)<br/>
 [Элементы управления](../mfc/controls-mfc.md)
