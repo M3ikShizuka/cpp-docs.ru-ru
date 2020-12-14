@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье элементы управления ActiveX в MFC. распространение элементов управления ActiveX
 title: Элементы управления ActiveX в MFC. Распространение элементов управления ActiveX
 ms.date: 09/12/2018
 f1_keywords:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - registering controls
 - OLEPRO32.DLL
 ms.assetid: cd70ac9b-f613-4879-9e81-6381fdfda2a1
-ms.openlocfilehash: 11d647922a4f8097e03e112c0c93c833524c2c4e
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: faf85bffd9911c38764aea19d1ddb682fd719be1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618208"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280720"
 ---
 # <a name="mfc-activex-controls-distributing-activex-controls"></a>Элементы управления ActiveX в MFC. Распространение элементов управления ActiveX
 
@@ -45,13 +46,13 @@ ms.locfileid: "84618208"
 >[!IMPORTANT]
 > ActiveX — это устаревшая технология, которую не следует использовать для новой разработки. Дополнительные сведения о современных технологиях, которые заменяют ActiveX, см. в разделе [элементы управления ActiveX](activex-controls.md).
 
-## <a name="ansi-or-unicode-control-versions"></a><a name="_core_ansi_or_unicode_control_versions"></a>Версии элементов управления ANSI или Unicode
+## <a name="ansi-or-unicode-control-versions"></a><a name="_core_ansi_or_unicode_control_versions"></a> Версии элементов управления ANSI или Unicode
 
 Необходимо решить, следует ли поставлять версию элемента управления в формате ANSI или Unicode или и то, и другое. Это решение основано на коэффициентах переносимости, присущих кодировкам ANSI и Юникод.
 
 Элементы управления ANSI, работающие во всех операционных системах Win32, обеспечивают максимальную переносимость между различными операционными системами Win32. Элементы управления Юникода работают только в Windows NT (версии 3,51 или более поздней), но не в Windows 95 или Windows 98. Если есть основная проблема переносимости, поставьте элементы управления ANSI. Если элементы управления будут работать только в Windows NT, можно поставлять элементы управления Юникод. Вы также можете поставлять и приложение, и установить для него версию, наиболее подходящую для операционной системы пользователя.
 
-## <a name="installing-activex-controls-and-redistributable-dlls"></a><a name="_core_installing_activex_controls_and_redistributable_dlls"></a>Установка элементов управления ActiveX и распространяемых библиотек DLL
+## <a name="installing-activex-controls-and-redistributable-dlls"></a><a name="_core_installing_activex_controls_and_redistributable_dlls"></a> Установка элементов управления ActiveX и распространяемых библиотек DLL
 
 Программа установки, предоставляемая элементами управления ActiveX, должна создать специальный подкаталог каталога Windows и установить элементы управления. Файлы OCX в нем.
 
@@ -62,7 +63,7 @@ ms.locfileid: "84618208"
 
 Поскольку элементы управления ActiveX могут использоваться только в приложениях-контейнерах OLE, нет необходимости распространять полный набор библиотек DLL OLE с элементами управления. Можно предположить, что в содержащем его приложении (или в самой операционной системе) установлены стандартные DLL-библиотеки OLE.
 
-## <a name="registering-controls"></a><a name="_core_registering_controls"></a>Регистрация элементов управления
+## <a name="registering-controls"></a><a name="_core_registering_controls"></a> Регистрация элементов управления
 
 Прежде чем можно будет использовать элемент управления, для него должны быть созданы соответствующие записи в базе данных регистрации Windows. Некоторые контейнеры элементов управления ActiveX предоставляют пользователю пункт меню для регистрации новых элементов управления, но эта функция может быть недоступна во всех контейнерах. Таким образом, программе установки может потребоваться зарегистрировать элементы управления при их установке.
 
@@ -77,8 +78,8 @@ ms.locfileid: "84618208"
 > [!NOTE]
 > Перед установкой элемента управления ActiveX программа установки должна вызвать `OleInitialize` . После завершения программы установки вызовите `OleUnitialize` . Это гарантирует, что системные DLL-библиотеки OLE находятся в правильном состоянии для регистрации элемента управления ActiveX.
 
-Необходимо зарегистрировать MFCx0. DLL.
+Необходимо зарегистрировать MFCx0.DLL.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Элементы ActiveX библиотеки MFC](mfc-activex-controls.md)
+[Элементы управления ActiveX в MFC](mfc-activex-controls.md)

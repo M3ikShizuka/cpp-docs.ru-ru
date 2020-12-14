@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: MFC COM'
 title: MFC COM
 ms.date: 09/12/2018
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - Active technology [MFC]
 - COM [MFC], MFC support
 ms.assetid: 7646bdcb-3a06-4ed5-9386-9b00f3979dcb
-ms.openlocfilehash: da194510938e3fe02eba5993182e811fdf2e1b7c
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: a7f4387aa692eb0610052f85870127ac54761437
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618015"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280668"
 ---
 # <a name="mfc-com"></a>MFC COM
 
@@ -28,7 +29,7 @@ ms.locfileid: "84618015"
 
 - Элементы управления ActiveX — это интерактивные объекты, которые можно использовать в таких контейнерах, как веб-сайт. Дополнительные сведения об элементах управления ActiveX см. в следующих статьях:
 
-  - [Элементы ActiveX библиотеки MFC](mfc-activex-controls.md)
+  - [Элементы управления ActiveX в MFC](mfc-activex-controls.md)
 
   - [Элементы управления ActiveX в Интернете](activex-controls-on-the-internet.md)
 
@@ -48,16 +49,16 @@ ms.locfileid: "84618015"
 
 Обсуждение того, что все еще называется OLE, и что теперь называется Active Technology, см. в разделах, посвященных [OLE](ole-in-mfc.md).
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 
-[Вложение активного документа](active-document-containment.md)
+[Включение активного документа](active-document-containment.md)
 
 [Служба автоматизации](automation.md)
 
 [Точки подключения](connection-points.md)
 
-[Элементы ActiveX библиотеки MFC](mfc-activex-controls.md)
+[Элементы управления ActiveX в MFC](mfc-activex-controls.md)
 
 ## <a name="see-also"></a>См. также раздел
 
-[Концепции](mfc-concepts.md)
+[Основные понятия](mfc-concepts.md)

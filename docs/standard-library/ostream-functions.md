@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о &lt; &gt; функциях ostream
 title: Функции &lt;ostream&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - std::endl [C++]
 - std::ends [C++]
 - std::flush [C++]
-ms.openlocfilehash: 4db966797202b16911aa67b6fda7c81785d98166
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: fb99b713db4c29fe42b45858588181536aec4f5e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842641"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280525"
 ---
 # <a name="ltostreamgt-functions"></a>Функции &lt;ostream&gt;
 
@@ -53,7 +54,7 @@ basic_ostream<Elem, Tr>& endl(
 
 Объект типа **basic_ostream**.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Манипулятор вызывает *OSTR*. [Размещение](../standard-library/basic-ostream-class.md#put)(*OSTR*.[ Расширьте](../standard-library/basic-ios-class.md#widen)(' \n ')), а затем вызывает *OSTR*. [Сброс](../standard-library/basic-ostream-class.md#flush). Он возвращает *OSTR*.
 
@@ -100,7 +101,7 @@ basic_ostream<Elem, Tr>& ends(
 
 Объект типа `basic_ostream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Манипулятор вызывает *OSTR*. [Размещение](../standard-library/basic-ostream-class.md#put)(*elem*(' \ 0 ')). Он возвращает *OSTR*.
 
@@ -149,7 +150,7 @@ basic_ostream<Elem, Tr>& flush(
 
 Объект типа `basic_ostream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Манипулятор вызывает *OSTR*. [Сброс](../standard-library/basic-ostream-class.md#flush). Он возвращает *OSTR*.
 
@@ -196,7 +197,7 @@ void swap(
 *Правильно*\
 Ссылка lvalue на объект `basic_ostream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция шаблона `swap` выполняет `left.swap(right)`.
 

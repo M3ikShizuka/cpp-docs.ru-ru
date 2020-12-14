@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье Управление ходом выполнения
 title: Управление элементом управления "Индикатор выполнения"
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - controlling progress controls [MFC]
 - CProgressCtrl class [MFC], using
 ms.assetid: 9af561d1-980b-4003-a6da-ff79be15bf23
-ms.openlocfilehash: 3e3521a82854a85062f9b06bc33eb268d4b9c7a6
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: cfb89dee0047d910fb983546c71e4a1e4a618f56
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84622435"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281097"
 ---
 # <a name="manipulating-the-progress-control"></a>Управление элементом управления "Индикатор выполнения"
 
@@ -32,11 +33,11 @@ ms.locfileid: "84622435"
 1. Чтобы увеличить эту точку, используйте функцию члена [степит](reference/cprogressctrl-class.md#stepit) . В результате элемент управления перерисовывается самим собой.
 
     > [!NOTE]
-    >  `StepIt`приведет к переносу расположения. Например, если задать диапазон 1 -100, шаг 20 и расположение 90, `StepIt` будет установлено значение 10.
+    >  `StepIt` приведет к переносу расположения. Например, если задать диапазон 1 -100, шаг 20 и расположение 90, `StepIt` будет установлено значение 10.
 
 ### <a name="to-change-the-position-by-an-arbitrary-amount"></a>Изменение расположения на произвольный объем
 
-1. Для изменения расположения используйте функцию члена [оффсетпос](reference/cprogressctrl-class.md#offsetpos) . `OffsetPos`принимает отрицательные значения.
+1. Для изменения расположения используйте функцию члена [оффсетпос](reference/cprogressctrl-class.md#offsetpos) . `OffsetPos` принимает отрицательные значения.
 
     > [!NOTE]
     >  `OffsetPos`, в отличие от `StepIt` , не будет переносить эту точку в оболочку. Новое расположение корректируется, чтобы остаться в пределах диапазона.

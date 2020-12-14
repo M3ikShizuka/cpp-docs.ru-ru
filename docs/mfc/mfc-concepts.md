@@ -1,20 +1,21 @@
 ---
+description: 'Дополнительные сведения: основные понятия MFC'
 title: Основные понятия MFC
 ms.date: 01/09/2018
 f1_keywords:
 - Concepts
-ms.openlocfilehash: b6f5e6bf84900a17b10104dbe9baf4b580ae5396
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 13d5b0b1943eb68e7b73fc5e935b98b0d104ab07
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84615500"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280603"
 ---
 # <a name="mfc-concepts"></a>Основные понятия MFC
 
 В этом разделе содержатся общие сведения и разделы на основе задач, которые помогут программировать работу с библиотекой Microsoft Foundation Class (MFC).
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 
 [Общие разделы по MFC](general-mfc-topics.md)<br/>
 Описание технических деталей библиотеки MFC.
@@ -48,7 +49,7 @@ ms.locfileid: "84615500"
 [Основные сведения о программировании Интернета MFC](mfc-internet-programming-basics.md)<br/>
 Обсуждаются классы MFC, поддерживающие Интернет.
 
-[Задачи программирования для интернет-решений MFC](mfc-internet-programming-tasks.md)<br/>
+[Задачи программирования в Интернете MFC](mfc-internet-programming-tasks.md)<br/>
 Описывает, как добавить в приложения поддержку Интернета.
 
 [Поддержка Юникода и многобайтовой кодировки (MBCS)](../atl-mfc-shared/unicode-and-multibyte-character-set-mbcs-support.md)<br/>

@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: группы с вкладками MDI'
 title: Группы с вкладками MDI
 ms.date: 11/04/2016
 helpviewer_keywords:
 - mdi [MFC], tabbed groups
 - tabbed grous [MFC]
 ms.assetid: 0a464f36-39b7-4e68-8b67-ec175de28377
-ms.openlocfilehash: 0c1bf925003d5081b2cdc837012a57585b1ace60
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: b859445c5cc1e14f19ec91c31b4d618237cfb9a9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84624365"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280772"
 ---
 # <a name="mdi-tabbed-groups"></a>Группы с вкладками MDI
 

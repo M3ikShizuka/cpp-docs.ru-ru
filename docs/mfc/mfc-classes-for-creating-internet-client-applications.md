@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: классы MFC для создания Интернет клиентских приложений'
 title: Классы MFC для создания клиентских приложений в Интернете
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - Internet client applications [MFC], MFC
 - Internet applications [MFC], MFC
 ms.assetid: 67d34117-9839-4f4b-8bb8-0e4a9471c606
-ms.openlocfilehash: d65a2e8b373f26fe928e4c3e7c0193aec4edf2d6
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: c68110182b01d9c425090a926ee1e352ca3d3bdf
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618036"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280681"
 ---
 # <a name="mfc-classes-for-creating-internet-client-applications"></a>Классы MFC для создания клиентских приложений в Интернете
 
-MFC предоставляет следующие классы и глобальные функции для написания клиентских интернет приложений. Отступ указывает, что класс является производным от класса, не являющегося отступом над ним. `CGopherFile`и `CHttpFile` являются производными от `CInternetFile` , например. Эти классы и глобальные функции объявляются в АФКСИНЕТ. H, за исключением `CFileFind` , которое объявлено в AFX. Высоты.
+MFC предоставляет следующие классы и глобальные функции для написания клиентских интернет приложений. Отступ указывает, что класс является производным от класса, не являющегося отступом над ним. `CGopherFile` и `CHttpFile` являются производными от `CInternetFile` , например. Эти классы и глобальные функции объявляются в АФКСИНЕТ. H, за исключением `CFileFind` , которое объявлено в AFX. H.
 
 ## <a name="classes"></a>Классы
 
@@ -59,4 +60,4 @@ MFC предоставляет следующие классы и глобаль
 
 [Расширения Интернета Win32 (WinInet)](win32-internet-extensions-wininet.md)<br/>
 [Необходимые условия для клиентских классов Интернета](prerequisites-for-internet-client-classes.md)<br/>
-[Создание клиентских приложений в Интернете с использованием классов MFC WinInet](writing-an-internet-client-application-using-mfc-wininet-classes.md)
+[Написание Интернет клиентского приложения с помощью классов MFC WinInet](writing-an-internet-client-application-using-mfc-wininet-classes.md)
