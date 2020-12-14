@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: класс значений Platform:: IntPtr'
 title: Класс значения Platform::IntPtr
 ms.date: 12/30/2016
 ms.topic: reference
@@ -9,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::IntPtr Struct
 ms.assetid: 6c0326e8-edfd-4e53-a963-240b845dcde8
-ms.openlocfilehash: 8101fa2c82a0ac3e3b573384d14d9a7eff6ecf61
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 18c5316eaae84b1e6af4e54d86ef876d81a866ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62152742"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97295267"
 ---
 # <a name="platformintptr-value-class"></a>Класс значения Platform::IntPtr
 
@@ -26,15 +27,15 @@ ms.locfileid: "62152742"
 public value struct IntPtr
 ```
 
-### <a name="members"></a>Участники
+### <a name="members"></a>Члены
 
 Класс IntPtr имеет следующие члены:
 
 |Член|Описание|
 |------------|-----------------|
-|[IntPtr::IntPtr](#ctor)|Инициализирует новый экземпляр класса IntPtr.|
-|[Оператор IntPtr::op_explicit](#op-explicit)|Преобразует указанный параметр в объект IntPtr или указатель на значение IntPtr.|
-|[IntPtr::ToInt32](#toint32)|Преобразует текущий объект IntPtr в 32-разрядное целое число.|
+|[IntPtr:: IntPtr](#ctor)|Инициализирует новый экземпляр класса IntPtr.|
+|[Оператор IntPtr:: op_explicit](#op-explicit)|Преобразует указанный параметр в объект IntPtr или указатель на значение IntPtr.|
+|[IntPtr:: ToInt32](#toint32)|Преобразует текущий объект IntPtr в 32-разрядное целое число.|
 
 ### <a name="requirements"></a>Требования
 
@@ -44,9 +45,9 @@ public value struct IntPtr
 
 **Пространство имен:** Platform
 
-**Метаданные:** platform.winmd
+**Метаданные:** Platform. winmd
 
-## <a name="ctor"> </a> IntPtr::IntPtr - конструктор
+## <a name="intptrintptr-constructor"></a><a name="ctor"> </a> IntPtr::IntPtr - конструктор
 
 Инициализирует новый экземпляр класса IntPtr, используя указанное значение.
 
@@ -61,7 +62,7 @@ IntPtr( __int64 handle-or-pointer );   IntPtr( void* value );   IntPtr( int 32-b
 *value*<br/>
 64-разрядный дескриптор или указатель, указатель на 64-разрядное значение или 32-разрядное значение, которое можно преобразовать в 64-разрядное.
 
-## <a name="op-explicit"> </a> Оператор IntPtr::op_explicit
+## <a name="intptrop_explicit-operator"></a><a name="op-explicit"> </a> Оператор IntPtr::op_explicit
 
 Преобразует указанный параметр в объект IntPtr или указатель на значение IntPtr.
 
@@ -76,17 +77,17 @@ static IntPtr::operator IntPtr( void* value1);   static IntPtr::operator IntPtr(
 *Значение1*<br/>
 Указатель на дескриптор или IntPtr.
 
-*Value2*<br/>
+*value2*<br/>
 32-битовое целое число, которое можно преобразовать в IntPtr.
 
-*значение 3*<br/>
+*value3*<br/>
 Объект IntPtr.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Первый и второй операторы возвращают IntPtr. Третий оператор возвращает указатель на значение, представленное текущим объектом IntPtr.
 
-## <a name="toint32"> </a> Метод IntPtr::ToInt32
+## <a name="intptrtoint32-method"></a><a name="toint32"></a> Метод IntPtr:: ToInt32
 
 Преобразует текущее значение IntPtr в 32-битовое целое число.
 
@@ -98,8 +99,8 @@ int32 IntPtr::ToInt32();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-32-битовое целое число.
+32-битное целое число.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Пространство имен Platform](../cppcx/platform-namespace-c-cx.md)

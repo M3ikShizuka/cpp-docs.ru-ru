@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: gmtime_s, _gmtime32_s, _gmtime64_s'
 title: gmtime_s, _gmtime32_s, _gmtime64_s
 ms.date: 4/2/2020
 api_name:
@@ -41,12 +42,12 @@ helpviewer_keywords:
 - _gmtime_s function
 - _gmtime32_s function
 ms.assetid: 261c7df0-2b0c-44ba-ba61-cb83efaec60f
-ms.openlocfilehash: 8cebd2eab1c0a5b650f33ccca1e87a0a8cad1e08
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: bffe11bd655ed8cfead6b862abf0237270c3af20
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213558"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296463"
 ---
 # <a name="gmtime_s-_gmtime32_s-_gmtime64_s"></a>gmtime_s, _gmtime32_s, _gmtime64_s
 
@@ -91,7 +92,7 @@ errno_t _gmtime64_s(
 
 В случае первых двух условий ошибки вызывается обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эти функции **устанавливают** значение **еинвал** и возвращают **еинвал**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_gmtime32_s** разбивает значение *саурцетиме* и сохраняет его в виде структуры типа **TM**, определенной в Time. h. Адрес структуры передается в *тмдест*. Значение *саурцетиме* обычно получается из вызова функции [времени](time-time32-time64.md) .
 

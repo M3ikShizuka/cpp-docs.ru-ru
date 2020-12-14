@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _heapmin'
 title: _heapmin
 ms.date: 4/2/2020
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - _heapmin function
 - heapmin function
 ms.assetid: c0bccdf6-2d14-4d7b-a7ff-d6a17bdb410f
-ms.openlocfilehash: 9a98dfffc784d05a93f65a51a5250c31fe1dd596
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 06ec2d7b0269927d8d67c9fe7431f2f550728aae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920111"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296450"
 ---
 # <a name="_heapmin"></a>_heapmin
 
@@ -55,7 +56,7 @@ int _heapmin( void );
 
 Дополнительные сведения об этом и других кодах возврата см. в статье [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_heapmin** свертывает кучу, освобождая неиспользуемую память кучи от операционной системы. Если операционная система не поддерживает **_heapmin**(например, Windows 98), функция **возвращает значение-1 и устанавливает для** **еносис**.
 
@@ -72,7 +73,7 @@ int _heapmin( void );
 ## <a name="see-also"></a>См. также раздел
 
 [Выделение памяти](../../c-runtime-library/memory-allocation.md)<br/>
-[свободный](free.md)<br/>
+[free](free.md)<br/>
 [_heapadd](../../c-runtime-library/heapadd.md)<br/>
 [_heapchk](heapchk.md)<br/>
 [_heapset](../../c-runtime-library/heapset.md)<br/>

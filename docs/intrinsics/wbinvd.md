@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __wbinvd'
 title: __wbinvd
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,18 +8,18 @@ helpviewer_keywords:
 - __wbinvd intrinsic
 - wbinvd instruction
 ms.assetid: 628d0981-39e5-49e1-bd43-706d123af121
-ms.openlocfilehash: fe888ef578f0c2e077911537d401890b63372a0b
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: b40e1b618e49ab317a7b9cdeea647bcd58df7912
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219382"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257268"
 ---
 # <a name="__wbinvd"></a>__wbinvd
 
 **Блок, относящийся только к системам Microsoft**
 
-Создает инструкцию Write назад и недействительным`wbinvd`кэшем ().
+Создает инструкцию Write назад и недействительным кэшем ( `wbinvd` ).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,13 +29,13 @@ void __wbinvd(void);
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__wbinvd`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Эта функция доступна только в режиме ядра с уровнем привилегий (CPL), равным 0, и подпрограммы доступны только в качестве встроенных.
 
