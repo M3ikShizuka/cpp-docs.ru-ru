@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CD2DMesh Class'
 title: Класс CD2DMesh
 ms.date: 11/04/2016
 f1_keywords:
@@ -24,16 +25,16 @@ helpviewer_keywords:
 - CD2DMesh [MFC], Open
 - CD2DMesh [MFC], m_pMesh
 ms.assetid: 11a2c78a-1367-40e8-a34f-44aa0509a4c9
-ms.openlocfilehash: eaecdb6ba6f1382f16177e0567b31c9fd09da6ff
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: fbdb941d04b87df5c136f1925445564caab63443
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753092"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193374"
 ---
 # <a name="cd2dmesh-class"></a>Класс CD2DMesh
 
-Обертка для ID2D1Mesh.
+Оболочка для ID2D1Mesh.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -41,52 +42,52 @@ ms.locfileid: "81753092"
 class CD2DMesh : public CD2DResource;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CD2DMesh::CD2DMesh](#cd2dmesh)|Строит объект CD2DMesh.|
-|[CD2DMesh:: CD2DMesh](#_dtorcd2dmesh)|Деструктор Вызывается при уничтожении объекта сетки D2D.|
+|[CD2DMesh::CD2DMesh](#cd2dmesh)|Конструирует объект CD2DMesh.|
+|[CD2DMesh:: ~ CD2DMesh](#_dtorcd2dmesh)|Деструктор Вызывается при уничтожении объекта сетки D2D.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CD2DMesh:Attach](#attach)|Прикрепляет существующий интерфейс ресурса к объекту|
-|[CD2DMesh::Создание](#create)|Создает CD2DMesh. (Переопределяет [CD2DРесурс::Создание](../../mfc/reference/cd2dresource-class.md#create).)|
-|[CD2DMesh: :Dэсстрой](#destroy)|Уничтожает объект CD2DMesh. (Переопределяет [CD2DРесурс::Destroy](../../mfc/reference/cd2dresource-class.md#destroy).)|
-|[CD2DMesh::Detach](#detach)|Открепите интерфейс ресурса с объекта|
-|[CD2DMesh::Get](#get)|Возвращает интерфейс ID2D1Mesh|
-|[CD2DMesh::Действительно](#isvalid)|Проверка достоверности ресурса (Переопределения [CD2DРесурса:: IsValid](../../mfc/reference/cd2dresource-class.md#isvalid).)|
-|[CD2DMesh::Открыто](#open)|Открывает сетку для населения.|
+|[CD2DMesh:: Attach](#attach)|Присоединяет существующий интерфейс ресурсов к объекту|
+|[CD2DMesh:: Create](#create)|Создает CD2DMesh. (Переопределяет [CD2DResource:: Create](../../mfc/reference/cd2dresource-class.md#create).)|
+|[CD2DMesh::D естрой](#destroy)|Уничтожает объект CD2DMesh. (Переопределяет [CD2DResource::D естрой](../../mfc/reference/cd2dresource-class.md#destroy).)|
+|[CD2DMesh::D етач](#detach)|Отсоединяет интерфейс ресурса от объекта|
+|[CD2DMesh:: Get](#get)|Возвращает интерфейс ID2D1Mesh|
+|[CD2DMesh:: IsValid](#isvalid)|Проверяет допустимость ресурса (переопределяет [CD2DResource:: IsValid](../../mfc/reference/cd2dresource-class.md#isvalid).)|
+|[CD2DMesh:: Open](#open)|Открывает сетку для заполнения.|
 
 ### <a name="public-operators"></a>Открытые операторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CD2DMesh:оператор ID2D1Mesh](#operator_id2d1mesh_star)|Возвращает интерфейс ID2D1Mesh|
+|[CD2DMesh:: operator ID2D1Mesh *](#operator_id2d1mesh_star)|Возвращает интерфейс ID2D1Mesh|
 
 ### <a name="protected-data-members"></a>Защищенные члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CD2DMesh::m_pMesh](#m_pmesh)|Указатель на ID2D1Mesh.|
+|[CD2DMesh:: m_pMesh](#m_pmesh)|Указатель на ID2D1Mesh.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
 [CObject](../../mfc/reference/cobject-class.md)
 
-[CD2DРесурс](../../mfc/reference/cd2dresource-class.md)
+[CD2DResource](../../mfc/reference/cd2dresource-class.md)
 
 `CD2DMesh`
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxrendertarget.h
+**Заголовок:** афксрендертаржет. h
 
-## <a name="cd2dmeshcd2dmesh"></a><a name="_dtorcd2dmesh"></a>CD2DMesh:: CD2DMesh
+## <a name="cd2dmeshcd2dmesh"></a><a name="_dtorcd2dmesh"></a> CD2DMesh:: ~ CD2DMesh
 
 Деструктор Вызывается при уничтожении объекта сетки D2D.
 
@@ -94,9 +95,9 @@ class CD2DMesh : public CD2DResource;
 virtual ~CD2DMesh();
 ```
 
-## <a name="cd2dmeshattach"></a><a name="attach"></a>CD2DMesh:Attach
+## <a name="cd2dmeshattach"></a><a name="attach"></a> CD2DMesh:: Attach
 
-Прикрепляет существующий интерфейс ресурса к объекту
+Присоединяет существующий интерфейс ресурсов к объекту
 
 ```cpp
 void Attach(ID2D1Mesh* pResource);
@@ -104,12 +105,12 @@ void Attach(ID2D1Mesh* pResource);
 
 ### <a name="parameters"></a>Параметры
 
-*pResource*<br/>
-Существующий интерфейс ресурса. Не может быть NULL
+*исходный код*<br/>
+Существующий интерфейс ресурсов. Не может иметь значение NULL
 
-## <a name="cd2dmeshcd2dmesh"></a><a name="cd2dmesh"></a>CD2DMesh::CD2DMesh
+## <a name="cd2dmeshcd2dmesh"></a><a name="cd2dmesh"></a> CD2DMesh::CD2DMesh
 
-Строит объект CD2DMesh.
+Конструирует объект CD2DMesh.
 
 ```
 CD2DMesh(
@@ -119,13 +120,13 @@ CD2DMesh(
 
 ### <a name="parameters"></a>Параметры
 
-*pParentTarget*<br/>
-Указатель на цель рендера.
+*ппаренттаржет*<br/>
+Указатель на целевой объект прорисовки.
 
-*bAutoDestroy*<br/>
-Означает, что объект будет уничтожен владельцем (pParentTarget).
+*баутодестрой*<br/>
+Указывает, что объект будет уничтожен владельцем (Ппаренттаржет).
 
-## <a name="cd2dmeshcreate"></a><a name="create"></a>CD2DMesh::Создание
+## <a name="cd2dmeshcreate"></a><a name="create"></a> CD2DMesh:: Create
 
 Создает CD2DMesh.
 
@@ -135,14 +136,14 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 
 ### <a name="parameters"></a>Параметры
 
-*pRenderTarget*<br/>
-Указатель на цель рендера.
+*прендертаржет*<br/>
+Указатель на целевой объект прорисовки.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если метод завершается успешно, возвращает значение S_OK. В противном случае он возвращает код ошибки HRESULT.
+Если метод завершается успешно, возвращает значение S_OK. В противном случае возвращается код ошибки HRESULT.
 
-## <a name="cd2dmeshdestroy"></a><a name="destroy"></a>CD2DMesh: :Dэсстрой
+## <a name="cd2dmeshdestroy"></a><a name="destroy"></a> CD2DMesh::D естрой
 
 Уничтожает объект CD2DMesh.
 
@@ -150,9 +151,9 @@ virtual HRESULT Create(CRenderTarget* pRenderTarget);
 virtual void Destroy();
 ```
 
-## <a name="cd2dmeshdetach"></a><a name="detach"></a>CD2DMesh::Detach
+## <a name="cd2dmeshdetach"></a><a name="detach"></a> CD2DMesh::D етач
 
-Открепите интерфейс ресурса с объекта
+Отсоединяет интерфейс ресурса от объекта
 
 ```
 ID2D1Mesh* Detach();
@@ -160,9 +161,9 @@ ID2D1Mesh* Detach();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на отдельный интерфейс ресурса.
+Указатель на отсоединенный интерфейс ресурсов.
 
-## <a name="cd2dmeshget"></a><a name="get"></a>CD2DMesh::Get
+## <a name="cd2dmeshget"></a><a name="get"></a> CD2DMesh:: Get
 
 Возвращает интерфейс ID2D1Mesh
 
@@ -172,11 +173,11 @@ ID2D1Mesh* Get();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на интерфейс ID2D1Mesh или NULL, если объект еще не инициализирован.
+Указатель на интерфейс ID2D1Mesh или значение NULL, если объект еще не инициализирован.
 
-## <a name="cd2dmeshisvalid"></a><a name="isvalid"></a>CD2DMesh::Действительно
+## <a name="cd2dmeshisvalid"></a><a name="isvalid"></a> CD2DMesh:: IsValid
 
-Проверка достоверности ресурса
+Проверка действительности ресурсов
 
 ```
 virtual BOOL IsValid() const;
@@ -184,9 +185,9 @@ virtual BOOL IsValid() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если ресурс действителен; в противном случае FALSE.
+Значение TRUE, если ресурс является допустимым; в противном случае — FALSE.
 
-## <a name="cd2dmeshm_pmesh"></a><a name="m_pmesh"></a>CD2DMesh::m_pMesh
+## <a name="cd2dmeshm_pmesh"></a><a name="m_pmesh"></a> CD2DMesh:: m_pMesh
 
 Указатель на ID2D1Mesh.
 
@@ -194,9 +195,9 @@ TRUE, если ресурс действителен; в противном сл
 ID2D1Mesh* m_pMesh;
 ```
 
-## <a name="cd2dmeshopen"></a><a name="open"></a>CD2DMesh::Открыто
+## <a name="cd2dmeshopen"></a><a name="open"></a> CD2DMesh:: Open
 
-Открывает сетку для населения.
+Открывает сетку для заполнения.
 
 ```
 ID2D1TessellationSink* Open();
@@ -204,9 +205,9 @@ ID2D1TessellationSink* Open();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на ID2D1TessellationSSink, который используется для заполнения сетки.
+Указатель на объект ID2D1TessellationSink, который используется для заполнения сетки.
 
-## <a name="cd2dmeshoperator-id2d1mesh"></a><a name="operator_id2d1mesh_star"></a>CD2DMesh:оператор ID2D1Mesh
+## <a name="cd2dmeshoperator-id2d1mesh"></a><a name="operator_id2d1mesh_star"></a> CD2DMesh:: operator ID2D1Mesh *
 
 Возвращает интерфейс ID2D1Mesh
 
@@ -216,7 +217,7 @@ operator ID2D1Mesh*();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Указатель на интерфейс ID2D1Mesh или NULL, если объект еще не инициализирован.
+Указатель на интерфейс ID2D1Mesh или значение NULL, если объект еще не инициализирован.
 
 ## <a name="see-also"></a>См. также раздел
 

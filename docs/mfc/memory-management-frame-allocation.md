@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: управление памятью: выделение кадров'
 title: 'Управление памятью: выделение кадров'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - frame allocation [MFC]
 - frame variables [MFC]
 ms.assetid: 945a211a-6f4f-4679-bb6a-b0f2a0d4a6c1
-ms.openlocfilehash: cb66a0c0aea16f7e6831b6a1aff1a125df355210
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1763d332275f17ee082b891830641ebc61cad054
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225050"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193439"
 ---
 # <a name="memory-management-frame-allocation"></a>Управление памятью: выделение кадров
 
@@ -39,6 +40,6 @@ ms.locfileid: "87225050"
 
 Ключевым преимуществом выделения объектов в кадре является то, что они автоматически удаляются. При выделении объектов в рамке не нужно беспокоиться о том, что утраченные объекты вызывают утечку памяти. (Дополнительные сведения об утечках памяти см. в статье [Обнаружение утечек памяти в MFC](/previous-versions/visualstudio/visual-studio-2010/c99kz476(v=vs.100)).) Недостатком выделения кадров является то, что переменные фрейма не могут использоваться за пределами их области действия. Другим фактором при выборе распределения кадров и выделения кучи является то, что для больших структур и объектов часто лучше использовать кучу вместо стека для хранения, так как пространство стека часто ограничено.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Управление памятью](memory-management.md)

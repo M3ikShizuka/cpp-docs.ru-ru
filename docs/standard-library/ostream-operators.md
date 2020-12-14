@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: &lt; Операторы ostream &gt;'
 title: Операторы &lt;ostream&gt;
 ms.date: 11/04/2016
 f1_keywords:
 - ostream/std::operator&lt;&lt;
 ms.assetid: 9282a62e-a3d1-4371-a284-fbc9515bb9a2
-ms.openlocfilehash: a4dfee6c70f068e5a61294e6b2863a8a12a9c378
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 51422031de786d560b70a8ccaf8a072151630bbe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90039772"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193062"
 ---
 # <a name="ltostreamgt-operators"></a>Операторы &lt;ostream&gt;
 

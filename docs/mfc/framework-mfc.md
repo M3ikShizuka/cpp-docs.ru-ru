@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о: Framework (MFC)'
 title: Платформа (MFC)
 ms.date: 09/17/2019
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - Windows API [MFC], encapsulation by MFC
 - encapsulated Win32 API [MFC]
 ms.assetid: 3be0fec8-9843-4119-ae42-ece993ef500b
-ms.openlocfilehash: b02d5a1862a278f46591895f20f58a97367b5ab2
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 12e5a28e231dfadec867213ebf1cea6fd6ae7300
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84618787"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193491"
 ---
 # <a name="framework-mfc"></a>Платформа (MFC)
 
@@ -27,7 +28,7 @@ ms.locfileid: "84618787"
 
 Инкапсуляция означает, что класс C++ `CWnd` , например, содержит переменную-член типа `HWND` , а функции-члены класса инкапсулируют вызовы функций Win32, которые принимают в `HWND` качестве параметра. Функции члена класса обычно имеют то же имя, что и функция Win32, которую они инкапсулируют.
 
-## <a name="in-this-section"></a>В этом разделе
+## <a name="in-this-section"></a>в этом разделе
 
 [SDI и MDI](sdi-and-mdi.md)
 
@@ -39,9 +40,9 @@ ms.locfileid: "84618787"
 
 [Сборка на платформе](building-on-the-framework.md)
 
-[Вызовы кода со стороны платформы](how-the-framework-calls-your-code.md)
+[Как платформа вызывает ваш код](how-the-framework-calls-your-code.md)
 
-[CWinApp: класс приложений](cwinapp-the-application-class.md)
+[CWinApp: класс Application](cwinapp-the-application-class.md)
 
 [Шаблоны документов и процесс создания документа/представления](document-templates-and-the-document-view-creation-process.md)
 
@@ -51,4 +52,4 @@ ms.locfileid: "84618787"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Использование классов для создания приложений для Windows](using-the-classes-to-write-applications-for-windows.md)
+[Использование классов для написания приложений для Windows](using-the-classes-to-write-applications-for-windows.md)

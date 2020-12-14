@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кмфккустомколорспропертипаже Class'
 title: Класс Кмфккустомколорспропертипаже
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCCustomColorsPropertyPage [MFC], Setup
 ms.assetid: 46a45ba2-1fda-440d-8018-d4dcd44f5816
-ms.openlocfilehash: 07b369e8c47419db31bed3e49e159e3e7925d5ae
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 9a1e5a83f2dcb291b266c3ef8fcd65422d30135a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844539"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97193348"
 ---
 # <a name="cmfccustomcolorspropertypage-class"></a>Класс Кмфккустомколорспропертипаже
 
@@ -25,7 +26,7 @@ ms.locfileid: "88844539"
 class CMFCCustomColorsPropertyPage : public CPropertyPage
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -41,7 +42,7 @@ class CMFCCustomColorsPropertyPage : public CPropertyPage
 |`CMFCCustomColorsPropertyPage::GetThisClass`|Используется платформой для получения указателя на объект [крунтимекласс](../../mfc/reference/cruntimeclass-structure.md) , связанный с этим типом класса.|
 |[Кмфккустомколорспропертипаже:: Setup](#setup)|Задает компоненты цвета страницы свойств.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `CMFCColorDialog`Класс использует этот класс для вывода страницы свойств пользовательского цвета. Дополнительные сведения о см `CMFCColorDialog` . в разделе [класс кмфкколордиалог](../../mfc/reference/cmfccolordialog-class.md).
 
@@ -91,7 +92,7 @@ void Setup(
 *&*\
 окне Синий компонент значения RGB.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод обновляет текущие значения цвета RGB и связанные HLS (оттенок, освещение и насыщенность) на странице свойств. Метод [кмфкколордиалог:: сетпажетво](../../mfc/reference/cmfccolordialog-class.md#setpagetwo) вызывает этот метод, когда платформа Инициализирует диалоговое окно цвета или пользователь нажимает левую кнопку мыши. Дополнительные сведения о см `CMFCColorDialog` . в разделе [класс кмфкколордиалог](../../mfc/reference/cmfccolordialog-class.md).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: класс значений Platform:: GUID'
 title: Класс значения Platform::Guid
 ms.date: 01/15/2019
 ms.topic: reference
@@ -7,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Guid Struct
 ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
-ms.openlocfilehash: 7c3b89ff238b1cb5ee9fbb71e83d20f571e656a3
-ms.sourcegitcommit: 89d9e1cb08fa872483d1cde98bc2a7c870e505e9
+ms.openlocfilehash: 4c2ffc5096e6b40266fef0934acc562edf721c24
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82031541"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195194"
 ---
 # <a name="platformguid-value-class"></a>Класс значения Platform::Guid
 
-Представляет тип «GUID» (/окна/win32/api/guiddef/ns-guid-guid) в системе типа Windows Runtime.
+Представляет [GUID] (тип/Windows/Win32/API/guiddef/NS-guiddef-GUID в системе типов среда выполнения Windows.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -24,21 +25,21 @@ ms.locfileid: "82031541"
 public value struct Guid
 ```
 
-### <a name="members"></a>Участники
+### <a name="members"></a>Члены
 
-`Platform::Guid`имеет `Equals()`, `GetHashCode()`и `ToString()` методы, полученные из [платформы::Объект класса](../cppcx/platform-object-class.md), и `GetTypeCode()` метод, полученный из [платформы::Тип класса](../cppcx/platform-type-class.md). `Platform::Guid`также имеет следующих членов.
+`Platform::Guid` содержит `Equals()` методы, `GetHashCode()` и, `ToString()` производные от [класса Platform:: Object](../cppcx/platform-object-class.md), и метод, `GetTypeCode()` производный от [класса Platform:: Type](../cppcx/platform-type-class.md). `Platform::Guid` также содержит следующие члены.
 
-|Участник|Описание|
+|Член|Описание|
 |------------|-----------------|
-|[Guid](#ctor)|Инициализирует новый экземпляр `Platform::Guid`.|
-|[оператора](#operator-equality)|Оператор «равно».|
-|[оператора!](#operator-inequality)|Оператор «не равно».|
-|[Оператор&lt;](#operator-less)|Оператор «меньше».|
-|[оператор()](#operator-call)|Преобразует `Platform::Guid` в `GUID`.|
+|[Устройства](#ctor)|Инициализирует новый экземпляр `Platform::Guid`.|
+|[Оператор = =](#operator-equality)|Оператор «равно».|
+|[operator! =](#operator-inequality)|Оператор «не равно».|
+|[станции&lt;](#operator-less)|Оператор «меньше».|
+|[оператор ()](#operator-call)|Преобразует `Platform::Guid` в `GUID`.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Для создания `Platform::Guid`нового, используйте [Windows::Основа::GuidHelper::CreateNewGuid](/uwp/api/windows.foundation.guidhelper.createnewguid) статический метод.
+Чтобы создать новый объект `Platform::Guid` , используйте статический метод [Windows:: Foundation:: GuidHelper:: креатеневгуид](/uwp/api/windows.foundation.guidhelper.createnewguid) .
 
 ### <a name="requirements"></a>Требования
 
@@ -48,9 +49,9 @@ public value struct Guid
 
 **Пространство имен:** Platform
 
-**Метаданные:** platform.winmd
+**Метаданные:** Platform. winmd
 
-## <a name="guidguid-constructors"></a><a name="ctor"></a>Guid::Guid конструкторы
+## <a name="guidguid-constructors"></a><a name="ctor"></a> Конструкторы GUID:: GUID
 
 Инициализирует новый экземпляр `Platform::Guid`.
 
@@ -81,46 +82,46 @@ Guid(
 
 ### <a name="parameters"></a>Параметры
 
-*a*<br/>
-Первые 4 байта `GUID`.
+*конкретного*<br/>
+Первые 4 байта объекта `GUID` .
 
-*B*<br/>
-Следующие 2 байта `GUID`.
+*b*<br/>
+Следующие 2 байта `GUID` .
 
-*C*<br/>
-Следующие 2 байта `GUID`.
+*c*<br/>
+Следующие 2 байта `GUID` .
 
-*D*<br/>
+*d*<br/>
 Следующий байт структуры `GUID`.
 
-*E*<br/>
+*e*<br/>
 Следующий байт структуры `GUID`.
 
-*F*<br/>
+*f*<br/>
 Следующий байт структуры `GUID`.
 
-*Г*<br/>
+*g*<br/>
 Следующий байт структуры `GUID`.
 
-*H*<br/>
+*h*<br/>
 Следующий байт структуры `GUID`.
 
-*Я*<br/>
+*i*<br/>
 Следующий байт структуры `GUID`.
 
-*J*<br/>
+*б*<br/>
 Следующий байт структуры `GUID`.
 
-*K*<br/>
+*занят*<br/>
 Следующий байт структуры `GUID`.
 
-*М*<br/>
-А `GUID` в виде [структуры GUID.](/windows/win32/api/guiddef/ns-guiddef-guid)
+*m*<br/>
+A `GUID` в виде [структуры GUID](/windows/win32/api/guiddef/ns-guiddef-guid).
 
 *n*<br/>
-Остальные 8 байтов `GUID`.
+Оставшиеся 8 байт объекта `GUID` .
 
-## <a name="guidoperator-operator"></a><a name="operator-equality"></a>Guid::Оператор - Оператор
+## <a name="guidoperator-operator"></a><a name="operator-equality"></a> Оператор GUID:: operator = =
 
 Сравнивает два экземпляра `Platform::Guid` на предмет их равенства.
 
@@ -132,21 +133,21 @@ static bool Platform::Guid::operator==(Platform::Guid guid1, Platform::Guid guid
 
 ### <a name="parameters"></a>Параметры
 
-*guid1*<br/>
+*GUID1*<br/>
 Первый экземпляр `Platform::Guid` для сравнения.
 
-*guid2*<br/>
+*GUID2*<br/>
 Второй экземпляр `Platform::Guid` для сравнения.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Правда, если `Platform::Guid` эти две инстанции равны.
+Значение true, если два `Platform::Guid` экземпляра равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Предпочитаю использовать `==` оператора вместо [Windows:::Foundation:::GuidHelper::Equals](/uwp/api/windows.foundation.guidhelper.equals) static method.
+Предпочитать использование `==` оператора вместо статического метода [Windows:: Foundation:: GuidHelper:: Equals](/uwp/api/windows.foundation.guidhelper.equals) .
 
-## <a name="guidoperator-operator"></a><a name="operator-inequality"></a>Гид::Оператор!
+## <a name="guidoperator-operator"></a><a name="operator-inequality"></a> Оператор GUID:: operator! =
 
 Сравнивает два экземпляра `Platform::Guid` на неравенство.
 
@@ -158,19 +159,19 @@ static bool Platform::Guid::operator!=(Platform::Guid guid1, Platform::Guid guid
 
 ### <a name="parameters"></a>Параметры
 
-*guid1*<br/>
+*GUID1*<br/>
 Первый экземпляр `Platform::Guid` для сравнения.
 
-*guid2*<br/>
+*GUID2*<br/>
 Второй экземпляр `Platform::Guid` для сравнения.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Правда, если `Platform::Guid` эти два экземпляра не равны.
+Значение true, если два `Platform::Guid` экземпляра не равны.
 
-## <a name="guidoperatorlt-operator"></a><a name="operator-less"></a>Guid::Оператор&lt;
+## <a name="guidoperatorlt-operator"></a><a name="operator-less"></a>Оператор GUID:: operator &lt;
 
-Сравнивает `Platform::Guid` два экземпляра для заказа.
+Сравнивает два `Platform::Guid` экземпляра для упорядочения.
 
 ### <a name="syntax"></a>Синтаксис
 
@@ -180,21 +181,21 @@ static bool Platform::Guid::operator<(Platform::Guid guid1, Platform::Guid guid2
 
 ### <a name="parameters"></a>Параметры
 
-*guid1*<br/>
+*GUID1*<br/>
 Первый экземпляр `Platform::Guid` для сравнения.
 
-*guid2*<br/>
+*GUID2*<br/>
 Второй экземпляр `Platform::Guid` для сравнения.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Правда, если *guid1* упорядочен до *guid2*. Заказ является лексикографическим после `Platform::Guid` обработки каждого, как будто это массив из четырех 32-битных неподписанных значений. Это не заказ, используемый сервером S'L или рамочным .NET, и не является таким же, как лексикографический заказ по репрезентации строк.
+Значение true, если *GUID1* упорядочивается до *GUID2*. Упорядочение лексикографическим порядком после обработки каждого `Platform::Guid` , как если бы он был массивом из 4 32-разрядных беззнаковых значений. Это не порядок, используемый SQL Server или .NET Framework, а также не совпадает с лексикографическом упорядочиванием по строковому представлению.
 
-Этот оператор предоставляется `Guid` таким образом, чтобы объекты могли легче потребляться стандартной библиотекой СЗ.
+Этот оператор предоставляется таким образом, чтобы `Guid` объекты могли проще использовать стандартную библиотеку C++.
 
-## <a name="guidoperator-operator"></a><a name="operator-call"></a>Guid::Оператор() Оператор
+## <a name="guidoperator-operator"></a><a name="operator-call"></a> Оператор GUID:: operator ()
 
-Неявно преобразует `Platform::Guid` [структуру GUID.](/windows/win32/api/guiddef/ns-guiddef-guid)
+Неявно преобразует в `Platform::Guid` [структуру GUID](/windows/win32/api/guiddef/ns-guiddef-guid).
 
 ### <a name="syntax"></a>Синтаксис
 
@@ -204,7 +205,7 @@ const GUID& Platform::Guid::operator();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-[Структура GUID](/windows/win32/api/guiddef/ns-guiddef-guid).
+[Структура Guid](/windows/win32/api/guiddef/ns-guiddef-guid).
 
 ## <a name="see-also"></a>См. также раздел
 

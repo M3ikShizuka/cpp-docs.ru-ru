@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/NOASSEMBLY (создание модуля MSIL)
 title: /NOASSEMBLY (создать модуль MSIL)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - NOASSEMBLY linker option
 - assemblies [C++], not creating an assembly
 ms.assetid: 3cea4e70-f451-4395-a626-1930b1b127fe
-ms.openlocfilehash: 3350aa10dc7ae3b6f584394c01644c1af2abd2b4
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5eb63abf4d38b97f96a9f08ebb629bda1a89482d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320556"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196728"
 ---
 # <a name="noassembly-create-a-msil-module"></a>/NOASSEMBLY (создать модуль MSIL)
 
@@ -24,13 +25,13 @@ ms.locfileid: "62320556"
 /NOASSEMBLY
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Параметр/NOASSEMBLY предписывает компоновщику Создание образа текущего выходного файла без сборки .NET Framework. Выходной файл MSIL без манифеста сборки называется модуля.
+Параметр/NOASSEMBLY указывает компоновщику создать образ для текущего выходного файла без сборки .NET Framework. Выходной файл MSIL без манифеста сборки называется модулем.
 
-По умолчанию создается сборка. Можно также использовать [/LN (Создание модуля MSIL)](ln-create-msil-module.md) параметр компилятора для создания модуля.
+По умолчанию создается сборка. Для создания модуля можно также использовать параметр компилятора [/LN (создание модуля MSIL)](ln-create-msil-module.md) .
 
-Доступны следующие параметры компоновщика, которые влияют на создание сборки.
+Другие параметры компоновщика, влияющие на создание сборки:
 
 - [/ASSEMBLYDEBUG](assemblydebug-add-debuggableattribute.md)
 
@@ -48,19 +49,19 @@ ms.locfileid: "62320556"
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Задание данного параметра компоновщика в среде разработки Visual Studio
 
-1. Откройте диалоговое окно **Страницы свойств** проекта. Дополнительные сведения см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
-1. Нажмите кнопку **компоновщика** папки.
+1. Выберите папку **компоновщика**.
 
-1. Нажмите кнопку **Дополнительно** страницу свойств.
+1. Перейдите на страницу свойств **Дополнительно** .
 
-1. Изменить **отключить создание сборки** свойство.
+1. Измените свойство " **отключить создание сборки** ".
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Задание данного параметра компоновщика программным способом
 
 - См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TurnOffAssemblyGeneration%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по компоновщику MSVC](linking.md)<br/>
 [Параметры компоновщика MSVC](linker-options.md)

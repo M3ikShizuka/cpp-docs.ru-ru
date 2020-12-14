@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/NOENTRY (без точки входа)
 title: /NOENTRY (точка входа отсутствует)
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - /NOENTRY linker option [C++]
 - DLLs [C++], creating
 ms.assetid: 0214dd41-35ad-43ab-b892-e636e038621a
-ms.openlocfilehash: c750fd94e21eec39a25acf216a452faaa277bf7c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: c3d1f725a4e185a052d443010894ff2dc2261675
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320413"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196689"
 ---
 # <a name="noentry-no-entry-point"></a>/NOENTRY (точка входа отсутствует)
 
@@ -25,28 +26,28 @@ ms.locfileid: "62320413"
 /NOENTRY
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Параметр /NOENTRY требуется для создания DLL-библиотеки, содержащей только ресурсы, без исполняемого кода. Дополнительные сведения см. в разделе [Создание библиотеки DLL Resource-Only](../creating-a-resource-only-dll.md).
+Параметр /NOENTRY требуется для создания DLL-библиотеки, содержащей только ресурсы, без исполняемого кода. Дополнительные сведения см. [в разделе создание Resource-Only DLL](../creating-a-resource-only-dll.md).
 
 Используйте этот параметр, чтобы LINK не добавлял ссылку на `_main` в DLL.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Задание данного параметра компоновщика в среде разработки Visual Studio
 
-1. Откройте диалоговое окно **Страницы свойств** проекта. Дополнительные сведения см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+1. Откройте диалоговое окно **Страницы свойств** проекта. Подробнее см. в статье [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md).
 
-1. Выберите **компоновщика** папки.
+1. Выберите папку **Компоновщик** .
 
-1. Выберите **Дополнительно** страницу свойств.
+1. Выберите страницу свойств **Дополнительно**.
 
-1. Изменить **нет точки входа** свойство.
+1. Измените свойство **без точки входа** .
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Задание данного параметра компоновщика программным способом
 
 1. См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ResourceOnlyDLL%2A>.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Создание библиотек DLL, содержащих только ресурсы](../creating-a-resource-only-dll.md)<br/>
+[Создание Resource-Only DLL](../creating-a-resource-only-dll.md)<br/>
 [Справочник по компоновщику MSVC](linking.md)<br/>
 [Параметры компоновщика MSVC](linker-options.md)

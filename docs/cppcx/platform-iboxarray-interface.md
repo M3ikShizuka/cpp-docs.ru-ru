@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения об интерфейсе Platform:: IBoxArray.'
 title: Интерфейс Platform::IBoxArray
 ms.date: 12/30/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::IBoxArray
 ms.assetid: 6cd82c9e-4230-4147-9edb-7a652875dbf1
-ms.openlocfilehash: 493770cab092c2bb719d47e5d3a9d6a9f0646489
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: 8b87a00d709bec8af016de4532c7c4ec759d72fc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444156"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195148"
 ---
 # <a name="platformiboxarray-interface"></a>Интерфейс Platform::IBoxArray
 
@@ -31,19 +32,19 @@ interface class IBoxArray
 *T*<br/>
 Тип упакованного значение в каждом элементе массива.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`IBoxArray` — имя C++/cx для `Windows::Foundation::IReferenceArray`.
+`IBoxArray` — имя C++/CX для `Windows::Foundation::IReferenceArray` .
 
-### <a name="members"></a>Члены
+### <a name="members"></a>Элементы
 
 Интерфейс `IBoxArray` наследует от интерфейса `IValueType` . Интерфейс`IBoxArray` также содержит следующие члены:
 
-|Метод|Description|
+|Метод|Описание|
 |------------|-----------------|
-|[Value](#value)|Возвращает распакованный массив, который ранее хранился в этом экземпляре `IBoxArray` .|
+|[Значение](#value)|Возвращает распакованный массив, который ранее хранился в этом экземпляре `IBoxArray` .|
 
-## <a name="value"></a>Свойство IBoxArray:: value
+## <a name="iboxarrayvalue-property"></a><a name="value"></a> Свойство IBoxArray:: value
 
 Возвращает значение, которое было изначально сохранено в этом объекте.
 
@@ -62,7 +63,7 @@ property T Value {T get();}
 
 Возвращает значение, которое было изначально сохранено в этом объекте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Пример см. в разделе [Упаковка](../cppcx/boxing-c-cx.md).
 

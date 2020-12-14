@@ -1,14 +1,15 @@
 ---
+description: 'Дополнительные сведения о: Microsoft:: WRL::D состояния Namespace'
 title: Пространство имен Microsoft::WRL::Details
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d71fe149-d804-4c6f-961d-43fe21ef8630
-ms.openlocfilehash: 50208242d77d7b54951bcb44608f1a20b5147efc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c82d7389c80d35aa041dccc7c6bc8d202fba9c29
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223477"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97195116"
 ---
 # <a name="microsoftwrldetails-namespace"></a>Пространство имен Microsoft::WRL::Details
 
@@ -20,11 +21,11 @@ ms.locfileid: "87223477"
 namespace Microsoft::WRL::Details;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="classes"></a>Классы
 
-|name|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[Класс ComPtrRef](comptrref-class.md)|Представляет ссылку на объект типа ComPtr \<T> .|
 |[Класс оператор comptrrefbase](comptrrefbase-class.md)|Представляет базовый класс для класса [ComPtrRef](comptrref-class.md) .|
@@ -37,11 +38,11 @@ namespace Microsoft::WRL::Details;
 
 ### <a name="structures"></a>Структуры
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[ArgTraits - структура](argtraits-structure.md)|Объявляет указанный интерфейс делегата и анонимную функцию-член с заданным числом параметров.|
 |[ArgTraitsHelper - структура](argtraitshelper-structure.md)|Помогает определить общие характеристики аргументов делегата.|
-|[BoolStruct - структура](boolstruct-structure.md)|Определяет, `ComPtr` управляет ли объект временем существования объекта в интерфейсе. `BoolStruct`используется внутри оператором [BoolType ()](comptr-class.md#operator-microsoft-wrl-details-booltype) .|
+|[BoolStruct - структура](boolstruct-structure.md)|Определяет, `ComPtr` управляет ли объект временем существования объекта в интерфейсе. `BoolStruct` используется внутри оператором [BoolType ()](comptr-class.md#operator-microsoft-wrl-details-booltype) .|
 |[CreatorMap - структура](creatormap-structure.md)|Содержит сведения о том, как выполнять инициализацию, регистрацию и отмену регистрации объектов.|
 |[DerefHelper - структура](derefhelper-structure.md)|Представляет разыменованный указатель на параметр шаблона `T*`.|
 |[EnableIf - структура](enableif-structure.md)|Определяет элемент данных типа, указанного вторым параметром шаблона, если первый параметр шаблона имеет значение **`true`** .|
@@ -63,13 +64,13 @@ namespace Microsoft::WRL::Details;
 
 ### <a name="enumerations"></a>Перечисления
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[AsyncStatusInternal - перечисление](asyncstatusinternal-enumeration.md)|Задает сопоставление между внутренними перечислениями состояний асинхронных операций и перечислением `Windows::Foundation::AsyncStatus`.|
 
 ### <a name="functions"></a>Функции
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Функция Активатионфакторикаллбакк](activationfactorycallback-function.md)|Возвращает фабрику активации для указанного идентификатора активации.|
 |[Move, функция](move-function.md)|Перемещает указанный аргумент из одного расположения в другое.|
@@ -83,7 +84,7 @@ namespace Microsoft::WRL::Details;
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Пространство имен Microsoft:: WRL](microsoft-wrl-namespace.md)<br/>
 [Пространство имен Microsoft:: WRL:: оберток](microsoft-wrl-wrappers-namespace.md)

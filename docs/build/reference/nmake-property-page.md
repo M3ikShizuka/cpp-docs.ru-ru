@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: страница свойств NMake'
 title: Страница свойств NMake (Windows C++) | Документы Майкрософт
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,24 +10,24 @@ f1_keywords:
 helpviewer_keywords:
 - NMake property page
 ms.assetid: bd20cb52-9f1d-4240-b4fc-4f43205ac94b
-ms.openlocfilehash: c0dbe537635fe6698f814f3d8456f0caa9c8c796
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 58256ad8542e7d411769efb661970f9c41797ec3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62320608"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196806"
 ---
 # <a name="nmake-property-page"></a>Страница свойств NMake
 
-Страница свойств **NMake** позволяет задать параметры сборки для проектов NMake. ((NMAKE) является реализацией Майкрософт [сделать](https://wikipedia.org/wiki/Make_(software)).)
+Страница свойств **NMake** позволяет задать параметры сборки для проектов NMake. (NMAKE является реализацией [Майкрософт.)](https://wikipedia.org/wiki/Make_(software))
 
-Дополнительные сведения о проектах NMake см. в разделе [Создание проекта makefile](creating-a-makefile-project.md). Для проектов MakeFile, отличных от Windows, см. в разделе [свойства проекта MakeFile (Linux C++)](../../linux/prop-pages/makefile-linux.md), [общие свойства проекта (Android C++ Makefile)](/visualstudio/cross-platform/general-makefile-android-prop-page) или [свойства NMake (Android C++)](/visualstudio/cross-platform/nmake-android-prop-page).
+Дополнительные сведения о проектах NMake см. в разделе [Создание проекта makefile](creating-a-makefile-project.md). Для проектов MakeFile, отличных от Windows, см. раздел [Свойства проекта Makefile (Linux c++)](../../linux/prop-pages/makefile-linux.md), [Общие свойства проекта (Android c++ Makefile)](/visualstudio/cross-platform/general-makefile-android-prop-page) или [Свойства NMAKE (Android c++)](/visualstudio/cross-platform/nmake-android-prop-page).
 
 Страница свойств **NMake** содержит указанные ниже свойства.
 
 ## <a name="uielement-list"></a>Список элементов пользовательского интерфейса
 
-- **Командная строка для сборки**
+- **Командная строка сборки**
 
    Указывает команду, выполняемую при выборе элемента **Собрать** в меню **Сборка**.
 
@@ -38,7 +39,7 @@ ms.locfileid: "62320608"
 
    Указывает команду, выполняемую при выборе элемента **Очистить** в меню **Сборка**.
 
-- **Вывод**
+- **Выходные данные**
 
    Определяет имя файла, который будет содержать выходные данные для командной строки. По умолчанию это имя файла основано на имени проекта.
 
@@ -50,7 +51,7 @@ ms.locfileid: "62320608"
 
    Указывает каталоги, где компилятор ищет включаемые файлы.
 
-- **Принудительно включаемые файлы**
+- **Обязательно включаемые файлы**
 
    Указывает файлы, которые препроцессор автоматически обрабатывает, даже если они не включены в файлы проекта.
 
@@ -66,7 +67,7 @@ ms.locfileid: "62320608"
 
    Указывает дополнительные параметры компилятора для IntelliSense, используемые при анализе файлов C++.
 
-Сведения о доступе к **NMake** страницу свойств, см. в разделе [свойств компилятора и собранной задать C++ в Visual Studio](../working-with-project-properties.md).
+Сведения о том, как получить доступ к странице свойств **NMAKE** , см. [в разделе Установка компилятора C++ и свойств сборки в Visual Studio](../working-with-project-properties.md).
 
 Сведения о программном доступе к членам этого объекта см. в разделе <xref:Microsoft.VisualStudio.VCProjectEngine.VCNMakeTool>.
 
