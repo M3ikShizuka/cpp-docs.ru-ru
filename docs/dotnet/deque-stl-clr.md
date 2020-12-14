@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: deque (STL/CLR)'
 title: deque (STL/CLR)
 ms.date: 11/04/2016
 ms.topic: reference
@@ -98,12 +99,12 @@ helpviewer_keywords:
 - operator> member [STL/CLR]
 - operator>= member [STL/CLR]
 ms.assetid: dd669da3-3c0e-45e9-8596-f6b483720941
-ms.openlocfilehash: 75c83240b9125628fd5121368af547a5266bfb5c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 98ad68c3220424a30b6cc75363e5ff92fbc0f965
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221501"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252211"
 ---
 # <a name="deque-stlclr"></a>deque (STL/CLR)
 
@@ -132,7 +133,7 @@ template<typename Value>
 *гвалуе*<br/>
 Универсальный тип элемента в управляемой последовательности.
 
-*Value*<br/>
+*Значение*<br/>
 Тип элемента в управляемой последовательности.
 
 ## <a name="requirements"></a>Требования
@@ -211,7 +212,7 @@ template<typename Value>
 |<xref:System.Collections.Generic.IList%601>|Поддерживать упорядоченную группу типизированных элементов.|
 |Значение<Идекуе\>|Поддержание универсального контейнера.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Объект выделяет и освобождает хранилище для последовательности, управление которой осуществляется с помощью сохраненного массива дескрипторов, которые обозначают блоки `Value` элементов. Массив увеличивается по запросу. Рост происходит таким образом, что стоимость в ожидании или добавлении нового элемента — это постоянное время, а оставшиеся элементы не зависят. Можно также удалить элемент либо в конце постоянного времени, и без нарушения оставшихся элементов. Таким же, deque является хорошим кандидатом для базового контейнера для очереди класса шаблона [(STL/CLR)](../dotnet/queue-stl-clr.md) или [стека классов шаблонов (STL/CLR)](../dotnet/stack-stl-clr.md).
 
@@ -225,7 +226,7 @@ template<typename Value>
 
 ## <a name="members"></a>Элементы
 
-## <a name="dequeassign-stlclr"></a><a name="assign"></a>deque:: Assign (STL/CLR)
+## <a name="dequeassign-stlclr"></a><a name="assign"></a> deque:: Assign (STL/CLR)
 
 Заменяет все элементы.
 
@@ -255,13 +256,13 @@ void assign(System::Collections::Generic::IEnumerable<Value>^ right);
 *Val*<br/>
 Значение вставляемого элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция-член заменяет управляемую последовательность повторением элементов *Count* в значении *Val*. Он используется для заполнения контейнера всеми элементами, имеющими одинаковое значение.
 
 Если `InIt` является целочисленным типом, вторая функция-член ведет себя так же, как `assign((size_type)first, (value_type)last)` . В противном случае управляемая последовательность заменяется последовательностью [ `first` , `last` ). Он используется для того, чтобы управляемая последовательность скопировала еще одну последовательность.
 
-Третья функция – член заменяет управляемую последовательность на последовательность, обозначенную *правым*перечислителем. Он используется для того, чтобы управляемая последовательность была копией последовательности, описанной перечислителем.
+Третья функция – член заменяет управляемую последовательность на последовательность, обозначенную *правым* перечислителем. Он используется для того, чтобы управляемая последовательность была копией последовательности, описанной перечислителем.
 
 ### <a name="example"></a>Пример
 
@@ -306,7 +307,7 @@ a b
 a b c
 ```
 
-## <a name="dequeat-stlclr"></a><a name="at"></a>deque:: at (STL/CLR)
+## <a name="dequeat-stlclr"></a><a name="at"></a> deque:: at (STL/CLR)
 
 Обращается к элементу в указанной позиции.
 
@@ -321,7 +322,7 @@ reference at(size_type pos);
 *pos*<br/>
 Позиция элемента, к которому осуществляется доступ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает ссылку на элемент управляемой последовательности в позиции *POS*. Он используется для чтения или записи элемента, чье расположение известно.
 
@@ -358,7 +359,7 @@ a b c
 a x c
 ```
 
-## <a name="dequeback-stlclr"></a><a name="back"></a>deque:: Back (STL/CLR)
+## <a name="dequeback-stlclr"></a><a name="back"></a> deque:: Back (STL/CLR)
 
 Обращается к последнему элементу.
 
@@ -409,7 +410,7 @@ back() = c
 a b x
 ```
 
-## <a name="dequeback_item-stlclr"></a><a name="back_item"></a>deque:: back_item (STL/CLR)
+## <a name="dequeback_item-stlclr"></a><a name="back_item"></a> deque:: back_item (STL/CLR)
 
 Обращается к последнему элементу.
 
@@ -460,7 +461,7 @@ back_item = c
 a b x
 ```
 
-## <a name="dequebegin-stlclr"></a><a name="begin"></a>deque:: Begin (STL/CLR)
+## <a name="dequebegin-stlclr"></a><a name="begin"></a> deque:: Begin (STL/CLR)
 
 Задает начало управляемой последовательности.
 
@@ -515,7 +516,7 @@ a b c
 x y c
 ```
 
-## <a name="dequeclear-stlclr"></a><a name="clear"></a>deque:: Clear (STL/CLR)
+## <a name="dequeclear-stlclr"></a><a name="clear"></a> deque:: Clear (STL/CLR)
 
 Удаляет все элементы.
 
@@ -572,7 +573,7 @@ a b
 size() = 0
 ```
 
-## <a name="dequeconst_iterator-stlclr"></a><a name="const_iterator"></a>deque:: const_iterator (STL/CLR)
+## <a name="dequeconst_iterator-stlclr"></a><a name="const_iterator"></a> deque:: const_iterator (STL/CLR)
 
 Тип постоянного итератора для управляемой последовательности.
 
@@ -613,7 +614,7 @@ int main()
 a b c
 ```
 
-## <a name="dequeconst_reference-stlclr"></a><a name="const_reference"></a>deque:: const_reference (STL/CLR)
+## <a name="dequeconst_reference-stlclr"></a><a name="const_reference"></a> deque:: const_reference (STL/CLR)
 
 Тип постоянной ссылки на элемент.
 
@@ -657,7 +658,7 @@ int main()
 a b c
 ```
 
-## <a name="dequeconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a>deque:: const_reverse_iterator (STL/CLR)
+## <a name="dequeconst_reverse_iterator-stlclr"></a><a name="const_reverse_iterator"></a> deque:: const_reverse_iterator (STL/CLR)
 
 Тип константного реверсивного итератора для управляемой последовательности.
 
@@ -699,7 +700,7 @@ int main()
 c b a
 ```
 
-## <a name="dequedeque-stlclr"></a><a name="deque"></a>deque::d екуе (STL/CLR)
+## <a name="dequedeque-stlclr"></a><a name="deque"></a> deque::d екуе (STL/CLR)
 
 Создает объект контейнера.
 
@@ -733,7 +734,7 @@ deque(System::Collections::Generic::IEnumerable<Value>^ right);
 *Val*<br/>
 Значение вставляемого элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конструктор:
 
@@ -777,7 +778,7 @@ deque(System::Collections::Generic::IEnumerable<Value>^ right);
 
 `deque(System::Collections::Generic::IEnumerable<Value>^ right);`
 
-инициализирует управляемую последовательность с помощью последовательности, обозначенной *правым*перечислителем. Он используется для того, чтобы управляемая последовательность стала копией другой последовательности, описываемой перечислителем.
+инициализирует управляемую последовательность с помощью последовательности, обозначенной *правым* перечислителем. Он используется для того, чтобы управляемая последовательность стала копией другой последовательности, описываемой перечислителем.
 
 ### <a name="example"></a>Пример
 
@@ -844,7 +845,7 @@ x x x x x x
 x x x x x x
 ```
 
-## <a name="dequedifference_type-stlclr"></a><a name="difference_type"></a>deque: ifference_type:d (STL/CLR)
+## <a name="dequedifference_type-stlclr"></a><a name="difference_type"></a> deque: ifference_type:d (STL/CLR)
 
 Типы расстояния со знаком между двумя элементами.
 
@@ -898,7 +899,7 @@ end()-begin() = 3
 begin()-end() = -3
 ```
 
-## <a name="dequeempty-stlclr"></a><a name="empty"></a>deque:: Empty (STL/CLR)
+## <a name="dequeempty-stlclr"></a><a name="empty"></a> deque:: Empty (STL/CLR)
 
 Проверяет отсутствие элементов.
 
@@ -949,7 +950,7 @@ size() = 0
 empty() = True
 ```
 
-## <a name="dequeend-stlclr"></a><a name="end"></a>deque:: end (STL/CLR)
+## <a name="dequeend-stlclr"></a><a name="end"></a> deque:: end (STL/CLR)
 
 Задает конец управляемой последовательности.
 
@@ -1005,7 +1006,7 @@ a b c
 a x y
 ```
 
-## <a name="dequeerase-stlclr"></a><a name="erase"></a>deque:: Erase (STL/CLR)
+## <a name="dequeerase-stlclr"></a><a name="erase"></a> deque:: Erase (STL/CLR)
 
 Удаляет элементы в указанных позициях.
 
@@ -1027,7 +1028,7 @@ iterator erase(iterator first, iterator last);
 *where*<br/>
 Элемент для стирания.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция члена удаляет элемент управляемой последовательности, на которую указывает, *где*. Он используется для удаления одного элемента.
 
@@ -1084,7 +1085,7 @@ erase(begin(), end()-1) = e
 size() = 1
 ```
 
-## <a name="dequefront-stlclr"></a><a name="front"></a>deque:: Front (STL/CLR)
+## <a name="dequefront-stlclr"></a><a name="front"></a> deque:: Front (STL/CLR)
 
 Обращается к первому элементу.
 
@@ -1135,7 +1136,7 @@ front() = a
 x b c
 ```
 
-## <a name="dequefront_item-stlclr"></a><a name="front_item"></a>deque:: front_item (STL/CLR)
+## <a name="dequefront_item-stlclr"></a><a name="front_item"></a> deque:: front_item (STL/CLR)
 
 Обращается к первому элементу.
 
@@ -1186,7 +1187,7 @@ front_item = a
 x b c
 ```
 
-## <a name="dequegeneric_container-stlclr"></a><a name="generic_container"></a>deque:: generic_container (STL/CLR)
+## <a name="dequegeneric_container-stlclr"></a><a name="generic_container"></a> deque:: generic_container (STL/CLR)
 
 Тип универсального интерфейса для контейнера.
 
@@ -1252,7 +1253,7 @@ a b c d
 a b c d e
 ```
 
-## <a name="dequegeneric_iterator-stlclr"></a><a name="generic_iterator"></a>deque:: generic_iterator (STL/CLR)
+## <a name="dequegeneric_iterator-stlclr"></a><a name="generic_iterator"></a> deque:: generic_iterator (STL/CLR)
 
 Тип итератора для использования с универсальным интерфейсом для контейнера.
 
@@ -1309,7 +1310,7 @@ a b c
 a a c
 ```
 
-## <a name="dequegeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a>deque:: generic_reverse_iterator (STL/CLR)
+## <a name="dequegeneric_reverse_iterator-stlclr"></a><a name="generic_reverse_iterator"></a> deque:: generic_reverse_iterator (STL/CLR)
 
 Тип реверсивного итератора для использования с универсальным интерфейсом для контейнера.
 
@@ -1366,7 +1367,7 @@ a b c
 a c c
 ```
 
-## <a name="dequegeneric_value-stlclr"></a><a name="generic_value"></a>deque:: generic_value (STL/CLR)
+## <a name="dequegeneric_value-stlclr"></a><a name="generic_value"></a> deque:: generic_value (STL/CLR)
 
 Тип элемента для использования с универсальным интерфейсом для контейнера.
 
@@ -1422,7 +1423,7 @@ a b c
 a a c
 ```
 
-## <a name="dequeinsert-stlclr"></a><a name="insert"></a>deque:: Insert (STL/CLR)
+## <a name="dequeinsert-stlclr"></a><a name="insert"></a> deque:: Insert (STL/CLR)
 
 Добавляет элементы в указанную позиции.
 
@@ -1457,7 +1458,7 @@ void insert(iterator where,
 *where*<br/>
 Место вставки перед контейнером.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Каждая из функций-членов вставляет, перед элементом, *на который указывает, в* управляемой последовательности последовательность, указанная оставшимися операндами.
 
@@ -1531,7 +1532,7 @@ y y a x b
 a x b c y y a x b
 ```
 
-## <a name="dequeiterator-stlclr"></a><a name="iterator"></a>deque:: iterator (STL/CLR)
+## <a name="dequeiterator-stlclr"></a><a name="iterator"></a> deque:: iterator (STL/CLR)
 
 Тип итератора для управляемой последовательности.
 
@@ -1580,7 +1581,7 @@ a b c
 x b c
 ```
 
-## <a name="dequeoperator-stlclr"></a><a name="op_neq"></a>deque:: operator! = (STL/CLR)
+## <a name="dequeoperator-stlclr"></a><a name="op_neq"></a> deque:: operator! = (STL/CLR)
 
 Сравнение deque не равно.
 
@@ -1600,7 +1601,7 @@ template<typename Value>
 *Правильно*<br/>
 Правый контейнер для сравнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция оператора возвращает `!(left == right)` . Он используется для проверки, не упорядочивается ли *Left* *так, как если* бы оба декуес сравнивались по элементу.
 
@@ -1649,7 +1650,7 @@ a b d
 [a b c] != [a b d] is True
 ```
 
-## <a name="dequeoperatorstlclr"></a><a name="operator"></a>deque:: operator (STL/CLR)
+## <a name="dequeoperatorstlclr"></a><a name="operator"></a> deque:: operator (STL/CLR)
 
 Обращается к элементу в указанной позиции.
 
@@ -1664,7 +1665,7 @@ reference operator[](size_type pos);
 *pos*<br/>
 Позиция элемента, к которому осуществляется доступ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Оператор-член возвращает референе элементу в позиции *POS*. Он используется для доступа к элементу, чье расположение известно.
 
@@ -1701,7 +1702,7 @@ a b c
 a x c
 ```
 
-## <a name="dequepop_back-stlclr"></a><a name="pop_back"></a>deque: op_back:p (STL/CLR)
+## <a name="dequepop_back-stlclr"></a><a name="pop_back"></a> deque: op_back:p (STL/CLR)
 
 Удаляет последний элемент.
 
@@ -1748,7 +1749,7 @@ a b c
 a b
 ```
 
-## <a name="dequepop_front-stlclr"></a><a name="pop_front"></a>deque: op_front:p (STL/CLR)
+## <a name="dequepop_front-stlclr"></a><a name="pop_front"></a> deque: op_front:p (STL/CLR)
 
 Удаляет первый элемент.
 
@@ -1795,7 +1796,7 @@ a b c
 b c
 ```
 
-## <a name="dequepush_back-stlclr"></a><a name="push_back"></a>deque: ush_back:p (STL/CLR)
+## <a name="dequepush_back-stlclr"></a><a name="push_back"></a> deque: ush_back:p (STL/CLR)
 
 Добавляет новый последний элемент.
 
@@ -1835,7 +1836,7 @@ int main()
 a b c
 ```
 
-## <a name="dequepush_front-stlclr"></a><a name="push_front"></a>deque: ush_front:p (STL/CLR)
+## <a name="dequepush_front-stlclr"></a><a name="push_front"></a> deque: ush_front:p (STL/CLR)
 
 Добавляет новый первый элемент.
 
@@ -1875,7 +1876,7 @@ int main()
 c b a
 ```
 
-## <a name="dequerbegin-stlclr"></a><a name="rbegin"></a>deque:: rbegin (STL/CLR)
+## <a name="dequerbegin-stlclr"></a><a name="rbegin"></a> deque:: rbegin (STL/CLR)
 
 Задает начало обратной управляемой последовательности.
 
@@ -1930,7 +1931,7 @@ a b c
 a y x
 ```
 
-## <a name="dequereference-stlclr"></a><a name="reference"></a>deque:: Reference (STL/CLR)
+## <a name="dequereference-stlclr"></a><a name="reference"></a> deque:: Reference (STL/CLR)
 
 Тип ссылки на элемент.
 
@@ -1985,7 +1986,7 @@ a b c
 A B C
 ```
 
-## <a name="dequerend-stlclr"></a><a name="rend"></a>deque:: rend (STL/CLR)
+## <a name="dequerend-stlclr"></a><a name="rend"></a> deque:: rend (STL/CLR)
 
 Задает конец обратной управляемой последовательности.
 
@@ -2041,7 +2042,7 @@ a b c
 y x c
 ```
 
-## <a name="dequeresize-stlclr"></a><a name="resize"></a>deque:: изменение размера (STL/CLR)
+## <a name="dequeresize-stlclr"></a><a name="resize"></a> deque:: изменение размера (STL/CLR)
 
 Изменяет количество элементов.
 
@@ -2060,9 +2061,9 @@ void resize(size_type new_size, value_type val);
 *Val*<br/>
 Значение элемента заполнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Функции-члены гарантируют, что [deque:: size (STL/CLR)](#size) `()` исходя этого возвращает *new_size*. Если необходимо, чтобы управляемая последовательность была длиннее, первая функция члена добавляет элементы со значением `value_type()` , а вторая функция – добавляет элементы со значением *Val*. Чтобы сократить управляемую последовательность, обе функции-члены фактически удаляют время последнего элемента [deque:: size (STL/CLR)](#size) `() -` `new_size` . Он используется для обеспечения *new_size*размера управляемой последовательности путем усечения или заполнения текущей управляемой последовательности.
+Функции-члены гарантируют, что [deque:: size (STL/CLR)](#size) `()` исходя этого возвращает *new_size*. Если необходимо, чтобы управляемая последовательность была длиннее, первая функция члена добавляет элементы со значением `value_type()` , а вторая функция – добавляет элементы со значением *Val*. Чтобы сократить управляемую последовательность, обе функции-члены фактически удаляют время последнего элемента [deque:: size (STL/CLR)](#size) `() -` `new_size` . Он используется для обеспечения *new_size* размера управляемой последовательности путем усечения или заполнения текущей управляемой последовательности.
 
 ### <a name="example"></a>Пример
 
@@ -2101,7 +2102,7 @@ size() = 0
 x x x x x
 ```
 
-## <a name="dequereverse_iterator-stlclr"></a><a name="reverse_iterator"></a>deque:: reverse_iterator (STL/CLR)
+## <a name="dequereverse_iterator-stlclr"></a><a name="reverse_iterator"></a> deque:: reverse_iterator (STL/CLR)
 
 Тип обратного итератора для управляемой последовательности.
 
@@ -2150,7 +2151,7 @@ c b a
 x b a
 ```
 
-## <a name="dequesize-stlclr"></a><a name="size"></a>deque:: size (STL/CLR)
+## <a name="dequesize-stlclr"></a><a name="size"></a> deque:: size (STL/CLR)
 
 Подсчитывает количество элементов.
 
@@ -2203,7 +2204,7 @@ size() = 0 after clearing
 size() = 2 after adding 2
 ```
 
-## <a name="dequesize_type-stlclr"></a><a name="size_type"></a>deque:: size_type (STL/CLR)
+## <a name="dequesize_type-stlclr"></a><a name="size_type"></a> deque:: size_type (STL/CLR)
 
 Тип расстояния со знаком между двумя элементами.
 
@@ -2248,7 +2249,7 @@ a b c
 end()-begin() = 3
 ```
 
-## <a name="dequeswap-stlclr"></a><a name="swap"></a>deque:: Swap (STL/CLR)
+## <a name="dequeswap-stlclr"></a><a name="swap"></a> deque:: Swap (STL/CLR)
 
 Меняет местами содержимое двух контейнеров.
 
@@ -2263,7 +2264,7 @@ void swap(deque<Value>% right);
 *Правильно*<br/>
 Контейнер для обмена содержимым.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция – член меняет местами управляемые последовательности между **`*this`** и *вправо*. Это происходит в постоянном времени и не создает исключений. Он используется в качестве быстрого способа обмена содержимым двух контейнеров.
 
@@ -2312,7 +2313,7 @@ x x x x x
 a b c
 ```
 
-## <a name="dequeto_array-stlclr"></a><a name="to_array"></a>deque:: to_array (STL/CLR)
+## <a name="dequeto_array-stlclr"></a><a name="to_array"></a> deque:: to_array (STL/CLR)
 
 Копирует управляемую последовательность в новый массив.
 
@@ -2361,7 +2362,7 @@ a b c d
 a b c
 ```
 
-## <a name="dequevalue_type-stlclr"></a><a name="value_type"></a>deque:: value_type (STL/CLR)
+## <a name="dequevalue_type-stlclr"></a><a name="value_type"></a> deque:: value_type (STL/CLR)
 
 Тип элемента.
 
@@ -2373,7 +2374,7 @@ typedef Value value_type;
 
 ### <a name="remarks"></a>Remarks
 
-Тип является синонимом для *значения*параметра шаблона.
+Тип является синонимом для *значения* параметра шаблона.
 
 ### <a name="example"></a>Пример
 
@@ -2406,7 +2407,7 @@ int main()
 a b c
 ```
 
-## <a name="operatorlt-deque-stlclr"></a><a name="op_lt"></a>Оператор &lt; (deque) (STL/CLR)
+## <a name="operatorlt-deque-stlclr"></a><a name="op_lt"></a> Оператор &lt; (deque) (STL/CLR)
 
 Deque меньше, чем сравнение.
 
@@ -2426,7 +2427,7 @@ template<typename Value>
 *Правильно*<br/>
 Правый контейнер для сравнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция оператора возвращает значение true, если для наименьшей позицией, `i` для которой `!(right[i] < left[i])` также задано значение true `left[i] < right[i]` . В противном случае он возвращает значение, `left->size() < right->size()` чтобы проверить, является ли функция *Left* упорядоченной до *правого* , когда два декуес сравниваются по элементу.
 
@@ -2475,7 +2476,7 @@ a b d
 [a b c] < [a b d] is True
 ```
 
-## <a name="operatorlt-deque-stlclr"></a><a name="op_lteq"></a>operator &lt; = (deque) (STL/CLR)
+## <a name="operatorlt-deque-stlclr"></a><a name="op_lteq"></a> operator &lt; = (deque) (STL/CLR)
 
 Сравнение deque "меньше или равно".
 
@@ -2495,7 +2496,7 @@ template<typename Value>
 *Правильно*<br/>
 Правый контейнер для сравнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция оператора возвращает `!(right < left)` . Он используется для проверки, не упорядочен ли *Left* после *right* , когда два декуес сравниваются по элементу.
 
@@ -2544,7 +2545,7 @@ a b d
 [a b d] <= [a b c] is False
 ```
 
-## <a name="operator-deque-stlclr"></a><a name="op_as"></a>operator = (deque) (STL/CLR)
+## <a name="operator-deque-stlclr"></a><a name="op_as"></a> operator = (deque) (STL/CLR)
 
 Заменяет управляемую последовательность.
 
@@ -2559,7 +2560,7 @@ deque<Value>% operator=(deque<Value>% right);
 *Правильно*<br/>
 Контейнер для копирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Оператор члена копирует *прямо* в объект, а затем возвращает **`*this`** . Он используется для замены управляемой последовательности копией управляемой последовательности в *правой части*.
 
@@ -2597,7 +2598,7 @@ a b c
 a b c
 ```
 
-## <a name="operator-deque-stlclr"></a><a name="op_eq"></a>operator = = (deque) (STL/CLR)
+## <a name="operator-deque-stlclr"></a><a name="op_eq"></a> operator = = (deque) (STL/CLR)
 
 Deque равное сравнение.
 
@@ -2617,7 +2618,7 @@ template<typename Value>
 *Правильно*<br/>
 Правый контейнер для сравнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция оператора возвращает значение true, только если последовательности, управляемые *левым* и *правым* , имеют одинаковую длину и для каждой `i` должности `left[i] ==` `right[i]` . Он используется для проверки, упорядочивается ли *Left* так же, как и *справа* , если два декуес сравниваются по элементу.
 
@@ -2666,7 +2667,7 @@ a b d
 [a b c] == [a b d] is False
 ```
 
-## <a name="operatorgt-deque-stlclr"></a><a name="op_gt"></a>Оператор &gt; (deque) (STL/CLR)
+## <a name="operatorgt-deque-stlclr"></a><a name="op_gt"></a> Оператор &gt; (deque) (STL/CLR)
 
 Deque больше, чем сравнение.
 
@@ -2686,7 +2687,7 @@ template<typename Value>
 *Правильно*<br/>
 Правый контейнер для сравнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция оператора возвращает `right` `<` `left` . Он используется для проверки, упорядочен ли *Left* после *right* , когда два декуес сравниваются по элементу.
 
@@ -2735,7 +2736,7 @@ a b d
 [a b d] > [a b c] is True
 ```
 
-## <a name="operatorgt-deque-stlclr"></a><a name="op_gteq"></a>operator &gt; = (deque) (STL/CLR)
+## <a name="operatorgt-deque-stlclr"></a><a name="op_gteq"></a> operator &gt; = (deque) (STL/CLR)
 
 Deque сравнение "больше или равно".
 
@@ -2755,7 +2756,7 @@ template<typename Value>
 *Правильно*<br/>
 Правый контейнер для сравнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция оператора возвращает `!(left` `<` `right)` . Он используется для проверки того, не упорядочен ли *Left* до *право* , когда два декуес сравниваются по элементу.
 

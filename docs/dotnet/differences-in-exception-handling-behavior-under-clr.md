@@ -1,24 +1,25 @@
 ---
-title: Различия в поведении по обработке исключений под -CLR
+description: Дополнительные сведения о различиях в поведении обработки исключений в параметре/CLR
+title: Различия в поведении обработки исключений в среде — CLR
 ms.date: 11/04/2016
 helpviewer_keywords:
 - EXCEPTION_CONTINUE_EXECUTION macro
 - set_se_translator function
 ms.assetid: 2e7e8daf-d019-44b0-a51c-62d7aaa89104
-ms.openlocfilehash: 940d297ff77248ba9e9980f7032b5d722d95c7eb
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: e7e07778e894448fea3d29acb3a32d71884be57c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364378"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252198"
 ---
 # <a name="differences-in-exception-handling-behavior-under-clr"></a>Различия в поведении при обработке исключений в /CLR
 
-[Основные концепции использования управляемых исключений](../dotnet/basic-concepts-in-using-managed-exceptions.md) обсуждают обработку исключений в управляемых приложениях. В этой теме подробно обсуждаются различия от стандартного поведения обработки исключений и некоторые ограничения. Для получения дополнительной информации см [_set_se_translator.](../c-runtime-library/reference/set-se-translator.md)
+[Основные понятия, связанные с использованием управляемых исключений](../dotnet/basic-concepts-in-using-managed-exceptions.md) , обсуждают обработку исключений в управляемых приложениях. В этом разделе подробно рассматриваются отличия стандартного поведения обработки исключений и некоторых ограничений. Дополнительные сведения см. в описании [функции _set_se_translator](../c-runtime-library/reference/set-se-translator.md).
 
-## <a name="jumping-out-of-a-finally-block"></a><a name="vcconjumpingoutofafinallyblock"></a>Прыжки из наконец блока
+## <a name="jumping-out-of-a-finally-block"></a><a name="vcconjumpingoutofafinallyblock"></a> Выход из блока finally
 
-В родном коде C/C, выпрыгивая из блока**q, наконец,** с помощью структурированной обработки исключений (SEH), допускается, хотя он производит предупреждение.  Под [/clr,](../build/reference/clr-common-language-runtime-compilation.md)выпрыгивая **из, наконец,** блок вызывает ошибку:
+В машинном коде C/C++ выход из блока __ **finally** с использованием структурированной обработки исключений (SEH) разрешен, хотя выдается предупреждение.  В [параметре/CLR](../build/reference/clr-common-language-runtime-compilation.md)выход из блока **finally** приводит к ошибке:
 
 ```cpp
 // clr_exception_handling_4.cpp
@@ -31,11 +32,11 @@ int main() {
 }   // C3276
 ```
 
-## <a name="raising-exceptions-within-an-exception-filter"></a><a name="vcconraisingexceptionswithinanexceptionfilter"></a>Повышение исключений в рамках фильтра исключений
+## <a name="raising-exceptions-within-an-exception-filter"></a><a name="vcconraisingexceptionswithinanexceptionfilter"></a> Создание исключений в фильтре исключений
 
-Когда при обработке [фильтра исключения](../cpp/writing-an-exception-filter.md) в управляемом коде возникает исключение, исключение ловится и рассматривается так, как если бы фильтр возвращает 0.
+При возникновении исключения во время обработки [фильтра исключений](../cpp/writing-an-exception-filter.md) в управляемом коде исключение перехватывается и обрабатывается, как если бы фильтр возвращал значение 0.
 
-Это в отличие от поведения в родном коде, где гнездятся исключения поднимается, **поле ExceptionRecord** в **структуре EXCEPTION_RECORD** (как вернулся [GetExceptionInformation](/windows/win32/Debug/getexceptioninformation)) установлен, и **поле ExceptionFlags** устанавливает 0x10 бит. Следующий пример иллюстрирует эту разницу в поведении:
+Это отличается от поведения в машинном коде, где создается вложенное исключение, поле **ексцептионрекорд** в структуре **EXCEPTION_RECORD** (как возвращено [жетексцептионинформатион](/windows/win32/Debug/getexceptioninformation)), а в поле **ексцептионфлагс** устанавливается бит 0x10. В следующем примере показано различие в поведении:
 
 ```cpp
 // clr_exception_handling_5.cpp
@@ -95,11 +96,11 @@ Caught a nested exception
 We should execute this handler if compiled to native
 ```
 
-## <a name="disassociated-rethrows"></a><a name="vccondisassociatedrethrows"></a>Разобщенные реброты
+## <a name="disassociated-rethrows"></a><a name="vccondisassociatedrethrows"></a> Несвязанные повторные выдачи
 
-**/clr** не поддерживает повторное исключение за пределами обработчика улова (известного как разъясненный rethrow). Исключения этого типа рассматриваются как стандартный rethrow СЗ. Если разобщенный ребро возникает при наличии активного управляемого исключения, исключение заворачивается в качестве исключения СЗ, а затем перебрасывается. Исключения этого типа могут быть пойманы только <xref:System.Runtime.InteropServices.SEHException>в качестве исключения типа.
+**параметр/CLR** не поддерживает повторный вызов исключения за пределами обработчика catch (называемого несвязанным повторным вызовом). Исключения этого типа рассматриваются как стандартный повторный вызов C++. Если обнаружено несвязанное повторное исключение при наличии активного управляемого исключения, исключение упаковывается как исключение C++, а затем вызывается повторно. Исключения этого типа могут быть перехвачены только как исключение типа <xref:System.Runtime.InteropServices.SEHException> .
 
-Следующий пример демонстрирует переизбрано управляемое исключение в качестве исключения СЗ:
+В следующем примере показано повторное возникновение управляемого исключения в виде исключения C++:
 
 ```cpp
 // clr_exception_handling_6.cpp
@@ -147,11 +148,11 @@ int main() {
 caught an SEH Exception
 ```
 
-## <a name="exception-filters-and-exception_continue_execution"></a><a name="vcconexceptionfiltersandexception_continue_execution"></a>Фильтры исключений и EXCEPTION_CONTINUE_EXECUTION
+## <a name="exception-filters-and-exception_continue_execution"></a><a name="vcconexceptionfiltersandexception_continue_execution"></a> Фильтры исключений и EXCEPTION_CONTINUE_EXECUTION
 
-Если фильтр `EXCEPTION_CONTINUE_EXECUTION` возвращается в управляемом приложении, он `EXCEPTION_CONTINUE_SEARCH`рассматривается так, как если бы фильтр вернулся. Для получения дополнительной информации об этих константах [см.](../cpp/try-except-statement.md)
+Если фильтр возвращается `EXCEPTION_CONTINUE_EXECUTION` в управляемом приложении, он обрабатывается так, как если бы был возвращен фильтр `EXCEPTION_CONTINUE_SEARCH` . Дополнительные сведения об этих константах см. в разделе [оператор try-except](../cpp/try-except-statement.md).
 
-Следующий пример демонстрирует эту разницу:
+Это различие показано в следующем примере:
 
 ```cpp
 // clr_exception_handling_7.cpp
@@ -188,9 +189,9 @@ int main() {
 Counter=-3
 ```
 
-## <a name="the-_set_se_translator-function"></a><a name="vcconthe_set_se_translatorfunction"></a>Функция _set_se_translator
+## <a name="the-_set_se_translator-function"></a><a name="vcconthe_set_se_translatorfunction"></a> Функция _set_se_translator
 
-Функция переводчика, установленная `_set_se_translator`вызовом, влияет только на уловы в неуправляемом коде. Следующий пример демонстрирует это ограничение:
+Функция-переводчик, заданная путем вызова функции `_set_se_translator` , влияет только на перехваты в неуправляемом коде. Это ограничение показано в следующем примере:
 
 ```cpp
 // clr_exception_handling_8.cpp
@@ -267,7 +268,7 @@ int main( int argc, char ** argv ) {
 }
 ```
 
-### <a name="output"></a>Выходные данные
+### <a name="output"></a>Вывод
 
 ```Output
 This is invoked since _set_se_translator is not supported when /clr is used
@@ -275,8 +276,8 @@ In my_trans_func.
 Caught an SEH exception with exception code: e0000101
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Обработка исключений](../extensions/exception-handling-cpp-component-extensions.md)<br/>
 [safe_cast](../extensions/safe-cast-cpp-component-extensions.md)<br/>
-[Обработка исключений в MSVC](../cpp/exception-handling-in-visual-cpp.md)
+[Обработка исключений в КОМПИЛЯТОРОМ MSVC](../cpp/exception-handling-in-visual-cpp.md)
