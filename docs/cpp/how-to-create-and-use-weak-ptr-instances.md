@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения см. в статье Создание и использование экземпляров weak_ptr
 title: Практическое руководство. Создание и использование экземпляров weak_ptr
 ms.custom: how-to
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 8dd6909b-b070-4afa-9696-f2fc94579c65
-ms.openlocfilehash: d7caea7cfd13b3a41a1cd20f88a9914267cf9677
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c1a68d8027e29cced7fb1a767d5a986ab0677ec8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87187859"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221245"
 ---
 # <a name="how-to-create-and-use-weak_ptr-instances"></a>Практическое руководство. Создание и использование экземпляров weak_ptr
 

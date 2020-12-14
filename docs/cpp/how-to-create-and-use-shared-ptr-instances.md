@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения см. в статье Создание и использование экземпляров shared_ptr
 title: Практическое руководство. Создание и использование экземпляров shared_ptr
 ms.custom: how-to
 ms.date: 11/19/2019
 ms.topic: conceptual
 ms.assetid: 7d6ebb73-fa0d-4b0b-a528-bf05de96518e
-ms.openlocfilehash: 44d375f72cf409df1e67b72dd76e196051dacf93
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b98a9a349f7f33805bd86c58e854b1d988733da2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87187963"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221258"
 ---
 # <a name="how-to-create-and-use-shared_ptr-instances"></a>Как создавать и использовать экземпляры shared_ptr
 
@@ -110,7 +111,7 @@ int main()
 
 - Иногда, например в `std::vector<shared_ptr<T>>`, может быть необходимо передать каждый указатель `shared_ptr` в тело лямбда-выражения или в именованный объект функции. Если в лямбда-выражении или функции указатель не сохраняется, передайте `shared_ptr` по ссылке, чтобы не вызывать конструктор копий для каждого элемента.
 
-## <a name="example-6"></a>Пример 6.
+## <a name="example-6"></a>Пример 6
 
 В приведенном ниже примере показано, как `shared_ptr` перегружает различные операторы сравнения, чтобы обеспечить сравнение указателей в памяти, принадлежащей экземплярам `shared_ptr`.
 

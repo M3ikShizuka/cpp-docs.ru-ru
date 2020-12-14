@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: созданные классы, мастер приложений MFC'
 title: Создаваемые классы, мастер приложений MFC
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Application Wizard, generated classes
 ms.assetid: 5f33209c-7f01-4f72-8c1c-6f02f507ba9f
-ms.openlocfilehash: 472ceade4dbb5d99194098d82b7effc40092b5d1
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: 38952f2cb186877c58e8e4823dbad31670c79742
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80075658"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97219789"
 ---
 # <a name="generated-classes-mfc-application-wizard"></a>Создаваемые классы, мастер приложений MFC
 
@@ -19,7 +20,7 @@ ms.locfileid: "80075658"
 
 - **Созданные классы**
 
-   Имена классов, созданных для проекта. По умолчанию имена основаны на имени проекта. Проект MFC по умолчанию создает класс*представления на c ProjName,* класс*приложения c*доколонтитула,*ProjName*класс, Класс CMainFrame и класс кчилдфраме. Все остальные значения на этой странице содержат сведения о классе, выбранном в данный момент в списке **созданные классы** .
+   Имена классов, созданных для проекта. По умолчанию имена основаны на имени проекта. Проект MFC по умолчанию создает класс *представления на c ProjName,* класс *приложения c* доколонтитула,класс, Класс CMainFrame и класс кчилдфраме. Все остальные значения на этой странице содержат сведения о классе, выбранном в данный момент в списке **созданные классы** .
 
    Чтобы изменить имя класса, используйте текстовое поле **имя класса** .
 
@@ -39,7 +40,7 @@ ms.locfileid: "80075658"
 
    Имя файла исходного кода, связанного с выбранным классом. Если текстовое поле активно, можно изменить имя файла реализации.
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Страница "Дополнительные возможности" мастера приложений MFC](../../mfc/reference/advanced-features-mfc-application-wizard.md)<br/>
+[Дополнительные функции, мастер приложений MFC](../../mfc/reference/advanced-features-mfc-application-wizard.md)<br/>
 [Типы файлов, создаваемых для проектов Visual Studio C++](../../build/reference/file-types-created-for-visual-cpp-projects.md)

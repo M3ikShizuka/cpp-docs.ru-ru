@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: класс Platform:: Collections:: Vector'
 title: Класс Platform::Collections::Vector
 ms.date: 12/04/2019
 ms.topic: reference
@@ -21,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - Vector Class (C++/Cx)
 ms.assetid: aee8c076-9700-47c3-99b6-799fd3edb0ca
-ms.openlocfilehash: dc467b8db3cd6ec88395554eef7f109877f10d41
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b13221c6280e0e94572cb4b6710bb59fbd7db4c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839092"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221193"
 ---
 # <a name="platformcollectionsvector-class"></a>Класс Platform::Collections::Vector
 
@@ -44,10 +45,10 @@ template <typename T, typename E>
 *T*<br/>
 Тип элементов, содержащихся в объекте Vector.
 
-*&*<br/>
+*E*<br/>
 Задает бинарный предикат для проверки равенства со значениями типа *T*. Значение по умолчанию — `std::equal_to<T>` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Допустимые типы:
 
@@ -146,7 +147,7 @@ virtual Windows::Foundation::Collections::IIterator <T>^ First();
 
 Итератор, указывающий первый элемент объекта Vector.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Удобным способом удержания итератора, возвращенного первым (), является присвоение возвращаемого значения переменной, объявленной с **`auto`** ключевым словом выведения типа. Например, `auto x = myVector->First();`. Этому итератору известна длина коллекции.
 
@@ -195,7 +196,7 @@ virtual unsigned int GetMany(
 
 Количество извлеченных элементов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция не предназначена для прямого использования в клиентском коде. Он используется внутренне в [функции to_vector](../cppcx/to-vector-function.md) , чтобы обеспечить эффективное преобразование платформы:: Vector принимаемые экземпляры в экземпляры std:: Vector.
 
@@ -237,7 +238,7 @@ virtual bool IndexOf(T value, unsigned int* index);
 
 **`true`** значение, если указанный элемент найден; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 IndexOf использует std::find_if для поиска элемента. Таким образом, типы настраиваемых элементов должны перегрузить оператор == и != для включения сравнений на равенство, которое требуется для find_if.
 
@@ -377,7 +378,7 @@ Vector(std::initializer_list<T> il);
 *value*<br/>
 Значение, используемое для инициализации каждого элемента в текущем объекте Vector.
 
-*3,3*<br/>
+*v*<br/>
 [Значения lvalue и rvalue](../cpp/lvalues-and-rvalues-visual-cpp.md) для [std:: Vector](../standard-library/vector-class.md) , который используется для инициализации текущего вектора.
 
 *ptr*<br/>
