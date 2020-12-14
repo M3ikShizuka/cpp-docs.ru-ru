@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _expand'
 title: _expand
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - _expand function
 - expand function
 ms.assetid: 4ac55410-39c8-45c7-bccd-3f1042ae2ed3
-ms.openlocfilehash: 5abd90f6106cbca54a9c869841ff70383edb5edc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 31558bb67266430cc028e37a1e23dff2fa411356
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234150"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235971"
 ---
 # <a name="_expand"></a>_expand
 
@@ -73,7 +74,7 @@ void *_expand(
 
 Возвращаемое значение указывает на пространство хранилища, которое гарантированно будет соответственно выровнено для хранения объектов любого типа. Чтобы проверить новый размер элемента, используйте **_msize**. Чтобы получить указатель на тип, отличный от **`void`** , используйте приведение типа к возвращаемому значению.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_expand** изменяет размер выделенного ранее блока памяти, пытаясь развернуть или Свернуть блок, не перемещая его расположение в куче. Параметр *мемблокк* указывает на начало блока. Параметр *size* задает новый размер блока в байтах. Содержимое блока в пределах наименьшего из нового и старого размеров остается неизменным. *мемблокк* не должен быть освобожденным блоком.
 
@@ -88,7 +89,7 @@ void *_expand(
 
 ## <a name="requirements"></a>Требования
 
-|Компонент|Обязательный заголовок|
+|Функция|Обязательный заголовок|
 |--------------|---------------------|
 |**_expand**|\<malloc.h>|
 
@@ -128,11 +129,11 @@ Allocated 512 bytes at 002C12BC
 Expanded block to 1024 bytes at 002C12BC
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Выделение памяти](../../c-runtime-library/memory-allocation.md)<br/>
 [calloc](calloc.md)<br/>
-[свободный](free.md)<br/>
+[free](free.md)<br/>
 [malloc](malloc.md)<br/>
 [_msize](msize.md)<br/>
 [realloc](realloc.md)<br/>

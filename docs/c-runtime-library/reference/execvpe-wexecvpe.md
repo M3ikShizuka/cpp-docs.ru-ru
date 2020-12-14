@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _execvpe, _wexecvpe'
 title: _execvpe, _wexecvpe
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - _wexecvpe function
 - _execvpe function
 ms.assetid: c0c3c986-d9c0-4814-a96c-10f0b3092766
-ms.openlocfilehash: 4a1a2d66600a7502c088577adca4085c68e4ccd7
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: d2a9baf9e39335c47a10d7c5f7e8baa8484bee66
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82909696"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236104"
 ---
 # <a name="_execvpe-_wexecvpe"></a>_execvpe, _wexecvpe
 
@@ -88,7 +89,7 @@ intptr_t _wexecvpe(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе переввод [, _doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Каждая из этих функций создает и выполняет новый процесс, передавая ему массив указателей на аргументы командной строки и массив указателей на параметры среды. Эти функции используют переменную среды **path** для поиска файла, который нужно выполнить.
 
@@ -117,5 +118,5 @@ intptr_t _wexecvpe(
 [atexit](atexit.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>
 [_onexit, _onexit_m](onexit-onexit-m.md)<br/>
-[Функции _spawn, _wspawn](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[_spawn, функции _wspawn](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
 [system, _wsystem](system-wsystem.md)<br/>

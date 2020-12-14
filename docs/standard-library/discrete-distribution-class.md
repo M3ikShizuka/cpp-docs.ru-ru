@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: discrete_distribution классе'
 title: Класс discrete_distribution
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - std::discrete_distribution [C++], param_type
 - std::discrete_distribution [C++], param_type
 ms.assetid: 8c8ba8f8-c06f-4f07-b354-f53950142fcf
-ms.openlocfilehash: 5dcac516da088a55d2ddc176275ec25941ad8949
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b84d174a653efdeba47fb0356c903b8c7dd2a8d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88846281"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232763"
 ---
 # <a name="discrete_distribution-class"></a>Класс discrete_distribution
 
@@ -75,7 +76,7 @@ public:
 *инттипе*\
 Целочисленный тип результата, по умолчанию — **`int`** . Возможные типы см. в разделе [\<random>](../standard-library/random.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Выборочное распределение использует равномерные интервалы ширины с одинаковой вероятностью в каждом интервале. Сведения о других выборочных распределениях см. в разделах [piecewise_linear_distribution Class](../standard-library/piecewise-linear-distribution-class.md) и [piecewise_constant_distribution Class](../standard-library/piecewise-constant-distribution-class.md).
 
@@ -222,7 +223,7 @@ explicit discrete_distribution(const param_type& parm);
 *ParM*\
 Структура `param_type`, используемая для формирования распределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конструктор по умолчанию создает объект, значение вероятности которого содержит один элемент со значением 1. Это приводит к получению распределения, которое всегда возвращает 0.
 
@@ -233,7 +234,7 @@ explicit discrete_distribution(const param_type& parm);
 Конструктор с параметрами *число*, *низкий*, *высокий* и *weightfunc* формирует объект распределения, инициализируемый на основе следующих правил:
 
 - Если *число* < 1, **n** = 1, то эквивалентно конструктору по умолчанию (всегда формируется 0).
-- Если *число* > 0, **n** = *число*. Предоставленный **d** = (*High*  -  *Low*) **/n** больше нуля с использованием **d** однородных поддиапазонов, каждый вес назначается следующим образом: `weight[k] = weightfunc(x)` , где **x**  =  *Low*  +  **k**  *  **d**  +  **d** /2, для **k** = 0,..., **n** -1.
+- Если *число* > 0, **n** = *число*. Предоставленный **d** = (*High*  -  *Low*) **/n** больше нуля с использованием **d** однородных поддиапазонов, каждый вес назначается следующим образом: `weight[k] = weightfunc(x)` , где **x**  =  *Low*  +  **k**  *  **d**  +   /2, для **k** = 0,..., **n** -1.
 
 Конструктор, имеющий `param_type` параметр *parm*, создает объект распределения, используя *parm* как сохраненную структуру параметров.
 
@@ -290,7 +291,7 @@ struct param_type {
 *Правильно*\
 Объект `param_type`, который требуется сравнить с данным объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот пакет параметров можно передать в `operator()` для получения возвращаемого значения.
 

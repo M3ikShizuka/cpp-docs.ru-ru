@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _fcvt_s'
 title: _fcvt_s
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - floating-point functions, converting number to string
 - _fcvt_s function
 ms.assetid: 48671197-1d29-4c2b-a5d8-d2368f5f68a1
-ms.openlocfilehash: 557a1d359c389f0eb7477aab4bf9cbb51558703a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: dd4d58b39d4c18f2fff7da54c5fbd0f2346dfdd4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920207"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235883"
 ---
 # <a name="_fcvt_s"></a>_fcvt_s
 
@@ -79,7 +80,7 @@ errno_t _fcvt_s(
 *уменьшение*<br/>
 Указатель на сохраненную позицию десятичной запятой.
 
-*писать*<br/>
+*sign*<br/>
 Указатель на сохраненный индикатор знака.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -90,18 +91,18 @@ errno_t _fcvt_s(
 
 ### <a name="error-conditions"></a>Ситуации, которые могут привести к ошибке
 
-|*двойной*|*сизеинбитес*|значение|count|dec|подписывание|Возвращает|Значение в *буфере*|
+|*двойной*|*сизеинбитес*|value|count|dec|sign|Возвращает|Значение в *буфере*|
 |--------------|-------------------|-----------|-----------|---------|----------|------------|-----------------------|
-|**ЗАКАНЧИВАЮЩ**|any|any|any|any|any|**еинвал**|Не изменено.|
+|**NULL**|any|any|any|any|any|**еинвал**|Не изменено.|
 |Not **null** (указывает на допустимый объем памяти)|<=0|any|any|any|any|**еинвал**|Не изменено.|
-|any|any|any|any|**ЗАКАНЧИВАЮЩ**|any|**еинвал**|Не изменено.|
-|any|any|any|any|any|**ЗАКАНЧИВАЮЩ**|**еинвал**|Не изменено.|
+|any|any|any|any|**NULL**|any|**еинвал**|Не изменено.|
+|any|any|any|any|any|**NULL**|**еинвал**|Не изменено.|
 
 ## <a name="security-issues"></a>Проблемы с безопасностью
 
 **_fcvt_s** может вызвать нарушение прав доступа, если *буфер* не указывает на допустимый объем памяти и не равен **null**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_fcvt_s** преобразует число с плавающей запятой в строку символов, завершающуюся нулем. Параметр *value* — это преобразуемое число с плавающей запятой. **_fcvt_s** сохраняет цифры *значения* в виде строки и добавляет нуль-символ ("\ 0"). Параметр *Count* задает количество цифр, сохраняемых после десятичной запятой. Лишние цифры округляются в *число* разрядов. Если *число меньше числа разрядов* точности, строка дополняется нулями.
 
@@ -162,7 +163,7 @@ Converted value: 120000
 ## <a name="see-also"></a>См. также раздел
 
 [Преобразование данных](../../c-runtime-library/data-conversion.md)<br/>
-[Поддержка чисел с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
 [atof, _atof_l, _wtof, _wtof_l](atof-atof-l-wtof-wtof-l.md)<br/>
 [_ecvt_s](ecvt-s.md)<br/>
 [_gcvt_s](gcvt-s.md)<br/>

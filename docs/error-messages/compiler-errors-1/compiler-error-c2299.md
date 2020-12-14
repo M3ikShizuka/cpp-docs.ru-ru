@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C2299'
 title: Ошибка компилятора C2299
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2299
 ms.assetid: d001c2bc-f6fd-47aa-8e42-0eb824d6441d
-ms.openlocfilehash: 009a441ec610053176e79126d9f2663f29b26bc6
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: eb96829c4e16153a0a304a5b2a9640d4591dec3f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74759052"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235103"
 ---
 # <a name="compiler-error-c2299"></a>Ошибка компилятора C2299
 

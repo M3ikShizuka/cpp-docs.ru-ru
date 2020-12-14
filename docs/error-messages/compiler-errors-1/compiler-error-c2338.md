@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C2338'
 title: Ошибка компилятора C2338
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2338
 ms.assetid: 49bba575-1de4-4963-86c6-ce3226a2ba51
-ms.openlocfilehash: c92a95b97cb4c57d3ad5cfbf8fe1d9980d5362cd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7bbbc7fd6240fce2def470a0d16aa0dba152a109
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221215"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234804"
 ---
 # <a name="compiler-error-c2338"></a>Ошибка компилятора C2338
 
@@ -21,7 +22,7 @@ ms.locfileid: "87221215"
 
 Это сообщение об ошибке также может быть создано внешними поставщиками для компилятора. В большинстве случаев эти ошибки выводятся библиотекой DLL поставщика атрибутов, например АТЛПРОВ. Ниже приведены некоторые распространенные формы этого сообщения.
 
-- "*атрибут*" поставщик атрибутов ATL: ошибка *сообщения* с*номером* ATL
+- "*атрибут*" поставщик атрибутов ATL: ошибка *сообщения* с *номером* ATL
 
 - Неправильное использование атрибута "*атрибут*"
 

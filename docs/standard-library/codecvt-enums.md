@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: &lt; codecvt &gt; enums'
 title: Перечисления &lt;codecvt&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 ms.assetid: 46a8b073-01bc-46d3-b3d3-a8540f9422c1
 helpviewer_keywords:
 - std::codecvt_mode
-ms.openlocfilehash: e67290d8de0b8251191c4a93b66b7e19a293ed61
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: bcd40f72f563b3ecf91125f7167f206d4b1b6517
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81371945"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97234063"
 ---
 # <a name="ltcodecvtgt-enums"></a>Перечисления &lt;codecvt&gt;
 
-## <a name="codecvt_mode-enumeration"></a><a name="codecvt_mode"></a>codecvt_mode Инумерация
+## <a name="codecvt_mode-enumeration"></a><a name="codecvt_mode"></a> Перечисление codecvt_mode
 
-Определяет информацию о конфигурации для аспектов [локализации.](../standard-library/locale-class.md)
+Указывает сведения о конфигурации для аспектов [языкового стандарта](../standard-library/locale-class.md) .
 
 ```cpp
 enum codecvt_mode {
@@ -27,9 +28,9 @@ enum codecvt_mode {
 };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Перечисление определяет три константы, которые поставляют информацию о конфигурации в грани локализации, заявленные в [ \<codecvt>. ](../standard-library/codecvt.md) Это могут быть следующие значения:
+Перечисление определяет три константы, которые предоставляют сведения о конфигурации для аспектов языкового стандарта, объявленных в [\<codecvt>](../standard-library/codecvt.md) . Это могут быть следующие значения:
 
 - `consume_header`, чтобы использовать начальную последовательность заголовка при чтении многобайтовой последовательности и определении порядка байтов следующей многобайтовой последовательности для чтения;
 

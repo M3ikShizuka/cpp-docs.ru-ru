@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _execvp, _wexecvp'
 title: _execvp, _wexecvp
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - wexecvp function
 - execvp function
 ms.assetid: a4db15df-b204-4987-be7c-de84c3414380
-ms.openlocfilehash: 224649abffd836667641f3c83e5f777f8752d7bd
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: eddd453479ee60214e885832479e2b7f89835094
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915917"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97236130"
 ---
 # <a name="_execvp-_wexecvp"></a>_execvp, _wexecvp
 
@@ -84,7 +85,7 @@ intptr_t _wexecvp(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Каждая из этих функций загружает и выполняет новый процесс, передавая массив указателей на аргументы командной строки и используя переменную среды **path** для поиска файла для выполнения.
 
@@ -113,5 +114,5 @@ intptr_t _wexecvp(
 [atexit](atexit.md)<br/>
 [exit, _Exit, _exit](exit-exit-exit.md)<br/>
 [_onexit, _onexit_m](onexit-onexit-m.md)<br/>
-[Функции _spawn, _wspawn](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
+[_spawn, функции _wspawn](../../c-runtime-library/spawn-wspawn-functions.md)<br/>
 [system, _wsystem](system-wsystem.md)<br/>

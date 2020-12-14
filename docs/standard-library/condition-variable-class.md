@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: condition_variable классе'
 title: Класс condition_variable
 ms.date: 11/04/2016
 f1_keywords:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - std::condition_variable::wait
 - std::condition_variable::wait_for
 - std::condition_variable::wait_until
-ms.openlocfilehash: eef0e7ef013b4faeb6393cade67258a09eda5551
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: f5987c050dece8536aef0f91731a0848b56d3a4b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842433"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233816"
 ---
 # <a name="condition_variable-class"></a>Класс condition_variable
 
@@ -37,7 +38,7 @@ ms.locfileid: "88842433"
 class condition_variable;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="constructors"></a>Конструкторы
 
@@ -64,7 +65,7 @@ class condition_variable;
 condition_variable();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 При недостатке памяти этот конструктор вызывает объект [system_error](../standard-library/system-error-class.md), имеющий код ошибки `not_enough_memory`. Если объект не может быть создан из-за недоступности некоторых других ресурсов, конструктор создает объект `system_error`, имеющий код ошибки `resource_unavailable_try_again`.
 
@@ -115,7 +116,7 @@ void wait(unique_lock<mutex>& Lck, Predicate Pred);
 *Возможен*\
 Любое выражение, возвращающее значение **`true`** или **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый метод блокируется до оповещения объекта `condition_variable` путем вызова [notify_one](#notify_one) или [notify_all](#notify_all). Он может также ложно активироваться.
 
@@ -160,7 +161,7 @@ bool wait_for(
 
 Второй метод возвращает значение *пред*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый метод блокируется до тех пор, пока `condition_variable` объект не будет сигналь с помощью вызова [notify_one](#notify_one) или [notify_all](#notify_all) или до истечения интервала времени *Rel_time* . Он может также ложно активироваться.
 
@@ -218,7 +219,7 @@ bool wait_until(
 
 Методы, возвращающие, **`bool`** возвращают значение " *пред*".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый метод блокируется до оповещения объекта `condition_variable` путем вызова [notify_one](#notify_one) или [notify_all](#notify_all)`Abs_time`. Он может также ложно активироваться.
 

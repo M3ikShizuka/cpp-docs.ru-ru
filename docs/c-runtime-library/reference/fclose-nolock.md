@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _fclose_nolock'
 title: _fclose_nolock
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - fclose_nolock function
 - _fclose_nolock function
 ms.assetid: b4af4392-5fc8-49bb-9fe2-ca7293d3ce04
-ms.openlocfilehash: bc8d0b0bcb92bf45ff4d3f1a10a1442c8ee1d069
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: aa7c12080838ab07dc0eb184413bb27089d9ee06
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920210"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97235896"
 ---
 # <a name="_fclose_nolock"></a>_fclose_nolock
 
@@ -57,7 +58,7 @@ int _fclose_nolock(
 
 **фклосе** возвращает 0, если поток успешно закрыт. Возвращает **EOF** для указания ошибки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эта функция является неблокирующей версией **фклосе**. Она идентична, но не защищена от помех со стороны других потоков. Эта функция может выполняться быстрее, поскольку она не создает дополнительную нагрузку, связанную с блокировкой работы других потоков. Используйте эту функции только в потокобезопасных контекстах, например в однопоточных приложениях или если вызываемая область уже обрабатывает изоляцию потоков.
 

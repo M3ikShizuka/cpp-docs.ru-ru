@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; сложные&gt;'
 title: '&lt;complex&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - complex header
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
-ms.openlocfilehash: f63fe99238450b8dffbf459ab078a8ecf6623b77
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b16798cf1725ba6fa681b04f735d44f02a2b1b82
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831506"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233842"
 ---
 # <a name="ltcomplexgt"></a>&lt;complex&gt;
 
@@ -24,7 +25,7 @@ ms.locfileid: "88831506"
 
 **Пространство имен:** std
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Комплексные числа — это упорядоченная пара вещественных чисел. С геометрической точки зрения комплексная плоскость — это вещественная двумерная плоскость. Отличия комплексной плоскости от вещественной состоят в том, что у нее есть дополнительная алгебраическая структура. У этой структуры есть две основные операции.
 
@@ -42,19 +43,19 @@ ms.locfileid: "88831506"
 
    (*a*/(*a*<sup>2</sup>  +  *b*<sup>2</sup>), –*b*/(*a*<sup>2</sup>  +  *b*<sup>2</sup>))
 
-Представляя комплексное число *z* = (*a*, *b*) в виде *z*  =  *a*  +  *BI*, где *i*<sup>2</sup> =-1, правила для сквозной области набора реальных чисел можно применить к набору комплексных чисел и их компонентам. Пример:
+Представляя комплексное число *z* = (*a*, *b*) в виде *z*  =  *a*  +  *BI*, где <sup>2</sup> =-1, правила для сквозной области набора реальных чисел можно применить к набору комплексных чисел и их компонентам. Пример:
 
-   (1 + 2*i*) \* (2 + 3*i*) = 1 \* (2 + 3*я*) + 2*i* (2 + 3 я) \* = (2 + 3*i)*+ (4-*я* + 6*i*<sup>)</sup>= (2-6) + (3 + 4)*i* =-4 +*i*7*i*
+   (1 + 2 *i*) \* (2 + 3 *i*) = 1 \* (2 + 3 *я*) + 2 *i* (2 + 3 я) \* = (2 + 3 *i)*+ (4-*я* + 6 *i*<sup>)</sup>= (2-6) + (3 + 4)*i* =-4 +7
 
 Система комплексных чисел — это поле, но оно не упорядоченное. Не существует порядка комплексных чисел, как для поля вещественных чисел и его поднаборов, поэтому неравенство нельзя применить к комплексным числам, так как они являются реальными числами.
 
 Существует три общие формы представления комплексного числа *z*:
 
-- Декартка: *z*  =  *a*  +  *Бизнес-аналитика*
+- Декартка: *z*  =    +  *Бизнес-аналитика*
 
 - Полярная: *z*  =  *r* (COS *p*  +  *i* Sin *p*)
 
-- Экспонента *z*:  =  *r* \* *e*<sup>*IP-адрес*</sup> z r e
+- Экспонента :  =   \* <sup>*IP-адрес*</sup> z r e
 
 В этих стандартных представлениях комплексных чисел используются следующие термины.
 
@@ -68,7 +69,7 @@ ms.locfileid: "88831506"
 
 Если не указано иное, функции, которые могут вернуть несколько значений, должны возвращать значение участника для своих аргументов больше-π и меньше или равно + π, чтобы они оставались однозначными. Все углы должны быть выражены в радианах, где в окружности есть 2π радианы (360 градусов).
 
-## <a name="members"></a>Элементы
+## <a name="members"></a>Члены
 
 ### <a name="functions"></a>Функции
 
@@ -76,10 +77,10 @@ ms.locfileid: "88831506"
 |-|-|
 |[просто](../standard-library/complex-functions.md#abs)|Вычисляет модуль комплексного числа.|
 |[ACOS](../standard-library/complex-functions.md#acos)||
-|[acosh](../standard-library/complex-functions.md#acosh)||
+|[ACOSH](../standard-library/complex-functions.md#acosh)||
 |[АРГ](../standard-library/complex-functions.md#arg)|Извлекает аргумент из комплексного числа.|
 |[ASIN](../standard-library/complex-functions.md#asin)||
-|[asinh](../standard-library/complex-functions.md#asinh)||
+|[ASINH](../standard-library/complex-functions.md#asinh)||
 |[Atan](../standard-library/complex-functions.md#atan)||
 |[atanh](../standard-library/complex-functions.md#atanh)||
 |[конж](../standard-library/complex-functions.md#conj)|Возвращает комплексно-сопряженную величину комплексного числа.|
@@ -90,7 +91,7 @@ ms.locfileid: "88831506"
 |[Журналь](../standard-library/complex-functions.md#log)|Возвращает натуральный логарифм комплексного числа.|
 |[LOG10](../standard-library/complex-functions.md#log10)|Возвращает десятичный логарифм комплексного числа.|
 |[norm](../standard-library/complex-functions.md#norm)|Извлекает норму комплексного числа.|
-|[polar](../standard-library/complex-functions.md#polar)|Возвращает комплексное число, соответствующее указанному модулю и аргументу, в декартовой форме.|
+|[соответствующие](../standard-library/complex-functions.md#polar)|Возвращает комплексное число, соответствующее указанному модулю и аргументу, в декартовой форме.|
 |[Pow](../standard-library/complex-functions.md#pow)|Вычисляет комплексное число, получаемое в результате возведения основания (комплексное число) в степень другого комплексного числа.|
 |[proj](../standard-library/complex-functions.md#proj)||
 |[real](../standard-library/complex-functions.md#real)|Извлекает вещественную часть комплексного числа.|

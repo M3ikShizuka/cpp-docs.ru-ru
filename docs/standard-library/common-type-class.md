@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: common_type классе'
 title: Класс common_type
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - common_type class
 - common_type
 ms.assetid: 02bc4e7b-c63d-49de-9f8a-511d3a5c1e7f
-ms.openlocfilehash: 3605b34a2bfc50831c889976ac5ea884053bb642
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 7dc41b443f6ec93c9d07ba8e3871346fae09d94f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68449493"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233920"
 ---
-# <a name="commontype-class"></a>Класс common_type
+# <a name="common_type-class"></a>Класс common_type
 
 Определяет общий тип одного или нескольких типов.
 
@@ -45,7 +46,7 @@ struct common_type<T, U, V...> {
 
 Список типов, которые могут быть [полными типами](../c-language/incomplete-types.md) или void.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Член `type` является распространенным типом, в который можно преобразовать все типы в списке параметров.
 
@@ -92,7 +93,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Вывод
+## <a name="output"></a>Выходные данные
 
 ```Output
 Test for typedefs of common_type int
@@ -116,10 +117,10 @@ ClassType: true
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)

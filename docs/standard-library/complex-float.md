@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Complex с &lt; плавающей запятой&gt;'
 title: complex&lt;float&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - complex<float> function
 ms.assetid: 1178eb1e-39bd-4017-89cd-aea95f813939
-ms.openlocfilehash: 441006c977b4a4249270d0f4809da0fba0163395
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: f3efa0425bbf7b6d1df4a6211d549ccf6693fd5c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230069"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97233855"
 ---
 # <a name="complexltfloatgt"></a>complex&lt;float&gt;
 
@@ -54,7 +55,7 @@ constexpr complex(
 
 Комплексное число типа **`float`** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Явная специализация шаблона класса Complex до сложного класса типа **`float`** отличается от шаблона класса только в конструкторах, которые он определяет. Преобразование из **`float`** в может **`double`** быть неявным, но менее безопасного преобразования из в должны **`float`** **`long double`** быть **`explicit`** . Использование **`explicit`** правил инициации при преобразовании типов с помощью синтаксиса назначения.
 
@@ -118,7 +119,7 @@ arg ( c3 ) = 0.927295 radians, which is 53.1301 degrees.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок**:\<complex>
+**Заголовок**: \<complex>
 
 **Пространство имен:** std
 
