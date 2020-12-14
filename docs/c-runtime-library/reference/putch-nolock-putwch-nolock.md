@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _putch_nolock, _putwch_nolock'
 title: _putch_nolock, _putwch_nolock
 ms.date: 4/2/2020
 api_name:
@@ -39,12 +40,12 @@ helpviewer_keywords:
 - console, writing characters to
 - _putwch_nolock function
 ms.assetid: edbc811d-bac6-47fa-a872-fe4f3a1590b0
-ms.openlocfilehash: df32b156d8c57d51ee81c4b4893bf11887915672
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a300b70cc128ef1cbefcf745a0ed113f452f6ef3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916194"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246361"
 ---
 # <a name="_putch_nolock-_putwch_nolock"></a>_putch_nolock, _putwch_nolock
 
@@ -66,14 +67,14 @@ wchar_t c
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Символ, который требуется вывести.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Возвращает значение *c* в случае успешного выполнения. Если функция **_putch_nolock** завершается с ошибкой, она возвращает значение **EOF**; если функция **_putwch_nolock** завершается с ошибкой, она возвращает значение **WEOF**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Версии **_putch_nolock** и **_putwch_nolock** идентичны версиям **_putch** и **_putwch** соответственно, за исключением того, что они не защищены от помех со стороны других потоков. Они могут выполняться быстрее, поскольку не создают дополнительную нагрузку, связанную с блокировкой работы других потоков. Используйте эти функции только в потокобезопасных контекстах, например в однопоточных приложениях или если вызываемая область уже обрабатывает изоляцию потоков.
 

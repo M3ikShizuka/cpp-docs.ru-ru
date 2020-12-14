@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о классе: Debug (C++/CLI)'
 title: Класс Debug (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,18 +7,18 @@ helpviewer_keywords:
 - .NET Framework [C++], Debug class
 - Debug class
 ms.assetid: 076bd528-1b6f-4e8a-a372-eb5849cf969a
-ms.openlocfilehash: 47e1b949cb6e998508a3bd362b1c74961cf4cc23
-ms.sourcegitcommit: 94893973211d0b254c8bcdcf0779997dcc136b0c
+ms.openlocfilehash: 255fe306684928faf836cd550005eea820d64ce5
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91414156"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258438"
 ---
 # <a name="debug-class-ccli"></a>Класс Debug (C++/CLI)
 
 При использовании <xref:System.Diagnostics.Debug> в Visual C++ном приложении поведение не меняется между отладочной и окончательной сборками.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Поведение для аналогично <xref:System.Diagnostics.Trace> поведению для класса Debug, но зависит от определяемой трассировки символов. Это означает, что `#ifdef` для предотвращения отладки в сборке выпуска необходимо иметь любой код, связанный с трассировкой.
 

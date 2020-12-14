@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ismbb подпрограмм'
 title: Процедуры _ismbb
 ms.date: 11/04/2016
 api_location:
@@ -20,12 +21,12 @@ helpviewer_keywords:
 - ismbb routines
 - _ismbb routines
 ms.assetid: d63c232e-3fe4-4844-aafd-2133846ece4b
-ms.openlocfilehash: b8828018040b8b6b7b13c88c08599333dc1124d0
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 4eb82433c4ad7712c2d3ac40f9eeb0120e6fea07
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839378"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246615"
 ---
 # <a name="_ismbb-routines"></a>Процедуры _ismbb
 
@@ -50,7 +51,7 @@ ms.locfileid: "88839378"
    :::column-end:::
 :::row-end:::
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Каждая из подпрограмм семейства `_ismbb` проверяет заданное целочисленное значение `c` на выполнение определенного условия. Результат проверки зависит от действующей многобайтовой кодовой страницы. По умолчанию в качестве многобайтовой кодовая страницы установлена кодовая страница ANSI, полученная от операционной системы при запуске программы. Можно использовать [_getmbcp](../c-runtime-library/reference/getmbcp.md), чтобы запросить использующуюся в данный момент многобайтовую кодовую страницу, или [_setmbcp](../c-runtime-library/reference/setmbcp.md), чтобы изменить ее.
 

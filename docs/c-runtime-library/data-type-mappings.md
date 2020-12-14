@@ -1,5 +1,6 @@
 ---
-title: Сопоставление типов данных
+description: Дополнительные сведения о сопоставлениях типов данных
+title: Сопоставления типов данных
 ms.date: 11/04/2016
 f1_keywords:
 - _TXCHAR
@@ -29,14 +30,14 @@ helpviewer_keywords:
 - _TEXT type
 - _T type
 ms.assetid: 4e573c05-8800-468b-ae5f-76ff7409835e
-ms.openlocfilehash: d77ac4fa9afcd5a6b8f86261c7a3ba466adc64a4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9d76ecebc9bcb01e86cac2f199534ae2cda518c8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215157"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258784"
 ---
-# <a name="data-type-mappings"></a>Сопоставление типов данных
+# <a name="data-type-mappings"></a>Сопоставления типов данных
 
 Сопоставления типов данных определяются в TCHAR.H и зависят от того, определена ли в вашей программе константа `_UNICODE` или `_MBCS`.
 
@@ -61,5 +62,5 @@ ms.locfileid: "87215157"
 [Универсальные текстовые сопоставления](../c-runtime-library/generic-text-mappings.md)<br/>
 [Сопоставления констант и глобальных переменных](../c-runtime-library/constant-and-global-variable-mappings.md)<br/>
 [Сопоставления подпрограмм](../c-runtime-library/routine-mappings.md)<br/>
-[Пример программы с универсальным текстом](../c-runtime-library/a-sample-generic-text-program.md)<br/>
-[Использование универсальных текстовых сопоставлений](../c-runtime-library/using-generic-text-mappings.md)
+[Пример программы Generic-Text](../c-runtime-library/a-sample-generic-text-program.md)<br/>
+[Использование сопоставлений Generic-Text](../c-runtime-library/using-generic-text-mappings.md)

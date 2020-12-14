@@ -1,15 +1,16 @@
 ---
+description: Дополнительные сведения о строках языка
 title: Language Strings
 ms.date: 11/04/2016
 helpviewer_keywords:
 - language strings
 ms.assetid: bbee63b1-af0b-4e44-9eaf-dd3e265c05fd
-ms.openlocfilehash: dd0c55091d3dff641993fa593e656e2825da7c73
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 077a440981c9e39e87356310c40ae9b249d4662e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839258"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246582"
 ---
 # <a name="language-strings"></a>Language Strings
 
@@ -21,9 +22,9 @@ ms.locfileid: "88839258"
 
 |Строка языка|Соответствующее название языкового стандарта|
 |---------------------|----------------------------|
-|американский|ru-RU|
-|американский английский|ru-RU|
-|американский — английский|ru-RU|
+|американский|en-US|
+|американский английский|en-US|
+|американский — английский|en-US|
 |австралийский|en-AU|
 |бельгийский|nl-BE|
 |канадский|en-CA|
@@ -35,7 +36,7 @@ ms.locfileid: "88839258"
 |китайский — Сингапур|zh-SG|
 |китайский — традиционный|zh-TW|
 |голландский — бельгийский|nl-BE|
-|английский — американский|ru-RU|
+|английский — американский|en-US|
 |английский — aus|en-AU|
 |английский — Белиз|en-BZ|
 |английский — can|en-CA|
@@ -46,8 +47,8 @@ ms.locfileid: "88839258"
 |английский — Южная Африка|en-ZA|
 |английский — Тринидад и Тобаго|en-TT|
 |английский — uk|en-GB|
-|английский — us|ru-RU|
-|английский — США|ru-RU|
+|английский — us|en-US|
+|английский — США|en-US|
 |французский — бельгийский|fr-BE|
 |французский — канадский|fr-CA|
 |французский — Люксембург|fr-LU|
@@ -84,8 +85,8 @@ ms.locfileid: "88839258"
 |шведский — Финляндия|sv-FI|
 |швейцарский|de-CH|
 |uk|en-GB|
-|us|ru-RU|
-|usa|ru-RU|
+|us|en-US|
+|usa|en-US|
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _pclose'
 title: _pclose
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - pclose function
 - pipes, closing
 ms.assetid: e2e31a9e-ba3a-4124-bcbb-c4040110b3d3
-ms.openlocfilehash: 6b35b8e3faa2f1a193dce102a6f8a11b9fcbb82b
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 529af8ccdd1c6cc27f9039adef5d75c8b977aa54
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82910392"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258711"
 ---
 # <a name="_pclose"></a>_pclose
 
@@ -62,9 +63,9 @@ FILE *stream
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функция **_pclose** ищет идентификатор процесса командного процессора (cmd. exe), запущенный связанным **_popenным** вызовом, выполняет [_cwait](cwait.md) вызов в новом обработчике команд и закрывает поток в соответствующем канале.
+Функция **_pclose** ищет идентификатор процесса обработчика команд (Cmd.exe), запущенный связанным вызовом **_popen** , выполняет [_cwait](cwait.md) вызов в новом обработчике команд и закрывает поток в соответствующем канале.
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

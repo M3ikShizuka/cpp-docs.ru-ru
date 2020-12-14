@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ismbc подпрограмм'
 title: Процедуры _ismbc
 ms.date: 11/04/2016
 api_location:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - ismbc routines
 - _ismbc routines
 ms.assetid: b8995391-7857-4ac3-9a1e-de946eb4464d
-ms.openlocfilehash: 056cc4bc5344ee8833b3f6e645616657f1958897
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 319e077d839cacb6faf0c9095d403f99a1677975
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839365"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246595"
 ---
 # <a name="_ismbc-routines"></a>Процедуры _ismbc
 
@@ -41,7 +42,7 @@ ms.locfileid: "88839365"
    :::column-end:::
 :::row-end:::
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Результат проверки каждой процедуры **_ismbc** зависит от действующей многобайтовой кодовой страницы. Многобайтовые кодовые страницы содержат однобайтовые буквенные символы. По умолчанию в качестве многобайтовой кодовой страницы установлена стандартная системная кодовая страница ANSI, полученная от операционной системы при запуске программы. Запросить или изменить многобайтовую кодовую страницу можно с помощью функций [_getmbcp](../c-runtime-library/reference/getmbcp.md) или [_setmbcp](../c-runtime-library/reference/setmbcp.md) соответственно.
 

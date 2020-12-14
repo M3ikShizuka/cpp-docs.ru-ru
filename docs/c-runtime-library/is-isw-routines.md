@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: — это, подпрограммы isw'
 title: Процедуры is, isw
 ms.date: 11/04/2016
 api_location:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - is routines
 - isw routines
 ms.assetid: 1e171a57-2cde-41f6-a75f-a080fa3c12e5
-ms.openlocfilehash: 632bd371f8a6da4b57eeb1ce88e2a37eb6923355
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: d9229d2437ea7a7e57178acc5fd40ba2afea043b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839391"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246727"
 ---
 # <a name="is-isw-routines"></a>Процедуры is, isw
 
@@ -51,7 +52,7 @@ ms.locfileid: "88839391"
    :::column-end:::
 :::row-end:::
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эти подпрограммы проверяют символы на соответствие заданным условиям.
 
@@ -355,5 +356,5 @@ int main( void )
 [Классификация символов](../c-runtime-library/character-classification.md)<br/>
 [Локаль](../c-runtime-library/locale.md)<br/>
 [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
-[Интерпретация последовательностей многобайтовых символов](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [в функции](../c-runtime-library/to-functions.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: постфиксные выражения'
 title: Постфиксные выражения
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - postfix expressions
 - expressions [C++], postfix
 ms.assetid: 7ac62a57-06df-422f-b012-a75b37d7cb9b
-ms.openlocfilehash: 9a5c99c78623f2192b59a73f270f3ad5d2a34516
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c6c38fee6b2b44ab9ff390eed8d178bf40653df2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231173"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258529"
 ---
 # <a name="postfix-expressions"></a>Постфиксные выражения
 
@@ -24,7 +25,7 @@ ms.locfileid: "87231173"
 |[Оператор индекса](../cpp/subscript-operator.md)|**[ ]**|
 |[Оператор вызова функции](../cpp/function-call-operator-parens.md)|**( )**|
 |[Оператор явного преобразования типа](../cpp/explicit-type-conversion-operator-parens.md)|*Type-Name* **()**|
-|[Оператор доступа к элементу](../cpp/member-access-operators-dot-and.md)|**.** ни**->**|
+|[Оператор доступа к элементу](../cpp/member-access-operators-dot-and.md)|**.** ни **->**|
 |[Постфиксный оператор приращения](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**++**|
 |[Постфиксный оператор уменьшения](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)|**--**|
 
@@ -192,6 +193,6 @@ world!
 good morning, sunshine.
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Типы выражений](../cpp/types-of-expressions.md)

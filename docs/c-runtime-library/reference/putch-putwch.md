@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _putch, _putwch'
 title: _putch, _putwch
 ms.date: 4/2/2020
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - putch function
 - console, writing characters to
 ms.assetid: 3babc7cf-e333-405d-8449-c788d61d51aa
-ms.openlocfilehash: 5d327030f816b4ad4d68e0366225d27fee00a7bf
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 242e7c69330cf86c9c369903812f277fe0018d50
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82916180"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97246348"
 ---
 # <a name="_putch-_putwch"></a>_putch, _putwch
 
@@ -63,14 +64,14 @@ wint_t _putwch(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Символ, который требуется вывести.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Возвращает значение *c* в случае успешного выполнения. При сбое **_putch** возвращается **EOF**; Если **_putwch** не выполняется, возвращается значение **WEOF**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эти функции записывают символ *c* напрямую, без буферизации, в консоль. В Windows NT функция **_putwch** записывает символы Юникода, используя текущие настройки языкового стандарта консоли.
 

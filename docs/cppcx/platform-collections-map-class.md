@@ -1,4 +1,5 @@
 ---
+description: 'См. Дополнительные сведения о классе Platform:: Collections:: Map.'
 title: Класс Platform::Collections::Map
 ms.date: 10/01/2019
 ms.topic: reference
@@ -15,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - Map Class (C++/Cx)
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
-ms.openlocfilehash: 40b7d653b21cdc2b0fab4c852c9809ab1db46a12
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8414328a178e4f9e2cfd7c4d97cca07ce7efcd9f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88839144"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258503"
 ---
 # <a name="platformcollectionsmap-class"></a>Класс Platform::Collections::Map
 
@@ -38,10 +39,10 @@ ref class Map sealed;
 
 ### <a name="parameters"></a>Параметры
 
-*Занят*<br/>
+*K*<br/>
 Тип ключа в паре "ключ-значение".
 
-*3,3*<br/>
+*V*<br/>
 Тип значения в паре "ключ-значение".
 
 *В*<br/>
@@ -49,7 +50,7 @@ ref class Map sealed;
 
 *__is_valid_winrt_type ()* Созданная компилятором функция, которая проверяет тип *K* и *V* и предоставляет понятное сообщение об ошибке, если тип не может быть сохранен на карте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Допустимые типы:
 
@@ -129,7 +130,7 @@ Windows::Foundation::Collections::IKeyValuePair<K, V>^>^ First();
 
 Итератор, указывающий первый элемент на карте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Удобным способом удержания итератора, возвращенного первым (), является присвоение возвращаемого значения переменной, объявленной с **`auto`** ключевым словом выведения типа. Например, `auto x = myMap->First();`.
 
@@ -207,7 +208,7 @@ V Lookup(K key);
 
 Значение, связанное с *ключом*. Тип возвращаемого значения — TypeName *V*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если ключ не существует, создается исключение [Platform:: OutOfBoundsException](../cppcx/platform-outofboundsexception-class.md) .
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: математические константы ошибок'
 title: Константы математических ошибок
 ms.date: 11/04/2016
 f1_keywords:
@@ -23,12 +24,12 @@ helpviewer_keywords:
 - _PLOSS constant
 - math error constants
 ms.assetid: 4be933a6-674e-45a5-8ac9-090023542f5b
-ms.openlocfilehash: 3267a5053cb2cd18cfcb07473bbcc4d6f8295f5d
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: e5f94f94a28543f0405cce57941a872c416d0c20
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751860"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258750"
 ---
 # <a name="math-error-constants"></a>Константы математических ошибок
 
@@ -38,7 +39,7 @@ ms.locfileid: "57751860"
 #include <math.h>
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
 Математические подпрограммы библиотеки времени выполнения могут генерировать константы математических ошибок.
 
@@ -53,7 +54,7 @@ ms.locfileid: "57751860"
 |`_TLOSS`|Произошла полная потеря значимости.|
 |`_UNDERFLOW`|Результат слишком мал для представления.|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [_matherr](../c-runtime-library/reference/matherr.md)<br/>
 [Глобальные константы](../c-runtime-library/global-constants.md)

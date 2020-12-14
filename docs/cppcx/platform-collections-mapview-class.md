@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Platform:: Collections:: MapView Class'
 title: Класс Platform::Collections::MapView
 ms.date: 12/30/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - MapView Class
 ms.assetid: 9577dde7-f599-43c6-b1e4-7d653706fd62
-ms.openlocfilehash: 693854499dafd23752337652ef298907fdecbcc2
-ms.sourcegitcommit: 65fead53d56d531d71be42216056aca5f44def11
+ms.openlocfilehash: 6011948bb3708329f7dcce0841f2bc34879760a7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88610898"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97258490"
 ---
 # <a name="platformcollectionsmapview-class"></a>Класс Platform::Collections::MapView
 
@@ -35,20 +36,20 @@ ref class MapView sealed;
 
 #### <a name="parameters"></a>Параметры
 
-*Занят*<br/>
+*K*<br/>
 Тип ключа в паре "ключ-значение".
 
-*3,3*<br/>
+*V*<br/>
 Тип значения в паре "ключ-значение".
 
-*C*<br/>
+*В*<br/>
 Тип, предоставляющий объект функции, который может сравнить значения двух элементов как ключи сортировки, чтобы определить их относительный порядок в объекте MapView. По умолчанию [std:: less \<K> ](../standard-library/less-struct.md).
 
 ### <a name="remarks"></a>Комментарии
 
 MapView является конкретной реализацией C++ интерфейса [Windows:: Foundation:: Collections:: IMapView \<K,V> ](/uwp/api/windows.foundation.collections.imapview-2) , который передается через двоичный интерфейс приложения (ABI). Дополнительные сведения см. в разделе [Collections (C++/CX)](../cppcx/collections-c-cx.md).
 
-### <a name="members"></a>Члены
+### <a name="members"></a>Элементы
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -217,6 +218,6 @@ void Split(
 
 Этот метод не выполняет никаких действий.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Пространство имен платформы](platform-namespace-c-cx.md)
