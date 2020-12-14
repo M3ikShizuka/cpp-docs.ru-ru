@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: неexcept (C++)'
 title: noexcept (C++)
 ms.date: 11/19/2019
 f1_keywords:
 - noexcept_cpp
 ms.assetid: df24edb9-c6a6-4e37-9914-fd5c0c3716a8
-ms.openlocfilehash: 2618c7e9b35e4ba50ad1bda20a8694dd829ec2d8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ca4abfc48e3850f014c29cea2fd9108f7b556072
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223646"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97223728"
 ---
 # <a name="noexcept-c"></a>noexcept (C++)
 
@@ -23,10 +24,10 @@ ms.locfileid: "87223646"
 
 ### <a name="parameters"></a>Параметры
 
-*константное выражение*<br/>
+*Константное выражение*<br/>
 Константное выражение типа **`bool`** , которое представляет, является ли набор возможных типов исключений пустым. Неусловная версия эквивалентна `noexcept(true)` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 *Выражение* "без исключения" является разновидностью *спецификации исключений*, суффиксом для объявления функции, представляющей набор типов, которые могут сопоставляться обработчиком исключений для любого исключения, которое выходит из функции. Унарный условный оператор `noexcept(` *constant_expression* , `)` где *constant_expression* выдает **`true`** и его безусловный синоним **`noexcept`** , указывает, что набор возможных типов исключений, которые могут выходить из функции, пуст. Это значит, что функция никогда не создает исключение и никогда не позволяет распространять исключение за пределы области действия. Оператор `noexcept(` *constant_expression* , `)` где выдается *constant_expression* **`false`** , или отсутствие спецификации исключения (кроме деструктора или функции освобождения) указывает, что набор возможных исключений, которые могут выйти из функции, — это набор всех типов.
 
@@ -46,7 +47,7 @@ T copy_object(const T& obj) noexcept(std::is_pod<T>)
 }
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Современные рекомендации по C++ для исключений и обработки ошибок](errors-and-exception-handling-modern-cpp.md)<br/>
 [Спецификации исключений (throw, не Except)](exception-specifications-throw-cpp.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _CrtCheckMemory'
 title: _CrtCheckMemory
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - _CrtCheckMemory function
 - CrtCheckMemory function
 ms.assetid: 457cc72e-60fd-4177-ab5c-6ae26a420765
-ms.openlocfilehash: 7e458825a81b7032310458ccda52d9299e126a35
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f2537997a9adc1c2346560d3b65eecc633933616
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70938863"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221596"
 ---
 # <a name="_crtcheckmemory"></a>_CrtCheckMemory
 
@@ -47,13 +48,13 @@ int _CrtCheckMemory( void );
 
 В случае успеха **_CrtCheckMemory** возвращает значение true; в противном случае функция возвращает значение FALSE.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Функция **_CrtCheckMemory** проверяет память, выделенную диспетчером отладочной кучи, проверяя базовую кучу и проверяя каждый блок памяти. Если ошибка или несоответствие памяти обнаружены в базовой куче, сведениях заголовка отладки или буферах перезаписи, **_CrtCheckMemory** создает отчет об отладке с информацией, описывающей условие ошибки. Если [_DEBUG](../../c-runtime-library/debug.md) не определен, вызовы **_CrtCheckMemory** удаляются во время предварительной обработки.
+Функция **_CrtCheckMemory** проверяет память, выделенную диспетчером отладочной кучи, проверяя базовую кучу и проверяя каждый блок памяти. Если ошибка или несоответствие памяти обнаружены в базовой куче, сведениях заголовка отладки или буферах перезаписи, **_CrtCheckMemory** создает отчет об отладке с информацией, описывающей условие ошибки. Если [_DEBUG](../../c-runtime-library/debug.md) не определено, вызовы **_CrtCheckMemory** удаляются во время предварительной обработки.
 
-Поведение **_CrtCheckMemory** можно контролировать путем установки битовых полей флага [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) с помощью функции [_CrtSetDbgFlag](crtsetdbgflag.md) . Включение битового поля **_CRTDBG_CHECK_ALWAYS_DF** в результате **_CrtCheckMemory** вызывается каждый раз, когда запрашивается операция выделения памяти. Несмотря на то, что этот метод замедляет выполнение, он позволяет быстро перехватывать ошибки. Отключение битового поля **_CRTDBG_ALLOC_MEM_DF** приводит к тому, что **_CrtCheckMemory** не проверяет кучу и немедленно возвращает **значение true**.
+Поведение **_CrtCheckMemory** может контролироваться путем установки битовых полей флага [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md) с помощью функции [_CrtSetDbgFlag](crtsetdbgflag.md) . Включение **_CRTDBG_CHECK_ALWAYS_DF** битового поля для результатов **_CrtCheckMemory** вызывается каждый раз, когда запрашивается операция выделения памяти. Несмотря на то, что этот метод замедляет выполнение, он позволяет быстро перехватывать ошибки. Отключение **_CRTDBG_ALLOC_MEM_DF** битового поля приведет к тому, что **_CrtCheckMemory** не будет проверять кучу и немедленно возвращать **значение true**.
 
-Так как эта функция возвращает значение **TRUE** или **FALSE**, ее можно передать в один из макросов [_ASSERT](assert-asserte-assert-expr-macros.md) для создания простого механизма обработки ошибок отладки. Следующий пример вызывает сбой утверждения, если в куче обнаружено повреждение.
+Поскольку эта функция возвращает **значение true** или **false**, ее можно передать в один из [_ASSERTных](assert-asserte-assert-expr-macros.md) макросов, чтобы создать простой механизм обработки ошибок отладки. Следующий пример вызывает сбой утверждения, если в куче обнаружено повреждение.
 
 ```C
 _ASSERTE( _CrtCheckMemory( ) );
@@ -67,7 +68,7 @@ _ASSERTE( _CrtCheckMemory( ) );
 |-------------|---------------------|
 |**_CrtCheckMemory**|\<crtdbg.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Библиотеки
 
@@ -75,10 +76,10 @@ _ASSERTE( _CrtCheckMemory( ) );
 
 ## <a name="example"></a>Пример
 
-Пример использования **_CrtCheckMemory**см. в разделе [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).
+Пример использования **_CrtCheckMemory** см. в разделе [crt_dbg1](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg1).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Процедуры отладки](../../c-runtime-library/debug-routines.md)<br/>
+[Отладочные подпрограммы](../../c-runtime-library/debug-routines.md)<br/>
 [_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)<br/>
 [_CrtSetDbgFlag](crtsetdbgflag.md)<br/>

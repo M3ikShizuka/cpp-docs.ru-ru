@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _cgets, _cgetws'
 title: _cgets, _cgetws
 ms.date: 4/2/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - cgetws function
 - cgets function
 ms.assetid: 4d5e134a-58c3-4f62-befd-5d235b0212f4
-ms.openlocfilehash: 9ae7baaa01029dcf2c02f6ea80b6e816bb671596
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: ac712c7ee51c3f06dfe1dd4e881630768a7e6b20
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82917433"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221687"
 ---
 # <a name="_cgets-_cgetws"></a>_cgets, _cgetws
 
@@ -78,7 +79,7 @@ wchar_t *_cgetws(
 
 `_cgets` и `_cgetws` возвращают указатель на начало строки, `buffer[2]`. Если параметр `buffer` имеет значение **NULL**, вызывается обработчик недопустимых параметров, как описано в статье [Проверка параметров](../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, они возвращают **NULL** и устанавливают для `errno` значение `EINVAL`.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Эти функции считывают строку символов из консоли и хранят строку и ее длину в расположении, указанном `buffer`. Параметр `buffer` должен указывать на массив символов. Первый элемент массива, `buffer[0]`, должен содержать максимальную длину (в символах) строки для считывания. Массив должен содержать достаточно элементов для хранения строки, завершающий нуль-символ ("\0") и 2 дополнительных байта. Функция читает символы до считывания сочетания возврата каретки и перевода строки (CR-LF) или до считывания указанного числа символов. Строка сохраняется начиная с `buffer[2]`. Когда функция считывает CR-LF, они сохраняет нуль-символ ("\0"). Затем функция сохраняет фактическую длину строки во втором элементе массива, `buffer[1]`.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура Кдаоворкспацеинфо'
 title: Структура CDaoWorkspaceInfo
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - CDaoWorkspaceInfo structure [MFC]
 - DAO (Data Access Objects), Workspaces collection
 ms.assetid: a1f4b25e-f9c6-4196-b075-d1df99c54124
-ms.openlocfilehash: afbc73c079a6deec3f3e1b7455f9f2dbface5025
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: b89e8787c2103244535e9458650f1f104478b748
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62253639"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222207"
 ---
 # <a name="cdaoworkspaceinfo-structure"></a>Структура CDaoWorkspaceInfo
 
-`CDaoWorkspaceInfo` Структура содержит сведения о рабочей области, определенные для доступа к базе данных объектов (DAO) доступа к данным.
+`CDaoWorkspaceInfo`Структура содержит сведения о рабочей области, определенной для доступа к базе данных объектов доступа к данным (DAO).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -32,25 +33,25 @@ struct CDaoWorkspaceInfo
 #### <a name="parameters"></a>Параметры
 
 *m_strName*<br/>
-Однозначно называет объект рабочей области. Чтобы получить значение этого свойства напрямую, вызовите объекта querydef [GetName](../../mfc/reference/cdaoquerydef-class.md#getname) функция-член. Дополнительные сведения см. в разделе «Имя свойства» в справке DAO.
+Уникально именует объект рабочей области. Чтобы получить значение этого свойства напрямую, вызовите [функцию члена "GetObject" объекта QueryDef](../../mfc/reference/cdaoquerydef-class.md#getname) . Дополнительные сведения см. в разделе "свойство Name" справки DAO.
 
 *m_strUserName*<br/>
-Значение, представляющее владельца объекта рабочей области. Дополнительные сведения см. в разделе «Свойства UserName» в справке DAO.
+Значение, представляющее владельца объекта рабочей области. Связанные сведения см. в разделе "свойство UserName" справки DAO.
 
 *m_bIsolateODBCTrans*<br/>
-Значение, указывающее, изолированы ли несколько транзакций с одной и той же базе данных ODBC. Дополнительные сведения см. в разделе [CDaoWorkspace::SetIsolateODBCTrans](../../mfc/reference/cdaoworkspace-class.md#setisolateodbctrans). Дополнительные сведения см. в разделе «IsolateODBCTrans свойство» в справке DAO.
+Значение, указывающее, изолированы ли несколько транзакций, использующих одну и ту же базу данных ODBC. Дополнительные сведения см. в разделе [кдаоворкспаце:: сетисолатеодбктранс](../../mfc/reference/cdaoworkspace-class.md#setisolateodbctrans). Связанные сведения см. в разделе «свойство Исолатеодбктранс» справки DAO.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Рабочая область находится объект класса [CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md). Ссылки на основной, дополнительный и все указанные выше указывают, как возвращаются данные по [GetWorkspaceInfo](../../mfc/reference/cdaoworkspace-class.md#getworkspaceinfo) функции-члена в классе `CDaoWorkspace`.
+Рабочая область — это объект класса [кдаоворкспаце](../../mfc/reference/cdaoworkspace-class.md). Ссылки на первичный, вторичный и все вышеперечисленное указывают, как эта информация возвращается функцией-членом [жетворкспацеинфо](../../mfc/reference/cdaoworkspace-class.md#getworkspaceinfo) в классе `CDaoWorkspace` .
 
-Сведений, получаемых методом [CDaoWorkspace::GetWorkspaceInfo](../../mfc/reference/cdaoworkspace-class.md#getworkspaceinfo) функция-член хранится в `CDaoWorkspaceInfo` структуры. `CDaoWorkspaceInfo` также определяет `Dump` создает функцию-член в режиме отладки. Можно использовать `Dump` для помещения в дамп содержимое `CDaoWorkspaceInfo` объекта.
+Сведения, получаемые функцией-членом [кдаоворкспаце:: жетворкспацеинфо](../../mfc/reference/cdaoworkspace-class.md#getworkspaceinfo) , хранятся в `CDaoWorkspaceInfo` структуре. `CDaoWorkspaceInfo` также определяет `Dump` функцию-член в отладочных сборках. Можно использовать `Dump` для дампа содержимого `CDaoWorkspaceInfo` объекта.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxdao.h
+**Заголовок:** афксдао. h
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Структуры, стили, обратные вызовы и схемы сообщений](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
-[Класс CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md)
+[Класс Кдаоворкспаце](../../mfc/reference/cdaoworkspace-class.md)

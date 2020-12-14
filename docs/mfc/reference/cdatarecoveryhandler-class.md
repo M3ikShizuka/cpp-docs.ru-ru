@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кдатарековерихандлер Class'
 title: Класс Кдатарековерихандлер
 ms.date: 03/27/2019
 f1_keywords:
@@ -62,12 +63,12 @@ helpviewer_keywords:
 - CDataRecoveryHandler [MFC], SetShutdownByRestartManager
 - CDataRecoveryHandler [MFC], UpdateDocumentInfo
 ms.assetid: 7794802c-e583-4eba-90b9-2fed1a161f9c
-ms.openlocfilehash: 4bb4d4ddf291cb1efc01b887c54a6573c52df8dc
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 72189916f4555152ccc8997600d8426e188bb65c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842927"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222142"
 ---
 # <a name="cdatarecoveryhandler-class"></a>Класс Кдатарековерихандлер
 
@@ -79,7 +80,7 @@ ms.locfileid: "88842927"
 class CDataRecoveryHandler : public CObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="constructors"></a>Конструкторы
 
@@ -138,7 +139,7 @@ class CDataRecoveryHandler : public CObject
 |m_strAutosavePath|Расположение, в котором хранятся автоматически сохраняемые документы.|
 |m_strRestartIdentifier|Строковое представление идентификатора GUID диспетчера перезапуска.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Диспетчер перезапуска использует `CDataRecoveryHandler` класс для наблюдения за всеми открытыми документами и для их автосохранения при необходимости. Чтобы включить Автосохранение, используйте метод [кдатарековерихандлер:: сетсаведокументинфунидле](#setsavedocumentinfoonidle) . Этот метод направляет `CDataRecoveryHandler` для выполнения автосохранения в следующем цикле бездействия. Диспетчер перезапуска вызывает `SetSaveDocumentInfoOnIdle` , когда `CDataRecoveryHandler` должен выполнить Автосохранение.
 
@@ -164,7 +165,7 @@ virtual BOOL AutosaveAllDocumentInfo();
 
 Значение TRUE, если `CDataRecoveryHandler` сохранены все документы; Значение FALSE, если какой либо документ не был сохранен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод возвращает значение TRUE, если нет документов, которые необходимо сохранить. Он также возвращает значение TRUE без сохранения документов, если при извлечении `CWinApp` или `CDocManager` для приложения возникает ошибка.
 
@@ -192,7 +193,7 @@ virtual BOOL AutosaveDocumentInfo(
 
 Значение TRUE, если установлены соответствующие флаги и *пдокумент* является допустимым `CDocument` объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Каждый `CDocument` объект имеет флаг, указывающий, изменился ли он с момента последнего сохранения. Чтобы определить состояние этого флага, используйте параметр [CDocument:: Modified](../../mfc/reference/cdocument-class.md#ismodified) . Если с `CDocument` момента последнего сохранения объект не изменился, `AutosaveDocumentInfo` удаляет все автоматически сохраненные файлы для этого документа. Если документ был изменен с момента последнего сохранения, то при его закрытии пользователю предлагается сохранить документ перед закрытием.
 
@@ -221,7 +222,7 @@ CDataRecoveryHandler(
 *наутосавеинтервал*\
 окне Время между автосохранением. Этот параметр задается в миллисекундах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Платформа MFC автоматически создает `CDataRecoveryHandler` объект для приложения при использовании мастера **создания проекта** . Если вы не настраиваете поведение восстановления данных или диспетчер перезапуска, не следует создавать `CDataRecoveryHandler` объект.
 
@@ -242,7 +243,7 @@ virtual BOOL CreateDocumentInfo(CDocument* pDocument);
 
 Реализация по умолчанию возвращает значение TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод проверяет, существует ли уже *пдокумент* в списке документов перед добавлением документа. Если *пдокумент* уже есть в списке, этот метод удаляет автоматически сохраненный файл, связанный с *пдокумент*.
 
@@ -277,7 +278,7 @@ virtual BOOL DeleteAutosavedFile(const CString& strAutosavedFile);
 
 Реализация по умолчанию всегда возвращает значение TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если этот метод не может удалить автоматически сохраненный файл, он сохраняет имя файла в списке. Деструктор для `CDataRecoveryHandler` пытается удалить каждый автоматически сохраненный файл, указанный в этом списке.
 
@@ -298,7 +299,7 @@ virtual CString GenerateAutosaveFileName(const CString& strDocumentName) const;
 
 Имя файла автосохранения, созданное из *стрдокументнаме*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Каждое имя документа имеет сопоставление "один к одному" с именем файла автосохранения.
 
@@ -343,9 +344,9 @@ virtual CString GetDocumentListName(CDocument* pDocument) const;
 
 Имя документа из *пдокумент*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`CDataRecoveryHandler`Использует имя документа в качестве ключа в *m_mapDocNameToAutosaveName*, *m_mapDocNameToDocumentPtr*и *m_mapDocNameToRestoreBool*. Этот параметр позволяет `CDataRecoveryHandler` отслеживать `CDocument` объекты, имя файла автосохранения и параметры автосохранения.
+`CDataRecoveryHandler`Использует имя документа в качестве ключа в *m_mapDocNameToAutosaveName*, *m_mapDocNameToDocumentPtr* и *m_mapDocNameToRestoreBool*. Этот параметр позволяет `CDataRecoveryHandler` отслеживать `CDocument` объекты, имя файла автосохранения и параметры автосохранения.
 
 ## <a name="cdatarecoveryhandlergetnormaldocumenttitle"></a><a name="getnormaldocumenttitle"></a> Кдатарековерихандлер:: Жетнормалдокументтитле
 
@@ -364,7 +365,7 @@ virtual CString GetNormalDocumentTitle(CDocument* pDocument);
 
 Стандартный заголовок для указанного документа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Обычный заголовок документа обычно представляет собой имя файла документа без пути. Это заголовок в поле **имя файла** диалогового окна **Сохранить как** .
 
@@ -385,7 +386,7 @@ virtual CString GetRecoveredDocumentTitle(const CString& strDocumentTitle) const
 
 Название восстановленного документа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 По умолчанию восстановленный заголовок документа является обычным названием с добавленным к нему **[восстановленным]** . При `CDataRecoveryHandler` запросе пользователя на восстановление автоматически сохраненных документов отображается имя пользователя.
 
@@ -401,7 +402,7 @@ virtual CString GetRestartIdentifier() const;
 
 Уникальный идентификатор перезапуска.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Идентификатор перезапуска уникален для каждого выполнения приложения.
 
@@ -443,7 +444,7 @@ virtual BOOL Initialize();
 
 Значение TRUE, если инициализация выполнена успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Процесс инициализации загружает путь для хранения файлов автосохранения из реестра. Если `Initialize` метод не может найти этот каталог или если путь РАВЕН null, `Initialize` завершается с ошибкой и возвращается значение `FALSE` .
 
@@ -459,7 +460,7 @@ virtual BOOL Initialize();
 virtual void QueryRestoreAutosavedDocuments();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если приложение имеет кодировку Unicode, этот метод отображает [CTaskDialog](../../mfc/reference/ctaskdialog-class.md) для пользователя. В противном случае платформа использует [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) для запроса пользователя.
 
@@ -477,7 +478,7 @@ virtual BOOL ReadOpenDocumentList();
 
 Значение TRUE указывает, что `ReadOpenDocumentList` загружены сведения по крайней мере для одного документа из реестра. Значение FALSE указывает, что сведения о документе не загружены.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция загружает сведения о открытом документе из реестра и сохраняет их в переменной члена *m_mapDocNameToAutosaveName*.
 
@@ -500,7 +501,7 @@ virtual BOOL RemoveDocumentInfo(CDocument* pDocument);
 
 Значение TRUE, если *пдокумент* был удален из списка. Значение FALSE, если произошла ошибка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Когда пользователь закрывает документ, платформа использует этот метод, чтобы удалить его из списка открытых документов.
 
@@ -520,7 +521,7 @@ virtual BOOL ReopenPreviousDocuments();
 
 Значение TRUE, если был открыт хотя бы один документ; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод открывает Последнее сохранение ранее открытых документов. Если документ не был сохранен или автосохранен, `ReopenPreviousDocuments` открывает пустой документ на основе шаблона для этого типа файлов.
 
@@ -540,7 +541,7 @@ virtual BOOL RestoreAutosavedDocuments();
 
 Значение TRUE, если этот метод успешно восстанавливает документы.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывает [кдатарековерихандлер:: куерирестореаутосаведдокументс](#queryrestoreautosaveddocuments) для определения документов, которые пользователь хочет восстановить. Если пользователь решает не восстанавливать автоматически сохраненный документ, `RestoreAutosavedDocuments` удаляется файл автосохранения. В противном случае `RestoreAutosavedDocuments` заменяет открытый документ на автоматически сохраненную версию.
 
@@ -558,7 +559,7 @@ virtual BOOL SaveOpenDocumentList();
 
 Значение TRUE, если нет открытых документов для сохранения или если они были успешно сохранены. Значение FALSE, если имеются документы для сохранения в реестре, но они не были сохранены из-за ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Диспетчер перезапуска вызывает, `SaveOpenDocumentList` когда приложение неожиданно завершает работу или закрывается для обновления. При перезапуске приложения для получения списка открытых документов используется [кдатарековерихандлер:: реадопендокументлист](#readopendocumentlist) .
 
@@ -590,7 +591,7 @@ virtual void SetAutosavePath(const CString& strAutosavePath);
 *страутосавепас*\
 окне Путь, по которому хранятся файлы автосохранения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Изменение каталога автосохранения не приводит к перемещению автоматически сохраненных файлов.
 
@@ -607,7 +608,7 @@ virtual void SetRestartIdentifier(const CString& strRestartIdentifier);
 *стррестартидентифиер*\
 окне Уникальный идентификатор диспетчера перезапуска.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Диспетчер перезапуска записывает сведения об открытых документах в реестре. Эта информация хранится с уникальным идентификатором перезапуска в качестве ключа. Поскольку идентификатор перезапуска уникален для каждого экземпляра приложения, несколько экземпляров приложения могут неожиданно завершить работу, и диспетчер перезапуска может восстановить каждый из них.
 
@@ -637,7 +638,7 @@ virtual void SetShutdownByRestartManager(BOOL bShutdownByRestartManager);
 *бшутдовнбирестартманажер*\
 окне Значение TRUE указывает, что диспетчер перезапуска привел к завершению работы приложения; Значение FALSE, чтобы указать, что приложение завершилось по другой причине.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Платформа ведет себя по-разному в зависимости от того, была ли Предыдущая выход непредвиденной или была инициирована диспетчером перезапуска.
 
@@ -658,7 +659,7 @@ virtual BOOL UpdateDocumentInfo(CDocument* pDocument);
 
 Значение TRUE, если этот метод удалил автоматически сохраненный документ и обновил сведения о документе. Значение FALSE, если произошла ошибка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Когда пользователь сохраняет документ, приложение удаляет автоматически сохраненный файл, так как он больше не нужен. `UpdateDocumentInfo` удаляет автоматически сохраненный файл путем вызова [кдатарековерихандлер:: ремоведокументинфо](#removedocumentinfo). `UpdateDocumentInfo` затем добавляет сведения из *пдокумент* в список открытых документов `RemoveDocumentInfo` , поскольку удаляет эти сведения, но сохраненный документ остается открытым.
 

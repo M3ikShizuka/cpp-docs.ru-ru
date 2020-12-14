@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о графических операциях (C++/CLI)
 title: Работа с графикой (C++/CLI)
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -18,26 +19,26 @@ helpviewer_keywords:
 - GDI+ [C++], converting image file formats
 - graphics [C++], converting image file formats
 ms.assetid: bba27228-b9b3-4c9c-b31c-a04b76702a95
-ms.openlocfilehash: c7c6d62eb4059069e6e266544ce6323c63dd15c0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 84dbc75aa306219b8733848ece5c594ca40a0489
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62393744"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97223546"
 ---
 # <a name="graphics-operations-ccli"></a>Работа с графикой (C++/CLI)
 
-В этом разделе демонстрируется обработка изображений с помощью пакета SDK для Windows.
+Демонстрируется обработка изображений с помощью Windows SDK.
 
-В следующих разделах описывается использование <xref:System.Drawing.Image?displayProperty=fullName> классом для выполнения обработки изображений.
+В следующих разделах демонстрируется использование <xref:System.Drawing.Image?displayProperty=fullName> класса для выполнения манипуляций с изображениями.
 
-## <a name="display"></a> Отображение изображений в платформе .NET Framework
+## <a name="display-images-with-the-net-framework"></a><a name="display"></a> Отображение изображений с помощью .NET Framework
 
-В следующем примере кода изменяется для получения указателя на обработчик событий OnPaint <xref:System.Drawing.Graphics> объект главной формы. <xref:System.Windows.Forms.Form.OnPaint%2A> Функция предназначена для приложения Windows Forms, скорее всего, созданные с помощью мастера приложений Visual Studio.
+В следующем примере кода обработчик событий onpain изменяется для получения указателя на <xref:System.Drawing.Graphics> объект главной формы. <xref:System.Windows.Forms.Form.OnPaint%2A>Функция предназначена для приложения Windows Forms, которое, скорее всего, будет создано с помощью мастера приложений Visual Studio.
 
-Образ представлен <xref:System.Drawing.Image> класса. Данные изображения загружается из файла .jpg, с помощью <xref:System.Drawing.Image.FromFile%2A?displayProperty=fullName> метод. Перед началом рисования изображения в форму, размер формы изменяется в соответствии с изображением. Рисование изображения выполняется с помощью <xref:System.Drawing.Graphics.DrawImage%2A?displayProperty=fullName> метод.
+Изображение представлено <xref:System.Drawing.Image> классом. Данные изображения загружаются из JPG-файла с помощью <xref:System.Drawing.Image.FromFile%2A?displayProperty=fullName> метода. Перед прорисовкой изображения в форму размер формы изменяется в соответствии с изображением. Рисование изображения выполняется с помощью <xref:System.Drawing.Graphics.DrawImage%2A?displayProperty=fullName> метода.
 
-<xref:System.Drawing.Graphics> И <xref:System.Drawing.Image> классы находятся в <xref:System.Drawing?displayProperty=fullName> пространства имен.
+<xref:System.Drawing.Graphics>Классы и <xref:System.Drawing.Image> находятся в <xref:System.Drawing?displayProperty=fullName> пространстве имен.
 
 ### <a name="example"></a>Пример
 
@@ -57,9 +58,9 @@ virtual Void Form1::OnPaint(PaintEventArgs^ pe) override
 }
 ```
 
-## <a name="draw"></a> Рисование фигур при помощи .NET Framework
+## <a name="draw-shapes-with-the-net-framework"></a><a name="draw"></a> Рисование фигур с помощью .NET Framework
 
-В следующем примере кода используется <xref:System.Drawing.Graphics> класс для изменения <xref:System.Windows.Forms.Form.OnPaint%2A> обработчик событий для получения указателя на <xref:System.Drawing.Graphics> объект главной формы. Этот указатель используется для задать цвет фона формы и рисования линии и дуги с помощью <xref:System.Drawing.Graphics.DrawLine%2A?displayProperty=fullName> и <xref:System.Drawing.Graphics.DrawArc%2A> методы.
+В следующем примере кода класс используется <xref:System.Drawing.Graphics> для изменения <xref:System.Windows.Forms.Form.OnPaint%2A> обработчика событий, чтобы получить указатель на <xref:System.Drawing.Graphics> объект для главной формы. Затем этот указатель используется для задания цвета фона формы и рисования линии и дуги с помощью <xref:System.Drawing.Graphics.DrawLine%2A?displayProperty=fullName> <xref:System.Drawing.Graphics.DrawArc%2A> методов и.
 
 ### <a name="example"></a>Пример
 
@@ -91,9 +92,9 @@ virtual Void Form1::OnPaint(PaintEventArgs^ pe ) override
 }
 ```
 
-## <a name="rotate"></a> Поворот изображений с помощью .NET Framework
+## <a name="rotate-images-with-the-net-framework"></a><a name="rotate"></a> Вращение изображений с помощью .NET Framework
 
-В следующем примере кода демонстрируется использование <xref:System.Drawing.Image?displayProperty=fullName> класс для загрузки изображения с диска, повернуть на 90 градусов и сохраните его как новый файл .jpg.
+В следующем примере кода показано использование <xref:System.Drawing.Image?displayProperty=fullName> класса для загрузки изображения с диска, вращения его 90 градусов и сохранения в виде нового JPG-файла.
 
 ### <a name="example"></a>Пример
 
@@ -112,9 +113,9 @@ int main()
 }
 ```
 
-## <a name="convert"></a> Преобразование форматов файлов изображений в .NET Framework
+## <a name="convert-image-file-formats-with-the-net-framework"></a><a name="convert"></a> Преобразование форматов файлов изображений с помощью .NET Framework
 
-В следующем примере кода показано <xref:System.Drawing.Image?displayProperty=fullName> класс и <xref:System.Drawing.Imaging.ImageFormat?displayProperty=fullName> перечисление, используемое для преобразования и сохранять файлы изображений. Следующий код загружает изображение из JPG-файлу и сохраняет его в форматах GIF и BMP.
+В следующем примере кода демонстрируется <xref:System.Drawing.Image?displayProperty=fullName> класс и <xref:System.Drawing.Imaging.ImageFormat?displayProperty=fullName> перечисление, используемое для преобразования и сохранения файлов изображений. Следующий код загружает изображение из JPG-файла, а затем сохраняет его в форматах GIF и BMP.
 
 ### <a name="example"></a>Пример
 
@@ -141,7 +142,7 @@ int main()
 
 [Управляемый код GDI+](/dotnet/framework/winforms/advanced/about-gdi-managed-code)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Программирование .NET с использованием C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 

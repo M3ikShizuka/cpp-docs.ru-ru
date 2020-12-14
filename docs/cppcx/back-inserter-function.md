@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о функции back_inserter
 title: back_inserter - функция
 ms.date: 12/30/2016
 f1_keywords:
@@ -6,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - back_inserter Function
 ms.assetid: 91476338-5548-44b7-bc7e-2150f4fbe31a
-ms.openlocfilehash: 82df6b06389fa9f1c3ab83fa7b1da3bab092c68d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: d2483c9947fbf3a7bc04024221ec6e582e416f84
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62209446"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97223585"
 ---
-# <a name="backinserter-function"></a>back_inserter - функция
+# <a name="back_inserter-function"></a>back_inserter - функция
 
 Возвращает итератор, используемый для вставки элементов в конце указанной коллекции.
 
@@ -46,8 +47,8 @@ Platform::BackInsertIterator<T>
 
 **Заголовок:** collection.h
 
-**Пространство имен:** Windows::Foundation:: Collections
+**Пространство имен:** Windows::Foundation::Collections
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Windows::Foundation::Collections](../cppcx/windows-foundation-collections-namespace-c-cx.md)
+[Пространство имен Windows:: Foundation:: Collections](../cppcx/windows-foundation-collections-namespace-c-cx.md)

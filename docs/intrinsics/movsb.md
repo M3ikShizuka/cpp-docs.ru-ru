@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __movsb'
 title: __movsb
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,18 +9,18 @@ helpviewer_keywords:
 - rep movsb instruction
 - __movsb intrinsic
 ms.assetid: ba5469f6-f797-4cd2-bee8-74c7666c26d4
-ms.openlocfilehash: ca06fc9114f6e824a690cc4e612c21d705a485cd
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 6e4a9ba7482f7f614b80bd0596111874f0087c86
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217275"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97222454"
 ---
 # <a name="__movsb"></a>__movsb
 
 **Блок, относящийся только к системам Microsoft**
 
-Создает инструкцию перемещения строки`rep movsb`().
+Создает инструкцию перемещения строки ( `rep movsb` ).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -36,7 +37,7 @@ void __movsb(
 *Местоназначение*\
 заполняет Указатель на место назначения копии.
 
-*Source*\
+*Источника*\
 окне Указатель на источник копии.
 
 *Расчета*\
@@ -44,13 +45,13 @@ void __movsb(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__movsb`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 В результате первые `Count` байты, на которые указывает, `Source` копируются в `Destination` строку.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _CIatan2'
 title: _CIatan2
 ms.date: 4/2/2020
 api_name:
@@ -25,16 +26,16 @@ helpviewer_keywords:
 - _CIatan2 intrinsic
 - CIatan2 intrinsic
 ms.assetid: 31f8cc78-b79f-4576-b73b-8add18e08680
-ms.openlocfilehash: 62baae97cec3c572f14a01f2f5c0ad189cb4dbfd
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 5b0c5f495b8bf5d47404cc04a69a8b2f31af39a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918107"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97221648"
 ---
 # <a name="_ciatan2"></a>_CIatan2
 
-Вычисляет арктангенс для *x* / *y* , где *x* и *y* — значения в верхней части стека.
+Вычисляет арктангенс для *x*  /  *y* , где *x* и *y* — значения в верхней части стека.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -56,5 +57,5 @@ void __cdecl _CIatan2();
 
 ## <a name="see-also"></a>См. также раздел
 
-[Алфавитный указатель функций](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[Алфавитный справочник по функциям](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
 [atan, atanf, atanl, atan2, atan2f, atan2l](../c-runtime-library/reference/atan-atanf-atanl-atan2-atan2f-atan2l.md)
