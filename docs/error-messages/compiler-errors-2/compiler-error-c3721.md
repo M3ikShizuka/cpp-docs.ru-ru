@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C3721'
 title: Ошибка компилятора C3721
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - C3721
 ms.assetid: c696ca38-3e00-4875-abbe-7bce0f46930e
-ms.openlocfilehash: 429781b21adb3e655b7d17a23f825bcb13d5d8d0
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7c2a28a3f0e231f4289f0bf656fe38058b6da5ce
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62328241"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239042"
 ---
 # <a name="compiler-error-c3721"></a>Ошибка компилятора C3721
 
-«сигнатура»: несовместимая сигнатура для события
+"Signature": несовместимая сигнатура для события
 
-Событие был объявлен неправильно. Дополнительные сведения см. в разделе [__event](../../cpp/event.md).
+Событие было объявлено неправильно. Дополнительные сведения см. в разделе [__event](../../cpp/event.md).
 
-C3721 доступен только с помощью параметра компилятора устаревшие **/CLR: oldSyntax**.
+C3721 доступен только при использовании устаревшего параметра компилятора **/clr: oldSyntax**.
