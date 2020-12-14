@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения см. в статье как выполнить преобразование между System:: GUID и _GUID'
 title: Практическое руководство. Преобразование между классами System::Guid и _GUID
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - GUID, converting to System::GUID
 - System::GUID, converting to GUID
 ms.assetid: 022c934c-3395-4f04-b498-85ad9bf8c646
-ms.openlocfilehash: a0150053157d2694788cd50bf64097805a8eda88
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 1f2eb87f23e7f47221b4506c2c9e328803b800e7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "79545063"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304393"
 ---
 # <a name="how-to-convert-between-systemguid-and-_guid"></a>Практическое руководство. Преобразование между классами System::Guid и _GUID
 
-В следующем примере кода показано, как выполнить преобразование между <xref:System.Guid> и `_GUID`.
+В следующем примере кода показано, как выполнить преобразование между <xref:System.Guid> и `_GUID` .
 
 ## <a name="example"></a>Пример
 
@@ -65,6 +66,6 @@ int main() {
 11111111-2222-3333-4455-555555555555
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Использование взаимодействия языка C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[Использование взаимодействия C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

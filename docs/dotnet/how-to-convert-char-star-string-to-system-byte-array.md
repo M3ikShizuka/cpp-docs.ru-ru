@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о том, как преобразовать символьную * строку в массив System:: Byte.'
 title: Практическое руководство. Преобразование строки char * в массив System::Byte
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -8,14 +9,14 @@ helpviewer_keywords:
 - character arrays, converting to System::Byte arrays
 - examples [C++], arrays
 ms.assetid: de9bc4eb-773c-4796-a496-9b90ca986503
-ms.openlocfilehash: 8b53fc329dad1421c7c30f673d0360703773ea65
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 5f8e79d68b844ee78eb1792fd0acb051254972bb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "79545357"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304367"
 ---
-# <a name="how-to-convert-char--string-to-systembyte-array"></a>Как преобразовать символьную строку \* в массив System:: Byte
+# <a name="how-to-convert-char--string-to-systembyte-array"></a>Как преобразовать \* строку char в массив System:: Byte
 
 Наиболее эффективный способ преобразования `char *` строки в <xref:System.Byte> массив — использование <xref:System.Runtime.InteropServices.Marshal> класса.
 
@@ -51,6 +52,6 @@ int main() {
 Native String
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Использование взаимодействия языка C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[Использование взаимодействия C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

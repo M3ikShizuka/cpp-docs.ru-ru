@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Ошибка средств компоновщика LNK1107'
 title: Ошибка средств компоновщика LNK1107
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1107
 ms.assetid: a37a893d-5efa-4eba-8f40-6c5518b4b9d0
-ms.openlocfilehash: c75966d9c6c22f1bd2123fb30282bb2bed467130
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 2a5ed9ba0bc4789a324d143b6287a08712299cdd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991026"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281396"
 ---
 # <a name="linker-tools-error-lnk1107"></a>Ошибка средств компоновщика LNK1107
 
@@ -19,7 +20,7 @@ ms.locfileid: "74991026"
 
 Средству не удалось прочитать файл. Повторно создайте файл.
 
-LNK1107 также может возникнуть при попытке передать компоновщику модуль (DLL или. netmodule, созданный с [параметром/clr: Assembly](../../build/reference/clr-common-language-runtime-compilation.md) или [/NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md)); Вместо этого передайте OBJ-файл.
+LNK1107 также может возникнуть при попытке передать компоновщику модуль (DLL или. netmodule, созданный с [параметром/clr: Assembly](../../build/reference/clr-common-language-runtime-compilation.md) или  [/NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md)); Вместо этого передайте OBJ-файл.
 
 При компиляции следующего образца:
 
@@ -32,4 +33,4 @@ public:
 };
 ```
 
-а затем указать **link LNK1107. dll** в командной строке, вы получите LNK1107.  Чтобы устранить эту ошибку, укажите **link LNK1107. obj** .
+а затем указать **link LNK1107.dll** в командной строке, вы получите LNK1107.  Чтобы устранить эту ошибку, укажите **link LNK1107. obj** .

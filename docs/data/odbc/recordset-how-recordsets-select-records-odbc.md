@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения см. в статье набор записей: выбор записей (ODBC)'
 title: Набор записей. Порядок выборки записей в наборе (ODBC)
 ms.date: 05/09/2019
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - recordsets, constructing SQL statements
 - ODBC recordsets, selecting records
 ms.assetid: 343a6a91-aa4c-4ef7-b21f-2f2bfd0d3787
-ms.openlocfilehash: 0aa9c082d2d04416358d948476f2ae0f9e2a35af
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 25032c1901513e0c99ddcf8018fb108eb7c1fbd2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81366992"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97304471"
 ---
 # <a name="recordset-how-recordsets-select-records-odbc"></a>Набор записей. Порядок выборки записей в наборе (ODBC)
 
@@ -43,11 +44,11 @@ ms.locfileid: "81366992"
 |--------------|-------------|
 |Объявление класса набора записей с помощью мастера **добавления класса**|Укажите таблицу, из которой будет производиться выборка.<br /><br /> Укажите включаемые столбцы.<br /><br /> См. статью [Добавление потребителя ODBC MFC](../../mfc/reference/adding-an-mfc-odbc-consumer.md).|
 |Завершение реализации класса набора записей|Переопределите функции-члены, например расширенную функцию `OnSetOptions`, чтобы задать параметры для конкретного приложения или изменить значения по умолчанию. Укажите элементы данных параметров, если набор записей должен быть параметризованным.|
-|Создание объекта набора записей (перед вызовом `Open`)|Укажите условие поиска (возможно, составное) для использования в предложении **WHERE**, которое фильтрует записи. См [Recordset: Фильтрация записей (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).<br /><br /> Укажите порядок сортировки для использования в предложении **ORDER BY**, которое сортирует записи. [См. Рекорд: Записи сортировки (ODBC).](../../data/odbc/recordset-sorting-records-odbc.md)<br /><br /> Укажите значения для параметров, добавленных в класс. [См. Рекордсет: Параметрынс-сет (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).|
+|Создание объекта набора записей (перед вызовом `Open`)|Укажите условие поиска (возможно, составное) для использования в предложении **WHERE**, которое фильтрует записи. См. раздел [Recordset: Фильтрация записей (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md).<br /><br /> Укажите порядок сортировки для использования в предложении **ORDER BY**, которое сортирует записи. См. раздел [набор записей. Сортировка записей (ODBC)](../../data/odbc/recordset-sorting-records-odbc.md).<br /><br /> Укажите значения для параметров, добавленных в класс. См. раздел [набор записей. Параметризация набора записей (ODBC)](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md).|
 
-|Выполнение запроса набора записей путем вызова `Open`|Укажите пользовательскую строку SQL вместо строки SQL по умолчанию, заданной мастером. [См. CRecordset:: Открыть](../../mfc/reference/crecordset-class.md#open) в *библиотеке класса Справка* и [S'L: Настройка вашего записи в S'L заявление (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
+|Выполнение запроса набора записей путем вызова `Open`|Укажите пользовательскую строку SQL вместо строки SQL по умолчанию, заданной мастером. См. раздел [CRecordset:: Open](../../mfc/reference/crecordset-class.md#open) в *справочнике по библиотеке классов* и [SQL: Настройка инструкции SQL набора записей (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md). |
 
-|Вызов `Requery` для повторного запроса текущих значений из источника данных для набора записей|Укажите новые параметры, условие фильтрации или порядок сортировки. [См. Запись: Выдавливание рекордного набора (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md).
+|Вызов `Requery` для повторного запроса текущих значений из источника данных для набора записей|Укажите новые параметры, условие фильтрации или порядок сортировки. См. раздел [набор записей: перезапрос набора записей (ODBC)](../../data/odbc/recordset-requerying-a-recordset-odbc.md). |
 
 ## <a name="how-a-recordset-constructs-its-sql-statement"></a><a name="_core_how_a_recordset_constructs_its_sql_statement"></a> Построение инструкции SQL набором записей
 
@@ -80,18 +81,18 @@ ms.locfileid: "81366992"
 
 - Передайте пользовательскую строку SQL в параметре *lpszSQL* при вызове функции [Open](../../mfc/reference/crecordset-class.md#open) для набора записей. Значение, переданное в параметре *lpsqSQL*, имеет приоритет над значением, возвращенным функцией-членом [GetDefaultSQL](../../mfc/reference/crecordset-class.md#getdefaultsql).
 
-   Для получения более подробной информации о знаком с [S'L: Настройка вашего оператора Recordset (ODBC),](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)в `Open` котором описаны типы инструкций (или частичных заявлений), которые вы можете передать, и то, что с ними делает платформа.
+   Дополнительные сведения см. в разделе [SQL: Настройка инструкции SQL набора записей (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md), в которой описываются типы инструкций SQL (или частичных инструкций), к которым можно передать `Open` данные и что делает платформа.
 
     > [!NOTE]
     >  Если переданная пользовательская строка не начинается с "SELECT" или "{CALL", MFC предполагает, что она содержит имя таблицы. Это также относится к следующему пункту.
 
 - Измените строку, которую мастер записывает в функции-члене `GetDefaultSQL` набора записей. Отредактируйте код функции, чтобы изменить возвращаемое значение. По умолчанию мастер создает функцию `GetDefaultSQL`, которая возвращает одно имя таблицы.
 
-   Можно сделать так, чтобы функция `GetDefaultSQL` возвращала любые элементы, которые можно передавать в параметре *lpszSQL* в функцию `Open`. Если пользовательская строка SQL в параметре *lpszSQL* не передана, платформа использует строку, возвращенную функцией `GetDefaultSQL`. Функция `GetDefaultSQL` должна возвращать по крайней мере одно имя таблицы. Однако она также может возвращать несколько имен таблиц, полную инструкцию **SELECT**, инструкцию ODBC **CALL** и т. д. Список того, что вы можете передать *lpszS'L* - или вернуться `GetDefaultSQL` - см. [SQL: Customizing Your Recordset's SQL Statement (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md)
+   Можно сделать так, чтобы функция `GetDefaultSQL` возвращала любые элементы, которые можно передавать в параметре *lpszSQL* в функцию `Open`. Если пользовательская строка SQL в параметре *lpszSQL* не передана, платформа использует строку, возвращенную функцией `GetDefaultSQL`. Функция `GetDefaultSQL` должна возвращать по крайней мере одно имя таблицы. Однако она также может возвращать несколько имен таблиц, полную инструкцию **SELECT**, инструкцию ODBC **CALL** и т. д. Список того, что можно передать в *lpszSQL* или `GetDefaultSQL` вернуть, см. в разделе [SQL: Настройка инструкции SQL набора записей (ODBC)](../../data/odbc/sql-customizing-your-recordsets-sql-statement-odbc.md).
 
-   Если выполняется соединение двух или нескольких таблиц, перепишите функцию `GetDefaultSQL`, изменив список таблиц в предложении SQL **FROM**. Для получения дополнительной информации [см.](../../data/odbc/recordset-performing-a-join-odbc.md)
+   Если выполняется соединение двух или нескольких таблиц, перепишите функцию `GetDefaultSQL`, изменив список таблиц в предложении SQL **FROM**. Дополнительные сведения см. [в разделе набор записей. Выполнение соединения (ODBC)](../../data/odbc/recordset-performing-a-join-odbc.md).
 
-- Привяжите дополнительные элементы данных полей вручную, возможно, на основе сведений о схеме источника данных, полученных во время выполнения. Элементы данных полей добавляются в класс набора записей, вызовы функций [RFX](../../data/odbc/record-field-exchange-using-rfx.md) или Bulk RFX для них — в функцию-член [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) или [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange), а инициализации элементов данных — в конструктор класса. Для получения дополнительной информации [см. Recordset: Динамически связывающие столбцы данных (ODBC).](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)
+- Привяжите дополнительные элементы данных полей вручную, возможно, на основе сведений о схеме источника данных, полученных во время выполнения. Элементы данных полей добавляются в класс набора записей, вызовы функций [RFX](../../data/odbc/record-field-exchange-using-rfx.md) или Bulk RFX для них — в функцию-член [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) или [DoBulkFieldExchange](../../mfc/reference/crecordset-class.md#dobulkfieldexchange), а инициализации элементов данных — в конструктор класса. Дополнительные сведения см. в разделе [набор записей: динамическая привязка столбцов данных (ODBC)](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md).
 
 - Переопределите функции-члены набора записей, например `OnSetOptions`, чтобы задать параметры для конкретного приложения или изменить значения по умолчанию.
 
@@ -100,7 +101,7 @@ ms.locfileid: "81366992"
 ## <a name="see-also"></a>См. также раздел
 
 [Набор записей (ODBC)](../../data/odbc/recordset-odbc.md)<br/>
-[Набор записей. Порядок обновления записей в наборе (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)<br/>
+[Набор записей: как набор записей обновляет записи (ODBC)](../../data/odbc/recordset-how-recordsets-update-records-odbc.md)<br/>
 [Основы ODBC](../../data/odbc/odbc-basics.md)<br/>
 [SQL](../../data/odbc/sql.md)<br/>
-[Набор записей: блокировка (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)
+[Набор записей. Блокировка записей (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)
