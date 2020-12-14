@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ошибка компилятора C2441'
 title: Ошибка компилятора C2441
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C2441
 ms.assetid: ffbd6573-777a-48dd-892f-5cf4a758dcab
-ms.openlocfilehash: aa55392e9f58caa4292cf5f96ef97f65a53bf913
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d7a6073be821fcd2717caae258c5b3f397fb3f87
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87207957"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189734"
 ---
 # <a name="compiler-error-c2441"></a>Ошибка компилятора C2441
 
 > "*переменная*": символ, объявленный с __declspec (Process), должен быть константой в режиме/clr: pure
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Параметры компилятора **/clr: pure** и **/clr: Сейф** являются устаревшими в Visual Studio 2015 и не поддерживаются в Visual Studio 2017.
 

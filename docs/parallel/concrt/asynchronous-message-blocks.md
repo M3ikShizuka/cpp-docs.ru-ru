@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: асинхронные блоки сообщений'
 title: Асинхронные блоки сообщений
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,20 +7,20 @@ helpviewer_keywords:
 - asynchronous message blocks
 - greedy join [Concurrency Runtime]
 ms.assetid: 79c456c0-1692-480c-bb67-98f2434c1252
-ms.openlocfilehash: 6697bdd296a3c71f03bc22986efa47dd586d5d9e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7447d30932693eebe22d0a6f7f0aad0fba2abf16
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217913"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189149"
 ---
 # <a name="asynchronous-message-blocks"></a>Асинхронные блоки сообщений
 
 Библиотека агентов предоставляет несколько типов блоков сообщений, которые позволяют передавать сообщения между компонентами приложения в безопасном для потоков режиме. Эти типы блоков сообщений часто используются с различными поддействиями передачи сообщений, такими как [Concurrency:: send](reference/concurrency-namespace-functions.md#send), [Concurrency:: asend](reference/concurrency-namespace-functions.md#asend), [Concurrency:: receive](reference/concurrency-namespace-functions.md#receive)и [Concurrency:: try_receive](reference/concurrency-namespace-functions.md#try_receive). Дополнительные сведения о подпрограммых передачи сообщений, определенных библиотекой агентов, см. в разделе [функции передачи сообщений](../../parallel/concrt/message-passing-functions.md).
 
-## <a name="sections"></a><a name="top"></a>Священ
+## <a name="sections"></a><a name="top"></a> Священ
 
-Этот раздел состоит из следующих подразделов.
+В этом разделе содержатся следующие подразделы.
 
 - [Источники и целевые блоки](#sources_and_targets)
 
@@ -47,7 +48,7 @@ ms.locfileid: "87217913"
 
 - [Резервирование сообщений](#reservation)
 
-## <a name="sources-and-targets"></a><a name="sources_and_targets"></a>Источники и целевые объекты
+## <a name="sources-and-targets"></a><a name="sources_and_targets"></a> Источники и целевые объекты
 
 Источники и целевые объекты — это два важных участника передачи сообщений. *Источник* ссылается на конечную точку взаимодействия, которая отправляет сообщения. *Целевой объект* ссылается на конечную точку обмена данными, которая получает сообщения. Источник можно считать конечной точкой, из которой выполняется чтение, и целевым объектом в качестве конечной точки, в которую вы пишете. Приложения связывают источники и целевые объекты для формирования *сетей обмена сообщениями*.
 
@@ -55,7 +56,7 @@ ms.locfileid: "87217913"
 
 [[Top](#top)]
 
-## <a name="message-propagation"></a><a name="propagation"></a>Распространение сообщений
+## <a name="message-propagation"></a><a name="propagation"></a> Распространение сообщений
 
 *Распространение сообщений* — это акт отправки сообщения из одного компонента в другой. Когда блок сообщений предлагает сообщение, он может принять, отклонить или отложить это сообщение. Каждый тип блока сообщений хранит и передает сообщения различными способами. Например, `unbounded_buffer` класс хранит неограниченное количество сообщений, `overwrite_buffer` класс сохраняет одно сообщение за раз, а класс transformer сохраняет измененную версию каждого сообщения. Эти типы блоков сообщений подробно описаны далее в этом документе.
 
@@ -67,7 +68,7 @@ ms.locfileid: "87217913"
 
 [[Top](#top)]
 
-## <a name="overview-of-message-block-types"></a><a name="overview"></a>Общие сведения о типах блоков сообщений
+## <a name="overview-of-message-block-types"></a><a name="overview"></a> Общие сведения о типах блоков сообщений
 
 В следующей таблице кратко описаны роли важных типов блоков сообщений.
 
@@ -112,7 +113,7 @@ ms.locfileid: "87217913"
 |`unbounded_buffer`|Оба|Заказано|Unbounded|Unbounded|
 |`overwrite_buffer`|Оба|Заказано|Unbounded|Unbounded|
 |`single_assignment`|Оба|Заказано|Unbounded|Unbounded|
-|`call`|Назначение|Заказано|Unbounded|Неприменимо|
+|`call`|Target|Заказано|Unbounded|Неприменимо|
 |`transformer`|Оба|Заказано|Unbounded|1|
 |`choice`|Оба|Заказано|10|1|
 |`join`|Оба|Заказано|Unbounded|1|
@@ -123,7 +124,7 @@ ms.locfileid: "87217913"
 
 [[Top](#top)]
 
-## <a name="unbounded_buffer-class"></a><a name="unbounded_buffer"></a>Класс unbounded_buffer
+## <a name="unbounded_buffer-class"></a><a name="unbounded_buffer"></a> Класс unbounded_buffer
 
 Класс [Concurrency:: unbounded_buffer](reference/unbounded-buffer-class.md) представляет структуру общего назначения для асинхронного обмена сообщениями. В этом классе хранится очередь сообщений типа «первым вошел — первым вышел» (FIFO), в которую могут записывать данные несколько источников и из которой могут читать данные несколько целевых объектов. Когда целевой объект получает сообщение от `unbounded_buffer` объекта, это сообщение удаляется из очереди сообщений. Таким образом, хотя `unbounded_buffer` у объекта может быть несколько целевых объектов, каждое сообщение получит только один целевой объект. Класс `unbounded_buffer` удобен, если нужно передать несколько сообщений другому компоненту и этот компонент должен принять каждое сообщение.
 
@@ -139,11 +140,11 @@ ms.locfileid: "87217913"
 334455
 ```
 
-Полный пример, демонстрирующий использование `unbounded_buffer` класса, см. в разделе [как реализовать различные шаблоны "производитель-получатель"](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md).
+Полный пример, демонстрирующий использование `unbounded_buffer` класса, см. [в разделе как реализовать различные шаблоны Producer-Consumer](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md).
 
 [[Top](#top)]
 
-## <a name="overwrite_buffer-class"></a><a name="overwrite_buffer"></a>Класс overwrite_buffer
+## <a name="overwrite_buffer-class"></a><a name="overwrite_buffer"></a> Класс overwrite_buffer
 
 Класс [Concurrency:: overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) напоминает `unbounded_buffer` класс, за исключением того, что `overwrite_buffer` объект хранит только одно сообщение. Кроме того, когда целевой объект получает сообщение от `overwrite_buffer` объекта, это сообщение не удаляется из буфера. Поэтому копию сообщения могут получить несколько целевых объектов.
 
@@ -161,11 +162,11 @@ ms.locfileid: "87217913"
 555555
 ```
 
-Полный пример, демонстрирующий использование `overwrite_buffer` класса, см. в разделе [как реализовать различные шаблоны "производитель-получатель"](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md).
+Полный пример, демонстрирующий использование `overwrite_buffer` класса, см. [в разделе как реализовать различные шаблоны Producer-Consumer](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md).
 
 [[Top](#top)]
 
-## <a name="single_assignment-class"></a><a name="single_assignment"></a>Класс single_assignment
+## <a name="single_assignment-class"></a><a name="single_assignment"></a> Класс single_assignment
 
 Класс [Concurrency:: single_assignment](../../parallel/concrt/reference/single-assignment-class.md) напоминает `overwrite_buffer` класс, за исключением того, что `single_assignment` объект может быть записан только один раз. Как и в случае с классом `overwrite_buffer`, когда целевой объект получает сообщение от объекта `single_assignment`, это сообщение не удаляется. Поэтому копию сообщения могут получить несколько целевых объектов. `single_assignment`Класс полезен, если нужно транслировать одно сообщение нескольким компонентам.
 
@@ -185,7 +186,7 @@ ms.locfileid: "87217913"
 
 [[Top](#top)]
 
-## <a name="call-class"></a><a name="call"></a>Класс Call
+## <a name="call-class"></a><a name="call"></a> Класс Call
 
 Класс [Concurrency:: Call](../../parallel/concrt/reference/call-class.md) выступает в качестве получателя сообщений, который выполняет рабочую функцию при получении данных. Эта Рабочая функция может быть лямбда-выражением, объектом функции или указателем на функцию. `call`Объект работает иначе, чем обычный вызов функции, так как он действует параллельно с другими компонентами, которые отправляют в него сообщения. Если `call` объект выполняет работу при получении сообщения, он добавляет это сообщение в очередь. Каждый `call` объект обрабатывает сообщения в очереди в том порядке, в котором они получены.
 
@@ -205,7 +206,7 @@ ms.locfileid: "87217913"
 
 [[Top](#top)]
 
-## <a name="transformer-class"></a><a name="transformer"></a>Класс transformer
+## <a name="transformer-class"></a><a name="transformer"></a> Класс transformer
 
 Класс [Concurrency:: transformer](../../parallel/concrt/reference/transformer-class.md) выступает в качестве получателя сообщения и отправителя сообщения. `transformer`Класс напоминает `call` класс, так как он выполняет определяемую пользователем рабочую функцию при получении данных. Однако `transformer` класс также отправляет результат рабочей функции объектам получателя. Как и `call` объект, `transformer` объект работает параллельно с другими компонентами, которые отправляют в него сообщения. Если `transformer` объект выполняет работу при получении сообщения, он добавляет это сообщение в очередь. Каждый `transformer` объект обрабатывает сообщения в очереди в том порядке, в котором они получены.
 
@@ -229,7 +230,7 @@ ms.locfileid: "87217913"
 
 [[Top](#top)]
 
-## <a name="choice-class"></a><a name="choice"></a>Класс choice
+## <a name="choice-class"></a><a name="choice"></a> Класс choice
 
 Класс [Concurrency:: Choice](../../parallel/concrt/reference/choice-class.md) выбирает первое доступное сообщение из набора источников. `choice`Класс представляет механизм потока управления вместо механизма потока данных (в разделе [Библиотека асинхронных агентов](../../parallel/concrt/asynchronous-agents-library.md) описываются различия между потоком данных и потоком управления).
 
@@ -259,7 +260,7 @@ fib35 received its value first. Result = 9227465
 
 [[Top](#top)]
 
-## <a name="join-and-multitype_join-classes"></a><a name="join"></a>Классы присоединений и multitype_join
+## <a name="join-and-multitype_join-classes"></a><a name="join"></a> Классы присоединений и multitype_join
 
 Классы [Concurrency:: Join](../../parallel/concrt/reference/join-class.md) и [concurrency:: multitype_join](../../parallel/concrt/reference/multitype-join-class.md) позволяют ожидать, пока каждый член набора источников получит сообщение. `join`Класс работает с объектами-источниками, имеющими общий тип сообщений. `multitype_join`Класс работает с объектами-источниками, которые могут иметь различные типы сообщений.
 
@@ -291,7 +292,7 @@ fib35 = 9227465fib37 = 24157817half_of_fib42 = 1.33957e+008
 
 [[Top](#top)]
 
-## <a name="timer-class"></a><a name="timer"></a>Класс Timer
+## <a name="timer-class"></a><a name="timer"></a> Класс Timer
 
 Класс Concurrency::[Timer](../../parallel/concrt/reference/timer-class.md) выступает в качестве источника сообщения. `timer`Объект отправляет сообщение целевому объекту по истечении указанного периода времени. `timer`Класс полезен в тех случаях, когда необходимо отложить отправку сообщения или необходимо отправить сообщение с постоянным интервалом.
 
@@ -317,7 +318,7 @@ Computing fib(42)..................................................result is 267
 
 [[Top](#top)]
 
-## <a name="message-filtering"></a><a name="filtering"></a>Фильтрация сообщений
+## <a name="message-filtering"></a><a name="filtering"></a> Фильтрация сообщений
 
 При создании объекта блока сообщений можно указать *функцию фильтра* , которая определяет, будет ли блок сообщений принимать или отклонять сообщение. Функция фильтра — это удобный способ гарантировать, что блок сообщений получает только определенные значения.
 
@@ -340,11 +341,11 @@ bool (T const &)
 
 Чтобы исключить ненужное копирование данных, используйте вторую форму при наличии статистического типа, распространяемого по значению.
 
-Фильтрация сообщений поддерживает модель программирования *DataFlow* , в которой компоненты выполняют вычисления при получении данных. Примеры использования функций фильтров для управления потоком данных в сети передачи сообщений см. [в разделе Практическое руководство. Использование фильтра блоков сообщений](../../parallel/concrt/how-to-use-a-message-block-filter.md), [Пошаговое руководство. Создание агента потока](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)данных и [Пошаговое руководство. Создание сети обработки изображений](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
+Фильтрация сообщений поддерживает модель программирования *DataFlow* , в которой компоненты выполняют вычисления при получении данных. Примеры использования функций фильтров для управления потоком данных в сети передачи сообщений см. [в разделе Практическое руководство. Использование фильтра блоков сообщений](../../parallel/concrt/how-to-use-a-message-block-filter.md), [Пошаговое руководство. Создание агента потока](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)данных и [Пошаговое руководство. Создание Image-Processing сети](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md).
 
 [[Top](#top)]
 
-## <a name="message-reservation"></a><a name="reservation"></a>Резервирование сообщений
+## <a name="message-reservation"></a><a name="reservation"></a> Резервирование сообщений
 
 *Резервирование сообщений* позволяет блоку сообщений резервировать сообщение для последующего использования. Как правило, резервирование сообщений не используется напрямую. Тем не менее, сведения о резервировании сообщений помогут лучше понять поведение некоторых предопределенных типов блоков сообщений.
 

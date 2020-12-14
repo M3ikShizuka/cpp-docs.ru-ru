@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: класс transformer'
 title: Класс transformer
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ f1_keywords:
 helpviewer_keywords:
 - transformer class
 ms.assetid: eea71925-7043-4a92-bfd4-dbc0ece5d081
-ms.openlocfilehash: adc83ab2d8268460b3a35be44f5733c8b6fa1c43
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 34d937d1be1c3907ea75d0345bb52bcf359d4f34
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217900"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188135"
 ---
 # <a name="transformer-class"></a>Класс transformer
 
@@ -69,7 +70,7 @@ class transformer : public propagator_block<single_link_registry<ITarget<_Output
 |[send_message](#send_message)|Синхронно передает сообщение из `ISource` блока в этот `transformer` блок обмена сообщениями. Он вызывается `send` методом при вызове из исходного блока.|
 |[supports_anonymous_source](#supports_anonymous_source)|Переопределяет метод `supports_anonymous_source`, чтобы указать, что данный блок может принимать сообщения, предоставляемые ему несвязанным источником. (Переопределяет метод [ITarget:: supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [асинхронные блоки сообщений](../../../parallel/concrt/asynchronous-message-blocks.md).
 
@@ -91,7 +92,7 @@ class transformer : public propagator_block<single_link_registry<ITarget<_Output
 
 **Пространство имен:** параллелизм
 
-## <a name="accept_message"></a><a name="accept_message"></a>accept_message
+## <a name="accept_message"></a><a name="accept_message"></a> accept_message
 
 Принимает сообщение, которое было предложено этим `transformer` блоком обмена сообщениями, передавая владение вызывающему объекту.
 
@@ -108,7 +109,7 @@ virtual message<_Output>* accept_message(runtime_object_identity _MsgId);
 
 Указатель на `message` объект, владельцем которого стал вызывающий объект.
 
-## <a name="consume_message"></a><a name="consume_message"></a>consume_message
+## <a name="consume_message"></a><a name="consume_message"></a> consume_message
 
 Использует сообщение, которое было ранее предложено `transformer` и зарезервировано целевым объектом, передавая владение вызывающему объекту.
 
@@ -125,11 +126,11 @@ virtual message<_Output>* consume_message(runtime_object_identity _MsgId);
 
 Указатель на `message` объект, владельцем которого стал вызывающий объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Аналогично `accept` , но всегда предшествует вызову `reserve` .
 
-## <a name="link_target_notification"></a><a name="link_target_notification"></a>link_target_notification
+## <a name="link_target_notification"></a><a name="link_target_notification"></a> link_target_notification
 
 Обратный вызов, уведомляющий о том, что новый целевой объект связан с этим `transformer` блоком обмена сообщениями.
 
@@ -137,7 +138,7 @@ virtual message<_Output>* consume_message(runtime_object_identity _MsgId);
 virtual void link_target_notification(_Inout_ ITarget<_Output> *);
 ```
 
-## <a name="propagate_message"></a><a name="propagate_message"></a>propagate_message
+## <a name="propagate_message"></a><a name="propagate_message"></a> propagate_message
 
 Асинхронно передает сообщение из `ISource` блока в этот `transformer` блок обмена сообщениями. Он вызывается `propagate` методом при вызове из исходного блока.
 
@@ -159,7 +160,7 @@ virtual message_status propagate_message(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-## <a name="propagate_to_any_targets"></a><a name="propagate_to_any_targets"></a>propagate_to_any_targets
+## <a name="propagate_to_any_targets"></a><a name="propagate_to_any_targets"></a> propagate_to_any_targets
 
 Выполняет функцию преобразователя для входящих сообщений.
 
@@ -167,7 +168,7 @@ virtual message_status propagate_message(
 virtual void propagate_to_any_targets(_Inout_opt_ message<_Output> *);
 ```
 
-## <a name="release_message"></a><a name="release_message"></a>release_message
+## <a name="release_message"></a><a name="release_message"></a> release_message
 
 Освобождает предыдущее резервирование сообщения.
 
@@ -180,7 +181,7 @@ virtual void release_message(runtime_object_identity _MsgId);
 *_MsgId*<br/>
 `runtime_object_identity` `message` Объект для освобожденного объекта.
 
-## <a name="reserve_message"></a><a name="reserve_message"></a>reserve_message
+## <a name="reserve_message"></a><a name="reserve_message"></a> reserve_message
 
 Резервирует сообщение, которое было ранее предложено этим `transformer` блоком обмена сообщениями.
 
@@ -197,11 +198,11 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 **`true`** значение, если сообщение было успешно зарезервировано, **`false`** в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 После `reserve` вызова метода, если он возвращает значение **`true`** , `consume` `release` метод или должен быть вызван, чтобы принять или освободить владение сообщением.
 
-## <a name="resume_propagation"></a><a name="resume_propagation"></a>resume_propagation
+## <a name="resume_propagation"></a><a name="resume_propagation"></a> resume_propagation
 
 Возобновляет распространение после освобождения резервирования.
 
@@ -209,7 +210,7 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 virtual void resume_propagation();
 ```
 
-## <a name="send_message"></a><a name="send_message"></a>send_message
+## <a name="send_message"></a><a name="send_message"></a> send_message
 
 Синхронно передает сообщение из `ISource` блока в этот `transformer` блок обмена сообщениями. Он вызывается `send` методом при вызове из исходного блока.
 
@@ -231,7 +232,7 @@ virtual message_status send_message(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-## <a name="supports_anonymous_source"></a><a name="supports_anonymous_source"></a>supports_anonymous_source
+## <a name="supports_anonymous_source"></a><a name="supports_anonymous_source"></a> supports_anonymous_source
 
 Переопределяет метод `supports_anonymous_source`, чтобы указать, что данный блок может принимать сообщения, предоставляемые ему несвязанным источником.
 
@@ -243,7 +244,7 @@ virtual bool supports_anonymous_source();
 
 **`true`** так как блок не откладывает предлагаемые сообщения.
 
-## <a name="transformer"></a><a name="ctor"></a>образователь
+## <a name="transformer"></a><a name="ctor"></a> образователь
 
 Создает блок обмена сообщениями `transformer` .
 
@@ -297,7 +298,7 @@ transformer(
 *_PScheduleGroup*<br/>
 Объект `ScheduleGroup` , в котором запланирована задача распространения для блока обмена сообщениями `transformer` . Используемый объект `Scheduler` подразумевается группой расписаний.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Среда выполнения использует планировщик по умолчанию, если вы не указали параметры `_PScheduler` или `_PScheduleGroup` .
 
@@ -305,7 +306,7 @@ transformer(
 
 Тип `filter_method` — это функтор с сигнатурой, `bool (_Input const &)` которая вызывается этим `transformer` блоком обмена сообщениями для определения того, следует ли принимать предложенное сообщение.
 
-## <a name="transformer"></a><a name="dtor"></a>~ трансформатор
+## <a name="transformer"></a><a name="dtor"></a> ~ трансформатор
 
 Уничтожает `transformer` блок обмена сообщениями.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: structured_task_group классе'
 title: Класс structured_task_group
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - structured_task_group class
 ms.assetid: 742afa8c-c7b6-482c-b0ba-04c809927b22
-ms.openlocfilehash: 44fd2a42f4c98a569e985449f0c55102a9cbc3a6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c553f0d0b9b5abeb6e6cbdb12d1d9da5d048a6d6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231680"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188460"
 ---
 # <a name="structured_task_group-class"></a>Класс structured_task_group
 
@@ -30,11 +31,11 @@ ms.locfileid: "87231680"
 class structured_task_group;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[structured_task_group](#ctor)|Перегружен. Создает новый объект `structured_task_group`.|
 |[Деструктор ~ structured_task_group](#dtor)|Уничтожает объект `structured_task_group` . Ожидается вызов `wait` `run_and_wait` метода или для объекта до выполнения деструктора, если только деструктор не выполняется в результате очистки стека из-за исключения.|
@@ -49,7 +50,7 @@ class structured_task_group;
 |[run_and_wait](#run_and_wait)|Перегружен. Планирует выполнение задачи в вызывающем контексте с помощью `structured_task_group` объекта для полной поддержки отмены. Если `task_handle` объект передается в качестве параметра в `run_and_wait` , вызывающий объект отвечает за управление временем существования `task_handle` объекта. Затем функция ожидает `structured_task_group` завершения или отмены любой работы над объектом.|
 |[ожидания](#wait)|Ожидает `structured_task_group` завершения работы или отмены.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Существует ряд строгих ограничений на использование `structured_task_group` объекта для повышения производительности.
 
@@ -73,7 +74,7 @@ class structured_task_group;
 
 **Пространство имен:** параллелизм
 
-## <a name="cancel"></a><a name="cancel"></a>Отмена
+## <a name="cancel"></a><a name="cancel"></a> Отмена
 
 Предпринимает попытку отменить поддерево работы с корнем в этой группе задач. Если возможно, все задачи, запланированные в группе задач, будут отменены транзитивно.
 
@@ -81,11 +82,11 @@ class structured_task_group;
 void cancel();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [Отмена](../../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).
 
-## <a name="is_canceling"></a><a name="is_canceling"></a>is_canceling
+## <a name="is_canceling"></a><a name="is_canceling"></a> is_canceling
 
 Информирует вызывающий объект о том, находится ли группа задач в данный момент в процессе отмены. Это не обязательно означает, что `cancel` метод был вызван для `structured_task_group` объекта (хотя, безусловно, этот метод должен быть возвращен **`true`** ). Это может быть случай, когда `structured_task_group` объект выполняется в строке, а группа задач в рабочем дереве была отменена. В таких случаях, где среда выполнения может заранее определить, что отмена будет передаваться через этот `structured_task_group` объект, **`true`** также будет возвращена.
 
@@ -97,11 +98,11 @@ bool is_canceling();
 
 Указывает, `structured_task_group` находится ли объект в процессе отмены (или гарантированно будет вскоре).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [Отмена](../../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md#cancellation).
 
-## <a name="run"></a><a name="run"></a>запуска
+## <a name="run"></a><a name="run"></a> запуска
 
 Планирует задачу для `structured_task_group` объекта. Вызывающий объект управляет временем существования `task_handle` объекта, переданного в `_Task_handle` параметре. Версия, которая принимает параметр `_Placement`, заставляет задачу стремиться к выполнению в расположении, указанном этим параметром.
 
@@ -127,7 +128,7 @@ void run(
 *_Placement*<br/>
 Ссылка на расположение, в котором должна выполняться задача, представленная параметром `_Task_handle`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Среда выполнения создает копию рабочей функции, которая передается в этот метод. Любые изменения состояния, происходящие в объекте функции, который передается в этот метод, не будут отображаться в копии этого объекта функции.
 
@@ -135,7 +136,7 @@ void run(
 
 Вызывает исключение [invalid_multiple_scheduling](invalid-multiple-scheduling-class.md) , если обработчик задач, заданный `_Task_handle` параметром, уже был запланирован на объект группы задач с помощью `run` метода, и не существовал промежуточный вызов `wait` `run_and_wait` метода или в этой группе задач.
 
-## <a name="run_and_wait"></a><a name="run_and_wait"></a>run_and_wait
+## <a name="run_and_wait"></a><a name="run_and_wait"></a> run_and_wait
 
 Планирует выполнение задачи в вызывающем контексте с помощью `structured_task_group` объекта для полной поддержки отмены. Если `task_handle` объект передается в качестве параметра в `run_and_wait` , вызывающий объект отвечает за управление временем существования `task_handle` объекта. Затем функция ожидает `structured_task_group` завершения или отмены любой работы над объектом.
 
@@ -162,7 +163,7 @@ task_group_status run_and_wait(const _Function& _Func);
 
 Значение, указывающее, было ли выполнено ожидание или отменена группа задач из-за явной операции отмены или исключения, вызываемого одной из задач. Дополнительные сведения см. в разделе [task_group_status](concurrency-namespace-enums.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Обратите внимание, что одна или несколько задач, запланированных на этот `structured_task_group` объект, могут выполняться встроенным в контекст вызывающего.
 
@@ -172,7 +173,7 @@ task_group_status run_and_wait(const _Function& _Func);
 
 В неисключительном пути выполнения у вас есть требование вызывать этот метод или `wait` метод перед деструктором `structured_task_group` выполнения.
 
-## <a name="structured_task_group"></a><a name="ctor"></a>structured_task_group
+## <a name="structured_task_group"></a><a name="ctor"></a> structured_task_group
 
 Создает новый объект `structured_task_group`.
 
@@ -187,11 +188,11 @@ structured_task_group(cancellation_token _CancellationToken);
 *_CancellationToken*<br/>
 Токен отмены, связываемый с этой структурной группой задач. Структурированная группа задач будет отменена при отмене маркера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конструктор, который принимает токен отмены, создает `structured_task_group`, которая будет отменена, когда будет отменен источник, связанный с этим токеном. Предоставление явной лексемы отмены также изолирует эту структурированную группу задач от участия в неявной отмене из родительской группы с другим маркером или без токена.
 
-## <a name="structured_task_group"></a><a name="dtor"></a>~ structured_task_group
+## <a name="structured_task_group"></a><a name="dtor"></a> ~ structured_task_group
 
 Уничтожает объект `structured_task_group` . Ожидается вызов `wait` `run_and_wait` метода или для объекта до выполнения деструктора, если только деструктор не выполняется в результате очистки стека из-за исключения.
 
@@ -199,11 +200,11 @@ structured_task_group(cancellation_token _CancellationToken);
 ~structured_task_group();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если деструктор выполняется как результат обычного выполнения (например, если не используется Очистка стека из-за исключения) и ни один из методов и `wait` не `run_and_wait` вызван, деструктор может вызвать исключение [missing_wait](missing-wait-class.md) .
 
-## <a name="wait"></a><a name="wait"></a>ожидания
+## <a name="wait"></a><a name="wait"></a> ожидания
 
 Ожидает `structured_task_group` завершения работы или отмены.
 
@@ -215,7 +216,7 @@ task_group_status wait();
 
 Значение, указывающее, было ли выполнено ожидание или отменена группа задач из-за явной операции отмены или исключения, вызываемого одной из задач. Дополнительные сведения см. в разделе [task_group_status](concurrency-namespace-enums.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Обратите внимание, что одна или несколько задач, запланированных на этот `structured_task_group` объект, могут выполняться встроенным в контекст вызывающего.
 

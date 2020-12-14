@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о программе:/J (тип char по умолчанию не подписан)
 title: /J (тип знака по умолчанию не подписан)
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - J compiler option [C++]
 - default char type is unsigned
 ms.assetid: 50973667-6638-491e-9c41-bff73acae19f
-ms.openlocfilehash: d95fed3d9af81d89ac03a52a1e6433786118430e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0e6f09a05925fd0248f1e777d578570cd7b44946
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87223841"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191229"
 ---
 # <a name="j-default-char-type-is-unsigned"></a>/J (тип знака по умолчанию не подписан)
 
@@ -43,9 +44,9 @@ ms.locfileid: "87223841"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Установка данного параметра компилятора в среде разработки Visual Studio
 
-1. В области **Обозреватель решений**откройте контекстное меню для проекта и выберите пункт **Свойства**.
+1. В области **Обозреватель решений** откройте контекстное меню для проекта и выберите пункт **Свойства**.
 
-1. В диалоговом окне **страницы свойств** проекта в области слева в разделе **Свойства конфигурации**разверните узел **C/C++** и выберите пункт **Командная строка**.
+1. В диалоговом окне **страницы свойств** проекта в области слева в разделе **Свойства конфигурации** разверните узел **C/C++** и выберите пункт **Командная строка**.
 
 1. В области **Дополнительные параметры** укажите параметр компилятора **/j** .
 
@@ -53,8 +54,8 @@ ms.locfileid: "87223841"
 
 - См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DefaultCharIsUnsigned%2A>.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)<br/>
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)<br/>
 [Настройка компилятора C++ и свойства сборки в Visual Studio](../working-with-project-properties.md)

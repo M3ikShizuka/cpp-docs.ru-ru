@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: target_block классе'
 title: Класс target_block
 ms.date: 11/04/2016
 f1_keywords:
@@ -25,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - target_block class
 ms.assetid: 3ce181b4-b94a-4894-bf7b-64fc09821f9f
-ms.openlocfilehash: 4009133161133a99aeb0ee040f0c82fdbabecaa0
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 0860ff7b185eef997d7c76f61d67ad10056ca9cc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142643"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188421"
 ---
 # <a name="target_block-class"></a>Класс target_block
 
@@ -51,43 +52,43 @@ class target_block : public ITarget<typename _SourceLinkRegistry::type::source_t
 *_MessageProcessorType*<br/>
 Тип процессора для обработки сообщений.
 
-## <a name="members"></a>Члены
+## <a name="members"></a>Элементы
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
-|`source_iterator`|Тип итератора для `source_link_manager` данного `target_block` объекта.|
+|`source_iterator`|Тип итератора для `source_link_manager` для данного `target_block` объекта.|
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[target_block](#ctor)|Формирует объект `target_block`.|
-|[Деструктор ~ target_block](#dtor)|Уничтожает объект `target_block`.|
+|[Деструктор ~ target_block](#dtor)|Уничтожает `target_block` объект.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[распространения](#propagate)|Асинхронно передает сообщение из исходного блока в этот целевой блок.|
 |[send](#send)|Синхронно передает сообщение из исходного блока в этот целевой блок.|
 
 ### <a name="protected-methods"></a>Защищенные методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[async_send](#async_send)|Асинхронно отправляет сообщение для обработки.|
 |[decline_incoming_messages](#decline_incoming_messages)|Указывает блоку, что следует отклонять новые сообщения.|
 |[enable_batched_processing](#enable_batched_processing)|Активирует пакетную обработку для этого блока.|
-|[initialize_target](#initialize_target)|Инициализирует базовый объект. В частности, необходимо инициализировать объект `message_processor`.|
-|[link_source](#link_source)|Связывает указанный блок источника с данным объектом `target_block`.|
+|[initialize_target](#initialize_target)|Инициализирует базовый объект. В частности, необходимо `message_processor` инициализировать объект.|
+|[link_source](#link_source)|Связывает указанный блок источника с этим `target_block` объектом.|
 |[process_input_messages](#process_input_messages)|Обрабатывает сообщения, полученные как входные данные.|
 |[process_message](#process_message)|При переопределении в производном классе обрабатывает сообщение, которое ранее было принято данным объектом `target_block`.|
-|[propagate_message](#propagate_message)|При переопределении в производном классе этот метод асинхронно передает сообщение из блока `ISource` в этот объект `target_block`. Вызывается методом `propagate` при вызове из исходного блока.|
+|[propagate_message](#propagate_message)|При переопределении в производном классе этот метод асинхронно передает сообщение из `ISource` блока в этот `target_block` объект. Он вызывается `propagate` методом при вызове из исходного блока.|
 |[register_filter](#register_filter)|Регистрирует метод фильтра, который будет вызываться для каждого полученного сообщения.|
 |[remove_sources](#remove_sources)|Отменяет связь со всеми источниками после ожидания завершения ожидающих асинхронных операций отправки.|
-|[send_message](#send_message)|При переопределении в производном классе этот метод синхронно передает сообщение из блока `ISource` в этот объект `target_block`. Вызывается методом `send` при вызове из исходного блока.|
+|[send_message](#send_message)|При переопределении в производном классе этот метод синхронно передает сообщение из `ISource` блока в этот `target_block` объект. Он вызывается `send` методом при вызове из исходного блока.|
 |[sync_send](#sync_send)|Синхронная Отправка сообщения для обработки.|
 |[unlink_source](#unlink_source)|Отменяет связь указанного исходного блока с этим `target_block` объектом.|
 |[unlink_sources](#unlink_sources)|Отменяет связь со всеми исходными блоками этого `target_block` объекта. (Переопределяет метод [ITarget:: unlink_sources](itarget-class.md#unlink_sources).)|
@@ -103,9 +104,9 @@ class target_block : public ITarget<typename _SourceLinkRegistry::type::source_t
 
 **Заголовок:** agents.h
 
-**Пространство имен:** concurrency
+**Пространство имен:** параллелизм
 
-## <a name="async_send"></a>async_send
+## <a name="async_send"></a><a name="async_send"></a> async_send
 
 Асинхронно отправляет сообщение для обработки.
 
@@ -118,7 +119,7 @@ void async_send(_Inout_opt_ message<_Source_type>* _PMessage);
 *_PMessage*<br/>
 Указатель на отправляемое сообщение.
 
-## <a name="decline_incoming_messages"></a>decline_incoming_messages
+## <a name="decline_incoming_messages"></a><a name="decline_incoming_messages"></a> decline_incoming_messages
 
 Указывает блоку, что следует отклонять новые сообщения.
 
@@ -126,11 +127,11 @@ void async_send(_Inout_opt_ message<_Source_type>* _PMessage);
 void decline_incoming_messages();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывается деструктором, чтобы гарантировать отклонение новых сообщений в процессе уничтожения.
 
-## <a name="enable_batched_processing"></a>enable_batched_processing
+## <a name="enable_batched_processing"></a><a name="enable_batched_processing"></a> enable_batched_processing
 
 Активирует пакетную обработку для этого блока.
 
@@ -138,9 +139,9 @@ void decline_incoming_messages();
 void enable_batched_processing();
 ```
 
-## <a name="initialize_target"></a>initialize_target
+## <a name="initialize_target"></a><a name="initialize_target"></a> initialize_target
 
-Инициализирует базовый объект. В частности, необходимо инициализировать объект `message_processor`.
+Инициализирует базовый объект. В частности, необходимо `message_processor` инициализировать объект.
 
 ```cpp
 void initialize_target(
@@ -156,9 +157,9 @@ void initialize_target(
 *_PScheduleGroup*<br/>
 Группа расписаний, которая будет использоваться для планирования задач.
 
-## <a name="link_source"></a>link_source
+## <a name="link_source"></a><a name="link_source"></a> link_source
 
-Связывает указанный блок источника с данным объектом `target_block`.
+Связывает указанный блок источника с этим `target_block` объектом.
 
 ```cpp
 virtual void link_source(_Inout_ ISource<_Source_type>* _PSource);
@@ -167,13 +168,13 @@ virtual void link_source(_Inout_ ISource<_Source_type>* _PSource);
 ### <a name="parameters"></a>Параметры
 
 *_PSource*<br/>
-Указатель на блок `ISource`, который должен быть связан.
+Указатель на `ISource` блок, который должен быть связан.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Эта функция не должна вызываться напрямую для объекта `target_block`. Блоки должны быть соединены друг с другом с помощью метода `link_target` в блоках `ISource`, которые вызывают метод `link_source` для соответствующего целевого объекта.
+Эта функция не должна вызываться напрямую для `target_block` объекта. Блоки должны быть соединены вместе с помощью `link_target` метода для `ISource` блоков, которые будут вызывать `link_source` метод для соответствующего целевого объекта.
 
-## <a name="process_input_messages"></a>process_input_messages
+## <a name="process_input_messages"></a><a name="process_input_messages"></a> process_input_messages
 
 Обрабатывает сообщения, полученные как входные данные.
 
@@ -186,7 +187,7 @@ virtual void process_input_messages(_Inout_ message<_Source_type>* _PMessage);
 *_PMessage*<br/>
 Указатель на сообщение, которое должно быть обработано.
 
-## <a name="process_message"></a>process_message
+## <a name="process_message"></a><a name="process_message"></a> process_message
 
 При переопределении в производном классе обрабатывает сообщение, которое ранее было принято данным объектом `target_block`.
 
@@ -194,7 +195,7 @@ virtual void process_input_messages(_Inout_ message<_Source_type>* _PMessage);
 virtual void process_message(message<_Source_type> *);
 ```
 
-## <a name="propagate"></a>распространения
+## <a name="propagate"></a><a name="propagate"></a> распространения
 
 Асинхронно передает сообщение из исходного блока в этот целевой блок.
 
@@ -216,13 +217,13 @@ virtual message_status propagate(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Метод вызывает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если параметр `_PMessage` или `_PSource` имеет значение `NULL`.
+Метод вызывает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если `_PMessage` параметр или имеет значение `_PSource` `NULL` .
 
-## <a name="propagate_message"></a>propagate_message
+## <a name="propagate_message"></a><a name="propagate_message"></a> propagate_message
 
-При переопределении в производном классе этот метод асинхронно передает сообщение из блока `ISource` в этот объект `target_block`. Вызывается методом `propagate` при вызове из исходного блока.
+При переопределении в производном классе этот метод асинхронно передает сообщение из `ISource` блока в этот `target_block` объект. Он вызывается `propagate` методом при вызове из исходного блока.
 
 ```cpp
 virtual message_status propagate_message(
@@ -242,7 +243,7 @@ virtual message_status propagate_message(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-## <a name="register_filter"></a>register_filter
+## <a name="register_filter"></a><a name="register_filter"></a> register_filter
 
 Регистрирует метод фильтра, который будет вызываться для каждого полученного сообщения.
 
@@ -255,7 +256,7 @@ void register_filter(filter_method const& _Filter);
 *_Filter*<br/>
 Метод Filter.
 
-## <a name="remove_sources"></a>remove_sources
+## <a name="remove_sources"></a><a name="remove_sources"></a> remove_sources
 
 Отменяет связь со всеми источниками после ожидания завершения ожидающих асинхронных операций отправки.
 
@@ -263,11 +264,11 @@ void register_filter(filter_method const& _Filter);
 void remove_sources();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Все целевые блоки должны вызывать эту подпрограммы для удаления источников в их деструкторе.
 
-## <a name="send"></a>Отправить
+## <a name="send"></a><a name="send"></a> Отправить
 
 Синхронно передает сообщение из исходного блока в этот целевой блок.
 
@@ -289,17 +290,17 @@ virtual message_status send(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Метод вызывает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если параметр `_PMessage` или `_PSource` имеет значение `NULL`.
+Метод вызывает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если `_PMessage` параметр или имеет значение `_PSource` `NULL` .
 
-Использование метода `send` за пределами инициации сообщений и распространения сообщений в сети опасно и может привести к взаимоблокировке.
+Использование `send` метода за пределами инициации сообщений и распространения сообщений в сети опасно и может привести к взаимоблокировке.
 
-Когда `send` возвращает значение, сообщение уже было принято и передано в целевой блок или было отклонено целевым объектом.
+Когда `send` метод возвращает значение, сообщение уже было принято и передано в целевой блок или было отклонено целевым объектом.
 
-## <a name="send_message"></a>send_message
+## <a name="send_message"></a><a name="send_message"></a> send_message
 
-При переопределении в производном классе этот метод синхронно передает сообщение из блока `ISource` в этот объект `target_block`. Вызывается методом `send` при вызове из исходного блока.
+При переопределении в производном классе этот метод синхронно передает сообщение из `ISource` блока в этот `target_block` объект. Он вызывается `send` методом при вызове из исходного блока.
 
 ```cpp
 virtual message_status send_message(
@@ -311,11 +312,11 @@ virtual message_status send_message(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-По умолчанию этот блок возвращает `declined`, если только они не переопределены производным классом.
+По умолчанию этот блок возвращается, `declined` если он не переопределен производным классом.
 
-## <a name="sync_send"></a>sync_send
+## <a name="sync_send"></a><a name="sync_send"></a> sync_send
 
 Синхронная Отправка сообщения для обработки.
 
@@ -328,7 +329,7 @@ void sync_send(_Inout_opt_ message<_Source_type>* _PMessage);
 *_PMessage*<br/>
 Указатель на отправляемое сообщение.
 
-## <a name="ctor"></a>target_block
+## <a name="target_block"></a><a name="ctor"></a> target_block
 
 Формирует объект `target_block`.
 
@@ -336,15 +337,15 @@ void sync_send(_Inout_opt_ message<_Source_type>* _PMessage);
 target_block();
 ```
 
-## <a name="dtor"></a>~ target_block
+## <a name="target_block"></a><a name="dtor"></a> ~ target_block
 
-Уничтожает объект `target_block`.
+Уничтожает `target_block` объект.
 
 ```cpp
 virtual ~target_block();
 ```
 
-## <a name="unlink_source"></a>unlink_source
+## <a name="unlink_source"></a><a name="unlink_source"></a> unlink_source
 
 Отменяет связь указанного исходного блока с этим `target_block` объектом.
 
@@ -355,9 +356,9 @@ virtual void unlink_source(_Inout_ ISource<_Source_type>* _PSource);
 ### <a name="parameters"></a>Параметры
 
 *_PSource*<br/>
-Указатель на блок `ISource`, связь с которым необходимо удалить.
+Указатель на `ISource` блок, связь с которым необходимо отменить.
 
-## <a name="unlink_sources"></a>unlink_sources
+## <a name="unlink_sources"></a><a name="unlink_sources"></a> unlink_sources
 
 Отменяет связь со всеми исходными блоками этого `target_block` объекта.
 
@@ -365,7 +366,7 @@ virtual void unlink_source(_Inout_ ISource<_Source_type>* _PSource);
 virtual void unlink_sources();
 ```
 
-## <a name="wait_for_async_sends"></a>wait_for_async_sends
+## <a name="wait_for_async_sends"></a><a name="wait_for_async_sends"></a> wait_for_async_sends
 
 Ожидает завершения всех асинхронных распространителей.
 
@@ -373,11 +374,11 @@ virtual void unlink_sources();
 void wait_for_async_sends();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод используется деструкторами блоков сообщений для обеспечения времени завершения всех асинхронных операций перед уничтожением блока.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен concurrency](concurrency-namespace.md)<br/>
+[Пространство имен Concurrency](concurrency-namespace.md)<br/>
 [Класс ITarget](itarget-class.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: класс Task (среда выполнения с параллелизмом)'
 title: Класс task (среда выполнения с параллелизмом)
 ms.date: 07/30/2019
 f1_keywords:
@@ -14,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - task class
 ms.assetid: cdc3a8c0-5cbe-45a0-b5d5-e9f81d94df1a
-ms.openlocfilehash: 6a063f0bba9482824817e4efe21ae5b7bf3c0995
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b16c7e8f7ae97b35731916d6834367c228ce867c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219538"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188382"
 ---
 # <a name="task-class-concurrency-runtime"></a>Класс task (среда выполнения с параллелизмом)
 
@@ -50,7 +51,7 @@ class task;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[задачи](#ctor)|Перегружен. Формирует объект `task`.|
 
@@ -73,7 +74,7 @@ class task;
 |[Оператор =](#operator_eq)|Перегружен. Заменяет содержимое одного объекта `task` другим.|
 |[Оператор = =](#operator_eq_eq)|Перегружен. Определяет, представляют ли два объекта `task` одну и ту же внутреннюю задачу.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Дополнительные сведения см. в разделе [параллелизм задач](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
@@ -87,7 +88,7 @@ class task;
 
 **Пространство имен:** параллелизм
 
-## <a name="get"></a><a name="get"></a>Получить
+## <a name="get"></a><a name="get"></a> Получить
 
 Возвращает результат, созданный этой задачей. Если задача не находится в конечном состоянии, вызов `get` будет ожидать завершения задачи. Этот метод не возвращает значение при вызове в задаче с параметром `result_type` **`void`** .
 
@@ -101,14 +102,14 @@ void get() const;
 
 Результат задачи.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если задача отменена, вызов выдаст `get` исключение [task_canceled](task-canceled-class.md) . Если задача встретила другое исключение или исключение было распространено на нее из предшествующей задачи, вызов `get` создаст это исключение.
 
 > [!IMPORTANT]
 > В приложении универсальная платформа Windows (UWP) не вызывайте [Concurrency:: Task:: wait](#wait) или `get` ( `wait` Calls `get` ) в коде, который выполняется в потоке пользовательского интерфейса. В противном случае среда выполнения создает [Concurrency:: invalid_operation](invalid-operation-class.md) , так как эти методы блокируют текущий поток и могут привести к тому, что приложение перестанет отвечать на запросы. Однако можно вызвать `get` метод, чтобы получить результат предшествующей задачи в продолжении на основе задачи, так как результат сразу же доступен.
 
-## <a name="is_apartment_aware"></a><a name="is_apartment_aware"></a>is_apartment_aware
+## <a name="is_apartment_aware"></a><a name="is_apartment_aware"></a> is_apartment_aware
 
 Определяет, распаковывает ли задача интерфейс среды выполнения Windows `IAsyncInfo` или происходит от такой задачи.
 
@@ -120,7 +121,7 @@ bool is_apartment_aware() const;
 
 **`true`** значение, если задача разворачивает `IAsyncInfo` интерфейс или по убыванию от такой задачи; **`false`** в противном случае —.
 
-## <a name="taskis_done-method-concurrency-runtime"></a><a name="is_done"></a>Метод Task:: is_done (среда выполнения с параллелизмом)
+## <a name="taskis_done-method-concurrency-runtime"></a><a name="is_done"></a> Метод Task:: is_done (среда выполнения с параллелизмом)
 
 Определяет, завершена ли задача.
 
@@ -132,11 +133,11 @@ bool is_done() const;
 
 Значение true, если задача завершена; в противном случае — значение false.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция возвращает значение true, если задача завершена или отменена (с исключением пользователя или без него).
 
-## <a name="operator"></a><a name="operator_neq"></a>operator! =
+## <a name="operator"></a><a name="operator_neq"></a> operator! =
 
 Определяет, представляют ли два объекта `task` различные внутренние задачи.
 
@@ -155,7 +156,7 @@ bool operator!= (const task<void>& _Rhs) const;
 
 **`true`** значение, если объекты ссылаются на разные базовые задачи, и **`false`** в противном случае.
 
-## <a name="operator"></a><a name="operator_eq"></a>Оператор =
+## <a name="operator"></a><a name="operator_eq"></a> Оператор =
 
 Заменяет содержимое одного объекта `task` другим.
 
@@ -172,11 +173,11 @@ task& operator= (task&& _Other);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Поскольку `task` действует как интеллектуальный указатель, после назначения копии эти объекты `task` представляют ту же фактическую задачу, что и `_Other`.
 
-## <a name="operator"></a><a name="operator_eq_eq"></a>Оператор = =
+## <a name="operator"></a><a name="operator_eq_eq"></a> Оператор = =
 
 Определяет, представляют ли два объекта `task` одну и ту же внутреннюю задачу.
 
@@ -195,7 +196,7 @@ bool operator== (const task<void>& _Rhs) const;
 
 **`true`** значение, если объекты ссылаются на одну и ту же базовую задачу, и **`false`** в противном случае.
 
-## <a name="taskscheduler-method-concurrency-runtime"></a><a name="scheduler"></a>Метод Task:: Scheduler (среда выполнения с параллелизмом)
+## <a name="taskscheduler-method-concurrency-runtime"></a><a name="scheduler"></a> Метод Task:: Scheduler (среда выполнения с параллелизмом)
 
 Возвращает планировщик для этой задачи
 
@@ -243,7 +244,7 @@ task(
 *_Other*<br/>
 Исходный объект `task`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конструктор по умолчанию для `task` присутствует только для того, чтобы задачи могли использоваться внутри контейнеров. Собранную задачу по умолчанию невозможно использовать до тех пор, пока ей не будет присвоена допустимая задача. Такие методы `get` , как `wait` или, `then` вызовут исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) при вызове для задачи, созданной по умолчанию.
 
@@ -259,7 +260,7 @@ task(
 
 Дополнительные сведения см. в разделе [параллелизм задач](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
-## <a name="then"></a><a name="then"></a>этого
+## <a name="then"></a><a name="then"></a> этого
 
 Добавляет задачу продолжения к этой задаче.
 
@@ -317,13 +318,13 @@ __declspec(
 
 Вновь созданная задача продолжения. Тип результата возвращаемой задачи определяется значением, возвращаемым `_Func`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Перегрузки `then` , которые принимают лямбда-выражение или функтор, возвращающие интерфейс Windows:: Foundation:: иасинЦинфо, доступны только для Среда выполнения Windows приложений.
 
 Дополнительные сведения об использовании продолжений задач для создания асинхронной работы см. в разделе [параллелизм задач](../../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
-## <a name="wait"></a><a name="wait"></a>ожидания
+## <a name="wait"></a><a name="wait"></a> ожидания
 
 Ожидает, когда эта задача достигнет конечного состояния. У `wait` существует возможность выполнения задачи встроенным образом, если все зависимости задач удовлетворены, и она еще не взята для выполнения фоновым рабочим процессом.
 
@@ -335,7 +336,7 @@ task_status wait() const;
 
 Значение `task_status`, которое может быть `completed` или `canceled`. Если задача встретила исключение во время выполнения или исключение было распространено на нее из предшествующей задачи, `wait` вызывает это исключение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 > [!IMPORTANT]
 > В приложении универсальная платформа Windows (UWP) не вызывайте `wait` в коде, который выполняется в потоке пользовательского интерфейса. В противном случае среда выполнения создает [concurrency::invalid_operation](invalid-operation-class.md) так как этот метод блокирует текущий поток и может вызвать зависание приложения. Тем не менее можно вызвать метод [concurrency::task::get](#get) для получения результата из предшествующей задачи в потоке задач.

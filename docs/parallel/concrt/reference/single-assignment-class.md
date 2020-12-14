@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: single_assignment классе'
 title: Класс single_assignment
 ms.date: 11/04/2016
 f1_keywords:
@@ -19,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - single_assignment class
 ms.assetid: ccc34728-8de9-4e07-b83d-a36a58d9d2b9
-ms.openlocfilehash: 6b92508c81311774816e804eb36ac8fbfb2aa82b
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d01426843f2e9fe1106f7cb68c103c392cdf1ebd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219564"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188661"
 ---
 # <a name="single_assignment-class"></a>Класс single_assignment
 
@@ -46,7 +47,7 @@ class single_assignment : public propagator_block<multi_link_registry<ITarget<T>
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[single_assignment](#ctor)|Перегружен. Создает блок обмена сообщениями `single_assignment` .|
 |[Деструктор ~ single_assignment](#dtor)|Уничтожает `single_assignment` блок обмена сообщениями.|
@@ -72,7 +73,7 @@ class single_assignment : public propagator_block<multi_link_registry<ITarget<T>
 |[resume_propagation](#resume_propagation)|Возобновляет распространение после освобождения резервирования. (Переопределяет [source_block:: resume_propagation](source-block-class.md#resume_propagation).)|
 |[send_message](#send_message)|Синхронно передает сообщение из `ISource` блока в этот `single_assignment` блок обмена сообщениями. Он вызывается `send` методом при вызове из исходного блока.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `single_assignment`Блок обмена сообщениями распространяет копии своего сообщения на каждый целевой объект.
 
@@ -96,7 +97,7 @@ class single_assignment : public propagator_block<multi_link_registry<ITarget<T>
 
 **Пространство имен:** параллелизм
 
-## <a name="accept_message"></a><a name="accept_message"></a>accept_message
+## <a name="accept_message"></a><a name="accept_message"></a> accept_message
 
 Принимает сообщение, которое было предложено этим `single_assignment` блоком обмена сообщениями, и возвращает копию сообщения вызывающему объекту.
 
@@ -113,11 +114,11 @@ virtual message<T>* accept_message(runtime_object_identity _MsgId);
 
 Указатель на `message` объект, владельцем которого стал вызывающий объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `single_assignment`Блок обмена сообщениями возвращает копии сообщения в целевые объекты, а не передает владение текущим сообщением.
 
-## <a name="consume_message"></a><a name="consume_message"></a>consume_message
+## <a name="consume_message"></a><a name="consume_message"></a> consume_message
 
 Использует сообщение, которое было ранее предложено `single_assignment` и зарезервировано целевым объектом, возвращая копию сообщения вызывающему объекту.
 
@@ -134,11 +135,11 @@ virtual message<T>* consume_message(runtime_object_identity _MsgId);
 
 Указатель на `message` объект, владельцем которого стал вызывающий объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Аналогично `accept` , но всегда предшествует вызову `reserve` .
 
-## <a name="has_value"></a><a name="has_value"></a>has_value
+## <a name="has_value"></a><a name="has_value"></a> has_value
 
 Проверяет `single_assignment` , инициализирован ли этот блок обмена сообщениями со значением.
 
@@ -148,9 +149,9 @@ bool has_value() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-**`true`**, если блок получил значение; **`false`** в противном случае —.
+**`true`** , если блок получил значение; **`false`** в противном случае —.
 
-## <a name="link_target_notification"></a><a name="link_target_notification"></a>link_target_notification
+## <a name="link_target_notification"></a><a name="link_target_notification"></a> link_target_notification
 
 Обратный вызов, уведомляющий о том, что новый целевой объект связан с этим `single_assignment` блоком обмена сообщениями.
 
@@ -163,7 +164,7 @@ virtual void link_target_notification(_Inout_ ITarget<T>* _PTarget);
 *_PTarget*<br/>
 Указатель на вновь связанный целевой объект.
 
-## <a name="propagate_message"></a><a name="propagate_message"></a>propagate_message
+## <a name="propagate_message"></a><a name="propagate_message"></a> propagate_message
 
 Асинхронно передает сообщение из `ISource` блока в этот `single_assignment` блок обмена сообщениями. Он вызывается `propagate` методом при вызове из исходного блока.
 
@@ -185,7 +186,7 @@ virtual message_status propagate_message(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-## <a name="propagate_to_any_targets"></a><a name="propagate_to_any_targets"></a>propagate_to_any_targets
+## <a name="propagate_to_any_targets"></a><a name="propagate_to_any_targets"></a> propagate_to_any_targets
 
 Помещает объект `message` `_PMessage` в этот `single_assignment` блок обмена сообщениями и предлагает его всем связанным целевым объектам.
 
@@ -198,7 +199,7 @@ virtual void propagate_to_any_targets(_Inout_opt_ message<T>* _PMessage);
 *_PMessage*<br/>
 Указатель на объект `message` , владельцем которого является этот `single_assignment` блок обмена сообщениями.
 
-## <a name="release_message"></a><a name="release_message"></a>release_message
+## <a name="release_message"></a><a name="release_message"></a> release_message
 
 Освобождает предыдущее резервирование сообщения.
 
@@ -211,7 +212,7 @@ virtual void release_message(runtime_object_identity _MsgId);
 *_MsgId*<br/>
 `runtime_object_identity` `message` Объект для освобожденного объекта.
 
-## <a name="reserve_message"></a><a name="reserve_message"></a>reserve_message
+## <a name="reserve_message"></a><a name="reserve_message"></a> reserve_message
 
 Резервирует сообщение, которое было ранее предложено этим `single_assignment` блоком обмена сообщениями.
 
@@ -228,11 +229,11 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 **`true`** значение, если сообщение было успешно зарезервировано, **`false`** в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 После `reserve` вызова метода, если он возвращает значение **`true`** , `consume` `release` метод или должен быть вызван, чтобы принять или освободить владение сообщением.
 
-## <a name="resume_propagation"></a><a name="resume_propagation"></a>resume_propagation
+## <a name="resume_propagation"></a><a name="resume_propagation"></a> resume_propagation
 
 Возобновляет распространение после освобождения резервирования.
 
@@ -240,7 +241,7 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 virtual void resume_propagation();
 ```
 
-## <a name="send_message"></a><a name="send_message"></a>send_message
+## <a name="send_message"></a><a name="send_message"></a> send_message
 
 Синхронно передает сообщение из `ISource` блока в этот `single_assignment` блок обмена сообщениями. Он вызывается `send` методом при вызове из исходного блока.
 
@@ -262,7 +263,7 @@ virtual message_status send_message(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-## <a name="single_assignment"></a><a name="ctor"></a>single_assignment
+## <a name="single_assignment"></a><a name="ctor"></a> single_assignment
 
 Создает блок обмена сообщениями `single_assignment` .
 
@@ -298,13 +299,13 @@ single_assignment(
 *_PScheduleGroup*<br/>
 Объект `ScheduleGroup` , в котором запланирована задача распространения для блока обмена сообщениями `single_assignment` . Используемый объект `Scheduler` подразумевается группой расписаний.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Среда выполнения использует планировщик по умолчанию, если вы не указали параметры `_PScheduler` или `_PScheduleGroup` .
 
 Тип `filter_method` — это функтор с сигнатурой, `bool (T const &)` которая вызывается этим `single_assignment` блоком обмена сообщениями для определения того, следует ли принимать предложенное сообщение.
 
-## <a name="single_assignment"></a><a name="dtor"></a>~ single_assignment
+## <a name="single_assignment"></a><a name="dtor"></a> ~ single_assignment
 
 Уничтожает `single_assignment` блок обмена сообщениями.
 
@@ -312,7 +313,7 @@ single_assignment(
 ~single_assignment();
 ```
 
-## <a name="value"></a>Значение<a name="value"></a>
+## <a name="value"></a>Значение <a name="value"></a>
 
 Возвращает ссылку на текущие полезные данные сообщения, хранящегося в `single_assignment` блоке обмена сообщениями.
 
@@ -324,7 +325,7 @@ T const& value();
 
 Полезная нагрузка хранимого сообщения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод будет ожидать появления сообщения, если в данный момент в блоке обмена сообщениями не хранится ни одного сообщения `single_assignment` .
 

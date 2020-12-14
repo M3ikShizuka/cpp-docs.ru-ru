@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: task_options классе (среда выполнения с параллелизмом)'
 title: Класс task_options (среда выполнения с параллелизмом)
 ms.date: 11/04/2016
 f1_keywords:
 - ppltasks/concurrency::task_options
 ms.assetid: f93d146b-70f7-46ec-8c2f-c33b8bb0af69
-ms.openlocfilehash: e79dd7979b587ae807c8984a04b79be362b03758
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 3752d23e68096df22d076afc5c07dc3d66cc881a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81368596"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188213"
 ---
 # <a name="task_options-class-concurrency-runtime"></a>Класс task_options (среда выполнения с параллелизмом)
 
@@ -21,17 +22,17 @@ ms.locfileid: "81368596"
 class task_options;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Конструктор task_options::task_options (среда выполнения с параллелизмом)](#ctor)|Перегружен. Заданный по умолчанию список параметров создания задачи|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Метод task_options::get_cancellation_token (среда выполнения с параллелизмом)](#get_cancellation_token)|Возвращает токен отмены|
 |[Метод task_options::get_continuation_context (среда выполнения с параллелизмом)](#get_continuation_context)|Возвращает контекст продолжения|
@@ -47,11 +48,11 @@ class task_options;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ppltasks.h
+**Заголовок:** из ppltasks. h
 
-**Название:** параллелизм
+**Пространство имен:** параллелизм
 
-## <a name="task_optionsget_cancellation_token-method-concurrency-runtime"></a><a name="get_cancellation_token"></a>task_options:::get_cancellation_token метод (Курсна)
+## <a name="task_optionsget_cancellation_token-method-concurrency-runtime"></a><a name="get_cancellation_token"></a> Метод task_options:: get_cancellation_token (среда выполнения с параллелизмом)
 
 Возвращает токен отмены
 
@@ -61,7 +62,7 @@ cancellation_token get_cancellation_token() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-## <a name="task_optionsget_continuation_context-method-concurrency-runtime"></a><a name="get_continuation_context"></a>task_options::get_continuation_context метод (Время выполнения параллели)
+## <a name="task_optionsget_continuation_context-method-concurrency-runtime"></a><a name="get_continuation_context"></a> Метод task_options:: get_continuation_context (среда выполнения с параллелизмом)
 
 Возвращает контекст продолжения
 
@@ -71,7 +72,7 @@ task_continuation_context get_continuation_context() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-## <a name="task_optionsget_scheduler-method-concurrency-runtime"></a><a name="get_scheduler"></a>task_options:::get_scheduler метод (Курсна)
+## <a name="task_optionsget_scheduler-method-concurrency-runtime"></a><a name="get_scheduler"></a> Метод task_options:: get_scheduler (среда выполнения с параллелизмом)
 
 Возвращает планировщик
 
@@ -81,7 +82,7 @@ scheduler_ptr get_scheduler() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-## <a name="task_optionshas_cancellation_token-method-concurrency-runtime"></a><a name="has_cancellation_token"></a>task_options::has_cancellation_token метод (Курсна)
+## <a name="task_optionshas_cancellation_token-method-concurrency-runtime"></a><a name="has_cancellation_token"></a> Метод task_options:: has_cancellation_token (среда выполнения с параллелизмом)
 
 Показывает, был ли определен токен отмены пользователем
 
@@ -91,7 +92,7 @@ bool has_cancellation_token() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-## <a name="task_optionshas_scheduler-method-concurrency-runtime"></a><a name="has_scheduler"></a>task_options::has_scheduler метод (Курсна)
+## <a name="task_optionshas_scheduler-method-concurrency-runtime"></a><a name="has_scheduler"></a> Метод task_options:: has_scheduler (среда выполнения с параллелизмом)
 
 Показывает, был ли определен планировщик n пользователем
 
@@ -101,7 +102,7 @@ bool has_scheduler() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-## <a name="task_optionsset_cancellation_token-method-concurrency-runtime"></a><a name="set_cancellation_token"></a>task_options::set_cancellation_token метод (Курсна runtime)
+## <a name="task_optionsset_cancellation_token-method-concurrency-runtime"></a><a name="set_cancellation_token"></a> Метод task_options:: set_cancellation_token (среда выполнения с параллелизмом)
 
 Задает токен в параметрах
 
@@ -113,7 +114,7 @@ void set_cancellation_token(cancellation_token _Token);
 
 `_Token`
 
-## <a name="task_optionsset_continuation_context-method-concurrency-runtime"></a><a name="set_continuation_context"></a>task_options::set_continuation_context метод (Время выполнения параллели)
+## <a name="task_optionsset_continuation_context-method-concurrency-runtime"></a><a name="set_continuation_context"></a> Метод task_options:: set_continuation_context (среда выполнения с параллелизмом)
 
 Задает контекст данного продолжения в параметрах
 
@@ -125,7 +126,7 @@ void set_continuation_context(task_continuation_context _ContinuationContext);
 
 `_ContinuationContext`
 
-## <a name="task_optionstask_options-constructor-concurrency-runtime"></a><a name="ctor"></a>task_options::task_options Конструктор (Курсна)
+## <a name="task_optionstask_options-constructor-concurrency-runtime"></a><a name="ctor"></a> Конструктор task_options:: task_options (среда выполнения с параллелизмом)
 
 Заданный по умолчанию список параметров создания задачи
 
@@ -170,4 +171,4 @@ task_options(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен concurrency](concurrency-namespace.md)
+[Пространство имен Concurrency](concurrency-namespace.md)

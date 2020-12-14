@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: single_link_registry классе'
 title: Класс single_link_registry
 ms.date: 11/04/2016
 f1_keywords:
@@ -13,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - single_link_registry class
 ms.assetid: 09540a4e-c34e-4ff9-af49-21b8612b6ab3
-ms.openlocfilehash: 24f89a6b2fb998ba5e5a82dbb470accb45d0fd9f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 415dcaf8062eaf47a3e92cf4a949790eb364d0c4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219551"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188642"
 ---
 # <a name="single_link_registry-class"></a>Класс single_link_registry
 
@@ -40,7 +41,7 @@ class single_link_registry : public network_link_registry<_Block>;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[single_link_registry](#ctor)|Формирует объект `single_link_registry`.|
 |[Деструктор ~ single_link_registry](#dtor)|Уничтожает `single_link_registry` объект.|
@@ -67,7 +68,7 @@ class single_link_registry : public network_link_registry<_Block>;
 
 **Пространство имен:** параллелизм
 
-## <a name="add"></a><a name="add"></a>включить
+## <a name="add"></a><a name="add"></a> включить
 
 Добавляет ссылку на `single_link_registry` объект.
 
@@ -80,11 +81,11 @@ virtual void add(_EType _Link);
 *_Link*<br/>
 Указатель на добавляемый блок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Метод вызывает исключение [invalid_link_target](invalid-link-target-class.md) , если в этом реестре уже есть ссылка.
 
-## <a name="begin"></a><a name="begin"></a>начале
+## <a name="begin"></a><a name="begin"></a> begin
 
 Возвращает итератор на первый элемент в `single_link_registry` объекте.
 
@@ -96,11 +97,11 @@ virtual iterator begin();
 
 Итератор, обращающийся к первому элементу в `single_link_registry` объекте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Конечное состояние обозначается `NULL` ссылкой.
 
-## <a name="contains"></a><a name="contains"></a>содержащих
+## <a name="contains"></a><a name="contains"></a> содержащих
 
 Выполняет поиск `single_link_registry` указанного блока в объекте.
 
@@ -117,7 +118,7 @@ virtual bool contains(_EType _Link);
 
 **`true`** значение, если ссылка найдена, **`false`** в противном случае.
 
-## <a name="count"></a><a name="count"></a>расчета
+## <a name="count"></a><a name="count"></a> расчета
 
 Подсчитывает количество элементов в `single_link_registry` объекте.
 
@@ -129,7 +130,7 @@ virtual size_t count();
 
 Число элементов в объекте `single_link_registry`.
 
-## <a name="remove"></a><a name="remove"></a>отменит
+## <a name="remove"></a><a name="remove"></a> отменит
 
 Удаляет ссылку из `single_link_registry` объекта.
 
@@ -146,7 +147,7 @@ virtual bool remove(_EType _Link);
 
 **`true`** значение, если ссылка была найдена и удалена, **`false`** в противном случае.
 
-## <a name="single_link_registry"></a><a name="ctor"></a>single_link_registry
+## <a name="single_link_registry"></a><a name="ctor"></a> single_link_registry
 
 Формирует объект `single_link_registry`.
 
@@ -154,7 +155,7 @@ virtual bool remove(_EType _Link);
 single_link_registry();
 ```
 
-## <a name="single_link_registry"></a><a name="dtor"></a>~ single_link_registry
+## <a name="single_link_registry"></a><a name="dtor"></a> ~ single_link_registry
 
 Уничтожает `single_link_registry` объект.
 
@@ -162,7 +163,7 @@ single_link_registry();
 virtual ~single_link_registry();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Метод вызывает исключение [invalid_operation](invalid-operation-class.md) , если оно вызывается перед удалением ссылки.
 

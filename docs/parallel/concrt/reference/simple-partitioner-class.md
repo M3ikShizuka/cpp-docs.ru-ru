@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: simple_partitioner классе'
 title: Класс simple_partitioner
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - simple_partitioner class
 ms.assetid: d7e997af-54d1-43f5-abe0-def72df6edb3
-ms.openlocfilehash: 503f36b90c5eb3319f9aa2d56528172ffa95bb11
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 76dcac6d7fc2dce5b69d0a9dbefaf01420f8bcde
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142500"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188694"
 ---
 # <a name="simple_partitioner-class"></a>Класс simple_partitioner
 
@@ -29,10 +30,10 @@ class simple_partitioner;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[simple_partitioner](#ctor)|Формирует объект `simple_partitioner`.|
-|[Деструктор ~ simple_partitioner](#dtor)|Уничтожает объект `simple_partitioner`.|
+|[Деструктор ~ simple_partitioner](#dtor)|Уничтожает объект `simple_partitioner` .|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -42,17 +43,17 @@ class simple_partitioner;
 
 **Заголовок:** PPL. h
 
-**Пространство имен:** concurrency
+**Пространство имен:** параллелизм
 
-## <a name="dtor"></a>~ simple_partitioner
+## <a name="simple_partitioner"></a><a name="dtor"></a> ~ simple_partitioner
 
-Уничтожает объект `simple_partitioner`.
+Уничтожает объект `simple_partitioner` .
 
 ```cpp
 ~simple_partitioner();
 ```
 
-## <a name="ctor"></a>simple_partitioner
+## <a name="simple_partitioner"></a><a name="ctor"></a> simple_partitioner
 
 Формирует объект `simple_partitioner`.
 
@@ -67,4 +68,4 @@ explicit simple_partitioner(_Size_type _Chunk_size);
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен concurrency](concurrency-namespace.md)
+[Пространство имен Concurrency](concurrency-namespace.md)

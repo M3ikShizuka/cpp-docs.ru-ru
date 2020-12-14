@@ -1,13 +1,14 @@
 ---
+description: Дополнительные сведения о:/INTEGRITYCHECK (требовать проверку подписи)
 title: /INTEGRITYCHECK (требование проверки подписи)
 ms.date: 11/04/2016
 ms.assetid: 9e738825-2c98-40cd-8ad2-5d0d9c14893e
-ms.openlocfilehash: 1732c612501b66753635b272f94764975c555f75
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 650b5d6ae121a5e776f16797a869dfa15f443bf1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69492851"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97191268"
 ---
 # <a name="integritycheck-require-signature-check"></a>/INTEGRITYCHECK (требование проверки подписи)
 
@@ -17,7 +18,7 @@ ms.locfileid: "69492851"
 /INTEGRITYCHECK[:NO]
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 По умолчанию **/INTEGRITYCHECK** отключен.
 
@@ -33,9 +34,9 @@ ms.locfileid: "69492851"
 
 1. Выберите страницу свойств **Командная строка** .
 
-1. В окне **Дополнительные параметры**введите `/INTEGRITYCHECK` или `/INTEGRITYCHECK:NO`.
+1. В окне **Дополнительные параметры** введите `/INTEGRITYCHECK` или `/INTEGRITYCHECK:NO` .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по компоновщику MSVC](linking.md)<br/>
 [Параметры компоновщика MSVC](linker-options.md)<br/>

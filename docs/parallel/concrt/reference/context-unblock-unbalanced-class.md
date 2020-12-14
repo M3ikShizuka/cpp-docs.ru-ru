@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: context_unblock_unbalanced классе'
 title: Класс context_unblock_unbalanced
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - context_unblock_unbalanced class
 ms.assetid: a76066c8-19dd-44fa-959a-6941ec1b0d2d
-ms.openlocfilehash: 261ec96c1a83fbec423e6dbbfe403c4db53a2962
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: d262ff52a675935f95664d2f7ddd69aa159aa0bc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77143100"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188967"
 ---
 # <a name="context_unblock_unbalanced-class"></a>Класс context_unblock_unbalanced
 
@@ -29,13 +30,13 @@ class context_unblock_unbalanced : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[context_unblock_unbalanced](#ctor)|Перегружен. Формирует объект `context_unblock_unbalanced`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Вызовы методов `Block` и `Unblock` объекта `Context` должны всегда быть парными. Среда выполнения с параллелизмом позволяет операциям выполняться в любом порядке. Например, за вызовом `Block` может следовать вызов `Unblock`, или наоборот. Это исключение возникает, если, например, два вызова метода `Unblock` были внесены в строку на `Context` объекте, который не был заблокирован.
+Вызовы `Block` `Unblock` методов и `Context` объекта должны всегда быть парными. Среда выполнения с параллелизмом позволяет операциям выполняться в любом порядке. Например, за вызовом `Block` может следовать вызов `Unblock`, или наоборот. Это исключение возникает, если, например, два вызова `Unblock` метода были сделаны в строке на `Context` объекте, который не был заблокирован.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -47,9 +48,9 @@ class context_unblock_unbalanced : public std::exception;
 
 **Заголовок:** ConcRT. h
 
-**Пространство имен:** concurrency
+**Пространство имен:** параллелизм
 
-## <a name="ctor"></a>context_unblock_unbalanced
+## <a name="context_unblock_unbalanced"></a><a name="ctor"></a> context_unblock_unbalanced
 
 Формирует объект `context_unblock_unbalanced`.
 
@@ -66,4 +67,4 @@ context_unblock_unbalanced() throw();
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен concurrency](concurrency-namespace.md)
+[Пространство имен Concurrency](concurrency-namespace.md)

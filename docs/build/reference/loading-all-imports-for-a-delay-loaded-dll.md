@@ -1,27 +1,28 @@
 ---
+description: 'Дополнительные сведения: Загрузка всех импортов для Delay-Loaded DLL'
 title: Загрузка всех импортов для библиотеки DLL с отложенной загрузкой
 ms.date: 11/04/2016
 helpviewer_keywords:
 - __HrLoadAllImportsForDll linker option
 ms.assetid: 975fcd97-1a56-4a16-9698-e1a249d2d592
-ms.openlocfilehash: e855b648dc7a9ee0670c3704a11aa1897a238403
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 0f1334f30568e4722bd97579145ddcae9851b901
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301673"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97190929"
 ---
 # <a name="loading-all-imports-for-a-delay-loaded-dll"></a>Загрузка всех импортов для библиотеки DLL с отложенной загрузкой
 
-**__HrLoadAllImportsForDll** функцию, которая определена в delayhlp.cpp, предписывает компоновщику загрузка всех импортов из библиотеки DLL, который был указан с [/DELAYLOAD](delayload-delay-load-import.md) параметр компоновщика.
+Функция **__HrLoadAllImportsForDll** , которая определена в делайхлп. cpp, указывает компоновщику загрузить все импорты из библиотеки DLL, указанной в параметре компоновщика [параметр/DELAYLOAD](delayload-delay-load-import.md) .
 
-Загрузка всех импортов позволяет поместить обработка ошибок в одном месте в коде и не использовать обработку исключений вокруг фактических вызовов операции импорта. Она также позволяет избежать ситуации, когда приложение частично ошибка в процессе, в результате сбоя загрузки потока импорта вспомогательного кода.
+Загрузка всех импортов позволяет размещать обработку ошибок в одном месте в коде и не должна использовать обработку исключений вокруг фактических вызовов операций импорта. Это также позволяет избежать ситуации, когда приложение завершается с ошибкой частично через процесс в результате того, что вспомогательный код не сможет загрузить импорт.
 
-Вызов **__HrLoadAllImportsForDll** не изменяет поведение ловушки и ошибка обработки; см. в разделе [обработка ошибок и уведомления](error-handling-and-notification.md) Дополнительные сведения.
+Вызов **__HrLoadAllImportsForDll** не изменяет поведение обработчиков и обработки ошибок. Дополнительные сведения см. в разделе [обработка и уведомление об ошибках](error-handling-and-notification.md) .
 
-Имя библиотеки DLL, переданного **__HrLoadAllImportsForDll** сравнивается с именем, хранящиеся непосредственно в библиотеки и чувствительно к регистру.
+Имя DLL, передаваемое в **__HrLoadAllImportsForDll** , сравнивается с именем, хранящимся в самой библиотеке DLL и с учетом регистра.
 
-В следующем примере показан вызов **__HrLoadAllImportsForDll**:
+В следующем примере показано, как вызвать **__HrLoadAllImportsForDll**:
 
 ```
 if (FAILED(__HrLoadAllImportsForDll("delay1.dll"))) {
@@ -30,6 +31,6 @@ if (FAILED(__HrLoadAllImportsForDll("delay1.dll"))) {
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Поддержка компоновщика для библиотек DLL с отложенной загрузкой](linker-support-for-delay-loaded-dlls.md)
+[Поддержка компоновщика для Delay-Loadedных библиотек DLL](linker-support-for-delay-loaded-dlls.md)

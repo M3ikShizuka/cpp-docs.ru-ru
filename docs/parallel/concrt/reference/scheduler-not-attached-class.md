@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: scheduler_not_attached классе'
 title: Класс scheduler_not_attached
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - scheduler_not_attached class
 ms.assetid: 26001970-b400-463b-be3d-8623359c399a
-ms.openlocfilehash: a3b1c113e5c6c5feb5b2fa1940ee9b984233e4af
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: 1d412ffecea288d4ecad1d0c2949e7444adfd913
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77142198"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97188863"
 ---
 # <a name="scheduler_not_attached-class"></a>Класс scheduler_not_attached
 
@@ -29,7 +30,7 @@ class scheduler_not_attached : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[scheduler_not_attached](#ctor)|Перегружен. Формирует объект `scheduler_not_attached`.|
 
@@ -43,9 +44,9 @@ class scheduler_not_attached : public std::exception;
 
 **Заголовок:** ConcRT. h
 
-**Пространство имен:** concurrency
+**Пространство имен:** параллелизм
 
-## <a name="ctor"></a>scheduler_not_attached
+## <a name="scheduler_not_attached"></a><a name="ctor"></a> scheduler_not_attached
 
 Формирует объект `scheduler_not_attached`.
 
@@ -62,5 +63,5 @@ scheduler_not_attached() throw();
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен concurrency](concurrency-namespace.md)<br/>
+[Пространство имен Concurrency](concurrency-namespace.md)<br/>
 [Класс Scheduler](scheduler-class.md)

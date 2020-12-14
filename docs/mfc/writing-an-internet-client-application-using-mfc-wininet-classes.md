@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье Создание клиентского приложения для Интернета с помощью классов MFC WinInet.
 title: Создание клиентских приложений в Интернете с использованием классов MFC WinInet
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,49 +10,49 @@ helpviewer_keywords:
 - Internet applications [MFC], client applications
 - MFC, Internet applications
 ms.assetid: a2c4a40c-a94e-4b3e-9dbf-f8a8dc8e5428
-ms.openlocfilehash: 6e32210217321e4eb59d7d3e666a4f5494eb3642
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 61cfe3e9892f2bde6d233728b7b95ca0edd16ee8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62399477"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97189136"
 ---
 # <a name="writing-an-internet-client-application-using-mfc-wininet-classes"></a>Создание клиентских приложений в Интернете с использованием классов MFC WinInet
 
-Интернет-сеанс выполняется на основе каждого клиентских приложений в Интернете. Реализация MFC сеансов Интернета в качестве объектов класса [CInternetSession](../mfc/reference/cinternetsession-class.md). С помощью этого класса, можно создать один сеанс Интернет или несколько одновременных сеансов.
+В качестве основания для каждого клиентского приложения Интернета используется Интернет-сеанс. MFC реализует сеансы Интернета как объекты класса [Цинтернетсессион](../mfc/reference/cinternetsession-class.md). С помощью этого класса можно создать один сеанс Интернета или несколько одновременных сеансов.
 
-Чтобы подключиться к серверу, вам потребуется [CInternetConnection](../mfc/reference/cinternetconnection-class.md) объекта, а также `CInternetSession`. Можно создать `CInternetConnection` с помощью [CInternetSession::GetFtpConnection](../mfc/reference/cinternetsession-class.md#getftpconnection), [CInternetSession::GetHttpConnection](../mfc/reference/cinternetsession-class.md#gethttpconnection), или [CInternetSession::GetGopherConnection](../mfc/reference/cinternetsession-class.md#getgopherconnection). Каждый из этих вызовов относится только к тип протокола. Эти вызовы следует открывать файл на сервере для чтения или записи. Если вы собираетесь чтения или записи данных, необходимо открыть файл как отдельный шаг.
+Для взаимодействия с сервером необходим объект [Цинтернетконнектион](../mfc/reference/cinternetconnection-class.md) и `CInternetSession` . Можно создать с `CInternetConnection` помощью [Цинтернетсессион:: жетфтпконнектион](../mfc/reference/cinternetsession-class.md#getftpconnection), [Цинтернетсессион:: жесттпконнектион](../mfc/reference/cinternetsession-class.md#gethttpconnection)или [Цинтернетсессион:: GetGopherConnection](../mfc/reference/cinternetsession-class.md#getgopherconnection). Каждый из этих вызовов зависит от типа протокола. Эти вызовы не открывают файл на сервере для чтения или записи. Если вы собираетесь читать или записывать данные, необходимо открыть файл как отдельный шаг.
 
-Для большинства сеансов Интернета `CInternetSession` объект работает Рука в руку с [CInternetFile](../mfc/reference/cinternetfile-class.md) объекта:
+Для большинства Интернет `CInternetSession` -сеансов объект работает вручную с объектом [Цинтернетфиле](../mfc/reference/cinternetfile-class.md) :
 
-- Для Интернет-сеанс, необходимо создать экземпляр [CInternetSession](../mfc/reference/cinternetsession-class.md).
+- Для сеанса Интернета необходимо создать экземпляр [Цинтернетсессион](../mfc/reference/cinternetsession-class.md).
 
-- Если сеанс Internet считывает или записывает данные, необходимо создать экземпляр `CInternetFile` (или его подклассов [CHttpFile](../mfc/reference/chttpfile-class.md) или [CGopherFile](../mfc/reference/cgopherfile-class.md)). Самый простой способ чтения данных является вызов [CInternetSession::OpenURL](../mfc/reference/cinternetsession-class.md#openurl). Эта функция выполняет синтаксический анализ универсальный указатель ресурса (URL) указанные вами, открывает подключение к серверу, указанному в URL-адрес и возвращает только для чтения `CInternetFile` объекта. `CInternetSession::OpenURL` не относится к типу одного протокола — тот же вызов работает любой FTP, HTTP или gopher URL-адрес. `CInternetSession::OpenURL` даже работает с локальными файлами (возвращая `CStdioFile` вместо `CInternetFile`).
+- Если Интернет-сеанс считывает или записывает данные, необходимо создать экземпляр `CInternetFile` (или его подклассы, [Чттпфиле](../mfc/reference/chttpfile-class.md) или [CGopherFile](../mfc/reference/cgopherfile-class.md)). Самый простой способ считать данные — вызвать [Цинтернетсессион:: OpenURL](../mfc/reference/cinternetsession-class.md#openurl). Эта функция анализирует предоставленный вами универсальный указатель ресурсов (URL-адрес), открывает соединение с сервером, указанным в URL-адресе, и возвращает объект, который доступен только для чтения `CInternetFile` . `CInternetSession::OpenURL` не относится к одному типу протокола — один и тот же вызов работает для любого URL-адреса FTP, HTTP или gopher. `CInternetSession::OpenURL` даже работает с локальными файлами (возвращая `CStdioFile` вместо `CInternetFile` ).
 
-- Если в Интернет, сеанс не чтения или записи данных, но выполняет другие задачи, например при удалении файла в каталоге FTP, не может потребоваться создать экземпляр `CInternetFile`.
+- Если Интернет-сеанс не считывает или не записывает данные, но выполняет другие задачи, такие как удаление файла в FTP-каталоге, то, возможно, не потребуется создавать экземпляр `CInternetFile` .
 
-Существует два способа создания `CInternetFile` объекта:
+Существует два способа создания `CInternetFile` объекта.
 
-- Если вы используете `CInternetSession::OpenURL` для установления подключения к серверу, вызов `OpenURL` возвращает `CStdioFile`.
+- При использовании `CInternetSession::OpenURL` для установления соединения с сервером вызов метода `OpenURL` возвращает `CStdioFile` .
 
-- Если использовать `CInternetSession::GetFtpConnection`, `GetGopherConnection`, или `GetHttpConnection` для установления подключения к серверу, необходимо вызвать `CFtpConnection::OpenFile`, `CGopherConnection::OpenFile`, или `CHttpConnection::OpenRequest`, соответственно, чтобы вернуть `CInternetFile`, `CGopherFile`, или `CHttpFile`, соответственно.
+- При использовании `CInternetSession::GetFtpConnection` , `GetGopherConnection` или `GetHttpConnection` для установления соединения с сервером необходимо вызвать `CFtpConnection::OpenFile` , `CGopherConnection::OpenFile` или `CHttpConnection::OpenRequest` , соответственно, для возврата `CInternetFile` , `CGopherFile` или `CHttpFile` соответственно.
 
-Этапы реализации клиентских приложений в Интернете зависит от того, создается ли универсальный Интернет-клиент на основе `OpenURL` или клиент определенных протоколов, с помощью одного из `GetConnection` функции.
+Действия по реализации клиентского Интернет-приложения зависят от того, создается ли универсальный Интернет-клиент на основе `OpenURL` или зависящий от протокола клиент, использующий одну из `GetConnection` функций.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Выберите для получения дополнительных сведений
+## <a name="what-do-you-want-to-know-more-about"></a>Что вы хотите узнать подробнее
 
-- [Как написать клиентских приложений в Интернете, обычно с FTP, HTTP и gopher](../mfc/steps-in-a-typical-internet-client-application.md)
+- [Разделы справки написание Интернет-клиентского приложения, которое работает с помощью FTP, HTTP и Gopher](../mfc/steps-in-a-typical-internet-client-application.md)
 
-- [Как написать клиентского приложения FTP, который открывает файл](../mfc/steps-in-a-typical-ftp-client-application.md)
+- [Разделы справки записи клиентского приложения FTP, открывающего файл](../mfc/steps-in-a-typical-ftp-client-application.md)
 
-- [Как написать приложение клиента FTP, файл не открыт, но выполняет операции каталога, например при удалении файла](../mfc/steps-in-a-typical-ftp-client-application-to-delete-a-file.md)
+- [Разделы справки Написание клиентского приложения FTP, которое не открывает файл, но выполняет операцию с каталогом, например удаление файла.](../mfc/steps-in-a-typical-ftp-client-application-to-delete-a-file.md)
 
-- [Как написать клиентского приложения gopher](../mfc/steps-in-a-typical-gopher-client-application.md)
+- [Разделы справки записи клиентского приложения Gopher](../mfc/steps-in-a-typical-gopher-client-application.md)
 
-- [Как написать клиентского приложения HTTP](../mfc/steps-in-a-typical-http-client-application.md)
+- [Разделы справки записи клиентского приложения HTTP](../mfc/steps-in-a-typical-http-client-application.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Расширения Интернета Win32 (WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[Классы MFC для создания клиентских приложений в Интернете](../mfc/mfc-classes-for-creating-internet-client-applications.md)<br/>
-[Необходимые компоненты для клиентских классов в Интернете](../mfc/prerequisites-for-internet-client-classes.md)
+[Классы MFC для создания Интернет клиентских приложений](../mfc/mfc-classes-for-creating-internet-client-applications.md)<br/>
+[Необходимые условия для клиентских классов Интернета](../mfc/prerequisites-for-internet-client-classes.md)

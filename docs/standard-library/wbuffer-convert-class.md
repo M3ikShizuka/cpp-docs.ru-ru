@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: wbuffer_convert классе'
 title: Класс wbuffer_convert
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - wbuffer_convert class
 ms.assetid: 4a56f9bf-4138-4612-b516-525fea401358
-ms.openlocfilehash: ba8c98075741ae6cb8db0ecdfcb1e18cf4f4f89c
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 1aa7258c3cc0a4f78a749f655e9cfb7cd4957378
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561119"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97187849"
 ---
 # <a name="wbuffer_convert-class"></a>Класс wbuffer_convert
 
@@ -36,7 +37,7 @@ class wbuffer_convert
 *Признаки*\
 Признаки, связанные с *Elem*.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Этот шаблон класса описывает буфер потока, который управляет передачей элементов типа `_Elem` , признаки символов которых описываются классом `Traits` , в буфер потока байтов типа и обратно `std::streambuf` .
 
