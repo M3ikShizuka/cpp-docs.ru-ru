@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: буфер обмена: копирование и вставление данных'
 title: Буфер обмена. Копирование и вставка данных
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Clipboard, copying data to
 - Clipboard, pasting
 ms.assetid: 580e10be-241f-4f9f-94cf-8302edc5beef
-ms.openlocfilehash: ed3056ec4fb3d3098870a03522d3bf17f41fbe34
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: fdc102cf7a92bc78df83419269bb5de828dc9d19
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84620706"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251236"
 ---
 # <a name="clipboard-copying-and-pasting-data"></a>Буфер обмена. Копирование и вставка данных
 
@@ -18,7 +19,7 @@ ms.locfileid: "84620706"
 
 Прежде чем можно будет реализовать копирование или вставку, необходимо сначала указать функции для работы с параметрами копирования, вырезания и вставки в меню Правка.
 
-## <a name="copying-or-cutting-data"></a><a name="_core_copying_or_cutting_data"></a>Копирование или вырезание данных
+## <a name="copying-or-cutting-data"></a><a name="_core_copying_or_cutting_data"></a> Копирование или вырезание данных
 
 #### <a name="to-copy-data-to-the-clipboard"></a>Копирование данных в буфер обмена
 
@@ -34,7 +35,7 @@ ms.locfileid: "84620706"
 
 Пример этой последовательности см. в разделе `OnEditCut` `OnEditCopy` функции и в примерах программ MFC OLE [OCLIENT](../overview/visual-cpp-samples.md) и [HIERSVR](../overview/visual-cpp-samples.md). Обратите внимание, что эти примеры сохраняют указатель на текущие выбранные данные, поэтому шаг 1 уже завершен.
 
-## <a name="pasting-data"></a><a name="_core_pasting_data"></a>Вставленные данные
+## <a name="pasting-data"></a><a name="_core_pasting_data"></a> Вставленные данные
 
 Вставленные данные сложнее, чем копирование, так как необходимо выбрать формат, используемый при копировании данных в приложение.
 
@@ -69,4 +70,4 @@ ms.locfileid: "84620706"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Буфер обмена. Использование механизма буфера обмена OLE](clipboard-using-the-ole-clipboard-mechanism.md)
+[Буфер обмена: использование механизма буфера обмена OLE](clipboard-using-the-ole-clipboard-mechanism.md)

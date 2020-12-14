@@ -1,14 +1,15 @@
 ---
+description: 'Дополнительные сведения о: sequenced_policy классе'
 title: Класс sequenced_policy
 ms.date: 04/18/2019
 f1_keywords:
 - execution/std::execution::sequenced_policy
-ms.openlocfilehash: 5647f20b560828016231a9bbd38977c51211e6bb
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: e4d19e3649e3c768e8efc062baaf735e28a8fc22
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79444916"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250417"
 ---
 # <a name="sequenced_policy-class"></a>Класс sequenced_policy
 
@@ -22,4 +23,4 @@ class execution::sequenced_policy;
 
 ## <a name="remarks"></a>Remarks
 
-При выполнении параллельного алгоритма с политикой `execution::sequenced_policy`, если вызов функции доступа к элементу завершается с помощью неперехваченного исключения, вызываемый `terminate()` должен быть вызван.
+При выполнении параллельного алгоритма с `execution::sequenced_policy` политикой, если вызов функции доступа к элементу завершается через неперехваченное исключение, то `terminate()` должно быть вызвано.

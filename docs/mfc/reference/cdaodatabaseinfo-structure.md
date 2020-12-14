@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура Кдаодатабасеинфо'
 title: Структура CDaoDatabaseInfo
 ms.date: 09/17/2019
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - CDaoDatabaseInfo structure [MFC]
 - DAO (Data Access Objects), Databases collection
 ms.assetid: 68e9e0da-8382-4fc6-8115-1b1519392ddb
-ms.openlocfilehash: 60972aa3ecaef4d38c9a0d0ecc70477796aa37aa
-ms.sourcegitcommit: 069e3833bd821e7d64f5c98d0ea41fc0c5d22e53
+ms.openlocfilehash: 9c516821ce401f390538537233ec465f3f520458
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74304254"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250989"
 ---
 # <a name="cdaodatabaseinfo-structure"></a>Структура CDaoDatabaseInfo
 
-Структура `CDaoDatabaseInfo` содержит сведения об объекте базы данных, определенном для объектов доступа к данным (DAO). Версия DAO 3,6 является окончательной и считается устаревшей.
+`CDaoDatabaseInfo`Структура содержит сведения об объекте базы данных, определенном для объектов доступа к данным (DAO). Версия DAO 3,6 является окончательной и считается устаревшей.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -50,41 +51,41 @@ struct CDaoDatabaseInfo
 *m_lCollatingOrder*<br/>
 Задает последовательность порядка сортировки в тексте для сравнения строк или сортировки. Возможные значения:
 
-- `dbSortGeneral` использовать общие (английский, французский, немецкий, португальский, итальянский и современный испанский) порядок сортировки.
+- `dbSortGeneral` Используйте порядок сортировки "общий" (английский, французский, немецкий, португальский, итальянский и современный испанский).
 
-- `dbSortArabic` использовать порядок сортировки для арабского языка.
+- `dbSortArabic` Используйте порядок сортировки для арабского языка.
 
-- `dbSortCyrillic` использовать русский порядок сортировки.
+- `dbSortCyrillic` Используйте русский порядок сортировки.
 
-- `dbSortCzech` использовать чешский порядок сортировки.
+- `dbSortCzech` Используйте чешский порядок сортировки.
 
-- `dbSortDutch` использовать нидерландский порядок сортировки.
+- `dbSortDutch` Используйте Голландский порядок сортировки.
 
-- `dbSortGreek` использовать греческий порядок сортировки.
+- `dbSortGreek` Используйте греческий порядок сортировки.
 
-- `dbSortHebrew` использовать порядок сортировки для иврита.
+- `dbSortHebrew` Используйте порядок сортировки для иврита.
 
-- `dbSortHungarian` использовать Венгерский порядок сортировки.
+- `dbSortHungarian` Используйте Венгерский порядок сортировки.
 
-- `dbSortIcelandic` использовать порядок сортировки Исландский.
+- `dbSortIcelandic` Используйте порядок сортировки исландского.
 
-- `dbSortNorwdan` использовать норвежский или датский порядок сортировки.
+- `dbSortNorwdan` Используйте норвежский или датский порядок сортировки.
 
-- `dbSortPDXIntl` использовать международный порядок сортировки Paradox.
+- `dbSortPDXIntl` Используйте международный порядок сортировки Paradox.
 
-- `dbSortPDXNor` использовать порядок сортировки Paradox норвежский или датский.
+- `dbSortPDXNor` Используйте порядок сортировки Paradox норвежский или датский.
 
-- `dbSortPDXSwe` использовать порядок сортировки Paradox шведский или финский.
+- `dbSortPDXSwe` Используйте порядок сортировки Paradox шведский или финский.
 
-- `dbSortPolish` использовать польский порядок сортировки.
+- `dbSortPolish` Используйте польский порядок сортировки.
 
-- `dbSortSpanish` использовать Испанский порядок сортировки.
+- `dbSortSpanish` Используйте испанский порядок сортировки.
 
-- `dbSortSwedFin` использовать шведский или Финский порядок сортировки.
+- `dbSortSwedFin` Используйте шведский или Финский порядок сортировки.
 
-- `dbSortTurkish` использовать порядок сортировки для турецкого языка.
+- `dbSortTurkish` Используйте порядок сортировки для турецкого языка.
 
-- `dbSortUndefined` порядок сортировки не определен или неизвестен.
+- `dbSortUndefined` Порядок сортировки не определен или неизвестен.
 
 Дополнительные сведения см. в разделе «Настройка параметров реестра Windows для доступа к данным» справки DAO.
 
@@ -94,18 +95,18 @@ struct CDaoDatabaseInfo
 *m_strConnect*<br/>
 Предоставляет сведения об источнике открытой базы данных. Сведения о строках соединения и сведения о получении значения этого свойства напрямую см. в описании функции члена [CDaoDatabase::](../../mfc/reference/cdaodatabase-class.md#getconnect) . Дополнительные сведения см. в подразделе «свойство Connect» справки DAO.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 База данных — это объект DAO, лежащий в основе объекта MFC класса [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md). Ссылки на первичный, вторичный и все вышеперечисленное указывают, как эта информация возвращается функцией-членом [кдаоворкспаце:: жетдатабасеинфо](../../mfc/reference/cdaoworkspace-class.md#getdatabaseinfo) .
 
-Сведения, получаемые функцией-членом [кдаоворкспаце:: жетдатабасеинфо](../../mfc/reference/cdaoworkspace-class.md#getdatabaseinfo) , хранятся в структуре `CDaoDatabaseInfo`. Вызовите `GetDatabaseInfo` для объекта `CDaoWorkspace`, в коллекции баз данных которого хранится объект базы данных. `CDaoDatabaseInfo` также определяет функцию-член `Dump` в отладочных сборках. Для дампа содержимого объекта `CDaoDatabaseInfo` можно использовать `Dump`.
+Сведения, получаемые функцией-членом [кдаоворкспаце:: жетдатабасеинфо](../../mfc/reference/cdaoworkspace-class.md#getdatabaseinfo) , хранятся в `CDaoDatabaseInfo` структуре. Вызовите метод `GetDatabaseInfo` для `CDaoWorkspace` объекта, в коллекции баз данных которого хранится объект базы данных. `CDaoDatabaseInfo` также определяет `Dump` функцию-член в отладочных сборках. Можно использовать `Dump` для дампа содержимого `CDaoDatabaseInfo` объекта.
 
 ## <a name="requirements"></a>Требования
 
 **Заголовок:** афксдао. h
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Структуры, стили, обратные вызовы и схемы сообщений](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
-[Класс CDaoWorkspace](../../mfc/reference/cdaoworkspace-class.md)<br/>
+[Класс Кдаоворкспаце](../../mfc/reference/cdaoworkspace-class.md)<br/>
 [Класс CDaoDatabase](../../mfc/reference/cdaodatabase-class.md)

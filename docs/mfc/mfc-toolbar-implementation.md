@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Реализация панели инструментов MFC'
 title: Реализация панели инструментов MFC
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - toolbars [MFC]
 - toolbars [MFC], implementing MFC toolbars
 ms.assetid: af3319ad-c430-4f90-8361-e6a2c06fd084
-ms.openlocfilehash: 7876e9403389c19a24e5a482534d0f223eaa4bf5
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 0e6ecf0536c55163dd63d5f05e4c5c9f24f2c4cd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626115"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97251158"
 ---
 # <a name="mfc-toolbar-implementation"></a>Реализация панели инструментов MFC
 
@@ -51,13 +52,13 @@ MFC также поддерживает советы по использован
 
 - [Точечный рисунок панели инструментов](#_core_the_toolbar_bitmap)
 
-## <a name="toolbar-buttons"></a><a name="_core_toolbar_buttons"></a>Кнопки панели инструментов
+## <a name="toolbar-buttons"></a><a name="_core_toolbar_buttons"></a> Кнопки панели инструментов
 
 Кнопки на панели инструментов аналогичны элементам в меню. Оба типа объектов пользовательского интерфейса создают команды, обрабатываемые программой путем предоставления функций обработчика. Часто кнопки панели инструментов дублируют функциональные возможности команд меню, предоставляя альтернативный пользовательский интерфейс тем же функциональным возможностям. Такое дублирование упорядочивается просто путем присваивания кнопки и пункта меню одинакового идентификатора.
 
 Кнопки на панели инструментов можно отображать и вести себя как кнопки, флажки или переключатели. Дополнительные сведения см. в разделе Class [CToolBar](reference/ctoolbar-class.md).
 
-## <a name="docking-and-floating-toolbars"></a><a name="_core_docking_and_floating_toolbars"></a>Закрепление и плавающие панели инструментов
+## <a name="docking-and-floating-toolbars"></a><a name="_core_docking_and_floating_toolbars"></a> Закрепление и плавающие панели инструментов
 
 Панель инструментов MFC позволяет:
 
@@ -71,11 +72,11 @@ MFC также поддерживает советы по использован
 
 Дополнительные сведения см. в статье [закрепление и плавающие панели инструментов](docking-and-floating-toolbars.md).
 
-## <a name="toolbars-and-tool-tips"></a><a name="_core_toolbars_and_tool_tips"></a>Панели инструментов и подсказки
+## <a name="toolbars-and-tool-tips"></a><a name="_core_toolbars_and_tool_tips"></a> Панели инструментов и подсказки
 
 Панели инструментов MFC также можно использовать для показа всплывающих подсказок — маленьких окон, содержащих краткое текстовое описание назначения кнопки панели инструментов. Когда пользователь наводит указатель мыши на кнопку панели инструментов, появляется всплывающая подсказка, предлагающая подсказку. Дополнительные сведения см. в [подсказках на панели инструментов](toolbar-tool-tips.md)статьи.
 
-## <a name="the-ctoolbar-and-ctoolbarctrl-classes"></a><a name="_core_the_ctoolbar_and_ctoolbarctrl_classes"></a>Классы CToolBar и CToolBarCtrl
+## <a name="the-ctoolbar-and-ctoolbarctrl-classes"></a><a name="_core_the_ctoolbar_and_ctoolbarctrl_classes"></a> Классы CToolBar и CToolBarCtrl
 
 Управление панелями инструментов приложения осуществляется через класс [CToolBar](reference/ctoolbar-class.md). Начиная с MFC версии 4,0, была `CToolBar` реализована повторно для использования общего элемента управления ToolBar, доступного в windows 95 или более поздней версии и Windows NT версий 3,51 или более поздней.
 
@@ -86,7 +87,7 @@ MFC также поддерживает советы по использован
 
 См. также общий пример MFC [докктул](../overview/visual-cpp-samples.md).
 
-## <a name="the-toolbar-bitmap"></a><a name="_core_the_toolbar_bitmap"></a>Точечный рисунок панели инструментов
+## <a name="the-toolbar-bitmap"></a><a name="_core_the_toolbar_bitmap"></a> Точечный рисунок панели инструментов
 
 После создания `CToolBar` объект создает изображение панели инструментов, загружая один точечный рисунок, который содержит одно изображение для каждой кнопки. Мастер приложений создает стандартный точечный рисунок панели инструментов, который можно настроить с помощью [редактора панели инструментов](../windows/toolbar-editor.md)Visual C++.
 
@@ -96,7 +97,7 @@ MFC также поддерживает советы по использован
 
 - [Закрепленные и плавающие панели инструментов](docking-and-floating-toolbars.md)
 
-- [Советы по инструментам панели инструментов](toolbar-tool-tips.md)
+- [Всплывающие подсказки панели инструментов](toolbar-tool-tips.md)
 
 - [Работа с элементом управления ToolBar](working-with-the-toolbar-control.md)
 

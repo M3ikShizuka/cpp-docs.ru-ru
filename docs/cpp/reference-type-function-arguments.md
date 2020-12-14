@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Reference-Type аргументов функции'
 title: Аргументы функции ссылочного типа
 ms.date: 08/27/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - function arguments [C++], reference-type
 - passing parameters [C++], reference-type arguments
 ms.assetid: 0a70e831-9e76-46c0-821d-aeba13d73cc0
-ms.openlocfilehash: 5a409efbe2908954d394656cb989ad6b80a9ce22
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 2e290160b1b897eadbf77f0c8a805f927a26c02f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233643"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97260336"
 ---
 # <a name="reference-type-function-arguments"></a>Аргументы функции ссылочного типа
 
@@ -79,6 +80,6 @@ long DateOfYear( const Date& date );
 
 Любая функция, заданная как принимающая ссылочный тип, может принять объект того же типа в своем месте, так как существует стандартное преобразование из *TypeName* в *TypeName* <strong>&</strong> .
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Справочные материалы](../cpp/references-cpp.md)<br/>

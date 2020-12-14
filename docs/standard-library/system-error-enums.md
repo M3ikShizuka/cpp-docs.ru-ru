@@ -1,22 +1,23 @@
 ---
+description: 'Дополнительные сведения о: &lt; system_error &gt; перечисления'
 title: Перечисления &lt;system_error&gt;
 ms.date: 11/04/2016
 f1_keywords:
 - system_error/std::errc
 - system_error/std::io_errc
 ms.assetid: b21321b7-404a-40de-8777-a85b77c6fa58
-ms.openlocfilehash: cff8a58545409c4358cd303e41d27520edd5d552
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 63126c8fde91d44dbecf52cca1240c4f8b44b88a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79427563"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97259452"
 ---
 # <a name="ltsystem_errorgt-enums"></a>Перечисления &lt;system_error&gt;
 
-## <a name="errc"></a>ERRC
+## <a name="errc"></a><a name="errc"></a> ERRC
 
-Предоставляет символьные имена для всех макросов кода ошибки, определенных POSIX в `<errno.h>`.
+Предоставляет символьные имена для всех макросов кода ошибки, определенных POSIX в `<errno.h>` .
 
 ```cpp
 class errc {
@@ -101,11 +102,11 @@ class errc {
 };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="io_errc"></a>io_errc
+## <a name="io_errc"></a><a name="io_errc"></a> io_errc
 
-Предоставляет символьные имена для условий ошибок в \<iostream>. Можно использовать для создания объектов [error_condition](../standard-library/error-condition-class.md), сравниваемых со значением, которое возвращается функцией [ios_base::failure](../standard-library/ios-base-class.md#failure)`code()`.
+Предоставляет символьные имена для условий ошибок в \<iostream> . Можно использовать для создания объектов [error_condition](../standard-library/error-condition-class.md), сравниваемых со значением, которое возвращается функцией [ios_base::failure](../standard-library/ios-base-class.md#failure)`code()`.
 
 ```cpp
 class io_errc {
@@ -113,7 +114,7 @@ class io_errc {
 };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Объекты [std::make_error_code()](../standard-library/system-error-functions.md#make_error_code) и [std::make_error_condition()](../standard-library/system-error-functions.md#make_error_condition) являются перегруженными для этого перечисления.
 

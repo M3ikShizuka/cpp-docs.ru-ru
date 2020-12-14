@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _get_pgmptr'
 title: _get_pgmptr
 ms.date: 4/2/2020
 api_name:
@@ -30,12 +31,12 @@ helpviewer_keywords:
 - pgmptr global variable
 - _pgmptr global variable
 ms.assetid: 29f16a9f-a685-4721-add3-7fad4f67eece
-ms.openlocfilehash: a4a9bddfa861727e174325dc639868e3529162cd
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 440bc7221f00d5ce04f4583666a76a0fadfee288
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918217"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296593"
 ---
 # <a name="_get_pgmptr"></a>_get_pgmptr
 
@@ -58,7 +59,7 @@ errno_t _get_pgmptr(
 
 Возвращает нуль в случае успеха или код ошибки в случае ошибки. Если параметр *pValue* имеет **значение NULL**, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, эта функция **устанавливает** **Еинвал** и возвращает **еинвал**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Вызывайте **_get_pgmptr** только в том случае, если программа имеет узкие точки входа, например **Main ()** или **WinMain ()**. **_Pgmptr** глобальная переменная содержит полный путь к исполняемому файлу, связанному с процессом. Дополнительные сведения см. в разделе [_pgmptr _wpgmptr](../../c-runtime-library/pgmptr-wpgmptr.md).
 
