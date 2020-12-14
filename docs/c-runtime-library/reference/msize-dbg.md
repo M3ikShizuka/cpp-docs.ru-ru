@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _msize_dbg'
 title: _msize_dbg
 ms.date: 11/04/2016
 api_name:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - _msize_dbg function
 - msize_dbg function
 ms.assetid: a333f4b6-f8a2-4e61-bb69-cb34063b8cef
-ms.openlocfilehash: 7fa12689a35beaad0727c14327d1b948a62c29d0
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 8ead0257e990322e88e20ce6111ff590dbc71686
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951493"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256397"
 ---
 # <a name="_msize_dbg"></a>_msize_dbg
 
@@ -58,11 +59,11 @@ size_t _msize_dbg(
 
 При успешном завершении **_msize_dbg** возвращает размер указанного блока памяти (в байтах); в противном случае возвращается **значение NULL**.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-**_msize_dbg** — это отладочная версия функции _[MSize](msize.md) . Если [_DEBUG](../../c-runtime-library/debug.md) не определен, каждый вызов **_msize_dbg** уменьшается до вызова **_msize**. И **_msize** , и **_msize_dbg** вычисляют размер блока памяти в базовой куче, но **_msize_dbg** добавляет две функции отладки: Он включает буферы с любой стороны пользовательской части блока памяти в возвращенном размере и позволяет вычисление размера для конкретных типов блоков.
+**_msize_dbg** — это отладочная версия функции _ [MSize](msize.md) . Если [_DEBUG](../../c-runtime-library/debug.md) не определен, каждый вызов **_msize_dbg** сокращается до вызова **_msize**. И **_msize** , и **_msize_dbg** вычисляют размер блока памяти в базовой куче, но **_msize_dbg** добавляет две функции отладки: она включает буферы с любой стороны пользовательской части блока памяти в возвращенном размере и позволяет вычисление размера для конкретных типов блоков.
 
-Сведения о выделении, инициализации и управлении блоками памяти в отладочной версии базовой кучи, см. в статье [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details). Сведения о типах блоков выделения и способах их использования см. в разделе [Типы блоков в отладочной куче](/visualstudio/debugger/crt-debug-heap-details). Сведения о различиях между вызовом стандартной функции кучи и ее отладочной версии в сборке отладки приложения см. в разделе [Версии отладки функций выделения кучи](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
+Сведения о выделении, инициализации и управлении блоками памяти в отладочной версии базовой кучи, см. в статье [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details). Сведения о типах блоков выделения и их использовании см. в разделе [типы блоков в отладочной куче](/visualstudio/debugger/crt-debug-heap-details). Сведения о различиях между вызовом стандартной функции кучи и ее отладочной версии в сборке отладки приложения см. в разделе [Версии отладки функций выделения кучи](/visualstudio/debugger/debug-versions-of-heap-allocation-functions).
 
 Эта функция проверяет свои параметры. Если *мемблокк* является пустым указателем, **_msize** вызывает обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если ошибка обработана, **функция устанавливает значение** по **еинвал** и возвращает-1.
 
@@ -72,7 +73,7 @@ size_t _msize_dbg(
 |-------------|---------------------|
 |**_msize_dbg**|\<crtdbg.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Библиотеки
 
@@ -139,5 +140,5 @@ Size of block after _realloc_dbg of 40 more longs: 320
 
 ## <a name="see-also"></a>См. также
 
-[Процедуры отладки](../../c-runtime-library/debug-routines.md)<br/>
+[Отладочные подпрограммы](../../c-runtime-library/debug-routines.md)<br/>
 [_malloc_dbg](malloc-dbg.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _resetstkoflw'
 title: _resetstkoflw
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - stack, recovering
 - _resetstkoflw function
 ms.assetid: 319529cd-4306-4d22-810b-2063f3ad9e14
-ms.openlocfilehash: 6f4d5d930ebdc487c3c2bcc2f93494a25528c438
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 02eb973c63bb372e43e57c413385b8e1b13d9f38
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216782"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97250352"
 ---
 # <a name="_resetstkoflw"></a>_resetstkoflw
 
@@ -53,7 +54,7 @@ int _resetstkoflw( void );
 
 Ненулевое значение, если функция завершается успешно; в противном случае — ноль.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_resetstkoflw** восстанавливается из состояния переполнения стека, что позволяет программе продолжать работу вместо сбоя с неустранимой ошибкой исключения. Если функция **_resetstkoflw** не вызывается, то после предыдущего исключения страницы защиты отсутствуют. При последующем переполнении стека исключений не будет, и процесс завершится без предупреждения.
 
@@ -309,6 +310,6 @@ Stack overflow!
 Recovered from stack overflow and allocated 100,000 bytes using _alloca.
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [_alloca](alloca.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: норма, нормф, норма'
 title: norm, normf, norml
 ms.date: 04/05/2018
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - normf function
 - norml function
 ms.assetid: 9786ecfe-0019-4553-b378-0af6c691e15c
-ms.openlocfilehash: 38e7283ca5acd5571589d3ef0b19c626806e4bca
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 175cff5f9c0e31a56a86a96c3262e2c3c546fe4a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234059"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256306"
 ---
 # <a name="norm-normf-norml"></a>norm, normf, norml
 
@@ -59,14 +60,14 @@ long double norm( _Lcomplex z );  // C++ only
 
 ### <a name="parameters"></a>Параметры
 
-*гармошкой*<br/>
+*з*<br/>
 Комплексное число.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Величина квадрата *z*.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Поскольку C++ допускает перегрузку, можно вызывать перегрузки **нормы** , которые принимают **_Fcomplex** или **_Lcomplex** значения, а также возвращают **`float`** **`long double`** значения или. В программе на языке C **норма** всегда принимает значение **_Dcomplex** и возвращает **`double`** значение.
 
@@ -76,9 +77,9 @@ long double norm( _Lcomplex z );  // C++ only
 |-------------|--------------|------------------|
 |**норма**, **нормф**, **норма**|\<complex.h>|\<complex.h>|
 
-Типы **_Fcomplex**, **_Dcomplex**и **_Lcomplex** являются эквивалентами корпорации Майкрософт нереализованных собственных типов C99 с **плавающей запятой _Complex**, **Double _Complex**и **long double _Complex**соответственно.  Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
+Типы **_Fcomplex**, **_Dcomplex** и **_Lcomplex** являются эквивалентами корпорации Майкрософт нереализованных собственных типов C99 с **плавающей запятой _Complex**, **Double _Complex** и **long double _Complex** соответственно.  Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Алфавитный справочник по функциям](crt-alphabetical-function-reference.md)<br/>
 [creal, crealf, creall](creal-crealf-creall.md)<br/>

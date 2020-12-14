@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: NaN, nanf, нанл'
 title: nan, nanf, nanl
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - nanf function
 - nanl function
 ms.assetid: 790e9158-80ab-43e0-8f5a-096198553fd9
-ms.openlocfilehash: 77e933b971312097ec9eddd342b3b4dc2df34204
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 3fd5fcb004058baf8d216385cde023033f29f08f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914589"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256332"
 ---
 # <a name="nan-nanf-nanl"></a>nan, nanf, nanl
 
@@ -56,13 +57,13 @@ long double nanl( const char* input );
 ### <a name="parameters"></a>Параметры
 
 *input*<br/>
-Значение типа string.
+Строковое значение.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Функции **NaN** возвращают нетихом значение NaN.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функции **NaN** возвращают значение с плавающей запятой, соответствующее скрытому типу NaN (без сигнализации). *Входное* значение игнорируется. Сведения о том, как значение NaN представляется для вывода, см. в разделе [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
 
@@ -76,7 +77,7 @@ long double nanl( const char* input );
 
 ## <a name="see-also"></a>См. также раздел
 
-[Поддержка чисел с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
 [fpclassify](fpclassify.md)<br/>
 [_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>
 [isfinite, _finite, _finitef](finite-finitef.md)<br/>

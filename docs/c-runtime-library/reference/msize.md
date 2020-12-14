@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _msize'
 title: _msize
 ms.date: 4/2/2020
 api_name:
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - msize function
 - _msize function
 ms.assetid: 02b1f89e-d0d7-4f12-938a-9eeba48a0f88
-ms.openlocfilehash: cc8eef0d28f649340715edbf4b1ebdfea85c2ff2
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e1a913f008037673bf8c10e73095a898610039d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82914607"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256358"
 ---
 # <a name="_msize"></a>_msize
 
@@ -57,9 +58,9 @@ size_t _msize(
 
 **_msize** возвращает размер (в байтах) в виде целого числа без знака.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функция **_msize** возвращает размер (в байтах) блока памяти, выделенного вызовом **calloc**, **malloc**или **realloc**.
+Функция **_msize** возвращает размер (в байтах) блока памяти, выделенного вызовом **calloc**, **malloc** или **realloc**.
 
 Если приложение связано с отладочной версией библиотек времени выполнения C, **_msize** разрешается в [_msize_dbg](msize-dbg.md). Дополнительные сведения об управлении кучей в процессе отладки см. в разделе [Куча отладки CRT](/visualstudio/debugger/crt-debug-heap-details).
 

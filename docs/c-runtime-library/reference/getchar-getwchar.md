@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: GetChars, getwchar'
 title: getchar, getwchar
 ms.date: 06/23/2020
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - _gettchar function
 - standard input, reading from
 ms.assetid: 19fda588-3e33-415c-bb60-dd73c028086a
-ms.openlocfilehash: c6a02f16c3ee3d3e3bc4f86026719a1bd2885416
-ms.sourcegitcommit: 8645408c7929558b8162f781776d0908d790a41c
+ms.openlocfilehash: d8480d179cc31d30d68c07fbe92bf389226ccd53
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85334978"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256761"
 ---
 # <a name="getchar-getwchar"></a>getchar, getwchar
 
@@ -55,7 +56,7 @@ wint_t getwchar();
 
 Возвращает считанный символ. Эти функции ожидают ввода и не возвращают, пока не будут доступны входные данные.
 
-Чтобы указать на ошибку чтения или конец файла, функция **GetChars** возвращает значение **EOF**, а **getwchar** возвращает **WEOF**. Для **GetChars**используйте **ferror** или **feof** для проверки ошибки или завершения файла.
+Чтобы указать на ошибку чтения или конец файла, функция **GetChars** возвращает значение **EOF**, а **getwchar** возвращает **WEOF**. Для **GetChars** используйте **ferror** или **feof** для проверки ошибки или завершения файла.
 
 ## <a name="remarks"></a>Комментарии
 
@@ -78,7 +79,7 @@ wint_t getwchar();
 |**getchar**|\<stdio.h>|
 |**getwchar**|\<stdio.h> или \<wchar.h>|
 
-Консоль не поддерживается в приложениях универсальная платформа Windows (UWP). Стандартные дескрипторы потока, связанные с консолью, **stdin**, **stdout**и **stderr**, должны быть перенаправляться до того, как функции времени выполнения C смогут использовать их в приложениях UWP. Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
+Консоль не поддерживается в приложениях универсальная платформа Windows (UWP). Стандартные дескрипторы потока, связанные с консолью, **stdin**, **stdout** и **stderr**, должны быть перенаправляться до того, как функции времени выполнения C смогут использовать их в приложениях UWP. Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -110,7 +111,7 @@ int main()
 This textInput was: This text
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Потоковый ввод-вывод](../../c-runtime-library/stream-i-o.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>
