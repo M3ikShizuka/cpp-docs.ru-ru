@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кконстанттранситион Class'
 title: Класс CConstantTransition
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - CConstantTransition [MFC], Create
 - CConstantTransition [MFC], m_duration
 ms.assetid: f6fa4780-a71b-4cd6-80aa-d4792ace36c2
-ms.openlocfilehash: 0d5d92f02cc3b56268966f1cd79451578a5cc390
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: cc4cdb6492134de3d76dcca8770636eb964281c1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369410"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227836"
 ---
 # <a name="cconstanttransition-class"></a>Класс CConstantTransition
 
@@ -29,35 +30,35 @@ ms.locfileid: "81369410"
 class CConstantTransition : public CBaseTransition;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CConstantTransition::CConstantTransition](#cconstanttransition)|Строит переходный объект и инициализирует его продолжительность.|
+|[Кконстанттранситион:: Кконстанттранситион](#cconstanttransition)|Создает объект перехода и инициализирует его длительность.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CConstantTransition::Создание](#create)|Вызывает библиотеку перехода для создания инкапсулированного объекта переходного COM. (Переопределяет [CBaseПереход::Создание](../../mfc/reference/cbasetransition-class.md#create).)|
+|[Кконстанттранситион:: Create](#create)|Вызывает библиотеку переходов для создания COM-объекта инкапсулированного перехода. (Переопределяет [CBaseTransition:: Create](../../mfc/reference/cbasetransition-class.md#create).)|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CConstantTransition:::m_duration](#m_duration)|Продолжительность перехода.|
+|[Кконстанттранситион:: m_duration](#m_duration)|Длительность перехода.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Во время постоянного перехода значение переменной анимации остается на начальном значении в течение всего периода перехода. Поскольку все переходы очищаются автоматически, рекомендуется выделять их с помощью нового оператора. Инкапсулированный объект IUIAnimationTransition COM создается CAnimationController::AnimateGroup, до тех пор это NULL. Изменение переменных членов после создания этого объекта COM не имеет эффекта.
+Во время перехода константа значение переменной анимации остается на начальном значении в течение перехода. Так как все переходы очищаются автоматически, рекомендуется выделять их с помощью оператора New. Инкапсулированный COM-объект Иуианиматионтранситион создается методом Каниматионконтроллер:: Аниматеграуп, пока он не будет равен NULL. Изменение переменных-членов после создания этого объекта COM не имеет силы.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
 [CObject](../../mfc/reference/cobject-class.md)
 
-[CBaseПереход](../../mfc/reference/cbasetransition-class.md)
+[CBaseTransition](../../mfc/reference/cbasetransition-class.md)
 
 `CConstantTransition`
 
@@ -65,9 +66,9 @@ class CConstantTransition : public CBaseTransition;
 
 **Заголовок:** afxanimationcontroller.h
 
-## <a name="cconstanttransitioncconstanttransition"></a><a name="cconstanttransition"></a>CConstantTransition::CConstantTransition
+## <a name="cconstanttransitioncconstanttransition"></a><a name="cconstanttransition"></a> Кконстанттранситион:: Кконстанттранситион
 
-Строит переходный объект и инициализирует его продолжительность.
+Создает объект перехода и инициализирует его длительность.
 
 ```
 CConstantTransition (UI_ANIMATION_SECONDS duration);
@@ -75,12 +76,12 @@ CConstantTransition (UI_ANIMATION_SECONDS duration);
 
 ### <a name="parameters"></a>Параметры
 
-*Длительность*<br/>
-Продолжительность перехода.
+*duration*<br/>
+Длительность перехода.
 
-## <a name="cconstanttransitioncreate"></a><a name="create"></a>CConstantTransition::Создание
+## <a name="cconstanttransitioncreate"></a><a name="create"></a> Кконстанттранситион:: Create
 
-Вызывает библиотеку перехода для создания инкапсулированного объекта переходного COM.
+Вызывает библиотеку переходов для создания COM-объекта инкапсулированного перехода.
 
 ```
 virtual BOOL Create(
@@ -90,16 +91,16 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Параметры
 
-*pLibrary*<br/>
-Указатель на [интерфейс IUIAnimationTransitionLibrary,](/windows/win32/api/uianimation/nn-uianimation-iuianimationtransitionlibrary)который определяет библиотеку стандартных переходов.
+*плибрари*<br/>
+Указатель на [интерфейс иуианиматионтранситионлибрари](/windows/win32/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), который определяет библиотеку стандартных переходов.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если переход создан успешно; в противном случае FALSE.
+Значение TRUE, если переход успешно создан; в противном случае — FALSE.
 
-## <a name="cconstanttransitionm_duration"></a><a name="m_duration"></a>CConstantTransition:::m_duration
+## <a name="cconstanttransitionm_duration"></a><a name="m_duration"></a> Кконстанттранситион:: m_duration
 
-Продолжительность перехода.
+Длительность перехода.
 
 ```
 UI_ANIMATION_SECONDS m_duration;

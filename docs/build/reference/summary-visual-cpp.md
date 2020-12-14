@@ -1,5 +1,6 @@
 ---
-title: '> сводки &lt;(C++ комментарии к документации)'
+description: 'Дополнительные сведения: &lt; Сводка&gt;'
+title: '&lt;> сводки (комментарии к документации по C++)'
 ms.date: 11/04/2016
 f1_keywords:
 - <summary>
@@ -8,16 +9,16 @@ helpviewer_keywords:
 - <summary> C++ XML tag
 - summary C++ XML tag
 ms.assetid: cdeeefbb-1339-45d6-9002-10042a9a2726
-ms.openlocfilehash: 0620273f24573539897809b7892d46ad49b7aa57
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 73e36367ff1a36f2b030525ea22f634ae74b64a4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74988584"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230228"
 ---
 # <a name="ltsummarygt"></a>&lt;summary&gt;
 
-Тег \<summary> следует использовать для описания типа или члена типа. Чтобы добавить дополнительную информацию в описание типа, используйте [\<remarks>](remarks-visual-cpp.md).
+Тег \<summary> следует использовать для описания типа или элемента типа. Чтобы добавить дополнительную информацию в описание типа, используйте [\<remarks>](remarks-visual-cpp.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -30,11 +31,11 @@ ms.locfileid: "74988584"
 *description*<br/>
 Сводка объекта.
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Примечания
 
-Текст в теге \<summary> является единственным источником сведений о типе для технологии IntelliSense, а также отображается в [обозревателе объектов](/visualstudio/ide/viewing-the-structure-of-code) и веб-отчете комментариев кода.
+Текст для \<summary> тега — единственный источник сведений о типе в IntelliSense, который также отображается в [обозревателе объектов](/visualstudio/ide/viewing-the-structure-of-code) и в веб-отчете с комментариями кода.
 
-Чтобы обработать и сохранить комментарии документации в файл, при компиляции необходимо использовать параметр [/doc](doc-process-documentation-comments-c-cpp.md).
+Скомпилируйте с [/doc](doc-process-documentation-comments-c-cpp.md) для обработки комментариев документации в файл.
 
 ## <a name="example"></a>Пример
 
@@ -57,6 +58,6 @@ public:
 };
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
 [Документация XML](xml-documentation-visual-cpp.md)

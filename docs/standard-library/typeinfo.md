@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: &lt; typeInfo&gt;'
 title: '&lt;typeInfo&gt;'
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,16 +7,16 @@ f1_keywords:
 helpviewer_keywords:
 - typeinfo header
 ms.assetid: 97ebc4d0-0e0e-41c3-9787-fdef2e38e56f
-ms.openlocfilehash: ee075240725e23c43939dc646c2201cedf379056
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 8bf257ee0b4f80a4cfbd5cb43507d784aefe9ec6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62278700"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97226432"
 ---
 # <a name="lttypeinfogt"></a>&lt;typeInfo&gt;
 
-Включите стандартный заголовок \<typeinfo > для определения нескольких типов, связанной с оператором идентификации типа [оператор typeid](../cpp/typeid-operator.md), который возвращает сведения о статических и динамических типах.
+Включите стандартный заголовок \<typeinfo> для определения нескольких типов, связанных с оператором идентификации типа [typeid](../cpp/typeid-operator.md), который возвращает сведения о статических и динамических типах.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -23,9 +24,9 @@ ms.locfileid: "62278700"
 #include <typeinfo>
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Дополнительные сведения о классах, определенных в \<typeinfo>, см. в следующих разделах:
+Сведения о классах, определенных в \<typeinfo> , см. в следующих разделах:
 
 - [Исключение bad_cast](../cpp/bad-cast-exception.md)
 

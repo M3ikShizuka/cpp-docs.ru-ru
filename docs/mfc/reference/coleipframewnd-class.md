@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: COleIPFrameWnd Class'
 title: Класс COleIPFrameWnd
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - COleIPFrameWnd [MFC], OnCreateControlBars
 - COleIPFrameWnd [MFC], RepositionFrame
 ms.assetid: 24abb2cb-826c-4dda-a287-d8a8900a5763
-ms.openlocfilehash: 01e259cf01c42add26088b0cbd2f6dab311eb9b1
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d89cfa9b3f6d610276c3c972ee48c943f753e36a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81374954"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227017"
 ---
 # <a name="coleipframewnd-class"></a>Класс COleIPFrameWnd
 
@@ -29,26 +30,26 @@ ms.locfileid: "81374954"
 class COleIPFrameWnd : public CFrameWnd
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[COleIPFrameWnd::COleIPFrameWnd](#coleipframewnd)|Формирует объект `COleIPFrameWnd`.|
+|[COleIPFrameWnd:: COleIPFrameWnd](#coleipframewnd)|Формирует объект `COleIPFrameWnd`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[ColeIPFrameWnd::OnCreateControlBars](#oncreatecontrolbars)|Вызывается в рамках, когда элемент активирован для редактирования на месте.|
-|[ColeIPFrameWnd::RepositionFrame](#repositionframe)|Вызывается в рамках для перепозиционирования окна редактирования на месте.|
+|[COleIPFrameWnd:: OnCreateControlBars](#oncreatecontrolbars)|Вызывается структурой при активации элемента для редактирования на месте.|
+|[COleIPFrameWnd:: Репоситионфраме](#repositionframe)|Вызвано структурой для изменения расположения окна редактирования на месте.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Этот класс создает и позиционирует панели управления в окне документа приложения контейнера. Он также обрабатывает уведомления, генерируемые встроенным объектом [COleReSizeBar,](../../mfc/reference/coleresizebar-class.md) когда пользователь изменяет окно редактирования на месте.
+Этот класс создает и позиционирует панели элементов управления в окне документа приложения контейнера. Он также обрабатывает уведомления, созданные внедренным объектом [колересизебар](../../mfc/reference/coleresizebar-class.md) , когда пользователь изменяет размер окна редактирования на месте.
 
-Для получения дополнительной `COleIPFrameWnd`информации [Activation](../../mfc/activation-cpp.md)об использовании, см.
+Дополнительные сведения об использовании см `COleIPFrameWnd` . в статье [Активация](../../mfc/activation-cpp.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -64,23 +65,23 @@ class COleIPFrameWnd : public CFrameWnd
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxole.h
+**Заголовок:** афксоле. h
 
-## <a name="coleipframewndcoleipframewnd"></a><a name="coleipframewnd"></a>COleIPFrameWnd::COleIPFrameWnd
+## <a name="coleipframewndcoleipframewnd"></a><a name="coleipframewnd"></a> COleIPFrameWnd:: COleIPFrameWnd
 
-Строит `COleIPFrameWnd` объект и инициализирует его информацию о состоянии, которая хранится в структуре типа OLEINPLACEFRAMEINFO.
+Создает `COleIPFrameWnd` объект и инициализирует его сведения о состоянии на месте, которые хранятся в структуре типа олеинплацефрамеинфо.
 
 ```
 COleIPFrameWnd();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Для получения дополнительной информации [см. OLEINPLACEFRAMEINFO](/windows/win32/api/oleidl/ns-oleidl-oleinplaceframeinfo) в Windows SDK.
+Дополнительные сведения см. в разделе [олеинплацефрамеинфо](/windows/win32/api/oleidl/ns-oleidl-oleinplaceframeinfo) в Windows SDK.
 
-## <a name="coleipframewndoncreatecontrolbars"></a><a name="oncreatecontrolbars"></a>ColeIPFrameWnd::OnCreateControlBars
+## <a name="coleipframewndoncreatecontrolbars"></a><a name="oncreatecontrolbars"></a> COleIPFrameWnd:: OnCreateControlBars
 
-Фрейм `OnCreateControlBars` вызывает функцию при активации элемента для редактирования на месте.
+Платформа вызывает функцию, `OnCreateControlBars` когда элемент активируется для редактирования на месте.
 
 ```
 virtual BOOL OnCreateControlBars(
@@ -94,23 +95,23 @@ virtual BOOL OnCreateControlBars(
 
 ### <a name="parameters"></a>Параметры
 
-*pWndFrame*<br/>
-Указатель на окно рамы контейнерного приложения.
+*пвндфраме*<br/>
+Указатель на окно фрейма приложения контейнера.
 
 *pWndDoc*<br/>
-Указатель на окно уровня документа контейнера. Может быть NULL, если контейнер является приложением SDI.
+Указатель на окно уровня документа контейнера. Может иметь значение NULL, если контейнер является приложением SDI.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Nonzero на успех; в противном случае, 0.
+Ненулевое значение при успешном выполнении; в противном случае — значение 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Реализация по умолчанию не выполняет никаких действий. Переопределить эту функцию для выполнения любой специальной обработки, необходимой при создании баров управления.
+Реализация по умолчанию не выполняет никаких действий. Переопределите эту функцию для выполнения специальной обработки, необходимой при создании панелей элементов управления.
 
-## <a name="coleipframewndrepositionframe"></a><a name="repositionframe"></a>ColeIPFrameWnd::RepositionFrame
+## <a name="coleipframewndrepositionframe"></a><a name="repositionframe"></a> COleIPFrameWnd:: Репоситионфраме
 
-Платформа вызывает `RepositionFrame` функцию элемента для выкладывания баров управления и перепозиционирования окна редактирования на месте, чтобы все это было видно.
+Платформа вызывает функцию- `RepositionFrame` член для размещения панелей управления и перемещения окна редактирования на месте, чтобы все это было видимым.
 
 ```
 virtual void RepositionFrame(
@@ -120,19 +121,19 @@ virtual void RepositionFrame(
 
 ### <a name="parameters"></a>Параметры
 
-*lpPosRect*<br/>
-Указатель на `RECT` структуру `CRect` или объект, содержащий текущие координаты текущего положения окна кадров, в пикселях относительно области клиента.
+*лппосрект*<br/>
+Указатель на `RECT` структуру или `CRect` объект, содержащий координаты текущей позиции окна фрейма в пикселях относительно клиентской области.
 
-*lpClipRect*<br/>
-Указатель на `RECT` структуру `CRect` или объект, содержащий текущие координаты отсечения-прямоугольника окна в месте, в пикселях относительно области клиента.
+*лпклипрект*<br/>
+Указатель на `RECT` структуру или `CRect` объект, содержащий координаты текущего прямоугольника в окне фрейма в пикселях относительно клиентской области.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Расположение контрольных баров в окне контейнера отличается от того, что выполняется окном кадра, не относящееся к OLE. Окно кадра, не отчаиваемые для OLE, вычисляет положения баров управления и других объектов от данного размера окна кадра, как в вызове на [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout). Область клиента — это то, что остается после вычитания пространства для контрольных баров и других объектов. Окно, `COleIPFrameWnd` с другой стороны, позиционирует панели инструментов в соответствии с данной областью клиента. Другими словами, `CFrameWnd::RecalcLayout` работает "снаружи в", в то время как `COleIPFrameWnd::RepositionFrame` работает "изнутри".
+Макет панелей элементов управления в окне контейнера отличается от структуры, выполняемой окном фрейма, не относящегося к OLE. Окно фрейма, не являющегося рамкой OLE, вычисляет положение панелей элементов управления и других объектов от определенного размера окна фрейма, как при вызове метода [CFrameWnd:: RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout). Клиентская область остается после вычитания пространства для панелей элементов управления и других объектов. `COleIPFrameWnd`Окно, с другой стороны, позиционирует панели инструментов в соответствии с заданной клиентской областью. Иными словами, `CFrameWnd::RecalcLayout` Works «работает» из внешней среды, «а `COleIPFrameWnd::RepositionFrame` работает» из «внутренней».
 
 ## <a name="see-also"></a>См. также раздел
 
-[MFC Образец HIERSVR](../../overview/visual-cpp-samples.md)<br/>
+[Пример MFC для примера HIERSVR](../../overview/visual-cpp-samples.md)<br/>
 [Класс CFrameWnd](../../mfc/reference/cframewnd-class.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Класс CFrameWnd](../../mfc/reference/cframewnd-class.md)

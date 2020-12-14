@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/TLBOUT (имя. TLB-файл)
 title: /TLBOUT (задание имени TLB-файла)
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - .tlb files, renaming
 - -TLBOUT linker option
 ms.assetid: 0df6d078-2e48-46c9-a1a5-02674d85dce8
-ms.openlocfilehash: 62913eaadd0f0a88f05ce347a6778062a1e66f17
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 4e99f3b5a036ddbc424732e771f7bab27aeb228d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509343"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97230007"
 ---
 # <a name="tlbout-name-tlb-file"></a>/TLBOUT (задание имени TLB-файла)
 
@@ -32,7 +33,7 @@ ms.locfileid: "91509343"
 *filename*<br/>
 Указывает имя файла TLB, созданного компилятором MIDL. Расширение файла не предполагается. Укажите *filename*. tlb, если требуется расширение TLB.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Параметр/TLBOUT задает имя и расширение файла TLB.
 

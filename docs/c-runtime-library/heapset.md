@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _heapset'
 title: _heapset
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - debugging [CRT], heap-related problems
 - _heapset function
 ms.assetid: 9667eeb0-55bc-4c19-af5f-d1fd0a142b3c
-ms.openlocfilehash: 5bf27ac8287e785b1c799565781842db54edee4d
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 628babf8d49e22d75498aeb9b919283bb7257c1b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837831"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229877"
 ---
 # <a name="_heapset"></a>_heapset
 
@@ -65,7 +66,7 @@ int _heapset(
 
 Кроме того, при возникновении ошибки функция `_heapset` устанавливает для параметра `errno` значение `ENOSYS`.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция `_heapset` показывает расположения свободной памяти или узлы, которые были непреднамеренно перезаписаны.
 

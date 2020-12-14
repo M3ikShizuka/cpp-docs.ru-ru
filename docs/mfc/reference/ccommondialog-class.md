@@ -1,5 +1,6 @@
 ---
-title: Класс CCommonДиалог
+description: 'Дополнительные сведения о: Ккоммондиалог Class'
+title: Класс Ккоммондиалог
 ms.date: 11/04/2016
 f1_keywords:
 - CCommonDialog
@@ -8,14 +9,14 @@ f1_keywords:
 helpviewer_keywords:
 - CCommonDialog [MFC], CCommonDialog
 ms.assetid: 1f68d65f-a0fd-4778-be22-ebbe51a95f95
-ms.openlocfilehash: 853a4756df3b70f4f33deb7159b4d1aee610092c
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 927348982529f14eb0ad762019bb4463aaa77c99
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369447"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97227901"
 ---
-# <a name="ccommondialog-class"></a>Класс CCommonДиалог
+# <a name="ccommondialog-class"></a>Класс Ккоммондиалог
 
 Базовый класс для классов, которые инкапсулируют функцию общих диалоговых окон Windows.
 
@@ -25,17 +26,17 @@ ms.locfileid: "81369447"
 class CCommonDialog : public CDialog
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CCommonДиалог::CCommonДиалог](#ccommondialog)|Формирует объект `CCommonDialog`.|
+|[Ккоммондиалог:: Ккоммондиалог](#ccommondialog)|Формирует объект `CCommonDialog`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Следующие классы инкапсулируют функциональность общих диалогов Windows:
+Следующие классы инкапсулируют функциональные возможности общих диалоговых окон Windows:
 
 - [CFileDialog](../../mfc/reference/cfiledialog-class.md)
 
@@ -67,9 +68,9 @@ class CCommonDialog : public CDialog
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxdlgs.h
+**Заголовок:** афксдлгс. h
 
-## <a name="ccommondialogccommondialog"></a><a name="ccommondialog"></a>CCommonДиалог::CCommonДиалог
+## <a name="ccommondialogccommondialog"></a><a name="ccommondialog"></a> Ккоммондиалог:: Ккоммондиалог
 
 Формирует объект `CCommonDialog`.
 
@@ -79,21 +80,21 @@ explicit CCommonDialog(CWnd* pParentWnd);
 
 ### <a name="parameters"></a>Параметры
 
-*pParentWnd*<br/>
-Указывает на объект окна родителя или владельца (типа [CWnd),](../../mfc/reference/cwnd-class.md)к которому принадлежит объект диалога. Если это NULL, родительское окно объекта диалога устанавливается на основное окно приложения.
+*ппарентвнд*<br/>
+Указывает на родительский элемент или объект окна-владельца (типа [CWnd](../../mfc/reference/cwnd-class.md)), которому принадлежит объект диалогового окна. Если значение равно NULL, то родительское окно объекта диалогового окна устанавливается в главное окно приложения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Смотрите [CDialog::CDialog](../../mfc/reference/cdialog-class.md#cdialog) для получения полной информации.
+Полные сведения см. в разделе [CDialog:: CDialog](../../mfc/reference/cdialog-class.md#cdialog) .
 
 ## <a name="see-also"></a>См. также раздел
 
 [Класс CDialog](../../mfc/reference/cdialog-class.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Класс CFileDialog](../../mfc/reference/cfiledialog-class.md)<br/>
-[Класс CFontDialog](../../mfc/reference/cfontdialog-class.md)<br/>
-[Класс CColorDialog](../../mfc/reference/ccolordialog-class.md)<br/>
-[Класс CPageSetupDialog](../../mfc/reference/cpagesetupdialog-class.md)<br/>
-[Класс CPrintDialog](../../mfc/reference/cprintdialog-class.md)<br/>
-[Класс CFindReplaceDialog](../../mfc/reference/cfindreplacedialog-class.md)<br/>
-[Класс COleDialog](../../mfc/reference/coledialog-class.md)
+[Класс Кфонтдиалог](../../mfc/reference/cfontdialog-class.md)<br/>
+[Класс Кколордиалог](../../mfc/reference/ccolordialog-class.md)<br/>
+[Класс Кпажесетупдиалог](../../mfc/reference/cpagesetupdialog-class.md)<br/>
+[Класс Кпринтдиалог](../../mfc/reference/cprintdialog-class.md)<br/>
+[Класс диалоговое CFindReplaceDialog](../../mfc/reference/cfindreplacedialog-class.md)<br/>
+[Класс Коледиалог](../../mfc/reference/coledialog-class.md)

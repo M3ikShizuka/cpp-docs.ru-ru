@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: HString Class'
 title: Класс HString
 ms.date: 07/15/2019
 ms.topic: reference
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - Microsoft::WRL::Wrappers::HString::Set method
 - Microsoft::WRL::Wrappers::HString::~HString, destructor
 ms.assetid: 6709dd2e-8d72-4675-8ec7-1baa7d71854d
-ms.openlocfilehash: 549e3fe2a83bb091bcf90e7957b20c219728bdbc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3a7de2595fbc55cec21f74193cc53f29438530cc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216587"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229162"
 ---
 # <a name="hstring-class"></a>Класс HString
 
@@ -63,7 +64,7 @@ class HString;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-Имя                                | Описание
+name                                | Описание
 ----------------------------------- | -----------------------------------------------------
 [HString:: HString](#hstring)        | Инициализирует новый экземпляр класса `HString`.
 [HString:: ~ HString](#tilde-hstring) | Уничтожает текущий экземпляр `HString` класса.
@@ -102,7 +103,7 @@ name                                     | Описание
 
 **Пространство имен:** Программы Microsoft:: WRL:: оболочки
 
-## <a name="hstringhstring"></a><a name="tilde-hstring"></a>HString:: ~ HString
+## <a name="hstringhstring"></a><a name="tilde-hstring"></a> HString:: ~ HString
 
 Уничтожает текущий экземпляр `HString` класса.
 
@@ -110,7 +111,7 @@ name                                     | Описание
 ~HString() throw()
 ```
 
-## <a name="hstringattach"></a><a name="attach"></a>HString:: Attach
+## <a name="hstringattach"></a><a name="attach"></a> HString:: Attach
 
 Связывает указанный `HString` объект с текущим `HString` объектом.
 
@@ -125,7 +126,7 @@ void Attach(
 *хстр*<br/>
 Существующий объект `HString`.
 
-## <a name="hstringcopyto"></a><a name="copyto"></a>HString:: CopyTo
+## <a name="hstringcopyto"></a><a name="copyto"></a> HString:: CopyTo
 
 Копирует текущий `HString` объект в объект HString.
 
@@ -140,11 +141,11 @@ HRESULT CopyTo(
 *str*<br/>
 HSTRING, который получает копию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод вызывает функцию [виндовсдупликатестринг](/windows/win32/api/winstring/nf-winstring-windowsduplicatestring) .
 
-## <a name="hstringdetach"></a><a name="detach"></a>HString::D етач
+## <a name="hstringdetach"></a><a name="detach"></a> HString::D етач
 
 Отменяет связь указанного `HString` объекта с его базовым значением.
 
@@ -156,7 +157,7 @@ HSTRING Detach() throw()
 
 Базовое `HString` значение до начала операции отсоединения.
 
-## <a name="hstringget"></a><a name="get"></a>HString:: Get
+## <a name="hstringget"></a><a name="get"></a> HString:: Get
 
 Получает значение базового маркера HSTRING.
 
@@ -168,7 +169,7 @@ HSTRING Get() const throw()
 
 Значение базового дескриптора HSTRING.
 
-## <a name="hstringgetaddressof"></a><a name="getaddressof"></a>HString:: GetAddressOf
+## <a name="hstringgetaddressof"></a><a name="getaddressof"></a> HString:: GetAddressOf
 
 Извлекает указатель на базовый маркер HSTRING.
 
@@ -180,11 +181,11 @@ HSTRING* GetAddressOf() throw()
 
 Указатель на базовый дескриптор HSTRING.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 После этой операции строковое значение базового дескриптора HSTRING будет уничтожено.
 
-## <a name="hstringgetrawbuffer"></a><a name="getrawbuffer"></a>HString:: Жетравбуффер
+## <a name="hstringgetrawbuffer"></a><a name="getrawbuffer"></a> HString:: Жетравбуффер
 
 Извлекает указатель на базовые строковые данные.
 
@@ -200,7 +201,7 @@ const wchar_t* GetRawBuffer(unsigned int* length) const;
 
 **`const`** Указатель на базовые строковые данные.
 
-## <a name="hstringhstring"></a><a name="hstring"></a>HString:: HString
+## <a name="hstringhstring"></a><a name="hstring"></a> HString:: HString
 
 Инициализирует новый экземпляр класса `HString`.
 
@@ -217,13 +218,13 @@ HString(HString&& other) throw();
 *иной*<br/>
 Существующий объект `HString`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый конструктор инициализирует новый `HString` пустой объект.
 
 Второй конструктор инициализирует новый `HString` объект значением существующего *другого* параметра, а затем уничтожает *другой* параметр.
 
-## <a name="hstringisvalid"></a><a name="isvalid"></a>HString:: IsValid
+## <a name="hstringisvalid"></a><a name="isvalid"></a> HString:: IsValid
 
 Указывает, является ли текущий `HString` объект пустым.
 
@@ -233,9 +234,9 @@ bool IsValid() const throw()
 
 ### <a name="parameters"></a>Параметры
 
-**`true`**, если текущий `HString` объект не пуст; в противном случае — **`false`** .
+**`true`** , если текущий `HString` объект не пуст; в противном случае — **`false`** .
 
-## <a name="hstringmakereference"></a><a name="makereference"></a>HString:: MakeReference
+## <a name="hstringmakereference"></a><a name="makereference"></a> HString:: MakeReference
 
 Создает `HStringReference` объект из указанного строкового параметра.
 
@@ -265,7 +266,7 @@ template<unsigned int sizeDest>
 
 Объект, значение которого совпадает с `HStringReference` заданным параметром *str* .
 
-## <a name="hstringoperator-operator"></a><a name="operator-assign"></a>Оператор HString:: operator =
+## <a name="hstringoperator-operator"></a><a name="operator-assign"></a> Оператор HString:: operator =
 
 Перемещает значение другого `HString` объекта в текущий `HString` объект.
 
@@ -278,11 +279,11 @@ HString& operator=(HString&& other) throw()
 *иной*<br/>
 Существующий объект `HString`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Значение *существующего объекта* копируется в текущий `HString` объект, а затем удаляется *другой* объект.
 
-## <a name="hstringoperator-operator"></a><a name="operator-equality"></a>Оператор HString:: operator = =
+## <a name="hstringoperator-operator"></a><a name="operator-equality"></a> Оператор HString:: operator = =
 
 Указывает, равны ли два параметра.
 
@@ -320,7 +321,7 @@ inline bool operator==(
 
 **`true`** значение, если параметры *LHS* и *RHS* равны; в противном случае — **`false`** .
 
-## <a name="hstringoperator-operator"></a><a name="operator-inequality"></a>Оператор HString:: operator! =
+## <a name="hstringoperator-operator"></a><a name="operator-inequality"></a> Оператор HString:: operator! =
 
 Указывает, являются ли два параметра неравными.
 
@@ -375,7 +376,7 @@ inline bool operator<(
 
 **`true`** значение, если параметр *LHS* меньше, чем параметр *RHS* ; в противном случае — **`false`** .
 
-## <a name="hstringrelease"></a><a name="release"></a>HString:: Release
+## <a name="hstringrelease"></a><a name="release"></a> HString:: Release
 
 Удаляет базовое строковое значение и инициализирует текущий `HString` объект в пустое значение.
 
@@ -383,7 +384,7 @@ inline bool operator<(
 void Release() throw()
 ```
 
-## <a name="hstringset"></a><a name="set"></a>HString:: Set
+## <a name="hstringset"></a><a name="set"></a> HString:: Set
 
 Устанавливает значение текущего `HString` объекта в указанную строку или параметр расширенных символов `HString` .
 

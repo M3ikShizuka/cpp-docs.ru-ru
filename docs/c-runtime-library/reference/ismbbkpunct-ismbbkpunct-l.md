@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ismbbkpunct, _ismbbkpunct_l'
 title: _ismbbkpunct, _ismbbkpunct_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - ismbbkpunct function
 - _ismbbkpunct function
 ms.assetid: a04c59cd-5ca7-4296-bec0-2b0d7f04edd0
-ms.openlocfilehash: 8cf2d0d38466c370d0110b71a302471679e64657
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: da17df927b337e67df553baec8d56491db10a3d3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915707"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229734"
 ---
 # <a name="_ismbbkpunct-_ismbbkpunct_l"></a>_ismbbkpunct, _ismbbkpunct_l
 
@@ -59,7 +60,7 @@ int _ismbbkpunct_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Целое число, которое требуется проверить.
 
 *locale*<br/>
@@ -69,7 +70,7 @@ int _ismbbkpunct_l(
 
 **_ismbbkpunct** возвращает ненулевое значение, если целое число *c* является символом пунктуации, отличным от ASCII, или 0, если нет. Например, только для кодовой страницы 932, **_ismbbkpunct** проверяет на принадлежность к пунктуационным символам катаканы. **_ismbbkpunct** использует текущий языковой стандарт для любых параметров символов, зависящих от языкового стандарта. **_ismbbkpunct_l** является идентичным, за исключением того, что он использует переданный языковой стандарт. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

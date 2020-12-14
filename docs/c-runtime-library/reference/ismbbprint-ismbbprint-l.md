@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _ismbbprint, _ismbbprint_l'
 title: _ismbbprint, _ismbbprint_l
 ms.date: 4/2/2020
 api_name:
@@ -34,12 +35,12 @@ helpviewer_keywords:
 - _ismbbprint function
 - _ismbbprint_l function
 ms.assetid: d08a061c-18a8-48f2-a75d-bff4870aec9d
-ms.openlocfilehash: 63aa7d9af3b756bc7807cae55fe969d492ec43cf
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e168e90b3372c220011ffdbe4e795570e9ffc1ae
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82918641"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229682"
 ---
 # <a name="_ismbbprint-_ismbbprint_l"></a>_ismbbprint, _ismbbprint_l
 
@@ -59,7 +60,7 @@ int _ismbbprint_l(
 
 ### <a name="parameters"></a>Параметры
 
-*ц*<br/>
+*c*<br/>
 Целое число, которое требуется проверить.
 
 *locale*<br/>
@@ -71,9 +72,9 @@ int _ismbbprint_l(
 
 `isprint(c) || _ismbbkprint(c)`
 
-параметр имеет ненулевое значение для *языка c*или значение 0, если нет. **_ismbbprint** использует текущий языковой стандарт для любого поведения, зависящего от языкового стандарта. **_ismbbprint_l** является идентичным, за исключением того, что использует переданный языковой стандарт. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
+параметр имеет ненулевое значение для *языка c* или значение 0, если нет. **_ismbbprint** использует текущий языковой стандарт для любого поведения, зависящего от языкового стандарта. **_ismbbprint_l** является идентичным, за исключением того, что использует переданный языковой стандарт. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: глобальные переменные'
 title: Глобальные переменные
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - variables, global
 - global variables, Microsoft run-time library
 ms.assetid: 01d1551c-2f0c-4f72-935c-6442caccf84f
-ms.openlocfilehash: dfa78bd2c7aae7cc6059443066cbef58512755ce
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
-ms.translationtype: HT
+ms.openlocfilehash: 8029f058b39cb2e069c83279b361b79f3c8f5515
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57744366"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97229890"
 ---
 # <a name="global-variables"></a>Глобальные переменные
 
@@ -21,8 +22,8 @@ ms.locfileid: "57744366"
 
 |Переменная|Описание|
 |--------------|-----------------|
-|[__argc, \__argv, \__wargv](../c-runtime-library/argc-argv-wargv.md)|Содержит аргументы командной строки.|
-|[_daylight, _dstbias, _timezone, and _tzname](../c-runtime-library/daylight-dstbias-timezone-and-tzname.md)|Не рекомендуется. Используйте `_get_daylight`, `_get_dstbias`, `_get_timezone` и `_get_tzname`.<br /><br /> Вносит корректировку для локального времени; используется в некоторых функциях даты и времени.|
+|[__argc, \_ _argv \_ _wargv](../c-runtime-library/argc-argv-wargv.md)|Содержит аргументы командной строки.|
+|[_daylight, _dstbias, _timezone и _tzname](../c-runtime-library/daylight-dstbias-timezone-and-tzname.md)|Не рекомендуется. Используйте `_get_daylight`, `_get_dstbias`, `_get_timezone` и `_get_tzname`.<br /><br /> Вносит корректировку для локального времени; используется в некоторых функциях даты и времени.|
 |[errno, _doserrno, _sys_errlist, and _sys_nerr](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)|Не рекомендуется. Используйте `_get_errno`, `_set_errno`, `_get_doserrno`, `_set_doserrno`, `perror` и `strerror`.<br /><br /> Хранит коды ошибок и связанные сведения.|
 |[_environ, _wenviron](../c-runtime-library/environ-wenviron.md)|Не рекомендуется. Используйте `getenv_s`, `_wgetenv_s`, `_dupenv_s`, `_wdupenv_s`, `_putenv_s` и `_wputenv_s`.<br /><br /> Указывает на массив указателей на строки среды процесса; инициализация при запуске.|
 |[_fmode](../c-runtime-library/fmode.md)|Не рекомендуется. Используйте `_get_fmode` или `_set_fmode`.<br /><br /> Задает режим преобразования файлов по умолчанию.|
@@ -30,11 +31,11 @@ ms.locfileid: "57744366"
 |[_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md)|Содержит сведения, используемые функциями классификации символов.|
 |[_pgmptr, _wpgmptr](../c-runtime-library/pgmptr-wpgmptr.md)|Не рекомендуется. Используйте `_get_pgmptr` или `_get_wpgmptr`.<br /><br /> Инициализируется при запуске программы до полного или относительного пути программы, полного имени программы или имени программы без расширения имени файла (в зависимости от способа вызова программы).|
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Справочник по библиотеке времени выполнения C](../c-runtime-library/c-run-time-library-reference.md)<br/>
+[Справочник по библиотеке C Run-Time](../c-runtime-library/c-run-time-library-reference.md)<br/>
 [Глобальные константы](../c-runtime-library/global-constants.md)<br/>
-[__argc, \__argv, \__wargv](../c-runtime-library/argc-argv-wargv.md)<br/>
+[__argc, \_ _argv \_ _wargv](../c-runtime-library/argc-argv-wargv.md)<br/>
 [_get_daylight](../c-runtime-library/reference/get-daylight.md)<br/>
 [_get_dstbias](../c-runtime-library/reference/get-dstbias.md)<br/>
 [_get_timezone](../c-runtime-library/reference/get-timezone.md)<br/>
