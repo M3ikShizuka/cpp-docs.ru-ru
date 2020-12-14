@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: предупреждение компилятора (уровень 1) C4397'
 title: Предупреждение компилятора (уровень 1) C4397
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,18 +7,18 @@ f1_keywords:
 helpviewer_keywords:
 - C4397
 ms.assetid: 6346fdc2-dbbf-4fba-803a-32b0d0a707be
-ms.openlocfilehash: e9fb7527124d1838c1f900144f1fea943616f384
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 17ad322980a199b9602c4aa1ea60d818e657eaa1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80162677"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97311257"
 ---
 # <a name="compiler-warning-level-1-c4397"></a>Предупреждение компилятора (уровень 1) C4397
 
 DefaultCharSetAttribute игнорируется
 
-<xref:System.Runtime.InteropServices.DefaultCharSetAttribute> игнорируется компилятором Майкрософт C++ . Чтобы указать кодировку для библиотеки DLL, используйте параметр CharSet объекта DllImport. Дополнительные сведения см. [в разделе C++ использование взаимодействия (неявный PInvoke)](../../dotnet/using-cpp-interop-implicit-pinvoke.md).
+<xref:System.Runtime.InteropServices.DefaultCharSetAttribute> игнорируется компилятором Microsoft C++. Чтобы указать кодировку для библиотеки DLL, используйте параметр CharSet объекта DllImport. Дополнительные сведения см. [в разделе Использование взаимодействия C++ (неявный PInvoke)](../../dotnet/using-cpp-interop-implicit-pinvoke.md).
 
 ## <a name="example"></a>Пример
 
