@@ -1,5 +1,6 @@
 ---
-title: Класс CPaneContainer
+description: 'Дополнительные сведения о: Кпанеконтаинер Class'
+title: Класс Кпанеконтаинер
 ms.date: 11/04/2016
 f1_keywords:
 - CPaneContainer
@@ -120,18 +121,18 @@ helpviewer_keywords:
 - CPaneContainer [MFC], StoreRecentDockSiteInfo
 - CPaneContainer [MFC], StretchPaneContainer
 ms.assetid: beb79e08-f611-4d66-ba04-053baa79bf86
-ms.openlocfilehash: 65a37230b4889b32c42d48525f10a3164da33b63
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: f9e02c9b41bad9a8e3bb25ba6e75f2b25d90e0b2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81753648"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345190"
 ---
-# <a name="cpanecontainer-class"></a>Класс CPaneContainer
+# <a name="cpanecontainer-class"></a>Класс Кпанеконтаинер
 
-Класс `CPaneContainer` является основным компонентом модели стыковки, реализованной MFC. Объект этого класса хранит указатели на две области закрепления или два экземпляра `CPaneContainer.` . Также он содержит указатель на разделитель, который разделяет области (или контейнеры). Вкладывая контейнеры внутрь контейнеров, платформа строит двоичное дерево, представляющее сложные макеты закрепления. Корень двоичного дерева хранится в [объекте CPaneContainerManager.](../../mfc/reference/cpanecontainermanager-class.md)
+`CPaneContainer`Класс является базовым компонентом модели закрепления, реализованной MFC. Объект этого класса хранит указатели на две области закрепления или два экземпляра `CPaneContainer.` . Также он содержит указатель на разделитель, который разделяет области (или контейнеры). Вкладывая контейнеры внутрь контейнеров, платформа строит двоичное дерево, представляющее сложные макеты закрепления. Корень двоичного дерева хранится в объекте [CPaneContainerManager](../../mfc/reference/cpanecontainermanager-class.md) .
 
-Для получения более подробной информации смотрите исходный код, расположенный в папке **VC\\atlmfc\\src\\mfc** установки Visual Studio.
+Дополнительные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ MFC** в установке Visual Studio.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -139,82 +140,82 @@ ms.locfileid: "81753648"
 class CPaneContainer : public CObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CPaneContainer::CPaneContainer](#cpanecontainer)|Конструктор по умолчанию.|
+|[Кпанеконтаинер:: Кпанеконтаинер](#cpanecontainer)|Конструктор по умолчанию.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CPaneContainer:AddPane](#addpane)||
-|[CPaneContainer::AddRef](#addref)||
-|[CPaneContainer:AddSubPaneContainer](#addsubpanecontainer)||
-|[CPaneContainer::CalcAvailablePaneSpace](#calcavailablepanespace)||
-|[CPaneContainer::CalcAvailableSpace](#calcavailablespace)||
-|[CPaneContainer::CalculateRecentSize](#calculaterecentsize)||
-|[CPaneContainer::CheckPaneDividerВидимость](#checkpanedividervisibility)||
-|[CPaneContainer::Copy](#copy)||
-|[CPaneContainer::DeletePane](#deletepane)||
-|[CPaneContainer::FindSubPaneContainer](#findsubpanecontainer)||
-|[CPaneContainer::FindTabbedPane](#findtabbedpane)||
-|[CPaneContainer::GetAssociatedSiblingPaneIDs](#getassociatedsiblingpaneids)||
-|[CPaneContainer::GetLeftPane](#getleftpane)||
-|[CPaneContainer::GetLeftPaneContainer](#getleftpanecontainer)||
-|[CPaneContainer::GetMinSize](#getminsize)||
-|[CPaneContainer::GetMinSizeLeft](#getminsizeleft)||
-|[CPaneContainer::GetMinSizeRight](#getminsizeright)||
-|[CPaneContainer::GetNodeCount](#getnodecount)||
-|[CPaneContainer::GetPaneDivider](#getpanedivider)||
-|[CPaneContainer::GetParentPaneContainer](#getparentpanecontainer)||
-|[CPaneContainer::GetRecentPaneDividerRect](#getrecentpanedividerrect)||
-|[CPaneContainer::GetRecentPaneDividerStyle](#getrecentpanedividerstyle)||
-|[CPaneContainer::GetRecentPercent](#getrecentpercent)||
-|[CPaneContainer::GetRefCount](#getrefcount)||
-|[CPaneContainer::GetResizeStep](#getresizestep)||
-|[CPaneContainer::GetRightPane](#getrightpane)||
-|[CPaneContainer::GetRightPaneContainer](#getrightpanecontainer)||
-|[CPaneContainer::GetTotalReferenceCount](#gettotalreferencecount)||
-|[CPaneContainer::GetWindowRect](#getwindowrect)||
-|[CPaneContainer::Isdisposed](#isdisposed)||
-|[CPaneContainer::IsEmpty](#isempty)||
-|[CPaneContainer::IsLeftPane](#isleftpane)||
-|[CPaneContainer::IsLeftPaneContainer](#isleftpanecontainer)||
-|[CPaneContainer::IsLeftPartEmpty](#isleftpartempty)||
-|[CPaneContainer::IsRightPartEmpty](#isrightpartempty)||
-|[CPaneContainer::Видимо](#isvisible)||
-|[CPaneContainer::Перемещение](#move)||
-|[CPaneContainer::OnDeleteHidePane](#ondeletehidepane)||
-|[CPaneContainer::OnMoveInternalPaneDivider](#onmoveinternalpanedivider)||
-|[CPaneContainer::OnShowPane](#onshowpane)||
-|[CPaneContainer::Release](#release)||
-|[CPaneContainer::ReleaseEmptyPaneContainer](#releaseemptypanecontainer)||
-|[CPaneContainer::RemoveNonValidPanes](#removenonvalidpanes)||
-|[CPaneContainer::RemovePane](#removepane)||
-|[CPaneContainer::Resize](#resize)||
-|[CPaneContainer::ResizePane](#resizepane)||
-|[CPaneContainer::ResizePartOfPaneContainer](#resizepartofpanecontainer)||
-|[CPaneContainer::Serialize](#serialize)|Считывает этот объект из архива или записывает в него. (Переопределяет [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize).)|
-|[CPaneContainer::SetPane](#setpane)||
-|[CPaneContainer::SetPaneContainer](#setpanecontainer)||
-|[CPaneContainer::SetPaneDivider](#setpanedivider)||
-|[CPaneContainer::SetParentPaneContainer](#setparentpanecontainer)||
-|[CPaneContainer::SetRecentPercent](#setrecentpercent)||
-|[CPaneContainer::SetUpByID](#setupbyid)||
-|[CPaneContainer::StoreRecentDockSiteInfo](#storerecentdocksiteinfo)||
-|[CPaneContainer::StretchPaneContainer](#stretchpanecontainer)||
+|[Кпанеконтаинер:: Аддпане](#addpane)||
+|[Кпанеконтаинер:: AddRef](#addref)||
+|[Кпанеконтаинер:: Аддсубпанеконтаинер](#addsubpanecontainer)||
+|[Кпанеконтаинер:: Калкаваилаблепанеспаце](#calcavailablepanespace)||
+|[Кпанеконтаинер:: Калкаваилаблеспаце](#calcavailablespace)||
+|[Кпанеконтаинер:: Калкулатерецентсизе](#calculaterecentsize)||
+|[Кпанеконтаинер:: Чеккпанедивидервисибилити](#checkpanedividervisibility)||
+|[Кпанеконтаинер:: Copy](#copy)||
+|[Кпанеконтаинер::D Елетепане](#deletepane)||
+|[Кпанеконтаинер:: Финдсубпанеконтаинер](#findsubpanecontainer)||
+|[Кпанеконтаинер:: Финдтаббедпане](#findtabbedpane)||
+|[Кпанеконтаинер:: ЖетассоЦиатедсиблингпанеидс](#getassociatedsiblingpaneids)||
+|[Кпанеконтаинер:: Жетлефтпане](#getleftpane)||
+|[Кпанеконтаинер:: Жетлефтпанеконтаинер](#getleftpanecontainer)||
+|[Кпанеконтаинер:: Жетминсизе](#getminsize)||
+|[Кпанеконтаинер:: Жетминсизелефт](#getminsizeleft)||
+|[Кпанеконтаинер:: Жетминсизеригхт](#getminsizeright)||
+|[Кпанеконтаинер:: Жетнодекаунт](#getnodecount)||
+|[Кпанеконтаинер:: Жетпанедивидер](#getpanedivider)||
+|[Кпанеконтаинер:: Жетпарентпанеконтаинер](#getparentpanecontainer)||
+|[Кпанеконтаинер:: Жетрецентпанедивидеррект](#getrecentpanedividerrect)||
+|[Кпанеконтаинер:: Жетрецентпанедивидерстиле](#getrecentpanedividerstyle)||
+|[Кпанеконтаинер:: Жетрецентперцент](#getrecentpercent)||
+|[Кпанеконтаинер:: Жетрефкаунт](#getrefcount)||
+|[Кпанеконтаинер:: Жетресизестеп](#getresizestep)||
+|[Кпанеконтаинер:: Жетригхтпане](#getrightpane)||
+|[Кпанеконтаинер:: Жетригхтпанеконтаинер](#getrightpanecontainer)||
+|[Кпанеконтаинер:: Жеттоталреференцекаунт](#gettotalreferencecount)||
+|[Кпанеконтаинер:: Жетвиндоврект](#getwindowrect)||
+|[Кпанеконтаинер:: disposing](#isdisposed)||
+|[Кпанеконтаинер:: IsEmpty](#isempty)||
+|[Кпанеконтаинер:: Ислефтпане](#isleftpane)||
+|[Кпанеконтаинер:: Ислефтпанеконтаинер](#isleftpanecontainer)||
+|[Кпанеконтаинер:: Ислефтпартемпти](#isleftpartempty)||
+|[Кпанеконтаинер:: Исригхтпартемпти](#isrightpartempty)||
+|[Кпанеконтаинер:: Visible](#isvisible)||
+|[Кпанеконтаинер:: Move](#move)||
+|[Кпанеконтаинер:: Онделетехидепане](#ondeletehidepane)||
+|[Кпанеконтаинер:: Онмовеинтерналпанедивидер](#onmoveinternalpanedivider)||
+|[Кпанеконтаинер:: Оншовпане](#onshowpane)||
+|[Кпанеконтаинер:: Release](#release)||
+|[Кпанеконтаинер:: Релеасимптипанеконтаинер](#releaseemptypanecontainer)||
+|[Кпанеконтаинер:: Ремовенонвалидпанес](#removenonvalidpanes)||
+|[Кпанеконтаинер:: Ремовепане](#removepane)||
+|[Кпанеконтаинер:: изменение размера](#resize)||
+|[Кпанеконтаинер:: Ресизепане](#resizepane)||
+|[Кпанеконтаинер:: Ресизепартофпанеконтаинер](#resizepartofpanecontainer)||
+|[Кпанеконтаинер:: Serialize](#serialize)|Считывает этот объект из архива или записывает в него. (Переопределяет [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize).)|
+|[Кпанеконтаинер:: Сетпане](#setpane)||
+|[Кпанеконтаинер:: Сетпанеконтаинер](#setpanecontainer)||
+|[Кпанеконтаинер:: Сетпанедивидер](#setpanedivider)||
+|[Кпанеконтаинер:: Сетпарентпанеконтаинер](#setparentpanecontainer)||
+|[Кпанеконтаинер:: Сетрецентперцент](#setrecentpercent)||
+|[Кпанеконтаинер:: Сетупбид](#setupbyid)||
+|[Кпанеконтаинер:: Сторерецентдоккситеинфо](#storerecentdocksiteinfo)||
+|[Кпанеконтаинер:: Стретчпанеконтаинер](#stretchpanecontainer)||
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-`CPaneContainer`объекты создаются автоматически инфраструктурой.
+`CPaneContainer` платформа автоматически создает объекты.
 
 ## <a name="example"></a>Пример
 
-В следующем примере показано, как `CPaneContainer` построить экземпляр класса. Этот фрагмент кода является частью [образца Set Pane Size.](../../overview/visual-cpp-samples.md)
+В следующем примере показано, как создать экземпляр `CPaneContainer` класса. Этот фрагмент кода является частью [примера размера панели Set](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_SetPaneSize#2](../../mfc/reference/codesnippet/cpp/cpanecontainer-class_1.h)]
 [!code-cpp[NVC_MFC_SetPaneSize#1](../../mfc/reference/codesnippet/cpp/cpanecontainer-class_2.cpp)]
@@ -227,9 +228,9 @@ class CPaneContainer : public CObject
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxpanecontainer.h
+**Заголовок:** афкспанеконтаинер. h
 
-## <a name="cpanecontaineraddpane"></a><a name="addpane"></a>CPaneContainer:AddPane
+## <a name="cpanecontaineraddpane"></a><a name="addpane"></a> Кпанеконтаинер:: Аддпане
 
 ```
 CDockablePane* AddPane(CDockablePane* pBar);
@@ -237,21 +238,21 @@ CDockablePane* AddPane(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
+окне *пбар*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontaineraddref"></a><a name="addref"></a>CPaneContainer::AddRef
+## <a name="cpanecontaineraddref"></a><a name="addref"></a> Кпанеконтаинер:: AddRef
 
 ```cpp
 void AddRef();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontaineraddsubpanecontainer"></a><a name="addsubpanecontainer"></a>CPaneContainer:AddSubPaneContainer
+## <a name="cpanecontaineraddsubpanecontainer"></a><a name="addsubpanecontainer"></a> Кпанеконтаинер:: Аддсубпанеконтаинер
 
 ```
 BOOL AddSubPaneContainer(
@@ -261,14 +262,14 @@ BOOL AddSubPaneContainer(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pContainer*<br/>
-(в) *bRightNodeNew*<br/>
+окне *pcontainer может*<br/>
+окне *бригхтноденев*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainercalcavailablepanespace"></a><a name="calcavailablepanespace"></a>CPaneContainer::CalcAvailablePaneSpace
+## <a name="cpanecontainercalcavailablepanespace"></a><a name="calcavailablepanespace"></a> Кпанеконтаинер:: Калкаваилаблепанеспаце
 
 ```
 virtual int CalcAvailablePaneSpace(
@@ -280,16 +281,16 @@ virtual int CalcAvailablePaneSpace(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *nRequiredOffset*<br/>
-(в) *pBar*<br/>
-(в) *pContainer*<br/>
-(в) *bLeftBar*<br/>
+окне *нрекуиредоффсет*<br/>
+окне *пбар*<br/>
+окне *pcontainer может*<br/>
+окне *блефтбар*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainercalcavailablespace"></a><a name="calcavailablespace"></a>CPaneContainer::CalcAvailableSpace
+## <a name="cpanecontainercalcavailablespace"></a><a name="calcavailablespace"></a> Кпанеконтаинер:: Калкаваилаблеспаце
 
 ```
 virtual CSize CalcAvailableSpace(
@@ -299,30 +300,30 @@ virtual CSize CalcAvailableSpace(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *sizeStretch*<br/>
-(в) *bLeftBar*<br/>
+окне *сизестретч*<br/>
+окне *блефтбар*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainercalculaterecentsize"></a><a name="calculaterecentsize"></a>CPaneContainer::CalculateRecentSize
+## <a name="cpanecontainercalculaterecentsize"></a><a name="calculaterecentsize"></a> Кпанеконтаинер:: Калкулатерецентсизе
 
 ```cpp
 void CalculateRecentSize();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainercheckpanedividervisibility"></a><a name="checkpanedividervisibility"></a>CPaneContainer::CheckPaneDividerВидимость
+## <a name="cpanecontainercheckpanedividervisibility"></a><a name="checkpanedividervisibility"></a> Кпанеконтаинер:: Чеккпанедивидервисибилити
 
 ```cpp
 void CheckPaneDividerVisibility();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainercopy"></a><a name="copy"></a>CPaneContainer::Copy
+## <a name="cpanecontainercopy"></a><a name="copy"></a> Кпанеконтаинер:: Copy
 
 ```
 virtual CPaneContainer* Copy(CPaneContainer* pParentContainer);
@@ -330,13 +331,13 @@ virtual CPaneContainer* Copy(CPaneContainer* pParentContainer);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pParentContainer*<br/>
+окне *ппарентконтаинер*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainercpanecontainer"></a><a name="cpanecontainer"></a>CPaneContainer::CPaneContainer
+## <a name="cpanecontainercpanecontainer"></a><a name="cpanecontainer"></a> Кпанеконтаинер:: Кпанеконтаинер
 
 ```
 CPaneContainer(
@@ -348,14 +349,14 @@ CPaneContainer(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pManager*<br/>
-(в) *pLeftBar*<br/>
-(в) *pRightBar*<br/>
-(в) *pSlider*<br/>
+окне *пманажер*<br/>
+окне *плефтбар*<br/>
+окне *пригхтбар*<br/>
+окне *пслидер*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerdeletepane"></a><a name="deletepane"></a>CPaneContainer::DeletePane
+## <a name="cpanecontainerdeletepane"></a><a name="deletepane"></a> Кпанеконтаинер::D Елетепане
 
 ```
 virtual void DeletePane(
@@ -365,12 +366,12 @@ virtual void DeletePane(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
-(в) *barType*<br/>
+окне *пбар*<br/>
+окне *бартипе*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerfindsubpanecontainer"></a><a name="findsubpanecontainer"></a>CPaneContainer::FindSubPaneContainer
+## <a name="cpanecontainerfindsubpanecontainer"></a><a name="findsubpanecontainer"></a> Кпанеконтаинер:: Финдсубпанеконтаинер
 
 ```
 CPaneContainer* FindSubPaneContainer(
@@ -380,14 +381,14 @@ CPaneContainer* FindSubPaneContainer(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pObject*<br/>
-(в) *найтиКритерии*<br/>
+окне *объект*<br/>
+окне *findCriteria*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerfindtabbedpane"></a><a name="findtabbedpane"></a>CPaneContainer::FindTabbedPane
+## <a name="cpanecontainerfindtabbedpane"></a><a name="findtabbedpane"></a> Кпанеконтаинер:: Финдтаббедпане
 
 ```
 CDockablePane* FindTabbedPane(UINT nID);
@@ -395,13 +396,13 @@ CDockablePane* FindTabbedPane(UINT nID);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *nID*<br/>
+окне *NID*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergetassociatedsiblingpaneids"></a><a name="getassociatedsiblingpaneids"></a>CPaneContainer::GetAssociatedSiblingPaneIDs
+## <a name="cpanecontainergetassociatedsiblingpaneids"></a><a name="getassociatedsiblingpaneids"></a> Кпанеконтаинер:: ЖетассоЦиатедсиблингпанеидс
 
 ```
 CList<UINT, UINT>* GetAssociatedSiblingPaneIDs(CDockablePane* pBar);
@@ -409,13 +410,13 @@ CList<UINT, UINT>* GetAssociatedSiblingPaneIDs(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
+окне *пбар*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergetleftpane"></a><a name="getleftpane"></a>CPaneContainer::GetLeftPane
+## <a name="cpanecontainergetleftpane"></a><a name="getleftpane"></a> Кпанеконтаинер:: Жетлефтпане
 
 ```
 const CDockablePane* GetLeftPane() const;
@@ -423,9 +424,9 @@ const CDockablePane* GetLeftPane() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergetleftpanecontainer"></a><a name="getleftpanecontainer"></a>CPaneContainer::GetLeftPaneContainer
+## <a name="cpanecontainergetleftpanecontainer"></a><a name="getleftpanecontainer"></a> Кпанеконтаинер:: Жетлефтпанеконтаинер
 
 ```
 const CPaneContainer* GetLeftPaneContainer() const;
@@ -433,9 +434,9 @@ const CPaneContainer* GetLeftPaneContainer() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergetminsize"></a><a name="getminsize"></a>CPaneContainer::GetMinSize
+## <a name="cpanecontainergetminsize"></a><a name="getminsize"></a> Кпанеконтаинер:: Жетминсизе
 
 ```
 virtual void GetMinSize(CSize& size) const;
@@ -443,11 +444,11 @@ virtual void GetMinSize(CSize& size) const;
 
 ### <a name="parameters"></a>Параметры
 
-(в) *размер*<br/>
+окне *Размер*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergetminsizeleft"></a><a name="getminsizeleft"></a>CPaneContainer::GetMinSizeLeft
+## <a name="cpanecontainergetminsizeleft"></a><a name="getminsizeleft"></a> Кпанеконтаинер:: Жетминсизелефт
 
 ```
 virtual void GetMinSizeLeft(CSize& size) const;
@@ -455,11 +456,11 @@ virtual void GetMinSizeLeft(CSize& size) const;
 
 ### <a name="parameters"></a>Параметры
 
-(в) *размер*<br/>
+окне *Размер*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergetminsizeright"></a><a name="getminsizeright"></a>CPaneContainer::GetMinSizeRight
+## <a name="cpanecontainergetminsizeright"></a><a name="getminsizeright"></a> Кпанеконтаинер:: Жетминсизеригхт
 
 ```
 virtual void GetMinSizeRight(CSize& size) const;
@@ -467,11 +468,11 @@ virtual void GetMinSizeRight(CSize& size) const;
 
 ### <a name="parameters"></a>Параметры
 
-(в) *размер*<br/>
+окне *Размер*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergetnodecount"></a><a name="getnodecount"></a>CPaneContainer::GetNodeCount
+## <a name="cpanecontainergetnodecount"></a><a name="getnodecount"></a> Кпанеконтаинер:: Жетнодекаунт
 
 ```
 int GetNodeCount() const;
@@ -479,9 +480,9 @@ int GetNodeCount() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergetpanedivider"></a><a name="getpanedivider"></a>CPaneContainer::GetPaneDivider
+## <a name="cpanecontainergetpanedivider"></a><a name="getpanedivider"></a> Кпанеконтаинер:: Жетпанедивидер
 
 ```
 const CPaneDivider* GetPaneDivider() const;
@@ -489,9 +490,9 @@ const CPaneDivider* GetPaneDivider() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergetparentpanecontainer"></a><a name="getparentpanecontainer"></a>CPaneContainer::GetParentPaneContainer
+## <a name="cpanecontainergetparentpanecontainer"></a><a name="getparentpanecontainer"></a> Кпанеконтаинер:: Жетпарентпанеконтаинер
 
 ```
 CPaneContainer* GetParentPaneContainer() const;
@@ -499,9 +500,9 @@ CPaneContainer* GetParentPaneContainer() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergetrecentpanedividerrect"></a><a name="getrecentpanedividerrect"></a>CPaneContainer::GetRecentPaneDividerRect
+## <a name="cpanecontainergetrecentpanedividerrect"></a><a name="getrecentpanedividerrect"></a> Кпанеконтаинер:: Жетрецентпанедивидеррект
 
 ```
 CRect GetRecentPaneDividerRect() const;
@@ -509,9 +510,9 @@ CRect GetRecentPaneDividerRect() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergetrecentpanedividerstyle"></a><a name="getrecentpanedividerstyle"></a>CPaneContainer::GetRecentPaneDividerStyle
+## <a name="cpanecontainergetrecentpanedividerstyle"></a><a name="getrecentpanedividerstyle"></a> Кпанеконтаинер:: Жетрецентпанедивидерстиле
 
 ```
 DWORD GetRecentPaneDividerStyle() const;
@@ -519,9 +520,9 @@ DWORD GetRecentPaneDividerStyle() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergetrecentpercent"></a><a name="getrecentpercent"></a>CPaneContainer::GetRecentPercent
+## <a name="cpanecontainergetrecentpercent"></a><a name="getrecentpercent"></a> Кпанеконтаинер:: Жетрецентперцент
 
 ```
 int GetRecentPercent();
@@ -529,9 +530,9 @@ int GetRecentPercent();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergetrefcount"></a><a name="getrefcount"></a>CPaneContainer::GetRefCount
+## <a name="cpanecontainergetrefcount"></a><a name="getrefcount"></a> Кпанеконтаинер:: Жетрефкаунт
 
 ```
 LONG GetRefCount();
@@ -539,9 +540,9 @@ LONG GetRefCount();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergetresizestep"></a><a name="getresizestep"></a>CPaneContainer::GetResizeStep
+## <a name="cpanecontainergetresizestep"></a><a name="getresizestep"></a> Кпанеконтаинер:: Жетресизестеп
 
 ```
 virtual int GetResizeStep() const;
@@ -549,9 +550,9 @@ virtual int GetResizeStep() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergetrightpane"></a><a name="getrightpane"></a>CPaneContainer::GetRightPane
+## <a name="cpanecontainergetrightpane"></a><a name="getrightpane"></a> Кпанеконтаинер:: Жетригхтпане
 
 ```
 const CDockablePane* GetRightPane() const;
@@ -559,9 +560,9 @@ const CDockablePane* GetRightPane() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergetrightpanecontainer"></a><a name="getrightpanecontainer"></a>CPaneContainer::GetRightPaneContainer
+## <a name="cpanecontainergetrightpanecontainer"></a><a name="getrightpanecontainer"></a> Кпанеконтаинер:: Жетригхтпанеконтаинер
 
 ```
 const CPaneContainer* GetRightPaneContainer() const;
@@ -569,9 +570,9 @@ const CPaneContainer* GetRightPaneContainer() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergettotalreferencecount"></a><a name="gettotalreferencecount"></a>CPaneContainer::GetTotalReferenceCount
+## <a name="cpanecontainergettotalreferencecount"></a><a name="gettotalreferencecount"></a> Кпанеконтаинер:: Жеттоталреференцекаунт
 
 ```
 int GetTotalReferenceCount() const;
@@ -579,9 +580,9 @@ int GetTotalReferenceCount() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainergetwindowrect"></a><a name="getwindowrect"></a>CPaneContainer::GetWindowRect
+## <a name="cpanecontainergetwindowrect"></a><a name="getwindowrect"></a> Кпанеконтаинер:: Жетвиндоврект
 
 ```
 virtual void GetWindowRect(
@@ -592,11 +593,11 @@ virtual void GetWindowRect(
 ### <a name="parameters"></a>Параметры
 
 [in] *rect*<br/>
-(в) *bIgnoreВидимость*<br/>
+окне *бигноревисибилити*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerisdisposed"></a><a name="isdisposed"></a>CPaneContainer::Isdisposed
+## <a name="cpanecontainerisdisposed"></a><a name="isdisposed"></a> Кпанеконтаинер:: disposing
 
 ```
 BOOL IsDisposed() const;
@@ -604,9 +605,9 @@ BOOL IsDisposed() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerisempty"></a><a name="isempty"></a>CPaneContainer::IsEmpty
+## <a name="cpanecontainerisempty"></a><a name="isempty"></a> Кпанеконтаинер:: IsEmpty
 
 ```
 BOOL IsEmpty() const;
@@ -614,9 +615,9 @@ BOOL IsEmpty() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerisleftpane"></a><a name="isleftpane"></a>CPaneContainer::IsLeftPane
+## <a name="cpanecontainerisleftpane"></a><a name="isleftpane"></a> Кпанеконтаинер:: Ислефтпане
 
 ```
 BOOL IsLeftPane(CDockablePane* pBar) const;
@@ -624,13 +625,13 @@ BOOL IsLeftPane(CDockablePane* pBar) const;
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
+окне *пбар*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerisleftpanecontainer"></a><a name="isleftpanecontainer"></a>CPaneContainer::IsLeftPaneContainer
+## <a name="cpanecontainerisleftpanecontainer"></a><a name="isleftpanecontainer"></a> Кпанеконтаинер:: Ислефтпанеконтаинер
 
 ```
 BOOL IsLeftPaneContainer() const;
@@ -638,9 +639,9 @@ BOOL IsLeftPaneContainer() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerisleftpartempty"></a><a name="isleftpartempty"></a>CPaneContainer::IsLeftPartEmpty
+## <a name="cpanecontainerisleftpartempty"></a><a name="isleftpartempty"></a> Кпанеконтаинер:: Ислефтпартемпти
 
 ```
 BOOL IsLeftPartEmpty(BOOL bCheckVisibility = FALSE) const;
@@ -648,13 +649,13 @@ BOOL IsLeftPartEmpty(BOOL bCheckVisibility = FALSE) const;
 
 ### <a name="parameters"></a>Параметры
 
-(в) *bCheckВидимость*<br/>
+окне *бчекквисибилити*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerisrightpartempty"></a><a name="isrightpartempty"></a>CPaneContainer::IsRightPartEmpty
+## <a name="cpanecontainerisrightpartempty"></a><a name="isrightpartempty"></a> Кпанеконтаинер:: Исригхтпартемпти
 
 ```
 BOOL IsRightPartEmpty(BOOL bCheckVisibility = FALSE) const;
@@ -662,13 +663,13 @@ BOOL IsRightPartEmpty(BOOL bCheckVisibility = FALSE) const;
 
 ### <a name="parameters"></a>Параметры
 
-(в) *bCheckВидимость*<br/>
+окне *бчекквисибилити*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerisvisible"></a><a name="isvisible"></a>CPaneContainer::Видимо
+## <a name="cpanecontainerisvisible"></a><a name="isvisible"></a> Кпанеконтаинер:: Visible
 
 ```
 BOOL IsVisible() const;
@@ -676,9 +677,9 @@ BOOL IsVisible() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainermove"></a><a name="move"></a>CPaneContainer::Перемещение
+## <a name="cpanecontainermove"></a><a name="move"></a> Кпанеконтаинер:: Move
 
 ```
 virtual void Move(CPoint ptNewLeftTop);
@@ -686,11 +687,11 @@ virtual void Move(CPoint ptNewLeftTop);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *ptNewLeftTop*<br/>
+окне *птневлефттоп*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerondeletehidepane"></a><a name="ondeletehidepane"></a>CPaneContainer::OnDeleteHidePane
+## <a name="cpanecontainerondeletehidepane"></a><a name="ondeletehidepane"></a> Кпанеконтаинер:: Онделетехидепане
 
 ```cpp
 void OnDeleteHidePane(
@@ -700,12 +701,12 @@ void OnDeleteHidePane(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
-(в) *bHide*<br/>
+окне *пбар*<br/>
+окне *бхиде*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontaineronmoveinternalpanedivider"></a><a name="onmoveinternalpanedivider"></a>CPaneContainer::OnMoveInternalPaneDivider
+## <a name="cpanecontaineronmoveinternalpanedivider"></a><a name="onmoveinternalpanedivider"></a> Кпанеконтаинер:: Онмовеинтерналпанедивидер
 
 ```
 virtual int OnMoveInternalPaneDivider(
@@ -715,14 +716,14 @@ virtual int OnMoveInternalPaneDivider(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *nOffset*<br/>
-(в) *hdwp*<br/>
+окне *ноффсет*<br/>
+окне *хдвп*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontaineronshowpane"></a><a name="onshowpane"></a>CPaneContainer::OnShowPane
+## <a name="cpanecontaineronshowpane"></a><a name="onshowpane"></a> Кпанеконтаинер:: Оншовпане
 
 ```
 virtual void OnShowPane(
@@ -732,12 +733,12 @@ virtual void OnShowPane(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
-(в) *bShow*<br/>
+окне *пбар*<br/>
+окне *бшов*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerrelease"></a><a name="release"></a>CPaneContainer::Release
+## <a name="cpanecontainerrelease"></a><a name="release"></a> Кпанеконтаинер:: Release
 
 ```
 DWORD Release();
@@ -745,25 +746,25 @@ DWORD Release();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerreleaseemptypanecontainer"></a><a name="releaseemptypanecontainer"></a>CPaneContainer::ReleaseEmptyPaneContainer
+## <a name="cpanecontainerreleaseemptypanecontainer"></a><a name="releaseemptypanecontainer"></a> Кпанеконтаинер:: Релеасимптипанеконтаинер
 
 ```cpp
 void ReleaseEmptyPaneContainer();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerremovenonvalidpanes"></a><a name="removenonvalidpanes"></a>CPaneContainer::RemoveNonValidPanes
+## <a name="cpanecontainerremovenonvalidpanes"></a><a name="removenonvalidpanes"></a> Кпанеконтаинер:: Ремовенонвалидпанес
 
 ```cpp
 void RemoveNonValidPanes();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerremovepane"></a><a name="removepane"></a>CPaneContainer::RemovePane
+## <a name="cpanecontainerremovepane"></a><a name="removepane"></a> Кпанеконтаинер:: Ремовепане
 
 ```
 virtual void RemovePane(CDockablePane* pBar);
@@ -771,11 +772,11 @@ virtual void RemovePane(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
+окне *пбар*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerresize"></a><a name="resize"></a>CPaneContainer::Resize
+## <a name="cpanecontainerresize"></a><a name="resize"></a> Кпанеконтаинер:: изменение размера
 
 ```
 virtual void Resize(
@@ -787,12 +788,12 @@ virtual void Resize(
 ### <a name="parameters"></a>Параметры
 
 [in] *rect*<br/>
-(в) *hdwp*<br/>
-(в) *bRedraw*<br/>
+окне *хдвп*<br/>
+окне *бредрав*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerresizepane"></a><a name="resizepane"></a>CPaneContainer::ResizePane
+## <a name="cpanecontainerresizepane"></a><a name="resizepane"></a> Кпанеконтаинер:: Ресизепане
 
 ```
 virtual void ResizePane(
@@ -806,16 +807,16 @@ virtual void ResizePane(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *nOffset*<br/>
-(в) *pBar*<br/>
-(в) *pContainer*<br/>
-(в) *bHorz*<br/>
-(в) *bLeftBar*<br/>
-(в) *hdwp*<br/>
+окне *ноффсет*<br/>
+окне *пбар*<br/>
+окне *pcontainer может*<br/>
+окне *бхорз*<br/>
+окне *блефтбар*<br/>
+окне *хдвп*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerresizepartofpanecontainer"></a><a name="resizepartofpanecontainer"></a>CPaneContainer::ResizePartOfPaneContainer
+## <a name="cpanecontainerresizepartofpanecontainer"></a><a name="resizepartofpanecontainer"></a> Кпанеконтаинер:: Ресизепартофпанеконтаинер
 
 ```
 virtual void ResizePartOfPaneContainer(
@@ -826,13 +827,13 @@ virtual void ResizePartOfPaneContainer(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *nOffset*<br/>
-(в) *bLeftPart*<br/>
-(в) *hdwp*<br/>
+окне *ноффсет*<br/>
+окне *блефтпарт*<br/>
+окне *хдвп*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerserialize"></a><a name="serialize"></a>CPaneContainer::Serialize
+## <a name="cpanecontainerserialize"></a><a name="serialize"></a> Кпанеконтаинер:: Serialize
 
 ```cpp
 void Serialize(CArchive& ar);
@@ -842,9 +843,9 @@ void Serialize(CArchive& ar);
 
 [in] *ar*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainersetpane"></a><a name="setpane"></a>CPaneContainer::SetPane
+## <a name="cpanecontainersetpane"></a><a name="setpane"></a> Кпанеконтаинер:: Сетпане
 
 ```cpp
 void SetPane(
@@ -854,12 +855,12 @@ void SetPane(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
-(в) *bСлева*<br/>
+окне *пбар*<br/>
+окне *блефт*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainersetpanecontainer"></a><a name="setpanecontainer"></a>CPaneContainer::SetPaneContainer
+## <a name="cpanecontainersetpanecontainer"></a><a name="setpanecontainer"></a> Кпанеконтаинер:: Сетпанеконтаинер
 
 ```cpp
 void SetPaneContainer(
@@ -869,12 +870,12 @@ void SetPaneContainer(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pContainer*<br/>
-(в) *bСлева*<br/>
+окне *pcontainer может*<br/>
+окне *блефт*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainersetpanedivider"></a><a name="setpanedivider"></a>CPaneContainer::SetPaneDivider
+## <a name="cpanecontainersetpanedivider"></a><a name="setpanedivider"></a> Кпанеконтаинер:: Сетпанедивидер
 
 ```cpp
 void SetPaneDivider(CPaneDivider* pSlider);
@@ -882,11 +883,11 @@ void SetPaneDivider(CPaneDivider* pSlider);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pSlider*<br/>
+окне *пслидер*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainersetparentpanecontainer"></a><a name="setparentpanecontainer"></a>CPaneContainer::SetParentPaneContainer
+## <a name="cpanecontainersetparentpanecontainer"></a><a name="setparentpanecontainer"></a> Кпанеконтаинер:: Сетпарентпанеконтаинер
 
 ```cpp
 void SetParentPaneContainer(CPaneContainer* p);
@@ -894,11 +895,11 @@ void SetParentPaneContainer(CPaneContainer* p);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *р*<br/>
+окне *p*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainersetrecentpercent"></a><a name="setrecentpercent"></a>CPaneContainer::SetRecentPercent
+## <a name="cpanecontainersetrecentpercent"></a><a name="setrecentpercent"></a> Кпанеконтаинер:: Сетрецентперцент
 
 ```cpp
 void SetRecentPercent(int nRecentPercent);
@@ -906,11 +907,11 @@ void SetRecentPercent(int nRecentPercent);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *nНедавнийпроцент*<br/>
+окне *нрецентперцент*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainersetupbyid"></a><a name="setupbyid"></a>CPaneContainer::SetUpByID
+## <a name="cpanecontainersetupbyid"></a><a name="setupbyid"></a> Кпанеконтаинер:: Сетупбид
 
 ```
 BOOL SetUpByID(
@@ -920,14 +921,14 @@ BOOL SetUpByID(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *nID*<br/>
-(в) *pBar*<br/>
+окне *NID*<br/>
+окне *пбар*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerstorerecentdocksiteinfo"></a><a name="storerecentdocksiteinfo"></a>CPaneContainer::StoreRecentDockSiteInfo
+## <a name="cpanecontainerstorerecentdocksiteinfo"></a><a name="storerecentdocksiteinfo"></a> Кпанеконтаинер:: Сторерецентдоккситеинфо
 
 ```
 virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
@@ -935,11 +936,11 @@ virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
+окне *пбар*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="cpanecontainerstretchpanecontainer"></a><a name="stretchpanecontainer"></a>CPaneContainer::StretchPaneContainer
+## <a name="cpanecontainerstretchpanecontainer"></a><a name="stretchpanecontainer"></a> Кпанеконтаинер:: Стретчпанеконтаинер
 
 ```
 virtual int StretchPaneContainer(
@@ -952,19 +953,19 @@ virtual int StretchPaneContainer(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *nOffset*<br/>
-(в) *bStretchHorz*<br/>
-(в) *bLeftBar*<br/>
-(в) *bMoveSlider*<br/>
-(в) *hdwp*<br/>
+окне *ноффсет*<br/>
+окне *бстретчхорз*<br/>
+окне *блефтбар*<br/>
+окне *бмовеслидер*<br/>
+окне *хдвп*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
-[Класс CObject](../../mfc/reference/cobject-class.md)<br/>
+[CObject, класс](../../mfc/reference/cobject-class.md)<br/>
 [Класс CPaneContainerManager](../../mfc/reference/cpanecontainermanager-class.md)

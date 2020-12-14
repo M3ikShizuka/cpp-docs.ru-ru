@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: общие классы диалоговых окон'
 title: Классы общих диалоговых окон
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,16 +12,16 @@ helpviewer_keywords:
 - dialog classes [MFC], common
 - common dialog boxes [MFC]
 ms.assetid: 5c4f6443-896c-4b05-a7df-8169fdadc71d
-ms.openlocfilehash: 2efe095a6d5b71321cbbe56fdee662509baa4573
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 8ab72407c9d709ef660976105d65901398ae5b5b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84619027"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97310699"
 ---
 # <a name="common-dialog-classes"></a>Классы общих диалоговых окон
 
-В дополнение к классу [CDialog](reference/cdialog-class.md)MFC предоставляет несколько классов, производных от `CDialog` широко используемых диалоговых окон, как показано в следующей таблице. Инкапсулированные диалоговые окна называются общими диалоговыми окнами и являются частью библиотеки общих диалоговых окон Windows (КОММДЛГ. DLL). Ресурсы шаблонов диалогового окна и код для этих классов приведены в общих диалоговых окнах Windows, которые являются частью Windows версии 3,1 и более поздних.
+В дополнение к классу [CDialog](reference/cdialog-class.md)MFC предоставляет несколько классов, производных от `CDialog` широко используемых диалоговых окон, как показано в следующей таблице. Инкапсулированные диалоговые окна называются общими диалоговыми окнами и являются частью библиотеки общих диалоговых окон Windows (COMMDLG.DLL). Ресурсы шаблонов диалогового окна и код для этих классов приведены в общих диалоговых окнах Windows, которые являются частью Windows версии 3,1 и более поздних.
 
 ### <a name="common-dialog-classes"></a>Классы общих диалоговых окон
 

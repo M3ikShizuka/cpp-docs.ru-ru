@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения: карты подключений'
 title: Схемы подключения
 ms.date: 11/04/2016
 helpviewer_keywords:
 - connection maps
 ms.assetid: 1f25a9bc-6d09-4614-99cf-dc38e8ddfa73
-ms.openlocfilehash: 517017e9e60b86e96daa24f7822538e91c609fb4
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 61d2e7023ab97aa00952aee4786b34e60ba57af7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841419"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345255"
 ---
 # <a name="connection-maps"></a>Схемы подключения
 
@@ -56,7 +57,7 @@ BEGIN_CONNECTION_PART(theClass, localClass)
 *локалкласс*<br/>
 Указывает имя локального класса, реализующего точку подключения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В файле объявления (. h), который определяет функции-члены для класса, запустите точку подключения с помощью макроса BEGIN_CONNECTION_PART, добавьте CONNECTION_IID макрос и другие функции-члены, которые требуется реализовать, и завершите карту точек подключения с помощью макроса END_CONNECTION_PART.
 
@@ -94,7 +95,7 @@ CONNECTION_IID(iid)
 *IID*<br/>
 Идентификатор интерфейса, вызываемого точкой соединения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Аргумент *IID* — это идентификатор интерфейса, используемый для идентификации интерфейса, который точка подключения будет вызывать для подключенных к нему приемников. Пример:
 
@@ -114,7 +115,7 @@ CONNECTION_IID(iid)
 DECLARE_CONNECTION_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если элемент управления поддерживает дополнительные точки, используйте макрос DECLARE_CONNECTION_MAP в конце объявления класса. Затем в cpp – файле, который определяет функции элементов для класса, используйте макрос BEGIN_CONNECTION_MAP, CONNECTION_PART макросы для каждой точки соединения элемента управления и макрос END_CONNECTION_MAP для объявления конца схемы соединения.
 
@@ -138,7 +139,7 @@ BEGIN_CONNECTION_MAP(theClass, theBase)
 *себасе*<br/>
 Задает имя базового класса *секласс*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 В реализации (. CPP), который определяет функции-члены для класса, запускает схему подключения с помощью макроса BEGIN_CONNECTION_MAP, а затем добавляет записи макросов для каждой точки подключения с помощью макроса [CONNECTION_PART](#connection_part) . Наконец, завершите схему подключения с помощью макроса [END_CONNECTION_MAP](#end_connection_map) .
 
@@ -177,7 +178,7 @@ CONNECTION_PART(theClass, iid, localClass)
 *локалкласс*<br/>
 Указывает имя локального класса, реализующего точку подключения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Пример:
 

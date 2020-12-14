@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CToolTipCtrl Class'
 title: CToolTipCtrl Class
 ms.date: 11/04/2016
 f1_keywords:
@@ -72,12 +73,12 @@ helpviewer_keywords:
 - CToolTipCtrl [MFC], Update
 - CToolTipCtrl [MFC], UpdateTipText
 ms.assetid: 8973f70c-b73a-46c7-908d-758f364b9a97
-ms.openlocfilehash: a4c2644ff7a9b2ae60cc166247d27d7a25305b97
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: bd263d0ada7ad85169eb551dd136f81b480534e8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88561847"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345034"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl Class
 
@@ -89,7 +90,7 @@ ms.locfileid: "88561847"
 class CToolTipCtrl : public CWnd
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -134,7 +135,7 @@ class CToolTipCtrl : public CWnd
 |[CToolTipCtrl:: Update](#update)|Принудительное перерисовка текущего средства.|
 |[CToolTipCtrl:: Упдатетиптекст](#updatetiptext)|Задает текст подсказки для инструмента.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 "Инструмент" — это либо окно, например дочернее окно, либо элемент управления, либо определяемая приложением прямоугольная область в клиентской области окна. Всплывающая подсказка скрыта в большинстве случаев, когда пользователь помещает курсор в средство и оставляет его примерно в течение одной половины секунды. Всплывающая подсказка появляется рядом с курсором и исчезает, когда пользователь нажимает кнопку мыши или перемещает курсор за пределы инструмента.
 
@@ -173,7 +174,7 @@ void Activate(BOOL bActivate);
 *bActivate*<br/>
 Указывает, должен ли элемент управления "всплывающая подсказка" активирован или деактивирован.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если *бактивате* имеет значение true, элемент управления активируется; Если значение равно FALSE, оно деактивируется.
 
@@ -222,7 +223,7 @@ BOOL AddTool(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Параметры *лпректтул* и *нидтул* должны быть допустимыми, или если *Лпректтул* имеет значение null, *нидтул* должен быть равен 0.
 
@@ -257,7 +258,7 @@ BOOL AdjustRect(
 
 Ненулевое значение, если прямоугольник успешно скорректирован; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция-член вычисляет текстовый прямоугольник элемента управления "всплывающая подсказка" на основе прямоугольника окна или прямоугольника окна подсказки, необходимого для вывода указанного текстового прямоугольника.
 
@@ -283,7 +284,7 @@ virtual BOOL Create(CWnd* pParentWnd, DWORD dwStyle = 0);
 
 Ненулевое значение, если `CToolTipCtrl` объект успешно создан; в противном случае — значение 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Построение создается `CToolTipCtrl` в два этапа. Сначала вызовите конструктор для создания `CToolTipCtrl` объекта, а затем вызовите, `Create` чтобы создать элемент управления подсказки и присоединить его к `CToolTipCtrl` объекту.
 
@@ -328,7 +329,7 @@ virtual BOOL CreateEx(
 
 Ненулевое значение, если успешное выполнение равно 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте `CreateEx` вместо `Create` для применения расширенных стилей Windows, заданных **WS_EX_** в расширенном стиле Windows.
 
@@ -340,7 +341,7 @@ virtual BOOL CreateEx(
 CToolTipCtrl();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Необходимо вызвать `Create` после создания объекта.
 
@@ -383,7 +384,7 @@ CSize GetBubbleSize(LPTOOLINFO lpToolInfo) const;
 
 Размер подсказки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TTM_GETBUBBLESIZE](/windows/win32/Controls/ttm-getbubblesize), как описано в Windows SDK.
 
@@ -404,7 +405,7 @@ BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
 
 Значение TRUE, если данные извлекаются успешно; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [TTM_GETCURRENTTOOL](/windows/win32/Controls/ttm-getcurrenttool) сообщение, описанное в Windows SDK.
 
@@ -437,7 +438,7 @@ int GetDelayTime(DWORD dwDuration) const;
 
 Указанное время задержки в миллисекундах
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TTM_GETDELAYTIME](/windows/win32/Controls/ttm-getdelaytime), как описано в Windows SDK.
 
@@ -454,14 +455,14 @@ void GetMargin(LPRECT lprc) const;
 *лпрк*<br/>
 Адрес `RECT` структуры, которая получит сведения о полях. Элементы структуры [Rect](/windows/win32/api/windef/ns-windef-rect) не определяют ограничивающий прямоугольник. Для этого сообщения члены структуры интерпретируется следующим образом:
 
-|Участник|Представление|
+|Член|Представление|
 |------------|--------------------|
 |`top`|Расстояние между верхней границей и верхним краем текста подсказки в пикселях.|
 |`left`|Расстояние между левой границей и левым концом текста подсказки в пикселях.|
 |`bottom`|Расстояние между нижней границей и нижней частью текста подсказки в пикселях.|
 |`right`|Расстояние между правой границей и правым концом текста подсказки в пикселях.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TTM_GETMARGIN](/windows/win32/Controls/ttm-getmargin), как описано в Windows SDK.
 
@@ -477,7 +478,7 @@ int GetMaxTipWidth() const;
 
 Максимальная ширина окна подсказки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TTM_GETMAXTIPWIDTH](/windows/win32/Controls/ttm-getmaxtipwidth), как описано в Windows SDK.
 
@@ -503,7 +504,7 @@ void GetText(
 *нидтул*<br/>
 Идентификатор инструмента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Параметры *приводится* и *нидтул* указывают средство. Если это средство ранее было зарегистрировано в подсказке с помощью всплывающей подсказки `CToolTipCtrl::AddTool` , то для объекта, на который ссылается параметр *str* , назначается текст инструмента.
 
@@ -519,7 +520,7 @@ COLORREF GetTipBkColor() const;
 
 Значение [COLORREF](/windows/win32/gdi/colorref) , представляющее цвет фона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TTM_GETTIPBKCOLOR](/windows/win32/Controls/ttm-gettipbkcolor), как описано в Windows SDK.
 
@@ -535,7 +536,7 @@ COLORREF GetTipTextColor() const;
 
 Значение [COLORREF](/windows/win32/gdi/colorref) , представляющее цвет текста.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TTM_GETTIPTEXTCOLOR](/windows/win32/Controls/ttm-gettiptextcolor), как описано в Windows SDK.
 
@@ -552,7 +553,7 @@ void GetTitle(PTTGETTITLE pttgt) const;
 *пттгт*\
 заполняет Указатель на структуру [ттжеттитле](/windows/win32/api/commctrl/ns-commctrl-ttgettitle) , содержащую сведения о элементе управления ToolTip. При возврате из этого метода элемент *псзтитле* структуры [ттжеттитле](/windows/win32/api/commctrl/ns-commctrl-ttgettitle) указывает на текст заголовка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [TTM_GETTITLE](/windows/win32/Controls/ttm-gettitle) сообщение, описанное в Windows SDK.
 
@@ -594,7 +595,7 @@ BOOL GetToolInfo(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `hwnd`Элементы и `uId` структуры [тулинфо](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) , на которые ссылается *ктулинфо* , определяют средство. Если это средство зарегистрировано с помощью всплывающей подсказки, то при предыдущем вызове `AddTool` `TOOLINFO` Структура заполняется сведениями о средстве.
 
@@ -624,7 +625,7 @@ BOOL HitTest(
 
 Ненулевое значение, если точка, заданная данными проверки попадания, находится внутри ограничивающего прямоугольника инструмента; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если эта функция возвращает ненулевое значение, то структура, на которую указывает *лптулинфо* , заполняется сведениями об инструменте, в котором находится точка.
 
@@ -658,7 +659,7 @@ typedef struct _TT_HITTESTINFO { // tthti
 void Pop();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TTM_POP](/windows/win32/Controls/ttm-pop), как описано в Windows SDK.
 
@@ -670,7 +671,7 @@ void Pop();
 void Popup();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [TTM_POPUP](/windows/win32/Controls/ttm-popup) сообщение, описанное в Windows SDK.
 
@@ -693,7 +694,7 @@ void RelayEvent(LPMSG lpMsg);
 *лпмсг*<br/>
 Указатель на структуру [MSG](/windows/win32/api/winuser/ns-winuser-msg) , содержащую сообщение для ретрансляции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Элемент управления всплывающая подсказка обрабатывает только следующие сообщения, которые отправляются в него `RelayEvent` :
 
@@ -730,7 +731,7 @@ void SetDelayTime(
 *iTime*<br/>
 Указанное время задержки в миллисекундах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Время задержки — это период времени, в течение которого курсор должен оставаться на инструменте, прежде чем появится окно подсказки. Время задержки по умолчанию составляет 500 миллисекунд.
 
@@ -747,7 +748,7 @@ void SetMargin(LPRECT lprc);
 *лпрк*<br/>
 Адрес `RECT` структуры, содержащей сведения о полях, которые необходимо задать. Элементы `RECT` структуры не определяют ограничивающий прямоугольник. Описание сведений о марже см. в разделе [CToolTipCtrl:: Margin](#getmargin) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TTM_SETMARGIN](/windows/win32/Controls/ttm-setmargin), как описано в Windows SDK.
 
@@ -768,7 +769,7 @@ int SetMaxTipWidth(int iWidth);
 
 Предыдущая максимальная ширина TIP.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TTM_SETMAXTIPWIDTH](/windows/win32/Controls/ttm-setmaxtipwidth), как описано в Windows SDK.
 
@@ -785,7 +786,7 @@ void SetTipBkColor(COLORREF clr);
 *среду*<br/>
 Новый цвет фона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TTM_SETTIPBKCOLOR](/windows/win32/Controls/ttm-settipbkcolor), как описано в Windows SDK.
 
@@ -802,7 +803,7 @@ void SetTipTextColor(COLORREF clr);
 *среду*<br/>
 Новый цвет текста.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TTM_SETTIPTEXTCOLOR](/windows/win32/Controls/ttm-settiptextcolor), как описано в Windows SDK.
 
@@ -828,7 +829,7 @@ BOOL SetTitle(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [TTM_SETTITLE](/windows/win32/Controls/ttm-settitle), как описано в Windows SDK.
 
@@ -884,7 +885,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 
 Возвращаемое значение не используется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена эмулирует функциональность [TTM_SETWINDOWTHEME](/windows/win32/Controls/ttm-setwindowtheme) сообщения, как описано в Windows SDK.
 
@@ -926,7 +927,7 @@ void UpdateTipText(
 *нидтекст*<br/>
 Идентификатор строкового ресурса, содержащего текст для инструмента.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [CWnd, класс](../../mfc/reference/cwnd-class.md)<br/>
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>

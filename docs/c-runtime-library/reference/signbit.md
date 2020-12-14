@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: сигнбит'
 title: signbit
 ms.date: 01/31/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 - math/signbit
 helpviewer_keywords:
 - signbit function
-ms.openlocfilehash: 7f8399c16d2abc70a50740b0629bc5d9b3a1f067
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7f6416647db67a49bd6950c011575b72f4c43f10
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87216743"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97303470"
 ---
 # <a name="signbit"></a>signbit
 
@@ -46,13 +47,13 @@ inline bool signbit(
 
 **сигнбит** возвращает ненулевое значение ( **`true`** в C++), если аргумент *x* является отрицательным или отрицательной бесконечностью. Он возвращает 0 ( **`false`** в C++), если аргумент имеет неотрицательное значение, положительную бесконечность или значение NaN.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 **сигнбит** — это макрос, скомпилированный как C, и перегруженная встроенная функция, скомпилированная как C++.
 
 ## <a name="requirements"></a>Требования
 
-|Компонент|Обязательный заголовок (C)|Обязательный заголовок (C++)|
+|Функция|Обязательный заголовок (C)|Обязательный заголовок (C++)|
 |--------------|---------------------------|-------------------------------|
 |**signbit**|\<math.h>|\<math.h> или \<cmath>|
 
@@ -62,7 +63,7 @@ inline bool signbit(
 
 [Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
 [isfinite, _finite, _finitef](finite-finitef.md)<br/>
-[isinf](isinf.md)<br/>
+[исинф](isinf.md)<br/>
 [isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
 [isnormal](isnormal.md)<br/>
 [_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>

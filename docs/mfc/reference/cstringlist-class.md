@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кстринглист Class'
 title: Класс Кстринглист
 ms.date: 11/04/2016
 f1_keywords:
@@ -50,12 +51,12 @@ helpviewer_keywords:
 - CStringList [MFC], RemoveTail
 - CStringList [MFC], SetAt
 ms.assetid: 310a7edb-263c-4bd2-ac43-0bfbfddc5a33
-ms.openlocfilehash: 9eb7a713fc02cd3e51135d1985a41688d4c885d9
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: c9043ef648f50e880f3b5946c1912deca3de6714
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447560"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345073"
 ---
 # <a name="cstringlist-class"></a>Класс Кстринглист
 
@@ -69,7 +70,7 @@ class CStringList : public CObject
 
 ## <a name="members"></a>Члены
 
-Функции элементов `CStringList` похожи на функции членов класса [коблист](../../mfc/reference/coblist-class.md). Из-за этой схожести для изучения этой функции-члена можно использовать справочную документацию по классу `CObList`. Когда вы видите `CObject` указатель в качестве возвращаемого значения, замените `CString` (а не `CString` указатель). Когда в качестве параметра функции отображается `CObject` указатель, замените `LPCTSTR`.
+Функции элементов `CStringList` похожи на функции членов класса [коблист](../../mfc/reference/coblist-class.md). Из-за этой схожести для изучения этой функции-члена можно использовать справочную документацию по классу `CObList`. Когда `CObject` указатель отображается как возвращаемое значение, замените `CString` (не `CString` указатель). В любом месте, где вы видите `CObject` указатель в качестве параметра функции, замените `LPCTSTR` .
 
 `CObject*& CObList::GetHead() const;`
 
@@ -87,13 +88,13 @@ class CStringList : public CObject
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[Кстринглист:: Кстринглист](../../mfc/reference/coblist-class.md#coblist)|Конструирует пустой список.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|name|Описание|
 |----------|-----------------|
 |[Кстринглист:: Аддхеад](../../mfc/reference/coblist-class.md#addhead)|Добавляет элемент (или все элементы из другого списка) в заголовок списка (создает новый заголовок).|
 |[Кстринглист:: AddTail](../../mfc/reference/coblist-class.md#addtail)|Добавляет элемент (или все элементы из другого списка) в конец списка (создает новый хвост).|
@@ -117,15 +118,15 @@ class CStringList : public CObject
 |[Кстринглист:: Ремоветаил](../../mfc/reference/coblist-class.md#removetail)|Удаляет элемент из хвоста списка.|
 |[Кстринглист:: SetAt](../../mfc/reference/coblist-class.md#setat)|Задает элемент в заданной позиции.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Все сравнения выполняются по значению, то есть символы в строке сравниваются вместо адресов строк.
 
-`CStringList` включает макрос IMPLEMENT_SERIAL для поддержки сериализации и дампа его элементов. Если список объектов `CString` хранится в архиве с перегруженным оператором вставки или с функцией-членом `Serialize`, каждый элемент `CString` сериализуется в свою очередь.
+`CStringList` включает макрос IMPLEMENT_SERIAL для поддержки сериализации и дампа его элементов. Если список `CString` объектов хранится в архиве либо с перегруженным оператором вставки, либо с `Serialize` функцией-членом, каждый `CString` элемент сериализуется в свою очередь.
 
-Если требуется дамп отдельных элементов `CString`, необходимо установить глубину контекста дампа в 1 или более.
+Если требуется дамп отдельных `CString` элементов, необходимо установить глубину контекста дампа в 1 или более.
 
-Дополнительные сведения об использовании `CStringList`см. в статье [коллекции](../../mfc/collections.md)статей.
+Дополнительные сведения об использовании `CStringList` см. в статье [коллекции](../../mfc/collections.md)статей.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -140,5 +141,5 @@ class CStringList : public CObject
 ## <a name="see-also"></a>См. также раздел
 
 [Пример СОБРАНий MFC](../../overview/visual-cpp-samples.md)<br/>
-[Класс CObject](../../mfc/reference/cobject-class.md)<br/>
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)
+[CObject, класс](../../mfc/reference/cobject-class.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)

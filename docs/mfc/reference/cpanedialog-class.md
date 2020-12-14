@@ -1,5 +1,6 @@
 ---
-title: Класс CPaneDialog
+description: 'Дополнительные сведения о: Кпанедиалог Class'
+title: Класс Кпанедиалог
 ms.date: 11/04/2016
 f1_keywords:
 - CPaneDialog
@@ -12,16 +13,16 @@ helpviewer_keywords:
 - CPaneDialog [MFC], HandleInitDialog
 - CPaneDialog [MFC], SetOccDialogInfo
 ms.assetid: 48a6bb91-4b92-40f5-8907-b3270b146cf6
-ms.openlocfilehash: ad1225034cc5eca8ca53b042ebe3b55db4a2cf09
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 6efbbf710f09cf6507853b983a68578a24111a34
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81364127"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345177"
 ---
-# <a name="cpanedialog-class"></a>Класс CPaneDialog
+# <a name="cpanedialog-class"></a>Класс Кпанедиалог
 
-Класс `CPaneDialog` поддерживает безрежимный, док-бокс диалогового.
+`CPaneDialog`Класс поддерживает немодальное, закрепляемое диалоговое окно.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -29,33 +30,33 @@ ms.locfileid: "81364127"
 class CPaneDialog : public CDockablePane
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |`CPaneDialog::CPaneDialog`|Конструктор по умолчанию.|
 |`CPaneDialog::~CPaneDialog`|Деструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CPaneDialog::Создание](#create)|Создает док-окно диалогов и прикрепляет его к объекту. `CPaneDialog`|
+|[Кпанедиалог:: Create](#create)|Создает Закрепляемое диалоговое окно и прикрепляет его к `CPaneDialog` объекту.|
 |`CPaneDialog::CreateObject`|Используется платформой для создания динамического экземпляра этого типа класса.|
-|`CPaneDialog::GetThisClass`|Используется фректором для получения указателя на объект [CRuntimeClass,](../../mfc/reference/cruntimeclass-structure.md) связанный с этим типом класса.|
-|[CPaneDialog::HandleInitDialog](#handleinitdialog)|Обрабатывает [WM_INITDIALOG](/windows/win32/dlgbox/wm-initdialog) сообщение. (Переопределяет `CBasePane::HandleInitDialog`.)|
-|`CPaneDialog::OnEraseBkgnd`|Обрабатывает [сообщение WM_ERASEBKGND.](/windows/win32/winmsg/wm-erasebkgnd) (Переопределяет [CWnd::OnEraseBkgnd](../../mfc/reference/cwnd-class.md#onerasebkgnd).)|
-|`CPaneDialog::OnLButtonDblClk`|Обрабатывает [сообщение WM_LBUTTONDBLCLK.](/windows/win32/inputdev/wm-lbuttondblclk) (Переопределяет [CWnd::OnLButtonDblClk](../../mfc/reference/cwnd-class.md#onlbuttondblclk).)|
-|`CPaneDialog::OnLButtonDown`|Обрабатывает [WM_LBUTTONDOWN](/windows/win32/inputdev/wm-lbuttondown) сообщение. (Переопределяет [CWnd::OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown).)|
-|`CPaneDialog::OnUpdateCmdUI`|Вызывается по системе для обновления окна окна окна диалогового окна. (Перекрывает [CDockablePane::OnUpdateCmdUI](cdockablepane-class.md).)|
-|`CPaneDialog::OnWindowPosChanging`|Обрабатывает [WM_WINDOWPOSCHANGING](/windows/win32/winmsg/wm-windowposchanging) сообщение. (Переопределяет [CWnd::OnWindowPosChanging](../../mfc/reference/cwnd-class.md#onwindowposchanging).)|
-|[CPaneDialog::SetOccDialogInfo](#setoccdialoginfo)|Определяет шаблон для диалогового окна, который является контейнером управления OLE.|
+|`CPaneDialog::GetThisClass`|Используется платформой для получения указателя на объект [крунтимекласс](../../mfc/reference/cruntimeclass-structure.md) , связанный с этим типом класса.|
+|[Кпанедиалог:: Хандлеинитдиалог](#handleinitdialog)|Обрабатывает сообщение [WM_INITDIALOG](/windows/win32/dlgbox/wm-initdialog) . (Переопределяется `CBasePane::HandleInitDialog` .)|
+|`CPaneDialog::OnEraseBkgnd`|Обрабатывает сообщение [WM_ERASEBKGND](/windows/win32/winmsg/wm-erasebkgnd) . (Переопределяет [CWnd:: онерасебкгнд](../../mfc/reference/cwnd-class.md#onerasebkgnd).)|
+|`CPaneDialog::OnLButtonDblClk`|Обрабатывает сообщение [WM_LBUTTONDBLCLK](/windows/win32/inputdev/wm-lbuttondblclk) . (Переопределяет [CWnd:: онлбуттондблклк](../../mfc/reference/cwnd-class.md#onlbuttondblclk).)|
+|`CPaneDialog::OnLButtonDown`|Обрабатывает сообщение [WM_LBUTTONDOWN](/windows/win32/inputdev/wm-lbuttondown) . (Переопределяет [CWnd:: онлбуттондовн](../../mfc/reference/cwnd-class.md#onlbuttondown).)|
+|`CPaneDialog::OnUpdateCmdUI`|Вызывается платформой для обновления окна диалогового окно. (Переопределяет [CDockablePane:: онупдатекмдуи](cdockablepane-class.md).)|
+|`CPaneDialog::OnWindowPosChanging`|Обрабатывает сообщение [WM_WINDOWPOSCHANGING](/windows/win32/winmsg/wm-windowposchanging) . (Переопределяет [CWnd:: онвиндовпосчангинг](../../mfc/reference/cwnd-class.md#onwindowposchanging).)|
+|[Кпанедиалог:: Сетоккдиалогинфо](#setoccdialoginfo)|Задает шаблон для диалогового окна, который является контейнером элемента управления OLE.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Постройте `CPaneDialog` объект в два этапа. Во-первых, построить объект в коде. Во-вторых, вызов [CPaneDialog::Создание](#create). Необходимо указать действительное имя шаблона ресурса или идентификатор шаблона и передать указатель в родительское окно. В противном случае процесс создания завершается неудачей. В диалоговом окне должен быть указан WS_CHILD и WS_VISIBLE стиль. Мы рекомендуем также указать WS_CLIPCHILDREN и WS_CLIPSIBLINGS стили. Для получения дополнительной информации [см.](styles-used-by-mfc.md#window-styles)
+Создайте `CPaneDialog` объект в два этапа. Сначала создайте объект в коде. Во вторых, вызовите метод [кпанедиалог:: Create](#create). Необходимо указать допустимое имя шаблона ресурса или идентификатор шаблона и передать указатель родительскому окну. В противном случае процесс создания завершится ошибкой. В диалоговом окне необходимо указать стиль WS_CHILD и WS_VISIBLE. Рекомендуется также указать стили WS_CLIPCHILDREN и WS_CLIPSIBLINGS. Дополнительные сведения см. в разделе [стили окон](styles-used-by-mfc.md#window-styles).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -75,11 +76,11 @@ class CPaneDialog : public CDockablePane
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxpanedialog.h
+**Заголовок:** афкспанедиалог. h
 
-## <a name="cpanedialogcreate"></a><a name="create"></a>CPaneDialog::Создание
+## <a name="cpanedialogcreate"></a><a name="create"></a> Кпанедиалог:: Create
 
-Создает стыковочный диалоговый `CPaneDialog` ящик и прикрепляет его к объекту.
+Создает диалоговое окно закрепления и прикрепляет его к `CPaneDialog` объекту.
 
 ```
 BOOL Create(
@@ -115,49 +116,49 @@ BOOL Create(
 
 ### <a name="parameters"></a>Параметры
 
-*lpszWindowName*<br/>
-(в) Название стыковочного диалогового ящика.
+*лпсзвиндовнаме*<br/>
+окне Имя диалогового окна "закрепление".
 
-*pParentWnd*<br/>
-(в) Указывает на родительское окно.
+*ппарентвнд*<br/>
+окне Указывает на родительское окно.
 
-*bHasGripper*<br/>
-(в) TRUE для создания стыковочного диалогового ящика с заголовком (захват); в противном случае, FALSE.
+*бхасгриппер*<br/>
+окне Значение TRUE, чтобы создать диалоговое окно закрепления с заголовком (захватом); в противном случае — значение FALSE.
 
-*lpszTemplateName*<br/>
-(в) Название шаблона диалогов ресурсов.
+*лпсзтемплатенаме*<br/>
+окне Имя шаблона диалогового окна ресурса.
 
 *nStyle*<br/>
-(в) Стиль Windows.
+окне Стиль Windows.
 
 *nID*<br/>
-(в) Идентификатор управления.
+окне Идентификатор элемента управления.
 
-*nIDTemplate*<br/>
-(в) Идентификатор ресурса шаблона диалогов.
+*нидтемплате*<br/>
+окне Идентификатор ресурса шаблона диалогового окна.
 
-*dwTabbedStyle*<br/>
-(в) Стиль окна с вкладками, который приводит к тому, что пользователь перетаскивает другое панель управления на подпись к этому панели управления. Значение по умолчанию является AFX_CBRS_REGULAR_TABS. Для получения дополнительной информации смотрите раздел Замечания [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) метод.
+*двтаббедстиле*<br/>
+окне Стиль окна с вкладками, которое возникает при перетаскивании другой панели элементов управления в заголовок этой панели элементов управления. Значение по умолчанию — AFX_CBRS_REGULAR_TABS. Дополнительные сведения см. в подразделе "Примечания" метода [CBasePane:: креатикс](../../mfc/reference/cbasepane-class.md#createex) .
 
-*dwControlBarStyle*<br/>
-(в) Дополнительные атрибуты стиля. Значение по умолчанию является AFX_DEFAULT_DOCKING_PANE_STYLE. Для получения дополнительной информации смотрите раздел Замечания [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) метод.
+*двконтролбарстиле*<br/>
+окне Дополнительные атрибуты стиля. Значение по умолчанию — AFX_DEFAULT_DOCKING_PANE_STYLE. Дополнительные сведения см. в подразделе "Примечания" метода [CBasePane:: креатикс](../../mfc/reference/cbasepane-class.md#createex) .
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если этот метод удается; в противном случае, FALSE.
+Значение TRUE, если этот метод завершился с ошибкой; в противном случае — значение FALSE.
 
 ### <a name="remarks"></a>Remarks
 
 ### <a name="example"></a>Пример
 
-В следующем примере показано, `Create` как `CPaneDialog` использовать метод в классе. Этот пример является частью [образца Set Pane Size.](../../overview/visual-cpp-samples.md)
+В следующем примере показано, как использовать `Create` метод в `CPaneDialog` классе. Этот пример является частью [примера размера панели Set](../../overview/visual-cpp-samples.md).
 
 [!code-cpp[NVC_MFC_SetPaneSize#2](../../mfc/reference/codesnippet/cpp/cpanedialog-class_1.h)]
 [!code-cpp[NVC_MFC_SetPaneSize#3](../../mfc/reference/codesnippet/cpp/cpanedialog-class_2.cpp)]
 
-## <a name="cpanedialoghandleinitdialog"></a><a name="handleinitdialog"></a>CPaneDialog::HandleInitDialog
+## <a name="cpanedialoghandleinitdialog"></a><a name="handleinitdialog"></a> Кпанедиалог:: Хандлеинитдиалог
 
-Обрабатывает [WM_INITDIALOG](/windows/win32/dlgbox/wm-initdialog) сообщение.
+Обрабатывает сообщение [WM_INITDIALOG](/windows/win32/dlgbox/wm-initdialog) .
 
 ```
 afx_msg LRESULT HandleInitDialog(
@@ -168,22 +169,22 @@ afx_msg LRESULT HandleInitDialog(
 ### <a name="parameters"></a>Параметры
 
 *wParam*<br/>
-(в) Ручка к управлению, которое должно получить фокус клавиатуры по умолчанию.
+окне Обработчик для элемента управления, который должен получать фокус клавиатуры по умолчанию.
 
 *lParam*<br/>
-(в) Определяет дополнительные данные инициализации.
+окне Задает дополнительные данные инициализации.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если этот метод является успешным; в противном случае, FALSE. Кроме того, TRUE устанавливает фокус клавиатуры на элемент управления, указанный параметром *wParam;* FALSE предотвращает установку фокуса клавиатуры по умолчанию.
+Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE. Кроме того, значение TRUE устанавливает фокус клавиатуры на элемент управления, указанный параметром *wParam* ; Значение FALSE предотвращает установку фокуса клавиатуры по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Платформа использует этот метод для инициализации элементов управления и появления диалогового окна. Платформа вызывает этот метод перед отображением диалогового окна.
+Платформа использует этот метод для инициализации элементов управления и внешнего вида диалогового окна. Платформа вызывает этот метод перед отображением диалогового окна.
 
-## <a name="cpanedialogsetoccdialoginfo"></a><a name="setoccdialoginfo"></a>CPaneDialog::SetOccDialogInfo
+## <a name="cpanedialogsetoccdialoginfo"></a><a name="setoccdialoginfo"></a> Кпанедиалог:: Сетоккдиалогинфо
 
-Определяет шаблон для диалогового окна, который является контейнером управления OLE.
+Задает шаблон для диалогового окна, который является контейнером элемента управления OLE.
 
 ```
 virtual BOOL SetOccDialogInfo(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
@@ -191,8 +192,8 @@ virtual BOOL SetOccDialogInfo(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 
 ### <a name="parameters"></a>Параметры
 
-*pOccDialogInfo*<br/>
-(в) Указатель на шаблон диалогового окна, который используется для создания объекта коробки диалога. Значение этого параметра впоследствии передается в метод [COccManager::CreateDlgControls.](../../mfc/reference/coccmanager-class.md#createdlgcontrols)
+*поккдиалогинфо*<br/>
+окне Указатель на шаблон диалогового окна, который используется для создания объекта диалогового окна. Значение этого параметра впоследствии передается в метод [коккманажер:: креатедлгконтролс](../../mfc/reference/coccmanager-class.md#createdlgcontrols) .
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -200,11 +201,11 @@ virtual BOOL SetOccDialogInfo(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 
 ### <a name="remarks"></a>Remarks
 
-Этот метод поддерживает класс [COccManager,](../../mfc/reference/coccmanager-class.md) который управляет сайтами управления OLE и управлением ActiveX. Структура _AFX_OCC_DIALOG_INFO определяется в файле заголовка afxocc.h.
+Этот метод поддерживает класс [коккманажер](../../mfc/reference/coccmanager-class.md) , который управляет сайтами элементов управления OLE и элементами управления ActiveX. Структура _AFX_OCC_DIALOG_INFO определена в файле заголовка афксокк. h.
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
-[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
+[Класс CDockablePane](../../mfc/reference/cdockablepane-class.md)<br/>
 [Стили окна](../../mfc/reference/styles-used-by-mfc.md#window-styles)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ктипедптраррай Class'
 title: Класс Ктипедптраррай
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - CTypedPtrArray [MFC], SetAt
 - CTypedPtrArray [MFC], SetAtGrow
 ms.assetid: e3ecdf1a-a889-4156-92dd-ddbd36ccd919
-ms.openlocfilehash: db24e3992e5db70895ccc2908dba108de843bcdc
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 07d254072a51a56759a3dbe569c36ff65d199cfe
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215950"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345008"
 ---
 # <a name="ctypedptrarray-class"></a>Класс Ктипедптраррай
 
@@ -69,7 +70,7 @@ class CTypedPtrArray : public BASE_CLASS
 |----------|-----------------|
 |[Ктипедптраррай:: operator \[\]](#operator_at)|Получает или задает элемент с указанным индексом.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 При использовании `CTypedPtrArray` , а не `CPtrArray` или `CObArray` , средство проверки типов C++ помогает устранить ошибки, вызванные несовпадением типов указателей.
 
@@ -89,7 +90,7 @@ class CTypedPtrArray : public BASE_CLASS
 
 **Заголовок:** afxtempl.h
 
-## <a name="ctypedptrarrayadd"></a><a name="add"></a>Ктипедптраррай:: Add
+## <a name="ctypedptrarrayadd"></a><a name="add"></a> Ктипедптраррай:: Add
 
 Эта функция члена вызывает `BASE_CLASS` **:: Add**.
 
@@ -109,11 +110,11 @@ INT_PTR Add(TYPE newElement);
 
 Индекс добавленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Более подробные примечания см. в разделе [кобаррай:: Add](../../mfc/reference/cobarray-class.md#add).
 
-## <a name="ctypedptrarrayappend"></a><a name="append"></a>Ктипедптраррай:: Append
+## <a name="ctypedptrarrayappend"></a><a name="append"></a> Ктипедптраррай:: Append
 
 Эта функция члена вызывает `BASE_CLASS` :: Append * *.
 
@@ -136,11 +137,11 @@ INT_PTR Append(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 
 Индекс первого добавленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Более подробные примечания см. в разделе [кобаррай:: Append](../../mfc/reference/cobarray-class.md#append).
 
-## <a name="ctypedptrarraycopy"></a><a name="copy"></a>Ктипедптраррай:: Copy
+## <a name="ctypedptrarraycopy"></a><a name="copy"></a> Ктипедптраррай:: Copy
 
 Эта функция члена вызывает `BASE_CLASS` **:: Copy**.
 
@@ -159,11 +160,11 @@ void Copy(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 *src*<br/>
 Источник элементов, копируемых в массив.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Более подробные примечания см. в разделе [кобаррай:: Copy](../../mfc/reference/cobarray-class.md#copy).
 
-## <a name="ctypedptrarrayelementat"></a><a name="elementat"></a>Ктипедптраррай:: ElementAt
+## <a name="ctypedptrarrayelementat"></a><a name="elementat"></a> Ктипедптраррай:: ElementAt
 
 Эта встроенная функция вызывает `BASE_CLASS` **:: ElementAt**.
 
@@ -181,13 +182,13 @@ TYPE& ElementAt(INT_PTR nIndex);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Временная ссылка на элемент в расположении, заданном параметром *ниндекс*. Этот элемент имеет тип, заданный *типом*параметра шаблона.
+Временная ссылка на элемент в расположении, заданном параметром *ниндекс*. Этот элемент имеет тип, заданный *типом* параметра шаблона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Более подробные примечания см. в разделе [кобаррай:: ElementAt](../../mfc/reference/cobarray-class.md#elementat).
 
-## <a name="ctypedptrarraygetat"></a><a name="getat"></a>Ктипедптраррай:: GetAt
+## <a name="ctypedptrarraygetat"></a><a name="getat"></a> Ктипедптраррай:: GetAt
 
 Эта встроенная функция вызывает `BASE_CLASS` **:: GetAt**.
 
@@ -205,13 +206,13 @@ TYPE GetAt(INT_PTR nIndex) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Копия элемента в расположении, заданном параметром *ниндекс*. Этот элемент имеет тип, заданный *типом*параметра шаблона.
+Копия элемента в расположении, заданном параметром *ниндекс*. Этот элемент имеет тип, заданный *типом* параметра шаблона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Более подробные примечания см. в разделе [кобаррай:: GetAt](../../mfc/reference/cobarray-class.md#getat)
 
-## <a name="ctypedptrarrayinsertat"></a><a name="insertat"></a>Ктипедптраррай:: Инсертат
+## <a name="ctypedptrarrayinsertat"></a><a name="insertat"></a> Ктипедптраррай:: Инсертат
 
 Эта функция члена вызывает `BASE_CLASS` **:: инсертат**.
 
@@ -249,11 +250,11 @@ void InsertAt(
 *пневаррай*<br/>
 Другой массив, содержащий элементы для добавления в этот массив.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Более подробные примечания см. в разделе [кобаррай:: инсертат](../../mfc/reference/cobarray-class.md#insertat).
 
-## <a name="ctypedptrarrayoperator--"></a><a name="operator_at"></a>Ктипедптраррай:: operator []
+## <a name="ctypedptrarrayoperator--"></a><a name="operator_at"></a> Ктипедптраррай:: operator []
 
 Эти встроенные операторы вызывают `BASE_CLASS` **:: operator []**.
 
@@ -270,13 +271,13 @@ TYPE operator[ ](int_ptr nindex) const;
 *ниндекс*<br/>
 Целочисленный индекс, который больше или равен 0 и меньше или равен значению, возвращенному `BASE_CLASS` **:: GetUpperBound**.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первый оператор, вызываемый для массивов, которые не являются **`const`** , можно использовать как справа (r-значение), так и слева (l-значение) оператора присваивания. Второй метод, вызываемый для **`const`** массивов, может использоваться только справа.
 
 Отладочная версия библиотеки утверждает, находится ли индекс (в левой или правой части инструкции присваивания) вне границ.
 
-## <a name="ctypedptrarraysetat"></a><a name="setat"></a>Ктипедптраррай:: SetAt
+## <a name="ctypedptrarraysetat"></a><a name="setat"></a> Ктипедптраррай:: SetAt
 
 Эта функция члена вызывает `BASE_CLASS` **:: SetAt**.
 
@@ -297,11 +298,11 @@ void SetAt(
 *ptr*<br/>
 Указатель на элемент, который необходимо вставить в массив в Ниндекс. Разрешено значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Более подробные примечания см. в разделе [кобаррай:: SetAt](../../mfc/reference/cobarray-class.md#setat).
 
-## <a name="ctypedptrarraysetatgrow"></a><a name="setatgrow"></a>Ктипедптраррай:: Сетатгров
+## <a name="ctypedptrarraysetatgrow"></a><a name="setatgrow"></a> Ктипедптраррай:: Сетатгров
 
 Эта функция члена вызывает `BASE_CLASS` **:: сетатгров**.
 
@@ -322,7 +323,7 @@ void SetAtGrow(
 *невелемент*<br/>
 Указатель на объект, добавляемый в этот массив. Разрешено значение **null** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Более подробные примечания см. в разделе [кобаррай:: сетатгров](../../mfc/reference/cobarray-class.md#setatgrow).
 

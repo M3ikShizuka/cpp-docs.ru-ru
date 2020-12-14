@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CSplitButton Class'
 title: Класс CSplitButton
 ms.date: 11/19/2018
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CSplitButton [MFC], SetDropDownMenu
 - CSplitButton [MFC], OnDropDown
 ms.assetid: 6844d0a9-6408-4e44-9b5f-57628ed8bad6
-ms.openlocfilehash: 484cef2787c9e5c166a7b20b017251b559d7221c
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: e73273bbeb0d03dc5ca2a3a2e6daa1be05936280
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562549"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97345125"
 ---
 # <a name="csplitbutton-class"></a>Класс CSplitButton
 
@@ -31,7 +32,7 @@ ms.locfileid: "88562549"
 class CSplitButton : public CButton
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -52,7 +53,7 @@ class CSplitButton : public CButton
 |----------|-----------------|
 |[CSplitButton:: OnDropDown](#ondropdown)|Обрабатывает BCN_DROPDOWN уведомление о том, что система отправляет сообщение, когда пользователь щелкает стрелку раскрывающегося списка текущего элемента управления "кнопка разворачивающейся кнопки".|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 `CSplitButton`Класс является производным от класса [кбуттон](../../mfc/reference/cbutton-class.md) . Элемент управления "разворачивающаяся кнопка" — это элемент управления "Кнопка", стиль которого BS_SPLITBUTTON. Он отображает пользовательское меню, когда пользователь щелкает стрелку раскрывающегося списка. Дополнительные сведения см. в статьях стили BS_SPLITBUTTON и BS_DEFSPLITBUTTON в разделе [стили кнопок](/windows/win32/Controls/button-styles).
 
@@ -134,7 +135,7 @@ CSplitButton(CMenu* pMenu)
 *пмену*\
 окне Указатель на объект [кмену](../../mfc/reference/cmenu-class.md) , указывающий подменю. `CSplitButton`Объект удаляет `CMenu` объект и связанный с ним HMENU, когда `CSplitButton` объект выходит из области действия.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте метод [CSplitButton:: Create](#create) , чтобы создать элемент управления "разворачивающаяся кнопка" и присоединить его к `CSplitButton` объекту.
 
@@ -156,7 +157,7 @@ afx_msg void OnDropDown(
 *пресулт*\
 заполняет (Не используется; значение не возвращается.) Возвращаемое значение уведомления [BCN_DROPDOWN](/windows/win32/Controls/bcn-dropdown) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Когда пользователь щелкает стрелку раскрывающегося списка на элементе управления "разворачивающаяся кнопка", система отправляет BCN_DROPDOWN сообщение уведомления, которое `OnDropDown` обрабатывает метод. Однако объект не `CSplitButton` пересылает BCN_DROPDOWN уведомление элементу управления, содержащему элемент управления "разворачивающаяся кнопка". Следовательно, вмещающий элемент управления не может поддерживать пользовательское действие в ответ на уведомление.
 
@@ -194,7 +195,7 @@ void SetDropDownMenu(CMenu* pMenu);
 *пмену*\
 окне Указатель на объект [кмену](../../mfc/reference/cmenu-class.md) , указывающий подменю. `CSplitButton`Объект удаляет `CMenu` объект и связанный с ним HMENU, когда `CSplitButton` объект выходит из области действия.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Параметр *нменуид* определяет строку меню, которая представляет собой горизонтальный список элементов строки меню. Параметр *нсубменуид* — это номер индекса, начинающийся с нуля, который определяет подменю, которое представляет собой раскрывающийся список пунктов меню, связанных с каждым элементом строки меню. Например, типичное приложение содержит меню, содержащее элементы строки меню "файл", "Изменить" и "Справка". Элемент строки меню "файл" содержит подменю, содержащее пункты меню "Открыть", "Закрыть" и "выход". При щелчке стрелки раскрывающегося списка элемента управления "разворачивающаяся кнопка" элемент управления отображает указанное подменю, а не строку меню.
 
@@ -208,7 +209,7 @@ void SetDropDownMenu(CMenu* pMenu);
 
 [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/csplitbutton-class_1.cpp)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Класс CSplitButton](../../mfc/reference/csplitbutton-class.md)<br/>
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
