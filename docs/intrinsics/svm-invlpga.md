@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: __svm_invlpga'
 title: __svm_invlpga
 ms.date: 09/02/2019
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - __svm_invlpga intrinsic
 - INVLPGA instruction
 ms.assetid: aa6578ce-8278-464b-8815-a0fc45330915
-ms.openlocfilehash: e0f8ef02efdb64f70bb65f6f017449fcc03beca1
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: dc976f535381fcfdfec0da5c1a280c4df281c114
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70219885"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97314754"
 ---
 # <a name="__svm_invlpga"></a>__svm_invlpga
 
@@ -34,17 +35,17 @@ void __svm_invlpga(void *Vaddr, int as_id);
 *as_id*\
 окне Идентификатор адресного пространства (асид) страницы, которую необходимо сделать недействительной.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Функция `__svm_invlpga` эквивалентна инструкции компьютера `INVLPGA` . Эта функция поддерживает взаимодействие монитора виртуальной машины узла с гостевой операционной системой и ее приложениями. Дополнительные сведения см. в документе "Ручная задача программиста архитектуры AMD64", том 2: Системное программирование, «номер документа 24593, версия 3,11, на сайте [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) .
+Функция `__svm_invlpga` эквивалентна инструкции компьютера `INVLPGA` . Эта функция поддерживает взаимодействие монитора виртуальной машины узла с гостевой операционной системой и ее приложениями. Дополнительные сведения см. в документе "Ручная задача программиста архитектуры AMD64: том 2. Программирование системы", "номер документа 24593, редакция 3,11" на сайте [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) .
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`__svm_invlpga`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
 **Завершение блока, относящегося только к системам Майкрософт**
 

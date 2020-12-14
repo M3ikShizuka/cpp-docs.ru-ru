@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения: среда выполнения Windows и управляемые шаблоны (C++/CLI и C++/CX)'
 title: Среда выполнения Windows и управляемые шаблоны (C++/CLI и C++/CX)
 ms.date: 10/12/2018
 ms.topic: reference
 helpviewer_keywords:
 - templates, with CLR types
 ms.assetid: cf59d16b-5514-448b-9a95-e0b4fcb616a6
-ms.openlocfilehash: 5765370e611e5822b3b2d156d2eee5d21e5b453d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 75b39c58bc42c23da313525f125dc98abdb0866b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81376308"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97274038"
 ---
 # <a name="windows-runtime-and-managed-templates-ccli-and-ccx"></a>Среда выполнения Windows и управляемые шаблоны (C++/CLI и C++/CX)
 
@@ -73,7 +74,7 @@ template<class T> public ref class R {
 };
 ```
 
-Доступ с помощью синтаксиса языка C++/CLI к шаблонам, определенным в сборке, на которую существует ссылка, получить нельзя, но можно использовать отражение. Если шаблон не мгновенно, он не испускается в метаданных. При создании экземпляра шаблона в метаданных появляются только функции-члены, на которые существуют ссылки.
+Доступ с помощью синтаксиса языка C++/CLI к шаблонам, определенным в сборке, на которую существует ссылка, получить нельзя, но можно использовать отражение. Если экземпляр шаблона не создается, он не создается в метаданных. При создании экземпляра шаблона в метаданных появляются только функции-члены, на которые существуют ссылки.
 
 ```cpp
 // managed_templates_3.cpp

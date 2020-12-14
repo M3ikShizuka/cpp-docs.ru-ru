@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: класс Vector &lt; bool &gt;'
 title: Класс vector&lt;bool&gt;
 ms.date: 11/04/2016
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - std::vector [C++], flip
 - std::vector [C++], swap
 ms.assetid: 8028c8ed-ac9c-4f06-aba1-5de45c00aafb
-ms.openlocfilehash: 24a18197c6b335172b88d2db37e8ac7ed57f58b8
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: ecc7c083825a92aca429f9418d35ff9d4cf7dcca
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845423"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280512"
 ---
 # <a name="vectorltboolgt-class"></a>Класс vector&lt;bool&gt;
 
@@ -82,7 +83,7 @@ typedef const_iterator const_pointer;
 typedef bool const_reference;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Дополнительные сведения и примеры кода см. в разделе [vector&lt;bool&gt;::reference::operator=](#reference_operator_eq).
 
@@ -145,7 +146,7 @@ vector&<bool&>::const_reference operator[](size_type Pos) const;
 
 Если заданная позиция больше или равна размеру контейнера, результат не определен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если вы компилируете с набором _ITERATOR_DEBUG_LEVEL, то при попытке получить доступ к элементу за пределами вектора возникает ошибка времени выполнения.  Дополнительные сведения см. в разделе [Проверенные итераторы](../standard-library/checked-iterators.md).
 
@@ -192,7 +193,7 @@ typedef iterator pointer;
 
 `vector<bool>::reference`Класс является прокси-классом, предоставляемым [ \<bool> классом Vector](../standard-library/vector-bool-class.md) для имитации `bool&` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Необходима смоделированная ссылка, поскольку C++ изначально не допускает прямых ссылок на биты. `vector<bool>` использует только один бит на элемент, ссылку на который можно создать с помощью данного класса прокси. Однако моделирование ссылки является незавершенным, поскольку определенные назначения не являются допустимыми. Например, поскольку адрес `vector<bool>::reference` объекта не может быть получен, следующий код, использующий [ \<bool> оператор Vector:: operator&#91;&#93;](#op_at) , неверен:
 
@@ -262,7 +263,7 @@ operator bool() const;
 
 Логическое значение элемента \<bool> объекта Vector.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Комментарии
 
 Объект `vector<bool>` невозможно изменить при помощи данного оператора.
 
@@ -372,7 +373,7 @@ static void swap(
 *Правильно*\
 Элемент, который должен быть заменен *левым* элементом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Данная перегрузка поддерживает специальные прокси-требования `vector<bool>`. [vector::swap](../standard-library/vector-class.md) имеет те же функции, что и одноаргументная перегрузка `vector<bool>::swap()`.
 
