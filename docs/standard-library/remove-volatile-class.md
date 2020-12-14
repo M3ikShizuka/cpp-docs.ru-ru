@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: remove_volatile классе'
 title: Класс remove_volatile
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +8,14 @@ helpviewer_keywords:
 - remove_volatile class
 - remove_volatile
 ms.assetid: 8b87e2c2-a581-4eb3-8691-c5603910d61d
-ms.openlocfilehash: 19514d1839fa6e0afcecb690dcb12657a85f3c2e
-ms.sourcegitcommit: 0dcab746c49f13946b0a7317fc9769130969e76d
+ms.openlocfilehash: 45f0ba9ba4685a471f13d0d36ae5080eb667a9f9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68451264"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344878"
 ---
-# <a name="removevolatile-class"></a>Класс remove_volatile
+# <a name="remove_volatile-class"></a>Класс remove_volatile
 
 Создает долговременный тип из типа.
 
@@ -33,9 +34,9 @@ using remove_volatile_t = typename remove_volatile<T>::type;
 *T*\
 Тип для изменения.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Экземпляр `remove_volatile<T>` содержит модифицированный тип, который имеет `T1` значение, если *t* имеет форму `volatile T1`, в противном случае *t*.
+Экземпляр `remove_volatile<T>` содержит модифицированный тип, который имеет значение, `T1` Если *t* имеет форму `volatile T1` , в противном случае *t*.
 
 ## <a name="example"></a>Пример
 
@@ -61,11 +62,11 @@ remove_volatile_t<volatile int> == int
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<type_traits>
+**Заголовок:**\<type_traits>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [<type_traits>](../standard-library/type-traits.md)\
 [Класс add_volatile](../standard-library/add-volatile-class.md)

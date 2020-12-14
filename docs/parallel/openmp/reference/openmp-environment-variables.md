@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения см. в статье переменные среды OpenMP
 title: Переменные среды OpenMP
 ms.date: 03/20/2019
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - OMP_NUM_THREADS OpenMP environment variable
 - OMP_SCHEDULE OpenMP environment variable
 ms.assetid: 2178ce2b-ffa1-45ec-a455-64437711d15d
-ms.openlocfilehash: 3f9117c531bdf0c5a0c94e0b18a055591f431036
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 58ca563033906f4e5e7e9d59089dc463396aa91c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503757"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342391"
 ---
 # <a name="openmp-environment-variables"></a>Переменные среды OpenMP
 
@@ -42,7 +43,7 @@ Visual C++ реализация стандарта OpenMP включает сл�
 set OMP_DYNAMIC[=TRUE | =FALSE]
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `OMP_DYNAMIC`Переменная среды может быть переопределена функцией [omp_set_dynamic](openmp-functions.md#omp-set-dynamic) .
 
@@ -72,7 +73,7 @@ set OMP_DYNAMIC
 set OMP_NESTED[=TRUE | =FALSE]
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `OMP_NESTED`Переменная среды может быть переопределена функцией [omp_set_nested](openmp-functions.md#omp-set-nested) .
 
@@ -107,7 +108,7 @@ set OMP_NUM_THREADS[=num]
 *num*<br/>
 Максимальное число потоков в параллельной области до 64 в реализации Visual C++.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `OMP_NUM_THREADS`Переменная среды может быть переопределена функцией [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) или [num_threads](openmp-clauses.md#num-threads).
 
@@ -145,7 +146,7 @@ set OMP_SCHEDULE[=type[,size]]
 *type*<br/>
 Тип расписаний:,, `dynamic` `guided` `runtime` или `static` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Значением по умолчанию в Visual C++ реализации стандарта OpenMP является `OMP_SCHEDULE=static,0` .
 

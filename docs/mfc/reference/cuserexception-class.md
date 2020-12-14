@@ -1,5 +1,6 @@
 ---
-title: Класс CUserException
+description: 'Дополнительные сведения о: Кусерексцептион Class'
+title: Класс Кусерексцептион
 ms.date: 11/04/2016
 f1_keywords:
 - CUserException
@@ -11,14 +12,14 @@ helpviewer_keywords:
 - operations [MFC]
 - throwing exceptions [MFC], stopping user operations
 ms.assetid: 2156ba6d-2cce-415a-9000-6f02c26fcd7d
-ms.openlocfilehash: 72d8537616792859a2b00a1a5cd880ce5eb452bf
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 6104aa2883a80f88aed03634f09ad1947e9c6794
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62323441"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97344969"
 ---
-# <a name="cuserexception-class"></a>Класс CUserException
+# <a name="cuserexception-class"></a>Класс Кусерексцептион
 
 Создается для остановки операции пользователя.
 
@@ -28,17 +29,17 @@ ms.locfileid: "62323441"
 class CUserException : public CSimpleException
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Remarks
 
-Использовать `CUserException` Если вы хотите использовать механизм обработки исключений throw и catch для исключений, относящиеся к приложению. «User» в имени класса может интерпретироваться как «Мои пользователя было что-то исключительных, что мне нужно обрабатывать.»
+Используется `CUserException` , если необходимо использовать механизм исключения Throw/catch для исключений конкретного приложения. "User" в имени класса можно интерпретировать как "пользователь сделал что-то недействительное, что мне нужно обработать".
 
-Объект `CUserException` обычно вызывается после вызова глобальную функцию `AfxMessageBox` для уведомления пользователя, не удалось выполнить операцию. При написании обработчика исключений, обработки исключения, специально, так как пользователь обычно уже получил уведомление о сбое. Платформа создает это исключение в некоторых случаях. Исключение `CUserException` самостоятельно, предупредить пользователя, а затем вызовите глобальную функцию `AfxThrowUserException`.
+`CUserException`Обычно создается после вызова глобальной функции `AfxMessageBox` для уведомления пользователя о том, что операция завершилась ошибкой. При написании обработчика исключений следует обрабатывайте исключение, так как обычно пользователь уже уведомлен об ошибке. В некоторых случаях платформа создает это исключение. Чтобы создать `CUserException` себя, предупредите пользователя, а затем вызовите глобальную функцию `AfxThrowUserException` .
 
-В следующем примере функция, содержащих операции, может произойти сбой извещает пользователя и создает `CUserException`. Вызывающая функция перехватывает исключение и обрабатывает ее особым образом:
+В приведенном ниже примере функция, содержащая операции, которые могут вызвать сбой, предупреждает пользователя и создает исключение `CUserException` . Вызывающая функция перехватывает исключение и обрабатывает его:
 
 [!code-cpp[NVC_MFCExceptions#24](../../mfc/codesnippet/cpp/cuserexception-class_1.cpp)]
 
-Дополнительные сведения об использовании `CUserException`, см. в статье [обработка исключений (MFC)](../../mfc/exception-handling-in-mfc.md).
+Дополнительные сведения об использовании см `CUserException` . в статье [обработка исключений (MFC)](../../mfc/exception-handling-in-mfc.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -54,7 +55,7 @@ class CUserException : public CSimpleException
 
 **Заголовок:** afxwin.h
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Класс CException](../../mfc/reference/cexception-class.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Касинкмоникерфиле Class'
 title: Класс Касинкмоникерфиле
 ms.date: 11/04/2016
 f1_keywords:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - CAsyncMonikerFile [MFC], OnStartBinding
 - CAsyncMonikerFile [MFC], OnStopBinding
 ms.assetid: 17378b66-a49a-4b67-88e3-7756ad26a2fc
-ms.openlocfilehash: 259d31b9c1e198b326ba616481dbbf5315225546
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 559ffd5ed3a8b7100d9901dc70fe4f5349c05f7f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845943"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343533"
 ---
 # <a name="casyncmonikerfile-class"></a>Класс Касинкмоникерфиле
 
@@ -49,7 +50,7 @@ ms.locfileid: "88845943"
 class CAsyncMonikerFile : public CMonikerFile
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -79,7 +80,7 @@ class CAsyncMonikerFile : public CMonikerFile
 |[Касинкмоникерфиле:: Онстартбиндинг](#onstartbinding)|Вызывается при запуске привязки.|
 |[Касинкмоникерфиле:: Онстопбиндинг](#onstopbinding)|Вызывается при остановке асинхронной пересылки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Производный от [кмоникерфиле](../../mfc/reference/cmonikerfile-class.md), который, в свою очередь, является производным от [колестреамфиле](../../mfc/reference/colestreamfile-class.md), `CAsyncMonikerFile` использует интерфейс [IMoniker](/windows/win32/api/objidl/nn-objidl-imoniker) для асинхронного доступа к любому потоку данных, включая загрузку файлов в асинхронном режиме из URL-адреса. Это могут быть свойства пути к файлам элементов управления ActiveX.
 
@@ -115,7 +116,7 @@ class CAsyncMonikerFile : public CMonikerFile
 CAsyncMonikerFile();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Он не создает `IBindHost` интерфейс. `IBindHost` используется только в том случае, если вы предоставляете его в `Open` функции-члене.
 
@@ -129,7 +130,7 @@ CAsyncMonikerFile();
 virtual void Close();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Может вызываться для неоткрытых или уже закрытых файлов.
 
@@ -150,7 +151,7 @@ virtual IUnknown* CreateBindStatusCallback(IUnknown* pUnkControlling);
 
 Если *пункконтроллинг* не равно null, функция возвращает указатель на внутреннее значение `IUnknown` в новом COM-объекте, поддерживающем `IBindStatusCallback` . Если значение `pUnkControlling` равно null, функция возвращает указатель на `IUnknown` Новый COM-объект, поддерживающий `IBindStatusCallback` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `CAsyncMonikerFile` требуется COM-объект, реализующий `IBindStatusCallback` . MFC реализует такой объект, и он может быть агрегирован. Можно переопределить `CreateBindStatusCallback` , чтобы вернуть собственный COM-объект. COM-объект может агрегировать реализацию MFC путем вызова `CreateBindStatusCallback` с помощью управления неизвестным объектом COM. COM-объекты, реализованные с помощью `CCmdTarget` поддержки COM, могут извлекать неизвестное управление с помощью `CCmdTarget::GetControllingUnknown` .
 
@@ -172,7 +173,7 @@ virtual DWORD GetBindInfo() const;
 
 Извлекает параметры для `IBindStatusCallBack` . Описание `IBindStatusCallback` интерфейса см. в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию задает для привязки значение асинхронно, для использования среды хранения (потока) и для использования модели принудительной передачи данных. Переопределите эту функцию, если необходимо изменить поведение привязки.
 
@@ -190,7 +191,7 @@ IBinding* GetBinding() const;
 
 Указатель на интерфейс, `IBinding` указанный при начале асинхронной пересылки. Возвращает значение NULL, если по какой бы то ни было причине невозможно сделать перемещение асинхронно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Это позволяет управлять процессом обмена данными через `IBinding` интерфейс, например с помощью `IBinding::Abort` , `IBinding::Pause` и `IBinding::Resume` .
 
@@ -220,7 +221,7 @@ virtual LONG GetPriority() const;
 
 Приоритет, с которым будет осуществляться асинхронная перенаправление. Один из стандартных флагов приоритета потока: THREAD_PRIORITY_ABOVE_NORMAL, THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL и THREAD_PRIORITY_TIME_CRITICAL. Описание этих значений см. в описании функции Windows [сетсреадприорити](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `GetPriority` не следует вызывать напрямую. THREAD_PRIORITY_NORMAL возвращается реализацией по умолчанию.
 
@@ -246,7 +247,7 @@ virtual void OnDataAvailable(DWORD dwSize, DWORD bscfFlag);
 
 - BSCF_LASTDATANOTIFICATION определяет последний вызов `OnDataAvailable` для операции привязки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию этой функции не выполняет никаких действий. Пример реализации см. в следующем примере.
 
@@ -262,7 +263,7 @@ virtual void OnDataAvailable(DWORD dwSize, DWORD bscfFlag);
 virtual void OnLowResource();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Реализация по умолчанию вызывает `GetBinding( )-> Abort( )` .
 
@@ -292,7 +293,7 @@ virtual void OnProgress(
 *сзстатустекст*<br/>
 Сведения о текущем ходе выполнения в зависимости от значения *улстатускоде*. Возможные значения см. в разделе "Примечания".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Возможные значения для *улстатускоде* (и *сзстатустекст* для каждого значения):
 
@@ -316,7 +317,7 @@ virtual void OnProgress(
 virtual void OnStartBinding();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция вызывается обратно моникером. Реализация по умолчанию не выполняет никаких действий.
 
@@ -336,7 +337,7 @@ virtual void OnStopBinding(HRESULT hresult, LPCTSTR szError);
 *сзеррорт*<br/>
 Символьная строка, описывающая ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите эту функцию для выполнения действий при остановке перемещения. По умолчанию функция выпусков `IBinding` .
 
@@ -401,16 +402,16 @@ virtual BOOL Open(
 Указатель на `IBindHost` интерфейс, который будет использоваться для создания моникера из потенциально относительных путей. Если узел привязки является недопустимым или не предоставляет моникер, по умолчанию вызывается `Open(lpszFileName,pError)` . Описание `IBindHost` интерфейса см. в Windows SDK.
 
 *псервицепровидер*<br/>
-Указатель на интерфейс `IServiceProvider` . Если поставщик услуг является недопустимым или не удается предоставить службу для `IBindHost` , по умолчанию вызывается `Open(lpszFileName,pError)` .
+Указатель на интерфейс `IServiceProvider`. Если поставщик услуг является недопустимым или не удается предоставить службу для `IBindHost` , по умолчанию вызывается `Open(lpszFileName,pError)` .
 
 *pUnknown*<br/>
-Указатель на интерфейс `IUnknown` . Если `IServiceProvider` найден, функция запрашивает `IBindHost` . Если поставщик услуг является недопустимым или не удается предоставить службу для `IBindHost` , по умолчанию вызывается `Open(lpszFileName,pError)` .
+Указатель на интерфейс `IUnknown`. Если `IServiceProvider` найден, функция запрашивает `IBindHost` . Если поставщик услуг является недопустимым или не удается предоставить службу для `IBindHost` , по умолчанию вызывается `Open(lpszFileName,pError)` .
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Ненулевое значение, если файл открыт успешно. в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот вызов инициирует процесс привязки.
 

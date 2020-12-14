@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CStatusBarCtrl Class'
 title: Класс CStatusBarCtrl
 ms.date: 11/04/2016
 f1_keywords:
@@ -44,12 +45,12 @@ helpviewer_keywords:
 - CStatusBarCtrl [MFC], SetText
 - CStatusBarCtrl [MFC], SetTipText
 ms.assetid: 8504ad38-7b91-4746-aede-ac98886eb47b
-ms.openlocfilehash: d2440eb05a1367b7d4980494e3d7f5de646d5fd0
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: 424edbd2d78fc82c7c78315dea1d430c6ea9459d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562653"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342638"
 ---
 # <a name="cstatusbarctrl-class"></a>Класс CStatusBarCtrl
 
@@ -61,7 +62,7 @@ ms.locfileid: "88562653"
 class CStatusBarCtrl : public CWnd
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -92,7 +93,7 @@ class CStatusBarCtrl : public CWnd
 |[CStatusBarCtrl:: SetText](#settext)|Задает текст в указанной части элемента управления "Строка состояния".|
 |[CStatusBarCtrl:: Сеттиптекст](#settiptext)|Задает текст подсказки для панели в строке состояния.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Элемент управления "строка состояния" — это горизонтальное окно, обычно отображаемое в нижней части родительского окна, в котором приложение может отображать различные типы сведений о состоянии. Элемент управления "строка состояния" можно разделить на части, чтобы отобразить более одного типа информации.
 
@@ -144,7 +145,7 @@ virtual BOOL Create(
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Построение создается `CStatusBarCtrl` в два этапа. Сначала вызовите конструктор, а затем вызов метода `Create` , который создает элемент управления "строка состояния" и присоединяет его к `CStatusBarCtrl` объекту.
 
@@ -190,7 +191,7 @@ virtual BOOL CreateEx(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте `CreateEx` вместо [CREATE](#create) , чтобы применить расширенные стили Windows, заданные **WS_EX_** в расширенном стиле Windows.
 
@@ -215,7 +216,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 *лпдравитемструкт*<br/>
 Длинный указатель на структуру [дравитемструкт](/windows/win32/api/winuser/ns-winuser-drawitemstruct) , содержащую сведения о типе требуемой прорисовки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `itemAction`Элемент `DRAWITEMSTRUCT` структуры определяет выполняемое действие рисования.
 
@@ -254,7 +255,7 @@ BOOL GetBorders(
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эти границы определяют интервал между внешним ребром элемента управления и прямоугольниками внутри элемента управления, содержащими текст.
 
@@ -279,7 +280,7 @@ HICON GetIcon(int iPart) const;
 
 Маркер значка, если метод выполнен успешно; в противном случае значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод отправляет [SB_GETICON](/windows/win32/Controls/sb-geticon) сообщение, описанное в Windows SDK.
 
@@ -319,7 +320,7 @@ int GetParts(
 
 Число частей в элементе управления в случае успеха или ноль в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена также получает координату правого края заданного числа частей.
 
@@ -446,7 +447,7 @@ CString GetTipText(int nPane) const;
 
 Объект [CString](../../atl-mfc-shared/reference/cstringt-class.md) , содержащий текст, который будет использоваться в подсказке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [SB_GETTIPTEXT](/windows/win32/Controls/sb-gettiptext), как описано в Windows SDK.
 
@@ -466,7 +467,7 @@ BOOL IsSimple() const;
 
 Ненулевое значение, если элемент управления "окно состояния" находится в простом режиме; в противном случае — ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [SB_ISSIMPLE](/windows/win32/Controls/sb-issimple), как описано в Windows SDK.
 
@@ -487,7 +488,7 @@ COLORREF SetBkColor(COLORREF cr);
 
 Значение [COLORREF](/windows/win32/gdi/colorref) , представляющее предыдущий цвет фона по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [SB_SETBKCOLOR](/windows/win32/Controls/sb-setbkcolor), как описано в Windows SDK.
 
@@ -517,7 +518,7 @@ BOOL SetIcon(
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [SB_SETICON](/windows/win32/Controls/sb-seticon), как описано в Windows SDK.
 
@@ -538,7 +539,7 @@ void SetMinHeight(int nMin);
 *Nмин.*<br/>
 Минимальная высота элемента управления (в пикселях).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Минимальная высота — это сумма *nмин.* и вдвое больше ширины (в пикселях) вертикальной границы элемента управления "строка состояния".
 
@@ -589,7 +590,7 @@ BOOL SetSimple(BOOL bSimple = TRUE);
 
 Всегда возвращает 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если приложение изменяет строку состояния с непростого на простой или наоборот, система немедленно перерисовывает элемент управления.
 
@@ -619,7 +620,7 @@ BOOL SetText(
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Сообщение сделает недействительным измененную часть элемента управления, что привело бы к отображению нового текста, когда элемент управления затем получает сообщение WM_PAINT.
 
@@ -645,7 +646,7 @@ void SetTipText(
 *псзтиптекст*<br/>
 Указатель на строку, содержащую текст подсказки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Эта функция члена реализует поведение сообщения Win32 [SB_SETTIPTEXT](/windows/win32/Controls/sb-settiptext), как описано в Windows SDK.
 
@@ -653,7 +654,7 @@ void SetTipText(
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl#12](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_14.cpp)]
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [CWnd, класс](../../mfc/reference/cwnd-class.md)<br/>
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кстатик Class'
 title: Класс Кстатик
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - CStatic [MFC], SetEnhMetaFile
 - CStatic [MFC], SetIcon
 ms.assetid: e7c94cd9-5ebd-428a-aa30-b3e51f8efb95
-ms.openlocfilehash: 1f6aac50b2143a4d5296baac906b1ebd0ef542f5
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: fa151382cc1342151e937662781a625739e82bd3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215963"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342664"
 ---
 # <a name="cstatic-class"></a>Класс Кстатик
 
@@ -45,11 +46,11 @@ ms.locfileid: "87215963"
 class CStatic : public CWnd
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[Кстатик:: Кстатик](#cstatic)|Формирует объект `CStatic`.|
 
@@ -68,7 +69,7 @@ class CStatic : public CWnd
 |[Кстатик:: Сетенхметафиле](#setenhmetafile)|Задает расширенный метафайл, отображаемый в статическом элементе управления.|
 |[Кстатик:: Сетикон](#seticon)|Задает значок, отображаемый в статическом элементе управления.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Статический элемент управления отображает текстовую строку, рамку, прямоугольник, значок, курсор, точечный рисунок или расширенный метафайл. Его можно использовать для пометки, бокса или разделения других элементов управления. Статический элемент управления обычно не принимает входные данные и не предоставляет выходных данных. Однако он может уведомить своего родителя щелчков мыши, если он создан с использованием стиля SS_NOTIFY.
 
@@ -92,7 +93,7 @@ class CStatic : public CWnd
 
 **Заголовок:** afxwin.h
 
-## <a name="cstaticcreate"></a><a name="create"></a>Кстатик:: Create
+## <a name="cstaticcreate"></a><a name="create"></a> Кстатик:: Create
 
 Создает статический элемент управления Windows и прикрепляет его к `CStatic` объекту.
 
@@ -126,7 +127,7 @@ virtual BOOL Create(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Создайте `CStatic` объект в два этапа. Сначала вызовите конструктор `CStatic` , а затем вызовите метод `Create` , который создает статический элемент управления Windows и присоединяет его к `CStatic` объекту.
 
@@ -154,7 +155,7 @@ virtual BOOL Create(
 
 [!code-cpp[NVC_MFC_CStatic#1](../../mfc/reference/codesnippet/cpp/cstatic-class_1.cpp)]
 
-## <a name="cstaticcstatic"></a><a name="cstatic"></a>Кстатик:: Кстатик
+## <a name="cstaticcstatic"></a><a name="cstatic"></a> Кстатик:: Кстатик
 
 Формирует объект `CStatic`.
 
@@ -166,7 +167,7 @@ CStatic();
 
 [!code-cpp[NVC_MFC_CStatic#2](../../mfc/reference/codesnippet/cpp/cstatic-class_2.cpp)]
 
-## <a name="cstaticdrawitem"></a><a name="drawitem"></a>Кстатик::D Равитем
+## <a name="cstaticdrawitem"></a><a name="drawitem"></a> Кстатик::D Равитем
 
 Вызывается платформой для рисования статического элемента управления, рисуемого владельцем.
 
@@ -179,11 +180,11 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 *лпдравитемструкт*<br/>
 Указатель на структуру [дравитемструкт](/windows/win32/api/winuser/ns-winuser-drawitemstruct) . Структура содержит сведения о рисуемом элементе и требуемом типе рисования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Переопределите эту функцию, чтобы реализовать Рисование для рисуемого владельцем `CStatic` объекта (элемент управления имеет стиль SS_OWNERDRAW).
 
-## <a name="cstaticgetbitmap"></a><a name="getbitmap"></a>Кстатик::/Bitmap
+## <a name="cstaticgetbitmap"></a><a name="getbitmap"></a> Кстатик::/Bitmap
 
 Возвращает маркер точечного рисунка, установленный ранее с помощью [сетбитмап](#setbitmap), который связан с `CStatic` .
 
@@ -199,7 +200,7 @@ HBITMAP GetBitmap() const;
 
 [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]
 
-## <a name="cstaticgetcursor"></a><a name="getcursor"></a>Кстатик:: oncursor
+## <a name="cstaticgetcursor"></a><a name="getcursor"></a> Кстатик:: oncursor
 
 Возвращает маркер курсора, установленный ранее с помощью [сеткурсор](#setcursor), который связан с `CStatic` .
 
@@ -215,7 +216,7 @@ HCURSOR GetCursor();
 
 [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]
 
-## <a name="cstaticgetenhmetafile"></a><a name="getenhmetafile"></a>Кстатик:: Жетенхметафиле
+## <a name="cstaticgetenhmetafile"></a><a name="getenhmetafile"></a> Кстатик:: Жетенхметафиле
 
 Возвращает маркер расширенного метафайла, который ранее устанавливался с помощью [сетенхметафиле](#setenhmetafile), связанного с `CStatic` .
 
@@ -231,7 +232,7 @@ HENHMETAFILE GetEnhMetaFile() const;
 
 [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]
 
-## <a name="cstaticgeticon"></a><a name="geticon"></a>Кстатик:: "Icon"
+## <a name="cstaticgeticon"></a><a name="geticon"></a> Кстатик:: "Icon"
 
 Возвращает маркер значка, ранее заданный с помощью [сетикон](#seticon), который связан с `CStatic` .
 
@@ -247,7 +248,7 @@ HICON GetIcon() const;
 
 [!code-cpp[NVC_MFC_CStatic#6](../../mfc/reference/codesnippet/cpp/cstatic-class_6.cpp)]
 
-## <a name="cstaticsetbitmap"></a><a name="setbitmap"></a>Кстатик:: Сетбитмап
+## <a name="cstaticsetbitmap"></a><a name="setbitmap"></a> Кстатик:: Сетбитмап
 
 Связывает новое растровое изображение со статическим элементом управления.
 
@@ -264,7 +265,7 @@ HBITMAP SetBitmap(HBITMAP hBitmap);
 
 Маркер точечного рисунка, который ранее был связан со статическим элементом управления, или значение NULL, если ни один из битовых рисунков не связан с статическим элементом управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Растровое изображение будет автоматически отображаться в статическом элементе управления. По умолчанию он будет отображаться в левом верхнем углу, а размер статического элемента управления изменится до размера растрового изображения.
 
@@ -276,7 +277,7 @@ HBITMAP SetBitmap(HBITMAP hBitmap);
 
 - MFC предоставляет класс `CBitmap` , который можно использовать, когда необходимо сделать больше с растровым изображением, чем просто вызвать функцию Win32 `LoadBitmap` . `CBitmap`, который содержит один тип объекта GDI, часто используется для взаимодействия с `CStatic` , который представляет собой `CWnd` класс, используемый для отображения графического объекта в виде статического элемента управления.
 
-`CImage`— Это класс ATL/MFC, который позволяет более легко работать с независимыми от устройства точечными рисунками (DIB). Дополнительные сведения см. в разделе [класс CImage](../../atl-mfc-shared/reference/cimage-class.md).
+`CImage` — Это класс ATL/MFC, который позволяет более легко работать с независимыми от устройства точечными рисунками (DIB). Дополнительные сведения см. в разделе [класс CImage](../../atl-mfc-shared/reference/cimage-class.md).
 
 - Типичное использование заключается в предоставлении `CStatic::SetBitmap` объекта GDI, возвращаемого оператором хбитмап `CBitmap` `CImage` объекта или. Код для этого напоминает следующую строку.
 
@@ -290,7 +291,7 @@ MyStaticControl.SetBitmap(HBITMAP(MyBitmap));
 
 [!code-cpp[NVC_MFC_CStatic#3](../../mfc/reference/codesnippet/cpp/cstatic-class_3.cpp)]
 
-## <a name="cstaticsetcursor"></a><a name="setcursor"></a>Кстатик:: Сеткурсор
+## <a name="cstaticsetcursor"></a><a name="setcursor"></a> Кстатик:: Сеткурсор
 
 Связывает новый образ курсора со статическим элементом управления.
 
@@ -307,7 +308,7 @@ HCURSOR SetCursor(HCURSOR hCursor);
 
 Маркер курсора, который ранее связан со статическим элементом управления, или значение NULL, если ни один из курсоров не связан с статическим элементом управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Курсор будет автоматически нарисован в статическом элементе управления. По умолчанию он будет отображаться в левом верхнем углу, а размер статического элемента управления изменится до размера курсора.
 
@@ -321,7 +322,7 @@ HCURSOR SetCursor(HCURSOR hCursor);
 
 [!code-cpp[NVC_MFC_CStatic#4](../../mfc/reference/codesnippet/cpp/cstatic-class_4.cpp)]
 
-## <a name="cstaticsetenhmetafile"></a><a name="setenhmetafile"></a>Кстатик:: Сетенхметафиле
+## <a name="cstaticsetenhmetafile"></a><a name="setenhmetafile"></a> Кстатик:: Сетенхметафиле
 
 Связывает новый расширенный графический метафайл с статическим элементом управления.
 
@@ -338,7 +339,7 @@ HENHMETAFILE SetEnhMetaFile(HENHMETAFILE hMetaFile);
 
 Маркер расширенного метафайла, ранее связанный со статическим элементом управления, или значение NULL, если с статическим элементом управления не связан ни один расширенный метафайл.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Расширенный метафайл будет автоматически отображаться в статическом элементе управления. Расширенный метафайл масштабируется в соответствии с размером статического элемента управления.
 
@@ -350,7 +351,7 @@ HENHMETAFILE SetEnhMetaFile(HENHMETAFILE hMetaFile);
 
 [!code-cpp[NVC_MFC_CStatic#5](../../mfc/reference/codesnippet/cpp/cstatic-class_5.cpp)]
 
-## <a name="cstaticseticon"></a><a name="seticon"></a>Кстатик:: Сетикон
+## <a name="cstaticseticon"></a><a name="seticon"></a> Кстатик:: Сетикон
 
 Связывает новое изображение значка со статическим элементом управления.
 
@@ -367,7 +368,7 @@ HICON SetIcon(HICON hIcon);
 
 Маркер значка, ранее связанный со статическим элементом управления, или значение NULL, если с статическим элементом управления не связан ни один значок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Значок будет автоматически отображаться в статическом элементе управления. По умолчанию он будет отображаться в левом верхнем углу, а размер статического элемента управления изменится до размера значка.
 

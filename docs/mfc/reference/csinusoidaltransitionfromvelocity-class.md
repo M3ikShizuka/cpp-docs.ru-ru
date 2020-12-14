@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: КсинусоидалтранситионфромвелоЦити Class'
 title: Класс CSinusoidalTransitionFromVelocity
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CSinusoidalTransitionFromVelocity [MFC], m_duration
 - CSinusoidalTransitionFromVelocity [MFC], m_period
 ms.assetid: cc885f17-b84b-45ee-8f1f-36a8bbb7adad
-ms.openlocfilehash: 0df9ca6d140cb9e3ec85be3ce32760a66599c5d4
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 96f4a4c6343f3635f3b60480f49c5af6e6f1e089
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81318245"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342758"
 ---
 # <a name="csinusoidaltransitionfromvelocity-class"></a>Класс CSinusoidalTransitionFromVelocity
 
@@ -31,46 +32,46 @@ ms.locfileid: "81318245"
 class CSinusoidalTransitionFromVelocity : public CBaseTransition;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CSinusoidalTransitionFromVelocity::CSinusoidalTransitionFrom](#csinusoidaltransitionfromvelocity)|Строит переходный объект.|
+|[КсинусоидалтранситионфромвелоЦити:: КсинусоидалтранситионфромвелоЦити](#csinusoidaltransitionfromvelocity)|Конструирует объект перехода.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CSinusoidalTransitionFromVelocity::Создание](#create)|Вызывает библиотеку перехода для создания инкапсулированного объекта переходного COM. (Переопределяет [CBaseПереход::Создание](../../mfc/reference/cbasetransition-class.md#create).)|
+|[КсинусоидалтранситионфромвелоЦити:: Create](#create)|Вызывает библиотеку переходов для создания COM-объекта инкапсулированного перехода. (Переопределяет [CBaseTransition:: Create](../../mfc/reference/cbasetransition-class.md#create).)|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
 |Имя|Описание|
 |----------|-----------------|
-|[CSinusoidalTransitionFromVelocity::m_duration](#m_duration)|Продолжительность перехода.|
-|[CSinusoidalTransitionFromVelocity::m_period](#m_period)|Период колебаний синусоидальной волны в считанные секунды.|
+|[КсинусоидалтранситионфромвелоЦити:: m_duration](#m_duration)|Длительность перехода.|
+|[КсинусоидалтранситионфромвелоЦити:: m_period](#m_period)|Период колебаний синусоидальнойной волны в секундах.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Значение переменной анимации колеблется вокруг исходного значения в течение всего периода синусоидального перехода. Амплитуда колебаний определяется скоростью переменной анимации при начале перехода. Поскольку все переходы очищаются автоматически, рекомендуется выделять их с помощью нового оператора. Инкапсулированный объект IUIAnimationTransition COM создается CAnimationController::AnimateGroup, до тех пор это NULL. Изменение переменных членов после создания этого объекта COM не имеет эффекта.
+Значение переменной анимации осЦиллатес вокруг первоначального значения в течение всей продолжительности перехода синусоидальной Range. Амплитуда колебаний определяется скоростью переменной анимации при начале перехода. Так как все переходы очищаются автоматически, рекомендуется выделять их с помощью оператора New. Инкапсулированный COM-объект Иуианиматионтранситион создается методом Каниматионконтроллер:: Аниматеграуп, пока он не будет равен NULL. Изменение переменных-членов после создания этого объекта COM не имеет силы.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
 [CObject](../../mfc/reference/cobject-class.md)
 
-[CBaseПереход](../../mfc/reference/cbasetransition-class.md)
+[CBaseTransition](../../mfc/reference/cbasetransition-class.md)
 
-[CSinusoidalTransitionFrom](../../mfc/reference/csinusoidaltransitionfromvelocity-class.md)
+[ксинусоидалтранситионфромвелоЦити](../../mfc/reference/csinusoidaltransitionfromvelocity-class.md)
 
 ## <a name="requirements"></a>Требования
 
 **Заголовок:** afxanimationcontroller.h
 
-## <a name="csinusoidaltransitionfromvelocitycreate"></a><a name="create"></a>CSinusoidalTransitionFromVelocity::Создание
+## <a name="csinusoidaltransitionfromvelocitycreate"></a><a name="create"></a> КсинусоидалтранситионфромвелоЦити:: Create
 
-Вызывает библиотеку перехода для создания инкапсулированного объекта переходного COM.
+Вызывает библиотеку переходов для создания COM-объекта инкапсулированного перехода.
 
 ```
 virtual BOOL Create(
@@ -80,16 +81,16 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Параметры
 
-*pLibrary*<br/>
-Указатель на библиотеку перехода, которая отвечает за создание стандартных переходов.
+*плибрари*<br/>
+Указатель на библиотеку переходов, который отвечает за создание стандартных переходов.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если переход создан успешно; в противном случае FALSE.
+Значение TRUE, если переход успешно создан; в противном случае — FALSE.
 
-## <a name="csinusoidaltransitionfromvelocitycsinusoidaltransitionfromvelocity"></a><a name="csinusoidaltransitionfromvelocity"></a>CSinusoidalTransitionFromVelocity::CSinusoidalTransitionFrom
+## <a name="csinusoidaltransitionfromvelocitycsinusoidaltransitionfromvelocity"></a><a name="csinusoidaltransitionfromvelocity"></a> КсинусоидалтранситионфромвелоЦити:: КсинусоидалтранситионфромвелоЦити
 
-Строит переходный объект.
+Конструирует объект перехода.
 
 ```
 CSinusoidalTransitionFromVelocity(
@@ -99,23 +100,23 @@ CSinusoidalTransitionFromVelocity(
 
 ### <a name="parameters"></a>Параметры
 
-*Длительность*<br/>
-Продолжительность перехода.
+*duration*<br/>
+Длительность перехода.
 
-*Период*<br/>
-Период колебаний синусоидальной волны в считанные секунды.
+*периода*<br/>
+Период колебаний синусоидальнойной волны в секундах.
 
-## <a name="csinusoidaltransitionfromvelocitym_duration"></a><a name="m_duration"></a>CSinusoidalTransitionFromVelocity::m_duration
+## <a name="csinusoidaltransitionfromvelocitym_duration"></a><a name="m_duration"></a> КсинусоидалтранситионфромвелоЦити:: m_duration
 
-Продолжительность перехода.
+Длительность перехода.
 
 ```
 UI_ANIMATION_SECONDS m_duration;
 ```
 
-## <a name="csinusoidaltransitionfromvelocitym_period"></a><a name="m_period"></a>CSinusoidalTransitionFromVelocity::m_period
+## <a name="csinusoidaltransitionfromvelocitym_period"></a><a name="m_period"></a> КсинусоидалтранситионфромвелоЦити:: m_period
 
-Период колебаний синусоидальной волны в считанные секунды.
+Период колебаний синусоидальнойной волны в секундах.
 
 ```
 UI_ANIMATION_SECONDS m_period;

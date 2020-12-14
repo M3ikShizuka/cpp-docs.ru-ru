@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: директивы OpenMP'
 title: Директивы OpenMP
 ms.date: 03/20/2019
 f1_keywords:
@@ -27,12 +28,12 @@ helpviewer_keywords:
 - single OpenMP directive
 - threadprivate OpenMP directive
 ms.assetid: 0562c263-344c-466d-843e-de830d918940
-ms.openlocfilehash: 21270e8cdeb17b6d06d903d328962435c627759f
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: 03730b1f5cda0972dbf86b345c6e44bdad4e949b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503824"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97342404"
 ---
 # <a name="openmp-directives"></a>Директивы OpenMP
 
@@ -78,9 +79,9 @@ Visual C++ поддерживает следующие директивы OpenMP
 ### <a name="parameters"></a>Параметры
 
 *expression*<br/>
-Инструкция с *левосторонним*значением, расположение памяти которого необходимо защитить от более чем одной записи.
+Инструкция с *левосторонним* значением, расположение памяти которого необходимо защитить от более чем одной записи.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `atomic`Директива не поддерживает никаких предложений.
 
@@ -119,7 +120,7 @@ Number of threads: 10
 #pragma omp barrier
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `barrier`Директива не поддерживает никаких предложений.
 
@@ -145,7 +146,7 @@ Number of threads: 10
 *name*<br/>
 Используемых Имя для поиска критического кода. Имя должно быть заключено в круглые скобки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `critical`Директива не поддерживает никаких предложений.
 
@@ -222,7 +223,7 @@ max = 29358
 *var*<br/>
 Используемых Разделенный запятыми список переменных, представляющих объекты, которые необходимо синхронизировать. Если *переменная var* не указана, вся память очищается.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `flush`Директива не поддерживает никаких предложений.
 
@@ -302,7 +303,7 @@ data = 2
 *for_statement*<br/>
 `for`Цикл. Неопределенное поведение будет вызвано тем, что пользовательский код в `for` цикле изменяет переменную индекса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `for`Директива поддерживает следующие предложения:
 
@@ -393,7 +394,7 @@ The sum of 1 through 10 is 55
 }
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `master`Директива не поддерживает никаких предложений.
 
@@ -453,7 +454,7 @@ a[4] = 16
    structured-block
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `ordered`Директива должна находиться в динамической области конструкции [for](#for-openmp) или `parallel for` с `ordered` предложением.
 
@@ -531,11 +532,11 @@ test2() iteration 4
 *предложения*<br/>
 Используемых Ноль или более предложений, см. раздел **"Примечания** ".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `parallel`Директива поддерживает следующие предложения:
 
-- [if](openmp-clauses.md#if-openmp) (если);
+- [if](openmp-clauses.md#if-openmp)
 - [private](openmp-clauses.md#private-openmp)
 - [firstprivate](openmp-clauses.md#firstprivate)
 - [default](openmp-clauses.md#default-openmp)
@@ -593,7 +594,7 @@ Hello from thread 3
 *предложения*<br/>
 Используемых Ноль или более предложений, см. раздел **"Примечания** ".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `sections`Директива может содержать ноль или более `section` директив.
 
@@ -648,7 +649,7 @@ Hello from thread 0
 *предложения*<br/>
 Используемых Ноль или более предложений, см. раздел **"Примечания** ".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `single`Директива поддерживает следующие предложения:
 
@@ -706,7 +707,7 @@ write output
 *var*<br/>
 Разделенный запятыми список переменных, которые необходимо сделать частными для потока. переменная *var* должна быть либо переменной с областью видимости глобального или пространства имен, либо локальной статической переменной.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 `threadprivate`Директива не поддерживает никаких предложений.
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кпропексчанже Class'
 title: Класс Кпропексчанже
 ms.date: 11/04/2016
 f1_keywords:
@@ -22,12 +23,12 @@ helpviewer_keywords:
 - CPropExchange [MFC], IsAsynchronous
 - CPropExchange [MFC], IsLoading
 ms.assetid: ed872180-e770-4942-892a-92139d501fab
-ms.openlocfilehash: 09fb1bd34f3b5eadb78d8f9081450c042fe22f9e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 3e95940a6ba649b134df3cfc79abcf85e03f7e8d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226871"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343315"
 ---
 # <a name="cpropexchange-class"></a>Класс Кпропексчанже
 
@@ -39,11 +40,11 @@ ms.locfileid: "87226871"
 class AFX_NOVTABLE CPropExchange
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|name|Описание|
 |----------|-----------------|
 |[Кпропексчанже:: Ексчанжеблобпроп](#exchangeblobprop)|Обменивается данными со свойством большого двоичного объекта (BLOB).|
 |[Кпропексчанже:: Ексчанжефонтпроп](#exchangefontprop)|Меняет местами свойство Font.|
@@ -54,9 +55,9 @@ class AFX_NOVTABLE CPropExchange
 |[Кпропексчанже:: в асинхронном режиме](#isasynchronous)|Определяет, выполняются ли обмены свойствами асинхронно.|
 |[Кпропексчанже:: Load](#isloading)|Указывает, загружаются ли свойства в элемент управления или сохраняются из него.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`CPropExchange`не имеет базового класса.
+`CPropExchange` не имеет базового класса.
 
 Устанавливает контекст и направление обмена свойствами.
 
@@ -66,7 +67,7 @@ class AFX_NOVTABLE CPropExchange
 
 Платформа передает указатель на этот `CPropExchange` объект в функцию элемента управления `DoPropExchange` . Если для создания начальных файлов для элемента управления использовался мастер, `DoPropExchange` вызывается функция элемента управления `COleControl::DoPropExchange` . Версия базового класса обменивается свойствами запасов элемента управления. Вы изменяете версию производного класса на свойства Exchange, добавленные в элемент управления.
 
-`CPropExchange`может использоваться для сериализации свойств элемента управления или инициализации свойств элемента управления при загрузке или создании элемента управления. `ExchangeProp`Функции- `ExchangeFontProp` члены и могут `CPropExchange` сохранять свойства и загружать их с разных носителей.
+`CPropExchange` может использоваться для сериализации свойств элемента управления или инициализации свойств элемента управления при загрузке или создании элемента управления. `ExchangeProp`Функции- `ExchangeFontProp` члены и могут `CPropExchange` сохранять свойства и загружать их с разных носителей.
 
 Дополнительные сведения об использовании см `CPropExchange` . в статье [элементы управления ActiveX в MFC: страницы свойств](../../mfc/mfc-activex-controls-property-pages.md).
 
@@ -78,7 +79,7 @@ class AFX_NOVTABLE CPropExchange
 
 **Заголовок:** afxctl. h
 
-## <a name="cpropexchangeexchangeblobprop"></a><a name="exchangeblobprop"></a>Кпропексчанже:: Ексчанжеблобпроп
+## <a name="cpropexchangeexchangeblobprop"></a><a name="exchangeblobprop"></a> Кпропексчанже:: Ексчанжеблобпроп
 
 Сериализует свойство, в котором хранятся данные большого двоичного объекта (BLOB).
 
@@ -104,13 +105,13 @@ virtual BOOL ExchangeBlobProp(
 
 Ненулевое значение, если Exchange завершился успешно; 0 в случае неудачи.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Значение свойства считывается или записывается в, при необходимости, на переменную, на которую ссылается *фблоб*. Если указан параметр *хблобдефаулт* , он будет использоваться как значение свойства по умолчанию. Это значение используется, если по какой-либо причине происходит сбой сериализации элемента управления.
 
 Функции `CArchivePropExchange::ExchangeBlobProp` , `CResetPropExchange::ExchangeBlobProp` и `CPropsetPropExchange::ExchangeBlobProp` переопределяют эту чисто виртуальную функцию.
 
-## <a name="cpropexchangeexchangefontprop"></a><a name="exchangefontprop"></a>Кпропексчанже:: Ексчанжефонтпроп
+## <a name="cpropexchangeexchangefontprop"></a><a name="exchangefontprop"></a> Кпропексчанже:: Ексчанжефонтпроп
 
 Меняет местами свойство Font между носителем хранилища и элементом управления.
 
@@ -140,13 +141,13 @@ virtual BOOL ExchangeFontProp(
 
 Ненулевое значение, если Exchange завершился успешно; 0 в случае неудачи.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если свойство Font загружается с носителя на элемент управления, характеристики шрифта извлекаются с носителя, а `CFontHolder` объект, на который ссылается *Font* , инициализируется с ними. Если свойство Font хранится, характеристики в объекте Font записываются на носитель.
 
 Функции `CArchivePropExchange::ExchangeFontProp` , `CResetPropExchange::ExchangeFontProp` и `CPropsetPropExchange::ExchangeFontProp` переопределяют эту чисто виртуальную функцию.
 
-## <a name="cpropexchangeexchangepersistentprop"></a><a name="exchangepersistentprop"></a>Кпропексчанже:: Ексчанжеперсистентпроп
+## <a name="cpropexchangeexchangepersistentprop"></a><a name="exchangepersistentprop"></a> Кпропексчанже:: Ексчанжеперсистентпроп
 
 Обменивает свойство между элементом управления и файлом.
 
@@ -176,13 +177,13 @@ virtual BOOL ExchangePersistentProp(
 
 Ненулевое значение, если Exchange завершился успешно; 0 в случае неудачи.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если свойство загружается из файла в элемент управления, свойство создается и инициализируется из файла. Если свойство сохраняется, его значение записывается в файл.
 
 Функции `CArchivePropExchange::ExchangePersistentProp` , `CResetPropExchange::ExchangePersistentProp` и `CPropsetPropExchange::ExchangePersistentProp` переопределяют эту чисто виртуальную функцию.
 
-## <a name="cpropexchangeexchangeprop"></a><a name="exchangeprop"></a>Кпропексчанже:: Ексчанжепроп
+## <a name="cpropexchangeexchangeprop"></a><a name="exchangeprop"></a> Кпропексчанже:: Ексчанжепроп
 
 Меняет местами свойство между носителем хранилища и элементом управления.
 
@@ -222,13 +223,13 @@ virtual BOOL ExchangeProp(
 
 Ненулевое значение, если Exchange завершился успешно; 0 в случае неудачи.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Если свойство загружается с носителя на элемент управления, значение свойства извлекается из среднего значения и сохраняется в объекте, на который указывает *пвпроп*. Если свойство хранится на носителе, значение объекта, на которое указывает *пвпроп* , записывается на носитель.
 
 Функции `CArchivePropExchange::ExchangeProp` , `CResetPropExchange::ExchangeProp` и `CPropsetPropExchange::ExchangeProp` переопределяют эту чисто виртуальную функцию.
 
-## <a name="cpropexchangeexchangeversion"></a><a name="exchangeversion"></a>Кпропексчанже:: Ексчанжеверсион
+## <a name="cpropexchangeexchangeversion"></a><a name="exchangeversion"></a> Кпропексчанже:: Ексчанжеверсион
 
 Вызывается платформой для управления сохраняемостью номера версии.
 
@@ -254,7 +255,7 @@ virtual BOOL ExchangeVersion(
 
 Ненулевое значение, если функция прошла удачно; 0 в противном случае.
 
-## <a name="cpropexchangegetversion"></a><a name="getversion"></a>Кпропексчанже::/версия
+## <a name="cpropexchangegetversion"></a><a name="getversion"></a> Кпропексчанже::/версия
 
 Вызовите эту функцию, чтобы получить номер версии элемента управления.
 
@@ -266,7 +267,7 @@ DWORD GetVersion();
 
 Номер версии элемента управления.
 
-## <a name="cpropexchangeisasynchronous"></a><a name="isasynchronous"></a>Кпропексчанже:: в асинхронном режиме
+## <a name="cpropexchangeisasynchronous"></a><a name="isasynchronous"></a> Кпропексчанже:: в асинхронном режиме
 
 Определяет, выполняются ли обмены свойствами асинхронно.
 
@@ -278,7 +279,7 @@ BOOL IsAsynchronous();
 
 Возвращает значение TRUE, если свойства обмениваются асинхронно, в противном случае — значение FALSE.
 
-## <a name="cpropexchangeisloading"></a><a name="isloading"></a>Кпропексчанже:: Load
+## <a name="cpropexchangeisloading"></a><a name="isloading"></a> Кпропексчанже:: Load
 
 Вызовите эту функцию, чтобы определить, загружаются ли свойства в элемент управления или сохраняются из него.
 
@@ -290,7 +291,7 @@ BOOL IsLoading();
 
 Ненулевое значение, если свойства загружаются; в противном случае — 0.
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [COleControl::DoPropExchange](../../mfc/reference/colecontrol-class.md#dopropexchange)

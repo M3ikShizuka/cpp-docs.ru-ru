@@ -1,5 +1,6 @@
 ---
-title: Класс CRecentDockSiteInfo
+description: 'Дополнительные сведения о: Крецентдоккситеинфо Class'
+title: Класс Крецентдоккситеинфо
 ms.date: 11/04/2016
 f1_keywords:
 - CRecentDockSiteInfo
@@ -30,16 +31,16 @@ helpviewer_keywords:
 - CRecentDockSiteInfo [MFC], SetInfo
 - CRecentDockSiteInfo [MFC], StoreDockInfo
 ms.assetid: 2dd14f95-d5a2-4461-a7a5-2c6c36a3a165
-ms.openlocfilehash: 9f23d5aff2bac65363086c077af45e35c3263f65
-ms.sourcegitcommit: 7a6116e48c3c11b97371b8ae4ecc23adce1f092d
+ms.openlocfilehash: e33ef48be2b091477200f15a31c194d845693399
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "81750568"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97343101"
 ---
-# <a name="crecentdocksiteinfo-class"></a>Класс CRecentDockSiteInfo
+# <a name="crecentdocksiteinfo-class"></a>Класс Крецентдоккситеинфо
 
-Класс `CRecentDockSiteInfo` является классом помощника, который хранит последние сведения о состоянии для [класса CPane.](../../mfc/reference/cpane-class.md)
+`CRecentDockSiteInfo`Класс является вспомогательным классом, в котором хранятся последние сведения о состоянии для [класса CPane](../../mfc/reference/cpane-class.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -47,17 +48,17 @@ ms.locfileid: "81750568"
 class CRecentDockSiteInfo : public CObject
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |`CRecentDockSiteInfo::CRecentDockSiteInfo`|Конструктор по умолчанию.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[CRecentDockSiteInfo::CleanUp](#cleanup)||
 |[CRecentDockSiteInfo::GetRecentDefaultPaneDivider](#getrecentdefaultpanedivider)||
@@ -68,16 +69,16 @@ class CRecentDockSiteInfo : public CObject
 |[CRecentDockSiteInfo::GetRecentTabContainer](#getrecenttabcontainer)||
 |[CRecentDockSiteInfo::Init](#init)||
 |[CRecentDockSiteInfo::IsRecentLeftPane](#isrecentleftpane)||
-|[CRecentDockSiteInfo::оператор](#operator_eq)||
+|[Крецентдоккситеинфо:: operator =](#operator_eq)||
 |[CRecentDockSiteInfo::SaveListOfRecentPanes](#savelistofrecentpanes)||
 |[CRecentDockSiteInfo::SetInfo](#setinfo)||
 |[CRecentDockSiteInfo::StoreDockInfo](#storedockinfo)||
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Класс `CRecentDockSiteInfo` предназначен для управления данными. Он отслеживает последнее состояние объекта `CPane` при переходе от закрепленного режима к плавающему. Когда пользователь дважды щелкает плавающую закрепляемую панель, она становится закрепленной. Дважды щелкнув закрепленную панель, можно вернуть ее на прежнее место, с прежним размером и состоянием. Аналогичным образом повторное закрепление возвращает панель на предыдущее место закрепления. Именно этот класс данных открывает эту возможность. Поскольку члены этого класса хранят сведения о состоянии закрепленной панели, они не должны напрямую изменяться вашим приложением.
 
-Объект `CRecentDockSiteInfo` создается при каждом создании панели. Каждый `CPane` объект имеет переменную члена, [CPane::m_recentDockInfo,](../../mfc/reference/cpane-class.md#m_recentdockinfo)для хранения этой информации.
+Объект `CRecentDockSiteInfo` создается при каждом создании панели. Каждый `CPane` объект имеет переменную-член [CPane:: m_recentDockInfo](../../mfc/reference/cpane-class.md#m_recentdockinfo)для хранения этих сведений.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -87,17 +88,17 @@ class CRecentDockSiteInfo : public CObject
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxrecentDockSiteInfo.h
+**Заголовок:** афксрецентдоккситеинфо. h
 
-## <a name="crecentdocksiteinfocleanup"></a><a name="cleanup"></a>CRecentdockSiteInfo::Очистка
+## <a name="crecentdocksiteinfocleanup"></a><a name="cleanup"></a> Крецентдоккситеинфо:: CleanUp
 
 ```cpp
 void CleanUp();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="crecentdocksiteinfocrecentdocksiteinfo"></a><a name="crecentdocksiteinfo"></a>CRecentDockSiteInfo::CRecentDockSiteInfo
+## <a name="crecentdocksiteinfocrecentdocksiteinfo"></a><a name="crecentdocksiteinfo"></a> Крецентдоккситеинфо:: Крецентдоккситеинфо
 
 ```
 CRecentDockSiteInfo(CPane* pBar);
@@ -105,11 +106,11 @@ CRecentDockSiteInfo(CPane* pBar);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
+окне *пбар*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="crecentdocksiteinfogetrecentdefaultpanedivider"></a><a name="getrecentdefaultpanedivider"></a>CRecentDockSiteInfo::GetRecentDefaultPaneDivider
+## <a name="crecentdocksiteinfogetrecentdefaultpanedivider"></a><a name="getrecentdefaultpanedivider"></a> Крецентдоккситеинфо:: Жетрецентдефаултпанедивидер
 
 ```
 CPaneDivider* GetRecentDefaultPaneDivider();
@@ -117,9 +118,9 @@ CPaneDivider* GetRecentDefaultPaneDivider();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="crecentdocksiteinfogetrecentdockedpercent"></a><a name="getrecentdockedpercent"></a>CRecentDockSiteInfo:GetRecentDockedPercent
+## <a name="crecentdocksiteinfogetrecentdockedpercent"></a><a name="getrecentdockedpercent"></a> Крецентдоккситеинфо:: Жетрецентдоккедперцент
 
 ```
 int GetRecentDockedPercent(BOOL bForSlider);
@@ -127,13 +128,13 @@ int GetRecentDockedPercent(BOOL bForSlider);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *bForSlider*<br/>
+окне *бфорслидер*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="crecentdocksiteinfogetrecentdockedrect"></a><a name="getrecentdockedrect"></a>CRecentDockSiteInfo:GetRecentDockedRect
+## <a name="crecentdocksiteinfogetrecentdockedrect"></a><a name="getrecentdockedrect"></a> Крецентдоккситеинфо:: Жетрецентдоккедрект
 
 ```
 CRect& GetRecentDockedRect(BOOL bForSlider);
@@ -141,13 +142,13 @@ CRect& GetRecentDockedRect(BOOL bForSlider);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *bForSlider*<br/>
+окне *бфорслидер*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="crecentdocksiteinfogetrecentlistofpanes"></a><a name="getrecentlistofpanes"></a>CRecentdockSiteinfo:GetRecentListOfPanes
+## <a name="crecentdocksiteinfogetrecentlistofpanes"></a><a name="getrecentlistofpanes"></a> Крецентдоккситеинфо:: Жетрецентлистофпанес
 
 ```
 CList<HWND, HWND>& GetRecentListOfPanes(BOOL bForSlider);
@@ -155,13 +156,13 @@ CList<HWND, HWND>& GetRecentListOfPanes(BOOL bForSlider);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *bForSlider*<br/>
+окне *бфорслидер*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="crecentdocksiteinfogetrecentpanecontainer"></a><a name="getrecentpanecontainer"></a>CRecentDockSiteInfo:GetRecentPaneContainer
+## <a name="crecentdocksiteinfogetrecentpanecontainer"></a><a name="getrecentpanecontainer"></a> Крецентдоккситеинфо:: Жетрецентпанеконтаинер
 
 ```
 CPaneContainer* GetRecentPaneContainer(BOOL bForSlider);
@@ -169,13 +170,13 @@ CPaneContainer* GetRecentPaneContainer(BOOL bForSlider);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *bForSlider*<br/>
+окне *бфорслидер*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="crecentdocksiteinfogetrecenttabcontainer"></a><a name="getrecenttabcontainer"></a>CRecentDockSiteInfo::GetRecentTabContainer
+## <a name="crecentdocksiteinfogetrecenttabcontainer"></a><a name="getrecenttabcontainer"></a> Крецентдоккситеинфо:: Жетреценттабконтаинер
 
 ```
 CPaneContainer* GetRecentTabContainer(BOOL bForSlider);
@@ -183,21 +184,21 @@ CPaneContainer* GetRecentTabContainer(BOOL bForSlider);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *bForSlider*<br/>
+окне *бфорслидер*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="crecentdocksiteinfoinit"></a><a name="init"></a>CRecentdockSiteinfo::Init
+## <a name="crecentdocksiteinfoinit"></a><a name="init"></a> Крецентдоккситеинфо:: init
 
 ```cpp
 void Init();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="crecentdocksiteinfoisrecentleftpane"></a><a name="isrecentleftpane"></a>CRecentDockSiteInfo::IsrecentLeftPane
+## <a name="crecentdocksiteinfoisrecentleftpane"></a><a name="isrecentleftpane"></a> Крецентдоккситеинфо:: Исрецентлефтпане
 
 ```
 BOOL IsRecentLeftPane(BOOL bForSlider);
@@ -205,13 +206,13 @@ BOOL IsRecentLeftPane(BOOL bForSlider);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *bForSlider*<br/>
+окне *бфорслидер*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="crecentdocksiteinfooperator-"></a><a name="operator_eq"></a>CRecentDockSiteInfo::оператор
+## <a name="crecentdocksiteinfooperator-"></a><a name="operator_eq"></a> Крецентдоккситеинфо:: operator =
 
 ```
 CRecentDockSiteInfo& operator=(CRecentDockSiteInfo& src);
@@ -219,13 +220,13 @@ CRecentDockSiteInfo& operator=(CRecentDockSiteInfo& src);
 
 ### <a name="parameters"></a>Параметры
 
-(в) *src*<br/>
+окне *src*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="crecentdocksiteinfosavelistofrecentpanes"></a><a name="savelistofrecentpanes"></a>CRecentdockSiteinfo:SaveListOfRecentPanes
+## <a name="crecentdocksiteinfosavelistofrecentpanes"></a><a name="savelistofrecentpanes"></a> Крецентдоккситеинфо:: Савелистофрецентпанес
 
 ```cpp
 void SaveListOfRecentPanes(CList<HWND,
@@ -235,13 +236,13 @@ void SaveListOfRecentPanes(CList<HWND,
 
 ### <a name="parameters"></a>Параметры
 
-(в) *CList<HWND*<br/>
-(в) *lstOrg*<br/>
-(в) *bForSlider*<br/>
+окне *CList<HWND*<br/>
+окне *лсторг*<br/>
+окне *бфорслидер*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="crecentdocksiteinfosetinfo"></a><a name="setinfo"></a>CRecentDockSiteInfo::SetInfo
+## <a name="crecentdocksiteinfosetinfo"></a><a name="setinfo"></a> Крецентдоккситеинфо:: Сетинфо
 
 ```
 virtual void SetInfo(
@@ -251,12 +252,12 @@ virtual void SetInfo(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *bForSlider*<br/>
-(в) *srcInfo*<br/>
+окне *бфорслидер*<br/>
+окне *срЦинфо*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-## <a name="crecentdocksiteinfostoredockinfo"></a><a name="storedockinfo"></a>CRecentDockSiteInfo::StoreDockInfo
+## <a name="crecentdocksiteinfostoredockinfo"></a><a name="storedockinfo"></a> Крецентдоккситеинфо:: Сторедоккинфо
 
 ```
 virtual void StoreDockInfo(
@@ -266,13 +267,13 @@ virtual void StoreDockInfo(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pRecentContainer*<br/>
-(в) *pTabbedBar*<br/>
+окне *прецентконтаинер*<br/>
+окне *птаббедбар*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="see-also"></a>См. также раздел
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
-[CDockSite Class](../../mfc/reference/cdocksite-class.md)
+[Класс CDockSite](../../mfc/reference/cdocksite-class.md)
