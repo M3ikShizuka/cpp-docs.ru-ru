@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о обмене данными в диалоговом окне
 title: Обмен данными диалоговых окон
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - UpdateData method [MFC]
 - retrieving dialog box data [MFC]
 ms.assetid: 4675f63b-41d2-45ed-b6c3-235ad8ab924b
-ms.openlocfilehash: c12953ab0b9922788747246a97115188b2f686ed
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 7ed592e8e6a452d4c6958c3c5f7b573c1be7fe07
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616827"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261480"
 ---
 # <a name="dialog-data-exchange"></a>Обмен данными диалоговых окон
 
@@ -37,7 +38,7 @@ ms.locfileid: "84616827"
 ![Обмен данными диалоговых окон](../mfc/media/vc379d1.gif "Обмен данными диалоговых окон") <br/>
 Обмен данными диалоговых окон
 
-`UpdateData`работает в обоих направлениях, как указано параметром **bool** , передаваемым ему. Чтобы выполнить обмен, `UpdateData` настраивает `CDataExchange` объект и вызывает переопределение класса диалогового окна `CDialog` функции- `DoDataExchange` члена. `DoDataExchange`принимает аргумент типа `CDataExchange` . `CDataExchange`Объект, передаваемый в `UpdateData` , представляет контекст обмена, определяющий такие сведения, как направление обмена.
+`UpdateData` работает в обоих направлениях, как указано параметром **bool** , передаваемым ему. Чтобы выполнить обмен, `UpdateData` настраивает `CDataExchange` объект и вызывает переопределение класса диалогового окна `CDialog` функции- `DoDataExchange` члена. `DoDataExchange` принимает аргумент типа `CDataExchange` . `CDataExchange`Объект, передаваемый в `UpdateData` , представляет контекст обмена, определяющий такие сведения, как направление обмена.
 
 При переопределении (или с помощью мастера кода) `DoDataExchange` необходимо указать вызов одной функции DDX на каждый элемент данных (Control). Каждая функция DDX знает, как обмениваться данными в обоих направлениях на основе контекста, предоставленного `CDataExchange` аргументом, передаваемым в `DoDataExchange` `UpdateData` .
 
@@ -51,6 +52,6 @@ MFC предоставляет множество функций DDX для ра
 
 ## <a name="see-also"></a>См. также раздел
 
-[Обмен данными диалоговых окон и их проверка](dialog-data-exchange-and-validation.md)<br/>
+[Обмен и проверка данных диалоговых окон](dialog-data-exchange-and-validation.md)<br/>
 [Работа с диалоговыми окнами в MFC](life-cycle-of-a-dialog-box.md)<br/>
 [Проверка данных диалогового окна](dialog-data-validation.md)

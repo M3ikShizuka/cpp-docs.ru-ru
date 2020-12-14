@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: касинх, касинхф, касинхл'
 title: casinh, casinhf, casinhl
 ms.date: 11/04/2016
 api_name:
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - casinhf function
 - casinhl function
 ms.assetid: bd18340b-21dd-4c86-a14e-e8e15dd97e3b
-ms.openlocfilehash: 6deec85dc980a7bd421de87349f512564912d98c
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: 96d3b2bc6b299f7ba6ef38fbd83f55507af26bd3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70943374"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253160"
 ---
 # <a name="casinh-casinhf-casinhl"></a>casinh, casinhf, casinhl
 
@@ -66,28 +67,28 @@ _Lcomplex casinhl(
 
 ### <a name="parameters"></a>Параметры
 
-*z*<br/>
+*з*<br/>
 Комплексное число, указывающее угол в радианах.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Обратный гиперболический синус *z*, в радианах. Результат не привязан вдоль реальной оси и в интервале [-iπ/2, + iπ/2] вдоль мнимой оси.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Поскольку C++ допускает перегрузку, можно вызывать перегрузки **касинх** , которые принимают и возвращают значения **_Fcomplex** и **_Lcomplex** . В программе на языке C **касинх** всегда принимает и возвращает значение **_Dcomplex** .
+Поскольку C++ допускает перегрузку, можно вызывать перегрузки **касинх** , которые принимают и возвращают **_Fcomplex** и **_Lcomplex** значения. В программе на языке C **касинх** всегда принимает и возвращает значение **_Dcomplex** .
 
 ## <a name="requirements"></a>Требования
 
 |Подпрограмма|Заголовок C|Заголовок C++|
 |-------------|--------------|------------------|
-|**касинх**, **касинхф**, **касинхл**|\<complex.h>|\<ccomplex>|
+|**касинх**,               **касинхф**, **касинхл**|\<complex.h>|\<ccomplex>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Алфавитный указатель функций](crt-alphabetical-function-reference.md)<br/>
+[Алфавитный справочник по функциям](crt-alphabetical-function-reference.md)<br/>
 [catanh, catanhf, catanhl](catanh-catanhf-catanhl.md)<br/>
 [ctanh, ctanhf, ctanhl](ctanh-ctanhf-ctanhl.md)<br/>
 [catan, catanf, catanl](catan-catanf-catanl.md)<br/>

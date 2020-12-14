@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: с ограничением, _finite _finitef'
 title: isfinite, _finite, _finitef
 ms.date: 01/31/2019
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - _finite function
 - _finitef function
 ms.assetid: 5a7d7ca7-befb-4e1f-831d-28713c6eb805
-ms.openlocfilehash: 7e15a6619e584ff52c07048fcf591835b799587f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ef0747c88d62445c1cbd31f5c7afe6a651f50880
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87218706"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263118"
 ---
 # <a name="isfinite-_finite-_finitef"></a>isfinite, _finite, _finitef
 
@@ -76,13 +77,13 @@ int _finitef(
 
 `isfinite`Макросы и `_finite` функции и `_finitef` возвращают ненулевое значение, если *x* является нормальным или поднормальным конечным значением. Они возвращают 0, если аргумент имеет бесконечное значение или NaN. Функция встроенного шаблона C++ `isfinite` ведет себя таким же образом, но возвращает **`true`** или **`false`** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-`isfinite`макрос при компиляции в виде C и встроенная функция шаблона при компиляции в виде C++. `_finite`Функции и `_finitef` являются специфичными для Microsoft. Функция `_finitef` доступна только в случае компиляции для платформ x86, ARM или ARM64.
+`isfinite` макрос при компиляции в виде C и встроенная функция шаблона при компиляции в виде C++. `_finite`Функции и `_finitef` являются специфичными для Microsoft. Функция `_finitef` доступна только в случае компиляции для платформ x86, ARM или ARM64.
 
 ## <a name="requirements"></a>Требования
 
-|Компонент|Обязательный заголовок (C)|Обязательный заголовок (C++)|
+|Функция|Обязательный заголовок (C)|Обязательный заголовок (C++)|
 |--------------|---------------------------|-------------------------------|
 |`_finite`|\<float.h> или \<math.h>|\<float.h>, \<math.h>, \<cfloat> или \<cmath>|
 |`isfinite`, `_finitef`|\<math.h>|\<math.h> или \<cmath>|
@@ -94,6 +95,6 @@ int _finitef(
 [Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
 [fpclassify](fpclassify.md)<br/>
 [_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>
-[isinf](isinf.md)<br/>
+[исинф](isinf.md)<br/>
 [isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)<br/>
 [isnormal](isnormal.md)<br/>

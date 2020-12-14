@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о классах диалоговых окон
 title: Классы диалоговых окон
 ms.date: 11/04/2016
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - common dialog classes [MFC]
 - tab dialog boxes
 ms.assetid: db75da23-4eff-4c6c-beae-79cf046fbce9
-ms.openlocfilehash: 2399b27fc081dcc810277079729b0e62ef80d603
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 5c178bc6895e338bf4b2876be5233c1b80007abc
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616940"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97261558"
 ---
 # <a name="dialog-box-classes"></a>Классы диалоговых окон
 
@@ -60,7 +61,7 @@ ms.locfileid: "84616940"
 OLE добавляет в Windows несколько общих диалоговых окон. Эти классы инкапсулируют общие диалоговые окна OLE.
 
 [COleDialog](reference/coledialog-class.md)<br/>
-Используется платформой для хранения общих реализаций для всех диалоговых окон OLE. Все классы диалоговых окон в категории пользовательского интерфейса являются производными от этого базового класса. `COleDialog`не может использоваться напрямую.
+Используется платформой для хранения общих реализаций для всех диалоговых окон OLE. Все классы диалоговых окон в категории пользовательского интерфейса являются производными от этого базового класса. `COleDialog` не может использоваться напрямую.
 
 [COleInsertDialog](reference/coleinsertdialog-class.md)<br/>
 Отображает диалоговое окно Вставка объекта — стандартный пользовательский интерфейс для вставки новых связанных или внедренных элементов OLE.

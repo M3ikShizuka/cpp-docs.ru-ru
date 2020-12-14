@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: хелпстрингконтекст'
 title: хелпстрингконтекст (атрибут COM C++)
 ms.date: 10/02/2018
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - helpstringcontext attribute [C++]
 ms.assetid: d4cd135e-d91c-4aa3-9353-8aeb096f52cf
-ms.openlocfilehash: 9e089c210ad52d8ee07291c174a151f5077ae074
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: afcd1d4052f7422cc6078c8dfdd0a0242c667f0f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88830986"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263365"
 ---
 # <a name="helpstringcontext"></a>helpstringcontext
 
@@ -28,7 +29,7 @@ ms.locfileid: "88830986"
 *contextID*<br/>
 32-разрядный идентификатор контекста справки в файле **справки** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Атрибут **хелпстрингконтекст** C++ имеет те же функциональные возможности, что и атрибут [хелпстрингконтекст](/windows/win32/Midl/helpstringcontext) ODL.
 

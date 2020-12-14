@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64'
 title: _findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64
 ms.date: 4/2/2020
 api_name:
@@ -112,12 +113,12 @@ helpviewer_keywords:
 - wfindfirst64i32 function
 - _wfindfirst64 function
 ms.assetid: 9bb46d1a-b946-47de-845a-a0b109a33ead
-ms.openlocfilehash: 879a84b14f612992ae7ed3a96211637aaf5c4783
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: dce0c283a6177940019f1d358bd6cfa500c04306
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911739"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263144"
 ---
 # <a name="_findfirst-_findfirst32-_findfirst32i64-_findfirst64-_findfirst64i32-_findfirsti64-_wfindfirst-_wfindfirst32-_wfindfirst32i64-_wfindfirst64-_wfindfirst64i32-_wfindfirsti64"></a>_findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64
 
@@ -199,7 +200,7 @@ intptr_t _wfindfirst64i32(
 
 Если передан недопустимый параметр, эти функции вызывают обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 После завершения работы с функцией **_findfirst** или [_findnext](findnext-functions.md) (или любыми вариантами) необходимо вызвать [_findclose](findclose.md) . Она освобождает ресурсы, используемые этими функциями в приложении.
 
@@ -211,7 +212,7 @@ intptr_t _wfindfirst64i32(
 
 Варианты, использующие 64-разрядный тип времени, допускают даты создания файлов до 23:59:59 31-го декабря 3000 года, время в формате UTC. Те, что используют 32-разрядные типы времени, представляют даты только до 23:59:59 18 января 2038 года, время в формате UTC. Полночь 1 января 1970 года — нижняя граница диапазона дат для всех этих функций.
 
-Если нет особой причины использовать версии, которые указывают размер времени явным образом, используйте **_findfirst** или **_wfindfirst** или, если требуется поддержка размеров файлов размером более 3 ГБ, используйте **_findfirsti64** или **_wfindfirsti64**. Все эти функции используют 64-разрядный тип времени. В более ранних версиях этих функций использовался 32-разрядный тип времени. Если это критическое изменение для приложения, можно определить **_USE_32BIT_TIME_T** , чтобы вернуться к старому поведению. Если определено **_USE_32BIT_TIME_T** , **_findfirst**, **_finfirsti64**и соответствующие версии Юникода используют 32-разрядное время.
+Если нет особой причины использовать версии, которые указывают размер времени явным образом, используйте **_findfirst** или **_wfindfirst** или, если требуется поддержка размеров файлов размером более 3 ГБ, используйте **_findfirsti64** или **_wfindfirsti64**. Все эти функции используют 64-разрядный тип времени. В более ранних версиях этих функций использовался 32-разрядный тип времени. Если это критическое изменение для приложения, можно определить **_USE_32BIT_TIME_T** , чтобы вернуться к старому поведению. Если определено **_USE_32BIT_TIME_T** , **_findfirst**, **_finfirsti64** и соответствующие версии Юникода используют 32-разрядное время.
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -219,14 +220,14 @@ intptr_t _wfindfirst64i32(
 
 |Функции|**_USE_32BIT_TIME_T** определено?|Тип времени|Тип длины файла|
 |---------------|----------------------------------|---------------|----------------------|
-|**_findfirst**, **_wfindfirst**|Не определено|64-разрядная версия|32-разрядная версия|
-|**_findfirst**, **_wfindfirst**|Определено|32-разрядная версия|32-разрядная версия|
-|**_findfirst32**, **_wfindfirst32**|Не затрагивается определением макроса|32-разрядная версия|32-разрядная версия|
-|**_findfirst64**, **_wfindfirst64**|Не затрагивается определением макроса|64-разрядная версия|64-разрядная версия|
-|**_findfirsti64**, **_wfindfirsti64**|Не определено|64-разрядная версия|64-разрядная версия|
+|**_findfirst**, **_wfindfirst**|Не определено|64-разрядная|32-разрядная версия|
+|**_findfirst**, **_wfindfirst**|Определено|32-битная|32-битная|
+|**_findfirst32**, **_wfindfirst32**|Не затрагивается определением макроса|32-битная|32-битная|
+|**_findfirst64**, **_wfindfirst64**|Не затрагивается определением макроса|64-разрядная система|64-разрядная система|
+|**_findfirsti64**, **_wfindfirsti64**|Не определено|64-разрядная система|64-разрядная система|
 |**_findfirsti64**, **_wfindfirsti64**|Определено|32-разрядная версия|64-разрядная версия|
 |**_findfirst32i64**, **_wfindfirst32i64**|Не затрагивается определением макроса|32-разрядная версия|64-разрядная версия|
-|**_findfirst64i32**, **_wfindfirst64i32**|Не затрагивается определением макроса|64-разрядная версия|32-разрядная версия|
+|**_findfirst64i32**, **_wfindfirst64i32**|Не затрагивается определением макроса|64-разрядная|32-разрядная версия|
 
 ### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
@@ -261,4 +262,4 @@ intptr_t _wfindfirst64i32(
 ## <a name="see-also"></a>См. также раздел
 
 [Системные вызовы](../../c-runtime-library/system-calls.md)<br/>
-[Функции поиска имени файла](../../c-runtime-library/filename-search-functions.md)<br/>
+[Функции поиска имен файлов](../../c-runtime-library/filename-search-functions.md)<br/>

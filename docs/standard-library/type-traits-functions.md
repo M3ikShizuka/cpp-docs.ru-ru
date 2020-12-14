@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: &lt; функции type_traits &gt;'
 title: Функции &lt;type_traits&gt;
 ms.date: 11/04/2016
 ms.assetid: dce4492f-f3e4-4d5e-bdb4-5875321254ec
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - std::is_trivially_copy_assignable
 - std::is_trivially_move_assignable
 - std::is_trivially_move_constructible
-ms.openlocfilehash: 11defadff0b1785f6e4c5aba6356f7b68a78b9fc
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: a1608ddc9d846ca9e8e851ef67d390aebb6f840e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88841783"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253329"
 ---
 # <a name="lttype_traitsgt-functions"></a>Функции &lt;type_traits&gt;
 
@@ -54,7 +55,7 @@ struct is_assignable;
 *От*\
 Тип объекта, который предоставляет значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Невычисленное выражение `declval<To>() = declval<From>()` должно иметь правильный формат. И *от* , и *до* должны быть полными типами, **`void`** или массивами с неизвестной границей.
 
@@ -72,7 +73,7 @@ struct is_copy_assignable;
 *Ty*\
 Запрашиваемый тип.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* является классом с оператором присваивания копии, в противном случае — значение false. Эквивалентно is_assignable \<Ty&, const Ty&> .
 
@@ -90,7 +91,7 @@ struct is_copy_constructible;
 *Ty*\
 Запрашиваемый тип.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* является классом с конструктором копии, в противном случае — значение false.
 
@@ -142,7 +143,7 @@ struct is_default_constructible;
 *T*\
 Запрашиваемый тип.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *T* является типом класса с конструктором по умолчанию, в противном случае — значение false. Это эквивалентно предикату `is_constructible<T>`. Тип *T* должен быть полным типом, **`void`** или массивом с неизвестной границей.
 
@@ -194,7 +195,7 @@ struct is_move_assignable;
 *T*\
 Запрашиваемый тип.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип является тип присваиваемым при перемещении, если ссылку rvalue на тип можно присвоить ссылке на тип. Предикат типа эквивалентен `is_assignable<T&, T&&>`. Перемещаемые при присваивании типы включают ссылочные скалярные типы и типы классов, в которых есть созданные компилятором или определяемые пользователем операторы присваивания.
 
@@ -212,7 +213,7 @@ struct is_move_constructible;
 *T*\
 Вычисляемый тип.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Предикат типа, который возвращает значение true, если тип *T* может быть создан с помощью операции перемещения. Этот предикат эквивалентен `is_constructible<T, T&&>`.
 
@@ -230,7 +231,7 @@ struct is_nothrow_move_assignable;
 *Ty*\
 Запрашиваемый тип.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* имеет оператор присваивания перемещения, в противном случае — значение false.
 
@@ -272,7 +273,7 @@ struct is_trivially_copy_assignable;
 *T*\
 Запрашиваемый тип.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *T* является классом, имеющим тривиальный оператор присваивания копии, в противном случае — значение false.
 
@@ -292,7 +293,7 @@ struct is_trivially_move_assignable;
 *Ty*\
 Запрашиваемый тип.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* является классом, имеющим тривиальный оператор присваивания перемещения, в противном случае — значение false.
 
@@ -322,7 +323,7 @@ struct is_trivially_move_constructible;
 *Ty*\
 Запрашиваемый тип.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* является классом с тривиальным конструктором перемещения, в противном случае — значение false.
 

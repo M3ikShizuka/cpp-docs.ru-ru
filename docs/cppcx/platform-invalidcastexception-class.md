@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о классе Platform:: InvalidCastException'
 title: Класс Platform::InvalidCastException
 ms.date: 12/30/2016
 ms.topic: reference
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::InvalidCastException
 ms.assetid: 0215131d-1251-4913-9561-824410e045b6
-ms.openlocfilehash: 6e502346cb373d9dec5450987c4807b445234b28
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 187e6d5026edd241e88e4ba1c25d58b835650780
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62301464"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262910"
 ---
 # <a name="platforminvalidcastexception-class"></a>Класс Platform::InvalidCastException
 
@@ -25,7 +26,7 @@ ms.locfileid: "62301464"
 public ref class InvalidCastException : COMException,    IException,    IPrintable,    IEquatable
 ```
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Remarks
 
 Дополнительные сведения см. в описании класса [COMException](../cppcx/platform-comexception-class.md) .
 
@@ -37,8 +38,8 @@ public ref class InvalidCastException : COMException,    IException,    IPrintab
 
 **Пространство имен:** Platform
 
-**Метаданные:** platform.winmd
+**Метаданные:** Platform. winmd
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Класс Platform::COMException](../cppcx/platform-comexception-class.md)
+[Класс Platform:: COMException](../cppcx/platform-comexception-class.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: предупреждение компилятора (уровень 4) C4061'
 title: Предупреждение компилятора (уровень 4) C4061
 ms.date: 04/05/2019
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4061
 ms.assetid: a99cf88e-7941-4519-8b1b-f6889d914b2f
-ms.openlocfilehash: 18c5a51e24af36c5a330e10a66ce3dcc38295fb1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9e76fd864e57e6d84ed28b1646e8950186945d11
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225284"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262065"
 ---
 # <a name="compiler-warning-level-4-c4061"></a>Предупреждение компилятора (уровень 4) C4061
 
@@ -47,6 +48,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Предупреждение компилятора (уровень 4) C4062](compiler-warning-level-4-c4062.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: встроенные операторы, приоритетность и ассоциативность C++'
 title: Встроенные операторы, приоритет и ассоциативность C++
 ms.date: 07/23/2020
 helpviewer_keywords:
@@ -12,18 +13,18 @@ helpviewer_keywords:
 - evaluation order
 - hierarchy, operator
 ms.assetid: 95c1f0ba-dad8-4034-b039-f79a904f112f
-ms.openlocfilehash: 10c9e5db569ba211ed8d42386816b4f6bb71ee29
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ff8ae84a62ef47449364d0815922326d7b8566d4
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221774"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253966"
 ---
 # <a name="c-built-in-operators-precedence-and-associativity"></a>Встроенные операторы, приоритет и ассоциативность C++
 
 Язык C++ включает все операторы C и еще несколько новых операторов. Операторы определяют, какое вычисление следует выполнить с одним или несколькими операндами.
 
-## <a name="precedence-and-associativity"></a>Приоритет и ассоциативность
+## <a name="precedence-and-associativity"></a>Очередность и ассоциативность
 
 *Приоритет* операторов задает порядок операций в выражениях, содержащих более одного оператора. *Ассоциативность* операторов указывает, будет ли операнд в выражении, содержащем несколько операторов с одинаковым приоритетом, группироваться по левому краю или по правому.
 
@@ -40,7 +41,7 @@ C++ указывает альтернативные слова для некот
 | **Приоритет группы 1, без ассоциативности** |
 | [Разрешение области](../cpp/scope-resolution-operator.md) | [`::`](../cpp/scope-resolution-operator.md) |
 | **Приоритет группы 2, ассоциативность слева направо** |
-| [Выбор члена для указателей (объект или указатель)](../cpp/member-access-operators-dot-and.md) | [`.`ни`->`](../cpp/member-access-operators-dot-and.md) |
+| [Выбор члена для указателей (объект или указатель)](../cpp/member-access-operators-dot-and.md) | [`.` ни `->`](../cpp/member-access-operators-dot-and.md) |
 | [Индекс массива](../cpp/subscript-operator.md) | [`[]`](../cpp/subscript-operator.md) |
 | [Вызов функции](../cpp/function-call-operator-parens.md) | [`()`](../cpp/function-call-operator-parens.md) |
 | [Постфиксный инкремент](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md) | [`++`](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md) |
@@ -64,19 +65,19 @@ C++ указывает альтернативные слова для некот
 | [Уничтожение объекта](../cpp/delete-operator-cpp.md) | [`delete`](../cpp/delete-operator-cpp.md) |
 | [Приведение](../cpp/cast-operator-parens.md) | [`()`](../cpp/cast-operator-parens.md) |
 | **Приоритет группы 4, ассоциативность слева направо** |
-| [Указатель на член (объекты или указатели)](../cpp/pointer-to-member-operators-dot-star-and-star.md) | [`.*`ни`->*`](../cpp/pointer-to-member-operators-dot-star-and-star.md) |
+| [Указатель на член (объекты или указатели)](../cpp/pointer-to-member-operators-dot-star-and-star.md) | [`.*` ни `->*`](../cpp/pointer-to-member-operators-dot-star-and-star.md) |
 | **Приоритет группы 5, ассоциативность слева направо** |
-| [Умножение](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`*`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
+| [Умножения](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`*`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
 | [Отдел](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`/`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
-| [Modulus](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`%`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
+| [Модул](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`%`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
 | **Приоритет группы 6, ассоциативность слева направо** |
-| [Сложение](../cpp/additive-operators-plus-and.md) | [`+`](../cpp/additive-operators-plus-and.md) |
-| [Вычитание](../cpp/additive-operators-plus-and.md) | [`-`](../cpp/additive-operators-plus-and.md) |
+| [Полняют](../cpp/additive-operators-plus-and.md) | [`+`](../cpp/additive-operators-plus-and.md) |
+| [Вычитания](../cpp/additive-operators-plus-and.md) | [`-`](../cpp/additive-operators-plus-and.md) |
 | **Приоритет группы 7, ассоциативность слева направо** |
 | [Сдвиг влево](../cpp/left-shift-and-right-shift-operators-input-and-output.md) | [`<<`](../cpp/left-shift-and-right-shift-operators-input-and-output.md) |
 | [Сдвиг вправо](../cpp/left-shift-and-right-shift-operators-input-and-output.md) | [`>>`](../cpp/left-shift-and-right-shift-operators-input-and-output.md) |
 | **Приоритет группы 8, ассоциативность слева направо** |
-| [Меньше чем](../cpp/relational-operators-equal-and-equal.md) | [`<`](../cpp/relational-operators-equal-and-equal.md) |
+| [Меньше](../cpp/relational-operators-equal-and-equal.md) | [`<`](../cpp/relational-operators-equal-and-equal.md) |
 | [Больше чем](../cpp/relational-operators-equal-and-equal.md) | [`>`](../cpp/relational-operators-equal-and-equal.md) |
 | [Меньше или равно](../cpp/relational-operators-equal-and-equal.md) | [`<=`](../cpp/relational-operators-equal-and-equal.md) |
 | [Больше или равно](../cpp/relational-operators-equal-and-equal.md) | [`>=`](../cpp/relational-operators-equal-and-equal.md) |
@@ -110,7 +111,7 @@ C++ указывает альтернативные слова для некот
 | **Приоритет группы 17, ассоциативность справа налево** |
 | [Выражение Throw](../cpp/try-throw-and-catch-statements-cpp.md) | [`throw`](../cpp/try-throw-and-catch-statements-cpp.md) |
 | **Приоритет группы 18, ассоциативность слева направо** |
-| [Символа](../cpp/comma-operator.md) | [,](../cpp/comma-operator.md) |
+| [Запятая](../cpp/comma-operator.md) | [,](../cpp/comma-operator.md) |
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: результаты вызова примера'
 title: Пример результатов вызова
 ms.date: 11/19/2018
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - results, __cdecl call
 - results, __stdcall call
 ms.assetid: aa70a7cb-ba1d-4aa6-bd0a-ba783da2e642
-ms.openlocfilehash: 1bf5fe62b8ef2b7a37bf72b7a40e5d47af3f3961
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 91da3182742414dc4850013463b74ae36aa782c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87225882"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97262923"
 ---
 # <a name="results-of-calling-example"></a>Пример результатов вызова
 
@@ -30,7 +31,7 @@ ms.locfileid: "87225882"
 
 Декорированное имя C ( **`__stdcall`** ) имеет значение `_MyFunc@20` . Декорированное имя C++ зависит от конкретной реализации.
 
-![Соглашения о вызовах&#95;&#95;STDCALL и thiscall](../cpp/media/vc37i02.gif "Соглашения о вызовах &#95;&#95;STDCALL и thiscall") <br/>
+![ Соглашения о вызовах&#95;&#95;STDCALL и thiscall](../cpp/media/vc37i02.gif "Соглашения о вызовах &#95;&#95;STDCALL и thiscall") <br/>
 Соглашения о вызовах __stdcall и thiscall
 
 ## <a name="__fastcall"></a>__fastcall

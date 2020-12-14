@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64'
 title: _findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
 ms.date: 4/2/2020
 api_name:
@@ -114,12 +115,12 @@ helpviewer_keywords:
 - tfindnext32i64 function
 - _tfindnexti64 function
 ms.assetid: 75d97188-5add-4698-a46c-4c492378f0f8
-ms.openlocfilehash: acb680db3b07b0f600b758401f1270deccf03da7
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 5513f3932b78d450ecce81947e0095efb8df1d9d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911667"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263131"
 ---
 # <a name="_findnext-_findnext32-_findnext32i64-_findnext64-_findnext64i32-_findnexti64-_wfindnext-_wfindnext32-_wfindnext32i64-_wfindnext64-_wfindnext64i32-_wfindnexti64"></a>_findnext, _findnext32, _findnext32i64, _findnext64, _findnext64i32, _findnexti64, _wfindnext, _wfindnext32, _wfindnext32i64, _wfindnext64, _wfindnext64i32, _wfindnexti64
 
@@ -198,7 +199,7 @@ int _wfindnext64i32(
 
 Если передан недопустимый параметр, эти функции вызывают обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Необходимо вызвать [_findclose](findclose.md) после завершения использования функции **_findfirst** или **_findnext** (или любых вариантов). Она освобождает ресурсы, используемые этими функциями в приложении.
 
@@ -214,14 +215,14 @@ int _wfindnext64i32(
 
 |Функции|**_USE_32BIT_TIME_T** определено?|Тип времени|Тип длины файла|
 |---------------|----------------------------------|---------------|----------------------|
-|**_findnext**, **_wfindnext**|Не определено|64-разрядная версия|32-разрядная версия|
-|**_findnext**, **_wfindnext**|Определено|32-разрядная версия|32-разрядная версия|
-|**_findnext32**, **_wfindnext32**|Не затрагивается определением макроса|32-разрядная версия|32-разрядная версия|
-|**_findnext64**, **_wfindnext64**|Не затрагивается определением макроса|64-разрядная версия|64-разрядная версия|
-|**_findnexti64**, **_wfindnexti64**|Не определено|64-разрядная версия|64-разрядная версия|
+|**_findnext**, **_wfindnext**|Не определено|64-разрядная|32-разрядная версия|
+|**_findnext**, **_wfindnext**|Определено|32-битная|32-битная|
+|**_findnext32**, **_wfindnext32**|Не затрагивается определением макроса|32-битная|32-битная|
+|**_findnext64**, **_wfindnext64**|Не затрагивается определением макроса|64-разрядная система|64-разрядная система|
+|**_findnexti64**, **_wfindnexti64**|Не определено|64-разрядная система|64-разрядная система|
 |**_findnexti64**, **_wfindnexti64**|Определено|32-разрядная версия|64-разрядная версия|
 |**_findnext32i64**, **_wfindnext32i64**|Не затрагивается определением макроса|32-разрядная версия|64-разрядная версия|
-|**_findnext64i32**, **_wfindnext64i32**|Не затрагивается определением макроса|64-разрядная версия|32-разрядная версия|
+|**_findnext64i32**, **_wfindnext64i32**|Не затрагивается определением макроса|64-разрядная|32-разрядная версия|
 
 ### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
@@ -260,4 +261,4 @@ int _wfindnext64i32(
 ## <a name="see-also"></a>См. также раздел
 
 [Системные вызовы](../../c-runtime-library/system-calls.md)<br/>
-[Функции поиска имени файла](../../c-runtime-library/filename-search-functions.md)<br/>
+[Функции поиска имен файлов](../../c-runtime-library/filename-search-functions.md)<br/>

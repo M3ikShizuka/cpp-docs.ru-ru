@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: тзсет'
 title: tzset
 ms.date: 12/16/2019
 api_name:
@@ -23,16 +24,16 @@ f1_keywords:
 helpviewer_keywords:
 - tzset function
 ms.assetid: c3afa5d0-cb15-4163-9181-fafb962c95aa
-ms.openlocfilehash: 981f9bc92879bf12e8c49b12190cbe8091d0141b
-ms.sourcegitcommit: a5fa9c6f4f0c239ac23be7de116066a978511de7
+ms.openlocfilehash: 8a2528c4accaeb385f1979a87f0000347df40c5f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75300811"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252900"
 ---
 # <a name="tzset"></a>tzset
 
-Имя функции POSIX, реализуемой корпорацией Майкрософт `tzset` является устаревшим псевдонимом для функции [_tzset](tzset.md) . По умолчанию он создает [Предупреждение компилятора (уровень 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). Имя является устаревшим, так как оно не соответствует стандартным правилам C для имен, зависящих от реализации. Однако функция по-прежнему поддерживается.
+Имя функции, реализованной корпорацией Майкрософт, `tzset` является устаревшим псевдонимом для функции [_tzset](tzset.md) . По умолчанию он создает [Предупреждение компилятора (уровень 3) C4996](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md). Имя является устаревшим, так как оно не соответствует стандартным правилам C для имен, зависящих от реализации. Однако функция по-прежнему поддерживается.
 
 Вместо этого рекомендуется использовать [_tzset](tzset.md) . Вы также можете продолжить использовать это имя функции и отключить предупреждение. Дополнительные сведения см. [в разделе Отключение](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#turn-off-the-warning) [имен функций](../../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md#posix-function-names)Warning и POSIX.
 

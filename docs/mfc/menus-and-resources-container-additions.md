@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: меню и ресурсы: добавления контейнеров'
 title: Меню и ресурсы. Добавление контейнеров
 ms.date: 11/04/2016
 f1_keywords:
@@ -16,12 +17,12 @@ helpviewer_keywords:
 - CONTAIN tutorial [MFC]
 - Links menu item [MFC]
 ms.assetid: 425448be-8ca0-412e-909a-a3a9ce845288
-ms.openlocfilehash: a082a75ef0292e190e597f29be0cdc0bd0b497ef
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: e32167e66693587a32732c1c20fc6d85d3010ecb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84626238"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253368"
 ---
 # <a name="menus-and-resources-container-additions"></a>Меню и ресурсы. Добавление контейнеров
 
@@ -39,7 +40,7 @@ ms.locfileid: "84626238"
 
 - [Добавление таблицы строк](#_core_string_table_additions_for_container_applications)
 
-## <a name="container-menu-additions"></a><a name="_core_container_menu_additions"></a>Добавления меню контейнеров
+## <a name="container-menu-additions"></a><a name="_core_container_menu_additions"></a> Добавления меню контейнеров
 
 В меню Правка необходимо добавить следующие элементы:
 
@@ -54,7 +55,7 @@ ms.locfileid: "84626238"
 
 Необходимо создать новое меню для приложения-контейнера, если требуется поддержка встроенных элементов на месте. Это меню состоит из меню «файл» и всплывающих меню «окно», используемых при открытии файлов, но между ними установлены два разделителя. Эти разделители используются для указания места, где сервер (компонент) должен размещать свои меню при активации на месте. Дополнительные сведения об этом методе слияния меню см. в разделе меню [и ресурсы: слияние меню](menus-and-resources-menu-merging.md).
 
-## <a name="container-application-accelerator-table-additions"></a><a name="_core_container_application_accelerator_table_additions"></a>Добавление таблицы ускорителя приложений контейнера
+## <a name="container-application-accelerator-table-additions"></a><a name="_core_container_application_accelerator_table_additions"></a> Добавление таблицы ускорителя приложений контейнера
 
 Небольшие изменения в ресурсах таблиц ускорителя приложения-контейнера необходимы, если поддерживается встроенная активация. Первое изменение позволяет пользователю нажать клавишу Escape (ESC), чтобы отменить режим редактирования на месте. Добавьте следующую запись в основную таблицу сочетаний клавиш:
 
@@ -67,14 +68,14 @@ ms.locfileid: "84626238"
 |ID|Ключ|Тип|
 |--------|---------|----------|
 |ID_FILE_NEW|CTRL+N|**VIRTKEY**|
-|ID_FILE_OPEN|CTRL + O|**VIRTKEY**|
-|ID_FILE_SAVE|CTRL+S|**VIRTKEY**|
+|ID_FILE_OPEN|CTRL+O|**VIRTKEY**|
+|ID_FILE_SAVE|CTRL + S|**VIRTKEY**|
 |ID_FILE_PRINT|CTRL + P|**VIRTKEY**|
 |ID_NEXT_PANE|VK_F6|**VIRTKEY**|
 |ID_PREV_PANE|SHIFT + VK_F6|**VIRTKEY**|
 |ID_CANCEL_EDIT_CNTR|VK_ESCAPE|**VIRTKEY**|
 
-## <a name="string-table-additions-for-container-applications"></a><a name="_core_string_table_additions_for_container_applications"></a>Добавление строк таблицы для приложений контейнера
+## <a name="string-table-additions-for-container-applications"></a><a name="_core_string_table_additions_for_container_applications"></a> Добавление строк таблицы для приложений контейнера
 
 Большинство изменений в таблицах строк для приложений контейнеров соответствуют дополнительным пунктам меню, упомянутым в [дополнениях к меню контейнера](#_core_container_menu_additions). Они предоставляют текст, отображаемый в строке состояния при отображении каждого пункта меню. Ниже приведен пример записей таблицы строк, создаваемых мастером приложений.
 
@@ -86,4 +87,4 @@ ms.locfileid: "84626238"
 ## <a name="see-also"></a>См. также раздел
 
 [Меню и ресурсы (OLE)](menus-and-resources-ole.md)<br/>
-[Меню и ресурсы. Добавление серверов](menus-and-resources-server-additions.md)
+[Меню и ресурсы: дополнения сервера](menus-and-resources-server-additions.md)

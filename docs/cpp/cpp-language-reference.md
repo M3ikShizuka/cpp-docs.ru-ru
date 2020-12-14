@@ -1,16 +1,17 @@
 ---
+description: Дополнительные сведения см. в справочнике по языку C++
 title: Справочник по языку C++
 ms.custom: index-page
 ms.date: 12/10/2019
 helpviewer_keywords:
 - C++, language reference
 ms.assetid: 4be9cacb-c862-4391-894a-3a118c9c93ce
-ms.openlocfilehash: 7b0d1227419aef3174d4f18b11cdc334879383b1
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 67d1adf6105d0f90a7ef29402624148dbcf8ea53
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221748"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97253927"
 ---
 # <a name="c-language-reference"></a>Справочник по языку C++
 
@@ -69,10 +70,10 @@ ms.locfileid: "87221748"
 [Обработка исключений](../cpp/exception-handling-in-visual-cpp.md)<br/>
 Обработка исключений в C++, структурированная обработка исключений (SEH), ключевые слова, используемые при написании операторов обработки исключений.
 
-[Утверждения и сообщения, предоставляемые пользователем](../cpp/assertion-and-user-supplied-messages-cpp.md)<br/>
-`#error`, **`static_assert`** ключевое слово, `assert` макрос.
+[Утверждения и User-Supplied сообщения](../cpp/assertion-and-user-supplied-messages-cpp.md)<br/>
+`#error` , **`static_assert`** ключевое слово, `assert` макрос.
 
-[См](../cpp/templates-cpp.md)<br/>
+[Шаблоны](../cpp/templates-cpp.md)<br/>
 Спецификации шаблонов, шаблоны функций, шаблоны классов, **`typename`** ключевое слово, шаблоны и макросы, шаблоны и смарт-указатели.
 
 [Обработка событий](../cpp/event-handling.md)<br/>
@@ -93,7 +94,7 @@ ms.locfileid: "87221748"
 [Нестандартное поведение](../cpp/nonstandard-behavior.md)<br/>
 Сведения о нестандартном поведении компилятора Microsoft C++.
 
-[Возвращение к C++](welcome-back-to-cpp-modern-cpp.md)<br/>
+[Добро пожаловать в C++](welcome-back-to-cpp-modern-cpp.md)<br/>
 Общие сведения о современных методиках программирования на C++ для написания безэффективных и правильных программ.
 
 ## <a name="related-sections"></a>Связанные разделы

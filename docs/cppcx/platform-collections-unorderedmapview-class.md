@@ -1,16 +1,17 @@
 ---
+description: 'Дополнительные сведения о: Platform:: Collections:: UnorderedMapView Class'
 title: Класс Platform::Collections::UnorderedMapView
 ms.date: 12/30/2016
 ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::UnorderedMapView
 ms.assetid: 545a3725-2efd-4cc1-b590-4a7cd2351f61
-ms.openlocfilehash: acfc168959deb83244c98c5d361cf9e73c1388f2
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 39f33fd75db92e81fa5321d8983b1b5ea9fce79a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213064"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97252380"
 ---
 # <a name="platformcollectionsunorderedmapview-class"></a>Класс Platform::Collections::UnorderedMapView
 
@@ -28,16 +29,16 @@ ref class UnorderedMapView sealed;
 
 #### <a name="parameters"></a>Параметры
 
-*Занят*<br/>
+*K*<br/>
 Тип ключа в паре "ключ-значение".
 
-*3,3*<br/>
+*V*<br/>
 Тип значения в паре "ключ-значение".
 
 *В*<br/>
 Тип, предоставляющий объект функции, который может сравнивать два ключевых значения для определения равенства. По умолчанию [std:: equal_to \<K> ](../standard-library/equal-to-struct.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 UnorderedMapView является конкретной реализацией C++ интерфейса [Windows:: Foundation:: Collections:: IMapView \<K,V> ](/uwp/api/windows.foundation.collections.imapview-2) , который передается через двоичный интерфейс приложения (ABI). Дополнительные сведения см. в разделе [Collections (C++/CX)](../cppcx/collections-c-cx.md).
 
@@ -45,7 +46,7 @@ UnorderedMapView является конкретной реализацией C+
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |[UnorderedMapView:: UnorderedMapView](#ctor)|Инициализирует новый экземпляр класса UnorderedMapView.|
 
@@ -69,7 +70,7 @@ UnorderedMapView является конкретной реализацией C+
 
 **Пространство имен:** Platform::Collections
 
-## <a name="unorderedmapviewfirst-method"></a><a name="first"></a>Метод UnorderedMapView:: First
+## <a name="unorderedmapviewfirst-method"></a><a name="first"></a> Метод UnorderedMapView:: First
 
 Возвращает итератор, указывающий первый элемент [Windows:: Foundation:: Collections:: \<K,V> IKeyValuePair](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) в неупорядоченной карте.
 
@@ -85,11 +86,11 @@ virtual Windows::Foundation::Collections::IIterator<
 
 Итератор, указывающий первый элемент в представлении сопоставления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Удобным способом удержания итератора, возвращенного первым (), является присвоение возвращаемого значения переменной, объявленной с **`auto`** ключевым словом выведения типа. Например, `auto x = myMapView->First();`.
 
-## <a name="unorderedmapviewhaskey-method"></a><a name="haskey"></a>Метод UnorderedMapView:: HasKey
+## <a name="unorderedmapviewhaskey-method"></a><a name="haskey"></a> Метод UnorderedMapView:: HasKey
 
 Определяет, содержит ли текущий объект UnorderedMap указанный ключ.
 
@@ -108,7 +109,7 @@ bool HasKey(K key);
 
 **`true`** значение, если ключ найден; в противном случае — **`false`** .
 
-## <a name="unorderedmapviewlookup-method"></a><a name="lookup"></a>Метод UnorderedMapView:: Lookup
+## <a name="unorderedmapviewlookup-method"></a><a name="lookup"></a> Метод UnorderedMapView:: Lookup
 
 Возвращает значение типа V, связанное с указанным ключом типа K.
 
@@ -127,7 +128,7 @@ V Lookup(K key);
 
 Значение, связанное с ключом `key`. Тип возвращаемого значения — TypeName *V*.
 
-## <a name="unorderedmapviewsize-method"></a><a name="size"></a>Метод UnorderedMapView:: size
+## <a name="unorderedmapviewsize-method"></a><a name="size"></a> Метод UnorderedMapView:: size
 
 Возвращает число элементов [Windows:: Foundation:: Collections:: IKeyValuePair \<K,V> ](/uwp/api/windows.foundation.collections.ikeyvaluepair-2) в UnorderedMapView.
 
@@ -141,7 +142,7 @@ virtual property unsigned int Size;
 
 Количество элементов в Unordered MapView.
 
-## <a name="unorderedmapviewsplit-method"></a><a name="split"></a>Метод UnorderedMapView:: Split
+## <a name="unorderedmapviewsplit-method"></a><a name="split"></a> Метод UnorderedMapView:: Split
 
 Разделяет текущий объект UnorderedMapView на два объекта UnorderedMapView. Этот метод не выполняет никаких действий.
 
@@ -163,11 +164,11 @@ void Split(
 *секондпартитион*<br/>
 Вторая часть исходного объекта UnorderedMapView.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод не выполняет никаких действий.
 
-## <a name="unorderedmapviewunorderedmapview-constructor"></a><a name="ctor"></a>Конструктор UnorderedMapView:: UnorderedMapView
+## <a name="unorderedmapviewunorderedmapview-constructor"></a><a name="ctor"></a> Конструктор UnorderedMapView:: UnorderedMapView
 
 Инициализирует новый экземпляр класса UnorderedMapView.
 
