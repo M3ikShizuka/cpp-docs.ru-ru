@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Ктаббедпане Class'
 title: Класс Ктаббедпане
 ms.date: 11/04/2016
 f1_keywords:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - CTabbedPane [MFC], m_bTabsAlwaysTop
 - CTabbedPane [MFC], m_pTabWndRTC
 ms.assetid: f4dc5215-b789-4f2d-8c62-477aceda3578
-ms.openlocfilehash: cfc0a3099b1d5ff9bd1093cc911745bd61cde64c
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: a337a68cdeadfec229b24e10a615ba49145ec1ad
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90686643"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264483"
 ---
 # <a name="ctabbedpane-class"></a>Класс Ктаббедпане
 
@@ -47,7 +48,7 @@ ms.locfileid: "90686643"
 class CTabbedPane : public CBaseTabbedPane
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -76,7 +77,7 @@ class CTabbedPane : public CBaseTabbedPane
 |[CTabbedPane::m_bTabsAlwaysTop](#m_btabsalwaystop)|Расположение вкладок в приложении по умолчанию.|
 |[CTabbedPane::m_pTabWndRTC](#m_ptabwndrtc)|Сведения о классе среды выполнения для настраиваемого объекта, производного от класса `CMFCTabCtrl`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Платформа автоматически создает экземпляр этого класса, когда пользователь прикрепляет одну панель к другой, подводя указатель мыши к заголовку второй панели. Все панели с вкладками, созданные платформой, имеют идентификатор -1.
 
@@ -177,7 +178,7 @@ virtual BOOL DetachPane(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="ctabbedpaneenabletabautocolor"></a><a name="enabletabautocolor"></a> Ктаббедпане:: Енаблетабаутоколор
 
@@ -192,7 +193,7 @@ static void EnableTabAutoColor(BOOL bEnable = TRUE);
 *bEnable*<br/>
 окне Значение TRUE, чтобы включить автоматическое Окрашивание вкладок; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Используйте этот статический метод, чтобы включить или отключить автоматическое Окрашивание вкладок во всех панелях с вкладками в приложении. Если эта функция включена, каждая вкладка заполняется своим собственным цветом. Список цветов, используемых для выделения цветом вкладок, можно найти, вызвав метод [CMFCBaseTabCtrl:: жетаутоколорс](../../mfc/reference/cmfcbasetabctrl-class.md#getautocolors) .
 
@@ -219,7 +220,7 @@ virtual BOOL FloatTab(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="ctabbedpanegettabarea"></a><a name="gettabarea"></a> Ктаббедпане:: Жеттабареа
 
@@ -239,7 +240,7 @@ virtual void GetTabArea(
 *rectTabAreaBottom*<br/>
 заполняет Содержит размер и позицию в экранных координатах нижней области вкладки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Платформа вызывает этот метод, чтобы определить, как закрепить область, которую пользователь перетаскивает. Когда пользователь перетаскивает область над областью вкладок целевой области, платформа пытается добавить ее в качестве новой вкладки целевой области. В противном случае он пытается закрепить панель на стороне целевой области, которая включает создание нового контейнера панели с разделителем панели, разделяющим две панели.
 
@@ -253,7 +254,7 @@ CMFCTabCtrl* GetTabWnd() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="ctabbedpanehasautohidemode"></a><a name="hasautohidemode"></a> Ктаббедпане:: Хасаутохидемоде
 
@@ -263,7 +264,7 @@ virtual BOOL HasAutoHideMode() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="ctabbedpaneistablocationbottom"></a><a name="istablocationbottom"></a> Ктаббедпане:: Истаблокатионботтом
 
@@ -277,7 +278,7 @@ virtual BOOL IsTabLocationBottom() const;
 
 Значение TRUE, если область вкладки находится в нижней части окна с вкладками; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 ## <a name="ctabbedpanem_btabsalwaystop"></a><a name="m_btabsalwaystop"></a> Ктаббедпане:: m_bTabsAlwaysTop
 
@@ -287,7 +288,7 @@ virtual BOOL IsTabLocationBottom() const;
 AFX_IMPORT_DATA static BOOL m_bTabsAlwaysTop;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Задайте для этого статического элемента значение TRUE, чтобы все вкладки в приложении отображались в верхней части панели с вкладками.
 
@@ -303,7 +304,7 @@ AFX_IMPORT_DATA static BOOL m_bTabsAlwaysTop;
 AFX_IMPORT_DATA static CRuntimeClass* m_pTabWndRTC;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Задайте для этой статической переменной-члена указатель на сведения о классе среды выполнения `CMFCTabCtrl` объекта, производного от, если вы используете настраиваемое окно с вкладками внутри области с вкладками.
 
@@ -315,7 +316,7 @@ AFX_IMPORT_DATA static CRuntimeClass* m_pTabWndRTC;
 static void ResetTabs();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Вызовите этот метод, чтобы вернуть все панели с вкладками в состояние по умолчанию. При вызове этот метод сбрасывает размеры границ и автоматическое состояние цвета для всех панелей с вкладками.
 
@@ -332,13 +333,13 @@ static void SetTabAutoColors(const CArray<COLORREF, COLORREF>& arColors);
 *arColors*<br/>
 окне Содержит массив заданных цветов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод используется для настройки списка цветов, используемых при включенной функции автоцветности. Это статическая функция, влияющая на все области с вкладками в приложении.
 
 Используйте [ктаббедпане:: енаблетабаутоколор](#enabletabautocolor) , чтобы включить или отключить функцию автоматического цвета.
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>

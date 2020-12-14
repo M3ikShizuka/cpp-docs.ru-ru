@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: Type-Safe доступ к элементам управления с помощью мастеров кода'
 title: Типобезопасный доступ к элементам управления с использованием мастеров кода
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - dialog boxes [MFC], access to controls
 - dialog box controls [MFC], accessing
 ms.assetid: b8874393-ee48-4124-8d78-e3648a7e29b9
-ms.openlocfilehash: ee7c49f75dcdc2b6c32f2b391ace7260b46d197b
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: b68331df61c1586f4cc63413f162ac1af107ce88
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91507887"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97263807"
 ---
 # <a name="type-safe-access-to-controls-with-code-wizards"></a>Типобезопасный доступ к элементам управления с использованием мастеров кода
 
@@ -25,7 +26,7 @@ ms.locfileid: "91507887"
 > [!NOTE]
 > Для данного элемента управления можно, при желании, иметь несколько переменных-членов со свойством Value и не более одной переменной-члена со свойством Control. С элементом управления может быть сопоставлен только один объект MFC, поскольку несколько объектов, вложенных в элемент управления или любое другое окно, приведут к неоднозначности в схеме сообщений.
 
-Этот объект можно использовать для вызова любых функций члена для управляющего объекта. Такие вызовы влияют на элемент управления в диалоговом окне. Например, для элемента управления "флажок", представленного переменной *m_Checkbox*типа `CButton` , можно вызвать:
+Этот объект можно использовать для вызова любых функций члена для управляющего объекта. Такие вызовы влияют на элемент управления в диалоговом окне. Например, для элемента управления "флажок", представленного переменной *m_Checkbox* типа `CButton` , можно вызвать:
 
 [!code-cpp[NVC_MFCControlLadenDialog#52](../mfc/codesnippet/cpp/type-safe-access-to-controls-with-code-wizards_1.cpp)]
 

@@ -1,28 +1,29 @@
 ---
+description: 'Дополнительные сведения о: сведения об элементе управления дерева'
 title: Сведения об элементе древовидного элемента управления
 ms.date: 11/04/2016
 helpviewer_keywords:
 - tree controls [MFC], item information
 - CTreeCtrl class [MFC], item information
 ms.assetid: 8dcab855-27de-49e9-95d8-f78ba963ea71
-ms.openlocfilehash: e0eb8af4fbbb6f59c0dda75ec3705183ce916350
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ced75bdf6ed6a10e3a34536adf4af0ed1c7e0c86
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62407865"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264145"
 ---
 # <a name="tree-control-item-information"></a>Сведения об элементе древовидного элемента управления
 
-Элементы управления дерева ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) имеют ряд функций-членов, которые получают сведения об элементах в элементе управления. [GetItem](../mfc/reference/ctreectrl-class.md#getitem) функция-член извлекает часть или все данные, связанные с элементом. Эти данные могут включать текст элемента, состояние, изображения, количество дочерних элементов и определяемые приложением значение 32-разрядной. Имеется также [SetItem](../mfc/reference/ctreectrl-class.md#setitem) функцию, которая может установить некоторые или все данные, связанные с элементом.
+Элементы управления "дерево" ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) имеют ряд функций-членов, которые извлекают сведения об элементах в элементе управления. Функция элемента [Item](../mfc/reference/ctreectrl-class.md#getitem) возвращает некоторые или все данные, связанные с элементом. Эти данные могут включать текст, состояние, изображения, количество дочерних элементов и определяемое приложением 32-разрядное значение данных. Существует также функция [сетитем](../mfc/reference/ctreectrl-class.md#setitem) , которая может задавать некоторые или все данные, связанные с элементом.
 
-[GetItemState](../mfc/reference/ctreectrl-class.md#getitemstate), [GetItemText](../mfc/reference/ctreectrl-class.md#getitemtext), [GetItemData](../mfc/reference/ctreectrl-class.md#getitemdata), и [GetItemImage](../mfc/reference/ctreectrl-class.md#getitemimage) функции-члены извлечения отдельных атрибутов элемент. Каждая из этих функций имеет соответствующую функцию набор для настройки атрибутов элемента.
+Функции элементов [жетитемстате](../mfc/reference/ctreectrl-class.md#getitemstate), [жетитемтекст](../mfc/reference/ctreectrl-class.md#getitemtext), [жетитемдата](../mfc/reference/ctreectrl-class.md#getitemdata)и [GetItemImage](../mfc/reference/ctreectrl-class.md#getitemimage) извлекают отдельные атрибуты элемента. Каждая из этих функций имеет соответствующую функцию Set для установки атрибутов элемента.
 
-[GetNextItem](../mfc/reference/ctreectrl-class.md#getnextitem) функция-член извлекает элемента управления дерева, содержащего указанную связь с текущим элементом. Эту функцию можно получить родительского элемента, следующий или предыдущий элемент видимым, первый дочерний элемент и т. д. Кроме того, существуют также функции-члены для прохода по дереву: [GetRootItem](../mfc/reference/ctreectrl-class.md#getrootitem), [GetFirstVisibleItem](../mfc/reference/ctreectrl-class.md#getfirstvisibleitem), [GetNextVisibleItem](../mfc/reference/ctreectrl-class.md#getnextvisibleitem), [GetPrevVisibleItem](../mfc/reference/ctreectrl-class.md#getprevvisibleitem), [GetChildItem](../mfc/reference/ctreectrl-class.md#getchilditem), [GetNextSiblingItem](../mfc/reference/ctreectrl-class.md#getnextsiblingitem), [GetPrevSiblingItem](../mfc/reference/ctreectrl-class.md#getprevsiblingitem), [GetParentItem](../mfc/reference/ctreectrl-class.md#getparentitem), [getselecteditem класса](../mfc/reference/ctreectrl-class.md#getselecteditem), и [ GetDropHilightItem](../mfc/reference/ctreectrl-class.md#getdrophilightitem).
+Функция члена [жетнекститем](../mfc/reference/ctreectrl-class.md#getnextitem) извлекает элемент управления "дерево", который несет указанную связь с текущим элементом. Эта функция может извлекать родительский элемент, следующий или предыдущий видимый элемент, первый дочерний элемент и т. д. Существуют также функции элементов для обхода дерева: [жетрутитем](../mfc/reference/ctreectrl-class.md#getrootitem), [жетфирствисиблеитем](../mfc/reference/ctreectrl-class.md#getfirstvisibleitem), [жетнекствисиблеитем](../mfc/reference/ctreectrl-class.md#getnextvisibleitem), [жетпреввисиблеитем](../mfc/reference/ctreectrl-class.md#getprevvisibleitem), [жетчилдитем](../mfc/reference/ctreectrl-class.md#getchilditem), [GetNextSiblingItem](../mfc/reference/ctreectrl-class.md#getnextsiblingitem), [GetPrevSiblingItem](../mfc/reference/ctreectrl-class.md#getprevsiblingitem), [GetParentItem](../mfc/reference/ctreectrl-class.md#getparentitem), [GetSelectedItem](../mfc/reference/ctreectrl-class.md#getselecteditem)и [GetDropHilightItem](../mfc/reference/ctreectrl-class.md#getdrophilightitem).
 
-[GetItemRect](../mfc/reference/ctreectrl-class.md#getitemrect) функция-член извлекает ограничивающий прямоугольник для элемента управления дерева. [GetCount](../mfc/reference/ctreectrl-class.md#getcount) и [GetVisibleCount](../mfc/reference/ctreectrl-class.md#getvisiblecount) функции-члены получить число элементов в виде дерева и количество элементов, которые видимы в настоящий момент в окне дерева элемента управления, соответственно. Убедитесь, что какой-либо элемент является видимым, вызвав [EnsureVisible](../mfc/reference/ctreectrl-class.md#ensurevisible) функция-член.
+Функция-член [жетитемрект](../mfc/reference/ctreectrl-class.md#getitemrect) извлекает ограничивающий прямоугольник для элемента управления "дерево". Функции-члены [NOCOUNT](../mfc/reference/ctreectrl-class.md#getcount) и [жетвисиблекаунт](../mfc/reference/ctreectrl-class.md#getvisiblecount) извлекают количество элементов в элементе управления "дерево" и число элементов, которые в данный момент видимы в окне элемента управления "дерево" соответственно. Чтобы убедиться, что конкретный элемент виден, вызовите функцию-член [енсуревисибле](../mfc/reference/ctreectrl-class.md#ensurevisible) .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Использование CTreeCtrl](../mfc/using-ctreectrl.md)<br/>
 [Элементы управления](../mfc/controls-mfc.md)

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: подсказки'
 title: Всплывающие подсказки
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,25 +9,25 @@ helpviewer_keywords:
 - controls [MFC], tool tips
 - buttons [MFC], tool tips
 ms.assetid: 7f0bba86-7c55-4bf6-8455-687a4dcb2be8
-ms.openlocfilehash: ec7795a524420d62b2307f26954bbf205d19dea9
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9446974df623ff03d1417ee393242d9995a6cf6c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62167976"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264457"
 ---
 # <a name="tool-tips"></a>Всплывающие подсказки
 
-Процедуры отличаются, для добавления всплывающих подсказок для элементов управления, содержащихся в windows, производных от класса MFC [CFrameWnd](../mfc/reference/cframewnd-class.md) и windows не являющиеся производными `CFrameWnd`.
+Процедуры являются разными для добавления подсказок к элементам управления, содержащимся в Windows, которые являются производными от класса MFC [CFrameWnd](../mfc/reference/cframewnd-class.md) и Windows, не являющихся производными от `CFrameWnd` .
 
-## <a name="what-do-you-want-to-know-more-about"></a>Выберите для получения дополнительных сведений
+## <a name="what-do-you-want-to-know-more-about"></a>Что вы хотите узнать подробнее
 
-Всплывающие подсказки для элементов управления в окно, которое:
+Всплывающие подсказки для элементов управления в окне, которое:
 
-- [Всплывающие подсказки панели инструментов (производное от CFrameWnd)](../mfc/toolbar-tool-tips.md)
+- [Подсказки на панели инструментов (производные от CFrameWnd)](../mfc/toolbar-tool-tips.md)
 
-- [Подсказки в Windows, не являющиеся производными CFrameWnd](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
+- [Подсказки в Windows, не являющиеся производными от CFrameWnd](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Элементы пользовательского интерфейса](../mfc/user-interface-elements-mfc.md)

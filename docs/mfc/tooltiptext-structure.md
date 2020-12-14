@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: структура TOOLTIPTEXT'
 title: Структура TOOLTIPTEXT
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,16 +8,16 @@ helpviewer_keywords:
 - TOOLTIPTEXT structure [MFC]
 - tool tips [MFC], notifications
 ms.assetid: 547591bf-80f5-400e-a2a7-0708cfffbb5d
-ms.openlocfilehash: 80b95225a277a7985c30e5ea453597b06e501753
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: 077d4c27392b626a0e9665851eadf227245029b6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69513300"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264301"
 ---
 # <a name="tooltiptext-structure"></a>Структура TOOLTIPTEXT
 
-При написании [обработчика уведомлений](../mfc/handling-ttn-needtext-notification-for-tool-tips.md)с помощью всплывающей подсказки необходимо использовать структуру **ToolTipText** . Элементы структуры **ToolTipText** :
+При написании [обработчика уведомлений с помощью всплывающей подсказки](../mfc/handling-ttn-needtext-notification-for-tool-tips.md)необходимо использовать структуру **ToolTipText** . Элементы структуры **ToolTipText** :
 
 ```cpp
 typedef struct {
@@ -31,7 +32,7 @@ typedef struct {
 ```
 
 *hdr*<br/>
-Определяет средство, которому требуется текст. Единственным элементом этой структуры может потребоваться идентификатор команды элемента управления. Идентификатор команды элемента управления будет находиться в элементе *идфром* структуры **NMHDR** , к которому можно получить доступ с помощью синтаксиса `hdr.idFrom`. Описание членов структуры **NMHDR** см. в разделе [NMHDR](/windows/win32/api/richedit/ns-richedit-nmhdr) .
+Определяет средство, которому требуется текст. Единственным элементом этой структуры может потребоваться идентификатор команды элемента управления. Идентификатор команды элемента управления будет находиться в элементе *идфром* структуры **NMHDR** , к которому можно получить доступ с помощью синтаксиса `hdr.idFrom` . Описание членов структуры **NMHDR** см. в разделе [NMHDR](/windows/win32/api/richedit/ns-richedit-nmhdr) .
 
 *lpszText*<br/>
 Адрес строки для получения текста инструмента.
@@ -50,6 +51,6 @@ typedef struct {
 
 - Скопируйте идентификатор строкового ресурса в элемент *лпсзтекст* и скопируйте Маркер экземпляра, который содержит ресурс, в элемент *хинст* .
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Подсказки в Windows, не являющиеся производными от CFrameWnd](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
+[Всплывающие подсказки в Windows, не являющиеся производными от CFrameWnd](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)

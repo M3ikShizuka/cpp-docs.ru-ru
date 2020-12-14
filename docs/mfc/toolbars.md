@@ -1,34 +1,35 @@
 ---
+description: 'Дополнительные сведения: панели инструментов'
 title: Панели инструментов
 ms.date: 11/04/2016
 helpviewer_keywords:
 - toolbars [MFC]
 - command bars [MFC], MFC toolbars
 ms.assetid: c22ecc5b-a84c-4979-8d1a-8e3e71d5ce33
-ms.openlocfilehash: fe294b42f6c149a32d3e96ee9e0e2dc18103fc5c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 843fcd0da9cd2647af69f8b81e8d62f3e525a7db
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62236787"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97264314"
 ---
 # <a name="toolbars"></a>Панели инструментов
 
-Семейство инструментов статей описываются панели инструментов MFC, а также способы их создания и использования.
+Семейство статей, посвященных панелям инструментов, описывает панели инструментов MFC и способы их создания и использования.
 
-## <a name="what-do-you-want-to-know-more-about"></a>Выберите для получения дополнительных сведений
+## <a name="what-do-you-want-to-know-more-about"></a>Что вы хотите узнать подробнее
 
 - [Реализация панели инструментов MFC](../mfc/mfc-toolbar-implementation.md)
 
-- [Основные сведения о панели инструментов](../mfc/toolbar-fundamentals.md)
+- [Общие сведения о панелях инструментов](../mfc/toolbar-fundamentals.md)
 
-- [Как объекты пользовательского интерфейса обновления (включить или отключить кнопки панели инструментов)](../mfc/how-to-update-user-interface-objects.md)
+- [Обновление объектов User-Interface (включение и отключение кнопок на панели инструментов)](../mfc/how-to-update-user-interface-objects.md)
 
-- [CToolBar](../mfc/reference/ctoolbar-class.md) и [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) классы
+- Классы [CToolBar](../mfc/reference/ctoolbar-class.md) и [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md)
 
-- [Пример](../mfc/toolbar-sample-list.md)
+- [Образец](../mfc/toolbar-sample-list.md)
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Элементы пользовательского интерфейса](../mfc/user-interface-elements-mfc.md)<br/>
 [Редактор панелей инструментов](../windows/toolbar-editor.md)
