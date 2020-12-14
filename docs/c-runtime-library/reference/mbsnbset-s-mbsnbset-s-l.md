@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _mbsnbset_s, _mbsnbset_s_l'
 title: _mbsnbset_s, _mbsnbset_s_l
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - _tcsnset_s function
 - tcsnset_s_l function
 ms.assetid: 811f92c9-cc31-4bbd-8017-2d1bfc6fb96f
-ms.openlocfilehash: b4880e774d6ad1b07052529461910ceff6897351
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: e8500de308d564b9e16ba5de29af67ee65b260e6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915537"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240199"
 ---
 # <a name="_mbsnbset_s-_mbsnbset_s_l"></a>_mbsnbset_s, _mbsnbset_s_l
 
@@ -91,7 +92,7 @@ errno_t _mbsnbset_s_l(
 *size*<br/>
 Размер строкового буфера.
 
-*ц*<br/>
+*c*<br/>
 Однобайтовый или многобайтовый параметр.
 
 *count*<br/>
@@ -104,9 +105,9 @@ errno_t _mbsnbset_s_l(
 
 Ноль в случае успешного выполнения; в противном случае — код ошибки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функции **_mbsnbset_s** и **_mbsnbset_s_l** заданы не чаще первого *числа* байтов *str* в *c*. Если параметр *Count* превышает длину *str*, вместо *Count*используется длина *str* . Если *c* является многобайтовым символом и не может быть полностью задано до последнего байта, указанного параметром *Count*, последний байт дополняется пустым символом. **_mbsnbset_s** и **_mbsnbset_s_l** не помещают завершающее значение NULL в конце *str*.
+Функции **_mbsnbset_s** и **_mbsnbset_s_l** заданы не чаще первого *числа* байтов *str* в *c*. Если параметр *Count* превышает длину *str*, вместо *Count* используется длина *str* . Если *c* является многобайтовым символом и не может быть полностью задано до последнего байта, указанного параметром *Count*, последний байт дополняется пустым символом. **_mbsnbset_s** и **_mbsnbset_s_l** не помещают завершающее значение NULL в конце *str*.
 
 **_mbsnbset_s** и **_mbsnbset_s_l** похожи **_mbsnset**, за исключением того, что они задают *число* байтов, а не *количество* символов *в c*.
 

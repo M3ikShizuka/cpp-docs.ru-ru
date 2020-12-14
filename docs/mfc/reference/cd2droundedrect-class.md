@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CD2DRoundedRect Class'
 title: Класс CD2DRoundedRect
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CD2DRoundedRect [MFC], CD2DRoundedRect
 ms.assetid: 06207fb5-e92b-41c0-bceb-b45d8f466531
-ms.openlocfilehash: 5189f3d824c008845570eac6eead4a35be1e483d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 13c1b0910c9d78f615d64e3eecba8bb813916413
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369075"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240667"
 ---
 # <a name="cd2droundedrect-class"></a>Класс CD2DRoundedRect
 
@@ -25,13 +26,13 @@ ms.locfileid: "81369075"
 class CD2DRoundedRect : public D2D1_ROUNDED_RECT;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CD2DRoundedRect::CD2DRoundedRect](#cd2droundedrect)|Перегружен. Строит `CD2DRoundedRect` объект из `D2D1_ROUNDED_RECT` объекта.|
+|[CD2DRoundedRect::CD2DRoundedRect](#cd2droundedrect)|Перегружен. Конструирует `CD2DRoundedRect` объект из `D2D1_ROUNDED_RECT` объекта.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -41,11 +42,11 @@ class CD2DRoundedRect : public D2D1_ROUNDED_RECT;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxrendertarget.h
+**Заголовок:** афксрендертаржет. h
 
-## <a name="cd2droundedrectcd2droundedrect"></a><a name="cd2droundedrect"></a>CD2DRoundedRect::CD2DRoundedRect
+## <a name="cd2droundedrectcd2droundedrect"></a><a name="cd2droundedrect"></a> CD2DRoundedRect::CD2DRoundedRect
 
-Строит объект CD2DRoundedRect с объекта CD2DRectF.
+Конструирует объект CD2DRoundedRect из объекта CD2DRectF.
 
 ```
 CD2DRoundedRect(
@@ -58,11 +59,11 @@ CD2DRoundedRect(const D2D1_ROUNDED_RECT* rectIn);
 
 ### <a name="parameters"></a>Параметры
 
-*rectIn*<br/>
-источник прямоугольника
+*Rect*<br/>
+Исходный прямоугольник
 
-*размерРадиус*<br/>
-размер радиуса
+*сизерадиус*<br/>
+Размер RADIUS
 
 ## <a name="see-also"></a>См. также раздел
 

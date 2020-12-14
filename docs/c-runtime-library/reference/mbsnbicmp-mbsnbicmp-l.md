@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _mbsnbicmp, _mbsnbicmp_l'
 title: _mbsnbicmp, _mbsnbicmp_l
 ms.date: 4/2/2020
 api_name:
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - mbsnbicmp function
 - _wcsnicmp function
 ms.assetid: ddb44974-8b0c-42f0-90d0-56c9350bae0c
-ms.openlocfilehash: e84e6b367c428dc26a1864db80f6828f7ec9c176
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 9cc833061ceca899af78da4c50610ed101dcd2d1
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911832"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240277"
 ---
 # <a name="_mbsnbicmp-_mbsnbicmp_l"></a>_mbsnbicmp, _mbsnbicmp_l
 
@@ -84,11 +85,11 @@ int _mbsnbicmp(
 
 При возникновении ошибки **_mbsnbicmp** возвращает **_NLSCMPERROR**, которая определена в String. h и Mbstring. h.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_mbsnbicmp** выполняет порядковое сравнение по сравнению с первым *числом* байтов *строка1* и *строка2*. Сравнение выполняется путем преобразования каждого символа в нижний регистр; [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) — это зависящая от регистра версия **_mbsnbicmp**. Сравнение завершается, если достигнут завершающий нуль-символ в любой строке до сравнения символов *счетчика* . Если строки равны, когда завершающий нуль-символ достигается в любой строке до сравнения символов *счетчика* , более короткая строка меньше.
 
-**_mbsnbicmp** похож на [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md), за исключением того, что он сравнивает строки вплоть до *количества* байтов, а не символов.
+**_mbsnbicmp**  похож на [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md), за исключением того, что он сравнивает строки вплоть до *количества* байтов, а не символов.
 
 Две строки, содержащие символы, которые расположены между Z и a в таблице ASCII ("[", "\\", "]", "^", "_" и "\`"), сравниваются по-разному в зависимости от их регистра. Например, две строки "ABCD" и "ABCD ^" сравнивают один из них, если сравнение является строчным ("ABCDE" > "abcd ^"), а другой способ ("ABCDE" < "ABCD ^"), если он является прописным.
 

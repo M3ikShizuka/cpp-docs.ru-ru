@@ -1,15 +1,16 @@
 ---
+description: 'Дополнительные сведения о: использование представления записей (доступ к данным MFC)'
 title: Использование представления записей (доступ к данным MFC)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - record views, customizing default code
 ms.assetid: 91f2828f-0666-4273-ae28-e4703fd98521
-ms.openlocfilehash: 611ddfd755eec84d4f2572a50c18802f988c5c3d
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: f79e5df4c967b89b02245fb03a3e4e269894b835
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80209031"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239666"
 ---
 # <a name="using-a-record-view--mfc-data-access"></a>Использование представления записей (доступ к данным MFC)
 

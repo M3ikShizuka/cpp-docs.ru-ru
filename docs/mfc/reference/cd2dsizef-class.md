@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: CD2DSizeF Class'
 title: Класс CD2DSizeF
 ms.date: 08/29/2019
 f1_keywords:
@@ -10,16 +11,16 @@ helpviewer_keywords:
 - CD2DSizeF [MFC], CD2DSizeF
 - CD2DSizeF [MFC], IsNull
 ms.assetid: f486a1e1-997d-4286-8cb9-26369dc82055
-ms.openlocfilehash: be050f98855e5af794166e1f86962111a23bfa2e
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: d1416f7cd225be8edf1a7b08f06f611219d7846d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81369066"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240563"
 ---
 # <a name="cd2dsizef-class"></a>Класс CD2DSizeF
 
-Обертка для D2D1_SIZE_F.
+Оболочка для D2D1_SIZE_F.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -27,25 +28,25 @@ ms.locfileid: "81369066"
 class CD2DSizeF : public D2D1_SIZE_F;
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CD2DSizeF::CD2DSizeF](#cd2dsizef)|Перегружен. Строит `CD2DSizeF` объект из `D2D1_SIZE_F` объекта.|
+|[CD2DSizeF:: CD2DSizeF](#cd2dsizef)|Перегружен. Конструирует `CD2DSizeF` объект из `D2D1_SIZE_F` объекта.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CD2DSizeF::Isnull](#isnull)|Возвращает значение **boolean,** которое указывает, не содержит ли выражение действительных данных (NULL).|
+|[CD2DSizeF:: IsNull](#isnull)|Возвращает **логическое** значение, указывающее, содержит ли выражение допустимые данные (null).|
 
 ### <a name="public-operators"></a>Открытые операторы
 
 |Имя|Описание|
 |----------|-----------------|
-|[CD2DSizeF:оператор CSize](#operator_csize)|`CD2DSizeF` Преобразуется `CSize` в объект.|
+|[CD2DSizeF:: operator Ксизе](#operator_csize)|Преобразует `CD2DSizeF` в `CSize` объект.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -55,11 +56,11 @@ class CD2DSizeF : public D2D1_SIZE_F;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxrendertarget.h
+**Заголовок:** афксрендертаржет. h
 
-## <a name="cd2dsizefcd2dsizef"></a><a name="cd2dsizef"></a>CD2DSizeF::CD2DSizeF
+## <a name="cd2dsizefcd2dsizef"></a><a name="cd2dsizef"></a> CD2DSizeF:: CD2DSizeF
 
-Строит объект CD2DSizeF из объекта CSize.
+Конструирует объект CD2DSizeF из объекта Ксизе.
 
 ```
 CD2DSizeF(const CSize& size);
@@ -73,18 +74,18 @@ CD2DSizeF(
 
 ### <a name="parameters"></a>Параметры
 
-*Размер*<br/>
-размер источника
+*size*<br/>
+Размер источника
 
-*Cx*<br/>
+*/CX*<br/>
 ширина источника
 
-*Cy*<br/>
+*CY*<br/>
 высота источника
 
-## <a name="cd2dsizefisnull"></a><a name="isnull"></a>CD2DSizeF::Isnull
+## <a name="cd2dsizefisnull"></a><a name="isnull"></a> CD2DSizeF:: IsNull
 
-Возвращает значение Boolean, которое указывает, не содержит ли выражение действительных данных (Null).
+Возвращает логическое значение, указывающее, содержит ли выражение допустимые данные (null).
 
 ```
 BOOL IsNull() const;
@@ -92,11 +93,11 @@ BOOL IsNull() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-ПРАВДА, если ширина и высота пусты; в противном случае FALSE.
+Значение TRUE, если ширина и высота пусты; в противном случае — FALSE.
 
-## <a name="cd2dsizefoperator-csize"></a><a name="operator_csize"></a>CD2DSizeF:оператор CSize
+## <a name="cd2dsizefoperator-csize"></a><a name="operator_csize"></a> CD2DSizeF:: operator Ксизе
 
-Преобразует CD2DSizeF в объект CSize.
+Преобразует CD2DSizeF в объект Ксизе.
 
 ```
 operator CSize();

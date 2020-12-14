@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: mbstowcs_s, _mbstowcs_s_l'
 title: mbstowcs_s, _mbstowcs_s_l
 ms.date: 4/2/2020
 api_name:
@@ -32,12 +33,12 @@ helpviewer_keywords:
 - mbstowcs_s function
 - mbstowcs_s_l function
 ms.assetid: 2fbda953-6918-498f-b440-3e7b21ed65a4
-ms.openlocfilehash: 4a6e86e1122a7392862fa34a59042c32560fd69d
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 800cb64c62498cfea93c6fc600207ad1e2309b98
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915457"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240121"
 ---
 # <a name="mbstowcs_s-_mbstowcs_s_l"></a>mbstowcs_s, _mbstowcs_s_l
 
@@ -111,7 +112,7 @@ errno_t _mbstowcs_s_l(
 
 Если выполняется какое-либо из этих условий, вызывается исключение о недопустимом параметре, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, функция возвращает код ошибки **и устанавливает значение** переводится, как указано в таблице.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **mbstowcs_s** преобразует строку многобайтовых символов, на которую указывает *мбстр* , в широкие символы, хранящиеся в буфере, на который указывает *вкстр*. Преобразование будет продолжаться для каждого символа до тех пор, пока не будет выполнено одно из указанных ниже условий.
 
@@ -127,7 +128,7 @@ errno_t _mbstowcs_s_l(
 
 Если **mbstowcs_s** успешно преобразует исходную строку, она помещает размер в расширенных символах преобразованной строки, включая знак завершения null, в *&#42;претурнвалуе* (предоставленный *претурнвалуе* не равен **null**). Это происходит, даже если аргумент *вкстр* имеет **значение NULL** и предоставляет способ определения требуемого размера буфера. Обратите внимание, что если *вкстр* имеет **значение NULL**, *Count* игнорируется, а *сизеинвордс* должен быть равен 0.
 
-Если **mbstowcs_s** встречает недопустимый многобайтовый символ, он помещает 0 в *&#42;претурнвалуе*, устанавливает в качестве буфера назначения пустую строку **, устанавливает значение** очистки в **еилсек**и возвращает **еилсек**.
+Если **mbstowcs_s** встречает недопустимый многобайтовый символ, он помещает 0 в *&#42;претурнвалуе*, устанавливает в качестве буфера назначения пустую строку **, устанавливает значение** очистки в **еилсек** и возвращает **еилсек**.
 
 Если последовательности, на которые указывает *мбстр* и *вкстр* , перекрываются, поведение **mbstowcs_s** не определено.
 
@@ -152,9 +153,9 @@ errno_t _mbstowcs_s_l(
 ## <a name="see-also"></a>См. также раздел
 
 [Преобразование данных](../../c-runtime-library/data-conversion.md)<br/>
-[Locale](../../c-runtime-library/locale.md)<br/>
+[Локаль](../../c-runtime-library/locale.md)<br/>
 [MultiByteToWideChar](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar)<br/>
-[Интерпретация последовательностей многобайтовых символов](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
 [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>

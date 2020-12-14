@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _mbsnbcpy, _mbsnbcpy_l'
 title: _mbsnbcpy, _mbsnbcpy_l
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - mbsnbcpy_l function
 - tcsncpy function
 ms.assetid: 83d17b50-3cbf-4df9-bce8-3b6d52f85d04
-ms.openlocfilehash: ea89458a51360b8781cb713fc9412239d2e03c78
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 24c82e432b1ababf703ff0cf6061c807f116d0e9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911897"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240420"
 ---
 # <a name="_mbsnbcpy-_mbsnbcpy_l"></a>_mbsnbcpy, _mbsnbcpy_l
 
@@ -99,7 +100,7 @@ unsigned char * _mbsnbcpy_l(
 
 **_mbsnbcpy** возвращает указатель на конечную строку символов. Нет зарезервированных возвращаемых значений для указания ошибки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_mbsnbcpy** копирует *число* байтов из *стрсаурце* в *стрдест*. Если значение *счетчика* превышает размер *стрдест* , а исходная и Целевая строки перекрываются, поведение **_mbsnbcpy** не определено.
 

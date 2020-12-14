@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: memcmp, вмемкмп'
 title: memcmp, wmemcmp
 ms.date: 11/04/2016
 api_name:
@@ -28,12 +29,12 @@ helpviewer_keywords:
 - wmemcmp function
 - memcmp function
 ms.assetid: 0c21c3e3-8ee4-40e5-add1-eb26d225fd8d
-ms.openlocfilehash: b18479e50d5b35c8de3dfd11eb34d0d21d45f223
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 65489d99e0c17e4971a4fa7cf849990b860ad361
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232460"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97239991"
 ---
 # <a name="memcmp-wmemcmp"></a>memcmp, wmemcmp
 
@@ -75,9 +76,9 @@ int wmemcmp(
 |0|*buffer1* , идентичный *buffer2*|
 |> 0|*buffer1* больше *buffer2*|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Сравнивает первые символы *числа* *buffer1* и *buffer2* и возвращает значение, указывающее их связь. Знак ненулевого возвращаемого значения соответствует знаку разности между первой отличающейся парой значений в буферах. Значения интерпретируется как **`unsigned char`** для **memcmp**и как **`wchar_t`** для **вмемкмп**.
+Сравнивает первые символы *числа* *buffer1* и *buffer2* и возвращает значение, указывающее их связь. Знак ненулевого возвращаемого значения соответствует знаку разности между первой отличающейся парой значений в буферах. Значения интерпретируется как **`unsigned char`** для **memcmp** и как **`wchar_t`** для **вмемкмп**.
 
 ## <a name="requirements"></a>Требования
 

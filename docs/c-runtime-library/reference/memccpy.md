@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _memccpy'
 title: _memccpy
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - _memccpy function
 - memccpy function
 ms.assetid: 9a2337df-6e85-4eba-b247-dd0532f45ddb
-ms.openlocfilehash: 097cefb504ffcdbfbe6bf131d5e8b1837d11a47a
-ms.sourcegitcommit: f19474151276d47da77cdfd20df53128fdcc3ea7
+ms.openlocfilehash: f3cbfbd1e112c724d6223a6c6d28f0915dcd7ca0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70951964"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240095"
 ---
 # <a name="_memccpy"></a>_memccpy
 
@@ -65,11 +66,11 @@ void *_memccpy(
 
 Если копируется символ *c* , **_memccpy** возвращает указатель на символ в *dest* , который сразу же следует за символом. Если *c* не копируется, возвращается **значение NULL**.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 Функция **_memccpy** копирует 0 или более символов из *src* в *dest*, прекращает выполнение при копировании символа *c* или при копировании *количества* символов (в зависимости от того, что происходит раньше).
 
-**Примечание о безопасности.** Убедитесь в том, что буфер назначения равен по размеру исходному буферу или превосходит его. Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
+**Примечание о безопасности**. Убедитесь в том, что буфер назначения равен или превосходит по размеру исходный буфер. Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
 
 ## <a name="requirements"></a>Требования
 
@@ -77,7 +78,7 @@ void *_memccpy(
 |-------------|---------------------|
 |**_memccpy**|\<memory.h> или \<string.h>|
 
-Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Библиотеки
 
@@ -119,7 +120,7 @@ Length: 25 characters
 
 ## <a name="see-also"></a>См. также
 
-[Манипуляция буфером](../../c-runtime-library/buffer-manipulation.md)<br/>
+[Обработка буфера](../../c-runtime-library/buffer-manipulation.md)<br/>
 [memchr, wmemchr](memchr-wmemchr.md)<br/>
 [memcmp, wmemcmp](memcmp-wmemcmp.md)<br/>
 [memcpy, wmemcpy](memcpy-wmemcpy.md)<br/>

@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _mbsnbset, _mbsnbset_l'
 title: _mbsnbset, _mbsnbset_l
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - tcsnset_l function
 - mbsnbset function
 ms.assetid: 8e46ef75-9a56-42d2-a522-a08450c67c19
-ms.openlocfilehash: 6af5dd101de74c9f25451c7b72ee561db35505d4
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: a99e92cec8b15c9534cec981652ce7c78fa31923
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82915550"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240264"
 ---
 # <a name="_mbsnbset-_mbsnbset_l"></a>_mbsnbset, _mbsnbset_l
 
@@ -73,7 +74,7 @@ unsigned char *_mbsnbset_l(
 *str*<br/>
 Строка, которую требуется изменить.
 
-*ц*<br/>
+*c*<br/>
 Однобайтовый или многобайтовый параметр.
 
 *count*<br/>
@@ -86,9 +87,9 @@ unsigned char *_mbsnbset_l(
 
 **_mbsnbset** возвращает указатель на измененную строку.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функции **_mbsnbset** и **_mbsnbset_l** заданы не чаще первого *числа* байтов *str* в *c*. Если параметр *Count* превышает длину *str*, вместо *Count*используется длина *str* . Если *c* является многобайтовым символом и не может быть полностью задано до последнего байта, указанного параметром *Count*, последний байт дополняется пустым символом. **_mbsnbset** и **_mbsnbset_l** не размещают завершающее значение NULL в конце *str*.
+Функции **_mbsnbset** и **_mbsnbset_l** заданы не чаще первого *числа* байтов *str* в *c*. Если параметр *Count* превышает длину *str*, вместо *Count* используется длина *str* . Если *c* является многобайтовым символом и не может быть полностью задано до последнего байта, указанного параметром *Count*, последний байт дополняется пустым символом. **_mbsnbset** и **_mbsnbset_l** не размещают завершающее значение NULL в конце *str*.
 
 **_mbsnbset** и **_mbsnbset_l** похожи на **_mbsnset**, за исключением того, что он задает *Count* bytes, а не *Count* символов *в c*.
 

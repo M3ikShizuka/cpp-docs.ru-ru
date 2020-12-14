@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _mbsnbcpy_s, _mbsnbcpy_s_l'
 title: _mbsnbcpy_s, _mbsnbcpy_s_l
 ms.date: 4/2/2020
 api_name:
@@ -38,12 +39,12 @@ helpviewer_keywords:
 - _mbsnbcpy_s_l function
 - _tcsncpy_s function
 ms.assetid: dfff64ab-fe6f-49c4-99ba-75014e2b0cd6
-ms.openlocfilehash: 670055ca67e8196805851767596f56028350e32a
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 12233d0f83094934250a04b18582feff0cb7310e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82911876"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240290"
 ---
 # <a name="_mbsnbcpy_s-_mbsnbcpy_s_l"></a>_mbsnbcpy_s, _mbsnbcpy_s_l
 
@@ -104,7 +105,7 @@ errno_t _mbsnbcpy_s_l(
 
 Нуль в случае успеха; **Еинвал** , если был передан неверный параметр.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_mbsnbcpy_s** копирует *число* байтов из *стрсаурце* в *стрдест*. Если параметр *Count* превышает размер *стрдест*, то любая из входных строк является пустым указателем, или *сизеинбитес* или *Count* имеет значение 0, функция вызывает обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md) . Если выполнение может быть продолжено, функция возвращает **еинвал**. Если исходная и Целевая строки перекрываются, поведение **_mbsnbcpy_s** не определено.
 

@@ -1,4 +1,5 @@
 ---
+description: Дополнительные сведения о:/SUMMARY
 title: /SUMMARY
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - /SUMMARY dumpbin option
 - SUMMARY dumpbin option
 ms.assetid: f33f244c-1f23-4e94-bd85-b26c97a19e6a
-ms.openlocfilehash: fd9923e22b5cb11981a3037ae3f30ef541445e98
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 59b287001a8b98767a72a5cd25efb6c07b00a04a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62317748"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97240407"
 ---
 # <a name="summary"></a>/SUMMARY
 
@@ -21,12 +22,12 @@ ms.locfileid: "62317748"
 /SUMMARY
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Этот параметр отображает минимальные сведения о разделах, включая общий размер. Этот параметр используется по умолчанию, если другие параметры не указаны.
+Этот параметр отображает минимальные сведения о разделах, включая общий размер. Этот параметр используется по умолчанию, если не указан другой параметр.
 
-Только [/Headers](headers.md) параметр (программа DUMPBIN) доступен для использования в файлах, созданных с помощью [/GL](gl-whole-program-optimization.md) параметр компилятора.
+С файлами, созданными с использованием параметра компилятора [/GL](gl-whole-program-optimization.md), можно использовать только параметр DUMPBIN [/HEADERS](headers.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Параметры DUMPBIN](dumpbin-options.md)
