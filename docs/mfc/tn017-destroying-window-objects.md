@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: TN017: уничтожение объектов Window'
 title: TN017. Уничтожение объектов окон
 ms.date: 11/04/2016
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - TN017
 - PostNcDestroy method [MFC]
 ms.assetid: 5bf208a5-5683-439b-92a1-547c5ded26cd
-ms.openlocfilehash: 2448a2661851f14fc6fe8747ca19495925442436
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 86ce1255055db98a247ac8997aa7d146eb135583
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226819"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215915"
 ---
 # <a name="tn017-destroying-window-objects"></a>TN017. Уничтожение объектов окон
 
@@ -39,7 +40,7 @@ ms.locfileid: "87226819"
 
 ## <a name="auto-cleanup-with-cwndpostncdestroy"></a>Автоматическая очистка с помощью CWnd::P Остнкдестрой
 
-Когда система уничтожает окно Windows, Последнее сообщение Windows, отправленное в окно, будет WM_NCDESTROY. Обработчиком по умолчанию `CWnd` для этого сообщения является [CWnd:: OnNcDestroy](../mfc/reference/cwnd-class.md#onncdestroy). `OnNcDestroy`Отсоединяет `HWND` объект от объекта C++ и вызывает виртуальную функцию `PostNcDestroy` . Некоторые классы переопределяют эту функцию для удаления объекта C++.
+Когда система уничтожает окно Windows, Последнее сообщение Windows, отправленное в окно, будет WM_NCDESTROY. Обработчиком по умолчанию `CWnd` для этого сообщения является [CWnd:: OnNcDestroy](../mfc/reference/cwnd-class.md#onncdestroy). `OnNcDestroy` Отсоединяет `HWND` объект от объекта C++ и вызывает виртуальную функцию `PostNcDestroy` . Некоторые классы переопределяют эту функцию для удаления объекта C++.
 
 Реализация по умолчанию `CWnd::PostNcDestroy` не выполняет никаких действий, что подходит для объектов Window, выделенных в кадре стека или внедренных в другие объекты. Это не подходит для объектов Window, предназначенных для выделения в куче без каких-либо других объектов. Иными словами, это не подходит для объектов Window, которые не внедряются в другие объекты C++.
 
@@ -93,7 +94,7 @@ Warning: calling DestroyWindow in CWnd::~CWnd
 
 После вызова `DestroyWindow` для объекта, не являющегося автоматической очисткой, объект C++ будет по-прежнему состоять, но *m_hWnd* будет иметь значение null. После вызова `DestroyWindow` для объекта автоматической очистки объект c++ будет освобожден с помощью оператора delete c++ в реализации автоматической очистки `PostNcDestroy` .
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Технические примечания по номеру](../mfc/technical-notes-by-number.md)<br/>
 [Технические примечания по категориям](../mfc/technical-notes-by-category.md)

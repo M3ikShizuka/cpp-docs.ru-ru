@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: TN016: использование множественного наследования C++ с помощью MFC'
 title: TN016. Использование множественного наследования C++ с MFC
 ms.date: 06/28/2018
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - MI (Multiple Inheritance)
 - multiple inheritance, MFC support for
 ms.assetid: 4ee27ae1-1410-43a5-b111-b6af9b84535d
-ms.openlocfilehash: c44639e713f6d0b26d5b74e9f645f60c8627e0c8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: ac4b082a5dc33e93098453714acd25fbd0c18438
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87231771"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97215954"
 ---
 # <a name="tn016-using-c-multiple-inheritance-with-mfc"></a>TN016. Использование множественного наследования C++ с MFC
 
@@ -35,7 +36,7 @@ ms.locfileid: "87231771"
 
 ## <a name="cobject---the-root-of-all-classes"></a>CObject — корень всех классов;
 
-Все значимые классы прямо или косвенно наследуются от класса `CObject` . `CObject`не содержит данных элементов, но имеет некоторые функциональные возможности по умолчанию. При использовании MI вы обычно наследуете от двух или более `CObject` производных классов. В следующем примере показано, как класс может наследовать от [CFrameWnd](../mfc/reference/cframewnd-class.md) и [коблист](../mfc/reference/coblist-class.md):
+Все значимые классы прямо или косвенно наследуются от класса `CObject` . `CObject` не содержит данных элементов, но имеет некоторые функциональные возможности по умолчанию. При использовании MI вы обычно наследуете от двух или более `CObject` производных классов. В следующем примере показано, как класс может наследовать от [CFrameWnd](../mfc/reference/cframewnd-class.md) и [коблист](../mfc/reference/coblist-class.md):
 
 ```cpp
 class CListWnd : public CFrameWnd, public CObList
@@ -80,7 +81,7 @@ public:
 
 Может показаться, что практически наследуемое `CObject` решение решает проблему неоднозначности функции, но это не так. Поскольку в отсутствуют данные о членах `CObject` , виртуальное наследование не требуется для предотвращения нескольких копий данных члена базового класса. В первом примере, показанном ранее, `Dump` виртуальный метод по-прежнему является неоднозначным, так как он реализован иначе в `CFrameWnd` и `CObList` . Лучший способ удаления неоднозначности — следовать рекомендациям, приведенным в предыдущем разделе.
 
-## <a name="cobjectiskindof-and-run-time-typing"></a>CObject:: IsKindOf и ввод во время выполнения
+## <a name="cobjectiskindof-and-run-time-typing"></a>CObject:: IsKindOf и ввод Run-Time
 
 Механизм ввода во время выполнения, поддерживаемый MFC в, `CObject` использует макросы DECLARE_DYNAMIC, IMPLEMENT_DYNAMIC, DECLARE_DYNCREATE, IMPLEMENT_DYNCREATE, DECLARE_SERIAL и IMPLEMENT_SERIAL. Эти макросы могут выполнять проверку типов во время выполнения для обеспечения безопасного образования производных типов.
 

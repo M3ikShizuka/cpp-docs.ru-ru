@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _rotl8, _rotl16'
 title: _rotl8, _rotl16
 ms.date: 09/02/2019
 f1_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - _rotl8 intrinsic
 - _rotl16 intrinsic
 ms.assetid: 8c519ab6-aef9-4f07-a387-daee8408368f
-ms.openlocfilehash: 5dffde2d3f830b6ec4ad43865648c27b1defb593
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: 71ef10bb6af750fc08955fbdf82975b1ed32fa94
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70218029"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211912"
 ---
 # <a name="_rotl8-_rotl16"></a>_rotl8, _rotl16
 
@@ -36,7 +37,7 @@ unsigned short _rotl16(
 
 ### <a name="parameters"></a>Параметры
 
-*value*\
+*значений*\
 окне Значение для поворота.
 
 *мести*\
@@ -48,14 +49,14 @@ unsigned short _rotl16(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Архитектура|
 |---------------|------------------|
 |`_rotl8`|x86, ARM, x64, ARM64|
 |`_rotl16`|x86, ARM, x64, ARM64|
 
-**Заголовочный файл** \<> Intrin. h
+**Файл заголовка** \<intrin.h>
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
 В отличие от операции сдвига влево, при выполнении левого вращения старшие биты, которые выходят за пределы верхнего конца, перемещаются на наименее значащие биты.
 
@@ -103,4 +104,4 @@ Rotating unsigned short 0x12 left by 10 bits gives 0x4800
 ## <a name="see-also"></a>См. также
 
 [_rotr8, _rotr16](../intrinsics/rotr8-rotr16.md)\
-[Встроенные функции компилятора](../intrinsics/compiler-intrinsics.md)
+[Встроенные объекты компилятора](../intrinsics/compiler-intrinsics.md)

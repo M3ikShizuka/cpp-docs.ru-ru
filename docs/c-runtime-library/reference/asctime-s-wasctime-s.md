@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: asctime_s, _wasctime_s'
 title: asctime_s, _wasctime_s
 ms.date: 4/2/2020
 api_name:
@@ -36,12 +37,12 @@ helpviewer_keywords:
 - _wasctime_s function
 - asctime_s function
 ms.assetid: 17ad9b2b-a459-465d-976a-42822897688a
-ms.openlocfilehash: 529663a8c36a1b934a4dd99852aee19fb1a1e6e6
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d743aea81abdba2e1aa2b470f71081cb92e6fc64
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217016"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211327"
 ---
 # <a name="asctime_s-_wasctime_s"></a>asctime_s, _wasctime_s
 
@@ -100,9 +101,9 @@ errno_t _wasctime_s(
 > [!NOTE]
 > Условия ошибок для **wasctime_s** похожи на **asctime_s** с исключением, что ограничение размера измеряется в словах.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функция **asctime** преобразует время, хранящееся в виде структуры, в символьную строку. Значение *тмсаурце* обычно получается из вызова **gmtime** или **localtime**. Обе функции можно использовать для заполнения структуры **TM** , как определено во времени. Высоты.
+Функция **asctime** преобразует время, хранящееся в виде структуры, в символьную строку. Значение *тмсаурце* обычно получается из вызова **gmtime** или **localtime**. Обе функции можно использовать для заполнения структуры **TM** , как определено в Time. H.
 
 |Член timeptr|Значение|
 |--------------------|-----------|
@@ -120,7 +121,7 @@ errno_t _wasctime_s(
 
 Строковый результат, полученный **asctime_s** , содержит ровно 26 символов и имеет форму `Wed Jan 02 02:03:55 1980\n\0` . Время в 24-часовом формате. Все поля имеют постоянную ширину. Символ новой строки и нуль-символ занимают две последние позиции строки. Значение, переданное в качестве второго параметра, должно иметь по крайней мере такое значение. Если он меньше, будет возвращен код ошибки **еинвал**.
 
-**_wasctime_s** — это версия **asctime_s**для расширенных символов. в противном случае **_wasctime_s** и **asctime_s** ведут себя одинаково.
+**_wasctime_s** — это версия **asctime_s** для расширенных символов. в противном случае **_wasctime_s** и **asctime_s** ведут себя одинаково.
 
 Версии отладочной библиотеки этих функций сначала заполняют буфер 0xFE. Чтобы отключить это поведение, используйте [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md).
 

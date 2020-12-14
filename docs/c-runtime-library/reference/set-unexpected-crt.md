@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: set_unexpected (CRT)'
 title: set_unexpected (CRT)
 ms.date: 11/04/2016
 api_name:
@@ -25,12 +26,12 @@ helpviewer_keywords:
 - unexpected function
 - exception handling, termination
 ms.assetid: ebcef032-4771-48e5-88aa-2a1ab8750aa6
-ms.openlocfilehash: f05eab14a53c8abc119a8014d5ac99dc076a9c25
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b9665a73f87d64cd991ff8ce296a4c14957b30ed
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87226168"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211080"
 ---
 # <a name="set_unexpected-crt"></a>set_unexpected (CRT)
 
@@ -51,9 +52,9 @@ unexpected_function set_unexpected( unexpected_function unexpFunction );
 
 Возвращает указатель на предыдущую функцию завершения, зарегистрированную **_set_unexpected** , чтобы предыдущую функцию можно было восстановить позже. Если Предыдущая функция не задана, то возвращаемое значение может использоваться для восстановления поведения по умолчанию; Это значение может быть **равно NULL**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-Функция **set_unexpected** устанавливает *унекспфунктион* как **непредвиденно**вызванная функция. в текущей реализации обработки исключений C++ **не используется.** Тип **unexpected_function** ОПРЕДЕЛЕН в EH. H в качестве указателя на определяемую пользователем непредвиденную функцию, *унекспфунктион* , возвращающую **`void`** . Пользовательская функция *унекспфунктион* не должна возвращаться к ее вызывающему объекту.
+Функция **set_unexpected** устанавливает *унекспфунктион* как **непредвиденно** вызванная функция. в текущей реализации обработки исключений C++ **не используется.** Тип **unexpected_function** ОПРЕДЕЛЕН в EH. H в качестве указателя на определяемую пользователем непредвиденную функцию, *унекспфунктион* , возвращающую **`void`** . Пользовательская функция *унекспфунктион* не должна возвращаться к ее вызывающему объекту.
 
 ```cpp
 typedef void ( *unexpected_function )( );
@@ -77,10 +78,10 @@ typedef void ( *unexpected_function )( );
 
 Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также раздел
 
 [Подпрограммы обработки исключений](../../c-runtime-library/exception-handling-routines.md)<br/>
-[abort](abort.md)<br/>
+[рвал](abort.md)<br/>
 [_get_unexpected](get-unexpected.md)<br/>
 [set_terminate](set-terminate-crt.md)<br/>
 [заканчива](terminate-crt.md)<br/>

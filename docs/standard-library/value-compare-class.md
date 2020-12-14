@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: value_compare классе'
 title: Класс value_compare
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - value_compare class
 ms.assetid: c306c5b9-3505-4357-aa6b-216451b951ed
-ms.openlocfilehash: d64d51869ca8db1ed42e9d33691f59da4473d8d0
-ms.sourcegitcommit: 63784729604aaf526de21f6c6b62813882af930a
+ms.openlocfilehash: d77412b2d979ef4db84621df1b0c94191f3d2a5f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "79447566"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211717"
 ---
 # <a name="value_compare-class"></a>Класс value_compare
 
@@ -39,7 +40,7 @@ protected:
 
 ## <a name="remarks"></a>Remarks
 
-Критерии сравнения, предоставляемые value_compare между `value_types` целых элементов, содержащихся в hash_map, задаются с помощью сравнения между ключами соответствующих элементов при помощи вспомогательной конструкции класса. Оператор функции-члена использует объект `comp` типа `key_compare`, хранящегося в объекте функции, предоставляемом value_compare, для сравнения компонентов с ключевыми порядками сортировки двух элементов.
+Критерий сравнения, предоставляемый value_compare между `value_types` целыми элементами, содержащимся в hash_map, вызывается из сравнения ключей соответствующих элементов при помощи вспомогательной конструкции класса. Оператор функции-члена использует объект `comp` типа, `key_compare` хранящийся в объекте функции, предоставляемом value_compare, для сравнения компонентов с ключевыми порядками сортировки двух элементов.
 
 Для объектов hash_set и hash_multiset, которые представляют собой простые контейнеры, в которых значения ключей идентичны значениям элементов, value_compare эквивалентно `key_compare`; для объектов hash_map и hash_multimap это не так, так как элементы типа `pair` не эквивалентны значению ключа элемента.
 
@@ -49,12 +50,12 @@ protected:
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<hash_map >
+**Заголовок:**\<hash_map>
 
 **Пространство имен:** stdext
 
 ## <a name="see-also"></a>См. также раздел
 
 [Структура binary_function](../standard-library/binary-function-struct.md)\
-[Потокобезопасность в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)\
 [Справочник по стандартной библиотеке C++](../standard-library/cpp-standard-library-reference.md)

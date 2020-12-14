@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: производные классы представлений, доступные в MFC'
 title: Производные классы представлений, доступные в MFC
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - derived classes [MFC], view classes
 - view classes [MFC], derived
 ms.assetid: dba42178-7459-4ccc-b025-f3d9b8a4b737
-ms.openlocfilehash: dc0f0b10ea291db32c576a7d36b7fc19728fa6ce
-ms.sourcegitcommit: c21b05042debc97d14875e019ee9d698691ffc0b
+ms.openlocfilehash: 669fb0f47cc2124fcf45d0eed3666869837f56f6
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84616987"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211899"
 ---
 # <a name="derived-view-classes-available-in-mfc"></a>Производные классы представлений, доступные в MFC
 
@@ -24,7 +25,7 @@ ms.locfileid: "84616987"
 |-----------|-----------------|
 |[CView](reference/cview-class.md)|Базовый класс всех представлений.|
 |[CCtrlView](reference/cctrlview-class.md)|Базовый класс для `CTreeView` , `CListView` , `CEditView` и `CRichEditView` . Эти классы позволяют использовать архитектуру документов и представлений с указанными стандартными элементами управления Windows.|
-|[CEditView](reference/ceditview-class.md)|Простое представление, основанное на элементе управления "поле ввода Windows". Позволяет вводить и редактировать текст и может использоваться в качестве основания для простого текстового редактора. Ознакомьтесь с командой `CRichEditView`.|
+|[CEditView](reference/ceditview-class.md)|Простое представление, основанное на элементе управления "поле ввода Windows". Позволяет вводить и редактировать текст и может использоваться в качестве основания для простого текстового редактора. См. также раздел `CRichEditView`.|
 |[CRichEditView](reference/cricheditview-class.md)|Представление, содержащее объект [CRichEditCtrl](reference/cricheditctrl-class.md) . Этот класс аналогичен `CEditView` , но, в отличие от `CEditView` , `CRichEditView` обрабатывает форматированный текст.|
 |[CListView](reference/clistview-class.md)|Представление, содержащее объект [CListCtrl](reference/clistctrl-class.md) .|
 |[CTreeView](reference/ctreeview-class.md)|Представление, содержащее объект [CTreeCtrl](reference/ctreectrl-class.md) , для представлений, которые похожи на обозреватель решенийое окно в Visual C++.|

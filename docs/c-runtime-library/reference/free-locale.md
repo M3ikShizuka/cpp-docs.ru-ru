@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения: _free_locale'
 title: _free_locale
 ms.date: 4/2/2020
 api_name:
@@ -31,12 +32,12 @@ helpviewer_keywords:
 - locales, freeing
 - _free_locale function
 ms.assetid: 1f08d348-ab32-4028-a145-6cbd51b49af9
-ms.openlocfilehash: 8dbc424c00464966605cce5c44118b88eb5335d3
-ms.sourcegitcommit: 5a069c7360f75b7c1cf9d4550446ec2fa2eb2293
+ms.openlocfilehash: 441686a1ee037097c164ae60b4ccc418f0d38ac8
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82920440"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211275"
 ---
 # <a name="_free_locale"></a>_free_locale
 
@@ -55,7 +56,7 @@ void _free_locale(
 *locale*<br/>
 Объект языкового стандарта, который необходимо освободить.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Функция **_free_locale** используется для высвобождения объекта языкового стандарта, полученного из вызова метода **_get_current_locale** или **_create_locale**.
 
@@ -65,7 +66,7 @@ void _free_locale(
 
 ## <a name="requirements"></a>Требования
 
-|**Ассемблер**|Обязательный заголовок|
+|**Подпрограмма**|Обязательный заголовок|
 |---------------|---------------------|
 |**_free_locale**|\<locale.h>|
 

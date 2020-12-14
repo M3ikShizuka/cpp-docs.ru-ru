@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: IsNaN, _isnan _isnanf'
 title: isnan, _isnan, _isnanf
 ms.date: 01/31/2019
 api_name:
@@ -35,12 +36,12 @@ helpviewer_keywords:
 - Not a Number (NANs)
 - isnan function
 ms.assetid: 391fbc5b-89a4-4fba-997e-68f1131caf82
-ms.openlocfilehash: 5aebacd15000e0202a26f600614900390c1ba7a4
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 819b53740c6717f0ba8d18376a38c91c80ee03c0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87213545"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211249"
 ---
 # <a name="isnan-_isnan-_isnanf"></a>isnan, _isnan, _isnanf
 
@@ -78,7 +79,7 @@ bool isnan(
 
 В C++ функция шаблона **IsNaN** возвращает, **`true`** Если аргумент *x* является NaN; в противном случае возвращается значение **`false`** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Поскольку значение NaN не сравнивается ни с одним другим значением NaN, необходимо использовать одну из этих функций или макросов для обнаружения одного значения. Значение NaN создается, если результат операции с плавающей запятой не может быть представлен в формате IEEE-754 с плавающей точкой для указанного типа. Сведения о том, как значение NaN представлено для вывода, см. в разделе [printf](printf-printf-l-wprintf-wprintf-l.md).
 
@@ -101,5 +102,5 @@ bool isnan(
 [fpclassify](fpclassify.md)<br/>
 [_fpclass, _fpclassf](fpclass-fpclassf.md)<br/>
 [isfinite, _finite, _finitef](finite-finitef.md)<br/>
-[isinf](isinf.md)<br/>
+[исинф](isinf.md)<br/>
 [isnormal](isnormal.md)<br/>

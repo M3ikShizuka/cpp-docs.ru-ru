@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: Кмфкколорпопупмену Class'
 title: Класс Кмфкколорпопупмену
 ms.date: 11/04/2016
 f1_keywords:
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - CMFCColorPopupMenu [MFC], GetMenuBar
 - CMFCColorPopupMenu [MFC], SetPropList
 ms.assetid: 0bf9efe8-aed5-4ab7-b23b-eb284b4668be
-ms.openlocfilehash: 2964f250b25ad6c77c70e8f10cd92cca0c7d11da
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 1668064fa253ea17bdce1ba393bd892ef8769b71
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88844565"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97211834"
 ---
 # <a name="cmfccolorpopupmenu-class"></a>Класс Кмфкколорпопупмену
 
@@ -31,7 +32,7 @@ ms.locfileid: "88844565"
 class CMFCColorPopupMenu : public CMFCPopupMenu
 ```
 
-## <a name="members"></a>Участники
+## <a name="members"></a>Члены
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
@@ -56,7 +57,7 @@ class CMFCColorPopupMenu : public CMFCPopupMenu
 |`m_bEnabledInCustomizeMode`|Логическое значение, определяющее, следует ли отображать цветовую панель.|
 |`m_wndColorBar`|`CMFCColorBar`Объект, предоставляющий выбор цвета.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот класс наследует функции всплывающего меню `CMFCPopupMenu` класса и управляет `CMFCColorBar` объектом, предоставляющим выбор цвета. Если платформа панели инструментов находится в режиме настройки и `m_bEnabledInCustomizeMode` для элемента задано значение false, объект цветовой шкалы не отображается. Дополнительные сведения о режиме настройки см. в разделе [CMFCToolBar:: искустомиземоде](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)
 
@@ -170,7 +171,7 @@ CMFCColorPopupMenu(
 *nID*<br/>
 окне Идентификатор команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Каждый перегруженный конструктор задает `m_bEnabledInCustomizeMode` для элемента значение false.
 
@@ -206,7 +207,7 @@ virtual CPane* CreateTearOffBar(
 
 Указатель на новый объект-разделитель элементов управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Этот метод создает объект [класса кмфкколорбар](../../mfc/reference/cmfccolorbar-class.md) и приводит его к указателю [класса CPane](../../mfc/reference/cpane-class.md) . Это значение можно привести обратно к указателю [класса кмфкколорбар](../../mfc/reference/cmfccolorbar-class.md) с помощью одного из макросов приведения, описанных в разделе [приведение типов объектов классов MFC](../../mfc/reference/type-casting-of-mfc-class-objects.md).
 
@@ -222,7 +223,7 @@ virtual CMFCPopupMenuBar* GetMenuBar();
 
 Указатель на встроенный объект `CMFCPopupMenuBar` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Во всплывающем меню «цвет» имеется внедренный объект [класса CMFCPopupMenuBar](../../mfc/reference/cmfcpopupmenubar-class.md) . Переопределите этот метод в производном классе, если приложение использует другой внедренный тип.
 
