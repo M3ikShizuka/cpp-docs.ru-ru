@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: from_chars_result struct'
 title: Структура from_chars_result
 ms.date: 7/23/2020
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - from_chars_result class
 - from_chars_result structure
-ms.openlocfilehash: 5a5dcfe6e5b59644e6ebf55d68ce43975e7d3c9d
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 894a687a4395e22538b384675af5b4ce57731f78
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87215768"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232282"
 ---
 # <a name="from_chars_result-struct"></a>Структура from_chars_result
 
@@ -29,7 +30,7 @@ struct from_chars_result {
 |`ptr`| Если `ec` значение равно `errc{}` , преобразование прошло успешно и `ptr` указывает на первый символ, который не является частью распознанного числа. |
 |`ec` | Код ошибки преобразования. Конкретные коды ошибок см. в разделе [`errc`](system-error-enums.md#errc) .|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Пример. синтаксический анализ `"1729cats"` в виде десятичного целого числа будет выполнен, и `ptr` будет указывать на то, `'c'` что является первой нецифровой цифрой `"1729"` .
 

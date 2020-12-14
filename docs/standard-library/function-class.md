@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: класс функции'
 title: Класс function
 ms.date: 11/04/2016
 f1_keywords:
@@ -18,12 +19,12 @@ helpviewer_keywords:
 - std::function [C++], target
 - std::function [C++], target_type
 ms.assetid: 7b5ca76b-9ca3-4d89-8fcf-cad70a4aeae6
-ms.openlocfilehash: 052cbba69aa99d33de963a3e360e6951a6006bec
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 30e81e297791691ba5736b4e116fc08ab4229f0a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831467"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232178"
 ---
 # <a name="function-class"></a>Класс function
 
@@ -85,7 +86,7 @@ public:
 *Политике*\
 Функция распределителя.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса — это обертка вызова, сигнатура вызова которой — `Ret(T1, T2, ..., TN)` . Они позволяют заключить в универсальную оболочку различные вызываемые объекты.
 
@@ -103,7 +104,7 @@ public:
 
 Пустой объект `function` не содержит вызываемый объект или ссылку на вызываемый объект.
 
-## <a name="members"></a>Элементы
+## <a name="members"></a>Члены
 
 ### <a name="constructors"></a>Конструкторы
 
@@ -161,7 +162,7 @@ template <class Fx, class Alloc>
 *Политике*\
 Объект распределителя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Все функции элементов заменяют `callable object` удерживаемый на **`*this`** вызываемый объект, переданный как `operand` . Выделяйте хранилище с помощью объекта распределителя *AX*.
 
@@ -208,7 +209,7 @@ template <class Fx, class Alloc>
 *_Fnref*\
 Ссылка на вызываемый объект для упаковки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первые два конструктора создают пустой объект `function`. Следующие три конструктора создают объект `function`, который содержит вызываемый объект, переданный как операнд. Последние два конструктора выделяют память с объектом распределителя Ax.
 
@@ -290,7 +291,7 @@ g is empty (correct).
 operator unspecified();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Оператор возвращает значение, которое преобразуется в **`bool`** со значением true, только если объект не пуст. Его можно использовать, чтобы проверить, является ли объект пустым.
 
@@ -343,7 +344,7 @@ result_type operator()(
 *Код*\
 N-й аргумент вызова.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает `INVOKE(fn, t1, t2, ..., tN, Ret)` , где `fn` — это целевой объект, хранящийся в **`*this`** . Его можно использовать для вызова вызываемого объекта в оболочке.
 
@@ -402,7 +403,7 @@ template <class Fty>
 *фнреф*\
 Ссылка на вызываемый объект для упаковки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Операторы каждый заменяют вызываемый объект, удерживаемый, на **`*this`** вызываемый объект, переданный в качестве операнда.
 
@@ -465,7 +466,7 @@ val == -3
 typedef Ret result_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 typedef — синоним типа `Ret` в сигнатуре вызова шаблона. Его можно использовать, чтобы определить возвращаемый тип упакованного вызываемого объекта.
 
@@ -512,7 +513,7 @@ void swap(function& right);
 *Правильно*\
 Объект функции для обмена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция – член меняет местами целевые объекты между **`*this`** и *right*. Она делает это в константном времени и не создает исключений.
 
@@ -574,7 +575,7 @@ template <class Fty2>
 *Fty2*\
 Тип целевого вызываемого объекта для проверки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Тип *Fty2* должен быть вызываемым для типов аргументов `T1, T2, ..., TN` и возвращаемого типа `Ret` . Если `target_type() == typeid(Fty2)`, шаблон функций-членов возвращает адрес целевого объекта; в противном случае возвращается 0.
 
@@ -627,7 +628,7 @@ no target == true
 const std::type_info& target_type() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает, `typeid(void)` Если **`*this`** пустой, в противном случае возвращается `typeid(T)` , где `T` — это тип целевого объекта.
 

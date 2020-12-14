@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: fpos Class'
 title: Класс fpos
 ms.date: 03/27/2019
 f1_keywords:
@@ -11,12 +12,12 @@ helpviewer_keywords:
 - std::fpos [C++], seekpos
 - std::fpos [C++], state
 ms.assetid: ffd0827c-fa34-47f4-b10e-5cb707fcde47
-ms.openlocfilehash: 37536443455ca4ddc40568e15951b814982d4ad9
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 22b9a5e69b179ef4206a0664b51b92cc55d4320d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87193306"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232334"
 ---
 # <a name="fpos-class"></a>Класс fpos
 
@@ -71,7 +72,7 @@ class fpos
 
 **Пространство имен:** std
 
-## <a name="fposfpos"></a><a name="fpos"></a>fpos:: fpos
+## <a name="fposfpos"></a><a name="fpos"></a> fpos:: fpos
 
 Создает объект, содержащий сведения о положении (смещении) в потоке.
 
@@ -92,13 +93,13 @@ fpos(Statetype _State, fpos_t _Filepos);
 *_Filepos*\
 Смещение в поток.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Первый конструктор сохраняет *_Off*смещения относительно начала файла и в начальном состоянии преобразования (если это важно). Если *_Off* равен-1, результирующий объект представляет недопустимую точку в потоке.
+Первый конструктор сохраняет *_Off* смещения относительно начала файла и в начальном состоянии преобразования (если это важно). Если *_Off* равен-1, результирующий объект представляет недопустимую точку в потоке.
 
 Второй конструктор сохраняет нулевое смещение и объект *_State*.
 
-## <a name="fposoperator"></a><a name="op_neq"></a>fpos:: operator! =
+## <a name="fposoperator"></a><a name="op_neq"></a> fpos:: operator! =
 
 Проверяет индикаторы положений в файлах на неравенство.
 
@@ -115,7 +116,7 @@ bool operator!=(const fpos<Statetype>& right) const;
 
 **`true`** значение, если индикаторы позиционирования файлов не равны; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает значение `!(*this == right)`.
 
@@ -171,7 +172,7 @@ int main( )
 }
 ```
 
-## <a name="fposoperator"></a><a name="op_add"></a>fpos:: operator +
+## <a name="fposoperator"></a><a name="op_add"></a> fpos:: operator +
 
 Увеличивает значение положения в файле.
 
@@ -188,7 +189,7 @@ fpos<Statetype> operator+(streamoff _Off) const;
 
 Позиция в файле.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает **fpos(\*this) +=** `_Off`.
 
@@ -196,7 +197,7 @@ fpos<Statetype> operator+(streamoff _Off) const;
 
 См. в [operator!=](#op_neq) пример применения `operator+`.
 
-## <a name="fposoperator"></a><a name="op_add_eq"></a>fpos:: operator + =
+## <a name="fposoperator"></a><a name="op_add_eq"></a> fpos:: operator + =
 
 Увеличивает значение положения в файле.
 
@@ -213,15 +214,15 @@ fpos<Statetype>& operator+=(streamoff _Off);
 
 Позиция в файле.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
-Функция члена добавляет *_Off* к сохраненному объекту смещения элемента, а затем возвращает ** \* this**. Для позиционирования в файле результат будет обычно действителен только для двоичных потоков, в которых не применяется зависящее от состояния кодирование.
+Функция члена добавляет *_Off* к сохраненному объекту смещения элемента, а затем возвращает **\* this**. Для позиционирования в файле результат будет обычно действителен только для двоичных потоков, в которых не применяется зависящее от состояния кодирование.
 
 ### <a name="example"></a>Пример
 
 См. в [operator!=](#op_neq) пример применения `operator+=`.
 
-## <a name="fposoperator-"></a><a name="operator-"></a>fpos:: operator —
+## <a name="fposoperator-"></a><a name="operator-"></a> fpos:: operator —
 
 Уменьшает значение положения в файле.
 
@@ -247,7 +248,7 @@ fpos<Statetype> operator-(streamoff _Off) const;
 
 См. в [operator!=](#op_neq) пример применения `operator-`.
 
-## <a name="fposoperator-"></a><a name="operator-_eq"></a>fpos:: operator-=
+## <a name="fposoperator-"></a><a name="operator-_eq"></a> fpos:: operator-=
 
 Уменьшает значение положения в файле.
 
@@ -264,7 +265,7 @@ fpos<Statetype>& operator-=(streamoff _Off);
 
 Функция-член возвращает значение `fpos(*this) -= _Off`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Для позиционирования в файле результат будет обычно действителен только для двоичных потоков, в которых не применяется зависящее от состояния кодирование.
 
@@ -272,7 +273,7 @@ fpos<Statetype>& operator-=(streamoff _Off);
 
 См. в [operator!=](#op_neq) пример применения `operator-=`.
 
-## <a name="fposoperator"></a><a name="op_eq_eq"></a>fpos:: operator = =
+## <a name="fposoperator"></a><a name="op_eq_eq"></a> fpos:: operator = =
 
 Проверяет индикаторы положений в файлах на равенство.
 
@@ -289,7 +290,7 @@ bool operator==(const fpos<Statetype>& right) const;
 
 **`true`** значение, если индикаторы позиционирования файлов равны; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает значение `(streamoff)*this == (streamoff)right`.
 
@@ -297,7 +298,7 @@ bool operator==(const fpos<Statetype>& right) const;
 
 См. в [operator!=](#op_neq) пример применения `operator+=`.
 
-## <a name="fposoperator-streamoff"></a><a name="op_streamoff"></a>fpos:: operator streamoff
+## <a name="fposoperator-streamoff"></a><a name="op_streamoff"></a> fpos:: operator streamoff
 
 Приводит объект типа `fpos` к объекту типа `streamoff`.
 
@@ -305,7 +306,7 @@ bool operator==(const fpos<Statetype>& right) const;
 operator streamoff() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Функция-член возвращает хранимый объект-член смещения и любое дополнительное смещение, хранимое как часть объекта-члена `fpos_t`.
 
@@ -336,7 +337,7 @@ int main( )
 0
 ```
 
-## <a name="fposseekpos"></a><a name="seekpos"></a>fpos:: seekpos
+## <a name="fposseekpos"></a><a name="seekpos"></a> fpos:: seekpos
 
 Этот метод используется только внутренними механизмами стандартной библиотеки C++. Не вызывайте этот метод в коде.
 
@@ -344,7 +345,7 @@ int main( )
 fpos_t seekpos() const;
 ```
 
-## <a name="fposstate"></a><a name="state"></a>fpos:: State
+## <a name="fposstate"></a><a name="state"></a> fpos:: State
 
 Задает или возвращает состояние преобразования.
 
@@ -363,7 +364,7 @@ void state(Statetype _State);
 
 Состояние преобразования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 Первая функция – член возвращает значение, хранящееся в `St` объекте члена. Вторая функция – член сохраняет *_State* в `St` объекте Member.
 

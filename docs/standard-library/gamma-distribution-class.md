@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: gamma_distribution классе'
 title: Класс gamma_distribution
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - std::gamma_distribution [C++], param_type
 - std::gamma_distribution [C++], param_type
 ms.assetid: 2a6798ac-6152-41d7-8ef6-d684d92f1572
-ms.openlocfilehash: 37b4661cf14fe4302d50557472ce03c120eb2741
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: b010a5fc74f98d27c50377bf6b5f84fb84b7bb75
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88837928"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232100"
 ---
 # <a name="gamma_distribution-class"></a>Класс gamma_distribution
 
@@ -76,7 +77,7 @@ public:
 *РГСЧ*\
 Единый механизм генератора случайных чисел. Возможные типы см. в разделе [\<random>](../standard-library/random.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
 Шаблон класса описывает распределение, которое создает значения заданного пользователем типа с плавающей запятой или тип **`double`** , если он не указан, распределяется в соответствии с гамма-распределением. В следующей таблице представлены ссылки на статьи об отдельных членах.
 
@@ -206,7 +207,7 @@ explicit gamma_distribution(const param_type& parm);
 *ParM*\
 Структура параметров, используемая для формирования распределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительные условия:** `0.0 < alpha` и `0.0 < beta`
 
@@ -241,7 +242,7 @@ struct param_type {
 *Правильно*\
 Экземпляр `param_type` для сравнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Комментарии
 
 **Предварительные условия:** `0.0 < alpha` и `0.0 < beta`
 

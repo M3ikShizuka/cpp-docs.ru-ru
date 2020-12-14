@@ -1,19 +1,20 @@
 ---
+description: 'Дополнительные сведения о: хэш-структура'
 title: Структура hash
 ms.date: 11/04/2016
 f1_keywords:
 - typeindex/std::hash
 ms.assetid: e5a41202-ef3b-45d0-b3a7-4c2dbdc0487a
-ms.openlocfilehash: 4f73d1bfe7f3370d76b39b95f740a4d3a759b908
-ms.sourcegitcommit: 7ecd91d8ce18088a956917cdaf3a3565bd128510
+ms.openlocfilehash: 6fa848be3a10c2a0ae1b325d25f31eb73adb527a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2020
-ms.locfileid: "79426927"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97231775"
 ---
 # <a name="hash-structure"></a>Структура hash
 
-Шаблон класса определяет его метод как возвращающий `val.hash_code()`. Метод определяет функцию hash, используемую для сопоставления значений типа [type_index](../standard-library/type-index-class.md) с распределением значений индекса.
+Шаблон класса определяет метод как возвращаемый `val.hash_code()` . Метод определяет функцию hash, используемую для сопоставления значений типа [type_index](../standard-library/type-index-class.md) с распределением значений индекса.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -27,7 +28,7 @@ template <> struct hash<type_index>
 
 ## <a name="specialized-types"></a>Специализированные типы
 
-### <a name="system_error"></a>\<system_error >
+### <a name="system_error"></a><a name="system_error"></a> \<system_error>
 
 ```cpp
 template <class T> struct hash;

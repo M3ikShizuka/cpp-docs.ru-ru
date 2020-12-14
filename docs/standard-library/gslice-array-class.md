@@ -1,4 +1,5 @@
 ---
+description: 'Дополнительные сведения о: gslice_array классе'
 title: Класс gslice_array
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - gslice_array class
 ms.assetid: ad1b4514-b14a-4baf-a293-d5a8e8674c75
-ms.openlocfilehash: 68ce774128395e941ff80580a02c4ee28a74a4e4
-ms.sourcegitcommit: 590e488e51389066a4da4aa06d32d4c362c23393
+ms.openlocfilehash: 2c3cf29cd80d874265ec86d5c31a10e5c8359b8e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72689597"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97232035"
 ---
 # <a name="gslice_array-class"></a>Класс gslice_array
 
@@ -52,17 +53,17 @@ public:
 }
 ```
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Remarks
 
-Класс описывает объект, хранящий ссылку на объект `va` класса [valarray](../standard-library/valarray-class.md)  **\<Type >** , а также объект `gs` класса [gslice](../standard-library/gslice-class.md) , описывающий последовательность элементов для выбора из объекта `valarray<Type>`.
+Класс описывает объект, хранящий ссылку на объект `va` класса [valarray](../standard-library/valarray-class.md) **\<Type>** , а также объект `gs` класса [gslice](../standard-library/gslice-class.md) , описывающий последовательность элементов для выбора из `valarray<Type>` объекта.
 
-Объект `gslice_array<Type>` создается только путем написания выражения формы, соимеющей [&#91;GS&#93;](../standard-library/valarray-class.md#op_at). Функции-члены класса gslice_array ведут себя так же, как и соответствующие сигнатуры функций, определенные для `valarray<Type>`, за исключением того, что затрагивается только последовательность выбранных элементов.
+`gslice_array<Type>`Объект создается только путем написания выражения вида « [ва»&#91;GS&#93;](../standard-library/valarray-class.md#op_at). Функции-члены класса gslice_array ведут себя как соответствующие сигнатуры функций, определенные для `valarray<Type>` , за исключением того, что затрагивается только последовательность выбранных элементов.
 
 Шаблон класса создается косвенно определенными valarray операциями и не может использоваться непосредственно в программе. Вместо этого используется внутренний вспомогательный шаблон класса, используемый оператором подстрочного индекса:
 
-`gslice_array`\< **Type**> `valarray`\< **Type**>:: `operator[]` ( **constgslice&** ).
+`gslice_array`\< **Type**>`valarray` \< **Type**> :: `operator[]` ( **констгслице&**).
 
-Объект `gslice_array<Type>` создается только путем написания выражения `va[gsl]` формы для `gsl` среза `va` valarray. Функции-члены класса gslice_array ведут себя так же, как и соответствующие сигнатуры функций, определенные для `valarray<Type>`, за исключением того, что затрагивается только последовательность выбранных элементов. Последовательность, управляемая классом gslice_array, определяется тремя параметрами конструктора среза: индексом первого элемента в первом срезе, количеством элементов в каждом срезе и расстояние между элементами в каждом срезе.
+`gslice_array<Type>`Объект создается только путем написания выражения формы `va[gsl]` для среза `gsl` valarray `va` . Функции-члены класса gslice_array ведут себя как соответствующие сигнатуры функций, определенные для `valarray<Type>` , за исключением того, что затрагивается только последовательность выбранных элементов. Последовательность, управляемая классом gslice_array, определяется тремя параметрами конструктора среза: индексом первого элемента в первом срезе, количеством элементов в каждом срезе и расстояние между элементами в каждом срезе.
 
 В следующем примере:
 
@@ -83,10 +84,10 @@ const valarray<size_t> len(lv, 2), str(dv, 2);
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<valarray>
+**Заголовок:**\<valarray>
 
 **Пространство имен:** std
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
-[Потокобезопасность в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)
+[Безопасность потоков в стандартной библиотеке C++](../standard-library/thread-safety-in-the-cpp-standard-library.md)
