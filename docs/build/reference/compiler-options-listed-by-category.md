@@ -5,12 +5,12 @@ ms.date: 07/29/2020
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: beb10404075d9541872ff4780a725e177356a3b8
-ms.sourcegitcommit: f2a135d69a2a8ef1777da60c53d58fe06980c997
+ms.openlocfilehash: bf12948658b5f7e3211c423b5302bc52d1b87729
+ms.sourcegitcommit: 48b897797b3132ae934b1d191e3870c3c2466335
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87520957"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97514565"
 ---
 # <a name="compiler-options-listed-by-category"></a>Параметры компилятора, упорядоченные по категориям
 
@@ -209,7 +209,7 @@ ms.locfileid: "87520957"
 | Параметр | Цель |
 |--|--|
 | [`/experimental:module`](experimental-module.md) | Включает экспериментальную поддержку модулей. |
-| [`/experimental:preprocessor`](experimental-preprocessor.md) | Включает экспериментальную поддержку поддержки препроцессора. |
+| [`/experimental:preprocessor`](experimental-preprocessor.md) | Не рекомендуется. Включает экспериментальную поддержку поддержки препроцессора. Использует [`/Zc:preprocessor`](zc-preprocessor.md) |
 
 ## <a name="deprecated-and-removed-compiler-options"></a>Нерекомендуемые и удаленные параметры компилятора
 
@@ -232,7 +232,7 @@ ms.locfileid: "87520957"
 | [`/Ze`](za-ze-disable-language-extensions.md) | Не рекомендуется. Включает расширения языка. |
 | [`/Zg`](zg-generate-function-prototypes.md) | Удалено в Visual Studio 2015. Создает прототипы функций. |
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Справочник по построению C/C++](c-cpp-building-reference.md)\
 [Параметры компилятора КОМПИЛЯТОРОМ MSVC](compiler-options.md)\
