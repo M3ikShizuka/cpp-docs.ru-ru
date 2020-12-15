@@ -270,6 +270,8 @@
                   href: ../c-language/string-literals-in-primary-expressions.md
                 - name: Выражения в скобках
                   href: ../c-language/expressions-in-parentheses.md
+                - name: Выбор с использованием _Generic (C11)
+                  href: ../c-language/generic_selection.md
             - name: Выражения L-Value и R-Value
               href: ../c-language/l-value-and-r-value-expressions.md
             - name: Постоянные выражения C
