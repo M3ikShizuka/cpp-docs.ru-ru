@@ -2,7 +2,7 @@
 title: Предустановленные макросы
 description: Список и описание предопределенных макросов препроцессора компилятора Microsoft C++.
 ms.custom: update_every_version
-ms.date: 09/11/2020
+ms.date: 12/14/2020
 f1_keywords:
 - _ATL_VER
 - __ATOM__
@@ -240,12 +240,12 @@ no-loc:
 - _WIN64
 - _WINRT_DLL
 - __func__
-ms.openlocfilehash: b5e2b34357456c4937d8ed17dee5661d36b7b0c0
-ms.sourcegitcommit: 25f6d52eb9e5d84bd0218c46372db85572af81da
+ms.openlocfilehash: e4577f7b74c6057df8ebe795ffa0056dbdeae298
+ms.sourcegitcommit: 48b897797b3132ae934b1d191e3870c3c2466335
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94448468"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97514536"
 ---
 # <a name="predefined-macros"></a>Предустановленные макросы
 
@@ -279,7 +279,7 @@ MSVC поддерживает предопределенные макросы п
 
 - `__STDC__` — определяется как 1 только при компиляции в виде C и при указании параметра компилятора  [`/Za`](../build/reference/za-ze-disable-language-extensions.md) . В противном случае — не определяется.
 
-- `__STDC_HOSTED__` определяется как 1, если реализация является *размещенной реализацией* , полностью поддерживающей необходимую стандартную библиотеку. В противном случае определяется как 0.
+- `__STDC_HOSTED__` определяется как 1, если реализация является *размещенной реализацией*, полностью поддерживающей необходимую стандартную библиотеку. В противном случае определяется как 0.
 
 - `__STDC_NO_ATOMICS__` — определяется как 1, если реализация не поддерживает необязательные стандартные атомарные элементы. Реализация MSVC определяет его как 1 при компиляции в виде C, а также одного из вариантов  [`/std`](../build/reference/std-specify-language-standard-version.md)  C11 или C17.
 
@@ -293,7 +293,7 @@ MSVC поддерживает предопределенные макросы п
 
 - `__STDCPP_THREADS__` определяется как 1, только если программа может иметь только один поток выполнения и cкомпилирована как C++. В противном случае — не определяется.
 
-- `__TIME__` — время, в течение которого выполняется преобразование предварительно обработанной единицы трансляции. Время представляет собой литерал строки символов в форме *чч:мм:сс* , который совпадает со временем, возвращаемым функцией [asctime](../c-runtime-library/reference/asctime-wasctime.md) CRT. Этот макрос определяется всегда.
+- `__TIME__` — время, в течение которого выполняется преобразование предварительно обработанной единицы трансляции. Время представляет собой литерал строки символов в форме *чч:мм:сс*, который совпадает со временем, возвращаемым функцией [asctime](../c-runtime-library/reference/asctime-wasctime.md) CRT. Этот макрос определяется всегда.
 
 ## <a name="microsoft-specific-predefined-macros"></a>Предопределенные макросы, предназначенные специально для систем Майкрософт
 
@@ -525,7 +525,9 @@ MSVC поддерживает эти дополнительные предопр
 
 - `__MSVC_RUNTIME_CHECKS` — определяется как 1, если задан один из параметров компилятора  [`/RTC`](../build/reference/rtc-run-time-error-checks.md) . В противном случае — не определяется.
 
-- `_MSVC_TRADITIONAL` — определяется как 0, если задан параметр компилятора  [`/experimental:preprocessor`](../build/reference/experimental-preprocessor.md)  для режима соответствия препроцессора. Определяется как 1 по умолчанию или при заданном параметре компилятора  [`/experimental:preprocessor-`](../build/reference/experimental-preprocessor.md) , указывая на использование традиционного препроцессора. Макрос `_MSVC_TRADITIONAL` и параметр компилятора [ **`/experimental:preprocessor`** (Включить режим соответствия препроцессора)](../build/reference/experimental-preprocessor.md) доступны начиная с Visual Studio 2017 версии 15.8.
+- `_MSVC_TRADITIONAL`:
+    - Доступно начиная с Visual Studio 2017 версии 15.8: определяется как 0, если задан параметр компилятора [`/experimental:preprocessor`](../build/reference/experimental-preprocessor.md) для режима соответствия препроцессора. Определяется как 1 по умолчанию или при заданном параметре компилятора  [`/experimental:preprocessor-`](../build/reference/experimental-preprocessor.md) , указывая на использование традиционного препроцессора.
+    - Доступно начиная с Visual Studio 2019 версии 16.5: определяется как 0, если задан параметр компилятора [`/Zc:preprocessor`](../build/reference/zc-preprocessor.md) для режима соответствия препроцессора. Определяется как 1 по умолчанию или при заданном параметре компилятора `/Zc:preprocessor-`, указывая на использование традиционного препроцессора (по сути, `/Zc:preprocessor` заменяет устаревший `/experimental:preprocessor`).
 
    ```cpp
    #if defined(_MSVC_TRADITIONAL) && _MSVC_TRADITIONAL

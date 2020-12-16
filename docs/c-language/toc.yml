@@ -138,6 +138,8 @@
           href: ../c-language/name-spaces.md
     - name: Объявления и типы
       items:
+        - name: Выравнивание (C11)
+          href: ../c-language/alignment-c.md
         - name: Объявления и типы
           href: ../c-language/declarations-and-types.md
         - name: Общие сведения об объявлениях
