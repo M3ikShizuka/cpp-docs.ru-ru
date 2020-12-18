@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Экспорт из библиотеки DLL с использованием DEF-файлов'
 title: Экспорт из библиотеки DLL с использованием DEF-файлов
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - .def files [C++], exporting from DLLs
 - exporting DLLs [C++], DEF files
 ms.assetid: 9d31eda2-184e-47de-a2ee-a93ebd603f8e
-ms.openlocfilehash: 8fdbb060502f339eb748306eef582d2f296b1f60
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5be5f2c4a5f6db5f1983da940d8a336f02c938f7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229835"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156532"
 ---
 # <a name="exporting-from-a-dll-using-def-files"></a>Экспорт из библиотеки DLL с использованием DEF-файлов
 

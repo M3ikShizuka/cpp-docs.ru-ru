@@ -1,16 +1,17 @@
 ---
+description: 'Подробнее о следующем: Общие сведения об объявлениях'
 title: Общие сведения об объявлениях
 ms.date: 11/04/2016
 helpviewer_keywords:
 - declarations, about declarations
 - type qualifiers
 ms.assetid: fcd2364c-c2a5-4fbf-9027-19dac4144cb5
-ms.openlocfilehash: 066c0fd307c7562d70c57c31dff23960a6305f2c
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 53b8c808771aa3bb455655e6e0c5b06ff1fa9acd
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217081"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256852"
 ---
 # <a name="overview-of-declarations"></a>Общие сведения об объявлениях
 
@@ -18,23 +19,23 @@ ms.locfileid: "87217081"
 
 ## <a name="syntax"></a>Синтаксис
 
-*`declaration`* :<br/>
+*`declaration`*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`declaration-specifiers`* *`attribute-seq`* <sub>необ.</sub> *`init-declarator-list`* <sub>необ.</sub> **`;`**
 
 /\* *`attribute-seq`* <sub>необ.</sub> относится только к системам Microsoft */
 
-*`declaration-specifiers`* :<br/>
+*`declaration-specifiers`*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`storage-class-specifier`* *`declaration-specifiers`* <sub>необ.</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`type-specifier`* *`declaration-specifiers`* <sub>необ.</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`type-qualifier`* *`declaration-specifiers`* <sub>необ.</sub>
 
-*`init-declarator-list`* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`init-declarator`*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`init-declarator-list`* **`,`** *`init-declarator`*
+*`init-declarator-list`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`init-declarator`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`init-declarator-list`* **`,`** *`init-declarator`*
 
-*`init-declarator`* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`declarator`*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`declarator`* **`=`** *`initializer`*
+*`init-declarator`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declarator`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declarator`* **`=`** *`initializer`*
 
 > [!NOTE]
 > Этот синтаксис для *`declaration`* не будет повторяться в следующих разделах. Синтаксис в следующих разделах обычно начинается с нетерминального оператора объявления *`declarator`* .

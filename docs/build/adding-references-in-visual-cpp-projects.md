@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Использование библиотек и компонентов'
 title: Использование библиотек и компонентов в проектах C++
 ms.date: 12/10/2018
 f1_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - Add References Dialog Box (C++)
 - .NET Framework (C++), Add References Dialog Box
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
-ms.openlocfilehash: 37c0120b7879678ad65dfbbffc17bd6d6791fdfe
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a8933afc1d3d9257e4a8b1d80a39c5fa15a9d438
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229913"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163266"
 ---
 # <a name="consuming-libraries-and-components"></a>Использование библиотек и компонентов
 

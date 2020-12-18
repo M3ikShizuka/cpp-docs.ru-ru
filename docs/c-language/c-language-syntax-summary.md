@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Краткие сведения о синтаксисе языка C'
 title: Краткие сведения о синтаксисе языка C
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - notation in C
 - syntax
 ms.assetid: 6edccdb7-453b-4820-a5d8-075c19fb8926
-ms.openlocfilehash: 6fda07d6caf4f1c42248dc362524fd87e34e7218
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 8548e1a835c15e449154d87ed76b3f7be2d26436
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81335031"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300363"
 ---
 # <a name="c-language-syntax-summary"></a>Краткие сведения о синтаксисе языка C
 

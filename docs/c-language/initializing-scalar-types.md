@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Инициализация скалярных типов'
 title: Инициализация скалярных типов
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - automatic storage class
 - types [C], initializing
 ms.assetid: 73c516f5-c3ad-4d56-ab3b-f2a82b621104
-ms.openlocfilehash: 063761abcbb1541893b9cbab463e3d121684d00a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a9294f04f39e6984a2068c5c8f79e48641834236
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211831"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97181830"
 ---
 # <a name="initializing-scalar-types"></a>Инициализация скалярных типов
 
@@ -25,24 +26,24 @@ ms.locfileid: "87211831"
 
 ## <a name="syntax"></a>Синтаксис
 
-*`declaration`* :<br/>
+*`declaration`*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`declaration-specifiers`* *`init-declarator-list`* <sub>необ.</sub> **`;`**
 
-*`declaration-specifiers`* :<br/>
+*`declaration-specifiers`*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`storage-class-specifier`* *`declaration-specifiers`* <sub>необ.</sub> <br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`type-specifier`* *`declaration-specifiers`* <sub>необ.</sub> <br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`type-qualifier`* *`declaration-specifiers`* <sub>необ.</sub>
 
-*`init-declarator-list`* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`init-declarator`*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`init-declarator-list`* **`,`** *`init-declarator`*
+*`init-declarator-list`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`init-declarator`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`init-declarator-list`* **`,`** *`init-declarator`*
 
-*`init-declarator`* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`declarator`*<br/>
+*`init-declarator`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declarator`*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`declarator`* **`=`** *`initializer`*  /\* Для инициализации скалярных типов \*/
 
-*`initializer`* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`assignment-expression`*
+*`initializer`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`assignment-expression`*
 
 Можно инициализировать переменные любого типа при условии соблюдения следующих правил.
 

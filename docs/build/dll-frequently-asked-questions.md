@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Вопросы и ответы по библиотекам DLL'
 title: Вопросы и ответы о библиотеках DLL MFC
 ms.date: 05/06/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - DLLs [C++], frequently asked questions
 - FAQs [C++], DLLs
 ms.assetid: 09dd068e-fc33-414e-82f7-289c70680256
-ms.openlocfilehash: e12817e016376d5b76ec67e8bd10fbd3e85dbdda
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 501ec5cb5c5a8f4993e4f54e5d0434e31a26af9e
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229848"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156714"
 ---
 # <a name="dll-frequently-asked-questions"></a>Вопросы и ответы по библиотекам DLL
 

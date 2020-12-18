@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Добавление универсального класса C++'
 title: Добавление универсального класса C++
 ms.date: 11/09/2018
 f1_keywords:
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - generic classes
 - generic C++ class wizard [C++]
 ms.assetid: e95a5a14-dbed-4edc-8551-344fe48613cb
-ms.openlocfilehash: d5c00a35e375d133fbd3a6ed7fe3591e4b0cd54b
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: ed84f7cf3d1b2e85c407c275b20a56ff06dddc21
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91503125"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97160185"
 ---
 # <a name="add-a-generic-c-class"></a>Добавление универсального класса C++
 

@@ -1,16 +1,17 @@
 ---
+description: 'Подробнее о следующем: Сводка времени существования и видимости'
 title: Сводка времени существования и видимости
 ms.date: 11/04/2016
 helpviewer_keywords:
 - lifetime, and visibility
 - visibility, identifiers
 ms.assetid: ea05a253-7658-482c-9a6b-abd71169c42d
-ms.openlocfilehash: 760973bba1798068b5a19ebeb7a285d241d4ef72
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: a1ce139b4fdc2562862eaef1828ec481685eca60
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220812"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97114485"
 ---
 # <a name="summary-of-lifetime-and-visibility"></a>Сводка времени существования и видимости
 
@@ -24,8 +25,8 @@ ms.locfileid: "87220812"
 ||Объявление переменной|**`extern`**|Global|Оставшаяся часть файла исходного кода, в котором встречается|
 ||Прототип или определение функции|**`static`**|Global|Один файл исходного кода|
 ||Прототип функции|**`extern`**|Global|Оставшаяся часть файла исходного кода|
-|Область действия блока|Объявление переменной|**`extern`**|Global|Блок|
-||Определение переменной|**`static`**|Global|Блок|
+|Область действия блока|Объявление переменной|**`extern`**|Global|Block|
+||Определение переменной|**`static`**|Global|Block|
 ||Определение переменной|**`auto`** или **`register`**|Локальная|Block|
 
 ## <a name="example"></a>Пример

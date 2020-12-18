@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Распространенные проблемы, возникающие при создании построений выпуска'
 title: Распространенные проблемы, возникающие при создании построений выпуска
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -17,12 +18,12 @@ helpviewer_keywords:
 - troubleshooting release builds
 - memory [C++], overwrites
 ms.assetid: 73cbc1f9-3e33-472d-9880-39a8e9977b95
-ms.openlocfilehash: 9bd1cafe40417872d42f2e9e1427e5f2eccad7a7
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7470b87a33b9dc0cb6f7e85b9cfa7b7c1216a936
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81328868"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163097"
 ---
 # <a name="common-problems-when-creating-a-release-build"></a>Распространенные проблемы, возникающие при создании построений выпуска
 

@@ -1,12 +1,13 @@
 ---
+description: 'Подробнее о следующем: Библиотеки'
 title: Библиотеки
 ms.date: 11/18/2018
-ms.openlocfilehash: dc139fea346be8034fa80236844abb2303fa345d
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 5d5d8eec966db4834615a95382cd725670567350
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "80075612"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97207609"
 ---
 # <a name="libraries"></a>Библиотеки
 
@@ -21,6 +22,6 @@ Visual Studio включает в себя следующие библиотек
 
 ## <a name="libraries-for-windows-applications"></a>Библиотеки для приложений Windows
 
-[MFC/ATL](../mfc/mfc-and-atl.md)<br/>
+[MFC / библиотека ATL](../mfc/mfc-and-atl.md)<br/>
 [Параллельные библиотеки](../parallel/parallel-programming-in-visual-cpp.md)<br/>
 [Библиотеки доступа к данным](../data/data-access-in-cpp.md)

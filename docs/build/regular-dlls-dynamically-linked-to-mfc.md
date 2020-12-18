@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Обычные библиотеки DLL MFC, динамически связанные с MFC'
 title: Обычные библиотеки DLL MFC, динамически связанные с MFC
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -8,12 +9,12 @@ helpviewer_keywords:
 - shared DLL versions [C++]
 - dynamically linked DLLs [C++]
 ms.assetid: b4f7ab92-8723-42a5-890e-214f4e29dcd0
-ms.openlocfilehash: 3bfed5f75dab4c501708950fdb99f53c40ec142c
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: a16320427d881e2d37dd2afedc0566a759d59b9a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62315005"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97273869"
 ---
 # <a name="regular-mfc-dlls-dynamically-linked-to-mfc"></a>Обычные библиотеки DLL MFC, динамически связанные с MFC
 

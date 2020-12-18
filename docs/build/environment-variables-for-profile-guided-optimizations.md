@@ -1,15 +1,16 @@
 ---
+description: 'Подробнее о следующем: Переменные среды для профильной оптимизации'
 title: Переменные среды для профильной оптимизации
 ms.date: 03/14/2018
 helpviewer_keywords:
 - profile-guided optimizations, environment variables
 ms.assetid: f95a6d1e-49a4-4802-a144-092026b600a3
-ms.openlocfilehash: 099e57f1ac69223adafe7bec1af4cc3452915e86
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: dd78db781fc19b7ecfd451e01dc046b21bd87d11
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62195277"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156675"
 ---
 # <a name="environment-variables-for-profile-guided-optimizations"></a>Переменные среды для профильной оптимизации
 

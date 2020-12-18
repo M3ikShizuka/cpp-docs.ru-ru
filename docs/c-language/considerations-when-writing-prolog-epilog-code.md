@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Вопросы, связанные с написанием кода пролога и эпилога'
 title: Вопросы, связанные с написанием кода пролога и эпилога
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - __LOCAL_SIZE constant
 - stack, stack frame layout
 ms.assetid: 3b8addec-e809-48e4-b1d0-5bad133bd4b8
-ms.openlocfilehash: e1559c75808a72cd3f9674399bec036cf392b44f
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 65416e915afa95a27658e2c7517da8f2868dfef9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81334584"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97293291"
 ---
 # <a name="considerations-when-writing-prologepilog-code"></a>Вопросы, связанные с написанием кода пролога и эпилога
 

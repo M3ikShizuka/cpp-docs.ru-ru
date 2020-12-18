@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Хранилище базовых типов'
 title: Хранилище базовых типов
 ms.date: 10/02/2019
 helpviewer_keywords:
@@ -21,12 +22,12 @@ helpviewer_keywords:
 - unsigned types [C++], storage
 - data types [C], storage
 ms.assetid: bd1f33c1-c6b9-4558-8a72-afb21aef3318
-ms.openlocfilehash: 973866a912b694510d587df765ac8dd54176638e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: c8ae057de19e04327491fd73e45bcd32c1db7738
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87211675"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97296645"
 ---
 # <a name="storage-of-basic-types"></a>Хранилище базовых типов
 
@@ -36,11 +37,11 @@ ms.locfileid: "87211675"
 
 |Type|Хранилище|
 |----------|-------------|
-|**`char`** , **`unsigned char`** , **`signed char`**|1 байт|
-|**`short`** , **`unsigned short`**|2 байта|
-|**`int`** , **`unsigned int`**|4 байта|
-|**`long`** , **`unsigned long`**|4 байта|
-|**`long long`** , **`unsigned long long`**|8 байт|
+|**`char`**, **`unsigned char`**, **`signed char`**|1 байт|
+|**`short`**, **`unsigned short`**|2 байта|
+|**`int`**, **`unsigned int`**|4 байта|
+|**`long`**, **`unsigned long`**|4 байта|
+|**`long long`**, **`unsigned long long`**|8 байт|
 |**`float`**|4 байта|
 |**`double`**|8 байт|
 |**`long double`**|8 байт|

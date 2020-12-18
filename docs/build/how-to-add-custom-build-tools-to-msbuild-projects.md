@@ -1,15 +1,16 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Добавление настраиваемых инструментов сборки в проекты MSBuild'
 title: Практическое руководство. Добавление настраиваемых инструментов сборки в проекты MSBuild
 ms.date: 11/04/2016
 helpviewer_keywords:
 - 'msbuild (c++), howto: add custom build tools'
 ms.assetid: de03899a-371d-4396-9bf9-34f45a65e909
-ms.openlocfilehash: 812932d9e668ab5ee0eb75eadbf75be3d791cddb
-ms.sourcegitcommit: da32511dd5baebe27451c0458a95f345144bd439
+ms.openlocfilehash: 66ec4a488fd2a089f09ac775d1150300ff662ff2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65220721"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162824"
 ---
 # <a name="how-to-add-custom-build-tools-to-msbuild-projects"></a>Практическое руководство. Добавление настраиваемых инструментов сборки в проекты MSBuild
 

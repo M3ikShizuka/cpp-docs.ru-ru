@@ -1,13 +1,14 @@
 ---
+description: 'Подробнее о следующем: Последовательности символов'
 title: Последовательности символов
 ms.date: 11/04/2016
 ms.assetid: 1e6961a9-150e-4c13-b427-9af4b6a1fb7a
-ms.openlocfilehash: 42fb6b61771feb3eaedfb4ce1e674003df91b263
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: ac5642371389047bd8ce3a83e02dc13802167dc0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62312691"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97305082"
 ---
 # <a name="character-sequences"></a>Последовательности символов
 

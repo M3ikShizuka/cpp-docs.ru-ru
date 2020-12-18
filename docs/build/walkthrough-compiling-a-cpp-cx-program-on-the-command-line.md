@@ -1,13 +1,14 @@
 ---
+description: 'Подробнее о следующем: Пошаговое руководство. Компиляция программы на языке C++/CX из командной строки'
 title: Пошаговое руководство. Компиляция программы на языке C++/CX из командной строки
 ms.date: 04/23/2019
 ms.assetid: 626f5544-69ed-4736-83a9-f11389b371b2
-ms.openlocfilehash: 8dcd27ca8fff826f33ee8bd752cd32f2d44d3691
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 10bee181f347864fdef1703f88ca002a6c7c40b9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88836716"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97198951"
 ---
 # <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>Пошаговое руководство. Компиляция программы на языке C++/CX из командной строки
 

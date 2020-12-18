@@ -1,13 +1,14 @@
 ---
+description: 'Подробнее о следующем: Описатель класса хранения `auto`'
 title: Спецификатор классов хранения auto
 ms.date: 11/04/2016
 ms.assetid: 8e73f57e-aa92-4e41-91ea-5c8ad2a2b332
-ms.openlocfilehash: 7f70ee1944e07ebcbd32b8110eee27fa6631be63
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: a20e599ca7189548f92a78ff378e3b5f9f202b3d
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91509318"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97279872"
 ---
 # <a name="auto-storage-class-specifier"></a>Описатель класса хранения `auto`
 

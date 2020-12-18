@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Пошаговое руководство. Тестирование проекта (C++)'
 title: Пошаговое руководство. Тестирование проекта (C++)
 ms.date: 04/25/2019
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - testing projects
 - projects [C++], testing
 ms.assetid: 88cdd377-c5c8-4201-889d-32f5653ebead
-ms.openlocfilehash: e0422b4f862b5438a313e25dac421d591bbbb9a5
-ms.sourcegitcommit: fd0f8839da5c6a3663798a47c6b0bb6e63b518bd
+ms.openlocfilehash: 0469f6c161689d2638cfb206c91c2530b72cd00b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70273703"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97334768"
 ---
 # <a name="walkthrough-testing-a-project-c"></a>Пошаговое руководство. Тестирование проекта (C++)
 
@@ -55,10 +56,10 @@ ms.locfileid: "70273703"
 
 1. Чтобы остановить программу, в строке меню выберите **Отладка** > **Остановить отладку** или нажмите сочетание клавиш **Shift**+**F5**.
 
-## <a name="next-steps"></a>Следующие шаги
+## <a name="next-steps"></a>Next Steps
 
-**Предыдущая статья:** [Пошаговое руководство: Сборка проекта (C++)](../ide/walkthrough-building-a-project-cpp.md)<br/>
-**Далее:** [Пошаговое руководство: Отладка проекта (C++)](../ide/walkthrough-debugging-a-project-cpp.md)
+**Назад:** [Пошаговое руководство. Сборка проекта (C++)](../ide/walkthrough-building-a-project-cpp.md).<br/>
+**Далее:** [Пошаговое руководство. Отладка проекта (C++)](../ide/walkthrough-debugging-a-project-cpp.md)
 
 ## <a name="see-also"></a>См. также
 

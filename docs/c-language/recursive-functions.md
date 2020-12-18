@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Рекурсивные функции'
 title: Рекурсивные функции
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,12 +8,12 @@ helpviewer_keywords:
 - functions [C], calling recursively
 - recursive function calls
 ms.assetid: 59739040-3081-4006-abbc-9d8423992bce
-ms.openlocfilehash: 8979d386c6fc3415cd50159250db8488cb917cee
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 4ea374b0831fdcfa8c63243c6e59c017856f047f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87199520"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97176214"
 ---
 # <a name="recursive-functions"></a>Рекурсивные функции
 

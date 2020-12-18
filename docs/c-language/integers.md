@@ -1,15 +1,16 @@
 ---
+description: 'Подробнее о следующем: Целые числа'
 title: Целые числа
 ms.date: 11/04/2016
 helpviewer_keywords:
 - integers
 ms.assetid: 4ea91011-5b88-41f8-ab3c-c0bca57c6987
-ms.openlocfilehash: e78436958372db49202e6deaf6fd0840b5bcdd13
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 200aa284d2148b944807455a702c908c4065c01f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64344191"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257216"
 ---
 # <a name="integers"></a>Целые числа
 

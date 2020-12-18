@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Задание пользовательских инструментов сборки'
 title: Задание пользовательских средств построения
 ms.date: 06/05/2018
 f1_keywords:
@@ -15,12 +16,12 @@ helpviewer_keywords:
 - build tools (C++), specifying
 - custom build tools (C++), specifying
 - builds (C++), custom build tools
-ms.openlocfilehash: dbce226b34503a9e8e70b6f19d9aa0c68ef487f3
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: db3162e3f7ad3f007d3f26e1ee2a279e5a132eb9
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62314758"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97275338"
 ---
 # <a name="specify-custom-build-tools"></a>Задание пользовательских инструментов сборки
 

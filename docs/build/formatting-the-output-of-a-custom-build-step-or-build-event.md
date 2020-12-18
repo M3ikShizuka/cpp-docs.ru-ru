@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Форматирование выходных данных этапа настраиваемого построения или события построения'
 title: Форматирование выходных данных этапа настраиваемого построения или события построения
 ms.date: 08/27/2018
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - build steps [C++], output format
 - builds [C++], custom build steps
 ms.assetid: 92ad3e38-24d7-4b89-90e6-5a16f5f998da
-ms.openlocfilehash: 09bf8485a352d6ec2c1297f8a1be508cb7476c31
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: c2631e3c6cbd8e66d88527ff75ff7bcac9869b4f
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80169829"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97156428"
 ---
 # <a name="formatting-the-output-of-a-custom-build-step-or-build-event"></a>Форматирование выходных данных этапа настраиваемого построения или события построения
 

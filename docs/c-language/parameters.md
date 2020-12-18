@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Параметры'
 title: Параметры
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +13,12 @@ helpviewer_keywords:
 - ellipsis (...), parameters
 - '... ellipsis'
 ms.assetid: 8f2b8026-78b5-4e21-86a3-bf0f91f05689
-ms.openlocfilehash: 57648747bbb50ffe46b199a03563757c331f088a
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: b68cd5934e597e486b00f2772e913f627e584ecb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229575"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97256826"
 ---
 # <a name="parameters"></a>Параметры
 
@@ -25,12 +26,12 @@ ms.locfileid: "87229575"
 
 ## <a name="syntax"></a>Синтаксис
 
-*`function-definition`* :<br/>
+*`function-definition`*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`declaration-specifiers`* <sub>необ.</sub> *`attribute-seq`* <sub>необ.</sub> *`declarator`* *`declaration-list`* <sub>необ.</sub> *`compound-statement`*
 
 /\* *`attribute-seq`* используется только в системах Майкрософт \*/
 
-*`declarator`* :<br/>
+*`declarator`*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`pointer`* <sub>необ.</sub> *`direct-declarator`*
 
 *`direct-declarator`* : /\* Оператор объявления функции \*/<br/>
@@ -38,15 +39,15 @@ ms.locfileid: "87229575"
 &nbsp;&nbsp;&nbsp;&nbsp; *`direct-declarator`*  **`(`**  *`identifier-list`* <sub>необ.</sub> **`)`**  /\* Оператор объявления старого стиля \*/
 
 *`parameter-type-list`* : /\* Список параметров \*/<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`parameter-list`* <br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`parameter-list`* **`, ...`**
+&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-list`* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-list`* **`, ...`**
 
-*`parameter-list`* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`parameter-declaration`*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`parameter-list`* **`,`**  *`parameter-declaration`*
+*`parameter-list`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-declaration`*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`parameter-list`* **`,`**  *`parameter-declaration`*
 
-*`parameter-declaration`* :<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; *`declaration-specifiers`* *`declarator`*<br/>
+*`parameter-declaration`*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*`declaration-specifiers`* *`declarator`*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; *`declaration-specifiers`* *`abstract-declarator`* <sub>необ.</sub>
 
 *`parameter-type-list`* содержит последовательность объявлений параметров, разделенных запятыми. Форма каждого параметра в списке параметров выглядит следующим образом.

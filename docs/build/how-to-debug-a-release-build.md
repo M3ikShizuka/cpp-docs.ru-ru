@@ -1,16 +1,17 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Отладка сборки выпуска'
 title: Практическое руководство. Отладка сборки выпуска
 ms.date: 11/04/2016
 helpviewer_keywords:
 - debugging [C++], release builds
 - release builds, debugging
 ms.assetid: d333e4d1-4e6c-4384-84a9-cb549702da25
-ms.openlocfilehash: 6d93fac4e980085c322acb55e6f8758e6cea0a00
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: bbe70a534a9d953ea1b739dba3a32296c7893930
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188968"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162707"
 ---
 # <a name="how-to-debug-a-release-build"></a>Практическое руководство. Отладка сборки выпуска
 

@@ -1,13 +1,14 @@
 ---
+description: 'Подробнее о следующем: Набор символов ASCII'
 title: Набор символов ASCII
 ms.date: 11/04/2016
 ms.assetid: 2390fd40-5fe2-4410-a06c-ccc0fea2709b
-ms.openlocfilehash: 264d1f5a0f10d77a2c7c1dcc945ee6e508c70789
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: 7b4d9eb442ab3bafacf8982595eb990a23617554
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81335085"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97279979"
 ---
 # <a name="ascii-character-set"></a>Набор символов ASCII
 

@@ -1,16 +1,17 @@
 ---
+description: 'Подробнее о следующем: Выделение обнуленной памяти'
 title: Выделение обнуленной памяти
 ms.date: 11/04/2016
 helpviewer_keywords:
 - memory allocation, zero memory
 - zero memory
 ms.assetid: 768f2ab9-83a1-4887-8eb5-c094c18489a8
-ms.openlocfilehash: 40f21c0fa9a2a4068cb2592c49ccefed82176a35
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7971d9e097d00607af2acf4590ff3daaf67f7127
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62313497"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280148"
 ---
 # <a name="allocating-zero-memory"></a>Выделение обнуленной памяти
 

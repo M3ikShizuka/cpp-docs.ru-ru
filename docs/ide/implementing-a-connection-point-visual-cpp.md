@@ -1,16 +1,17 @@
 ---
+description: 'Подробнее о следующем: Реализация точки подключения'
 title: Реализация точки подключения
 ms.date: 05/14/2019
 helpviewer_keywords:
 - connection points [C++], implementing
 - implement connection point wizard [C++]
 ms.assetid: 5b37e4f9-73c9-4bef-b26d-365bc0662260
-ms.openlocfilehash: 8a75a5fbbabd20f4591e3a119c175d68cdfb1f90
-ms.sourcegitcommit: fc1de63a39f7fcbfe2234e3f372b5e1c6a286087
+ms.openlocfilehash: bee04d28036ca5a2dfb0f4913adf39f1fdcca565
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "66182604"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97281162"
 ---
 # <a name="implement-a-connection-point"></a>Реализация точки подключения
 
@@ -34,7 +35,7 @@ ms.locfileid: "66182604"
 
 1. Выберите реализуемые интерфейсы точки подключения в соответствующих библиотеках типов и нажмите **Готово**.
 
-1. В представлении классов просмотрите прокси-классы, созданные для каждой точки подключения. Эти классы отображаются в виде CProxy*имя_интерфейса*\<T> и являются производными от [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md).
+1. В представлении классов просмотрите прокси-классы, созданные для каждой точки подключения. Эти классы отображаются в виде CProxy *имя_интерфейса*\<T> и являются производными от [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md).
 
 1. Дважды щелкните класс точки подключения, чтобы отобразить определение класса точки подключения.
 
@@ -53,7 +54,7 @@ ms.locfileid: "66182604"
 
    - Когда вы реализуете точку подключения для другого интерфейса, определение включает в себя методы этого интерфейса с префиксом `Fire_`.
 
-## <a name="in-this-section"></a>Содержание раздела
+## <a name="in-this-section"></a>В этом разделе
 
 - [Мастер реализации точек подключения](#implement-connection-point-wizard)
 

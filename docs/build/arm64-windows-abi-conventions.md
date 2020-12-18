@@ -1,12 +1,13 @@
 ---
+description: 'Подробнее о следующем: Общие сведения о соглашениях ABI ARM64'
 title: Общие сведения о соглашениях ABI ARM64
 ms.date: 03/27/2019
-ms.openlocfilehash: bfe55513ffd24175dbe62efc6d5afcfd82f71e4c
-ms.sourcegitcommit: 7f378314c5692d897ead10b7f6c96d4cb2abd266
+ms.openlocfilehash: fbdb709eaa960446bb76712962dbbc3bfb66d38a
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88972677"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97157117"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>Общие сведения о соглашениях ABI ARM64
 

@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Набор символов исполнения'
 title: Набор символов исполнения
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - character sets [C++], execution and source
 - source character set [C++]
 ms.assetid: 39ffbb55-11c1-4b6d-a105-327c0fceb449
-ms.openlocfilehash: c03bf1d39fd1905fac7d2750f16f20d175446070
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 2d3918ad528932a7c80aa45241b821a0fd766472
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62233864"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97196494"
 ---
 # <a name="execution-character-set"></a>Набор символов исполнения
 

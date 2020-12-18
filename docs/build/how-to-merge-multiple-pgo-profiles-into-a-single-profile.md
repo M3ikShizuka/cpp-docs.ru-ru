@@ -1,16 +1,17 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Слияние нескольких профилей для профильной оптимизации'
 title: Практическое руководство. Слияние нескольких профилей для профильной оптимизации
 ms.date: 03/14/2018
 helpviewer_keywords:
 - merging profiles
 - profile-guided optimizations, merging profiles
 ms.assetid: aab686b5-59dd-40d1-a04b-5064690f65a6
-ms.openlocfilehash: 451c0f30a271f5dce3974e172766da4a23340b93
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 9549b9a26b0c16300c3750159f2c18c74dd293b0
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62188877"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97162694"
 ---
 # <a name="how-to-merge-multiple-pgo-profiles-into-a-single-profile"></a>Практическое руководство. Слияние нескольких профилей для профильной оптимизации
 

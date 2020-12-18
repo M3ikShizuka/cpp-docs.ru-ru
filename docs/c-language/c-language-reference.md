@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Справочник по языку C'
 title: Справочник по языку C
 ms.custom: index-page
 ms.date: 11/04/2016
@@ -10,12 +11,12 @@ helpviewer_keywords:
 - Visual C, language reference
 - language reference, C
 ms.assetid: 3a306c30-8dd2-435b-bd1c-c143b02c0872
-ms.openlocfilehash: 9c5417ff3ced770c8dc8a70932d70d9d96b4331d
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 7daff57aad3200be74cf2507d2bd7205c41064f2
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62326668"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97300386"
 ---
 # <a name="c-language-reference"></a>Справочник по языку C
 

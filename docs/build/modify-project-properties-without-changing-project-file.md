@@ -1,14 +1,15 @@
 ---
+description: 'Подробнее о следующем: Практическое руководство. Изменение свойств и целевых объектов проекта C++ без изменения файла проекта'
 title: Практическое руководство. Изменение свойств и целевых объектов проекта C++ без изменения файла проекта
 ms.date: 11/28/2018
 helpviewer_keywords:
 - project properties [C++], modifying outside project file
-ms.openlocfilehash: a1ba5647542f69cfc7748986e512e74401bfc404
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 91f71ccf7764307fef174d31a63583d6a3ce2aeb
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833365"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97179867"
 ---
 # <a name="how-to-modify-c-project-properties-and-targets-without-changing-the-project-file"></a>Практическое руководство. Изменение свойств и целевых объектов проекта C++ без изменения файла проекта
 

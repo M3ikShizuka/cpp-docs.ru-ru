@@ -1,4 +1,5 @@
 ---
+description: Подробнее об описателе класса хранения static
 title: Спецификатор класса хранения static
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +7,12 @@ helpviewer_keywords:
 - storage classes, static
 - static storage class specifiers
 ms.assetid: 9bce361e-919b-46b9-8148-40d7ab0eb024
-ms.openlocfilehash: e84e2745c6077f038f47295119936a1ad6431bdd
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: da7ca4ea71b3e450da986ec175adcaf08852d81b
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229497"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97168752"
 ---
 # <a name="static-storage-class-specifier"></a>Спецификатор класса хранения static
 

@@ -1,13 +1,14 @@
 ---
+description: 'Подробнее о следующем: Время жизни, область, видимость и компоновка'
 title: Время жизни, область, видимость и компоновка
 ms.date: 11/04/2016
 ms.assetid: c7678bb8-9d79-40ed-b352-abab876f0b17
-ms.openlocfilehash: d7229d264f268914669b129428e99a430de55bdd
-ms.sourcegitcommit: c6f8e6c2daec40ff4effd8ca99a7014a3b41ef33
+ms.openlocfilehash: 56af40edf4e4b5310faa36bc6e4dd32e2417cfb3
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64343489"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97257203"
 ---
 # <a name="lifetime-scope-visibility-and-linkage"></a>Время жизни, область, видимость и компоновка
 

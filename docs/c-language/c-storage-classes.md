@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Классы хранения в C'
 title: Классы хранения в C
 ms.date: 08/31/2018
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - storage class specifiers, C storage classes
 - storage duration
 ms.assetid: 893fb929-f7a9-43dc-a0b3-29cb1ef845c1
-ms.openlocfilehash: 4f793e8485628faf0a80445ce0414835e3b71d1f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 000cb06047a948de413dc9bd55d5ec992459d11c
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87217172"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97214247"
 ---
 # <a name="c-storage-classes"></a>Классы хранения в C
 
@@ -31,7 +32,7 @@ C предоставляет следующие описатели класса 
 &nbsp;&nbsp;&nbsp;&nbsp; **`register`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; **`static`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; **`extern`**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp; **`typedef`**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**`typedef`**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp; **`__declspec (`** *extended-decl-modifier-seq* **`)`**  /\* Относится только к системам Майкрософт \*/
 
 За исключением **`__declspec`** , в составе *declaration-specifier* в объявлении можно использовать только один описатель *storage-class-specifier*. Если нет спецификации класса хранения, объявления в блоке создают автоматические объекты.

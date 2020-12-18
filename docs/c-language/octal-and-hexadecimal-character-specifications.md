@@ -1,16 +1,17 @@
 ---
+description: 'Подробнее о следующем: Спецификации восьмеричных и шестнадцатеричных символов'
 title: Спецификации восьмеричных и шестнадцатеричных символов
 ms.date: 11/04/2016
 helpviewer_keywords:
 - octal characters
 - hexadecimal characters
 ms.assetid: 9264f3ec-46b8-41a5-b21a-8f7ed0a11871
-ms.openlocfilehash: bcd6eb84503b80b1e38be5d134e7506a0f490891
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 91646244a30cb3ec5ad965914f1bee855fba05d7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229588"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97243280"
 ---
 # <a name="octal-and-hexadecimal-character-specifications"></a>Спецификации восьмеричных и шестнадцатеричных символов
 

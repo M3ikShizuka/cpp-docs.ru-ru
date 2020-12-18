@@ -1,4 +1,5 @@
 ---
+description: 'Подробнее о следующем: Аргументы'
 title: Аргументы
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -9,12 +10,12 @@ helpviewer_keywords:
 - function arguments
 - function calls, arguments
 ms.assetid: 14cf0389-2265-41f0-9a96-f2223eb406ca
-ms.openlocfilehash: e1c88034044c74a542384873454f993b6bce3244
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 02c8d7e9f6f4ef09bcfdce11c3bd0d88c21ab141
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87232668"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97280083"
 ---
 # <a name="arguments"></a>Аргументы
 

@@ -1,15 +1,16 @@
 ---
+description: 'Подробнее о следующем: Хранение строковых литералов'
 title: Хранение строковых литералов
 ms.date: 11/04/2016
 helpviewer_keywords:
 - string literals, storage
 ms.assetid: ba5e4d2c-d456-44b3-a8ca-354af547ac50
-ms.openlocfilehash: 0d505479f0844122826a2f07b57eaa69f33932e8
-ms.sourcegitcommit: 0ab61bc3d2b6cfbd52a16c6ab2b97a8ea1864f12
+ms.openlocfilehash: 5139d480af6b808b5b2e008500794d95d63a9980
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62157868"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97205269"
 ---
 # <a name="storage-of-string-literals"></a>Хранение строковых литералов
 

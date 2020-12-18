@@ -1,15 +1,16 @@
 ---
+description: 'Подробнее о следующем: Построение изолированных приложений C/C++'
 title: Построение изолированных приложений C/C++
 ms.date: 05/06/2019
 helpviewer_keywords:
 - isolated applications [C++]
 ms.assetid: 8a2fe4fa-0489-433e-bfc6-495844d8d73a
-ms.openlocfilehash: fbb553e3514ac3c32ee1e1f276dcb3e43d3a192e
-ms.sourcegitcommit: fcb48824f9ca24b1f8bd37d647a4d592de1cc925
+ms.openlocfilehash: a8cd99032c27d21efaec7f213c470017e52777c7
+ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69493347"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97163214"
 ---
 # <a name="building-cc-isolated-applications"></a>Построение изолированных приложений C/C++
 
