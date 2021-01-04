@@ -38,7 +38,7 @@
       href: ../code-quality/intrinsic-functions.md
     - name: Рекомендации и примеры (SAL)
       href: ../code-quality/best-practices-and-examples-sal.md
-- name: Добавление дополнительных сведений о коде с помощью _analysis_assume
+- name: Добавление дополнительных сведений о коде с помощью _Analysis_assume_
   href: ../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md
 - name: 'Предупреждения, связанные со средствами проверки C++ Core Guidelines'
   items:
