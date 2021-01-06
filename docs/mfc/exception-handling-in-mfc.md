@@ -34,12 +34,12 @@ helpviewer_keywords:
 - function calls [MFC], results
 - out-of-memory exceptions [MFC]
 ms.assetid: 0926627d-2ba7-44a6-babe-d851a4a2517c
-ms.openlocfilehash: 15b0a054d3b1c0353c60c1c8dda03c9e704c077e
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 097f2bf635526769253ef81d5381be82605ab118
+ms.sourcegitcommit: 6183207b11575d7b44ebd7c18918e916a0d8c63d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97290756"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97951558"
 ---
 # <a name="exception-handling-in-mfc"></a>Обработка исключений в MFC
 
@@ -131,5 +131,4 @@ ms.locfileid: "97290756"
 
 ## <a name="see-also"></a>См. также раздел
 
-[Современные рекомендации по C++ для исключений и обработки ошибок](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
-[Инструкции. Создание собственных классов пользовательских исключений](https://go.microsoft.com/fwlink/p/?linkid=128045)
+[Современные рекомендации по C++ для исключений и обработки ошибок](../cpp/errors-and-exception-handling-modern-cpp.md)

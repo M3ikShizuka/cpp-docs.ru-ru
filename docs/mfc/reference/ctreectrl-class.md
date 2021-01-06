@@ -163,12 +163,12 @@ helpviewer_keywords:
 - CTreeCtrl [MFC], SortChildren
 - CTreeCtrl [MFC], SortChildrenCB
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
-ms.openlocfilehash: e126863bebcc3cb8f878a8ece41ee8d9385c0afe
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 8b5c31138601c96ca7af530dbfb1d3517e3998a8
+ms.sourcegitcommit: 6183207b11575d7b44ebd7c18918e916a0d8c63d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97345021"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97951530"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl Class
 
@@ -1503,7 +1503,7 @@ HTREEITEM MapAccIdToItem(UINT uAccId) const;
 
 ### <a name="remarks"></a>Комментарии
 
-Специальные возможности — это приложения, которые помогают людям с ограниченными возможностями использовать компьютеры. Идентификатор доступа используется `IAccessible` интерфейсом для уникальной настройки элемента в окне. Дополнительные сведения об идентификаторах специальных возможностей см. в разделе "о поддержке Active Accessibility" в [сети разработчиков Майкрософт](https://go.microsoft.com/fwlink/p/?linkid=56322).
+Специальные возможности — это приложения, которые помогают людям с ограниченными возможностями использовать компьютеры. Идентификатор доступа используется `IAccessible` интерфейсом для уникальной настройки элемента в окне. Дополнительные сведения об `IAccessible` API см. в разделе [Microsoft Active Accessibility](/windows/win32/winauto/microsoft-active-accessibility).
 
 Этот метод отправляет [TVM_MAPACCIDTOHTREEITEM](/windows/win32/Controls/tvm-mapaccidtohtreeitem) сообщение, описанное в Windows SDK.
 
@@ -1538,7 +1538,7 @@ UINT MapItemToAccID(HTREEITEM hItem) const;
 
 ### <a name="remarks"></a>Комментарии
 
-Специальные возможности — это приложения, которые помогают людям с ограниченными возможностями использовать компьютеры. Идентификатор доступа используется `IAccessible` интерфейсом для уникальной настройки элемента в окне. Дополнительные сведения об идентификаторах специальных возможностей см. в разделе "о поддержке Active Accessibility" в [сети разработчиков Майкрософт](https://go.microsoft.com/fwlink/p/?linkid=56322).
+Специальные возможности — это приложения, которые помогают людям с ограниченными возможностями использовать компьютеры. Идентификатор доступа используется `IAccessible` интерфейсом для уникальной настройки элемента в окне. Дополнительные сведения об `IAccessible` API см. в разделе [Microsoft Active Accessibility](/windows/win32/winauto/microsoft-active-accessibility).
 
 Этот метод отправляет [TVM_MAPHTREEITEMTOACCID](/windows/win32/Controls/tvm-maphtreeitemtoaccid) сообщение, описанное в Windows SDK.
 
@@ -2281,7 +2281,7 @@ void ShowInfoTip(HTREEITEM hItem);
 
 ### <a name="remarks"></a>Комментарии
 
-Дополнительные сведения о различиях между подсказками и инфотипс см. в разделе "всплывающие подсказки и Инфотипс" в [сети разработчиков Microsoft](https://go.microsoft.com/fwlink/p/?linkid=56322).
+Дополнительные сведения о разнице между подсказками и инфотипс см. в разделе [подсказки и инфотипс](/windows/win32/uxguide/ctrl-tooltips-and-infotips).
 
 Этот метод отправляет [TVM_SHOWINFOTIP](/windows/win32/Controls/tvm-showinfotip) сообщение, описанное в Windows SDK.
 

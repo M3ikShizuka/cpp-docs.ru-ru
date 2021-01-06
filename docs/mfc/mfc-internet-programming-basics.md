@@ -17,12 +17,12 @@ helpviewer_keywords:
 - Internet content [MFC]
 - WinInet classes [MFC]
 ms.assetid: 6df2dfd0-6e3f-4587-9d01-2a32f00f8a6f
-ms.openlocfilehash: 8774f2ec77b9e721733edccdcd0a83e96cb62fe0
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 0c38a5eba3a49791c472d5da0f733a18422058ba
+ms.sourcegitcommit: 6183207b11575d7b44ebd7c18918e916a0d8c63d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97115447"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97951454"
 ---
 # <a name="mfc-internet-programming-basics"></a>Основы программирования для интернет-решений MFC
 
@@ -35,7 +35,7 @@ ms.locfileid: "97115447"
 
 MFC предоставляет классы, поддерживающие Интернет. Для записи элементов ActiveX и активных документов можно использовать [COleControl](reference/colecontrol-class.md) и [кдокобжектсервер](reference/cdocobjectserver-class.md) , а также связанные классы MFC. Классы MFC, такие как [Цинтернетсессион](reference/cinternetsession-class.md), [кфтпконнектион](reference/cftpconnection-class.md)и [касинкмоникерфиле](reference/casyncmonikerfile-class.md) , можно использовать для получения файлов и информации с помощью Интернет-протоколов, таких как FTP, HTTP и gopher.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 
 - [Классы MFC, связанные с Интернетом](internet-related-mfc-classes.md)
 
@@ -73,7 +73,7 @@ MFC предоставляет классы, поддерживающие Инт
 
 Дополнительные сведения о Microsoft Internet Technology см. в разделе [Networking and Internet](/windows/win32/networking).
 
-[Консорциум W3C (W3C)](https://go.microsoft.com/fwlink/p/?linkid=37125) публикует спецификации для HTML, HTTP, CGI и других Интернет-технологий.
+[Консорциум W3C (W3C)](https://www.w3.org/) публикует спецификации для HTML, HTTP, CGI и других Интернет-технологий.
 
 ## <a name="more-internet-help"></a><a name="_core_more_internet_help"></a> Дополнительная справка в Интернете
 

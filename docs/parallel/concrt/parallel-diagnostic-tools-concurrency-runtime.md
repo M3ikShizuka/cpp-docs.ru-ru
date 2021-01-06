@@ -5,12 +5,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Parallel Diagnostic Tools [Concurrency Runtime]
 ms.assetid: b1a3f1d2-f5df-4f29-852e-906b3d8341fc
-ms.openlocfilehash: 44d885e8e6c7529bd15fa0aa2e7930773400361f
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: ac6afbbc2bfef3793e9685a7c9e1054b7d677bd8
+ms.sourcegitcommit: 6183207b11575d7b44ebd7c18918e916a0d8c63d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97172431"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97951529"
 ---
 # <a name="parallel-diagnostic-tools-concurrency-runtime"></a>Средства диагностики параллельного выполнения (среда выполнения с параллелизмом)
 
@@ -28,7 +28,7 @@ Visual Studio предоставляет расширенную поддержк
 
 Среда выполнения с параллелизмом использует [трассировку событий Windows](/windows/win32/ETW/event-tracing-portal) (ETW) для уведомления средств инструментирования, таких как профилировщики, при возникновении различных событий. Эти события включают в себя, когда планировщик активируется или деактивируется, когда контекст запускается, завершается, блокируется, разблокируется или выдается, а также при начале или окончании параллельного алгоритма.
 
-Такие средства, как [Визуализатор параллелизма](/visualstudio/profiling/concurrency-visualizer) , используют эту функцию. Таким образом, обычно не требуется работать с этими событиями напрямую. Однако эти события полезны при разработке пользовательского профилировщика или при использовании таких средств трассировки событий, как [Xperf](https://go.microsoft.com/fwlink/p/?linkid=160628).
+Такие средства, как [Визуализатор параллелизма](/visualstudio/profiling/concurrency-visualizer) , используют эту функцию. Таким образом, обычно не требуется работать с этими событиями напрямую. Однако эти события полезны при разработке пользовательского профилировщика или при использовании таких средств трассировки событий, как [Windows Performance Toolkit](/windows-hardware/test/wpt/).
 
 Среда выполнения с параллелизмом вызывает эти события только при включенной трассировке. Вызовите функцию [Concurrency:: енаблетраЦинг](reference/concurrency-namespace-functions.md#enabletracing) , чтобы включить трассировку событий и функцию [Concurrency::D исаблетраЦинг](reference/concurrency-namespace-functions.md#disabletracing) , чтобы отключить трассировку.
 
