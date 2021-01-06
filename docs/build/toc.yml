@@ -68,7 +68,18 @@
     - name: Справочник по предопределенной схеме конфигурации CMake
       href: ../build/cmake-predefined-configuration-reference.md
 - name: "vcpkg: Диспетчер пакетов для\_C++"
-  href: ../build/vcpkg.md
+  expanded: false
+  items:
+    - name: "vcpkg: Диспетчер пакетов для\_C++"
+      href: ../build/vcpkg.md
+    - name: Установка vcpkg
+      href: ../build/install-vcpkg.md
+    - name: Интеграция vcpkg
+      href: ../build/integrate-vcpkg.md
+    - name: Работа с библиотеками через vcpkg
+      href: ../build/manage-libraries-with-vcpkg.md
+    - name: Справочник по командной строке vcpkg
+      href: ../build/vcpkg-command-line-reference.md
 - name: Аналитика сборки C++
   href: ../build-insights/get-started-with-cpp-build-insights.md
 - name: Файлы предкомпилированных заголовков
