@@ -1,7 +1,7 @@
 ---
 description: Дополнительные сведения о:/ZP (выравнивание членов структуры)
 title: /Zp (Выравнивание члена структуры)
-ms.date: 04/04/2019
+ms.date: 01/08/2021
 f1_keywords:
 - /zp
 - VC.Project.VCCLCompilerTool.StructMemberAlignment
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - /Zp compiler option [C++]
 - -Zp compiler option [C++]
 ms.assetid: 5242f656-ed9b-48a3-bc73-cfcf3ed2520f
-ms.openlocfilehash: b2029ebded53bcae1b44b5cd72bf59494e58ec4b
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 8d29c442726aff9503a42378fce6a7b8b09526ed
+ms.sourcegitcommit: 14d6ae0d527d05d153e26463d4cd5ada0f43e864
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97224313"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98104782"
 ---
 # <a name="zp-struct-member-alignment"></a>/Zp (Выравнивание члена структуры)
 
@@ -44,9 +44,9 @@ ms.locfileid: "97224313"
 Не используйте этот параметр, если не заданы конкретные требования к выравниванию.
 
 > [!WARNING]
-> Заголовки C++ в наборе Windows SDK и предполагают **`/Zp8`** внутреннюю упаковку. Повреждение памяти может возникать, если **`/Zp`** параметр изменяется в заголовке Windows SDK. На заголовки не влияют никакие **`/Zp`** Параметры, заданные в командной строке.
+> Заголовки C/C++ в Windows SDK предполагают **`/Zp8`** внутреннюю упаковку. Не изменяйте настройку по умолчанию при включении заголовков Windows SDK с помощью **`/Zp`** в командной строке или с помощью `#pragma pack` . В противном случае приложение может вызвать повреждение памяти во время выполнения.
 
-Также можно использовать [`pack`](../../preprocessor/pack.md) для управления упаковкой структуры. Дополнительные сведения о выравнивании см. в разделах:
+[ `pack` Директиву pragma](../../preprocessor/pack.md) можно также использовать для управления упаковкой структуры. Дополнительные сведения о выравнивании см. в разделах:
 
 - [`align`](../../cpp/align-cpp.md)
 
@@ -68,7 +68,7 @@ ms.locfileid: "97224313"
 
 - См. раздел <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.StructMemberAlignment%2A>.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 [Параметры компилятора КОМПИЛЯТОРОМ MSVC](compiler-options.md) \
 [Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)

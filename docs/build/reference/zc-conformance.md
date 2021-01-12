@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: 13e06cd75f1ee684c2ee1ad6239aeb77b805675e
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 15027182d632c1076c78e2e8a1335e1059ac7e3b
+ms.sourcegitcommit: 14d6ae0d527d05d153e26463d4cd5ada0f43e864
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041527"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98104769"
 ---
 # <a name="zc-conformance"></a>`/Zc` Соответствия
 
@@ -33,10 +33,10 @@ ms.locfileid: "90041527"
 |--|--|
 | [`/Zc:alignedNew`](zc-alignednew.md) | Включить динамическое выделение в C++ 17 по рассогласованию (включено по умолчанию в C++ 17). |
 | [`/Zc:auto`](zc-auto-deduce-variable-type.md) | Применение нового стандартного значения C++ для **`auto`** (включено по умолчанию). |
-| [`/Zc__cplusplus`](zc-cplusplus.md) | Включите `__cplusplus` макрос, чтобы сообщить о поддерживаемом стандарте (отключено по умолчанию). |
+| [`/Zc:__cplusplus`](zc-cplusplus.md) | Включите `__cplusplus` макрос, чтобы сообщить о поддерживаемом стандарте (отключено по умолчанию). |
 | [`/Zc:externConstexpr`](zc-externconstexpr.md) | Включить внешнюю компоновку для **`constexpr`** переменных (по умолчанию отключено). |
 | [`/Zc:forScope`](zc-forscope-force-conformance-in-for-loop-scope.md) | Применять стандартные **`for`** правила области C++ (по умолчанию включено). |
-| [`/ZcimplicitNoexcept`](zc-implicitnoexcept-implicit-exception-specifiers.md) | Включите неявное значение **`noexcept`** в обязательных функциях (включено по умолчанию). |
+| [`/Zc:implicitNoexcept`](zc-implicitnoexcept-implicit-exception-specifiers.md) | Включите неявное значение **`noexcept`** в обязательных функциях (включено по умолчанию). |
 | [`/Zc:inline`](zc-inline-remove-unreferenced-comdat.md) | Удалите неиспользуемую функцию или данные, если они имеют значение COMDAT или только внутренние компоновки (отключено по умолчанию). |
 | [`/Zc:noexceptTypes`](zc-noexcepttypes.md) | Применение правил C++ 17 **`noexcept`** (включено по умолчанию в c++ 17 или более поздней версии). |
 | [`/Zc:preprocessor`](zc-preprocessor.md) | Используйте новый предпроцессорный препроцессор (по умолчанию отключен, за исключением C11/C17). |
@@ -53,7 +53,7 @@ ms.locfileid: "90041527"
 
 Дополнительные сведения о вопросах соответствия в Visual C++ см. в статье [Nonstandard Behavior](../../cpp/nonstandard-behavior.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также статью
 
 [Параметры компилятора MSVC](compiler-options.md)<br/>
-[Синтаксис командной строки компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)
+[Синтаксис Command-Line компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)
