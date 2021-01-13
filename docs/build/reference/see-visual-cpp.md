@@ -4,17 +4,16 @@ title: '&lt;см. раздел> (комментарии к документац�
 ms.date: 11/04/2016
 f1_keywords:
 - <see>
-- see
 helpviewer_keywords:
 - <see> C++ XML tag
 - see C++ XML tag
 ms.assetid: 20ef66f4-b278-45cf-8613-63919edf5720
-ms.openlocfilehash: b4f8f9a2312a3db1ce2840209668b7b23837ab31
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: c1de0ec23854d159d661cd1b62df97169eab7317
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97224742"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126225"
 ---
 # <a name="ltseegt"></a>&lt;see&gt;
 
@@ -33,7 +32,7 @@ ms.locfileid: "97224742"
 
 Компилятор проверяет, существует ли элемент кода, и разрешает `member` в имя элемента в выходных XML-данных.  Если компилятору не удается найти `member`, он выдает предупреждение.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Скомпилируйте с [/doc](doc-process-documentation-comments-c-cpp.md) для обработки комментариев документации в файл.
 

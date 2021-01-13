@@ -3,17 +3,16 @@ description: 'Дополнительные сведения: &lt; огранич
 title: '&lt;limits&gt;'
 ms.date: 11/04/2016
 f1_keywords:
-- limits/std::<limits>
 - <limits>
 helpviewer_keywords:
 - limits header
 ms.assetid: e07d6379-5b00-4a3d-a789-40d41538b59e
-ms.openlocfilehash: 5347a5035e3650a2685d3be9166b41506fc14b1f
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 23601b4b7f7ea06071a6b1f5fbd87ce0a0babce3
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97312843"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126394"
 ---
 # <a name="ltlimitsgt"></a>&lt;limits&gt;
 
@@ -25,7 +24,7 @@ ms.locfileid: "97312843"
 
 **Пространство имен:** std
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Явные специализации `numeric_limits` класса описывают множество свойств фундаментальных типов, включая символы, целые числа и типы с плавающей запятой, а **`bool`** также определенные реализации, а не фиксированные правилами языка C++. Свойства, описанные в \<limits> , включают в себя точность, минимальное и максимальное размеры, округление и тип сигнала.
 

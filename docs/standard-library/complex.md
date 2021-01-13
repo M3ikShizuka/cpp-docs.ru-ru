@@ -4,16 +4,15 @@ title: '&lt;complex&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <complex>
-- std::<complex>
 helpviewer_keywords:
 - complex header
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
-ms.openlocfilehash: b16798cf1725ba6fa681b04f735d44f02a2b1b82
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 4019b32a6bb53c2fbf820c1a3d3d70824ccc6b7f
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97233842"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126638"
 ---
 # <a name="ltcomplexgt"></a>&lt;complex&gt;
 
@@ -25,7 +24,7 @@ ms.locfileid: "97233842"
 
 **Пространство имен:** std
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Комплексные числа — это упорядоченная пара вещественных чисел. С геометрической точки зрения комплексная плоскость — это вещественная двумерная плоскость. Отличия комплексной плоскости от вещественной состоят в том, что у нее есть дополнительная алгебраическая структура. У этой структуры есть две основные операции.
 

@@ -4,15 +4,14 @@ title: '&lt;кучар&gt;'
 ms.date: 07/17/2019
 f1_keywords:
 - <cuchar>
-- cuchar
 helpviewer_keywords:
 - cuchar header
-ms.openlocfilehash: 795b238966abdd73ba925ce2886cce97e612e919
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 70b31165115b1101b412d590a69eff90c1cac6b2
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97233049"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126693"
 ---
 # <a name="ltcuchargt"></a>&lt;кучар&gt;
 
@@ -24,7 +23,7 @@ ms.locfileid: "97233049"
 
 **Пространство имен:** std
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 В этом заголовке добавляются типы стандартных библиотек C `mbstate_t` и `size_t` , а также функции [c16rtomb](../c-runtime-library/reference/c16rtomb-c32rtomb1.md), [c32rtomb](../c-runtime-library/reference/c16rtomb-c32rtomb1.md), [mbrtoc16](../c-runtime-library/reference/mbrtoc16-mbrtoc323.md)и [mbrtoc32](../c-runtime-library/reference/mbrtoc16-mbrtoc323.md) в `std` пространство имен.
 

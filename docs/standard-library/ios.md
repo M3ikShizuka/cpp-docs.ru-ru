@@ -4,16 +4,15 @@ title: '&lt;ios&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <ios>
-- ios/std::<ios>
 helpviewer_keywords:
 - ios header
 ms.assetid: d3d4c161-2f37-4f04-93cc-0a2a89984a9c
-ms.openlocfilehash: d9ea336c3dc36b6f9afa76d00496965bb860d1be
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 9904c91c46eb34bc278a0ce877e157f01a6f9a26
+ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97231411"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98126043"
 ---
 # <a name="ltiosgt"></a>&lt;ios&gt;
 
@@ -28,7 +27,7 @@ ms.locfileid: "97231411"
 > [!NOTE]
 > \<ios>Библиотека использует `#include <iosfwd>` инструкцию.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Существует большая группа функций — манипуляторы. Манипулятор, объявленный в, \<ios> изменяет значения, хранящиеся в объекте аргумента класса [ios_base](../standard-library/ios-base-class.md). Другие манипуляторы выполняют действия с потоками, управляемыми объектами типа, производного от этого класса, например специализацией одного из шаблонов классов [basic_istream](../standard-library/basic-istream-class.md) или [basic_ostream](../standard-library/basic-ostream-class.md). Например, [noskipws](../standard-library/ios-functions.md#noskipws)(**str**) очищает флаг формата `ios_base::skipws` в объекте `str` , который может иметь один из этих типов.
 
@@ -61,7 +60,7 @@ istr>> noskipws;
 |[уменьшение](../standard-library/ios-functions.md#dec)|Устанавливает режим отображения целочисленных переменных в нотации с основанием 10.|
 |[defaultfloat](../standard-library/ios-functions.md#ios_defaultfloat)|Устанавливает флаги объекта `ios_base` в соответствии с форматом отображения значений с плавающей запятой, принятым по умолчанию.|
 |[fixed](../standard-library/ios-functions.md#fixed)|Устанавливает режим отображения чисел с плавающей запятой в нотации фиксированного десятичного формата.|
-|[Hex](../standard-library/ios-functions.md#hex)|Устанавливает режим отображения целочисленных переменных в нотации с основанием 16.|
+|[hex](../standard-library/ios-functions.md#hex)|Устанавливает режим отображения целочисленных переменных в нотации с основанием 16.|
 |[свертывания](../standard-library/ios-functions.md#hexfloat)|
 |[internal](../standard-library/ios-functions.md#internal)|Устанавливает режим выравнивания знака числа по левому краю, а самого числа — по правому краю.|
 |[слева](../standard-library/ios-functions.md#left)|Устанавливает режим добавления левого поля для текста, ширина которого меньше, чем ширина выходных данных, при представлении его в потоке.|
