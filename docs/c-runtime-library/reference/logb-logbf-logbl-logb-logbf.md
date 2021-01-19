@@ -1,7 +1,7 @@
 ---
 title: logb, logbf, logbl, _logb, _logbf
 description: Справочник по API для logb, логбф, логбл, _logb и _logbf; который извлекает значение экспоненты для аргумента с плавающей запятой.
-ms.date: 9/1/2020
+ms.date: 1/15/2021
 api_name:
 - logb
 - _logb
@@ -13,6 +13,7 @@ api_name:
 - _o_logb
 - _o_logbf
 - _o_logbl
+- _o__logbf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -47,15 +48,14 @@ helpviewer_keywords:
 - floating-point functions
 - floating-point functions, mantissa and exponent
 - exponents and mantissas
-ms.assetid: 780c4daa-6fe6-4fbc-9412-4c1ba1a1766f
-ms.openlocfilehash: 1131fda94e4748d2fb2f2197f68966aaacc11d05
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 5d64b315a502f7d1794d7726f14a94ed66a67cd5
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89556218"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98564034"
 ---
-# <a name="logb-logbf-logbl-_logb-_logbf"></a>logb, logbf, logbl, _logb, _logbf
+# <a name="logb-logbf-logbl-_logb-_logbf"></a>`logb`, `logbf`, `logbl`, `_logb`, `_logbf`
 
 Извлекает значение экспоненты для аргумента с плавающей запятой.
 
@@ -88,25 +88,25 @@ float _logbf(
 
 ### <a name="parameters"></a>Параметры
 
-*x*\
+*`x`*\
 Значение с плавающей запятой.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-**logb** возвращает Несмещенное значение экспоненты *x* как целое число со знаком, представленное в виде значения с плавающей запятой.
+**`logb`** Возвращает Несмещенное значение экспоненты *`x`* в виде целого числа со знаком, представленного в виде значения с плавающей запятой.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Функции **logb** извлекают экспоненциальное значение аргумента с плавающей запятой *x*, как если бы *x* были представлены с бесконечным диапазоном. Если аргумент *x* денормализован, он рассматривается как нормализованный.
+**`logb`** Функции извлекают экспоненциальное значение аргумента с плавающей запятой *`x`* , как если *`x`* бы они были представлены с бесконечным диапазоном. Если аргумент *`x`* денормализован, он рассматривается как нормализованный.
 
-Поскольку C++ допускает перегрузку, можно вызывать перегрузки **logb** , которые принимают и возвращают **`float`** **`long double`** значения или. В программе на языке C, если только вы не используете \<tgmath.h> макрос для вызова этой функции, **logb** всегда принимает и возвращает **`double`** .
+Поскольку C++ допускает перегрузку, можно вызывать перегрузки **`logb`** , которые принимают и возвращают **`float`** **`long double`** значения или. В программе на языке C, если только вы не используете `<tgmath.h>` макрос для вызова этой функции, **`logb`** всегда принимает и возвращает **`double`** .
 
-При использовании \<tgmath.h> `logb()` макроса тип аргумента определяет, какая версия функции выбрана. Подробные сведения см. в разделе [Type-Generic Math](../../c-runtime-library/tgmath.md) .
+При использовании `<tgmath.h>` `logb()` макроса тип аргумента определяет, какая версия функции выбрана. Подробные сведения см. в разделе [Type-Generic Math](../../c-runtime-library/tgmath.md) .
 
-|Входные данные|Исключение SEH|Исключение Matherr|
+|Входные данные|Исключение SEH|`Matherr` об|
 |-----------|-------------------|-----------------------|
-|± КНАН, С|Нет|_DOMAIN|
-|± 0|ZERODIVIDE|_SING|
+|`± QNAN`,`IND`|Нет|`_DOMAIN`|
+|± 0|`ZERODIVIDE`|`_SING`|
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -114,9 +114,9 @@ float _logbf(
 
 |Подпрограмма|Обязательный заголовок|
 |-------------|---------------------|
-|**_logb**|\<float.h>|
-|**logb**, **логбф**, **логбл**, **_logbf**|\<math.h>|
-|макрос **logb** | \<tgmath.h> |
+|**`_logb`**|`<float.h>`|
+|**`logb`**, **`logbf`**, **`logbl`**, **`_logbf`**|`<math.h>`|
+|**`logb`** макровирусах | `<tgmath.h>` |
 
 Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
@@ -124,7 +124,7 @@ float _logbf(
 
 Все версии [библиотек времени выполнения языка C](../../c-runtime-library/crt-library-features.md).
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
-[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
-[frexp](frexp.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)\
+[`frexp`](frexp.md)

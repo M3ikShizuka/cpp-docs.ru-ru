@@ -1,13 +1,14 @@
 ---
 title: sinh, sinhf, sinhl
 description: Справочник по API для вычисления гиперболического синуса значения с плавающей запятой.
-ms.date: 08/31/2020
+ms.date: 1/15/2021
 api_name:
 - sinh
 - sinhl
 - sinhf
 - sinhl
 - _o_sinh
+- _o_sinhf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -38,14 +39,14 @@ helpviewer_keywords:
 - sinhf function
 - sinhl function
 - hyperbolic functions
-ms.openlocfilehash: 6a8c9c4195eab66a46230e7a3baf6194e17c4519
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 73f7210105419c4b8cb9a6e47e5c5f0e43437738
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89556181"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98563800"
 ---
-# <a name="sinh-sinhf-sinhl"></a>sinh, sinhf, sinhl
+# <a name="sinh-sinhf-sinhl"></a>`sinh`, `sinhf`, `sinhl`
 
 Вычисляет гиперболический синус.
 
@@ -63,25 +64,25 @@ long double sinh(long double x);  // C++ only
 
 ### <a name="parameters"></a>Параметры
 
-*x*\
+*`x`*\
 Угол в радианах.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Функции **sinh** возвращают гиперболический синус *x*. По умолчанию, если результат слишком велик, **sinh** **устанавливает значение** « **ERANGE** » и возвращает ±**HUGE_VAL**.
+**`sinh`** Функции возвращают гиперболический синус *`x`* . По умолчанию, если результат слишком велик, **`sinh`** устанавливает **`errno`** значение **`ERANGE`** и возвращает ± **`HUGE_VAL`** .
 
-|Входные данные|Исключение SEH|Исключение Matherr|
+|Входные данные|Исключение SEH|`Matherr` об|
 |-----------|-------------------|-----------------------|
-|± КНАН, С|Нет|_DOMAIN|
-|&#124;x&#124; ≥ 7.104760 e + 002|OVERFLOW+INEXACT|OVERFLOW|
+|± `QNAN`,`IND`|Нет|`_DOMAIN`|
+|&#124;x&#124; ≥ 7.104760 e + 002|`OVERFLOW+INEXACT`|`OVERFLOW`|
 
-Дополнительные сведения о кодах возврата см. в разделе [errno, _doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Дополнительные сведения о кодах возврата см. [ `errno` в разделе,, `_doserrno` `_sys_errlist` и `_sys_nerr` ](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Поскольку C++ допускает перегрузку, можно вызывать перегрузки **sinh** , которые принимают и возвращают **`float`** **`long double`** значения или. В программе на языке C, если только вы не используете \<tgmath.h> макрос для вызова этой функции, **sinh** всегда принимает и возвращает **`double`** .
+Поскольку C++ допускает перегрузку, можно вызывать перегрузки **`sinh`** , которые принимают и возвращают **`float`** **`long double`** значения или. В программе на языке C, если только вы не используете `<tgmath.h>` макрос для вызова этой функции, **`sinh`** всегда принимает и возвращает **`double`** .
 
-При использовании \<tgmath.h> `sinh()` макроса тип аргумента определяет, какая версия функции выбрана. Подробные сведения см. в разделе [Type-Generic Math](../../c-runtime-library/tgmath.md) .
+При использовании `<tgmath.h>` `sinh()` макроса тип аргумента определяет, какая версия функции выбрана. Подробные сведения см. в разделе [Type-Generic Math](../../c-runtime-library/tgmath.md) .
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -89,10 +90,10 @@ long double sinh(long double x);  // C++ only
 
 |Подпрограмма|Обязательный заголовок (C)|Обязательный заголовок (C++)|
 |-|-|-|
-|**sinh**, **sinhf**, **sinhl**|\<math.h>|\<cmath> или \<math.h>|
-|макрос **SINH ()** | \<tgmath.h> ||
+|**`sinh`**, **`sinhf`**, **`sinhl`**|`<math.h>`|`<cmath>` или `<math.h>`|
+|**`sinh()`** макровирусах | `<tgmath.h>` ||
 
-Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -125,9 +126,9 @@ cosh( 1.570796 ) = 2.509178
 
 ## <a name="see-also"></a>См. также
 
-[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
-[acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
-[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
-[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
-[cosh, coshf, coshl](cosh-coshf-coshl.md)<br/>
-[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)\
+[`acosh`, `acoshf`, `acoshl`](acosh-acoshf-acoshl.md)\
+[`asinh`, `asinhf`, `asinhl`](asinh-asinhf-asinhl.md)\
+[`atanh`, `atanhf`, `atanhl`](atanh-atanhf-atanhl.md)\
+[`cosh`, `coshf`, `coshl`](cosh-coshf-coshl.md)\
+[`tanh`, `tanhf`, `tanhl`](tanh-tanhf-tanhl.md)

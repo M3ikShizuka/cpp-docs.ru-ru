@@ -1,7 +1,7 @@
 ---
 title: nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl
 description: Справочник по API для nextafter, некстафтерф, некстафтерл, _nextafter, _nextafterf, нексттовард, нексттовардф и нексттовардл; который возвращает следующее представимое значение с плавающей точкой.
-ms.date: 9/1/2020
+ms.date: 1/15/2021
 api_name:
 - nextafterf
 - _nextafterf
@@ -18,6 +18,7 @@ api_name:
 - _o_nexttoward
 - _o_nexttowardf
 - _o_nexttowardl
+- _o__nextafterf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -59,15 +60,14 @@ helpviewer_keywords:
 - nexttoward function
 - nexttowardf function
 - nexttowardl function
-ms.assetid: 9785bfb9-de53-4bd0-9637-f05fa0c1f6ab
-ms.openlocfilehash: cdcfb1a1d0bf1523a0252d779dba603ce1814b14
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 664ddb204fa089f83acebf6a9042b17a776ea306
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89555830"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98564138"
 ---
-# <a name="nextafter-nextafterf-nextafterl-_nextafter-_nextafterf-nexttoward-nexttowardf-nexttowardl"></a>nextafter, nextafterf, nextafterl, _nextafter, _nextafterf, nexttoward, nexttowardf, nexttowardl
+# <a name="nextafter-nextafterf-nextafterl-_nextafter-_nextafterf-nexttoward-nexttowardf-nexttowardl"></a>`nextafter`, `nextafterf`, `nextafterl`, `_nextafter`, `_nextafterf`, `nexttoward`, `nexttowardf`, `nexttowardl`
 
 Возвращает следующее представимое значение с плавающей запятой.
 
@@ -98,23 +98,23 @@ long double nexttoward( long double x, long double y ); /* C++ only, requires <c
 
 ### <a name="parameters"></a>Параметры
 
-*x*\
+*`x`*\
 Начальное значение с плавающей запятой.
 
-*&*\
+*`y`*\
 Следующее значение с плавающей запятой.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Возвращает следующее представимое значение с плавающей запятой возвращаемого типа после *x* в направлении *y*. Если *x* и *y* равны, функция возвращает *y*, преобразованную в тип возвращаемого значения, без исключения. Если значение *x* не равно *y*, а результат является нормальным или нулевым, то задаются **FE_UNDERFLOW** и **FE_INEXACT** состояния исключений с плавающей запятой, и возвращается правильный результат. Если либо *x* , либо *y* является NaN, то возвращаемое значение является одним из входных значений NaN. Если *x* является конечным, а результат является бесконечным или недоступным для представления в типе, возвращается правильно подписанная бесконечность или NAN, **FE_OVERFLOW** и **FE_INEXACT** состояния исключений с плавающей запятой задаются, а параметру " **переводится** " значение **ERANGE**.
+Возвращает следующее представимое значение с плавающей запятой возвращаемого типа после *`x`* в направлении *`y`* . Если *`x`* и *`y`* равны, функция возвращает *`y`* , преобразованную в тип возвращаемого значения без исключения. Если значение *`x`* не равно *`y`* , а результат является нормальным или нулем, то **`FE_UNDERFLOW`** **`FE_INEXACT`** задаются состояния исключения и, а также возвращается правильный результат. Если параметр *`x`* или *`y`* является NaN, то возвращаемое значение является одним из входных значений NaN. Если *`x`* Конечная точка является конечной, а результат является бесконечным или не может быть представлен в типе, возвращается правильно подписанная бесконечность или NaN, **`FE_OVERFLOW`** а также **`FE_INEXACT`** состояния исключений с плавающей запятой и устанавливаются **`errno`** в значение **`ERANGE`** .
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Семейства функций **nextafter** и **нексттовард** эквивалентны, за исключением типа параметра *y*. Если *x* и *y* равны, возвращается значение *y* , преобразованное в тип возвращаемого значения.
+**`nextafter`** **`nexttoward`** Семейства функций и эквивалентны, за исключением типа параметра *`y`* . Если *`x`* и *`y`* равны, возвращаемое значение *`y`* преобразуется в тип возвращаемого значения.
 
-Так как C++ допускает перегрузку, при включении \<cmath> можно вызывать перегрузки **nextafter** и **нексттовард** , которые возвращают **`float`** **`long double`** типы и. В программе на языке C, если только вы не используете \<tgmath.h> макрос для вызова этой функции, **nextafter** и **нексттовард** всегда возвращают **`double`** .
+Поскольку C++ допускает перегрузку, при включении `<cmath>` можно вызывать перегрузки **`nextafter`** и **`nexttoward`** , которые возвращают **`float`** **`long double`** типы и. В программе на языке C, если только вы не используете `<tgmath.h>` макрос для вызова этой функции **`nextafter`** и **`nexttoward`** всегда возвращает **`double`** .
 
-При использовании \<tgmath.h> `nextafter()` `nexttoward()` макроса или тип аргумента определяет, какая версия функции выбрана. Подробные сведения см. в разделе [Type-Generic Math](../../c-runtime-library/tgmath.md) .
+При использовании `<tgmath.h>` `nextafter()` `nexttoward()` макроса или тип аргумента определяет, какая версия функции выбрана. Подробные сведения см. в разделе [Type-Generic Math](../../c-runtime-library/tgmath.md) .
 
 Функции **_nextafter** и **_nextafterf** являются специфичными для Microsoft. Функция **_nextafterf** доступна только при компиляции для x64.
 
@@ -124,13 +124,13 @@ long double nexttoward( long double x, long double y ); /* C++ only, requires <c
 
 |Подпрограмма|Обязательный заголовок (C)|Обязательный заголовок (C++)|
 |-------------|---------------------------|-------------------------------|
-|**nextafter**, **некстафтерф**, **некстафтерл**, **_nextafterf**, **нексттовард**, **нексттовардф**, **нексттовардл**|\<math.h>|\<math.h> или \<cmath>|
-|**_nextafter**|\<float.h>|\<float.h> или \<cfloat>|
-|макрос **nextafter** , макрос **нексттовард**| \<tgmath.h> ||
+|**`nextafter`**, **`nextafterf`**, **`nextafterl`**, **`_nextafterf`**, **`nexttoward`**, **`nexttowardf`**, **`nexttowardl`**|`<math.h>`|`<math.h>` или `<cmath>`|
+|**`_nextafter`**|`<float.h>`|`<float.h>` или `<cfloat>`|
+|**`nextafter`** макрос,  **`nexttoward`** макрос| `<tgmath.h>` ||
 
 Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
 [Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)\
-[isnan, _isnan, _isnanf](isnan-isnan-isnanf.md)
+[`isnan`, `_isnan`, `_isnanf`](isnan-isnan-isnanf.md)

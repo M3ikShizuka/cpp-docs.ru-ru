@@ -1,12 +1,13 @@
 ---
 title: cosh, coshf, coshl
 description: Справочник по API для cosh, кошф и кошл; который вычисляет гиперболический косинус значения с плавающей запятой.
-ms.date: 08/31/2020
+ms.date: 1/15/2021
 api_name:
 - cosh
 - coshf
 - coshl
 - _o_cosh
+- _o_coshf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -34,14 +35,14 @@ helpviewer_keywords:
 - coshl function
 - trigonometric functions
 - hyperbolic functions
-ms.openlocfilehash: 0ea4a5b77850e196c29519ac49b589a0c2b6c9a7
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: c010dcdc30b16f94f55fca99d67b58e5c19370c7
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89555531"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98564099"
 ---
-# <a name="cosh-coshf-coshl"></a>cosh, coshf, coshl
+# <a name="cosh-coshf-coshl"></a>`cosh`, `coshf`, `coshl`
 
 Вычисляет гиперболический косинус.
 
@@ -59,25 +60,25 @@ long double cosh( long double x );  // C++ only
 
 ### <a name="parameters"></a>Параметры
 
-*x*\
+*`x`*\
 Угол в радианах.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Гиперболический косинус для *x*.
+Гиперболический косинус *`x`* .
 
-По умолчанию, если результат слишком велик в вызове **cosh**, **кошф**или **кошл** , функция возвращает **HUGE_VAL** **и устанавливает значение** переводится в **ERANGE**.
+По умолчанию, если результат слишком велик в **`cosh`** **`coshf`** **`coshl`** методе, или, функция возвращает **`HUGE_VAL`** и устанавливает **`errno`** для значение **`ERANGE`** .
 
-|Входные данные|Исключение SEH|Исключение Matherr|
+|Входные данные|Исключение SEH|`Matherr` об|
 |-----------|-------------------|-----------------------|
-|± **КНАН**, **с**|нет|**_DOMAIN**|
-|*x* ≥ 7.104760 e + 002|**НЕточность** + **Переполнение**|**ПОЛН**|
+|± **`QNAN`**, **`IND`**|нет|**`_DOMAIN`**|
+|*`x`* ≥ 7.104760 e + 002|**`INEXACT`**+**`OVERFLOW`**|**`OVERFLOW`**|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Поскольку C++ допускает перегрузку, можно вызывать перегрузки **cosh** , которые принимают и возвращают **`float`** **`long double`** значения или. В программе на языке C, если только вы не используете \<tgmath.h> макрос для вызова этой функции, **cosh** всегда принимает и возвращает **`double`** .
+Поскольку C++ допускает перегрузку, можно вызывать перегрузки **`cosh`** , которые принимают и возвращают **`float`** **`long double`** значения или. В программе на языке C, если только вы не используете `<tgmath.h>` макрос для вызова этой функции, **`cosh`** всегда принимает и возвращает **`double`** .
 
-При использовании \<tgmath.h> `cosh()` макроса тип аргумента определяет, какая версия функции выбрана. Подробные сведения см. в разделе [Type-Generic Math](../../c-runtime-library/tgmath.md) .
+При использовании `<tgmath.h>` `cosh()` макроса тип аргумента определяет, какая версия функции выбрана. Подробные сведения см. в разделе [Type-Generic Math](../../c-runtime-library/tgmath.md) .
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -85,21 +86,21 @@ long double cosh( long double x );  // C++ only
 
 |Подпрограмма|Обязательный заголовок (C)|Обязательный заголовок (C++)|
 |-------------|---------------------|-|
-|**кошф**, **косл**, **кошл**|\<math.h>|\<cmath> или \<math.h>|
-|макрос **кошф ()** | \<tgmath.h> ||
+|**`coshf`**, **`cosl`**, **`coshl`**|`<math.h>`|`<cmath>` или `<math.h>`|
+|**`coshf()`** макровирусах | `<tgmath.h>` ||
 
-Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
-См. пример в [sinh, sinhf, sinhl](sinh-sinhf-sinhl.md).
+См. пример в [ `sinh` , `sinhf` , `sinhl` ](sinh-sinhf-sinhl.md).
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
-[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
-[acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
-[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
-[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
-[_matherr](matherr.md)<br/>
-[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
-[tanh, tanhf, tanhl](tanh-tanhf-tanhl.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)\
+[`acosh, acoshf, acoshl`](acosh-acoshf-acoshl.md)\
+[`asinh, asinhf, asinhl`](asinh-asinhf-asinhl.md)\
+[`atanh, atanhf, atanhl`](atanh-atanhf-atanhl.md)\
+[`_matherr`](matherr.md)\
+[`sinh, sinhf, sinhl`](sinh-sinhf-sinhl.md)\
+[`tanh, tanhf, tanhl`](tanh-tanhf-tanhl.md)

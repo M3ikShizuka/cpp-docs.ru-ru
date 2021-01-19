@@ -1,12 +1,13 @@
 ---
 title: exp, expf, expl
 description: Справочник по API для EXP, експф и експл; который Вычисляет экспоненту.
-ms.date: 08/31/2020
+ms.date: 1/15/2021
 api_name:
 - expf
 - expl
 - exp
 - _o_exp
+- _o_expf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -35,15 +36,14 @@ helpviewer_keywords:
 - expl function
 - calculating exponentials
 - exp function
-ms.assetid: 7070016d-1143-407e-9e9a-6b059bb88867
-ms.openlocfilehash: f6733f293f1c8f78e8143d9fdd395013147bbe83
-ms.sourcegitcommit: a1676bf6caae05ecd698f26ed80c08828722b237
+ms.openlocfilehash: ac51744fe332fbf378139df11e7d07afe44029ca
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91502106"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98564008"
 ---
-# <a name="exp-expf-expl"></a>exp, expf, expl
+# <a name="exp-expf-expl"></a>`exp`, `expf`, `expl`
 
 Вычисляет экспоненту.
 
@@ -70,38 +70,38 @@ long double expl(
 
 ### <a name="parameters"></a>Параметры
 
-*x*\
+*`x`*\
 Значение с плавающей запятой, експонентиате основание натурального логарифма по адресу *e* .
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Функции **exp** возвращают экспоненциальное значение параметра с плавающей запятой *x*, если выполнено успешно. То есть результатом является *e*<sup>*x*</sup>, где *e* — основание натурального логарифма. При переполнении функция возвращает INF-файл (бесконечность) и при неточном потоке **exp** возвращает 0.
+**`exp`** Функции возвращают экспоненциальное значение параметра с плавающей запятой, в *`x`* случае успеха. То есть результатом является *e* <sup>*`x`*</sup> , где *e* — основание натурального логарифма. При переполнении функция возвращает значение `INF` 0 (бесконечность) и в случае потери точности **`exp`** .
 
-|Входные данные|Исключение SEH|Исключение Matherr|
+|Входные данные|Исключение SEH|`Matherr` об|
 |-----------|-------------------|-----------------------|
-|± Скрытого NaN, неопределенного|Отсутствуют|_DOMAIN|
-|± Бесконечности|INVALID|_DOMAIN|
-|x ≥ 7.097827e+002|INEXACT+OVERFLOW|OVERFLOW|
-|X ≤ -7.083964e+002|INEXACT+UNDERFLOW|UNDERFLOW|
+|± Скрытого NaN, неопределенного|Нет|`_DOMAIN`|
+|± Бесконечности|`INVALID`|`_DOMAIN`|
+|x ≥ 7.097827e+002|`INEXACT+OVERFLOW`|`OVERFLOW`|
+|X ≤ -7.083964e+002|`INEXACT+UNDERFLOW`|`UNDERFLOW`|
 
-Функция **exp** имеет реализацию, использующую Streaming SIMD Extensions 2 (SSE2). Сведения о реализации SSE2 и ограничения на использование реализации SSE2 см. в разделе [_set_SSE2_enable](set-sse2-enable.md).
+**`exp`** Функция имеет реализацию, использующую Streaming SIMD Extensions 2 (SSE2). [`_set_SSE2_enable`](set-sse2-enable.md)Сведения и ограничения по использованию реализации SSE2 см. в разделе.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Комментарии
 
-C++ допускает перегрузку, поэтому можно вызывать перегрузки **exp** , принимающие **`float`** аргумент или **`long double`** . В программе на языке C, если только вы не используете \<tgmath.h> макрос для вызова этой функции, **exp** всегда принимает и возвращает **`double`** .
+C++ допускает перегрузку, поэтому можно вызывать перегрузки **`exp`** , принимающие **`float`** аргумент или **`long double`** . В программе на языке C, если только вы не используете `<tgmath.h>` макрос для вызова этой функции, **`exp`** всегда принимает и возвращает **`double`** .
 
-При использовании \<tgmath.h> `exp()` макроса тип аргумента определяет, какая версия функции выбрана. Подробные сведения см. в разделе [Type-Generic Math](../../c-runtime-library/tgmath.md) .
+При использовании `<tgmath.h>` `exp()` макроса тип аргумента определяет, какая версия функции выбрана. Подробные сведения см. в разделе [Type-Generic Math](../../c-runtime-library/tgmath.md) .
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
 ## <a name="requirements"></a>Требования
 
-|Компонент|Обязательный заголовок C|Обязательный заголовок C++|
+|Функция|Обязательный заголовок C|Обязательный заголовок C++|
 |--------------|---------------------|---|
-|**exp**, **експф**, **експл**|\<math.h>|\<cmath> либо \<math.h>|
-|макрос **exp**| \<tgmath.h> ||
+|**`exp`**, **`expf`**, **`expl`**|`<math.h>`|`<cmath>` или `<math.h>`|
+|**`exp`** макровирусах| `<tgmath.h>` ||
 
-Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -124,8 +124,8 @@ int main( void )
 exp( 2.302585 ) = 10.000000
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
-[log, logf, log10, log10f](log-logf-log10-log10f.md)<br/>
-[_CIexp](../../c-runtime-library/ciexp.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)\
+[н`og, logf, log10, log10f`](log-logf-log10-log10f.md)\
+[`_CIexp`](../../c-runtime-library/ciexp.md)

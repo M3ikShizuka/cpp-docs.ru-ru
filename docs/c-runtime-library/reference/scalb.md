@@ -1,11 +1,12 @@
 ---
 description: 'Дополнительные сведения: _scalb, _scalbf'
 title: _scalb, _scalbf
-ms.date: 4/2/2020
+ms.date: 1/15/2021
 api_name:
 - _scalb
 - _scalbf
 - _o__scalb
+- _o__scalbf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -32,15 +33,14 @@ helpviewer_keywords:
 - _scalb function
 - _scalbf function
 - scalb function
-ms.assetid: 148cf5a8-b405-44bf-a1f0-7487adba2421
-ms.openlocfilehash: d118fc19c4635f0f0b6d93b1528308e9b31ee45a
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: da5a33bd6ed24ba0a3a58f789a9c8900910454d1
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97268916"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98564086"
 ---
-# <a name="_scalb-_scalbf"></a>_scalb, _scalbf
+# <a name="_scalb-_scalbf"></a>`_scalb`, `_scalbf`
 
 Масштабирует аргумент по степени числа 2.
 
@@ -59,21 +59,21 @@ float _scalbf(
 
 ### <a name="parameters"></a>Параметры
 
-*x*<br/>
+*`x`*\
 Число двойной точности с плавающей запятой.
 
-*exp*<br/>
+*`exp`*\
 Показатель степени — длинное целое число.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Возвращает значение экспоненты в случае успешного выполнения. При переполнении (в зависимости от знака *x*) **_scalb** возвращает +/- **HUGE_VAL**; для переменной « **No** » задано значение **ERANGE**.
+Возвращает значение экспоненты в случае успешного выполнения. При переполнении (в зависимости от знака *`x`* ) **`_scalb`** возвращает +/- **`HUGE_VAL`** ; переменной присваивается **`errno`** значение **`ERANGE`** .
 
 Дополнительные сведения об этом и других кодах возврата см. в статье [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Комментарии
 
-Функция **_scalb** вычисляет значение  \* <sup>*exp*</sup>x 2.
+**`_scalb`** Функция вычисляет значение *`x`* \* 2 <sup>*`exp`*</sup> .
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -81,11 +81,11 @@ float _scalbf(
 
 |Подпрограмма|Обязательный заголовок|
 |-------------|---------------------|
-|**_scalb**, **_scalbf**|\<float.h>|
+|**`_scalb`**, **`_scalbf`**|`<float.h>`|
 
 Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
-[ldexp](ldexp.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)\
+[`ldexp`](ldexp.md)

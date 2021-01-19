@@ -227,6 +227,7 @@ api_name:
 - __std_exception_copy
 - __std_exception_destroy
 - __std_type_info_destroy_list
+- __std_type_info_name
 - __stdio_common_vfprintf
 - __stdio_common_vfprintf_p
 - __stdio_common_vfprintf_s
@@ -271,6 +272,7 @@ api_name:
 - _W_Getdays
 - _W_Getmonths
 - _W_Getnames
+- _W_Gettnames
 - _wassert
 - _Wcsftime
 - __wcsncnt
@@ -931,17 +933,16 @@ helpviewer_keywords:
 - _wsopen_dispatch
 - _Xbad_alloc
 - _Xlength_error
-ms.assetid: 99a27f11-fa5a-449e-bfbb-aab578d1cc4f
-ms.openlocfilehash: 9087998c91a3da5022fd3fe559e5d535416eeff5
-ms.sourcegitcommit: 1cd8f8a75fd036ffa57bc70f3ca869042d8019d4
+ms.openlocfilehash: 05d9666ce77c593c6b6fa366f43f8a593cb7a4a9
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98243181"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98563956"
 ---
 # <a name="internal-crt-globals-and-functions"></a>Внутренние глобальные переменные и функции CRT
 
-Библиотека времени выполнения языка C (CRT) содержит функции и глобальные переменные, которые используются только для поддержки интерфейса общей библиотеки. Некоторые из них предоставляются в общих заголовках как сведения о реализации. Хотя эти функции и глобальные переменные доступны через общие операции экспорта, они не предназначены для использования в коде. Мы рекомендуем изменить код, использующий эти функции и переменные, чтобы использовать вместо них эквиваленты общей библиотеки. Эти функции могут изменяться в разных версиях. Здесь они перечислены в целях идентификации. Если существует дополнительная документация, приводятся соответствующие ссылки, но в целом эти детали реализации не задокументированы.
+Библиотека времени выполнения языка C (CRT) содержит функции и глобальные переменные, которые используются только для поддержки интерфейса общей библиотеки. Некоторые из них предоставляются в общих заголовках как сведения о реализации. Хотя эти функции и глобальные переменные доступны через открытые экспорты, они не предназначены для использования в коде. Мы рекомендуем изменить код, использующий эти функции и переменные, чтобы использовать вместо них эквиваленты общей библиотеки. Эти функции могут изменяться в разных версиях. Они перечислены здесь для упрощения их поиска. Ссылки предоставляются, когда существует другая документация, но в целом эти сведения о реализации не задокументированы.
 
 ## <a name="internal-crt-globals-and-value-macros"></a>Внутренние глобальные переменные и макросы значений CRT
 
@@ -1219,6 +1220,7 @@ ms.locfileid: "98243181"
 |__std_exception_copy|
 |__std_exception_destroy|
 |__std_type_info_destroy_list|
+|__std_type_info_name|
 |__stdio_common_vfprintf|
 |__stdio_common_vfprintf_p|
 |__stdio_common_vfprintf_s|
@@ -1264,6 +1266,7 @@ ms.locfileid: "98243181"
 |_W_Getdays|
 |_W_Getmonths|
 |_W_Getnames|
+|_W_Gettnames|
 |_wassert|
 |_Wcsftime|
 |__wcsncnt|

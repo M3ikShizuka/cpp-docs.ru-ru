@@ -1,12 +1,13 @@
 ---
 title: acos, acosf, acosl
-description: Справочник по API для `acos` , `acosf` и `acosl` ;, который вычисляет арккосинус значения с плавающей запятой.
-ms.date: 08/31/2020
+description: Справочник по API для Acos, acosf и acosl; который вычисляет арккосинус значения с плавающей запятой.
+ms.date: 1/15/2021
 api_name:
 - acosf
 - acos
 - acosl
 - _o_acos
+- _o_acosf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -36,15 +37,14 @@ helpviewer_keywords:
 - acosf function
 - trigonometric functions
 - arccosine function
-ms.assetid: 00b89c48-8faf-4824-aa95-fa4349a4975d
-ms.openlocfilehash: eeee51cea2a81882ee1ed8b014312ee9f9095dc6
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 63a9c9577e252c506191b7a49ec9da6502968095
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89555102"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98563839"
 ---
-# <a name="acos-acosf-acosl"></a>acos, acosf, acosl
+# <a name="acos-acosf-acosl"></a>`acos`, `acosf`, `acosl`
 
 Вычисляет арккосинус.
 
@@ -62,26 +62,26 @@ long double acos( long double x );   // C++ only
 
 ### <a name="parameters"></a>Параметры
 
-*x*\
+*`x`*\
 Значение от-1 до 1, для которого вычисляется арккосинус (обратный косинус).
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Функция **Acos** Возвращает арккосинус *x* в диапазоне от 0 до π радиан.
+**`acos`** Функция возвращает арккосинус *x* в диапазоне от 0 до π радиан.
 
-По умолчанию, если *x* меньше-1 или больше 1, **Acos** возвращает неопределенное значение.
+По умолчанию, если *`x`* значение меньше-1 или больше 1, **`acos`** возвращает неопределенное значение.
 
-|Входные данные|Исключение SEH|Исключение Matherr|
+|Входные данные|`SEH` об|`Matherr` об|
 |-----------|-------------------|-----------------------|
-|± ∞|INVALID|_DOMAIN|
-|± КНАН, С|нет|_DOMAIN|
-|&#124;x&#124;>1|INVALID|_DOMAIN|
+|`± ∞`|`INVALID`|`_DOMAIN`|
+|`± QNAN, IND`|нет|`_DOMAIN`|
+|&#124;`x`&#124;>1|`INVALID`|`_DOMAIN`|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Поскольку C++ допускает перегрузку, можно вызывать перегрузки **Acos** , которые принимают и возвращают **`float`** **`long double`** типы и. В программе на языке C, если только вы не используете \<tgmath.h> макрос для вызова этой функции, **Acos** всегда принимает и возвращает **`double`** .
+Поскольку C++ допускает перегрузку, можно вызывать перегрузки **`acos`** , которые принимают и возвращают **`float`** **`long double`** типы и. В программе на языке C, если только вы не используете `<tgmath.h>` макрос для вызова этой функции, **`acos`** всегда принимает и возвращает **`double`** .
 
-При использовании \<tgmath.h> `acos()` макроса тип аргумента определяет, какая версия функции выбрана. Подробные сведения см. в разделе [Type-Generic Math](../../c-runtime-library/tgmath.md) .
+При использовании `<tgmath.h>` `acos()` макроса тип аргумента определяет, какая версия функции выбрана. Подробные сведения см. в разделе [Type-Generic Math](../../c-runtime-library/tgmath.md) .
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -89,8 +89,8 @@ long double acos( long double x );   // C++ only
 
 |Подпрограмма|Обязательный заголовок|Необязательные заголовки|
 |-------------|---------------------|----------------------|
-|**Acos**, **acosf**, **acosl**|\<math.h>|\<errno.h>|
-|макрос **ACOS ()** | \<tgmath.h> ||
+|**`acos`**, **`acosf`**, **`acosl`**|`<math.h>`|`<errno.h>`|
+|**`acos()`** макровирусах | `<tgmath.h>` ||
 
 ## <a name="example"></a>Пример
 
@@ -142,12 +142,12 @@ Arcsine of 0.000000 = 0.000000
 Arccosine of 0.000000 = 1.570796
 ```
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
-[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
-[asin, asinf, asinl](asin-asinf-asinl.md)<br/>
-[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
-[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
-[_matherr](matherr.md)<br/>
-[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
-[tan, tanf, tanl](tan-tanf-tanl.md)
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)\
+[`asin`, `asinf`, `asinl`](asin-asinf-asinl.md)\
+[`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`](atan-atanf-atanl-atan2-atan2f-atan2l.md)\
+[`cos`, `cosf`, `cosl`](cos-cosf-cosl.md)\
+[`_matherr`](matherr.md)\
+[`sin`, `sinf`, `sinl`](sin-sinf-sinl.md)\
+[`tan`, `tanf`, `tanl`](tan-tanf-tanl.md)

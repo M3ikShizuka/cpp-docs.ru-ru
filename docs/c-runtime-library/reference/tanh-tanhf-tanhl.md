@@ -1,12 +1,13 @@
 ---
 title: tanh, tanhf, tanhl
 description: Справочник по API для tanh, tanhf и танхл; который вычисляет гиперболический тангенс значения с плавающей запятой.
-ms.date: 08/31/2020
+ms.date: 1/15/2021
 api_name:
 - tanh
 - tanhf
 - tanhl
 - _o_tanh
+- _o_tanhf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -36,14 +37,14 @@ helpviewer_keywords:
 - tanhf function
 - trigonometric functions
 - hyperbolic functions
-ms.openlocfilehash: 5fa93f56ebec5e8aa06c7317534adb12ae9e68e2
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: c09655b4a86010ff6a476f7dacbce4f9f73ab3cc
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89556584"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98564125"
 ---
-# <a name="tanh-tanhf-tanhl"></a>tanh, tanhf, tanhl
+# <a name="tanh-tanhf-tanhl"></a>`tanh`, `tanhf`, `tanhl`
 
 Вычисляет гиперболический тангенс.
 
@@ -63,22 +64,22 @@ long double tanh( long double x );  // C++ only
 
 ### <a name="parameters"></a>Параметры
 
-*x*\
+*`x`*\
 Угол в радианах.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Функции **tanh** возвращают гиперболический тангенс *x*. Ошибки не возвращаются.
+**`tanh`** Функции возвращают гиперболический тангенс *`x`* . Ошибки не возвращаются.
 
-|Входные данные|Исключение SEH|**Matherr** Об|
+|Входные данные|Исключение SEH|**`Matherr`** об|
 |-----------|-------------------|-------------------------|
-|± КНАН, С|нет|_DOMAIN|
+|± `QNAN`,`IND`|нет|`_DOMAIN`|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Поскольку C++ допускает перегрузку, можно вызывать перегрузки **tanh** , которые принимают и возвращают **`float`** **`long double`** значения или. В программе на языке C, если только вы не используете \<tgmath.h> макрос для вызова этой функции, **tanh** всегда принимает и возвращает **`double`** .
+Поскольку C++ допускает перегрузку, можно вызывать перегрузки **`tanh`** , которые принимают и возвращают **`float`** **`long double`** значения или. В программе на языке C, если только вы не используете `<tgmath.h>` макрос для вызова этой функции, **`tanh`** всегда принимает и возвращает **`double`** .
 
-При использовании \<tgmath.h> `tanh()` макроса тип аргумента определяет, какая версия функции выбрана. Подробные сведения см. в разделе [Type-Generic Math](../../c-runtime-library/tgmath.md) .
+При использовании `<tgmath.h>` `tanh()` макроса тип аргумента определяет, какая версия функции выбрана. Подробные сведения см. в разделе [Type-Generic Math](../../c-runtime-library/tgmath.md) .
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -86,10 +87,10 @@ long double tanh( long double x );  // C++ only
 
 |Подпрограмма|Обязательный заголовок (C)|Обязательный заголовок (C)|
 |-------------|---------------------|-|
-|**tanh**, **tanhf**, **танхл**|\<math.h>|\<cmath> или \<math.h>|
-|макрос **tanh ()** | \<tgmath.h> ||
+|**`tanh`**, **`tanhf`**, **`tanhl`**|`<math.h>`|`<cmath>` или `<math.h>`|
+|**`tanh()`** макровирусах | `<tgmath.h>` ||
 
-Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -121,9 +122,9 @@ tanh( 1.000000 ) = 0.761594
 
 ## <a name="see-also"></a>См. также
 
-[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
-[acosh, acoshf, acoshl](acosh-acoshf-acoshl.md)<br/>
-[asinh, asinhf, asinhl](asinh-asinhf-asinhl.md)<br/>
-[atanh, atanhf, atanhl](atanh-atanhf-atanhl.md)<br/>
-[cosh, coshf, coshl](cosh-coshf-coshl.md)<br/>
-[sinh, sinhf, sinhl](sinh-sinhf-sinhl.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)\
+[`acosh, acoshf, acoshl`](acosh-acoshf-acoshl.md)\
+[`asinh, asinhf, asinhl`](asinh-asinhf-asinhl.md)\
+[`atanh, atanhf, atanhl`](atanh-atanhf-atanhl.md)\
+[`cosh, coshf, coshl`](cosh-coshf-coshl.md)\
+[`sinh, sinhf, sinhl`](sinh-sinhf-sinhl.md)

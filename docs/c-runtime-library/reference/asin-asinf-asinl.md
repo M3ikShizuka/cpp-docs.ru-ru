@@ -1,12 +1,13 @@
 ---
 title: asin, asinf, asinl
 description: Справочник по API для ASIN, асинф и ASIN; который вычисляет Арксинус значения с плавающей запятой.
-ms.date: 08/31/2020
+ms.date: 1/15/2021
 api_name:
 - asinf
 - asinl
 - asin
 - _o_asin
+- _o_asinf
 api_location:
 - msvcrt.dll
 - msvcr80.dll
@@ -34,15 +35,14 @@ helpviewer_keywords:
 - asinf function
 - trigonometric functions
 - arcsine function
-ms.assetid: ca05f9ea-b711-49f6-9f32-2f4019abfd69
-ms.openlocfilehash: 7167debcfb605ab05720d9441943439ea9982324
-ms.sourcegitcommit: 4ed2d68634eb2fb77e18110a2d26bc0008be369c
+ms.openlocfilehash: 04b68e9b5933d763cecbdc06af3e34a5b7c01223
+ms.sourcegitcommit: 92dc6d99ba5dcf3b64dee164df2d29beb1e608da
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89556662"
+ms.lasthandoff: 01/18/2021
+ms.locfileid: "98564047"
 ---
-# <a name="asin-asinf-asinl"></a>asin, asinf, asinl
+# <a name="asin-asinf-asinl"></a>`asin`, `asinf`, `asinl`
 
 Вычисляет арксинус.
 
@@ -60,26 +60,26 @@ long double asin( long double x );  // C++ only
 
 ### <a name="parameters"></a>Параметры
 
-*x*\
+*`x`*\
 Значение, арксинус которого необходимо вычислить.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Функция **ASIN** Возвращает арксинус (функцию обратного синуса) *x* в диапазоне от-π/2 до π/2 радиан.
+**`asin`** Функция возвращает арксинус (функция обратного синуса) *`x`* в диапазоне от-π/2 до π/2 радиан.
 
-По умолчанию, если *x* меньше-1 или больше 1, **ASIN** возвращает неопределенное значение.
+По умолчанию, если *`x`* значение меньше-1 или больше 1, **`asin`** возвращает неопределенное значение.
 
 |Входные данные|Исключение SEH|Исключение Matherr|
 |-----------|-------------------|-----------------------|
-|± ∞|**Недопустимый**|**_DOMAIN**|
-|± **КНАН**, **с**|нет|**_DOMAIN**|
-|&#124;x&#124;>1|**Недопустимый**|**_DOMAIN**|
+|± ∞|**`INVALID`**|**`_DOMAIN`**|
+|± **`QNAN`**, **`IND`**|нет|**`_DOMAIN`**|
+|&#124;x&#124;>1|**`INVALID`**|**`_DOMAIN`**|
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Комментарии
 
-Поскольку C++ допускает перегрузку, можно вызывать перегрузки **ASIN** со **`float`** значениями и **`long double`** . В программе на языке C, если только вы не используете \<tgmath.h> макрос для вызова этой функции, **ASIN** всегда принимает и возвращает **`double`** .
+Поскольку C++ допускает перегрузку, можно вызывать перегрузки **`asin`** со **`float`** значениями и **`long double`** . В программе на языке C, если только вы не используете `<tgmath.h>` макрос для вызова этой функции, **`asin`** всегда принимает и возвращает **`double`** .
 
-При использовании \<tgmath.h> `asin()` макроса тип аргумента определяет, какая версия функции выбрана. Подробные сведения см. в разделе [Type-Generic Math](../../c-runtime-library/tgmath.md) .
+При использовании `<tgmath.h>` `asin()` макроса тип аргумента определяет, какая версия функции выбрана. Подробные сведения см. в разделе [Type-Generic Math](../../c-runtime-library/tgmath.md) .
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 
@@ -87,19 +87,19 @@ long double asin( long double x );  // C++ only
 
 |Подпрограмма|Обязательный заголовок (C)|Обязательный заголовок (C++)|
 |-------------|---------------------|-|
-|**ASIN**, **асинф**, **ASIN**|\<math.h>|\<cmath> или \<math.h>|
-|макрос **ASIN ()** | \<tgmath.h> ||
+|**`asin`**, **`asinf`**, **`asinl`**|`<math.h>`|`<cmath>` или `<math.h>`|
+|**`asin()`** макровирусах | `<tgmath.h>` ||
 
 ## <a name="example"></a>Пример
 
-Дополнительные сведения см. в разделе [acos, acosf, acosl](acos-acosf-acosl.md).
+Дополнительные сведения см. [ `acos` в разделе `acosf` , `acosl` , ](acos-acosf-acosl.md).
 
-## <a name="see-also"></a>Дополнительно
+## <a name="see-also"></a>См. также
 
-[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)<br/>
-[acos, acosf, acosl](acos-acosf-acosl.md)<br/>
-[atan, atanf, atanl, atan2, atan2f, atan2l](atan-atanf-atanl-atan2-atan2f-atan2l.md)<br/>
-[cos, cosf, cosl](cos-cosf-cosl.md)<br/>
-[_matherr](matherr.md)<br/>
-[sin, sinf, sinl](sin-sinf-sinl.md)<br/>
-[tan, tanf, tanl](tan-tanf-tanl.md)<br/>
+[Поддержка операций с плавающей запятой](../../c-runtime-library/floating-point-support.md)\
+[`acos`, `acosf`, `acosl`](acos-acosf-acosl.md)\
+[`atan`, `atanf`, `atanl`, `atan2`, `atan2f`, `atan2l`](atan-atanf-atanl-atan2-atan2f-atan2l.md)\
+[`cos`, `cosf`, `cosl`](cos-cosf-cosl.md)\
+[`_matherr`](matherr.md)\
+[`sin`, `sinf`, `sinl`](sin-sinf-sinl.md)\
+[`tan`, `tanf`, `tanl`](tan-tanf-tanl.md)
