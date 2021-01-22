@@ -1,18 +1,21 @@
 ---
-description: 'Дополнительные сведения: литералы Chrono'
+description: Дополнительные сведения о `chrono` литералах
 title: литералы chrono
-ms.date: 11/04/2016
-ms.assetid: 1a9e23b1-256f-4570-8226-5fa7364fb032
-ms.openlocfilehash: 497094d920a25635496fb0aa30295d378571418c
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+f1_keywords:
+- chrono/std::literals::chrono_literals
+- std::literals::chrono_literals
+- chrono_literals
+ms.date: 01/15/2021
+ms.openlocfilehash: 84540d111b33738c8bb1bcb4b43966e1c50682c0
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97325159"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667548"
 ---
-# <a name="chrono-literals"></a>литералы chrono
+# <a name="chrono-literals"></a>`chrono` литералы
 
-(C++ 14) \<chrono> Заголовок определяет 12 [пользовательских литералов](../cpp/user-defined-literals-cpp.md) для упрощения использования литералов, представляющих часы, минуты, секунды, миллисекунды, микросекунды и наносекундах. Каждый определяемый пользователем литерал имеет целочисленное значение и значение перегрузки с плавающей запятой. Литералы определяются во встроенном пространстве имен literals::chrono_literals, которое автоматически переводится в область действия, если в ней присутствует пространство имен std::chrono.
+(C++ 14) `<chrono>` Заголовок определяет 12 [определяемых пользователем литералов](../cpp/user-defined-literals-cpp.md) , представляющих часы, минуты, секунды, миллисекунды, микросекунды и наносекундах. Каждый определяемый пользователем литерал имеет целочисленное значение и значение перегрузки с плавающей запятой. Литералы определяются во `literals::chrono_literals` встроенном пространстве имен, которое автоматически добавляется в область, если `std::chrono` находится в области.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -61,11 +64,11 @@ inline namespace literals {
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Литералы, которые принимают **`long long`** аргумент, возвращают значение или соответствующий тип. Литералы, которые принимают аргумент с плавающей запятой, возвращают [duration](../standard-library/duration-class.md).
+Литералы, которые принимают **`long long`** аргумент, возвращают значение или соответствующий тип. Литералы, которые принимают аргумент с плавающей запятой, возвращают [`duration`](../standard-library/duration-class.md) .
 
 ## <a name="example"></a>Пример
 
-В следующем примере демонстрируется использование литералов chrono.
+В следующих примерах показано, как использовать `chrono` литералы.
 
 ```cpp
 constexpr auto day = 24h;

@@ -1,10 +1,12 @@
 ---
 title: '&lt;filesystem&gt;'
 description: Описывает классы, функции и типы в filesystem заголовке стандартной библиотеки C++.
-ms.date: 01/22/2020
+ms.date: 01/15/2021
 f1_keywords:
 - <filesystem>
-ms.assetid: 5005753b-46fa-43e1-8d4e-1b38617d3cfd
+- filesystem/std::filesystem
+- std::filesystem
+- std::experimental::filesystem
 no-loc:
 - filesystem
 - experimental
@@ -12,16 +14,16 @@ no-loc:
 - wchar_t
 - char16_t
 - char32_t
-ms.openlocfilehash: 0cf5e16eb21c02cfb96577c1dada873f087a71cf
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 8dc81692c7c7dc467f3ab8e2ceb8cac19e004ab8
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88835835"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667474"
 ---
-# &lt;filesystem&gt;
+# `filesystem`
 
-Включите заголовок &lt; filesystem> для доступа к классам и функциям, которые управляют и извлекают сведения о путях, файлах и каталогах.
+Включите заголовок `<filesystem>` для доступа к классам и функциям, которые управляют и извлекают сведения о путях, файлах и каталогах.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -93,24 +95,24 @@ using namespace std::experimental::filesystem::v1;
 
 Дополнительные сведения и примеры кода см. в разделе [Навигация по файловой системе (C++)](../standard-library/file-system-navigation.md).
 
-## <a name="members"></a>Элементы
+## <a name="members"></a>Члены
 
 ### <a name="classes"></a>Классы
 
 |name|Описание|
 |-|-|
-|[Класс directory_entry](../standard-library/directory-entry-class.md)|Описывает объект, возвращаемый `directory_iterator` или, `recursive_directory_iterator` и содержит `path` .|
-|[Класс directory_iterator](../standard-library/directory-iterator-class.md)|Описывает итератор ввода, выполняющий последовательный перебор имен файлов в каталоге файловой системы.|
-|[filesystemкласс _error](../standard-library/filesystem-error-class.md)|Базовый класс для исключений, создаваемых для отчета о переполнении системы низкого уровня.|
-|[Класс path](../standard-library/path-class.md)|Определяет класс, который хранит объект типа шаблона `String` , пригодный для использования в качестве имени файла.|
-|[Класс recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md)|Описывает итератор ввода, выполняющий последовательный перебор имен файлов в каталоге файловой системы. Итератор может также просматривать подкаталоги.|
-|[Класс file_status](../standard-library/file-status-class.md)|Создает оболочку для `file_type`.|
+|[`directory_entry` см](../standard-library/directory-entry-class.md)|Описывает объект, возвращаемый `directory_iterator` или, `recursive_directory_iterator` и содержит `path` .|
+|[`directory_iterator` см](../standard-library/directory-iterator-class.md)|Описывает итератор ввода, выполняющий последовательный перебор имен файлов в каталоге файловой системы.|
+|[`filesystem_error` см](../standard-library/filesystem-error-class.md)|Базовый класс для исключений, создаваемых для отчета о переполнении системы низкого уровня.|
+|[`path` см](../standard-library/path-class.md)|Определяет класс, который хранит объект типа шаблона `String` , пригодный для использования в качестве имени файла.|
+|[`recursive_directory_iterator` см](../standard-library/recursive-directory-iterator-class.md)|Описывает итератор ввода, выполняющий последовательный перебор имен файлов в каталоге файловой системы. Итератор может также просматривать подкаталоги.|
+|[`file_status` см](../standard-library/file-status-class.md)|Создает оболочку для `file_type`.|
 
 ### <a name="structs"></a>Структуры
 
 |Имя|Описание|
 |-|-|
-|[Структура space_info](../standard-library/space-info-structure.md)|Содержит сведения о томе.|
+|[`space_info` дереве](../standard-library/space-info-structure.md)|Содержит сведения о томе.|
 
 ## <a name="functions"></a>Функции
 
@@ -124,11 +126,11 @@ using namespace std::experimental::filesystem::v1;
 
 |Имя|Описание|
 |-|-|
-|[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|Перечисление, используемое с функцией [copy_file](../standard-library/filesystem-functions.md#copy_file) , которое определяет действия в случае, если целевой файл уже существует.|
-|[directory_options](../standard-library/filesystem-enumerations.md#directory_options)|Перечисление, указывающее параметры итераторов каталога.|
-|[file_type](../standard-library/filesystem-enumerations.md#file_type)|Перечисление для типов файлов.|
-|[perm_options](../standard-library/filesystem-enumerations.md#perm_options)| Перечисляет параметры для `permissions` функции. |
-|[perms](../standard-library/filesystem-enumerations.md#perms)|Тип битовой маски, используемый для передачи разрешений и параметров для разрешений.|
+|[`copy_options`](../standard-library/filesystem-enumerations.md#copy_options)|Перечисление, используемое с функцией [copy_file](../standard-library/filesystem-functions.md#copy_file) , которое определяет действия в случае, если целевой файл уже существует.|
+|[`directory_options`](../standard-library/filesystem-enumerations.md#directory_options)|Перечисление, указывающее параметры итераторов каталога.|
+|[`file_type`](../standard-library/filesystem-enumerations.md#file_type)|Перечисление для типов файлов.|
+|[`perm_options`](../standard-library/filesystem-enumerations.md#perm_options)| Перечисляет параметры для `permissions` функции. |
+|[`perms`](../standard-library/filesystem-enumerations.md#perms)|Тип битовой маски, используемый для передачи разрешений и параметров для разрешений.|
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -1,7 +1,7 @@
 ---
-description: 'Дополнительные сведения: исключения (C/C++)'
-title: Коды исключений загрузки библиотек DLL (C/C++)
-ms.date: 11/19/2019
+description: 'Дополнительные сведения: исключения с задержкой загрузки (C/C++)'
+title: Коды исключений при задержке загрузки DLL
+ms.date: 01/19/2021
 f1_keywords:
 - ERROR_MOD_NOT_FOUND
 - vcppException
@@ -12,25 +12,24 @@ helpviewer_keywords:
 - delayed loading of DLLs, exceptions
 - ERROR_SEVERITY_ERROR exception
 - ERROR_MOD_NOT_FOUND exception
-ms.assetid: c03be05d-1c39-4f35-84cf-00c9af3bae9a
-ms.openlocfilehash: 53ae6ab9a21309159b29a96e58d077f45fe30e12
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 214d8514baba7b180b8d838af8a6b6c0543cc1ce
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97200849"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667192"
 ---
-# <a name="exceptions-cc"></a>Исключения (C/C++)
+# <a name="dll-delay-load-exception-codes"></a>Коды исключений при задержке загрузки DLL
 
-При обнаружении сбоев могут возникать два кода исключений:
+При возникновении ошибок могут возникать два структурированных кода исключений:
 
-- Для сбоя **LoadLibrary**
+- Для `LoadLibrary` сбоя
 
-- Для ошибки **GetProcAddress**
+- Для `GetProcAddress` сбоя
 
-Ниже приведены сведения об исключении:
+Ниже приведен макрос сведений об исключении:
 
-```
+```C
 //
 // Exception information
 //
@@ -38,12 +37,12 @@ ms.locfileid: "97200849"
 #define VcppException(sev,err)  ((sev) | (FACILITY_VISUALCPP<<16) | err)
 ```
 
-Вызываемые коды исключений — это стандартные значения Вкппексцептион (ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND) и Вкппексцептион (ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND). Исключение передает указатель на структуру **делайлоадинфо** в значении лпдворд, которое может быть извлечено **жетексцептионинформатион** в поле структура [EXCEPTION_RECORD](/windows/win32/api/winnt/ns-winnt-exception_record) , матрице ExceptionInformation [0].
+Вызываемые коды исключений — это `VcppException(ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND)` стандартные `VcppException(ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND)` значения и. Исключение передает указатель на `DelayLoadInfo` структуру в `LPDWORD` значении, которое может быть извлечено `GetExceptionInformation` в [`EXCEPTION_RECORD`](/windows/win32/api/winnt/ns-winnt-exception_record) структуре в `ExceptionInformation[0]` поле.
 
-Кроме того, если в поле Граттрс заданы неверные биты, выдается исключение ERROR_INVALID_PARAMETER. Это исключение для всех целей и назначений, неустранимое.
+Кроме того, если в поле заданы неправильные биты `grAttrs` , возникает исключение `ERROR_INVALID_PARAMETER` . Это исключение для всех целей и назначений, неустранимое.
 
-Дополнительные сведения см. в разделе [определения структур и констант](structure-and-constant-definitions.md) .
+Дополнительные сведения см. в разделе [определения структуры и константы](structure-and-constant-definitions.md).
 
 ## <a name="see-also"></a>См. также раздел
 
-[Обработка ошибок и уведомление](error-handling-and-notification.md)
+[Обработка ошибок и предупреждений](error-handling-and-notification.md)

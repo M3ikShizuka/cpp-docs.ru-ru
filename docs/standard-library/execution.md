@@ -1,25 +1,27 @@
 ---
 description: 'Дополнительные сведения: &lt; выполнение&gt;'
 title: '&lt;InstancePersistenceCommand&gt;'
-ms.date: 04/18/2019
+ms.date: 01/15/2021
 f1_keywords:
 - <execution>
+- execution/std::execution
+- std::execution
 helpviewer_keywords:
 - execution header
-ms.openlocfilehash: 7603bc6a78671482f691f15f83f51439a5002870
-ms.sourcegitcommit: 118e4ad82c0f1c9ac120f105d84224e5fe4cef28
+ms.openlocfilehash: 2ffba3ad8620092676588c2a67e36cf8956413ba
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98126576"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667484"
 ---
-# <a name="ltexecutiongt"></a>&lt;InstancePersistenceCommand&gt;
+# `<execution>`
 
 Описывает политики выполнения для параллельных алгоритмов.
 
 ## <a name="syntax"></a>Синтаксис
 
-```
+```cpp
 namespace std {
     template<class T> inline constexpr bool is_execution_policy_v = is_execution_policy<T>::value;
 }
@@ -34,10 +36,10 @@ namespace std::execution {
 
 |Имя|Описание|
 |-|-|
-|[Структура is_execution_policy](is-execution-policy-struct.md)|Обнаруживает политики выполнения в целях исключения сигнатур функций из неоднозначного участия в разрешении перегрузки.|
-|[Класс parallel_policy](parallel-policy-class.md)|Используется в качестве уникального типа для устранения неоднозначности при перегрузке параллельного алгоритма и указывает, что выполнение параллельного алгоритма может быть параллельным.|
-|[Класс parallel_unsequenced_policy](parallel-unsequenced-policy-class.md)|Используется в качестве уникального типа для устранения неоднозначности при перегрузке параллельного алгоритма и указывает, что выполнение параллельного алгоритма может быть параллельным и векторным.|
-|[Класс sequenced_policy](sequenced-policy-class.md)|Используется в качестве уникального типа для устранения неоднозначности при перегрузке параллельного алгоритма и требует, чтобы выполнение параллельного алгоритма не было параллельным.|
+|[`is_execution_policy` Struct](is-execution-policy-struct.md)|Обнаруживает политики выполнения для исключения определенных сигнатур функций из неоднозначного участия в разрешении перегрузки.|
+|[`parallel_policy` См](parallel-policy-class.md)|Используется в качестве уникального типа для устранения неоднозначности при перегрузке параллельного алгоритма. Указывает, что выполнение параллельного алгоритма может быть параллельным.|
+|[`parallel_unsequenced_policy` См](parallel-unsequenced-policy-class.md)|Используется в качестве уникального типа для устранения неоднозначности при перегрузке параллельного алгоритма. Указывает, что выполнение параллельного алгоритма может быть параллельно и векторным.|
+|[`sequenced_policy` См](sequenced-policy-class.md)|Используется в качестве уникального типа для устранения неоднозначности при перегрузке параллельного алгоритма. Указывает, что выполнение параллельного алгоритма может не быть параллельным.|
 
 ## <a name="requirements"></a>Требования
 

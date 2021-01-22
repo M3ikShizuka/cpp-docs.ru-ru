@@ -1,7 +1,7 @@
 ---
 description: 'Дополнительные сведения: strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l'
 title: strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
-ms.date: 4/2/2020
+ms.date: 1/20/2021
 api_name:
 - strncat
 - _strncat_l
@@ -64,20 +64,19 @@ helpviewer_keywords:
 - _tcsncat_l function
 - _mbsncat_l function
 - tcsncat function
-ms.assetid: de67363b-68c6-4ca5-91e3-478610ad8159
-ms.openlocfilehash: 509afe42e4fbf4cec9f0a7a077f0bf4ce0a1423e
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 4b5ae812560cb42498ebed71bb9b8791581ef332
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97344774"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667023"
 ---
 # <a name="strncat-_strncat_l-wcsncat-_wcsncat_l-_mbsncat-_mbsncat_l"></a>strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l
 
-Добавляет символы строки. Доступны более безопасные версии этих функций; см. раздел [strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l](strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md).
+Добавляет символы строки. Доступны более безопасные версии этих функций, см. раздел `[strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l` ] (strncat-s-strncat-s-l-wcsncat-s-wcsncat-s-l-mbsncat-s-mbsncat-s-l.md).
 
 > [!IMPORTANT]
-> **_mbsncat** и **_mbsncat_l** нельзя использовать в приложениях, которые выполняются в среда выполнения Windows. Дополнительные сведения: [Функции CRT, которые не поддерживаются в приложениях универсальной платформы Windows](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **`_mbsncat`** и **`_mbsncat_l`** не могут использоваться в приложениях, выполняемых в среда выполнения Windows. Дополнительные сведения: [Функции CRT, которые не поддерживаются в приложениях универсальной платформы Windows](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -132,32 +131,32 @@ unsigned char *_mbsncat_l(
 
 ### <a name="parameters"></a>Параметры
 
-*стрдест*<br/>
+*`strDest`*\
 Строка назначения, завершающаяся нуль-символом.
 
-*стрсаурце*<br/>
+*`strSource`*\
 Исходная строка, завершающаяся символом NULL.
 
-*count*<br/>
+*`count`*\
 Количество символов для добавления.
 
-*locale*<br/>
+*`locale`*\
 Используемый языковой стандарт.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Возвращает указатель на целевую строку символов. Нет зарезервированных возвращаемых значений для указания ошибки.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Примечания
 
-Функция **strncat** добавляет (не более) первые символы *Count* из *стрсаурце* в *стрдест*. Начальный символ *стрсаурце* перезаписывает завершающий нуль символ *стрдест*. Если символ NULL появляется в *стрсаурце* перед добавлением символов *Count* , **strncat** добавляет все символы из *стрсаурце*, вплоть до символа null. Если *Count* больше, чем длина *стрсаурце*, вместо *Count* используется длина *стрсаурце* . Во всех случаях результирующая строка завершается нуль-символом. Если копирование производится между перекрывающимися строками, поведение не определено.
+**`strncat`** Функция добавляет не больше первых *`count`* символов *`strSource`* в *`strDest`* . Начальный символ *`strSource`* перезаписи завершающего нуль символа в *`strDest`* . Если символ NULL появляется в *`strSource`* перед *`count`* добавлением символов, **`strncat`** добавляет все символы из *`strSource`* , вплоть до символа null. Если *`count`* значение больше, чем длина *`strSource`* , используется вместо параметра length *`strSource`* *`count`* . Во всех случаях результирующая строка завершается нуль-символом. Если копирование производится между перекрывающимися строками, поведение не определено.
 
 > [!IMPORTANT]
-> **strncat** не проверяет наличие достаточного места в *стрдест*; Поэтому возможная причина переполнения буфера. Помните *, что количество* добавляемых символов ограничено. Он не является ограничением размера *стрдест*. См. пример ниже. Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
+> **`strncat`** не проверяет наличие достаточного места в *`strDest`* , поэтому возможная причина переполнения буфера. Обратите внимание, что *`count`* ограничивает число добавленных символов; это не ограничение на размер *`strDest`* . См. пример ниже. Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
 
-**wcsncat** и **_mbsncat** — это версии **strncat** для расширенных символов и многобайтовых символов. Строковые аргументы и возвращаемое значение **wcsncat** являются строками расширенных символов. **_mbsncat** являются строками многобайтовых символов. В остальном эти три функции ведут себя идентично.
+**`wcsncat`** и **`_mbsncat`** — это версии с расширенными символами и многобайтовой кодировкой **`strncat`** . Строковые аргументы и возвращаемое значение **`wcsncat`** являются строками расширенных символов; это строки **`_mbsncat`** многобайтовых символов. В остальном эти три функции ведут себя идентично.
 
-Выходное значение зависит от настройки категории **LC_CTYPE** языкового стандарта; дополнительные сведения см. в разделе [setlocale](setlocale-wsetlocale.md). Версии этих функций без суффикса **_l** используют текущий языковой стандарт для данного поведения, зависящего от языкового стандарта; версии с суффиксом **_l** идентичны, за исключением того, что они используют переданный параметр языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
+На выходное значение влияет параметр **`LC_CTYPE`** категории языкового стандарта. Дополнительные сведения см. в разделе [`setlocale`](setlocale-wsetlocale.md) . Версии этих функций без **`_l`** суффикса используют текущий языковой стандарт для этого поведения, зависящего от языкового стандарта. Версии с **`_l`** суффиксом идентичны, за исключением того, что они используют переданный параметр языкового стандарта. Для получения дополнительной информации см. [Locale](../../c-runtime-library/locale.md).
 
 В C++ эти функции имеют шаблонные перегрузки. Дополнительные сведения см. в разделе [Безопасные перегрузки шаблонов](../../c-runtime-library/secure-template-overloads.md).
 
@@ -165,24 +164,24 @@ unsigned char *_mbsncat_l(
 
 ### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
-|Подпрограмма TCHAR.H|_UNICODE и _MBCS не определены|_MBCS определено|_UNICODE определено|
+|`TCHAR.H `ассемблер|`_UNICODE & _MBCS` не определено|`_MBCS` определяется|`_UNICODE` определяется|
 |---------------------|------------------------------------|--------------------|-----------------------|
-|**_tcsncat**|**strncat**|**_mbsnbcat**|**wcsncat**|
-|**_tcsncat_l**|**_strncat_l**|**_mbsnbcat_l**|**_wcsncat_l**|
+|**`_tcsncat`**|**`strncat`**|**`_mbsnbcat`**|**`wcsncat`**|
+|**`_tcsncat_l`**|**`_strncat_l`**|**`_mbsnbcat_l`**|**`_wcsncat_l`**|
 
 > [!NOTE]
-> **_strncat_l** и **_wcsncat_l** не имеют зависимости от языкового стандарта и не предназначены для непосредственного вызова. Они предоставляются для внутреннего использования **_tcsncat_l**.
+> **`_strncat_l`** и не **`_wcsncat_l`** имеют зависимости от языкового стандарта и не предназначены для непосредственного вызова. Они предоставляются для внутреннего использования **`_tcsncat_l`** .
 
 ## <a name="requirements"></a>Требования
 
 |Подпрограмма|Обязательный заголовок|
 |-------------|---------------------|
-|**strncat**|\<string.h>|
-|**wcsncat**|\<string.h> или \<wchar.h>|
-|**_mbsncat**|\<mbstring.h>|
-|**_mbsncat_l**|\<mbstring.h>|
+|**`strncat`**|\<string.h>|
+|**`wcsncat`**|\<string.h> или \<wchar.h>|
+|**`_mbsncat`**|\<mbstring.h>|
+|**`_mbsncat_l`**|\<mbstring.h>|
 
-Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
+Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Пример
 
@@ -235,16 +234,16 @@ After GoodAppend:  This is the initial string!Extra text t (39 chars)
 
 ## <a name="see-also"></a>См. также раздел
 
-[Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
-[_mbsnbcat, _mbsnbcat_l](mbsnbcat-mbsnbcat-l.md)<br/>
-[strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)<br/>
-[strcmp, wcscmp, _mbscmp](strcmp-wcscmp-mbscmp.md)<br/>
-[strcpy, wcscpy, _mbscpy](strcpy-wcscpy-mbscpy.md)<br/>
-[strncmp, wcsncmp, _mbsncmp, _mbsncmp_l](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)<br/>
-[strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)<br/>
-[_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)<br/>
-[strrchr, wcsrchr, _mbsrchr, _mbsrchr_l](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)<br/>
-[_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)<br/>
-[strspn, wcsspn, _mbsspn, _mbsspn_l](strspn-wcsspn-mbsspn-mbsspn-l.md)<br/>
-[Локаль](../../c-runtime-library/locale.md)<br/>
-[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
+[Управление строками](../../c-runtime-library/string-manipulation-crt.md)\
+[`_mbsnbcat, _mbsnbcat_l`](mbsnbcat-mbsnbcat-l.md)\
+[`strcat, wcscat, _mbscat`](strcat-wcscat-mbscat.md)\
+[`strcmp, wcscmp, _mbscmp`](strcmp-wcscmp-mbscmp.md)\
+[`strcpy, wcscpy, _mbscpy`](strcpy-wcscpy-mbscpy.md)\
+[`strncmp, wcsncmp, _mbsncmp, _mbsncmp_l`](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md)\
+[`strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l`](strncpy-strncpy-l-wcsncpy-wcsncpy-l-mbsncpy-mbsncpy-l.md)\
+[`_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l`](strnicmp-wcsnicmp-mbsnicmp-strnicmp-l-wcsnicmp-l-mbsnicmp-l.md)\
+[`strrchr, wcsrchr, _mbsrchr, _mbsrchr_l`](strrchr-wcsrchr-mbsrchr-mbsrchr-l.md)\
+[`_strset, _strset_l, _wcsset, _wcsset_l, _mbsset, _mbsset_l`](strset-strset-l-wcsset-wcsset-l-mbsset-mbsset-l.md)\
+[`strspn, wcsspn, _mbsspn, _mbsspn_l`](strspn-wcsspn-mbsspn-mbsspn-l.md)\
+[Языкового стандарта](../../c-runtime-library/locale.md)\
+[Интерпретация последовательностей Multibyte-Character](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)\

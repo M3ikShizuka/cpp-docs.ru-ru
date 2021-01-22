@@ -1,26 +1,25 @@
 ---
-description: 'Дополнительные сведения: вычисление необходимых значений'
-title: Вычисление необходимых значений
-ms.date: 11/04/2016
+description: 'Дополнительные сведения: вычисление необходимых значений для отложенной загрузки'
+title: Вычисление необходимых значений для отложенной загрузки
+ms.date: 01/19/2021
 helpviewer_keywords:
 - helper functions, calculating necessary values
-ms.assetid: 4f037d0f-881a-4a48-a9d2-9f8872dfccb7
-ms.openlocfilehash: 92d8462be2db55dbc10375629b133d9286560878
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: ae5e0c15b5b13f12fd90c1378a1e449516b55f43
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97179347"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667445"
 ---
-# <a name="calculating-necessary-values"></a>Вычисление необходимых значений
+# <a name="calculate-necessary-values-for-delay-loading"></a>Вычисление необходимых значений для отложенной загрузки
 
-Две важные части информации должны рассчитываться с помощью вспомогательной подпрограммы Delay. Для этого в делайхлп. cpp есть две встроенные функции для вычисления этой информации.
+Вспомогательная подсистема с отложенной загрузкой должна вычислить два важных фрагмента информации. Чтобы вычислить эту информацию, в можно получить две встроенные функции *`delayhlp.cpp`* .
 
-- Сначала вычисляет индекс текущего импорта в трех различных таблицах (импорт таблицы адресов (IAT), связанную таблицу адресов импорта (Биат) и несвязанную таблицу адресов импорта (УИАТ)).
+- Первый, `IndexFromPImgThunkData` ,, вычисляет индекс текущего импорта в трех различных таблицах (импорт таблицы адресов (IAT), связанную таблицу адресов импорта (Биат) и несвязанную таблицу адресов импорта (уиат)).
 
-- Вторая подсчитывает количество импортов в допустимой IAT.
+- Во втором, `CountOfImports` , подсчитывается количество импортов в допустимой IAT.
 
-```cpp
+```C
 // utility function for calculating the index of the current import
 // for all the tables (INT, BIAT, UIAT, and IAT).
 __inline unsigned
@@ -44,4 +43,4 @@ CountOfImports(PCImgThunkData pitdBase) {
 
 ## <a name="see-also"></a>См. также раздел
 
-[Основные сведения о вспомогательной функции](understanding-the-helper-function.md)
+[Понятие вспомогательной функции](understanding-the-helper-function.md)

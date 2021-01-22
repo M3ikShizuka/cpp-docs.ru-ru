@@ -1,27 +1,26 @@
 ---
-description: 'Дополнительные сведения: указание библиотек DLL для задержки загрузки'
-title: Задание библиотек DLL с отложенной загрузкой
-ms.date: 11/04/2016
+description: Дополнительные сведения об указании библиотек DLL для задержки загрузки
+title: Указание библиотек DLL для задержки загрузки
+ms.date: 01/19/2021
 helpviewer_keywords:
 - DELAYLOAD linker option
 - delayed loading of DLLs
 - delayed loading of DLLs, specifying
 - /DELAYLOAD linker option
-ms.assetid: 94cbecfe-7a42-40d1-a618-9f2786bac0d8
-ms.openlocfilehash: ece96ea6f818c7e0bc6b6e032ce523e96a9f4ecb
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: de8c2e3cb9605cbc6dbc215a0449348c12295c17
+ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97224548"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98667499"
 ---
-# <a name="specifying-dlls-to-delay-load"></a>Задание библиотек DLL с отложенной загрузкой
+# <a name="specify-dlls-to-delay-load"></a>Указание библиотек DLL для задержки загрузки
 
-Можно указать, какие DLL следует отложить загрузку с помощью параметра [параметр/DELAYLOAD](delayload-delay-load-import.md): `dllname` компоновщика. Если вы не планируете использовать собственную версию вспомогательной функции, необходимо также связать программу с библиотекой delayimp.lib (для классических приложений) или dloadhelper.lib (для приложений Магазина).
+С помощью параметра компоновщика можно указать, какие библиотеки DLL следует отложить загрузку [`/delayload:dllname`](delayload-delay-load-import.md) . Если вы не планируете использовать собственную версию вспомогательной функции, необходимо также связать программу с *`delayimp.lib`* (для классических приложений) или *`dloadhelper.lib`* (для приложений UWP).
 
-Ниже приведен простой пример задержки загрузки библиотеки DLL.
+Ниже приведен простой пример отложенной загрузки библиотеки DLL:
 
-```
+```cpp
 // cl t.cpp user32.lib delayimp.lib  /link /DELAYLOAD:user32.dll
 #include <windows.h>
 // uncomment these lines to remove .libs from command line
@@ -34,8 +33,8 @@ int main() {
 }
 ```
 
-Создание ОТЛАДОЧНОЙ версии проекта. Просмотрите код, используя отладчик, и обратите внимание, что файл user32.dll загружается только при вызове `MessageBox`.
+Создание ОТЛАДОЧНОЙ версии проекта. Пошаговое выполнение кода с помощью отладчика, и вы заметите, что *`user32.dll`* загружается только при вызове `MessageBox` .
 
 ## <a name="see-also"></a>См. также раздел
 
-[Поддержка компоновщика для Delay-Loadedных библиотек DLL](linker-support-for-delay-loaded-dlls.md)
+[Поддержка компоновщика для библиотек DLL с отложенной загрузкой](linker-support-for-delay-loaded-dlls.md)
