@@ -1,7 +1,7 @@
 ---
 description: 'Дополнительные сведения: `/X` (игнорировать стандартные пути включаемых файлов)'
 title: /X (игнорирование стандартных путей включения)
-ms.date: 07/31/2020
+ms.date: 01/21/2021
 f1_keywords:
 - /x
 - VC.Project.VCCLCompilerTool.OVERWRITEStandardIncludePath
@@ -15,22 +15,22 @@ helpviewer_keywords:
 - X compiler option
 - Ignore Standard Include Paths compiler option
 ms.assetid: 16bdf2cc-c8dc-46e4-bdcc-f3caeba5e1ef
-ms.openlocfilehash: 69936b80893de2c45622ec9973a218a94e8029a4
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 97d19027c41df7db9103c1c21d2f2d7b8d398e7e
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97261012"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98712808"
 ---
 # <a name="x-ignore-standard-include-paths"></a>`/X` (Игнорировать стандартные пути включаемых файлов)
 
-Предотвращает Поиск включаемых файлов в каталогах, указанных в переменных среды PATH и INCLUDE, компилятором.
+Не разрешает компилятору выполнять поиск включаемых файлов в каталогах, указанных в `PATH` `INCLUDE` переменных среды и.
 
 ## <a name="syntax"></a>Синтаксис
 
 > **`/X`**
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот параметр можно использовать с параметром [ `/I` (дополнительные каталоги включения)](i-additional-include-directories.md) , чтобы указать альтернативный путь к стандартным включаемым файлам.
 
@@ -48,7 +48,7 @@ ms.locfileid: "97261012"
 
 ## <a name="example"></a>Пример
 
-В следующей команде **`/X`** сообщает компилятору, что следует игнорировать расположения, указанные в переменных среды PATH и include, а **`/I`** также указать каталог для поиска включаемых файлов:
+В следующей команде **`/X`** сообщает компилятору, что следует игнорировать расположения, указанные `PATH` `INCLUDE` переменными среды и, и **`/I`** указывает каталог для поиска включаемых файлов:
 
 ```cmd
 CL /X /I \ALT\INCLUDE MAIN.C

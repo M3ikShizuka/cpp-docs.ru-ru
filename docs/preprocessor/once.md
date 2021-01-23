@@ -1,21 +1,23 @@
 ---
-description: 'Дополнительные сведения о: после директивы pragma'
-title: Прагма once
-ms.date: 01/19/2021
+description: 'Дополнительные сведения: один раз pragma'
+title: После pragma
+ms.date: 01/22/2021
 f1_keywords:
 - vc-pragma.once
 - once_CPP
 helpviewer_keywords:
 - once pragma
-- pragmas, once
-ms.openlocfilehash: 87e3a87d8922868ce8ac3c48815c09de8727eba7
-ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
+- pragma, once
+no-loc:
+- pragma
+ms.openlocfilehash: 3edb5f88202ee783e587b1f886eddddf427f6133
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98667224"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713484"
 ---
-# <a name="once-pragma"></a>pragma `once`
+# <a name="once-no-locpragma"></a>`once` pragma
 
 Указывает, что компилятор включает файл заголовка только один раз при компиляции файла с исходным кодом.
 
@@ -27,7 +29,7 @@ ms.locfileid: "98667224"
 
 Использование `#pragma once` может сократить время сборки, так как компилятор не будет открывать и считывать файл снова после первого `#include` файла в записи преобразования. Он называется *оптимизацией с множественным включением*. Он действует аналогично параметру *include guard* , который использует определения макросов препроцессора для предотвращения множественного включения содержимого файла. Это также помогает предотвратить нарушения *правил одного определения*: требование, что все шаблоны, типы, функции и объекты содержат не более одного определения в коде.
 
-Пример:
+Например:
 
 ```cpp
 // header.h
@@ -55,4 +57,4 @@ ms.locfileid: "98667224"
 
 ## <a name="see-also"></a>См. также раздел
 
-[`pragma` директивы и `__pragma` ключевое слово](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Директивы pragma и `__pragma` `_Pragma` Ключевые слова и](./pragma-directives-and-the-pragma-keyword.md)

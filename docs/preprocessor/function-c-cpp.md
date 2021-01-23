@@ -1,34 +1,35 @@
 ---
-description: 'Дополнительные сведения: функция pragma'
-title: прагма функции
-ms.date: 08/29/2019
+description: Дополнительные сведения о pragma директиве Function в Microsoft C/C++
+title: функций pragma
+ms.date: 01/22/2021
 f1_keywords:
 - function_CPP
 - vc-pragma.function
 helpviewer_keywords:
 - function pragma
-- pragmas, function
-ms.assetid: cbd1bd60-fabf-4b5a-9c3d-2d9f4b871365
-ms.openlocfilehash: 77b215458f9ffdb6be605d0ae4b239451a1fe1bf
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+- pragma, function
+no-loc:
+- pragma
+ms.openlocfilehash: 3d4b1e2f50cd118e613235271428588ac585affc
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97269306"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98712834"
 ---
-# <a name="function-pragma"></a>прагма функции
+# <a name="function-no-locpragma"></a>`function` pragma
 
-Указывает компилятору создавать вызовы функций, указанных в списке аргументов директивы pragma, вместо встраивания их.
+Указывает компилятору создавать вызовы функций, указанных в pragma списке аргументов, вместо их встраивания.
 
 ## <a name="syntax"></a>Синтаксис
 
-> **функция #pragma (** *функция1* [ **,** *функция2* ...] **)**
+> **`#pragma function(`***функция1* [ **`,`** *функция2* ...]**`)`**
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Примечания
 
-Встроенные функции обычно создаются как встроенный код, а не как вызовы функций. Если используется [встроенная директива pragma](intrinsic.md) или параметр компилятора [/Oi](../build/reference/oi-generate-intrinsic-functions.md) , чтобы сообщить компилятору о необходимости создания встроенных функций, можно использовать **функцию** pragma для явного принудительного вызова функции. После того **как прагма-** директива обнаружена, она вступает в силу в первом определении функции, которая содержит указанную подставляемую функцию. Действие переходит к концу исходного файла или к внешнему виду `intrinsic` директивы pragma, указывающей ту же встроенную функцию. **Функцию** pragma можно использовать только за пределами функции на глобальном уровне.
+Встроенные функции обычно создаются как встроенный код, а не как вызовы функций. При использовании [ `intrinsic` pragma](intrinsic.md) параметра или компилятора, [`/Oi`](../build/reference/oi-generate-intrinsic-functions.md) чтобы сообщить компилятору о необходимости создания встроенных функций, можно использовать **`function`** pragma для явного принудительного вызова функции. После того как объект **`function`** pragma виден, он вступает в силу в первом определении функции, который содержит указанную подставляемую функцию. Действие переходит к концу исходного файла или к внешнему виду, в `intrinsic` pragma котором указана та же встроенная функция. Можно использовать только **`function`** pragma внешний уровень функции на глобальном уровне.
 
-Список функций, имеющих встроенные формы, см. в разделе [встроенная директива pragma](intrinsic.md).
+Список функций, имеющих встроенные формы, см. в [ `intrinsic` pragma ](intrinsic.md)разделе.
 
 ## <a name="example"></a>Пример
 
@@ -84,4 +85,4 @@ str is '!!!!!!!!!!!!!!!'
 
 ## <a name="see-also"></a>См. также раздел
 
-[Директивы pragma и ключевое слово __pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Директивы pragma и `__pragma` `_Pragma` Ключевые слова и](./pragma-directives-and-the-pragma-keyword.md)

@@ -1,33 +1,34 @@
 ---
-description: 'Дополнительные сведения о: auto_inline pragma'
-title: Прагма auto_inline
-ms.date: 08/29/2019
+description: Дополнительные сведения об pragma директиве auto_inline в Microsoft C/C++
+title: auto_inline pragma
+ms.date: 01/22/2021
 f1_keywords:
 - auto_inline_CPP
 - vc-pragma.auto_inline
 helpviewer_keywords:
-- pragmas, auto_inline
+- pragma, auto_inline
 - auto_inline pragma
-ms.assetid: f7624cd1-be76-429a-881c-65c9040acf43
-ms.openlocfilehash: f629bbe5dc47ba15bba5b2b55541509f421fcd8c
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+no-loc:
+- pragma
+ms.openlocfilehash: 72c6823acf260d48883142f8568483eb78155da1
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97301052"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713731"
 ---
-# <a name="auto_inline-pragma"></a>Прагма auto_inline
+# <a name="auto_inline-no-locpragma"></a>`auto_inline` pragma
 
-Исключает все функции, определенные в диапазоне, где значение **Off** определяется как кандидаты для автоматического встраивания.
+Исключает все функции, определенные в диапазоне, где **`off`** указывается как кандидаты для автоматического встраивания.
 
 ## <a name="syntax"></a>Синтаксис
 
-> **auto_inline #pragma (** [{ **On**  |  **Off** }] **)**
+> **`#pragma auto_inline(`** [ { **`on`** | **`off`** } ] **`)`**
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Примечания
 
-Чтобы использовать директиву pragma **auto_inline** , поместите ее до и сразу после, а не внутри, определение функции. Директива pragma вступает в силу сразу после того, как будет отображено первое определение функции после директивы pragma.
+Чтобы использовать **`auto_inline`** pragma , разместите его до и сразу после, а не в определении функции. pragmaДействие вступает в силу сразу после того, как будет обнаружено первое определение функции после pragma .
 
 ## <a name="see-also"></a>См. также раздел
 
-[Директивы pragma и ключевое слово __pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Директивы pragma и `__pragma` `_Pragma` Ключевые слова и](./pragma-directives-and-the-pragma-keyword.md)

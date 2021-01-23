@@ -1,130 +1,129 @@
 ---
 title: Общие сведения о грамматике препроцессора (C/C++)
-description: Определяет и описывает синтаксис препроцессораC++ Microsoft C/COMPILER (компилятором MSVC).
-ms.date: 08/29/2019
+description: Определяет и описывает синтаксис препроцессора компилятора Microsoft C/C++ (КОМПИЛЯТОРОМ MSVC).
+ms.date: 01/22/2021
 helpviewer_keywords:
 - grammar
 - preprocessor, grammar
-ms.assetid: 0acb6e9b-364c-4ef8-ace4-7be980521121
-ms.openlocfilehash: 68e5f09acfc6444afb46bcbc0f7e9db10b04afed
-ms.sourcegitcommit: 8e285a766523e653aeeb34d412dc6f615ef7b17b
+ms.openlocfilehash: dbe46a67337bf55cb98100878dedb8c92120472b
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80076876"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713640"
 ---
 # <a name="preprocessor-grammar-summary-cc"></a>Общие сведения о грамматике препроцессора (C/C++)
 
-В этой статье описывается формальное описание грамматики C C++ и препроцессора. Он охватывает синтаксис директив и операторов предварительной обработки. Дополнительные сведения см. в разделе директивы [препроцессора](../preprocessor/preprocessor.md) и директивы [pragma и ключевое слово __pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md).
+В этой статье описывается формальное грамматика препроцессора C и C++. Он охватывает синтаксис директив и операторов предварительной обработки. Дополнительные сведения см. в разделе директивы [препроцессора](../preprocessor/preprocessor.md) и директивы [pragma, а также `__pragma` `_Pragma` Ключевые слова и](./pragma-directives-and-the-pragma-keyword.md).
 
-## <a name="definitions-for-the-grammar-summary"></a><a name="definitions"></a>Определения для сводки грамматики
+## <a name="definitions-for-the-grammar-summary"></a><a name="definitions"></a> Определения для сводки грамматики
 
 Терминальные слова — это конечные точки в определении синтаксиса. Никакое другое разрешение невозможно. Терминальные слова включают в себя набор зарезервированных ключевых слов и определенные пользователем идентификаторы.
 
-Нетерминальные слова — это местозаполнители в синтаксисе. Большая их часть определена в других местах этой сводки синтаксиса. Определения могут быть рекурсивными. Следующие Нетерминальные значения определены в разделе " [лексические соглашения](../cpp/lexical-conventions.md) "  *C++ справочника по языку*:
+Нетерминальные слова — это местозаполнители в синтаксисе. Большая их часть определена в других местах этой сводки синтаксиса. Определения могут быть рекурсивными. Следующие Нетерминальные значения определены в разделе " [лексические соглашения](../cpp/lexical-conventions.md) " *справочника по языку C++*:
 
-*константа*, *константное выражение*, *идентификатор*, *ключевое слово*, *оператор*, *знак препинания*
+*`constant`*, *`constant-expression`*, *`identifier`*, *`keyword`*, *`operator`*, *`punctuator`*
 
 Необязательный компонент обозначается атрибутом <sub>opt</sub> в нижнем индексе. Например, следующий синтаксис указывает необязательное выражение, заключенное в фигурные скобки:
 
-**{** *выражение*<sub>OPT</sub> **}**
+**`{`***`expression`* <sub>неявное согласие</sub>**`}`**
 
-## <a name="document-conventions"></a><a name="conventions"></a>Соглашения о документе
+## <a name="document-conventions"></a><a name="conventions"></a> Соглашения о документе
 
 В соглашениях используются разные атрибуты шрифтов для различных компонентов синтаксиса. Ниже перечислены символы и шрифты.
 
 | Атрибут | Описание |
 |---------------|-----------------|
-| *нетерминальный* | Курсивом выделяются нетерминальные символы. |
-| **#include** | Терминальные символы, выделенные жирным шрифтом, представляют литеральные зарезервированные слова и символы, которые должны вводиться, как показано. В знаках в этом контексте всегда учитывается регистр. |
+| *`nonterminal`* | Курсивом выделяются нетерминальные символы. |
+| **`#include`** | Терминальные символы, выделенные жирным шрифтом, представляют литеральные зарезервированные слова и символы, которые должны вводиться, как показано. В знаках в этом контексте всегда учитывается регистр. |
 | <sub>opt</sub> | Нетерминальные символы, за которыми следует атрибут <sub>opt</sub>, всегда являются необязательными.|
 | Шрифт по умолчанию | Знаки в наборе, описанные или перечисленные в этом шрифте, можно использовать в качестве терминальных символов в операторах. |
 
-Двоеточие ( **:** ) после нетерминального элемента обозначает начало его определения. Альтернативные определения перечисляются в отдельных строках.
+**`:`** После нетерминального двоеточия () вводит его определение. Альтернативные определения перечисляются в отдельных строках.
 
 В блоках синтаксиса кода эти символы в гарнитуре по умолчанию имеют специальное значение:
 
 | Символ | Описание |
 |---|---|
 | \[ ] | Необязательный элемент заключается в квадратные скобки. |
-| {\|} | Фигурные скобки разделяют альтернативные элементы, разделенные вертикальными линиями. |
+| { \| } | Фигурные скобки разделяют альтернативные элементы, разделенные вертикальными линиями. |
 | ... | Указывает, что предыдущий шаблон элемента можно повторить. |
 
-В блоках синтаксиса кода, запятых (`,`), Periods (`.`), точки с запятой (`;`), двоеточия (`:`), круглые скобки (`( )`), двойные кавычки (`"`) и одинарные кавычки (`'`) являются литералами.
+В блоках синтаксиса кода, запятые ( `,` ), Periods ( `.` ), точки с запятой ( `;` ), двоеточия ( `:` ), круглые скобки ( `( )` ), двойные кавычки () `"` и одинарные кавычки ( `'` ) являются литералами.
 
-## <a name="preprocessor-grammar"></a><a name="grammar"></a>Грамматика препроцессора
+## <a name="preprocessor-grammar"></a><a name="grammar"></a> Грамматика препроцессора
 
-*Строка управления*: \
-&nbsp;&nbsp;&nbsp;&nbsp; **#define** *идентификатора* *маркера — строка*<sub>\</sub>
-&nbsp;&nbsp;&nbsp;&nbsp;**идентификатор #define** *identifier* **(** *идентификатор*<sub>OPT</sub> **,** ... **,** *идентификатор*<sub>неявной</sub> **)** *строки токена-строка*<sub>\</sub>
-&nbsp;&nbsp;&nbsp;&nbsp; **#include** **"** _path-Spec_ **"** \
-&nbsp;&nbsp;&nbsp;&nbsp; **#include** **\<** _path-Spec_ **>** \
-&nbsp;&nbsp;&nbsp;&nbsp; **#line** **"** _filename_ **"** <sub>opt</sub> *с цифрами*\
-&nbsp;&nbsp;&nbsp;&nbsp; **#undef** *идентификатор*\
-&nbsp;&nbsp;&nbsp;&nbsp; **#error** *строки токена*\
-&nbsp;&nbsp;&nbsp;&nbsp; **#pragma** *Строка токена*
+*`control-line`*:\
+&emsp;**`#define`***`identifier`* *`token-string`* <sub>неявное согласие</sub>\
+&emsp;**`#define`***`identifier`* **`(`** *`identifier`* <sub>неявное согласие</sub> **`,`** ... **`,`** *`identifier`* <sub>неявное согласие</sub> **`)`** *`token-string`* <sub>неявное согласие</sub>\
+&emsp;**`#include`** **`"`**_`path-spec`_**`"`**\
+&emsp;**`#include`** **`<`**_`path-spec`_**`>`**\
+&emsp;**`#line`***`digit-sequence`* **`"`**_`filename`_**`"`** <sub>неявное согласие</sub>\
+&emsp;**`#undef`** *`identifier`*\
+&emsp;**`#error`** *`token-string`*\
+&emsp;**`#pragma`** *`token-string`*
 
-*константное выражение*: \
-&nbsp;&nbsp;&nbsp;&nbsp;**определено (** *идентификатор* **)** \
-&nbsp;&nbsp;&nbsp;&nbsp;**определенный** *идентификатор*\
-&nbsp;&nbsp;&nbsp;&nbsp;любое другое константное выражение
+*`constant-expression`*:\
+&emsp;**`defined(`** *`identifier`* **`)`**\
+&emsp;**`defined`** *`identifier`*\
+&emsp;любое другое константное выражение
 
-*условное*: \
-&nbsp;&nbsp;&nbsp;&nbsp;*Если-Part* *elif — Parts*<sub>— часть.</sub> *else-part*<sub>opt</sub> *endif-line*
+*`conditional`*:\
+&emsp; *`if-part`* *`elif-parts`* <sub>необ.</sub> *`else-part`* <sub>необ.</sub> *`endif-line`*
 
-*If-Part*: \
-&nbsp;&nbsp;&nbsp;&nbsp;*if-line* *тексте* в строке
+*`if-part`*:\
+&emsp;*`if-line`* *`text`*
 
-*If-Line*: \
-&nbsp;&nbsp;&nbsp;&nbsp; **#if** *константа-Expression*\
-&nbsp;&nbsp;&nbsp;&nbsp; **#ifdef** *идентификатор*\
-&nbsp;&nbsp;&nbsp;&nbsp; **#ifndef** *идентификатор* #ifndef
+*`if-line`*:\
+&emsp;**`#if`** *`constant-expression`*\
+&emsp;**`#ifdef`** *`identifier`*\
+&emsp;**`#ifndef`** *`identifier`*
 
-*elif — части*: \
-&nbsp;&nbsp;&nbsp;&nbsp;*elif-Line* *Text*\
-&nbsp;&nbsp;&nbsp;&nbsp;*elif-Parts* *elif —* *текст* строки
+*`elif-parts`*:\
+&emsp;*`elif-line`* *`text`*\
+&emsp;*`elif-parts`* *`elif-line`* *`text`*
 
-*elif-строка*: \
-&nbsp;&nbsp;&nbsp;&nbsp; **#elif** *константное выражение*
+*`elif-line`*:\
+&emsp;**`#elif`** *`constant-expression`*
 
-*else-Part*: \
-&nbsp;&nbsp;&nbsp;&nbsp;*текст* в *других строках*
+*`else-part`*:\
+&emsp;*`else-line`* *`text`*
 
-*else-Line*: \
-&nbsp;&nbsp;&nbsp;&nbsp; **#else**
+*`else-line`*:\
+&emsp;**`#else`**
 
-*endif-строка*: \
-&nbsp;&nbsp;&nbsp;&nbsp; **#endif**
+*`endif-line`*:\
+&emsp;**`#endif`**
 
-*последовательность цифр*: \
-&nbsp;&nbsp;&nbsp;&nbsp;*digit*\
-&nbsp;&nbsp;&nbsp;&nbsp;*digit-sequence* *цифровую* последовательность
+*`digit-sequence`*:\
+&emsp;*`digit`*\
+&emsp;*`digit-sequence`* *`digit`*
 
-*digit*: один из \
-&nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7 8 9**
+*`digit`* : один из\
+&emsp;**`0` `1` `2` `3` `4` `5` `6` `7` `8` `9`**
 
-*Строка токена*: \
-&nbsp;&nbsp;&nbsp;&nbsp;строки токенов
+*`token-string`*:\
+&emsp;Строка *`token`*
 
-*токен*: \
-&nbsp;&nbsp;&nbsp;&nbsp;*ключевое слово*\
-&nbsp;&nbsp;&nbsp;&nbsp;*идентификатор*\
-&nbsp;&nbsp;&nbsp;&nbsp;*constant*\
-*оператор* &nbsp;&nbsp;&nbsp;&nbsp;\
-&nbsp;&nbsp;&nbsp;&nbsp;*punctuator*
+*`token`*:\
+&emsp;*`keyword`*\
+&emsp;*`identifier`*\
+&emsp;*`constant`*\
+&emsp;*`operator`*\
+&emsp;*`punctuator`*
 
-*имя файла*: \
-&nbsp;&nbsp;&nbsp;&nbsp;имя файла допустимой операционной системы
+*`filename`*:\
+&emsp;Допустимое имя файла в ОС
 
-*path-Spec*: \
-&nbsp;&nbsp;&nbsp;&nbsp;Допустимый путь к файлу
+*`path-spec`*:\
+&emsp;Допустимый путь к файлу
 
-*текст*: \
-&nbsp;&nbsp;&nbsp;&nbsp;любой последовательности текста
+*`text`*:\
+&emsp;Любая текстовая последовательность
 
 > [!NOTE]
-> Следующие Нетерминальные значения расширены в разделе [лексические обозначения](../cpp/lexical-conventions.md)  *C++ справочника по языку*: *константа*, *константное выражение*, *идентификатор*, *ключевое слово*, *оператор*и *знак препинания*.
+> Следующие Нетерминальные значения расширены в разделе [лексические обозначения](../cpp/lexical-conventions.md) *справочника по языку C++*: *`constant`* , *`constant-expression`* , *`identifier`* ,, *`keyword`* *`operator`* и *`punctuator`* .
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также раздел
 
-[Справочник поC++ C/препроцессору](../preprocessor/c-cpp-preprocessor-reference.md)
+[Справочник по препроцессору в C/C++](../preprocessor/c-cpp-preprocessor-reference.md)

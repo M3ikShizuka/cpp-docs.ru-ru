@@ -1,40 +1,41 @@
 ---
-description: 'Дополнительные сведения о: fp_contract pragma'
-title: Прагма fp_contract
-ms.date: 08/29/2019
+description: Дополнительные сведения об pragma директиве fp_contract в Microsoft C/C++
+title: fp_contract pragma
+ms.date: 01/22/2021
 f1_keywords:
 - vc-pragma.fp_contract
 - fp_contract_CPP
 helpviewer_keywords:
-- pragmas, fp_contract
+- pragma, fp_contract
 - fp_contract pragma
-ms.assetid: 15b97338-6680-4287-ba2a-2dccc5b2ccf5
-ms.openlocfilehash: cefcf0519f08b3fd68a0f8b464938ea7cdbda6d0
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+no-loc:
+- pragma
+ms.openlocfilehash: 3263d1ec9675e0f8a9402ac7da78751b988e7bdf
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97261181"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713653"
 ---
-# <a name="fp_contract-pragma"></a>Прагма fp_contract
+# <a name="fp_contract-no-locpragma"></a>`fp_contract` pragma
 
 Определяет, выполняется ли контракт с плавающей точкой. Контракт с плавающей запятой — это инструкция, такая как FMA (предохранитель-умножение), которая объединяет две отдельные операции с плавающей точкой в одну инструкцию. Использование этих инструкций может повлиять на точность чисел с плавающей запятой, поскольку вместо округления после каждой операции процессор может округлять только один раз после обеих операций.
 
 ## <a name="syntax"></a>Синтаксис
 
-> **fp_contract #pragma (** { **On**  |  **Off** } **)**
+> **`#pragma fp_contract (`** { **`on`** | **`off`** } **`)`**
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Примечания
 
-По умолчанию **fp_contract** имеет значение **On**. Это указывает компилятору использовать инструкции по контракту с плавающей запятой, где это возможно. Задайте для параметра **fp_contract** значение **Off** , чтобы сохранить отдельные инструкции с плавающей запятой.
+По умолчанию **`fp_contract`** имеет значение **`on`** . Это указывает компилятору использовать инструкции по контракту с плавающей запятой, где это возможно. Задайте для значение **`fp_contract`** **`off`** , чтобы сохранить отдельные инструкции с плавающей запятой.
 
-Дополнительные сведения о поведении чисел с плавающей запятой см. в разделе [/FP (определение поведения Floating-Point)](../build/reference/fp-specify-floating-point-behavior.md).
+Дополнительные сведения о поведении чисел с плавающей запятой см. в разделе [ `/fp` (определение поведения с плавающей запятой)](../build/reference/fp-specify-floating-point-behavior.md).
 
-Другие типы директив pragma для значений с плавающей запятой:
+Другие директивы с плавающей запятой pragma включают:
 
-- [fenv_access](../preprocessor/fenv-access.md)
+- [`fenv_access`](../preprocessor/fenv-access.md)
 
-- [float_control](../preprocessor/float-control.md)
+- [`float_control`](../preprocessor/float-control.md)
 
 ## <a name="example"></a>Пример
 
@@ -78,4 +79,4 @@ out = 4.587525000000000e+03
 
 ## <a name="see-also"></a>См. также раздел
 
-[Директивы pragma и ключевое слово __pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Директивы pragma и `__pragma` `_Pragma` Ключевые слова и](./pragma-directives-and-the-pragma-keyword.md)

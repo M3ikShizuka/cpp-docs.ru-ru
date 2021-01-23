@@ -1,34 +1,35 @@
 ---
-title: Прагма intrinsic
-description: Встроенная директива pragma КОМПИЛЯТОРОМ MSVC используется для указания поддерживаемых встроенных функций для использования в качестве встроенных.
-ms.date: 07/08/2020
+title: собственных pragma
+description: Встроенная функция КОМПИЛЯТОРОМ MSVC pragma используется для указания поддерживаемых встроенных функций для использования в качестве встроенных.
+ms.date: 01/22/2021
 f1_keywords:
 - intrinsic_CPP
 - vc-pragma.intrinsic
 helpviewer_keywords:
 - intrinsic pragma
-- pragmas, intrinsic
-ms.assetid: 25c86ac7-ef40-47b7-a2c0-fada9c5dc3c5
-ms.openlocfilehash: 45a5a13f3bda3657b93e1a89e7a842a4465b01d5
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+- pragma, intrinsic
+no-loc:
+- pragma
+ms.openlocfilehash: 618705c42c20baf2b99f89e138b30d5633b9e592
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90041111"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713549"
 ---
-# <a name="intrinsic-pragma"></a>pragma `intrinsic`
+# <a name="intrinsic-no-locpragma"></a>`intrinsic` pragma
 
-Указывает, что функции, заданные в списка аргументов этой директивы, вызываются как встроенные.
+Указывает, что вызовы функций, указанных в pragma списке аргументов, являются встроенными.
 
 ## <a name="syntax"></a>Синтаксис
 
-> **`#pragma intrinsic(`** *`function1`* [**`,`** _`function2`_ ... ] **`)`**
+> **`#pragma intrinsic(`***function_1* [ **`,`** *function_2* ...]**`)`**
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Примечания
 
-**`intrinsic`** Директива pragma сообщает компилятору, что функция имеет известное поведение. Компилятор может вызвать функцию и не заменять вызов функции подставляемыми инструкциями, если это позволит повысить производительность.
+**`intrinsic`** pragma Сообщает компилятору, что функция имеет известное поведение. Компилятор может вызвать функцию и не заменять вызов функции подставляемыми инструкциями, если это позволит повысить производительность.
 
-Ниже перечислены функции библиотеки со встроенными формами. После того как **`intrinsic`** прагма-директива показана, она вступает в силу в первом определении функции, содержащей указанную подставляемую функцию. Результат переходит в конец исходного файла или на внешний вид `function` директивы pragma, указывающей ту же встроенную функцию. **`intrinsic`** Директива pragma может использоваться только за пределами определения функции на глобальном уровне.
+Ниже перечислены функции библиотеки со встроенными формами. После того как объект **`intrinsic`** pragma виден, он вступает в силу в первом определении функции, содержащем указанную подставляемую функцию. Результат переходит к концу исходного файла или к внешнему виду, в котором `function` pragma указана та же встроенная функция. **`intrinsic`** pragma Можно использовать только за пределами определения функции на глобальном уровне.
 
 Следующие функции имеют встроенные формы, а встроенные формы используются при указании [`/Oi`](../build/reference/oi-generate-intrinsic-functions.md) :
 
@@ -137,5 +138,5 @@ int main() {
 
 ## <a name="see-also"></a>См. также раздел
 
-[Директивы pragma и `__pragma` ключевое слово](../preprocessor/pragma-directives-and-the-pragma-keyword.md)\
-[Встроенные объекты компилятора](../intrinsics/compiler-intrinsics.md)
+[Директивы pragma и `__pragma` `_Pragma` Ключевые слова и](./pragma-directives-and-the-pragma-keyword.md)\
+[Встроенные функции компилятора](../intrinsics/compiler-intrinsics.md)

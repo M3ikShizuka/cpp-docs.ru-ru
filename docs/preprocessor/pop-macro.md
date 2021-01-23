@@ -1,32 +1,33 @@
 ---
-description: 'Дополнительные сведения о: pop_macro pragma'
-title: Прагма pop_macro
-ms.date: 08/29/2019
+description: Дополнительные сведения об pragma директиве pop_macro в Microsoft C/C++
+title: pop_macro pragma
+ms.date: 01/22/2021
 f1_keywords:
 - vc-pragma.pop_macro
 - pop_macro_CPP
 helpviewer_keywords:
 - pop_macro pragma
-- pragmas, pop_macro
-ms.assetid: 3b5489d0-69ba-4c66-b572-2748af0f12bb
-ms.openlocfilehash: 395e107586b9534b2e9db616f30ddd88b15b93ec
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+- pragma, pop_macro
+no-loc:
+- pragma
+ms.openlocfilehash: 99b0567838bac2a683f2a31fe13dd423e2efe651
+ms.sourcegitcommit: a26a66a3cf479e0e827d549a9b850fad99b108d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97325710"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98713367"
 ---
-# <a name="pop_macro-pragma"></a>Прагма pop_macro
+# <a name="pop_macro-no-locpragma"></a>`pop_macro` pragma
 
 Задает в качестве значения макроса *имени макроса* значение в верхней части стека для этого макроса.
 
 ## <a name="syntax"></a>Синтаксис
 
-> **#pragma pop_macro (** "*Macro-Name*" **)**
+> **`#pragma pop_macro(`** "*Macro-Name*" **`)`**
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Примечания
 
-Прежде чем выполнять **pop_macro**, необходимо выдать [push_macro](../preprocessor/push-macro.md) для *макроопределения-Name* .
+[`push_macro`](../preprocessor/push-macro.md)Перед выполнением действия для *макроопределения* должно быть выдано имя **`pop_macro`** .
 
 ## <a name="example"></a>Пример
 
@@ -64,4 +65,4 @@ int main() {
 
 ## <a name="see-also"></a>См. также раздел
 
-[Директивы pragma и ключевое слово __pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)
+[Директивы pragma и `__pragma` `_Pragma` Ключевые слова и](./pragma-directives-and-the-pragma-keyword.md)
