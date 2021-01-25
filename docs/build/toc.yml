@@ -55,6 +55,8 @@
       href: ../build/cmake-projects-in-visual-studio.md
     - name: Учебник. Создание кроссплатформенных проектов C++ в Visual Studio
       href: ../build/get-started-linux-cmake.md
+    - name: Учебник. Запуск и отладка проекта CMake в удаленном режиме
+      href: ../build/cmake-remote-debugging.md
     - name: Clang для LLVM в проектах CMake
       href: ../build/clang-support-cmake.md
     - name: Настройка проекта Linux CMake
@@ -1086,9 +1088,9 @@
               href: ../build/reference/specifying-dlls-to-delay-load.md
             - name: Явная выгрузка библиотеки DLL с отложенной загрузкой
               href: ../build/reference/explicitly-unloading-a-delay-loaded-dll.md
-            - name: Привязка Imports
+            - name: Привязка импорта для отложенной загрузки
               href: ../build/reference/binding-imports.md
-            - name: Загрузка всех импортов для библиотеки DLL с отложенной загрузкой
+            - name: Загрузка всех единиц импорта для DLL с отложенной загрузкой
               href: ../build/reference/loading-all-imports-for-a-delay-loaded-dll.md
             - name: Обработка ошибок и предупреждений
               expanded: false
@@ -1101,11 +1103,11 @@
                   href: ../build/reference/failure-hooks.md
                 - name: Коды исключений при загрузке библиотек DLL (C/C++)
                   href: ../build/reference/exceptions-c-cpp.md
-            - name: Сохранение отложенно загружаемых импортированных элементов
+            - name: Дамп импорта для отложенной загрузки
               href: ../build/reference/dumping-delay-loaded-imports.md
             - name: Ограничения библиотек DLL с отложенной загрузкой
               href: ../build/reference/constraints-of-delay-loading-dlls.md
-            - name: Понятие вспомогательной функции
+            - name: Вспомогательная функция для отложенной загрузки
               expanded: false
               items:
                 - name: Понятие вспомогательной функции
