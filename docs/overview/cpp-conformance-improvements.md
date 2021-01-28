@@ -3,12 +3,12 @@ title: Улучшение соответствия C++
 description: Microsoft C++ в Visual Studio развивается в сторону полного соответствия стандарту языка C++20.
 ms.date: 11/10/2020
 ms.technology: cpp-language
-ms.openlocfilehash: ff4d75626b75c55e001601ef7005bc23be60869d
-ms.sourcegitcommit: 25f6d52eb9e5d84bd0218c46372db85572af81da
+ms.openlocfilehash: 251f4cd4add40356b14dfdb878a09418171387d2
+ms.sourcegitcommit: 74e58bee5cffb30b66e17be6dbfde2544369638e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94448494"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98763871"
 ---
 # <a name="c-conformance-improvements-in-visual-studio"></a>Улучшения соответствия C++ в Visual Studio
 
@@ -1480,7 +1480,7 @@ f2(Object{});
 | Параметр | Описание |
 |--|--|
 | **`/Zc:twoPhase-`** | Двухэтапный поиск имен является обязательным для модулей C++20 и подразумевается параметром **`permissive-`** . |
-| **`/Zc:hiddenFriend-`** | Включает стандартные правила для поиска скрытых дружественных имен. Является обязательным для модулей C++20 и подразумевается параметром **`permissive-`** . |
+| **`/Zc:hiddenFriend-`** | Стандартные скрытые правила поиска имен являются обязательными для модулей C++ 20 и подразумеваются параметром **`permissive-`** . |
 | **`/Zc:preprocessor-`** | Соответствующий препроцессор требуется только для использования и создания блока заголовка C++20. Для именованных модулей этот параметр не требуется. |
 
 Параметр [`/experimental:module`](../build/reference/experimental-module.md) по-прежнему требуется для использования модулей *`std.*`* , которые поставляются в комплекте с Visual Studio, так как они еще не стандартизированы.
