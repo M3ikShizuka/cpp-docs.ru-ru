@@ -4,16 +4,16 @@ title: Поддержка компоновщика для библиотек DLL
 ms.date: 01/19/2021
 helpviewer_keywords:
 - delayed loading of DLLs, linker support
-ms.openlocfilehash: 9ae1e2c68ed59e742493a9098d98fc35d5f2a7c7
-ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
+ms.openlocfilehash: 02991d6ac409ef301e326eea63ece8c5c7775010
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98667283"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522421"
 ---
 # <a name="linker-support-for-delay-loaded-dlls"></a>Поддержка компоновщика для библиотек DLL с отложенной загрузкой
 
-Компоновщик КОМПИЛЯТОРОМ MSVC поддерживает отложенную загрузку библиотек DLL. Эта функция освобождает вас от необходимости использовать функции Windows SDK `LoadLibrary` и `GetProcAddress` для реализации отложенной загрузки DLL.
+Компоновщик КОМПИЛЯТОРОМ MSVC поддерживает отложенную загрузку библиотек DLL. Эта функция освобождает вас от необходимости использовать функции Windows SDK [`LoadLibrary`](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibraryw) и [`GetProcAddress`](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) для реализации отложенной загрузки DLL.
 
 Без отложенной загрузки единственным способом загрузки библиотеки DLL во время выполнения является использование `LoadLibrary` и `GetProcAddress` ; Операционная система ЗАГРУЖАЕТ библиотеку DLL при загрузке исполняемого файла или библиотеки DLL.
 
@@ -29,25 +29,149 @@ ms.locfileid: "98667283"
 
 Отложенная загрузка библиотеки DLL может быть задана во время сборки EXE-или DLL-проекта. Проект DLL, который задерживает загрузку одной или нескольких библиотек DLL, не должен вызывать точку входа, загруженную с задержкой, в `DllMain` .
 
-В следующих статьях описывается отложенная загрузка библиотек DLL:
+## <a name="specify-dlls-to-delay-load"></a><a name="specify-dlls-to-delay-load"></a> Указание библиотек DLL для задержки загрузки
 
-- [Указание библиотек DLL для задержки загрузки](specifying-dlls-to-delay-load.md)
+С помощью параметра компоновщика можно указать, какие библиотеки DLL следует отложить загрузку [`/delayload:`*`dllname`*](delayload-delay-load-import.md) . Если вы не планируете использовать собственную версию вспомогательной функции, необходимо также связать программу с *`delayimp.lib`* (для классических приложений) или *`dloadhelper.lib`* (для приложений UWP).
 
-- [Явная выгрузка библиотеки DLL, загруженной с задержкой](explicitly-unloading-a-delay-loaded-dll.md)
+Ниже приведен простой пример отложенной загрузки библиотеки DLL:
 
-- [Загрузка всех импортов для DLL с отложенной загрузкой](loading-all-imports-for-a-delay-loaded-dll.md)
+```cpp
+// cl t.cpp user32.lib delayimp.lib  /link /DELAYLOAD:user32.dll
+#include <windows.h>
+// uncomment these lines to remove .libs from command line
+// #pragma comment(lib, "delayimp")
+// #pragma comment(lib, "user32")
 
-- [Операции привязки, загруженные с задержкой](binding-imports.md)
+int main() {
+   // user32.dll will load at this point
+   MessageBox(NULL, "Hello", "Hello", MB_OK);
+}
+```
 
-- [Обработка ошибок и предупреждений](error-handling-and-notification.md)
+Создание ОТЛАДОЧНОЙ версии проекта. Пошаговое выполнение кода с помощью отладчика, и вы заметите, что *`user32.dll`* загружается только при вызове `MessageBox` .
 
-- [Импорт с отложенной загрузкой импорта](dumping-delay-loaded-imports.md)
+## <a name="explicitly-unload-a-delay-loaded-dll"></a><a name="explicitly-unload-a-delay-loaded-dll"></a> Явная выгрузка библиотеки DLL, загруженной с задержкой
 
-- [Ограничения библиотек DLL с отложенной загрузкой](constraints-of-delay-loading-dlls.md)
+[`/delay:unload`](delay-delay-load-import-settings.md)Параметр компоновщика позволяет коду явно выгружать БИБЛИОТЕКУ DLL, которая была загружена с задержкой. По умолчанию импорт с отложенной загрузкой остается в таблице адресов импорта (IAT). Однако при использовании **`/delay:unload`** в командной строке компоновщика вспомогательная функция поддерживает явную выгрузку библиотеки DLL с помощью `__FUnloadDelayLoadedDLL2` вызова и СБРАСЫВАЕТ объект IAT в исходную форму. Недопустимые указатели будут перезаписаны. IAT — это поле в [`ImgDelayDescr`](understanding-the-helper-function.md#calling-conventions-parameters-and-return-type) структуре, содержащее адрес копии ИСХОДНОЙ IAT, если она существует.
 
-- [Общие сведения о вспомогательной функции](understanding-the-helper-function.md)
+### <a name="example-of-unloading-a-delay-loaded-dll"></a>Пример выгрузки библиотеки DLL с отложенной загрузкой
 
-- [Разработка собственной вспомогательной функции](developing-your-own-helper-function.md)
+В этом примере показано, как явно выгрузить библиотеку DLL, *`MyDll.dll`* которая содержит функцию `fnMyDll` :
+
+```C
+// link with /link /DELAYLOAD:MyDLL.dll /DELAY:UNLOAD
+#include <windows.h>
+#include <delayimp.h>
+#include "MyDll.h"
+#include <stdio.h>
+
+#pragma comment(lib, "delayimp")
+#pragma comment(lib, "MyDll")
+int main()
+{
+    BOOL TestReturn;
+    // MyDLL.DLL will load at this point
+    fnMyDll();
+
+    //MyDLL.dll will unload at this point
+    TestReturn = __FUnloadDelayLoadedDLL2("MyDll.dll");
+
+    if (TestReturn)
+        printf_s("\nDLL was unloaded");
+    else
+        printf_s("\nDLL was not unloaded");
+}
+```
+
+Важные примечания по выгрузке библиотеки DLL с отложенной загрузкой:
+
+- Реализацию функции можно найти `__FUnloadDelayLoadedDLL2` в файле *`delayhlp.cpp`* в *`include`* каталоге компилятором MSVC. Дополнительные сведения см. [в разделе сведения о вспомогательной функции отложенной загрузки](understanding-the-helper-function.md).
+
+- *`name`* Параметр `__FUnloadDelayLoadedDLL2` функции должен точно соответствовать (включая регистр), который содержит библиотека импорта. (Эта строка также находится в таблице импорта в изображении.) Содержимое библиотеки импорта можно просмотреть с помощью команды [`DUMPBIN /DEPENDENTS`](dependents.md) . Если вы предпочитаете совпадение строк без учета регистра, можно обновить `__FUnloadDelayLoadedDLL2` для использования одной из строковых функций CRT без учета регистра или вызова Windows API.
+
+## <a name="bind-delay-loaded-imports"></a><a name="bind-delay-loaded-imports"></a> Операции привязки, загруженные с задержкой
+
+Поведение компоновщика по умолчанию — создать связанную таблицу адресов импорта (IAT) для DLL с отложенной загрузкой. Если библиотека DLL привязана, вспомогательная функция пытается использовать привязанные сведения вместо вызова `GetProcAddress` на каждом из импортируемых ссылок. Если либо отметка времени, либо предпочтительный адрес не совпадают с меткой в загруженной библиотеке DLL, то вспомогательная функция предполагает, что связанная таблица адресов импорта устарела. Она продолжается так, как если бы не существовала IAT.
+
+Если вы никогда не планируете привязать отложенно загруженные импорты библиотеки DLL, укажите [`/delay:nobind`](delay-delay-load-import-settings.md) в командной строке компоновщика. Компоновщик не создает связанную таблицу адресов импорта, сохраняющую место в файле изображения.
+
+## <a name="load-all-imports-for-a-delay-loaded-dll"></a><a name="load-all-imports-for-a-delay-loaded-dll"></a> Загрузка всех импортов для DLL с отложенной загрузкой
+
+`__HrLoadAllImportsForDll`Функция, определенная в *`delayhlp.cpp`* , указывает компоновщику загрузить все импорты из библиотеки DLL, указанной с помощью [`/delayload`](delayload-delay-load-import.md) параметра компоновщика.
+
+При загрузке всех импортов одновременно можно централизовать обработку ошибок в одном месте. Можно избежать структурированной обработки исключений вокруг всех фактических вызовов операций импорта. Это также позволяет избежать ситуации, когда приложение завершается неудачно с помощью процесса: например, если вспомогательный код не может загрузить импорт, после успешной загрузки других.
+
+Вызов `__HrLoadAllImportsForDll` не изменяет поведение обработчиков и обработки ошибок. Дополнительные сведения см. в разделе [Обработка ошибок и уведомление](error-handling-and-notification.md).
+
+`__HrLoadAllImportsForDll` выполняет сравнение с учетом регистра с именем, хранящимся в самой библиотеке DLL.
+
+Ниже приведен пример использования `__HrLoadAllImportsForDll` в функции, вызываемой `TryDelayLoadAllImports` для попытки загрузить ИМЕНОВАННУЮ библиотеку DLL. `CheckDelayException`Для определения поведения исключения используется функция.
+
+```C
+int CheckDelayException(int exception_value)
+{
+    if (exception_value == VcppException(ERROR_SEVERITY_ERROR, ERROR_MOD_NOT_FOUND) ||
+        exception_value == VcppException(ERROR_SEVERITY_ERROR, ERROR_PROC_NOT_FOUND))
+    {
+        // This example just executes the handler.
+        return EXCEPTION_EXECUTE_HANDLER;
+    }
+    // Don't attempt to handle other errors
+    return EXCEPTION_CONTINUE_SEARCH;
+}
+
+bool TryDelayLoadAllImports(LPCSTR szDll)
+{
+    __try
+    {
+        HRESULT hr = __HrLoadAllImportsForDll(szDll);
+        if (FAILED(hr))
+        {
+            // printf_s("Failed to delay load functions from %s\n", szDll);
+            return false;
+        }
+    }
+    __except (CheckDelayException(GetExceptionCode()))
+    {
+        // printf_s("Delay load exception for %s\n", szDll);
+        return false;
+    }
+    // printf_s("Delay load completed for %s\n", szDll);
+    return true;
+}
+```
+
+Результат можно использовать `TryDelayLoadAllImports` для управления вызовом функций импорта.
+
+## <a name="error-handling-and-notification"></a>Обработка ошибок и предупреждений
+
+Если программа использует библиотеки DLL с отложенной загрузкой, она должна обеспечивать устойчивую обработку ошибок. Сбои, возникающие во время выполнения программы, приводят к необработанным исключениям. Дополнительные сведения об обработке ошибок и уведомлениях о задержке при загрузке DLL см. в разделе [Обработка ошибок и уведомления](error-handling-and-notification.md).
+
+## <a name="dump-delay-loaded-imports"></a><a name="dump-delay-loaded-imports"></a> Импорт с отложенной загрузкой импорта
+
+Операции импорта с отложенной загрузкой можно выгрузить с помощью [`DUMPBIN /IMPORTS`](imports-dumpbin.md) . Эти импорты отображаются с немного отличающимися сведениями, чем стандартные операции импорта. Они разделяются на отдельные разделы `/imports` списка и явно помечены как импортированные с отложенной загрузкой. Если на изображении есть сведения о выгрузке, это отмечается. Если сведения о привязке присутствуют, то метка времени и даты для целевой библиотеки DLL указывается вместе с связанными адресами импорта.
+
+## <a name="constraints-on-delay-load-dlls"></a><a name="constraints-on-delay-load-dlls"></a> Ограничения для библиотек DLL с отложенной загрузкой
+
+Существует несколько ограничений на отложенную загрузку импортов DLL.
+
+- Импорт данных не поддерживается. Обходной путь заключается в явной обработке импорта данных с помощью `LoadLibrary` (или [`GetModuleHandle`](/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlew) после того, как вы узнаете, что вспомогательная служба отложенной загрузки загрузила библиотеку DLL) и `GetProcAddress` .
+
+- Отложенная загрузка *`Kernel32.dll`* не поддерживается. Эта библиотека DLL должна быть загружена для работы вспомогательных подпрограмм с отложенной загрузкой.
+
+- [Привязка](#bind-delay-loaded-imports) перенаправленных точек входа не поддерживается.
+
+- Процесс может иметь другое поведение, если библиотека DLL загружается с задержкой, а не загружается при запуске. Она может быть видна, если в точке входа в библиотеке DLL с отложенной загрузкой возникают инициализации для каждого процесса. В других случаях — статический протокол TLS (локальное хранилище потока), объявленный с помощью [`__declspec(thread)`](../../cpp/thread.md) , который не обрабатывается при загрузке библиотеки DLL с помощью `LoadLibrary` . Динамический TLS, с использованием [`TlsAlloc`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsalloc) ,, [`TlsFree`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsfree) [`TlsGetValue`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue) и [`TlsSetValue`](/windows/win32/api/processthreadsapi/nf-processthreadsapi-tlssetvalue) , по-прежнему доступен для использования в статических DLL-библиотеках или в DLLs, загружаемых с задержкой.
+
+- Повторно инициализируйте указатели статических глобальных функций на импортированные функции после первого вызова каждой функции. Это необходимо потому, что первое использование указателя функции указывает на преобразователь, а не на загруженную функцию.
+
+- В настоящее время невозможно отложить загрузку отдельных процедур из библиотеки DLL при использовании стандартного механизма импорта.
+
+- Пользовательские соглашения о вызовах (например, использование кодов условий на архитектурах x86) не поддерживаются. Кроме того, регистры с плавающей запятой не сохраняются на какой-либо платформе. Примите во внимание, если пользовательские вспомогательные подпрограммы или подпрограммы-обработчики используют типы с плавающей запятой: подпрограммы должны сохранять и восстанавливать полное состояние с плавающей запятой на компьютерах, использующих соглашения о вызовах с плавающей запятой. Будьте внимательны относительно загрузки DLL CRT, особенно при вызове функций CRT, которые принимают параметры с плавающей запятой в стеке обработчика числовых данных (NDP) в функции справки.
+
+## <a name="understand-the-delay-load-helper-function"></a>Вспомогательная функция для отложенной загрузки
+
+Вспомогательная функция для отложенной загрузки, поддерживаемой компоновщиком, фактически загружает библиотеку DLL во время выполнения. Вспомогательную функцию можно изменить, чтобы настроить ее поведение. Вместо использования предоставляемой вспомогательной функции в *`delayimp.lib`* напишите собственную функцию и свяжите ее с программой. Одна вспомогательная функция обслуживает все библиотеки DLL с отложенной загрузкой. Дополнительные сведения см. в статьях [Знакомство с функцией вспомогательной загрузки с задержкой](understanding-the-helper-function.md) и [Разработка собственной вспомогательной функции](understanding-the-helper-function.md#develop-your-own-helper-function).
 
 ## <a name="see-also"></a>См. также
 

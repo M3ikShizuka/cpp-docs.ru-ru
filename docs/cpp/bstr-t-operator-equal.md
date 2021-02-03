@@ -1,21 +1,20 @@
 ---
 description: 'Дополнительные сведения: _bstr_t:: operator ='
 title: _bstr_t::operator =
-ms.date: 11/04/2016
+ms.date: 02/02/2021
 f1_keywords:
 - _bstr_t::operator=
 helpviewer_keywords:
 - operator = [C++], bstr
 - operator= [C++], bstr
-ms.assetid: fb31bb1b-ce29-4388-b5fd-8dac830cf18a
-ms.openlocfilehash: 78447048a45567df603acf3af0bc51cefbdb187d
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: d021ba013190ddee262b8644e16876401be846dc
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97308787"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522720"
 ---
-# <a name="_bstr_toperator-"></a>_bstr_t::operator =
+# `_bstr_t::operator =`
 
 **Блок, относящийся только к системам Microsoft**
 
@@ -23,33 +22,33 @@ ms.locfileid: "97308787"
 
 ## <a name="syntax"></a>Синтаксис
 
-```
+```cpp
 _bstr_t& operator=(const _bstr_t& s1) throw ( );
 _bstr_t& operator=(const char* s2);
 _bstr_t& operator=(const wchar_t* s3);
 _bstr_t& operator=(const _variant_t& var);
 ```
 
-#### <a name="parameters"></a>Параметры
+### <a name="parameters"></a>Параметры
 
-*s1*<br/>
+*`s1`*\
 Объект `_bstr_t`, который требуется присвоить существующему объекту `_bstr_t`.
 
-*S2*<br/>
+*`s2`*\
 Многобайтовая строка, которую требуется присвоить существующему объекту `_bstr_t`.
 
-*S3*<br/>
+*`s3`*\
 Строка Юникода, которую требуется присвоить существующему объекту `_bstr_t`.
 
-*var*<br/>
+*`var`*\
 Объект `_variant_t`, который требуется присвоить существующему объекту `_bstr_t`.
 
 **Завершение блока, относящегося только к системам Майкрософт**
 
 ## <a name="example"></a>Пример
 
-Пример использования **оператора =** см. в разделе [_Bstr_t:: Assign](../cpp/bstr-t-assign.md) .
+См [`_bstr_t::Assign`](../cpp/bstr-t-assign.md) . пример, в котором используется **`operator=`** .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-[Класс _bstr_t](../cpp/bstr-t-class.md)
+[`_bstr_t` см](../cpp/bstr-t-class.md)

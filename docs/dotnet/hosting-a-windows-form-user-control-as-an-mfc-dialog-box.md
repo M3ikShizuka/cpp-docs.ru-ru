@@ -7,20 +7,18 @@ helpviewer_keywords:
 - Windows Forms [C++], hosting as MFC Dialog
 - hosting Windows Forms control [C++]
 ms.assetid: 0434a9d7-8b14-48e6-ad69-9ba9a684677a
-ms.openlocfilehash: 885b63e17140cca7983aeeed26e56eac47091a0d
-ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
+ms.openlocfilehash: 64c68ede565b4248a812d46963f072fbab8bdc3c
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99478062"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522824"
 ---
 # <a name="hosting-a-windows-form-user-control-as-an-mfc-dialog-box"></a>Размещение пользовательского элемента управления формы Windows Forms в диалоговом окне MFC
 
 MFC предоставляет класс шаблона [квинформсдиалог](../mfc/reference/cwinformsdialog-class.md) , чтобы можно было разместить Windows Forms пользовательский элемент управления ( <xref:System.Windows.Forms.UserControl> ) в модальном или немодальном диалоговом окне MFC. `CWinFormsDialog` является производным от класса MFC класс [CDialog](../mfc/reference/cdialog-class.md), поэтому диалоговое окно можно запустить как модальное или немодальное.
 
 Процесс, `CWinFormsDialog` используемый для размещения пользовательского элемента управления, аналогичен описанному в разделе [Размещение пользовательского элемента управления формы Windows Forms в диалоговом окне MFC](../dotnet/hosting-a-windows-form-user-control-in-an-mfc-dialog-box.md). Тем `CWinFormsDialog` не менее управляет инициализацией и размещением пользовательского элемента управления, чтобы его не нужно было программировать вручную.
-
-Пример приложения, в котором показаны Windows Forms, используемые в MFC, см. в разделе [Интеграция MFC и Windows Forms](https://download.cnet.com/MFC-and-WinForms-Integration/3000-2383_4-75453644.html).
 
 ### <a name="to-create-the-mfc-host-application"></a>Создание ведущего приложения MFC
 
@@ -36,7 +34,7 @@ MFC предоставляет класс шаблона [квинформсди
 
    В **Обозреватель решений** щелкните правой кнопкой мыши узел проекта **MFC03** и выберите пункт **Свойства**. Откроется диалоговое окно **страницы свойств** .
 
-   В диалоговом окне **страницы свойств** в элементе управления дерево **свойств конфигурации** выберите **Общие**, а затем в разделе **проекты по умолчанию** установите **поддержку** общеязыковой среды выполнения в среде CLR **(/CLR)**. Нажмите кнопку **ОК**.
+   В диалоговом окне **страницы свойств** в элементе управления дерево **свойств конфигурации** выберите **Общие**, а затем в разделе **проекты по умолчанию** установите **поддержку** общеязыковой среды выполнения в среде CLR **(/CLR)**. Нажмите кнопку **OK**.
 
 1. Добавьте ссылку на элемент управления .NET.
 
@@ -135,7 +133,7 @@ MFC предоставляет класс шаблона [квинформсди
 
 1. Постройте и запустите проект.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 <xref:System.Windows.Forms.UserControl?displayProperty=fullName>
 [Использование пользовательского элемента управления формы Windows Forms в MFC](../dotnet/using-a-windows-form-user-control-in-mfc.md)

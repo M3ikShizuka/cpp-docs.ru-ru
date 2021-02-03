@@ -51,12 +51,12 @@ helpviewer_keywords:
 - mbsnextc_l function
 - wcsnextc function
 ms.assetid: e3086173-9eb5-4540-a23a-5d866bd05340
-ms.openlocfilehash: 8eb1af549e3ef983441870350cbfdc4361f26e9c
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 7cbe291d19fe09b14cf71989923656f44acff1c7
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97306096"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522382"
 ---
 # <a name="_strnextc-_wcsnextc-_mbsnextc-_mbsnextc_l"></a>_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l
 
@@ -71,7 +71,7 @@ ms.locfileid: "97306096"
 unsigned int _strnextc(
    const char *str
 );
-unsigned int _wscnextc(
+unsigned int _wcsnextc(
    const wchar_t *str
 );
 unsigned int _mbsnextc(
@@ -95,7 +95,7 @@ unsigned int _mbsnextc_l(
 
 Каждая из этих функций возвращает целочисленное значение следующего символа в *str*.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Примечания
 
 Функция **_mbsnextc** возвращает целочисленное значение следующего многобайтового символа в *str* без смещения указателя строки. **_mbsnextc** распознает последовательности многобайтовых символов в соответствии с используемой в данный момент [многобайтовой кодовой страницей](../../c-runtime-library/code-pages.md) .
 
@@ -126,7 +126,7 @@ unsigned int _mbsnextc_l(
 
 Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Управление строками](../../c-runtime-library/string-manipulation-crt.md)<br/>
 [Локаль](../../c-runtime-library/locale.md)<br/>

@@ -1,21 +1,20 @@
 ---
 description: 'Дополнительные сведения о: _bstr_t:: Copy'
 title: _bstr_t::copy
-ms.date: 11/04/2016
+ms.date: 02/02/2021
 f1_keywords:
 - _bstr_t::copy
 helpviewer_keywords:
 - Copy method [C++]
 - BSTR object [C++], copy
-ms.assetid: 00ba7311-e82e-4a79-8106-5329fa2f869a
-ms.openlocfilehash: 29ca965730dbcc22b4b725661ece68442d39aeba
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 98726e0c3100851d1496e532310ece2209d71ae0
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97229344"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522863"
 ---
-# <a name="_bstr_tcopy"></a>_bstr_t::copy
+# `_bstr_t::copy`
 
 **Блок, относящийся только к системам Microsoft**
 
@@ -23,18 +22,18 @@ ms.locfileid: "97229344"
 
 ## <a name="syntax"></a>Синтаксис
 
-```
+```cpp
 BSTR copy( bool fCopy = true ) const;
 ```
 
-#### <a name="parameters"></a>Параметры
+### <a name="parameters"></a>Параметры
 
-*фкопи*<br/>
-Если значение **`true`** , **Copy** возвращает копию вложенного объекта `BSTR` , в противном случае **Copy** возвращает фактическую BSTR.
+*`fCopy`*\
+Если **`true`** значение **`copy`** равно, функция возвращает копию вложенного объекта `BSTR` , в противном случае **`copy`** возвращает фактическую `BSTR` .
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Примечания
 
-Возвращает копию инкапсулированного объекта `BSTR`, для которого выделена память.
+Возвращает только что выделенную копию инкапсулированного `BSTR` объекта или самого инкапсулированного объекта в зависимости от параметра.
 
 ## <a name="example"></a>Пример
 
@@ -48,4 +47,4 @@ STDMETHODIMP CAlertMsg::get_ConnectionStr(BSTR *pVal){ //  m_bsConStr is _bstr_t
 
 ## <a name="see-also"></a>См. также
 
-[Класс _bstr_t](../cpp/bstr-t-class.md)
+[`_bstr_t` см](../cpp/bstr-t-class.md)

@@ -1,61 +1,60 @@
 ---
-description: 'Дополнительные сведения: _bstr_t:: operator + =, +'
-title: _bstr_t::operator +=, +
-ms.date: 11/04/2016
+description: 'Дополнительные сведения: _bstr_t:: operator + =, _bstr_t:: operator +'
+title: '_bstr_t:: operator + =, _bstr_t:: operator +'
+ms.date: 02/02/2021
 f1_keywords:
 - _bstr_t::operator+
 - _bstr_t::operator+=
 helpviewer_keywords:
 - += operator [C++], appending strings
 - + operator [C++], _bstr_t objects
-ms.assetid: d28316ce-c2c8-4a38-bdb3-44fa4e582c44
-ms.openlocfilehash: e3ae71a3a43e189251ac0ddaf77572656a031aaf
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 44a525891ee072ea797026bd022ecae7b62fd6d1
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97308813"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522525"
 ---
-# <a name="_bstr_toperator--"></a>_bstr_t::operator +=, +
+# <a name="_bstr_toperator--_bstr_toperator-"></a>`_bstr_t::operator +=`, `_bstr_t::operator +`
 
 **Блок, относящийся только к системам Microsoft**
 
-Добавляет символы в конец объекта `_bstr_t` или объединяет две строки.
+Добавляет символы в конец `_bstr_t` объекта или объединяет две строки.
 
 ## <a name="syntax"></a>Синтаксис
 
-```
+```cpp
 _bstr_t& operator+=( const _bstr_t& s1 );
 _bstr_t operator+( const _bstr_t& s1 );
 friend _bstr_t operator+( const char* s2, const _bstr_t& s1);
 friend _bstr_t operator+( const wchar_t* s3, const _bstr_t& s1);
 ```
 
-#### <a name="parameters"></a>Параметры
+### <a name="parameters"></a>Параметры
 
-*s1*<br/>
+*`s1`*\
 Объект `_bstr_t`.
 
-*S2*<br/>
+*`s2`*\
 Многобайтовая строка.
 
-*S3*<br/>
+*`s3`*\
 Строка Юникода.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Примечания
 
 Эти операторы выполняют объединение строк:
 
-- **operator + = (**  *S1*  **)** Добавляет символы в инкапсулированном `BSTR` объекте *S1* в конец инкапсулированного объекта `BSTR` .
+- `operator+=( s1 )` Добавляет символы в инкапсулированный в `BSTR` *`s1`* конец инкапсулированного объекта `BSTR` .
 
-- **operator + (**  *S1*  **)** Возвращает новый `_bstr_t` объект, сформированный путем сцепления этого объекта `BSTR` с объектом *S1*.
+- `operator+( s1 )` Возвращает новый `_bstr_t` объект, сформированный путем сцепления этого объекта с `BSTR` и его в *`s1`* .
 
-- **operator + (***S2* **&#124;** *S1***)** Возвращает новый объект `_bstr_t` , сформированный путем сцепления многобайтовой строки *S2*, преобразованной в Юникод, с `BSTR` инкапсулированным в *S1*.        
+- `operator+( s2, s1 )` Возвращает новый объект `_bstr_t` , сформированный путем сцепления многобайтовой строки *`s2`* , преобразованной в Юникод, и `BSTR` инкапсулированного в *`s1`* .
 
-- **оператор + (***S3* **,***S1***)** Возвращает новый объект `_bstr_t` , сформированный путем сцепления строки в Юникоде  с `BSTR` инкапсулированным в *S1*.      
+- `operator+( s3, s1 )` Возвращает новый объект `_bstr_t` , сформированный путем сцепления строки в Юникоде *`s3`* и `BSTR` инкапсулированной в *`s1`* .
 
 **Завершение блока, относящегося только к системам Майкрософт**
 
 ## <a name="see-also"></a>См. также
 
-[Класс _bstr_t](../cpp/bstr-t-class.md)
+[`_bstr_t` см](../cpp/bstr-t-class.md)

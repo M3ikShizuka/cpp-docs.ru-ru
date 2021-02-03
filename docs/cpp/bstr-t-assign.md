@@ -1,20 +1,19 @@
 ---
 description: 'Дополнительные сведения о: _bstr_t:: Assign'
 title: _bstr_t::Assign
-ms.date: 11/04/2016
+ms.date: 02/02/2021
 f1_keywords:
 - _bstr_t::Assign
 helpviewer_keywords:
 - Assign method [C++]
-ms.assetid: 2e209bbe-77ca-4598-86d5-6c2ea213f43c
-ms.openlocfilehash: b2081aaf71640a778a479a32f3f1816ca79db147
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 166b972d4c3de932fee187f33a9f96a578496e35
+ms.sourcegitcommit: c20734f18d3d49bb38b1628c68b53b54b3eeeb03
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97229448"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99522902"
 ---
-# <a name="_bstr_tassign"></a>_bstr_t::Assign
+# <a name="_bstr_tassign"></a>_`bstr_t::Assign`
 
 **Блок, относящийся только к системам Microsoft**
 
@@ -28,14 +27,14 @@ void Assign(
 );
 ```
 
-#### <a name="parameters"></a>Параметры
+### <a name="parameters"></a>Параметры
 
-*s*<br/>
+*`s`*\
 Объект `BSTR`, копируемый в объект `BSTR`, инкапсулированный объектом `_bstr_t`.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Примечания
 
-**Assign** выполняет двоичную копию, что означает копирование всей длины, `BSTR` независимо от содержимого.
+**`Assign`** Выполняет двоичную копию всей длины `BSTR` , независимо от содержимого.
 
 ## <a name="example"></a>Пример
 
@@ -114,4 +113,4 @@ bstrWrapper2 = some text
 
 ## <a name="see-also"></a>См. также
 
-[Класс _bstr_t](../cpp/bstr-t-class.md)
+[`_bstr_t` см](../cpp/bstr-t-class.md)
