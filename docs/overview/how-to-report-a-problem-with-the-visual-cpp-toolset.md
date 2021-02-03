@@ -5,12 +5,12 @@ ms.date: 09/24/2019
 ms.technology: cpp-ide
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 7a89966b46efbef9800f3f3ddf836723bbb3b06f
-ms.sourcegitcommit: 12eb6a824dd7187a065d44fceca4c410f58e121e
+ms.openlocfilehash: 49ddc43757e1448e6bbd378a216eee9bcc0e84b2
+ms.sourcegitcommit: 3987d9c39f5a5b4824303a48a6215984ce8949e8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "94334251"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99478075"
 ---
 # <a name="how-to-report-a-problem-with-the-microsoft-c-toolset-or-documentation"></a>Как сообщить о проблеме с набором инструментов или документацией для Microsoft C++
 
@@ -113,7 +113,7 @@ cl : Command line error D8003 : missing source filename
 
 - **Тестирование с другими компиляторами**, если это необходимо. Данные для воспроизведения, включающие переносимый код C++, следует протестировать с другими компиляторами, если это возможно. В конечном счете корректность программ определяется только стандартом C++, ведь ни один компилятор не идеален. Но в том случае, если Clang и GCC принимают ваш код без диагностических сообщений, а MSVC — нет, вполне вероятно наличие ошибки в нашем компиляторе. (Другие варианты: различия в поведении Unix и Windows, разные уровни реализации стандартов C++ и т. д.) Если же код отклоняют все компиляторы, наиболее вероятна ошибка в самом коде. Различные сообщения об ошибках могут помочь вам самостоятельно диагностировать проблему.
 
-   Списки веб-компиляторов для тестирования кода см. в разделе [веб-компиляторов C++](https://isocpp.org/blog/2013/01/online-c-compilers) на веб-сайте ISO C++ или в курируемом [списке веб-компиляторов C++](https://arnemertz.github.io/online-compilers/) на GitHub. Примеры конкретных компиляторов: [Wandbox](https://wandbox.org/), [Compiler Explorer](https://godbolt.org/) и [Coliru](https://coliru.stacked-crooked.com/).
+   Списки веб-компиляторов для тестирования кода см. в разделе [веб-компиляторов C++](https://isocpp.org/blog/2013/01/online-c-compilers) на веб-сайте ISO C++ или в курируемом [списке веб-компиляторов C++](https://arnemertz.github.io/online-compilers/) на GitHub. Примеры конкретных компиляторов: [Wandbox](https://wandbox.org/), [Compiler Explorer](https://godbolt.org/) и [Coliru](http://coliru.stacked-crooked.com/).
 
    > [!NOTE]
    > Сайты с веб-компиляторами не связаны с Майкрософт. Многие веб-компиляторы созданы в статусе персональных проектов. Некоторые из них уже будут недоступны, когда вы прочитаете эти строки, но не составит особого труда найти другие, пригодные для вашей цели.
