@@ -1086,46 +1086,10 @@
           items:
             - name: Поддержка компоновщика для библиотек DLL с отложенной загрузкой
               href: ../build/reference/linker-support-for-delay-loaded-dlls.md
-            - name: Задание библиотек DLL с отложенной загрузкой
-              href: ../build/reference/specifying-dlls-to-delay-load.md
-            - name: Явная выгрузка библиотеки DLL с отложенной загрузкой
-              href: ../build/reference/explicitly-unloading-a-delay-loaded-dll.md
-            - name: Привязка импорта для отложенной загрузки
-              href: ../build/reference/binding-imports.md
-            - name: Загрузка всех единиц импорта для DLL с отложенной загрузкой
-              href: ../build/reference/loading-all-imports-for-a-delay-loaded-dll.md
             - name: Обработка ошибок и предупреждений
-              expanded: false
-              items:
-                - name: Обработка ошибок и предупреждений
-                  href: ../build/reference/error-handling-and-notification.md
-                - name: Обработчики уведомлений
-                  href: ../build/reference/notification-hooks.md
-                - name: Обработчики сбоев
-                  href: ../build/reference/failure-hooks.md
-                - name: Коды исключений при загрузке библиотек DLL (C/C++)
-                  href: ../build/reference/exceptions-c-cpp.md
-            - name: Дамп импорта для отложенной загрузки
-              href: ../build/reference/dumping-delay-loaded-imports.md
-            - name: Ограничения библиотек DLL с отложенной загрузкой
-              href: ../build/reference/constraints-of-delay-loading-dlls.md
+              href: ../build/reference/error-handling-and-notification.md
             - name: Вспомогательная функция для отложенной загрузки
-              expanded: false
-              items:
-                - name: Понятие вспомогательной функции
-                  href: ../build/reference/understanding-the-helper-function.md
-                - name: "Изменения во вспомогательной функции отложенной загрузки библиотеки DLL по сравнению с Visual C++ версии\_6.0"
-                  href: ../build/reference/changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md
-                - name: 'Соглашения о вызовах, параметры и тип возвращаемого значения'
-                  href: ../build/reference/calling-conventions-parameters-and-return-type.md
-                - name: Определения структур и констант
-                  href: ../build/reference/structure-and-constant-definitions.md
-                - name: Вычисление необходимых значений
-                  href: ../build/reference/calculating-necessary-values.md
-                - name: Выгрузка библиотеки DLL с отложенной загрузкой
-                  href: ../build/reference/unloading-a-delay-loaded-dll.md
-            - name: Разработка собственной вспомогательной функции
-              href: ../build/reference/developing-your-own-helper-function.md
+              href: ../build/reference/understanding-the-helper-function.md
     - name: Дополнительные средства сборки MSVC
       expanded: false
       items:
