@@ -1,16 +1,17 @@
 ---
 description: Дополнительные сведения о странице свойств "Дополнительно"
 title: Страница свойств «Дополнительно» (проект)
-ms.date: 08/10/2020
+ms.date: 02/05/2021
 f1_keywords:
 - VC.Project.VCConfiguration.VCToolsVersion
+- VC.Project.VCConfiguration.LLVMToolsVersion
 ms.description: Use the Advanced property page in Visual Studio 2019 to set various properties for C++ projects.
-ms.openlocfilehash: 916c1f341d148a0f6b426ddf3c31e0d20c59a29c
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 420dd34088f47e8fa7bfe56fd529769b90401355
+ms.sourcegitcommit: 77235bff6a7b2621c501938e30d93cb15f5733cb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97187316"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006029"
 ---
 # <a name="advanced-property-page"></a>Страница свойств «Дополнительно»
 
@@ -89,6 +90,10 @@ ms.locfileid: "97187316"
 - **Версия набора инструментов КОМПИЛЯТОРОМ MSVC**
 
    Указывает полную версию набора инструментов КОМПИЛЯТОРОМ MSVC, используемого для сборки проекта. Возможно, установлены различные версии набора инструментов для обновления и предварительного просмотра. Вы можете указать, какой из них следует использовать.
+
+- **Версия набора инструментов LLVM**
+
+   Указывает полную версию набора инструментов LLVM, используемого для сборки проекта. Это свойство доступно при выборе **LLVM (Clang-CL)** в качестве набора инструментов платформы начиная с Visual Studio 2019 версии 16,9. Дополнительные сведения см. [в разделе Установка настраиваемой версии набора инструментов LLVM](..\clang-support-msbuild.md#custom_llvm_toolset).
 
 ## <a name="ccli-properties"></a>Свойства C++/CLI
 
