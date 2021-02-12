@@ -6,16 +6,16 @@ ms.date: 08/19/2019
 ms.topic: tutorial
 ms.devlang: cpp
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: 14e1e18da5cdabae5366d4ba97a2260d5e99f076
-ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
+ms.openlocfilehash: 2a0f605d6b415e1b827bd2d983b087bc110eddd8
+ms.sourcegitcommit: 77235bff6a7b2621c501938e30d93cb15f5733cb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90685325"
+ms.lasthandoff: 02/11/2021
+ms.locfileid: "100254419"
 ---
 # <a name="create-a-console-calculator-in-c"></a>Создание консольного приложения "Калькулятор" на C++
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=msvc-160"
 
 Обычной отправной точкой для программиста на C++ является приложение "Hello World", выполняемое в командной строке. Вот что вы создадите в Visual Studio в этой статье, и затем мы перейдем к более сложной задаче: приложению калькулятора.
 
@@ -385,7 +385,7 @@ Visual Studio использует *проекты*, чтобы упорядоч
 
 ::: moniker-end
 
-::: moniker range="<vs-2019"
+::: moniker range="<msvc-160"
 
 Обычной отправной точкой для программиста на C++ является приложение "Hello World", выполняемое в командной строке. Вот что вы создадите в Visual Studio в этой статье, и затем мы перейдем к более сложной задаче: приложению калькулятора.
 
