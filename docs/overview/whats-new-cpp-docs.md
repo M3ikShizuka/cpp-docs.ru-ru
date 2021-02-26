@@ -1,13 +1,13 @@
 ---
 title: Новое в документации по C++
 description: Новые документы и обновления документации для компилятора Microsoft C/C++, ATL/MFC, среды выполнения C и стандартных библиотек.
-ms.date: 02/08/2021
-ms.openlocfilehash: 3b6d248b99415c91b4086b00ecc54fc39d2c348a
-ms.sourcegitcommit: 77235bff6a7b2621c501938e30d93cb15f5733cb
+ms.date: 02/17/2021
+ms.openlocfilehash: b15d286eb7bd2951ab2b8101a752de2beb57f4a4
+ms.sourcegitcommit: e99db7c3b5f25ece0e152165066c926751a7c2ed
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100006036"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100643577"
 ---
 # <a name="microsoft-c-docs-whats-new-for-visual-studio-168"></a>Документация по Microsoft C++: Новые возможности Visual Studio 16.8
 
@@ -183,7 +183,7 @@ ms.locfileid: "100006036"
 ### <a name="updated-articles"></a>Обновленные статьи
 
 - [`<ios>` typedefs](../standard-library/ios-typedefs.md) — обновлен пример для GitHub #2514
-- [Класс `basic_string`](../standard-library/basic-string-class.md) — добавлено `startswith()`, `endswith()`
+- [Класс `basic_string`](../standard-library/basic-string-class.md) — добавлено `_starts_with()`, `ends_with()`
 - [`ios_base Class`](../standard-library/ios-base-class.md)
 - [Класс `map`](../standard-library/map-class.md)
 - [Класс `multimap`](../standard-library/multimap-class.md) — добавлено `contains()`
@@ -193,7 +193,7 @@ ms.locfileid: "100006036"
 - [Класс `unordered_multimap`](../standard-library/unordered-multimap-class.md) — добавлено `contains()`
 - [Класс `unordered_multiset`](../standard-library/unordered-multiset-class.md) — добавлено `contains()`
 - [Класс `unordered_set`](../standard-library/unordered-set-class.md) — добавлено `contains()`
-- [Класс `basic_string_view`](../standard-library/basic-string-view-class.md) — добавлено `startswith()`, `endswith()`
+- [Класс `basic_string_view`](../standard-library/basic-string-view-class.md) — добавлено `starts_with()`, `ends_with()`
 - [Функции `<bit>`](../standard-library/bit-functions.md) — обновлен синтаксис `nodiscard`
 
 ## <a name="community-contributors"></a>Участники сообщества
