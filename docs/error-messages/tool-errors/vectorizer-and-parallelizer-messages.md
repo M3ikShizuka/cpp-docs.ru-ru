@@ -8,12 +8,12 @@ f1_keywords:
 - C5021
 - C5001
 - C5012
-ms.openlocfilehash: 3e2d458d177b8a7032276d29940a7ff2dac83b36
-ms.sourcegitcommit: e99db7c3b5f25ece0e152165066c926751a7c2ed
+ms.openlocfilehash: 9cfafe9af4859a2bb4dbd7897a14003d85052f63
+ms.sourcegitcommit: 5efc34c2b98d4d0d3e41aec38b213f062c19d078
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100643564"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844550"
 ---
 # <a name="vectorizer-and-parallelizer-messages"></a>Сообщения векторизатора и параллелизатора
 
@@ -30,7 +30,7 @@ ms.locfileid: "100643564"
 | 5001 | Цикл векторизирован. |
 | 5002 | Цикл не был векторен из-за причины "*Описание*". |
 | 5011 | Цикл параллелизован. |
-| 5012 | Цикл не был параллельен из-за причины "*Описание*". |
+| 5012 | Цикл не параллелизации из-за причины "*Описание*". |
 | 5021 | Не удалось связать цикл с директивой pragma. |
 
 В следующих разделах перечислены возможные коды причин для параллелизатора и векторизатора.
@@ -39,13 +39,14 @@ ms.locfileid: "100643564"
 
 Коды причин 5 *XX* применяются как к параллелизатора, так и к векторизатора.
 
-| Код причины | Объяснение |
+| Код причины | Описание |
 |--|--|
-| 500 | Универсальное сообщение, охватывающее несколько вариантов (например, цикл включает несколько выходов), или заголовок цикла не заканчивается путем увеличения переменной удержания. |
+| 500 | Универсальное сообщение, охватывающее несколько вариантов: например, цикл включает несколько выходов или заголовок цикла не заканчивается путем увеличения переменной удержания. |
 | 501 | Переменная удержания не является локальной. или верхняя граница не является инвариантным циклом. |
 | 502 | Индукционная переменная изменяется не простым приращением на 1, а каким-то другим образом. |
 | 503 | Цикл содержит обработку исключений или операторы switch. |
 | 504 | Тело цикла может вызвать исключение, которое требует удаления объекта C++. |
+| 505 | Внешний цикл имеет предварительно увеличенную переменную выведения. Выполняется выход из анализа. |
 
 ```cpp
 void code_500(int *A)
@@ -83,7 +84,7 @@ void code_501_example1(int *A)
 {
     // Code 501 is emitted if the compiler cannot discern the
     // induction variable of this loop. In this case, when it checks
-    // the upperbound of 'i', the compiler cannot prove that the
+    // the upper bound of 'i', the compiler cannot prove that the
     // function call "bound()" returns the same value each time.
     // Also, the compiler cannot prove that the call to "bound()"
     // does not modify the values of array A.
@@ -94,7 +95,7 @@ void code_501_example1(int *A)
     }
 
     // To resolve code 501, ensure that the induction variable is
-    // a local variable, and ensure that the upperbound is a
+    // a local variable, and ensure that the upper bound is a
     // provably loop invariant value.
 
     for (int i=0, imax = bound(); i<imax; ++i)
@@ -116,7 +117,7 @@ void code_501_example2(int *A)
     }
 
     // To resolve code 501, ensure that the induction variable is
-    // a local variable, and ensure that the upperbound is a
+    // a local variable, and ensure that the upper bound is a
     // provably loop invariant value.
 
     for (int i=0; i<1000; ++i)
@@ -184,7 +185,8 @@ public:
     ~C504();
 };
 
-void code_504(int *A) {
+void code_504(int *A)
+{
     // Code 504 is emitted if a C++ object was created and
     // that object requires EH unwind tracking information under
     // /EHs or /EHsc.
@@ -196,13 +198,30 @@ void code_504(int *A) {
     }
 
 }
+
+void code_505(int *A)
+{
+    // Code 505 is emitted on outer loops with pre-incremented
+    // induction variables. The vectorizer/parallelizer analysis
+    // package doesn't support these loops, and they are
+    // intentionally not converted to post-increment loops to
+    // prevent a performance degradation.
+
+    // To parallelize an outer loop that causes code 505, change
+    // it to a post-incremented loop.
+
+    for (int i=100; i--; )
+        for (int j=0; j<100; j++) { // this loop is still vectorized
+            A[j] = A[j] + 1;
+        }                    
+}
 ```
 
 ## <a name="10xx-reason-codes"></a><a name="BKMK_ReasonCode100x"></a> коды причин 10xx
 
 Коды причин 10 *XX* относятся к параллелизатора.
 
-| Код причины | Объяснение |
+| Код причины | Описание |
 |--|--|
 | 1000 | Компилятор обнаружил зависимость данных в теле цикла. |
 | 1001 | Компилятор обнаружил в теле цикла присваивание скалярной переменной, и эта скалярная переменная используется вне цикла. |
@@ -411,10 +430,10 @@ void code_1010()
 
 Коды причин 11 *XX* применяются к векторизатора.
 
-| Код причины | Объяснение |
+| Код причины | Описание |
 |--|--|
 | 1100 | Цикл содержит поток управления, например " `if` " или " `?:` ". |
-| 1101 | Цикл содержит преобразование DataType, возможно, неявное, которое не может быть векторным. |
+| 1101 | Цикл содержит преобразование типа данных (возможно, неявное), которое не может быть векторным. |
 | 1102 | Цикл содержит неарифметические или другие невекторизуемые операции. |
 | 1103 | Тело цикла содержит операции сдвига, размер которых может меняться внутри цикла. |
 | 1104 | Тело цикла содержит скалярные переменные. |
@@ -434,7 +453,7 @@ void code_1100(int *A, int x)
 
     for (int i=0; i<1000; ++i)
     {
-        // straightline code is more amenable to vectorization
+        // straight line code is more amenable to vectorization
         if (x)
         {
             A[i] = A[i] + 1;
@@ -559,9 +578,9 @@ void code_1106(int *A)
 
 Коды причин 12 *XX* относятся к векторизатора.
 
-| Код причины | Объяснение |
+| Код причины | Описание |
 |--|--|
-| 1200 | Цикл содержит зависимости данных, перенесенные циклом, которые предотвращают векторную обработку. Разные итерации цикла взаимодействуют друг с другом, так как векторизинг цикл выдаст неверные ответы, а функция Auto-векторизатора не может доказать себе, что такая зависимость данных отсутствует. |
+| 1200 | Цикл содержит зависимости данных, перенесенные циклом, которые предотвращают векторную обработку. Разные итерации цикла взаимодействуют друг с другом, так как векторизинг цикл выдаст неверные ответы, а функция Auto-векторизатора не может доказать себе, что нет таких зависимостей данных. |
 | 1201 | База массива изменяется в цикле. |
 | 1202 | Поле в структуре не имеет 32 или 64 бит в ширину. |
 | 1203 | Тело цикла содержит несмежный доступ к массиву. |
@@ -651,9 +670,9 @@ void code_1204(int *A)
 
 Коды причин 13 *XX* относятся к векторизатора.
 
-| Код причины | Объяснение |
+| Код причины | Описание |
 |--|--|
-| 1300 | Тело цикла не содержит вычислений или объем вычислений очень мал. |
+| 1300 | Тело цикла содержит не меньше вычислений. |
 | 1301 | Шаг цикла не + 1. |
 | 1302 | Loop — это " `do` - `while` ". |
 | 1303 | Слишком мало итераций цикла для эффективной векторизации. |
@@ -703,7 +722,7 @@ int code_1303(int *A, int *B)
     // make vectorization profitable.
 
     // If the loop computation fits perfectly in
-    // vector registers - for example, the upperbound is 4, or 8 in
+    // vector registers - for example, the upper bound is 4, or 8 in
     // this case - then the loop _may_ be vectorized.
 
     // This loop is not vectorized because there are 5 iterations
@@ -783,7 +802,7 @@ void code_1305( S_1305 *s, S_1305 x)
 
 Коды причины 14 *XX* возникают, если задан какой-либо параметр, несовместимый с вектором.
 
-| Код причины | Объяснение |
+| Код причины | Описание |
 |--|--|
 | 1400 | `#pragma loop(no_vector)`Указана директива . |
 | 1401 | `/kernel`Для целевой архитектуры x86 или ARM указан ключ . |
@@ -855,7 +874,7 @@ void code_1404(int *A)
 
 Коды причины 15 *XX* применяются к псевдонимам. Совмещение имен возникает, когда одно и тоже расположение в памяти доступно под двумя разными именами.
 
-| Код причины | Объяснение |
+| Код причины | Описание |
 |--|--|
 | 1500 | Возможно совмещение имен для многомерных массивов. |
 | 1501 | Возможно совмещение имен для массивов структур. |
@@ -979,7 +998,7 @@ void code_1505(int *A, int *B)
 }
 ```
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также раздел
 
 [Ошибки и предупреждения для компилятора C/C++ и средств сборки](../compiler-errors-1/c-cpp-build-errors.md)\
 [Автомасштабирование и автовектор](../../parallel/auto-parallelization-and-auto-vectorization.md)\
