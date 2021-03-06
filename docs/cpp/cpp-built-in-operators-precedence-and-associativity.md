@@ -13,12 +13,12 @@ helpviewer_keywords:
 - evaluation order
 - hierarchy, operator
 ms.assetid: 95c1f0ba-dad8-4034-b039-f79a904f112f
-ms.openlocfilehash: ff8ae84a62ef47449364d0815922326d7b8566d4
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 8f45b7e45597fde1deaa349db6fd098b0d7ac319
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97253966"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236768"
 ---
 # <a name="c-built-in-operators-precedence-and-associativity"></a>Встроенные операторы, приоритет и ассоциативность C++
 
@@ -68,7 +68,7 @@ C++ указывает альтернативные слова для некот
 | [Указатель на член (объекты или указатели)](../cpp/pointer-to-member-operators-dot-star-and-star.md) | [`.*` ни `->*`](../cpp/pointer-to-member-operators-dot-star-and-star.md) |
 | **Приоритет группы 5, ассоциативность слева направо** |
 | [Умножения](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`*`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
-| [Отдел](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`/`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
+| [Категория](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`/`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
 | [Модул](../cpp/multiplicative-operators-and-the-modulus-operator.md) | [`%`](../cpp/multiplicative-operators-and-the-modulus-operator.md) |
 | **Приоритет группы 6, ассоциативность слева направо** |
 | [Полняют](../cpp/additive-operators-plus-and.md) | [`+`](../cpp/additive-operators-plus-and.md) |
@@ -96,7 +96,6 @@ C++ указывает альтернативные слова для некот
 | [Логическое ИЛИ](../cpp/logical-or-operator-pipe-pipe.md) | [`||`](../cpp/logical-or-operator-pipe-pipe.md) | **`or`** |
 | **Группирование с приоритетом 15, с ассоциативностью справа налево** |
 | [Условная логика](../cpp/conditional-operator-q.md) | [`? :`](../cpp/conditional-operator-q.md) |
-| **Группирование с приоритетом 16, справа налево ассоциативность** |
 | [Назначение](../cpp/assignment-operators.md) | [`=`](../cpp/assignment-operators.md) |
 | [Присваивание умножения](../cpp/assignment-operators.md) | [`*=`](../cpp/assignment-operators.md) |
 | [Присваивание деления](../cpp/assignment-operators.md) | [`/=`](../cpp/assignment-operators.md) |
@@ -108,9 +107,8 @@ C++ указывает альтернативные слова для некот
 | [Назначение побитового И](../cpp/assignment-operators.md) | [`&=`](../cpp/assignment-operators.md) | **`and_eq`** |
 | [Назначение побитового включающего ИЛИ](../cpp/assignment-operators.md) | [`|=`](../cpp/assignment-operators.md) | **`or_eq`** |
 | [Назначение побитового исключающего ИЛИ](../cpp/assignment-operators.md) | [`^=`](../cpp/assignment-operators.md) | **`xor_eq`** |
-| **Приоритет группы 17, ассоциативность справа налево** |
 | [Выражение Throw](../cpp/try-throw-and-catch-statements-cpp.md) | [`throw`](../cpp/try-throw-and-catch-statements-cpp.md) |
-| **Приоритет группы 18, ассоциативность слева направо** |
+| **Группирование с приоритетом 16, с ассоциативностью слева направо** |
 | [Запятая](../cpp/comma-operator.md) | [,](../cpp/comma-operator.md) |
 
 ## <a name="see-also"></a>См. также раздел

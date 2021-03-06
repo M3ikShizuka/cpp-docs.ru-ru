@@ -4,12 +4,12 @@ description: Описывает, как работает двоичная сов
 ms.date: 02/17/2021
 helpviewer_keywords:
 - binary compatibility, Visual C++
-ms.openlocfilehash: d8c4c0312003496db522e59dba84a9633e94b1b4
-ms.sourcegitcommit: 5efc34c2b98d4d0d3e41aec38b213f062c19d078
+ms.openlocfilehash: a91e339e70843087adc12238edac91332c1a4453
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101844524"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236580"
 ---
 # <a name="c-binary-compatibility-between-visual-studio-2015-2017-and-2019"></a>Двоичная совместимость C++ между Visual Studio 2015, 2017 и 2019
 
@@ -17,7 +17,7 @@ ms.locfileid: "101844524"
 
 Мы изменили это поведение в Visual Studio 2015, 2017 и 2019. Библиотеки среды выполнения и приложения, компилируемые любой из этих версий компилятора, совместимы с двоичными. Он отражается в основном номере набора инструментов C++, который начинается с 14 для всех трех версий. (Версия набора инструментов — V140 для Visual Studio 2015, v141 для 2017 и v142 для 2019). Предположим, у вас есть сторонние библиотеки, созданные Visual Studio 2015. Их все еще можно использовать в приложении, созданном с помощью Visual Studio 2017 или 2019. Нет необходимости выполнять повторную компиляцию с соответствующим набором инструментов. Последняя версия распространяемого пакета Microsoft Visual C++ (распространяемый пакет) работает для всех из них.
 
-## <a name="restrictions-on-binary-compatibility"></a>Ограничения на двоичную совместимость
+## <a name="restrictions-on-binary-compatibility"></a><a name="restrictions"></a> Ограничения на двоичную совместимость
 
 Существуют три важных ограничения на двоичную совместимость между наборами инструментов V140, v141 и v142 и дополнительными номерами версий.
 

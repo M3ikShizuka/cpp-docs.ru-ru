@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CMFCRibbonEdit [MFC], SetTextAlign
 - CMFCRibbonEdit [MFC], SetWidth
 ms.assetid: 9b85f1f2-446b-454e-9af9-104fdad8a897
-ms.openlocfilehash: 83920c9779af10861e32ce964e91af767a3d9e96
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: be88698de9f98c590efebd4e2e8780d810aa8b96
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97193108"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236567"
 ---
 # <a name="cmfcribbonedit-class"></a>Класс Кмфкриббонедит
 
@@ -95,13 +95,13 @@ class CMFCRibbonEdit : public CMFCRibbonButton
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|name|Описание:|
 |----------|-----------------|
 |[Кмфкриббонедит:: Кмфкриббонедит](#cmfcribbonedit)|Формирует объект `CMFCRibbonEdit`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|name|Описание:|
 |----------|-----------------|
 |[Кмфкриббонедит:: Канбестретчед](#canbestretched)|Указывает, может ли высота `CMFCRibbonEdit` элемента управления увеличиваться по вертикали до высоты строки ленты.|
 |[Кмфкриббонедит:: Кмфкриббонедит](#cmfcribbonedit)|Формирует объект `CMFCRibbonEdit`.|
@@ -528,12 +528,12 @@ virtual void OnDrawOnList(
 окне Указатель на контекст устройства для `CMFCRibbonEdit` элемента управления.
 
 *стртекст*<br/>
-окне Отображаемый текст [](../../mfc/reference/cmfcribbonedit-class.md "класс кмфкриббонедит") .
+[in] Отображаемый текст.
 
 *нтекстоффсет*<br/>
 окне Расстояние (в пикселях) от левого края окна списка до отображаемого текста.
 
-*rect*<br/>
+*перетаскиваемые*<br/>
 окне Отображаемый прямоугольник для `CMFCRibbonEdit` элемента управления.
 
 *бисселектед*<br/>
