@@ -10,12 +10,12 @@ helpviewer_keywords:
 - libraries [C++], linking to COFF
 - LINK tool [C++], linker options
 ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
-ms.openlocfilehash: 0d85361b8d4b5896d9ed7beae0d310fe28dc98e9
-ms.sourcegitcommit: e58918c45316d799c1952ca7797a85adbcd0c472
+ms.openlocfilehash: e426c085acdd0d7bcfeb00b17dcf733a9b856993
+ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "89281800"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465318"
 ---
 # <a name="linker-options"></a>Параметры компоновщика
 
@@ -83,6 +83,7 @@ LINK.exe связывает объектные файлы в формате COFF
 |[/IMPLIB](implib-name-import-library.md)|Переопределяет имя библиотеки импорта по умолчанию.|
 |[/INCLUDE](include-force-symbol-references.md)|Принудительное использование ссылок на символы.|
 |[/INCREMENTAL](incremental-link-incrementally.md)|Управляет инкрементной компоновкой.|
+|[/инферасанлибс](inferasanlibs.md)|Использует выводимые библиотеки очистки.|
 |[/INTEGRITYCHECK](integritycheck-require-signature-check.md)|Указывает на то, что модуль требует проверки подписи во время загрузки.|
 |[/KEYCONTAINER](keycontainer-specify-a-key-container-to-sign-an-assembly.md)|Задает контейнер ключей для подписи сборки.|
 |[/KEYFILE](keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)|Задает ключ или пару ключей для подписи сборки.|
@@ -142,5 +143,5 @@ LINK.exe связывает объектные файлы в формате COFF
 
 ## <a name="see-also"></a>См. также раздел
 
-[Справочник по построению C/C++](c-cpp-building-reference.md)\
+[Справочные сведения о построении C/C++](c-cpp-building-reference.md)\
 [Справочник по компоновщику MSVC](linking.md)

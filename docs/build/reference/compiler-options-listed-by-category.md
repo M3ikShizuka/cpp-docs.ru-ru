@@ -5,12 +5,12 @@ ms.date: 07/29/2020
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: bf12948658b5f7e3211c423b5302bc52d1b87729
-ms.sourcegitcommit: 48b897797b3132ae934b1d191e3870c3c2466335
+ms.openlocfilehash: b892575719d97ed4a0acb061aae0182ff2d576eb
+ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97514565"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465383"
 ---
 # <a name="compiler-options-listed-by-category"></a>Параметры компилятора, упорядоченные по категориям
 
@@ -135,7 +135,7 @@ ms.locfileid: "97514565"
 | [`/Zs`](zs-syntax-check-only.md) | Проверяет только синтаксис. |
 | [`/ZW`](zw-windows-runtime-compilation.md) | Создает выходной файл для запуска на среда выполнения Windows. |
 
-## <a name="linking"></a>Связывание
+## <a name="linking"></a>Компоновка
 
 | Параметр | Цель |
 |--|--|
@@ -162,6 +162,7 @@ ms.locfileid: "97514565"
 | [`/errorReport`](errorreport-report-internal-compiler-errors.md) | Не рекомендуется. Отчеты об ошибках контролируются параметрами [отчеты об ошибках Windows (WER)](/windows/win32/wer/windows-error-reporting) . |
 | [`/FC`](fc-full-path-of-source-code-file-in-diagnostics.md) | Отображает полный путь к файлам исходного кода, переданным *cl.exe* в диагностическое сообщение. |
 | [`/FS`](fs-force-synchronous-pdb-writes.md) | Принудительно выполняет запись в PDB-файл для сериализации с помощью *MSPDBSRV.EXE*. |
+| [`/fsanitize`](fsanitize.md) | Включает компиляцию инструментирования, например Аддресссанитизер. |
 | [`/H`](h-restrict-length-of-external-names.md) | Не рекомендуется. Ограничивает длину внешних (открытых) имен. |
 | [`/HELP`](help-compiler-command-line-help.md) | Отображает список параметров компилятора. |
 | [`/J`](j-default-char-type-is-unsigned.md) | Изменяет тип по умолчанию **`char`** . |
@@ -236,4 +237,4 @@ ms.locfileid: "97514565"
 
 [Справочник по построению C/C++](c-cpp-building-reference.md)\
 [Параметры компилятора КОМПИЛЯТОРОМ MSVC](compiler-options.md)\
-[Синтаксис командной строки компилятора MSVC](compiler-command-line-syntax.md)
+[Синтаксис командной строки компилятора КОМПИЛЯТОРОМ MSVC](compiler-command-line-syntax.md)
