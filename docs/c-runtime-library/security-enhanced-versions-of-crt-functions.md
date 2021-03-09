@@ -7,12 +7,12 @@ helpviewer_keywords:
 - security-enhanced CRT
 - CRT, security enhancements
 ms.assetid: f87e5a01-4cb2-4379-9e8f-d4693828c55a
-ms.openlocfilehash: 95e94eb7790ef589fee3287b6cee8997faac7ab6
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: eda9a98593bb0951c9be357c35492eaf129e3582
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97277210"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514724"
 ---
 # <a name="security-enhanced-versions-of-crt-functions"></a>Версии функций CRT повышенной безопасности
 
@@ -20,7 +20,7 @@ ms.locfileid: "97277210"
 
 ## <a name="secure-functions"></a>Безопасные функции
 
-|Функция CRT|Функция с усиленной безопасностью|Использовать|
+|Функция CRT|Функция с усиленной безопасностью|Использование|
 |------------------|--------------------------------|---------|
 |[_access, _waccess](../c-runtime-library/reference/access-waccess.md)|[_access_s, _waccess_s](../c-runtime-library/reference/access-s-waccess-s.md)|Определяют разрешения на доступ к файлам|
 |[_alloca](../c-runtime-library/reference/alloca.md)|[_malloca](../c-runtime-library/reference/malloca.md)|Выделение памяти в стеке|
@@ -100,6 +100,6 @@ ms.locfileid: "97277210"
 |[wcstombs, _wcstombs_l](../c-runtime-library/reference/wcstombs-wcstombs-l.md)|[wcstombs_s, _wcstombs_s_l](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)|Преобразует последовательность расширенных символов в соответствующую последовательность многобайтовых символов|
 |[wctomb, _wctomb_l](../c-runtime-library/reference/wctomb-wctomb-l.md)|[wctomb_s, _wctomb_s_l](../c-runtime-library/reference/wctomb-s-wctomb-s-l.md)|Преобразует расширенный символ в соответствующий многобайтовый символ|
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-[Возможности библиотеки CRT](../c-runtime-library/crt-library-features.md)
+[Файлы среды выполнения C (CRT) и библиотеки стандартных библиотек C++ (STL) `.lib`](../c-runtime-library/crt-library-features.md)

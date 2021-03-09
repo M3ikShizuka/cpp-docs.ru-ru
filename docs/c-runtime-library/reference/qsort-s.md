@@ -31,12 +31,12 @@ helpviewer_keywords:
 - qsort_s function
 - sorting arrays
 ms.assetid: 6ee817b0-4408-4355-a5d4-6605e419ab91
-ms.openlocfilehash: 01890db21bc1eb470b57aa796313da4c6f0c50a8
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 0f0132cbb1210d6289f676f3474683803b58a5a6
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97137167"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514477"
 ---
 # <a name="qsort_s"></a>qsort_s
 
@@ -112,9 +112,9 @@ compare( context, (void *) & elem1, (void *) & elem2 );
 
 Дополнительные сведения о совместимости см. в статье [Compatibility](../../c-runtime-library/compatibility.md).
 
-**Библиотеки:** все версии [функций библиотеки CRT](../../c-runtime-library/crt-library-features.md).
+**Библиотеки:** Все версии [библиотек среды выполнения C](../../c-runtime-library/crt-library-features.md).
 
-## <a name="example"></a>Пример
+## <a name="example"></a>Например, .
 
 В следующем примере демонстрируется использование параметра *context* в функции **qsort_s** . Параметр *контекста* упрощает выполнение поточно-ориентированных сортировок. Вместо использования статических переменных, которые должны быть синхронизированы для обеспечения потокобезопасности, передайте другой параметр *контекста* в каждой сортировке. В этом примере в качестве параметра *контекста* используется объект языкового стандарта.
 
@@ -268,7 +268,7 @@ España Español espantado
 table tablet tableux
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Поиск и сортировка](../../c-runtime-library/searching-and-sorting.md)<br/>
 [bsearch_s](bsearch-s.md)<br/>

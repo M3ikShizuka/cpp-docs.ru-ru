@@ -9,12 +9,12 @@ helpviewer_keywords:
 - variable argument functions
 - type checking
 ms.assetid: 1ba7590b-d1c0-4636-b6a0-e231395abdad
-ms.openlocfilehash: cf27847bf2aeef278fb4699cea5a0cf74a961086
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 9afb4146f7bbd08b35df20972345285bb353e4d3
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97162358"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514230"
 ---
 # <a name="type-checking-crt"></a>Проверка типов (CRT)
 
@@ -32,6 +32,6 @@ ms.locfileid: "97162358"
 
 Компилятор выполняет такую же ограниченную проверку типов для аналогов этих функций для расширенных символов.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-[Возможности библиотеки CRT](../c-runtime-library/crt-library-features.md)
+[Файлы среды выполнения C (CRT) и библиотеки стандартных библиотек C++ (STL) `.lib`](../c-runtime-library/crt-library-features.md)

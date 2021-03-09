@@ -6,12 +6,12 @@ ms.topic: conceptual
 helpviewer_keywords:
 - parameters, validation
 ms.assetid: 019dd5f0-dc61-4d2e-b4e9-b66409ddf1f2
-ms.openlocfilehash: 8378e4bf9bdfc950002c3ed8c3ef50c27a3c162d
-ms.sourcegitcommit: 30792632548d1c71894f9fecbe2f554294b86020
+ms.openlocfilehash: 6926da8ccc1974352b926227daba0eea1d8a560d
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91765255"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514659"
 ---
 # <a name="parameter-validation"></a>Проверка параметров
 
@@ -29,7 +29,7 @@ ms.locfileid: "91765255"
 
 Дополнительные сведения о параметрах `errno` см. в разделе [errno, _doserrno, _sys_errlist и _sys_nerr](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Функции безопасности в CRT](../c-runtime-library/security-features-in-the-crt.md)\
-[Возможности библиотеки CRT](../c-runtime-library/crt-library-features.md)
+[Файлы среды выполнения C (CRT) и библиотеки стандартных библиотек C++ (STL) `.lib`](../c-runtime-library/crt-library-features.md)

@@ -7,18 +7,18 @@ helpviewer_keywords:
 - C++ Standard Library
 - template libraries
 - libraries, Standard C++
-ms.openlocfilehash: 11abb497582f7a07a98b1bc469a9d380da1fde92
-ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
+ms.openlocfilehash: ba07f1625b73391f1f9f4e33210b8ba206fb012b
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102465545"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514568"
 ---
 # <a name="c-standard-library-reference"></a>Справочник по стандартной библиотеке C++
 
 Программа на языке C++ может вызывать множество функций из этой реализации стандартной библиотеки C++. Эти функции выполняют такие службы, как входные и выходные данные, и предоставляют эффективные реализации часто используемых операций.
 
-Дополнительные сведения о связывании с соответствующим файлом среды выполнения Visual C++ `.lib` см. в разделе [Среда выполнения C (CRT) и стандартная библиотека C++. `lib` файлы](../c-runtime-library/crt-library-features.md).
+Дополнительные сведения о связывании с соответствующим файлом среды выполнения Visual C++ `.lib` см. в разделе [среды выполнения C (CRT) и `.lib` файлы стандартной библиотеки C++ (STL)](../c-runtime-library/crt-library-features.md).
 
 ## <a name="in-this-section"></a>Содержание раздела
 

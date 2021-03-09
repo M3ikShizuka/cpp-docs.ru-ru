@@ -8,12 +8,12 @@ helpviewer_keywords:
 - CRT
 - runtime libraries
 - CRT, reference
-ms.openlocfilehash: c574230d5d2861dd8734d8927f0e91402bc224bf
-ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
+ms.openlocfilehash: f613f70ed39947605a4ce2b8524c8a0f6d069c68
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102465571"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514412"
 ---
 # <a name="microsoft-c-runtime-library-crt-reference"></a>Справочник по библиотеке времени выполнения Microsoft C (CRT)
 
@@ -21,7 +21,7 @@ ms.locfileid: "102465571"
 
 В справочные разделы включены примеры программ для большинства подпрограмм из библиотеки.
 
-## <a name="in-this-section"></a>в этом разделе
+## <a name="in-this-section"></a>В этом разделе
 
 [Универсальные подпрограммы среды выполнения C по категориям](run-time-routines-by-category.md)\
 Предоставляет ссылки на библиотеку времени выполнения по категориям.
@@ -47,8 +47,8 @@ ms.locfileid: "102465571"
 [Строки языка и страны или региона](locale-names-languages-and-country-region-strings.md)\
 Описывает способы использования функции `setlocale` для задания языка и строк страны или региона.
 
-[Файлы среды выполнения C (CRT) и стандартные библиотеки C++ `.lib`](crt-library-features.md)\
-Обсуждаются `.lib` файлы, составляющие библиотеки среды выполнения C, а также связанные с ними параметры компилятора и директивы препроцессора.
+[Файлы среды выполнения C (CRT) и библиотеки стандартных библиотек C++ (STL) `.lib`](crt-library-features.md)\
+Список `.lib` файлов, составляющих библиотеки времени выполнения C и связанные с ними параметры компилятора и директивы препроцессора.
 
 ## <a name="related-sections"></a>Связанные разделы
 

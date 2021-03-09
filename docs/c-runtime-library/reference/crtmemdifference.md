@@ -1,7 +1,7 @@
 ---
-description: 'Дополнительные сведения: _CrtMemDifference'
 title: _CrtMemDifference
-ms.date: 11/04/2016
+description: 'Дополнительные сведения: _CrtMemDifference'
+ms.date: 3/8/2021
 api_name:
 - _CrtMemDifference
 api_location:
@@ -25,15 +25,14 @@ f1_keywords:
 helpviewer_keywords:
 - CrtMemDifference function
 - _CrtMemDifference function
-ms.assetid: 0f327278-b551-482f-958b-76941f796ba4
-ms.openlocfilehash: 076cead5f60df457171bbcdf2fd8690f0361870b
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 9a6a213df867f98bfb921abd940ba23297c5ffef
+ms.sourcegitcommit: 90c300b74f6556cb5d989802d2e80d79542f55e7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97319655"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102514607"
 ---
-# <a name="_crtmemdifference"></a>_CrtMemDifference
+# `_CrtMemDifference`
 
 Сравнивает два состояния памяти и возвращает их различия (только отладочная версия).
 
@@ -49,42 +48,42 @@ int _CrtMemDifference(
 
 ### <a name="parameters"></a>Параметры
 
-*статедифф*<br/>
-Указатель на структуру **_CrtMemState** , которая используется для хранения различий между двумя состояниями памяти (возвращаемые).
+*`stateDiff`*\
+Указатель на **`_CrtMemState`** структуру, используемую для хранения различий между двумя состояниями памяти (возвращаемые).
 
-*олдстате*<br/>
-Указатель на более раннее состояние памяти (структура **_CrtMemState** ).
+*`oldState`*\
+Указатель на более раннее состояние памяти ( **`_CrtMemState`** структура).
 
-*Новое_состояние*<br/>
-Указатель на более позднее состояние памяти (структура **_CrtMemState** ).
+*`newState`*\
+Указатель на более позднее состояние памяти ( **`_CrtMemState`** структура).
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-Если состояния памяти значительно отличаются, **_CrtMemDifference** возвращает значение true. В противном случае функция возвращает значение FALSE.
+Если состояния памяти значительно отличаются, **`_CrtMemDifference`** возвращает `TRUE` . В противном случае функция возвращает значение FALSE.
 
 ## <a name="remarks"></a>Комментарии
 
-Функция **_CrtMemDifference** сравнивает *олдстате* и *NewState* и сохраняет их различия в *статедифф*, которые затем могут использоваться приложением для обнаружения утечек памяти и других проблем с памятью. Если [_DEBUG](../../c-runtime-library/debug.md) не определено, вызовы **_CrtMemDifference** удаляются во время предварительной обработки.
+**`_CrtMemDifference`** Функция сравнивает *`oldState`* и *`newState`* сохраняет свои различия в *`stateDiff`* , которые затем могут использоваться приложением для обнаружения утечек памяти и других проблем с памятью. Если [_DEBUG](../../c-runtime-library/debug.md) не определена, вызовы **`_CrtMemDifference`** удаляются во время предварительной обработки.
 
-*NewState* и *олдстате* должны быть допустимыми указателями на структуру **_CrtMemState** , определенную в файле Crtdbg. h, которая была заполнена [_CrtMemCheckpoint](crtmemcheckpoint.md) перед вызовом **_CrtMemDifference**. *статедифф* должен быть указателем на ранее выделенный экземпляр структуры **_CrtMemState** . Если *статедифф*, *NewState* или *олдстате* имеет **значение NULL**, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, в параметре " [_doserrno", "_sys_errlist" и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) задано значение " **еинвал** ", а функция возвращает false.
+*`newState`* и *`oldState`* должны быть допустимыми указателями на **`_CrtMemState`** структуру, определенную в файле Crtdbg. h, которая была заполнена [`_CrtMemCheckpoint`](crtmemcheckpoint.md) до вызова метода **`_CrtMemDifference`** . *`stateDiff`* должен быть указателем на ранее выделенный экземпляр **`_CrtMemState`** структуры. Если параметр *`stateDiff`* , *`newState`* или *`oldState`* имеет значение **`NULL`** , вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, [`errno, _doserrno, _sys_errlist, and _sys_nerr`](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) для задается значение **`EINVAL`** , а функция возвращает значение false.
 
-**_CrtMemDifference** сравнивает значения полей **_CrtMemState** блоков в *олдстате* с ними в *NewState* и сохраняет результат в *статедифф*. Если количество выделенных типов блоков или общее количество выделенных блоков каждого типа различается в двух состояниях памяти, считается, что состояния значительно отличаются. Разница между наибольшим объемом, когда-либо выделено за один раз для двух состояний, и разность между общими распределениями для двух состояний также хранится в *статедифф*.
+**`_CrtMemDifference`** Сравнивает **`_CrtMemState`** значения полей блоков в *`oldState`* *`newState`* и сохраняет результат в *`stateDiff`* . Если количество выделенных типов блоков или общее количество выделенных блоков каждого типа различается в двух состояниях памяти, считается, что состояния значительно отличаются. Разница между наибольшим объемом, когда-либо выделено за один раз для двух состояний, и разность между общими выделениями для двух состояний также хранится в *`stateDiff`* .
 
-По умолчанию внутренние блоки времени выполнения C (**_CRT_BLOCK**) не включаются в операции состояния памяти. Функцию [_CrtSetDbgFlag](crtsetdbgflag.md) можно использовать, чтобы включить **_CRTDBG_CHECK_CRT_DF** бит **_crtDbgFlag** , чтобы включить эти блоки в обнаружение утечек и другие операции состояния памяти. Освобожденные блоки памяти (**_FREE_BLOCK**) не приводят к тому, что **_CrtMemDifference** возвращают значение true.
+По умолчанию внутренние блоки времени выполнения C ( **`_CRT_BLOCK`** ) не включаются в операции состояния памяти. Функцию [_CrtSetDbgFlag](crtsetdbgflag.md) можно использовать, чтобы включить **`_CRTDBG_CHECK_CRT_DF`** бит **`_crtDbgFlag`** для включения этих блоков в обнаружение утечек и другие операции состояния памяти. Освобождение блоков памяти ( **`_FREE_BLOCK`** ) не приводит **`_CrtMemDifference`** к возврату `TRUE` .
 
-Дополнительные сведения о функциях состояния кучи и структуре **_CrtMemState** см. в разделе [функции создания отчетов о состоянии кучи](/visualstudio/debugger/crt-debug-heap-details). Сведения о выделении, инициализации и управлении блоками памяти в отладочной версии базовой кучи, см. в статье [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).
+Дополнительные сведения о функциях состояния кучи и **`_CrtMemState`** структуре см. в [разделе функции создания отчетов о состоянии кучи](/visualstudio/debugger/crt-debug-heap-details). Сведения о выделении, инициализации и управлении блоками памяти в отладочной версии базовой кучи, см. в статье [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details).
 
 ## <a name="requirements"></a>Требования
 
 |Подпрограмма|Обязательный заголовок|Необязательный заголовок|
 |-------------|---------------------|---------------------|
-|**_CrtMemDifference**|\<crtdbg.h>|\<errno.h>|
+|**`_CrtMemDifference`**|`<crtdbg.h>`|`<errno.h>`|
 
 Дополнительные сведения о совместимости см. в разделе [Compatibility](../../c-runtime-library/compatibility.md).
 
-**Библиотеки:** только отладочные версии [функций библиотеки CRT](../../c-runtime-library/crt-library-features.md).
+**Библиотеки:** Отладочные версии [библиотек времени выполнения C](../../c-runtime-library/crt-library-features.md) .
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-[Отладочные подпрограммы](../../c-runtime-library/debug-routines.md)<br/>
-[_crtDbgFlag](../../c-runtime-library/crtdbgflag.md)<br/>
+[Отладочные подпрограммы](../../c-runtime-library/debug-routines.md)\
+[`_crtDbgFlag`](../../c-runtime-library/crtdbgflag.md)\
