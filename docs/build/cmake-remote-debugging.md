@@ -3,12 +3,12 @@ title: Учебник. Отладка проекта CMake на удаленно
 ms.date: 12/4/2020
 ms.topic: tutorial
 description: Использование Visual Studio C++ в Windows для создания и сборки проекта CMake. Его развертывания и отладка на удаленном компьютере Windows.
-ms.openlocfilehash: 742ee831fc30ffe291d68ff97ad4238e57c7e21d
-ms.sourcegitcommit: 3d9cfde85df33002e3b3d7f3509ff6a8dc4c0a21
+ms.openlocfilehash: 575b815559cbe70384b4669c94cf003daa3ee7d7
+ms.sourcegitcommit: 5efc34c2b98d4d0d3e41aec38b213f062c19d078
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98668860"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844511"
 ---
 # <a name="tutorial-debug-a-cmake-project-on-a-remote-windows-machine"></a>Учебник. Отладка проекта CMake на удаленном компьютере Windows
 
@@ -31,7 +31,7 @@ ms.locfileid: "98668860"
 
 Для настройки Visual Studio для кроссплатформенной разработки C++ следует установить средства сборки для целевой архитектуры. В рамках этого руководства установите средства сборки ARM64, выполнив указанные ниже действия.
 
-1. Запустите установщик Visual Studio. [Установите Visual Studio](https://docs.microsoft.com/visualstudio/install/install-visual-studio#:~:text=Install%20Visual%20Studio%201%20Make%20sure%20your%20computer,...%204%20Choose%20workloads.%20...%20More%20items...%20), если вы еще не сделали этого.
+1. Запустите установщик Visual Studio. [Установите Visual Studio](/visualstudio/install/install-visual-studio), если вы еще не сделали этого.
 1. На начальном экране установщика Visual Studio Installer нажмите **Изменить**.
 1. В верхней части выберите **Отдельные компоненты**.
 1. Прокрутите вниз до раздела **Компиляторы, средства сборки и среды выполнения**.
@@ -42,8 +42,8 @@ ms.locfileid: "98668860"
 
 ### <a name="on-the-remote-machine"></a>На удаленном компьютере
 
-1. Установите средства на удаленном компьютере. Для работы с этим руководством установите средства ARM64, следуя инструкциям в разделе [Скачивание и установка инструментов удаленной отладки](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-cpp?%23download-and-install-the-remote-tools#download-and-install-the-remote-tools).
-1. Запустите и настройте удаленный отладчик на удаленном компьютере. Для работы с этим руководством следуйте указаниям, приведенным в разделе [настройки удаленного отладчика](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-cpp?%23download-and-install-the-remote-tools#BKMK_setup) на удаленном компьютере Windows.
+1. Установите средства на удаленном компьютере. Для работы с этим руководством установите средства ARM64, следуя инструкциям в разделе [Скачивание и установка инструментов удаленной отладки](/visualstudio/debugger/remote-debugging-cpp#download-and-install-the-remote-tools).
+1. Запустите и настройте удаленный отладчик на удаленном компьютере. Для работы с этим руководством следуйте указаниям, приведенным в разделе [настройки удаленного отладчика](/visualstudio/debugger/remote-debugging-cpp#BKMK_setup) на удаленном компьютере Windows.
 
 ## <a name="create-a-cmake-project"></a>Создание проекта CMake
 

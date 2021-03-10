@@ -2,12 +2,12 @@
 title: Новое в документации по C++
 description: Новые документы и обновления документации для компилятора Microsoft C/C++, ATL/MFC, среды выполнения C и стандартных библиотек.
 ms.date: 02/17/2021
-ms.openlocfilehash: b15d286eb7bd2951ab2b8101a752de2beb57f4a4
-ms.sourcegitcommit: e99db7c3b5f25ece0e152165066c926751a7c2ed
+ms.openlocfilehash: ad626dc598cd17de091801b2c313b7339db4cbc7
+ms.sourcegitcommit: 5efc34c2b98d4d0d3e41aec38b213f062c19d078
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100643577"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101844537"
 ---
 # <a name="microsoft-c-docs-whats-new-for-visual-studio-168"></a>Документация по Microsoft C++: Новые возможности Visual Studio 16.8
 
@@ -198,7 +198,7 @@ ms.locfileid: "100643577"
 
 ## <a name="community-contributors"></a>Участники сообщества
 
-Указанные ниже пользователи в течение этого периода внесли свой вклад в улучшение документации по C++, C и Assembler. Спасибо! Дополнительные сведения о том, как внести свой вклад, см. в статье [Руководство для соавторов документации Майкрософт](https://docs.microsoft.com/contribute/).
+Указанные ниже пользователи в течение этого периода внесли свой вклад в улучшение документации по C++, C и Assembler. Спасибо! Дополнительные сведения о том, как внести свой вклад, см. в статье [Руководство для соавторов документации Майкрософт](/contribute/).
 
 - [yecril71pl](https://github.com/yecril71pl) — Кристофер Йелейтон (Christopher Yeleighton) (4)
 - [definedrisk](https://github.com/definedrisk) — Бен (Ben) (3)
