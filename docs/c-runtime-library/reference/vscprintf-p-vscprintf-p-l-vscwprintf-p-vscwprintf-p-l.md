@@ -1,7 +1,7 @@
 ---
 description: 'Дополнительные сведения: _vscprintf_p, _vscprintf_p_l, _vscwprintf_p, _vscwprintf_p_l'
 title: _vscprintf_p, _vscprintf_p_l, _vscwprintf_p, _vscwprintf_p_l
-ms.date: 11/04/2016
+ms.date: 3/9/2021
 api_name:
 - _vscprintf_p_l
 - _vscprintf_p
@@ -44,13 +44,12 @@ helpviewer_keywords:
 - vsctprintf_p_l function
 - _vsctprintf_p function
 - vscprintf_p_l function
-ms.assetid: 5da920b3-8652-4ee9-b19e-5aac3ace9d03
-ms.openlocfilehash: fea3af0efc6940adcde6c5ab4ff2f8ae49c79cf5
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 2aa08bb8164a741a74405cb1fdb16c5db1506d32
+ms.sourcegitcommit: b04b39940b0c1e265f80fc1951278fdb05a1b30a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97342183"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102621689"
 ---
 # <a name="_vscprintf_p-_vscprintf_p_l-_vscwprintf_p-_vscwprintf_p_l"></a>_vscprintf_p, _vscprintf_p_l, _vscwprintf_p, _vscwprintf_p_l
 
@@ -96,7 +95,7 @@ int _vscwprintf_p _l(
 
 **_vscprintf_p** возвращает число символов, которые будут созданы, если строка, на которую указывает список аргументов, была распечатана или отправлена в файл или буфер с использованием указанных кодов форматирования. Возвращаемое значение не включает завершающий нуль-символ. **_vscwprintf_p** выполняет ту же функцию для расширенных символов.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Эти функции отличаются от **_vscprintf** и **_vscwprintf** только тем, что они поддерживают возможность указания порядка, в котором используются аргументы. Дополнительные сведения см. в разделе [Позиционные параметры printf_p](../../c-runtime-library/printf-p-positional-parameters.md).
 
@@ -106,6 +105,7 @@ int _vscwprintf_p _l(
 
 > [!IMPORTANT]
 > Убедитесь, что если *Формат* является определяемой пользователем строкой, он завершается нулем и имеет правильное число и тип параметров. Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
+> Начиная с Windows 10 версии 2004 (сборка 19041), `printf` семейство функций выводит в соответствии с правилами IEEE 754 только округленные числа с плавающей запятой. В предыдущих версиях Windows полностью непредставленные числа с плавающей запятой, которые заканчиваются на "5", всегда округляются. IEEE 754 указывает, что они должны округляться до ближайшей четной цифры (также называемой "округление банка"). Например, оба значения `printf("%1.0f", 1.5)` и `printf("%1.0f", 2.5)` должны округляться в 2. Ранее 1,5 бы округлялись до 2 и 2,5, округляя до 3. Это изменение влияет только на точное представление чисел. Например, 2,35 (который, когда представлен в памяти, находится ближе к 2.35000000000000008), по-своему округляется до 2,4. Округление, выполненное этими функциями, теперь также учитывает режим округления с плавающей запятой, установленный [`fesetround`](fegetround-fesetround2.md) . Ранее округление всегда выбрало `FE_TONEAREST` поведение. Это изменение влияет только на программы, созданные с помощью Visual Studio 2019 версии 16,2 и более поздних версий. Чтобы использовать устаревшее поведение округления с плавающей точкой, свяжите с ["legacy_stdio_float_rounding. obj"](../link-options.md).
 
 ### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 

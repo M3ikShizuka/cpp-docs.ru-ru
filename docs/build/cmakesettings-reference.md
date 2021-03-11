@@ -5,12 +5,12 @@ ms.date: 11/22/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 2be5edb616764d56e7c08a51be19aab11a62f227
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: e68154d84123d416aa9d9d18f538c4b62fddce18
+ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97156909"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465357"
 ---
 # <a name="cmakesettingsjson-schema-reference"></a>Справочник по схеме CMakeSettings.json
 
@@ -32,8 +32,8 @@ ms.locfileid: "97156909"
 
 `configuration` имеет следующие свойства:
 
-- `addressSanitizerEnabled`: если указано значение **`true`** , программа компилируется с использованием санитайзера адресов (экспериментальная функция в Windows). Для получения наилучших результатов в Linux выполните компиляцию с параметром -fno-omit-frame-pointer и уровнем оптимизации компилятора -Os или -Oo.
-- `addressSanitizerRuntimeFlags`: флаги среды выполнения, передаваемые в AddressSanitizer через переменную среды ASAN_OPTIONS. Формат: флаг1=значение:флаг2=значение2.
+- `addressSanitizerEnabled`: если значение — **`true`** , компилирует программу с помощью [AddressSanitizer](../sanitizers/asan.md). Для получения наилучших результатов в Linux выполните компиляцию с параметром -fno-omit-frame-pointer и уровнем оптимизации компилятора -Os или -Oo.
+- `addressSanitizerRuntimeFlags`: флаги среды выполнения, передаваемые в [AddressSanitizer](../sanitizers/asan.md) через переменную среды ASAN_OPTIONS. Формат: флаг1=значение:флаг2=значение2.
 - `buildCommandArgs`: задает собственные параметры сборки, передаваемые CMake после --build --. Например, передача -v при использовании генератора Ninja приводит к тому, что Ninja выдает командные строки. Дополнительные сведения о командах Ninja см. в статье [Аргументы командной строки Ninja](#ninja).
 - `buildRoot`: определяет каталог, в котором CMake создает скрипты сборки для выбранного генератора.  Сопоставляется с параметром **-DCMAKE_BINARY_DIR** и указывает, где будет создан файл *CMakeCache.txt*. Если папка не существует, она будет создана. Поддерживаемые макросы: `${workspaceRoot}`, `${workspaceHash}`, `${projectFile}`, `${projectDir}`, `${thisFile}`, `${thisFileDir}`, `${name}`, `${generator}`, `${env.VARIABLE}`.
 - `cacheGenerationCommand`: определяет программу командной строки и аргументы для создания кэша, например *gencache.bat debug*. Эта команда выполняется из оболочки в указанной для конфигурации среде, когда пользователь явно запрашивает повторное создание или когда изменяется файл CMakeLists.txt либо CMakeSettings.json.

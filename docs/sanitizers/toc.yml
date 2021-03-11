@@ -1,0 +1,58 @@
+- name: Санитайзеры кода
+  href: ../sanitizers/index.yml
+- name: AddressSanitizer
+  expanded: true
+  items:
+    - name: Обзор AddressSanitizer
+      href: ../sanitizers/asan.md
+    - name: Справочники по языку и сборке
+      href: ../sanitizers/asan-building.md
+    - name: Справочник по среде выполнения
+      href: ../sanitizers/asan-runtime.md
+    - name: Интеграция отладчика
+      href: ../sanitizers/asan-debugger-integration.md
+    - name: Теневые байты
+      href: ../sanitizers/asan-shadow-bytes.md
+    - name: Облачное или распределенное тестирование
+      href: ../sanitizers/asan-offline-crash-dumps.md
+    - name: Примеры ошибок в AddressSanitizer
+      expanded: true
+      items:
+        - name: Примеры ошибок в AddressSanitizer
+          href: ../sanitizers/asan-error-examples.md
+        - name: Ошибка alloc-dealloc-mismatch
+          href: ../sanitizers/error-alloc-dealloc-mismatch.md
+        - name: Ошибка allocation-size-too-big
+          href: ../sanitizers/error-allocation-size-too-big.md
+        - name: Ошибка calloc-overflow
+          href: ../sanitizers/error-calloc-overflow.md
+        - name: Ошибка double-free
+          href: ../sanitizers/error-double-free.md
+        - name: Ошибка dynamic-stack-buffer-overflow
+          href: ../sanitizers/error-dynamic-stack-buffer-overflow.md
+        - name: Ошибка global-buffer-overflow
+          href: ../sanitizers/error-global-buffer-overflow.md
+        - name: Ошибка heap-buffer-overflow
+          href: ../sanitizers/error-heap-buffer-overflow.md
+        - name: Ошибка heap-use-after-free
+          href: ../sanitizers/error-heap-use-after-free.md
+        - name: Ошибка invalid-allocation-alignment
+          href: ../sanitizers/error-invalid-allocation-alignment.md
+        - name: Ошибка memcpy-param-overlap
+          href: ../sanitizers/error-memcpy-param-overlap.md
+        - name: Ошибка new-delete-type-mismatch
+          href: ../sanitizers/error-new-delete-type-mismatch.md
+        - name: Ошибка stack-buffer-overflow
+          href: ../sanitizers/error-stack-buffer-overflow.md
+        - name: Ошибка stack-buffer-underflow
+          href: ../sanitizers/error-stack-buffer-underflow.md
+        - name: Ошибка stack-use-after-return
+          href: ../sanitizers/error-stack-use-after-return.md
+        - name: Ошибка stack-use-after-scope
+          href: ../sanitizers/error-stack-use-after-scope.md
+        - name: Ошибка strcat-param-overlap
+          href: ../sanitizers/error-strncat-param-overlap.md
+        - name: Ошибка use-after-poison
+          href: ../sanitizers/error-use-after-poison.md
+    - name: Известные проблемы
+      href: ../sanitizers/asan-known-issues.md

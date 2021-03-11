@@ -1,7 +1,7 @@
 ---
 description: 'Дополнительные сведения: _get_printf_count_output'
 title: _get_printf_count_output
-ms.date: 11/04/2016
+ms.date: 3/9/2021
 api_name:
 - _get_printf_count_output
 api_location:
@@ -27,13 +27,12 @@ helpviewer_keywords:
 - '%n format'
 - get_printf_count_output function
 - _get_printf_count_output function
-ms.assetid: 850f9f33-8319-433e-98d8-6a694200d994
-ms.openlocfilehash: fe5ee728b7bc8400cd93ec4e93131496d59334c5
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: f31c0321d2d7873db20e7d663918aebc002c768d
+ms.sourcegitcommit: b04b39940b0c1e265f80fc1951278fdb05a1b30a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97339008"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622131"
 ---
 # <a name="_get_printf_count_output"></a>_get_printf_count_output
 
@@ -49,9 +48,12 @@ int _get_printf_count_output();
 
 Не равно нулю, если **% n** поддерживается, 0, если **% n** не поддерживается.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Если **% n** не поддерживается (по умолчанию), при обнаружении **% n** в строке формата любой из функций **printf** вызовет обработчик недопустимого параметра, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если поддержка **% n** включена (см. [_set_printf_count_output](set-printf-count-output.md)), то **% n** будет работать, как описано в разделе [синтаксис спецификации формата: функции printf и wprintf](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+
+> [!IMPORTANT]
+> Начиная с Windows 10 версии 2004 (сборка 19041), `printf` семейство функций выводит в соответствии с правилами IEEE 754 только округленные числа с плавающей запятой. В предыдущих версиях Windows полностью непредставленные числа с плавающей запятой, которые заканчиваются на "5", всегда округляются. IEEE 754 указывает, что они должны округляться до ближайшей четной цифры (также называемой "округление банка"). Например, оба значения `printf("%1.0f", 1.5)` и `printf("%1.0f", 2.5)` должны округляться в 2. Ранее 1,5 бы округлялись до 2 и 2,5, округляя до 3. Это изменение влияет только на точное представление чисел. Например, 2,35 (который, когда представлен в памяти, находится ближе к 2.35000000000000008), по-своему округляется до 2,4. Округление, выполненное этими функциями, теперь также учитывает режим округления с плавающей запятой, установленный [`fesetround`](fegetround-fesetround2.md) . Ранее округление всегда выбрало `FE_TONEAREST` поведение. Это изменение влияет только на программы, созданные с помощью Visual Studio 2019 версии 16,2 и более поздних версий. Чтобы использовать устаревшее поведение округления с плавающей точкой, свяжите с ["legacy_stdio_float_rounding. obj"](../link-options.md).
 
 ## <a name="requirements"></a>Требования
 

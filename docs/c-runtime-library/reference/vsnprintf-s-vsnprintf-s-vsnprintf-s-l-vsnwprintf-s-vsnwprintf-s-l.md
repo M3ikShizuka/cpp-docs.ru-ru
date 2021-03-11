@@ -1,7 +1,7 @@
 ---
 description: 'Дополнительные сведения: vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l'
 title: vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l
-ms.date: 11/04/2016
+ms.date: 3/9/2021
 api_name:
 - _vsnwprintf_s
 - _vsnwprintf_s_l
@@ -43,13 +43,12 @@ helpviewer_keywords:
 - _vsnprintf_s_l function
 - _vsnwprintf_s function
 - formatted text [C++]
-ms.assetid: 147ccfce-58c7-4681-a726-ef54ac1c604e
-ms.openlocfilehash: 27c91d6064b4a92da8a6f09e7d7e5b6bfb8bf95f
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: c5f472c1ff481d4d940ac081bf04986cb18e5a78
+ms.sourcegitcommit: b04b39940b0c1e265f80fc1951278fdb05a1b30a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97342157"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622014"
 ---
 # <a name="vsnprintf_s-_vsnprintf_s-_vsnprintf_s_l-_vsnwprintf_s-_vsnwprintf_s_l"></a>vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l
 
@@ -158,7 +157,7 @@ int _vsnwprintf_s(
 |*число* <= 0|-1|**еинвал**|
 |*сизеофбуффер* слишком мал (и *count* ! = **_TRUNCATE**)|-1 (и *буфер* , для которого задана пустая строка)|**ERANGE**|
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 **vsnprintf_s** совпадает с **_vsnprintf_s**. **vsnprintf_s** входит в соответствие стандарту ANSI. **_vnsprintf** сохраняется для обеспечения обратной совместимости.
 
@@ -170,6 +169,7 @@ int _vsnwprintf_s(
 
 > [!IMPORTANT]
 > Убедитесь, что *format* не является строкой, определяемой пользователем. Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
+> Начиная с Windows 10 версии 2004 (сборка 19041), `printf` семейство функций выводит в соответствии с правилами IEEE 754 только округленные числа с плавающей запятой. В предыдущих версиях Windows полностью непредставленные числа с плавающей запятой, которые заканчиваются на "5", всегда округляются. IEEE 754 указывает, что они должны округляться до ближайшей четной цифры (также называемой "округление банка"). Например, оба значения `printf("%1.0f", 1.5)` и `printf("%1.0f", 2.5)` должны округляться в 2. Ранее 1,5 бы округлялись до 2 и 2,5, округляя до 3. Это изменение влияет только на точное представление чисел. Например, 2,35 (который, когда представлен в памяти, находится ближе к 2.35000000000000008), по-своему округляется до 2,4. Округление, выполненное этими функциями, теперь также учитывает режим округления с плавающей запятой, установленный [`fesetround`](fegetround-fesetround2.md) . Ранее округление всегда выбрало `FE_TONEAREST` поведение. Это изменение влияет только на программы, созданные с помощью Visual Studio 2019 версии 16,2 и более поздних версий. Чтобы использовать устаревшее поведение округления с плавающей точкой, свяжите с ["legacy_stdio_float_rounding. obj"](../link-options.md).
 
 > [!NOTE]
 > Чтобы убедиться в наличии места для завершающего значения NULL, убедитесь, что *число* строго меньше длины буфера, или используйте **_TRUNCATE**.

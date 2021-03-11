@@ -1,7 +1,7 @@
 ---
 description: 'Дополнительные сведения: vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l'
 title: vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
-ms.date: 09/03/2019
+ms.date: 3/9/2021
 api_name:
 - _vswprintf_l
 - _vsprintf_l
@@ -49,13 +49,12 @@ helpviewer_keywords:
 - vswprintf function
 - vsprintf function
 - _vstprintf function
-ms.assetid: b8ef1c0d-58f9-4a18-841a-f1a989e1c29b
-ms.openlocfilehash: dd7e06817049f26e80c4be9f1d3f3df40444feaf
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 299df4fc02e0761d97e8b64d650af0953a866316
+ms.sourcegitcommit: b04b39940b0c1e265f80fc1951278fdb05a1b30a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97342118"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102621754"
 ---
 # <a name="vsprintf-_vsprintf_l-vswprintf-_vswprintf_l-__vswprintf_l"></a>vsprintf, _vsprintf_l, vswprintf, _vswprintf_l, __vswprintf_l
 
@@ -145,7 +144,7 @@ int _vswprintf_l(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Каждая из этих функций принимает указатель на список аргументов, а затем форматирует и записывает указанные данные в память, на которую указывает *буфер*.
 
@@ -153,6 +152,7 @@ int _vswprintf_l(
 
 > [!IMPORTANT]
 > С помощью **vsprintf** невозможно ограничить число записанных символов. Это означает, что код, использующий эту функцию, подвержен переполнению буфера. Используйте вместо нее [_vsnprintf](vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) или вызывайте [_vscprintf](vscprintf-vscprintf-l-vscwprintf-vscwprintf-l.md), чтобы определить требуемый размер буфера. Кроме того, убедитесь, что *Формат* не является определяемой пользователем строкой. Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
+> Начиная с Windows 10 версии 2004 (сборка 19041), `printf` семейство функций выводит в соответствии с правилами IEEE 754 только округленные числа с плавающей запятой. В предыдущих версиях Windows полностью непредставленные числа с плавающей запятой, которые заканчиваются на "5", всегда округляются. IEEE 754 указывает, что они должны округляться до ближайшей четной цифры (также называемой "округление банка"). Например, оба значения `printf("%1.0f", 1.5)` и `printf("%1.0f", 2.5)` должны округляться в 2. Ранее 1,5 бы округлялись до 2 и 2,5, округляя до 3. Это изменение влияет только на точное представление чисел. Например, 2,35 (который, когда представлен в памяти, находится ближе к 2.35000000000000008), по-своему округляется до 2,4. Округление, выполненное этими функциями, теперь также учитывает режим округления с плавающей запятой, установленный [`fesetround`](fegetround-fesetround2.md) . Ранее округление всегда выбрало `FE_TONEAREST` поведение. Это изменение влияет только на программы, созданные с помощью Visual Studio 2019 версии 16,2 и более поздних версий. Чтобы использовать устаревшее поведение округления с плавающей точкой, свяжите с ["legacy_stdio_float_rounding. obj"](../link-options.md).
 
 **vswprintf** соответствует стандарту ISO C, для которого требуется второй параметр, *count*, типа **size_t**. Чтобы принудительно использовать старое нестандартное поведение, определите **_CRT_NON_CONFORMING_SWPRINTFS**. Старое поведение может не быть в следующей версии, поэтому необходимо изменить код, чтобы использовать новое согласованное поведение.
 

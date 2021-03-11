@@ -1,7 +1,7 @@
 ---
 description: 'Дополнительные сведения: vfprintf_s, _vfprintf_s_l, vfwprintf_s, _vfwprintf_s_l'
 title: vfprintf_s, _vfprintf_s_l, vfwprintf_s, _vfwprintf_s_l
-ms.date: 11/04/2016
+ms.date: 3/9/2021
 api_name:
 - vfwprintf_s
 - _vfprintf_s_l
@@ -37,13 +37,12 @@ helpviewer_keywords:
 - _vftprintf_s_l function
 - formatted text [C++]
 - _vftprintf_s function
-ms.assetid: eab6f563-46e2-4806-963f-2b23f339ecdc
-ms.openlocfilehash: 743bf613cc6e09f396072d6bd00060d6d30e662c
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 628339f83aa10e7711a1b6cc293f492ec34f8005
+ms.sourcegitcommit: b04b39940b0c1e265f80fc1951278fdb05a1b30a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97279654"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102621403"
 ---
 # <a name="vfprintf_s-_vfprintf_s_l-vfwprintf_s-_vfwprintf_s_l"></a>vfprintf_s, _vfprintf_s_l, vfwprintf_s, _vfwprintf_s_l
 
@@ -98,7 +97,7 @@ int _vfwprintf_s_l(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Каждая из этих функций принимает указатель на список аргументов, затем форматирует и записывает указанные данные в *поток*.
 
@@ -110,6 +109,7 @@ int _vfwprintf_s_l(
 
 > [!IMPORTANT]
 > Убедитесь, что *format* не является строкой, определяемой пользователем. Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
+> Начиная с Windows 10 версии 2004 (сборка 19041), `printf` семейство функций выводит в соответствии с правилами IEEE 754 только округленные числа с плавающей запятой. В предыдущих версиях Windows полностью непредставленные числа с плавающей запятой, которые заканчиваются на "5", всегда округляются. IEEE 754 указывает, что они должны округляться до ближайшей четной цифры (также называемой "округление банка"). Например, оба значения `printf("%1.0f", 1.5)` и `printf("%1.0f", 2.5)` должны округляться в 2. Ранее 1,5 бы округлялись до 2 и 2,5, округляя до 3. Это изменение влияет только на точное представление чисел. Например, 2,35 (который, когда представлен в памяти, находится ближе к 2.35000000000000008), по-своему округляется до 2,4. Округление, выполненное этими функциями, теперь также учитывает режим округления с плавающей запятой, установленный [`fesetround`](fegetround-fesetround2.md) . Ранее округление всегда выбрало `FE_TONEAREST` поведение. Это изменение влияет только на программы, созданные с помощью Visual Studio 2019 версии 16,2 и более поздних версий. Чтобы использовать устаревшее поведение округления с плавающей точкой, свяжите с ["legacy_stdio_float_rounding. obj"](../link-options.md).
 
 ### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 

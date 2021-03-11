@@ -1,7 +1,7 @@
 ---
 description: 'Дополнительные сведения: _snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l'
 title: _snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l
-ms.date: 11/04/2016
+ms.date: 3/9/2021
 api_name:
 - _snprintf_s
 - _snprintf_s_l
@@ -50,13 +50,12 @@ helpviewer_keywords:
 - snwprintf_s function
 - _snwprintf_s function
 - formatted text [C++]
-ms.assetid: 9336ab86-13e5-4a29-a3cd-074adfee6891
-ms.openlocfilehash: 366614f69305080ee29ed8b903d17b5cc24765d8
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 7bee7b376deda021dd1d03909ebd0d9b088689b9
+ms.sourcegitcommit: b04b39940b0c1e265f80fc1951278fdb05a1b30a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97322487"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102621442"
 ---
 # <a name="_snprintf_s-_snprintf_s_l-_snwprintf_s-_snwprintf_s_l"></a>_snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l
 
@@ -141,7 +140,7 @@ int _snwprintf_s(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Функция **_snprintf_s** форматирует и сохраняет *количество* символов в *буфере* и добавляет завершающее значение null. Каждый аргумент (при его наличии) преобразуется и выводится в соответствии с соответствующей спецификацией формата в *формате*. Форматирование согласуется с семейством функций **printf** . см. раздел [синтаксис спецификации формата: функции printf и wprintf](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). Если копирование производится между перекрывающимися строками, поведение не определено.
 
@@ -149,6 +148,9 @@ int _snwprintf_s(
 
 > [!IMPORTANT]
 > Убедитесь, что *format* не является строкой, определяемой пользователем.
+>
+>
+> Начиная с Windows 10 версии 2004 (сборка 19041), `printf` семейство функций выводит в соответствии с правилами IEEE 754 только округленные числа с плавающей запятой. В предыдущих версиях Windows полностью непредставленные числа с плавающей запятой, которые заканчиваются на "5", всегда округляются. IEEE 754 указывает, что они должны округляться до ближайшей четной цифры (также называемой "округление банка"). Например, оба значения `printf("%1.0f", 1.5)` и `printf("%1.0f", 2.5)` должны округляться в 2. Ранее 1,5 бы округлялись до 2 и 2,5, округляя до 3. Это изменение влияет только на точное представление чисел. Например, 2,35 (который, когда представлен в памяти, находится ближе к 2.35000000000000008), по-своему округляется до 2,4. Округление, выполненное этими функциями, теперь также учитывает режим округления с плавающей запятой, установленный [`fesetround`](fegetround-fesetround2.md) . Ранее округление всегда выбрало `FE_TONEAREST` поведение. Это изменение влияет только на программы, созданные с помощью Visual Studio 2019 версии 16,2 и более поздних версий. Чтобы использовать устаревшее поведение округления с плавающей точкой, свяжите с ["legacy_stdio_float_rounding. obj"](../link-options.md).
 
 **_snwprintf_s** — это версия **_snprintf_s** для расширенных символов; аргументы-указатели для **_snwprintf_s** являются строками расширенных символов. Обнаружение ошибок кодирования в **_snwprintf_s** может отличаться от **_snprintf_s**. **_snwprintf_s**, как и **swprintf_s**, записывает выходные данные в строку, а не в назначение **файла** типа.
 

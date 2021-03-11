@@ -1,7 +1,7 @@
 ---
 description: 'Дополнительные сведения: _cprintf, _cprintf_l, _cwprintf, _cwprintf_l'
 title: _cprintf, _cprintf_l, _cwprintf, _cwprintf_l
-ms.date: 11/04/2016
+ms.date: 3/9/2021
 api_name:
 - _cwprintf_l
 - _cprintf_l
@@ -48,13 +48,12 @@ helpviewer_keywords:
 - _cwprintf function
 - cwprintf_l function
 - _cprintf function
-ms.assetid: 67ffefd4-45b3-4be0-9833-d8d26ac7c4e2
-ms.openlocfilehash: a935f43c00fab31a582012e938db16e3aa1a5f6e
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 95a73090bcf76f56b7310396bce2e1562d2e7723
+ms.sourcegitcommit: b04b39940b0c1e265f80fc1951278fdb05a1b30a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97162382"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622066"
 ---
 # <a name="_cprintf-_cprintf_l-_cwprintf-_cwprintf_l"></a>_cprintf, _cprintf_l, _cwprintf, _cwprintf_l
 
@@ -97,7 +96,7 @@ int _cwprintf_l(
 
 Число отображаемых символов.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Эти функции отформатируют и печатают последовательность символов и значений непосредственно в консоли, используя функцию **_putch** (**_putwch** для **_cwprintf**) для вывода символов. Каждый аргумент в *argument_list* (при его наличии) преобразуется и выводится в соответствии с соответствующей спецификацией формата в *формате*. Аргумент *Format* использует [синтаксис спецификации формата для функций printf и wprintf](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md). В отличие от функций **fprintf**, **printf** и **sprintf** , ни **_cprintf** , ни **_cwprintf** ПРЕОБРАЗУЕТ символы перевода строки в сочетания символов перевода строки (CR-LF) при выходе.
 
@@ -109,6 +108,10 @@ int _cwprintf_l(
 
 > [!IMPORTANT]
 > Убедитесь, что *format* не является строкой, определяемой пользователем.
+>
+>
+> Начиная с Windows 10 версии 2004 (сборка 19041), `printf` семейство функций выводит в соответствии с правилами IEEE 754 только округленные числа с плавающей запятой. В предыдущих версиях Windows полностью непредставленные числа с плавающей запятой, которые заканчиваются на "5", всегда округляются. IEEE 754 указывает, что они должны округляться до ближайшей четной цифры (также называемой "округление банка"). Например, оба значения `printf("%1.0f", 1.5)` и `printf("%1.0f", 2.5)` должны округляться в 2. Ранее 1,5 бы округлялись до 2 и 2,5, округляя до 3. Это изменение влияет только на точное представление чисел. Например, 2,35 (который, когда представлен в памяти, находится ближе к 2.35000000000000008), по-своему округляется до 2,4. Округление, выполненное этими функциями, теперь также учитывает режим округления с плавающей запятой, установленный [`fesetround`](fegetround-fesetround2.md) . Ранее округление всегда выбрало `FE_TONEAREST` поведение. Это изменение влияет только на программы, созданные с помощью Visual Studio 2019 версии 16,2 и более поздних версий. Чтобы использовать устаревшее поведение округления с плавающей точкой, свяжите с [`legacy_stdio_float_rounding.obj`](../link-options.md) .
+
 
 ### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 

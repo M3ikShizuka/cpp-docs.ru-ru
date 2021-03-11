@@ -5,12 +5,12 @@ ms.date: 02/05/2021
 ms.description: Configure a Visual Studio MSBuild project to use the Clang/LLVM toolchain.
 helpviewer_keywords:
 - Clang support for C++ MSBuild projects
-ms.openlocfilehash: 7492d2c75e458fb4a8a94e009f40b49edf1a8204
-ms.sourcegitcommit: 77235bff6a7b2621c501938e30d93cb15f5733cb
+ms.openlocfilehash: 31f79280e51bcf277bd3a992c4d7d2e39e679f30
+ms.sourcegitcommit: c0c9cdae79f19655e809a4979227c51bb19cff63
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100006056"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236625"
 ---
 # <a name="clangllvm-support-in-visual-studio-projects"></a>Поддержка Clang и LLVM в проектах Visual Studio
 
@@ -22,15 +22,17 @@ ms.locfileid: "100006056"
 
 ::: moniker range="msvc-160"
 
-Visual Studio 2019 версии 16.2 с Clang можно использовать для изменения, сборки и отладки проектов Visual Studio на C++ (MSBuild), предназначенных для Windows или Linux.
+Visual Studio 2019 версии 16.2 и более поздних версий с Clang можно использовать для изменения, сборки и отладки проектов Visual Studio на C++ (MSBuild), предназначенных для Windows или Linux.
 
 ## <a name="install"></a>Установка
 
 Для лучшей поддержки интегрированной среды разработки в Visual Studio рекомендуется использовать новейшие средства компилятора Clang для Windows. Если они еще не установлены, их можно установить, открыв Visual Studio Installer и выбрав **Средства C++ Clang для Windows** в разделе дополнительных компонентов **Разработка классических приложений на C++** . Если вы предпочитаете использовать существующую установку Clang на компьютере, выберите необязательный компонент **Средства сборки C++ Clang-cl для версии 142**. .
 
-В настоящее время для стандартной библиотеки Microsoft C++ требуется по крайней мере Clang 8.0.0. Пакетная версия Clang обновляется автоматически, чтобы оставаться актуальной с учетом обновлений в реализации стандартной библиотеки Майкрософт.
+Для стандартной библиотеки Microsoft C++ требуется по крайней мере Clang 8.0.0.
 
 ![Снимок экрана: установщик Visual Studio с выбранной вкладкой "Отдельные компоненты" и видимыми компонентами "С++ Clang".](media/clang-install-vs2019.png)
+
+В позднейших версиях Visual Studio предоставляются более новые версии набора инструментов Clang. Пакетная версия Clang обновляется автоматически, чтобы оставаться актуальной с учетом обновлений в реализации стандартной библиотеки Майкрософт. Например, Visual Studio 2019 версии 16.9 включает Clang версии 11.
 
 ## <a name="configure-a-windows-project-to-use-clang-tools"></a>Настройка проекта Windows для использования средств Clang
 

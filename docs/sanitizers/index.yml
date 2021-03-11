@@ -1,0 +1,47 @@
+### YamlMime:Landing
+title: Санитайзеры C и C++ | Инструментирование кода для выявления ошибок в среде выполнения
+summary: Используйте санитайзеры C и C++ для создания отчетов об ошибках, а также анализа и предотвращения ошибок.
+metadata:
+  title: Санитайзеры C и C++
+  description: Узнайте, как использовать санитайзеры для создания отчетов об ошибках, а также анализа и предотвращения ошибок.
+  ms.topic: landing-page
+  author: corob-msft
+  ms.author: corob
+  ms.date: 02/26/2021
+  ms.openlocfilehash: 792d71e8aabdeb72a673d9084a9fe521e6a98ee5
+  ms.sourcegitcommit: 6ed44d9c3fb32e965e363b9c69686739a90a2117
+  ms.translationtype: HT
+  ms.contentlocale: ru-RU
+  ms.lasthandoff: 03/08/2021
+  ms.locfileid: "102469314"
+landingContent:
+- title: Поиск ошибок с помощью санитайзеров
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Сведения об AddressSanitizer
+      url: asan.md
+  - linkListType: tutorial
+    links:
+    - text: Теневые байты в AddressSanitizer
+      url: ./asan-shadow-bytes.md
+    - text: Облачное и распределенное тестирование AddressSanitizer
+      url: ./asan-offline-crash-dumps.md
+- title: Инструментирование сборок
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Справочник по сборке и языку AddressSanitizer
+      url: ./asan-building.md
+    - text: Справочник по среде выполнения AddressSanitizer
+      url: ./asan-runtime.md
+    - text: Примеры ошибок в AddressSanitizer
+      url: ./asan-error-examples.md
+    - text: Известные проблемы AddressSanitizer
+      url: ./asan-known-issues.md
+- title: Отладка результатов
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Интеграция отладчика AddressSanitizer
+      url: ./asan-debugger-integration.md

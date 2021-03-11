@@ -339,6 +339,8 @@
   href: ../build/configuring-programs-for-windows-xp.md
 - name: "Анализ кода для\_C/C++"
   href: ../code-quality/
+- name: Санитайзеры кода для C/C++
+  href: ../sanitizers/
 - name: Справочник по компилятору и средствам сборки
   expanded: false
   items:
@@ -560,6 +562,8 @@
                   href: ../build/reference/fp-specify-floating-point-behavior.md
                 - name: /FS (принудительное выполнение синхронных записей PDB)
                   href: ../build/reference/fs-force-synchronous-pdb-writes.md
+                - name: /fsanitize (включение санитайзеров)
+                  href: ../build/reference/fsanitize.md
                 - name: /GA (оптимизация для приложений Windows)
                   href: ../build/reference/ga-optimize-for-windows-application.md
                 - name: '/Gd, /Gr, /Gv, /Gz (соглашение о вызовах)'
@@ -939,6 +943,8 @@
               href: ../build/reference/ignore-ignore-specific-warnings.md
             - name: /IGNOREIDL (запрет преобразования атрибутов в MIDL)
               href: ../build/reference/ignoreidl-don-t-process-attributes-into-midl.md
+            - name: /INFERASANLIBS (использование выводимых библиотек санитайзера)
+              href: ../build/reference/inferasanlibs.md
             - name: /IMPLIB (именование библиотеки импорта)
               href: ../build/reference/implib-name-import-library.md
             - name: /INCLUDE (принудительные ссылки на символы)

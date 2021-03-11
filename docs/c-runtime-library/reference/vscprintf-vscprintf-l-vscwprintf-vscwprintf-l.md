@@ -1,7 +1,7 @@
 ---
 description: 'Дополнительные сведения: _vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l'
 title: _vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l
-ms.date: 11/04/2016
+ms.date: 3/9/2021
 api_name:
 - _vscprintf
 - _vscprintf_l
@@ -45,13 +45,12 @@ helpviewer_keywords:
 - formatted text [C++]
 - vscprintf function
 - vscprintf_l function
-ms.assetid: 1bc67d3d-21d5-49c9-ac8d-69e26b16a3c3
-ms.openlocfilehash: 434a444b7b2c8a552c148c7c369a63b0c4a9acf2
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: c516de0a37b7b56f071abed1dc780bf79ac85d89
+ms.sourcegitcommit: b04b39940b0c1e265f80fc1951278fdb05a1b30a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97342170"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102621988"
 ---
 # <a name="_vscprintf-_vscprintf_l-_vscwprintf-_vscwprintf_l"></a>_vscprintf, _vscprintf_l, _vscwprintf, _vscwprintf_l
 
@@ -101,12 +100,14 @@ int _vscwprintf_l(
 
 Если параметр *Format* является пустым указателем, вызывается обработчик недопустимых параметров, как описано в разделе [Проверка параметров](../../c-runtime-library/parameter-validation.md). Если выполнение может быть продолжено, функции возвращают значение-1 и **задают значение** **еинвал**.
 
-## <a name="remarks"></a>Комментарии
+## <a name="remarks"></a>Remarks
 
 Каждый *аргумент* (при его наличии) преобразуется в соответствии с соответствующей спецификацией формата в *формате*. Формат состоит из обычных символов и имеет ту же форму и функцию, что и аргумент *Format* для [printf](printf-printf-l-wprintf-wprintf-l.md).
 
 > [!IMPORTANT]
 > Убедитесь, что если *Формат* является определяемой пользователем строкой, он завершается нулем и имеет правильное число и тип параметров. Дополнительные сведения см. в разделе [Как избежать переполнения буфера](/windows/win32/SecBP/avoiding-buffer-overruns).
+>
+> Начиная с Windows 10 версии 2004 (сборка 19041), `printf` семейство функций выводит в соответствии с правилами IEEE 754 только округленные числа с плавающей запятой. В предыдущих версиях Windows полностью непредставленные числа с плавающей запятой, которые заканчиваются на "5", всегда округляются. IEEE 754 указывает, что они должны округляться до ближайшей четной цифры (также называемой "округление банка"). Например, оба значения `printf("%1.0f", 1.5)` и `printf("%1.0f", 2.5)` должны округляться в 2. Ранее 1,5 бы округлялись до 2 и 2,5, округляя до 3. Это изменение влияет только на точное представление чисел. Например, 2,35 (который, когда представлен в памяти, находится ближе к 2.35000000000000008), по-своему округляется до 2,4. Округление, выполненное этими функциями, теперь также учитывает режим округления с плавающей запятой, установленный [`fesetround`](fegetround-fesetround2.md) . Ранее округление всегда выбрало `FE_TONEAREST` поведение. Это изменение влияет только на программы, созданные с помощью Visual Studio 2019 версии 16,2 и более поздних версий. Чтобы использовать устаревшее поведение округления с плавающей точкой, свяжите с [`legacy_stdio_float_rounding.obj`](../link-options.md) .
 
 ### <a name="generic-text-routine-mappings"></a>Универсальное текстовое сопоставление функций
 
