@@ -64,7 +64,7 @@
       href: ../c-runtime-library/global-state.md
     - name: Математические символы универсального типа
       href: ../c-runtime-library/tgmath.md
-    - name: LIB-файлы стандартной библиотеки C++ и среды выполнения C (CRT)
+    - name: LIB-файлы среды выполнения C (CRT) и стандартной библиотеки C++ (STL)
       href: ../c-runtime-library/crt-library-features.md
 - name: "Подпрограммы универсальной среды выполнения\_C по категориям"
   expanded: false
