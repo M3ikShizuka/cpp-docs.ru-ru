@@ -5,12 +5,16 @@
       href: ../overview/visual-cpp-in-visual-studio.md
     - name: Общие сведения о разработке на C++ в Visual Studio
       href: ../overview/overview-of-cpp-development.md
-    - name: Новые возможности C++ в Visual Studio
+    - name: "Новые возможности C++ в Visual Studio\_2019"
       href: ../overview/what-s-new-for-visual-cpp-in-visual-studio.md
+    - name: "Новые возможности C++ в Visual Studio\_2017"
+      href: ../overview/what-s-new-for-cpp-2017.md
     - name: Новые возможности документации Майкрософт для C++
       href: ../overview/whats-new-cpp-docs.md
-    - name: Улучшения соответствия C++ в Visual Studio
+    - name: Улучшения соответствия C++ в Visual Studio 2019
       href: ../overview/cpp-conformance-improvements.md
+    - name: Улучшения соответствия C++ в Visual Studio 2017
+      href: ../overview/cpp-conformance-improvements-2017.md
     - name: Соответствие стандартам языка Microsoft Visual C++
       href: ../overview/visual-cpp-language-conformance.md
     - name: Поддерживаемые целевые платформы
