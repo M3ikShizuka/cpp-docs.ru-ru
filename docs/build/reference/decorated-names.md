@@ -7,12 +7,12 @@ helpviewer_keywords:
 - name decoration [C++]
 - names [C++], decorated
 ms.assetid: a4e9ae8e-b239-4454-b401-4102793cb344
-ms.openlocfilehash: 65135b4f5b85cfae7a25513763b998d304e79a0c
-ms.sourcegitcommit: d6af41e42699628c3e2e6063ec7b03931a49a098
+ms.openlocfilehash: 95b98bf9a9bde876cfb403351197ab2ef1b9b5b8
+ms.sourcegitcommit: 92120d0c418b6d3d85d32ffc050c59c5f5f9d5b6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97201720"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104670784"
 ---
 # <a name="decorated-names"></a>Внутренние имена
 
@@ -79,9 +79,9 @@ ms.locfileid: "97201720"
 
 #### <a name="to-use-dumpbin-to-view-decorated-names"></a>Использование служебной программы DUMPBIN для просмотра внутренних имен
 
-1. Чтобы просмотреть экспортированные символы в obj-или LIB-файле, введите `dumpbin /symbols` `objfile` в командной строке разработчика.
+1. Чтобы просмотреть экспортированные символы в obj-или LIB-файле, введите `dumpbin /exports <obj-or-lib-file>` в командной строке разработчика.
 
-2. Чтобы найти внутреннюю форму символа, найдите внешнее имя в скобках. Декорированное имя находится на той же строке после символа вертикальной черты (&#124;) и перед недекорированным именем.
+2. Чтобы найти внутреннюю форму символа, найдите внешнее имя в скобках. Декорированное имя находится в той же строке перед недекорированным именем.
 
 ## <a name="viewing-undecorated-names"></a><a name="Undecorated"></a> Просмотр недекорированных имен
 
